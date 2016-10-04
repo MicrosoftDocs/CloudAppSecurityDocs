@@ -1,0 +1,21 @@
+---
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "hu-hu"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "nl-nl"
+  - "pl-pl"
+  - "pt-br"
+  - "pt-pt"
+  - "ru-ru"
+  - "sv-se"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+ Cloud App Security 
