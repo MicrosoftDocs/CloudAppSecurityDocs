@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Connect Office 365 to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to your existing Microsoft Office 365 account using the app connector API.  
+  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Microsoft Office 365 account using the app connector API.  
   
   
 
@@ -49,15 +49,15 @@ translation.priority.ht:
 
 2.  In the Office 365 pop-up, click Connect Office 365.
 
-      ![connect 0365](../migration/media/connect-0365.png) 
+      ![connect 0365](./media/connect-0365.png) 
  
 3.  Click Test now to test the connection to Office 365. Testing may take a couple of minutes.
   
-    ![O365 test connection](../migration/media/o365-test-connection.png) 
+    ![O365 test connection](./media/o365-test-connection.png) 
  
 4.   After Office 365 is displayed as successfully connected, click **Close**.
   
-     ![O365 connected](../migration/media/o365-connected.png) 
+     ![O365 connected](./media/o365-connected.png) 
 
  >[!NOTE] After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you will see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
 

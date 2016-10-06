@@ -34,11 +34,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Connect Okta to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to your existing Okta account using the connector APIs.  
+  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Okta account using the connector APIs.  
   
 ## How to connect Okta to Cloud App Security  
   
-1.  It is recommended that you create an admin Service Account in Okta for [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+1.  It is recommended that you create an admin Service Account in Okta for [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
      Make sure you use an account with Super Admin permissions.  
   
@@ -48,29 +48,29 @@ translation.priority.ht:
   
     -   Click on **Security** and then **API**.  
   
-         ![okta api](../migration/media/okta-api.png "okta api")  
+         ![okta api](./media/okta-api.png "okta api")  
   
     -   Click **Create Token**.  
   
-         ![okta createtoken](../migration/media/okta-createtoken.jpg "okta createtoken")  
+         ![okta createtoken](./media/okta-createtoken.jpg "okta createtoken")  
   
-    -   In the **Create Token** popup, name your [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] token and click **Create Token**.  
+    -   In the **Create Token** popup, name your [!INCLUDE[Adallom](./includes/adallom_md.md)] token and click **Create Token**.  
   
-         ![okta token popup](../migration/media/okta-token-popup.png "okta token popup")  
+         ![okta token popup](./media/okta-token-popup.png "okta token popup")  
   
     -   In the **Token created successfully popup**, copy the **Token value**.  
   
-         ![okta token value](../migration/media/okta-token-value.png "okta token value")  
+         ![okta token value](./media/okta-token-value.png "okta token value")  
   
-3.  In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] console, click **Investigate** and then **Sanctioned apps**.  
+3.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] console, click **Investigate** and then **Sanctioned apps**.  
   
 4.  In the Okta row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button and then **Okta**.  
   
-     ![connect okta](../migration/media/connect-okta.png "connect okta")  
+     ![connect okta](./media/connect-okta.png "connect okta")  
   
 5.  In the API page, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.  
   
-6.  Click **Connect** to create the token for Okta in [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+6.  Click **Connect** to create the token for Okta in [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
 7.  Make sure the connection succeeded by clicking **Test API**.  
   

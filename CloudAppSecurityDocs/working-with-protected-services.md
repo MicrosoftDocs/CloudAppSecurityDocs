@@ -16,16 +16,16 @@ ms.author: "rkarlin"
 robots: noindex,nofollow
 ---
 # Working with protected services
-  After deploying [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] and setting up your initial policies, the real work of [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] begins, providing you with deep visibility into what goes on in your cloud and enabling you to continuously fine-tune your policies to catch only incidents of interest, alerting you only when something of concern happens in your network. You can then respond to the detected events by investigating, notifying, running app-specific governance and always using them to further fine tune your policies for the future, as depicted here:  
+  After deploying [!INCLUDE[Adallom](./includes/adallom_md.md)] and setting up your initial policies, the real work of [!INCLUDE[Adallom](./includes/adallom_md.md)] begins, providing you with deep visibility into what goes on in your cloud and enabling you to continuously fine-tune your policies to catch only incidents of interest, alerting you only when something of concern happens in your network. You can then respond to the detected events by investigating, notifying, running app-specific governance and always using them to further fine tune your policies for the future, as depicted here:  
   
- ![work process](../migration/media/work-process.png "work process")  
+ ![work process](./media/work-process.png "work process")  
   
 ## Predict and Detect Risk  
- The first thing you want to do after [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] is all set up and running on your cloud apps, is to start monitoring what's going on in your cloud.  
+ The first thing you want to do after [!INCLUDE[Adallom](./includes/adallom_md.md)] is all set up and running on your cloud apps, is to start monitoring what's going on in your cloud.  
   
  The main places to look to keep an eye on your cloud environment are:  
   
--   **The [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] Dashboard**  
+-   **The [!INCLUDE[Adallom](./includes/adallom_md.md)] Dashboard**  
   
      The dashboard provides an overview of everything happening in your cloud environment, including alert data and policy violations.  
   
@@ -55,7 +55,7 @@ robots: noindex,nofollow
   
 -   Use the list of alerts you get to fine tune your policies and narrow the number of violations you get to ensure that only real violations are being considered policy matches.  
   
-     If the policy is receiving too many false positives, and you want to modify the policy, this can be done by clicking on the settings icon next to the policy. You can also use the ![Sanction three dots](../migration/media/sanction-three-dots.png "Sanction three dots") icon to **Enable**/**Disable** or **Delete** a policy.  
+     If the policy is receiving too many false positives, and you want to modify the policy, this can be done by clicking on the settings icon next to the policy. You can also use the ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") icon to **Enable**/**Disable** or **Delete** a policy.  
   
  For example, if you receive an alert in which you see a log on by an unfamiliar IP address:  
   
@@ -67,10 +67,10 @@ robots: noindex,nofollow
   
 4.  Then if you want to take an action, you can resolve the alert by going back to the alert in the **Alerts** page, and clicking on the alert, and then selecting an action from the settings icon such as Suspend user, until you can determine exactly who logged in and if it was justified.  
   
-     ![actions](../migration/media/actions.png "actions")  
+     ![actions](./media/actions.png "actions")  
   
 ### Predict and fine-tune using reports  
- When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
+ When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after [!INCLUDE[Adallom](./includes/adallom_md.md)] runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
   
  To work with Built-in Reports, go to **Investigate** and then **Built-in reports**. For more information about the various built-in reports, see the [Built-in report reference](../migration/built-in-report-reference.md).  
   
@@ -79,9 +79,9 @@ robots: noindex,nofollow
   
 -   You can contact the users or their managers to recommend alternative, safe and sanctioned apps.  
   
--   You can manage the risky app by going to the **Discovered Services** page and clicking the ![Sanction three dots](../migration/media/sanction-three-dots.png "Sanction three dots") icon next to the service and setting it as **Unsanctioned**.  
+-   You can manage the risky app by going to the **Discovered Services** page and clicking the ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") icon next to the service and setting it as **Unsanctioned**.  
   
--   Then, you can block access to your Unsanctioned apps by clicking the  ![Sanction three dots](../migration/media/sanction-three-dots.png "Sanction three dots") icon and selecting **Export blocking script** for your firewall.  
+-   Then, you can block access to your Unsanctioned apps by clicking the  ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") icon and selecting **Export blocking script** for your firewall.  
   
 ### Example: Activity policy  
  For the sake of our example, let's say that you assume you don't have any access to your cloud environment by risky IP addresses (for example, Anonymous proxies and Tor). But you create a Risky IP policy just to make sure:  
@@ -96,7 +96,7 @@ robots: noindex,nofollow
   
 5.  Under **Activity filters**, click the **+** to add a filter. Scroll down to **IP tag** and then select **Anonymous** and **Tor**.  
   
-     ![example policy risky ips](../migration/media/example-policy-risky-ips.png "example policy risky ips")  
+     ![example policy risky ips](./media/example-policy-risky-ips.png "example policy risky ips")  
   
  Now that you have the policy in place, you're surprised to see that you get an alert that the policy was violated.  
   

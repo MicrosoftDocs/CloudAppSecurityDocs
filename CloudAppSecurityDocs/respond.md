@@ -28,6 +28,6 @@ Since remediation actions leverage the cloud provider APIs, actions may vary fro
 >   
 >  For guidance, you can use the **Edit and preview results** button in the Filters section.  
   
- ![file policy edit and preview results](../migration/media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+ ![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
   
   

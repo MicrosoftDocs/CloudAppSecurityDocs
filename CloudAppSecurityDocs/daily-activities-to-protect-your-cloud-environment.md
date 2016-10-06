@@ -33,16 +33,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Daily activities to protect your cloud environment
-  After you get [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to control and protect your cloud and manage risk.  
+  After you get [!INCLUDE[Adallom](./includes/adallom_md.md)] up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use [!INCLUDE[Adallom](./includes/adallom_md.md)] to control and protect your cloud and manage risk.  
   
  This topic describes what you should do on a daily basis.  
   
 ## Check the dashboard  
- When you open the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, you are provided with an overview of open alerts, activity violations, content violations, an activity map which provides a map that plots where, geographically, user activity originates, and connected App usage trends in your  cloud environment.  
+ When you open the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, you are provided with an overview of open alerts, activity violations, content violations, an activity map which provides a map that plots where, geographically, user activity originates, and connected App usage trends in your  cloud environment.  
   
  It is recommended that you check the dashboard on a daily basis to see what new alerts were triggered and handle them. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's going on, on a high level, across your cloud environment.  
   
- ![dashboard](../migration/media/dashboard.png "dashboard")  
+ ![dashboard](./media/dashboard.png "dashboard")  
   
 ## Handle your alerts  
  Alerts are the entry point to understanding your cloud environment more deeply. You may want to create new policies based on what you find. For example, you might see an administrator logging on from Greenland, and decide that in the future you want to create a policy that automatically suspends an admin account when it is used to log on from Greenland.  
@@ -53,7 +53,7 @@ translation.priority.ht:
   
      This provides full visibility into any suspicious activity or violation of your established policies and helps you safeguard the security posture you defined for your cloud environment.  
   
-     ![alerts](../migration/media/alerts.png "alerts")  
+     ![alerts](./media/alerts.png "alerts")  
   
 -   For each alert, you need to investigate and determine the nature of the violation and the required response.  
   
@@ -91,7 +91,7 @@ translation.priority.ht:
 |----------------|-----------------|----------------------------|  
 |Activity policy violation|This type of alert is the result of a policy you created.|-   To work with this type of alert in bulk, it is recommended that you work directly from within the Policy center to mitigate these.<br />-   Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br />-   If the policy is very accurate and the alert was warranted and it's a violation you want to stop immediately, consider moving to an automated response, by adding automatic remediation in the policy.|  
 |File policy violation|This type of alert is the result of a policy you created.|-   To work with this type of alert in bulk, it is recommended that you work directly from within the Policy center to mitigate these.<br />-   Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br />-   If the policy is very accurate and the alert was warranted and it's a violation you want to stop immediately, consider moving to an automated response, by adding automatic remediation in the policy.|  
-|Compromised account|This type of alert is triggered when [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] identifies an account that was compromised (very  high probability that the account was used in an unauthorized way).|It is recommended that you suspend the account until you can reach the user and make sure they change their password.|  
+|Compromised account|This type of alert is triggered when [!INCLUDE[Adallom](./includes/adallom_md.md)] identifies an account that was compromised (very  high probability that the account was used in an unauthorized way).|It is recommended that you suspend the account until you can reach the user and make sure they change their password.|  
 |Inactive account|This alert is triggered when an account is no longer used in one of your connected cloud apps.|Contact the user and the user's manager to determine  whether the account is still active. If not, suspend the user and terminate the license for the app.|  
 |New admin user|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user, and if not, recommend revoking administrator privileges to reduce exposure.|  
 |New admin location|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the log on from this anomalous location was legitimate, and if not, recommend revoking admin permissions or suspending the account to reduce exposure.|  
@@ -104,7 +104,7 @@ translation.priority.ht:
 ## Use policies to assess risk  
  After you take a look at your open alerts, go to the **Policy center** to review policy violations that didn't trigger alerts.  
   
--   In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, click on **Control** and then **Policies**.  
+-   In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click on **Control** and then **Policies**.  
   
 -   Click on a specific policy to see the **Violating now** list of policy matches that didn't trigger alerts.  
   
@@ -112,11 +112,11 @@ translation.priority.ht:
   
      For example, if your policy is set to find compliance breaches and someone saves credit card numbers in files on OneDrive, you will have a match in the policy.  
   
-     ![pci matches](../migration/media/pci-matches.png "pci matches")  
+     ![pci matches](./media/pci-matches.png "pci matches")  
   
 -   Click on the match to see the actual files that breached the policy.  
   
-     ![pci content matches](../migration/media/pci-content-matches.png "pci content matches")  
+     ![pci content matches](./media/pci-content-matches.png "pci content matches")  
   
      You can click on the file itself to get information about the files.  
   
@@ -124,7 +124,7 @@ translation.priority.ht:
   
      You can click on the **Matches** to see the actual credit card numbers.  
   
-     ![content matches ccn](../migration/media/content-matches-ccn.png "content matches ccn")  
+     ![content matches ccn](./media/content-matches-ccn.png "content matches ccn")  
   
 ## See Also  
  [Investigate](../migration/investigate.md)   

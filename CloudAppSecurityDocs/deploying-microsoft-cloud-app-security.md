@@ -13,7 +13,7 @@ ms.author: "rkarlin"
 robots: noindex,nofollow
 ---
 # Deploying Microsoft Cloud App Security
-  [!INCLUDE[Adallom1](../migration/includes/adallom1_md.md)] helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+  [!INCLUDE[Adallom1](./includes/adallom1_md.md)] helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
 ## Get started quickly with Cloud App Security  
   

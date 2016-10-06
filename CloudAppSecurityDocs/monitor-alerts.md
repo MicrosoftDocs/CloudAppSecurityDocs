@@ -35,7 +35,7 @@ To view alerts:
 In the Cloud App Security portal, click on Alerts.
 
 
-![Alert menu](../migration/media/alert-menu.png)
+![Alert menu](./media/alert-menu.png)
 
 
 The following alerts types will be displayed. 

@@ -34,7 +34,7 @@ translation.priority.ht:
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data, to allow you to generate specific views, depending on what you're most interested in, and easy-to-understand graphics to give you the full picture at a glance.
 
-![cloud discovery dashboard](../migration/media/cloud-discovery-dashboard.png)
+![cloud discovery dashboard](./media/cloud-discovery-dashboard.png)
 
 The first thing you should do to get a general picture of your Cloud Discovery apps is to look at the Cloud Discovery Dashboard and review the following:
  
@@ -51,7 +51,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 
 
 ## Customize the risk score  
- Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]'s assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] considers when assessing reliability:  
+ Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing [!INCLUDE[Adallom](./includes/adallom_md.md)]'s assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which [!INCLUDE[Adallom](./includes/adallom_md.md)] considers when assessing reliability:  
   
 -   **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year and popularity. These fields are meant to portray the company's stability on the most basic level.  
   
@@ -69,7 +69,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 3.  In addition, you can set whether certain values are either not available or not applicable in the score calculation. When included, N/A values have a negative contribution to the calculated score.  
   
-     ![score](../migration/media/score.png "score")  
+     ![score](./media/score.png "score")  
   
 ## Manage continuous reports  
  Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it is possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:  
@@ -92,7 +92,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](../migration/general-setup.md#IPtagsandRanges).  
   
-    ![create custom continuous report](../migration/media/create-custom-continuous-report.png) 
+    ![create custom continuous report](./media/create-custom-continuous-report.png) 
   
 ## Exclude entities  
  If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
@@ -107,7 +107,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 4.  Add a user alias or IP address. We recommend adding information about why the user or IP address was excluded.  
   
-     ![exclude user](../migration/media/exclude-user.png "exclude user")  
+     ![exclude user](./media/exclude-user.png "exclude user")  
   
 ## Deleting Cloud Discovery data  
  There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
@@ -128,7 +128,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 3.  Click the **Delete** button.  
   
-     ![delete data](../migration/media/delete-data.png "delete data")  
+     ![delete data](./media/delete-data.png "delete data")  
   
     > [!NOTE]  
     >  The deletion process takes a few minutes and is not immediate.  

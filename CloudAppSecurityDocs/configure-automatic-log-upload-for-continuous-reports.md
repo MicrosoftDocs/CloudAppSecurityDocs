@@ -50,7 +50,7 @@ Log collectors enable you to easily automate log upload from your network. The l
      The log collector VHD image can be downloaded and run on Azure servers.  
   
 2.  Go to the automated upload setting page:  
-    In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, click the settings icon ![settings icon](../migration/media/settings-icon.png "settings icon"), followed by  **Cloud Discovery Settings** and then select the **Upload logs automatically** tab.  
+    In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click the settings icon ![settings icon](./media/settings-icon.png "settings icon"), followed by  **Cloud Discovery Settings** and then select the **Upload logs automatically** tab.  
   
 3.  For each firewall or proxy from which you want to upload logs, create a matching data source:  
   
@@ -79,7 +79,7 @@ Log collectors enable you to easily automate log upload from your network. The l
          > [!NOTE] 
        > Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
          
-  ![discovery data sources](../migration/media/discovery-data-sources.png)
+  ![discovery data sources](./media/discovery-data-sources.png)
   > [!NOTE] 
          > A single Log collector can handle multiple data sources.
   
@@ -91,7 +91,7 @@ Log collectors enable you to easily automate log upload from your network. The l
   
  2.  Select **New** and then **Virtual Machine** and click **Next**.  
   
-             ![discovery hyperv virtual machine](../migration/media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+             ![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
  3.  Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.  
   
@@ -119,7 +119,7 @@ Click on the virtual machine and select **Connect**. You should see the login pr
 > [!NOTE] The virtual machine is pre-configured to obtain an IP address from a DHCP server. If you need to configure a static IP addresses, default gateway, hostname, DNS servers and NTPS, you can use the **network_config** utility or perform changes manually.
 
 
-At this point, your log collector should be connected to your network and should be able to reach the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal.  
+At this point, your log collector should be connected to your network and should be able to reach the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal.  
 
 ## Log in and import 
 The first time you log into the log collector and import the log collector's configuration from the portal, as follows. 

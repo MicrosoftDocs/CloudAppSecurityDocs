@@ -38,9 +38,9 @@ translation.priority.ht:
 ## Applying governance actions  
  Governance actions can be applied from within policies, from inside alerts and from the **File** log.  
   
- At any point, you can review and see the status of all previously applied governance actions by going to the **Settings** cog ![settings icon](../migration/media/settings-icon.png "settings icon") and clicking **Governance log**.  
+ At any point, you can review and see the status of all previously applied governance actions by going to the **Settings** cog ![settings icon](./media/settings-icon.png "settings icon") and clicking **Governance log**.  
   
- For any governance action that failed, click on the retry icon ![retry icon](../migration/media/retry-icon.png "retry icon") to apply it again.  
+ For any governance action that failed, click on the retry icon ![retry icon](./media/retry-icon.png "retry icon") to apply it again.  
   
  Depending on the type of policy, violation, and app, different governance actions are available.  
   
@@ -54,10 +54,10 @@ Since remediation actions leverage the cloud provider APIs, actions may vary fro
 >   
 >  For guidance, you can use the **Edit and preview results** button in the Filters section.  
   
- ![file policy edit and preview results](../migration/media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+ ![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
   
 ## Migration  
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] helps you roll out your migrations by letting you know who in your organization is using which apps and giving you the tools to monitor new app adoption. It can also help you figure out which types of apps you should offer in your organization, by providing you the tools to see what everyone is already using.  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] helps you roll out your migrations by letting you know who in your organization is using which apps and giving you the tools to monitor new app adoption. It can also help you figure out which types of apps you should offer in your organization, by providing you the tools to see what everyone is already using.  
   
 ### How to migrate your users to a new app  
  Imagine this scenario: you recently bought Office 365 and you want all the users in your organization to stop using all other cloud storage apps, and start using OneDrive. Here's what you might want to do:  
@@ -70,10 +70,10 @@ Since remediation actions leverage the cloud provider APIs, actions may vary fro
   
     1.  In your **Cloud Discovery Dashboard**, click Dropbox and then click the **IP address** or **Users** tab.  
   
-    2.  Click the arrow ![arrow icon](../migration/media/arrow-icon.png "arrow icon") and select **Export**.  
+    2.  Click the arrow ![arrow icon](./media/arrow-icon.png "arrow icon") and select **Export**.  
   
 ### Find more secure alternatives  
- The [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] service catalog can help you find alternatives that work for your organization instead of risky apps your users may be using.  
+ The [!INCLUDE[Adallom](./includes/adallom_md.md)] service catalog can help you find alternatives that work for your organization instead of risky apps your users may be using.  
   
  Imagine this scenario: You're considering buying a productivity too and you aren't sure if your users would make use of it or not.  
   

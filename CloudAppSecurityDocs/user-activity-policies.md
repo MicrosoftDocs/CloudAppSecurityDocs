@@ -47,7 +47,7 @@ translation.priority.ht:
   
 2.  Click **Create policy** and select **Activity policy**.  
   
-     ![activity policy menu](../migration/media/activity-policy-menu.png "activity policy menu")  
+     ![activity policy menu](./media/activity-policy-menu.png "activity policy menu")  
   
 3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
   
@@ -66,16 +66,16 @@ translation.priority.ht:
   
      Beneath the **Activity filters** field, configure the parameters for which the alert will be triggered.  
   
-     ![multiple failed log on attempts policy example](../migration/media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")  
+     ![multiple failed log on attempts policy example](./media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")  
   
 -   High download rate  
   
      You can set your policy so that you receive an alert when there has been an unexpected or uncharacteristic level of downloading activity. To configure a policy like this, under **Rate** parameters, choose the parameters to trigger the alert.  
   
-     ![high download rate example](../migration/media/high-download-rate-example.png "high download rate example")  
+     ![high download rate example](./media/high-download-rate-example.png "high download rate example")  
   
 ## Anomaly detection  
- After your organization is protected by [!INCLUDE[Adallom](../migration/includes/adallom_md.md)], all cloud activity is scored according to various pre-defined risk factors. [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families will be considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
+ After your organization is protected by [!INCLUDE[Adallom](./includes/adallom_md.md)], all cloud activity is scored according to various pre-defined risk factors. [!INCLUDE[Adallom](./includes/adallom_md.md)] looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families will be considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
   
  To configure an anomaly detection policy:  
   
@@ -83,7 +83,7 @@ translation.priority.ht:
   
 2.  Click **Create policy** and select **Anomaly detection** policy.  
   
-     ![Anomaly detection policy menu](../migration/media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
+     ![Anomaly detection policy menu](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
   
 3.  Fill in the policy's name and description, and continue to the **Activity filters** field where you can choose the activity for which you wish to apply the policy.  
   
@@ -121,7 +121,7 @@ translation.priority.ht:
   
      The sensitivity value will determine how many weekly alerts will trigger on average for every 1,000 users.  
   
-     ![anomaly detection IPs](../migration/media/anomaly-detection-ips.png "anomaly detection IPs")  
+     ![anomaly detection IPs](./media/anomaly-detection-ips.png "anomaly detection IPs")  
   
 8.  Click **Create**.  
  

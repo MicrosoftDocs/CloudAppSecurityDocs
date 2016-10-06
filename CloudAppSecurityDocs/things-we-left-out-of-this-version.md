@@ -68,18 +68,18 @@ robots: noindex,nofollow
   
 -   **Single sign-on**  
   
-     If you want your administrators to avoid having to sign in separately to [!INCLUDE[Adallom](../migration/includes/adallom_md.md)], provide SSO information as follows.  
+     If you want your administrators to avoid having to sign in separately to [!INCLUDE[Adallom](./includes/adallom_md.md)], provide SSO information as follows.  
   
-     Configuring an SSO authentication in the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] console is highly recommended.  
+     Configuring an SSO authentication in the [!INCLUDE[Adallom](./includes/adallom_md.md)] console is highly recommended.  
   
     1.  Select the **Enable single sign-on** checkbox and copy the **Assertion consumer URL and service provider entity ID**:  
   
-    2.  Go to your identity provider and add [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] as a SAML 2.0 application.  
+    2.  Go to your identity provider and add [!INCLUDE[Adallom](./includes/adallom_md.md)] as a SAML 2.0 application.  
   
         > [!NOTE]  
-        >  [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] supports service-initiated login flows, which occur when a user navigates directly to sub-domain.console.[!INCLUDE[Adallom](../migration/includes/adallom_md.md)].com/login, provides a username and no password. When this happens, [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] initiates a login request to the identity provider. Some identity providers will require you to configure a compressed request for this to properly function.  
+        >  [!INCLUDE[Adallom](./includes/adallom_md.md)] supports service-initiated login flows, which occur when a user navigates directly to sub-domain.console.[!INCLUDE[Adallom](./includes/adallom_md.md)].com/login, provides a username and no password. When this happens, [!INCLUDE[Adallom](./includes/adallom_md.md)] initiates a login request to the identity provider. Some identity providers will require you to configure a compressed request for this to properly function.  
         >   
-        >  All users in the console are stored with lower-case characters. Therefore, in order to make sure the users you assign to [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] match the console users, add their email addresses with all lower-case characters.  
+        >  All users in the console are stored with lower-case characters. Therefore, in order to make sure the users you assign to [!INCLUDE[Adallom](./includes/adallom_md.md)] match the console users, add their email addresses with all lower-case characters.  
   
     3.  Copy the following parameters form your identity provider's console:  
   
@@ -89,7 +89,7 @@ robots: noindex,nofollow
   
         -   3.X.509 Certificate  
   
-    4.  In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] console, add the parameters you copied from your identity provider into the relevant fields in the single sign-on configuration screen.  
+    4.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] console, add the parameters you copied from your identity provider into the relevant fields in the single sign-on configuration screen.  
   
     5.  Cick **Save**.  
   
@@ -97,7 +97,7 @@ robots: noindex,nofollow
         by attempting to log on to the console using your identity provider. If the log on attempt failed, you can see the error by hovering over the information icon, and  download the assertion to make sure the information that was sent by your identity provider was the expected information.  
   
     7.  If the log on attempt was successful,  
-        you can select the **Allow tenant access through single sign-on only (lockdown)** checkbox to prevent direct log on to the console. When this is enabled,  [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] only accepts authenticated identity provider accounts and will no longer accept log on attempts directly to the console with your [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] credentials.  
+        you can select the **Allow tenant access through single sign-on only (lockdown)** checkbox to prevent direct log on to the console. When this is enabled,  [!INCLUDE[Adallom](./includes/adallom_md.md)] only accepts authenticated identity provider accounts and will no longer accept log on attempts directly to the console with your [!INCLUDE[Adallom](./includes/adallom_md.md)] credentials.  
   
         > [!IMPORTANT]  
         >  Make sure  you do not select the checkbox until you have verified that the single sign-on integration is working properly.  
@@ -107,10 +107,10 @@ robots: noindex,nofollow
  Insert subsection body here.  
   
 ### Step 6: Forward logs to your SIEM (Preview Feature)  
- Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] SIEM agent which is installed on the SIEM server pulls the logs from the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]API and streams them in CEF format into the SIEM logger to enable you to include your [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] logs in your SIEM. To integrate [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] with your SIEM, you must perform the following to take the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] logs from the and send them to your SIEM service using Syslog TCP.  
+ Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The [!INCLUDE[Adallom](./includes/adallom_md.md)] SIEM agent which is installed on the SIEM server pulls the logs from the [!INCLUDE[Adallom](./includes/adallom_md.md)]API and streams them in CEF format into the SIEM logger to enable you to include your [!INCLUDE[Adallom](./includes/adallom_md.md)] logs in your SIEM. To integrate [!INCLUDE[Adallom](./includes/adallom_md.md)] with your SIEM, you must perform the following to take the [!INCLUDE[Adallom](./includes/adallom_md.md)] logs from the and send them to your SIEM service using Syslog TCP.  
   
 > [!NOTE]  
->  [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] uses TCP Syslog to assure reliability of SIEM integration. TCP Syslog listener is installed by default on SIEM, however, if your SIEM instance does not support TCP Syslog, contact support.  
+>  [!INCLUDE[Adallom](./includes/adallom_md.md)] uses TCP Syslog to assure reliability of SIEM integration. TCP Syslog listener is installed by default on SIEM, however, if your SIEM instance does not support TCP Syslog, contact support.  
   
 1.  Prerequisites:  
   
@@ -118,13 +118,13 @@ robots: noindex,nofollow
   
     -   A virtual machine running Java 8  
   
-2.  In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] console, click your name in the console menu bar, and select **User settings** and then click on the API Token tab. Name your SIEM integration token and click **Generate new token**. In the Created API token window, copy the token value.  
+2.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] console, click your name in the console menu bar, and select **User settings** and then click on the API Token tab. Name your SIEM integration token and click **Generate new token**. In the Created API token window, copy the token value.  
   
 3.  On your XXX computer, download the [SIEMAgent.jar file here](https://app.box.com/s/y1y4kedctgcjcckl2b6i3bw8kcf2cd31) and save it in `/etc/adallom/siemagent/siemagent.jar`  
   
     > [!NOTE]  
-    >  -   [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] supports multiple concurrent SIEM agents for different variations of logs and filters. You can create several configuration files and repeat these steps.  
-    > -   The [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] SIEM agent uses the system clock to make the initial events synchronization. Make sure its accurate before running the agent. Events will be downloaded from the initial run and onward. If you want to download all events, contact support.  
+    >  -   [!INCLUDE[Adallom](./includes/adallom_md.md)] supports multiple concurrent SIEM agents for different variations of logs and filters. You can create several configuration files and repeat these steps.  
+    > -   The [!INCLUDE[Adallom](./includes/adallom_md.md)] SIEM agent uses the system clock to make the initial events synchronization. Make sure its accurate before running the agent. Events will be downloaded from the initial run and onward. If you want to download all events, contact support.  
   
 4.  Configure your SIEM agent as follows:  
   
@@ -183,7 +183,7 @@ robots: noindex,nofollow
         |-----------|-----------------|-------------|  
         |CFGNAME|A unique name that describes this instance of SIEMAgent|auditsgrabber|  
         |RUN INTERVAL|The interval for synchronization in milliseconds<br /><br /> Recommended value is 20 seconds|20000|  
-        |CONSOLE SUB-DOMAIN|The sub-domain you have when you login to the  console|[!INCLUDE[Adallom](../migration/includes/adallom_md.md)]|  
+        |CONSOLE SUB-DOMAIN|The sub-domain you have when you login to the  console|[!INCLUDE[Adallom](./includes/adallom_md.md)]|  
         |LOG TYPE|Type of logs to retrieve. Supported values:<br /><br /> -   Audits- Activity log entries<br />-   Alerts - Alert entries|audits|  
         |FILTER|Optional<br /><br /> List of filters. Only entries that conform to all the filters are processed (AND filter).<br />Different filter options are specified below.|service=google-apps|  
         |SIEM HOST|The IP address of the SIEM|10.0.0.120|  
@@ -216,21 +216,21 @@ robots: noindex,nofollow
     -   Recommended - Custom SystemV/Upstart service files can be provided upon request.  
   
 #### Data privacy  
- When scanning and analyzing all your cloud app data, [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] saves only activity logs and metadata for your cloud app activity. Customer data (for example, file content and records) will never be found or kept anywhere on our servers. [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]'s alerting and reporting is based only on activity logs and static lists of metadata that are retrieved from the services (for example, lists of attachments in Salesforce or  lists of users from Okta). Additionally, if any of these metadata lists are considered sensitive to you, the relevant module can be turned off so that those lists will not be retrieved from your cloud app account.  
+ When scanning and analyzing all your cloud app data, [!INCLUDE[Adallom](./includes/adallom_md.md)] saves only activity logs and metadata for your cloud app activity. Customer data (for example, file content and records) will never be found or kept anywhere on our servers. [!INCLUDE[Adallom](./includes/adallom_md.md)]'s alerting and reporting is based only on activity logs and static lists of metadata that are retrieved from the services (for example, lists of attachments in Salesforce or  lists of users from Okta). Additionally, if any of these metadata lists are considered sensitive to you, the relevant module can be turned off so that those lists will not be retrieved from your cloud app account.  
   
- The only data that is directly inspected by [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] is data on which you set a file policy with a content inspection. In this case, files are scanned in-memory and when a policy is violated, the only data sent to [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] is the metadata of the file that was matched along with  the obfuscated violation from the file (the match is obfuscated as well as any other digit in the violation text).  
+ The only data that is directly inspected by [!INCLUDE[Adallom](./includes/adallom_md.md)] is data on which you set a file policy with a content inspection. In this case, files are scanned in-memory and when a policy is violated, the only data sent to [!INCLUDE[Adallom](./includes/adallom_md.md)] is the metadata of the file that was matched along with  the obfuscated violation from the file (the match is obfuscated as well as any other digit in the violation text).  
   
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] provides controls to mitigate risks and control cloud apps such as data scanning capabilities, auditing of activities and anomaly detection. [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] also monitors itself and enforces these same controls to provide security for [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] access as well.  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] provides controls to mitigate risks and control cloud apps such as data scanning capabilities, auditing of activities and anomaly detection. [!INCLUDE[Adallom](./includes/adallom_md.md)] also monitors itself and enforces these same controls to provide security for [!INCLUDE[Adallom](./includes/adallom_md.md)] access as well.  
   
- Setting up an [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] API connector is similar for each supported cloud app you want to monitor. The process entails sanctioning the app and then gaining an access token to the app for the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] API. Using the access token, [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] integrates with the cloud app API, gets all the relevant information about users and activities and enforces policies as needed.  
+ Setting up an [!INCLUDE[Adallom](./includes/adallom_md.md)] API connector is similar for each supported cloud app you want to monitor. The process entails sanctioning the app and then gaining an access token to the app for the [!INCLUDE[Adallom](./includes/adallom_md.md)] API. Using the access token, [!INCLUDE[Adallom](./includes/adallom_md.md)] integrates with the cloud app API, gets all the relevant information about users and activities and enforces policies as needed.  
   
 ## Content inspection  
  Content inspection is performed utilizing the built-in DLP engine that can scan for pre-built data types as well as customer regular expressions.  
   
 > [!NOTE]  
->  The files are downloaded from the cloud service and scanned, without ever storing them in [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+>  The files are downloaded from the cloud service and scanned, without ever storing them in [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
- ![policy_dlp](../migration/media/policy_dlp.png "policy_dlp")  
+ ![policy_dlp](./media/policy_dlp.png "policy_dlp")  
   
 -   Preset expression – Search for one of the preset sensitive data types, for example, All files with PII data.  
   
@@ -253,13 +253,13 @@ robots: noindex,nofollow
 -   Mask DLP match – Configure if DLP matches should be stored in reports and logs. Default is to mask violations.  
   
     > [!IMPORTANT]  
-    >  Numbers are replaced with “#” characters and never stored within [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+    >  Numbers are replaced with “#” characters and never stored within [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
  Content inspection extensions:  
   
  As depicted in the diagram below, the architecture can be extended to leverage 3rd-party DLP solutions such Symantec Vontu and Secure Islands. The service can integrate with existing on prem services as well as via cloud-to-cloud integrations.  
   
- ![policy engine](../migration/media/policy-engine.jpg "policy engine")  
+ ![policy engine](./media/policy-engine.jpg "policy engine")  
   
 -   Connectors:  
   
@@ -349,9 +349,9 @@ robots: noindex,nofollow
   
 -   You can contact the users or their managers to recommend alternative, safe and sanctioned apps.  
   
--   You can manage the risky app by going to the **Discovered Services** page and clicking the ![Sanction three dots](../migration/media/sanction-three-dots.png "Sanction three dots") icon next to the service and setting it as **Unsanctioned**.  
+-   You can manage the risky app by going to the **Discovered Services** page and clicking the ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") icon next to the service and setting it as **Unsanctioned**.  
   
--   Then, you can block access to your Unsanctioned apps by clicking the  ![Sanction three dots](../migration/media/sanction-three-dots.png "Sanction three dots") icon and selecting **Export blocking script** for your firewall.  
+-   Then, you can block access to your Unsanctioned apps by clicking the  ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") icon and selecting **Export blocking script** for your firewall.  
   
 ### Manage alerts  
  Change alerts and policies depending on what is being caught that you don't want considered Risky.  
@@ -363,11 +363,11 @@ robots: noindex,nofollow
     2.  Click on the alert to enable deep investigation. From inside the alert you can Resolve or take desired actions to resolve the alert. The actions listed will be determined by the type of policy violated by the alert.  
   
 ## Investigating risk  
- The first thing you want to do after [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] is all set up and running on your cloud apps, is to start monitoring what's going on in your cloud.  
+ The first thing you want to do after [!INCLUDE[Adallom](./includes/adallom_md.md)] is all set up and running on your cloud apps, is to start monitoring what's going on in your cloud.  
   
  The main places to look to keep an eye on your cloud environment are:  
   
--   **The [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] Dashboard**  
+-   **The [!INCLUDE[Adallom](./includes/adallom_md.md)] Dashboard**  
   
      The dashboard provides an overview of everything happening in your cloud environment, including alert data and policy violations.  
   
@@ -395,7 +395,7 @@ robots: noindex,nofollow
   
 -   Use the list of alerts you get to fine tune your policies and narrow the number of violations you get to ensure that only real violations are being considered policy matches.  
   
-     If the policy is receiving too many false positives, and you want to modify the policy, this can be done by clicking on the settings icon next to the policy. You can also use the ![Sanction three dots](../migration/media/sanction-three-dots.png "Sanction three dots") icon to **Enable**/**Disable** or **Delete** a policy.  
+     If the policy is receiving too many false positives, and you want to modify the policy, this can be done by clicking on the settings icon next to the policy. You can also use the ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") icon to **Enable**/**Disable** or **Delete** a policy.  
   
  For example, if you receive an alert in which you see a log on by an unfamiliar IP address:  
   
@@ -407,13 +407,13 @@ robots: noindex,nofollow
   
 4.  Then if you want to take an action, you can resolve the alert by going back to the alert in the **Alerts** page, and clicking on the alert, and then selecting an action from the settings icon such as Suspend user, until you can determine exactly who logged in and if it was justified.  
   
-     ![actions](../migration/media/actions.png "actions")  
+     ![actions](./media/actions.png "actions")  
   
 ## Forward logs to your SIEM (Preview Feature)  
- Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] SIEM agent pulls the logs using the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] API and streams them in CEF format into the SIEM logger to enable you to include your [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] logs in your SIEM. To integrate [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] with your SIEM, you must perform the following to take the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] logs from the and send them to your SIEM service using Syslog TCP.  
+ Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The [!INCLUDE[Adallom](./includes/adallom_md.md)] SIEM agent pulls the logs using the [!INCLUDE[Adallom](./includes/adallom_md.md)] API and streams them in CEF format into the SIEM logger to enable you to include your [!INCLUDE[Adallom](./includes/adallom_md.md)] logs in your SIEM. To integrate [!INCLUDE[Adallom](./includes/adallom_md.md)] with your SIEM, you must perform the following to take the [!INCLUDE[Adallom](./includes/adallom_md.md)] logs from the and send them to your SIEM service using Syslog TCP.  
   
 > [!NOTE]  
->  [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] uses TCP to assure reliability of the SIEM integration.  
+>  [!INCLUDE[Adallom](./includes/adallom_md.md)] uses TCP to assure reliability of the SIEM integration.  
   
 1.  Prerequisites:  
   
@@ -421,7 +421,7 @@ robots: noindex,nofollow
   
     -   The server should run Java 8.  
   
-2.  In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] console, click your name in the console menu bar, and select **User settings** and then click on the API Token tab. Name your SIEM integration token and click **Generate new token**. In the Created API token window, copy the token value.  
+2.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] console, click your name in the console menu bar, and select **User settings** and then click on the API Token tab. Name your SIEM integration token and click **Generate new token**. In the Created API token window, copy the token value.  
   
 3.  Create the following folders on your server:  
   
@@ -439,8 +439,8 @@ robots: noindex,nofollow
     >  It is recommended to keep the version number as part of the filename, for easier identification of the installed version.  
   
     > [!NOTE]  
-    >  -   [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] supports multiple concurrent SIEM agents for different variations of logs and filters. You can create several configuration files and repeat these steps.  
-    > -   The [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] SIEM agent uses the system clock to make the initial events synchronization. Make sure its accurate before running the agent. Events will be downloaded from the initial run and onward. If you want to download all events, contact support.  
+    >  -   [!INCLUDE[Adallom](./includes/adallom_md.md)] supports multiple concurrent SIEM agents for different variations of logs and filters. You can create several configuration files and repeat these steps.  
+    > -   The [!INCLUDE[Adallom](./includes/adallom_md.md)] SIEM agent uses the system clock to make the initial events synchronization. Make sure its accurate before running the agent. Events will be downloaded from the initial run and onward. If you want to download all events, contact support.  
   
 5.  Configure your SIEM agent as follows:  
   
@@ -451,7 +451,7 @@ robots: noindex,nofollow
          Start with a letter, and do not use spaces or special symbols (the use of numbers, dashes and underscores is allowed). Paste the following into the file you created, and edit the parameters within (instructions on the next step).  
   
         > [!NOTE]  
-        >  If you are an existing Adallom customer, and your console URL is for Adallom and not [!INCLUDE[Adallom](../migration/includes/adallom_md.md)], use [SUB DOMAIN].console.adallom.com instead of [SUB DOMAIN].portal.cloudappsecurity.com.  
+        >  If you are an existing Adallom customer, and your console URL is for Adallom and not [!INCLUDE[Adallom](./includes/adallom_md.md)], use [SUB DOMAIN].console.adallom.com instead of [SUB DOMAIN].portal.cloudappsecurity.com.  
   
          For Linux:  
   

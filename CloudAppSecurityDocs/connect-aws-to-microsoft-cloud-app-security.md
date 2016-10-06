@@ -34,35 +34,35 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Connect AWS to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to your existing Amazon Web Services account using the connector APIs.  
+  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Amazon Web Services account using the connector APIs.  
   
 ## How to connect Amazon Web Services to Cloud App Security  
   
 1.  In your Amazon Web Services console, click on **Identity & Access Management**.  
   
-     ![aws identity and access](../migration/media/aws-identity-and-access.png "aws identity and access")  
+     ![aws identity and access](./media/aws-identity-and-access.png "aws identity and access")  
   
 2.  Click on the **Users** tab.  
   
-     ![aws users](../migration/media/aws-users.png "aws users")  
+     ![aws users](./media/aws-users.png "aws users")  
   
 3.  Click on **Create New Users**.  
   
-     ![AWS create user](../migration/media/aws-create-user.png "AWS create user")  
+     ![AWS create user](./media/aws-create-user.png "AWS create user")  
   
-4.  Create a new user for [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] and make sure the **Generate an access key for each user** checkbox is checked.  
+4.  Create a new user for [!INCLUDE[Adallom](./includes/adallom_md.md)] and make sure the **Generate an access key for each user** checkbox is checked.  
   
 5.  Click **Download Credentials**.  
   
-     ![aws dl cred](../migration/media/aws-dl-cred.png "aws dl cred")  
+     ![aws dl cred](./media/aws-dl-cred.png "aws dl cred")  
   
 6.  In the **Users** tab, select the user you created and click **Attach User Policy**.  
   
-     ![aws attach user policy](../migration/media/aws-attach-user-policy.png "aws attach user policy")  
+     ![aws attach user policy](./media/aws-attach-user-policy.png "aws attach user policy")  
   
 7.  Select **Custom Policy** and click **Select**.  
   
-     ![aws custom policy](../migration/media/aws-custom-policy.png "aws custom policy")  
+     ![aws custom policy](./media/aws-custom-policy.png "aws custom policy")  
   
 8.  Fill in the relevant fields with these values:  
   
@@ -97,25 +97,25 @@ translation.priority.ht:
   
 10. Return to the AWS console main page and on the top right corner choose your main region from the dropdown window and then click on **CloudTrail** in the main menu.  
   
-     ![aws cloudtrail](../migration/media/aws-cloudtrail.png "aws cloudtrail")  
+     ![aws cloudtrail](./media/aws-cloudtrail.png "aws cloudtrail")  
   
     1.  If you have not used CloudTrail for this region before, click on the **Get Started** button and set it up by selecting the appropriate S3 bucket.  
   
          Click the **Configuration** tab on the top left of the screen. Under **Additional configuration**, click on the edit icon.  
   
-         ![aws cloudtrail config](../migration/media/aws-cloudtrail-config.png "aws cloudtrail config")  
+         ![aws cloudtrail config](./media/aws-cloudtrail-config.png "aws cloudtrail config")  
   
     2.  Click **Yes** when asked if you want to **Include global services** and click **Save**. This only applies to the region you chose.  
   
-         ![aws include global svc](../migration/media/aws-include-global-svc.png "aws include global svc")  
+         ![aws include global svc](./media/aws-include-global-svc.png "aws include global svc")  
   
     3.  Repeat Step 11 for all regions, but do not set any other region to Include global services.  
   
-11. In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
+11. In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
   
 12. In  the AWS row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button followed by **AWS**.  
   
-     ![connect AWS](../migration/media/connect-aws.png "connect AWS")  
+     ![connect AWS](./media/connect-aws.png "connect AWS")  
   
 13. In the Amazon Web Services settings page, paste the **Access key** and **Secret key** from the csv file into the fields in the API page, and click **Update Access key**.  
   

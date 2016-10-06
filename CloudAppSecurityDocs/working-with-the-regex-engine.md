@@ -13,7 +13,7 @@ ms.author: "rkarlin"
 ---
 # Working with the RegEx engine
  
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]'s content inspection policies leverage RegEx  for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)]'s content inspection policies leverage RegEx  for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   

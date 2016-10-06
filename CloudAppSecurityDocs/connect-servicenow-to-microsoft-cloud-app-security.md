@@ -34,32 +34,32 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Connect ServiceNow to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to your existing ServiceNow account using the app connector API.  
+  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing ServiceNow account using the app connector API.  
   
 ## How to connect ServiceNow to Cloud App Security  
   
 > [!NOTE]  
->  [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] supports ServiceNow versions of Eureka and Fiji. In order to connect ServiceNow with [!INCLUDE[Adallom](../migration/includes/adallom_md.md)], you must have admin-level permissions and make sure the ServiceNow instance supports API access.  
+>  [!INCLUDE[Adallom](./includes/adallom_md.md)] supports ServiceNow versions of Eureka and Fiji. In order to connect ServiceNow with [!INCLUDE[Adallom](./includes/adallom_md.md)], you must have admin-level permissions and make sure the ServiceNow instance supports API access.  
   
 1.  Log on with an Admin account to your ServiceNow account.  
   
-2.  Create a new service account for [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] and attach the Admin role to the newly created account.  
+2.  Create a new service account for [!INCLUDE[Adallom](./includes/adallom_md.md)] and attach the Admin role to the newly created account.  
   
 3.  Make sure the REST API plug-in is turned on.  
   
-     ![servicenow account](../migration/media/servicenow-account.png "servicenow account")  
+     ![servicenow account](./media/servicenow-account.png "servicenow account")  
   
-4.  In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
+4.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
   
 5.  In the ServiceNow row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button and then **ServiceNow**.  
   
-     ![connect servicenow](../migration/media/connect-servicenow.png "connect servicenow")  
+     ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
 6.  In the ServiceNow settings page, on the API tab, add your ServiceNow username, password and instance URL in the appropriate boxes.  
   
 7.  Click **Connect**.  
   
-     ![servicenow update password](../migration/media/servicenow-update-password.png "servicenow update password")  
+     ![servicenow update password](./media/servicenow-update-password.png "servicenow update password")  
   
 8.  Make sure the connection succeeded by clicking **Test API**.  
   

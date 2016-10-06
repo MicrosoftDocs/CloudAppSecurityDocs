@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Investigate
-  After [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] runs on your cloud environment, you will require a stage of learning and investigating using [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]'s tools to gain deeper  understanding of what's happening in your cloud environment. Then based on your particular environment and how it's being used, you can identify the requirements necessary to protect your organization from risk.  
+  After [!INCLUDE[Adallom](./includes/adallom_md.md)] runs on your cloud environment, you will require a stage of learning and investigating using [!INCLUDE[Adallom](./includes/adallom_md.md)]'s tools to gain deeper  understanding of what's happening in your cloud environment. Then based on your particular environment and how it's being used, you can identify the requirements necessary to protect your organization from risk.  
   
  This section describes how to perform deep dive investigation to get a better understanding of what's going on in your cloud environment.  
   
@@ -52,18 +52,18 @@ translation.priority.ht:
 ##  <a name="sanctionapp"></a> Sanction or unsanction apps  
  The first step to understanding your cloud is to sanction apps. After you sanction an app, you can filter for apps that aren't sanctioned and initiate migration to sanctioned apps of the  same type.  
   
--   In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] console, click on **Discover** and then **Discovery dashboard**.  
+-   In the [!INCLUDE[Adallom](./includes/adallom_md.md)] console, click on **Discover** and then **Discovery dashboard**.  
   
--   In the list of discovered apps, on the row in which the app you want to sanction appears, click on the three dots at the end of the row ![Sanction three dots](../migration/media/sanction-three-dots.png "Sanction three dots") and select **Mark as sanctioned**.  
+-   In the list of discovered apps, on the row in which the app you want to sanction appears, click on the three dots at the end of the row ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") and select **Mark as sanctioned**.  
   
-     ![mark as sanctioned](../migration/media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![mark as sanctioned](./media/mark-as-sanctioned.png "mark as sanctioned")  
   
 > [!NOTE]  
->  For each app you want to monitor with the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] API integration, we recommend creating a admin service account dedicated to [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+>  For each app you want to monitor with the [!INCLUDE[Adallom](./includes/adallom_md.md)] API integration, we recommend creating a admin service account dedicated to [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
 ## Use the investigation tools  
   
-1.  In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following:  
+1.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following:  
   
     -   Who is accessing your cloud environment?  
   
@@ -99,7 +99,7 @@ translation.priority.ht:
   
 4.  Go to **Investigate** and then select an app. You will get to the App dashboard which gives you information and insights so that you can use the tabs across the top to check the following:  
   
-     ![investigate app](../migration/media/investigate-app.png "investigate app")  
+     ![investigate app](./media/investigate-app.png "investigate app")  
   
     -   What kind of devices are your users using to connect to the app?  
   
@@ -130,7 +130,7 @@ translation.priority.ht:
     -   Are there cloud apps that are used but not in compliance with your organization’s policy?  
   
 ## How to use reports to investigate risk  
- When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
+ When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after [!INCLUDE[Adallom](./includes/adallom_md.md)] runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
   
  Built-in reports offer you aggregated views for investigation.  
   
@@ -149,7 +149,7 @@ translation.priority.ht:
   
 5.  Under **Activity filters**, click the **+** to add a filter. Scroll down to **IP tag** and then select **Anonymous** and **Tor**.  
   
-     ![example policy risky ips](../migration/media/example-policy-risky-ips.png "example policy risky ips")  
+     ![example policy risky ips](./media/example-policy-risky-ips.png "example policy risky ips")  
   
  Now that you have the policy in place, you're surprised to see that you get an alert that the policy was violated.  
   

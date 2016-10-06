@@ -16,13 +16,13 @@ ms.author: "rkarlin"
 robots: noindex,nofollow
 ---
 # Discover and investigate risk
-  After [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] is up and running on your cloud environment, it's time to utilize the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] engine to investigate what's going on in your cloud so that you can start protecting your organization.  
+  After [!INCLUDE[Adallom](./includes/adallom_md.md)] is up and running on your cloud environment, it's time to utilize the [!INCLUDE[Adallom](./includes/adallom_md.md)] engine to investigate what's going on in your cloud so that you can start protecting your organization.  
   
- This section explains how to  investigate issues in your cloud environment and provides examples of what your daily process should be to manage risk for apps  that you monitor with [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+ This section explains how to  investigate issues in your cloud environment and provides examples of what your daily process should be to manage risk for apps  that you monitor with [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
- It's important to understand that this process is cyclical, meaning that while you must set up policies to start working with [!INCLUDE[Adallom](../migration/includes/adallom_md.md)], you will periodically return to the Policy center to fine-tune existing policies, and create new policies.  
+ It's important to understand that this process is cyclical, meaning that while you must set up policies to start working with [!INCLUDE[Adallom](./includes/adallom_md.md)], you will periodically return to the Policy center to fine-tune existing policies, and create new policies.  
   
- ![work process](../migration/media/work-process.png "work process")  
+ ![work process](./media/work-process.png "work process")  
   
 ### Investigate  
   
@@ -34,7 +34,7 @@ robots: noindex,nofollow
   
 ### Protect (periodically)  
   
--   In order for [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]'s alerting and reporting features to work, it is necessary to [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+-   In order for [!INCLUDE[Adallom](./includes/adallom_md.md)]'s alerting and reporting features to work, it is necessary to [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
   
 -   It is also possible to automate prevention by setting up automated remediation.  
   

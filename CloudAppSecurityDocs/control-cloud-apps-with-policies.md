@@ -49,7 +49,7 @@ translation.priority.ht:
 |File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
   
 ## Identifying risk  
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
   
 -   **Access control:** Who accesses what from where?  
   
@@ -83,7 +83,7 @@ translation.priority.ht:
   
 -   **Threat detection:** Are there suspicious activities threatening your cloud environment?  
   
-     Receive real-time notifications for any policy violation or activity threshold via text message or email. By applying machine learning algorithms [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] enables you to detect behavior that could indicate that a user is misusing data.  
+     Receive real-time notifications for any policy violation or activity threshold via text message or email. By applying machine learning algorithms [!INCLUDE[Adallom](./includes/adallom_md.md)] enables you to detect behavior that could indicate that a user is misusing data.  
   
 ## How to control risk  
  Follow this process to control risk with policies:  
@@ -95,7 +95,7 @@ translation.priority.ht:
 3.  Add automated actions to respond and remediate risks automatically.  
   
 ### Create a policy  
- You can either use [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]’s policy templates as a basis for all your policies, or create policies from a query.  
+ You can either use [!INCLUDE[Adallom](./includes/adallom_md.md)]’s policy templates as a basis for all your policies, or create policies from a query.  
   
  Policy templates will help you set the correct filters and configurations necessary to detect specific events of interest within your environment. The templates include policies of all types, and can apply to various services.  
   
@@ -103,7 +103,7 @@ translation.priority.ht:
   
 1.  In the console, click on **Control** followed by **Templates**.  
   
-     ![create policy from template](../migration/media/create-policy-from-template.png "create policy from template")  
+     ![create policy from template](./media/create-policy-from-template.png "create policy from template")  
   
 2.  Click the **+** at the far right of the row of the template you want to use. A create policy page opens, containing the pre-defined configuration of the template.  
   
@@ -123,9 +123,9 @@ translation.priority.ht:
   
 2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **User** and select the Admin whose account is registering unusual activity. Then, under **Activity**, select **Copy folder** and **Copy file**.  
   
-     ![create file from investigation](../migration/media/create-file-from-investigation.png "create file from investigation")  
+     ![create file from investigation](./media/create-file-from-investigation.png "create file from investigation")  
   
-3.  In the upper right corner of the console, click **New policy from search**![new policy from search button](../migration/media/new-policy-from-search-button.png "new policy from search button")  
+3.  In the upper right corner of the console, click **New policy from search**![new policy from search button](./media/new-policy-from-search-button.png "new policy from search button")  
   
 4.  A create policy page opens, containing the filters you used in your investigation.  
   
@@ -136,7 +136,7 @@ translation.priority.ht:
   
  
  
- ![create activity policy from investigation](../migration/media/create-activity-policy-from-investigation.png)
+ ![create activity policy from investigation](./media/create-activity-policy-from-investigation.png)
  
  
   

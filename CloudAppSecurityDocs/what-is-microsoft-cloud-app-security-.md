@@ -38,19 +38,19 @@ translation.priority.ht:
  
   While moving to the cloud has increased flexibility for employees and reduced IT cost, it has also introduced new complexity and challenges for keeping your organization secure. To realize the full benefit of cloud applications, IT teams must find the right balance of enabling access while maintaining control to protect critical data.  
   
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] is a critical component of the Microsoft Cloud Security stack. It is a comprehensive solution that helps organizations take full advantage of the promise of cloud applications while maintaining control with improved visibility into activity. It also increases protection of critical data across cloud applications. With tools to help uncover Shadow IT, assess risk, enforce policies, investigate activities and stop threats, organizations can safely move to the cloud while maintaining control of critical data.  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] is a critical component of the Microsoft Cloud Security stack. It is a comprehensive solution that helps organizations take full advantage of the promise of cloud applications while maintaining control with improved visibility into activity. It also increases protection of critical data across cloud applications. With tools to help uncover Shadow IT, assess risk, enforce policies, investigate activities and stop threats, organizations can safely move to the cloud while maintaining control of critical data.  
   
 ## The Cloud App Security framework  
   
 ||||  
 |-|-|-|  
-|![Discovery icon](../migration/media/discovery-icon.png "Discovery icon")|Discover|Uncover Shadow IT with [!INCLUDE[Adallom](../migration/includes/adallom_md.md)]. Gain visibility by discovering apps, activities, users, data and files in your cloud environment as well as third-party apps that are connected to your cloud.|  
-|![investigate icon](../migration/media/investigate-icon.png "investigate icon")|Investigate|Investigate your cloud apps using cloud forensics tools to deep-dive into risky apps, specific users and files in your network as well as finding patterns in the data collected from your cloud and generating reports to monitor your cloud.|  
-|![Protect icon](../migration/media/protect-icon.png "Protect icon")|Control|Mitigate risk by setting policies and alerts in order to achieve maximum control over network cloud traffic. Use [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to migrate your users to safe, sanctioned cloud app alternatives.|  
-|![](../Image/protect%20icon.png)|Protect|Use [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to sanction/unsanction applications, enforce data loss prevention (DLP), control permissions and sharing, and generate custom reports and alerts.|  
+|![Discovery icon](./media/discovery-icon.png "Discovery icon")|Discover|Uncover Shadow IT with [!INCLUDE[Adallom](./includes/adallom_md.md)]. Gain visibility by discovering apps, activities, users, data and files in your cloud environment as well as third-party apps that are connected to your cloud.|  
+|![investigate icon](./media/investigate-icon.png "investigate icon")|Investigate|Investigate your cloud apps using cloud forensics tools to deep-dive into risky apps, specific users and files in your network as well as finding patterns in the data collected from your cloud and generating reports to monitor your cloud.|  
+|![Protect icon](./media/protect-icon.png "Protect icon")|Control|Mitigate risk by setting policies and alerts in order to achieve maximum control over network cloud traffic. Use [!INCLUDE[Adallom](./includes/adallom_md.md)] to migrate your users to safe, sanctioned cloud app alternatives.|  
+|![](../Image/protect%20icon.png)|Protect|Use [!INCLUDE[Adallom](./includes/adallom_md.md)] to sanction/unsanction applications, enforce data loss prevention (DLP), control permissions and sharing, and generate custom reports and alerts.|  
   
 ## Architecture  
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] enables visibility integration with your cloud in the following ways:  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] enables visibility integration with your cloud in the following ways:  
   
 -   Visibility using Cloud Discovery to map and identify your cloud environment, and the cloud apps you have in use.  
   
@@ -60,10 +60,10 @@ translation.priority.ht:
   
 -   Continuous control by enabling you to set and then continually fine-tune policies.  
   
- ![Architecture](../migration/media/architecture.png "Architecture")  
+ ![Architecture](./media/architecture.png "Architecture")  
   
 > [!NOTE]  
->  When [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] performs content inspection, data privacy is enforced. Your data is not stored in the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] data base, only the metadata of the file records and the violations that were identified. See our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132)  and the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/You-are-in-control-of-your-data) for more information about data retention.
+>  When [!INCLUDE[Adallom](./includes/adallom_md.md)] performs content inspection, data privacy is enforced. Your data is not stored in the [!INCLUDE[Adallom](./includes/adallom_md.md)] data base, only the metadata of the file records and the violations that were identified. See our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132)  and the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/You-are-in-control-of-your-data) for more information about data retention.
 Cloud App Security retains data as follows:
 >- Activity log: 180 days
 >- Discovery data: 90 days
@@ -71,7 +71,7 @@ Cloud App Security retains data as follows:
 
    
   
- After data is collected from these sources, [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] runs sophisticated analysis on it, alerting you right away to anomalous activities, and providing you with deep visibility. You can then configure a policy in [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] and then use it to protect everything in your cloud environment.  
+ After data is collected from these sources, [!INCLUDE[Adallom](./includes/adallom_md.md)] runs sophisticated analysis on it, alerting you right away to anomalous activities, and providing you with deep visibility. You can then configure a policy in [!INCLUDE[Adallom](./includes/adallom_md.md)] and then use it to protect everything in your cloud environment.  
   
 ###  <a name="cloud_discovery_list"></a> How Cloud Discovery works  
  Cloud Discovery uses your traffic logs to dynamically discover and analyze which cloud apps are in use in your organization.  
@@ -82,16 +82,16 @@ For more information about Cloud Discovery, see [How Cloud Discovery works](../m
  
   
 ### How sanctioning and unsanctioning an app works  
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] enables you to sanction/unsanction apps in your organization, using our **Cloud app catalog**.  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] enables you to sanction/unsanction apps in your organization, using our **Cloud app catalog**.  
   
- The Microsoft team of analysts has an extensive, and continuously growing, catalog of over 13,000 cloud apps that are ranked and scored based on industry standards. The **Cloud app catalog** rates risk for your cloud apps based on regulatory certifications, industry standards, and best practices. You can then customize the scores and the weights of various parameters to your organization's needs. Based on these scores, [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] lets you know how risky the app is according to over 50 risk factors that might affect your environment.  
+ The Microsoft team of analysts has an extensive, and continuously growing, catalog of over 13,000 cloud apps that are ranked and scored based on industry standards. The **Cloud app catalog** rates risk for your cloud apps based on regulatory certifications, industry standards, and best practices. You can then customize the scores and the weights of various parameters to your organization's needs. Based on these scores, [!INCLUDE[Adallom](./includes/adallom_md.md)] lets you know how risky the app is according to over 50 risk factors that might affect your environment.  
   
 ### How App Connectors work  
- App connectors leverage APIs provided by various cloud apps providers to enable the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] cloud to integrate with other clouds apps and extend control and protection. This enables [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to pull information directly out of cloud apps for analysis.  
+ App connectors leverage APIs provided by various cloud apps providers to enable the [!INCLUDE[Adallom](./includes/adallom_md.md)] cloud to integrate with other clouds apps and extend control and protection. This enables [!INCLUDE[Adallom](./includes/adallom_md.md)] to pull information directly out of cloud apps for analysis.  
   
- In order to connect an app and extend protection, the app administrator authorizes [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to access the app, and then [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] queries the app for activity logs, scans data and accounts and cloud content. [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] can then enforce policies, detect threats and provide governance actions for resolving issues.  
+ In order to connect an app and extend protection, the app administrator authorizes [!INCLUDE[Adallom](./includes/adallom_md.md)] to access the app, and then [!INCLUDE[Adallom](./includes/adallom_md.md)] queries the app for activity logs, scans data and accounts and cloud content. [!INCLUDE[Adallom](./includes/adallom_md.md)] can then enforce policies, detect threats and provide governance actions for resolving issues.  
   
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] leverages the APIs provided by the cloud provider, each app has its own framework and API limitations. [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] works with the app providers to optimize the use of the APIs and to ensure the best performance. Taking into account the different limitations the apps impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] leverages the APIs provided by the cloud provider, each app has its own framework and API limitations. [!INCLUDE[Adallom](./includes/adallom_md.md)] works with the app providers to optimize the use of the APIs and to ensure the best performance. Taking into account the different limitations the apps impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the [!INCLUDE[Adallom](./includes/adallom_md.md)] engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
   
 ### How policy control works  
  Policies allow you to define the way you want your users to behave in the cloud. They enable you to detect risky behavior, violations or suspicious data points and activities in your cloud environment, and if required, to integrate remediation processes to achieve complete risk mitigation. There are multiple types of policies that correlate to the different types of information you want to gather about your cloud environment and the types of remediation actions you may want to take.  

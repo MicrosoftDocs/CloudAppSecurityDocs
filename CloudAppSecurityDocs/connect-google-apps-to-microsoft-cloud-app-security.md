@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Connect Google Apps to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to your existing Google Apps account using the connector APIs.  
+  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Google Apps account using the connector APIs.  
   
 ## Configure Google Apps  
   
@@ -42,7 +42,7 @@ translation.priority.ht:
   
 2.  Click **Create an empty project** to start a new project.  
   
-     ![google1](../migration/media/google1.png "google1")  
+     ![google1](./media/google1.png "google1")  
   
 3.  In the **New project** screen:  
   
@@ -54,19 +54,19 @@ translation.priority.ht:
   
     4.  Click **Create**.  
   
-         ![google2](../migration/media/google2.png "google2")  
+         ![google2](./media/google2.png "google2")  
   
 4.  After the project is created, click **Enable and manage APIs**.  
   
-     ![google3](../migration/media/google3.png "google3")  
+     ![google3](./media/google3.png "google3")  
   
 5.  Click on the **Enabled APIs** tab, and disable all the listed APIs.  
   
-     ![google5](../migration/media/google5.png "google5")  
+     ![google5](./media/google5.png "google5")  
   
 6.  Click on the **Google APIs** tab and enable the following APIs (use the search line if the API is not listed in the **Popular APIs** list):  
   
-     ![google8](../migration/media/google8.png "google8")  
+     ![google8](./media/google8.png "google8")  
   
     > [!NOTE]  
     >  Ignore the **Credentials** warning for now.  
@@ -81,11 +81,11 @@ translation.priority.ht:
   
     -   Gmail API  
   
-         ![google11 warning](../migration/media/google11-warning.png "google11 warning")  
+         ![google11 warning](./media/google11-warning.png "google11 warning")  
   
 7.  You should have 5 **Enabled APIs**:  
   
-     ![google15](../migration/media/google15.png "google15")  
+     ![google15](./media/google15.png "google15")  
   
 8.  Click **Credentials** followed by **OAuth consent**  
   
@@ -95,45 +95,45 @@ translation.priority.ht:
   
     -   Click **Save**.  
   
-     ![google16](../migration/media/google16.png "google16")  
+     ![google16](./media/google16.png "google16")  
   
 9. In the **Credentials** tab, click the arrow next to **Create credentials** and select **Service account key**.  
   
-     ![google17](../migration/media/google17.png "google17")  
+     ![google17](./media/google17.png "google17")  
   
 10. In **Service account**, choose **New service account** and type any name, for example **Service account 1**.  
   
-     ![google19](../migration/media/google19.png "google19")  
+     ![google19](./media/google19.png "google19")  
   
      Under **Key type** choose **P12** and click **Create**.  
   
      A P12 certificate file will be downloaded. Save the certificate for use later.  
   
-     ![google20](../migration/media/google20.png "google20")  
+     ![google20](./media/google20.png "google20")  
   
 11. In the **Credentials** tab, click **Manage service accounts** in the far right.  
   
-     ![google apps credentials service account](../migration/media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![google apps credentials service account](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
   
 12. Click the 3 dots to the right of the service account you created and select **Edit**.  
   
-     ![google22](../migration/media/google22.png "google22")  
+     ![google22](./media/google22.png "google22")  
   
 13. Select the **Enable Google Apps Domain-wide Delegation** checkbox and click **Save**.  
   
-     ![google24](../migration/media/google24.png "google24")  
+     ![google24](./media/google24.png "google24")  
   
 14. Copy the **Email address** assigned to your service - you will need it later.  
   
-     ![google25](../migration/media/google25.png "google25")  
+     ![google25](./media/google25.png "google25")  
   
 15. Open the Google menu by clicking the three horizontal lines next to Google Cloud Platform, and select **API manager**.  
   
-     ![google menu](../migration/media/google-menu.png "google menu")  
+     ![google menu](./media/google-menu.png "google menu")  
   
      Select **Enabled APIs**.  
   
-     ![google27](../migration/media/google27.png "google27")  
+     ![google27](./media/google27.png "google27")  
   
 16. Click on the settings cog next to **Drive API** and under **Drive UI Integration**, fill in the following:  
   
@@ -151,7 +151,7 @@ translation.priority.ht:
   
     -   Click **Save Changes**.  
   
-         ![google29](../migration/media/google29.png "google29")  
+         ![google29](./media/google29.png "google29")  
   
 17. In the **Enabled APIs** list, click the setting cog setting next to **Google Apps Marketplace SDK** and select the **Configuration** tab.  
   
@@ -167,7 +167,7 @@ translation.priority.ht:
   
          The images can be found at:  [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
-         ![google31](../migration/media/google31.png "google31")  
+         ![google31](./media/google31.png "google31")  
   
     -   Fill in the following **Support URLs**:  
   
@@ -219,15 +219,15 @@ translation.priority.ht:
   
 18. Select **Security** from the list of controls. If you don't see this option listed, select More controls from the gray bar at the bottom of the page, and then select **Security**.  
   
-     ![google apps security](../migration/media/google-apps-security.png "google apps security")  
+     ![google apps security](./media/google-apps-security.png "google apps security")  
   
 19. Choose **API reference**.  
   
-     ![google api ref](../migration/media/google-api-ref.png "google api ref")  
+     ![google api ref](./media/google-api-ref.png "google api ref")  
   
 20. Select **Enable API Access** and click **Save changes**.  
   
-     ![google api access](../migration/media/google-api-access.png "google api access")  
+     ![google api access](./media/google-api-access.png "google api access")  
   
 ## Configure Cloud App Security  
   
@@ -235,11 +235,11 @@ translation.priority.ht:
   
 2.  In the Google Apps row, click **Connect** in the **App Connector status** column, or click **Connect an app** and select **Google Apps**.  
   
-     ![connect google apps](../migration/media/connect-google-apps.png "connect google apps")  
+     ![connect google apps](./media/connect-google-apps.png "connect google apps")  
   
 3.  In the Google Apps settings page, fill in the following:  
   
-     ![Google Apps Configuration in Cloud App Security](../migration/media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+     ![Google Apps Configuration in Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
     1.  **Google Service Account email address** that you copied in step 14.  
   
@@ -249,13 +249,13 @@ translation.priority.ht:
   
     4.  Enter one **admin email** of your Google Apps admin.  
   
-    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](../migration/enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
+    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in [!INCLUDE[Adallom](./includes/adallom_md.md)] for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](../migration/enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
   
     6.  Click **Save settings**.  
   
-    7.  **Follow the link** to connect to Google Apps. This will open Google Apps and you will be asked to authorize access for [!INCLUDE[Adallom](../migration/includes/adallom_md.md)].  
+    7.  **Follow the link** to connect to Google Apps. This will open Google Apps and you will be asked to authorize access for [!INCLUDE[Adallom](./includes/adallom_md.md)].  
   
-         ![Google Apps authorization request](../migration/media/google-apps-authorization-request.png "Google Apps authorization request")  
+         ![Google Apps authorization request](./media/google-apps-authorization-request.png "Google Apps authorization request")  
   
     8.  Make sure the connection succeeded by clicking **Test API**.  
   

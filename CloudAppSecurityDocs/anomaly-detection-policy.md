@@ -37,7 +37,7 @@ translation.priority.ht:
  Cloud App Security has an initial learning period of 7 days during which it does not flag any new users, activity, devices or locations as anomalous. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. 
  Use the sensitivity slider in the policy to set the minimum risk score from which alerts will be triggered. It is recommended that when you create an anomaly policy, use the default sensitivity threshold for a week, before you change it in accordance with the number of alerts you received, Cloud App Security will send you more or fewer alerts for various risk scores when you change the sensitivity.
   
- ![sensitivity slider](../migration/media/sensitivity-slider.png)
+ ![sensitivity slider](./media/sensitivity-slider.png)
 ## Anomaly detection policy reference  
  An anomaly detection policy enables you to setup and configure continuous monitoring of user activity for behavioral anomalies. Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into 6 risk factors. Based on the policy results, security alerts are triggered.   
 Each policy is composed of the following parts:  

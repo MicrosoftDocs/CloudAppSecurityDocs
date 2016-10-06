@@ -41,7 +41,7 @@ translation.priority.ht:
   
 2.  Click **Create policy** and select **App discovery** policy.  
   
-     ![app discovery policy menu](../migration/media/app-discovery-policy-menu.png "app discovery policy menu")  
+     ![app discovery policy menu](./media/app-discovery-policy-menu.png "app discovery policy menu")  
   
 3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
   
@@ -64,16 +64,16 @@ Set the **Severity** of the policy to **Medium**.
 At the bottom set the thresholds that should trigger an alert for a certain discovered app - only if over 100 users in the environment used the app, and only if they downloaded a certain amount of data from the service.   
 Additionally, you can set the limit of daily alerts you wish to receive.  
   
- ![app discovery policy example](../migration/media/app-discovery-policy-example.png "app discovery policy example")  
+ ![app discovery policy example](./media/app-discovery-policy-example.png "app discovery policy example")  
   
 ## Cloud Discovery anomaly detection  
- [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] searches all the logs in your Cloud Discovery for anomalies. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. By default, the Anomaly detection policy is enabled, so it's not necessary to configure a new policy for it to work, but you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
+ [!INCLUDE[Adallom](./includes/adallom_md.md)] searches all the logs in your Cloud Discovery for anomalies. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. By default, the Anomaly detection policy is enabled, so it's not necessary to configure a new policy for it to work, but you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
   
 1.  In the console, click on **Control** followed by **Policies**.  
   
 2.  Click **Create policy** and select **Cloud Discovery anomaly detection policy**.  
   
-     ![cloud discovery anomaly detection policy menu](../migration/media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
+     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
   
 3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
   
@@ -90,7 +90,7 @@ Set a **Daily alert limit** and select whether the alert will be sent as an emai
   
 9. Click **Create**.  
   
- ![new discovery anomaly policy](../migration/media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
+ ![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
   
 ## See Also  
  [User activity policies](../migration/user-activity-policies.md)   

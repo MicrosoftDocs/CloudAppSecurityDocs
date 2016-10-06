@@ -48,7 +48,7 @@ translation.priority.ht:
   
 -   User – The user who performed the activity. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
   
-     ![activity ref1](../migration/media/activity-ref1.png "activity ref1")  
+     ![activity ref1](./media/activity-ref1.png "activity ref1")  
   
 -   IP address – The IP address from which the activity was performed.  
   
@@ -60,7 +60,7 @@ translation.priority.ht:
   
 -   Registered ISP – The ISP from which the activity was performed.  
   
-     ![activity policy ref2](../migration/media/activity-policy-ref2.png "activity policy ref2")  
+     ![activity policy ref2](./media/activity-policy-ref2.png "activity policy ref2")  
   
 -   Device type - Search only for activities that were performed using a specific device type, for example, all activities from mobile devices.  
   
@@ -78,7 +78,7 @@ translation.priority.ht:
   
 -   Matched policy – Search for activities that matched on a specific policy that was set in the portal.  
   
-     ![Activity policy ref3](../migration/media/activity-policy-ref3.png "Activity policy ref3")  
+     ![Activity policy ref3](./media/activity-policy-ref3.png "Activity policy ref3")  
   
 ## Activity match parameters  
  Specify the amount of activity repetition required to match the policy, for example, setting a policy to alert when a user performs 10 unsuccessful login attempts in a 2 minute time frame.  
@@ -104,7 +104,7 @@ Using **Repeated activity** you can set the number of repeated activities, the d
   
 -   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
   
-     ![activity policy ref6](../migration/media/activity-policy-ref6.png "activity policy ref6")  
+     ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
 ## See Also  
  [Daily activities to protect your cloud environment](../migration/daily-activities-to-protect-your-cloud-environment.md)   

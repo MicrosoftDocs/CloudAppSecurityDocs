@@ -34,43 +34,43 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Connect Box to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to your existing Box account using the App Connector APIs.  
+  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Box account using the App Connector APIs.  
   
 ## How to connect Box to Cloud App Security  
   
 > [!NOTE]  
->  Deploying with an account that is not an Admin account will lead to a failure in the API test and will not allow [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] to scan all of the files in Box. If this is a problem for you, you can deploy with a Co-Admin that has all of the privileges checked, but the API test will continue to fail and files owned by other admins in Box will not be scanned.  
+>  Deploying with an account that is not an Admin account will lead to a failure in the API test and will not allow [!INCLUDE[Adallom](./includes/adallom_md.md)] to scan all of the files in Box. If this is a problem for you, you can deploy with a Co-Admin that has all of the privileges checked, but the API test will continue to fail and files owned by other admins in Box will not be scanned.  
   
 1.  If you restrict application permission access, follow this step. Otherwise, skip to step 2.  
   
     -   In the Box Admin console, click the settings icon followed by **Business settings**.  
   
-         ![box business settings](../migration/media/box-business-settings.png "box business settings")  
+         ![box business settings](./media/box-business-settings.png "box business settings")  
   
     -   Click on the **Apps** tab.  
   
-         ![box apps](../migration/media/box-apps.png "box apps")  
+         ![box apps](./media/box-apps.png "box apps")  
   
     -   If **Unpublished Applications** is selected, in the **Except for** text box, add the Cloud App Security app serial number: `nduj1o3yavu30dii7e03c3n7p49cj2qh` and click **Save**.  
   
-         ![box settings except for](../migration/media/box-settings-except-for.png "box settings except for")  
+         ![box settings except for](./media/box-settings-except-for.png "box settings except for")  
   
     > [!NOTE]  
-    >  If you are an existing Adallom customer, and your console URL is for Adallom and not [!INCLUDE[Adallom](../migration/includes/adallom_md.md)], use this app serial number: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
+    >  If you are an existing Adallom customer, and your console URL is for Adallom and not [!INCLUDE[Adallom](./includes/adallom_md.md)], use this app serial number: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
-2.  In the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
+2.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
   
 3.  In the Box row, click **Connect** in the **App Connector status** column, or click the **Connect an App** button and select **Box**.  
   
-     ![connect box](../migration/media/connect-box.png "connect box")  
+     ![connect box](./media/connect-box.png "connect box")  
   
 4.  In the **Box settings** page, on the **API** tab, click **Follow this link**.  
   
-5.  This opens the Box logon page. Enter your credentials to allow [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] access to your team's Box app.  
+5.  This opens the Box logon page. Enter your credentials to allow [!INCLUDE[Adallom](./includes/adallom_md.md)] access to your team's Box app.  
   
-6.  Box will ask you if you want to allow [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.  
+6.  Box will ask you if you want to allow [!INCLUDE[Adallom](./includes/adallom_md.md)] access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.  
   
-7.  Back in the [!INCLUDE[Adallom](../migration/includes/adallom_md.md)] portal, you should receive a message saying that Box was successfully connected.  
+7.  Back in the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, you should receive a message saying that Box was successfully connected.  
   
 8.  Make sure the connection succeeded by clicking **Test API**.  
   
