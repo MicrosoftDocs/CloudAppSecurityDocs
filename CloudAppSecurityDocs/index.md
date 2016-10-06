@@ -32,14 +32,12 @@ ms.assetid:
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="./understand-explore/what-is-information-protection.md">What is Azure Information Protection?</a></li>
-          <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Quick start tutorial for Azure Information Protection</a></li>
-          <li><a href="./get-started/faqs.md">Frequently asked questions for Azure Information Protection</a></li>
+          <li><a href="./getting-started-with-cloud-app-security.md">Link into content</a></li>
+          <li><a href="./getting-started-with-cloud-app-security.md">Link into content</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="./plan-design/deployment-roadmap.md">Azure Information Protection deployment roadmap</a></li>
-          <li><a href="./develop/developers-guide.md">Azure Information Protection Developer's Guide</a></li>
-          <li><a href="./rms-client/info-protect-client.md">Installing the Azure Information Protection client</a></li>
+          <li><a href="./getting-started-with-cloud-app-security.md">Link into content</a></li>
+          <li><a href="./getting-started-with-cloud-app-security.md">Link into content</a></li>
         </ul>
       </div>
     </section>
