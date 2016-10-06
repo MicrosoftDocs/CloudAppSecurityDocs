@@ -15,11 +15,11 @@ ms.author: "rkarlin"
 robots: noindex,nofollow
 ---
 # Connect Okta to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Okta account using the connector APIs.  
+  This section provides instructions for connecting Cloud App Security to your existing Okta account using the connector APIs.  
   
 ## How to connect Okta to Cloud App Security  
   
-1.  It is recommended that you create an admin Service Account in Okta for [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+1.  It is recommended that you create an admin Service Account in Okta for Cloud App Security.  
   
      Make sure you use an account with Super Admin permissions.  
   
@@ -35,7 +35,7 @@ robots: noindex,nofollow
   
          ![okta createtoken](./media/okta-createtoken.jpg "okta createtoken")  
   
-    -   In the **Create Token** popup, name your [!INCLUDE[Adallom](./includes/adallom_md.md)] token and click **Create Token**.  
+    -   In the **Create Token** popup, name your Cloud App Security token and click **Create Token**.  
   
          ![okta token popup](./media/okta-token-popup.png "okta token popup")  
   
@@ -43,7 +43,7 @@ robots: noindex,nofollow
   
          ![okta token value](./media/okta-token-value.png "okta token value")  
   
-3.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] console, click **Investigate** and then **Sanctioned apps**.  
+3.  In the Cloud App Security console, click **Investigate** and then **Sanctioned apps**.  
   
 4.  In the Okta row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button and then **Okta**.  
   
@@ -51,7 +51,7 @@ robots: noindex,nofollow
   
 5.  In the API page, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.  
   
-6.  Click **Connect** to create the token for Okta in [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+6.  Click **Connect** to create the token for Okta in Cloud App Security.  
   
 7.  Make sure the connection succeeded by clicking **Test API**.  
   

@@ -48,7 +48,7 @@ Additionally, you can set the limit of daily alerts you wish to receive.
  ![app discovery policy example](./media/app-discovery-policy-example.png "app discovery policy example")  
   
 ## Cloud Discovery anomaly detection  
- [!INCLUDE[Adallom](./includes/adallom_md.md)] searches all the logs in your Cloud Discovery for anomalies. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. By default, the Anomaly detection policy is enabled, so it's not necessary to configure a new policy for it to work, but you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
+ Cloud App Security searches all the logs in your Cloud Discovery for anomalies. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. By default, the Anomaly detection policy is enabled, so it's not necessary to configure a new policy for it to work, but you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
   
 1.  In the console, click on **Control** followed by **Policies**.  
   

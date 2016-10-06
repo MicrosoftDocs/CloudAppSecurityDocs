@@ -33,7 +33,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 
 
 ## Customize the risk score  
- Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing [!INCLUDE[Adallom](./includes/adallom_md.md)]'s assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which [!INCLUDE[Adallom](./includes/adallom_md.md)] considers when assessing reliability:  
+ Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing Cloud App Security's assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which Cloud App Security considers when assessing reliability:  
   
 -   **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year and popularity. These fields are meant to portray the company's stability on the most basic level.  
   

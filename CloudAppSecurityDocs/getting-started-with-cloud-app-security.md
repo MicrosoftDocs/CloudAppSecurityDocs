@@ -14,11 +14,11 @@ author: "Rkarlin"
 ms.author: "rkarlin"
 ---
 # Getting started with Cloud App Security
-  [!INCLUDE[Adallom1](./includes/adallom1_md.md)] helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+  [!INCLUDE[Adallom1](./includes/adallom1_md.md)] helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with Cloud App Security.  
   
- Your organization must have a license for [!INCLUDE[Adallom](./includes/adallom_md.md)] in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx).  
+ Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx).  
   
-> [!NOTE]An Office 365 license is not required for [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+> [!NOTE]An Office 365 license is not required for Cloud App Security.  
   
 ## Get started quickly with Cloud App Security  
   

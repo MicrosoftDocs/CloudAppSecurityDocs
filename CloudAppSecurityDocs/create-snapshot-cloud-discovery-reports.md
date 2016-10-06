@@ -18,7 +18,7 @@ To create a snapshot report:
   
 1.  Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.  
   
-2.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click on **Discover** and then **Create new snapshot report**.  
+2.  In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.  
   
      ![Create new snapshot report](./media/create-new-snapshot-report.png)
      

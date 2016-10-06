@@ -15,7 +15,7 @@ ms.author: "rkarlin"
 robots: noindex,nofollow
 ---
 # Connect AWS to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Amazon Web Services account using the connector APIs.  
+  This section provides instructions for connecting Cloud App Security to your existing Amazon Web Services account using the connector APIs.  
   
 ## How to connect Amazon Web Services to Cloud App Security  
   
@@ -31,7 +31,7 @@ robots: noindex,nofollow
   
      ![AWS create user](./media/aws-create-user.png "AWS create user")  
   
-4.  Create a new user for [!INCLUDE[Adallom](./includes/adallom_md.md)] and make sure the **Generate an access key for each user** checkbox is checked.  
+4.  Create a new user for Cloud App Security and make sure the **Generate an access key for each user** checkbox is checked.  
   
 5.  Click **Download Credentials**.  
   
@@ -92,7 +92,7 @@ robots: noindex,nofollow
   
     3.  Repeat Step 11 for all regions, but do not set any other region to Include global services.  
   
-11. In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
+11. In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.  
   
 12. In  the AWS row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button followed by **AWS**.  
   

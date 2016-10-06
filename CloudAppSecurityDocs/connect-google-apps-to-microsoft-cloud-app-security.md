@@ -15,7 +15,7 @@ ms.author: "rkarlin"
 robots: noindex,nofollow
 ---
 # Connect Google Apps to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Google Apps account using the connector APIs.  
+  This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.  
   
 ## Configure Google Apps  
   
@@ -230,11 +230,11 @@ robots: noindex,nofollow
   
     4.  Enter one **admin email** of your Google Apps admin.  
   
-    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in [!INCLUDE[Adallom](./includes/adallom_md.md)] for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
+    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in Cloud App Security for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
   
     6.  Click **Save settings**.  
   
-    7.  **Follow the link** to connect to Google Apps. This will open Google Apps and you will be asked to authorize access for [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+    7.  **Follow the link** to connect to Google Apps. This will open Google Apps and you will be asked to authorize access for Cloud App Security.  
   
          ![Google Apps authorization request](./media/google-apps-authorization-request.png "Google Apps authorization request")  
   

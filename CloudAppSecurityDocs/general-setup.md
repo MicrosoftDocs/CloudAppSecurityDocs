@@ -17,32 +17,32 @@ ms.author: "rkarlin"
   
 ## Prerequisites  
   
--   Your organization must have a license for [!INCLUDE[Adallom](./includes/adallom_md.md)] in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx).  
+-   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx).  
   
      For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US).  
   
-> [!NOTE] An Office 365 license is not required for [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+> [!NOTE] An Office 365 license is not required for Cloud App Security.  
   
--   After you have procured a license for [!INCLUDE[Adallom](./includes/adallom_md.md)], you will receive an email with activation information and a link to the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal.  
+-   After you have procured a license for Cloud App Security, you will receive an email with activation information and a link to the Cloud App Security portal.  
   
--   To set up [!INCLUDE[Adallom](./includes/adallom_md.md)], you must be a Global Administrator, a Compliance Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for Windows PowerShell. For more information, see [Assigning admin roles in Office 365](https://support.office.com/en-us/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504?ui=en-US&rs=en-US&ad=US) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).  
+-   To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for Windows PowerShell. For more information, see [Assigning admin roles in Office 365](https://support.office.com/en-us/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504?ui=en-US&rs=en-US&ad=US) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).  
   
--   To run the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
+-   To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
   
 -   **ExpressRoute**  
   
-     [!INCLUDE[Adallom](./includes/adallom_md.md)] is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/). All interactions with the [!INCLUDE[Adallom](./includes/adallom_md.md)] apps and traffic sent to [!INCLUDE[Adallom](./includes/adallom_md.md)], including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+     Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
     For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/en-us/documentation/articles/expressroute-circuit-peerings/).  
   
 ## Set up the portal  
   
-1.  To access the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
+1.  To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
   
      Alternatively, you can access the portal through the **Office 365 Admin center** by clicking the Admin centers icon ![O365 admin centers icon](./media/o365-admin-centers-icon.png "O365 admin centers icon") followed by **Cloud App Security**.  
   
      ![Access from O365](./media/access-from-o365.png "Access from O365")  
   
-2.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, in the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **General settings** to configure the following:  
+2.  In the Cloud App Security portal, in the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **General settings** to configure the following:  
   
 3.  **Organization details**  
   
@@ -50,7 +50,7 @@ ms.author: "rkarlin"
   
      Provide an **Environment  name** (tenant). This is especially important if you manage multiple tenants.  
   
-     Add a list of your **Managed domains**. The managed domains are used to help [!INCLUDE[Adallom](./includes/adallom_md.md)] determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
+     Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
   >[!NOTE] Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
    
 It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
@@ -67,7 +67,7 @@ It is also possible to provide a **Logo** that will be displayed in email notifi
   
      ![timezone language](./media/timezone-language.png "timezone language")  
   
-     Set the **Master time zone**. [!INCLUDE[Adallom](./includes/adallom_md.md)] continuously analyzes and aggregates your data. By default, the time zone for the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal is set to UTC. It is important to set the master time zone, which enables [!INCLUDE[Adallom](./includes/adallom_md.md)] to accurately date incidents in your system. For example, in the Activity chart, the data is organized by date - these dates are impacted by the time zone of your system, so if you did not modify the default time zone, your data will be organized into 24 hour days according to the UTC time zone, which may skew your data by many hours.  
+     Set the **Master time zone**. Cloud App Security continuously analyzes and aggregates your data. By default, the time zone for the Cloud App Security portal is set to UTC. It is important to set the master time zone, which enables Cloud App Security to accurately date incidents in your system. For example, in the Activity chart, the data is organized by date - these dates are impacted by the time zone of your system, so if you did not modify the default time zone, your data will be organized into 24 hour days according to the UTC time zone, which may skew your data by many hours.  
   
      ![master time zone](./media/master-time-zone.png "master time zone")  
   
@@ -75,20 +75,20 @@ It is also possible to provide a **Logo** that will be displayed in email notifi
   
      ![backup console](./media/backup-console.png "backup console")  
   
-7.  To add additional admins to [!INCLUDE[Adallom](./includes/adallom_md.md)], click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. Add the admins who should have access to [!INCLUDE[Adallom](./includes/adallom_md.md)] and click **Close**.  
+7.  To add additional admins to Cloud App Security, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. Add the admins who should have access to Cloud App Security and click **Close**.  
 >[!NOTE]
 >Any non-invited user (with a proper role - Global, Security, Compliance Admin), can invite other users to Cloud App Security.
   
   ![manage admin access](./media/manage-admin-access.png "manage admin access")  
   
 ##  <a name="Adminsettings"></a> Customize your admin settings  
- To set up your preferences as an admin of [!INCLUDE[Adallom](./includes/adallom_md.md)], click your name in the portal menu bar, and select **User settings** to set the following:  
+ To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following:  
   
 1.  Click **Account settings**. Here you can customize the portal language for your own viewing. You can set it to display the portal in either the default language or you can set a different language for yourself.  
   
      ![custom user settings](./media/custom-user-settings.png "custom user settings")  
   
-2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity for which alerts and violations you want to receive emails - the severity is set per policy, so when violations are triggered, you will receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails will be sent to the alias associated with the administrator user account you used to log into [!INCLUDE[Adallom](./includes/adallom_md.md)]. Enter a phone number to enable [!INCLUDE[Adallom](./includes/adallom_md.md)] to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
+2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity for which alerts and violations you want to receive emails - the severity is set per policy, so when violations are triggered, you will receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails will be sent to the alias associated with the administrator user account you used to log into Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
   
      ![notification settings](./media/notification-settings.png "notification settings")  
   
@@ -118,7 +118,7 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
   
 5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  
   
-     Built-in [!INCLUDE[Adallom](./includes/adallom_md.md)]**IP tags** are set for risky addresses and are constantly updated. These tags include Anonymous proxies, satellite providers, Tor exit nodes, and the [!INCLUDE[Adallom](./includes/adallom_md.md)] proxy network. These built-in tags are not visible.  
+     Built-in Cloud App Security**IP tags** are set for risky addresses and are constantly updated. These tags include Anonymous proxies, satellite providers, Tor exit nodes, and the Cloud App Security proxy network. These built-in tags are not visible.  
   
 6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category, except for the "Risky" category which includes two IP tags - Anonymous proxy and Tor.  
   
@@ -139,7 +139,7 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
      ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  
   
 ##  <a name="Adallom_mailsettings"></a> Personalize your experience  
- In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from [!INCLUDE[Adallom](./includes/adallom_md.md)] to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
+ In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
   
  ![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
   
@@ -228,7 +228,7 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
      The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
 ## Single sign-on  
- [!INCLUDE[Adallom](./includes/adallom_md.md)] is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
+ Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
   
 ## See Also  
  [Set up Cloud Discovery](set-up-cloud-discovery.md)   

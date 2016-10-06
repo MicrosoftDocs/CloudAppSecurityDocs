@@ -33,7 +33,7 @@ There are two types of reports you can generate:
   
 -   **Upload** – Web traffic logs from your network are uploaded to the portal.  
   
--   **Parse** – [!INCLUDE[Adallom](./includes/adallom_md.md)] parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.  
+-   **Parse** – Cloud App Security parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.  
   
 -   **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 13,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.  
   

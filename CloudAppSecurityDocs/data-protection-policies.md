@@ -70,9 +70,9 @@ The engine combines three aspects under each policy:
 7.  Select the **Content inspection method**. The built-in DLP allows you to filter files by their content. In order to scan files  for content, next select **Built-in DLP**. Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions, either as a substring or a regular expression of your own.  
     In addition, you can specify a regular expression to exclude a file from the results. This is highly useful if you have an inner classification keyword standard that you want to exclude from the policy.  
     In addition, you can decide what is the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.  
-    When content is matched against the selected expression, you can choose to mask the match itself from the violation notification and logs. Once checked, violation text will be replaced with “X” characters. Remember, numbers are replaced with “#” characters and never stored within [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+    When content is matched against the selected expression, you can choose to mask the match itself from the violation notification and logs. Once checked, violation text will be replaced with “X” characters. Remember, numbers are replaced with “#” characters and never stored within Cloud App Security.  
   
-8.  Choose the **Governance** actions you want [!INCLUDE[Adallom](./includes/adallom_md.md)] to take when a match is detected.  
+8.  Choose the **Governance** actions you want Cloud App Security to take when a match is detected.  
   
 9. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters or change the automated actions.  
     The policy is automatically enabled upon creation and will start scanning your cloud files immediately.  
@@ -105,7 +105,7 @@ The engine combines three aspects under each policy:
 -   Extensions  
   
     > [!NOTE]  
-    >  Extensions are only available with the [!INCLUDE[Adallom](./includes/adallom_md.md)] Technical Preview version.  
+    >  Extensions are only available with the Cloud App Security Technical Preview version.  
   
     -   Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
   

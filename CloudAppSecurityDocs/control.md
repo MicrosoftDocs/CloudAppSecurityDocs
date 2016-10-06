@@ -38,7 +38,7 @@ Since remediation actions leverage the cloud provider APIs, actions may vary fro
  ![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
   
 ## Migration  
- [!INCLUDE[Adallom](./includes/adallom_md.md)] helps you roll out your migrations by letting you know who in your organization is using which apps and giving you the tools to monitor new app adoption. It can also help you figure out which types of apps you should offer in your organization, by providing you the tools to see what everyone is already using.  
+ Cloud App Security helps you roll out your migrations by letting you know who in your organization is using which apps and giving you the tools to monitor new app adoption. It can also help you figure out which types of apps you should offer in your organization, by providing you the tools to see what everyone is already using.  
   
 ### How to migrate your users to a new app  
  Imagine this scenario: you recently bought Office 365 and you want all the users in your organization to stop using all other cloud storage apps, and start using OneDrive. Here's what you might want to do:  
@@ -54,7 +54,7 @@ Since remediation actions leverage the cloud provider APIs, actions may vary fro
     2.  Click the arrow ![arrow icon](./media/arrow-icon.png "arrow icon") and select **Export**.  
   
 ### Find more secure alternatives  
- The [!INCLUDE[Adallom](./includes/adallom_md.md)] service catalog can help you find alternatives that work for your organization instead of risky apps your users may be using.  
+ The Cloud App Security service catalog can help you find alternatives that work for your organization instead of risky apps your users may be using.  
   
  Imagine this scenario: You're considering buying a productivity too and you aren't sure if your users would make use of it or not.  
   
