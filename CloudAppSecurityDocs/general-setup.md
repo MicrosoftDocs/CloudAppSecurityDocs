@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 caps.latest.revision: 53
 author: "Rkarlin"

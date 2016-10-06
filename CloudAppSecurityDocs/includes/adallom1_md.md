@@ -1,3 +1,1 @@
----
----
- Microsoft Cloud App Security 
+Microsoft Cloud App Security 
