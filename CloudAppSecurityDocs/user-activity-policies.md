@@ -30,7 +30,7 @@ ms.author: "rkarlin"
   
      ![activity policy menu](./media/activity-policy-menu.png "activity policy menu")  
   
-3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
 4.  To set which actions or other metrics will trigger this policy, work with the **Activity filters**.  
   
@@ -68,7 +68,7 @@ ms.author: "rkarlin"
   
 3.  Fill in the policy's name and description, and continue to the **Activity filters** field where you can choose the activity for which you wish to apply the policy.  
   
-4.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+4.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
 5.  To apply the policy to all activities in your cloud environment, select **All monitored activity**. To limit the policy to specific types of activities, choose **Selected activity**. Click on **Add filters** and set the appropriate parameters by which to filter the activity. For example, to enforce the policy only on activity performed by Salesforce admins, choose this user tag.  
   
@@ -119,7 +119,7 @@ Each policy is composed of the following parts:
   
 -   Actions – The policy provides a set of governance actions that can be automatically applied when violations are detected.  
 ## See Also  
- [Data protection policies](../migration/data-protection-policies.md)   
+ [Data protection policies](data-protection-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

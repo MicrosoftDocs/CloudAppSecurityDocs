@@ -29,7 +29,7 @@ The engine combines three aspects under each policy:
   
 -   Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context and additional customizable attributes.  
   
--   Automated actions for governance and remediation. For more information, see [Control](../migration/control.md).  
+-   Automated actions for governance and remediation. For more information, see [Control](control.md).  
   
  Once enabled, the policy will continuously scan your cloud environment and identify files that match the content and context filters, and apply the requested automated actions. These policies will detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console generated reports.  
   
@@ -59,7 +59,7 @@ The engine combines three aspects under each policy:
   
 2.  Click **Create policy** and select **File** policy.  
   
-3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
 4.  Within **Risk type**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type.  The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.  
   
@@ -112,7 +112,7 @@ The engine combines three aspects under each policy:
     -   Governance actions can be performed via 3rd-party engines for enforcing custom encryption control or other types of file processing (for example, custom water marking).  
   
 ## See Also  
- [Daily activities to protect your cloud environment](../migration/daily-activities-to-protect-your-cloud-environment.md)   
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

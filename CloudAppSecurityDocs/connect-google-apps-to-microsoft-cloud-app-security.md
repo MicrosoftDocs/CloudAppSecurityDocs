@@ -230,7 +230,7 @@ robots: noindex,nofollow
   
     4.  Enter one **admin email** of your Google Apps admin.  
   
-    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in [!INCLUDE[Adallom](./includes/adallom_md.md)] for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](../migration/enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
+    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in [!INCLUDE[Adallom](./includes/adallom_md.md)] for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
   
     6.  Click **Save settings**.  
   
@@ -251,7 +251,7 @@ robots: noindex,nofollow
   
   
 ## See Also  
- [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md)   
+ [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

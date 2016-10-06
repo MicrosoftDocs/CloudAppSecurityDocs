@@ -43,7 +43,7 @@ robots: noindex,nofollow
  >[!NOTE] After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you will see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
 
 ## See Also  
- [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md)   
+ [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

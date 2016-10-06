@@ -30,7 +30,7 @@ Each policy is composed of the following parts:
 -   Sensitivity – Enable you to set how many alerts the policy should trigger.  
   
 ### Activity filters  
- For a list of Activity filters, see [enter link description here](../migration/activity-filters.md).  
+ For a list of Activity filters, see [enter link description here](activity-filters.md).  
   
 ### Risk factors  
  Below is a list of the risk factors which are considered when evaluating the risk of user activity. Each risk factor can be toggled on or off. For each risk factor there are two options under the **Apply to** field, which determine whether to include it when evaluating the risk of user activity:  
@@ -61,7 +61,7 @@ Each policy is composed of the following parts:
 -   Daily alert limit – restrict the number of alerts raised on a single day.  
   
 ## See Also  
- [Daily activities to protect your cloud environment](../migration/daily-activities-to-protect-your-cloud-environment.md)   
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

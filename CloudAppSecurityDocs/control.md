@@ -67,7 +67,7 @@ Since remediation actions leverage the cloud provider APIs, actions may vary fro
 -   If you decide that you want to buy an enterprise license for the whole organization, you might also want to look at the **Users** column to see what's already most popular among your users, see if it's trusted and see what security features it has before making your decision.  
   
 ## See Also  
- [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md)   
+ [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

@@ -115,7 +115,7 @@ ms.author: "rkarlin"
   
  Built-in reports offer you aggregated views for investigation.  
   
- To work with Built-in Reports, go to **Investigate** and then **Built-in reports**. For more information about the various built-in reports, see the [Built-in report reference](../migration/built-in-report-reference.md).  
+ To work with Built-in Reports, go to **Investigate** and then **Built-in reports**. For more information about the various built-in reports, see the [Built-in report reference](built-in-report-reference.md).  
   
 ## Sample investigation  
  Let's say that you assume you don't have any access to your cloud environment by risky IP addresses (for example, Anonymous proxies and Tor). But you create a Risky IP policy just to make sure:  
@@ -147,7 +147,7 @@ ms.author: "rkarlin"
      If it's allowed and you expect it to recur, you can modify the policy to avoid this type of event being considered a violation in the future.  
   
 ## See Also  
- [Control](../migration/control.md)   
+ [Control](control.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

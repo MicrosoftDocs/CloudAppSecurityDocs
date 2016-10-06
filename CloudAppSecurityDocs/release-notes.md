@@ -52,7 +52,7 @@ The new Dashboard has more options for filtering the data, to allow you to gener
 
 - **New Cloud Discovery reports** 
 To view Cloud Discovery results, you can now generate two types of reports, Snapshot reports and Continuous reports.
-Snapshot reports provide ad-hoc visibility on a set of traffic logs you manually upload from your firewalls and proxies. Continuous reports show the results of all logs that are forwarded from your network using Cloud App Security’s log collectors. These new reports provide improved visibility over all data, automatic identification of anomalous use as identified by the Cloud App Security machine learning anomaly detection engine and identification of anomalous use as defined by you using the robust and granular policy engine. For more information see [Set up Cloud Discovery](../migration/set-up-cloud-discovery.md).
+Snapshot reports provide ad-hoc visibility on a set of traffic logs you manually upload from your firewalls and proxies. Continuous reports show the results of all logs that are forwarded from your network using Cloud App Security’s log collectors. These new reports provide improved visibility over all data, automatic identification of anomalous use as identified by the Cloud App Security machine learning anomaly detection engine and identification of anomalous use as defined by you using the robust and granular policy engine. For more information see [Set up Cloud Discovery](set-up-cloud-discovery.md).
  
 **Improvements**
 - General usability improvements in the following pages: Policy pages, General settings, Mail settings.

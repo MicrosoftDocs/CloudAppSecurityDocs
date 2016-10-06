@@ -43,7 +43,7 @@ ms.author: "rkarlin"
 |Data management|Sensitive filenames|This report lists files which require your attention since their sharing permission might not suite their content, based on a heuristic scan of file names. This heuristic scan is helpful with identifying sensitive files without the need for a thorough content scan. Each file in the report is regarded as sensitive since according to the scan, it was identified as belonging to the categories detailed in the "Categories" column.|  
   
 ## See Also  
- [Control](../migration/control.md)   
+ [Control](control.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

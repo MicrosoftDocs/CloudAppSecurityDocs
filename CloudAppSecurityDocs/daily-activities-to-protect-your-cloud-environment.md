@@ -108,7 +108,7 @@ ms.author: "rkarlin"
      ![content matches ccn](./media/content-matches-ccn.png "content matches ccn")  
   
 ## See Also  
- [Investigate](../migration/investigate.md)   
+ [Investigate](investigate.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

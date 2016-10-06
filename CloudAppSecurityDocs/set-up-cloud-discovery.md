@@ -114,10 +114,10 @@ Data attributes (according to vendor documentation):
  
  For more information, see 
  
- [Create snapshot Cloud Discovery reports](../migration/create-snapshot-cloud-discovery-reports.md)
+ [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
-[Configure automatic log upload for continuous reports](../migration/configure-automatic-log-upload-for-continuous-reports.md)
+[Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Working with Cloud Discovery data](../migration/working-with-cloud-discovery-data.md)
+[Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
   
   

@@ -14,6 +14,6 @@ ms.author: "rkarlin"
 # Troubleshooting
 The following troubleshooting guides are available:
 
-[Troubleshooting Cloud Discovery log upload](../migration/troubleshooting-cloud-discovery.md)
+[Troubleshooting Cloud Discovery log upload](troubleshooting-cloud-discovery.md)
 
-[Troubleshooting API Connectors using error messages](../migration/troubleshooting-api-connectors-using-error-messages.md)
+[Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)

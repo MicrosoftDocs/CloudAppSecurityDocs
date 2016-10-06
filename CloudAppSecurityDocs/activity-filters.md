@@ -33,9 +33,9 @@ ms.author: "rkarlin"
   
 -   IP address – The IP address from which the activity was performed.  
   
--   IP category – The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](../migration/general-setup.md#IPtagsandRanges).  
+-   IP category – The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
--   IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](../migration/general-setup.md#IPtagsandRanges).  
+-   IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
 -   Location – The country from which the activity was performed.  
   
@@ -88,7 +88,7 @@ Using **Repeated activity** you can set the number of repeated activities, the d
      ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
 ## See Also  
- [Daily activities to protect your cloud environment](../migration/daily-activities-to-protect-your-cloud-environment.md)   
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

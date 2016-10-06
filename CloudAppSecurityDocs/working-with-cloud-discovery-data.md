@@ -72,7 +72,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 5.  Select the data sources you want to include (all or specific).  
   
-6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](../migration/general-setup.md#IPtagsandRanges).  
+6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
   

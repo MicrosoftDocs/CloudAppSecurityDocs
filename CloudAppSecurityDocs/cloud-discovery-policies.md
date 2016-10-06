@@ -24,7 +24,7 @@ ms.author: "rkarlin"
   
      ![app discovery policy menu](./media/app-discovery-policy-menu.png "app discovery policy menu")  
   
-3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
 4.  To set which discovered apps will trigger this policy, click **Add filters**.  
   
@@ -56,7 +56,7 @@ Additionally, you can set the limit of daily alerts you wish to receive.
   
      ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
   
-3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
 4.  To set which discovered apps will trigger this policy, click **Add filters**.  
   
@@ -74,7 +74,7 @@ Set a **Daily alert limit** and select whether the alert will be sent as an emai
  ![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
   
 ## See Also  
- [User activity policies](../migration/user-activity-policies.md)   
+ [User activity policies](user-activity-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

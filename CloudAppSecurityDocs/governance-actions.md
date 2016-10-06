@@ -13,7 +13,7 @@ ms.author: "rkarlin"
 ---
 # Governance actions
 The Cloud App Security portal enables you to take the following governance actions. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
-For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](../migration/control-cloud-apps-with-policies.md) 
+For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md) 
 
 **Location**|**Target object type**|**Governance action**|**Description**|**Related connectors** 
 ---------|---------|---------|---------|---------

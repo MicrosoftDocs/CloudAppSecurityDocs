@@ -231,7 +231,7 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
  [!INCLUDE[Adallom](./includes/adallom_md.md)] is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
   
 ## See Also  
- [Set up Cloud Discovery](../migration/set-up-cloud-discovery.md)   
+ [Set up Cloud Discovery](set-up-cloud-discovery.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
