@@ -7,31 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 caps.latest.revision: 30
 author: "Rkarlin"
 ms.author: "rkarlin"
 robots: noindex,nofollow
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Enable instant visibility, protection and governance actions for your apps
   App connectors leverage the APIs of app providers to enable greater visibility and control by [!INCLUDE[Adallom](./includes/adallom_md.md)] over the apps you connect to.  

@@ -10,24 +10,6 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 caps.latest.revision: 7
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Create snapshot Cloud Discovery reports
 It is important to upload a log manually and let Cloud App Security parse it before attempting to use the automatic log collector.

@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 caps.latest.revision: 32
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Set up Cloud Discovery
    Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 13,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.

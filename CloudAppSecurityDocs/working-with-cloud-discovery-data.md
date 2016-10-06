@@ -10,24 +10,6 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 caps.latest.revision: 8
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Working with Cloud Discovery data
 ## Review the Cloud Discovery Dashboard

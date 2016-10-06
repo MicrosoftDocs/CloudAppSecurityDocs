@@ -10,24 +10,6 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 caps.latest.revision: 8
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Governance actions
 The Cloud App Security portal enables you to take the following governance actions. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.

@@ -7,31 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 caps.latest.revision: 11
 author: "Rkarlin"
 ms.author: "rkarlin"
 robots: noindex,nofollow
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Connect ServiceNow to Microsoft Cloud App Security
   This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing ServiceNow account using the app connector API.  

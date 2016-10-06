@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 caps.latest.revision: 10
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Control
   Governance actions can be applied to users' files across your cloud environment. After you have thoroughly investigated and learned about your cloud, you can use governance actions to protect your organization.  

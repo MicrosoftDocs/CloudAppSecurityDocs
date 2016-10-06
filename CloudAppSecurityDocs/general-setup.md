@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 caps.latest.revision: 53
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # General setup
   The following procedure gives you instructions for setting up [!INCLUDE[Adallom1](./includes/adallom1_md.md)] to work on your cloud environment.  

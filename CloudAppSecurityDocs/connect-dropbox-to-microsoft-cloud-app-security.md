@@ -7,31 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 caps.latest.revision: 18
 author: "Rkarlin"
 ms.author: "rkarlin"
 robots: noindex,nofollow
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Connect Dropbox to Microsoft Cloud App Security
   This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Dropbox account using the connector APIs.  

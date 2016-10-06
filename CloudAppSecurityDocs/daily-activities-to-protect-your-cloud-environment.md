@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 caps.latest.revision: 13
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Daily activities to protect your cloud environment
   After you get [!INCLUDE[Adallom](./includes/adallom_md.md)] up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use [!INCLUDE[Adallom](./includes/adallom_md.md)] to control and protect your cloud and manage risk.  

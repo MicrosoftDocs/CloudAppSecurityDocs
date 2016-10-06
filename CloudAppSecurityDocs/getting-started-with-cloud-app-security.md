@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 caps.latest.revision: 14
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Getting started with Cloud App Security
   [!INCLUDE[Adallom1](./includes/adallom1_md.md)] helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with [!INCLUDE[Adallom](./includes/adallom_md.md)].  

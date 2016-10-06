@@ -7,31 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: 90340934-e883-444c-b953-e57a8b88a385
 caps.latest.revision: 21
 author: "Rkarlin"
 ms.author: "rkarlin"
 robots: noindex,nofollow
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Connect Office 365 to Microsoft Cloud App Security
   This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Microsoft Office 365 account using the app connector API.  

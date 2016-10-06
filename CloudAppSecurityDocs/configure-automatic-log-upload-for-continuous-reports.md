@@ -10,24 +10,6 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 caps.latest.revision: 8
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Configure automatic log upload for continuous reports
 Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file. 

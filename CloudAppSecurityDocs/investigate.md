@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 caps.latest.revision: 12
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Investigate
   After [!INCLUDE[Adallom](./includes/adallom_md.md)] runs on your cloud environment, you will require a stage of learning and investigating using [!INCLUDE[Adallom](./includes/adallom_md.md)]'s tools to gain deeper  understanding of what's happening in your cloud environment. Then based on your particular environment and how it's being used, you can identify the requirements necessary to protect your organization from risk.  
