@@ -7,38 +7,19 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 caps.latest.revision: 13
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Daily activities to protect your cloud environment
-  After you get [!INCLUDE[Adallom](./includes/adallom_md.md)] up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use [!INCLUDE[Adallom](./includes/adallom_md.md)] to control and protect your cloud and manage risk.  
+  After you get Cloud App Security up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use Cloud App Security to control and protect your cloud and manage risk.  
   
  This topic describes what you should do on a daily basis.  
   
 ## Check the dashboard  
- When you open the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, you are provided with an overview of open alerts, activity violations, content violations, an activity map which provides a map that plots where, geographically, user activity originates, and connected App usage trends in your  cloud environment.  
+ When you open the Cloud App Security portal, you are provided with an overview of open alerts, activity violations, content violations, an activity map which provides a map that plots where, geographically, user activity originates, and connected App usage trends in your  cloud environment.  
   
  It is recommended that you check the dashboard on a daily basis to see what new alerts were triggered and handle them. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's going on, on a high level, across your cloud environment.  
   
@@ -91,7 +72,7 @@ translation.priority.ht:
 |----------------|-----------------|----------------------------|  
 |Activity policy violation|This type of alert is the result of a policy you created.|-   To work with this type of alert in bulk, it is recommended that you work directly from within the Policy center to mitigate these.<br />-   Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br />-   If the policy is very accurate and the alert was warranted and it's a violation you want to stop immediately, consider moving to an automated response, by adding automatic remediation in the policy.|  
 |File policy violation|This type of alert is the result of a policy you created.|-   To work with this type of alert in bulk, it is recommended that you work directly from within the Policy center to mitigate these.<br />-   Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br />-   If the policy is very accurate and the alert was warranted and it's a violation you want to stop immediately, consider moving to an automated response, by adding automatic remediation in the policy.|  
-|Compromised account|This type of alert is triggered when [!INCLUDE[Adallom](./includes/adallom_md.md)] identifies an account that was compromised (very  high probability that the account was used in an unauthorized way).|It is recommended that you suspend the account until you can reach the user and make sure they change their password.|  
+|Compromised account|This type of alert is triggered when Cloud App Security identifies an account that was compromised (very  high probability that the account was used in an unauthorized way).|It is recommended that you suspend the account until you can reach the user and make sure they change their password.|  
 |Inactive account|This alert is triggered when an account is no longer used in one of your connected cloud apps.|Contact the user and the user's manager to determine  whether the account is still active. If not, suspend the user and terminate the license for the app.|  
 |New admin user|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user, and if not, recommend revoking administrator privileges to reduce exposure.|  
 |New admin location|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the log on from this anomalous location was legitimate, and if not, recommend revoking admin permissions or suspending the account to reduce exposure.|  
@@ -104,7 +85,7 @@ translation.priority.ht:
 ## Use policies to assess risk  
  After you take a look at your open alerts, go to the **Policy center** to review policy violations that didn't trigger alerts.  
   
--   In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click on **Control** and then **Policies**.  
+-   In the Cloud App Security portal, click on **Control** and then **Policies**.  
   
 -   Click on a specific policy to see the **Violating now** list of policy matches that didn't trigger alerts.  
   
@@ -127,7 +108,7 @@ translation.priority.ht:
      ![content matches ccn](./media/content-matches-ccn.png "content matches ccn")  
   
 ## See Also  
- [Investigate](../migration/investigate.md)   
+ [Investigate](investigate.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

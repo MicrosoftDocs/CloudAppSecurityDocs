@@ -7,34 +7,15 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 caps.latest.revision: 20
 author: "Rkarlin"
 ms.author: "rkarlin"
 robots: noindex,nofollow
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Connect Google Apps to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Google Apps account using the connector APIs.  
+  This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.  
   
 ## Configure Google Apps  
   
@@ -249,11 +230,11 @@ translation.priority.ht:
   
     4.  Enter one **admin email** of your Google Apps admin.  
   
-    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in [!INCLUDE[Adallom](./includes/adallom_md.md)] for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](../migration/enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
+    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in Cloud App Security for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility--protection-and-governance-actions-for-your-apps.md).  
   
     6.  Click **Save settings**.  
   
-    7.  **Follow the link** to connect to Google Apps. This will open Google Apps and you will be asked to authorize access for [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+    7.  **Follow the link** to connect to Google Apps. This will open Google Apps and you will be asked to authorize access for Cloud App Security.  
   
          ![Google Apps authorization request](./media/google-apps-authorization-request.png "Google Apps authorization request")  
   
@@ -270,7 +251,7 @@ translation.priority.ht:
   
   
 ## See Also  
- [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md)   
+ [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

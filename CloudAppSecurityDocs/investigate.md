@@ -7,33 +7,14 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 caps.latest.revision: 12
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Investigate
-  After [!INCLUDE[Adallom](./includes/adallom_md.md)] runs on your cloud environment, you will require a stage of learning and investigating using [!INCLUDE[Adallom](./includes/adallom_md.md)]'s tools to gain deeper  understanding of what's happening in your cloud environment. Then based on your particular environment and how it's being used, you can identify the requirements necessary to protect your organization from risk.  
+  After Cloud App Security runs on your cloud environment, you will require a stage of learning and investigating using Cloud App Security's tools to gain deeper  understanding of what's happening in your cloud environment. Then based on your particular environment and how it's being used, you can identify the requirements necessary to protect your organization from risk.  
   
  This section describes how to perform deep dive investigation to get a better understanding of what's going on in your cloud environment.  
   
@@ -52,18 +33,18 @@ translation.priority.ht:
 ##  <a name="sanctionapp"></a> Sanction or unsanction apps  
  The first step to understanding your cloud is to sanction apps. After you sanction an app, you can filter for apps that aren't sanctioned and initiate migration to sanctioned apps of the  same type.  
   
--   In the [!INCLUDE[Adallom](./includes/adallom_md.md)] console, click on **Discover** and then **Discovery dashboard**.  
+-   In the Cloud App Security console, click on **Discover** and then **Discovery dashboard**.  
   
 -   In the list of discovered apps, on the row in which the app you want to sanction appears, click on the three dots at the end of the row ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") and select **Mark as sanctioned**.  
   
      ![mark as sanctioned](./media/mark-as-sanctioned.png "mark as sanctioned")  
   
 > [!NOTE]  
->  For each app you want to monitor with the [!INCLUDE[Adallom](./includes/adallom_md.md)] API integration, we recommend creating a admin service account dedicated to [!INCLUDE[Adallom](./includes/adallom_md.md)].  
+>  For each app you want to monitor with the Cloud App Security API integration, we recommend creating a admin service account dedicated to Cloud App Security.  
   
 ## Use the investigation tools  
   
-1.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following:  
+1.  In the Cloud App Security portal, go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following:  
   
     -   Who is accessing your cloud environment?  
   
@@ -130,11 +111,11 @@ translation.priority.ht:
     -   Are there cloud apps that are used but not in compliance with your organization’s policy?  
   
 ## How to use reports to investigate risk  
- When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after [!INCLUDE[Adallom](./includes/adallom_md.md)] runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
+ When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after Cloud App Security runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
   
  Built-in reports offer you aggregated views for investigation.  
   
- To work with Built-in Reports, go to **Investigate** and then **Built-in reports**. For more information about the various built-in reports, see the [Built-in report reference](../migration/built-in-report-reference.md).  
+ To work with Built-in Reports, go to **Investigate** and then **Built-in reports**. For more information about the various built-in reports, see the [Built-in report reference](built-in-report-reference.md).  
   
 ## Sample investigation  
  Let's say that you assume you don't have any access to your cloud environment by risky IP addresses (for example, Anonymous proxies and Tor). But you create a Risky IP policy just to make sure:  
@@ -166,7 +147,7 @@ translation.priority.ht:
      If it's allowed and you expect it to recur, you can modify the policy to avoid this type of event being considered a violation in the future.  
   
 ## See Also  
- [Control](../migration/control.md)   
+ [Control](control.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

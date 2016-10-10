@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 caps.latest.revision: 15
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Cloud Discovery policies
     
@@ -43,7 +24,7 @@ translation.priority.ht:
   
      ![app discovery policy menu](./media/app-discovery-policy-menu.png "app discovery policy menu")  
   
-3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
 4.  To set which discovered apps will trigger this policy, click **Add filters**.  
   
@@ -67,7 +48,7 @@ Additionally, you can set the limit of daily alerts you wish to receive.
  ![app discovery policy example](./media/app-discovery-policy-example.png "app discovery policy example")  
   
 ## Cloud Discovery anomaly detection  
- [!INCLUDE[Adallom](./includes/adallom_md.md)] searches all the logs in your Cloud Discovery for anomalies. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. By default, the Anomaly detection policy is enabled, so it's not necessary to configure a new policy for it to work, but you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
+ Cloud App Security searches all the logs in your Cloud Discovery for anomalies. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app. By default, the Anomaly detection policy is enabled, so it's not necessary to configure a new policy for it to work, but you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
   
 1.  In the console, click on **Control** followed by **Policies**.  
   
@@ -75,7 +56,7 @@ Additionally, you can set the limit of daily alerts you wish to receive.
   
      ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
   
-3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md).  
+3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
 4.  To set which discovered apps will trigger this policy, click **Add filters**.  
   
@@ -93,7 +74,7 @@ Set a **Daily alert limit** and select whether the alert will be sent as an emai
  ![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
   
 ## See Also  
- [User activity policies](../migration/user-activity-policies.md)   
+ [User activity policies](user-activity-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

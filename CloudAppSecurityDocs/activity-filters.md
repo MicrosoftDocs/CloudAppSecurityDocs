@@ -6,30 +6,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 caps.latest.revision: 12
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Activity filters
   Below is a list of the file filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
@@ -52,9 +33,9 @@ translation.priority.ht:
   
 -   IP address – The IP address from which the activity was performed.  
   
--   IP category – The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](../migration/general-setup.md#IPtagsandRanges).  
+-   IP category – The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
--   IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](../migration/general-setup.md#IPtagsandRanges).  
+-   IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
 -   Location – The country from which the activity was performed.  
   
@@ -107,7 +88,7 @@ Using **Repeated activity** you can set the number of repeated activities, the d
      ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
 ## See Also  
- [Daily activities to protect your cloud environment](../migration/daily-activities-to-protect-your-cloud-environment.md)   
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

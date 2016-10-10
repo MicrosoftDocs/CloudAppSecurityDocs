@@ -10,24 +10,6 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 caps.latest.revision: 7
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Create snapshot Cloud Discovery reports
 It is important to upload a log manually and let Cloud App Security parse it before attempting to use the automatic log collector.
@@ -36,7 +18,7 @@ To create a snapshot report:
   
 1.  Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.  
   
-2.  In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click on **Discover** and then **Create new snapshot report**.  
+2.  In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.  
   
      ![Create new snapshot report](./media/create-new-snapshot-report.png)
      

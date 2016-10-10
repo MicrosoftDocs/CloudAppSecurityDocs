@@ -7,34 +7,15 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "get-started-article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 caps.latest.revision: 8
 author: "Rkarlin"
 ms.author: "rkarlin"
 robots: noindex,nofollow
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Connect AWS to Microsoft Cloud App Security
-  This section provides instructions for connecting [!INCLUDE[Adallom](./includes/adallom_md.md)] to your existing Amazon Web Services account using the connector APIs.  
+  This section provides instructions for connecting Cloud App Security to your existing Amazon Web Services account using the connector APIs.  
   
 ## How to connect Amazon Web Services to Cloud App Security  
   
@@ -50,7 +31,7 @@ translation.priority.ht:
   
      ![AWS create user](./media/aws-create-user.png "AWS create user")  
   
-4.  Create a new user for [!INCLUDE[Adallom](./includes/adallom_md.md)] and make sure the **Generate an access key for each user** checkbox is checked.  
+4.  Create a new user for Cloud App Security and make sure the **Generate an access key for each user** checkbox is checked.  
   
 5.  Click **Download Credentials**.  
   
@@ -111,7 +92,7 @@ translation.priority.ht:
   
     3.  Repeat Step 11 for all regions, but do not set any other region to Include global services.  
   
-11. In the [!INCLUDE[Adallom](./includes/adallom_md.md)] portal, click **Investigate** and then **Sanctioned apps**.  
+11. In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.  
   
 12. In  the AWS row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button followed by **AWS**.  
   
@@ -126,7 +107,7 @@ translation.priority.ht:
  After connecting AWS, you will receive events for 7 days prior to connection.
   
 ## See Also  
- [Control cloud apps with policies](../migration/control-cloud-apps-with-policies.md)   
+ [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

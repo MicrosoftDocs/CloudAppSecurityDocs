@@ -10,24 +10,6 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 caps.latest.revision: 8
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Working with Cloud Discovery data
 ## Review the Cloud Discovery Dashboard
@@ -51,7 +33,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 
 
 ## Customize the risk score  
- Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing [!INCLUDE[Adallom](./includes/adallom_md.md)]'s assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which [!INCLUDE[Adallom](./includes/adallom_md.md)] considers when assessing reliability:  
+ Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing Cloud App Security's assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which Cloud App Security considers when assessing reliability:  
   
 -   **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year and popularity. These fields are meant to portray the company's stability on the most basic level.  
   
@@ -90,7 +72,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 5.  Select the data sources you want to include (all or specific).  
   
-6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](../migration/general-setup.md#IPtagsandRanges).  
+6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
   

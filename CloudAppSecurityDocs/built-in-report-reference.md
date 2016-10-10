@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 caps.latest.revision: 9
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Built-in report reference
   It is recommended that you create custom reports using built-in reports as a starting place, sort of like a template on which to base your custom reports. The following table provides a list of built-in reports and the types of events you might want to use them to monitor.  
@@ -62,7 +43,7 @@ translation.priority.ht:
 |Data management|Sensitive filenames|This report lists files which require your attention since their sharing permission might not suite their content, based on a heuristic scan of file names. This heuristic scan is helpful with identifying sensitive files without the need for a thorough content scan. Each file in the report is regarded as sensitive since according to the scan, it was identified as belonging to the categories detailed in the "Categories" column.|  
   
 ## See Also  
- [Control](../migration/control.md)   
+ [Control](control.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

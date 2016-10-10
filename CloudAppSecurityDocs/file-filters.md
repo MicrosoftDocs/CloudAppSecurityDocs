@@ -7,30 +7,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
-applies_to: 
-  - "Microsoft Cloud App Security"
+
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 caps.latest.revision: 22
 author: "Rkarlin"
 ms.author: "rkarlin"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "hu-hu"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "nl-nl"
-  - "pl-pl"
-  - "pt-br"
-  - "pt-pt"
-  - "ru-ru"
-  - "sv-se"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # File filters
 
@@ -46,8 +27,8 @@ Below is a list of the file filters that can be applied. Most filters support mu
    
  ![policy_file type filters](./media/policy_file-type-filters.png "policy_file type filters")  
   
--   Access level – Sharing access level; public, external, internal or private.  For more information about External files, see [General Setup, Set up the portal](../migration/getting-started-with-cloud-app-security.md)
-Internal are any files within the Internal domains you set in [General setup](../migration/general-setup.md)/. External are any files saved in locations that are not within the internal domains you set. Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
+-   Access level – Sharing access level; public, external, internal or private.  For more information about External files, see [General Setup, Set up the portal](getting-started-with-cloud-app-security.md)
+Internal are any files within the Internal domains you set in [General setup](general-setup.md)/. External are any files saved in locations that are not within the internal domains you set. Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
 
      **NOTE:**  Files shared into your connected storage apps by external users are handled as follows by Cloud App Security:
     - **OneDrive:** OneDrive assigns an internal user as the owner of any file placed into your OneDrive by an external user. Because these files are then considered owned by your organization, Cloud App Security scans these files and applies policies as it does to any other file in your OneDrive.
@@ -137,7 +118,7 @@ Internal are any files within the Internal domains you set in [General setup](..
   
  
 ## See Also  
- [Daily activities to protect your cloud environment](../migration/daily-activities-to-protect-your-cloud-environment.md)   
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
