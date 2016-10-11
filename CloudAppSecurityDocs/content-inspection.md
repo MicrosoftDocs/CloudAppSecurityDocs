@@ -1,16 +1,30 @@
 ---
-title: "Content Inspection"
-ms.custom: na
-ms.date: "10/11/2016"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
+
+title: Content Inspection | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
-caps.latest.revision: 2
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Content Inspection
 This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
 

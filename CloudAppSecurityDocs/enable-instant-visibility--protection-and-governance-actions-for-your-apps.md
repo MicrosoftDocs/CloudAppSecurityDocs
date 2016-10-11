@@ -1,19 +1,30 @@
 ---
-title: "Enable instant visibility, protection and governance actions for your apps"
-ms.custom: na
-ms.date: "10/11/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "get-started-article"
+# required metadata
 
+title: Enable instant visibility, protection and governance actions for your apps | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
-caps.latest.revision: 30
-author: "Rkarlin"
-ms.author: "rkarlin"
-robots: noindex,nofollow
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enable instant visibility, protection and governance actions for your apps
    App connectors leverage the APIs of app providers to enable greater visibility and control by Cloud App Security over the apps you connect to.  
   

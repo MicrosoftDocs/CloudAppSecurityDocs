@@ -1,16 +1,30 @@
 ---
-title: "Configure automatic log upload for continuous reports"
-ms.custom: na
-ms.date: "08/21/2016"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
+
+title: Configure automatic log upload for continuous reports | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
-caps.latest.revision: 8
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure automatic log upload for continuous reports
 Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file. 
 

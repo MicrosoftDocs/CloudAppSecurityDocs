@@ -1,18 +1,30 @@
 ---
-title: "Daily activities to protect your cloud environment"
-ms.custom: na
-ms.date: "07/27/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
 
+title: Daily activities to protect your cloud environment | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
-caps.latest.revision: 13
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Daily activities to protect your cloud environment
   After you get Cloud App Security up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use Cloud App Security to control and protect your cloud and manage risk.  
   

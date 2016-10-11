@@ -1,18 +1,30 @@
 ---
-title: "Set up Cloud Discovery"
-ms.custom: na
-ms.date: "08/31/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "get-started-article"
+# required metadata
 
+title: Set up Cloud Discovery | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
-caps.latest.revision: 32
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Set up Cloud Discovery
    Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 13,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
  The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:

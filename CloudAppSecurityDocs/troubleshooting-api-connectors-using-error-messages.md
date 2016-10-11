@@ -1,16 +1,30 @@
 ---
-title: "Troubleshooting API Connectors using error messages"
-ms.custom: na
-ms.date: "09/28/2016"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
+
+title: Troubleshooting API Connectors using error messages | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
-caps.latest.revision: 12
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshooting API Connectors using error messages
 |Error message|Relevant app|Description|Resolution|
 |----|----|----|----|

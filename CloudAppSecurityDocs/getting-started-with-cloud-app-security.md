@@ -1,18 +1,30 @@
 ---
-title: "Getting started with Cloud App Security"
-ms.custom: na
-ms.date: "09/27/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "get-started-article"
+# required metadata
 
+title: Getting started with Cloud App Security | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
-caps.latest.revision: 14
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Getting started with Cloud App Security
   [!INCLUDE[Adallom1](./includes/adallom1_md.md)] helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with Cloud App Security.  
   

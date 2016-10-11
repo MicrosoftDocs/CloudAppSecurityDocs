@@ -1,16 +1,30 @@
 ---
-title: "Create snapshot Cloud Discovery reports"
-ms.custom: na
-ms.date: "08/21/2016"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
+
+title: Create snapshot Cloud Discovery reports | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
-caps.latest.revision: 7
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Create snapshot Cloud Discovery reports
 It is important to upload a log manually and let Cloud App Security parse it before attempting to use the automatic log collector.
 

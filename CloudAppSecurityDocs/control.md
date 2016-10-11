@@ -1,18 +1,30 @@
 ---
-title: "Control"
-ms.custom: na
-ms.date: "07/31/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
 
+title: Control | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
-caps.latest.revision: 10
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Control
   Governance actions can be applied to users' files across your cloud environment. After you have thoroughly investigated and learned about your cloud, you can use governance actions to protect your organization.  
   

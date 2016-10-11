@@ -1,18 +1,30 @@
 ---
-title: "Cloud Discovery policies"
-ms.custom: na
-ms.date: "07/27/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
 
+title: Cloud Discovery policies | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
-caps.latest.revision: 15
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Cloud Discovery policies
     
 ## Creating an app discovery policy  

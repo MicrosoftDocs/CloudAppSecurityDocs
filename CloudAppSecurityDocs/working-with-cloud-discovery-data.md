@@ -1,16 +1,30 @@
 ---
-title: "Working with Cloud Discovery data"
-ms.custom: na
-ms.date: "09/27/2016"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
+
+title: Working with Cloud Discovery data | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
-caps.latest.revision: 8
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Working with Cloud Discovery data
 ## Review the Cloud Discovery Dashboard
 

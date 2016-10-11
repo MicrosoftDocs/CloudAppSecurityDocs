@@ -1,20 +1,30 @@
 ---
-asset_id: 78022852-1541-4194-bd6b-2f5fd5d94b77
-layout: HubPage
+# required metadata
 
 title: Cloud App Security | Microsoft Docs
-description: Technical documentation for Cloud App Security 
+description:Technical documentation for Cloud App Security 
+keywords:
 author: msmbaldwin
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/15/2016
 ms.topic: hubpage
-ms.prod: azure
-ms.service: information-protection
-ms.technology: techgroup-identity
-ms.suite: ems
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: 
 
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Cloud App Security Documentation
 <article id="main">
     <section id="hero-content">

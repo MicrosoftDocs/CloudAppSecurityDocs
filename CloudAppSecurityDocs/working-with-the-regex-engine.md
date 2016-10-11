@@ -1,16 +1,30 @@
 ---
-title: "Working with the RegEx engine"
-ms.custom: na
-ms.date: "08/31/2016"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "article"
+# required metadata
+
+title: Working with the RegEx engine | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
-caps.latest.revision: 2
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Working with the RegEx engine
  
  Cloud App Security's content inspection policies leverage RegEx  for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  

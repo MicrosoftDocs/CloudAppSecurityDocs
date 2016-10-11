@@ -1,19 +1,30 @@
 ---
-title: "Connect Google Apps to Microsoft Cloud App Security"
-ms.custom: na
-ms.date: "09/25/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "get-started-article"
+# required metadata
 
+title: Connect Google Apps to Microsoft Cloud App Security | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
-caps.latest.revision: 20
-author: "Rkarlin"
-ms.author: "rkarlin"
-robots: noindex,nofollow
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Connect Google Apps to Microsoft Cloud App Security
   This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.  
   

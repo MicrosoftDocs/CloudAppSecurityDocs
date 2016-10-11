@@ -1,17 +1,30 @@
 ---
-title: "General setup"
-ms.custom: na
-ms.date: "10/11/2016"
-ms.prod: "identity-cas"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: "get-started-article"
+# required metadata
+
+title: General setup | Microsoft Docs
+description:
+keywords:
+author: rkarlin
+manager: mbaldwin
+ms.date: 10/15/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
-caps.latest.revision: 53
-author: "Rkarlin"
-ms.author: "rkarlin"
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # General setup
   The following procedure gives you instructions for setting up [!INCLUDE[Adallom1](./includes/adallom1_md.md)] to work on your cloud environment.  
   
