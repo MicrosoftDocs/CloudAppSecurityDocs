@@ -45,7 +45,10 @@ Because Dropbox enables access to files from shared links without signing in, Cl
      Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
   
   After connecting Dropbox, you will receive events for 60 days prior to connection.
-  
+
+> [!NOTE] 
+Any Dropbox events for adding a file will be displayed in Cloud App Security as Upload file to align to all other apps connected to Cloud App Security. 
+ 
 ## See Also  
  [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

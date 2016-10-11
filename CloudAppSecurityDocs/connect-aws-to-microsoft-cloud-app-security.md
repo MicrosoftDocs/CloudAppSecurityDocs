@@ -1,7 +1,7 @@
 ---
 title: "Connect AWS to Microsoft Cloud App Security"
 ms.custom: na
-ms.date: "09/25/2016"
+ms.date: "10/11/2016"
 ms.prod: "identity-cas"
 ms.reviewer: na
 ms.suite: na
@@ -37,21 +37,19 @@ robots: noindex,nofollow
   
      ![aws dl cred](./media/aws-dl-cred.png "aws dl cred")  
   
-6.  In the **Users** tab, select the user you created and click **Attach User Policy**.  
+6.  In the **Permissions** tab, click **Attach Policy**.  
   
      ![aws attach user policy](./media/aws-attach-user-policy.png "aws attach user policy")  
   
-7.  Select **Custom Policy** and click **Select**.  
+7.  The **Review Policy** screen opens.
+ 
+ ![review policy](./media/aws-review-policy.png "aws review policy")  
   
-     ![aws custom policy](./media/aws-custom-policy.png "aws custom policy")  
+
+8. Under **Policy Name** type "AdallomTrustPolicy". 
+10. Under **Policy Document**, copy and paste the following::  
   
-8.  Fill in the relevant fields with these values:  
-  
-    ```  
-    * Policy Name: "AdallomTrustPolicy"  
-  
-    * Policy Document:  
-  
+    ```     
     {  
       "Version" : "2012-10-17",  
       "Statement" : [{  

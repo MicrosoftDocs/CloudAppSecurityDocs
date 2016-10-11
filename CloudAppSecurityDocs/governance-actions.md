@@ -1,7 +1,7 @@
 ---
-title: "Governance actions"
+title: "Governance log"
 ms.custom: na
-ms.date: "09/18/2016"
+ms.date: "10/11/2016"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,9 +11,11 @@ caps.latest.revision: 8
 author: "Rkarlin"
 ms.author: "rkarlin"
 ---
-# Governance actions
-The Cloud App Security portal enables you to take the following governance actions. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
-For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md) 
+# Governance log
+The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
+
+The following is the full list of actions the Cloud App Security portal enables you to take. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
+For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](Control%20cloud%20apps%20with%20policies.md) 
 
 **Location**|**Target object type**|**Governance action**|**Description**|**Related connectors** 
 ---------|---------|---------|---------|---------

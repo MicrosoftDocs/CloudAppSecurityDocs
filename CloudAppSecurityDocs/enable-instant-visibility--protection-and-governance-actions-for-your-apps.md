@@ -1,7 +1,7 @@
 ---
 title: "Enable instant visibility, protection and governance actions for your apps"
 ms.custom: na
-ms.date: "09/25/2016"
+ms.date: "10/11/2016"
 ms.prod: "identity-cas"
 ms.reviewer: na
 ms.suite: na
@@ -15,7 +15,7 @@ ms.author: "rkarlin"
 robots: noindex,nofollow
 ---
 # Enable instant visibility, protection and governance actions for your apps
-  App connectors leverage the APIs of app providers to enable greater visibility and control by Cloud App Security over the apps you connect to.  
+   App connectors leverage the APIs of app providers to enable greater visibility and control by Cloud App Security over the apps you connect to.  
   
  Cloud App Security leverages the APIs provided by the cloud provider, each service has its own framework and API limitations. Cloud App Security worked with the services to optimize the usage of the APIs and to ensure the best performance. Taking into account the different limitations the services impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the Cloud App Security engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
   
@@ -74,7 +74,7 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 |**Privileges**|✔|✔|Not supported by provider|✔|✔|✔|✔||  
 |**User governance**|✔|✔||✔|Coming soon|Coming soon|Coming soon||  
 |**Log on activity**|✔|✔|✔|✔|✔|✔|✔|✔|  
-|**User activity**|✔*|✔|✔|✔ - requires Google Unlimited|Partial|Salesforce Shield support coming soon|✔|Not applicable|  
+|**User activity**|✔*|✔|✔|✔ - requires Google Unlimited|Partial|Supported with Salesforce Shield|✔|Not applicable|  
 |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|  
 |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Coming soon|  
 |**Near-realtime file scan**|Coming soon|✔|Not applicable|✔ - requires Google Unlimited|||Coming soon||  
@@ -105,7 +105,7 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
   
 |App|License type|User|  
 |---------|------------------|----------|  
-|Box|Enterprise|Admin, Co-Admin (When connecting as a Co-Admin files owned by other admins will not be scanned.)|  
+|Box|Enterprise|It is strongly recommended that you connect to Box as an Admin. Connecting as a Co-admin will result in only partial data visibility. If you connect as a Co-admin, make sure to select all permissions.|  
 |Google Apps|Google Apps Unlimited preferred<br /><br /> Google Apps Enterprise (minimally)|Super Admin|  
 |Office 365||Global Admin|  
 |AWS||Newly created user|  

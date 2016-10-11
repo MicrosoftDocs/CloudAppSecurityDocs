@@ -1,7 +1,7 @@
 ---
-title: "Activity filters"
+title: "Activities"
 ms.custom: na
-ms.date: "09/27/2016"
+ms.date: "10/11/2016"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,8 +12,8 @@ caps.latest.revision: 12
 author: "Rkarlin"
 ms.author: "rkarlin"
 ---
-# Activity filters
-  Below is a list of the file filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
+# Activities
+  Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
 -   Activity – Search only for specific activities, for example, all file uploads, logins from a new device and failed logins  
   

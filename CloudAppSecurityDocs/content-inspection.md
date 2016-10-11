@@ -1,7 +1,7 @@
 ---
 title: "Content Inspection"
 ms.custom: na
-ms.date: "08/31/2016"
+ms.date: "10/11/2016"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ This article describes the process Cloud App Security follows when performing DL
  1. Cloud App Security performs a continuous scan of all relevant files in all drives. 
  2. Cloud App Security performs Near Real-Time (NRT) scan of drives and events that are detected to be new or changed. 
 
-Both the files in the continuous scan and the files in the NRT scan are added to the queue for inspection. The order of the files in the scan queue is set per activity on files and on the scan of your drives. Files are scanned only if the file metadata shows that it's a supported MIME type.   
+Both the files in the continuous scan and the files in the NRT scan are added to the queue for inspection. The order of the files in the scan queue is set per activity on files and on the scan of your drives. Files are scanned only if the file metadata shows that it's a supported MIME type. That this scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text and zip/archive files).  
 
 After a file is scanned, the following occurs:
 

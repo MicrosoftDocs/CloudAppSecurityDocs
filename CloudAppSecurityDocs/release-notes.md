@@ -1,7 +1,7 @@
 ---
 title: "Release notes"
 ms.custom: na
-ms.date: "09/21/2016"
+ms.date: "10/11/2016"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,6 +12,25 @@ author: "Rkarlin"
 ms.author: "rkarlin"
 ---
 # Release notes
+
+## Cloud App Security release 82
+Released October 9, 2016
+
+**Improvements**
+
+- The activities **Change email** and **Change password** are now independent from the generic **Manage users** activity in Salesforce.
+- Added a clarification for the SMS daily alert limit. A maximum of 10 messages are sent per phone number, per day (UTC).
+- A new certificate was added to the Cloud Discovery attributes for Privacy Shield which replaced Safe Harbor (relevant for US vendors only).
+- Troubleshooting has been added to the API connector failure messages to make it easier to remediate problems.
+- Improvement in the update frequency of Office 365 third-party app scan.
+- Improvements in the Cloud Discovery dashboard.
+- The Checkpoint Syslog parser was improved.
+- Improvements in the Governance Log for banning and unbanning third-party apps.
+ 
+ **Bug fixes**
+ 
+ - Improved process for uploading a logo.
+ 
 ## Cloud App Security release 81
 Released September 18, 2016
 
