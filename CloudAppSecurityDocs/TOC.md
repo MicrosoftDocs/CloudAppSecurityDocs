@@ -7,7 +7,7 @@
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
-# [Deploy]
+# [Deploy](deploy.md)
 ## [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility--protection-and-governance-actions-for-your-apps.md)
 ### [Connect Box to Microsoft Cloud App Security](connect-box-to-microsoft-cloud-app-security.md)
 ### [Connect Google Apps to Microsoft Cloud App Security](connect-google-apps-to-microsoft-cloud-app-security.md)

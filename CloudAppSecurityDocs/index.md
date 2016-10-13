@@ -69,12 +69,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
                     <p>Keep up to date with the features and fixes in Cloud App Security.</p>
                   </a>
                 </li>
-                <li class="column-third">
-                  <a href="./understand-explore/compliance.md">
-                    <h3>Compliance and supporting information for Azure Information Protection</h3>
-                    <p>Supplemental information (such as legal and privacy statements) about Azure Information Protection.</p>
-                  </a>
-                </li>
+                
               </ul>
             </section>
           </li>
@@ -123,7 +118,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
         <ul class="journeys-list">
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
+              <a href="./deploy.md">
                 <div class="title column-third">
                   <span class="step-number">3</span>
                   <p>Deploy</p>
@@ -164,9 +159,9 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
               <a href="./daily-activities-to-protect-your-cloud-environment.md">
                 <div class="title column-third">
                   <span class="step-number">4</span>
-                  <p>Operate</p>
+                  <p>Use</p>
                 </div>
-                <p class="description column-two-thirds">Learn to operate Cloud App Security through these daily activities that help you investigate and control your organization's cloud app use.</p>
+                <p class="description column-two-thirds">Learn to use Cloud App Security through these daily activities that help you investigate and control your organization's cloud app use.</p>
               </a>
             </header>
             <section class="journey-step-elements content">
@@ -237,7 +232,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
       <p>Keep up-to-date on Cloud App Security
       <ol class="action-list">
         <li><a href="https://www.microsoft.com/cloud-platform/cloud-app-security" target="_blank" class="button-bordered button-translucent">Official Cloud App Security site</a></li>
-        <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">@TheRMSGuy on Twitter</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Cloud App Security assisted support</a></li>
       </ol>
     </aside>
 </article>
