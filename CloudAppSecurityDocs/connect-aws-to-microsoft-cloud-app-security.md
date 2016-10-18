@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect AWS to Microsoft Cloud App Security | Microsoft Docs
-description:
+description: This topic provides information about how to connect your AWS app to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 manager: mbaldwin

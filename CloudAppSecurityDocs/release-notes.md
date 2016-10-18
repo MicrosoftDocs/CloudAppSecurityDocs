@@ -2,7 +2,7 @@
 # required metadata
 
 title: Release notes | Microsoft Docs
-description:
+description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 manager: mbaldwin

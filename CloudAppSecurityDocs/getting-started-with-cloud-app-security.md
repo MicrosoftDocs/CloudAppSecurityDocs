@@ -2,7 +2,7 @@
 # required metadata
 
 title: Getting started with Cloud App Security | Microsoft Docs
-description:
+description: This topic outlines the process for getting Cloud App Security up and running.
 keywords:
 author: rkarlin
 manager: mbaldwin
@@ -28,7 +28,7 @@ ms.suite: ems
 # Getting started with Cloud App Security
   [!INCLUDE[Adallom1](./includes/adallom1_md.md)] helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with Cloud App Security.  
   
- Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx).  
+ Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
   
 > [!NOTE]An Office 365 license is not required for Cloud App Security.  
   

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Files | Microsoft Docs
-description:
+description: This reference topic provides information about the types of files and file filters used by Cloud App Security.
 keywords:
 author: rkarlin
 manager: mbaldwin

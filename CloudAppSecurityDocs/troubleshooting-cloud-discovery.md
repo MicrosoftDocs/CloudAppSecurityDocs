@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting Cloud Discovery | Microsoft Docs
-description:
+description: This topic provides a list of Cloud Discovery frequent errors and resolution recommendations for each.
 keywords:
 author: rkarlin
 manager: mbaldwin

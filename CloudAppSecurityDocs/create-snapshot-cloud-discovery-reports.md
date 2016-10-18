@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create snapshot Cloud Discovery reports | Microsoft Docs
-description:
+description: This article provides information about how to upload logs manually to create a snapshot report of your Cloud Discovery apps.
 keywords:
 author: rkarlin
 manager: mbaldwin

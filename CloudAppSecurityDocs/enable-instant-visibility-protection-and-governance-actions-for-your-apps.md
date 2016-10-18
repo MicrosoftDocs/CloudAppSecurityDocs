@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable instant visibility, protection and governance actions for your apps | Microsoft Docs
-description:
+description: This topic describes the process for enabling API connectors to apps in your organization's cloud.
 keywords:
 author: rkarlin
 manager: mbaldwin
@@ -32,8 +32,8 @@ ms.suite: ems
   
  **ExpressRoute**  
   
- Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
-For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/en-us/documentation/articles/expressroute-circuit-peerings/).  
+ Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## How it works  
  Cloud App Security is deployed with system admin privileges to allow full access to all objects in your environment.  
@@ -110,7 +110,7 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
      104.42.231.28  
   
 > [!NOTE]  
->  To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).  
+>  To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
   
  To use App Connectors, you need to make sure you have the following for each specific app:  
   

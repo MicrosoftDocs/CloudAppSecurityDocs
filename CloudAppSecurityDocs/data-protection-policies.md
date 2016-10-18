@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data protection policies | Microsoft Docs
-description:
+description: This topic describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 keywords:
 author: rkarlin
 manager: mbaldwin

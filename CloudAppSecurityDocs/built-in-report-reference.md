@@ -2,7 +2,7 @@
 # required metadata
 
 title: Built-in report reference | Microsoft Docs
-description:
+description: This topic provides a list of built-in reports and their uses.
 keywords:
 author: rkarlin
 manager: mbaldwin

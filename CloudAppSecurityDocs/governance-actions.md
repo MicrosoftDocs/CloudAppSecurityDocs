@@ -2,7 +2,7 @@
 # required metadata
 
 title: Governance log | Microsoft Docs
-description:
+description: This topic lists and describes all the governance actions that can be taken in Cloud App Security. 
 keywords:
 author: rkarlin
 manager: mbaldwin

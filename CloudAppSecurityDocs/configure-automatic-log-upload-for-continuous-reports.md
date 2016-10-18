@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure automatic log upload for continuous reports | Microsoft Docs
-description:
+description: This topic provides information about how to upload logs to create automatic Cloud Discovery reports.
 keywords:
 author: rkarlin
 manager: mbaldwin

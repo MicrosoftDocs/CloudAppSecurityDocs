@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect Office 365 to Microsoft Cloud App Security | Microsoft Docs
-description:
+description: description: This topic provides information about how to connect your Office 365 app to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 manager: mbaldwin
@@ -35,7 +35,7 @@ ms.suite: ems
 > [!NOTE]
 >- You must have at least one assigned Office 365 license to connect Office 365 to Cloud App Security.
 >-  Exchange administrator audit logging, which is enabled by default in Office 365, logs an event in the Office 365 audit log when an administrator (or a user who has been assigned administrative privileges) makes a change in your Exchange Online organization. Changes made using the Exchange admin center or by running a cmdlet in Windows PowerShell are logged in the Exchange admin audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](http://go.microsoft.com/fwlink/p/?LinkID=619225).
->- Exchange Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online will be logged, see [Exchange Mailbox activities](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US&fromAR=1#exchangemailboxactivities).
+>- Exchange Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online will be logged, see [Exchange Mailbox activities](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- If Office apps are enabled, groups that are part of Office 365 are also created in the specific Office apps, for example if SharePoint is enabled, Office 365 groups will be created in SharePoint.
  
 1.  In the Office 365 row, click **Connect** in the **App Connector status** column, or, click the **Connect an App** button and select **Office 365**.  

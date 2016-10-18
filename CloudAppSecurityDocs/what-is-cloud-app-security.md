@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is Cloud App Security | Microsoft Docs
-description:
+description: This topic provides information about what Cloud App Security is and how it works.
 keywords:
 author: rkarlin
 manager: mbaldwin
@@ -54,7 +54,7 @@ Cloud App Security enables visibility integration with your cloud in the followi
  ![](./media/architecture.png)  
   
 > [!NOTE]  
->  When Cloud App Security performs content inspection, data privacy is enforced. Your data is not stored in the Cloud App Security data base, only the metadata of the file records and the violations that were identified. See our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132)  and the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/You-are-in-control-of-your-data) for more information about data retention.
+>  When Cloud App Security performs content inspection, data privacy is enforced. Your data is not stored in the Cloud App Security data base, only the metadata of the file records and the violations that were identified. See our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132)  and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) for more information about data retention.
 Cloud App Security retains data as follows:
 >- Activity log: 180 days
 >- Discovery data: 90 days

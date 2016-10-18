@@ -2,7 +2,7 @@
 # required metadata
 
 title: Investigate | Microsoft Docs
-description:
+description: This topic provides an outline of the process for investigating alerts, issues and suspicious activities using Cloud App Security.
 keywords:
 author: rkarlin
 manager: mbaldwin

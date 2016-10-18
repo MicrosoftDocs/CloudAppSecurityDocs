@@ -2,7 +2,7 @@
 # required metadata
 
 title: Working with Cloud Discovery data | Microsoft Docs
-description:
+description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 keywords:
 author: rkarlin
 manager: mbaldwin

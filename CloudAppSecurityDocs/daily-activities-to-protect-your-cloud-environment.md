@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use | Microsoft Docs
-description:
+description: This article provides a foundation for what you must do in Cloud App Security on a regular basis to use Cloud App Security to monitor cloud app use in your organization. 
 keywords:
 author: rkarlin
 manager: mbaldwin

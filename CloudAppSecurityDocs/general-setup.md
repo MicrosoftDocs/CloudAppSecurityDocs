@@ -2,7 +2,7 @@
 # required metadata
 
 title: General setup | Microsoft Docs
-description:
+description: This topic provides the first steps to getting Cloud App Security up and running.
 keywords:
 author: rkarlin
 manager: mbaldwin
@@ -30,22 +30,22 @@ ms.suite: ems
   
 ## Prerequisites  
   
--   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/en-us/server-cloud/products/cloud-app-security/default.aspx).  
+-   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
   
-     For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US).  
+     For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
 > [!NOTE] An Office 365 license is not required for Cloud App Security.  
   
 -   After you have procured a license for Cloud App Security, you will receive an email with activation information and a link to the Cloud App Security portal.  
   
--   To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for Windows PowerShell. For more information, see [Assigning admin roles in Office 365](https://support.office.com/en-us/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504?ui=en-US&rs=en-US&ad=US) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).  
+-   To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for Windows PowerShell. For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
   
 -   To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
   
 -   **ExpressRoute**  
   
-     Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
-    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/en-us/documentation/articles/expressroute-circuit-peerings/).  
+     Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## Set up the portal  
   

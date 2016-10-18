@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cloud Discovery anomaly detection policy | Microsoft Docs
-description:
+description: This topic proivdes information about how to work with Cloud Discovery anomaly detection policies.
 keywords:
 author: rkarlin
 manager: mbaldwin

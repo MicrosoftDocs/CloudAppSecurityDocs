@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy | Microsoft Docs
-description:
+description: This topic describes the procedure to deploy Cloud App Security.
 keywords:
 author: rkarlin
 manager: mbaldwin

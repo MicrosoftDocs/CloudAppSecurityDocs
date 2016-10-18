@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting API Connectors using error messages | Microsoft Docs
-description:
+description: This topic provides a list of API Connector error messages as well as resolution recommendations for each.
 keywords:
 author: rkarlin
 manager: mbaldwin

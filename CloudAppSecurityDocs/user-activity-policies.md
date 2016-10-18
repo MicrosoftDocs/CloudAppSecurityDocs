@@ -2,7 +2,7 @@
 # required metadata
 
 title: User activity policies | Microsoft Docs
-description:
+description: This topic provides instructions for creating and working with user activity policies.
 keywords:
 author: rkarlin
 manager: mbaldwin

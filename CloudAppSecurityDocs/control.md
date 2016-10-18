@@ -2,7 +2,7 @@
 # required metadata
 
 title: Control | Microsoft Docs
-description:
+description: This article provides information about the governance actions you can take in Cloud App Security to control your organization's cloud app use.
 keywords:
 author: rkarlin
 manager: mbaldwin

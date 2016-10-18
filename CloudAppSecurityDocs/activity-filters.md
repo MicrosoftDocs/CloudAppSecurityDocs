@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activities | Microsoft Docs
-description:
+description: This topic provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
 author: rkarlin
 manager: mbaldwin

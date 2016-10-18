@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor alerts | Microsoft Docs
-description:
+description: This topic provides a list and description of all alerts.
 keywords:
 author: rkarlin
 manager: mbaldwin

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cloud Discovery policies | Microsoft Docs
-description:
+description: This topic provides information about working with Cloud Discovery policies.
 keywords:
 author: rkarlin
 manager: mbaldwin

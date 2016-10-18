@@ -2,7 +2,7 @@
 # required metadata
 
 title: Working with the RegEx engine | Microsoft Docs
-description:
+description: This topic provides instructions for using RegEx for pattern matching in Cloud App Security policies.
 keywords:
 author: rkarlin
 manager: mbaldwin
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Working with the RegEx engine
  
- Cloud App Security's content inspection policies leverage RegEx  for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
+ Cloud App Security's content inspection policies leverage RegEx for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
@@ -59,7 +59,7 @@ ms.suite: ems
   
 ||||  
 |-|-|-|  
-|Regular expression|Data|Matches|  
+|**Regular expression**|**Data**|**Matches**|  
 |Colou?r (?:black&#124;blue&#124;white)|Color black<br /><br /> Color white<br /><br /> Color red|Yes<br /><br /> Yes<br /><br /> No|  
 |[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|Yes<br /><br /> Yes<br /><br /> No|  
 |20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|Yes<br /><br /> Yes<br /><br /> No|  
