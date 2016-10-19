@@ -57,8 +57,8 @@ ms.suite: ems
 |Service timeout|All apps|A timeout was detected in the connection between Cloud App Security and the app. This could be due to a problem with the app.|Try again later.|
 
 ## See Also  
- [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

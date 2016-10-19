@@ -72,8 +72,8 @@ For information about how governance actions are treated when there are policy c
 |File Policy, Activity Policy|File, Activity|Notify specific users|Sends an email to notify specific users about a file that violates a policy.|All apps|
 
 ## See Also  
- [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

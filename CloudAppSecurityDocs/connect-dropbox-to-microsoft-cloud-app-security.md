@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Connect Dropbox to Microsoft Cloud App Security
-  This section provides instructions for connecting Cloud App Security to your existing Dropbox account using the connector APIs.  
+This section provides instructions for connecting Cloud App Security to your existing Dropbox account using the connector APIs.  
  
  
 Because Dropbox enables access to files from shared links without signing in, Cloud App Security registers these users as Unauthenticated users. If you see unauthenticated Dropbox users, it may indicate users who are not from your organization, or they might be recognized users from within your organization who did not sign in.
@@ -55,14 +55,14 @@ Because Dropbox enables access to files from shared links without signing in, Cl
   
      Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
   
-  After connecting Dropbox, you will receive events for 60 days prior to connection.
+After connecting Dropbox, you will receive events for 60 days prior to connection.
 
 > [!NOTE] 
 > Any Dropbox events for adding a file will be displayed in Cloud App Security as Upload file to align to all other apps connected to Cloud App Security. 
  
 ## See Also  
- [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

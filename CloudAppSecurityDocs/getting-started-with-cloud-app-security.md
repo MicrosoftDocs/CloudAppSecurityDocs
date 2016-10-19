@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Getting started with Cloud App Security
-  Cloud App Security helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with Cloud App Security.  
+Cloud App Security helps customers take advantage of the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data.  This documentation walks you through the following steps to work with Cloud App Security.  
   
- Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
+Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
   
 >[!NOTE]
 >An Office 365 license is not required for Cloud App Security.  
@@ -44,8 +44,8 @@ ms.suite: ems
 |STEP 5. [Organize the data according to your needs](general-setup.md#IPtagsandRanges).|Configure important settings|Recommended|**Create IP address tags**<br /><br /> 1.   Go to **Settings** -> **IP address tags**.<br /><br /> 2. Click on (+) **Add IP address range**.<br /><br /> 3.    Enter the IP range **details**, **location**, **tags** and **category**.<br /><br /> 4. Click **Create**.<br /><br /> Now you can use IP tags when creating policies, when filtering and when creating data views.<br /><br /> **Create views**<br /><br /> 1.  Go to **Settings** -> **Cloud Discovery settings**.<br /><br /> 2.    Under **Data views** click on (+) **Add data view**.<br /><br /> 3.  Follow the configuration steps.<br /><br /> 4.  Click **Create**.<br /><br /> Now you can view discovered data based on your own preferences such as business units or IP ranges.<br /><br /> **Add domains**<br /><br /> 1.    Go to **Settings** -> **General settings**.<br /><br /> 2.    Under **Organization details** add your organization's internal domains.<br /><br /> 3. Click **Save**.|**Why should you configure these settings?**<br /><br /> These settings lead to better and easier control of various features in the console. With IP tags it's easier to create policies that fit your needs, accurately filter data and more. Use Data views to group your data into logical categories.|  
   
 ## See Also  
- [General setup](general-setup.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[General setup](general-setup.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

@@ -26,14 +26,14 @@ ms.suite: ems
 ---
 
 # Set up Cloud Discovery
-   Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 13,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
- The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
+Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 13,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
 1.	Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance).
 2.	Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
 3.	Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
 4.	Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
   
- ## Snapshot and continuous risk assessment reports 
+## Snapshot and continuous risk assessment reports 
 
 There are two types of reports you can generate: 
 - **Snapshot reports** provide ad-hoc visibility on a set on traffic logs you manually upload from your firewalls and proxies.
@@ -41,7 +41,7 @@ There are two types of reports you can generate:
 - **Continuous reports** analyze all logs that are forwarded from your network using Cloud App Security’s log collector. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define.
  
 ## Log process flow: From raw data to risk assessment  
- The process of generating a risk assessment consists of the following steps and takes between a few minutes to several hours depending of the amount of data processed.  
+The process of generating a risk assessment consists of the following steps and takes between a few minutes to several hours depending of the amount of data processed.  
   
 -   **Upload** – Web traffic logs from your network are uploaded to the portal.  
   
@@ -52,10 +52,10 @@ There are two types of reports you can generate:
 -   **Generate report** - A risk assessment report of the data extracted from log files is generated.   
  
  
- >[!NOTE]
- >Continuous report data is analyzed twice a day.
+>[!NOTE]
+>Continuous report data is analyzed twice a day.
  
- ## Using traffic logs for  Cloud Discovery
+## Using traffic logs for  Cloud Discovery
 Cloud Discovery utilizes the data in your traffic logs. The more detailed your log, the better visibility you get. Cloud Discovery requires web-traffic data with the following attributes:
 - Date of the transaction
 - Source IP
@@ -125,9 +125,9 @@ Data attributes (according to vendor documentation):
 
 
  
- For more information, see 
+For more information, see 
  
- [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
+[Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 

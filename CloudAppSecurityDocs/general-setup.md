@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # General setup
-  The following procedure gives you instructions for setting up [!INCLUDE[Adallom1](./includes/adallom1_md.md)] to work on your cloud environment.  
+The following procedure gives you instructions for setting up [!INCLUDE[Adallom1](./includes/adallom1_md.md)] to work on your cloud environment.  
   
 ## Prerequisites  
   
@@ -65,8 +65,8 @@ ms.suite: ems
      Provide an **Environment  name** (tenant). This is especially important if you manage multiple tenants.  
   
      Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
-  > [!NOTE] 
-  > Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
+> [!NOTE] 
+> Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
    
 It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
   
@@ -94,10 +94,10 @@ It is also possible to provide a **Logo** that will be displayed in email notifi
 >[!NOTE]
 >Any non-invited user (with a proper role - Global, Security, Compliance Admin), can invite other users to Cloud App Security.
   
-  ![manage admin access](./media/manage-admin-access.png "manage admin access")  
+![manage admin access](./media/manage-admin-access.png "manage admin access")  
   
 ##  <a name="Adminsettings"></a> Customize your admin settings  
- To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following:  
+To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following:  
   
 1.  Click **Account settings**. Here you can customize the portal language for your own viewing. You can set it to display the portal in either the default language or you can set a different language for yourself.  
   
@@ -113,12 +113,12 @@ It is also possible to provide a **Logo** that will be displayed in email notifi
      When you are done, click **Save**.  
   
 ##  <a name="IPtagsandRanges"></a> Organize the data according to your needs  
- To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges which allow you to tag and categorize appropriately and customize the way logs and alerts are displayed and investigated.   
+To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges which allow you to tag and categorize appropriately and customize the way logs and alerts are displayed and investigated.   
 Each group of IP ranges can be categorized based on a preset list of IP categories or tagged with your own created IP tags. In addition, this setting allows you to override public geo-location info based on your internal network knowledge.  
   
- IPv4 and IPv6 are supported.  
+IPv4 and IPv6 are supported.  
   
- In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click **+Add IP address range** and set the following:  
+In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click **+Add IP address range** and set the following:  
   
 > [!NOTE]  
 >  The Location and Registered ISP will override defaults.   
@@ -157,11 +157,11 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
      ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  
   
 ##  <a name="Adallom_mailsettings"></a> Personalize your experience  
- In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
+In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
   
- ![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
+![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
   
- Configure the following:  
+Configure the following:  
   
 1.  **From email address**: The email account you want to use to send the notification.  
   
@@ -246,11 +246,11 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
      The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
 ## Single sign-on  
- Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
+Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
   
 ## See Also  
- [Set up Cloud Discovery](set-up-cloud-discovery.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Set up Cloud Discovery](set-up-cloud-discovery.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

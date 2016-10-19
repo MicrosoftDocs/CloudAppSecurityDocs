@@ -26,15 +26,15 @@ ms.suite: ems
 ---
 
 # User activity policies
-  Activity policies allow you to enforce a wide range of automated processes leveraging the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.  
+Activity policies allow you to enforce a wide range of automated processes leveraging the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.  
   
-  After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.
+After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.
   
   
 ## Custom alerts  
- Activity policies enable you to set custom alerts to be sent or actions to be taken when user activity is detected. For example, if you want to know every time a user tries to log on and fails 70 times in one minute, or if a user downloads 7,000 files or is logged in from Afghanistan, you can set activity alerts to be sent to yourself or to the user when these events occur. You can even suspend the user until you have time to investigate what happened.  
+Activity policies enable you to set custom alerts to be sent or actions to be taken when user activity is detected. For example, if you want to know every time a user tries to log on and fails 70 times in one minute, or if a user downloads 7,000 files or is logged in from Afghanistan, you can set activity alerts to be sent to yourself or to the user when these events occur. You can even suspend the user until you have time to investigate what happened.  
   
- To create a new activity policy, follow this procedure:  
+To create a new activity policy, follow this procedure:  
   
 1.  In the console, click on **Control** followed by **Policies**.  
   
@@ -51,7 +51,7 @@ ms.suite: ems
   
 6.  Configure the **Actions** that should be taken when a match is found.  
   
- Take a look at these examples:  
+Take a look at these examples:  
   
 -   Multiple failed logins  
   
@@ -68,9 +68,9 @@ ms.suite: ems
      ![high download rate example](./media/high-download-rate-example.png "high download rate example")  
   
 ## Anomaly detection  
- After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families will be considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
+After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families will be considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
   
- To configure an anomaly detection policy:  
+To configure an anomaly detection policy:  
   
 1.  In the console, click on **Control** followed by **Policies**.  
   
@@ -120,9 +120,9 @@ ms.suite: ems
  
   
 ## Activity policy reference  
-  This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.  
+This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.  
   
-   An **Activity policy** is an API-based policy that enables you to monitor your organization's activities in the cloud, taking into account over 20 file metadata filters (including device type and location). Based on the policy results, notifications can be generated and users can be suspended from the cloud app.   
+An **Activity policy** is an API-based policy that enables you to monitor your organization's activities in the cloud, taking into account over 20 file metadata filters (including device type and location). Based on the policy results, notifications can be generated and users can be suspended from the cloud app.   
 Each policy is composed of the following parts:  
   
 -   Activity filters – Enable you to create very granular conditions based on metadata.  
@@ -131,8 +131,8 @@ Each policy is composed of the following parts:
   
 -   Actions – The policy provides a set of governance actions that can be automatically applied when violations are detected.  
 ## See Also  
- [Data protection policies](data-protection-policies.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Data protection policies](data-protection-policies.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

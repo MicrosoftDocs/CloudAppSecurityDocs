@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Working with the RegEx engine
  
- Cloud App Security's content inspection policies leverage RegEx for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
+Cloud App Security's content inspection policies leverage RegEx for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
@@ -37,7 +37,7 @@ ms.suite: ems
   
      Provides detailed analysis of the RegEx.  
   
- The following limitations are imposed on custom regular expressions:  
+The following limitations are imposed on custom regular expressions:  
   
 -   The search is always case-insensitive  
    
@@ -55,7 +55,7 @@ ms.suite: ems
   
 -   Disallowed back-references: \\<number\> or \k\<name>  
   
- Example expressions  
+Example expressions  
   
 ||||  
 |-|-|-|  
@@ -67,8 +67,8 @@ ms.suite: ems
  
 
 ## See Also  
- [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

@@ -51,7 +51,7 @@ Cloud App Security enables visibility integration with your cloud in the followi
 -   Visibility and governance of apps you connect to using our easy-to-deploy app connectors that leverage provider APIs.  
 -   Continuous control by enabling you to set and then continually fine-tune policies.  
   
- ![](./media/architecture.png)  
+![](./media/architecture.png)  
   
 > [!NOTE]  
 >  When Cloud App Security performs content inspection, data privacy is enforced. Your data is not stored in the Cloud App Security data base, only the metadata of the file records and the violations that were identified. See our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132)  and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data) for more information about data retention.

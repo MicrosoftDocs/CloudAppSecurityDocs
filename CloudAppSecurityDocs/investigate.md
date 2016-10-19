@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Investigate
-  After Cloud App Security runs on your cloud environment, you will require a stage of learning and investigating using Cloud App Security's tools to gain deeper  understanding of what's happening in your cloud environment. Then based on your particular environment and how it's being used, you can identify the requirements necessary to protect your organization from risk.  
+After Cloud App Security runs on your cloud environment, you will require a stage of learning and investigating using Cloud App Security's tools to gain deeper  understanding of what's happening in your cloud environment. Then based on your particular environment and how it's being used, you can identify the requirements necessary to protect your organization from risk.  
   
- This section describes how to perform deep dive investigation to get a better understanding of what's going on in your cloud environment.  
+This section describes how to perform deep dive investigation to get a better understanding of what's going on in your cloud environment.  
   
 ## Dashboards  
- The following dashboards are available to help you investigate what's going on with apps in your cloud environment:  
+The following dashboards are available to help you investigate what's going on with apps in your cloud environment:  
   
 |Dashboard|Description|  
 |---------------|-----------------|  
@@ -43,7 +43,7 @@ ms.suite: ems
 |User dashboard|A complete overview of the user profile in the cloud including groups, locations, recent activities, related alerts and browsers used|  
   
 ##  <a name="sanctionapp"></a> Sanction or unsanction apps  
- The first step to understanding your cloud is to sanction apps. After you sanction an app, you can filter for apps that aren't sanctioned and initiate migration to sanctioned apps of the  same type.  
+The first step to understanding your cloud is to sanction apps. After you sanction an app, you can filter for apps that aren't sanctioned and initiate migration to sanctioned apps of the  same type.  
   
 -   In the Cloud App Security console, click on **Discover** and then **Discovery dashboard**.  
   
@@ -123,14 +123,14 @@ ms.suite: ems
     -   Are there cloud apps that are used but not in compliance with your organization’s policy?  
   
 ## How to use reports to investigate risk  
- When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after Cloud App Security runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
+When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find - you don't really know your cloud yet. And based on these assumptions, you create policies. Then, after Cloud App Security runs on your cloud environment, you can use the built-in reports (as well as custom reports) to see what's really going on in your cloud, and based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few things that are false positives.  
   
- Built-in reports offer you aggregated views for investigation.  
+Built-in reports offer you aggregated views for investigation.  
   
- To work with Built-in Reports, go to **Investigate** and then **Built-in reports**. For more information about the various built-in reports, see the [Built-in report reference](built-in-report-reference.md).  
+To work with Built-in Reports, go to **Investigate** and then **Built-in reports**. For more information about the various built-in reports, see the [Built-in report reference](built-in-report-reference.md).  
   
 ## Sample investigation  
- Let's say that you assume you don't have any access to your cloud environment by risky IP addresses (for example, Anonymous proxies and Tor). But you create a Risky IP policy just to make sure:  
+Let's say that you assume you don't have any access to your cloud environment by risky IP addresses (for example, Anonymous proxies and Tor). But you create a Risky IP policy just to make sure:  
   
 1.  In the portal, go to **Control** and select **Policies**.  
   
@@ -144,7 +144,7 @@ ms.suite: ems
   
      ![example policy risky ips](./media/example-policy-risky-ips.png "example policy risky ips")  
   
- Now that you have the policy in place, you're surprised to see that you get an alert that the policy was violated.  
+Now that you have the policy in place, you're surprised to see that you get an alert that the policy was violated.  
   
 1.  Go to the **Alerts** page and view the alert about the policy violation.  
   
@@ -159,8 +159,8 @@ ms.suite: ems
      If it's allowed and you expect it to recur, you can modify the policy to avoid this type of event being considered a violation in the future.  
   
 ## See Also  
- [Control](control.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Control](control.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

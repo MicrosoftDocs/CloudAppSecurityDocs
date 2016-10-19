@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Connect Google Apps to Microsoft Cloud App Security
-  This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.  
+This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.  
   
 ## Configure Google Apps  
   
@@ -256,14 +256,14 @@ ms.suite: ems
          After receiving a success notice, click **Done** and close the Google Apps page.  
   
   
-  After connecting Google Apps, you will receive events for 60 days prior to connection.
+After connecting Google Apps, you will receive events for 60 days prior to connection.
   
-  After connecting Google Apps, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real time scanning, files on which activity is detected are moved to the beginning of the scan queue, for example a file that is edited, updated, or shared is scanned right away and doesn't wait until it is reached by regular scan process. This does not apply to files that are not inherently modified, for example files that are viewed, previewed, printed or exported.
+After connecting Google Apps, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real time scanning, files on which activity is detected are moved to the beginning of the scan queue, for example a file that is edited, updated, or shared is scanned right away and doesn't wait until it is reached by regular scan process. This does not apply to files that are not inherently modified, for example files that are viewed, previewed, printed or exported.
   
   
 ## See Also  
- [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

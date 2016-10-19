@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Connect Salesforce to Microsoft Cloud App Security
-  This section provides instructions for connecting Cloud App Security to your existing Salesforce account using the app connector API.  
+This section provides instructions for connecting Cloud App Security to your existing Salesforce account using the app connector API.  
   
 ## How to connect Salesforce to Cloud App Security  
   
@@ -99,11 +99,11 @@ ms.suite: ems
      Testing may take a couple of minutes. After receiving a success notice, click **Done**.  
   
   
-  After connecting SalesForce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your SalesForce EventMonitoring license.
+After connecting SalesForce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your SalesForce EventMonitoring license.
   
 ## See Also  
- [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

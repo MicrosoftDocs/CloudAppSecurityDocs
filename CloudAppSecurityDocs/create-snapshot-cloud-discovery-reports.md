@@ -50,25 +50,25 @@ To create a snapshot report:
 7.  After upload completes, the status message will appear at the top right corner of your screen letting you know that your log was successfully uploaded.  
   
 8.  After you upload your log files, it will take some time for them to be parsed and analyzed.  
- After processing of your log files completes, you will receive an email to notify you that it is done. 
+After processing of your log files completes, you will receive an email to notify you that it is done. 
   
 9. A notification banner will appear in the status bar at the top of the portal to update you with the processing status of your log files.  
   
-  ![processing log file menu bar](./media/processing-log-file-menu-bar.png) 
+![processing log file menu bar](./media/processing-log-file-menu-bar.png) 
   
      After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully.  
    
- 10. At this point, a you can view the report either by clicking the link in the status bar, or by going to the Settings cog, and selecting **Cloud Discovery settings**.   
+10. At this point, a you can view the report either by clicking the link in the status bar, or by going to the Settings cog, and selecting **Cloud Discovery settings**.   
   
      ![Discovery settings tab](./media/discovery-settings-tab.png)
- 11. Then selecting **Manage snapshot reports** and select your snapshot report.
+11. Then selecting **Manage snapshot reports** and select your snapshot report.
  
- ![snapshot report managment](./media/snapshot-report-managment.png)
+![snapshot report managment](./media/snapshot-report-managment.png)
       
 ## See Also  
- [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
     
       
   

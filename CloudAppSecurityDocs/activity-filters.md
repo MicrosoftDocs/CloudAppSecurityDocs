@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Activities
-  Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
+Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
 -   Activity – Search only for specific activities, for example, all file uploads, logins from a new device and failed logins  
   
@@ -75,12 +75,12 @@ ms.suite: ems
      ![Activity policy ref3](./media/activity-policy-ref3.png "Activity policy ref3")  
   
 ## Activity match parameters  
- Specify the amount of activity repetition required to match the policy, for example, setting a policy to alert when a user performs 10 unsuccessful login attempts in a 2 minute time frame.  
+Specify the amount of activity repetition required to match the policy, for example, setting a policy to alert when a user performs 10 unsuccessful login attempts in a 2 minute time frame.  
 The default setting, **Activity match parameters**, raises a match for every single activity that meet all of the activity filters.   
 Using **Repeated activity** you can set the number of repeated activities, the duration of the time frame in which the activities are counted, and even specify that all activities should be performed by the same user and in the same cloud app.  
   
 ### Actions  
- Notifications  
+Notifications  
   
 -   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
   
@@ -90,7 +90,7 @@ Using **Repeated activity** you can set the number of repeated activities, the d
   
 -   Notify additional users – Specific list of email addresses that will receive these notifications.  
   
- Governance actions in apps  
+Governance actions in apps  
   
 -   Granular actions can be enforced per app, specific actions vary depending on app terminology.  
   
@@ -101,8 +101,8 @@ Using **Repeated activity** you can set the number of repeated activities, the d
      ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
 ## See Also  
- [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
