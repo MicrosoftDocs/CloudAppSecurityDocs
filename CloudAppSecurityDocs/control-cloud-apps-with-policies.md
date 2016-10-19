@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use | Microsoft Docs
+title: Control cloud apps with policies | Microsoft Docs
 description: This topic provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: rkarlin
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
+ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 
 # optional metadata
 

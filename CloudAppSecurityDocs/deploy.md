@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
+ms.assetid: ac9e4e67-92ee-46fb-8dde-d77e2afb5e12
 
 # optional metadata
 
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Deploy
- After you completed the general setup and Cloud Discovery setup, it's time to:
+After you completed the general setup and Cloud Discovery setup, it's time to:
 
  Enable instant visibility, protection and governance actions for the following apps:
  - [Box](connect-box-to-microsoft-cloud-app-security.md)

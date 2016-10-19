@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use | Microsoft Docs
+title: Daily activities to protect your cloud environment | Microsoft Docs
 description: This article provides a foundation for what you must do in Cloud App Security on a regular basis to use Cloud App Security to monitor cloud app use in your organization. 
 keywords:
 author: rkarlin
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Use
+# Daily activities to protect your cloud environment
   After you get Cloud App Security up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use Cloud App Security to control and protect your cloud and manage risk.  
   
  This topic describes what you should do on a daily basis.  
