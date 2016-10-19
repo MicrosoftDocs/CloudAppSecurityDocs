@@ -40,7 +40,7 @@ Enable instant visibility, protection and governance actions for the following a
  
 Then, set up **policies** to control cloud apps:
 -  [Cloud Discovery policies](cloud-discovery-policies.md)
-- [Cloud Discovery anomaly detection policies](cloud-discovery-anomaly-detection-policies.md)
+- [Cloud Discovery anomaly detection policies](cloud-discovery-anomaly-detection-policy.md)
 - [User activity policies](user-activity-policies.md)
 - [Anomaly detection policies](anomaly-detection-policy.md)
 - [Data protection policies](data-protection-policies.md) 
