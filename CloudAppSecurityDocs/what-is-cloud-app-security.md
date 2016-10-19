@@ -35,12 +35,17 @@ Cloud App Security is a critical component of the Microsoft Cloud Security stack
   
 ## The Cloud App Security framework  
 
+![Discover](./media/discovery-icon.png)
+![Investigate](./media/investigate-icon.png)
+![Control](./media/protect-icon.png)
+![Protect](./media/protect-icon.png)
+
 ||||
 |----|----|----|  
-|![](./media/discovery-icon.png)|Discover|Uncover Shadow IT with Cloud App Security. Gain visibility by discovering apps, activities, users, data and files in your cloud environment as well as third-party apps that are connected to your cloud.|  
-|![](./media/investigate-icon.png)|Investigate|Investigate your cloud apps using cloud forensics tools to deep-dive into risky apps, specific users and files in your network as well as finding patterns in the data collected from your cloud and generating reports to monitor your cloud.|  
-|![](./media/protect-icon.png)|Control|Mitigate risk by setting policies and alerts in order to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.|  
-|![](./media/protect-icon.png)|Protect|Use Cloud App Security to sanction/unsanction applications, enforce data loss prevention (DLP), control permissions and sharing, and generate custom reports and alerts.|  
+|![Discover](./media/discovery-icon.png)|Discover|Uncover Shadow IT with Cloud App Security. Gain visibility by discovering apps, activities, users, data and files in your cloud environment as well as third-party apps that are connected to your cloud.|  
+|![Investigate](./media/investigate-icon.png)|Investigate|Investigate your cloud apps using cloud forensics tools to deep-dive into risky apps, specific users and files in your network as well as finding patterns in the data collected from your cloud and generating reports to monitor your cloud.|  
+|![Control](./media/protect-icon.png)|Control|Mitigate risk by setting policies and alerts in order to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.|  
+|![Protect](./media/protect-icon.png)|Protect|Use Cloud App Security to sanction/unsanction applications, enforce data loss prevention (DLP), control permissions and sharing, and generate custom reports and alerts.|  
   
 ## Architecture  
 
