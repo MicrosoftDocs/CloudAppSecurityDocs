@@ -131,7 +131,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
                 <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
                     <h3>Enable API connectors</h3>
-                    <p>Enable API connectors to get enhanced visibility into apps lincluding Office 365, Google .</p>
+                    <p>Enable API connectors to get enhanced visibility into apps including Office 365, Google Apps, Box, Dropbox and more.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -231,7 +231,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
         <aside class="alert alert-social">
       <p>Keep up-to-date on Cloud App Security
       <ol class="action-list">
-        <li><a href="https://www.microsoft.com/cloud-platform/cloud-app-security" target="_blank" class="button-bordered button-translucent">Official Cloud App Security site</a></li>
+        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Official Cloud App Security site</a></li>
         <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Cloud App Security assisted support</a></li>
       </ol>
     </aside>
