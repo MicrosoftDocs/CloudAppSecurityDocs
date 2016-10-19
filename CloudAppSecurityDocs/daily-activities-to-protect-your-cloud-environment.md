@@ -26,21 +26,21 @@ ms.suite: ems
 ---
 
 # Daily activities to protect your cloud environment
-  After you get Cloud App Security up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use Cloud App Security to control and protect your cloud and manage risk.  
+After you get Cloud App Security up and running, and configure data streams, sanction any apps you want to allow people to use, and set up policies to monitor your cloud environment, it is time to use Cloud App Security to control and protect your cloud and manage risk.  
   
- This topic describes what you should do on a daily basis.  
+This topic describes what you should do on a daily basis.  
   
 ## Check the dashboard  
- When you open the Cloud App Security portal, you are provided with an overview of open alerts, activity violations, content violations, an activity map which provides a map that plots where, geographically, user activity originates, and connected App usage trends in your  cloud environment.  
+When you open the Cloud App Security portal, you are provided with an overview of open alerts, activity violations, content violations, an activity map which provides a map that plots where, geographically, user activity originates, and connected App usage trends in your  cloud environment.  
   
- It is recommended that you check the dashboard on a daily basis to see what new alerts were triggered and handle them. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's going on, on a high level, across your cloud environment.  
+It is recommended that you check the dashboard on a daily basis to see what new alerts were triggered and handle them. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's going on, on a high level, across your cloud environment.  
   
- ![dashboard](./media/dashboard.png "dashboard")  
+![dashboard](./media/dashboard.png "dashboard")  
   
 ## Handle your alerts  
- Alerts are the entry point to understanding your cloud environment more deeply. You may want to create new policies based on what you find. For example, you might see an administrator logging on from Greenland, and decide that in the future you want to create a policy that automatically suspends an admin account when it is used to log on from Greenland.  
+Alerts are the entry point to understanding your cloud environment more deeply. You may want to create new policies based on what you find. For example, you might see an administrator logging on from Greenland, and decide that in the future you want to create a policy that automatically suspends an admin account when it is used to log on from Greenland.  
   
- It is a good idea to review all your alerts and to use them as a tool for modifying your policies. If harmless events are being considered violations to existing policies, you should refine your policies so that you receive fewer unnecessary alerts.  
+It is a good idea to review all your alerts and to use them as a tool for modifying your policies. If harmless events are being considered violations to existing policies, you should refine your policies so that you receive fewer unnecessary alerts.  
   
 -   Under **Open alerts**, click **View all alerts**.  
   
@@ -78,7 +78,7 @@ ms.suite: ems
   
 -   When you finish this process, mark the alert as resolved.  
   
- The following table provides a list of the types of alerts that can be triggered and recommended ways in which you can resolve them.  
+The following table provides a list of the types of alerts that can be triggered and recommended ways in which you can resolve them.  
   
 |Alert type|Description|Recommended resolution|  
 |----------------|-----------------|----------------------------|  
@@ -95,7 +95,7 @@ ms.suite: ems
 |Use of personal account|This alert lets  you know that a new personal account has access to resources in your connected apps.|In the external account, remove the user's collaborations.|  
   
 ## Use policies to assess risk  
- After you take a look at your open alerts, go to the **Policy center** to review policy violations that didn't trigger alerts.  
+After you take a look at your open alerts, go to the **Policy center** to review policy violations that didn't trigger alerts.  
   
 -   In the Cloud App Security portal, click on **Control** and then **Policies**.  
   
@@ -120,8 +120,8 @@ ms.suite: ems
      ![content matches ccn](./media/content-matches-ccn.png "content matches ccn")  
   
 ## See Also  
- [Investigate](investigate.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Investigate](investigate.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

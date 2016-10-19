@@ -41,9 +41,9 @@ Released October 9, 2016
 - The Checkpoint Syslog parser was improved.
 - Improvements in the Governance Log for banning and unbanning third-party apps.
  
- **Bug fixes**
+**Bug fixes**
  
- - Improved process for uploading a logo.
+- Improved process for uploading a logo.
  
 ## Cloud App Security release 81
 Released September 18, 2016
@@ -57,8 +57,8 @@ Released September 18, 2016
 - Improvements were made to administrative activities in the activity log; Change password, Update user, Reset password now indicate whether the activity was performed as an administrative activity.
 - The alert filters for system alerts were improved. 
 - The label for a policy within an alert now links back to the policy report.
- - If there is no owner specified for a Dropbox file, notification email messages are sent to the recipient you set. 
- - Cloud App Security supports an additional 24 languages extending our support to a total of 41 languages.  
+- If there is no owner specified for a Dropbox file, notification email messages are sent to the recipient you set. 
+- Cloud App Security supports an additional 24 languages extending our support to a total of 41 languages.  
 
 
 ## Cloud App Security release 80
@@ -172,8 +172,8 @@ Released: May 29, 2016
 * Updated alert capabilities:
 You can now set alerts per policy to be sent via email or sent as a text message.
 * Alerts page:
- Improved design to better enable advanced resolution options and incident management.
- * Adjust policy: Alerts now enable you to move from alert resolution options directly to the policy settings page to enable easier fine-tuning based on alerts.
+Improved design to better enable advanced resolution options and incident management.
+* Adjust policy: Alerts now enable you to move from alert resolution options directly to the policy settings page to enable easier fine-tuning based on alerts.
 * Improvements to anomaly detection risk score calculation and reduced false-positive rate based on customer feedback.
 * Activity log export now includes Event ID, Event Category and Event Type Name.
 * Improved appearance and usability of policy creation Governance Actions.
@@ -200,7 +200,7 @@ Released: May 15, 2016
 * When you set an alert to be sent when a policy is violated, you can now set a minimum severity level for which you want to be alerted. You can choose to use your organization's default setting for this and you can set a specific alert setting as the default for your organization.
 
 ## See Also  
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

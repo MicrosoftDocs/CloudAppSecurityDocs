@@ -28,8 +28,8 @@ ms.suite: ems
 # Data protection policies
     
 ## File policies  
- File Policies allow you to enforce a wide range of automated processes leveraging the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly and many more use cases.  
-  Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 
+File Policies allow you to enforce a wide range of automated processes leveraging the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly and many more use cases.  
+Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 
  
 **Supported file types** 
 
@@ -43,9 +43,9 @@ The engine combines three aspects under each policy:
   
 -   Automated actions for governance and remediation. For more information, see [Control](control.md).  
   
- Once enabled, the policy will continuously scan your cloud environment and identify files that match the content and context filters, and apply the requested automated actions. These policies will detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console generated reports.  
+Once enabled, the policy will continuously scan your cloud environment and identify files that match the content and context filters, and apply the requested automated actions. These policies will detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console generated reports.  
   
- The following are examples of file policies that can be created:  
+The following are examples of file policies that can be created:  
   
 -   Publicly shared files:  
     Receive an alert about any file in your cloud that is publicly shared by selecting all files whose sharing level is public.  
@@ -65,7 +65,7 @@ The engine combines three aspects under each policy:
 -   Sensitive file extension:  
     Receive an alert about files with specific extensions which are potentially highly-exposed. Select the specific extension (for example, crt for certificates) or filename and exclude those with private sharing level.  
   
- To create a new file policy, follow this procedure:  
+To create a new file policy, follow this procedure:  
   
 1.  In the console, click on **Control** followed by **Policies**.  
   
@@ -95,16 +95,16 @@ The engine combines three aspects under each policy:
 >   
 >  For guidance, you can use the **Edit and preview results** button in the Filters section.  
   
- ![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
   
- 10. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the Matching now files for the policy. Click the **History** tab to see a history back to up to 6 months of files that matched the policy.     
+10. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the Matching now files for the policy. Click the **History** tab to see a history back to up to 6 months of files that matched the policy.     
   
 ## File policy reference  
-  This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy. 
+This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy. 
   
-  A **File policy** is an API-based policy that enables you to control your organization's content in the cloud, taking into account over 20 file metadata filters (including owner and sharing level) as well as content inspection results. Based on the policy results, governance actions can be applied. The content inspection engine can be extended via 3rd-party DLP engines as well as anti-malware solutions.  
+A **File policy** is an API-based policy that enables you to control your organization's content in the cloud, taking into account over 20 file metadata filters (including owner and sharing level) as well as content inspection results. Based on the policy results, governance actions can be applied. The content inspection engine can be extended via 3rd-party DLP engines as well as anti-malware solutions.  
   
- Each policy is composed of the following parts:  
+Each policy is composed of the following parts:  
   
 -   File filters – Enable you to create very granular conditions based on metadata.  
   
@@ -124,8 +124,8 @@ The engine combines three aspects under each policy:
     -   Governance actions can be performed via 3rd-party engines for enforcing custom encryption control or other types of file processing (for example, custom water marking).  
   
 ## See Also  
- [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

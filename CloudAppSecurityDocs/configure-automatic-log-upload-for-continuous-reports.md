@@ -34,8 +34,8 @@ Before setting up automatic log file collection, verify that your log matches th
 - CPU: 2
 - RAM: 4 GB 
 - Firewall settings: 
-  - Allow the log collector to receive inbound FTP and Syslog traffic
-  - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443
+- Allow the log collector to receive inbound FTP and Syslog traffic
+- Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443
 
   
 ## Set up automatic log file collection  
@@ -75,42 +75,42 @@ Log collectors enable you to easily automate log upload from your network. The l
          > [!NOTE] 
        > Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
          
-  ![discovery data sources](./media/discovery-data-sources.png)
-  > [!NOTE] 
+![discovery data sources](./media/discovery-data-sources.png)
+> [!NOTE] 
          > A single Log collector can handle multiple data sources.
   
-   4.  **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare and unzip the file using the password you received in the portal.  
+4.  **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare and unzip the file using the password you received in the portal.  
   
 ## Set up your virtual machine in Hyper-V:  
   
-  1.  Open the Hyper-V Manager.  
+1.  Open the Hyper-V Manager.  
   
- 2.  Select **New** and then **Virtual Machine** and click **Next**.  
+2.  Select **New** and then **Virtual Machine** and click **Next**.  
   
              ![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
- 3.  Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.  
+3.  Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.  
   
-  4.  Select **Generation 1** and click **Next**.  
+4.  Select **Generation 1** and click **Next**.  
   
-  5.  Change the **Startup memory** to **4096 MB**.  
+5.  Change the **Startup memory** to **4096 MB**.  
         
-  6. Check **Use Dynamic Memory** for this virtual machine and click **Next**.  
+6. Check **Use Dynamic Memory** for this virtual machine and click **Next**.  
   
-   7.  If available, choose the network **Connection** and click **Next**.  
+7.  If available, choose the network **Connection** and click **Next**.  
   
-   8.  Choose **Use an existing virtual hard disk** and select the .**vhd** file that was included in the Zip file you downloaded.  
+8.  Choose **Use an existing virtual hard disk** and select the .**vhd** file that was included in the Zip file you downloaded.  
   
- 9.  Click **Next** and then click **Finish**.  
+9.  Click **Next** and then click **Finish**.  
   
              The machine will be added to your Hyper-V environment.  
   
- 9. Click on the machine in the **Virtual Machines** table and click **Start**.   
+9. Click on the machine in the **Virtual Machines** table and click **Start**.   
   
 10. Connect to the Log Collector virtual machine to see if it has been assigned a DHCP address: 
 Click on the virtual machine and select **Connect**. You should see the login prompt. If you see an IP address, then you can connect to the virtual machine using a terminal/SSH tool.  If you do not see an IP address, log in using the Hyper-V/VMWare connection tools with the credentials you copied down when you created the Log Collector above. You can change the password and you configure the virtual machine by running the following command
 ```
- sudo network_config
+sudo network_config
 ```
 > [!NOTE]
 > The virtual machine is pre-configured to obtain an IP address from a DHCP server. If you need to configure a static IP addresses, default gateway, hostname, DNS servers and NTPS, you can use the **network_config** utility or perform changes manually.

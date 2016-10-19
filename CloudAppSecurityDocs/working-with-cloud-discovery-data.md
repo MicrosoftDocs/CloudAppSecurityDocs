@@ -47,7 +47,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 
 
 ## Customize the risk score  
- Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing Cloud App Security's assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which Cloud App Security considers when assessing reliability:  
+Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing Cloud App Security's assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which Cloud App Security considers when assessing reliability:  
   
 -   **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year and popularity. These fields are meant to portray the company's stability on the most basic level.  
   
@@ -55,9 +55,9 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 -   **Compliance** - This category displays which common best-practice compliance standards are upheld by the company that produces the app. The list of specifications includes standards such as HIPAA, CSA and PCI-DSS.  
   
- Each of the categories is comprised of many specific properties. According to our scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly, whereas continuous properties such as domain age will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category, to create the category's sub-score. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.  
+Each of the categories is comprised of many specific properties. According to our scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly, whereas continuous properties such as domain age will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category, to create the category's sub-score. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.  
   
- It is important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given an equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:  
+It is important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given an equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:  
   
 1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
@@ -68,13 +68,13 @@ The first thing you should do to get a general picture of your Cloud Discovery a
      ![score](./media/score.png "score")  
   
 ## Manage continuous reports  
- Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it is possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:  
+Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it is possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:  
   
 -  The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  
   
- - The **Data source specific report** displays only information from a specific data source.  
+- The **Data source specific report** displays only information from a specific data source.  
   
- To create a new continuous report:  
+To create a new continuous report:  
   
 1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
@@ -91,9 +91,9 @@ The first thing you should do to get a general picture of your Cloud Discovery a
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
   
 ## Exclude entities  
- If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
+If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
   
- To create an exclusion:  
+To create an exclusion:  
   
 1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
@@ -106,7 +106,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
      ![exclude user](./media/exclude-user.png "exclude user")  
   
 ## Deleting Cloud Discovery data  
- There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
+There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
   
 -   If you manually uploaded log files and a long time passed before you updated the system with new log files and you don't want old data affecting your results.  
   
@@ -114,7 +114,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
 -   If many users or IP addresses recently started working again after being offline for some time, their activity will be identified as anomalous and you may get many false positive violations.  
   
- To delete Cloud Discovery data:  
+To delete Cloud Discovery data:  
   
 1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
@@ -130,8 +130,8 @@ The first thing you should do to get a general picture of your Cloud Discovery a
     >  The deletion process takes a few minutes and is not immediate.  
 
 ## See Also  
- [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

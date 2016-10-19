@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Connect Office 365 to Microsoft Cloud App Security
-  This section provides instructions for connecting Cloud App Security to your existing Microsoft Office 365 account using the app connector API.  
+This section provides instructions for connecting Cloud App Security to your existing Microsoft Office 365 account using the app connector API.  
   
   
 
@@ -52,12 +52,12 @@ ms.suite: ems
   
      ![O365 connected](./media/o365-connected.png) 
 
- > [!NOTE] 
- > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you will see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
+> [!NOTE] 
+> After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you will see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
 
 ## See Also  
- [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

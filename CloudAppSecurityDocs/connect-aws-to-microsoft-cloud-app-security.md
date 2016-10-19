@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Connect AWS to Microsoft Cloud App Security
-  This section provides instructions for connecting Cloud App Security to your existing Amazon Web Services account using the connector APIs.  
+This section provides instructions for connecting Cloud App Security to your existing Amazon Web Services account using the connector APIs.  
   
 ## How to connect Amazon Web Services to Cloud App Security  
   
@@ -113,11 +113,11 @@ ms.suite: ems
   
      Testing may take a couple of minutes. When it is finished, you will get a Success or Failure notification. After receiving a success notice, click **Done**.  
   
- After connecting AWS, you will receive events for 7 days prior to connection.
+After connecting AWS, you will receive events for 7 days prior to connection.
   
 ## See Also  
- [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

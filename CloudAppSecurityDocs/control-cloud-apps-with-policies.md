@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 # Control cloud apps with policies
 
-  Policies allow you to define the way you want your users to behave in the cloud. They enable you to detect risky behavior, violations or suspicious data points and activities in your cloud environment, and if required, to integrate remediation work flows to achieve complete risk mitigation. There are multiple types of policies that correlate to the different types of information you want to gather about your cloud environment and the types of remediation actions you may want to take.  
+Policies allow you to define the way you want your users to behave in the cloud. They enable you to detect risky behavior, violations or suspicious data points and activities in your cloud environment, and if required, to integrate remediation work flows to achieve complete risk mitigation. There are multiple types of policies that correlate to the different types of information you want to gather about your cloud environment and the types of remediation actions you may want to take.  
   
- For example, if there is a data violation threat that you want to quarantine, you will need a different type of policy in place than if you want to block a risky cloud app from being used by your organization.  
+For example, if there is a data violation threat that you want to quarantine, you will need a different type of policy in place than if you want to block a risky cloud app from being used by your organization.  
   
 ## Policy types  
- The following types of policies can be created:  
+The following types of policies can be created:  
   
 |Policy type|Use|  
 |-----------------|---------|  
@@ -42,7 +42,7 @@ ms.suite: ems
 |File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
   
 ## Identifying risk  
- Cloud App Security helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
+Cloud App Security helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
   
 -   **Access control:** Who accesses what from where?  
   
@@ -79,7 +79,7 @@ ms.suite: ems
      Receive real-time notifications for any policy violation or activity threshold via text message or email. By applying machine learning algorithms Cloud App Security enables you to detect behavior that could indicate that a user is misusing data.  
   
 ## How to control risk  
- Follow this process to control risk with policies:  
+Follow this process to control risk with policies:  
   
 1.  Create a policy from a template or a query.  
   
@@ -88,11 +88,11 @@ ms.suite: ems
 3.  Add automated actions to respond and remediate risks automatically.  
   
 ### Create a policy  
- You can either use Cloud App Security’s policy templates as a basis for all your policies, or create policies from a query.  
+You can either use Cloud App Security’s policy templates as a basis for all your policies, or create policies from a query.  
   
- Policy templates will help you set the correct filters and configurations necessary to detect specific events of interest within your environment. The templates include policies of all types, and can apply to various services.  
+Policy templates will help you set the correct filters and configurations necessary to detect specific events of interest within your environment. The templates include policies of all types, and can apply to various services.  
   
- To create a policy from a **policy templates**, perform the following:  
+To create a policy from a **policy templates**, perform the following:  
   
 1.  In the console, click on **Control** followed by **Templates**.  
   
@@ -107,11 +107,11 @@ ms.suite: ems
 4.  After you create the new template-based policy, a link to the new policy appears in the **Linked policies** column in the policy template table next to the template from which the policy was created.  
      You can create as many policies as you want from each template and they will all be linked to the original template, allowing you to track all policies built using the same template.  
   
- Alternatively, you can **create a policy during investigation**. If you are investigating the **Activity log**, **Files** or **Accounts**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.  
+Alternatively, you can **create a policy during investigation**. If you are investigating the **Activity log**, **Files** or **Accounts**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.  
   
- For example, if you are looking at the **Activity log**, and see that one of your admin accounts is being logged into from an unexpected geographic location, you can filter the results of the **Activity log** to display all log on activities by that admin, and then create a report that notifies you the next time activity is detected for that user.  
+For example, if you are looking at the **Activity log**, and see that one of your admin accounts is being logged into from an unexpected geographic location, you can filter the results of the **Activity log** to display all log on activities by that admin, and then create a report that notifies you the next time activity is detected for that user.  
   
- To create a policy based on investigation results, perform the following:  
+To create a policy based on investigation results, perform the following:  
   
 1.  In the console, click on **Investigate** followed by **Activity log**, **Files** or **Accounts**.  
   
@@ -131,7 +131,7 @@ ms.suite: ems
   
  
  
- ![create activity policy from investigation](./media/create-activity-policy-from-investigation.png)
+![create activity policy from investigation](./media/create-activity-policy-from-investigation.png)
  
  
   
@@ -152,7 +152,7 @@ After creating multiple policies, a situation may arise in which the policies ov
 
 
 ## See Also  
- [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
