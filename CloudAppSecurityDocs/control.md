@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Control
-  Governance actions can be applied to users' files across your cloud environment. After you have thoroughly investigated and learned about your cloud, you can use governance actions to protect your organization.  
+Governance actions can be applied to users' files across your cloud environment. After you have thoroughly investigated and learned about your cloud, you can use governance actions to protect your organization.  
   
 ## Applying governance actions  
  Governance actions can be applied from within policies, from inside alerts and from the **File** log.  

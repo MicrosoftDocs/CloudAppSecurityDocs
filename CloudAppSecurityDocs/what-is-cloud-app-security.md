@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: f6f7ac64-6306-46fa-86ed-13b3b9600fd3
+ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 
 # optional metadata
 
@@ -34,7 +34,8 @@ While moving to the cloud has increased flexibility for employees and reduced IT
 Cloud App Security is a critical component of the Microsoft Cloud Security stack. It is a comprehensive solution that helps organizations take full advantage of the promise of cloud applications while maintaining control with improved visibility into activity. It also increases protection of critical data across cloud applications. With tools to help uncover Shadow IT, assess risk, enforce policies, investigate activities and stop threats, organizations can safely move to the cloud while maintaining control of critical data.  
   
 ## The Cloud App Security framework  
-  
+
+||||
 |----|----|----|  
 |![](./media/discovery-icon.png)|Discover|Uncover Shadow IT with Cloud App Security. Gain visibility by discovering apps, activities, users, data and files in your cloud environment as well as third-party apps that are connected to your cloud.|  
 |![](./media/investigate-icon.png)|Investigate|Investigate your cloud apps using cloud forensics tools to deep-dive into risky apps, specific users and files in your network as well as finding patterns in the data collected from your cloud and generating reports to monitor your cloud.|  
