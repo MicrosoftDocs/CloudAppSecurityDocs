@@ -21,12 +21,12 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
     <section id="hero-content">
       <h1>Cloud App Security Documentation</h1>
       <h2>Learn how to set up and work with Cloud App Security so that your organization can enjoy the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data. </h2>
-      <h3>New to Cloud App Security? <a href="https://www.microsoft.com/cloud-platform/cloud-app-security" target="_blank">Visit our product site &rarr;</a></h3>
+      <h3>New to Cloud App Security? <a href="https://www.cloudappsecurity.com" target="_blank">Visit our product site &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>Ready to get hands-on?</p>
         <ol class="action-list">
-            <li><a href="https://www.microsoft.com/cloud-platform/cloud-app-security#CP_TopImage2ColWithCopy_1" target="_blank" class="button-bordered button-translucent">Try Now</a></li>
+            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">Buy Now</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -199,7 +199,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
                   <span class="step-number">5</span>
                   <p>Troubleshoot</p>
                 </div>
-                <p class="description column-two-thirds">Use these steps to troubleshoot set up and operations issues in Cloud App Security./p>
+                <p class="description column-two-thirds">Use these steps to troubleshoot set up and operations issues in Cloud App Security.</p>
               </a>
             </header>
             <section class="journey-step-elements content">
