@@ -112,7 +112,8 @@ Click on the virtual machine and select **Connect**. You should see the login pr
 ```
  sudo network_config
 ```
-> [!NOTE] The virtual machine is pre-configured to obtain an IP address from a DHCP server. If you need to configure a static IP addresses, default gateway, hostname, DNS servers and NTPS, you can use the **network_config** utility or perform changes manually.
+> [!NOTE]
+> The virtual machine is pre-configured to obtain an IP address from a DHCP server. If you need to configure a static IP addresses, default gateway, hostname, DNS servers and NTPS, you can use the **network_config** utility or perform changes manually.
 
 
 At this point, your log collector should be connected to your network and should be able to reach the Cloud App Security portal.  

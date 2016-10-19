@@ -29,7 +29,7 @@ ms.suite: ems
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
 
 The following is the full list of actions the Cloud App Security portal enables you to take. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
-For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](Control%20cloud%20apps%20with%20policies.md) 
+For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md) 
 
 **Location**|**Target object type**|**Governance action**|**Description**|**Related connectors** 
 ---------|---------|---------|---------|---------
@@ -71,3 +71,9 @@ For information about how governance actions are treated when there are policy c
 |File Policy, Activity Policy|File, Activity|cc the owners manager|When the file owner receives an email notification that their file is in violation of a policy, this optionally notifies the manager of the file owner.|All apps except Service Now|
 |File Policy, Activity Policy|File, Activity|Notify specific users|Sends an email to notify specific users about a file that violates a policy.|All apps|
 
+## See Also  
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+ [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+ [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+  
+  

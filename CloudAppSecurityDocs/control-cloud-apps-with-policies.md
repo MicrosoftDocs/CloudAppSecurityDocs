@@ -42,7 +42,7 @@ ms.suite: ems
 |File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
   
 ## Identifying risk  
- [!INCLUDE[Adallom](../Token/Adallom_md.md)] helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
+ Cloud App Security helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
   
 -   **Access control:** Who accesses what from where?  
   
@@ -76,7 +76,7 @@ ms.suite: ems
   
 -   **Threat detection:** Are there suspicious activities threatening your cloud environment?  
   
-     Receive real-time notifications for any policy violation or activity threshold via text message or email. By applying machine learning algorithms [!INCLUDE[Adallom](../Token/Adallom_md.md)] enables you to detect behavior that could indicate that a user is misusing data.  
+     Receive real-time notifications for any policy violation or activity threshold via text message or email. By applying machine learning algorithms Cloud App Security enables you to detect behavior that could indicate that a user is misusing data.  
   
 ## How to control risk  
  Follow this process to control risk with policies:  
@@ -88,7 +88,7 @@ ms.suite: ems
 3.  Add automated actions to respond and remediate risks automatically.  
   
 ### Create a policy  
- You can either use [!INCLUDE[Adallom](../Token/Adallom_md.md)]’s policy templates as a basis for all your policies, or create policies from a query.  
+ You can either use Cloud App Security’s policy templates as a basis for all your policies, or create policies from a query.  
   
  Policy templates will help you set the correct filters and configurations necessary to detect specific events of interest within your environment. The templates include policies of all types, and can apply to various services.  
   
@@ -96,12 +96,13 @@ ms.suite: ems
   
 1.  In the console, click on **Control** followed by **Templates**.  
   
-     ![](../Image/create%20policy%20from%20template.png)  
+     ![](./media/create-policy-from-template.png)  
   
 2.  Click the **+** at the far right of the row of the template you want to use. A create policy page opens, containing the pre-defined configuration of the template.  
   
 3.  Modify the template as needed for your custom policy. Every property and field of this new template-based policy can be modified according to your needs.  
-> [!NOTE] When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe. If you search for **malware.exe** then you will find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”. 
+> [!NOTE] 
+>When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe. If you search for **malware.exe** then you will find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”. 
      **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt.  
 4.  After you create the new template-based policy, a link to the new policy appears in the **Linked policies** column in the policy template table next to the template from which the policy was created.  
      You can create as many policies as you want from each template and they will all be linked to the original template, allowing you to track all policies built using the same template.  
@@ -116,31 +117,32 @@ ms.suite: ems
   
 2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **User** and select the Admin whose account is registering unusual activity. Then, under **Activity**, select **Copy folder** and **Copy file**.  
   
-     ![](../Image/create%20file%20from%20investigation.png)  
+     ![](./media/create-file-from-investigation.png)  
   
-3.  In the upper right corner of the console, click **New policy from search**![](../Image/new%20policy%20from%20search%20button.png)  
+3.  In the upper right corner of the console, click **New policy from search**![](./media/new-policy-from-search-button.png)  
   
 4.  A create policy page opens, containing the filters you used in your investigation.  
   
 5.  Modify the template as needed for your custom policy. Every property and field of this new investigation-based policy can be modified according to your needs.  
    
-> [!NOTE] When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe.  
+> [!NOTE] 
+> When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe.  
      **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt.  
   
  
  
- ![create activity policy from investigation](/Image/create%20activity%20policy%20from%20investigation.png)
+ ![create activity policy from investigation](./media/create-activity-policy-from-investigation.png)
  
  
   
 > [!NOTE]  
 >  For more information on setting the policy fields, refer to the corresponding policy documentation:  
 >   
->  [User activity policies](../Topic/User%20activity%20policies.md)  
+>  [User activity policies](user-activity-policies.md)  
 >   
->  [Data protection policies](../Topic/Data%20protection%20policies.md)  
+>  [Data protection policies](data-protection-policies.md)  
 >   
->  [Cloud Discovery policies](../Topic/Cloud%20Discovery%20policies.md)  
+>  [Cloud Discovery policies](cloud-discovery-policies.md)  
   
 ### Policy conflicts
 After creating multiple policies, a situation may arise in which the policies overlap. In this case, Cloud App Security will process the policies as follows:
@@ -150,15 +152,7 @@ After creating multiple policies, a situation may arise in which the policies ov
 
 
 ## See Also  
- [Daily activities to protect your cloud environment](../Topic/Daily%20activities%20to%20protect%20your%20cloud%20environment.md)   
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
  [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
  [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
-  
-## See Also  
- [Investigate](investigate.md)   
- [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
- [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-  
   

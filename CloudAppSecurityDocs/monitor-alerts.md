@@ -59,3 +59,9 @@ The following alerts types will be displayed.
 |New service discovered|ALERT_CABINET_DISCOVERY_NEW_SERVICE|A new app was discovered.|
 |Use of personal account|ALERT_PERSONAL_USER_SAGE|Based on file shares and user names, the detection engine searches for personal accounts. |
 
+## See Also  
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+ [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+ [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+  
+  

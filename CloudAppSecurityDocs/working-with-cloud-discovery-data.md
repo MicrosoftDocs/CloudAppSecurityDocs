@@ -128,3 +128,10 @@ The first thing you should do to get a general picture of your Cloud Discovery a
   
     > [!NOTE]  
     >  The deletion process takes a few minutes and is not immediate.  
+
+## See Also  
+ [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+ [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+ [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+  
+  

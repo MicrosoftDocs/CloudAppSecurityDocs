@@ -52,7 +52,8 @@ There are two types of reports you can generate:
 -   **Generate report** - A risk assessment report of the data extracted from log files is generated.   
  
  
- > [!NOTE] Continuous report data is analyzed twice a day.
+ >[!NOTE]
+ >Continuous report data is analyzed twice a day.
  
  ## Using traffic logs for  Cloud Discovery
 Cloud Discovery utilizes the data in your traffic logs. The more detailed your log, the better visibility you get. Cloud Discovery requires web-traffic data with the following attributes:

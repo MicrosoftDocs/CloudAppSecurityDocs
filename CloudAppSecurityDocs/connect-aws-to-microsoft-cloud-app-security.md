@@ -54,7 +54,7 @@ ms.suite: ems
   
 7.  The **Review Policy** screen opens.
  
- ![review policy](./media/aws-review-policy.png "aws review policy")  
+     ![review policy](./media/aws-review-policy.png "aws review policy")  
   
 
 8. Under **Policy Name** type "AdallomTrustPolicy". 

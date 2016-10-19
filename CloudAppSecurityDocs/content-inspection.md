@@ -57,3 +57,9 @@ After a file is scanned, the following occurs:
 |Failed: File access denied|The file is external to your cloud and could not be accessed by Cloud App Security.|
 |Failed: File was deleted|The file no longer exists in your cloud and could not be inspected.|
 |Failed: Unsupported file type|Cloud App Security cannot perform content inspection on this file type. This may be because the file type is not supported or because the file is not actually the in the format of the expected file type.|
+
+## See Also  
+ [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+ [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+ [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+  

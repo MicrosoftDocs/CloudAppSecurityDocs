@@ -40,9 +40,9 @@ ms.suite: ems
  
 Then, set up **policies** to control cloud apps:
 -  [Cloud Discovery policies](cloud-discovery-policies.md)
-  - [Cloud Discovery anomaly detection policies](cloud-discovery-anomaly-detection- policies.md)
+  - [Cloud Discovery anomaly detection policies](cloud-discovery-anomaly-detection-policies.md)
 - [User activity policies](user-activity-policies.md)
-  - [Anomaly detection policies](anomaly-detection-policies.md)
+  - [Anomaly detection policies](anomaly-detection-policy.md)
  - [Data protection policies](data-protection-policies.md) 
   - [Content inspection](content-inspection.md)
   - [Working with the RegEx engine](working-with-the-regex-engine.md)

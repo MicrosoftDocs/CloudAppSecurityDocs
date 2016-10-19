@@ -198,3 +198,9 @@ Released: May 15, 2016
 * A new filter was added that enables you to search for any Office 365 object (files, folders, URLs).
 * The ability was added to configure a minimal risk score for Anomaly detection policies.
 * When you set an alert to be sent when a policy is violated, you can now set a minimum severity level for which you want to be alerted. You can choose to use your organization's default setting for this and you can set a specific alert setting as the default for your organization.
+
+## See Also  
+ [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+ [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+  
+  

@@ -65,6 +65,10 @@ To create a snapshot report:
  
  ![snapshot report managment](./media/snapshot-report-managment.png)
       
-  
+## See Also  
+ [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+ [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+ [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+    
       
   

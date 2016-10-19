@@ -38,7 +38,7 @@ ms.suite: ems
 -   Sensitivity – Enable you to set how many alerts the policy should trigger.  
   
 ### Activity filters  
- For a list of Activity filters, see [Activity filters](../Topic/Activity%20policy%20reference.md#activityfilters).  
+ For a list of Activity filters, see [Activity filters](activity-filters.md).  
   
 ### Apply to  
  The usage being monitored can be filtered in two different ways:  

@@ -52,7 +52,8 @@ ms.suite: ems
   
      ![O365 connected](./media/o365-connected.png) 
 
- >[!NOTE] After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you will see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
+ > [!NOTE] 
+ > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you will see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
 
 ## See Also  
  [Control cloud apps with policies](control-cloud-apps-with-policies.md)   

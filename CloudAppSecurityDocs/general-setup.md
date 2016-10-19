@@ -34,7 +34,8 @@ ms.suite: ems
   
      For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
-> [!NOTE] An Office 365 license is not required for Cloud App Security.  
+> [!NOTE] 
+> An Office 365 license is not required for Cloud App Security.  
   
 -   After you have procured a license for Cloud App Security, you will receive an email with activation information and a link to the Cloud App Security portal.  
   
@@ -64,7 +65,8 @@ ms.suite: ems
      Provide an **Environment  name** (tenant). This is especially important if you manage multiple tenants.  
   
      Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
-  >[!NOTE] Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
+  > [!NOTE] 
+  > Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
    
 It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
   
@@ -103,7 +105,8 @@ It is also possible to provide a **Logo** that will be displayed in email notifi
   
 2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity for which alerts and violations you want to receive emails - the severity is set per policy, so when violations are triggered, you will receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails will be sent to the alias associated with the administrator user account you used to log into Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
   
-> [!NOTE] The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
+> [!NOTE] 
+> The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
   
      ![notification settings](./media/notification-settings.png "notification settings")  
   
