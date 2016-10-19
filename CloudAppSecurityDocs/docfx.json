@@ -27,7 +27,10 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/enterprise-mobility-security/toc.json"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "cloud-app-security"
