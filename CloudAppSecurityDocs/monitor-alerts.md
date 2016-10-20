@@ -5,6 +5,7 @@ title: Monitor alerts | Microsoft Docs
 description: This topic provides a list and description of all alerts.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

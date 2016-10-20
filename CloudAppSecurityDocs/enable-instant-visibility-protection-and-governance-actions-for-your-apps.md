@@ -5,6 +5,7 @@ title: Enable instant visibility, protection and governance actions for your app
 description: This topic describes the process for enabling API connectors to apps in your organization's cloud.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: get-started-article

@@ -5,6 +5,7 @@ title: Files | Microsoft Docs
 description: This reference topic provides information about the types of files and file filters used by Cloud App Security.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

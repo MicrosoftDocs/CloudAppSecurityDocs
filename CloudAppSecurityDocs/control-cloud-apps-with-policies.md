@@ -5,6 +5,7 @@ title: Control cloud apps with policies | Microsoft Docs
 description: This topic provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

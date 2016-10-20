@@ -5,6 +5,7 @@ title: Content Inspection | Microsoft Docs
 description: his article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

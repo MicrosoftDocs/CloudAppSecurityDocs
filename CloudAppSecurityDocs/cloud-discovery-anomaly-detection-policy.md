@@ -5,6 +5,7 @@ title: Cloud Discovery anomaly detection policy | Microsoft Docs
 description: This topic proivdes information about how to work with Cloud Discovery anomaly detection policies.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

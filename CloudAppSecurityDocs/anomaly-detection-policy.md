@@ -5,6 +5,7 @@ title: Anomaly detection policy | Microsoft Docs
 description: This topic provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

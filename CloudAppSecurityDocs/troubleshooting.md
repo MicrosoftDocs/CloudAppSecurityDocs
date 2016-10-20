@@ -5,6 +5,7 @@ title: Troubleshooting | Microsoft Docs
 description: This topic lists the available troubleshooting topics for Cloud App Security.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

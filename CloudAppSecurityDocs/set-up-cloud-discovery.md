@@ -5,6 +5,7 @@ title: Set up Cloud Discovery | Microsoft Docs
 description: This topic describes the setup procedure for getting Cloud Discovery working.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: get-started-article

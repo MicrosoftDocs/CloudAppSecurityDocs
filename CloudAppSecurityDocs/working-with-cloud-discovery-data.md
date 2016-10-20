@@ -5,6 +5,7 @@ title: Working with Cloud Discovery data | Microsoft Docs
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

@@ -5,6 +5,7 @@ title: Working with the RegEx engine | Microsoft Docs
 description: This topic provides instructions for using RegEx for pattern matching in Cloud App Security policies.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article
