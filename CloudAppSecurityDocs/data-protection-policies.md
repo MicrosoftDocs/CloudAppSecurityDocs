@@ -5,6 +5,7 @@ title: Data protection policies | Microsoft Docs
 description: This topic describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

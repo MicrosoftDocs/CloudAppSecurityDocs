@@ -5,6 +5,7 @@ title: Getting started with Cloud App Security | Microsoft Docs
 description: This topic outlines the process for getting Cloud App Security up and running.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: get-started-article

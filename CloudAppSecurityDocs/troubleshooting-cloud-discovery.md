@@ -5,6 +5,7 @@ title: Troubleshooting Cloud Discovery | Microsoft Docs
 description: This topic provides a list of Cloud Discovery frequent errors and resolution recommendations for each.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

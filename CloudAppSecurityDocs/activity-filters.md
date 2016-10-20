@@ -5,6 +5,7 @@ title: Activities | Microsoft Docs
 description: This topic provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

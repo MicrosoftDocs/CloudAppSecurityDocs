@@ -5,6 +5,7 @@ title: Create snapshot Cloud Discovery reports | Microsoft Docs
 description: This article provides information about how to upload logs manually to create a snapshot report of your Cloud Discovery apps.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

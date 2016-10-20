@@ -5,6 +5,7 @@ title: Release notes | Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article

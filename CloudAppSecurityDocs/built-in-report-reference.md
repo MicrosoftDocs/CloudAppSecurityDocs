@@ -5,6 +5,7 @@ title: Built-in report reference | Microsoft Docs
 description: This topic provides a list of built-in reports and their uses.
 keywords:
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/15/2016
 ms.topic: article
