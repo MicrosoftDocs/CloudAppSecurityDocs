@@ -21,7 +21,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
     <section id="hero-content">
       <h1>Cloud App Security Documentation</h1>
       <h2>Learn how to set up and work with Cloud App Security so that your organization can enjoy the benefits of cloud applications while maintaining control through improved visibility of activity and increased protection over critical company data. </h2>
-      <h3>New to Cloud App Security? <a href="https://www.cloudappsecurity.com" target="_blank">Visit our product site &rarr;</a></h3>
+      <h3>New to Cloud App Security? <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">Visit our product site &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>Ready to get hands-on?</p>
