@@ -28,6 +28,23 @@ ms.suite: ems
 
 # Release notes
 
+## Cloud App Security release 83
+Released October 25, 2016
+
+**New features**
+-	To simplify filtering in the activity log and file log, similar filters have been consolidated. Use the activity filters: Activity object, IP address and User. Use the file filter Collaborators to find exactly what you need.
+-	From the activity log drawer, under **Stores**, you can click the link for **View raw data** to download the raw data used to generate the activity log, for greater drill down into app events. 
+
+**Improvements**
+-	Added support for additional login activities in Okta.
+-	Added support for additional login activities in Salesforce. 
+-	Improved usability for Cloud Discovery snapshot reports and troubleshooting.
+-	Improved visibility in the alerts list for alerts on multiple apps.
+-	Improved usability when creating new Cloud Discovery continuous reports.
+-	Improved usability in the Governance log.
+
+
+
 ## Cloud App Security release 82
 Released October 9, 2016
 

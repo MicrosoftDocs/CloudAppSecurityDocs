@@ -1,5 +1,4 @@
 # [Understand & Explore](what-is-cloud-app-security.md)
-## [What is Cloud App Discover](what-is-cloud-app-security.md)
 ## [Release notes](release-notes.md)
 # [Get Started](getting-started-with-cloud-app-security.md)
 ## [General setup](general-setup.md)
