@@ -91,59 +91,21 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>General setup</h3>
-                    <p>Perform the basic configuration steps for Cloud App Security.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Set up cloud discovery</h3>
                     <p>Use the Cloud Discovery feature to gain visibility into cloud app use and Shadow IT in your organization.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>Set up automatic log upload</h3>
-                    <p>Set up automatic log upload for continuous Cloud Discovery reports.</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>Deploy</p>
-                </div>
-                <p class="description column-two-thirds">Enable API connection enhanced visibility and roll out policies to govern your apps.</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>Enable API connectors</h3>
-                    <p>Enable API connectors to get enhanced visibility into apps including Office 365, Google Apps, Box, Dropbox and more.</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Connect Office 365 to Cloud App Security</h3>
-                    <p>Connect Cloud App Security to your existing Microsoft Office 365 account using the app connector API.</p>
+                  <a href="./enable-instant-visibility-and-governance-actions-for-your-apps.md">
+                    <h3>Connect apps</h3>
+                    <p>Connect cloud apps to Cloud App Security for greater visibility and control.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>Control cloud apps with policies</h3>
-                    <p>Set up policies to control and govern your organization's cloud use.</p>
+                    <p>Set up policies to monitor and govern cloud app use in your organization.</p>
                   </a>
                 </li>
               </ul>
