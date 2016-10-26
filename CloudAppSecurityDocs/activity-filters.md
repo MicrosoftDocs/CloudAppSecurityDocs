@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,14 +25,24 @@ ms.suite: ems
 #ms.custom:
 
 ---
+The activity log can be filtered to enable you to find specific activities. 
+The basic filter provides you with great tools to get started filtering your activities.
+
+ ![basic activity log filter](media/activity-log-filter-basic.png)
+
+To drill down into more specific activities, you can expand the basic filter by clicking Advanced.
+
+ ![advanced activity log filter](media/activity-log-filter-advanced.png)
 
 # Activities
 Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
 -   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect MCAS to your SIEM (using the SIEM agent), and you want to further investigate alerts within the MCAS portal.  
   
--   Activity objects – Search for file tags, files, folders or site URLs, or target objects (file/folder)
-
+-   Activity objects – Search for files, folders or site URLs, or target objects (file/folder).
+    - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.
+    - Target object (file/folder) - Enables you to select a specific file or folder. 
+    
 -   Activity type - Search for the app activity.
 
 -   Administrative activity – Search only for administrative activities.  
@@ -52,6 +62,9 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 -   Device type - Search only for activities that were performed using a specific device type, for example, all activities from mobile devices, PCs or Tablets.  
   
 -   IP address – The raw IP address, category or tag from which the activity was performed.  
+    - Raw IP address - Enables you to search for activities that were performed on or by raw IP addresses that equal, don't equal or start with or don't start with a particular sequence, or raw IP addresses that are or are not set. 
+    - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
+    - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).
   
 -   Impersonated activity – Search only for activities that were performed in the name of another user.  
 
@@ -64,23 +77,19 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 -  Source - Search by the source from which the activity was detected, for example, App connector. 
 
 -   User – The user who performed the activity, which can be filtered into domain, group, name or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
-  
+    -   User domain - Search for a specific user domain.
+    -   User group – Specific user groups that are automatically imported by Cloud App Security from the cloud app, for example, all activities performed by Office 365 administrators.
+    -   User name - Search for a specific username.
+    -   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
+
 -   User agent – The user agent of from with the activity was performed.  
   
 -   User agent tag – Built-in user agent tag, for example, all activities from an outdated browser or outdated operating systems.  
-  
+    
   
 
 
--   IP category – The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
--   IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
-  
--   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
-  
-- Target object - Enables you to select a specific file. 
-
--   User Group – Specific user groups that are automatically imported by MCAS from the cloud app, for example, all activities performed by Office 365 administrators.  
   
 
 

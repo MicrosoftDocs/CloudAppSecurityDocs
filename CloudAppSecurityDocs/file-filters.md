@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,15 @@ ms.suite: ems
 
 # Files
 
+The Files log can be filtered to enable you to find specific files. 
+The basic filter provides you with great tools to get started filtering your files.
+
+ ![basic file log filter](media/file-log-filter-basic.png)
+
+To drill down into more specific files, you can expand the basic filter by clicking Advanced.
+
+ ![advanced file log filter](media/file-log-filter-advanced.png)
+ 
 ###  <a name="Filefilters"></a> File filters 
  
 Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 
@@ -62,14 +71,14 @@ Internal are any files within the Internal domains you set in [General setup](Ge
   
 -   Created  – File creation time. Filter supports before/after dates as well as date range.  
   
--   Last modified – File modification time. Filter supports before/after dates, date range and relative time expressions, for example, All files that were not modified in the last 6 months.  
-  
 -   Extension – Focus on specific file extensions, for example, all files that are executables (exe).  
   
 -   File ID – Search for specific file IDs, this is an advanced feature that allows you to track certain high-value files without depending on their owner/location/name.  
   
 -   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.  
   
+-   File tag - Search for files with specific tags set by Azure Information Protection. This requires integration with Azure Information Protection.
+
 -   File type – Cloud App Security takes both the MIME type received from the service and scans the file to determine the true file type. Note that this scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text and zip/archive files). The filter works per file/folder type, for example, All folders that are ... or All spreadsheet files that are...
 
 
@@ -77,6 +86,10 @@ Internal are any files within the Internal domains you set in [General setup](Ge
   
 -   In trash – Exclude/include files in the trash folder. These files may still be shared and pose a risk.  
   
+-   Last modified – File modification time. Filter supports before/after dates, date range and relative time expressions, for example, All files that were not modified in the last 6 months.  
+
+-   Matched policy - Files that are matched by an active Cloud App Security policy.
+
 -   MIME type – File MIME type check, accepts free text.  
   
 -   Owner -Include/exclude specific file owners, for example, Track all files shared by rogue_employee_#100.  

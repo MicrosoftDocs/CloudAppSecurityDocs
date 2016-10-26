@@ -2,17 +2,17 @@
 # required metadata
 
 title: Connect Okta to Microsoft Cloud App Security | Microsoft Docs
-description: description: This topic provides information about how to connect your Okta app to Cloud App Security using the API connector.
+description: This topic provides information about how to connect your Okta to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/26/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 34437ad1-5298-43c7-b32b-1fd6d3d8b5bb
+ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 
 # optional metadata
 

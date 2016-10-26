@@ -43,8 +43,7 @@ Before setting up automatic log file collection, verify that your log matches th
   
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed and transmitted to the portal. FTP logs are uploaded to Cloud App Security after the file finished the FTP transfer to the Log Collector and for Syslogs, the Log Collector writes the logs received to disk every 20 minutes and then uploads the file to Cloud App Security.  The log collector virtual machine is available for Hyper-V (VHD format) and VMware hypervisor (OVF format) and requires 250GB disk space, 2 CPUs and 4GB RAM. 
      
-  
-     The log collector VHD image can be downloaded and run on Azure servers.  
+The log collector VHD image can be downloaded and run on Azure servers.  
   
 2.  Go to the automated upload setting page:  
     In the Cloud App Security portal, click the settings icon ![settings icon](./media/settings-icon.png "settings icon"), followed by  **Cloud Discovery Settings** and then select the **Upload logs automatically** tab.  

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,7 @@ ms.suite: ems
 # Release notes
 
 ## Cloud App Security release 83
-Released October 25, 2016
+Released October 30, 2016
 
 **New features**
 -	To simplify filtering in the activity log and file log, similar filters have been consolidated. Use the activity filters: Activity object, IP address and User. Use the file filter Collaborators to find exactly what you need.

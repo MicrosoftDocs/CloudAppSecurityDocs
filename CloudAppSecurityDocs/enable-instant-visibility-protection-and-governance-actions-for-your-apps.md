@@ -31,11 +31,6 @@ App connectors leverage the APIs of app providers to enable greater visibility a
   
 Cloud App Security leverages the APIs provided by the cloud provider, each service has its own framework and API limitations. Cloud App Security worked with the services to optimize the usage of the APIs and to ensure the best performance. Taking into account the different limitations the services impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the Cloud App Security engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
   
-**ExpressRoute**  
-  
-Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
-For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
-  
 ## How it works  
 Cloud App Security is deployed with system admin privileges to allow full access to all objects in your environment.  
   
@@ -126,6 +121,12 @@ To use App Connectors, you need to make sure you have the following for each spe
 |Exchange||Global Admin|  
 |ServiceNow|Eureka and up|Admin +RestAPI role|  
 |Salesforce||Admin|  
+  
+
+**ExpressRoute**  
+  
+Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
   
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
