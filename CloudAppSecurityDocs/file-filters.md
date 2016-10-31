@@ -52,10 +52,10 @@ Internal are any files within the Internal domains you set in [General setup](Ge
 
 > [!NOTE]
 >  Files shared into your connected storage apps by external users are handled as follows by Cloud App Security:
-    - **OneDrive:** OneDrive assigns an internal user as the owner of any file placed into your OneDrive by an external user. Because these files are then considered owned by your organization, Cloud App Security scans these files and applies policies as it does to any other file in your OneDrive.
-     - **Google Drive:** Google Drive considers these as being owned by the external user, and because of legal restrictions on files and data that your organization does not own, Cloud App Security does not have access to these files.
-    - **Box:** Because Box considers externally owned files to be private information, Box Global Admins cannot see the content of the files. For this reason, Cloud App Security does not have access to these files. 
-    - **Dropbox:** Because Dropbox considers externally owned files to be private information, Box Global Admins cannot see the content of the files. For this reason, Cloud App Security does not have access to these files.
+> - **OneDrive:** OneDrive assigns an internal user as the owner of any file placed into your OneDrive by an external user. Because these files are then considered owned by your organization, Cloud App Security scans these files and applies policies as it does to any other file in your OneDrive.
+> - **Google Drive:** Google Drive considers these as being owned by the external user, and because of legal restrictions on files and data that your organization does not own, Cloud App Security does not have access to these files.
+> - **Box:** Because Box considers externally owned files to be private information, Box Global Admins cannot see the content of the files. For this reason, Cloud App Security does not have access to these files. 
+> - **Dropbox:** Because Dropbox considers externally owned files to be private information, Box Global Admins cannot see the content of the files. For this reason, Cloud App Security does not have access to these files.
 
 -   App – Search only for files within these apps.  
   
@@ -82,7 +82,8 @@ Internal are any files within the Internal domains you set in [General setup](Ge
 -   File type – Cloud App Security takes both the MIME type received from the service and scans the file to determine the true file type. Note that this scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text and zip/archive files). The filter works per file/folder type, for example, All folders that are ... or All spreadsheet files that are...
 
 
-     ![policy_file filters trash](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![policy_file filters trash](./media/policy_file-filters-trash.png "policy_file filters trash")  
+
   
 -   In trash – Exclude/include files in the trash folder. These files may still be shared and pose a risk.  
   

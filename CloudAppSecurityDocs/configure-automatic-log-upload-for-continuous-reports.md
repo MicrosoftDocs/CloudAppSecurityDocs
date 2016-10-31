@@ -86,8 +86,8 @@ The log collector VHD image can be downloaded and run on Azure servers.
 1.  Open the Hyper-V Manager.  
   
 2.  Select **New** and then **Virtual Machine** and click **Next**.  
-  
-             ![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ 
+![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
 3.  Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.  
   
@@ -102,8 +102,7 @@ The log collector VHD image can be downloaded and run on Azure servers.
 8.  Choose **Use an existing virtual hard disk** and select the .**vhd** file that was included in the Zip file you downloaded.  
   
 9.  Click **Next** and then click **Finish**.  
-  
-             The machine will be added to your Hyper-V environment.  
+    The machine will be added to your Hyper-V environment.  
   
 9. Click on the machine in the **Virtual Machines** table and click **Start**.   
   
@@ -127,7 +126,6 @@ The first time you log into the log collector and import the log collector's con
 ```
 sudo collector_config <access token>
 ```
-
 3. Enter your console domain, for example:
 
 ```
@@ -135,17 +133,14 @@ contoso.portal.cloudappsecurity.com
 ```
 
 This is available from the URL you see after logging into the Cloud App Security portal. 
- 
 
 4. Enter the name of the log collector you want to configure, for example:
-
 **CloudAppSecurityLogCollector01** or **NewYork** from the picture above.
- 
-8.  Import the log collector's configuration from the portal, as follows:  
+5.  Import the log collector's configuration from the portal, as follows:  
   
-      1.  Log into the log collector over SSH using the Interactive admin credentials provided to you in the portal.  
+      a.  Log into the log collector over SSH using the Interactive admin credentials provided to you in the portal.  
   
-       2.  Run the collector config utility with the access token provided to you in the command **sudo collector_config \<access token>**  
+      b.  Run the collector config utility with the access token provided to you in the command **sudo collector_config \<access token>**  
   
              Enter your console domain, for example:  
   
@@ -155,13 +150,13 @@ This is available from the URL you see after logging into the Cloud App Security
   
              **CloudAppSecurityLogCollector01**  
   
-5.  Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:  
+6.  Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:  
   
      `London Zscaler - Destination path: 614`  
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-6.  Use the Governance log to verify that logs are being periodically uploaded to the portal.  
+7.  Use the Governance log to verify that logs are being periodically uploaded to the portal.  
   
 ## Log collector performance
 The Log collector can successfully handle log capacity of up to 50 GB per hour.
@@ -171,3 +166,11 @@ The main bottlenecks in the log collection process are:
 * I/O performance of the virtual machine allocated by your IT - determines the speed at which logs are written to the log collector’s disk.
 
 The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup generally exceeds 50 GB per hour, it is recommended to split the traffic between multiple log collectors.
+
+## See Also  
+[Working with Cloud Discovery data](working-with-cloud-discovery-data.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+    
+      
+  

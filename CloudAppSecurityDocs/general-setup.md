@@ -44,7 +44,7 @@ The following procedure gives you instructions for setting up [!INCLUDE[Adallom1
   
 -   To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
   
--   **ExpressRoute**  
+-   ExpressRoute  
   
      Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
     For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
@@ -109,9 +109,10 @@ To set up your preferences as an admin of Cloud App Security, click your name in
 > [!NOTE] 
 > The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
   
-     ![notification settings](./media/notification-settings.png "notification settings")  
+  ![notification settings](./media/notification-settings.png "notification settings")  
   
-     When you are done, click **Save**.  
+  
+3. When you are done, click **Save**.  
   
 ##  <a name="IPtagsandRanges"></a> Organize the data according to your needs  
 To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges which allow you to tag and categorize appropriately and customize the way logs and alerts are displayed and investigated.   

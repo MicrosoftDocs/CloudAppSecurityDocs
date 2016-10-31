@@ -25,6 +25,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Activities
 The activity log can be filtered to enable you to find specific activities. 
 The basic filter provides you with great tools to get started filtering your activities.
 
@@ -34,7 +35,7 @@ To drill down into more specific activities, you can expand the basic filter by 
 
  ![advanced activity log filter](media/activity-log-filter-advanced.png)
 
-# Activities
+## Activity filters
 Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
 -   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect MCAS to your SIEM (using the SIEM agent), and you want to further investigate alerts within the MCAS portal.  
