@@ -88,9 +88,17 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 -   User agent tag – Built-in user agent tag, for example, all activities from an outdated browser or outdated operating systems.  
     
   
+## Working with the Activity drawer
 
+You can view more information about each activity, by clicking on the Activity iteself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the file:
 
-  
+- Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
+- User: Click on the user to view the user page for the user who performed the activity. 
+- Device type: Click on device type to view the raw user agent data. 
+- Location: Click on the location to view the location in Bing maps.
+- IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
+
+![activity drawer](./media/activity-drawer.png "activity drawer")  
   
 
 
