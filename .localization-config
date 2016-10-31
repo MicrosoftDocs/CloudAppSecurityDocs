@@ -1,0 +1,38 @@
+{
+  "Filters": [
+    {
+      "Files": [
+        "**/*.md"
+      ],
+      "Priorities": [
+        {
+          "Priority": "ht",
+          "Locales": [
+            "de-de",
+            "ja-jp",
+            "cs-cz",
+            "es-es",
+            "fr-fr",
+            "hu-hu",
+            "it-it",
+            "ko-kr",
+            "nl-nl",
+            "pl-pl",
+            "pt-br",
+            "pt-pt",
+            "ru-ru",
+            "sv-se",
+            "tr-tr",
+            "zh-cn",
+            "zh-tw"
+          ],
+          "Type": "ht"
+        }
+      ]
+    } 
+  ],
+  "IncludeDependencies": true,
+  "AutoPush": true,
+  "XliffVersion": "1.2",
+  "UseJavascriptMarkdownTransformer": true
+}
