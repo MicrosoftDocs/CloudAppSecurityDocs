@@ -97,7 +97,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./enable-instant-visibility-and-governance-actions-for-your-apps.md">
+                  <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
                     <h3>Connect apps</h3>
                     <p>Connect cloud apps to Cloud App Security for greater visibility and control.</p>
                   </a>
