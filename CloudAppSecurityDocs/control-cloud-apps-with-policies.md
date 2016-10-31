@@ -32,15 +32,18 @@ Policies allow you to define the way you want your users to behave in the cloud.
 For example, if there is a data violation threat that you want to quarantine, you will need a different type of policy in place than if you want to block a risky cloud app from being used by your organization.  
   
 ## Policy types  
+When you look at the **Policy** page, the various policies and templates can be distinguished by type and icon to see which policies will be available. The available policies depend on the data source and what you have enabled in Cloud App Security for your organization, for example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discoery will be displayed.
+
 The following types of policies can be created:  
   
-|Policy type|Use|  
-|-----------------|---------|  
-|Activity policy|Activity policies allow you to enforce a wide range of automated processes leveraging the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|  
-|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud based on the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity.|  
-|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|  
-|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|  
-|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
+|Policy type icon|Policy type|Use|  
+|-----|-----------------|---------|  
+|![activity policy icon](./media/activity_policy.png)|Activity policy|Activity policies allow you to enforce a wide range of automated processes leveraging the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|  
+|![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud based on the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity.|  
+|![cloud discovery policy icon](./media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|  
+|![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|  
+|![field policy icon](./media/field_policy.png)|Field policy|Field policies enable you to scan your cloud apps for fields in your cloud environment that may contain sensitive data like posts, chat messages, descriptions, and long text fields.|  
+|![file policy icon](./media/file_policy.png)|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
   
 ## Identifying risk  
 Cloud App Security helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
