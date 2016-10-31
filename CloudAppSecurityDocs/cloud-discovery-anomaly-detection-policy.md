@@ -39,7 +39,7 @@ Each policy is composed of the following parts:
 -   Sensitivity – Enable you to set how many alerts the policy should trigger.  
   
 ### Activity filters  
-For a list of Activity filters, see [Activity filters](activity-filters.md).  
+For a list of Activity filters, see [Activities](activity-filters.md).  
   
 ### Apply to  
 The usage being monitored can be filtered in two different ways:  

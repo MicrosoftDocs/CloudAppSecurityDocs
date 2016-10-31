@@ -87,8 +87,7 @@ To create a new file policy, follow this procedure:
   
 8.  Choose the **Governance** actions you want Cloud App Security to take when a match is detected.  
   
-9. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters or change the automated actions.  
-    The policy is automatically enabled upon creation and will start scanning your cloud files immediately.  
+9. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters or change the automated actions. The policy is automatically enabled upon creation and will start scanning your cloud files immediately.  
   
 > [!NOTE]  
 >  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files.  
