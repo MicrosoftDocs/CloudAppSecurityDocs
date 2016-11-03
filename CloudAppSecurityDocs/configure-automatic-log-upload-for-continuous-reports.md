@@ -57,27 +57,27 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
 3.  For each firewall or proxy from which you want to upload logs, create a matching data source:  
   
-    1.  Click **Add data source**.  
+    a.  Click **Add data source**.  
   
-    2.  **Name** your proxy or firewall.  
+    b.  **Name** your proxy or firewall.  
   
-    3.  Select the appliance from the **Source** list.  
+    c.  Select the appliance from the **Source** list.  
   
-    4.  Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.  
+    d.  Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.  
   
-    5.  Set the **Receiver type** to either **FTP** or **Syslog**.  
+    e.  Set the **Receiver type** to either **FTP** or **Syslog**.  
   
          For **Syslog**, choose **UDP** or **TCP**.  
   
-    6.  Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
+    f.  Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
   
 4.  Go to the **Log collectors** tab at the top.  
   
-    1.  Click **Add log collector**.  
+    a.  Click **Add log collector**.  
   
-    2.  Give the log collector a **name**.  
+    b.  Give the log collector a **name**.  
   
-    3.  Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration and generate an access token.  
+    c.  Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration and generate an access token.  
 ![discovery data sources](./media/discovery-data-sources.png)
   
   > [!NOTE] 
@@ -87,14 +87,13 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
 ###	Step 2 – On-premises deployment of the virtual machine and network configuration   
 
-> ![NOTE] 
+> [!NOTE] 
 > The following steps describes the deployment in Hyper-V. The deployment steps for VM hypervisor are slightly different.  
 
 1.  Open the Hyper-V Manager.  
   
 2.  Select **New** and then **Virtual Machine** and click **Next**.  
- 
-![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
 3.  Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.  
   
@@ -128,18 +127,9 @@ At this point, your log collector should be connected to your network and should
 The first time you log into the log collector and import the log collector's configuration from the portal, as follows. 
 
 1.  Log into the log collector over SSH using the Interactive admin credentials provided to you in the portal. (If this is your first time logging into the console, you will need to change the password and log in again after changing the password. If you are using a terminal session you might need to restart the terminal session. )
-2.  Run the collector config utility with the access token provided to you when you created the log collector. 
-
-    ```
-    sudo collector_config <access token>
-    ```
-3. Enter your console domain, for example:
-
-    ```
-    contoso.portal.cloudappsecurity.com
-    ```
-
-This is available from the URL you see after logging into the Cloud App Security portal. 
+2.  Run the collector config utility with the access token provided to you when you created the log collector.```sudo collector_config <access token> ```
+3. Enter your console domain, for example: ```contoso.portal.cloudappsecurity.com```
+  This is available from the URL you see after logging into the Cloud App Security portal. 
 
 4. Enter the name of the log collector you want to configure, for example:
 **CloudAppSecurityLogCollector01** or **NewYork** from the picture above.
@@ -148,15 +138,11 @@ This is available from the URL you see after logging into the Cloud App Security
   
       a.  Log into the log collector over SSH using the Interactive admin credentials provided to you in the portal.  
   
-      b.  Run the collector config utility with the access token provided to you in the command **sudo collector_config \<access token>**  
+      b.  Run the collector config utility with the access token provided to you in the command ```sudo collector_config \<access token>```  
+     
+      c.  Enter your console domain, for example: ``` contoso.portal.cloudappsecurity.com ```
   
-             Enter your console domain, for example:  
-  
-             **contoso.portal.cloudappsecurity.com ** 
-  
-             Enter the name of the log collector you want to configure, for example:  
-  
-             **CloudAppSecurityLogCollector01**  
+      d. Enter the name of the log collector you want to configure, for example:``` CloudAppSecurityLogCollector01  ```
 
 ### Step 4 - On-premises configuration of your network appliances
 
