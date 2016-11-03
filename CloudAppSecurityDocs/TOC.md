@@ -30,6 +30,7 @@
 ### [Files](file-filters.md)
 ### [Activities](activity-filters.md)
 ### [Alerts](monitor-alerts.md)
+### [Integrate with Azure Information Protection](azip-integration.md)
 ## [Control](control.md)
 ### [Manage app permissions](manage-app-permissions.md)
 ## [Governance actions](governance-actions.md)
