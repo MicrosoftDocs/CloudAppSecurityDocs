@@ -45,7 +45,8 @@ In addition, as part of the Cloud App Security private preview, you can trigger 
 -	File policy- a set of rules that rely on file filters that allow you to enforce a wide range of automated processes leveraging the cloud provider’s APIs.
 
 ## License and tenant creation
-To enable this feature you will need both a Cloud App Security license and an Azure Information Protection license. As soon as both licenses are in place, Cloud App Security will populate the list of file tags with the name of the classification labels from AIP:
+To enable this feature you will need both a Cloud App Security license and an Azure Information Protection license. As soon as both licenses are in place, Cloud App Security will populate the list of file tags with the name of the classification labels from Azure Information Protection:
+
 ![sample azip screen](./media/azip-screen.png)
 
 ![cas compared to azip](./media/cas-compared-azip.png)
