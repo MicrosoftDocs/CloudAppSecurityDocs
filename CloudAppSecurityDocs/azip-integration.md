@@ -28,8 +28,6 @@ ms.suite: ems
 
 # Azure Information Protection integration
 
-Leverage Azure Information Protection to cloud apps
-
 Cloud App Security can leverage Azure Information Protection classification labels and allow you to apply policies based on the applied labels.
 After this feature is enabled, you can use the classification label in order to:
 -	Quantify data exposure
