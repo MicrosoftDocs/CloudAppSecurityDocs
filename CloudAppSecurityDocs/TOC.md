@@ -33,7 +33,7 @@
 ### [Integrate with Azure Information Protection](azip-integration.md)
 ## [Control](control.md)
 ### [Manage app permissions](manage-app-permissions.md)
-## [Governance actions](governance-actions.md)
+## [Governance log](governance-actions.md)
 # [Troubleshoot](troubleshooting.md)
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)

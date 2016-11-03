@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -42,8 +42,8 @@ For information about how governance actions are treated when there are policy c
 |Activity policy, Accounts|Account|Revoke password|Revokes the password for a user's account - for example,  setting an activity policy that revokes a password after 10 failed login attempts.|Google Apps|
 |Activity policy, Accounts|Account|Revoke admin privileges|Revokes privileges for an admin account - for example, setting an activity policy that revokes admin privileges after 10 failed login attempts.|Google Apps|
 |App dashboard > App permissions|Permissions|Un-ban app|In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third party app with their Google or Salesforce. In Office 365: restores the permissions of the third party app’s to Office.|Google Apps, Salesforce, Office|
-|App dashboard > App permissions|Permissions|Revoke app|Revoke a third-party app's permissions to Google, Salesforce or Office. This is a one-time action that will occur on all existing permissions, but will not prevent future connections. |Google Apps, Salesforce, Office|
-|App dashboard > App permissions|Permissions|Revoke user from app|You can revoke specific users when clicking on the number under Users. The screen will display the specific users and you have can use the X to delete permissions for any user.|Google Apps, Salesforce, Office|
+|App dashboard > App permissions|Permissions|Disable app permissions|Revoke a third-party app's permissions to Google, Salesforce or Office. This is a one-time action that will occur on all existing permissions, but will not prevent future connections. |Google Apps, Salesforce, Office|
+|App dashboard > App permissions|Permissions|Enable app permissions|Grant a third-party app's permissions to Google, Salesforce or Office. This is a one-time action that will occur on all existing permissions, but will not prevent future connections. |Google Apps, Salesforce, Office|
 |App dashboard > App permissions|Permissions|Ban app|In Google and Salesforce: revoke a third-party app's permissions to Google or Salesforce and ban it from receiving permissions in the future. In Office 365: doesn’t allow the permission of third party apps to access Office, but doesn’t revoke them.|Google Apps, Salesforce, Office|File Policy|File|Restrict to collaborators only|Only named collaborators can access the file.|Box|
 |Discover > Discovered Apps/IP addresses/Users|Cloud Discovery|Export discovery data|Creates a CSV from the discovery data.|Discovery|
 |File policy|File|Trash|Puts the file in the user's trash.|One Drive, SharePoint|
