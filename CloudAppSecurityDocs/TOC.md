@@ -31,6 +31,7 @@
 ### [Activities](activity-filters.md)
 ### [Alerts](monitor-alerts.md)
 ## [Control](control.md)
+### [Manage app permissions](manage-app-permission.md)
 ## [Governance actions](governance-actions.md)
 # [Troubleshoot](troubleshooting.md)
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
