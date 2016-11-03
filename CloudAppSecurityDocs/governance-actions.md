@@ -34,11 +34,11 @@ For information about how governance actions are treated when there are policy c
 
 **Location**|**Target object type**|**Governance action**|**Description**|**Related connectors** 
 ---------|---------|---------|---------|---------
-|Accounts|Account|Remove user's collaborations|Remove all the collaborations of a specific user for any files - good for people leaving the company.|Box, Google Apps|
+|Accounts|File|Remove user's collaborations|Remove all the collaborations of a specific user for any files - good for people leaving the company.|Box, Google Apps|
 |Accounts|Account|Unsuspend user|Unsuspends the user|Google Apps, Box, Office|
 |Accounts|Account|Account settings|Takes you to the account settings page in the specific app (for example, inside Salesforce).|All apps -One Drive and SharePoint settings are configured from within Office.|
 |Accounts |File|Transfer all files ownership|On an account, you transfer one user's files to all be owned by a new person you select. The previous owner becomes an editor. After you transfer ownership, admin@gtest1.adallom.com will become an editor and will no longer be able to change sharing settings. The new owner will receive an email notification about the change of ownership.|Google Apps|
-|Accounts, Policies|Account|Suspend user|Sets user to have no access and no ability to log in - if they are logged in when you set this, they are immediately locked out.|Google Apps, Box, Office|
+|Accounts, Activity policy|Account|Suspend user|Sets user to have no access and no ability to log in - if they are logged in when you set this, they are immediately locked out.|Google Apps, Box, Office|
 |Activity policy, Accounts|Account|Revoke password|Revokes the password for a user's account - for example,  setting an activity policy that revokes a password after 10 failed login attempts.|Google Apps|
 |Activity policy, Accounts|Account|Revoke admin privileges|Revokes privileges for an admin account - for example, setting an activity policy that revokes admin privileges after 10 failed login attempts.|Google Apps|
 |App dashboard > App permissions|Permissions|Un-ban app|In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third party app with their Google or Salesforce. In Office 365: restores the permissions of the third party app’s to Office.|Google Apps, Salesforce, Office|
