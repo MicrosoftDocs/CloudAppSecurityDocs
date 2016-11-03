@@ -72,10 +72,9 @@ Depending on the app you are connecting to (see table, below) API connection ena
      Ability to remove tokens.  
   
 The following table lists, per cloud app, which abilities are supported with App connectors:  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**List accounts**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Group**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Privileges**|✔|✔|Not supported by provider|✔|✔|✔|✔||  
