@@ -160,6 +160,6 @@ Now that you have the policy in place, you're surprised to see that you get an a
      If it's allowed and you expect it to recur, you can change the policy so that this type of event won't be considered a violation in the future.  
 
 ## See also  
-For information about controlling your organization's cloud app, see [Control](control.md).   
+To learn how to control your organization's cloud app, see [Control](control.md).   
 For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.  
 Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).  
