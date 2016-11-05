@@ -91,7 +91,7 @@ The first step to understanding your cloud is to sanction apps. After you sancti
 
     -   Do you want to revoke a user's permission to a specific app or require a specific user to perform multi-factor authentication?  
 
-4.  Go to **Investigate** and then select an app. You will get to the App dashboard, which gives you information and insights. You can use the tabs across the top to check the following:  
+4.  Go to **Investigate** and then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check the following:  
 
      ![App dashboard](./media/investigate-app.png "investigate app")  
 
