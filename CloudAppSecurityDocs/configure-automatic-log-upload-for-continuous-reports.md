@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -65,9 +65,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
     d.  Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.  
   
-    e.  Set the **Receiver type** to either **FTP** or **Syslog**.  
-  
-         For **Syslog**, choose **UDP** or **TCP**.  
+    e.  Set the **Receiver type** to either **FTP** or **Syslog**. For **Syslog**, choose **UDP** or **TCP**.  
   
     f.  Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
   
