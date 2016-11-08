@@ -93,6 +93,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 You can view more information about each activity, by clicking on the Activity iteself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the file:
 
 - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
+- View raw data: Click on View raw data to see the actual data that was received from the app.
 - User: Click on the user to view the user page for the user who performed the activity. 
 - Device type: Click on device type to view the raw user agent data. 
 - Location: Click on the location to view the location in Bing maps.

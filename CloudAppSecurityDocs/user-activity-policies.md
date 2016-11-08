@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -48,7 +48,7 @@ To create a new activity policy, follow this procedure:
 4.  To set which actions or other metrics will trigger this policy, work with the **Activity filters**.  
   
 5.  Under **Activity match parameters**, select whether a policy violation will be triggered when a single activity matches the filters or if a violation is only detected when a specified number of **Repeated activities** are detected.  
-    If you choose **Repeated activity**, set the activities that will trigger the alert: The number of activities, time frame and whether a violation will count for a user within a specific app or for the same user with any app.  
+    If you choose **Repeated activity**, you can set **Group matched activities per app**. This will trigger a policy match only when the repeated activities occur in the same app (for example, 5 downloads from Box).  
   
 6.  Configure the **Actions** that should be taken when a match is found.  
   
