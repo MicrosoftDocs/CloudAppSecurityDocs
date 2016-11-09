@@ -36,7 +36,7 @@ Azure Information Protection integration lets you:
 
 > [!NOTE] By default, files are scanned for labels only when there is a file policy that scans them with content inspection enabled. To scan all files for labels without file policies, enable automatic scan.
 
-## Terminology overview:
+## Terminology overview
 -	The Azure Information Protection classification label- an attribute added to files in your organization either automatically, based on a policy, or manually, set by end-users.
 -	External - A tag set by someone external to your organization.
 -	File tag- The classification label’s presentation in Cloud App Security. This field is shown for each file in the files table and can be used in filters.
@@ -70,7 +70,7 @@ Or for files that were tagged with any file tag:
 
 ![file tags all filters](./media/azip-file-tags-all-filter.png)
 
-## Enable automatic scan (coming soon)
+## Enable automatic scan
 To enable automatic scans for file tags for new files in Office 365:
 
 1. In Office 365, go to the **General settings** page.
@@ -80,7 +80,7 @@ After it's enabled, all new files that are added to Office 365, not only the one
 ![enable azure information protection](./media/enable-azip.png)
  
 
-## Internal and external tags (coming soon)
+## Internal and external tags
 By default, Cloud App Security will scan classification labels that were defined in your organization as well as external ones that were defined by other organizations. 
 
 To ignore them, under **Azure security setting** select **Ignore Azure Information Protection classification labels from other tenants**.
