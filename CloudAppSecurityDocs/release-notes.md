@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,29 @@ ms.suite: ems
 ---
 
 # Release notes
+
+
+## Cloud App Security release 84
+Released November 13, 2016
+
+**New features**
+-	Cloud App Security now supports for Microsoft Azure Information Protection including enhanced integration and auto-provisioning. You can filter your Files and set File policies using the Tag Secure Classification and then set the classification label you want to view. The labels also indicate whether the classification was set by someone in your organization or by people from another tenant (External). You can also set activity policies, based on the Azure Information Protection classification labels and enable automatic scan for classification labels in Office 365. For more information on how to take advantage of this great new feature, see [Integrating with Azure Information Protection](azip-integration.md).
+ 
+**Improvements**
+-	Improvements were made to the Cloud App Security activity log: 
+   -	Office 365 events from the Security and Compliance Center are now integrated with Cloud App Security and are visible in the **Activity log**.
+   -	All Cloud App Security activity is registered in the Cloud App Security activity log as administrative activity.
+-	To help you investigate file-related alerts, in each alert that results from a file policy, you can now view the list of activities that were performed on the matched file.
+-	The impossible travel algorithm in the anomaly detection engine was improved to provide better support for small tenants. 
+ 
+**Minor improvements**
+-	The **Activity export limit** was raised to 10,000. 
+-	When creating a **Snapshot report** in the Cloud Discovery manual log upload process, you now receive an accurate estimate for how long the log processing will take. 
+-	In a file policy, the **Remove collaborator** governance action now works on groups.
+-	Minor improvements were made in the **App permissions** page. 
+-	When more than 10,000 users have granted permissions to an app that connects to Office 365, the list loaded slowly. This has been fixed.
+-	Additional attributes were added to the **App catalog** regarding the payment card industry.
+
 
 ## Cloud App Security release 83
 Released October 30, 2016
