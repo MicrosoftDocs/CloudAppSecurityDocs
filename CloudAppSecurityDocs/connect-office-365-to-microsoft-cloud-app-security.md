@@ -12,7 +12,8 @@ ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
+ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
+
 
 # optional metadata
 
