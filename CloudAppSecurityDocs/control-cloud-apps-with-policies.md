@@ -60,7 +60,7 @@ Cloud App Security helps you mitigate different risks in the cloud. You can conf
   
      Monitor configuration changes including remote configuration manipulation.  
   
--   **Cloud Discovery:** Are new, unsanctioned, apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?  
+-   **Cloud Discovery:** Are new apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?  
   
      Rate overall risk for each cloud app based on regulatory and industry certifications and  
     best practices, enables you to monitor the number of users, activities, traffic volume and typical usage hours for  

@@ -79,9 +79,9 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     5.  Click **Save**.  
   
-4.  In the Cloud App Security console, click **Investigate** and then **Sanctioned apps**.  
+4.  In the Cloud App Security console, click **Investigate** and then **Connected apps**.  
   
-5.  In the Box row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button followed by **Salesforce**.  
+5.  In the **App connectors** page, click the **Connect an app** button followed by **Salesforce**.  
   
      ![connect salesforce](./media/connect-salesforce.png "connect salesforce")  
   
