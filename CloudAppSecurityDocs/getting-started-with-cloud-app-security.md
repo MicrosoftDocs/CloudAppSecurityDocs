@@ -48,4 +48,4 @@ Your organization must have a license to use Cloud App Security. For more inform
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
-Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
+Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
