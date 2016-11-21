@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Governance log | Microsoft Docs
-description: This topic lists and describes all the governance actions that can be taken in Cloud App Security. 
+title: Governance | Microsoft Docs
+description: This topic lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,9 @@ ms.suite: ems
 
 ---
 
-# Governance log
+# Governance
+
+## Governance log
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
 
 The following is the full list of actions the Cloud App Security portal enables you to take. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
@@ -74,7 +76,46 @@ For information about how governance actions are treated when there are policy c
 |Settings> Cloud discovery settings > Upload logs manually/Upload logs automatically|Cloud Discovery|Parse Cloud Discovery data|Notification that all the log data was parsed.|Discovery|
 
 
-
+## Governance actions  
+The following governance actions can be taken either on a specific file, user or from a specific policy.
+  
+-   Notifications  
+  
+    -   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
+  
+    -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
+  
+    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
+  
+-   Notify specific users – Specific list of email addresses that will receive these notifications.  
+  
+-   Notify last file editor – Send notifications to the last person who modified the file.  
+  
+-   Governance actions in apps  
+  
+     Granular actions can be enforced per app, specific actions vary depending on app terminology.  
+  
+    -   Change sharing  
+  
+        -   Remove public sharing –  Allow access only to named collaborators, for example: Remove public access for Google Apps and Remove direct shared link for Box.  
+  
+        -   Remove external users – Allow access only to company users.  
+  
+        -   Make private – Only the owner can access the file, all shares are removed.  
+  
+        -   Remove a collaborator – Remove a specific collaborator from the file.  
+  
+    -   Quarantine  
+  
+        -   Put in user quarantine – Allow self-service by moving the file to a user controlled quarantine folder  
+  
+        -   Put in admin quarantine – File is moved to quarantine in the admin drive, and the admin has to approve it.  
+  
+-   Trash – Move the file to the trash folder.
+  
+![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
+  
+ 
 
 
 

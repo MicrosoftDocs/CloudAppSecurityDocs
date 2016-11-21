@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,9 @@ ms.suite: ems
 ---
 
 # Connect Google Apps to Microsoft Cloud App Security
-This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.  
+This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.
+
+  
   
 ## Configure Google Apps  
   
