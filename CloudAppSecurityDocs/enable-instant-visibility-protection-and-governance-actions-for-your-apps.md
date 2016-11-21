@@ -103,6 +103,8 @@ For some apps, it may be necessary to add the following IP addresses to the whit
 -   For the console:  
   
      104.42.231.28  
+
+- For each app that you want to connect with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.  
   
 > [!NOTE]  
 >  To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
