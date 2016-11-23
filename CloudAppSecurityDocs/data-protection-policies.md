@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -80,9 +80,9 @@ To create a new file policy, follow this procedure:
   
 6.  For Box, SharePoint, Dropbox, OneDrive, you can enforce your file policy over all files on the app or on specific folders. Under **Apply to**, select **selected folders** or **all files excluding selected folders**, you will be redirected to log on to the cloud app, and then add the relevant folders.  
   
-7.  Select the **Content inspection method**. The built-in DLP allows you to filter files by their content. In order to scan files  for content, next select **Built-in DLP**. Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions, either as a substring or a regular expression of your own.  
+7.  Select the **Content inspection method**. The built-in DLP allows you to filter files by their content. In order to scan files  for content, next select **Built-in DLP**. Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions, either as a substring or a [regular expression](working-with-the-regex-engine.md) of your own.  
     In addition, you can specify a regular expression to exclude a file from the results. This is highly useful if you have an inner classification keyword standard that you want to exclude from the policy.  
-    In addition, you can decide what is the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.  
+    You can decide set the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.  
     When content is matched against the selected expression, you can choose to mask the match itself from the violation notification and logs. Once checked, violation text will be replaced with “X” characters. Remember, numbers are replaced with “#” characters and never stored within Cloud App Security.  
   
 8.  Choose the **Governance** actions you want Cloud App Security to take when a match is detected.  

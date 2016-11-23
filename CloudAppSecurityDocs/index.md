@@ -142,7 +142,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>Governance log</h3>
+                    <h3>Governance</h3>
                     <p>Use the Governance log to get a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks.</p>
                   </a>
                 </li>
