@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -228,7 +228,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 1.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-2.  In the **App connector** page, click **Connect an app** and select **Google Apps**.  
+2.  In the **Connected apps** page, click the plus sign and select **Google Apps**.  
   
      ![connect google apps](./media/connect-google-apps.png "connect google apps")  
   

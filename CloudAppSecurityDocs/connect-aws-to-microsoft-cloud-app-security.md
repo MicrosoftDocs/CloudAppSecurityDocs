@@ -104,7 +104,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 11. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-12. In the **App connectors** page, click the **Connect an app** button followed by **AWS**.  
+12. In the **App connectors** page, click the plus sign followed by **AWS**.  
   
      ![connect AWS](./media/connect-aws.png "connect AWS")  
   

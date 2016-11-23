@@ -36,7 +36,7 @@ Because Dropbox enables access to files from shared links without signing in, Cl
   
 1.  In the Cloud App Security console, click **Investigate** and then **Connected apps**.  
   
-2.  In the **App connectors** page click the **Connect an app** button followed by **Dropbox**.  
+2.  In the **App connectors** page click the plus button followed by **Dropbox**.  
   
      ![connect dropbox](./media/connect-dropbox.png "connect dropbox")  
   

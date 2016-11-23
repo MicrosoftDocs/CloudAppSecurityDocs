@@ -44,7 +44,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 4.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-5.  In the **App connectors** page, click the **Connect an app** button and then **ServiceNow**.  
+5.  In the **App connectors** page, click the plus button and then **ServiceNow**.  
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
