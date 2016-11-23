@@ -37,4 +37,4 @@
 # [Troubleshoot](troubleshooting.md)
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
-## [Troubleshooting content inspection](troubleshooting-content inspection.md)
+## [Troubleshooting content inspection](troubleshooting-content-inspection.md)

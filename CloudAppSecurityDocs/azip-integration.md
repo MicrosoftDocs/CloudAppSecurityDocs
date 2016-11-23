@@ -35,7 +35,8 @@ Azure Information Protection integration lets you:
 -	Create policies and alert on violations of uploading of classified data in your connected cloud apps, or quarantine/block sensitive data from being shared externally.
 -	Investigate audit trails and remediate files that are in violation of your policies 
 
-> [!NOTE] By default, files are scanned for labels only when there is a file policy that scans them with content inspection enabled. To scan all files for labels without file policies, enable automatic scan.
+> [!NOTE] 
+> By default, files are scanned for labels only when there is a file policy that scans them with content inspection enabled. To scan all files for labels without file policies, enable automatic scan.
 
 ## Terminology overview
 -	The Azure Information Protection classification label- an attribute added to files in your organization either automatically, based on a policy, or manually, set by end-users.
