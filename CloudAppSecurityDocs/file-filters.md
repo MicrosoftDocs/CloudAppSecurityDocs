@@ -105,45 +105,7 @@ You can also set the policy to run on specific files by setting the **Apply to**
   
 ![apply to filter](./media/apply-to-filter.png "apply to filter")  
   
-### Governance actions  
-  
--   Notifications  
-  
-    -   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
-  
-    -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
-  
-    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
-  
--   Notify specific users – Specific list of email addresses that will receive these notifications.  
-  
--   Notify last file editor – Send notifications to the last person who modified the file.  
-  
--   Governance actions in apps  
-  
-     Granular actions can be enforced per app, specific actions vary depending on app terminology.  
-  
-    -   Change sharing  
-  
-        -   Remove public sharing –  Allow access only to named collaborators, for example: Remove public access for Google Apps and Remove direct shared link for Box.  
-  
-        -   Remove external users – Allow access only to company users.  
-  
-        -   Make private – Only the owner can access the file, all shares are removed.  
-  
-        -   Remove a collaborator – Remove a specific collaborator from the file.  
-  
-    -   Quarantine  
-  
-        -   Put in user quarantine – Allow self-service by moving the file to a user controlled quarantine folder  
-  
-        -   Put in admin quarantine – File is moved to quarantine in the admin drive, and the admin has to approve it.  
-  
--   Trash – Move the file to the trash folder.
-  
-![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

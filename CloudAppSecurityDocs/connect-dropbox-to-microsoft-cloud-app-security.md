@@ -34,13 +34,13 @@ Because Dropbox enables access to files from shared links without signing in, Cl
 
 ## How to connect Dropbox to Cloud App Security  
   
-1.  In the Cloud App Security console, click **Investigate** and then **Sanctioned apps**.  
+1.  In the Cloud App Security console, click **Investigate** and then **Connected apps**.  
   
-2.  In the Dropbox row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button followed by **Dropbox**.  
+2.  In the **App connectors** page click the **Connect an app** button followed by **Dropbox**.  
   
      ![connect dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  In the Dropbox settings page, on the API tab, enter the admin account email address.  
+3.  In the popup, enter the admin account email address.  
   
 4.  Click **Generate link**.  
   

@@ -42,13 +42,13 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![servicenow account](./media/servicenow-account.png "servicenow account")  
   
-4.  In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.  
+4.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-5.  In the ServiceNow row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button and then **ServiceNow**.  
+5.  In the **App connectors** page, click the **Connect an app** button and then **ServiceNow**.  
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  In the ServiceNow settings page, on the API tab, add your ServiceNow username, password and instance URL in the appropriate boxes.  
+6.  In the popup, add your ServiceNow username, password and instance URL in the appropriate boxes.  
   
 7.  Click **Connect**.  
   
