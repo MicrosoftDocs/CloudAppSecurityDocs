@@ -73,7 +73,12 @@ Or for files that were tagged with any file tag:
 ![file tags all filters](./media/azip-file-tags-all-filter.png)
 
 ## How it works
-Cloud App Security scans new files in near real-time and then, for each file, it scans the labels, and the classification label is added to the list of classification labels that were seen in the tenant. 
+As soon as you connect Cloud App Security with Azure Information Protection, Cloud App Security scans files as follows:
+1. Retrieve the list of all the classification labels used in your tenant. This is performed every hour to keep the list up to date.
+2. Scan the files for classification labels. This can happen in two ways:
+    a. Files that are scanned for content as part of a file policy will also be added to the scan queue for classification labels.
+    b. To add all your files to the scan queue without the need to set a file policy, enable automatic scan (see below), which will scan all new or modified files.
+3. External labels are added to the list of classification labels only if they are seen on a specific file, unless you select the **Ignore Azure Information Protection classification labels from other tenants** checkbox (see below).
 
 ## Enable automatic scan
 To enable automatic scans for file tags for new files in Office 365:

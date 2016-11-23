@@ -34,6 +34,7 @@ Your organization must have a license to use Cloud App Security. For more inform
 
 >[!NOTE]
 >You do not need an Office 365 license to use Cloud App Security.  
+
 ## Prerequisites  
   
 -   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
