@@ -102,13 +102,13 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     3.  Repeat Step 11 for all regions, but do not set any other region to Include global services.  
   
-11. In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.  
+11. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-12. In  the AWS row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button followed by **AWS**.  
+12. In the **App connectors** page, click the **Connect an app** button followed by **AWS**.  
   
      ![connect AWS](./media/connect-aws.png "connect AWS")  
   
-13. In the Amazon Web Services settings page, paste the **Access key** and **Secret key** from the csv file into the fields in the API page, and click **Update Access key**.  
+13. In the popup, paste the **Access key** and **Secret key** from the csv file into the fields in the API page, and click **Update Access key**.  
   
 14. Make sure the connection succeeded by clicking **Test API**.  
   

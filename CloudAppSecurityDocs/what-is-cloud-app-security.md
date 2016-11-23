@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -56,7 +56,7 @@ Cloud App Security integrates visibility with your cloud by
 ![Cloud App Security architecture](./media/architecture.png)  
 
 > [!NOTE]  
-> When Cloud App Security performs content inspection, data privacy is enforced. Only the metadata of the file records and any violations that were identified are stored in the Cloud App Security database. Your data is not stored in the Cloud App Security database. For more information about data retention, see our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132) and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+> When Cloud App Security performs content inspection, data privacy is enforced. Your data is not stored in the Cloud App Security database; only the metadata of the file records and any violations that were identified are stored in the Cloud App Security database.For more information about data retention, see our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132) and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 Cloud App Security retains data as follows:
 >- Activity log: 180 days
 >- Discovery data: 90 days

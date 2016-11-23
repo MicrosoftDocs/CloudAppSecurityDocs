@@ -36,7 +36,7 @@ The **App permissions** tab displays information about app permissions in your O
 
 To access the App permissions tab:
 
-1. In the Cloud App Security portal, click **Investigate**, and under Sanctioned apps, select **Office 365**. 
+1. In the Cloud App Security portal, click **Investigate**, and under **Connected apps**, select **Office 365**. 
 > [!Note]
 > You have to first connect Cloud App Security to Office 365 to work with App permissions.
 
