@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Azure Inforamtion Protection integration | Microsoft Docs
+title: Azure Information Protection integration | Microsoft Docs
 description: This article provides information about how to leverage your Azure Information Protection tags in Cloud App Security for added control of your organization's cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,9 +27,9 @@ ms.suite: ems
 
 ---
 
-# Azure Information Protection integration - **PRIVATE PREVIEW**
+# Azure Information Protection integration
 
-Cloud App Security lets you investigate files and set policies based on Azure Information Protection file labels, enabling greater visibility and control of your sensitive data in the cloud. To enable this, set a policy in Cloud App Security to scan files with content inspection enabled. In addition, as part of the Cloud App Security private preview, you can trigger alerts on activities related to classified files. 
+Cloud App Security lets you investigate files and set policies based on Azure Information Protection file labels, enabling greater visibility and control of your sensitive data in the cloud. To enable this, set a policy in Cloud App Security to scan files with content inspection enabled. In addition, you can trigger alerts on activities related to classified files. 
 Azure Information Protection integration lets you:
 -	Quantify exposure of sensitive data over your cloud applications.
 -	Create policies and alert on violations of uploading of classified data in your connected cloud apps, or quarantine/block sensitive data from being shared externally.
@@ -70,6 +70,9 @@ Use the **File tags** filter to search for files that were tagged with a specifi
 Or for files that were tagged with any file tag:
 
 ![file tags all filters](./media/azip-file-tags-all-filter.png)
+
+## How it works
+Cloud App Security scans new files in near real-time and then, for each file, it scans the labels, and the classification label is added to the list of classification labels that were seen in the tenant. 
 
 ## Enable automatic scan
 To enable automatic scans for file tags for new files in Office 365:

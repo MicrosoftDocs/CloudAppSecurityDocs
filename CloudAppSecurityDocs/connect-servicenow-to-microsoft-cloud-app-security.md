@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect ServiceNow to Microsoft Cloud App Security | Microsoft Docs
+title: Connect ServiceNow | Microsoft Docs
 description: This topic provides information about how to connect your ServiceNow app to Cloud App Security using the API connector.
 keywords:
 author: rkarlin

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect Google Apps to Microsoft Cloud App Security | Microsoft Docs
+title: Connect Google Apps | Microsoft Docs
 description: This topic provides information about how to connect your Google apps to Cloud App Security using the API connector.
 keywords:
 author: rkarlin

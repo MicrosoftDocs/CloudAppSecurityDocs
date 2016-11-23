@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect Salesforce to Microsoft Cloud App Security | Microsoft Docs
+title: Connect Salesforce | Microsoft Docs
 description: This topic provides information about how to connect your Salesforce to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
