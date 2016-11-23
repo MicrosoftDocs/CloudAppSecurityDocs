@@ -43,7 +43,7 @@ ms.suite: ems
 |Failed: Unsupported file type|Cloud App Security cannot perform content inspection on this file type. This may be because the file type is not supported or because the file is not actually the in the format of the expected file type.|
 
 > [!NOTE]
-> If you see a dash in the scan status, this means that the file is not queued to be scanned. We recommend enabling the PCI policy on all your files to make sure all your files are scanned.
+> If you see a dash in the scan status, this means that the file is not queued to be scanned. See [File policies](data-protection-policies.md) for information on setting content inspection policies.
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   

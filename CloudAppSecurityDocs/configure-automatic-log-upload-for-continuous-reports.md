@@ -53,7 +53,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector  
   
 1.  Go to the automated upload setting page:  
-    In the Cloud App Security portal, click the settings icon ![settings icon](./media/settings-icon.png "settings icon"), followed by  **Log collectors** and then select the **Log collectors** tab.  
+    In the Cloud App Security portal, click the settings icon ![settings icon](./media/settings-icon.png "settings icon"), followed by  **Log collectors**.  
   
 3.  For each firewall or proxy from which you want to upload logs, create a matching data source:  
   

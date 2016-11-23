@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Deploy app connectors | Microsoft Docs
-description: This topic describes the process for enabling API connectors to apps in your organization's cloud.
+title: Connect apps | Microsoft Docs
+description: This topic describes the process for connecting apps with API connectors to apps in your organization's cloud.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Deploy app connectors 
+# Connect apps 
 App connectors leverage the APIs of app providers to enable greater visibility and control by Cloud App Security over the apps you connect to.  
   
 Cloud App Security leverages the APIs provided by the cloud provider, each service has its own framework and API limitations. Cloud App Security worked with the services to optimize the usage of the APIs and to ensure the best performance. Taking into account the different limitations the services impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the Cloud App Security engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  

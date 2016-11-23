@@ -45,7 +45,7 @@ After a file is scanned, the following occurs:
 3. At this point, you can view the status of the content inspection by going to **Investigate** > **Files** and clicking on a file. In the file drawer that opens with the details of the file, the **Content Inspection status** will display either **Completed**, **Pending**, **Not applicable** (if the file type is not supported) or a failure message. For information about content scan failure messages, see [Troubleshooting content inspection](troubleshooting-content-inspection.md).
 
 > [!NOTE]
-> If you see a dash in the scan status, this means that the file is not queued to be scanned. We recommend enabling the PCI policy on all your files to make sure all your files are scanned.
+> If you see a dash in the scan status, this means that the file is not queued to be scanned. See [File policies](data-protection-policies.md) for information on setting content inspection policies.
 
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
