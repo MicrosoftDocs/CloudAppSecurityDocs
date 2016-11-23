@@ -40,12 +40,12 @@ The Cloud App Security dashboard provides you with an overview of activities and
 - An activity map that plots where user activity originates.
 - Connected app usage trends in your cloud environment.  
 
-We recommend that you check the dashboard on daily to see what new alerts have been triggered. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's happening across your cloud environment.  
+We recommend that you check the dashboard daily to see what new alerts have been triggered. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's happening across your cloud environment.  
 
 ![Cloud App Security dashboard](./media/dashboard.png "dashboard")  
 
 ## Handle your alerts  
-Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from an unknown location. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
+Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your orgaization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
 
 It is a good idea to review all of your alerts and to use them as tools for modifying your policies. If harmless events are being considered violations to existing policies, refine your policies so that you receive fewer unnecessary alerts.  
 
@@ -72,7 +72,7 @@ It is a good idea to review all of your alerts and to use them as tools for modi
 
          For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new, unsanctioned service is discovered, you might want to block access to the service on your proxy or firewall.  
+         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
     #### Questionable violations
     Questionable violations require further investigation.  

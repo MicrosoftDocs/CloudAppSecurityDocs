@@ -42,7 +42,6 @@ The following types of policies can be created:
 |![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud based on the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity.|  
 |![cloud discovery policy icon](./media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|  
 |![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|  
-|![field policy icon](./media/field_policy.png)|Field policy|Field policies enable you to scan your cloud apps for fields in your cloud environment that may contain sensitive data like posts, chat messages, descriptions, and long text fields.|  
 |![file policy icon](./media/file_policy.png)|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
   
 ## Identifying risk  
@@ -60,7 +59,7 @@ Cloud App Security helps you mitigate different risks in the cloud. You can conf
   
      Monitor configuration changes including remote configuration manipulation.  
   
--   **Cloud Discovery:** Are new, unsanctioned, apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?  
+-   **Cloud Discovery:** Are new apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?  
   
      Rate overall risk for each cloud app based on regulatory and industry certifications and  
     best practices, enables you to monitor the number of users, activities, traffic volume and typical usage hours for  

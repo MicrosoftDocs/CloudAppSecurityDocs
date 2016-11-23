@@ -75,7 +75,10 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 -   Registered ISP – The ISP from which the activity was performed.   
 
--  Source - Search by the source from which the activity was detected, for example, App connector. 
+-  Source - Search by the source from which the activity was detected. Source can be any of the following:
+  -	App connector - logs coming directly from the app’s API connector.
+  -	App connector analysis - Cloud App Security enrichments based on information scan by the API connector.
+  
 
 -   User – The user who performed the activity, which can be filtered into domain, group, name or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
     -   User domain - Search for a specific user domain.
