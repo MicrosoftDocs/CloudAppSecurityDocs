@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,17 +43,15 @@ The following dashboards are available to help you investigate apps in your clou
 |Application dashboard: third-party apps|Drill-down into third-party apps currently deployed, like Google Apps, and defining policies for them|  
 |User dashboard|A complete overview of the user profile in the cloud, including groups, locations, recent activities, related alerts, and browsers used|  
 
-##  <a name="sanctionapp"></a> Sanction or unsanction apps  
-The first step to understanding your cloud is to sanction apps. After you sanction an app, you can filter for apps that aren't sanctioned and start migration to sanctioned apps of the same type.  
+##  <a name="sanctionapp"></a> Tag apps as sanctioned or unsanctioned  
+An important step to understanding your cloud is to tag apps as sanctioned or unsanctioned. After you sanction an app, you can filter for apps that aren't sanctioned and start migration to sanctioned apps of the same type.  
 
--   In the Cloud App Security console, choose **Discover** and then **Discovery dashboard**.  
+-   In the Cloud App Security console, go to the App catalog or Discovered apps.  
 
--   In the list of discovered apps, on the row in which the app you want to sanction appears, choose the three dots at the end of the row ![Sanction three dots](./media/sanction-three-dots.png "Sanction three dots") and choose **Mark as sanctioned**.  
+-   In the list of apps, on the row in which the app you want to tag as sanctioned appears, choose the three dots at the end of the row ![Tag as sanctioned dots](./media/sanction-three-dots.png "Tag as sanctioned dots") and choose **Mark as sanctioned**.  
 
-     ![Mark as sanctioned](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![Tag as sanctioned](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  For each app that you want to monitor with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.  
 
 ## Use the investigation tools  
 

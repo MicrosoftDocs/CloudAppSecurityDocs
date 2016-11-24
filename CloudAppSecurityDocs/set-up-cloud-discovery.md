@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Cloud Discovery | Microsoft Docs
+title: Deploy Cloud Discovery | Microsoft Docs
 description: This topic describes the setup procedure for getting Cloud Discovery working.
 keywords:
 author: rkarlin

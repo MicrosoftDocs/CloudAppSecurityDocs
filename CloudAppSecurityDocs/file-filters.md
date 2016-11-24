@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -75,7 +75,7 @@ Internal are any files within the Internal domains you set in [General setup](Ge
   
 -   File ID – Search for specific file IDs, this is an advanced feature that allows you to track certain high-value files without depending on their owner/location/name.  
   
--   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.  
+-   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.   
   
 -   File tag - Search for files with specific tags set by Azure Information Protection. This requires integration with Azure Information Protection.
 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,3 +32,5 @@ The following troubleshooting guides are available:
 [Troubleshooting Cloud Discovery log upload](troubleshooting-cloud-discovery.md)
 
 [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
+
+[Troubleshooting content inspection](troubleshooting-content-inspection.md)
