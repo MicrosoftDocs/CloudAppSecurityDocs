@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -118,9 +118,9 @@ Each policy is composed of the following parts:
     > [!NOTE]  
     >  Extensions are only available with the Cloud App Security Technical Preview version.  
   
-    -   Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
+    -  Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
   
-    -   Governance actions can be performed via 3rd-party engines for enforcing custom encryption control or other types of file processing (for example, custom water marking).  
+    -  [Governance actions](governance-actions.md) can be performed via 3rd-party engines for enforcing custom encryption control or other types of file processing (for example, custom water marking).  
   
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   

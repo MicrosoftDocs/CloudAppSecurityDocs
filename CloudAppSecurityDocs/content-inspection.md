@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -46,6 +46,30 @@ After a file is scanned, the following occurs:
 
 > [!NOTE]
 > If you see a dash in the scan status, this means that the file is not queued to be scanned. See [File policies](data-protection-policies.md) for information on setting content inspection policies.
+
+Built-in content inspection scan policies can search for the following:
+
+- Email addresses 
+- Credit card numbers 
+  -	All credit card companies (Visa, MasterCard, American Express, Diners Club, Discover, JCB, Dankort, UnionPay) 
+  - Delimiters- space, dot or dash
+  - This scan also includes the Luhn validation
+- SWIFT codes
+- International passport numbers
+- Drivers' license numbers
+- Dates
+- Bank ABA routing transit numbers
+- Bank identifier codes
+- HIPAA HICN Health insurance claim numbers
+- HIPAA NPI National provider identifier numbers
+- PHI Full name and birth dates
+- California ID or drivers' license numbers
+- Drivers' license numbers
+- Home addresses
+- Passport cards
+- Social security numbers
+
+
 
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
