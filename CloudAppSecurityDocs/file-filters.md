@@ -113,12 +113,12 @@ You can view more information about each file, by clicking on the File iteself i
 - File identifiers: Clicking on File identifiers opens a popup with raw data details about the file including file ID and encryption keys.
 - Owner:  Click on the owner to view the user page for the owner of this file.
 - Matched policies: Click on the Matched policies link to see a list of policies this file matched.
-- Location: Click on the location to view the location in Bing maps.
 - Classification label: Click on the Classification label to view the list of Azure Information Protection classification labels found in this file. You can then filter by all files matching this label.    
 
 ![File drawer](./media/file-drawer.png "File drawer")  
   
 For a list of governance actions available, see [File governance actions](governance-actions.md#file-governance-actions).
+
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
