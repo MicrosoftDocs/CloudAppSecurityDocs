@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: User activity policies | Microsoft Docs
-description: This topic provides instructions for creating and working with user activity policies.
+title: Activity policies | Microsoft Docs
+description: This topic provides instructions for creating and working with activity policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# User activity policies
+# Activity policies
 Activity policies allow you to enforce a wide range of automated processes leveraging the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.  
   
 After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.

@@ -143,6 +143,13 @@ Governance actions in apps
      ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
 
+## Governance conflicts
+
+After creating multiple policies, a situation may arise in which the governance actions in multiple policies overlap. In this case, Cloud App Security will process the governance actions as follows:
+
+- If two policies contain actions that are contained on in each other (for example, **Remove external shares** is included in **Make private**), Cloud App Security will resolve the conflict and the stronger action will be enforced.
+- If the actions are completely unrelated (for example, **Notify owner** and **Make private**). Both actions will take place.
+- If the actions conflict, (for example **Change owner to user A** and **Change owner to user B**), different results may result from every match. It is important to change your policies to prevent conflicts because they may result in unwanted changes in the drive that will be hard to detect.
 
 
 
