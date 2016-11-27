@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -41,7 +41,7 @@ It is recommended that you create custom reports using built-in reports as a sta
 |Security|OS use|Operating system (OS) security flaws tend to cause very dangerous vulnerabilities. Vendors invest enormous resources in securing OSs, creating an effective update mechanism to disseminate updates to endpoints. However, deprecated OSs which are no longer supported, are not included in those update mechanisms, and they become easy targets for threat actors using available exploit kits. This report lists the OSs used in the last 30 days by users accessing your cloud services.|  
 |Security|Strictly remote users|The following users have never shared an IP address with another employee in the company. This is characteristic to remote teams or employees, hired contractors and external support services. However, this may also indicate a backdoor user left by an attacker.|  
 |User management|Cloud app overview|This report lists your cloud apps, and different parameters representing the volume of activity in each app, such as the number of files, users, etc. Use it to get an overview of the different apps and the extent to which your users use them.|  
-|User management|Inactive accounts|Inactive accounts are accounts who have access to your cloud instance, yet they have not performed any events during the last 60 days. This suggests that these accounts are no longer active and should be suspended to prevent future access by threat actors or by leaving employees. Following this best-practice not only improves your security posture, but also reduces operational costs.|  
+|User management|Inactive accounts|Inactive accounts are accounts that have access to your cloud instance, yet they have not performed any events during the last 60 days. This suggests that these accounts are no longer active and should be suspended to prevent future access by threat actors or by leaving employees. Following this best-practice not only improves your security posture, but also reduces operational costs.|  
 |User management|Privileged users|This report lists the users who have elevated privileges in corporate services, such as administrators. Privileged accounts such as these are a preferred attack vector for threat actors since they may allow them to gain substantial access to corporate information and network configuration. If there are privileged accounts that were not used in the past month, that might indicate a lack of IT security awareness in enterprises, potentially paving the way for a wave of data breaches. You may further investigate the use of elevated user privileges through the Audit Log, and consider revoking privileges when unnecessary.|  
 |User management|Special privileged accounts|Salesforce has several types of privileged accounts, including Modify all data, View all data and Manage all users. Privileged accounts such as these are a preferred attack vector for threat actors since they may allow them to gain substantial access to corporate information and configurations.|  
 |User management|User logon|This report details the number of log on attempts, number of successful log ons, and percentage of failed log on attempts made by each user in each service. A high percentage of failed log on attempts might indicate that a user account was under attack at some point.|  

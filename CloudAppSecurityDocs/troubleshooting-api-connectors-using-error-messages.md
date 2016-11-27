@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting API Connectors using error messages | Microsoft Docs
-description: This topic provides a list of API Connector error messages as well as resolution recommendations for each.
+title: Troubleshooting App Connectors using error messages | Microsoft Docs
+description: This topic provides a list of API App connector error messages as well as resolution recommendations for each.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,12 @@ ms.suite: ems
 
 ---
 
-# Troubleshooting API Connectors using error messages
+
+# Troubleshooting App Connectors using error messages
+
+App connector errors can be seen in the app connector dialog after attempting to connect a cloud app using the API App connector.
+
+
 |Error message|Relevant app|Description|Resolution|
 |----|----|----|------------|
 |HttpRequestFailure: Server returned: 400 Bad Request: {"error":{"code":"AF20012","message":"Specified tenant ID (Tenant_ID goes here) is incorrectly configured in the system."|Office 365 |No assigned Office 365 licenses were found. |Assign at least one Office 365 license to your tenant.| 
