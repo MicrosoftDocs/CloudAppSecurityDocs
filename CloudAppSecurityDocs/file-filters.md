@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -45,7 +45,7 @@ Cloud App Security's built in DLP engines perform content inspection by extracti
 
 Below is a list of the file filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
 > [!NOTE] 
-> When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe. If you search for **malware.exe** then you will find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”.  **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
+> When using the file policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores to search. Enclosing words in quotation marks functions like AND, so, for example, if you search for **"malware"** **"virus"**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe and it will not find malware.exe. Spaces between words function like OR, so, for example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both malware-virus.exe and virus.exe.   **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
 
 -   Access level – Sharing access level; public, external, internal or private.  For more information about External files, see [General Setup, Set up the portal](getting-started-with-cloud-app-security.md)
 Internal are any files within the Internal domains you set in [General setup](General-setup.md). External are any files saved in locations that are not within the internal domains you set. Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
@@ -105,6 +105,19 @@ You can also set the policy to run on specific files by setting the **Apply to**
   
 ![apply to filter](./media/apply-to-filter.png "apply to filter")  
   
+## Working with the File drawer
+
+You can view more information about each file, by clicking on the File iteself in the File log. This opens the File drawer which provides the following additional actions you can take on the file:
+
+- URL: Takes you to the file location.
+- File identifiers: Clicking on File identifiers opens a popup with raw data details about the file including file ID and encryption keys.
+- Owner:  Click on the owner to view the user page for the owner of this file.
+- Matched policies: Click on the Matched policies link to see a list of policies this file matched.
+- Classification label: Click on the Classification label to view the list of Azure Information Protection classification labels found in this file. You can then filter by all files matching this label.    
+
+![File drawer](./media/file-drawer.png "File drawer")  
+  
+For a list of governance actions available, see [File governance actions](governance-actions.md#file-governance-actions).
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   

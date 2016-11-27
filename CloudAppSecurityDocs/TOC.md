@@ -33,7 +33,7 @@
 ##### [Content Inspection](content-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 ### [Manage app permissions](manage-app-permissions.md)
-## [Governance](governance-actions.md)
+## [Govern](governance-actions.md)
 # [Troubleshoot](troubleshooting.md)
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)

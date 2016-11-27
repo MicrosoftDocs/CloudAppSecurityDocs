@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,26 @@ ms.suite: ems
 
 # Release notes
 
+
+## Cloud App Security release 85
+Released November 27, 2016
+
+**New features**
+- A distinction was made between sanctioned apps and connected apps. Sanctioning and unsanctioning is now a tag that can be applied to discovered apps and any app in the app catalog. Connected apps are apps that you connected using the API connector for deeper visibility and control. You can now tag apps as sanctioned or unsanctioned or connect them using the app connector, where available. 
+ 
+- As part of this change, the Sanctioned apps page was replaced with a redesigned **Connected apps** page that externalizes status data about the connectors. 
+ 
+- The log collectors are more easily accessible in their own line in the **Settings** menu under **Sources**. 
+- When creating an activity policy filter, you can reduce false positives by choosing to ignore repeated activities when they are performed on the same target object by the same user, for example, multiple attempts to download the same file by the same person will not trigger an alert. 
+- Improvements were made to the activity drawer. Now, when you click on an activity object in the activity drawer, you can drill down for more information.
+
+**Improvements**
+- Improvements were made to the anomaly detection engine, including the impossible travel alerts, for which IP information is now available in the alert description.
+- Improvements were made to the complex filters to enable adding the same filter more than once for finetuning of filtered results. 
+- File and folder activities in Dropbox were separated for better visibility. 
+  
+**Bug fixes**
+- A bug in the system alerts mechanism that created false positives was fixed.
 
 ## Cloud App Security release 84
 Released November 13, 2016

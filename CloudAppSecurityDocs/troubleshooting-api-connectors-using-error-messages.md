@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Troubleshooting API Connectors using error messages
 |Error message|Relevant app|Description|Resolution|
-|----|----|----|----|
+|----|----|----|------------|
 |HttpRequestFailure: Server returned: 400 Bad Request: {"error":{"code":"AF20012","message":"Specified tenant ID (Tenant_ID goes here) is incorrectly configured in the system."|Office 365 |No assigned Office 365 licenses were found. |Assign at least one Office 365 license to your tenant.| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Box|The Box refresh token is not valid|Follow the process to connect Box to Cloud App Security again.|
 |BoxRestException: Failed to parse response.|Box|Internal error|Click the Test now link again to test the connection to Box.|
