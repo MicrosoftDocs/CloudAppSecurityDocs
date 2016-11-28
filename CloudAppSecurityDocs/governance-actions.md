@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Governance | Microsoft Docs
+title: Govern | Microsoft Docs
 description: This topic lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
 keywords:
 author: rkarlin
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Governance
+# Govern
 
 ## Governance log
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
@@ -76,7 +76,7 @@ For information about how governance actions are treated when there are policy c
 |Settings> Cloud discovery settings > Upload logs manually/Upload logs automatically|Cloud Discovery|Parse Cloud Discovery data|Notification that all the log data was parsed.|Discovery|
 
 
-## Governance actions  
+## File governance actions  
 The following governance actions can be taken either on a specific file, user or from a specific policy.
   
 -   Notifications  
@@ -116,8 +116,40 @@ The following governance actions can be taken either on a specific file, user or
 ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
   
  
+## Activity match parameters  
+Specify the amount of activity repetition required to match the policy, for example, setting a policy to alert when a user performs 10 unsuccessful login attempts in a 2 minute time frame.  
+The default setting, **Activity match parameters**, raises a match for every single activity that meet all of the activity filters.   
+Using **Repeated activity** you can set the number of repeated activities, the duration of the time frame in which the activities are counted, and even specify that all activities should be performed by the same user and in the same cloud app.  
+  
+### Actions  
+Notifications  
+  
+-   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
+  
+-   User email notification – Email messages can be customized and will be sent to all violating file owners.  
+  
+-   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
+  
+-   Notify additional users – Specific list of email addresses that will receive these notifications.  
+  
+Governance actions in apps  
+  
+-   Granular actions can be enforced per app, specific actions vary depending on app terminology.  
+  
+-   Suspend user – suspend the user from the application.  
+  
+-   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
+  
+     ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
+  
 
+## Governance conflicts
 
+After creating multiple policies, a situation may arise in which the governance actions in multiple policies overlap. In this case, Cloud App Security will process the governance actions as follows:
+
+- If two policies contain actions that are contained on in each other (for example, **Remove external shares** is included in **Make private**), Cloud App Security will resolve the conflict and the stronger action will be enforced.
+- If the actions are completely unrelated (for example, **Notify owner** and **Make private**). Both actions will take place.
+- If the actions conflict, (for example **Change owner to user A** and **Change owner to user B**), different results may result from every match. It is important to change your policies to prevent conflicts because they may result in unwanted changes in the drive that will be hard to detect.
 
 
 
