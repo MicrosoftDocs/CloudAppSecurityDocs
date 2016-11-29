@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect Office 365 to Microsoft Cloud App Security | Microsoft Docs
+title: Connect Office 365 | Microsoft Docs
 description: This topic provides information about how to connect your Office 365 to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
@@ -40,7 +40,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 >- Exchange Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online will be logged, see [Exchange Mailbox activities](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- If Office apps are enabled, groups that are part of Office 365 are also created in the specific Office apps, for example if SharePoint is enabled, Office 365 groups will be created in SharePoint.
  
-1.  In **App connectors** page, click the **Connect an App** button and select **Office 365**.  
+1.  In **Connected apps** page, click the plus button and select **Office 365**.  
 
 2.  In the Office 365 pop-up, click Connect Office 365.
 

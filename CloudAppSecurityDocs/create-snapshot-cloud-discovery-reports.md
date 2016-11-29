@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -42,7 +42,7 @@ To create a snapshot report:
   
 4.  Select the **Data source** from which you want to upload the log files.  
   
-5.  **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once.  
+5.  **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
   
 6.  Click **Create**.  
   

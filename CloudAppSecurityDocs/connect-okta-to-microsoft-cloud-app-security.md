@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect Okta to Microsoft Cloud App Security | Microsoft Docs
+title: Connect Okta | Microsoft Docs
 description: This topic provides information about how to connect your Okta to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
@@ -58,7 +58,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 3.  In the Cloud App Security console, click **Investigate** and then **Connected apps**.  
   
-4.  In the **App connectors page**, click the **Connect an app** button and then **Okta**.  
+4.  In the **App connectors page**, click the plus button and then **Okta**.  
   
      ![connect okta](./media/connect-okta.png "connect okta")  
   

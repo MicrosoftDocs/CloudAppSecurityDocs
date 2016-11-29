@@ -112,13 +112,14 @@ To create a policy from a **policy templates**, perform the following:
   
 Alternatively, you can **create a policy during investigation**. If you are investigating the **Activity log**, **Files** or **Accounts**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.  
   
-For example, if you are looking at the **Activity log**, and see that one of your admin accounts is being logged into from an unexpected geographic location, you can filter the results of the **Activity log** to display all log on activities by that admin, and then create a report that notifies you the next time activity is detected for that user.  
+For example, if you are looking at the **Activity log**, and see an admin activity from outside the your office’s IP addresses.
+
   
 To create a policy based on investigation results, perform the following:  
   
 1.  In the console, click on **Investigate** followed by **Activity log**, **Files** or **Accounts**.  
   
-2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **User** and select the Admin whose account is registering unusual activity. Then, under **Activity**, select **Copy folder** and **Copy file**.  
+2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **Activity** and select **Admin logon**. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate and VPN IP addresses.  
   
      ![](./media/create-file-from-investigation.png)  
   
@@ -147,11 +148,6 @@ To create a policy based on investigation results, perform the following:
 >   
 >  [Cloud Discovery policies](cloud-discovery-policies.md)  
   
-### Policy conflicts
-After creating multiple policies, a situation may arise in which the policies overlap. In this case, Cloud App Security will process the policies as follows:
-* If two policies contain actions that are contained on in the other (for example, **Remove external shares** is included in **Make private**), Cloud App Security will resolve the conflict and the stronger action will be enforced.
-* If the actions are completely unrelated (for example, **Notify owner** and **Make private**). Both actions will take place.
-* If the actions conflict, (for example **Change owner to user A** and **Change owner to user B**), different results may result from every match. It is important to change your policies to prevent conflicts because they may result in unwanted changes in the drive that will be hard to detect. 
 
 
 ## See Also  
