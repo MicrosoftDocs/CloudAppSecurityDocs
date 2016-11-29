@@ -119,7 +119,7 @@ To create a policy based on investigation results, perform the following:
   
 1.  In the console, click on **Investigate** followed by **Activity log**, **Files** or **Accounts**.  
   
-2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **Activity** and select **Admin logon**. Then, under **IP address**, select **Category** and set the value to include only IP addresses that aren't included in any of the categories you've created for your recognized domains.  
+2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **Activity** and select **Admin logon**. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate and VPN IP addresses.  
   
      ![](./media/create-file-from-investigation.png)  
   
