@@ -194,7 +194,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
       <p>Keep up-to-date on Cloud App Security
       <ol class="action-list">
         <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Official Cloud App Security site</a></li>
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Cloud App Security assisted support</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Cloud App Security assisted support</a></li>
       </ol>
     </aside>
 </article>
