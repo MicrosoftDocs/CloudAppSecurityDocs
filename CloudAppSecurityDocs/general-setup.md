@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: General setup | Microsoft Docs
-description: This topic provides the first steps to getting Cloud App Security up and running.
+title: Customize the portal | Microsoft Docs
+description: This topic provides the first steps to customizing the portal.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -26,33 +26,12 @@ ms.suite: ems
 
 ---
 
-# General setup
-The following procedure gives you instructions for setting up [!INCLUDE[Adallom1](./includes/adallom1_md.md)] to work on your cloud environment.  
-  
-## Prerequisites  
-  
--   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
-  
-     For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
-  
-> [!NOTE] 
-> An Office 365 license is not required for Cloud App Security.  
-  
--   After you have procured a license for Cloud App Security, you will receive an email with activation information and a link to the Cloud App Security portal.  
-  
--   To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
-  
--   To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
+# Customize the portal
+The following procedure gives you instructions for customizing the Cloud App Security portal.
   
 ## Set up the portal  
   
-1.  To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
-  
-     Alternatively, you can access the portal through the **Office 365 Admin center** by clicking the Admin centers icon ![O365 admin centers icon](./media/o365-admin-centers-icon.png "O365 admin centers icon") followed by **Cloud App Security**.  
-  
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
-  
-2.  In the Cloud App Security portal, in the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **General settings** to configure the following:  
+1.  In the Cloud App Security portal, in the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **General settings** to configure the following:  
   
 3.  **Organization details**  
   

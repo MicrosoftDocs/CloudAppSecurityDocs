@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/17/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -40,7 +40,7 @@ Cloud App Security is a critical component of the Microsoft Cloud Security stack
 |-------|---|:---|
 |![Discover](./media/discovery-icon.png)|Discover|Uncover shadow IT with Cloud App Security. Gain visibility by discovering apps, activities, users, data, and files in your cloud environment. Discover third-party apps that are connected to your cloud.|
 |![Investigate](./media/investigate-icon.png)|Investigate|Investigate your cloud apps by using cloud forensics tools to deep-dive into risky apps, specific users, and files in your network. Find patterns in the data collected from your cloud. Generate reports to monitor your cloud.|
-|![Control](./media/protect-icon.png)|Control|Mitigate risk by setting policies and alerts to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.|
+|![Control](./media/control-icon.png)|Control|Mitigate risk by setting policies and alerts to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.|
 |![Protect](./media/protect-icon.png)|Protect|Use Cloud App Security to sanction or unsanction applications, enforce data loss prevention, control permissions and sharing, and generate custom reports and alerts.|
 
 
@@ -60,7 +60,7 @@ Cloud App Security integrates visibility with your cloud by
 Cloud App Security retains data as follows:
 >- Activity log: 180 days
 >- Discovery data: 90 days
->- Alerts: unlimited
+>- Alerts: 180 days
 
 After data is collected from these sources, Cloud App Security runs sophisticated analysis on the data. It immediately alerts you to anomalous activities, and gives you deep visibility into your cloud environment. You can configure a policy in Cloud App Security and use it to protect everything in your cloud environment.  
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect Box to Microsoft Cloud App Security | Microsoft Docs
+title: Connect Box | Microsoft Docs
 description: This topic provides information about how to connect your Box app to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
@@ -53,7 +53,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 2.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-3.  In the **App connectors** page, click the **Connect an App** button and select **Box**.  
+3.  In the **App connectors** page, click the plus sign button and select **Box**.  
   
      ![connect box](./media/connect-box.png "connect box")  
   

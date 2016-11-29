@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect AWS to Microsoft Cloud App Security | Microsoft Docs
+title: Connect AWS | Microsoft Docs
 description: This topic provides information about how to connect your AWS app to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
@@ -104,7 +104,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 11. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-12. In the **App connectors** page, click the **Connect an app** button followed by **AWS**.  
+12. In the **App connectors** page, click the plus sign followed by **AWS**.  
   
      ![connect AWS](./media/connect-aws.png "connect AWS")  
   
