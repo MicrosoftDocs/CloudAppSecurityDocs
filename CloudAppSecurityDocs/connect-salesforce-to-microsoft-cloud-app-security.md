@@ -102,7 +102,7 @@ This section provides instructions for connecting Cloud App Security to your exi
      Testing may take a couple of minutes. After receiving a success notice, click **Done**.  
   
   
-After connecting SalesForce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your SalesForce EventMonitoring license.
+After connecting Salesforce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your Salesforce EventMonitoring license.
   
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   

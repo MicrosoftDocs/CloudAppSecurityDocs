@@ -26,6 +26,11 @@ ms.suite: ems
 
 ---
 # Activities
+To provide data protection, Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it is updated constantly with new activities. You can create policies based on the activities and then define what you want to be alerted about. You can also search for activities performed on certain files. The type of activities and the information we get for each activity depends based on the app and what kind of data the app can provide. 
+
+
+ 
+
 The activity log can be filtered to enable you to find specific activities. 
 The basic filter provides you with great tools to get started filtering your activities.
 

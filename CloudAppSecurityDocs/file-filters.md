@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/08/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,19 @@ ms.suite: ems
 
 # Files
 
+
+To provide data protection, Cloud App Security gives you visibility into all the files from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. Use the **Files** page to gain control over your data and to help you understand what policies you should create. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. The following are examples of the types of security threats you can investigate and remediate using the **Files** page: 
+
+How to secure externally shared files labeled as **confidential**:
+After you connect Office 365, Google Apps, Box, Dropbox, or Salesforce to Cloud App Security, you can integrate with Azure Inforamtion Protection. Then, in the **Files** page, filter for files labeled **confidential**. If you see that there are **confidential** files that are shared outside your organization, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them and apply automatic governance actions to them, such as **Put in user quarantine** to quarantine the file and prevent data loss to your organization.
+
+ ![File filter confidential](media/file-filter-confidential.png)
+
+How to secure files shared with unauthorized domains or personal accounts:
+After you connect Office 365, Google Apps, Box or Dropbox to Cloud App Security, in the **Files** page, filter for files whose access level is **Internal** or **Private**. If you see that there are **confidential** files that are shared with external domains or personal accounts, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them and apply automatic governance actions to them, such as **Remove external users** to prevent data loss to your organization.
+
+ ![File filter unauthorized](media/file-filter-unauth.png)
+
 The Files log can be filtered to enable you to find specific files. 
 The basic filter provides you with great tools to get started filtering your files.
 
@@ -45,7 +58,11 @@ Cloud App Security's built in DLP engines perform content inspection by extracti
 
 Below is a list of the file filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
 > [!NOTE] 
-> When using the file policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores to search. Enclosing words in quotation marks functions like AND, so, for example, if you search for **"malware"** **"virus"**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe and it will not find malware.exe. Spaces between words function like OR, so, for example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both malware-virus.exe and virus.exe.   **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
+> When using the file policy filters, **Contains**  will search only for **full words** – separated by comas, dots, spaces or underscores to search. 
+> - Spaces between words function like OR, for example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both malware-virus.exe and virus.exe.  
+> - If you want to search for a string, enclose the words in quotation marks. This functions like AND, for example: if you search for **"malware"** **"virus"**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe and it will not find malware.exe. However, it will search for the exact string. If you search for **"malware virus"** it will not find **"virus"** or **"virus_malware"**.
+
+>**Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
 
 -   Access level – Sharing access level; public, external, internal or private.  For more information about External files, see [General Setup, Set up the portal](getting-started-with-cloud-app-security.md)
 Internal are any files within the Internal domains you set in [General setup](General-setup.md). External are any files saved in locations that are not within the internal domains you set. Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
