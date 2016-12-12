@@ -107,12 +107,10 @@ Each policy is composed of the following parts:
   
 -   File filters – Enable you to create very granular conditions based on metadata.  
   
--   Content inspection – Enable you to narrow down the policy, based on DLP engine results.  
+-   Content inspection – Enable you to narrow down the policy, based on DLP engine results. You can include a custom expression or a preset expression. Exclusions can be set and you can choose the number of matches. You can also use anonymization to mask the username. 
   
 -   Actions – The policy provides a set of governance actions that can be automatically applied when violations are found.  These are divided into collaboration actions, security actions and investigation actions.
 
-![file governance drop down](./media/file-governance-drop-down.png)
-  
 -   Extensions  
   
     > [!NOTE]  
