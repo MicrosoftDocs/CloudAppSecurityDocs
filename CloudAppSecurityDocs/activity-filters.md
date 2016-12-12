@@ -26,6 +26,15 @@ ms.suite: ems
 
 ---
 # Activities
+To provide data protection, Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it is updated constantly with new activities. You can create policies based on the activities and then define what you want to be alerted about. You can also search for activities performed on certain files. The type of activities and the information we get for each activity depends based on the app and what kind of data the app can provide. 
+
+For example, you can use the **Activity** log to find users in your organization who are using operating systems or browsers that are out of date, as follows:
+After you connect Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services or Salesforce to Cloud App Security in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**. If you see that there are **confidential** files that are shared outside your organization, you can click **New policy from search** to create an activity policy that detects outdated browsers and operating systems and automatically notify the users.
+
+ ![Activity outdated browser example](media/activity-outdated-example.png)
+
+ 
+
 The activity log can be filtered to enable you to find specific activities. 
 The basic filter provides you with great tools to get started filtering your activities.
 
