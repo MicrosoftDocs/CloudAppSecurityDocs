@@ -121,7 +121,7 @@ To create a policy based on investigation results, perform the following:
   
 2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **Activity** and select **Admin logon**. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate and VPN IP addresses.  
   
-     ![](./media/create-file-from-investigation.png)  
+     ![Create file from investigation](./media/create-file-from-investigation.png)  
   
 3.  In the upper right corner of the console, click **New policy from search**![](./media/new-policy-from-search-button.png)  
   
@@ -148,7 +148,19 @@ To create a policy based on investigation results, perform the following:
 >   
 >  [Cloud Discovery policies](cloud-discovery-policies.md)  
   
+## Enable and disable policies
 
+After you create a policy, you can enable or disable it. This avoids the need to delete a policy after you create it in order to stop it. Instead, if for some reason you want to stop the policy, simply disable it until you choose to enable it again.
+
+- To enable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to enable, and select **Enable**. 
+
+![Enable policy](./media/enable-policy.png)
+
+- To disable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to disable, and select **Disable**.
+
+![Disable policy](./media/disable-policy.png)
+
+By default, after you create a new policy, it is enabled.
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   

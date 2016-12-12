@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -86,7 +86,7 @@ This feature is available if you have a standalone license for Cloud App Securit
 To enable automatic scans for file tags for new files:
 
 1. In Cloud App Security, go to the **General settings** page.
-2. Under Azure security settings select **Automatically scan files for Azure Information Protection classification labels**. 
+2. Under Azure Information Protection, select **Automatically scan files for Azure Information Protection classification labels**. 
 After it's enabled, all new files that are added to Office 365, not only the ones that are scanned for content by a file policy, will be scanned for file tags as well.
 
 ![enable azure information protection](./media/enable-azip.png)
