@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,13 +36,40 @@ Cloud App Security is a critical component of the Microsoft Cloud Security stack
 
 ## The Cloud App Security framework  
 
-|       |   |   |
-|-------|---|:---|
-|![Discover](./media/discovery-icon.png)|Discover|Uncover shadow IT with Cloud App Security. Gain visibility by discovering apps, activities, users, data, and files in your cloud environment. Discover third-party apps that are connected to your cloud.|
-|![Investigate](./media/investigate-icon.png)|Investigate|Investigate your cloud apps by using cloud forensics tools to deep-dive into risky apps, specific users, and files in your network. Find patterns in the data collected from your cloud. Generate reports to monitor your cloud.|
-|![Control](./media/control-icon.png)|Control|Mitigate risk by setting policies and alerts to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.|
-|![Protect](./media/protect-icon.png)|Protect|Use Cloud App Security to sanction or unsanction applications, enforce data loss prevention, control permissions and sharing, and generate custom reports and alerts.|
 
+**Cloud Discovery** Discover all cloud use in your organization. 
+    Shadow IT reporting and control:
+    - Discover all cloud apps in your network, from all devices​
+    - Investigate and dive into specific apps, users, source IP addresses and more​
+    - Manage and control cloud usage by blocking, sanctioning and protecting apps​
+    Risk assessment:
+    - Understand the cloud risks of 13,000+ cloud apps ​
+    - Based on 60+ security and compliance risk factors​
+    Alert on risky cloud use:
+    - Get alerts on anomalous  users usage patterns, new apps and trending apps​
+**Information Protection** Monitor and control your data in the cloud. 
+    Gain visibility into the cloud
+    - Gain visibility including sharing level and sensitivity level
+    - Quantify exposure and risk
+    - Detect all 3rd party app access to your data
+    Enforce DLP policies and control sharing
+    - Govern data in the cloud with granular DLP policies
+    - Leverage Microsoft and 3rd party DLP engines for classification
+    Alerting and investigation
+    - Identify policy violations
+    - Investigate incidents and related activities
+    - Automate remediation including quarantine and permission removal
+**Threat Protection** Detect anomalous use and security incidents. Mitigate risk by setting policies and alerts to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.
+    Behavioral analytics:
+    - Out-of-the-box detection of suspicious activities
+    - Anomaly detection engine based on 20+ risk factors
+    Advanced investigation:
+    - Advaced indident investigation tools
+    - Pivot on users, files, activities and locations
+    - Customize detections based on your findings
+    Threat intelligence
+    - Leverage Microsoft's leading threate intelligence feed
+    - Unique insights, informed by trilions of signals across Microsoft's customer base
 
 ## Architecture  
 
