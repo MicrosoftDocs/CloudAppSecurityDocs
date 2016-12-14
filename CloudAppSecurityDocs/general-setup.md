@@ -37,13 +37,14 @@ The following procedure gives you instructions for customizing the Cloud App Sec
   
      It is important that you provide an **Organization display name** for your organization. It will be displayed on emails and web pages sent from the system.  
   
-     Provide an **Environment  name** (tenant). This is especially important if you manage multiple tenants.  
+     Provide an **Environment name** (tenant). This is especially important if you manage multiple tenants.  
   
-     Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
+4. It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
+
+4.  Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
 > [!NOTE] 
-> Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
-   
-It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
+> - Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
+> - If you are integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for infomration. 
   
 4.  **Activity log email privacy settings**  
   
@@ -84,7 +85,6 @@ To set up your preferences as an admin of Cloud App Security, click your name in
 > The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
   
   ![notification settings](./media/notification-settings.png "notification settings")  
-  
   
 3. When you are done, click **Save**.  
   
@@ -159,62 +159,63 @@ Configure the following:
   
          %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
   
-     The following is a sample email template:  
-  
-    ```  
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-    <html>  
-    <head>  
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-    </head>  
-    <body class="end-user">  
-    <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
-      <tr>  
-        <td align="center">  
-          <!--[if (gte mso 9)|(IE)]>  
-          <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
+     The following is a sample email template: 
+
+
+           
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+          <html>  
+          <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+          </head>  
+          <body class="end-user">  
+          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
             <tr>  
-              <td>  
-          <![endif]-->  
-          <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
-            <tr>  
-              <td align="right" id="header-table-cell">  
-                <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
-              </td>  
-            </tr>  
-            <tr>  
-              <td style="padding-top: 58px;" align="center" valign="top">  
-                <table width="100%" cellpadding="12">  
+              <td align="center">  
+                <!--[if (gte mso 9)|(IE)]>  
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
                   <tr>  
-                    <td align="center" class="round-title">  
-                      %%title%%  
+                    <td>  
+                <![endif]-->  
+                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
+                  <tr>  
+                    <td align="right" id="header-table-cell">  
+                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
                     </td>  
                   </tr>  
+                  <tr>  
+                    <td style="padding-top: 58px;" align="center" valign="top">  
+                      <table width="100%" cellpadding="12">  
+                        <tr>  
+                          <td align="center" class="round-title">  
+                            %%title%%  
+                          </td>  
+                        </tr>  
+                      </table>  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
+                        %%content%%  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td class="last-row"></td>  
+                  </tr>  
                 </table>  
+                <!--[if (gte mso 9)|(IE)]>  
+                </td>  
+                </tr>  
+                </table>  
+                  <![endif]-->  
               </td>  
-            </tr>  
-            <tr>  
-              <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
-                  %%content%%  
-              </td>  
-            </tr>  
-            <tr>  
-              <td class="last-row"></td>  
-            </tr>  
+              </tr>  
           </table>  
-          <!--[if (gte mso 9)|(IE)]>  
-          </td>  
-          </tr>  
-          </table>  
-          <![endif]-->  
-        </td>  
-      </tr>  
-    </table>  
-    </body>  
-    </html>  
-  
-    ```  
+            </body>  
+          </html>  
+         
+
   
 3.  Click **Upload a template...** and select the file you created.  
   
