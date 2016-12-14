@@ -37,13 +37,15 @@ The following procedure gives you instructions for customizing the Cloud App Sec
   
      It is important that you provide an **Organization display name** for your organization. It will be displayed on emails and web pages sent from the system.  
   
-     Provide an **Environment  name** (tenant). This is especially important if you manage multiple tenants.  
+     Provide an **Environment name** (tenant). This is especially important if you manage multiple tenants.  
   
-     Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
+4. It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
+
+4.  Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
 > [!NOTE] 
 > Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
    
-It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
+If you are integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for infomration. 
   
 4.  **Activity log email privacy settings**  
   
@@ -159,8 +161,9 @@ Configure the following:
   
          %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
   
-     The following is a sample email template:  
-  
+     The following is a sample email template: 
+
+
     ```  
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
     <html>  
@@ -213,8 +216,8 @@ Configure the following:
     </table>  
     </body>  
     </html>  
-  
     ```  
+
   
 3.  Click **Upload a template...** and select the file you created.  
   

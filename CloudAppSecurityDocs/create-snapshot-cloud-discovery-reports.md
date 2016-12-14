@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Create snapshot Cloud Discovery reports
 It is important to upload a log manually and let Cloud App Security parse it before attempting to use the automatic log collector.
+If you don't have a log yet and you want to see a sample of what your log should look like, follow the procedure below, and download a sample log file to see what your log is supposed to look like.
+
 
 To create a snapshot report:
   
@@ -42,6 +44,10 @@ To create a snapshot report:
   
 4.  Select the **Data source** from which you want to upload the log files.  
   
+5. Verify your log format to make sure that it is formatted properly according to the sample you can download. Click **View and verify** and then click **Download sample log**. Then compare your log with the sample provided to make sure it's compatible. 
+
+ ![Verify your log format](./media/cloud-discovery-snapshot-report.png)  
+
 5.  **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
   
 6.  Click **Create**.  
