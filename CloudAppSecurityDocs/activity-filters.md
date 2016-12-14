@@ -49,7 +49,8 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 -   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect MCAS to your SIEM (using the SIEM agent), and you want to further investigate alerts within the MCAS portal.  
   
--   Activity objects – Search for files, folders or site URLs, or target objects (file/folder).
+-   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects.
+    - Activity object ID - the ID of the object (file, folder, user or app ID).
     - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.
     - Target object (file/folder) - Enables you to select a specific file or folder. 
     
