@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,22 @@ ms.suite: ems
 ---
 
 # Release notes
+
+## Cloud App Security release 86
+Released December 13, 2016
+
+**New features**
+- All Cloud App Security standalone licenses provide you with the ability to enable Azure Information Protection scanning from the general settings (without the need to create a policy). 
+ 
+**Improvements**
+- You can now use “or” in the file filter for the file name and in the MIME type filter for files and policies. This enables scenarios such as entering the word “passport” OR “driver” when creating a policy with PII, and it will match any file that has “passport” or “driver” in the filename. 
+- By default, when a DLP content inspection policy runs, the data in the resulting violations is masked. You can now unmask the last 4 characters of the violation. 
+
+**Minor improvements**
+- New Office 365 (Exchange) mailbox related events having to do with forwarding rules and adding and removing delegate mailbox permissions.
+- New event that audits the granting of consent to new apps in Azure Active Directory. 
+
+
 
 
 ## Cloud App Security release 85
