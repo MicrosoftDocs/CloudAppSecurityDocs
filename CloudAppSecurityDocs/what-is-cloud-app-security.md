@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,7 +38,7 @@ Cloud App Security is a critical component of the Microsoft Cloud Security stack
 
 - **Cloud Discovery**: Discover all cloud use in your organization, including Shadow IT reporting and control and risk assessment.
     
-- **Information Protection**: Monitor and control your data in the cloud by gaining visibility, enforcing DLP policies, alerting and investigation. 
+- **Data Protection**: Monitor and control your data in the cloud by gaining visibility, enforcing DLP policies, alerting and investigation. 
     
 - **Threat Protection**: Detect anomalous use and security incidents. Use behavioral analytics and advanced investigation tools to mitigate risk and set policies and alerts to achieve maximum control over network cloud traffic.
 

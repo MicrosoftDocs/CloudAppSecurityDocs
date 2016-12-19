@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -41,7 +41,8 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 3.  In the **New project** screen:  
   
-    1.  Name your project **Cloud App Security for Google**.  
+    1.  Name your project as follows:</br>
+    **Cloud App Security for Google** 
   
     2.  Select whether or not you want to subscribe to updates.  
   
