@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,19 +29,18 @@ ms.suite: ems
 # Files
 
 
-To provide data protection, Cloud App Security gives you visibility into all the files from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. Use the **Files** page to gain control over your data and to help you understand what policies you should create. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. 
+To provide data protection, Cloud App Security gives you visibility into all the files from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. 
 
 For example, you can use the **Files** page to secure externally shared files labeled as **confidential**, as follows:
-After you connect Office 365, Google Apps, Box, Dropbox, or Salesforce to Cloud App Security, you can integrate with Azure Inforamtion Protection. Then, in the **Files** page, filter for files labeled **confidential**. If you see that there are **confidential** files that are shared outside your organization, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them and apply automatic governance actions to them, such as **Put in user quarantine** to quarantine the file and prevent data loss to your organization.
+After you connect an app to Cloud App Security, you can integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **confidential**. If you see that there are **confidential** files that are shared outside your organization by filtering the **Collaborators** filter to exclude your domain, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them and apply automatic governance actions to them, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
 
  ![File filter confidential](media/file-filter-confidential.png)
 
-Here's another example in which you can use the **Files** page to secure files shared with unauthorized domains or personal accounts:
-After you connect Office 365, Google Apps, Box or Dropbox to Cloud App Security, in the **Files** page, filter for files whose access level is **Internal** or **Private**. If you see that there are **confidential** files that are shared with external domains or personal accounts, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them, click **New policy from search** and apply automatic governance actions to them, such as **Remove external users** to prevent data loss to your organization.
+Here's another example in which you can use the **Files** page to make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last 6 months:
+After you connect an app to Cloud App Security, in the **Files** page, filter for files whose access level is **External** or **Public** and set the **Last modified** date to 6 months ago. You can create a file policy that detects thest stale public files by clicking **New policy from search** and apply automatic governance actions to them, such as **Remove external users** to prevent data loss to your organization.B
 
- ![File filter unauthorized](media/file-filter-unauth.png)
+ ![File filter stale external](media/file-example-stale-external.png)
 
-The Files log can be filtered to enable you to find specific files. 
 The basic filter provides you with great tools to get started filtering your files.
 
  ![basic file log filter](media/file-log-filter-basic.png)
