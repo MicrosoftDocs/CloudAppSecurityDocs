@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,40 +36,11 @@ Cloud App Security is a critical component of the Microsoft Cloud Security stack
 
 ## The Cloud App Security framework  
 
-
-**Cloud Discovery** Discover all cloud use in your organization. 
-    Shadow IT reporting and control:
-    - Discover all cloud apps in your network, from all devices​
-    - Investigate and dive into specific apps, users, source IP addresses and more​
-    - Manage and control cloud usage by blocking, sanctioning and protecting apps​
-    Risk assessment:
-    - Understand the cloud risks of 13,000+ cloud apps ​
-    - Based on 60+ security and compliance risk factors​
-    Alert on risky cloud use:
-    - Get alerts on anomalous  users usage patterns, new apps and trending apps​
-**Information Protection** Monitor and control your data in the cloud. 
-    Gain visibility into the cloud
-    - Gain visibility including sharing level and sensitivity level
-    - Quantify exposure and risk
-    - Detect all 3rd party app access to your data
-    Enforce DLP policies and control sharing
-    - Govern data in the cloud with granular DLP policies
-    - Leverage Microsoft and 3rd party DLP engines for classification
-    Alerting and investigation
-    - Identify policy violations
-    - Investigate incidents and related activities
-    - Automate remediation including quarantine and permission removal
-**Threat Protection** Detect anomalous use and security incidents. Mitigate risk by setting policies and alerts to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.
-    Behavioral analytics:
-    - Out-of-the-box detection of suspicious activities
-    - Anomaly detection engine based on 20+ risk factors
-    Advanced investigation:
-    - Advaced indident investigation tools
-    - Pivot on users, files, activities and locations
-    - Customize detections based on your findings
-    Threat intelligence
-    - Leverage Microsoft's leading threate intelligence feed
-    - Unique insights, informed by trilions of signals across Microsoft's customer base
+- **Cloud Discovery**: Discover all cloud use in your organization, including Shadow IT reporting and control and risk assessment.
+    
+- **Data Protection**: Monitor and control your data in the cloud by gaining visibility, enforcing DLP policies, alerting and investigation. 
+    
+- **Threat Protection**: Detect anomalous use and security incidents. Use behavioral analytics and advanced investigation tools to mitigate risk and set policies and alerts to achieve maximum control over network cloud traffic.
 
 ## Architecture  
 

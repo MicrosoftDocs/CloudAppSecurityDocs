@@ -8,7 +8,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.suite: ems
 ---
 
 # Deploy Cloud App Security
-Cloud App Security can help you take advantage of the benefits of cloud applications, but maintain control of corporate resources. It works by improving visibility of cloud activity, and helping to increase the protection of corporate data. In this topic, we walk you through the steps you take to set up and work with Cloud App Security.  
+Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity, and helping to increase the protection of corporate data. In this topic, we walk you through the steps you take to set up and work with Cloud App Security.  
 
 Your organization must have a license to use Cloud App Security. For more information, see the Licensing resources section in [How to buy Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
 
@@ -56,7 +56,7 @@ To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.
   
 Alternatively, you can access the portal through the **Office 365 Admin center** by clicking the Admin centers icon ![O365 admin centers icon](./media/o365-admin-centers-icon.png "O365 admin centers icon") followed by **Cloud App Security**.  
   
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
+![Access from O365](./media/access-from-o365.png "Access from O365")  
   
 
 
