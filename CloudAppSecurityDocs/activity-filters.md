@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,16 +26,18 @@ ms.suite: ems
 
 ---
 # Activities
-To provide data protection, Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it is updated constantly with new activities. You can create policies based on the activities and then define what you want to be alerted about. You can also search for activities performed on certain files. The type of activities and the information we get for each activity depends based on the app and what kind of data the app can provide. 
+To provide threat protection, Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it is updated constantly with new activities. The **Activity log** can be filtered to enable you to find specific activities. You can create policies based on the activities and then define what you want to be alerted about and act on. You can also search for activities performed on certain files. The type of activities and the information we get for each activity depends on the app and what kind of data the app can provide. 
 
-For example, you can use the **Activity** log to find users in your organization who are using operating systems or browsers that are out of date, as follows:
-After you connect Office 365, Google Apps, Box, Dropbox, Okta, Amazon Web Services or Salesforce to Cloud App Security in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**. If you see that there are **confidential** files that are shared outside your organization, you can click **New policy from search** to create an activity policy that detects outdated browsers and operating systems and automatically notify the users.
+For example, you can use the **Activity log** to find users in your organization who are using operating systems or browsers that are out of date, as follows:
+After you connect an app to Cloud App Security in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**.
 
- ![Activity outdated browser example](media/activity-outdated-example.png)
+ ![Activity outdated browser example](media/activity-example-outdated.png)
+
+If you want to check whether there are **confidential** files accessed outside your organization, set the **Activity object** filter to search for **Classification label** and select the **confidential** label. Set the  **IP address** filter to search for **Category** and exclude your office IP addresses (IP categories can be configured in the **Settings** menu). You can click **New policy from search** to create an activity policy based on the filters you defined, and automatically notify the users.
+
+ ![Activity confidential files external example](media/activity-example-ip.png)
 
  
-
-The activity log can be filtered to enable you to find specific activities. 
 The basic filter provides you with great tools to get started filtering your activities.
 
  ![basic activity log filter](media/activity-log-filter-basic.png)
@@ -114,7 +116,7 @@ You can view more information about each activity, by clicking on the Activity i
 
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
   
-For a list of governance actions available, see [Activity match parameters](governance-actions.md#activity-match-parameters).
+For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
 
 
 ## See Also  
