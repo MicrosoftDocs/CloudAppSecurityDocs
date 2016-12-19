@@ -69,23 +69,24 @@ The following governance actions can be taken either on a specific file, user or
   
  
 ## Activity governance actions  
-Notifications  
+
+- Notifications  
   
--   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
+    -   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
   
--   User email notification – Email messages can be customized and will be sent to all violating file owners.  
+    -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
   
--   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
+    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
   
--   Notify additional users – Specific list of email addresses that will receive these notifications.  
+    -   Notify additional users – Specific list of email addresses that will receive these notifications.  
   
-Governance actions in apps  
+- Governance actions in apps  
   
--   Granular actions can be enforced per app, specific actions vary depending on app terminology.  
+    -   Granular actions can be enforced per app, specific actions vary depending on app terminology.  
   
--   Suspend user – suspend the user from the application.  
+    -   Suspend user – suspend the user from the application.  
   
--   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
+    -   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
   
      ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
@@ -102,7 +103,7 @@ After creating multiple policies, a situation may arise in which the governance 
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
 
 The following is the full list of actions the Cloud App Security portal enables you to take. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
-For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md) 
+For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md).
 
 **Location**|**Target object type**|**Governance action**|**Description**|**Related connectors** 
 ---------|---------|---------|---------|---------

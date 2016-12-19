@@ -36,8 +36,8 @@ After you connect an app to Cloud App Security, you can integrate with Azure Inf
 
  ![File filter confidential](media/file-filter-confidential.png)
 
-Here's another example in which you can use the **Files** page to make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last 6 months:
-After you connect an app to Cloud App Security, in the **Files** page, filter for files whose access level is **External** or **Public** and set the **Last modified** date to 6 months ago. You can create a file policy that detects thest stale public files by clicking **New policy from search** and apply automatic governance actions to them, such as **Remove external users** to prevent data loss to your organization.B
+Here's another example of how you can utilize the **Files** page. To make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last 6 months:
+After you connect an app to Cloud App Security, in the **Files** page, filter for files whose access level is **External** or **Public** and set the **Last modified** date to 6 months ago. You can create a file policy that detects thest stale public files by clicking **New policy from search** and apply automatic governance actions to them, such as **Remove external users** to prevent data loss to your organization.
 
  ![File filter stale external](media/file-example-stale-external.png)
 
