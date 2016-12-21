@@ -37,6 +37,8 @@ You can now integrate Cloud App Security with your SIEM server to enable central
 - A standard Windows or Linux server (can be a virtual machine).
 - The server must be running Java 8; earlier versions are not supported.
 
+## Integrating with your SIEM
+
 To integrate Cloud App Security with your SIEM agent:
 
 1. In the Cloud App Security portal, under the Settings cog, click **SIEM agents**.
@@ -58,15 +60,22 @@ Click **Next**.
 
 7. Copy the token and save it for later. 
 After you do this, you will see the SIEM server you added in the table. It will show that it's **Created** until it’s connected later.
+If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table, and selecting **Regenerate token**.
+
+ ![SIEM - regenerate token](./media/siem-regenerate-token.png)
 
 8. Run the .jar file on your SIEM server that is running Java 8 – this will not work with earlier versions.
  After running the file, you will be asked to provide the token you saved in the previous step as well as information for your proxy to access the internet (host:port) and the path to the local log files. 
 If you don't complete this step, the SIEM agent will not write logs.
 
+9. If you need to delete or edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit** or **Delete**.
+
+![SIEM - edit or delete](./media/siem-edit-delete.png)
+
 Agent notificiation – the agent can send errors and notifications (for example, if the Java agent can’t reach the syslog server) back to the back end. 
 
 
-If you click on the three dots, you can delete, edit or disable the agent if you need to change something. 
+
 
 
 
