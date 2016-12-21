@@ -76,9 +76,21 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 -   IP address – The raw IP address, category or tag from which the activity was performed.  
     - Raw IP address - Enables you to search for activities that were performed on or by raw IP addresses that equal, don't equal or start with or don't start with a particular sequence, or raw IP addresses that are or are not set. 
-    - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
-    - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).
-  
+    - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. The categories need to be configured to include the relevant IP addresses, except for the "Risky" category which is pre-configured and includes two IP tags - Anonymous proxy and Tor. To learn how to configure the IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
+    - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. Cloud App Security creates a set of built-in IP tags that are not configurable. In addition, you can configure your own IP tags. For more information about configuring your own IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).
+   The built-in IP tags include:
+    - Microsoft apps (14 of them)
+    - Anonymous proxy
+    - Botnet
+    - Darknet scanning IP
+    - Malware C&C server
+    - Remote Connectivity Analyzer
+    - Sattelite providers
+    - Smart proxy and access proxy (left out on purpose)
+    - Tor exit nodes
+    - Zscaler
+
+
 -   Impersonated activity – Search only for activities that were performed in the name of another user.  
 
 -   Location – The country from which the activity was performed.  

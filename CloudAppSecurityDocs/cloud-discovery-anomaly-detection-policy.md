@@ -34,7 +34,7 @@ A Cloud discovery anomaly detection policy enables you to setup and configure co
   
 For each policy you can set filters that enable you to selectively monitor application usage, based on an application filter, selected data views, and a selected start date. You can also set the sensitivity, which enables you to set how many alerts the policy should trigger.  
 
-For each policy, set the following?
+For each policy, set the following:
 
 1. Decide if you want to base the policy on a template, relevant policy templates are the **Anomlylous behavior in discovered users** template which alerts when anomalous behavior is detected in discovered users and apps, such as: large amounts of uploaded data compared to other users, large user transactions compared to the user's history. You can also select the **Anomalous behavior of discovered IP addresses** template, which alerts when anomalous behavior is detected in discovered IP addresses and apps, such as: large amounts of uploaded data compared to other IP addresses, large app transactions compared to the IP address's history. 
  
@@ -62,7 +62,7 @@ You can select a specific app, an app **Category**, or filter by **Name**, **Dom
   
 5. Under **Alerts** you can set the alert sensitivity. There are a number of ways to control the number of alerts triggered by the policy:  
   
-    -   The **Select anomaly detection sensitivity** slider – choose how many alerts to trigger per 1,000 users per week. The alerts will be triggered for the activities with the highest risk.  
+    -   The **Select anomaly detection sensitivity** slider – Trigger alerts for the top X anomalous activities per 1,000 users per week. The alerts will be triggered for the activities with the highest risk.  
   
     -   **Daily alert limit** – restrict the number of alerts raised on a single day. You can select whether to **Send alert as email**, **Send alert as text message or both**. Messages sent by text message will be limited to 10 per day, for the UTC time zone, meaning that the 10 message limit resets at midnight in the UTC time zone.
 

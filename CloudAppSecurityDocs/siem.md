@@ -79,6 +79,14 @@ TOKEN is the SIEM agent token you copied in the previous step.
 You can type -h at any time to get help.
 The following SIEM agent logs are written to the local log file:
 
+|----|----|
+|General error during bootstrap|Unexpected error during agent bootstrap!|
+|Startup|Initializing agent...|
+|Startup finished, starting main loop|Initialization complete|
+|Too many critical errors|Got too many critical errors connecting the console. Shutting down|
+|Invalid token|The token provided is invalid|
+|Invalid proxy address|The proxy address provided is invalid|
+
 9. If you need to delete or edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit** or **Delete**.
 
 ![SIEM - edit or delete](./media/siem-edit-delete.png)
