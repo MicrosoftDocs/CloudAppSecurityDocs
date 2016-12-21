@@ -28,7 +28,7 @@ ms.suite: ems
 
 # SIEM integration - - PUBLIC PREVIEW - - 
     
-You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent pushes alerts and activities from Cloud App Security and streams them into the SIEM server.
+You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Cloud App Security and streams them into the SIEM server.
 
 
 
@@ -46,7 +46,7 @@ To integrate Cloud App Security with your SIEM agent:
 2. Click Add SIEM agent to start the wizard.
 3. In the wizard, click **Add SIEM agent**.	
 4. In the wizard, fill in a name, and **Select your SIEM format**:
--	You can select **HP ArcSight (CEF)** . Click **Advanced settings** to **Include system name** in the Syslog message header of the local system that is running the agent. 
+-	You can select **HP ArcSight** . Click **Advanced settings** to **Include system name** in the Syslog message header of the local system that is running the agent. 
 -	You can select **Generic CEF** which enables you to add customized settings to the Syslog message header specifying a time format, PRI (priority code) and system name.
 Click **Next**.
 
@@ -60,14 +60,14 @@ You can click **Edit and preview results** to check that the filter works as exp
 Click **Next**. 
 
 7. Copy the token and save it for later. 
-After you do this, you will see the SIEM server you added in the table. It will show that it's **Created** until it’s connected later.
+After you do this, you will see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
 If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table, and selecting **Regenerate token**.
 
  ![SIEM - regenerate token](./media/siem-regenerate-token.png)
 
 8. Download the .jar file from ????.
 
-8. Run the .jar file on your SIEM server that is running Java 8 – this will not work with earlier versions.
+8. Run the .jar file on your SIEM server.
  After running the file, run the following:
     
     jar cas siemagent [--logsDirectory <DIRNAME>] [--proxy <ADDRESS[:PORT]>] --token <TOKEN>
@@ -87,7 +87,7 @@ The following SIEM agent logs are written to the local log file:
 |Invalid token|The token provided is invalid|
 |Invalid proxy address|The proxy address provided is invalid|
 
-9. If you need to delete or edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit** or **Delete**.
+9. If you need to delete or edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit** or **Delete**. If you edit the SIEM agent, you do not need to rerun the .jar file, it updates automatically.
 
 ![SIEM - edit or delete](./media/siem-edit-delete.png)
 
