@@ -26,9 +26,9 @@ ms.suite: ems
 
 ---
 
-# SIEM integration - - PUBLIC PREVIEW
+# SIEM integration - - PUBLIC PREVIEW - - 
     
-You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of events and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent pushes events and activities from Cloud App Security and streams them in CEF format into the SIEM logger to enable you to include your Cloud App Security logs in your SIEM. To integrate Cloud App Security with your SIEM, you must perform the following to take the Cloud App Security logs from the and send them to your SIEM service using Syslog TCP or UDP. 
+You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent pushes alerts and activities from Cloud App Security and streams them into the SIEM server.
 
 
 
@@ -54,8 +54,9 @@ Click **Next**.
 You can work with your security admin to get these details if you don't have them.
 Click **Next**.
 
-6. Select which data types, **Alerts** and **Activities** you want to export to your SIEM server.
-Use the slider to enable and disable them and then use the **Apply to** dropdown to set filters to send only specific alerts and activities to your SIEM server.
+6. Select which data types, **Alerts** and **Activities** you want to export to your SIEM server. 
+Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** dropdown to set filters to send only specific alerts and activities to your SIEM server.
+You can click **Edit and preview results** to check that the filter works as expected. 
 Click **Next**. 
 
 7. Copy the token and save it for later. 
@@ -63,6 +64,8 @@ After you do this, you will see the SIEM server you added in the table. It will 
 If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table, and selecting **Regenerate token**.
 
  ![SIEM - regenerate token](./media/siem-regenerate-token.png)
+
+8. Download the .jar file from ????.
 
 8. Run the .jar file on your SIEM server that is running Java 8 – this will not work with earlier versions.
  After running the file, you will be asked to provide the token you saved in the previous step as well as information for your proxy to access the internet (host:port) and the path to the local log files. 
@@ -72,7 +75,7 @@ If you don't complete this step, the SIEM agent will not write logs.
 
 ![SIEM - edit or delete](./media/siem-edit-delete.png)
 
-Agent notificiation – the agent can send errors and notifications (for example, if the Java agent can’t reach the syslog server) back to the back end. 
+
 
 
 
