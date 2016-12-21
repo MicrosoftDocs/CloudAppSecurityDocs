@@ -49,18 +49,16 @@ You can select a specific app, an app **Category**, or filter by **Name**, **Dom
   
         -   When selecting **All continuous reports**, each usage increase is compared to the normal usage pattern as learned from all the data views.  
   
-         -   When selecting **Specific continuous reports**, each usage increase is compared to the normal usage pattern as learned from the same data view as the increase was observed in.  
+        -   When selecting **Specific continuous reports**, each usage increase is compared to the normal usage pattern as learned from the same data view as the increase was observed in.  
   
     -   **Users and IP addresses** – every cloud application usage is associated either with a user, an IP address, or both.  
   
-          -   Selecting **Users** will ignore the association of application usage with IP addresses if there is any.  
+        -   Selecting **Users** will ignore the association of application usage with IP addresses if there is any.  
   
-         -   Selecting **IP addresses** will ignore the association of application usage with users if there is any.  
+        -   Selecting **IP addresses** will ignore the association of application usage with users if there is any.  
   
-         -   Selecting **Users and IP addresses** (default) will consider both associations, but may produce duplicate alerts when there is a tight correspondence between users and IP addresses.
-
-
-    - Trigger alerts only for suspicious activities occurring after date – any increase in application usage before the selected date will be ignored. However, activity from before the selected date will be learned for the purpose of establishing the normal usage pattern.  
+        -   Selecting **Users and IP addresses** (default) will consider both associations, but may produce duplicate alerts when there is a tight correspondence between users and IP addresses.
+    -   Trigger alerts only for suspicious activities occurring after date – any increase in application usage before the selected date will be ignored. However, activity from before the selected date will be learned for the purpose of establishing the normal usage pattern.  
   
 5. Under **Alerts** you can set the alert sensitivity. There are a number of ways to control the number of alerts triggered by the policy:  
   
