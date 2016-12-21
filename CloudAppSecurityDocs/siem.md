@@ -68,8 +68,16 @@ If you lose the token, you can always regenerate it by clicking the three dots a
 8. Download the .jar file from ????.
 
 8. Run the .jar file on your SIEM server that is running Java 8 – this will not work with earlier versions.
- After running the file, you will be asked to provide the token you saved in the previous step as well as information for your proxy to access the internet (host:port) and the path to the local log files. 
-If you don't complete this step, the SIEM agent will not write logs.
+ After running the file, run the following:
+    
+    jar cas siemagent [--logsDirectory <DIRNAME>] [--proxy <ADDRESS[:PORT]>] --token <TOKEN>
+
+Where DIRNAME is the path to the directory you want to use for local agent debug logs.
+ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
+TOKEN is the SIEM agent token you copied in the previous step.
+
+You can type -h at any time to get help.
+The following SIEM agent logs are written to the local log file:
 
 9. If you need to delete or edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit** or **Delete**.
 
