@@ -46,8 +46,7 @@ To integrate Cloud App Security with your SIEM agent:
 2. Click Add SIEM agent to start the wizard.
 3. In the wizard, click **Add SIEM agent**.	
 4. In the wizard, fill in a name, and **Select your SIEM format**:
--	You can select **HP ArcSight** . Click **Advanced settings** to **Include system name** in the Syslog message header of the local system that is running the agent. 
--	You can select **Generic CEF** which enables you to add customized settings to the Syslog message header specifying a time format, PRI (priority code) and system name.
+-	Select the SIEM type and set any **Advanced settings** that are relevant to that format.
 Click **Next**.
 
 5. Type in the IP address of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
