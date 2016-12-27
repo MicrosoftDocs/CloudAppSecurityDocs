@@ -1,18 +1,18 @@
 ---
 # required metadata
 
-title: Create snapshot Cloud Discovery reports | Microsoft Docs
-description: This article provides information about how to upload logs manually to create a snapshot report of your Cloud Discovery apps.
+title: Anonymize Cloud Discovery data | Microsoft Docs
+description: This article provides information about how to anonymize the usernames in your Cloud Discovery data.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
+ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 
 # optional metadata
 
@@ -66,7 +66,7 @@ This page can also be used to look up the encrypted username of a known username
 
     1. Under the Settings cog, select **Cloud Discovery settings**.
     2. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you are performing the resolution.
-    3. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymmized** and enter the original username to resolve. Click **Resolve**. 
+    3. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Click **Resolve**. 
 ![Anonymization](./media/anonymizer.png)
 
 6.	The action is audited in the portal’s **Governance log**. 
