@@ -78,6 +78,10 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 3.  Events are not more than 90 days old.
 4.  The log file is valid and includes outbound traffic information.
  
+## Cloud Discovery data anonymization
+
+Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all could activities are kept anonymous. For more information see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
+
 ## Supported firewalls and proxies
 - Blue Coat Proxy SG - Access log (W3C)
 - Check Point
@@ -126,53 +130,7 @@ Data attributes (according to vendor documentation):
 |Zscaler|**Yes**|No|**Yes**|No|**Yes**|No|
 
 
-## Cloud Discovery data anonymization
-
-Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all could activities are kept anonymous. When necessary, for a specific security investigation (for example, due to a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, he can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal’s **Governance log**.
-
-Key points:
--	No private information is stored or displayed. Only encrypted information.
--	Private data is encrypted using AES-128 with a dedicated key per tenant.
--	Resolving usernames is performed ad-hoc, per-username by deciphering a given encrypted username.
-
-
-How data anonymization works:
-
-1.	[Create a new snapshot report](create-snapshot-cloud-discovery-reports.md) 
-
- ![Anonymize snapshot data](./media/anonymize-log.png)
-
-or [configure automated upload for a new data source](configure-automatic-log-upload-for-continuous-reports.md).  
- ![Anonymize log data](./media/anonymize-autolog.png)
-
-2.	Cloud App Security parses the traffic log and extracts specific data attributes.
-3.	Cloud App Security replaces the  username with an encrypted username.
-4.	It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
-
- ![Anonymize Cloud Discovery dashboard](./media/anonymize-dashboard.png)
- 
-
-5.	For specific investigation, such as investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification. 
-This page can also be used to look up the encrypted username of a known username.  
-
-
-6.	The action is audited in the portal’s **Governance log**. 
-
-![Anonymization](./media/anonymize-gov-log.png)
-
-
-To set anonymization:
-
-1. Under the Settings cog, select **Cloud Discovery settings**.
-2. In the Anonymization tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**.
-
-To investigate a suspicious activity by resolving usernames:
-
-1. Under the Settings cog, select **Cloud Discovery settings**.
-2. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you are performing the resolution.
-3. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymmized** and enter the original username to resolve. Click **Resolve**.
- 
- ![Anonymization](./media/anonymizer.png)
+## See also
  
 [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 

@@ -6,6 +6,7 @@
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
+### [Anonymize Cloud Discovery data](cloud-discovery-anonymizer.md)
 ### [Customize Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Connect Box](connect-box-to-microsoft-cloud-app-security.md)
