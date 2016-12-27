@@ -138,7 +138,7 @@ Key points:
 
 How data anonymization works:
 
-1.	[Create a new snapshot report](create-snapshot-cloud-discovery-report.md) 
+1.	[Create a new snapshot report](create-snapshot-cloud-discovery-reports.md) 
 
  ![Anonymize snapshot data](./media/anonymize-log.png)
 
