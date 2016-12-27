@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,6 +34,10 @@ The **Cloud app catalog** rates risk for your cloud apps based on regulatory cer
 3.	Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
 4.	Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
   
+## Cloud Discovery data anonymization
+
+Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all could activities are kept anonymous. For more information see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
+
 ## Snapshot and continuous risk assessment reports 
 
 There are two types of reports you can generate: 
@@ -92,6 +96,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
 - Sophos SG
+- Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)
 - Websense - Web Security Solutions - Investigative detail report (CSV)
@@ -125,8 +130,7 @@ Data attributes (according to vendor documentation):
 |Zscaler|**Yes**|No|**Yes**|No|**Yes**|No|
 
 
- 
-For more information, see 
+## See also
  
 [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 

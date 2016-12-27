@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/21/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -88,7 +88,7 @@ To set up your preferences as an admin of Cloud App Security, click your name in
   
 3. When you are done, click **Save**.  
   
-##  <a name="IPtagsandRanges"></a> Organize the data according to your needs  
+##  <a name="IPtagsandRanges"></a> Set IP ranges  
 To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges which allow you to tag and categorize appropriately and customize the way logs and alerts are displayed and investigated.   
 Each group of IP ranges can be categorized based on a preset list of IP categories or tagged with your own created IP tags. In addition, this setting allows you to override public geo-location info based on your internal network knowledge.  
   
@@ -110,9 +110,7 @@ In the menu bar, click the settings icon ![settings icon](./media/settings-icon.
   
 4.  Enter a **Registered ISP**. This will override the data in your activities  
   
-5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  
-  
-     Built-in Cloud App Security**IP tags** are set for risky addresses and are constantly updated. These tags include Anonymous proxies, satellite providers, Tor exit nodes, and the Cloud App Security proxy network. These built-in tags are not visible.  
+5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  In addition to the IP tags you configure, Cloud App Security has built-in tags that are not configurable. You can see the list of tags under the [IP tags filter](activity-filters.md).  
   
 6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category, except for the "Risky" category which includes two IP tags - Anonymous proxy and Tor.  
   
