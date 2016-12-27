@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -130,6 +130,9 @@ To delete Cloud Discovery data:
     > [!NOTE]  
     >  The deletion process takes a few minutes and is not immediate.  
 
+
+
+ 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
