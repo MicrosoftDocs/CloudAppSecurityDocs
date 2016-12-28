@@ -32,7 +32,7 @@ ms.suite: ems
 Released December 25, 2016
 
 **New features**
--	We are in the process of rolling out data anonymization so that you can enjoy Cloud Discovery while protecting user privacy. The data anonymization is performed by encrypting username information.
+-	We are in the process of rolling out [data anonymization](cloud-discovery-anonymizer.md) so that you can enjoy Cloud Discovery while protecting user privacy. The data anonymization is performed by encrypting username information.
 -	We are in the process of rolling out the ability to export a blocking script from Cloud App Security to additional appliances. The script will allow you to easily reduce shadow IT by blocking traffic to unsanctioned apps. This option is now available for: 
     -	BlueCoat ProxySG
     -	Cisco ASA
