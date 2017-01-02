@@ -63,6 +63,7 @@ Click **Next**.
 Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** dropdown to set filters to send only specific alerts and activities to your SIEM server.
 You can click **Edit and preview results** to check that the filter works as expected. 
 Click **Next**. 
+
   ![Data types settings](./media/siem3.png)
 
 7. Copy the token and save it for later. 
@@ -72,10 +73,10 @@ After you click Finish and leave the Wizard, back in the SIEM page, you can see 
 
 1. [Download the .zip file from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596) and unzip it.
 
-2. Extract the .jar file from the zip file and run it on your SIEM server.
+2. Extract the .jar file from the zip file and run it on your server.
  After running the file, run the following:
     
-    java -jar siemagent-0.87.20-signed.jar usage: siemagent [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token<TOKEN>
+      java -jar siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
 > [!NOTE]
 > The file name may differ depending on the version of the SIEM agent.
 
@@ -114,7 +115,7 @@ If you need to delete the SIEM agent in the future, you can click on the three d
 ![SIEM - delete](./media/siem-delete.png)
 
 
-### Troubleshooting the SIEM agent
+## Troubleshooting the SIEM agent
 
 If you see one of the following errors in the cmd prompt while running the agent, use the following steps to remediate the problem:
 
