@@ -1,18 +1,19 @@
 ---
 # required metadata
 
-title: Cloud Discovery policies | Microsoft Docs
-description: This topic provides information about working with Cloud Discovery policies.
+title: SIEM integration | Microsoft Docs
+description: This topic provides information integrating your SIEM with Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2016
+ms.date: 1/2/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 7de9ce83-a612-4956-8c17-5d8717ea5474
+ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
+
 
 # optional metadata
 
@@ -30,7 +31,10 @@ ms.suite: ems
     
 You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Cloud App Security and streams them into the SIEM server.
 
-
+Integrating with your SIEM is accomplished in three steps:
+1. Set it up in the Cloud App Security portal 
+2. Download the JAR file and run it on your server
+3. Check that you are getting Cloud App Security activities in your SIEM
 
 ## Prerequisites
 
@@ -39,7 +43,7 @@ You can now integrate Cloud App Security with your SIEM server to enable central
 
 ## Integrating with your SIEM
 
-To integrate Cloud App Security with your SIEM agent:
+### Step 1: Set it up in the Cloud App Security portal
 
 1. In the Cloud App Security portal, under the Settings cog, click **SIEM agents**.
 
@@ -59,17 +63,17 @@ You can click **Edit and preview results** to check that the filter works as exp
 Click **Next**. 
 
 7. Copy the token and save it for later. 
-After you do this, you will see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
-If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table, and selecting **Regenerate token**.
+After you click Finish and leave the Wizard, back in the SIEM page, you can see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
 
- ![SIEM - regenerate token](./media/siem-regenerate-token.png)
+### Step 2: Download the JAR file and run it on your server
 
-8. Download the .jar file from ????.
+1. Download the .zip file and unzip it.
 
-8. Run the .jar file on your SIEM server.
+2. Extract the .jar file from the zip file and run it on your SIEM server.
  After running the file, run the following:
     
-    jar cas siemagent [--logsDirectory <DIRNAME>] [--proxy <ADDRESS[:PORT]>] --token <TOKEN>
+java -jar siemagent-0.87.20-signed.jar usage: siemagent [--logsDirectory <DIRNAME>] [--proxy
+       <ADDRESS[:PORT]>] --token <TOKEN>
 
 Where DIRNAME is the path to the directory you want to use for local agent debug logs.
 ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
@@ -78,22 +82,41 @@ TOKEN is the SIEM agent token you copied in the previous step.
 You can type -h at any time to get help.
 The following SIEM agent logs are written to the local log file:
 
-|----|----|
 |General error during bootstrap|Unexpected error during agent bootstrap!|
+|----|----|
 |Startup|Initializing agent...|
 |Startup finished, starting main loop|Initialization complete|
 |Too many critical errors|Got too many critical errors connecting the console. Shutting down|
 |Invalid token|The token provided is invalid|
 |Invalid proxy address|The proxy address provided is invalid|
 
-9. If you need to delete or edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit** or **Delete**. If you edit the SIEM agent, you do not need to rerun the .jar file, it updates automatically.
+### Check that you are getting Cloud App Security activities in your SIEM
 
-![SIEM - edit or delete](./media/siem-edit-delete.png)
+### Troubleshooting the SIEM agent
+
+If you see one of the following errors, use the following steps to remediate the problem:
+
+|Error|Description|Resolution|
+|----|----|----|
+|**Internal error**|Something unknown went wrong with your SIEM agent.|Contact support.|
+|**Data server send error**|You can get this error if you are working with a Syslog server over TCP. The SIEM agent cannot connect to your Syslog server.  If you get this error, the agent will stop pulling new activities until it’s fixed, so make sure to follow the remediation steps until the error stops appearing.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described below, and make sure you wrote the name of the server properly, and set the right port. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.| 
+|**Data server connection error**| You can get this error if you are working with a Syslog server over TCP. The SIEM agent cannot connect to your Syslog server.  If you get this error, the agent will stop pulling new activities until it’s fixed, so make sure to follow the remediation steps until the error stops appearing.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described below, and make sure you wrote the name of the server properly, and set the right port. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.| 
 
 
+## Regenerating your token
+If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table, and selecting **Regenerate token**.
 
+ ![SIEM - regenerate token](./media/siem-regenerate-token.png)
 
+## Editing your SIEM agent 
+If you need to edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit**. If you edit the SIEM agent, you do not need to rerun the .jar file, it updates automatically.
 
+![SIEM - edit](./media/siem-edit.png)
+
+## Deleting your SIEM agent
+If you need to delete the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
+
+![SIEM - delete](./media/siem-delete.png)
 
 
 
