@@ -27,7 +27,7 @@ ms.suite: ems
 
 ---
 
-# SIEM integration - - PUBLIC PREVIEW - - 
+# SIEM integration -PUBLIC PREVIEW- 
     
 You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Cloud App Security and streams them into the SIEM server.
 
@@ -70,7 +70,7 @@ After you click Finish and leave the Wizard, back in the SIEM page, you can see 
 
 ### Step 2: Download the JAR file and run it on your server
 
-1. Download the .zip file and unzip it.
+1. [Download the .zip file from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596) and unzip it.
 
 2. Extract the .jar file from the zip file and run it on your SIEM server.
  After running the file, run the following:
