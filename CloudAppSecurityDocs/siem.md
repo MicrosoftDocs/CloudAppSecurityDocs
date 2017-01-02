@@ -34,7 +34,7 @@ You can now integrate Cloud App Security with your SIEM server to enable central
 Integrating with your SIEM is accomplished in three steps:
 1. Set it up in the Cloud App Security portal. 
 2. Download the JAR file and run it on your server.
-3. Check that you are getting Cloud App Security activities in your SIEM.
+3. Validate that the SIEM agent is working
 
 ## Prerequisites
 
@@ -85,19 +85,17 @@ TOKEN is the SIEM agent token you copied in the previous step.
 
 You can type -h at any time to get help.
 
-The following SIEM agent statuses will be displayed in the SIEM agent table:
 
 
-
-### Validate that the SIEM agent is working
+### Step 3: Validate that the SIEM agent is working
 
 1. Make sure the status of the SIEM agent in the Cloud App Security portal is not Disconnected and there are no agent notifications. 
  ![SIEM disconnected](./media/siem-not-connected.png)
  
-Instead, the status should be connected, as seen here:
- ![SIEM connected](./media/siem-connected.png)
+   Instead, the status should be connected, as seen here:
+    ![SIEM connected](./media/siem-connected.png)
 
-2. In your Syslog server, make sure you see activities and alerts arriving from Cloud App Security.
+2. In your Syslog/SIEM server, make sure you see activities and alerts arriving from Cloud App Security.
 
 
 ## Regenerating your token
@@ -118,17 +116,17 @@ If you need to delete the SIEM agent in the future, you can click on the three d
 
 ### Troubleshooting the SIEM agent
 
-If you see one of the following errors in the cmd prompt while installing the agent, use the following steps to remediate the problem:
+If you see one of the following errors in the cmd prompt while running the agent, use the following steps to remediate the problem:
 
 |Error|Description|Resolution|
 |----|----|----|
-|General error during bootstrap|Unexpected error during agent bootstrap|Contact support|
-|Too many critical errors|Too many critical errors occurred while connecting the console. Shutting down|Contact support|
-|Invalid token|The token provided is not valid|Make sure you copied the right token. You can use the process above to regenerate the token.|
-|Invalid proxy address|The proxy address provided is not valid|Make sure you entered the right proxy and port. Use the edit process above to change the setting.|
+|General error during bootstrap|Unexpected error during agent bootstrap.|Contact support.|
+|Too many critical errors|Too many critical errors occurred while connecting the console. Shutting down.|Contact support.|
+|Invalid token|The token provided is not valid.|Make sure you copied the right token. You can use the process above to regenerate the token.|
+|Invalid proxy address|The proxy address provided is not valid.|Make sure you entered the right proxy and port.|
 
 
-After creating the agent, if you see one of the following errors in the Cloud App Security portal on the SIEM agent page, use the following steps to remediate the problem:
+After creating the agent, if you see one of the following **Agent notifications** in the Cloud App Security portal on the SIEM agent page, use the following steps to remediate the problem:
 
 |Error|Description|Resolution|
 |----|----|----|
