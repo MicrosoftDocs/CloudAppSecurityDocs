@@ -34,7 +34,8 @@
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 ### [Manage app permissions](manage-app-permissions.md)
 ## [Govern](governance-actions.md)
-## [Integrate](azip-integration.md)
+## Integrate
+### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)
 # [Troubleshoot](troubleshooting.md)
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
