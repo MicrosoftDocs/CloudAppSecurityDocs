@@ -61,10 +61,11 @@ Cloud App Security retains data as follows:
 |----|----|----|
 |Discovery data|90 days|Analysis of traffic logs: IP addresses, Users, Amount of traffic associated with each.|
 |Activity log|180 days|Activities occurring on cloud apps: Activity type, Activity source, Unique activity ID (MCAS ID), User information (Username, Groups, OU), Device information (Type, OS, Browser/app), IP information (IP Address, Location, ISP, Categories and Tags), Activity related objects (Sites, Files, Users, etc.), Impersonation, Raw data (as retrieved from the app).|
-|Files|Unlimited|File metadata - **Actual files are not stored at Cloud App Security**:File identifiers (ID, Name, hashes - for files scanned for DLP using the internal Cloud App Security DLP engine), File type, File MIME type, File owner (Username, Organizational unit), Collaborators, File path, File URL, Created date, Modified date, File size, Matched policies (This includes actual matches. Matches are saved masked by default, unless you selected the option to save the last 4 characters unmasked. The mask is irreversible.), Classification labels, Scan status.|
+|Files|Unlimited|**Actual files are not stored at Cloud App Security** /* File metadata:File identifiers (ID, Name, hashes - for files scanned for DLP using the internal Cloud App Security DLP engine), File type, File MIME type, File owner (Username, Organizational unit), Collaborators, File path, File URL, Created date, Modified date, File size, Matched policies (This includes actual matches. Matches are saved masked by default, unless you selected the option to save the last 4 characters unmasked. The mask is irreversible.), Classification labels, Scan status.|
 |Accounts|Unlimited|Account metadata: Username, Affiliation, Group memberships, Organizational unit, List of associated apps (App name, Email, Role, Last seen, Status), Detailed information as retrieved from apps (Full name, assigned licenses, Location, Title, Department, etc.).|
 |Alerts|180 days|Alerts triggered in Cloud App Security: Alert ID, Alert content (Title, Description), Associated activity IDs, Associated file IDs (for files), Associated apps, Associated accounts, Resolution status. |
 
+/* Files are downloaded, scanned and discarded.
 
 After data is collected from these sources, Cloud App Security runs sophisticated analysis on the data. It immediately alerts you to anomalous activities, and gives you deep visibility into your cloud environment. You can configure a policy in Cloud App Security and use it to protect everything in your cloud environment.  
 
