@@ -119,16 +119,17 @@ Data attributes (according to vendor documentation):
 |Cisco Scansfe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Dell SonicWall|**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Fortigate|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
-|Juniper SRX|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
+|Juniper SRX|No|**Yes**|No|**Yes**\*|**Yes**|**Yes**|
 |McAfee SWG|**Yes**|No|No|**Yes**|**Yes**|**Yes**|
 |Meraki|**Yes**|**Yes**|No|**Yes**|No|No|
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
-|PAN|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
+|Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**\*|**Yes**|**Yes**|
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|
 |Websense - Investigative detail report (CSV)|**Yes**|No|No|**Yes**|No|No|
 |Websense - Internet activity log (CEF)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Zscaler|**Yes**|No|**Yes**|No|**Yes**|No|
 
+\* Cloud Discovery supports IPv6.
 
 ## See also
  
