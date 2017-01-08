@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -63,7 +63,7 @@ The following governance actions can be taken either on a specific file, user or
   
         -   Put in admin quarantine – File is moved to quarantine in the admin drive, and the admin has to approve it.  
   
--   Inherit permissions from parent - This governance action enables you to remove specific permissions set for a file or folder and revert them to whatever permissions are set for the parent folder.
+-   Inherit permissions from parent - This governance action enables you to remove specific permissions set for a file or folder in Office 365 and revert them to whatever permissions are set for the parent folder.
 -   Trash – Move the file to the trash folder.
   
 ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
