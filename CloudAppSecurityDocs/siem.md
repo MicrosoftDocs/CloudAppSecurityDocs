@@ -30,7 +30,8 @@ ms.suite: ems
 # SIEM integration -PUBLIC PREVIEW- 
     
 You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Cloud App Security and streams them into the SIEM server.
-When you first integrate your SIEM with Cloud App Security, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts from then on. Additionally, if you disable this feature for an extended period, when you enable it again it will forward the past two days of alerts and activities and then all alerts and activities from then on.
+
+When you first integrate your SIEM with Cloud App Security, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts (based on the filter you select) from then on. Additionally, if you disable this feature for an extended period, when you enable it again it will forward the past two days of alerts and activities and then all alerts and activities from then on.
 
 Integrating with your SIEM is accomplished in three steps:
 1. Set it up in the Cloud App Security portal. 
@@ -82,9 +83,10 @@ After you click Finish and leave the Wizard, back in the SIEM page, you can see 
 > - The file name may differ depending on the version of the SIEM agent.
 > - Parameters in brackets [] are optional, and should be used only if relevant.
 
-Where DIRNAME is the path to the directory you want to use for local agent debug logs.
-ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
-TOKEN is the SIEM agent token you copied in the previous step.
+Where the following variables are used:
+- DIRNAME is the path to the directory you want to use for local agent debug logs.
+- ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
+- TOKEN is the SIEM agent token you copied in the previous step.
 
 You can type -h at any time to get help.
 
