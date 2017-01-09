@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,27 @@ ms.suite: ems
 ---
 
 # Release notes
+
+## Cloud App Security release 87
+Released December 25, 2016
+
+**New features**
+-	We are in the process of rolling out [data anonymization](cloud-discovery-anonymizer.md) so that you can enjoy Cloud Discovery while protecting user privacy. The data anonymization is performed by encrypting username information.
+-	We are in the process of rolling out the ability to export a blocking script from Cloud App Security to additional appliances. The script will allow you to easily reduce shadow IT by blocking traffic to unsanctioned apps. This option is now available for: 
+    -	BlueCoat ProxySG
+    -	Cisco ASA
+    -	Fortinet
+    -	Juniper SRX
+    -	Palo Alto
+    -	Websense
+-	A new File governance action was added that enables you to force a file to Inherit permissions from parent, deleting any unique permissions that were set for the file or folder. This file governance action enables you to change your file or folder’s permissions to be inherited from the parent folder. 
+-	A new user group was added called External. This is a default user group that is pre-configured by Cloud App Security to include all users who are not part of your internal domains. You can use this user group as a filter, for example you can find activities performed by external users.
+-	The Cloud Discovery feature now supports Sophos Cyberoam appliances.
+ 
+**Bug fixes**
+-	SharePoint online and One Drive for Business files were displayed in the File policy report and in the Files page as Internal instead of Private. This was corrected.
+ 
+
 
 ## Cloud App Security release 86
 Released December 13, 2016
