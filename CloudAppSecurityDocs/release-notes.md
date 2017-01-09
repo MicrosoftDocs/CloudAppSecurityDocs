@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/28/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -45,7 +45,7 @@ Released December 25, 2016
 -	The Cloud Discovery feature now supports Sophos Cyberoam appliances.
  
 **Bug fixes**
--	SPO and OD4B files were displayed in the File policy report and in the Files page as Internal instead of Private. This was corrected.
+-	SharePoint online and One Drive for Business files were displayed in the File policy report and in the Files page as Internal instead of Private. This was corrected.
  
 
 

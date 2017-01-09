@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 1/8/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -67,6 +67,8 @@ Each risk factor, when included in the risk evaluation, has its own triggers tha
   
 -   Device and user agent - activity performed by a user using a user agent or device which were either never used by any other user, never used by this particular user or never used at all.  
   
+-   Activity rate - repeated activities performed by a user within a short period. 
+
 ### Sensitivity  
 There are two ways to control the number of alerts triggered by the policy:  
   
