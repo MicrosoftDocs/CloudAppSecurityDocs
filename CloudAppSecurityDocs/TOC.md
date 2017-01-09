@@ -32,6 +32,7 @@
 #### [File policies](data-protection-policies.md)
 ##### [Content Inspection](content-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
+##### [Policy template reference](policy-template-reference.md)
 ### [Manage app permissions](manage-app-permissions.md)
 ## [Govern](governance-actions.md)
 ## Integrate
