@@ -1,7 +1,7 @@
-# [Understand & Explore]
+# Understand & Explore
 ## [What is CAS?](what-is-cloud-app-security.md)
 ## [Release notes](release-notes.md)
-# [Deploy]
+# Deploy
 ## [Getting started](getting-started-with-cloud-app-security.md)
 ## [Customize the portal](general-setup.md)
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
@@ -18,7 +18,7 @@
 ### [Connect Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Connect ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [Use]
+# Use
 ## [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 ## [Investigate](investigate.md)
 ### [Built-in report reference](built-in-report-reference.md)
@@ -40,7 +40,7 @@
 ## Integrate
 ### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)
-# [Troubleshoot]
+# Troubleshoot
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
 ## [Troubleshooting content inspection](troubleshooting-content-inspection.md)
