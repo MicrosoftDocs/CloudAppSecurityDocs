@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -83,13 +83,12 @@ The following table lists, per cloud app, which abilities are supported with App
 |**User activity**|✔*|✔|✔|✔ - requires Google Unlimited|Partial|Supported with Salesforce Shield|✔|Not applicable|  
 |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|  
 |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Coming soon|  
-|**Near-realtime file scan**|Coming soon|✔|Not applicable|✔ - requires Google Unlimited|||Coming soon||  
+|**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Unlimited|||Coming soon||  
 |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||  
 |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||  
 |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||  
 |**Revoke app permissions**|✔||Not applicable|✔||✔|Not applicable||  
   
-\* The Office 365 App Connector includes admin activity for Exchange Online. To add user activity for Exchange Online, you will need to deploy the Exchange Online connector separately.  
   
 ## Prerequisites  
 For some apps, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console:  
