@@ -6,7 +6,7 @@ title: Cloud App Security | Microsoft Docs
 description: Technical documentation for Cloud App Security 
 author: msmbaldwin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/11/2017
 ms.topic: hubpage
 ms.prod: azure
 ms.service: cloud-app-security
@@ -156,7 +156,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
         <ul class="journeys-list">
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="./troubleshooting.md">
+              <a href="./troubleshooting-cloud-discovery.md">
                 <div class="title column-third">
                   <span class="step-number">5</span>
                   <p>Troubleshoot</p>
@@ -167,7 +167,7 @@ ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./troubleshooting.md">
+                  <a href="./troubleshooting-cloud-discovery.md">
                     <h3>Troubleshoot</h3>
                     <p>Use these guides to troubleshoot Cloud Discovery and API connector issues.</p>
                   </a>
