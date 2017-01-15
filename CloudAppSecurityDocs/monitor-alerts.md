@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Monitor alerts | Microsoft Docs
+title: Alerts | Microsoft Docs
 description: This topic provides a list and description of all alerts.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2016
+ms.date: 1/15/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Monitor alerts
+# Alerts
 To view alerts:
 
 In the Cloud App Security portal, click on Alerts.
