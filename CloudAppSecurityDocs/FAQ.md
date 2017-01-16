@@ -32,6 +32,13 @@ ms.suite: ems
 ## What kind of permissions do I need to have in order to access Cloud App Security?
 
 You have to be a Global admin, Compliance admin or Security admin in Azure Active Directory. It is not enough to have these roles in the Office 365 Security and Compliance Center.
+To set a user as a Global admin, Compliance admin or Security admin in Azure Active Directory, run the following in Windows PowerShell:
+
+        $cred = Get-Credential
+        Connect-MsolService -credential $cred
+        Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
+ OR
+        Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
 
 ## See also  
 To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
