@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Customize the portal | Microsoft Docs
+title: Customize the Cloud App Security portal for best results | Microsoft Docs
 description: This topic provides the first steps to customizing the portal.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Activities | Microsoft Docs
+title: Visibility into cloud app activities | Microsoft Docs
 description: This topic provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
 author: rkarlin

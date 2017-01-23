@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Deploy 
- Microsoft Docs
+title: Deploy Cloud App Security for cloud app use insight and control | Microsoft Docs
 description: This topic outlines the process for getting Cloud App Security up and running.
 keywords:
 author: rkarlin
@@ -66,7 +65,7 @@ Alternatively, you can access the portal through the **Office 365 Admin center**
  
 
 ### Step 1. [Set up Cloud Discovery](set-up-cloud-discovery.md).
-Reuired task: Upload traffic logs
+Required task: Upload traffic logs
 **To create a continuous Cloud Discovery report**
 
  1. Go to **Settings** > **Cloud Discovery settings**.

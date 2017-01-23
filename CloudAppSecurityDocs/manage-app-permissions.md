@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage app permissions | Microsoft Docs
+title: Control which third-party cloud apps get permissions | Microsoft Docs
 description: This article provides information about how you can control, ban and allow third-party app permissions.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
