@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Govern | Microsoft Docs
+title: How to apply governance actions to control cloud app usage | Microsoft Docs
 description: This topic lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

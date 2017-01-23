@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Activity policies | Microsoft Docs
+title: Creating policies to control activities in Cloud App Security | Microsoft Docs
 description: This topic provides instructions for creating and working with activity policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

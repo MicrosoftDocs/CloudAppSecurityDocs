@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Files | Microsoft Docs
+title: Understading file data and filters available in Cloud App Security | Microsoft Docs
 description: This reference topic provides information about the types of files and file filters used by Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

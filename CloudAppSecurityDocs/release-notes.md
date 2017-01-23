@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Release notes | Microsoft Docs
+title: Cloud App Secuirty release notes & versions | Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/20/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,8 @@ ms.suite: ems
 # Release notes
 
 
-Version 88
+## Cloud App Security release 88
+Released January 8, 2017
  
 **New features**
 - Connect your SIEM to Cloud App Security. You can now send alerts and activities automatically to your SIEM of choice by configuring SIEM Agents. Now available as a public preview.  For full documentation and details, take a look at Integrating with SIEM.

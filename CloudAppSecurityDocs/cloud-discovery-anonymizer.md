@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Anonymize Cloud Discovery data | Microsoft Docs
+title: Protect user privacy in Cloud App Security by anonymizing data | Microsoft Docs
 description: This article provides information about how to anonymize the usernames in your Cloud Discovery data.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

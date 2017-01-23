@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Built-in report reference | Microsoft Docs
+title: Understand the fields in the built-in reports in Cloud App Security | Microsoft Docs
 description: This topic provides a list of built-in reports and their uses.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/11/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

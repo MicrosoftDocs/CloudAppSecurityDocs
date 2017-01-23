@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: File policies | Microsoft Docs
+title: Create policies to monitor and protect files in your cloud apps | Microsoft Docs
 description: This topic describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
