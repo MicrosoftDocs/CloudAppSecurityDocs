@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Control cloud apps with policies | Microsoft Docs
+title: Policy template reference in Cloud App Security | Microsoft Docs
 description: This topic provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

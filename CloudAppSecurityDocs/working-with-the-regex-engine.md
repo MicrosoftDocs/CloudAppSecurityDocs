@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Working with the RegEx engine | Microsoft Docs
+title: Using the RegEx engine for content inspection policies | Microsoft Docs
 description: This topic provides instructions for using RegEx for pattern matching in Cloud App Security policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

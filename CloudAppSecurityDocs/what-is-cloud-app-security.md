@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What is Cloud App Security | Microsoft Docs
+title: What is Cloud App Security? | Microsoft Docs
 description: This topic describes Cloud App Security and how it works.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

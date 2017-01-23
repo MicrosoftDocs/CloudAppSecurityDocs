@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Customize Cloud Discovery | Microsoft Docs
+title: Customize Cloud Discovery data to find risky behavior | Microsoft Docs
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
