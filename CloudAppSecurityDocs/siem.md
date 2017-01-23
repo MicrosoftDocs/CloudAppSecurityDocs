@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: SIEM integration | Microsoft Docs
+title: SIEM integration with Cloud App Security | Microsoft Docs
 description: This topic provides information integrating your SIEM with Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Alerts | Microsoft Docs
+title: Working with alerts in Cloud App Security | Microsoft Docs
 description: This topic provides a list and description of all alerts.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Deploy 
- Microsoft Docs
+title: Deploy Cloud App Security for cloud app use insight and control | Microsoft Docs
 description: This topic outlines the process for getting Cloud App Security up and running.
 keywords:
 author: rkarlin

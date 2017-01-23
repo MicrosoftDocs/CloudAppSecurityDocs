@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Anomaly detection policy | Microsoft Docs
+title: Create anomaly detection policies in Cloud App Security | Microsoft Docs
 description: This topic provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

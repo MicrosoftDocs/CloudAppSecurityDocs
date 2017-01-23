@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Control | Microsoft Docs
+title: How to use governance actions to control cloud app usage | Microsoft Docs
 description: This article provides information about the governance actions you can take in Cloud App Security to control your organization's cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

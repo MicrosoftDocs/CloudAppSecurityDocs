@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Cloud Discovery anomaly detection policy | Microsoft Docs
+title: Create a Cloud Discovery anomaly detection policy in Cloud App Security | Microsoft Docs
 description: This topic proivdes information about how to work with Cloud Discovery anomaly detection policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security

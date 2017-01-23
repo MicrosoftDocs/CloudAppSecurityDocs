@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Azure Information Protection integration | Microsoft Docs
+title: Integrate Azure Information Protection with Cloud App Security | Microsoft Docs
 description: This article provides information about how to leverage your Azure Information Protection tags in Cloud App Security for added control of your organization's cloud app use.
 keywords:
 author: rkarlin
