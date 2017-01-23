@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Investigate | Microsoft Docs
+title: Investigate cloud app risks & susupicious activity with Cloud App Security | Microsoft Docs
 description: This topic provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 # Investigate
-After Cloud App Security runs in your cloud environment, you'll need a stage of learning and investigating how to use the tools in Cloud App Security to gain a deeper understanding of what's happening in your cloud environment. Then, based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk.  
+After Cloud App Security runs in your cloud environment, you'll need a stage of learning and investigating how to use the tools in Cloud App Security to gain a deeper understanding of what's happening in your cloud environment. Then, based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk.
 
 This topic describes how to perform an investigation to get a better understanding of your cloud environment.  
 

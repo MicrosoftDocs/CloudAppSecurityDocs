@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Connect Office 365 | Microsoft Docs
+title: Connect Office 365 to Cloud App Security for visibility and control over use | Microsoft Docs
 description: This topic provides information about how to connect your Office 365 to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security

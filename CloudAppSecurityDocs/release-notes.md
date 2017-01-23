@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Release notes | Microsoft Docs
+title: Cloud App Secuirty release notes & versions | Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/8/2017
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,19 @@ ms.suite: ems
 
 # Release notes
 
+
+## Cloud App Security release 88
+Released January 8, 2017
+ 
+**New features**
+- Connect your SIEM to Cloud App Security. You can now send alerts and activities automatically to your SIEM of choice by configuring SIEM Agents. Now available as a public preview.  For full documentation and details, take a look at Integrating with SIEM.
+- Cloud Discovery now supports IPv6. We rolled out support for Palo Alto and Juniper, and more appliances will be rolled out in future releases.
+ 
+**Improvements**
+- There is a new risk factor in the Cloud App Catalog. You can now rate an app based on whether it Requires user authentication. Apps that enforce authentication and do not allow anonymous use will receive a healthier risk score.
+- We are rolling out new activity descriptions to be more usable and consistent. Searching for activities will not be affected by this.
+- We included improved user-device identification, enabling Cloud App Security to enrich a larger number of events with device information.
+ 
 ## Cloud App Security release 87
 Released December 25, 2016
 
