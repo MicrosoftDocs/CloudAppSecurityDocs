@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 1/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,23 @@ ms.suite: ems
 ---
 
 # Release notes
+
+
+## Cloud App Security release 89
+Released January 22, 2017
+
+**New features**
+-	We are starting to roll out the ability to view Office 365 Security and Compliance Center DLP events in Cloud App Security. If you configured DLP policies in the Office 365 Security and Compliance Center, when policy matches are detected, you will be able to see them in the Cloud App Security Activity log. The information in the Activity log will include the file or email that triggered the match as and the policy or alert that it matched. The “Security event” activity allows you to view Office 365 DLP policy matches in the Cloud App Security activity log. Using this feature, you can:
+    -	See all DLP matches coming from the Office365 DLP engine.
+    -	Alert on Office 365 DLP policy matches for a specific file, SharePoint site, or policy.
+    -	Investigate DLP matches with a broader context, for example- external users who accessed or downloaded a file that triggered a DLP policy match.
+ 
+-	The activity descriptions have been improved for clarity and consistency. Each activity now provides a feedback button, so if there are some that you don’t understand or have a question about, you can let us know. 
+ 
+**Improvements**  
+-	A new governance action was added for Office 365 that enables you to remove all external users of a file. For instance, this enables you to implement policies that **remove external shares from files with internal only classification**.
+-	Improved identification of external users in SharePoint online. When filtering for the “external users” group, app@sharepoint system account will not show up.
+
 
 
 ## Cloud App Security release 88
