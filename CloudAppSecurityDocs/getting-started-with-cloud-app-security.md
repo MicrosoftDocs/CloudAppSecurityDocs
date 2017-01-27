@@ -171,4 +171,4 @@ These settings help give you better control of features in the console. With IP 
 
 Set policies [Control cloud apps with policies](control-cloud-apps-with-policies.md).    
 For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
-Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
+Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
