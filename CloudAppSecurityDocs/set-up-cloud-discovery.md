@@ -127,7 +127,7 @@ Data attributes (according to vendor documentation):
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|
 |Websense - Investigative detail report (CSV)|**Yes**|No|No|**Yes**|No|No|
 |Websense - Internet activity log (CEF)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-|Zscaler|**Yes**|No|**Yes**|No|**Yes**|No|
+|Zscaler|**Yes**|No|**Yes**|No|**Yes**|**Yes**|
 
 \* Cloud Discovery supports IPv6.
 

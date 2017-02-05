@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -95,9 +95,14 @@ For some apps, it may be necessary to add the following IP addresses to the whit
   
 -   For the logs:  
   
-     104.209.35.177  
+    104.209.35.177  
   
-     13.91.98.185  
+    13.91.98.185
+ 
+    40.118.211.172
+
+    13.93.216.68
+  
   
 -   For the console:  
   
