@@ -138,5 +138,4 @@ Data attributes (according to vendor documentation):
 [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
-  
-  
+
