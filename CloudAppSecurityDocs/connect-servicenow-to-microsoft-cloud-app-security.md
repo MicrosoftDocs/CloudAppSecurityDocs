@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 ## How to connect ServiceNow to Cloud App Security  
   
 > [!NOTE]  
->  Cloud App Security supports ServiceNow versions of Eureka and Fiji. In order to connect ServiceNow with Cloud App Security, you must have admin-level permissions and make sure the ServiceNow instance supports API access.  
+>  Cloud App Security supports ServiceNow versions of Eureka and Fiji. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  
   
 1.  Log on with an Admin account to your ServiceNow account.  
   
@@ -64,5 +64,4 @@ After connecting ServiceNow, you will receive events for 60 days prior to connec
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-  
   
