@@ -8,7 +8,6 @@
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Anonymize Cloud Discovery data](cloud-discovery-anonymizer.md)
-### [Customize Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Connect Box](connect-box-to-microsoft-cloud-app-security.md)
 ### [Connect Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
@@ -20,6 +19,7 @@
 ### [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Use
 ## [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+## [Work with Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [Investigate](investigate.md)
 ### [Built-in report reference](built-in-report-reference.md)
 ### [Files](file-filters.md)

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -112,20 +112,22 @@ In the menu bar, click the settings icon ![settings icon](./media/settings-icon.
   
 5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  In addition to the IP tags you configure, Cloud App Security has built-in tags that are not configurable. You can see the list of tags under the [IP tags filter](activity-filters.md).  
   
-6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category, except for the "Risky" category which includes two IP tags - Anonymous proxy and Tor.  
+6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category. The **Risky** category and **Cloud provider** categories automatically include built-in IP tags such as Anonymous proxy and Tor that dynamically change based on the Microsoft Security Graph, and Microsoft Azure and other cloud infrastractures.  
   
      The following IP categories are available:  
   
+    -   **Corporate**: these should be all the IP addresses of your corporate network, your branch offices and your Wi-Fi roaming addresses. 
+   
     -   **Administrative**: these should be all the IP addresses of your admins.  
-  
-    -   **Internal**: these should be all the IP addresses of your internal network, your branch offices and your Wi-Fi roaming addresses.  
-  
-    -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc.  
-  
+   
     -   **VPN**: these should be any IP addresses you use for remote workers.  
   
-    -   **Cloud proxy**: this should be the IP address of your proxy in the cloud.  
-  
+    -   **Cloud provider: this should be the IP address of your provider in the cloud.  
+
+    -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc. 
+
+    - **Other**: if none of the other IP categories apply, choose other.
+
 7.  When you are done, click **Create**.  
   
      ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  

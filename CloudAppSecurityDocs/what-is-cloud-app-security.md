@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ ms.suite: ems
 
 Moving to the cloud increases flexibility for employees and reduces IT cost, but it also introduces new challenges and complexities for keeping your organization secure. To be able to get the full benefit of cloud applications, an IT team must find the right balance of supporting access while maintaining control, to protect critical data.  
 
-Cloud App Security is a critical component of the Microsoft Cloud Security stack. It's a comprehensive solution that can help your organization as you move to take full advantage of the promise of cloud applications, but keep you in control, through improved visibility into activity. It also helps increase the protection of critical data across cloud applications. With tools that help uncover shadow IT, assess risk, enforce policies, investigate activities, and stop threats, your organization can more safely move to the cloud while maintaining control of critical data.  
+Cloud App Security is a critical component of the Microsoft Cloud Security stack. It's a comprehensive solution that can help your organization as you move to take full advantage of the promise of cloud applications, but keep you in control, through improved visibility into activity. It also helps increase the protection of critical data across cloud applications. With tools that help uncover shadow IT, assess risk, enforce policies, investigate activities, and stop threats, your organization can more safely move to the cloud while maintaining control of critical data. 
 
 ## The Cloud App Security framework  
 
@@ -51,9 +51,12 @@ Cloud App Security integrates visibility with your cloud by
 -   using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.  
 -   helping you have continuous control by setting, and then continually fine-tuning, policies.  
 
-![Cloud App Security architecture](./media/architecture.png)  
+![Cloud App Security architecture diagram](./media/architecture.png)  
 
-### Data retention  
+### Data retention & Compliance
+
+Cloud App Security is officially certified with Microsoft Compliance for ISO, HIPAA, CSA STAR, EU model clauses and more. To see the full list of certifications go to [Microsoft Compliance Offerings] (https://go.microsoft.com/fwlink/?linkid=842039) and select Cloud App Security.  
+
 When Cloud App Security performs content inspection, data privacy is enforced. The file content is not stored in the Cloud App Security database; only the metadata of the file records and any violations that were identified are stored in the Cloud App Security database. For more information about data retention, see our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132) and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 Cloud App Security retains data as follows:
 Cloud App Security retains data as follows: 
