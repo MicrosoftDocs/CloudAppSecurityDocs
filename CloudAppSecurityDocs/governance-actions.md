@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,9 +27,40 @@ ms.suite: ems
 ---
 
 # Govern
+Governance enables you to control what your users do, in real time, across apps. 
+For discovered apps, you can govern users by exporting a block script to your firewall or third-party DLP solution.
+For connected apps, you can apply governance actions to files or activities.
 
-## File governance actions  
-The following governance actions can be taken either on a specific file, user or from a specific policy.
+## Export a block script to govern discovered apps
+
+Use the following procedure to export a block script from Cloud App Security to you to block use of discovered apps from your firewall or third-party DLP solution:
+
+1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
+
+   ![Tag as unsanctioned](./media/tag-as-unsanctioned.png)  
+
+2. In the title bar, click on the three dots and select **Generate block script...**. 
+
+   ![Generate block script](./media/generate-block-script.png)  
+
+3. In **Generate block script**, select the appliance you want to generate the block script for. 
+
+   ![Generate block script pop up](./media/generate-block-script-popup.png)  
+
+4. Then, click the Generate script button. This will create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected, for example *2017-02-19_CAS_Fortigate_block_script.txt* 
+
+   ![Generate block script button](./media/generate-block-script-button.png)  
+
+5. Import the file created to your relevant firewall or DLP solution.
+
+
+## Using governance actions to govern connected apps
+
+Governance actions are integrated actions you can run on files or activities directly from Cloud App Security to control what your users do, in real time, across connected apps. 
+
+### File governance actions  
+
+The following governance actions can be taken for connected apps either on a specific file, user or from a specific policy.
   
 -   Notifications  
   
@@ -69,7 +100,7 @@ The following governance actions can be taken either on a specific file, user or
 ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
   
  
-## Activity governance actions  
+### Activity governance actions  
 
 - Notifications  
   
@@ -92,7 +123,7 @@ The following governance actions can be taken either on a specific file, user or
      ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
 
-## Governance conflicts
+### Governance conflicts
 
 After creating multiple policies, a situation may arise in which the governance actions in multiple policies overlap. In this case, Cloud App Security will process the governance actions as follows:
 
@@ -100,7 +131,7 @@ After creating multiple policies, a situation may arise in which the governance 
 - If the actions are completely unrelated (for example, **Notify owner** and **Make private**). Both actions will take place.
 - If the actions conflict, (for example **Change owner to user A** and **Change owner to user B**), different results may result from every match. It is important to change your policies to prevent conflicts because they may result in unwanted changes in the drive that will be hard to detect.
 
-## Governance log
+### Governance log
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
 
 The following is the full list of actions the Cloud App Security portal enables you to take. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
