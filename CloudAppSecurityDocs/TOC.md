@@ -36,7 +36,8 @@
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 #### [Policy template reference](policy-template-reference.md)
 ### [Manage app permissions](manage-app-permissions.md)
-## [Govern](governance-actions.md)
+### [Govern connected apps](governance-actions.md)
+### [Govern discovered apps](governance-discovery.md)
 ## Integrate
 ### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)
