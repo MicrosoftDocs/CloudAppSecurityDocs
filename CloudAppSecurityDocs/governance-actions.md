@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to apply governance actions to control cloud app usage | Microsoft Docs
+title: How to apply governance actions to control connected apps | Microsoft Docs
 description: This topic lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/21/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,14 @@ ms.suite: ems
 
 ---
 
-# Govern
+# Governing connected apps
+Governance enables you to control what your users do, in real time, across apps. 
+For connected apps, you can apply governance actions to files or activities.
+Governance actions are integrated actions you can run on files or activities directly from Cloud App Security to control what your users do, in real time, across connected apps. 
 
-## File governance actions  
-The following governance actions can be taken either on a specific file, user or from a specific policy.
+### File governance actions  
+
+The following governance actions can be taken for connected apps either on a specific file, user or from a specific policy.
   
 -   Notifications  
   
@@ -69,7 +73,7 @@ The following governance actions can be taken either on a specific file, user or
 ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
   
  
-## Activity governance actions  
+### Activity governance actions  
 
 - Notifications  
   
@@ -92,7 +96,7 @@ The following governance actions can be taken either on a specific file, user or
      ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
   
 
-## Governance conflicts
+### Governance conflicts
 
 After creating multiple policies, a situation may arise in which the governance actions in multiple policies overlap. In this case, Cloud App Security will process the governance actions as follows:
 
@@ -100,7 +104,7 @@ After creating multiple policies, a situation may arise in which the governance 
 - If the actions are completely unrelated (for example, **Notify owner** and **Make private**). Both actions will take place.
 - If the actions conflict, (for example **Change owner to user A** and **Change owner to user B**), different results may result from every match. It is important to change your policies to prevent conflicts because they may result in unwanted changes in the drive that will be hard to detect.
 
-## Governance log
+### Governance log
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
 
 The following is the full list of actions the Cloud App Security portal enables you to take. These are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.

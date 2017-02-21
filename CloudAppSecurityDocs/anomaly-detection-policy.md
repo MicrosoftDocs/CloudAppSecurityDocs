@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -68,6 +68,8 @@ To configure an anomaly detection policy:
     -   **Impossible travel**: Is a user logging in from Denver and ten minutes later logging in from Paris?  
   
     -   **Device and user agent**: Is there activity from an unrecognized or unmanaged device?  
+
+    -   **Activity rate**: Is there suddenly a lot of activity on a particular app? Are there large downloads or deletes, or mass number of files shared or a lot of unexpected admin activity?
   
      You can use these parameters to define complex scenarios, for example, to exclude your office's IP range from the considered risk factors for anomaly detection, create a specific "office IP" tag and filter the range out of the considered parameters. To then exclude the range you created from the admin activity anomaly detection:  
   
