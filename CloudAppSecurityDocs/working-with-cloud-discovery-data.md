@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Customize Cloud Discovery data to find risky behavior | Microsoft Docs
+title: Use Cloud Discovery data to detect risky behavior | Microsoft Docs
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Customize Cloud Discovery
+# Working with Cloud Discovery
 ## Review the Cloud Discovery Dashboard
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data, to allow you to generate specific views, depending on what you're most interested in, and easy-to-understand graphics to give you the full picture at a glance.
