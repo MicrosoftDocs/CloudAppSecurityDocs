@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 2/21/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,9 +28,7 @@ ms.suite: ems
 
 # Governing connected apps
 Governance enables you to control what your users do, in real time, across apps. 
-For discovered apps, you can govern users by exporting a block script to your firewall or third-party DLP solution.
 For connected apps, you can apply governance actions to files or activities.
-
 Governance actions are integrated actions you can run on files or activities directly from Cloud App Security to control what your users do, in real time, across connected apps. 
 
 ### File governance actions  

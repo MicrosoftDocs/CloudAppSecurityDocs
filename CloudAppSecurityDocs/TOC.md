@@ -37,7 +37,7 @@
 #### [Policy template reference](policy-template-reference.md)
 ### [Manage app permissions](manage-app-permissions.md)
 ### [Govern connected apps](governance-actions.md)
-### [Block scripts for discovered apps](governance-discovery.md)
+### [Govern discovered apps](governance-discovery.md)
 ## Integrate
 ### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)

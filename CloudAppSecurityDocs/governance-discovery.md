@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 2/21/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,13 +27,11 @@ ms.suite: ems
 ---
 
 # Governing discovered apps
-Governance enables you to control what your users do, in real time, across apps. 
-For discovered apps, you can govern users by exporting a block script to your firewall or third-party DLP solution.
-For connected apps, you can apply governance actions to files or activities.
+Cloud App Security enables you to block access to unsanctioned apps by leveraging your existing on-prem security appliances. Generate a dedicated block script and import it to your appliance.
+This solution does not require redirection of all of the organization's web traffic to a proxy.
+
 
 ## Export a block script to govern discovered apps
-
-Use the following procedure to export a block script from Cloud App Security to you to block use of discovered apps from your firewall or third-party DLP solution:
 
 1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
 
@@ -51,7 +49,7 @@ Use the following procedure to export a block script from Cloud App Security to 
 
    ![Generate block script button](./media/generate-block-script-button.png)  
 
-5. Import the file created to your relevant firewall or DLP solution.
+5. Import the file created to your appliance.
 
 
 
