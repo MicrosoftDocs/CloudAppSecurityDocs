@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/28/2017
+ms.date: 3/1/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -94,7 +94,7 @@ You can type -h at any time to get help.
 
 ### Step 3: Validate that the SIEM agent is working
 
-1. Make sure the status of the SIEM agent in the Cloud App Security portal is not Disconnected and there are no agent notifications. 
+1. Make sure the status of the SIEM agent in the Cloud App Security portal is not **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours and as **Disconnected** if the connection is down for over 12 hours.
  ![SIEM disconnected](./media/siem-not-connected.png)
  
    Instead, the status should be connected, as seen here:
@@ -119,6 +119,8 @@ If you need to delete the SIEM agent in the future, you can click on the three d
 ![SIEM - delete](./media/siem-delete.png)
 
 ## Troubleshooting the SIEM agent
+
+Make sure the status of the SIEM agent in the Cloud App Security portal is not **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours and as **Disconnected** if the connection is down for over 12 hours.
 
 If you see one of the following errors in the cmd prompt while running the agent, use the following steps to remediate the problem:
 
