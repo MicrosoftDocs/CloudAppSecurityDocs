@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 2/22/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -31,35 +31,24 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 ## How to connect Amazon Web Services to Cloud App Security  
   
-1.  In your Amazon Web Services console, click on **Identity & Access Management**.  
+1.  In your Amazon Web Services console, under **Security, Identity & Compliance**, click on **IAM**.  
   
      ![aws identity and access](./media/aws-identity-and-access.png "aws identity and access")  
   
-2.  Click on the **Users** tab.  
+2.  Click on the **Users** tab and then click **Add user**.  
   
-     ![aws users](./media/aws-users.png "aws users")  
+     ![aws users](./media/aws-users.png "aws users")      
   
-3.  Click on **Create New Users**.  
-  
-     ![AWS create user](./media/aws-create-user.png "AWS create user")  
-  
-4.  Create a new user for Cloud App Security and make sure the **Generate an access key for each user** checkbox is checked.  
-  
-5.  Click **Download Credentials**.  
-  
-     ![aws dl cred](./media/aws-dl-cred.png "aws dl cred")  
-  
-6.  In the **Permissions** tab, click **Attach Policy**.  
-  
-     ![aws attach user policy](./media/aws-attach-user-policy.png "aws attach user policy")  
-  
-7.  The **Review Policy** screen opens.
- 
-     ![review policy](./media/aws-review-policy.png "aws review policy")  
-  
+4.  In the **Details** step, provide a new user name for Cloud App Security and make sure that under Access type you select **Programmatic access**.  
+   ![AWS create user](./media/aws-create-user.png "AWS create user")
 
-8. Under **Policy Name** type "AdallomTrustPolicy". 
-10. Under **Policy Document**, copy and paste the following::  
+5.  In the **Create Policy** step, select **Attach existing policies directly** and then click **Create policy**.
+ ![AWS attach user](./media/aws-attach-user-policy.png "AWS attach existing policy")
+
+6.  Under **Create Policy** select **Create Your Own Policy**.
+ ![AWS create your own policy](./media/aws-create-own-policy.png "AWS create user")
+ 
+7.  Under **Set Permissions**,  provide a **Policy Name**, for example cas-trail, and then paste the following into the **Policy Document** field:
   
     ```     
     {  
