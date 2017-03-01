@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/22/2017
+ms.date: 3/1/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -31,7 +31,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 ## How to connect Amazon Web Services to Cloud App Security  
   
-1.  In your Amazon Web Services console, under **Security, Identity & Compliance**, click on **IAM**.  
+1.  In your [Amazon Web Services console](https://console.aws.amazon.com/), under **Security, Identity & Compliance**, click on **IAM**.  
   
      ![aws identity and access](./media/aws-identity-and-access.png "aws identity and access")  
   
@@ -39,16 +39,23 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![aws users](./media/aws-users.png "aws users")      
   
-4.  In the **Details** step, provide a new user name for Cloud App Security and make sure that under Access type you select **Programmatic access**.  
-   ![AWS create user](./media/aws-create-user.png "AWS create user")
+4.  In the **Details** step, provide a new user name for Cloud App Security and make sure that under **Access type** you select **Programmatic access** and click **Next Permissions**.  
 
-5.  In the **Create Policy** step, select **Attach existing policies directly** and then click **Create policy**.
- ![AWS attach user](./media/aws-attach-user-policy.png "AWS attach existing policy")
+     ![AWS create user](./media/aws-create-user.png "AWS create user")
+
+5. In the **Permissions** step, select **Attach existing policies directly** and then click **Create policy**.
+
+   ![AWS attach user](./media/aws-attach-user-policy.png "AWS attach existing policy")
 
 6.  Under **Create Policy** select **Create Your Own Policy**.
- ![AWS create your own policy](./media/aws-create-own-policy.png "AWS create user")
  
-7.  Under **Set Permissions**,  provide a **Policy Name**, for example cas-trail, and then paste the following into the **Policy Document** field:
+    ![AWS create your own policy](./media/aws-create-own-policy.png "AWS create policy")
+ 
+7.  Under **Review Policy**,  provide a **Policy Name**, for example CloudAppSecurityPolicy.
+
+    ![AWS review policy](./media/aws-review-policy.png "AWS review policy")
+
+8. Then paste the following into the **Policy Document** field and click **Create policy**:
   
     ```     
     {  
@@ -56,8 +63,7 @@ This section provides instructions for connecting Cloud App Security to your exi
       "Statement" : [{  
           "Action" : [  
             "cloudtrail:DescribeTrails",  
-  
-           "cloudtrail:LookupEvents",  
+            "cloudtrail:LookupEvents",  
             "cloudtrail:GetTrailStatus",  
             "cloudwatch:Describe*",  
             "cloudwatch:Get*",  
@@ -73,23 +79,29 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     ```  
   
-9. In the downloaded file `credentials.csv`, find the new user's credentials. You will need to copy these later.  
+9. Back in the **Add user** screen, refresh the list if necessary, and select the user you just created, and click **Next Review**.
+
+   ![AWS review user policy](./media/aws-review-user.png "AWS review user")
+
+10. If all the details are correct, click **Create user**.
+
+    ![AWS user permissions](./media/aws-user-permissions.png "AWS review user permissions")
+
+11. When you get the success message, click **Download .csv** to save a copy of the new user's credentials, you will need these later.  
+
+    ![AWS download csv](./media/aws-download-csv.png "AWS download csv")
   
-10. Return to the AWS console main page and on the top right corner choose your main region from the dropdown window and then click on **CloudTrail** in the main menu.  
+10. In the AWS console, click **Services** and then under **Management Tools** click **CloudTrail**.  
   
      ![aws cloudtrail](./media/aws-cloudtrail.png "aws cloudtrail")  
   
-    1.  If you have not used CloudTrail for this region before, click on the **Get Started** button and set it up by selecting the appropriate S3 bucket.  
+    If you have not used CloudTrail before, click **Get Started** and set it up by providing a name and selecting the appropriate S3 bucket and click **Turn On**. To make sure you have complete coverage, set **Apply to all regions** to **Yes**.
   
-         Click the **Configuration** tab on the top left of the screen. Under **Additional configuration**, click on the edit icon.  
+       ![AWS turn on CloudTrail](./media/aws-turnon-cloudtrail.png "AWS turn on CloudTrail")
   
-         ![aws cloudtrail config](./media/aws-cloudtrail-config.png "aws cloudtrail config")  
-  
-    2.  Click **Yes** when asked if you want to **Include global services** and click **Save**. This only applies to the region you chose.  
-  
-         ![aws include global svc](./media/aws-include-global-svc.png "aws include global svc")  
-  
-    3.  Repeat Step 11 for all regions, but do not set any other region to Include global services.  
+    You should see the new CloudTrail name in the **Trails** list.
+    
+      ![AWS CloudTrail list](./media/aws-cloudtrail-list.png "AWS CloudTrail list")
   
 11. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
@@ -97,7 +109,8 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![connect AWS](./media/connect-aws.png "connect AWS")  
   
-13. In the popup, paste the **Access key** and **Secret key** from the csv file into the fields in the API page, and click **Update Access key**.  
+13. In the popup, paste the **Access key** and **Secret key** from the csv file into the relevant fields, and click **Connect**.  
+   ![AWS connect app](./media/aws-connect-app.png "AWS connect app") 
   
 14. Make sure the connection succeeded by clicking **Test API**.  
   
