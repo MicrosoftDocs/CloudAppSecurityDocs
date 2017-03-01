@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2017
+ms.date: 2/28/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -102,6 +102,18 @@ For some apps, it may be necessary to add the following IP addresses to the whit
     40.118.211.172
 
     13.93.216.68
+
+    13.91.61.249
+
+    13.93.233.42
+
+    13.64.196.27
+
+    13.64.198.97
+
+    13.64.199.41
+
+    13.64.198.19
   
   
 -   For the console:  
