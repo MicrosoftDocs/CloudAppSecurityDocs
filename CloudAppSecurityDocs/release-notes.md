@@ -38,7 +38,7 @@ Cloud App Security is now officially certified with Microsoft Compliance for ISO
 
 **New features**
 
--  In the Activity log, the As filter was added to the “user name” and “user from group” filter – you can use it to select Actor, Activity object only or Any role. This enables new investigation scenarios, including investigating mail forwarding to find out if someone is forwarding mails to external users and investigating impersonated activities to find out who is impersonating which specific user. For more information, see [Activities](activity-filters.md).
+-  In the Activity log, you can now filter users and users in groups to show which activities were performed by a specific user, and which were performed on a specific user. For example, you can investigate activities in which the user impersonated others, and activities in which other impersonated this user. For more information, see [Activities](activity-filters.md).
 
 - When investigating a file in the **Files** page, if you drill down into the **Collaborators** of a specific file, you can now see more information about the collaborators, including whether or not they are Internal or External, Writers or Readers (file permissions), and when a file is shared with a group, you can now see all users who are members of the group. This enables you to see if the group members are external users.
 
@@ -48,41 +48,13 @@ Cloud App Security is now officially certified with Microsoft Compliance for ISO
 
 -	Cloud App Security system alerts now cover SIEM connectivity errors. For more information see [SIEM integration](siem.md).
 
--	Cloud App Security now includes added support for the following activities:
+-	Cloud App Security now includes support for the following activities:
 
-     **Office 365, SharePoint/OneDrive**:
+     **Office 365, SharePoint/OneDrive**: Update application configuration, Remove owner from group, Delete site, Create folder
 
-     - Update application configuration
-     
-     - Remove owner from group
-     
-     - Delete site
-     
-     - Create folder
+     **Dropbox**: Add member to group, Remove member from group, Create group, Rename group, Change team member name
 
-     **Dropbox**:
-    
-     - Add member to group 
-    
-     - Remove member from group
-    
-     - Create group
-    
-     - Rename group
-    
-     - Change team member name
-
-     **Box**:
-    
-     - Remove item from group 
-    
-     - Update item share
-    
-     - Add user to group
-    
-     - Remove user from group
-
-
+     **Box**: Remove item from group, Update item share, Add user to group, Remove user from group
 
 
 ## Cloud App Security release 89
