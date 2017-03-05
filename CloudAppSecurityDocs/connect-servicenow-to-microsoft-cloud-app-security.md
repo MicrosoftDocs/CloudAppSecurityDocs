@@ -40,35 +40,41 @@ This section provides instructions for connecting Cloud App Security to your exi
 
 3. In the **Application Registries** menu bar, click **New** to create a new OAuth profile.
 
+   ![ServiceNow new OAuth profile](./media/servicenow-app-registry.png)
+
 4. Under **What kind of OAuth application?**, click **Create an OAuth API endpoint for external clients**.
+
+   ![ServiceNow OAuth type](./media/servicenow-oauth-app-type.png)
 
 5. Under **Application Registries New record** fill in the following:
     
-    1. **Name** field, name the new OAuth profile, for example, CloudAppSecurity. 
+    - **Name** field, name the new OAuth profile, for example, CloudAppSecurity. 
     
-    2. The **Client ID** will be generated automatically. Copy this ID, you will need to paste it into Cloud App Security to complete connection.
+    - The **Client ID** will be generated automatically. Copy this ID, you will need to paste it into Cloud App Security to complete connection.
     
-    3. In the **Client Secret** field, enter a string. Copy and save it for later.
+    - In the **Client Secret** field, enter a string. Copy and save it for later.
     
-    4. Click **Submit**.
+    - Click **Submit**.
 
-3.  In the voice portal registration page, under **Tenant Details** enter the details you saved in the previous step and click **Next**.
+   ![ServiceNow profile IDs](./media/servicenow-profile-ids.png)
 
-4. In the **OAuth Verification** tab, create a test user profile. 
+6.  In the voice portal registration page, under **Tenant Details** enter the details you saved in the previous step and click **Next**.
 
-4.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
+7. In the **OAuth Verification** tab, create a test user profile. 
+
+8.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-5.  In the **App connectors** page, click the plus button and then **ServiceNow**.  
+9.  In the **App connectors** page, click the plus button and then **ServiceNow**.  
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  In the popup, add your ServiceNow username, password and instance URL in the appropriate boxes.  
+10.  In the popup, add your ServiceNow username, password and instance URL in the appropriate boxes.  
   
-7.  Click **Connect**.  
+11.  Click **Connect**.  
   
      ![servicenow update password](./media/servicenow-update-password.png "servicenow update password")  
   
-8.  Make sure the connection succeeded by clicking **Test API**.  
+12.  Make sure the connection succeeded by clicking **Test API**.  
   
      Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
   

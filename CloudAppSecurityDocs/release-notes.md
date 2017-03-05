@@ -34,7 +34,7 @@ Released February, 2017
 
 **Special announcement**
 
-Cloud App Security is now officially certified with Microsoft Compliance for ISO, HIPAA, CSA STAR, EU model clauses and more. Please see the full list of certifications go to [Microsoft Compliance Offerings] and select Cloud App Security.
+Cloud App Security is now officially certified with Microsoft Compliance for ISO, HIPAA, CSA STAR, EU model clauses and more. Please see the full list of certifications go to [Microsoft Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) and select Cloud App Security.
 
 **New features**
 
