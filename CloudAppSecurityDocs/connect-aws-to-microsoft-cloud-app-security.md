@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/1/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -116,7 +116,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      Testing may take a couple of minutes. When it is finished, you will get a Success or Failure notification. After receiving a success notice, click **Done**.  
   
-After connecting AWS, you will receive events for 7 days prior to connection.
+After connecting AWS, you will receive events for 7 days prior to connection, unless you just enabled CloudTrail, in which case you will receive events from the time you enabled CloudTrail.
   
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   

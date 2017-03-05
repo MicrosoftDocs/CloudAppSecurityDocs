@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,12 +36,26 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 1.  Log on with an Admin account to your ServiceNow account.  
   
-2.  Create a new service account for Cloud App Security and attach the Admin role to the newly created account.  
-  
-3.  Make sure the REST API plug-in is turned on.  
-  
-     ![servicenow account](./media/servicenow-account.png "servicenow account")  
-  
+2.  In the **Filter navigator** search bar, type **OAuth** and select **Application Registry**.
+
+3. In the **Application Registries** menu bar, click **New** to create a new OAuth profile.
+
+4. Under **What kind of OAuth application?**, click **Create an OAuth API endpoint for external clients**.
+
+5. Under **Application Registries New record** fill in the following:
+    
+    1. **Name** field, name the new OAuth profile, for example, CloudAppSecurity. 
+    
+    2. The **Client ID** will be generated automatically. Copy this ID, you will need to paste it into Cloud App Security to complete connection.
+    
+    3. In the **Client Secret** field, enter a string. Copy and save it for later.
+    
+    4. Click **Submit**.
+
+3.  In the voice portal registration page, under **Tenant Details** enter the details you saved in the previous step and click **Next**.
+
+4. In the **OAuth Verification** tab, create a test user profile. 
+
 4.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
 5.  In the **App connectors** page, click the plus button and then **ServiceNow**.  

@@ -49,7 +49,7 @@ To drill down into more specific activities, you can expand the basic filter by 
 ## Activity filters
 Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
--   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect MCAS to your SIEM (using the SIEM agent), and you want to further investigate alerts within the MCAS portal.  
+-   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.  
   
 -   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects.
     - Activity object ID - the ID of the object (file, folder, user or app ID).
@@ -108,8 +108,13 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 -   User – The user who performed the activity, which can be filtered into domain, group, name or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
     -   User domain - Search for a specific user domain.
     -   User group – Specific user groups that are automatically imported by Cloud App Security from the cloud app, for example, all activities performed by Office 365 administrators.
-    -   User name - Search for a specific username.
-    -   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
+    -   User name - Search for a specific username. You can use the As filter to select **Actor**, **Activity object only** or **Any role**. This enables new investigation scenarios, including the following:
+        - Investigate mail forwarding and find out if someone is forwarding mails to external users by using the new filter capabilities in the Activity log. Choose Activity type equals Create forwarding Inbox rule and User from group equals External users as Activity object only
+         - You can now better investigate impersonated activities and find out who is impersonating which specific user, by using the filters:
+            - User name equals and enter the username
+            - As Activity object only
+            - Impersonated activity is
+-   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
 
 -   User agent – The user agent of from with the activity was performed.  
   
