@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/24/2017
+ms.date: 3/5/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,34 @@ ms.suite: ems
 ---
 
 # Release notes
+
+
+## Cloud App Security release 90, 91, 92
+Released February, 2017
+
+**Special announcement**
+
+Cloud App Security is now officially certified with Microsoft Compliance for ISO, HIPAA, CSA STAR, EU model clauses and more. Please see the full list of certifications go to [Microsoft Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) and select Cloud App Security.
+
+**New features**
+
+-  In the Activity log, you can now filter users and users in groups to show which activities were performed by a specific user, and which were performed on a specific user. For example, you can investigate activities in which the user impersonated others, and activities in which others impersonated this user. For more information, see [Activities](activity-filters.md).
+
+- When investigating a file in the **Files** page, if you drill down into the **Collaborators** of a specific file, you can now see more information about the collaborators, including whether or not they are Internal or External, Writers or Readers (file permissions), and when a file is shared with a group, you can now see all users who are members of the group. This enables you to see if the group members are external users.
+
+-  IPv6 support is now available for all appliances.
+
+-	Cloud Discovery now supports Baracuda appliances.
+
+-	Cloud App Security system alerts now cover SIEM connectivity errors. For more information see [SIEM integration](siem.md).
+
+-	Cloud App Security now includes support for the following activities:
+
+     **Office 365, SharePoint/OneDrive**: Update application configuration, Remove owner from group, Delete site, Create folder
+
+     **Dropbox**: Add member to group, Remove member from group, Create group, Rename group, Change team member name
+
+     **Box**: Remove item from group, Update item share, Add user to group, Remove user from group
 
 
 ## Cloud App Security release 89
