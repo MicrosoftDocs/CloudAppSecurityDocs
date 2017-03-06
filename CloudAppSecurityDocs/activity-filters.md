@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/9/2016
+ms.date: 3/6/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -107,14 +107,13 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 -   User – The user who performed the activity, which can be filtered into domain, group, name or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
     -   User domain - Search for a specific user domain.
-    -   User group – Specific user groups that are automatically imported by Cloud App Security from the cloud app, for example, all activities performed by Office 365 administrators.
-    -   User name - Search for a specific username. You can use the As filter to select **Actor**, **Activity object only** or **Any role**. This enables new investigation scenarios, including the following:
-        - Investigate mail forwarding and find out if someone is forwarding mails to external users by using the new filter capabilities in the Activity log. Choose Activity type equals Create forwarding Inbox rule and User from group equals External users as Activity object only
-         - You can now better investigate impersonated activities and find out who is impersonating which specific user, by using the filters:
-            - User name equals and enter the username
-            - As Activity object only
-            - Impersonated activity is
--   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
+    -   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
+    -   User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.  
+    -   User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, click on the name of the user group. This will take you to the Accounts page which lists all the users in the group. From there you can drill down into the details of the accounts of specific users in the group.
+       -  The **User group** and **User name** filters can be further filtered by using the **As** filter, and selecting the role of the user, which can be any of the following:
+            - Activity object only - this means that the user or user group selected did not perform the activity in question, they were the object of the activity
+            - Actor only - this means that the user or user group performed the activity
+            - Any role - this means that the user or user group were involved in the activity, either as the person who performed the activity or as the object of the activity
 
 -   User agent – The user agent of from with the activity was performed.  
   
