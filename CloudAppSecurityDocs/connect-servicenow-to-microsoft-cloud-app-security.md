@@ -58,23 +58,19 @@ This section provides instructions for connecting Cloud App Security to your exi
 
    ![ServiceNow profile IDs](./media/servicenow-profile-ids.png)
 
-6.  In the voice portal registration page, under **Tenant Details** enter the details you saved in the previous step and click **Next**.
-
-7. In the **OAuth Verification** tab, create a test user profile. 
-
-8.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
+6.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-9.  In the **App connectors** page, click the plus button and then **ServiceNow**.  
+7.  In the **App connectors** page, click the plus button and then **ServiceNow**.  
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-10.  In the popup, add your ServiceNow username, password and instance URL in the appropriate boxes.  
+8.  In the popup, add your ServiceNow username, password and instance URL in the appropriate boxes.  
   
-11.  Click **Connect**.  
+9.  Click **Connect**.  
   
      ![servicenow update password](./media/servicenow-update-password.png "servicenow update password")  
   
-12.  Make sure the connection succeeded by clicking **Test API**.  
+10.  Make sure the connection succeeded by clicking **Test API**.  
   
      Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
   
