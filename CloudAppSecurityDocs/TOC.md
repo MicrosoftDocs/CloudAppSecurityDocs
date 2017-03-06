@@ -4,6 +4,8 @@
 # Deploy
 ## [Getting started](getting-started-with-cloud-app-security.md)
 ## [Customize the portal](general-setup.md)
+### [User groups](user-groups.md)
+### [IP tags and ranges](ip-tags.md)
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
