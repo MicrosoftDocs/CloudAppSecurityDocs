@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -56,7 +56,7 @@ The following are examples of file policies that can be created:
     Receive an alert about any file shared with accounts owned by specific external domains, for example, with a competitor’s domain. Select the external domain with which you want to limit sharing.  
   
 -   Quarantine shared files not modified during the last period:  
-    Receive an alert about shared files that no one modified recently, in order to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren’t modified during a specified date range. On Google Apps,  you can choose to quarantine these files, using the ‘quarantine file’ checkbox on the policy creation page.  
+    Receive an alert about shared files that no one modified recently, in order to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren’t modified during a specified date range. On G Suite,  you can choose to quarantine these files, using the ‘quarantine file’ checkbox on the policy creation page.  
   
 -   Sharing with unauthorized users:  
     Receive an alert about files being shared with unauthorized group of users in your organization. Select the users which whom sharing is forbidden.  

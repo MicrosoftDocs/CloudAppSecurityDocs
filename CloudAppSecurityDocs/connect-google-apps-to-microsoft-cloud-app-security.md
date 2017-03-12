@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Connect Google Apps to Cloud App Security for visibility and control over use | Microsoft Docs
-description: This topic provides information about how to connect your Google apps to Cloud App Security using the API connector.
+title: Connect G Suite to Cloud App Security for visibility and control over use | Microsoft Docs
+description: This topic provides information about how to connect your G Suite to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,14 +26,14 @@ ms.suite: ems
 
 ---
 
-# Connect Google Apps to Microsoft Cloud App Security
-This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.
+# Connect G Suite to Microsoft Cloud App Security
+This section provides instructions for connecting Cloud App Security to your existing G Suite account using the connector APIs.
 
   
   
-## Configure Google Apps  
+## Configure G Suite  
   
-1.  As a Google Apps Super Admin, log into [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
+1.  As a G Suite Super Admin, log into [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
   
 2.  Click **Create an empty project** to start a new project.  
   
@@ -73,7 +73,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   Drive API  
   
-    -   Google Apps Marketplace SDK  
+    -   G Suite Marketplace SDK  
   
     -   Gmail API  
   
@@ -109,13 +109,13 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 11. In the **Credentials** tab, click **Manage service accounts** in the far right.  
   
-     ![google apps credentials service account](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![G Suite credentials service account](./media/google-apps-credentials-service-account.png "G Suite credentials service account")  
   
 12. Click the 3 dots to the right of the service account you created and select **Edit**.  
   
      ![google22](./media/google22.png "google22")  
   
-13. Select the **Enable Google Apps Domain-wide Delegation** checkbox and click **Save**.  
+13. Select the **Enable G Suite Domain-wide Delegation** checkbox and click **Save**.  
   
      ![google24](./media/google24.png "google24")  
   
@@ -149,7 +149,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          ![google29](./media/google29.png "google29")  
   
-17. In the **Enabled APIs** list, click the setting cog setting next to **Google Apps Marketplace SDK** and select the **Configuration** tab.  
+17. In the **Enabled APIs** list, click the setting cog setting next to **G Suite Marketplace SDK** and select the **Configuration** tab.  
   
     -   Copy the **Project number (App ID)** that appears at the top to use later.  
   
@@ -215,7 +215,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 18. Select **Security** from the list of controls. If you don't see this option listed, select More controls from the gray bar at the bottom of the page, and then select **Security**.  
   
-     ![google apps security](./media/google-apps-security.png "google apps security")  
+     ![G Suite security](./media/google-apps-security.png "G Suite security")  
   
 19. Choose **API reference**.  
   
@@ -229,13 +229,13 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 1.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-2.  In the **Connected apps** page, click the plus sign and select **Google Apps**.  
+2.  In the **Connected apps** page, click the plus sign and select **G Suite**.  
   
-     ![connect google apps](./media/connect-google-apps.png "connect google apps")  
+     ![connect G Suite](./media/connect-google-apps.png "connect G Suite")  
   
 3.  In the popup, fill in the following:  
   
-     ![Google Apps Configuration in Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+     ![G Suite Configuration in Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "G Suite Configuration in Cloud App Security")  
   
     1.  **Google Service Account email address** that you copied in step 14.  
   
@@ -243,26 +243,26 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     3.  Upload the **Google Certificate** P12 that you saved in step 10.  
   
-    4.  Enter one **admin email** of your Google Apps admin.  
+    4.  Enter one **admin email** of your G Suite admin.  
   
-    5.  If you have a Google Apps unlimited account, check this checkbox. For information about which features are available in Cloud App Security for Google Apps unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  If you have a G Suite unlimited account, check this checkbox. For information about which features are available in Cloud App Security for G Suite unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Click **Save settings**.  
   
-    7.  **Follow the link** to connect to Google Apps. This will open Google Apps and you will be asked to authorize access for Cloud App Security.  
+    7.  **Follow the link** to connect to G Suite. This will open G Suite and you will be asked to authorize access for Cloud App Security.  
   
-         ![Google Apps authorization request](./media/google-apps-authorization-request.png "Google Apps authorization request")  
+         ![G Suite authorization request](./media/google-apps-authorization-request.png "G Suite authorization request")  
   
     8.  Make sure the connection succeeded by clicking **Test API**.  
   
          Testing may take a couple of minutes.  
   
-         After receiving a success notice, click **Done** and close the Google Apps page.  
+         After receiving a success notice, click **Done** and close the G Suite page.  
   
   
-After connecting Google Apps, you will receive events for 60 days prior to connection.
+After connecting G Suite, you will receive events for 60 days prior to connection.
   
-After connecting Google Apps, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real time scanning, files on which activity is detected are moved to the beginning of the scan queue, for example a file that is edited, updated, or shared is scanned right away and doesn't wait until it is reached by regular scan process. This does not apply to files that are not inherently modified, for example files that are viewed, previewed, printed or exported.
+After connecting G Suite, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real time scanning, files on which activity is detected are moved to the beginning of the scan queue, for example a file that is edited, updated, or shared is scanned right away and doesn't wait until it is reached by regular scan process. This does not apply to files that are not inherently modified, for example files that are viewed, previewed, printed or exported.
   
   
 ## See Also  

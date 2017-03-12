@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,7 +43,7 @@ The following alerts types will be displayed.
 |----|----|----|
 |New location|ALERT_GEOLOCATION_NEW_COUNTRY|A new location was detected since the scan began (up to 6 months). This only shows up once for each country for your entire organization. |
 |New admin user|ALERT_ADMIN_USER|A new admin was detected for a specific app – this can be someone who is an admin in one application and is now an admin for another application. This alert relates to the specific admin type, so it will show up each time the type of admin changes. If a user lost admin privileges and then got them again, this alert will be displayed.|
-|Inactive account|ALERT_ZOMBIE_USER|If a user is inactive for 60 days per application – for example, if someone is active in Box but hasn't touched Google Apps for 60 days, the user will be considered inactive in Google Apps. A tag is added to these users so you can search for inactive accounts.|
+|Inactive account|ALERT_ZOMBIE_USER|If a user is inactive for 60 days per application – for example, if someone is active in Box but hasn't touched G Suite for 60 days, the user will be considered inactive in G Suite. A tag is added to these users so you can search for inactive accounts.|
 |Unexpected admin location|ALERT_NEW_ADMIN_LOCATION|A new location was detected for administrators since the scan began (up to 6 months). This only shows up once for each country for any admin across your organization. |
 |Compromised account|ALERT_COMPROMISED_ACCOUNT|If there was a breach in an application, and the list of breached accounts is published, Cloud App Security downloads the list and compares it to your list of users - including internal users, external users and personal accounts. |
 
