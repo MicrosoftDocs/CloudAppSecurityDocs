@@ -64,13 +64,13 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-8.  In the popup, add your ServiceNow username, password and instance URL in the appropriate boxes.  
+8.  In the popup, add your ServiceNow username, password, instance URL, Client ID and Client secret in the appropriate boxes.  
   
 9.  Click **Connect**.  
   
-     ![servicenow update password](./media/servicenow-update-password.png "servicenow update password")  
+     ![servicenow connect to CAS](./media/servicenow-portal-connect.png "servicenow connect in portal")  
   
-10.  Make sure the connection succeeded by clicking **Test API**.  
+10.  Make sure the connection succeeded by clicking **Test now**.  
   
      Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
   
