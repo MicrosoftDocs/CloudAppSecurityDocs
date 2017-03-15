@@ -52,7 +52,9 @@ This section provides instructions for connecting Cloud App Security to your exi
     
     - The **Client ID** will be generated automatically. Copy this ID, you will need to paste it into Cloud App Security to complete connection.
     
-    - In the **Client Secret** field, enter a string. Copy and save it for later.
+    - In the **Client Secret** field, enter a string. If left empty, a random Secret will be generated automatically. Copy and save it for later. 
+    
+    - Increase the **Access Token Lifespan** to at least 3,600.
     
     - Click **Submit**.
 
