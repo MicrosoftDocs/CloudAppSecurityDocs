@@ -204,7 +204,7 @@ This section provides instructions for connecting Cloud App Security to your exi
       
 20. Select **Enable API Access** and click **Save changes**.  
   
-            ![google api reference](./media/googleapiref.png "google8")  
+    ![google api reference](./media/googleapiref.png "google8")  
 
   
 ## Configure Cloud App Security  
