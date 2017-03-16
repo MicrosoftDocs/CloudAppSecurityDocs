@@ -88,7 +88,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
      ![google service account key](./media/google8.png "google8")  
   
-11. Under **Create service account key**, choose **New service account** and type any name, for example **Service account 1**, under **Role** choose **Project** and then **editor** and under **Key type** choose **P12** and click **Create**.  
+11. Under **Create service account key**, choose **New service account** and type any name, for example **Service account 1**, under **Role** choose **Project** and then **Editor** and under **Key type** choose **P12** and click **Create**.  
   
      ![google create service account key](./media/google9.png "google9")  
   
