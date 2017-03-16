@@ -12,7 +12,7 @@
 ### [Anonymize Cloud Discovery data](cloud-discovery-anonymizer.md)
 ## [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Connect Box](connect-box-to-microsoft-cloud-app-security.md)
-### [Connect Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [Connect G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [Connect Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [Connect AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Connect Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
