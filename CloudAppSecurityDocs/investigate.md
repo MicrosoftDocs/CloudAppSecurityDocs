@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -40,7 +40,7 @@ The following dashboards are available to help you investigate apps in your clou
 |Application dashboard: overall|Overview of application usage per location, usage graphs per number of users|  
 |Application dashboard: insights|Analysis of data stored in the app, broken down by file type and file-sharing level|  
 |Application dashboard: files|Drill-down into files; ability to filter according to owner, sharing level, etc., as well as perform governance actions (like quarantine)|  
-|Application dashboard: third-party apps|Drill-down into third-party apps currently deployed, like Google Apps, and defining policies for them|  
+|Application dashboard: third-party apps|Drill-down into third-party apps currently deployed, like G Suite, and defining policies for them|  
 |User dashboard|A complete overview of the user profile in the cloud, including groups, locations, recent activities, related alerts, and browsers used|  
 
 ##  <a name="sanctionapp"></a> Tag apps as sanctioned or unsanctioned  
