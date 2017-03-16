@@ -218,11 +218,11 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![G Suite Configuration in Cloud App Security](./media/gsuite-config-cas.png "G Suite Configuration in Cloud App Security")  
   
-    1.  **Service Account email address** that you copied in step 15.  
+    1.  **Service Account email address** that you copied in step 16.  
   
-    2.  **Project number (App ID)** that you copied in step 20.  
+    2.  **Project number (App ID)** that you copied in step 21.  
   
-    3.  Upload the **Certificate** P12 that you saved in step 11. You will need the password you saved to do this.  
+    3.  Upload the **Certificate** P12 that you saved in step 12. You will need the password you saved to do this.  
   
     4.  Enter one **admin account email** of your G Suite admin.  
   
