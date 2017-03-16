@@ -92,8 +92,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![google create service account key](./media/google9.png "google9")  
   
-   
-      A P12 certificate file will be saved to your computer. A pop-up will show you  the **password for the private key** MAKE SURE YOU SAVE IT for use later.  
+12.  A P12 certificate file will be saved to your computer. A pop-up will show you  the **password for the private key** MAKE SURE YOU SAVE IT for use later.  
         
 12. In the **Credentials** screen, click **Manage service accounts** in the far right.  
        ![G Suite credentials service account](./media/google10.png "G Suite credentials service account")  
