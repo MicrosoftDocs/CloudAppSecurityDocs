@@ -102,8 +102,20 @@ This section provides instructions for connecting Cloud App Security to your exi
      Testing may take a couple of minutes. After receiving a success notice, click **Done**.  
   
   
-After connecting Salesforce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your Salesforce EventMonitoring license.
+After connecting Salesforce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your Salesforce EventMonitoring license. The Cloud App Security API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Cloud App Security takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Cloud App Security calculates this into a percentage and makes sure to always leave 10% of available API calls remaining. 
+
+> [!NOTES]
+> Cloud App Security throttling is calculated solely on its own API calls with Salesforce, not with those of any other applications making API calls with Salesforce.
+> Limiting API calls due to the limitation may slow down the rate at which data is ingested in Cloud App Security, but usually catches up over night.
+
+
+Salesforce events are processed by Cloud App security as follows: 
   
+- Log in events every 15 minutes
+- Setup audit trail every 15 minutes
+- Event log monitoring are exported every 24 hours by Salesforce (12:00 UTC) 
+
+
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

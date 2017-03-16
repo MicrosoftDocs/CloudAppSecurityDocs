@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,7 +36,7 @@ There are two types of user groups:
   - External
   - Dropbox administrator
   - Office 365 administrator
-  - Google Apps administrator
+  - G Suite administrator
   - Box administrator
   - All Salesforce standard and custom profiles, for example, Salesforce System Administrator. See the full list [here](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
 

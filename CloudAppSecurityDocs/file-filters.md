@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -93,7 +93,7 @@ Internal are any files within the Internal domains you set in [General setup](Ge
   
 -   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.   
   
--   File tag - Search for files with specific tags set by Azure Information Protection. This requires integration with Azure Information Protection.
+-   Classification label - Search for files with specific tags set by Azure Information Protection. This requires integration with Azure Information Protection.
 
 -   File type – Cloud App Security takes both the MIME type received from the service and scans the file to determine the true file type. Note that this scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text and zip/archive files). The filter works per file/folder type, for example, All folders that are ... or All spreadsheet files that are...
 
