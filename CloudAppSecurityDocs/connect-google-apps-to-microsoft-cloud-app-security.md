@@ -88,7 +88,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
      ![google service account key](./media/google8.png "google8")  
   
-11. Under **Create service account key**, choose **New service account** and type any name, for example **Service account 1**, under **Role** choose **** and under **Key type** choose **P12** and click **Create**.  
+11. Under **Create service account key**, choose **New service account** and type any name, for example **Service account 1**, under **Role** choose **Project** and then **editor** and under **Key type** choose **P12** and click **Create**.  
   
      ![google create service account key](./media/google9.png "google9")  
   
@@ -196,16 +196,16 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   Click on **Save Changes**.  
   
-18. Select **Security** from the list of controls. If you don't see this option listed, select **More controls** from the gray bar at the bottom of the page, and then select **Security**.  
-  
-     
+18. Go to [www.admin.google.com](https://www.admin.google.com/) and then choose **Security**. 
+       ![google security](./media/googlesecurity.png "google8")  
+ 
 19. Choose **API reference**.  
-  
-     
-  
+       ![google api enable](./media/googleapi.png "google8")  
+      
 20. Select **Enable API Access** and click **Save changes**.  
   
-       
+            ![google api reference](./media/googleapiref.png "google8")  
+
   
 ## Configure Cloud App Security  
   
@@ -214,7 +214,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 2.  In the **Connected apps** page, click the plus sign and select **G Suite**.  
        
   
-3.  In the popup, fill in the following:  
+3.  In the pop-up, fill in the following:  
   
      ![G Suite Configuration in Cloud App Security](./media/gsuite-config-cas.png "G Suite Configuration in Cloud App Security")  
   
