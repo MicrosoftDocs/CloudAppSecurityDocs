@@ -55,7 +55,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          ![salesforce edit profile](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
-    -   Make sure you have the **API Enabled** checkbox selected. If it is not selected, you may need to contact Salesforce to add it to your account.  
+    -   Make sure you have the **API Enabled** check box selected. If it is not selected, you may need to contact Salesforce to add it to your account.  
   
          ![salesforce api enabled](./media/salesforce-api-enabled.png "salesforce api enabled")  
   
@@ -71,9 +71,9 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     3.  Select the current administrative user to your dedicated Cloud App Security user.  
   
-    4.  Make sure that the **Salesforce CRM Content User** checkbox is selected.  
+    4.  Make sure that the **Salesforce CRM Content User** check box is selected.  
   
-         If it is not selected, click **Edit** and then check the checkbox.  
+         If it is not selected, click **Edit** and then check the check box.  
   
          ![salesforce crm content user](./media/salesforce-crm-content-user.png "salesforce crm content user")  
   
@@ -87,7 +87,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 6.  In the Salesforce settings page, on the API tab, click **Follow this link**, depending on which instance you want to install.  
   
-7.  This opens the Salesforce logon page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.  
+7.  This opens the Salesforce log on page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.  
   
      ![salesforce logon](./media/salesforce-logon.png "salesforce logon")  
   

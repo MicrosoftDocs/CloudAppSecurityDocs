@@ -88,7 +88,7 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 ![file drawer](./media/azip-file-drawer.png)
 
-- You can click on the classification lable to view more information or to see the full list of classification labels:
+- You can click on the classification label to view more information or to see the full list of classification labels:
  
 ![tags list](./media/azip-tags-list.png)
 

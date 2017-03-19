@@ -86,7 +86,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
     - Darknet scanning IP
     - Malware C&C server
     - Remote Connectivity Analyzer
-    - Sattelite providers
+    - Satellite providers
     - Smart proxy and access proxy (left out on purpose)
     - Tor exit nodes
     - Zscaler
@@ -122,7 +122,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 ## Working with the Activity drawer
 
-You can view more information about each activity, by clicking on the Activity iteself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the file:
+You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the file:
 
 - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
 - View raw data: Click on View raw data to see the actual data that was received from the app.

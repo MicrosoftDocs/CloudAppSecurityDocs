@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create a Cloud Discovery anomaly detection policy in Cloud App Security | Microsoft Docs
-description: This topic proivdes information about how to work with Cloud Discovery anomaly detection policies.
+description: This topic provides information about how to work with Cloud Discovery anomaly detection policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,7 +36,7 @@ For each policy you can set filters that enable you to selectively monitor appli
 
 For each policy, set the following:
 
-1. Decide if you want to base the policy on a template, relevant policy templates are the **Anomlylous behavior in discovered users** template which alerts when anomalous behavior is detected in discovered users and apps, such as: large amounts of uploaded data compared to other users, large user transactions compared to the user's history. You can also select the **Anomalous behavior of discovered IP addresses** template, which alerts when anomalous behavior is detected in discovered IP addresses and apps, such as: large amounts of uploaded data compared to other IP addresses, large app transactions compared to the IP address's history. 
+1. Decide if you want to base the policy on a template, relevant policy templates are the **Anomalous behavior in discovered users** template which alerts when anomalous behavior is detected in discovered users and apps, such as: large amounts of uploaded data compared to other users, large user transactions compared to the user's history. You can also select the **Anomalous behavior of discovered IP addresses** template, which alerts when anomalous behavior is detected in discovered IP addresses and apps, such as: large amounts of uploaded data compared to other IP addresses, large app transactions compared to the IP address's history. 
  
 2. Provide a **Policy name** and **Description**.  
 
@@ -70,7 +70,7 @@ You can select a specific app, an app **Category**, or filter by **Name**, **Dom
 
 6. Click **Create**.
 
-7. Like with all policies, you can **Edit**, **Disable** and **Enable** the policy by clicking the three dots at the end of the rown in the **Policies** page. By default, when you create a policy it is enabled.
+7. Like with all policies, you can **Edit**, **Disable** and **Enable** the policy by clicking the three dots at the end of the row in the **Policies** page. By default, when you create a policy it is enabled.
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   

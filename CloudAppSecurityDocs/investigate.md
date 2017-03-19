@@ -124,7 +124,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
     -   Are there cloud apps that are used but not in compliance with your organization’s policy?  
 
 ## Use reports to investigate risk  
-When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find—you don't really know your cloud yet. Based on these assumptions, you create policies.
+When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find — you don't really know your cloud yet. Based on these assumptions, you create policies.
 
 After Cloud App Security runs on your cloud environment, you use the built-in reports (and custom reports) to see what's going on in your cloud. Based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few false positives.  
 

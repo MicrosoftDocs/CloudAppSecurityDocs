@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -123,10 +123,10 @@ You can also set the policy to run on specific files by setting the **Apply to**
   
 ## Working with the File drawer
 
-You can view more information about each file, by clicking on the File iteself in the File log. This opens the File drawer which provides the following additional actions you can take on the file:
+You can view more information about each file, by clicking on the File itself in the File log. This opens the File drawer which provides the following additional actions you can take on the file:
 
 - URL: Takes you to the file location.
-- File identifiers: Clicking on File identifiers opens a popup with raw data details about the file including file ID and encryption keys.
+- File identifiers: Clicking on File identifiers opens a pop-up with raw data details about the file including file ID and encryption keys.
 - Owner:  Click on the owner to view the user page for the owner of this file.
 - Matched policies: Click on the Matched policies link to see a list of policies this file matched.
 - Classification label: Click on the Classification label to view the list of Azure Information Protection classification labels found in this file. You can then filter by all files matching this label.    

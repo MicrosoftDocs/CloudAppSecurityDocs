@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -48,11 +48,11 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          ![okta createtoken](./media/okta-createtoken.jpg "okta createtoken")  
   
-    -   In the **Create Token** popup, name your Cloud App Security token and click **Create Token**.  
+    -   In the **Create Token** pop-up, name your Cloud App Security token and click **Create Token**.  
   
          ![okta token popup](./media/okta-token-popup.png "okta token popup")  
   
-    -   In the **Token created successfully popup**, copy the **Token value**.  
+    -   In the **Token created successfully** pop-up, copy the **Token value**.  
   
          ![okta token value](./media/okta-token-value.png "okta token value")  
   
@@ -62,7 +62,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![connect okta](./media/connect-okta.png "connect okta")  
   
-5.  In the popup that opens, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.  
+5.  In the pop-up that opens, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.  
   
 6.  Click **Connect** to create the token for Okta in Cloud App Security.  
   

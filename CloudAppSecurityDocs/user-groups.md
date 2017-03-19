@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -31,7 +31,7 @@ ms.suite: ems
 
 When you connect apps using API connectors, Cloud App Security enables you to import user groups, for example from Office 365 and Azure Active Directory.
 There are two types of user groups: 
-- Automatic groups </br>Automatic groups are created by default by Cloud App Security. For exmaple, there is an automatic user group called **External** which combines all users from all apps who are external to your organization and have access to files or were in user activities in your tenant.
+- Automatic groups </br>Automatic groups are created by default by Cloud App Security. For example, there is an automatic user group called **External** which combines all users from all apps who are external to your organization and have access to files or were in user activities in your tenant.
  The following automatic groups exist in Cloud App Security:
   - External
   - Dropbox administrator
@@ -40,7 +40,7 @@ There are two types of user groups:
   - Box administrator
   - All Salesforce standard and custom profiles, for example, Salesforce System Administrator. See the full list [here](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
 
-- Imported groups</br>You can import any group from your connected apps. For example, you can import user groups from Office 365 (Active Directory) and other conected apps. This enables you to look for threats in your org, not by looking at the whole org or at a specific user, but by looking at a specific group. 
+- Imported groups</br>You can import any group from your connected apps. For example, you can import user groups from Office 365 (Active Directory) and other connected apps. This enables you to look for threats in your org, not by looking at the whole org or at a specific user, but by looking at a specific group. 
 
 Typical scenarios that leverage imported user groups include: you can investigate which docs the HR people look at, or you can check if there's something unusual happening in the executive group, or if someone from the admin group performed an activity outside the US. 
 To import user groups:

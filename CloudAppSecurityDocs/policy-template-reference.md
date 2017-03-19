@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,7 +43,7 @@ The following is a list of all the policy templates that exist in Cloud App Secu
 |Cloud storage app compliance check|Alert when new cloud storage apps are discovered that are not compliant with SOC2, SSAE 16, ISAE 3402 and PCI DSS, and are used by more than 50 users with total daily use of more than 50 MB.|
 |New risky app|Alert when new apps are discovered with risk score lower than 6 and that are used by more than 50 users with a total daily use of more than 50 MB.|
 |Collaboration app compliance check|Alert when new collaboration apps are discovered that are not compliant with SOC2 and SSAE 16, and are used by more than 50 users with a total daily use of more than 50 MB.|
-|Logon from a risky IP address|Alert when a user logs on to your sanctioned apps from a risky IP address. By default, the Risky IP address category contains addresses that have IP address tags of Anonymous proxy, TOR or Botnet. You can add more IP addresses to this category in the IP address ranges settings page.|
+|Log on from a risky IP address|Alert when a user logs on to your sanctioned apps from a risky IP address. By default, the Risky IP address category contains addresses that have IP address tags of Anonymous proxy, TOR or Botnet. You can add more IP addresses to this category in the IP address ranges settings page.|
 |Administrative activity from a non-administrative IP address|Alert when an admin user performs an administrative activity from an IP address that is not included in a specific IP address range category. You can set additional risky IP addresses by going to the Settings page, and selecting IP address ranges.|
 |User logon from a non-categorized IP address|Alert when a user logs on from an IP address that is not included in a specific IP range category. You can categorize IP addresses by going to the Settings page, and selecting IP address ranges.|
 |File containing PII detected in the cloud (built-in DLP engine)|Alert when a file containing personally identifiable information (PII) is detected by our built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
