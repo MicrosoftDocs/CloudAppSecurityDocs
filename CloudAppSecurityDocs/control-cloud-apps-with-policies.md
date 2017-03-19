@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ Policies allow you to define the way you want your users to behave in the cloud.
 For example, if there is a data violation threat that you want to quarantine, you will need a different type of policy in place than if you want to block a risky cloud app from being used by your organization.  
   
 ## Policy types  
-When you look at the **Policy** page, the various policies and templates can be distinguished by type and icon to see which policies will be available. The available policies depend on the data source and what you have enabled in Cloud App Security for your organization, for example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discoery will be displayed.
+When you look at the **Policy** page, the various policies and templates can be distinguished by type and icon to see which policies will be available. The available policies depend on the data source and what you have enabled in Cloud App Security for your organization, for example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discovery will be displayed.
 
 The following types of policies can be created:  
   

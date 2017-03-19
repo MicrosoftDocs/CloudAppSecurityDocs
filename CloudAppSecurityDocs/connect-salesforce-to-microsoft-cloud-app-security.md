@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -55,7 +55,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          ![salesforce edit profile](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
-    -   Make sure you have the **API Enabled** checkbox selected. If it is not selected, you may need to contact Salesforce to add it to your account.  
+    -   Make sure you have the **API Enabled** check box selected. If it is not selected, you may need to contact Salesforce to add it to your account.  
   
          ![salesforce api enabled](./media/salesforce-api-enabled.png "salesforce api enabled")  
   
@@ -71,9 +71,9 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     3.  Select the current administrative user to your dedicated Cloud App Security user.  
   
-    4.  Make sure that the **Salesforce CRM Content User** checkbox is selected.  
+    4.  Make sure that the **Salesforce CRM Content User** check box is selected.  
   
-         If it is not selected, click **Edit** and then check the checkbox.  
+         If it is not selected, click **Edit** and then check the check box.  
   
          ![salesforce crm content user](./media/salesforce-crm-content-user.png "salesforce crm content user")  
   
@@ -87,7 +87,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 6.  In the Salesforce settings page, on the API tab, click **Follow this link**, depending on which instance you want to install.  
   
-7.  This opens the Salesforce logon page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.  
+7.  This opens the Salesforce log on page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.  
   
      ![salesforce logon](./media/salesforce-logon.png "salesforce logon")  
   
@@ -104,7 +104,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 After connecting Salesforce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your Salesforce EventMonitoring license. The Cloud App Security API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Cloud App Security takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Cloud App Security calculates this into a percentage and makes sure to always leave 10% of available API calls remaining. 
 
-> [!NOTES]
+> [!NOTE]
 > Cloud App Security throttling is calculated solely on its own API calls with Salesforce, not with those of any other applications making API calls with Salesforce.
 > Limiting API calls due to the limitation may slow down the rate at which data is ingested in Cloud App Security, but usually catches up over night.
 

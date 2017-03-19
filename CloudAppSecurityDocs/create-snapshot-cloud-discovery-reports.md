@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -66,7 +66,7 @@ After processing of your log files completes, you will receive an email to notif
      ![Discovery settings tab](./media/discovery-settings-tab.png)
 11. Then selecting **Manage snapshot reports** and select your snapshot report.
  
-![snapshot report managment](./media/snapshot-report-managment.png)
+![snapshot report management](./media/snapshot-report-managment.png)
 
   
       

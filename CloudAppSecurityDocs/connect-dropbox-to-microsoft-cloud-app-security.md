@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -40,13 +40,13 @@ Because Dropbox enables access to files from shared links without signing in, Cl
   
      ![connect dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  In the popup, enter the admin account email address.  
+3.  In the pop-up, enter the admin account email address.  
   
 4.  Click **Generate link**.  
   
 5.  Click **Follow this link**.  
   
-     This opens the Dropbox logon page. Enter your credentials to allow Cloud App Security access to your team's Dropbox instance.  
+     This opens the Dropbox log on page. Enter your credentials to allow Cloud App Security access to your team's Dropbox instance.  
   
 6.  Dropbox will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.  
   

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,7 +34,7 @@ Cloud App Security lets you investigate files and set policies based on Azure In
 By integrating Azure Information Protection into Cloud App Security, you can leverage the full power of both services and secure files in your cloud, including:
 - The ability to view all classified files in a central location
 - The ability to perform investigation according to classification level, and quantify exposure of sensitive data over your cloud applications
-- The ablility to create policies to make sure classified files are being handled properly
+- The ability to create policies to make sure classified files are being handled properly
 
 > [!NOTE] 
 > To enable this feature you will need both a Cloud App Security license and a license for Azure Information Protection Premium P1 or P2. As soon as both licenses are in place, Cloud App Security will sync the organizations labels from the Azure Information Protection service.
@@ -54,7 +54,7 @@ You are probably familiar with file classification labels in [Azure Information 
 
 This is all you have to do to integrate Azure Information Protection with Cloud App Security: Enable automatic scan to enable searching for Azure Information Protection classification labels on your Office 365 files without the need to create a policy. After you enable this, if you have files in your cloud environment that are labeled with Azure Information Protection classification labels, you will see them in Cloud App Security.
 
-To enable Cloud App Security to scan files with content inspection enabled for classification lables:
+To enable Cloud App Security to scan files with content inspection enabled for classification labels:
 
 1. In Cloud App Security, under the settings cog, select the **General settings** page.
 2. Under Azure Information Protection, select **Automatically scan files for Azure Information Protection classification labels**. 
@@ -88,7 +88,7 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 ![file drawer](./media/azip-file-drawer.png)
 
-- You can click on the classification lable to view more information or to see the full list of classification labels:
+- You can click on the classification label to view more information or to see the full list of classification labels:
  
 ![tags list](./media/azip-tags-list.png)
 
@@ -97,6 +97,8 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 ![azure information protection tags in cloud app security](./media/azip-tags-in-cas.png)
 
+> ![Note]
+> When Azure Identity Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
 **Policy #1 - confidential data that is externally shared on Box:**
 
 1.	Create a file policy.

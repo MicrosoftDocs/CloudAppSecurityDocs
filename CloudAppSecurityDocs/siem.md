@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/1/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -62,7 +62,7 @@ Click **Next**.
   ![Remote Syslog settings](./media/siem2.png)
 
 6. Select which data types, **Alerts** and **Activities** you want to export to your SIEM server. 
-Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** dropdown to set filters to send only specific alerts and activities to your SIEM server.
+Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server.
 You can click **Edit and preview results** to check that the filter works as expected. 
 Click **Next**. 
 
