@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,11 +29,28 @@ ms.suite: ems
 # Release notes
 
 ## Cloud App Security release 93
-Released March, 2017
+Released March 20, 2017
 
-
-
-
+**New features:**
+-	Cloud App Security Anonymization now enables you to configure a custom encryption key. For more information, see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
+-	In order to have more control over user and account management, you now have direct access to Azure AD account settings for each user and account from within the **Account** page by clicking the cog next to each user. This enables easier access to advanced user management features group management, configuration of MFA, details about user sign-ins and the ability to block sign-in. 
+-	You can now export a blocking script for unsanctioned apps via the Cloud App Security API. Read more about our APIs in the Cloud App Security portal by clicking the question mark in the menu bar, followed by **API documentation**.
+-	The Cloud App Security app connector for ServiceNow was expanded to include support for OAuth tokens (as introduced in Geneva, Helsinki, Istanbul). This provides a more robust API connection to ServiceNow which does not rely on the deploying user. For more information see [Connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security). Existing customers can update their settings in the ServiceNow App connector page.
+-	If you configured additional third-party DLP scanners, DLP scan status will now show the status of each connector independently to improve visibility.
+-	Cloud App Security now includes support for the Microsoft Teams activities that are supported in the Office 365 audit log. This feature is being rolled out gradually.
+-	For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
+-	In the app drawer on the App Permissions tab you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
+-	Risky IP addresses now show up as an independent risk factor rather than weighted under the general **Location** risk factor. 
+-	When Azure Identity Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
+ 
+**Additional Salesforce support:**
+-	You can now suspend and unsuspend Salesforce users in Cloud App Security. This can be accomplished in the **Accounts** tab of the Salesforce Connector by clicking the cog at the end of the row of a specific user, and selecting **Suspend** or **Unsuspend** and can also be applied as a governance action as part of a policy. All suspend and unsuspend activities taken in Cloud App Security will be logged in the [Governance log](governance-actions.md). 
+-	Improved visibility to Salesforce content sharing: You can now see which files were shared with whom, including publicly shared files, files shared with groups and files shared with the entire Salesforce domain. Improved visibility will be rolled out retroactively to new and current connected Salesforce apps, it may take a while for this to update the first time.
+-	We improved coverage for the following Salesforce events, and separated them out of the **Manage users** activity: 
+    - Edit permissions
+    - Create user
+    - Change role
+    - Reset password
 
 ## Cloud App Security release 90, 91, 92
 Released February, 2017
