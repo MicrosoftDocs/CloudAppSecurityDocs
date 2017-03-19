@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Cloud App Secuirty release notes & versions | Microsoft Docs
+title: Cloud App Security release notes & versions | Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,12 @@ ms.suite: ems
 ---
 
 # Release notes
+
+## Cloud App Security release 93
+Released March, 2017
+
+
+
 
 
 ## Cloud App Security release 90, 91, 92
@@ -63,8 +69,8 @@ Cloud App Security is now officially certified with Microsoft Compliance for ISO
 Released January 22, 2017
 
 **New features**
--	We are starting to roll out the ability to view Office 365 Security and Compliance Center DLP events in Cloud App Security. If you configured DLP policies in the Office 365 Security and Compliance Center, when policy matches are detected, you will be able to see them in the Cloud App Security Activity log. The information in the Activity log will include the file or email that triggered the match as and the policy or alert that it matched. The “Security event” activity allows you to view Office 365 DLP policy matches in the Cloud App Security activity log. Using this feature, you can:
-    -	See all DLP matches coming from the Office365 DLP engine.
+-	We are starting to roll out the ability to view Office 365 Security and Compliance Center DLP events in Cloud App Security. If you configured DLP policies in the Office 365 Security and Compliance Center, when policy matches are detected, you will be able to see them in the Cloud App Security Activity log. The information in the Activity log will include the file or email that triggered the match as and the policy or alert that it matched. The **Security event** activity allows you to view Office 365 DLP policy matches in the Cloud App Security activity log. Using this feature, you can:
+    -	See all DLP matches coming from the Office 365 DLP engine.
     -	Alert on Office 365 DLP policy matches for a specific file, SharePoint site, or policy.
     -	Investigate DLP matches with a broader context, for example- external users who accessed or downloaded a file that triggered a DLP policy match.
  

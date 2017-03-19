@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -52,11 +52,14 @@ How data anonymization works:
         1. Under the Settings cog, select **Cloud Discovery settings**.
      
         2. In the Anonymization tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**.
-  ![Anonymization](./media/anonymizer.png)
+
+        3. Under Encryption key, select whether you want to **Use the dedicated key generated for your portal** or **Use a custom key**. If you **Use a custom key**, enter a 16-byte UTF8 encryption key.
+        4. Click **Save**.
+  ![Anonymization](./media/anonymizer1.png)
   
 
 2.	When anonymization is selected, Cloud App Security parses the traffic log and extracts specific data attributes.
-3.	Cloud App Security replaces the  username with an encrypted username.
+3.	Cloud App Security replaces the username with an encrypted username.
 4.	It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
  ![Anonymize Cloud Discovery dashboard](./media/anonymize-dashboard.png)
  

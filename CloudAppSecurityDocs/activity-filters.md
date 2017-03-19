@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2016
+ms.date: 3/19/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -51,11 +51,11 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 -   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.  
   
--   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects.
+-   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects. 
     - Activity object ID - the ID of the object (file, folder, user or app ID).
     - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.
     - Target object (file/folder) - Enables you to select a specific file or folder. 
-    - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). 
+    - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for itmes that **Contain**, **Equal** or **Starts with** the specific item.
     
 -   Activity type - Search for the app activity.
 
