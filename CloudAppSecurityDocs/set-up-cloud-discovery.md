@@ -90,7 +90,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Cisco ScanSafe
 - Cisco Merkai – URLs log
 - Dell Sonicwall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
@@ -138,4 +138,3 @@ Data attributes (according to vendor documentation):
 [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
-
