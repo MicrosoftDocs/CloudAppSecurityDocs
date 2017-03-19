@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage app permissions | Microsoft Docs
+title: Control which third-party cloud apps get permissions | Microsoft Docs
 description: This article provides information about how you can control, ban and allow third-party app permissions.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,7 +36,7 @@ The **App permissions** tab displays information about app permissions in your O
 
 To access the App permissions tab:
 
-1. In the Cloud App Security portal, click **Investigate**, and under Sanctioned apps, select **Office 365**. 
+1. In the Cloud App Security portal, click **Investigate**, and under **Connected apps**, select **Office 365**. 
 > [!Note]
 > You have to first connect Cloud App Security to Office 365 to work with App permissions.
 

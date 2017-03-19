@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Control cloud apps with policies | Microsoft Docs
+title: Control cloud app usage by creating policies in Cloud App Security | Microsoft Docs
 description: This topic provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -42,7 +42,6 @@ The following types of policies can be created:
 |![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud based on the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity.|  
 |![cloud discovery policy icon](./media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|  
 |![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|  
-|![field policy icon](./media/field_policy.png)|Field policy|Field policies enable you to scan your cloud apps for fields in your cloud environment that may contain sensitive data like posts, chat messages, descriptions, and long text fields.|  
 |![file policy icon](./media/file_policy.png)|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
   
 ## Identifying risk  
@@ -60,7 +59,7 @@ Cloud App Security helps you mitigate different risks in the cloud. You can conf
   
      Monitor configuration changes including remote configuration manipulation.  
   
--   **Cloud Discovery:** Are new, unsanctioned, apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?  
+-   **Cloud Discovery:** Are new apps being used in your organization? Do you have a problem of Shadow IT apps being used that you don't know about?  
   
      Rate overall risk for each cloud app based on regulatory and industry certifications and  
     best practices, enables you to monitor the number of users, activities, traffic volume and typical usage hours for  
@@ -113,15 +112,16 @@ To create a policy from a **policy templates**, perform the following:
   
 Alternatively, you can **create a policy during investigation**. If you are investigating the **Activity log**, **Files** or **Accounts**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.  
   
-For example, if you are looking at the **Activity log**, and see that one of your admin accounts is being logged into from an unexpected geographic location, you can filter the results of the **Activity log** to display all log on activities by that admin, and then create a report that notifies you the next time activity is detected for that user.  
+For example, if you are looking at the **Activity log**, and see an admin activity from outside the your office’s IP addresses.
+
   
 To create a policy based on investigation results, perform the following:  
   
 1.  In the console, click on **Investigate** followed by **Activity log**, **Files** or **Accounts**.  
   
-2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **User** and select the Admin whose account is registering unusual activity. Then, under **Activity**, select **Copy folder** and **Copy file**.  
+2.  Use the filters at the top of the page to limit the search results to the suspicious area, for example, in the Activity log page, click **Activity** and select **Admin logon**. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate and VPN IP addresses.  
   
-     ![](./media/create-file-from-investigation.png)  
+     ![Create file from investigation](./media/create-file-from-investigation.png)  
   
 3.  In the upper right corner of the console, click **New policy from search**![](./media/new-policy-from-search-button.png)  
   
@@ -148,12 +148,19 @@ To create a policy based on investigation results, perform the following:
 >   
 >  [Cloud Discovery policies](cloud-discovery-policies.md)  
   
-### Policy conflicts
-After creating multiple policies, a situation may arise in which the policies overlap. In this case, Cloud App Security will process the policies as follows:
-* If two policies contain actions that are contained on in the other (for example, **Remove external shares** is included in **Make private**), Cloud App Security will resolve the conflict and the stronger action will be enforced.
-* If the actions are completely unrelated (for example, **Notify owner** and **Make private**). Both actions will take place.
-* If the actions conflict, (for example **Change owner to user A** and **Change owner to user B**), different results may result from every match. It is important to change your policies to prevent conflicts because they may result in unwanted changes in the drive that will be hard to detect. 
+## Enable and disable policies
 
+After you create a policy, you can enable or disable it. This avoids the need to delete a policy after you create it in order to stop it. Instead, if for some reason you want to stop the policy, simply disable it until you choose to enable it again.
+
+- To enable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to enable, and select **Enable**. 
+
+![Enable policy](./media/enable-policy.png)
+
+- To disable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to disable, and select **Disable**.
+
+![Disable policy](./media/disable-policy.png)
+
+By default, after you create a new policy, it is enabled.
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   

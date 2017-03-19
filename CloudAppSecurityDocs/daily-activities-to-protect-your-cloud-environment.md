@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -40,12 +40,12 @@ The Cloud App Security dashboard provides you with an overview of activities and
 - An activity map that plots where user activity originates.
 - Connected app usage trends in your cloud environment.  
 
-We recommend that you check the dashboard on daily to see what new alerts have been triggered. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's happening across your cloud environment.  
+We recommend that you check the dashboard daily to see what new alerts have been triggered. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's happening across your cloud environment.  
 
 ![Cloud App Security dashboard](./media/dashboard.png "dashboard")  
 
 ## Handle your alerts  
-Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from an unknown location. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
+Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your orgaization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
 
 It is a good idea to review all of your alerts and to use them as tools for modifying your policies. If harmless events are being considered violations to existing policies, refine your policies so that you receive fewer unnecessary alerts.  
 
@@ -72,7 +72,7 @@ It is a good idea to review all of your alerts and to use them as tools for modi
 
          For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new, unsanctioned service is discovered, you might want to block access to the service on your proxy or firewall.  
+         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
     #### Questionable violations
     Questionable violations require further investigation.  
@@ -95,7 +95,7 @@ The following table provides a list of the types of alerts that can be triggered
 |Activity policy violation|This type of alert is the result of a policy you created.|To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br /> If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|  
 |File policy violation|This type of alert is the result of a policy you created.| To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br /> If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|  
 |Compromised account|This type of alert is triggered when Cloud App Security identifies an account that was compromised, meaning there's a very high probability that the account was used in an unauthorized way.|We recommend that you suspend the account until you can reach the user and make sure they change their password.|  
-|Inactive account|This alert is triggered when an account is no longer used in one of your connected cloud apps.|Contact the user and the user's manager to determine  whether the account is still active. If not, suspend the user and terminate the license for the app.|  
+|Inactive account|This alert is triggered when an account has not been used in 60 days in one of your connected cloud apps.|Contact the user and the user's manager to determine  whether the account is still active. If not, suspend the user and terminate the license for the app.|  
 |New admin user|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user. If they are not, recommend revoking admin privileges to reduce exposure.|  
 |New admin location|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the sign in from this anomalous location was legitimate. If it's not, recommend revoking admin permissions or suspending the account to reduce exposure.|  
 |New location|This is an informative alert about access to a connected app from a new location, and it's triggered only once per country.|Investigate the specific user's activity.|  

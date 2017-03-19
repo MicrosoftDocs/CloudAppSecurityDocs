@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What is Cloud App Security | Microsoft Docs
+title: What is Cloud App Security? | Microsoft Docs
 description: This topic describes Cloud App Security and how it works.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,17 +32,15 @@ ms.suite: ems
 
 Moving to the cloud increases flexibility for employees and reduces IT cost, but it also introduces new challenges and complexities for keeping your organization secure. To be able to get the full benefit of cloud applications, an IT team must find the right balance of supporting access while maintaining control, to protect critical data.  
 
-Cloud App Security is a critical component of the Microsoft Cloud Security stack. It's a comprehensive solution that can help your organization as you move to take full advantage of the promise of cloud applications, but keep you in control, through improved visibility into activity. It also helps increase the protection of critical data across cloud applications. With tools that help uncover shadow IT, assess risk, enforce policies, investigate activities, and stop threats, your organization can more safely move to the cloud while maintaining control of critical data.  
+Cloud App Security is a critical component of the Microsoft Cloud Security stack. It's a comprehensive solution that can help your organization as you move to take full advantage of the promise of cloud applications, but keep you in control, through improved visibility into activity. It also helps increase the protection of critical data across cloud applications. With tools that help uncover shadow IT, assess risk, enforce policies, investigate activities, and stop threats, your organization can more safely move to the cloud while maintaining control of critical data. 
 
 ## The Cloud App Security framework  
 
-|       |   |   |
-|-------|---|:---|
-|![Discover](./media/discovery-icon.png)|Discover|Uncover shadow IT with Cloud App Security. Gain visibility by discovering apps, activities, users, data, and files in your cloud environment. Discover third-party apps that are connected to your cloud.|
-|![Investigate](./media/investigate-icon.png)|Investigate|Investigate your cloud apps by using cloud forensics tools to deep-dive into risky apps, specific users, and files in your network. Find patterns in the data collected from your cloud. Generate reports to monitor your cloud.|
-|![Control](./media/protect-icon.png)|Control|Mitigate risk by setting policies and alerts to achieve maximum control over network cloud traffic. Use Cloud App Security to migrate your users to safe, sanctioned cloud app alternatives.|
-|![Protect](./media/protect-icon.png)|Protect|Use Cloud App Security to sanction or unsanction applications, enforce data loss prevention, control permissions and sharing, and generate custom reports and alerts.|
-
+- **Cloud Discovery**: Discover all cloud use in your organization, including Shadow IT reporting and control and risk assessment.
+    
+- **Data Protection**: Monitor and control your data in the cloud by gaining visibility, enforcing DLP policies, alerting and investigation. 
+    
+- **Threat Protection**: Detect anomalous use and security incidents. Use behavioral analytics and advanced investigation tools to mitigate risk and set policies and alerts to achieve maximum control over network cloud traffic.
 
 ## Architecture  
 
@@ -53,14 +51,18 @@ Cloud App Security integrates visibility with your cloud by
 -   using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.  
 -   helping you have continuous control by setting, and then continually fine-tuning, policies.  
 
-![Cloud App Security architecture](./media/architecture.png)  
+![Cloud App Security architecture diagram](./media/architecture.png)  
 
-> [!NOTE]  
-> When Cloud App Security performs content inspection, data privacy is enforced. Only the metadata of the file records and any violations that were identified are stored in the Cloud App Security database. Your data is not stored in the Cloud App Security database. For more information about data retention, see our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132) and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
-Cloud App Security retains data as follows:
->- Activity log: 180 days
->- Discovery data: 90 days
->- Alerts: unlimited
+### Data retention & Compliance
+
+Cloud App Security is officially certified with Microsoft Compliance for ISO, HIPAA, CSA STAR, EU model clauses and more. To see the full list of certifications go to [Microsoft Compliance Offerings] (https://go.microsoft.com/fwlink/?linkid=842039) and select Cloud App Security.  
+
+When Cloud App Security performs content inspection, data privacy is enforced. The file content is not stored in the Cloud App Security database; only the metadata of the file records and any violations that were identified are stored in the Cloud App Security database. For more information about data retention, see our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132) and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
+Cloud App Security retains data as follows: 
+ 
+- Activity log: 180 days 
+- Discovery data: 90 days 
+- Alerts: 180 days 
 
 After data is collected from these sources, Cloud App Security runs sophisticated analysis on the data. It immediately alerts you to anomalous activities, and gives you deep visibility into your cloud environment. You can configure a policy in Cloud App Security and use it to protect everything in your cloud environment.  
 

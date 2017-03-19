@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Activities | Microsoft Docs
+title: Visibility into cloud app activities | Microsoft Docs
 description: This topic provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
 author: rkarlin
@@ -26,7 +26,18 @@ ms.suite: ems
 
 ---
 # Activities
-The activity log can be filtered to enable you to find specific activities. 
+Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it is updated constantly with new activities. The **Activity log** can be filtered to enable you to find specific activities. You can create policies based on the activities and then define what you want to be alerted about and act on. You can also search for activities performed on certain files. The type of activities and the information we get for each activity depends on the app and what kind of data the app can provide. 
+
+For example, you can use the **Activity log** to find users in your organization who are using operating systems or browsers that are out of date, as follows:
+After you connect an app to Cloud App Security in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**.
+
+ ![Activity outdated browser example](media/activity-example-outdated.png)
+
+If you want to check whether there are **confidential** files accessed outside your organization, set the **Activity object** filter to search for **Classification label** and select the **confidential** label. Set the  **IP address** filter to search for **Category** and exclude your office IP addresses (IP categories can be configured in the **Settings** menu). You can click **New policy from search** to create an activity policy based on the filters you defined, and automatically notify the users.
+
+ ![Activity confidential files external example](media/activity-example-ip.png)
+
+ 
 The basic filter provides you with great tools to get started filtering your activities.
 
  ![basic activity log filter](media/activity-log-filter-basic.png)
@@ -40,9 +51,11 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 -   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect MCAS to your SIEM (using the SIEM agent), and you want to further investigate alerts within the MCAS portal.  
   
--   Activity objects – Search for files, folders or site URLs, or target objects (file/folder).
+-   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects.
+    - Activity object ID - the ID of the object (file, folder, user or app ID).
     - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.
     - Target object (file/folder) - Enables you to select a specific file or folder. 
+    - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). 
     
 -   Activity type - Search for the app activity.
 
@@ -64,9 +77,21 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 -   IP address – The raw IP address, category or tag from which the activity was performed.  
     - Raw IP address - Enables you to search for activities that were performed on or by raw IP addresses that equal, don't equal or start with or don't start with a particular sequence, or raw IP addresses that are or are not set. 
-    - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. For more information about IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
-    - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. For more information about IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).
-  
+    - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. The categories need to be configured to include the relevant IP addresses, except for the "Risky" category which is pre-configured and includes two IP tags - Anonymous proxy and Tor. To learn how to configure the IP categories, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
+    - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. Cloud App Security creates a set of built-in IP tags that are not configurable. In addition, you can configure your own IP tags. For more information about configuring your own IP tags, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).
+   The built-in IP tags include:
+    - Microsoft apps (14 of them)
+    - Anonymous proxy
+    - Botnet
+    - Darknet scanning IP
+    - Malware C&C server
+    - Remote Connectivity Analyzer
+    - Sattelite providers
+    - Smart proxy and access proxy (left out on purpose)
+    - Tor exit nodes
+    - Zscaler
+
+
 -   Impersonated activity – Search only for activities that were performed in the name of another user.  
 
 -   Location – The country from which the activity was performed.  
@@ -75,7 +100,10 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 -   Registered ISP – The ISP from which the activity was performed.   
 
--  Source - Search by the source from which the activity was detected, for example, App connector. 
+-  Source - Search by the source from which the activity was detected. Source can be any of the following:
+  -	App connector - logs coming directly from the app’s API connector.
+  -	App connector analysis - Cloud App Security enrichments based on information scan by the API connector.
+  
 
 -   User – The user who performed the activity, which can be filtered into domain, group, name or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
     -   User domain - Search for a specific user domain.
@@ -101,34 +129,9 @@ You can view more information about each activity, by clicking on the Activity i
 
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
   
+For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
 
 
-## Activity match parameters  
-Specify the amount of activity repetition required to match the policy, for example, setting a policy to alert when a user performs 10 unsuccessful login attempts in a 2 minute time frame.  
-The default setting, **Activity match parameters**, raises a match for every single activity that meet all of the activity filters.   
-Using **Repeated activity** you can set the number of repeated activities, the duration of the time frame in which the activities are counted, and even specify that all activities should be performed by the same user and in the same cloud app.  
-  
-### Actions  
-Notifications  
-  
--   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
-  
--   User email notification – Email messages can be customized and will be sent to all violating file owners.  
-  
--   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
-  
--   Notify additional users – Specific list of email addresses that will receive these notifications.  
-  
-Governance actions in apps  
-  
--   Granular actions can be enforced per app, specific actions vary depending on app terminology.  
-  
--   Suspend user – suspend the user from the application.  
-  
--   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
-  
-     ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

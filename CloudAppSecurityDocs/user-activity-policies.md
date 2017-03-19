@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: User activity policies | Microsoft Docs
-description: This topic provides instructions for creating and working with user activity policies.
+title: Creating policies to control activities in Cloud App Security | Microsoft Docs
+description: This topic provides instructions for creating and working with activity policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# User activity policies
+# Activity policies
 Activity policies allow you to enforce a wide range of automated processes leveraging the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.  
   
 After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.
@@ -68,57 +68,6 @@ Take a look at these examples:
   
      ![high download rate example](./media/high-download-rate-example.png "high download rate example")  
   
-## Anomaly detection  
-After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families will be considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
-  
-To configure an anomaly detection policy:  
-  
-1.  In the console, click on **Control** followed by **Policies**.  
-  
-2.  Click **Create policy** and select **Anomaly detection** policy.  
-  
-     ![Anomaly detection policy menu](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
-  
-3.  Fill in the policy's name and description, and continue to the **Activity filters** field where you can choose the activity for which you wish to apply the policy.  
-  
-4.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
-  
-5.  To apply the policy to all activities in your cloud environment, select **All monitored activity**. To limit the policy to specific types of activities, choose **Selected activity**. Click on **Add filters** and set the appropriate parameters by which to filter the activity. For example, to enforce the policy only on activity performed by Salesforce admins, choose this user tag.  
-  
-6.  Underneath this field set the **Risk factors**. You can choose which risk families you want to consider while calculating the risk score. On the right of the row you can use the On/Off button to enable and disable the various risks. Additionally, for greater granularity, you can choose the activity on which to enable each particular risk family.  
-  
-     Risk factors are as follows:  
-  
-    -   **Login failures**: Are users attempting to log in and failing multiple times over a short period?  
-  
-    -   **Admin activity**: Are admins using their privileged accounts to log in from unusual locations or at strange hours?  
-  
-    -   **Inactive accounts**: Is there suddenly activity on an account that hasn't been in use for some time?  
-  
-    -   **Location**: Is there activity in an unusual, suspicious or new location?  
-  
-    -   **Impossible travel**: Is a user logging in from Denver and ten minutes later logging in from Paris?  
-  
-    -   **Device and user agent**: Is there activity from an unrecognized or unmanaged device?  
-  
-     You can use these parameters to define complex scenarios, for example, to exclude your office's IP range from the considered risk factors for anomaly detection, create a specific "office IP" tag and filter the range out of the considered parameters. To then exclude the range you created from the admin activity anomaly detection:  
-  
-    -   Within **Risk type**, find **Admin activity**.  
-  
-    -   Change **Apply to** to **Selected Activity**.  
-  
-    -   Under **Activity filters**, set **Apply to** to **Selected activity** and under **Activities matching all of the following**, choose **Administrative activity** is **True**.  
-  
-    -   Click on the **+** icon and select  **IP tag does not equal** and select the Office IP tag.  
-  
-7.  Under **Sensitivity**, select how often you want to receive alerts.  
-  
-     The sensitivity value will determine how many weekly alerts will trigger on average for every 1,000 users.  
-  
-     ![anomaly detection IPs](./media/anomaly-detection-ips.png "anomaly detection IPs")  
-  
-8.  Click **Create**.  
- 
   
 ## Activity policy reference  
 This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.  
@@ -128,7 +77,9 @@ Each policy is composed of the following parts:
   
 -   Activity filters – Enable you to create very granular conditions based on metadata.  
   
--   Activity match parameters – Enable you to set a threshold for the number of times an activity repeats to be considered to match the policy.  
+-   Activity match parameters – Enable you to set a threshold for the number of times an activity repeats to be considered to match the policy.  Specify the number of repeated activities required to match the policy, for example, setting a policy to alert when a user performs 10 unsuccessful login attempts in a 2 minute time frame.  By default, **Activity match parameters**, raises a match for every single activity that meet all of the activity filters.   
+Using **Repeated activity** you can set the number of repeated activities, the duration of the time frame in which the activities are counted, and even specify that all activities should be performed by the same user and in the same cloud app.  
+  
   
 -   Actions – The policy provides a set of governance actions that can be automatically applied when violations are detected.  
 ## See Also  

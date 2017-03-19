@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Connect Box to Microsoft Cloud App Security | Microsoft Docs
+title: Connect Box to Cloud App Security for visibility and control over use | Microsoft Docs
 description: This topic provides information about how to connect your Box app to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -51,13 +51,13 @@ This section provides instructions for connecting Cloud App Security to your exi
     > [!NOTE]  
     >  If you are an existing Adallom customer, and your console URL is for Adallom and not Cloud App Security, use this app serial number: bwahmilhdlpbqy2ongkl119o3lrkoshc.  
   
-2.  In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.  
+2.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-3.  In the Box row, click **Connect** in the **App Connector status** column, or click the **Connect an App** button and select **Box**.  
+3.  In the **App connectors** page, click the plus sign button and select **Box**.  
   
      ![connect box](./media/connect-box.png "connect box")  
   
-4.  In the **Box settings** page, on the **API** tab, click **Follow this link**.  
+4.  In the **Box settings** popup, click **Follow this link**.  
   
 5.  This opens the Box logon page. Enter your credentials to allow Cloud App Security access to your team's Box app.  
   

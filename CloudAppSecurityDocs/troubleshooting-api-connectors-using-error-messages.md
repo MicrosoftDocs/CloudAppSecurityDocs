@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting API Connectors using error messages | Microsoft Docs
-description: This topic provides a list of API Connector error messages as well as resolution recommendations for each.
+title: Troubleshooting App Connectors using error messages in Cloud App Security | Microsoft Docs
+description: This topic provides a list of API App connector error messages as well as resolution recommendations for each.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,9 +26,14 @@ ms.suite: ems
 
 ---
 
-# Troubleshooting API Connectors using error messages
+
+# Troubleshooting App Connectors using error messages
+
+App connector errors can be seen in the app connector dialog after attempting to connect a cloud app using the API App connector.
+
+
 |Error message|Relevant app|Description|Resolution|
-|----|----|----|----|
+|----|----|----|------------|
 |HttpRequestFailure: Server returned: 400 Bad Request: {"error":{"code":"AF20012","message":"Specified tenant ID (Tenant_ID goes here) is incorrectly configured in the system."|Office 365 |No assigned Office 365 licenses were found. |Assign at least one Office 365 license to your tenant.| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Box|The Box refresh token is not valid|Follow the process to connect Box to Cloud App Security again.|
 |BoxRestException: Failed to parse response.|Box|Internal error|Click the Test now link again to test the connection to Box.|

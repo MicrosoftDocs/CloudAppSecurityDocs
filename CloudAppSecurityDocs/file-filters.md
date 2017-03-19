@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Files | Microsoft Docs
+title: Understanding file data and filters available in Cloud App Security | Microsoft Docs
 description: This reference topic provides information about the types of files and file filters used by Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,19 @@ ms.suite: ems
 
 # Files
 
-The Files log can be filtered to enable you to find specific files. 
+
+To provide data protection, Cloud App Security gives you visibility into all the files from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. 
+
+For example, you can use the **Files** page to secure externally shared files labeled as **confidential**, as follows:
+After you connect an app to Cloud App Security, you can integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **confidential**. If you see that there are **confidential** files that are shared outside your organization by filtering the **Collaborators** filter to exclude your domain, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them and apply automatic governance actions to them, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
+
+ ![File filter confidential](media/file-filter-confidential.png)
+
+Here's another example of how you can utilize the **Files** page. To make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last 6 months:
+After you connect an app to Cloud App Security, in the **Files** page, filter for files whose access level is **External** or **Public** and set the **Last modified** date to 6 months ago. You can create a file policy that detects thest stale public files by clicking **New policy from search** and apply automatic governance actions to them, such as **Remove external users** to prevent data loss to your organization.
+
+ ![File filter stale external](media/file-example-stale-external.png)
+
 The basic filter provides you with great tools to get started filtering your files.
 
  ![basic file log filter](media/file-log-filter-basic.png)
@@ -45,7 +57,11 @@ Cloud App Security's built in DLP engines perform content inspection by extracti
 
 Below is a list of the file filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
 > [!NOTE] 
-> When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe. If you search for **malware.exe** then you will find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”.  **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
+> When using the file policy filters, **Contains**  will search only for **full words** – separated by comas, dots, spaces or underscores to search. 
+> - Spaces between words function like OR, for example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both malware-virus.exe and virus.exe.  
+> - If you want to search for a string, enclose the words in quotation marks. This functions like AND, for example: if you search for **"malware"** **"virus"**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe and it will not find malware.exe. However, it will search for the exact string. If you search for **"malware virus"** it will not find **"virus"** or **"virus_malware"**.
+
+>**Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
 
 -   Access level – Sharing access level; public, external, internal or private.  For more information about External files, see [General Setup, Set up the portal](getting-started-with-cloud-app-security.md)
 Internal are any files within the Internal domains you set in [General setup](General-setup.md). External are any files saved in locations that are not within the internal domains you set. Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
@@ -75,7 +91,7 @@ Internal are any files within the Internal domains you set in [General setup](Ge
   
 -   File ID – Search for specific file IDs, this is an advanced feature that allows you to track certain high-value files without depending on their owner/location/name.  
   
--   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.  
+-   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.   
   
 -   File tag - Search for files with specific tags set by Azure Information Protection. This requires integration with Azure Information Protection.
 
@@ -105,45 +121,20 @@ You can also set the policy to run on specific files by setting the **Apply to**
   
 ![apply to filter](./media/apply-to-filter.png "apply to filter")  
   
-### Governance actions  
+## Working with the File drawer
+
+You can view more information about each file, by clicking on the File iteself in the File log. This opens the File drawer which provides the following additional actions you can take on the file:
+
+- URL: Takes you to the file location.
+- File identifiers: Clicking on File identifiers opens a popup with raw data details about the file including file ID and encryption keys.
+- Owner:  Click on the owner to view the user page for the owner of this file.
+- Matched policies: Click on the Matched policies link to see a list of policies this file matched.
+- Classification label: Click on the Classification label to view the list of Azure Information Protection classification labels found in this file. You can then filter by all files matching this label.    
+
+![File drawer](./media/file-drawer.png "File drawer")  
   
--   Notifications  
-  
-    -   Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level.  
-  
-    -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
-  
-    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
-  
--   Notify specific users – Specific list of email addresses that will receive these notifications.  
-  
--   Notify last file editor – Send notifications to the last person who modified the file.  
-  
--   Governance actions in apps  
-  
-     Granular actions can be enforced per app, specific actions vary depending on app terminology.  
-  
-    -   Change sharing  
-  
-        -   Remove public sharing –  Allow access only to named collaborators, for example: Remove public access for Google Apps and Remove direct shared link for Box.  
-  
-        -   Remove external users – Allow access only to company users.  
-  
-        -   Make private – Only the owner can access the file, all shares are removed.  
-  
-        -   Remove a collaborator – Remove a specific collaborator from the file.  
-  
-    -   Quarantine  
-  
-        -   Put in user quarantine – Allow self-service by moving the file to a user controlled quarantine folder  
-  
-        -   Put in admin quarantine – File is moved to quarantine in the admin drive, and the admin has to approve it.  
-  
--   Trash – Move the file to the trash folder.
-  
-![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+For a list of governance actions available, see [File governance actions](governance-actions.md#file-governance-actions).
+
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   

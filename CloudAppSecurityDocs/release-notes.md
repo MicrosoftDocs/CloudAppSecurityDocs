@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Release notes | Microsoft Docs
+title: Cloud App Secuirty release notes & versions | Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2016
+ms.date: 1/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,93 @@ ms.suite: ems
 
 # Release notes
 
+
+## Cloud App Security release 89
+Released January 22, 2017
+
+**New features**
+-	We are starting to roll out the ability to view Office 365 Security and Compliance Center DLP events in Cloud App Security. If you configured DLP policies in the Office 365 Security and Compliance Center, when policy matches are detected, you will be able to see them in the Cloud App Security Activity log. The information in the Activity log will include the file or email that triggered the match as and the policy or alert that it matched. The “Security event” activity allows you to view Office 365 DLP policy matches in the Cloud App Security activity log. Using this feature, you can:
+    -	See all DLP matches coming from the Office365 DLP engine.
+    -	Alert on Office 365 DLP policy matches for a specific file, SharePoint site, or policy.
+    -	Investigate DLP matches with a broader context, for example- external users who accessed or downloaded a file that triggered a DLP policy match.
+ 
+-	The activity descriptions have been improved for clarity and consistency. Each activity now provides a feedback button, so if there are some that you don’t understand or have a question about, you can let us know. 
+ 
+**Improvements**  
+-	A new governance action was added for Office 365 that enables you to remove all external users of a file. For instance, this enables you to implement policies that **remove external shares from files with internal only classification**.
+-	Improved identification of external users in SharePoint online. When filtering for the “external users” group, app@sharepoint system account will not show up.
+
+
+
+## Cloud App Security release 88
+Released January 8, 2017
+ 
+**New features**
+- Connect your SIEM to Cloud App Security. You can now send alerts and activities automatically to your SIEM of choice by configuring SIEM Agents. Now available as a public preview.  For full documentation and details, take a look at Integrating with SIEM.
+- Cloud Discovery now supports IPv6. We rolled out support for Palo Alto and Juniper, and more appliances will be rolled out in future releases.
+ 
+**Improvements**
+- There is a new risk factor in the Cloud App Catalog. You can now rate an app based on whether it Requires user authentication. Apps that enforce authentication and do not allow anonymous use will receive a healthier risk score.
+- We are rolling out new activity descriptions to be more usable and consistent. Searching for activities will not be affected by this.
+- We included improved user-device identification, enabling Cloud App Security to enrich a larger number of events with device information.
+ 
+## Cloud App Security release 87
+Released December 25, 2016
+
+**New features**
+-	We are in the process of rolling out [data anonymization](cloud-discovery-anonymizer.md) so that you can enjoy Cloud Discovery while protecting user privacy. The data anonymization is performed by encrypting username information.
+-	We are in the process of rolling out the ability to export a blocking script from Cloud App Security to additional appliances. The script will allow you to easily reduce shadow IT by blocking traffic to unsanctioned apps. This option is now available for: 
+    -	BlueCoat ProxySG
+    -	Cisco ASA
+    -	Fortinet
+    -	Juniper SRX
+    -	Palo Alto
+    -	Websense
+-	A new File governance action was added that enables you to force a file to Inherit permissions from parent, deleting any unique permissions that were set for the file or folder. This file governance action enables you to change your file or folder’s permissions to be inherited from the parent folder. 
+-	A new user group was added called External. This is a default user group that is pre-configured by Cloud App Security to include all users who are not part of your internal domains. You can use this user group as a filter, for example you can find activities performed by external users.
+-	The Cloud Discovery feature now supports Sophos Cyberoam appliances.
+ 
+**Bug fixes**
+-	SharePoint online and One Drive for Business files were displayed in the File policy report and in the Files page as Internal instead of Private. This was corrected.
+ 
+
+
+## Cloud App Security release 86
+Released December 13, 2016
+
+**New features**
+- All Cloud App Security standalone licenses provide you with the ability to enable Azure Information Protection scanning from the general settings (without the need to create a policy). 
+ 
+**Improvements**
+- You can now use “or” in the file filter for the file name and in the MIME type filter for files and policies. This enables scenarios such as entering the word “passport” OR “driver” when creating a policy with PII, and it will match any file that has “passport” or “driver” in the filename. 
+- By default, when a DLP content inspection policy runs, the data in the resulting violations is masked. You can now unmask the last 4 characters of the violation. 
+
+**Minor improvements**
+- New Office 365 (Exchange) mailbox related events having to do with forwarding rules and adding and removing delegate mailbox permissions.
+- New event that audits the granting of consent to new apps in Azure Active Directory. 
+
+
+
+
+## Cloud App Security release 85
+Released November 27, 2016
+
+**New features**
+- A distinction was made between sanctioned apps and connected apps. Sanctioning and unsanctioning is now a tag that can be applied to discovered apps and any app in the app catalog. Connected apps are apps that you connected using the API connector for deeper visibility and control. You can now tag apps as sanctioned or unsanctioned or connect them using the app connector, where available. 
+ 
+- As part of this change, the Sanctioned apps page was replaced with a redesigned **Connected apps** page that externalizes status data about the connectors. 
+ 
+- The log collectors are more easily accessible in their own line in the **Settings** menu under **Sources**. 
+- When creating an activity policy filter, you can reduce false positives by choosing to ignore repeated activities when they are performed on the same target object by the same user, for example, multiple attempts to download the same file by the same person will not trigger an alert. 
+- Improvements were made to the activity drawer. Now, when you click on an activity object in the activity drawer, you can drill down for more information.
+
+**Improvements**
+- Improvements were made to the anomaly detection engine, including the impossible travel alerts, for which IP information is now available in the alert description.
+- Improvements were made to the complex filters to enable adding the same filter more than once for finetuning of filtered results. 
+- File and folder activities in Dropbox were separated for better visibility. 
+  
+**Bug fixes**
+- A bug in the system alerts mechanism that created false positives was fixed.
 
 ## Cloud App Security release 84
 Released November 13, 2016

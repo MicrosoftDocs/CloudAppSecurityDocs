@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: General setup | Microsoft Docs
-description: This topic provides the first steps to getting Cloud App Security up and running.
+title: Customize the Cloud App Security portal for best results | Microsoft Docs
+description: This topic provides the first steps to customizing the portal.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 2/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,45 +26,25 @@ ms.suite: ems
 
 ---
 
-# General setup
-The following procedure gives you instructions for setting up [!INCLUDE[Adallom1](./includes/adallom1_md.md)] to work on your cloud environment.  
-  
-## Prerequisites  
-  
--   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
-  
-     For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
-  
-> [!NOTE] 
-> An Office 365 license is not required for Cloud App Security.  
-  
--   After you have procured a license for Cloud App Security, you will receive an email with activation information and a link to the Cloud App Security portal.  
-  
--   To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for Windows PowerShell. For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
-  
--   To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
+# Customize the portal
+The following procedure gives you instructions for customizing the Cloud App Security portal.
   
 ## Set up the portal  
   
-1.  To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
-  
-     Alternatively, you can access the portal through the **Office 365 Admin center** by clicking the Admin centers icon ![O365 admin centers icon](./media/o365-admin-centers-icon.png "O365 admin centers icon") followed by **Cloud App Security**.  
-  
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
-  
-2.  In the Cloud App Security portal, in the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **General settings** to configure the following:  
+1.  In the Cloud App Security portal, in the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **General settings** to configure the following:  
   
 3.  **Organization details**  
   
      It is important that you provide an **Organization display name** for your organization. It will be displayed on emails and web pages sent from the system.  
   
-     Provide an **Environment  name** (tenant). This is especially important if you manage multiple tenants.  
+     Provide an **Environment name** (tenant). This is especially important if you manage multiple tenants.  
   
-     Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
+4. It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
+
+4.  Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
 > [!NOTE] 
-> Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
-   
-It is also possible to provide a **Logo** that will be displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
+> - Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
+> - If you are integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for infomration. 
   
 4.  **Activity log email privacy settings**  
   
@@ -106,10 +86,9 @@ To set up your preferences as an admin of Cloud App Security, click your name in
   
   ![notification settings](./media/notification-settings.png "notification settings")  
   
-  
 3. When you are done, click **Save**.  
   
-##  <a name="IPtagsandRanges"></a> Organize the data according to your needs  
+##  <a name="IPtagsandRanges"></a> Set IP ranges  
 To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges which allow you to tag and categorize appropriately and customize the way logs and alerts are displayed and investigated.   
 Each group of IP ranges can be categorized based on a preset list of IP categories or tagged with your own created IP tags. In addition, this setting allows you to override public geo-location info based on your internal network knowledge.  
   
@@ -131,24 +110,24 @@ In the menu bar, click the settings icon ![settings icon](./media/settings-icon.
   
 4.  Enter a **Registered ISP**. This will override the data in your activities  
   
-5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  
+5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  In addition to the IP tags you configure, Cloud App Security has built-in tags that are not configurable. You can see the list of tags under the [IP tags filter](activity-filters.md).  
   
-     Built-in Cloud App Security**IP tags** are set for risky addresses and are constantly updated. These tags include Anonymous proxies, satellite providers, Tor exit nodes, and the Cloud App Security proxy network. These built-in tags are not visible.  
-  
-6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category, except for the "Risky" category which includes two IP tags - Anonymous proxy and Tor.  
+6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category. The **Risky** category and **Cloud provider** categories automatically include built-in IP tags such as Anonymous proxy and Tor that dynamically change based on the Microsoft Security Graph, and Microsoft Azure and other cloud infrastractures.  
   
      The following IP categories are available:  
   
+    -   **Corporate**: these should be all the IP addresses of your corporate network, your branch offices and your Wi-Fi roaming addresses. 
+   
     -   **Administrative**: these should be all the IP addresses of your admins.  
-  
-    -   **Internal**: these should be all the IP addresses of your internal network, your branch offices and your Wi-Fi roaming addresses.  
-  
-    -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc.  
-  
+   
     -   **VPN**: these should be any IP addresses you use for remote workers.  
   
-    -   **Cloud proxy**: this should be the IP address of your proxy in the cloud.  
-  
+    -   **Cloud provider: this should be the IP address of your provider in the cloud.  
+
+    -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc. 
+
+    - **Other**: if none of the other IP categories apply, choose other.
+
 7.  When you are done, click **Create**.  
   
      ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  
@@ -180,62 +159,63 @@ Configure the following:
   
          %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
   
-     The following is a sample email template:  
-  
-    ```  
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-    <html>  
-    <head>  
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-    </head>  
-    <body class="end-user">  
-    <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
-      <tr>  
-        <td align="center">  
-          <!--[if (gte mso 9)|(IE)]>  
-          <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
+     The following is a sample email template: 
+
+
+           
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+          <html>  
+          <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+          </head>  
+          <body class="end-user">  
+          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
             <tr>  
-              <td>  
-          <![endif]-->  
-          <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
-            <tr>  
-              <td align="right" id="header-table-cell">  
-                <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
-              </td>  
-            </tr>  
-            <tr>  
-              <td style="padding-top: 58px;" align="center" valign="top">  
-                <table width="100%" cellpadding="12">  
+              <td align="center">  
+                <!--[if (gte mso 9)|(IE)]>  
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
                   <tr>  
-                    <td align="center" class="round-title">  
-                      %%title%%  
+                    <td>  
+                <![endif]-->  
+                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
+                  <tr>  
+                    <td align="right" id="header-table-cell">  
+                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
                     </td>  
                   </tr>  
+                  <tr>  
+                    <td style="padding-top: 58px;" align="center" valign="top">  
+                      <table width="100%" cellpadding="12">  
+                        <tr>  
+                          <td align="center" class="round-title">  
+                            %%title%%  
+                          </td>  
+                        </tr>  
+                      </table>  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
+                        %%content%%  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td class="last-row"></td>  
+                  </tr>  
                 </table>  
+                <!--[if (gte mso 9)|(IE)]>  
+                </td>  
+                </tr>  
+                </table>  
+                  <![endif]-->  
               </td>  
-            </tr>  
-            <tr>  
-              <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
-                  %%content%%  
-              </td>  
-            </tr>  
-            <tr>  
-              <td class="last-row"></td>  
-            </tr>  
+              </tr>  
           </table>  
-          <!--[if (gte mso 9)|(IE)]>  
-          </td>  
-          </tr>  
-          </table>  
-          <![endif]-->  
-        </td>  
-      </tr>  
-    </table>  
-    </body>  
-    </html>  
-  
-    ```  
+            </body>  
+          </html>  
+         
+
   
 3.  Click **Upload a template...** and select the file you created.  
   

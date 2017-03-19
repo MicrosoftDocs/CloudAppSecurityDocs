@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enable instant visibility, protection and governance actions for your apps | Microsoft Docs
-description: This topic describes the process for enabling API connectors to apps in your organization's cloud.
+title: Connect apps to get deep visibility and control with Cloud App Security | Microsoft Docs
+description: This topic describes the process for connecting apps with API connectors to apps in your organization's cloud.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 2/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Enable instant visibility, protection and governance actions for your apps
+# Connect apps 
 App connectors leverage the APIs of app providers to enable greater visibility and control by Cloud App Security over the apps you connect to.  
   
 Cloud App Security leverages the APIs provided by the cloud provider, each service has its own framework and API limitations. Cloud App Security worked with the services to optimize the usage of the APIs and to ensure the best performance. Taking into account the different limitations the services impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the Cloud App Security engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
@@ -83,26 +83,32 @@ The following table lists, per cloud app, which abilities are supported with App
 |**User activity**|✔*|✔|✔|✔ - requires Google Unlimited|Partial|Supported with Salesforce Shield|✔|Not applicable|  
 |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|  
 |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Coming soon|  
-|**Near-realtime file scan**|Coming soon|✔|Not applicable|✔ - requires Google Unlimited|||Coming soon||  
+|**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Unlimited|||Coming soon||  
 |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||  
 |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||  
 |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||  
 |**Revoke app permissions**|✔||Not applicable|✔||✔|Not applicable||  
   
-\* The Office 365 App Connector includes admin activity for Exchange Online. To add user activity for Exchange Online, you will need to deploy the Exchange Online connector separately.  
   
 ## Prerequisites  
 For some apps, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console:  
   
 -   For the logs:  
   
-     104.209.35.177  
+    104.209.35.177  
   
-     13.91.98.185  
+    13.91.98.185
+ 
+    40.118.211.172
+
+    13.93.216.68
+  
   
 -   For the console:  
   
      104.42.231.28  
+
+- For each app that you want to connect with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.  
   
 > [!NOTE]  
 >  To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
@@ -132,4 +138,5 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
+
    

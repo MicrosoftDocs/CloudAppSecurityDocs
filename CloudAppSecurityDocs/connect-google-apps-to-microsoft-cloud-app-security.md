@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Connect Google Apps to Microsoft Cloud App Security | Microsoft Docs
+title: Connect Google Apps to Cloud App Security for visibility and control over use | Microsoft Docs
 description: This topic provides information about how to connect your Google apps to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,9 @@ ms.suite: ems
 ---
 
 # Connect Google Apps to Microsoft Cloud App Security
-This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.  
+This section provides instructions for connecting Cloud App Security to your existing Google Apps account using the connector APIs.
+
+  
   
 ## Configure Google Apps  
   
@@ -39,7 +41,8 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 3.  In the **New project** screen:  
   
-    1.  Name your project **Cloud App Security for Google**.  
+    1.  Name your project as follows:</br>
+    **Cloud App Security for Google** 
   
     2.  Select whether or not you want to subscribe to updates.  
   
@@ -224,13 +227,13 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 ## Configure Cloud App Security  
   
-1.  In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.  
+1.  In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-2.  In the Google Apps row, click **Connect** in the **App Connector status** column, or click **Connect an app** and select **Google Apps**.  
+2.  In the **Connected apps** page, click the plus sign and select **Google Apps**.  
   
      ![connect google apps](./media/connect-google-apps.png "connect google apps")  
   
-3.  In the Google Apps settings page, fill in the following:  
+3.  In the popup, fill in the following:  
   
      ![Google Apps Configuration in Cloud App Security](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
