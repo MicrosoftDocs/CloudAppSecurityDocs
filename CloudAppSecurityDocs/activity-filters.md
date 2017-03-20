@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/9/2016
+ms.date: 3/19/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -49,13 +49,13 @@ To drill down into more specific activities, you can expand the basic filter by 
 ## Activity filters
 Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
--   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect MCAS to your SIEM (using the SIEM agent), and you want to further investigate alerts within the MCAS portal.  
+-   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.  
   
--   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects.
+-   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects. 
     - Activity object ID - the ID of the object (file, folder, user or app ID).
     - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.
     - Target object (file/folder) - Enables you to select a specific file or folder. 
-    - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). 
+    - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for itmes that **Contain**, **Equal** or **Starts with** the specific item.
     
 -   Activity type - Search for the app activity.
 
@@ -86,7 +86,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
     - Darknet scanning IP
     - Malware C&C server
     - Remote Connectivity Analyzer
-    - Sattelite providers
+    - Satellite providers
     - Smart proxy and access proxy (left out on purpose)
     - Tor exit nodes
     - Zscaler
@@ -107,9 +107,13 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 -   User – The user who performed the activity, which can be filtered into domain, group, name or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
     -   User domain - Search for a specific user domain.
-    -   User group – Specific user groups that are automatically imported by Cloud App Security from the cloud app, for example, all activities performed by Office 365 administrators.
-    -   User name - Search for a specific username.
     -   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
+    -   User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.  
+    -   User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, click on the name of the user group. This will take you to the Accounts page which lists all the users in the group. From there you can drill down into the details of the accounts of specific users in the group.
+       -  The **User group** and **User name** filters can be further filtered by using the **As** filter, and selecting the role of the user, which can be any of the following:
+            - Activity object only - this means that the user or user group selected did not perform the activity in question, they were the object of the activity
+            - Actor only - this means that the user or user group performed the activity
+            - Any role - this means that the user or user group were involved in the activity, either as the person who performed the activity or as the object of the activity
 
 -   User agent – The user agent of from with the activity was performed.  
   
@@ -118,7 +122,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 ## Working with the Activity drawer
 
-You can view more information about each activity, by clicking on the Activity iteself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the file:
+You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the file:
 
 - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
 - View raw data: Click on View raw data to see the actual data that was received from the app.

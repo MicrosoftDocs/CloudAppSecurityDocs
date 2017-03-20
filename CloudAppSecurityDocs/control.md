@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -73,7 +73,7 @@ Imagine this scenario: you're considering buying a productivity tool, and you ar
 
 2.   Under **Categories**, filter apps by **Productivity**.  
 
-3.   For each app in use, check the **Score** to see if it's safe—and if not, why not.  
+3.   For each app in use, check the **Score** to see if it's safe — and if not, why not.  
 
 4.   If you decide that you want to buy an enterprise license for the whole organization, you might also want to look at the **Users** column. There, you can see what's already most popular among your users, see if it's trusted, and see what security features it has before making your decision.  
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Investigate cloud app risks & susupicious activity with Cloud App Security | Microsoft Docs
+title: Investigate cloud app risks & suspicious activity with Cloud App Security | Microsoft Docs
 description: This topic provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -40,7 +40,7 @@ The following dashboards are available to help you investigate apps in your clou
 |Application dashboard: overall|Overview of application usage per location, usage graphs per number of users|  
 |Application dashboard: insights|Analysis of data stored in the app, broken down by file type and file-sharing level|  
 |Application dashboard: files|Drill-down into files; ability to filter according to owner, sharing level, etc., as well as perform governance actions (like quarantine)|  
-|Application dashboard: third-party apps|Drill-down into third-party apps currently deployed, like Google Apps, and defining policies for them|  
+|Application dashboard: third-party apps|Drill-down into third-party apps currently deployed, like G Suite, and defining policies for them|  
 |User dashboard|A complete overview of the user profile in the cloud, including groups, locations, recent activities, related alerts, and browsers used|  
 
 ##  <a name="sanctionapp"></a> Tag apps as sanctioned or unsanctioned  
@@ -88,6 +88,8 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
     -   Was someone fired but they still have access to an app and can use that access to steal information?  
 
     -   Do you want to revoke a user's permission to a specific app or require a specific user to perform multi-factor authentication?  
+    
+    -   You can also drill down into the user's account by clicking the cog at the end of the user's account row and selecting an action to take, such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also click on **Azure AD account settings** to get easy access to advanced user management features like group management, MFA, details about the user's sign ins and the ability to block sign in.
 
 4.  Go to **Investigate** and then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check the following:  
 
@@ -122,7 +124,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
     -   Are there cloud apps that are used but not in compliance with your organization’s policy?  
 
 ## Use reports to investigate risk  
-When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find—you don't really know your cloud yet. Based on these assumptions, you create policies.
+When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find — you don't really know your cloud yet. Based on these assumptions, you create policies.
 
 After Cloud App Security runs on your cloud environment, you use the built-in reports (and custom reports) to see what's going on in your cloud. Based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few false positives.  
 

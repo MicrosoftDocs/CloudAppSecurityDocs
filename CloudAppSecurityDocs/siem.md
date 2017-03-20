@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -62,7 +62,7 @@ Click **Next**.
   ![Remote Syslog settings](./media/siem2.png)
 
 6. Select which data types, **Alerts** and **Activities** you want to export to your SIEM server. 
-Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** dropdown to set filters to send only specific alerts and activities to your SIEM server.
+Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server.
 You can click **Edit and preview results** to check that the filter works as expected. 
 Click **Next**. 
 
@@ -94,7 +94,7 @@ You can type -h at any time to get help.
 
 ### Step 3: Validate that the SIEM agent is working
 
-1. Make sure the status of the SIEM agent in the Cloud App Security portal is not Disconnected and there are no agent notifications. 
+1. Make sure the status of the SIEM agent in the Cloud App Security portal is not **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours and as **Disconnected** if the connection is down for over 12 hours.
  ![SIEM disconnected](./media/siem-not-connected.png)
  
    Instead, the status should be connected, as seen here:
@@ -118,8 +118,9 @@ If you need to delete the SIEM agent in the future, you can click on the three d
 
 ![SIEM - delete](./media/siem-delete.png)
 
-
 ## Troubleshooting the SIEM agent
+
+Make sure the status of the SIEM agent in the Cloud App Security portal is not **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours and as **Disconnected** if the connection is down for over 12 hours.
 
 If you see one of the following errors in the cmd prompt while running the agent, use the following steps to remediate the problem:
 
@@ -137,7 +138,9 @@ After creating the agent, if you see one of the following **Agent notifications*
 |----|----|----|
 |**Internal error**|Something unknown went wrong with your SIEM agent.|Contact support.|
 |**Data server send error**|You can get this error if you are working with a Syslog server over TCP. The SIEM agent cannot connect to your Syslog server.  If you get this error, the agent will stop pulling new activities until it’s fixed, so make sure to follow the remediation steps until the error stops appearing.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described above, and make sure you wrote the name of the server properly, and set the right port. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.| 
-|**Data server connection error**| You can get this error if you are working with a Syslog server over TCP. The SIEM agent cannot connect to your Syslog server.  If you get this error, the agent will stop pulling new activities until it’s fixed, so make sure to follow the remediation steps until the error stops appearing.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described above, and make sure you wrote the name of the server properly, and set the right port. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.| 
+|**Data server connection error**| You can get this error if you are working with a Syslog server over TCP. The SIEM agent cannot connect to your Syslog server.  If you get this error, the agent will stop pulling new activities until it’s fixed, so make sure to follow the remediation steps until the error stops appearing.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described above, and make sure you wrote the name of the server properly, and set the right port. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.|
+|**SIEM agent error**|The SIEM agent has been disconnected for more than X hours|Make sure that you didn't change the SIEM configuration in the Cloud App Security portal. Otherwise, this could indicate connectivity issues between Cloud App Security and the computer on which you are running the SIEM agent.|
+|**SIEM agent notification error**|SIEM agent notification forward errors were received from a SIEM agent.|This indicates that you have received errors regarding the connection between the SIEM agent and your SIEM server. Make sure there isn't a firewall blocking your SIEM server or the computer on which you are running the SIEM agent. Also, check that the IP address of the SIEM server was not changed.|
 
 ## See Also  
 [User activity policies](user-activity-policies.md)   

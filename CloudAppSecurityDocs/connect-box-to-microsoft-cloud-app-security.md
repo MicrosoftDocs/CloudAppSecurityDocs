@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -57,9 +57,9 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![connect box](./media/connect-box.png "connect box")  
   
-4.  In the **Box settings** popup, click **Follow this link**.  
+4.  In the **Box settings** pop-up, click **Follow this link**.  
   
-5.  This opens the Box logon page. Enter your credentials to allow Cloud App Security access to your team's Box app.  
+5.  This opens the Box log on page. Enter your credentials to allow Cloud App Security access to your team's Box app.  
   
 6.  Box will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.  
   

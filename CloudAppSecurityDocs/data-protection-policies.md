@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -56,7 +56,7 @@ The following are examples of file policies that can be created:
     Receive an alert about any file shared with accounts owned by specific external domains, for example, with a competitor’s domain. Select the external domain with which you want to limit sharing.  
   
 -   Quarantine shared files not modified during the last period:  
-    Receive an alert about shared files that no one modified recently, in order to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren’t modified during a specified date range. On Google Apps,  you can choose to quarantine these files, using the ‘quarantine file’ checkbox on the policy creation page.  
+    Receive an alert about shared files that no one modified recently, in order to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren’t modified during a specified date range. On G Suite,  you can choose to quarantine these files, using the ‘quarantine file’ checkbox on the policy creation page.  
   
 -   Sharing with unauthorized users:  
     Receive an alert about files being shared with unauthorized group of users in your organization. Select the users which whom sharing is forbidden.  
@@ -74,7 +74,7 @@ To create a new file policy, follow this procedure:
   
 4.  Within **Risk type**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type.  The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.  
   
-5.  To set which discovered apps will trigger this policy, **Create a filter for the files this policy will act on**. Narrow down the policy filters until you reach the most accurate set of files you wish to act upon. Be as restrictive as possible in order to avoid false positives. For example, if you wish to remove public permissions, remember to add the “Public” filter, if you wish to remove an external user, use the “External” filter etc.  
+5.  To set which discovered apps will trigger this policy, **Create a filter for the files this policy will act on**. Narrow down the policy filters until you reach the most accurate set of files you wish to act upon. Be as restrictive as possible in order to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the “External” filter etc.  
 > [!NOTE] 
 > When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe. If you search for **malware.exe** then you will find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”. **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt.  
 6.  For Box, SharePoint, Dropbox, OneDrive, you can enforce your file policy over all files on the app or on specific folders. Under **Apply to**, select **selected folders** or **all files excluding selected folders**, you will be redirected to log on to the cloud app, and then add the relevant folders.  
