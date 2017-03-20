@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Investigate cloud app risks & susupicious activity with Cloud App Security | Microsoft Docs
+title: Investigate cloud app risks & suspicious activity with Cloud App Security | Microsoft Docs
 description: This topic provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -88,6 +88,8 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
     -   Was someone fired but they still have access to an app and can use that access to steal information?  
 
     -   Do you want to revoke a user's permission to a specific app or require a specific user to perform multi-factor authentication?  
+    
+    -   You can also drill down into the user's account by clicking the cog at the end of the user's account row and selecting an action to take, such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also click on **Azure AD account settings** to get easy access to advanced user management features like group management, MFA, details about the user's sign ins and the ability to block sign in.
 
 4.  Go to **Investigate** and then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check the following:  
 
@@ -122,7 +124,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
     -   Are there cloud apps that are used but not in compliance with your organization’s policy?  
 
 ## Use reports to investigate risk  
-When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find—you don't really know your cloud yet. Based on these assumptions, you create policies.
+When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find — you don't really know your cloud yet. Based on these assumptions, you create policies.
 
 After Cloud App Security runs on your cloud environment, you use the built-in reports (and custom reports) to see what's going on in your cloud. Based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few false positives.  
 

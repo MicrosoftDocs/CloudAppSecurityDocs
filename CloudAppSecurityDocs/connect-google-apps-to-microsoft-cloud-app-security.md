@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/15/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,7 +43,7 @@ This section provides instructions for connecting Cloud App Security to your exi
     **Cloud App Security for Google** and click **Create**.  
            ![google2](./media/google2.png "google2")  
   
-4.  After the project is created, in the toolbar, next to Google Cloud Platform, select the project and then under **API** click **Go to APIs overview**.  
+4.  After the project is created, in the tool bar, next to Google Cloud Platform, select the project and then under **API** click **Go to APIs overview**.  
   
      ![google3](./media/google3.png "google3")  
   
@@ -101,7 +101,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![google edit](./media/google11.png "google edit")  
   
-14. Select the **Enable G Suite Domain-wide Delegation** checkbox and click **Save**.  
+14. Select the **Enable G Suite Domain-wide Delegation** check box and click **Save**.  
   
      ![google domain wide](./media/google12.png "google domain wide")  
   
@@ -109,7 +109,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![google service account ID](./media/google13.png "google13")  
   
-16. Open the Google menu by clicking the three horizontal lines next to Google Cloud Platform in the titlebar, and select **API manager** followed by **Dashboard**.  
+16. Open the Google menu by clicking the three horizontal lines next to Google Cloud Platform in the title bar, and select **API manager** followed by **Dashboard**.  
     
 17. Scroll down to the list of enabled APIs and click on the settings cog next to **Google Drive API**.   
        ![Google Drive select](./media/google14.png "google14")  
@@ -140,7 +140,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          Fill in the **Application description** field with "Microsoft Cloud App Security provides visibility into cloud apps, helping you control, investigate and govern cloud app use; secure corporate data; and detect suspicious activities for any cloud app."  
   
-    -   Uncheck the **Enable individual install** checkbox.  
+    -   Uncheck the **Enable individual install** check box.  
   
     -   Configure the 4 required images under **Application icons**.  
   
@@ -226,7 +226,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     4.  Enter one **admin account email** of your G Suite admin.  
   
-    5.  If you have a G Suite unlimited account, check this checkbox. For information about which features are available in Cloud App Security for G Suite unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  If you have a G Suite unlimited account, check this check box. For information about which features are available in Cloud App Security for G Suite unlimited, see [Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Click **Save settings**.  
   

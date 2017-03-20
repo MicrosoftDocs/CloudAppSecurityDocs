@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -45,7 +45,7 @@ We recommend that you check the dashboard daily to see what new alerts have been
 ![Cloud App Security dashboard](./media/dashboard.png "dashboard")  
 
 ## Handle your alerts  
-Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your orgaization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
+Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your organization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
 
 It is a good idea to review all of your alerts and to use them as tools for modifying your policies. If harmless events are being considered violations to existing policies, refine your policies so that you receive fewer unnecessary alerts.  
 

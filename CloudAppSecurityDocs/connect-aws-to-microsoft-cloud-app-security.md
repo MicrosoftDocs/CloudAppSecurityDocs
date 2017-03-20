@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -109,7 +109,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
      ![connect AWS](./media/connect-aws.png "connect AWS")  
   
-13. In the popup, paste the **Access key** and **Secret key** from the csv file into the relevant fields, and click **Connect**.  
+13. In the pop-up, paste the **Access key** and **Secret key** from the csv file into the relevant fields, and click **Connect**.  
    ![AWS connect app](./media/aws-connect-app.png "AWS connect app") 
   
 14. Make sure the connection succeeded by clicking **Test API**.  

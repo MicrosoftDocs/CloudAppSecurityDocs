@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -113,10 +113,10 @@ For information about how governance actions are treated when there are policy c
 **Location**|**Target object type**|**Governance action**|**Description**|**Related connectors** 
 ---------|---------|---------|---------|---------
 |Accounts|File|Remove user's collaborations|Remove all the collaborations of a specific user for any files - good for people leaving the company.|Box, G Suite|
-|Accounts|Account|Unsuspend user|Unsuspends the user|G Suite, Box, Office|
+|Accounts|Account|Unsuspend user|Unsuspends the user|G Suite, Box, Office, Salesforce|
 |Accounts|Account|Account settings|Takes you to the account settings page in the specific app (for example, inside Salesforce).|All apps -One Drive and SharePoint settings are configured from within Office.|
 |Accounts |File|Transfer all files ownership|On an account, you transfer one user's files to all be owned by a new person you select. The previous owner becomes an editor. After you transfer ownership, admin@gtest1.adallom.com will become an editor and will no longer be able to change sharing settings. The new owner will receive an email notification about the change of ownership.|G Suite|
-|Accounts, Activity policy|Account|Suspend user|Sets user to have no access and no ability to log in - if they are logged in when you set this, they are immediately locked out.|G Suite, Box, Office|
+|Accounts, Activity policy|Account|Suspend user|Sets user to have no access and no ability to log in - if they are logged in when you set this, they are immediately locked out.|G Suite, Box, Office, Salesforce|
 |Activity policy, Accounts|Account|Revoke password|Revokes the password for a user's account - for example,  setting an activity policy that revokes a password after 10 failed login attempts.|G Suite|
 |Activity policy, Accounts|Account|Revoke admin privileges|Revokes privileges for an admin account - for example, setting an activity policy that revokes admin privileges after 10 failed login attempts.|G Suite|
 |App dashboard > App permissions|Permissions|Un-ban app|In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third party app with their Google or Salesforce. In Office 365: restores the permissions of the third party app’s to Office.|G Suite, Salesforce, Office|
@@ -150,6 +150,7 @@ For information about how governance actions are treated when there are policy c
 |Settings> Cloud discovery settings > Manage data views|Cloud Discovery|Create custom Cloud Discovery filter data view|Creates a new data view for a more granular view of the discovery results. For example, specific IP ranges.|Discovery|
 |Settings> Cloud discovery settings > Delete data|Cloud Discovery|Delete Cloud Discovery data|Deletes all the data collected from discovery sources.|Discovery|
 |Settings> Cloud discovery settings > Upload logs manually/Upload logs automatically|Cloud Discovery|Parse Cloud Discovery data|Notification that all the log data was parsed.|Discovery|
+
 
 
 ## See Also  
