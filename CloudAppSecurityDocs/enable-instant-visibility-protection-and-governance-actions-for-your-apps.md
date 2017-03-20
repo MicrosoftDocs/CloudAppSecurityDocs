@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -73,7 +73,7 @@ Depending on the app you are connecting to (see table, below) API connection ena
   
 The following table lists, per cloud app, which abilities are supported with App connectors:  
 
-||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**List accounts**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**Group**|✔|✔|✔|✔|✔|✔|✔|✔|  
@@ -102,6 +102,18 @@ For some apps, it may be necessary to add the following IP addresses to the whit
     40.118.211.172
 
     13.93.216.68
+
+    13.91.61.249
+
+    13.93.233.42
+
+    13.64.196.27
+
+    13.64.198.97
+
+    13.64.199.41
+
+    13.64.198.19
   
   
 -   For the console:  
@@ -118,7 +130,7 @@ To use App Connectors, you need to make sure you have the following for each spe
 |App|License type|User|  
 |---------|------------------|----------|  
 |Box|Enterprise|It is strongly recommended that you connect to Box as an Admin. Connecting as a Co-admin will result in only partial data visibility. If you connect as a Co-admin, make sure to select all permissions.|  
-|Google Apps|Google Apps Unlimited preferred<br /><br /> Google Apps Enterprise (minimally)|Super Admin|  
+|G Suite|G Suite Unlimited preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|  
 |Office 365||Global Admin|  
 |AWS||Newly created user|  
 |Dropbox|Business/Enterprise|Admin|  

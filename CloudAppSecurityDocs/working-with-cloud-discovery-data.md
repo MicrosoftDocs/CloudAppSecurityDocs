@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -42,9 +42,9 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 3. Go even deeper and see all the apps in a specific category in the Discovered apps widget.
 
 4. You can see the top users and source IP addresses to identify which users are the most dominant users of cloud apps in your organization.
-5. Check how the discovered apps spread according to geographicy location (according to their HQ) in the App Headquarters map.
+5. Check how the discovered apps spread according to geographic location (according to their HQ) in the App Headquarters map.
 
-6. Finally, don’t forget to review the risk score of the discovered app in the Apps risk overview and check the discovery alerts status to see how many open alerts should you investigate.
+6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview** and check the discovery alerts status to see how many open alerts should you investigate.
 
 
 ## Customize the risk score  

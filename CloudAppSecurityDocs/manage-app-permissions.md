@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 # Manage app permissions
-Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365.  When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app.  This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permisssions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Cloud App Security app permissions enable you to see which user-installed applications have access to Office 365 data, what permissions the apps have, and which users granted these apps access to their Office 365 accounts. App permissions help you decide which apps you allow your users access to, and which ones you want to ban.
+Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365.  When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app.  This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Cloud App Security app permissions enable you to see which user-installed applications have access to Office 365 data, what permissions the apps have, and which users granted these apps access to their Office 365 accounts. App permissions help you decide which apps you allow your users access to, and which ones you want to ban.
 
 
 ## Working with the app permissions page
@@ -82,7 +82,7 @@ The icon turns green, and the app is approved for all your Office 365 users.
 ## Query app permissions
 
 ### Query in the Advanced view 
-1. In the advanced view, use the **Select a filter** dropdown to narrow your search. Add operators, equals or does not equal to a selected value to complete your query.
+1. In the advanced view, use the **Select a filter** drop-down to narrow your search. Add operators, equals or does not equal to a selected value to complete your query.
 2. Choose the **Add a filter** icon  to add additional filters to further refine your query. The filters are be applied automatically and the apps list is updated accordingly.
 3. Choose the **Remove a filter** icon  next to the filter to remove the filters.
 The filters you can choose from are:
@@ -105,7 +105,7 @@ Display apps based on the selected permission level or levels.
 Display apps based on community use levels, either rare, uncommon, or common.
 
 ### Query in the basic view 
-In the basic view, select values from one or multiple dropdowns to display the specific apps. You can select multiple values in the dropdowns. The dropdown menus you can use for querying are: 
+In the basic view, select values from one or multiple drop-downs to display the specific apps. You can select multiple values in the drop-downs. The dropdown menus you can use for querying are: 
 - App 
 Display third-party app or apps with the selected name or names that have been granted access to Office 365.
 

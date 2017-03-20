@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -90,48 +90,14 @@ To set up your preferences as an admin of Cloud App Security, click your name in
   
 ##  <a name="IPtagsandRanges"></a> Set IP ranges  
 To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges which allow you to tag and categorize appropriately and customize the way logs and alerts are displayed and investigated.   
-Each group of IP ranges can be categorized based on a preset list of IP categories or tagged with your own created IP tags. In addition, this setting allows you to override public geo-location info based on your internal network knowledge.  
+See [IP tags](ip-tags.md) for more information.
   
-IPv4 and IPv6 are supported.  
-  
-In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click **+Add IP address range** and set the following:  
-  
-> [!NOTE]  
->  The Location and Registered ISP will override defaults.   
-> IP tags, however, are added to the activity without overriding data.  
-  
-1.  **Name** your IP range. The name will not appear in the activities log, it is only used to manage your IP range.  
-  
-     To include the IP range in an IP category, select a category from the drop-down menu.  
-  
-2.  Enter the **IP address range** you wish to configure and then click on the "+" button. You can add as many IP addresses and subnets as you want using network prefix notation (also known as CIDR notation), for example 192.168.1.0/32.  
-  
-3.  To **Override the Location** or Organization (ISP) fields for these addresses, enter new value. For example, if you have an IP address that is considered publicly to be in Ireland, but you know it to be in the US, you can override this setting.  
-  
-4.  Enter a **Registered ISP**. This will override the data in your activities  
-  
-5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  In addition to the IP tags you configure, Cloud App Security has built-in tags that are not configurable. You can see the list of tags under the [IP tags filter](activity-filters.md).  
-  
-6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category. The **Risky** category and **Cloud provider** categories automatically include built-in IP tags such as Anonymous proxy and Tor that dynamically change based on the Microsoft Security Graph, and Microsoft Azure and other cloud infrastractures.  
-  
-     The following IP categories are available:  
-  
-    -   **Corporate**: these should be all the IP addresses of your corporate network, your branch offices and your Wi-Fi roaming addresses. 
-   
-    -   **Administrative**: these should be all the IP addresses of your admins.  
-   
-    -   **VPN**: these should be any IP addresses you use for remote workers.  
-  
-    -   **Cloud provider: this should be the IP address of your provider in the cloud.  
+## Import user groups
 
-    -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc. 
+When you connect apps using API connectors, Cloud App Security enables you to import user groups, for example from Office 365 and Azure Active Directory.
 
-    - **Other**: if none of the other IP categories apply, choose other.
+See [User groups](user-groups.md) for more information.
 
-7.  When you are done, click **Create**.  
-  
-     ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  
-  
 ##  <a name="Adallom_mailsettings"></a> Personalize your experience  
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
   

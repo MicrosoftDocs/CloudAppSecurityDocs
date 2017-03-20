@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Cloud App Secuirty release notes & versions | Microsoft Docs
+title: Cloud App Security release notes & versions | Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/24/2017
+ms.date: 3/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,13 +28,66 @@ ms.suite: ems
 
 # Release notes
 
+## Cloud App Security release 93
+Released March 20, 2017
+
+**New features:**
+-	Cloud App Security Anonymization now enables you to configure a custom encryption key. For more information, see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
+-	In order to have more control over user and account management, you now have direct access to Azure AD account settings for each user and account from within the **Account** page by clicking the cog next to each user. This enables easier access to advanced user management features group management, configuration of MFA, details about user sign-ins and the ability to block sign-in. 
+-	You can now export a blocking script for unsanctioned apps via the Cloud App Security API. Read more about our APIs in the Cloud App Security portal by clicking the question mark in the menu bar, followed by **API documentation**.
+-	The Cloud App Security app connector for ServiceNow was expanded to include support for OAuth tokens (as introduced in Geneva, Helsinki, Istanbul). This provides a more robust API connection to ServiceNow which does not rely on the deploying user. For more information see [Connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md). Existing customers can update their settings in the ServiceNow App connector page.
+-	If you configured additional third-party DLP scanners, DLP scan status will now show the status of each connector independently to improve visibility.
+-	Cloud App Security now includes support for the Microsoft Teams activities that are supported in the Office 365 audit log. This feature is being rolled out gradually.
+-	For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
+-	In the app drawer on the App Permissions tab you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
+-	Risky IP addresses now show up as an independent risk factor rather than weighted under the general **Location** risk factor. 
+-	When Azure Identity Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
+ 
+**Additional Salesforce support:**
+-	You can now suspend and unsuspend Salesforce users in Cloud App Security. This can be accomplished in the **Accounts** tab of the Salesforce Connector by clicking the cog at the end of the row of a specific user, and selecting **Suspend** or **Unsuspend** and can also be applied as a governance action as part of a policy. All suspend and unsuspend activities taken in Cloud App Security will be logged in the [Governance log](governance-actions.md). 
+-	Improved visibility to Salesforce content sharing: You can now see which files were shared with whom, including publicly shared files, files shared with groups and files shared with the entire Salesforce domain. Improved visibility will be rolled out retroactively to new and current connected Salesforce apps, it may take a while for this to update the first time.
+-	We improved coverage for the following Salesforce events, and separated them out of the **Manage users** activity: 
+    - Edit permissions
+    - Create user
+    - Change role
+    - Reset password
+
+## Cloud App Security release 90, 91, 92
+Released February, 2017
+
+**Special announcement**
+
+Cloud App Security is now officially certified with Microsoft Compliance for ISO, HIPAA, CSA STAR, EU model clauses and more. Please see the full list of certifications go to [Microsoft Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) and select Cloud App Security.
+
+**New features**
+
+-  **Import user groups (preview)**   When you connect apps using API connectors, Cloud App Security now enables you to import user groups, from Office 365 and Azure Active Directory. Typical scenarios that leverage imported user groups include: investigating which docs the HR people look at, or you can check if there's something unusual happening in the executive group, or if someone from the admin group performed an activity outside the US. For details and instructions, see [Importing user groups](user-groups.md).
+
+-  In the Activity log, you can now filter users and users in groups to show which activities were performed by a specific user, and which were performed on a specific user. For example, you can investigate activities in which the user impersonated others, and activities in which others impersonated this user. For more information, see [Activities](activity-filters.md).
+
+- When investigating a file in the **Files** page, if you drill down into the **Collaborators** of a specific file, you can now see more information about the collaborators, including whether or not they are Internal or External, Writers or Readers (file permissions), and when a file is shared with a group, you can now see all users who are members of the group. This enables you to see if the group members are external users.
+
+-  IPv6 support is now available for all appliances.
+
+-	Cloud Discovery now supports Baracuda appliances.
+
+-	Cloud App Security system alerts now cover SIEM connectivity errors. For more information see [SIEM integration](siem.md).
+
+-	Cloud App Security now includes support for the following activities:
+
+     **Office 365, SharePoint/OneDrive**: Update application configuration, Remove owner from group, Delete site, Create folder
+
+     **Dropbox**: Add member to group, Remove member from group, Create group, Rename group, Change team member name
+
+     **Box**: Remove item from group, Update item share, Add user to group, Remove user from group
+
 
 ## Cloud App Security release 89
 Released January 22, 2017
 
 **New features**
--	We are starting to roll out the ability to view Office 365 Security and Compliance Center DLP events in Cloud App Security. If you configured DLP policies in the Office 365 Security and Compliance Center, when policy matches are detected, you will be able to see them in the Cloud App Security Activity log. The information in the Activity log will include the file or email that triggered the match as and the policy or alert that it matched. The “Security event” activity allows you to view Office 365 DLP policy matches in the Cloud App Security activity log. Using this feature, you can:
-    -	See all DLP matches coming from the Office365 DLP engine.
+-	We are starting to roll out the ability to view Office 365 Security and Compliance Center DLP events in Cloud App Security. If you configured DLP policies in the Office 365 Security and Compliance Center, when policy matches are detected, you will be able to see them in the Cloud App Security Activity log. The information in the Activity log will include the file or email that triggered the match as and the policy or alert that it matched. The **Security event** activity allows you to view Office 365 DLP policy matches in the Cloud App Security activity log. Using this feature, you can:
+    -	See all DLP matches coming from the Office 365 DLP engine.
     -	Alert on Office 365 DLP policy matches for a specific file, SharePoint site, or policy.
     -	Investigate DLP matches with a broader context, for example- external users who accessed or downloaded a file that triggered a DLP policy match.
  

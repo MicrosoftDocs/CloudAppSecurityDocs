@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -52,9 +52,9 @@ App connector errors can be seen in the app connector dialog after attempting to
 |IgniteException|Office 365|Domain or user are not valid|Reset your settings and follow the process to connect Office 365 to Cloud App Security again.|
 |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired. Send a new interactive authorization request for this user and resource.|Office 365|Domain or user are not valid|Reset your settings and follow the process to connect Office 365 to Cloud App Security again.|
 |HttpRequestFailure: Server returned: 400 Bad Request|Office 365|Internal error|Click the Test now link again in a few minutes, if it does not work, follow the process to connect Office 365 to Cloud App Security again.|
-|GoogleJsonResponseException: 401 Unauthorized|Google Apps|Access denied. You are not authorized to read activity records. The user you log into Google Apps with must be an admin user.|Follow the process to connect Google Apps to Cloud App Security again using an admin account.|
-|GoogleJsonResponseException: 403 Forbidden|Google Apps|Problem running the Google Apps API.|If you just deployed the Cloud App Security App Connector for Google Apps, check the following: If you clicked Unlimited, make sure that your Google Apps account is really unlimited. If it is not, run the App Connector again and un-select the option for an unlimited account. Check that the scopes you defined during setup are correct. If this is not a new deployment and you see this error, it may be that you reached the API limit for today and Google Apps events will be renewed tomorrow.|
-|TokenResponseException: 400 Bad Request|Google Apps|Either the connection to Google Apps did not complete or is expired.|Follow the process to connect Google Apps to Cloud App Security again.|
+|GoogleJsonResponseException: 401 Unauthorized|G Suite|Access denied. You are not authorized to read activity records. The user you log into G Suite with must be an admin user.|Follow the process to connect G Suite to Cloud App Security again using an admin account.|
+|GoogleJsonResponseException: 403 Forbidden|G Suite|Problem running the G Suite API.|If you just deployed the Cloud App Security App Connector for G Suite, check the following: If you clicked Unlimited, make sure that your G Suite account is really unlimited. If it is not, run the App Connector again and un-select the option for an unlimited account. Check that the scopes you defined during setup are correct. If this is not a new deployment and you see this error, it may be that you reached the API limit for today and G Suite events will be renewed tomorrow.|
+|TokenResponseException: 400 Bad Request|G Suite|Either the connection to G Suite did not complete or is expired.|Follow the process to connect G Suite to Cloud App Security again.|
 |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: Server returned: 403 Forbidden|ServiceNow|Permissions are incorrect|Follow the process to connect ServiceNow to Cloud App Security again using an admin account.|
 |HttpRequestFailure: Server returned: 401 Unauthorized|Exchange Online|User or password are incorrect|Make sure the username and password are correct and Follow the process to connect Exchange Online to Cloud App Security again.|
 |HttpRequestFailure: Server returned: 404 Not Found|Exchange Online|The user you are using to log into Exchange Online does not have a primary mailbox in Exchange Online (for example, a user who does not exist in Azure AD or a user exists in Azure AD, but does not have an Exchange Online license).|Follow the process to connect Exchange Online to Cloud App Security again using a new admin account.|

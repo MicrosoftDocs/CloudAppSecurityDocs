@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -79,7 +79,7 @@ Cloud App Security searches all the logs in your Cloud Discovery for anomalies. 
   
 6.  Select the dates during which the anomalous activity occurred to trigger the alert under **Raise alerts only for suspicious activities occurring after date.**  
   
-7.  Under **Alerts**, you can set the anomaly detection sensitivity from low to high to configure the frequence of alerts you want to recieve.  
+7.  Under **Alerts**, you can set the anomaly detection sensitivity from low to high to configure the frequency of alerts you want to receive.  
 Set a **Daily alert limit** and select whether the alert will be sent as an email or as a text message, or both, and provide details as necessary. You can click the Save alert settings to default to enable future policies to save these alert settings, including the phone number and email addresses, as the default. You can also click **Use organization defaults** to set these settings according to the default for your organization.  
   
 9. Click **Create**.  
