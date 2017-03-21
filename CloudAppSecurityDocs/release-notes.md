@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,6 +32,7 @@ ms.suite: ems
 Released March 20, 2017
 
 **New features:**
+-   You can now apply policies to include or exclude imported user groups. 
 -	Cloud App Security Anonymization now enables you to configure a custom encryption key. For more information, see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
 -	In order to have more control over user and account management, you now have direct access to Azure AD account settings for each user and account from within the **Account** page by clicking the cog next to each user. This enables easier access to advanced user management features group management, configuration of MFA, details about user sign-ins and the ability to block sign-in. 
 -	You can now export a blocking script for unsanctioned apps via the Cloud App Security API. Read more about our APIs in the Cloud App Security portal by clicking the question mark in the menu bar, followed by **API documentation**.
