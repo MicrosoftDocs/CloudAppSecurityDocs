@@ -33,7 +33,7 @@
 ##### [Cloud Discovery anomaly detection policy](cloud-discovery-anomaly-detection-policy.md)
 #### [Activity policies](user-activity-policies.md)
 #### [Anomaly detection policy](anomaly-detection-policy.md)
-#### [Control data](control-data.md)
+#### [Data control](data-control.md)
 ##### [File policies](data-protection-policies.md)
 ##### [Content Inspection](content-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
