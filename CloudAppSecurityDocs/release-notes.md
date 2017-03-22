@@ -42,7 +42,7 @@ Released March 20, 2017
 -	For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
 -	In the app drawer on the App Permissions tab you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
 -	Risky IP addresses now show up as an independent risk factor rather than weighted under the general **Location** risk factor. 
--	When Azure Identity Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
+-	When Azure Information Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
  
 **Additional Salesforce support:**
 -	You can now suspend and unsuspend Salesforce users in Cloud App Security. This can be accomplished in the **Accounts** tab of the Salesforce Connector by clicking the cog at the end of the row of a specific user, and selecting **Suspend** or **Unsuspend** and can also be applied as a governance action as part of a policy. All suspend and unsuspend activities taken in Cloud App Security will be logged in the [Governance log](governance-actions.md). 
