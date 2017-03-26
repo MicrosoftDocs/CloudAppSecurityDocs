@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,8 @@ ms.suite: ems
 
 ---
 
-# Working with Cloud Discovery
+# Discover
+
 ## Review the Cloud Discovery Dashboard
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data, to allow you to generate specific views, depending on what you're most interested in, and easy-to-understand graphics to give you the full picture at a glance.
@@ -45,28 +46,21 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 5. Check how the discovered apps spread according to geographic location (according to their HQ) in the App Headquarters map.
 
 6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview** and check the discovery alerts status to see how many open alerts should you investigate.
-
-
-## Customize the risk score  
-Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score, representing Cloud App Security's assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three sub-scores relating to the three sub-categories which Cloud App Security considers when assessing reliability:  
   
--   **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year and popularity. These fields are meant to portray the company's stability on the most basic level.  
+## Exclude entities  
+If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
   
--   **Security** - The security category takes into account all standards dealing with the physical security of the data utilized by the discovered app. This includes fields such as multi-factor authentication, encryption, data classification and data ownership.  
-  
--   **Compliance** - This category displays which common best-practice compliance standards are upheld by the company that produces the app. The list of specifications includes standards such as HIPAA, CSA and PCI-DSS.  
-  
-Each of the categories is comprised of many specific properties. According to our scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly, whereas continuous properties such as domain age will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category, to create the category's sub-score. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.  
-  
-It is important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given an equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:  
+To create an exclusion:  
   
 1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
-2.  Under **Configure score metric**, slide the **Importance** to change the weight of the field to **Ignored**, **Low**, **Medium**, **High** or **Very High**.  
+2.  Click the **Exclude entities** tab.  
   
-3.  In addition, you can set whether certain values are either not available or not applicable in the score calculation. When included, N/A values have a negative contribution to the calculated score.  
+3.  Choose either the **Excluded users** or **Excluded IP addresses** tab and click the button to **Add user** or **Add IP address**.  
   
-     ![score](./media/score.png "score")  
+4.  Add a user alias or IP address. We recommend adding information about why the user or IP address was excluded.  
+  
+     ![exclude user](./media/exclude-user.png "exclude user")  
   
 ## Manage continuous reports  
 Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it is possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:  
@@ -90,22 +84,7 @@ To create a new continuous report:
 6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
-  
-## Exclude entities  
-If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
-  
-To create an exclusion:  
-  
-1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
-  
-2.  Click the **Exclude entities** tab.  
-  
-3.  Choose either the **Excluded users** or **Excluded IP addresses** tab and click the button to **Add user** or **Add IP address**.  
-  
-4.  Add a user alias or IP address. We recommend adding information about why the user or IP address was excluded.  
-  
-     ![exclude user](./media/exclude-user.png "exclude user")  
-  
+
 ## Deleting Cloud Discovery data  
 There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
   
