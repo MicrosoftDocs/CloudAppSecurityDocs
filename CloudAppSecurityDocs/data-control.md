@@ -78,10 +78,10 @@ This use case applies to Office 365, G Suite, Box, Dropbox, and Salesforce.
 
 ## THE THREAT
 
-If you've already classified the data in your network, utilizing the classification capabilities in Azure Information Protection, you can monitor these classified files when they're in the cloud. This enables you to make sure that the data you classified as **confidential** (or some other sensitive classification) is not being inappropriately shared.
+You know you need to protect your data, you've already gone to the trouble of classifying your files in Azure Information Protection. But once you classify them, how do you know where they are and who's looking at them? 
 
 ## THE SOLUTION
-Let Cloud App Security monitor and manage the files you classified in Azure Information Protection by rolling out the following policy and governance actions.
+ You can monitor these classified files when they're in the cloud using Cloud App Security. This enables you to make sure that the data you classified as **confidential** (or some other sensitive classification) is not being inappropriately shared.Let Cloud App Security monitor and manage the files you classified in Azure Information Protection by rolling out the following policy and governance actions.
 
 ### Prerequisites
 
