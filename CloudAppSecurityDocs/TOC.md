@@ -20,8 +20,9 @@
 ### [Connect ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # Use
-## [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
-## [Work with Cloud Discovery](working-with-cloud-discovery-data.md)
+## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
+## [Discover](working-with-cloud-discovery-data.md)
+### [Working with the risk score](risk-score.md)
 ## [Investigate](investigate.md)
 ### [Built-in report reference](built-in-report-reference.md)
 ### [Files](file-filters.md)
@@ -39,6 +40,7 @@
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 #### [Policy template reference](policy-template-reference.md)
 ### [Manage app permissions](manage-app-permissions.md)
+### [Manage alerts](manage-alerts.md)
 ### [Govern connected apps](governance-actions.md)
 ### [Govern discovered apps](governance-discovery.md)
 ## Integrate
