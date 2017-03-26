@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,31 @@ ms.suite: ems
 
 # Control
 You can apply governance actions to users' files across your cloud environment. After you have thoroughly investigated and learned about your cloud, you can use governance actions to help protect your organization.  
+
+## Use policies to assess risk  
+After you take a look at your open alerts, go to the Policy center to review policy violations that didn't trigger alerts.  
+
+-   In the Cloud App Security dashboard, click **Control** and then **Policies**.  
+
+-   Select a specific policy to see the **Violating now** list of policy matches that didn't trigger alerts.  
+
+-   Click the violations one at a time and decide what to do for each. See the following figures for more information about governance actions.  
+
+     If your policy is set to find compliance breaches and someone saves credit card numbers in files on OneDrive, you will have a match in the policy.  
+
+     ![PCI matches](./media/pci-matches.png "pci matches")  
+
+-   Select the match to see the actual files that breached the policy.  
+
+     ![PCI content matches](./media/pci-content-matches.png "pci content matches")  
+
+     You can select the file itself to get information about the files.  
+
+     You can click **Collaborators** to see who has access to this file.  
+
+     You can click **Matches** to see the actual credit card numbers.  
+
+     ![Content matches ccn](./media/content-matches-ccn.png "content matches ccn")  
 
 ## Apply governance actions  
 You can apply governance actions from within policies, from inside alerts, and from the **File** log.  
