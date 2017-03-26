@@ -55,7 +55,7 @@ This use case applies to Office 365, G Suite, Box, Dropbox, and Salesforce.
 
 6. If you find false positives, mark them with a checkmark to exclude them from the report and from live matches. 
 
-7. For true matches, you can take immediate [governance actions](governance-action.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Remove external collaborators**.
+7. For true matches, you can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Remove external collaborators**.
 
 8. Based on the false positives that you found, you can refine the policy and choose to take automatic governance actions.
 
@@ -96,7 +96,7 @@ This use case applies to Office 365, G Suite, Box, Dropbox, and Salesforce.
 
 6. If you find false positives, mark them with a checkmark to exclude them from the report and from live matches. 
 
-7. For true matches, you can take immediate [governance actions](governance-action.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put in user quarantine**.
+7. For true matches, you can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put in user quarantine**.
 
 8. Based on the false positives that you found, you can refine the policy and choose to take automatic governance actions.
 
