@@ -47,20 +47,23 @@ Gain visibility into file sharing in your network and deploy governance actions 
 
 #### Steps
 
-1.	On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
+1.	Control your files by creating a policy
 
-2.	For example, in the [**Policy template**](policy-template-reference.md) field, choose **File containing PII detected in the cloud (built-in DLP engine)** and click **Apply template**. 
-3.	In addition, you can also configure additional policies with content inspection settings to match files on different expression other than U.S. social security numbers.
+    1. On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
 
-4. Allow the policy to run on your network for at least a few hours.
+    2.	For example, in the [**Policy template**](policy-template-reference.md) field, choose **File containing PII detected in the cloud (built-in DLP engine)** and click **Apply template**. 
+    
+    3.	In addition, you can also configure additional policies with content inspection settings to match files on different expression other than U.S. social security numbers. After you start the policy, it takes time for Cloud App Security to scan existing files and also any new files you add. Depending on the amount of data you have in your cloud, it may take some time to complete the scan.
 
-5. Then, click on the policy name to go to the **Policy report** and review the matches that were triggered for the policy.
+2. Investigate your alerts
+    
+    1. Click on the policy name to go to the **Policy report** and review the matches that were triggered for the policy.
 
-6. If you find false positives, mark them with a checkmark to exclude them from the report and from live matches. 
+    2. For matches, you can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Remove external collaborators**.
+    
+    3. If you find false positives, mark them with a checkmark to exclude them from the report and from live matches. You can use the feedback feature to let the Cloud App Security team of improvements you'd like to add. 
 
-7. For true matches, you can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Remove external collaborators**.
-
-8. Based on the false positives that you found, you can refine the policy and choose to take automatic governance actions.
+3. After you've checked and fine-tuned the policy to make sure it's running as you intended, you can set it to perform automatic governance actions.
 
 #### How to test it
 
@@ -90,21 +93,23 @@ You know you need to protect your data, you've already gone to the trouble of cl
 
 ### Steps
 
-1.	On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
+1. Control your data by creating a policy	
+    
+    1. On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
 
-2.	In the filter section, you can remove the filters for Access level and Last modified to run this policy on all the files in your cloud. These filters only apply to files modified from no on. Add the filter **Classification label** and then **equals** and select your organization's classification label. 
+    2.	In the filter section, you can remove the filters for Access level and Last modified to run this policy on all the files in your cloud. These filters only apply to files modified from no on. Add the filter **Classification label** and then **equals** and select your organization's classification label. 
 
-3.	To monitor inappropriate sharing of these classified files, add a filter with the access level you are trying to prevent - for example,  **Access level equals External, Public, Public on the web**.
+    3.	To monitor inappropriate sharing of these classified files, add a filter with the access level you are trying to prevent - for example,  **Access level equals External, Public, Public on the web**.  After you start the policy, it takes time for Cloud App Security to scan existing files and also any new files you add. Depending on the amount of data you have in your cloud, it may take some time to complete the scan.
 
-4. Allow the policy to run on your network for at least a few hours.
+2. Investigate your alerts
 
-5. Then, click on the policy name to go to the **Policy report** and review the matches that were triggered for the policy.
+    1. Then, click on the policy name to go to the **Policy report** and review the matches that were triggered for the policy.
+    
+    2. For each matches, you can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put in user quarantine**.
+      
+    3. If you find false positives, mark them with a check mark to exclude them from the report and from live matches. You can use the feedback feature to let the Cloud App Security team of improvements you'd like to add. 
 
-6. If you find false positives, mark them with a checkmark to exclude them from the report and from live matches. 
-
-7. For true matches, you can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put in user quarantine**.
-
-8. Based on the false positives that you found, you can refine the policy and choose to take automatic governance actions.
+3. Once you've checked that the policy is matching everything you want to catch, you can refine the policy and set it to perform automatic governance actions.
 
 
 ### How to test
@@ -113,7 +118,7 @@ You know you need to protect your data, you've already gone to the trouble of cl
 
 2. Upload the file to your cloud app and then share it with everyone or with an external address. 
 
-3. Go to the policy report. A file policy match should appear shortly. 
+3. Go to the **Policy report**. A file policy match should appear shortly. 
 
 4. You can see the classification label by clicking on the file and opening the **File drawer**. 
 
