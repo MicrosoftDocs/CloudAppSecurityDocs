@@ -196,7 +196,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   Click on **Save Changes**.  
   
-18. Go to [www.admin.google.com](https://admin.google.com/) and then choose **Security**. 
+18. Go to [admin.google.com](https://admin.google.com/) and then choose **Security**. 
        ![google security](./media/googlesecurity.png "google8")  
  
 19. Choose **API reference**.  

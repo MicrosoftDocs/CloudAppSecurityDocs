@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -59,8 +59,7 @@ Cloud App Security is officially certified with Microsoft Compliance for ISO, HI
 
 When Cloud App Security performs content inspection, data privacy is enforced. The file content is not stored in the Cloud App Security database; only the metadata of the file records and any violations that were identified are stored in the Cloud App Security database. For more information about data retention, see our [privacy policy](http://go.microsoft.com/fwlink/?LinkId=512132) and the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data).
 Cloud App Security retains data as follows:
-Cloud App Security retains data as follows: 
- 
+
 - Activity log: 180 days 
 - Discovery data: 90 days 
 - Alerts: 180 days 

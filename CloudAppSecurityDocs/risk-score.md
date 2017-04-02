@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/29/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -31,9 +31,9 @@ ms.suite: ems
 
 ## The Cloud app catalog
 
-In order to better understand what which cloud apps can be discovered by Cloud App Security's Cloud Discovery, use the Cloud App Catalog.
+In order to better understand which cloud apps can be discovered by Cloud App Security's Cloud Discovery, use the Cloud App Catalog.
 
-The Cloud App Catalog contains more than 13,000 SaaS applications that can be viewed (filtered) based on name, domain, risk score, category or available security features.
+The Cloud App Catalog contains more than 14,000 SaaS applications that can be viewed (filtered) based on name, domain, risk score, category or available security features.
 
 ![access the cloud app catalog](./media/risk-cac-dropdown.png)
 
