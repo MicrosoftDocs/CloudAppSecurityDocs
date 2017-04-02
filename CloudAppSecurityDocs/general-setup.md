@@ -44,7 +44,7 @@ The following procedure gives you instructions for customizing the Cloud App Sec
 4.  Add a list of your **Managed domains**. The managed domains are used to help Cloud App Security determine which users are internal, which are external, as well as where files should and shouldn't be shared. This is used for reports as well as alerts.  
 > [!NOTE] 
 > - Users in domains that are not configured as internal will be marked as external and will not be scanned for activities or files.
-> - If you are integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for infomration. 
+> - If you are integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for information. 
   
 4.  **Activity log email privacy settings**  
   
