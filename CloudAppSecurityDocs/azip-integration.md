@@ -132,8 +132,10 @@ This feature is currently available for files that are stored in SharePoint Onli
 After Cloud App Security is connected to your Office 365 service, you will be able to use the Cloud App Security RMS integration features that enable you to protect documents with RMS directly in the Cloud App Security portal, as follows:
 
 1. From the **Files** page, select the file you want to protect and then click the three dots at the end of the file's row and choose **Protect**. 
+![protect app](./media/protect-app.png)
 2. You will be asked to choose one of your organization's templates to use to protect the file, and click **Protect**. 
-3.	After you choose a template and click protect, Cloud App Security will apply the template and protect the original file. The protected file will have the same file name as the original file but with a new “.pfile” file extension.
+![protection template](./media/protect-template.png)
+3. After you choose a template and click protect, Cloud App Security will apply the template and protect the original file. The protected file will have the same file name as the original file but with a new “.pfile” file extension.
 > [!NOTE]
 > 	It is recommended to apply company wide RMS templates on files, so all users in the organization will be able to access these files, including the original owner of the file. 
 > The owner of the file, the sharing policy of the file and the list of users who already have access to it do not change when the file becomes protected.
