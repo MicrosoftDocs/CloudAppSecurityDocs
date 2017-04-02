@@ -142,7 +142,7 @@ After Cloud App Security is connected to your Office 365 service, you will be ab
 
 4. If users want to access the protected file, they have to have the RMS sharing app installed on their device. For more information see the [Technical overview and protection details for the Microsoft Rights Management sharing application](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
 
-4. You can revert this action at any time in the **Governance log** by clicking the **Revert** button at the end of the row of the previously taken Protect action. 
+5. You can revert this action at any time in the **Governance log** by clicking the **Revert** button at the end of the row of the previously taken Protect action. 
 
 
 
