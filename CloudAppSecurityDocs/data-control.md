@@ -47,14 +47,16 @@ Gain visibility into file sharing in your network and deploy governance actions 
 
 #### Setting up monitoring
 
-1.	Controling your files by creating a policy
+1.	Controlling your files by creating a policy
 
     1. On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
+    ![create file policy](./media/create-file-policy.png)
 
-    2.	In the [**Policy template**](policy-template-reference.md) field, choose **File containing PII detected in the cloud (built-in DLP engine)** and click **Apply template**. 
-   
+    2. In the [**Policy template**](policy-template-reference.md) field, choose **File containing PII detected in the cloud (built-in DLP engine)** and click **Apply template**. 
+    ![file policy template](./media/file-policy-template.png)
     3. To monitor inappropriate sharing of these files containing private information, add a filter with the access level you are trying to prevent - for example,  **Access level equals External, Public, Public (Internet)**. 
-    
+     ![file policy fiter](./media/file-policy-filter.png)
+
 2. Investigating your matches
     
     1. In the **Policies** page, click on the policy name to go to the **Policy report** and review the matches that were triggered for the policy.
@@ -74,9 +76,13 @@ Gain visibility into file sharing in your network and deploy governance actions 
 #### Removing the risk
 
 After you've validated it and fine-tuned the policy to make sure it's running as you intended, do the following: 
-  1. You can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Remove external collaborators**.
-  2. After it's fully validated, you can set it to perform automatic governance actions. For example, in SharePoint and OneDrive you can **Remove external users** or **Put in user quarantine**, and for G Suite and Box you can **Remove external users** and **Remove public access**.
+  1. You can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put user in quarantine**.
 
+ ![auto gov external](./media/auto-gov-external.png)
+
+   2. After it's fully validated, you can set it to perform automatic governance actions. For example, in SharePoint and OneDrive you can **Remove external users** or **Put in user quarantine**, and for G Suite and Box you can **Remove external users** and **Remove public access**.
+
+  ![apply automatic governance actions](./media/apply-automatic-gov-actions.png)
 
 ## Files shared publicly and labeled as confidential
 
@@ -103,8 +109,12 @@ You know you need to protect your data, you've already gone to the trouble of cl
     1. On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
 
     2.	In the filter section, you can remove the filters for **Access level** and **Last modified** to run this policy on all the files in your cloud. These filters only apply to files modified from no on. Add the filter **Classification label** and then **equals** and select your organization's classification label. 
+    
+    ![file policy classification label](./media/file-policy-class-label.png)
 
     3.	To monitor inappropriate sharing of these classified files, add a filter with the access level you are trying to prevent - for example,  **Access level equals Public, Public (Internet)**.  After you start the policy, it takes time for Cloud App Security to scan existing files and also any new files you add. Depending on the amount of data you have in your cloud, it may take some time to complete the scan.
+
+    ![file policy filter public](./media/file-policy-filter-public.png)
 
 2. Investigating your matches
 
@@ -133,7 +143,8 @@ After you've validated it and fine-tuned the policy to make sure it's running as
 1. You can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put in user quarantine**.
     
 2. After it's fully validated, you can set it to perform automatic governance actions. For example, in SharePoint and OneDrive you can **Put in user quarantine**, and for G Suite and Box you can **Remove public access**.
-
+ 
+ ![automatic governance action remove public access](./media/gov-action-public-access.png)
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
