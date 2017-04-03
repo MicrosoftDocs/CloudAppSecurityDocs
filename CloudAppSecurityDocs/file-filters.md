@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -130,6 +130,9 @@ You can view more information about each file, by clicking on the File itself in
 - Owner:  Click on the owner to view the user page for the owner of this file.
 - Matched policies: Click on the Matched policies link to see a list of policies this file matched.
 - Classification label: Click on the Classification label to view the list of Azure Information Protection classification labels found in this file. You can then filter by all files matching this label.    
+
+The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Classification labels**.
+
 
 ![File drawer](./media/file-drawer.png "File drawer")  
   

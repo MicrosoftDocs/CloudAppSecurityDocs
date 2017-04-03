@@ -136,6 +136,9 @@ You can view more information about each activity, by clicking on the Activity i
 - Location: Click on the location to view the location in Bing maps.
 - IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
 
+The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
+
+
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
   
 For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
