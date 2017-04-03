@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2017
+ms.date: 3/29/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -33,6 +33,21 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
   
 IPv4 and IPv6 are supported.  
   
+Cloud App Security comes preconfigured with built-in tags for the following IP addresses: 
+- Native client
+- Outdated operating system
+- Managed devices
+- Anonymous proxy
+- Botnet
+- Tor
+- Compliant device
+- Verified device
+- Impersonate
+
+To use these built-in tags as part of a search, refer to their ID in the Cloud App Security API documentation. 
+
+
+
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click **+Add IP address range** and set the following:  
   
 > [!NOTE]  

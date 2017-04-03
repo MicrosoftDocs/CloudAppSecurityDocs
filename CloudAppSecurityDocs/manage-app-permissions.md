@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,11 +36,7 @@ The **App permissions** tab displays information about app permissions in your O
 
 To access the App permissions tab:
 
-1. In the Cloud App Security portal, click **Investigate**, and under **Connected apps**, select **Office 365**. 
-> [!Note]
-> You have to first connect Cloud App Security to Office 365 to work with App permissions.
-
-2. Then, in the Office 365 dashboard, click the **App permissions** tab.
+In the Cloud App Security portal, click **Investigate**, and then **App permissions**.
 
 
  ![app permissions](./media/app-permissions.png)
