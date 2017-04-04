@@ -97,8 +97,10 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 ![azure information protection tags in cloud app security](./media/azip-tags-in-cas.png)
 
-> ![Note]
+> [!Note]
 > When Azure Identity Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
+
+
 **Policy #1 - confidential data that is externally shared on Box:**
 
 1.	Create a file policy.
