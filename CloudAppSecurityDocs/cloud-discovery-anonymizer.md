@@ -39,7 +39,7 @@ Key points:
 
 How data anonymization works:
 
-1.	There are three ways to apply data anonymization: 
+1.  There are three ways to apply data anonymization: 
     
     - You can set the data from a specific log file to be anonyimzized, by [creating a new snapshot report](create-snapshot-cloud-discovery-reports.md) and selecting **Anonymize private information**.
  ![Anonymize snapshot data](./media/anonymize-log.png)
@@ -58,13 +58,13 @@ How data anonymization works:
   ![Anonymization](./media/anonymizer1.png)
   
 
-2.	When anonymization is selected, Cloud App Security parses the traffic log and extracts specific data attributes.
-3.	Cloud App Security replaces the username with an encrypted username.
-4.	It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
+2.  When anonymization is selected, Cloud App Security parses the traffic log and extracts specific data attributes.
+3.  Cloud App Security replaces the username with an encrypted username.
+4.  It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
  ![Anonymize Cloud Discovery dashboard](./media/anonymize-dashboard.png)
  
 
-5.	For specific investigation, such as investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification. 
+5.  For specific investigation, such as investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification. 
 This page can also be used to look up the encrypted username of a known username. 
 
     1. Under the Settings cog, select **Cloud Discovery settings**.
@@ -72,7 +72,7 @@ This page can also be used to look up the encrypted username of a known username
     3. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Click **Resolve**. 
 ![Anonymization](./media/anonymizer.png)
 
-6.	The action is audited in the portal’s **Governance log**. 
+6.  The action is audited in the portal’s **Governance log**. 
 ![Anonymization](./media/anonymize-gov-log.png)
 
 
