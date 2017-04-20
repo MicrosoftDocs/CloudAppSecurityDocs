@@ -155,7 +155,7 @@ For a list of available governance actions per app, see the [Governing connected
 
 You can also set the policy to send you an alert by email or text message when matches are detected. 
 
-To set your notification preferences, got to [Customize the portal](general-settings.md) 
+To set your notification preferences, got to [Customize the portal](general-setup.md) 
   
 > [!NOTE] 
 > The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
