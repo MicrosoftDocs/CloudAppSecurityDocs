@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,10 +36,10 @@ Cloud App Security can monitor any file type based on more than 20 metadata filt
 This use case applies to Office 365, G Suite, Box, Dropbox, and Salesforce.
 
 ### THE THREAT
-Employees are sharing company files with sensitive data outside the organization. This can lead to data leaks that are unmonitored. This may be innocent and not violate your company's policies, but even in that case it's important to monitor what's being shared so that you are always aware of how your network is being used and what data is being shared externally.
+One of the greatest benefits cloud technology provides is the ability to share anything with anyone. But with great power comes great responsibility, and in order to make sure no sensitive data is being shared externally you need to know which files contain sensitive data and who are they shared with. Using the tools provided with your cloud apps you are not able to tell what is saved in the cloud app, or who has access - keeping you unaware of possible data leaks.
 
 ### THE SOLUTION
-Gain visibility into file sharing in your network and deploy governance actions by deploying the following in Cloud App Security out the following policy and governance action in Cloud App Security.
+By finding these two parameters- sensitivity and sharing level, and crossing them together you can identify these possible breaches. Cloud App Security scans all of the files saved in your cloud apps and classifies them by their sharing level automatically. You can then configure a file policy in Cloud App Security to search for all the sensitive data saved in your cloud apps. Once you find a sensitive file shared externally you can either take manual remediation actions or you can set Cloud App Security to do it automatically for you. By doing this you can remove the data leak risk with a click.
 
 #### Prerequisites
 
@@ -47,7 +47,7 @@ Gain visibility into file sharing in your network and deploy governance actions 
 
 #### Setting up monitoring
 
-1.	Controlling your files by creating a policy
+1.	Start monitoring your app by setting up a policy that will scan all of the externally shared files for sensitive content:
 
     1. On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
     ![create file policy](./media/create-file-policy.png)
@@ -75,7 +75,7 @@ Gain visibility into file sharing in your network and deploy governance actions 
 
 #### Removing the risk
 
-After you've validated it and fine-tuned the policy to make sure it's running as you intended, do the following: 
+After you've validated it and fine-tuned the policy, remove possible false positives that may have matched your policy. Then, do the following: 
   1. You can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put user in quarantine**.
 
  ![auto gov external](./media/auto-gov-external.png)
@@ -90,21 +90,21 @@ This use case applies to Office 365, G Suite, Box, Dropbox, and Salesforce.
 
 This use case takes advantage of the integration between Cloud App Security and Azure Information Protection. If you are running Azure Information Protection across your organization and have taken the time to label your files with Azure Information Protection labels, Cloud App Security enables you to monitor and control what happens to those files after they are labeled.
 
-## THE THREAT
+### THE THREAT
 
 You know you need to protect your data, you've already gone to the trouble of classifying your files in Azure Information Protection. But once you classify them, how do you know where they are and who's looking at them? 
 
-## THE SOLUTION
- You can monitor these classified files when they're in the cloud using Cloud App Security. This enables you to make sure that the data you classified as **confidential** (or some other sensitive classification) is not being inappropriately shared.Let Cloud App Security monitor and manage the files you classified in Azure Information Protection by rolling out the following policy and governance actions.
+### THE SOLUTION
+ You can monitor these classified files when they're in the cloud using Cloud App Security. This enables you to make sure that the data you classified as **confidential** (or some other sensitive classification) is not being inappropriately shared. Let Cloud App Security monitor and manage the files you classified in Azure Information Protection by rolling out the following policy and governance actions.
 
-### Prerequisites
+#### Prerequisites
 
 - [Connect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) at least one cloud app to Cloud App Security.
 - Follow the [Azure Information Protection integration instructions](azip-integration.md) to enable the automatic scan.
 
-### Setting up monitoring
+#### Setting up monitoring
 
-1. Control your data by creating a policy	
+1. Monitor all of the files with the desired classification labels that are publicly shared:	
     
     1. On the **Policies** page, click [**Create file policy**](data-protection-policies.md). 
 
@@ -125,7 +125,7 @@ You know you need to protect your data, you've already gone to the trouble of cl
     3. If you find false positives, mark them with a check mark to exclude them from the report and from live matches. You can use the feedback feature to let the Cloud App Security team of improvements you'd like to add. 
 
 
-### Validating your policy
+#### Validating your policy
 
 1. Create a new Word document and use the Azure Information Protection tool bar to set the any sensitivity label, such as **Confidential**. 
 
@@ -138,7 +138,7 @@ You know you need to protect your data, you've already gone to the trouble of cl
 
 #### Removing the risk
 
-After you've validated it and fine-tuned the policy to make sure it's running as you intended, do the following: 
+After you've validated it and fine-tuned the policy to remove possible false positives that may have matched your policy, do the following: 
 
 1. You can take immediate [governance actions](governance-actions.md) by clicking on the three dots at the end of the row and selecting the relevant governance action, for example, **Put in user quarantine**.
     
