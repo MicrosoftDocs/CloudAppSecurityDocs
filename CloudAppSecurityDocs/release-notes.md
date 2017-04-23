@@ -35,9 +35,7 @@ Released April 24, 2017
 **Updates**
 - The **Accounts** page has been updated with improvements that make detecting risks easier. You can now more easily filter for internal and external accounts, see at a glance whether a user has admin permissions and you can perform actions on each account per-app simply (such as remove permissions, remove user’s collaborations, suspend user). In addition, imported [user groups](user-groups.md) for each account will be displayed. 
 
-- For Microsoft accounts (Office 365 and Azure Active Directory), Cloud App Security groups different user identifiers such as proxy addresses, aliases, SID and more under a single account. All aliases related to an account will appear under the primary email address. 
-
-Based on the list of user identifiers, for activities whose actor is a user identifier, the actor will be displayed as the primary user name UPN (User Principal Name). Based on the UPN, groups will be assigned and policies applied. This will improve investigation of activities and fuse all related activities to the same session for anomalies and group based policies. This feature will be gradually rolled out over the next month.
+- For Microsoft accounts (Office 365 and Azure Active Directory), Cloud App Security groups different user identifiers such as proxy addresses, aliases, SID and more under a single account. All aliases related to an account will appear under the primary email address. Based on the list of user identifiers, for activities whose actor is a user identifier, the actor will be displayed as the primary user name UPN (User Principal Name). Based on the UPN, groups will be assigned and policies applied. This will improve investigation of activities and fuse all related activities to the same session for anomalies and group based policies. This feature will be gradually rolled out over the next month.
 
 - The Robot tag was added as a possible risk factor in the Browser Use built-in report. Now, in addition to browser use being tagged as outdated, you can see when browser use was performed by a robot. Learn more about the [built-in reports](built-in-report-reference.md).
 
