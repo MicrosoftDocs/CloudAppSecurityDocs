@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,23 @@ ms.suite: ems
 ---
 
 # Release notes
+
+
+## Cloud App Security release 95 (in roll out)
+Released April 24, 2017
+
+**Updates**
+- The **Accounts** page has been updated with improvements that make detecting risks easier. You can now more easily filter for internal and external accounts, see at a glance whether a user has admin permissions and you can perform actions on each account per-app simply (such as remove permissions, remove user’s collaborations, suspend user). In addition, imported [user groups](user-groups.md) for each account will be displayed. 
+
+- For Microsoft accounts (Office 365 and Azure Active Directory), Cloud App Security groups different user identifiers such as proxy addresses, aliases, SID and more under a single account. All aliases related to an account will appear under the primary email address. 
+
+Based on the list of user identifiers, for activities whose actor is a user identifier, the actor will be displayed as the primary user name UPN (User Principal Name). Based on the UPN, groups will be assigned and policies applied. This will improve investigation of activities and fuse all related activities to the same session for anomalies and group based policies. This feature will be gradually rolled out over the next month.
+
+- The Robot tag was added as a possible risk factor in the Browser Use built-in report. Now, in addition to browser use being tagged as outdated, you can see when browser use was performed by a robot. Learn more about the [built-in reports](built-in-report-reference.md).
+
+- When creating a content inspection file policy, you can now set the filter to include only files with at least 50 matches.
+
+
 
 ## Cloud App Security release 94
 Released April 2, 2017
