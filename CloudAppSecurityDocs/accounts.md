@@ -46,14 +46,14 @@ The **Accounts** page enables you to easily investigate your accounts for issues
     
 -   You can also drill down into the user's account and select relevant governance actions, such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also click on **Azure AD account settings** to get easy access to advanced user management features like group management, multi-factor authentication, details about the user's sign ins and the ability to block sign in.
 
-[accounts screen](./media/accounts-page.png)
+![accounts screen](./media/accounts-page.png)
 
 ## Account filters
 Below is a list of the account filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
 - **Account name**: The account name is the primary alias of the user, but other identifiers are supported and consolidated beneath the primary alias.
 
-- **Affiliation**: The affiliation will be either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. In the event that the account has admin permissions the icon in the Accounts table will appear with the addition of the red tie [accounts admin icon](./media/accounts-admin-icon.png).
+- **Affiliation**: The affiliation will be either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. In the event that the account has admin permissions the icon in the Accounts table will appear with the addition of the red tie ![accounts admin icon](./media/accounts-admin-icon.png).
 
 - **App**: You can filter for any API connected app being used by accounts in your organization.
 
