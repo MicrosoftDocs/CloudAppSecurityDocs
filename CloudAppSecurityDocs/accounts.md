@@ -33,19 +33,18 @@ The **Accounts** log can be filtered to enable you to find specific accounts and
 
 The **Accounts** page enables you to easily investigate your accounts for issues including the following:  
 
-    -   Check if any accounts have been inactive in a particular service for a long time (Maybe you should revoke the license for that user to that service)  
+-   Check if any accounts have been inactive in a particular service for a long time (Maybe you should revoke the license for that user to that service)  
+-   You can filter for the list of users with admin permissions  
 
-    -   You can filter for the list of users with admin permissions  
+-   You can view which accounts are active but belong to users who are no longer part of your organization  
 
-    -   You can view which accounts are active but belong to users who are no longer part of your organization  
-
-    -   You can revoke a user's permission to a specific app (depending on the app) or require a specific user to perform multi-factor authentication
+-   You can revoke a user's permission to a specific app (depending on the app) or require a specific user to perform multi-factor authentication
     
-    -   You can see which accounts are included in each user group  
+-   You can see which accounts are included in each user group  
 
-    -   You can see which apps are accessed by each account and which apps are deleted for specific accounts
+-   You can see which apps are accessed by each account and which apps are deleted for specific accounts
     
-    -   You can also drill down into the user's account and select relevant governance actions, such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also click on **Azure AD account settings** to get easy access to advanced user management features like group management, multi-factor authentication, details about the user's sign ins and the ability to block sign in.
+-   You can also drill down into the user's account and select relevant governance actions, such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also click on **Azure AD account settings** to get easy access to advanced user management features like group management, multi-factor authentication, details about the user's sign ins and the ability to block sign in.
 
 [accounts screen](./media/accounts-page.png)
 
