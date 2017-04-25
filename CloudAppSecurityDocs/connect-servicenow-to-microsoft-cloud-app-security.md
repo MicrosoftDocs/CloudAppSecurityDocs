@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,12 +27,18 @@ ms.suite: ems
 ---
 
 # Connect ServiceNow to Microsoft Cloud App Security
-This section provides instructions for connecting Cloud App Security to your existing ServiceNow account using the app connector API.  
-  
-## How to connect ServiceNow to Cloud App Security  
-  
-> [!NOTE]  
+
+This section provides instructions for connecting Cloud App Security to your existing ServiceNow account using the app connector API. 
+
+ >  [!NOTE]
+>  We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0). 
+For earlier releases, a legacy connection mode is available based on user/password.
+
+ > [!NOTE]  
 >  Cloud App Security supports ServiceNow versions of Eureka, Fiji,  Geneva, Helsinki and Istanbul. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  For more information refer to the [ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+  
+## How to connect ServiceNow to Cloud App Security using OAuth
+  
   
 1.  Log on with an Admin account to your ServiceNow account.  
   
@@ -78,6 +84,36 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 After connecting ServiceNow, you will receive events for 60 days prior to connection.
   
+## Legacy ServiceNow connection using user/password
+
+In order to connect ServiceNow with Cloud App Security, you must have admin-level permissions and make sure the ServiceNow instance supports API access.   
+
+1.  Log on with an Admin account to your ServiceNow account.   
+
+2.  Create a new service account for Cloud App Security and attach the Admin role to the newly created account.   
+
+3.  Make sure the REST API plug-in is turned on.   
+
+    ![servicenow account](./media/servicenow-account.png "servicenow account")   
+
+4.  In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.   
+
+5.  In the ServiceNow row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button and then **ServiceNow**.   
+
+    ![connect servicenow](./media/connect-servicenow.png "connect servicenow")   
+
+6.  In the ServiceNow settings page, on the API tab, add your ServiceNow username, password and instance URL in the appropriate boxes.   
+
+7.  Click **Connect**.   
+
+   ![servicenow update password](./media/servicenow-update-password.png "servicenow update password")   
+
+8.  Make sure the connection succeeded by clicking **Test API**.   
+  
+   Testing may take a couple of minutes. After receiving a success notice, click **Close**.   
+ After connecting ServiceNow, you will receive events for 60 days prior to connection. 
+
+
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
