@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2016
+ms.date: 4/25/2016
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,25 +26,24 @@ ms.suite: ems
 
 ---
 # Accounts
-Cloud App Security gives you visibility into all the accounts from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the accounts associated with the apps. The Accounts page enables you to investigate those accounts, the groups they are members of, their aliases and the apps they are using. 
+Cloud App Security gives you visibility into the accounts from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security reads account information associated with connected apps. The Accounts page enables you to investigate those accounts, permissions, the groups they are members of, their aliases and the apps they are using. In addition – when Cloud App Security detects a new account that was not previously seen in one of the connected apps - for example in activities or in file sharing - the account is added to the accounts list of that app. This enables you to have visibility into the activity of external users interacting with your cloud apps.
 
 
-The **Accounts** log can be filtered to enable you to find specific accounts and to deep dive into different types of accounts, for example, you can filter for all External accounts that have not been accessed since last year. You can create policies based on the accounts and then define what you want to be alerted about and act on. 
+The **Accounts** page can be filtered to enable you to find specific accounts and to deep dive into different types of accounts, for example, you can filter for all External accounts that have not been accessed since last year. 
 
 The **Accounts** page enables you to easily investigate your accounts for issues including the following:  
 
 -   Check if any accounts have been inactive in a particular service for a long time (Maybe you should revoke the license for that user to that service)  
 -   You can filter for the list of users with admin permissions  
 
--   You can view which accounts are active but belong to users who are no longer part of your organization  
+-   You can search for users who are no longer part of your organization but may still have active accounts  
 
--   You can revoke a user's permission to a specific app (depending on the app) or require a specific user to perform multi-factor authentication
+-   You can take governance actions on the accounts such as suspend an app or go to the account settings page. For a full list of governance actions see the [governance log](governance-actions.md).
     
 -   You can see which accounts are included in each user group  
 
 -   You can see which apps are accessed by each account and which apps are deleted for specific accounts
     
--   You can also drill down into the user's account and select relevant governance actions, such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also click on **Azure AD account settings** to get easy access to advanced user management features like group management, multi-factor authentication, details about the user's sign ins and the ability to block sign in.
 
 ![accounts screen](./media/accounts-page.png)
 
@@ -61,7 +60,7 @@ Below is a list of the account filters that can be applied. Most filters support
 
 - **Last seen**: The **last seen** filter enables you to find accounts that are dormant and whose users haven't performed any activities in a while.
 
-- **Organization/Department**: Enables you to filter for members of specific Azure Active Directory or Office 365 organizational groups.
+- **Organization/Department**: Enables you to filter for members of specific organizational groups defined in your connected apps.
 
 - **User group**: Enables you to filter for members of user groups in Cloud App Security - both built-in user groups and imported user groups.
 
