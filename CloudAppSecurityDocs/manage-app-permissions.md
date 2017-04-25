@@ -81,49 +81,12 @@ The icon turns green, and the app is approved for all your connected app users.
 
 ## Query app permissions
 
-### Query in the Advanced view 
-1. In the advanced view, use the **Select a filter** drop-down to narrow your search. Add operators, equals or does not equal to a selected value to complete your query.
-2. Choose the **Add a filter** icon  to add additional filters to further refine your query. The filters are be applied automatically and the apps list is updated accordingly.
-3. Choose the **Remove a filter** icon  next to the filter to remove the filters.
-The filters you can choose from are:
-- App
-Display third-party app or apps with the selected name or names that have been granted access to the connected app.
+You can query app permissions in either the **Basic** view or the **Advanced** view. In the Basic view, select values from one or multiple drop-downs to display the specific apps. In the advanced view, use the **Select a filter** drop-down to narrow your search. Add operators, equals or does not equal to a selected value to complete your query.
 
-- User 
-Display apps that this user(s) authorized.
+- Choose the **Add a filter** icon  to add additional filters to further refine your query. The filters are be applied automatically and the apps list is updated accordingly.
 
-- Permissions 
-Display apps that require the selected permissions.
+- Choose the **Remove a filter** icon  next to the filter to remove the filters.
 
-- App state 
-Display apps based on their state, approved, banned, or undetermined.
-
-- Permission level 
-Display apps based on the selected permission level or levels.
-
-- Community use 
-Display apps based on community use levels, either rare, uncommon, or common.
-
-### Query in the basic view 
-In the basic view, select values from one or multiple drop-downs to display the specific apps. You can select multiple values in the drop-downs. The dropdown menus you can use for querying are: 
-- App 
-Display third-party app or apps with the selected name or names that have been granted access to the connected app.
-
-- User 
-Display apps that this user(s) authorized.
-
-- Permissions 
-Display apps that require the selected permissions.
-
-- App state 
-Display apps based on their state, approved, banned, or undetermined.
-
-- Permission level 
-Display apps based on the selected permission level or levels.
-
-- Community use 
-Display apps based on community use levels, either rare, uncommon, or common.
-The filters are applied automatically and the apps list is updated accordingly. 
 
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
