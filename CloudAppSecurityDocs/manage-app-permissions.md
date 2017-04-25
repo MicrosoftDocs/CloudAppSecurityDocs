@@ -44,7 +44,7 @@ In the Cloud App Security portal, click **Investigate**, and then **App permissi
 The App permissions page provides the following information about each third-party app that was granted permissions:
 
 |Item|What it means|Applies to|
-|-------|----------------|-------|
+|-------|-------|-------|
 |Basic icon in the app query bar  |Select this to switch to query in the basic view.|Office 365, G Suite, Salesforce|
 |Advanced icon in the app query bar  |Select this to switch to query in the Advanced view.|Office 365, G Suite, Salesforce|
 |Open or close all details icon in the app list  |Select this icon to view more or less details about each app.|
