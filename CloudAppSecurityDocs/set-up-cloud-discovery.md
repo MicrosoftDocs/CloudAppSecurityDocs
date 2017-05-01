@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -73,7 +73,7 @@ Cloud Discovery utilizes the data in your traffic logs. The more detailed your l
  
 Cloud Discovery cannot show or analyze attributes that are not included in your logs.
 For example, **Cisco ASA Firewall** standard log format does not contain the **Amount of uploaded bytes per transaction** nor **Username**, and does not contain **Target URL** (but only target IP).
-Therefore, these attributes will be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps we be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6. 
+Therefore, these attributes will not be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps we be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6. 
  
 
 In order to successfully generate a Cloud Discovery report, your traffic logs must meet the following conditions:
@@ -88,7 +88,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Cisco ASA Firewall (For Cisco ASA firewalls, it is necessary to set the information level to 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai – URLs log
+- Cisco Meraki – URLs log
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
