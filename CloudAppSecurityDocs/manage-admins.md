@@ -50,6 +50,7 @@ To add additional admins to Cloud App Security:
       - Accessing and vieweing the App connectors page
       - Accessing and viewing the Governance log 
       - Accessing and viewing the Manage snapshot reports page 
+
 >[!NOTE]
 >Any Security reader who attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
 
