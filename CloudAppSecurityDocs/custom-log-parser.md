@@ -29,12 +29,14 @@ ms.suite: ems
 # Use a custom log parser
 Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery, even if they are from a firewall or device that is not explicitly supported by Cloud App Security. 
 
-The custom parser enables you to export your logs as a CSV file, and then fill in fields in the Cloud App Security portal to define the correlation between the fields and columns in the file and the data needed by Cloud App Security.
+The custom parser enables you to use logs from unsupported firewalls by following this process. 
 
-In order to accurately configure the parser, you need to define the column name for each of the required data attributes.
+
  
 To configure a custom CSV parser:
 1.	Collect logs from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.  Open the logs you want to process in a text editor and review their format.
+
+2. Copy the contents of the log into a CSV reader, such as Excel, and set the data to be delimited according to the delimiter in your data.
   
 2.  In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.  
   
@@ -46,12 +48,16 @@ To configure a custom CSV parser:
 
      ![New snapshot report](./media/custom-log-upload.png)   
 
-5. In the **Custom log format** screen, fill in the fields and click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on Edit.
+5. In the **Custom log format** screen, fill in the fields based on your data to define the correlation between the fields and columns in the file and the data needed by Cloud App Security.
+
+In order to accurately configure the parser, you need to define the column name for each of the required data attributes. 
+
+Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on Edit.
 
     ![custom log parser](./media/custom-log-parser.png) 
 
 5.  **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
-   
+  
 
 6.  Click **Create**.  
 
