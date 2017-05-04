@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/3/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -112,10 +112,7 @@ Each policy is composed of the following parts:
 -   Actions – The policy provides a set of governance actions that can be automatically applied when violations are found.  These are divided into collaboration actions, security actions and investigation actions.
 
 -   Extensions  
-  
-    > [!NOTE]  
-    >  Extensions are only available with the Cloud App Security Technical Preview version.  
-  
+   
     -  Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
   
     -  [Governance actions](governance-actions.md) can be performed via 3rd-party engines for enforcing custom encryption control or other types of file processing (for example, custom water marking).  
