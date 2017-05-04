@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 
 ---
 
-# SIEM integration -PUBLIC PREVIEW- 
+# SIEM integration
     
 You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Cloud App Security and streams them into the SIEM server.
 
@@ -141,6 +141,9 @@ After creating the agent, if you see one of the following **Agent notifications*
 |**Data server connection error**| You can get this error if you are working with a Syslog server over TCP. The SIEM agent cannot connect to your Syslog server.  If you get this error, the agent will stop pulling new activities until it’s fixed, so make sure to follow the remediation steps until the error stops appearing.|1. Make sure you properly defined your Syslog server: In the Cloud App Security UI, edit your SIEM agent as described above, and make sure you wrote the name of the server properly, and set the right port. </br>2. Check connectivity to your Syslog server: Make sure your firewall isn't blocking communication.|
 |**SIEM agent error**|The SIEM agent has been disconnected for more than X hours|Make sure that you didn't change the SIEM configuration in the Cloud App Security portal. Otherwise, this could indicate connectivity issues between Cloud App Security and the computer on which you are running the SIEM agent.|
 |**SIEM agent notification error**|SIEM agent notification forward errors were received from a SIEM agent.|This indicates that you have received errors regarding the connection between the SIEM agent and your SIEM server. Make sure there isn't a firewall blocking your SIEM server or the computer on which you are running the SIEM agent. Also, check that the IP address of the SIEM server was not changed.|
+
+> [!NOTE]
+> This feature is in public preview.
 
 ## See Also  
 [User activity policies](user-activity-policies.md)   

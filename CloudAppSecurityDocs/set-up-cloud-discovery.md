@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/3/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -104,7 +104,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Zscaler
 
 
-If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. 
+If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information see [Use a custom log parser](custom-log-parser.md).
 
 
 Data attributes (according to vendor documentation):

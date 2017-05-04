@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
    
-# Import user groups (Preview)
+# Import user groups
 
 When you connect apps using API connectors, Cloud App Security enables you to import user groups, for example from Office 365 and Azure Active Directory.
 There are two types of user groups: 
