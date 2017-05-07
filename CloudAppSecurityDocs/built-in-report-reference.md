@@ -27,7 +27,11 @@ ms.suite: ems
 ---
 
 # Built-in report reference
-It is recommended that you create custom reports using built-in reports as a starting place, sort of like a template on which to base your custom reports. The following table provides a list of built-in reports and the types of events you might want to use them to monitor.  
+
+CAS provides you with a full list of built-in reports out of the box that enable you to draw insights and monitor the way people use the cloud. you can use the filters in each report to customize the report and export them for your convenience.
+
+
+The following table provides a list of built-in reports and the types of events you might want to use them to monitor.  
   
 ## Built-in report list  
   

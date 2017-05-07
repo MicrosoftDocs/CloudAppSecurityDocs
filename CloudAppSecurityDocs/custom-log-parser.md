@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/4/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,11 +34,7 @@ The custom parser enables you to use logs from unsupported firewalls by followin
 
  
 To configure a custom CSV parser:
-1.	Collect logs from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.  Open the logs you want to process in a text editor and review their format.
-
-2. Copy the contents of the log into a CSV reader, such as Excel, and set the data to be delimited according to the delimiter in your data.
-  
-2.  In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.  
+1.	In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.  
   
     ![Create new snapshot report](./media/create-new-snapshot-report.png)
      
@@ -48,15 +44,23 @@ To configure a custom CSV parser:
 
      ![New snapshot report](./media/custom-log-upload.png)   
 
-5. In the **Custom log format** screen, fill in the fields based on your data to define the correlation between the fields and columns in the file and the data needed by Cloud App Security.
+5. Collect logs from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization. 
 
-In order to accurately configure the parser, you need to define the column name for each of the required data attributes. 
+6. Open the logs you want to process in a text editor and review their format, making sure that the column names in the log correspond to the fields in the **Custom log format** screen.
 
-Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on Edit.
+  ![custom log parser](./media/log-data.png) 
 
-    ![custom log parser](./media/custom-log-parser.png) 
+7. Then, fill in the fields based on your data to delineate which columns in the data correlate to specific fields in Cloud App Security. You may have to modify column names in your log file to correlate properly.
+  
+   > [!NOTE]
+    > The fields are case-sensitive. Make sure you spell and type the names of the columns identically in Cloud App Security and in the log file. Also, make sure that the date format you choose is identical.
 
-5.  **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
+   ![custom log parser](./media/custom-log-parser.png) 
+
+
+7. Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on Edit.
+
+5. Under **Choose the traffic logs** select the log file you modified and upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
   
 
 6.  Click **Create**.  
