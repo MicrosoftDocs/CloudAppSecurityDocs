@@ -94,7 +94,7 @@ To set up your preferences as an admin of Cloud App Security, click your name in
   
      ![backup console](./media/backup-console.png "backup console")  
   
-##  <a name="Adallom_mailsettings"></a> Personalize your experience  
+##  <a name="mailsettings"></a> Personalize your experience  
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
   
 ![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  

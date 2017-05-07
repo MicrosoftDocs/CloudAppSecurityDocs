@@ -108,7 +108,7 @@ Required task: Create policies
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
 
-### Step 4. [Personalize your experience](general-setup.md#Adallom_mailsettings).
+### Step 4. [Personalize your experience](general-setup.md#mailsettings).
 Recommended task: Add your organization details
 
 **To enter email settings**

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/3/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -83,15 +83,19 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 4.  The log file is valid and includes outbound traffic information.
  
 ## Supported firewalls and proxies
+
+- Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access log (W3C)
 - Check Point
 - Cisco ASA Firewall (For Cisco ASA firewalls, it is necessary to set the information level to 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – URLs log
+- Clavister NGFW (Syslog)
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
@@ -111,17 +115,19 @@ Data attributes (according to vendor documentation):
 
 |Data source|Target App URL|Target App IP|Username|Origin IP|Total traffic|Uploaded bytes|
 |----|----|----|-----|----|----|----|
+|Barracuda|**Yes**|**Yes**|**Yes**|**Yes**|No|No|
 |Blue Coat|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Checkpoint|No|**Yes**|No|**Yes**|No|No|
 |Cisco ASA|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco FWSM|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco Ironport WSA|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-|Cisco Scansfe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
+|Cisco Meraki|**Yes**|**Yes**|No|**Yes**|No|No||Cisco Scansafe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
+|Clavister NGFW (Syslog)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Dell SonicWall|**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Fortigate|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
-|Juniper SRX|No|**Yes**|No|**Yes**\*|**Yes**|**Yes**|
+|Juniper SRX|No|**Yes**|No|**Yes**\**|**Yes**|**Yes**|
+|Juniper SSG|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |McAfee SWG|**Yes**|No|No|**Yes**|**Yes**|**Yes**|
-|Meraki|**Yes**|**Yes**|No|**Yes**|No|No|
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**\*|**Yes**|**Yes**|
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|
