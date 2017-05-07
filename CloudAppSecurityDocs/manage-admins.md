@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/3/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,7 +38,9 @@ To add additional admins to Cloud App Security:
   
       
 3. Next, click the drop down to set what type of access the admin will have: 
-  - **Full access**: Admins with full access will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions. By default, all Azure Active Directory and Office 365 Global admins and Security admins have full access.
+  - **Full access**: Admins with full access will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions. 
+  
+  By default, all Azure Active Directory and Office 365 Global admins and Security admins have full access.
   - **Security reader**: The Security reader will have read-only permissions and can manage alerts. The Security reader is restricted from performing the following:
       - Create policies or edit and change existing ones 
       - Performing any governance actions 
@@ -51,15 +53,15 @@ To add additional admins to Cloud App Security:
       - Accessing and viewing the Governance log 
       - Accessing and viewing the Manage snapshot reports page 
 
->[!NOTE]
->Any Security reader who attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
-
+     >[!NOTE]
+      >Any **Security reader** who attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
 
 4. Click **Close**.  
->[!NOTE]
->Any non-invited user (with a proper role - Global, Security, Compliance Admin), can invite other users to Cloud App Security.
+
+   >[!NOTE]
+    >Any non-invited user (with a proper role - Global, Security, Compliance Admin), can invite other users to Cloud App Security.
   
-![manage admin access](./media/manage-admin-access.png "manage admin access")  
+ ![manage admin access](./media/manage-admin-access.png "manage admin access")  
   
 ##  <a name="Adminsettings"></a> Customize your admin settings  
 To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following:  
@@ -70,29 +72,29 @@ To set up your preferences as an admin of Cloud App Security, click your name in
   
 2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity for which alerts and violations you want to receive emails - the severity is set per policy, so when violations are triggered, you will receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails will be sent to the alias associated with the administrator user account you used to log into Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
   
-> [!NOTE] 
-> The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
+   > [!NOTE] 
+   > The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
   
   ![notification settings](./media/notification-settings.png "notification settings")  
   
 3. When you are done, click **Save**.  
 
 
-## Region and Language settings**  
+## Region and Language settings  
   
-     Set the default **Language** to be used for the portal. To modify the language for a specific administrator, go to **User settings** > **Account settings**.  
+1. Set the default **Language** to be used for the portal. To modify the language for a specific administrator, go to **User settings** > **Account settings**.  
   
-     ![timezone language](./media/timezone-language.png "timezone language")  
+   ![timezone language](./media/timezone-language.png "timezone language")  
   
-     Set the **Master time zone**. Cloud App Security continuously analyzes and aggregates your data. By default, the time zone for the Cloud App Security portal is set to UTC. It is important to set the master time zone, which enables Cloud App Security to accurately date incidents in your system. For example, in the Activity chart, the data is organized by date - these dates are impacted by the time zone of your system, so if you did not modify the default time zone, your data will be organized into 24 hour days according to the UTC time zone, which may skew your data by many hours.  
+ 2. Set the **Master time zone**. Cloud App Security continuously analyzes and aggregates your data. By default, the time zone for the Cloud App Security portal is set to UTC. It is important to set the master time zone, which enables Cloud App Security to accurately date incidents in your system. For example, in the Activity chart, the data is organized by date - these dates are impacted by the time zone of your system, so if you did not modify the default time zone, your data will be organized into 24 hour days according to the UTC time zone, which may skew your data by many hours.  
   
      ![master time zone](./media/master-time-zone.png "master time zone")  
   
 ## Back up portal settings
 
-  If at any point you want to back up your portal settings, this screen enables you to do that. Click Export portal settings to create a json file of all your portal settings, including policy rules, user groups and IP address ranges.  
+If at any point you want to back up your portal settings, this screen enables you to do that. Click Export portal settings to create a json file of all your portal settings, including policy rules, user groups and IP address ranges.  
   
-     ![backup console](./media/backup-console.png "backup console")  
+![backup console](./media/backup-console.png "backup console")  
   
 ##  <a name="mailsettings"></a> Personalize your experience  
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
