@@ -4,7 +4,6 @@
 # Deploy
 ## [Getting started](getting-started-with-cloud-app-security.md)
 ## [Customize the portal](general-setup.md)
-### [Manage admin access](manage-admins.md)
 ### [User groups](user-groups.md)
 ### [IP tags and ranges](ip-tags.md)
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
