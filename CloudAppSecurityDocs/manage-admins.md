@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 5/9/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,11 +28,11 @@ ms.suite: ems
 
 ## Managing admin access
 
-Cloud App Security supports the following admin roles:
+Cloud App Security supports Role based access control. By default, the following Office 365 and Azure AD admin roles have access to Cloud App Security:
 
-- Global administrator: Global admins have **Full access**: Admins with full access will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions.
-- Security administrator: Security admins have **Full access**: Admins with full access will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions.
-- Security reader:The Security reader  has read-only permissions and can manage alerts. The Security reader is restricted from performing the following:
+- Global administrator and Security administrator: Admins will **Full access** will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions.
+
+- Security reader: Has read-only permissions and can manage alerts. The Security reader is restricted from performing the following:
       - Create policies or edit and change existing ones 
       - Performing any governance actions 
       - Uploading discovery logs
@@ -44,31 +44,31 @@ Cloud App Security supports the following admin roles:
       - Accessing and viewing the Governance log 
       - Accessing and viewing the Manage snapshot reports page 
 
-Admins with these roles in Azure Active Directory or Office 365 will have the same roles in Cloud App Security. For more information on administrator roles see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
+For more information see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
-To add additional admins to Cloud App Security:
+You can also add additional admins to Cloud App Security, without adding users to Azure Active Directory administrative roles, by performing the following:
 
 1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. 
 
 2. Add the admins who should have access to Cloud App Security.
   
       
-3. Next, click the drop down to set what type of access the admin will have, **Full access** or **Security reader**.
+3. Next, click the drop down to set what type of access the admin will have, **Full access** or **Read only and manage alerts**.
 
      >[!NOTE]
-      >Any **Security reader** who attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
+      >Any admin whose access is limited to **Read only and manage alerts** who attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
+
+   ![manage admin access](./media/manage-admin-access.png "manage admin access")  
 
 4. Click **Close**.  
 
    >[!NOTE]
-    >Any non-invited user (with a proper role - Global, Security, Compliance Admin), can invite other users to Cloud App Security.
+    >Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
   
- ![manage admin access](./media/manage-admin-access.png "manage admin access")  
-
 **To override admin permissions:**
 
-If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user a role.
-For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have Full access in Cloud App Security, you can add her manually to Cloud App Security and assign her Full access to override her role and allow her the desired permissions in Cloud App Security. 
+If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions.
+For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the desired permissions in Cloud App Security. 
 
 
 ##  <a name="Adminsettings"></a> Customize your admin settings  
