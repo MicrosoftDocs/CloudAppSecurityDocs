@@ -71,7 +71,7 @@ If you want to override an administrator's permission from Azure Active Director
 For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the desired permissions in Cloud App Security. 
 
 
-##  <a name="Adminsettings"></a> Customize your admin settings  
+##  <a name="Adminsettings"></a> Customize settings for your admins  
 To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following:  
   
 1.  Click **Account settings**. Here you can customize the portal language for your own viewing. You can set it to display the portal in either the default language or you can set a different language for yourself.  
@@ -88,7 +88,11 @@ To set up your preferences as an admin of Cloud App Security, click your name in
 3. When you are done, click **Save**.  
 
 
-## Region and Language settings  
+## Customizable admin settings
+
+The following settings can be used to customize the admin experience in the Cloud App Security portal.
+
+### Region and Language settings  
   
 1. Set the default **Language** to be used for the portal. To modify the language for a specific administrator, go to **User settings** > **Account settings**.  
   
@@ -98,13 +102,8 @@ To set up your preferences as an admin of Cloud App Security, click your name in
   
      ![master time zone](./media/master-time-zone.png "master time zone")  
   
-## Back up portal settings
 
-If at any point you want to back up your portal settings, this screen enables you to do that. Click Export portal settings to create a json file of all your portal settings, including policy rules, user groups and IP address ranges.  
-  
-![backup console](./media/backup-console.png "backup console")  
-  
-##  <a name="mailsettings"></a> Personalize your experience  
+##  <a name="mailsettings"></a> Personalize email notifications  
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
   
 ![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
@@ -193,7 +192,8 @@ Configure the following:
      The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
 ## Single sign-on  
-Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
+
+Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on for your admins, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
 
 
 > [!NOTE] 
