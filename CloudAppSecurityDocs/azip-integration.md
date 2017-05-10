@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -147,7 +147,7 @@ After Cloud App Security is connected to your Office 365 service, you will be ab
 5. You can revert this action at any time in the **Governance log** by clicking the **Revert** button at the end of the row of the previously taken Protect action. 
 
 
-
+For more information about how Cloud App Security and Azure Information Protection work together, see [Protect data against user mistakes](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)
 
  
 ## See Also  
