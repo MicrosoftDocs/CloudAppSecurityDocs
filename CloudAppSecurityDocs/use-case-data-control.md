@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/9/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -145,6 +145,10 @@ After you've validated it and fine-tuned the policy to remove possible false pos
 2. After it's fully validated, you can set it to perform automatic governance actions. For example, in SharePoint and OneDrive you can **Put in user quarantine**, and for G Suite and Box you can **Remove public access**.
  
  ![automatic governance action remove public access](./media/gov-action-public-access.png)
+
+
+For more information about Cloud App Security working with Azure Information Protection, see [Protect against user mistakes](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
+
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
