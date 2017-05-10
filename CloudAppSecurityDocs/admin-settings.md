@@ -35,10 +35,10 @@ To set up your preferences as an admin of Cloud App Security, click your name in
   
 2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity for which alerts and violations you want to receive emails - the severity is set per policy, so when violations are triggered, you will receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails will be sent to the alias associated with the administrator user account you used to log into Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
   
-> [!NOTE] 
-> The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
+    > [!NOTE] 
+    > The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
   
-  ![notification settings](./media/notification-settings.png "notification settings")  
+    ![notification settings](./media/notification-settings.png "notification settings")  
   
 3. When you are done, click **Save**.  
   
