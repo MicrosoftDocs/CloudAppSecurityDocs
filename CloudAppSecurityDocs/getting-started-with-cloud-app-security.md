@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -108,7 +108,7 @@ Required task: Create policies
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
 
-### Step 4. [Personalize your experience](general-setup.md#mailsettings).
+### Step 4. [Personalize your experience](mail-settings.md).
 Recommended task: Add your organization details
 
 **To enter email settings**
@@ -136,7 +136,7 @@ Some features work best when they are customized to your needs.
 Provide a better experience for your users with your own email templates, decide what notifications you receive, and customize your risk score metric to fit your organization’s preferences.
 
 
-### Step 5. [Organize the data according to your needs](general-setup.md#IPtagsandRanges).
+### Step 5. [Organize the data according to your needs](ip-tags.md).
 Recommended task: Configure important settings
 
 **To create IP address tags**
