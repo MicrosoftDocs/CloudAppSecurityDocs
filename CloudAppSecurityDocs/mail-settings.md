@@ -53,9 +53,13 @@ Configure the following:
          %%title%% - a placeholder for the title of the email, as set by the policy.  
 
          %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
-  
-    
-     The following is a sample email template: 
+     
+3.  Click **Upload a template...** and select the file you created. 
+
+4. Then, click **Send a test email** to send yourself a test email to see an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  The following is a sample email template: 
+
+
+
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html>  
@@ -108,11 +112,9 @@ Configure the following:
           </table>  
             </body>  
           </html>  
-    ```
+   ```
   
-3.  Click **Upload a template...** and select the file you created. 
 
-4. Then, click **Send a test email** to send yourself a test email to see an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
   
 
