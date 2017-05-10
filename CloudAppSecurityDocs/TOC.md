@@ -3,8 +3,10 @@
 ## [Release notes](release-notes.md)
 # Deploy
 ## [Getting started](getting-started-with-cloud-app-security.md)
-## [Customize the portal](general-setup.md)
+## [Basic set up](general-setup.md)
 ### [Manage admins](manage-admins.md)
+#### [Admin settings](admin-settings.md)
+### [Mail settings](mail-settings.md)
 ### [User groups](user-groups.md)
 ### [IP tags and ranges](ip-tags.md)
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)

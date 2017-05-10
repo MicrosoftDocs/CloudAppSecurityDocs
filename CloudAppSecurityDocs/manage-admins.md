@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/10/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -71,135 +71,13 @@ If you want to override an administrator's permission from Azure Active Director
 For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the desired permissions in Cloud App Security. 
 
 
-##  <a name="Adminsettings"></a> Customize settings for your admins  
-To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following:  
-  
-1.  Click **Account settings**. Here you can customize the portal language for your own viewing. You can set it to display the portal in either the default language or you can set a different language for yourself.  
-  
-     ![custom user settings](./media/custom-user-settings.png "custom user settings")  
-  
-2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity for which alerts and violations you want to receive emails - the severity is set per policy, so when violations are triggered, you will receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails will be sent to the alias associated with the administrator user account you used to log into Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
-  
-   > [!NOTE] 
-   > The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
-  
-  ![notification settings](./media/notification-settings.png "notification settings")  
-  
-3. When you are done, click **Save**.  
+To add additional admins to Cloud App Security:
+1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. 
+
+2. Add the admins who should have access to Cloud App Security, select their access level and click **Close**.
 
 
-## Customizable admin settings
 
-The following settings can be used to customize the admin experience in the Cloud App Security portal.
-
-### Region and Language settings  
-  
-1. Set the default **Language** to be used for the portal. To modify the language for a specific administrator, go to **User settings** > **Account settings**.  
-  
-   ![timezone language](./media/timezone-language.png "timezone language")  
-  
-2. Set the **Master time zone**. Cloud App Security continuously analyzes and aggregates your data. By default, the time zone for the Cloud App Security portal is set to UTC. It is important to set the master time zone, which enables Cloud App Security to accurately date incidents in your system. For example, in the Activity chart, the data is organized by date - these dates are impacted by the time zone of your system, so if you did not modify the default time zone, your data will be organized into 24 hour days according to the UTC time zone, which may skew your data by many hours.  
-  
-     ![master time zone](./media/master-time-zone.png "master time zone")  
-  
-
-##  <a name="mailsettings"></a> Personalize email notifications  
-In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
-  
-![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
-  
-Configure the following:  
-  
-1.  **From email address**: The email account you want to use to send the notification.  
-  
-     **From display name**: The name you want to be displayed in the **From** field of the email message.  
-  
-     **Reply-to email address**: The email account to be used for replies to the message.  
-  
-     ![mail settings config](./media/mail-settings-config.png "mail settings config")  
-  
-2.  You can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
-  
-    -   All template CSS should be inline in the template.  
-  
-    -   The template should have three un-editable placeholders:  
-  
-         %%logo%% - a URL to your company's logo that was uploaded in the General setting page  
-  
-         %%title%% - a placeholder for the title of the email, as set by the policy.  
-  
-         %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
-  
-     The following is a sample email template: 
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html>  
-       <head>  
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-          </head>  
-          <body class="end-user">  
-          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
-            <tr>  
-              <td align="center">  
-                <!--[if (gte mso 9)|(IE)]>  
-                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
-                  <tr>  
-                    <td>  
-                <![endif]-->  
-                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
-                  <tr>  
-                    <td align="right" id="header-table-cell">  
-                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
-                    </td>  
-                  </tr>  
-                  <tr>  
-                    <td style="padding-top: 58px;" align="center" valign="top">  
-                      <table width="100%" cellpadding="12">  
-                        <tr>  
-                          <td align="center" class="round-title">  
-                            %%title%%  
-                          </td>  
-                        </tr>  
-                      </table>  
-                    </td>  
-                  </tr>  
-                  <tr>  
-                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
-                        %%content%%  
-                    </td>  
-                  </tr>  
-                  <tr>  
-                    <td class="last-row"></td>  
-                  </tr>  
-                </table>  
-                <!--[if (gte mso 9)|(IE)]>  
-                </td>  
-                </tr>  
-                </table>  
-                  <![endif]-->  
-              </td>  
-              </tr>  
-          </table>  
-            </body>  
-          </html>  
-    ```
-
-  
-3.  Click **Upload a template...** and select the file you created.  
-  
-     Then, click **Send a test email** to send yourself a test email to see an example of the template you created.  
-     The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
-  
-## Single sign-on  
-
-Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on for your admins, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
-
-
-> [!NOTE] 
-> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
-    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
-    
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
