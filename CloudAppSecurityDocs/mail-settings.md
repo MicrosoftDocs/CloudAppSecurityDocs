@@ -53,9 +53,10 @@ Configure the following:
          %%title%% - a placeholder for the title of the email, as set by the policy.  
 
          %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
-  
-    
+     
      The following is a sample email template: 
+
+     
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html>  
@@ -107,8 +108,7 @@ Configure the following:
               </tr>  
           </table>  
             </body>  
-          </html>  
-    ```
+          </html>   ```
   
 3.  Click **Upload a template...** and select the file you created. 
 
