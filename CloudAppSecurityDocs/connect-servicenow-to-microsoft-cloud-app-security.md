@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -72,7 +72,7 @@ For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) 
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-8.  In the popup, add your ServiceNow username, password, instance URL, Client ID and Client secret in the appropriate boxes.  
+8.  In the popup, add your ServiceNow user ID, password, instance URL, Client ID and Client secret in the appropriate boxes.  
   
 9.  Click **Connect**.  
   
@@ -102,7 +102,7 @@ In order to connect ServiceNow with Cloud App Security, you must have admin-leve
 
     ![connect servicenow](./media/connect-servicenow.png "connect servicenow")   
 
-6.  In the ServiceNow settings page, on the API tab, add your ServiceNow username, password and instance URL in the appropriate boxes.   
+6.  In the ServiceNow settings page, on the API tab, add your ServiceNow user ID, password and instance URL in the appropriate boxes.   
 
 7.  Click **Connect**.   
 

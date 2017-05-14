@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/3/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -72,12 +72,16 @@ To create a new file policy, follow this procedure:
   
 3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
-4.  Within **Risk type**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type.  The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.  
+3. Give your policy a **Policy severity**. If you have set Cloud App Security to send you notifications on policy matches for a specific policy severity level, this will be used to determine whether this policy's matches will trigger a notification.
+
+4.  Within **Category**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type.  The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.  
   
 5.  To set which discovered apps will trigger this policy, **Create a filter for the files this policy will act on**. Narrow down the policy filters until you reach the most accurate set of files you wish to act upon. Be as restrictive as possible in order to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the “External” filter etc.  
 > [!NOTE] 
 > When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe. If you search for **malware.exe** then you will find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”. **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt.  
-6.  For Box, SharePoint, Dropbox, OneDrive, you can enforce your file policy over all files on the app or on specific folders. Under **Apply to**, select **selected folders** or **all files excluding selected folders**, you will be redirected to log on to the cloud app, and then add the relevant folders.  
+6.   Under the first **Apply to** filter, select **selected folders** or **all files excluding selected folders** for Box, SharePoint, Dropbox, OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You will be redirected to log on to the cloud app, and then add the relevant folders.  
+
+6. Under the second **Apply to** filter, select either **all file owners**, **file owners from selected user groups** or **all file owners excluding selected groups** and then select the relevant user groups to determine which users and groups should be included in the policy.
   
 7.  Select the **Content inspection method**. The built-in DLP allows you to filter files by their content. In order to scan files  for content, next select **Built-in DLP**. Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions, either as a substring or a [regular expression](working-with-the-regex-engine.md) of your own.  
     In addition, you can specify a regular expression to exclude a file from the results. This is highly useful if you have an inner classification keyword standard that you want to exclude from the policy.  
@@ -86,15 +90,9 @@ To create a new file policy, follow this procedure:
   
 8.  Choose the **Governance** actions you want Cloud App Security to take when a match is detected.  
   
-9. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters or change the automated actions. The policy is automatically enabled upon creation and will start scanning your cloud files immediately.  
+9. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters or change the automated actions. The policy is automatically enabled upon creation and will start scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It is recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button in the Filters section.  
   
-> [!NOTE]  
->  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files.  
-> It is recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better.  
->   
->  For guidance, you can use the **Edit and preview results** button in the Filters section.  
-  
- ![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+   ![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
   
 10. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the Matching now files for the policy. Click the **History** tab to see a history back to up to 6 months of files that matched the policy.     
   

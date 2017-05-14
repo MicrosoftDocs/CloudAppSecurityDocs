@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -125,7 +125,7 @@ Data attributes (according to vendor documentation):
 |Clavister NGFW (Syslog)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Dell SonicWall|**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Fortigate|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
-|Juniper SRX|No|**Yes**|No|**Yes**\**|**Yes**|**Yes**|
+|Juniper SRX|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Juniper SSG|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |McAfee SWG|**Yes**|No|No|**Yes**|**Yes**|**Yes**|
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
