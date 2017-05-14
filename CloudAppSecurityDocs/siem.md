@@ -33,30 +33,17 @@ You can now integrate Cloud App Security with your SIEM server to enable central
 
 When you first integrate your SIEM with Cloud App Security, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts (based on the filter you select) from then on. Additionally, if you disable this feature for an extended period, when you enable it again it will forward the past two days of alerts and activities and then all alerts and activities from then on.
 
-## SIEM integration architecture
-
-The SIEM agent is deployed in your organization’s network. When deployed and configured, it polls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
-The traffic is then sent over an encrypted HTTPS channel on port 443.
-
-Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM using the network configurations you provided during the setup (TCP or UDP with a custom port). 
-
-![SIEM integration architecture](./media/siem-architecture.png)
-
-## Sample SIEM logs
-
-The logs provided to your SIEM from Cloud App Security are CEF over Syslog. The following are sample logs:
-
-## How to integrate
-
 Integrating with your SIEM is accomplished in three steps:
 1. Set it up in the Cloud App Security portal. 
 2. Download the JAR file and run it on your server.
 3. Validate that the SIEM agent is working.
 
-### Prerequisites
+## Prerequisites
 
 - A standard Windows or Linux server (can be a virtual machine).
 - The server must be running Java 8; earlier versions are not supported.
+
+## Integrating with your SIEM
 
 ### Step 1: Set it up in the Cloud App Security portal
 
