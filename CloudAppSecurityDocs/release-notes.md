@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,43 @@ ms.suite: ems
 ---
 
 # Release notes
+
+
+## Cloud App Security release 96
+Released May 8, 2017
+
+New features:
+-	Continuing the gradual roll out of the Security Reader permission which enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Azure Active Directory and Office 365 Global admins and Security admins have full permissions in the portal, and all Security readers in Azure Active Directory and Office 365 will have read-only access in Cloud App Security. For more information see [Managing admin permissions](manage-admins.md).
+-	Completed roll out of Cloud Discovery support for user-defined log parsers for CSV-based logs. Cloud App Security enables you to configure a parser for your previously unsupported appliances by providing you with the tools to delineate which columns correlate to specific data. For more information see [Custom log parser](custom-log-parser.md).
+Improvements:
+-	Cloud Discovery now supports Juniper SSG appliances.
+-	Cloud Discovery support for Cisco ASA logs has been improved for better visibility.
+-	You can now more easily run bulk actions and select multiple records in Cloud App Security portal tables: the page length has been increased to improve bulk operations.
+-	The **Outbound sharing by domain**, and **Owners of shared files** built-in reports can now be run for Salesforce data.
+-	We are starting rollout of additional Salesforce activities enabling you to track interesting information that was extracted from the activity data. These activities include viewing and editing accounts, leads, opportunities and various other interesting Salesforce objects.
+-	New activities were added for Exchange to enable you to monitor which permissions were granted for user mailboxes or mailbox folders. These activities include:
+    -	Add recipient permissions
+    -	Remove recipient permissions
+    -	Add mailbox folder permissions
+    -	Remove mailbox folder permissions
+    -	Set mailbox folder permissions
+
+    For example, you can now monitor users who were granted **SendAs** permissions to other users’ mailboxes and as a result can now send emails in their name.
+
+
+## Cloud App Security release 95 (in roll out)
+Released April 24, 2017
+
+**Updates**
+- The **Accounts** page has been updated with improvements that make detecting risks easier. You can now more easily filter for internal and external accounts, see at a glance whether a user has admin permissions and you can perform actions on each account per-app simply (such as remove permissions, remove user’s collaborations, suspend user). In addition, imported [user groups](user-groups.md) for each account will be displayed. 
+
+- For Microsoft work accounts (Office 365 and Azure Active Directory), Cloud App Security groups different user identifiers such as proxy addresses, aliases, SID and more under a single account. All aliases related to an account will appear under the primary email address. Based on the list of user identifiers, for activities whose actor is a user identifier, the actor will be displayed as the primary user name UPN (User Principal Name). Based on the UPN, groups will be assigned and policies applied. This will improve investigation of activities and fuse all related activities to the same session for anomalies and group based policies. This feature will be gradually rolled out over the next month.
+
+- The Robot tag was added as a possible risk factor in the Browser Use built-in report. Now, in addition to browser use being tagged as outdated, you can see when browser use was performed by a robot. Learn more about the [built-in reports](built-in-report-reference.md).
+
+- When creating a content inspection file policy, you can now set the filter to include only files with at least 50 matches.
+
+
 
 ## Cloud App Security release 94
 Released April 2, 2017

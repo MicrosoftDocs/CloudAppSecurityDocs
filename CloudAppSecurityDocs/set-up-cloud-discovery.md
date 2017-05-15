@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -73,7 +73,7 @@ Cloud Discovery utilizes the data in your traffic logs. The more detailed your l
  
 Cloud Discovery cannot show or analyze attributes that are not included in your logs.
 For example, **Cisco ASA Firewall** standard log format does not contain the **Amount of uploaded bytes per transaction** nor **Username**, and does not contain **Target URL** (but only target IP).
-Therefore, these attributes will be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps we be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6. 
+Therefore, these attributes will not be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps we be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6. 
  
 
 In order to successfully generate a Cloud Discovery report, your traffic logs must meet the following conditions:
@@ -83,15 +83,19 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 4.  The log file is valid and includes outbound traffic information.
  
 ## Supported firewalls and proxies
+
+- Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access log (W3C)
 - Check Point
 - Cisco ASA Firewall (For Cisco ASA firewalls, it is necessary to set the information level to 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai – URLs log
+- Cisco Meraki – URLs log
+- Clavister NGFW (Syslog)
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
@@ -104,24 +108,26 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Zscaler
 
 
-If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. 
+If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information see [Use a custom log parser](custom-log-parser.md).
 
 
 Data attributes (according to vendor documentation):
 
 |Data source|Target App URL|Target App IP|Username|Origin IP|Total traffic|Uploaded bytes|
 |----|----|----|-----|----|----|----|
+|Barracuda|**Yes**|**Yes**|**Yes**|**Yes**|No|No|
 |Blue Coat|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Checkpoint|No|**Yes**|No|**Yes**|No|No|
 |Cisco ASA|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco FWSM|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco Ironport WSA|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-|Cisco Scansfe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
+|Cisco Meraki|**Yes**|**Yes**|No|**Yes**|No|No||Cisco Scansafe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
+|Clavister NGFW (Syslog)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Dell SonicWall|**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Fortigate|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
-|Juniper SRX|No|**Yes**|No|**Yes**\*|**Yes**|**Yes**|
+|Juniper SRX|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
+|Juniper SSG|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |McAfee SWG|**Yes**|No|No|**Yes**|**Yes**|**Yes**|
-|Meraki|**Yes**|**Yes**|No|**Yes**|No|No|
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**\*|**Yes**|**Yes**|
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|

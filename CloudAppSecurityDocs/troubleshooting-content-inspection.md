@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,14 +30,14 @@ ms.suite: ems
 |Content inspection status|Description|
 |----|----|
 |Completed|The content inspection completed successfully.|
-|Not applicable|Content inspection was not applicable for this file. This can be because no policy requires content inspection of this file or because the file type is not supported.|
+|Not applicable|Content inspection was not applicable for this file. This might be because no policy requires content inspection of this file or because the file type is not supported.|
 |Pending|The file is currently in the content inspection queue.|
 |Failed: Download error|Cloud App Security could not download the file for inspection.|
 |Failed: File is encrypted|The file could not be decrypted.|
 |Failed: File is corrupted|The file is corrupted in some way and could not be inspected.|
 |Failed: Internal error|Something undetermined went wrong when trying to inspect the file.|
 |Failed: External DLP error|Something in your external DLP went wrong causing Cloud App Security to fail inspecting the content.|
-|Failed: File size exceeded|The file limit varies depending on the file size and number of characters.|
+|Failed: File size exceeded|The file limit varies depending on the file size and the number of characters.|
 |Failed: File access denied|The file is external to your cloud and could not be accessed by Cloud App Security.|
 |Failed: File was deleted|The file no longer exists in your cloud and could not be inspected.|
 |Failed: Unsupported file type|Cloud App Security cannot perform content inspection on this file type. This may be because the file type is not supported or because the file is not actually the in the format of the expected file type.|
