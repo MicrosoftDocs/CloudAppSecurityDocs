@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -33,12 +33,38 @@ You can now integrate Cloud App Security with your SIEM server to enable central
 
 When you first integrate your SIEM with Cloud App Security, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts (based on the filter you select) from then on. Additionally, if you disable this feature for an extended period, when you enable it again it will forward the past two days of alerts and activities and then all alerts and activities from then on.
 
+## SIEM integration architecture
+
+The SIEM agent is deployed in your organization’s network. When deployed and configured, it polls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
+The traffic is then sent over an encrypted HTTPS channel on port 443.
+
+Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM using the network configurations you provided during the setup (TCP or UDP with a custom port). 
+
+![SIEM integration architecture](./media/siem-architecture.png)
+
+## Sample SIEM logs
+
+The logs provided to your SIEM from Cloud App Security are CEF over Syslog. In the following sample logs you are able to see the type of event typically sent by Cloud App Security to your SIEM server. In these you can see when the alert was triggered, the **type of event**, the **policy** that was breached, the **user** who triggered the event, the **app** the user was using to create the breach, and the **URL** the alert is coming from:
+
+Sample activity log: 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
+
+
+
+Sample alerts log: 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## How to integrate
+
 Integrating with your SIEM is accomplished in three steps:
 1. Set it up in the Cloud App Security portal. 
 2. Download the JAR file and run it on your server.
 3. Validate that the SIEM agent is working.
 
-## Prerequisites
+### Prerequisites
 
 - A standard Windows or Linux server (can be a virtual machine).
 - The server must be running Java 8; earlier versions are not supported.
