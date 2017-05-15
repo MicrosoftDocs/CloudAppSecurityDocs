@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,7 @@ ms.suite: ems
 # Troubleshooting Cloud Discovery
 ## Log parsing errors
 
-You can track the processing of Cloud Discovery logs using the governance log. This guide provides resolution actions to be taken for each error that can be displayed there.
+You can track the processing of Cloud Discovery logs using the governance log. This article provides resolution actions to be taken for each error that can be displayed there.
 
 ### Governance log errors
 |ERROR|DESCRIPTION|RESOLUTION|
@@ -39,7 +39,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 |The log format does not match|The log format you uploaded does not match the expected log format for this data source.|1. Verify that the log is not corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
 |Transactions are more than 90 days old|All transaction are more than 90 days old and therefore are being ignored.|Export a new log with recent events and re-upload it.|
 |No transactions to cataloged cloud apps|No transaction to any recognized cloud apps are found in the log.|Verify that the log contains outbound traffic information.|
-|Unsupported log type|When you select **Data source = Other (unsupported)**, the log is not parsed. Instead, it is sent for review to the Cloud App Security technical team.|The Cloud App Security technical team builds a dedicated parser per each data source. Most popular data sources are [already supported](set-up-cloud-discovery.md). Each upload of an unsupported data source is reviewed and added to the pipeline for new data source parsers. New parser notifications are published as part of the Cloud App Security release notes.|
+|Unsupported log type|When you select **Data source = Other (unsupported)**, the log is not parsed. Instead, it is sent for review to the Cloud App Security technical team.|The Cloud App Security technical team builds a dedicated parser per each data source. Most popular data sources are [already supported](set-up-cloud-discovery.md). Each upload of an unsupported data source is reviewed and added to the pipeline for new data source parsers. New parser notifications are published as part of the Cloud App Security [release notes](release-notes.md).|
 ## Log collector errors
 
 |ISSUE|RESOLUTION|

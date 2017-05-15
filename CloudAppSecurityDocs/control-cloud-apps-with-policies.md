@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -147,7 +147,20 @@ To create a policy based on investigation results, perform the following:
 >  [Data protection policies](data-protection-policies.md)  
 >   
 >  [Cloud Discovery policies](cloud-discovery-policies.md)  
+
   
+### Add automated actions to respond and remediate risks automatically
+
+For a list of available governance actions per app, see the [Governing connected apps](governance-actions.md).
+
+You can also set the policy to send you an alert by email or text message when matches are detected. 
+
+To set your notification preferences, got to [Customize the portal](general-setup.md) 
+  
+> [!NOTE] 
+> The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
+
+
 ## Enable and disable policies
 
 After you create a policy, you can enable or disable it. This avoids the need to delete a policy after you create it in order to stop it. Instead, if for some reason you want to stop the policy, simply disable it until you choose to enable it again.

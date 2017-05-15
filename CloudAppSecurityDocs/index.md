@@ -4,7 +4,8 @@ description: Learn how to use Cloud App Security.
 ---
 # Cloud App Security Documentation
 
-Control and help secure email, documents, and sensitive data that you share outside your company walls. From easy classification to embedded labels and permissions, enhance data protection at all times with Azure Information Protection—no matter where it’s stored or who it’s shared with.
+Provide enterprise-grade security for your cloud apps with Cloud App Security.
+Whether or not you’re in the cloud, your employees are. Bring the security of your on-premises systems to your cloud applications—both approved and unapproved—for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
 
 <ul class="panelContent cardsFTitle">
     <li>

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -81,7 +81,7 @@ To create a new continuous report:
   
 5.  Select the data sources you want to include (all or specific).  
   
-6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](general-setup.md#IPtagsandRanges).  
+6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
 

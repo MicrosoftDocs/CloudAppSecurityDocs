@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,10 @@ ms.suite: ems
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed and transmitted to the portal. FTP logs are uploaded to Cloud App Security after the file finished the FTP transfer to the Log Collector and for Syslogs, the Log Collector writes the logs received to disk every 20 minutes and then uploads the file to Cloud App Security.
 
 Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file. 
+
+>[!NOTE]
+>Cloud App Security provides support for forwarding logs from your SIEM server to the Log Collector assuming the logs are being forwarded in their original format. However, it is highly recommended to integrate the log collector directly with your firewall and/or proxy.
+
 
 ## Technical requirements
 - Hypervisor: HyperV or VMware
