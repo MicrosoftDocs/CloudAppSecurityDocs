@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 5/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 # Set up Cloud Discovery
-Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 13,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 14,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
 1.	Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance).
 2.	Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
@@ -52,7 +52,7 @@ The process of generating a risk assessment consists of the following steps and 
   
 -   **Parse** – Cloud App Security parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.  
   
--   **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 13,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.  
+-   **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 14,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.  
   
 -   **Generate report** - A risk assessment report of the data extracted from log files is generated.   
  

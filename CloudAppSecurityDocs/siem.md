@@ -82,7 +82,7 @@ Click **Next**.
 
    ![General SIEM settings](./media/siem1.png)
 
-5. Type in the IP address of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
+5. Type in the IP address or hostname of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
 You can work with your security admin to get these details if you don't have them.
 Click **Next**.
   ![Remote Syslog settings](./media/siem2.png)
