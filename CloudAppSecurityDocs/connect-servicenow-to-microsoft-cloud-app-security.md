@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 5/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -72,7 +72,9 @@ For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) 
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-8.  In the popup, add your ServiceNow user ID, password, instance URL, Client ID and Client secret in the appropriate boxes.  
+8.  In the popup, add your ServiceNow user ID, password, instance URL, Client ID and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table - it will appear next to your User ID.
+
+![ServiceNow user ID](./media/servicenow-userid.png)
   
 9.  Click **Connect**.  
   
