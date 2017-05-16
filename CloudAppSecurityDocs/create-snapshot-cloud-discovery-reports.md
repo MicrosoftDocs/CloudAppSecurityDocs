@@ -43,7 +43,7 @@ To create a snapshot report:
   
      ![New snapshot report](./media/new-snapshot-report.png) 
 
-4.  Select the **Data source** from which you want to upload the log files.  
+4.  Select the **Data source** from which you want to upload the lo13g files.  
   
 5. Verify your log format to make sure that it is formatted properly according to the sample you can download. Click **View and verify** and then click **Download sample log**. Then compare your log with the sample provided to make sure it's compatible. 
 

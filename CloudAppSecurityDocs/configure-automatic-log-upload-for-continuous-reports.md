@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -41,8 +41,8 @@ Before setting up automatic log file collection, verify that your log matches th
 - CPU: 2
 - RAM: 4 GB 
 - Firewall settings: 
-- Allow the log collector to receive inbound FTP and Syslog traffic
-- Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443
+    - Allow the log collector to receive inbound FTP and Syslog traffic
+    - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443
 
   
 ## Log collector performance
