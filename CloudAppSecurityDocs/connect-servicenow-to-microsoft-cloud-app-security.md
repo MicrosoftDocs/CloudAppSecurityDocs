@@ -73,6 +73,8 @@ For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) 
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
 8.  In the popup, add your ServiceNow user ID, password, instance URL, Client ID and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table - it will appear next to your User ID.
+
+![ServiceNow user ID](./media/servicenow-userid.png)
   
 9.  Click **Connect**.  
   
