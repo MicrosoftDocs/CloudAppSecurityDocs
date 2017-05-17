@@ -35,7 +35,7 @@ When you first integrate your SIEM with Cloud App Security, activities and alert
 
 ## SIEM integration architecture
 
-The SIEM agent is deployed in your organization’s network. When deployed and configured, it polls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
+The SIEM agent is deployed in your organization’s network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
 The traffic is then sent over an encrypted HTTPS channel on port 443.
 
 Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM using the network configurations you provided during the setup (TCP or UDP with a custom port). 
