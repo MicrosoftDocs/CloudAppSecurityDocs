@@ -33,9 +33,12 @@ ms.suite: ems
 Released May 8, 2017
 
 New features:
+
 -	Continuing the gradual roll out of the Security Reader permission which enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Azure Active Directory and Office 365 Global admins and Security admins have full permissions in the portal, and all Security readers in Azure Active Directory and Office 365 will have read-only access in Cloud App Security. For more information see [Managing admin permissions](manage-admins.md).
 -	Completed roll out of Cloud Discovery support for user-defined log parsers for CSV-based logs. Cloud App Security enables you to configure a parser for your previously unsupported appliances by providing you with the tools to delineate which columns correlate to specific data. For more information see [Custom log parser](custom-log-parser.md).
+
 Improvements:
+
 -	Cloud Discovery now supports Juniper SSG appliances.
 -	Cloud Discovery support for Cisco ASA logs has been improved for better visibility.
 -	You can now more easily run bulk actions and select multiple records in Cloud App Security portal tables: the page length has been increased to improve bulk operations.

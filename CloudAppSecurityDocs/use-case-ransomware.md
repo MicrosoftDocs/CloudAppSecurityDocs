@@ -1,0 +1,100 @@
+---
+# required metadata
+
+title: Overview of threat protection scenario | Microsoft Docs
+description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
+keywords:
+author: rkarlin
+ms.author: rkarlin
+manager: mbaldwin
+ms.date: 5/21/2017
+ms.topic: article
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
+ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+# Protecting your organization from ransomware
+
+In latest massive ransomware attack, WannaCry hit the cyber world hard, infecting an estimated 200,000 computers across 150 countries. With the increase of ransomware attacks over the last few years, an average of 25,000 attacks per month in 2015 and 56,000 in 2016, it's becoming a cybersecurity necessity to be proactive about making sure your network and your cloud aren't at risk. This article explains how you can use Cloud App Security to monitor your cloud, detect and mitigate threats and apply best practices for protecting your environment against ransomware.
+
+## What is ransomware?
+Ransomware is a cyber attack in which the attacker sends you a file that can block you from accessing your computer and encrypt your own files. The files are sometimes held for ransom and aren't decrypted until you pay the attacker to restore access to your computer, files or critical LOB apps. Ransomware attacks can affect any computer, home, office, network or server. In fact, because large organizations are made up of many users who may inadvertently open a file that unleashes ransomware across your network, organizations are at even greater risk of being forced to pay the attacker to stop the ransomware and restore access to computers or files.
+
+## Potential ransomware activity
+
+This use case applies to Office 365, G Suite, Box.
+
+### THE THREAT
+A user in your organization is the target of a ransomware attack. The user might unknowingly open an email infected with ransomware which then infects the user's files. If the user uploads those files to your cloud storage app, such as Office 365 SharePoint, the ransomware can gain access to all the files you store in the cloud, encrypt them, and block your access to them until a ransom is paid.
+
+### THE SOLUTION
+Detect potential ransomware on your cloud environment by creating a policy to update ou when suspicious activity is detected, and then either remediate the suspicious activity or set up automated actions to prevent ransomware files from being saved to your cloud.
+
+#### Prerequisites
+
+[Connect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) at least one cloud app (Office 365, G Suite, Box) to Cloud App Security.
+
+#### Setting up monitoring
+
+1.	By default, Cloud App Security scans your network to establish a baseline, wherein it learns patterns of what your users ordinarily do in your cloud, when they do it and what they commonly do. 
+
+2. In addition, it is important to start monitoring your cloud apps by setting up a policy that will watch your cloud apps for massive downloads and alert you if something out of the ordinary happens:
+
+    1. On the **Policies** page, click [**Create activity policy**](user-activity-policies.md). 
+   
+
+    2. In the [**Policy template**](policy-template-reference.md) field, choose **Potential ransomware activity**. This template is designed to search for activity typical of ransomware attacks, and files and folders associated with known ransomware.
+    
+    3. Optionally, you can set the type of alert you receive (email and text message) when the policy is matched.
+    
+    4. Click **Create**. 
+   
+     
+2. Investigating your matches
+    
+    1. In the **Policies** page, click on the policy name to go to the **Policy report** and review the matches that were triggered for the policy.
+
+    2. You can investigate the match by clicking on a specific match to open the activity drawer. In the drawer, you can see the other policies that this activity matched. 
+     
+
+
+#### Validating your policy
+
+1. To simulate an alert, save a (safe) file in your OneDrive account whose extension you changed to .wncry.
+3. Go to the policy report. An activity policy match should appear shortly. 
+4. You can click on the match to see which files were downloaded. The match itself will be masked to protect the sensitive data. 
+
+#### Remediating attacks and preventing risk
+
+After you've validated it and fine-tuned the policy, remove possible false positives that may have matched your policy. Then, do the following: 
+  1. When a ransomware policy is matched, you can remediate it by taking [governance actions](governance-actions.md). To do this, open the activity in the activity drawer, and click on the name of the file under **Activity objects**.
+
+  2. In the **Activity obects** dialog that opens, click on the name of the file. This opens the **Files** page where you can see the relevant file and click the three buttons at the end of the row to take the needed governance actions, such as **Put in admin quarantine**.
+
+ ![auto gov external](./media/auto-gov-external.png)
+
+   2. After your policy is fully validated, you can prevent future attacks by setting the policy to perform automatic governance actions. For example, in SharePoint and OneDrive you can set the policy to automatically **Put in user quarantine**.
+
+  ![apply automatic governance actions](./media/apply-automatic-gov-actions.png)
+
+
+
+## See Also  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+  
+  

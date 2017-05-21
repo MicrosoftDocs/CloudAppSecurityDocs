@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Protecting your files with admin quarantine  
 
+File policies are a great tool to finding threats in your environment, including x,y,z
+
 There are plenty of scenarios in today's world of technical espionage and cyber threats in which you find your data exposed to users or apps that leave you vulnerable. With Cloud App Security, not only can you detect those unwanted vulnerabilities, but you can take immediate action to stop them in their tracks and lock down your files.   
 Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). For more information see [Files](file-filters.md), and using **Admin quarantine**, you can protect your files in the cloud.
  
