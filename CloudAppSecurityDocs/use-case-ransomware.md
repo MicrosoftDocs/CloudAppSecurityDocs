@@ -56,9 +56,9 @@ Detect potential ransomware on your cloud environment by creating a policy to up
     1. On the **Control** tab, click [**Templates**](policy-template-reference.md). 
    
     2. From the [**Policy template**](policy-template-reference.md) list, choose **Potential ransomware activity**. 
-       ![template ransomware](./media/template-ransomware.png)
+       ![template ransomware](./media/ransomware-template.png)
     3. This template is designed out-of-the-box to search for activity typical of ransomware attacks, and files and folders associated with known ransomware. Optionally, you can set the type of alert you receive (email and text message) when the policy is matched.
-        ![template ransomware](./media/template-ransomware-fields.png)
+        ![template ransomware](./media/ransomware-template-fields.png)
     4. Click **Create**. 
    
      
