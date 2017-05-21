@@ -39,11 +39,12 @@ ms.suite: ems
 
 
 or set it as an automated quarantine action in the policy. 
+
     ![quarantine automatically](./media/quarantine-automated.png)
 When you receive the alert that a file has been quarantined, investigates the file in the Cloud App Security **Alerts** page:
    ![quarantine alerts](./media/quarantine-alerts.png)
  
-     or in the **Policy Report** on the **Quarantined** tab:
+or in the **Policy Report** on the **Quarantined** tab:
         ![quarantine report](./media/quarantine-report.png)
         
 4. When **Admin quarantine** is applied, the following occurs behind the scenes:
@@ -51,6 +52,7 @@ When you receive the alert that a file has been quarantined, investigates the fi
     1. The original file is moved to the admin quarantine folder you set.
     2. The original file is deleted.
     3. A tombstone file is uploaded to the original file location.
+
       ![quarantine tombstone](./media/quarantine-tombstone.png)
 
     4. The user has access only to the tombstone, where they can read the custom guidelines provided by IT and the correlation ID to contact IT to release the file.
