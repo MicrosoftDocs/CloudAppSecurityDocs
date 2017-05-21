@@ -34,18 +34,22 @@ ms.suite: ems
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
 
-3. You can either manually apply the **Admin quarantine** action 
-    ![quarantine action](./media/quarantine-action.png)
+3. Perform one of the following to quarantine the file:
+    - Manually apply the **Admin quarantine** action:
+     
+      ![quarantine action](./media/quarantine-action.png)
 
+    - Set it as an automated quarantine action in the policy: 
 
-or set it as an automated quarantine action in the policy. 
+     ![quarantine automatically](./media/quarantine-automated.png)
 
-   ![quarantine automatically](./media/quarantine-automated.png)
-When you receive the alert that a file has been quarantined, investigates the file in the Cloud App Security **Alerts** page:
+4. When you receive the alert that a file has been quarantined, investigate the file in the Cloud App Security **Alerts** page:
+
    ![quarantine alerts](./media/quarantine-alerts.png)
  
-or in the **Policy Report** on the **Quarantined** tab:
-        ![quarantine report](./media/quarantine-report.png)
+5. And also in the **Policy Report** on the **Quarantined** tab:
+
+  ![quarantine report](./media/quarantine-report.png)
         
 4. When **Admin quarantine** is applied, the following occurs behind the scenes:
 
