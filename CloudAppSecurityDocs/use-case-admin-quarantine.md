@@ -40,7 +40,7 @@ ms.suite: ems
 
 or set it as an automated quarantine action in the policy. 
 
-    ![quarantine automatically](./media/quarantine-automated.png)
+   ![quarantine automatically](./media/quarantine-automated.png)
 When you receive the alert that a file has been quarantined, investigates the file in the Cloud App Security **Alerts** page:
    ![quarantine alerts](./media/quarantine-alerts.png)
  
