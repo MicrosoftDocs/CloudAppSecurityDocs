@@ -53,13 +53,12 @@ Detect potential ransomware on your cloud environment by creating a policy to up
 
 2. In addition, it is important to start monitoring your cloud apps by setting up a policy that will watch your cloud apps for massive downloads and alert you if something out of the ordinary happens:
 
-    1. On the **Policies** page, click [**Create activity policy**](user-activity-policies.md). 
+    1. On the **Control** tab, click [**Templates**](policy-template-reference.md). 
    
-
-    2. In the [**Policy template**](policy-template-reference.md) field, choose **Potential ransomware activity**. This template is designed to search for activity typical of ransomware attacks, and files and folders associated with known ransomware.
-    
-    3. Optionally, you can set the type of alert you receive (email and text message) when the policy is matched.
-    
+    2. From the [**Policy template**](policy-template-reference.md) list, choose **Potential ransomware activity**. 
+       ![template ransomware](./media/template-ransomware.png)
+    3. This template is designed out-of-the-box to search for activity typical of ransomware attacks, and files and folders associated with known ransomware. Optionally, you can set the type of alert you receive (email and text message) when the policy is matched.
+        ![template ransomware](./media/template-ransomware-fields.png)
     4. Click **Create**. 
    
      
@@ -88,11 +87,7 @@ After you've validated it and fine-tuned the policy, remove possible false posit
 
    2. After your policy is fully validated, you can prevent future attacks by setting the policy to perform automatic governance actions. For example, in SharePoint and OneDrive you can set the policy to automatically **Put in user quarantine**.
 
-  ![apply automatic governance actions](./media/apply-automatic-gov-actions.png)
-
-
-
-## See Also  
+ ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
