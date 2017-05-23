@@ -43,7 +43,7 @@ Configure the following:
      ![mail settings config](./media/mail-settings-config.png "mail settings config")  
 
   >[!NOTE]
-  >To change the **From email address to a domain of your own, refer to the instructions [here](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
+  >To change the **From email address** field to a domain of your own, refer to the instructions [here](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
   
 2.  For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
   
