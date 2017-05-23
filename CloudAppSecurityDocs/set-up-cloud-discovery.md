@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 5/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -131,7 +131,9 @@ Data attributes (according to vendor documentation):
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**\*|**Yes**|**Yes**|
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|
-|Websense - Investigative detail report (CSV)|**Yes**|No|No|**Yes**|No|No|
+|Squid (Common)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
+|Squid (Native)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
+|Websense - Investigative detail report (CSV)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Websense - Internet activity log (CEF)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Zscaler|**Yes**|No|**Yes**|No|**Yes**|**Yes**|
 
