@@ -30,7 +30,7 @@ ms.suite: ems
 
 [File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies, for instance finding places where users stored sensitive information, credit card numbers and third-party ICAP files in your cloud. With Cloud App Security, not only can you detect these unwanted files stored in your cloud that leave you vulnerable, but you can take immediate action to stop them in their tracks and lock down the files that pose a threat. Using **Admin quarantine**, you can protect your files in the cloud and remediate problems, as well as prevent future leaks from occurring. 
 
->![NOTE] 
+>[!NOTE] 
 > For a list of apps that support admin quarantine, see the the list of [governance actions](governance-actions.md).
  
 ## How quarantine works 
@@ -88,10 +88,10 @@ ms.suite: ems
 
 2. Set a quarantine location:
     1. For Office 365 SharePoint or OneDrive for Business, before you set up Admin quarantine, you will not be able to put files in admin quarantine as part of a policy:
-    ![quarantine settings](./media/quarantine-warning.png).
+    ![quarantine settings](./media/quarantine-warning.png)
 
     To set admin quarantine settings, under the settings cog, go to **General settings**, and provide a location for the quarantined files and a user notification that your user will receive when their file is quarantined. 
-    ![quarantine settings](./media/quarantine-settings.png).
+    ![quarantine settings](./media/quarantine-settings.png)
 
     2. For Box, the quarantine folder location and user message cannot be customized. The folder location is the drive of the admin who connected Box to Cloud App Security and the user message is: This file was quarantined to your administrator's drive because it might violate your company's security and compliance policies. Contact your IT administrator for help.
 
