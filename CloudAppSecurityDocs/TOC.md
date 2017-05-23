@@ -28,7 +28,6 @@
 ## [Scenarios](use-case-admin-quarantine.md)
 ### [Protecting your organization against ransomware](use-case-ransomware.md)
 ## [Discover](working-with-cloud-discovery-data.md)
-### [Working with discovered apps](discovered-apps.md)
 ### [Working with the risk score](risk-score.md)
 ## [Investigate](investigate.md)
 ### [Activities](activity-filters.md)
