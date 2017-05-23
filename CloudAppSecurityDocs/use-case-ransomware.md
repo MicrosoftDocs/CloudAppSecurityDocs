@@ -33,21 +33,20 @@ In latest massive ransomware attack, WannaCry hit the cyber world hard, infectin
 ## What is ransomware?
 Ransomware is a cyber attack in which the attacker sends you a file that can block you from accessing your computer and encrypt your own files. The files are sometimes held for ransom and aren't decrypted until you pay the attacker to restore access to your computer, files or critical LOB apps. Ransomware attacks can affect any computer, home, office, network or server. In fact, because large organizations are made up of many users who may inadvertently open a file that unleashes ransomware across your network, organizations are at even greater risk of being forced to pay the attacker to stop the ransomware and restore access to computers or files.
 
-## Potential ransomware activity
+>![NOTE]
+> This use case applies to Office 365, G Suite, Box and Dropbox.
 
-This use case applies to Office 365, G Suite, Box.
+## THE THREAT
+A user in your organization is the target of a ransomware attack. The user might unknowingly open an email infected and run ransomware which infects the all of his files, including the files synced to the cloud.
 
-### THE THREAT
-A user in your organization is the target of a ransomware attack. The user might unknowingly open an email infected with ransomware which then infects the user's files. If the user uploads those files to your cloud storage app, such as Office 365 SharePoint, the ransomware can gain access to all the files you store in the cloud, encrypt them, and block your access to them until a ransom is paid.
+## THE SOLUTION
+Detect potential ransomware on your cloud environment by creating a policy to update you when suspicious activity is detected, and set up automated actions to prevent ransomware files from being saved to your cloud.
 
-### THE SOLUTION
-Detect potential ransomware on your cloud environment by creating a policy to update ou when suspicious activity is detected, and then either remediate the suspicious activity or set up automated actions to prevent ransomware files from being saved to your cloud.
+## Prerequisites
 
-#### Prerequisites
+[Connect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) at least one cloud app (Office 365, G Suite, Box and Dropbox) to Cloud App Security.
 
-[Connect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) at least one cloud app (Office 365, G Suite, Box) to Cloud App Security.
-
-#### Setting up monitoring
+## Setting up monitoring
 
 1.	By default, Cloud App Security scans your network to establish a baseline, wherein it learns patterns of what your users ordinarily do in your cloud, when they do it and what they commonly do. 
 
@@ -68,24 +67,18 @@ Detect potential ransomware on your cloud environment by creating a policy to up
 
     2. You can investigate the match by clicking on a specific match to open the activity drawer. In the drawer, you can see the other policies that this activity matched. 
      
+## Validating your policy
 
-
-#### Validating your policy
-
-1. To simulate an alert, save a (safe) file in your OneDrive account whose extension you changed to .wncry.
+1. To simulate an alert, change the extension of 30 files to .wncry and upload them to your SharePoint site.
 3. Go to the policy report. An activity policy match should appear shortly. 
 4. You can click on the match to see which files were downloaded. The match itself will be masked to protect the sensitive data. 
 
-#### Remediating attacks and preventing risk
+## Remediating attacks and preventing risk
 
 After you've validated it and fine-tuned the policy, remove possible false positives that may have matched your policy. Then, do the following: 
-  1. When a ransomware policy is matched, you can remediate it by taking [governance actions](governance-actions.md). To do this, open the activity in the activity drawer, and click on the name of the file under **Activity objects**.
+1. When a ransomware policy is matched, you can remediate it by setting automated [governance actions](governance-actions.md).
 
-  2. In the **Activity obects** dialog that opens, click on the name of the file. This opens the **Files** page where you can see the relevant file and click the three buttons at the end of the row to take the needed governance actions, such as **Put in admin quarantine**.
-
- ![auto gov external](./media/auto-gov-external.png)
-
-   2. After your policy is fully validated, you can prevent future attacks by setting the policy to perform automatic governance actions. For example, in SharePoint and OneDrive you can set the policy to automatically **Put in user quarantine**.
+2. To prevent future attacks, setting the policy to perform automatic governance actions. For example, in SharePoint and OneDrive you can set the policy to automatically **Suspend user**.
 
  ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
