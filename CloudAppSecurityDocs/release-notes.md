@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 5/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,25 @@ ms.suite: ems
 
 # Release notes
 
+## Cloud App Security release 97
+Released May 24, 2017
+
+### New features
+-	Investigate files and policy violations: You can now see all policy matches in the Files page. In addition, you the File Alert page has been improved to now include a separate tab for History of the specific file enabling you to drill down into the violation history across all policies for the specific file. Every History event includes a snapshot of the file at the time of the alert. It will include an indication of whether the file was deleted or quarantined.
+-	[Admin quarantine](use-case-admin-quarantine.md) is now available for Office 365 SharePoint and OneDrive for Business files, in private preview. This feature enables you to quarantine files that match policies, or set an automated action to quarantine them, removing them from the user’s SharePoint directory and copying the original file to the admin quarantine location of your choice.
+        
+### Cloud Discovery improvements
+
+-	Cloud Discovery support for Cisco Meraki logs has been improved.
+-	The option to suggest an improvement to Cloud Discovery now enables you to suggest new risk factor.
+-	The custom log parser was improved to support log formats by separating the setting of time and date and to give you the option to set timestamp.
+-	Starting to roll out the ability to create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group.
+Other updates
+-	Cloud App Security now includes support for the Microsoft Power BI activities that are supported in the Office 365 audit log. This feature is being rolled out gradually. Note that you need to enable [this functionality in the Power BI portal](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/).
+-	In activity policies, you can now set notify and suspend actions to be taken on the user across all connected apps. For example, you can set a policy to always notify the user's manager and suspend the user immediately whenever the user has multiple failed logins in any connected app.
+ 
+## OOB release
+-	In a speedy reaction to the ransomware sweeping the globe, on Sunday, the Cloud App Security team added a new [Potential ransomware activity detection policy](use-case-ransomware.md) template to the portal that includes the signature extension of WannaCrypt. We advise you to the set this policy today.
 
 ## Cloud App Security release 96
 Released May 8, 2017

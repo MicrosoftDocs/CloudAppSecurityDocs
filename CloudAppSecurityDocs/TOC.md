@@ -26,7 +26,6 @@
 # Use
 ## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
 ## Scenarios
-### [Protecting your files with admin quarantine] (use-case-admin-quarantine.md)
 ### [Protecting your organization against ransomware](use-case-ransomware.md)
 ## [Discover](working-with-cloud-discovery-data.md)
 ### [Working with the risk score](risk-score.md)
