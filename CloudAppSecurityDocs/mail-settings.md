@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 5/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -41,6 +41,9 @@ Configure the following:
      **Reply-to email address**: The email account to be used for replies to the message.  
   
      ![mail settings config](./media/mail-settings-config.png "mail settings config")  
+
+  >[!NOTE]
+  >To change the **From email address** field to a domain of your own, refer to the instructions [here](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
   
 2.  For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
   
