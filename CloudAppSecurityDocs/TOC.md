@@ -28,7 +28,7 @@
 ## Scenarios
 ### [Protecting your organization against ransomware](use-case-ransomware.md)
 ## [Discover](working-with-cloud-discovery-data.md)
-### [Investigate discovered apps](discovered-apps.md)
+### [Identifying risky discovered apps](discovered-apps.md)
 ### [Working with the risk score](risk-score.md)
 ## [Investigate](investigate.md)
 ### [Activities](activity-filters.md)

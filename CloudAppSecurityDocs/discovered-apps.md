@@ -26,14 +26,12 @@ ms.suite: ems
 
 ---
 
-# Working with discovered apps
-
-## Identify risky apps
+# Identifying risky discovered apps
 Your first important task when you see the results provided to you by Cloud App Security's Cloud Discovery, is to review which apps were discovered and determine if they are risky or not.
 
 To do this, it's helpful to use the filters to review the apps that were discovered as being used in your environment.
 
-### Discovered app filters
+## Discovered app filters
 
 ![Discovered apps](./media/discovered-apps.png)  
 
@@ -67,12 +65,12 @@ Cloud Discovery data anonymization enables you to protect user privacy. Once the
 
 After you have reviewed the list of discovered apps in your environment, you can secure your environment against unwanted app use in the following ways.
 
-# Governing discovered apps
+## Governing discovered apps
 Cloud App Security enables you to block access to unsanctioned apps by leveraging your existing on-prem security appliances. Generate a dedicated block script and import it to your appliance.
 This solution does not require redirection of all of the organization's web traffic to a proxy.
 
 
-### To sanction/unsanction an app 
+### Sanctioning/unsanctioning an app 
 
 You can unsanction a specific risky app by clicking the three dots at the end of the row and selecting **Unsanction**.
 Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. 
@@ -83,7 +81,7 @@ You can then notify users of the app that it has been unsanctioned and suggest a
 
 If you have a list of apps you want to sanction or unsanction, you can use the checkbox to select all the apps you want to manage, and then select the action.
 
-### Export a block script to govern discovered apps
+### Exporting a block script to govern discovered apps
 
 1. In the Cloud Discovery dashboard, for any app that is **Unsanctioned**, in the title bar, click on the three dots and select **Generate block script...**. 
 
@@ -99,13 +97,11 @@ If you have a list of apps you want to sanction or unsanction, you can use the c
 
 5. Import the file created to your appliance.
 
-
-
-**To create a new policy from search:**
+### Creating a new policy from search
 After you have search results filtered for specific apps you want to apply specific actions to, you can create a new policy from your filtered search results.
 At the top of the Discovered apps page, click the three dots and then select **Create new policy**. This will automatically open a new Discovery Policy template filtered using the filters currently applied.
 
-## Suggest a change
+## Suggesting a change
 
 If you find a new app in your environment that hasn't been scored by Cloud App Security, you can request a review of the app:
 
