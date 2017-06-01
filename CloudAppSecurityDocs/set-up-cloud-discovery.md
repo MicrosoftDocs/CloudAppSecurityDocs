@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 6/1/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -107,6 +107,8 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Websense - Web Security Solutions - Internet activity log (CEF)
 - Zscaler
 
+> [!NOTE]
+> Cloud Discovery supports both IPv4 and IPv6 addresses.
 
 If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information see [Use a custom log parser](custom-log-parser.md).
 
@@ -129,7 +131,7 @@ Data attributes (according to vendor documentation):
 |Juniper SSG|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |McAfee SWG|**Yes**|No|No|**Yes**|**Yes**|**Yes**|
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
-|Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**\*|**Yes**|**Yes**|
+|Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|
 |Squid (Common)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
 |Squid (Native)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
@@ -137,7 +139,7 @@ Data attributes (according to vendor documentation):
 |Websense - Internet activity log (CEF)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Zscaler|**Yes**|No|**Yes**|No|**Yes**|**Yes**|
 
-\* Cloud Discovery supports IPv6.
+
 
 ## See also
  

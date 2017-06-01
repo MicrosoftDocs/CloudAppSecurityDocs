@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 6/10/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -121,6 +121,9 @@ You can also set the policy to run on specific files by setting the **Apply to**
   
 ![apply to filter](./media/apply-to-filter.png "apply to filter")  
   
+>[!NOTE]
+> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
+
 ## Working with the File drawer
 
 You can view more information about each file, by clicking on the File itself in the File log. This opens the File drawer which provides the following additional actions you can take on the file:
