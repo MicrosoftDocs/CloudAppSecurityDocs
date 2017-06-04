@@ -29,28 +29,46 @@ ms.suite: ems
 
 # Working with the risk score  
 
-## The Cloud app catalog
+## The Cloud App Catalog
 
-In order to better understand which cloud apps can be discovered by Cloud App Security's Cloud Discovery, use the Cloud App Catalog.
+The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 14,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
+1.  Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance).
+2.  Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
+3.  Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
+4.  Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
+  
+![Cloud app catalog](./media/cloud-app-catalog.png)  
 
-The Cloud App Catalog contains more than 14,000 SaaS applications that can be viewed (filtered) based on name, domain, risk score, category or available security features.
+## Cloud App Catalog filters
 
-![access the cloud app catalog](./media/risk-cac-dropdown.png)
+There are basic and advanced Cloud App Catalog filters. To achieve a complex filter use the advanced option which includes all of the following:
 
-## Discovery requests
+- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged.
+- **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
+- **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
+- **Compliance risk factor**: Lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **General risk factor**: Lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
+- **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps.
+- **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
 
-Information and risk scores in the Cloud app catalog are based on a variety of sources. Microsoft makes every effort to keep the information current but makes no guarantees as to the accuracy of all the data sources. 
+## Suggesting a change
 
-Contact us if you believe information about an app is outdated.
+If you find a new app in your environment that hasn't been scored by Cloud App Security, a new risk factor, or a score update, or app data that is outdated, you can request a review of the app:
 
--	Request score update – if you wish our team to reassess this cloud app.
--	Report new data (per specific field or general) – if you believe information about the app is outdated.
+**To suggest a new app:**
+1. At the top of the Discovered apps page, click the three dots and then select **Suggest new app**. 
 
-![update risk data](./media/risk-cac-feedback.png)
+2. In the **Suggest new cloud app** popup, fill in details about the new app including the name and domain of the app. 
 
-In addition, we encourage you to suggest the addition of any cloud apps that your organization uses that are not currently discoverable by Cloud Discovery.
+3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed, and so that you can be updated when the analysis is complete.
 
-![suggest new apps](./media/risk-suggest-app.png)
+**To update a risk factor, score, or update app data:**
+
+1. In the Cloud App Catalog page, in the app row you want to update, click the three dots at the end of the row and select **Request score update**.
+2. In the **Suggest an improvement** popup, select whether you want to request a score update, suggest a new risk factor or update app data.
+3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed, and so that you can be updated when the analysis is complete.
+ 
 
 
 ## Customizing the risk score

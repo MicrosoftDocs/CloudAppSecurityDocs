@@ -27,7 +27,8 @@
 ## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
 ## Scenarios
 ### [Protecting your organization against ransomware](use-case-ransomware.md)
-## [Discover](working-with-cloud-discovery-data.md)
+## Discover
+### [Working with discovered apps](discovered-apps.md)
 ### [Working with the risk score](risk-score.md)
 ## [Investigate](investigate.md)
 ### [Activities](activity-filters.md)
@@ -48,7 +49,6 @@
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 #### [Policy template reference](policy-template-reference.md)
 ### [Govern connected apps](governance-actions.md)
-### [Govern discovered apps](governance-discovery.md)
 ## Integrate
 ### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)

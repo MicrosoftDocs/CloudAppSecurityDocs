@@ -60,7 +60,7 @@ The App permissions page provides the following information about each third-par
 
 
 ## Ban or approve an app
-1. On the App permissions page, click on the app to open the App drawer to view more information about the app and hte permissions it was granted. You can click on the Permissions link to view a full list of permissions that were granted to the app. Under Community use, you can view how common the app is in other organizations. You can also click the Relate activity link to view the activities that are listed in the governance log related to this app.
+1. On the App permissions page, click on the app to open the App drawer to view more information about the app and the permissions it was granted. You can click on the Permissions link to view a full list of permissions that were granted to the app. Under Community use, you can view how common the app is in other organizations. You can also click the Relate activity link to view the activities that are listed in the governance log related to this app.
 2. To ban the app, click on the ban icon at the end of the app row in the table. <br></br>
  ![ban app icon](./media/ban-app-icon.png) <br></br>
 When you ban an app, you can choose whether you want to let users know that the app they previously installed and authorized has been banned and will be disabled and won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the Ban the app dialog.
@@ -78,6 +78,15 @@ The icon turns green, and the app is approved for all your connected app users.
 3. Type the message you want to send to the app users in the Enter a custom notification message box, and update the Notification email 'reply to' address if necessary. 
  Click **Ban app** to send the mail, and ban the app from your connected app users.
 
+## Revoke app and notify user
+
+For G Suite and Salesforce, it is possible to revoke permission to an app or to notify the user that this should been done. 
+
+1. On the App permissions page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app Adallom Google Protector to access your G Suite account.
+This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
+2. You can also revoke permissions to use the app for the user by click on the  icon at the end of the app row in the table and selecting **Revoke app**. 
+
+ ![revoke app](./media/revoke-app.png)
 
 ## Query app permissions
 

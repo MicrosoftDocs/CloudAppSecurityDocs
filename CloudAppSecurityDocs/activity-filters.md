@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 6/1/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -87,7 +87,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
    The built-in IP tags include:
     - Microsoft apps (14 of them)
     - Anonymous proxy
-    - Botnet
+    - Botnet (you will see that the activity was performed by a botnet with a link to learn more about the specific botnet)
     - Darknet scanning IP
     - Malware C&C server
     - Remote Connectivity Analyzer
@@ -124,7 +124,9 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   
 -   User agent tag – Built-in user agent tag, for example, all activities from an outdated browser or outdated operating systems.  
     
-  
+>[!NOTE]
+> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
+
 ## Working with the Activity drawer
 
 You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the file:

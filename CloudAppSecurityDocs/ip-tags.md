@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/29/2017
+ms.date: 6/1/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,7 +38,7 @@ Cloud App Security comes preconfigured with built-in tags for the following IP a
 - Outdated operating system
 - Managed devices
 - Anonymous proxy
-- Botnet
+- Botnet (when an activity was performed by a botnet, you will receive a link to learn more about the specific botnet)
 - Tor
 - Compliant device
 - Verified device
