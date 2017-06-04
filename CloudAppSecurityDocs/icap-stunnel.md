@@ -45,7 +45,7 @@ Since Cloud App Security runs in Azure, a deployment in Azure will yield improve
 In order for CAS to be able to reach the ICAP server, you need to open the following IP addresses and ports and make the proper adjustments to your network configuration, by opening the Firewall to the CAS external IP address with a dynamic port. 
 By default the port number is set to 11344. You can change this to another port if necessary, but be sure to update the support ticket you create in the next step with this information.
 1.	Source addresses: 
-Refer to [Connect apps, under Prerequisites](enable-instant-visibility-protection-and-governance-actions-for-your-apps#prerequisites)
+Refer to [Connect apps, under Prerequisites](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
 2.	Source TCP port: 
 Dynamic
 3.	Destination address(es): 
