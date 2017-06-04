@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 6/4/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,16 +28,7 @@ ms.suite: ems
 
 # Set up Cloud Discovery
 Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 14,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
-The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
-1.	Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance).
-2.	Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
-3.	Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
-4.	Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
-  
-## Cloud Discovery data anonymization
-
-Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. For more information see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
-
+ 
 ## Snapshot and continuous risk assessment reports 
 
 There are two types of reports you can generate: 
@@ -107,6 +98,8 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Websense - Web Security Solutions - Internet activity log (CEF)
 - Zscaler
 
+> [!NOTE]
+> Cloud Discovery supports both IPv4 and IPv6 addresses.
 
 If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information see [Use a custom log parser](custom-log-parser.md).
 
@@ -129,7 +122,7 @@ Data attributes (according to vendor documentation):
 |Juniper SSG|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |McAfee SWG|**Yes**|No|No|**Yes**|**Yes**|**Yes**|
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
-|Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**\*|**Yes**|**Yes**|
+|Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|
 |Squid (Common)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
 |Squid (Native)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
@@ -137,7 +130,7 @@ Data attributes (according to vendor documentation):
 |Websense - Internet activity log (CEF)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Zscaler|**Yes**|No|**Yes**|No|**Yes**|**Yes**|
 
-\* Cloud Discovery supports IPv6.
+
 
 ## See also
  

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 6/1/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,14 @@ ms.suite: ems
 
 # Basic set up
 The following procedure gives you instructions for customizing the Cloud App Security portal.
+
+## Prerequisites 
+For portal access it is necessary to add the following IP addresses to your Firewall's whitelist to provide access for the Cloud App Security portal:  
+  
+- 104.42.231.28  
+  
+> [!NOTE]  
+>  To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
   
 ## Set up the portal  
   
