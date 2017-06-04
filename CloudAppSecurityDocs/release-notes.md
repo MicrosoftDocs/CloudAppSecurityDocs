@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 6/4/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,19 @@ ms.suite: ems
 
 # Release notes
 
+## Cloud App Security release 98 
+Released June 4, 2017
+ 
+Cloud Discovery updates:
+-	Users can now perform advanced filtering on discovered apps, to enable you to perform deep investigation such as filtering apps based on usage - how much upload traffic from discovered apps of certain types, how many users used certain categories of discovered apps. You can also perform multi-selection in the left panel to select multiple categories. 
+-	Started roll out of new templates for Cloud Discovery which are based on popular searches, for example "non-compliant cloud storage app". These basic filters can be used as templates to perform analysis on your discovered apps.
+-	For ease of use, you can now perform actions such as sanction and unsanction across multiple apps in one action.
+-	We are now rolling out the ability to create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group.
+
+New features:
+-	RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Azure Active Directory and Office 365 Global admins and Security admins have full permissions in the portal, and all Security readers in Azure Active Directory and Office 365 have read-only access in Cloud App Security. You can add additional admins or override permissions using the “Manage Access” option. For more information see [Managing admin permissions](manage-admins.md).
+-	Detailed threat intelligence reports are now available for risky IP addresses detected by Microsoft intelligent security graph: when an activity is performed by a botnet, you will see the name of the botnet (if available) with a link to a detailed report about the specific botnet.
+ 
 ## Cloud App Security release 97
 Released May 24, 2017
 
