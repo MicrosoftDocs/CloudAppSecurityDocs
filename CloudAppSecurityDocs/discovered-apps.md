@@ -51,27 +51,27 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 If you want to deep dive into the data provided by Cloud Discovery use the filters to review which apps are risky and which are commonly used.
 
 
-For example, if you want to identify commonly used risky cloud storage and collaboration apps, you can use the Discovered apps page to filter for the apps you want. Afterward you can unsanction or block them, as follows:
+For example, if you want to identify commonly used risky cloud storage and collaboration apps, you can use the Discovered apps page to filter for the apps you want. Afterward you can [unsanction or block](governance-discovery.md) them, as follows:
 
 In the **Discovered apps** page, under **Browse by category** select both **Cloud storage** and **Collaboration**. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**; **Usage** > **Users** to greater than 50 users; and **Usage** > **Transactions** to greater than 100; **Security risk factor** > **Data at rest encryption** equals **False** and then set **Risk score** equals less than 6.
 
-After the results are filtered, you can unsanction and block them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
+After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
 ## Discovered app filters
 
-There are basic and advaned Discovered app filters. To acheive a complex filter (such as in the example above) use the advanced option which includes all of the following:
+There are basic and advanced Discovered app filters. To achieve a complex filter (such as in the example above) use the advanced option which includes all of the following:
 
 ![Discovered apps](./media/discovered-apps.png)  
 
 
-- **App tag**: select whether the app was sanctioned or unsanctioned or not tagged.
-- **Apps and domains**: enables you to search for specific apps or apps used in specific domains. 
-- **Categories**: the categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
-- **Compliance risk factor**: lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **General risk factor**: lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
-- **Risk score**: lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps.
-- **Security risk factor**: enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
-- **Usage**: Lets you filter based on the usage statistics of this app, such as apps with less than or more than a specified amount of data uploads, apps with more than or less than a specified number of **Users**.
+- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged.
+- **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
+- **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
+- **Compliance risk factor**: Lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **General risk factor**: Lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
+- **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps.
+- **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
+- **Usage**: Lets you filter based on the usage statistics of this app, such as apps with less than or more than a specified amount of **data uploads**, apps with more than or less than a specified number of **Users**.
 
 ## Exclude entities  
 If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
@@ -132,18 +132,8 @@ To delete Cloud Discovery data:
   
      ![delete data](./media/delete-data.png "delete data")  
   
-    > [!NOTE]  
-    >  The deletion process takes a few minutes and is not immediate.  
-## Suggesting a change
-
-If you find a new app in your environment that hasn't been scored by Cloud App Security, you can request a review of the app:
-
-1. At the top of the Discovered apps page, click the three dots and then select **Suggest new app**. 
-
-2. In the **Suggest new cloud app** popup, fill in details about the new app including the name and domain of the app. 
-
-3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed, and so that you can be updated when the analysis is complete.
-
+   > [!NOTE]  
+   >  The deletion process takes a few minutes and is not immediate.  
 
 
 
