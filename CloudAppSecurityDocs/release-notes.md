@@ -86,7 +86,7 @@ Improvements:
     For example, you can now monitor users who were granted **SendAs** permissions to other users’ mailboxes and as a result can now send emails in their name.
 
 
-## Cloud App Security release 95 (in roll out)
+## Cloud App Security release 95
 Released April 24, 2017
 
 **Updates**
