@@ -48,10 +48,14 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview** and check the discovery alerts status to see how many open alerts should you investigate.
 
 ## Deep dive into Discovered apps
-If you want to deep dive into the data provided by Cloud Discovery, you can review which apps were discovered and determine if they are risky or not. To do this, it's helpful to use the filters to review the apps that were discovered as being used in your environment.
+If you want to deep dive into the data provided by Cloud Discovery use the filters to review which apps are risky and which are commonly used.
 
-For example, if you want to unsanction and block risky cloud storage and collaboration apps, you can use the Discovered apps page to filter for the apps you want and then bulk unsanction them, as follows. In the **Discovered apps** page, under **Browse by category** select both **Cloud storage** and **Collaboration**. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**; **Usage** > **Users** to greater than 50 users; and **Usage** > **Transactions** to greater than 100; **Security risk factor** > **Data at rest encryption** equals **False** and then set **Risk score** equals less than 6.
-Once the results are filtered for these risky apps, you can use the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
+
+For example, if you want to identify commonly used risky cloud storage and collaboration apps, you can use the Discovered apps page to filter for the apps you want. Afterward you can unsanction or block them, as follows:
+
+In the **Discovered apps** page, under **Browse by category** select both **Cloud storage** and **Collaboration**. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**; **Usage** > **Users** to greater than 50 users; and **Usage** > **Transactions** to greater than 100; **Security risk factor** > **Data at rest encryption** equals **False** and then set **Risk score** equals less than 6.
+
+After the results are filtered, you can unsanction and block them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
 ## Discovered app filters
 
@@ -59,58 +63,15 @@ There are basic and advaned Discovered app filters. To acheive a complex filter 
 
 ![Discovered apps](./media/discovered-apps.png)  
 
-- **Categories**: the categories filter, which is located on the left of the page, enables you to search for types of apps according to popular categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
-- **App tag**: select whether the app was sanctioned or unsanctioned or not.
-- **Apps and domains**: enables you to search for specific apps or apps used in specific domains 
-- **Compliance risk factor**: lets you search for a specific compliance factor (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.)
-- **General risk factor**: lets you search for apps by Consumer popularity, Data center locale, Domain, Domain registration (before or after date), Founded during a specific year, Headquarters in a specific locale, Holding (private or public), Hosting company, Logon URL, Vendor
+
+- **App tag**: select whether the app was sanctioned or unsanctioned or not tagged.
+- **Apps and domains**: enables you to search for specific apps or apps used in specific domains. 
+- **Categories**: the categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
+- **Compliance risk factor**: lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **General risk factor**: lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
 - **Risk score**: lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps.
-- **Security risk factor**: enables you to filter based on
-- **Usage**: Lets you filter based on apps used by specific IP addresses or apps Last seen being used before a specific date (to enable you to weed out apps that are stale and no longer in use), apps with less than a specified amount of **Traffic**, apps with fewer than a specified amount of **Transactions**, apps with less than or more than a specified amount of data uploads, apps with more than or less than a specified amount of **Users**.
-
->[!NOTE]
-> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
-
-## Remediate
-
-After you have reviewed the list of discovered apps in your environment, you can secure your environment against unwanted app use in the following ways.
-
-## Governing discovered apps
-Cloud App Security enables you to block access to unsanctioned apps by leveraging your existing on-prem security appliances. Generate a dedicated block script and import it to your appliance.
-This solution does not require redirection of all of the organization's web traffic to a proxy.
-
-
-### Sanctioning/unsanctioning an app 
-
-You can unsanction a specific risky app by clicking the three dots at the end of the row and selecting **Unsanction**.
-Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. 
-You can then notify users of the app that it has been unsanctioned and suggest an alternative, safe app for their use.
-
-![Tag as unsanctioned](./media/tag-as-unsanctioned.png)  
-
-
-If you have a list of apps you want to sanction or unsanction, you can use the checkbox to select all the apps you want to manage, and then select the action.
-
-### Exporting a block script to govern discovered apps
-
-1. In the Cloud Discovery dashboard, for any app that is **Unsanctioned**, in the title bar, click on the three dots and select **Generate block script...**. 
-
-   ![Generate block script](./media/generate-block-script.png)  
-
-3. In **Generate block script**, select the appliance you want to generate the block script for. 
-
-   ![Generate block script pop up](./media/generate-block-script-popup.png)  
-
-4. Then, click the Generate script button. This will create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected, for example *2017-02-19_CAS_Fortigate_block_script.txt* 
-
-   ![Generate block script button](./media/generate-block-script-button.png)  
-
-5. Import the file created to your appliance.
-
-### Creating a new policy from search
-After you have search results filtered for specific apps you want to apply specific actions to, you can create a new policy from your filtered search results.
-At the top of the Discovered apps page, click the three dots and then select **Create new policy**. This will automatically open a new Discovery Policy template filtered using the filters currently applied.
-
+- **Security risk factor**: enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
+- **Usage**: Lets you filter based on the usage statistics of this app, such as apps with less than or more than a specified amount of data uploads, apps with more than or less than a specified number of **Users**.
 
 ## Exclude entities  
 If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
@@ -173,22 +134,6 @@ To delete Cloud Discovery data:
   
     > [!NOTE]  
     >  The deletion process takes a few minutes and is not immediate.  
-
-## The Cloud App Catalog
-The Cloud App Catalog gives you a full picture of what Cloud Discovery knows how to identify. Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 14,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
-The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
-1.  Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance).
-2.  Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
-3.  Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
-4.  Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
-  
-![Cloud app catalog](./media/cloud-app-catalog.png)  
-
-
-## Cloud Discovery data anonymization
-
-Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. For more information see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
-
 ## Suggesting a change
 
 If you find a new app in your environment that hasn't been scored by Cloud App Security, you can request a review of the app:
