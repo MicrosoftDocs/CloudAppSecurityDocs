@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Identifying risky discovered apps in Cloud App Security | Microsoft Docs
+title: Working with discovered apps in Cloud App Security | Microsoft Docs
 description: This topic describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/1/2017
+ms.date: 6/4/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,10 @@ ms.suite: ems
 
 ---
 
-# Identifying risky discovered apps
-Your first important task when you see the results provided to you by Cloud App Security's Cloud Discovery, is to review which apps were discovered and determine if they are risky or not.
-
-To do this, it's helpful to use the filters to review the apps that were discovered as being used in your environment.
+# Working with discovered apps
+If you want to deep dive into the data provided by Cloud Discovery, you can review which apps were discovered and determine if they are risky or not. To do this, it's helpful to use the filters to review the apps that were discovered as being used in your environment.
+For example, if you want to unsanction and block risky cloud storage and collaboration apps, you can use the Discovered apps page to filter for the apps you want and then bulk unsanction them, as follows. In the **Discovered apps** page, under **Browse by category** select both **Cloud storage** and **Collaboration**. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**; **Usage** > **Users** to greater than 50 users; and **Usage** > **Transactions** to greater than 100; **Security risk factor** > **Data at rest encryption** equals **False** and then set **Risk score** equals less than 6.
+Once the results are filtered for these risky apps, you can use the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
 ## Discovered app filters
 
@@ -46,20 +46,6 @@ To do this, it's helpful to use the filters to review the apps that were discove
 
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
-
-## The Cloud App Catalog
-The Cloud App Catalog gives you a full picture of what Cloud Discovery knows how to identify. Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 14,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
-The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
-1.	Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance).
-2.	Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
-3.	Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
-4.	Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
-  
-![Cloud app catalog](./media/cloud-app-catalog.png)  
-
-## Cloud Discovery data anonymization
-
-Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. For more information see [Cloud Discovery anonymization](cloud-discovery-anonymizer.md).
 
 ## Remediate
 
@@ -101,15 +87,6 @@ If you have a list of apps you want to sanction or unsanction, you can use the c
 After you have search results filtered for specific apps you want to apply specific actions to, you can create a new policy from your filtered search results.
 At the top of the Discovered apps page, click the three dots and then select **Create new policy**. This will automatically open a new Discovery Policy template filtered using the filters currently applied.
 
-## Suggesting a change
-
-If you find a new app in your environment that hasn't been scored by Cloud App Security, you can request a review of the app:
-
-1. At the top of the Discovered apps page, click the three dots and then select **Suggest new app**. 
-
-2. In the **Suggest new cloud app** popup, fill in details about the new app including the name and domain of the app. 
-
-3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed, and so that you can be updated when the analysis is complete.
 
 ## See also
  
