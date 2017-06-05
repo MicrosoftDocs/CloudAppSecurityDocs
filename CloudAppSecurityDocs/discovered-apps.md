@@ -36,16 +36,16 @@ The Cloud Discovery dashboard is designed to give you more insight into how clou
 
 The first thing you should do to get a general picture of your Cloud Discovery apps is to look at the Cloud Discovery Dashboard and review the following:
  
-1. First look at the overall cloud app use in your organization in the High level usage overview.
+1. First look at the overall cloud app use in your organization in the **High level usage overview**.
 
-2. Then, dive one level deeper to see which are the top categories being used in your org for each of the different use parameters and how much of this usage is by Sanction apps.
+2. Then, dive one level deeper to see which are the **top categories** being used in your org for each of the different use parameters and how much of this usage is by Sanction apps.
 
-3. Go even deeper and see all the apps in a specific category in the Discovered apps widget.
+3. Go even deeper and see all the apps in a specific category in the **Discovered apps** widget.
 
-4. You can see the top users and source IP addresses to identify which users are the most dominant users of cloud apps in your organization.
-5. Check how the discovered apps spread according to geographic location (according to their HQ) in the App Headquarters map.
+4. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
+5. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
 
-6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview** and check the discovery alerts status to see how many open alerts should you investigate.
+6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview** and check the **discovery alerts status** to see how many open alerts should you investigate.
 
 ## Deep dive into Discovered apps
 If you want to deep dive into the data provided by Cloud Discovery use the filters to review which apps are risky and which are commonly used.
@@ -54,6 +54,8 @@ If you want to deep dive into the data provided by Cloud Discovery use the filte
 For example, if you want to identify commonly used risky cloud storage and collaboration apps, you can use the Discovered apps page to filter for the apps you want. Afterward you can [unsanction or block](governance-discovery.md) them, as follows:
 
 In the **Discovered apps** page, under **Browse by category** select both **Cloud storage** and **Collaboration**. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**; **Usage** > **Users** to greater than 50 users; and **Usage** > **Transactions** to greater than 100; **Security risk factor** > **Data at rest encryption** equals **False** and then set **Risk score** equals less than 6.
+
+![Discovered app filters](./media/discovered-pp-filters.png)
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
