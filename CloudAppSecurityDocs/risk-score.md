@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 6/5/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -39,6 +39,14 @@ The **Cloud app catalog** rates risk for your cloud apps based on regulatory cer
 4.  Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
   
 ![Cloud app catalog](./media/cloud-app-catalog.png)  
+
+The demand by business units for cloud apps as a solution to their changing needs is growing. The Cloud app catalog enables you to wisely choose which apps fit your organization's security requirements, and the need to up to date with the latest security standards, vulnerabilities and breaches. 
+For example, if you want to compare CRM apps and make sure they are adequately secured, you can use the Cloud app catalog page to filter for relevant apps you want:
+In the **Cloud app catalog** page, under **Browse by category** select both **CRM**. 
+
+Then, use the **Advanced** filters and set **Compliance risk factor** > **SOC 2** equals **True**; **Compliance risk factor** > **ISO 27001** equals **True**; **Security risk factor** > **Data at rest encryption** equals **True**; **Security risk factor** > **Data at rest encryption** equals **True**; **Security risk factor** > **Admin audit trail** equals **True** and **Security risk factor** > **User audit trail** equals **True**.
+
+After the results are filtered, you can review the relevant apps and find the one that best fits your needs.
 
 ## Cloud App Catalog filters
 
