@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-## Remediate
+## Govern discovered apps
 
 After you have reviewed the list of discovered apps in your environment, you can secure your environment against unwanted app use in the following ways.
 
