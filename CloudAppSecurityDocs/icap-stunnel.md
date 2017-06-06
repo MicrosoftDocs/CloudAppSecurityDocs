@@ -29,13 +29,13 @@ ms.suite: ems
 # Integrating Cloud App Security with third-party DLP solutions
 
 Cloud App Security is a cloud access security broker, delivering visibility, governance and protection for SaaS applications. The Cloud App Security platform extends the boundaries of enterprise security into the cloud, allowing organizations to secure data, gain actionable intelligence into cloud application usage and detect suspicious activities, without painful network configuration or endpoint changes.  
-The solution can easily integrate with existing on-premises controls to extend these controls to the cloud while preserving a consistent and unified policy across on-premises and cloud activities. The platform exports easy-to-use interfaces including REST API and ICAP, enabling integration with content classification, DLP (data leakage protection) systems such as Symantec Data Loss Prevention (formerly Vontu Data Loss Prevention) or RSA Data Loss Prevention. This article provides a highlevel overview of the integration with 3rd party DLP services with a focus on Symantec Vontu DLP. 
+The solution can integrate with existing on-premises controls to extend these controls to the cloud while preserving a consistent and unified policy across on-premises and cloud activities. The platform exports easy-to-use interfaces including REST API and ICAP, enabling integration with content classification, DLP (data leakage protection) systems such as Symantec Data Loss Prevention (formerly Vontu Data Loss Prevention) or RSA Data Loss Prevention. This article provides a highlevel overview of the integration with 3rd party DLP services with a focus on Symantec Vontu DLP. 
 
-## API Deployment
+## Deployment
 
-The API deployment is an out-of-band, non-intrusive configuration that takes only a few minutes per application to set up. The organization’s SaaS administrator logs into the Cloud App Security console and authorizes Cloud App Security as a 1st-party/3rd-party application with access to private APIs. This allows Cloud App Security to collect user identity and activity information including login/logout, location, duration, uploads, downloads, sharing privileges, etc.   
+App connector deployment is an out-of-band, non-intrusive configuration that takes only a few minutes per application to set up. The organization’s SaaS administrator logs into the Cloud App Security console and authorizes Cloud App Security as a 1st-party/3rd-party application with access to private APIs. This allows Cloud App Security to collect user identity and activity information including login/logout, location, duration, uploads, downloads, sharing privileges, and to be able to scan files stored in the cloud.   
 
-## Integration with on-premises systems
+### Integration with on-premises systems
 
 The Cloud App Security cloud access security platform extends an organization’s existing investment in security solutions to the cloud. Specifically, in the case of DLP, an organization’s on-premises DLP system already manages a complex set of rules customized for the organization’s compliance requirements. Instead of redefining the rule set inside Cloud App Security, the DLP integration option allows an organization to extend on-premises DLP to the cloud, managing DLP policies in one centralized location. To enable such integration scenarios, the Cloud App Security policy engine was designed from the ground up to be extensible and support additional classification and processing engines.
 
