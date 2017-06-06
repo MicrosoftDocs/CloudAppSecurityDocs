@@ -33,7 +33,7 @@ In latest massive ransomware attack, WannaCry hit the cyber world hard, infectin
 ## What is ransomware?
 Ransomware is a cyber attack in which the attacker sends you a file that can block you from accessing your computer and encrypt your own files. The files are sometimes held for ransom and aren't decrypted until you pay the attacker to restore access to your computer, files or critical LOB apps. Ransomware attacks can affect any computer, home, office, network or server. In fact, because large organizations are made up of many users who may inadvertently open a file that unleashes ransomware across your network, organizations are at even greater risk of being forced to pay the attacker to stop the ransomware and restore access to computers or files.
 
->![NOTE]
+>[!NOTE]
 > This use case applies to Office 365, G Suite, Box and Dropbox.
 
 ## THE THREAT
