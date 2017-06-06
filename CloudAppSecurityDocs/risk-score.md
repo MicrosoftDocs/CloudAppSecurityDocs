@@ -69,11 +69,11 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 **To suggest a new app:**
 1. At the top of the **Discovered apps** page, click the three dots and then select **Suggest new app**. 
 
-![Suggest an app to Cloud App Security](./media/suggest-new-app.png)
+  ![Suggest an app to Cloud App Security](./media/suggest-new-app.png)
 
 2. In the **Suggest new cloud app** popup, fill in details about the new app including the name and domain of the app. 
 
-![Suggest an app popup to Cloud App Security](./media/suggest-new-app-popup.png)
+  ![Suggest an app popup to Cloud App Security](./media/suggest-new-app-popup.png)
 
 3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed, and so that you can be updated when the analysis is complete.
 
@@ -81,11 +81,11 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
 1. In the **Cloud App Catalog** page, in the app row you want to update, click the three dots at the end of the row and select **Request score update**.
 
-![Request score update](./media/request-score-update.png)
+  ![Request score update](./media/request-score-update.png)
 
 2. In the **Suggest an improvement** popup, select whether you want to request a score update, suggest a new risk factor or update app data.
 
-![suggest and improvement to Cloud App Security](./media/suggest-improvement-popup.png)
+  ![suggest and improvement to Cloud App Security](./media/suggest-improvement-popup.png)
 
 3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed, and so that you can be updated when the analysis is complete.
  
@@ -111,7 +111,7 @@ It is important to take a minute to review and modify the default weights given 
   
 3.  In addition, you can set whether certain values are either not available or not applicable in the score calculation. When included, N/A values have a negative contribution to the calculated score.  
   
-     ![score](./media/score.png "score")  
+  ![score](./media/score.png "score")  
 
 All the information needed in order to understand how our risk scores are stacking up is available in the Cloud App Security portal.
 To better understand a risk factor’s weight in specific risk category, use the “i” button to the right of each field name in the app’s profile). This provides information about how exactly Cloud App Security scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
