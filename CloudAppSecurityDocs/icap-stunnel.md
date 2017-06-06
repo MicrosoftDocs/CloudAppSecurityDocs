@@ -26,6 +26,72 @@ ms.suite: ems
 
 ---
 
+# Integrating Cloud App Security with third-party DLP solutions
+
+Cloud App Security is a cloud access security broker, delivering visibility, governance and protection for SaaS applications. The Cloud App Security platform extends the boundaries of enterprise security into the cloud, allowing organizations to secure data, gain actionable intelligence into cloud application usage and detect suspicious activities, without painful network configuration or endpoint changes.  
+The solution can easily integrate with existing on-premises controls to extend these controls to the cloud while preserving a consistent and unified policy across on-premises and cloud activities. The platform exports easy-to-use interfaces including REST API and ICAP, enabling integration with content classification, DLP (data leakage protection) systems such as Symantec Data Loss Prevention (formerly Vontu Data Loss Prevention) or RSA Data Loss Prevention. This article provides a highlevel overview of the integration with 3rd party DLP services with a focus on Symantec Vontu DLP. 
+
+## API Deployment
+
+The API deployment is an out-of-band, non-intrusive configuration that takes only a few minutes per application to set up. The organization’s SaaS administrator logs into the Cloud App Security console and authorizes Cloud App Security as a 1st-party/3rd-party application with access to private APIs. This allows Cloud App Security to collect user identity and activity information including login/logout, location, duration, uploads, downloads, sharing privileges, etc.   
+
+## Integration with on-premises systems
+
+The Cloud App Security cloud access security platform extends an organization’s existing investment in security solutions to the cloud. Specifically, in the case of DLP, an organization’s on-premises DLP system already manages a complex set of rules customized for the organization’s compliance requirements. Instead of redefining the rule set inside Cloud App Security, the DLP integration option allows an organization to extend on-premises DLP to the cloud, managing DLP policies in one centralized location. To enable such integration scenarios, the Cloud App Security policy engine was designed from the ground up to be extensible and support additional classification and processing engines.
+
+## Symantec Deployment Guide 
+The supported Symantec DLP versions are 11.X+.  
+The customer deploys a detection server in the same Azure data center where his Cloud App Security tenant resides. The detection server syncs with the enforce server through a dedicated IPSec tunnel.  
+ 
+### Detection server installation
+
+The detection server used by Cloud App Security is a standard Network Prevent for Web server. There are several configuration options that should be changed during installation: 
+- Disable Trial Mode  
+- Change the **Ignore Responses Smaller Than** value to 1 under **Response Filtering**.  
+- Add **application/** to the **Inspect Content Type** list under **Response Filtering**.  
+ 
+### Policy configuration
+
+Cloud App Security seamlessly supports all detection rule types included with Symantec DLP, so there is no need to alter existing rules. However, there is a configuration change that must be applied to all existing and new policies to enable full integration. This change is the addition of a specific response rule to all policies.  
+Add the configuration change to your Vontu: 
+1. Create a new response rule of the **Automated Response** type  
+2. Under Actions, select **Block HTTP/HTTPS** and click **Add Action**. 
+3. The rule name and rejection message are not relevant 
+
+Adding the rule to the existing policies: 
+
+1. Edit the policy.
+2. Click on the **Response** tab. 
+3. Select the response rule created above and add it.
+
+This rule must be added to all existing policies.  
+
+### Notes and limitations: 
+- DLP rules in the server must be configured with “Block” for the policy to trigger, any other result is ignored. 
+- The file information which triggered the violation can be investigated in Cloud App Security. While the details of the violation itself and cause are presented in Symantec UI. 
+- Cloud App Security cannot enforce a specific DLP policy, all polices are checked 
+- Communication with the detection server is via ICAP which is an unencrypted protocol. Additional layer of protection can be added via Stunnel.  
+  
+### Admin experience 
+
+#### Security Extension Configuration 
+
+Configuration of the DLP connector is performed via a support ticket. Once the configuration is complete, the connector can be viewed from Settings->Security Extensions->External DLP providers.  
+ 
+ 
+#### Policy setup 
+
+The image below depicts a file policy which detects sensitive files which are publicly shared on One Drive. All public files are sent to Symantec for inspection to determine whether the file is sensitive or not. 
+ 
+ 
+#### DLP Violations 
+
+Violations appear in MCAS as any other file policy violations both as a policy report and as an alert (if configured). The print screen below depicts a file policy with two file violations. The policy scans the files via Symantec integration. 
+Microsoft Cloud App Security 3rd Party DLP 
+ 
+ 
+ 
+ 
 # Third-party DLP integration over secure ICAP 
 Cloud App Security allows you to leverage existing investments in third-party classification systems such as Symantec Vontu and ForcePoint Data Loss Prevention (DLP), and enables you to scan the contents of cloud applications using existing deployments running in your environment. This is accomplished by leveraging the standard ICAP protocol.
 ICAP is an http-like protocol described in [RFC 3507](https://tools.ietf.org/html/rfc3507). In order to secure ICAP for transmission of your DLP data, it is recommended that you set up a secure SSL tunnel, or stunnel, between your DLP solution and Cloud App Security. The stunnel setup provides TLS encryption functionality to your DLP data as it passes between your DLP server and Cloud App Security. 
