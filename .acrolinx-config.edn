@@ -1,0 +1,3 @@
+{:allowed-branchname-matches ["master" "release-.*" "sandbox-.*"]
+ :allowed-filename-matches ["CloudAppSecurityDocs"]}
+
