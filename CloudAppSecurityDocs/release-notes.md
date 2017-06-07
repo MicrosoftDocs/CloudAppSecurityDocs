@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 6/4/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,14 +28,49 @@ ms.suite: ems
 
 # Release notes
 
+## Cloud App Security release 98 
+Released June 4, 2017
+ 
+Cloud Discovery updates:
+-	Users can now perform advanced filtering on discovered apps, to enable you to perform deep investigation such as filtering apps based on usage - how much upload traffic from discovered apps of certain types, how many users used certain categories of discovered apps. You can also perform multi-selection in the left panel to select multiple categories. 
+-	Started roll out of new templates for Cloud Discovery which are based on popular searches, for example "non-compliant cloud storage app". These basic filters can be used as templates to perform analysis on your discovered apps.
+-	For ease of use, you can now perform actions such as sanction and unsanction across multiple apps in one action.
+-	We are now rolling out the ability to create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group.
+
+New features:
+-	RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Azure Active Directory and Office 365 Global admins and Security admins have full permissions in the portal, and all Security readers in Azure Active Directory and Office 365 have read-only access in Cloud App Security. You can add additional admins or override permissions using the “Manage Access” option. For more information see [Managing admin permissions](manage-admins.md).
+-	Detailed threat intelligence reports are now available for risky IP addresses detected by Microsoft intelligent security graph: when an activity is performed by a botnet, you will see the name of the botnet (if available) with a link to a detailed report about the specific botnet.
+ 
+## Cloud App Security release 97
+Released May 24, 2017
+
+### New features
+-	Investigate files and policy violations: You can now see all policy matches in the Files page. In addition, you the File Alert page has been improved to now include a separate tab for History of the specific file enabling you to drill down into the violation history across all policies for the specific file. Every History event includes a snapshot of the file at the time of the alert. It will include an indication of whether the file was deleted or quarantined.
+-	[Admin quarantine](use-case-admin-quarantine.md) is now available for Office 365 SharePoint and OneDrive for Business files, in private preview. This feature enables you to quarantine files that match policies, or set an automated action to quarantine them, removing them from the user’s SharePoint directory and copying the original file to the admin quarantine location of your choice.
+        
+### Cloud Discovery improvements
+
+-	Cloud Discovery support for Cisco Meraki logs has been improved.
+-	The option to suggest an improvement to Cloud Discovery now enables you to suggest new risk factor.
+-	The custom log parser was improved to support log formats by separating the setting of time and date and to give you the option to set timestamp.
+-	Starting to roll out the ability to create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group.
+Other updates
+-	Cloud App Security now includes support for the Microsoft Power BI activities that are supported in the Office 365 audit log. This feature is being rolled out gradually. Note that you need to enable [this functionality in the Power BI portal](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/).
+-	In activity policies, you can now set notify and suspend actions to be taken on the user across all connected apps. For example, you can set a policy to always notify the user's manager and suspend the user immediately whenever the user has multiple failed logins in any connected app.
+ 
+## OOB release
+-	In a speedy reaction to the ransomware sweeping the globe, on Sunday, the Cloud App Security team added a new [Potential ransomware activity detection policy](use-case-ransomware.md) template to the portal that includes the signature extension of WannaCrypt. We advise you to the set this policy today.
 
 ## Cloud App Security release 96
 Released May 8, 2017
 
 New features:
+
 -	Continuing the gradual roll out of the Security Reader permission which enables you to manage the permissions you grant to your admins inside the Cloud App Security console. By default, all Azure Active Directory and Office 365 Global admins and Security admins have full permissions in the portal, and all Security readers in Azure Active Directory and Office 365 will have read-only access in Cloud App Security. For more information see [Managing admin permissions](manage-admins.md).
 -	Completed roll out of Cloud Discovery support for user-defined log parsers for CSV-based logs. Cloud App Security enables you to configure a parser for your previously unsupported appliances by providing you with the tools to delineate which columns correlate to specific data. For more information see [Custom log parser](custom-log-parser.md).
+
 Improvements:
+
 -	Cloud Discovery now supports Juniper SSG appliances.
 -	Cloud Discovery support for Cisco ASA logs has been improved for better visibility.
 -	You can now more easily run bulk actions and select multiple records in Cloud App Security portal tables: the page length has been increased to improve bulk operations.
@@ -51,7 +86,7 @@ Improvements:
     For example, you can now monitor users who were granted **SendAs** permissions to other users’ mailboxes and as a result can now send emails in their name.
 
 
-## Cloud App Security release 95 (in roll out)
+## Cloud App Security release 95
 Released April 24, 2017
 
 **Updates**
