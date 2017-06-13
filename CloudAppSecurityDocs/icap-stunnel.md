@@ -40,7 +40,7 @@ This guide provides the steps necessary for configuring the ICAP connection in C
 ## Architecture
 Since Cloud App Security runs in Azure, a deployment in Azure will yield improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel should be deployed together on the same network to make sure the traffic is encrypted.
 
-![Stunnel architecture](./media/stunnel-architecture.png)
+![Stunnel architecture](./media/icap-architecture-stunnel.png)
 
 ## Prerequisites
 In order for CAS to be able to reach the ICAP server, you need to open the following IP addresses and ports and make the proper adjustments to your network configuration, by opening the Firewall to the CAS external IP address with a dynamic port. 
