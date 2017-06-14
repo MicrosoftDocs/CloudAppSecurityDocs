@@ -42,7 +42,7 @@ Cloud App Security scans your cloud environment and based on your file policy co
 
 ![Stunnel architecture](./media/icap-architecture-stunnel.png)
 
-Since Cloud App Security runs in Azure, a deployment in Azure will yield improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel should be deployed together on the same network to make sure the traffic is encrypted.
+Since Cloud App Security runs in Azure, a deployment in Azure will yield improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel must be deployed together on the same network to make sure the traffic is encrypted.
 
 ## Prerequisites
 In order for Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to the external IP addresses used by Cloud App Security with a dynamic source port number. 
@@ -71,6 +71,8 @@ Also, under **Allow connection to this ICAP Server from the following IP address
  
     ![ICAP blocking](./media/icap-blocking.png)
  
+
+
 ## STEP 2:  Set up your stunnel server
 
 In this step you will set up the stunnel connected to your ICAP server.
@@ -87,10 +89,9 @@ The following example is based on an Ubuntu server installation, when signed in 
 
 On the prepared server, download and install the latest version of stunnel by running the following command on your Ubuntu server which will install both stunnel and OpenSSL:
 
-    sudo -i
-    sudo apt-get update
-    sudo apt-get install openssl -y
-	sudo apt-get install stunnel4 -y
+    apt-get update
+    apt-get install openssl -y
+	apt-get install stunnel4 -y
 Verify that stunnel is installed by running the following command from a console. You should get the version number and a list of configuration options:
 
 	stunnel-version
@@ -115,23 +116,23 @@ Replace these variables:
 ### Download the Cloud App Security stunnel client public key
 
 Download the public key from this location: https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem
-And save it in this location: 
-**/etc/ssl/certs/<CAfile>.pem**
+and save it in this location: 
+**/etc/ssl/certs/CAfile.pem**
 
 ### Configure stunnel
 
-The stunnel configuration is set in the stunnel.conf file, found in <stunnel_dir>/tools.
+The stunnel configuration is set in the stunnel.conf file.
 
 1. Create the stunnel.conf file in the following directory: **vim /etc/stunnel/stunnel.conf**
 
 3.	Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client:
 
-    [microsoft-Cloud App Security]
-    accept = 0.0.0.0:11344
-    connect = **ICAP Server IP**:1344
-    cert = /etc/ssl/private/**stunnel-key**.pem
-    CAfile = /etc/ssl/certs/**CAfile**.pem
-    TIMEOUTclose = 1
+        [microsoft-Cloud App Security]
+         accept = 0.0.0.0:11344
+         connect = **ICAP Server IP**:1344
+          cert = /etc/ssl/private/**stunnel-key**.pem
+          CAfile = /etc/ssl/certs/**CAfile**.pem
+          TIMEOUTclose = 1
 
 > [!NOTE] 
 > By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number - you will be required to enter it in the next step.
@@ -142,7 +143,7 @@ Update your IP address table with the following route rule:
     iptables -I INPUT -p tcp --dport 11344 -j ACCEPT 
 
 ### Run stunnel
-1.	On your ICAP server, run the following:
+1.	On your stunnel server, run the following:
 
         vim /etc/default/stunnel4
 
