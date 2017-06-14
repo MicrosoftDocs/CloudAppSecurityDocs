@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cloud App Security third-party DLP integration over secure ICAP | Microsoft Docs
+title: Cloud App Security external DLP integration over secure ICAP | Microsoft Docs
 description: This topic provides the steps necessary for configuring the ICAP connection in Cloud App Security and the stunnel setup.
 keywords:
 author: rkarlin
@@ -26,133 +26,175 @@ ms.suite: ems
 
 ---
 
-# Third-party DLP integration over secure ICAP 
-Cloud App Security allows you to leverage existing investments in third-party classification systems such as Symantec Vontu and ForcePoint Data Loss Prevention (DLP), and enables you to scan the contents of cloud applications using existing deployments running in your environment. This is accomplished by leveraging the standard ICAP protocol.
-ICAP is an http-like protocol described in [RFC 3507](https://tools.ietf.org/html/rfc3507). In order to secure ICAP for transmission of your DLP data, it is recommended that you set up a secure SSL tunnel, or stunnel, between your DLP solution and Cloud App Security. The stunnel setup provides TLS encryption functionality to your DLP data as it passes between your DLP server and Cloud App Security. 
+# External DLP integration
+
+> [!NOTE] 
+> This feature is in preview.
+
+Cloud App Security can integrate with existing DLP solutions to extend these controls to the cloud while preserving a consistent and unified policy across on-premises and cloud activities. The platform exports easy-to-use interfaces including REST API and ICAP, enabling integration with content classification systems such as Symantec Data Loss Prevention (formerly Vontu Data Loss Prevention) or Forcepoint DLP. 
+
+Integration is accomplished by leveraging the standard ICAP protocol,an http-like protocol described in [RFC 3507](https://tools.ietf.org/html/rfc3507). In order to secure ICAP for transmission of your data, it is required to set up a secure SSL tunnel (stunnel) between your DLP solution and Cloud App Security. The stunnel setup provides TLS encryption functionality to your data as it travels between your DLP server and Cloud App Security. 
+
 This guide provides the steps necessary for configuring the ICAP connection in Cloud App Security and the stunnel setup to secure communication through it.
 
-Follow these steps to get up and running:
-1.	Set up ForcePoint Protector ICAP
-2.	Set up stunnel
-3.	Connect to Cloud App Security
-
 ## Architecture
-Since Cloud App Security runs in Azure, a deployment in Azure will yield improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel should be deployed together on the same network to make sure the traffic is encrypted.
+Cloud App Security scans your cloud environment and based on your file policy configuration decides whether to scan the file using the internal DLP engine or the external DLP. If external DLP scan is applied, the file is sent over the secure tunnel to the customer environment where it is relayed to the ICAP appliance for the DLP verdict: allowed/blocked. Responses are sent back to Cloud App Security over the stunnel where it is used by the policy to determine subsequent actions such as notifications, quarantine and sharing control.
 
-![Stunnel architecture](./media/stunnel-architecture.png)
+![Stunnel architecture](./media/icap-architecture-stunnel.png)
+
+Since Cloud App Security runs in Azure, a deployment in Azure will yield improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel must be deployed together on the same network to make sure the traffic is encrypted.
 
 ## Prerequisites
-In order for CAS to be able to reach the ICAP server, you need to open the following IP addresses and ports and make the proper adjustments to your network configuration, by opening the Firewall to the CAS external IP address with a dynamic port. 
-By default the port number is set to 11344. You can change this to another port if necessary, but be sure to update the support ticket you create in the next step with this information.
-1.	Source addresses: 
-Refer to [Connect apps, under Prerequisites](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
-2.	Source TCP port: 
-Dynamic
-3.	Destination address(es): 
-IPs of the stunnel  connected to the ForcePoint ICAP server(s) that you will configure in the next steps
-4.	Destination TCP port:
-As defined in your network
+In order for Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to the external IP addresses used by Cloud App Security with a dynamic source port number. 
 
-## STEP 1:  Set up ForcePoint DLP ICAP integration
-1.	In your ForcePoint appliance, go to **Deployment** > **System Modules**. 
+1.	Source addresses: Refer to [Connect apps, under Prerequisites](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)
+2.	Source TCP port: Dynamic
+3.	Destination address(es): one or two IP address of the stunnel connected to the external ICAP server that you will configure in the next steps
+4.	Destination TCP port: As defined in your network
 
-![ICAP deployment](./media/icap-system-modules.png)
+## STEP 1:  Set up ICAP server
+
+Set up an ICAP server, taking note of the port number and make sure that you set **Mode** to **Blocking**. Blocking mode sets the ICAP server to relay the classification verdict back to Cloud App Security.
+
+For example, in ForcePoint, set your appliance using the following steps:
+
+1.	In your DLP appliance, go to **Deployment** > **System Modules**. 
+
+    ![ICAP deployment](./media/icap-system-modules.png)
 
 2.	In the **General** tab, make sure **ICAP Server** is **Enabled** and the default **Port** is set to **1344**. 
 Also, under **Allow connection to this ICAP Server from the following IP addresses**, select **Any IP address**.
  
-![ICAP configuration](./media/icap-ip-address.png)
+    ![ICAP configuration](./media/icap-ip-address.png)
 
 3.	In the HTTP/HTTPS tab, make sure to set **Mode** to **Blocking**.
  
- ![ICAP blocking](./media/icap-blocking.png)
+    ![ICAP blocking](./media/icap-blocking.png)
  
-## STEP 2:  Set up stunnel
+
+
+## STEP 2:  Set up your stunnel server
+
+In this step you will set up the stunnel connected to your ICAP server.
 
 ### Prerequisite
 
-**A server** - either Linux based on a major distribution, or Windows Server. 
-Refer to the stunnel website for details about the types of servers that support stunnel installation. If you are using Linux, you can use your Linux distribution manager to install it. This guide provides instructions that are appropriate for installation on an Ubuntu server, when signed in as root user. 
+**A server** - either a Windows Server or a Linux server based on a major distribution.
+
+Refer to the [stunnel website](https://www.stunnel.org/index.html) for details about the types of servers that support stunnel installation. If you are using Linux, you can use your Linux distribution manager to install it.
+
+The following example is based on an Ubuntu server installation, when signed in as root user - for other servers use parallel commands. 
 
 ### Install stunnel
 
 On the prepared server, download and install the latest version of stunnel by running the following command on your Ubuntu server which will install both stunnel and OpenSSL:
 
-    sudo -i
-    sudo apt-get update
-    sudo apt-get install openssl -y
-	sudo apt-get install stunnel4 -y
+    apt-get update
+    apt-get install openssl -y
+	apt-get install stunnel4 -y
 Verify that stunnel is installed by running the following command from a console. You should get the version number and a list of configuration options:
 
 	stunnel-version
 
 ### Generate certificates
 
-The DLP server and Cloud App Security use the private key and public certificate for server encryption and authentication across the stunnel. 
+The ICAP server and Cloud App Security use a private key and public certificate for server encryption and authentication across the stunnel. 
 Make sure you create the private key without a pass phrase so that stunnel can run as a background service. Also, set the permission on the files to **readable** for the stunnel owner and to **none** for everyone else.
-You can create the certificates on one of the following ways:
--	Use your certificate management server to create an SSL certificate on your DLP server, and then copy the keys to the server you prepared for the stunnel installation. 
+
+You can create the certificates in one of the following ways:
+-	Use your certificate management server to create an SSL certificate on your ICAP server, and then copy the keys to the server you prepared for the stunnel installation. 
 -	Or, on the stunnel server, use the following OpenSSL commands to generate a private key and a self-signed certificate. 
 Replace these variables:
-    - “key.pem” with the name of your private key
-    - “cert.pem” with the name of your certificate
-    - “stunnel-key” with the name of the newly created key
+    - **“key.pem”** with the name of your private key
+    - **“cert.pem”** with the name of your certificate
+    - **“stunnel-key”** with the name of the newly created key
        
-        openssl genrsa -out key.pem 2048
-        openssl req -new -x509 -key key.pem -out cert.pem -days 1095
-        cat key.pem cert.pem >> /etc/ssl/private/stunnel-key.pem
+            openssl genrsa -out key.pem 2048
+            openssl req -new -x509 -key key.pem -out cert.pem -days 1095
+            cat key.pem cert.pem >> /etc/ssl/private/stunnel-key.pem
 
 ### Download the Cloud App Security stunnel client public key
 
 Download the public key from this location: https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem
-And save it in this location: 
-**/etc/ssl/certs/<CAfile>.pem**
+and save it in this location: 
+**/etc/ssl/certs/CAfile.pem**
 
 ### Configure stunnel
-1.	stunnel gets its configuration settings from the stunnel.conf file, found in <stunnel_dir>/tools.
-2.	First, create the stunnel.conf file here: 
-**vim /etc/stunnel/stunnel.conf**
-3.	Open the file and paste in the following server configuration lines, where **DLP Server IP** is the IP address of your DLP server, **stunnel-key** is the key you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client:
 
-    [microsoft-cas]
-    accept = 0.0.0.0:11344
-    connect = <DLP Server IP>:1344
-    cert = /etc/ssl/private/<stunnel-key>.pem
-    CAfile = /etc/ssl/certs/<CAfile>.pem
-    TIMEOUTclose = 1
+The stunnel configuration is set in the stunnel.conf file.
+
+1. Create the stunnel.conf file in the following directory: **vim /etc/stunnel/stunnel.conf**
+
+3.	Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client:
+
+        [microsoft-Cloud App Security]
+         accept = 0.0.0.0:11344
+         connect = **ICAP Server IP**:1344
+          cert = /etc/ssl/private/**stunnel-key**.pem
+          CAfile = /etc/ssl/certs/**CAfile**.pem
+          TIMEOUTclose = 1
 
 > [!NOTE] 
-> By default the port number is set to 11344. You can change this to another port if necessary, but be sure to update the support ticket you create in the next step with this information.
+> By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number - you will be required to enter it in the next step.
 
 ### Update your IP table
 Update your IP address table with the following route rule:
+   
     iptables -I INPUT -p tcp --dport 11344 -j ACCEPT 
 
 ### Run stunnel
-1.	On your DLP server, run the following:
+1.	On your stunnel server, run the following:
 
-    vim /etc/default/stunnel4
+        vim /etc/default/stunnel4
 
 2.	Change the variable ENABLED to 1:
 
-ENABLED=1
+        ENABLED=1
 
 3.	Restart the service for the configuration to take effect:
 
-    /etc/init.d/stunnel4 restart
+        /etc/init.d/stunnel4 restart
 
 4.	Run the following commands to verify that the stunnel is running properly:
 
-    ps -A | grep stunnel
+        ps -A | grep stunnel
 
-and that it is listening on the port listed:
+    and that it is listening on the port listed:
 
-    netstat -anp | grep 11344
+        netstat -anp | grep 11344
 
-5.	If the process is still not running, refer to the [stunnel documentation](https://www.stunnel.org/docs.html) to troubleshoot.
+If the process is still not running, refer to the [stunnel documentation](https://www.stunnel.org/docs.html) to troubleshoot.
 
 ## STEP 3:  Connect to Cloud App Security
-Open a support ticket with Cloud App Security and include:
-- The IP address and port number of the server on which you installed stunnel.
-- The public certificate of the root CA that created the private key.
-- If the certificate was generated by OpenSSL commands, send the cert.pem (the certificate) instead of the root CA.
+
+1. In Cloud App Security, under **Settings** select **Security extensions** and select the **External DLP** tab.
+
+2. Click on the plus to add a new connection. 
+
+3. In the **Add new external DLP** wizard, provide a name (for example My Forcepoint connector) that will be used to identify the connector.
+
+4. Select the **Connection type**:
+    - **Symantec Vontu** – select this to use the customized integration for Vontu DLP appliances
+    - **Forcepoint DLP** – select this to use the customized integration for Forcepoint DLP appliances
+    - **Generic ICAP – REQMOD** - for other DLP appliances that use [Request Modification](https://tools.ietf.org/html/rfc3507)
+    - **Generic ICAP – RESPMOD** - for other DLP appliances that use [Response Modification](https://tools.ietf.org/html/rfc3507)
+    ![Cloud App Security ICAP connection](./media/icap-wizard1.png)
+
+4. Browse to select the public root CA of your stunnel to use to connect to your stunnel, and click **Next**.
+
+   > [!NOTE]
+   > It is highly recommended to check the **Use secure ICAP** box to set up an encrypted stunnel gateway. If, for testing purposes or if you don't have an stunnel server, you can uncheck this to integrate directly with your DLP server. 
+
+5. In the **Server configuration** screen, provide the **IP address** and **Port** of the stunnel server that you set up in Step 2. For load balancing purposes you can configure the **IP address** and **Port** of an additional server. The provided IP addresses should be the external static IP addresses of your servers.
+
+6. Click **Next**. Cloud App Security will test connectivity to the server you configured. If you receive an error, review the instructions and network settings. After it is successfully connected, you can click **Quit**.
+
+   ![Cloud App Security ICAP connection](./media/icap-wizard2.png)
+
+7. Now, to direct traffic to this external DLP server, when you create a **File policy**, under **DLP method**, select the connection you just created.
+
+
+
+
+
+
