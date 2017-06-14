@@ -47,9 +47,15 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 1. On the **Settings** menu, select **Security extensions** and then **API tokens**.
 
-2. Click **Generate new token** and provide a name to identify the token in the future and click **Next**.
+2. Click the plus icon, **Generate new token** and provide a name to identify the token in the future, and click **Next**.
 
 3. Copy the token value and save it somewhere for recovery - if you lose it you will need to regenerate the token. The token will have the privileges of the user who issued it. For example, a security reader cannot issue a token that can alter data.
+
+4. You can filter the tokens by status: Active, Inactive or Generated. 
+
+  - Generated are tokens that have never been used. 
+  - Active are tokens that were generated and were used within the past 7 days. 
+  - Inactive were used but there was no activity in the last 7 days.
 
 
 ## API token management
