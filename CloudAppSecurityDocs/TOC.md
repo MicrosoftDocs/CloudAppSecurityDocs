@@ -53,6 +53,7 @@
 ## Integrate
 ### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)
+###[API tokens](api-tokens.md)
 # Troubleshoot
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
