@@ -96,11 +96,11 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 4. Create a certificate in one of the following ways:
 
--	Use your certificate management server to create an SSL certificate on your ICAP server, and then copy the keys to the server you prepared for the stunnel installation.
--	Or, on the stunnel server, use the following OpenSSL commands to generate a private key and a self-signed certificate. Replace these variables:
-    -	**key.pem** with the name of your private key
-    -	**cert.pem** with the name of your certificate
-    -	**stunnel-key** with the name of the newly created key
+   -	Use your certificate management server to create an SSL certificate on your ICAP server, and then copy the keys to the server you prepared for the stunnel installation.
+   -	Or, on the stunnel server, use the following OpenSSL commands to generate a private key and a self-signed certificate. Replace these variables:
+       -	**key.pem** with the name of your private key
+       -	**cert.pem** with the name of your certificate
+       -	**stunnel-key** with the name of the newly created key
 
 5. Open  your stunnel installation path `\config` (by default c\config)
 
@@ -109,12 +109,13 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
         ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095
 7. Enter any necessary data into the certificate.
 
-8. Concat the cert.pem and key.pem and save them to the file: **stunnel-key.pem**
-cat cert.pem  key.pem >> stunnel-key.pem
+8. Concat the cert.pem and key.pem and save them to the file:                   stunnel-key.pem
+        cat cert.pem  key.pem >> stunnel-key.pem
 
 9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
 
-10. Add the local port to your windows firewall:
+10. Add the local port to your Windows firewall:
+
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
         netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
@@ -126,6 +127,7 @@ cat cert.pem  key.pem >> stunnel-key.pem
    ![Edit Windows Server configuration](./media/stunnel-windows.png)
  
 13. Remove the gmail example sections
+
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
         connect = **ICAP Server IP**:1344
