@@ -87,7 +87,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 #### Install stunnel on Windows
 
-1. [Download the latest windows installation](https://www.stunnel.org/downloads.html) (this should work on any recent Windows Server edition).
+1. [Download the latest Windows Server installation](https://www.stunnel.org/downloads.html) (this should work on any recent Windows Server edition).
 (default installation)
 
 2. During installation, do not create a new self-signed certificate, you will create a certificate in a later step.
@@ -106,9 +106,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 6. Run the command line with admin permissions: `..\bin\openssl.exe genrsa -out ey.pem 2048  ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-7. Enter any necessary data into the certificate.
-
-8. Concat the cert.pem and key.pem and save them to the file: `stunnel-key.pem cat cert.pem  key.pem >> stunnel-key.pem`
+8. Concatenate the cert.pem and key.pem and save them to the file: `stunnel-key.pem cat cert.pem  key.pem >> stunnel-key.pem`
 
 9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
 
@@ -118,13 +116,13 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
         netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
-11. Run: `c:\Program Files (x86)\stunnel\bin\stunnel.exe`
+11. Run: `c:\Program Files (x86)\stunnel\bin\stunnel.exe` to open the stunnel application. 
 
 12. Click **Configuration** and then **Edit configuration**.
 
    ![Edit Windows Server configuration](./media/stunnel-windows.png)
  
-13. Run the following commands:
+13. Delete any example text that is in place (in the example it displays Gmail text) and cop the following into the file:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -133,9 +131,9 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
         CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
         TIMEOUTclose = 0
 
-12. After finishing the configuration, click **Reload configuration**.
+12. Save the file and then click **Reload configuration**.
 
-13. To validate that everything is running as expected, run: 
+13. To validate that everything is running as expected, from a command prompt, run: 
 `netstat -nao  | findstr 11344`
 
 
