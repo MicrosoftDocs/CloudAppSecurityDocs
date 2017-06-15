@@ -102,7 +102,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
        -	**cert.pem** with the name of your certificate
        -	**stunnel-key** with the name of the newly created key
 
-5.Under your stunnel installation path, open the config directory. By default it is: 
+5. Under your stunnel installation path, open the config directory. By default it is: 
         c:\Program Files (x86)\stunnel\config\
 6. Run the command line with admin permissions: 
         ..\bin\openssl.exe genrsa -out ey.pem 2048 
