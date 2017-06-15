@@ -124,7 +124,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
    ![Edit Windows Server configuration](./media/stunnel-windows.png)
  
-13. Remove the gmail example sections
+13. Run the following commands:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
