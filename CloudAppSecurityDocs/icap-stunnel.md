@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/1/2017
+ms.date: 6/15/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -77,15 +77,71 @@ Also, under **Allow connection to this ICAP Server from the following IP address
 
 In this step you will set up the stunnel connected to your ICAP server.
 
-### Prerequisite
+### Install stunnel on a server
 
-**A server** - either a Windows Server or a Linux server based on a major distribution.
+**Prerequisites**
+
+- **A server** - either a Windows Server or a Linux server based on a major distribution.
 
 Refer to the [stunnel website](https://www.stunnel.org/index.html) for details about the types of servers that support stunnel installation. If you are using Linux, you can use your Linux distribution manager to install it.
 
-The following example is based on an Ubuntu server installation, when signed in as root user - for other servers use parallel commands. 
+### Install stunnel on Windows
 
-### Install stunnel
+1. [Download the latest windows installation](https://www.stunnel.org/downloads.html) (this should work on any recent WindowsSserver edition).
+(default installation)
+
+2. During installation, do not create a new self-signed certificate, you will create a certificate in a later step.
+
+3. Click **Start server after installation**.
+
+4. Create a certificate in one of the following ways:
+
+-	Use your certificate management server to create an SSL certificate on your ICAP server, and then copy the keys to the server you prepared for the stunnel installation.
+-	Or, on the stunnel server, use the following OpenSSL commands to generate a private key and a self-signed certificate. Replace these variables:
+    -	**key.pem** with the name of your private key
+    -	**cert.pem** with the name of your certificate
+    -	**stunnel-key** with the name of the newly created key
+
+5. Open  your stunnel installation path `\config` (by default c\config)
+
+6. Run the command line with admin permissions: 
+        ..\bin\openssl.exe genrsa -out key.pem 2048
+        ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095
+7. Enter any necessary data into the certificate.
+
+8. Concat the cert.pem and key.pem and save them to the file: **stunnel-key.pem**
+cat cert.pem  key.pem >> stunnel-key.pem
+
+9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
+
+10. Add the local port to your windows firewall:
+        rem Open TCP Port 11344 inbound and outbound
+        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
+        netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
+11. Run:
+         c:\Program Files (x86)\stunnel\bin\stunnel.exe
+
+12. Click **Configuration** and then **Edit configuration**.
+
+   ![Edit Windows Server configuration](./media/stunnel-windows.png)
+ 
+13. Remove the gmail example sections
+        [microsoft-Cloud App Security]
+        accept = 0.0.0.0:11344
+        connect = **ICAP Server IP**:1344
+        cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
+        CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
+        TIMEOUTclose = 0
+
+12. After finishing the configuration, click **Reload configuration**.
+
+13. To validate that everything is running as expected, run: 
+`netstat -nao  | findstr 11344`
+
+
+#### Install stunnel on Ubuntu
+
+The following example is based on an Ubuntu server installation, when signed in as root user - for other servers use parallel commands. 
 
 On the prepared server, download and install the latest version of stunnel by running the following command on your Ubuntu server which will install both stunnel and OpenSSL:
 
