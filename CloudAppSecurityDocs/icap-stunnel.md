@@ -102,15 +102,18 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
        -	**cert.pem** with the name of your certificate
        -	**stunnel-key** with the name of the newly created key
 
-5. Open  your stunnel installation path `\config` (by default c\config)
+5.Under your stunnel installation path, open the config directory. By default it is: `c:\Program Files (x86)\stunnel\config\`
 
-6. Run the command line with admin permissions: `..\bin\openssl.exe genrsa -out ey.pem 2048  ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
+6. Run the command line with admin permissions: 
 
-8. Concatenate the cert.pem and key.pem and save them to the file: `stunnel-key.pem cat cert.pem  key.pem >> stunnel-key.pem`
+`..\bin\openssl.exe genrsa -out ey.pem 2048 `
+` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
+
+8. Concatenate the cert.pem and key.pem and save them to the file: `cat cert.pem key.pem >> stunnel-key.pem`
 
 9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
 
-10. Add the local port to your Windows firewall:
+10. Add the following rules to open the port in the Windows firewall:
 
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
@@ -122,7 +125,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
    ![Edit Windows Server configuration](./media/stunnel-windows.png)
  
-13. Delete any example text that is in place (in the example it displays Gmail text) and cop the following into the file:
+13. Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client. Also, delete any example text that is in place (in the example it displays Gmail text) and cop the following into the file:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -135,7 +138,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 13. To validate that everything is running as expected, from a command prompt, run: 
 `netstat -nao  | findstr 11344`
-
+ 
 
 #### Install stunnel on Ubuntu
 
@@ -218,6 +221,8 @@ Update your IP address table with the following route rule:
         netstat -anp | grep 11344
 
 If the process is still not running, refer to the [stunnel documentation](https://www.stunnel.org/docs.html) to troubleshoot.
+
+5. Make sure that the network in which the stunnel server was deployed matches the network prerequisites as mentioned earlier. This is required in order to allow incoming connections from Cloud App Security to successfully reach the server.
 
 ## STEP 3:  Connect to Cloud App Security
 
