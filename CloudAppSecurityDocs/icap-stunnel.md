@@ -85,9 +85,9 @@ In this step you will set up the stunnel connected to your ICAP server.
 
 Refer to the [stunnel website](https://www.stunnel.org/index.html) for details about the types of servers that support stunnel installation. If you are using Linux, you can use your Linux distribution manager to install it.
 
-### Install stunnel on Windows
+#### Install stunnel on Windows
 
-1. [Download the latest windows installation](https://www.stunnel.org/downloads.html) (this should work on any recent WindowsSserver edition).
+1. [Download the latest windows installation](https://www.stunnel.org/downloads.html) (this should work on any recent Windows Server edition).
 (default installation)
 
 2. During installation, do not create a new self-signed certificate, you will create a certificate in a later step.
