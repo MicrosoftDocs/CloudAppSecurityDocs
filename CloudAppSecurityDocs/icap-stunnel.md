@@ -219,9 +219,10 @@ Update your IP address table with the following route rule:
 
         netstat -anp | grep 11344
 
+5. Make sure that the network in which the stunnel server was deployed matches the network prerequisites as mentioned earlier. This is required in order to allow incoming connections from Cloud App Security to successfully reach the server.
+
 If the process is still not running, refer to the [stunnel documentation](https://www.stunnel.org/docs.html) to troubleshoot.
 
-5. Make sure that the network in which the stunnel server was deployed matches the network prerequisites as mentioned earlier. This is required in order to allow incoming connections from Cloud App Security to successfully reach the server.
 
 ## STEP 3:  Connect to Cloud App Security
 
