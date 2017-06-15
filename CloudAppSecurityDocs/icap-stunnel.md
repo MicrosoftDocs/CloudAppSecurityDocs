@@ -104,13 +104,11 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 5. Open  your stunnel installation path `\config` (by default c\config)
 
-6. Run the command line with admin permissions: 
-        ..\bin\openssl.exe genrsa -out key.pem 2048
-        ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095
+6. Run the command line with admin permissions: `..\bin\openssl.exe genrsa -out ey.pem 2048  ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
+
 7. Enter any necessary data into the certificate.
 
-8. Concat the cert.pem and key.pem and save them to the file:                   stunnel-key.pem
-        cat cert.pem  key.pem >> stunnel-key.pem
+8. Concat the cert.pem and key.pem and save them to the file: `stunnel-key.pem cat cert.pem  key.pem >> stunnel-key.pem`
 
 9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
 
@@ -119,8 +117,8 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
         netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
-11. Run:
-         c:\Program Files (x86)\stunnel\bin\stunnel.exe
+
+11. Run: `c:\Program Files (x86)\stunnel\bin\stunnel.exe`
 
 12. Click **Configuration** and then **Edit configuration**.
 
