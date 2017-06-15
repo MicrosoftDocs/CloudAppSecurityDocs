@@ -230,7 +230,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 2. Click on the plus to add a new connection. 
 
-3. In the **Add new external DLP** wizard, provide a name (for example My Forcepoint connector) that will be used to identify the connector.
+3. In the **Add  new external DLP** wizard, provide a **Connection name** (for example My Forcepoint connector) that will be used to identify the connector.
 
 4. Select the **Connection type**:
     - **Symantec Vontu** – select this to use the customized integration for Vontu DLP appliances
