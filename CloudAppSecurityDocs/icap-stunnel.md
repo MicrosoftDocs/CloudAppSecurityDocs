@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/1/2017
+ms.date: 6/15/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -77,15 +77,71 @@ Also, under **Allow connection to this ICAP Server from the following IP address
 
 In this step you will set up the stunnel connected to your ICAP server.
 
-### Prerequisite
+### Install stunnel on a server
 
-**A server** - either a Windows Server or a Linux server based on a major distribution.
+**Prerequisites**
+
+- **A server** - either a Windows Server or a Linux server based on a major distribution.
 
 Refer to the [stunnel website](https://www.stunnel.org/index.html) for details about the types of servers that support stunnel installation. If you are using Linux, you can use your Linux distribution manager to install it.
 
-The following example is based on an Ubuntu server installation, when signed in as root user - for other servers use parallel commands. 
+#### Install stunnel on Windows
 
-### Install stunnel
+1. [Download the latest Windows Server installation](https://www.stunnel.org/downloads.html) (this should work on any recent Windows Server edition).
+(default installation)
+
+2. During installation, do not create a new self-signed certificate, you will create a certificate in a later step.
+
+3. Click **Start server after installation**.
+
+4. Create a certificate in one of the following ways:
+
+   -	Use your certificate management server to create an SSL certificate on your ICAP server, and then copy the keys to the server you prepared for the stunnel installation.
+   -	Or, on the stunnel server, use the following OpenSSL commands to generate a private key and a self-signed certificate. Replace these variables:
+       -	**key.pem** with the name of your private key
+       -	**cert.pem** with the name of your certificate
+       -	**stunnel-key** with the name of the newly created key
+
+5. Under your stunnel installation path, open the config directory. By default it is: 
+        c:\Program Files (x86)\stunnel\config\
+6. Run the command line with admin permissions: 
+        ..\bin\openssl.exe genrsa -out ey.pem 2048 
+         ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095
+
+8. Concatenate the cert.pem and key.pem and save them to the file: `cat cert.pem key.pem >> stunnel-key.pem`
+
+9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
+
+10. Add the following rules to open the port in the Windows firewall:
+
+        rem Open TCP Port 11344 inbound and outbound
+        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
+        netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
+
+11. Run: `c:\Program Files (x86)\stunnel\bin\stunnel.exe` to open the stunnel application. 
+
+12. Click **Configuration** and then **Edit configuration**.
+
+   ![Edit Windows Server configuration](./media/stunnel-windows.png)
+ 
+13. Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client. Also, delete any example text that is in place (in the example it displays Gmail text) and cop the following into the file:
+
+        [microsoft-Cloud App Security]
+        accept = 0.0.0.0:11344
+        connect = **ICAP Server IP**:1344
+        cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
+        CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
+        TIMEOUTclose = 0
+
+12. Save the file and then click **Reload configuration**.
+
+13. To validate that everything is running as expected, from a command prompt, run: 
+`netstat -nao  | findstr 11344`
+ 
+
+#### Install stunnel on Ubuntu
+
+The following example is based on an Ubuntu server installation, when signed in as root user - for other servers use parallel commands. 
 
 On the prepared server, download and install the latest version of stunnel by running the following command on your Ubuntu server which will install both stunnel and OpenSSL:
 
@@ -163,7 +219,10 @@ Update your IP address table with the following route rule:
 
         netstat -anp | grep 11344
 
+5. Make sure that the network in which the stunnel server was deployed matches the network prerequisites as mentioned earlier. This is required in order to allow incoming connections from Cloud App Security to successfully reach the server.
+
 If the process is still not running, refer to the [stunnel documentation](https://www.stunnel.org/docs.html) to troubleshoot.
+
 
 ## STEP 3:  Connect to Cloud App Security
 
@@ -171,7 +230,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 2. Click on the plus to add a new connection. 
 
-3. In the **Add new external DLP** wizard, provide a name (for example My Forcepoint connector) that will be used to identify the connector.
+3. In the **Add  new external DLP** wizard, provide a **Connection name** (for example My Forcepoint connector) that will be used to identify the connector.
 
 4. Select the **Connection type**:
     - **Symantec Vontu** – select this to use the customized integration for Vontu DLP appliances
