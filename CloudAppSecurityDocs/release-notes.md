@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2017
+ms.date: 6/18/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,29 @@ ms.suite: ems
 ---
 
 # Release notes
+
+## Cloud App Security release 99
+Released June 18, 2017
+
+**New Features**
+
+-	You can now require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option.
+- Security extensions are now available for Cloud App Security under **Settings**. Security Extensions include the following sections:
+  -	[API tokens](api-tokens.md) – generate and manage your own API tokens to integrate Cloud App Security with third-party software
+  - [SIEM agents](siem.md) - You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Cloud App Security and streams them into the SIEM server.
+  - [External DLP - Preview](icap-stunnel.md) – Cloud App Security allows you to leverage existing investments in third-party classification systems such as Data Loss Prevention (DLP) solutions, and enables you to scan the contents of cloud applications using existing deployments running in your environment. Contact your account manager to join the preview.
+-	You can now filter for **Add impersonation role assignment** activities in the Activity log. This activity enables you to detect when an admin has granted an **Application Impersonation** role to any user or system account, using the cmdlet **New-ManagementRoleAssignment**. This role allows the impersonator to perform operations by using the permissions associated with the impersonated account, instead of the permissions associated with the impersonator’s account.
+Cloud Discovery Improvements:
+-	Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username received in the discovery traffic logs will be matched and replaced by the Azure AD username enabling the following new features:
+  -	You can investigate Shadow IT usage by Azure Active Directory user.
+  -	You can correlate the discovered cloud app use with the API collected activities.
+  -	You can then create custom logs based on Azure AD user groups. For example, a Shadow IT report for a specific Marketing department.
+-	Improvements were made to the Juniper syslog parser. It now supports the welf and sd-syslog formats.
+-	Improvements were made to the Palo Alto parser for better application discovery.
+-	To verify that logs are being successfully uploaded, you can now see the status of your log collectors in the Cloud App Security portal. 
+General improvements:
+-	Built-in IP address tags and custom IP tags are now considered hierarchically, with custom IP tags taking precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence, but there is a custom IP tag that identifies it as **Corporate** the custom category and tags will take precedence.
+
 
 ## Cloud App Security release 98 
 Released June 4, 2017
