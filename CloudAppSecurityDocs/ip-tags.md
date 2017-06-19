@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/1/2017
+ms.date: 6/18/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -46,7 +46,7 @@ Cloud App Security comes preconfigured with built-in tags for the following IP a
 
 To use these built-in tags as part of a search, refer to their ID in the Cloud App Security API documentation. 
 
-Built-in IP address tags and custom IP tags are considered hierarchically, with custom IP tags taking precedence over built-in IP tags.
+Built-in IP address tags and custom IP tags are considered hierarchically, with custom IP tags taking precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence, but there is a custom IP tag that identifies it as **Corporate** the custom category and tags will take precedence.
 
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click **+Add IP address range** and set the following:  
   

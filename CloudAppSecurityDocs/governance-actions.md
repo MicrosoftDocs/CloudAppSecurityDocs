@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/24/2017
+ms.date: 6/18/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -134,6 +134,7 @@ For information about how governance actions are treated when there are policy c
 |File policy and Activity policy|File, Activity|Notify user|Sends an email to users to notify them that something they did or a file they own violates a policy. You can add a custom notification to let them know what the violation was.|All|
 |File policy and Files|File|Remove editors' ability to share|In Google Drive, the default editor permissions of a file allow sharing as well. This governance action restricts this option and restricts file sharing to the owner.|G Suite|
 |File policy and Files|File|[Put in admin quarantine](use-case-admin-quarantine.md)|Removes any permissions from the file and moves the file to a quarantine folder in a location for the admin. This enables the admin to review the file and remove it.|Office 365 SharePoint, OneDrive for Business, Box|
+|File policy, Activity policy, Alerts|App|Require users to sign in again|You can require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option.|Office 365, Azure AD|
 |Files|File|Restore from user quarantine|Restores a user from being quarantined.|Box|
 |Files|File|Grant read permissions to myself|Grants read permissions for the file for yourself so you can access the file and understand if it has a violation or not.|G Suite|
 |Files|File|Allow editors to share|In Google Drive, the default editor permissions of a file allows sharing as well. This governance action is the opposite of Remove editor’s ability to share and enables the editor to share the file.|G Suite|
