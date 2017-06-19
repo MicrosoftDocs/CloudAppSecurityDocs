@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 6/18/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,6 +34,14 @@ Cloud App Security supports the legacy Office 365 Dedicated Platform as well as 
 
 > [!NOTE]
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
+
+Cloud App Security supports the following:
+•	Office 365
+•	SharePoint
+•	OneDrive
+•	Teams (only appears after activities from Teams are detected in the portal)
+•	PowerBI (only appears after activities from PowerBI are detected in the portal, and requires you to turn on auditing)
+•	Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
 
  
 
