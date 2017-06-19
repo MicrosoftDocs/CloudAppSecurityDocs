@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/15/2017
+ms.date: 6/18/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -105,8 +105,9 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 5. Under your stunnel installation path, open the config directory. By default it is: 
         c:\Program Files (x86)\stunnel\config\
 6. Run the command line with admin permissions: 
-        ..\bin\openssl.exe genrsa -out ey.pem 2048 
-         ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095
+       `..\bin\openssl.exe genrsa -out ey.pem 2048 `
+      
+     ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
 8. Concatenate the cert.pem and key.pem and save them to the file: `cat cert.pem key.pem >> stunnel-key.pem`
 
