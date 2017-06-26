@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -197,7 +197,13 @@ The stunnel configuration is set in the stunnel.conf file.
 ### Update your IP table
 Update your IP address table with the following route rule:
    
-    iptables -I INPUT -p tcp --dport 11344 -j ACCEPT 
+    iptables -I INPUT -p tcp --dport 11344 -j ACCEPT
+
+To make the update to your IP table persistent use the following commands:
+
+     sudo apt-get install iptables-persistent
+     sudo /sbin/iptables-save > /etc/iptables/rules.v4
+ 
 
 ### Run stunnel
 1.	On your stunnel server, run the following:
