@@ -89,7 +89,9 @@ The following governance actions can be taken for connected apps either on a spe
   
     -   Granular actions can be enforced per app, specific actions vary depending on app terminology.  
   
-    -   Suspend user – suspend the user from the application.  
+    -   Suspend user – suspend the user from the application. 
+    > [!NOTE] 
+    > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted. 
   
     -   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
   
@@ -100,9 +102,15 @@ The following governance actions can be taken for connected apps either on a spe
 
 After creating multiple policies, a situation may arise in which the governance actions in multiple policies overlap. In this case, Cloud App Security will process the governance actions as follows:
 
+#### Conflicts between policies
+
 - If two policies contain actions that are contained on in each other (for example, **Remove external shares** is included in **Make private**), Cloud App Security will resolve the conflict and the stronger action will be enforced.
 - If the actions are completely unrelated (for example, **Notify owner** and **Make private**). Both actions will take place.
 - If the actions conflict, (for example **Change owner to user A** and **Change owner to user B**), different results may result from every match. It is important to change your policies to prevent conflicts because they may result in unwanted changes in the drive that will be hard to detect.
+
+#### Conflicts in user sync
+
+- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted. 
 
 ### Governance log
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include tasks that you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
