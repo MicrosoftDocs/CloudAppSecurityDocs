@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -93,7 +93,7 @@ The following governance actions can be taken for connected apps either on a spe
   
     -   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
   
-     ![activity policy ref6](./media/activity-policy-ref6.png "activity policy ref6")  
+     ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6")  
   
 
 ### Governance conflicts
