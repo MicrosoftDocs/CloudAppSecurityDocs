@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2017
+ms.date: 6/26/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,15 +36,15 @@ Cloud App Security supports the legacy Office 365 Dedicated Platform as well as 
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
 
 Cloud App Security supports the following:
-•	Office 365
-•	SharePoint
-•	OneDrive
-•	Teams (only appears after activities from Teams are detected in the portal)
-•	PowerBI (only appears after activities from PowerBI are detected in the portal, and requires you to turn on auditing)
-•	Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
+
+- Office 365
+- SharePoint
+- OneDrive
+- Teams (only appears after activities from Teams are detected in the portal)
+- PowerBI (only appears after activities from PowerBI are detected in the portal, and requires you to turn on auditing)
+- Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
 
  
-
 ## How to connect Office 365 to Cloud App Security  
   
 > [!NOTE]
@@ -53,7 +53,7 @@ Cloud App Security supports the following:
 >- Exchange Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online will be logged, see [Exchange Mailbox activities](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- If Office apps are enabled, groups that are part of Office 365 are also created in the specific Office apps, for example if SharePoint is enabled, Office 365 groups will be created in SharePoint.
 >- You must [enable auditing in PowerBI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) to get the logs from there. Once this is enabled, Cloud App Security will start getting the logs (with a delay of 24-72 hours).
-
+> If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and use of the **Suspend user** governance action will be reverted. 
  
 1.  In **Connected apps** page, click the plus button and select **Office 365**.  
 
