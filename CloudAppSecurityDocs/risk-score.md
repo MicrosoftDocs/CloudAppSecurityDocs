@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/5/2017
+ms.date: 7/2/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -54,7 +54,8 @@ After the results are filtered, you can review the relevant apps and find the on
 
 There are basic and advanced Cloud App Catalog filters. To achieve a complex filter use the advanced option which includes all of the following:
 
-- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged.
+- **App tags**: Tags enable you to customize the Cloud App Catalog. 
+  You can select from either **Sanctioned**, **Unsanctioned** or you can create custom tags for apps. These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. 
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
 - **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
 - **Compliance risk factor**: Lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
