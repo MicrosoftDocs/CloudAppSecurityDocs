@@ -73,7 +73,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 3.  Events are not more than 90 days old.
 4.  The log file is valid and includes outbound traffic information.
  
-After a log is uploaded to Cloud App Security, it is moved to a backup directory that stores the last 20 logs at any given moment. When new logs arrive, the old ones are deleted. When the log collector disk space is full, the log collector drops new logs until it has more free disk space.
+
 
 ## Supported firewalls and proxies
 

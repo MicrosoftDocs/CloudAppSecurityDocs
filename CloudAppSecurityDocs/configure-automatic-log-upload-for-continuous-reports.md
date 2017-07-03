@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Configure automatic log upload for continuous reports
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed and transmitted to the portal. FTP logs are uploaded to Cloud App Security after the file finished the FTP transfer to the Log Collector and for Syslog, the Log Collector writes the logs received to the disk and uploads the file to Cloud App Security when the file size is larger than 40 kb.
+
+After a log is uploaded to Cloud App Security, it is moved to a backup directory that stores the last 20 logs at any given moment. When new logs arrive, the old ones are deleted. When the log collector disk space is full, the log collector drops new logs until it has more free disk space.
 
 Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file. 
 
@@ -155,6 +157,10 @@ Configure your network firewalls and proxies to periodically export logs to the 
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
 ### Step 5 - Verify the successful deployment in the Cloud App Security portal
+
+Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing has not completed.
+
+![log collector status](./media/log-collector-status.png)
 
 Go to the Governance log and verify that logs are being periodically uploaded to the portal.  
   
