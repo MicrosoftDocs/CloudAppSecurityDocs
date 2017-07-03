@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/13/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,45 @@ ms.suite: ems
 ---
 
 # Release notes
+
+## Cloud App Security release 100 
+Released July 3, 2017
+ 
+
+### New features
+-	**Security extensions:**
+Security extensions is a new dashboard for centralized management of all security extensions to Cloud App Security, including API token management, SIEM agents and External DLP connectors. The new dashboard is available in Cloud App Security under “Settings”. 
+    - API tokens – generate and manage your own [API tokens](api-tokens.md)  to integrate Cloud App Security with third-party software using our RESTful APIs. 
+    - SIEM agents – [SIEM integration](siem.md) was previously located directly under “Settings”, now available as a tab in Security Extensions.
+    - External DLP (Preview) – Cloud App Security allows you to [leverage existing investments in third-party classification systems](icap-stunnel.md) such as Data Loss Prevention (DLP) solutions, and enables you to scan the contents of cloud applications using existing deployments running in your environment. Contact your account manager to join the preview. 
+-	**Automatically sanction/unsanction:** 
+New App detection policies give Cloud Discovery the ability to automatically set apps with Sanctioned/Unsanctioned label. This gives you the ability to automatically identify apps that are in violation of your organization’s policy and regulations and add them to the generated blocking script.
+-	**Cloud App Security file labels:** 
+You can now apply Cloud App Security file labels to now provide more insight into the files it scans. For each file scanned by Cloud App Security DLP, you can now know if the files were blocked from being inspected because they were encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally. This feature is available for files scanned after July 3, 2017.
+
+    You can filter for these files by using the filter **Classification labels** > **Cloud App Security**: 
+    - **Azure RMS encrypted** – files whose content was not inspected because they have Azure RMS encryption set.
+    - **Password encrypted** – files whose content was not inspected because they are password protected by the user.
+    - **Corrupt file** – files whose content was not inspected because their content could not be read.
+-	**User insights**: 
+The investigation experience was upgraded to enable out-of-the-box insights about the acting user. With a single click, you can now see a comprehensive overview, from the Activity drawer, of the users – including which location they connected from, how many open alerts is they are involved with and their metadata information.
+-	**App connector insights:**
+Under **App Connectors**, each connected app now includes an app drawer in the table for easier drill down into its status. Details that are provided include when the App connector was connected and last health check on the connector. You can also monitor the status of DLP scanning on each app: the total number of files inspected by DLP as well as the status of the real-time scans (requested scans vs. actual scans). You will be able to tell if the rate of files scanned by Cloud App Security in real time is lower than the requested number, and whether your tenant might be exceeding its capacity and experience a delay in the DLP results.
+-	**Cloud App Catalog customization:** 
+    - **App tags**: You can now create custom tags for apps. These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. For example, custom watch list, assignment to a specific business unit, or custom approvals, such as “approved by legal”.
+    - **Custom notes**: As you review and assess the different applications that were discovered across your environment, you can now save your conclusions and insights in the Notes.
+    - **Custom risk score**: You can now override the risk score of an app. For example, if the risk score of an app is 8 and it is a sanctioned app in your organization, you can change the risk score to 10 for your organization. You can also add notes to make the justification of the change clear when anyone reviews the app.
+-	**New log collector deployment mode:** 
+We are starting to roll out a new deployment mode is now available for the log collector. In addition to the current virtual-appliance based deployment, the new Docker (container) based log collector can be installed as a package on Windows and Ubuntu machines both on-premises and in Azure. When using the Docker, the hosting machine is owned by the customer, who can freely patch and monitor it.
+
+### Other improvements: 
+-	**Improved parsing:** 
+Improvements were made in the Cloud Discovery log parsing mechanism. Internal errors are significantly less likely to occur.
+-	**Expected log formats:** 
+The expected log format for Cloud Discovery logs now provides examples for both Syslog format and FTP format.
+-	**Log collector upload status:** 
+You can now see the log collector status in the portal and troubleshoot errors faster using the in-portal status notifications and the system alerts.
+
 
 ## Cloud App Security release 99 
 Released June 18, 2017

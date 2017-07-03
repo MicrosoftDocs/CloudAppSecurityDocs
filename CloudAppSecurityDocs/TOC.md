@@ -51,9 +51,11 @@
 #### [Policy template reference](policy-template-reference.md)
 ### [Govern connected apps](governance-actions.md)
 ### [Govern discovered apps](governance-discovery.md)
-## Integrate
+## Integrate using security extensions
 ### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)
+### [External DLP integration](icap-stunnel.md)
+### [API tokens](api-tokens.md)
 # Troubleshoot
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)

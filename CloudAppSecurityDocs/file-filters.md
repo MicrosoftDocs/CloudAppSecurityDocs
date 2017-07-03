@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -93,7 +93,12 @@ Internal are any files within the Internal domains you set in [General setup](Ge
   
 -   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.   
   
--   Classification label - Search for files with specific tags set by Azure Information Protection. This requires integration with Azure Information Protection.
+-   Classification label - Search for files with specific tags set. These are either:
+    - Azure Information Protection tags. This requires integration with Azure Information Protection.
+    - Cloud App Security tags. now provides more insight into the files it scans. For each file scanned by Cloud App Security DLP, you can now know if the files were blocked from being inspected because they were encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally, as follows: 
+        - Azure RMS encrypted – files whose content was not inspected because they have an Azure RMS encryption set.
+        - Password encrypted – files whose content was not inspected because they are password protected by the user.
+        - Corrupt file – files whose content was not inspected because their content could not be read.
 
 -   File type – Cloud App Security takes both the MIME type received from the service and scans the file to determine the true file type. Note that this scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text and zip/archive files). The filter works per file/folder type, for example, All folders that are ... or All spreadsheet files that are...
 

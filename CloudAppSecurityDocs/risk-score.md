@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/5/2017
+ms.date: 7/2/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -54,7 +54,8 @@ After the results are filtered, you can review the relevant apps and find the on
 
 There are basic and advanced Cloud App Catalog filters. To achieve a complex filter use the advanced option which includes all of the following:
 
-- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged.
+- **App tags**: Tags enable you to customize the Cloud App Catalog. 
+  You can select from either **Sanctioned**, **Unsanctioned** or you can create custom tags for apps. These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. 
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
 - **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
 - **Compliance risk factor**: Lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
@@ -121,6 +122,17 @@ To better understand a risk factor’s weight in specific risk category, use the
 In order to understand a risk category's weight in an app’s total score, hover over the risk category score:
 
 ![risk category weight](./media/risk-category-weight.png)
+
+## Overriding the risk score
+You can override the risk score of an app without changing the way it is weighted so that you get immediate results for your organization. For example, if the risk score of an LOB app you use is 8 and it is sanctioned and encouraged by your organization, you might want to change the risk score to 10. 
+
+To override the risk score, in the **Discovered apps** table or in the **Cloud app catalog**, click the three dots to the right of any app and select **Override risk score**.
+
+![override cloud app security discovered app risk score](./media/override-risk-score.png)
+
+After you update the score, you can include app notes to make your business justification for modifying this app score clear to other administrators. 
+
+You can also add notes to make the justification of the change clear when anyone reviews the app.
 
 
  
