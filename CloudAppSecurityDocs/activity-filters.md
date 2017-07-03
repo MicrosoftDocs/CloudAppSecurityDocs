@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -127,7 +127,9 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 
-## Working with the Activity drawer
+## The Activity drawer
+
+### Working with the Activity drawer
 
 You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the activity:
 
@@ -144,6 +146,22 @@ The fields in the Activity drawer provide contextual links to additional activit
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
   
 For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
+
+### User insights
+
+The investigation experience includes out-of-the-box insights about the acting user. With a single click, you can get a comprehensive overview of the user including which location they connected from, how many open alerts is they are involved with and their metadata information.
+
+To view user insights:
+
+1. Click on the Activity itself in the **Activity log**.
+
+2. Then click on the **User** tab. <br></br> This opens the Activity drawer **User** tab provides the following insights about the user:
+    - **Open alerts**: The number of open alerts that involved the user.
+    - **File violation**: The number of file violations for files owned by the user.
+    - **Activities**: The number of activities performed by the user in the past 30 days.
+    - **Countries**: The number of countries the user connected from in the past 30 days.
+    - **ISPs**: The number of ISPs the user connected from in past 30 days.
+    - **IP addresses**: The number of IP addresses the user connected from in past 30 days.
 
 
 ## See Also  

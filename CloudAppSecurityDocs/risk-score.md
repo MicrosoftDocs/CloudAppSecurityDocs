@@ -123,6 +123,17 @@ In order to understand a risk category's weight in an app’s total score, hover
 
 ![risk category weight](./media/risk-category-weight.png)
 
+## Overriding the risk score
+You can override the risk score of an app without changing the way it is weighted so that you get immediate results for your organization. For example, if the risk score of an LOB app you use is 8 and it is sanctioned and encouraged by your organization, you might want to change the risk score to 10. 
+
+To override the risk score, in the **Discovered apps** table or in the **Cloud app catalog**, click the three dots to the right of any app and select **Override risk score**.
+
+![override cloud app security discovered app risk score](./media/override-risk-score.png)
+
+After you update the score, you can include app notes to make your business justification for modifying this app score clear to other administrators. 
+
+You can also add notes to make the justification of the change clear when anyone reviews the app.
+
 
  
 ## See Also  

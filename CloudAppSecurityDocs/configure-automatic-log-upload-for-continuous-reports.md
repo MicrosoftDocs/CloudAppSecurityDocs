@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/28/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -157,6 +157,10 @@ Configure your network firewalls and proxies to periodically export logs to the 
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
 ### Step 5 - Verify the successful deployment in the Cloud App Security portal
+
+Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing has not completed.
+
+![log collector status](./media/log-collector-status.png)
 
 Go to the Governance log and verify that logs are being periodically uploaded to the portal.  
   
