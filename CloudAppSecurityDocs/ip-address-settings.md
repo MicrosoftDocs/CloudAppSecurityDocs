@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/22/2017
+ms.date: 7/3/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -31,7 +31,7 @@ Cloud App Security requires access as follows to connect to your network.
 
 ## Cloud App Security System IP addresses
 
-The following IP addresses are used by Cloud App Security to connect to customer environments. This is necessary when connecting using [ICAP](stunnel-icap.md) and when connecting App connectors. For some apps, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. In some apps these IP addresses can also be used to identify Cloud App Security activities, such as in the service’s audit logs. 
+The following IP addresses are used by Cloud App Security to connect to customer environments. This is necessary when connecting using [ICAP](icap-stunnel.md) and when connecting App connectors. For some apps, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. In some apps these IP addresses can also be used to identify Cloud App Security activities, such as in the service’s audit logs. 
   
 -   For the logs:  
   
