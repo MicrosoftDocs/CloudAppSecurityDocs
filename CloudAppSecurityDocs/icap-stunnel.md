@@ -56,26 +56,14 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 
 Set up an ICAP server, taking note of the port number and make sure that you set **Mode** to **Blocking**. Blocking mode sets the ICAP server to relay the classification verdict back to Cloud App Security.
 
-For example, in ForcePoint, set your appliance using the following steps:
+Refer to your External DLP product documentation for instructions on how to accomplish this. As an example, see Forcepoint ICAP server setup.
 
-1.	In your DLP appliance, go to **Deployment** > **System Modules**. 
+## STEP 2:  Set up your stunnel server 
 
-    ![ICAP deployment](./media/icap-system-modules.png)
+In this step you will set up the stunnel connected to your ICAP server. 
 
-2.	In the **General** tab, make sure **ICAP Server** is **Enabled** and the default **Port** is set to **1344**. 
-Also, under **Allow connection to this ICAP Server from the following IP addresses**, select **Any IP address**.
- 
-    ![ICAP configuration](./media/icap-ip-address.png)
-
-3.	In the HTTP/HTTPS tab, make sure to set **Mode** to **Blocking**.
- 
-    ![ICAP blocking](./media/icap-blocking.png)
- 
-
-
-## STEP 2:  Set up your stunnel server
-
-In this step you will set up the stunnel connected to your ICAP server.
+>[!NOTE]
+> While highly recommended, this step is optional and can be skipped on test workloads. 
 
 ### Install stunnel on a server
 
@@ -176,7 +164,7 @@ Download the public key from this location: https://adaprodconsole.blob.core.win
 and save it in this location: 
 **/etc/ssl/certs/CAfile.pem**
 
-### Configure stunnel
+### Configure stunnel 
 
 The stunnel configuration is set in the stunnel.conf file.
 
@@ -253,13 +241,29 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 5. In the **Server configuration** screen, provide the **IP address** and **Port** of the stunnel server that you set up in Step 2. For load balancing purposes you can configure the **IP address** and **Port** of an additional server. The provided IP addresses should be the external static IP addresses of your servers.
 
+   ![Cloud App Security ICAP connection](./media/icap-wizard2.png)
 6. Click **Next**. Cloud App Security will test connectivity to the server you configured. If you receive an error, review the instructions and network settings. After it is successfully connected, you can click **Quit**.
 
-   ![Cloud App Security ICAP connection](./media/icap-wizard2.png)
-
-7. Now, to direct traffic to this external DLP server, when you create a **File policy**, under **DLP method**, select the connection you just created.
+7. Now, to direct traffic to this external DLP server, when you create a **File policy**, under **Content inspection method**, select the connection you just created. Read more about [creating a File policy](data-protection-policies.md).
 
 
+## ForcePoint ICAP server setup
+
+In ForcePoint, set your appliance using the following steps:
+
+1.	In your DLP appliance, go to **Deployment** > **System Modules**. 
+
+    ![ICAP deployment](./media/icap-system-modules.png)
+
+2.	In the **General** tab, make sure **ICAP Server** is **Enabled** and the default **Port** is set to **1344**. 
+Also, under **Allow connection to this ICAP Server from the following IP addresses**, select **Any IP address**.
+ 
+    ![ICAP configuration](./media/icap-ip-address.png)
+
+3.	In the HTTP/HTTPS tab, make sure to set **Mode** to **Blocking**.
+ 
+    ![ICAP blocking](./media/icap-blocking.png)
+ 
 
 
 
