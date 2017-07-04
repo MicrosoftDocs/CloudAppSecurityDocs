@@ -40,7 +40,7 @@ This section provides instructions for connecting Cloud App Security to your exi
      ![google1](./media/google1.png "google1")  
   
 3.  In the **New project** screen name your project as follows:</br>
-    **Cloud App Security for Google** and click **Create**.  
+    **Microsoft Cloud App Security** and click **Create**.  
            ![google2](./media/google2.png "google2")  
   
 4.  After the project is created, in the tool bar, next to Google Cloud Platform, select the project and then under **API** click **Go to APIs overview**.  
@@ -72,7 +72,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 8.  Click **Credentials** followed by **OAuth consent screen**  
   
-    -   In **Product name shown to users**, type **Cloud App Security for Google**.  
+    -   In **Product name shown to users**, type **Microsoft Cloud App Security**.  
   
     -   All other fields are optional.  
   
@@ -88,11 +88,11 @@ This section provides instructions for connecting Cloud App Security to your exi
 
      ![google service account key](./media/google8.png "google8")  
   
-11. Under **Create service account key**, choose **New service account** and type any name, for example **Service account 1**, under **Role** choose **Project** and then **Editor** and under **Key type** choose **P12** and click **Create**.  
+11. Under **Create service account key**, choose **New service account** and type any name, for example **Service account 1**, under **Role** choose **Project** and then **Editor** and under **Key type** choose **P12** and click **Create**. Select the **Enable G Suite Domain-wide Delegation** check box and click **Save**.  
   
      ![google create service account key](./media/google9.png "google9")  
   
-12.  A P12 certificate file will be saved to your computer. A pop-up will show you  the **password for the private key** MAKE SURE YOU SAVE IT for use later.  
+12.  A P12 certificate file will be saved to your computer.  
         
 12. In the **Credentials** screen, click **Manage service accounts** in the far right.  
        ![G Suite credentials service account](./media/google10.png "G Suite credentials service account")  
@@ -100,10 +100,6 @@ This section provides instructions for connecting Cloud App Security to your exi
 13. Click the 3 dots to the right of the service account you created and select **Edit**.  
   
      ![google edit](./media/google11.png "google edit")  
-  
-14. Select the **Enable G Suite Domain-wide Delegation** check box and click **Save**.  
-  
-     ![google domain wide](./media/google12.png "google domain wide")  
   
 15. Copy the **Service account ID** assigned to your service - you will need it later.  
   
@@ -116,7 +112,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
 18. Fill in the following:
 
-    -   **Application Name**: Cloud App Security for Google.  
+    -   **Application Name**: Microsoft Cloud App Security.  
   
     -   **Short Description & Long Description** (optional): Microsoft Cloud App Security provides you with visibility into cloud applications, helping you control, investigate and govern cloud application use; secure corporate data; and detect suspicious activities for any cloud application.  
   
@@ -125,18 +121,16 @@ This section provides instructions for connecting Cloud App Security to your exi
     -   Under **Drive Integration** type the following under **Open URL:**  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   Click **Save Changes**.  
-  
+     
          ![google drive config](./media/google15.png "googledriveconfig")  
   
 19. In the **Enabled APIs** list, click the setting cog setting next to **Google Apps Marketplace SDK**. 
          ![google marketplace SDK config](./media/google16.png "googledriveconfig")  
-20. Select the **Configuration** tab.  
+20. Select the **Configuration** tab. 
   
     -   Copy the **Project number (App ID)** that appears at the top to use later.  
   
-    -   The **Application Name** should say **Cloud App Security for Google**.
+    -   The **Application Name** should say **Microsoft Cloud App Security**.
   
          Fill in the **Application description** field with "Microsoft Cloud App Security provides visibility into cloud apps, helping you control, investigate and govern cloud app use; secure corporate data; and detect suspicious activities for any cloud app."  
   
