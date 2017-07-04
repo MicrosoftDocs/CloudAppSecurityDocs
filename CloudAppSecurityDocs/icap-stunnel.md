@@ -56,7 +56,7 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 
 Set up an ICAP server, taking note of the port number and make sure that you set **Mode** to **Blocking**. Blocking mode sets the ICAP server to relay the classification verdict back to Cloud App Security.
 
-Refer to your External DLP product documentation for instructions on how to accomplish this. As an example, see Forcepoint ICAP server setup.
+Refer to your External DLP product documentation for instructions on how to accomplish this. As an example, see [Forcepoint ICAP server setup](#forcepoint).
 
 ## STEP 2:  Set up your stunnel server 
 
@@ -247,7 +247,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
 7. Now, to direct traffic to this external DLP server, when you create a **File policy**, under **Content inspection method**, select the connection you just created. Read more about [creating a File policy](data-protection-policies.md).
 
 
-## ForcePoint ICAP server setup
+## ForcePoint ICAP server setup <a name="forcepoint"></a>
 
 In ForcePoint, set your appliance using the following steps:
 
