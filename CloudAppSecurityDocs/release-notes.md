@@ -70,7 +70,7 @@ You can now see the log collector status in the portal and troubleshoot errors f
 ## Cloud App Security release 99 
 Released June 18, 2017
 
-**New Features**
+### New Features
 
 -	You can now require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option.
 -	You can now filter for **Add impersonation role assignment** activities in the Activity log. This activity enables you to detect when an admin has granted an **Application Impersonation** role to any user or system account, using the cmdlet **New-ManagementRoleAssignment**. This role allows the impersonator to perform operations by using the permissions associated with the impersonated account, instead of the permissions associated with the impersonator’s account.
@@ -82,7 +82,8 @@ Cloud Discovery Improvements:
 -	Improvements were made to the Juniper syslog parser. It now supports the welf and sd-syslog formats.
 -	Improvements were made to the Palo Alto parser for better application discovery.
 -	To verify that logs are being successfully uploaded, you can now see the status of your log collectors in the Cloud App Security portal. 
-General improvements:
+
+### General improvements:
 -	Built-in IP address tags and custom IP tags are now considered hierarchically, with custom IP tags taking precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence, but there is a custom IP tag that identifies it as **Corporate** the custom category and tags will take precedence.
 
 
