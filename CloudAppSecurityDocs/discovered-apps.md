@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -66,7 +66,7 @@ There are basic and advanced Discovered app filters. To achieve a complex filter
 ![Discovered apps](./media/discovered-apps.png)  
 
 
-- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. In addition, you can create a custom tag for your app and then use it to filter for specific types of apps.
+- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. In addition, you can create a custom tag for your app and then use it to filter for specific types of apps. 
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
 - **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
 - **Compliance risk factor**: Lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
@@ -78,7 +78,7 @@ There are basic and advanced Discovered app filters. To achieve a complex filter
 ## Creating and managing custom app tags
 
 You can create a custom app tag. 
-These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. 
+These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. For example, custom watch list, assignment to a specific business unit, or custom approvals, such as “approved by legal”.
 
 To create a custom app tag:
 
