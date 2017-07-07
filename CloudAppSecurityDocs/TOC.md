@@ -11,7 +11,7 @@
 ### [IP tags and ranges](ip-tags.md)
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
-### [Configure automatic log upload for continuous reports]((configure-automatic-log-upload-for-continuous-reports.md)
+### [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 #### [Using a Docker]((configure-automatic-log-upload-for-continuous-reports.md)
 ##### [Docker on Windows Server](discovery-docker-windows.md)
 ##### [Docker on Ubuntu](discovery-docker-ubuntu.md)
