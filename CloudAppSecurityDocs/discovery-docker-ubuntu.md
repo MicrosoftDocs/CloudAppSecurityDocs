@@ -40,144 +40,112 @@ Technical requirements
 
 -   Firewall settings:
 
-    -   Allow the log collector to receive inbound FTP and Syslog traffic
+    -   Allow the log collector to receive inbound FTP and Syslog traffic.
 
-    -   Allow the log collector to initiate outbound traffic to the portal (for
-        example contoso.cloudappsecurity.com) on port 443
+    -   Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
 
 ## Log collector performance
 
-The Log collector can successfully handle log capacity of up to 50 GB per hour.
-The main bottlenecks in the log collection process are:
+The Log collector can successfully handle log capacity of up to 50 GB per hour. The main bottlenecks in the log collection process are:
 
 -   Network bandwidth - your network bandwidth determines the log upload speed.
 
--   I/O performance of the virtual machine allocated by your IT - determines the
-    speed at which logs are written to the log collector’s disk. The log
-    collector has a built-in safety mechanism that monitors the rate at which
-    logs arrive and compares it to the upload rate. In cases of congestion, the
-    log collector starts to drop log files. If your setup generally exceeds 50
-    GB per hour, it is recommended to split the traffic between multiple log
-    collectors.
+-   I/O performance of the virtual machine allocated by your IT - determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup generally exceeds 50 GB per hour, it is recommended that you split the traffic between multiple log collectors.
 
 ## Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1.  Go to the automated upload setting page:  
-    In the Cloud App Security portal, click the settings icon [settings icon](./media/settings-icon.png)followed by **Log collectors**.
+1.  Go to the automated upload setting page:  <br></br>In the Cloud App Security portal, click the settings icon ![settings icon](./media/settings-icon.png) followed by **Log collectors**.
 
-2.  For each firewall or proxy from which you want to upload logs, create a
-    matching data source:
+2.  For each firewall or proxy from which you want to upload logs, create a matching data source:
 
->   ![ubuntu1](./media/ubuntu1.png)
+    ![ubuntu1](./media/ubuntu1.png)
 
->   a. Click **Add data source**.
+    a. Click **Add data source**.
 
->   b. **Name** your proxy or firewall.
+    b. **Name** your proxy or firewall.
 
->   c. Select the appliance from the **Source** list.
+    c. Select the appliance from the **Source** list.
 
->   d. Compare your log with the sample of the expected log format. If your log
->   file format does not match this sample, you should add your data source
->   as **Other**.
+    d. Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.
 
->   e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**,
->   or **Syslog – TCP**, or **Syslog – TLS**.
+    e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
+    >[!NOTE]
+    >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
->[!NOTE]
->Integrating with secure transfer protocols (FTPS and Syslog – TLS) often
-requires additional setting or your Firewall/Proxy.
+    f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.
 
->   f. Repeat this process for each firewall and proxy whose logs can be used to
->   detect traffic on your network.
+3.  Go to the **Log collectors** tab at the top.
 
-1.  Go to the **Log collectors** tab at the top.
+    a. Click **Add log collector**.
 
->   a. Click **Add log collector**.
+    b. Give the log collector a **name**.
 
->   b. Give the log collector a **name**.
+    c. Enter the **Host IP address** of the machine you will use to deploy the Docker.
 
->   c. Enter the **host IP address** of the machine you will use to deploy the
->   Docker on.
+    d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
 
->   c. Select all **Data sources** that you want to connect to the collector,
->   and click **Update** to save the configuration see the next deployment
->   steps.
+    ![ubuntu2](./media/ubuntu2.png)
 
- ![ubuntu2](./media/ubuntu2.png)
+    >  [!NOTE]
+    > - A single Log collector can handle multiple data sources.
+    >- Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
 
->   [NOTE!] A single Log collector can handle multiple data sources.
-
--   Copy the contents of the screen because you will need the information when
-    you configure the Log Collector to communicate with Cloud App Security. If
-    you selected Syslog, this information will include information about which
-    port the Syslog listener is listening on.
-
-1.  Further deployment information will appear.
+4.  Further deployment information will appear.
 
  ![ubuntu3](./media/ubuntu3.png)
 
-1.  **Copy** the run command from the dialog. You can use the “copy to
-    clipboard” icon [copy to clipboard icon](./media/copy-icon.png).
+5.  **Copy** the run command from the dialog. You can use the copy to clipboard icon ![copy to clipboard icon](./media/copy-icon.png).
 
-2.  **Export** the expected data sources configuration. This configuration
-    describes how you should set the log export in your appliances.
+6.  **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
   ![ubuntu4](./media/ubuntu4.png)
 
 ## Step 2 – On-premises deployment of your machine
 
 > [!Note]
-> The following steps describes the deployment in Ubuntu. The deployment steps for
-other platforms are slightly different.
+> The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
 
 1.  Open a terminal on your Ubuntu machine.
 
-2.  Change to root privileges using: `Sudo - i`
+2.  Change to root privileges using the command: `Sudo - i`
 
-1.  Uninstall old versions and install Docker CE by running the following
-    command:
+3.  Uninstall old versions and install Docker CE by running the following command:
 
-    curl -o /tmp/MCASInstallDocker.sh
+    `curl -o /tmp/MCASInstallDocker.sh
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
 
- ![ubuntu5](./media/ubuntu5.png)
+    ![ubuntu5](./media/ubuntu5.png)
 
-2.  Deploy the collector image using the run command generated in the portal.
+4.  Deploy the collector image using the run command generated in the portal.
 
- ![ubuntu6](./media/ubuntu6.png)
+    ![ubuntu6](./media/ubuntu6.png)
 
 >[!NOTE]
->If you need to configure a proxy add the proxy IP address and port under. For
-example, if your proxy details are 192.168.10.1:8080, your updated run command
-is:
-    Sudo docker run --name casCollector -p 21:21 -p 20000-20099:20000-20099 -e
+>If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:<br></br>
+     `Sudo docker run --name casCollector -p 21:21 -p 20000-20099:20000-20099 -e
     "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
     "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
     "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=casCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter
+    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
 
- ![ubuntu7](./media/ubuntu7.png)
+![ubuntu7](./media/ubuntu7.png)
 
-1.  Verify the collector is running properly. Run the following command: `Docker logs \<collector_name\>`
+5.  Verify that the collector is running properly by running the following command: `Docker logs \<collector_name\>`
 
-1.  You should see “Finished successfully!”
+You should see the message: **Finished successfully!**
 
   ![ubuntu8](./media/ubuntu8.png)
 
 ## Step 4 - On-premises configuration of your network appliances
 
-Configure your network firewalls and proxies to periodically export logs to the
-dedicated Syslog port of the FTP directory according to the directions in the
-dialog, for example:
+Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:
 
     \`BlueCoat_HQ - Destination path: \\\\\<\<machine_name\>\>\\BlueCoat_HQ\\\`
 
 ## Step 5 - Verify the successful deployment in the Cloud App Security portal
 
-Check the collector status in the **Log collector** table and make sure the
-status is **Connected**. If it is **Created**, it is possible that the log
-collector connection and parsing has not completed.
+Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing has not completed.
 
  ![ubuntu9](./media/ubuntu9.png)
 
@@ -188,7 +156,6 @@ If you encounter problems during deployment, see [Troubleshooting Cloud
 Discovery](troubleshooting-cloud-discovery.md).
 
 ## See Also
-
 [Working with Cloud Discovery
 data](working-with-cloud-discovery-data.md)  
 [For technical support, please visit the Cloud App Security assisted support
