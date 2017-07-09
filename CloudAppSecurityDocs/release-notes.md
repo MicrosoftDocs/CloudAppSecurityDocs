@@ -58,6 +58,10 @@ Under **App Connectors**, each connected app now includes an app drawer in the t
 -	**New log collector deployment mode:** 
 We are starting to roll out a new deployment mode is now available for the log collector. In addition to the current virtual-appliance based deployment, the new Docker (container) based log collector can be installed as a package on Windows and Ubuntu machines both on-premises and in Azure. When using the Docker, the hosting machine is owned by the customer, who can freely patch and monitor it.
 
+### Announcements: 
+-	The Cloud App Catalog now supports over 15,000 discoverable apps
+-	Compliance: Cloud App Security is officially SOC1/2/3 certified by Azure. For the full list of certifications see [Compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings) and filter the results for Cloud App Security.
+
 ### Other improvements: 
 -	**Improved parsing:** 
 Improvements were made in the Cloud Discovery log parsing mechanism. Internal errors are significantly less likely to occur.
