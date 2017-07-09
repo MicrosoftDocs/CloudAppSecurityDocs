@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-Configure automatic log upload for continuous reports
+# Configure automatic log upload for continuous reports
 
 
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed and transmitted to the portal. FTP
