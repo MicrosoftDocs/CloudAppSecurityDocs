@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 7/9/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -45,9 +45,10 @@ Before setting up automatic log file collection, verify that your log matches th
 
 The Log Collector supports two deployment modes:
 
--   **Virtual appliance** (*Deprecating*):  Runs as an image over Hyper-V or VMware hypervisor
-
 -   **Container** (*based on Docker CE*): Runs as a Docker image on [Windows](discovery-docker-windows.md) and [Ubuntu](discovery-docker-ubuntu.md), either on premises on in Azure.
+
+-   **Virtual appliance** (*Deprecating*):  [Runs as an image over Hyper-V or VMware hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
+
 
 
 

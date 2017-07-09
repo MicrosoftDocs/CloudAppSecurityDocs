@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 7/9/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -129,8 +129,8 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 
     ![windows7](./media/windows7.png)
 
->[!NOTE]
-> If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:  
+    >[!NOTE]
+    > If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:  
 `    Sudo docker run --name     casCollector -p 21:21 -p 20000-20099:20000-20099 -e
     "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
     "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
@@ -141,15 +141,15 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 
     ![windows8](./media/windows8.png)
 
->[!NOTE]
->If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:  
+    >[!NOTE]
+    >If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:  
  `   Sudo docker run --name casCollector -p 21:21 -p 20000-20099:20000-20099 -e
     "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
     "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
     "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=casCollector" --security-opt
     apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
 
-![windows9](./media/windows9.png)
+    ![windows9](./media/windows9.png)
 
 9.  Verify the collector is running properly by running the following command: `Docker logs \<collector_name\>`
 
