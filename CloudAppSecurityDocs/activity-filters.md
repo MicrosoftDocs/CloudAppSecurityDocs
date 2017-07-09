@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -163,6 +163,7 @@ To view user insights:
     - **ISPs**: The number of ISPs the user connected from in past 30 days.
     - **IP addresses**: The number of IP addresses the user connected from in past 30 days.
 
+![user insights in Cloud App Security](./media/user-insights.png)
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
