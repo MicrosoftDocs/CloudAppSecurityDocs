@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Set up and configuration on Ubuntu
 
-Technical requirements
+## Technical requirements
 
 -   OS: Ubuntu 14.04 or higher
 
