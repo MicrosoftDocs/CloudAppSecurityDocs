@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/11/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -93,7 +93,7 @@ The following governance actions can be taken for connected apps either on a spe
     > [!NOTE] 
     > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted. 
   
-    -   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
+    -   Revoke password – Revoke the user’s password and force them to set a new password on his next login.  
   
      ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6")  
   
