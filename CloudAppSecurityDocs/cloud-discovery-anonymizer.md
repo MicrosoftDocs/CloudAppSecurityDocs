@@ -41,7 +41,7 @@ How data anonymization works:
 
 1.  There are three ways to apply data anonymization: 
     
-    - You can set the data from a specific log file to be anonyimzized, by [creating a new snapshot report](create-snapshot-cloud-discovery-reports.md) and selecting **Anonymize private information**.
+    - You can set the data from a specific log file to be anonyimized, by [creating a new snapshot report](create-snapshot-cloud-discovery-reports.md) and selecting **Anonymize private information**.
  ![Anonymize snapshot data](./media/anonymize-log.png)
 
     - You can set the data from an [automated upload for a new data source](configure-automatic-log-upload-for-continuous-reports.md) to be anonymized by selecting  **Anonymize private information** when you add the new data source.  
