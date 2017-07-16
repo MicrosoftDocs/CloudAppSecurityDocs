@@ -29,7 +29,7 @@ ms.suite: ems
 # External DLP integration
 
 > [!NOTE] 
-> This feature is in preview. Please contact <mcaspreview@microsoft.com> to try out this feature in your tenant.
+> This feature is in preview. Please contact <Cloud App Securitypreview@microsoft.com> to try out this feature in your tenant.
 
 Cloud App Security can integrate with existing DLP solutions to extend these controls to the cloud while preserving a consistent and unified policy across on-premises and cloud activities. The platform exports easy-to-use interfaces including REST API and ICAP, enabling integration with content classification systems such as Symantec Data Loss Prevention (formerly Vontu Data Loss Prevention) or Forcepoint DLP. 
 
@@ -265,6 +265,30 @@ Also, under **Allow connection to this ICAP Server from the following IP address
     ![ICAP blocking](./media/icap-blocking.png)
  
 
+## Appendix B: Symantec Deployment Guide
+
+The supported Symantec DLP versions are 11-14.6. 
+As noted above, you should deploy a detection server in the same Azure datacenter where your Cloud App Security tenant resides. The detection server syncs with the enforce server through a dedicated IPSec tunnel. 
+ 
+### Detection server installation 
+The detection server used by Cloud App Security is a standard Network Prevent for Web server. There are several configuration options that should be changed during installation:
+•	Disable Trial Mode 
+•	Change the **Ignore Responses Smaller Than** value to 1 under **Response Filtering**
+•	Add "application/*" to the **Inspect Content Type** list under **Response Filtering** 
+ 
+### Policy configuration
+Cloud App Security seamlessly supports all detection rule types included with Symantec DLP, so there is no need to alter existing rules. However, there is a configuration change that must be applied to all existing and new policies to enable full integration. This change is the addition of a specific response rule to all policies. 
+Add the configuration change to your Vontu:
+1.	Create a new response rule of the **Automated Response** type.
+2.	Under **Actions**, select **Block HTTP/HTTPS** and press **Add Action**.
+3.	The rule name and rejection message are not relevant.
+
+Add the rule to the existing policies:
+1.	Edit the policy.
+2.	Click on the **Response** tab.
+3.	Select the response rule created above and add it.
+
+This rule must be added to all existing policies.
 
 
 
