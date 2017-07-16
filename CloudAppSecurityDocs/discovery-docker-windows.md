@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -148,7 +148,7 @@ You should see the message **Finished successfully!**.
 
 Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:
 
-        \`BlueCoat_HQ - Destination path: \<\<machine_name\>\>\BlueCoat_HQ\`
+        BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ## Step 5 - Verify the successful deployment in the Cloud App Security portal
 

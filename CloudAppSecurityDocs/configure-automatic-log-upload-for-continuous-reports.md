@@ -145,7 +145,7 @@ Configure your network firewalls and proxies to periodically export logs to the 
   
      `London Zscaler - Destination path: 614`  
   
-     `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
+     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\  
   
 ### Step 5 - Verify the successful deployment in the Cloud App Security portal
 
