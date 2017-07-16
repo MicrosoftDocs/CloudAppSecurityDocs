@@ -163,8 +163,7 @@ If you need to delete the SIEM agent in the future, you can click on the three d
 
 ## High availability options
 
-Cloud App Security supports a single endpoint, but by having a load balancer as the endpoint, high availability can be achieved.
-The maximum downtime supported by default is 2 days.
+The SIEM agent is a single endpoint that supports recovery of up to two days of downtime. Additional measure of high availability can be achieved by having a load balancer as the customer endpoint.
 
 ## See Also  
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
