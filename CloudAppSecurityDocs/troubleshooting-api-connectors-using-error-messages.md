@@ -32,7 +32,7 @@ ms.suite: ems
 App connector errors can be seen in the app connector dialog after attempting to connect a cloud app using the API App connector.
 
 
-https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps
+> [!div class="mx-tableFixed"]
 |Error message|Relevant app|Description|Resolution|
 |----|----|----|------------|
 |HttpRequestFailure: Server returned: 400 Bad Request: {"error":{"code":"AF20012","message":"Specified tenant ID (Tenant_ID goes here) is incorrectly configured in the system."|Office 365 |No assigned Office 365 licenses were found. |Assign at least one Office 365 license to your tenant.| 
