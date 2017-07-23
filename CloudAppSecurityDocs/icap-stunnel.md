@@ -97,7 +97,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. Concatenate the cert.pem and key.pem and save them to the file: `cat cert.pem key.pem >> stunnel-key.pem`
+8. Concatenate the cert.pem and key.pem and save them to the file: `type cert.pem key.pem >> stunnel-key.pem`
 
 9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
 
@@ -105,7 +105,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
+        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
 11. Run: `c:\Program Files (x86)\stunnel\bin\stunnel.exe` to open the stunnel application. 
 
@@ -121,7 +121,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
         cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
         CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
         TIMEOUTclose = 0
-
+        client = no
 12. Save the file and then click **Reload configuration**.
 
 13. To validate that everything is running as expected, from a command prompt, run: 
@@ -173,12 +173,12 @@ The stunnel configuration is set in the stunnel.conf file.
 3.	Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client:
 
         [microsoft-Cloud App Security]
-         accept = 0.0.0.0:11344
-         connect = **ICAP Server IP**:1344
-          cert = /etc/ssl/private/**stunnel-key**.pem
-          CAfile = /etc/ssl/certs/**CAfile**.pem
-          TIMEOUTclose = 1
-
+        accept = 0.0.0.0:11344
+        connect = **ICAP Server IP**:1344
+        cert = /etc/ssl/private/**stunnel-key**.pem
+        CAfile = /etc/ssl/certs/**CAfile**.pem
+        TIMEOUTclose = 1
+        client = no
 > [!NOTE] 
 > By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number - you will be required to enter it in the next step.
 
