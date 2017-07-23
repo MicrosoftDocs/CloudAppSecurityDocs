@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cloud App Security release notes & versions | Microsoft Docs
+title: What's  new with Cloud App Security| Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Release notes
+# What's new with Cloud App Security
 
 ## Cloud App Security release 100 
 Released July 3, 2017
