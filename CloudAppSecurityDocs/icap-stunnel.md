@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/20/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -271,22 +271,37 @@ The supported Symantec DLP versions are 11-14.6.
 As noted above, you should deploy a detection server in the same Azure datacenter where your Cloud App Security tenant resides. The detection server syncs with the enforce server through a dedicated IPSec tunnel. 
  
 ### Detection server installation 
-The detection server used by Cloud App Security is a standard Network Prevent for Web server. There are several configuration options that should be changed during installation:
-•	Disable Trial Mode 
-•	Change the **Ignore Responses Smaller Than** value to 1 under **Response Filtering**
-•	Add "application/*" to the **Inspect Content Type** list under **Response Filtering** 
- 
+The detection server used by Cloud App Security is a standard Network Prevent for Web server. There are several configuration options that should be changed:
+1.	Disable **Trial Mode**:
+    1. Click **System** and then **Servers and Detectors**.
+    2. Click on the ICAP target. 
+    ![ICAP target](./media/icap-target.png)
+    3. Click **Configure**. 
+	![Configure ICAP target](./media/configure-icap-target.png)
+    4. Disable **Trial Mode**.
+    ![disable trial mode](./media/icap-disable-trial-mode.png)
+    
+2. Change the **Ignore Responses Smaller Than** value to 1 under **Response Filtering**
+3. Add "application/*" to the list of **Inspect Content Type** under **Response Filtering** 
+     ![inspect content type](./media/icap-inspect-content-type.png)
+4. Click **Save**
+
+
 ### Policy configuration
 Cloud App Security seamlessly supports all detection rule types included with Symantec DLP, so there is no need to alter existing rules. However, there is a configuration change that must be applied to all existing and new policies to enable full integration. This change is the addition of a specific response rule to all policies. 
 Add the configuration change to your Vontu:
-1.	Create a new response rule of the **Automated Response** type.
-2.	Under **Actions**, select **Block HTTP/HTTPS** and press **Add Action**.
-3.	The rule name and rejection message are not relevant.
+1.	Go to **Manage** > **Policies** > **Response rules** and add a new response rule of the **Automated Response** type.
+    ![add response rule](./media/icap-add-response-rule.png)
+2.	Make sure **Automated response** is selected and click **Next**.
+    ![automated response](./media/icap-automated-response.png)
+3. Type a rule name, for example, **Block HTTP/HTTPS**. Under **Actions** select **Block HTTP/HTTPS** and click **Save**.
+    ![block http](./media/icap-block-http.png)
 
-Add the rule to the existing policies:
-1.	Edit the policy.
-2.	Click on the **Response** tab.
-3.	Select the response rule created above and add it.
+Add the rule you created to any existing policies:
+1.	In each Policy, switch to the **Response** tab.
+From the **Response rule** dropdown, slect the block response rule you created above.
+2. Save the policy.
+    ![disable trial mode](./media/icap-add-policy.png)
 
 This rule must be added to all existing policies.
 
