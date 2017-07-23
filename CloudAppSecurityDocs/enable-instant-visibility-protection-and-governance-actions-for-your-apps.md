@@ -73,6 +73,7 @@ Depending on the app you are connecting to (see table, below) API connection ena
   
 The following table lists, per cloud app, which abilities are supported with App connectors:  
 
+> [!div class="mx-tableFixed"]
 ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**List accounts**|✔|✔|✔|✔|✔|✔|✔|✔|  
