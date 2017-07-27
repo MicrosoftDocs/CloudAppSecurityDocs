@@ -29,11 +29,11 @@ ms.suite: ems
 # External DLP integration
 
 > [!NOTE] 
-> This feature is in preview. Please contact <Cloud App Securitypreview@microsoft.com> to try out this feature in your tenant.
+> This feature is in preview. Please contact <mcaspreview@microsoft.com> to try out this feature in your tenant.
 
 Cloud App Security can integrate with existing DLP solutions to extend these controls to the cloud while preserving a consistent and unified policy across on-premises and cloud activities. The platform exports easy-to-use interfaces including REST API and ICAP, enabling integration with content classification systems such as Symantec Data Loss Prevention (formerly Vontu Data Loss Prevention) or Forcepoint DLP. 
 
-Integration is accomplished by leveraging the standard ICAP protocol,an http-like protocol described in [RFC 3507](https://tools.ietf.org/html/rfc3507). In order to secure ICAP for transmission of your data, it is required to set up a secure SSL tunnel (stunnel) between your DLP solution and Cloud App Security. The stunnel setup provides TLS encryption functionality to your data as it travels between your DLP server and Cloud App Security. 
+Integration is accomplished by leveraging the standard ICAP protocol, an http-like protocol described in [RFC 3507](https://tools.ietf.org/html/rfc3507). In order to secure ICAP for transmission of your data, it is required to set up a secure SSL tunnel (stunnel) between your DLP solution and Cloud App Security. The stunnel setup provides TLS encryption functionality to your data as it travels between your DLP server and Cloud App Security. 
 
 This guide provides the steps necessary for configuring the ICAP connection in Cloud App Security and the stunnel setup to secure communication through it.
 
@@ -99,7 +99,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 8. Concatenate the cert.pem and key.pem and save them to the file: `type cert.pem key.pem >> stunnel-key.pem`
 
-9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\CAfile.pem**.
+9. [Download the public key](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem) and save it in this location **C:\Program Files (x86)\stunnel\config\MCASca.pem**.
 
 10. Add the following rules to open the port in the Windows firewall:
 
@@ -234,7 +234,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
     - **Generic ICAP – RESPMOD** - for other DLP appliances that use [Response Modification](https://tools.ietf.org/html/rfc3507)
     ![Cloud App Security ICAP connection](./media/icap-wizard1.png)
 
-4. Browse to select the public root CA of your stunnel to use to connect to your stunnel, and click **Next**.
+5. Browse to select the public certificate you generated in the previous steps, “cert.pem” to connect to your stunnel, and click **Next**.
 
    > [!NOTE]
    > It is highly recommended to check the **Use secure ICAP** box to set up an encrypted stunnel gateway. If, for testing purposes or if you don't have an stunnel server, you can uncheck this to integrate directly with your DLP server. 
