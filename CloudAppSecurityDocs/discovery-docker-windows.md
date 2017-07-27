@@ -115,13 +115,13 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 
 3.  Open a PowerShell terminal on your Windows machine.
 
-4.  **Connect** to the docker hub using the following command: `docker login -u cascollector`
+4.  **Connect** to the docker hub using the following command: `docker login -u caslogcollector`
 
 5.  Use the following password `C0llector3nthusiast`
 
     ![windows5](./media/windows5.png)
 
-6.  **Pull** to the collector image from the docker hub using the following command: `docker pull Microsoft/caslogcollector`
+6.  **Pull** to the collector image from the docker hub using the following command: `docker pull microsoft/caslogcollector`
 
     ![windows6](./media/windows6.png)
 
