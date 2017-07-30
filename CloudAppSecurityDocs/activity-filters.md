@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -131,23 +131,22 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 ### Working with the Activity drawer
 
-You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the activity:
+You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer which provides the following additional actions and insights for each activity:
+    - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
+    - View raw data: Click on View raw data to see the actual data that was received from the app.
+    - User: Click on the user to view the user page for the user who performed the activity. 
+    - Device type: Click on device type to view the raw user agent data. 
+    - Location: Click on the location to view the location in Bing maps.
+    - IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
 
-- Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
-- View raw data: Click on View raw data to see the actual data that was received from the app.
-- User: Click on the user to view the user page for the user who performed the activity. 
-- Device type: Click on device type to view the raw user agent data. 
-- Location: Click on the location to view the location in Bing maps.
-- IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
-
-The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
+ The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
 
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
   
 For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
 
-### User insights
+#### User insights
 
 The investigation experience includes out-of-the-box insights about the acting user. With a single click, you can get a comprehensive overview of the user including which location they connected from, how many open alerts is they are involved with and their metadata information.
 
@@ -164,6 +163,28 @@ To view user insights:
     - **IP addresses**: The number of IP addresses the user connected from in past 30 days.
 
 ![user insights in Cloud App Security](./media/user-insights.png)
+
+#### IP address insights
+
+Because IP address information is crucial for almost all investigations, you can view detailed information about IP addresses in the Activity drawer. From within a specific activity, you can click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity and a location map. This enables easy drill down, for example when investigating impossible travel alerts, you can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN or corporate to ease future investigation and policy creation.
+
+To view IP address insights:
+
+1. Click on the Activity itself in the **Activity log**.
+
+2. Then click on the **IP address** tab. <br></br> This opens the Activity drawer **IP address** tab provides the following insights about the IP address:
+    - **Open alerts**: The number of open alerts that involved the IP address.
+    - **Activities**: The number of activities performed by the IP address in the past 30 days.
+    - **IP location**: The geographic locations from which the IP address connected from in the past 30 days.
+    - **Activities**: The number of activities performed from this IP address in past 30 days.
+    - **Admin activities**: The number of administrative activities performed from this IP address in past 30 days.
+    - You can perform the following IP address actions:
+        - Tag as risky 
+        - Tag as VPN IP address
+        - Tag as Risky IP and add to blocked group
+
+![IP address insights in Cloud App Security](./media/ip-address-insights.png)
+
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
