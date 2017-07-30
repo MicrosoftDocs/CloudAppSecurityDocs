@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -52,6 +52,9 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 3.	Destination address(es): one or two IP address of the stunnel connected to the external ICAP server that you will configure in the next steps
 4.	Destination TCP port: As defined in your network
 
+> [!NOTE] 
+> By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number - you will be required to enter it in the next step.
+
 ## STEP 1:  Set up ICAP server
 
 Set up an ICAP server, taking note of the port number and make sure that you set **Mode** to **Blocking**. Blocking mode sets the ICAP server to relay the classification verdict back to Cloud App Security.
@@ -93,7 +96,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 5. Under your stunnel installation path, open the config directory. By default it is: 
         c:\Program Files (x86)\stunnel\config\
 6. Run the command line with admin permissions: 
-       `..\bin\openssl.exe genrsa -out ey.pem 2048 `
+       `..\bin\openssl.exe genrsa -out key.pem 2048 `
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
@@ -179,8 +182,7 @@ The stunnel configuration is set in the stunnel.conf file.
         CAfile = /etc/ssl/certs/**CAfile**.pem
         TIMEOUTclose = 1
         client = no
-> [!NOTE] 
-> By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number - you will be required to enter it in the next step.
+
 
 ### Update your IP table
 Update your IP address table with the following route rule:
