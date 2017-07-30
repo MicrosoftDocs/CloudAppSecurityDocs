@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -107,7 +107,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1.  Open a terminal on your Ubuntu machine.
 
-2.  Change to root privileges using the command: `Sudo - i`
+2.  Change to root privileges using the command: `sudo - i`
 
 3.  Uninstall old versions and install Docker CE by running the following command:
 
@@ -123,27 +123,27 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     >[!NOTE]
     >If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:<br></br>
-     `Sudo docker run --name casCollector -p 21:21 -p 20000-20099:20000-20099 -e
+     `sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
     "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
     "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=casCollector" --security-opt
+    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
     apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
 
     ![ubuntu7](./media/ubuntu7.png)
 
-5.  Verify that the collector is running properly by running the following command: `Docker logs \<collector_name\>`
+5.  Verify that the collector is running properly by running the following command: `docker logs \<collector_name\>`
 
 You should see the message: **Finished successfully!**
 
   ![ubuntu8](./media/ubuntu8.png)
 
-## Step 4 - On-premises configuration of your network appliances
+## Step 3 - On-premises configuration of your network appliances
 
 Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## Step 5 - Verify the successful deployment in the Cloud App Security portal
+## Step 4 - Verify the successful deployment in the Cloud App Security portal
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing has not completed.
 
