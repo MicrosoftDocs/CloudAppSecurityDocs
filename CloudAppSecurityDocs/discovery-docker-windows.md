@@ -65,7 +65,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     b. **Name** your proxy or firewall.
 
-    c. Select the appliance from the **Source** list.
+    c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that is not specifically listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
 
     d. Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.
 
@@ -131,15 +131,15 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 
     >[!NOTE]
     >If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:  
- `   Sudo docker run --name casCollector -p 21:21 -p 20000-20099:20000-20099 -e
+ `   docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
     "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
     "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=casCollector" --security-opt
+    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
     apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
 
     ![windows9](./media/windows9.png)
 
-9.  Verify the collector is running properly by running the following command: `Docker logs <collector_name>`
+9.  Verify the collector is running properly by running the following command: `docker logs <collector_name>`
 
 You should see the message **Finished successfully!**.
   ![windows10](./media/windows10.png)
@@ -161,6 +161,16 @@ periodically uploaded to the portal.
 
 If you encounter problems during deployment, see [Troubleshooting Cloud
 Discovery](troubleshooting-cloud-discovery.md).
+
+## Optional - Create custom continuous reports
+
+After you have verified that the logs are being uploaded to Cloud App Security and the reports are being generated, you can create custom reports. You can now create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
+
+1. In the Cloud App Security portal, under the Settings cog, select **Cloud Discovery settings** and then select **Manage continuous reports**. 
+2. Click the **Create report** button and fill in the fields.
+3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
+
+![Custom continuous report](./media/custom-continuous-report.png)
 
 ## See also
  

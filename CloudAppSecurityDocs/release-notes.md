@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,23 @@ ms.suite: ems
 ---
 
 # What's new with Cloud App Security
+
+## Cloud App Security release 102 
+Released July 30, 2017
+ 
+-	Because IP address information is crucial for almost all investigations, you can now view detailed information about IP addresses in the Activity Drawer. From within a specific activity, you can now click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity and a location map. This enables easy drill down, for example when investigating impossible travel alerts, you can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN or corporate to ease future investigation and policy creation. For more information see [IP address insights](activity-filters#ip-address-insights)
+
+-	In Cloud Discovery, you can now use [custom log formats](custom-log-parser.md) also for [automated log uploads](discovery-docker.md). This enables you to easily automate log upload from your SIEMs such as Splunk servers or any other unsupported format. 
+ 
+-	The new user investigation actions enable an added level of drill-down to user investigations. From the **Investigation** pages, you can now right click on an activity, user or account and apply one of the following new filters for advanced investigation and filtration: **View related activity**, **View related governance**, **View related alerts**, **View owned files**, **View files shared with this user**.
+
+-	The Cloud App Catalog now contains a new field for data retention after account termination. This risk factor enables you to make sure that your data is completely removed after you terminate an account within a cloud app.
+
+-	Cloud App Security now has enhanced visibility into activities regarding Salesforce objects such as leads, accounts, campaigns, opportunities, profiles and cases. For example, visibility into access of account pages enables you to configure a policy that alert you if a user views an unusually large number of account pages. This is available through the Salesforce App Connector, when you have enabled Salesforce Event Monitoring in Salesforce (part of Salesforce Shield).
+
+- Do not track is now available for private preview customers! You can now control which users’ activity data is processed. This enables you to set specific groups in Cloud App Security as “Do not track”. For example, you can now decide not to process any activity data for users located in Germany or any country that is not bound by a specific compliance law. This can be implemented across all apps in Cloud App Security, for a specific app or even for a specific subapp. In addition, this feature can be utilized to facilitate gradual roll out of Cloud App Security. For more information or to join the private preview for this feature, contact support or your account representative. 
+
+
 
 ## Cloud App Security release 100 
 Released July 3, 2017
@@ -191,7 +208,7 @@ Released March 20, 2017
 -	If you configured additional third-party DLP scanners, DLP scan status will now show the status of each connector independently to improve visibility.
 -	Cloud App Security now includes support for the Microsoft Teams activities that are supported in the Office 365 audit log. This feature is being rolled out gradually.
 -	For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
--	In the app drawer on the App Permissions tab you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
+-	In the app drawer on the **App Permissions** tab of Office 365 apps, you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
 -	Risky IP addresses now show up as an independent risk factor rather than weighted under the general **Location** risk factor. 
 -	When Azure Information Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
  
