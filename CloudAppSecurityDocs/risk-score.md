@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -31,7 +31,7 @@ ms.suite: ems
 
 ## The Cloud App Catalog
 
-The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 14,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 15,000 cloud apps that are ranked and scored based on more than 60 risk factors, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
 1.  Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance).
 2.  Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -73,7 +73,7 @@ Required task: Upload traffic logs
  3. On the **Data sources** tab, add your sources.
  4. On the **Log collectors** tab, configure the log collector.
  
- **To create a snapshot Cloud Discovery report**
+**To create a snapshot Cloud Discovery report**
 
  1. Go to **Discover** > **Create new snapshot report** and follow the steps shown.
 
@@ -117,19 +117,19 @@ Recommended task: Add your organization details
 2. Under **Email sender identity**, enter your email addresses and display name.
 3. Under **Email design**, upload your organization's email template.
 
- **To set admin notifications**
+**To set admin notifications**
 
 1. In the navigation bar, choose your user name, and then go to **User settings**.
 2. Under **Notifications**, configure the methods you want to set for system notifications.
 3. Choose **Save**.
 
- **To customize the score metrics**
+**To customize the score metrics**
 
 1. Go to **Settings** > **Cloud Discovery settings**.
 2. Under **Score metric configuration**, configure the importance of various risk values.
 3. Choose **Save**.
 
- Now the risk scores given to discovered apps are configured precisely according to your organization needs and priorities.
+Now the risk scores given to discovered apps are configured precisely according to your organization needs and priorities.
 
 **Why personalize your environment?**
 Some features work best when they are customized to your needs. 
@@ -146,12 +146,12 @@ Recommended task: Configure important settings
 3. Enter the IP range **details**, **location**, **tags**, and **category**.
 4. Choose **Create**.
 
- Now you can use IP tags when you create policies, and when you filter and create data views.
+ Now you can use IP tags when you create policies, and when you filter and create continuous reports.
 
- **To create views**
+**To create continuous reports**
 
 1. Go to **Settings** > **Cloud Discovery settings**.
-2. Under **Data views**, choose (+) **Add data view**.
+2. Under **Manage continuous reports**, choose **Create report**.
 3. Follow the configuration steps.
 4. Choose **Create**.
 
