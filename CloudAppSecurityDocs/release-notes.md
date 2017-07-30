@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -191,7 +191,7 @@ Released March 20, 2017
 -	If you configured additional third-party DLP scanners, DLP scan status will now show the status of each connector independently to improve visibility.
 -	Cloud App Security now includes support for the Microsoft Teams activities that are supported in the Office 365 audit log. This feature is being rolled out gradually.
 -	For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
--	In the app drawer on the App Permissions tab you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
+-	In the app drawer on the **App Permissions** tab of Office 365 apps, you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
 -	Risky IP addresses now show up as an independent risk factor rather than weighted under the general **Location** risk factor. 
 -	When Azure Information Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
  
