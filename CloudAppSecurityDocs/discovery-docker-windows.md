@@ -65,7 +65,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     b. **Name** your proxy or firewall.
 
-    c. Select the appliance from the **Source** list.
+    c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that is not specifically listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
 
     d. Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.
 
