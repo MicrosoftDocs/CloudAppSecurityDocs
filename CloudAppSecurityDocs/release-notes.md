@@ -28,17 +28,21 @@ ms.suite: ems
 
 # What's new with Cloud App Security
 
-## Cloud App Security release 101 and 102 
+## Cloud App Security release 102 
 Released July 30, 2017
  
--	Because IP address information is crucial for almost all investigations, you can now view detailed information about IP addresses in the Activity Drawer. From within a specific activity, you can now click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity and a location map. This enables easy drill down, for example when investigating impossible travel alerts, you can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN or corporate to ease future investigation and policy creation. For more information see [IP address insights](activity-filters#ip-address-insights)
+-	Because IP address information is crucial for almost all investigations, you can now view detailed information about IP addresses in the Activity Drawer. From within a specific activity, you can now click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity and a location map. This enables easy drill down, for example when investigating impossible travel alerts, you can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN or corporate to ease future investigation and policy creation. For more information see [IP address insights](activity-filters.md#ip-address-insights)
 
 -	In Cloud Discovery, you can now use [custom log formats](custom-log-parser.md) also for [automated log uploads](discovery-docker.md). This enables you to easily automate log upload from your SIEMs such as Splunk servers or any other unsupported format. 
  
 -	The new user investigation actions enable an added level of drill-down to user investigations. From the **Investigation** pages, you can now right click on an activity, user or account and apply one of the following new filters for advanced investigation and filtration: **View related activity**, **View related governance**, **View related alerts**, **View owned files**, **View files shared with this user**.
 
 -	The Cloud App Catalog now contains a new field for data retention after account termination. This risk factor enables you to make sure that your data is completely removed after you terminate an account within a cloud app.
+
 -	Cloud App Security now has enhanced visibility into activities regarding Salesforce objects such as leads, accounts, campaigns, opportunities, profiles and cases. For example, visibility into access of account pages enables you to configure a policy that alert you if a user views an unusually large number of account pages. This is available through the Salesforce App Connector, when you have enabled Salesforce Event Monitoring in Salesforce (part of Salesforce Shield).
+
+- Do not track is now available for private preview customers! You can now control which users’ activity data is processed. This enables you to set specific groups in Cloud App Security as “Do not track”. For example, you can now decide not to process any activity data for users located in Germany or any country that is not bound by a specific compliance law. This can be implemented across all apps in Cloud App Security, for a specific app or even for a specific subapp. In addition, this feature can be utilized to facilitate gradual roll out of Cloud App Security. For more information or to join the private preview for this feature, contact support or your account representative. 
+
 
 
 ## Cloud App Security release 100 
