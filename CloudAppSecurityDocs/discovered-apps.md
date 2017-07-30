@@ -59,6 +59,9 @@ In the **Discovered apps** page, under **Browse by category** select both **Clou
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
+To dive even deeper, you can investigate discovered apps to the sub-domain level, and identify specific instances that are in use. 
+
+
 ## Discovered app filters
 
 There are basic and advanced Discovered app filters. To achieve a complex filter (such as in the example above) use the advanced option which includes all of the following:
