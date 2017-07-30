@@ -51,7 +51,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          ![salesforce manageusers profiles](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Create a new profile by clicking **New**. Select **System Administrator** as the **Existing Profile** you are cloning.
+    -   Create a new profile by clicking **New**. 
     - Choose the profile you just created to deploy Cloud App Security and click **Edit**. This is the profile to be used for the Cloud App Security service account to set up the App connector.  
   
          ![salesforce edit profile](./media/salesforce-edit-profile.png "salesforce edit profile")  
