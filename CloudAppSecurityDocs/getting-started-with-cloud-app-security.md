@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -146,12 +146,12 @@ Recommended task: Configure important settings
 3. Enter the IP range **details**, **location**, **tags**, and **category**.
 4. Choose **Create**.
 
- Now you can use IP tags when you create policies, and when you filter and create data views.
+ Now you can use IP tags when you create policies, and when you filter and create continuous reports.
 
- **To create views**
+**To create views**
 
 1. Go to **Settings** > **Cloud Discovery settings**.
-2. Under **Data views**, choose (+) **Add data view**.
+2. Under **Manage continuous reports**, choose **Create report**.
 3. Follow the configuration steps.
 4. Choose **Create**.
 

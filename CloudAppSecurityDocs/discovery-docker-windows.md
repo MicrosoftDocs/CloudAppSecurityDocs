@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -144,13 +144,13 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 You should see the message **Finished successfully!**.
   ![windows10](./media/windows10.png)
 
-## Step 4 - On-premises configuration of your network appliances
+## Step 3 - On-premises configuration of your network appliances
 
 Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:
 
         BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## Step 5 - Verify the successful deployment in the Cloud App Security portal
+## Step 4 - Verify the successful deployment in the Cloud App Security portal
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing has not completed.
 
