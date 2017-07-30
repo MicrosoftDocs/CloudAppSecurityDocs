@@ -116,13 +116,13 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
    ![Edit Windows Server configuration](./media/stunnel-windows.png)
  
-13. Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client. Also, delete any example text that is in place (in the example it displays Gmail text) and copy the following into the file:
+13. Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **MCASCAfile** is the public certificate of the Cloud App Security stunnel client. Also, delete any example text that is in place (in the example it displays Gmail text) and copy the following into the file:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
         connect = **ICAP Server IP**:1344
         cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
-        CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
+        CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
 12. Save the file and then click **Reload configuration**.
@@ -165,7 +165,7 @@ Replace these variables:
 
 Download the public key from this location: https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem
 and save it in this location: 
-**/etc/ssl/certs/CAfile.pem**
+**/etc/ssl/certs/MCASCAfile.pem**
 
 ### Configure stunnel 
 
@@ -173,13 +173,13 @@ The stunnel configuration is set in the stunnel.conf file.
 
 1. Create the stunnel.conf file in the following directory: **vim /etc/stunnel/stunnel.conf**
 
-3.	Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **CAfile** is the public certificate of the Cloud App Security stunnel client:
+3.	Open the file and paste the following server configuration lines, where **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **MCASCAfile** is the public certificate of the Cloud App Security stunnel client:
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
         connect = **ICAP Server IP**:1344
         cert = /etc/ssl/private/**stunnel-key**.pem
-        CAfile = /etc/ssl/certs/**CAfile**.pem
+        CAfile = /etc/ssl/certs/**MCASCAfile**.pem
         TIMEOUTclose = 1
         client = no
 
