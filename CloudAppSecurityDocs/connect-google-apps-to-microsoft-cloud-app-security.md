@@ -126,6 +126,9 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 19. In the **Enabled APIs** list, click the setting cog setting next to **Google Apps Marketplace SDK**. 
          ![google marketplace SDK config](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > If the cog is disabled, you can click on **Google Apps Marketplace SDK** instead. 
 20. Select the **Configuration** tab. 
   
     -   Copy the **Project number (App ID)** that appears at the top to use later.  
