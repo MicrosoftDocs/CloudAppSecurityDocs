@@ -43,24 +43,20 @@ Advanced Security Management is a comprehensive solution that enables cloud secu
 |Pillar|Feature|Microsoft Cloud App Security|Advanced Security Management|
 |----|----|----|----|
 |Shadow IT Discovery||||
-||15,000+ discovered apps and automated risk assessment|Yes||
-||750+ apps similar to Office 365||Yes|
+||Discovered apps support|15,000+ and automated risk assessment|750+ apps similar to Office 365|
 ||Ongoing risk assessment||
 ||Anomaly detection|Yes||
-||Manual log upload|Yes|Yes|
-||Automatic log upload|Yes||
+||Log upload|Manual and Automatic|Manual|
 ||Log anonymization for user privacy|Yes|Yes|
 ||Access to full app catalog|Yes||
 |Information Protection||||
 ||Policy setting and enforcement|Yes||
-||Cross SaaS DLP and data sharing control|Yes||
-||Office 365 DLP and Advanced Data Governance||Yes|
+||DLP support|Cross-SaaS DLP and data sharing control|Office 365 DLP and Advanced Data Governance|
 ||Integration with 3rd party DLP solutions|Yes||
-|Identify and control connected apps (including revoke access)|Yes|Yes|
+||Identify and control connected apps (including revoke access)|Yes|Yes|
 ||Azure Information Protection integration|Yes||
 |Threat Prevention||||
-||Cross-app comprehensive alerts dashboard|Yes||
-||Office 365 anomaly detection and security alerts||Yes|
+||Alert support|Cross-app comprehensive alerts, threats and violations dashboard|Office 365 anomaly detection and security alerts|
 ||Manual and automatic alert remediation|Yes|Yes|
 ||SIEM connector|Cross app alerts and activity log|Office 365 alerts|
 ||Microsoft Intelligent Security Graph enhancement|Yes|Yes|
