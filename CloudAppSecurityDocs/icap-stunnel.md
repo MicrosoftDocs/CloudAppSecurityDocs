@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -59,7 +59,7 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 
 Set up an ICAP server, taking note of the port number and make sure that you set **Mode** to **Blocking**. Blocking mode sets the ICAP server to relay the classification verdict back to Cloud App Security.
 
-Refer to your External DLP product documentation for instructions on how to accomplish this. As an example, see [Appendix A: Forcepoint ICAP server setup](#forcepoint).
+Refer to your External DLP product documentation for instructions on how to accomplish this. As an example, see [Appendix A: Forcepoint ICAP server setup](#forcepoint) and [Appendix B: Symantec Deployment Guide](#symantec).
 
 ## STEP 2:  Set up your stunnel server 
 
@@ -267,9 +267,9 @@ Also, under **Allow connection to this ICAP Server from the following IP address
     ![ICAP blocking](./media/icap-blocking.png)
  
 
-## Appendix B: Symantec Deployment Guide
+## Appendix B: Symantec Deployment Guide <a name="symantec"></a>
 
-The supported Symantec DLP versions are 11-14.6. 
+The supported Symantec DLP versions are 11 and higher. 
 As noted above, you should deploy a detection server in the same Azure datacenter where your Cloud App Security tenant resides. The detection server syncs with the enforce server through a dedicated IPSec tunnel. 
  
 ### Detection server installation 
