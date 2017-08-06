@@ -47,24 +47,31 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 ### Step 2: Get a connection string to your Event Hub
 
 1.	Go to the Event Hubs blade.
+  
    ![Event hubs blade](,/media/azure-event-hubs.png)
 
 2.	Select your Event Hub Namespace.
+  
     ![Event hub namespace](,/media/azure-namespace.png)
 
 3.	In the menu, under **Entities**, click on **Event Hubs**. 
+  
     ![Event hubs entities](,/media/azure-event-hubs-entities.png)
 
 4.	Select the new Event Hub created by Azure Monitor. It is named **insights-operational-logs**.
+  
     ![Insights operational logs](,/media/azure-insight-operational-logs.png)
 
 5. Create a new access policy by clicking on **Shared access policies** and then click **Add**.
+  
     ![Shared access policies](,/media/azure-shared-access-policies.png)
 
 6.	Enter a name for the new policy, and make sure to include at least the **Listen claim**. When done, click **Create**.
+  
     ![Azure new policy](,/media/azure-new-policy.png)
 
 7.	Under **Settings** and then **Shared access policies**, click on the access policy you just created.   
+  
     ![Azure select policy](,/media/azure-select-policy.png)
 
 8. In the Policy window, copy one of the connection strings by clicking on the button next to the **Connection string- Primary Key** or **Connection String- Secondary Key**.
