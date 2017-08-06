@@ -50,7 +50,7 @@ To use Access control in Cloud App Security, deploy the Proxy by making a few ch
 > [!NOTE]
 > -  There is no need to change the identity provider’s existing policies.
 
-### Supported apps and identity providers
+#### Supported apps and identity providers
 
 The Proxy’s access control is designed to support any app and any identity provider that supports either SAML or WS-Federation protocols. The Cloud App Security team is testing the leading identity providers and the leading apps with the access control capabilities. However, since there are many identity providers and many cloud apps, not every combination of identity providers and app is tested. We recommend testing the single sign-on process with your identity provider and app on a sandbox or testing environment before deploying it in a production environment.
 
