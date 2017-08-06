@@ -28,6 +28,9 @@ ms.suite: ems
 
 # Configure automatic log upload for continuous reports on a virtual appliance
 
+> [!WARNING] 
+> This feature is being deprecated.
+
 ## Technical requirements
 - Hypervisor: HyperV or VMware
 - Disk space: 250 GB
