@@ -48,31 +48,31 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 
 1.	Go to the Event Hubs blade.
   
-   ![Event hubs blade](,/media/azure-event-hubs.png)
+   ![Event hubs blade](media/azure-event-hubs.png "Azure event hubs")
 
 2.	Select your Event Hub Namespace.
   
-    ![Event hub namespace](,/media/azure-namespace.png)
+    ![Event hub namespace](media/azure-namespace.png "Azure namespace")
 
 3.	In the menu, under **Entities**, click on **Event Hubs**. 
   
-    ![Event hubs entities](,/media/azure-event-hubs-entities.png)
+    ![Event hubs entities](media/azure-event-hubs-entities.png "Azure event hub entities")
 
 4.	Select the new Event Hub created by Azure Monitor. It is named **insights-operational-logs**.
   
-    ![Insights operational logs](,/media/azure-insight-operational-logs.png)
+    ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
 
 5. Create a new access policy by clicking on **Shared access policies** and then click **Add**.
   
-    ![Shared access policies](,/media/azure-shared-access-policies.png)
+    ![Shared access policies](media/azure-shared-access-policies.png "Azure shared access policy")
 
 6.	Enter a name for the new policy, and make sure to include at least the **Listen claim**. When done, click **Create**.
   
-    ![Azure new policy](,/media/azure-new-policy.png)
+    ![Azure new policy](media/azure-new-policy.png "Azure create new policy")
 
 7.	Under **Settings** and then **Shared access policies**, click on the access policy you just created.   
   
-    ![Azure select policy](,/media/azure-select-policy.png)
+    ![Azure select policy](media/azure-select-policy.png "Azure select policy")
 
 8. In the Policy window, copy one of the connection strings by clicking on the button next to the **Connection string- Primary Key** or **Connection String- Secondary Key**.
 
@@ -82,7 +82,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
   
 3.  In the **App connectors** page, click the plus sign button and select **Microsoft Azure**.  
   
-     ![connect Azure to Cloud App Security](./media/azure-connect-app.png "connect azure")  
+     ![connect Azure to Cloud App Security](media/azure-connect-app.png "connect Azure")  
   
 4.  In the **Connection string** field, paste the connection string you copied in the previous step.  
   
