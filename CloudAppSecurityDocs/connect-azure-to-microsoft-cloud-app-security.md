@@ -62,7 +62,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
   
     ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
 
-5. Create a new access policy by clicking on **Shared access policies** and then click **Add**.
+5. Create a new access policy that gives Cloud App Security permission to read from the Event Hub, by clicking on **Shared access policies** and then click **Add**.
   
     ![Shared access policies](media/azure-shared-access-policies.png "Azure shared access policy")
 
