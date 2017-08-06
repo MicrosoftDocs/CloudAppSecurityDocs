@@ -35,43 +35,59 @@ This section provides instructions for connecting Cloud App Security to your exi
 
 Cloud App Security connects to Azure via Event Hubs. This section provides instruction for streaming all your Activity Logs to a single Event Hub in your subscription. 
 
+### Step 1: Stream your Azure activity
+
 1.	Stream the Azure Activity Log of your Azure subscription to an Event Hub. Follow the official guide in the Azure documentation: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
-Note: if you have more than one Azure subscription, repeat this for each subscription but use a single Event Hub that will be shared across your subscriptions
+ > [!NOTE]
+ > If you have more than one Azure subscription, repeat this for each subscription but use a single Event Hub that will be shared across your subscriptions.
 
-After completing the instructions, a new Event Hub will have been created in the Namespace you chose.
+ After completing the instructions, a new Event Hub will be created in the Namespace you chose.
 
-2.	Get a connection string to your Event Hub
+### Step 2: Get a connection string to your Event Hub
 
-a.	Go to the Event Hubs Blade
+1.	Go to the Event Hubs blade.
+   ![Event hubs blade](,/media/azure-event-hubs.png)
 
+2.	Select your Event Hub Namespace.
+    ![Event hub namespace](,/media/azure-namespace.png)
 
-b.	Select your Event Hub Namespace
+3.	In the menu, under **Entities**, click on **Event Hubs**. 
+    ![Event hubs entities](,/media/azure-event-hubs-entities.png)
 
+4.	Select the new Event Hub created by Azure Monitor. It is named **insights-operational-logs**.
+    ![Insights operational logs](,/media/azure-insight-operational-logs.png)
 
-c.	Click on Event Hubs under the Entities s 
+5. Create a new access policy by clicking on **Shared access policies** and then click **Add**.
+    ![Shared access policies](,/media/azure-shared-access-policies.png)
 
-d.	Select the new Event Hub created by Azure Monitor. It will always have the name “insights-operational-logs”.
+6.	Enter a name for the new policy, and make sure to include at least the **Listen claim**. When done, click **Create**.
+    ![Azure new policy](,/media/azure-new-policy.png)
 
+7.	Under **Settings** and then **Shared access policies**, click on the access policy you just created.   
+    ![Azure select policy](,/media/azure-select-policy.png)
 
-3.	Click on Shared access policies and then click on Add
+8. In the Policy window, copy one of the connection strings by clicking on the button next to the **Connection string- Primary Key** or **Connection String- Secondary Key**.
 
-
-4.	Create a new access policy. Enter a name for the new policy, and make sure to include at least the Listen claim. When done, click Create.
-
-
-5.	Click on the new access policy you created in the previous steps
-
-
-6.	Copy one of the connection strings. Click on the Copy button next to the primary or the secondary connection strings.
-
-
+### Step 3: Add Azure to Cloud App Security
  
-7.	Paste your connection string in Cloud App Security. 
-8.	In the App connectors page, click the plus sign followed by Microsoft Azure.
+1.	In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
+  
+3.  In the **App connectors** page, click the plus sign button and select **Microsoft Azure**.  
+  
+     ![connect Azure to Cloud App Security](./media/azure-connect-app.png "connect azure")  
+  
+4.  In the **Connection string** field, paste the connection string you copied in the previous step.  
+  
+5.  In the **Consumer group** field, type:   $Default
+    Unless you created a different consumer group to be used.
+  
+6.  Click **Connect**.
+8.  Make sure the connection succeeded by clicking **Test API**.  
+  
+     Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
+  
 
-9.	Click Connect Microsoft Azure, then paste your previously-copied connection string
-10.	Use $Default as the Consumer group, unless you have reasons to create other consumer groups. When done, click Connect.
 
 
 
