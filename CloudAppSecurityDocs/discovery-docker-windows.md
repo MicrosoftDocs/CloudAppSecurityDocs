@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,9 @@ ms.suite: ems
 ---
 
 # Set up and configure the automatic Log Collector Docker on Windows Server 2016
+
+> [!NOTE]
+> This feature is being gradually rolled out across tenants. Contact support if you would like to be added to the preview.
 
 ## Technical requirements
 
@@ -53,7 +56,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 -   I/O performance of the virtual machine allocated by your IT - determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup generally exceeds 50 GB per hour, it is recommended to split the traffic between multiple log collectors.
 
-## Step 1 – Web portal configuration: Define data sources and link them to a log collector
+## Set up and configuration  
+
+### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
 1.  Go to the automated upload setting page:<br></br> In the Cloud App Security portal, click the settings icon [settings icon](./media/settings-icon.png) followed by **Log collectors**.
 
@@ -104,7 +109,7 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 
     ![Windows4](./media/windows4.png)
 
-## Step 2 – On-premises deployment of your machine
+### Step 2 – On-premises deployment of your machine
 
 >[!NOTE]
 >The following steps describes the deployment in Windows Server. The deployment steps for other platforms are slightly different.
@@ -144,13 +149,13 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 You should see the message **Finished successfully!**.
   ![windows10](./media/windows10.png)
 
-## Step 3 - On-premises configuration of your network appliances
+### Step 3 - On-premises configuration of your network appliances
 
 Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:
 
         BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## Step 4 - Verify the successful deployment in the Cloud App Security portal
+### Step 4 - Verify the successful deployment in the Cloud App Security portal
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing has not completed.
 
