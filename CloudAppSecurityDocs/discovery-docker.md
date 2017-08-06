@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -33,8 +33,7 @@ Log collectors enable you to easily automate log upload from your network. The l
 logs are uploaded to Cloud App Security after the file finished the FTP transfer to the Log Collector.  For Syslog, the Log Collector writes the logs received to the disk and uploads the file to Cloud App Security when the file size is
 larger than 40 KB.
 
-After a log is uploaded to Cloud App Security, it is moved to a backup directory that stores the last 20 logs at any given moment. When new logs arrive, the old ones are deleted. When the log collector disk space is full, the log collector
-drops new logs until it has more free disk space.
+After a log is uploaded to Cloud App Security, it is moved to a backup directory that stores the last 20 logs at any given moment. When new logs arrive, the old ones are deleted. When the log collector disk space is full, the log collector drops new logs until it has more free disk space. When this happens you will receive a warning on the **Log collectors** tab of the **Upload logs automatically** settings.
 
 Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file.
 
@@ -45,7 +44,9 @@ Before setting up automatic log file collection, verify that your log matches th
 
 The Log Collector supports two deployment modes:
 
--   **Container** (*based on Docker CE*): Runs as a Docker image on [Windows](discovery-docker-windows.md) and [Ubuntu](discovery-docker-ubuntu.md), either on premises on in Azure.
+-   **Container** (*Preview*): Runs as a Docker image on [Windows](discovery-docker-windows.md) and [Ubuntu](discovery-docker-ubuntu.md), either on premises on in Azure. 
+
+
 
 -   **Virtual appliance** (*Deprecating*):  [Runs as an image over Hyper-V or VMware hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
 
