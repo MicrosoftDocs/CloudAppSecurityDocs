@@ -53,7 +53,7 @@ Advanced Security Management is a subset of Cloud App Security that provides enh
 ||Detailed reporting per app, user, IP address|Yes||
 |Information Protection||||
 ||DLP support|Cross-SaaS DLP and data sharing control|Provided by Office 365 DLP, incidents can be viewed and reported in ASM|
-||Identify and control connected apps (including revoke access)|Yes|Yes|
+||App permissions - Identify and control OAuth apps|Yes|Yes|
 ||Policy setting and enforcement|Yes||
 ||Azure Information Protection integration|Yes||
 ||Integration with 3rd party DLP solutions|Yes||
