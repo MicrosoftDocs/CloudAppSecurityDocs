@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/8/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
 Cloud App Security connects to Azure via Event Hubs. This section provides instruction for streaming all your Activity Logs to a single Event Hub in your subscription. 
 
-### Step 1: Stream your Azure activity
+### Step 1: Stream your Azure activity logs to Event Hubs
 
 1.	Stream the Azure Activity Log of your Azure subscription to an Event Hub. Follow the official guide in the Azure documentation: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
@@ -43,10 +43,13 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
  > If you have more than one Azure subscription, repeat this for each subscription but use a single Event Hub that will be shared across your subscriptions.
 
  After completing the instructions, a new Event Hub will be created in the Namespace you chose.
+ 
+ > [!NOTE]
+ > If you get an error after trying to export the Activity Logs, go to the **Resource providers** blade in Azure and make sure that ‘microsoft.insights’ is registered.
 
 ### Step 2: Get a connection string to your Event Hub
 
-1.	Go to the Event Hubs blade.
+1.	Go to the **Event Hubs** blade.
   
    ![Event hubs blade](media/azure-event-hubs.png "Azure event hubs")
 
@@ -61,6 +64,9 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 4.	Select the new Event Hub created by Azure Monitor. It is named **insights-operational-logs**.
   
     ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
+  
+  > [!NOTE]
+  > It make take a few minutes until the Event Hub is created.
 
 5. Create a new access policy that gives Cloud App Security permission to read from the Event Hub, by clicking on **Shared access policies** and then click **Add**.
   
@@ -86,8 +92,10 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
   
 4.  In the **Connection string** field, paste the connection string you copied in the previous step.  
   
-5.  In the **Consumer group** field, type:   $Default
-    Unless you created a different consumer group to be used.
+5.  In the **Consumer group** field, type:   `$Default`
+    
+   >[!NOTE] 
+   > If you created a different consumer group to be used, use that **Consumer group** name.
   
 6.  Click **Connect**.
 8.  Make sure the connection succeeded by clicking **Test API**.  
