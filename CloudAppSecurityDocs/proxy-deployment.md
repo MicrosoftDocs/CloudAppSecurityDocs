@@ -34,6 +34,10 @@ ms.suite: ems
 
 The steps described below must be taken to deploy the Cloud App Security Proxy and enable both access control and session control.
 
+As part of the deployment of the Proxy, you need to change configurations in both the identity provider and the app that you want to control. This includes URL changes so that both the identity provider and the app will redirect login requests to the Proxy. In addition, and if needed, certificates are replaced as well.
+
+Once these steps are completed, all login events go through the Proxy and the Proxy can decide if they are allowed to access the app, denied access, or allowed to access in monitored mode. Note that at this stage, the Proxy can request client certificates from the device, and use the state of the device to make policy decisions.
+
 ## Prerequisites
 
 -   A working environment in which your cloud app is configured with an identity provider. The installation process involves configuration changes in both the app and the identity provider.
