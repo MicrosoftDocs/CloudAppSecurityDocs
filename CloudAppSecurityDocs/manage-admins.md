@@ -32,6 +32,8 @@ Cloud App Security supports Role based access control. By default, the following
 
 - Global administrator and Security administrator: Admins with **Full access** will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions.
 
+- Compliance administrator: Has read-only permissions and can manage alerts. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management. 
+
 - Security reader: Has read-only permissions and can manage alerts. The Security reader is restricted from performing the following:
       - Create policies or edit and change existing ones 
       - Performing any governance actions 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,23 @@ ms.suite: ems
 ---
 
 # What's new with Cloud App Security
+
+
+## Cloud App Security release 103 
+Released August 13, 2017
+
+- In place of generic protection, Cloud App Security added Azure Information Protection native protection support for the following Office files .docm,.docx,.dotm,.dotx,.xlam,.xlsb, .xlsm,.xlsx,.xltx, .xps,.potm,.potx, .ppsx,.ppsm,.pptm,.pptx,.thmx,.vsdx,.vsdm,.vssx,.vssm,.vstx,.vstm
+
+- Any Azure Active Directory Compliance administrator will automatically be granted similar permissions in Cloud App Security, including the ability to read only and manage alerts, create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management. 
+
+- We extended the DLP violation context from 40 to 100 characters to help you better understand the context of the violation.
+
+- Detailed error messages to the Cloud Discovery Custom Log uploader to enable you to easily troubleshoot errors in log upload.
+
+- The Cloud Discovery block script was extended to support Zscaler format.
+
+- New Cloud App Catalog risk factor: data retention after account termination. This enables you to make sure that your data is completely removed after you terminate an account within a cloud app.
+
 
 ## Cloud App Security release 102 
 Released July 30, 2017
