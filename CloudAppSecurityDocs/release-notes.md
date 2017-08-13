@@ -32,7 +32,7 @@ ms.suite: ems
 ## Cloud App Security release 103 
 Released August 13, 2017
 
-- In place of generic protection, Cloud App Security added Azure Information Protection native protection support for the following Office files .docm,.docx,.dotm,.dotx,.xlam,.xlsb, .xlsm,.xlsx,.xltx, .xps,.potm,.potx, .ppsx,.ppsm,.pptm,.pptx,.thmx,.vsdx,.vsdm,.vssx,.vssm,.vstx,.vstm
+- Cloud App Security added Azure Information Protection native protection support for the following Office files .docm,.docx,.dotm,.dotx,.xlam,.xlsb, .xlsm,.xlsx,.xltx, .xps,.potm,.potx, .ppsx,.ppsm,.pptm,.pptx,.thmx,.vsdx,.vsdm,.vssx,.vssm,.vstx,.vstm (in place of generic protection).
 
 - Any Azure Active Directory Compliance administrator will automatically be granted similar permissions in Cloud App Security, including the ability to read only and manage alerts, create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management. 
 
