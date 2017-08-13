@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ ms.suite: ems
 
 ## Cloud App Security 
 
-The standalone version of Cloud App Security is a cross-SaaS solution that provides Shadow IT discovery for unsanctioned apps, and for your sanctioned apps, it provides information protection, threat detection and conditional access across cloud applications in your organization. 
+Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls and enhanced threat protection to your cloud apps. With this service, you can gain visibility into Shadow IT by discovering cloud apps in use and you can control and protect data in the apps once you sanction them to the service. 
 
 ## Office 365 Advanced Security Management
 
@@ -40,30 +40,27 @@ Advanced Security Management is a subset of Cloud App Security that provides enh
 
 ## Feature support
 
-|Pillar|Feature|Microsoft Cloud App Security|Advanced Security Management|
+|Capability|Feature|Microsoft Cloud App Security|Office 365 Advanced Security Management|
 |----|----|----|----|
-|Shadow IT Discovery||||
-||Discovered apps support|15,000+ and automated risk assessment|750+ apps similar to Office 365|
-||Log upload|Manual and Automatic|Manual|
+|Cloud Discovery|Discovered apps |15,000 + cloud apps  |750+ cloud apps Cloud apps with similar functionality to Office 365|
+||Deployment for discovery analysis|Manual and automatic log upload|Manual log upload|
 ||Log anonymization for user privacy|Yes|Yes|
-||Ongoing risk assessment: app risk scores and new app alerts|Yes||
-||Discovered apps report|Yes|Yes|
-||App discovery anomaly detection|Yes||
-||Access to full app catalog|Yes||
-||Detailed reporting per app, user, IP address|Yes||
-|Information Protection||||
-||DLP support|Cross-SaaS DLP and data sharing control|Provided by Office 365 DLP, incidents can be viewed and reported in ASM|
-||App permissions - Identify and control OAuth apps|Yes|Yes|
+||Access to full Cloud App Catalog|Yes||
+||Cloud app risk assessment|Yes||
+||Cloud usage analytics per app, user, IP address|Yes||
+||Ongoing analytics & reporting|Yes||
+||Anomaly detection for discovered apps|Yes||
+|Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control|Uses existing Office DLP (available in Office E3 and above)|
+||App permissions and ability to revoke access|Yes|Yes|
 ||Policy setting and enforcement|Yes||
-||Azure Information Protection integration|Yes||
-||Integration with 3rd party DLP solutions|Yes||
-|Threat Detection||||
-||Detection coverage|Cross-app comprehensive alerts, threats and violations dashboard|Office 365 anomaly detection and security alerts|
+||Integration with Azure Information Protection |Yes||
+||Integration with third party DLP solutions|Yes||
+|Threat Detection|Anomaly detection and behavioral analytics|For Cross-SaaS apps including Office 365|For Office 365 apps |
 ||Manual and automatic alert remediation|Yes|Yes|
-||SIEM connector|Alerts and activity log|Alerts only|
-||Microsoft Intelligent Security Graph enhancement|Yes|Yes|
+||SIEM connector|Yes. Alerts and activity logs for cross-SaaS apps.|Yes. Office 365 alerts only.|
+||Integration to Microsoft Intelligent Security Graph|Yes|Yes|
 ||Activity policies|Yes|Yes|
-||Anomaly detection|Yes|Yes|
+
 
 ## See Also  
 

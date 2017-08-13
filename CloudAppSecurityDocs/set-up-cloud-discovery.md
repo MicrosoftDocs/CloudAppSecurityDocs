@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -130,7 +130,7 @@ Data attributes (according to vendor documentation):
 |Squid (Native)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
 |Websense - Investigative detail report (CSV)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Websense - Internet activity log (CEF)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-|Zscaler|**Yes**|No|**Yes**|No|**Yes**|**Yes**|
+|Zscaler|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 
 
 
