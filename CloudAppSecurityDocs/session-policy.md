@@ -79,7 +79,7 @@ When content is matched against the selected expression, the violation text will
 
 10. To view session policy matches, click **Control** and then **Policies**. Filter the results to display only the Session policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. Click the **History** tab to see a history back to up to 6 months of policy matches.     
   
-## session policy reference  
+## Session policy reference  
 
 This section provides reference details about session policy filters. 
 
