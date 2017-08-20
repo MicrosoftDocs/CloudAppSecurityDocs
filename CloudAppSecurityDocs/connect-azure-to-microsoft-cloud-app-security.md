@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -49,7 +49,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 
 ### Step 2: Get a connection string to your Event Hub
 
-1.	Go to the **Event Hubs** blade.
+1.	Go to the **Event Hubs - Preview** blade.
   
    ![Event hubs blade](media/azure-event-hubs.png "Azure event hubs")
 
@@ -62,12 +62,12 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
     ![Event hubs entities](media/azure-event-hubs-entities.png "Azure event hub entities")
 
 4.	Select the new Event Hub created by Azure Monitor. It is named **insights-operational-logs**.
-  
-    ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
-  
   > [!NOTE]
   > It make take a few minutes until the Event Hub is created.
 
+   ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
+  
+  
 5. Create a new access policy that gives Cloud App Security permission to read from the Event Hub, by clicking on **Shared access policies** and then click **Add**.
   
     ![Shared access policies](media/azure-shared-access-policies.png "Azure shared access policy")
@@ -98,15 +98,8 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
    > If you created a different consumer group to be used, use that **Consumer group** name.
   
 6.  Click **Connect**.
-8.  Make sure the connection succeeded by clicking **Test API**.  
+     This will text the connection and may take a couple of minutes. After receiving a success notice, click **Close**.  
   
-     Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
-  
-
-
-
-
-
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
