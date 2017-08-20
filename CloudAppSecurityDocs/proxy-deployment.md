@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploying the Cloud App Security Proxy | Microsoft Docs
-description: This topic provides information about how to deploy the Cloud App Security Proxy.
+description: This topic provides information about how to deploy the Cloud App Security Proxy for non-Azure AD apps.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -27,27 +27,33 @@ ms.suite: ems
 ---
 
 
-# Deploying the Cloud App Security Proxy
+# Deploying the Cloud App Security Proxy for non-Azure AD apps
 
-> [!NOTE]
-> It is strongly recommended to try the installation in a sandbox or testing environment before installing it in a production environment.
 
-The steps described below must be taken to deploy the Cloud App Security Proxy and enable both access control and session control.
+The steps described below must be taken to deploy the Cloud App Security Proxy if your cloud apps are configured by an identity provider that is **not** Azure AD. For apps that are configured by Azure AD, see [Deploying the Cloud App Security Proxy for Azure AD apps](proxy-deployment-aad.md).
+
 
 As part of the deployment of the Proxy, you need to change configurations in both the identity provider and the app that you want to control. This includes URL changes so that both the identity provider and the app will redirect login requests to the Proxy. In addition, and if needed, certificates are replaced as well.
 
 Once these steps are completed, all login events go through the Proxy and the Proxy can decide if they are allowed to access the app, denied access, or allowed to access in monitored mode. Note that at this stage, the Proxy can request client certificates from the device, and use the state of the device to make policy decisions.
 
+> [!NOTE]
+> Proxy capabilities are only available for SAML apps configured with single sign-on.
+
+
 ## Prerequisites
 
--   A working environment in which your cloud app is configured with an identity provider. The installation process involves configuration changes in both the app and the identity provider.
-- Make sure you have access to the single sign-on settings in your identity provider and the app.
+-  A working environment in which your cloud app is configured with an identity provider. 
+- Access to the single sign-on settings in your identity provider and the app.
 
 ## Deploy the Proxy
 
 If you are installing the Proxy in a production environment, we recommend finding a time when most of the users are not using the app, usually late at night or over the weekend, and communicate to your users that there might be a short app downtime.
 
-Before starting to make configuration changes, check that your current configuration works. After this is verified, perform the following steps.
+> [!NOTE]
+> It is strongly recommended to try the installation in a sandbox or testing environment before installing it in a production environment.
+
+Before starting to make configuration changes, try to log in to the app through the identity provide and see that you have logged in successfully. After this is checked, perform the following steps.
 
 1.  In the Cloud App Security portal, go to the Settings cog and choose **Proxy**.
 
@@ -57,14 +63,19 @@ Before starting to make configuration changes, check that your current configura
 
  ![add app to Cloud App Security Proxy](./media/proxy-add-app.png)
 
-4. Upload the single sign-on metadata file from your app's single sign-on settings. If you don't have a metadata file, click **Fill in data manually** and provide the requested data, according to the wizard. 
+4. Upload the single sign-on metadata file from your app's single sign-on settings. If you don't have a metadata file, click **Fill in data manually** and provide the requested data that you can copy from the app's single sign-on settings page: 
 
+    1. **Assertion consumer service URL**: This is the app's single sign-on URL, and is sometimes known as the Reply URL.
+
+    2. **Use app's SAML certificate**: If the app provides a SAML certificate, upload it here.
+ Then click **Next**.
+ 
  ![add single sign-on metadata file to Cloud App Security Proxy](./media/proxy-w-add-app.png)
 
 
 5. In your identity provider's portal, perform the following steps. In most identity provider portals, this is performed under **Applications**:
 
-    1. Create a new custom SAML app. It is required to create a new custom app because you will have to change URLs and add SAML attributes which may not be possible in gallery apps.
+    1. Create a new custom SAML app. It is required to create a new custom app because you will have to change URLs and add SAML attributes which may not be possible in gallery apps. If the app that you want to change is already a custom app, or the identity provider does not have a specific integration with the app, you may skip this step and use the original app and skip to the next step.
     
     2. Copy the single sign-on configuration from the existing app in the identity provider's list, to the new custom app. Make sure that the **Identifier** (also known as audience or entity ID) in the custom app matches the **Identifier** of the single sign-on settings of the actual app. If your identity provider doesn't enable you to use the same **Identifier** for two different apps, after copying it, change the identifier of the original app.
     
@@ -72,15 +83,17 @@ Before starting to make configuration changes, check that your current configura
     
     ![add single sign-on metadata file to Cloud App Security Proxy](./media/proxy-w-add-external-config.png)
 
-5. Upload the single sign-on metadata file from your identity provider. If you don't have a metadata file, click **Fill in data manually** and provide the requested data, according to the wizard.  
+5. Upload the single sign-on metadata file from your identity provider from the new custom app. If you don't have a metadata file, click **Fill in data manually** and provide the requested data, according to the wizard and click on **Next**.  
 
  ![add single sign-on metadata file to Cloud App Security Proxy](./media/proxy-w-identity-provider.png)
 
-6. Perform the following external configuration changes in your identity provider's portal and then, in the new custom app you created:
+6. While still in your identity provider's portal, in the new custom app you created:
 
-    1. Copy the URL provided in the Wizard. Then, go to your identity provider's portal and paste it as the single sign-on URL (or Reply URL)in the new custom SAML app you created.
+    1. Copy the URL provided in the Wizard. Then, go to your identity provider's portal and paste it as the single sign-on URL (or Reply URL) in the new custom SAML app you created.
     
     2. Copy the attributes and values provided in the Proxy wizard and add them as SAML custom attributes.
+
+    3. Optionally, you can upload the Cloud App Security SAML certificate for the identity provider instead of the previous certificate.
     
     3. Make sure that the name identifiers used by your app are in email address format - this is necessary to enable the Cloud App Security Proxy to enforce policies on users.
     
