@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -154,6 +154,10 @@ If you need to delete the SIEM agent in the future, you can click on the three d
 ## High availability options
 
 The SIEM agent is a single endpoint that supports recovery of up to two days of downtime. Additional measure of high availability can be achieved by having a load balancer as the customer endpoint.
+
+
+## Related Videos  
+[Install the SIEM Connector for Cloud App Security](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## See Also  
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
