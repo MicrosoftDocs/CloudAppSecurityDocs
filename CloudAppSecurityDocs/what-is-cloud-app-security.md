@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -86,6 +86,9 @@ Cloud App Security uses the APIs provided by the cloud provider. Each app has it
 ### Policy control  
 
 You can use policies to define your users' behavior in the cloud. Use policies to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If needed, you can use policies to integrate remediation processes to achieve complete risk mitigation. Multiple types of policies correlate to the different types of information you might want to gather about your cloud environment and the types of remediation actions you might take.  
+
+## Related Videos
+- [Joining the security community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## See Also  
 
