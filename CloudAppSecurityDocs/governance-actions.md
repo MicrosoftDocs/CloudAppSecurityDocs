@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/11/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -136,8 +136,8 @@ For information about how governance actions are treated when there are policy c
 |Discover > Discovered Apps/IP addresses/Users|Cloud Discovery|Export discovery data|Creates a CSV from the discovery data.|Discovery|
 |File policy|File|Trash|Puts the file in the user's trash.|One Drive, SharePoint|
 |File Policy|File|Notify last file editor|Sends an email to notify the last person who edited the file that it violates a policy.|G Suite, Box|
-|File Policy|File|Notify file owner|Sends an email to the file owner with the option to cc their manager, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set.|All apps|
-|File Policy, Activity Policy|File, Activity|cc the owner's/user's manager|When the file owner receives an email notification that their file is in violation of a policy, this optionally notifies the manager of the file owner/user.|All apps except Service Now|
+|File Policy|File|Notify file owner|Sends an email to the file owner, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set.|All apps|
+|File Policy, Activity Policy|File, Activity|cc the owner's/user's manager|When the file owner receives an email notification that their file is in violation of a policy, this optionally notifies the manager of the file owner/user.|Salesforce|
 |File Policy, Activity Policy|File, Activity|Notify specific users|Sends an email to notify specific users about a file that violates a policy.|All apps|
 |File policy and Activity policy|File, Activity|Notify user|Sends an email to users to notify them that something they did or a file they own violates a policy. You can add a custom notification to let them know what the violation was.|All|
 |File policy and Files|File|Remove editors' ability to share|In Google Drive, the default editor permissions of a file allow sharing as well. This governance action restricts this option and restricts file sharing to the owner.|G Suite|
