@@ -34,11 +34,11 @@ In the Cloud App Security portal, click on Alerts.
 
 ![Alert menu](./media/alert-menu.png)
 
-To handle each alert, click on the alert in the table and select one of the following options:
-- **Resolve alert**: After you investigate and take actions to mitigate the alert, click **Resolve alert**. You can enter a comment to save information for yourself about what actions were taken, and you can opt to **Send feedback to the Cloud App Security team** regarding the alert. After you resolve an alert it will no longer show up in the alerts table.
-- Resolve alert and  **Mark as read**: You can leave the alert open but mark it as read.
-- Resolve alert and **Adjust policy**: You can modify the policy that the alert matched in response to the alert.
-- **Dismiss**: You can dismiss the alert, which will stop the alert from appearing in the table but will not show the alert as having been resolved. This is most likely used when the alert is benign or a false positive.
+After you look at an alert, if it's not interesting, you can **Dismiss** it. You can enter a comment to explain why you dismissed the alert and you can **Send feedback to the Cloud App Security team**. This feedback is reviewed by our security research team to constantly improve the alerting mechanism. 
+
+If you investigate the alert and mitigate the risk, you can then **Resolve** the alert. The alert will no longer show up in the alerts table. If you started investigating an issue but you want to make sure you remember to continue, you can **Mark as unread**. You can also **Adjust the policy** that matched the alert in order to imrpove future alert matches. Resolving an alert also gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
+
+
 
 The following alerts types will be displayed. 
 
