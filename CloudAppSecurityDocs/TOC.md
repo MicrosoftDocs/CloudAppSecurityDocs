@@ -1,6 +1,7 @@
 # Understand & Explore
 ## [What is CAS?](what-is-cloud-app-security.md)
 ## [What's new?](release-notes.md)
+## [CAS editions](editions-cloud-app-security.md)
 # Deploy
 ## [Getting started](getting-started-with-cloud-app-security.md)
 ## [Basic set up](general-setup.md)
