@@ -42,8 +42,6 @@ For portal access it is necessary to add the following IP addresses to your fire
 
 For some third-party apps to be accessed by Cloud App Security, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console:  
   
--   For the logs:  
-  
     104.209.35.177  
   
     13.91.98.185
