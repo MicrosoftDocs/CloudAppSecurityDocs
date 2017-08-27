@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,14 @@ ms.suite: ems
 ---
 
 # What's new with Cloud App Security
+
+
+## Cloud App Security release 104 
+Released August 27, 2017
+
+-	You can now add IP ranges in bulk by creating a script using the [IP address ranges API](https://portal.cloudappsecurity.com/api-docs/). 
+-	Cloud Discovery now provides better visibility for blocked transactions, by presenting both the total transactions as well as the blocked transactions.
+-	You can now filter cloud applications based on whether they are certified with **ISO 27017**. This new Cloud App Catalog risk factor determines whether the application provider has this certification which establishes commonly accepted controls and guidelines for processing and protecting user information in a public cloud computing environment.
 
 
 ## Cloud App Security release 103 
