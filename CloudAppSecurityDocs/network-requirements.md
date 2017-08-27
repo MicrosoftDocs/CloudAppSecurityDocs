@@ -42,32 +42,20 @@ For portal access it is necessary to add the following IP addresses to your fire
 
 For some third-party apps to be accessed by Cloud App Security, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console:  
   
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
-
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
+104.209.35.177  
+13.91.98.185
+40.118.211.172
+13.93.216.68
+13.91.61.249
+13.93.233.42
+13.64.196.27
+13.64.198.97
+13.64.199.41
+13.64.198.19
 
 > [!NOTE]
 >You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
   
-## Email server
-
-198.2.134.139 (mail1.cloudappsecurity.com)
 
 ## SIEM agent and Log collector
 
@@ -81,11 +69,11 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 
 1.	Source addresses: these should be whitelisted as listed above for API connector third-party apps
 2.	Source TCP port: Dynamic
-3.	Destination address(es): one or two IP address of the stunnel connected to the external ICAP server that you will configure in the next steps
+3.	Destination address(es): one or two IP address of the stunnel connected to the external ICAP server
 4.	Destination TCP port: As defined in your network
 
 > [!NOTE] 
-> By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number - you will be required to enter it in the next step.
+> By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
 
 
 
