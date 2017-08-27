@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -55,7 +55,7 @@ The following is a list of all the policy templates that exist in Cloud App Secu
 |Threat detection|Administrative activity from a non-corporate IP address|Alert when an admin user performs an administrative activity from an IP address that is not included in the corporate IP address range category. You must first configure your corporate IP addresses by going to the Settings page, and setting **IP address ranges**.|
 |Threat detection|General anomaly detection|Alert when an anomalous session is detected in one of the sanctioned apps, such as: impossible travel, log on pattern, inactive account.|
 |Threat detection|Log on from a risky IP address|Alert when a user logs on to your sanctioned apps from a risky IP address. By default, the Risky IP address category contains addresses that have IP address tags of Anonymous proxy, TOR or Botnet. You can add more IP addresses to this category in the IP address ranges settings page.|
-|Threat detection|Mass download by a single user|Alert when a single user performs more than 30 downloads within 5 minutes.|
+|Threat detection|Mass download by a single user|Alert when a single user performs more than 50 downloads within 1 minute.|
 |Threat detection|Multiple failed user log on attempts to an app|Alert when a single user attempts to log on to a single app, and fails more than 10 times within 5 minutes.|
 |Threat detection|Potential ransomware activity|Alert when a user uploads files to the cloud that might be infected with ransomware.|
 |Threat detection|User logon from a non-categorized IP address|Alert when a user logs on from an IP address that is not included in a specific IP range category. You can categorize IP addresses by going to the Settings page, and selecting IP address ranges.|

@@ -41,7 +41,7 @@ The following governance actions can be taken for connected apps either on a spe
   
     -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
   
-    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
+    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
   
 -   Notify specific users – Specific list of email addresses that will receive these notifications.  
   
@@ -81,7 +81,7 @@ The following governance actions can be taken for connected apps either on a spe
   
     -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
   
-    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
+    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
   
     -   Notify additional users – Specific list of email addresses that will receive these notifications.  
   

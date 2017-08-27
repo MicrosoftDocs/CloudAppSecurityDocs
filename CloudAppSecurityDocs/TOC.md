@@ -5,6 +5,7 @@
 # Deploy
 ## [Getting started](getting-started-with-cloud-app-security.md)
 ## [Basic set up](general-setup.md)
+### [Network requirements](network-requirements.md)
 ### [Manage admins](manage-admins.md)
 #### [Admin settings](admin-settings.md)
 ### [Mail settings](mail-settings.md)
