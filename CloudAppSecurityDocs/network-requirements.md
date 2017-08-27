@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2017
+ms.date: 8/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,7 +38,7 @@ For portal access it is necessary to add the following IP addresses to your fire
 104.42.231.28  
 
 
-## API connector access
+## App connector access
 
 For some third-party apps to be accessed by Cloud App Security, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console:  
   
@@ -61,7 +61,14 @@ For some third-party apps to be accessed by Cloud App Security, it may be necess
     13.64.199.41
 
     13.64.198.19
+
+> [!NOTE]
+>You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
   
+## Email server
+
+198.2.134.139 (mail1.cloudappsecurity.com)
+
 ## SIEM agent and Log collector
 
 To enable Cloud App Security to connect to your SIEM and to enable the Cloud App Security log collector to run, it is necessary to open:
