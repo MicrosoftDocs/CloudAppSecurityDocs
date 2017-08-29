@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2017
+ms.date: 8/29/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,16 +28,18 @@ ms.suite: ems
 
 # Protecting your organization's data
 
-Properly training all your employees in information protection can be expensive and sometimes impossible. For companies that have a lot of vendors and partners with access to SharePoint sites and Dropbox locations, it's hard to make sure that your data is secure at all times. That's where Cloud App Security's integration with Azure Information Protection comes in. This better-together cloud app super team enables you to protect your data in near real-time. Not only can that be dangerous for the customers, it can be against PII regulations in many countries, causing potential legal issues for your organization.
+Properly training all your employees in information protection can be expensive and sometimes impossible. For companies that have a lot of vendors and partners with access to SharePoint sites and Dropbox locations, it's hard to make sure that your data is secure at all times. That's where Cloud App Security's integration with Azure Information Protection comes in. This better-together cloud app super team enables you to protect your data in near real-time. 
 
 ## THE THREAT
-A user in your organization saves confidential customer information files to Box. The user doesn't realize that in addition to their immediate team, the entire support staff has access to that Box account, including vendors, partners and visitors who occasionally stop into the office. Any person with access to your organization's Box account now has access to that information.
+A user in your organization saves confidential customer information files to Box. The user doesn't realize that in addition to their immediate team, the entire support staff has access to that Box account, including vendors, partners and visitors who occasionally stop into the office. Any person with access to your organization's Box account now has access to that information. Not only can that be dangerous for your organization, it can be against PII regulations in many countries, causing potential legal issues.
 
 ## THE SOLUTION
-Protect your data in near real-time by setting a policy that automatically applies Azure Information Protection encryption to sensitive files.
+Use Azure Information Protection with Cloud App Security to embed classification and protection information for persistent protection that follows your data—ensuring it remains protected regardless of where it’s stored or who it’s shared with. This also enables you to share data safely with coworkers as well as your customers and partners. Define who can access data and what they can do with it—such as allowing to view and edit files but not print or forward. In addition, remove collaborators and remove sharing abilities.
+
 ## Prerequisites
 
-[Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Cloud App Security.
+- Enable Cloud App Security and Azure Information Protection for your tenant
+- [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Cloud App Security.
 
 ## Setting up data protection
 
