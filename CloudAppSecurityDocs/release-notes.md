@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/3/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,6 +35,7 @@ Released August 27, 2017
 -	You can now add IP ranges in bulk by creating a script using the [IP address ranges API](https://portal.cloudappsecurity.com/api-docs/). 
 -	Cloud Discovery now provides better visibility for blocked transactions, by presenting both the total transactions as well as the blocked transactions.
 -	You can now filter cloud applications based on whether they are certified with **ISO 27017**. This new Cloud App Catalog risk factor determines whether the application provider has this certification which establishes commonly accepted controls and guidelines for processing and protecting user information in a public cloud computing environment.
+- To enable you to prepare for GDPR compliance, we gathered the GDPR readiness statements from the cloud apps in the Cloud App Catalog. It doesn’t yet affect the app risk score, but provides a link for you to the app publisher’s GDPR readiness page, when provided. Microsoft has not verified this content and is not responsible for its validity.
 
 
 ## Cloud App Security release 103 
