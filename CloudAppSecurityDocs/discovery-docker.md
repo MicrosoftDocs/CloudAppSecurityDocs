@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,7 +38,8 @@ After a log is uploaded to Cloud App Security, it is moved to a backup directory
 Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file.
 
 > [!NOTE]
-> Cloud App Security provides support for forwarding logs from your SIEM server to the Log Collector assuming the logs are being forwarded in their original format. However, it is highly recommended that you integrate the log collector directly with your firewall and/or proxy.
+>-  Cloud App Security provides support for forwarding logs from your SIEM server to the Log Collector assuming the logs are being forwarded in their original format. However, it is highly recommended that you integrate the log collector directly with your firewall and/or proxy.
+>- The log collector compresses data before it is uploaded. The outbound traffic on the log collector will be 10% of the size of the traffic logs it receives. 
 
 ## Deployment modes
 

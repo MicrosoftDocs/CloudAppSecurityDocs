@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 9/03/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -49,9 +49,10 @@ The process of generating a risk assessment consists of the following steps and 
  
  
 >[!NOTE]
->Continuous report data is analyzed twice a day.
+>- Continuous report data is analyzed twice a day.
+>- The log collector compresses data before it is uploaded. The outbound traffic on the log collector will be 10% of the size of the traffic logs it receives. 
  
-## Using traffic logs for  Cloud Discovery
+## Using traffic logs for Cloud Discovery
 Cloud Discovery utilizes the data in your traffic logs. The more detailed your log, the better visibility you get. Cloud Discovery requires web-traffic data with the following attributes:
 - Date of the transaction
 - Source IP
