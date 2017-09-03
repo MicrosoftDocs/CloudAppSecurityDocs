@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -99,7 +99,12 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
   
 6.  Click **Connect**.
      This will text the connection and may take a couple of minutes. After receiving a success notice, click **Close**.  
-  
+
+
+> [!NOTE]
+> This feature is in public preview.
+
+
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
