@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/6/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,7 +34,7 @@ ms.suite: ems
 
 ## Technical requirements
 
--   OS: Windows sever 2016 or Windows 10
+-   OS: Windows server 2016 or Windows 10
 
 -   Disk space: 250 GB
 
