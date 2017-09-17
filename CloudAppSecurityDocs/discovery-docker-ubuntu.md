@@ -112,7 +112,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1.  Open a terminal on your Ubuntu machine.
 
-2.  Change to root privileges using the command: `sudo - i`
+2.  Change to root privileges using the command: `sudo -i`
 
 3.  Uninstall old versions and install Docker CE by running the following command:
 

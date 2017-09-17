@@ -30,6 +30,9 @@ ms.suite: ems
 
 This topic provides a list of ports and IP addresses you need to allow and white list in order to work with Cloud App Security. 
 
+For information on how to see which Cloud App Security data center you are connected to, see [API tokens](api-tokens.md)
+
+
 
 ## Portal access, SIEM agent, authentication gateway, and log collector
 
@@ -44,7 +47,7 @@ For portal and authentication gateway access, and to enable Cloud App Security t
 
 ## App connector access and external DLP integration
 
-To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security to connect to these IP addresses:
+To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security from connect to these IP addresses:
 
 
 > [!div class="mx-tableFixed"]

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/17/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -57,7 +57,11 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
   - Generated are tokens that have never been used. 
   - Active are tokens that were generated and were used within the past 7 days. 
   - Inactive were used but there was no activity in the last 7 days.
+5. After you generate a new token, you will be provided with a new URL to use to access the Cloud App Security portal. 
 
+ ![Cloud App Security API token](./media/generate-api-token.png)
+
+The generic portal URL will continue to work but will be considerably slower than the custom URL provided with your token. If you forget the URL at any time, you can view it by going to the **?** icon in the menu and selecting **About**.
 
 ## API token management
 
@@ -71,6 +75,14 @@ After a token is revoked, it will be removed from the table and the software tha
 
 > [!NOTE]
 > SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and will not appear in this table. 
+
+
+## View your data center
+
+To see which data center you are connecting to, in the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
+
+In the Cloud App Security version screen you can see the data center.
+
 
 ## See Also  
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
