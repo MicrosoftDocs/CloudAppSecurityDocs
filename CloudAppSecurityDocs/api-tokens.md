@@ -81,7 +81,7 @@ After a token is revoked, it will be removed from the table and the software tha
 
 To see which data center you are connecting to, in the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
 
-In the Cloud App Security version screen you can see the data center.
+In the Cloud App Security version screen, you can see the data center.
 
 
 ## See Also  
