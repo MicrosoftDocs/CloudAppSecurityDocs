@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -44,7 +44,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          ![box apps](./media/box-apps.png "box apps")  
   
-    -   If **Unpublished Applications** is selected, in the **Except for** text box, add the Cloud App Security app serial number: `nduj1o3yavu30dii7e03c3n7p49cj2qh` and click **Save**.  
+    -   If **Unpublished Applications** is selected, in the **Except for** text box, add the Cloud App Security app serial number:<br></br>US1 data center: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>EU1 data center: me9cm6n7kr4mfz135yt0ab9f5k4ze8qp<br></br>and click **Save**. For information on how to see which Cloud App Security data center you are connected to, see [API tokens](api-tokens.md). 
   
          ![box settings except for](./media/box-settings-except-for.png "box settings except for")  
   
