@@ -35,6 +35,8 @@ This topic provides a list of ports and IP addresses you need to allow and white
 
 For portal access, to enable Cloud App Security to connect to your SIEM, and to enable the Cloud App Security log collector to run it is necessary to add **outbound port 443** for the following IP addresses to your firewall's white list:  
 
+
+> [!div class="mx-tableFixed"]
 |Data center|IP addresses|  
 |----|----|
 |US1|13.91.91.243|
@@ -58,6 +60,8 @@ For portal access, to enable Cloud App Security to connect to your SIEM, and to 
 > [!NOTE] 
 > By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
 
+
+> [!div class="mx-tableFixed"]
 |Data center|IP addresses|  
 |----|----|
 |US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
@@ -68,6 +72,8 @@ For portal access, to enable Cloud App Security to connect to your SIEM, and to 
 
 For legacy customers using the authentication gateway, enable access on the following IP addresses: 
 
+
+> [!div class="mx-tableFixed"]
 |Data center|IP addresses|  
 |----|----|
 |US1|52.183.75.62|
