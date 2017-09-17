@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,52 +28,53 @@ ms.suite: ems
 
 # Network requirements
 
-This topic provides a list of ports and IP addresses you need to allow and whitelist in order to work with Cloud App Security. 
+This topic provides a list of ports and IP addresses you need to allow and white list in order to work with Cloud App Security. 
 
 
-## Portal access
+## Portal access, SIEM agent, authentication gateway, and log collector
 
-For portal access it is necessary to add the following IP addresses to your firewall's whitelist to provide access for the Cloud App Security portal:  
-  
-104.42.231.28  
+For portal and authentication gateway access, and to enable Cloud App Security to connect to your SIEM, as well as to enable the Cloud App Security log collector to run it is necessary to add **outbound port 443** for the following IP addresses to your firewall's white list:  
 
 
-## App connector access
+> [!div class="mx-tableFixed"]
+|Data center|IP addresses|  
+|----|----|
+|US1|13.91.91.243<br></br>52.183.75.62|
+|EU1|52.174.56.180<br></br>13.80.125.22|
 
-For some third-party apps to be accessed by Cloud App Security, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console:  
-  
-104.209.35.177  
-13.91.98.185
-40.118.211.172
-13.93.216.68
-13.91.61.249
-13.93.233.42
-13.64.196.27
-13.64.198.97
-13.64.199.41
-13.64.198.19
+## App connector access and external DLP integration
+
+To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security to connect to these IP addresses:
+
+
+> [!div class="mx-tableFixed"]
+|Data center|IP addresses|  
+|----|----|
+|US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
+|EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
+
+### App connector
+For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. 
 
 > [!NOTE]
 >You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
   
 
-## SIEM agent and Log collector
+### DLP integration
 
-To enable Cloud App Security to connect to your SIEM and to enable the Cloud App Security log collector to run, it is necessary to open:
+In order for Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number. 
 
-- Outbound port 443 to 104.42.231.28
-
-## External DLP integration
-
-In order for Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to the external IP addresses used by Cloud App Security with a dynamic source port number. 
-
-1.	Source addresses: these should be whitelisted as listed above for API connector third-party apps
+1.	Source addresses: these should be white listed as listed above for API connector third-party apps
 2.	Source TCP port: Dynamic
 3.	Destination address(es): one or two IP address of the stunnel connected to the external ICAP server
 4.	Destination TCP port: As defined in your network
 
 > [!NOTE] 
 > By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
+
+
+    
 
 
 
