@@ -38,7 +38,7 @@ The Cloud App Security API provides programmatic access to Cloud App Security th
 
 To see the full documentation of the API, in the Cloud App Security portal go to Help > **API documentation**.
 
-In order to access the API, you have to create an API token and use it in your software to connect to the Cloud App Security APi.
+In order to access the API, you have to create an API token and use it in your software to connect to the Cloud App Security API.
 
 The API tokens tab enables you to help you manage all the API tokens of your tenant. 
 
