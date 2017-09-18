@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 9/18/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -92,34 +92,8 @@ The following table lists, per cloud app, which abilities are supported with App
   
   
 ## Prerequisites  
-For some apps, it may be necessary to add the following IP addresses to the whitelist to enable Cloud App Security to collect logs and provide access for the Cloud App Security console:  
-  
--   For the logs:  
-  
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
 
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
-  
-  
--   For the console:  
-  
-     104.42.231.28  
+- For some apps, it may be necessary to white list IP addresses to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. For more information see [Network requirements](network-requirements.md).
 
 - For each app that you want to connect with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.  
   
