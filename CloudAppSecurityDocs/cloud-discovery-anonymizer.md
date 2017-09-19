@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 
-## Cloud Discovery data anonymization
+# Cloud Discovery data anonymization
 
 Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, due to a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, he can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal’s **Governance log**.
 
