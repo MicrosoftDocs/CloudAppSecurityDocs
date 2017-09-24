@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,7 @@ ms.suite: ems
 # Configure automatic log upload for continuous reports on a virtual appliance
 
 > [!WARNING] 
-> This feature is being deprecated.
+> It is highly recommended to configure log upload using the [Docker](discovery-docker.md) for more flexible deployment.
 
 ## Technical requirements
 - Hypervisor: HyperV or VMware

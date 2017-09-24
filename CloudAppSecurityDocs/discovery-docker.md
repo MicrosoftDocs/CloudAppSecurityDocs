@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/24/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -49,7 +49,7 @@ The Log Collector supports two deployment modes:
 
 
 
--   **Virtual appliance** (*Deprecating*):  [Runs as an image over Hyper-V or VMware hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
+-   **Virtual appliance**:  [Runs as an image over Hyper-V or VMware hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 
