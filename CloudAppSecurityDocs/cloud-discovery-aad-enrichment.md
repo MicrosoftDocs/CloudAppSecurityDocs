@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,7 @@ ms.suite: ems
 
 # Cloud Discovery enrichment
 
-Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username received in the discovery traffic logs will be matched and replaced by the Azure AD username enabling the following new features:
+Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username received in the discovery traffic logs is matched and replaced by the Azure AD username enabling the following new features:
 -	You can investigate Shadow IT usage by Azure Active Directory user.
 -	You can correlate the Discovered cloud app use with the API collected activities.
 -	You can then create custom logs based on Azure AD user groups. For example, a Shadow IT report for a specific Marketing department.
@@ -54,7 +54,7 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
       
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
     
       
