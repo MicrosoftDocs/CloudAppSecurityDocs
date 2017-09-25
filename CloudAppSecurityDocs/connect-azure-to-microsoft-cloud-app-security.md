@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -40,18 +40,18 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 1.	Stream the Azure Activity Log of your Azure subscription to an Event Hub. Follow the official guide in the Azure documentation: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
  > [!NOTE]
- > If you have more than one Azure subscription, repeat this for each subscription but use a single Event Hub that will be shared across your subscriptions.
+ > If you have more than one Azure subscription, repeat this step for each subscription using a single Event Hub, shared across your subscriptions.
 
  After completing the instructions, a new Event Hub will be created in the Namespace you chose.
  
  > [!NOTE]
- > If you get an error after trying to export the Activity Logs, go to the **Resource providers** blade in Azure and make sure that ‘microsoft.insights’ is registered.
+ > If you get an error after trying to export the Activity Logs, go to **Resource providers** in Azure, on the left menu, and make sure that ‘microsoft.insights’ is registered.
 
 ### Step 2: Get a connection string to your Event Hub
 
-1.	Go to the **Event Hubs - Preview** blade.
+1.	Go to the **Event Hubs - Preview** on the left menu.
   
-   ![Event hubs blade](media/azure-event-hubs.png "Azure event hubs")
+   ![Event hubs menu](media/azure-event-hubs.png "Azure event hubs")
 
 2.	Select your Event Hub Namespace.
   
@@ -63,7 +63,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 
 4.	Select the new Event Hub created by Azure Monitor. It is named **insights-operational-logs**.
   > [!NOTE]
-  > It make take a few minutes until the Event Hub is created.
+  > It may take a few minutes until the Event Hub is created.
 
    ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
   
@@ -74,13 +74,13 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 
 6.	Enter a name for the new policy, and make sure to include at least the **Listen claim**. When done, click **Create**.
   
-    ![Azure new policy](media/azure-new-policy.png "Azure create new policy")
+    ![Azure new policy](media/azure-new-policy.png "Azure new policy")
 
-7.	Under **Settings** and then **Shared access policies**, click on the access policy you just created.   
+7.	Under **Settings** and then **Shared access policies**, click on the access policy you created.   
   
-    ![Azure select policy](media/azure-select-policy.png "Azure select policy")
+    ![Azure policy](media/azure-select-policy.png "Azure policy")
 
-8. In the Policy window, copy one of the connection strings by clicking on the button next to the **Connection string- Primary Key** or **Connection String- Secondary Key**.
+8. In the Policy window, copy one of the connection strings by clicking on the button next to **Connection string- Primary Key** or **Connection String- Secondary Key**.
 
 ### Step 3: Add Azure to Cloud App Security
  
@@ -97,8 +97,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
    >[!NOTE] 
    > If you created a different consumer group to be used, use that **Consumer group** name.
   
-6.  Click **Connect**.
-     This will text the connection and may take a couple of minutes. After receiving a success notice, click **Close**.  
+6.  Click **Connect** to connect and test the connection. It may take a couple of minutes. After receiving a success notice, click **Close**.  
 
 
 > [!NOTE]
@@ -107,7 +106,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 ## How to connect Box to Cloud App Security  
   
 > [!NOTE]  
->  Deploying with an account that is not an Admin account will lead to a failure in the API test and will not allow Cloud App Security to scan all of the files in Box. If this is a problem for you, you can deploy with a Co-Admin that has all of the privileges checked, but the API test will continue to fail and files owned by other admins in Box will not be scanned.  
+>  Deploying with an account that is not an Admin account leads to a failure in the API test and does not allow Cloud App Security to scan all of the files in Box. If this is a problem for you, you can deploy with a Co-Admin that has all of the privileges checked, but the API test will continue to fail and files owned by other admins in Box will not be scanned.  
   
 1.  If you restrict application permission access, follow this step. Otherwise, skip to step 2.  
   
@@ -59,9 +59,9 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 4.  In the **Box settings** pop-up, click **Follow this link**.  
   
-5.  This opens the Box log on page. Enter your credentials to allow Cloud App Security access to your team's Box app.  
+5.  The Box logon page opens. Enter your credentials to allow Cloud App Security access to your team's Box app.  
   
-6.  Box will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.  
+6.  Box asks you if you want to allow Cloud App Security access to your team information, activity log, and perform activities as a team member. To proceed, click **Allow**.  
   
 7.  Back in the Cloud App Security portal, you should receive a message saying that Box was successfully connected.  
   
@@ -73,11 +73,11 @@ Box is now connected to Cloud App Security.
  
 After connecting Box, you will receive events for 60 days prior to connection.
   
-After connecting Box, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real time scanning, files on which activity is detected are moved to the beginning of the scan queue, for example a file that is edited, updated, or shared is scanned right away and doesn't wait until it is reached by regular scan process. This does not apply to files that are not inherently modified, for example files that are viewed, previewed, printed or exported.
+After connecting Box, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activities are detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away rather than waiting for the regular scan process. Near real-time scanning does not apply to files that are not inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned as part of the regularly scheduled scan.
   
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
