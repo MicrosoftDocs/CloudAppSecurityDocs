@@ -2,7 +2,7 @@
 # required metadata
 
 title: What are the differences between Cloud App Security editions? | Microsoft Docs
-description: This topic describes the differences between Cloud App Security and Office 365 Advanced Security Management.
+description: This topic describes the differences between Cloud App Security and Office 365 Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -25,22 +25,22 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What are the differences between Cloud App Security and Office 365 Advanced Security Management (ASM)?
+# What are the differences between Cloud App Security and Office 365 Cloud App Security?
 
 > [!NOTE]
-> For information about Advanced Security Management and Cloud App Security for Office 365, see [Get started with Advanced Security Management](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 ## Cloud App Security 
 
 Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls and enhanced threat protection to your cloud apps. With this service, you can gain visibility into Shadow IT by discovering cloud apps in use and you can control and protect data in the apps once you sanction them to the service. 
 
-## Office 365 Advanced Security Management
+## Office 365 Cloud App Security
 
-Advanced Security Management is a subset of Cloud App Security that provides enhanced visibility and control for Office 365. This includes threat detection based on user activity logs, discovery of Shadow IT for apps that have similar functionality to Office 365 offerings and control app permissions to Office 365.
+Office 365 Cloud App Security is a subset of Cloud App Security that provides enhanced visibility and control for Office 365. This includes threat detection based on user activity logs, discovery of Shadow IT for apps that have similar functionality to Office 365 offerings and control app permissions to Office 365.
 
 ## Feature support
 
-|Capability|Feature|Microsoft Cloud App Security|Office 365 Advanced Security Management|
+|Capability|Feature|Microsoft Cloud App Security|Office 365 Cloud App Security|
 |----|----|----|----|
 |Cloud Discovery|Discovered apps |15,000 + cloud apps  |750+ cloud apps Cloud apps with similar functionality to Office 365|
 ||Deployment for discovery analysis|Manual and automatic log upload|Manual log upload|
