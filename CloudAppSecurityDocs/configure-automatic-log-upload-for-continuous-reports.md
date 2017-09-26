@@ -168,6 +168,9 @@ After you have verified that the logs are being uploaded to Cloud App Security a
 2. Click the **Create report** button and fill in the fields.
 3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
 
+> [!NOTE]
+> All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
+
 ![Custom continuous report](./media/custom-continuous-report.png)
 
 ## See Also  
