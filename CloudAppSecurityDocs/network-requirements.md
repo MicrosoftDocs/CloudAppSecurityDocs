@@ -78,11 +78,11 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 
 ## Email server
 
-The Cloud App Security dedicated eamil IP address is: 
+The Cloud App Security dedicated email IP address is: 
 
 198.2.134.139 (mail1.cloudappsecurity.com)
 
-Make sure to whitelist this IP address with your firewall or proxy to enable notifications to be sent.
+Make sure to whitelist this IP address with your anti-spam service to enable notifications to be sent.
     
 
 
