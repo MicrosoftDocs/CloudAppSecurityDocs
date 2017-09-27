@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -76,7 +76,13 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 > [!NOTE] 
 > By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
 
+## Email server
 
+The Cloud App Security dedicated eamil IP address is: 
+
+198.2.134.139 (mail1.cloudappsecurity.com)
+
+Make sure to whitelist this IP address with your firewall or proxy to enable notifications to be sent.
     
 
 
