@@ -125,6 +125,8 @@ This section provides instructions for connecting Cloud App Security to your exi
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
     
+       ![Edit Google Drive](./media/google15.png "google15")  
+
 19. Go back to the **Enabled APIs** list. Click **Google Apps Marketplace SDK**. 
       
 20. Select the **Configuration** tab. 
@@ -190,7 +192,8 @@ This section provides instructions for connecting Cloud App Security to your exi
     -   Click on **Save Changes**.  
   
 18. Go to [admin.google.com](https://admin.google.com/) and then choose **Security**. 
-       ![google security](./media/googlesecurity.png "google8")  
+   
+      ![google security](./media/googlesec.png "google security")  
  
 19. Choose **API reference**.  
        ![google api enable](./media/googleapi.png "google api")  
