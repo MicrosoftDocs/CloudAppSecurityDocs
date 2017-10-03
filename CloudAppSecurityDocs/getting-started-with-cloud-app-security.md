@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/1/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,14 +29,14 @@ ms.suite: ems
 # Deploy Cloud App Security
 Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity, and helping to increase the protection of corporate data. In this topic, we walk you through the steps you take to set up and work with Cloud App Security.  
 
-Your organization must have a license to use Cloud App Security. For more information, see the Licensing resources section in [How to buy Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
+Your organization must have a license to use Cloud App Security. For more information, see the [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) section on the Cloud App Security home page.  
 
 >[!NOTE]
 >You do not need an Office 365 license to use Cloud App Security.  
 
 ## Prerequisites  
   
--   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
+-   Your organization must have a license for Cloud App Security in order to use the product. For more information see the [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) section on the Cloud App Security home page.  
   
      For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
