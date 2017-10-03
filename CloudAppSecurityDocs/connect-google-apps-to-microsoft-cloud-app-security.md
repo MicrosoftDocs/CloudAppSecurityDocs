@@ -124,11 +124,8 @@ This section provides instructions for connecting Cloud App Security to your exi
     -   Scroll down and in the **Drive Integration** section, type the following URL under **Open URL:**  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-     
-         ![google drive config](./media/google15.png "Google Drive config")  
-  
+    
 19. Go back to the **Enabled APIs** list. Click **Google Apps Marketplace SDK**. 
-         ![google marketplace SDK config](./media/google16.png "Google Drive config")  
       
 20. Select the **Configuration** tab. 
   
@@ -143,8 +140,6 @@ This section provides instructions for connecting Cloud App Security to your exi
     -   Configure the four required images under **Application icons**.  
   
          The images can be found at:  [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
-  
-         ![google marketplace sdk config](./media/google17.png "google17")  
   
     -   Fill in the following **Support URLs**:  
   
@@ -198,7 +193,7 @@ This section provides instructions for connecting Cloud App Security to your exi
        ![google security](./media/googlesecurity.png "google8")  
  
 19. Choose **API reference**.  
-       ![google api enable](./media/googleapi.png "google8")  
+       ![google api enable](./media/googleapi.png "google api")  
       
 20. Select **Enable API Access** and click **Save changes**.  
   
