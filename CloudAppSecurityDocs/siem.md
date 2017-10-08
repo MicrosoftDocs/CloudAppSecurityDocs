@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 10/8/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -95,6 +95,8 @@ After you click Finish and leave the Wizard, back in the SIEM page, you can see 
 > [!NOTE]
 > - The file name may differ depending on the version of the SIEM agent.
 > - Parameters in brackets [] are optional, and should be used only if relevant.
+> - When running on Windows, it is recommended to run the JAR as a scheduled task. Make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs logner than** checkbox.
+
 
 Where the following variables are used:
 - DIRNAME is the path to the directory you want to use for local agent debug logs.
