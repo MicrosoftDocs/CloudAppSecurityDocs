@@ -84,7 +84,7 @@ In addition, in order identify managed devices, you can leverage Azure AD domain
 
 For more information about the deployment process, see [Proxy deployment](proxy-deployment.md).
 
-![Cloud App Security proxy architecture](proxy-architecture.png)
+![Cloud App Security proxy architecture](./media/proxy-architecture.png)
 
 ### User login flow
 1. User accesses an SSO-configured app with Azure AD credentials.  
