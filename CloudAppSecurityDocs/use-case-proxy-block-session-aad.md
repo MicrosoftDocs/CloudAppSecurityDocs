@@ -65,6 +65,8 @@ Cloud App Security proxy policies allow you to further restrict a session based 
 
 3. Assign a **Policy severity** and **Category**.
 
+ ![New session policy](./media/new-session-policy.png)
+
 4. Under **Session control type**, select **Monitor all activities and control file download**. This will give you the ability to monitor everything your users do within a Salesforce session, and will give you control to block and protect downloads in real time. You will also be able to filter file content based on the Cloud App Security built-in DLP or an external DLP. 
 
  ![session policy control type](./media/session-policy-control-type.png)

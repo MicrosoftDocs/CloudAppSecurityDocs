@@ -81,6 +81,9 @@ To create a new proxy session policy, follow these steps.
  ![Create session policy](./media/create-session-policy.png)
 
 4. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
+
+ ![New session policy](./media/new-session-policy.png)
+
 5. In the **Session control type** field: 
     1. Select **Monitor all activities** if you only want to monitor activities by users.  
     2. Select **Monitor all activities & control file download** if you want to monitor user activities and take additional actions, such as block or protect downloads for users.
