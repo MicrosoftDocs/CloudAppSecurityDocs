@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,6 +38,8 @@ By integrating Azure Information Protection into Cloud App Security, you can lev
 
 > [!NOTE] 
 > To enable this feature you need both a Cloud App Security license and a license for Azure Information Protection Premium P1 or P2. As soon as both licenses are in place, Cloud App Security syncs the organizations labels from the Azure Information Protection service.
+> Cloud App Security does not support Azure Information Protection scoped policies.
+
 
 ## How it works
 You are probably familiar with file classification labels in [Azure Information Protection](https://docs.microsoft.com/information-protection/). You can see the Azure Information Protection classification tags in Cloud App Security. As soon as you integrate Cloud App Security with Azure Information Protection, Cloud App Security scans files as follows:
