@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What are the differences between Cloud App Security and Office 365 Cloud App Security?
+# What are the differences between Cloud App Security, Office 365 Cloud App Security and Enhanced Cloud App Discovery in Azure AD?
 
 > [!NOTE]
 > For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
@@ -38,7 +38,7 @@ Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing dee
 
 Office 365 Cloud App Security is a subset of Cloud App Security that provides enhanced visibility and control for Office 365. This includes threat detection based on user activity logs, discovery of Shadow IT for apps that have similar functionality to Office 365 offerings and control app permissions to Office 365.
 
-## Feature support
+### Feature support
 
 |Capability|Feature|Microsoft Cloud App Security|Office 365 Cloud App Security|
 |----|----|----|----|
@@ -61,6 +61,21 @@ Office 365 Cloud App Security is a subset of Cloud App Security that provides en
 ||Integration to Microsoft Intelligent Security Graph|Yes|Yes|
 ||Activity policies|Yes|Yes|
 
+## Enhanced Cloud App Discovery in Azure Active Directory
+Cloud App Discovery in Azure AD is a subset of Cloud App Security that provides enhanced Cloud Discovery capabilities for Azure AD P1 and EMS E3 customers. This includes continuous discovery of Shadow IT and ongoing analytics and reporting.
+
+### Feature support
+
+|Capability|Feature|Microsoft Cloud App Security|Cloud App Discovery|
+|----|----|----|----|
+|Cloud Discovery|Discovered apps|15,000 + cloud apps|750+ cloud apps Cloud apps with similar functionality to Office 365|
+||Deployment for discovery analysis|Manual and automatic log upload|Manual and automatic log upload|
+||Log anonymization for user privacy|Yes|Yes|
+||Access to full Cloud App Catalog|Yes||
+||Cloud app risk assessment|Yes||
+||Cloud usage analytics per app, user, IP address|Yes|Yes|
+||Ongoing analytics & reporting|Yes|Yes|
+||Anomaly detection for discovered apps|Yes||
 
 ## See Also  
 
