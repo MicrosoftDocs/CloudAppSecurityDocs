@@ -77,11 +77,7 @@ After a token is revoked, it is removed from the table, and the software that wa
 > SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table. 
 
 
-## View your data center
 
-To see which data center you are connecting to, in the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
-
-In the Cloud App Security version screen, you can see the data center.
 
 
 ## See Also  

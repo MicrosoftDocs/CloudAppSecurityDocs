@@ -30,8 +30,14 @@ ms.suite: ems
 
 This topic provides a list of ports and IP addresses you need to allow and white list in order to work with Cloud App Security. 
 
-For information on how to see which Cloud App Security data center you are connected to, see [API tokens](api-tokens.md)
 
+## View your data center
+
+Some of the requirements below depend on which data center you are connected to. 
+
+To see which data center you are connecting to, in the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
+
+In the Cloud App Security version screen, you can see the data center.
 
 
 ## Portal access, SIEM agent, and authentication gateway
@@ -95,7 +101,9 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 > If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the Microsoft Azure datacenter IP ranges on port 443.
 
-  
+
+
+
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
