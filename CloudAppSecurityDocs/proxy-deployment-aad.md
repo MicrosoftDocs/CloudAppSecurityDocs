@@ -40,7 +40,7 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 
     1. In Azure Active Directory, under **Security**, click on **Conditional access**.
 
-     ![Azure AD conditional access](./media/conditional-access.png)
+     ![Azure AD conditional access](./media/aad-conditional-access.png)
 
     2. Click **New policy** and create a new policy making sure that under **Session** you select **Use proxy enforced restrictions**.
 
@@ -48,13 +48,17 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
     
     4. In the TEST policy, under **Cloud app**, assign the apps you want to control with the proxy. 
 
-2. Log in to the app in question with the credentials set in the conditional access policy.  
+2. Log in to the app you are adding with the credentials set in the conditional access policy.  
 
-3. Repeat this step for each app you want to control with the proxy.
+3. Repeat this process for each app you want to control with the proxy.
 
-4. In the Cloud App Security portal, go to the settings cog and choose **Proxy**.  
+4. In the Cloud App Security portal, go to the settings cog and choose **Proxy**. 
+ 
+ ![Select proxy](./media/proxy-cog.png)
 
 5. The apps you logged into should now appear in the table. 
+
+ ![Proxy page](./media/proxy-page.png)
 
 6. For each app, click the three dots in the right corner of the table row and click **Continue setup**. 
 
@@ -65,6 +69,7 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 1. Try to log into the app. If the login fails, make sure you completed all the proxy wizard steps properly. 
 2. In the Cloud App Security portal, under **Investigate**, select **Activity log** and make sure there are single sign-on logon events captured by the proxy. 
 
+ ![proxy events](./media/proxy-events-activity-log.png)
 
 
 ## See Also  
