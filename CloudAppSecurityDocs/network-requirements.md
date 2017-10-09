@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,9 +34,9 @@ For information on how to see which Cloud App Security data center you are conne
 
 
 
-## Portal access, SIEM agent, authentication gateway, and log collector
+## Portal access, SIEM agent, and authentication gateway
 
-For portal and authentication gateway access, and to enable Cloud App Security to connect to your SIEM, as well as to enable the Cloud App Security log collector to run it is necessary to add **outbound port 443** for the following IP addresses to your firewall's white list:  
+For portal and authentication gateway access, and to enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's white list:  
 
 
 > [!div class="mx-tableFixed"]
@@ -84,8 +84,16 @@ The Cloud App Security dedicated email IP address is:
 
 Make sure to whitelist this IP address with your anti-spam service to enable notifications to be sent.
     
+## Log collector 
 
+To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, it is necessary to open the following:
 
+- Allow the log collector to receive inbound FTP and Syslog traffic.
+- Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
+- Allow the log collector to initiate outbound traffic to the Azure blob storage  (https://adaprodconsole.blob.core.windows.net/) on port 80 and 443.
+
+> [!NOTE]
+> If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the Microsoft Azure datacenter IP ranges on port 443.
 
   
 ## See Also  

@@ -76,14 +76,15 @@ In the menu bar, click the settings icon ![settings icon](./media/settings-icon.
   
     -   **Administrative**: these should be all the IP addresses of your admins.  
   
-    -   **Internal**: these should be all the IP addresses of your internal network, your branch offices and your Wi-Fi roaming addresses.  
+    -  **Cloud provider**: these should be the IP addresses used by your cloud provider.
+  
+    -   **Corporate**: these should be all the IP addresses of your internal network, your branch offices and your Wi-Fi roaming addresses.  
   
     -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc.  
   
     -   **VPN**: these should be any IP addresses you use for remote workers.  
-  
-    -   **Cloud proxy**: this should be the IP address of your proxy in the cloud.  
-  
+ 
+
 7.  When you are done, click **Create**.  
   
      ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  
