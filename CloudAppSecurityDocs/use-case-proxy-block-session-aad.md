@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/8/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -51,14 +51,26 @@ Cloud App Security proxy policies allow you to further restrict a session based 
 1. Create a conditional access policy with assigned users and app.
 2. Select **Use proxy enforced restrictions** under session controls within the conditional access policy. After completing this task, proceed to the Cloud App Security portal and create a session policy to monitor and control file downloads in the session.  
 
+ ![AAD conditional access policy](./media/aad-conditional-access.png)
+
 ### Step 2: Create a session policy
 
 1. In the Cloud App Security portal, select **Control** followed by **Policies**. 
 
 2. In the **Policies** page, click **Create policy** followed by **Session policy**.
+ 
+ ![create session policy](./media/create-session-policy.png)
+
 2. In the **Create session policy** page, give your policy a name and description for example, **Block downloads from Salesforce for unmanaged devices**.
+
 3. Assign a **Policy severity** and **Category**.
+
+ ![New session policy](./media/new-session-policy.png)
+
 4. Under **Session control type**, select **Monitor all activities and control file download**. This will give you the ability to monitor everything your users do within a Salesforce session, and will give you control to block and protect downloads in real time. You will also be able to filter file content based on the Cloud App Security built-in DLP or an external DLP. 
+
+ ![session policy control type](./media/session-policy-control-type.png)
+
 5. Under **Activity source,** and **Activity filters** select the following: 
     - **Device tag**: Select **Compliant**,  **Domain joined**, or **Valid client certificate** as needed. 
     - **App**: Select the app you want to control. 
@@ -71,16 +83,27 @@ Cloud App Security proxy policies allow you to further restrict a session based 
   - **IP address** or **Location**: You can use either of these two parameters to identify non-corporate, or unknown locations, from which a user might be trying to access sensitive data.
 
   If you want to block downloads from BOTH unmanaged devices and non-corporate locations, you will have to create two session policies, one that sets the **Activity source** using hte location and one that sets the **Activity source** to unmanaged devices.
+ 
+ ![session policy activity source](./media/session-policy-activity-filters.png)
 
 6. Under **Activity source,** and **File filters** select the following: 
     - **Classification labels**: If you use Azure Information Protection classification labels and want to filter the files based on a specific Azure Information Protection Classification label.
     - Select **File name** or **File type** to apply restrictions based on these.
+ 
+ ![session policy file filters](./media/session-policy-file-filters.png)
 
 7. Enable **Content inspection** to enable the internal DLP to scan your files for sensitive content. 
 
+ ![session policy content inspection](./media/session-policy-content-inspection.png)
+
 8. Under **Actions**, select **block**. Customize the blocking message that your users will get when they are unable to download files.  
 
+ ![session policy actions](./media/session-policy-actions.png)
+
 9. Set the alerts you want to receive when the policy is matched. You can set a limit so that you won't receive too many alerts, and you can select whether to get the alerts as an email message, text message, or both.
+
+ ![session policy alerts](./media/session-policy-alerts.png)
+
 
 10. Click **Create**  
  

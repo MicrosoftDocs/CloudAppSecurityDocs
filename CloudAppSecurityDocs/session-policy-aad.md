@@ -55,6 +55,8 @@ To create a new conditional access policy in Azure AD, follow these steps.
 
 Sign in to the Azure portal as the tenant admin, and create a new **Conditional access** policy. For more infomration on creating Azure AD Conditional access policy, see [Conditional access in the Azure classic portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
+ ![Azure AD conditional access](./media/aad-conditional-access.png)
+
 Make sure that under **Access controls** you select **Session** and select **Use proxy enforced restrictions** and then **Configure Cloud App Security” . You will be redirected to the Cloud App Security portal to configure your session policies.
 
 ## Create a Cloud App Security proxy session control policy 
@@ -75,25 +77,47 @@ To create a new proxy session policy, follow these steps.
 1. Sign in to the Cloud App Security portal as the tenant admin. 
 2. Select **Control** followed by **Policies**.
 3. In the **Policies** page, click **Create policy** and then select **Session policy**.  
+
+ ![Create session policy](./media/create-session-policy.png)
+
 4. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
+
+ ![New session policy](./media/new-session-policy.png)
+
 5. In the **Session control type** field: 
     1. Select **Monitor all activities** if you only want to monitor activities by users.  
     2. Select **Monitor all activities & control file download** if you want to monitor user activities and take additional actions, such as block or protect downloads for users.
-6. Under **Activity source**, select additional activity filters to apply to the policy. 
+
+ ![session policy control type](./media/session-policy-control-type.png)
+
+6. Under **Activity source activities matching all of the following**, select additional activity filters to apply to the policy. 
      - **Device tags**: Use this filter to identify unmanaged devices.
      - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
      - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
-7. Under **Activity source**, select additional file filters to apply to the policy 
+
+ ![session policy activity source](./media/session-policy-activity-filters.png)
+
+7. Under **Activity source files matching all of the following**, select additional file filters to apply to the policy 
     - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
     - **File name** - Use this filter to apply the policy to specific files.
     - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
+
+ ![session policy file filters](./media/session-policy-file-filters.png)
+
 8. Set **Content inspection** if you want to enable the DLP engine to scan documents and file content.
-9. Under **Action**, select one of the following: 
+ 
+ ![session policy content inspection](./media/session-policy-content inspection.png)
+
+9. Under **Actions**, select one of the following: 
     - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
     - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download)
     - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download)
 
+ ![session policy actions](./media/session-policy-actions.png)
 
+10. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
+
+ ![session policy alert](./media/session-policy-alert.png)
 
 
 ## How block download works <a name="block-download"></a>

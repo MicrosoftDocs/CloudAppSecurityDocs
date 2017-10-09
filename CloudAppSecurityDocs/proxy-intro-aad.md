@@ -121,6 +121,7 @@ To connect a device to Azure AD, the device must either be Azure AD registered, 
 
 ### Client-certificate authenticated devices
 
+The Cloud App Security proxy device identification mechanism can search relevant devices for client certificates. This enables you to roll out authentication certificates to managed devices in your organization and then use the presence of those valid certificates to set policies in Cloud App Security.
 
 ## Supported apps and identity providers
 
