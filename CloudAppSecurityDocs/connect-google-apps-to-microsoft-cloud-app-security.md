@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/3/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,7 +43,9 @@ This section provides instructions for connecting Cloud App Security to your exi
     **Microsoft Cloud App Security** and click **Create**.  
            ![google2](./media/google2.png "google2")  
   
-4.  After the project is created, in the tool bar, click on Google Cloud Platform.
+4.  After the project is created, in the tool bar, click on **Google Cloud Platform** and make sure that the right project is selected in the drop down at the top.
+       
+       ![google project](./media/googleverify-project.png "googleverify project")  
 
 5. Under **APIs** click **Go to APIs overview**.  
   
