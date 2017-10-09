@@ -30,7 +30,7 @@ ms.suite: ems
 # Deploying the Cloud App Security proxy for Azure AD apps
 
 > [!NOTE]
-> It is strongly recommended that you try the installation in a sandbox or testing environment before installing it in a production environment.
+> It is recommended that you try the installation in a sandbox or testing environment before installing it in a production environment.
 
 Follow these steps to configure Azure AD apps to be controlled by the Cloud App Security proxy.
 
@@ -56,24 +56,24 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
  
  ![Select proxy](./media/proxy-cog.png)
 
-5. The apps you logged into should now appear in the table. 
+5. The apps you logged in to should now appear in the table. 
 
  ![Proxy page](./media/proxy-page.png)
 
 6. For each app, click the three dots in the right corner of the table row and click **Continue setup**. 
 
-7. In the proxy wizard, click **Finish**. Within a few minutes, all login requests to your app will be routed through the Cloud App Security proxy. 
+7. In the proxy wizard, click **Finish**. Within a few minutes, all login requests to your app is routed through the Cloud App Security proxy. 
 
 ## Step 2: Test the configuration 
 
-1. Try to log into the app. If the login fails, make sure you completed all the proxy wizard steps properly. 
-2. In the Cloud App Security portal, under **Investigate**, select **Activity log** and make sure there are single sign-on logon events captured by the proxy. 
+1. Try to log in to the app. If the login fails, make sure you completed all the proxy wizard steps properly. 
+2. In the Cloud App Security portal, under **Investigate**, select Activity log, and make sure there are single sign-on logon events captured by the proxy. 
 
  ![proxy events](./media/proxy-events-activity-log.png)
 
 
 ## See Also  
 [Working with the Cloud App Security proxy](proxy-intro.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

@@ -28,13 +28,13 @@ ms.suite: ems
 
 
 # Session policies  
-Azure Active Directory conditional access policies and Cloud App Security proxy session policies work in tandem to examine each user session and make policy decisions for each app. **You must create both an Azure AD conditional access policy and a Cloud App Security Session policy to make sure the appropriate session controls are in place**.
+Azure Active Directory conditional access policies and Cloud App Security proxy session policies work in tandem to examine each user session and make policy decisions for each app. **Create both an Azure AD conditional access policy and a Cloud App Security Session policy to make sure the appropriate session controls are in place**.
 
 ## How session control works 
 
 The Proxy’s session control is built on top of conditional access. After you control access to an app, your session policies will then determine the controls over a user’s session. From single sign-on through to the session itself, user requests and responses go through the proxy rather than directly to the app. 
-To keep the user within the session, the Proxy replaces all the relevant URLs, Java scripts, and cookies within the app to pages duplicated in the Proxy. For example, if the app returns a page with links that end with myapp.com, the proxy will replace them with pages that end with something like myapp.com.Cloud App Security.ms. 
-Once a session is directed through the Proxy, the Proxy can inspect the traffic, display the events it identifies in the Cloud App Proxy portal, and enforce policies on the session. 
+To keep the user within the session, the Proxy replaces all the relevant URLs, Java scripts, and cookies within the app to pages duplicated in the Proxy. For example, if the app returns a page with links that end with myapp.com, the proxy replaces them with pages that end with something like myapp.com.Cloud App Security.ms. 
+After a session is directed through the Proxy, the Proxy can inspect the traffic, display the events it identifies in the Cloud App Proxy portal, and enforce policies on the session. 
 
 ## Azure AD conditional access policies  
 
@@ -47,17 +47,17 @@ To create a new conditional access policy in Azure AD, follow these steps.
 ### Prerequisites for creating an Azure AD conditional access policy  
 
 - Azure AD Premium 2 subscription 
-- Azure portal access credentials  
+- Azure access credentials  
 - SAML application configured for SSO  
 - Cloud App Security portal access 
 
 ### Create an Azure AD conditional access policy 
 
-Sign in to the Azure portal as the tenant admin, and create a new **Conditional access** policy. For more infomration on creating Azure AD Conditional access policy, see [Conditional access in the Azure classic portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+Sign in to the Azure as the tenant admin, and create a new **Conditional access** policy. For more information on creating Azure AD Conditional access policy, see [Conditional access in the Azure classic portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
  ![Azure AD conditional access](./media/aad-conditional-access.png)
 
-Make sure that under **Access controls** you select **Session** and select **Use proxy enforced restrictions** and then **Configure Cloud App Security” . You will be redirected to the Cloud App Security portal to configure your session policies.
+Make sure that under **Access controls** you select **Session** and select **Use proxy enforced restrictions** and then **Configure Cloud App Security**. You are redirected to the Cloud App Security portal to configure your session policies.
 
 ## Create a Cloud App Security proxy session control policy 
 
@@ -122,16 +122,16 @@ To create a new proxy session policy, follow these steps.
 
 ## How block download works <a name="block-download"></a>
 
-When **Block** is set as the **Action** you want to take in the Cloud App Security proxy session policy, the proxy will prevent a user from downloading a file in accordance with the policy’s file filters. A download event is recognized by the proxy for each SAML app and when a user initiates this event, the proxy intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, the proxy returns a **Download restricted** message to the user and replaces the downloaded file with a text file that contains a customizable message to the user, which can be configured from the proxy session policy.  
+When **Block** is set as the **Action** you want to take in the Cloud App Security proxy session policy, the proxy prevents a user from downloading a file in accordance with the policy’s file filters. A download event is recognized by the proxy for each SAML app and when a user initiates this event, the proxy intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, the proxy returns a **Download restricted** message to the user and replaces the downloaded file with a text file that contains a customizable message to the user, which can be configured from the proxy session policy.  
 
-## How protect download works <a name="protect-download"></a>
+## How to protect download works <a name="protect-download"></a>
 
-When **Protect** is set as the **Action** to be taken in the Cloud App Security proxy session policy, the proxy will enforce the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in the Azure portal and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
+When **Protect** is set as the **Action** to be taken in the Cloud App Security proxy session policy, the proxy enforces the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in Azure and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
  
   
 ## See Also  
 [Blocking downloads on unmanaged devices using Azure AD proxy capabilities](use-case-proxy-block-session-aad.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
