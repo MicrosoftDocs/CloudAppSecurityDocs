@@ -106,7 +106,7 @@ To create a new proxy session policy, follow these steps.
 
 8. Set **Content inspection** if you want to enable the DLP engine to scan documents and file content.
  
- ![session policy content inspection](./media/session-policy-content inspection.png)
+ ![session policy content inspection](./media/session-policy-content-inspection.png)
 
 9. Under **Actions**, select one of the following: 
     - **Allow**: Set this action to explicitly allow download according to the policy filters you set.

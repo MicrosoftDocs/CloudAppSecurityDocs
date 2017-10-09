@@ -102,7 +102,7 @@ Cloud App Security proxy policies allow you to further restrict a session based 
 
 9. Set the alerts you want to receive when the policy is matched. You can set a limit so that you won't receive too many alerts, and you can select whether to get the alerts as an email message, text message, or both.
 
- ![session policy alerts](./media/session-policy-alerts.png)
+ ![session policy alerts](./media/session-policy-alert.png)
 
 
 10. Click **Create**  
