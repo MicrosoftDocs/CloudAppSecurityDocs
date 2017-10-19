@@ -54,7 +54,7 @@ This method does not require you to install anything on the device. This is idea
 
 After a session is directed through the proxy, the proxy can perform the following:
 1. Inspect the traffic for user activities
-3. Display the identified events in the Cloud App proxy portal
+3. Display the identified activities in the Cloud App proxy portal
 2. Save the traffic logs and analyze them
 3. Enable the admin to export the traffic logs
 4. Enforce policies on the session
@@ -82,7 +82,7 @@ The proxy currently supports apps that are configured with SAML single sign on i
 In terms of clients, the session control is available for any browser on any major platform. However, mobile apps and desktop apps are not supported. 
 
 > [!NOTE]
- >Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
+> Office 365 applications are not configured with SAML so they are not currently supported.
 
 ## See Also  
 [Deploy the Cloud App Security proxy](proxy-deployment-aad.md)   

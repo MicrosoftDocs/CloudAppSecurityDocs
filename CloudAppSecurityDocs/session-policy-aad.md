@@ -28,16 +28,16 @@ ms.suite: ems
 
 
 # Session policies  
-Session policies provide you with real-time monitoring and control over user activity in your cloud apps. Instead of blocking access from risky session, you can allow access but monitor and/or limit the session with session policies.
 
-Session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the filters you set for a user session. Instead of allowing and blocking access completely, with session control you can monitor the session and/or limit specific session activities. 
-For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Cloud App Security proxy session policies enable you to set these user-session controls. 
+Session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the filters you set for a user session. Instead of allowing or blocking access completely, with session control you can allow access while monitoring the session and/or limit specific session activities. 
+
+For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Cloud App Security session policies enable you to set these user-session controls. 
 
 ## Prerequisites to using session policies
 
-•	Azure AD Premium P2 license
-•	The relevant apps should be deployed with proxy
-•	An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to the Cloud App Security proxy
+- Azure AD Premium P2 license
+- The relevant apps should be [deployed with proxy](proxy-deployment-aad.md)
+- An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to the Cloud App Security proxy, as described below.
 
 
 ## Create an Azure AD conditional access policy
@@ -48,8 +48,8 @@ Azure Active Directory conditional access policies and Cloud App Security sessio
 
 2. Route users to the Cloud App Security proxy by selecting the **Use proxy enforced restrictions** in the **Session** blade.
 
-> [!NOTE]
-> Only apps that were deployed with proxy will be affected by this policy.
+  > [!NOTE]
+  > Only apps that were [deployed with proxy](proxy-deployment-aad.md) will be affected by this policy.
 
  ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
 
@@ -67,40 +67,52 @@ To create a new session policy, follow this procedure
  ![New session policy](./media/new-session-policy.png)
 
 5. In the **Session control type** field: 
-    1. Select **Monitor all activities** if you only want to monitor activities by users.  
-    2. Select **Monitor all activities & control file download** if you want to monitor user activities and take additional actions, such as block or protect downloads for users.
 
- ![session policy control type](./media/session-policy-control-type.png)
+    1. Select **Monitor all activities** if you only want to monitor activities by users.
+
+    2. Select **Monitor all activities & control file download** if you want to monitor  user activities and take additional actions, such as block or protect downloads for users.
+
+    ![session policy control type](./media/session-policy-control-type.png)
 
 6. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy, these can include the following options: 
+
      - **Device tags**: Use this filter to identify unmanaged devices.
+
      - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
+
      - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
+
      - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native app** and should be tested against your mobile and desktop apps for each cloud app.
 
- ![session policy activity source](./media/session-policy-activity-filters.png)
+     ![session policy activity source](./media/session-policy-activity-filters.png)
 
-7. If you selected the option to **Monitor all activities & control file download**, under **Activity source files matching all of the following**, select additional file filters to apply to the policy 
+7. If you selected the option to **Monitor all activities & control file download**, under **Activity source files matching all of the following**, select additional file filters to apply to the policy:
+
     - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
+
     - **File name** - Use this filter to apply the policy to specific files.
+    
     - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
 
- ![session policy file filters](./media/session-policy-file-filters.png)
+     ![session policy file filters](./media/session-policy-file-filters.png)
 
 8. Set **Content inspection** if you want to enable the DLP engine to scan documents and file content.
  
- ![session policy content inspection](./media/session-policy-content-inspection.png)
+   ![session policy content inspection](./media/session-policy-content-inspection.png)
 
 9. If you selected the option to **Monitor all activities & control file download**, under **Activity source files matching all of the following**, under **Actions**, select one of the following: 
+
     - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
+
     - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download)
+
     - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download)
 
- ![session policy actions](./media/session-policy-actions.png)
+     ![session policy actions](./media/session-policy-actions.png)
 
 10. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
 
- ![session policy alert](./media/session-policy-alert.png)
+    ![session policy alert](./media/session-policy-alert.png)
 
 
 ## How block download works <a name="block-download"></a>
