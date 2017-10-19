@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/8/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,7 +30,7 @@ ms.suite: ems
 # Deploying the Cloud App Security proxy for Azure AD apps
 
 > [!NOTE]
-> It is recommended that you try the installation in a sandbox or testing environment before installing it in a production environment.
+> To deploy the Cloud App Security proxy for Azure AD apps, you need a license for Azure AD Premium P2 or Enterprise Mobility + Security E5.
 
 Follow these steps to configure Azure AD apps to be controlled by the Cloud App Security proxy.
 
@@ -44,33 +44,40 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 
     2. Click **New policy** and create a new policy making sure that under **Session** you select **Use proxy enforced restrictions**.
 
+     ![Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
+
     3. In the TEST policy, under **Users**, assign a test user or user that can be used for an initial sign-on.
     
     4. In the TEST policy, under **Cloud app**, assign the apps you want to control with the proxy. 
 
-2. Log in to the app you are adding with the credentials set in the conditional access policy.  
+> [!NOTE]
+>Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
 
-3. Repeat this process for each app you want to control with the proxy.
 
-4. In the Cloud App Security portal, go to the settings cog and choose **Proxy**. 
+2.	After you created the policy, log in to each app configured in the policy with a user configured in the policy. Make sure to first log out of existing sessions.
+
+3.	In the Cloud App Security portal, go to the settings cog and choose **Proxy**. 
  
- ![Select proxy](./media/proxy-cog.png)
+4.	You should see a message letting you know that new Azure AD apps were discovered by the proxy. Click on the **View new apps** link.
 
-5. The apps you logged in to should now appear in the table. 
+5.	In the dialog that opens, you can see all the apps that you logged into in the previous step. For each app, click on the + sign, and then click **Finish**.
 
- ![Proxy page](./media/proxy-page.png)
+> [!NOTE]
+> If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When clicking on the + sign for these apps, you will be able to suggest adding the app to the catalog. After the app is in the catalog, perform the steps again to deploy the app. 
 
-6. For each app, click the three dots in the right corner of the table row and click **Continue setup**. 
+6.	In the proxy apps table, look at the **Available controls** column and verify that both Azure AD conditional access and Session control appear. <br></br>If Session control does not appear for an app, the **Request session control** link appears. Click on it to open a dialog and request the onboarding of the app to session control. During the Proxy public preview period, the onboarding process will be performed together with you by the Cloud App Security team.
+ 
+## Step 2: Test the deployment
 
-7. In the proxy wizard, click **Finish**. Within a few minutes, all login requests to your app is routed through the Cloud App Security proxy. 
+1. First log out of any existing sessions. Then, try to log in to each app that was successfully deployed, using a user that matches the policy configured in Azure AD. 
 
-## Step 2: Test the configuration 
+2.	In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login events are captured for each app.
 
-1. Try to log in to the app. If the login fails, make sure you completed all the proxy wizard steps properly. 
-2. In the Cloud App Security portal, under **Investigate**, select Activity log, and make sure there are single sign-on logon events captured by the proxy. 
+3.	You can filter by clicking on **Advanced**, and then filtering using **Source equals Azure Active Directory conditional access**.
 
- ![proxy events](./media/proxy-events-activity-log.png)
-
+     ![Filter using Azure AD conditional access](./media/sso-logon.png)
+  
+You are now ready to create access and [session policies](session-policy-aad.md) for the proxy apps.
 
 ## See Also  
 [Working with the Cloud App Security proxy](proxy-intro.md)   

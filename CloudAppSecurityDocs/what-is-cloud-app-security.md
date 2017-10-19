@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -49,9 +49,10 @@ Cloud App Security integrates visibility with your cloud by
 -   using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
 -   sanctioning and unsanctioning apps in your cloud.  
 -   using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.  
+-	using proxy protection to get real-time visibility and control over access and activities performed within your cloud apps.
 -   helping you have continuous control by setting, and then continually fine-tuning, policies.  
 
-![Cloud App Security architecture diagram](./media/architecture.png)  
+![Cloud App Security architecture diagram](./media/proxy-architecture.png)  
 
 ### Data retention & Compliance
 
@@ -82,6 +83,13 @@ App connectors use APIs from cloud app providers to integrate the Cloud App Secu
 To connect an app and extend protection, the app administrator authorizes Cloud App Security to access the app. Then, Cloud App Security queries the app for activity logs, and it scans data, accounts, and cloud content. Cloud App Security can enforce policies, detects threats, and provides governance actions for resolving issues.  
 
 Cloud App Security uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Cloud App Security works with app providers to optimize the use of APIs, and to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Cloud App Security engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they are spread over a longer period. Expect some policies to run for several hours or several days.  
+
+### Proxy protection
+The Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With the proxy, you can protect your organization:+ 
+-	Avoid data leaks by blocking downloads before they happen
+-	Set rules that force data stored in and downloaded from the cloud to be protected with encryption
+-	Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices
+-	Control access from non-corporate networks or risky IP addresses
 
 ### Policy control  
 
