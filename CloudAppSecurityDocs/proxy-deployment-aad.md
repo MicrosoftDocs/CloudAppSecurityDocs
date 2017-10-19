@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploying the Cloud App Security Proxy for Azure AD apps| Microsoft Docs
+title: Deploy the Cloud App Security Proxy for Azure AD apps| Microsoft Docs
 description: This topic provides information about how to deploy the Cloud App Security Proxy for Azure AD apps.
 keywords:
 author: rkarlin
@@ -27,10 +27,10 @@ ms.suite: ems
 ---
 
 
-# Deploying the Cloud App Security proxy for Azure AD apps
+# Deploy proxy for Azure AD apps
 
 > [!NOTE]
-> To deploy the Cloud App Security proxy for Azure AD apps, you need a license for Azure AD Premium P2 or Enterprise Mobility + Security E5.
+> To deploy the Cloud App Security proxy for Azure AD apps, you need a license for Azure AD Premium P2.
 
 Follow these steps to configure Azure AD apps to be controlled by the Cloud App Security proxy.
 
@@ -50,8 +50,8 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
     
     4. In the TEST policy, under **Cloud app**, assign the apps you want to control with the proxy. 
 
- > [!NOTE]
- >Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
+     > [!NOTE]
+     >Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
 
 
 2.	After you created the policy, log in to each app configured in the policy with a user configured in the policy. Make sure to first log out of existing sessions.
