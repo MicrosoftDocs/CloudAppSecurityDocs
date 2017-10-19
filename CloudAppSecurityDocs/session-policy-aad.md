@@ -33,53 +33,32 @@ Session policies provide you with real-time monitoring and control over user act
 Session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the filters you set for a user session. Instead of allowing and blocking access completely, with session control you can monitor the session and/or limit specific session activities. 
 For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Cloud App Security proxy session policies enable you to set these user-session controls. 
 
-Prerequisites to using session policies
+## Prerequisites to using session policies
+
 •	Azure AD Premium P2 license
 •	The relevant apps should be deployed with proxy
-•	An Azure AD conditional access policy should be in place that redirects users to the Cloud App Security proxy
+•	An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to the Cloud App Security proxy
 
 
-## Azure AD conditional access policies  
+## Create an Azure AD conditional access policy
 
-Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users AND the SAML app you want to control with the Cloud App Security proxy.  
+Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. 
 
-First establish the conditions: who and what you want to control. Then route users to Cloud App Security. The Cloud App Security proxy is found under Session controls, which are a specific type of access control that enables limited experiences within a cloud application. 
+1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with the Cloud App Security proxy.  
 
-To create a new conditional access policy in Azure AD, follow these steps.  
+2. Route users to the Cloud App Security proxy by selecting the **Use proxy enforced restrictions** in the **Session** blade.
 
-### Prerequisites for creating an Azure AD conditional access policy  
+> [!NOTE]
+> Only apps that were deployed with proxy will be affected by this policy.
 
-- Azure AD Premium 2 subscription 
-- Azure access credentials  
-- SAML application configured for SSO  
-- Cloud App Security portal access 
+ ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
 
-### Create an Azure AD conditional access policy 
+## Create a Cloud App Security session policy 
 
-Sign in to the Azure as the tenant admin, and create a new **Conditional access** policy. For more information on creating Azure AD Conditional access policy, see [Conditional access in the Azure classic portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+To create a new session policy, follow this procedure
 
- ![Azure AD conditional access](./media/aad-conditional-access.png)
-
-Make sure that under **Access controls** you select **Session** and select **Use proxy enforced restrictions** and then **Configure Cloud App Security**. You are redirected to the Cloud App Security portal to configure your session policies.
-
-## Create a Cloud App Security proxy session control policy 
-
-Session controls enable deep session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the filters you set for a user session. Instead of allowing and blocking access completely, with session control you can limit specific session activities. 
-
-For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Cloud App Security proxy session policies enable you to set these user-session controls.  
-
-To create a new proxy session policy, follow these steps.
-
-### Prerequisites for creating a proxy session policy  
-
-- Azure AD conditional access policy set for user(s) and app 
-- App configured for SSO with Azure AD  
-
-### Create a Cloud App Security proxy session policy
-
-1. Sign in to the Cloud App Security portal as the tenant admin. 
-2. Select **Control** followed by **Policies**.
-3. In the **Policies** page, click **Create policy** and then select **Session policy**.  
+1. In the portal, select **Control** followed by **Policies**.
+3. In the **Policies** page, click **Create policy** and select **Session policy**.  
 
  ![Create session policy](./media/create-session-policy.png)
 
@@ -93,14 +72,15 @@ To create a new proxy session policy, follow these steps.
 
  ![session policy control type](./media/session-policy-control-type.png)
 
-6. Under **Activity source activities matching all of the following**, select additional activity filters to apply to the policy. 
+6. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy, these can include the following options: 
      - **Device tags**: Use this filter to identify unmanaged devices.
      - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
      - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
+     - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native app** and should be tested against your mobile and desktop apps for each cloud app.
 
  ![session policy activity source](./media/session-policy-activity-filters.png)
 
-7. Under **Activity source files matching all of the following**, select additional file filters to apply to the policy 
+7. If you selected the option to **Monitor all activities & control file download**, under **Activity source files matching all of the following**, select additional file filters to apply to the policy 
     - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
     - **File name** - Use this filter to apply the policy to specific files.
     - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
@@ -111,7 +91,7 @@ To create a new proxy session policy, follow these steps.
  
  ![session policy content inspection](./media/session-policy-content-inspection.png)
 
-9. Under **Actions**, select one of the following: 
+9. If you selected the option to **Monitor all activities & control file download**, under **Activity source files matching all of the following**, under **Actions**, select one of the following: 
     - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
     - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download)
     - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download)

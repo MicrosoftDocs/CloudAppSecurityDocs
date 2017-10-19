@@ -85,7 +85,7 @@ To connect an app and extend protection, the app administrator authorizes Cloud 
 Cloud App Security uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Cloud App Security works with app providers to optimize the use of APIs, and to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Cloud App Security engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they are spread over a longer period. Expect some policies to run for several hours or several days.  
 
 ### Proxy protection
-The Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With the proxy, you can protect your organization:+ 
+The Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With the proxy, you can protect your organization: 
 -	Avoid data leaks by blocking downloads before they happen
 -	Set rules that force data stored in and downloaded from the cloud to be protected with encryption
 -	Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices
