@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/8/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,13 +28,16 @@ ms.suite: ems
 
 
 # Session policies  
-Azure Active Directory conditional access policies and Cloud App Security proxy session policies work in tandem to examine each user session and make policy decisions for each app. **Create both an Azure AD conditional access policy and a Cloud App Security Session policy to make sure the appropriate session controls are in place**.
+Session policies provide you with real-time monitoring and control over user activity in your cloud apps. Instead of blocking access from risky session, you can allow access but monitor and/or limit the session with session policies.
 
-## How session control works 
+Session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the filters you set for a user session. Instead of allowing and blocking access completely, with session control you can monitor the session and/or limit specific session activities. 
+For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Cloud App Security proxy session policies enable you to set these user-session controls. 
 
-The Proxy’s session control is built on top of conditional access. After you control access to an app, your session policies will then determine the controls over a user’s session. From single sign-on through to the session itself, user requests and responses go through the proxy rather than directly to the app. 
-To keep the user within the session, the Proxy replaces all the relevant URLs, Java scripts, and cookies within the app to pages duplicated in the Proxy. For example, if the app returns a page with links that end with myapp.com, the proxy replaces them with pages that end with something like myapp.com.Cloud App Security.ms. 
-After a session is directed through the Proxy, the Proxy can inspect the traffic, display the events it identifies in the Cloud App Proxy portal, and enforce policies on the session. 
+Prerequisites to using session policies
+•	Azure AD Premium P2 license
+•	The relevant apps should be deployed with proxy
+•	An Azure AD conditional access policy should be in place that redirects users to the Cloud App Security proxy
+
 
 ## Azure AD conditional access policies  
 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,11 +38,14 @@ The following types of policies can be created:
   
 |Policy type icon|Policy type|Use|  
 |-----|-----------------|---------|  
+|![access policy icon](./media/proxy-policy.png)|Access policy|Access policies provide you with real-time monitoring and control over user logins to your cloud apps.|
 |![activity policy icon](./media/activity_policy.png)|Activity policy|Activity policies allow you to enforce a wide range of automated processes leveraging the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|  
 |![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud based on the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity.|  
 |![cloud discovery policy icon](./media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|  
 |![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|  
 |![file policy icon](./media/file_policy.png)|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, PII, credit card information, etc.) and apply governance actions to the files (governance actions are cloud-app specific).|  
+|![session policy icon](./media/proxy-policy.png)|Session policy|Session policies provide you with real-time monitoring and control over user activity in your cloud apps.|
+
   
 ## Identifying risk  
 Cloud App Security helps you mitigate different risks in the cloud. You can configure any policy and alert to be associated with one of the following risks:  
