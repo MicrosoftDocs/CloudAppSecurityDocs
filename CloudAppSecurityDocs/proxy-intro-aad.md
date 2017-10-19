@@ -81,6 +81,9 @@ The proxy device identification mechanism can request authentication from releva
 The proxy currently supports apps that are configured with SAML single sign on in Azure AD. In addition, the session control is not automatically available for all apps. The Cloud App Security team tested many popular apps with the session control, and other apps might require an onboarding process that will be done with the customer.
 In terms of clients, the session control is available for any browser on any major platform. However, mobile apps and desktop apps are not supported. 
 
+> [!NOTE]
+ >Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
+
 ## See Also  
 [Deploy the Cloud App Security proxy](proxy-deployment-aad.md)   
 [For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
