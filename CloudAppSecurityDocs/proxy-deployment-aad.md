@@ -50,8 +50,8 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
     
     4. In the TEST policy, under **Cloud app**, assign the apps you want to control with the proxy. 
 
-> [!NOTE]
->Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
+ > [!NOTE]
+ >Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
 
 
 2.	After you created the policy, log in to each app configured in the policy with a user configured in the policy. Make sure to first log out of existing sessions.
@@ -62,8 +62,8 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 
 5.	In the dialog that opens, you can see all the apps that you logged into in the previous step. For each app, click on the + sign, and then click **Finish**.
 
-> [!NOTE]
-> If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When clicking on the + sign for these apps, you will be able to suggest adding the app to the catalog. After the app is in the catalog, perform the steps again to deploy the app. 
+ > [!NOTE]
+ > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When clicking on the + sign for these apps, you will be able to suggest adding the app to the catalog. After the app is in the catalog, perform the steps again to deploy the app. 
 
 6.	In the proxy apps table, look at the **Available controls** column and verify that both Azure AD conditional access and Session control appear. <br></br>If Session control does not appear for an app, the **Request session control** link appears. Click on it to open a dialog and request the onboarding of the app to session control. During the Proxy public preview period, the onboarding process will be performed together with you by the Cloud App Security team.
  

@@ -44,20 +44,20 @@ After a user is routed to the Cloud App Security proxy, their app sessions can b
 
 -	Monitor low-trust user sessions: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can perform investigation and analysis into user behavior to understand where, and under what conditions, session policies should be applied in the future. 
 
-## How session control works
+### How session control works
 
 The proxy’s session control is built on top of conditional access. After you control access to an app, you can redirect the user sessions to the proxy’s session control instead of directly to the app. From then on, user requests and responses go through the proxy rather than directly to the app.
 
 To keep the user within the session, the proxy replaces all the relevant URLs, Java scripts, and cookies within the app session with proxy URLs. For example: if the app returns a page with links whose domains ends with myapp.com, the proxy replaces the links with domains ending with something like: myapp.com.us.cas.ms 
 
-> [!NOTE]
-> This method does not require you to install anything on the device. This is ideal when monitoring sessions from unmanaged devices. 
+This method does not require you to install anything on the device. This is ideal when monitoring sessions from unmanaged devices. 
 
 After a session is directed through the proxy, the proxy can perform the following:
-1. Inspect the traffic
-2. Save the traffic logs and analyze them
+1. Inspect the traffic for user activities
 3. Display the identified events in the Cloud App proxy portal
-4. Enforce policies on the session.
+2. Save the traffic logs and analyze them
+3. Enable the admin to export the traffic logs
+4. Enforce policies on the session
 
 ## Device identification
 
@@ -70,7 +70,7 @@ The proxy enables you to identify and create policies based on device posture. I
  
 ### Compliant and domain joined devices
 Azure AD conditional access enables compliant and domain-joined device information to be passed directly to the Cloud App Security proxy. From there, a session policy can be developed that uses device state as a filter.
-For more information, see the ]Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
+For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
 
 ### Client-certificate authenticated devices
 
