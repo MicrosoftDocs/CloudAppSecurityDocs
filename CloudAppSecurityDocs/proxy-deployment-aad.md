@@ -51,7 +51,7 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
     4. In the TEST policy, under **Cloud app**, assign the apps you want to control with the proxy. 
 
      > [!NOTE]
-     >Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML and therefore are not currently supported.
+     >Make sure that you choose apps that are supported by the proxy. The proxy supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML so they are not currently supported.
 
 
 2.	After you created the policy, log in to each app configured in the policy with a user configured in the policy. Make sure to first log out of existing sessions.
@@ -71,16 +71,16 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 
 1. First log out of any existing sessions. Then, try to log in to each app that was successfully deployed, using a user that matches the policy configured in Azure AD. 
 
-2.	In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login events are captured for each app.
+2.	In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
 
 3.	You can filter by clicking on **Advanced**, and then filtering using **Source equals Azure Active Directory conditional access**.
 
      ![Filter using Azure AD conditional access](./media/sso-logon.png)
   
-You are now ready to create access and [session policies](session-policy-aad.md) for the proxy apps.
+You are now ready to create [session policies](session-policy-aad.md) to control your proxy apps.
 
 ## See Also  
-[Working with the Cloud App Security proxy](proxy-intro.md)   
+[Working with the Cloud App Security proxy](proxy-intro-aad.md)   
 [For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
