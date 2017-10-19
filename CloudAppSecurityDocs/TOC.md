@@ -28,7 +28,7 @@
 ### [Connect ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 ## [Protect apps with proxy](proxy-intro-aad.md)
-### [Deploy proxy](proxy-deployment-aad.md)
+### [Deploy proxy for Azure AD apps](proxy-deployment-aad.md)
 # Use
 ## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
 ## Scenarios
