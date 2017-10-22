@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 10/22/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -121,7 +121,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   **Short Description & Long Description** (optional): Microsoft Cloud App Security provides you with visibility into cloud applications, helping you control, investigate, and govern cloud application use; secure corporate data; and detect suspicious activities for any cloud application.  
   
-    -   Google requires you to upload at least one application Icon. Go to [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) to download a zip file containing Cloud App Security icons. Then, under **Application icon** drag and drop the 128x128 and 32x32 images.  
+    -   Google requires you to upload at least one application Icon. Go to [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) to download a zip file containing Cloud App Security icons. Then, under **Application icon** drag and drop the 128x128 and 32x32 images.  
   
     -   Scroll down and in the **Drive Integration** section, type the following URL under **Open URL:**  
   
