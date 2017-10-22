@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2017
+ms.date: 10/22/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 
-# Session policies  
+# Session policies (preview) 
 
 > [!NOTE]
 > This is a preview feature.
@@ -77,7 +77,7 @@ To create a new session policy, follow this procedure:
 
     ![session policy control type](./media/session-policy-control-type.png)
 
-6. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy, these can include the following options: 
+6. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
 
      - **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -96,11 +96,12 @@ To create a new session policy, follow this procedure:
         - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
 
         - **File name** - Use this filter to apply the policy to specific files.
-    
+
         - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
 
-       ![session policy file filters](./media/session-policy-file-filters.png)
+         ![session policy file filters](./media/session-policy-file-filters.png)
 
+        
     2. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and file content.
  
      ![session policy content inspection](./media/session-policy-content-inspection.png)
@@ -118,6 +119,39 @@ To create a new session policy, follow this procedure:
 10. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
 
     ![session policy alert](./media/session-policy-alert.png)
+
+
+## How session monitoring works
+
+When you create a session policy, each user session that matches the policy is redirected to the proxy session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
+
+    ![session monitoring notice](./media/session-monitoring-notice.png)
+
+If you do not want to notify the user that they are being monitored, you can disable the notification message.
+
+1. Under the settings cog, select **General settings**. 
+
+2. Then, under Cloud App Security proxy settings, unselect the **Notify users** checkbox.
+
+    ![disable session monitoring notice](./media/disable-session-monitoring-notice.png)
+
+To keep the user within the session, the proxy replaces all the relevant URLs, Java scripts, and cookies within the app session with proxy URLs. For example: if the app returns a page with links whose domains ends with myapp.com, the proxy replaces the links with domains ending with something like: myapp.com.us.cas.ms. This way the entire session is monitored by the proxy.
+
+The proxy records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report called **Cloud App Security Proxy** is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
+
+![proxy report](./media/proxy-report.png)
+
+
+To export these logs:
+
+1. Go to the settings cog and click **Proxy**.
+2. On the right side of the table, click the export button . 
+3. Select the range of the report and click **Export** ![export button](./media/export-button.png). This process may take some time.
+
+To download the exported log:
+
+1. After the report is ready, go to **Investigate** and then **Custom reports**.
+2. In the table, select the relevant report from the list of **Proxy traffic logs** and click download ![download button](./media/download-button.png). 
 
 
 ## How block download works <a name="block-download"></a>

@@ -26,9 +26,9 @@ ms.suite: ems
 
 ---
 
-# Blocking downloads of sensitive information on unmanaged devices using the Cloud App Security proxy
+# Blocking downloads of sensitive information on unmanaged devices or from risky locations using the Cloud App Security proxy
 
-Today's IT admin is stuck between a rock and hard place: You want to enable your employees to be productive. That means enabling employees to access apps so they can work at any time, from any device. On the other hand, you want to protect the company's assets, and that includes proprietary and privileged information. How can you enable your employees to access your cloud apps, while protecting your data? **This use case allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
+Today's IT admin is stuck between a rock and hard place: You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. On the other hand, you want to protect the company's assets, and that includes proprietary and privileged information. How can you enable your employees to access your cloud apps, while protecting your data? **This use case allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 
 
 ## THE THREAT
@@ -64,7 +64,7 @@ After completing this task, proceed to the Cloud App Security portal and create 
  
  ![create session policy](./media/create-session-policy.png)
 
-2. In the **Create session policy** page, give your policy a name and description for example, **Block downloads from Salesforce for unmanaged devices**.
+2. In the **Create session policy** page, give your policy a name and description. For example, **Block downloads from Salesforce for unmanaged devices**.
 
 3. Assign a **Policy severity** and **Category**.
 
@@ -78,7 +78,9 @@ After completing this task, proceed to the Cloud App Security portal and create 
     
     - **Device tag**: Select **Does not equal** and then select **Compliant**,  **Domain joined**, or **Valid client certificate**, depending on the method used in your organization for identifying managed devices. 
     
-    - **App**: Select the app you want to control.    
+    - **App**: Select the app you want to control.  
+
+    - **Users**: Select the users you want to monitor.  
     
 7. Alternatively, if you want to block the downloads for locations that are not part of your corporate network, under **Activity source** in the **Activities matching all of the following** section, set the following filters: 
 
@@ -88,6 +90,8 @@ After completing this task, proceed to the Cloud App Security portal and create 
      > If you want to block downloads from BOTH unmanaged devices and non-corporate locations, you have to create two session policies, one that sets the **Activity source** using the location and one that sets the **Activity source** to unmanaged devices.
  
    - **App**: Select the app you want to control.    
+   
+   - **Users**: Select the users you want to monitor.  
 
 6. Under **Activity source** in the **Files matching all of the following** section, set the following filters: 
    
@@ -115,7 +119,7 @@ After completing this task, proceed to the Cloud App Security portal and create 
 
 ## Validate your policy 
 
-1. To simulate the blocked file download, from an unmanaged device or a non-corporate network location, log in to app and attempt to download a file. 
+1. To simulate the blocked file download, from an unmanaged device or a non-corporate network location, log in to the app and attempt to download a file. 
 
 2. The file should be blocked and you should receive the message you set under **Customize block messages**. 
 

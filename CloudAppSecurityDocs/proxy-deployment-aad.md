@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2017
+ms.date: 10/22/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -57,15 +57,24 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 2.	After you created the policy, log in to each app configured in the policy with a user configured in the policy. Make sure to first log out of existing sessions.
 
 3.	In the Cloud App Security portal, go to the settings cog and choose **Proxy**. 
- 
+    
+      ![proxy menu](./media/proxy-menu.png)
+
 4.	You should see a message letting you know that new Azure AD apps were discovered by the proxy. Click on the **View new apps** link.
 
-5.	In the dialog that opens, you can see all the apps that you logged into in the previous step. For each app, click on the + sign, and then click **Finish**.
+ ![proxy view new apps](./media/proxy-view-new-apps.png)
+
+5.	In the dialog that opens, you can see all the apps that you logged into in the previous step. For each app, click on the + sign, and then click **Add**.
+
+ ![proxy new apps](./media/proxy-new-app.png)
 
  > [!NOTE]
  > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When clicking on the + sign for these apps, you will be able to suggest adding the app to the catalog. After the app is in the catalog, perform the steps again to deploy the app. 
 
-6.	In the proxy apps table, look at the **Available controls** column and verify that both Azure AD conditional access and Session control appear. <br></br>If Session control does not appear for an app, the **Request session control** link appears. Click on it to open a dialog and request the onboarding of the app to session control. During the Proxy public preview period, the onboarding process will be performed together with you by the Cloud App Security team.
+6.	In the proxy apps table, look at the **Available controls** column and verify that both Azure AD conditional access and Session control appear. <br></br>If Session control does not appear for an app, that means it's not yet available for that specific app and you will see the **Request session control** link instead. Click on it to open a dialog and request the onboarding of the app to session control. During the Proxy public preview period, the onboarding process will be performed together with you by the Cloud App Security team.
+  
+ ![request session control](./media/request-session-control.png)
+
  
 ## Step 2: Test the deployment
 
