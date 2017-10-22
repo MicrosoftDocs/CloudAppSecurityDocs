@@ -145,8 +145,8 @@ The proxy records the traffic logs of every user session that is routed through 
 To export these logs:
 
 1. Go to the settings cog and click **Proxy**.
-2. On the right side of the table, click the export button . 
-3. Select the range of the report and click **Export** ![export button](./media/export-button.png). This process may take some time.
+2. On the right side of the table, click the export button ![export button](./media/export-button.png). 
+3. Select the range of the report and click **Export**. This process may take some time.
 
 To download the exported log:
 
