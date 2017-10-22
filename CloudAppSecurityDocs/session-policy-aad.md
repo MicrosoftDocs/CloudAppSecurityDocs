@@ -29,9 +29,12 @@ ms.suite: ems
 
 # Session policies  
 
-Session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the filters you set for a user session. Instead of allowing or blocking access completely, with session control you can allow access while monitoring the session and/or limit specific session activities. 
+> [!NOTE]
+> This is a preview feature.
 
-For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Cloud App Security session policies enable you to set these user-session controls. 
+Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the filters you set for a user session. Instead of allowing or blocking access completely, with session control you can allow access while monitoring the session and/or limit specific session activities. 
+
+For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Session policies enable you to set these user-session controls. 
 
 ## Prerequisites to using session policies
 
@@ -42,20 +45,20 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 ## Create an Azure AD conditional access policy
 
-Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. 
+Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. To set up a conditional access policy in Azure AD, follow this procedure:
 
-1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with the Cloud App Security proxy.  
-
-2. Route users to the Cloud App Security proxy by selecting the **Use proxy enforced restrictions** in the **Session** blade.
+1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with the Cloud App Security proxy. 
 
   > [!NOTE]
   > Only apps that were [deployed with proxy](proxy-deployment-aad.md) will be affected by this policy.
+
+2. Route users to the Cloud App Security proxy by selecting the **Use proxy enforced restrictions** in the **Session** blade.
 
  ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
 
 ## Create a Cloud App Security session policy 
 
-To create a new session policy, follow this procedure
+To create a new session policy, follow this procedure:
 
 1. In the portal, select **Control** followed by **Policies**.
 3. In the **Policies** page, click **Create policy** and select **Session policy**.  
@@ -86,29 +89,31 @@ To create a new session policy, follow this procedure
 
      ![session policy activity source](./media/session-policy-activity-filters.png)
 
-7. If you selected the option to **Monitor all activities & control file download**, under **Activity source files matching all of the following**, select additional file filters to apply to the policy:
+7. If you selected the option to **Monitor all activities & control file download**:
 
-    - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
+    1. Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These can include the following options:
 
-    - **File name** - Use this filter to apply the policy to specific files.
+        - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
+
+        - **File name** - Use this filter to apply the policy to specific files.
     
-    - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
+        - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
 
-     ![session policy file filters](./media/session-policy-file-filters.png)
+       ![session policy file filters](./media/session-policy-file-filters.png)
 
-8. Set **Content inspection** if you want to enable the DLP engine to scan documents and file content.
+    2. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and file content.
  
-   ![session policy content inspection](./media/session-policy-content-inspection.png)
+     ![session policy content inspection](./media/session-policy-content-inspection.png)
 
-9. If you selected the option to **Monitor all activities & control file download**, under **Activity source files matching all of the following**, under **Actions**, select one of the following: 
+    3. Under **Actions**, select one of the following: 
 
-    - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
+        - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
 
-    - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download)
+        - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
 
-    - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download)
+        - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
-     ![session policy actions](./media/session-policy-actions.png)
+         ![session policy actions](./media/session-policy-actions.png)
 
 10. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
 
@@ -121,7 +126,8 @@ When **Block** is set as the **Action** you want to take in the Cloud App Securi
 
 ## How to protect download works <a name="protect-download"></a>
 
-When **Protect** is set as the **Action** to be taken in the Cloud App Security proxy session policy, the proxy enforces the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in Azure and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
+When **Protect** is set as the **Action** to be taken in the Cloud App Security proxy session policy, the proxy enforces the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in Azure and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security
+ policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
  
   
 ## See Also  
