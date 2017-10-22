@@ -77,7 +77,7 @@ To create a new session policy, follow this procedure:
 
     ![session policy control type](./media/session-policy-control-type.png)
 
-6. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy, these can include the following options: 
+6. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
 
      - **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -146,12 +146,12 @@ To export these logs:
 
 1. Go to the settings cog and click **Proxy**.
 2. On the right side of the table, click the export button . 
-3. Select the range of the report and click **Export**. This process may take some time.
+3. Select the range of the report and click **Export** ![export button](./media/export-button.png). This process may take some time.
 
 To download the exported log:
 
 1. After the report is ready, go to **Investigate** and then **Custom reports**.
-2. In the table, select the relevant report from the list of **Proxy traffic logs** and click download . 
+2. In the table, select the relevant report from the list of **Proxy traffic logs** and click download ![download button](./media/download-button.png). 
 
 
 ## How block download works <a name="block-download"></a>
