@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2017
+ms.date: 10/22/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -66,7 +66,7 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 
 5.	In the dialog that opens, you can see all the apps that you logged into in the previous step. For each app, click on the + sign, and then click **Add**.
 
- ![proxy new apps](./media/proxy-new-apps.png)
+ ![proxy new apps](./media/proxy-new-app.png)
 
  > [!NOTE]
  > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When clicking on the + sign for these apps, you will be able to suggest adding the app to the catalog. After the app is in the catalog, perform the steps again to deploy the app. 
