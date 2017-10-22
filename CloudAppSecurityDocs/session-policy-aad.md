@@ -125,7 +125,7 @@ To create a new session policy, follow this procedure:
 
 When you create a session policy, each user session that matches the policy is redirected to the proxy session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
 
-    ![session monitoring notice](./media/session-monitoring-notice.png)
+   ![session monitoring notice](./media/session-monitoring-notice.png)
 
 If you do not want to notify the user that they are being monitored, you can disable the notification message.
 
