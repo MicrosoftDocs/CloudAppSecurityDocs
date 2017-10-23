@@ -86,6 +86,11 @@ To create a new session policy, follow this procedure:
      - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
 
      - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native app** and should be tested against your mobile and desktop apps for each cloud app.
+         
+         ![native app support](./media/user-agent-tag.png)
+
+       >[!NOTE]
+       >Session policies don’t support mobile and desktop apps. Make sure to test session policies to see that they don’t interfere with mobile and desktop app functionality. If necessary, exclude mobile and desktop apps from session policies.
 
      ![session policy activity source](./media/session-policy-activity-filters.png)
 

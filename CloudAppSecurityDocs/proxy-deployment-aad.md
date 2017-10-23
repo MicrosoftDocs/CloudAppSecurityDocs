@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -81,6 +81,11 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 1. First log out of any existing sessions. Then, try to log in to each app that was successfully deployed, using a user that matches the policy configured in Azure AD. 
 
 2.	In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
+
+3. It is recommended that you log into mobile and desktop apps from managed and unmanaged devices to make sure that the activities are properly captured in the activity log.<br></br>
+To verify that the activity is properly captured, click on a single sign-on log on activity so that it opens the activity drawer and make sure the **User agent tag** properly reflects whether the device is a native app or a managed device (compliant, domain joined, or valid client certificate).
+ 
+ ![test user agent tag](./media/domain-joined.png)
 
 3.	You can filter by clicking on **Advanced**, and then filtering using **Source equals Azure Active Directory conditional access**.
 
