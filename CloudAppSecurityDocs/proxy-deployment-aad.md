@@ -30,7 +30,7 @@ ms.suite: ems
 # Deploy proxy for Azure AD apps
 
 > [!NOTE]
-> To deploy the Cloud App Security proxy for Azure AD apps, you need a license for Azure AD Premium P2.
+> To deploy the Cloud App Security proxy for Azure AD apps, you need a valid [license for Azure AD Premium P2](https://docs.microsoft.com/azure/active-directory/license-users-groups).
 
 Follow these steps to configure Azure AD apps to be controlled by the Cloud App Security proxy.
 
