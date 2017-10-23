@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,7 @@ In today’s workplace, it’s often not enough to know what’s happening in yo
 
 ## How it works
 
-The Cloud App Security proxy is integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (what cloud app) a conditional access policy is applied to. After you’ve determined the conditions, you can choose to apply session controls by routing the users to the Cloud App Security proxy.
+The Cloud App Security proxy is integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a conditional access policy is applied to. After you’ve determined the conditions, you can choose to apply session controls by routing the users to the Cloud App Security proxy.
 
 After a user is routed to the Cloud App Security proxy, their app sessions can be monitored and controlled in real time based on session policies. Session policies are utilized within the Cloud App Security portal to further refine session filters and set actions to be taken on a user. With the session policies, you can:
 
