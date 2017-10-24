@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Protect with Cloud App Security proxy (preview)
+# Protect apps with Cloud App Security proxy (preview)
 
 > [!NOTE]
 > This is a preview feature.
@@ -78,6 +78,19 @@ For more information, see the [Introduction to device management in Azure Active
 ### Client-certificate authenticated devices
 
 The proxy device identification mechanism can request authentication from relevant devices using client certificates. This enables you to either leverage existing client certificates already deployed in your organization or to roll out new client certificates to managed devices, and then use the presence of those certificates to set access and session policies.
+
+To identify devices using client certificates:
+
+1. Go to the settings cog and choose **Device identification**.
+
+2. Upload a root certificate.
+
+  ![Device identification](./media/device-identification.png)
+ 
+ After the certificate is uploaded, you can create session policies based on **Device tag** equals or not equals, **Valid client certificate**.
+ 
+ > [!NOTE]
+ >A certificate will only be requested from a user if the session matches a policy that uses the valid client certificate filter.
 
 ## Supported apps and clients
 

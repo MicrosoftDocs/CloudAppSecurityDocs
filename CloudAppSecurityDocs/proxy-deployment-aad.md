@@ -82,15 +82,16 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 
 2.	In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
 
-3. It is recommended that you log into mobile and desktop apps from managed and unmanaged devices to make sure that the activities are properly captured in the activity log.<br></br>
-To verify that the activity is properly captured, click on a single sign-on log on activity so that it opens the activity drawer and make sure the **User agent tag** properly reflects whether the device is a native app or a managed device (compliant, domain joined, or valid client certificate).
- 
- ![test user agent tag](./media/domain-joined.png)
-
 3.	You can filter by clicking on **Advanced**, and then filtering using **Source equals Azure Active Directory conditional access**.
 
      ![Filter using Azure AD conditional access](./media/sso-logon.png)
-  
+
+3. It is recommended that you log into mobile and desktop apps from managed and unmanaged devices to make sure that the activities are properly captured in the activity log.<br></br>
+To verify that the activity is properly captured, click on a single sign-on log on activity so that it opens the activity drawer and make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
+ 
+ ![test user agent tag](./media/domain-joined.png)
+
+
 You are now ready to create [session policies](session-policy-aad.md) to control your proxy apps.
 
 ## See Also  
