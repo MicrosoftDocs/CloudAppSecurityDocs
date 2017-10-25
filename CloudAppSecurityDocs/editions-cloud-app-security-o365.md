@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -44,7 +44,7 @@ Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that p
 |----|----|----|----|
 |Cloud Discovery|Discovered apps |15,000 + cloud apps  |750+ cloud apps Cloud apps with similar functionality to Office 365|
 ||Deployment for discovery analysis|Manual and automatic log upload|Manual log upload|
-||Log anonymization for user privacy|Yes|Yes|
+||Log anonymization for user privacy|Yes|No|
 ||Access to full Cloud App Catalog|Yes||
 ||Cloud app risk assessment|Yes||
 ||Cloud usage analytics per app, user, IP address|Yes||
