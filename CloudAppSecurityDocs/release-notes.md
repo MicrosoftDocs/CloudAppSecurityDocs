@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,6 +28,14 @@ ms.suite: ems
 
 # What's new with Cloud App Security
 
+
+## Cloud App Security releases 105, 106, 107, 108
+Released September/October 2017
+ 
+-	Cloud App Security now includes a data center located in the EU. In addition to our US data center, the EU data center will enable Cloud App Security customers to be in complete compliance with new and upcoming European standardization and certifications. 
+-	New filters were added to the **App connectors** page that provide you with simpler filtering and additional insight.
+-	Cloud discovery on log files that contain only destination IP information was improved.
+ 
 
 ## Cloud App Security release 104 
 Released August 27, 2017
