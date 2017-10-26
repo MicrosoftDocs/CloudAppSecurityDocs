@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/24/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Protect apps with Cloud App Security proxy (preview)
+# Protect apps with Microsoft Cloud App Security proxy (preview)
 
 > [!NOTE]
 > This is a preview feature.
@@ -35,7 +35,7 @@ In today’s workplace, it’s often not enough to know what’s happening in yo
 
 ## How it works
 
-The Cloud App Security proxy is integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a conditional access policy is applied to. After you’ve determined the conditions, you can choose to apply session controls by routing the users to the Cloud App Security proxy.
+The Cloud App Security proxy is integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a conditional access policy is applied to. After you’ve determined the conditions, you can you can route users to the Cloud App Security proxy where you can apply session control.
 
 After a user is routed to the Cloud App Security proxy, their app sessions can be monitored and controlled in real time based on session policies. Session policies are utilized within the Cloud App Security portal to further refine session filters and set actions to be taken on a user. With the session policies, you can:
 
@@ -62,12 +62,12 @@ After a session is directed through the proxy, the proxy can perform the followi
 3. Enable the admin to export the traffic logs
 4. Enforce policies on the session
 
-## Device identification
+## Managed device identification
 
-The proxy enables you to identify and create policies based on device posture. In order to identify whether a device is managed or not, the proxy leverages:
+The proxy enables you to create policies that take into account whether a device is managed or not. To identify whether a device is managed or not, the proxy leverages:
 
--	Compliant devices
--	Domain-joined devices
+-	Compliant devices 
+-	Domain-joined devices 
 -	Client certificates deployment
  
  
@@ -77,21 +77,8 @@ For more information, see the [Introduction to device management in Azure Active
 
 ### Client-certificate authenticated devices
 
-The proxy device identification mechanism can request authentication from relevant devices using client certificates. This enables you to either leverage existing client certificates already deployed in your organization or to roll out new client certificates to managed devices, and then use the presence of those certificates to set access and session policies.
-
-To identify devices using client certificates:
-
-1. Go to the settings cog and choose **Device identification**.
-
-2. Upload a root certificate.
-
-  ![Device identification](./media/device-identification.png)
+The proxy device identification mechanism can request authentication from relevant devices using client certificates. This enables you to either leverage existing client certificates already deployed in your organization or to roll out new client certificates to managed devices, and then use the presence of those certificates to set access and session policies. For information on how to deploy client certificates see [Deploy proxy for Azure AD apps](proxy-deployment-aad-md).
  
- After the certificate is uploaded, you can create session policies based on **Device tag** equals or not equals, **Valid client certificate**.
- 
- > [!NOTE]
- >A certificate will only be requested from a user if the session matches a policy that uses the valid client certificate filter.
-
 ## Supported apps and clients
 
 The proxy currently supports apps that are configured with SAML single sign on in Azure AD. In addition, session control is not automatically available for all apps. The Cloud App Security team tested many popular apps with session control. Other apps may require an onboarding process that will be done with the customer.

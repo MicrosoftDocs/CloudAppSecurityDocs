@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,15 +26,15 @@ ms.suite: ems
 
 ---
 
-# Blocking downloads of sensitive information on unmanaged devices or from risky locations using the Cloud App Security proxy
+# Blocking downloads of sensitive information using the Microsoft Cloud App Security proxy
 
 Today's IT admin is stuck between a rock and hard place: You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. On the other hand, you want to protect the company's assets, and that includes proprietary and privileged information. How can you enable your employees to access your cloud apps, while protecting your data? **This use case allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 
 
-## THE THREAT
+## The threat
 An account manager in your organization wants to check something in Salesforce from home over the weekend, on their personal laptop. The Salesforce data may include client credit card information or personal information. The home PC is unmanaged, meaning that if they download documents from Salesforce onto it, it may be infected with malware or if it is lost or stolen, it may not be password protected and anyone who finds it has access to sensitive information. 
 
-## THE SOLUTION
+## The solution
 Protect your organization by monitoring and controlling cloud app use using Azure AD conditional access and the Cloud App Security proxy.  
 
 ## Prerequisites
