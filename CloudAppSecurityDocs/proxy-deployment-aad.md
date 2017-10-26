@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -75,7 +75,19 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
   
  ![request session control](./media/request-session-control.png)
 
+7. Optional - Identify devices using client certificates:
+
+      1. Go to the settings cog and choose **Device identification**.
+
+      2. Upload a root certificate.
+
+        ![Device identification](./media/device-identification.png)
  
+       After the certificate is uploaded, you can create session policies based on **Device tag** equals or not equals, **Valid client certificate**.
+ 
+      > [!NOTE]
+      >A certificate will only be requested from a user if the session matches a policy that uses the valid client certificate filter. 
+
 ## Step 2: Test the deployment
 
 1. First log out of any existing sessions. Then, try to log in to each app that was successfully deployed, using a user that matches the policy configured in Azure AD. 

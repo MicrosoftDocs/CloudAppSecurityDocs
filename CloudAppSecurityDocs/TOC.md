@@ -27,13 +27,10 @@
 ### [Connect Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Connect ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [Protect apps with proxy (preview)](proxy-intro-aad.md)
-### [Deploy proxy for Azure AD apps](proxy-deployment-aad.md)
 # Use
 ## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
 ## Scenarios
 ### [Protecting your organization against ransomware](use-case-ransomware.md)
-### [Block downloads on unmanaged devices and risky locations](use-case-proxy-block-session-aad.md)
 ## Discover
 ### [Working with discovered apps](discovered-apps.md)
 ### [Working with the risk score](risk-score.md)
@@ -54,7 +51,6 @@
 #### [File policies](data-protection-policies.md)
 ##### [Content Inspection](content-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
-#### [Session policies (preview)](session-policy-aad.md)
 #### [Policy template reference](policy-template-reference.md)
 ### [Govern connected apps](governance-actions.md)
 ### [Govern discovered apps](governance-discovery.md)
