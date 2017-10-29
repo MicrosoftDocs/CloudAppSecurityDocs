@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 9/26/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -58,6 +58,14 @@ In the **Discovered apps** page, under **Browse by category** select both **Clou
 ![Discovered app filters](./media/discovered-app-filters.png)
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
+
+Cloud discovery enables you to dive even deeper into your organization’s cloud usage, and identify specific instances that are in use by investigating the discovered sub domains.
+
+For example, you can differentiate between different SharePoint sites.
+
+This is supported only in firewalls and proxies that contain target URL data. See the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+![sub-domain information](./media/discovery-domains.png)  
 
 ## Discovered app filters
 
@@ -130,6 +138,10 @@ To create a new continuous report:
 6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
+
+> [!NOTE]
+> All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
+
 
 ## Deleting Cloud Discovery data  
 There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  

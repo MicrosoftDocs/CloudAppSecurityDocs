@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 9/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -84,6 +84,10 @@ To create a new continuous report:
 6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
+
+
+> [!NOTE]
+> All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
 
 ## Deleting Cloud Discovery data  
 There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  

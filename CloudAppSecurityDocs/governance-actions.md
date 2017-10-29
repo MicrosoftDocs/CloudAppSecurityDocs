@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -41,7 +41,7 @@ The following governance actions can be taken for connected apps either on a spe
   
     -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
   
-    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
+    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
   
 -   Notify specific users – Specific list of email addresses that will receive these notifications.  
   
@@ -81,7 +81,7 @@ The following governance actions can be taken for connected apps either on a spe
   
     -   User email notification – Email messages can be customized and will be sent to all violating file owners.  
   
-    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy.  
+    -   CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
   
     -   Notify additional users – Specific list of email addresses that will receive these notifications.  
   
@@ -93,7 +93,7 @@ The following governance actions can be taken for connected apps either on a spe
     > [!NOTE] 
     > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted. 
   
-    -   Revoke password – Revoke the user’s password and force him to set a new password on his next login.  
+    -   Revoke password – Revoke the user’s password and force them to set a new password on his next login.  
   
      ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6")  
   
@@ -136,8 +136,8 @@ For information about how governance actions are treated when there are policy c
 |Discover > Discovered Apps/IP addresses/Users|Cloud Discovery|Export discovery data|Creates a CSV from the discovery data.|Discovery|
 |File policy|File|Trash|Puts the file in the user's trash.|One Drive, SharePoint|
 |File Policy|File|Notify last file editor|Sends an email to notify the last person who edited the file that it violates a policy.|G Suite, Box|
-|File Policy|File|Notify file owner|Sends an email to the file owner with the option to cc their manager, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set.|All apps|
-|File Policy, Activity Policy|File, Activity|cc the owner's/user's manager|When the file owner receives an email notification that their file is in violation of a policy, this optionally notifies the manager of the file owner/user.|All apps except Service Now|
+|File Policy|File|Notify file owner|Sends an email to the file owner, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set.|All apps|
+|File Policy, Activity Policy|File, Activity|cc the owner's/user's manager|When the file owner receives an email notification that their file is in violation of a policy, this optionally notifies the manager of the file owner/user.|Salesforce|
 |File Policy, Activity Policy|File, Activity|Notify specific users|Sends an email to notify specific users about a file that violates a policy.|All apps|
 |File policy and Activity policy|File, Activity|Notify user|Sends an email to users to notify them that something they did or a file they own violates a policy. You can add a custom notification to let them know what the violation was.|All|
 |File policy and Files|File|Remove editors' ability to share|In Google Drive, the default editor permissions of a file allow sharing as well. This governance action restricts this option and restricts file sharing to the owner.|G Suite|
@@ -146,7 +146,7 @@ For information about how governance actions are treated when there are policy c
 |Files|File|Restore from user quarantine|Restores a user from being quarantined.|Box|
 |Files|File|Grant read permissions to myself|Grants read permissions for the file for yourself so you can access the file and understand if it has a violation or not.|G Suite|
 |Files|File|Allow editors to share|In Google Drive, the default editor permissions of a file allows sharing as well. This governance action is the opposite of Remove editor’s ability to share and enables the editor to share the file.|G Suite|
-|Files|File|Protect|Protect a file with Microsoft Rights Management by applying an organization template.|Office 365|
+|Files|File|Protect|Protect a file with Azure Information Protection by applying an organization template.|Office 365 (SharePoint and OneDrive)|
 |Files|File|Revoke read permissions form myself|Revokes read permissions for the file for yourself, useful after granting yourself permission to understand if a file has a violation or not.|G Suite|
 |Files, File policy|File|Transfer file ownership|Changes the owner - in the policy you choose a specific owner.|G Suite|
 |Files, File policy|File|Remove a collaborator|Removes a specific collaborator from a file.|G Suite, Box, One Drive, SharePoint|

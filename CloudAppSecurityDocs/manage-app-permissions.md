@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -49,7 +49,7 @@ The App permissions page provides the following information about each third-par
 |Advanced icon in the app query bar  |Select this to switch to query in the Advanced view.|Office 365, G Suite, Salesforce|
 |Open or close all details icon in the app list  |Select this icon to view more or less details about each app.|
 |Export icon in the app list  |Select this icon to export a CSV file that contains a list of apps, number of users for each app, permissions associated with the app, permissions level, app state, and community use level.|Office 365, G Suite, Salesforce|
-|App|Name of the app. Select the name to view more information, including the description, publisher, app website and ID.|Office 365, G Suite, Salesforce|
+|App|Name of the app. Select the name to view more information, including the description, publisher (for Office 365), app website and ID.|Office 365, G Suite, Salesforce|
 |Authorized by|The number of users who authorized this app to access their app's account, and granted the app permissions. Select the number to view more information, including a list of user emails, and whether or not an admin has consented the app previously.|Office 365, G Suite, Salesforce|
 |Permissions Level  |The permissions level icon and text indicating either High, Medium or Low. The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](governance-actions.md).|Office 365, G Suite|
 |App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Office 365, G Suite, Salesforce|

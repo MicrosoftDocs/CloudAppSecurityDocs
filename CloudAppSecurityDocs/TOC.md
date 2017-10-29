@@ -1,9 +1,13 @@
 # Understand & Explore
-## [What is CAS?](what-is-cloud-app-security.md)
-## [Release notes](release-notes.md)
+## [What is Cloud App Security?](what-is-cloud-app-security.md)
+## [What's new?](release-notes.md)
+## Compare
+### [Office 365](editions-cloud-app-security-o365.md)
+### [Azure AD](editions-cloud-app-security-aad.md)
 # Deploy
 ## [Getting started](getting-started-with-cloud-app-security.md)
 ## [Basic set up](general-setup.md)
+### [Network requirements](network-requirements.md)
 ### [Manage admins](manage-admins.md)
 #### [Admin settings](admin-settings.md)
 ### [Mail settings](mail-settings.md)
@@ -12,9 +16,9 @@
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](discovery-docker.md)
-#### [Docker on Windows Server](discovery-docker-windows.md)
-#### [Docker on Ubuntu](discovery-docker-ubuntu.md)
-#### [Using a virtual appliance (deprecating)](configure-automatic-log-upload-for-continuous-reports.md)
+#### [Docker on Windows Server (preview)](discovery-docker-windows.md)
+#### [Docker on Ubuntu (preview)](discovery-docker-ubuntu.md)
+#### [Using a virtual appliance](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Use the custom log parser](custom-log-parser.md)
 ### [Cloud Discovery enrichment](cloud-discovery-aad-enrichment.md)
 ### [Anonymize Cloud Discovery data](cloud-discovery-anonymizer.md)
@@ -31,6 +35,7 @@
 ## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
 ## Scenarios
 ### [Protecting your organization against ransomware](use-case-ransomware.md)
+### [Protecting your files with admin quarantine](use-case-admin-quarantine.md)
 ## Discover
 ### [Working with discovered apps](discovered-apps.md)
 ### [Working with the risk score](risk-score.md)

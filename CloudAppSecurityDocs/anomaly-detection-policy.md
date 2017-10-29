@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,10 +32,10 @@ ms.suite: ems
 # Anomaly detection policy
 This article provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.  
 
-After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families will be considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
+After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families are considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
 
-Cloud App Security has an initial learning period of 7 days during which it does not flag any new users, activity, devices or locations as anomalous. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. 
-Use the sensitivity slider in the policy to set the minimum risk score from which alerts will be triggered. It is recommended that when you create an anomaly policy, use the default sensitivity threshold for a week, before you change it in accordance with the number of alerts you received, Cloud App Security will send you more or fewer alerts for various risk scores when you change the sensitivity.
+Cloud App Security has an initial learning period of seven days during which it does not flag any new users, activity, devices, or locations as anomalous. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. 
+Use the sensitivity slider in the policy to set the minimum risk score from which alerts are triggered. It is recommended that when you create an anomaly policy, use the default sensitivity threshold for a week, before you change it in accordance with the number of alerts you received, Cloud App Security sends you more or fewer alerts for various risk scores when you change the sensitivity.
   
 ![sensitivity slider](./media/sensitivity-slider.png)
 
@@ -53,7 +53,7 @@ To configure an anomaly detection policy:
   
 5.  To apply the policy to all activities in your cloud environment, select **All monitored activity**. To limit the policy to specific types of activities, choose **Selected activity**. Click on **Add filters** and set the appropriate parameters by which to filter the activity. For example, to enforce the policy only on activity performed by Salesforce admins, choose this user tag.  
   
-6.  Underneath this field set the **Risk factors**. You can choose which risk families you want to consider while calculating the risk score. On the right of the row you can use the On/Off button to enable and disable the various risks. Additionally, for greater granularity, you can choose the activity on which to enable each particular risk family.  
+6.  Underneath this field set the **Risk factors**. You can choose which risk families you want to consider while calculating the risk score. On the right of the row, you can use the On/Off button to enable and disable the various risks. Additionally, for greater granularity, you can choose the activity on which to enable each particular risk family.  
   
      Risk factors are as follows:  
   
@@ -63,15 +63,15 @@ To configure an anomaly detection policy:
   
     -   **Inactive accounts**: Is there suddenly activity on an account that hasn't been in use for some time?  
   
-    -   **Location**: Is there activity in an unusual, suspicious or new location?  
+    -   **Location**: Is there activity in an unusual, suspicious, or new location?  
   
-    -   **Impossible travel**: Is a user logging in from Denver and ten minutes later logging in from Paris?  
+    -   **Impossible travel**: Is a user logging in from Denver and 10 minutes later logging in from Paris?  
   
     -   **Device and user agent**: Is there activity from an unrecognized or unmanaged device?  
 
     -   **Activity rate**: Is there suddenly a lot of activity on a particular app? Are there large downloads or deletes, or mass number of files shared or a lot of unexpected admin activity?
   
-     You can use these parameters to define complex scenarios, for example, to exclude your office's IP range from the considered risk factors for anomaly detection, create a specific "office IP" tag and filter the range out of the considered parameters. To then exclude the range you created from the admin activity anomaly detection:  
+     You can use these parameters to define complex scenarios, for example, to exclude your office's IP range from the considered risk factors for anomaly detection, create a specific "office IP" tag and filter the range out of the considered parameters. To then exclude the range that you created from the admin activity anomaly detection:  
   
     -   Within **Risk type**, find **Admin activity**.  
   
@@ -83,7 +83,7 @@ To configure an anomaly detection policy:
   
 7.  Under **Sensitivity**, select how often you want to receive alerts.  
   
-     The sensitivity value will determine how many weekly alerts will trigger on average for every 1,000 users.  
+     The sensitivity value determines how many weekly alerts are triggered on average for every 1,000 users.  
   
      ![anomaly detection IPs](./media/anomaly-detection-ips.png "anomaly detection IPs")  
   
@@ -91,7 +91,7 @@ To configure an anomaly detection policy:
  
 
 ## Anomaly detection policy reference  
-An anomaly detection policy enables you to setup and configure continuous monitoring of user activity for behavioral anomalies. Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into 6 risk factors. Based on the policy results, security alerts are triggered.   
+An anomaly detection policy enables you to set up and configure continuous monitoring of user activity for behavioral anomalies. Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into 6 risk factors. Based on the policy results, security alerts are triggered.   
 Each policy is composed of the following parts:  
   
 -   Activity filters – Enable you to selectively scan only filtered user activity for anomalies.  
@@ -104,38 +104,38 @@ Each policy is composed of the following parts:
 For a list of Activity filters, see [enter link description here](activity-filters.md).  
   
 ### Risk factors  
-Below is a list of the risk factors which are considered when evaluating the risk of user activity. Each risk factor can be toggled on or off. For each risk factor there are two options under the **Apply to** field, which determine whether to include it when evaluating the risk of user activity:  
+Below is a list of the risk factors that are considered when evaluating the risk of user activity. Each risk factor can be toggled on or off. For each risk factor there are two options under the **Apply to** field, which determine whether to include it when evaluating the risk of user activity:  
   
--   All monitored activity – include it for all user activity which passes the policy activity filter.  
+-   All monitored activity – include it for all user activity that passes the policy activity filter.  
   
--   Selected activity – include it for user activity which passes both the policy activity filters and the activity filters that appear under this risk factor. When this option is selected an activity filter selector appears under the risk factor, which works exactly the same as the policy activity filter.  
+-   Selected activity – include it for user activity that passes both the policy activity filters and the activity filters that appear under this risk factor. When this option is selected an activity filter selector appears under the risk factor, which works exactly the same as the policy activity filter.  
   
 Each risk factor, when included in the risk evaluation, has its own triggers that cause an increase in the evaluated risk of user activity:  
   
 -   Login failures – a high number of login failures or activity comprised entirely of login failures.  
   
--   Admin activity - administrative activity performed by an unexpected user, or performed from an IP, ISP or location which are new, or not used by any other user in the organization.  
+-   Admin activity - administrative activity performed by an unexpected user, or performed from an IP, ISP, or location that are new, or not used by any other user in the organization.  
   
--   Inactive accounts - activity performed by a user which was not active for a long time.  
+-   Inactive accounts - activity performed by a user that was not active for a long time.  
   
--   Location - activity performed from an IP, ISP or location which were either never used by any other user, never used by this particular user, never used at all, or used only for login failures in the past.  
+-   Location - activity performed from an IP, ISP, or location that were either never used by any other user, never used by this particular user, never used at all, or used only for login failures in the past.  
   
 -   Impossible travel - activity from remote locations within a short time.  
   
--   Device and user agent - activity performed by a user using a user agent or device which were either never used by any other user, never used by this particular user or never used at all.  
+-   Device and user agent - activity performed by a user using a user agent or device that was either never used by any other user, never used by this particular user, or never used at all.  
   
 -   Activity rate - repeated activities performed by a user within a short period. 
 
 ### Sensitivity  
 There are two ways to control the number of alerts triggered by the policy:  
   
--   Sensitivity slider – choose how many alerts to trigger per 1,000 users per week. The alerts will be triggered of the activities with the highest risk.  
+-   Sensitivity slider – choose how many alerts to trigger per 1,000 users per week. The alerts are triggered of the activities with the highest risk.  
   
 -   Daily alert limit – restrict the number of alerts raised on a single day.  
   
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

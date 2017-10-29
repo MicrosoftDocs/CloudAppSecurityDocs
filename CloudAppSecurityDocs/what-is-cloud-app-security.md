@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -49,9 +49,10 @@ Cloud App Security integrates visibility with your cloud by
 -   using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
 -   sanctioning and unsanctioning apps in your cloud.  
 -   using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.  
+-	using proxy protection to get real-time visibility and control over access and activities performed within your cloud apps.
 -   helping you have continuous control by setting, and then continually fine-tuning, policies.  
 
-![Cloud App Security architecture diagram](./media/architecture.png)  
+![Cloud App Security architecture diagram](./media/proxy-architecture.png)  
 
 ### Data retention & Compliance
 
@@ -74,7 +75,7 @@ For more information about Cloud Discovery, see [Set up Cloud Discovery](set-up-
 
 ### Sanctioning and unsanctioning an app  
 
-You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 15,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is based on over 50 risk factors that might affect your environment.  
+You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 15,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is based on over 60 risk factors that might affect your environment.  
 
 ### App connectors  
 App connectors use APIs from cloud app providers to integrate the Cloud App Security cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps, for Cloud App Security analysis.  
@@ -83,9 +84,19 @@ To connect an app and extend protection, the app administrator authorizes Cloud 
 
 Cloud App Security uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Cloud App Security works with app providers to optimize the use of APIs, and to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Cloud App Security engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they are spread over a longer period. Expect some policies to run for several hours or several days.  
 
+### Proxy protection
+The Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With the proxy, you can protect your organization: 
+-	Avoid data leaks by blocking downloads before they happen
+-	Set rules that force data stored in and downloaded from the cloud to be protected with encryption
+-	Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices
+-	Control access from non-corporate networks or risky IP addresses
+
 ### Policy control  
 
 You can use policies to define your users' behavior in the cloud. Use policies to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If needed, you can use policies to integrate remediation processes to achieve complete risk mitigation. Multiple types of policies correlate to the different types of information you might want to gather about your cloud environment and the types of remediation actions you might take.  
+
+## Related Videos
+- [Joining the security community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## See Also  
 

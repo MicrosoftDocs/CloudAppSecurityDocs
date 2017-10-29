@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,6 +29,8 @@ ms.suite: ems
 
 ##  <a name="mailsettings"></a> Set email notification preferences  
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
+
+For information about the Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md). 
   
 ![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
   

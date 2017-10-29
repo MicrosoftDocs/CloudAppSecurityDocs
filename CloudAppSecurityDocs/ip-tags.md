@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2017
+ms.date: 8/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -46,6 +46,10 @@ Cloud App Security comes preconfigured with built-in tags for the following IP a
 
 To use these built-in tags as part of a search, refer to their ID in the Cloud App Security API documentation. 
 
+> [!NOTE]
+> You can add IP ranges in bulk by creating a script using the [IP address ranges API](https://portal.cloudappsecurity.com/api-docs/)
+
+
 Built-in IP address tags and custom IP tags are considered hierarchically, with custom IP tags taking precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence, but there is a custom IP tag that identifies it as **Corporate** the custom category and tags will take precedence.
 
 In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click **+Add IP address range** and set the following:  
@@ -72,14 +76,15 @@ In the menu bar, click the settings icon ![settings icon](./media/settings-icon.
   
     -   **Administrative**: these should be all the IP addresses of your admins.  
   
-    -   **Internal**: these should be all the IP addresses of your internal network, your branch offices and your Wi-Fi roaming addresses.  
+    -  **Cloud provider**: these should be the IP addresses used by your cloud provider.
+  
+    -   **Corporate**: these should be all the IP addresses of your internal network, your branch offices and your Wi-Fi roaming addresses.  
   
     -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc.  
   
     -   **VPN**: these should be any IP addresses you use for remote workers.  
-  
-    -   **Cloud proxy**: this should be the IP address of your proxy in the cloud.  
-  
+ 
+
 7.  When you are done, click **Create**.  
   
      ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,7 +36,7 @@ Because Dropbox enables access to files from shared links without signing in, Cl
   
 1.  In the Cloud App Security console, click **Investigate** and then **Connected apps**.  
   
-2.  In the **App connectors** page click the plus button followed by **Dropbox**.  
+2.  In the **App connectors** page, click the plus button followed by **Dropbox**.  
   
      ![connect dropbox](./media/connect-dropbox.png "connect dropbox")  
   
@@ -46,9 +46,9 @@ Because Dropbox enables access to files from shared links without signing in, Cl
   
 5.  Click **Follow this link**.  
   
-     This opens the Dropbox log on page. Enter your credentials to allow Cloud App Security access to your team's Dropbox instance.  
+     The Dropbox log on page opens. Enter your credentials to allow Cloud App Security access to your team's Dropbox instance.  
   
-6.  Dropbox will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.  
+6.  Dropbox asks you if you want to allow Cloud App Security access to your team information, activity log, and perform activities as a team member. To proceed, click **Allow**.  
   
 7.  Back in the Cloud App Security console, you should receive a message that Dropbox was successfully connected.  
   
@@ -59,11 +59,11 @@ Because Dropbox enables access to files from shared links without signing in, Cl
 After connecting Dropbox, you will receive events for 60 days prior to connection.
 
 > [!NOTE] 
-> Any Dropbox events for adding a file will be displayed in Cloud App Security as Upload file to align to all other apps connected to Cloud App Security. 
+> Any Dropbox events for adding a file are displayed in Cloud App Security as Upload file to align to all other apps connected to Cloud App Security. 
  
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

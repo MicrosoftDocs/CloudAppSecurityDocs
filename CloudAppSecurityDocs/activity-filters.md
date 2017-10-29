@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -52,15 +52,15 @@ To drill down into more specific activities, you can expand the basic filter by 
  ![advanced activity log filter](media/activity-log-filter-advanced.png)
 
 ## Activity filters
-Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
+Following is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a powerful tool for policy creation.  
   
--   Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.  
+-   Activity ID - Search only for specific activities by their ID. This filter is useful when you connect Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.  
   
--   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects. 
+-   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user, or app objects. 
     - Activity object ID - the ID of the object (file, folder, user or app ID).
-    - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.
+    - File, folder, or site URL - Enables you to select files, folders, and URLs that start with a specific string.
     - Target object (file/folder) - Enables you to select a specific file or folder. 
-    - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for itmes that **Contain**, **Equal** or **Starts with** the specific item.
+    - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for items that **Contain**, **Equal**, or **Starts with** the specific item.
     
 -   Activity type - Search for the app activity.
 
@@ -80,14 +80,14 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 -   Device type - Search only for activities that were performed using a specific device type, for example, all activities from mobile devices, PCs or Tablets.  
   
--   IP address – The raw IP address, category or tag from which the activity was performed.  
+-   IP address – The raw IP address, category, or tag from which the activity was performed.  
     - Raw IP address - Enables you to search for activities that were performed on or by raw IP addresses that equal, don't equal or start with or don't start with a particular sequence, or raw IP addresses that are or are not set. 
-    - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. The categories need to be configured to include the relevant IP addresses, except for the "Risky" category which is pre-configured and includes two IP tags - Anonymous proxy and Tor. To learn how to configure the IP categories, see [Organize the data according to your needs](ip-tags.md).  
+    - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. The categories need to be configured to include the relevant IP addresses, except for the "Risky" category that is pre-configured and includes two IP tags - Anonymous proxy and Tor. To learn how to configure the IP categories, see [Organize the data according to your needs](ip-tags.md).  
     - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. Cloud App Security creates a set of built-in IP tags that are not configurable. In addition, you can configure your own IP tags. For more information about configuring your own IP tags, see [Organize the data according to your needs](ip-tags.md).
    The built-in IP tags include:
     - Microsoft apps (14 of them)
     - Anonymous proxy
-    - Botnet (you will see that the activity was performed by a botnet with a link to learn more about the specific botnet)
+    - Botnet (you see that the activity was performed by a botnet with a link to learn more about the specific botnet)
     - Darknet scanning IP
     - Malware C&C server
     - Remote Connectivity Analyzer
@@ -105,16 +105,16 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 -   Registered ISP – The ISP from which the activity was performed.   
 
--  Source - Search by the source from which the activity was detected. Source can be any of the following:
+-  Source - Search by the source from which the activity was detected. Can be any of the following sources:
   -	App connector - logs coming directly from the app’s API connector.
   -	App connector analysis - Cloud App Security enrichments based on information scan by the API connector.
   
 
--   User – The user who performed the activity, which can be filtered into domain, group, name or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
+-   User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.  
     -   User domain - Search for a specific user domain.
     -   User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.  
     -   User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.  
-    -   User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, click on the name of the user group. This will take you to the Accounts page which lists all the users in the group. From there you can drill down into the details of the accounts of specific users in the group.
+    -   User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, click on the name of the user group. This takes you to the Accounts page that lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
        -  The **User group** and **User name** filters can be further filtered by using the **As** filter, and selecting the role of the user, which can be any of the following:
             - Activity object only - this means that the user or user group selected did not perform the activity in question, they were the object of the activity
             - Actor only - this means that the user or user group performed the activity
@@ -131,25 +131,24 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 ### Working with the Activity drawer
 
-You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer which provides the following additional actions you can take on the activity:
+You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer that provides the following additional actions and insights for each activity:
+    - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
+    - View raw data: Click on View raw data to see the actual data that was received from the app.
+    - User: Click on the user to view the user page for the user who performed the activity. 
+    - Device type: Click on device type to view the raw user agent data. 
+    - Location: Click on the location to view the location in Bing maps.
+    - IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
 
-- Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
-- View raw data: Click on View raw data to see the actual data that was received from the app.
-- User: Click on the user to view the user page for the user who performed the activity. 
-- Device type: Click on device type to view the raw user agent data. 
-- Location: Click on the location to view the location in Bing maps.
-- IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
-
-The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
+ The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
 
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
   
 For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
 
-### User insights
+#### User insights
 
-The investigation experience includes out-of-the-box insights about the acting user. With a single click, you can get a comprehensive overview of the user including which location they connected from, how many open alerts is they are involved with and their metadata information.
+The investigation experience includes out-of-the-box insights about the acting user. With a single click, you can get a comprehensive overview of the user including which location they connected from, how many open alerts are they are involved with and their metadata information.
 
 To view user insights:
 
@@ -165,9 +164,31 @@ To view user insights:
 
 ![user insights in Cloud App Security](./media/user-insights.png)
 
+#### IP address insights
+
+Because IP address information is crucial for almost all investigations, you can view detailed information about IP addresses in the Activity drawer. From within a specific activity, you can click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity and a location map. This enables easy drill down, for example when investigating impossible travel alerts, you can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN, or corporate to ease future investigation and policy creation.
+
+To view IP address insights:
+
+1. Click on the Activity itself in the **Activity log**.
+
+2. Then click on the **IP address** tab. <br></br> This opens the Activity drawer **IP address** tab provides the following insights about the IP address:
+    - **Open alerts**: The number of open alerts that involved the IP address.
+    - **Activities**: The number of activities performed by the IP address in the past 30 days.
+    - **IP location**: The geographic locations from which the IP address connected from in the past 30 days.
+    - **Activities**: The number of activities performed from this IP address in past 30 days.
+    - **Admin activities**: The number of administrative activities performed from this IP address in past 30 days.
+    - You can perform the following IP address actions:
+        - Tag as risky 
+        - Tag as VPN IP address
+        - Tag as Risky IP and add to blocked group
+
+![IP address insights in Cloud App Security](./media/ip-address-insights.png)
+
+
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

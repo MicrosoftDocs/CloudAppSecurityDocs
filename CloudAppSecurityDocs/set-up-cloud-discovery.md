@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2017
+ms.date: 10/29/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 # Set up Cloud Discovery
-Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 14,000 cloud apps that are ranked and scored based on more than 50 attributes, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud Discovery analyzes your traffic logs against Cloud App Security's cloud app catalog of over 15,000 cloud apps that are ranked and scored based on more than 60 risk factors, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
  
 ## Snapshot and continuous risk assessment reports 
 
@@ -43,15 +43,16 @@ The process of generating a risk assessment consists of the following steps and 
   
 -   **Parse** – Cloud App Security parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.  
   
--   **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 14,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.  
+-   **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 15,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.  
   
 -   **Generate report** - A risk assessment report of the data extracted from log files is generated.   
  
  
 >[!NOTE]
->Continuous report data is analyzed twice a day.
+>- Continuous report data is analyzed twice a day.
+>- The log collector compresses data before it is uploaded. The outbound traffic on the log collector will be 10% of the size of the traffic logs it receives. 
  
-## Using traffic logs for  Cloud Discovery
+## Using traffic logs for Cloud Discovery
 Cloud Discovery utilizes the data in your traffic logs. The more detailed your log, the better visibility you get. Cloud Discovery requires web-traffic data with the following attributes:
 - Date of the transaction
 - Source IP
@@ -81,6 +82,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Blue Coat Proxy SG - Access log (W3C)
 - Check Point
 - Cisco ASA Firewall (For Cisco ASA firewalls, it is necessary to set the information level to 6)
+- Cisco ASA with FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – URLs log
@@ -114,6 +116,7 @@ Data attributes (according to vendor documentation):
 |Blue Coat|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Checkpoint|No|**Yes**|No|**Yes**|No|No|
 |Cisco ASA|No|**Yes**|No|**Yes**|**Yes**|No|
+|Cisco ASA with FirePOWER|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Cisco FWSM|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco Ironport WSA|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Cisco Meraki|**Yes**|**Yes**|No|**Yes**|No|No||Cisco Scansafe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
@@ -130,7 +133,7 @@ Data attributes (according to vendor documentation):
 |Squid (Native)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
 |Websense - Investigative detail report (CSV)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Websense - Internet activity log (CEF)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-|Zscaler|**Yes**|No|**Yes**|No|**Yes**|**Yes**|
+|Zscaler|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 
 
 
