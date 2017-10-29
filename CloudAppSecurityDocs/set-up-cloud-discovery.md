@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Deploy Cloud Discovery with Cloud App Security | Microsoft Docs
+title: Deploy Cloud Discovery with Microsoft Cloud App Security | Microsoft Docs
 description: This topic describes the setup procedure for getting Cloud Discovery working.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/03/2017
+ms.date: 10/29/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -82,6 +82,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Blue Coat Proxy SG - Access log (W3C)
 - Check Point
 - Cisco ASA Firewall (For Cisco ASA firewalls, it is necessary to set the information level to 6)
+- Cisco ASA with FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki – URLs log
@@ -115,6 +116,7 @@ Data attributes (according to vendor documentation):
 |Blue Coat|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Checkpoint|No|**Yes**|No|**Yes**|No|No|
 |Cisco ASA|No|**Yes**|No|**Yes**|**Yes**|No|
+|Cisco ASA with FirePOWER|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Cisco FWSM|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco Ironport WSA|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Cisco Meraki|**Yes**|**Yes**|No|**Yes**|No|No||Cisco Scansafe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
