@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to protect your data with Cloud App Security | Microsoft Docs
-description: This topic describes the ways in which Cloud App Security enables you to protect your data and information in real time.
+title: Automatically applying Azure Information Protection classification labels | Microsoft Docs
+description: This topic describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -26,11 +26,11 @@ ms.suite: ems
 
 ---
 
-# Microsoft world-class data protection  
+# Automatically applying Azure Information Protection classification labels  
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable that a partner who works with accounting uploads a document to your Box repository with the wrong permissions, and a week later you realize that your enterprise's confidential information was leaked to your competition. 
 
-Cloud App Security helps you prevent this kind of disaster before it happens.
+Microsoft Cloud App Security helps you prevent this kind of disaster before it happens.
 
 Cloud App Security identifies that there are public permissions on a document saved in your Box account, and uses a classification engine to identify that there is confidential information in the publicly shared document. Cloud App Security sends you an alert to let you know this occurred, and in addition, it automatically applies your Azure Information Protection **Confidential** classification label to provide added encryption to the file. 
 
