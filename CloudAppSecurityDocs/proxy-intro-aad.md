@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect with Cloud App Security proxy | Microsoft Docs
+title: Protect with Microsoft Cloud App Security proxy | Microsoft Docs
 description: This topic provides information about how the Cloud App Security proxy works.
 keywords:
 author: rkarlin

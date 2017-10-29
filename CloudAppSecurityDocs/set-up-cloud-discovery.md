@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy Cloud Discovery with Cloud App Security | Microsoft Docs
+title: Deploy Cloud Discovery with Microsoft Cloud App Security | Microsoft Docs
 description: This topic describes the setup procedure for getting Cloud Discovery working.
 keywords:
 author: rkarlin

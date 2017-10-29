@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What's new with Cloud App Security
+# What's new with Microsoft Cloud App Security
 
 
 ## Cloud App Security releases 109

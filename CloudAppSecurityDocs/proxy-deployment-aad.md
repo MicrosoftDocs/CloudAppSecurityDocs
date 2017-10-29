@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy the Cloud App Security Proxy for Azure AD apps| Microsoft Docs
-description: This topic provides information about how to deploy the Cloud App Security Proxy for Azure AD apps.
+description: This topic provides information about how to deploy the Microsoft Cloud App Security Proxy for Azure AD apps.
 keywords:
 author: rkarlin
 ms.author: rkarlin
