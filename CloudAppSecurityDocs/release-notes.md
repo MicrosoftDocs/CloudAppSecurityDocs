@@ -40,7 +40,7 @@ Released October 29, 2017
   
   For more information, see [Protect apps with proxy](proxy-intro-aad.md).
 
--	We are gradually rolling out the ability to filter according to specific service activity names. This filter, Activity **Type (in app)** is more granular to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the Run command, and now you can filter for specific EXO cmdlets. The **Type (in app)** can also be seen in the Activity drawer. This capability will eventually replace the Activity type filter.  
+-	We are gradually rolling out the ability to filter according to specific service activity names. This new Activity Type filter is more granular, to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the **Run command**, and now you can filter for specific EXO cmdlets. The activity name can also be seen in the Activity drawer under **Type (in app)**. This capability will eventually replace the Activity type filter.  
 
 -	Cloud discovery now supports Cisco ASA with FirePOWER. 
 
