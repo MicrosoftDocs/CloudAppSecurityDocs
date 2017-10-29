@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Automatically applying Azure Information Protection classification labels | Microsoft Docs
+title: Automatically apply Azure Information Protection classification labels | Microsoft Docs
 description: This topic describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Automatically applying Azure Information Protection classification labels  
+# Automatically apply Azure Information Protection classification labels  
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable that a partner who works with accounting uploads a document to your Box repository with the wrong permissions, and a week later you realize that your enterprise's confidential information was leaked to your competition. 
 
@@ -77,6 +77,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
  
     7. Click **Create**. 
    
+   ![Add classification label to policy](./media/aip-auto-policy.png)
      
 2. Investigating your matches
     
