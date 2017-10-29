@@ -77,7 +77,7 @@ For more information, see the [Introduction to device management in Azure Active
 
 ### Client-certificate authenticated devices
 
-The proxy device identification mechanism can request authentication from relevant devices using client certificates. This enables you to either leverage existing client certificates already deployed in your organization or to roll out new client certificates to managed devices, and then use the presence of those certificates to set access and session policies. For information on how to deploy client certificates see [Deploy proxy for Azure AD apps](proxy-deployment-aad-md).
+The proxy device identification mechanism can request authentication from relevant devices using client certificates. This enables you to either leverage existing client certificates already deployed in your organization or to roll out new client certificates to managed devices, and then use the presence of those certificates to set access and session policies. For information on how to deploy client certificates see [Deploy proxy for Azure AD apps](proxy-deployment-aad.md).
  
 ## Supported apps and clients
 
