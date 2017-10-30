@@ -35,13 +35,15 @@ This topic provides a list of ports and IP addresses you need to allow and white
 
 Some of the requirements below depend on which data center you are connected to. 
 
-To see which data center you are connecting to, in the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
+To see which data center you are connecting to:
 
-![click About](./media/about-menu.png)
+1. In the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
 
-In the Cloud App Security version screen, you can see the data center.
+    ![click About](./media/about-menu.png)
 
-![View your data center](./media/data-center.png)
+2. In the Cloud App Security version screen, you can see the data center.
+
+    ![View your data center](./media/data-center.png)
 
 ## Portal access and SIEM agent
 
