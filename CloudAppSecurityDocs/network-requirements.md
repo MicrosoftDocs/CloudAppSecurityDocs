@@ -45,9 +45,9 @@ To see which data center you are connecting to:
 
     ![View your data center](./media/data-center.png)
 
-## Portal access and SIEM agent
+## Portal access
 
-For portal access and to enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's white list:  
+For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses to your firewall's white list:  
 
 
 > [!div class="mx-tableFixed"]
@@ -55,6 +55,17 @@ For portal access and to enable Cloud App Security to connect to your SIEM, add 
 |----|----|
 |US1|13.91.91.243<br></br>13.80.125.22<br></br>52.183.75.62|
 |EU1|52.174.56.180<br></br>13.80.125.22<br></br>52.183.75.62|
+
+## SIEM agent connection
+
+To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's white list:  
+
+
+> [!div class="mx-tableFixed"]
+|Data center|IP addresses|  
+|----|----|
+|US1|13.91.91.243|
+|EU1|52.174.56.180|
 
 ## App connector access and external DLP integration
 
