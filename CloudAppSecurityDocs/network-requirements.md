@@ -41,7 +41,7 @@ To see which data center you are connecting to:
 
     ![click About](./media/about-menu.png)
 
-2. In the Cloud App Security version screen, you can see the data center.
+2. In the Cloud App Security version screen, you can see the region and the data center.
 
     ![View your data center](./media/data-center.png)
 
@@ -53,8 +53,8 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
 > [!div class="mx-tableFixed"]
 |Data center|IP addresses|  
 |----|----|
-|US1|13.91.91.243<br></br>13.80.125.22<br></br>52.183.75.62|
-|EU1|52.174.56.180<br></br>13.80.125.22<br></br>52.183.75.62|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
 
 ## SIEM agent connection
 
