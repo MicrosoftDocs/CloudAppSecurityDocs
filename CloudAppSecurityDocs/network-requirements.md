@@ -37,11 +37,11 @@ Some of the requirements below depend on which data center you are connected to.
 
 To see which data center you are connecting to, in the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
 
-![click About](.media/about-menu.png)
+![click About](./media/about-menu.png)
 
 In the Cloud App Security version screen, you can see the data center.
 
-![View your data center](.media/data-center.png)
+![View your data center](./media/data-center.png)
 
 ## Portal access and SIEM agent
 
