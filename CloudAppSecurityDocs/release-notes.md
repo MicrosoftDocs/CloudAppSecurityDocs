@@ -32,7 +32,7 @@ ms.suite: ems
 ## Cloud App Security releases 109
 Released October 29, 2017 
 
-- Microsoft Cloud App Security proxy is in public preview as of October 2017. The global roll out will complete within the next few weeks. The Microsoft Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment, for example:
+- Microsoft Cloud App Security proxy is in public preview as of October 2017. The global roll out will complete within the next few weeks. The Microsoft Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to your cloud environment, and activities performed within it. For example:
     -	Avoid data leaks by blocking downloads before they happen.
     -	Set rules that force data stored in and downloaded from the cloud to be protected with encryption.
     -	Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices.
@@ -40,7 +40,7 @@ Released October 29, 2017
   
   For more information, see [Protect apps with proxy](proxy-intro-aad.md).
 
--	We are gradually rolling out the ability to filter according to specific service activity names. This filter, Activity **Type (in app)** is more granular to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the Run command, and now you can filter for specific EXO cmdlets. The **Type (in app)** can also be seen in the Activity drawer. This capability will eventually replace the Activity type filter.  
+-	We are gradually rolling out the ability to filter according to specific service activity names. This new Activity Type filter is more granular, to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the **Run command**, and now you can filter for specific EXO cmdlets. The activity name can also be seen in the Activity drawer under **Type (in app)**. This capability will eventually replace the Activity type filter.  
 
 -	Cloud discovery now supports Cisco ASA with FirePOWER. 
 

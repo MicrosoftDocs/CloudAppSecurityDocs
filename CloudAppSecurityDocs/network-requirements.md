@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,21 +35,37 @@ This topic provides a list of ports and IP addresses you need to allow and white
 
 Some of the requirements below depend on which data center you are connected to. 
 
-To see which data center you are connecting to, in the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
+To see which data center you are connecting to:
 
-In the Cloud App Security version screen, you can see the data center.
+1. In the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
 
+    ![click About](./media/about-menu.png)
 
-## Portal access, SIEM agent, and authentication gateway
+2. In the Cloud App Security version screen, you can see the region and the data center.
 
-For portal and authentication gateway access, and to enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's white list:  
+    ![View your data center](./media/data-center.png)
+
+## Portal access
+
+For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses to your firewall's white list:  
 
 
 > [!div class="mx-tableFixed"]
 |Data center|IP addresses|  
 |----|----|
-|US1|13.91.91.243<br></br>52.183.75.62|
-|EU1|52.174.56.180<br></br>13.80.125.22|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+
+## SIEM agent connection
+
+To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's white list:  
+
+
+> [!div class="mx-tableFixed"]
+|Data center|IP addresses|  
+|----|----|
+|US1|13.91.91.243|
+|EU1|52.174.56.180|
 
 ## App connector access and external DLP integration
 
