@@ -30,7 +30,7 @@ ms.suite: ems
 # Deploy proxy for Azure AD apps
 
 > [!NOTE]
-> Microsoft Cloud App Security proxy is in public preview as of October 2017. The global roll out will complete within the next few weeks.
+> Microsoft Cloud App Security proxy feature roll out has started.
 
 Follow these steps to configure Azure AD apps to be controlled by the Cloud App Security proxy.
 
