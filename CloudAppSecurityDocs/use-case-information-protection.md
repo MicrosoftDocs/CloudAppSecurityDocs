@@ -35,7 +35,8 @@ Microsoft Cloud App Security helps you prevent this kind of disaster before it h
 Cloud App Security identifies that there are public permissions on a document saved in your Box account, and uses a classification engine to identify that there is confidential information in the publicly shared document. Cloud App Security sends you an alert to let you know this occurred, and in addition, it automatically applies your Azure Information Protection **Confidential** classification label to provide added encryption to the file. 
 
 >[!NOTE]
-> Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
+> - Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
+> - This feature is available for Box, SharePoint and OneDrive for Business.
 
 ### Enhanced data-level encryption protection
 
