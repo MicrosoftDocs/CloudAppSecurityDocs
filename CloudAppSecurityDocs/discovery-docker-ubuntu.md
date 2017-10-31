@@ -102,7 +102,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 4.  Further deployment information will appear.
 
- ![ubuntu3](./media/ubuntu3.png)
+ ![ubuntu3](./media/windows7.png)
 
 5.  **Copy** the run command from the dialog. You can use the copy to clipboard icon ![copy to clipboard icon](./media/copy-icon.png).
 
