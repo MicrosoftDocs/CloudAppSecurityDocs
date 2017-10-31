@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,10 +27,10 @@ ms.suite: ems
 ---
 
 
-# Session policies (preview) 
+# Session policies 
 
 > [!NOTE]
-> This is a preview feature.
+> Microsoft Cloud App Security proxy feature roll out has started.
 
 Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of allowing or blocking access completely, with session control you can allow access while monitoring the session and/or limit specific session activities. 
 
