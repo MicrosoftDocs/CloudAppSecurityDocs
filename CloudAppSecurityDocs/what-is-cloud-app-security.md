@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/19/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -65,7 +65,7 @@ Cloud App Security retains data as follows:
 - Discovery data: 90 days 
 - Alerts: 180 days 
 
-After data is collected from these sources, Cloud App Security runs sophisticated analysis on the data. It immediately alerts you to anomalous activities, and gives you deep visibility into your cloud environment. You can configure a policy in Cloud App Security and use it to protect everything in your cloud environment.  
+After data is collected from these sources, Cloud App Security runs a sophisticated heuristic anomaly detection engine that profiles your environment and alerts you about anomalous activities with respect to the baseline learned, and gives you deep visibility into your cloud environment. You can configure a policy in Cloud App Security and use it to protect everything in your cloud environment.  
 
 ### Cloud Discovery  
 
