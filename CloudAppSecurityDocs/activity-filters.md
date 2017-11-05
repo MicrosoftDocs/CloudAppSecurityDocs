@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -58,11 +58,11 @@ Following is a list of the activity filters that can be applied. Most filters su
   
 -   Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user, or app objects. 
     - Activity object ID - the ID of the object (file, folder, user or app ID).
-    - File, folder, or site URL - Enables you to select files, folders, and URLs that start with a specific string.
-    - Target object (file/folder) - Enables you to select a specific file or folder. 
     - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for items that **Contain**, **Equal**, or **Starts with** the specific item.
     
 -   Activity type - Search for the app activity.
+
+-   Activity type (preview)- Currently being rolled out. Enables you to search for the app activity with greater granularity, using either the activity category, or the activity name provided directly by the app.
 
 -   Administrative activity – Search only for administrative activities.  
   
