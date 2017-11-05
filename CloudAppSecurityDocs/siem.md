@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -94,9 +94,10 @@ After you click Finish and leave the Wizard, back in the SIEM page, you can see 
       java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
 > [!NOTE]
 > - The file name may differ depending on the version of the SIEM agent.
-> - Parameters in brackets [] are optional, and should be used only if relevant.
-> - It is recommended to run the JAR as a scheduled task. When running on Windows, make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs logner than** checkbox.
-
+> - Parameters in brackets [  ] are optional, and should be used only if relevant.
+> - It is recommended to run the JAR during server startup.
+>   - Windows: Run as a scheduled task and make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs logner than** checkbox.
+>   - Linux: Add the run command with an **&** to the rc.local file. For example: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Where the following variables are used:
 - DIRNAME is the path to the directory you want to use for local agent debug logs.

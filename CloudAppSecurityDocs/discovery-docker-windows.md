@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -103,16 +103,11 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     > -   Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
 
-4.  Further deployment information will appear.
-
-    ![Windows3](./media/windows3.png)
-
-5.  **Copy** the run command from the dialog. You can use the copy to
-clipboard icon [copy to clipboard icon](./media/copy-icon.png).
+4.  Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 
 6.  **Export** the expected data sources configuration. This configuration describes how you should set the log export in your appliances.
 
-    ![Windows4](./media/windows4.png)
+   ![Create log collector](./media/windows7.png)
 
 ### Step 2 – On-premises deployment of your machine
 
@@ -137,17 +132,15 @@ clipboard icon [copy to clipboard icon](./media/copy-icon.png).
 
 7.  Deploy the collector image using the run command generated in the portal.
 
-    ![windows8](./media/windows8.png)
+   ![Create log collector](./media/windows7.png)
 
-    >[!NOTE]
+   >[!NOTE]
     >If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:  
  `   docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
     "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
     "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
     "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
     apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
-
-    ![windows9](./media/windows9.png)
 
 9.  Verify the collector is running properly by running the following command: `docker logs <collector_name>`
 
