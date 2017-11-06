@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -127,13 +127,8 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
    ![Create log collector](./media/windows7.png)
 
-   >[!NOTE]
-    >If you need to configure a proxy add the proxy IP address and port under. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:<br></br>
-     `sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
-    "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
-    "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
+   If you need to configure a proxy add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:<br></br>
+     `sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
 5.  Verify that the collector is running properly by running the following command: `docker logs \<collector_name\>`
 
