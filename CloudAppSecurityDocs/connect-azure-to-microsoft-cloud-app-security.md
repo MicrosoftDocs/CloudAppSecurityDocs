@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -101,7 +101,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 
 
 > [!NOTE]
-> This feature is in public preview.
+> This feature is in private preview.
 
 
 ## See Also  
