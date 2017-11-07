@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -46,7 +46,7 @@ ms.suite: ems
 
     -   Allow the log collector to receive inbound FTP and Syslog traffic.
 
-    -   Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
+    -   Allow the log collector to initiate outbound traffic to the portal (for example contoso.portal.cloudappsecurity.com) on port 443.
 
     - Allow the log collector to initiate outbound traffic to the Azure blob storage (https://adaprodconsole.blob.core.windows.net/) on port 80 and 443.
 
