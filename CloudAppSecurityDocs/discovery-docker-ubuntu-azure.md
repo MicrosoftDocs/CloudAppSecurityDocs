@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure automatic log upload for continuous reports | Microsoft Docs
-description: This topic describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu in an on-premises server.
+description: This topic describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu in Azure.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -104,34 +104,56 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
    ![Create log collector](./media/windows7.png)
 
-### Step 2 – On-premises deployment of your machine
+### Step 2 – Deployment of your machine in Azure
 
-> [!Note]
+> [!NOTE]
 > The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
 
-1.  Open a terminal on your Ubuntu machine.
 
-2.  Change to root privileges using the command: `sudo -i`
+1.	Create a new Ubuntu machine in your Azure environment. 
+2.	After the machine is up, open the ports by:
+    1.	In the machine view go to **Networking** select the relevant interface by double clicking on it.
+    2.	Go to **Network security group** and select the relevant network security group.
+    3.	Go to **Inbound security rules** and click **Add**,
+      
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
+    
+    4. Add the following rules (in **Advanced** mode):
 
-3.  Uninstall old versions and install Docker CE by running the following command:
+    |Name|Destination port ranges|Protocol|Source|Destination|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|Any|Any|
+    |caslogcollector_ftp_passive|20000-20099|TCP|Any|Any|
+    |caslogcollector_syslogs_tcp|601-700|TCP|Any|Any|
+    |caslogcollector_syslogs_tcp|514-600|UDP|Any|Any|
+      
+      ![Ubuntu Azure rules](./media/ubuntu-azure-rules.png)
 
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
+3.	Go back to the machine and click **Connect** to open a terminal on the machine.
 
-    ![ubuntu5](./media/ubuntu5.png)
+4.	Change to root privileges using `sudo -i`.
 
-4.  Deploy the collector image on the hosting machine by importing the collector configuration. Do this by copying the run command generated in the portal. If you need to configure a proxy add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
+5.	Uninstall old versions and install Docker CE by running the following command:
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+6. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
-   ![Create log collector](./media/windows7.png)
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
 
-5.  Verify that the collector is running properly by running the following command: `docker logs \<collector_name\>`
+7. Run the command to deploy the log collector.
 
-You should see the message: **Finished successfully!**
+      ![Ubuntu Azure command](./media/ubuntu-azure-command.png)
 
-  ![ubuntu8](./media/ubuntu8.png)
+>[!NOTE]
+>To configure a proxy, add the proxy IP address and port. For example, if your proxy details are 192.168.10.1:8080, your updated run command will be: 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+
+8. To verify that the log collector is running properly, run the following command: `Docker logs <collector_name>`. You should get the results: **Finished successfully!**
+
 
 ### Step 3 - On-premises configuration of your network appliances
 
