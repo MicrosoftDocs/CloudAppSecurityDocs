@@ -133,8 +133,6 @@ After completing this task, proceed to the Cloud App Security portal and create 
 4. In the policy report, you can see which logins where redirected to the proxy for session control, and which files were downloaded or blocked from the monitored sessions.
 
 
-> [!NOTE]
-> This is a preview feature.
 
 
 ## See Also  

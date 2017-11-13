@@ -29,6 +29,8 @@ ms.suite: ems
 
 # Session policies 
 
+> [!NOTE]
+> This is a preview feature.
 
 Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of allowing or blocking access completely, with session control you can allow access while monitoring the session and/or limit specific session activities. 
 
@@ -166,9 +168,7 @@ When **Block** is set as the **Action** you want to take in the Cloud App Securi
 When **Protect** is set as the **Action** to be taken in the Cloud App Security proxy session policy, the proxy enforces the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in Azure and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security
  policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
  
-> [!NOTE]
-> This is a preview feature.
-  
+ 
 ## See Also  
 [Blocking downloads on unmanaged devices using Azure AD proxy capabilities](use-case-proxy-block-session-aad.md)   
 [For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
