@@ -29,6 +29,9 @@ ms.suite: ems
 
 # Deploy proxy for Azure AD apps
 
+> [!NOTE]
+> This is a preview feature.
+
 Follow these steps to configure Azure AD apps to be controlled by the Cloud App Security proxy.
 
 > [!NOTE]
@@ -106,9 +109,6 @@ To verify that the activity is properly captured, click on a single sign-on log 
 
 You are now ready to create [session policies](session-policy-aad.md) to control your proxy apps.
 
-
-> [!NOTE]
-> This is a preview feature.
 
 
 ## See Also  
