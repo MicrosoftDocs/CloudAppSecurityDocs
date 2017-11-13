@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/1/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,9 +27,6 @@ ms.suite: ems
 ---
 
 # Protect apps with Microsoft Cloud App Security proxy
-
-> [!NOTE]
-> Microsoft Cloud App Security proxy feature roll out has started.
 
 In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact, you want to be able to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It is important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, the Cloud App Security proxy delivers these capabilities in a holistic and integrated experience.
 
@@ -86,6 +83,9 @@ In terms of clients, session control is available for any browser on any major p
 
 > [!NOTE]
 > Office 365 applications are not configured with SAML so they are not currently supported.
+
+> [!NOTE]
+> This is a preview feature.
 
 ## See Also  
 [Deploy the Cloud App Security proxy](proxy-deployment-aad.md)   

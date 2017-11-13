@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,9 +28,6 @@ ms.suite: ems
 
 
 # Deploy proxy for Azure AD apps
-
-> [!NOTE]
-> Microsoft Cloud App Security proxy feature roll out has started.
 
 Follow these steps to configure Azure AD apps to be controlled by the Cloud App Security proxy.
 
@@ -108,6 +105,11 @@ To verify that the activity is properly captured, click on a single sign-on log 
 
 
 You are now ready to create [session policies](session-policy-aad.md) to control your proxy apps.
+
+
+> [!NOTE]
+> This is a preview feature.
+
 
 ## See Also  
 [Working with the Cloud App Security proxy](proxy-intro-aad.md)   

@@ -2,12 +2,12 @@
 # required metadata
 
 title: Configure automatic log upload for continuous reports | Microsoft Docs
-description: This topic describes the process configuring automatic log upload for continuous reports in Cloud App Security.
+description: This topic describes the process configuring automatic log upload for continuous reports in Cloud App Security .
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/12/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -45,9 +45,7 @@ Before setting up automatic log file collection, verify that your log matches th
 
 The Log Collector supports two deployment modes:
 
--   **Container** (*Preview*): Runs as a Docker image on [Windows](discovery-docker-windows.md) and [Ubuntu](discovery-docker-ubuntu.md), either on premises on in Azure. 
-
-
+-   **Container** : Runs as a Docker image on [Ubuntu on premises](discovery-docker-ubuntu.md), or [Ubuntu in Azure](discovery-docker-ubuntu-azure.md). 
 
 -   **Virtual appliance**:  [Runs as an image over Hyper-V or VMware hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
 

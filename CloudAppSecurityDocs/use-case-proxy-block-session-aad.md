@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,8 +28,6 @@ ms.suite: ems
 
 # Blocking downloads of sensitive information using the Microsoft Cloud App Security proxy
 
-> [!NOTE]
-> Microsoft Cloud App Security proxy feature roll out has started.
 
 Today's IT admin is stuck between a rock and hard place: You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. On the other hand, you want to protect the company's assets, and that includes proprietary and privileged information. How can you enable your employees to access your cloud apps, while protecting your data? **This use case allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 
@@ -134,7 +132,11 @@ After completing this task, proceed to the Cloud App Security portal and create 
 
 4. In the policy report, you can see which logins where redirected to the proxy for session control, and which files were downloaded or blocked from the monitored sessions.
 
-  
+
+> [!NOTE]
+> This is a preview feature.
+
+
 ## See Also  
 [Create a session policy](session-policy-aad.md)   
 [For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
