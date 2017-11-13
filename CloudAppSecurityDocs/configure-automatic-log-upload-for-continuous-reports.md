@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -83,7 +83,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   > [!NOTE] 
   > - A single Log collector can handle multiple data sources.
   > - Copy the contents of the screen because you will use it when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information includes information about which port the Syslog listener is listening on.
-4.  **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare. Then,unzip the file using the password you received in the portal.  
+4.  If you accept the [end-user license terms](https://go.microsoft.com/fwlink/?linkid=862492), **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare. Then, unzip the file using the password you received in the portal.  
   
 ###	Step 2 – On-premises deployment of the virtual machine and network configuration   
 

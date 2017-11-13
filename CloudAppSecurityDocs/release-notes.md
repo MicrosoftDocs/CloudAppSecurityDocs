@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,15 @@ ms.suite: ems
 # What's new with Microsoft Cloud App Security
 
 
-## Cloud App Security releases 109
+## Cloud App Security release 110
+Released November 12, 2017
+ 
+-	Now generally available: We are starting to roll out a new deployment mode for the log collector. In addition to the current virtual-appliance based deployment, the new Docker (container) based log collector can be installed as a package on Ubuntu machines both on-premises and in Azure. When using the Docker, the hosting machine is owned by the customer, who can freely patch and monitor it.
+-	Using the new blue question mark in the corner, you can now access the relevant Cloud App Security documentation page on docs.microsoft.com from within the pages of the portal. Each link is context-sensitive, taking you to the information you need based on the page you’re on.
+-	You can now send feedback from every page of the Cloud App Security portal. This enables you to report bugs, request new features and share your experience directly with the Cloud App Security team.
+-	Improvements were made to the Cloud discovery ability to recognize subdomains for deep-dive investigations into your organization’s cloud usage. For more information, see Working with discovered apps.
+
+## Cloud App Security release 109
 Released October 29, 2017 
 
 - Microsoft Cloud App Security proxy feature roll out has started. The Microsoft Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to your cloud environment, and activities performed within it. For example:
