@@ -42,7 +42,9 @@ Once the SIEM agent retrieves the data from Cloud App Security, it sends the Sys
 
 ![SIEM integration architecture](./media/siem-architecture.png)
 
+## Supported SIEMs
 
+Cloud App Security currently supports HP archsight and generic CEF.
 
 ## How to integrate
 
@@ -72,6 +74,7 @@ Click **Next**.
 5. Type in the IP address or hostname of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
 You can work with your security admin to get these details if you don't have them.
 Click **Next**.
+
   ![Remote Syslog settings](./media/siem2.png)
 
 6. Select which data types, **Alerts** and **Activities** you want to export to your SIEM server. 
@@ -86,12 +89,13 @@ After you click Finish and leave the Wizard, back in the SIEM page, you can see 
 
 ### Step 2: Download the JAR file and run it on your server
 
-1. In the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596) if you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862491), download the .zip file and unzip it.
+1. In the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596), after accepting the [software license terms](https://go.microsoft.com/fwlink/?linkid=862491), download the .zip file and unzip it.
 
 2. Extract the .jar file from the zip file and run it on your server.
  After running the file, run the following:
     
-      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+
 > [!NOTE]
 > - The file name may differ depending on the version of the SIEM agent.
 > - Parameters in brackets [  ] are optional, and should be used only if relevant.
