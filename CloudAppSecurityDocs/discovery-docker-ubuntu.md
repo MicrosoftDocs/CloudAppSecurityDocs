@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -113,12 +113,20 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 2.  Change to root privileges using the command: `sudo -i`
 
+3. To bypass a proxy in your network, run the following two commands:
+        
+        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
+        export https_proxy='<IP>:<PORT>'
+
 3.  Uninstall old versions and install Docker CE by running the following command:
 
     `curl -o /tmp/MCASInstallDocker.sh
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
     && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
 
+     > [!NOTE] 
+     > If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
+    
     ![ubuntu5](./media/ubuntu5.png)
 
 4.  Deploy the collector image on the hosting machine by importing the collector configuration. Do this by copying the run command generated in the portal. If you need to configure a proxy add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
