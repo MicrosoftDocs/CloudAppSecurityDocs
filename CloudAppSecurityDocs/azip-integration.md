@@ -71,6 +71,7 @@ After enabling Azure Information Protection, you will be able to see files that 
 ### Set internal and external tags
 By default, Cloud App Security scans classification labels that were defined in your organization as well as external ones that were defined by other organizations. 
 
+
 To ignore classification labels set external to your organization, in the Cloud App Security portal, under **General settings**, under **Azure security settings** select **Ignore Azure Information Protection classification labels from other tenants**.
  
 ![ignore labels](./media/azip-ignore.png)
@@ -127,7 +128,7 @@ Learn more about [Azure Information Protection](https://docs.microsoft.com/en-us
 
 ## Integration with Azure Rights Management
 
-Your organization must have Azure Rights Management licensed and activated to integrate between Cloud App Security and Azure RMS.  These two separate steps  can be found in [Activating Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
+Your organization must have Azure Rights Management licensed and activated to integrate between Cloud App Security and Azure RMS. These two separate steps can be found in [Activating Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
 Cloud App Security currently supports Native protection for Office files (2016 and up). PDF and image files will be available in future versions. 
 
@@ -142,7 +143,7 @@ After Cloud App Security is connected to your Office 365 service, you will be ab
 
 2. You are asked to choose one of your organization's classification labels to use to protect the file, and click **Protect**. 
 ![protection classification label](./media/protect-template.png)
-3. After you choose a classification label and click protect, Cloud App Security will apply the classification label and protect the original file. T
+3. After you choose a classification label and click protect, Cloud App Security will apply the classification label and protect the original file.
 > [!NOTE]
 > 	It is recommended to apply company-wide RMS classification labels on files, so all users in the organization are able to access these files, including the original owner of the file. 
 > The owner of the file, the sharing policy of the file and the list of users who already have access to it do not change when the file becomes protected.
