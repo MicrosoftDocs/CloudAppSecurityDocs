@@ -124,8 +124,8 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
     && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
 
-> [!NOTE] 
-> If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
+     > [!NOTE] 
+     > If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
     
     ![ubuntu5](./media/ubuntu5.png)
 
