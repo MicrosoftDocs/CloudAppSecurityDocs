@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -86,7 +86,7 @@ After you click Finish and leave the Wizard, back in the SIEM page, you can see 
 
 ### Step 2: Download the JAR file and run it on your server
 
-1. In the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596) read the [end-user licence agreement](https://go.microsoft.com/fwlink/?linkid=862491) and download the .zip file and unzip it.
+1. In the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=838596) if you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862491), download the .zip file and unzip it.
 
 2. Extract the .jar file from the zip file and run it on your server.
  After running the file, run the following:
