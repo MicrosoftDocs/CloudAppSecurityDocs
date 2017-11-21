@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -54,6 +54,7 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
 |Data center|IP addresses|  
 |----|----|
 |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|US2|13.80.125.22|52.183.75.62<br></br>52.184.165.82|
 |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
 
 ## SIEM agent connection
@@ -65,6 +66,7 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 |Data center|IP addresses|  
 |----|----|
 |US1|13.91.91.243|
+|US2|52.184.165.82|
 |EU1|52.174.56.180|
 
 ## App connector access and external DLP integration
@@ -76,6 +78,7 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 |Data center|IP addresses|  
 |----|----|
 |US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
+|US2|40.84.4.93<br></br>40.84.4.119<br></br>40.84.2.83|
 |EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
 
@@ -112,7 +115,10 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
 - Allow the log collector to receive inbound FTP and Syslog traffic.
 - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
-- Allow the log collector to initiate outbound traffic to the Azure blob storage  (https://adaprodconsole.blob.core.windows.net/) on port 80 and 443.
+- Allow the log collector to initiate outbound traffic to the Azure blob storage:
+    - For the US1 data center, use: https://adaprodconsole.blob.core.windows.net/ on port 80 and 443
+    - For the US2 data center, use: https://prod03use2console1.blob.core.windows.net/ on port 80 and 443
+    - For the EU1 data center, use: https://prod02euwconsole1.blob.core.windows.net/ on port 80 and 443
 
 > [!NOTE]
 > If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the Microsoft Azure datacenter IP ranges on port 443.

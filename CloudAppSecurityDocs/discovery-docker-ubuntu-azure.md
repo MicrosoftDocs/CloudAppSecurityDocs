@@ -39,16 +39,7 @@ ms.suite: ems
 
 -   RAM: 4 GB
 
--   Firewall settings:
-
-    -   Allow the log collector to receive inbound FTP and Syslog traffic.
-
-    -   Allow the log collector to initiate outbound traffic to the portal (for example contoso.portal.cloudappsecurity.com) on port 443.
-
-    - Allow the log collector to initiate outbound traffic to the Azure blob storage (https://adaprodconsole.blob.core.windows.net/) on port 80 and 443.
-
-> [!NOTE]
-> If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges on port 443](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+-   Set your firewall as described in [Network requirements](network-requirements#log-collector)
 
 ## Log collector performance
 
