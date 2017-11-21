@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -126,7 +126,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 5.	If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the following command:
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
@@ -136,12 +136,12 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
       ![Ubuntu Azure command](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->To configure a proxy, add the proxy IP address and port. For example, if your proxy details are 192.168.10.1:8080, your updated run command will be: 
+     >[!NOTE]
+     >To configure a proxy, add the proxy IP address and port. For example, if your proxy details are 192.168.10.1:8080, your updated run command will be: 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Ubuntu proxy](./media/ubuntu-proxy.png)
 
 8. To verify that the log collector is running properly, run the following command: `Docker logs <collector_name>`. You should get the results: **Finished successfully!**
 
