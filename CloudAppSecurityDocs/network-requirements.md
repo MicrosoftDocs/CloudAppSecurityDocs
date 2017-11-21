@@ -78,7 +78,7 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 |Data center|IP addresses|  
 |----|----|
 |US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
-|US2|40.84.4.93<br></br>40.84.4.119<br></br>40.84.2.83|
+|US2|52.184.165.82<br></br>40.84.4.93<br></br>40.84.4.119<br></br>40.84.2.83|
 |EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
 
