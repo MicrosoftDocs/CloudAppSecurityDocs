@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -51,7 +51,7 @@ Cloud App Security supports the following Office 365 apps:
 >- You must have at least one assigned Office 365 license to connect Office 365 to Cloud App Security.
 >-  Exchange administrator audit logging, which is enabled by default in Office 365, logs an event in the Office 365 audit log when an administrator (or a user who has been assigned administrative privileges) makes a change in your Exchange Online organization. Changes made using the Exchange admin center or by running a cmdlet in Windows PowerShell are logged in the Exchange admin audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](http://go.microsoft.com/fwlink/p/?LinkID=619225).
 >- Exchange Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online is logged, see [Exchange Mailbox activities](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
->- If Office apps are enabled, groups that are part of Office 365 are also created in the specific Office apps, for example if SharePoint is enabled, Office 365 groups are created in SharePoint.
+>- If Office apps are enabled, groups that are part of Office 365 are also imported to Cloud App Security from the specific Office apps, for example if SharePoint is enabled, Office 365 groups are imported as SharePoint groups as well.
 >- You must [enable auditing in PowerBI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) to get the logs from there. Once auditing is enabled, Cloud App Security starts getting the logs (with a delay of 24-72 hours).
 > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Azure AD settings and use of the **Suspend user** governance action is reverted. 
  

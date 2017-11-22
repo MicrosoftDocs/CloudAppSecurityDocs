@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -83,7 +83,7 @@ The following table lists, per cloud app, which abilities are supported with App
 |**Log on activity**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**User activity**|✔*|✔|✔|✔ - requires Google Unlimited|Partial|Supported with Salesforce Shield|✔|Not applicable|  
 |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|  
-|**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Coming soon|  
+|**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Not applicable|  
 |**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Unlimited|||Coming soon||  
 |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||  
 |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||  
