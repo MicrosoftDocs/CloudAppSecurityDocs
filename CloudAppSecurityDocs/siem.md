@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -128,6 +128,61 @@ As well as the following alerts logfile example:
   2017-07-16T09:17:46.290Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy4|3|externalId=596b30200c204203a33a4765 start=1500196666290 end=1500196666290 msg=Activity policy ''test-activity-policy4'' was triggered by ''admin@contoso.com'' suser=admin@contoso.com destinationServiceName=Microsoft Exchange Online cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b30200c204203a33a4765 cs2Label=uniqueServiceAppIds cs2=APPID_OUTLOOK cs3Label=relatedAudits cs3=1500196587034_a8673602-7e95-46d6-a1fe-c156c4709c5d
   2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3
 ```
+#### Sample Cloud App Security alerts in CEF format
+
+
+##### Activity Logs
+
+-	EVENT_CATEGORY_* - High level category of the activity
+
+-	<ACTION> - The activity type, as displayed in the portal
+
+-	externalId – Event ID
+
+-	start – Alert timestamp
+
+-	end – Alert timestamp
+
+-	rt - Alert timestamp
+
+-	msg – Event description as shown in the portal
+
+-	suser – Activity User
+
+-	destinationServiceName – Activity originating app, for example, Office 365, Sharepoint, Box.
+
+-	dvc – IP of the client device
+
+-	requestClientApplication – User agent of the client device
+
+-	cs<X>Label – Each label has a different meaning, but the label itself explains it, for example, targetObjects.
+
+-	cs<X> - The information corresponding to the label (the target user of the activity or alert as per the label example).
+
+##### Alerts
+
+-	<alert type> - For example “ALERT_CABINET_EVENT_MATCH_AUDIT”
+
+-	<name> - The matched policy name
+
+-	externalId – Alert ID
+
+-	start- Alert timestamp
+
+-	end – Alert timestamp
+
+-	rt - Alert timestamp
+
+-	msg – Alert description as shown in the portal
+
+-	suser – Alert subject user
+
+-	destinationServiceName – Alert originating app, for example, Office 365, Sharepoint, Box
+
+-	cs<X>Label – Each label has a different meaning, but the label itself explains it, for example, targetObjects.
+
+-	cs<X> - The information corresponding to the label (the target user of the activity or alert as per the label example).
+
 
 ### Step 3: Validate that the SIEM agent is working
 
