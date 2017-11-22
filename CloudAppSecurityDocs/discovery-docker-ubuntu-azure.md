@@ -116,7 +116,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     |caslogcollector_ftp|21|TCP|Any|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|Any|Any|
     |caslogcollector_syslogs_tcp|601-700|TCP|Any|Any|
-    |caslogcollector_syslogs_tcp|514-600|UDP|Any|Any|
+    |caslogcollector_syslogs_udp|514-600|UDP|Any|Any|
       
       ![Ubuntu Azure rules](./media/ubuntu-azure-rules.png)
 
