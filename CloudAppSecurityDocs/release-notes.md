@@ -28,6 +28,19 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+## Cloud App Security release 111
+Released November 26, 2017
+
+-	Discovery policies now support app tags as a condition and as a governance action. This enables you to automatically tag newly discovered apps with custom tags such as **Trending apps**. You can also use the app tag as a filter, for example “Alert me when an app in the ‘Watchlist’ has more than 100 users in a single day”.
+
+-	The **Time** filter was improved to make it more user friendly.
+
+-	Content inspection now enables you to distinguish between content, metadata and filename, enabling you to select which of these you want to inspect.
+
+-	A new governance action was added for G Suite. You can now **Reduce public access** to shared files. This enables you to set Publicly available files to be available only with a shared link.
+
+-	All OKTA log on activities to other applications will now show up in Cloud App Security as originating from OKTA. You can view and filter based on the target application to which the login was performed in the activity’s **Activity objects** field.
+
 
 ## Cloud App Security release 110
 Released November 12, 2017
