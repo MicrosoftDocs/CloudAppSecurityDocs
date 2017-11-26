@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -60,6 +60,8 @@ The following governance actions can be taken for connected apps either on a spe
         -   Make private – Only the owner can access the file, all shares are removed.  
   
         -   Remove a collaborator – Remove a specific collaborator from the file.  
+
+        - Reduce public access - Set Publicly available files to be available only with a shared link.
   
     -   Quarantine  
   
@@ -149,6 +151,7 @@ For information about how governance actions are treated when there are policy c
 |Files|File|Protect|Protect a file with Azure Information Protection by applying an organization template.|Office 365 (SharePoint and OneDrive)|
 |Files|File|Revoke read permissions form myself|Revokes read permissions for the file for yourself, useful after granting yourself permission to understand if a file has a violation or not.|G Suite|
 |Files, File policy|File|Transfer file ownership|Changes the owner - in the policy you choose a specific owner.|G Suite|
+|Files, File policy|File|Reduce public access|This enables you to set Publicly available files to be available only with a shared link.|G Suite|
 |Files, File policy|File|Remove a collaborator|Removes a specific collaborator from a file.|G Suite, Box, One Drive, SharePoint|
 |Files, File policy|File|Make private|Make the file private - no more collaborators or public links, not shared with anyone.|G Suite, One Drive, SharePoint|
 |Files, File policy|File|Remove external users|Removes all external collaborators - outside the domains configured as internal in Settings.|G Suite, Box |
