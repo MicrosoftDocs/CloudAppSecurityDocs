@@ -36,8 +36,6 @@ ms.suite: ems
     1. Enter the new password.
     2. Enter the new password again for confirmation.
  
-   ![change ftp password](./media/change-ftp-pass.png)
-
 3.	Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
 
 

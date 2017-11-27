@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Configure automatic log upload for continuous reports on a virtual appliance
+# Configure automatic log upload for continuous reports on a virtual appliance - Deprecated
 
 > [!WARNING] 
 > It is highly recommended to configure log upload using the [Docker](discovery-docker.md) for more flexible deployment.
