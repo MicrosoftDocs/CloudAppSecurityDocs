@@ -73,5 +73,5 @@
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
 ## [Troubleshooting content inspection](troubleshooting-content-inspection.md)
 ## [Troubleshooting SIEM integration](troubleshooting-siem.md)
-## [Troubleshooting Cloud Discovery docker deployment](troubleshooting-docker.md)
-## [Troubleshooting policies](troubleshooting-docker.md)
+## [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
+## [Troubleshooting policies](troubleshoot-policies.md)
