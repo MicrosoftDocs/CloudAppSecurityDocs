@@ -18,7 +18,7 @@
 ### [Configure automatic log upload for continuous reports](discovery-docker.md)
 #### [Docker on Ubuntu on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
-#### [Using a virtual appliance](configure-automatic-log-upload-for-continuous-reports.md)
+#### [Using a virtual appliance - Deprecated](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Use the custom log parser](custom-log-parser.md)
 ### [Cloud Discovery enrichment](cloud-discovery-aad-enrichment.md)
 ### [Anonymize Cloud Discovery data](cloud-discovery-anonymizer.md)
