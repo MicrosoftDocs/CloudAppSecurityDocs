@@ -1,18 +1,18 @@
 ---
 # required metadata
 
-title: Customize certificates for the Cloud Discovery docker | Microsoft Docs
-description: This topic describes the process for customizing certificates for the Cloud Discovery docker.
+title: Troubleshooting Cloud Discovery Docker Deployment | Microsoft Docs
+description: This topic describes the process for modifying configuration for the Cloud App Security Cloud Discovery docker.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 26/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 0e9c15d3-902b-4b8f-8dec-31953b4451e0
+ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 
 # optional metadata
 
@@ -26,7 +26,24 @@ ms.suite: ems
 
 ---
 
-# Customize certificate files
+# Troubleshooting the Cloud App Security Cloud Discovery Docker
+
+## Changing the FTP password
+
+
+1. Connect to the log collector host.
+
+2.	Run `docker exec -it <collector name> pure-pw passwd <ftp user>`
+
+    1. Enter the new password.
+    2. Enter the new password again for confirmation.
+ 
+3.	Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
+
+
+  ![change ftp password](./media/ftp-connect.png)
+
+## Customize certificate files
 
 Follow this procedure to customize the certificate files you use for secure connections to the Cloud Discovery docker.
 
@@ -48,8 +65,7 @@ Follow this procedure to customize the certificate files you use for secure conn
     ![Change ftp password](./media/update-certs.png)
 
 ## See Also
-[Working with Cloud Discovery
-data](working-with-cloud-discovery-data.md)  
+[Deploy Cloud Discovery](set-up-cloud-discovery.md)
 [For technical support, please visit the Cloud App Security assisted support
 page](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier customers can also choose Cloud App Security directly from the Premier

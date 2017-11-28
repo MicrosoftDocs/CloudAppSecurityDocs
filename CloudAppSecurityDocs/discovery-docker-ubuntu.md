@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -162,8 +162,7 @@ After you have verified that the logs are being uploaded to Cloud App Security a
 ![Custom continuous report](./media/custom-continuous-report.png)
 
 ## See Also
-[Working with Cloud Discovery
-data](working-with-cloud-discovery-data.md)  
+[Troubleshooting Cloud Discovery docker deployment](troubleshooting-docker.md)  
 [For technical support, please visit the Cloud App Security assisted support
 page](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier customers can also choose Cloud App Security directly from the Premier
