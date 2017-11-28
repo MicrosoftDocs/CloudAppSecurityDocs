@@ -18,9 +18,6 @@
 ### [Configure automatic log upload for continuous reports](discovery-docker.md)
 #### [Docker on Ubuntu on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
-##### Modifying docker configuration
-###### [Customizing certificate files](discovery-docker-custom-cert.md)
-###### [Changing the FTP password](discovery-docker-change-ftp.md)
 #### [Using a virtual appliance](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Use the custom log parser](custom-log-parser.md)
 ### [Cloud Discovery enrichment](cloud-discovery-aad-enrichment.md)
@@ -76,3 +73,5 @@
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
 ## [Troubleshooting content inspection](troubleshooting-content-inspection.md)
 ## [Troubleshooting SIEM integration](troubleshooting-siem.md)
+## [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
+## [Troubleshooting policies](troubleshoot-policies.md)
