@@ -162,7 +162,7 @@ After you have verified that the logs are being uploaded to Cloud App Security a
 ![Custom continuous report](./media/custom-continuous-report.png)
 
 ## See Also
-[Troubleshooting Cloud Discovery docker deployment](troubleshooting-docker.md)  
+[Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)  
 [For technical support, please visit the Cloud App Security assisted support
 page](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier customers can also choose Cloud App Security directly from the Premier
