@@ -31,7 +31,7 @@ ms.suite: ems
 
 ## Technical requirements
 
--   OS: Ubuntu 14.04 or higher
+-   OS: Ubuntu 14.04 or higher (there is no stable version of docker to support Ubuntu 17.10)
 
 -   Disk space: 250 GB
 
@@ -118,7 +118,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     |caslogcollector_syslogs_tcp|601-700|TCP|Any|Any|
     |caslogcollector_syslogs_udp|514-600|UDP|Any|Any|
       
-      ![Ubuntu Azure rules](./media/ubuntu-azure-rules.png)
+      ![Ubuntu Azure rules](./media/inbound-rule.png)
 
 3.	Go back to the machine and click **Connect** to open a terminal on the machine.
 
@@ -128,23 +128,21 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
-
-      ![Ubuntu Azure](./media/ubuntu-azure.png)
-
-7. Run the command to deploy the log collector.
-
       ![Ubuntu Azure command](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >To configure a proxy, add the proxy IP address and port. For example, if your proxy details are 192.168.10.1:8080, your updated run command will be: 
+6. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
+      ![Ubuntu Azure](./media/windows7.png)
+
+7. Run the command to deploy the log collector.
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Ubuntu proxy](./media/ubuntu-proxy.png)
 
 8. To verify that the log collector is running properly, run the following command: `Docker logs <collector_name>`. You should get the results: **Finished successfully!**
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### Step 3 - On-premises configuration of your network appliances
 
