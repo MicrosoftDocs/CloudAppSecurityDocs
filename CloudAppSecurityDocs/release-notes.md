@@ -28,6 +28,15 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+## Cloud App Security release 112
+Released December 10, 2017
+
+-	You can now access the relevant insight drawer by clicking on a username or IP address in the Activity log. 
+-	When investigating activities you can now easily view all activities within the same time period from within the insight drawer by clicking on the clock icon, which enables you to view all activities performed within 48 hours of the activity you are viewing.
+-	Improvements were made to the Cloud Discovery log parser for Juniper SRX.
+-	For activities monitored by the proxy, the **Activity object** was expanded to include information relevant to DLP scans, and matched policies were expanded to include DLP violations if they exist.
+
+
 ## Cloud App Security release 111
 Released November 26, 2017
 
