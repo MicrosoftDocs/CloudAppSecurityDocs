@@ -113,11 +113,12 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     |Name|Destination port ranges|Protocol|Source|Destination|
     |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<Your appliance's IP address>|Any|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<Your appliance's IP address>|Any|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address>|Any|
-    |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address>|Any|
+    |caslogcollector_ftp|21|TCP|<Your appliance's IP address's subnet>|Any|
+    |caslogcollector_ftp_passive|20000-20099|TCP|<Your appliance's IP address's subnet>|Any|
+    |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address's subnet>|Any|
+    |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address's subnet>|Any|
       
+    
       ![Ubuntu Azure rules](./media/inbound-rule.png)
 
 3.	Go back to the machine and click **Connect** to open a terminal on the machine.
