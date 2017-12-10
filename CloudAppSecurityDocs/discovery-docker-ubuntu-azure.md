@@ -79,7 +79,10 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     b. Give the log collector a **name**.
 
-    c. Enter the **Host IP address** of the machine you will use to deploy the Docker.
+    c. Enter the **Host IP address** of the machine you will use to deploy the Docker. 
+
+     > [!NOTE]
+     > The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
 
     d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
 
@@ -118,8 +121,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address's subnet>|Any|
     |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address's subnet>|Any|
       
-    
-      ![Ubuntu Azure rules](./media/inbound-rule.png)
+     ![Ubuntu Azure rules](./media/inbound-rule.png)
 
 3.	Go back to the machine and click **Connect** to open a terminal on the machine.
 
