@@ -141,7 +141,13 @@ You can view more information about each activity, by clicking on the Activity i
 
  The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
-
+ You can also use the icons at the top of the tab to:
+ - View activities of the same type
+ - View all activities of the same user
+ - View activities from the same IP address
+ - view activities from the same geographic location
+ - View activities from the same time period (48 hours)
+ 
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
   
 For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
@@ -172,7 +178,7 @@ To view IP address insights:
 
 1. Click on the Activity itself in the **Activity log**.
 
-2. Then click on the **IP address** tab. <br></br> This opens the Activity drawer **IP address** tab provides the following insights about the IP address:
+2. Then click on the **IP address** tab. <br></br> This opens the Activity drawer **IP address** tab, which provides the following insights about the IP address:
     - **Open alerts**: The number of open alerts that involved the IP address.
     - **Activities**: The number of activities performed by the IP address in the past 30 days.
     - **IP location**: The geographic locations from which the IP address connected from in the past 30 days.
@@ -182,6 +188,7 @@ To view IP address insights:
         - Tag as risky 
         - Tag as VPN IP address
         - Tag as Risky IP and add to blocked group
+
 
 ![IP address insights in Cloud App Security](./media/ip-address-insights.png)
 
