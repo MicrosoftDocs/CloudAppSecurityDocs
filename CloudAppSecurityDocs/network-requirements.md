@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 12/17/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -47,15 +47,19 @@ To see which data center you are connecting to:
 
 ## Portal access
 
-For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses to your firewall's white list:  
+For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's white list:  
 
 
 > [!div class="mx-tableFixed"]
-|Data center|IP addresses|  
-|----|----|
-|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
-|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+|Data center|IP addresses|DNS name|
+|----|----|----|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us1.portal.cloudappsecurity.com|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us2.portal.cloudappsecurity.com|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.eu1.portal.cloudappsecurity.com|
+
+
+>[!NOTE]
+>Instead of a wildcard (*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
 
 ## SIEM agent connection
 

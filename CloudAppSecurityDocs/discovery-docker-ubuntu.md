@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -69,8 +69,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     d. Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.
 
     e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
-    >[!NOTE]
-    >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
+    
+     >[!NOTE]
+     >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
     f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.
 
@@ -80,15 +81,18 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     b. Give the log collector a **name**.
 
-    c. Enter the **Host IP address** of the machine you will use to deploy the Docker.
+    c. Enter the **Host IP address** of the machine you will use to deploy the Docker. 
+       
+       > [!NOTE]
+       > The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
 
     d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
 
     ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - A single Log collector can handle multiple data sources.
-    >- Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
+     >  [!NOTE]
+     > - A single Log collector can handle multiple data sources.
+     > - Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
 
 4.  Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon ![copy to clipboard icon](./media/copy-icon.png).
 
@@ -98,7 +102,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 2 – On-premises deployment of your machine
 
-> [!Note]
+> [!NOTE]
 > The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
 
 1.  Open a terminal on your Ubuntu machine.
@@ -145,11 +149,9 @@ Check the collector status in the **Log collector** table and make sure the st
 
  ![ubuntu9](./media/ubuntu9.png)
 
-You can also go to the **Governance log** and verify that logs are being
-periodically uploaded to the portal.
+You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 
-If you encounter problems during deployment, see [Troubleshooting Cloud
-Discovery](troubleshooting-cloud-discovery.md).
+If you encounter problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### Optional - Create custom continuous reports
 
@@ -162,9 +164,12 @@ After you have verified that the logs are being uploaded to Cloud App Security a
 ![Custom continuous report](./media/custom-continuous-report.png)
 
 ## See Also
-[Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)  
+
+[Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
+
 [For technical support, please visit the Cloud App Security assisted support
 page](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Premier customers can also choose Cloud App Security directly from the Premier
 Portal](https://premier.microsoft.com/)
 
