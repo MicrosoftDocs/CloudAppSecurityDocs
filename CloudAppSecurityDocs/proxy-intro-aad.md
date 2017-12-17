@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,9 +36,9 @@ In today’s workplace, it’s often not enough to know what’s happening in yo
 
 ## How it works
 
-The Cloud App Security proxy is integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a conditional access policy is applied to. After you’ve determined the conditions, you can route users to the Cloud App Security proxy where you can apply session control.
+The Cloud App Security proxy is integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a conditional access policy is applied to. After you’ve determined the conditions, you can route users to the Cloud App Security proxy where you can apply access and session controls.
 
-After a user is routed to the Cloud App Security proxy, their app sessions can be monitored and controlled in real time based on session policies. Session policies are utilized within the Cloud App Security portal to further refine session filters and set actions to be taken on a user. With the session policies, you can:
+After a user is routed to the Cloud App Security proxy, their app access and sessions can be monitored and controlled in real time based on access and session policies. Access and session policies are utilized within the Cloud App Security portal to further refine filters and set actions to be taken on a user. With the access and session policies, you can:
 
 -	**Block on download**: You can block the download of sensitive documents. For example, on unmanaged devices.
 
@@ -47,6 +47,9 @@ After a user is routed to the Cloud App Security proxy, their app sessions can b
 -	**Restrict user sessions from non-corporate networks**: Users accessing a protected app from a location that is not part of your corporate network, are allowed restricted access and the download of sensitive materials is blocked or protected.
 
 -	**Monitor low-trust user sessions**: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future. 
+
+- **Block access**: You can completely block access to specific apps for users coming from users coming from unmanaged devices or from non-corporate networks.
+
 
 ### How session control works
 
@@ -73,7 +76,7 @@ The proxy enables you to create policies that take into account whether a device
  
  
 ### Compliant and domain joined devices
-Azure AD conditional access enables compliant and domain-joined device information to be passed directly to the Cloud App Security proxy. From there, a session policy can be developed that uses device state as a filter.
+Azure AD conditional access enables compliant and domain-joined device information to be passed directly to the Cloud App Security proxy. From there, an access policy or a session policy can be developed that uses device state as a filter.
 For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
 
 ### Client-certificate authenticated devices
@@ -88,7 +91,7 @@ The proxy currently supports apps that are configured with SAML single sign on i
 > The proxy also supports apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
 
 In addition, session control is not automatically available for all apps. The Cloud App Security team tested many popular apps with session control. Other apps may require an onboarding process that will be done with the customer.
-In terms of clients, session control is available for any browser on any major platform. However, mobile apps and desktop apps are not supported. 
+In terms of clients, session control is available for any browser on any major platform. However, mobile apps and desktop apps are not supported by session control. 
 
 > [!NOTE]
 > Office 365 applications are not configured with SAML so they are not currently supported.
