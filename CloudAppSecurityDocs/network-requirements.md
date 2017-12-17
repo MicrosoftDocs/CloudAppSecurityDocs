@@ -53,13 +53,13 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
 > [!div class="mx-tableFixed"]
 |Data center|IP addresses|DNS name|
 |----|----|----|
-|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us1.portal.cloudappsecurity.com|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us2.portal.cloudappsecurity.com|
-|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.eu1.portal.cloudappsecurity.com|
+|US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu1.portal.cloudappsecurity.com|
 
 
 >[!NOTE]
->Instead of a wildcard (*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
+>Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
 
 ## SIEM agent connection
 
@@ -69,7 +69,7 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > [!div class="mx-tableFixed"]
 |Data center|IP addresses|  
 |----|----|
-|US1|13.91.91.243|
+|US|13.91.91.243|
 |US2|52.184.165.82|
 |EU1|52.174.56.180|
 
@@ -81,7 +81,7 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 > [!div class="mx-tableFixed"]
 |Data center|IP addresses|  
 |----|----|
-|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
 |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 
@@ -123,7 +123,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
    
     |Data center|URL|
     |----|----|
-    |US1|https://adaprodconsole.blob.core.windows.net/|
+    |US|https://adaprodconsole.blob.core.windows.net/|
     |US2|https://prod03use2console1.blob.core.windows.net/|
     |EU1|https://prod02euwconsole1.blob.core.windows.net/|
 
