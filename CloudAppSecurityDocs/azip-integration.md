@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -130,7 +130,12 @@ Learn more about [Azure Information Protection](https://docs.microsoft.com/en-us
 
 Your organization must have Azure Rights Management licensed and activated to integrate between Cloud App Security and Azure RMS. These two separate steps can be found in [Activating Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
-Cloud App Security currently supports Native protection for Office files (2016 and up). PDF and image files will be available in future versions. 
+Cloud App Security currently supports Native protection for the following file types:
+
+- Word: docm, docx, dotm, dotx
+- Excel: xlam, xlsm, xlsx, xltx
+- PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
+- PDF and image files will be available in future versions 
 
 This feature is currently available for files that are stored in SharePoint Online and OneDrive for Business. More cloud apps will be supported in future versions.
 
