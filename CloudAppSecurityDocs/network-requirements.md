@@ -128,7 +128,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
     |EU1|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the Microsoft Azure datacenter IP ranges on port 443.
+> If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
 
 
 
