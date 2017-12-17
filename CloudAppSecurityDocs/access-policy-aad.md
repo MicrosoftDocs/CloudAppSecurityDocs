@@ -69,26 +69,25 @@ To create a new access policy, follow this procedure:
 
 5. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
 
-     - **Device tags**: Use this filter to identify unmanaged devices.
+![native client support](./media/user-agent-tag.png)
 
-     - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
+   - **Device tags**: Use this filter to identify unmanaged devices.
 
-     - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
+   - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
 
-     - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native client** and should be tested against your mobile and desktop apps for each cloud app.
-         
-         ![native client support](./media/user-agent-tag.png)
+   - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
 
+   - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native client** and should be tested against your mobile and desktop apps for each cloud app.
        
-     ![access policy activity source](./media/access-policy-activity-source.png)
+       ![access policy activity source](./media/access-policy-activity-source.png)
 
 6. Under **Actions**, select one of the following: 
 
-        - **Allow**: Set this action to explicitly allow access according to the policy filters you set.
+    - **Allow**: Set this action to explicitly allow access according to the policy filters you set.
 
-        - **Block**: Set this action to explicitly block access according to the policy filters you set. 
+    - **Block**: Set this action to explicitly block access according to the policy filters you set. 
 
-        - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
+    - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
          ![access policy actions](./media/access-policy-actions.png)
 
