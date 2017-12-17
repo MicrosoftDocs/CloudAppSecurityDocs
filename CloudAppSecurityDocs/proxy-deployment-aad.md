@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -86,7 +86,7 @@ Follow these steps to configure Azure AD apps to be controlled by the Cloud App 
 
         ![Device identification](./media/device-identification.png)
  
-       After the certificate is uploaded, you can create session policies based on **Device tag** equals or not equals, **Valid client certificate**.
+       After the certificate is uploaded, you can create access policies and session policies based on **Device tag** equals or not equals, **Valid client certificate**.
  
       > [!NOTE]
       >A certificate will only be requested from a user if the session matches a policy that uses the valid client certificate filter. 
@@ -107,7 +107,7 @@ To verify that the activity is properly captured, click on a single sign-on log 
  ![test user agent tag](./media/domain-joined.png)
 
 
-You are now ready to create [session policies](session-policy-aad.md) to control your proxy apps.
+You are now ready to create [access policies](access-policy-aad.md) and [session policies](session-policy-aad.md) to control your proxy apps.
 
 
 
