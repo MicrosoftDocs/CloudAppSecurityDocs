@@ -48,7 +48,7 @@ After a user is routed to the Cloud App Security proxy, their app access and ses
 
 -	**Monitor low-trust user sessions**: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future. 
 
-- **Block access**: You can completely block access to specific apps for users coming from users coming from unmanaged devices or from non-corporate networks.
+- **Block access**: You can completely block access to specific apps for users coming from unmanaged devices or from non-corporate networks.
 
 
 ### How session control works
@@ -88,13 +88,12 @@ The proxy device identification mechanism can request authentication from releva
 The proxy currently supports apps that are configured with SAML single sign on in Azure AD. 
 
 > [!NOTE]
-> The proxy also supports apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
+> - The proxy also supports apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
+> - Office 365 applications are not configured with SAML so they are not currently supported.
 
 In addition, session control is not automatically available for all apps. The Cloud App Security team tested many popular apps with session control. Other apps may require an onboarding process that will be done with the customer.
 In terms of clients, session control is available for any browser on any major platform. However, mobile apps and desktop apps are not supported by session control. 
 
-> [!NOTE]
-> Office 365 applications are not configured with SAML so they are not currently supported.
 
 
 ## See Also  
