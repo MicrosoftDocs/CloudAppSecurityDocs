@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,10 @@ ms.suite: ems
 > [!NOTE]
 > This is a preview feature.
 
-Cloud App Security access policies enable real-time monitoring and control over access to cloud apps. You can monitor and control access based on user, location, device and app. For example, you can decide to block access from unmanaged devices, or from specific locations.
+Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device and app. You can create access policies for any device, including devices that are not domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by leveraging existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
+
+> [!NOTE]
+> Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities. 
 
 ## Prerequisites to using access policies
 
@@ -40,6 +43,8 @@ Cloud App Security access policies enable real-time monitoring and control over 
 - The relevant apps should be [deployed with proxy](proxy-deployment-aad.md)
 - An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to the Cloud App Security proxy, as described below.
 
+> [!NOTE]
+> - Access policies also support apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
 
 ## Create an Azure AD conditional access policy
 
@@ -77,7 +82,7 @@ To create a new access policy, follow this procedure:
 
    - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native client** and should be tested against your mobile and desktop apps for each cloud app.
   
-   ![native client support](./media/user-agent-tag.png)
+       ![native client support](./media/user-agent-tag.png)
 
 5. Under **Actions**, select one of the following: 
 
