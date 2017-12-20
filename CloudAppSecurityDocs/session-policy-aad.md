@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ ms.suite: ems
 > [!NOTE]
 > This is a preview feature.
 
-Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of allowing or blocking access completely, with session control you can allow access while monitoring the session and/or limit specific session activities. 
+Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities. 
 
 For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Session policies enable you to set these user-session controls. 
 
@@ -42,6 +42,8 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 - The relevant apps should be [deployed with proxy](proxy-deployment-aad.md)
 - An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to the Cloud App Security proxy, as described below.
 
+> [!NOTE]
+> - Session policies also support apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
 
 ## Create an Azure AD conditional access policy
 
