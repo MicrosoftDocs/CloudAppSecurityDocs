@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/17/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -130,35 +130,43 @@ Learn more about [Azure Information Protection](https://docs.microsoft.com/en-us
 
 Your organization must have Azure Rights Management licensed and activated to integrate between Cloud App Security and Azure RMS. These two separate steps can be found in [Activating Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service).
 
-Cloud App Security currently supports Native protection for the following file types:
+Cloud App Security currently supports apply Azure Information Protection classification labels for the following file types:
 
 - Word: docm, docx, dotm, dotx
 - Excel: xlam, xlsm, xlsx, xltx
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - PDF and image files will be available in future versions 
 
-This feature is currently available for files that are stored in SharePoint Online and OneDrive for Business. More cloud apps will be supported in future versions.
+This feature is currently available for files that are stored in Box, SharePoint Online and OneDrive for Business. More cloud apps will be supported in future versions.
 
-After Cloud App Security is connected to your Office 365 service, you will be able to use the Cloud App Security RMS integration features that enable you to protect documents with RMS directly in the Cloud App Security portal, as follows:
+After Cloud App Security is connected to the cloud app, you will be able to use the Cloud App Security Azure Information Protection integration features that enable you to apply Azure Information Protection labels (with or without protection) directly in the Cloud App Security portal, by adding them directly to files or by configuring a file policy to apply classification labels automatically as a governance action.
 
-1. From the **Files** page, select the file you want to protect and then click the three dots at the end of the file's row and choose **Protect**. 
+### Applying labels directly to files
+
+1. From the **Files** page, select the file you want to protect and then click the three dots at the end of the file's row and choose **Apply classification label**. 
 ![protect app](./media/protect-app.png)
 >[!NOTE]
 >Azure Information Protection protects files with a maximum size of 50 MB. 
 
-2. You are asked to choose one of your organization's classification labels to use to protect the file, and click **Protect**. 
+2. You are asked to choose one of your organization's classification labels to apply to the file, and click **Apply**. 
 ![protection classification label](./media/protect-template.png)
-3. After you choose a classification label and click protect, Cloud App Security will apply the classification label and protect the original file.
+
+3. After you choose a classification label and click apply, Cloud App Security will apply the classification label to the original file.
 > [!NOTE]
 > 	It is recommended to apply company-wide RMS classification labels on files, so all users in the organization are able to access these files, including the original owner of the file. 
 > The owner of the file, the sharing policy of the file and the list of users who already have access to it do not change when the file becomes protected.
 
-4. If users want to access the protected file, they have to have the RMS sharing app installed on their device. For more information, see the [Technical overview and protection details for the Microsoft Rights Management sharing application](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical).
-
-5. You can revert this action at any time in the **Governance log** by clicking the **Revert** button at the end of the row of the previously taken Protect action. 
+5. You can also remove classification labels by choosing the **Remove classification label** option. 
 
 
 For more information about how Cloud App Security and Azure Information Protection work together, see [Protect data against user mistakes](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
+
+### Policy automatic labeling
+
+You can automatically apply classification labels to files by creating a file policy and setting **Apply classification label** as the governance action.
+
+Follow these instructions to create the file policy:
+
 
  
 ## Related Videos  
