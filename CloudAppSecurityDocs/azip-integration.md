@@ -112,7 +112,7 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 For more information about how Cloud App Security and Azure Information Protection work together, see [Protect data against user mistakes](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
 
-### Automatically label files
+### Automatically label files (preview)
 
 You can automatically apply classification labels to files by creating a file policy and setting **Apply classification label** as the governance action.
 
