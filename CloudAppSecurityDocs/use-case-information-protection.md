@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -48,16 +48,16 @@ This strong level of protection travels with the file - if you send the file, co
 A user in your organization saves confidential customer information files to Box and sets it to be shared with everyone in the organization. The user doesn't realize that in addition to their immediate team, the entire support staff has access to that Box account, including vendors, partners and visitors who occasionally stop into the office. Any person with access to your organization's Box account now has access to that information. Not only can that be dangerous for your organization, it can be against PII regulations in many countries, causing potential legal issues.
 
 ## The solution
-Use Cloud App Security with Azure Information Protection to embed classification and protection information for persistent protection that follows your data—ensuring it remains protected regardless of where it’s stored or who it’s shared with. This also enables you to share data safely with coworkers as well as your customers and partners. Define who can access data and what they can do with it—such as allowing users to view and edit files but not print or forward, in addition to other [governance actions](governance-actions.md) supported by Cloud App Security, such as remove collaborators and remove sharing abilities.
+Use Cloud App Security with Azure Information Protection to embed classification and protection information for persistent protection that follows your data—ensuring it remains protected regardless of where it’s stored or who it’s shared with. This also enables you to share data safely with coworkers as well as your customers and partners. Define who can access data and what they can do with it -- such as allowing users to view and edit files but not print or forward -- in addition to other [governance actions](governance-actions.md) supported by Cloud App Security, such as remove collaborators and remove sharing abilities.
 
 ## Prerequisites
 
-- Enable Cloud App Security and Azure Information Protection for your tenant
+- [Enable Cloud App Security and Azure Information Protection](azip-integration.md) for your tenant.
 - [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Cloud App Security.
 
 ## Setting up data protection
 
-Let's set up a policy that looks for credit card numbers in files stored in your Box account, and when they are found, .
+Let's set up a policy that looks for credit card numbers in files stored in your Box account, and when they are found, automatically apply an Azure Information Protection label and then control what happens to all files with that label.
 
 1. Start protecting the data you store in Box by setting up a policy that will encrypt any sensitive data stored in Box:
 
