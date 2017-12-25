@@ -95,18 +95,20 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 ### Apply labels directly to files
 
-1. From the **Files** page, select the file you want to protect and then click the three dots at the end of the file's row and choose **Apply classification label**. 
-![protect app](./media/protect-app.png)
->[!NOTE]
->Azure Information Protection protects files with a maximum size of 50 MB. 
+1. From the **Files** page, select the file you want to protect and then click the three dots at the end of the file's row and choose **Apply classification label**.
+
+ ![protect app](./media/protect-app.png)
+  
+  >[!NOTE]
+  >Azure Information Protection protects files with a maximum size of 50 MB. 
 
 2. You are asked to choose one of your organization's classification labels to apply to the file, and click **Apply**. 
 ![protection classification label](./media/protect-template.png)
 
 3. After you choose a classification label and click apply, Cloud App Security will apply the classification label to the original file.
-> [!NOTE]
-> 	It is recommended to apply company-wide RMS classification labels on files, so all users in the organization are able to access these files, including the original owner of the file. 
-> The owner of the file, the sharing policy of the file and the list of users who already have access to it do not change when the file becomes protected.
+ > [!NOTE]
+ > 	It is recommended to apply company-wide RMS classification labels on files, so all users in the organization are able to access these files, including the original owner of the file. 
+ > The owner of the file, the sharing policy of the file and the list of users who already have access to it do not change when the file becomes protected.
 
 5. You can also remove classification labels by choosing the **Remove classification label** option. 
 
