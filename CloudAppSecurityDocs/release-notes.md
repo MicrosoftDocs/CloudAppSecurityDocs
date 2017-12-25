@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 12/25/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,14 @@ ms.suite: ems
 ---
 
 # What's new with Microsoft Cloud App Security
+
+## Cloud App Security release 113
+Released December 25, 2017
+
+-	We are excited to announce that Cloud App Security now supports deepened integration with Azure Information Protection. This public preview feature enables you to scan and classify files in cloud apps, and automatically apply Azure Information protection labels for protection. This feature is available for Box, SharePoint and OneDrive. For more information see [Azure Information Protection integration](azip-integration.md).
+
+-	Cloud Discovery log parsers now support for generic formats: LEEF, CEF and WC3.
+
 
 ## Cloud App Security release 112
 Released December 10, 2017
