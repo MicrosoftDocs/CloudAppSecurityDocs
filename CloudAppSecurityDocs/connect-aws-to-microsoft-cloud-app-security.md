@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,20 +43,12 @@ This section provides instructions for connecting Cloud App Security to your exi
 
      ![create user in AWS](./media/aws-create-user.png "Create user in AWS")
 
-5. In the **Permissions** step, select **Attach existing policies directly** and then click **Create policy**.
+5. Click on the JSON tab:
 
-   ![Attach user in AWS](./media/aws-attach-user-policy.png "Attach user policy in AWS")
+     ![AWS JSON](./media/aws-json.png "AWS JSON tab")
 
-6.  Under **Create Policy** select **Create Your Own Policy**.
- 
-    ![Create your own policy in AWS](./media/aws-create-own-policy.png "Create policy in AWS")
- 
-7.  Under **Review Policy**,  provide a **Policy Name**, for example CloudAppSecurityPolicy.
+6. Paste the following script into the provided area:
 
-    ![Review policy in AWS](./media/aws-review-policy.png "Review policy in AWS")
-
-8. Then paste the following script into the **Policy Document** field and click **Create policy**:
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -78,7 +70,15 @@ This section provides instructions for connecting Cloud App Security to your exi
      }  
   
     ```  
-  
+
+     ![AWS code](./media/aws-code.png "AWS code")
+    
+6. Click **Review policy**.
+
+7. Provide a **Name** and click **Create policy**.
+
+     ![AWS name policy](./media/aws-create-policy.png "AWS create policy")
+
 9. Back in the **Add user** screen, refresh the list if necessary, and select the user you created, and click **Next Review**.
 
    ![Review user policy in AWS](./media/aws-review-user.png "Review user in AWS")
