@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/27/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,6 @@ ms.suite: ems
 
 # Connect G Suite to Microsoft Cloud App Security
 This section provides instructions for connecting Cloud App Security to your existing G Suite account using the connector APIs.
-
   
   
 ## Configure G Suite  
@@ -129,6 +128,8 @@ This section provides instructions for connecting Cloud App Security to your exi
     
        ![Edit Google Drive](./media/google15.png "google15")  
 
+20. Click **Save changes**.
+
 20. Go back to the **Enabled APIs** list. Click **Google Apps Marketplace SDK**. 
       
 21. Select the **Configuration** tab. 
@@ -143,7 +144,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   Configure the four required images under **Application icons**.  
   
-         The images can be found at:  [https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644)  
+         The images can be found at:  [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)  
   
     -   Fill in the following **Support URLs**:  
   
