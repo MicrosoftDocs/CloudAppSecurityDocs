@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -33,6 +33,11 @@ In the Cloud App Security portal, click on Alerts.
 
 
 ![Alert menu](./media/alert-menu.png)
+
+After you look at an alert, if it's not interesting, you can **Dismiss** it. You can enter a comment to explain why you dismissed the alert and you can **Send feedback to the Cloud App Security team**. This feedback is reviewed by our security research team to constantly improve the alerting mechanism. 
+
+If you investigate the alert and mitigate the risk, you can then **Resolve** the alert. The alert will no longer show up in the alerts table. If you started investigating an issue but you want to make sure you remember to continue, you can **Mark as unread**. You can also **Adjust the policy** that matched the alert in order to imrpove future alert matches. Resolving an alert also gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
+
 
 
 The following alerts types will be displayed. 

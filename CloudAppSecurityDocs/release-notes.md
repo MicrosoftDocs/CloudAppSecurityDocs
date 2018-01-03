@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Cloud App Security release notes & versions | Microsoft Docs
+title: What's  new with Cloud App Security| Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 12/25/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,114 @@ ms.suite: ems
 
 ---
 
-# Release notes
+# What's new with Microsoft Cloud App Security
+
+## Cloud App Security release 113
+Released December 25, 2017
+
+-	We are excited to announce that Cloud App Security now supports deepened integration with Azure Information Protection. This public preview feature enables you to scan and classify files in cloud apps, and automatically apply Azure Information protection labels for protection. This feature is available for Box, SharePoint and OneDrive. For more information see [Azure Information Protection integration](azip-integration.md).
+
+-	Cloud Discovery log parsers now support for generic formats: LEEF, CEF and WC3.
+
+
+## Cloud App Security release 112
+Released December 10, 2017
+
+-	You can now access the relevant insight drawer by clicking on a username or IP address in the Activity log. 
+-	When investigating activities you can now easily view all activities within the same time period from within the insight drawer by clicking on the clock icon, which enables you to view all activities performed within 48 hours of the activity you are viewing.
+-	Improvements were made to the Cloud Discovery log parser for Juniper SRX.
+-	For activities monitored by the proxy, the **Activity object** was expanded to include information relevant to DLP scans, and matched policies were expanded to include DLP violations if they exist.
+
+
+## Cloud App Security release 111
+Released November 26, 2017
+
+-	Discovery policies now support app tags as a condition and as a governance action. This enables you to automatically tag newly discovered apps with custom tags such as **Trending apps**. You can also use the app tag as a filter, for example “Alert me when an app in the ‘Watchlist’ has more than 100 users in a single day”.
+
+-	The **Time** filter was improved to make it more user friendly.
+
+-	Content inspection now enables you to distinguish between content, metadata and filename, enabling you to select which of these you want to inspect.
+
+-	A new governance action was added for G Suite. You can now **Reduce public access** to shared files. This enables you to set Publicly available files to be available only with a shared link.
+
+-	All OKTA log on activities to other applications will now show up in Cloud App Security as originating from OKTA. You can view and filter based on the target application to which the login was performed in the activity’s **Activity objects** field.
+
+
+## Cloud App Security release 110
+Released November 12, 2017
+ 
+-	Now generally available: We are starting to roll out a new deployment mode for the log collector. In addition to the current virtual-appliance based deployment, the new Docker (container) based log collector can be installed as a package on [Ubuntu machines](discovery-docker.md) both on-premises and in Azure. When using the Docker, the hosting machine is owned by the customer, who can freely patch and monitor it.
+-	Using the new blue question mark in the corner, you can now access the relevant Cloud App Security documentation page on docs.microsoft.com from within the pages of the portal. Each link is context-sensitive, taking you to the information you need based on the page you’re on.
+-	You can now send feedback from every page of the Cloud App Security portal. This enables you to report bugs, request new features and share your experience directly with the Cloud App Security team.
+-	Improvements were made to the Cloud discovery ability to recognize subdomains for deep-dive investigations into your organization’s cloud usage. For more information, see [Working with discovered apps](discovered-apps.md).
+
+## Cloud App Security release 109
+Released October 29, 2017 
+
+- Microsoft Cloud App Security proxy feature roll out has started. The Microsoft Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to your cloud environment, and activities performed within it. For example:
+    -	Avoid data leaks by blocking downloads before they happen.
+    -	Set rules that force data stored in and downloaded from the cloud to be protected with encryption.
+    -	Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices.
+    -	Control access from non-corporate networks or risky IP addresses.
+  
+  For more information, see [Protect apps with proxy](proxy-intro-aad.md).
+
+-	We are gradually rolling out the ability to filter according to specific service activity names. This new Activity Type filter is more granular, to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the **Run command**, and now you can filter for specific EXO cmdlets. The activity name can also be seen in the Activity drawer under **Type (in app)**. This capability will eventually replace the Activity type filter.  
+
+-	Cloud discovery now supports Cisco ASA with FirePOWER. 
+
+-	Performance enhancements were made to the Discovery User and IP pages to improve user experience.
+
+
+## Cloud App Security releases 105, 106, 107, 108
+Released September/October 2017
+ 
+-	Cloud App Security now includes a data center located in the EU. In addition to our US data center, the EU data center will enable Cloud App Security customers to be in complete compliance with new and upcoming European standardization and certifications. 
+-	New filters were added to the **App connectors** page that provide you with simpler filtering and additional insight.
+-	Cloud discovery on log files that contain only destination IP information was improved.
+ 
+
+## Cloud App Security release 104 
+Released August 27, 2017
+
+-	You can now add IP ranges in bulk by creating a script using the **IP address ranges API**, which can be found from the Cloud App Security portal menu bar, by clicking the question mark and then **API documentation**. 
+-	Cloud Discovery now provides better visibility for blocked transactions, by presenting both the total transactions as well as the blocked transactions.
+-	You can now filter cloud applications based on whether they are certified with **ISO 27017**. This new Cloud App Catalog risk factor determines whether the application provider has this certification which establishes commonly accepted controls and guidelines for processing and protecting user information in a public cloud computing environment.
+- To enable you to prepare for GDPR compliance, we gathered the GDPR readiness statements from the cloud apps in the Cloud App Catalog. It doesn’t yet affect the app risk score, but provides a link for you to the app publisher’s GDPR readiness page, when provided. Microsoft has not verified this content and is not responsible for its validity.
+
+
+## Cloud App Security release 103 
+Released August 13, 2017
+
+- Cloud App Security added Azure Information Protection native protection support for the following Office files .docm,.docx,.dotm,.dotx,.xlam,.xlsb, .xlsm,.xlsx,.xltx, .xps,.potm,.potx, .ppsx,.ppsm,.pptm,.pptx,.thmx,.vsdx,.vsdm,.vssx,.vssm,.vstx,.vstm (in place of generic protection).
+
+- Any Azure Active Directory Compliance administrator will automatically be granted similar permissions in Cloud App Security, including the ability to read only and manage alerts, create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management. 
+
+- We extended the DLP violation context from 40 to 100 characters to help you better understand the context of the violation.
+
+- Detailed error messages to the Cloud Discovery Custom Log uploader to enable you to easily troubleshoot errors in log upload.
+
+- The Cloud Discovery block script was extended to support Zscaler format.
+
+- New Cloud App Catalog risk factor: data retention after account termination. This enables you to make sure that your data is completely removed after you terminate an account within a cloud app.
+
+
+## Cloud App Security release 102 
+Released July 30, 2017
+ 
+-	Because IP address information is crucial for almost all investigations, you can now view detailed information about IP addresses in the Activity Drawer. From within a specific activity, you can now click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity and a location map. This enables easy drill down, for example when investigating impossible travel alerts, you can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN or corporate to ease future investigation and policy creation. For more information see [IP address insights](activity-filters.md#ip-address-insights)
+
+-	In Cloud Discovery, you can now use [custom log formats](custom-log-parser.md) also for [automated log uploads](discovery-docker.md). This enables you to easily automate log upload from your SIEMs such as Splunk servers or any other unsupported format. 
+ 
+-	The new user investigation actions enable an added level of drill-down to user investigations. From the **Investigation** pages, you can now right click on an activity, user or account and apply one of the following new filters for advanced investigation and filtration: **View related activity**, **View related governance**, **View related alerts**, **View owned files**, **View files shared with this user**.
+
+-	The Cloud App Catalog now contains a new field for data retention after account termination. This risk factor enables you to make sure that your data is completely removed after you terminate an account within a cloud app.
+
+-	Cloud App Security now has enhanced visibility into activities regarding Salesforce objects such as leads, accounts, campaigns, opportunities, profiles and cases. For example, visibility into access of account pages enables you to configure a policy that alert you if a user views an unusually large number of account pages. This is available through the Salesforce App Connector, when you have enabled Salesforce Event Monitoring in Salesforce (part of Salesforce Shield).
+
+- Do not track is now available for private preview customers! You can now control which users’ activity data is processed. This enables you to set specific groups in Cloud App Security as “Do not track”. For example, you can now decide not to process any activity data for users located in Germany or any country that is not bound by a specific compliance law. This can be implemented across all apps in Cloud App Security, for a specific app or even for a specific subapp. In addition, this feature can be utilized to facilitate gradual roll out of Cloud App Security. For more information or to join the private preview for this feature, contact support or your account representative. 
+
+
 
 ## Cloud App Security release 100 
 Released July 3, 2017
@@ -191,7 +298,7 @@ Released March 20, 2017
 -	If you configured additional third-party DLP scanners, DLP scan status will now show the status of each connector independently to improve visibility.
 -	Cloud App Security now includes support for the Microsoft Teams activities that are supported in the Office 365 audit log. This feature is being rolled out gradually.
 -	For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
--	In the app drawer on the App Permissions tab you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
+-	In the app drawer on the **App Permissions** tab of Office 365 apps, you can now see the **Publisher** of each app. You can also use the Publisher as a filter for investigation of additional apps from the same publisher.
 -	Risky IP addresses now show up as an independent risk factor rather than weighted under the general **Location** risk factor. 
 -	When Azure Information Protection labels are disabled on a file, the disabled labels will appear as disabled in Cloud App Security. Deleted labels will not be displayed.
  

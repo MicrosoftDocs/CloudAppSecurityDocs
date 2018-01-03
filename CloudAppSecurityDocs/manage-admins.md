@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,7 +30,9 @@ ms.suite: ems
 
 Cloud App Security supports Role based access control. By default, the following Office 365 and Azure AD admin roles have access to Cloud App Security:
 
-- Global administrator and Security administrator: Admins will **Full access** will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions.
+- Global administrator and Security administrator: Admins with **Full access** will have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions.
+
+- Compliance administrator: Has read-only permissions and can manage alerts. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management. 
 
 - Security reader: Has read-only permissions and can manage alerts. The Security reader is restricted from performing the following:
       - Create policies or edit and change existing ones 
@@ -39,8 +41,8 @@ Cloud App Security supports Role based access control. By default, the following
       - Banning or approving third party apps
       - Accessing and viewing the IP address range settings page
       - Accessing and viewing any settings pages 
-      - Acccessing and viewing the Discovery settings 
-      - Accessing and vieweing the App connectors page
+      - Accessing and viewing the Discovery settings 
+      - Accessing and viewing the App connectors page
       - Accessing and viewing the Governance log 
       - Accessing and viewing the Manage snapshot reports page 
 

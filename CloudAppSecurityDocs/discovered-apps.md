@@ -59,6 +59,7 @@ In the **Discovered apps** page, under **Browse by category** select both **Clou
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
+
 ## Exclude entities  
 If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
   
@@ -96,6 +97,10 @@ To create a new continuous report:
 6.  Set the filters you want on the data, these can be **Organizational Units**, **IP address tags** or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
+
+> [!NOTE]
+> All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
+
 
 ## Deleting Cloud Discovery data  
 There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
