@@ -65,7 +65,22 @@ To create a custom app tag:
 
 ## Discovered app queries
 
-To make investigation even simpler, Cloud App Security provides you with Suggested queries and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your discovered apps by using the following optional suggested queries:
+To make investigation even simpler, you can now create custom queries and save them for later use. 
+
+1. In the **Discovered apps** page, use the filters as described above to drill down into your apps as necessary. 
+
+2. After you have achieved the desired results, click the **Save as** button in the top right corner of the filters. 
+
+3. In the **Save query** popup, name your query.
+
+ ![new query](./media/new-query.png)
+
+4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query. 
+
+ ![open query](./media/open-query.png)
+
+
+Cloud App Security also provides you with **Suggested queries** and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your discovered apps by using the following optional suggested queries:
 
  - Cloud apps that allow anonymous use - filters all your discovered apps to display only apps that are security risks because they don't require user authentication and allow users to upload data.
 
@@ -84,7 +99,7 @@ To make investigation even simpler, Cloud App Security provides you with Suggest
 ![query discovered apps](./media/queries-discovered-apps.png)
 
  
-In addition, you have the added ability to use the suggested queries as a starting point and modify them according to your needs and then save them as a new query to be used in the future. You can also create new queries from scratch. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
+In addition, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
 
 
 ## See also
