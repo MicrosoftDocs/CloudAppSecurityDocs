@@ -108,7 +108,22 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 ## Activity queries
 
-To make investigation even simpler, Cloud App Security provides you with **Suggested queries** and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your activities by using the following optional suggested queries:
+To make investigation even simpler, you can now create custom queries and save them for later use. 
+
+1. In the **Activity log** page, use the filters as described above to drill down into your apps as necessary. 
+
+2. After you have achieved the desired results, click the **Save as** button in the top right corner of the filters. 
+
+3. In the **Save query** popup, name your query.
+
+ ![new query](./media/new-activity-query.png)
+
+4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query. 
+
+ ![open query](./media/select-activity-query.png)
+
+
+Cloud App Security also provides you with **Suggested queries** and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your activities by using the following optional suggested queries:
 
  - Admin activities - filters all your activities to display only those activities that involved admins.
 
@@ -132,7 +147,7 @@ To make investigation even simpler, Cloud App Security provides you with **Sugge
 
 ![query activites](./media/queries-activity.png)
  
-In addition, you have the added ability to use the suggested queries as a starting point and modify them according to your needs and then save them as a new query to be used in the future. You can also create new queries from scratch. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
+In addition, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
 
 
 ## See Also  
