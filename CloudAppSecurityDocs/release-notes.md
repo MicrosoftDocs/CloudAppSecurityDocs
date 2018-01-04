@@ -33,7 +33,7 @@ Released January 7, 2018
 
 - Beginning in version 114, Cloud App Security is gradually rolling out the ability to create and save custom queries. Queries have been included in the **Activity log** and **Discovered apps** pages to provide you with the ability to save customized queries that you want to reuse in the future. In addition, **Suggested queries** have been added that provide out-of-the-box recommended avenues of investigation to filter your activities and discovered apps. The suggested queries include deep dives such as impersonation activities, administrator activities, risky non-compliant cloud storage apps, enterprise apps with weak encryption, and security risks. You have the added ability to use the suggested queries as a starting point and modify them according to your needs and then save them as a new query. For more information see [Activity filters and queries](activity-filters-queries.md) and [Discovered app filters and queries](discovered-app-queries.md).
  
-- You can now check the current Cloud App Security service status by going [status.cloudappsecurity.com](http://www.status.cloudappsecurity.com) or directly from within the portal by clicking on **Help**>**System status**. 
+- You can now check the current Cloud App Security service status by going [status.cloudappsecurity.com](https://status.cloudappsecurity.com) or directly from within the portal by clicking on **Help**>**System status**. 
  
 
 ## Cloud App Security release 113
