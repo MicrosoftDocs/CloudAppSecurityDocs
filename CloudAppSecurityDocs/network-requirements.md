@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2017
+ms.date: 1/4/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -75,6 +75,14 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 
 ## App connector access and external DLP integration
 
+
+### App connector
+
+For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. 
+
+> [!NOTE]
+>You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
+
 To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security to connect from these IP addresses:
 
 
@@ -84,14 +92,7 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-
-
-### App connector
-For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. 
-
-> [!NOTE]
->You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
-  
+ 
 
 ### DLP integration
 
