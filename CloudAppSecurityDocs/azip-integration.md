@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/25/2017
+ms.date: 1/11/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -60,7 +60,7 @@ Files that were labeled with protection outside of Cloud App Security cannot cur
 You are probably familiar with file classification labels in [Azure Information Protection](https://docs.microsoft.com/information-protection/). You can see the Azure Information Protection classification tags in Cloud App Security. As soon as you integrate Cloud App Security with Azure Information Protection, Cloud App Security scans files as follows:
 1. Cloud App Security retrieves the list of all the classification labels used in your tenant. This is performed every hour to keep the list up to date.
 2. Cloud App Security then scans the files for classification labels, as follows:
-    a. If you enabled automatic scan (see following), all new or modified files are added to the scan queue.
+    a. If you enabled automatic scan (see the following), all new or modified files are added to the scan queue and all existing files and repositories will be scanned, classified and protected.
     b. If you set a file policy (see the following) to search for classification labels, these files are added to the scan queue for classification labels.
 3. As noted above, these scans are for the classification labels discovered in the initial scan Cloud App Security performs to see which classification labels are used in your tenant. External labels, classification labels set by someone external to your tenant, are added to the list of classification labels. If you don't want to scan for these, select the **Only scan files for Azure Information Protection classification labels from this tenant** check box (see the following).
 4. After you enable Azure Information Protection on Cloud App Security, all new files that are added to Office 365 will be scanned for classification labels as well.
