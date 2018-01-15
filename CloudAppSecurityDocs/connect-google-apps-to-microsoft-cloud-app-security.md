@@ -120,7 +120,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   **Short Description & Long Description** (optional): Microsoft Cloud App Security provides you with visibility into cloud applications, helping you control, investigate, and govern cloud application use; secure corporate data; and detect suspicious activities for any cloud application.  
   
-    -   Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon**, click **Select** and drag and drop the 128x128 and 32x32 images to the popup screen.  
+    -   Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon**, click **Select** next to the 128x128 image and drag it to the popup screen. Click **Select** next to the 32x32 image and drag it to the popup screen.  
   
     -   Scroll down and in the **Drive Integration** section, type the following URL under **Open URL:**  
   
@@ -191,11 +191,10 @@ This section provides instructions for connecting Cloud App Security to your exi
            https://www.googleapis.com/auth/admin.directory.device.mobile  
   
            https://www.googleapis.com/auth/admin.directory.user  
-  
+
+    -   When G suite asks for visibility, select **My domain** (not public). 
     -   Click on **Save Changes**.  
   
-22. When G suite asks for visibility, select **My domain** (not public).
-
 22. Go to [admin.google.com](https://admin.google.com/) and then choose **Security**. 
    
       ![google security](./media/googlesec.png "google security")  
