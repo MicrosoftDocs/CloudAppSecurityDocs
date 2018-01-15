@@ -118,6 +118,6 @@ In order to connect ServiceNow with Cloud App Security, you must have admin-leve
 
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

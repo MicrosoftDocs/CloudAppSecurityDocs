@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/17/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -113,6 +113,6 @@ You are now ready to create [access policies](access-policy-aad.md) and [session
 
 ## See Also  
 [Working with the Cloud App Security proxy](proxy-intro-aad.md)   
-[For technical support, visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

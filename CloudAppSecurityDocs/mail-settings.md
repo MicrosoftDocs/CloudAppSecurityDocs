@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -127,7 +127,7 @@ Configure the following:
     
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

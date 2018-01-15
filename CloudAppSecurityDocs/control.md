@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -104,5 +104,5 @@ Imagine this scenario: you're considering buying a productivity tool, and you ar
 
 ## See also  
 To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
+
 Premier customers can also choose Cloud App Security directly from the [Premier Portal](https://premier.microsoft.com/).  
