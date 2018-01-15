@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 ## Configure G Suite  
   
-1.  As a G Suite Super Admin, log in to [https://cloud.google.com/console/project](https://cloud.google.com/console/project).  
+1.  As a G Suite Super Admin, log in to <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
   
 2.  Click **Create project** to start a new project.  
   
@@ -120,7 +120,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   **Short Description & Long Description** (optional): Microsoft Cloud App Security provides you with visibility into cloud applications, helping you control, investigate, and govern cloud application use; secure corporate data; and detect suspicious activities for any cloud application.  
   
-    -   Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon** drag and drop the 128x128 and 32x32 images.  
+    -   Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon**, click **Select** and drag and drop the 128x128 and 32x32 images to the popup screen.  
   
     -   Scroll down and in the **Drive Integration** section, type the following URL under **Open URL:**  
   
@@ -194,6 +194,8 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     -   Click on **Save Changes**.  
   
+22. When G suite asks for visibility, select **My domain** (not public).
+
 22. Go to [admin.google.com](https://admin.google.com/) and then choose **Security**. 
    
       ![google security](./media/googlesec.png "google security")  
