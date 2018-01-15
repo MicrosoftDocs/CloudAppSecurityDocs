@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -89,5 +89,5 @@ The following table provides a list of the types of alerts that can be triggered
 
 ## Next steps  
 For more information about investigating alerts, see [Investigate](investigate.md).  
-For technical support, please visit [the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 Premier customers can also choose Cloud App Security directly from the [Premier Portal.](https://premier.microsoft.com/)  

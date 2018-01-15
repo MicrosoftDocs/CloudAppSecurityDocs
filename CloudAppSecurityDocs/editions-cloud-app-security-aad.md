@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -54,6 +54,6 @@ The following is a comparison of the discovery capabilities in Microsoft Cloud A
 ## See Also  
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
+
 Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
 
