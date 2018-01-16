@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -101,5 +101,5 @@ You can use policies to define your users' behavior in the cloud. Use policies t
 ## See Also  
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
+
 Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -170,5 +170,5 @@ These settings help give you better control of features in the console. With IP 
 ## See Also
 
 Set policies [Control cloud apps with policies](control-cloud-apps-with-policies.md).    
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
+
 Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -161,5 +161,5 @@ Now that you have the policy in place, you're surprised to see that you get an a
 
 ## See also  
 To learn how to control your organization's cloud app, see [Control](control.md).   
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.  
+
 Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).  
