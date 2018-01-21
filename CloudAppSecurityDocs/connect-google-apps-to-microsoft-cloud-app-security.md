@@ -192,7 +192,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
            https://www.googleapis.com/auth/admin.directory.user  
 
-    -   When G suite asks for visibility, select **My domain** (not public). 
+    -   Under **Visibility**, select **My domain** (not public). 
     -   Click on **Save Changes**.  
   
 22. Go to [admin.google.com](https://admin.google.com/) and then choose **Security**. 

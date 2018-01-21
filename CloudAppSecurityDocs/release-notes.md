@@ -51,7 +51,7 @@ Released December 25, 2017
 
 -	We are excited to announce that Cloud App Security now supports deepened integration with Azure Information Protection. This public preview feature enables you to scan and classify files in cloud apps, and automatically apply Azure Information protection labels for protection. This feature is available for Box, SharePoint and OneDrive. For more information see [Azure Information Protection integration](azip-integration.md).
 
--	Cloud Discovery log parsers now support for generic formats: LEEF, CEF and WC3.
+-	Cloud Discovery log parsers now support for generic formats: LEEF, CEF and W3C.
 
 
 ## Cloud App Security release 112
