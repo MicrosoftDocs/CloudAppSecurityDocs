@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -270,6 +270,7 @@ Also, under **Allow connection to this ICAP Server from the following IP address
 ## Appendix B: Symantec Deployment Guide <a name="symantec"></a>
 
 The supported Symantec DLP versions are 11 and higher. 
+
 As noted above, you should deploy a detection server in the same Azure datacenter where your Cloud App Security tenant resides. The detection server syncs with the enforce server through a dedicated IPSec tunnel. 
  
 ### Detection server installation 
@@ -296,7 +297,9 @@ The detection server used by Cloud App Security is a standard Network Prevent fo
 
 ### Policy configuration
 Cloud App Security seamlessly supports all detection rule types included with Symantec DLP, so there is no need to alter existing rules. However, there is a configuration change that must be applied to all existing and new policies to enable full integration. This change is the addition of a specific response rule to all policies. 
+
 Add the configuration change to your Vontu:
+
 1.	Go to **Manage** > **Policies** > **Response Rules** and click **Add Response Rule**.
     
     ![add response rule](./media/icap-add-response-rule.png)
@@ -310,13 +313,23 @@ Add the configuration change to your Vontu:
     ![block http](./media/icap-block-http.png)
 
 Add the rule you created to any existing policies:
+
 1. In each Policy, switch to the **Response** tab.
-2. From the **Response rule** dropdown, slect the block response rule you created above.
+
+2. From the **Response rule** dropdown, select the block response rule you created above.
+
 3. Save the policy.
    
     ![disable trial mode](./media/icap-add-policy.png)
 
 This rule must be added to all existing policies.
 
+>[!NOTE]
+> If you use Symantec vontu to scan files from Dropbox, CAS will automatically display the file as originating from the following URL: http://misc/filename
+This placeholder url doesn’t actually lead anywhere but is used for logging purposes.
 
 
+## See Also  
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
