@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -64,7 +64,9 @@ Below is a list of the file filters that can be applied. Most filters support mu
 >**Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
 
 -   Access level – Sharing access level; public, external, internal or private.  For more information about External files, see [General Setup, Set up the portal](getting-started-with-cloud-app-security.md)
-Internal are any files within the Internal domains you set in [General setup](General-setup.md). External are any files saved in locations that are not within the internal domains you set. Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
+    - Internal are any files within the Internal domains you set in [General setup](General-setup.md). 
+    - External are any files saved in locations that are not within the internal domains you set. 
+    - Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
 
 > [!NOTE]
 >  Files shared into your connected storage apps by external users are handled as follows by Cloud App Security:

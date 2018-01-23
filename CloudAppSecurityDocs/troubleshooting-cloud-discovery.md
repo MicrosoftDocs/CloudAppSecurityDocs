@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,6 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 |ERROR|DESCRIPTION|RESOLUTION|
 |----|----|----|
 |Unsupported file type|The file uploaded is not a valid log file (for example, an image file).|Upload a **text**, **zip** or **gzip** file that was directly exported from your firewall or proxy.|
-|Internal error|An internal resource failure was detected|Click on **Retry** to re-run the task.|
 |The log format does not match|The log format you uploaded does not match the expected log format for this data source.|1. Verify that the log is not corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
 |Transactions are more than 90 days old|All transaction are more than 90 days old and therefore are being ignored.|Export a new log with recent events and re-upload it.|
 |No transactions to cataloged cloud apps|No transaction to any recognized cloud apps are found in the log.|Verify that the log contains outbound traffic information.|
