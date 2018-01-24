@@ -27,42 +27,43 @@ ms.suite: ems
 ---
 
 # File policies  
-File Policies allow you to enforce a wide range of automated processes leveraging the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly and many more use cases.  
+File Policies allow you to enforce a wide range of automated processes leveraging the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases.  <br></br>
+
 Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 
  
 **Supported file types** 
 
-Cloud App Security's built in DLP engines perform content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML and more.
+Cloud App Security's built in DLP engines perform content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
 
 The engine combines three aspects under each policy:  
   
 -   Content scan based on preset templates or custom expressions.  
   
--   Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context and additional customizable attributes.  
+-   Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context, and additional customizable attributes.  
   
 -   Automated actions for governance and remediation. For more information, see [Control](control.md).  
   
-Once enabled, the policy will continuously scan your cloud environment and identify files that match the content and context filters, and apply the requested automated actions. These policies will detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console generated reports.  
+Once enabled, the policy continuously scans your cloud environment and identify files that match the content and context filters, and apply the requested automated actions. These policies detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console generated reports.  
   
 The following are examples of file policies that can be created:  
   
--   Publicly shared files:  
+-   Publicly shared files: <br></br>
     Receive an alert about any file in your cloud that is publicly shared by selecting all files whose sharing level is public.  
   
--   Publicly shared filename contains the organization’s name:  
+-   Publicly shared filename contains the organization’s name: <br></br> 
     Receive an alert about any file that contains your organization’s name and is publicly shared. Select files with a filename containing the name of your organization and which are publicly shared.  
   
--   Sharing with external domains:  
+-   Sharing with external domains:  <br></br>
     Receive an alert about any file shared with accounts owned by specific external domains, for example, with a competitor’s domain. Select the external domain with which you want to limit sharing.  
   
--   Quarantine shared files not modified during the last period:  
+-   Quarantine shared files not modified during the last period:  <br></br>
     Receive an alert about shared files that no one modified recently, in order to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren’t modified during a specified date range. On G Suite,  you can choose to quarantine these files, using the ‘quarantine file’ checkbox on the policy creation page.  
   
--   Sharing with unauthorized users:  
-    Receive an alert about files being shared with unauthorized group of users in your organization. Select the users which whom sharing is forbidden.  
+-   Sharing with unauthorized users:  <br></br>
+    Receive an alert about files being shared with unauthorized group of users in your organization. Select the users for whom sharing is forbidden.  
   
--   Sensitive file extension:  
-    Receive an alert about files with specific extensions which are potentially highly-exposed. Select the specific extension (for example, crt for certificates) or filename and exclude those with private sharing level.  
+-   Sensitive file extension:  <br></br>
+    Receive an alert about files with specific extensions that are potentially highly exposed. Select the specific extension (for example, crt for certificates) or filename and exclude those with private sharing level.  
   
 To create a new file policy, follow this procedure:  
   
@@ -72,29 +73,30 @@ To create a new file policy, follow this procedure:
   
 3.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
   
-3. Give your policy a **Policy severity**. If you have set Cloud App Security to send you notifications on policy matches for a specific policy severity level, this will be used to determine whether this policy's matches will trigger a notification.
+3. Give your policy a **Policy severity**. If you have set Cloud App Security to send you notifications on policy matches for a specific policy severity level, this is used to determine whether this policy's matches trigger a notification.
 
 4.  Within **Category**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type.  The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.  
   
-5.  To set which discovered apps will trigger this policy, **Create a filter for the files this policy will act on**. Narrow down the policy filters until you reach the most accurate set of files you wish to act upon. Be as restrictive as possible in order to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the “External” filter etc.  
+5.  To set which discovered apps trigger this policy, **Create a filter for the files this policy will act on**. Narrow down the policy filters until you reach the most accurate set of files you wish to act upon. Be as restrictive as possible to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the “External” filter etc.  
 > [!NOTE] 
-> When using the policy filters, **Contains**  will search only for full words – separated by comas, dots, spaces or underscores. For example if you search for **malware** or **virus**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe. If you search for **malware.exe** then you will find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”. **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt.  
-6.   Under the first **Apply to** filter, select **selected folders** or **all files excluding selected folders** for Box, SharePoint, Dropbox, OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You will be redirected to log on to the cloud app, and then add the relevant folders.  
+> When using the policy filters, **Contains**  searches only for full words – separated by comas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for **malware.exe**, then you find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you find only files that contain exactly “malware.exe”. **Equals** searches only for the complete string, for example if you search for **malware.exe** it finds malware.exe but not malware.exe.txt.  
+6.   Under the first **Apply to** filter, select **selected folders** or **all files excluding selected folders** for Box, SharePoint, Dropbox, OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You are redirected to log on to the cloud app, and then add the relevant folders.  
 
 6. Under the second **Apply to** filter, select either **all file owners**, **file owners from selected user groups** or **all file owners excluding selected groups** and then select the relevant user groups to determine which users and groups should be included in the policy.
   
-7.  Select the **Content inspection method**. The built-in DLP allows you to filter files by their content. In order to scan files  for content, next select **Built-in DLP**. Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions, either as a substring or a [regular expression](working-with-the-regex-engine.md) of your own.  
-    In addition, you can specify a regular expression to exclude a file from the results. This is highly useful if you have an inner classification keyword standard that you want to exclude from the policy.  
-    You can decide set the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.  
-    When content is matched against the selected expression, the violation text will be replaced with "X" characters. By default, violations are completely masked and shown in their context displaying 100 characters before and after the violation. Numbers in the context of the expression are replaced with “#” characters and are never stored within Cloud App Security. You can select the option to **Unmask the last 4 characters of a violation** to unmask the last 4 characters of the violation itself. It is necessary to set which data types the regular expression will search: content, metadata and/or file name. By default it will search the content and the metadata. Note that you must select at least one data type to search or the regular expression cannot function and the policy cannot be created. 
+7.  Select the **Content inspection method**. The built-in DLP allows you to filter files by their content. In order to scan files  for content, next select **Built-in DLP**. Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions, either as a substring or a [regular expression](working-with-the-regex-engine.md) of your own.  <br></br>
+
+    In addition, you can specify a regular expression to exclude a file from the results. This is highly useful if you have an inner classification keyword standard that you want to exclude from the policy. <br></br> 
+    You can decide set the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.  <br></br>
+    When content is matched against the selected expression, the violation text is replaced with "X" characters. By default, violations are masked and shown in their context displaying 100 characters before and after the violation. Numbers in the context of the expression are replaced with “#” characters and are never stored within Cloud App Security. You can select the option to **Unmask the last four characters of a violation** to unmask the last four characters of the violation itself. It is necessary to set which data types the regular expression searches: content, metadata and/or file name. By default it searches the content and the metadata. You must select at least one data type to search or the regular expression cannot function and the policy cannot be created. 
   
 8.  Choose the **Governance** actions you want Cloud App Security to take when a match is detected.  
   
-9. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters or change the automated actions. The policy is automatically enabled upon creation and will start scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It is recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button in the Filters section.  
+9. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. The policy is automatically enabled upon creation and starts scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It is recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button in the Filters section.  
   
    ![file policy edit and preview results](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
   
-10. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the Matching now files for the policy. Click the **History** tab to see a history back to up to 6 months of files that matched the policy.     
+10. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the Matching now files for the policy. Click the **History** tab to see a history back to up to six months of files that matched the policy.     
   
 ## File policy reference  
 This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy. 
@@ -103,11 +105,11 @@ A **File policy** is an API-based policy that enables you to control your organi
   
 Each policy is composed of the following parts:  
   
--   File filters – Enable you to create very granular conditions based on metadata.  
+-   File filters – Enable you to create granular conditions based on metadata.  
   
 -   Content inspection – Enable you to narrow down the policy, based on DLP engine results. You can include a custom expression or a preset expression. Exclusions can be set and you can choose the number of matches. You can also use anonymization to mask the username. 
   
--   Actions – The policy provides a set of governance actions that can be automatically applied when violations are found.  These are divided into collaboration actions, security actions and investigation actions.
+-   Actions – The policy provides a set of governance actions that can be automatically applied when violations are found.  These are divided into collaboration actions, security actions, and investigation actions.
 
 -   Extensions  
    
