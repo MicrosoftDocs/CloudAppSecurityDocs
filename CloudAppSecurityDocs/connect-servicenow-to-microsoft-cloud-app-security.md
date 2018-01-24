@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password.
 
  > [!NOTE]  
->  Cloud App Security supports ServiceNow versions of Eureka, Fiji,  Geneva, Helsinki and Istanbul. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  For more information refer to the [ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+>  Cloud App Security supports ServiceNow versions of Eureka, Fiji,  Geneva, Helsinki, and Istanbul. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  For more information, refer to the [ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
   
 ## How to connect ServiceNow to Cloud App Security using OAuth
   
@@ -52,13 +52,13 @@ For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) 
 
    ![ServiceNow OAuth type](./media/servicenow-oauth-app-type.png)
 
-5. Under **Application Registries New record** fill in the following:
+5. Under **Application Registries New record** fill in the following fields:
     
     - **Name** field, name the new OAuth profile, for example, CloudAppSecurity. 
     
-    - The **Client ID** will be generated automatically. Copy this ID, you will need to paste it into Cloud App Security to complete connection.
+    - The **Client ID** is generated automatically. Copy this ID, you need to paste it into Cloud App Security to complete connection.
     
-    - In the **Client Secret** field, enter a string. If left empty, a random Secret will be generated automatically. Copy and save it for later. 
+    - In the **Client Secret** field, enter a string. If left empty, a random Secret is generated automatically. Copy and save it for later. 
     
     - Increase the **Access Token Lifespan** to at least 3,600.
     
@@ -72,7 +72,7 @@ For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) 
   
      ![connect servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-8.  In the popup, add your ServiceNow user ID, password, instance URL, Client ID and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table - it will appear next to your User ID.
+8.  In the popup, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table - it appears next to your User ID.
 
     ![ServiceNow user ID](./media/servicenow-userid.png)
   
@@ -104,7 +104,7 @@ In order to connect ServiceNow with Cloud App Security, you must have admin-leve
 
     ![connect servicenow](./media/connect-servicenow.png "connect servicenow")   
 
-6.  In the ServiceNow settings page, on the API tab, add your ServiceNow user ID, password and instance URL in the appropriate boxes.   
+6.  In the ServiceNow settings page, on the API tab, add your ServiceNow user ID, password, and instance URL in the appropriate boxes.   
 
 7.  Click **Connect**.   
 
@@ -112,7 +112,7 @@ In order to connect ServiceNow with Cloud App Security, you must have admin-leve
 
 8.  Make sure the connection succeeded by clicking **Test API**.   
   
-   Testing may take a couple of minutes. After receiving a success notice, click **Close**.   
+   Testing may take a couple of minutes. After receiving a success notice, click **Close**.    
  After connecting ServiceNow, you will receive events for 60 days prior to connection. 
 
 

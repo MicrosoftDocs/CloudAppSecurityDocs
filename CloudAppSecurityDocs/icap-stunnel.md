@@ -38,11 +38,11 @@ This guide provides the steps necessary for configuring the ICAP connection in C
 >This feature is in public preview.
 
 ## Architecture
-Cloud App Security scans your cloud environment and based on your file policy configuration decides whether to scan the file using the internal DLP engine or the external DLP. If external DLP scan is applied, the file is sent over the secure tunnel to the customer environment where it is relayed to the ICAP appliance for the DLP verdict: allowed/blocked. Responses are sent back to Cloud App Security over the stunnel where it is used by the policy to determine subsequent actions such as notifications, quarantine and sharing control.
+Cloud App Security scans your cloud environment and based on your file policy configuration decides whether to scan the file using the internal DLP engine or the external DLP. If external DLP scan is applied, the file is sent over the secure tunnel to the customer environment where it is relayed to the ICAP appliance for the DLP verdict: allowed/blocked. Responses are sent back to Cloud App Security over the stunnel where it is used by the policy to determine subsequent actions such as notifications, quarantine, and sharing control.
 
 ![Stunnel architecture](./media/icap-architecture-stunnel.png)
 
-Since Cloud App Security runs in Azure, a deployment in Azure will yield improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel must be deployed together on the same network to make sure the traffic is encrypted.
+Since Cloud App Security runs in Azure, a deployment in Azure yields improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel must be deployed together on the same network to make sure the traffic is encrypted.
 
 ## Prerequisites
 In order for Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to the external IP addresses used by Cloud App Security with a dynamic source port number. 
@@ -57,13 +57,13 @@ In order for Cloud App Security to send data through your stunnel to your ICAP s
 
 ## STEP 1:  Set up ICAP server
 
-Set up an ICAP server, taking note of the port number and make sure that you set **Mode** to **Blocking**. Blocking mode sets the ICAP server to relay the classification verdict back to Cloud App Security.
+Set up an ICAP server, taking note of the port number, and make sure that you set **Mode** to **Blocking**. Blocking mode sets the ICAP server to relay the classification verdict back to Cloud App Security.
 
 Refer to your External DLP product documentation for instructions on how to accomplish this. As an example, see [Appendix A: Forcepoint ICAP server setup](#forcepoint) and [Appendix B: Symantec Deployment Guide](#symantec).
 
 ## STEP 2:  Set up your stunnel server 
 
-In this step you will set up the stunnel connected to your ICAP server. 
+In this step, you set up the stunnel connected to your ICAP server. 
 
 >[!NOTE]
 > While highly recommended, this step is optional and can be skipped on test workloads. 
@@ -81,7 +81,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 1. [Download the latest Windows Server installation](https://www.stunnel.org/downloads.html) (this should work on any recent Windows Server edition).
 (default installation)
 
-2. During installation, do not create a new self-signed certificate, you will create a certificate in a later step.
+2. During installation, do not create a new self-signed certificate, you create a certificate in a later step.
 
 3. Click **Start server after installation**.
 
@@ -135,7 +135,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 The following example is based on an Ubuntu server installation, when signed in as root user - for other servers use parallel commands. 
 
-On the prepared server, download and install the latest version of stunnel by running the following command on your Ubuntu server which will install both stunnel and OpenSSL:
+On the prepared server, download and install the latest version of stunnel by running the following command on your Ubuntu server that will install both stunnel and OpenSSL:
 
     apt-get update
     apt-get install openssl -y
@@ -241,12 +241,12 @@ If the process is still not running, refer to the [stunnel documentation](https:
    > [!NOTE]
    > It is highly recommended to check the **Use secure ICAP** box to set up an encrypted stunnel gateway. If, for testing purposes or if you don't have an stunnel server, you can uncheck this to integrate directly with your DLP server. 
 
-5. In the **Server configuration** screen, provide the **IP address** and **Port** of the stunnel server that you set up in Step 2. For load balancing purposes you can configure the **IP address** and **Port** of an additional server. The provided IP addresses should be the external static IP addresses of your servers.
+5. In the **Server configuration** screen, provide the **IP address** and **Port** of the stunnel server that you set up in Step 2. For load balancing purposes, you can configure the **IP address** and **Port** of an additional server. The provided IP addresses should be the external static IP addresses of your servers.
 
    ![Cloud App Security ICAP connection](./media/icap-wizard2.png)
-6. Click **Next**. Cloud App Security will test connectivity to the server you configured. If you receive an error, review the instructions and network settings. After it is successfully connected, you can click **Quit**.
+6. Click **Next**. Cloud App Security tests connectivity to the server you configured. If you receive an error, review the instructions and network settings. After it is successfully connected, you can click **Quit**.
 
-7. Now, to direct traffic to this external DLP server, when you create a **File policy**, under **Content inspection method**, select the connection you just created. Read more about [creating a File policy](data-protection-policies.md).
+7. Now, to direct traffic to this external DLP server, when you create a **File policy**, under **Content inspection method**, select the connection you created. Read more about [creating a File policy](data-protection-policies.md).
 
 
 ## Appendix A: ForcePoint ICAP server setup <a name="forcepoint"></a>
@@ -308,7 +308,7 @@ Add the configuration change to your Vontu:
 
     ![automated response](./media/icap-automated-response.png)
 
-3. Type a rule name, for example, **Block HTTP/HTTPS**. Under **Actions** select **Block HTTP/HTTPS** and click **Save**.
+3. Type a rule name, for example, **Block HTTP/HTTPS**. Under **Actions**, select **Block HTTP/HTTPS** and click **Save**.
 
     ![block http](./media/icap-block-http.png)
 
@@ -316,7 +316,7 @@ Add the rule you created to any existing policies:
 
 1. In each Policy, switch to the **Response** tab.
 
-2. From the **Response rule** dropdown, select the block response rule you created above.
+2. From the **Response rule** dropdown, select the block response rule you created earlier.
 
 3. Save the policy.
    
@@ -325,7 +325,7 @@ Add the rule you created to any existing policies:
 This rule must be added to all existing policies.
 
 >[!NOTE]
-> If you use Symantec vontu to scan files from Dropbox, CAS will automatically display the file as originating from the following URL: http://misc/filename
+> If you use Symantec vontu to scan files from Dropbox, CAS automatically displays the file as originating from the following URL: http://misc/filename
 This placeholder url doesn’t actually lead anywhere but is used for logging purposes.
 
 

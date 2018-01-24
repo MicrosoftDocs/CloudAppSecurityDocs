@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,12 +32,34 @@ ms.suite: ems
 # Anomaly detection policy
 This article provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.  
 
-After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The anomaly detection policy page allows you to configure and customize which risk factor families are considered in the risk scoring process. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
+After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
 
 Cloud App Security has an initial learning period of seven days during which it does not flag any new users, activity, devices, or locations as anomalous. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. 
-Use the sensitivity slider in the policy to set the minimum risk score from which alerts are triggered. It is recommended that when you create an anomaly policy, use the default sensitivity threshold for a week, before you change it in accordance with the number of alerts you received, Cloud App Security sends you more or fewer alerts for various risk scores when you change the sensitivity.
-  
-![sensitivity slider](./media/sensitivity-slider.png)
+
+
+The following anomaly detection policies are available:
+
+**Impossible travel**
+- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. It identifies two user activities (is a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection leverages a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of 7 days during which it learns a new user’s activity pattern.
+
+
+**Activity from infrequent country**
+- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection considers past activity locations to determine new and infrequent locations. The anomaly detection engine stores information about previous locations used by users in the organization. An alert t is triggered when an activity occurs from a location that was not recently or never visited by the user or by any user in the organization. The detection has an initial learning period of 7 days, during which it does not alert on any new locations.
+
+
+**Activity from anonymous IP addresses**
+- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device’s IP address, and may be used for malicious intent. This detection leverages a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
+
+**Activity from suspicious IP addresses**
+- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies that users were active from an IP address that has been identified as risky by Microsoft Threat Intelligence. These IP are involved in malicious activities, such as Botnet C&C, and may indicate compromised account. This detection leverages a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
+
+
+**Unusual X activity (by user)**
+- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies users that perform multiple X activity in a single session with respect to the baseline learned, which could indicate on a breach attempt. This detection leverages a machine learning algorithm that profiles the users log-on pattern and reduces "false positives".
+
+
+**Multiple failed login attempts**
+- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies users that failed multiple login attempts in a single session with respect to the baseline learned, which could indicate on a breach attempt. This detection leverages a machine learning algorithm that profiles the users log-on pattern and reduces "false positives".
 
 To configure an anomaly detection policy:  
   
@@ -127,11 +149,7 @@ Each risk factor, when included in the risk evaluation, has its own triggers tha
 -   Activity rate - repeated activities performed by a user within a short period. 
 
 ### Sensitivity  
-There are two ways to control the number of alerts triggered by the policy:  
-  
--   Sensitivity slider – choose how many alerts to trigger per 1,000 users per week. The alerts are triggered of the activities with the highest risk.  
-  
--   Daily alert limit – restrict the number of alerts raised on a single day.  
+To control the number of alerts triggered by the policy, set the **Daily alert limit** and restrict the number of alerts raised on a single day.  
   
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
