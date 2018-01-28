@@ -28,7 +28,7 @@ ms.suite: ems
 
 
 
-
+ 
 # Anomaly detection policy
 This article provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.  
 
