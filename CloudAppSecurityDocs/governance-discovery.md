@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -41,6 +41,7 @@ You can then notify users of the app that it has been unsanctioned and suggest a
 
 If you have a list of apps you want to sanction or unsanction, you can use the checkbox to select all the apps you want to manage, and then select the action.
 
+To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 ## Export a block script to govern discovered apps
 
