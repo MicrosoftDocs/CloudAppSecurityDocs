@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Troubleshooting Cloud App Security status
 
-You can now check the current Cloud App Security service status by going [status.cloudappsecurity.com](http://www.status.cloudappsecurity.com) or directly from within the portal by clicking on **Help**>**System status**. 
+You can now check the current Cloud App Security service status by going [status.cloudappsecurity.com](https://status.cloudappsecurity.com) or directly from within the portal by clicking on **Help**>**System status**. 
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   

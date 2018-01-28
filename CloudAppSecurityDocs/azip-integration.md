@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -100,7 +100,7 @@ To ignore classification labels set external to your organization, in the Cloud 
  ![protect app](./media/protect-app.png)
   
   >[!NOTE]
-  >Azure Information Protection protects files with a maximum size of 50 MB. 
+  >When Cloud App Security protects files with Azure Information Protection, the maximum file size supported is 50 MB. 
 
 2. You are asked to choose one of your organization's classification labels to apply to the file, and click **Apply**. 
 ![protection classification label](./media/protect-template.png)
