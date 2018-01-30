@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,7 +34,7 @@ Released January 21, 2018
 -	This release provides an improved experience when selecting specific folders in file policies. You can now easily view and select multiple folders to include in a policy. 
 -	In the **Discovered apps** page: 
    - The bulk tagging feature enables you to apply custom tags (in addition to sanctioned and unsanctioned tags). 
-   - When you **Generate an IP address report**, the exported reports now include the information about whether the traffic was from sanctioned or unsanctioned apps. 
+   - When you **Generate an IP addresses report**, or **Generate a users report** the exported reports now include the information about whether the traffic was from sanctioned or unsanctioned apps. 
 -	You can now request a new API App connector from the Microsoft Cloud App Security team directly in the portal, from the **Connect an app** page. 
 
 
