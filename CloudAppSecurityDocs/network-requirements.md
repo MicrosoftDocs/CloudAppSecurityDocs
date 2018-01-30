@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/30/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -91,7 +91,7 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
  
 
-## DLP integration
+## Third-party DLP integration
 
 In order for Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number. 
 
