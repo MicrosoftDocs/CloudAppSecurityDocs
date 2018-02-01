@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/30/2018
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,6 +43,8 @@ By integrating Azure Information Protection into Cloud App Security, you can lev
 
 
 ## Prerequisites
+
+- To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 Cloud App Security currently supports applying Azure Information Protection classification labels for the following file types:
 

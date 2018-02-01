@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 2/1/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,127 +29,82 @@ ms.suite: ems
 
 
  
-# Anomaly detection policy
-This article provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.  
+# Get instantaneous behavioral analytics and anomaly detection
 
-After your organization is protected by Cloud App Security, all cloud activity is scored according to various pre-defined risk factors. Cloud App Security looks at every user session on your cloud and then takes into consideration the risk factors you set here to alert you when something happens that is different from either the baseline of your organization or from the user's regular activity. The policies can be enforced differently for different users, locations, and organizational sectors. For example, you can create a policy that alerts you when members of your IT team are active from outside your offices.  
+Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you can immediately run advanced threat detection across your cloud environment. Because they are automatically enabled, the new anomaly detection policies provide immediate results by providing immediate detections, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network.  In addition, the new policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats. 
 
-Cloud App Security has an initial learning period of seven days during which it does not flag any new users, activity, devices, or locations as anomalous. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. 
+he anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts will be raised. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities.  These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. These detections also leverage machine learning algorithms designed to profile the users and log-on pattern to reduce false positives.
 
+Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into multiple risk factors, as follows: 
+  		  
+ -   Login failures
+ -   Admin activity
+ -   Inactive accounts
+ -   Location  
+ -   Impossible travel
+ -   Device and user agent
+ -   Activity rate
+
+Based on the policy results, security alerts are triggered. Cloud App Security looks at every user session on your cloud alerts you when something happens that is different from the baseline of your organization or from the user's regular activity. 
+
+
+You can see the anomaly detection policies in the portal by clicking on **Control** and then **Policies**.
+
+ ![new anomaly detection policies](./media/new-anomaly-detection-policies.png)
 
 The following anomaly detection policies are available:
 
 **Impossible travel**
-- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. It identifies two user activities (is a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection leverages a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of 7 days during which it learns a new user’s activity pattern.
+-  This detection identifies two user activities (is a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection leverages a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of 7 days during which it learns a new user’s activity pattern.
 
 
 **Activity from infrequent country**
-- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection considers past activity locations to determine new and infrequent locations. The anomaly detection engine stores information about previous locations used by users in the organization. An alert t is triggered when an activity occurs from a location that was not recently or never visited by the user or by any user in the organization. The detection has an initial learning period of 7 days, during which it does not alert on any new locations.
+- This detection considers past activity locations to determine new and infrequent locations. The anomaly detection engine stores information about previous locations used by users in the organization. An alert is triggered when an activity occurs from a location that was not recently or never visited by the user or by any user in the organization. 
 
 
 **Activity from anonymous IP addresses**
-- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device’s IP address, and may be used for malicious intent. This detection leverages a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
+- This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device’s IP address, and may be used for malicious intent. This detection leverages a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
 
 **Activity from suspicious IP addresses**
-- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies that users were active from an IP address that has been identified as risky by Microsoft Threat Intelligence. These IP are involved in malicious activities, such as Botnet C&C, and may indicate compromised account. This detection leverages a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
+- This detection identifies that users were active from an IP address that has been identified as risky by Microsoft Threat Intelligence. These IP are involved in malicious activities, such as Botnet C&C, and may indicate compromised account. This detection leverages a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
 
 
-**Unusual X activity (by user)**
-- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies users that perform multiple X activity in a single session with respect to the baseline learned, which could indicate on a breach attempt. This detection leverages a machine learning algorithm that profiles the users log-on pattern and reduces "false positives".
+**Unusual activities (by user)**
 
+These detections identifies users who perform:
+
+ - Unusual multiple file download activities
+ - Unusual file share activities
+ - Unusual file deletion activities
+ - Unusual impersonated activities
+ - Unusual administrative activities
+ 
+These policies look for activities within a single session with respect to the baseline learned, which could indicate on a breach attempt. These detections leverages a machine learning algorithm that profiles the users log on pattern and reduces false positives. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity.
 
 **Multiple failed login attempts**
-- This detection is part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. This detection identifies users that failed multiple login attempts in a single session with respect to the baseline learned, which could indicate on a breach attempt. This detection leverages a machine learning algorithm that profiles the users log-on pattern and reduces "false positives".
+- This detection identifies users that failed multiple login attempts in a single session with respect to the baseline learned, which could indicate on a breach attempt. 
 
-To configure an anomaly detection policy:  
-  
-1.  In the console, click on **Control** followed by **Policies**.  
-  
-2.  Click **Create policy** and select **Anomaly detection** policy.  
-  
-     ![Anomaly detection policy menu](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
-  
-3.  Fill in the policy's name and description, and continue to the **Activity filters** field where you can choose the activity for which you wish to apply the policy.  
-  
-4.  Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).  
-  
-5.  To apply the policy to all activities in your cloud environment, select **All monitored activity**. To limit the policy to specific types of activities, choose **Selected activity**. Click on **Add filters** and set the appropriate parameters by which to filter the activity. For example, to enforce the policy only on activity performed by Salesforce admins, choose this user tag.  
-  
-6.  Underneath this field set the **Risk factors**. You can choose which risk families you want to consider while calculating the risk score. On the right of the row, you can use the On/Off button to enable and disable the various risks. Additionally, for greater granularity, you can choose the activity on which to enable each particular risk family.  
-  
-     Risk factors are as follows:  
-  
-    -   **Login failures**: Are users attempting to log in and failing multiple times over a short period?  
-  
-    -   **Admin activity**: Are admins using their privileged accounts to log in from unusual locations or at strange hours?  
-  
-    -   **Inactive accounts**: Is there suddenly activity on an account that hasn't been in use for some time?  
-  
-    -   **Location**: Is there activity in an unusual, suspicious, or new location?  
-  
-    -   **Impossible travel**: Is a user logging in from Denver and 10 minutes later logging in from Paris?  
-  
-    -   **Device and user agent**: Is there activity from an unrecognized or unmanaged device?  
 
-    -   **Activity rate**: Is there suddenly a lot of activity on a particular app? Are there large downloads or deletes, or mass number of files shared or a lot of unexpected admin activity?
-  
-     You can use these parameters to define complex scenarios, for example, to exclude your office's IP range from the considered risk factors for anomaly detection, create a specific "office IP" tag and filter the range out of the considered parameters. To then exclude the range that you created from the admin activity anomaly detection:  
-  
-    -   Within **Risk type**, find **Admin activity**.  
-  
-    -   Change **Apply to** to **Selected Activity**.  
-  
-    -   Under **Activity filters**, set **Apply to** to **Selected activity** and under **Activities matching all of the following**, choose **Administrative activity** is **True**.  
-  
-    -   Click on the **+** icon and select  **IP tag does not equal** and select the Office IP tag.  
-  
-7.  Under **Sensitivity**, select how often you want to receive alerts.  
-  
-     The sensitivity value determines how many weekly alerts are triggered on average for every 1,000 users.  
-  
-     ![anomaly detection IPs](./media/anomaly-detection-ips.png "anomaly detection IPs")  
-  
-8.  Click **Create**.  
+## Triaging anomaly detection alerts
+
+You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones needs to be taken care of first. To do this, you’ll need the  context for the alert, so you will be able to see the bigger picture and understand whether something malicious is indeed happening.  
+
+1. In the **Activity log**, you can open an activity to display the Activity drawer. Click on **User** to view the user insights tab. This includes information like number of alerts, activities, and where they have connected from, which is important in an investigation. 
+
+ ![anomaly detection alert1](./media/anomaly-alert-user1.png)
+ ![anomaly detection alert1](./media/anomaly-alert-user2.png)
+
+ 
+2. This enables you to understand what the suspicious activities are that the user performed and gain deeper confidence as to whether the account was compromised. For example, an alert on multiple failed logins may indeed be suspicious and can indicate potential brute force attack, but it can also be an application misconfiguration, causing the alert to be a benign true positive. However, if you see a multiple failed logins alert with additional suspicious activities, then there is a higher probability that the account is compromised. In the example below, you can see that the **Multiple failed login attempts** alert was followed by **Activity from a TOR IP address** and **Impossible travel activity**, both strong indicators of compromise (IOCs) by themselves. If this wasn’t suspicious enough, then we can see that the same user performed a **Mass download activity**, which is often an indicator of the attacker performing exfiltration of data. 
+
+  ![anomaly detection alert1](./media/anomaly-alert-user3.png)
+  ![anomaly detection alert1](./media/anomaly-alert-user4.png)
+
  
 
-## Anomaly detection policy reference  
-An anomaly detection policy enables you to set up and configure continuous monitoring of user activity for behavioral anomalies. Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into 6 risk factors. Based on the policy results, security alerts are triggered.   
-Each policy is composed of the following parts:  
-  
--   Activity filters – Enable you to selectively scan only filtered user activity for anomalies.  
-  
--   Risk factors – Enable you to choose which risk factors to include when evaluating risk.  
-  
--   Sensitivity – Enable you to set how many alerts the policy should trigger.  
-  
-### Activity filters  
-For a list of Activity filters, see [enter link description here](activity-filters.md).  
-  
-### Risk factors  
-Below is a list of the risk factors that are considered when evaluating the risk of user activity. Each risk factor can be toggled on or off. For each risk factor there are two options under the **Apply to** field, which determine whether to include it when evaluating the risk of user activity:  
-  
--   All monitored activity – include it for all user activity that passes the policy activity filter.  
-  
--   Selected activity – include it for user activity that passes both the policy activity filters and the activity filters that appear under this risk factor. When this option is selected an activity filter selector appears under the risk factor, which works exactly the same as the policy activity filter.  
-  
-Each risk factor, when included in the risk evaluation, has its own triggers that cause an increase in the evaluated risk of user activity:  
-  
--   Login failures – a high number of login failures or activity comprised entirely of login failures.  
-  
--   Admin activity - administrative activity performed by an unexpected user, or performed from an IP, ISP, or location that are new, or not used by any other user in the organization.  
-  
--   Inactive accounts - activity performed by a user that was not active for a long time.  
-  
--   Location - activity performed from an IP, ISP, or location that were either never used by any other user, never used by this particular user, never used at all, or used only for login failures in the past.  
-  
--   Impossible travel - activity from remote locations within a short time.  
-  
--   Device and user agent - activity performed by a user using a user agent or device that was either never used by any other user, never used by this particular user, or never used at all.  
-  
--   Activity rate - repeated activities performed by a user within a short period. 
 
-### Sensitivity  
-To control the number of alerts triggered by the policy, set the **Daily alert limit** and restrict the number of alerts raised on a single day.  
+  
+
   
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
