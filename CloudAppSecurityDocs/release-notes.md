@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/30/2018
+ms.date: 2/4/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,19 @@ ms.suite: ems
 ---
 
 # What's new with Microsoft Cloud App Security
+
+## Cloud App Security release 116
+Released February 4, 2018
+
+- Gradual roll out: Cloud App Security now correlates between users and their accounts across SaaS apps. This enables you to easily investigate all the activities for a user, across all their various correlated SaaS apps, no matter which app or account they used.  
+
+-	Gradual roll out: Cloud App Security now supports multiple instances of the same connected app. If you have multiple instances of, for example, Salesforce (one for sales, one for marketing) you will be able to connect them both to Cloud App Security and manage them from the same console to create granular policies and deeper investigation. 
+
+- Cloud App Security investigation was improved! You can now drill down from within the **Alerts** page into the **Activity log** and view additional actions that you can perform directly from the alert.
+
+- The Cloud Discovery parsers now support two additional Checkpoint formats, XML and KPC.
+
+
 
 ## Cloud App Security release 115
 Released January 21, 2018
