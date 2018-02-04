@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/31/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -54,7 +54,9 @@ For portal access, it is necessary to add the following IP addresses to your Fir
 > - Users in domains that are not configured as internal are marked as external and are not scanned for activities or files.
 
 5. If you are integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for information. 
-  
+
+ >[!NOTE]
+ > To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
 6.  If at any point you want to back up your portal settings, this screen enables you to do that. Click **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.  
   
