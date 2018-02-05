@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -37,6 +37,7 @@ The anomaly detection policies are automatically enabled, but Cloud App Security
 
 Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into multiple risk factors, as follows: 
   		  
+ -   Risky IP address
  -   Login failures
  -   Admin activity
  -   Inactive accounts
