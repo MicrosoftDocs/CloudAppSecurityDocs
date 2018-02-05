@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -86,6 +86,10 @@ Click **Next**.
 
 7. Copy the token and save it for later. 
 After you click Finish and leave the Wizard, back in the SIEM page, you can see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
+
+> [!NOTE]
+> Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid.
+
 
 ### Step 2: Download the JAR file and run it on your server
 
