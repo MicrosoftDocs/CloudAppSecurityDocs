@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -91,8 +91,36 @@ The proxy currently supports apps that are configured with SAML single sign on i
 > - The proxy also supports apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
 > - Office 365 applications are not configured with SAML so they are not currently supported.
 
-In addition, session control is not automatically available for all apps. The Cloud App Security team tested many popular apps with session control. Other apps may require an onboarding process that will be done with the customer.
-In terms of clients, session control is available for any browser on any major platform. However, mobile apps and desktop apps are not supported by session control. 
+Session control is available for any browser on any major platform (mobile apps and desktop apps are currently not supported). By natively integrating with Azure AD, any apps that are configured with SAML single sign-on in Azure AD can be supported, including the following featured apps:
+
+-	Salesforce
+
+-	Box
+
+-	G Suite
+
+-	Workday
+
+-	Slack
+
+-	Workplace by Facebook
+
+-	ServiceNow
+
+-	JIRA/Confluence
+
+-	AWS
+
+-	Workiva
+
+-	CornerStone on Demand
+
+-	DocuSign
+
+-	HighQ 
+
+Additional apps are being continuously on-boarded to session control. If you are interested in a specific app that is not mentioned here, [send us details about the app](mailto:casfeedback@microsoft.com) and the use case you are interested in, and we will on-board it.
+
 
 
 
