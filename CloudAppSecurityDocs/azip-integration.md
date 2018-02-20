@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -53,7 +53,7 @@ Cloud App Security currently supports applying Azure Information Protection clas
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - PDF and image files will be available in future versions 
 
-This feature is currently available for files that are stored in Box, SharePoint Online and OneDrive for Business. More cloud apps will be supported in future versions.
+This feature is currently available for files that are stored in Box, G Suite, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
 
 Files that were labeled with protection outside of Cloud App Security cannot currently be scanned or changed by Cloud App Security. Files that were labeled (without protection) external to Cloud App Security, can be scanned and Cloud App Security can apply a different label (with or without protection) as defined in Cloud App Security policies.
 

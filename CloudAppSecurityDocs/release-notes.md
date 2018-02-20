@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/12/2018
+ms.date: 2/20/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,9 +28,17 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+## Cloud App Security release 117
+Released February 20, 2018
+
+-	Cloud App Security deepened integration with Azure Information Protection now enables you to protect files in G Suite. This public preview feature enables you to scan and classify files in G Suite, and automatically apply Azure Information protection labels for protection. For more information see [Azure Information Protection integration](azip-integration.md).
+
+-	Cloud Discovery now supports i-FILTER.
+
+-	The SIEM agents table now includes more detail for easier management.
+
 ## Cloud App Security release 116
 Released February 4, 2018
-
 - Cloud App Security's anomaly detection policy was enhanced with new **scenario-based detections** including impossible travel, activity from a suspicious IP address and multiple failed login attempts. The new policies are automatically enabled, providing out-of-the-box threat detection across your cloud environment. In addition, the new policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats. For more information, see [Get instantaneous behavioral analytics and anomaly detection](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
 
 - Gradual roll out: Cloud App Security now correlates between users and their accounts across SaaS apps. This enables you to easily investigate all the activities for a user, across all their various correlated SaaS apps, no matter which app or account they used.  
