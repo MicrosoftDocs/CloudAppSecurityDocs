@@ -127,7 +127,7 @@ Follow these instructions to create the file policy:
    ![Apply label](./media/aip-gov-action.png)
 
 > [!NOTE]
-> The ability to automatically apply an Azure Information Protection label through file policy is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, [contact Cloud App Security Support](mailto:cascoresupport@microsoft.com).
+> The ability to automatically apply an Azure Information Protection label through file policy is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, [contact Cloud App Security Support](mailto:cascoresupport@microsoft.com).
 
 ### Control file exposure
 
