@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/25/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -69,7 +69,7 @@ After processing of your log files completes, you will receive an email to notif
 10. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, a you can view the report either by clicking the link in the status bar, or by going to the Settings cog, and selecting **Cloud Discovery settings**.   
   
      ![Discovery settings tab](./media/discovery-settings-tab.png)
-11. Then selecting **Manage snapshot reports** and select your snapshot report.
+11. Then selecting **Snapshot reports** and select your snapshot report.
  
 ![snapshot report management](./media/snapshot-report-managment.png)
 

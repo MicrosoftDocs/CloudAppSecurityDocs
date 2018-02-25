@@ -33,7 +33,7 @@ Released February 20, 2018
 
 -	Cloud App Security deepened integration with Azure Information Protection now enables you to protect files in G Suite. This public preview feature enables you to scan and classify files in G Suite, and automatically apply Azure Information protection labels for protection. For more information see [Azure Information Protection integration](azip-integration.md).
 
--	Cloud Discovery now supports i-FILTER.
+-	Cloud Discovery now supports [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/).
 
 -	The SIEM agents table now includes more detail for easier management.
 
