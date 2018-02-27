@@ -28,6 +28,12 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+## Cloud App Security release 118
+Released February 27, 2018
+
+-	The Cloud App Security portal **Settings** pages were redesigned to for improved user experience. The new page now consolidates all the settings pages into one location with a search capability and a clearer design. 
+
+
 ## Cloud App Security release 117
 Released February 20, 2018
 
