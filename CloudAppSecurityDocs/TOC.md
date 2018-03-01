@@ -1,5 +1,6 @@
 # Understand & Explore
 ## [What is Cloud App Security?](what-is-cloud-app-security.md)
+## [Cloud App Security compliance, trust, data security and privacy](cas-compliance-trust.md)
 ## [What's new?](release-notes.md)
 ## Compare
 ### [Office 365](editions-cloud-app-security-o365.md)
@@ -16,7 +17,7 @@
 ## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](discovery-docker.md)
-#### [Docker on Ubuntu on-premises](discovery-docker-ubuntu.md)
+#### [Docker on Ubuntu and RHEL on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
 #### [Using a virtual appliance - Deprecated](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Use the custom log parser](custom-log-parser.md)
@@ -61,6 +62,7 @@
 #### [File policies](data-protection-policies.md)
 ##### [Content Inspection](content-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
+#### [Access policies](access-policy-aad.md)
 #### [Session policies](session-policy-aad.md)
 #### [Policy template reference](policy-template-reference.md)
 ### [Govern connected apps](governance-actions.md)

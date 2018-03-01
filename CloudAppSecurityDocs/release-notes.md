@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,12 +28,26 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+
+## Cloud App Security release 118
+Released March 4, 2018
+
+- You can now take advantage of Microsoft Cloud App Security’s shadow IT discovery and monitoring capabilities on your own proprietary custom apps. The new ability to add custom apps to Cloud Discovery enables you to monitor app usage and get alerted on changes in the usage pattern. For more information see [Protecting your custom apps](cloud-discovery-custom-apps.md). This feature is being rolled out gradually.
+
+- The Cloud App Security portal *Settings** pages were redesigned to for improved user experience. The new page consolidates all the settings pages, provides search functionality and a clearer design. 
+
+- Cloud Discovery now supports Barracuda F Series Firewalls and Barracuda F-Series Firewall Web Log Streaming.
+
+- The search functionality in the User and IP address pages now enable auto complete to make it easier for you to find what you’re looking for.
+
+- You can now perform bulk actions in the Exclude entities and Exclude IP address settings pages. This makes it easier for you to select multiple users and groups or IP addresses and exclude them from being monitored as part of the Cloud Discovery in your organization. 
+
 ## Cloud App Security release 117
 Released February 20, 2018
 
 -	Cloud App Security deepened integration with Azure Information Protection now enables you to protect files in G Suite. This public preview feature enables you to scan and classify files in G Suite, and automatically apply Azure Information protection labels for protection. For more information see [Azure Information Protection integration](azip-integration.md).
 
--	Cloud Discovery now supports i-FILTER.
+-	Cloud Discovery now supports [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/).
 
 -	The SIEM agents table now includes more detail for easier management.
 
