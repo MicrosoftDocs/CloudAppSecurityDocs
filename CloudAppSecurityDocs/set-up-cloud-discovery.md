@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2017
+ms.date: 2/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -88,6 +88,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Cisco Meraki – URLs log
 - Clavister NGFW (Syslog)
 - Dell Sonicwall
+- Digital Arts i-FILTER
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -115,19 +116,20 @@ Data attributes (according to vendor documentation):
 |Barracuda|**Yes**|**Yes**|**Yes**|**Yes**|No|No|
 |Blue Coat|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Checkpoint|No|**Yes**|No|**Yes**|No|No|
-|Cisco ASA|No|**Yes**|No|**Yes**|**Yes**|No|
+|Cisco ASA (Syslog)|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco ASA with FirePOWER|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Cisco FWSM|No|**Yes**|No|**Yes**|**Yes**|No|
 |Cisco Ironport WSA|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Cisco Meraki|**Yes**|**Yes**|No|**Yes**|No|No||Cisco Scansafe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Clavister NGFW (Syslog)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Dell SonicWall|**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
+|Digital Arts i-FILTER|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Fortigate|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Juniper SRX|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
-|Juniper SSG|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
+|Juniper SSG|No|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |McAfee SWG|**Yes**|No|No|**Yes**|**Yes**|**Yes**|
 |MS TMG|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
-|Palo Alto Networks|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
+|Palo Alto Networks|No|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Sophos|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|No|
 |Squid (Common)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|
 |Squid (Native)|**Yes**|No|**Yes**|**Yes**|No|**Yes**|

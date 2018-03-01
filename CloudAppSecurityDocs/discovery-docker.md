@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 2/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -45,7 +45,7 @@ Before setting up automatic log file collection, verify that your log matches th
 
 The Log Collector supports two deployment modes:
 
--   **Container** : Runs as a Docker image on [Ubuntu on premises](discovery-docker-ubuntu.md), or [Ubuntu in Azure](discovery-docker-ubuntu-azure.md). 
+-   **Container**: Runs as a Docker image on [Ubuntu on premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md) or [RHEL on premises](discovery-docker-ubuntu.md). 
 
 -   **Virtual appliance**:  [Runs as an image over Hyper-V or VMware hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
 
