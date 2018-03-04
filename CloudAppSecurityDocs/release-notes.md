@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/1/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,9 +34,9 @@ Released March 4, 2018
 
 - You can now take advantage of Microsoft Cloud App Security’s shadow IT discovery and monitoring capabilities on your own proprietary custom apps. The new ability to add custom apps to Cloud Discovery enables you to monitor app usage and get alerted on changes in the usage pattern. For more information see [Protecting your custom apps](cloud-discovery-custom-apps.md). This feature is being rolled out gradually.
 
-- The Cloud App Security portal *Settings** pages were redesigned to for improved user experience. The new page consolidates all the settings pages, provides search functionality and a clearer design. 
+- The Cloud App Security portal **Settings** pages were redesigned. The new design consolidates all the settings pages, provides search functionality and an improved design. 
 
-- Cloud Discovery now supports Barracuda F Series Firewalls and Barracuda F-Series Firewall Web Log Streaming.
+- Cloud Discovery now supports Barracuda F-Series Firewalls and Barracuda F-Series Firewall Web Log Streaming.
 
 - The search functionality in the User and IP address pages now enable auto complete to make it easier for you to find what you’re looking for.
 

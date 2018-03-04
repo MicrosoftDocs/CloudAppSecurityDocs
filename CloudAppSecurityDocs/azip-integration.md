@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -51,7 +51,7 @@ Cloud App Security currently supports applying Azure Information Protection clas
 - Word: docm, docx, dotm, dotx
 - Excel: xlam, xlsm, xlsx, xltx
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
-- PDF and image files will be available in future versions 
+- PDF will be available in future versions 
 
 This feature is currently available for files that are stored in Box, G Suite, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -69,7 +69,9 @@ This section provides instructions for connecting Cloud App Security to your exi
    > [!NOTE]  
    >  Ignore the **Credentials** warning for now.  
 
-8.  You should have 5 **Enabled APIs**:  
+8. Click on Enable for each API.
+     ![enable Google APPI](./media/google-api.png "google-api")  
+1. You should have 5 **Enabled APIs**, make sure to disable any other APIs:
   
      ![google enabled apis](./media/google5.png "google5")  
   
@@ -226,7 +228,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
     4.  Enter one **admin account email** of your G Suite admin.  
   
-    5.  If you have a G Suite unlimited account, check this check box. For information about which features are available in Cloud App Security for G Suite unlimited, see [Enable instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
+    5.  If you have a G Suite Business or Enterprise account, check this check box. For information about which features are available in Cloud App Security for G Suite Business or Enterprise, see [Enable instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).  
   
     6.  Click **Save settings**.  
   

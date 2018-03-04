@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
  >  [!NOTE]
 >  We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0). 
-For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password.
+For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password. The username/password provided are only used for API token generation and are not saved after the initial connection process.
 
  > [!NOTE]  
 >  Cloud App Security supports ServiceNow versions of Eureka, Fiji,  Geneva, Helsinki, and Istanbul. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  For more information, refer to the [ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
@@ -41,7 +41,10 @@ For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) 
   
   
 1.  Log on with an Admin account to your ServiceNow account.  
-  
+ 
+  > [!NOTE]
+  >  The username/password provided are only used for API token generation and are not saved after the initial connection process.
+
 2.  In the **Filter navigator** search bar, type **OAuth** and select **Application Registry**.
 
 3. In the **Application Registries** menu bar, click **New** to create a new OAuth profile.
