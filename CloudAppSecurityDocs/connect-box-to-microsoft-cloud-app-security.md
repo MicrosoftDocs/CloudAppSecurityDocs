@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -36,7 +36,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
 1.  If you restrict application permission access, follow this step. Otherwise, skip to step 2.  
   
-    -   In the Box Admin console, click the settings icon followed by **Business settings**.  
+    -   In the Box Admin console, click the settings icon followed by **Business settings** or **Enterprise settings**.  
   
          ![box business settings](./media/box-business-settings.png "box business settings")  
   
