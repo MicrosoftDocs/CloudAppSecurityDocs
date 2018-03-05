@@ -196,7 +196,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
     -   Under **Visibility**, select **My domain** (not public). 
     -   Click on **Save Changes**.  
-  
+        ![google visibility](./media/google-visibility.png "google visibility")  
 22. Go to [admin.google.com](https://admin.google.com/) and then choose **Security**. 
    
       ![google security](./media/googlesec.png "google security")  

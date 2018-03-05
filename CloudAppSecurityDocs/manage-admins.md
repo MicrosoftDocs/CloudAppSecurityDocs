@@ -50,7 +50,7 @@ For more information, see [Assigning administrator roles in Azure Active Directo
 
 You can also add additional admins to Cloud App Security, without adding users to Azure Active Directory administrative roles, by performing the following steps:
 
-1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. 
+1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admins**. 
 
 2. Add the admins who should have access to Cloud App Security.
   
