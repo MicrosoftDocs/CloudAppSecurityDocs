@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -39,10 +39,8 @@ For portal access, it is necessary to add the following IP addresses to your Fir
   
 ## Set up the portal  
   
-1.  In the Cloud App Security portal, in the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **General settings** to configure the following:  
-     
-     ![general settings](./media/general-settings.png "general settings")  
-  
+1.  In the Cloud App Security portal, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.     
+
 3.  Under **Organization details**, it is important that you provide an **Organization display name** for your organization. It is displayed on emails and web pages sent from the system.  
   
 4. Provide an **Environment name** (tenant). This is especially important if you manage multiple tenants.  

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -76,7 +76,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
  
 
 
-## Supported firewalls and proxies
+## Supported firewalls and proxies <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access log (W3C)
