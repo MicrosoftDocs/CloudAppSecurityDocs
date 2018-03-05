@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -68,14 +68,14 @@ Alternatively, you can access the portal through the **Office 365 Admin center**
 Required task: Upload traffic logs
 **To create a continuous Cloud Discovery report**
 
- 1. Go to **Settings** > **Cloud Discovery settings**.
- 2. Choose **Upload log automatically**.
+ 1.From the settings cog, select   **Cloud Discovery settings**.
+ 2. Choose **Automatic log upload**.
  3. On the **Data sources** tab, add your sources.
  4. On the **Log collectors** tab, configure the log collector.
  
 **To create a snapshot Cloud Discovery report**
 
- 1. Go to **Discover** > **Create new snapshot report** and follow the steps shown.
+ 1. Go to **Discover** > **Snapshot report** and follow the steps shown.
 
 **Why should you configure Cloud Discovery reports?**
 Having visibility into shadow IT in your organization is critical.
@@ -85,8 +85,8 @@ After your logs are analyzed, you can easily discover which cloud apps are being
 ### Step 2. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Required task: Connect apps
 
-1. Go to **Settings** > **App connectors**.
-2. Choose **Connect app** and select an app.
+1.From the settings cog, select   **App connectors**.
+2. Click the plus sign to add an app and select an app.
 3. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
@@ -113,7 +113,7 @@ Recommended task: Add your organization details
 
 **To enter email settings**
 
-1. Go to **Settings** > **Mail settings**.
+1. From the settings cog, select **Mail settings**.
 2. Under **Email sender identity**, enter your email addresses and display name.
 3. Under **Email design**, upload your organization's email template.
 
@@ -125,8 +125,9 @@ Recommended task: Add your organization details
 
 **To customize the score metrics**
 
-1. Go to **Settings** > **Cloud Discovery settings**.
-2. Under **Score metric configuration**, configure the importance of various risk values.
+1. From the settings cog, select **Cloud Discovery settings**.
+1.From the settings cog, select **Cloud Discovery settings**.
+2. Under **Score metrics**, configure the importance of various risk values.
 3. Choose **Save**.
 
 Now the risk scores given to discovered apps are configured precisely according to your organization needs and priorities.
@@ -141,8 +142,9 @@ Recommended task: Configure important settings
 
 **To create IP address tags**
 
-1. Go to **Settings** > **IP address tags**.
-2. Choose (+) **Add IP address range**.
+1.From the settings cog, select **Cloud Discovery settings**.
+1.From the settings cog, select **IP address ranges**.
+2. Click the plus sign to add an IP address range.
 3. Enter the IP range **details**, **location**, **tags**, and **category**.
 4. Choose **Create**.
 
@@ -150,8 +152,8 @@ Recommended task: Configure important settings
 
 **To create continuous reports**
 
-1. Go to **Settings** > **Cloud Discovery settings**.
-2. Under **Manage continuous reports**, choose **Create report**.
+1. From the settings cog, **Cloud Discovery settings**.
+2. Under **Continuous reports**, choose **Create report**.
 3. Follow the configuration steps.
 4. Choose **Create**.
 
@@ -159,7 +161,7 @@ Now you can view discovered data based on your own preferences, such as business
 
 **To add domains**
 
-1. Go to **Settings** > **General settings**.
+1. From the settings cog, select **Settings**.
 2. Under **Organization details**, add your organization's internal domains.
 3. Choose **Save**.
 

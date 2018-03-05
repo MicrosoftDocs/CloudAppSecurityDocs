@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/5/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -59,6 +59,13 @@ In the **Discovered apps** page, under **Browse by category** select both **Clou
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
+Cloud discovery enables you to dive even deeper into your organization’s cloud usage, and identify specific instances that are in use by investigating the discovered sub-domains.
+ 	 
+For example, you can differentiate between different SharePoint sites.
+
+This is supported only in firewalls and proxies that contain target URL data. See the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery#supported-firewalls-and-proxies).
+
+ ![sub-domain information](./media/discovery-domains.png) 
 
 ## Exclude entities  
 If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
