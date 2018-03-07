@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/7/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -95,7 +95,7 @@ The following governance actions can be taken for connected apps either on a spe
     > [!NOTE] 
     > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted. 
   
-    -   Revoke password – Revoke the user’s password and force them to set a new password on his next login.  
+    -   Require user to sign in again – Signs the user out and requires them to sign in again.  
   
      ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6")  
   
@@ -127,7 +127,7 @@ For information about how governance actions are treated when there are policy c
 |Accounts|Account|Account settings|Takes you to the account settings page in the specific app (for example, inside Salesforce).|All apps -One Drive and SharePoint settings are configured from within Office.|
 |Accounts |File|Transfer all files ownership|On an account, you transfer one user's files to all be owned by a new person you select. The previous owner becomes an editor and will no longer be able to change sharing settings. The new owner will receive an email notification about the change of ownership.|G Suite|
 |Accounts, Activity policy|Account|Suspend user|Sets user to have no access and no ability to log in - if they are logged in when you set this, they are immediately locked out.|G Suite, Box, Office, Salesforce|
-|Activity policy, Accounts|Account|Revoke password|Revokes the password for a user's account - for example,  setting an activity policy that revokes a password after 10 failed login attempts.|G Suite|
+|Activity policy, Accounts|Account|Require user to sign-in again|Revokes all refresh tokens and session cookies issues to applications by the user. This will prevent access to any of hte organization's data and will force the user to sign into all applications again.|G Suite|
 |Activity policy, Accounts|Account|Revoke admin privileges|Revokes privileges for an admin account - for example, setting an activity policy that revokes admin privileges after 10 failed login attempts.|G Suite|
 |App dashboard > App permissions|Permissions|Un-ban app|In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third party app with their Google or Salesforce. In Office 365: restores the permissions of the third party app’s to Office.|G Suite, Salesforce, Office|
 |App dashboard > App permissions|Permissions|Disable app permissions|Revoke a third-party app's permissions to Google, Salesforce or Office. This is a one-time action that will occur on all existing permissions, but will not prevent future connections. |G Suite, Salesforce, Office|
