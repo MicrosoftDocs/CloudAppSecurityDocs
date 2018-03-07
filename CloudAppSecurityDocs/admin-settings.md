@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,7 @@ ms.suite: ems
 ##  <a name="Adminsettings"></a> Customize your admin settings  
 To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following settings:  
   
-1.  Click **Account settings**. Here you can customize the portal language for your own viewing. You can set it to display the portal in either the default language or you can set a different language for yourself.  
+1.  Click **Account settings**. Here you can set and renew your password for access to the Cloud App Security portal.  
   
      ![custom user settings](./media/custom-user-settings.png "custom user settings")  
   
