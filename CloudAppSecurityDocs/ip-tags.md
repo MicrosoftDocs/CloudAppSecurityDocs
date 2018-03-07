@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 3/7/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -52,7 +52,7 @@ To use these built-in tags as part of a search, refer to their ID in the Cloud A
 
 Built-in IP address tags and custom IP tags are considered hierarchically, with custom IP tags taking precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence, but there is a custom IP tag that identifies it as **Corporate** the custom category and tags take precedence.
 
-In the menu bar, click the settings icon ![the settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click **+Add IP address range** and set the following fields:  
+In the menu bar, click the settings icon ![the settings icon](./media/settings-icon.png "settings icon") and select **IP address ranges**. Click the plus sign to add IP address ranges and set the following fields:  
   
 > [!NOTE]  
 > - The Location and Registered ISP override defaults.   
@@ -64,13 +64,7 @@ In the menu bar, click the settings icon ![the settings icon](./media/settings-i
   
 2.  Enter the **IP address range** you wish to configure and then click on the "+" button. You can add as many IP addresses and subnets as you want using network prefix notation (also known as CIDR notation), for example 192.168.1.0/32.  
   
-3.  To **Override the Location** or Organization (ISP) fields for these addresses, enter new value. For example, if you have an IP address that is considered publicly to be in Ireland, but you know it to be in the US, you can override this setting.  
-  
-4.  Enter a **Registered ISP**. This overrides the data in your activities  
-  
-5.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag, you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  In addition to the IP tags you configure, Cloud App Security has built-in tags that are not configurable. You can see the list of tags under the [IP tags filter](activity-filters.md).  
-  
-6.  **IP categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category, except for the "Risky" category, which includes two IP tags - Anonymous proxy and Tor.  
+3.  **Categories** are used to easily recognize activities from interesting IP addresses. The categories are available in the portal yet require user configuration to determine which IP addresses are included in each category, except for the "Risky" category, which includes two IP tags - Anonymous proxy and Tor.  
   
      The following IP categories are available:  
   
@@ -83,9 +77,13 @@ In the menu bar, click the settings icon ![the settings icon](./media/settings-i
     -   **Risky**: these should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, etc.  
   
     -   **VPN**: these should be any IP addresses you use for remote workers.  
+4.  To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag, you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  In addition to the IP tags you configure, Cloud App Security has built-in tags that are not configurable. You can see the list of tags under the [IP tags filter](activity-filters.md).  
+  
+5.  To **Override the Location** or Organization (ISP) fields for these addresses, enter new value. For example, if you have an IP address that is considered publicly to be in Ireland, but you know it to be in the US, you can override this setting.  
+  
+6.  Enter a **Registered ISP**. This overrides the data in your activities  
  
-
-7.  When you are done, click **Create**.  
+7.   When you are done, click **Create**.  
   
      ![newipaddress range](./media/newipaddress-range.png "newipaddress range")  
   

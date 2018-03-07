@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,19 +28,17 @@ ms.suite: ems
 
 
 ##  <a name="mailsettings"></a> Set email notification preferences  
-In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
 
-For information about the Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md). 
+To set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved, follow this procedure. For information about the Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md). 
+
+
+1. In the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings**, and then select the **Mail settings** tab.  
+
+2. **From email address**: The email account you want to use to send the notification.  
+   
+   **From display name**: The name you want to be displayed in the **From** field of the email message.  
   
-![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
-  
-Configure the following:  
-  
-1.  **From email address**: The email account you want to use to send the notification.  
-  
-     **From display name**: The name you want to be displayed in the **From** field of the email message.  
-  
-     **Reply-to email address**: The email account to be used for replies to the message.  
+   **Reply-to email address**: The email account to be used for replies to the message.  
   
      ![mail settings config](./media/mail-settings-config.png "mail settings config")  
 
@@ -49,7 +47,7 @@ Configure the following:
   
 2.  For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
   
-    -   All template CSS should be inline in the template.  
+    -   All template CSS files should be inline in the template.  
   
     -   The template should have three un-editable placeholders:  
   
