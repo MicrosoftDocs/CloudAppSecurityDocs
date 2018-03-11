@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -114,8 +114,7 @@ Each policy is composed of the following parts:
 -   Extensions  
    
     -  Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
-  
-    -  [Governance actions](governance-actions.md) can be performed via 3rd-party engines for enforcing custom encryption control or other types of file processing (for example, custom water marking).  
+
   
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
