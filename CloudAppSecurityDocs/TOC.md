@@ -43,6 +43,7 @@
 ### [Protecting your files with admin quarantine](use-case-admin-quarantine.md)
 ## Discover
 ### [Working with discovered apps](discovered-apps.md)
+#### [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
 #### [Discovered app filters and queries](discovered-app-queries.md)
 ### [Working with the risk score](risk-score.md)
 ## [Investigate](investigate.md)
