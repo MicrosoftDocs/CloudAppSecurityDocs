@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -33,16 +33,7 @@ Each group of IP ranges can be categorized based on a preset list of IP categori
   
 IPv4 and IPv6 are supported.  
   
-Cloud App Security comes preconfigured with built-in tags for the following IP addresses: 
-- Native client
-- Outdated operating system
-- Managed devices
-- Anonymous proxy
-- Botnet (when an activity was performed by a botnet, you receive a link to learn more about the specific botnet)
-- Tor
-- Compliant device
-- Verified device
-- Impersonate
+Cloud App Security comes preconfigured with built-in IP ranges for popular cloud providers such as Azure and Office 365. In addition we have built-in tagging based on Microsoft threat intelligence including Anonymous proxy, Botnet and Tor. You can see the full list in the drop down on the IP address ranges page.
 
 To use these built-in tags as part of a search, refer to their ID in the Cloud App Security API documentation. 
 

@@ -28,6 +28,11 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+## Cloud App Security release 119
+Released March 18, 2018
+
+-	The IP address ranges page includes built-in IP addresses that are discovered by Cloud App Security. This includes IP addresses for identified cloud services, like Azure and Office 365, as well as the Threat intelligence feed that automatically enriches IP addresses with information about known risky IP addresses. 
+-	When Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will now automatically retry the governance action. 
 
 ## Cloud App Security release 118
 Released March 4, 2018

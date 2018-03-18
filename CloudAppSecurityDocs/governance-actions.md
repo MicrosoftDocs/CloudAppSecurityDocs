@@ -31,6 +31,10 @@ Governance enables you to control what your users do, in real time, across apps.
 For connected apps, you can apply governance actions to files or activities.
 Governance actions are integrated actions you can run on files or activities directly from Cloud App Security to control what your users do, in real time, across connected apps. 
 
+> [!NOTE]
+> When Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action. 
+
+
 ### File governance actions  
 
 The following governance actions can be taken for connected apps either on a specific file, user or from a specific policy.
