@@ -1,5 +1,6 @@
 ---
 layout: LandingPage
+ms.topic: landing-page
 description: Learn how to use Cloud App Security.
 ---
 # Cloud App Security Documentation
