@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -93,8 +93,8 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 4. You can click on the match to see which files were protected. The match itself will be masked to protect the sensitive data. 
 
 >[!NOTE]
->Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, SharePoint and OneDrive for business.
-
+> - Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, SharePoint and OneDrive for business.
+> - When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
  ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
