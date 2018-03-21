@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -37,7 +37,9 @@ To set parameters for email notifications sent from Cloud App Security to admini
 2. **From email address**: The email account you want to use to send the notification.  
    
    **From display name**: The name you want to be displayed in the **From** field of the email message.  
-  
+   > [!NOTE]
+   > Only unicode characters are supported in the display name according to [rfc822 protocol](http://www.rfc-editor.org/rfc/rfc822.txt).
+
    **Reply-to email address**: The email account to be used for replies to the message.  
   
      ![mail settings config](./media/mail-settings-config.png "mail settings config")  

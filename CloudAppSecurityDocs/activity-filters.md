@@ -38,11 +38,6 @@ For example, you can use the **Activity log** to find users in your organization
 After you connect an app to Cloud App Security in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**.
 
  ![Activity outdated browser example](media/activity-example-outdated.png)
-
-If you want to check whether there are **confidential** files accessed outside your organization, set the **Activity object** filter to search for **Classification label** and select the **confidential** label. Set the  **IP address** filter to search for **Category** and exclude your office IP addresses (IP categories can be configured in the **Settings** menu). You can click **New policy from search** to create an activity policy based on the filters you defined, and automatically notify the users.
-
- ![Activity confidential files external example](media/activity-example-ip.png)
-
  
 The basic filter provides you with great tools to get started filtering your activities.
 
