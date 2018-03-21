@@ -41,6 +41,7 @@
 ### [Protecting your organization against ransomware](use-case-ransomware.md)
 ### [Block downloads of sensitive information](use-case-proxy-block-session-aad.md)
 ### [Protecting your files with admin quarantine](use-case-admin-quarantine.md)
+### [Apply Azure Information Protection labels automatically](use-case-information-protection.md)
 ## Discover
 ### [Working with discovered apps](discovered-apps.md)
 #### [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
