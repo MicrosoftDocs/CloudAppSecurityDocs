@@ -37,7 +37,7 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Investigate what's happening in your cloud environment</h3>
+                        <h3>Investigate what&#39;s happening in your cloud environment</h3>
                     </div>
                 </div>
             </div>
@@ -124,14 +124,13 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
 <ul class="panelContent cardsW">
     <li>
         <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Subscription</h3>
-                        <p><a href="https://portal.office.com/Signup/Signup.aspx?OfferId=831aa0aa-1408-4d03-8799-e6e09273f5b2&ali=1#0">Add a subscription</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>    
-</ul>
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Subscription</h3>
+                        <p><a href="https://portal.office.com/Signup/Signup.aspx?OfferId=831aa0aa-1408-4d03-8799-e6e09273f5b2&ali=1#0">Add a subscription</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li><br/></ul>

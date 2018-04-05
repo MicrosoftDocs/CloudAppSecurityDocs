@@ -81,13 +81,13 @@ Cloud App Security helps you roll out your migrations by letting you know who in
 ### Migrate your users to a new app  
 Imagine this scenario: you recently bought Office 365, and you want all the users in your organization to stop using all other cloud storage apps and start using OneDrive. Here's what you might want to do:  
 
-1.   Go to your **Cloud Discovery Dashboard** and under **Categories**, filter apps by **Cloud Storage**. Then sort the results by **Users** or **IP addresses**, and check to see which app is most popular.  
+1. Go to your **Cloud Discovery Dashboard** and under **Categories**, filter apps by **Cloud Storage**. Then sort the results by **Users** or **IP addresses**, and check to see which app is most popular.  
 
-2.   You can see which users are using other apps. You can also drill down into those apps, and notify users that you want them to migrate to OneDrive, as follows:
+2. You can see which users are using other apps. You can also drill down into those apps, and notify users that you want them to migrate to OneDrive, as follows:
 
-    1.  In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.  
+   1.  In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.  
 
-    2.  Choose the arrow ![Arrow icon](./media/arrow-icon.png "arrow icon") and choose **Export**.  
+   2.  Choose the arrow ![Arrow icon](./media/arrow-icon.png "arrow icon") and choose **Export**.  
 
 ### Find more secure alternatives  
 The Cloud App Security service catalog can help you find alternatives that work for your organization, instead of risky apps that your users might be using.  

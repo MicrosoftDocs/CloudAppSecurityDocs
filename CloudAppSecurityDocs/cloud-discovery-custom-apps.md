@@ -36,20 +36,20 @@ By adding a new custom cloud app, Cloud App Security is able to match uploaded f
 
 To add a new custom cloud app:
 
-1.	In the Cloud App Security portal, click on **Discover** and then **Cloud Discovery dashboard**. 
+1. In the Cloud App Security portal, click on **Discover** and then **Cloud Discovery dashboard**. 
   
- ![cloud discovery dashboard menu](./media/cloud-discovery-dashboard-menu.png)
+   ![cloud discovery dashboard menu](./media/cloud-discovery-dashboard-menu.png)
 
-2.	In the top right corner, click the 3 dots and then select **Add new custom app**. 
+2. In the top right corner, click the 3 dots and then select **Add new custom app**. 
 
- ![add custom app menu](./media/add-custom-app-menu.png)
+   ![add custom app menu](./media/add-custom-app-menu.png)
 
-3.	Fill in the fields to define the new app record which will be listed in the Cloud App Catalog and in Cloud Discovery after it is discovered in your firewall logs.
+3. Fill in the fields to define the new app record which will be listed in the Cloud App Catalog and in Cloud Discovery after it is discovered in your firewall logs.
 
-  ![custom app](./media/add-custom-app.png)
+   ![custom app](./media/add-custom-app.png)
 
 4. Under **Domains**, fill in the unique domains that are used when accessing the custom app. These domains are used to match traffic log messages to this app. If the data source you are using doesn’t contain app URL information, make sure you fill in the **IPv4** and **IPv6** address fields.
-4.	It is recommended to add notes that will enable you to track changes for this record.
+5. It is recommended to add notes that will enable you to track changes for this record.
 
 After the app is created, it is available for you in the Cloud App Catalog.
 

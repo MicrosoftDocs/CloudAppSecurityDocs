@@ -80,8 +80,8 @@ After you've validated it and fine-tuned the policy, remove possible false posit
 
 2. To prevent future attacks, setting the policy to perform automatic governance actions. For example, in SharePoint and OneDrive you can set the policy to automatically **Suspend user**.
 
- ## See Also  
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+   ## See Also  
+   [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

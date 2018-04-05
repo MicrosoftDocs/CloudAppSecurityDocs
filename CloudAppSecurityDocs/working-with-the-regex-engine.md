@@ -58,14 +58,14 @@ The following limitations are imposed on custom regular expressions:
   
 Example expressions  
   
-||||  
-|-|-|-|  
-|**Regular expression**|**Data**|**Matches**|  
-|Colou?r (?:black&#124;blue&#124;white)|Color black<br /><br /> Color white<br /><br /> Color red|Yes<br /><br /> Yes<br /><br /> No|  
-|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|Yes<br /><br /> Yes<br /><br /> No|  
-|20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|Yes<br /><br /> Yes<br /><br /> No|  
-|d.n't\s{0,10}c.r.|Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care|Yes<br /><br /> Yes<br /><br /> No|  
- 
+
+|                                                               |                                                               |                                    |
+|---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
+|              <strong>Regular expression</strong>              |                     <strong>Data</strong>                     |      <strong>Matches</strong>      |
+|            Colou?r (?:black&#124;blue&#124;white)             |   Color black<br /><br /> Color white<br /><br /> Color red   | Yes<br /><br /> Yes<br /><br /> No |
+|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Yes<br /><br /> Yes<br /><br /> No |
+| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Yes<br /><br /> Yes<br /><br /> No |
+|                       d.n't\s{0,10}c.r.                       | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | Yes<br /><br /> Yes<br /><br /> No |
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
