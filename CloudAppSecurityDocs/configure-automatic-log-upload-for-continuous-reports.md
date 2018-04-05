@@ -36,7 +36,7 @@ ms.suite: ems
 - Disk space: 250 GB
 - CPU: 2
 - RAM: 4 GB 
-- Set your firewall as described in [Network requirements](network-requirements#log-collector)
+- Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
 
 
 ## Log collector performance
@@ -175,6 +175,3 @@ After you have verified that the logs are being uploaded to Cloud App Security a
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-    
-      
-  
