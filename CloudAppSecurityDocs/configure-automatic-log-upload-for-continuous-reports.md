@@ -36,7 +36,7 @@ ms.suite: ems
 - Disk space: 250 GB
 - CPU: 2
 - RAM: 4 GB 
-- Set your firewall as described in [Network requirements](network-requirements#log-collector)
+- Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
 
 
 ## Log collector performance

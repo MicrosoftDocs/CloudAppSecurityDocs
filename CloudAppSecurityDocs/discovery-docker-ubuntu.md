@@ -39,7 +39,7 @@ ms.suite: ems
 
 -   RAM: 4 GB
 
--   Set your firewall as described in [Network requirements](network-requirements#log-collector)
+-   Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
 
 
 ## Log collector performance
