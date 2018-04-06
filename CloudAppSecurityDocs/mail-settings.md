@@ -44,24 +44,24 @@ To set parameters for email notifications sent from Cloud App Security to admini
   
      ![mail settings config](./media/mail-settings-config.png "mail settings config")  
 
-  >[!NOTE]
-  >To change the **From email address** field to a domain of your own, refer to the instructions [here](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
+   >[!NOTE]
+   >To change the **From email address** field to a domain of your own, refer to the instructions [here](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
   
-2.  For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
+3. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
   
-    -   All template CSS files should be inline in the template.  
+   -   All template CSS files should be inline in the template.  
   
-    -   The template should have three un-editable placeholders:  
+   -   The template should have three un-editable placeholders:  
   
-         %%logo%% - a URL to your company's logo that was uploaded in the General setting page  
+        %%logo%% - a URL to your company's logo that was uploaded in the General setting page  
   
-         %%title%% - a placeholder for the title of the email, as set by the policy.  
+        %%title%% - a placeholder for the title of the email, as set by the policy.  
 
-         %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
+        %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
      
-3.  Click **Upload a template...** and select the file you created. 
+4. Click **Upload a template...** and select the file you created. 
 
-4. Then, click **Send a test email** to send yourself a test email to see an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  The following is a sample email template: 
+5. Then, click **Send a test email** to send yourself a test email to see an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  The following is a sample email template: 
 
 
 

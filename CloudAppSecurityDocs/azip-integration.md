@@ -99,17 +99,17 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 1. From the **Files** page, select the file you want to protect and then click the three dots at the end of the file's row and choose **Apply classification label**.
 
- ![protect app](./media/protect-app.png)
+   ![protect app](./media/protect-app.png)
   
-  >[!NOTE]
-  > Cloud App Security can apply Azure Information Protection on files that are up to 50 MB.  
+   >[!NOTE]
+   > Cloud App Security can apply Azure Information Protection on files that are up to 50 MB.  
 
 2. You are asked to choose one of your organization's classification labels to apply to the file, and click **Apply**. 
-![protection classification label](./media/protect-template.png)
+   ![protection classification label](./media/protect-template.png)
 
 3. After you choose a classification label and click apply, Cloud App Security will apply the classification label to the original file.
 
-5. You can also remove classification labels by choosing the **Remove classification label** option. 
+4. You can also remove classification labels by choosing the **Remove classification label** option. 
 
 
 For more information about how Cloud App Security and Azure Information Protection work together, see [Protect data against user mistakes](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake).
@@ -120,9 +120,9 @@ You can automatically apply classification labels to files by creating a file po
 
 Follow these instructions to create the file policy:
 
-1.	Create a file policy.
-2.	Set the policy including the type of file you want to detect, for example, all files where **Access level** does not equal **Internal** and where the **Owner OU** equals your finance team. 
-3.  Under governance actions for the relevant app to **Apply a classification label** and then select the label type.
+1. Create a file policy.
+2. Set the policy including the type of file you want to detect, for example, all files where **Access level** does not equal **Internal** and where the **Owner OU** equals your finance team. 
+3. Under governance actions for the relevant app to **Apply a classification label** and then select the label type.
 
    ![Apply label](./media/aip-gov-action.png)
 
