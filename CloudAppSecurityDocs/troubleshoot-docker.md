@@ -47,22 +47,22 @@ ms.suite: ems
 
 Follow this procedure to customize the certificate files you use for secure connections to the Cloud Discovery docker.
 
-1.	Open an FTP client and connect to the log collector.
+1. Open an FTP client and connect to the log collector.
 
-  ![Connect to ftp client](./media/ftp-connect.png)
+   ![Connect to ftp client](./media/ftp-connect.png)
 
-2.	Navigate to the `ssl_update` directory.
-3.	Upload new certificate files to the `ssl_update` directory (the names are mandatory).
+2. Navigate to the `ssl_update` directory.
+3. Upload new certificate files to the `ssl_update` directory (the names are mandatory).
 
-    ![Change ftp password](./media/new-certs.png)
+   ![Change ftp password](./media/new-certs.png)
 
-    1.	For FTP: Only one file is required, containing the key and certificate data, in that order, named **pure-ftpd.pem**.
+   1.  For FTP: Only one file is required, containing the key and certificate data, in that order, named **pure-ftpd.pem**.
     
-    2.	For Syslog: Three files are required: **ca.pem**, **server-key.pem** and **server-cert.pem**. If any of the files is missing, the update will not take place.
+   2.  For Syslog: Three files are required: **ca.pem**, **server-key.pem** and **server-cert.pem**. If any of the files is missing, the update will not take place.
 
-4.	In a terminal run: `docker exec -t <collector name> update_certs`. This should produce a similar output to that seen in the following screen.
+4. In a terminal run: `docker exec -t <collector name> update_certs`. This should produce a similar output to that seen in the following screen.
 
-    ![Change ftp password](./media/update-certs.png)
+   ![Change ftp password](./media/update-certs.png)
 
 ## See Also
 [Deploy Cloud Discovery](set-up-cloud-discovery.md)

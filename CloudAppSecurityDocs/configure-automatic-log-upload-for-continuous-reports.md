@@ -50,71 +50,71 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector  
   
-1.  Go to the automated upload setting page:  
-    In the Cloud App Security portal, click the settings icon ![settings icon](./media/settings-icon.png "settings icon"), followed by  **Log collectors**.  
+1. Go to the automated upload setting page:  
+   In the Cloud App Security portal, click the settings icon ![settings icon](./media/settings-icon.png "settings icon"), followed by  **Log collectors**.  
   
-3.  For each firewall or proxy from which you want to upload logs, create a matching data source:  
+2. For each firewall or proxy from which you want to upload logs, create a matching data source:  
   
-    a.  Click **Add data source**.  
+   a.  Click **Add data source**.  
   
-    b.  **Name** your proxy or firewall.  
+   b.  **Name** your proxy or firewall.  
   
-    c.  Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that is not listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
+   c.  Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that is not listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
   
-    d.  Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.  
+   d.  Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.  
   
-    e.  Set the **Receiver type** to either **FTP** or **Syslog**. For **Syslog**, choose **UDP** or **TCP**.  
+   e.  Set the **Receiver type** to either **FTP** or **Syslog**. For **Syslog**, choose **UDP** or **TCP**.  
   
-    f.  Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
+   f.  Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
   
-4.  Go to the **Log collectors** tab at the top.  
+3. Go to the **Log collectors** tab at the top.  
   
-    a.  Click **Add log collector**.  
+   a.  Click **Add log collector**.  
   
-    b.  Give the log collector a **name**.  
+   b.  Give the log collector a **name**.  
   
-    c.  Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration and generate an access token.  
-![discovery data sources](./media/discovery-data-sources.png)
+   c.  Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration and generate an access token.  
+   ![discovery data sources](./media/discovery-data-sources.png)
   
-  > [!NOTE] 
-  > - A single Log collector can handle multiple data sources.
-  > - Copy the contents of the screen because you will use it when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information includes information about which port the Syslog listener is listening on.
-4.  If you accept the [end-user license terms](https://go.microsoft.com/fwlink/?linkid=862492), **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare. Then, unzip the file using the password you received in the portal.  
+   > [!NOTE] 
+   > - A single Log collector can handle multiple data sources.
+   > - Copy the contents of the screen because you will use it when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information includes information about which port the Syslog listener is listening on.
+4. If you accept the [end-user license terms](https://go.microsoft.com/fwlink/?linkid=862492), **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare. Then, unzip the file using the password you received in the portal.  
   
 ###	Step 2 – On-premises deployment of the virtual machine and network configuration   
 
 > [!NOTE] 
 > The following steps describe the deployment in Hyper-V. The deployment steps for VM hypervisor are slightly different.  
 
-1.  Open the Hyper-V Manager.  
+1. Open the Hyper-V Manager.  
   
-2.  Select **New** and then **Virtual Machine** and click **Next**.  
- ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
+2. Select **New** and then **Virtual Machine** and click **Next**.  
+   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
   
-3.  Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.  
+3. Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.  
   
-4.  Select **Generation 1** and click **Next**.  
+4. Select **Generation 1** and click **Next**.  
   
-5.  Change the **Startup memory** to **4096 MB**.  
+5. Change the **Startup memory** to **4096 MB**.  
         
 6. Check **Use Dynamic Memory** for this virtual machine and click **Next**.  
   
-7.  If available, choose the network **Connection** and click **Next**.  
+7. If available, choose the network **Connection** and click **Next**.  
   
-8.  Choose **Use an existing virtual hard disk** and select the **.vhd** file that was included in the Zip file you downloaded.  
+8. Choose **Use an existing virtual hard disk** and select the **.vhd** file that was included in the Zip file you downloaded.  
   
-9.  Click **Next** and then click **Finish**.  
-    The machine is added to your Hyper-V environment.  
+9. Click **Next** and then click **Finish**.  
+   The machine is added to your Hyper-V environment.  
   
-9. Click on the machine in the **Virtual Machines** table and click **Start**.   
+10. Click on the machine in the **Virtual Machines** table and click **Start**.   
   
-10. Connect to the Log Collector virtual machine to see if it has been assigned a DHCP address: 
-Click on the virtual machine and select **Connect**. You should see the login prompt. If you see an IP address, then you can connect to the virtual machine using a terminal/SSH tool.  If you do not see an IP address, log in using the Hyper-V/VMWare connection tools with the credentials you copied down when you created the Log Collector previously. You can change the password and configure the virtual machine using the network configuration utility by running the following command:
-```
-sudo network_config
-```
-> [!NOTE]
-> The virtual machine is pre-configured to obtain an IP address from a DHCP server. If you need to configure a static IP address, default gateway, hostname, DNS servers, and NTPS, you can use the **network_config** utility or perform changes manually.
+11. Connect to the Log Collector virtual machine to see if it has been assigned a DHCP address: 
+    Click on the virtual machine and select **Connect**. You should see the login prompt. If you see an IP address, then you can connect to the virtual machine using a terminal/SSH tool.  If you do not see an IP address, log in using the Hyper-V/VMWare connection tools with the credentials you copied down when you created the Log Collector previously. You can change the password and configure the virtual machine using the network configuration utility by running the following command:
+    ```
+    sudo network_config
+    ```
+    > [!NOTE]
+    > The virtual machine is pre-configured to obtain an IP address from a DHCP server. If you need to configure a static IP address, default gateway, hostname, DNS servers, and NTPS, you can use the **network_config** utility or perform changes manually.
 
 
 At this point, your log collector should be connected to your network and should be able to reach the Cloud App Security portal.  
@@ -175,6 +175,3 @@ After you have verified that the logs are being uploaded to Cloud App Security a
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-    
-      
-  

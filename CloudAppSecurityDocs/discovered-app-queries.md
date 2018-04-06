@@ -73,11 +73,11 @@ To make investigation even simpler, you can now create custom queries and save t
 
 3. In the **Save query** popup, name your query.
 
- ![new query](./media/new-query.png)
+   ![new query](./media/new-query.png)
 
 4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query. 
 
- ![open query](./media/open-query.png)
+   ![open query](./media/open-query.png)
 
 
 Cloud App Security also provides you with **Suggested queries** and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your discovered apps by using the following optional suggested queries:

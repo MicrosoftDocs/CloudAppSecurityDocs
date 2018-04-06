@@ -33,6 +33,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "cloud-app-security"
+    "dest": "cloud-app-security",
+    "markdownEngineName": "markdig"
   }
 }

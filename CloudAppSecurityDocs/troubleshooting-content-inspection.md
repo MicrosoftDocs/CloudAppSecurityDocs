@@ -27,6 +27,7 @@ ms.suite: ems
 ---
 
 # Troubleshooting content inspection
+
 |Content inspection status|Description|
 |----|----|
 |Completed|The content inspection completed successfully.|
@@ -49,5 +50,4 @@ ms.suite: ems
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
+

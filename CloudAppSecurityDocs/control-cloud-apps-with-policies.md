@@ -99,18 +99,18 @@ Policy templates help you set the correct filters and configurations necessary t
   
 To create a policy from **Policy templates**, perform the following steps:  
   
-1.  In the console, click on **Control** followed by **Templates**.  
+1. In the console, click on **Control** followed by **Templates**.  
   
-     ![](./media/create-policy-from-template.png)  
+    ![](./media/create-policy-from-template.png)  
   
-2.  Click the **+** at the far right of the row of the template you want to use. A create policy page opens, containing the pre-defined configuration of the template.  
+2. Click the **+** at the far right of the row of the template you want to use. A create policy page opens, containing the pre-defined configuration of the template.  
   
-3.  Modify the template as needed for your custom policy. Every property and field of this new template-based policy can be modified according to your needs.  
-> [!NOTE] 
->When using the policy filters, **Contains**  searches only for full words – separated by comas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for *malware.exe*, you find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”. 
-     **Equals** searches only for the complete string, for example if you search for *malware.exe* it finds malware.exe but not malware.exe.txt.  
-4.  After you create the new template-based policy, a link to the new policy appears in the **Linked policies** column in the policy template table next to the template from which the policy was created.   
-     You can create as many policies as you want from each template and they will all be linked to the original template, allowing you to track all policies built using the same template.  
+3. Modify the template as needed for your custom policy. Every property and field of this new template-based policy can be modified according to your needs.  
+   > [!NOTE] 
+   >When using the policy filters, **Contains**  searches only for full words – separated by comas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for *malware.exe*, you find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”. 
+    **Equals** searches only for the complete string, for example if you search for *malware.exe* it finds malware.exe but not malware.exe.txt.  
+4. After you create the new template-based policy, a link to the new policy appears in the **Linked policies** column in the policy template table next to the template from which the policy was created.   
+    You can create as many policies as you want from each template and they will all be linked to the original template, allowing you to track all policies built using the same template.  
   
 Alternatively, you can **create a policy during investigation**. If you are investigating the **Activity log**, **Files** or **Accounts**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.  
   
