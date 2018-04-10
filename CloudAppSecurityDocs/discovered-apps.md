@@ -63,7 +63,7 @@ Cloud discovery enables you to dive even deeper into your organization’s cloud
  	 
 For example, you can differentiate between different SharePoint sites.
 
-This is supported only in firewalls and proxies that contain target URL data. See the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery#supported-firewalls-and-proxies).
+This is supported only in firewalls and proxies that contain target URL data. See the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![sub-domain information](./media/discovery-domains.png) 
 
@@ -120,15 +120,15 @@ There are a number of reasons why you may want to delete your Cloud Discovery da
   
 To delete Cloud Discovery data:  
   
-1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
+1. In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
-2.  Click the **Delete data** tab.  
+2. Click the **Delete data** tab.  
   
-     It is important to be sure you want to delete data before continuing - it cannot be undone and it deletes **all** Cloud Discovery data in the system.  
+    It is important to be sure you want to delete data before continuing - it cannot be undone and it deletes **all** Cloud Discovery data in the system.  
   
-3.  Click the **Delete** button.  
+3. Click the **Delete** button.  
   
-     ![delete data](./media/delete-data.png "delete data")  
+    ![delete data](./media/delete-data.png "delete data")  
   
    > [!NOTE]  
    >  The deletion process takes a few minutes and is not immediate.  

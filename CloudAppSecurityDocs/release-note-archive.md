@@ -189,16 +189,16 @@ Released June 18, 2017
 
 #### New Features
 
--	You can now require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option.
--	You can now filter for **Add impersonation role assignment** activities in the Activity log. This activity enables you to detect when an admin has granted an **Application Impersonation** role to any user or system account, using the cmdlet **New-ManagementRoleAssignment**. This role allows the impersonator to perform operations by using the permissions associated with the impersonated account, instead of the permissions associated with the impersonator’s account.
-Cloud Discovery Improvements:
--	Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username received in the discovery traffic logs will be matched and replaced by the Azure AD username enabling the following new features:
+- You can now require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option.
+- You can now filter for **Add impersonation role assignment** activities in the Activity log. This activity enables you to detect when an admin has granted an **Application Impersonation** role to any user or system account, using the cmdlet **New-ManagementRoleAssignment**. This role allows the impersonator to perform operations by using the permissions associated with the impersonated account, instead of the permissions associated with the impersonator’s account.
+  Cloud Discovery Improvements:
+- Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username received in the discovery traffic logs will be matched and replaced by the Azure AD username enabling the following new features:
   -	You can investigate Shadow IT usage by Azure Active Directory user.
   -	You can correlate the discovered cloud app use with the API collected activities.
   -	You can then create custom logs based on Azure AD user groups. For example, a Shadow IT report for a specific Marketing department.
--	Improvements were made to the Juniper syslog parser. It now supports the welf and sd-syslog formats.
--	Improvements were made to the Palo Alto parser for better application discovery.
--	To verify that logs are being successfully uploaded, you can now see the status of your log collectors in the Cloud App Security portal. 
+- Improvements were made to the Juniper syslog parser. It now supports the welf and sd-syslog formats.
+- Improvements were made to the Palo Alto parser for better application discovery.
+- To verify that logs are being successfully uploaded, you can now see the status of your log collectors in the Cloud App Security portal. 
 
 #### General improvements:
 -	Built-in IP address tags and custom IP tags are now considered hierarchically, with custom IP tags taking precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence, but there is a custom IP tag that identifies it as **Corporate** the custom category and tags will take precedence.
@@ -359,8 +359,8 @@ Released January 22, 2017
 -	The activity descriptions have been improved for clarity and consistency. Each activity now provides a feedback button, so if there are some that you don’t understand or have a question about, you can let us know. 
  
 **Improvements**  
--	A new governance action was added for Office 365 that enables you to remove all external users of a file. For instance, this enables you to implement policies that **remove external shares from files with internal only classification**.
--	Improved identification of external users in SharePoint online. When filtering for the “external users” group, app@sharepoint system account will not show up.
+- A new governance action was added for Office 365 that enables you to remove all external users of a file. For instance, this enables you to implement policies that **remove external shares from files with internal only classification**.
+- Improved identification of external users in SharePoint online. When filtering for the “external users” group, app@"sharepoint" system account will not show up.
 
 
 
@@ -443,11 +443,11 @@ Released November 13, 2016
 -	Cloud App Security now supports for Microsoft Azure Information Protection including enhanced integration and auto-provisioning. You can filter your Files and set File policies using the Tag Secure Classification and then set the classification label you want to view. The labels also indicate whether the classification was set by someone in your organization or by people from another tenant (External). You can also set activity policies, based on the Azure Information Protection classification labels and enable automatic scan for classification labels in Office 365. For more information on how to take advantage of this great new feature, see [Integrating with Azure Information Protection](azip-integration.md).
  
 **Improvements**
--	Improvements were made to the Cloud App Security activity log: 
-   -	Office 365 events from the Security and Compliance Center are now integrated with Cloud App Security and are visible in the **Activity log**.
-   -	All Cloud App Security activity is registered in the Cloud App Security activity log as administrative activity.
--	To help you investigate file-related alerts, in each alert that results from a file policy, you can now view the list of activities that were performed on the matched file.
--	The impossible travel algorithm in the anomaly detection engine was improved to provide better support for small tenants. 
+- Improvements were made to the Cloud App Security activity log: 
+  -    Office 365 events from the Security and Compliance Center are now integrated with Cloud App Security and are visible in the **Activity log**.
+  -    All Cloud App Security activity is registered in the Cloud App Security activity log as administrative activity.
+- To help you investigate file-related alerts, in each alert that results from a file policy, you can now view the list of activities that were performed on the matched file.
+- The impossible travel algorithm in the anomaly detection engine was improved to provide better support for small tenants. 
  
 **Minor improvements**
 -	The **Activity export limit** was raised to 10,000. 

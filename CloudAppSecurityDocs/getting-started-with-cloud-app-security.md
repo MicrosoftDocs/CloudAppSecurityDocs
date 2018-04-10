@@ -148,7 +148,7 @@ Recommended task: Configure important settings
 3. Enter the IP range **details**, **location**, **tags**, and **category**.
 4. Choose **Create**.
 
- Now you can use IP tags when you create policies, and when you filter and create continuous reports.
+   Now you can use IP tags when you create policies, and when you filter and create continuous reports.
 
 **To create continuous reports**
 

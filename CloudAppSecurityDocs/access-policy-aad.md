@@ -52,12 +52,12 @@ Azure Active Directory conditional access policies and Cloud App Security sessio
 
 1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with the Cloud App Security proxy. 
 
-  > [!NOTE]
-  > Only apps that were [deployed with proxy](proxy-deployment-aad.md) will be affected by this policy.
+   > [!NOTE]
+   > Only apps that were [deployed with proxy](proxy-deployment-aad.md) will be affected by this policy.
 
 2. Route users to the Cloud App Security proxy by selecting the **Use proxy enforced restrictions** in the **Session** blade.
 
- ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
+   ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
 
 ## Create a Cloud App Security access policy 
 
@@ -66,11 +66,11 @@ To create a new access policy, follow this procedure:
 1. In the portal, select **Control** followed by **Policies**.
 2. In the **Policies** page, click **Create policy** and select **Access policy**.  
 
- ![Create access policy](./media/access-policy-menu.png)
+   ![Create access policy](./media/access-policy-menu.png)
 
 3. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
 
- ![New access policy](./media/access-policy-screen.png)
+   ![New access policy](./media/access-policy-screen.png)
 
 4. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
      

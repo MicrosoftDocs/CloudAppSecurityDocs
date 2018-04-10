@@ -40,8 +40,8 @@ For each policy, set the following parameters:
  
 2. Provide a **Policy name** and **Description**.  
 
-3. Create a filter for the apps you want to monitor by clicking **Add filter**. 
-You can select a specific app, an app **Category**, or filter by **Name**, **Domain, and **Risk factor**, and click **Save**.
+3. Create a filter for the apps you want to monitor by clicking <strong>Add filter</strong>. 
+   You can select a specific app, an app <strong>Category</strong>, or filter by <strong>Name</strong>, <strong>Domain, and **Risk factor</strong>, and click <strong>Save</strong>.
 
 4. Under **Apply to**, set how you want the usage to be filtered. The usage being monitored can be filtered in two different ways:  
   

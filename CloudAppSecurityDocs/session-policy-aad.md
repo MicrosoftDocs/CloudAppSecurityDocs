@@ -51,81 +51,81 @@ Azure Active Directory conditional access policies and Cloud App Security sessio
 
 1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with the Cloud App Security proxy. 
 
-  > [!NOTE]
-  > Only apps that were [deployed with proxy](proxy-deployment-aad.md) will be affected by this policy.
+   > [!NOTE]
+   > Only apps that were [deployed with proxy](proxy-deployment-aad.md) will be affected by this policy.
 
 2. Route users to the Cloud App Security proxy by selecting the **Use proxy enforced restrictions** in the **Session** blade.
 
- ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
+   ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
 
 ## Create a Cloud App Security session policy 
 
 To create a new session policy, follow this procedure:
 
 1. In the portal, select **Control** followed by **Policies**.
-3. In the **Policies** page, click **Create policy** and select **Session policy**.  
+2. In the **Policies** page, click **Create policy** and select **Session policy**.  
 
- ![Create session policy](./media/create-session-policy.png)
+   ![Create session policy](./media/create-session-policy.png)
 
-4. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
+3. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
 
- ![New session policy](./media/new-session-policy.png)
+   ![New session policy](./media/new-session-policy.png)
 
-5. In the **Session control type** field: 
+4. In the **Session control type** field: 
 
-    1. Select **Monitor all activities** if you only want to monitor activities by users.
+   1. Select **Monitor all activities** if you only want to monitor activities by users.
 
-    2. Select **Monitor all activities & control file download** if you want to monitor  user activities and take additional actions, such as block or protect downloads for users.
+   2. Select **Monitor all activities & control file download** if you want to monitor  user activities and take additional actions, such as block or protect downloads for users.
 
-    ![session policy control type](./media/session-policy-control-type.png)
+      ![session policy control type](./media/session-policy-control-type.png)
 
-6. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
+5. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
 
-     - **Device tags**: Use this filter to identify unmanaged devices.
+   - **Device tags**: Use this filter to identify unmanaged devices.
 
-     - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
+   - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
 
-     - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
+   - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
 
-     - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native client** and should be tested against your mobile and desktop apps for each cloud app.
+   - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native client** and should be tested against your mobile and desktop apps for each cloud app.
          
-         ![native client support](./media/user-agent-tag.png)
+       ![native client support](./media/user-agent-tag.png)
 
-       >[!NOTE]
-       >Session policies don’t support mobile and desktop apps. Make sure to test session policies to see that they don’t interfere with mobile and desktop app functionality. If necessary, exclude mobile and desktop apps from session policies.
+     >[!NOTE]
+     >Session policies don’t support mobile and desktop apps. Make sure to test session policies to see that they don’t interfere with mobile and desktop app functionality. If necessary, exclude mobile and desktop apps from session policies.
 
      ![session policy activity source](./media/session-policy-activity-filters.png)
 
-7. If you selected the option to **Monitor all activities & control file download**:
+6. If you selected the option to **Monitor all activities & control file download**:
 
-    1. Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These can include the following options:
+   1. Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These can include the following options:
 
-        - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
+      - **Classification label** - Use this filter if your organization uses Azure Information Protection, and your data has been protected by its Classification labels. Here you will then be able to filter files based on the Classification label you applied to them. For more information about integration between Cloud App Security and Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
 
-        - **File name** - Use this filter to apply the policy to specific files.
+      - **File name** - Use this filter to apply the policy to specific files.
 
-        - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
+      - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
 
-         ![session policy file filters](./media/session-policy-file-filters.png)
+        ![session policy file filters](./media/session-policy-file-filters.png)
 
         
-    2. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and file content.
+   2. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and file content.
  
-     ![session policy content inspection](./media/session-policy-content-inspection.png)
+      ![session policy content inspection](./media/session-policy-content-inspection.png)
 
-    3. Under **Actions**, select one of the following: 
+   3. Under **Actions**, select one of the following: 
 
-        - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
+      - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
 
-        - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
+      - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
 
-        - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
+      - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
-         ![session policy actions](./media/session-policy-actions.png)
+        ![session policy actions](./media/session-policy-actions.png)
 
-10. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
+7. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
 
-    ![session policy alert](./media/session-policy-alert.png)
+   ![session policy alert](./media/session-policy-alert.png)
 
 
 ## How session monitoring works
