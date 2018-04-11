@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,14 @@ ms.suite: ems
 ---
 
 # What's new with Microsoft Cloud App Security
+
+## Cloud App Security release 120
+Released April 8, 2018
+
+-	For Office 365 and Azure AD we are now gradually rolling out the ability to detect internal applications as user account activities performed by the Office 365 and Azure AD applications (both internal and external). This enables you to create policies that will alert you if an application performs unexpected and unauthorized activities. 
+-	When exporting an app permissions list to csv, additional fields such as publisher, permissions level and community usage are included to assist with the compliance and investigation process.
+-	The ServiceNow connected app was improved so that internal service activities no longer register as having been performed by “Guest” and no longer trigger false positive alerts. These activities are now represented as N/A like all other connected apps.
+
 
 ## Cloud App Security release 119
 Released March 18, 2018
