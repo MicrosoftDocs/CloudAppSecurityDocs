@@ -132,7 +132,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
 21. Click **Save changes**.
 
-22. Go back to the **Enabled APIs** list. Click **Google Apps Marketplace API**. 
+22. Go back to the **Enabled APIs** list. Click **Apps Marketplace SDK**. 
       
 23. Select the **Configuration** tab. 
   
