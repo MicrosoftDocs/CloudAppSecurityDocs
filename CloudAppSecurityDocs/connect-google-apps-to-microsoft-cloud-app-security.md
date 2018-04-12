@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/10/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -60,7 +60,7 @@ This section provides instructions for connecting Cloud App Security to your exi
   
    -   Google Drive API  
   
-   -   Google Apps Marketplace SDK  
+   -   Google Apps Marketplace API  
   
    -   Gmail API  
             
@@ -132,7 +132,7 @@ This section provides instructions for connecting Cloud App Security to your exi
 
 21. Click **Save changes**.
 
-22. Go back to the **Enabled APIs** list. Click **Google Apps Marketplace SDK**. 
+22. Go back to the **Enabled APIs** list. Click **Apps Marketplace SDK**. 
       
 23. Select the **Configuration** tab. 
   
