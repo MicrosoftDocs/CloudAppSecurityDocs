@@ -291,7 +291,7 @@ The detection server used by Cloud App Security is a standard Network Prevent fo
 2. Under **ICAP** > **Response Filtering**, change the **Ignore Responses Smaller Than** value to 1.
 
 
-3. And add "application/<em>" to the list of **Inspect Content Type</em>*.
+3. And add "application/<em>" to the list of **Inspect Content Type</em>**.
      ![inspect content type](./media/icap-inspect-content-type.png)
 
 4. Click **Save**
