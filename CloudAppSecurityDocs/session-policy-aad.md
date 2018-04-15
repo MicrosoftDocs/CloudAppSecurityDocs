@@ -73,13 +73,15 @@ To create a new session policy, follow this procedure:
 
 4. In the **Session control type** field: 
 
-   1. Select **Monitor all activities** if you only want to monitor activities by users.
+   1. Select **Monitor only** if you only want to monitor activities by users. This will create a Monitor only policy in which, all sign-ins, heuristic downloads, and Activity typeswill be downloaded, for the apps you selected.
 
-   2. Select **Monitor all activities & control file download** if you want to monitor  user activities and take additional actions, such as block or protect downloads for users.
+   2. Select **Control file download (with DLP)** if you want to monitor user activities and take additional actions, such as block or protect downloads for users.
 
       ![session policy control type](./media/session-policy-control-type.png)
+   
+   3. Select **Block activities** to block specific activities which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action, and the specific activities you selected will raise alerts on if you select the **Test** action and have alerts turned on.
 
-5. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
+1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
 
    - **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -96,7 +98,7 @@ To create a new session policy, follow this procedure:
 
      ![session policy activity source](./media/session-policy-activity-filters.png)
 
-6. If you selected the option to **Monitor all activities & control file download**:
+6. If you selected the option to **Control file download (with DLP)**:
 
    1. Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These can include the following options:
 
@@ -115,11 +117,11 @@ To create a new session policy, follow this procedure:
 
    3. Under **Actions**, select one of the following: 
 
-      - **Allow**: Set this action to explicitly allow download according to the policy filters you set.
+      - **Test (Monitor all activities)**: Set this action to explicitly allow download according to the policy filters you set.
 
-      - **Block**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
+      - **Block (Block file download and monitor all activities)**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
 
-      - **Protect**: If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
+      - **Protect (Apply classification label to download and monitor all activities)**: This is only available if you selected **Control file download (with DLP)** under **Session policy**. If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
         ![session policy actions](./media/session-policy-actions.png)
 
