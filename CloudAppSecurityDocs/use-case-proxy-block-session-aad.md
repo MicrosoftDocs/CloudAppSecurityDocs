@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -71,7 +71,7 @@ After completing this task, proceed to the Cloud App Security portal and create 
 
    ![New session policy](./media/new-session-policy.png)
 
-5. Under **Session control type**, select **Monitor all activities and control file download**. This gives you the ability to monitor everything your users do within a Salesforce session, and gives you control to block and protect downloads in real time.
+5. Under **Session control type**, select **Control file download (with DLP)**. This gives you the ability to monitor everything your users do within a Salesforce session, and gives you control to block and protect downloads in real time.
 
    ![session policy control type](./media/session-policy-control-type.png)
 
