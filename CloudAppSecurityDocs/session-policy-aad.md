@@ -73,7 +73,7 @@ To create a new session policy, follow this procedure:
 
 4. In the **Session control type** field: 
 
-   1. Select **Monitor only** if you only want to monitor activities by users. This will create a Monitor only policy in which, all sign-ins, heuristic downloads, and Activity typeswill be downloaded, for the apps you selected.
+   1. Select **Monitor only** if you only want to monitor activities by users. This will create a Monitor only policy in which, all sign-ins, heuristic downloads, and Activity types will be downloaded, for the apps you selected.
 
    2. Select **Control file download (with DLP)** if you want to monitor user activities and take additional actions, such as block or protect downloads for users.
 
