@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 4/17/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -37,7 +37,7 @@ There are two types of reports you can generate:
 - **Continuous reports** analyze all logs that are forwarded from your network using Cloud App Security’s log collector. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define.
 
 ## Log process flow: From raw data to risk assessment  
-The process of generating a risk assessment consists of the following steps and takes between a few minutes to several hours depending of the amount of data processed.  
+The process of generating a risk assessment consists of the following steps and takes between a few minutes to several hours depending on the amount of data processed.  
 
 -   **Upload** – Web traffic logs from your network are uploaded to the portal.  
 
@@ -64,8 +64,8 @@ Cloud Discovery utilizes the data in your traffic logs. The more detailed your l
 - Action taken (allowed/blocked)
 
 Cloud Discovery cannot show or analyze attributes that are not included in your logs.
-For example, **Cisco ASA Firewall** standard log format does not contain the **Amount of uploaded bytes per transaction** nor **Username**, and does not contain **Target URL** (but only target IP).
-Therefore, these attributes will not be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps we be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6. 
+For example, **Cisco ASA Firewall** standard log format does not contain the **number of uploaded bytes per transaction** nor **Username**, and does not contain **Target URL** (but only target IP).
+Therefore, these attributes will not be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps will be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6. 
 
 
 In order to successfully generate a Cloud Discovery report, your traffic logs must meet the following conditions:
@@ -106,7 +106,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 > [!NOTE]
 > Cloud Discovery supports both IPv4 and IPv6 addresses.
 
-If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information see [Use a custom log parser](custom-log-parser.md).
+If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
 
 
 Data attributes (according to vendor documentation):

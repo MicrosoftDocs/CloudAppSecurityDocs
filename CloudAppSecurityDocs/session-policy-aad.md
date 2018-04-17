@@ -136,7 +136,7 @@ To create a new session policy, follow this procedure:
    ![session policy alert](./media/session-policy-alert.png)
 
 
-## Monitor the session <a name="monitor-session"></a>
+## Monitor all activities <a name="monitor-session"></a>
 
 When you create a session policy, each user session that matches the policy is redirected to the proxy session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
 
@@ -169,7 +169,7 @@ To download the exported log:
 2. In the table, select the relevant report from the list of **Proxy traffic logs** and click download ![download button](./media/download-button.png). 
 
 
-## Block downloads <a name="block-download"></a>
+## Block all downloads <a name="block-download"></a>
 
 When **Block** is set as the **Action** you want to take in the Cloud App Security proxy session policy, the proxy prevents a user from downloading a file in accordance with the policy’s file filters. A download event is recognized by the proxy for each SAML app and when a user initiates this event, the proxy intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, the proxy returns a **Download restricted** message to the user and replaces the downloaded file with a text file that contains a customizable message to the user, which can be configured from the proxy session policy.  
 
