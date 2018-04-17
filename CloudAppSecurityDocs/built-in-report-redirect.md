@@ -26,12 +26,12 @@ ms.suite: ems
 
 ---
 
-# How to find built-in deprecated reports
+# How to find built-in deprecating reports
 
 
 In an ongoing effort to improve our Cloud App Security reporting, we are updating the functionality of built-in reports by embedding this experience in other parts of the portal.
 
-This table helps you recreate the deprecating reports by using other Cloud App Security functionality:
+This table helps you view the information that was provided by the deprecating reports by using other Cloud App Security functionality:
 
 |Report type|Built-in report name|Description|New location of the data|
 |----|----|----|----|----|
