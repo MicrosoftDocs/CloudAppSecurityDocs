@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/15/2018
+ms.date: 4/17/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,7 +34,13 @@ ms.suite: ems
 
 Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities. 
 
-For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Session policies enable you to set these user-session controls. 
+For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Session policies enable you to set these user-session controls and allow access and enables you to:
+
+- [Monitor all activities](#monitor-session)
+- [Block all downloads](#block-download)
+- [Block specific activities](#block-activities)
+- [Protect files on download](#protect-download)
+ 
 
 ## Prerequisites to using session policies
 
@@ -130,7 +136,7 @@ To create a new session policy, follow this procedure:
    ![session policy alert](./media/session-policy-alert.png)
 
 
-## How session monitoring works
+## Monitor the session <a name="monitor-session"></a>
 
 When you create a session policy, each user session that matches the policy is redirected to the proxy session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
 
@@ -163,14 +169,17 @@ To download the exported log:
 2. In the table, select the relevant report from the list of **Proxy traffic logs** and click download ![download button](./media/download-button.png). 
 
 
-## How block download works <a name="block-download"></a>
+## Block downloads <a name="block-download"></a>
 
 When **Block** is set as the **Action** you want to take in the Cloud App Security proxy session policy, the proxy prevents a user from downloading a file in accordance with the policy’s file filters. A download event is recognized by the proxy for each SAML app and when a user initiates this event, the proxy intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, the proxy returns a **Download restricted** message to the user and replaces the downloaded file with a text file that contains a customizable message to the user, which can be configured from the proxy session policy.  
 
-## How to protect download works <a name="protect-download"></a>
+## Block specific activities <a name="block-activities"></a>
 
-When **Protect** is set as the **Action** to be taken in the Cloud App Security proxy session policy, the proxy enforces the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in Azure and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security
- policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
+When **Block activities** is set as the **Activity type**, you can select specific activities to block in specific apps. All activities from selected apps will be monitored (and reported in the Activity log) and the specific activities you select will be blocked if you select the **Block** action, and the specific activities you selected will raise alerts on if you select the **Test** action and have alerts turned on.
+
+## Protect files on download <a name="protect-download"></a>
+Select **Block activities** to block specific activities which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action, and the specific activities you selected will raise alerts on if you select the **Test** action and have alerts turned on.
+When **Protect** is set as the **Action** to be taken in the Cloud App Security proxy session policy, the proxy enforces the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in Azure and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
  
  
 ## See Also  
