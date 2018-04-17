@@ -52,7 +52,6 @@
 #### [Activity filters and queries](activity-filters-queries.md)
 ### [Files](file-filters.md)
 ### [Accounts](accounts.md)
-### [Built-in report reference](built-in-report-reference.md)
 ### [Manage app permissions](manage-app-permissions.md)
 ### [Monitor apps](monitor-alerts.md)
 #### [Manage alerts](managing-alerts.md)
