@@ -65,8 +65,9 @@
 #### [File policies](data-protection-policies.md)
 ##### [Content Inspection](content-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
-#### [Access policies](access-policy-aad.md)
-#### [Session policies](session-policy-aad.md)
+#### [Conditional Access App Control policies]
+##### [Access policies](access-policy-aad.md)
+##### [Session policies](session-policy-aad.md)
 #### [Policy template reference](policy-template-reference.md)
 ### [Govern connected apps](governance-actions.md)
 ### [Govern discovered apps](governance-discovery.md)
