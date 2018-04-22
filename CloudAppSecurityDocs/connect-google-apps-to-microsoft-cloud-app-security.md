@@ -61,7 +61,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
    -   Google Drive API  
   
-   -   Apps Marketplace API  
+   -   Apps Marketplace SDK  
   
    -   Gmail API  
             
