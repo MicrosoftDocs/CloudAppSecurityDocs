@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 # Working with the RegEx engine
  
-Cloud App Security's content inspection policies leverage RegEx for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
+Microsoft Cloud App Security's content inspection policies leverage RegEx for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   

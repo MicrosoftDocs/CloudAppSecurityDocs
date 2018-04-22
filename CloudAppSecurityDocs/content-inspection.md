@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,8 +26,13 @@ ms.suite: ems
 
 ---
 
+
+*Applies to: Microsoft Cloud App Security*
+
+
+
 # Content inspection
-This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
+This article describes the process Microsoft Cloud App Security follows when performing DLP content inspection on data in your cloud. 
 
 
 Cloud App Security content inspection works as follows:

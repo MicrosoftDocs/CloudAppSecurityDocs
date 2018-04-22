@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,13 +26,17 @@ ms.suite: ems
 
 ---
 
+
+*Applies to: Microsoft Cloud App Security*
+
+
 # Governing connected apps
 Governance enables you to control what your users do, in real time, across apps. 
 For connected apps, you can apply governance actions to files or activities.
-Governance actions are integrated actions you can run on files or activities directly from Cloud App Security to control what your users do, in real time, across connected apps. 
+Governance actions are integrated actions you can run on files or activities directly from Microsoft Cloud App Security to control what your users do, in real time, across connected apps. 
 
 > [!NOTE]
-> When Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action. 
+> When Microsoft Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action. 
 
 
 ### File governance actions  

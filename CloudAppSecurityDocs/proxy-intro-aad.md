@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/6/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,6 +25,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 # Protect apps with Microsoft Cloud App Security proxy
 
@@ -32,7 +34,7 @@ ms.suite: ems
 > This is a preview feature.
 
 
-In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact, you want to be able to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It is important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, the Cloud App Security proxy delivers these capabilities in a holistic and integrated experience.
+In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact, you want to be able to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It is important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, the Microsoft Cloud App Security proxy delivers these capabilities in a holistic and integrated experience.
 
 ## How it works
 

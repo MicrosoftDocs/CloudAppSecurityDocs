@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,8 +26,11 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
+
 # Investigate
-After Cloud App Security runs in your cloud environment, you'll need a stage of learning and investigating how to use the tools in Cloud App Security to gain a deeper understanding of what's happening in your cloud environment. Then, based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk.
+After Microsoft Cloud App Security runs in your cloud environment, you'll need a stage of learning and investigating how to use the tools in Microsoft Cloud App Security to gain a deeper understanding of what's happening in your cloud environment. Then, based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk.
 
 This topic describes how to perform an investigation to get a better understanding of your cloud environment.  
 

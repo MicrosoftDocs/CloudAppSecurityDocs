@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,13 @@ ms.suite: ems
 
 ---
 
-# Connect apps 
-App connectors leverage the APIs of app providers to enable greater visibility and control by Cloud App Security over the apps you connect to.  
+*Applies to: Microsoft Cloud App Security*
 
-Cloud App Security leverages the APIs provided by the cloud provider, each service has its own framework and API limitations. Cloud App Security worked with the services to optimize the usage of the APIs and to ensure the best performance. Taking into account the different limitations the services impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the Cloud App Security engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
+
+# Connect apps 
+App connectors leverage the APIs of app providers to enable greater visibility and control by Microsoft Cloud App Security over the apps you connect to.  
+
+Microsoft Cloud App Security leverages the APIs provided by the cloud provider, each service has its own framework and API limitations. Microsoft Cloud App Security worked with the services to optimize the usage of the APIs and to ensure the best performance. Taking into account the different limitations the services impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the Cloud App Security engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
 
 ## Multi-instance support
 

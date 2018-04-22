@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/17/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.app: cloud-app-security
@@ -26,10 +26,14 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
+
+
 # How to find built-in deprecating reports
 
 
-In an ongoing effort to improve our Cloud App Security reporting, we are updating the functionality of built-in reports by embedding this experience in other parts of the portal.
+In an ongoing effort to improve our Microsoft  Cloud App Security reporting, we are updating the functionality of built-in reports by embedding this experience in other parts of the portal.
 
 This table helps you view the information that was provided by the deprecating reports by using other Cloud App Security functionality:
 

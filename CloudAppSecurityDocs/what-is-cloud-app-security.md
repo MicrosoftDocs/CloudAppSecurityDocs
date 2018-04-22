@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,7 +25,11 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What is Cloud App Security
+
+*Applies to: Microsoft Cloud App Security*
+
+
+# What is Microsoft Cloud App Security
 
 > [!NOTE]
 > For information about Advanced Security Management and Cloud App Security for Office 365, see [Get started with Advanced Security Management](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
