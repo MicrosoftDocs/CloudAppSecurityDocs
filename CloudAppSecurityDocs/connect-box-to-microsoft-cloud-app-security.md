@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,8 +26,11 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
+
 # Connect Box to Microsoft Cloud App Security
-This section provides instructions for connecting Cloud App Security to your existing Box account using the App Connector APIs.  
+This section provides instructions for connecting Microsoft Cloud App Security to your existing Box account using the App Connector APIs.  
   
 ## How to connect Box to Cloud App Security  
   

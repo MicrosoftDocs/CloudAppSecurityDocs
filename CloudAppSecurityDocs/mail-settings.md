@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,12 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
 
 ##  <a name="mailsettings"></a> Set email notification preferences  
 
-To set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved, follow this procedure. For information about the Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md). 
+To set parameters for email notifications sent from Microsoft Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved, follow this procedure. For information about the Microsoft Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md). 
 
 
 1. In the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings**, and then select the **Mail settings** tab.  

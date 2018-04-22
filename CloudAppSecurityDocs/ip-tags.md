@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/18/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,7 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
-  
+*Applies to: Microsoft Cloud App Security*
+ 
+ 
 #  <a name="IPtagsandRanges"></a> Working with IP ranges and tags
 
 To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges, which allow you to tag and categorize appropriately and customize the way logs and alerts are displayed and investigated. <br></br>  
