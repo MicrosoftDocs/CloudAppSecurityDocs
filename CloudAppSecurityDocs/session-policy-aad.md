@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/17/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,14 +25,14 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+*Applies to: Microsoft Cloud App Security*
 
 # Session policies 
 
 > [!NOTE]
 > This is a preview feature.
 
-Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities. 
+Microsoft Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities. 
 
 For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app, but also limit the download of sensitive files or require that certain documents be protected upon download. Session policies enable you to set these user-session controls and allow access and enables you to:
 

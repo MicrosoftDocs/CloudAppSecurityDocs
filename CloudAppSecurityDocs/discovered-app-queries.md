@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,6 +26,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+*Applies to: Microsoft Cloud App Security*
 
 # Discovered app filters and queries
 

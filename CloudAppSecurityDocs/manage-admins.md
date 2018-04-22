@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,9 +26,13 @@ ms.suite: ems
 
 ---
 
+
+*Applies to: Microsoft Cloud App Security*
+
+
 ## Managing admin access
 
-Cloud App Security supports Role-based access control. By default, the following Office 365 and Azure AD admin roles have access to Cloud App Security:
+Microsoft Cloud App Security supports Role-based access control. By default, the following Office 365 and Azure AD admin roles have access to Microsoft Cloud App Security:
 
 - Global administrator and Security administrator: Admins with **Full access** have full permissions in Cloud App Security to add admins, add policies and settings, upload logs and perform governance actions.
 

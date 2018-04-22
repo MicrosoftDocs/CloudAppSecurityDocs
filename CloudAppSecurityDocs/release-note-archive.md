@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,6 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+*Applies to: Microsoft Cloud App Security*
+
 
 # Past-release archive of Microsoft Cloud App Security
 
@@ -272,8 +275,7 @@ Released April 24, 2017
 
 - For Microsoft work accounts (Office 365 and Azure Active Directory), Cloud App Security groups different user identifiers such as proxy addresses, aliases, SID and more under a single account. All aliases related to an account will appear under the primary email address. Based on the list of user identifiers, for activities whose actor is a user identifier, the actor will be displayed as the primary user name UPN (User Principal Name). Based on the UPN, groups will be assigned and policies applied. This will improve investigation of activities and fuse all related activities to the same session for anomalies and group based policies. This feature will be gradually rolled out over the next month.
 
-- The Robot tag was added as a possible risk factor in the Browser Use built-in report. Now, in addition to browser use being tagged as outdated, you can see when browser use was performed by a robot. Learn more about the [built-in reports](built-in-report-reference.md).
-
+- The Robot tag was added as a possible risk factor in the Browser Use built-in report. Now, in addition to browser use being tagged as outdated, you can see when browser use was performed by a robot. 
 - When creating a content inspection file policy, you can now set the filter to include only files with at least 50 matches.
 
 

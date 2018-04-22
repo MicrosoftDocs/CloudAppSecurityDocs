@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,9 +25,13 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+*Applies to: Microsoft Cloud App Security*
+
+
 # Policy templates
 
-The following is a list of all the policy templates that exist in Cloud App Security. We recommend starting policy creation based on an existing template whenever possible for ease of use.
+The following is a list of all the policy templates that exist in Microsoft Cloud App Security. We recommend starting policy creation based on an existing template whenever possible for ease of use.
 
 |Risk category|Template name|Description|
 |-----|----|----|

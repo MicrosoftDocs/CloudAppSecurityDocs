@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,13 +26,17 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+*Applies to: Microsoft Cloud App Security*
+
+
 # Activity filters and queries
 
 ## Activity filters
 
 Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
   
-- Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.  
+- Activity ID - Search only for specific activities by their ID. This filter is very useful when you connect Microsoft Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.  
   
 - Activity objects – Search for the objects the activity was performed on. This filter applies to file, folder, user or app objects. 
   - Activity object ID - the ID of the object (file, folder, user or app ID).

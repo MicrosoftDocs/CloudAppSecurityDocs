@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,9 @@ ms.suite: ems
 
 ---
 
-# Troubleshooting the Cloud App Security Cloud Discovery Docker
+*Applies to: Microsoft Cloud App Security*
+
+# Troubleshooting the Microsoft Cloud App Security Cloud Discovery Docker
 
 ## Changing the FTP password
 

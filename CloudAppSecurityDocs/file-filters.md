@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,12 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
 # Files
 
 
-To provide data protection, Cloud App Security gives you visibility into all the files from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. 
+To provide data protection, Microsoft Cloud App Security gives you visibility into all the files from your connected apps. After you connect Microsoft Cloud App Security to an app using the App connector, Microsoft Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. 
 
 For example, you can use the **Files** page to secure externally shared files labeled as **confidential**, as follows:
 After you connect an app to Cloud App Security, you can integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **confidential**. If you see that there are **confidential** files that are shared outside your organization by filtering the **Collaborators** filter to exclude your domain, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them and apply automatic governance actions to them, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
