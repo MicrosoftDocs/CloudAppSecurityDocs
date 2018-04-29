@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to block downloads of sensitive data to unmanaged devices using Cloud App Security proxy| Microsoft Docs
-description: This topic describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devicesusing Azure AD proxy capabilities.
+title: How to block downloads of sensitive data to unmanaged devices using Cloud App Security Conditional Access App Control| Microsoft Docs
+description: This topic describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 
-# Blocking downloads of sensitive information using the Microsoft Cloud App Security proxy
+# Blocking downloads of sensitive information using Microsoft Cloud App Security Conditional Access App Control
 
 
 Today's IT admin is stuck between a rock and hard place: You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. On the other hand, you want to protect the company's assets, and that includes proprietary and privileged information. How can you enable your employees to access your cloud apps, while protecting your data? **This use case allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
@@ -38,7 +38,7 @@ Today's IT admin is stuck between a rock and hard place: You want to enable your
 An account manager in your organization wants to check something in Salesforce from home over the weekend, on their personal laptop. The Salesforce data may include client credit card information or personal information. The home PC is unmanaged, meaning that if they download documents from Salesforce onto it, it may be infected with malware or if it is lost or stolen, it may not be password protected and anyone who finds it has access to sensitive information. 
 
 ## The solution
-Protect your organization by monitoring and controlling cloud app use using Azure AD conditional access and the Cloud App Security proxy.  
+Protect your organization by monitoring and controlling cloud app use using Azure AD conditional access and Microsoft Cloud App Security Conditional Access App Control.  
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Cloud App Security session policies allow you to further restrict a session base
 ### Step 1: Create an Azure AD conditional access policy
 
 1. Create an Azure AD conditional access policy with assigned users and app.
-2. Select **Use proxy enforced restrictions** under session controls within the conditional access policy.   
+2. Select **Use Conditional Access App Control enforced restrictions** under session controls within the conditional access policy.   
 
    ![Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
 
@@ -132,7 +132,7 @@ After completing this task, proceed to the Cloud App Security portal and create 
  
    ![session policy report](./media/session-policy-report.png)
 
-4. In the policy report, you can see which logins where redirected to the proxy for session control, and which files were downloaded or blocked from the monitored sessions.
+4. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
 
 
 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -85,7 +85,7 @@ Released October 29, 2017
     -	Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices.
     -	Control access from non-corporate networks or risky IP addresses.
   
-  For more information, see [Protect apps with proxy](proxy-intro-aad.md).
+  For more information, see [Protect apps with Conditional Access App Control](proxy-intro-aad.md).
 
 -	We are gradually rolling out the ability to filter according to specific service activity names. This new Activity Type filter is more granular, to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the **Run command**, and now you can filter for specific EXO cmdlets. The activity name can also be seen in the Activity drawer under **Type (in app)**. This capability will eventually replace the Activity type filter.  
 

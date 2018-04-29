@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -50,23 +50,33 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
       - Accessing and viewing the Governance log 
       - Accessing and viewing the Manage snapshot reports page 
 
+- App/instance admin: Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected here. For example, if you give a user admin permission to your Box European instance, the admin will be able to see only data that relates to this app instance, whether it's files, activities, policies or alerts, as follows:
+      - Activities page - only activities regarding the tagged entities
+      - Alerts - only alerts relating to the specific app
+      - Policies - can view all policies and can edit or create only policies that deal exclusively with the app/instance
+      - Account - only accounts for the specific app/instance
+      - App permissions - only permissions for the specific app/instance
+      - Files page - only files from the specific app/instance
+      - Conditional Access App Control - No permissions
+      - Cloud Discovery activity - No permissions
+      - Security extensions - permissions only for API token with user permissions
+      - Governance actions - only for the specific app/instance 
+
 For more information, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
 You can also add additional admins to Cloud App Security, without adding users to Azure Active Directory administrative roles, by performing the following steps:
 
 1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admins**. 
 
-2. Add the admins who should have access to Cloud App Security.
+2. Click the plus to add the admins who should have access to Cloud App Security.
   
-      
-3. Next, click the drop-down to set what type of access the admin has, **Full access** or **Read only and manage alerts**.
+  ![add admins](./media/add-admin.png)
+    
+3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, or **App/Instance admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
      >[!NOTE]
-      >Any admin, whose access is limited to **Read only and manage alerts**, who attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
-
-   ![manage admin access](./media/manage-admin-access.png "manage admin access")  
-
-4. Click **Close**.  
+      >Any admin, whose access is limited who attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
+4. Click **Add admin**.  
 
    >[!NOTE]
     >Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
@@ -81,8 +91,6 @@ To add additional admins to Cloud App Security:
 1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. 
 
 2. Add the admins who should have access to Cloud App Security. Select their access level and click **Close**.
-
-
 
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
