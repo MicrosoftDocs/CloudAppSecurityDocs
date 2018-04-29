@@ -51,7 +51,9 @@ To drill down into more specific activities, you can expand the basic filter by 
 
  ![advanced activity log filter](media/activity-log-filter-advanced.png)
 
-
+> [!NOTE] 
+> The Legacy tag is added to any activity policy that use the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
+ 
 ## The Activity drawer
 
 ### Working with the Activity drawer
