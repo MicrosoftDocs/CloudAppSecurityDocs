@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What's  new with Cloud App Security| Microsoft Docs
+title: What's new with Cloud App Security| Microsoft Docs
 description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,6 +29,14 @@ ms.suite: ems
 
 
 # What's new with Microsoft Cloud App Security
+
+
+## Cloud App Security release 122
+Released April 29, 2018
+
+-	Gradual rollout: You can now set administrative permissions to Microsoft Cloud App Security admins per app. For example, you can set a specific user as an administrator for only G Suite. This would enable the user to view and modify information in Microsoft Cloud App Security only when it relates exclusively to G Suite. For more information, see [Managing admin access](manage-admins.md).
+- Gradual rollout: Okta admin roles are now visible in Microsoft Cloud App Security and are available for each role as a tag under **Settings** > **User groups**.
+
 
 ## Cloud App Security release 121
 Released April 22, 2018
