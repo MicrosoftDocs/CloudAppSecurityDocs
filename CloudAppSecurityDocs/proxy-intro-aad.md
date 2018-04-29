@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Protect with Microsoft Cloud App Security proxy | Microsoft Docs
-description: This topic provides information about how the Cloud App Security proxy works.
+title: Protect with Microsoft Cloud App Security Conditional Access App Control| Microsoft Docs
+description: This topic provides information about how the Cloud App Security Conditional Access App Control reverse proxy works.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,19 +28,19 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 
-# Protect apps with Microsoft Cloud App Security proxy
+# Protect apps with Microsoft Cloud App Security Conditional Access App Control
 
 > [!NOTE]
 > This is a preview feature.
 
 
-In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact, you want to be able to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It is important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, the Microsoft Cloud App Security proxy delivers these capabilities in a holistic and integrated experience.
+In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact, you want to be able to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It is important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, Microsoft Cloud App Security delivers these capabilities in a holistic and integrated experience with Conditional Access App Control.
 
 ## How it works
 
-The Cloud App Security proxy is integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a conditional access policy is applied to. After you’ve determined the conditions, you can route users to the Cloud App Security proxy where you can apply access and session controls.
+Conditional Access App Control utilizes a reverse proxy architecture and is uniquely integrated with Azure AD conditional access. Azure AD conditional access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define *who* (for example a user, or group of users) and *what* (which cloud apps) and *where* (which locations and networks) a conditional access policy is applied to. After you’ve determined the conditions, you can route users to the Microsoft Cloud App Security where you can protect data with Conditional Access App Control by applying access and session controls.
 
-After a user is routed to the Cloud App Security proxy, their app access and sessions can be monitored and controlled in real time based on access and session policies. Access and session policies are utilized within the Cloud App Security portal to further refine filters and set actions to be taken on a user. With the access and session policies, you can:
+Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are utilized within the Cloud App Security portal to further refine filters and set actions to be taken on a user. With the access and session policies, you can:
 
 -	**Block on download**: You can block the download of sensitive documents. For example, on unmanaged devices.
 
@@ -55,22 +55,22 @@ After a user is routed to the Cloud App Security proxy, their app access and ses
 
 ### How session control works
 
-The proxy’s session control is built on top of conditional access. After you control access to an app, you can redirect the user sessions to the proxy’s session control instead of directly to the app. From then on, user requests and responses go through the proxy rather than directly to the app.
+Creating a session policy with Conditional Access App Control enables you to control user sessions by redirecting the user through a reverse proxy instead of directly to the app. From then on, user requests and responses go through Microsoft Cloud App Security rather than directly to the app.
 
-To keep the user within the session, the proxy replaces all the relevant URLs, Java scripts, and cookies within the app session with proxy URLs. For example: if the app returns a page with links whose domains end with myapp.com, the proxy replaces the links with domains ending with something like: myapp.com.us.cas.ms 
+To keep the user within the session, all the relevant URLs, Java scripts, and cookies within the app session are replaced with Microsoft Cloud App Security URLs. For example: if the app returns a page with links whose domains end with myapp.com, the link is replaced with domains ending with something like: myapp.com.us.cas.ms 
 
 This method does not require you to install anything on the device. This is ideal when monitoring sessions from unmanaged devices. 
 
-After a session is directed through the proxy, the proxy can perform the following:
+After a session is directed through Microsoft Cloud App Security the following actions can be performed:
 1. Inspect the traffic for user activities
-3. Display the identified activities in the Cloud App proxy portal
-2. Save the traffic logs and analyze them
-3. Enable the admin to export the traffic logs
-4. Enforce policies on the session
+2. Display the identified activities in the Microsoft Cloud App Security Activity log
+3. Save the traffic logs and analyze them
+4. Enable the admin to export the traffic logs
+5. Enforce policies on the session
 
 ## Managed device identification
 
-The proxy enables you to create policies that take into account whether a device is managed or not. To identify whether a device is managed or not, the proxy leverages:
+Conditional Access App Control enables you to create policies that take into account whether a device is managed or not. To identify whether a device is managed or not, the feature leverages:
 
 -	Compliant devices 
 -	Domain-joined devices 
@@ -78,19 +78,19 @@ The proxy enables you to create policies that take into account whether a device
  
  
 ### Compliant and domain joined devices
-Azure AD conditional access enables compliant and domain-joined device information to be passed directly to the Cloud App Security proxy. From there, an access policy or a session policy can be developed that uses device state as a filter.
+Azure AD conditional access enables compliant and domain-joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter.
 For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
 
 ### Client-certificate authenticated devices
 
-The proxy device identification mechanism can request authentication from relevant devices using client certificates. This enables you to either leverage existing client certificates already deployed in your organization or to roll out new client certificates to managed devices, and then use the presence of those certificates to set access and session policies. For information on how to deploy client certificates see [Deploy proxy for Azure AD apps](proxy-deployment-aad.md).
+The device identification mechanism can request authentication from relevant devices using client certificates. This enables you to either leverage existing client certificates already deployed in your organization or to roll out new client certificates to managed devices, and then use the presence of those certificates to set access and session policies. For information on how to deploy client certificates see [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md).
  
 ## Supported apps and clients
 
-The proxy currently supports apps that are configured with SAML single sign on in Azure AD. 
+Conditional Access App Control currently supports apps that are configured with SAML single sign on in Azure AD. 
 
 > [!NOTE]
-> - The proxy also supports apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
+> - Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
 > - Office 365 applications are not configured with SAML so they are not currently supported.
 
 Session control is available for any browser on any major platform (mobile apps and desktop apps are currently not supported). By natively integrating with Azure AD, any apps that are configured with SAML single sign-on in Azure AD can be supported, including the following featured apps:
@@ -127,7 +127,7 @@ Additional apps are being continuously on-boarded to session control. If you are
 
 
 ## See Also  
-[Deploy the Cloud App Security proxy](proxy-deployment-aad.md)   
+[Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
