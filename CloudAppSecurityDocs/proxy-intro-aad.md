@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/6/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -120,6 +120,8 @@ Session control is available for any browser on any major platform (mobile apps 
 -	DocuSign
 
 -	HighQ 
+
+-   Concur
 
 Additional apps are being continuously on-boarded to session control. If you are interested in a specific app that is not mentioned here, [send us details about the app](mailto:casfeedback@microsoft.com) and the use case you are interested in, and we will on-board it.
 
