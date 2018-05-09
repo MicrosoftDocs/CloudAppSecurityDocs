@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,8 +26,11 @@ ms.suite: ems
 
 ---
 
+
+*Applies to: Microsoft Cloud App Security*
+
 # Basic setup
-The following procedure gives you instructions for customizing the Cloud App Security portal.
+The following procedure gives you instructions for customizing the Microsoft Cloud App Security portal.
 
 ## Prerequisites 
 For portal access, it is necessary to add the following IP addresses to your Firewall's whitelist to provide access for the Cloud App Security portal:  

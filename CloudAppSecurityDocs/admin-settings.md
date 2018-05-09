@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,9 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
 
 ##  <a name="Adminsettings"></a> Customize your admin settings  
-To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following settings:  
+To set up your preferences as an admin of Microsoft Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following settings:  
   
 1.  Click **Account settings**. Here you can set and renew your password for access to the Cloud App Security portal.  
   

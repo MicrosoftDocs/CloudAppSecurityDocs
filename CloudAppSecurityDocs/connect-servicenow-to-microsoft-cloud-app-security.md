@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,9 +26,12 @@ ms.suite: ems
 
 ---
 
+
+*Applies to: Microsoft Cloud App Security*
+
 # Connect ServiceNow to Microsoft Cloud App Security
 
-This section provides instructions for connecting Cloud App Security to your existing ServiceNow account using the app connector API. 
+This section provides instructions for connecting Microsoft Cloud App Security to your existing ServiceNow account using the app connector API. 
 
 > [!NOTE]
 >  We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0). 

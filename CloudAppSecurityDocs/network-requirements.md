@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/30/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 # Network requirements
 
-This topic provides a list of ports and IP addresses you need to allow and white list in order to work with Cloud App Security. 
+This topic provides a list of ports and IP addresses you need to allow and white list in order to work with Microsoft Cloud App Security. 
 
 
 ## View your data center

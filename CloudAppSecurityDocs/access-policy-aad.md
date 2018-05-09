@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create Cloud App Security access policies to allow and block access | Microsoft Docs
-description: This topic describes the procedure for setting up a Cloud App Security Proxy access policy to allow and block access to apps connected through Azure AD.
+description: This topic describes the procedure for setting up a Cloud App Security Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,13 +26,20 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
 
 # Access policies 
 
 > [!NOTE]
 > This is a preview feature.
 
-Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device and app. You can create access policies for any device, including devices that are not domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by leveraging existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
+
+>[!div class="step-by-step"]
+[« Session policy](session-policy-aad.md)<br>
+[Use case »](use-case-proxy-block-session-aad.md)
+
+
+Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device and app. You can create access policies for any device, including devices that are not domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by leveraging existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
 
 > [!NOTE]
 > Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities. 
@@ -40,8 +47,8 @@ Cloud App Security access policies enable real-time monitoring and control over 
 ## Prerequisites to using access policies
 
 - Azure AD Premium P2 license
-- The relevant apps should be [deployed with proxy](proxy-deployment-aad.md)
-- An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to the Cloud App Security proxy, as described below.
+- The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
+- An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to Microsoft Cloud App Security, as described below.
 
 > [!NOTE]
 > - Access policies also support apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
@@ -50,14 +57,14 @@ Cloud App Security access policies enable real-time monitoring and control over 
 
 Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. To set up a conditional access policy in Azure AD, follow this procedure:
 
-1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with the Cloud App Security proxy. 
+1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with Conditional Access App Control. 
 
    > [!NOTE]
-   > Only apps that were [deployed with proxy](proxy-deployment-aad.md) will be affected by this policy.
+   > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
 
-2. Route users to the Cloud App Security proxy by selecting the **Use proxy enforced restrictions** in the **Session** blade.
+2. Route users to Microsoft Cloud App Security by selecting the **Use Conditional Access App Control enforced restrictions** in the **Session** blade.
 
-   ![Proxy restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
+   ![Conditional Access App Control restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
 
 ## Create a Cloud App Security access policy 
 
@@ -94,10 +101,12 @@ To create a new access policy, follow this procedure:
 
 
 
-
+>[!div class="step-by-step"]
+[« PREVIOUS: Session policies](session-policy-aad.md)
+[NEXT: Blocking downloads of sensitive information using Conditional Access App Control »](use-case-proxy-block-session-aad.md)
  
 ## See Also  
-[Blocking downloads on unmanaged devices using Azure AD proxy capabilities](use-case-proxy-block-session-aad.md)   
+[Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   

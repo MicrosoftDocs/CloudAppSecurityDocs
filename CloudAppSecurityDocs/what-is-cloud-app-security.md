@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,7 +25,11 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What is Cloud App Security
+
+*Applies to: Microsoft Cloud App Security*
+
+
+# What is Microsoft Cloud App Security
 
 > [!NOTE]
 > For information about Advanced Security Management and Cloud App Security for Office 365, see [Get started with Advanced Security Management](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
@@ -49,7 +53,7 @@ Cloud App Security integrates visibility with your cloud by
 -   using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
 -   sanctioning and unsanctioning apps in your cloud.  
 -   using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.  
--	using proxy protection to get real-time visibility and control over access and activities performed within your cloud apps.
+-	using Conditional Access App Control protection to get real-time visibility and control over access and activities performed within your cloud apps.
 -   helping you have continuous control by setting, and then continually fine-tuning, policies.  
 
 ![Cloud App Security architecture diagram](./media/proxy-architecture.png)  
@@ -84,8 +88,8 @@ To connect an app and extend protection, the app administrator authorizes Cloud 
 
 Cloud App Security uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Cloud App Security works with app providers to optimize the use of APIs, and to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Cloud App Security engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they are spread over a longer period. Expect some policies to run for several hours or several days.  
 
-### Proxy protection
-The Cloud App Security proxy gives you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With the proxy, you can protect your organization: 
+### Conditional Access App Control protection
+Microsoft Cloud App Security Conditional Access App Control utilizes reverse proxy architecture to give you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With Conditional Access App Control, you can protect your organization: 
 -	Avoid data leaks by blocking downloads before they happen
 -	Set rules that force data stored in and downloaded from the cloud to be protected with encryption
 -	Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices

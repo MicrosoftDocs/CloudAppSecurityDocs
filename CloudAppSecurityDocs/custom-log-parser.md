@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/26/2017
+ms.date: 4/22/2017
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,6 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+*Applies to: Microsoft Cloud App Security*
+
 
 # Use a custom log parser
 Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery, even if they are from a firewall or device that is not explicitly supported by Cloud App Security. 

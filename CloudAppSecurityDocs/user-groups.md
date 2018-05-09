@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,13 +25,13 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+*Applies to: Microsoft Cloud App Security*
    
 # Import user groups
 
-When you connect apps using API connectors, Cloud App Security enables you to import user groups, for example from Office 365 and Azure Active Directory.
+When you connect apps using API connectors, Microsoft Cloud App Security enables you to import user groups, for example from Office 365 and Azure Active Directory.
 There are two types of user groups: 
-- Automatic groups </br>Automatic groups are created by default by Cloud App Security. For example, there is an automatic user group called **External** which combines all users from all apps who are external to your organization and have access to files or were in user activities in your tenant.
+- Automatic groups </br>Automatic groups are created by default by Microsoft Cloud App Security. For example, there is an automatic user group called **External** which combines all users from all apps who are external to your organization and have access to files or were in user activities in your tenant.
  The following automatic groups exist in Cloud App Security:
   - External
   - Dropbox administrator

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,12 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
 # Alerts
 To view alerts:
 
-In the Cloud App Security portal, click on Alerts.
+In the Microsoft Cloud App Security portal, click on Alerts.
 
 
 ![Alert menu](./media/alert-menu.png)
