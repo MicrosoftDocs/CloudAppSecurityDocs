@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/9/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -79,7 +79,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query. 
 
-   ![open query](./media/open-query.png)
+   ![open query](./media/discovered-app-query.png)
 
 
 Cloud App Security also provides you with **Suggested queries** and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your discovered apps by using the following optional suggested queries:

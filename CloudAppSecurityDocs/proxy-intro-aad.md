@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/6/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,6 +32,10 @@ ms.suite: ems
 
 > [!NOTE]
 > This is a preview feature.
+
+
+>[!div class="step-by-step"]
+[NEXT: Deploy Conditional Access App Control »](proxy-deployment-aad.md)
 
 
 In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact, you want to be able to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It is important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, Microsoft Cloud App Security delivers these capabilities in a holistic and integrated experience with Conditional Access App Control.
@@ -127,6 +131,8 @@ Additional apps are being continuously on-boarded to session control. If you are
 
 
 
+>[!div class="step-by-step"]
+[NEXT: Deploy Conditional Access App Control »](proxy-deployment-aad.md)
 
 ## See Also  
 [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)   
