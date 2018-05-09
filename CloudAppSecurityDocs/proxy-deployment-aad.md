@@ -35,8 +35,8 @@ ms.suite: ems
 
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Protect apps with Conditional Access App Control](proxy-intro-aad.md)
-[NEXT: Session policies »](session-policy-aad.md)
+[« Previous](proxy-intro-aad.md)
+[Next »](session-policy-aad.md)
 
 
 Follow these steps to configure Azure AD apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
