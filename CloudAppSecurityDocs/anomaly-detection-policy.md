@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/13/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -93,8 +93,20 @@ These policies look for activities within a single session with respect to the b
 **Multiple failed login attempts**
 - This detection identifies users that failed multiple login attempts in a single session with respect to the baseline learned, which could indicate on a breach attempt. 
 
+## Scope anomaly detection policies
 
-## Triaging anomaly detection alerts
+Each anomaly detection policy can be independently scoped so that it applies only to the users and groups you want to include and exclude in the policy.
+For example, you can set the Activity from infrequent county detection to ignore a specific user who travels frequently. 
+
+To scope an anomaly detection policy:
+1. Click **Control** > **Policies**, and set the **Type** filter to **Anomaly detection policy**.
+2. Click on the policy you want to scope.
+3. Under **Scope**, change the drop-down from the default setting of **All users and groups**, to **Specific users and groups**.
+4. Select **Include** to specify the users and groups for whom this policy will apply. Any user or group not selected here will not trigger a policy match for this policy.
+5. Select **Exclude** to specify users for whom this policy will not apply. Any user selected here will not trigger a policy match for this policy, even if they are members of groups selected under **Include**.
+
+
+## Triage anomaly detection alerts
 
 You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones need to be taken care of first. To do this, you need the  context for the alert, so you are able to see the bigger picture and understand whether something malicious is indeed happening.  
 
