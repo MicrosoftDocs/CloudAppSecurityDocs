@@ -35,8 +35,8 @@ ms.suite: ems
 
 
 >[!div class="step-by-step"]
-[« PREVIOUS](session-policy-aad.md)
-[NEXT »](use-case-proxy-block-session-aad.md)
+[« Session policy](session-policy-aad.md)<br>
+[Use case »](use-case-proxy-block-session-aad.md)
 
 
 Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device and app. You can create access policies for any device, including devices that are not domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by leveraging existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
