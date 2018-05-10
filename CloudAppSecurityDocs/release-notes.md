@@ -30,8 +30,6 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
-
-
 ## Cloud App Security release 122
 Released April 29, 2018
 
