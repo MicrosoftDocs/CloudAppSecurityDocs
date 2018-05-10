@@ -105,7 +105,7 @@ To scope an anomaly detection policy:
 4. Select **Include** to specify the users and groups for whom this policy will apply. Any user or group not selected here will not trigger a policy match for this policy.
 5. Select **Exclude** to specify users for whom this policy will not apply. Any user selected here will not trigger a policy match for this policy, even if they are members of groups selected under **Include**.
 
-
+ ![anomaly detection scoping](anomaly-detection-scoping.png)
 ## Triage anomaly detection alerts
 
 You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones need to be taken care of first. To do this, you need the  context for the alert, so you are able to see the bigger picture and understand whether something malicious is indeed happening.  
