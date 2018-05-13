@@ -30,6 +30,14 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+## Cloud App Security release 123
+
+Released May 13, 2018
+
+- **Anomaly detection policy scoping**:<br>
+The anomaly detection policies can now be scoped. This enables you to set each anomaly detection policy to include only specific users or groups, and to exclude specific users or groups. For example, you can set the Activity from infrequent county detection to ignore a specific user who travels frequently. 
+
+
 ## Cloud App Security release 122
 Released April 29, 2018
 
