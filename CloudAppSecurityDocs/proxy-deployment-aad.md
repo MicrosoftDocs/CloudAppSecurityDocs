@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,8 +35,8 @@ ms.suite: ems
 
 
 >[!div class="step-by-step"]
-[« Previous](proxy-intro-aad.md)
-[Next »](session-policy-aad.md)
+[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
+[Next: How to create a session policy »](session-policy-aad.md)
 
 
 Follow these steps to configure Azure AD apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
@@ -118,9 +118,8 @@ You are now ready to create [access policies](access-policy-aad.md) and [session
 
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Protect apps with Conditional Access App Control](proxy-intro-aad.md)
-[NEXT: Session policies »](session-policy-aad.md)
-
+[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
+[Next: How to create a session policy »](session-policy-aad.md)
 
 
 ## See Also  

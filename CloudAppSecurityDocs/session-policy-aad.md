@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,8 +34,8 @@ ms.suite: ems
 
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Deploy Conditional Access App Control](proxy-deployment-aad.md)
-[NEXT: Access policies »](access-policy-aad.md)
+[« PREVIOUS: Deploy Conditional Access App Control](proxy-deployment-aad.md)<br>
+[NEXT: How to create an access policy »](access-policy-aad.md)
 
 
 Microsoft Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities using the reverse proxy capabilities of Conditional Access App Control. 
@@ -188,8 +188,8 @@ Select **Block activities** to block specific activities which you can select us
 When **Protect** is set as the **Action** to be taken in the Cloud App Security session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file in accordance with the policy’s file filters. Labels are configured in the Azure Information Protection console in Azure and **Protect** must be selected within the label for the label to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who attempt to access the file must meet the permission requirements determined by the protection applied.  
  
 >[!div class="step-by-step"]
-[« PREVIOUS: Deploy Conditional Access App Control](proxy-deployment-aad.md)
-[NEXT: Access policies »](access-policy-aad.md)
+[« PREVIOUS: Deploy Conditional Access App Control](proxy-deployment-aad.md)<br>
+[NEXT: How to create an access policy »](access-policy-aad.md)
 
  
 ## See Also  
