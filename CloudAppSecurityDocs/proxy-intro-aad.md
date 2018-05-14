@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -133,6 +133,7 @@ Additional apps are being continuously on-boarded to session control. If you are
 
 >[!div class="step-by-step"]
 [NEXT: Deploy Conditional Access App Control »](proxy-deployment-aad.md)
+
 
 ## See Also  
 [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)   

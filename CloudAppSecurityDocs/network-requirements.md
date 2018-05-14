@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/14/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -58,8 +58,11 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
 > |----|----|----|
 > |US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
 > |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us3.portal.cloudappsecurity.com|
 > |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
-> 
+> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.eu2.portal.cloudappsecurity.com|
+
+
 > 
 > [!NOTE]
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
@@ -75,7 +78,9 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > |----|----|
 > |US|13.91.91.243|
 > |US2|52.184.165.82|
+> |US3|40.90.218.198<br>40.90.218.196|
 > |EU|52.174.56.180|
+> |EU2|40.81.156.154<br>40.81.156.156|
 
 ## App connector
 
@@ -93,7 +98,9 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 > |----|----|
 > |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US3|40.90.218.197<br>40.90.218.203|
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153|
 
 
 ## Third-party DLP integration
@@ -117,7 +124,9 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 > |----|----|
 > |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US3|40.90.218.197<br>40.90.218.203|
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153|
 
 ## Email server
 
@@ -140,7 +149,9 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
   |-------------|---------------------------------------------------|
   |     US      |   https://adaprodconsole.blob.core.windows.net/   |
   |     US2     | https://prod03use2console1.blob.core.windows.net/ |
+  |     US3     |https://prod5usw2console1.blob.core.windows.net/   |
   |     EU      | https://prod02euwconsole1.blob.core.windows.net/  |
+  |     EU2     |https://prod4uksconsole1.blob.core.windows.net/    |
 
 > [!NOTE]
 > - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
