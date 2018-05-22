@@ -72,7 +72,7 @@ For more information, go to [Microsoft Compliance Offerings](https://go.microsof
 ### You are the owner of your data
 - In Microsoft Cloud App Security, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
 - 
-- Admins can search for a specific user’s metadata or user’s activity. Clicking on an entity opens the [user profile page](. The profile provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user’s activity history and security alerts related to the user.
+- Admins can search for a specific user’s metadata or user’s activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user’s activity history and security alerts related to the user.
 
 -   You own your data and can cancel subscriptions and request deletion of your data at any time. If you do not renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
