@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,7 +30,7 @@ ms.suite: ems
 
 # Add custom apps to Cloud Discovery
     
-Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 15,000 cloud apps. The catalog contains publicly available cloud apps only, for which Cloud App Security provides visibility and risk information.
+Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps. The catalog contains publicly available cloud apps only, for which Cloud App Security provides visibility and risk information.
 
 In order to gain visibility into cloud apps that are excluded from the Cloud App Catalog,  Cloud App Security enables you to discover use of custom cloud apps (LOB apps) that were developed or assigned specifically for your organization.
 
