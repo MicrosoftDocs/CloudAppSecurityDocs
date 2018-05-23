@@ -40,7 +40,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
 
 ### Step 1: Stream your Azure activity logs to Event Hubs
 
-1. Stream the Azure Activity Log of your Azure subscription to an Event Hub. Follow the official guide in the Azure documentation: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
+1. Stream the Azure Activity Log of your Azure subscription to an Event Hub. Follow the official guide in the Azure documentation: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
    > [!NOTE]
    > If you have more than one Azure subscription, repeat this step for each subscription using a single Event Hub, shared across your subscriptions.
