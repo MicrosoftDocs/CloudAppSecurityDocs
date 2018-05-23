@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ ms.suite: ems
 # Blocking downloads of sensitive information using Microsoft Cloud App Security Conditional Access App Control
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Access policies](access-policy-aad.md)
+[« PREVIOUS: How to create an access policy](access-policy-aad.md)
 
 Today's IT admin is stuck between a rock and hard place: You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. On the other hand, you want to protect the company's assets, and that includes proprietary and privileged information. How can you enable your employees to access your cloud apps, while protecting your data? **This use case allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 
@@ -139,7 +139,7 @@ After completing this task, proceed to the Cloud App Security portal and create 
 
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Access policies](access-policy-aad.md)
+[« PREVIOUS: How to create an access policy](access-policy-aad.md)
 
 
 

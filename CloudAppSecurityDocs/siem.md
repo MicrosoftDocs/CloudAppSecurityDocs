@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -113,6 +113,10 @@ Where the following variables are used:
 - TOKEN is the SIEM agent token you copied in the previous step.
 
 You can type -h at any time to get help.
+
+
+## Sample activity logs<a name="siem-samples"></a>
+
 
 The following are sample activity logs sent to your SIEM:
 ```

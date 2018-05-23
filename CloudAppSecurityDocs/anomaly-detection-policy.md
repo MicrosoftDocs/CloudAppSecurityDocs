@@ -102,8 +102,8 @@ To scope an anomaly detection policy:
 1. Click **Control** > **Policies**, and set the **Type** filter to **Anomaly detection policy**.
 2. Click on the policy you want to scope.
 3. Under **Scope**, change the drop-down from the default setting of **All users and groups**, to **Specific users and groups**.
-4. Select **Include** to specify the users and groups for whom this policy will apply. Any user or group not selected here will not trigger a policy match for this policy.
-5. Select **Exclude** to specify users for whom this policy will not apply. Any user selected here will not trigger a policy match for this policy, even if they are members of groups selected under **Include**.
+4. Select **Include** to specify the users and groups for whom this policy will apply. Any user or group not selected here will not be considered a threat and will not generate an alert.
+5. Select **Exclude** to specify users for whom this policy will not apply. Any user selected here will not be considered a threat and will not generate an alert, even if they are members of groups selected under **Include**.
 
  ![anomaly detection scoping](./media/anomaly-detection-scoping.png)
 ## Triage anomaly detection alerts

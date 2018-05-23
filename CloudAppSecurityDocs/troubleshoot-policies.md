@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -33,7 +33,7 @@ ms.suite: ems
 
 |Error|Description|Resolution|
 |----|----|----|
-| **The policy <policy name> was automatically disabled due to a configuration error.**|If you get this error in Microsoft Cloud App Security, it means that you need to fix the configuration of the policy named. When you create a Microsoft Cloud App Security policy, you often make use of other objects that you created within Cloud App Security, such as IP tags or an IP range filters. If the IP tag or range you used in the policy is subsequently deleted, the policy will automatically be disabled, and you will receive this error. |In order to restore the policy, edit the policy and remove any deleted objects from its filters, and save the policy.|
+| **The policy <policy name> was automatically disabled due to a configuration error**|If you get this error in Microsoft Cloud App Security, it means that you need to fix the configuration of the policy that is indicated. When you create a Microsoft Cloud App Security policy, you often make use of other objects that you created within Cloud App Security or in the Security and Compliance Center, such as IP tags or custom sensitive types. If the IP tag or custom sensitive type you used in the policy is subsequently deleted, the policy will automatically be disabled, and you will receive this error. This might also indicate a more general configuration error such as a filter that is too complex. |In order to restore the policy, edit the policy and fix every configuration error mentioned. This usually means that you’ll need to remove any deleted objects from the policy filters and save the policy.|
 
 
 
