@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2017
+ms.date: 5/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,7 @@ ms.suite: ems
 
 
 # Set up Cloud Discovery
-Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 15,000 cloud apps that are ranked and scored based on more than 60 risk factors, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps that are ranked and scored based on more than 70 risk factors, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
 ## Snapshot and continuous risk assessment reports 
 
@@ -45,7 +45,7 @@ The process of generating a risk assessment consists of the following steps and 
 
 -   **Parse** – Cloud App Security parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.  
 
--   **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 15,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.  
+-   **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 16,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.  
 
 -   **Generate report** - A risk assessment report of the data extracted from log files is generated.   
 
