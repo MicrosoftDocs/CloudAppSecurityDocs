@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -60,11 +60,11 @@ Cloud App Security supports the following Office 365 apps:
  
 1.  In **Connected apps** page, click the plus button and select **Office 365**.  
 
-2.  In the Office 365 pop-up, click **Connect Office 365**.
+2.  In the Office 365 pop-up, click Connect Office 365.
 
-      ![connect 0365](./media/office-connect.png) 
+      ![connect 0365](./media/connect-0365.png) 
  
-3.  Click **Test now** to test the connection to Office 365. Testing may take a couple of minutes.
+3.  Click Test now to test the connection to Office 365. Testing may take a couple of minutes.
   
     ![O365 test connection](./media/o365-test-connection.png) 
  
