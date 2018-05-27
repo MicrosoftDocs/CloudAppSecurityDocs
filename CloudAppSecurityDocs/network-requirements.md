@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -130,9 +130,20 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 
 ## Email server
 
-The Cloud App Security dedicated email IP address is: 
+To enable notifications to be sent using the default template and settings, add these IP addresses to your anti-spam whitelist. The Cloud App Security dedicated email IP addresses are: 
 
-198.2.134.139 (mail1.cloudappsecurity.com)
+- 65.55.234.192/26
+- 207.46.200.0/27
+- 65.55.52.224/27
+- 94.245.112.0/27
+- 111.221.26.0/27
+- 207.46.50.192/26
+
+If you want to customize your notifications at all, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, under **Settings**, select **Mail settings** and review MailChimp’s Terms of Service and Privacy Statement and give Microsoft permission to use MailChimp on your behalf.
+
+If you don’t do this, your email notifications will be sent using all the default settings.
+
+To work with MailChimp, add this IP address to your anti-spam whitelist to enable notifications to be sent: 198.2.134.139 (mail1.cloudappsecurity.com)
 
 Make sure to whitelist this IP address with your anti-spam service to enable notifications to be sent.
 

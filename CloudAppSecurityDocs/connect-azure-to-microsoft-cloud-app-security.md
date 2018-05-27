@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -56,9 +56,7 @@ Cloud App Security connects to Azure via Event Hubs. This section provides instr
   
    ![Event hubs menu](media/azure-event-hubs.png "Azure event hubs")
 
-2. Select your Event Hub Namespace.
-  
-   ![Event hub namespace](media/azure-namespace.png "Azure namespace")
+2.  In the Azure pop-up, click **Connect Microsoft Azure**.
 
 3. In the menu, under **Entities**, click on **Event Hubs**. 
   
