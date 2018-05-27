@@ -32,7 +32,7 @@ ms.suite: ems
 # What is Microsoft Cloud App Security
 
 > [!NOTE]
-> For information about Advanced Security Management and Cloud App Security for Office 365, see [Get started with Advanced Security Management](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 Moving to the cloud increases flexibility for employees and reduces IT cost, but it also introduces new challenges and complexities for keeping your organization secure. To be able to get the full benefit of cloud applications, an IT team must find the right balance of supporting access while maintaining control, to protect critical data.  
 
