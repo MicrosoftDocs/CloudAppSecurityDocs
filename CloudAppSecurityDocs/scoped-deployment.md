@@ -44,9 +44,9 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
 
 3. To set specific groups to be monitored by Microsoft Cloud App Security, in the **Include** tab, click the plus ![plus icon](./media/plus-icon.png). <br>In the **Create new include rule** dialog, do the following:
 
-    4. Under **Type rule name**, give the rule a descriptive name.
-    5. Under **Select user groups** select all the groups you want to monitor with Cloud App Security.
-    6. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, the rule will only affect monitoring of the apps you select. That means that if you select the group **UK-users** and **Box**, Cloud App Security will only monitor Box activity for users in the UK and for all other apps, Cloud App Security will monitor all activities for all users.
+    1. Under **Type rule name**, give the rule a descriptive name.
+    2. Under **Select user groups** select all the groups you want to monitor with Cloud App Security.
+    3. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, the rule will only affect monitoring of the apps you select. That means that if you select the group **UK-users** and **Box**, Cloud App Security will only monitor Box activity for users in the UK and for all other apps, Cloud App Security will monitor all activities for all users.
      
      ![include rule](./media/include-rule.png)
 
