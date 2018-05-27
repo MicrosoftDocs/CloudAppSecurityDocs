@@ -36,6 +36,8 @@ To set parameters for email notifications sent from Microsoft Cloud App Security
 
 1. In the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings**, and then select the **Mail settings** tab.  
 
+ ![mail settings](./media/mail-settings-config.png)
+
 2. Under **Email sender identity**: If you are planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set the **From display name**, the **From email address** and the **Reply-to email address**. Microsoft Cloud App Security accomplishes this for you by using a third-party mail service called MailChimp®. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement in order to enable this - otherwise Microsoft Cloud App Security will send the notifications using the default settings.
    
    > [!NOTE]
