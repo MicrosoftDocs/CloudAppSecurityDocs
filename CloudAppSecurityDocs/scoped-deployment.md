@@ -60,8 +60,22 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
 
 The include and exclude rules you create work together to scope the overall monitoring performed by Microsoft Cloud App Security.
 
-Here's an example of include and exclude rules you can create, and the final result of what Microsoft Cloud App Security monitors after these rules are running:
+Here's an example of include and exclude rules you can create, and the final result of what Microsoft Cloud App Security monitors after these rules are running.
 
+If you create the following rules:
+
+- Exclude user group "Germany all users"
+- Include for user group "Global sales" only Office 365 activities
+- Include for user group "Sales managers" only Power BI activities
+
+The following user activities are monitored:
+
+|User|Group membership|Activities monitored|
+|----|----|----|
+|Adriana|Germany all users<br>Global sales<br>Sales managers|None|
+|Alain|Global sales|Office 365 and all sub-apps except Power BI|
+|Cornel|Global sales<br>Sales managers|Office 365 and all sub-apps|
+|Raymond|Sales managers|Power BI only|
 
 
   
