@@ -38,18 +38,18 @@ Released May 27, 2018
 -	**GDPR risk assessment added to Cloud App Catalog**<br>
 13 new risk factors were added to Microsoft Cloud App Security. These risk factors follow the checklist of the GDPR framework to enable you to assess the apps in the Cloud App Catalog according to the GDPR regulations.
 
--	**Integrate with Microsoft Data Classification Service**<br></br>
+-	**Integrate with Microsoft Data Classification Service**<br>
 Microsoft Cloud App Security now enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps. <br>
 The Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection and Microsoft Cloud App Security. It allows you to extend the same data classification framework to the third-party cloud apps that are protected by Microsoft Cloud App Security, leveraging the decisions you already made across an even greater number of apps. 
 
 -	**Connect to Microsoft Azure** (gradual roll out)<br>
 Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyond Amazon Web Services and now supports Microsoft Azure. This enables you to seamlessly connect and monitor all your Azure subscriptions with Cloud App Security. This connection provides you with a powerful set of tools to protect your Azure environment, including: 
 
-   - 	Visibility into all activities performed through the portal
+       - 	Visibility into all activities performed through the portal
 
-   - 	Ability to create custom policies to alert on unwanted behavior, as well as the ability to automatically protect possible risky users by suspending, or forcing them to sign in again.
+       - 	Ability to create custom policies to alert on unwanted behavior, as well as the ability to automatically protect possible risky users by suspending, or forcing them to sign in again.
 
-   - 	All Azure activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior in the Azure portal, such as impossible travel, suspicious mass activities and activity from a new country.<br>
+       - 	All Azure activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior in the Azure portal, such as impossible travel, suspicious mass activities and activity from a new country.<br>
 
   For more information, see [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
  
