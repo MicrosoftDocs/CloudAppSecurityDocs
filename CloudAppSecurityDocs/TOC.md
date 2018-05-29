@@ -26,7 +26,7 @@
 ### [Cloud Discovery enrichment](cloud-discovery-aad-enrichment.md)
 ### [Anonymize Cloud Discovery data](cloud-discovery-anonymizer.md)
 ## [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-### [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
+### [Connect Azure](connect-azure-to-microsoft-cloud-app-security.md)
 ### [Connect AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Connect Box](connect-box-to-microsoft-cloud-app-security.md)
 ### [Connect Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
