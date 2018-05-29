@@ -45,20 +45,20 @@ The Microsoft Data Classification Service provides a unified information protect
 -	**Connect to Microsoft Azure** (gradual roll out)<br>
 Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyond Amazon Web Services and now supports Microsoft Azure. This enables you to seamlessly connect and monitor all your Azure subscriptions with Cloud App Security. This connection provides you with a powerful set of tools to protect your Azure environment, including: 
 
-   - 	Visibility into all activities performed through the portal
+       - 	Visibility into all activities performed through the portal
 
-   - 	Ability to create custom policies to alert on unwanted behavior, as well as the ability to automatically protect possible risky users by suspending, or forcing them to sign in again.
+       - 	Ability to create custom policies to alert on unwanted behavior, as well as the ability to automatically protect possible risky users by suspending, or forcing them to sign in again.
 
-   - 	All Azure activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior in the Azure portal, such as impossible travel, suspicious mass activities and activity from a new country.<br>
+       - 	All Azure activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior in the Azure portal, such as impossible travel, suspicious mass activities and activity from a new country.<br>
 
   For more information, see [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
  
 -	**Scoped deployments**<br> (gradual roll out) 
 Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. The scoped monitoring capability is especially useful for: 
 
-   -	Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
+    -	Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
 
-   -	Licensing – If you want to monitor fewer users to stay within the limits of your Microsoft Cloud App Security licenses.
+       -	Licensing – If you want to monitor fewer users to stay within the limits of your Microsoft Cloud App Security licenses.
    For more information, see [Scoped deployment](scoped-deployment.md).
 
 -	**Breached app alert for discovered apps**<br>
