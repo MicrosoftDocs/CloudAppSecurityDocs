@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,7 +38,7 @@ To set parameters for email notifications sent from Microsoft Cloud App Security
 
  ![mail settings](./media/mail-settings-config.png)
 
-2. Under **Email sender identity**: If you are planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set the **From display name**, the **From email address** and the **Reply-to email address**. Microsoft Cloud App Security accomplishes this for you by using a third-party mail service called MailChimp®. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement in order to enable this - otherwise Microsoft Cloud App Security will send the notifications using the default settings.
+2. Under **Email sender identity**: If you are planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following: **From display name**, **From email address**, **Reply-to email address**. Microsoft Cloud App Security accomplishes this for you by using a third-party mail service called MailChimp®. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement in order to enable this - otherwise Microsoft Cloud App Security will send the notifications using the default settings.
    
    > [!NOTE]
    > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](http://www.rfc-editor.org/rfc/rfc822.txt).
