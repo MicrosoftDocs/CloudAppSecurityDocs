@@ -43,7 +43,7 @@ Microsoft Cloud App Security now enables you to utilize the Microsoft Data Class
 The Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection and Microsoft Cloud App Security. It allows you to extend the same data classification framework to the third-party cloud apps that are protected by Microsoft Cloud App Security, leveraging the decisions you already made across an even greater number of apps. 
 
 -	**Connect to Microsoft Azure** (gradual roll out)<br>
- Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyond Amazon Web Services and now supports Microsoft Azure. This enables you to seamlessly connect and monitor all your Azure subscriptions with Cloud App Security. This connection provides you with a powerful set of tools to protect your Azure environment, including: 
+Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyond Amazon Web Services and now supports Microsoft Azure. This enables you to seamlessly connect and monitor all your Azure subscriptions with Cloud App Security. This connection provides you with a powerful set of tools to protect your Azure environment, including: 
 
    - 	Visibility into all activities performed through the portal
 
@@ -54,7 +54,7 @@ The Microsoft Data Classification Service provides a unified information protect
   For more information, see [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
  
 -	**Scoped deployments**<br> (gradual roll out) 
- Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. The scoped monitoring capability is especially useful for: 
+Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. The scoped monitoring capability is especially useful for: 
 
    -	Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
 
