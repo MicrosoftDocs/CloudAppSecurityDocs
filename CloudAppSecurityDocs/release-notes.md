@@ -38,7 +38,7 @@ Released May 27, 2018
 -	**GDPR risk assessment added to Cloud App Catalog**<br>
 13 new risk factors were added to Microsoft Cloud App Security. These risk factors follow the checklist of the GDPR framework to enable you to assess the apps in the Cloud App Catalog according to the GDPR regulations.
 
--	**Integrate with Microsoft Data Classification Service**<br>
+-	**Integrate with Microsoft Data Classification Service**<br></br>
 Microsoft Cloud App Security now enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps. <br>
 The Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection and Microsoft Cloud App Security. It allows you to extend the same data classification framework to the third-party cloud apps that are protected by Microsoft Cloud App Security, leveraging the decisions you already made across an even greater number of apps. 
 
@@ -56,9 +56,9 @@ Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyon
 -	**Scoped deployments**<br> (gradual roll out) 
 Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. The scoped monitoring capability is especially useful for: 
 
-   -	Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
+    -	Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
 
-   -	Licensing – If you want to monitor fewer users to stay within the limits of your Microsoft Cloud App Security licenses.
+       -	Licensing – If you want to monitor fewer users to stay within the limits of your Microsoft Cloud App Security licenses.
    For more information, see [Scoped deployment](scoped-deployment.md).
 
 -	**Breached app alert for discovered apps**<br>
