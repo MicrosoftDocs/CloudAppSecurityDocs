@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/23/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -34,75 +34,23 @@ ms.suite: ems
 
 This section provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API.  
   
-## Setting up Azure for connection to Cloud App Security
-
-Cloud App Security connects to Azure via Event Hubs. This section provides instruction for streaming all your Activity Logs to a single Event Hub in your subscription. 
-
-### Step 1: Stream your Azure activity logs to Event Hubs
-
-1. Stream the Azure Activity Log of your Azure subscription to an Event Hub. Follow the official guide in the Azure documentation: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
-
-   > [!NOTE]
-   > If you have more than one Azure subscription, repeat this step for each subscription using a single Event Hub, shared across your subscriptions.
-
-   After completing the instructions, a new Event Hub will be created in the Namespace you chose.
- 
-   > [!NOTE]
-   > If you get an error after trying to export the Activity Logs, go to **Resource providers** in Azure, on the left menu, and make sure that ‘microsoft.insights’ is registered.
-
-### Step 2: Get a connection string to your Event Hub
-
-1. Go to the **Event Hubs - Preview** on the left menu.
+## How to connect Azure to Cloud App Security  
   
-   ![Event hubs menu](media/azure-event-hubs.png "Azure event hubs")
-
-2.  In the Azure pop-up, click **Connect Microsoft Azure**.
-
-3. In the menu, under **Entities**, click on **Event Hubs**. 
-  
-   ![Event hubs entities](media/azure-event-hubs-entities.png "Azure event hub entities")
-
-4. Select the new Event Hub created by Azure Monitor. It is named **insights-operational-logs**.
-   > [!NOTE]
-   > It may take a few minutes until the Event Hub is created.
-
-   ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
-  
-  
-5. Create a new access policy that gives Cloud App Security permission to read from the Event Hub, by clicking on **Shared access policies** and then click **Add**.
-  
-    ![Shared access policies](media/azure-shared-access-policies.png "Azure shared access policy")
-
-6. Enter a name for the new policy, and make sure to include at least the **Listen claim**. When done, click **Create**.
-  
-   ![Azure new policy](media/azure-new-policy.png "Azure new policy")
-
-7. Under **Settings** and then **Shared access policies**, click on the access policy you created.   
-  
-   ![Azure policy](media/azure-select-policy.png "Azure policy")
-
-8. In the Policy window, copy one of the connection strings by clicking on the button next to **Connection string- Primary Key** or **Connection String- Secondary Key**.
-
-### Step 3: Add Azure to Cloud App Security
- 
-1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
-  
-2. In the **App connectors** page, click the plus sign button and select **Microsoft Azure**.  
-  
-    ![connect Azure to Cloud App Security](media/azure-connect-app.png "connect Azure")  
-  
-3. In the **Connection string** field, paste the connection string you copied in the previous step.  
-  
-4. In the **Consumer group** field, type:   `$Default`
-    
-   >[!NOTE] 
-   > If you created a different consumer group to be used, use that **Consumer group** name.
-  
-5. Click **Connect** to connect and test the connection. It may take a couple of minutes. After receiving a success notice, click **Close**.  
-
-
 > [!NOTE]
-> This feature is in private preview.
+> - User must be a Global administrator in Azure AD to connect Azure to Microsoft Cloud App Security. 
+> - Cloud App Security displays activities from **all** subscriptions.
+>-  Currently, Cloud App Security monitors only ARM activities. 
+ 
+1.  In **Connected apps** page, click the plus button and select **Microsoft Azure**.  
+  
+     ![connect Azure](./media/connect-azure-menu.png) 
+
+2.  In the Azure pop-up, click **Connect Azure**.
+
+      ![connect Azure](./media/connect-azure.png) 
+ 
+> [!NOTE] 
+> After connecting Azure, data will be pulled. You will see data from then onwards.
 
 
 ## See Also  
