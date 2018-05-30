@@ -52,6 +52,7 @@
 ### [Activities](activity-filters.md)
 #### [Activity filters and queries](activity-filters-queries.md)
 ### [Files](file-filters.md)
+#### [Generate data management reports](built-in-reports.md)
 ### [Accounts](accounts.md)
 ### [Manage app permissions](manage-app-permissions.md)
 ### [Monitor apps](monitor-alerts.md)

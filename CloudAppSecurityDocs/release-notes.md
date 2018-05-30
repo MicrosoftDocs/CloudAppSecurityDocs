@@ -53,7 +53,7 @@ Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyon
 
   For more information, see [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
  
--	**Scoped deployments**<br> (gradual roll out) 
+-	**Scoped deployments** (gradual roll out) <br>
 Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. The scoped monitoring capability is especially useful for: 
 
     -	Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
