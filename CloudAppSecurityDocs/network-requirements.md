@@ -139,7 +139,7 @@ To enable notifications to be sent from the default template and settings, add t
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-If you want to customize the email sender identity, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, under **Settings**, select **Mail settings** and review MailChimp’s Terms of Service and Privacy Statement and give Microsoft permission to use MailChimp on your behalf.
+If you want to customize the email sender identity, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, under **Settings**, select **Mail settings** review MailChimp’s Terms of Service and Privacy Statement and give Microsoft permission to use MailChimp on your behalf.
 
 If you don’t do this, your email notifications will be sent using all the default settings.
 
