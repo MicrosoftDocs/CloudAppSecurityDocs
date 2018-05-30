@@ -50,7 +50,7 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
      
      ![include rule](./media/include-rule.png)
 
-4. To set specific groups or users to be excluded from monitoring, in the **Exclude** tab, click the plus ![icon](./media/plus-icon.png). <br>In the **Create new include rule** dialog, set the following parameters:
+4. To set specific groups to be excluded from monitoring, in the **Exclude** tab, click the plus ![icon](./media/plus-icon.png). <br>In the **Create new include rule** dialog, set the following parameters:
 
     1. Under **Type rule name**, give the rule a descriptive name.
     Under **Select user groups**, select all the groups you do not want Cloud App Security to monitor.

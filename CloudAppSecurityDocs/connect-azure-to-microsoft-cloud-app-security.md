@@ -45,7 +45,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
      ![connect Azure](./media/connect-azure-menu.png) 
 
-2.  In the Azure pop-up, click **Connect Azure**.
+2.  In the Azure pop-up, click **Connect Microsoft Azure**.
 
       ![connect Azure](./media/connect-azure.png) 
  

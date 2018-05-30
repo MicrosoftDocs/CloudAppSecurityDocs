@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -40,37 +40,38 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
 
 - Security reader: Has read-only permissions and can manage alerts. The Security reader is restricted from performing the following:
 
-      - Create policies or edit and change existing ones 
+   - Create policies or edit and change existing ones 
 
-      - Performing any governance actions 
+   - Performing any governance actions 
 
-      - Uploading discovery logs
+   - Uploading discovery logs
 
-      - Banning or approving third-party apps
+   - Banning or approving third-party apps
 
-      - Accessing and viewing the IP address range settings page
+   - Accessing and viewing the IP address range settings page
 
-      - Accessing and viewing any settings pages 
+   - Accessing and viewing any settings pages 
 
-      - Accessing and viewing the Discovery settings 
+   - Accessing and viewing the Discovery settings 
 
-      - Accessing and viewing the App connectors page
+   - Accessing and viewing the App connectors page
 
-      - Accessing and viewing the Governance log 
+   - Accessing and viewing the Governance log 
 
-      - Accessing and viewing the Manage snapshot reports page 
+   - Accessing and viewing the Manage snapshot reports page 
 
 - App/instance admin: Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected here. For example, if you give a user admin permission to your Box European instance, the admin will be able to see only data that relates to this app instance, whether it's files, activities, policies or alerts, as follows:
-      - Activities page - only activities regarding the tagged entities
-      - Alerts - only alerts relating to the specific app
-      - Policies - can view all policies and can edit or create only policies that deal exclusively with the app/instance
-      - Account - only accounts for the specific app/instance
-      - App permissions - only permissions for the specific app/instance
-      - Files page - only files from the specific app/instance
-      - Conditional Access App Control - No permissions
-      - Cloud Discovery activity - No permissions
-      - Security extensions - permissions only for API token with user permissions
-      - Governance actions - only for the specific app/instance 
+- 
+  - Activities page - only activities regarding the tagged entities
+  - Alerts - only alerts relating to the specific app
+  - Policies - can view all policies and can edit or create only policies that deal exclusively with the app/instance
+  - Account - only accounts for the specific app/instance
+  - App permissions - only permissions for the specific app/instance
+  - Files page - only files from the specific app/instance
+  - Conditional Access App Control - No permissions
+  - Cloud Discovery activity - No permissions
+  - Security extensions - permissions only for API token with user permissions
+  - Governance actions - only for the specific app/instance 
 
 For more information, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
