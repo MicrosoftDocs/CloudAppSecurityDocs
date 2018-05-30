@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -67,6 +67,7 @@ If you create the following rules:
 - Exclude user group "Germany all users"
 - Include for user group "Global sales" only Office 365 activities
 - Include for user group "Sales managers" only Power BI activities
+- Salesforce is connected to Microsoft Cloud App Security and no rules are set for it
 
 The following user activities are monitored:
 
@@ -77,6 +78,9 @@ The following user activities are monitored:
 |Cornel|Global sales<br>Sales managers|Office 365 and all subapps|
 |Raymond|Sales managers|Power BI only|
 
+> [!NOTE] 
+> Other apps will not be affected by the group scoping in these rules.
+> In the example, for Salesforce, all activities are monitored for all user groups.
 
   
     

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -62,7 +62,11 @@ This section provides instructions for connecting Microsoft Cloud App Security t
             "cloudwatch:Get*",  
             "cloudwatch:List*",  
             "iam:List*",  
-            "iam:Get*"  
+            "iam:Get*",
+            "s3:ListAllMyBuckets",
+            "s3:PutBucketAcl",
+            "s3:GetBucketAcl",
+            "s3:GetBucketLocation"
           ],  
           "Effect" : "Allow",  
           "Resource" : "*"  
