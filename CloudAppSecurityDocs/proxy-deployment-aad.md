@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -83,7 +83,7 @@ Follow these steps to configure Azure AD apps to be controlled by Microsoft Clou
 
 6. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both Azure AD conditional access and Session control appear. <br></br>If Session control does not appear for an app, that means it's not yet available for that specific app and you will see the **Request session control** link instead. Click on it to open a dialog and request the onboarding of the app to session control. During the Conditional Access App Control public preview period, the onboarding process will be performed together with you by the Microsoft Cloud App Security team.
   
-   ![request session control](./media/request-session-control.png)
+   ![request session control](./media/proxy-view-new-apps.png)
 
 7. Optional - Identify devices using client certificates:
 

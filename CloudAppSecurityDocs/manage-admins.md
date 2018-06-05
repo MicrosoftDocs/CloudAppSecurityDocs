@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/5/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -61,7 +61,7 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
    - Accessing and viewing the Manage snapshot reports page 
 
 - App/instance admin: Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected here. For example, if you give a user admin permission to your Box European instance, the admin will be able to see only data that relates to this app instance, whether it's files, activities, policies or alerts, as follows:
-- 
+
   - Activities page - only activities regarding the tagged entities
   - Alerts - only alerts relating to the specific app
   - Policies - can view all policies and can edit or create only policies that deal exclusively with the app/instance
