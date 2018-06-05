@@ -152,7 +152,7 @@ If you do not want to notify the user that they are being monitored, you can dis
 
 1. Under the settings cog, select **General settings**. 
 
-2. Then, under Conditional Access App Control settings, unselect the **Notify users** checkbox.
+2. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
 
     ![disable session monitoring notice](./media/disable-session-monitoring-notice.png)
 
