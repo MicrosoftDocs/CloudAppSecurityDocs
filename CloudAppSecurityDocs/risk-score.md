@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/5/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -110,7 +110,7 @@ It is important to take a minute to review and modify the default weights given 
   
 1. In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
-2. Under **Configure score metric**, slide the **Importance** to change the weight of the field or the risk category to **Ignored**, **Low**, **Medium**, **High**, or **Very High**.  
+2. Under **Score metric**, slide the **Importance** to change the weight of the field or the risk category to **Ignored**, **Low**, **Medium**, **High**, or **Very High**.  
   
 3. In addition, you can set whether certain values are either not available or not applicable in the score calculation. When included, N/A values have a negative contribution to the calculated score.  
   
