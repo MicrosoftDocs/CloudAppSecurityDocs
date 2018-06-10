@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/5/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -62,7 +62,7 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
 
 - App/instance admin: Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected here. For example, if you give a user admin permission to your Box European instance, the admin will be able to see only data that relates to this app instance, whether it's files, activities, policies or alerts, as follows:
 
-  - Activities page - only activities regarding the tagged entities
+  - Activities page - only activities regarding the specific app
   - Alerts - only alerts relating to the specific app
   - Policies - can view all policies and can edit or create only policies that deal exclusively with the app/instance
   - Account - only accounts for the specific app/instance
@@ -72,6 +72,21 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
   - Cloud Discovery activity - No permissions
   - Security extensions - permissions only for API token with user permissions
   - Governance actions - only for the specific app/instance 
+
+- Group admin: Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin will be able to view and modify information in Microsoft Cloud App Security only for that user group, as follows:
+
+  - Activities page - only activities regarding the users in the group
+  - 	Alerts - only alerts relating to the users in the group
+  - 	Policies - can view all policies and can edit or create only policies that deal exclusively with users in the group
+  - 	Account - only accounts for the specific users in the group
+  - 	App permissions – No permissions
+  - 	Files page – No permissions
+  - 	Conditional Access App Control - No permissions
+  - 	Cloud Discovery activity - No permissions
+  - 	Security extensions - permissions only for API token with users in the group
+  - 	Governance actions - only for the specific users in the group
+
+
 
 For more information, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
 
