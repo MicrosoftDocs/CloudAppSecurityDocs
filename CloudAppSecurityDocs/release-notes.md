@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,6 +29,21 @@ ms.suite: ems
 
 
 # What's new with Microsoft Cloud App Security
+
+
+## Cloud App Security release 125
+
+Released June 10, 2018
+
+
+### New investigation capability by top users: 
+Microsoft Cloud App Security added a new investigation widget to the dashboard that shows top users by the number of open threat detection alerts. This enables you to focus your threat investigation on users with the highest number of suspicious sessions.
+
+### Support for AWS S3 buckets:
+Microsoft Cloud App Security can now detect AWS S3 buckets and their sharing levels. This provides alerts and visibility into publicly accessible AWS buckets. This also enables you to create policies based on buckets and apply automatic governance. In addition, there is a new policy template available called **Publicly accessible S3 buckets (AWS)** that you can use to easily create a policy to govern your AWS storage. In order to enable these new capabilities, make sure you update your AWS connected apps by adding the new permissions described in [Connect AWS](connect-aws-to-microsoft-cloud-app-security.md).
+
+### Admin privileges based on user groups:
+You can now set administrative permissions to Microsoft Cloud App Security admins per user group. For example, you can set a specific user as an administrator for only users in Germany. This would enable the user to view and modify information in Microsoft Cloud App Security only for the user group “Germany - all users”. For more information, see [Managing admin access](manage-admins.md).
 
 
 ## Cloud App Security release 124
