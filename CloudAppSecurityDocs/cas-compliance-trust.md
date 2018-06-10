@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -142,9 +142,9 @@ Microsoft Cloud App Security supports role-based access control. Office 365 and 
 
 ## Customer controls for organizational compliance
 
-### Do not track
+### Scoped deployment
 
-Microsoft Cloud App Security enables you to set certain users to Do Not Track (DNT). This enables you to govern only specific groups using Cloud App Security, or to exclude specific groups from Cloud App Security governance.
+Microsoft Cloud App Security enables you to scope your deployment. This enables you to govern only specific groups using Cloud App Security, or to exclude specific groups from Cloud App Security governance. For more information, see [Scoped deployment](scoped-deployment.md).
 
 ### Anonymization 
 

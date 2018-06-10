@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -64,8 +64,9 @@ The following is a list of all the policy templates that exist in Microsoft Clou
 |Threat detection|Potential ransomware activity|Alert when a user uploads files to the cloud that might be infected with ransomware.|
 |Threat detection|User logon from a non-categorized IP address|Alert when a user logs on from an IP address that is not included in a specific IP range category. You can categorize IP addresses by going to the Settings page, and selecting IP address ranges.|
 |Sharing control|File shared with personal email addresses|Alert when a file is shared with a user’s personal email address.|
-|Sharing control|File shared with unauthorized domain|Alert when a file is shared with an unauthorized domain (such as your competitor).|
-|Sharing control|Shared digital certificates (file extensions)|Alert when a file containing digital certificates is publicly shared.|
+|Sharing control|File shared with unauthorized domain|Alert when file is shared with an unauthorized domain (such as your competitor).|
+|Sharing control|Shared digital certificates (file extensions)|Alert when a file containing digital certificates is publicly shared. Use this to help govern your AWS storage.|
+|Sharing control|Publicly accessible S3 buckets (AWS)|Alert when an AWS S3 bucket is publicly shared.|
 |Sharing control|Stale externally shared files|Find externally shared files that haven't been opened or modified for 6 months and remove them from your drive.|
 
 
