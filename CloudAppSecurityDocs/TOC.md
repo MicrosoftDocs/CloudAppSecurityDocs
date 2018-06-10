@@ -85,3 +85,5 @@
 ## [Troubleshooting SIEM integration](troubleshooting-siem.md)
 ## [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
 ## [Troubleshooting policies](troubleshoot-policies.md)
+# Resources
+## [Readiness roadmap](cas-resources.md)
