@@ -33,19 +33,7 @@ ms.suite: ems
 
 # Microsoft Data Classification Services integration
 
-Enterprises in the cloud live in a dynamic and bustling world in which security
-administrators monitor multiple screens across multiple systems to make sure
-your users and assets are protected. In a modern, cloud environment like this,
-Microsoft understands how important it is to make the most of your time and
-thought investments and enable you to benefit from a more holistic,
-cross-service paradigm.
-
-You may have already invested a lot of time and research to determine which data can be shared and which data may be more sensitive. You may have different
-classifications for different workloads or different sites. You may need to
-create multiple custom sensitive types to account for the myriad of files and
-file types you need to secure. And you don’t want to have to repeat this process again for each security service running on your cloud.
-
-Microsoft Cloud App Security now enables you to utilize the Microsoft Data
+Microsoft Cloud App Security enables you to utilize the Microsoft Data
 Classification Service natively, to classify the files in your cloud apps.
 Microsoft Data Classification Service provides a unified information protection
 experience across Office 365, Azure Information Protection, and Microsoft
