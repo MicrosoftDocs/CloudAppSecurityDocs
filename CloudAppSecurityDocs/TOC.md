@@ -64,9 +64,9 @@
 #### [Activity policies](user-activity-policies.md)
 #### [Anomaly detection policy](anomaly-detection-policy.md)
 #### [File policies](data-protection-policies.md)
-##### [Content Inspection](content-inspection.md)
+##### Content inspection
 ###### [Built-in content inspection](content-inspection.md)
-###### [Data Classification Service content inspection](dcs-inspection.md)
+###### [Data Classification Service integration](dcs-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 #### Conditional Access App Control policies
 ##### [Access policies](access-policy-aad.md)
