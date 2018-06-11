@@ -53,8 +53,7 @@ Cloud App Security, and allows you to extend your data classification efforts to
 
 With no additional configuration required, when creating a data leak prevention
 policy for your files in Microsoft Cloud App Security, you will automatically
-have the option to set the **Inspection method** to use the **Microsoft Data
-Classification Service**.
+have the option to set the **Inspection method** to use the **Microsoft Data Classification Service**.
 
 ![data classification service setting](./media/dcs-enable.png)
 
