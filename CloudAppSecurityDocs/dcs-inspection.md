@@ -31,7 +31,7 @@ ms.suite: ems
 
 
 
-# Integration with Microsoft Data Classification
+# Microsoft Data Classification Services integration
 
 Enterprises in the cloud live in a dynamic and bustling world in which security
 administrators monitor multiple screens across multiple systems to make sure
@@ -65,8 +65,7 @@ To enable content inspection with Data Classification Services:
 3. Choose your content inspection type by selecting the sensitive information types.
  ![data classification service setting](./media/dcs-sensitive-information-type.png)
 
-5. You can use the [default sensitive information types](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) as well as the [custom sensitive information types](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30) (which support complex patterns with Regex, keywords, and large dictionary) that you created in Office 365, and reuse them to define what happens to files
-protected by Microsoft Cloud App Security.
+5. You can use the [default sensitive information types](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) as well as the [custom sensitive information types](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30) (which support complex patterns with Regex, keywords, and large dictionary) that you created in Office 365, and reuse them to define what happens to files protected by Microsoft Cloud App Security.
 
 6. Optionally, you can unmask the last four characters of a match. By default, matches are masked and shown in their context, and include the 40 characters before and after the match. If you select this checkbox, it will unmask the last four characters of the match itself.
 
