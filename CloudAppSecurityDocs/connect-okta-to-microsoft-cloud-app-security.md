@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,9 +26,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
+
 
 # Connect Okta to Microsoft Cloud App Security
-This section provides instructions for connecting Cloud App Security to your existing Okta account using the connector APIs.  
+This section provides instructions for connecting Microsoft Cloud App Security to your existing Okta account using the connector APIs.  
   
 ## How to connect Okta to Cloud App Security  
   
@@ -74,7 +77,7 @@ After connecting Okta, you will receive events for 60 days prior to connection.
   
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

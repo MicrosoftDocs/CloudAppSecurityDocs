@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+	  "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,10 +30,11 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility-security/toc.json"
+      "breadcrumb_path": "/cloud-app-security/bread/toc.json"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "cloud-app-security"
+    "dest": "cloud-app-security",
+    "markdownEngineName": "markdig"
   }
 }

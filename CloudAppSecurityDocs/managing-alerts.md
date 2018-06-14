@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,50 +25,52 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 ## Manage your alerts  
 Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your organization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
 
 It is a good idea to review all of your alerts and to use them as tools for modifying your policies. If harmless events are being considered violations to existing policies, refine your policies so that you receive fewer unnecessary alerts.  
 
-1.   Under **Open alerts**, click **View all alerts**.  
+1. Under **Open alerts**, click **View all alerts**.  
 
-     This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It then helps you safeguard the security posture you defined for your cloud environment.  
+   This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It then helps you safeguard the security posture you defined for your cloud environment.  
 
-     ![Alerts](./media/alerts.png "alerts")  
+   ![Alerts](./media/alerts.png "alerts")  
 
-2.   For each alert, you need to investigate and determine the nature of the violation and the required response.  
+2. For each alert, you need to investigate and determine the nature of the violation and the required response.  
 
-     You can filter the alerts by Alert type or by Severity in order to process the most important ones first.  
+   You can filter the alerts by Alert type or by Severity in order to process the most important ones first.  
 
-     Select a specific alert. Depending on what type of alert it is, you will see various actions that can be taken before resolving the alert.  
+   Select a specific alert. Depending on what type of alert it is, you will see various actions that can be taken before resolving the alert.  
 
-     There are three types of violations you will need to deal with when investigating alerts:  
+   There are three types of violations you will need to deal with when investigating alerts:  
 
-    #### Serious violations
-     Serious violations require immediate response.
+   #### Serious violations
+   Serious violations require immediate response.
 
-         Examples:  
+       Examples:  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+       For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-    #### Questionable violations
-    Questionable violations require further investigation.  
+   #### Questionable violations
+   Questionable violations require further investigation.  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
+       You can contact the  user or the user's manager about the nature of the activity.  
 
-         Leave the activity open until you have more information.  
+       Leave the activity open until you have more information.  
 
- #### Authorized violations or anomalous behavior
- Authorized violations or anomalous behavior can result from legitimate use.  
+   #### Authorized violations or anomalous behavior
+   Authorized violations or anomalous behavior can result from legitimate use.  
 
-         Dismiss the alert.  
+       Dismiss the alert.  
 
-3.   When you finish this process, mark the alert as resolved.  
+3. When you finish this process, mark the alert as resolved.  
 
 The following table provides a list of the types of alerts that can be triggered and recommends ways in which you can resolve them.  
 
@@ -89,5 +91,5 @@ The following table provides a list of the types of alerts that can be triggered
 
 ## Next steps  
 For more information about investigating alerts, see [Investigate](investigate.md).  
-For technical support, please visit [the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 Premier customers can also choose Cloud App Security directly from the [Premier Portal.](https://premier.microsoft.com/)  

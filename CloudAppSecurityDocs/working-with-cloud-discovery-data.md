@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,6 +25,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 # Discover
 
@@ -85,6 +87,10 @@ To create a new continuous report:
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
 
+
+> [!NOTE]
+> All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
+
 ## Deleting Cloud Discovery data  
 There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
   
@@ -114,7 +120,7 @@ To delete Cloud Discovery data:
  
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

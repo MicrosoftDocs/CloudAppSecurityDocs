@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,6 +25,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 # Protecting your organization from ransomware
 
@@ -42,47 +44,20 @@ A user in your organization is the target of a ransomware attack. The user might
 ## THE SOLUTION
 Detect potential ransomware on your cloud environment by creating a policy to update you when suspicious activity is detected, and set up automated actions to prevent ransomware files from being saved to your cloud.
 
-## Prerequisites
+## Out-of-the-box protection
 
 [Connect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) at least one cloud app (Office 365, G Suite, Box and Dropbox) to Cloud App Security.
 
-## Setting up monitoring
-
 1.	By default, Cloud App Security scans your network to establish a baseline, wherein it learns patterns of what your users ordinarily do in your cloud, when they do it and what they commonly do. 
 
-2. In addition, it is important to start monitoring your cloud apps by setting up a policy that will watch your cloud apps for massive downloads and alert you if something out of the ordinary happens:
+2. Cloud App Security's automated [threat detection policies](anomaly-detection-policy.md) start running in the background from the time you connect. One of these policies searches for ransomware activity to ensure comprehensive coverage against sophisticated ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Cloud App Security ensures holistic and robust protection. If Cloud App Security identifies, for example, a high rate of file uploads or file deletion activities it may represent an adverse encryption process. This data is collected in the logs received from connected APIs and is then combined with learned behavioral patterns and threat intelligence, for example, known ransomware extensions. 
 
-    1. On the **Control** tab, click [**Templates**](policy-template-reference.md). 
-   
-    2. From the [**Policy template**](policy-template-reference.md) list, choose **Potential ransomware activity**. 
-       ![template ransomware](./media/ransomware-template.png)
-    3. This template is designed out-of-the-box to search for activity typical of ransomware attacks, and files and folders associated with known ransomware. Optionally, you can set the type of alert you receive (email and text message) when the policy is matched.
-        ![template ransomware](./media/ransomware-template-fields.png)
-    4. Click **Create**. 
-   
-     
-2. Investigating your matches
-    
-    1. In the **Policies** page, click on the policy name to go to the **Policy report** and review the matches that were triggered for the policy.
 
-    2. You can investigate the match by clicking on a specific match to open the activity drawer. In the drawer, you can see the other policies that this activity matched. 
-     
-## Validating your policy
 
-1. To simulate an alert, change the extension of 30 files to .wncry and upload them to your SharePoint site.
-3. Go to the policy report. An activity policy match should appear shortly. 
-4. You can click on the match to see which files were downloaded. The match itself will be masked to protect the sensitive data. 
 
-## Remediating attacks and preventing risk
+   ## See Also  
+   [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-After you've validated it and fine-tuned the policy, remove possible false positives that may have matched your policy. Then, do the following: 
-1. When a ransomware policy is matched, you can remediate it by setting automated [governance actions](governance-actions.md).
-
-2. To prevent future attacks, setting the policy to perform automatic governance actions. For example, in SharePoint and OneDrive you can set the policy to automatically **Suspend user**.
-
- ## See Also  
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

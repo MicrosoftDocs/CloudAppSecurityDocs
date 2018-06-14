@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,12 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
 # Files
 
 
-To provide data protection, Cloud App Security gives you visibility into all the files from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. 
+To provide data protection, Microsoft Cloud App Security gives you visibility into all the files from your connected apps. After you connect Microsoft Cloud App Security to an app using the App connector, Microsoft Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it’s modified – the modification can be to content, metadata or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps. 
 
 For example, you can use the **Files** page to secure externally shared files labeled as **confidential**, as follows:
 After you connect an app to Cloud App Security, you can integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **confidential**. If you see that there are **confidential** files that are shared outside your organization by filtering the **Collaborators** filter to exclude your domain, you can create a file policy that detects **confidential** files that have incorrect access levels applied to them and apply automatic governance actions to them, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
@@ -56,15 +58,17 @@ Cloud App Security can monitor any file type based on more than 20 metadata filt
 Cloud App Security's built in DLP engines perform content inspection by extracting text from common file types (PDF, Office files, RTF, HTML, code files, etc.).
 
 Below is a list of the file filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a very powerful tool for policy creation.  
-> [!NOTE] 
+> [!NOTE]
 > When using the file policy filters, **Contains**  will search only for **full words** – separated by comas, dots, spaces or underscores to search. 
 > - Spaces between words function like OR, for example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both malware-virus.exe and virus.exe.  
 > - If you want to search for a string, enclose the words in quotation marks. This functions like AND, for example: if you search for **"malware"** **"virus"**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe and it will not find malware.exe. However, it will search for the exact string. If you search for **"malware virus"** it will not find **"virus"** or **"virus_malware"**.
-
->**Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
+> 
+> **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt. 
 
 -   Access level – Sharing access level; public, external, internal or private.  For more information about External files, see [General Setup, Set up the portal](getting-started-with-cloud-app-security.md)
-Internal are any files within the Internal domains you set in [General setup](General-setup.md). External are any files saved in locations that are not within the internal domains you set. Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
+    - Internal are any files within the Internal domains you set in [General setup](General-setup.md). 
+    - External are any files saved in locations that are not within the internal domains you set. 
+    - Shared are files that have a sharing level above private, this includes internal sharing (files shared within your internal domains), external sharing (files shared in domains that are not listed in your internal domains, public with a link (files that can be shared with anyone via a link) and public (files that can be found by searching the Internet). 
 
 > [!NOTE]
 >  Files shared into your connected storage apps by external users are handled as follows by Cloud App Security:
@@ -93,7 +97,12 @@ Internal are any files within the Internal domains you set in [General setup](Ge
   
 -   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.   
   
--   Classification label - Search for files with specific tags set by Azure Information Protection. This requires integration with Azure Information Protection.
+-   Classification label - Search for files with specific tags set. These are either:
+    - Azure Information Protection tags. This requires integration with Azure Information Protection.
+    - Cloud App Security tags. now provides more insight into the files it scans. For each file scanned by Cloud App Security DLP, you can now know if the files were blocked from being inspected because they were encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally, as follows: 
+        - Azure RMS encrypted – files whose content was not inspected because they have an Azure RMS encryption set.
+        - Password encrypted – files whose content was not inspected because they are password protected by the user.
+        - Corrupt file – files whose content was not inspected because their content could not be read.
 
 -   File type – Cloud App Security takes both the MIME type received from the service and scans the file to determine the true file type. Note that this scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text and zip/archive files). The filter works per file/folder type, for example, All folders that are ... or All spreadsheet files that are...
 
@@ -143,7 +152,7 @@ For a list of governance actions available, see [File governance actions](govern
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 # Working with the RegEx engine
  
-Cloud App Security's content inspection policies leverage RegEx for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
+Microsoft Cloud App Security's content inspection policies leverage RegEx for pattern matching. Content inspection may be applied as part of file policies. In order to test regular expressions, you can use the following websites:  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
@@ -58,18 +60,20 @@ The following limitations are imposed on custom regular expressions:
   
 Example expressions  
   
-||||  
-|-|-|-|  
-|**Regular expression**|**Data**|**Matches**|  
-|Colou?r (?:black&#124;blue&#124;white)|Color black<br /><br /> Color white<br /><br /> Color red|Yes<br /><br /> Yes<br /><br /> No|  
-|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|Yes<br /><br /> Yes<br /><br /> No|  
-|20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|Yes<br /><br /> Yes<br /><br /> No|  
-|d.n't\s{0,10}c.r.|Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care|Yes<br /><br /> Yes<br /><br /> No|  
- 
+
+|                                                               |                                                               |                                    |
+|---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
+|              <strong>Regular expression</strong>              |                     <strong>Data</strong>                     |      <strong>Matches</strong>      |
+|            Colou?r (?:black&#124;blue&#124;white)             |   Color black<br /><br /> Color white<br /><br /> Color red   | Yes<br /><br /> Yes<br /><br /> No |
+|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Yes<br /><br /> Yes<br /><br /> No |
+| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Yes<br /><br /> Yes<br /><br /> No |
+|                       d.n't\s{0,10}c.r.                       | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | Yes<br /><br /> Yes<br /><br /> No |
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
-  
+
+## Check out this video!
+[Working with the Regex Engine](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)    

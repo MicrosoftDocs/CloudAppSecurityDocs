@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,8 +26,11 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
+
 # Investigate
-After Cloud App Security runs in your cloud environment, you'll need a stage of learning and investigating how to use the tools in Cloud App Security to gain a deeper understanding of what's happening in your cloud environment. Then, based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk.
+After Microsoft Cloud App Security runs in your cloud environment, you'll need a stage of learning and investigating how to use the tools in Microsoft Cloud App Security to gain a deeper understanding of what's happening in your cloud environment. Then, based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk.
 
 This topic describes how to perform an investigation to get a better understanding of your cloud environment.  
 
@@ -123,13 +126,6 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     -   Are there cloud apps that are used but not in compliance with your organization’s policy?  
 
-## Use reports to investigate risk  
-When you start trying to gain control over your cloud environment, you make certain assumptions based on what you expect to find — you don't really know your cloud yet. Based on these assumptions, you create policies.
-
-After Cloud App Security runs on your cloud environment, you use the built-in reports (and custom reports) to see what's going on in your cloud. Based on this, you adjust your policies again to include exceptions so that eventually your policy catches very few false positives.  
-
-Built-in reports offer you aggregated views for investigation. To work with built-in reports, go to **Investigate** and then **Built-in reports**. For more information about the different built-in reports, see the [Built-in report reference](built-in-report-reference.md).  
-
 ## Sample investigation  
 Let's say that you assume you don't have any access to your cloud environment by risky IP addresses (for example, anonymous proxies and Tor). But you create a policy for risk IPs just to make sure:  
 
@@ -161,5 +157,5 @@ Now that you have the policy in place, you're surprised to see that you get an a
 
 ## See also  
 To learn how to control your organization's cloud app, see [Control](control.md).   
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.  
+
 Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).  

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,9 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
+
 # Frequently asked questions
 
 ## What kind of permissions do I need to have in order to access Cloud App Security?
@@ -42,5 +45,5 @@ To set a user as a Global admin, Compliance admin or Security admin in Azure Act
 
 ## See also  
 To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
+
 Premier customers can also choose Cloud App Security directly from the [Premier Portal](https://premier.microsoft.com/).  

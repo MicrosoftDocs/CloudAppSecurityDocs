@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,6 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+*Applies to: Microsoft Cloud App Security*
+
 
 # Control
 You can apply governance actions to users' files across your cloud environment. After you have thoroughly investigated and learned about your cloud, you can use governance actions to help protect your organization.  
@@ -81,13 +84,13 @@ Cloud App Security helps you roll out your migrations by letting you know who in
 ### Migrate your users to a new app  
 Imagine this scenario: you recently bought Office 365, and you want all the users in your organization to stop using all other cloud storage apps and start using OneDrive. Here's what you might want to do:  
 
-1.   Go to your **Cloud Discovery Dashboard** and under **Categories**, filter apps by **Cloud Storage**. Then sort the results by **Users** or **IP addresses**, and check to see which app is most popular.  
+1. Go to your **Cloud Discovery Dashboard** and under **Categories**, filter apps by **Cloud Storage**. Then sort the results by **Users** or **IP addresses**, and check to see which app is most popular.  
 
-2.   You can see which users are using other apps. You can also drill down into those apps, and notify users that you want them to migrate to OneDrive, as follows:
+2. You can see which users are using other apps. You can also drill down into those apps, and notify users that you want them to migrate to OneDrive, as follows:
 
-    1.  In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.  
+   1.  In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.  
 
-    2.  Choose the arrow ![Arrow icon](./media/arrow-icon.png "arrow icon") and choose **Export**.  
+   2.  Choose the arrow ![Arrow icon](./media/arrow-icon.png "arrow icon") and choose **Export**.  
 
 ### Find more secure alternatives  
 The Cloud App Security service catalog can help you find alternatives that work for your organization, instead of risky apps that your users might be using.  
@@ -104,5 +107,5 @@ Imagine this scenario: you're considering buying a productivity tool, and you ar
 
 ## See also  
 To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
+
 Premier customers can also choose Cloud App Security directly from the [Premier Portal](https://premier.microsoft.com/).  
