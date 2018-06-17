@@ -67,15 +67,15 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
 - Group admin: Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin will be able to view and modify information in Microsoft Cloud App Security only for that user group, as follows:
 
   - Activities page - only activities regarding the users in the group
-  - 	Alerts - only alerts relating to the users in the group
-  - 	Policies - can view all policies and can edit or create only policies that deal exclusively with users in the group
-  - 	Account - only accounts for the specific users in the group
-  - 	App permissions – No permissions
-  - 	Files page – No permissions
-  - 	Conditional Access App Control - No permissions
-  - 	Cloud Discovery activity - No permissions
-  - 	Security extensions - permissions only for API token with users in the group
-  - 	Governance actions - only for the specific users in the group
+  - Alerts - only alerts relating to the users in the group
+  - Policies - can view all policies and can edit or create only policies that deal exclusively with users in the group
+  - Account - only accounts for the specific users in the group
+  - App permissions – No permissions
+  - Files page – No permissions
+  - Conditional Access App Control - No permissions
+  - Cloud Discovery activity - No permissions
+  - Security extensions - permissions only for API token with users in the group
+  - Governance actions - only for the specific users in the group
 
 
 
