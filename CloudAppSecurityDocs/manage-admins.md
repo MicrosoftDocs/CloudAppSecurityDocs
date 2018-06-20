@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 6/24/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,7 +30,7 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 
-## Managing admin access
+# Manage admin access
 
 Microsoft Cloud App Security supports Role-based access control. By default, the following Office 365 and Azure AD admin roles have access to Microsoft Cloud App Security:
 
@@ -97,17 +97,25 @@ You can also add additional admins to Cloud App Security, without adding users t
 
    >[!NOTE]
     >Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
-  
-**To override admin permissions:**
+
+
+## Override admin permissions
 
 If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions.
 For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the desired permissions in Cloud App Security. 
 
+## Add additional admins
 
 To add additional admins to Cloud App Security:
 1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. 
 
 2. Add the admins who should have access to Cloud App Security. Select their access level and click **Close**.
+
+  
+## Invite external admins
+
+Cloud App Security extends this management experience to MSSPs, and allows you to configure external partners as administrators with any of the roles currently available in Microsoft Cloud App Security. In addition, administrators with access rights to more than one tenant, can easily pivot between the tenants.
+
 
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
