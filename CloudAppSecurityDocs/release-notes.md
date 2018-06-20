@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,6 +29,35 @@ ms.suite: ems
 
 
 # What's new with Microsoft Cloud App Security
+
+
+## Cloud App Security release 126
+
+Released June 24, 2018
+
+-	**Conditional Access App Control GA!**<br>Microsoft Cloud App Security’s Conditional Access App Control (reverse proxy) is now generally available for SAML applications. Conditional Access App Control integrates directly with your Azure AD conditional access policies to monitor and control your users’ risky sessions, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including: 
+   -	In addition to creating a session policy for browser traffic, you can now create an [access policy](access-policy.md) to manage access to the same apps from native clients
+   -	The app onboarding process was streamlined to support custom SAML applications in your organization
+   -	As part of the Azure worldwide network, the integration and interface have been improved for a seamless experience for users located anywhere in the world
+ 
+- **Cloud Discovery executive report**<br>Microsoft Cloud App Security is gradually rolling out the ability to generate a pdf Cloud Discovery executive report. This report provides an overview of the Shadow IT use that was identified in your organization, highlighting the top apps and users in use overall and in leading categories, and focuses on the risk that Shadow IT poses in your organization. In addition, the report provides a list of recommendations for how to improve visibility into, and control over, Shadow IT in your organization. Use this report to make sure that potential risks and threats are removed and that your organization remains safe and secure.
+
+-	**Malware detection**<br>A capability is being gradually rolled out that automatically detects malicious files in your cloud storage, regardless of the file type. Microsoft Cloud App Security uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. For more information, see [Anomaly detection policies](anomaly-detection-policies.md).
+ 
+-	**Automated remediation for suspicious activities**<br>You can now set automatic remediation actions for suspicious session triggered by the anomaly detection policies. This enhancement enables you to be alerted instantly when a breach occurs and apply governance actions automatically, such as suspend user. For more information, see [Anomaly detection policies](anomaly-detection-policies.md#adp-automated-gov). 
+ 
+-	**Security configuration assessment for Azure**<br>Microsoft Cloud App Security is gradually rolling out the ability to get a security configuration assessment of your Azure environment, and provides recommendations for missing configuration and security control. For example, it will let you know if you are missing MFA for administrative users. For more information, see [Cloud Security Posture Management integration](asc-integration.md).  
+  
+-	**Automated detection of risky O-auth Apps**<br>In addition to the existing investigate of O-auth apps connected to your environment, Microsoft Cloud App Security is not gradually rolling out the ability to set automated notifications to let you know when an o-Auth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. For more information, see [App permission policies](app-permission-policies.md).
+ 
+-	**Managed Security Service Provider management (MSSP) support**<br>Microsoft Cloud App Security now provides a better management experience to MSSPs, and allows you to configure external partners as administrators with any of the [roles currently available in MCAS](link to mcas manage admins doc). In addition, Administrators with access rights to more than one tenant, can now easily pivot between the tenants. For more information, see [Manage admins](manage-admins.md).
+ 
+-	**Content inspection with Microsoft Data Classification Service GA!**<br>Microsoft Cloud App Security integration with Microsoft Data Classification Services is now generally available. This integration enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps.  For more information see [Microsoft Data Classification Services integration](dcs-inspection.md).
+ 
+-	**Microsoft Cloud App Security integration with Azure Information Protection GA!**
+We are excited to announce that Cloud App Security integration with Azure Information Protection is now generally available. This feature enables you to scan and classify files in cloud apps, and automatically apply Azure Information protection labels for protection. It is available for Box, SharePoint and OneDrive and G Suite. For more information, see [Azure Information Protection integration](azip-integration.md). 
+
+-	**Integration with external DLP GA!**<br>Microsoft Cloud App Security allows you to [leverage existing investments in third-party classification systems](icap-stunnel.md) such as Data Loss Prevention (DLP) solutions, and enables you to scan the contents of cloud applications using existing deployments running in your environment. For more information, see [External DLP integration](icap-stunnel.md).
 
 
 ## Cloud App Security release 125

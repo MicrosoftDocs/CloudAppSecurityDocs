@@ -55,7 +55,7 @@
 #### [Generate data management reports](built-in-reports.md)
 ### [Accounts](accounts.md)
 ### [Manage app permissions](manage-app-permissions.md)
-### [Security configuration recommendations](asc-integration.md)
+### [Security configuration](asc-integration.md)
 ### [Monitor apps](monitor-alerts.md)
 #### [Manage alerts](managing-alerts.md)
 ## [Control](control.md)
