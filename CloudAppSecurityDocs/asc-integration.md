@@ -31,7 +31,7 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 
-# Get security configuration recommendations
+# Security configuration
 
 Microsoft Cloud App Security provides you with a security configuration assessment of your Azure environment, and provides recommendations for missing configuration and security control, powered by Azure Security Center. 
 
@@ -51,7 +51,7 @@ To enable security configuration recommendations in Microsoft Cloud App Security
    > [!NOTE]
    > The article describes the process for becoming a Security administrator. For this integration to work, the minimum permissions you need are Security reader.
 
-3. Open [Azure Security Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0).
+3. Open [Azure Security Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) once for the changes to take effect.
 
 4. In the Microsoft Cloud App Security portal, go to **Investigate** and then **Security configuration**. 
 
