@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/30/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -128,9 +128,9 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
-## Email server
+## Mail server
 
-To enable notifications to be sent using the default template and settings, add these IP addresses to your anti-spam whitelist. The Cloud App Security dedicated email IP addresses are: 
+To enable notifications to be sent from the default template and settings, add these IP addresses to your anti-spam whitelist. The Cloud App Security dedicated email IP addresses are: 
 
 - 65.55.234.192/26
 - 207.46.200.0/27
@@ -139,7 +139,7 @@ To enable notifications to be sent using the default template and settings, add 
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-If you want to customize your notifications at all, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, under **Settings**, select **Mail settings** and review MailChimp’s Terms of Service and Privacy Statement and give Microsoft permission to use MailChimp on your behalf.
+If you want to customize the email sender identity, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, under **Settings**, select **Mail settings** review MailChimp’s Terms of Service and Privacy Statement and give Microsoft permission to use MailChimp on your behalf.
 
 If you don’t do this, your email notifications will be sent using all the default settings.
 
@@ -173,5 +173,4 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-
 

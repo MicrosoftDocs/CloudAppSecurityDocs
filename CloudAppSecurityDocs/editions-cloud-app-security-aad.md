@@ -56,4 +56,3 @@ The following is a comparison of the discovery capabilities in Microsoft Cloud A
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 
 Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
-

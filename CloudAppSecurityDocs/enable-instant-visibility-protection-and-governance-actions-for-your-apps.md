@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -97,7 +97,7 @@ The following table lists, per cloud app, which abilities are supported with App
 > |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||  
 > |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||  
 > |**Revoke app permissions**|✔||Not applicable|✔||✔|Not applicable||  
-> |**Apply Azure Information Protection labels**|✔|✔|||||||  
+> |**Apply Azure Information Protection labels**|✔|✔||✔|||||  
 
 ## Prerequisites  
 

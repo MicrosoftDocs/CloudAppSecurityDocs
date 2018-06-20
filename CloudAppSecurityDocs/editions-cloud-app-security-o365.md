@@ -68,4 +68,3 @@ Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that p
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 
 Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
-

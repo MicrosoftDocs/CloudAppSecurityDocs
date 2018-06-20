@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -37,11 +37,12 @@ This topic describes what you should do With Cloud App Security on a daily basis
 ## Check the dashboard  
 The Cloud App Security dashboard provides you with an overview of activities and features, including:
 
-- Open alerts.
-- Activity violations.
-- Content violations.
-- An activity map that plots where user activity originates.
-- Connected app usage trends in your cloud environment.  
+- Open alerts
+- Activity violations
+- Content violations
+- An activity map that plots where user activity originates
+- Connected app usage trends in your cloud environment
+- Top users by threat detection
 
 We recommend that you check the dashboard daily to see what new alerts have been triggered. It is also a good place to keep an eye on the health of your cloud environment to get a sense of what's happening across your cloud environment.  
 

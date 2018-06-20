@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -60,16 +60,14 @@ Cloud App Security supports the following Office 365 apps:
  
 1.  In **Connected apps** page, click the plus button and select **Office 365**.  
 
-    ![connect 0365](./media/connect-0365.png) 
+      ![connect 0365](./media/connect-0365.png) 
 
 2.  In the Office 365 pop-up, click **Connect Office 365**.
 
-    ![connect 0365](./media/office-connect.png) 
+      ![connect 0365](./media/office-connect.png) 
  
 3.   After Office 365 is displayed as successfully connected, click **Close**.
   
-     ![O365 connected](./media/o365-connected.png) 
-
 > [!NOTE] 
 > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
 
