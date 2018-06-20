@@ -48,8 +48,8 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 
 2. After you are elevated, grant yourself and all the other Microsoft Cloud App Security administrator who you want to have access to this page, the role of Security reader for all subscriptions. This is done via the [management group feature in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-azure-policy#management-groups) 
 
-> [!NOTE]
-> The article describes the process for becoming a Security administrator. For this integration to work, the minimum permissions you need are Security reader.
+   > [!NOTE]
+   > The article describes the process for becoming a Security administrator. For this integration to work, the minimum permissions you need are Security reader.
 
 3. Open [Azure Security Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0).
 
@@ -60,10 +60,10 @@ To enable security configuration recommendations in Microsoft Cloud App Security
    > [!NOTE]
    > Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
 
-5. You can filter the recommendations by type, by resource and by subscription. In addition, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation. <br></br><br></br>For more information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
+5. You can filter the recommendations by type, by resource and by subscription. In addition, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation. <br></br>For more information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
  
- ![security configuration](./media/security-configuration.png)
+   ![security configuration](./media/security-configuration.png)
 
  
 
