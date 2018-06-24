@@ -85,7 +85,7 @@ You can also add additional admins to Cloud App Security, without adding users t
 
 1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admins**. 
 
-2. Click the plus to add the admins who should have access to Cloud App Security.
+2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
   
   ![add admins](./media/add-admin.png)
     
@@ -114,7 +114,9 @@ To add additional admins to Cloud App Security:
   
 ## Invite external admins
 
-Cloud App Security extends this management experience to MSSPs, and allows you to configure external partners as administrators with any of the roles currently available in Microsoft Cloud App Security. In addition, administrators with access rights to more than one tenant, can easily pivot between the tenants.
+Microsoft Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Microsoft Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles currently available in Microsoft Cloud App Security. In addition, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. 
+
+To switch between tenants, after you have permissions to multiple tenants, click the user icon ![user icon](./media/user-icon.png "user icon"). You should see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
 
 ## See Also  
