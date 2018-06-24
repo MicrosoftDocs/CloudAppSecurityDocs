@@ -30,14 +30,21 @@ ms.suite: ems
 
 # App permission policies
 
-In addition to the existing investigation of OAuth apps connected to your environment, Microsoft Cloud App Security is now gradually rolling out the ability to set automated notifications to let you know when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. 
-
+In addition to the existing investigation of OAuth apps connected to your environment, you can set permission policies to so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. 
 
 App permission policies enable you to investigate, for Office 365, G Suite and Salesforce, which permissions each app requested and which users authorized them. You are also able to mark these permissions as approved or banned. Marking them as banned will revoke permissions for each app for each user who authorized it. 
-You can also define policies based on these filters. For example, you can be alerted any time an app requires a high permission level and is authorized by more than 100 users. 
 
-You can also know if it's common, uncommon or rare in terms of community use, it can be helpful to see if you have an app that's unheard of that asks for lots of permission or permission from many users. You can create the policy either by clicking create policy from the app permission page or control ?>policy? App permission policy  
+To create a new app permission policy:
+1. Under **Investigate** select **App permissions**.
+2. Filter the apps according to your needs, for example, you can view all apps that request **Permission** to **Modify calendars in your mailbox**.
+3. Click the **New policy from search** button. 
+    ![new policy from search](./media/app-permissions-filter.png)
+4. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon or rare. This can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users. 
+
+Alternatively, you can also create the policy by clicking **Control** followed by **Policies**. Then click **Create policy** followed by **App permission policy**.
+
   
+   ![new app permissions policy](./media/app-permissions-policy.png)
 
 
 
