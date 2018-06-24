@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -47,28 +47,24 @@ It is a good idea to review all of your alerts and to use them as tools for modi
 
    There are three types of violations you will need to deal with when investigating alerts:  
 
-   #### Serious violations
-   Serious violations require immediate response.
+   - **Serious violations**<br>
+     Serious violations require immediate response. <br>
+     Examples:<br>
+     For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-       Examples:  
+     For a data leak you might want to restrict permissions or quarantine the file.  
 
-       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-       For a data leak you might want to restrict permissions or quarantine the file.  
+   - **Questionable violations**<br>
+     Questionable violations require further investigation.  <br>
+     You can contact the  user or the user's manager about the nature of the activity. <br>  
+     Leave the activity open until you have more information.  
 
-       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **Authorized violations or anomalous behavior**<br>
+     Authorized violations or anomalous behavior can result from legitimate use.  
 
-   #### Questionable violations
-   Questionable violations require further investigation.  
-
-       You can contact the  user or the user's manager about the nature of the activity.  
-
-       Leave the activity open until you have more information.  
-
-   #### Authorized violations or anomalous behavior
-   Authorized violations or anomalous behavior can result from legitimate use.  
-
-       Dismiss the alert.  
+     Dismiss the alert.  
 
 3. When you finish this process, mark the alert as resolved.  
 

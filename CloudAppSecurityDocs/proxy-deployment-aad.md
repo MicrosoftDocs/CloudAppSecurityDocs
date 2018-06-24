@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -28,11 +28,6 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 # Deploy Conditional Access App Control for Azure AD apps
-
-> [!NOTE]
-> This is a preview feature.
-
-
 
 >[!div class="step-by-step"]
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
@@ -81,7 +76,7 @@ Follow these steps to configure Azure AD apps to be controlled by Microsoft Clou
    > [!NOTE]
    > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When clicking on the + sign for these apps, you will be able to suggest adding the app to the catalog. After the app is in the catalog, perform the steps again to deploy the app. 
 
-6. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both Azure AD conditional access and Session control appear. <br></br>If Session control does not appear for an app, that means it's not yet available for that specific app and you will see the **Request session control** link instead. Click on it to open a dialog and request the onboarding of the app to session control. During the Conditional Access App Control public preview period, the onboarding process will be performed together with you by the Microsoft Cloud App Security team.
+6. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both Azure AD conditional access and Session control appear. <br></br>If Session control does not appear for an app, that means it's not yet available for that specific app and you will see the **Request session control** link instead. Click on it to open a dialog and request the onboarding of the app to session control. In this scenario, the onboarding process will be performed together with you by the Microsoft Cloud App Security team.
   
    ![request session control](./media/proxy-view-new-apps.png)
 
