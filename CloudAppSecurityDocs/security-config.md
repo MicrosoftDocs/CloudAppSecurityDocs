@@ -46,7 +46,7 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 
 1. Elevate your Azure AD Global administrator to grant access to Azure subscriptions. Instructions for how to do this can be found in [Elevate access for a global administrator in Azure Active Directory](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin). 
 
-2. After you are elevated, grant yourself and all the other Microsoft Cloud App Security administrator who you want to have access to this page, the role of Security reader for all subscriptions. This is done via the [management group feature in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-azure-policy#management-groups) 
+2. After you are elevated, grant yourself and all the other Microsoft Cloud App Security administrator who you want to have access to this page, the role of Reader for all subscriptions. This is done by integrating with [management groups in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-azure-policy#management-groups) 
 
    > [!NOTE]
    > The article describes the process for becoming a Security administrator. For this integration to work, the minimum permissions you need are Security reader.
