@@ -35,7 +35,7 @@ ms.suite: ems
 
 Released June 24, 2018
 
--	**Conditional Access App Control GA**<br>Microsoft Cloud App Security’s Conditional Access App Control (reverse proxy) is now generally available for all SAML applications. Conditional Access App Control integrates directly with your Azure AD conditional access policies to **monitor and control your users’ sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including: 
+-	**Conditional Access App Control GA**<br>Microsoft Cloud App Security’s Conditional Access App Control (reverse proxy) is now generally available for any SAML applications. Conditional Access App Control integrates directly with your Azure AD conditional access policies to **monitor and control your users’ sessions in real time**, while enabling them to be productive. Since first previewing the feature, many features and improvements have been made, including: 
     -	The ability to create an [access policy](access-policy-aad.md) to manage access to the same apps from native clients, in addition to creating a session policy for browser traffic.
     -	The app onboarding process was streamlined to support custom SAML applications in your organization.
     -	As part of the Azure worldwide network, the integration and interface have been improved for a seamless experience for users located anywhere in the world.

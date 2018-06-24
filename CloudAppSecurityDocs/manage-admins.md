@@ -118,6 +118,7 @@ Microsoft Cloud App Security enables you to invite external Managed Security Ser
 
 To switch between tenants, after you have permissions to multiple tenants, click the user icon ![user icon](./media/user-icon.png "user icon"). You should see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
+![choose tenant](./media/choose-tenant.png "choose tenant")
 
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
