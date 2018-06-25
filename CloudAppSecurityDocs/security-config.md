@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -46,7 +46,7 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 
 1. Elevate your Azure AD Global administrator to grant access to Azure subscriptions. Instructions for how to do this can be found in [Elevate access for a global administrator in Azure Active Directory](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin). 
 
-2. After you are elevated, grant yourself and all the other Microsoft Cloud App Security administrator who you want to have access to this page, the role of Reader for all subscriptions. This is done by integrating with [management groups in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-azure-policy#management-groups) 
+2. After you are elevated, grant yourself, and all the other Microsoft Cloud App Security administrators to whom you want to grant access to this page, the role of Reader for all subscriptions. This is done by integrating with [management groups in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-azure-policy#management-groups) 
 
    > [!NOTE]
    > The article describes the process for becoming a Security administrator. For this integration to work, the minimum permissions you need are Security reader.
@@ -59,6 +59,7 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 
    > [!NOTE]
    > Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
+   > It might take up to 15 minutes before your changes take effect.
 
 5. You can filter the recommendations by type, by resource and by subscription. In addition, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation. <br></br><br></br>For information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
