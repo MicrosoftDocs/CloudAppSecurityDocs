@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/25/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -64,7 +64,7 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 5. You can filter the recommendations by type, by resource and by subscription. In addition, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation. <br></br><br></br>For information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
  
-   ![security configuration](./media/security-configuration.png)
+   ![security configuration](./media/security-configuration1.png)
 
  
 
