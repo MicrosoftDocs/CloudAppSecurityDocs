@@ -33,7 +33,7 @@ ms.suite: ems
 
 ## Technical requirements
 
--   OS: Ubuntu 14.04 or higher (there is no stable version of docker to support Ubuntu 17.10)
+-   OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support)
 
 -   Disk space: 250 GB
 
