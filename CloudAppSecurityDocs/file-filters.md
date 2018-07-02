@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -95,7 +95,7 @@ Below is a list of the file filters that can be applied. Most filters support mu
   
 -   File ID – Search for specific file IDs, this is an advanced feature that allows you to track certain high-value files without depending on their owner/location/name.  
   
--   File name – File name or sub string of the name as defined in the cloud app, for example, All files with a password in their name.   
+-   File name – File name or sub string of the name as defined in the cloud app, for example, all files with a password in their name.   
   
 -   Classification label - Search for files with specific tags set. These are either:
     - Azure Information Protection tags. This requires integration with Azure Information Protection.
@@ -112,7 +112,7 @@ Below is a list of the file filters that can be applied. Most filters support mu
   
 -   In trash – Exclude/include files in the trash folder. These files may still be shared and pose a risk.  
   
--   Last modified – File modification time. Filter supports before/after dates, date range and relative time expressions, for example, All files that were not modified in the last 6 months.  
+-   Last modified – File modification time. Filter supports before/after dates, date range and relative time expressions, for example, all files that were not modified in the last 6 months.  
 
 -   Matched policy - Files that are matched by an active Cloud App Security policy.
 

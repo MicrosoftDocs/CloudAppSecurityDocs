@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/1/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,7 @@ ms.suite: ems
 
 ## Technical requirements
 
--   OS: Ubuntu 14.04 or higher (there is no stable version of docker to support Ubuntu 17.10), or RHEL 7.2 or higher 
+-   OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), or RHEL 7.2 or higher 
 
 -   Disk space: 250 GB
 
