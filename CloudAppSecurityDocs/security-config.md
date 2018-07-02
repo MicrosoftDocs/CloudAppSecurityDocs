@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -44,7 +44,7 @@ By default, the Azure AD Global administrator role doesn't provide you with acce
 
 To enable security configuration recommendations in Microsoft Cloud App Security:
 
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Gain tenant-wide visibility for Azure Security Center</a> by granting yourself, and all the other Microsoft Cloud App Security administrators to whom you want to grant access to this page, the role of Reader for all subscriptions and assigning the role on the root management group in Azure Security Center and elevating your Azure AD Global administrator to grant access to Azure subscriptions. 
+1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Gain tenant-wide visibility for Azure Security Center</a>. This process includes granting yourself, and all the other Microsoft Cloud App Security administrators to whom you want to grant access to this page, the role of Reader for all subscriptions and assigning the role on the root management group in Azure Security Center and elevating your Azure AD Global administrator to grant access to Azure subscriptions. 
 
    > [!NOTE]
    > The article describes the process for becoming a Security administrator. For this integration to work, the minimum permissions you need are Reader.

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -41,7 +41,7 @@ Released June 24, 2018
     -	As part of the Azure worldwide network, the integration and interface have been improved for a seamless experience for users located anywhere in the world.
  
 
--	**Content inspection with Microsoft Data Classification Service GA**<br>Microsoft Cloud App Security integration with Microsoft Data Classification Services is now generally available. This integration enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps. For more information see [Microsoft Data Classification Services integration](dcs-inspection.md).
+-	**Content inspection with Microsoft Data Classification Service GA**<br>Microsoft Cloud App Security integration with Microsoft Data Classification Services is now generally available. This integration enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps. For more information see [Microsoft Data Classification Services integration](dcs-inspection.md). This feature is currently only available in the US and Europe (excluding France).
 
 - **Cloud Discovery executive report**<br>Microsoft Cloud App Security is gradually rolling out the ability to generate a Cloud Discovery executive PDF report. This report provides an overview of the Shadow IT use that was identified in your organization, highlighting the top apps and users in use overall and in leading categories, and focuses on the risk that Shadow IT poses in your organization. In addition, the report provides a list of recommendations for how to improve visibility into, and control over, Shadow IT in your organization. Use this report to make sure that potential risks and threats are removed and that your organization remains safe and secure.
 

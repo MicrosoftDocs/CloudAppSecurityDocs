@@ -45,7 +45,7 @@ Protect your organization by monitoring and controlling cloud app use using Azur
 
 ## Prerequisites
 
-- A valid license for Azure AD Premium P2
+- A valid license for Azure AD Premium P1
 - Configure a cloud app for SSO in Azure AD  
 - Make sure the [app is deployed to Cloud App Security](proxy-deployment-aad.md)
 
