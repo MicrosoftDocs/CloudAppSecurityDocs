@@ -44,7 +44,7 @@ Microsoft Cloud App Security access policies enable real-time monitoring and con
 
 ## Prerequisites to using access policies
 
-- Azure AD Premium P2 license
+- Azure AD Premium P1 license
 - The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 - An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to Microsoft Cloud App Security, as described below.
 

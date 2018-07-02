@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 
-ms.date: 5/22/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -59,12 +59,18 @@ To drill down into more specific activities, you can expand the basic filter by 
 ### Working with the Activity drawer
 
 You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer that provides the following additional actions and insights for each activity:
-    - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
-    - View raw data: Click on View raw data to see the actual data that was received from the app.
-    - User: Click on the user to view the user page for the user who performed the activity. 
-    - Device type: Click on device type to view the raw user agent data. 
-    - Location: Click on the location to view the location in Bing maps.
-    - IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
+
+   - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
+
+   - View raw data: Click on View raw data to see the actual data that was received from the app.
+
+   - User: Click on the user to view the user page for the user who performed the activity. 
+
+   - Device type: Click on device type to view the raw user agent data. 
+
+   - Location: Click on the location to view the location in Bing maps.
+
+   - IP address category and tags: Click on the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.    
 
  The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](./media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](./media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
