@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -45,7 +45,7 @@ Protect your organization by monitoring and controlling cloud app use using Azur
 
 ## Prerequisites
 
-- A valid license for Azure AD Premium P2
+- A valid license for Azure AD Premium P1
 - Configure a cloud app for SSO in Azure AD  
 - Make sure the [app is deployed to Cloud App Security](proxy-deployment-aad.md)
 
@@ -58,8 +58,6 @@ Cloud App Security session policies allow you to further restrict a session base
 1. Create an Azure AD conditional access policy with assigned users and app.
 2. Select **Use Conditional Access App Control enforced restrictions** under session controls within the conditional access policy.   
 
-   ![Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
-
 After completing this task, proceed to the Cloud App Security portal and create a session policy to monitor and control file downloads in the session.
 
 ### Step 2: Create a session policy
@@ -68,17 +66,11 @@ After completing this task, proceed to the Cloud App Security portal and create 
 
 2. In the **Policies** page, click **Create policy** followed by **Session policy**.
  
-   ![create session policy](./media/create-session-policy.png)
-
 3. In the **Create session policy** page, give your policy a name and description. For example, **Block downloads from Salesforce for unmanaged devices**.
 
 4. Assign a **Policy severity** and **Category**.
 
-   ![New session policy](./media/new-session-policy.png)
-
 5. Under **Session control type**, select **Control file download (with DLP)**. This gives you the ability to monitor everything your users do within a Salesforce session, and gives you control to block and protect downloads in real time.
-
-   ![session policy control type](./media/session-policy-control-type.png)
 
 6. under **Activity source** in the **Activities matching all of the following** section, select the filters: 
     
@@ -104,21 +96,11 @@ After completing this task, proceed to the Cloud App Security portal and create 
    - **Classification labels**: If you use Azure Information Protection classification labels and want to filter the files based on a specific Azure Information Protection Classification label.
    
    - Select **File name** or **File type** to apply restrictions based on these.
- 
-     ![session policy file filters](./media/session-policy-file-filters.png)
-
 9. Enable **Content inspection** to enable the internal DLP to scan your files for sensitive content. 
-
-   ![session policy content inspection](./media/session-policy-content-inspection.png)
 
 10. Under **Actions**, select **block**. Customize the blocking message that your users get when they are unable to download files.  
 
-    ![session policy actions](./media/session-policy-actions.png)
-
 11. Set the alerts you want to receive when the policy is matched. You can set a limit so that you don't receive too many alerts, and you can select whether to get the alerts as an email message, text message, or both.
-
-    ![session policy alerts](./media/session-policy-alert.png)
-
 
 12. Click **Create**  
  
@@ -129,11 +111,7 @@ After completing this task, proceed to the Cloud App Security portal and create 
 
 2. The file should be blocked and you should receive the message you set under **Customize block messages**. 
 
-   ![block download message](./media/block-download-message.png)
-
 3. In the Cloud App Security portal, click on **Control** followed by **Policies**, and then click on the policy you’ve created to view the policy report. A session policy match should appear shortly. 
- 
-   ![session policy report](./media/session-policy-report.png)
 
 4. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
 

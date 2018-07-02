@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -47,28 +47,24 @@ It is a good idea to review all of your alerts and to use them as tools for modi
 
    There are three types of violations you will need to deal with when investigating alerts:  
 
-   #### Serious violations
-   Serious violations require immediate response.
+   - **Serious violations**<br>
+     Serious violations require immediate response. <br>
+     Examples:<br>
+     For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-       Examples:  
+     For a data leak you might want to restrict permissions or quarantine the file.  
 
-       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-       For a data leak you might want to restrict permissions or quarantine the file.  
+   - **Questionable violations**<br>
+     Questionable violations require further investigation.  <br>
+     You can contact the  user or the user's manager about the nature of the activity. <br>  
+     Leave the activity open until you have more information.  
 
-       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **Authorized violations or anomalous behavior**<br>
+     Authorized violations or anomalous behavior can result from legitimate use.  
 
-   #### Questionable violations
-   Questionable violations require further investigation.  
-
-       You can contact the  user or the user's manager about the nature of the activity.  
-
-       Leave the activity open until you have more information.  
-
-   #### Authorized violations or anomalous behavior
-   Authorized violations or anomalous behavior can result from legitimate use.  
-
-       Dismiss the alert.  
+     Dismiss the alert.  
 
 3. When you finish this process, mark the alert as resolved.  
 
@@ -83,7 +79,7 @@ The following table provides a list of the types of alerts that can be triggered
 |New admin user|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user. If they are not, recommend revoking admin privileges to reduce exposure.|  
 |New admin location|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the sign in from this anomalous location was legitimate. If it's not, recommend revoking admin permissions or suspending the account to reduce exposure.|  
 |New location|This is an informative alert about access to a connected app from a new location, and it's triggered only once per country.|Investigate the specific user's activity.|  
-|New discovered service|This is an alert about Shadow IT--a new app was detected by Cloud Discovery.|<ul><li>Assess the risk of the service based on the app catalog.</li><li>Drill down into the activity to understand usage patterns and prevalence.</li><li>Decide whether to sanction or unsanction the app.</li><br /></ul>For unsanctioned apps:<br /><br /><ul><li>You may want to block use in your proxy or firewall.</li><li>If you have an unsanctioned app and a sanctioned app in the same category, you can export a list of users of the unsanctioned app, and then contact them to migrate them to the sanctioned app.</li></ul></li>|  
+|New discovered service|This is an alert about Shadow IT. A new app was detected by Cloud Discovery.|<ul><li>Assess the risk of the service based on the app catalog.</li><li>Drill down into the activity to understand usage patterns and prevalence.</li><li>Decide whether to sanction or unsanction the app.</li><br /></ul>For unsanctioned apps:<br /><br /><ul><li>You may want to block use in your proxy or firewall.</li><li>If you have an unsanctioned app and a sanctioned app in the same category, you can export a list of users of the unsanctioned app, and then contact them to migrate them to the sanctioned app.</li></ul></li>|  
 |Suspicious activity|This alert lets you know that anomalous activity has been detected that is not aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|  
 |Suspicious cloud use|This alert lets you know that anomalous activity has been detected that is not aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|  
 |Use of personal account|This alert lets  you know that a new personal account has access to resources in your connected apps.|Remove the user's collaborations in the external account.|  

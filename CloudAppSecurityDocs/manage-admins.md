@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 6/24/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,7 +30,7 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 
-## Managing admin access
+# Manage admin access
 
 Microsoft Cloud App Security supports Role-based access control. By default, the following Office 365 and Azure AD admin roles have access to Microsoft Cloud App Security:
 
@@ -66,16 +66,16 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
 
 - Group admin: Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin will be able to view and modify information in Microsoft Cloud App Security only for that user group, as follows:
 
- - Activities page - only activities regarding the users in the group
- - 	Alerts - only alerts relating to the users in the group
- - 	Policies - can view all policies and can edit or create only policies that deal exclusively with users in the group
- - 	Account - only accounts for the specific users in the group
- - 	App permissions – No permissions
- - 	Files page – No permissions
- - 	Conditional Access App Control - No permissions
- - 	Cloud Discovery activity - No permissions
- - 	Security extensions - permissions only for API token with users in the group
- - 	Governance actions - only for the specific users in the group
+  - Activities page - only activities regarding the users in the group
+  - Alerts - only alerts relating to the users in the group
+  - Policies - can view all policies and can edit or create only policies that deal exclusively with users in the group
+  - Account - only accounts for the specific users in the group
+  - App permissions – No permissions
+  - Files page – No permissions
+  - Conditional Access App Control - No permissions
+  - Cloud Discovery activity - No permissions
+  - Security extensions - permissions only for API token with users in the group
+  - Governance actions - only for the specific users in the group
 
 
 
@@ -85,7 +85,7 @@ You can also add additional admins to Cloud App Security, without adding users t
 
 1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admins**. 
 
-2. Click the plus to add the admins who should have access to Cloud App Security.
+2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
   
   ![add admins](./media/add-admin.png)
     
@@ -97,17 +97,28 @@ You can also add additional admins to Cloud App Security, without adding users t
 
    >[!NOTE]
     >Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
-  
-**To override admin permissions:**
+
+
+## Override admin permissions
 
 If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions.
 For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the desired permissions in Cloud App Security. 
 
+## Add additional admins
 
 To add additional admins to Cloud App Security:
 1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. 
 
 2. Add the admins who should have access to Cloud App Security. Select their access level and click **Close**.
+
+  
+## Invite external admins
+
+Microsoft Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Microsoft Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles currently available in Microsoft Cloud App Security. In addition, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. 
+
+To switch between tenants, after you have permissions to multiple tenants, click the user icon ![user icon](./media/user-icon.png "user icon"). You should see a list of the tenants for which you have permissions. Select the tenant you want to manage.
+
+![choose tenant](./media/choose-tenant.png "choose tenant")
 
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   

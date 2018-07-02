@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -38,6 +38,9 @@ Classification Service natively, to classify the files in your cloud apps.
 Microsoft Data Classification Service provides a unified information protection
 experience across Office 365, Azure Information Protection, and Microsoft
 Cloud App Security, and allows you to extend your data classification efforts to the third-party cloud apps that are protected by Microsoft Cloud App Security, leveraging the decisions you already made across and even greater number of apps.
+
+>[!NOTE]
+> This feature is currently only available in the US and Europe (excluding France).
 
 With no additional configuration required, when creating a data leak prevention
 policy for your files in Microsoft Cloud App Security, you will automatically

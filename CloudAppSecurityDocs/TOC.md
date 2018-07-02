@@ -55,6 +55,7 @@
 #### [Generate data management reports](built-in-reports.md)
 ### [Accounts](accounts.md)
 ### [Manage app permissions](manage-app-permissions.md)
+### [Security configuration](security-config.md)
 ### [Monitor apps](monitor-alerts.md)
 #### [Manage alerts](managing-alerts.md)
 ## [Control](control.md)
@@ -62,7 +63,8 @@
 #### [Cloud Discovery policies](cloud-discovery-policies.md)
 ##### [Cloud Discovery anomaly detection policy](cloud-discovery-anomaly-detection-policy.md)
 #### [Activity policies](user-activity-policies.md)
-#### [Anomaly detection policy](anomaly-detection-policy.md)
+#### [Anomaly detection policies](anomaly-detection-policy.md)
+#### [App permission policies](app-permission-policy.md)
 #### [File policies](data-protection-policies.md)
 ##### Content inspection
 ###### [Built-in content inspection](content-inspection.md)

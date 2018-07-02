@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,10 +30,6 @@ ms.suite: ems
 
 # Protect apps with Microsoft Cloud App Security Conditional Access App Control
 
-> [!NOTE]
-> This is a preview feature.
-
-
 >[!div class="step-by-step"]
 [NEXT: Deploy Conditional Access App Control »](proxy-deployment-aad.md)
 
@@ -50,12 +46,13 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 -	**Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be protected via encryption on download. This ensures that the document is protected, and user access is authenticated, if the data is downloaded to an untrusted device. 
 
--	**Restrict user sessions from non-corporate networks**: Users accessing a protected app from a location that is not part of your corporate network, are allowed restricted access and the download of sensitive materials is blocked or protected.
-
 -	**Monitor low-trust user sessions**: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future. 
 
 - **Block access**: You can completely block access to specific apps for users coming from unmanaged devices or from non-corporate networks.
 
+- **Create read-only mode**: By monitoring and blocking custom in-app activities you can create a read-only mode to specific apps for specific users.  
+
+- **Restrict user sessions from non-corporate networks**: Users accessing a protected app from a location that is not part of your corporate network, are allowed restricted access and the download of sensitive materials is blocked or protected.
 
 ### How session control works
 
@@ -94,10 +91,10 @@ The device identification mechanism can request authentication from relevant dev
 Conditional Access App Control currently supports apps that are configured with SAML single sign on in Azure AD. 
 
 > [!NOTE]
-> - Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
+> - Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
 > - Office 365 applications are not configured with SAML so they are not currently supported.
 
-Session control is available for any browser on any major platform (mobile apps and desktop apps are currently not supported). By natively integrating with Azure AD, any apps that are configured with SAML single sign-on in Azure AD can be supported, including the following featured apps:
+Session control is available for any browser on any major platform (mobile apps and desktop apps can also be blocked or allowed). By natively integrating with Azure AD, any apps that are configured with SAML single sign-on in Azure AD can be supported, including the following featured apps:
 
 -	Salesforce
 
@@ -126,6 +123,8 @@ Session control is available for any browser on any major platform (mobile apps 
 -	HighQ 
 
 -   Concur
+
+-   Tableau
 
 Additional apps are being continuously on-boarded to session control. If you are interested in a specific app that is not mentioned here, [send us details about the app](mailto:casfeedback@microsoft.com) and the use case you are interested in, and we will on-board it.
 

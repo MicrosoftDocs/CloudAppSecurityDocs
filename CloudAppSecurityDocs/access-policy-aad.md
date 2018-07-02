@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,8 +30,6 @@ ms.suite: ems
 
 # Access policies 
 
-> [!NOTE]
-> This is a preview feature.
 
 
 >[!div class="step-by-step"]
@@ -46,12 +44,12 @@ Microsoft Cloud App Security access policies enable real-time monitoring and con
 
 ## Prerequisites to using access policies
 
-- Azure AD Premium P2 license
+- Azure AD Premium P1 license
 - The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 - An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to Microsoft Cloud App Security, as described below.
 
 > [!NOTE]
-> - Access policies also support apps that are configured with identity providers other than Azure AD in Private Preview. For more information about the Private Preview, send an email to mcaspreview@microsoft.com.
+> - Access policies also support apps that are configured with identity providers other than Azure AD. For more information send an email to mcaspreview@microsoft.com.
 
 ## Create an Azure AD conditional access policy
 
@@ -63,9 +61,7 @@ Azure Active Directory conditional access policies and Cloud App Security sessio
    > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
 
 2. Route users to Microsoft Cloud App Security by selecting the **Use Conditional Access App Control enforced restrictions** in the **Session** blade.
-
-   ![Conditional Access App Control restrictions Azure AD conditional access](./media/proxy-deploy-restrictions-aad.png)
-
+ 
 ## Create a Cloud App Security access policy 
 
 To create a new access policy, follow this procedure:
@@ -73,11 +69,7 @@ To create a new access policy, follow this procedure:
 1. In the portal, select **Control** followed by **Policies**.
 2. In the **Policies** page, click **Create policy** and select **Access policy**.  
 
-   ![Create access policy](./media/access-policy-menu.png)
-
 3. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
-
-   ![New access policy](./media/access-policy-screen.png)
 
 4. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
      
@@ -89,8 +81,6 @@ To create a new access policy, follow this procedure:
 
    - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native client** and should be tested against your mobile and desktop apps for each cloud app.
   
-       ![native client support](./media/user-agent-tag.png)
-
 5. Under **Actions**, select one of the following: 
 
     - **Allow**: Set this action to explicitly allow access according to the policy filters you set.
