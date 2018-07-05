@@ -31,6 +31,12 @@ ms.suite: ems
 # What's new with Microsoft Cloud App Security
 
 
+## Cloud App Security release 127
+
+Released July 8, 2018
+
+- You now have the ability to see generic activities for Office 365 In the **Activity log** and in **Activity policies** you can now filter the Office 365 activities for **Unspecified** activities. Reviewing these activities enables you to investigate information about activities performed that aren't yet classified by type in Cloud App Security, and you can use these activities to send requests to the Cloud App Security team to create new activity types based on these activities. 
+
 ## Cloud App Security release 126
 
 Released June 24, 2018
