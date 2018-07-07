@@ -83,7 +83,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Cisco ScanSafe
 - Cisco Meraki – URLs log
 - Clavister NGFW (Syslog)
-- Dell Sonicwall
+- (Formerly Dell) Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -116,7 +116,7 @@ Data attributes (according to vendor documentation):
 |Cisco Ironport WSA|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 |Cisco Meraki|**Yes**|**Yes**|No|**Yes**|No|No||Cisco Scansafe|**Yes**|No|**Yes**|**Yes**|**Yes**|**Yes**|
 |Clavister NGFW (Syslog)|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-|Dell SonicWall|**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
+|(Formerly Dell) SonicWall|**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Fortigate|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Juniper SRX|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
 |Juniper SSG|No|**Yes**|No|**Yes**|**Yes**|**Yes**|
