@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 7/15/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -47,7 +47,17 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
          ![box apps](./media/box-apps.png "box apps")  
   
-    -   If **Unpublished Applications** is selected, in the **Except for** text box, add the Cloud App Security app serial number:<br></br>US1 data center: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>US2 data center: `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>EU1 data center: `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>Then click **Save**. For information on how to see which Cloud App Security data center you are connected to, see [API tokens](api-tokens.md). 
+    -   If **Unpublished Applications** is selected, in the **Except for** text box, add the Cloud App Security app serial number:
+     
+         |Data center|Microsoft Cloud App Security serial number|
+         |----|----|    
+         |US1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
+         |US2|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
+         |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
+         |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
+         |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
+
+        Then click **Save**. For information on how to see which Cloud App Security data center you are connected to, see [API tokens](api-tokens.md). 
   
          ![box settings except for](./media/box-settings-except-for.png "box settings except for")  
   
