@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -58,6 +58,13 @@ Integrating with your SIEM is accomplished in three steps:
 
 - A standard Windows or Linux server (can be a virtual machine).
 - The server must be running Java 8; earlier versions are not supported.
+- OS: Windows or Linux
+- CPU: 2
+- Disk space: 20 GB
+- RAM: 2 GB
+- The server must be running Java 8. Earlier versions are not supported.
+- Set your firewall as described in [Network requirements](network-requirements.md)
+ 
 
 ## Integrating with your SIEM
 
