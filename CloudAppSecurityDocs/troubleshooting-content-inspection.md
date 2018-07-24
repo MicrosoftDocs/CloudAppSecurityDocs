@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,14 +25,17 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 # Troubleshooting content inspection
+
 |Content inspection status|Description|
 |----|----|
 |Completed|The content inspection completed successfully.|
 |Not applicable|Content inspection was not applicable for this file. This might be because no policy requires content inspection of this file or because the file type is not supported.|
 |Pending|The file is currently in the content inspection queue.|
-|Failed: Download error|Cloud App Security could not download the file for inspection.|
+|Failed: Download error|Microsoft Cloud App Security could not download the file for inspection.|
 |Failed: File is encrypted|The file could not be decrypted.|
 |Failed: File is corrupted|The file is corrupted in some way and could not be inspected.|
 |Failed: Internal error|Something undetermined went wrong when trying to inspect the file.|
@@ -47,7 +50,6 @@ ms.suite: ems
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
+

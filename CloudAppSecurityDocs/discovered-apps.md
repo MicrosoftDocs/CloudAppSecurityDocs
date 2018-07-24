@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2017
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,6 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+*Applies to: Microsoft Cloud App Security*
+
 
 # Working with discovered apps
 
@@ -59,21 +62,13 @@ In the **Discovered apps** page, under **Browse by category** select both **Clou
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they are unsanctioned you can use a blocking script to block them from being used in your environment.
 
-## Discovered app filters
+Cloud discovery enables you to dive even deeper into your organization’s cloud usage, and identify specific instances that are in use by investigating the discovered sub-domains.
+ 	 
+For example, you can differentiate between different SharePoint sites.
 
-There are basic and advanced Discovered app filters. To achieve a complex filter (such as in the example above) use the advanced option which includes all of the following:
+This is supported only in firewalls and proxies that contain target URL data. See the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-![Discovered apps](./media/discovered-apps.png)  
-
-
-- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged.
-- **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
-- **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
-- **Compliance risk factor**: Lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **General risk factor**: Lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
-- **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps.
-- **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
-- **Usage**: Lets you filter based on the usage statistics of this app, such as apps with less than or more than a specified amount of **data uploads**, apps with more than or less than a specified number of **Users**.
+ ![sub-domain information](./media/discovery-domains.png) 
 
 ## Exclude entities  
 If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
@@ -113,6 +108,10 @@ To create a new continuous report:
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
 
+> [!NOTE]
+> All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
+
+
 ## Deleting Cloud Discovery data  
 There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
   
@@ -124,15 +123,15 @@ There are a number of reasons why you may want to delete your Cloud Discovery da
   
 To delete Cloud Discovery data:  
   
-1.  In the portal, under the settings icon, select **Cloud Discovery settings**.  
+1. In the portal, under the settings icon, select **Cloud Discovery settings**.  
   
-2.  Click the **Delete data** tab.  
+2. Click the **Delete data** tab.  
   
-     It is important to be sure you want to delete data before continuing - it cannot be undone and it deletes **all** Cloud Discovery data in the system.  
+    It is important to be sure you want to delete data before continuing - it cannot be undone and it deletes **all** Cloud Discovery data in the system.  
   
-3.  Click the **Delete** button.  
+3. Click the **Delete** button.  
   
-     ![delete data](./media/delete-data.png "delete data")  
+    ![delete data](./media/delete-data.png "delete data")  
   
    > [!NOTE]  
    >  The deletion process takes a few minutes and is not immediate.  

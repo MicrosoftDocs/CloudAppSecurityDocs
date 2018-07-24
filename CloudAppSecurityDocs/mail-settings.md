@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,40 +26,39 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
 
 ##  <a name="mailsettings"></a> Set email notification preferences  
-In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **Mail settings**, to set parameters for email notifications sent from Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved.  
-  
-![mail setting menu](./media/mail-setting-menu.png "mail setting menu")  
-  
-Configure the following:  
-  
-1.  **From email address**: The email account you want to use to send the notification.  
-  
-     **From display name**: The name you want to be displayed in the **From** field of the email message.  
-  
-     **Reply-to email address**: The email account to be used for replies to the message.  
-  
-     ![mail settings config](./media/mail-settings-config.png "mail settings config")  
 
-  >[!NOTE]
-  >To change the **From email address** field to a domain of your own, refer to the instructions [here](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-).
-  
-2.  For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
-  
-    -   All template CSS should be inline in the template.  
-  
-    -   The template should have three un-editable placeholders:  
-  
-         %%logo%% - a URL to your company's logo that was uploaded in the General setting page  
-  
-         %%title%% - a placeholder for the title of the email, as set by the policy.  
+To set parameters for email notifications sent from Microsoft Cloud App Security to administrators requesting alerts, and notifications sent to end users about breaches in which they are involved, follow this procedure. For information about the Microsoft Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md). 
 
-         %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
+
+1. In the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings**, and then select the **Mail settings** tab.  
+
+   ![mail settings](./media/mail-settings-config.png)
+
+2. Under **Email sender identity**: If you are planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following: **From display name**, **From email address**, **Reply-to email address**. Microsoft Cloud App Security accomplishes this for you by using a third-party mail service called MailChimp®. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement in order to enable this - otherwise Microsoft Cloud App Security will send the notifications using the default settings.
+   
+   > [!NOTE]
+   > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](http://www.rfc-editor.org/rfc/rfc822.txt).
+
+  
+3. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following:  
+  
+   -   All template CSS files should be inline in the template.  
+  
+   -   The template should have three un-editable placeholders:  
+  
+        %%logo%% - a URL to your company's logo that was uploaded in the General setting page  
+  
+        %%title%% - a placeholder for the title of the email, as set by the policy.  
+
+        %%content%% - a placeholder for the content that will be included for end users, as set by the policy.  
      
-3.  Click **Upload a template...** and select the file you created. 
+4. Click **Upload a template...** and select the file you created. 
 
-4. Then, click **Send a test email** to send yourself a test email to see an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  The following is a sample email template: 
+5. Then, click **Send a test email** to send yourself a test email to see an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  The following is a sample email template: 
 
 
 
@@ -125,7 +124,7 @@ Configure the following:
     
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

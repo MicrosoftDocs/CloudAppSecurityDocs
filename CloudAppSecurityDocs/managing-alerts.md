@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 7/2/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,50 +25,48 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
+
 
 ## Manage your alerts  
 Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your organization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
 
 It is a good idea to review all of your alerts and to use them as tools for modifying your policies. If harmless events are being considered violations to existing policies, refine your policies so that you receive fewer unnecessary alerts.  
 
-1.   Under **Open alerts**, click **View all alerts**.  
+1. Under **Open alerts**, click **View all alerts**.  
 
-     This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It then helps you safeguard the security posture you defined for your cloud environment.  
+   This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It then helps you safeguard the security posture you defined for your cloud environment.  
 
-     ![Alerts](./media/alerts.png "alerts")  
+   ![Alerts](./media/alerts.png "alerts")  
 
-2.   For each alert, you need to investigate and determine the nature of the violation and the required response.  
+2. For each alert, you need to investigate and determine the nature of the violation and the required response.  
 
-     You can filter the alerts by Alert type or by Severity in order to process the most important ones first.  
+   You can filter the alerts by Alert type or by Severity in order to process the most important ones first.  
 
-     Select a specific alert. Depending on what type of alert it is, you will see various actions that can be taken before resolving the alert.  
+   Select a specific alert. Depending on what type of alert it is, you will see various actions that can be taken before resolving the alert.  
 
-     There are three types of violations you will need to deal with when investigating alerts:  
+   There are three types of violations you will need to deal with when investigating alerts:  
 
-    #### Serious violations
-     Serious violations require immediate response.
+   - **Serious violations**<br>
+     Serious violations require immediate response. <br>
+     Examples:<br>
+     For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         Examples:  
+     For a data leak you might want to restrict permissions or quarantine the file.  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+   - **Questionable violations**<br>
+     Questionable violations require further investigation.  <br>
+     You can contact the  user or the user's manager about the nature of the activity. <br>  
+     Leave the activity open until you have more information.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **Authorized violations or anomalous behavior**<br>
+     Authorized violations or anomalous behavior can result from legitimate use.  
 
-    #### Questionable violations
-    Questionable violations require further investigation.  
+     Dismiss the alert.  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
-
-         Leave the activity open until you have more information.  
-
- #### Authorized violations or anomalous behavior
- Authorized violations or anomalous behavior can result from legitimate use.  
-
-         Dismiss the alert.  
-
-3.   When you finish this process, mark the alert as resolved.  
+3. When you finish this process, mark the alert as resolved.  
 
 The following table provides a list of the types of alerts that can be triggered and recommends ways in which you can resolve them.  
 
@@ -81,7 +79,7 @@ The following table provides a list of the types of alerts that can be triggered
 |New admin user|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user. If they are not, recommend revoking admin privileges to reduce exposure.|  
 |New admin location|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the sign in from this anomalous location was legitimate. If it's not, recommend revoking admin permissions or suspending the account to reduce exposure.|  
 |New location|This is an informative alert about access to a connected app from a new location, and it's triggered only once per country.|Investigate the specific user's activity.|  
-|New discovered service|This is an alert about Shadow IT--a new app was detected by Cloud Discovery.|<ul><li>Assess the risk of the service based on the app catalog.</li><li>Drill down into the activity to understand usage patterns and prevalence.</li><li>Decide whether to sanction or unsanction the app.</li><br /></ul>For unsanctioned apps:<br /><br /><ul><li>You may want to block use in your proxy or firewall.</li><li>If you have an unsanctioned app and a sanctioned app in the same category, you can export a list of users of the unsanctioned app, and then contact them to migrate them to the sanctioned app.</li></ul></li>|  
+|New discovered service|This is an alert about Shadow IT. A new app was detected by Cloud Discovery.|<ul><li>Assess the risk of the service based on the app catalog.</li><li>Drill down into the activity to understand usage patterns and prevalence.</li><li>Decide whether to sanction or unsanction the app.</li><br /></ul>For unsanctioned apps:<br /><br /><ul><li>You may want to block use in your proxy or firewall.</li><li>If you have an unsanctioned app and a sanctioned app in the same category, you can export a list of users of the unsanctioned app, and then contact them to migrate them to the sanctioned app.</li></ul></li>|  
 |Suspicious activity|This alert lets you know that anomalous activity has been detected that is not aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|  
 |Suspicious cloud use|This alert lets you know that anomalous activity has been detected that is not aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|  
 |Use of personal account|This alert lets  you know that a new personal account has access to resources in your connected apps.|Remove the user's collaborations in the external account.|  
@@ -89,5 +87,5 @@ The following table provides a list of the types of alerts that can be triggered
 
 ## Next steps  
 For more information about investigating alerts, see [Investigate](investigate.md).  
-For technical support, please visit [the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 Premier customers can also choose Cloud App Security directly from the [Premier Portal.](https://premier.microsoft.com/)  

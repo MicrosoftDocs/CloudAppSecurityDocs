@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,17 +26,21 @@ ms.suite: ems
 
 ---
 
-# Deploy Cloud App Security
-Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity, and helping to increase the protection of corporate data. In this topic, we walk you through the steps you take to set up and work with Cloud App Security.  
 
-Your organization must have a license to use Cloud App Security. For more information, see the Licensing resources section in [How to buy Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security).  
+*Applies to: Microsoft Cloud App Security*
+
+
+# Deploy Microsoft Cloud App Security
+Microsoft Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity, and helping to increase the protection of corporate data. In this topic, we walk you through the steps you take to set up and work with Microsoft Cloud App Security.  
+
+Your organization must have a license to use Cloud App Security. For more information, see the [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) section on the Cloud App Security home page.  
 
 >[!NOTE]
 >You do not need an Office 365 license to use Cloud App Security.  
 
 ## Prerequisites  
   
--   Your organization must have a license for Cloud App Security in order to use the product. For more information see [How to buy Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) and check the [Licensing resources](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx).  
+-   Your organization must have a license for Cloud App Security in order to use the product. For more information see the [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) section on the Cloud App Security home page.  
   
      For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
   
@@ -45,7 +49,7 @@ Your organization must have a license to use Cloud App Security. For more inform
   
 -   After you have procured a license for Cloud App Security, you will receive an email with activation information and a link to the Cloud App Security portal.  
   
--   To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
+-   To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Reader in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
   
 -   To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
 
@@ -68,14 +72,14 @@ Alternatively, you can access the portal through the **Office 365 Admin center**
 Required task: Upload traffic logs
 **To create a continuous Cloud Discovery report**
 
- 1. Go to **Settings** > **Cloud Discovery settings**.
- 2. Choose **Upload log automatically**.
+ 1.From the settings cog, select   **Cloud Discovery settings**.
+ 2. Choose **Automatic log upload**.
  3. On the **Data sources** tab, add your sources.
  4. On the **Log collectors** tab, configure the log collector.
  
- **To create a snapshot Cloud Discovery report**
+**To create a snapshot Cloud Discovery report**
 
- 1. Go to **Discover** > **Create new snapshot report** and follow the steps shown.
+ 1. Go to **Discover** > **Snapshot report** and follow the steps shown.
 
 **Why should you configure Cloud Discovery reports?**
 Having visibility into shadow IT in your organization is critical.
@@ -85,8 +89,8 @@ After your logs are analyzed, you can easily discover which cloud apps are being
 ### Step 2. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Required task: Connect apps
 
-1. Go to **Settings** > **App connectors**.
-2. Choose **Connect app** and select an app.
+1.From the settings cog, select   **App connectors**.
+2. Click the plus sign to add an app and select an app.
 3. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
@@ -113,23 +117,24 @@ Recommended task: Add your organization details
 
 **To enter email settings**
 
-1. Go to **Settings** > **Mail settings**.
+1. From the settings cog, select **Mail settings**.
 2. Under **Email sender identity**, enter your email addresses and display name.
 3. Under **Email design**, upload your organization's email template.
 
- **To set admin notifications**
+**To set admin notifications**
 
 1. In the navigation bar, choose your user name, and then go to **User settings**.
 2. Under **Notifications**, configure the methods you want to set for system notifications.
 3. Choose **Save**.
 
- **To customize the score metrics**
+**To customize the score metrics**
 
-1. Go to **Settings** > **Cloud Discovery settings**.
-2. Under **Score metric configuration**, configure the importance of various risk values.
+1. From the settings cog, select **Cloud Discovery settings**.
+1.From the settings cog, select **Cloud Discovery settings**.
+2. Under **Score metrics**, configure the importance of various risk values.
 3. Choose **Save**.
 
- Now the risk scores given to discovered apps are configured precisely according to your organization needs and priorities.
+Now the risk scores given to discovered apps are configured precisely according to your organization needs and priorities.
 
 **Why personalize your environment?**
 Some features work best when they are customized to your needs. 
@@ -141,17 +146,18 @@ Recommended task: Configure important settings
 
 **To create IP address tags**
 
-1. Go to **Settings** > **IP address tags**.
-2. Choose (+) **Add IP address range**.
+1.From the settings cog, select **Cloud Discovery settings**.
+1.From the settings cog, select **IP address ranges**.
+2. Click the plus sign to add an IP address range.
 3. Enter the IP range **details**, **location**, **tags**, and **category**.
 4. Choose **Create**.
 
- Now you can use IP tags when you create policies, and when you filter and create data views.
+   Now you can use IP tags when you create policies, and when you filter and create continuous reports.
 
- **To create views**
+**To create continuous reports**
 
-1. Go to **Settings** > **Cloud Discovery settings**.
-2. Under **Data views**, choose (+) **Add data view**.
+1. From the settings cog, **Cloud Discovery settings**.
+2. Under **Continuous reports**, choose **Create report**.
 3. Follow the configuration steps.
 4. Choose **Create**.
 
@@ -159,7 +165,7 @@ Now you can view discovered data based on your own preferences, such as business
 
 **To add domains**
 
-1. Go to **Settings** > **General settings**.
+1. From the settings cog, select **Settings**.
 2. Under **Organization details**, add your organization's internal domains.
 3. Choose **Save**.
 
@@ -170,5 +176,5 @@ These settings help give you better control of features in the console. With IP 
 ## See Also
 
 Set policies [Control cloud apps with policies](control-cloud-apps-with-policies.md).    
-For technical support, go to the [Cloud App Security assisted support](http://support.microsoft.com/oas/default.aspx?prid=16031) page.   
+
 Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   

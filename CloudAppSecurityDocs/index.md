@@ -1,11 +1,10 @@
 ---
 layout: LandingPage
-ms.topic: landing-page
-description: Learn how to use Cloud App Security.
+description: Learn how to use Microsoft Cloud App Security.
 ---
-# Cloud App Security Documentation
+# Microsoft Cloud App Security Documentation
 
-Provide enterprise-grade security for your cloud apps with Cloud App Security.
+Provide enterprise-grade security for your cloud apps with Microsoft Cloud App Security.
 Whether or not you’re in the cloud, your employees are. Bring the security of your on-premises systems to your cloud applications—both approved and unapproved—for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
 
 <ul class="panelContent cardsFTitle">
@@ -20,7 +19,7 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Learn more about Cloud App Security</h3>
+                        <h3>Learn more about Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -38,7 +37,7 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Investigate what's happening in your cloud environment</h3>
+                        <h3>Investigate what&#39;s happening in your cloud environment</h3>
                     </div>
                 </div>
             </div>
@@ -74,7 +73,7 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Use Cloud App Security to control cloud app use</h3>
+                        <h3>Use Microsoft Cloud App Security to control cloud app use</h3>
                     </div>
                 </div>
             </div>
@@ -92,7 +91,7 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>More information about Cloud App Security</h3>
+                        <h3>More information about Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -110,7 +109,7 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Get support for Cloud App Security</h3>
+                        <h3>Get support for Microsoft Cloud App Security</h3>
                     </div>
                 </div>
             </div>
@@ -125,14 +124,13 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
 <ul class="panelContent cardsW">
     <li>
         <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Subscription</h3>
-                        <p><a href="https://portal.office.com/Signup/Signup.aspx?OfferId=831aa0aa-1408-4d03-8799-e6e09273f5b2&ali=1#0">Add a subscription</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>    
-</ul>
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Subscription</h3>
+                        <p><a href="https://portal.office.com/Signup/Signup.aspx?OfferId=831aa0aa-1408-4d03-8799-e6e09273f5b2&ali=1#0">Add a subscription</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li><br/></ul>

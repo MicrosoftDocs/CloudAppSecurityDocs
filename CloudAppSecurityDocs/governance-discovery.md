@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -26,6 +26,9 @@ ms.suite: ems
 
 ---
 
+*Applies to: Microsoft Cloud App Security*
+
+
 ## Govern discovered apps
 
 After you have reviewed the list of discovered apps in your environment, you can secure your environment against unwanted app use in the following ways.
@@ -41,6 +44,7 @@ You can then notify users of the app that it has been unsanctioned and suggest a
 
 If you have a list of apps you want to sanction or unsanction, you can use the checkbox to select all the apps you want to manage, and then select the action.
 
+To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 ## Export a block script to govern discovered apps
 
@@ -69,7 +73,7 @@ This solution does not require redirection of all of the organization's web traf
 
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   

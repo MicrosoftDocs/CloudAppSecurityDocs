@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+	  "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -28,11 +29,15 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/cloudappsecuritydocs",
+      "feedback_product_url": "https://microsoftsecurity.uservoice.com/forums/905161-cloud-app-security",
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility-security/toc.json"
+      "breadcrumb_path": "/cloud-app-security/bread/toc.json"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "cloud-app-security"
+    "dest": "cloud-app-security",
+    "markdownEngineName": "markdig"
   }
 }

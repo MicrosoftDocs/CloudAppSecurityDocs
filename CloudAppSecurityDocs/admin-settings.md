@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -25,18 +25,19 @@ ms.suite: ems
 #ms.custom:
 
 ---
+*Applies to: Microsoft Cloud App Security*
 
 ##  <a name="Adminsettings"></a> Customize your admin settings  
-To set up your preferences as an admin of Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following:  
+To set up your preferences as an admin of Microsoft Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following settings:  
   
-1.  Click **Account settings**. Here you can customize the portal language for your own viewing. You can set it to display the portal in either the default language or you can set a different language for yourself.  
+1.  Click **Account settings**. Here you can set and renew your password for access to the Cloud App Security portal.  
   
      ![custom user settings](./media/custom-user-settings.png "custom user settings")  
   
-2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity for which alerts and violations you want to receive emails - the severity is set per policy, so when violations are triggered, you will receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails will be sent to the alias associated with the administrator user account you used to log into Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
+2.  Click **Notifications** and set email and text notification preferences for emails you receive from the system.  You can set the severity that determines which alerts and violations you want to receive emails. The severity is set per policy, so when violations are triggered, you receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails are sent to the alias associated with the administrator user account you used to log in to Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.  
   
     > [!NOTE] 
-    > The maximum number of alerts that will be sent via text message is 10 per phone number per day. Note that the day is calculated according to the UTC timezone. 
+    > The maximum number of alerts that are sent via text message is 10 per phone number per day. The day is calculated according to the UTC timezone. 
   
     ![notification settings](./media/notification-settings.png "notification settings")  
   
@@ -48,7 +49,7 @@ To set up your preferences as an admin of Cloud App Security, click your name in
     
 ## See Also  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
-[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
