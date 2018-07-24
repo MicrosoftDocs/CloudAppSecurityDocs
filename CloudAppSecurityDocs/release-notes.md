@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,6 +29,29 @@ ms.suite: ems
 
 
 # What's new with Microsoft Cloud App Security
+
+## Cloud App Security release 128
+
+Released July 22, 2018
+
+-	**App permissions actions across multiple apps**<br>
+For apps that have been granted app permissions, you can now ban or approve multiple apps in a single action. For example, you can review all the apps that have been granted permission by users in your organization, select all the apps you want to ban, and then click ban apps to revoke all consent granted and will no longer allow users to grant permission to those apps.  For more information, see [Manage app permission](manage-app-permissions.md).
+-	**Enhanced support for Azure applications**<br>
+For Azure, we are now gradually rolling out the ability to detect applications as user account activities performed by the Azure applications (both internal and external). This enables you to create policies that will alert you if an application performs unexpected and unauthorized activities. For more information, see [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
+-	**Data Classification Engine updated with new GDPR sensitive types**<br>
+The [Cloud App Security Data Classification Service](dcs-inspection.md) added new GDPR sensitive types to our Data Classification Engine to enable you to detect GDPR related content in your files.
+-	**Updates to the Cloud App Catalog**<br>
+The Cloud App Catalog now includes a legal risk category (in addition to General, Security and Compliance) to help you manage data privacy and ownership compliance, including GDPR readiness.
+To help with assessing the GDPR readiness of each cloud app, the new risk category contains the GDPR readiness statement of the cloud service and status of each GDPR framework control.
+Note that as part of this improvement, the following risk attributes were moved from other risk category to the Legal category:
+     - DMCA
+     - Data ownership
+     - Data retention policy
+
+     In addition, the new risk category is scored separately so you can configure the score weighting according to your preferences and priorities. For more information, see [Risk score](risk-score.md).
+
+-	**New suggested query: GDPR ready** <br>
+There is a new suggested query to enable you to identify discovered apps that are GDPR ready. Because GDPR recently became a top priority for security admins, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren’t.
 
 
 ## Cloud App Security release 127
