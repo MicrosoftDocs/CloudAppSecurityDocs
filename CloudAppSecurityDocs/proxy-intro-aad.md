@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 8/5/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -125,6 +125,12 @@ Session control is available for any browser on any major platform (mobile apps 
 -   Concur
 
 -   Tableau
+
+-  Dropbox
+
+-  Egnyte
+
+-  GitHub
 
 Additional apps are being continuously on-boarded to session control. If you are interested in a specific app that is not mentioned here, [send us details about the app](mailto:casfeedback@microsoft.com) and the use case you are interested in, and we will on-board it.
 
