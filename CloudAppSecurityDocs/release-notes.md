@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/24/2018
+ms.date: 8/05/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -29,6 +29,14 @@ ms.suite: ems
 
 
 # What's new with Microsoft Cloud App Security
+
+
+
+## Cloud App Security release 129
+
+Released July 22, 2018
+
+- **New anomaly detection policies - suspicious email rules**<br>New anomaly detection policies were added that detect suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address. 
 
 ## Cloud App Security release 128
 
