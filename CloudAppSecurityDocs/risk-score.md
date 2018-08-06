@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/5/2018
+ms.date: 8/6/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -64,7 +64,8 @@ There are basic and advanced Cloud App Catalog filters. To achieve a complex fil
 - **General risk factor**: Lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
 - **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps.
 - **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
-
+- **Legal**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users, such as GDPR, DMCA, and data retention policy.
+ 
 ## Suggesting a change
 
 If you find a new app in your environment that hasn't been scored by Cloud App Security, a new risk factor, or a score update, or app data that is outdated, you can request a review of the app:
