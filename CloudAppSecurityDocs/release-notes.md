@@ -34,7 +34,7 @@ ms.suite: ems
 
 ## Cloud App Security release 129
 
-Released July 22, 2018
+Released August 5, 2018
 
 - **New anomaly detection policies - suspicious email rules**<br>New anomaly detection policies were added that detect suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address. 
 - This release includes fixes and improvements for multiple issues. 
