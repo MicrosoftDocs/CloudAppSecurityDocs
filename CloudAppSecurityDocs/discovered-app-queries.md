@@ -33,7 +33,7 @@ ms.suite: ems
 
 ## Discovered app filters
 
-There are basic and advanced Discovered app filters. To achieve a complex filter (such as in the example above) use the advanced option which includes all of the following:
+There are basic and advanced Discovered app filters. To achieve a complex filter (such as in the example above) use the advanced option, which includes all of the following filters:
 
 ![Discovered apps](./media/discovered-apps.png)  
 
@@ -41,11 +41,11 @@ There are basic and advanced Discovered app filters. To achieve a complex filter
 - **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. In addition, you can create a custom tag for your app and then use it to filter for specific types of apps. 
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
 - **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
-- **Compliance risk factor**: Lets you search for a specific standards, certification and compliances that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
+- **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
 - **General risk factor**: Lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
-- **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps. You can also override the risk score set by Cloud App Security. For more information see [Working with the risk score](risk-score.md).
+- **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps. You can also override the risk score set by Cloud App Security. For more information, see [Working with the risk score](risk-score.md).
 - **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
-- **Usage**: Lets you filter based on the usage statistics of this app, such as apps with less than or more than a specified amount of **data uploads**, apps with more than or less than a specified number of **Users**.
+- **Usage**: Lets you filter based on the usage statistics of this app, such as apps with less than or more than a specified number of **data uploads**, apps with more than or less than a specified number of **Users**.
 - **Legal**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users, such as GDPR, DMCA, and data retention policy.
 
 ### Creating and managing custom app tags
@@ -55,7 +55,7 @@ These tags can then be used as filters for deeper diving into specific types of 
 
 To create a custom app tag:
 
-1. From the **Settings** cog, select **Cloud Discovery** and in the **Manage app tags** tab, click the icon ![plus icon](./media/plus-icon.png). 
+1. From the **Settings** cog, select **Cloud Discovery**, and in the **Manage app tags** tab, click the icon ![plus icon](./media/plus-icon.png). 
 
 ![create custom app tag](./media/create-app-tag.png)
 
@@ -87,9 +87,9 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 
  - Cloud apps that allow anonymous use - filters all your discovered apps to display only apps that are security risks because they don't require user authentication and allow users to upload data.
 
- - Cloud apps that are CSA STAR certified - filters all your discovered apps to display only apps that have CSA STAR certification either by self-assessment, certification, attestation or continuous monitoring.
+ - Cloud apps that are CSA STAR certified - filters all your discovered apps to display only apps that have CSA STAR certification either by self-assessment, certification, attestation, or continuous monitoring.
 
- - Cloud apps that are FedRAMP compliant - filters all your discovered apps to display only apps whose FedRAMP compliance risk factor is high, medium or low. 
+ - Cloud apps that are FedRAMP compliant - filters all your discovered apps to display only apps whose FedRAMP compliance risk factor is high, medium, or low. 
 
  - Cloud storage and collaboration apps that own user data- filters all your discovered apps to display only apps that are risky because they don't allow you to have ownership over your data but they do retain your data.
 
@@ -99,7 +99,7 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 
  - Enterprise cloud apps that have weak encryption - filters all your discovered apps to display only apps that are risky because they don't encrypt data-at-rest and don't support any encryption protocol.
 
-- GDPR ready: filters all your discovered apps to display ony apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren’t.
+- GDPR ready: filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren’t.
  
 ![query discovered apps](./media/queries-discovered-apps.png)
 
