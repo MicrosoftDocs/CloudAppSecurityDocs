@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -64,7 +64,7 @@ There are basic and advanced Cloud App Catalog filters. To achieve a complex fil
 - **General risk factor**: Lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
 - **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps.
 - **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
-- **Legal**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users, such as GDPR, DMCA, and data retention policy.
+- **Legal risk factor**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users, such as GDPR, DMCA, and data retention policy.
  
 ## Suggesting a change
 
@@ -104,6 +104,8 @@ Cloud Discovery provides you with important data regarding the credibility and r
 -   **Security** - The security category takes into account all standards dealing with the physical security of the data utilized by the discovered app. This includes fields such as multi-factor authentication, encryption, data classification, and data ownership.  
   
 -   **Compliance** - This category displays which common best-practice compliance standards are upheld by the company that produces the app. The list of specifications includes standards such as HIPAA, CSA, and PCI-DSS.  
+
+-  **Legal**: This category displays which apps have which regulations and policies in-place to ensure data protection and privacy of the app's users, such as GDPR, DMCA, and data retention policy.
   
 Each of the categories is composed of many specific properties. According to the Cloud App Security scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly, whereas continuous properties such as domain age will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category, to create the category's subscore. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.  
   
