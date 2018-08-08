@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -78,6 +78,11 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
    f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.
+    > [!NOTE]
+    >It is recommended to set up a dedicated data source per network device to enable you to:
+    <br>- Monitor the status of each device separately, for investigation purposes.
+    <br>- Explore Shadow IT Discovery per device, if each device is used by a different user segment.
+
 
 3. Go to the **Log collectors** tab at the top.
 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -69,6 +69,14 @@ For example, you can differentiate between different SharePoint sites.
 This is supported only in firewalls and proxies that contain target URL data. See the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![sub-domain information](./media/discovery-domains.png) 
+
+## Generate Cloud Discovery executive report
+
+The best way to get an overview of Shadow IT use across your organization is by generating a Cloud Discovery executive report. This report identifies the top potential risks and helps you plan a workflow to mitigate and manage risks until they are resolved.
+
+To generate a Cloud Discovery executive report: 
+
+From the Cloud Discovery dashboard, click the three dots in the upper right corner of the menu and select **Generate Cloud Discovery executive report**.
 
 ## Exclude entities  
 If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
