@@ -16,7 +16,7 @@
 ### [User groups](user-groups.md)
 ### [Scoped deployment](scoped-deployment.md)
 ### [IP tags and ranges](ip-tags.md)
-## [Deploy Cloud Discovery](set-up-cloud-discovery.md)
+## [Set up Cloud Discovery](set-up-cloud-discovery.md)
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](discovery-docker.md)
 #### [Docker on Ubuntu and RHEL on-premises](discovery-docker-ubuntu.md)
