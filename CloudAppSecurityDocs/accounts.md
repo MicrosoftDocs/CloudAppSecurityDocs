@@ -70,7 +70,7 @@ Following is a list of the account filters that can be applied. Most filters sup
 
 - **Organization/Department**: Enables you to filter for members of specific organizational groups defined in your connected apps.
 
-- **User group**: Enables you to filter for members of user groups in Cloud App Security - both built-in user groups and imported user groups.
+- **User group**: Enables you to filter for members of user groups in Cloud App Security - both built-in user groups and imported user groups. 
 
 
 ## See Also  
