@@ -37,23 +37,30 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
 	
 
 ## Prerequisites
-	- A valid license for Microsoft Cloud App Security
-	- A valid license for Zscaler Cloud 5.6
-	- An active Zscaler NSS subscription 
+
+- A valid license for Microsoft Cloud App Security
+- A valid license for Zscaler Cloud 5.6
+- An active Zscaler NSS subscription 
 
 ## Deployment
 
 1. In the Zscaler portal, perform the necessary steps to complete the [Zscaler partner integration with Microsoft Cloud App Security](https://help.zscaler.com/zia/configuring-mcas-integration).
 2. In the Cloud App Security portal, perform the following integration steps:
-    1. Go to **Settings** >** Cloud Discovery Settings** > **Automatic log upload** > **Add Data Source**.
-	2. In the **Data sources** tab, click **Add data source** and perform the following settings:
+    1. Click on the settings cog and select **Cloud Discovery Settings** > 
+    2. Click on the **Automatic log upload** tab and then click **Add data source**.
+	3. In the **Add data source** page, enter the following settings:
 		- Name = NSS
 		- Source = Zscaler QRadar LEEF
 		- Receiver type = Syslog - UDP
+
+	![data source zscaler](./media/data-source-zscaler.png)
+
 	3. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br>
-    Any app that you set as unsanctioned in Cloud App Security will be pinged by Zscaler every two hours, and then automatically blocked by Zscaler. 
-	
+    
 3. Investigate cloud apps discovered on your network, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md) for more information and investigation steps.
+ 
+4. Any app that you set as unsanctioned in Cloud App Security will be pinged by Zscaler every two hours, and then automatically blocked by Zscaler. 
+	
 	
 	
 	
