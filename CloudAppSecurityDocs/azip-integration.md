@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/16/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -43,7 +43,7 @@ By integrating Azure Information Protection into Cloud App Security, you can lev
 
 
 > [!NOTE] 
-> To enable this feature, you need both a Cloud App Security license and a license for Azure Information Protection Premium P2. As soon as both licenses are in place, Cloud App Security syncs the organizations labels from the Azure Information Protection service.
+> To enable this feature, you need both a Cloud App Security license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Cloud App Security syncs the organizations labels from the Azure Information Protection service.
 
 
 ## Prerequisites

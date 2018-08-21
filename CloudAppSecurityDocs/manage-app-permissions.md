@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -84,7 +84,7 @@ The App permissions page provides the following information about each third-par
 
 For G Suite and Salesforce, it is possible to revoke permission to an app or to notify the user that this should been done. 
 
-1. On the App permissions page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app Adallom Google Protector to access your G Suite account.
+1. On the **App permissions** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app Adallom Google Protector to access your G Suite account.
    This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user by click on the  icon at the end of the app row in the table and selecting **Revoke app**. 
 
@@ -98,7 +98,15 @@ You can query app permissions in either the **Basic** view or the **Advanced** v
 
 - Choose the **Remove a filter** icon  next to the filter to remove the filters.
 
+## Send feedback
 
+If there’s an OAuth app discovered in your organization that seems malicious, you can send the Cloud App Security team feedback to let us know. This new feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
+1. On the **App permissions** page, click on three dots at the end of the app row and select **Report app**.  
+
+   ![report app](./media/report-app.png)
+2. In the **Report this app** screen, you can select whether to report the app as malicious or to report some other issue with the way Cloud App Security perceives the app, for example, **Incorrect publisher** or **Incorrect permissions**. The data you submit will be used to update the app's risk score as well as other analytics about the app.
+
+ 
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 

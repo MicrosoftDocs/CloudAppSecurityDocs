@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/5/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -96,41 +96,25 @@ Conditional Access App Control currently supports apps that are configured with 
 
 Session control is available for any browser on any major platform (mobile apps and desktop apps can also be blocked or allowed). By natively integrating with Azure AD, any apps that are configured with SAML single sign-on in Azure AD can be supported, including the following featured apps:
 
--	Salesforce
+- AWS
+- Box
+- Concur
+- CornerStone on Demand
+- DocuSign
+- Dropbox
+- Egnyte
+- G Suite
+- GitHub
+- HighQ
+- JIRA/Confluence
+- Salesforce
+- ServiceNow
+- Slack
+- Tableau
+- Workday
+- Workiva
+- Workplace by Facebook
 
--	Box
-
--	G Suite
-
--	Workday
-
--	Slack
-
--	Workplace by Facebook
-
--	ServiceNow
-
--	JIRA/Confluence
-
--	AWS
-
--	Workiva
-
--	CornerStone on Demand
-
--	DocuSign
-
--	HighQ 
-
--   Concur
-
--   Tableau
-
--  Dropbox
-
--  Egnyte
-
--  GitHub
 
 Additional apps are being continuously on-boarded to session control. If you are interested in a specific app that is not mentioned here, [send us details about the app](mailto:casfeedback@microsoft.com) and the use case you are interested in, and we will on-board it.
 
