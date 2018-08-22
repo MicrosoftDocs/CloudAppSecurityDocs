@@ -50,9 +50,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
 5. Under **APIs** click **Go to APIs overview**.  
   
      ![google3](./media/google3.png "google3")  
-  
-6. Under **API**, disable all the listed APIs.  
-      
+   
 7. Click on **Library** and enable the following APIs (use the search line if the API is not listed in the **Popular APIs** list):  
      
    -   Admin SDK  
@@ -72,7 +70,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
 
 8. Click on Enable for each API.
      ![enable Google APPI](./media/google-api.png "google-api")  
-9. You should have 5 **Enabled APIs**, make sure to disable any other APIs:
+9. Make sure you have the following APIs enabled:
   
      ![google enabled apis](./media/google5.png "google5")  
   
