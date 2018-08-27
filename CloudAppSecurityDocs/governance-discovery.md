@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -33,6 +33,7 @@ ms.suite: ems
 
 After you have reviewed the list of discovered apps in your environment, you can secure your environment against unwanted app use in the following ways.
 
+
 ### Sanctioning/unsanctioning an app 
 
 You can unsanction a specific risky app by clicking the three dots at the end of the row and selecting **Unsanction**.
@@ -41,10 +42,12 @@ You can then notify users of the app that it has been unsanctioned and suggest a
 
 ![Tag as unsanctioned](./media/tag-as-unsanctioned.png)  
 
-
 If you have a list of apps you want to sanction or unsanction, you can use the checkbox to select all the apps you want to manage, and then select the action.
 
 To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+
+> [!NOTE]
+> If your tenant uses Zscaler NSS, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrating with Zscaler](zscaler-integration.md).
 
 ## Export a block script to govern discovered apps
 
