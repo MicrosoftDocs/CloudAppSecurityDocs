@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -94,9 +94,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
     
     -   You can also drill down into the user's account by clicking the cog at the end of the user's account row and selecting an action to take, such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also click on **Azure AD account settings** to get easy access to advanced user management features like group management, MFA, details about the user's sign ins and the ability to block sign in.
 
-4.  Go to **Investigate** and then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check the following:  
-
-     ![App dashboard](./media/investigate-app.png "investigate app")  
+4.  Go to **Investigate**, followed by **Connected apps** then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check:  
 
     -   What kind of devices are your users using to connect to the app?  
 
@@ -111,6 +109,8 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
     -   Are they authorized for the level of access they are permitted to?  
 
     -   How many users have deployed them? How common are these apps in general?  
+ 
+    ![App dashboard](./media/investigate-app.png "investigate app")  
 
 5.  Go to the **Cloud Discovery dashboard** and check the following:  
 

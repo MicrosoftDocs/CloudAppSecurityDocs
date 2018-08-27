@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -44,6 +44,8 @@ It is a good idea to review all of your alerts and to use them as tools for modi
    You can filter the alerts by Alert type or by Severity in order to process the most important ones first.  
 
    Select a specific alert. Depending on what type of alert it is, you will see various actions that can be taken before resolving the alert.  
+   
+   You can filter based on App - the apps listed are those for which activities were detected by Cloud App Security.
 
    There are three types of violations you will need to deal with when investigating alerts:  
 
