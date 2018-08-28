@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -67,7 +67,7 @@ This is the list of policy templates that exist in Microsoft Cloud App Security.
 |Sharing control|File shared with unauthorized domain|Alert when file is shared with an unauthorized domain (such as your competitor).|
 |Sharing control|Shared digital certificates (file extensions)|Alert when a file containing digital certificates is publicly shared. Use this template to help govern your AWS storage.|
 |Sharing control|Publicly accessible S3 buckets (AWS)|Alert when an AWS S3 bucket is publicly shared.|
-|Sharing control|Stale externally shared files|Find externally shared files that haven't been opened or modified for 6 months and remove them from your drive.|
+|Sharing control|Stale externally shared files|Find externally shared files that haven't been opened or modified for 6 months.|
 
 
 
