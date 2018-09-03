@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 9/3/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -31,6 +31,16 @@ ms.suite: ems
 # What's new with Microsoft Cloud App Security
 
 
+## Cloud App Security release 131
+
+Released September 2, 2018
+
+- **Automatically revoke permissions on risky OAuth apps**<br>
+You can now control which OAuth apps your users have access to, by revoking app permission for OAuth apps on Office, Google, or Salesforce. When creating an **App permission policy**, you can now set the policy to revoke an app’s permission. 
+
+- **Cloud Discovery additional built-in parser supported**<br>Cloud Discovery now supports the Forcepoint Web Security Cloud log format.
+
+ 
 ## Cloud App Security release 130
 
 Released August 22, 2018
