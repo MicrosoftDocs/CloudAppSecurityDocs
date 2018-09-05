@@ -56,26 +56,28 @@ ms.suite: ems
    1. The original file is moved to the admin quarantine folder you set.
    2. The original file is deleted.
    3. A tombstone file is uploaded to the original file location.
-
+      
       ![quarantine tombstone](./media/quarantine-tombstone.png)
-
+      
    4. The user has access only to the tombstone, where they can read the custom guidelines provided by IT and the correlation ID to contact IT to release the file.
 
 4. When you receive the alert that a file has been quarantined, investigate the file in the Cloud App Security **Alerts** page:
-
+   
    ![quarantine alerts](./media/quarantine-alerts.png)
- 
+   
 5. And also in the **Policy Report** on the **Quarantined** tab:
-
+   
    ![quarantine report](./media/quarantine-report.png)
     
 6. After a file is quarantined, use the following process to remediate the threat situation:
-       
+    
     1. Inspect the file in the quarantined folder on SharePoint online.
-    3. You can also look at the audit logs to deep dive into the file properties.
-    4. If the file is found to be against corporate policy, run the organization’s Incident Response (IR) process.
-    5. If the file is found to be harmless, you can restore the file from quarantine, at which point the original file is released, i.e. it is copied back to the original location, the tombstone is deleted and the user can access the file.
+    2. You can also look at the audit logs to deep dive into the file properties.
+    3. If the file is found to be against corporate policy, run the organization’s Incident Response (IR) process.
+    4. If the file is found to be harmless, you can restore the file from quarantine, at which point the original file is released, i.e. it is copied back to the original location, the tombstone is deleted and the user can access the file.
+       
        ![quarantine restore](./media/quarantine-restore.png)
+       
 7. After you have validated that the policy runs smoothly, you can use the automatic governance actions in the policy to prevent further leaks and automatically applying Admin quarantine when the policy is matched.
 
 > [!NOTE]
