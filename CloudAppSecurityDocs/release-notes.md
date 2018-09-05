@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 9/3/2018
 ms.topic: article
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,30 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+
+## Cloud App Security release 131
+
+Released September 2, 2018
+
+- **Automatically revoke permissions on risky OAuth apps**<br>
+You can now control which OAuth apps your users have access to, by revoking app permission for OAuth apps on Office, Google, or Salesforce. When creating an **App permission policy**, you can now set the policy to revoke an app’s permission. 
+
+- **Cloud Discovery additional built-in parser supported**<br>Cloud Discovery now supports the Forcepoint Web Security Cloud log format.
+
+ 
+## Cloud App Security release 130
+
+Released August 22, 2018
+
+
+- **New menu bar**<br>
+To provide a more consistent admin experience across Microsoft 365 products and enable you to more easily pivot between Microsoft security solutions, the Cloud App Security portal menu bar moved to the left side of the screen. This consistent navigation experience helps you orient yourself when moving from one Microsoft security portal to another.
+
+- **Impact OAuth app score**<br>
+You can now send the Cloud App Security team feedback to let us know if there’s an OAuth app discovered in your organization that seems malicious. This new feature enables you to be part of our security community and enhance OAuth app risk score and analysis. For more information see [Manage app permissions](manage-app-permissions.md).
+
+- **New Cloud Discovery parsers**<br>
+The Cloud Discovery parsers now support iboss Secure Cloud Gateway and Sophos XG.
 
 
 ## Cloud App Security release 129

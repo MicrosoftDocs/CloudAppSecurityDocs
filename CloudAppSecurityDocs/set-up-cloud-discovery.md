@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/15/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -92,12 +92,14 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Dell Sonicwall
 - Digital Arts i-FILTER
 - Fortinet Fortigate
+- iboss Secure Cloud Gateway
 - Juniper SRX
 - Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
 - Sophos SG
+- Sophos XG
 - Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)

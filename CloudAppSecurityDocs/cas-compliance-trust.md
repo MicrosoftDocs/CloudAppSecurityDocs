@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 68/21/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: cloud-app-security
@@ -63,7 +63,7 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo SOC](./media/soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo g-cloud](./media/g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
 
-For more information, go to [Microsoft Compliance Offerings](https://servicetrust.microsoft.com) and select Cloud App Security.  
+For more information, go to [Microsoft Compliance Offerings](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings) and select Cloud App Security.  
 
 ## Privacy
 
