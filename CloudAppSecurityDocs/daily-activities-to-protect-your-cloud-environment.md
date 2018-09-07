@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 6/10/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
