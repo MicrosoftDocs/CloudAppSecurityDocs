@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 6/24/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -79,7 +79,7 @@ Microsoft Cloud App Security supports Role-based access control. By default, the
 
 
 
-For more information, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
+For more information, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 You can also add additional admins to Cloud App Security, without adding users to Azure Active Directory administrative roles, by performing the following steps:
 
