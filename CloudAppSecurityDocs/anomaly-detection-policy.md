@@ -80,8 +80,11 @@ This detection takes advantage of Cloud App Security's ability to monitor user b
 - This detection identifies that users were active from an IP address that has been identified as risky by Microsoft Threat Intelligence. These IP addresses are involved in malicious activities, such as Botnet C&C, and may indicate compromised account. This detection leverages a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
 
 
-**Unusual activities (by user)**
+**Suspicious email rules**
 
+- This detection looks for suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address. 
+
+**Unusual activities (by user)**<br>
 These detections identify users who perform:
 
  - Unusual multiple file download activities

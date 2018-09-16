@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/16/2018
+ms.date: 9/21/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -162,7 +162,7 @@ Follow these instructions to create the file policy:
 
 
 > [!Note]
-> When Azure Identity Protection labels are disabled on a file, the disabled labels appear as disabled in Cloud App Security. Deleted labels are not displayed.
+> When Azure Information Protection labels are disabled on a file, the disabled labels appear as disabled in Cloud App Security. Deleted labels are not displayed.
 
 
 **Sample policy - confidential data that is externally shared on Box:**
