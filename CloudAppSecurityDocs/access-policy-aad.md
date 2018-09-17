@@ -55,7 +55,7 @@ Microsoft Cloud App Security access policies enable real-time monitoring and con
 
 Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. To set up a conditional access policy in Azure AD, follow this procedure:
 
-1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with Conditional Access App Control. 
+1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the app you want to control with Conditional Access App Control. 
 
    > [!NOTE]
    > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
