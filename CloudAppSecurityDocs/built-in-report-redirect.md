@@ -10,7 +10,7 @@ manager: mbaldwin
 ms.date: 4/22/2018
 ms.topic: conceptual
 ms.prod:
-ms.app: cloud-app-security
+ms.service: cloud-app-security
 ms.technology:
 ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 

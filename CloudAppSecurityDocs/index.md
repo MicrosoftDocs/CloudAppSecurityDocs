@@ -1,5 +1,6 @@
 ---
 layout: LandingPage
+ms.service: cloud-app-security
 description: Learn how to use Microsoft Cloud App Security.
 ---
 # Microsoft Cloud App Security Documentation
