@@ -22,6 +22,7 @@
 #### [Docker on Ubuntu and RHEL on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
 #### [Using a virtual appliance - Deprecated](configure-automatic-log-upload-for-continuous-reports.md)
+### [Integrate with Windows Defender ATP](wdatp-integration.md)
 ### [Integrate with Zscaler](zscaler-integration.md)
 ### [Use the custom log parser](custom-log-parser.md)
 ### [Cloud Discovery enrichment](cloud-discovery-aad-enrichment.md)
