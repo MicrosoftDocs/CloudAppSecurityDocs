@@ -34,11 +34,11 @@ ms.suite: ems
 
 # Windows Defender Advanced Threat Protection integration with Microsoft Cloud App Security
 
-Microsoft Cloud App Security integrates with Windows Defender Advanced Threat Protection (ATP) natively, to simplify roll out of Cloud Discovery and extends Cloud Discovery capabilities beyond your corporate network. Microsoft Cloud App Security leverages the traffic information collected by Windows Defender ATP about the cloud apps and services being accessed from IT-managed Windows 10 machines. This enables you to perform Cloud Discovery on managed machines, even when they are not within your corporate network. It also enables machine-based investigation: after you identify a risky user, you can then check all the machines the user accessed to detect potential risks; if you identify a risky machine, you can check all the users who used it to detect potential risks. 
+Microsoft Cloud App Security integrates with Windows Defender Advanced Threat Protection (ATP) natively, to simplify roll out of Cloud Discovery, and extends Cloud Discovery capabilities beyond your corporate network. Microsoft Cloud App Security leverages the traffic information collected by Windows Defender ATP about the cloud apps and services being accessed from IT-managed Windows 10 machines. This enables you to run Cloud Discovery on managed machines, even when they aren't within your corporate network. It also enables machine-based investigation: after you identify a risky user, you can then check all the machines the user accessed to detect potential risks; if you identify a risky machine, you can check all the users who used it to detect potential risks. 
 
 
 ## Windows Defender Advanced Threat Protection
-[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) is a security platform for intelligent protection, detection, investigation and response. Windows Defender ATP protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
+[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) is a security platform for intelligent protection, detection, investigation, and response. Windows Defender ATP protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
 Want to experience Windows Defender ATP? [Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
 
@@ -53,7 +53,7 @@ Because the Windows Defender ATP agent is installed directly on machines, it mon
 The integration between Cloud App Security and Windows Defender ATP works out of the box. It is not necessary to route or mirror traffic from your endpoints or to perform complex integration steps.
 
 ###	Machine-centric investigation
-Logs from your endpoints routed to Cloud App Security provide user information for traffic activities. Windows Defender ATP network activity provides device context which can be paired with the username to provide a full picture of which user performed which activity from which machine, across your network.
+Logs from your endpoints routed to Cloud App Security provide user information for traffic activities. Windows Defender ATP network activity provides device context, which can be paired with the username to provide a full picture of which user performed which activity from which machine, across your network.
 
 ## Prerequisites
 
@@ -93,7 +93,7 @@ After you integrate Windows Defender ATP with Cloud App Security, you will be ab
   ![WD ATP report](./media/win10-dashboard-report.png)
 4. You can see that across the top, the number of discovered machines was added after the integration.
 5. Click the **Machines** tab.
-6. You can drill down into each machine listed, and use the tabs to view the investigation data, and find correlations between the machines and the users, IP addresses and apps that were involved in incidents:
+6. You can drill down into each machine listed, and use the tabs to view the investigation data, and find correlations between the machines and the users, IP addresses, and apps that were involved in incidents:
    - **Overview**
       - Transactions: provides you with information about the number of transactions that took place on the machine over the selected period of time.
       - Total traffic: provides you with information about the total amount of traffic (in MB) over the selected period of time.
