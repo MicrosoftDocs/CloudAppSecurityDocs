@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 9/25/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -35,6 +35,10 @@ ms.suite: ems
 
 
 In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact, you want to be able to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It is important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, Microsoft Cloud App Security delivers these capabilities in a holistic and integrated experience with Conditional Access App Control.
+
+> [!NOTE]
+> To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/) and an active Microsoft Cloud App Security subscription.
+>
 
 ## How it works
 
@@ -88,13 +92,12 @@ The device identification mechanism can request authentication from relevant dev
  
 ## Supported apps and clients
 
-Conditional Access App Control currently supports apps that are configured with SAML single sign on in Azure AD. 
+Conditional Access App Control currently supports apps that are configured with SAML and Open ID Connect apps with single sign-on in Azure AD. 
 
 > [!NOTE]
-> - Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
-> - Office 365 applications are not configured with SAML so they are not currently supported.
+> Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
 
-Session control is available for any browser on any major platform (mobile apps and desktop apps can also be blocked or allowed). By natively integrating with Azure AD, any apps that are configured with SAML single sign-on in Azure AD can be supported, including the following featured apps:
+Session control is available for any browser on any major platform (mobile apps and desktop apps can also be blocked or allowed). By natively integrating with Azure AD, any apps that are configured with SAML or Open ID Connect apps with single sign-on in Azure AD can be supported, including the following featured apps:
 
 - AWS
 - Box
@@ -114,6 +117,13 @@ Session control is available for any browser on any major platform (mobile apps 
 - Workday
 - Workiva
 - Workplace by Facebook
+- Exchange Online
+- OneDrive for Business
+- Power BI
+- SharePoint Online
+- Azure DevOps (Visual Studio Team Services)
+- Yammer
+
 
 
 Additional apps are being continuously on-boarded to session control. If you are interested in a specific app that is not mentioned here, [send us details about the app](mailto:casfeedback@microsoft.com) and the use case you are interested in, and we will on-board it.
