@@ -58,7 +58,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. To set up a conditional access policy in Azure AD, follow this procedure:
 
-1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the SAML app you want to control with the Conditional Access App Control. 
+1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the app you want to control with the Conditional Access App Control. 
 
    > [!NOTE]
    > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
@@ -147,7 +147,7 @@ To download the exported log:
 
 ## Block all downloads <a name="block-download"></a>
 
-When **Block** is set as the **Action** you want to take in the Cloud App Security session policy, Conditional Access App Control prevents a user from downloading a file in accordance with the policy’s file filters. A download event is recognized by Microsoft Cloud App Security for each SAML app and when a user initiates this event, Conditional Access App Control intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, Conditional Access App Control returns a **Download restricted** message to the user and replaces the downloaded file with a text file that contains a customizable message to the user, which can be configured from the session policy.  
+When **Block** is set as the **Action** you want to take in the Cloud App Security session policy, Conditional Access App Control prevents a user from downloading a file in accordance with the policy’s file filters. A download event is recognized by Microsoft Cloud App Security for each app and when a user initiates this event, Conditional Access App Control intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, Conditional Access App Control returns a **Download restricted** message to the user and replaces the downloaded file with a text file that contains a customizable message to the user, which can be configured from the session policy.  
 
 ## Block specific activities <a name="block-activities"></a>
 

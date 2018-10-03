@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,7 @@ ms.suite: ems
 
 ## Technical requirements
 
--   OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), or RHEL 7.2 or higher 
+-   OS: Ubuntu 14.04, 16.04, and 18.04; or RHEL 7.2 or higher 
 
 -   Disk space: 250 GB
 
