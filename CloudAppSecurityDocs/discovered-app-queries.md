@@ -95,7 +95,7 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 
  - Cloud storage apps that are risky and non-compliant - filters all your discovered apps to display only apps in which they are not SOC 2 or HIPAA compliant, they do not support PCI DSS version and they have a risk score of 5 or lower.
 
- - Enterprise cloud apps that have weak authentication - filters all your discovered apps to display only apps that don't support SAML, have no password policy and don't enable MFA.
+ - Enterprise cloud apps that have weak authentication - filters all your discovered apps to display only apps that don't support SAML, have no password policy, and don't enable MFA.
 
  - Enterprise cloud apps that have weak encryption - filters all your discovered apps to display only apps that are risky because they don't encrypt data-at-rest and don't support any encryption protocol.
 
