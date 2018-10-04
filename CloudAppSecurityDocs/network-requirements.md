@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/20/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -167,7 +167,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
 - Allow the log collector to receive inbound FTP and Syslog traffic.
 - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
-- Allow the log collector to initiate outbound traffic to the Azure blob storage on port and 443:
+- Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
 
   | Data center |                        URL                        |
