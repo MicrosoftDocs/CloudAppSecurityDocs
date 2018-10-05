@@ -136,7 +136,7 @@ In the **Activity log**, in the top right corner, click the **Export** button. !
 
 
 
-## See Also  
+## Next steps  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
