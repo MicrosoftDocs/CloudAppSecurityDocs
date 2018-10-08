@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -52,14 +52,14 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 2. Click the plus icon, **Generate new token** and provide a name to identify the token in the future, and click **Next**.
    ![Cloud App Security generates API token](./media/api-token-gen.png)
 
-3. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader cannot issue a token that can alter data.
+3. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader can't issue a token that can alter data.
 
 4. You can filter the tokens by status: Active, Inactive, or Generated. 
 
    - Generated are tokens that have never been used. 
    - Active are tokens that were generated and were used within the past seven days. 
    - Inactive were used but there was no activity in the last seven days.
-5. After you generate a new token, you will be provided with a new URL to use to access the Cloud App Security portal. 
+5. After you generate a new token, you'll be provided with a new URL to use to access the Cloud App Security portal. 
 
    ![Cloud App Security API token](./media/generate-api-token.png)
 
@@ -73,7 +73,7 @@ Full admins see all tokens generated for this tenant. Other users only see the t
 
 The table provides details about when the token was generated and when it was last used and allows you to revoke the token. 
 
-After a token is revoked, it is removed from the table, and the software that was using it fails to make API calls until a new token is provided. 
+After a token is revoked, it's removed from the table, and the software that was using it fails to make API calls until a new token is provided. 
 
 > [!NOTE]
 > SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table. 
