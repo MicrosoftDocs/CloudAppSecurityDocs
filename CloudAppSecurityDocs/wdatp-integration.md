@@ -49,7 +49,7 @@ Microsoft Cloud App Security leverages the traffic information collected by Wind
 
 - Microsoft Cloud App Security license
 - Windows Defender ATP license
-- Windows 10 machines running Windows Defender ATP RS5
+- Windows 10 machines running version 1809 or later
 
 
 ## How it works
@@ -102,7 +102,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 
 ## Related Videos  
-[Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
+[Shadow IT discovery beyond the corporate network with Windows Defender ATP and Cloud](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
 
 ## See Also  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
