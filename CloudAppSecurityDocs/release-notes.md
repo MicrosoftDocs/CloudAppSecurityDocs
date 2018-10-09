@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,20 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+
+## Cloud App Security release 132
+
+Released September 25, 2018
+
+- **Conditional Access App Control for Office 365 is now in Public Preview**
+    - Conditional Access App Control now also supports Office 365 and any app that is configured with Open ID Connect.
+    - Provide feedback from within a session: This new tool enables you to provide feedback to the Cloud App Security team about the performance of an application under session control, directly from within the session.
+
+
+- **Native integration with Windows Defender ATP for Shadow IT Discovery beyond your corp**
+    - Microsoft Cloud App Security now natively integrates with Windows Defender Advanced Threat Protection (ATP) to provide deploymentless Shadow IT discovery capabilities for on and off corporate network use of cloud apps.  This enables you to perform Cloud Discovery on machines, even when they are not within your corporate network. It also enables machine-based investigation: after you identify a risky user, you can then check all the machines the user accessed to detect potential risks; if you identify a risky machine, you can check all the users who used it to investigate potential risks. For more information, see  Windows Defender Advanced Threat Protection integration with [Microsoft Cloud App Security](wdatp-integration.md).
+- **Content inspection for encrypted files**
+    - Cloud App Security now supports content inspection of protected files that are encrypted that were protected using Azure Information Protection. You can now inspect these encrypted files for re-classification proposes and identify additional DLP exposure and security policy violations. 
 
 ## Cloud App Security release 131
 
