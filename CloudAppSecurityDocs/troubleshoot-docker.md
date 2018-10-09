@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -28,9 +28,14 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-# Troubleshooting the Microsoft Cloud App Security Cloud Discovery Docker
+# Troubleshooting the Microsoft Cloud App Security Cloud Discovery deployment
 
-## Changing the FTP password
+## Windows Defender ATP integration
+If you integrated Windows Defender ATP with Cloud App Security, and you don't see the results of the integration - there is no **Win10 endpoint users** report - make sure the machines you are connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
+
+## Docker deployment
+
+### Changing the FTP password
 
 
 1. Connect to the log collector host.
@@ -45,7 +50,7 @@ ms.suite: ems
 
   ![change ftp password](./media/ftp-connect.png)
 
-## Customize certificate files
+### Customize certificate files
 
 Follow this procedure to customize the certificate files you use for secure connections to the Cloud Discovery docker.
 
