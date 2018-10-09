@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -117,12 +117,12 @@ Session control is available for any browser on any major platform (mobile apps 
 - Workday
 - Workiva
 - Workplace by Facebook
-- Exchange Online
-- OneDrive for Business
-- Power BI
-- SharePoint Online
-- Azure DevOps (Visual Studio Team Services)
-- Yammer
+- Exchange Online (preview)
+- OneDrive for Business (preview)
+- Power BI (preview)
+- SharePoint Online (preview)
+- Azure DevOps (Visual Studio Team Services) (preview)
+- Yammer (preview)
 
 
 
