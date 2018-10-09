@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/30/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -51,16 +51,31 @@ To see which data center you are connecting to:
 
 For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's white list:  
 
+    portal.cloudappsecurity.com
+    *.portal.cloudappsecurity.com
+    cdn.cloudappsecurity.com
+    https://adaproddiscovery.azureedge.net 
+    *.s-microsoft.com
+    cdn.cloudappsecurity.com
+    cloudappsecurity-rs.azureedge.net
+    *.msecnd.net
+    dev.virtualearth.net
+    *.cloudappsecurity.com
+    flow.microsoft.com
+    static2.sharepointonline.com
+    dc.services.visualstudio.com
+    *.blob.core.windows.net
 
+In addition, the following should be whitelisted, depending on which data center you use:
 > [!div class="mx-tableFixed"]
 > 
 > |Data center|IP addresses|DNS name|
 > |----|----|----|
-> |US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us3.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
-> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.eu2.portal.cloudappsecurity.com<br></br>cdn.cloudappsecurity.com|
+> |US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
+> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
+> |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
 
 
 > 
@@ -152,7 +167,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
 - Allow the log collector to receive inbound FTP and Syslog traffic.
 - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
-- Allow the log collector to initiate outbound traffic to the Azure blob storage on ports 80 and 443:
+- Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
 
   | Data center |                        URL                        |
