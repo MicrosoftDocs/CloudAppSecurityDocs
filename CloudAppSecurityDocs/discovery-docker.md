@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/09/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -37,7 +37,7 @@ logs are uploaded to Microsoft Cloud App Security after the file finished the FT
 
 After a log is uploaded to Cloud App Security, it is moved to a backup directory that stores the last 20 logs at any given moment. When new logs arrive, the old ones are deleted. When the log collector disk space is full, the log collector drops new logs until it has more free disk space. When this happens you will receive a warning on the **Log collectors** tab of the **Upload logs automatically** settings.
 
-Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file, in [Using traffic logs for Cloud Discovery](create-snampshot-cloud-discovery-reports.md#log-format).
+Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file, in [Using traffic logs for Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
 
 
 > [!NOTE]
