@@ -65,7 +65,7 @@ Follow these steps to configure Azure AD apps to be controlled by Microsoft Clou
    4. In the TEST policy, under **Cloud app**, assign the apps you want to control with Conditional Access App Control. 
 
       > [!NOTE]
-      >Make sure that you choose apps that are supported by Conditional Access App Control. Conditional Access App Control supports apps that are configured with SAML single sign-on in Azure AD. For example, Office 365 applications are not configured with SAML so they are not currently supported.
+      >Make sure that you choose apps that are supported by Conditional Access App Control. Conditional Access App Control supports apps that are configured with SAML and Open ID Connect apps with single sign-on in Azure AD. 
 
 ## Step 2: Sign in with a user scoped to the policy in the apps <a name="sign-in-scoped"></a>
 

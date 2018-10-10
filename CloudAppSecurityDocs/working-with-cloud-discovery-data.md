@@ -50,7 +50,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview** and check the discovery alerts status to see how many open alerts should you investigate.
   
 ## Exclude entities  
-If you have system users or IP addresses that are particularly noisy and uninteresting or apps that are not relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
+If you have system users or IP addresses - or machines if you use [Windows Defender ATP integration](wdatp-integration.md) - that are particularly noisy and uninteresting, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
   
 To create an exclusion:  
   
@@ -60,7 +60,7 @@ To create an exclusion:
   
 3.  Choose either the **Excluded users** or **Excluded IP addresses** tab and click the button to **Add user** or **Add IP address**.  
   
-4.  Add a user alias or IP address. We recommend adding information about why the user or IP address was excluded.  
+4.  Add a user alias, IP address, or machine if using Windows Defender ATP integration. We recommend adding information about why the user or IP address was excluded.  
   
      ![exclude user](./media/exclude-user.png "exclude user")  
   
