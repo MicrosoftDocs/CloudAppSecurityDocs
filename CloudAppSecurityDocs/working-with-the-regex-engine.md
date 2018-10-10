@@ -35,6 +35,10 @@ Microsoft Cloud App Security's content inspection policies leverage RegEx for pa
 -   [http://regexpal.com/](http://regexpal.com/)  
   
      (Make sure you select **Case insensitive**.  
+     
+-   [https://www.debuggex.com/](https://www.debuggex.com/)
+    
+-   [https://extendsclass.com/regex-tester.html](https://extendsclass.com/regex-tester.html)
   
 -   [https://regex101.com/](https://regex101.com/)  
   
