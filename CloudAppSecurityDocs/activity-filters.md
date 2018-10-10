@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 
-ms.date: 7/1/2018
+ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -31,12 +31,12 @@ ms.suite: ems
 
 
 # Activities
-Microsoft Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it is updated constantly with new activities. 
+Microsoft Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it's updated constantly with new activities. 
 
 > [!NOTE] 
 > For a full list of Office 365 activities monitored by Cloud App Security, see [Search the audit log in the Office 365 Security & Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities)
 
-The **Activity log** can be filtered to enable you to find specific activities. You can create policies based on the activities and then define what you want to be alerted about and act on. You can also search for activities performed on certain files. The type of activities and the information we get for each activity depends on the app and what kind of data the app can provide. 
+The **Activity log** can be filtered to enable you to find specific activities. You create policies based on the activities and then define what you want to be alerted about and act on. You are able to search for activities performed on certain files. The type of activities and the information we get for each activity depends on the app and what kind of data the app can provide. 
 
 For example, you can use the **Activity log** to find users in your organization who are using operating systems or browsers that are out of date, as follows:
 After you connect an app to Cloud App Security in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**.
@@ -87,15 +87,16 @@ For a list of governance actions available, see [Activity governance actions](go
 
 #### User insights
 
-The investigation experience includes out-of-the-box insights about the acting user. With a single click, you can get a comprehensive overview of the user including which location they connected from, how many open alerts are they are involved with and their metadata information.
+The investigation experience includes insights about the acting user. With a single click, you can get a comprehensive overview of the user including which location they connected from, how many open alerts are they're involved with and their metadata information.
 
 To view user insights:
 
 1. Click on the Activity itself in the **Activity log**.
 
-2. Then click on the **User** tab. <br></br> This opens the Activity drawer **User** tab provides the following insights about the user:
+2. Then click on the **User** tab. <br></br> Clicking opens the Activity drawer **User** tab provides the following insights about the user:
     - **Open alerts**: The number of open alerts that involved the user.
-    - **File violation**: The number of file violations for files owned by the user.
+    - **Matches**: The number of policy matches for files owned by the user. 
+   <!-- - **File violation**: The number of file violations for files owned by the user. -->
     - **Activities**: The number of activities performed by the user in the past 30 days.
     - **Countries**: The number of countries the user connected from in the past 30 days.
     - **ISPs**: The number of ISPs the user connected from in past 30 days.
@@ -105,7 +106,7 @@ To view user insights:
 
 #### IP address insights
 
-Because IP address information is crucial for almost all investigations, you can view detailed information about IP addresses in the Activity drawer. From within a specific activity, you can click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity and a location map. This enables easy drill down, for example when investigating impossible travel alerts, you can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN, or corporate to ease future investigation and policy creation.
+Because IP address information is crucial for almost all investigations, you can view detailed information about IP addresses in the Activity drawer. From within a specific activity, you can click on the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity, and a location map. This enables easy drill down when investigating impossible travel alerts for example. You can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN, or corporate to ease future investigation and policy creation.
 
 To view IP address insights:
 
@@ -118,9 +119,9 @@ To view IP address insights:
     - **Activities**: The number of activities performed from this IP address in past 30 days.
     - **Admin activities**: The number of administrative activities performed from this IP address in past 30 days.
     - You can perform the following IP address actions:
-        - Tag as risky 
-        - Tag as VPN IP address
-        - Tag as Risky IP and add to blocked group
+        - Tag as Corporate IP and add to allowed list
+        - Tag as VPN IP address and add to allowed list
+        - Tag as Risky IP and add to blocked list
 
 
 ![IP address insights in Cloud App Security](./media/ip-address-insights.png)
@@ -129,13 +130,13 @@ To view IP address insights:
 
 You can export all user activities to a CSV file. 
 
-In the **Activity log**, in the top right corner, click the **Export** button ![export button](./media/export-button.png).
+In the **Activity log**, in the top right corner, click the **Export** button. ![export button](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 
 
-## See Also  
+## Next steps  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
