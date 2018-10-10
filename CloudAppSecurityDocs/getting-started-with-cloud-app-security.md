@@ -68,25 +68,7 @@ Alternatively, you can access the portal through the **Office 365 Admin center**
 
  
 
-### Step 1. [Set up Cloud Discovery](set-up-cloud-discovery.md).
-Required task: Upload traffic logs
-**To create a continuous Cloud Discovery report**
-
- 1.From the settings cog, select   **Cloud Discovery settings**.
- 2. Choose **Automatic log upload**.
- 3. On the **Data sources** tab, add your sources.
- 4. On the **Log collectors** tab, configure the log collector.
- 
-**To create a snapshot Cloud Discovery report**
-
- 1. Go to **Discover** > **Snapshot report** and follow the steps shown.
-
-**Why should you configure Cloud Discovery reports?**
-Having visibility into shadow IT in your organization is critical.
-After your logs are analyzed, you can easily discover which cloud apps are being used, by which people, and on which devices.
-
-
-### Step 2. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Required task: Connect apps
 
 1.From the settings cog, select   **App connectors**.
@@ -97,7 +79,7 @@ Required task: Connect apps
 After you connect an app, you can gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment.
 
 
-### Step 3. [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+### Step 2. [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 Required task: Create policies
 
 **To create policies**
@@ -111,6 +93,27 @@ Required task: Create policies
 **How can policies help your organization?**
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
+
+### Step 3. [Set up Cloud Discovery](set-up-cloud-discovery.md).
+
+Required task: Enable Cloud App Security to view your cloud app use
+
+1. [Integrate with Windows Defender ATP](wdatp-integration.md) to automatically enable Cloud App Security to monitor your Windows 10 devices inside and outside your corporation.
+2. If you use [Zscaler, integrate](zscaler-integration.md) it with Cloud App Security.
+3. To achieve full coverage, create a continuous Cloud Discovery report
+
+   1. From the settings cog, select   **Cloud Discovery settings**.
+   2. Choose **Automatic log upload**.
+   3. On the **Data sources** tab, add your sources.
+   4. On the **Log collectors** tab, configure the log collector.
+ 
+**To create a snapshot Cloud Discovery report**
+
+ Go to **Discover** > **Snapshot report** and follow the steps shown.
+
+**Why should you configure Cloud Discovery reports?**
+Having visibility into shadow IT in your organization is critical.
+After your logs are analyzed, you can easily discover which cloud apps are being used, by which people, and on which devices.
 
 ### Step 4. [Personalize your experience](mail-settings.md).
 Recommended task: Add your organization details
