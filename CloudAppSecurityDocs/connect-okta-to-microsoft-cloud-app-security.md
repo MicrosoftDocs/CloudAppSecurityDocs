@@ -37,35 +37,21 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 1.  It is recommended that you create an admin Service Account in Okta for Cloud App Security.  
   
-     Make sure you use an account with Super Admin permissions.  
+     Your Service Account only needs [Read-Only Admin role](https://help.okta.com/en/prod/Content/Topics/Security/Administrators.htm).  
   
-     Make sure your Okta account is verified.  
+     Make sure your Okta account is activated.
   
-2.  In the Okta console, click **Admin**.  
+2.  In the Okta console:  
   
-    -   Click on **Security** and then **API**.  
-  
-         ![okta api](./media/okta-api.png "okta api")  
-  
-    -   Click **Create Token**.  
-  
-         ![okta createtoken](./media/okta-createtoken.jpg "okta createtoken")  
-  
-    -   In the **Create Token** pop-up, name your Cloud App Security token and click **Create Token**.  
-  
-         ![okta token popup](./media/okta-token-popup.png "okta token popup")  
-  
-    -   In the **Token created successfully** pop-up, copy the **Token value**.  
-  
-         ![okta token value](./media/okta-token-value.png "okta token value")  
-  
+    -   Follow these [instruction](https://developer.okta.com/docs/api/getting_started/getting_a_token) to Generate an **API Token**.
+
 3.  In the Cloud App Security console, click **Investigate** and then **Connected apps**.  
   
 4.  In the **App connectors page**, click the plus button and then **Okta**.  
   
      ![connect okta](./media/connect-okta.png "connect okta")  
   
-5.  In the pop-up that opens, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.  
+5.  In the pop-up that opens, in the **Domain** field, enter your Okta domain and paste your Token from Step 2 into the **Token** field.  
   
 6.  Click **Connect** to create the token for Okta in Cloud App Security.  
   
