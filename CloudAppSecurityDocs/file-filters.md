@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -120,7 +120,7 @@ Below is a list of the file filters that can be applied. Most filters support mu
   
 -   Owner -Include/exclude specific file owners, for example, Track all files shared by rogue_employee_#100.  
   
--   Owner OU – Include/exclude file owners that belong to certain organizational group, for example, All public files except those shared by EMEA_marketing.  
+-   Owner OU – Include/exclude file owners that belong to certain organizational group, for example, All public files except those shared by EMEA_marketing. This applies only to files stored in Google Drive.
   
 -   Parent folder – Include/exclude based on parent folder, for example, All publicly shared files except for files in this folder.  
   
