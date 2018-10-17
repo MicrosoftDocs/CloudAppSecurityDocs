@@ -30,6 +30,7 @@ ms.suite: ems
 
 
 # Cloud Discovery policies
+You can create app discovery policies to alert you when new apps are detected. Cloud App Security also searches all the logs in your Cloud Discovery for anomalies. 
 
 ## Creating an app discovery policy  
 Discovery policies enable you to set alerts that notify you when new apps are detected within your organization.  
@@ -74,7 +75,7 @@ Additionally, you can set the limit of daily alerts you wish to receive.
   
 ## Cloud Discovery anomaly detection
 
-Cloud App Security searches all the logs in your Cloud Discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The Anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
+Cloud App Security searches all the logs in your Cloud Discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.  
   
 1. In the console, click on **Control** followed by **Policies**.  
   
