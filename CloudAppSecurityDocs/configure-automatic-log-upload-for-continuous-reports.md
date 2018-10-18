@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ ms.suite: ems
 # Configure automatic log upload for continuous reports on a virtual appliance - Deprecated
 
 > [!WARNING] 
-> It is highly recommended to configure log upload using the [Docker](discovery-docker.md) for more flexible deployment.
+> It is highly recommended to configure log upload using [Docker](discovery-docker.md) for more flexible deployment.
 
 ## Technical requirements
 - Hypervisor: HyperV or VMware
@@ -66,7 +66,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
    d.  Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.  
   
-   e.  Set the **Receiver type** to either **FTP** or **Syslog**. For **Syslog**, choose **UDP** or **TCP**.  
+   e.  Set the **Receiver type** to either **FTP** or **Syslog**. For **Syslog**, choose **UDP**,  **TCP**, or **TLS**.  
   
    f.  Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
   
@@ -74,7 +74,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
    a.  Click **Add log collector**.  
   
-   b.  Give the log collector a **name**.  
+   b.  Give the log collector a **Name**.  
   
    c.  Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration and generate an access token.  
    ![discovery data sources](./media/discovery-data-sources.png)
