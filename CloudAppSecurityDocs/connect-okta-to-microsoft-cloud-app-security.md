@@ -80,4 +80,3 @@ After connecting Okta, you'll receive events for 60 days prior to connection.
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
-  
