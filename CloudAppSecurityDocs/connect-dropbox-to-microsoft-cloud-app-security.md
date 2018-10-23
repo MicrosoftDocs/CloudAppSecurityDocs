@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ ms.suite: ems
 This section provides instructions for connecting Microsoft Cloud App Security to your existing Dropbox account using the connector APIs.  
  
  
-Because Dropbox enables access to files from shared links without signing in, Cloud App Security registers these users as Unauthenticated users. If you see unauthenticated Dropbox users, it may indicate users who are not from your organization, or they might be recognized users from within your organization who did not sign in.
+Because Dropbox enables access to files from shared links without signing in, Cloud App Security registers these users as Unauthenticated users. If you see unauthenticated Dropbox users, it may indicate users who aren't from your organization, or they might be recognized users from within your organization who didn't sign in.
 
 ## How to connect Dropbox to Cloud App Security  
   
@@ -48,7 +48,7 @@ Because Dropbox enables access to files from shared links without signing in, Cl
   
 5.  Click **Follow this link**.  
   
-     The Dropbox log on page opens. Enter your credentials to allow Cloud App Security access to your team's Dropbox instance.  
+     The Dropbox sign in page opens. Enter your credentials to allow Cloud App Security access to your team's Dropbox instance.  
   
 6.  Dropbox asks you if you want to allow Cloud App Security access to your team information, activity log, and perform activities as a team member. To proceed, click **Allow**.  
   
@@ -56,14 +56,14 @@ Because Dropbox enables access to files from shared links without signing in, Cl
   
 8.  Make sure the connection succeeded by clicking **Test API**.  
   
-     Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
+     Testing may take a couple of minutes. After you receive a success notice, click **Close**.  
   
-After connecting Dropbox, you will receive events for 60 days prior to connection.
+After connecting Dropbox, you'll receive events for 60 days prior to connection.
 
 > [!NOTE] 
 > Any Dropbox events for adding a file are displayed in Cloud App Security as Upload file to align to all other apps connected to Cloud App Security. 
  
-## See Also  
+## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
