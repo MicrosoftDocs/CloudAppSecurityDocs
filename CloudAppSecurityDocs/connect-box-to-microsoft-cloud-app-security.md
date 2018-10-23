@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/15/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -57,7 +57,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        Then click **Save**. For information on how to see which Cloud App Security data center you are connected to, see [API tokens](api-tokens.md). 
+        Then click **Save**. For information on how to see which Cloud App Security data center you're connected to, see [API tokens](api-tokens.md). 
   
          ![box settings except for](./media/box-settings-except-for.png "box settings except for")  
   
@@ -72,7 +72,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 4.  In the **Box settings** pop-up, click **Follow this link**.  
   
-5.  The Box logon page opens. Enter your credentials to allow Cloud App Security access to your team's Box app.  
+5.  The Box sign-in page opens. Enter your credentials to allow Cloud App Security access to your team's Box app.  
   
 6.  Box asks you if you want to allow Cloud App Security access to your team information, activity log, and perform activities as a team member. To proceed, click **Allow**.  
   
@@ -84,11 +84,11 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 Box is now connected to Cloud App Security.  
  
-After connecting Box, you will receive events for 60 days prior to connection.
+After connecting Box, you'll receive events for 60 days prior to connection.
   
-After connecting Box, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activities are detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away rather than waiting for the regular scan process. Near real-time scanning does not apply to files that are not inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned as part of the regularly scheduled scan.
+After connecting Box, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activities are detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away rather than waiting for the regular scan process. Near real-time scanning doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned as part of the regularly scheduled scan.
   
-## See Also  
+## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
