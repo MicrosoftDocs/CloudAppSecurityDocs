@@ -110,7 +110,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 11. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-12. In the **App connectors** page, click the plus sign followed by **AWS**.  
+12. In the **App connectors** page, click the plus sign followed by **Amazon Web Services**.  
   
      ![connect AWS](./media/connect-aws.png "connect AWS")  
   
