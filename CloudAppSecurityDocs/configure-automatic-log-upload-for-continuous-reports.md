@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,7 @@ ms.suite: ems
 > It is highly recommended to configure log upload using [Docker](discovery-docker.md) for more flexible deployment.
 
 ## Technical requirements
-- Hypervisor: HyperV or VMware
+- Hypervisor: Hyper-V or VMware
 - Disk space: 250 GB
 - CPU: 2
 - RAM: 4 GB 
@@ -46,8 +46,8 @@ ms.suite: ems
 The Log collector can successfully handle log capacity of up to 50 GB per hour.
 The main bottlenecks in the log collection process are:
 - Network bandwidth - your network bandwidth determines the log upload speed.
-- I/O performance of the virtual machine allocated by your IT - determines the speed at which logs are written to the log collector’s disk.
-The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup generally exceeds 50 GB per hour, it is recommended to split the traffic between multiple log collectors.
+- I/O performance of the virtual machine - determines the speed at which logs are written to the log collector’s disk.
+The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup generally exceeds 50 GB per hour, it's recommended to split the traffic between multiple log collectors.
 
 ## Set up and configuration  
   
@@ -62,13 +62,13 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
    b.  **Name** your proxy or firewall.  
   
-   c.  Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that is not listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
+   c.  Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
   
-   d.  Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.  
+   d.  Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.  
   
    e.  Set the **Receiver type** to either **FTP** or **Syslog**. For **Syslog**, choose **UDP**,  **TCP**, or **TLS**.  
   
-   f.  Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
+   f.  Click **Add** to save the data source. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.  
   
 3. Go to the **Log collectors** tab at the top.  
   
@@ -76,7 +76,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
    b.  Give the log collector a **Name**.  
   
-   c.  Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration and generate an access token.  
+   c.  Select all **Data sources** that you want to connect to the collector. Click **Update** to save the configuration and generate an access token.  
    ![discovery data sources](./media/discovery-data-sources.png)
   
    > [!NOTE] 
@@ -104,7 +104,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
   
 7. If available, choose the network **Connection** and click **Next**.  
   
-8. Choose **Use an existing virtual hard disk** and select the **.vhd** file that was included in the Zip file you downloaded.  
+8. Choose **Use an existing virtual hard disk**. Select the **.vhd** file that was included in the Zip file you downloaded.  
   
 9. Click **Next** and then click **Finish**.  
    The machine is added to your Hyper-V environment.  
@@ -112,7 +112,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 10. Click on the machine in the **Virtual Machines** table and click **Start**.   
   
 11. Connect to the Log Collector virtual machine to see if it has been assigned a DHCP address: 
-    Click on the virtual machine and select **Connect**. You should see the login prompt. If you see an IP address, then you can connect to the virtual machine using a terminal/SSH tool.  If you do not see an IP address, log in using the Hyper-V/VMWare connection tools with the credentials you copied down when you created the Log Collector previously. You can change the password and configure the virtual machine using the network configuration utility by running the following command:
+    Click on the virtual machine and select **Connect**. You should see the sign in prompt. If you see an IP address, then you can connect to the virtual machine using a terminal/SSH tool.  If you don't see an IP address, sign in using the Hyper-V/VMWare connection tools with the credentials you copied down when you created the Log Collector previously. You can change the password and configure the virtual machine using the network configuration utility by running the following command:
     ```
     sudo network_config
     ```
@@ -123,9 +123,9 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 At this point, your log collector should be connected to your network and should be able to reach the Cloud App Security portal.  
 
 ### Step 3 – On-premises configuration of the log collection 
-The first time you log in to the log collector and import the log collector's configuration from the portal, as follows. 
+The first time you sign in to the log collector and import the log collector's configuration from the portal, as follows. 
 
-1.  Log in to the log collector over SSH using the Interactive admin credentials provided to you in the portal. (If this is your first time logging in to the console, you will need to change the password and log in again after changing the password. If you are using a terminal session, you might need to restart the terminal session. )
+1.  Sign in to the log collector over SSH using the Interactive admin credentials provided to you in the portal. (If this is your first time logging in to the console, you'll need to change the password and sign in again after changing the password. If you're using a terminal session, you might need to restart the terminal session. )
 2.  Run the collector config utility with the access token provided to you when you created the log collector.```sudo collector_config <access token> ```
 3. Enter your console domain, for example: ```contoso.portal.cloudappsecurity.com```
   This is available from the URL you see after logging in to the Cloud App Security portal. 
@@ -135,7 +135,7 @@ The first time you log in to the log collector and import the log collector's co
 
 5.  Import the log collector's configuration from the portal, as follows:  
   
-      a.  Log in to the log collector over SSH using the Interactive admin credentials provided to you in the portal.  
+      a.  Sign in to the log collector over SSH using the Interactive admin credentials provided to you in the portal.  
   
       b.  Run the collector config utility with the access token provided to you in the command ```sudo collector_config \<access token>```  
      
@@ -153,19 +153,19 @@ Configure your network firewalls and proxies to periodically export logs to the 
   
 ### Step 5 - Verify the successful deployment in the Cloud App Security portal
 
-Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing have not completed.
+Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible that the log collector connection and parsing haven't completed.
 
 ![log collector status](./media/log-collector-status.png)
 
 Go to the Governance log and verify that logs are being periodically uploaded to the portal.  
   
-If you encounter problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
+If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### Optional - Create custom continuous reports
 
-After you have verified that the logs are being uploaded to Cloud App Security and the reports are being generated, you can create custom reports. You can now create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
+After you've verified that the logs are being uploaded to Cloud App Security and the reports are being generated, you can create custom reports. You can now create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Cloud App Security portal, under the Settings cog, select **Cloud Discovery settings**, and then select **Manage continuous reports**. 
+1. In the Cloud App Security portal, under the Settings cog, select **Cloud Discovery settings**, and then select **Continuous reports**. 
 2. Click the **Create report** button and fill in the fields.
 3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
 
@@ -174,7 +174,7 @@ After you have verified that the logs are being uploaded to Cloud App Security a
 
 ![Custom continuous report](./media/custom-continuous-report.png)
 
-## See Also  
+## Next steps 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
