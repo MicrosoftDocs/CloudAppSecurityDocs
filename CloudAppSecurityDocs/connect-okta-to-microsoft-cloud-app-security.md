@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -35,7 +35,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 ## How to connect Okta to Cloud App Security  
   
-1.  It is recommended that you create an admin Service Account in Okta for Cloud App Security.  
+1.  It's recommended that you create an admin Service Account in Okta for Cloud App Security.  
   
      Make sure you use an account with Super Admin permissions.  
   
@@ -45,25 +45,25 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
     -   Click on **Security** and then **API**.  
   
-         ![okta api](./media/okta-api.png "okta api")  
+         ![Okta api](./media/okta-api.png "Okta api")  
   
     -   Click **Create Token**.  
   
-         ![okta createtoken](./media/okta-createtoken.jpg "okta createtoken")  
+         ![Okta create token](./media/okta-createtoken.jpg "Okta create token")  
   
-    -   In the **Create Token** pop-up, name your Cloud App Security token and click **Create Token**.  
+    -   In the **Create Token** pop-up, name your Cloud App Security token, and click **Create Token**.  
   
-         ![okta token popup](./media/okta-token-popup.png "okta token popup")  
+         ![Okta token popup](./media/okta-token-popup.png "Okta token popup")  
   
     -   In the **Token created successfully** pop-up, copy the **Token value**.  
   
-         ![okta token value](./media/okta-token-value.png "okta token value")  
+         ![Okta token value](./media/okta-token-value.png "Okta token value")  
   
 3.  In the Cloud App Security console, click **Investigate** and then **Connected apps**.  
   
 4.  In the **App connectors page**, click the plus button and then **Okta**.  
   
-     ![connect okta](./media/connect-okta.png "connect okta")  
+     ![connect Okta](./media/connect-okta.png "connect Okta")  
   
 5.  In the pop-up that opens, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.  
   
@@ -73,9 +73,9 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
      Testing may take a couple of minutes. After receiving a success notice, click **Close**.  
   
-After connecting Okta, you will receive events for 60 days prior to connection.
+After connecting Okta, you'll receive events for 60 days prior to connection.
   
-## See Also  
+## Next steps  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
