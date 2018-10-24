@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/09/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -33,7 +33,7 @@ ms.suite: ems
 
 
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed and transmitted to the portal. FTP
-logs are uploaded to Microsoft Cloud App Security after the file finished the FTP transfer to the Log Collector.  For Syslog, the Log Collector writes the logs received to the disk and uploads the file to Cloud App Security when the file size is larger than 40 KB. 
+logs are uploaded to Microsoft Cloud App Security after the file finished the FTP transfer to the Log Collector. For Syslog, the Log Collector writes the logs received to the disk and uploads the file to Cloud App Security when the file size is larger than 40 KB. 
 
 After a log is uploaded to Cloud App Security, it is moved to a backup directory that stores the last 20 logs at any given moment. When new logs arrive, the old ones are deleted. When the log collector disk space is full, the log collector drops new logs until it has more free disk space. When this happens you will receive a warning on the **Log collectors** tab of the **Upload logs automatically** settings.
 
@@ -43,6 +43,8 @@ Before setting up automatic log file collection, verify that your log matches th
 > [!NOTE]
 >-  Cloud App Security provides support for forwarding logs from your SIEM server to the Log Collector assuming the logs are being forwarded in their original format. However, it is highly recommended that you integrate the log collector directly with your firewall and/or proxy.
 >- The log collector compresses data before it is uploaded. The outbound traffic on the log collector will be 10% of the size of the traffic logs it receives. 
+>-  If the log collector encounters issues, you will receive an alert after data wasn't received for 48 hours.
+>
 
 ## Deployment modes
 

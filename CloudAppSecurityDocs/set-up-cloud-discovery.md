@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/7/2018
+ms.date: 10/14/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -38,8 +38,8 @@ There are two types of reports you can generate:
 
 - **Continuous reports** analyze all logs that are forwarded from your network using Cloud App Security. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define. These reports can be created by connecting in the following ways:
   - [Windows Defender ATP integration](wdatp-integration.md): Cloud App Security integrates with Windows Defender Advanced Threat Protection (ATP) natively, to simplify roll out of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
-  - [Log collector]( ):
-  - [Zscaler integration](zscaler-integration.md): 
+  - [Log collector](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
+  - [Zscaler integration](zscaler-integration.md): If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Zscaler provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Zscaler portal.
 
 ## Log process flow: From raw data to risk assessment  
 The process of generating a risk assessment consists of the following steps and takes between a few minutes to several hours depending on the amount of data processed.  
