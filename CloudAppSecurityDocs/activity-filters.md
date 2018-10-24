@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 
-ms.date: 10/5/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -47,7 +47,7 @@ The basic filter provides you with great tools to get started filtering your act
 
  ![basic activity log filter](media/activity-log-filter-basic.png)
 
-To drill down into more specific activities, you can expand the basic filter by clicking Advanced.
+To drill down into more specific activities, you can expand the basic filter by clicking **Advanced**.
 
  ![advanced activity log filter](media/activity-log-filter-advanced.png)
 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -31,10 +31,10 @@ ms.suite: ems
 
 # Cloud Discovery enrichment
 
-Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username received in the discovery traffic logs is matched and replaced by the Azure AD username enabling the following new features:
--	You can investigate Shadow IT usage by Azure Active Directory user.
--	You can correlate the Discovered cloud app use with the API collected activities.
--	You can then create custom logs based on Azure AD user groups. For example, a Shadow IT report for a specific Marketing department.
+Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username, received in discovery traffic logs, is matched and replaced by the Azure AD username. Cloud discovery enrichment enables the following features:
+- You can investigate Shadow IT usage by Azure Active Directory user.
+- You can correlate the Discovered cloud app use with the API collected activities.
+- You can then create custom logs based on Azure AD user groups. For example, a Shadow IT report for a specific Marketing department.
 
 
 ## Prerequisites:
@@ -45,7 +45,7 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
     
 1. Under the Settings cog, select **Cloud Discovery settings**.
      
-2. In the **User enrichment** tab, to enable Cloud App Security to use Azure Active Directory data to enrich usernames by default, select **Enrich discovered user identifiers with Azure Active Directory usernames**.
+2. In the **User enrichment** tab, select **Enrich discovered user identifiers with Azure Active Directory usernames**. This option enables Cloud App Security to use Azure Active Directory data to enrich usernames by default.
 
 3. Click **Save**.
  
@@ -54,7 +54,8 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
 
   
       
-## See Also  
+## Next steps
+  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
