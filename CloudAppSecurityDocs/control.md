@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,18 +30,18 @@ ms.suite: ems
 
 
 # Control
-You can apply governance actions to users' files across your cloud environment. After you have thoroughly investigated and learned about your cloud, you can use governance actions to help protect your organization.  
+You can apply governance actions to users' files across your cloud environment. After you've thoroughly investigated and learned about your cloud, you can use governance actions to help protect your organization.  
 
 ## Use policies to assess risk  
 After you take a look at your open alerts, go to the Policy center to review policy violations that didn't trigger alerts.  
 
 -   In the Cloud App Security dashboard, click **Control** and then **Policies**.  
 
--   Select a specific policy to see the **Violating now** list of policy matches that didn't trigger alerts.  
+-   Select a specific policy to see the **Matching now** list of policy matches that didn't trigger alerts.  
 
--   Click the violations one at a time and decide what to do for each. See the following figures for more information about governance actions.  
+-   Click the violations one at a time and decide what to do for each. For more information about governance actions, see the following figures.  
 
-     If your policy is set to find compliance breaches and someone saves credit card numbers in files on OneDrive, you will have a match in the policy.  
+     If your policy is set to find compliance breaches and someone saves credit card numbers in files on OneDrive, you'll have a match in the policy.  
 
      ![PCI matches](./media/pci-matches.png "pci matches")  
 
@@ -55,7 +55,7 @@ After you take a look at your open alerts, go to the Policy center to review pol
 
      You can click **Matches** to see the actual credit card numbers.  
 
-     ![Content matches ccn](./media/content-matches-ccn.png "content matches ccn")  
+     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
 
 ## Apply governance actions  
 You can apply governance actions from within policies, from inside alerts, and from the **File** log.  
@@ -84,13 +84,13 @@ Cloud App Security helps you roll out your migrations by letting you know who in
 ### Migrate your users to a new app  
 Imagine this scenario: you recently bought Office 365, and you want all the users in your organization to stop using all other cloud storage apps and start using OneDrive. Here's what you might want to do:  
 
-1. Go to your **Cloud Discovery Dashboard** and under **Categories**, filter apps by **Cloud Storage**. Then sort the results by **Users** or **IP addresses**, and check to see which app is most popular.  
+1. Go to your **Cloud Discovery Dashboard** and under **App categories**, filter apps by **Cloud Storage**. Sort the results by **Users** or **IP addresses**, and check to see which app is most popular.  
 
 2. You can see which users are using other apps. You can also drill down into those apps, and notify users that you want them to migrate to OneDrive, as follows:
 
-   1.  In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.  
+   1. In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.  
 
-   2.  Choose the arrow ![Arrow icon](./media/arrow-icon.png "arrow icon") and choose **Export**.  
+   2. Choose the **Export** arrow icon ![Arrow icon](./media/arrow-icon.png "arrow icon") and choose your export options.  
 
 ### Find more secure alternatives  
 The Cloud App Security service catalog can help you find alternatives that work for your organization, instead of risky apps that your users might be using.  
@@ -105,7 +105,7 @@ Imagine this scenario: you're considering buying a productivity tool, and you ar
 
 4.   If you decide that you want to buy an enterprise license for the whole organization, you might also want to look at the **Users** column. There, you can see what's already most popular among your users, see if it's trusted, and see what security features it has before making your decision.  
 
-## See also  
+## Next steps
 To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
 
 Premier customers can also choose Cloud App Security directly from the [Premier Portal](https://premier.microsoft.com/).  

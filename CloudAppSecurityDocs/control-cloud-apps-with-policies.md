@@ -180,7 +180,7 @@ After you create a policy, you can enable or disable it. Disabling avoids the ne
 
 By default, after you create a new policy, it's enabled.
 
-## See Also  
+## Next steps
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
