@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/18/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -83,6 +83,9 @@ This detection takes advantage of Cloud App Security's ability to monitor user b
 **Suspicious email rules**
 
 - This detection looks for suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address. 
+ 
+> [!NOTE]
+> Cloud App Security only alerts you for each forwarding rule that is identified as suspicious, based on the typical behavior for the user. 
 
 **Unusual activities (by user)**<br>
 These detections identify users who perform:
@@ -97,6 +100,13 @@ These policies look for activities within a single session with respect to the b
 
 **Multiple failed login attempts**
 - This detection identifies users that failed multiple login attempts in a single session with respect to the baseline learned, which could indicate on a breach attempt. 
+
+**Data exfiltration to unsanctioned apps**
+- This policy is automatically enabled to alert you when a user or IP address uses an app that is not sanctioned to perform an activity that resembles an attempt to exfiltrate information from your organization.
+
+**Multiple delete VM activities**
+- This policy profiles your environment and triggers alerts when users delete multiple VMs in a single session, relative to the baseline in your organization. This might indicate an attempted breach.
+
 
 ## Enable automated governance<a name="adp-automated-gov"></a>
 

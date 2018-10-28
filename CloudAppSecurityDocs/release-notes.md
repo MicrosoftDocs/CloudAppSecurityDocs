@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,20 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+
+## Cloud App Security release 133, 134, 135
+
+Released October, 2018
+
+**New anomaly detection policies being gradually rolled out**
+- The new Data exfiltration to unsanctioned apps policy is automatically enabled to alert you when a user or IP address uses an app that is not sanctioned to perform an activity that resembles an attempt to exfiltrate information from your organization.
+- The new Multiple delete VM activities policy profiles your environment and triggers alerts when users delete multiple VMs in a single session, relative to the baseline in your organization.
+
+**Data classification service available for APAC**
+- Data classification service content inspection is now available for APAC customers. For a list of full regional support, see [Microsoft Data Classification Services integration](dcs-inspection.md).
+
+**Cloud Discovery support for i-Filter**
+-  The Cloud App Security Cloud Discovery feature now has enhanced support for the i-Filter syslog parser.
 
 ## Cloud App Security release 132
 
