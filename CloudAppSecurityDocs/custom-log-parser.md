@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,7 +30,7 @@ ms.suite: ems
 
 
 # Use a custom log parser
-Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery, even if they are from a firewall or device that is not explicitly supported by Cloud App Security. 
+Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Cloud App Security. 
 
 The custom parser enables you to use logs from unsupported firewalls by following this process. 
 
@@ -49,7 +49,7 @@ To configure a custom CSV parser:
 
 4. Collect logs from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization. 
 
-5. Open the logs you want to process in a text editor and review their format, making sure that the column names in the log correspond to the fields in the **Custom log format** screen.
+5. Open the logs you want to process in a text editor. Review their format, making sure that the column names in the log correspond to the fields in the **Custom log format** screen.
 
    ![custom log parser](./media/log-data.png) 
 
@@ -63,7 +63,7 @@ To configure a custom CSV parser:
 
 7. Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on Edit.
 
-8. Under **Choose the traffic logs** select the log file you modified and upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
+8. Under **Choose the traffic logs**, select the log file you modified and upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
   
 
 9. Click **Create**.  
@@ -71,12 +71,12 @@ To configure a custom CSV parser:
 10. After upload completes, the status message will appear at the top right corner of your screen letting you know that your log was successfully uploaded.  
   
 11. After you upload your log files, it will take some time for them to be parsed and analyzed.  
-    After processing of your log files completes, you will receive an email to notify you that it is done. 
+    After processing of your log files completes, you'll receive an email to notify you that it's done. 
   
-12. A notification banner will appear in the status bar at the top of the portal to update you with the processing status of your log files.  
+12. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.  
     ![processing log file menu bar](./media/processing-log-file-menu-bar.png) 
    
-13. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, a you can view the report either by clicking the link in the status bar, or by going to the Settings cog, and selecting **Cloud Discovery settings**.   
+13. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by going to the Settings cog and selecting **Cloud Discovery settings**.   
   
      ![Discovery settings tab](./media/discovery-settings-tab.png)
 14. Then selecting **Manage snapshot reports** and select your snapshot report.
@@ -89,7 +89,7 @@ To configure a custom CSV parser:
 
 
 
-## See also
+## Next steps
  
 [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
