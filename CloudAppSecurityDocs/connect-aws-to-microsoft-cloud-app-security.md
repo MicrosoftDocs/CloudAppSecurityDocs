@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -100,7 +100,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
      ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    If you have not used CloudTrail before, click **Get Started** and set it up by providing a name and selecting the appropriate S3 bucket and click **Turn On**. To make sure you have complete coverage, set **Apply to all regions** to **Yes**.
+    If you haven't used CloudTrail before, click **Get Started** and set it up by providing a name and selecting the appropriate S3 bucket and click **Turn On**. To make sure you have complete coverage, set **Apply to all regions** to **Yes**.
   
        ![Turn on CloudTrail in AWS](./media/aws-turnon-cloudtrail.png "Turn on CloudTrail in AWS")
   
@@ -110,7 +110,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 11. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.  
   
-12. In the **App connectors** page, click the plus sign followed by **AWS**.  
+12. In the **App connectors** page, click the plus sign followed by **Amazon Web Services**.  
   
      ![connect AWS](./media/connect-aws.png "connect AWS")  
   
@@ -119,11 +119,11 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 14. Make sure the connection succeeded by clicking **Test API**.  
   
-     Testing may take a couple of minutes. When it is finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.  
+     Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.  
   
-After connecting AWS, you will receive events for seven days prior to connection. If you just enabled CloudTrail, in which case you receive events from the time you enabled CloudTrail.
+After connecting AWS, you'll receive events for seven days prior to connection. If you just enabled CloudTrail, in which case you receive events from the time you enabled CloudTrail.
   
-## See Also  
+## Next steps  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

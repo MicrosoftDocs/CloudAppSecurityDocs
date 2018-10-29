@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -33,7 +33,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
 ## Configure G Suite  
   
-1. As a G Suite Super Admin, log in to <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
+1. As a G Suite Super Admin, sign in to <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
   
 2. Click **Create project** to start a new project.  
   
@@ -43,7 +43,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
    **Microsoft Cloud App Security** and click **Create**.  
           ![google2](./media/google2.png "google2")  
   
-4. After the project is created, in the tool bar, click on **Google Cloud Platform** and make sure that the right project is selected in the drop down at the top.
+4. After the project is created, in the tool bar, click on **Google Cloud Platform**. Make sure that the right project is selected in the drop-down at the top.
        
       ![google project](./media/googleverify-project.png "googleverify project")  
 
@@ -51,7 +51,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
      ![google3](./media/google3.png "google3")  
    
-7. Click on **Library** and enable the following APIs (use the search line if the API is not listed in the **Popular APIs** list):  
+7. Click on **Library** and enable the following APIs (use the search line if the API isn't listed in the **Popular APIs** list):  
      
    -   Admin SDK  
   
@@ -231,7 +231,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
     6.  Click **Save settings**.  
   
-    7.  **Follow the link** to connect to G Suite. This opens G Suite and you are asked to authorize access for Cloud App Security.  
+    7.  **Follow the link** to connect to G Suite. This opens G Suite and you're asked to authorize access for Cloud App Security.  
          
     8.  Make sure the connection succeeded by clicking **Test now**.  
   
@@ -240,12 +240,12 @@ This section provides instructions for connecting Microsoft Cloud App Security t
          After receiving a success notice, click **Done** and close the G Suite page.  
   
   
-After connecting G Suite, you will receive events for 60 days prior to connection.
+After connecting G Suite, you'll receive events for 60 days prior to connection.
   
-After connecting G Suite, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activity is detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away. This does not apply to files that are not inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned during the regular scan.
+After connecting G Suite, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activity is detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away. This doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned during the regular scan.
   
   
-## See Also  
+## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
