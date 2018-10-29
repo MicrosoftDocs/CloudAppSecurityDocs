@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -33,26 +33,26 @@ This section provides instructions for connecting Microsoft  Cloud App Security 
   
 ## How to connect Salesforce to Cloud App Security  
   
-1.  It is recommended to have a dedicated service admin account for Cloud App Security.  
+1.  It's recommended to have a dedicated service admin account for Cloud App Security.  
   
 2.  Validate that REST API is enabled in Salesforce.  
   
      Your Salesforce account must be one of the following editions that include REST API support:  
   
-     **Performance**, **Enterprise**, **Unlimited** or **Developer**.  
+     **Performance**, **Enterprise**, **Unlimited**, or **Developer**.  
   
-     The **Professional** edition does not have REST API by default, but it can be added on demand.  
+     The **Professional** edition doesn't have REST API by default, but it can be added on demand.  
   
      Check to see that your edition has REST API available and enabled as follows:  
   
-    -   Log in to your Salesforce account and go to the **Setup** page.  
+    -   Sign in to your Salesforce account and go to the **Setup** page.  
   
     -   Under **Manage Users**, go to the **User Profiles** page.  
   
-         ![salesforce manageusers profiles](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
+         ![salesforce manage users profiles](./media/salesforce-manageusers-profiles.png "salesforce manage users profiles")  
   
     -   Create a new profile by clicking **New**. 
-    - Choose the profile you just created to deploy Cloud App Security and click **Edit**. This is the profile to be used for the Cloud App Security service account to set up the App connector.  
+    - Choose the profile you just created to deploy Cloud App Security and click **Edit**.  profile is the one to be used for the Cloud App Security service account to set up the App connector.  
   
          ![salesforce edit profile](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -62,7 +62,7 @@ This section provides instructions for connecting Microsoft  Cloud App Security 
         - **Manage Salesforce CRM Content**
         - **Manage Users**
         
-        If these are not selected, you may need to contact Salesforce to add them to your account.  
+        If these checkboxes aren't selected, you may need to contact Salesforce to add them to your account.  
              
 3.  If your organization has **Salesforce CRM Content** enabled, make sure that the current administrative account has it enabled as well.  
   
@@ -78,7 +78,7 @@ This section provides instructions for connecting Microsoft  Cloud App Security 
   
     4.  Make sure that the **Salesforce CRM Content User** check box is selected.  
   
-         If it is not selected, click **Edit** and then check the check box.  
+         If it isn't selected, click **Edit** and then check the check box.  
   
          ![salesforce crm content user](./media/salesforce-crm-content-user.png "salesforce crm content user")  
   
@@ -92,13 +92,13 @@ This section provides instructions for connecting Microsoft  Cloud App Security 
   
 6.  In the Salesforce settings page, on the API tab, click **Follow this link**, depending on which instance you want to install.  
   
-7.  This opens the Salesforce log on page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.  
+7.  This opens the Salesforce sign in page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.  
   
-     ![salesforce logon](./media/salesforce-logon.png "salesforce logon")  
+     ![salesforce sign-in](./media/salesforce-logon.png "salesforce logon")  
   
 8.  Salesforce will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.  
   
-9. At this point, you will receive a success or failure notice regarding the deployment. Cloud App Security is now authorized in Salesforce.com.  
+9. At this point, you'll receive a success or failure notice for the deployment. Cloud App Security is now authorized in Salesforce.com.  
   
 10. Back in the Cloud App Security console, you should see the Salesforce was successfully connected message.  
   
@@ -107,7 +107,7 @@ This section provides instructions for connecting Microsoft  Cloud App Security 
      Testing may take a couple of minutes. After receiving a success notice, click **Done**.  
   
   
-After connecting Salesforce, you will receive Events as follows: Triggers from the moment of connection, Login events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days or 1 day back - depending on your Salesforce EventMonitoring license. The Cloud App Security API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Cloud App Security takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Cloud App Security calculates this into a percentage and makes sure to always leave 10% of available API calls remaining. 
+After connecting Salesforce, you'll receive Events as follows: Triggers from the moment of connection, Log in events, and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days, or 1 day back - depending on your Salesforce EventMonitoring license. The Cloud App Security API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Cloud App Security takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Cloud App Security calculates this into a percentage and makes sure to always leave 10% of available API calls remaining. 
 
 > [!NOTE]
 > Cloud App Security throttling is calculated solely on its own API calls with Salesforce, not with those of any other applications making API calls with Salesforce.
@@ -116,12 +116,12 @@ After connecting Salesforce, you will receive Events as follows: Triggers from t
 
 Salesforce events are processed by Cloud App security as follows: 
   
-- Log in events every 15 minutes
-- Setup audit trail every 15 minutes
+- Sign in events every 15 minutes
+- Setup audit trails every 15 minutes
 - Salesforce logs track usage activity for a 24-hour period, from 12:00 a.m. to 11:59 p.m. UTC time. Events in Salesforce generate log data in real time. However, log files are generated by Salesforce the day after an event takes place, during nonpeak hours. Therefore, log file data is unavailable for at least one day after an event. For more information about Salesforce events, see [Using event monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm).
 
 
-## See Also  
+## Next steps  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
