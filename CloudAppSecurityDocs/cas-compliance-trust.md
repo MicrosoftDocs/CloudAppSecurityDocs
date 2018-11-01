@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 68/21/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -149,7 +149,7 @@ Microsoft Cloud App Security enables you to scope your deployment. This enables 
 
 You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
 
-## See also
+## Next steps
 
 [Cloud App Security Overview](https://www.microsoft.com/cloud-platform/cloud-app-security)
 

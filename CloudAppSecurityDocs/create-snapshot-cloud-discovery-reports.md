@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -29,16 +29,16 @@ ms.suite: ems
 
 
 # Create snapshot Cloud Discovery reports
-It is important to upload a log manually and let Microsoft Cloud App Security parse it before attempting to use the automatic log collector. For information on how the log collector works and the expected log format, see [Using traffic logs for Cloud Discovery](#log-format).
+It's important to upload a log manually and let Microsoft Cloud App Security parse it before trying to use the automatic log collector. For information on how the log collector works and the expected log format, see [Using traffic logs for Cloud Discovery](#log-format).
 
-If you don't have a log yet and you want to see a sample of what your log should look like, follow the procedure below, and download a sample log file to see what your log is supposed to look like.
+If you don't have a log yet and you want to see an example of what your log should look like, download a sample log file. Follow the procedure below to see what your log should look like.
 
 
 To create a snapshot report:
   
 1. Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.  
   
-2. In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.  
+2. In the Cloud App Security portal, click on **Discover** then **Create snapshot report**.  
   
    ![Create new snapshot report](./media/create-new-snapshot-report.png)
      
@@ -48,7 +48,7 @@ To create a snapshot report:
 
 4. Select the **Data source** from which you want to upload the log files.  
   
-5. Verify your log format to make sure that it is formatted properly according to the sample you can download. Click **View and verify** and then click **Download sample log**. Then compare your log with the sample provided to make sure it's compatible. 
+5. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Click **View and verify** then **Download sample log**. Compare your log with the sample provided to make sure it's compatible. 
 
    ![Verify your log format](./media/cloud-discovery-snapshot-verify.png)  
 
@@ -64,21 +64,21 @@ To create a snapshot report:
 8. After upload completes, the status message will appear at the top right corner of your screen letting you know that your log was successfully uploaded.  
   
 9. After you upload your log files, it will take some time for them to be parsed and analyzed.  
-   After processing of your log files completes, you will receive an email to notify you that it is done. 
+   After processing of your log files completes, you'll receive an email to notify you that it's done. 
   
-10. A notification banner will appear in the status bar at the top of the portal to update you with the processing status of your log files.  
+10. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.  
     ![processing log file menu bar](./media/processing-log-file-menu-bar.png) 
    
-11. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, a you can view the report either by clicking the link in the status bar, or by going to the Settings cog, and selecting **Cloud Discovery settings**.   
+11. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by going to the Settings cog and selecting **Cloud Discovery settings**.   
   
      ![Discovery settings tab](./media/discovery-settings-tab.png)
 12. Then selecting **Snapshot reports** and select your snapshot report.
  
-![snapshot report management](./media/snapshot-report-managment.png)
+     ![snapshot report management](./media/snapshot-report-managment.png)
 
   
 ## Using traffic logs for Cloud Discovery <a name="log-format"></a>
-Cloud Discovery utilizes the data in your traffic logs. The more detailed your log, the better visibility you get. Cloud Discovery requires web-traffic data with the following attributes:
+Cloud Discovery uses the data in your traffic logs. The more detailed your log, the better visibility you get. Cloud Discovery requires web-traffic data with the following attributes:
 - Date of the transaction
 - Source IP
 - Source user - highly recommended
@@ -88,16 +88,16 @@ Cloud Discovery utilizes the data in your traffic logs. The more detailed your l
 - Amount of uploaded or downloaded data (provides insights about the usage patterns of the cloud apps)
 - Action taken (allowed/blocked)
 
-Cloud Discovery cannot show or analyze attributes that are not included in your logs.
-For example, **Cisco ASA Firewall** standard log format does not contain the **number of uploaded bytes per transaction** nor **Username**, and does not contain **Target URL** (but only target IP).
+Cloud Discovery can't show or analyze attributes that aren't included in your logs.
+For example, **Cisco ASA Firewall** standard log format doesn't have the **number of uploaded bytes per transaction**, **Username**, and  **Target URL** (only target IP).
 Therefore, these attributes will not be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps will be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6. 
 
 
-In order to successfully generate a Cloud Discovery report, your traffic logs must meet the following conditions:
-1.  Data source is supported (see list below).
-2.  Log format matches the expected standard format (this will be checked upon upload by the Log tool).
-3.  Events are not more than 90 days old.
-4.  The log file is valid and includes outbound traffic information.
+To successfully generate a Cloud Discovery report, your traffic logs must meet the following conditions:
+1. Data source is supported (see list below).
+2. Log format matches the expected standard format (format checked upon upload by the Log tool).
+3. Events aren't more than 90 days old.
+4. The log file is valid and includes outbound traffic information.
 
 
 
@@ -106,7 +106,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 - Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access log (W3C)
 - Check Point
-- Cisco ASA Firewall (For Cisco ASA firewalls, it is necessary to set the information level to 6)
+- Cisco ASA Firewall (For Cisco ASA firewalls, it's necessary to set the information level to 6)
 - Cisco ASA with FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
@@ -133,7 +133,7 @@ In order to successfully generate a Cloud Discovery report, your traffic logs mu
 > [!NOTE]
 > Cloud Discovery supports both IPv4 and IPv6 addresses.
 
-If your log is not supported, select **Other** as the **Data source** and specify the appliance and log you are trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you will be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
+If your log isn't supported, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
 
 
 Data attributes (according to vendor documentation):
@@ -166,7 +166,7 @@ Data attributes (according to vendor documentation):
 |                   Zscaler                    | <strong>Yes</strong> | <strong>Yes</strong> | <strong>Yes</strong> | <strong>Yes</strong> | <strong>Yes</strong> | <strong>Yes</strong> |
      
  
-## See Also  
+## Next steps  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
