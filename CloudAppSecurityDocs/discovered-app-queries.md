@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,7 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 # Discovered app filters and queries
+When you have a large number of discovered apps, you'll find it useful to filter and query them. This article describes what filters are available and how to query your discovered apps.  
 
 ## Discovered app filters
 
@@ -38,15 +39,15 @@ There are basic and advanced Discovered app filters. To achieve a complex filter
 ![Discovered apps](./media/discovered-apps.png)  
 
 
-- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. In addition, you can create a custom tag for your app and then use it to filter for specific types of apps. 
+- **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. Additionally, you can create a custom tag for your app and then use it to filter for specific types of apps. 
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
-- **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories, for example Social network apps, Cloud storage apps, etc. You can select multiple categories at a time, or a single category, and then apply the basic and advanced filters on top of these.
-- **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, etc.).
-- **General risk factor**: Lets you search for general risk factors such as Consumer popularity, Data center locale, etc.
-- **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only very risky apps. You can also override the risk score set by Cloud App Security. For more information, see [Working with the risk score](risk-score.md).
+- **Categories**: The categories filter, located on the left of the page, enables you to search for types of apps according to app categories. Example categories include social network apps, cloud storage apps, and hosting services. You can select multiple categories at a time, or a single category, then apply the basic and advanced filters on top.
+- **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
+- **General risk factor**: Lets you search for general risk factors such as consumer popularity, data center locale, and more.
+- **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only highly risky apps. You can also override the risk score set by Cloud App Security. For more information, see [Working with the risk score](risk-score.md).
 - **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
-- **Usage**: Lets you filter based on the usage statistics of this app, such as apps with less than or more than a specified number of **data uploads**, apps with more than or less than a specified number of **Users**.
-- **Legal risk factor**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users, such as GDPR ready cloud apps, DMCA, and data retention policy.
+- **Usage**: Lets you filter based on the usage statistics of this app. Usage such as apps with less than or more than a specified number of **data uploads**, apps with more than or less than a specified number of **Users**.
+- **Legal risk factor**: Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users. Examples include GDPR ready cloud apps, DMCA, and data retention policy.
 
 ### Creating and managing custom app tags
 
@@ -55,24 +56,25 @@ These tags can then be used as filters for deeper diving into specific types of 
 
 To create a custom app tag:
 
-1. From the **Settings** cog, select **Cloud Discovery**, and in the **Manage app tags** tab, click the icon ![plus icon](./media/plus-icon.png). 
+1. From the **Settings** cog, select **Cloud Discovery settings**, then the **App tags** tab. Click the plus icon. ![plus icon](./media/plus-icon.png)
 
-![create custom app tag](./media/create-app-tag.png)
+   ![create custom app tag](./media/create-app-tag.png)
 
-2. You can use the **Manage app tags** table to view which apps are currently tagged with each app tag and you can delete unused app tags.
+2. You can use the **App tags** table to view which apps are currently tagged with each app tag and you can delete unused app tags.
 
-3. To apply an app tag, in the **Discovered apps** tab, click on the three dots at the far right of the table and select the app tag to apply. 
+3. To apply an app tag, in the **Discovered apps** tab, click on the three dots at the far right of the app name. Select the app tag to apply. 
 
 > [!NOTE]
->You can also create a new app tag directly in the **Discovered apps** table by clicking **Create app tag** after selecting the three dots to the right of any selected app. You can also access the **Manage app tags** screen by clicking the link in the corner fo the **Create app tag** popup.
+>You can also create a new app tag directly in the **Discovered apps** table by clicking **Create app tag** after selecting the three dots to the right of any selected app. When you create the tag from the discovered app, you can apply it to the app. You can also access the **App tags** screen by clicking the **Manage tags** link in the corner.
+> ![create custom app tag from app](./media/create-app-tag-from-app.png)
 
 ## Discovered app queries
 
-To make investigation even simpler, you can now create custom queries and save them for later use. 
+To make investigation even simpler, you can create custom queries and save them for later use. 
 
 1. In the **Discovered apps** page, use the filters as described above to drill down into your apps as necessary. 
 
-2. After you have achieved the desired results, click the **Save as** button in the top right corner of the filters. 
+2. After you've achieved the wanted results, click the **Save as** button in the top right corner of the filters. 
 
 3. In the **Save query** popup, name your query.
 
@@ -93,7 +95,7 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 
  - Cloud storage and collaboration apps that own user data- filters all your discovered apps to display only apps that are risky because they don't allow you to have ownership over your data but they do retain your data.
 
- - Cloud storage apps that are risky and non-compliant - filters all your discovered apps to display only apps in which they are not SOC 2 or HIPAA compliant, they do not support PCI DSS version and they have a risk score of 5 or lower.
+ - Cloud storage apps that are risky and non-compliant - filters all your discovered apps to display only apps in which they aren't SOC 2 or HIPAA compliant, they don't support PCI DSS version and they have a risk score of 5 or lower.
 
  - Enterprise cloud apps that have weak authentication - filters all your discovered apps to display only apps that don't support SAML, have no password policy, and don't enable MFA.
 
@@ -104,10 +106,10 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 ![query discovered apps](./media/queries-discovered-apps.png)
 
  
-In addition, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
+Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
 
 
-## See also
+## Next steps
  
 [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
