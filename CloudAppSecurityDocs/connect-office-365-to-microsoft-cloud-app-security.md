@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -33,7 +33,7 @@ ms.suite: ems
 # Connect Office 365 to Microsoft Cloud App Security
 This section provides instructions for connecting Microsoft Cloud App Security to your existing Microsoft Office 365 account using the app connector API.  
   
-Cloud App Security supports the legacy Office 365 Dedicated Platform as well as the latest offerings of Office 365 services (commonly referred as the vNext release family of Office 365).  Cloud App Security does not support  the Legacy Microsoft Business Productivity Online Standard Suite. 
+Cloud App Security supports the legacy Office 365 Dedicated Platform as well as the latest offerings of Office 365 services (commonly referred as the vNext release family of Office 365).  Cloud App Security doesn't support  the Legacy Microsoft Business Productivity Online Standard Suite. 
 
 > [!NOTE]
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
@@ -44,7 +44,7 @@ Cloud App Security supports the following Office 365 apps:
 - SharePoint
 - OneDrive
 - Teams (only appears after activities from Teams are detected in the portal)
-- PowerBI (only appears after activities from PowerBI are detected in the portal, and requires you to turn on auditing)
+- Power BI (only appears after activities from Power BI are detected in the portal, and requires you to turn on auditing)
 - Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
 
  
@@ -71,7 +71,7 @@ Cloud App Security supports the following Office 365 apps:
 > [!NOTE] 
 > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
 
-## See Also  
+## Next steps  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
