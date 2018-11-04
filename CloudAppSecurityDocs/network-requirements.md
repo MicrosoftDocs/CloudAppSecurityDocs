@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/5/2018
+ms.date: 11/5/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -56,8 +56,6 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
     cdn.cloudappsecurity.com
     https://adaproddiscovery.azureedge.net 
     *.s-microsoft.com
-    cdn.cloudappsecurity.com
-    cloudappsecurity-rs.azureedge.net
     *.msecnd.net
     dev.virtualearth.net
     *.cloudappsecurity.com
