@@ -55,21 +55,28 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1. Go to the automated upload setting page:  <br></br>In the Cloud App Security portal, click the settings icon ![settings icon](./media/settings-icon.png) followed by **Log collectors**.
+1. Go to the **Automatic log upload** settings page. 
 
-2. For each firewall or proxy from which you want to upload logs, create a matching data source:
+     a. In the Cloud App Security portal, click the settings icon followed by **Log collectors**.
 
-     ![ubuntu1](./media/ubuntu1.png)
+      ![settings icon](./media/settings-icon.png)
+
+2. For each firewall or proxy from which you want to upload logs, create a matching data source.
 
      a. Click **Add data source**.
- 
+
+        ![Add a data source](./media/add-data-source.png)
+          
      b. **Name** your proxy or firewall.
+      
+      ![ubuntu1](./media/ubuntu1.png)
 
      c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
 
      d. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
 
      e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
+     
      >[!NOTE]
      >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
@@ -79,6 +86,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      <br>- Monitor the status of each device separately, for investigation purposes.
      <br>- Explore Shadow IT Discovery per device, if each device is used by a different user segment.
 
+     
 3. Go to the **Log collectors** tab at the top.
 
      a. Click **Add log collector**.
@@ -92,7 +100,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
      d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
 
-     ![ubuntu2](./media/ubuntu2.png)
+         ![ubuntu2](./media/ubuntu2.png)
 
      > [!NOTE]
      > - A single Log collector can handle multiple data sources.
@@ -102,7 +110,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 5. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
- ![Create log collector](./media/windows7.png)
+     ![Create log collector](./media/windows7.png)
 
 ### Step 2 – Deployment of your machine in Azure
 
