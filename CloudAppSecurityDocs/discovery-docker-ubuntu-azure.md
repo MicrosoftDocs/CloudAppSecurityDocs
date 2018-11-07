@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/06/2018
+ms.date: 11/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -29,27 +29,27 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 # Set up and configuration on Ubuntu
-
+You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu in Azure. This article describes how to set up the automatic log upload. 
 
 ## Technical requirements
 
--   OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support)
+- OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support)
 
--   Disk space: 250 GB
+- Disk space: 250 GB
 
--   CPU: 2
+- CPU: 2
 
--   RAM: 4 GB
+- RAM: 4 GB
 
--   Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
+- Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
 
 ## Log collector performance
 
 The Log collector can successfully handle log capacity of up to 50 GB per hour. The main bottlenecks in the log collection process are:
 
--   Network bandwidth - your network bandwidth determines the log upload speed.
+- Network bandwidth - Your network bandwidth determines the log upload speed.
 
--   I/O performance of the virtual machine allocated by your IT - determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup generally exceeds 50 GB per hour, it is recommended that you split the traffic between multiple log collectors.
+- I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
 
 ## Set up and configuration  
 
@@ -59,50 +59,50 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 2. For each firewall or proxy from which you want to upload logs, create a matching data source:
 
-   ![ubuntu1](./media/ubuntu1.png)
+     ![ubuntu1](./media/ubuntu1.png)
 
-   a. Click **Add data source**.
+     a. Click **Add data source**.
+ 
+     b. **Name** your proxy or firewall.
 
-   b. **Name** your proxy or firewall.
+     c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
 
-   c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that is not specifically listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
+     d. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
 
-   d. Compare your log with the sample of the expected log format. If your log file format does not match this sample, you should add your data source as **Other**.
+     e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
+     >[!NOTE]
+     >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
-   e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
-   >[!NOTE]
-   >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
-
-   f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.
-    > [!NOTE]
-    >It is recommended to set up a dedicated data source per network device to enable you to:
-    <br>- Monitor the status of each device separately, for investigation purposes.
-    <br>- Explore Shadow IT Discovery per device, if each device is used by a different user segment.
+     f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.
+     > [!NOTE]
+     >It is recommended to set up a dedicated data source per network device to enable you to:
+     <br>- Monitor the status of each device separately, for investigation purposes.
+     <br>- Explore Shadow IT Discovery per device, if each device is used by a different user segment.
 
 3. Go to the **Log collectors** tab at the top.
 
-   a. Click **Add log collector**.
+     a. Click **Add log collector**.
 
-   b. Give the log collector a **name**.
+     b. Give the log collector a **name**.
 
-   c. Enter the **Host IP address** of the machine you will use to deploy the Docker. 
+     c. Enter the **Host IP address** of the machine you'll use to deploy the Docker. 
 
-    > [!NOTE]
-    > The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
+     > [!NOTE]
+     > The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
 
-   d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
+     d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
 
-   ![ubuntu2](./media/ubuntu2.png)
+     ![ubuntu2](./media/ubuntu2.png)
 
-   > [!NOTE]
-   > - A single Log collector can handle multiple data sources.
-   > - Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
+     > [!NOTE]
+     > - A single Log collector can handle multiple data sources.
+     > - Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
 
-4. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon ![copy to clipboard icon](./media/copy-icon.png).
+4. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon](./media/copy-icon.png)
 
 5. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
-   ![Create log collector](./media/windows7.png)
+ ![Create log collector](./media/windows7.png)
 
 ### Step 2 – Deployment of your machine in Azure
 
@@ -112,22 +112,22 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1. Create a new Ubuntu machine in your Azure environment. 
 2. After the machine is up, open the ports by:
-   1. In the machine view go to **Networking** select the relevant interface by double clicking on it.
-   2. Go to **Network security group** and select the relevant network security group.
-   3. Go to **Inbound security rules** and click **Add**,
+     1. In the machine view, go to **Networking** select the relevant interface by double-clicking on it.
+     2. Go to **Network security group** and select the relevant network security group.
+     3. Go to **Inbound security rules** and click **Add**,
       
       ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-   4. Add the following rules (in **Advanced** mode):
+     4. Add the following rules (in **Advanced** mode):
 
-   |Name|Destination port ranges|Protocol|Source|Destination|
-   |----|----|----|----|----|
-   |caslogcollector_ftp|21|TCP|<Your appliance's IP address's subnet>|Any|
-   |caslogcollector_ftp_passive|20000-20099|TCP|<Your appliance's IP address's subnet>|Any|
-   |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address's subnet>|Any|
-   |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address's subnet>|Any|
+     |Name|Destination port ranges|Protocol|Source|Destination|
+     |----|----|----|----|----|
+     |caslogcollector_ftp|21|TCP|<Your appliance's IP address's subnet>|Any|
+     |caslogcollector_ftp_passive|20000-20099|TCP|<Your appliance's IP address's subnet>|Any|
+     |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address's subnet>|Any|
+     |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address's subnet>|Any|
       
-    ![Ubuntu Azure rules](./media/inbound-rule.png)
+     ![Ubuntu Azure rules](./media/inbound-rule.png)
 
 3. Go back to the machine and click **Connect** to open a terminal on the machine.
 
@@ -155,33 +155,32 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 3 - On-premises configuration of your network appliances
 
-Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog, for example:
+Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog. For example:
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ### Step 4 - Verify the successful deployment in the Cloud App Security portal
 
-Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it is **Created**, it is possible that the log collector connection and parsing has not completed.
+Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
  ![ubuntu9](./media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being
 periodically uploaded to the portal.
 
-If you encounter problems during deployment, see [Troubleshooting Cloud
-Discovery](troubleshooting-cloud-discovery.md).
+If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### Optional - Create custom continuous reports
 
-After you have verified that the logs are being uploaded to Cloud App Security and the reports are being generated, you can create custom reports. You can now create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
+Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Cloud App Security portal, under the Settings cog, select **Cloud Discovery settings** and then select **Manage continuous reports**. 
+1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Manage continuous reports**. 
 2. Click the **Create report** button and fill in the fields.
 3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
 
-![Custom continuous report](./media/custom-continuous-report.png)
+     ![Custom continuous report](./media/custom-continuous-report.png)
 
-## See Also
+## Next steps
 [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
