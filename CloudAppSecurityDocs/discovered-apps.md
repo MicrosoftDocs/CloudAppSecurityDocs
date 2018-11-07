@@ -48,7 +48,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 4. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
 5. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
 
-6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview**.  Check the **discovery alerts status** to see how many open alerts should you investigate.
+6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
 
 ## Deep dive into Discovered apps
 If you want to deep dive into the data Cloud Discovery provides, use the filters to review which apps are risky and which are commonly used.
@@ -115,7 +115,7 @@ To create a new continuous report:
   
 5. Select the data sources you want to include (all or specific).  
   
-6. Set the filters you want on the data. These filters can be **User groups**, **IP address tags, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).  
+6. Set the filters you want on the data. These filters can be **User groups**, **IP address tags**, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).  
   
     ![create custom continuous report](./media/create-custom-continuous-report.png) 
 
