@@ -95,6 +95,8 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
 
+If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+
 ## App connector
 
 For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. 
@@ -179,6 +181,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 > - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
 >- Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
+>- If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 
 
