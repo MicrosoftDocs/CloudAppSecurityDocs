@@ -80,11 +80,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      >[!NOTE]
      >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
-     f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network.
-     > [!NOTE]
-     >It is recommended to set up a dedicated data source per network device to enable you to:
-     <br>- Monitor the status of each device separately, for investigation purposes.
-     <br>- Explore Shadow IT Discovery per device, if each device is used by a different user segment.
+     f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. It is recommended to set up a dedicated data source per network device to enable you to:
+     - Monitor the status of each device separately, for investigation purposes.
+     - Explore Shadow IT Discovery per device, if each device is used by a different user segment.
 
      
 3. Go to the **Log collectors** tab at the top.
@@ -93,10 +91,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
      b. Give the log collector a **name**.
 
-     c. Enter the **Host IP address** of the machine you'll use to deploy the Docker. 
-
-     > [!NOTE]
-     > The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
+     c. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
 
      d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
 
@@ -120,22 +115,25 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1. Create a new Ubuntu machine in your Azure environment. 
 2. After the machine is up, open the ports by:
-     1. In the machine view, go to **Networking** select the relevant interface by double-clicking on it.
-     2. Go to **Network security group** and select the relevant network security group.
-     3. Go to **Inbound security rules** and click **Add**,
+
+     a. In the machine view, go to **Networking** select the relevant interface by double-clicking on it.
+
+     b. Go to **Network security group** and select the relevant network security group.
+
+     c. Go to **Inbound security rules** and click **Add**,
       
       ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-     4. Add the following rules (in **Advanced** mode):
+     d. Add the following rules (in **Advanced** mode):
 
-     |Name|Destination port ranges|Protocol|Source|Destination|
-     |----|----|----|----|----|
-     |caslogcollector_ftp|21|TCP|<Your appliance's IP address's subnet>|Any|
-     |caslogcollector_ftp_passive|20000-20099|TCP|<Your appliance's IP address's subnet>|Any|
-     |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address's subnet>|Any|
-     |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address's subnet>|Any|
+      |Name|Destination port ranges|Protocol|Source|Destination|
+      |----|----|----|----|----|
+      |caslogcollector_ftp|21|TCP|<Your appliance's IP address's subnet>|Any|
+      |caslogcollector_ftp_passive|20000-20099|TCP|<Your appliance's IP address's subnet>|Any|
+      |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address's subnet>|Any|
+      |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address's subnet>|Any|
       
-     ![Ubuntu Azure rules](./media/inbound-rule.png)
+      ![Ubuntu Azure rules](./media/inbound-rule.png)
 
 3. Go back to the machine and click **Connect** to open a terminal on the machine.
 
@@ -182,7 +180,7 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](t
 
 Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Manage continuous reports**. 
+1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**. 
 2. Click the **Create report** button and fill in the fields.
 3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
 
