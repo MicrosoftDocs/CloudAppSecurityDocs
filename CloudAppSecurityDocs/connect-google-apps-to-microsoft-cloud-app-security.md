@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/08/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -59,7 +59,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
    -   Google Drive API  
   
-   -   Apps Marketplace SDK  
+   -   G Suite Marketplace SDK  
   
    -   Gmail API  
             
@@ -82,7 +82,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
     - Click **Save**.  
   
-      ![Google product name](./media/google6.png "google6")  
+      ![Google oauth consent](./media/google-oauth-consent.png "google oauth conesent")  
   
 11. In the **Credentials** tab, click the arrow next to **Create credentials**.  
   
@@ -131,7 +131,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
 
 21. Click **Save changes**.
 
-22. Go back to the **Enabled APIs** list. Click **Apps Marketplace SDK**. 
+22. Go back to the **Enabled APIs** list. Click **G Suite Marketplace SDK**. 
       
 23. Select the **Configuration** tab. 
   
@@ -139,8 +139,11 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
     -   Under **Application Name** type **Microsoft Cloud App Security**.
   
-         In **Application description** type "Microsoft Cloud App Security provides visibility into cloud apps, helping you control, investigate, and govern cloud app use; secure corporate data; and detect suspicious activities for any cloud app."  
-  
+         In **Application description** type "Microsoft Cloud App Security provides visibility into cloud apps, helping you control, investigate, and govern cloud app use; secure corporate data; and detect suspicious activities for any cloud app." 
+    - Make sure to click **Done** in the **New item** window.      
+     
+       ![google new item](./media/google-new-item.png "google new item")  
+
     -   Uncheck the **Enable individual install** check box.  
   
     -   Configure the four required images under **Application icons**.  
