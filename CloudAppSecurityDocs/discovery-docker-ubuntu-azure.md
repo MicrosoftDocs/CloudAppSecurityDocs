@@ -65,7 +65,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
      a. Click **Add data source**.
 
-        ![Add a data source](./media/add-data-source.png)
+      ![Add a data source](./media/add-data-source.png)
           
      b. **Name** your proxy or firewall.
       
@@ -100,7 +100,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
      d. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration see the next deployment steps.
 
-         ![ubuntu2](./media/ubuntu2.png)
+      ![ubuntu2](./media/ubuntu2.png)
 
      > [!NOTE]
      > - A single Log collector can handle multiple data sources.
