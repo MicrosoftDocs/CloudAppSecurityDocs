@@ -2,12 +2,12 @@
 # required metadata
 
 title: What are the differences between discovery capabilities in Microsoft Cloud App Security and Azure AD? | Microsoft Docs
-description: This topic describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure AD.
+description: This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure AD.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 11/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,19 +26,21 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What are the differences discovery capabilities in Azure Active Directory and Microsoft Cloud App Security?
+# What are the differences in discovery capabilities for Azure Active Directory and Microsoft Cloud App Security?
+
+This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure Active Directory (Azure AD).
 
 ## Microsoft Cloud App Security 
 
-Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls and enhanced threat protection to your cloud apps. With this service, you can gain visibility into Shadow IT by discovering cloud apps in use and you can control and protect data in the apps once you sanction them to the service. 
+Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. With this service, you can gain visibility into Shadow IT by discovering cloud apps in use. You can control and protect data in the apps once you sanction them to the service. 
 
 ## Enhanced Cloud App Discovery in Azure Active Directory
 
-[Azure Active Directory Cloud App Discovery](https://aka.ms/caddocsnew), a feature of Azure Active Directory Premium P1, is enhanced to provide deeper visibility into cloud app usage in your organizations. The upgraded experience is powered by Microsoft Cloud App Security, and is available at no additional cost. 
+[Azure Active Directory Cloud App Discovery](https://aka.ms/caddocsnew) is enhanced to provide deeper visibility into your organization's cloud app usage. Azure Active Directory Cloud App Discovery is a feature of Azure Active Directory Premium P1. The upgraded experience is powered by Microsoft Cloud App Security and is available at no additional cost. 
 
 ### Feature comparison
 
-The following is a comparison of the discovery capabilities in Microsoft Cloud App Security and Azure AD.
+The following table is a comparison of the discovery capabilities in Microsoft Cloud App Security and Azure AD.
 
 |Capability|Feature|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
@@ -51,7 +53,7 @@ The following is a comparison of the discovery capabilities in Microsoft Cloud A
 ||Ongoing analytics & reporting|Yes|Yes|
 ||Anomaly detection for discovered apps|Yes||
 
-## See Also  
+## Next steps 
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 
