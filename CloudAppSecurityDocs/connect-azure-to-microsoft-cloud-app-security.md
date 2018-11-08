@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -53,7 +53,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
 > After connecting Azure, data will be pulled. You will see data from then onwards.
 
 
-## See Also  
+## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
