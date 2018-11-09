@@ -30,7 +30,6 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-
 This article provides frequently asked questions and answers about Cloud App Security.
 
 ## What kind of permissions do I need to access Cloud App Security?
