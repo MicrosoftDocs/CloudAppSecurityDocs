@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/10/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,12 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-*Applies to: Microsoft Cloud App Security*
-
-
 # Configure automatic log upload for continuous reports
 
+*Applies to: Microsoft Cloud App Security*
 
 Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed, and transmitted to the portal. FTP logs are uploaded to Microsoft Cloud App Security after the file finished the FTP transfer to the Log Collector. For Syslog, the Log Collector writes the received logs to the disk. Then the collector uploads the file to Cloud App Security when the file size is larger than 40 KB. 
 

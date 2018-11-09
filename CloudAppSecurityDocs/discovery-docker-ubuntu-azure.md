@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/10/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Set up and configuration on Ubuntu
 
 *Applies to: Microsoft Cloud App Security*
 
-# Set up and configuration on Ubuntu
 You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu in Azure. This article describes how to set up the automatic log upload. 
 
 ## Technical requirements
@@ -80,7 +80,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      >[!NOTE]
      >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
-     f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. It is recommended to set up a dedicated data source per network device to enable you to:
+     f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. It's recommended to set up a dedicated data source per network device to enable you to:
      - Monitor the status of each device separately, for investigation purposes.
      - Explore Shadow IT Discovery per device, if each device is used by a different user segment.
 
@@ -171,8 +171,7 @@ Check the collector status in the **Log collector** table and make sure the st
 
  ![ubuntu9](./media/ubuntu9.png)
 
-You can also go to the **Governance log** and verify that logs are being
-periodically uploaded to the portal.
+You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 
 If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 

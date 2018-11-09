@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,17 +25,15 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-*Applies to: Microsoft Cloud App Security*
-
-
 # Working with discovered apps
 
-## Review the Cloud Discovery Dashboard
+*Applies to: Microsoft Cloud App Security*
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
 
 ![cloud discovery dashboard](./media/cloud-discovery-dashboard.png)
+
+## Review the Cloud Discovery Dashboard
 
 The first thing you should do to get a general picture of your Cloud Discovery apps is review the following information in the Cloud Discovery Dashboard:
  
