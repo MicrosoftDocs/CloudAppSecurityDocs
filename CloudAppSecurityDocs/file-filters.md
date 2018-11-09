@@ -45,11 +45,11 @@ Connect an app to Cloud App Security and go to the **Files** page. Filter for fi
 
 The basic filter provides you with great tools to get started filtering your files.
 
- ![basic file log filter](media/file-log-filter-basic.png)
+ ![basic file log filter](media/file-log-filter-basic-1.png)
 
 To drill down into more specific files, you can expand the basic filter by clicking Advanced.
 
- ![advanced file log filter](media/file-log-filter-advanced.png)
+ ![advanced file log filter](media/file-log-filter-advanced-1.png)
  
 ## <a name="Filefilters"></a> File filters
  
