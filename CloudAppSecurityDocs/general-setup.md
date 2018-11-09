@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 1/14/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,11 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+# Basic setup
 
 *Applies to: Microsoft Cloud App Security*
 
-# Basic setup
 The following procedure gives you instructions for customizing the Microsoft Cloud App Security portal.
 
 ## Prerequisites 
