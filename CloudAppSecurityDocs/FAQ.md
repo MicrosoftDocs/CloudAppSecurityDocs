@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/11/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,11 +26,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Frequently asked questions
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Frequently asked questions
 
 This article provides frequently asked questions and answers about Cloud App Security.
 

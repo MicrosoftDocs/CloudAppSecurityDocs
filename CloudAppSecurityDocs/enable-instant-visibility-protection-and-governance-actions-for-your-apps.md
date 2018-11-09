@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/11/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,11 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Connect apps 
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Connect apps 
 App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Cloud App Security over the apps you connect to.  
 
 Microsoft Cloud App Security leverages the APIs provided by the cloud provider. Each service has its own framework and API limitations such as throttling, API limits, dynamic time-shifting API windows, and others. Microsoft Cloud App Security worked with the services to optimize the usage of the APIs and to provide the best performance. Taking into account different limitations services impose on the APIs, the Cloud App Security engines use the allowed capacity. Some operations, such as scanning all files in the tenant, require numerous APIs so they're spread over a longer period. Expect some policies to run for several hours or several days.  

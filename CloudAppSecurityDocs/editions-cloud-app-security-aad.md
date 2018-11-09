@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/11/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -27,6 +27,8 @@ ms.suite: ems
 
 ---
 # What are the differences in discovery capabilities for Azure Active Directory and Microsoft Cloud App Security?
+
+*Applies to: Microsoft Cloud App Security*
 
 This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure Active Directory (Azure AD).
 
