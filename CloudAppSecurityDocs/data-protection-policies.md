@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create policies to monitor and protect files in your cloud apps | Microsoft Docs
-description: This topic describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
+description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# File policies  
 
 *Applies to: Microsoft Cloud App Security*
 
-# File policies  
 File Policies allow you to enforce a wide range of automated processes using the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases.  <br></br>
 
 Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,11 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Control
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Control
 You can apply governance actions to users' files across your cloud environment. After you've thoroughly investigated and learned about your cloud, you can use governance actions to help protect your organization.  
 
 ## Use policies to assess risk  

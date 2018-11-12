@@ -2,12 +2,12 @@
 # required metadata
 
 title: Working with Cloud App Security discovered app filters and queries | Microsoft Docs
-description: This topic provides a list of Cloud App Security discovered app filters and queries and explains how to work with them.
+description: This article provides a list of Cloud App Security discovered app filters and queries and explains how to work with them.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,10 +26,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Discovered app filters and queries
 
 *Applies to: Microsoft Cloud App Security*
 
-# Discovered app filters and queries
 When you have a large number of discovered apps, you'll find it useful to filter and query them. This article describes what filters are available and how to query your discovered apps.  
 
 ## Discovered app filters
