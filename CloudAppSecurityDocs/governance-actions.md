@@ -43,42 +43,42 @@ Governance actions are integrated actions you can run on files or activities dir
 
 The following governance actions can be taken for connected apps either on a specific file, user or from a specific policy.
 
--Notifications 
+- Notifications 
 
--Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level. 
+- Alerts – Alerts can be triggered in the system and propagated via email and text message, based on severity level. 
 
--User email notification – Email messages can be customized and will be sent to all violating file owners. 
+- User email notification – Email messages can be customized and will be sent to all violating file owners. 
 
--CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
+- CC manager – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
 
--Notify specific users – Specific list of email addresses that will receive these notifications. 
+- Notify specific users – Specific list of email addresses that will receive these notifications. 
 
--Notify last file editor – Send notifications to the last person who modified the file. 
+- Notify last file editor – Send notifications to the last person who modified the file. 
 
--Governance actions in apps 
+- Governance actions in apps 
 
  Granular actions can be enforced per app, specific actions vary depending on app terminology. 
 
--Change sharing 
+- Change sharing 
 
- -Remove public sharing – Allow access only to named collaborators, for example: Remove public access for G Suite and Remove direct shared link for Box. 
+ - Remove public sharing – Allow access only to named collaborators, for example: Remove public access for G Suite and Remove direct shared link for Box. 
 
- -Remove external users – Allow access only to company users. 
+ - Remove external users – Allow access only to company users. 
 
- -Make private – Only the owner can access the file, all shares are removed. 
+ - Make private – Only the owner can access the file, all shares are removed. 
 
- -Remove a collaborator – Remove a specific collaborator from the file. 
+ - Remove a collaborator – Remove a specific collaborator from the file. 
 
  - Reduce public access - Set Publicly available files to be available only with a shared link.
 
--Quarantine 
+- Quarantine 
 
- -Put in user quarantine – Allow self-service by moving the file to a user controlled quarantine folder 
+ - Put in user quarantine – Allow self-service by moving the file to a user controlled quarantine folder 
 
- -Put in admin quarantine – File is moved to quarantine in the admin drive, and the admin has to approve it. 
+ - Put in admin quarantine – File is moved to quarantine in the admin drive, and the admin has to approve it. 
 
--Inherit permissions from parent - This governance action enables you to remove specific permissions set for a file or folder in Office 365 and revert them to whatever permissions are set for the parent folder.
--Trash – Move the file to the trash folder.
+- Inherit permissions from parent - This governance action enables you to remove specific permissions set for a file or folder in Office 365 and revert them to whatever permissions are set for the parent folder.
+- Trash – Move the file to the trash folder.
 
 ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts") 
 
