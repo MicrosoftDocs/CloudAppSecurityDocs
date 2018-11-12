@@ -87,21 +87,21 @@ To make investigation even simpler, you can create custom queries and save them 
 
 Cloud App Security also provides you with **Suggested queries** and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your discovered apps by using the following optional suggested queries:
 
- - Cloud apps that allow anonymous use - filters all your discovered apps to display only apps that are security risks because they don't require user authentication and allow users to upload data.
+ - **Cloud apps that allow anonymous use** - filters all your discovered apps to display only apps that are security risks because they don't require user authentication and allow users to upload data.
 
- - Cloud apps that are CSA STAR certified - filters all your discovered apps to display only apps that have CSA STAR certification either by self-assessment, certification, attestation, or continuous monitoring.
+ - **Cloud apps that are CSA STAR certified** - filters all your discovered apps to display only apps that have CSA STAR certification either by self-assessment, certification, attestation, or continuous monitoring.
 
- - Cloud apps that are FedRAMP compliant - filters all your discovered apps to display only apps whose FedRAMP compliance risk factor is high, medium, or low. 
+ - **Cloud apps that are FedRAMP compliant** - filters all your discovered apps to display only apps whose FedRAMP compliance risk factor is high, medium, or low. 
 
- - Cloud storage and collaboration apps that own user data- filters all your discovered apps to display only apps that are risky because they don't allow you to have ownership over your data but they do retain your data.
+ - **Cloud storage and collaboration apps that own user data** - filters all your discovered apps to display only apps that are risky because they don't allow you to have ownership over your data but they do retain your data.
 
- - Cloud storage apps that are risky and non-compliant - filters all your discovered apps to display only apps in which they aren't SOC 2 or HIPAA compliant, they don't support PCI DSS version and they have a risk score of 5 or lower.
+ - **Cloud storage apps that are risky and non-compliant** - filters all your discovered apps to display only apps in which they aren't SOC 2 or HIPAA compliant, they don't support PCI DSS version and they have a risk score of 5 or lower.
 
- - Enterprise cloud apps that have weak authentication - filters all your discovered apps to display only apps that don't support SAML, have no password policy, and don't enable MFA.
+ - **Enterprise cloud apps that have weak authentication** - filters all your discovered apps to display only apps that don't support SAML, have no password policy, and don't enable MFA.
 
- - Enterprise cloud apps that have weak encryption - filters all your discovered apps to display only apps that are risky because they don't encrypt data-at-rest and don't support any encryption protocol.
+ - **Enterprise cloud apps that have weak encryption** - filters all your discovered apps to display only apps that are risky because they don't encrypt data-at-rest and don't support any encryption protocol.
 
-- GDPR ready cloud apps: filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren’t.
+- **GDPR ready cloud apps** - Filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren’t.
  
 ![query discovered apps](./media/queries-discovered-apps.png)
 

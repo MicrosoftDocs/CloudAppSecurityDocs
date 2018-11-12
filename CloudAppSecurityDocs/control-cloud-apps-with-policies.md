@@ -126,7 +126,9 @@ To create a policy based on investigation results, do the following steps:
   
      ![Create file from investigation](./media/create-file-from-investigation.png)  
   
-3. In the upper right corner of the console, click **New policy from search**.![New policy from search button](./media/new-policy-from-search-button.png)  
+3. In the upper right corner of the console, click **New policy from search**.
+
+     ![New policy from search button](./media/new-policy-from-search-button.png)
   
 4. A create policy page opens, containing the filters you used in your investigation.  
   

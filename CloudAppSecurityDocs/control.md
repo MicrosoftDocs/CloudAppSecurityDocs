@@ -59,9 +59,9 @@ After you take a look at your open alerts, go to the Policy center to review pol
 ## Apply governance actions  
 You can apply governance actions from within policies, from inside alerts, and from the **File** log.  
 
-At any point, you can review and see the status of all previously applied governance actions by going to the **Settings** cog ![settings icon](./media/settings-icon.png "settings icon") and choosing **Governance log**.  
+At any point, you can review and see the status of all previously applied governance actions by going to the **Settings** cog and choosing **Governance log**. ![settings icon](./media/settings-icon.png "settings icon")
 
-For any governance action that failed, choose the **Retry** icon ![Retry icon](./media/retry-icon.png "retry icon") to apply it again.  
+For any governance action that failed, choose the **Retry** icon to apply it again. ![Retry icon](./media/retry-icon.png "retry icon")   
 
 Depending on the type of policy, violation, and app, different governance actions are available.  
 
@@ -89,7 +89,7 @@ Imagine this scenario: you recently bought Office 365, and you want all the user
 
    1. In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.  
 
-   2. Choose the **Export** arrow icon ![Arrow icon](./media/arrow-icon.png "arrow icon") and choose your export options.  
+   2. Choose the **Export** arrow icon and choose your export options. ![Arrow icon](./media/arrow-icon.png "arrow icon")
 
 ### Find more secure alternatives  
 The Cloud App Security service catalog can help you find alternatives that work for your organization, instead of risky apps that your users might be using.  

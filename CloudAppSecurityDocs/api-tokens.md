@@ -81,7 +81,7 @@ After a token is revoked, it's removed from the table, and the software that was
 
 
 
-## See Also  
+## Next steps
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

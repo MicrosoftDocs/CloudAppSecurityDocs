@@ -29,44 +29,39 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-File Policies allow you to enforce a wide range of automated processes using the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases.  <br></br>
-
-Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 
+File Policies allow you to enforce a wide range of automated processes using the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 
  
-**Supported file types** 
+## Supported file types
 
 Cloud App Security's built in DLP engines perform content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
 
+## Policies 
 The engine combines three aspects under each policy:  
   
--   Content scan based on preset templates or custom expressions.  
+- Content scan based on preset templates or custom expressions.  
   
--   Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context, and additional customizable attributes.  
+- Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context, and additional customizable attributes.  
   
--   Automated actions for governance and remediation. For more information, see [Control](control.md).  
+- Automated actions for governance and remediation. For more information, see [Control](control.md).  
   
 Once enabled, the policy continuously scans your cloud environment and identifies files that match the content and context filters, and apply the requested automated actions. These policies detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console-generated reports.  
   
 The following are examples of file policies that can be created:  
   
--   Publicly shared files: <br></br>
-    Receive an alert about any file in your cloud that is publicly shared by selecting all files whose sharing level is public.  
+-  **Publicly shared files** - Receive an alert about any file in your cloud that is publicly shared by selecting all files whose sharing level is public.  
   
--   Publicly shared filename contains the organization’s name: <br></br> 
+- **Publicly shared filename contains the organization’s name** -
     Receive an alert about any file that contains your organization’s name and is publicly shared. Select files with a filename containing the name of your organization and which are publicly shared.  
   
--   Sharing with external domains:  <br></br>
-    Receive an alert about any file shared with accounts owned by specific external domains. For example, files shared with a competitor’s domain. Select the external domain with which you want to limit sharing.  
+- **Sharing with external domains** - Receive an alert about any file shared with accounts owned by specific external domains. For example, files shared with a competitor’s domain. Select the external domain with which you want to limit sharing.  
   
--   Quarantine shared files not modified during the last period:  <br></br>
-    Receive an alert about shared files that no one modified recently, to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren’t modified during a specified date range. On G Suite,  you can choose to quarantine these files, using the ‘quarantine file’ checkbox on the policy creation page.  
+- **Quarantine shared files not modified during the last period** - Receive an alert about shared files that no one modified recently, to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren’t modified during a specified date range. On G Suite, you can choose to quarantine these files, using the ‘quarantine file’ checkbox on the policy creation page.  
   
--   Sharing with unauthorized users:  <br></br>
-    Receive an alert about files shared with unauthorized group of users in your organization. Select the users for whom sharing is unauthorized.  
+- **Sharing with unauthorized users** - Receive an alert about files shared with unauthorized group of users in your organization. Select the users for whom sharing is unauthorized.  
   
--   Sensitive file extension:  <br></br>
-    Receive an alert about files with specific extensions that are potentially highly exposed. Select the specific extension (for example, crt for certificates) or filename and exclude those files with private sharing level.  
-  
+- **Sensitive file extension** - Receive an alert about files with specific extensions that are potentially highly exposed. Select the specific extension (for example, crt for certificates) or filename and exclude those files with private sharing level.  
+
+## Create a new file policy  
 To create a new file policy, follow this procedure:  
   
 1. In the console, click on **Control** followed by **Policies**.  
@@ -107,15 +102,13 @@ A **File policy** is an API-based policy that enables you to control your organi
   
 Each policy is composed of the following parts:  
   
--   File filters – Enable you to create granular conditions based on metadata.  
+- File filters – Enable you to create granular conditions based on metadata.  
   
--   Content inspection – Enable you to narrow down the policy, based on DLP engine results. You can include a custom expression or a preset expression. Exclusions can be set and you can choose the number of matches. You can also use anonymization to mask the username. 
+- Content inspection – Enable you to narrow down the policy, based on DLP engine results. You can include a custom expression or a preset expression. Exclusions can be set and you can choose the number of matches. You can also use anonymization to mask the username. 
   
--   Actions – The policy provides a set of governance actions that can be automatically applied when violations are found.  These actions are divided into collaboration actions, security actions, and investigation actions.
+- Actions – The policy provides a set of governance actions that can be automatically applied when violations are found.  These actions are divided into collaboration actions, security actions, and investigation actions.
 
--   Extensions  
-   
-    -  Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
+-   Extensions - Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
 
   
 ## Next steps 
