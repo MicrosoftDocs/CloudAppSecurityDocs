@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/10/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,19 +25,15 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Configure automatic log upload for continuous reports
 
 *Applies to: Microsoft Cloud App Security*
 
+Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed, and transmitted to the portal. FTP logs are uploaded to Microsoft Cloud App Security after the file finished the FTP transfer to the Log Collector. For Syslog, the Log Collector writes the received logs to the disk. Then the collector uploads the file to Cloud App Security when the file size is larger than 40 KB. 
 
-# Configure automatic log upload for continuous reports
+After a log is uploaded to Cloud App Security, it's moved to a backup directory. The backup directory stores the last 20 logs. When new logs arrive, the old ones are deleted. Whenever the log collector disk space is full, the log collector drops new logs until it has more free disk space. You'll receive a warning on the **Log collectors** tab of the **Upload logs automatically** settings when this happens.
 
-
-Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP. Each log is automatically processed, compressed and transmitted to the portal. FTP
-logs are uploaded to Microsoft Cloud App Security after the file finished the FTP transfer to the Log Collector. For Syslog, the Log Collector writes the logs received to the disk and uploads the file to Cloud App Security when the file size is larger than 40 KB. 
-
-After a log is uploaded to Cloud App Security, it is moved to a backup directory that stores the last 20 logs at any given moment. When new logs arrive, the old ones are deleted. When the log collector disk space is full, the log collector drops new logs until it has more free disk space. When this happens you will receive a warning on the **Log collectors** tab of the **Upload logs automatically** settings.
-
-Before setting up automatic log file collection, verify that your log matches the expected log type, to make sure Cloud App Security can parse your specific file, in [Using traffic logs for Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
+Before setting up automatic log file collection, verify your log matches the expected log type. You want to make sure Cloud App Security can parse your specific file. For more information, see [Using traffic logs for Cloud Discovery](create-snapshot-cloud-discovery-reports.md#log-format).
 
 
 > [!NOTE]
@@ -57,7 +53,7 @@ The Log Collector supports two deployment modes:
 
 
 
-## See also
+## Next steps
  
 [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 

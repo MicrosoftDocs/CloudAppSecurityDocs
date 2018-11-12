@@ -2,12 +2,12 @@
 # required metadata
 
 title: Connect apps to get deep visibility and control with Cloud App Security | Microsoft Docs
-description: This topic describes the process for connecting apps with API connectors to apps in your organization's cloud.
+description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,58 +25,44 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Connect apps 
 
 *Applies to: Microsoft Cloud App Security*
 
+App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Cloud App Security over the apps you connect to.  
 
-# Connect apps 
-App connectors leverage the APIs of app providers to enable greater visibility and control by Microsoft Cloud App Security over the apps you connect to.  
-
-Microsoft Cloud App Security leverages the APIs provided by the cloud provider, each service has its own framework and API limitations. Microsoft Cloud App Security worked with the services to optimize the usage of the APIs and to ensure the best performance. Taking into account the different limitations the services impose on the APIs (such as throttling, API limits, dynamic time-shifting API windows, etc.), the Cloud App Security engines leverage the allowed capacity. Some operations, such as scanning of all files in the tenant, require a large amount of APIs and therefore are spread over a longer period. Expect some policies to run for several hours or several days.  
+Microsoft Cloud App Security leverages the APIs provided by the cloud provider. Each service has its own framework and API limitations such as throttling, API limits, dynamic time-shifting API windows, and others. Microsoft Cloud App Security worked with the services to optimize the usage of the APIs and to provide the best performance. Taking into account different limitations services impose on the APIs, the Cloud App Security engines use the allowed capacity. Some operations, such as scanning all files in the tenant, require numerous APIs so they're spread over a longer period. Expect some policies to run for several hours or several days.  
 
 ## Multi-instance support
 
-Cloud App Security supports multiple instances of the same connected app. If you have multiple instances of, for example, Salesforce (one for sales, one for marketing) you will be able to connect them both to Cloud App Security and manage them from the same console to create granular policies and deeper investigation. This support applies only to API connected apps, not to Cloud Discovered apps or Proxy connected apps.
+Cloud App Security supports multiple instances of the same connected app. For example, if you have more than one instance of Salesforce (one for sales, one for marketing) you can connect both to Cloud App Security. You can manage the different instances from the same console to create granular policies and deeper investigation. This support applies only to API connected apps, not to Cloud Discovered apps or Proxy connected apps.
 
 ## How it works  
 Cloud App Security is deployed with system admin privileges to allow full access to all objects in your environment.  
 
 The App Connector flow is as follows:
-1. Cloud App Security scans and saves Authentication permissions.
-2.  Cloud App Security requests the user list. The first time this is performed, it may take some time until the scan completes. After the user scan is over, Cloud App Security moves on to activities and files. As soon as the scan starts, some activities will be available in Cloud App Security. 
-4. After completion of the user request, Cloud App Security periodically scans users, groups, activities and files. All activities will be available after the first full scan. 
 
-This may take some time, depending on the size of the tenant, the number of users and the size and number of files that need to be scanned. 
+1. Cloud App Security scans and saves authentication permissions.
+2. Cloud App Security requests the user list. The first time the request is done, it may take some time until the scan completes. After the user scan is over, Cloud App Security moves on to activities and files. As soon as the scan starts, some activities will be available in Cloud App Security.
+3. After completion of the user request, Cloud App Security periodically scans users, groups, activities, and files. All activities will be available after the first full scan.
 
-Depending on the app you are connecting to (see table, below) API connection enables the following:  
+This connection may take some time depending on the size of the tenant, the number of users, and the size and number of files that need to be scanned. 
 
--   **Account information:**  
+Depending on the app to which you're connecting, API connection enables the following items:  
 
-     Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.  
+- **Account information** - Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.  
 
--   **Audit trail:**  
+- **Audit trail** - Visibility into user activities, admin activities, sign in activity.  
 
-     Visibility into user activities, admin activities, log on activity.  
+- **Data scan** - Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time scan (triggered each time a change is detected).  
 
--   **Data scan:**  
+- **App permissions** - Visibility into issued tokens and their permissions.  
 
-     Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time scan (triggered each time a change is detected).  
+- **Account governance** - Ability to suspend users, revoke passwords, etc.  
 
--   **App permissions:**  
+- **Data Governance** - Ability to quarantine files, including files in trash, and overwrite files.  
 
-     Visibility into issued tokens and their permissions.  
-
--   **Account governance:**  
-
-     Ability to suspend users, revoke passwords, etc.  
-
--   **Data Governance:**  
-
-     Ability to quarantine files, including files in trash, and overwrite files.  
-
--   **App permission governance:**  
-
-     Ability to remove tokens.  
+- **App permission governance** - Ability to remove tokens.  
 
 The following table lists, per cloud app, which abilities are supported with App connectors:  
 
@@ -101,18 +87,18 @@ The following table lists, per cloud app, which abilities are supported with App
 
 ## Prerequisites  
 
-- For some apps, it may be necessary to white list IP addresses to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. For more information see [Network requirements](network-requirements.md).
+- For some apps, it may be necessary to white list IP addresses to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. For more information, see [Network requirements](network-requirements.md).
 
 - For each app that you want to connect with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.  
 
 > [!NOTE]  
 >  To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).  
 
-To use App Connectors, you need to make sure you have the following for each specific app:  
+To use App Connectors, you need to make sure you have the following things for each specific app:  
 
 |App|License type|User|  
 |---------|------------------|----------|  
-|Box|Enterprise|It is strongly recommended that you connect to Box as an Admin. Connecting as a Co-admin will result in only partial data visibility. If you connect as a Co-admin, make sure to select all permissions.|  
+|Box|Enterprise|It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions.|  
 |G Suite|G Suite Unlimited preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|  
 |Office 365||Global Admin|  
 |AWS||Newly created user|  
@@ -123,16 +109,17 @@ To use App Connectors, you need to make sure you have the following for each spe
 |Salesforce||Admin|  
 
 
-**ExpressRoute**  
+**ExpressRoute**
 
-Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.  
 For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
 
-## See Also  
+## Next steps
+ 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
 
-
 ## Check out this video!
+
 [Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
