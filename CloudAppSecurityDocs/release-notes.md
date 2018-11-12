@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,36 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+
+## Cloud App Security release 136
+
+Released November 11, 2018
+
+
+- **Cloud Discovery updates**<br>
+The custom log parser was enhanced to support additional and more complex web traffic logs formats. As part of these enhancements users can now input custom headers for headerless CSV log files, use special delimiters for key-value files, process Syslog file format, and more.
+- **New anomaly detection policies**<br>
+Suspicious inbox manipulation rules: This policy profiles your environment and triggers alerts when suspicious rules that delete or move messages or folders are set on a user's inbox. This may indicate that the user’s account is compromised, that messages are being intentionally hidden, and that the mailbox is being used to distribute spam or malware in your organization.
+- **Support for groups in app permission policies**<br>
+Cloud App Security now gives you the ability to define app permission policies more granularly, based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
+- **Conditional Access App Control now integrates with your on-prem apps via Azure Active Directory Application Proxy**
+  - The [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-prem.
+  - These on-prem web apps can now be routed to Microsoft Cloud App Security via Azure AD conditional access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
+
+
+## Cloud App Security release 133, 134, 135
+
+Released October, 2018
+
+**New anomaly detection policies being gradually rolled out**
+- The new Data exfiltration to unsanctioned apps policy is automatically enabled to alert you when a user or IP address uses an app that is not sanctioned to perform an activity that resembles an attempt to exfiltrate information from your organization.
+- The new Multiple delete VM activities policy profiles your environment and triggers alerts when users delete multiple VMs in a single session, relative to the baseline in your organization.
+
+**Data classification service available for APAC**
+- Data classification service content inspection is now available for APAC customers. For a list of full regional support, see [Microsoft Data Classification Services integration](dcs-inspection.md).
+
+**Cloud Discovery support for i-Filter**
+-  The Cloud App Security Cloud Discovery feature now has enhanced support for the i-Filter syslog parser.
 
 ## Cloud App Security release 132
 
