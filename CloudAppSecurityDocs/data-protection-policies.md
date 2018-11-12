@@ -31,7 +31,7 @@ ms.suite: ems
 
 File Policies allow you to enforce a wide range of automated processes using the cloud provider’s APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). 
  
-## Supported file types
+**Supported file types**
 
 Cloud App Security's built in DLP engines perform content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
 
@@ -102,13 +102,13 @@ A **File policy** is an API-based policy that enables you to control your organi
   
 Each policy is composed of the following parts:  
   
-- File filters – Enable you to create granular conditions based on metadata.  
+- **File filters** – Enable you to create granular conditions based on metadata.  
   
-- Content inspection – Enable you to narrow down the policy, based on DLP engine results. You can include a custom expression or a preset expression. Exclusions can be set and you can choose the number of matches. You can also use anonymization to mask the username. 
+- **Content inspection** – Enable you to narrow down the policy, based on DLP engine results. You can include a custom expression or a preset expression. Exclusions can be set and you can choose the number of matches. You can also use anonymization to mask the username. 
   
-- Actions – The policy provides a set of governance actions that can be automatically applied when violations are found.  These actions are divided into collaboration actions, security actions, and investigation actions.
+- **Actions** – The policy provides a set of governance actions that can be automatically applied when violations are found.  These actions are divided into collaboration actions, security actions, and investigation actions.
 
--   Extensions - Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
+- **Extensions** - Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
 
   
 ## Next steps 
