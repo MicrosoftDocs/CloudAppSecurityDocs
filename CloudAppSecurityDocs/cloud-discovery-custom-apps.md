@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Add custom apps to Cloud Discovery
 
 *Applies to: Microsoft Cloud App Security*
-
-# Add custom apps to Cloud Discovery
     
 Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog. Over 16,000 cloud apps are in the cloud app catalog. The catalog contains publicly available cloud apps only, for which Cloud App Security provides visibility and risk information.
 

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,11 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Cloud Discovery policies
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Cloud Discovery policies
 You can create app discovery policies to alert you when new apps are detected. Cloud App Security also searches all the logs in your Cloud Discovery for anomalies. 
 
 ## Creating an app discovery policy  

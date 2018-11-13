@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -95,7 +95,8 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
 
-If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> [!NOTE]
+> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## App connector
 
