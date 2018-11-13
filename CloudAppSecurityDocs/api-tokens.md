@@ -2,12 +2,12 @@
 # required metadata
 
 title: API token management in Cloud App Security | Microsoft Docs
-description: This topic provides information about generating API tokens for Cloud App Security.
+description: This article provides information about generating API tokens for Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,11 +26,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# API tokens
+
 *Applies to: Microsoft Cloud App Security*
 
-
-# API tokens
-    
 The Microsoft Cloud App Security API provides programmatic access to Cloud App Security through REST API endpoints. Applications can use the API to perform read and update operations on Cloud App Security data and objects. For example, the Cloud App Security API supports the following common operations for a user object:
 
 - Upload log files for Cloud Discovery
@@ -82,7 +81,7 @@ After a token is revoked, it's removed from the table, and the software that was
 
 
 
-## See Also  
+## Next steps
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

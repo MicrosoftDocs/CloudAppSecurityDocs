@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,9 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Admin user settings
+
 *Applies to: Microsoft Cloud App Security*
 
-# Admin user settings
 Microsoft Cloud App Security allows you to customize your admin user settings. The notification settings allow admins to specify if they would like to receive email or text notifications for alerts. 
 
 ##  <a name="Adminsettings"></a> Customize your admin settings  

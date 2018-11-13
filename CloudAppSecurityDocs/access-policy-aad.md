@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create Cloud App Security access policies to allow and block access | Microsoft Docs
-description: This topic describes the procedure for setting up a Cloud App Security Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
+description: This article describes the procedure for setting up a Cloud App Security Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,19 +25,16 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-*Applies to: Microsoft Cloud App Security*
-
 # Access policies 
 
-
+*Applies to: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« PREVIOUS: How to create a session policy](session-policy-aad.md)<br>
 [NEXT: Explore popular use cases »](use-case-proxy-block-session-aad.md)
 
 
-Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device and app. You can create access policies for any device, including devices that are not domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by leveraging existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
+Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
 
 > [!NOTE]
 > Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities. 
@@ -60,7 +57,7 @@ Azure Active Directory conditional access policies and Cloud App Security sessio
    > [!NOTE]
    > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
 
-2. Route users to Microsoft Cloud App Security by selecting the **Use Conditional Access App Control enforced restrictions** in the **Session** blade.
+2. Route users to Microsoft Cloud App Security by selecting the **Use Conditional Access App Control enforced restrictions** under **Session**.
  
 ## Create a Cloud App Security access policy 
 
@@ -71,7 +68,7 @@ To create a new access policy, follow this procedure:
 
 3. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
 
-4. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These can include the following options: 
+4. In the **Activities matching all of the following** section, Under **Activity source**, select additional activity filters to apply to the policy. Filters include the following options: 
      
    - **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -79,9 +76,9 @@ To create a new access policy, follow this procedure:
 
    - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
 
-   - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal **Native client** and should be tested against your mobile and desktop apps for each cloud app.
+   - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal. The values should be tested against your mobile and desktop apps for each cloud app.
   
-5. Under **Actions**, select one of the following: 
+5. Under **Actions**, select one of the following options: 
 
     - **Allow**: Set this action to explicitly allow access according to the policy filters you set.
 
@@ -96,7 +93,7 @@ To create a new access policy, follow this procedure:
 [NEXT: Explore popular use cases »](use-case-proxy-block-session-aad.md)
 
  
-## See Also  
+## Next steps  
 [Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
