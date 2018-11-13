@@ -39,20 +39,19 @@ Your organization must have a license to use Cloud App Security. For more inform
 
 ## Prerequisites  
   
-- Your organization must have a license for Cloud App Security to use the product. For more information see the [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) section on the Cloud App Security home page.  
+- Your organization must have a license for Cloud App Security to use the product. For more information, see the [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) section on the Cloud App Security home page.  
   
      For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  
-- After you have procured a license for Cloud App Security, you will receive an email with activation information and a link to the Cloud App Security portal.  
+- After you have a license for Cloud App Security, you'll receive an email with activation information and a link to the Cloud App Security portal.  
   
-- To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator or a Security Reader in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to, regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
+- To set up Cloud App Security, you must be a Global Administrator, a Compliance Administrator, or a Security Reader in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Office 365 portal, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).  
   
--   To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest) or Apple Safari (latest).  
+- To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest).  
 
 ## To access the portal
 
 To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).  
-  
-Alternatively, you can access the portal through the **Office 365 Admin center** by clicking the Admin centers icon ![O365 admin centers icon](./media/o365-admin-centers-icon.png "O365 admin centers icon") followed by **Cloud App Security**.  
+You can also access the portal through the **Office 365 Admin center** by clicking the Admin centers icon. ![O365 admin centers icon](./media/o365-admin-centers-icon.png "O365 admin centers icon") Then select **Cloud App Security**.  
   
 ![Access from O365](./media/access-from-o365.png "Access from O365")  
   
@@ -108,7 +107,7 @@ Required task: Enable Cloud App Security to view your cloud app use
 
 **Why should you configure Cloud Discovery reports?**
 Having visibility into shadow IT in your organization is critical.
-After your logs are analyzed, you can easily discover which cloud apps are being used, by which people, and on which devices.
+After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
 ### Step 4. [Personalize your experience](mail-settings.md).
 Recommended task: Add your organization details
@@ -135,8 +134,8 @@ Recommended task: Add your organization details
 Now the risk scores given to discovered apps are configured precisely according to your organization needs and priorities.
 
 **Why personalize your environment?**
-Some features work best when they are customized to your needs. 
-Provide a better experience for your users with your own email templates, decide what notifications you receive, and customize your risk score metric to fit your organization’s preferences.
+Some features work best when they're customized to your needs. 
+Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization’s preferences.
 
 
 ### Step 5. [Organize the data according to your needs](ip-tags.md).
