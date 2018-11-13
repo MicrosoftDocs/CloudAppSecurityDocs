@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,11 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+# Working with the dashboard
 
 *Applies to: Microsoft Cloud App Security*
 
-# Working with the dashboard
 This article describes what you should do with Cloud App Security daily.  After you get Microsoft Cloud App Security up and running, you'll need to:
 
 - Configure data streams
