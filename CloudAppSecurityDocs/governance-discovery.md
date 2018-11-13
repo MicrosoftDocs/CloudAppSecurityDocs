@@ -32,7 +32,7 @@ ms.suite: ems
 After you've reviewed the list of discovered apps in your environment, you can secure your environment against unwanted app use in the following ways.
 
 
-## Sanctioning/unsanctioning an app 
+## <a name="govern-discovered-apps"></a> Sanctioning/unsanctioning an app 
 
 You can unsanction a specific risky app by clicking the three dots at the end of the row. Then select **Unsanction**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use.
 
