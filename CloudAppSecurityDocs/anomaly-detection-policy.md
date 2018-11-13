@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create anomaly detection policies in Cloud App Security | Microsoft Docs
-description: This topic provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
+description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/13/2018
 
 ms.topic: conceptual
 ms.prod:
@@ -26,11 +26,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-*Applies to: Microsoft Cloud App Security*
-
  
 # Get instantaneous behavioral analytics and anomaly detection
+
+*Applies to: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you can immediately run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies provide immediate results by providing immediate detections, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network.  In addition, the new policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats. 
 

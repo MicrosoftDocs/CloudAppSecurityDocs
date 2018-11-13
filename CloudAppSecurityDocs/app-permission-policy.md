@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create policies to control app permissions in Cloud App Security | Microsoft Docs
-description: This topic provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
+description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -25,10 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
-
 # App permission policies
+
+*Applies to: Microsoft Cloud App Security*
 
 In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies to so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. 
 

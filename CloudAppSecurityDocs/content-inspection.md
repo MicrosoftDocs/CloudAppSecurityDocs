@@ -2,12 +2,12 @@
 # required metadata
 
 title: How Cloud App Security performs content inspection  | Microsoft Docs
-description: his article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
+description: This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,13 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+# Built-in content inspection
 
 *Applies to: Microsoft Cloud App Security*
-
-
-
-# Built-in content inspection
 
 This article describes the process Microsoft Cloud App Security follows when running the built-in DLP content inspection on data in your cloud. 
 

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Visibility into cloud app activities | Microsoft Docs
-description: This topic provides a list of activities, filters and match parameters that can be applied to activity policies.
+description: This article provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,11 +26,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Activities
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Activities
 Microsoft Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it's updated constantly with new activities. 
 
 > [!NOTE] 

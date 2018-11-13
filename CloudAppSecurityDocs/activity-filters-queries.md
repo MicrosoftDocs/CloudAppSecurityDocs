@@ -2,12 +2,12 @@
 # required metadata
 
 title: Working with Cloud App Security activity filters and queries | Microsoft Docs
-description: This topic provides a list of Cloud App Security activity filters and queries and explains how to work with them.
+description: This article provides a list of Cloud App Security activity filters and queries and explains how to work with them.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,11 +26,11 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Activity filters and queries
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Activity filters and queries
+This article provides descriptions and instructions for Cloud App Security activity filters and queries.
 
 ## Activity filters
 
