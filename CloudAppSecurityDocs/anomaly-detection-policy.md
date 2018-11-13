@@ -89,6 +89,9 @@ This detection takes advantage of Cloud App Security's ability to monitor user b
 > [!NOTE]
 > Cloud App Security only alerts you for each forwarding rule that is identified as suspicious, based on the typical behavior for the user. 
 
+**Suspicious inbox manipulation rules**
+- This detection profiles your environment and triggers alerts when suspicious rules that delete or move messages or folders are set on a user's inbox. This may indicate that the user’s account is compromised, that messages are being intentionally hidden, and that the mailbox is being used to distribute spam or malware in your organization.
+
 **Unusual activities (by user)**<br>
 These detections identify users who perform:
 
