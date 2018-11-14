@@ -2,12 +2,12 @@
 # required metadata
 
 title: Connect G Suite to Cloud App Security for visibility and control over use | Microsoft Docs
-description: This topic provides information about how to connect your G Suite to Cloud App Security using the API connector.
+description: This article provides information about how to connect your G Suite to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,12 +25,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Connect G Suite to Microsoft Cloud App Security
+
 *Applies to: Microsoft Cloud App Security*
 
-# Connect G Suite to Microsoft Cloud App Security
-This section provides instructions for connecting Microsoft Cloud App Security to your existing G Suite account using the connector APIs.
-  
-  
+This article provides instructions for connecting Microsoft Cloud App Security to your existing G Suite account using the connector APIs.
+    
 ## Configure G Suite  
   
 1. As a G Suite Super Admin, sign in to <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.  
@@ -59,7 +59,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
    -   Google Drive API  
   
-   -   Apps Marketplace SDK  
+   -   G Suite Marketplace SDK  
   
    -   Gmail API  
             
@@ -82,7 +82,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
     - Click **Save**.  
   
-      ![Google product name](./media/google6.png "google6")  
+      ![Google oauth consent](./media/google-oauth-consent.png "google oauth conesent")  
   
 11. In the **Credentials** tab, click the arrow next to **Create credentials**.  
   
@@ -131,7 +131,7 @@ This section provides instructions for connecting Microsoft Cloud App Security t
 
 21. Click **Save changes**.
 
-22. Go back to the **Enabled APIs** list. Click **Apps Marketplace SDK**. 
+22. Go back to the **Enabled APIs** list. Click **G Suite Marketplace SDK**. 
       
 23. Select the **Configuration** tab. 
   
@@ -139,8 +139,11 @@ This section provides instructions for connecting Microsoft Cloud App Security t
   
     -   Under **Application Name** type **Microsoft Cloud App Security**.
   
-         In **Application description** type "Microsoft Cloud App Security provides visibility into cloud apps, helping you control, investigate, and govern cloud app use; secure corporate data; and detect suspicious activities for any cloud app."  
-  
+         In **Application description** type "Microsoft Cloud App Security provides visibility into cloud apps, helping you control, investigate, and govern cloud app use; secure corporate data; and detect suspicious activities for any cloud app." 
+    - Make sure to click **Done** in the **New item** window.      
+     
+       ![google new item](./media/google-new-item.png "google new item")  
+
     -   Uncheck the **Enable individual install** check box.  
   
     -   Configure the four required images under **Application icons**.  

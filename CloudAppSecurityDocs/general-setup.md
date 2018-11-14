@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,15 +25,14 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+# Basic setup
 
 *Applies to: Microsoft Cloud App Security*
 
-# Basic setup
 The following procedure gives you instructions for customizing the Microsoft Cloud App Security portal.
 
 ## Prerequisites 
-For portal access, it is necessary to add the following IP addresses to your Firewall's whitelist to provide access for the Cloud App Security portal:  
+For portal access, it's necessary to add the following IP addresses to your Firewall's whitelist to provide access for the Cloud App Security portal:  
   
 - 104.42.231.28  
   
@@ -44,20 +43,19 @@ For portal access, it is necessary to add the following IP addresses to your Fir
   
 1. In the Cloud App Security portal, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.     
 
-2. Under **Organization details**, it is important that you provide an **Organization display name** for your organization. It is displayed on emails and web pages sent from the system.  
+2. Under **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.  
   
-3. Provide an **Environment name** (tenant). This is especially important if you manage multiple tenants.  
+3. Provide an **Environment name** (tenant). This information is especially important if you manage more than one tenant.  
   
-4. It is also possible to provide a **Logo** that is displayed in email notifications sent from the system and on web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
+4. It's also possible to provide a **Logo** that is displayed in email notifications and web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.  
 
-5. Make sure you add a list of your **Managed domains**. This is a crucial step because Cloud App Security uses the managed domains to determine which users are internal, which are external, and where files should and shouldn't be shared. This is used for reports as well as alerts.  
-   > [!NOTE] 
-   > - Users in domains that are not configured as internal are marked as external and are not scanned for activities or files.
+5. Make sure you add a list of your **Managed domains**. Adding managed domains is a crucial step. Cloud App Security uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.  
+   
+    - Users in domains that aren't configured as internal are marked as external. External users aren't scanned for activities or files.
 
-6. If you are integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for information. 
+6. If you're integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for information. 
 
-   >[!NOTE]
-   > To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    - To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
   
 7. If at any point you want to back up your portal settings, this screen enables you to do that. Click **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.  
   
@@ -65,7 +63,7 @@ For portal access, it is necessary to add the following IP addresses to your Fir
 > [!NOTE] 
 > If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side. <br></br>For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
-## See Also  
+## Next steps  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

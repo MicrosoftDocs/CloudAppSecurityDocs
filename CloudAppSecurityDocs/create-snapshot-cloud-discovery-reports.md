@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Create snapshot Cloud Discovery reports
+
 *Applies to: Microsoft Cloud App Security*
 
-
-# Create snapshot Cloud Discovery reports
 It's important to upload a log manually and let Microsoft Cloud App Security parse it before trying to use the automatic log collector. For information on how the log collector works and the expected log format, see [Using traffic logs for Cloud Discovery](#log-format).
 
 If you don't have a log yet and you want to see an example of what your log should look like, download a sample log file. Follow the procedure below to see what your log should look like.

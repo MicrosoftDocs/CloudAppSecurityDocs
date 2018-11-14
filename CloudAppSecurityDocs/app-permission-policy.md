@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create policies to control app permissions in Cloud App Security | Microsoft Docs
-description: This topic provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
+description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,10 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
-
 # App permission policies
+
+*Applies to: Microsoft Cloud App Security*
 
 In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies to so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. 
 
@@ -44,6 +43,7 @@ To create a new app permission policy:
 3. Click the **New policy from search** button. 
     ![new policy from search](./media/app-permissions-filter.png)
 4. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users. 
+5. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
 
 Alternatively, you can also create the policy by clicking **Control** followed by **Policies**. Then click **Create policy** followed by **App permission policy**.
 
