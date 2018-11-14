@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -92,8 +92,7 @@ The device identification mechanism can request authentication from relevant dev
  
 ## Supported apps and clients
 
-Conditional Access App Control currently supports apps that are configured with SAML and Open ID Connect apps with single sign-on in Azure AD. 
-
+Conditional Access App Control currently supports SAML and Open ID Connect apps configured with single sign-on, as well as web apps hosted on-prem configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 > [!NOTE]
 > Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
 

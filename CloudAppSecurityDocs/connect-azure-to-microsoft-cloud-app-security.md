@@ -2,12 +2,12 @@
 # required metadata
 
 title: Connect Azure to Cloud App Security for visibility and control over use | Microsoft Docs
-description: This topic provides information about how to connect Azure to Cloud App Security using the API connector.
+description: This article provides information about how to connect Azure to Cloud App Security using the API connector.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,13 +26,11 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Connect Azure to Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Connect Azure to Microsoft Cloud App Security
-
-This section provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API.  
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API.  
   
 ## How to connect Azure to Cloud App Security  
   

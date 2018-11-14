@@ -2,12 +2,13 @@
 # required metadata
 
 title: Create anomaly detection policies in Cloud App Security | Microsoft Docs
-description: This topic provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
+description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
+
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,11 +26,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
-*Applies to: Microsoft Cloud App Security*
-
  
 # Get instantaneous behavioral analytics and anomaly detection
+
+*Applies to: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you can immediately run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies provide immediate results by providing immediate detections, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network.  In addition, the new policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats. 
 
@@ -84,6 +84,12 @@ This detection takes advantage of Cloud App Security's ability to monitor user b
 **Suspicious inbox forwarding**
 
 - This detection looks for suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address. 
+ 
+> [!NOTE]
+> Cloud App Security only alerts you for each forwarding rule that is identified as suspicious, based on the typical behavior for the user. 
+
+**Suspicious inbox manipulation rules**
+- This detection profiles your environment and triggers alerts when suspicious rules that delete or move messages or folders are set on a user's inbox. This may indicate that the user’s account is compromised, that messages are being intentionally hidden, and that the mailbox is being used to distribute spam or malware in your organization.
 
 **Unusual activities (by user)**<br>
 These detections identify users who perform:
@@ -98,6 +104,13 @@ These policies look for activities within a single session with respect to the b
 
 **Multiple failed login attempts**
 - This detection identifies users that failed multiple login attempts in a single session with respect to the baseline learned, which could indicate on a breach attempt. 
+
+**Data exfiltration to unsanctioned apps**
+- This policy is automatically enabled to alert you when a user or IP address uses an app that is not sanctioned to perform an activity that resembles an attempt to exfiltrate information from your organization.
+
+**Multiple delete VM activities**
+- This policy profiles your environment and triggers alerts when users delete multiple VMs in a single session, relative to the baseline in your organization. This might indicate an attempted breach.
+
 
 ## Enable automated governance<a name="adp-automated-gov"></a>
 
