@@ -63,7 +63,7 @@ The following governance actions can be taken for connected apps either on a spe
 
        - **Remove a collaborator** – Remove a specific collaborator from the file. 
 
-       - ***Reduce public access** - Set Publicly available files to be available only with a shared link.
+       - **Reduce public access** - Set Publicly available files to be available only with a shared link.
 
   - **Quarantine** 
 
