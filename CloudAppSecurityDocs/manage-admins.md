@@ -109,7 +109,7 @@ You can add additional admins to Cloud App Security without adding users to Azur
 
 Microsoft Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Microsoft Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Microsoft Cloud App Security. Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. 
 
-To switch between tenants, after you have permissions to multiple tenants, click the user icon ![user icon](./media/user-icon.png "user icon"). You should see a list of the tenants for which you have permissions. Select the tenant you want to manage.
+To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
 ![choose tenant](./media/choose-tenant.png "choose tenant")
 
