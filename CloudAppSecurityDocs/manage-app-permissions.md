@@ -62,17 +62,17 @@ The App permissions page provides the following information about each third-par
 
 ## Ban or approve an app
 
-1. On the App permissions page, click on the app to open the App drawer to view more information about the app and the permissions it was granted.
+1. On the **App permissions** page, click on the app to open the **App drawer** to view more information about the app and the permissions it was granted.
    
-   - Click on the Permissions link to view a full list of permissions that were granted to the app. 
-   - Under Community use, you can view how common the app is in other organizations.  
-   - Click the Relate activity link to view the activities that are listed in the governance log related to this app.
+   - Click on the **Permissions** link to view a full list of permissions that were granted to the app. 
+   - Under **Community use**, you can view how common the app is in other organizations.  
+   - Click the **Related activity** link to view the activities that are listed in the governance log related to this app.
 
 2. To ban the app, click on the ban icon at the end of the app row in the table.
    
      ![ban app icon](./media/ban-app-icon.png) 
 
-    - You can choose if you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the Ban the app dialog. 
+    - You can choose if you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog. 
     - It's recommended that you let the app users know their app is about to be banned from use.
 
       ![ban app](./media/ban-app.png)

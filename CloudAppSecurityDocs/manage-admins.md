@@ -54,29 +54,29 @@ By default, the following Office 365 and Azure AD admin roles have access to Mic
 
 - **App/instance admin:** Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts, as follows:
 
-  - Activities page - only activities about the specific app
-  - Alerts - only alerts relating to the specific app
-  - Policies - can view all policies and can edit or create only policies that deal exclusively with the app/instance
-  - Account - only accounts for the specific app/instance
-  - App permissions - only permissions for the specific app/instance
-  - Files page - only files from the specific app/instance
+  - Activities page - Only activities about the specific app
+  - Alerts - Only alerts relating to the specific app
+  - Policies - Can view all policies and can edit or create only policies that deal exclusively with the app/instance
+  - Account - Only accounts for the specific app/instance
+  - App permissions - Only permissions for the specific app/instance
+  - Files page - Only files from the specific app/instance
   - Conditional Access App Control - No permissions
   - Cloud Discovery activity - No permissions
-  - Security extensions - permissions only for API token with user permissions
-  - Governance actions - only for the specific app/instance 
+  - Security extensions - Permissions only for API token with user permissions
+  - Governance actions - Only for the specific app/instance 
 
 - **Group admin:** Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin can view and modify information in Microsoft Cloud App Security only for that user group, as follows:
 
-  - Activities page - only activities about the users in the group
-  - Alerts - only alerts relating to the users in the group
-  - Policies - can view all policies and can edit or create only policies that deal exclusively with users in the group
-  - Account - only accounts for the specific users in the group
+  - Activities page - Only activities about the users in the group
+  - Alerts - Only alerts relating to the users in the group
+  - Policies - Can view all policies and can edit or create only policies that deal exclusively with users in the group
+  - Account - Only accounts for the specific users in the group
   - App permissions – No permissions
   - Files page – No permissions
   - Conditional Access App Control - No permissions
   - Cloud Discovery activity - No permissions
-  - Security extensions - permissions only for API token with users in the group
-  - Governance actions - only for the specific users in the group
+  - Security extensions - Permissions only for API token with users in the group
+  - Governance actions - Only for the specific users in the group
 
 
 ## Override admin permissions
