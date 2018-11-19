@@ -2,12 +2,12 @@
 # required metadata
 
 title: Working with alerts in Cloud App Security | Microsoft Docs
-description: This topic provides a list and description of all alerts.
+description: This article provides a list and description of all alerts.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,26 +25,36 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Monitor alerts
 
 *Applies to: Microsoft Cloud App Security*
 
-# Alerts
-To view alerts:
+Alerts are the entry points to understanding your cloud environment more deeply. This article provides a list and description of all alerts.
+
+# Monitor your alerts
+
+It's a good idea to review all of your alerts. Understanding why an alert is occurring allows you to use them as tools for modifying your policies. 
+
+**To view alerts:** 
 
 In the Microsoft Cloud App Security portal, click on Alerts.
 
 
 ![Alert menu](./media/alert-menu.png)
 
-After you look at an alert, if it's not interesting, you can **Dismiss** it. You can enter a comment to explain why you dismissed the alert and you can **Send feedback to the Cloud App Security team**. This feedback is reviewed by our security research team to constantly improve the alerting mechanism. 
+ - **Dismiss** an alert after you look at it and determine it's not interesting. 
+     - Enter a **comment** to explain why you dismissed the alert 
+     - **Send us feedback about this alert** to be reviewed by our security research team for improving the alerts.
 
-If you investigate the alert and mitigate the risk, you can then **Resolve** the alert. The alert will no longer show up in the alerts table. If you started investigating an issue but you want to make sure you remember to continue, you can **Mark as unread**. You can also **Adjust the policy** that matched the alert in order to imrpove future alert matches. Resolving an alert also gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
+ - **Resolve** the alert if you investigate it and mitigate the risk. 
 
-
-
-The following alerts types will be displayed. 
+     - The alert will no longer show up in the alerts table.
+     - **Mark as unread** if you started investigating an issue but you want to make sure you remember to continue. 
+     -  **Adjust the policy** that matched the alert to improve future alert matches. 
+     - Resolving an alert gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
 
 ## Built-in alerts
+The following alerts types will be displayed. 
 
 |Alert name|AlertID|Description|
 |----|----|----|
@@ -55,6 +65,7 @@ The following alerts types will be displayed.
 |Compromised account|ALERT_COMPROMISED_ACCOUNT|If there was a breach in an application, and the list of breached accounts is published, Cloud App Security downloads the list and compares it to your list of users - including internal users, external users and personal accounts. |
 
 ## Custom Alerts
+The following alerts types will be displayed. 
 
 |Alert name|AlertID|Description|
 |----|----|----|
@@ -67,7 +78,7 @@ The following alerts types will be displayed.
 |New service discovered|ALERT_CABINET_DISCOVERY_NEW_SERVICE|A new app was discovered.|
 |Use of personal account|ALERT_PERSONAL_USER_SAGE|Based on file shares and user names, the detection engine searches for personal accounts. |
 
-## See Also  
+## Next steps 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

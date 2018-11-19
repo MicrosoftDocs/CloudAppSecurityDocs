@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# Alerts
+# Manage alerts
 
 *Applies to: Microsoft Cloud App Security*
 
