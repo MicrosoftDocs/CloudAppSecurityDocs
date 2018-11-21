@@ -2,12 +2,12 @@
 # required metadata
 
 title: Cloud App Security Network requirements | Microsoft Docs
-description: This topic describes the IP addresses and ports you need to open to work with Cloud App Security.
+description: This article describes the IP addresses and ports you need to open to work with Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,21 +25,19 @@ ms.suite: ems
 #ms.custom:
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
-
 # Network requirements
 
-This topic provides a list of ports and IP addresses you need to allow and white list in order to work with Microsoft Cloud App Security. 
+*Applies to: Microsoft Cloud App Security*
 
+This article provides a list of ports and IP addresses you need to allow and white list to work with Microsoft Cloud App Security. 
 
 ## View your data center
 
-Some of the requirements below depend on which data center you are connected to. 
+Some of the requirements below depend on which data center you're connected to. 
 
-To see which data center you are connecting to:
+To see which data center you're connecting to, do the following steps:
 
-1. In the Cloud App Security portal, click the **?** in the menu bar and select **About**. 
+1. In the Cloud App Security portal, click the **question mark icon** in the menu bar. Then, select **About**. 
 
     ![click About](./media/about-menu.png)
 
@@ -64,7 +62,7 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
-In addition, the following should be whitelisted, depending on which data center you use:
+Additionally, the following items should be whitelisted, depending on which data center you use:
 > [!div class="mx-tableFixed"]
 > 
 > |Data center|IP addresses|DNS name|
@@ -100,7 +98,7 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 
 ## App connector
 
-For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. 
+For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used. The IP addresses enable Cloud App Security to collect logs and provide access for the Cloud App Security console. 
 
 > [!NOTE]
 >You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
@@ -121,12 +119,12 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 
 ## Third-party DLP integration
 
-In order for Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number. 
+To enable Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number. 
 
-1.  Source addresses: these should be white listed as listed above for API connector third-party apps
-2.  Source TCP port: Dynamic
-3.  Destination address(es): one or two IP address of the stunnel connected to the external ICAP server
-4.  Destination TCP port: As defined in your network
+1. **Source addresses** - These addresses should be whitelisted as listed above for API connector third-party apps
+2. **Source TCP port** - Dynamic
+3. **Destination address(es)** - One or two IP address of the stunnel connected to the external ICAP server
+4. **Destination TCP port** - As defined in your network
 
 > [!NOTE] 
 > -  By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
@@ -155,16 +153,16 @@ To enable notifications to be sent from the default template and settings, add t
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-If you want to customize the email sender identity, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, under **Settings**, select **Mail settings** review MailChimp’s Terms of Service and Privacy Statement and give Microsoft permission to use MailChimp on your behalf.
+If you want to customize the email sender identity, Microsoft Cloud App Security enables customization by using MailChimp®, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, go to **Settings**. Select **Mail settings** and review MailChimp’s Terms of Service and Privacy Statement. Then, give Microsoft permission to use MailChimp on your behalf.
 
-If you don’t do this, your email notifications will be sent using all the default settings.
+If you don’t customize the sender identity, your email notifications will be sent using all the default settings.
 
 To work with MailChimp, add this IP address to your anti-spam whitelist to enable notifications to be sent: 198.2.134.139 (mail1.cloudappsecurity.com)
 
 
 ## Log collector 
 
-To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, it is necessary to open the following:
+To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
 - Allow the log collector to receive inbound FTP and Syslog traffic.
 - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
@@ -184,9 +182,8 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 >- Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
 >- If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
-
-
-## See Also  
+## Next steps
+ 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
