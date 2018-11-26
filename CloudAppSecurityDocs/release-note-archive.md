@@ -2,7 +2,7 @@
 # required metadata
 
 title: Archive of past updates in Cloud App Security| Microsoft Docs
-description: This topic is an archive that describes updates made in past releases of Cloud App Security.
+description: This article is an archive that describes updates made in past releases of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -29,7 +29,7 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-To see the latest what's new list, see [What's new in Cloud App Security](release-notes.md).
+This article is an archive that describes updates made in past releases of Cloud App Security. To see the latest what's new list, see [What's new in Cloud App Security](release-notes.md).
 
 ## Updates made in 2017
 

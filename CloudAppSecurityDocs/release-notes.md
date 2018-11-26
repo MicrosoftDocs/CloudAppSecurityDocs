@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new with Cloud App Security| Microsoft Docs
-description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
+description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -28,6 +28,8 @@ ms.suite: ems
 # What's new with Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
+
+This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 ## Cloud App Security release 136
 

@@ -2,12 +2,12 @@
 # required metadata
 
 title: Working with the risk score | Microsoft Docs
-description: This topic provides instructions for how to use and customize the Cloud App Security app risk score.
+description: This article provides instructions for how to use and customize the Cloud App Security app risk score.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2018
+ms.date: 1/28/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,20 +25,19 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Working with the risk score
 
 *Applies to: Microsoft Cloud App Security*
 
-
-# Working with the risk score  
+The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps that are ranked and scored based on more than 70 risk factors, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization. This article provides instructions for how to use and customize the Cloud App Security app risk score.
 
 ## The Cloud App Catalog
 
-The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps that are ranked and scored based on more than 70 risk factors, to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up-to-date:
-1.  Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance, terms of service, logon URL, privacy policy, and HQ location).
-2.  Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
-3.  Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
-4.  Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
+1. Automated data extraction directly from the cloud app (for attributes such as SOC 2 compliance, terms of service, logon URL, privacy policy, and HQ location).
+2. Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
+3. Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
+4. Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
   
 ![Cloud app catalog](./media/cloud-app-catalog.png)  
 
@@ -129,10 +128,10 @@ In order to understand a risk category's weight in an app’s total score, hover
 ![risk category weight](./media/risk-category-weight.png)
 
 ## Overriding the risk score
-You can override the risk score of an app without changing the way it is weighted so that you get immediate results for your organization. For example, if the risk score of an LOB app you use is 8 and it is sanctioned and encouraged by your organization, you might want to change the risk score to 10. 
+
 
 To override the risk score, in the **Discovered apps** table or in the **Cloud app catalog**, click the three dots to the right of any app and select **Override risk score**.
-
+You can override the risk score of an app without changing the way it is weighted so that you get immediate results for your organization. For example, if the risk score of an LOB app you use is 8 and it is sanctioned and encouraged by your organization, you might want to change the risk score to 10
 ![override cloud app security discovered app risk score](./media/override-risk-score.png)
 
 After you update the score, you can include app notes to make your business justification for modifying this app score clear to other administrators. 
@@ -141,7 +140,8 @@ You can also add notes to make the justification of the change clear when anyone
 
 
  
-## See Also  
+## Next steps
+ 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
