@@ -63,12 +63,12 @@ There are basic and advanced Cloud App Catalog filters. To build a complex filte
 - **App tags**: Tags enable you to customize the Cloud App Catalog. 
   You can select from either **Sanctioned**, **Unsanctioned**, or create custom tags for apps. These tags can then be used as filters. Filters are useful for deeper diving into specific types of apps that you want to investigate. 
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains. 
-- **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories. For example Social network apps, Cloud storage apps, and more types of apps. You can select more than one category at a time, or a single category. Then, apply the basic or advanced filters on top of the categories.
+- **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories. For example Social network apps, Cloud storage apps, and more types of apps. You can select more than one category at a time or a single category. Then, apply the basic or advanced filters on top of the categories.
 - **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app may comply with. Examples include HIPAA, ISO 27001, SOC 2, and PCI-DSS.
 - **General risk factor**: Lets you search for general risk factors such as consumer popularity, data center locale, and more.
 - **Legal risk factor**: Lets you filter based on all the regulations and policies that are in-place. Using legal risk factors helps ensure data protection and privacy of the app's users, such as GDPR, DMCA, and data retention policy.
 - **Risk score**: Lets you filter apps by risk score that you can focus on. For example, reviewing only risky apps.
-- **Security risk factor**: Enables you to filter based on specific security measures. Measures include Encryption at rest, multi-factor authentication, and others.
+- **Security risk factor**: Enables you to filter based on specific security measures. Measures include encryption at rest, multi-factor authentication, and others.
 
 ## Suggesting a change
 
