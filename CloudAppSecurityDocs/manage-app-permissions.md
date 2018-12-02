@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Control which third-party cloud apps get permissions | Microsoft Docs
-description: This article provides information about how you can control, ban and allow third-party app permissions.
+title: Control which third-party cloud OAuth apps get permissions | Microsoft Docs
+description: This article provides information about how you can control, ban and allow third-party OAuth apps.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -25,24 +25,24 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# Manage app permissions
+# Manage OAuth apps
 
 *Applies to: Microsoft Cloud App Security*
 
-Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, G Suite and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Microsoft Cloud App Security app permissions enable you to see which user-installed applications have access to Office 365 data, G Suite data, and Salesforce data. Cloud App Security tells you what permissions the apps have and which users granted these apps access to their Office 365, G Suite, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
+Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, G Suite and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Microsoft Cloud App Security app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, G Suite data, and Salesforce data. Cloud App Security tells you what permissions the apps have and which users granted these apps access to their Office 365, G Suite, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
 
-## Working with the app permissions page
+## Working with the OAuth apps page
 
-The **App permissions** page displays information about app permissions in your connected apps.
+The **OAuth** page displays information about app permissions in your connected apps.
 
-To access the App permissions tab:
+To access the OAuth tab:
 
-In the Cloud App Security portal, click **Investigate**, and then **App permissions**.
+In the Cloud App Security portal, click **Investigate**, and then **OAuth apps**.
 
 
  ![app permissions](./media/app-permissions.png)
 
-The App permissions page provides the following information about each third-party app that was granted permissions:
+The OAuth apps page provides the following information about each OAuth app that was granted permissions:
 
 |Item|What it means|Applies to|
 |-------|-------|-------|
@@ -62,7 +62,7 @@ The App permissions page provides the following information about each third-par
 
 ## Ban or approve an app
 
-1. On the **App permissions** page, click on the app to open the **App drawer** to view more information about the app and the permissions it was granted.
+1. On the **OAuth apps** page, click on the app to open the **App drawer** to view more information about the app and the permissions it was granted.
    
    - Click on the **Permissions** link to view a full list of permissions that were granted to the app. 
    - Under **Community use**, you can view how common the app is in other organizations.  
@@ -93,15 +93,15 @@ The App permissions page provides the following information about each third-par
 
 For G Suite and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. 
 
-1. On the **App permissions** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app Adallom Google Protector to access your G Suite account.
+1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account.
    This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user. Click the icon at the end of the app row in the table and selecting **Revoke app**. 
 
    ![revoke app](./media/revoke-app.png)
 
-## Query app permissions
+## Query OAuth apps
 
-You can query app permissions in either the **Basic** view or the **Advanced** view. select values from one or multiple drop-downs to display the specific apps in the Basic view. In the advanced view, use the **Select a filter** drop-down to narrow your search. Add operators, equals, or doesn't equal, to a selected value to complete your query.
+You can query OAuth apps in either the **Basic** view or the **Advanced** view. select values from one or multiple drop-downs to display the specific apps in the Basic view. In the advanced view, use the **Select a filter** drop-down to narrow your search. Add operators, equals, or doesn't equal, to a selected value to complete your query.
 
 - Choose the **Add a filter** icon to add additional filters to further refine your query. The filters are applied automatically and the apps list is updated.
 
@@ -110,7 +110,7 @@ You can query app permissions in either the **Basic** view or the **Advanced** v
 ## Send feedback
 
 If there’s an OAuth app discovered in your organization that seems malicious, you can send the Cloud App Security team feedback to let us know. This feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
-1. On the **App permissions** page, click on three dots at the end of the app row and select **Report app**.  
+1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Report app**.  
 
    ![report app](./media/report-app.png)
 2. In the **Report this app** screen, you can select whether to report the app as malicious or to report another issue with the way Cloud App Security perceives the app. For example, you could use **Incorrect publisher**, **Incorrect permissions**, or **Other**. The data you submit will be used to update the app's risk score and other analytics about the app.
