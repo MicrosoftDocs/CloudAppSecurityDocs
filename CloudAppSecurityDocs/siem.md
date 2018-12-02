@@ -2,12 +2,12 @@
 # required metadata
 
 title: SIEM integration with Cloud App Security | Microsoft Docs
-description: This topic provides information integrating your SIEM with Cloud App Security.
+description: This article provides information integrating your SIEM with Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/19/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -26,20 +26,20 @@ ms.suite: ems
 #ms.custom:
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
 # SIEM integration
 
-You can now integrate Microsoft Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities from connected apps. As new activities and events are supported by connected apps, visibility into them is then rolled out into Microsoft Cloud App Security. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Microsoft Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Microsoft Cloud App Security and streams them into the SIEM server.
+*Applies to: Microsoft Cloud App Security*
 
-When you first integrate your SIEM with Cloud App Security, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts (based on the filter you select) from then on. Additionally, if you disable this feature for an extended period, when you enable it again it will forward the past two days of alerts and activities and then all alerts and activities from then on.
+You can integrate Microsoft Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities from connected apps. As new activities and events are supported by connected apps, visibility into them is then rolled out into Microsoft Cloud App Security. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events. The Microsoft Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Microsoft Cloud App Security and streams them into the SIEM server.
+
+When you first integrate your SIEM with Cloud App Security, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts (based on the filter you select) from then on. If you disable this feature for an extended period, then re-enable, the past two days of alerts and activities are forwarded and then all alerts and activities from then on.
 
 ## SIEM integration architecture
 
 The SIEM agent is deployed in your organization’s network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
 The traffic is then sent over an encrypted HTTPS channel on port 443.
 
-Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM using the network configurations you provided during the setup (TCP or UDP with a custom port). 
+Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM. Cloud App security uses the network configurations you provided during the setup (TCP or UDP with a custom port). 
 
 ![SIEM integration architecture](./media/siem-architecture.png)
 
@@ -57,12 +57,12 @@ Integrating with your SIEM is accomplished in three steps:
 ### Prerequisites
 
 - A standard Windows or Linux server (can be a virtual machine).
-- The server must be running Java 8; earlier versions are not supported.
+- The server must be running Java 8; earlier versions aren't supported.
 - OS: Windows or Linux
 - CPU: 2
 - Disk space: 20 GB
 - RAM: 2 GB
-- The server must be running Java 8. Earlier versions are not supported.
+- The server must be running Java 8. Earlier versions aren't supported.
 - Set your firewall as described in [Network requirements](network-requirements.md)
  
 
@@ -70,7 +70,7 @@ Integrating with your SIEM is accomplished in three steps:
 
 ### Step 1: Set it up in the Cloud App Security portal
 
-1. In the Cloud App Security portal, under the Settings cog, click **Security extensions** and then click on the **SIEM agents** tab.
+1. In the Cloud App Security portal, under the Settings cog, click Security extensions, and then click on the **SIEM agents** tab.
 
 2. Click the plus icon to start the **Add SIEM agent** wizard.
 3. In the wizard, click **Start Wizard**.   
@@ -85,15 +85,15 @@ Integrating with your SIEM is accomplished in three steps:
 
    ![Remote Syslog settings](./media/siem2.png)
 
-6. Select which data types, **Alerts** and **Activities** you want to export to your SIEM server. 
+6. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. 
    Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server.
-   You can click **Edit and preview results** to check that the filter works as expected. 
+   Click **Edit and preview results** to check that the filter works as expected. 
    Click **Next**. 
 
    ![Data types settings](./media/siem3.png)
 
 7. Copy the token and save it for later. 
-   After you click Finish and leave the Wizard, back in the SIEM page, you can see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
+   Click Finish and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
 
 > [!NOTE]
 > Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid.
@@ -139,7 +139,9 @@ The following are sample activity logs sent to your SIEM:
 
 2017-11-28T19:24:55.000Z LAB-EUW-ARCTEST CEF:0|MCAS|SIEM_Agent|0.112.68|EVENT_CATEGORY_DELETE_OBJECT|Delete object|0|externalId=1511897117617_5be018ee-f676-4473-a9b5-5982527409be rt=1511897095000 start=1511897095000 end=1511897095000 msg=Delete object: ServiceNow Object b1709c40db360300906ff34ebf961923 suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511897117617_5be018ee-f676-4473-a9b5-5982527409be,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
 ```
-As well as the following alerts logfile example:
+
+The following text is an alerts logfile example:
+
 ```
 2017-07-15T20:42:30.531Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|myPolicy|3|externalId=596a7e360c204203a335a3fb start=1500151350531 end=1500151350531 msg=Activity policy ''myPolicy'' was triggered by ''admin@box-contoso.com'' suser=admin@box-contoso.com destinationServiceName=Box cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596a7e360c204203a335a3fb cs2Label=uniqueServiceAppIds cs2=APPID_BOX cs3Label=relatedAudits cs3=1500151288183_acc891bf-33e1-424b-a021-0d4370789660 cs4Label=policyIDs cs4=59f0ab82f797fa0681e9b1c7
 
@@ -166,18 +168,18 @@ As well as the following alerts logfile example:
 | Activities/Alerts |  destinationServiceName  |                  Activity or alert originating app, for example, Office 365, Sharepoint, Box.                   |
 | Activities/Alerts |        cs<X>Label        |        Each label has a different meaning, but the label itself explains it, for example, targetObjects.        |
 | Activities/Alerts |          cs<X>           | The information corresponding to the label (the target user of the activity or alert as per the label example). |
-|    Activities     |     EVENT_CATEGORY_*     |                                       High level category of the activity                                       |
+|    Activities     |     EVENT_CATEGORY_*     |                                       High-level category of the activity                                       |
 |    Activities     |         <ACTION>         |                                  The activity type, as displayed in the portal                                  |
 |    Activities     |        externalId        |                                                    Event ID                                                     |
 |    Activities     |           dvc            |                                             IP of the client device                                             |
 |    Activities     | requestClientApplication |                                         User agent of the client device                                         |
-|      Alerts       |       <alert type>       |                                  For example “ALERT_CABINET_EVENT_MATCH_AUDIT”                                  |
+|      Alerts       |       <alert type>       |                                  For example, “ALERT_CABINET_EVENT_MATCH_AUDIT”                                  |
 |      Alerts       |          <name>          |                                             The matched policy name                                             |
 |      Alerts       |        externalId        |                                                    Alert ID                                                     |
 
 ### Step 3: Validate that the SIEM agent is working
 
-1. Make sure the status of the SIEM agent in the Cloud App Security portal is not **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours and as **Disconnected** if the connection is down for over 12 hours.
+1. Make sure the status of the SIEM agent in the Cloud App Security portal isn't **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours. The status shows as **Disconnected** if the connection is down for over 12 hours.
  ![SIEM disconnected](./media/siem-not-connected.png)
 
    Instead, the status should be connected, as seen here:
@@ -187,17 +189,20 @@ As well as the following alerts logfile example:
 
 
 ## Regenerating your token
-If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table, and selecting **Regenerate token**.
+
+If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table. Select **Regenerate token** to get a new token.
 
  ![SIEM - regenerate token](./media/siem-regenerate-token.png)
 
-## Editing your SIEM agent 
-If you need to edit the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit**. If you edit the SIEM agent, you do not need to rerun the .jar file, it updates automatically.
+## Editing your SIEM agent
+
+To edit the SIEM agent, click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit**. If you edit the SIEM agent, you don't need to rerun the .jar file, it updates automatically.
 
 ![SIEM - edit](./media/siem-edit.png)
 
 ## Deleting your SIEM agent
-If you need to delete the SIEM agent in the future, you can click on the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
+
+To delete the SIEM agent, click on the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
 
 ![SIEM - delete](./media/siem-delete.png)
 
@@ -206,7 +211,8 @@ If you need to delete the SIEM agent in the future, you can click on the three d
 
 
 
-## See Also  
+## Next steps
+  
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

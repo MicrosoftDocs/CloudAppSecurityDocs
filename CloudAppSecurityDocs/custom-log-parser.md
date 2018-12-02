@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -29,13 +29,13 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Cloud App Security. 
+Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Cloud App Security. This can be a CSV parser or a custom key value parser.
 
 The custom parser enables you to use logs from unsupported firewalls by following this process. 
 
 
  
-To configure a custom CSV parser:
+To configure a custom parser:
 1. In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.  
   
    ![Create new snapshot report](./media/create-new-snapshot-report.png)
@@ -60,7 +60,7 @@ To configure a custom CSV parser:
    ![custom log parser](./media/custom-log-parser.png) 
 
 
-7. Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on Edit.
+7. Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on **Edit**.
 
 8. Under **Choose the traffic logs**, select the log file you modified and upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.  
   
