@@ -32,6 +32,7 @@ ms.suite: ems
 This article describes the process for troubleshooting policy creation in Cloud App Security.
 
 ## Troubleshooting
+
 The following chart has the description and resolution for errors you might see for policies.
 
 |Error|Description|Resolution|
