@@ -66,7 +66,7 @@ Follow this procedure to customize the certificate files you use for secure conn
    ![Change ftp password](./media/new-certs.png)
 
     - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
-    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files is missing, the update won't take place.
+    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files are missing, the update won't take place.
 
 4. In a terminal run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 

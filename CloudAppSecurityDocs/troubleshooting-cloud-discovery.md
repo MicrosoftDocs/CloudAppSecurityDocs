@@ -37,7 +37,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 
 ### Governance log errors
 
-|ERROR|DESCRIPTION|RESOLUTION|
+|Error|Description|Resolution|
 |----|----|----|
 |Unsupported file type|The file uploaded isn't a valid log file (for example, an image file).|Upload a **text**, **zip, or **gzip** file that was directly exported from your firewall or proxy.|
 |The log format does not match|The log format you uploaded didn't match the expected log format for this data source.|1. Verify that the log isn't corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
@@ -47,7 +47,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 
 ## Log collector errors
 
-|ISSUE|RESOLUTION|
+|Issue|Resolution|
 |----|----|
 |Could not connect to the log collector over FTP|  1. Verify that you're using FTP credentials and not SSH credentials. <br /> 2. Verify that the FTP client you're using isn't set to SFTP. |
 |Failed updating collector configuration| 1. Verify that you entered the latest access token. <br /> 2. Verify in your firewall that the log collector is allowed to initiate outbound traffic on port 443. |
@@ -57,7 +57,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 
 ## Discovery dashboard errors
 
-|ISSUE|RESOLUTION|
+|Issue|Resolution|
 |----|----|
 |Discovery data was uploaded and parsed successfully but the Cloud Discovery dashboard looks empty|The Dashboard might be filtered on data your logs don't have so there's no data to show. Try changing the filters in the Cloud Discovery dashboard to show different types of data to see the results.|
 
