@@ -2,12 +2,12 @@
 # required metadata
 
 title: Troubleshooting App Connectors using error messages in Cloud App Security | Microsoft Docs
-description: This topic provides a list of API App connector error messages as well as resolution recommendations for each.
+description: This article provides a list of API App connector error messages as well as resolution recommendations for each.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,9 +25,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
 # Troubleshooting App Connectors using error messages
+
+*Applies to: Microsoft Cloud App Security*
 
 App connector errors can be seen in the app connector dialog after attempting to connect a cloud app using the API App connector.
 
