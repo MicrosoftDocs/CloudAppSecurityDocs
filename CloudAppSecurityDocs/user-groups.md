@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/5/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -59,7 +59,8 @@ To import user groups:
 Importing groups enables you to select those groups as filters when investigating in the **Activity log** and when creating policies. 
 
 > [!NOTE]
-> Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
+> - Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
+> - After the initial sync, groups are updated every hour.
 
 For more information on using the User group filters, see [Activities](activity-filters.md).
 
