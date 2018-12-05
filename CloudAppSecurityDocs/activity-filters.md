@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 
-ms.date: 11/13/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -129,7 +129,9 @@ To view IP address insights:
 
 You can export all user activities to a CSV file. 
 
-In the **Activity log**, in the top right corner, click the **Export** button. ![export button](./media/export-button.png)
+In the **Activity log**, in the top right corner, click the **Export** button.
+
+ ![export button](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
