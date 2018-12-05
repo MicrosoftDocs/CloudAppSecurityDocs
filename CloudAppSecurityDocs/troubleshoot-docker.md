@@ -2,12 +2,12 @@
 # required metadata
 
 title: Troubleshooting Cloud Discovery Docker Deployment | Microsoft Docs
-description: This topic describes the process for modifying configuration for the Cloud App Security Cloud Discovery docker.
+description: This article describes the process for modifying configuration for the Cloud App Security Cloud Discovery docker.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,28 +25,30 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Troubleshooting the Microsoft Cloud App Security Cloud Discovery deployment
 
 *Applies to: Microsoft Cloud App Security*
 
-# Troubleshooting the Microsoft Cloud App Security Cloud Discovery deployment
+This article describes how to modify the configuration for the Cloud App Security Cloud Discovery docker.
 
 ## Windows Defender ATP integration
-If you integrated Windows Defender ATP with Cloud App Security, and you don't see the results of the integration - there is no **Win10 endpoint users** report - make sure the machines you are connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
+
+If you integrated Windows Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
 
 ## Docker deployment
 
-### Changing the FTP password
+You might need to modify the configuration for the Cloud App Security Cloud Discovery docker. 
 
+### Changing the FTP password
 
 1. Connect to the log collector host.
 
-2.	Run `docker exec -it <collector name> pure-pw passwd <ftp user>`
+2. Run `docker exec -it <collector name> pure-pw passwd <ftp user>`
 
     1. Enter the new password.
     2. Enter the new password again for confirmation.
  
-3.	Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
-
+3. Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
 
   ![change ftp password](./media/ftp-connect.png)
 
@@ -63,16 +65,15 @@ Follow this procedure to customize the certificate files you use for secure conn
 
    ![Change ftp password](./media/new-certs.png)
 
-   1.  For FTP: Only one file is required, containing the key and certificate data, in that order, named **pure-ftpd.pem**.
-    
-   2.  For Syslog: Three files are required: **ca.pem**, **server-key.pem** and **server-cert.pem**. If any of the files is missing, the update will not take place.
+    - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
+    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files are missing, the update won't take place.
 
-4. In a terminal run: `docker exec -t <collector name> update_certs`. This should produce a similar output to that seen in the following screen.
+4. In a terminal run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 
    ![Change ftp password](./media/update-certs.png)
 
-## See Also
+## Next steps
+
 [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
-
