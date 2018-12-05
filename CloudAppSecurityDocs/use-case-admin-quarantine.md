@@ -2,12 +2,12 @@
 # required metadata
 
 title: Use case for how to investigate and remediate file breaches using admin quarantine | Microsoft Docs
-description: This topic describes the scenario for using admin quarantine to control data breaches.
+description: This article describes the scenario for using admin quarantine to control data breaches.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/07/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -25,24 +25,21 @@ ms.suite: ems
 #ms.custom:
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
-
 # Protecting your files with admin quarantine
 
-> [!NOTE]
-> This is a preview feature.
+*Applies to: Microsoft Cloud App Security*
 
-[File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies, for instance finding places where users stored sensitive information, credit card numbers and third-party ICAP files in your cloud. With Microsoft Cloud App Security, not only can you detect these unwanted files stored in your cloud that leave you vulnerable, but you can take immediate action to stop them in their tracks and lock down the files that pose a threat. Using **Admin quarantine**, you can protect your files in the cloud and remediate problems, as well as prevent future leaks from occurring. 
+[File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies. For instance, policies that find places where users stored sensitive information, credit card numbers, and third-party ICAP files in your cloud. With Microsoft Cloud App Security, not only can you detect these unwanted files stored in your cloud that leave you vulnerable, but you can take immediate action to stop them in their tracks and lock down the files that pose a threat. Using **Admin quarantine**, you can protect your files in the cloud and remediate problems, and prevent future leaks from occurring.
 
 >[!NOTE] 
-> For a list of apps that support admin quarantine, see the the list of [governance actions](governance-actions.md).
+> - This is a preview feature.
+> - For a list of apps that support admin quarantine, see the the list of [governance actions](governance-actions.md).
  
 ## How quarantine works 
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
 
-2. Perform one of the following to quarantine the file:
+2. Do one of the following actions to quarantine the file:
    - Manually apply the **Admin quarantine** action:
      
      ![quarantine action](./media/quarantine-action.png)
@@ -51,7 +48,7 @@ ms.suite: ems
 
      ![quarantine automatically](./media/quarantine-automated.png)
 
-3. When **Admin quarantine** is applied, the following occurs behind the scenes:
+3. When **Admin quarantine** is applied, the following things occur behind the scenes:
 
    1. The original file is moved to the admin quarantine folder you set.
    2. The original file is deleted.
@@ -59,7 +56,7 @@ ms.suite: ems
       
       ![quarantine tombstone](./media/quarantine-tombstone.png)
       
-   4. The user has access only to the tombstone, where they can read the custom guidelines provided by IT and the correlation ID to contact IT to release the file.
+   4. The user can only access the tombstone file. In the file, they can read the custom guidelines provided by IT and the correlation ID to give IT to release the file.
 
 4. When you receive the alert that a file has been quarantined, investigate the file in the Cloud App Security **Alerts** page:
    
@@ -73,12 +70,12 @@ ms.suite: ems
     
     1. Inspect the file in the quarantined folder on SharePoint online.
     2. You can also look at the audit logs to deep dive into the file properties.
-    3. If the file is found to be against corporate policy, run the organization’s Incident Response (IR) process.
-    4. If the file is found to be harmless, you can restore the file from quarantine, at which point the original file is released, i.e. it is copied back to the original location, the tombstone is deleted and the user can access the file.
+    3. If you find the file is against corporate policy, run the organization’s Incident Response (IR) process.
+    4. If you find that the file is harmless, you can restore the file from quarantine. At that point the original file is released, meaning it's copied back to the original location, the tombstone is deleted, and the user can access the file.
        
        ![quarantine restore](./media/quarantine-restore.png)
        
-7. After you have validated that the policy runs smoothly, you can use the automatic governance actions in the policy to prevent further leaks and automatically applying Admin quarantine when the policy is matched.
+7. Validate that the policy runs smoothly. Then, you can use the automatic governance actions in the policy to prevent further leaks and automatically apply an Admin quarantine when the policy is matched.
 
 > [!NOTE]
 > When you restore a file:
@@ -89,24 +86,28 @@ ms.suite: ems
 > [!NOTE]
 > The quarantine folder site access management is the customer’s responsibility.
 
-#### How to set up admin quarantine
+## Set up admin quarantine
 
-1. Set file policies that detect breaches, such as a metadata only policy (such as a classification label in SharePoint Online), a native DLP policy (such as a policy that searches for credit card numbers) or an ICAP third party policy (such as a policy that looks for Vontu).
+1. Set file policies that detect breaches. Examples of these types of policies include:
+
+    - A metadata only policy such as a classification label in SharePoint Online
+    - A native DLP policy such as a policy that searches for credit card numbers 
+    - An ICAP third-party policy such as a policy that looks for Vontu.
 
 2. Set a quarantine location:
-   1. For Office 365 SharePoint or OneDrive for Business, before you set up Admin quarantine, you will not be able to put files in admin quarantine as part of a policy:
+   1. For Office 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
       ![quarantine settings](./media/quarantine-warning.png)
 
-      To set admin quarantine settings, under the settings cog, go to **General settings**, and provide a location for the quarantined files and a user notification that your user will receive when their file is quarantined. 
+      To set admin quarantine settings, under the settings cog, go to **General settings**. Provide a location for the quarantined files and a user notification that your user will receive when their file is quarantined. 
       ![quarantine settings](./media/quarantine-settings.png)
 
-   2. For Box, the quarantine folder location and user message cannot be customized. The folder location is the drive of the admin who connected Box to Cloud App Security and the user message is: This file was quarantined to your administrator's drive because it might violate your company's security and compliance policies. Contact your IT administrator for help.
+   2. For Box, the quarantine folder location and user message can't be customized. The folder location is the drive of the admin who connected Box to Cloud App Security and the user message is: This file was quarantined to your administrator's drive because it might violate your company's security and compliance policies. Contact your IT administrator for help.
 
 
 
-## See Also  
+## Next steps
+ 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
+
