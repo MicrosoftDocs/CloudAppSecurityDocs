@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,16 @@ ms.suite: ems
 
 # What's new with Microsoft Cloud App Security
 
+## Cloud App Security release 137
+
+Released November 25, 2018
+
+-	**Added support for Dynamics**<br>
+Cloud App Security now includes support for the Microsoft Dynamics activities that are supported in the Office 365 audit log. 
+-	**Scanning encrypted content (Preview)**<br>
+Cloud App Security now enables you to scan content that is protected by Azure Information Protection protection labels. This will allow you to find sensitive content, even in files that have already been encrypted by Azure Information Protection. 
+-	**Heads up – new terminology!**<br>
+The name of the App permissions capabilities was changed for clarity – it is now called **OAuth apps**. 
 
 ## Cloud App Security release 136
 
@@ -94,7 +104,7 @@ Released August 22, 2018
 To provide a more consistent admin experience across Microsoft 365 products and enable you to more easily pivot between Microsoft security solutions, the Cloud App Security portal menu bar moved to the left side of the screen. This consistent navigation experience helps you orient yourself when moving from one Microsoft security portal to another.
 
 - **Impact OAuth app score**<br>
-You can now send the Cloud App Security team feedback to let us know if there’s an OAuth app discovered in your organization that seems malicious. This new feature enables you to be part of our security community and enhance OAuth app risk score and analysis. For more information see [Manage app permissions](manage-app-permissions.md).
+You can now send the Cloud App Security team feedback to let us know if there’s an OAuth app discovered in your organization that seems malicious. This new feature enables you to be part of our security community and enhance OAuth app risk score and analysis. For more information see [Manage app permiOAuth appsssions](manage-app-permissions.md).
 
 - **New Cloud Discovery parsers**<br>
 The Cloud Discovery parsers now support iboss Secure Cloud Gateway and Sophos XG.
@@ -111,8 +121,8 @@ Released August 5, 2018
 
 Released July 22, 2018
 
--	**App permissions actions across multiple apps**<br>
-For apps that have been granted app permissions, you can now ban or approve multiple apps in a single action. For example, you can review all the apps that have been granted permission by users in your organization, select all the apps you want to ban, and then click ban apps to revoke all consent granted and will no longer allow users to grant permission to those apps.  For more information, see [Manage app permission](manage-app-permissions.md).
+-	**OAuth apps actions across multiple apps**<br>
+For OAuth apps that have been granted app permissions, you can now ban or approve multiple apps in a single action. For example, you can review all the apps that have been granted permission by users in your organization, select all the apps you want to ban, and then click ban apps to revoke all consent granted and will no longer allow users to grant permission to those apps.  For more information, see [Manage OAuth apps](manage-app-permissions.md).
 -	**Enhanced support for Azure applications**<br>
 For Azure, we are now gradually rolling out the ability to detect applications as user account activities performed by the Azure applications (both internal and external). This enables you to create policies that will alert you if an application performs unexpected and unauthorized activities. For more information, see [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md).
 -	**Data Classification Engine updated with new GDPR sensitive types**<br>

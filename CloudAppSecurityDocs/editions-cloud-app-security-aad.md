@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 12/2/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -38,7 +38,7 @@ Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing dee
 
 ## Enhanced Cloud App Discovery in Azure Active Directory
 
-Azure Active Directory Premium P1 includes [Azure Active Directory Cloud App Discovery](https://aka.ms/caddocsnew) at no additional cost. This feature is based on the Microsoft Cloud App Security Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations. [Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of cloud app protection capabilities offered by Microsoft Cloud App Security.
+Azure Active Directory Premium P1 includes [Azure Active Directory Cloud App Discovery](https://aka.ms/caddocsnew) at no additional cost. This feature is based on the Microsoft Cloud App Security Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations. [Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
 
 ### Feature comparison
 
@@ -49,8 +49,8 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 |Cloud Discovery|Discovered apps|16,000 + cloud apps|16,000 + cloud apps|
 ||Deployment for discovery analysis|Manual and automatic log upload|Manual and automatic log upload|
 ||Log anonymization for user privacy|Yes|Yes|
-||Access to full Cloud App Catalog|Yes||
-||Cloud app risk assessment|Yes||
+||Access to full Cloud App Catalog|Yes|Yes|
+||Cloud app risk assessment|Yes|Yes|
 ||Cloud usage analytics per app, user, IP address|Yes|Yes|
 ||Ongoing analytics & reporting|Yes|Yes|
 ||Anomaly detection for discovered apps|Yes||
