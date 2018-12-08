@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Use case for how to investigate and remediate file breaches using admin quarantine | Microsoft Docs
-description: This topic describes the scenario for using admin quarantine to control data breaches.
+title: Protect files with Cloud App Security admin quarantine
+description: This article describes the scenario for using admin quarantine to control data breaches.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,21 +22,18 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
-
 # Protecting your files with admin quarantine
 
-> [!NOTE]
-> This is a preview feature.
+*Applies to: Microsoft Cloud App Security*
 
-[File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies, for instance finding places where users stored sensitive information, credit card numbers and third-party ICAP files in your cloud. With Microsoft Cloud App Security, not only can you detect these unwanted files stored in your cloud that leave you vulnerable, but you can take immediate action to stop them in their tracks and lock down the files that pose a threat. Using **Admin quarantine**, you can protect your files in the cloud and remediate problems, as well as prevent future leaks from occurring. 
+[File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies, for instance finding places where users stored sensitive information, credit card numbers and third-party ICAP files in your cloud. With Microsoft Cloud App Security, not only can you detect these unwanted files stored in your cloud that leave you vulnerable, but you can take immediate action to stop them in their tracks and lock down the files that pose a threat. Using **Admin quarantine**, you can protect your files in the cloud and remediate problems, as well as prevent future leaks from occurring. This article describes the use case scenario for investigating and remediating file breaches using admin quarantine.
 
 >[!NOTE] 
-> For a list of apps that support admin quarantine, see the the list of [governance actions](governance-actions.md).
+> - This is a preview feature.
+> - For a list of apps that support admin quarantine, see the the list of [governance actions](governance-actions.md).
  
 ## How quarantine works 
 
@@ -104,7 +101,7 @@ ms.suite: ems
 
 
 
-## See Also  
+## Next steps 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

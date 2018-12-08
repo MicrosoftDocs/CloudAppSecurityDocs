@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Import user groups from connected apps | Microsoft Docs
-description: This topic provides instructions for importing your user groups into Cloud App Security.
+title: Import user groups from connected apps in Cloud App Security
+description: This article provides instructions for importing your user groups from connected apps into Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,12 +22,12 @@ ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
+# Import user groups from connected apps
+
 *Applies to: Microsoft Cloud App Security*
-   
-# Import user groups
 
 When you connect apps using API connectors, Microsoft Cloud App Security enables you to import user groups, for example from Office 365 and Azure Active Directory.
 There are two types of user groups: 
@@ -65,7 +65,8 @@ For more information on using the User group filters, see [Activities](activity-
 
 
     
-## See Also  
+## Next steps
+ 
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

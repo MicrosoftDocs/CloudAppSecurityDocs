@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create policies to control OAuth apps in Cloud App Security | Microsoft Docs
+title: Create policies to control OAuth apps in Cloud App Security
 description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/2/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 9f68302c-bb3d-450c-bbf5-f8130cb163e3
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # OAuth app policies

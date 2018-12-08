@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Integrate Cloud App Security with Zscaler for seamless cloud discovery and automated block sanctioned apps | Microsoft Docs
-description: Integrate Cloud App Security with Zscaler for seamless Cloud Discovery and automated block of sanctioned apps.
+title: Integrate Cloud App Security with Zscaler
+description: This article describes how to integrate Microsoft Cloud App Security with Zscaler for seamless Cloud Discovery and automated block of sanctioned apps.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/28/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,12 +22,12 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
-*Applies to: Microsoft Cloud App Security*
-
 # Integrate Cloud App Security with Zscaler
+
+*Applies to: Microsoft Cloud App Security*
 
 If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Zscaler, as a standalone cloud proxy, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Cloud App Security and Zscaler provide the following capabilities:
 
@@ -67,7 +67,7 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
 	
 
  
-## See Also  
+## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
