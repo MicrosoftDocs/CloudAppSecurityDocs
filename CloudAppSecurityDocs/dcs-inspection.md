@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How Cloud App Security performs content inspection using Microsoft Data Classification Service| Microsoft Docs
+title: Cloud App Security content inspection using Microsoft Data Classification Service
 description: This article describes the process Cloud App Security follows when performing DLP content inspection using Microsoft Data Classification Service. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 
 ms.topic: conceptual
 ms.prod:
@@ -23,20 +23,21 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Microsoft Data Classification Services integration
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security enables you to natively use the Microsoft Data Classification Service, to classify the files in your cloud apps. Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection, and Microsoft Cloud App Security. The classification service allows you to extend your data classification efforts to the third-party cloud apps protected by Microsoft Cloud App Security, using the decisions you already made across an even greater number of apps.
+Microsoft Cloud App Security enables you to natively use the Microsoft Data Classification Service to classify the files in your cloud apps. Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection, and Microsoft Cloud App Security. The classification service allows you to extend your data classification efforts to the third-party cloud apps protected by Microsoft Cloud App Security, using the decisions you already made across an even greater number of apps.
 
 >[!NOTE]
 > This feature is currently available in the US, Europe (except France), and APAC.
 
 
 ## Enable content inspection with Data Classification Services
+
 You have the option to set the **Inspection method** to use the **Microsoft Data Classification Service** with no additional configuration required. This option is useful when creating a data leak prevention policy for your files in Microsoft Cloud App Security.
 
 
