@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 
 ---
 
-# Integrate with Flow for custom alert automation
+# Integrate with Flow for custom alert automation - Preview
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -51,23 +51,23 @@ The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudap
 
 3. In search connectors and triggers, type **Cloud App Security** and select **When an alert is generated**.
 
- ![Flow when alert is generated](./media/flow-when-alert.png)
+   ![Flow when alert is generated](./media/flow-when-alert.png)
 
 4. Under **Authentication settings**, paste the API token from step 1. 
 
 5. Define the workflow that should be triggered when a policy in Cloud App Security generates an alert. You can add an action, logical condition, switch case conditions or loops and save the playbook. 
 
- ![Flow workflow](./media/flow-workflow.png)
+   ![Flow workflow](./media/flow-workflow.png)
 
 6. In the Cloud App Security portal, go to **Policies** and in the row of the policy whose alerts you want to forward to Flow, click the three dots and select **Settings**. 
 7. Under **Alerts**, select **Send Alerts to Flow** and choose the name of playbook from the dropdown menu.  
 
- ![Enable Flow in Cloud App Security portal](./media/flow-mcas-config.png)
+   ![Enable Flow in Cloud App Security portal](./media/flow-mcas-config.png)
 
 8. Cloud App Security playbooks that you’ve authored or are granted access to can be seen in the **Security extensions** screen. 
 
   
- ![view playbooks in Cloud App Security](./media/flow-extensions.png)
+   ![view playbooks in Cloud App Security](./media/flow-extensions.png)
  
  
 
