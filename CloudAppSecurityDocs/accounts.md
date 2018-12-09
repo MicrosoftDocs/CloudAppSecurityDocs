@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -85,6 +85,6 @@ Following is a list of the account filters that can be applied. Most filters sup
 ## Next steps  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new issue directly from the Premier portal.](https://premier.microsoft.com/)  
   
   

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -96,3 +96,4 @@ To configure a custom parser:
 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
 
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
