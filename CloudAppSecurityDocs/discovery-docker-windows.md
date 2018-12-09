@@ -110,26 +110,26 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 The following steps describe the deployment in Windows. The deployment steps for other platforms are slightly different.
 
 1. Open a PowerShell terminal as an administrator on your Windows machine.
+
 2. Use the following command to download the Windows Docker installer:<br>
- `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1); & (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
-<br> If you want to validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature).
+ `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+<br>If you want to validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature).
 
 3. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`.
 
-4. From the directory into which you saved the installer, run: `./LogCollectorInstaller.ps1`<br>
-This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again. 
+4. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
+This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again.
 
-5. After each restart, from the directory into which you saved the installer, re-run: `./LogCollectorInstaller.ps1`<br>  
+5. After each restart, from the directory into which you saved the installer, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 
 6. Before the installation completes, you will have to paste in the run command you copied earlier.
 
-5. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
+7. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
            (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Create log collector](./media/windows7.png)
-
-6. Verify that the collector is running properly with the following command: `docker logs \<collector_name\>`
+8. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
 You should see the message: **Finished successfully!**
 

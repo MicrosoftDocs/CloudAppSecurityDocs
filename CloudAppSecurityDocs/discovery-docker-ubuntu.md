@@ -135,7 +135,7 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
 
    ![Create log collector](./media/windows7.png)
 
-6. Verify that the collector is running properly with the following command: `docker logs \<collector_name\>`
+6. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
 You should see the message: **Finished successfully!**
 
