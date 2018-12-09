@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting App Connectors using error messages in Cloud App Security | Microsoft Docs
-description: This topic provides a list of API App connector error messages as well as resolution recommendations for each.
+description: This article provides a list of API App connector error messages as well as resolution recommendations for each.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -25,9 +25,13 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Troubleshooting App Connectors using error messages
+
 *Applies to: Microsoft Cloud App Security*
 
-# Troubleshooting App Connectors using error messages
+This article provides a list of API App connector error messages and resolution recommendations for each error.
+
+## Troubleshooting
 
 App connector errors can be seen in the app connector dialog after attempting to connect a cloud app using the API App connector.
 
@@ -64,7 +68,8 @@ App connector errors can be seen in the app connector dialog after attempting to
 > |HttpRequestFailure: Server returned: 500 Internal server error|All apps|There was an error in the app.|Check the status of the app|
 > |Service timeout|All apps|A timeout was detected in the connection between Cloud App Security and the app. This could be due to a problem with the app.|Try again later.|
 
-## See Also  
+## Next steps
+
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
