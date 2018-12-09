@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting Cloud App Security service status | Microsoft Docs
+title: Troubleshooting Cloud App Security service status
 description: This article provides a link to the Cloud App Security status page
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Troubleshooting Microsoft Cloud App Security status
