@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Use the custom log parser for logs that are not supported | Microsoft Docs
+title: Cloud App Security custom log parser for logs that are't supported
 description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,8 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
+
 
 ---
 # Use a custom log parser

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure automatic log upload for continuous reports | Microsoft Docs
+title: Configure automatic log upload using Docker in Azure 
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu in Azure.
 keywords:
 author: rkarlin
@@ -22,7 +22,7 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Set up and configuration on Ubuntu

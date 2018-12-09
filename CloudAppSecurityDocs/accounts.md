@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Visibility into cloud app accounts | Microsoft Docs
+title: Visibility into cloud app accounts - Cloud App Security | Microsoft Docs
 description: This article provides information about reviewing accounts from your connected apps. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Accounts
