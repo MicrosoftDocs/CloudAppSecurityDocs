@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -124,6 +124,6 @@ After completing this task, proceed to the Cloud App Security portal and create 
 ## See Also  
 [Create a session policy](session-policy-aad.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   
