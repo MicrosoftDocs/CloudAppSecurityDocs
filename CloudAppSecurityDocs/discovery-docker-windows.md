@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure automatic log upload for continuous reports | Microsoft Docs
-description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or RHEL in an on-premises server.
+title: Roll out continuous reports for Cloud App Security using a Docker on Windows | Microsoft Docs
+description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Windows in an on-premises server.
 keywords:
 author: rkarlin
 ms.author: rkarlin
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 
 # optional metadata
 
@@ -25,15 +25,15 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# Docker on Ubuntu and RHEL on-premises
+# Docker on Windows on-premises
 
 *Applies to: Microsoft Cloud App Security*
 
-You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on an on-premises Ubuntu or RHEL server.
+You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Windows.
 
 ## Technical requirements
 
-- OS: Ubuntu 14.04, 16.04, and 18.04; or RHEL 7.2 or higher 
+- OS: Windows 10 (fall creators update) and Windows Server, version 1709+ 
 
 - Disk space: 250 GB
 
@@ -100,42 +100,36 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
    > - A single Log collector can handle multiple data sources.
    > - Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
 
-4. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon](./media/copy-icon.png)
+4. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon](./media/copy-icon.png). You will need this later.
 
 5. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
    ![Create log collector](./media/windows7.png)
 
 ### Step 2 – On-premises deployment of your machine
-The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
+The following steps describe the deployment in Windows. The deployment steps for other platforms are slightly different.
 
-1. Open a terminal on your Ubuntu machine.
+1. Open a PowerShell terminal as an administrator on your Windows machine.
 
-2. Change to root privileges using the command: `sudo -i`
+2. Use the following command to download the Windows Docker installer:<br>
+ `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+<br>If you want to validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature).
 
-3. To bypass a proxy in your network, run the following two commands:
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
+3. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`.
 
-4. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the following command:
+4. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
+This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again.
 
-   `curl -o /tmp/MCASInstallDocker.sh
-   https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-   && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
+5. After each restart, from the directory into which you saved the installer, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 
-    > [!NOTE] 
-    > If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
-    
-   ![ubuntu5](./media/ubuntu5.png)
+6. Before the installation completes, you will have to paste in the run command you copied earlier.
 
-5. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
+7. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
-           (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+           (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![Create log collector](./media/windows7.png)
-
-6. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
+8. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
 You should see the message: **Finished successfully!**
 
@@ -167,9 +161,22 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 
 ![Custom continuous report](./media/custom-continuous-report.png)
 
+### Optional - Validate installer signature <a name="validate-signature"></a>
+
+To make sure that the docker installer is signed by Microsoft:
+1. Right click on the file and select **Properties**.
+2. Click on **General** and make sure that it says **This digital signature is OK**.  
+3. Click on **Digital Signatures** and make sure that Microsoft is listed in the **Signature list**.  
+
+![Digital signature valid](./media/digital-signature-successful.png)
+
+If the digital signature is not valid, it will appear like this:
+
+![Digital signature not valid](./media/digital-signature-unsuccessful.png)
+
 ## Next steps
 
 [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
 
