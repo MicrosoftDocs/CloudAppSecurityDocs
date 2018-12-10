@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Provide your organization's settings in Cloud App Security portal for best results | Microsoft Docs
+title: Setup your organization's settings in Cloud App Security
 description: This article explains how to provide information about your organization in Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,10 +22,10 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
-# Basic setup
+# Basic setup for Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
