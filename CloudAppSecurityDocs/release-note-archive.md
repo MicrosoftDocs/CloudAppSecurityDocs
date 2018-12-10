@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Archive of past updates in Cloud App Security| Microsoft Docs
+title: Archive of past updates in Cloud App Security
 description: This article is an archive that describes updates made in past releases of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,8 +22,7 @@ ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 # Past-release archive of Microsoft Cloud App Security
 

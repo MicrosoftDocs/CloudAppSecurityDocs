@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Policy template reference in Cloud App Security | Microsoft Docs
+title: Policy template reference for Cloud App Security
 description: This article provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Policy template reference

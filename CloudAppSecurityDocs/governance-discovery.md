@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Blocking discovered apps | Microsoft Docs
+title: Blocking discovered apps - Cloud App Security | Microsoft Docs
 description: This article describes the procedure for exporting block scripts for discovered apps. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Govern discovered apps

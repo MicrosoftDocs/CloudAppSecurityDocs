@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Set email notification preferences | Microsoft Docs
+title: Set email notification preferences - Cloud App Security | Microsoft Docs
 description: This article provides information about how to personalize the email notifications sent by Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Email notification preferences
@@ -42,7 +42,7 @@ This article provides information about how to personalize the email notificatio
 2. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Cloud App Security accomplishes the customization by using a third-party mail service called MailChimp®. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Cloud App Security will send the notifications using the default settings.
  
    > [!NOTE]
-   > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](http://www.rfc-editor.org/rfc/rfc822.txt).
+   > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](https://www.rfc-editor.org/rfc/rfc822.txt).
 
   
 3. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following things:  
@@ -71,7 +71,7 @@ This article provides information about how to personalize the email notificatio
 Below is a sample email template:
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html>  
        <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  

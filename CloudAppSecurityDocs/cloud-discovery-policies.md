@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create policies on Cloud Discovery apps in Cloud App Security | Microsoft Docs
-description: This topic provides information about working with Cloud Discovery policies.
+title: Create policies on Cloud Discovery apps - Cloud App Security | Microsoft Docs
+description: This article provides information about working with Cloud Discovery policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Cloud Discovery policies

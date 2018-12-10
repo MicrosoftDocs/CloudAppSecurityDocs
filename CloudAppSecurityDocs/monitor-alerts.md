@@ -1,18 +1,18 @@
 ---
 # required metadata
 
-title: Manage alerts triggered in the Cloud App Security portal | Microsoft Docs
-description: This article explains how to work with alerts raised in the Cloud App Security portal.
+title: Monitor alerts raised in Cloud App Security 
+description: This article provides a list and description of all alerts.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
+ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 
 # optional metadata
 
@@ -22,78 +22,64 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
+# Monitor alerts in Cloud App Security
+
 *Applies to: Microsoft Cloud App Security*
 
+Alerts are the entry points to understanding your cloud environment more deeply. This article provides a list and description of all alerts.
 
-## Manage your alerts  
-Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your organization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it is used to sign in from that location.  
+## Monitoring your alerts
 
-It is a good idea to review all of your alerts and to use them as tools for modifying your policies. If harmless events are being considered violations to existing policies, refine your policies so that you receive fewer unnecessary alerts.  
+It's a good idea to review all of your alerts. Understanding why an alert is occurring allows you to use them as tools for modifying your policies. 
 
-1. Under **Open alerts**, click **View all alerts**.  
+**To view alerts:** In the Microsoft Cloud App Security portal, click on **Alerts**.
 
-   This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It then helps you safeguard the security posture you defined for your cloud environment.  
 
-   ![Alerts](./media/alerts.png "alerts")  
+![Alert menu](./media/alert-menu.png)
 
-2. For each alert, you need to investigate and determine the nature of the violation and the required response.  
+ - **Dismiss** an alert after you look at it and determine it's not interesting. 
+     - Enter a **comment** to explain why you dismissed the alert 
+     - **Send us feedback about this alert** to be reviewed by our security research team for improving the alerts.
 
-   You can filter the alerts by Alert type or by Severity in order to process the most important ones first.  
+- **Resolve** the alert if you investigate it and mitigate the risk. 
 
-   Select a specific alert. Depending on what type of alert it is, you will see various actions that can be taken before resolving the alert.  
-   
-   You can filter based on App - the apps listed are those for which activities were detected by Cloud App Security.
-
-   There are three types of violations you will need to deal with when investigating alerts:  
-
-   - **Serious violations**<br>
-     Serious violations require immediate response. <br>
-     Examples:<br>
-     For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
-
-     For a data leak you might want to restrict permissions or quarantine the file.  
-
-     If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
-
-   - **Questionable violations**<br>
-     Questionable violations require further investigation.  <br>
-     You can contact the  user or the user's manager about the nature of the activity. <br>  
-     Leave the activity open until you have more information.  
-
-   - **Authorized violations or anomalous behavior**<br>
-     Authorized violations or anomalous behavior can result from legitimate use.  
-
-     You can dismiss the alert.  
-
-3. Any time you dismiss an alert, it is important to submit feedback about why you are dismissing the alert. The Cloud App Security team uses this feedback as an indication of the accuracy of the alert which is then used to fine-tune our machine learning models for future alerts. You can follow these guidelines in deciding how to categorize the alert:
- - If legitimate use triggered the alert and it is not a security issue, it could be one of these: 
-    - Benign positive: The alert is accurate, but the activity is legitimate. You should dismiss the alert and set the reason to **Actual severity is lower** or **Not interesting**.
-    -	False positive: The alert is inaccurate. Dismiss the alert and set the reason to **Alert is not accurate**.
- - If there is too much noise to determine the legitimacy and accuracy of an alert, dismiss it and set the reason to **Too many similar alerts**.
- - True positive: If the alert is related to an actual risky event that was either committed maliciously or unintentionally by an insider or outsider, you should set the event to **Resolve** after all appropriate action has been taken to remediate the event.
+     - The alert will no longer show up in the alerts table.
+     - **Mark as unread** if you started investigating an issue but you want to make sure you remember to continue. 
+     -  **Adjust the policy** that matched the alert to improve future alert matches. 
+     - Resolving an alert gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
  
+## Built-in alerts
 
-The following table provides a list of the types of alerts that can be triggered and recommends ways in which you can resolve them.  
+The following alerts types will be displayed. 
 
-|Alert type|Description|Recommended resolution|  
-|----------------|-----------------|----------------------------|  
-|Activity policy violation|This type of alert is the result of a policy you created.|To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br /> If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|  
-|File policy violation|This type of alert is the result of a policy you created.| To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br /> If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|  
-|Compromised account|This type of alert is triggered when Cloud App Security identifies an account that was compromised, meaning there's a very high probability that the account was used in an unauthorized way.|We recommend that you suspend the account until you can reach the user and make sure they change their password.|  
-|Inactive account|This alert is triggered when an account has not been used in 60 days in one of your connected cloud apps.|Contact the user and the user's manager to determine  whether the account is still active. If not, suspend the user and terminate the license for the app.|  
-|New admin user|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user. If they are not, recommend revoking admin privileges to reduce exposure.|  
-|New admin location|This alerts you to changes in your privileged accounts for connected apps.|Confirm that the sign in from this anomalous location was legitimate. If it's not, recommend revoking admin permissions or suspending the account to reduce exposure.|  
-|New location|This is an informative alert about access to a connected app from a new location, and it's triggered only once per country.|Investigate the specific user's activity.|  
-|New discovered service|This is an alert about Shadow IT. A new app was detected by Cloud Discovery.|<ul><li>Assess the risk of the service based on the app catalog.</li><li>Drill down into the activity to understand usage patterns and prevalence.</li><li>Decide whether to sanction or unsanction the app.</li><br /></ul>For unsanctioned apps:<br /><br /><ul><li>You may want to block use in your proxy or firewall.</li><li>If you have an unsanctioned app and a sanctioned app in the same category, you can export a list of users of the unsanctioned app, and then contact them to migrate them to the sanctioned app.</li></ul></li>|  
-|Suspicious activity|This alert lets you know that anomalous activity has been detected that is not aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|  
-|Suspicious cloud use|This alert lets you know that anomalous activity has been detected that is not aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|  
-|Use of personal account|This alert lets  you know that a new personal account has access to resources in your connected apps.|Remove the user's collaborations in the external account.|  
+|Alert name|AlertID|Description|
+|----|----|----|
+|New location|ALERT_GEOLOCATION_NEW_COUNTRY|A new location was detected since the scan began (up to 6 months). This alert only shows up once for each country for your entire organization. |
+|New admin user|ALERT_ADMIN_USER|A new admin was detected for a specific app. This admin can be someone who is an admin in one application and is now an admin for another application. This alert relates to the specific admin type, so it will show up each time the type of admin changes. If a user lost admin privileges and then got them again, this alert will be displayed.|
+|Inactive account|ALERT_ZOMBIE_USER|If a user is inactive for 60 days per application – for example, if someone is active in Box but hasn't touched G Suite for 60 days, the user will be considered inactive in G Suite. A tag is added to these users so you can search for inactive accounts.|
+|Unexpected admin location|ALERT_NEW_ADMIN_LOCATION|A new location was detected for administrators since the scan began (up to 6 months). This alert only shows up once for each country for any admin across your organization. |
+|Compromised account|ALERT_COMPROMISED_ACCOUNT|If there was a breach in an application and the list of breached accounts is published, Cloud App Security downloads the list and compares it to your list of users. The user list includes internal users, external users, and personal accounts. |
 
+## Custom Alerts
 
-## Next steps  
-For more information about investigating alerts, see [Investigate](investigate.md).  
+The following alerts types will be displayed. 
+
+|Alert name|AlertID|Description|
+|----|----|----|
+|Suspicious activity alert|ALERT_SUSPICIOUS_ACTIVITY|Suspicious activities are scored according to how suspicious the anomalous activity is (Is there an inactive account involved? Is it from a new location?) These criteria are all calculated together to provide a risk score based on the following risk factors: <br>User is administrator <br>Strictly remote user<br>Anonymous proxy<br> Entire session is failed logins<br>Numerous failed logins<br>New (admin)<br>IP/ISP/country/user-agent for user/tenant<br> IP/ISP/country/user-agent used only by (admin) user<br>First (admin) user activity in a while<br>First time this particular administrative activity is performed in a while<br>This particular administrative activity isn't common / was never performed before<br>This IP had only failed logins in the past<br>Impossible travel|
+|Suspicious cloud use alert|ALERT_DISCOVERY_ANOMALY_DETECTION|Cloud Discovery anomaly detection checks the pattern of regular behavior and looks for users or apps that are used in an unusual way. |
+|Activity policy violation|ALERT_CABINET_EVENT_MATCH_AUDIT|This alert lets you know when a policy match was detected.|
+|File policy violation|ALERT_CABINET_EVENT_MATCH_FILE|This alert lets you know when a policy match was detected.|
+|Proxy policy violation|ALERT_CABINET_INLINE_EVENT_MATCH|This alert lets you know when a policy match was detected.|
+|Field policy violation|ALERT_CABINET_EVENT_MATCH_OBJECT|This alert lets you know when a policy match was detected.|
+|New service discovered|ALERT_CABINET_DISCOVERY_NEW_SERVICE|A new app was discovered.|
+|Use of personal account|ALERT_PERSONAL_USER_SAGE|Based on file shares and user names, the detection engine searches for personal accounts. |
+
+## Next steps 
+
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What's new with Cloud App Security| Microsoft Docs
-description: This topic is updated frequently to let you know what's new in the latest release of Cloud App Security.
+title: What's new in Cloud App Security
+description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,13 +22,14 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
+# What's new with Microsoft Cloud App Security
+
 *Applies to: Microsoft Cloud App Security*
 
-
-# What's new with Microsoft Cloud App Security
+This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 
 ## Cloud App Security release 138
@@ -233,7 +234,7 @@ Microsoft Cloud App Security provides enterprises with the ability to granularly
  We now have a built-in alert to notify you when any of a tenant’s discovered apps is breached. The alert will provide information about the time and date of the breach, which users used the app, and will link to publicly available sources that provide information about the breach.
 
 -	**New mail server**<br>
- Cloud App Security’s mail server changed and uses different IP address ranges. To make sure you can get notifications, add the new IP addresses to your anti-spam whitelist. For users who customize their notifications, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. For the list of mail server IP addresses, and instructions for enabling work with MailChimp, see [Network requirements](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server) and [Mail settings](mail-settings.md).
+ Cloud App Security’s mail server changed and uses different IP address ranges. To make sure you can get notifications, add the new IP addresses to your anti-spam whitelist. For users who customize their notifications, Microsoft Cloud App Security enables this for you using MailChimp®, a third-party email service. For the list of mail server IP addresses, and instructions for enabling work with MailChimp, see [Network requirements](network-requirements.md#mail-server) and [Mail settings](mail-settings.md).
 
 
 ## Cloud App Security release 123
@@ -290,7 +291,7 @@ Released February 20, 2018
 
 -	Cloud App Security deepened integration with Azure Information Protection now enables you to protect files in G Suite. This public preview feature enables you to scan and classify files in G Suite, and automatically apply Azure Information protection labels for protection. For more information, see [Azure Information Protection integration](azip-integration.md).
 
--	Cloud Discovery now supports [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/).
+-	Cloud Discovery now supports [Digital Arts i-FILTER](https://www.daj.jp/en/products/if/).
 
 -	The SIEM agents table now includes more detail for easier management.
 

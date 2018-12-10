@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Deploy Cloud App Security for cloud app use insight and control | Microsoft Docs
-description: This article outlines the process for getting Cloud App Security up and running.
+title: Deploy Cloud App Security 
+description: This article outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,8 +22,7 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 
 # Deploy Microsoft Cloud App Security

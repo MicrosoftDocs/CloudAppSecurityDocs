@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Cloud App Security external DLP integration over secure ICAP | Microsoft Docs
+title: Cloud App Security external DLP integration over secure ICAP
 description: This article provides the steps necessary for configuring the ICAP connection in Cloud App Security and the stunnel setup.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # External DLP integration

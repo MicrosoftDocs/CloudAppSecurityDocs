@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Overview of threat protection scenario | Microsoft Docs
+title: Overview of threat protection scenario - Cloud App Security | Microsoft Docs
 description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 *Applies to: Microsoft Cloud App Security*

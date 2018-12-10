@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Working with discovered apps in Cloud App Security | Microsoft Docs
+title: Working with discovered apps in Cloud App Security
 description: This article describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Working with discovered apps

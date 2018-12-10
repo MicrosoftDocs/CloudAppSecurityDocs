@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What is Cloud App Security? | Microsoft Docs
-description: This topic describes Cloud App Security and how it works.
+title: What is Cloud App Security?
+description: This article describes Microsoft Cloud App Security and how it works.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,14 +22,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 
+# Microsoft Cloud App Security overview
+
 *Applies to: Microsoft Cloud App Security*
-
-
-# What is Microsoft Cloud App Security
 
 > [!NOTE]
 > For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
@@ -92,7 +90,7 @@ You can use policies to define your users' behavior in the cloud. Use policies t
 ## Related Videos
 - [Joining the security community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
-## See Also  
+## Next steps  
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 
