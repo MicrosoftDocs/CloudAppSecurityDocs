@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: SIEM integration with Cloud App Security | Microsoft Docs
+title: SIEM integration with Cloud App Security
 description: This article provides information integrating your SIEM with Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # SIEM integration
@@ -215,5 +215,5 @@ To delete the SIEM agent, click on the three dots at the end of the row for the 
   
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage alerts triggered in the Cloud App Security portal | Microsoft Docs
+title: Manage alerts raised in Cloud App Security
 description: This article explains how to work with alerts raised in the Cloud App Security portal.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Manage alerts
@@ -63,11 +63,17 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
          - You can contact the  user or the user's manager about the nature of the activity.
          - Leave the activity open until you have more information.  
 
-       - **Authorized violations or anomalous behavior** -  Authorized violations or anomalous behavior can result from legitimate use.  
+       - **Authorized violations or anomalous behavior** -  Authorized violations or anomalous behavior can result from legitimate use. <br>
+         - You can dismiss the alert.
 
-   - Dismiss the alert.  
 
-3. When you finish this process, mark the alert as resolved.  
+3. Any time you dismiss an alert, it's important to submit feedback about why you're dismissing the alert. The Cloud App Security team uses this feedback as an indication of the accuracy of the alert. This information is then used to fine-tune our machine learning models for future alerts. You can follow these guidelines in deciding how to categorize the alert:
+   - If legitimate use triggered the alert and it isn't a security issue, it could be one of these types: 
+
+     - Benign positive: The alert is accurate but the activity is legitimate. You can dismiss the alert and set the reason to **Actual severity is lower** or **Not interesting**.
+     -	False positive: The alert is inaccurate. Dismiss the alert and set the reason to **Alert is not accurate**.
+   - If there's too much noise to determine the legitimacy and accuracy of an alert, dismiss it and set the reason to **Too many similar alerts**.
+   - True positive: If the alert is related to an actual risky event that was either committed maliciously or unintentionally by an insider or outsider, you should set the event to **Resolve** after all appropriate action has been taken to remediate the event.
 
 ## Alert types
 
@@ -91,4 +97,4 @@ The following table provides a list of the types of alerts that can be triggered
 ## Next steps  
 For more information about investigating alerts, see [Investigate](investigate.md).  
 
-Premier customers can also choose Cloud App Security directly from the [Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  

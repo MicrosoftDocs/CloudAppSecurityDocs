@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Frequently Asked Questions about Cloud App Security | Microsoft Docs
+title: Frequently Asked Questions - Cloud App Security | Microsoft Docs
 description: This article provides frequently asked questions and answers about Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Frequently asked questions

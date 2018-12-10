@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Add custom apps to Cloud Discovery in Cloud App Security | Microsoft Docs
+title: Add custom apps to Cloud Discovery in Cloud App Security
 description: This topic provides information about how to add custom apps to Cloud Discovery in Cloud App Security to monitor Shadow IT.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Add custom apps to Cloud Discovery
@@ -67,6 +67,6 @@ In order to view all your custom apps, set the **App tag** filter to be equal to
 ## Next steps 
 [User activity policies](user-activity-policies.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

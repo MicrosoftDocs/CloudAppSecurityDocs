@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: API token management in Cloud App Security | Microsoft Docs
+title: API token management in Cloud App Security
 description: This article provides information about generating API tokens for Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # API tokens
@@ -84,7 +84,7 @@ After a token is revoked, it's removed from the table, and the software that was
 ## Next steps
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
 
 ## Check out this video!
 [Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  

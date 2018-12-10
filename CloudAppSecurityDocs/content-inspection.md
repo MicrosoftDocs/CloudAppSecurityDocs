@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How Cloud App Security performs content inspection  | Microsoft Docs
+title: How Cloud App Security performs content inspection
 description: This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Built-in content inspection
@@ -85,5 +85,5 @@ The Cloud App Security content inspection engine:
 ## Next steps
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   

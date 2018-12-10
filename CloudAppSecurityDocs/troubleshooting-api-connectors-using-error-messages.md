@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting App Connectors using error messages in Cloud App Security | Microsoft Docs
+title: Troubleshoot App Connector error messages - Cloud App Security | Microsoft Docs
 description: This article provides a list of API App connector error messages as well as resolution recommendations for each.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Troubleshooting App Connectors using error messages
@@ -72,4 +72,5 @@ App connector errors can be seen in the app connector dialog after attempting to
 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+

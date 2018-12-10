@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Use Cloud Discovery data to detect risky behavior | Microsoft Docs
+title: Use Cloud Discovery data to detect risky behavior - Cloud App Security | Microsoft Docs
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 *Applies to: Microsoft Cloud App Security*
@@ -121,6 +121,6 @@ To delete Cloud Discovery data:
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   
