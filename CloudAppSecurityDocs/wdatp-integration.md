@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Integrate Windows Defender Advanced Threat Protection with Cloud App Security | Microsoft Docs
-description: This article provides information about how to integrate Windows Defender ATP with Cloud App Security seamless integration and enhanced visibility into Shadow IT and risk management.
+title: Integrate Windows Defender ATP with Cloud App Security
+description: This article describes how to integrate Windows Defender Advanced Threat Protection with Cloud App Security for enhanced visibility into Shadow IT and risk management.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/3/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -24,15 +24,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
-
+# Windows Defender Advanced Threat Protection integration with Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
-
-
-# Windows Defender Advanced Threat Protection integration with Microsoft Cloud App Security
 
 Microsoft Cloud App Security integrates with Windows Defender Advanced Threat Protection (ATP) natively, to simplify roll out of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation. 
 
@@ -104,8 +101,8 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 ## Related Videos  
 [Shadow IT discovery beyond the corporate network with Windows Defender ATP and Cloud](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
 
-## See Also  
+## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   

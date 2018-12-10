@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What are the differences between Cloud App Security and Office 365 Cloud App Security? | Microsoft Docs
+title: Differences between Cloud App Security and Office 365 Cloud App Security
 description: This article describes the differences between Cloud App Security and Office 365 Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,8 @@ ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
+
 
 ---
 # What are the differences between Microsoft Cloud App Security and Office 365 Cloud App Security?
@@ -68,4 +69,4 @@ Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that p
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 
-Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).   

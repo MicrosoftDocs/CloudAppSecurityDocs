@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure automatic log upload for continuous reports in Cloud App Security | Microsoft Docs
-description: This topic provides information about how to upload logs to create automatic Cloud Discovery reports.
+title: Configure automatic log upload for continuous reports - Cloud App Security | Microsoft Docs
+description: This article provides information about how to upload logs to create automatic Cloud Discovery reports.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,8 +22,7 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 # Configure automatic log upload for continuous reports on a virtual appliance - Deprecated
 
@@ -175,4 +174,4 @@ After you've verified that the logs are being uploaded to Cloud App Security and
 ## Next steps 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  

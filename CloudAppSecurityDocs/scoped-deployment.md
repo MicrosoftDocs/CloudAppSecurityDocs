@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Scope your Microsoft Cloud App Security deployment | Microsoft Docs
+title: Scope your Microsoft Cloud App Security deployment
 description: This article provides information about how to scope your Cloud App Security deployment, including and excluding specific users or groups.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -21,7 +21,7 @@ ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Scoped deployment <a name="scoped-deployment"></a> 
@@ -96,6 +96,6 @@ The following user activities are monitored:
 ## Next steps  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

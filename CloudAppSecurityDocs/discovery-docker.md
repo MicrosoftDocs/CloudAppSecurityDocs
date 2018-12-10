@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure automatic log upload for continuous reports | Microsoft Docs
-description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security .
+title: Configure automatic log upload for continuous reports in Cloud App Security
+description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,8 +22,7 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 # Configure automatic log upload for continuous reports
 

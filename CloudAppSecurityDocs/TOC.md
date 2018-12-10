@@ -21,6 +21,7 @@
 ### [Integrate with Zscaler](zscaler-integration.md)
 ### [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 ### [Configure automatic log upload for continuous reports](discovery-docker.md)
+#### [Docker on Windows](discovery-docker-windows.md)
 #### [Docker on Ubuntu and RHEL on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
 #### [Using a virtual appliance - Deprecated](configure-automatic-log-upload-for-continuous-reports.md)

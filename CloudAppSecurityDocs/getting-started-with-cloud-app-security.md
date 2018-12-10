@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Deploy Cloud App Security for cloud app use insight and control | Microsoft Docs
-description: This article outlines the process for getting Cloud App Security up and running.
+title: Deploy Cloud App Security 
+description: This article outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/15/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,8 +22,7 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 
 # Deploy Microsoft Cloud App Security
@@ -174,4 +173,4 @@ These settings help give you better control of features in the console. With IP 
 
 Set policies [Control cloud apps with policies](control-cloud-apps-with-policies.md).    
 
-Premier customers can also choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).   
