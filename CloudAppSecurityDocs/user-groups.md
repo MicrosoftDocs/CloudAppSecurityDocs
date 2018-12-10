@@ -59,7 +59,8 @@ To import user groups:
 Importing groups enables you to select those groups as filters when investigating in the **Activity log** and when creating policies. 
 
 > [!NOTE]
-> Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
+> - Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
+> - After the initial sync, groups are updated every hour.
 
 For more information on using the User group filters, see [Activities](activity-filters.md).
 
@@ -69,6 +70,6 @@ For more information on using the User group filters, see [Activities](activity-
  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

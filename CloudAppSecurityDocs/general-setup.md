@@ -66,6 +66,6 @@ For portal access, it's necessary to add the following IP addresses to your Fire
 ## Next steps  
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

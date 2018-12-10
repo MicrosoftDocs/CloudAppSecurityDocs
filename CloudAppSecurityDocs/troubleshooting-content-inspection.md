@@ -53,8 +53,12 @@ The table lists each content inspection status and its description.
 > [!NOTE]
 > If you see a dash in the scan status, this means that the file is not queued to be scanned. See [File policies](data-protection-policies.md) for information on setting content inspection policies.
 
+## See Also  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+
 ## Next steps
  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

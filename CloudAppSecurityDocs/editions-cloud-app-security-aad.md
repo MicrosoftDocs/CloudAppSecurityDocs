@@ -59,4 +59,4 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 
-Premier customers also can choose Cloud App Security directly from the [Premier portal](https://premier.microsoft.com/).   
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).   

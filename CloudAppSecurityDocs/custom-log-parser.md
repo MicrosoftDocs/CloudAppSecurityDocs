@@ -97,3 +97,4 @@ To configure a custom parser:
 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
 
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  

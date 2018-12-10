@@ -215,5 +215,5 @@ To delete the SIEM agent, click on the three dots at the end of the row for the 
   
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
 

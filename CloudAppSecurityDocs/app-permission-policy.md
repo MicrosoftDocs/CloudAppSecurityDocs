@@ -55,6 +55,6 @@ Alternatively, you can also create the policy by clicking **Control** followed b
   ## Next steps 
   [Data protection policies](data-protection-policies.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

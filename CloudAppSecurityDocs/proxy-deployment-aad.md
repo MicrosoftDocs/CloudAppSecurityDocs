@@ -132,5 +132,5 @@ You're now ready to create [access policies](access-policy-aad.md) and [session 
 ## Next steps 
 [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   

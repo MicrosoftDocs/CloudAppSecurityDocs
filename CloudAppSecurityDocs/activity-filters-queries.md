@@ -165,6 +165,6 @@ Additionally, you can use the suggested queries as a starting point for a new qu
 ## Next steps 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new issue directly from the Premier portal.](https://premier.microsoft.com/)  
   
   

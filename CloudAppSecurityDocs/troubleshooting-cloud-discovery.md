@@ -47,13 +47,14 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 
 ## Log collector errors
 
-|Issue|Resolution|
-|----|----|
-|Could not connect to the log collector over FTP|  1. Verify that you're using FTP credentials and not SSH credentials. <br /> 2. Verify that the FTP client you're using isn't set to SFTP. |
-|Failed updating collector configuration| 1. Verify that you entered the latest access token. <br /> 2. Verify in your firewall that the log collector is allowed to initiate outbound traffic on port 443. |
-| Logs sent to the collector do not appear in the portal | 1. Check to see if there are failed parsing tasks in the Governance log.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;If so, troubleshoot the error with the Log Parsing error table above.<br /> 2. If not, check the data sources and Log collector configuration in the portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. In the Data source page, verify that the data source you're using is accurately configured. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. In the Log collectors page, verify that the data source is linked to the right log collector. <br /> 3. Check the local configuration of the on-premises log collector machine.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Sign in to the log collector over SSH and run the collector_config utility.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirm that your firewall or proxy is sending logs to the log collector using the protocol you defined (Syslog/TCP, Syslog/UDP, or FTP) and that it's sending them to the correct port and directory.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Run netstat on the machine and verify that it receives incoming connections from your firewall or proxy <br /> 4.   Verify that the log collector is allowed to initiate outbound traffic on port 443. |
-|Log collector status: Created | The log collector deployment wasn't completed. Complete the on-premise deployment steps according to the deployment guide.|
-| Log collector status: Disconnected|  No data received in the last 24 hours from any of the linked data sources.|
+|ISSUE | RESOLUTION |
+|--------|--|
+|Could not connect to the log collector over FTP| 1. Verify that you are using FTP credentials and not SSH credentials. <br />2. Verify that the FTP client you are using is not set to SFTP.  |
+|Failed updating collector configuration | 1. Verify that you entered the latest access token. <br />2. Verify in your firewall that the log collector is allowed to initiate outbound traffic on port 443.|
+|Logs sent to the collector do not appear in the portal | 1.  Check to see if there are failed parsing tasks in the Governance log.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;If so, troubleshoot the error with the Log Parsing error table above.<br /> 2. If not, check the data sources and Log collector configuration in the portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. In the Data source page, verify that the data source you are using is accurately configured. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. In the Log collectors page, verify that the data source is linked to the right log collector. <br /> 3. Check the local configuration of the on-premises log collector machine.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Log in to the log collector over SSH and run the collector_config utility.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirm that your firewall or proxy is sending logs to the log collector using the protocol you defined (Syslog/TCP, Syslog/UDP or FTP) and that it is sending them to the correct port and directory.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Run netstat on the machine and verify that it receives incoming connections from your firewall or proxy <br /> 4.   Verify that the log collector is allowed to initiate outbound traffic on port 443. |
+|Log collector status: Created | The log collector deployment was not completed. Complete the on-premise deployment steps according to the deployment guide.|
+|Log collector status: Disconnected | No data received in the last 24 hours from any of the linked data sources. |
+
 
 ## Discovery dashboard errors
 
@@ -65,5 +66,5 @@ You can track the processing of Cloud Discovery logs using the governance log. T
   
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
 

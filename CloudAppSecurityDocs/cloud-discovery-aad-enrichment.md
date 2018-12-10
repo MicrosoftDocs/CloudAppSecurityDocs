@@ -55,7 +55,7 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
   
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
     
       
   

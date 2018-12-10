@@ -31,6 +31,16 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
+
+## Cloud App Security release 138
+
+Released December 9, 2018
+
+- **Automatic log upload using Docker on Windows**<br>Cloud App Security now supports automatic log upload for Windows 10 (fall creators update) and Windows Server, version 1709 and later using a Docker for Windows.
+See [Docker on Windows on-premises](discovery-docker-windows.md) for more information and instructions on how this can be configured.
+- Cloud App Security integrates with [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) to provide custom alert automation and orchestration playbooks. For more information and integration instructions, see [Integrating with Microsoft Flow](flow-integration.md).
+
+
 ## Cloud App Security release 137
 
 Released November 25, 2018
@@ -320,6 +330,6 @@ Released January 7, 2018
 
 For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   
