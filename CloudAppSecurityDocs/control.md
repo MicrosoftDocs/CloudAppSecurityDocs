@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to use governance actions to control cloud app usage | Microsoft Docs
+title: How to use governance actions in Cloud App Security
 description: This article provides information about the governance actions you can take in Cloud App Security to control your organization's cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Control
@@ -107,4 +107,4 @@ Imagine this scenario: you're considering buying a productivity tool, and you ar
 ## Next steps
 To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
 
-Premier customers can also choose Cloud App Security directly from the [Premier Portal](https://premier.microsoft.com/).  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  

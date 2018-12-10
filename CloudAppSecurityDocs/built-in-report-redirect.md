@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to find deprecated built-in reports in Cloud App Security | Microsoft Docs
+title: Find deprecated built-in reports in Cloud App Security
 description: This article provides instructions for generating deprecated reports in Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: a9660e5b-d5bd-4a32-8cb9-0de70af6f1e9
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # How to find built-in deprecating reports
@@ -53,6 +53,6 @@ This table helps you view the information that was provided by the deprecating r
 ## Next steps 
 [Control](control.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

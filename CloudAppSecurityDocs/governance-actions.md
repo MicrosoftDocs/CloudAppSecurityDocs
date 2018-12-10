@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to apply governance actions to control connected apps | Microsoft Docs
+title: Governance actions to control connected apps - Cloud App Security | Microsoft Docs
 description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/15/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Governing connected apps
@@ -171,6 +171,6 @@ For information about how governance actions are treated when there are policy c
 ## Next steps 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/) 
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/) 
 
 

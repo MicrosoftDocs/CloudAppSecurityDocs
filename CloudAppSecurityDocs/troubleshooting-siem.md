@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting SIEM integration with Cloud App Security | Microsoft Docs
+title: Troubleshooting SIEM integration - Cloud App Security | Microsoft Docs
 description: This article provides a list of possible issues when connecting your SIEM to Cloud App Security and provides resolutions for each.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Troubleshooting the SIEM agent
@@ -60,4 +60,5 @@ After creating the agent, check the SIEM agent page in the Cloud App Security po
   
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+  

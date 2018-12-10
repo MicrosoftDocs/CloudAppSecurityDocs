@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Visibility into cloud app activities | Microsoft Docs
+title: Visibility into cloud app activities - Cloud App Security | Microsoft Docs
 description: This article provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Activities
@@ -140,6 +140,6 @@ In the **Activity log**, in the top right corner, click the **Export** button.
 ## Next steps  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

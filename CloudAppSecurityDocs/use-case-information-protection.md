@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Automatically apply Azure Information Protection classification labels | Microsoft Docs
-description: This topic describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
+title: Automatically apply Azure Information Protection classification labels
+description: This article describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,14 +22,13 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
+
 
 ---
+# Automatically apply Azure Information Protection classification labels
+
 *Applies to: Microsoft Cloud App Security*
-
-
-
-# Automatically apply Azure Information Protection classification labels  
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable that a partner who works with accounting uploads a document to your Box repository with the wrong permissions, and a week later you realize that your enterprise's confidential information was leaked to your competition. 
 
@@ -99,9 +98,9 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 > - Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, SharePoint and OneDrive for business.
 > - When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
- ## See Also  
+ ## Next steps
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

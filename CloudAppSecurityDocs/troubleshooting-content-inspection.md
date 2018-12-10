@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting content inspection errors in Cloud App Security | Microsoft Docs
+title: Troubleshooting content inspection errors - Cloud App Security | Microsoft Docs
 description: This article provides a list of content inspection statuses and their meanings.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Troubleshooting content inspection
@@ -53,8 +53,12 @@ The table lists each content inspection status and its description.
 > [!NOTE]
 > If you see a dash in the scan status, this means that the file is not queued to be scanned. See [File policies](data-protection-policies.md) for information on setting content inspection policies.
 
+## See Also  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+
 ## Next steps
  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  

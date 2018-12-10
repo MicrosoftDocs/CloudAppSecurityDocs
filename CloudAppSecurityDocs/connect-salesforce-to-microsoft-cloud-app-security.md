@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Connect Salesforce to Cloud App Security for visibility and control over use | Microsoft Docs
-description: This article provides information about how to connect your Salesforce to Cloud App Security using the API connector.
+title: Connect Salesforce to Cloud App Security
+description: This article provides information about how to connect your Salesforce to Cloud App Security using the API connector for visibility and control over use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -23,14 +23,14 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Connect Salesforce to Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft  Cloud App Security to your existing Salesforce account using the app connector API.  
+This article provides instructions for connecting Microsoft  Cloud App Security to your existing Salesforce account using the app connector API. This connection gives you visibility into and control over Salesforce use. 
   
 ## How to connect Salesforce to Cloud App Security  
   
@@ -125,6 +125,6 @@ Salesforce events are processed by Cloud App security as follows:
 ## Next steps  
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

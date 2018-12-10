@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Set IP ranges and tags | Microsoft Docs
+title: Set IP ranges and tags - Cloud App Security | Microsoft Docs
 description: This article provides instructions for working with IP tags and IP categories.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,8 +22,7 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 #  <a name="IPtagsandRanges"></a> Working with IP ranges and tags
 
@@ -83,6 +82,6 @@ In the menu bar, click the settings icon. Select **IP address ranges**. Click th
 ## Next steps
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

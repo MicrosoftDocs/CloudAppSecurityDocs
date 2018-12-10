@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to block downloads of sensitive data to unmanaged devices using Cloud App Security Conditional Access App Control| Microsoft Docs
-description: This topic describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
+title: Block downloads from unmanaged devices with Cloud App Security Conditional Access App Control
+description: This article  describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,14 +22,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
+# Block downloads of sensitive information using Microsoft Cloud App Security Conditional Access App Control
+
 *Applies to: Microsoft Cloud App Security*
-
-
-
-# Blocking downloads of sensitive information using Microsoft Cloud App Security Conditional Access App Control
 
 >[!div class="step-by-step"]
 [« PREVIOUS: How to create an access policy](access-policy-aad.md)
@@ -121,9 +119,10 @@ After completing this task, proceed to the Cloud App Security portal and create 
 
 
 
-## See Also  
+## Next steps
+  
 [Create a session policy](session-policy-aad.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
   

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Working with the Cloud App Security dashboard | Microsoft Docs
+title: Working with the Cloud App Security dashboard
 description: This article provides a foundation for how to use the Cloud App Security dashboard.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Working with the dashboard
@@ -57,4 +57,4 @@ We recommend you check the dashboard daily to see what new alerts have been trig
 ## Next steps  
 For more information about investigating alerts, see [Investigate](investigate.md).  
 
-Premier customers can also choose Cloud App Security directly from the [Premier Portal.](https://premier.microsoft.com/)  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
