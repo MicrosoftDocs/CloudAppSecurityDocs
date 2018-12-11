@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-[File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies. For instance, policies that find places where users stored sensitive information, credit card numbers, and third-party ICAP files in your cloud. With Microsoft Cloud App Security, not only can you detect these unwanted files stored in your cloud that leave you vulnerable, but you can take immediate action to stop them in their tracks and lock down the files that pose a threat. Using **Admin quarantine**, you can protect your files in the cloud and remediate problems, and prevent future leaks from occurring.
+[File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies. For instance, create file policies that find places where users stored sensitive information, credit card numbers, and third-party ICAP files in your cloud. With Microsoft Cloud App Security, not only can you detect these unwanted files stored in your cloud that leave you vulnerable, but you can take immediate action to stop them in their tracks and lock down the files that pose a threat. Using **Admin quarantine**, you can protect your files in the cloud and remediate problems, and prevent future leaks from occurring.
 
 >[!NOTE] 
 > - This is a preview feature.
@@ -81,10 +81,8 @@ ms.custom: seodec18
 > When you restore a file:
 > - Original shares are not restored, default folder inheritance applied.
 > - The restored file contains only the most recent version.
-> 
-> 
-> [!NOTE]
-> The quarantine folder site access management is the customer’s responsibility.
+> - The quarantine folder site access management is the customer’s responsibility.
+
 
 ## Set up admin quarantine
 
@@ -109,5 +107,3 @@ ms.custom: seodec18
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
