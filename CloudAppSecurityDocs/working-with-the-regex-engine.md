@@ -29,16 +29,22 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
  
-Microsoft Cloud App Security's content inspection policies use RegEx for pattern matching. Content inspection may be applied as part of file policies. To test regular expressions, you can use the following websites:  
+This article provides instructions for using RegEx for pattern matching in Cloud App Security policies.
+
+## Regular expressions in Cloud App Security
+
+Microsoft Cloud App Security's content inspection policies use RegEx for pattern matching. Content inspection may be applied as part of file policies.
+
+### Testing regular expressions
+
+To test regular expressions, you can use the following websites:  
   
-- [https://regexpal.com/](https://regexpal.com/)  
+- [https://regexpal.com/](https://regexpal.com/) - Make sure you select **Case insensitive**.  
   
-  - Make sure you select **Case insensitive**.  
-  
-- [https://regex101.com/](https://regex101.com/)  
-  
-  - Provides detailed analysis of the RegEx.  
-  
+- [https://regex101.com/](https://regex101.com/) - Provides detailed analysis of the RegEx.  
+
+### Limitations of regular expressions in Cloud App Security
+
 The following limitations are imposed on custom regular expressions:  
   
 - The search is always case-insensitive  
@@ -57,8 +63,9 @@ The following limitations are imposed on custom regular expressions:
   
 - Disallowed back-references: \\<number\> or \k\<name>  
   
-Example expressions  
-  
+### Example expressions  
+
+The following chart gives you example expressions and if they would match or not.
 
 |                                                               |                                                               |                                    |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|

@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# # Working with discovery data
+# Working with discovery data
 
 *Applies to: Microsoft Cloud App Security*
 
