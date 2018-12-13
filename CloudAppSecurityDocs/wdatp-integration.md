@@ -37,7 +37,7 @@ Microsoft Cloud App Security integrates with Windows Defender Advanced Threat Pr
 
 Microsoft Cloud App Security uses the traffic information collected by Windows Defender ATP about the cloud apps and services being accessed from IT-managed Windows 10 machines. The integration enables you to run Cloud Discovery on any machine in the corporate network, using public wifi, while roaming and over remote access. It also enables machine-based investigation.
 
-After you identify a risky user, you can check all the machines the user accessed to detect potential risks. If you identify a risky machine, check all the users who used it to detect potential risks. Logs from your endpoints routed to Cloud App Security provide user information for traffic activities. Windows Defender ATP network activity provides device context. Pair device context with the username to provide a full picture of which user did which activity from which machine, across your network.
+After you identify a risky user, you can check all the machines the user accessed to detect potential risks. If you identify a risky machine, check all the users who used it to detect potential risks. Logs from your endpoints routed to Cloud App Security provide user information for traffic activities. Windows Defender ATP network activity provides device context. Pair device context with the username to provide a full picture across your network of which user did which activity from which machine.
 
 Microsoft Cloud App Security uses the native integration with Windows Defender ATP to tap into data about cloud app and service traffic from managed Windows devices. The integration doesn't require any additional deployment and works out of the box. You don't need to route or mirror traffic from your endpoints or do complex integration steps.
 
@@ -102,7 +102,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 ## Related Videos
 
-[Shadow IT discovery beyond the corporate network with Windows Defender ATP and Cloud](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+[Shadow IT discovery beyond the corporate network with Windows Defender ATP and Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
 
 ## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md) 
