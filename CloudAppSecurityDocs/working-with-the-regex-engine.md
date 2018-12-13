@@ -65,7 +65,7 @@ The following limitations are imposed on custom regular expressions:
   
 ### Example expressions  
 
-The following chart gives you example expressions and if they would match or not.
+The following table gives you example expressions and if they would match or not.
 
 |                                                               |                                                               |                                    |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
