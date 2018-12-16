@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting Cloud App Security policies | Microsoft Docs
+title: Troubleshooting Cloud App Security policies
 description: This article describes the process for troubleshooting policy creation in Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Troubleshooting Microsoft Cloud App Security policies

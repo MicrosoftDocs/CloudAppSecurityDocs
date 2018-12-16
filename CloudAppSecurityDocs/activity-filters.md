@@ -1,13 +1,12 @@
 ---
 # required metadata
 
-title: Visibility into cloud app activities | Microsoft Docs
+title: Visibility into cloud app activities - Cloud App Security | Microsoft Docs
 description: This article provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod:
@@ -23,7 +22,7 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Activities
@@ -95,7 +94,6 @@ To view user insights:
 2. Then click on the **User** tab. <br></br> Clicking opens the Activity drawer **User** tab provides the following insights about the user:
     - **Open alerts**: The number of open alerts that involved the user.
     - **Matches**: The number of policy matches for files owned by the user. 
-   <!-- - **File violation**: The number of file violations for files owned by the user. -->
     - **Activities**: The number of activities performed by the user in the past 30 days.
     - **Countries**: The number of countries the user connected from in the past 30 days.
     - **ISPs**: The number of ISPs the user connected from in past 30 days.

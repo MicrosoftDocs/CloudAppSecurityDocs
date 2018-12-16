@@ -1,18 +1,20 @@
 ---
 # required metadata
 
-title: Create Cloud App Security access policies to allow and block access | Microsoft Docs
+title: Create Cloud App Security access policies to allow and block access
 description: This article describes the procedure for setting up a Cloud App Security Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
+
+
 
 # optional metadata
 
@@ -22,17 +24,16 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
-# Access policies 
+# Access policies
 
 *Applies to: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« PREVIOUS: How to create a session policy](session-policy-aad.md)<br>
 [NEXT: Explore popular use cases »](use-case-proxy-block-session-aad.md)
-
 
 Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
 

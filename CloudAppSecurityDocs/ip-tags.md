@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set IP ranges and tags | Microsoft Docs
+title: Set IP ranges and tags - Cloud App Security | Microsoft Docs
 description: This article provides instructions for working with IP tags and IP categories.
 keywords:
 author: rkarlin
@@ -22,8 +22,7 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: seodec18
 ---
 #  <a name="IPtagsandRanges"></a> Working with IP ranges and tags
 

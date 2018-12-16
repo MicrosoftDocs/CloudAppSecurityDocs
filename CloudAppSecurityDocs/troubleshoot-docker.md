@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting Cloud Discovery Docker Deployment | Microsoft Docs
+title: Troubleshooting Cloud Discovery Docker Deployment
 description: This article describes the process for modifying configuration for the Cloud App Security Cloud Discovery docker.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Troubleshooting the Microsoft Cloud App Security Cloud Discovery deployment

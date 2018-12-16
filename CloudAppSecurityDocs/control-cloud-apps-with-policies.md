@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Control cloud app usage by creating policies in Cloud App Security | Microsoft Docs
+title: Control cloud app usage by creating policies - Cloud App Security | Microsoft Docs
 description: This article provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Control cloud apps with policies
@@ -102,7 +102,7 @@ To create a policy from **Policy templates**, perform the following steps:
   
 1. In the console, click on **Control** followed by **Templates**.  
   
-    ![](./media/create-policy-from-template.png)  
+    ![Create the policy from a a template](./media/create-policy-from-template.png)  
   
 2. Click the **+** at the far right of the row of the template you want to use. A create policy page opens, with the pre-defined configuration of the template.  
   
