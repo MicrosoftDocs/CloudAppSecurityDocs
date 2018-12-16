@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -122,7 +122,9 @@ To view IP address insights:
         - Tag as VPN IP address and add to allowed list
         - Tag as Risky IP and add to blocked list
 
-
+   >[!NOTE]
+   > When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, impossible travel) because these IP addresses are considered trusted.
+   >
 ![IP address insights in Cloud App Security](./media/ip-address-insights.png)
 
 ## Export activities <a name="export"></a>
