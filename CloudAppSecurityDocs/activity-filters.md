@@ -7,8 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-
-ms.date: 12/10/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -95,7 +94,6 @@ To view user insights:
 2. Then click on the **User** tab. <br></br> Clicking opens the Activity drawer **User** tab provides the following insights about the user:
     - **Open alerts**: The number of open alerts that involved the user.
     - **Matches**: The number of policy matches for files owned by the user. 
-   <!-- - **File violation**: The number of file violations for files owned by the user. -->
     - **Activities**: The number of activities performed by the user in the past 30 days.
     - **Countries**: The number of countries the user connected from in the past 30 days.
     - **ISPs**: The number of ISPs the user connected from in past 30 days.
@@ -122,7 +120,9 @@ To view IP address insights:
         - Tag as VPN IP address and add to allowed list
         - Tag as Risky IP and add to blocked list
 
-
+   >[!NOTE]
+   > When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, impossible travel) because these IP addresses are considered trusted.
+   >
 ![IP address insights in Cloud App Security](./media/ip-address-insights.png)
 
 ## Export activities <a name="export"></a>
