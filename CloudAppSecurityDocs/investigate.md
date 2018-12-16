@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Investigate cloud app risks & suspicious activity with Cloud App Security | Microsoft Docs
+title: Investigate cloud app risks & suspicious activity - Cloud App Security | Microsoft Docs
 description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Investigate

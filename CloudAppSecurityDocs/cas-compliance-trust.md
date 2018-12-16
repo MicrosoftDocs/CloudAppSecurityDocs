@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Cloud App Security compliance, data security, privacy, trust | Microsoft Docs
-description: This topic describes the Cloud App Security compliance offering, trust center, privacy, and data security.
+title: Cloud App Security compliance, data security, privacy, trust
+description: This article describes the Cloud App Security compliance offering, trust center, privacy, and data security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -22,7 +22,7 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 # Microsoft Cloud App Security data security and privacy
@@ -70,7 +70,7 @@ For more information, go to [Microsoft Compliance Offerings](https://www.microso
 - In Microsoft Cloud App Security, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
 - Admins can search for a specific user’s metadata or user’s activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user’s activity history and security alerts related to the user.
 
-- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 - If you ever choose to terminate the service, you can take your data with you.
 
@@ -118,7 +118,7 @@ Microsoft Cloud App Security retains data as follows:
 
 - Alerts: 180 days
 
-You can learn more about Microsoft data practices by reading the [Online Service Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
