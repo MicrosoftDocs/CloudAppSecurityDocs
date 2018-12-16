@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -165,12 +165,12 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 
 To make sure that the docker installer is signed by Microsoft:
 1. Right click on the file and select **Properties**.
-2. Click on **General** and make sure that it says **This digital signature is OK**.  
-3. Click on **Digital Signatures** and make sure that Microsoft is listed in the **Signature list**.  
+2. Click on **Digital Signatures** and make sure that it says **This digital signature is OK**.  
+3. Make sure that **Microsoft Corporation** is listed as the sole entry under **Name of signer**.  
 
 ![Digital signature valid](./media/digital-signature-successful.png)
 
-If the digital signature is not valid, it will appear like this:
+If the digital signature is not valid, it will say **This digital signature is not valid**:
 
 ![Digital signature not valid](./media/digital-signature-unsuccessful.png)
 
