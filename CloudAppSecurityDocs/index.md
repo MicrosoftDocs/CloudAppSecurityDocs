@@ -100,7 +100,7 @@ Whether or not you’re in the cloud, your employees are. Bring the security of 
         </a>
     </li>
     <li>
-        <a href="https://support.microsoft.com/en-us/assistedsupportproducts"> 
+        <a href="/cloud-app-security/troubleshooting-status"> 
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
