@@ -2,13 +2,13 @@
 # required metadata
 
 title: Protect files with Cloud App Security admin quarantine
-description: This article describes the scenario for using admin quarantine to control data breaches.
+description: This tutorial describes the scenario for using admin quarantine to control data breaches.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -23,9 +23,9 @@ ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+#Customer intent: As a sec operator, I want to quarantine my files so that I don't have information leaks.
 ---
-# Protecting your files with admin quarantine
+# Tutorial: Protect files with admin quarantine
 
 *Applies to: Microsoft Cloud App Security*
 

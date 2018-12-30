@@ -2,13 +2,13 @@
 # required metadata
 
 title: Automatically apply Azure Information Protection classification labels
-description: This article describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
+description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -23,10 +23,10 @@ ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+#Customer intent: As a sec op, I want to apply AIP labels automatically so that I can monitor classified files.
 
 ---
-# Automatically apply Azure Information Protection classification labels
+# Tutorial: Automatically apply Azure Information Protection classification labels
 
 *Applies to: Microsoft Cloud App Security*
 

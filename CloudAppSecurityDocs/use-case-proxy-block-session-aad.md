@@ -2,13 +2,13 @@
 # required metadata
 
 title: Block downloads from unmanaged devices with Cloud App Security Conditional Access App Control
-description: This article  describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
+description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/4/2019
+ms.topic: tutorial
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -23,9 +23,9 @@ ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+#Customer intent: As a sec op, I want to block download of sensitive information so that I can control where my sensitive information is shared.
 ---
-# Block downloads of sensitive information using Microsoft Cloud App Security Conditional Access App Control
+# Tutorial: Block download of sensitive information 
 
 *Applies to: Microsoft Cloud App Security*
 
