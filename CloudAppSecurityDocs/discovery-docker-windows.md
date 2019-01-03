@@ -151,7 +151,7 @@ You can also go to the **Governance log** and verify that logs are being periodi
 
 If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### Optional - Create custom continuous reports
+### Optional - Create custom continuous reports <a name="continuous-reports"></a>
 
 Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 

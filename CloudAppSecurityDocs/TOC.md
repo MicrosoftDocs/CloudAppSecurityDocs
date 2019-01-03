@@ -70,8 +70,8 @@
 #### [Anomaly detection policies](anomaly-detection-policy.md)
 #### [OAuth policies](app-permission-policy.md)
 #### [File policies](data-protection-policies.md)
-##### Content inspection
-###### [Built-in content inspection](content-inspection.md)
+##### [Content inspection](content-inspection.md)
+###### [Built-in content inspection](content-inspection-built-in.md)
 ###### [Data Classification Service integration](dcs-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 #### Conditional Access App Control policies

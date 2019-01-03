@@ -55,17 +55,18 @@ Follow these steps to configure Azure AD apps to be controlled by Microsoft Clou
 
       ![Azure AD conditional access](./media/aad-conditional-access.png)
 
-   2. Click **New policy** and create a new policy. Make sure that under **Session** you select **Use Conditional Access App Control**.
-
-    
-   3. Directly in Azure AD, set the policy to **Monitor only** or **Block downloads**. Select **Use custom policy** to set advanced policy options in the Cloud App Security portal. 
-
-      ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
-
+   2. Click **New policy** and create a new policy and under **Session** select **Use Conditional Access App Control**.
+   
    3. In the TEST policy, under **Users**, assign a test user or user that can be used for an initial sign-on and verification.
     
    4. In the TEST policy, under **Cloud app**, assign the apps you want to control with Conditional Access App Control. 
 
+    
+   5. Set the policy to use either of the built-in policies, **Monitor only** or **Block downloads**. Or select **Use custom policy** to set an advanced policy in the Cloud App Security portal. 
+
+      ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
+
+  
       > [!NOTE]
       >Conditional Access App Control supports any SAML or Open ID Connect app that is configured with single sign-on in Azure AD, including these featured apps. Non-featured apps can be configured with access control in the Cloud App Security portal by making a request to onboarded them with session control. 
 
@@ -79,7 +80,7 @@ Cloud App Security will sync your policy details to its servers for each new app
 
 The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD.
 
-To configure an advanced policy, you can create an access policy or create a session policy in the Cloud App Security portal.
+To configure an advanced policy, create an access policy or a session policy in the Cloud App Security portal.
 
 To request support for a non-featured application:
 
@@ -94,21 +95,23 @@ To request support for a non-featured application:
 
 3. In the screen that opens, you can see all the apps that you logged into in the previous step. For each app, click on the + sign, and then click **Add**.
 
-> [!NOTE]
-> If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
+   > [!NOTE]
+   > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
+
+   ![Conditional access app control discovered Azure AD apps](./media/caac-discovered-aad-apps.png)
 
 4. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Azure AD conditional access** and **Session control** appear. 
    
-    ![Conditional access app control discovered Azure AD apps](./media/caac-discovered-aad-apps.png)
-
-> [!NOTE]
-> If Session control doesn't appear for an app, it's not yet available for that specific app. You'll see the **Request session control** link instead. 
-
-5. Click on it to request that the app be onboarded to session control. The onboarding process will be performed with you by the Microsoft Cloud App Security team.
- 
+   > [!NOTE]
+   > If Session control doesn't appear for an app, it's not yet available for that specific app. You'll see the **Request session control** link instead. 
+  
      ![Conditional access app control request](./media/caac-request.png)
+   
 
-6.	Optional - Identify devices using client certificates:
+5. Click **Request session control** to request that the app be onboarded to session control. The onboarding process will be performed with you by the Microsoft Cloud App Security team.
+ 
+
+6.	Identify devices using client certificates (optional).
     1.	Go to the settings cog and choose **Device identification**.
     2.	Upload a root certificate.
    
