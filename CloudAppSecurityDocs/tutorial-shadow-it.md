@@ -32,8 +32,13 @@ ms.suite: ems
 
 When IT admins are asked how many cloud apps they think their employees use, on average they say 30 or 40, when in reality, the average is over 1,000 separate apps being used by employees in your organization. Shadow IT helps you know and identify which apps are being used and what your risk level is. 80% of employees use non-sanctioned apps that no one has reviewed, and may not be compliant with your security and compliance policies. And because your employees are able to access your resources and apps from outside your corporate network, it's no longer enough to have rules and policies on your firewalls. 
 
-Cloud Discovery enables you to discover which apps are being used, explore the risk of these apps configure policies in order to identify new risky apps that are being used and to unsanction these apps in order to block them natively using your proxy or firewall appliance.
+This tutorial provides instructions for using Cloud Discovery to discover which apps are being used, explore the risk of these apps, configure policies to identify new risky apps that are being used, and to unsanction these apps in order to block them natively using your proxy or firewall appliance.
 
+> [!div class="checklist"]
+> * Discover and identify Shadow IT
+> * Evaluate and analyze
+> * Manage your apps
+> * Control sanctioned apps
  
 ## How to discover and manage Shadow IT in your network
 
@@ -41,7 +46,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 ![shadow IT lifecycle](./media/shadow-it-lifecycle.png)
 
-### Phase 1: Discover and identify
+### Phase 1: Discover and identify Shadow IT
     
 1. **Discover Shadow IT**: Identify your organization's security posture by running Cloud Discovery in your organization to see what's actually happening in your network. For more information see [Set up cloud discovery](set-up-cloud-discovery.md).This can be done using any of the following methods:
   
@@ -91,7 +96,7 @@ Configure [**App discovery policies**](cloud-discovery-policies.md). For example
 Look at the alerts page and use the **Policy type** filter to look at app discovery alerts. For apps that were matched by your app discovery policies, it is recommended that you do an advanced investigation to learn more about the business justification for using the app, for example, by contacting the users of the apps. Then, repeat the steps in Phase 2 to evaluate the risk of the app. Then determine next steps for the application, whether you approve use of it in the future or want to block it the next time a user accesses it, in which case you should tag it as unsanctioned so it can be blocked using your firewall, proxy, or secure web gateway. 
 
 
-### Phase 4: Advanced capabilities to control sanctioned apps
+### Phase 4: Control sanctioned apps
 
     1. To enable app control via APIs, [connect apps via API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) for continuous monitoring.
     2. Protect apps using [Conditional Access App Control](proxy-intro-aad.md).
