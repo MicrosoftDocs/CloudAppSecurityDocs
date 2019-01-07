@@ -2,13 +2,13 @@
 # required metadata
 
 title: Deploy Cloud App Security 
-description: This article outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
+description: This quickstart outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/7/2019
+ms.topic: quickstart
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -25,11 +25,11 @@ ms.suite: ems
 ms.custom: seodec18
 ---
 
-# Deploy Microsoft Cloud App Security
+#  Quickstart: Get started with Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity and helping to increase the protection of corporate data. In this article, we walk you through the steps you take to set up and work with Microsoft Cloud App Security.  
+This quickstart provides you with steps for getting up and running with Cloud App Security. Microsoft Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity and helping to increase the protection of corporate data. In this article, we walk you through the steps you take to set up and work with Microsoft Cloud App Security.  
 
 Your organization must have a license to use Cloud App Security. For more information, see the [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) section on the Cloud App Security home page.  
 
@@ -57,11 +57,7 @@ You can also access the portal through the **Office 365 Admin center** by clicki
 
 
 
-## Get started quickly with Cloud App Security  
-
- 
-
-### Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+## Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Required task: Connect apps
 
 1.From the settings cog, select   **App connectors**.
@@ -72,7 +68,7 @@ Required task: Connect apps
 After you connect an app, you can gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment.
 
 
-### Step 2. [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+## Step 2. [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 Required task: Create policies
 
 **To create policies**
@@ -87,7 +83,7 @@ Required task: Create policies
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
 
-### Step 3. [Set up Cloud Discovery](set-up-cloud-discovery.md).
+## Step 3. [Set up Cloud Discovery](set-up-cloud-discovery.md).
 
 Required task: Enable Cloud App Security to view your cloud app use
 
@@ -108,7 +104,7 @@ Required task: Enable Cloud App Security to view your cloud app use
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
-### Step 4. [Personalize your experience](mail-settings.md).
+## Step 4. [Personalize your experience](mail-settings.md).
 Recommended task: Add your organization details
 
 **To enter email settings**
@@ -137,7 +133,7 @@ Some features work best when they're customized to your needs.
 Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization’s preferences.
 
 
-### Step 5. [Organize the data according to your needs](ip-tags.md).
+## Step 5. [Organize the data according to your needs](ip-tags.md).
 Recommended task: Configure important settings
 
 **To create IP address tags**
