@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -81,12 +81,14 @@ To create a new file policy, follow this procedure:
 
 8. Under the second **Apply to** filter, select either **all file owners**, **file owners from selected user groups** or **all file owners excluding selected groups**. Then select the relevant user groups to determine which users and groups should be included in the policy.
   
-9. Select the **Content inspection method**. The built-in DLP allows you to filter files by their content. To scan files for content, next select **Built-in DLP**. Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions, either as a substring or a [regular expression](working-with-the-regex-engine.md) of your own.  <br></br>
+9. Select the **Content inspection method**. You can select either [**Built-in DLP**](content-inspection-built-in.md) or [**Data Classification Services**](content-inspection.md). We recommend using **Data Classification Services**.
+
+Once content inspection is enabled, you can choose to use preset expressions or to search for other customized expressions.  <br></br>
 
    In addition, you can specify a regular expression to exclude a file from the results. This option is highly useful if you have an inner classification keyword standard that you want to exclude from the policy. <br></br> 
    You can decide set the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.  <br></br>
-   When content is matched against the selected expression, the violation text is replaced with "X" characters. By default, violations are masked and shown in their context displaying 100 characters before and after the violation. Numbers in the context of the expression are replaced with “#” characters and are never stored within Cloud App Security. You can select the option to **Unmask the last four characters of a violation** to unmask the last four characters of the violation itself. It's necessary to set which data types the regular expression searches: content, metadata and/or file name. By default it searches the content and the metadata. Select at least one data type to search or the regular expression can't function and the policy can't be created. 
-  
+   When content is matched against the selected expression, the violation text is replaced with "X" characters. By default, violations are masked and shown in their context displaying 100 characters before and after the violation. Numbers in the context of the expression are replaced with “#” characters and are never stored within Cloud App Security. You can select the option to **Unmask the last four characters of a violation** to unmask the last four characters of the violation itself. It's necessary to set which data types the regular expression searches: content, metadata and/or file name. By default it searches the content and the metadata. 
+   
 10. Choose the **Governance** actions you want Cloud App Security to take when a match is detected.  
   
 11. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. The policy is automatically enabled upon creation and starts scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It's recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button in the Filters section.  
