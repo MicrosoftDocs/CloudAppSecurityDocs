@@ -2,13 +2,13 @@
 # required metadata
 
 title: Working with discovered apps in Cloud App Security
-description: This article describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
+description: This quickstart describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/10/2019
+ms.topic: quickstart
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -25,11 +25,11 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Working with discovered apps
+# Quickstart: Work with discovered apps
 
 *Applies to: Microsoft Cloud App Security*
 
-The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
+This quickstart provides you with getting started information about how to monitor and manage discovered apps. The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
 
 ![cloud discovery dashboard](./media/cloud-discovery-dashboard.png)
 

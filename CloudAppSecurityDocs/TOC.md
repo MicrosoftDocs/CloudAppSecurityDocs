@@ -9,7 +9,7 @@
 
 # Quickstarts
 ## [Getting started](getting-started-with-cloud-app-security.md)
-## [Working with discovered apps](discovered-apps.md)
+## [Work with discovered apps](discovered-apps.md)
 
 
 # Tutorials
