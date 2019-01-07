@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2019
+ms.date: 1/7/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -47,24 +47,21 @@ Follow these steps to configure Azure AD apps to be controlled by Microsoft Clou
 > [!NOTE]
 > To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
 
-## Step 1: Add Azure AD apps in Cloud App Security <a name="add-azure-ad"></a>  
+## Step 1: Create an Azure AD conditional access test policy <a name="add-azure-ad"></a>  
 
-1. Create an Azure AD conditional access TEST policy.
+1. In Azure Active Directory, under **Security**, click on **Conditional access**.
 
-   1. In Azure Active Directory, under **Security**, click on **Conditional access**.
-
-      ![Azure AD conditional access](./media/aad-conditional-access.png)
-
-   2. Click **New policy** and create a new policy and under **Session** select **Use Conditional Access App Control**.
+2. Click **New policy** and create a new policy.
    
-   3. In the TEST policy, under **Users**, assign a test user or user that can be used for an initial sign-on and verification.
+3. In the TEST policy, under **Users**, assign a test user or user that can be used for an initial sign-on and verification.
     
-   4. In the TEST policy, under **Cloud app**, assign the apps you want to control with Conditional Access App Control. 
-
+4. In the TEST policy, under **Cloud app**, assign the apps you want to control with Conditional Access App Control. 
     
-   5. Set the policy to use either of the built-in policies, **Monitor only** or **Block downloads**. Or select **Use custom policy** to set an advanced policy in the Cloud App Security portal. 
+5. Under **Session**, set the policy to use either of the built-in policies, **Monitor only** or **Block downloads**. Or select **Use custom policy** to set an advanced policy in the Cloud App Security portal. 
 
-      ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
+6. Add any applicable **Condition assignments** or **Grant controls** (optional).
+
+   ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
 
   
       > [!NOTE]
@@ -80,7 +77,7 @@ Cloud App Security will sync your policy details to its servers for each new app
 
 The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD.
 
-To configure an advanced policy, create an access policy or a session policy in the Cloud App Security portal.
+To configure an advanced policy, create an [access policy](access-policy-aad.md) or a [session policy](session-policy-aad.md) in the Cloud App Security portal.
 
 To request support for a non-featured application:
 
@@ -113,7 +110,7 @@ To request support for a non-featured application:
 
 6.	Identify devices using client certificates (optional).
     1.	Go to the settings cog and choose **Device identification**.
-    2.	Upload a root certificate.
+    2.	Upload one or more root or intermediate certificates.
    
     3. After the certificate is uploaded, you can create access policies and session policies based on **Device tag** and **Valid client certificate**.
 
@@ -129,16 +126,13 @@ To request support for a non-featured application:
 
 2. In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
 
-3. You can filter by clicking on **Advanced**, and then filtering using **Source equals Azure Active Directory conditional access**.
+3. You can filter by clicking on **Advanced**, and then filtering using **Source equals Access control**.
 
     ![Filter using Azure AD conditional access](./media/sso-logon.png)
 
 4. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.<br></br>
    To verify that the activity is properly captured, click on a single sign-on log on activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
  
-   ![test user agent tag](./media/domain-joined.png)
-
-
 
 >[!div class="step-by-step"]
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
