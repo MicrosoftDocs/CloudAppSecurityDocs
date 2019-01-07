@@ -2,13 +2,13 @@
 # required metadata
 
 title: Block downloads from unmanaged devices with Cloud App Security Conditional Access App Control
-description: This article  describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
+description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/4/2019
+ms.topic: tutorial
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -23,16 +23,21 @@ ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+#Customer intent: As a sec op, I want to block download of sensitive information so that I can control where my sensitive information is shared.
 ---
-# Block downloads of sensitive information using Microsoft Cloud App Security Conditional Access App Control
+# Tutorial: Block download of sensitive information 
 
 *Applies to: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« PREVIOUS: How to create an access policy](access-policy-aad.md)
 
-Today's IT admin is stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data? **This use case allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
+Today's IT admin is stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data? **This tutorial allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
+
+> [!div class="checklist"]
+> * Create a block download policy for unmanaged devices
+> * Validate your policy
+
 
 ## The threat
 
