@@ -98,8 +98,9 @@ Look at the alerts page and use the **Policy type** filter to look at app discov
 
 ### Phase 4: Control sanctioned apps
 
-    1. To enable app control via APIs, [connect apps via API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) for continuous monitoring.
-    2. Protect apps using [Conditional Access App Control](proxy-intro-aad.md).
+1. To enable app control via APIs, [connect apps via API](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) for continuous monitoring.
+
+2. Protect apps using [Conditional Access App Control](proxy-intro-aad.md).
 
 
 The nature of cloud apps means that they are updated daily and new apps appear all the time. Because of this,  employees are continuously using new apps and it's important to keep tracking and reviewing and updating your policies, checking which apps your users are using, as well as their usage and behavior patterns. You can always go to the Cloud Discovery dashboard and see what new apps are being used, and follow the instructions in this article again to make sure your organization and your data are protected.
