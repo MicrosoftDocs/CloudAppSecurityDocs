@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -53,10 +53,10 @@ Conditional Access App Control now supports adding and using multiple trusted ro
 - **New Cloud Discovery role** (gradual roll out)
 Cloud App Security now provides a new admin role for Cloud Discovery users. This role can be used in order to scope the access of an admin user to only Cloud Discovery settings and data within the Cloud App Security portal.
 
-- **Support for Microsoft Information Protection unified labels**
+- **Support for Microsoft Information Protection unified labels** (gradual roll out)
 Cloud App Security now supports Microsoft Information Protection unified labels. For customers that already [migrated their classification labels for the Office 365 Security and Compliance Center](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), Cloud App Security will identify and work with these labels as described in [Integrating with Azure Information Protecion](azip-integration.md). 
 
-**Support for PDF file labeling**
+**Support for PDF file labeling** (gradual roll out)
 For customers using unified labels, Cloud App Security now supports auto-labeling for PDF files.
 
 ## Cloud App Security release 138
