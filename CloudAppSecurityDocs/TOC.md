@@ -1,13 +1,29 @@
-# Understand & Explore
-## [What is Cloud App Security?](what-is-cloud-app-security.md)
+# Microsoft Cloud App Security
+# [Overview](what-is-cloud-app-security.md)
 ## [Cloud App Security data security and privacy](cas-compliance-trust.md)
 ## [What's new?](release-notes.md)
 ### [Past-release archive](release-note-archive.md)
 ## Compare
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
-# Deploy
+
+# Quickstarts
 ## [Getting started](getting-started-with-cloud-app-security.md)
+## [Work with discovered apps](discovered-apps.md)
+
+
+# Tutorials
+## [Discover and manage shadow IT](tutorial-shadow-it.md)
+## [Block downloads of sensitive information](use-case-proxy-block-session-aad.md)
+## [Protecting your files with admin quarantine](use-case-admin-quarantine.md)
+## [Apply Azure Information Protection labels automatically](use-case-information-protection.md)
+
+# Concepts
+## [Protect apps with Conditional Access App Control](proxy-intro-aad.md)
+## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
+## [Working with the risk score](risk-score.md)
+
+# How-to guides
 ## [Basic set up](general-setup.md)
 ### [Network requirements](network-requirements.md)
 ### [Manage admins](manage-admins.md)
@@ -24,6 +40,7 @@
 #### [Docker on Windows](discovery-docker-windows.md)
 #### [Docker on Ubuntu and RHEL on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
+#### [Log collector behind a proxy](log-collector-proxy.md)
 #### [Using a virtual appliance - Deprecated](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Use the custom log parser](custom-log-parser.md)
 ### [Cloud Discovery enrichment](cloud-discovery-aad-enrichment.md)
@@ -38,20 +55,11 @@
 ### [Connect Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 ### [Connect ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
-## [Protect apps with Conditional Access App Control](proxy-intro-aad.md)
-### [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)
-# Use
-## [Working with the dashboard](daily-activities-to-protect-your-cloud-environment.md)
-## Scenarios
-### [Block downloads of sensitive information](use-case-proxy-block-session-aad.md)
-### [Protecting your files with admin quarantine](use-case-admin-quarantine.md)
-### [Apply Azure Information Protection labels automatically](use-case-information-protection.md)
+## [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)
 ## Discover
-### [Working with discovered apps](discovered-apps.md)
-#### [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
-#### [Discovered app filters and queries](discovered-app-queries.md)
-### [Working with the risk score](risk-score.md)
-## [Investigate](investigate.md)
+### [Add custom apps to Cloud Discovery](cloud-discovery-custom-apps.md)
+### [Discovered app filters and queries](discovered-app-queries.md)
+## [Investigation](investigate.md)
 ### [Activities](activity-filters.md)
 #### [Activity filters and queries](activity-filters-queries.md)
 ### [Files](file-filters.md)
@@ -69,8 +77,8 @@
 #### [Anomaly detection policies](anomaly-detection-policy.md)
 #### [OAuth policies](app-permission-policy.md)
 #### [File policies](data-protection-policies.md)
-##### Content inspection
-###### [Built-in content inspection](content-inspection.md)
+##### [Content inspection](content-inspection.md)
+###### [Built-in content inspection](content-inspection-built-in.md)
 ###### [Data Classification Service integration](dcs-inspection.md)
 ##### [Working with the RegEx engine](working-with-the-regex-engine.md)
 #### Conditional Access App Control policies
@@ -83,8 +91,9 @@
 ### [Azure Information Protection integration](azip-integration.md)
 ### [SIEM integration](siem.md)
 ### [External DLP integration](icap-stunnel.md)
+### [Integrate with Microsoft Flow](flow-integration.md)
 ### [API tokens](api-tokens.md)
-# Troubleshoot
+# Reference
 ## [Troubleshooting service status](troubleshooting-status.md)
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
@@ -92,3 +101,7 @@
 ## [Troubleshooting SIEM integration](troubleshooting-siem.md)
 ## [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
 ## [Troubleshooting policies](troubleshoot-policies.md)
+# Resources
+## [Premier support portal](https://premier.microsoft.com/)
+## [Cloud Apps Security portal](https://portal.cloudappsecurity.com)
+## [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)

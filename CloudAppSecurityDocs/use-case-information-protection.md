@@ -2,13 +2,13 @@
 # required metadata
 
 title: Automatically apply Azure Information Protection classification labels
-description: This article describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
+description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
@@ -23,23 +23,21 @@ ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+#Customer intent: As a sec op, I want to apply AIP labels automatically so that I can monitor classified files.
 
 ---
-# Automatically apply Azure Information Protection classification labels
+# Tutorial: Automatically apply Azure Information Protection classification labels
 
 *Applies to: Microsoft Cloud App Security*
 
-In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition.
+In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Cloud App Security helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
 
-Microsoft Cloud App Security helps you prevent this kind of disaster before it happens.
+This tutorial helps you identify which public permissions are set on a document that's saved in your cloud storage, so you are alerted when a breach occurs. In addition, you can automatically apply your Azure Information Protection **Confidential** classification label to provide added encryption to files.
 
-Microsoft Cloud App Security identifies public permissions are on a document that's saved in your Box account and uses a classification engine that identifies there's confidential information in it. An alert is sent to let you know this issue occurred. Then, Cloud App Security automatically applies your Azure Information Protection **Confidential** classification label to provide added encryption to the file.
+> [!div class="checklist"]
+> * Set up data protection 
+> * Validate your policy
 
->[!NOTE]
->
-> - Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
-> - This feature is available for Box, SharePoint and OneDrive for Business.
 
 ## Enhanced data-level encryption protection
 
@@ -60,7 +58,7 @@ Use Cloud App Security with Azure Information Protection to embed classification
 - [Enable Cloud App Security and Azure Information Protection](azip-integration.md) for your tenant.
 - [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Cloud App Security.
 
-## Setting up data protection
+## Set up data protection
 
 Let's set up a policy that looks for credit card numbers in files stored in your Box account. When files are found, automatically apply an Azure Information Protection label and control what happens to all files with that label.
 
@@ -91,7 +89,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
     2. You can investigate the match by clicking on a specific match to open the file drawer. In the drawer, you can see the other policies that this file matched.
 
-## Validating your policy
+## Validate your policy
 
 1. To simulate an alert, go to your Box account and try to access a file in the folder **Customer data**.
 2. Go to the policy report. A file policy match should appear shortly. 

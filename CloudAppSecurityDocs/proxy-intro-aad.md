@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -122,6 +122,7 @@ Session control is available for any browser on any major platform. Mobile apps 
 - SharePoint Online (preview)
 - Azure DevOps (Visual Studio Team Services) (preview)
 - Yammer (preview)
+- Microsoft Flow (preview)
 
 
 

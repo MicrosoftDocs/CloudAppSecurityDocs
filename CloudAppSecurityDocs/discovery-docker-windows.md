@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -151,7 +151,7 @@ You can also go to the **Governance log** and verify that logs are being periodi
 
 If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### Optional - Create custom continuous reports
+### Optional - Create custom continuous reports <a name="continuous-reports"></a>
 
 Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
@@ -165,12 +165,12 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 
 To make sure that the docker installer is signed by Microsoft:
 1. Right click on the file and select **Properties**.
-2. Click on **General** and make sure that it says **This digital signature is OK**.  
-3. Click on **Digital Signatures** and make sure that Microsoft is listed in the **Signature list**.  
+2. Click on **Digital Signatures** and make sure that it says **This digital signature is OK**.  
+3. Make sure that **Microsoft Corporation** is listed as the sole entry under **Name of signer**.  
 
 ![Digital signature valid](./media/digital-signature-successful.png)
 
-If the digital signature is not valid, it will appear like this:
+If the digital signature is not valid, it will say **This digital signature is not valid**:
 
 ![Digital signature not valid](./media/digital-signature-unsuccessful.png)
 
