@@ -3,8 +3,7 @@ documentType: LandingData
 title: Microsoft Cloud App Security
 metadata:
   title: Microsoft Cloud App Security
-  description: Provide enterprise-grade security for your cloud apps with Microsoft Cloud App Security.
-Whether or not you’re in the cloud, your employees are. Bring the security of your on-premises systems to your cloud applications—both approved and unapproved—for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
+  description: Provide enterprise-grade security for your cloud apps with Microsoft Cloud App Security, for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
   author: msmbaldwin
   manager: mbaldwin
   ms.prod: cloud-app-security
