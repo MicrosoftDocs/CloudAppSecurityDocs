@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -31,6 +31,33 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
+
+## Cloud App Security release 139, 140
+
+Released January 6, 2019
+
+- **Change in file detection**<br>
+Files shared with everyone in SharePoint and One Drive are now considered **internal** [due to changes made to SharePoint and One Drive](https://support.microsoft.com/help/4089534/how-to-grant-the-everyone-claim-to-external-users-in-office-365). So if a file is detected that is shared with everyone, it will now be treated as an internal file – this affects how the file is handled by policies and shown in the files page.
+
+- **Change in file monitoring**<br>
+The default file monitoring behavior changed for new and idle customers. You will now need to turn on file monitoring to enable the feature, via **Settings** > **Files**. Existing active customers will not be affected by this change. 
+
+- **Advanced tuning for anomaly detection policies**<br>
+You can now affect the anomaly detection engine to suppress or surface alerts according to your preferences. 
+   - In the Impossible Travel policy, you can set the sensitivity slider to determine the level of anomalous behavior needed before an alert is triggered. 
+   - You can also configure whether the alerts for Activity from infrequent country, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or just successful logins. 
+
+-	**Support for multiple trust chains**
+Conditional Access App Control now supports adding and using multiple trusted root or intermediate certificates as a form of device management.
+
+- **New Cloud Discovery role** (gradual roll out)
+Cloud App Security now provides a new admin role for Cloud Discovery users. This role can be used in order to scope the access of an admin user to only Cloud Discovery settings and data within the Cloud App Security portal.
+
+- **Support for Microsoft Information Protection unified labels** (gradual roll out)
+Cloud App Security now supports Microsoft Information Protection unified labels. For customers that already [migrated their classification labels for the Office 365 Security and Compliance Center](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels), Cloud App Security will identify and work with these labels as described in [Integrating with Azure Information Protecion](azip-integration.md). 
+
+**Support for PDF file labeling** (gradual roll out)
+For customers using unified labels, Cloud App Security now supports auto-labeling for PDF files.
 
 ## Cloud App Security release 138
 
