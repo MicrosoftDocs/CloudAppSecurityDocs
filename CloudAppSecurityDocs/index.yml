@@ -1,0 +1,65 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Microsoft Cloud App Security
+metadata:
+  title: Microsoft Cloud App Security
+  description: Provide enterprise-grade security for your cloud apps with Microsoft Cloud App Security, for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
+  author: msmbaldwin
+  manager: mbaldwin
+  ms.prod: cloud-app-security
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 01/22/2019
+  ms.author: mbaldwin
+  layout: LandingPage
+abstract:
+  description: Microsoft Cloud App Security (MCAS) provides enterprise-grade security for your cloud apps, bringing the security of your on-premises systems to your cloud applications for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
+sections:
+- title: Learn More
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: Learn More about Microsoft Cloud App Security.
+      href: what-is-cloud-app-security.md
+      image: 
+        src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        href: what-is-cloud-app-security.md
+    - title:  MCAS data security and privacy
+      href: cas-compliance-trust.md
+      image: 
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+        href: cas-compliance-trust.md
+    - title:  What's New with MCAS
+      href: release-notes.md
+      image: 
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        href: release-notes.md
+- title: 5-Minute Quickstarts
+  items:
+  - type: paragraph
+    text: Learn the fundamentals of Microsoft Cloud App Security.
+  - type: list
+    style: icon48
+    items: 
+    - image: 
+        src: https://docs.microsoft.com/media/common/i_design.svg
+      text: Get started with Microsoft Cloud App Security
+      href: getting-started-with-cloud-app-security.md
+    - image: 
+        src: https://docs.microsoft.com/media/common/i_event.svg
+      text: Work with discovered apps
+      href: discovered-apps.md
+- title: Step-by-Step Tutorials
+  items:
+  - type: paragraph
+    text: Learn to understand alerts and undertake investigations with these tutorials.
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/cloud-app-security/tutorial-shadow-it">Discover and manage shadow IT in your network</a>
+    - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Block download of sensitive information</a>
+    - html: <a href="/cloud-app-security/use-case-admin-quarantine">Protect files with admin quarantine</a>
+    - html: <a href="/cloud-app-security/use-case-information-protection">Apply Azure Information Protection classification labels</a>
