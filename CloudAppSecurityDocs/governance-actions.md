@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -85,8 +85,6 @@ The following governance actions can be taken for connected apps either on a spe
     - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level. 
 
     - **User email notification** – Email messages can be customized and will be sent to all violating file owners. 
-
-    - **CC manager** – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
 
     - **Notify additional users** – Specific list of email addresses that will receive these notifications. 
 

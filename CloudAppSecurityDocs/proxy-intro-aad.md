@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/11/2019
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -96,33 +96,36 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 > [!NOTE]
 > Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
 
-Session control is available for any browser on any major platform. Mobile apps and desktop apps can also be blocked or allowed. By natively integrating with Azure AD, any apps that are configured with SAML or Open ID Connect apps with single sign-on in Azure AD can be supported, including the following featured apps:
+**Session control is available for any browser on any major platform on any operating system**. Mobile apps and desktop apps can also be blocked or allowed. By natively integrating with Azure AD, any apps that are configured with SAML or Open ID Connect apps with single sign-on in Azure AD can be supported, including the following featured apps:
 
 - AWS
+- Azure DevOps (Visual Studio Team Services) (preview)
+- Azure portal (preview)
 - Box
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
 - Egnyte
+- Exchange Online (preview)
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
+- OneDrive for Business (preview)
+- LinkedIn Learning
+- Power BI (preview)
 - Salesforce
 - ServiceNow
+- SharePoint Online (preview)
 - Slack
 - Tableau
+- Microsoft Teams (preview)
 - Workday
 - Workiva
 - Workplace by Facebook
-- Exchange Online (preview)
-- OneDrive for Business (preview)
-- Power BI (preview)
-- SharePoint Online (preview)
-- Azure DevOps (Visual Studio Team Services) (preview)
 - Yammer (preview)
-- Microsoft Teams (preview)
+
 
 
 

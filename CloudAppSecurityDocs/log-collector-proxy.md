@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/1/2019
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
