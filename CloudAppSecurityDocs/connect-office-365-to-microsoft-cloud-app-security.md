@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -45,7 +45,7 @@ Cloud App Security supports the following Office 365 apps:
 - Teams (only appears after activities from Teams are detected in the portal)
 - Power BI (only appears after activities from Power BI are detected in the portal, and requires you to turn on auditing)
 - Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
-
+- Dynamics 365
  
 ## How to connect Office 365 to Cloud App Security  
   
