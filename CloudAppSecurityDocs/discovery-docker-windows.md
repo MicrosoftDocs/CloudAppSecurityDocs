@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/16/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -33,7 +33,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Technical requirements
 
-- OS: Windows 10 (fall creators update) and Windows Server, version 1709+ 
+- OS: **Windows 10** (fall creators update) and Windows Server **version 1709+**
 
 - Disk space: 250 GB
 
@@ -42,6 +42,8 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 - RAM: 4 GB
 
 - Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
+
+- Virtualization on the operating system must be enabled with Hyper-V
 
 ## Log collector performance
 

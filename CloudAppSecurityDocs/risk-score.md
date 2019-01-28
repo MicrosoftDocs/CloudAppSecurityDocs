@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -108,7 +108,7 @@ Cloud Discovery provides you with important data regarding the credibility and r
   
 - **Compliance** - This category displays which common best-practice compliance standards are upheld by the company that produces the app. The list of specifications includes standards such as HIPAA, CSA, and PCI-DSS.  
 
-- **Legal**: This category displays which apps have which regulations and policies in-place to ensure data protection and privacy of the app's users such as GDPR, DMCA, and data retention policy.
+- **Legal** - This category displays which apps have which regulations and policies in-place to ensure data protection and privacy of the app's users such as GDPR, DMCA, and data retention policy.
   
 Each of the categories is composed of many specific properties. According to the Cloud App Security scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly. However, continuous properties, such as domain age, will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category to create the category's subscore. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.  
   

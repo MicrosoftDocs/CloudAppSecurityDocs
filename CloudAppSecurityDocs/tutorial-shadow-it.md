@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 1/28/2019
 ms.topic: tutorial
 ms.prod:
 ms.service: cloud-app-security
@@ -49,15 +49,15 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 ### Phase 1: Discover and identify Shadow IT
     
 1. **Discover Shadow IT**: Identify your organization's security posture by running Cloud Discovery in your organization to see what's actually happening in your network. For more information see [Set up cloud discovery](set-up-cloud-discovery.md).This can be done using any of the following methods:
-  
-    - Integrate Cloud App Security with your proxy. Cloud App Security natively integrates with some third-party proxies, including [Zscaler](zscaler-integration.md).
-    
+   
     - Get up and running quickly with Cloud Discovery by integrating with [Windows Defender ATP](wdatp-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
    
     - For coverage on all devices connected to your network, it's important to deploy the [Cloud App Security log collector](discovery-docker.md) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 
-
-Because policies are different across user groups, regions and business groups, you might want to create a dedicated Shadow IT report for each of these units. For more information, see (discovery-docker-windows#continuous-reports).
+   - Integrate Cloud App Security with your proxy. Cloud App Security natively integrates with some third-party proxies, including [Zscaler](zscaler-integration.md).
+   
+ 
+Because policies are different across user groups, regions and business groups, you might want to create a dedicated Shadow IT report for each of these units. For more information, see [Docker on Windows on-premises](discovery-docker-windows#continuous-reports).
 
 
 Now that Cloud Discovery is running on your network, look at the continuous reports that are generated and look at the [Cloud Discovery dashboard](working-with-cloud-discovery-data.md) to get a full picture of what apps are being used in your organization. It's a good idea to look at them by category, because you will often find that non-sanctioned apps are being used for legitimate work-related purposes that were not addressed by a sanctioned app. 
@@ -84,10 +84,10 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
     
 - **Manage cloud apps**: Cloud App Security helps you with the process for managing app use in your organization. After you identified the different patterns and behaviors used in your organization, you can create new custom app tags in order to classify each app according to its business status or justification.
 These tags can be then used for specific monitoring purposes, for example, identify high traffic that is going to apps that are tagged as risky cloud storage apps. App tags can be managed under **Cloud Discovery settings** > **App tags**. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
-    
-Now it's time to create policies so you can be automatically alerted when something happens that you're concerned about. For example, you might want to create an **App discovery policy** that let's you know when there is a spike in downloads or traffic from an app you're concerned about. You can set the policy to notify you by email or text message. For more information, see [policy template reference](policy-template-reference.md) and more about [Cloud Discovery policies](cloud-discovery-policies.md).
 
 - **Continuous monitoring**: Now that you have thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
+
+Now it's time to create policies so you can be automatically alerted when something happens that you're concerned about. For example, you might want to create an **App discovery policy** that lets you know when there is a spike in downloads or traffic from an app you're concerned about. You can set the policy to notify you by email or text message. For more information, see [policy template reference](policy-template-reference.md) and more about [Cloud Discovery policies](cloud-discovery-policies.md).
 
 
 Configure [**App discovery policies**](cloud-discovery-policies.md). For example, you should enable **Anomalous behavior in discovered users policy**, **Cloud storage app compliance check**, and **New risky app**.
