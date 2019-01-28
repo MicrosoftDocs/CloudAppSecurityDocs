@@ -68,7 +68,7 @@ Cloud discovery enables you to dive even deeper into your organization’s cloud
  	 
 For example, you can differentiate between different SharePoint sites.
 
-This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies).
+This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![subdomain information](./media/discovery-domains.png) 
 
