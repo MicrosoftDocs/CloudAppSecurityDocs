@@ -40,6 +40,7 @@
 #### [Docker on Windows](discovery-docker-windows.md)
 #### [Docker on Ubuntu and RHEL on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
+#### [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
 #### [Log collector behind a proxy](log-collector-proxy.md)
 #### [Using a virtual appliance - Deprecated](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Use the custom log parser](custom-log-parser.md)

@@ -33,7 +33,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Technical requirements
 
-- OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support)
+- OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), or RHEL 7.2 or higher
 
 - Disk space: 250 GB
 
