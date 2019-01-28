@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -45,14 +45,16 @@ The following governance actions can be taken for connected apps either on a spe
 
      - **User email notification** – Email messages can be customized and will be sent to all violating file owners. 
 
-     - **CC manager** – Based on user directory integration, email notifications can also be sent to the manager of the person found to violate a policy. (Salesforce only)
-
      - **Notify specific users** – Specific list of email addresses that will receive these notifications. 
 
      - **Notify last file editor** – Send notifications to the last person who modified the file. 
 
 - **Governance actions in apps** - Granular actions can be enforced per app, specific actions vary depending on app terminology. 
 
+     
+     - **Labeling**
+         - **Apply label** - Ability to add an Azure Information Protection classification label.
+         - **Remove label** - Ability to remove an Azure Information Protection classification label.
      - **Change sharing** 
 
         - **Remove public sharing** – Allow access only to named collaborators, for example: Remove public access for G Suite and Remove direct shared link for Box. 
@@ -63,7 +65,11 @@ The following governance actions can be taken for connected apps either on a spe
 
        - **Remove a collaborator** – Remove a specific collaborator from the file. 
 
-       - **Reduce public access** - Set Publicly available files to be available only with a shared link.
+       - **Reduce public access** - Set Publicly available files to be available only with a shared link. (Google)
+        
+       - **Expire shared link** - Ability to set an experation date for a shared link after which it will no longer be active. (Box)
+
+       - **Change sharing link access level** - Ability to change the access level of the shared link between company only, collaborators only, and public. (Box)
 
   - **Quarantine** 
 
@@ -73,7 +79,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Inherit permissions from parent** - This governance action enables you to remove specific permissions set for a file or folder in Office 365. Then revert to whatever permissions are set for the parent folder.
 
-  - **Trash** – Move the file to the trash folder.
+  - **Trash** – Move the file to the trash folder. (SharePoint and OneDrive)
 
    ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts") 
 
@@ -139,13 +145,12 @@ For information about how governance actions are treated when there are policy c
 |File policy|File |Trash|Puts the file in the user's trash.| One Drive, SharePoint |
 |File Policy|File | Notify last file editor |Sends an email to notify the last person who edited the file that it violates a policy. |G Suite, Box|
 |File Policy|File |Notify file owner|Sends an email to the file owner, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set. | All apps |
-|File Policy, Activity Policy | File, Activity |cc the owner's/user's manager| When the file owner receives an email notification that their file is in violation of a policy. This action optionally notifies the manager of the file owner/user. | Salesforce |
 |File Policy, Activity Policy | File, Activity | Notify specific users |Sends an email to notify specific users about a file that violates a policy.| All apps |
 |File policy and Activity policy | File, Activity |Notify user|Sends an email to users to notify them that something they did or a file they own violates a policy. You can add a custom notification to let them know what the violation was. |All |
 |File policy and Files|File | Remove editors' ability to share|In Google Drive, the default editor permissions of a file allow sharing as well. This governance action restricts this option and restricts file sharing to the owner.| G Suite|
 |File policy and Files|File | [Put in admin quarantine](use-case-admin-quarantine.md) |Removes any permissions from the file and moves the file to a quarantine folder in a location for the admin. This action enables the admin to review the file and remove it.| Office 365 SharePoint, OneDrive for Business, Box|
 |File policy and Files|File | Apply classification label|Applies an Azure Information Protection classification label to files automatically based on the conditions set in the policy.| Box, One Drive, G Suite, SharePoint |
-|File policy and Files|File | Remove classification label | Removes an Azure Information Protection classification label from files automatically based on the conditions set in the policy. | Box, One Drive, G Suite, SharePoint |
+|File policy and Files|File | Remove classification label | Removes an Azure Information Protection classification label from files automatically based on the conditions set in the policy. You can remove labels only if they do not include protection, and they were applied from within Cloud App Security, not labels applied directly in Information Protection.| Box, One Drive, G Suite, SharePoint |
 |File policy, Activity policy, Alerts | App |Require users to sign in again| You can require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option. | Office 365, Azure AD |
 |Files |File |Restore from user quarantine |Restores a user from being quarantined. |Box |
 |Files |File | Grant read permissions to myself| Grants read permissions for the file for yourself so you can access the file and understand if it has a violation or not.| G Suite|
@@ -159,6 +164,8 @@ For information about how governance actions are treated when there are policy c
 |Files, File policy|File | Remove external users | Removes all external collaborators - outside the domains configured as internal in Settings. |G Suite, Box|
 |Files, File policy|File |Grant read permission to domain|Grants read permissions for the file to the specified domain for your entire domain or a specific domain. This action is useful if you want to remove public access after granting access to the domain of people who need to work on it.| G Suite|
 |Files, File policy|File | Put in user quarantine | Removes all permissions from the file and moves the file to a quarantine folder under the user's root drive. This action allows the user to review the file and move it. If it's manually moved back, the file sharing isn't restored. | Box, One Drive, SharePoint |
+|Files|File|Expire shared link| Set an expiration date for a shared link after which it will no longer be active.|Box|
+|Files|File|Change sharing link access level|Changes the access level of the shared link between company only, collaborators only, and public.| Box|
 |Files, File policy|File | Remove public access| If a file was yours and you put it in public access, it becomes accessible to anyone else configured with access to the file (depending on what kind of access the file had). | G Suite|
 |Files, File policy|File |Remove direct shared link| Removes a link that is created for the file that is public but only shared with specific people.|Box |
 |Settings> Cloud discovery settings| Cloud Discovery | Recalculate Cloud Discovery scores |Recalculates the scores in the Cloud app catalog after a score metric change.| Discovery |
