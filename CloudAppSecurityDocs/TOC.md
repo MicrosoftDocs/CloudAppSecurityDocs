@@ -40,6 +40,7 @@
 #### [Docker on Windows](discovery-docker-windows.md)
 #### [Docker on Ubuntu and RHEL on-premises](discovery-docker-ubuntu.md)
 #### [Docker on Ubuntu in Azure](discovery-docker-ubuntu-azure.md)
+#### [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
 #### [Log collector behind a proxy](log-collector-proxy.md)
 #### [Using a virtual appliance - Deprecated](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Use the custom log parser](custom-log-parser.md)
@@ -94,7 +95,6 @@
 ### [Integrate with Microsoft Flow](flow-integration.md)
 ### [API tokens](api-tokens.md)
 # Reference
-## [Troubleshooting service status](troubleshooting-status.md)
 ## [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)
 ## [Troubleshooting API Connectors using error messages](troubleshooting-api-connectors-using-error-messages.md)
 ## [Troubleshooting content inspection](troubleshooting-content-inspection.md)
@@ -102,6 +102,7 @@
 ## [Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
 ## [Troubleshooting policies](troubleshoot-policies.md)
 # Resources
+## [Support and troubleshooting](support-and-ts.md)
 ## [Premier support portal](https://premier.microsoft.com/)
-## [Cloud Apps Security portal](https://portal.cloudappsecurity.com)
+## [Cloud App Security portal](https://portal.cloudappsecurity.com)
 ## [How to buy Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)

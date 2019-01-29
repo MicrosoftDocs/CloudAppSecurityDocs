@@ -56,7 +56,7 @@ Azure Active Directory conditional access policies and Cloud App Security sessio
 1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the app you want to control with Conditional Access App Control. 
 
    > [!NOTE]
-   > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
+   > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy. 
 
 2. Route users to Microsoft Cloud App Security by selecting the **Use Conditional Access App Control enforced restrictions** under **Session**.
  

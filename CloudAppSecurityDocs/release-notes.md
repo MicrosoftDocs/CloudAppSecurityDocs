@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -30,6 +30,21 @@ ms.custom: seodec18
 *Applies to: Microsoft Cloud App Security*
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
+
+## Cloud App Security release 141
+
+Released January 20, 2019
+
+**Cloud risk assessment enhancements**
+- Cloud app risk assessment was enhanced with two new experiences. 
+    - A new **Data type** attribute assesses what kind of content users can upload to the app. You can use this attribute to assess an app according to the sensitivity of each data type in your organization. 
+    - To get a more comprehensive risk overview of an app, you can now easily pivot from the app's risk assessment to the risk assessment of hosting company by clicking on the **Hosting company** attribute.
+
+**Enhanced file context for anomaly detection alert investigation**
+- Anomaly detection investigation was enhanced to enable you to see additional insight associated with the files that are involved in an alert. When alerts are triggered for file related unusual activity alerts (Download, Share, Delete), this drill-down is available. For example, if most of the affected files are from the same folder or share the same file extension, you will see these insights in the Additional risk section of the alert.
+
+**Queries for file investigation**
+- Cloud App Security’s ability to create and save custom queries was extended to the **Files** page. Queries in the **File** page enable you to create query templates that can be reused for deep-dive investigation. 
 
 
 ## Cloud App Security release 139, 140
