@@ -37,6 +37,11 @@ sections:
       image: 
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
         href: release-notes.md
+    - title: Explore Microsoft 365, a complete solution that includes Azure AD
+      href: https://docs.microsoft.com/microsoft-365/
+      image: 
+        src: /office/media/icons/caret-right-blue.svg
+        href: https://docs.microsoft.com/microsoft-365/
 - title: 5-Minute Quickstarts
   items:
   - type: paragraph
