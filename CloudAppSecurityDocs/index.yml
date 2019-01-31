@@ -10,7 +10,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/22/2019
+  ms.date: 01/30/2019
   ms.author: mbaldwin
   layout: LandingPage
 abstract:
@@ -37,7 +37,7 @@ sections:
       image: 
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
         href: release-notes.md
-    - title: Explore Microsoft 365, a complete solution that includes Azure AD
+    - title: Explore Microsoft 365, a complete solution that includes Cloud App Security
       href: https://docs.microsoft.com/microsoft-365/
       image: 
         src: /office/media/icons/caret-right-blue.svg
