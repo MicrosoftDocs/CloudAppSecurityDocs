@@ -1,0 +1,223 @@
+- name: Microsoft Cloud App Security Documentation
+  href: index.yml
+- name: Overview
+  items:
+  - name: What is Microsoft Cloud App Security?
+    href: what-is-cloud-app-security.md
+  - name: Cloud App Security data security and privacy
+    href: cas-compliance-trust.md
+  - name: What's new?
+    href: release-notes.md
+    items:
+    - name: Release note archive
+      href: release-note-archive.md
+  - name: Compare
+    items:
+    - name: Office 365
+      href: editions-cloud-app-security-o365.md
+    - name: Azure AD
+      href: editions-cloud-app-security-aad.md
+  - name: Quickstarts
+  expanded: true
+  items:
+  - name: Getting started
+    href: getting-started-with-cloud-app-security.md
+  - name: Work with discovered apps
+    href: discovered-apps.md
+- name: Tutorials
+  items:
+  - name: Discover and manage shadow IT
+    href: tutorial-shadow-it.md
+  - name: Block downloads of sensitive information
+    href: use-case-proxy-block-session-aad.md
+  - name: Protecting your files with admin quarantine
+    href: use-case-admin-quarantine.md
+  - name: Apply Azure Information Protection labels automatically
+    href: use-case-information-protection.md
+- name: Concepts
+  items:
+  - name: Protect apps with Conditional Access App Control
+    href: proxy-intro-aad.md
+  - name: Working with the dashboard
+    href: daily-activities-to-protect-your-cloud-environment.md
+  - name: Working with the risk score
+    href: risk-score.md
+- name: How-to guides
+  items:
+  - name: Basic set up
+    href: general-setup.md
+    items:
+    - name: Network requirements
+      href: network-requirements.md
+    - name: Manage admins
+      href: manage-admins.md
+    - name: Admin settings
+      href: admin-settings.md
+    - name: Mail settings
+      href: mail-settings.md
+    - name: User groups
+      href: user-groups.md
+    - name: Scoped deployment
+      href: scoped-deployment.md
+    - name: IP tags and ranges
+      href: ip-tags.md
+  - name: Set up Cloud Discovery
+    href: set-up-cloud-discovery.md
+    items:
+    - name: Integrate with Windows Defender ATP
+      href: wdatp-integration.md
+    - name: Integrate with Zscaler
+      href: zscaler-integration.md
+    - name: Create snapshot Cloud Discovery reports
+      href: create-snapshot-cloud-discovery-reports.md
+    - name: Configure automatic log upload for continuous reports
+      href: discovery-docker.md
+      items:
+      - name: Docker on Windows
+        href: discovery-docker-windows.md
+      - name: Docker on Ubuntu and RHEL on-premises
+        href: discovery-docker-ubuntu.md
+      - name: Docker on Ubuntu in Azure
+        href: discovery-docker-ubuntu-azure.md
+      - name: Troubleshooting Cloud Discovery docker deployment
+        href: troubleshoot-docker.md
+      - name: Log collector behind a proxy
+        href: log-collector-proxy.md
+      - name: Using a virtual appliance - Deprecated
+        href: configure-automatic-log-upload-for-continuous-reports.md
+    - name: Use the custom log parser
+      href: custom-log-parser.md
+    - name: Cloud Discovery enrichment
+      href: cloud-discovery-aad-enrichment.md
+    - name: Anonymize Cloud Discovery data
+      href: cloud-discovery-anonymizer.md
+  - name: Connect apps
+    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+    items:
+    - name: Connect Azure
+      href: connect-azure-to-microsoft-cloud-app-security.md
+    - name: Connect AWS
+      href: connect-aws-to-microsoft-cloud-app-security.md
+    - name: Connect Box
+      href: connect-box-to-microsoft-cloud-app-security.md
+    - name: Connect Dropbox
+      href: connect-dropbox-to-microsoft-cloud-app-security.md
+    - name: Connect G Suite
+      href: connect-google-apps-to-microsoft-cloud-app-security.md
+    - name: Connect Office 365
+      href: connect-office-365-to-microsoft-cloud-app-security.md
+    - name: Connect Okta
+      href: connect-okta-to-microsoft-cloud-app-security.md
+    - name: Connect Salesforce
+      href: connect-salesforce-to-microsoft-cloud-app-security.md
+    - name: Connect ServiceNow
+      href: connect-servicenow-to-microsoft-cloud-app-security.md
+  - name: Deploy Conditional Access App Control for Azure AD apps
+    href: proxy-deployment-aad.md
+  - name: Discover
+    items:
+    - name: Add custom apps to Cloud Discovery
+      href: cloud-discovery-custom-apps.md
+    - name: Discovered app filters and queries
+      href: discovered-app-queries.md
+  - name: Investigation
+    href: investigate.md
+    items:
+    - name: Activities
+      href: activity-filters.md
+      items: 
+      - name: Activity filters and queries
+        href: activity-filters-queries.md
+    - name: Files
+      href: file-filters.md
+      items:
+      - name: Generate data management reports
+        href: built-in-reports.md
+    - name: Accounts
+      href: accounts.md
+    - name: Manage OAuth apps
+      href: manage-app-permissions.md
+    - name: Security configuration
+      href: security-config.md
+    - name: Monitor apps
+      href: monitor-alerts.md
+      items:
+      - name: Manage alerts
+        href: managing-alerts.md
+  - name: Control
+    href: control.md
+    items:
+    - name: Control cloud apps with policies
+      href: control-cloud-apps-with-policies.md
+      items:
+      - name: Cloud Discovery policies
+        href: cloud-discovery-policies.md
+	items:
+        - name: Cloud Discovery anomaly detection policy
+          href: cloud-discovery-anomaly-detection-policy.md
+      - name: Activity policies
+        href: user-activity-policies.md
+      - name: Anomaly detection policies
+        href: anomaly-detection-policy.md
+      - name: OAuth policies
+        href: app-permission-policy.md
+      - name: File policies
+        href: data-protection-policies.md
+	items:
+        - name: Content inspection
+          href: content-inspection.md
+	  items:
+          - name: Built-in content inspection
+            href: content-inspection-built-in.md
+          - name: Data Classification Service integration
+            href: dcs-inspection.md
+        - name: Working with the RegEx engine
+        href: working-with-the-regex-engine.md
+      - name: Conditional Access App Control policies
+        items:
+        - name: Access policies
+          href: access-policy-aad.md
+        - name: Session policies
+          href: session-policy-aad.md
+      - name: Policy template reference
+        href: policy-template-reference.md
+    - name: Govern connected apps
+      href: governance-actions.md
+    - name: Govern discovered apps
+      href: governance-discovery.md
+  - name: Integrate using security extensions
+  items: 
+    - name: Azure Information Protection integration
+      href: azip-integration.md
+    - name: SIEM integration
+      href: siem.md
+    - name: External DLP integration
+      href: icap-stunnel.md
+    - name: Integrate with Microsoft Flow
+      href: flow-integration.md
+    - name: API tokens
+      href: api-tokens.md
+- name: Reference
+  items:
+  - name: Troubleshooting Cloud Discovery
+    href: troubleshooting-cloud-discovery.md
+  - name: Troubleshooting API Connectors using error messages
+    href: troubleshooting-api-connectors-using-error-messages.md
+  - name: Troubleshooting content inspection
+    href: troubleshooting-content-inspection.md
+  - name: Troubleshooting SIEM integration
+    href: troubleshooting-siem.md
+  - name: Troubleshooting Cloud Discovery docker deployment
+    href: troubleshoot-docker.md
+  - name: Troubleshooting policies
+    href: troubleshoot-policies.md
+- name: Resources
+  items:
+  - name: Support and troubleshooting
+    href: support-and-ts.md
+  - name: Premier support portal
+    href: https://premier.microsoft.com/
+  - name: Cloud App Security portal
+    href: https://portal.cloudappsecurity.com
+  - name: How to buy Cloud App Security
+    href: https://www.microsoft.com/cloud-platform/cloud-app-security
