@@ -152,7 +152,7 @@
       items:
       - name: Cloud Discovery policies
         href: cloud-discovery-policies.md
-	items:
+        items:
         - name: Cloud Discovery anomaly detection policy
           href: cloud-discovery-anomaly-detection-policy.md
       - name: Activity policies
@@ -163,10 +163,10 @@
         href: app-permission-policy.md
       - name: File policies
         href: data-protection-policies.md
-	items:
+        items:
         - name: Content inspection
           href: content-inspection.md
-	  items:
+          items:
           - name: Built-in content inspection
             href: content-inspection-built-in.md
           - name: Data Classification Service integration
