@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 2/3/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -31,13 +31,13 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
-- **Session policies in Azure AD**<br>
+- **Session policy configuration in Azure AD**<br>
 You can now configure session policies to monitor users or block downloads in real-time, directly in Azure AD conditional access. You can still configure advanced session policies directly in Cloud App Security. To walk through this deployment, see [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md). 
 
 - **Suggested and Saved queries for OAuth apps** <br>
 Suggested queries have been added to the OAuth apps page provide out-of-the-box investigation templates to filter your OAuth apps. Suggested queries include custom filters to identify risky apps such as apps authorized by administrators. Saved queries enable you to save custom queries for future use, similar to saved queries available today in the Activity log and Discovery pages. 
 
-- **Office 365 auditing**<br>
+- **Office 365 auditing default configuration**<br>
 If you want to enable monitoring of Office 365 activities in Cloud App Security, you are now required to enable auditing in the [Office Security and Compliance Center]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins), this is a result of a [change to Office 365 auditing]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). This change only needs to be performed if you haven’t already enabled monitoring of Office 365 activities in Cloud App Security.
 
 - **Enhanced Box support**<br>
