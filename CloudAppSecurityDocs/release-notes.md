@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/3/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -43,12 +43,12 @@ If you want to enable monitoring of Office 365 activities in Cloud App Security,
 - **Enhanced Box support**<br>
 Cloud App Security now supports two new governance actions for Box:
 
-- **Expire shared link** – This governance action provides you with the ability to set an expiration date for a shared link after which it will no longer be active. 
+   - **Expire shared link** – This governance action provides you with the ability to set an expiration date for a shared link after which it will no longer be active. 
 
-- **Change sharing link access level** – This governance action provides you with the ability to change the access level of the shared link between company only, collaborators only, and public.
+   - **Change sharing link access level** – This governance action provides you with the ability to change the access level of the shared link between company only, collaborators only, and public.
 
-- **Multi-geo support in OneDrive**<br>
-Cloud App Security now provides full visibility into OneDrive files, even if they are dispersed across multiple geographic locations. Protection is now available for files located in the additional geo locations as well as the main location.
+- **Multi-location support in OneDrive**<br>
+Cloud App Security now provides full visibility into OneDrive files, even if they are dispersed across multiple geographic locations. Protection is now available for files located in the additional locations as well as the main location.
 
 - **Portal navigation enhancement**<br>
 The Cloud App Security portal was enhanced to provide better navigation and better align Cloud App Security with Microsoft’s other security services, for streamlined ease-of-use.
