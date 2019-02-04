@@ -51,8 +51,9 @@
       href: network-requirements.md
     - name: Manage admins
       href: manage-admins.md
-    - name: Admin settings
-      href: admin-settings.md
+      items:
+      - name: Admin settings
+        href: admin-settings.md
     - name: Mail settings
       href: mail-settings.md
     - name: User groups
