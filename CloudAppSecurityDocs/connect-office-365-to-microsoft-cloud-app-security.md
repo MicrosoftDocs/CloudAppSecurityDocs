@@ -6,7 +6,7 @@ description: This article provides information about how to connect your Office 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod:

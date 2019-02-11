@@ -6,7 +6,7 @@ description: This article describes the setup procedure for getting Cloud Discov
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod:
