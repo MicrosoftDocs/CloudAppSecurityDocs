@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod:

@@ -6,7 +6,7 @@ description: This article provides information about how to upload logs manually
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod:
