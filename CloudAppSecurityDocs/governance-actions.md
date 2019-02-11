@@ -6,7 +6,7 @@ description: This article lists and describes all the governance actions that ca
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod:

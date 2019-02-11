@@ -6,8 +6,8 @@ description: This article provides information about how to enable the Cloud App
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
-ms.date: 1/29/2019
+manager: barbkess
+ms.date: 2/2/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Enable the log collector behind a proxy
 
-After you configured the log collector, if you are running behind a proxy, the log collector might have trouble sending data to Cloud App Security. This may be caused because the log collector doesn't trust the proxy's root certificate authority and is not able to connect to Microsoft Cloud App Security to retrieve its configuration or upload the received logs.
+After you configured the log collector, if you are running behind a proxy, the log collector might have trouble sending data to Cloud App Security. This may happen because the log collector doesn't trust the proxy's root certificate authority and is not able to connect to Microsoft Cloud App Security to retrieve its configuration or upload the received logs.
 
 >[!NOTE] 
 > For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Troubleshooting the Microsoft Cloud App Security Cloud Discovery deployment](troubleshoot-docker.md).
@@ -50,7 +50,7 @@ In the shell, verify that the container was created and is running using the fol
 ### Copy proxy root CA certificate to the container
 
 From your virtual machine, copy the CA certificate to the Cloud App Security container. In the following example, the container is named *Ubuntu-LogCollector* and the CA certificate is named *Proxy-CA.crt*.
-Run the command on the Ubuntu host and it copies the certificate to a folder in the running container:
+Run the command on the Ubuntu host. It copies the certificate to a folder in the running container:
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
@@ -68,7 +68,7 @@ Run the command on the Ubuntu host and it copies the certificate to a folder in 
        bash
        cd 'find /opt/jdk/*/jre -iname bin'
 
-3. Import the root certificate, that you copied earlier, from the *discovery* folder into the Java keystore and define a password. The default password is "changeit":
+3. Import the root certificate that you copied earlier, from the *discovery* folder into the Java keystore and define a password. The default password is "changeit":
 
        bash
        ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit

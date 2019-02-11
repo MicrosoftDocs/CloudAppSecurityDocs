@@ -6,7 +6,7 @@ description: This tutorial describes the process to automatically apply Azure In
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/28/2019
 ms.topic: tutorial
 ms.prod:

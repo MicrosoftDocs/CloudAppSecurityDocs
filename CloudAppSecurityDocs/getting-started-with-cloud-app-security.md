@@ -6,7 +6,7 @@ description: This quickstart outlines the process for getting Cloud App Security
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: quickstart
 ms.prod:
