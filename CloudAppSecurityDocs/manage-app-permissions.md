@@ -6,7 +6,7 @@ description: This article provides information about how you can control, ban an
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/3/2019
 ms.topic: conceptual
 ms.prod:
