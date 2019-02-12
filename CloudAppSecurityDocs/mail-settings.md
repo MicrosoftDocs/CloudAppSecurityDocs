@@ -6,8 +6,8 @@ description: This article provides information about how to personalize the emai
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
-ms.date: 12/10/2018
+manager: barbkess
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: cloud-app-security
@@ -29,11 +29,14 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides information about how to personalize the email notifications sent by Cloud App Security.
+This article provides information about how to personalize the email notifications sent by Cloud App Security to your users when a breach is detected.
+
+> [!NOTE]
+> This customization only affects the notifications sent to your end users, not the notifications sent to Cloud App Security administrators.
 
 ## <a name="mailsettings"></a> Set email notification preferences  
 
- Microsoft Cloud App Security sends email notifications to administrators requesting alerts and to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md).
+ Microsoft Cloud App Security enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md).
 
 1. In the menu bar, click the settings cog, select **Settings**, and then select the **Mail settings** tab.  
 
