@@ -32,6 +32,20 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
+## Cloud App Security release 143
+
+Released February 17, 2019
+
+- Scoped deployment can now be configured at the app instance level, allowing for greater granularity and control.
+-  The data admin and security operator M365 roles are now supported in Cloud App Security. The data admin role enables the user to manage everything file related, as well as view the discovery reports. The security operator roles has permissions to manage alerts and view policy configuration.
+- Security reader role now has the ability to configure SIEM agent, allowing a better permission scoping.
+- Cloud App Security now includes support for the Microsoft Flow activities that are supported in the Office 365 audit log.
+-  The **Alert** page now groups related entities that were involved in the alert to aid in your investigation.
+
+## Cloud App Security release 142
+
+Released February 3, 2019
+
 - **Session policy configuration in Azure AD**<br>
 You can now configure session policies to monitor users or block downloads in real-time, directly in Azure AD conditional access. You can still configure advanced session policies directly in Cloud App Security. To walk through this deployment, see [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md). 
 
