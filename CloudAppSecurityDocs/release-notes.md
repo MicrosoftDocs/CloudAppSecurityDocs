@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/4/2019
+ms.date: 2/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -36,11 +36,13 @@ This article is updated frequently to let you know what's new in the latest rele
 
 Released February 17, 2019
 
-- Scoped deployment can now be configured at the app instance level, allowing for greater granularity and control.
--  The data admin and security operator M365 roles are now supported in Cloud App Security. The data admin role enables the user to manage everything file related, as well as view the discovery reports. The security operator roles has permissions to manage alerts and view policy configuration.
-- Security reader role now has the ability to configure SIEM agent, allowing a better permission scoping.
-- Cloud App Security now includes support for the Microsoft Flow activities that are supported in the Office 365 audit log.
--  The **Alert** page now groups related entities that were involved in the alert to aid in your investigation.
+- **Scope deployment for app instances**<br> Scoped deployment can now be configured at the app instance level, allowing for greater granularity and control.
+-  **New role support**
+   - The data admin and security operator Office 365 roles are now supported in Cloud App Security. The data admin role enables users to manage everything file related, as well as view the discovery reports. Security operators have permission to manage alerts and view policy configuration.
+    
+   - The security reader role now has the ability to configure the SIEM agent, allowing better permission scoping.
+- **Microsoft Flow support**<br>Cloud App Security now includes support for the Microsoft Flow activities that are supported in the Office 365 audit log.
+-  **Alert entity grouping** <br>The **Alert** page now groups related entities that were involved in the alert to aid in your investigation.
 
 ## Cloud App Security release 142
 
