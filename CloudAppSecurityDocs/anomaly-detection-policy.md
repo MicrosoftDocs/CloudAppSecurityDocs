@@ -10,6 +10,7 @@ manager: barbkess
 ms.date: 2/4/2019
 
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
