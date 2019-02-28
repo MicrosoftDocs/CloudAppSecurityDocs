@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: barbkess
 ms.date: 2/17/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
