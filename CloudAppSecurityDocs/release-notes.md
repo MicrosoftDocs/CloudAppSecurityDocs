@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: barbkess
 ms.date: 2/17/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -30,8 +30,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-
+This article is updated frequently to let you know what's new in the latest release of Cloud App Security. Older updates are available in the [Release Notes Archive](release-note-archive.md).
 
 
 ## Cloud App Security release 144
