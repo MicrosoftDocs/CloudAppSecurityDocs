@@ -30,7 +30,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article is updated frequently to let you know what's new in the latest release of Cloud App Security. Older updates are available in the [Release Notes Archive](release-note-archive).
+This article is updated frequently to let you know what's new in the latest release of Cloud App Security. Older updates are available in the [Release Notes Archive](release-note-archive.md).
 
 
 ## Cloud App Security release 144
