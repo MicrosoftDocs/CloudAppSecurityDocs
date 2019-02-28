@@ -32,6 +32,22 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
+
+
+## Cloud App Security release 144
+
+Released February 24, 2019
+
+- **Scope deployment for app instances**
+Scoped deployment can now be configured at the app instance level, allowing for greater granularity and control.
+- **Role enhancements** 
+   - The data admin and security operator Office 365 roles are now supported in Cloud App Security. The data admin role enables users to manage everything file related, as well as view the Cloud Discovery reports. Security operators have permission to manage alerts and view policy configuration.
+   - The security reader role now has the ability to configure the SIEM agent, allowing better permission scoping.
+- **Microsoft Flow support**
+Cloud App Security now monitors user activities in Microsoft Flow. The activities supported are the activities reported by Flow to the Office 365 audit log.
+- **Alert entity grouping** 
+The Alert page now groups related entities that were involved in an alert to aid in your investigation.
+
 ## Cloud App Security release 143
 
 Released February 17, 2019
