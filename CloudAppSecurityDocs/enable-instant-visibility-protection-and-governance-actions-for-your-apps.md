@@ -76,10 +76,10 @@ The following table lists, per cloud app, which abilities are supported with App
 > |**Privileges**|✔|✔|Not supported by provider|✔|✔|✔|✔||  
 > |**User governance**|✔|✔||✔|Coming soon|Coming soon|Coming soon||  
 > |**Log on activity**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**User activity**|✔*|✔|✔|✔ - requires Google Unlimited|Partial|Supported with Salesforce Shield|✔|Not applicable|  
+> |**User activity**|✔*|✔|✔|✔ - requires Google Business or Enterprise|Partial|Supported with Salesforce Shield|✔|Not applicable|  
 > |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|  
 > |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Not applicable|  
-> |**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Unlimited|||Coming soon||  
+> |**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Business or Enterprise|||Coming soon||  
 > |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||  
 > |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||  
 > |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||  
@@ -100,7 +100,7 @@ To use App Connectors, you need to make sure you have the following things for e
 |App|License type|User|  
 |---------|------------------|----------|  
 |Box|Enterprise|It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions.|  
-|G Suite|G Suite Unlimited preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|  
+|G Suite|G Suite Business or Enterprise preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|  
 |Office 365||Global Admin|  
 |AWS||Newly created user|  
 |Dropbox|Business/Enterprise|Admin|  
