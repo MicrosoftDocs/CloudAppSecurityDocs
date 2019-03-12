@@ -7,8 +7,8 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 03/01/2019
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
