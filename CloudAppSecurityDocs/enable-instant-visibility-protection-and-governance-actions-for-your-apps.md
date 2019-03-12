@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -37,6 +37,9 @@ Microsoft Cloud App Security leverages the APIs provided by the cloud provider. 
 ## Multi-instance support
 
 Cloud App Security supports multiple instances of the same connected app. For example, if you have more than one instance of Salesforce (one for sales, one for marketing) you can connect both to Cloud App Security. You can manage the different instances from the same console to create granular policies and deeper investigation. This support applies only to API connected apps, not to Cloud Discovered apps or Proxy connected apps.
+
+> [!NOTE]
+> Multi-instance is not supported for Office 365 and Azure.
 
 ## How it works  
 Cloud App Security is deployed with system admin privileges to allow full access to all objects in your environment.  
