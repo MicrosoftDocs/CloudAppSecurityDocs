@@ -32,6 +32,7 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
+RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
 
 
 ## Cloud App Security release 143

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/6/2019
+ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -113,7 +113,19 @@ Each policy is composed of the following parts:
 
 - **Extensions** - Content inspection can be performed via 3rd-party engines for improved DLP or anti-malware capabilities.  
 
-  
+## File queries
+
+To make investigation even simpler, you can now create custom queries and save them for later use. 
+
+1. In the **File** page, use the filters as described above to drill down into your apps as necessary. 
+
+2. After you've finished building your query, click the **Save as** button in the top right corner of the filters. 
+
+3. In the **Save query** popup, name your query.
+
+4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query. 
+
+ 
 ## Next steps 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
