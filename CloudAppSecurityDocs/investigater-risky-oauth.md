@@ -73,7 +73,7 @@ Use the activity log (equivalent to step 3)
 
 References 
 https://searchmicroservices.techtarget.com/definition/OAuth
-https://docs.microsoft.com/en-us/cloud-app-security/manage-app-permissions
+https://docs.microsoft.com/cloud-app-security/manage-app-permissions
 
 
  

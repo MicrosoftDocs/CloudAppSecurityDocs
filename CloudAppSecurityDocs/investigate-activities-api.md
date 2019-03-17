@@ -34,7 +34,8 @@ You can use the Microsoft Cloud App Security APIs to investigate the activities 
 
 The Cloud App Security activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned. 
 
-> [!NOTE] For large quantities of activities and large scale deployments, we recommendedthat you use the [SIEM agent](siem.md) for activity scanning.
+> [!NOTE] 
+> For large quantities of activities and large scale deployments, we recommendedthat you use the [SIEM agent](siem.md) for activity scanning.
 
 **To use the activity scan API:**
 
