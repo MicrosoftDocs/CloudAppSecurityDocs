@@ -57,7 +57,7 @@ The Cloud App Security activities API mode is optimized for scanning and retriev
 - “hasNext”: Boolean. Denotes whether another iteration on the data is needed.
 - “nextQueryFilters”: If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the “filters” parameter in the next request.
 
-The following Python example gets all the activities from the past day from SharePoint.
+The following Python example gets all the activities from the past day from Exchange Online.
 
       import requests
       import json
