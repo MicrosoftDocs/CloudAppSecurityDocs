@@ -35,7 +35,7 @@ ms.custom: seodec18
 Microsoft Cloud App Security lets you apply Azure Information Protection classification labels automatically, with or without protection, to files as a file policy governance action. You can also investigate files by filtering for the applied classification label within the Cloud App Security portal. Using classifications enables greater visibility and control of your sensitive data in the cloud. Integrating Azure Information Protection with Cloud App Security is as easy as selecting one single checkbox. 
 
 > [!NOTE]
-> This article is also relevant for Microsoft Information Protection unified labels if you  already [migrated your classification labels for the Office 365 Security and Compliance Center](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Office 365 Security and Compliance Center, Cloud App Security will only use the perexisting labels configured in the Azure Information Protection portal.
+> This article is also relevant for Microsoft Information Protection unified labels if you  already [migrated your classification labels for the Office 365 Security and Compliance Center](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Office 365 Security and Compliance Center, Cloud App Security will only use the preexisting labels configured in the Azure Information Protection portal.
 
 
 By integrating Azure Information Protection into Cloud App Security, you can use the full power of both services and secure files in your cloud, including:
