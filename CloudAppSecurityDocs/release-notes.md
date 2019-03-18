@@ -8,7 +8,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: barbkess
 ms.date: 2/17/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -32,17 +32,49 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
+RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
+
+
+## Cloud App Security release 145
+
+Released March 17, 2019
+
+- **Windows Defender ATP integration is now GA** <br>
+Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
+- Cloud App Security added real-time monitoring and control for Dynamics 365, to enable you to protect your business applications and the sensitive content stored within these apps. 
+
+## Cloud App Security release 144
+
+Released March 3, 2019
+
+- **Unified SecOps Investigation for Hybrid Environments**<br> Because many organizations have hybrid environments, attacks  start in the cloud and then pivot to on-premises, meaning SecOps teams need to investigate these attacks from multiple places. By combining signals from cloud and on-premises sources including Microsoft Cloud App Security, Azure ATP, and Azure AD Identity Protection, Microsoft empowers security analysts by providing unified identity and user information, in a single console, ending the need to toggle between security solutions. This gives your SecOps teams more time and the right information to make better decisions, and actively remediate the real identity threats and risks. For more information see [Unified SecOps Investigation for Hybrid Environments](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)
+
+
+- **Sandboxing capabilities for malware detection** (gradual rollout)<br>
+Cloud App Security’s malware detection capabilities are being expanded to include the ability to identify zero-day malware through advanced Sandboxing technology.<br>
+As part of this capability, Cloud App Security automatically identifies suspicious files and detonates them to look for suspicious file behavior and indicators that the file has malicious intent (malware). <br>
+As part of this change, malware detection policies now include a Detection type field that enables you to filter by threat intelligence as well as sandboxing.
+- **Conditional Access updates**<br> Conditional Access App Control added the ability to monitor and block the following activities:
+    - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with AIP prior to upload.
+    - Copy and paste in any app - rounding out robust controls of data exfiltration that already included controlling download, print, and custom activities such as share.
+    - Send message - ensuring that PII data such as passwords is not shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
+- Session Policies now include built-in templates to enable your organization to effortlessly enable popular real-time monitoring and control over your sanctioned apps, such as **Block upload based on real-time content inspection**.
+
+
+
 ## Cloud App Security release 143
 
 Released February 17, 2019
 
-- **Scope deployment for app instances**<br> Scoped deployment can now be configured at the app instance level, allowing for greater granularity and control.
--  **New role support**
-   - The data admin and security operator Office 365 roles are now supported in Cloud App Security. The data admin role enables users to manage everything file related, as well as view the discovery reports. Security operators have permission to manage alerts and view policy configuration.
-    
+- **Scope deployment for app instances**
+Scoped deployment can now be configured at the app instance level, allowing for greater granularity and control.
+- **Role enhancements** 
+   - The data admin and security operator Office 365 roles are now supported in Cloud App Security. The data admin role enables users to manage everything file related, as well as view the Cloud Discovery reports. Security operators have permission to manage alerts and view policy configuration.
    - The security reader role now has the ability to configure the SIEM agent, allowing better permission scoping.
-- **Microsoft Flow support**<br>Cloud App Security now includes support for the Microsoft Flow activities that are supported in the Office 365 audit log.
--  **Alert entity grouping** <br>The **Alert** page now groups related entities that were involved in the alert to aid in your investigation.
+- **Microsoft Flow support**
+Cloud App Security now monitors user activities in Microsoft Flow. The activities supported are the activities reported by Flow to the Office 365 audit log.
+- **Alert entity grouping** 
+The **Alert** page now groups related entities that were involved in an alert to aid in your investigation.
 
 ## Cloud App Security release 142
 
