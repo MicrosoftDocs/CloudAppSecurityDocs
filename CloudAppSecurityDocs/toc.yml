@@ -171,8 +171,8 @@
             href: content-inspection-built-in.md
           - name: Data Classification Service integration
             href: dcs-inspection.md
-        - name: Working with the RegEx engine
-        href: working-with-the-regex-engine.md
+          - name: Working with the RegEx engine
+            href: working-with-the-regex-engine.md
       - name: Conditional Access App Control policies
         items:
         - name: Access policies
