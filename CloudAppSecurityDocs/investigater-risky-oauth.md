@@ -40,40 +40,26 @@ Our recommended approach is to investigate the apps by using the abilities and i
 
 ## How to investigate 
 
-1.	Out of all the connected OAuth apps query using the filters in the portal. Recommended filters and queries are: 
-    1. Permission level high and community use not common. Using this filter would help you focus on app with a high-risk potential, in which the user is likely missed understood the risk. 
-    2. Specific risky permissions related to a specific type of apps (for example, apps with full access to all mailboxes). Using this filter would help you investigate in a specific context, and by that find apps seem legit but contains irrelevant permissions. Those apps are more likely to be malicious. 
-    3. Apps authorized by external users. Using this filter would help you to find apps that might not be inline with your company’s security standards. 
-2.	Focus on following apps, which might be suspicions: 
-    1. Apps with a low number of “Authorized by”. Focusing on those apps, might help you find malicious apps that were authorized by a compromised user. 
-    2. Apps with permissions that don’t suit the app’s purpose (for example, a clock app with full access to all mailboxes). Focusing on those apps might help you find apps that seems legitimate but are actually malicious. 
-    3. Apps with suspicious name, publisher or website. Focusing on those apps might help you to quickly find suspicions apps. 
-    4. Apps with old “last authorized”. Focusing on those apps might help you find apps that are not longer required. 
-3. Use the related activities link and view in the activity log page activities performed be the app. Please note that this automatically generates a filter for activities which the user equals to the app’s name. However, some apps might perform activities as one of the users. Those events would be available in the activity log but might be filtered out. 
-4. If an app seems suspicions, it is recommended to check the app’s name and publisher in the different app stores. Focus on following apps, which might be suspicions: 
-    1. App with a low number of downloads.
-    2. App with a low score or bad comments.
-    3. App with a suspicious publisher or website.
-    4. App with an old date of last update, might indicate on an app that is no longer supported. 
-    5. Apps that don’t suit their permissions, might indicate that this app is malicious. 
-5. If the app is still suspicious you can search the app name publisher and URL online. 
-
-## Example 
-
-Choose the “OAuth apps” option under the investigation icon
+1.	In the portal, go to **Investigate** and then **OAuth apps**. We recommend that you query using one of the following filters: 
+    - Select **Permission level** high severity and **Community use** not common. Using this filter, you can focus on apps with a high-risk potential, in which the users may have misunderstood the risk. 
+    - Under **Permissions** select all the options that are particularly risky in a specific context, for example you can select all the filters that provide permissions to email access, for example **Full access to all mailboxes** and then review the list of apps to make sure that they are all apps that actually need mail-related access. This can help you investigate within a specific context, and find apps that seem legit but contain irrelevant permissions. Those apps are more likely to be malicious. 
+    ![Risky OAuth app](./media/risky-oauth1.png) 
+    - Use the **Query** that lets you see **Apps authorized by external users**. Using this filter you can find apps that might not be aligned with your company’s security standards. 
+2.	After you filter your apps, you can focus on the apps in the queries that seem legitimate but might actually be malicious, such as: 
+    - Apps that are **Authorized by** a low number of users. If you focus on these apps, you can look for malicious apps that were authorized by a compromised user. 
+    - Apps that have permissions that don’t match the app’s purpose, for example, a clock app with full access to all mailboxes. 
+    - Click on each app to open the app drawer and check to see if the app has a suspicious name, publisher, or website.  
+    - Look at the list of apps and target apps that have a date under **Last authorized** that isn't recent. These apps may no longer be required. 
+    ![Risky OAuth app](./media/risky-oauth2.png) 
  
-Use the filter options to filter the apps (equivalent to step 1)
- 
-
-Investigate a suspicious app using the available information in the portal (equivalent to step 2)
- 
-
-Use the activity log (equivalent to step 3)
- 
-
-References 
-https://searchmicroservices.techtarget.com/definition/OAuth
-https://docs.microsoft.com/cloud-app-security/manage-app-permissions
+3. Click on the app to open the app drawer and click the link under **Related activities**. This opens the Activity log page filtered for activities performed by the app. Keep in mind that some apps perform activities that are registered as having been performed by a user. These activities are automatically filtered out of the results in the Activity log. For further investigation using the activity log, see [Activity log](activity-filters.md). 
+4. If an app seems suspicions, we recommended that you investigate the app’s name and publisher in different app stores. Focus on following apps, which might be suspicions: 
+    - Apps with a low number of downloads.
+    - Apps with a low rating or score or bad comments.
+    - Apps with a suspicious publisher or website.
+    - Apps wuhose last update is not recent. This might indicate an app that is no longer supported. 
+    - Apps that have irrelevant permissions. This might indicate that an app is malicious. 
+5. If the app is still suspicious, you can research the app name, publisher, and URL online. 
 
 
  

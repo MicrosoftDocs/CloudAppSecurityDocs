@@ -66,6 +66,8 @@
       href: wdatp-integration.md
     - name: Integrate with Zscaler
       href: zscaler-integration.md
+    - name: Integrate with iboss
+      href: iboss-integration.md
     - name: Create snapshot Cloud Discovery reports
       href: create-snapshot-cloud-discovery-reports.md
     - name: Configure automatic log upload for continuous reports
@@ -193,8 +195,6 @@
         href: icap-stunnel.md
       - name: Integrate with Microsoft Flow
         href: flow-integration.md
-      - name: Integrate with iboss
-        href: iboss-integration.md
       - name: API tokens
         href: api-tokens.md
 - name: Reference
