@@ -75,7 +75,7 @@ Select **support request** to create a new support request that opens to the **B
 
 5.  Review the information, verify that it is correct, and then choose **Create** to submit your support request.
 
-**Note:** If you have a billing or subscription question, you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
+**Note:** If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).
 
 ### View open support requests
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Anonymizie user data in Cloud App Security 
+title: Anonymize user data in Cloud App Security 
 description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
 keywords:
 author: rkarlin
