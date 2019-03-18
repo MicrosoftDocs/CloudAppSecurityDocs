@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -68,10 +68,10 @@ Additionally, the following items should be whitelisted, depending on which data
 > 
 > |Data center|IP addresses|DNS name|
 > |----|----|----|
-> |US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
 > |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
 > |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
-> |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
 > |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
 
 
@@ -88,14 +88,14 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US|13.91.91.243|
+> |US1|13.91.91.243|
 > |US2|52.184.165.82|
 > |US3|40.90.218.198<br>40.90.218.196|
-> |EU|52.174.56.180|
+> |EU1|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
 
 > [!NOTE]
-> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## App connector
 
@@ -111,10 +111,10 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
 
@@ -137,10 +137,10 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
 ## Mail server
@@ -172,16 +172,16 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
   | Data center |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     US      |   https://adaprodconsole.blob.core.windows.net/   |
+  |     US1      |   https://adaprodconsole.blob.core.windows.net/   |
   |     US2     | https://prod03use2console1.blob.core.windows.net/ |
   |     US3     |https://prod5usw2console1.blob.core.windows.net/   |
-  |     EU      | https://prod02euwconsole1.blob.core.windows.net/  |
+  |     EU1      | https://prod02euwconsole1.blob.core.windows.net/  |
   |     EU2     |https://prod4uksconsole1.blob.core.windows.net/    |
 
 > [!NOTE]
 > - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
 >- Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
->- If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+>- If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## Next steps
  
