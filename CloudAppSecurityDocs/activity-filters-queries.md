@@ -73,16 +73,16 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. The categories need to be configured to include the relevant IP addresses, except for the "Risky" category, which is pre-configured and includes two IP tags - Anonymous proxy and Tor. To learn how to configure the IP categories, see [Organize the data according to your needs](ip-tags.md).  
   - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. Cloud App Security creates a set of built-in IP tags that aren't configurable. Additionally, you can configure your own IP tags. For more information about configuring your own IP tags, see [Organize the data according to your needs](ip-tags.md).
   The built-in IP tags include:
-  - Microsoft apps (14 of them)
-  - Anonymous proxy
-  - Botnet (you'll see that the activity was performed by a botnet with a link to learn more about the specific botnet)
-  - Darknet scanning IP
-  - Malware C&C server
-  - Remote Connectivity Analyzer
-  - Satellite providers
-  - Smart proxy and access proxy (left out on purpose)
-  - Tor exit nodes
-  - Zscaler
+    - Microsoft apps (14 of them)
+    - Anonymous proxy
+    - Botnet (you'll see that the activity was performed by a botnet with a link to learn more about the specific botnet)
+    - Darknet scanning IP
+    - Malware C&C server
+    - Remote Connectivity Analyzer
+    - Satellite providers
+    - Smart proxy and access proxy (left out on purpose)
+    - Tor exit nodes
+    - Zscaler
 
 
 - Impersonated activity – Search only for activities that were performed in the name of another user.  
