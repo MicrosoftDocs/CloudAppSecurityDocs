@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -30,12 +30,14 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
+Microsoft Cloud App Security provides you with a fully supported REST API to enable you to programmatically interact with the service.
+
 You can use the Microsoft Cloud App Security APIs to investigate the activities performed by your users across connected cloud apps. 
 
 The Cloud App Security activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned. 
 
 > [!NOTE] 
-> For large quantities of activities and large scale deployments, we recommendedthat you use the [SIEM agent](siem.md) for activity scanning.
+> For large quantities of activities and large scale deployments, we recommended that you use the [SIEM agent](siem.md) for activity scanning.
 
 **To use the activity scan API:**
 

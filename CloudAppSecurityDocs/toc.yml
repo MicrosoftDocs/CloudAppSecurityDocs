@@ -185,18 +185,23 @@
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
-    - name: Integrate using security extensions
+    - name: Azure Information Protection integration
+      href: azip-integration.md
+    - name: Integrate with extrnal solutions
       items: 
-      - name: Azure Information Protection integration
-        href: azip-integration.md
       - name: SIEM integration
         href: siem.md
       - name: External DLP integration
         href: icap-stunnel.md
-      - name: Integrate with Microsoft Flow
-        href: flow-integration.md
-      - name: API tokens
+
+    - name: Automate processes and workflows
+      items: 
+      - name: Use the REST API
         href: api-tokens.md
+      - name: Investigate activities with APIs
+        href: investigate-activities-api.md  
+      - name: Use Microsoft Flow
+        href: flow-integration.md
 - name: Reference
   items:
   - name: Troubleshooting Cloud Discovery
