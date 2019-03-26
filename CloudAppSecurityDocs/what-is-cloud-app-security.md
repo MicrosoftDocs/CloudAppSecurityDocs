@@ -37,7 +37,7 @@ Moving to the cloud increases flexibility for employees and reduces IT cost. How
 
 Cloud App Security is a critical component of the Microsoft Cloud Security stack. It's a comprehensive solution that can help your organization as you move to take full advantage of the promise of cloud applications, but keeps you in control through improved visibility into activity. It also helps increase the protection of critical data across cloud applications. With tools that help uncover shadow IT, assess risk, enforce policies, investigate activities, and stop threats, your organization can more safely move to the cloud while maintaining control of critical data. 
 
-For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
 ## The Cloud App Security framework  
 

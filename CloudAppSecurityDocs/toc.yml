@@ -221,7 +221,7 @@
   - name: Release note archive
     href: release-note-archive.md
   - name: Licensing datasheet
-    href: aka.ms/mcaslicensing
+    href: https://aka.ms/mcaslicensing
   - name: Support and troubleshooting
     href: support-and-ts.md
   - name: Premier support portal

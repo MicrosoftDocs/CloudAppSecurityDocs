@@ -33,7 +33,7 @@ ms.custom: seodec18
 
 This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure Active Directory (Azure AD).
 
-For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
 ## Microsoft Cloud App Security 
 
