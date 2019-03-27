@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 02/28/2019
+ms.date: 03/25/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -32,6 +32,8 @@ ms.custom: seodec18
 *Applies to: Microsoft Cloud App Security*
 
 This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure Active Directory (Azure AD).
+
+For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
 ## Microsoft Cloud App Security 
 

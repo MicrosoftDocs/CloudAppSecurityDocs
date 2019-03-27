@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 3/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -43,6 +43,7 @@ There are two types of reports you can generate:
   - [Windows Defender ATP integration](wdatp-integration.md): Cloud App Security integrates with Windows Defender Advanced Threat Protection (ATP) natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
   - [Log collector](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
   - [Zscaler integration](zscaler-integration.md): If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Zscaler provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Zscaler portal.
+ - [iboss integration](iboss-integration.md): If you work with both Cloud App Security and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and iboss provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the iboss portal.
 
 ## Log process flow: From raw data to risk assessment
 
