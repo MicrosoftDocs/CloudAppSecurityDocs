@@ -66,6 +66,8 @@
       href: wdatp-integration.md
     - name: Integrate with Zscaler
       href: zscaler-integration.md
+    - name: Integrate with iboss
+      href: iboss-integration.md
     - name: Create snapshot Cloud Discovery reports
       href: create-snapshot-cloud-discovery-reports.md
     - name: Configure automatic log upload for continuous reports
@@ -169,8 +171,8 @@
             href: content-inspection-built-in.md
           - name: Data Classification Service integration
             href: dcs-inspection.md
-        - name: Working with the RegEx engine
-        href: working-with-the-regex-engine.md
+          - name: Working with the RegEx engine
+            href: working-with-the-regex-engine.md
       - name: Conditional Access App Control policies
         items:
         - name: Access policies
@@ -183,20 +185,23 @@
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
-    - name: Integrate using security extensions
+    - name: Azure Information Protection integration
+      href: azip-integration.md
+    - name: Integrate with extrnal solutions
       items: 
-      - name: Azure Information Protection integration
-        href: azip-integration.md
       - name: SIEM integration
         href: siem.md
       - name: External DLP integration
         href: icap-stunnel.md
-      - name: Integrate with Microsoft Flow
-        href: flow-integration.md
-      - name: Integrate with iboss
-        href: iboss-integration.md
-      - name: API tokens
+
+    - name: Automate processes and workflows
+      items: 
+      - name: Use the REST API
         href: api-tokens.md
+      - name: Investigate activities with APIs
+        href: investigate-activities-api.md  
+      - name: Use Microsoft Flow
+        href: flow-integration.md
 - name: Reference
   items:
   - name: Troubleshooting Cloud Discovery
@@ -215,6 +220,8 @@
   items:
   - name: Release note archive
     href: release-note-archive.md
+  - name: Licensing datasheet
+    href: https://aka.ms/mcaslicensing
   - name: Support and troubleshooting
     href: support-and-ts.md
   - name: Premier support portal

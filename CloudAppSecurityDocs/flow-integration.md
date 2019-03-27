@@ -42,7 +42,7 @@ Cloud App Security integrates with [Microsoft Flow](https://docs.microsoft.com/f
 
 On its own, Cloud App Security provides predefined governance options such as suspend user or make file private when defining policies. By creating a playbook in Microsoft Flow using Cloud App Security connector, you can create workflows to enable customized governance options for your policies. After the playbook is created in Flow, simply associate it with a policy in Cloud App Security to send alerts to Flow. Microsoft Flow offers several connectors and conditions to create a customized workflow for your organization. 
 
-The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudappsecurity/#/providers/microsoft.powerapps/apis/shared_cloudappsecurity/apioperations/mcas_on_alert_generated) in Flow supports automated trigger and actions (coming soon). Flow is triggered automatically when Cloud App Security generates an alert. Actions include changing the alert status in Cloud App Security. 
+The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudappsecurity/) in Flow supports automated trigger and actions. Flow is triggered automatically when Cloud App Security generates an alert. Actions include changing the alert status in Cloud App Security. 
 
 ## How to create playbooks with Microsoft Flow
 
@@ -76,4 +76,3 @@ The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudap
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  

@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/17/2019
+ms.date: 3/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -32,7 +32,7 @@ ms.custom: seodec18
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
+RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
 
 ## Cloud App Security release 145
@@ -41,7 +41,7 @@ Released March 17, 2019
 
 - **Windows Defender ATP integration is now GA** <br>
 Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
-- Cloud App Security added real-time monitoring and control for Dynamics 365, to enable you to protect your business applications and the sensitive content stored within these apps. 
+- **Dynamics 365 support** <br>Cloud App Security added real-time monitoring and control for Dynamics 365, to enable you to protect your business applications and the sensitive content stored within these apps. 
 
 ## Cloud App Security release 144
 

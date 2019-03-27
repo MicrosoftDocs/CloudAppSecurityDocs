@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/3/2019
+ms.date: 3/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -92,7 +92,7 @@ The OAuth apps page provides the following information about each OAuth app that
 
 ## Revoke app and notify user
 
-For G Suite and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. 
+For G Suite and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under “Enterprise Applications” in Azure AD.
 
 1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account.
    This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.

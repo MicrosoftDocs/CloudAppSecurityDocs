@@ -98,7 +98,7 @@ After enabling Azure Information Protection, you'll be able to see files that ha
 
 
 > [!NOTE] 
-> Automatic scan does not scan existing files until they are modified again. To scan existing files for Azure Information Protection classification labels, you must have at least one **Content inspection File policy**. If you have none, create a new **File policy**, delete all the preset filters, check the **Content inspection** option. Then, under **Content inspection**, click **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects Azure Information Protection classification labels.
+> Automatic scan does not scan existing files until they are modified again. To scan existing files for Azure Information Protection classification labels, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects Azure Information Protection classification labels.
 
 #### Set internal and external tags
 By default, Cloud App Security scans classification labels that were defined in your organization as well as external ones defined by other organizations. 
