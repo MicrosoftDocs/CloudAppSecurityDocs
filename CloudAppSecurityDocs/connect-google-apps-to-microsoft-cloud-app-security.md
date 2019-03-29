@@ -225,7 +225,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
   
     1.  **Service account ID** that you copied in step 13.  
   
-    2.  **Project number (App ID)** that you copied in step 21.  
+    2.  **Project number (App ID)** that you copied in step 22.  
   
     3.  Upload the **Certificate** P12 that you saved in step 12. You need the password you saved to do this.  
   
