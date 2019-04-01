@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 3/31/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -34,6 +34,19 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+
+## Cloud App Security release 146
+
+Released March 31, 2019
+
+- **Impossible travel enhancement**<br>
+Impossible travel detection was enhanced with dedicated support for neighboring countries.
+- **Additional attribute support for the generic CEF parser**<br>
+The Cloud Discovery log parser support for generic CEF format was enhanced to support additional attributes.
+- **Scoped access to Cloud Discovery reports**<br>
+In addition to the Discovery Admin role, you can now scope access to specific Discovery reports. This enhancement enables you to configure privileges to data of specific sites and business units.
+- **New role support: Global reader**<br>
+Microsoft Cloud App Security now supports the Azure AD Global Reader role. The Global reader has full read-only access to all aspects of Microsoft Cloud App Security, but cannot change any settings or take any actions.
 
 ## Cloud App Security release 145
 
