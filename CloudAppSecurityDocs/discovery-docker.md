@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -48,7 +48,7 @@ The Log Collector supports two deployment modes:
 
 -   **Container**: Runs as a Docker image on [Ubuntu on premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md) or [RHEL on premises](discovery-docker-ubuntu.md). 
 
--   **Virtual appliance**:  [Runs as an image over Hyper-V or VMware hypervisor](configure-automatic-log-upload-for-continuous-reports.md)
+-   **Virtual appliance**:  Runs as an image over Hyper-V or VMware hypervisor (deprecated)
 
 
 
