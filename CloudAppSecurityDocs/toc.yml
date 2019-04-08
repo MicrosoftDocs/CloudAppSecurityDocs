@@ -25,7 +25,7 @@
   items:
   - name: Discover and manage shadow IT
     href: tutorial-shadow-it.md
-  - name: Detect risky OAuth apps
+  - name: Investigate risky OAuth apps
     href: investigate-risky-oauth.md
   - name: Block downloads of sensitive information
     href: use-case-proxy-block-session-aad.md
