@@ -38,13 +38,12 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 Released April 14, 2019
 
-- **New Cloud Discovery log parser**<br>Cloud App Security Cloud Discovery now includes a built-in log parser to support the LEEF log format, used by Palo Alto Networks appliances. 
+- **New Cloud Discovery log parser**<br>Cloud App Security Cloud Discovery now includes a built-in log parser to support the Palo Alto LEEF log format. 
 
 - **Session policies updates**
-    - **Large file download control**:<br>When content inspection is enabled in session policies, you can now control what happens when a user tries to download a very large file. If the file is too big to scan on download, you can choose whether it will be blocked or allowed.
     - **Additional content inspection method for session policies**:<br>When setting a session policy, you now have the option to choose Data Classification Service as a content inspection method for files. Data Classification Service offers the user a wide range of built in sensitive types to use to identify sensitive information.
     - **Enhanced file permissions control in session policies**:<br>When you’re creating a session policy to control downloads using Cloud App Security, you can now automatically apply permissions per user, such as read-only, to the documents upon download from your cloud apps. This provides a much greater level of flexibility and the ability to protect information beyond your pre-configured corporate labels.
-
+    - **Large file download control**:<br>When content inspection is enabled in session policies, you can now control what happens when a user tries to download a very large file. If the file is too big to scan on download, you can choose whether it will be blocked or allowed.
 
 
 ## Cloud App Security release 146
