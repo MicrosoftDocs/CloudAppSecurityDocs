@@ -95,7 +95,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Security extensions - No permissions
   - Governance actions - Only Cloud Discovery related actions
 
-- **Cloud Discovery report admin:** Has permissions to view all the data in Microsoft Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Windows Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog.
+- **Cloud Discovery report admin:** Has permissions to view all the data in Microsoft Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog.
 This admin will not have access to the **Activities** or **Files** pages and limited access to policies.
 
 - **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.

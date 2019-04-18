@@ -64,7 +64,7 @@
   - name: Set up Cloud Discovery
     href: set-up-cloud-discovery.md
     items:
-    - name: Integrate with Windows Defender ATP
+    - name: Integrate with Microsoft Defender ATP
       href: wdatp-integration.md
     - name: Integrate with Zscaler
       href: zscaler-integration.md
@@ -84,9 +84,7 @@
       - name: Troubleshooting Cloud Discovery docker deployment
         href: troubleshoot-docker.md
       - name: Log collector behind a proxy
-        href: log-collector-proxy.md
-      - name: Using a virtual appliance - Deprecated
-        href: configure-automatic-log-upload-for-continuous-reports.md
+        href: log-collector-proxy.md  
     - name: Use the custom log parser
       href: custom-log-parser.md
     - name: Cloud Discovery enrichment

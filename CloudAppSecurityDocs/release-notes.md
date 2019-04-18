@@ -63,7 +63,7 @@ Microsoft Cloud App Security now supports the Azure AD Global Reader role. The G
 
 Released March 17, 2019
 
-- **Windows Defender ATP integration is now GA** <br>
+- **Microsoft Defender ATP integration is now GA** <br>
 Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
 - **Dynamics 365 support** <br>Cloud App Security added real-time monitoring and control for Dynamics 365, to enable you to protect your business applications and the sensitive content stored within these apps. 
 
@@ -230,7 +230,7 @@ Released September 25, 2018
     - Provide feedback from within a session: This new tool enables you to provide feedback to the Cloud App Security team about the performance of an application under session control, directly from within the session.
 
 
-- **Native integration with Windows Defender ATP for Shadow IT Discovery beyond your corp**
+- **Native integration with Microsoft Defender ATP for Shadow IT Discovery beyond your corp**
     - Microsoft Cloud App Security now natively integrates with Windows Defender Advanced Threat Protection (ATP) to provide deploymentless Shadow IT discovery capabilities for on and off corporate network use of cloud apps.  This enables you to perform Cloud Discovery on machines, even when they are not within your corporate network. It also enables machine-based investigation: after you identify a risky user, you can then check all the machines the user accessed to detect potential risks; if you identify a risky machine, you can check all the users who used it to investigate potential risks. For more information, see  Windows Defender Advanced Threat Protection integration with [Microsoft Cloud App Security](wdatp-integration.md).
 - **Content inspection for encrypted files**
     - Cloud App Security now supports content inspection of protected files that are encrypted that were protected using Azure Information Protection. You can now inspect these encrypted files for re-classification proposes and identify additional DLP exposure and security policy violations. 

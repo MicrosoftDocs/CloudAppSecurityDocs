@@ -51,7 +51,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
     
 1. **Discover Shadow IT**: Identify your organization's security posture by running Cloud Discovery in your organization to see what's actually happening in your network. For more information see [Set up cloud discovery](set-up-cloud-discovery.md).This can be done using any of the following methods:
    
-    - Get up and running quickly with Cloud Discovery by integrating with [Windows Defender ATP](wdatp-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+    - Get up and running quickly with Cloud Discovery by integrating with [Microsoft Defender ATP](wdatp-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
    
     - For coverage on all devices connected to your network, it's important to deploy the [Cloud App Security log collector](discovery-docker.md) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 

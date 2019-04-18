@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting Cloud Discovery Docker Deployment
+title: Modify FTP settings
 description: This article describes the process for modifying configuration for the Cloud App Security Cloud Discovery docker.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -26,15 +26,11 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Troubleshooting the Microsoft Cloud App Security Cloud Discovery deployment
+# Log collector FTP configuration
 
 *Applies to: Microsoft Cloud App Security*
 
 This article describes how to modify the configuration for the Cloud App Security Cloud Discovery docker.
-
-## Windows Defender ATP integration
-
-If you integrated Windows Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
 
 ## Docker deployment
 

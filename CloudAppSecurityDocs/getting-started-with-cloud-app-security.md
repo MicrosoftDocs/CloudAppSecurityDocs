@@ -88,7 +88,7 @@ You can use policies to help you monitor trends, see security threats, and gener
 
 Required task: Enable Cloud App Security to view your cloud app use
 
-1. [Integrate with Windows Defender ATP](wdatp-integration.md) to automatically enable Cloud App Security to monitor your Windows 10 devices inside and outside your corporation.
+1. [Integrate with Microsoft Defender ATP](wdatp-integration.md) to automatically enable Cloud App Security to monitor your Windows 10 devices inside and outside your corporation.
 2. If you use [Zscaler, integrate](zscaler-integration.md) it with Cloud App Security.
 3. To achieve full coverage, create a continuous Cloud Discovery report
 
