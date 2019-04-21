@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/28/2019
+ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
@@ -27,7 +27,7 @@ ms.suite: ems
 #Customer intent: As a sec op, I want to know and control which apps are used in my org so that I can harden my organization's security.
 ---
 
-# Tutorial: Discover and manage shadow IT in your network
+# Tutorial: Discover and manage shadow IT in your network 
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -51,7 +51,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
     
 1. **Discover Shadow IT**: Identify your organization's security posture by running Cloud Discovery in your organization to see what's actually happening in your network. For more information see [Set up cloud discovery](set-up-cloud-discovery.md).This can be done using any of the following methods:
    
-    - Get up and running quickly with Cloud Discovery by integrating with [Windows Defender ATP](wdatp-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+    - Get up and running quickly with Cloud Discovery by integrating with [Microsoft Defender ATP](wdatp-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
    
     - For coverage on all devices connected to your network, it's important to deploy the [Cloud App Security log collector](discovery-docker.md) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 
