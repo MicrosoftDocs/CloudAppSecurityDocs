@@ -6,7 +6,7 @@ description: This tutorial describes the process to automatically apply Azure In
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

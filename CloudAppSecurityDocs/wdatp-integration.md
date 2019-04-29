@@ -6,7 +6,7 @@ description: This article describes how to integrate Windows Defender Advanced T
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

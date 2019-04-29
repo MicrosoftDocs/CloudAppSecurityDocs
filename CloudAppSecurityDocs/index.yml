@@ -5,7 +5,7 @@ metadata:
   title: Microsoft Cloud App Security
   description: Provide enterprise-grade security for your cloud apps with Microsoft Cloud App Security, for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
   author: msmbaldwin
-  manager: barbkess
+  manager: rkarlin
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na

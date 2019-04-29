@@ -6,7 +6,7 @@ description: This tutorial describes how to automatically apply Azure Informatio
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

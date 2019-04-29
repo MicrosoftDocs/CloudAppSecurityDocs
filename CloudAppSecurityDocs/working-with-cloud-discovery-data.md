@@ -6,7 +6,7 @@ description: This topic provides instructions for how to work with Cloud Discove
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

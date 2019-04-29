@@ -6,7 +6,7 @@ description: This article describes the IP addresses and ports you need to open 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
