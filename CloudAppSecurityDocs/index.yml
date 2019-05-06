@@ -4,17 +4,17 @@ title: Microsoft Cloud App Security
 metadata:
   title: Microsoft Cloud App Security
   description: Provide enterprise-grade security for your cloud apps with Microsoft Cloud App Security, for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
-  author: msmbaldwin
-  manager: barbkess
+  author: rkarlin
+  manager: angrobe
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
+  ms.date: 06/05/2019
+  ms.author: rkarlin
   layout: LandingPage
 abstract:
-  description: Microsoft Cloud App Security (MCAS) provides enterprise-grade security for your cloud apps, bringing the security of your on-premises systems to your cloud applications for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
+  description: Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
 sections:
 - title: Learn More
   items:
