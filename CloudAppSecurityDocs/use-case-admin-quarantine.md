@@ -46,6 +46,7 @@ This tutorial helps you use Microsoft Cloud App Security to detect unwanted file
 >[!NOTE] 
 > - This is a preview feature.
 > - For a list of apps that support admin quarantine, see the the list of [governance actions](governance-actions.md).
+> - If a file in SharePoint or OneDrive is detected to be malware, it is not quarantined in the Cloud App Security portal. 
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
 
