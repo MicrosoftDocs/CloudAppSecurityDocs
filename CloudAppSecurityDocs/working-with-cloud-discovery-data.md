@@ -6,8 +6,8 @@ description: This topic provides instructions for how to work with Cloud Discove
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 12/14/2018
+manager: angrobe
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -66,7 +66,7 @@ To create an exclusion:
 
 Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:  
   
-- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  
+- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn’t include data from Microsoft Defender ATP.
   
 - The **Data source specific report** displays only information from a specific data source.  
   
