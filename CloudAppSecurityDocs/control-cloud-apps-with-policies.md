@@ -6,7 +6,7 @@ description: This article provides information on how policies are used and set 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -6,8 +6,8 @@ description: This article describes the process configuring automatic log upload
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 1/29/2019
+manager: rkarlin
+ms.date: 4/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -121,7 +121,7 @@ The following steps describe the deployment in Windows. The deployment steps for
 3. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`.
 
 4. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again.
+This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again. **Make sure the Docker client is set to use Linux containers.**
 
 5. After each restart, from the directory into which you saved the installer, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 

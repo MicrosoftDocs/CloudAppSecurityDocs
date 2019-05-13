@@ -6,8 +6,8 @@ description: This article describes your support and troubleshooting options for
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 1/27/2019
+manager: rkarlin
+ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -75,7 +75,7 @@ Select **support request** to create a new support request that opens to the **B
 
 5.  Review the information, verify that it is correct, and then choose **Create** to submit your support request.
 
-**Note:** If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).
+**Note:** If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### View open support requests
 

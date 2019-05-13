@@ -6,8 +6,8 @@ description: This article provides information about how to upload logs manually
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 1/27/2019
+manager: rkarlin
+ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -96,7 +96,7 @@ Therefore, these attributes will not be shown in Cloud Discovery data for these 
 
 
 To successfully generate a Cloud Discovery report, your traffic logs must meet the following conditions:
-1. Data source is supported (see list below).
+1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. Log format matches the expected standard format (format checked upon upload by the Log tool).
 3. Events aren't more than 90 days old.
 4. The log file is valid and includes outbound traffic information.

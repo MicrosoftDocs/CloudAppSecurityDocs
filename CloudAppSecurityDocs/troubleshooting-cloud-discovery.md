@@ -6,8 +6,8 @@ description: This article provides a list of Cloud Discovery frequent errors and
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 12/10/2018
+manager: rkarlin
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -32,6 +32,11 @@ ms.custom: seodec18
 
 This article provides a list of Cloud Discovery errors and resolution recommendations for each.
 
+## Microsoft Defender ATP integration
+
+If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
+
+
 ## Log parsing errors
 
 You can track the processing of Cloud Discovery logs using the governance log. This article provides resolution actions to be taken for each error that can be displayed there.
@@ -55,7 +60,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 |Logs sent to the collector do not appear in the portal | 1.  Check to see if there are failed parsing tasks in the Governance log.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;If so, troubleshoot the error with the Log Parsing error table above.<br /> 2. If not, check the data sources and Log collector configuration in the portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. In the Data source page, verify that the data source you are using is accurately configured. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. In the Log collectors page, verify that the data source is linked to the right log collector. <br /> 3. Check the local configuration of the on-premises log collector machine.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Log in to the log collector over SSH and run the collector_config utility.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirm that your firewall or proxy is sending logs to the log collector using the protocol you defined (Syslog/TCP, Syslog/UDP or FTP) and that it is sending them to the correct port and directory.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Run netstat on the machine and verify that it receives incoming connections from your firewall or proxy <br /> 4.   Verify that the log collector is allowed to initiate outbound traffic on port 443. |
 |Log collector status: Created | The log collector deployment was not completed. Complete the on-premise deployment steps according to the deployment guide.|
 |Log collector status: Disconnected | No data received in the last 24 hours from any of the linked data sources. |
-
+|Failed pulling latest collector image| If you get this error during Docker deployment, it could be that you don't have enough memory ont he host machine. To check this, run this command on the host: `docker pull microsoft/caslogcollector`. If it returns this error: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` contact your host machine administrator to provide more space.|
 
 ## Discovery dashboard errors
 

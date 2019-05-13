@@ -6,8 +6,8 @@ description: This article provides information about how to connect your WebEx a
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 3/22/2019
+manager: rkarlin
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -34,7 +34,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
  
 ## Prerequisites
 
-We suggest that you create a dedicated service account for the connection. This enable you to see that governance actions performed in WebEx as being performed from this account, such as delete messages sent in WebEx. Otherwise, the name of the admin who connected Cloud App Security to WebEx will appear as the user who performed the actions.  
+- We suggest that you create a dedicated service account for the connection. This enables you to see that governance actions performed in WebEx as being performed from this account, such as delete messages sent in WebEx. Otherwise, the name of the admin who connected Cloud App Security to WebEx will appear as the user who performed the actions.  
+- You must have Full administrator **and** Compliance administrator permissions in WebEx.
+
 
 ## How to connect WebEx to Cloud App Security  
   

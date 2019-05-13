@@ -6,8 +6,8 @@ description: This quickstart outlines the process for getting Cloud App Security
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 1/27/2019
+manager: rkarlin
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.prod:
@@ -61,7 +61,7 @@ You can also access the portal through the **Microsoft 365 admin center** by cli
 ## Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 Required task: Connect apps
 
-1.From the settings cog, select   **App connectors**.
+1. From the settings cog, select   **App connectors**.
 2. Click the plus sign to add an app and select an app.
 3. Follow the configuration steps to connect the app.
 
@@ -88,7 +88,7 @@ You can use policies to help you monitor trends, see security threats, and gener
 
 Required task: Enable Cloud App Security to view your cloud app use
 
-1. [Integrate with Windows Defender ATP](wdatp-integration.md) to automatically enable Cloud App Security to monitor your Windows 10 devices inside and outside your corporation.
+1. [Integrate with Microsoft Defender ATP](wdatp-integration.md) to automatically enable Cloud App Security to monitor your Windows 10 devices inside and outside your corporation.
 2. If you use [Zscaler, integrate](zscaler-integration.md) it with Cloud App Security.
 3. To achieve full coverage, create a continuous Cloud Discovery report
 
@@ -123,7 +123,7 @@ Recommended task: Add your organization details
 **To customize the score metrics**
 
 1. From the settings cog, select **Cloud Discovery settings**.
-1.From the settings cog, select **Cloud Discovery settings**.
+1. From the settings cog, select **Cloud Discovery settings**.
 2. Under **Score metrics**, configure the importance of various risk values.
 3. Choose **Save**.
 
@@ -139,8 +139,8 @@ Recommended task: Configure important settings
 
 **To create IP address tags**
 
-1.From the settings cog, select **Cloud Discovery settings**.
-1.From the settings cog, select **IP address ranges**.
+1. From the settings cog, select **Cloud Discovery settings**.
+1. From the settings cog, select **IP address ranges**.
 2. Click the plus sign to add an IP address range.
 3. Enter the IP range **details**, **location**, **tags**, and **category**.
 4. Choose **Create**.
