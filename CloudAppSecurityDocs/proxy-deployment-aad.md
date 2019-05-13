@@ -6,7 +6,7 @@ description: This article provides information about how to deploy the Microsoft
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 2/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

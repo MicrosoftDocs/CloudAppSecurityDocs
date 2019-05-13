@@ -6,7 +6,7 @@ description: This article describes Microsoft Cloud App Security and how it work
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
