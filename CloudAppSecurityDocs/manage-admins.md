@@ -6,8 +6,8 @@ description: This article provides instructions for setting access to the Cloud 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 1/27/2019
+manager: rkarlin
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -66,7 +66,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Security extensions - Permissions only for API token with user permissions
   - Governance actions - Only for the specific app/instance 
 
-- **Group admin:** Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin can view and modify information in Microsoft Cloud App Security only for that user group:
+- **User group admin:** Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin can view and modify information in Microsoft Cloud App Security only for that user group:
 
   - Activities page - Only activities about the users in the group
   - Alerts - Only alerts relating to the users in the group
@@ -79,7 +79,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Security extensions - Permissions only for API token with users in the group
   - Governance actions - Only for the specific users in the group
 
-- **Global Discovery admin:**  Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has access as follows:
+- **Cloud Discovery global admin:**  Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has access as follows:
 
   - Settings - 
      -  System settings - View only
@@ -95,6 +95,11 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Security extensions - No permissions
   - Governance actions - Only Cloud Discovery related actions
 
+- **Cloud Discovery report admin:** Has permissions to view all the data in Microsoft Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog.
+This admin will not have access to the **Activities** or **Files** pages and limited access to policies.
+
+- **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
+ 
 ## Override admin permissions
 
 If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions.

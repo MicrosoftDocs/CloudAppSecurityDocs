@@ -6,8 +6,8 @@ description: This article is updated frequently to let you know what's new in th
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 3/17/2019
+manager: rkarlin
+ms.date: 04/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -34,12 +34,36 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 147
+
+Released April 14, 2019
+
+- **New Cloud Discovery log parser**<br>Cloud App Security Cloud Discovery now includes a built-in log parser to support the Palo Alto LEEF log format. 
+
+- **Session policies updates**
+    - **Additional content inspection method for session policies**:<br>When setting a session policy, you now have the option to choose Data Classification Service as a content inspection method for files. Data Classification Service offers the user a wide range of built in sensitive types to use to identify sensitive information.
+    - **Enhanced file permissions control in session policies**:<br>When you’re creating a session policy to control downloads using Cloud App Security, you can now automatically apply permissions per user, such as read-only, to the documents upon download from your cloud apps. This provides a much greater level of flexibility and the ability to protect information beyond your pre-configured corporate labels.
+    - **Large file download control**:<br>When content inspection is enabled in session policies, you can now control what happens when a user tries to download a very large file. If the file is too big to scan on download, you can choose whether it will be blocked or allowed.
+
+
+## Cloud App Security release 146
+
+Released March 31, 2019
+
+- **Impossible travel enhancement**<br>
+Impossible travel detection was enhanced with dedicated support for neighboring countries.
+- **Additional attribute support for the generic CEF parser**<br>
+The Cloud Discovery log parser support for generic CEF format was enhanced to support additional attributes.
+- **Scoped access to Cloud Discovery reports**<br>
+In addition to the Discovery Admin role, you can now scope access to specific Discovery reports. This enhancement enables you to configure privileges to data of specific sites and business units.
+- **New role support: Global reader**<br>
+Microsoft Cloud App Security now supports the Azure AD Global Reader role. The Global reader has full read-only access to all aspects of Microsoft Cloud App Security, but cannot change any settings or take any actions.
 
 ## Cloud App Security release 145
 
 Released March 17, 2019
 
-- **Windows Defender ATP integration is now GA** <br>
+- **Microsoft Defender ATP integration is now GA** <br>
 Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
 - **Dynamics 365 support** <br>Cloud App Security added real-time monitoring and control for Dynamics 365, to enable you to protect your business applications and the sensitive content stored within these apps. 
 
@@ -206,7 +230,7 @@ Released September 25, 2018
     - Provide feedback from within a session: This new tool enables you to provide feedback to the Cloud App Security team about the performance of an application under session control, directly from within the session.
 
 
-- **Native integration with Windows Defender ATP for Shadow IT Discovery beyond your corp**
+- **Native integration with Microsoft Defender ATP for Shadow IT Discovery beyond your corp**
     - Microsoft Cloud App Security now natively integrates with Windows Defender Advanced Threat Protection (ATP) to provide deploymentless Shadow IT discovery capabilities for on and off corporate network use of cloud apps.  This enables you to perform Cloud Discovery on machines, even when they are not within your corporate network. It also enables machine-based investigation: after you identify a risky user, you can then check all the machines the user accessed to detect potential risks; if you identify a risky machine, you can check all the users who used it to investigate potential risks. For more information, see  Windows Defender Advanced Threat Protection integration with [Microsoft Cloud App Security](wdatp-integration.md).
 - **Content inspection for encrypted files**
     - Cloud App Security now supports content inspection of protected files that are encrypted that were protected using Azure Information Protection. You can now inspect these encrypted files for re-classification proposes and identify additional DLP exposure and security policy violations. 

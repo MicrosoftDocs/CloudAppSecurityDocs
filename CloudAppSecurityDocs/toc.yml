@@ -25,6 +25,8 @@
   items:
   - name: Discover and manage shadow IT
     href: tutorial-shadow-it.md
+  - name: Investigate risky OAuth apps
+    href: investigate-risky-oauth.md
   - name: Block downloads of sensitive information
     href: use-case-proxy-block-session-aad.md
   - name: Protecting your files with admin quarantine
@@ -62,7 +64,7 @@
   - name: Set up Cloud Discovery
     href: set-up-cloud-discovery.md
     items:
-    - name: Integrate with Windows Defender ATP
+    - name: Integrate with Microsoft Defender ATP
       href: wdatp-integration.md
     - name: Integrate with Zscaler
       href: zscaler-integration.md
@@ -82,9 +84,7 @@
       - name: Troubleshooting Cloud Discovery docker deployment
         href: troubleshoot-docker.md
       - name: Log collector behind a proxy
-        href: log-collector-proxy.md
-      - name: Using a virtual appliance - Deprecated
-        href: configure-automatic-log-upload-for-continuous-reports.md
+        href: log-collector-proxy.md  
     - name: Use the custom log parser
       href: custom-log-parser.md
     - name: Cloud Discovery enrichment
@@ -112,6 +112,7 @@
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
+    
   - name: Deploy Conditional Access App Control for Azure AD apps
     href: proxy-deployment-aad.md
   - name: Discover
@@ -187,7 +188,7 @@
       href: governance-discovery.md
     - name: Azure Information Protection integration
       href: azip-integration.md
-    - name: Integrate with extrnal solutions
+    - name: Integrate with external solutions
       items: 
       - name: SIEM integration
         href: siem.md
@@ -204,6 +205,8 @@
         href: flow-integration.md
 - name: Reference
   items:
+  - name: Attest your app
+    href: attest-your-app.md
   - name: Troubleshooting Cloud Discovery
     href: troubleshooting-cloud-discovery.md
   - name: Troubleshooting API Connectors using error messages

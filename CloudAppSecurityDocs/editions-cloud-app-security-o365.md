@@ -6,7 +6,7 @@ description: This article describes the differences between Cloud App Security a
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/6/2019
 ms.topic: overview
 ms.collection: M365-security-compliance

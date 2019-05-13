@@ -6,7 +6,7 @@ description: This article describes the process Cloud App Security follows when 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
