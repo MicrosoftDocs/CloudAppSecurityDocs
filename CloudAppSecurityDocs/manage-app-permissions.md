@@ -6,7 +6,7 @@ description: This article provides information about how you can control, ban an
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 04/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

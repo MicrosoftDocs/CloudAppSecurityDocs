@@ -6,7 +6,7 @@ description: This article provides information about how to upload logs to creat
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

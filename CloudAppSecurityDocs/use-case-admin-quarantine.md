@@ -6,7 +6,7 @@ description: This tutorial describes the scenario for using admin quarantine to 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 06/05/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

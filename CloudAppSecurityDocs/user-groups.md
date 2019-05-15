@@ -6,7 +6,7 @@ description: This article provides instructions for importing your user groups f
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

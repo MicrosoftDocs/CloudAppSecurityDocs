@@ -6,7 +6,7 @@ description: This article describes the Cloud App Security compliance offering, 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 03/01/2019
 ms.topic: overview
 ms.collection: M365-security-compliance

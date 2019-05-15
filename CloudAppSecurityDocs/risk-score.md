@@ -6,7 +6,7 @@ description: This article provides instructions for how to use and customize the
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

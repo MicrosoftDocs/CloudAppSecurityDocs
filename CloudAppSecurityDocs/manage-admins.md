@@ -6,7 +6,7 @@ description: This article provides instructions for setting access to the Cloud 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

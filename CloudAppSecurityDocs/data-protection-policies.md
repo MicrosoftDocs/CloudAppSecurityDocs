@@ -6,7 +6,7 @@ description: This article describes the procedure for setting up a data policy t
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

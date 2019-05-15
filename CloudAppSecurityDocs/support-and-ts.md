@@ -6,7 +6,7 @@ description: This article describes your support and troubleshooting options for
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

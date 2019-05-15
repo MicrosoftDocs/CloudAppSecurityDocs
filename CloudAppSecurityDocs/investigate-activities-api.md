@@ -6,7 +6,7 @@ description: This article provides information on how to use the API to investig
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -6,7 +6,7 @@ description: This article provides information about how to upload logs manually
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
