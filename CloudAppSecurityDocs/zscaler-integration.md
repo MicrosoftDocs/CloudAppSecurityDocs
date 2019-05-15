@@ -6,7 +6,7 @@ description: This article describes how to integrate Microsoft Cloud App Securit
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

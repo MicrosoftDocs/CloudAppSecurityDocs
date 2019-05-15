@@ -6,7 +6,7 @@ description: This article describes the process configuring automatic log upload
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

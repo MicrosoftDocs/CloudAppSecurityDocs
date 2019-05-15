@@ -6,7 +6,7 @@ description: This tutorial describes the scenario for protecting your organizati
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 1/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

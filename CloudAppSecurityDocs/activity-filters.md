@@ -6,7 +6,7 @@ description: This article provides a list of activities, filters and match param
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -6,7 +6,7 @@ description: This article provides information on how to investigate risky OAuth
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 04/08/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

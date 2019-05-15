@@ -6,7 +6,7 @@ description: This article provides information about how the Cloud App Security 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -6,7 +6,7 @@ description: This quickstart describes the process for identifying and remediati
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 06/05/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance

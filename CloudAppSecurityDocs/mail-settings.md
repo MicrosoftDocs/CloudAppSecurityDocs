@@ -6,7 +6,7 @@ description: This article provides information about how to personalize the emai
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

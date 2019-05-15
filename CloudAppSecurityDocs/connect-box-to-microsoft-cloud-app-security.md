@@ -6,7 +6,7 @@ description: This article provides information about how to connect your Box app
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

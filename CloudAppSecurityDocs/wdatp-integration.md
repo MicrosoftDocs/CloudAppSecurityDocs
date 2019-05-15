@@ -6,7 +6,7 @@ description: This article describes how to integrate Microsoft Defender Advanced
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: angrobe
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
