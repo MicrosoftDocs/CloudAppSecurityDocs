@@ -6,7 +6,7 @@ description: This article provides a description of Anomaly detection policies a
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 2/4/2019
 
 ms.topic: conceptual

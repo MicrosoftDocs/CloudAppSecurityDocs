@@ -6,7 +6,7 @@ description: This article describes the process for modifying configuration for 
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
