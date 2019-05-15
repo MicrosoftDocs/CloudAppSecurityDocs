@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/2/2019
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -68,6 +68,8 @@ Follow these steps to configure Azure AD apps to be controlled by Microsoft Clou
       > [!NOTE]
       >Conditional Access App Control supports any SAML or Open ID Connect app that is configured with single sign-on in Azure AD, including these featured apps. Non-featured apps can be configured with access control in the Cloud App Security portal by making a request to onboarded them with session control. 
 
+7. Click **Enable** and **Save**.
+ 
 ## Step 2: Sign in with a user scoped to the policy in the apps <a name="sign-in-scoped"></a>
 
 After you've created the policy, sign in to each app configured in that policy. Make sure you sign in using a user configured in the policy. Make sure to first sign out of existing sessions.
