@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: angrobe
 ms.date: 05/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance

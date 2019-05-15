@@ -6,7 +6,7 @@ description: This article provides a list of Cloud Discovery frequent errors and
 keywords:
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
