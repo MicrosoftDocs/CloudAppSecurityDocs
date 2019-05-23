@@ -75,28 +75,25 @@
         href: iboss-integration.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
-      - name: Deploy Cloud Discovery
-        items:
-        - name: Configure automatic log upload for continuous reports
-          href: discovery-docker.md
-          items:
-          - name: Docker on Windows
-            href: discovery-docker-windows.md
-          - name: Docker on Ubuntu and RHEL on-premises
-            href: discovery-docker-ubuntu.md
-          - name: Docker on Ubuntu in Azure
-            href: discovery-docker-ubuntu-azure.md
-        - name: Troubleshooting Cloud Discovery docker deployment
-          href: troubleshoot-docker.md
-        - name: Log collector behind a proxy
-          href: log-collector-proxy.md  
+      - name: Configure automatic log upload for continuous reports
+        href: discovery-docker.md
+      - name: Docker on Windows
+        href: discovery-docker-windows.md
+      - name: Docker on Ubuntu and RHEL on-premises
+        href: discovery-docker-ubuntu.md
+      - name: Docker on Ubuntu in Azure
+        href: discovery-docker-ubuntu-azure.md
+      - name: Troubleshooting Cloud Discovery docker deployment
+        href: troubleshoot-docker.md
+      - name: Log collector behind a proxy
+        href: log-collector-proxy.md  
       - name: Use the custom log parser
         href: custom-log-parser.md
-      - name: Cloud Discovery enrichment
-        href: cloud-discovery-aad-enrichment.md
-      - name: Anonymize Cloud Discovery data
-        href: cloud-discovery-anonymizer.md
-    - name: Working with Cloud Discovery
+  - name: Cloud Discovery enrichment
+    href: cloud-discovery-aad-enrichment.md
+  - name: Anonymize Cloud Discovery data
+    href: cloud-discovery-anonymizer.md
+  - name: Working with Cloud Discovery
       items:
       - name: Add custom apps to Cloud Discovery
         href: cloud-discovery-custom-apps.md
