@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 1/27/2019
+ms.date: 05/23/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.prod:
@@ -72,6 +72,28 @@ For example, you can differentiate between different SharePoint sites.
 This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
  ![subdomain information](./media/discovery-domains.png) 
+
+## Discover resources and custom apps
+
+Cloud Discovery also enables you to deep dive into your IaaS and PaaS resources. You can discover activity across your resource-hosting platforms, viewing access to data across your self-hosted apps and resources including storage accounts, infrastructure and custom apps hosted on Azure, Google Cloud Platform, and AWS. Not only can you see overall usage in your IaaS solutions, but you can get visibility into the specific resources that are hosted on each, and the overall usage of the resources, to help mitigate risk per resource.
+
+For example, from Cloud App Security you can monitor activity such as if  a lot of data is uploaded, you can discover what resource it is uploaded to and drill down to see who performed the activity.
+
+> [!NOTE]
+> This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+To view discovered resources:
+
+1. In the Cloud App Security portal, select **Discover** and then **Discovered resources**.
+
+  ![Discovered resources menu](./media/discovered-resources-menu.png) 
+
+2. In the Discovered resource page, you can drill down into each resource to see what kinds of transactions occurred, who accessed it, and then drill down to investigate the users even further.
+ 
+  ![Discovery resources](./media/discovery-resources.png) 
+
+3. For custom apps, you can click the three buttons at the end of the row and select **Add custom app**. This will open the **Add custom app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
+
 
 ## Generate Cloud Discovery executive report
 

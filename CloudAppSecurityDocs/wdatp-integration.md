@@ -98,6 +98,9 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
  
 As with any other Cloud Discovery source, you can export the data from the Win10 endpoint users report for further investigation. 
 
+> [!NOTE]
+> - Defender ATP forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
+> - If the 4 MB limit isn't reached within 1 hour, Defender ATP reports all the transactions performed over the last hour.
 
 ## Related Videos
 
