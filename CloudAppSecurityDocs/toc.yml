@@ -122,7 +122,8 @@
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
-    
+    - name: Connect WebEx
+      href: connect-webex-to-microsoft-cloud-app-security.md
   - name: Deploy Conditional Access App Control for Azure AD apps
     href: proxy-deployment-aad.md
   - name: Investigation
