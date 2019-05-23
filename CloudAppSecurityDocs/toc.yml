@@ -75,7 +75,7 @@
         href: iboss-integration.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
-      - name: Deplo Cloud Discovery
+      - name: Deploy Cloud Discovery
         items:
         - name: Configure automatic log upload for continuous reports
           href: discovery-docker.md
