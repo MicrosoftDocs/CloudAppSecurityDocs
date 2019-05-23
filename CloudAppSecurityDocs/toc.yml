@@ -94,11 +94,11 @@
   - name: Anonymize Cloud Discovery data
     href: cloud-discovery-anonymizer.md
   - name: Working with Cloud Discovery
-      items:
-      - name: Add custom apps to Cloud Discovery
-        href: cloud-discovery-custom-apps.md
-      - name: Discovered app filters and queries
-        href: discovered-app-queries.md
+    items:
+    - name: Add custom apps to Cloud Discovery
+      href: cloud-discovery-custom-apps.md
+    - name: Discovered app filters and queries
+      href: discovered-app-queries.md
   - name: Connect apps
     items:
     name: Configure automatic log upload for continuous reports
