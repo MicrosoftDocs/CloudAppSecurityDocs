@@ -63,8 +63,10 @@
       href: ip-tags.md
   - name: Cloud Discovery
     items:
-    - name: Set up Cloud Discovery
-      href: set-up-cloud-discovery.md
+    - name: Set up
+      items:
+      - name: Set up Cloud Discovery
+        href: set-up-cloud-discovery.md
       - name: Integrate with Microsoft Defender ATP
         href: wdatp-integration.md
       - name: Integrate with Zscaler
@@ -73,15 +75,17 @@
         href: iboss-integration.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
-      - name: Configure automatic log upload for continuous reports
-        href: discovery-docker.md
+      - name: Deplo Cloud Discovery
         items:
-        - name: Docker on Windows
-          href: discovery-docker-windows.md
-        - name: Docker on Ubuntu and RHEL on-premises
-          href: discovery-docker-ubuntu.md
-        - name: Docker on Ubuntu in Azure
-          href: discovery-docker-ubuntu-azure.md
+        - name: Configure automatic log upload for continuous reports
+          href: discovery-docker.md
+          items:
+          - name: Docker on Windows
+            href: discovery-docker-windows.md
+          - name: Docker on Ubuntu and RHEL on-premises
+            href: discovery-docker-ubuntu.md
+          - name: Docker on Ubuntu in Azure
+            href: discovery-docker-ubuntu-azure.md
         - name: Troubleshooting Cloud Discovery docker deployment
           href: troubleshoot-docker.md
         - name: Log collector behind a proxy
@@ -99,6 +103,8 @@
       - name: Discovered app filters and queries
         href: discovered-app-queries.md
   - name: Connect apps
+    items:
+    name: Configure automatic log upload for continuous reports
     href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     items:
     - name: Connect Azure
