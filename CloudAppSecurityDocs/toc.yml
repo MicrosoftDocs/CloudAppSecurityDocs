@@ -89,21 +89,18 @@
         href: log-collector-proxy.md  
       - name: Use the custom log parser
         href: custom-log-parser.md
-  - name: Cloud Discovery enrichment
-    href: cloud-discovery-aad-enrichment.md
-  - name: Anonymize Cloud Discovery data
-    href: cloud-discovery-anonymizer.md
-  - name: Working with Cloud Discovery
-    items:
+    - name: Cloud Discovery enrichment
+      href: cloud-discovery-aad-enrichment.md
+    - name: Anonymize Cloud Discovery data
+      href: cloud-discovery-anonymizer.md
     - name: Add custom apps to Cloud Discovery
       href: cloud-discovery-custom-apps.md
     - name: Discovered app filters and queries
       href: discovered-app-queries.md
   - name: Connect apps
     items:
-    name: Configure automatic log upload for continuous reports
-    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
-    items:
+    - name: Configure automatic log upload for continuous reports
+      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Connect Azure
       href: connect-azure-to-microsoft-cloud-app-security.md
     - name: Connect AWS
