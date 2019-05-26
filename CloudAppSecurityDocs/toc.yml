@@ -99,7 +99,7 @@
       href: discovered-app-queries.md
   - name: Connect apps
     items:
-    - name: Configure automatic log upload for continuous reports
+    - name: Connect apps to get visibility and protection
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Connect Azure
       href: connect-azure-to-microsoft-cloud-app-security.md
