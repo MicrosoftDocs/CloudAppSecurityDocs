@@ -68,7 +68,7 @@ Detect when a user, who is on unpaid leave and should not be active on any organ
 
 ### Steps
 
-1.  On the [User groups](user-groups) screen, click **Create user group** and import the relevant Azure AD group.
+1.  On the [User groups](user-groups.md) screen, click **Create user group** and import the relevant Azure AD group.
 
 2.  On the **Policies** page, create a new **Activity policy**.
 
@@ -174,7 +174,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 - This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
 
-- It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware).
+- It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
 > This applies to Office 365, G Suite, Box, and Dropbox.

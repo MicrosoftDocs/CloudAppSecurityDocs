@@ -255,11 +255,11 @@ Prerequisites:
 
 - [Deploy Conditional Access app control for Azure AD apps](proxy-deployment-aad.md)
 
-- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad#supported-apps-and-clients.md).
+- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Step
 
-Follow these step [to protect files on download](session-policy-aad#protect-download.md).
+Follow these step [to protect files on download](session-policy-aad.md#protect-download).
 
 ## Protect files on download in real-time
 
@@ -269,13 +269,13 @@ Prerequisites:
 
 - [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md)
 
-- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad#supported-apps-and-clients.md).
+- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad.md#supported-apps-and-clients).
  
 - Azure Information Protection labels are configured and used inside the organization.
 
 ### Steps
 
-Follow step number 6 under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy.md).
+Follow step number 6 under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy).
 
 
 ## Protect files by limiting user sessions in real time
@@ -286,13 +286,13 @@ Prerequisites:
 
 - [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
 
-- Applies for SAML based apps utilizing AAD SSO – [list of supported apps out of the box](proxy-intro-aad#supported-apps-and-clients.md).
+- Applies for SAML based apps utilizing AAD SSO – [list of supported apps out of the box](proxy-intro-aad.md#supported-apps-and-clients).
 
 - Azure Information Protection labels are configured and used inside the organization.
 
 ### Steps
 
-1. Follow step number 6 until bullet C under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy.md).
+1. Follow step number 6 until bullet C under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy).
 
 2.  Under **Actions** select **Protect** and then select **Apply custom permissions to downloading user**.
 
