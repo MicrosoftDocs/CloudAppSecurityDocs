@@ -47,7 +47,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 ### Steps
 
 1.  This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
-2. Optional: you can [customize anomaly detection policies](anomaly-detection-policy#scope-anomaly-detection-policies.md): 
+2. Optional: you can [customize anomaly detection policies](anomaly-detection-policy.md#scope-anomaly-detection-policies): 
     - Customize the detection scope in terms of users and groups
 
     - Choose the types of sign-ins to consider
