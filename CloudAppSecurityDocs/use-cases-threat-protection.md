@@ -5,7 +5,7 @@ title: Threat protection use cases - Cloud App Security | Microsoft Docs
 description: This topic outlines the steps to configure many threat protection use cases in Cloud App Security.
 author: rkarlin
 ms.author: rkarlin
-ms.date: 05/27/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -22,374 +22,277 @@ ms.custom: seodec18
 *Applies to: Microsoft Cloud App Security*
 
 
-Identify high-risk usage and cloud security issues, detect abnormal user
-behavior, and prevent threats in your sanctioned cloud apps. Get visibility into
-user and admin activities and define policies to automatically alert on
-suspicious behavior or when specific activities that you consider risky happen
-in your sanction environments. Draw from the vast amount of Microsoft threat
-intelligence and security research data. Threat detection policies help you
-ensure that your sanctioned apps have all the security controls you need in
-place and help you maintain control over them.
+Cloud App Security enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
-**Detect and control user activity from un-familiar geo-location**
+## Detect and control user activity from unfamiliar locations
 
-Auto detection of user access or activity from un-familiar location which was
-never used by anyone else in the organization.
+Automatic detection of user access or activity from unfamiliar locations that were never visited by anyone else in your organization.
 
-## Prerequisites
+### Prerequisites
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-## Steps
+### Steps
 
-Automatically configured out of the box to alert on access from new locations.
-No action needed to configure a policy. More details can be found
-[here](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
+This detection is automatically configured out-of-the-box to alert you when there is access from new locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-**Detect compromised account by impossible geo-location (Impossible travel)**
+## Detect compromised account by impossible location (impossible travel)
 
-Auto detection of user access or activity from 2 different location in a time
-period which is shorter than the time it takes to travel between the two.
+Automatic detection of user access or activity from 2 different locations within a time period that is shorter than the time it takes to travel between the two.
 
-## Prerequisites
+### Prerequisites
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-## Steps
+### Steps
 
-1.  Automatically configured out of the box to alert on access from impossible
-    locations. More details can be found
-    [here](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy).
+1.  This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+2. Optional: you can [customize anomaly detection policies](anomaly-detection-policy#scope-anomaly-detection-policies.md): 
+    - Customize the detection scope in terms of users and groups
 
-2.  [Optional
-    customization](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies)
-    is possible:
+    - Choose the types of sign-ins to consider
 
-    1.  Customize detection scopes in terms of users/groups
+    - Set your sensitivity preference for alerting
 
-    2.  Choose the type of sign-ins to consider
+3.  Create the anomaly detection policy.
 
-    3.  Set your sensitivity preference for alerting
+## Detect suspicious activity from an “on-leave” employee
 
-3.  Create the file policy
+Detect when a user, who is on unpaid leave and should not be active on any organizational resource, is accessing any of your organization's cloud resources.
 
-**Detect suspicious activity from an “on-leave” employee**
+### Prerequisites
 
-Detect when a user, on unpaid leave and should not be active on any organization
-resource is accessing any of the organization cloud resources.
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-## Prerequisites
+- Create a security group in Azure Active Directory for the users on unpaid leave and add all the users you want to monitor.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Steps
 
--   Create a security group in Azure Active Directory for the users on un-paid
-    leave and add all the users to monitor.
+1.  On the [User groups](user-groups) screen, click **Create user group** and import the relevant Azure AD group.
 
-## Steps
+2.  On the **Policies** page, create a new **Activity policy**.
 
-1.  On the [User groups
-    page](https://docs.microsoft.com/en-us/cloud-app-security/user-groups),
-    click Create user group and import the relevant Azure AD group.
+3.  Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
 
-2.  On the Policies page, create a new Activity policy.
+4.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
 
-3.  Select filter *User group* equals the name of the user groups you created in
-    Azure AD for the un-paid leave users.
+6.  Create the file policy.
 
-4.  Configure the actions to be take when an alert is triggered.
+## Detect and notify when outdated browser OS is used
 
-5.  Optional: Create a governance action on detected violation (availability
-    varies between services)
+Detect when a user is using a browser with an outdated client version that might pose compliance or security risks to your organization.
 
-    1.  Choose to suspend user
+### Prerequisites
 
-6.  Create the file policy
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-**Detect and notify the use of a Browser with out of date OS**
+### Steps
 
-Detect when a user is using an outdated client version which might pose
-compliance or security risk
+1.  On the **Policies** page, create a new **Activity policy**.
 
-## Prerequisites
+2.  Set the filter **User agent tag** equals to **Outdated browser** and **Outdated operating system**.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+3. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components.
 
-## Steps
+5.  Create the Activity policy.
 
-1.  On the Policies page, create an Activity policy.
+## Detect and alert when Admin activity is detected on risky IP addresses
 
-2.  Select filter *User agent tag* equals *Outdated browser* and *outdated
-    operating system*
+Detect admin activities performed from and IP address that is considered a risky IP address, and notify the system admin for further investigation or set a governance action on the admin’s account.
 
-3.  Configure the actions to be take when an alert is triggered.
+### Prerequisites
 
-4.  In Governance, All apps, select Notify user – so user can act upon the alert
-    and update the necessary components
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+ 
+- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
-5.  Create the file policy
+### Steps
 
-**Detect and alert on Admin activity from Risky IP**
+1.  On the **Policies** page, create a new **Activity policy**.
 
-Detect an admin activity done from and IP which is considered as a risky IP and
-notify system admin for further investigation or govern the admin’s account.
+2.  Set **Act on** to **Single activity**.
 
-## Prerequisites
+3.  Set the filter **IP address** to **Category** equals **Risky**
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+4.  Set the filter **Administrative activity** to **True**
 
--   Go to Settings [Symbol] IP address ranges and add IP address ranges for both
-    internal subnets and their egress public IPs with the “Internal” category.
+5.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components **CC the user’s manager**.
 
-## Steps
+7.  Create the activity policy.
 
-1.  On the *Policies* page, create an *Activity policy*.
+## Detect activities by service account from external IP addresses
 
-2.  Set Create filters for the policy *Single activity*
+Detect service account activities originating from a non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
 
-3.  Select filter *IP address Category* equals *Risky*
+### Prerequisites
 
-4.  Select filter *Administrative activity* is *True*
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
-5.  Configure the actions to be take when an alert is triggered.
+- Standardize a naming conventions for service accounts in your environment, for example, set all account names to start with “svc”.
 
-6.  In Governance, *All apps*, select *Notify user* and *CC the user’s manager*
+### Steps
 
-7.  *C*reate the file policy
+1.  On the **Policies** page, create a new **Activity policy**.
 
-**Detect activities by service account from external IPs**
+2.  Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
 
-Detect service accounts activities originating from a non-internal IP addresses
-which could indicate suspicious behavior or a compromised account risk.
+3.  Set the filter **IP address** to **Category** does not equal **Other** and **Corporate**.
 
-## Prerequisites
+4.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+5.  Create the policy.
 
--   Go to Settings [Symbol] IP address ranges and add IP address ranges for both
-    internal subnets and their egress public IPs with the “Internal” category.
+## Detect mass download (data exfiltration)
 
--   Standardize a naming convention for service accounts in your environment
-    (e.g. all account names start with “svc”).
+Detect when a certain user accesses or downloads a massive number of files in a short period of time.
 
-## Steps
+### Prerequisites
 
-1.  On Policies page, create an Activity policy.
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-2.  Select filter *User Name* Starts with *“svc”* (or other set naming
-    convention)
+### Steps
 
-3.  Select filter *IP Address Category* does not equal *Other* and *Corporate*
+1.  On the **Policies** page, create a new **Activity policy**.
 
-4.  Configure the actions to be take when an alert is triggered.
+2.  Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure** – exclude non interactive machine-based activities.
 
-5.  Create the policy
+3.  Set the filter **Activity types** equals to and then select all relevant download activities.
 
-**Detect mass download (data exfiltration)**
+4. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+5.  Create the policy.
 
-Detect when a certain user accesses or downloads a massive number of files in a
-short period of time.
+## Detect potential Ransomware activity
 
-## Prerequisites
+Automatic detection of potential Ransomware activity.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Prerequisites
 
-## Steps
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-1.  On Policies page, create an activity policy
+### Steps
 
-2.  Select filter *IP Addresses Tag* does not equal *Microsoft Azure* – exclude
-    non interactive machine-based activities
+- This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
 
-3.  Select filter *Activity types* equals *\*{Any Download} \** activities
+- It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware).
 
-4.  Configure the actions to be take when an alert is triggered.
+> [!NOTE]
+> This applies to Office 365, G Suite, Box, and Dropbox.
 
-5.  Create the policy
+## Detect malware in the cloud
 
-**Detect potential Ransomware activity**
+Detect files containing malware in your cloud environments by utilizing Cloud App Security’s integration with the Microsoft’s Threat Intelligence engine.
 
-Auto detection of potential Ransomware activity.
+### Prerequisites
 
-## Prerequisites
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Steps
 
-## Steps
+- This detection is automatically configured out-of-the-box to alert you when there is a file that may contain malware. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
 
--   Automatically configured out of the box alert on potential Ransomware
-    activity. No action needed to configure a policy.  
-    It is possible to configure Scope of the detection and to customize the
-    action to be taken upon an alert.  
-    More details about how Cloud App Security identifies Ransomware activities
-    can be found
-    [here](https://docs.microsoft.com/en-us/cloud-app-security/use-case-ransomware).
+## Detect rough admin takeover
 
-Note:
+Detect repeated admin activity that might indicate malicious intentions.
 
--   Applicable for O365, G Suite, Box and Dropbox
+### Prerequisites
 
-**Detect malware in the cloud**
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-Detect files containing malware in your cloud environments by utilizing Cloud
-App Security’s integration with the Microsoft’s Threat Intelligence engine.
+### Steps
 
-## Prerequisites
+1.  On the **Policies** page, create a new **Activity policy**.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+2.  Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
 
-## Steps
+3.  Set the filter **User** to **From group** equals and select all the related admin group as **Actor only**.
 
--   Automatically configured out of the box alert on potential Malware infected
-    files. No action needed to configure a policy.
+4.  Set the filter **Activity type** equals to all activities that relate to password updates, changes, and resets.
 
-**Detect Rough admin takeover**
+5. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+6.  Create the policy.
 
-Detect repeated Admin activity that would indicate malicious intentions.
+## Detect suspicious inbox manipulation rules
 
-## Prerequisites
+If a suspicious inbox rule was set on a user's inbox, it may indicate that the user account is compromised, and that the mailbox is being used to distribute spam and malware in your organization.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Prerequisites
 
-## Steps
+- Use of Microsoft Exchange for email.
 
-1.  On Policies page, create an activity policy
+### Steps
 
-2.  In Create filter for the policy, Select Act on Repeated activity and
-    customize the Minimal repetitions and timeframe.
+- This detection is automatically configured out-of-the-box to alert you when there is a suspicious inbox rule set. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
 
-3.  Select filter *User From group* equals *{Select all admin related groups}*
-    as *Actor only*
 
-4.  Select filter *Activity type* equals *{All Password update/changes/Reset}*
-
-5.  Configure the actions to be take when an alert is triggered.
-
-6.  Create the policy
-
-**Detect suspicious inbox manipulation rule**
-
-A suspicious inbox rule was set on a user's inbox. This may indicate that the
-user account is compromised, and that the mailbox is being used to distribute
-spam and malware in your organization.
-
-## Prerequisites
-
--   Use of Microsoft exchange for e-mails.
-
-## Steps
-
--   Automatically configured out of the box alert on suspicious inbox
-    manipulation rules activity. No action needed to configure a policy.  
-    It is possible to configure Scope of the detection and to customize the
-    action to be taken upon an alert.
-
-**Detect leaked credentials (New)**  
+## Detect leaked credentials
   
-When cybercriminals compromise valid passwords of legitimate users, they often
-share those credentials. This is usually done by posting them publicly on the
-dark web or paste sites or by trading or selling the credentials on the black
-market.
+When cyber criminals compromise valid passwords of legitimate users, they often share those credentials. This is usually done by posting them publicly on the dark web or paste sites or by trading or selling the credentials on the black market.
 
-Cloud App Security utilizes Microsoft’s Threat intelligence to match such
-credentials to the ones used inside the organization.
+Cloud App Security utilizes Microsoft’s Threat intelligence to match such credentials to the ones used inside your organization.
 
-## Prerequisites
+### Prerequisites
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-## Steps
+### Steps
 
--   Automatically configured out of the box alert on compromised user accounts.
-    No action needed to configure a policy.
+This detection is automatically configured out-of-the-box to alert you when a possible credential leak is detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
 
-**Detect anomalous file downloads by a user (New)**<br>
--------------------------------------------------------
 
-Detect when users perform multiple file download activities in a single session
-with respect to the baseline learned, which could indicate an attempted breach.
+## Detect anomalous file downloads
 
-## Prerequisites
+Detect when users perform multiple file download activities in a single session, relative to the baseline learned. This could indicate an attempted breach.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Prerequisites
 
-## Steps
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
--   Automatically configured out of the box alert on anomalous user download
-    activities. No action needed to configure a policy.  
-    It is possible to configure Scope of the detection and to customize the
-    action to be taken upon an alert.
+### Steps
 
-**Detect anomalous file shares by a user (New)** 
--------------------------------------------------
+- This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
-Detect when users perform multiple file sharing activities in a single session
-with respect to the baseline learned, which could indicate an attempted breach.
+## Detect anomalous file shares by a user
 
-## Prerequisites
+Detect when users perform multiple file-sharing activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Prerequisites
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### Steps
 
-## Steps
+- This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
--   Automatically configured out of the box alert on anomalous user share
-    activities. No action needed to configure a policy.  
-    It is possible to configure Scope of the detection and to customize the
-    action to be taken upon an alert.
+## Detect anomalous activities from infrequent country
 
-**Detect anomalous activities from infrequent country (New)**
--------------------------------------------------------------
+Detect activities from a location that was not recently or was never visited by the user or by any user in your organization.
 
-Detect activities from a location that was not recently or never visited by the
-user or by any user in the organization.
+### Prerequisites
 
-## Prerequisites
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Steps
 
-## Steps
+- This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
--   Automatically configured out of the box alert on anomalous activity
-    locations. No action needed to configure a policy.  
-    It is possible to configure Scope of the detection and to customize the
-    action to be taken upon an alert.
+> [!NOTE]
 
-Note:
+> Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Cloud App Security does not generate alerts for new locations.
 
--   Detecting anomalous locations necessitates an initial learning period of 7
-    days, during which it does not alert on any new locations.
+## Detect activity performed by a terminated user
 
-**Detect activity performed by a terminated user (New)**
---------------------------------------------------------
+Detect when a user who is no longer an employee of your organization performs an activity in a sanctioned app. This may indicate malicious activity by a terminated employee who still has access to corporate resources.
 
-Detect when a terminated user performs an activity in a sanctioned application.
-This may indicate malicious activity by a terminated employee who still has
-access to corporate resources.
+### Prerequisites
 
-## Prerequisites
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
--   At least one connected app via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+### Steps
 
-## Steps
-
--   Automatically configured out of the box alert on terminated user activity.
-    No action needed to configure a policy.  
-    It is possible to configure Scope of the detection and to customize the
-    action to be taken upon an alert.
+- This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 
 ## Next steps 

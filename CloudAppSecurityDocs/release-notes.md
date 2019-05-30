@@ -35,6 +35,13 @@ This article is updated frequently to let you know what's new in the latest rele
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
 
+## Cloud App Security release 150
+
+Released May 26, 2019
+
+- **Alerts export improvement**<br> When you export alerts to CSV from the **Alerts** page, the results will now include the date of the alert resolution or dismissal.
+
+
 ## Cloud App Security release 148 and 149
 
 Released May 12, 2019

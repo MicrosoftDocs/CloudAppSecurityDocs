@@ -5,7 +5,7 @@ title: Information protection use cases - Cloud App Security | Microsoft Docs
 description: This topic outlines the steps to configure many information protection use cases in Cloud App Security.
 author: rkarlin
 ms.author: rkarlin
-ms.date: 05/27/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -21,13 +21,13 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Cloud App Security file policies allow you to enforce a wide range of automated processes, leveraging the cloud provider’s APIs. Policies can be set to provide information protectin, including continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly.
+Cloud App Security file policies allow you to enforce a wide range of automated processes, leveraging the cloud provider’s APIs. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
-Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). For more information, see [File policies](data-protection-policies.md).
+Cloud App Security can monitor any file type based on more than 20 metadata filters, for example, access level, and file type. For more information, see [File policies](data-protection-policies.md).
 
 ## Detect and prevent external sharing of sensitive data
 
-Detect when files with personally identifying information or other sensitive data are stored in a Cloud service and shared with users who are external to your organization. This violates your company policy and creates a potential compliance breach.
+Detect when files with personally identifying information or other sensitive data are stored in a Cloud service and shared with users who are external to your organization that violates your company's security policy and creates a potential compliance breach.
 
 ### Prerequisites
 
@@ -35,17 +35,15 @@ You must have at least one app connected using [app connectors](enable-instant-v
  
 ### Steps
 
-1.  On the **Policies** page, create a new **File policy**.
+1. On the **Policies** page, create a new **File policy**.
 
-2.  Set the filter **Access Level** equals **Public (Internet) / Public / External**.
+2. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-3.  Under **Inspection method**, select **Data Classification Service (DCS)**, and choose **Sensitive information inspection**.
+3. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-5.  Select one or more **Information types**, according to your company's policy.
+6. Configure the **Governance** actions to be take when an alert is triggered. For example, you can create a governance action that runs on detected file violations in G Suite in which you select the option to **Remove external users** and **Remove public access**.
 
-6.  Configure the actions to be take when an alert is triggered. For example, you can create a governance action that runs on detected file violations in G Suite in which you select the option to **Remove external users** and **Remove public access**.
-
-7.  Create the file policy.
+7. Create the file policy.
 
 ## Detect externally shared confidential data
 
@@ -61,13 +59,11 @@ Detect when files that are labeled **Confidential** and are stored in a cloud se
 
 1.  On the **Policies** page, create a new **File policy**.
 
-2.  Select **Classification label in Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
+2.  Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
 
 3.  Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-4.  Configure the actions to be take when an alert is triggered.
-
-1.  Optional: Create Governance actions to be taken on files when a violation is detected. The optional governance actions varies between services.
+1.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
 5.  Create the file policy.
 
@@ -85,9 +81,7 @@ Detect files containing personally identifying information and other sensitive d
 
 1.  On the **Policies** page, create a new **File policy**.
 
-2.  Under **Inspection method**, select **Data Classification Service (DCS)**, and choose **Sensitive information inspection**.
-
-5.  Select one or more **Information types**, according to your company's policy.
+2.  Under **Inspection method**, select **Data Classification Service (DCS)** and under **Select type** select the type of sensitive information you want DCS to inspect.
 
 5.  Under **Alert**, check **Apply classification label governance** and select the classification label that your company uses to restrict access to company employees. 
 
@@ -98,11 +92,11 @@ Detect files containing personally identifying information and other sensitive d
 
 ## Detect stale externally shared data
 
-Detect unused and stale files (files that were not updated recently) that are accessible publicly via direct public link, web search or to specific external users.
+Detect unused and stale files, files that were not updated recently, that are accessible publicly via direct public link, web search, or to specific external users.
 
 ### Prerequisites
 
--   You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -110,75 +104,58 @@ Detect unused and stale files (files that were not updated recently) that are ac
 
 2.  Select and apply the policy template **Stale externally shared files**.
 
-3.  Customize the **Last modified** period to match your organization’s policy
+3.  Customize the filter **Last modified** to match your organization’s policy.
 
-4.  Configure the actions to be take when an alert is triggered..
+4.  Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
 
-5.  Optional: Set governance action to be taken on the alerted file.
+    - G Suite: Make the file private and notify the last file editor
 
-    1.  Examples:
+    - Box: Notify the last file editor
 
-        1.  G Suite: Make the file private and notify last file editor
+    - SharePoint online: Make the file private and send a policy-match digest to the file owner
 
-        2.  Box: Notify last file editor
+6.  Create the file policy.
 
-        3.  SharePoint online: Make the file private and Send policy-match
-            digest to the file owner.
+## Detect data access from an unauthorized location
 
-6.  Create the file policy
-
-**Detect data access from an un-authorized geo-location**
-
-Detect when files are being accessed from an un-authorized geo-location based on
-your organization’s geographies to identify potential data leakage or malicious
-access.
+Detect when files are accessed from an unauthorized location, based on your organization’s common locations, to identify a potential data leak or malicious access.
 
 ### Prerequisites
 
--   At least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 ### Steps
 
-1.  On Policies page, Create an Activity Policy.
+1. On the **Policies** page, create a new **Activity policy**.
 
-2.  Select *Activity type* filter equals to any type considered as file/folder
-    access (e.g View, Download, Access, Modify and etc.)
+2. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
-3.  Select Location filter does not equal the organization’s expected usage
-    origin countries (Whitelist)
+3. Set the filter **Location** does not equal, and then enter the countries from which your organization expects activity. 
 
-    1.  Optional: Use Blacklist approach if un-authorized countries list is well
-        defined – change the filter to equals.
+    1.  Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries.
 
-4.  Configure the actions to be take when an alert is triggered.
+4.  Optional: Create **Governance** actions to be applied to detected violation (availability varies between services), such as  **Suspend user**.
 
-5.  Optional: Create a governance action on detected violation (availability
-    varies between services)
+6.  Create the Activity policy.
 
-    1.  Choose to suspend user
+## Detect and protect confidential data store in a non-compliant SP site
 
-6.  Create the Activity policy
-
-**Detect and protect confidential data store in a non-compliant SP site**
-
-Detect files which are labeled as confidential stored in a non-compliant
-SharePoint site.
+Detect files that are labeled as confidential and are stored in a non-compliant SharePoint site.
 
 ### Prerequisites
 
--   Azure information protection labels are configured and used inside the
-    organization.
+Azure Information Protection labels are configured and used inside the organization.
 
 ### Steps
 
 1.  On the **Policies** page, create a new **File policy**.
 
-2.  Select **Classification label** in AIP equals **Confidential** label, or your company's equivalent.
+2.  Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
 
-3.  Select **Parent folder** filter does not equal, then click **Select a folder** and choose all the compliant folders in your organization.
+3.  Set the filter **Parent folder** does not equal, and then under **Select a folder** choose all the compliant folders in your organization.
 
-6.  Check **Create an alert for each matching file**.
+6.  Under **Alerts** select **Create an alert for each matching file**.
 
-7.  Optional - Create a governance action to control what happens when a file is found that violates the policy. For example, Set Box to Send a policy digest to file owner and put the file in admin quarantine.
+7.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, Set **Box** to **Send policy-match digest to file owner** and **Put in admin quarantine**.
 
 8.  Create the file policy.
 
@@ -188,7 +165,7 @@ Detect when files that contain content that might be source code are shared publ
 
 ### Prerequisites
 
-At least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -196,216 +173,138 @@ At least one app connected using [app connectors](enable-instant-visibility-prot
 
 2.  Select and apply the policy template **Externally shared source code**
 
-3.  Optional: Customize the list of file Extensions to match your organization's source code file extensions.
+3.  Optional: Customize the list of file **Extensions** to match your organization's source code file extensions.
 
-4.  Configure the actions to be take when an alert is triggered.
+4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, in Box, **Send policy-match digest to file owner** and **Put in admin quarantine**.
 
-5.  Optional - Create an action to govern files violating the policy
-
-    1.  Examples:
-
-        1.  Box: Send a policy digest to file owner and admin quarantine the
-            file
-
-6.  Select and apply the policy template
+5. Select and apply the policy template
 
 ## Detect unauthorized access to group data (Refactored)
 
-Detect when certain files that belong to a specific user group are being accessed excessively by a user who is not part of the group, thus potentially preventing potential insider threat.
+Detect when certain files that belong to a specific user group are being accessed excessively by a user who is not part of the group, which could be a potential insider threat.
 
 ### Prerequisites
 
--   At least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
 ### Steps
 
-1.  On Policies page, Create an Activity Policy.
+1. On the **Policies** page, create a new **Activity policy**.
 
-2.  Choose *Act on Repeated activity*
+2.  Under **Act on** select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
 
-    1.  Customize the parameters of repetitions and a timeframe to meet your
-        organizations policy
+3.  Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
-3.  Select *Activity type* filter equals to any type considered as file/folder
-    access (e.g View, Download, Access, Modify and etc.) in the required service
-    (e.g
+4.  Set the filter **User** to **From group** equals and then select the relevant user groups. 
 
-4.  Select filter *User* of a type *From group* equals
+> [!NOTE]
+> [User groups can be imported manually](user-groups.md) from supported apps.
 
-5.  Click on Select user group and select the relevant user group/s
+6.  Set the filter **Files and folders** to **Specific files or folders** equals and then choose the files and folders that belong to the audited user group.
 
-    1.  Note: [User groups can be imported
-        manually](https://docs.microsoft.com/en-us/cloud-app-security/user-groups)
-        from the supported services.
+9.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, you can choose to **Suspend user**.
 
-6.  Select filter *Files and folders* of a type *Specific files or folders*
-    equals
+11. Create the file policy.
 
-7.  Click on the *Select a file...*
+## Detect publicly accessible S3 buckets
 
-8.  Choose the files/folders which belong to the audited user group
-
-9.  Configure the actions to be take when an alert is triggered.
-
-10. Optional: Create a governance action on detected violations (availability
-    varies between services)
-
-    1.  Choose to suspend user
-
-11. Create the file policy
-
-**Detect publicly accessible S3 buckets (New)**
-
-Detect and protect against potential data leakage from AWS S3 buckets.
+Detect and protect against potential data leaks from AWS S3 buckets.
 
 ### Prerequisites
 
--   Connected AWS instance via [app
-    connectors](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+You must have an AWS instance connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
 1.  On the **Policies** page, create a new **File policy**.
 
-2.  Select and apply the policy template *Publicly accessible S3 buckets (AWS)*
+2.  Select and apply the policy template **Publicly accessible S3 buckets (AWS)**.
 
-3.  Configure the actions to be take when an alert is triggered.
+3.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, set AWS to **Make private** which would make the S3 buckets private.
 
-4.  Optional - Under Governance, create an action to govern the policy violation
+5.  Create the file policy.
 
-    1.  Check the governance action via AWS – Make private – making the S3
-        buckets private.
+## Detect and protect GDPR related data across file storage apps 
 
-5.  Select and apply the policy template
-
-**Detect and protect GDPR related data across file storage apps (New)**
------------------------------------------------------------------------
-
-Detect files containing personally identifying information and other sensitive data that are bound to GDPR
-compliance policy that is shared on cloud storage services and apply
-classification labels to limit access only to authorized personnel.
+Detect files that are shared in cloud storage apps and contain personally identifying information and other sensitive data that is bound by a GDPR compliance policy. Then, automatically apply classification labels to limit access only to authorized personnel.
 
 ### Prerequisites
 
--   At least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
--   [Azure information protection (AIP)
-    integration](https://docs.microsoft.com/en-us/cloud-app-security/azip-integration)
-    is enabled and GDPR label is configured in AIP.
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- [Azure Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in AIP.
 
 ### Steps
 
 1.  On the **Policies** page, create a new **File policy**.
 
-2.  Select *Data Classification Service* (DCS) for Inspection method
+2.  Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national identification number, EU passport number, EU SSN, SU tax identification number.
 
-3.  Choose the *Sensitive Information inspection* type
-
-4.  Select one or more Information type that comply with the GDPR compliance
-
-    1.  Some of the relevant types: EU debit card number, EU Driver License
-        Number, EU National identification number, EU passport number, EU SSN,
-        SU Tax identification number.
-
-5.  Customize action to be taken upon an alert
-
-6.  In Governance, Check Apply Classification label governance per supported app
-
-    1.  Select the GDPR related Classification label.
+5.  Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply Classification label governance** for each supported app.
 
 7.  Create the file policy
 
 > [!NOTE]
->   Currently, apply classification label is only supported for Box, G Suite,
-    SharePoint online and OneDrive for business.
+>  Currently, **Apply classification label** is only supported for Box, G Suite, SharePoint online and OneDrive for business.
 
-**Block file downloads to unmanaged devices**
+## Block file downloads to unmanaged devices
 
-Control and block download activities in real time from managed and un-managed
-devices using Cloud app security [session
-controls](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad).
+Control and block download activities in real time from managed and un-managed devices using Cloud App Security [session control](proxy-intro-aad.md).
 
 Prerequisites:
 
--   [Deploy conditional access app control for Azure AD
-    apps](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad)
+- [Deploy Conditional Access app control for Azure AD apps](proxy-deployment-aad.md)
 
--   Applies for SAML based apps utilizing AAD SSO – [list of supported apps out
-    of the
-    box](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
+- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad#supported-apps-and-clients.md).
 
-### Steps
+### Step
 
-1.  Follow steps
-    [here](https://docs.microsoft.com/en-us/cloud-app-security/session-policy-aad#protect-download)
+Follow these step [to protect files on download](session-policy-aad#protect-download.md).
 
-> [!NOTE]
->   Support for Any app based on SAML and utilizing SSO with AAD is coming soon.
+## Protect files on download in real-time
 
-**Protect files on download in real-time**
-
-Control and protect file downloads in real time by applying correct file label,
-utilizing Cloud app security integration with Azure Information protection.
+Control and protect file downloads in real time by applying correct file labels, by utilizing Cloud App Security integration with Azure Information Protection.
 
 Prerequisites:
 
--   [Deploy conditional access app control for Azure AD
-    apps](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad)
+- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md)
 
--   Applies for SAML based apps utilizing AAD SSO – [list of supported apps out
-    of the
-    box](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
-
--   Azure information protection labels are configured and used inside the
-    organization.
+- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad#supported-apps-and-clients.md).
+ 
+- Azure Information Protection labels are configured and used inside the organization.
 
 ### Steps
 
-1.  Follow steps
-    [here](https://docs.microsoft.com/en-us/cloud-app-security/session-policy-aad#create-a-cloud-app-security-session-policy)
-    - section \#6.
+Follow step number 6 under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy.md).
 
-> [!NOTE]
->   Support for Any app based on SAML and utilizing SSO with AAD is coming soon.
 
-**Protect files by limiting user session in real time**
+## Protect files by limiting user sessions in real time
 
-Control and protect file downloads in real time by applying real time
-permissions control for a user downloading the file, for example, making the
-file read only for the user.
+Control and protect file downloads in real time by applying real-time permission control to users downloading files, for example, by making the file read only for a user.
 
 Prerequisites:
 
--   [Deploy conditional access app control for Azure AD
-    apps](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad)
+- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
 
--   Applies for SAML based apps utilizing AAD SSO – [list of supported apps out
-    of the
-    box](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
+- Applies for SAML based apps utilizing AAD SSO – [list of supported apps out of the box](proxy-intro-aad#supported-apps-and-clients.md).
 
--   Azure information protection labels are configured and used inside the
-    organization.
+- Azure Information Protection labels are configured and used inside the organization.
 
 ### Steps
 
-1.  Follow steps
-    [here](https://docs.microsoft.com/en-us/cloud-app-security/session-policy-aad#create-a-cloud-app-security-session-policy)
-    - section \#6 until bullet c.
+1. Follow step number 6 until bullet C under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy.md).
 
-2.  Select the *Protect action*
+2.  Under **Actions** select **Protect** and then select **Apply custom permissions to downloading user**.
 
-3.  Select Apply custom permissions to downloading user
+4.  Choose the permission level that should be applied to the downloading user, for example Viewer – view only.
 
-4.  Choose the permission level that should be applied to the downloading user
-    (e.g Viewer – view only).
+5.  Set any **Governance** actions to be taken on files when a violation is detected.
 
-5.  Customize additional actions to be taken upon an alert.
-
-6.  Create the file policy
+6.  Create the session policy.
 
 > [!NOTE]
->   Permission changes are currently supported for the following [file
-    types](https://docs.microsoft.com/en-us/cloud-app-security/azip-integration#prerequisites).
+>   Permission changes are currently supported for the following [file types](azip-integration.md#prerequisites).
 
--   Support for Any app based on SAML and utilizing SSO with AAD is coming soon.
 
 ## Next steps 
 
