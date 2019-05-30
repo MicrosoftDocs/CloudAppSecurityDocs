@@ -155,7 +155,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1.  On the **Policies** page, create a new **Activity policy**.
 
-2.  Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure** – exclude non interactive machine-based activities.
+2.  Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive machine-based activities.
 
 3.  Set the filter **Activity types** equals to and then select all relevant download activities.
 
