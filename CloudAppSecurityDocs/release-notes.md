@@ -4,10 +4,10 @@
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: angrobe
-ms.date: 05/15/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -82,7 +82,7 @@ Released March 17, 2019
 
 - **Microsoft Defender ATP integration is now GA** <br>
 Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
-- **Dynamics 365 support** <br>Cloud App Security added real-time monitoring and control for Dynamics 365, to enable you to protect your business applications and the sensitive content stored within these apps. 
+- **Dynamics 365 CRM support** <br>Cloud App Security added real-time monitoring and control for Dynamics 365 CRM, to enable you to protect your business applications and the sensitive content stored within these apps. 
 
 ## Cloud App Security release 144
 
