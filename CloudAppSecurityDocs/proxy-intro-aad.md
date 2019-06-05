@@ -4,10 +4,10 @@
 title: Protect with Microsoft Cloud App Security Conditional Access App Control
 description: This article provides information about how the Cloud App Security Conditional Access App Control reverse proxy works.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -107,6 +107,7 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 - CornerStone on Demand
 - DocuSign
 - Dropbox
+- Dynamics 365 CRM (preview)
 - Egnyte
 - Exchange Online (preview)
 - G Suite
