@@ -58,9 +58,13 @@ All you have to do to integrate Azure Advanced Threat Protection with Cloud App 
 To enable Cloud App Security to integrate with Azure ATP:
 
 1. In Cloud App Security, under the settings cog, select **Settings**.
-    ![Settings menu](./media/azip-system-settings.png)
+    
+   ![Settings menu](./media/azip-system-settings.png)
+
 1. Under **Threat Protection**, select **Azure ATP**.
+   
     ![enable azure advanced threat protection](./media/aatp-integration.png)
+
 3. Select the checkbox to **Connect Azure ATP data including alerts and activities with Cloud App Security**.
  
 After enabling Azure Advanced Threat Protection integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-prem environments.
