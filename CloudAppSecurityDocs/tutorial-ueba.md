@@ -31,10 +31,9 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security uses user entity behavioral analytics (UEBA) to perform deep investigation to identify risky users across both cloud app and on-premises activities. 
+Microsoft Cloud App Security integrates with Azure Advanced Threat protection to provided user entity behavioral analytics (UEBA) and machine learning to enable deep investigation in your hybrid environment across both cloud app and on-premises activities. 
 
-Cloud App Security provides a single portal that gives you all the information you need to make better decisions about risk across your organization, and actively remediate threats. 
-By combining alerts and analyzing data from across these systems, Cloud App Security is the first place to start investigating users to gain identity-based insights across a hybrid environment:
+In a single portal, Cloud App Security now gives you all the information you need to make better decisions about risk across your organization, and actively remediate threats. By combining alerts and analyzing data from across these systems, Cloud App Security is the first place to start investigating users to gain identity-based insights across a hybrid environment:
 - Microsoft Cloud App Security, which identifies attacks within a cloud session, covering not only Microsoft products but also third-party applications
 - Azure Advanced Threat Protection, which uses machine learning and behavioral analytics to identify attacks across your on-premises network
 - Azure Active Directory Identity Protection, which detects and proactively prevents user and sign-in risks to identities in the cloud
@@ -59,7 +58,7 @@ For complete user investigation across a hybrid environment, you must have:
 
 - A valid license for Microsoft Cloud App Security
 - A valid license for Azure ATP connected to your Active Directory instance
-- Enable Cloud App Security to [integrate with your Azure ATP environment](getting-started-with-cloud-app-security.md) 
+- Enable Cloud App Security to [integrate with your Azure ATP environment](aatp-integration.md) 
 
 >[!NOTE]
 >If you don't have a subscription for Azure ATP, you will still be able to use the Cloud App Security portal to investigate users, but you won't receive insights from your on-premises environment.
