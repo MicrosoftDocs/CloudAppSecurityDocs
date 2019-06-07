@@ -32,7 +32,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises. For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp).
+Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises. For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
 
 By integrating with Azure ATP, your Cloud App Security portal will provide alerts and insights from:
 - Microsoft Cloud App Security, which identifies attacks within a cloud session, covering not only Microsoft products but also third-party applications
@@ -60,7 +60,7 @@ To enable Cloud App Security to integrate with Azure ATP:
 1. In Cloud App Security, under the settings cog, select **Settings**.
     ![Settings menu](./media/azip-system-settings.png)
 1. Under **Threat Protection**, select **Azure ATP**.
-    ![enable azure advanced threat protection](./media/enable-aatp.png)
+    ![enable azure advanced threat protection](./media/aatp-integration.png)
 3. Select the checkbox to **Connect Azure ATP data including alerts and activities with Cloud App Security**.
  
 After enabling Azure Advanced Threat Protection integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-prem environments.
