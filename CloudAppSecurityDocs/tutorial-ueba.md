@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Discover and manager Shadow IT | Microsoft Docs
-description: This tutorial describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
+title: Investigate risky users| Microsoft Docs
+description: This tutorial describes the process to investigate risky users in Microsoft Cloud App Security, across hybrid environments, by integrating with Azure ATP.
 keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 06/21/2019
+ms.date: 06/11/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
@@ -31,14 +31,14 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security integrates with Azure Advanced Threat protection to provided user entity behavioral analytics (UEBA) and machine learning to enable deep investigation in your hybrid environment across both cloud app and on-premises activities. 
+Microsoft Cloud App Security integrates with Azure Advanced Threat protection to provided user entity behavioral analytics (UEBA)to enable deep investigation in your hybrid environment across both cloud app and on-premises activities. 
 
 In a single portal, Cloud App Security now gives you all the information you need to make better decisions about risk across your organization, and actively remediate threats. By combining alerts and analyzing data from across these systems, Cloud App Security is the first place to start investigating users to gain identity-based insights across a hybrid environment:
 - Microsoft Cloud App Security, which identifies attacks within a cloud session, covering not only Microsoft products but also third-party applications
-- Azure Advanced Threat Protection, which uses machine learning and behavioral analytics to identify attacks across your on-premises network
+- Azure Advanced Threat Protection, which uses behavioral analytics to identify attacks across your on-premises network
 - Azure Active Directory Identity Protection, which detects and proactively prevents user and sign-in risks to identities in the cloud
 
-Whether you start your investigation into user based on something risky you see in the Cloud App Security dashboard, or whether you are investigating a user who you have reason to believe has violated your company's security policy, start from the Cloud App Security dashboard to deep dive into risky users.  
+Whether you start your investigation into user based on something risky you see in the Cloud App Security dashboard, or whether you are investigating a user who you may know has a motive that the system does not know about, start from the Cloud App Security dashboard to deep dive into risky users.  
 
 
 
@@ -61,7 +61,7 @@ For complete user investigation across a hybrid environment, you must have:
 - Enable Cloud App Security to [integrate with your Azure ATP environment](aatp-integration.md) 
 
 >[!NOTE]
->If you don't have a subscription for Azure ATP, you will still be able to use the Cloud App Security portal to investigate users, but you won't receive insights from your on-premises environment.
+>If you don't have a subscription for Azure ATP, you will still be able to use the Cloud App Security portal to investigate users, but you won't receive insights from your on-premises environment. You can also view Azure ATP insights in the Cloud App Security portal if you have an Azure ATP license but don't have a license for Microsoft Cloud App Security.
 
 
 ## Identify top risky users
@@ -82,7 +82,7 @@ To identify who your riskiest users are in Cloud App Security:
 	3. What's risk does the user present to your organization?<br>Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to helps you start understanding what type of risk the user represents so you can start deeper investigation.
 
   >[!NOTE]
-  >It is important to remember that the **User** page provides insights from the last 7 days. 
+  >It is important to remember that while the **User** page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
  
  
 ## Investigate a user
@@ -102,6 +102,8 @@ The **Investigation priority score** provides you with the ability to detect bot
 
 Assessing the investigation urgency of each specific user, the Investigation priority score is based on security alerts, abnormal activities, and potential business and asset impact related to each user. 
 
+If you click on the score value for an alert or an activity, you can view the evidence that explains how Cloud App Security scored the activity.
+
 Every Azure AD user has a dynamic Investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Azure ATP, Microsoft Cloud App Security as well as Azure AD Identity Protection. Your can now immediately understand the real top user threats by **Investigation priority score**, and then directly verify their business impact and investigate all related activities – no matter whether they are compromised, exfiltrating data or acting as insider threats.
 
 Cloud App Security uses the following to measure risk: 
@@ -109,9 +111,6 @@ Cloud App Security uses the following to measure risk:
 - **Alert scoring**<br>The alert score represents the potential impact of a specific alert on each user. Alert scoring is based on severity, user impact, alert popularity across users, and all entities in the organization.
 
 - **Activity scoring**<br> The activity score determines the probability of a specific user performing a specific activity, based on behavioral learning of the user and their peers. Activities identified as the most abnormal receive the highest scores. 
-
-- **User impact (blast radius)**<br>The user impact is a gauge of the potential damage each specific user can cause to your business. The user impact analysis takes a holistic organizational user approach, assessing user role, group membership, privileges, hierarchy at the organization, access to sensitive resources (high value assets), and the ability to access sensitive information. This capability will be coming soon.
-
 
 
 ## Protect your organization

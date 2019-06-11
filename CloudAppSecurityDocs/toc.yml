@@ -25,6 +25,8 @@
   items:
   - name: Discover and manage shadow IT
     href: tutorial-shadow-it.md
+  - name: Investigate risky users
+    href: tutorial-ueba.md  
   - name: Investigate risky OAuth apps
     href: investigate-risky-oauth.md
   - name: Block downloads of sensitive information
