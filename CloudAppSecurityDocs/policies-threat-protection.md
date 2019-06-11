@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Threat protection use cases - Cloud App Security | Microsoft Docs
-description: This topic outlines the steps to configure many threat protection use cases in Cloud App Security.
+title: Threat protection policies - Cloud App Security | Microsoft Docs
+description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
 author: rkarlin
 ms.author: rkarlin
-ms.date: 05/30/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Get started with threat protection use cases
+# Threat protection policies
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -30,7 +30,7 @@ Automatic detection of user access or activity from unfamiliar locations that we
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### Steps
 
@@ -42,8 +42,7 @@ Automatic detection of user access or activity from 2 different locations within
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 ### Steps
 
 1.  This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
@@ -84,7 +83,7 @@ Detect when a user is using a browser with an outdated client version that might
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### Steps
 
@@ -149,7 +148,7 @@ Detect when a certain user accesses or downloads a massive number of files in a 
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### Steps
 
@@ -191,7 +190,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 - This detection is automatically configured out-of-the-box to alert you when there is a file that may contain malware. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
 
-## Detect rough admin takeover
+## Detect rogue admin takeover
 
 Detect repeated admin activity that might indicate malicious intentions.
 
@@ -246,7 +245,7 @@ Detect when users perform multiple file download activities in a single session,
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### Steps
 
@@ -258,7 +257,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 Detect when users perform multiple file-sharing activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
 
 ### Prerequisites
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 ### Steps
 
 - This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).  
@@ -270,7 +269,7 @@ Detect activities from a location that was not recently or was never visited by 
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### Steps
 
@@ -278,7 +277,6 @@ You must have at least one app connected using [app connectors](enable-instant-v
 - It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
-
 > Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Cloud App Security does not generate alerts for new locations.
 
 ## Detect activity performed by a terminated user

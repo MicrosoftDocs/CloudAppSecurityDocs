@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Information protection use cases - Cloud App Security | Microsoft Docs
-description: This topic outlines the steps to configure many information protection use cases in Cloud App Security.
+title: Information protection policies - Cloud App Security | Microsoft Docs
+description: This topic outlines the steps to configure many information protection policies in Cloud App Security.
 author: rkarlin
 ms.author: rkarlin
-ms.date: 05/30/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -17,11 +17,11 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Get started with information protection use cases
+# Information protection policies
 
 *Applies to: Microsoft Cloud App Security*
 
-Cloud App Security file policies allow you to enforce a wide range of automated processes, leveraging the cloud provider’s APIs. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
+Cloud App Security file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
 Cloud App Security can monitor any file type based on more than 20 metadata filters, for example, access level, and file type. For more information, see [File policies](data-protection-policies.md).
 
@@ -67,7 +67,7 @@ Detect when files that are labeled **Confidential** and are stored in a cloud se
 
 5.  Create the file policy.
 
-## Detect and encrypt sensitive data
+## Detect and encrypt sensitive data at rest
 
 Detect files containing personally identifying information and other sensitive data that is share in a cloud app and apply classification labels to limit access only to employees in your company.
 
@@ -179,7 +179,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 5. Select and apply the policy template
 
-## Detect unauthorized access to group data (Refactored)
+## Detect unauthorized access to group data
 
 Detect when certain files that belong to a specific user group are being accessed excessively by a user who is not part of the group, which could be a potential insider threat.
 
@@ -247,63 +247,95 @@ Detect files that are shared in cloud storage apps and contain personally identi
 > [!NOTE]
 >  Currently, **Apply classification label** is only supported for Box, G Suite, SharePoint online and OneDrive for business.
 
-## Block file downloads to unmanaged devices
+## Block downloads for external users in real time
 
-Control and block download activities in real time from managed and un-managed devices using Cloud App Security [session control](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
 
-Prerequisites:
-
-- [Deploy Conditional Access app control for Azure AD apps](proxy-deployment-aad.md)
-
-- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad.md#supported-apps-and-clients).
-
-### Step
-
-Follow these step [to protect files on download](session-policy-aad.md#protect-download).
-
-## Protect files on download in real-time
-
-Control and protect file downloads in real time by applying correct file labels, by utilizing Cloud App Security integration with Azure Information Protection.
-
-Prerequisites:
-
-- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md)
-
-- This is available only for SAML based apps that utilize Azure AD single sign-on. For more information, see the [full list of supported apps](proxy-intro-aad.md#supported-apps-and-clients).
- 
-- Azure Information Protection labels are configured and used inside the organization.
-
-### Steps
-
-Follow step number 6 under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy).
-
-
-## Protect files by limiting user sessions in real time
-
-Control and protect file downloads in real time by applying real-time permission control to users downloading files, for example, by making the file read only for a user.
-
-Prerequisites:
+### Prerequisites
 
 - [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
 
-- Applies for SAML based apps utilizing AAD SSO – [list of supported apps out of the box](proxy-intro-aad.md#supported-apps-and-clients).
-
-- Azure Information Protection labels are configured and used inside the organization.
+- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
-1. Follow step number 6 until bullet C under [Create a Cloud App Security session policy](session-policy-aad.md#create-a-cloud-app-security-session-policy).
+1. On the **Policies** page, create a new **Session policy**.
 
-2.  Under **Actions** select **Protect** and then select **Apply custom permissions to downloading user**.
+2. Under **Session control type**, select **Control file download (with DLP)**.
 
-4.  Choose the permission level that should be applied to the downloading user, for example Viewer – view only.
+3. Under **Activity filters**, select **User** and set it to **From group** equals **External users**.
 
-5.  Set any **Governance** actions to be taken on files when a violation is detected.
+   >[!NOTE]
+   > You don't need to set any app filters to enable this policy to apply to all apps.
 
-6.  Create the session policy.
+1. You can use the **File filter** to customize the file type. This gives you more granular control over what type of files the session policy controls.
+
+2. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
+
+3. Click **Create**.
+
+  
+## Enforce read-only mode for external users in real time
+
+Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+
+### Prerequisites
+
+-   [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+-   Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+ 
+### Steps
+
+1. On the **Policies** page, create a new **Session policy**.
+
+2. Under **Session control type**, select **Block activities**.
+
+3. In the **Activity source** filter:
+   
+    1. Select **User** and set **From group** to **External users**.
+
+    2. Select **Activity type** equals **Print** and **Cut/copy item**.
+
+    > [!NOTE]
+    > You don't need to set any app filters to enable this policy to apply to all apps.
+
+4. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
+
+5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
+
+6. Click **Create**.
+
+## Block upload of unclassified documents in real time
+
+Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+
+### Prerequisites
+
+- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+
+- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+
+- Azure Information Protection classification labels must be configured and used inside your organization.
+
+### Steps
+
+1. On the **Policies** page, create a new **Session policy**.
+
+2. Under **Session control type**, select **Control file upload (with DLP)** or **Control file download (with DLP)**.
+
+   >[!NOTE]
+   > You don't need to set any filters to enable this policy to apply to all users and apps.
+
+3. Select the file filter **Classification label** does not equal and then select the labels your company uses to tag classified files.
+
+2. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
+
+3. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
+
+4. Click **Create**.
 
 > [!NOTE]
->   Permission changes are currently supported for the following [file types](azip-integration.md#prerequisites).
+> For the list of file types that Cloud App Security currently supports for Azure Information Protection classification labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
 
 
 ## Next steps 

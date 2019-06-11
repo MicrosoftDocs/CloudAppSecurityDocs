@@ -209,18 +209,28 @@
   items:
   - name: Attest your app
     href: attest-your-app.md
-  - name: Troubleshooting Cloud Discovery
-    href: troubleshooting-cloud-discovery.md
-  - name: Troubleshooting API Connectors using error messages
-    href: troubleshooting-api-connectors-using-error-messages.md
-  - name: Troubleshooting content inspection
-    href: troubleshooting-content-inspection.md
-  - name: Troubleshooting SIEM integration
-    href: troubleshooting-siem.md
-  - name: Troubleshooting Cloud Discovery docker deployment
-    href: troubleshoot-docker.md
-  - name: Troubleshooting policies
-    href: troubleshoot-policies.md
+  - name: Common policies
+    items:
+    - name: Cloud Discovery policies
+      href: policies-cloud-discovery.md
+    - name: Threat protection policies
+      href: policies-threat-protection.md
+    - name: Information protection policies
+      href: policies-information-protection.md    
+  - name: Troubleshooting
+    items:
+    - name: Troubleshooting Cloud Discovery
+      href: troubleshooting-cloud-discovery.md
+    - name: Troubleshooting API Connectors using error messages
+      href: troubleshooting-api-connectors-using-error-messages.md
+    - name: Troubleshooting content inspection
+      href: troubleshooting-content-inspection.md
+    - name: Troubleshooting SIEM integration
+      href: troubleshooting-siem.md
+    - name: Troubleshooting Cloud Discovery docker deployment
+      href: troubleshoot-docker.md
+    - name: Troubleshooting policies
+      href: troubleshoot-policies.md
 - name: Resources
   items:
   - name: Release note archive

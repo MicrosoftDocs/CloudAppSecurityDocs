@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cloud Discovery use cases - Cloud App Security | Microsoft Docs
-description: This topic outlines the steps to configure many Cloud Discovery use cases in Cloud App Security.
+title: Cloud Discovery policies - Cloud App Security | Microsoft Docs
+description: This topic outlines the steps to configure many Cloud Discovery policies in Cloud App Security.
 author: rkarlin
 ms.author: rkarlin
-ms.date: 05/27/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -17,7 +17,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Get started with Cloud Discovery use cases
+# Cloud Discovery policies
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -72,7 +72,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 5.  Optional: Leverage [Cloud App Security native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
 
-## Detect lack of migration to business-ready apps
+## Detect use of unsanctioned business apps
 
 You can detect when your employees continue to use unsanctioned apps as a replacement for approved business-ready apps.
 
