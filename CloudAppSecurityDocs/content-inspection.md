@@ -46,8 +46,8 @@ Cloud App Security allows admins to grant Cloud App Security permission to decry
 
 In order to give Cloud app Security the necessary permissions:
 
-1.  Go to **Settings** and then **Azure Information Protection**.
-2.  Enable **Inspect protected files.**
+1. Go to **Settings** and then **Azure Information Protection**.
+2. Enable **Inspect protected files.**
 3. Follow the prompt to allow the required permissions in Azure Active Directory.
 4. You can configure the settings per file policy to determine which policies will scan protected files.
 
