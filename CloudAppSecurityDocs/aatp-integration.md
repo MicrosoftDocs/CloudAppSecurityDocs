@@ -71,9 +71,6 @@ After enabling Azure Advanced Threat Protection integration, you'll be able to s
 
 
 
-Learn more about [Investigating risky users](tutorial-ueba.md).
-
-
 ## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
