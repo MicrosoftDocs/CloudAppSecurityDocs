@@ -4,10 +4,10 @@
 title: Cloud App Security content inspection using Microsoft Data Classification Service
 description: This article describes the process Cloud App Security follows when performing DLP content inspection using Microsoft Data Classification Service. 
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/10/2019
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -42,7 +42,7 @@ Microsoft Cloud App Security enables you to natively use the Microsoft Data Clas
 You have the option to set the **Inspection method** to use the **Microsoft Data Classification Service** with no additional configuration required. This option is useful when creating a data leak prevention policy for your files in Microsoft Cloud App Security.
 
 
-1. In the [file policy](data-protection-policies.md) page, under **Inspection method**, select **Data Classification Service**.
+1. In the [file policy](data-protection-policies.md) page, under **Inspection method**, select **Data Classification Service**. You can also set the **Inspection method** in the [session policy](session-policy-aad.md) page with **Control file download (with DLP)** selected.
      ![data classification service setting](./media/dcs-enable.png)
 2. Select whether the policy should apply when **any** or **all** of the criteria are met.
 3. **Choose inspection type** by selecting the **Sensitive information types**.
@@ -52,7 +52,7 @@ You have the option to set the **Inspection method** to use the **Microsoft Data
 
 5. Optionally, you can unmask the last four characters of a match. By default, matches are masked and shown in their context, and include the 40 characters before and after the match. If you select this checkbox, it will unmask the last four characters of the match itself.
 
-6. You can also set alerts and governance actions for the policy. For more information, see [file policies](data-protection-policies.md) and [governance actions](governance-actions.md).
+6. Leveraging file policies, you can also set alerts and governance actions for the policy. For more information, see [file policies](data-protection-policies.md) and [governance actions](governance-actions.md). Leveraging session policies, you can also monitor and control actions in real-time when a file matches a DCS type. For more information, see [session policy](session-policy-aad.md).
 
 Setting these policies enables you to easily extend the strength of the Office 365 DLP capabilities to all your other sanctioned cloud apps and protect the data stored in them with the full toolset provided to you by Microsoft Cloud App Security – such as the ability to
 [automatically apply Azure Information Protection classification labels](azip-integration.md) and the ability to control sharing permissions.

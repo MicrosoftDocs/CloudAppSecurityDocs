@@ -61,20 +61,22 @@
       href: scoped-deployment.md
     - name: IP tags and ranges
       href: ip-tags.md
-  - name: Set up Cloud Discovery
-    href: set-up-cloud-discovery.md
+  - name: Cloud Discovery
     items:
-    - name: Integrate with Microsoft Defender ATP
-      href: wdatp-integration.md
-    - name: Integrate with Zscaler
-      href: zscaler-integration.md
-    - name: Integrate with iboss
-      href: iboss-integration.md
-    - name: Create snapshot Cloud Discovery reports
-      href: create-snapshot-cloud-discovery-reports.md
-    - name: Configure automatic log upload for continuous reports
-      href: discovery-docker.md
+    - name: Set up
       items:
+      - name: Set up Cloud Discovery
+        href: set-up-cloud-discovery.md
+      - name: Integrate with Microsoft Defender ATP
+        href: wdatp-integration.md
+      - name: Integrate with Zscaler
+        href: zscaler-integration.md
+      - name: Integrate with iboss
+        href: iboss-integration.md
+      - name: Create snapshot Cloud Discovery reports
+        href: create-snapshot-cloud-discovery-reports.md
+      - name: Configure automatic log upload for continuous reports
+        href: discovery-docker.md
       - name: Docker on Windows
         href: discovery-docker-windows.md
       - name: Docker on Ubuntu and RHEL on-premises
@@ -85,15 +87,20 @@
         href: troubleshoot-docker.md
       - name: Log collector behind a proxy
         href: log-collector-proxy.md  
-    - name: Use the custom log parser
-      href: custom-log-parser.md
+      - name: Use the custom log parser
+        href: custom-log-parser.md
     - name: Cloud Discovery enrichment
       href: cloud-discovery-aad-enrichment.md
     - name: Anonymize Cloud Discovery data
       href: cloud-discovery-anonymizer.md
+    - name: Add custom apps to Cloud Discovery
+      href: cloud-discovery-custom-apps.md
+    - name: Discovered app filters and queries
+      href: discovered-app-queries.md
   - name: Connect apps
-    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     items:
+    - name: Connect apps to get visibility and protection
+      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Connect Azure
       href: connect-azure-to-microsoft-cloud-app-security.md
     - name: Connect AWS
@@ -112,15 +119,10 @@
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
-    
+    - name: Connect WebEx
+      href: connect-webex-to-microsoft-cloud-app-security.md
   - name: Deploy Conditional Access App Control for Azure AD apps
     href: proxy-deployment-aad.md
-  - name: Discover
-    items:
-    - name: Add custom apps to Cloud Discovery
-      href: cloud-discovery-custom-apps.md
-    - name: Discovered app filters and queries
-      href: discovered-app-queries.md
   - name: Investigation
     href: investigate.md
     items:
@@ -207,18 +209,28 @@
   items:
   - name: Attest your app
     href: attest-your-app.md
-  - name: Troubleshooting Cloud Discovery
-    href: troubleshooting-cloud-discovery.md
-  - name: Troubleshooting API Connectors using error messages
-    href: troubleshooting-api-connectors-using-error-messages.md
-  - name: Troubleshooting content inspection
-    href: troubleshooting-content-inspection.md
-  - name: Troubleshooting SIEM integration
-    href: troubleshooting-siem.md
-  - name: Troubleshooting Cloud Discovery docker deployment
-    href: troubleshoot-docker.md
-  - name: Troubleshooting policies
-    href: troubleshoot-policies.md
+  - name: Common policies
+    items:
+    - name: Cloud Discovery policies
+      href: policies-cloud-discovery.md
+    - name: Threat protection policies
+      href: policies-threat-protection.md
+    - name: Information protection policies
+      href: policies-information-protection.md    
+  - name: Troubleshooting
+    items:
+    - name: Troubleshooting Cloud Discovery
+      href: troubleshooting-cloud-discovery.md
+    - name: Troubleshooting API Connectors using error messages
+      href: troubleshooting-api-connectors-using-error-messages.md
+    - name: Troubleshooting content inspection
+      href: troubleshooting-content-inspection.md
+    - name: Troubleshooting SIEM integration
+      href: troubleshooting-siem.md
+    - name: Troubleshooting Cloud Discovery docker deployment
+      href: troubleshoot-docker.md
+    - name: Troubleshooting policies
+      href: troubleshoot-policies.md
 - name: Resources
   items:
   - name: Release note archive

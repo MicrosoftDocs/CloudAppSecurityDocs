@@ -4,10 +4,10 @@
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/15/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -33,6 +33,30 @@ ms.custom: seodec18
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## Cloud App Security release 150
+
+Released May 26, 2019
+
+- **Alerts export improvement**<br> When you export alerts to CSV from the **Alerts** page, the results will now include the date of the alert resolution or dismissal.
+
+
+## Cloud App Security release 148 and 149
+
+Released May 12, 2019
+
+- **WebEx app connector available**<br>A new app connector is now available for Cisco WebEx Teams in Public Preview. You can now connect Microsoft Cloud App Security to Cisco WebEx Teams to monitor and protect its users, activities and files. For more information, see [Connect WebEx](connect-webex-to-microsoft-cloud-app-security.md)
+
+- **Microsoft Data Classification Service new locations**<br>[Microsoft Data Classification Service](dcs-inspection.md) is now available in 4 new locations - Australia, India, Canada and Japan. If your Office tenant is located in these locations, you can now utilize Microsoft Data Classification Service as the content inspection method in Microsoft Cloud App Security file policies.
+
+- **Discovery of Shadow PaaS and IaaS**<br> Microsoft Cloud App Security has extended its Cloud Discovery capabilities and is now also providing Shadow IT for resources that are hosted on IaaS and PaaS solutions such as Microsoft Azure, Amazon Web Services, and Google Cloud Platform. Cloud Discovery now provides you with visibility into which custom apps run on top of your IaaS and PaaS, storage accounts that are being created, and more. Use this new capability in order to discover what resources exist, who accesses each of them, and how much traffic is transmitted.
+
+- **App attestation**<br>Microsoft Cloud App Security compliance and risk assessment now allows cloud providers to attest their app to be up-to-date in Cloud App Catalog. This pilot allows cloud providers to fill out a self-attestation questionnaire based on the Cloud App Catalog's risk attributes to make sure that their risk assessment in Cloud App Security is accurate and up-to-date. Users can then get an indication as to which risk attributes were attested by the provider (rather than assessed by the Cloud App Security team) and when each attribute was submitted by the provider. For more information, see [Attest your app](attest-your-app.md). 
+
+- **Office 365 workload granularity**<br>When connecting Office 365 to Microsoft Cloud App Security, you now have control over which workloads you want to connect. For example, customers only interested in connecting Office 365 for activity monitoring can now do so during the connection process, or by editing an existing Office 365 connector. As part of this change, OneDrive and SharePoint Online will no longer be shown as separate connectors but will be included in the Office 365 connector as the _Office 365 files_ workload. Customers with an existing Office 365 connector are not impacted by this change.
+
+- **Enhanced Teams support**<br>You can now monitor and block message sending in the Teams web app in real-time, by configuring a Session policy based on sensitive content. 
 
 ## Cloud App Security release 147
 
@@ -65,7 +89,7 @@ Released March 17, 2019
 
 - **Microsoft Defender ATP integration is now GA** <br>
 Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
-- **Dynamics 365 support** <br>Cloud App Security added real-time monitoring and control for Dynamics 365, to enable you to protect your business applications and the sensitive content stored within these apps. 
+- **Dynamics 365 CRM support** <br>Cloud App Security added real-time monitoring and control for Dynamics 365 CRM, to enable you to protect your business applications and the sensitive content stored within these apps. 
 
 ## Cloud App Security release 144
 
