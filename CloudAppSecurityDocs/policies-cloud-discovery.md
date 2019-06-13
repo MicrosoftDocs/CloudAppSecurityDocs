@@ -2,9 +2,9 @@
 # required metadata
 
 title: Cloud Discovery policies - Cloud App Security | Microsoft Docs
-description: This topic outlines the steps to configure many Cloud Discovery policies in Cloud App Security.
-author: rkarlin
-ms.author: rkarlin
+description: This article outlines the steps to configure many Cloud Discovery policies in Cloud App Security.
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -60,7 +60,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 2.  In the **Policy template** field, select the **New risky app** template and apply the template.
 
-3.  Under **App matching all of the following** set the [Risk Score](risk-score.md) slider and and the Compliance risk factor to customize your the level of risk you want to trigger an alert, and set the other policy filters to meet your organization’s security requirements.
+3.  Under **App matching all of the following** set the [Risk Score](risk-score.md) slider and the Compliance risk factor to customize you are the level of risk you want to trigger an alert, and set the other policy filters to meet your organization’s security requirements.
 
     1.  Optional: To get more meaningful detections, customize the amount of traffic that will trigger an alert.
 
@@ -131,15 +131,15 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 3.  Select the checkbox to **Create an alert for each matching event with the policy's severity**.
 
-4.  Configure the actions to be take when an alert is triggered.
+4.  Configure the actions to take when an alert is triggered.
 
 ## Detect risky OAuth apps
 
-Get visibility and control over [OAuth apps](investigate-risky-oauth.md) that are installed inside apps like Salesforce, Office 365, and G Suite. OAuth apps that request high permissions and have rare community use might be considered risky.
+Get visibility and control over [OAuth apps](investigate-risky-oauth.md) that are installed inside apps like G Suite, Office 365, and Salesforce. OAuth apps that request high permissions and have rare community use might be considered risky.
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md).
+You must have the G Suite, Office 365, or Salesforce app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -151,10 +151,10 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 4.  Add the filter **Community use** equals **Rare**.
 
-4.  Configure the actions to be take when an alert is triggered. For example, for Office 365, check **Revoke app** for OAuth apps detected by the policy.
+4.  Configure the actions to take when an alert is triggered. For example, for Office 365, check **Revoke app** for OAuth apps detected by the policy.
 
 > [!NOTE]
->  Supported for Office 365, Salesforce and G Suite app stores.
+>  Supported for G Suite, Office 365, and Salesforce app stores.
 
 ## Next steps 
 
