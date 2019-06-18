@@ -190,7 +190,7 @@
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
-    - name: Integrate with Azure ATP
+    - name: Azure ATP integration
       href: aatp-integration.md
     - name: Azure Information Protection integration
       href: azip-integration.md
