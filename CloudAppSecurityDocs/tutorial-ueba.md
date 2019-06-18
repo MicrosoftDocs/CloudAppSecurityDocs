@@ -91,7 +91,7 @@ When something looks anomalous or there's a user you want to investigate, drill 
 When you investigate a user, you want to ask these questions about the activities and alerts you see:
 - Do their activities make sense for their job?
 - Look at the timeline, were the activities performed at times that makes sense?
-- For each activity that you answered "no" to, drill down into the activity and in the **Activity log**, cross check this activity with other activities by the same user. There you can see whether there were other activities that were risky, where the user connected from, and you can very easily pivot to other drill downs, such as XXX, to continue your investigation.
+- For each activity that you answered "no" to, drill down into the activity and in the **Activity log**, cross check this activity with other activities by the same user. There you can see whether there were other activities that were risky, where the user connected from, and you can very easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
 
 
 ## Understand user risk <a name ="risk-score"></a>
