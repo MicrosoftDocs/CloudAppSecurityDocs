@@ -4,10 +4,10 @@
 title: Integrate Flow with Cloud App Security to get custom alert automation
 description: This article provides information about how to get custom alert automation by integrating Flow with Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 ---
 
-# Integrate with Flow for custom alert automation - Preview
+# Integrate with Flow for custom alert automation
 
 *Applies to: Microsoft Cloud App Security*
 
