@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Integrate Azure Advanced Threat Protection with Cloud App Security
 description: This article provides information about how to leverage Azure Advanced Threat Protection insights in Cloud App Security for hybrid risk detection.
 keywords:
@@ -14,18 +12,9 @@ ms.prod:
 ms.service: cloud-app-security
 ms.technology:
 ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: reutam
 ms.suite: ems
-#ms.tgt_pltfrm:
 ms.custom: seodec18
-
 ---
 
 # Azure Information Protection integration
