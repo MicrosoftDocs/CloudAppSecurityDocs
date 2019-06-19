@@ -141,7 +141,7 @@ You can also set the policy to run on specific files by setting the **Apply to**
 
 ## Working with the File drawer
 
-You can view more information about each file, by clicking on the file itself in the file log. Clicking opens the **File drawer that provides the following additional actions you can take on the file:
+You can view more information about each file, by clicking on the file itself in the file log. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
 
 - **URL** - Takes you to the file location.
 - **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys.
