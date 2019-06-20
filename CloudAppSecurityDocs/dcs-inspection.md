@@ -5,8 +5,8 @@ title: Cloud App Security content inspection using Microsoft Data Classification
 description: This article describes the process Cloud App Security follows when performing DLP content inspection using Microsoft Data Classification Service. 
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+ms.author: shsagir
+manager: shsagir
 ms.date: 06/13/2019
 
 ms.topic: conceptual
