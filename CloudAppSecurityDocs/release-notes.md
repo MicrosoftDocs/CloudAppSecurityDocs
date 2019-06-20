@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 06/04/2019
+ms.date: 6/20/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -35,11 +35,28 @@ This article is updated frequently to let you know what's new in the latest rele
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
 
+## Cloud App Security release 151
+
+Released June 9, 2019
+
+- **Automated governance enhancement for File policies**<br>
+Cloud App Security now supports configuring the **Trash** governance action for File policies – This governance action provides you with the ability to automatically move files to the trash folder.
+- **Enhanced Google Drive support**<br>
+Cloud App Security now supports the **Trash** governance action for Google Drive – This governance action provides you with the ability to move Google Drive files to the trash folder.
+- **New permission for App admin and Group admin roles**<br>
+*App/instance admin* and *User group admin* roles now support read-only access.
+- **New risk factor added to Cloud App Catalog**<br>
+The Cloud App Catalog now includes the Disaster Recovery Plan risk factor to enable you to assess the apps in the Cloud App Catalog for business continuity support.
+- **Microsoft Flow connector GA**<br>
+Since previewing Microsoft Cloud App Security’s support for the Microsoft Flow connector last year, the connector is now generally available.
+- **UEBA enhancements**<br>
+To help you identify threats that fall below the radar, Cloud App Security now uses unique profiling to provide risk scores for individual activities and alerts. The risk scores can be used to identify activities that aren’t suspicious enough on their own to trigger alerts. However, by aggregating the risk scores to a user's **Investigation priority score**, Cloud App Security helps you identify risky behavior and focus your investigation. These new capabilities are now available on our redesigned user page.
+
 ## Cloud App Security release 150
 
 Released May 26, 2019
 
-- **Alerts export improvement**<br> When you export alerts to CSV from the **Alerts** page, the results will now include the date of the alert resolution or dismissal.
+- **Alerts export improvement**<br>When you export alerts to CSV from the **Alerts** page, the results will now include the date of the alert resolution or dismissal.
 
 
 ## Cloud App Security release 148 and 149

@@ -4,10 +4,10 @@
 title: Manage admin access to the Cloud App Security portal
 description: This article provides instructions for setting access to the Cloud App Security portal for your admins.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -53,11 +53,11 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Accessing and viewing the Governance log 
   - Accessing and viewing the Manage snapshot reports page 
 
-- **App/instance admin:** Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
+- **App/instance admin:** Has full or read-only permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
   - Activities page - Only activities about the specific app
   - Alerts - Only alerts relating to the specific app
-  - Policies - Can view all policies and can edit or create only policies that deal exclusively with the app/instance
+  - Policies - Can view all policies and if assigned full permissions can edit or create only policies that deal exclusively with the app/instance
   - Accounts page - Only accounts for the specific app/instance
   - App permissions - Only permissions for the specific app/instance
   - Files page - Only files from the specific app/instance
@@ -66,11 +66,11 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Security extensions - Permissions only for API token with user permissions
   - Governance actions - Only for the specific app/instance 
 
-- **User group admin:** Has permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin can view and modify information in Microsoft Cloud App Security only for that user group:
+- **User group admin:** Has full or read-only permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin can view and modify information in Microsoft Cloud App Security only for that user group:
 
   - Activities page - Only activities about the users in the group
   - Alerts - Only alerts relating to the users in the group
-  - Policies - Can view all policies and can edit or create only policies that deal exclusively with users in the group
+  - Policies - Can view all policies and if assigned full permissions can edit or create only policies that deal exclusively with users in the group
   - Accounts page - Only accounts for the specific users in the group
   - App permissions – No permissions
   - Files page – No permissions
