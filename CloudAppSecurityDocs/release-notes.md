@@ -5,8 +5,8 @@ title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+ms.author: shsagir
+manager: shsagir
 ms.date: 06/04/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
