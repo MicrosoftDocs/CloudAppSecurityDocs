@@ -5,8 +5,8 @@ title: Integrate Azure Information Protection with Cloud App Security
 description: This article provides information about how to leverage your Azure Information Protection tags in Cloud App Security for added control of your organization's cloud app use.
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

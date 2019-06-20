@@ -4,7 +4,7 @@
 title: Cloud Discovery policies - Cloud App Security | Microsoft Docs
 description: This article outlines the steps to configure many Cloud Discovery policies in Cloud App Security.
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
