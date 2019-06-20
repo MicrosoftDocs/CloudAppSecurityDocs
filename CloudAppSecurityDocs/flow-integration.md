@@ -6,7 +6,7 @@ description: This article provides information about how to get custom alert aut
 keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
-manager:shsagir
+manager: shsagir
 ms.date: 6/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
