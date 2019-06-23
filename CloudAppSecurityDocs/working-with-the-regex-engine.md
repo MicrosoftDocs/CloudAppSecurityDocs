@@ -86,3 +86,6 @@ The following table gives you example expressions and if they would match or not
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
   
+
+## Check out this video!
+[Working with the Regex Engine](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)    
