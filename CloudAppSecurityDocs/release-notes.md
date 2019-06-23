@@ -34,6 +34,15 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 152
+
+Released June 23, 2019
+
+- **Idle session automatic sign out**<br>
+Cloud App Security can now be configured to automatically sign out admin sessions after a specified period of inactivity.
+- **Admin activity  auditing**<br>
+You can now export a log of all admin activities including auditing of an admin investigating a specific user or viewing certain alerts. This feature is available on the **Manage admin access** settings page.
+
 ## Cloud App Security release 151
 
 Released June 9, 2019
@@ -41,7 +50,7 @@ Released June 9, 2019
 - **Hybrid UEBA - Native integration with Azure ATP (Preview)**<br>
 Cloud App Security now natively integrates with Azure ATP to provide a single view of identity activities in both cloud apps and your on-premises network. For more information, see [Azure Advanced Threat Protection integration](aatp-integration.md).
 - **UEBA enhancements**<br>
-To help you identify threats that fall below the radar, Cloud App Security now uses unique profiling to provide risk scores for individual activities and alerts. The risk scores can be used to identify activities that aren’t suspicious enough on their own to trigger alerts. However, by aggregating the risk scores to a user's **Investigation priority score**, Cloud App Security helps you identify risky behavior and focus your investigation. These new capabilities are now available on our redesigned user padesk
+To help you identify threats that fall below the radar, Cloud App Security now uses unique profiling to provide risk scores for individual activities and alerts. The risk scores can be used to identify activities that aren’t suspicious enough on their own to trigger alerts. However, by aggregating the risk scores to a user's **Investigation priority score**, Cloud App Security helps you identify risky behavior and focus your investigation. These new capabilities are now available on our redesigned user page.
 - **New risk factor added to Cloud App Catalog**<br>
 The Cloud App Catalog now includes the Disaster Recovery Plan risk factor to enable you to assess the apps in the Cloud App Catalog for business continuity support.
 - **Microsoft Flow connector GA**<br>
