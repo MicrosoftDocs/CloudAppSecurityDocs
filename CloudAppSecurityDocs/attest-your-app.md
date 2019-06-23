@@ -4,10 +4,10 @@
 title: Attest your apps - Cloud App Security | Microsoft Docs
 description: This article provides instructions for attesting your apps in Cloud App Security. 
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: barbkess
-ms.date: 04/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -51,6 +51,7 @@ Follow the service attributes described below to successfully complete the submi
 | Vendor | General | String | Free text | The name of the vendor who provides this app. |
 | Data types | General | String | Close list - provided in questionnaire | Which data types can be uploaded by the user to the app?|
 | Homepage | General | URL | Free text | The provider's home page URL. |
+| Disaster recovery plan | General | Boolean | True, False | Does this app have a disaster recovery plan that includes a backup and restore strategy? |
 | Latest breach | Security | Date | MMM-dd-YYYY | Most recent incident in which sensitive, protected, or confidential data owned by the app was viewed, stolen, or used by an individual unauthorized to do so. |
 | Data-at-rest encryption method | Security | String | Close list - provided in questionnaire | The type of encryption of data-at-rest performed on the app. |
 | Multi-factor authentication | Security | Boolean | True, False | Does this app support multi-factor authentication solutions? |
