@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 6/23/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -41,7 +41,7 @@ Released June 23, 2019
 - **Idle session automatic sign out**<br>
 Cloud App Security can now be configured to automatically sign out admin sessions after a specified period of inactivity.
 - **Admin activity  auditing**<br>
-You can now export a log of all admin activities including auditing of an admin investigating a specific user or viewing certain alerts. This feature is available on the **Manage admin access** settings page.
+You can now export a log of all admin activities including auditing of an admin investigating a specific user or viewing specific alerts. This feature is available on the **Manage admin access** settings page.
 
 ## Cloud App Security release 151
 
