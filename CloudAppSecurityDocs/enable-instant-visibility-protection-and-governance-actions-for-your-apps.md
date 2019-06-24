@@ -100,18 +100,18 @@ The following table lists, per cloud app, which abilities are supported with App
 
 To use App Connectors, you need to make sure you have the following things for each specific app:  
 
-|App|License type|User|  
-|---------|------------------|----------|  
-|Box|Enterprise|It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions.|  
-|G Suite|G Suite Business or Enterprise preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|  
-|Office 365||Global Admin|  
-|AWS||Newly created user|  
-|Dropbox|Business/Enterprise|Admin|  
-|Okta|Enterprise (not trial)|Admin|  
-|Exchange||Global Admin|  
-|ServiceNow|Eureka and up|Admin +RestAPI role|  
-|Salesforce||Admin|  
-
+|App|License type|User|
+|---------|------------------|----------|
+|Box|Enterprise|It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions.|
+|G Suite|G Suite Business or Enterprise preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|
+|Office 365||Global Admin|
+|AWS||Newly created user|
+|Dropbox|Business/Enterprise|Admin|
+|Okta|Enterprise (not trial)|Admin|
+|Exchange||Global Admin|
+|ServiceNow|Eureka and up|Admin + RestAPI role|
+|Salesforce||Admin|
+|Webex||Admin + Compliance Admin|
 
 **ExpressRoute**
 
