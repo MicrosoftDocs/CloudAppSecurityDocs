@@ -4,10 +4,10 @@
 title: Connect ServiceNow to Cloud App Security
 description: This article provides information about how to connect your ServiceNow app to Cloud App Security using the API connector for visibility and control over use.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -37,7 +37,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 > For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password. The username/password provided are only used for API token generation and are not saved after the initial connection process.
 > 
 > [!NOTE]
->  Cloud App Security supports ServiceNow versions of Jakarta, Kingston, Eureka, Fiji,  Geneva, Helsinki, and Istanbul. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  For more information, see the [ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+>  Cloud App Security supports ServiceNow versions of Jakarta, Kingston, Eureka, Fiji, Geneva, Helsinki, Istanbul, London, and Madrid. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  For more information, see the [ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
   
 ## How to connect ServiceNow to Cloud App Security using OAuth
   

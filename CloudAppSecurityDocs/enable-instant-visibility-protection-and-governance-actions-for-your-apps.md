@@ -4,10 +4,10 @@
 title: Connect apps to get visibility and control - Cloud App Security | Microsoft Docs
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/10/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -72,22 +72,22 @@ The following table lists, per cloud app, which abilities are supported with App
 
 > [!div class="mx-tableFixed"]
 > 
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
-> |-|-|-|-|-|-|-|-|-|  
-> |**List accounts**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**Group**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**Privileges**|✔|✔|Not supported by provider|✔|✔|✔|✔||  
-> |**User governance**|✔|✔||✔|Coming soon|Coming soon|Coming soon||  
-> |**Log on activity**|✔|✔|✔|✔|✔|✔|✔|✔|  
-> |**User activity**|✔*|✔|✔|✔ - requires Google Business or Enterprise|Partial|Supported with Salesforce Shield|✔|Not applicable|  
-> |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|  
-> |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Not applicable|  
-> |**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Business or Enterprise|||Coming soon||  
-> |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||  
-> |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||  
-> |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||  
-> |**Revoke app permissions**|✔||Not applicable|✔||✔|Not applicable||  
-> |**Apply Azure Information Protection labels**|✔|✔||✔|||||  
+> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|
+> |-|-|-|-|-|-|-|-|-|-|
+> |**List accounts**|✔|✔|✔|✔|✔|✔|✔|✔|✔|
+> |**Group**|✔|✔|✔|✔|✔|✔|✔|✔|Not applicable|
+> |**Privileges**|✔|✔|Not supported by provider|✔|✔|✔|✔||✔|
+> |**User governance**|✔|✔||✔|Coming soon|Coming soon|Coming soon||Coming soon|
+> |**Log on activity**|✔|✔|✔|✔|✔|✔|✔|✔|✔|
+> |**User activity**|✔*|✔|✔|✔ - requires Google Business or Enterprise|Partial|Supported with Salesforce Shield|✔|Not applicable|✔|
+> |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|✔|
+> |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Not applicable||
+> |**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Business or Enterprise|||Coming soon||✔|
+> |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||✔|
+> |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||Not applicable|
+> |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||Not applicable|
+> |**Revoke app permissions**|✔||Not applicable|✔||✔|Not applicable||Not applicable|
+> |**Apply Azure Information Protection labels**|✔|✔||✔|||||Not applicable|
 
 ## Prerequisites  
 
@@ -100,18 +100,18 @@ The following table lists, per cloud app, which abilities are supported with App
 
 To use App Connectors, you need to make sure you have the following things for each specific app:  
 
-|App|License type|User|  
-|---------|------------------|----------|  
-|Box|Enterprise|It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions.|  
-|G Suite|G Suite Business or Enterprise preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|  
-|Office 365||Global Admin|  
-|AWS||Newly created user|  
-|Dropbox|Business/Enterprise|Admin|  
-|Okta|Enterprise (not trial)|Admin|  
-|Exchange||Global Admin|  
-|ServiceNow|Eureka and up|Admin +RestAPI role|  
-|Salesforce||Admin|  
-
+|App|License type|User|
+|---------|------------------|----------|
+|Box|Enterprise|It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions.|
+|G Suite|G Suite Business or Enterprise preferred<br /><br /> G Suite Enterprise (minimally)|Super Admin|
+|Office 365||Global Admin|
+|AWS||Newly created user|
+|Dropbox|Business/Enterprise|Admin|
+|Okta|Enterprise (not trial)|Admin|
+|Exchange||Global Admin|
+|ServiceNow|Eureka and up|Admin + RestAPI role|
+|Salesforce||Admin|
+|Webex||Admin + Compliance Admin|
 
 **ExpressRoute**
 
