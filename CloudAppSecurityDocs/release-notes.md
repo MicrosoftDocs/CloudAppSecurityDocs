@@ -38,10 +38,12 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 Released June 23, 2019
 
-- **Idle session automatic sign out**<br>
-Cloud App Security can now be configured to automatically sign out admin sessions after a specified period of inactivity.
-- **Admin activity  auditing**<br>
-You can now export a log of all admin activities including auditing of an admin investigating a specific user or viewing specific alerts. This feature is available on the **Manage admin access** settings page.
+- **Deploy Conditional Access App Control for any app**<br>
+We are excited to announce that we have expanded our support for Conditional Access App Control to any web app, in addition to the rich support we already offer for [our featured applications](proxy-intro-aad.md). This new capability allows you to deploy any web app to work with session and access policies, enabling powerful real-time monitoring and control. For example, you can protect downloads with Azure Information Protection labels, block upload of sensitive documents, providing auditing, among many others.
+- **Portal activity auditing**<br>
+Cloud App Security audits all admin activity in the portal to provide you with comprehensive monitoring and investigation of activities performed. Now you can also export up to 90 days of activities for further investigation and analysis, for example, auditing of an admin investigating a specific user or viewing specific alerts. To export the log, go to the **Manage admin access** settings page.
+- **Custom session sign out from Cloud App Security portal**<br>
+You can now configure automatic sign out of admin sessions to the portal that are idle for longer than a specified period.
 
 ## Cloud App Security release 151
 
