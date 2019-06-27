@@ -39,6 +39,9 @@ Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (A
 For complete user investigation across a hybrid environment, you must have:
 
 - A valid license for Azure ATP connected to your Active Directory instance
+- You must be a global admin to enable integration between Azure ATP and Microsoft Cloud App Security 
+- If do not have Azure ATP, try it now
+
 
 >[!NOTE]
 >If you don't have a subscription for Azure ATP, you will still be able to use the Cloud App Security portal to investigate users, but you won't receive insights from your on-premises environment.
