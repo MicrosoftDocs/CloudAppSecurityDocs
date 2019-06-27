@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Deploy Conditional Access App Control for non-featured apps
+# Deploy Conditional Access App Control for non-featured app
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -34,23 +34,23 @@ ms.custom: seodec18
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
 [Next: How to create a session policy »](session-policy-aad.md)
 
-Session controls in Microsoft Cloud App Security can be configured to work with any web apps. These are apps that are featured by Cloud App Security to work out-of-the-box.
+Session controls in Microsoft Cloud App Security can be configured to work with any web apps. This article describes how to deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure AD Application Proxy with Session controls.
 
-This article describes how to onboard custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure AD Application Proxy with Session controls.
+For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md).
 
 ## Prerequisites
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
-    - Azure Active Directory Premium edition
-    - Cloud Apps Security
+  - Azure Active Directory Premium edition
+  - Cloud Apps Security
 
 - Apps must be configured with single sign-on in Azure AD
 - Apps must use SAML or Open ID Connect 2.0 protocols
 
 ## To deploy non-featured apps
 
-Follow these steps to configure non-featured apps to be controlled by Cloud App Security Conditional Access App Control.
+Follow these steps to configure non-featured app to be controlled by Cloud App Security Conditional Access App Control.
 
 **Step 1: [Configure the conditional access policy feature of Azure Active Directory to route relevant apps to Cloud App Security](#conf-azure-ad).**
 
@@ -77,17 +77,17 @@ Follow these steps to configure non-featured apps to be controlled by Cloud App 
 
 1. Under **Session**, select **Use Conditional Access App Control** and then select **Monitor only**.
 
-1. Add any applicable **Condition assignments** or **Grant controls** (optional).
-
    ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
 
 1. Click **Enable** and **Save**.
- 
+
 ## Step 2: Configure the users that will deploy the apps<a name="conf-users"></a>
 
 1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
+
+1. Enter the user principal name or email for the users that will be onboarding the app, and then click **Save**.
 
 ## Step 3: Configure advanced controls and non-featured apps in the Cloud App Security portal <a name="portal"></a>
 
