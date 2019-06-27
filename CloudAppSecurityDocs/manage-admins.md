@@ -112,8 +112,7 @@ You can add additional admins to Cloud App Security without adding users to Azur
    >[!IMPORTANT]
    > Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
 
-
-1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**. 
+1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**.
 
 2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
   
@@ -126,16 +125,25 @@ You can add additional admins to Cloud App Security without adding users to Azur
 
 4. Click **Add admin**.  
 
+## Admin activity auditing
+
+Cloud App Security lets you export a log of all admin activities including auditing of an admin investigating a specific user or viewing specific alerts.
+
+To export a log, perform the following steps:
+
+1. In the **Manage admins access** page, select **Export admin activities**.
+
+1. Specify the required time range.
+
+1. Click **Export**.
+
 ## Invite external admins
 
-Microsoft Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Microsoft Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Microsoft Cloud App Security. Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. 
+Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal.
 
 To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
 ![choose tenant](./media/choose-tenant.png "choose tenant")
 
 ## Next steps  
-[Set up Cloud Discovery](set-up-cloud-discovery.md)   
-  
-  
-  
+[Set up Cloud Discovery](set-up-cloud-discovery.md)
