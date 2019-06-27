@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 6/17/2019
+ms.date: 6/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -44,7 +44,7 @@ For complete user investigation across a hybrid environment, you must have:
 
 
 >[!NOTE]
->If you don't have a subscription for Azure ATP, you will still be able to use the Cloud App Security portal to investigate users, but you won't receive insights from your on-premises environment.
+>If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
 
 
 ## Enable Azure Advanced Threat Protection

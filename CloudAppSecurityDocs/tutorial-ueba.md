@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 06/11/2019
+ms.date: 06/27/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
@@ -51,10 +51,7 @@ This tutorial provides instructions for using Cloud Discovery to investigate ris
 
 ## Prerequisites
 
-For complete user investigation across a hybrid environment, you must have a valid license for Azure ATP connected to your Active Directory instance and Cloud App Security must be configured to [integrate with your Azure ATP environment](aatp-integration.md).
-
->[!NOTE]
->If you don't have a subscription for Azure ATP, you will still be able to use the Cloud App Security portal to investigate users, but you won't receive insights from your on-premises environment. You can also view Azure ATP insights in the Cloud App Security portal if you have an Azure ATP license but don't have a license for Microsoft Cloud App Security.
+User and entity behavioral analytics (UEBA) works on the cloud and on premesis. To detect on-premesis threats, you must have a valid license for Azure ATP connected to your Active Directory instance and Cloud App Security must be configured to [integrate with your Azure ATP environment](aatp-integration.md).
 
 
 ## Understand the investigation priority score <a name ="risk-score"></a>
@@ -88,12 +85,12 @@ To identify who your riskiest users are in Cloud App Security:
 2. Click on a particular user to get to the **User** page. 
    ![User page](./media/user-page.png) 
 
-3. Click the **Investigation priority score** to view a list of all the risky activities that occurred over the last week to combine to give the user this particular score. 
 4. Review the information in the **User** page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.<br>The **User** page helps you answer the questions:
-	1. Who is the user?<br>Look at the left pane to get information about who the user is and what is known about them. This pane provides you with information about the user's role in your company and their department. Is the user a DevOps engineer who often performs unusual activities as part of their job? Is the user a disgruntled employee who just got passed over for a promotion?
-	2. Click on the activity or alert score to understand the reason this activity was considered anomalous.
-  2. Is the user risky?<br>Check out the top of the right pane so you know whether it's worth your while to investigate the user. What is the employee's [risk score](#risk-score)?
-	3. What's risk does the user present to your organization?<br>Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to helps you start understanding what type of risk the user represents so you can start deeper investigation.
+	- Who is the user?<br>Look at the left pane to get information about who the user is and what is known about them. This pane provides you with information about the user's role in your company and their department. Is the user a DevOps engineer who often performs unusual activities as part of their job? Is the user a disgruntled employee who just got passed over for a promotion?
+	  
+   - Is the user risky?<br>Check out the top of the right pane so you know whether it's worth your while to investigate the user. What is the employee's [risk score](#risk-score)?
+	
+   - What's risk does the user present to your organization?<br>Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, click on each line so you can drill down deeper into the activity or alert itself. You can click also on the number next to the activity so that you can understand the evidence that influenced the score itself.
 
   >[!NOTE]
   >It is important to remember that while the **User** page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
@@ -106,7 +103,7 @@ When you investigate a user based on an alert or if you saw an alert in an exter
 When you investigate a user, you want to ask these questions about the activities and alerts you see:
 - Is there a business justification for this employee to perform these activities? For example, if someone from Marketing is accessing the code base, or someone from Development accesses the Finance database, you should follow up with the employee to make sure this was an intentional and justified activity.
 
-- Go to the **Activity log** to understand why this activity received a high score while others did not. You can also filter by all scored activities. You can filter the activities based on **Activity priority**. For example, you can filter based on Activity priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can very easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
+- Go to the **Activity log** to understand why this activity received a high score while others did not. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can very easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
 
 
 
