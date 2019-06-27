@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Deploy Cloud App Security Conditional Access App Control for non-featured apps
-description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for non-featured apps.
+title: Deploy Cloud App Security Conditional Access App Control for any apps
+description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for any apps.
 keywords:
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Deploy Conditional Access App Control for non-featured app
+# Deploy Conditional Access App Control for any apps
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -48,17 +48,21 @@ For a list of apps that are featured by Cloud App Security to work out-of-the-bo
 - Apps must be configured with single sign-on in Azure AD
 - Apps must use SAML or Open ID Connect 2.0 protocols
 
-## To deploy non-featured apps
+## To deploy a non-featured app
 
 Follow these steps to configure non-featured app to be controlled by Cloud App Security Conditional Access App Control.
 
 **Step 1: [Configure the conditional access policy feature of Azure Active Directory to route relevant apps to Cloud App Security](#conf-azure-ad).**
 
-**Step 2: [Configure the users that will deploy the apps](#conf-users).**
+**Step 2: [Configure the users that will deploy the app](#conf-users).**
 
-**Step 3: If you did not select a built-in Cloud App Security policy in Azure AD or if you want to apply the policy to a non-featured app, [go to the Cloud App Security portal](#portal)**
+**Step 3: [Configure the app that you are deploying](#conf-apps)**
 
-[**Step 4: Test the deployment**](#test)
+**Step 4: [Verify that the app is working correctly](#verify-app)**
+
+**Step 5: [Enable the app for use in your organization](#enable-app)**
+
+**Step 6: [Update the Azure AD policy](#update-azure-ad)**
 
 > [!NOTE]
 > To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
@@ -81,7 +85,7 @@ Follow these steps to configure non-featured app to be controlled by Cloud App S
 
 1. Click **Enable** and **Save**.
 
-## Step 2: Configure the users that will deploy the apps<a name="conf-users"></a>
+## Step 2: Configure the users that will deploy the app<a name="conf-users"></a>
 
 1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings**.
 
@@ -89,77 +93,57 @@ Follow these steps to configure non-featured app to be controlled by Cloud App S
 
 1. Enter the user principal name or email for the users that will be onboarding the app, and then click **Save**.
 
-## Step 3: Configure advanced controls and non-featured apps in the Cloud App Security portal <a name="portal"></a>
+    ![Screenshot of settings for App onboarding and maintenance.](media/app-onboarding-settings.png)
 
-The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD.
+## Step 3: Configure the app that you are deploying<a name="conf-apps"></a>
 
-To configure an advanced policy, create an [access policy](access-policy-aad.md) or a [session policy](session-policy-aad.md) in Cloud App Security.
+1. Go to the app that you are deploying. If your app domain is recognized, you will be prompted to continue the app configuration process. If your app domain is not recognized, you will be prompted to configure your app's domain. Click **Configure app** and follow the instructions in step 4.2.4.
 
-To apply the policy to a non-featured application, follow the instructions to self-onboard a non-featured application for use with Conditional Access App Control.
+    > [!NOTE]
+    > For recognized app domains, make sure the app is configured with all domains required for the app to function correctly.
 
-To request support for a non-featured application:
+1. Repeat the following steps to install the **Current CA** and **Next CA** self-signed root certificates.
+    1. Select the certificate.
+    1. Click **Open**, and when prompted click **Open** again.
+    1. Click **Install certificate**.
+    1. Choose either **Current User** or **Local Machine**.
+    1. Select **Place all certificates in the following store** and then click **Browse**.
+    1. Select **Trusted Root Certificate Authorities** and then click **OK**.
+    1. Click **Finish**.
 
-1. In the Cloud App Security portal, go to the settings cog and choose **Conditional Access App Control**. You should see a message letting you know that new Azure AD apps were discovered by Conditional Access App Control. 
+    > [!NOTE]
+    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page. You'll see a check-mark by the certificates links confirmation they are installed.
 
-    ![Conditional access app control menu](./media/caac-menu.png)
+1. Click **Continue**.
 
-2. Click **View new apps**.
+## Step 4: Verify that the app is working correctly<a name="verify-app"></a>
 
-    ![Conditional access app control view new apps](./media/caac-view-apps.png)
+1. Verify that the sign-in flow correctly works.
+    > [!NOTE]
+    > Some apps issue a nonce hash during authentication that may break the sign-in process. If this happens, see the Troubleshooting Guide to resolve the issue.
+1. Once you are in the app, perform the following checks:
+    1. Visit all pages within the app that are part of a users’ work process and verify that the pages render correctly.
+1. Verify that the behavior and functionality of the app is not adversely affected by performing common actions such as downloading and uploading files.
 
-3. In the screen that opens, you can see all the apps that you logged into in the previous step. For each app, click on the + sign, and then click **Add**.
+## Step 5: Enable the app for use in your organization<a name="enable-app"></a>
 
-   > [!NOTE]
-   > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
+Once you are ready to enable the app for use in your organization's production environment, do the following steps.
 
-   ![Conditional access app control discovered Azure AD apps](./media/caac-discovered-aad-apps.png)
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
+1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
+1. Select **Use with Conditional Access App Control** and then click **Save**.
 
-4. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Azure AD conditional access** and **Session control** appear. 
-   
-   > [!NOTE]
-   > If Session control doesn't appear for an app, it's not yet available for that specific app. You'll see the **Request session control** link instead. 
-  
-     ![Conditional access app control request](./media/caac-request.png)
-   
+## Step 6: Update the Azure AD policy<a name="update-azure-ad"></a>
 
-5. Click **Request session control** to request that the app be onboarded to session control. The onboarding process will be performed with you by the Microsoft Cloud App Security team.
- 
-
-6.	Identify devices using client certificates (optional).
-    1.	Go to the settings cog and choose **Device identification**.
-    2.	Upload one or more root or intermediate certificates.
-   
-    3. After the certificate is uploaded, you can create access policies and session policies based on **Device tag** and **Valid client certificate**.
-
-       ![Conditional access app control device ID](./media/caac-device-id.png)
-
-> [!NOTE]
-> A certificate is only requested from a user if the session matches a policy that uses the valid client certificate filter.
-
-
-## Step 4: Test the deployment <a name="test"></a>
-
-1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Azure AD. 
-
-2. In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
-
-3. You can filter by clicking on **Advanced**, and then filtering using **Source equals Access control**.
-
-    ![Filter using Azure AD conditional access](./media/sso-logon.png)
-
-4. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.<br></br>
-   To verify that the activity is properly captured, click on a single sign-on log on activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
- 
-> [!NOTE]
-> After it is deployed, you can't remove an app from the Conditional Access App Control page. As long as you don't set a session or access policy on the app, the Conditional Access App Control won't change any behavior for the app. 
+1. In Azure Active Directory, under **Security**, click **Conditional Access**.
+1. Update the policy you created in [step 1](#conf-azure-ad) to include the relevant users, groups, and controls you require.
+1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Cloud App Security and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
 >[!div class="step-by-step"]
-[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
+[« Previous: Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)<br>
 [Next: How to create a session policy »](session-policy-aad.md)
 
-
 ## Next steps 
-[Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)   
+[Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
