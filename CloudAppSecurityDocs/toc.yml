@@ -128,7 +128,7 @@
     - name: Deploy Conditional Access App Control for featured apps
       href: proxy-deployment-aad.md
     - name: Onboard and deploy Conditional Access App Control for any apps
-      href: proxy-deployment-non-featured-apps.md
+      href: proxy-deployment-any-apps.md
   - name: Investigation
     href: investigate.md
     items:
