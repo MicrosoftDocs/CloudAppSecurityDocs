@@ -102,7 +102,7 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 **Session control is available for any browser on any major platform on any operating system**. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Mobile apps and desktop apps can also be blocked or allowed. By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect can be self-onboarded. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
 
 - AWS
-- Azure DevOps (Visual Studio Team Services)
+- Azure DevOps (Visual Studio Team Services) (preview)
 - Azure portal (preview)
 - Box
 - Concur
@@ -111,17 +111,17 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 - Dropbox
 - Dynamics 365 CRM (preview)
 - Egnyte
-- Exchange Online
+- Exchange Online (preview)
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
-- OneDrive for Business
+- OneDrive for Business (preview)
 - LinkedIn Learning
-- Power BI
+- Power BI (preview)
 - Salesforce
 - ServiceNow
-- SharePoint Online
+- SharePoint Online (preview)
 - Slack
 - Tableau
 - Microsoft Teams (preview)

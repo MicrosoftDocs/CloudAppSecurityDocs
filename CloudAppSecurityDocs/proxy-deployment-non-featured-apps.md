@@ -7,21 +7,26 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 7/2/2019
+ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
+ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 
 # optional metadata
 
 #ROBOTS:
 #audience:
+#ms.devlang:
+ms.reviewer: reutam
 ms.suite: ems
+#ms.tgt_pltfrm:
+ms.custom: seodec18
 
 ---
-# Onboard and deploy Conditional Access App Control for any app
+# Deploy Conditional Access App Control for any apps
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -29,7 +34,7 @@ ms.suite: ems
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
 [Next: How to create a session policy »](session-policy-aad.md)
 
-Session controls in Microsoft Cloud App Security can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure AD Application Proxy with Session controls.
+Session controls in Microsoft Cloud App Security can be configured to work with any web apps. This article describes how to deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure AD Application Proxy with Session controls.
 
 For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md).
 
@@ -43,15 +48,15 @@ For a list of apps that are featured by Cloud App Security to work out-of-the-bo
 - Apps must be configured with single sign-on in Azure AD
 - Apps must use SAML or Open ID Connect 2.0 protocols
 
-## To deploy a any app
+## To deploy a non-featured app
 
-Follow these steps to configure any app to be controlled by Cloud App Security Conditional Access App Control.
+Follow these steps to configure non-featured app to be controlled by Cloud App Security Conditional Access App Control.
 
-**Step 1: [Configure the Conditional Access policy feature of Azure Active Directory to route relevant apps to Cloud App Security](#conf-azure-ad).**
+**Step 1: [Configure the conditional access policy feature of Azure Active Directory to route relevant apps to Cloud App Security](#conf-azure-ad).**
 
 **Step 2: [Configure the users that will deploy the app](#conf-users).**
 
-**Step 3: [Configure the app that you are deploying](#conf-app)**
+**Step 3: [Configure the app that you are deploying](#conf-apps)**
 
 **Step 4: [Verify that the app is working correctly](#verify-app)**
 
@@ -62,7 +67,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 > [!NOTE]
 > To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
 
-## Step 1: Configure the Conditional Access policy feature of Azure Active Directory to route relevant apps to Cloud App Security<a name="conf-azure-ad"></a>  
+## Step 1: Configure the conditional access policy feature of Azure Active Directory to route relevant apps to Cloud App Security<a name="conf-azure-ad"></a>  
 
 1. In Azure Active Directory, under **Security**, click **Conditional Access**.
 
@@ -90,9 +95,9 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
     ![Screenshot of settings for App onboarding and maintenance.](media/app-onboarding-settings.png)
 
-## Step 3: Configure the app that you are deploying<a name="conf-app"></a>
+## Step 3: Configure the app that you are deploying<a name="conf-apps"></a>
 
-1. Go to the app that you are deploying. If your app domain is recognized, you will be prompted to continue the app configuration process. If your app domain is not recognized, you will be prompted to configure your app's domain(s). Click **Configure app** to continue the configuration process.
+1. Go to the app that you are deploying. If your app domain is recognized, you will be prompted to continue the app configuration process. If your app domain is not recognized, you will be prompted to configure your app's domain. Click **Configure app** and follow the instructions in step 4.2.4.
 
     > [!NOTE]
     > For recognized app domains, make sure the app is configured with all domains required for the app to function correctly.
@@ -118,7 +123,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
     > Some apps issue a nonce hash during authentication that may break the sign-in process. If this happens, see the Troubleshooting Guide to resolve the issue.
 1. Once you are in the app, perform the following checks:
     1. Visit all pages within the app that are part of a users’ work process and verify that the pages render correctly.
-    1. Verify that the behavior and functionality of the app is not adversely affected by performing common actions such as downloading and uploading files.
+1. Verify that the behavior and functionality of the app is not adversely affected by performing common actions such as downloading and uploading files.
 
 ## Step 5: Enable the app for use in your organization<a name="enable-app"></a>
 

@@ -125,9 +125,9 @@
       href: connect-webex-to-microsoft-cloud-app-security.md
   - name: Deploy Conditional Access App Control apps
     items:
-    - name: Deploy Conditional Access App Control for featured apps
+    - name: Deploy Conditional Access App Control for Azure AD apps
       href: proxy-deployment-aad.md
-    - name: Onboard and deploy Conditional Access App Control for any apps
+    - name: Deploy Conditional Access App Control for any apps
       href: proxy-deployment-non-featured-apps.md
   - name: Investigation
     href: investigate.md
