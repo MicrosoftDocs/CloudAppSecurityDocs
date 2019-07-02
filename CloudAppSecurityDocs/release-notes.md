@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 6/23/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -34,6 +34,17 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 152
+
+Released June 23, 2019
+
+- **Deploy Conditional Access App Control for any app**<br>
+We are excited to announce that we have expanded our support for Conditional Access App Control to any web app, in addition to the rich support we already offer for [our featured applications](proxy-intro-aad.md). This new capability allows you to deploy any web app to work with session and access policies, enabling powerful real-time monitoring and control. For example, you can protect downloads with Azure Information Protection labels, block upload of sensitive documents, providing auditing, among many others.
+- **Portal activity auditing**<br>
+Cloud App Security audits all admin activity in the portal to provide you with comprehensive monitoring and investigation of activities performed. Now you can also export up to 90 days of activities for further investigation and analysis, for example, auditing of an admin investigating a specific user or viewing specific alerts. To export the log, go to the **Manage admin access** settings page.
+- **Custom session sign out from Cloud App Security portal**<br>
+You can now configure automatic sign out of admin sessions to the portal that are idle for longer than a specified period.
+
 ## Cloud App Security release 151
 
 Released June 9, 2019
@@ -41,7 +52,7 @@ Released June 9, 2019
 - **Hybrid UEBA - Native integration with Azure ATP (Preview)**<br>
 Cloud App Security now natively integrates with Azure ATP to provide a single view of identity activities in both cloud apps and your on-premises network. For more information, see [Azure Advanced Threat Protection integration](aatp-integration.md).
 - **UEBA enhancements**<br>
-To help you identify threats that fall below the radar, Cloud App Security now uses unique profiling to provide risk scores for individual activities and alerts. The risk scores can be used to identify activities that aren’t suspicious enough on their own to trigger alerts. However, by aggregating the risk scores to a user's **Investigation priority score**, Cloud App Security helps you identify risky behavior and focus your investigation. These new capabilities are now available on our redesigned user padesk
+To help you identify threats that fall below the radar, Cloud App Security now uses unique profiling to provide risk scores for individual activities and alerts. The risk scores can be used to identify activities that aren’t suspicious enough on their own to trigger alerts. However, by aggregating the risk scores to a user's **Investigation priority score**, Cloud App Security helps you identify risky behavior and focus your investigation. These new capabilities are now available on our redesigned user page.
 - **New risk factor added to Cloud App Catalog**<br>
 The Cloud App Catalog now includes the Disaster Recovery Plan risk factor to enable you to assess the apps in the Cloud App Catalog for business continuity support.
 - **Microsoft Flow connector GA**<br>
