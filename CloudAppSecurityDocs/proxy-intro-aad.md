@@ -5,7 +5,7 @@ title: Protect with Microsoft Cloud App Security Conditional Access App Control
 description: This article provides information about how the Cloud App Security Conditional Access App Control reverse proxy works.
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
 ms.date: 7/2/2019
 ms.topic: conceptual
