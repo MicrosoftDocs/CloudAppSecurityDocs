@@ -204,7 +204,6 @@
         href: siem.md
       - name: External DLP integration
         href: icap-stunnel.md
-
     - name: Automate processes and workflows
       items: 
       - name: Use the REST API

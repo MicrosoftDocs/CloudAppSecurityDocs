@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 6/24/2019
+ms.date: 7/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Deploy Conditional Access App Control for Azure AD apps
+# Deploy Conditional Access App Control for featured apps
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -34,13 +34,13 @@ ms.custom: seodec18
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
 [Next: How to create a session policy »](session-policy-aad.md)
 
-Follow these steps to configure Azure AD apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
+Follow these steps to configure featured apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
 
 **Step 1: [Go to the Azure AD portal and create a conditional access policy for the apps and route the session to Cloud App Security](#add-azure-ad).**
 
 **Step 2: [Sign in to each app using a user scoped to the policy](#sign-in-scoped).**
 
-**Step 3: If you did not select a built-in Cloud App Security policy in Azure AD or if you want to apply the policy to a non-featured app, [go to the Cloud App Security portal](#portal)**
+**Step 3: If you did not select a built-in Cloud App Security policy in Azure AD or if you want to apply the policy to a any app, [go to the Cloud App Security portal](#portal)**
 
 [**Step 4: Test the deployment**](#test)
 
@@ -74,15 +74,15 @@ After you've created the policy, sign in to each app configured in that policy. 
 
 Cloud App Security will sync your policy details to its servers for each new app you sign in to.  This may take up to one minute.
 
-## Step 3: Configure advanced controls and non-featured apps in the Cloud App Security portal<a name="portal"></a>
+## Step 3: Configure advanced controls and any apps in the Cloud App Security portal<a name="portal"></a>
 
 The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD.
 
 To configure an advanced policy, create an [access policy](access-policy-aad.md) or a [session policy](session-policy-aad.md) in Cloud App Security.
 
-To apply the policy to a non-featured application, follow the instructions to [self-onboard a non-featured application for use with Conditional Access App Control](proxy-deployment-non-featured-apps.md).
+To apply the policy to a any app, follow the instructions to [self-onboard a any app for use with Conditional Access App Control](proxy-deployment-any-app.md).
 
-To request support for a non-featured application:
+To request support for a any app:
 
 1. In the Cloud App Security portal, go to the settings cog and choose **Conditional Access App Control**. You should see a message letting you know that new Azure AD apps were discovered by Conditional Access App Control.
 

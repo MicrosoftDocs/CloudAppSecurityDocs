@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 6/24/2019
+ms.date: 7/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -24,7 +24,6 @@ ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
 ---
 # Protect apps with Microsoft Cloud App Security Conditional Access App Control
 
