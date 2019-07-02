@@ -119,6 +119,8 @@ Microsoft Cloud App Security retains data as follows:
 
 - Alerts: 180 days
 
+- Governance log: 120 days
+
 You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
