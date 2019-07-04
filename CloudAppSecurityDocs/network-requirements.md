@@ -4,10 +4,10 @@
 title: Network requirements - Cloud App Security | Microsoft Docs
 description: This article describes the IP addresses and ports you need to open to work with Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/17/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -19,10 +19,7 @@ ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 
 #ROBOTS:
 #audience:
-#ms.devlang:
-ms.reviewer: reutam
 ms.suite: ems
-#ms.tgt_pltfrm:
 ms.custom: seodec18
 
 ---
@@ -30,7 +27,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides a list of ports and IP addresses you need to allow and white list to work with Microsoft Cloud App Security. 
+This article provides a list of ports and IP addresses you need to allow and allow list to work with Microsoft Cloud App Security.
 
 ## View your data center
 
@@ -48,7 +45,7 @@ To see which data center you're connecting to, do the following steps:
 
 ## Portal access
 
-For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's white list:  
+For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:  
 
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
@@ -68,11 +65,11 @@ Additionally, the following items should be whitelisted, depending on which data
 > 
 > |Data center|IP addresses|DNS name|
 > |----|----|----|
-> |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
-> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
-> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
-> |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
-> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
+> |US1|13.80.125.22<br>52.183.75.62<br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br>52.183.75.62<br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br>|
+> |US3|13.80.125.22<br>52.183.75.62<br>40.90.218.198<br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br>|
+> |EU1|13.80.125.22<br>52.183.75.62<br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br>52.183.75.62<br>40.81.156.154<br>40.81.156.156<br>40.81.152.172|*.eu2.portal.cloudappsecurity.com|
 
 
 > 
@@ -81,7 +78,7 @@ Additionally, the following items should be whitelisted, depending on which data
 
 ## SIEM agent connection
 
-To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's white list:  
+To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allow list:  
 
 
 > [!div class="mx-tableFixed"]
@@ -92,7 +89,7 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > |US2|52.184.165.82|
 > |US3|40.90.218.198<br>40.90.218.196|
 > |EU1|52.174.56.180|
-> |EU2|40.81.156.154<br>40.81.156.156|
+> |EU2|40.81.156.154<br>40.81.156.156<br>40.81.152.172|
 
 > [!NOTE]
 > If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
@@ -111,11 +108,11 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
+> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153|
+> |EU1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
 
 
 ## Third-party DLP integration
@@ -129,7 +126,7 @@ To enable Cloud App Security to send data through your stunnel to your ICAP serv
 
 > [!NOTE] 
 > -  By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
-> - You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
+> - You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses.
 
 To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security to connect from these IP addresses:
 
@@ -137,15 +134,15 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
+> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153|
+> |EU1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
 
 ## Mail server
 
-To enable notifications to be sent from the default template and settings, add these IP addresses to your anti-spam whitelist. The Cloud App Security dedicated email IP addresses are: 
+To enable notifications to be sent from the default template and settings, add these IP addresses to your anti-spam allow list. The Cloud App Security dedicated email IP addresses are:
 
 - 65.55.234.192/26
 - 207.46.200.0/27
@@ -158,10 +155,9 @@ If you want to customize the email sender identity, Microsoft Cloud App Security
 
 If you don’t customize the sender identity, your email notifications will be sent using all the default settings.
 
-To work with MailChimp, add this IP address to your anti-spam whitelist to enable notifications to be sent: 198.2.134.139 (mail1.cloudappsecurity.com)
+To work with MailChimp, add this IP address to your anti-spam allow list to enable notifications to be sent: 198.2.134.139 (mail1.cloudappsecurity.com)
 
-
-## Log collector 
+## Log collector
 
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
