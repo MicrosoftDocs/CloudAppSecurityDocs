@@ -114,17 +114,19 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
 ## Step 4: Add the domains for the app<a name="add-domains"></a>
 
-Associating domains to an app allows Cloud App Security to enforce policies and audit activities.
+Associating the correct domains to an app allows Cloud App Security to enforce policies and audit activities.
 
-For example, if you have configured a policy that blocks downloading files and a user attempts to download a file from a domain associated with the app, the file download is blocked. However, if there is a domain used by the app that has not been associated with the app, the file download will not be blocked and the action will not be audited in the activity log.
+For example, if you have configured a policy that blocks downloading files for an associated domain, file downloads by the app from that domain will be blocked. However, file downloads by the app from domains not associated with the app will not be blocked and the action will not be audited in the activity log.
 > [!NOTE]
-> Cloud App Security still adds a suffix to domains not associated with the app.
+> Cloud App Security still adds a suffix to domains not associated with the app to ensure a seamless user experience.
 
-1. From the app, on the Cloud App Security toolbar, click **Discovered domains**.
-1. In the Discovered domains panel, make a note of the domain names.
+1. From within the app, on the Cloud App Security admin toolbar, click **Discovered domains**.
     > [!NOTE]
-    > The panel displays a list of discovered domains that are not configured in the app. The domain names are fully qualified.
-1. In Cloud App Security, click **Discover** and then click **Cloud app catalog**.
+    > The admin toolbar is only visible to users with permissions to onboard or maintenance apps.
+1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
+    > [!NOTE]
+    > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
+1. Go to Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Conditional Acccess App Control**.
 1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
     > [!TIP]
     > To view the list of domains configured in the app, click **View app domains**.
