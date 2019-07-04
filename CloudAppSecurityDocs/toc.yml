@@ -123,8 +123,12 @@
       href: connect-servicenow-to-microsoft-cloud-app-security.md
     - name: Connect WebEx
       href: connect-webex-to-microsoft-cloud-app-security.md
-  - name: Deploy Conditional Access App Control for Azure AD apps
-    href: proxy-deployment-aad.md
+  - name: Deploy Conditional Access App Control apps
+    items:
+    - name: Deploy Conditional Access App Control for featured apps
+      href: proxy-deployment-aad.md
+    - name: Onboard and deploy Conditional Access App Control for any apps
+      href: proxy-deployment-any-app.md
   - name: Investigation
     href: investigate.md
     items:
@@ -200,7 +204,6 @@
         href: siem.md
       - name: External DLP integration
         href: icap-stunnel.md
-
     - name: Automate processes and workflows
       items: 
       - name: Use the REST API
