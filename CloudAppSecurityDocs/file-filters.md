@@ -4,10 +4,10 @@
 title: Understanding file data and filters available in Cloud App Security
 description: This reference article provides information about the types of files and file filters used by Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MSn
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -139,6 +139,23 @@ You can also set the policy to run on specific files by setting the **Apply to**
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
+## Authorizing files
+
+After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
+
+### To authorize files
+
+1. In Cloud App Security, click **Control** and then **Policies**.
+1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
+    > [!TIP]
+    > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
+    >
+    > | Risk type | Filter type |
+    > | --- | --- |
+    > | DLP | File policy |
+    > | Malware | Malware detection policy |
+1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
+
 ## Working with the File drawer
 
 You can view more information about each file, by clicking on the file itself in the file log. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
@@ -157,8 +174,6 @@ For a list of governance actions available, see [File governance actions](govern
 
 ## Next steps
   
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)

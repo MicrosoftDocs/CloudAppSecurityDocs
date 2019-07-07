@@ -5,9 +5,9 @@ title: Governance actions to control connected apps - Cloud App Security | Micro
 description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -80,7 +80,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Inherit permissions from parent** - This governance action enables you to remove specific permissions set for a file or folder in Office 365. Then revert to whatever permissions are set for the parent folder.
 
-  - **Trash** – Move the file to the trash folder. (Box, Google Drive, OneDrive, SharePoint)
+  - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
    ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts") 
 
@@ -143,7 +143,7 @@ For information about how governance actions are treated when there are policy c
 |App dashboard > App permissions |Permissions|Revoke app|Revoke a third-party app's permissions to Google or Salesforce. This is a one-time action that will occur on all existing permissions, but won't prevent future connections. | G Suite, Salesforce|
 |App dashboard > App permissions | Account | Revoke user from app|You can revoke specific users when clicking on the number under Users. The screen will display the specific users and you can use the X to delete permissions for any user.| G Suite, Salesforce|
 |Discover > Discovered Apps/IP addresses/Users| Cloud Discovery | Export discovery data | Creates a CSV from the discovery data. | Discovery |
-|File policy|File |Trash|Moves the file in the user's trash.| Box, Google Drive, OneDrive, SharePoint |
+|File policy|File |Trash|Moves the file in the user's trash.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
 |File Policy|File | Notify last file editor |Sends an email to notify the last person who edited the file that it violates a policy. |G Suite, Box|
 |File Policy|File |Notify file owner|Sends an email to the file owner, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set. | All apps |
 |File Policy, Activity Policy | File, Activity | Notify specific users |Sends an email to notify specific users about a file that violates a policy.| All apps |
