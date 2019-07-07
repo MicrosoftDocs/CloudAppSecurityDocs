@@ -135,10 +135,9 @@ To verify that the activity is properly captured, click on a single sign-on log 
 > After it is deployed, you can't remove an app from the Conditional Access App Control page. As long as you don't set a session or access policy on the app, the Conditional Access App Control won't change any behavior for the app.
 
 >[!div class="step-by-step"]
-[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
-[Next: How to create a session policy »](session-policy-aad.md)
+[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 ## Next steps 
-[Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)   
+[Working with Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
