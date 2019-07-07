@@ -138,6 +138,6 @@ To verify that the activity is properly captured, click on a single sign-on log 
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 ## Next steps 
-[Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+[Working with Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
