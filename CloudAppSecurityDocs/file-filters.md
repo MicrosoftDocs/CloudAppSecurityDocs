@@ -4,10 +4,10 @@
 title: Understanding file data and filters available in Cloud App Security
 description: This reference article provides information about the types of files and file filters used by Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MSn
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -141,7 +141,7 @@ You can also set the policy to run on specific files by setting the **Apply to**
 
 ## Authorizing files
 
-After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them.
+After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
 
 ### To authorize files
 
