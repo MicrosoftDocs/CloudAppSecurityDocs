@@ -5,7 +5,7 @@ title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
 ms.date: 6/23/2019
 ms.topic: overview
@@ -33,6 +33,24 @@ ms.custom: seodec18
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## Cloud App Security release 153
+
+Released July 7, 2019
+
+- **Enhanced Dropbox support**<br>
+Cloud App Security now supports the **Trash** governance action for Dropbox – This governance action can be used manually or automatically as part of a file policy.
+- **New featured apps for Cloud Access App Control**<br>
+Conditional Access App Control for the following featured apps is now generally available:
+
+    - OneDrive for Business
+    - SharePoint Online
+    - Azure DevOps
+    - Exchange Online
+    - Power BI
+
+- **Authorize files identified as malware**<br>
+Cloud App Security scans all files from your connected apps for DLP exposure and malware. You can now authorize files identified as malware but were confirmed safe following an investigation. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
 
 ## Cloud App Security release 152
 
@@ -522,6 +540,4 @@ Released January 7, 2018
 
 For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
