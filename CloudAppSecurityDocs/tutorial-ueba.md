@@ -34,10 +34,10 @@ Whether your trigger is an alert you see in the Cloud App Security dashboard, or
 This tutorial provides instructions for using Cloud App Security to investigate risky users.
 
 > [!div class="checklist"]
-> * Identify top risky users
-> * Investigate a user
-> * Understand user risk
-> * Protect your organization
+> * 1: [Connect to the apps you want to protect](#connect-apps-protect)
+> * 2: [Identify top risky users](#identify)
+> * 3: [Further investigate users](#investigate)
+> * 4: [Protect your organization](#protect)
 
 
 ## Understand the investigation priority score <a name ="risk-score"></a>
@@ -60,12 +60,13 @@ Cloud App Security uses the following to measure risk:
 
 - **Activity scoring**<br> The activity score determines the probability of a specific user performing a specific activity, based on behavioral learning of the user and their peers. Activities identified as the most abnormal receive the highest scores. 
 
-## Phase 1: Connect to the apps you want to protect
+## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
+
 1. Connect at least one app to Microsoft Cloud App Security using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](connect-office-365-to-microsoft-cloud-app-security.md). 
 1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
 1. To enable insights across your on-premises environment, configure Cloud App Security to [integrate with your Azure ATP environment](aatp-integration.md).
 
-## Phase 2: Identify top risky users
+## Phase 2: Identify top risky users<a name="identify"></a>
 
 To identify who your riskiest users are in Cloud App Security:
 
@@ -87,7 +88,7 @@ To identify who your riskiest users are in Cloud App Security:
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
  
  
-## Phase 3: Further investigate users
+## Phase 3: Further investigate users<a name="investigate"></a>
 
 When you investigate a user based on an alert or if you saw an alert in an external system, there may be activities which alone may not be cause for alarm, but when Cloud App Security aggregates them together with other activities, the alert may be an indication of a suspicious event.
  
@@ -99,7 +100,7 @@ When you investigate a user, you want to ask these questions about the activitie
 
 
 
-## Phase 4: Protect your organization
+## Phase 4: Protect your organization<a name="protect"></a>
 
 If your investigation leads you to the conclusion that a user is compromised, follow these steps to mitigate the risk.
 
