@@ -93,10 +93,10 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
 ## Step 3: Configure the app that you are deploying<a name="conf-app"></a>
 
-1. Go to the app that you are deploying. If your app domain is recognized, you will be prompted to continue the app configuration process. If your app domain is not recognized, you will be prompted to configure your app's domain(s). Click **Configure app** and proceed to [step 4](#add-domains).
+1. Go to the app that you are deploying. If your app domain is recognized, you will be prompted to continue the app configuration process. If your app domain is not recognized, you will be prompted to configure your app's domain(s). Click **Configure app** and proceed to [Add the domains for the app](#add-domains).
 
     > [!NOTE]
-    > For recognized app domains, make sure the app is configured with all domains required for the app to function correctly. To configure additional, proceed to [step 4](#add-domains).
+    > For recognized app domains, make sure the app is configured with all domains required for the app to function correctly. To configure additional, proceed to [Add the domains for the app](#add-domains).
 
 1. Repeat the following steps to install the **Current CA** and **Next CA** self-signed root certificates.
     1. Select the certificate.
@@ -142,7 +142,7 @@ For example, if you have configured a policy that blocks downloading files for a
 1. Once you are in the app, perform the following checks:
     1. Visit all pages within the app that are part of a users’ work process and verify that the pages render correctly.
     1. Verify that the behavior and functionality of the app is not adversely affected by performing common actions such as downloading and uploading files.
-    1. Review the list of domains associated with the app. For more information, see [step 4](#add-domains).
+    1. Review the list of domains associated with the app. For more information, see [Add the domains for the app4](#add-domains).
 
 ## Step 6: Enable the app for use in your organization<a name="enable-app"></a>
 
@@ -155,7 +155,7 @@ Once you are ready to enable the app for use in your organization's production e
 ## Step 7: Update the Azure AD policy<a name="update-azure-ad"></a>
 
 1. In Azure Active Directory, under **Security**, click **Conditional Access**.
-1. Update the policy you created in [step 1](#conf-azure-ad) to include the relevant users, groups, and controls you require.
+1. Update the policy you created in [Configure the Conditional Access policy feature of Azure Active Directory](#conf-azure-ad) to include the relevant users, groups, and controls you require.
 1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Cloud App Security and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
 >[!div class="step-by-step"]
