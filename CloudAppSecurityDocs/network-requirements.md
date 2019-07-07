@@ -65,11 +65,11 @@ Additionally, the following items should be whitelisted, depending on which data
 > 
 > |Data center|IP addresses|DNS name|
 > |----|----|----|
-> |US1|13.80.125.22<br>52.183.75.62<br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US1|13.80.125.22<br>13.91.91.243<br>52.183.75.62|\*.us.portal.cloudappsecurity.com|
 > |US2|13.80.125.22<br>52.183.75.62<br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br>|
-> |US3|13.80.125.22<br>52.183.75.62<br>40.90.218.198<br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br>|
-> |EU1|13.80.125.22<br>52.183.75.62<br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
-> |EU2|13.80.125.22<br>52.183.75.62<br>40.81.156.154<br>40.81.156.156<br>40.81.152.172|*.eu2.portal.cloudappsecurity.com|
+> |US3|13.80.125.22<br>40.90.218.196<br>40.90.218.198<br>52.183.75.62|*.us3.portal.cloudappsecurity.com<br>|
+> |EU1|13.80.125.22<br>52.174.56.180<br>52.183.75.62|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br>40.81.156.154<br>40.81.156.156<br>52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 
 
 > 
@@ -87,9 +87,9 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > |----|----|
 > |US1|13.91.91.243|
 > |US2|52.184.165.82|
-> |US3|40.90.218.198<br>40.90.218.196|
+> |US3|40.90.218.196<br>40.90.218.198|
 > |EU1|52.174.56.180|
-> |EU2|40.81.156.154<br>40.81.156.156<br>40.81.152.172|
+> |EU2|40.81.156.154<br>40.81.156.156|
 
 > [!NOTE]
 > If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
@@ -108,11 +108,11 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
-> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
-> |US3|40.90.218.197<br>40.90.218.203|
-> |EU1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
+> |US1|13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br>104.209.35.177|
+> |US2|40.84.2.83<br>40.84.4.93<br>40.84.4.119<br>52.184.165.82|
+> |US3|40.90.218.197<br>40.90.218.203<br>40.90.220.190|
+> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>52.174.56.180|
+> |EU2|40.81.152.172<br>40.81.156.153<br>40.81.156.155|
 
 
 ## Third-party DLP integration
@@ -134,11 +134,11 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
-> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
-> |US3|40.90.218.197<br>40.90.218.203|
-> |EU1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
+> |US1|13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br>104.209.35.177|
+> |US2|40.84.2.83<br>40.84.4.93<br>40.84.4.119<br>52.184.165.82|
+> |US3|40.90.218.197<br>40.90.218.203<br>40.90.220.190|
+> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>52.174.56.180|
+> |EU2|40.81.152.172<br>40.81.156.153<br>40.81.156.155|
 
 ## Mail server
 
@@ -168,11 +168,11 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
   | Data center |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     US1      |   https://adaprodconsole.blob.core.windows.net/   |
+  |     US1     | https://adaprodconsole.blob.core.windows.net/     |
   |     US2     | https://prod03use2console1.blob.core.windows.net/ |
-  |     US3     |https://prod5usw2console1.blob.core.windows.net/   |
-  |     EU1      | https://prod02euwconsole1.blob.core.windows.net/  |
-  |     EU2     |https://prod4uksconsole1.blob.core.windows.net/    |
+  |     US3     | https://prod5usw2console1.blob.core.windows.net/  |
+  |     EU1     | https://prod02euwconsole1.blob.core.windows.net/  |
+  |     EU2     | https://prod4uksconsole1.blob.core.windows.net/   |
 
 > [!NOTE]
 > - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
@@ -183,5 +183,4 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
