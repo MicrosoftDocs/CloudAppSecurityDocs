@@ -5,7 +5,7 @@ title: Governance actions to control connected apps - Cloud App Security | Micro
 description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
 ms.date: 6/20/2019
 ms.topic: conceptual
