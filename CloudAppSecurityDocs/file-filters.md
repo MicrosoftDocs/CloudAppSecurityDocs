@@ -141,7 +141,7 @@ You can also set the policy to run on specific files by setting the **Apply to**
 
 ## Authorizing files
 
-After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them.
+After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
 
 ### To authorize files
 
