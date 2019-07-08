@@ -26,7 +26,7 @@ ms.suite: ems
 
 Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often are not connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Cloud App Security now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 
-To help you focus on user identity, Microsoft Cloud App Security provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Azure Advanced Threat Protection. After you integrate with Azure ATP, you will also gain context around user identity from its native integration with Active Directory.
+To help you focus on user identity, Microsoft Cloud App Security provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Azure Advanced Threat Protection (ATP). After you integrate with Azure ATP, you will also gain context around user identity from its native integration with Active Directory.
 
 
 Whether your trigger is an alert you see in the Cloud App Security dashboard, or whether you have information from a third-party security service, start your investigation from the Cloud App Security dashboard to deep dive into risky users.  
@@ -48,11 +48,11 @@ Use the **Investigation priority score** to determine which users to investigate
 
 The **Investigation priority score** provides you with the ability to detect both malicious insiders, and external attackers moving laterally in your organizations, without having to rely on standard deterministic detections.
 
-Assessing the investigation urgency of each specific user, the investigation priority score is based on security alerts, abnormal activities, and potential business and asset impact related to each user. 
+The investigation priority score is based on security alerts, abnormal activities, and potential business and asset impact related to each user to help you assess how urgent it is to investigate each specific user. 
 
 If you click on the score value for an alert or an activity, you can view the evidence that explains how Cloud App Security scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Azure ATP, Microsoft Cloud App Security as well as Azure AD Identity Protection. Your can now immediately understand who the real top risky users are by **Investigation priority score**, and then directly verify their business impact and investigate all related activities – no matter whether they are compromised, exfiltrating data or acting as insider threats.
+Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Azure ATP, Microsoft Cloud App Security as well as Azure AD Identity Protection. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they are compromised, exfiltrating data, or acting as insider threats.
 
 Cloud App Security uses the following to measure risk: 
 
