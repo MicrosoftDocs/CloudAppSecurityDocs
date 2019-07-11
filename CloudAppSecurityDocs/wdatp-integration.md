@@ -4,10 +4,10 @@
 title: Integrate Microsoft Defender ATP with Cloud App Security
 description: This article describes how to integrate Microsoft Defender Advanced Threat Protection with Cloud App Security for enhanced visibility into Shadow IT and risk management.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/14/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -49,7 +49,7 @@ Microsoft Cloud App Security uses the native integration with Microsoft Defender
 
 - Microsoft Cloud App Security license
 - Microsoft Defender ATP license
-- Windows 10 machines running version 1809 or later
+- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 versions
 - Toggle on **Preview features** to enable this feature in Cloud App Security
 
 ## How it works
