@@ -50,7 +50,7 @@ Conditional Access App Control for the following featured apps is now generally 
     - Power BI
 
 - **Authorize files identified as malware**<br>
-Cloud App Security scans all files from your connected apps for DLP exposure and malware. You can now authorize files identified as malware but were confirmed safe following an investigation. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
+Cloud App Security scans files from your connected apps for DLP exposure and malware. You can now authorize files that have been identified as malware but were confirmed safe following an investigation. Authorizing a file removes it from the malware detection report and suppresses future matches on this file. For more information about malware detection, see [Cloud App Security anomaly detection](anomaly-detection-policy.md).
 
 ## Cloud App Security release 152
 
