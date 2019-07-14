@@ -105,7 +105,7 @@ To create a new session policy, follow this procedure:
 
       - **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
        
-   2. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and file content.
+   2. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and files content.
  
    3. Under **Actions**, select one of the following items: 
 
