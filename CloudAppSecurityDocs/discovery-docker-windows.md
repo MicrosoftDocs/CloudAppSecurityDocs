@@ -4,10 +4,10 @@
 title: Roll out continuous reports for Cloud App Security using a Docker on Windows | Microsoft Docs
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Windows in an on-premises server.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 4/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -32,7 +32,7 @@ ms.suite: ems
 
 You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Windows.
 
-## Technical requirements
+## Prerequisites
 
 - OS: **Windows 10** (fall creators update) and Windows Server **version 1709+**
 
@@ -45,6 +45,9 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 - Set your firewall as described in [Network requirements](network-requirements.md#log-collector)
 
 - Virtualization on the operating system must be enabled with Hyper-V
+
+> [!IMPORTANT]
+> A user must be signed in for Docker to collect logs. We recommend advising your Docker user's to disconnect without signing out.
 
 ## Log collector performance
 
