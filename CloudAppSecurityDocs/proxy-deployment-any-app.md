@@ -158,7 +158,7 @@ Once you are ready to enable the app for use in your organization's production e
 ## Step 7: Update the Azure AD policy<a name="update-azure-ad"></a>
 
 1. In Azure AD, under **Security**, click **Conditional Access**.
-1. Update the policy you created created earlier to include the relevant users, groups, and controls you require.
+1. Update the policy you created earlier to include the relevant users, groups, and controls you require.
 1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Cloud App Security and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
 >[!div class="step-by-step"]
