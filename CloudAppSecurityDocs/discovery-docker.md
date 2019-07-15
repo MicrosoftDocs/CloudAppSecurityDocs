@@ -4,10 +4,10 @@
 title: Configure automatic log upload for continuous reports in Cloud App Security
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 15/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
