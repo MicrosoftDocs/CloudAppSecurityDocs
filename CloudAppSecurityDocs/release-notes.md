@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/7/2019
+ms.date: 7/21/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -33,6 +33,13 @@ ms.custom: seodec18
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## Cloud App Security release 154
+
+Released July 21, 2019
+
+- **Onboard and deploy Conditional Access App Control for any app GA**<br>
+Since previewing Microsoft Cloud App Security’s support for Conditional Access App Control for any app last month. This capability that allows you to onboard and deploy any web app to work with session and access policies is now generally available.
 
 ## Cloud App Security release 153
 
