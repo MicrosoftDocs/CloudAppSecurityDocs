@@ -32,7 +32,7 @@ ms.custom: seodec18
 
 >[!div class="step-by-step"]
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
-[Next: How to create a session policy »](session-policy-aad.md)
+[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 Follow these steps to configure featured apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
 

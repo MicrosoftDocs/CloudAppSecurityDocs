@@ -31,7 +31,7 @@ ms.custom: seodec18
 *Applies to: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PREVIOUS: Deploy Conditional Access App Control](proxy-deployment-aad.md)<br>
+[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
 [NEXT: How to create an access policy »](access-policy-aad.md)
 
 
@@ -165,7 +165,7 @@ Select **Block activities** to block specific activities, which you can find usi
 When **Protect** is set as the **Action** to be taken in the Cloud App Security session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy’s file filters. Labels are configured in the Azure Information Protection console and **Protect** must be selected within the label for it to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.  
  
 >[!div class="step-by-step"]
-[« PREVIOUS: Deploy Conditional Access App Control](proxy-deployment-aad.md)<br>
+[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
 [NEXT: How to create an access policy »](access-policy-aad.md)
 
 ## Next steps
