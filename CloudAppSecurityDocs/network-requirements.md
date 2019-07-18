@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/4/2019
+ms.date: 7/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -65,14 +65,12 @@ Additionally, the following items should be whitelisted, depending on which data
 > 
 > |Data center|IP addresses|DNS name|
 > |----|----|----|
-> |US1|13.80.125.22<br>13.91.91.243<br>52.183.75.62|\*.us.portal.cloudappsecurity.com|
-> |US2|13.80.125.22<br>52.183.75.62<br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br>|
-> |US3|13.80.125.22<br>40.90.218.196<br>40.90.218.198<br>52.183.75.62|*.us3.portal.cloudappsecurity.com<br>|
-> |EU1|13.80.125.22<br>52.174.56.180<br>52.183.75.62|\*.eu.portal.cloudappsecurity.com<|
-> |EU2|13.80.125.22<br>40.81.156.154<br>40.81.156.156<br>52.183.75.62|*.eu2.portal.cloudappsecurity.com|
+> |US1|13.64.26.88<br>13.64.29.32<br>13.80.125.22<br>13.91.91.243<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br>20.36.222.59<br>20.36.222.60<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62<br>52.184.165.82|\*.us2.portal.cloudappsecurity.com|
+> |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.us3.portal.cloudappsecurity.com|
+> |EU1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 
-
-> 
 > [!NOTE]
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
 
@@ -80,40 +78,37 @@ Additionally, the following items should be whitelisted, depending on which data
 
 To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allow list:  
 
-
 > [!div class="mx-tableFixed"]
 > 
 > |Data center|IP addresses|  
 > |----|----|
-> |US1|13.91.91.243|
-> |US2|52.184.165.82|
-> |US3|40.90.218.196<br>40.90.218.198|
-> |EU1|52.174.56.180|
-> |EU2|40.81.156.154<br>40.81.156.156|
+> |US1|13.64.26.88<br>13.64.29.32<br>13.80.125.22<br>13.91.91.243<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
+> |US2|13.80.125.22<br>20.36.222.59<br>20.36.222.60<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62<br>52.184.165.82|
+> |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
+> |EU1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|
+> |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
 
 > [!NOTE]
 > If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## App connector
 
-For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used. The IP addresses enable Cloud App Security to collect logs and provide access for the Cloud App Security console. 
+For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used. The IP addresses enable Cloud App Security to collect logs and provide access for the Cloud App Security console.
 
 > [!NOTE]
->You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses. 
+>You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses.
 
 To connect to third-party apps, enable Cloud App Security to connect from these IP addresses:
 
-
 > [!div class="mx-tableFixed"]
 > 
-> |Data center|IP addresses|  
-> |----|----|
-> |US1|13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br>104.209.35.177|
-> |US2|40.84.2.83<br>40.84.4.93<br>40.84.4.119<br>52.184.165.82|
-> |US3|40.90.218.197<br>40.90.218.203<br>40.90.220.190|
-> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>52.174.56.180|
-> |EU2|40.81.152.172<br>40.81.156.153<br>40.81.156.155|
-
+> |Data center|IP addresses||
+> |----|----|----|
+> |US1|104.209.35.177<br>13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.64.26.88<br>13.64.29.32<br>13.64.30.117<br>13.64.30.118<br>13.64.30.76|13.64.31.116<br>13.86.176.189<br>13.86.176.211<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br><br>|
+> |US2|104.46.116.211<br>104.46.116.211<br>104.46.121.72<br>104.46.121.72<br>104.46.122.189<br>104.46.122.189<br>20.36.222.59<br>20.36.222.60<br>40.67.152.91|40.67.154.160<br>40.67.155.146<br>40.67.159.55<br>40.84.2.83<br>40.84.4.119<br>40.84.4.93<br>52.184.165.82<br>52.232.224.227<br>52.232.225.84|
+> |US3|40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242||
+> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.115.25.50|40.119.154.72<br>40.67.219.133<br>51.105.179.157<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180|
+> |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.145.108.227<br>51.145.108.250|
 
 ## Third-party DLP integration
 
@@ -132,13 +127,13 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 
 > [!div class="mx-tableFixed"]
 > 
-> |Data center|IP addresses|  
-> |----|----|
-> |US1|13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br>104.209.35.177|
-> |US2|40.84.2.83<br>40.84.4.93<br>40.84.4.119<br>52.184.165.82|
-> |US3|40.90.218.197<br>40.90.218.203<br>40.90.220.190|
-> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>52.174.56.180|
-> |EU2|40.81.152.172<br>40.81.156.153<br>40.81.156.155|
+> |Data center|IP addresses||
+> |----|----|----|
+> |US1|104.209.35.177<br>13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.64.26.88<br>13.64.29.32<br>13.64.30.117<br>13.64.30.118<br>13.64.30.76|13.64.31.116<br>13.86.176.189<br>13.86.176.211<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br><br>|
+> |US2|104.46.116.211<br>104.46.116.211<br>104.46.121.72<br>104.46.121.72<br>104.46.122.189<br>104.46.122.189<br>20.36.222.59<br>20.36.222.60<br>40.67.152.91|40.67.154.160<br>40.67.155.146<br>40.67.159.55<br>40.84.2.83<br>40.84.4.119<br>40.84.4.93<br>52.184.165.82<br>52.232.224.227<br>52.232.225.84|
+> |US3|40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242||
+> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.119.154.72|40.67.219.133<br>51.105.179.157<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180<br><br>|
+> |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.145.108.227<br>51.145.108.250||
 
 ## Mail server
 
@@ -165,7 +160,6 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
-
   | Data center |                        URL                        |
   |-------------|---------------------------------------------------|
   |     US1     | https://adaprodconsole.blob.core.windows.net/     |
@@ -180,7 +174,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 >- If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## Next steps
- 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
