@@ -160,14 +160,13 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
-
   | Data center |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     US1      |   https://adaprodconsole.blob.core.windows.net/   |
+  |     US1     | https://adaprodconsole.blob.core.windows.net/     |
   |     US2     | https://prod03use2console1.blob.core.windows.net/ |
-  |     US3     |https://prod5usw2console1.blob.core.windows.net/   |
-  |     EU1      | https://prod02euwconsole1.blob.core.windows.net/  |
-  |     EU2     |https://prod4uksconsole1.blob.core.windows.net/    |
+  |     US3     | https://prod5usw2console1.blob.core.windows.net/  |
+  |     EU1     | https://prod02euwconsole1.blob.core.windows.net/  |
+  |     EU2     | https://prod4uksconsole1.blob.core.windows.net/   |
 
 > [!NOTE]
 > - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
@@ -175,8 +174,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 >- If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## Next steps
- 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
