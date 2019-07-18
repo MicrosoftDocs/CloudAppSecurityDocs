@@ -36,8 +36,13 @@ For a list of apps that are featured by Cloud App Security to work out-of-the-bo
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
+<<<<<<< HEAD
   - Azure Active Directory Premium P1 or higher
   - Microsoft Cloud App Security
+=======
+  - Azure Active Directory Premium edition
+  - Microsoft Cloud Apps Security
+>>>>>>> ca25807d48bab57f34d0061f68be90531c59c5ba
 
 - Apps must be configured with single sign-on in Azure AD
 - Apps must use SAML or Open ID Connect 2.0 protocols
@@ -61,27 +66,49 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 **Step 7: [Update the Azure AD policy](#update-azure-ad)**
 
 > [!NOTE]
+<<<<<<< HEAD
 > To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
 
 ## Step 1: Configure Azure AD Conditional Access policy to route relevant apps to Cloud App Security<a name="conf-azure-ad"></a>  
 
 1. In Azure AD, browser to **Security** > **Conditional Access**.
+=======
+> To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium edition](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
+
+## Step 1: Configure Azure AD Conditional Access policy to route relevant apps to Cloud App Security<a name="conf-azure-ad"></a>  
+
+1. In Azure AD, under **Security**, click **Conditional Access**.
+>>>>>>> ca25807d48bab57f34d0061f68be90531c59c5ba
 
 1. On the **Conditional Access** blade, in the toolbar at the top, click **New policy**.
 
+<<<<<<< HEAD
 1. On the **New** blade, in the **Name** textbox, enter the policy name.
 
 1. Under **Assignments**, click **Users and groups**, assign the users that will be onboarding (initial sign on and verification) the app, and then click **Done**.
+=======
+1. On the **New** page, in the **Name** textbox, enter the policy name.
+
+1. On the **Users and groups** page, assign the relevant users that will be onboarding (initial sign on and verification) the apps.
+>>>>>>> ca25807d48bab57f34d0061f68be90531c59c5ba
 
 1. Under **Assignments**, click **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then click **Done**.
 
+<<<<<<< HEAD
 1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policies (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
+=======
+1. Under **Session**, select **Use Conditional Access App Control** and then either select one of the built-in policies (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security.
+>>>>>>> ca25807d48bab57f34d0061f68be90531c59c5ba
 
    ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
 
 1. Optional: Add conditions and grant controls as required.
 
+<<<<<<< HEAD
 1. Set **Enable policy** to **On** and then click **Create**.
+=======
+1. Under **Enable policy**, click **On** and then click **Save**.
+>>>>>>> ca25807d48bab57f34d0061f68be90531c59c5ba
 
 ## Step 2: Configure the users that will deploy the app<a name="conf-users"></a>
 
@@ -110,7 +137,11 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
     1. Click **Finish**.
 
     > [!NOTE]
+<<<<<<< HEAD
     > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page. You'll see a check mark by the certificate links confirming that a valid certificate is installed.
+=======
+    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page. You'll see a check mark by each certificate link confirming it is installed.
+>>>>>>> ca25807d48bab57f34d0061f68be90531c59c5ba
 
 1. Click **Continue**.
 
@@ -138,7 +169,11 @@ For example, if you have configured a policy that blocks downloading files for a
 
 ## Step 5: Verify that the app is working correctly<a name="verify-app"></a>
 
+<<<<<<< HEAD
 1. Verify that the sign in flow correctly works.
+=======
+1. Verify that the sign-in flow correctly works.
+>>>>>>> ca25807d48bab57f34d0061f68be90531c59c5ba
     <!--
     > [!NOTE]
     > Some apps issue a nonce hash during authentication that may break the sign-in process. If this happens, see the Troubleshooting Guide to resolve the issue.-->
