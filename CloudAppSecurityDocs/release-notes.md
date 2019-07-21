@@ -41,6 +41,9 @@ Released July 21, 2019
 - **Onboard and deploy Conditional Access App Control for any app GA**<br>
 Since previewing Microsoft Cloud App Security’s support for Conditional Access App Control for any app last month. This capability that allows you to onboard and deploy any web app to work with session and access policies is now generally available.
 
+- **Workday app connector available**<br>
+A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor and protect its users, activities and files. For more information, see Connect Workday <!-- (This will be a link to a new article) -->.
+
 ## Cloud App Security release 153
 
 Released July 7, 2019
