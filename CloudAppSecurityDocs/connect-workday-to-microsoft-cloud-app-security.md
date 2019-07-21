@@ -50,7 +50,6 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     | Client Grant Type | Authorization Code Grant |
     | Access Token Type | Bearer |
     | Redirection URI | https://portal.cloudappsecurity.com/api/oauth/connect |
-    | Grant Administrative consent | ??? |
     | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
@@ -87,34 +86,6 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. Back in the Cloud App Security console, you should see a message that Workday was successfully connected. Make sure the connection succeeded by clicking **Test API**.
 
     Testing may take a couple of minutes. After receiving a success notice, click **Close**.
-
-    > [!NOTE]
-    > After connecting Workday, you will receive events for **TBD** days prior to connection.
-
-## Imported events and supported use cases
-
-### Use cases
-
-- Activity investigation and policy management
-- Compromised users.
-- Anomaly detection:
-    - Impossible travel
-    - Logins from infrequent country
-    - Mass document deletion
-    - Mass user deletion (terminate employee)
-    - Mass user addition
-
-### Mapped events
-
-- Login
-- Add employee
-- Terminate employee
-- View worker profile
-- Update employee details
-- Demote employee
-- Upload document
-- Edit document
-- Delete document
 
 ## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   

@@ -5,9 +5,9 @@ title: Connect apps to get visibility and control - Cloud App Security | Microso
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/24/2019
+ms.date: 7/21/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -112,6 +112,7 @@ To use App Connectors, you need to make sure you have the following things for e
 | ServiceNow | Eureka and up                                                                       | Admin + RestAPI role                                                                                                                                                                                  |
 | Salesforce |                                                                                     | Admin                                                                                                                                                                                                 |
 | Webex      |                                                                                     | Admin + Compliance Admin                                                                                                                                                                              |
+| Workday      |                                                                                     | Admin                                                                                                                                                                              |
 
 **ExpressRoute**
 
