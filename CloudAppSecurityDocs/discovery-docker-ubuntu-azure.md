@@ -34,11 +34,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Prerequisites
 
-<<<<<<< HEAD
 - OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), RHEL 7.2 or higher, or CentOS 7.2 or higher
-=======
-- OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), or RHEL 7.2 or higher, or CentOS 7.2 or higher
->>>>>>> DOC-18 (Danny): Update log collector docs with CentOS
 
 - Disk space: 250 GB
 
