@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/2/2019
+ms.date: 7/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -32,13 +32,13 @@ ms.custom: seodec18
 
 >[!div class="step-by-step"]
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
-[Next: How to create a session policy »](session-policy-aad.md)
+[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 Follow these steps to configure featured apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
 
-**Step 1: [Go to the Azure AD portal and create a conditional access policy for the apps and route the session to Cloud App Security](#add-azure-ad).**
+**Step 1: [Go to the Azure AD portal and create a conditional access policy for the apps and route the session to Cloud App Security](#add-azure-ad)**
 
-**Step 2: [Sign in to each app using a user scoped to the policy](#sign-in-scoped).**
+**Step 2: [Sign in to each app using a user scoped to the policy](#sign-in-scoped)**
 
 **Step 3: If you did not select a built-in Cloud App Security policy in Azure AD or if you want to apply the policy to a any app, [go to the Cloud App Security portal](#portal)**
 
