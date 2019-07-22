@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 15/7/2019
+ms.date: 7/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -39,14 +39,14 @@ Before setting up automatic log file collection, verify your log matches the exp
 > [!NOTE]
 >-  Cloud App Security provides support for forwarding logs from your SIEM server to the Log Collector assuming the logs are being forwarded in their original format. However, it is highly recommended that you integrate the log collector directly with your firewall and/or proxy.
 >- The log collector compresses data before it is uploaded. The outbound traffic on the log collector will be 10% of the size of the traffic logs it receives. 
->-  If the log collector encounters issues, you will receive an alert after data wasn't received for 48 hours.
+>- If the log collector encounters issues, you will receive an alert after data wasn't received for 48 hours.
 >
 
 ## Deployment modes
 
 The Log Collector supports two deployment modes:
 
--   **Container**: Runs as a Docker image on [Windows](discovery-docker-windows.md), [Ubuntu on premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md) or [RHEL on premises](discovery-docker-ubuntu.md). 
+-   **Container**: Runs as a Docker image on [Windows](discovery-docker-windows.md), [Ubuntu on premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md), [RHEL on premises](discovery-docker-ubuntu.md) or CentOS.
 
 -   **Virtual appliance**:  Runs as an image over Hyper-V or VMware hypervisor (deprecated)
 

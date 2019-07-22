@@ -34,7 +34,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Prerequisites
 
-- OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), or RHEL 7.2 or higher, or CentOS 7.2 or higher
+- OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), RHEL 7.2 or higher, or CentOS 7.2 or higher
 
 - Disk space: 250 GB
 
@@ -67,9 +67,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      a. Click **Add data source**.
 
       ![Add a data source](./media/add-data-source.png)
-          
+
      b. **Name** your proxy or firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
