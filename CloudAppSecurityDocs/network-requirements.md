@@ -162,11 +162,11 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
   | Data center |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     US1     | https://adaprodconsole.blob.core.windows.net/     |
-  |     US2     | https://prod03use2console1.blob.core.windows.net/ |
-  |     US3     | https://prod5usw2console1.blob.core.windows.net/  |
-  |     EU1     | https://prod02euwconsole1.blob.core.windows.net/  |
-  |     EU2     | https://prod4uksconsole1.blob.core.windows.net/   |
+  |     US1     | https:\//adaprodconsole.blob.core.windows.net/     |
+  |     US2     | https:\//prod03use2console1.blob.core.windows.net/ |
+  |     US3     | https:\//prod5usw2console1.blob.core.windows.net/  |
+  |     EU1     | https:\//prod02euwconsole1.blob.core.windows.net/  |
+  |     EU2     | https:\//prod4uksconsole1.blob.core.windows.net/   |
 
 > [!NOTE]
 > - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
