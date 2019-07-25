@@ -4,10 +4,10 @@
 title: Create policies to control OAuth apps in Cloud App Security
 description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -35,6 +35,7 @@ In addition to the [existing investigation of OAuth apps](manage-app-permissions
 OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, G Suite, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will revoke permissions for each app for each user who authorized it. 
 
 ## Create a new OAuth app policy
+
 There are two ways to create a new OAuth app policy. The first way is under **Investigate** and the second is under **Control**. 
 
 To create a new OAuth app policy:
@@ -48,14 +49,23 @@ To create a new OAuth app policy:
 
 Alternatively, you can also create the policy by clicking **Control** followed by **Policies**. Then click **Create policy** followed by **OAuth app policy**.
 
-  
    ![new OAuth app policy](./media/app-permissions-policy.png)
 
+## OAuth app anomaly detection policies
 
+In addition to OAuth app policies you can create, there are the following out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious:
+
+| Policy name | Policy description |
+| --- | --- |
+| Misleading OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app. |
+| Suspicious OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a suspicious name is detected. Suspicious names, such as names of known apps published by unknown publishers, could indicate an attempt to disguise a malicious app as a known and trusted app. |
+| Non-secure redirect URL is used by an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app uses a non-secure redirect URL (for example, does not use the HTTPS protocol), which exposes sensitive data to interception. |
+| Misleading publisher name for an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher. |
+
+> [!NOTE]
+> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
 
   ## Next steps 
-  [Data protection policies](data-protection-policies.md)   
+  [Data protection policies](data-protection-policies.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
