@@ -41,8 +41,14 @@ Released July 21, 2019
 - **Onboard and deploy Conditional Access App Control for any app GA**<br>
 Since previewing Microsoft Cloud App Security’s support for Conditional Access App Control for any app last month. This capability that allows you to onboard and deploy any web app to work with session and access policies is now generally available.
 
-- **Workday app connector available**<br>
-A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor and protect its users, activities and files. For more information, see Connect Workday <!-- (This will be a link to a new article) -->.
+<!-- **Workday app connector available (Preview)**<br>
+A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
+
+- **Security configuration assessment for AWS**<br>
+Cloud App Security is gradually rolling out the ability to get a security configuration assessment of your Amazon Web Services environment for CIS compliance, and provides recommendations for missing configurations and security controls. This ability provides organizations with a single view for monitoring the compliance status for all connected AWS accounts.
+
+- **OAuth app anomaly detections (gradual rollout)**<br>
+We have expanded our current capability to detect suspicious OAuth apps. Four new detections are now available out-of-the-box that profile the metadata of OAuth apps authorized in your organization to identify ones that are potentially malicious.
 
 ## Cloud App Security release 153
 
