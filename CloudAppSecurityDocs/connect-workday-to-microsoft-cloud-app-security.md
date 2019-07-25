@@ -26,6 +26,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
+<!--
 # Connect Workday to Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
@@ -90,4 +91,4 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ## Next steps 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)-->

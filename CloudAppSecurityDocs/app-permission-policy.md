@@ -4,10 +4,10 @@
 title: Create policies to control OAuth apps in Cloud App Security
 description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -62,7 +62,8 @@ In addition to OAuth app policies you can create, there are the following out-of
 | Non-secure redirect URL is used by an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app uses a non-secure redirect URL (for example, does not use the HTTPS protocol), which exposes sensitive data to interception. |
 | Misleading publisher name for an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher. |
 
-
+> [!NOTE]
+> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
 
   ## Next steps 
   [Data protection policies](data-protection-policies.md)

@@ -112,7 +112,8 @@ To use App Connectors, you need to make sure you have the following things for e
 | ServiceNow | Eureka and up                                                                       | Admin + RestAPI role                                                                                                                                                                                  |
 | Salesforce |                                                                                     | Admin                                                                                                                                                                                                 |
 | Webex      |                                                                                     | Admin + Compliance Admin                                                                                                                                                                              |
-| Workday      |                                                                                     | Admin                                                                                                                                                                              |
+
+<!--| Workday      |                                                                                     | Admin                                                                                                                                                                              |-->
 
 **ExpressRoute**
 
