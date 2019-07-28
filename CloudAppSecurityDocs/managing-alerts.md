@@ -4,10 +4,10 @@
 title: Manage alerts raised in Cloud App Security
 description: This article explains how to work with alerts raised in the Cloud App Security portal.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -31,6 +31,9 @@ ms.custom: seodec18
 *Applies to: Microsoft Cloud App Security*
 
 This article explains how to work with alerts raised in the Cloud App Security portal.
+
+> [!NOTE]
+> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
 
 ## Manage your alerts
 
