@@ -32,6 +32,9 @@ ms.custom: seodec18
 
 This article explains how to work with alerts raised in the Cloud App Security portal.
 
+> [!NOTE]
+> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
+
 ## Manage your alerts
 
 Alerts are the entry points to understanding your cloud environment more deeply. You might want to create new policies based on what you find. For example, you might see an administrator signing in from Greenland, and no one in your organization ever signed in from Greenland before. You can create a policy that automatically suspends an admin account when it's used to sign in from that location.  
