@@ -77,7 +77,7 @@ You can view more information about each activity, by clicking on the Activity i
  - View activities of the same type
  - View all activities of the same user
  - View activities from the same IP address
- - view activities from the same geographic location
+ - View activities from the same geographic location
  - View activities from the same time period (48 hours)
  
 ![activity drawer](./media/activity-drawer.png "activity drawer")  
