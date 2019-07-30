@@ -6,8 +6,8 @@ description: This article describes the process Cloud App Security follows when 
 keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
-manager: shsagir
-ms.date: 06/13/2019
+manager: ShlomoSagir-MS
+ms.date: 7/30/2019
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -36,11 +36,9 @@ Microsoft Cloud App Security enables you to natively use the Microsoft Data Clas
 >[!NOTE]
 > This feature is currently available in the US, Europe (except France), Australia, India, Canada, Japan, and APAC.
 
-
 ## Enable content inspection with Data Classification Services
 
 You have the option to set the **Inspection method** to use the **Microsoft Data Classification Service** with no additional configuration required. This option is useful when creating a data leak prevention policy for your files in Microsoft Cloud App Security.
-
 
 1. In the [file policy](data-protection-policies.md) page, under **Inspection method**, select **Data Classification Service**. You can also set the **Inspection method** in the [session policy](session-policy-aad.md) page with **Control file download (with DLP)** selected.
      ![data classification service setting](./media/dcs-enable.png)
@@ -49,6 +47,8 @@ You have the option to set the **Inspection method** to use the **Microsoft Data
  ![data classification service setting](./media/dcs-sensitive-information-type.png)
 
 4. You can use the [default sensitive information types](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) to define what happens to files protected by Microsoft Cloud App Security. You can also reuse any of your [Office 365 custom sensitive information types](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
+    > [!NOTE]
+    > You can configure your policy to use advanced classification types such as Fingerprints and Exact Data Match.
 
 5. Optionally, you can unmask the last four characters of a match. By default, matches are masked and shown in their context, and include the 40 characters before and after the match. If you select this checkbox, it will unmask the last four characters of the match itself.
 
@@ -57,10 +57,8 @@ You have the option to set the **Inspection method** to use the **Microsoft Data
 Setting these policies enables you to easily extend the strength of the Office 365 DLP capabilities to all your other sanctioned cloud apps and protect the data stored in them with the full toolset provided to you by Microsoft Cloud App Security – such as the ability to
 [automatically apply Azure Information Protection classification labels](azip-integration.md) and the ability to control sharing permissions.
 
+## Next steps
 
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-## Next steps  
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
-
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
