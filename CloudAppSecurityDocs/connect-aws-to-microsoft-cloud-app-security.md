@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect AWS with Cloud App Security
-description: This article provides information about how to connect your AWS app to Cloud App Security using the AoPI connector for visibility and control over use.
+description: This article provides information about how to connect your AWS app to Cloud App Security using the API connector for visibility and control over use.
 keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
