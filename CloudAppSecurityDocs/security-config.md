@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Get security configuration recommendations - Cloud App Security | Microsoft Docs
+title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
 description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Azure Security Center.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -27,7 +27,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Security configuration
+# Security configuration for Azure
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -50,20 +50,20 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 
 2. Make sure to open <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> for the changes to take effect.
 
-3. In the Microsoft Cloud App Security portal, go to **Investigate** and then **Security configuration**. 
-    - Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions. 
+3. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
+    - Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
     - It might take up to 15 minutes before your changes take effect.
 
      ![security configuration menu](./media/security-configuration-menu.png)
 
-4. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation. 
+4. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation.
 
 For information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
-   ![security configuration](./media/security-configuration1.png)
+   ![security configuration](./media/security-configuration-azure.png)
 
-## Next steps 
+## Next steps
+
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)

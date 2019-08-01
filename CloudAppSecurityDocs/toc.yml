@@ -147,7 +147,11 @@
     - name: Manage OAuth apps
       href: manage-app-permissions.md
     - name: Security configuration
-      href: security-config.md
+      items:
+      - name: Security configuration for Azure
+        href: security-config.md
+      - name: Security configuration for AWS
+        href: security-config-aws.md
     - name: Monitor apps
       href: monitor-alerts.md
       items:
