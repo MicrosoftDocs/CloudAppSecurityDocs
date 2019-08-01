@@ -54,13 +54,13 @@ To enable security configuration recommendations in Microsoft Cloud App Security
     - Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
     - It might take up to 15 minutes before your changes take effect.
 
-     ![security configuration menu](./media/security-configuration-menu.png)
+     ![security configuration menu](media/security-configuration-menu.png)
 
 4. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation.
 
 For information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
 
-   ![security configuration](./media/security-configuration-azure.png)
+   ![security configuration](media/security-configuration-azure.png)
 
 ## Next steps
 
