@@ -110,7 +110,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
     1. Click **Finish**.
 
     > [!NOTE]
-    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page. You'll see a check mark by the certificate links confirming that a valid certificate is installed.
+    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
 
 1. Click **Continue**.
 
