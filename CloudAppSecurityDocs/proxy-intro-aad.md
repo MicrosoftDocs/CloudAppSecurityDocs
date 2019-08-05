@@ -74,7 +74,7 @@ Conditional Access App Control enables you to create policies that take into acc
 - Compliant devices
 - Domain-joined devices
 - Client certificates deployment
- 
+
 ### Compliant and domain joined devices
 
 Azure AD conditional access enables compliant and domain-joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter.
@@ -101,10 +101,12 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 > [!NOTE]
 > Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
 
+**Session control is available for any browser on any major platform on any operating system**. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Mobile apps and desktop apps can also be blocked or allowed.
+
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client applications and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
 
-**Session control is available for any browser on any major platform on any operating system**. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Mobile apps and desktop apps can also be blocked or allowed. By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect can be self-onboarded. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
+By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect can be self-onboarded. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
