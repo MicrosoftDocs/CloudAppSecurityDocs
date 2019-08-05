@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect AWS with Cloud App Security
+title: Connect Amazon Web Services with Cloud App Security
 description: This article provides information about how to connect your AWS app to Cloud App Security using the API connector for visibility and control over use.
 keywords:
 author: ShlomoSagir-MS
@@ -51,11 +51,11 @@ Since you can add either or both of the connections, the steps in this article a
 
 1. In the **Details** step, provide a new user name for Cloud App Security. Make sure that under **Access type** you select **Programmatic access** and click **Next Permissions**.<a name="set-permissions"></a>
 
-     ![Create user in AWS](media/aws-create-user.png "Create user in AWS")
+    ![Create user in AWS](media/aws-create-user.png "Create user in AWS")
 
 1. Click on the **JSON** tab:
 
-     ![AWS JSON tab](media/aws-json.png "AWS JSON tab")
+    ![AWS JSON tab](media/aws-json.png "AWS JSON tab")
 
 1. Paste the following script into the provided area:
 
@@ -90,11 +90,11 @@ Since you can add either or both of the connections, the steps in this article a
 
 1. Provide a **Name** and click **Create policy**.
 
-     ![Provide AWS policy name](media/aws-create-policy.png "Provide AWS policy name")
+    ![Provide AWS policy name](media/aws-create-policy.png "Provide AWS policy name")
 
 1. Back in the **Add user** screen, refresh the list if necessary, and select the user you created, and click **Next Review**.
 
-   ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
+    ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
 
 1. If all the details are correct, click **Create user**.
 
@@ -106,7 +106,7 @@ Since you can add either or both of the connections, the steps in this article a
 
 1. In the AWS console, click **Services** and then under **Management Tools** click **CloudTrail**.
 
-     ![AWS CloudTrail](media/aws-cloudtrail.png "AWS CloudTrail")
+    ![AWS CloudTrail](media/aws-cloudtrail.png "AWS CloudTrail")
 
     If you haven't used CloudTrail before, click **Get Started** and set it up by providing a name and selecting the appropriate S3 bucket and click **Turn On**. To make sure you have complete coverage, set **Apply to all regions** to **Yes**.
 
@@ -114,13 +114,16 @@ Since you can add either or both of the connections, the steps in this article a
 
     You should see the new CloudTrail name in the **Trails** list.
 
-      ![CloudTrail list in AWS](media/aws-cloudtrail-list.png "CloudTrail list in AWS")
+    ![CloudTrail list in AWS](media/aws-cloudtrail-list.png "CloudTrail list in AWS")
+
+    > [!NOTE]
+    > After connecting AWS, you'll receive events for seven days prior to connection. If you just enabled CloudTrail, you'll receive events from the time you enabled CloudTrail.
 
 1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, click the plus sign followed by **Amazon Web Services**.
 
-     ![connect AWS](media/connect-aws.png "connect AWS")
+    ![connect AWS](media/connect-aws.png "connect AWS")
 
 1. In the pop-up, provide a name for the connector, and then click **Connect Amazon Web Services**.
 
@@ -128,11 +131,11 @@ Since you can add either or both of the connections, the steps in this article a
 
 1. On the **Connect Amazon Web services** page, under **Security auditing**, paste **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-   ![Connect AWS app security auditing](media/aws-connect-app-audit.png "Connect AWS app security auditing")
+    ![Connect AWS app security auditing](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
 1. Make sure the connection succeeded by clicking **Test API**.  
 
-     Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
+    Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
 
 ## How to connect AWS Security configuration to Cloud App Security
 
@@ -140,11 +143,12 @@ Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-a
 
 1. On the permissions page, click **Attach existing policies directly**, apply the **AWSSecurityHubReadOnlyAccess** and **SecurityAudit** policies, and then click **Next Tags**.
 
-   ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
+    ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
 
 1. Optional: Add tags to the user.
 
     ![Add tags to user in AWS](media/aws-add-tags.png)
+
     > [!NOTE]
     > Adding tags to the user won't affect the connection.
 
@@ -162,7 +166,7 @@ Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-a
 
 1. In the **App connectors** page, click the plus sign followed by **Amazon Web Services**.
 
-     ![connect AWS](media/connect-aws.png "connect AWS")
+    ![connect AWS](media/connect-aws.png "connect AWS")
 
 1. In the pop-up, provide a name for the connector, and then click **Connect Amazon Web Services**.
 
@@ -170,14 +174,12 @@ Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-a
 
 1. On the Connect Amazon Web services page, select each section as required, and paste its **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-   ![Connect AWS app security configuration](media/aws-connect-app-config.png "Connect AWS app security configuration")
+    ![Connect AWS app security configuration](media/aws-connect-app-config.png "Connect AWS app security configuration")
 
 1. Make sure the connection succeeded by clicking **Test API**.  
 
-     Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
+    Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
 
-After connecting AWS, you'll receive events for seven days prior to connection. If you just enabled CloudTrail, in which case you receive events from the time you enabled CloudTrail.
-  
 ## Next steps
 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)
