@@ -37,7 +37,7 @@ You can connect one or both of the following AWS to Cloud App Security connectio
 - **Security auditing**: This connection gives you visibility into and control over AWS app use.
 - **Security configuration**: This connection gives you fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
 
-Since you can connect either or both of the connections, the steps in this article always    
+Since you can add either or both of the connections, the steps in this article are written as independent instructions. If you have already added one of the connections, where relevant edit existing configurations.
 
 ## How to connect AWS Security auditing to Cloud App Security
 
@@ -136,7 +136,7 @@ Since you can connect either or both of the connections, the steps in this artic
 
 ## How to connect AWS Security configuration to Cloud App Security
 
-The following steps assume you have completed the [How to connect AWS Security auditing](#how-to-connect-aws-security-auditing-to-cloud-app-security) to get to the [permissions](#set-permissions) page.
+Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-auditing-to-cloud-app-security) steps to get to the [permissions](#set-permissions) page.
 
 1. On the permissions page, click **Attach existing policies directly**, apply the **AWSSecurityHubReadOnlyAccess** and **SecurityAudit** policies, and then click **Next Tags**.
 
@@ -157,7 +157,10 @@ The following steps assume you have completed the [How to connect AWS Security a
 1. When you get the success message, click **Download .csv** to save a copy of the **Access key ID** and the **Secret access key**, you need these later.
 
     ![Download csv in AWS](media/aws-download-csv.png "Download csv in AWS")
-  
+
+> [!NOTE]
+> Information the user should notice even if skimming
+
 1. In the AWS console, click **Services** and then under **Management Tools** click **CloudTrail**.
 
      ![AWS CloudTrail](media/aws-cloudtrail.png "AWS CloudTrail")
