@@ -34,7 +34,7 @@ Microsoft Cloud App Security supports role-based access control. This article pr
 
 ## Office 365 and Azure AD roles with access to Cloud App Security
 
-By default, the following Office 365 and [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Microsoft Cloud App Security:
+By default, the following Office 365 and [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
 
 - **Global administrator and Security administrator:** Admins with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions.
 
@@ -79,11 +79,15 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Security extensions - Permissions only for API token with users in the group
   - Governance actions - Only for the specific users in the group
 
+- **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
+
+Additionally, the following Cloud App Security admin roles have access to Cloud App Security:
+
 - **Cloud Discovery global admin:**  Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has access as follows:
 
-  - Settings - 
-     -  System settings - View only
-     - Cloud Discovery settings - View and edit all (anonymization permissions depend on whether it was allowed during role assignment)
+  - Settings
+    - System settings - View only
+    - Cloud Discovery settings - View and edit all (anonymization permissions depend on whether it was allowed during role assignment)
   - Cloud Discovery activity - full permissions
   - Alerts - only alerts related to Cloud Discovery data
   - Policies - Can view all policies and can edit or create only Cloud Discovery policies
@@ -98,8 +102,6 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
 - **Cloud Discovery report admin:** Has permissions to view all the data in Microsoft Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog.
 This admin will not have access to the **Activities** or **Files** pages and limited access to policies.
 
-- **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
- 
 ## Override admin permissions
 
 If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions.
