@@ -4,10 +4,10 @@
 title: Enable the log collector behind a proxy - Cloud App Security | Microsoft Docs
 description: This article provides information about how to enable the Cloud App Security Cloud Discovery log collector from behind a proxy.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -30,8 +30,8 @@ ms.custom: seodec18
 
 After you configured the log collector, if you are running behind a proxy, the log collector might have trouble sending data to Cloud App Security. This may happen because the log collector doesn't trust the proxy's root certificate authority and is not able to connect to Microsoft Cloud App Security to retrieve its configuration or upload the received logs.
 
->[!NOTE] 
-> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Troubleshooting the Microsoft Cloud App Security Cloud Discovery deployment](troubleshoot-docker.md).
+>[!NOTE]
+> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Log collector FTP configuration](log-collector-ftp.md).
 >
 
 ## Set up the log collector behind a proxy
@@ -45,7 +45,6 @@ In the shell, verify that the container was created and is running using the fol
     bash
     docker ps
 
-
 ![docker ps](./media/docker-1.png "docker ps")
 
 ### Copy proxy root CA certificate to the container
@@ -55,7 +54,6 @@ Run the command on the Ubuntu host. It copies the certificate to a folder in the
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
-
 
 ### Set the configuration to work with the CA certificate
 
@@ -74,12 +72,10 @@ Run the command on the Ubuntu host. It copies the certificate to a folder in the
        bash
        ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
 
-
 4. Validate that the certificate was imported correctly into the CA keystore, by using the following command to search for the alias you provided during the import (*SelfSignedCert*):
 
        bash
        ./keytool --list --keystore ../lib/security/cacerts | grep self
-
 
 ![keytool](./media/docker-2.png "keytool")
 
@@ -87,7 +83,7 @@ You should see your imported proxy CA certificate.
 
 ### Set the log collector to run with the new configuration
 
-The container is now ready. 
+The container is now ready.
 
 Run the **collector_config** command using the API token that you used during the creation of your log collector:
 
@@ -108,13 +104,8 @@ The log collector is now able to communicate with Cloud App Security. After send
 >[!NOTE]
 > If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Cloud App Security portal.
 
+## Next steps
 
+[User activity policies](user-activity-policies.md)
 
- 
-  
-## Next steps 
-[User activity policies](user-activity-policies.md)   
-
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
-  
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)

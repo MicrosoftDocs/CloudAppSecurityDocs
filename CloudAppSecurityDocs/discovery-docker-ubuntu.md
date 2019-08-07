@@ -4,10 +4,10 @@
 title: Configure automatic log upload using on-premise Docker
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or RHEL in an on-premises server.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -56,7 +56,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1. Go to the **Automatic log upload** settings page. 
+1. Go to the **Automatic log upload** settings page.
 
      a. In the Cloud App Security portal, click the settings icon followed by **Log collectors**.
 
@@ -67,9 +67,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      a. Click **Add data source**.
 
       ![Add a data source](./media/add-data-source.png)
-          
+
      b. **Name** your proxy or firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
@@ -77,7 +77,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      d. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
 
      e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
-     
+
      >[!NOTE]
      >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
@@ -108,6 +108,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
    ![Create log collector](./media/windows7.png)
 
 ### Step 2 – On-premises deployment of your machine
+
 The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
 
 1. Open a terminal on your Ubuntu machine.
@@ -115,7 +116,7 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
 2. Change to root privileges using the command: `sudo -i`
 
 3. To bypass a proxy in your network, run the following two commands:
-        
+
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
@@ -127,7 +128,7 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
 
     > [!NOTE] 
     > If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
-    
+
    ![ubuntu5](./media/ubuntu5.png)
 
 5. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
@@ -162,15 +163,14 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**. 
+1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
 2. Click the **Create report** button and fill in the fields.
-3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
+3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
 ![Custom continuous report](./media/custom-continuous-report.png)
 
 ## Next steps
 
-[Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
+[Log collector FTP configuration](log-collector-ftp.md)
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
-
