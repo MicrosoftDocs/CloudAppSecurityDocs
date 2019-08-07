@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -30,7 +30,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or Red Hat Enterprise Linux (RHEL) in Azure. This article describes how to set up the automatic log upload. 
+You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or Red Hat Enterprise Linux (RHEL) in Azure. This article describes how to set up the automatic log upload.
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1. Go to the **Automatic log upload** settings page. 
+1. Go to the **Automatic log upload** settings page.
 
      a. In the Cloud App Security portal, click the settings icon followed by **Log collectors**.
 
@@ -77,7 +77,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      d. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
 
      e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
-     
+
      >[!NOTE]
      >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
@@ -85,7 +85,6 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      - Monitor the status of each device separately, for investigation purposes.
      - Explore Shadow IT Discovery per device, if each device is used by a different user segment.
 
-     
 3. Go to the **Log collectors** tab at the top.
 
      a. Click **Add log collector**.
@@ -113,8 +112,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 > [!NOTE]
 > The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
 
-
-1. Create a new Ubuntu machine in your Azure environment. 
+1. Create a new Ubuntu machine in your Azure environment.
 2. After the machine is up, open the ports by:
 
      a. In the machine view, go to **Networking** select the relevant interface by double-clicking on it.
@@ -122,9 +120,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      b. Go to **Network security group** and select the relevant network security group.
 
      c. Go to **Inbound security rules** and click **Add**,
-      
+
       ![Ubuntu Azure](./media/ubuntu-azure.png)
-    
+
      d. Add the following rules (in **Advanced** mode):
 
       |Name|Destination port ranges|Protocol|Source|Destination|
@@ -133,7 +131,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
       |caslogcollector_ftp_passive|20000-20099|TCP|<Your appliance's IP address's subnet>|Any|
       |caslogcollector_syslogs_tcp|601-700|TCP|<Your appliance's IP address's subnet>|Any|
       |caslogcollector_syslogs_udp|514-600|UDP|<Your appliance's IP address's subnet>|Any|
-      
+
       ![Ubuntu Azure rules](./media/inbound-rule.png)
 
 3. Go back to the machine and click **Connect** to open a terminal on the machine.
@@ -141,7 +139,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 4. Change to root privileges using `sudo -i`.
 
 5. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the following command:
-        
+
        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
      ![Ubuntu Azure command](./media/ubuntu-azure-command.png)
@@ -151,7 +149,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
       ![Ubuntu Azure](./media/windows7.png)
 
 7. Run the command to deploy the log collector.
-     
+
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Ubuntu proxy](./media/ubuntu-proxy.png)
@@ -187,7 +185,7 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
      ![Custom continuous report](./media/custom-continuous-report.png)
 
 ## Next steps
-[Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
+
+[Log collector FTP configuration](log-collector-ftp.md)
 
 [Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
-
