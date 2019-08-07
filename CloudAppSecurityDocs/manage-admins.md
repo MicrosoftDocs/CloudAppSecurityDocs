@@ -53,6 +53,10 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Accessing and viewing the Governance log 
   - Accessing and viewing the Manage snapshot reports page 
 
+- **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
+
+Additionally, the following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
+
 - **App/instance admin:** Has full or read-only permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
   - Activities page - Only activities about the specific app
@@ -78,10 +82,6 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Cloud Discovery activity - No permissions
   - Security extensions - Permissions only for API token with users in the group
   - Governance actions - Only for the specific users in the group
-
-- **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
-
-Additionally, the following Cloud App Security admin roles have access to Cloud App Security:
 
 - **Cloud Discovery global admin:**  Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has access as follows:
 
