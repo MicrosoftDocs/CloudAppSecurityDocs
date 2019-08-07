@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/10/2019
+ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -72,9 +72,9 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      a. Click **Add data source**.
 
       ![Add a data source](./media/add-data-source.png)
-          
+
      b. **Name** your proxy or firewall.
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
@@ -82,7 +82,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
      d. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
 
      e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
-     
+
      >[!NOTE]
      >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
@@ -182,7 +182,6 @@ If the digital signature is not valid, it will say **This digital signature is n
 
 ## Next steps
 
-[Troubleshooting Cloud Discovery docker deployment](troubleshoot-docker.md)
+[Log collector FTP configuration](log-collector-ftp.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
-
