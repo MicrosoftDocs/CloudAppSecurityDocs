@@ -43,7 +43,7 @@ The following dashboards are available to help you investigate apps in your clou
 |App dashboard: insights<br />*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level|
 |App dashboard: files<br />*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
 |App dashboard: accounts|Overview of all accounts/users linked to the app|
-|App dashboard: OAuth apps<br />*(where applicable)*|Drill down into third-party apps currently deployed, like G Suite, and have defined policies|
+|App dashboard: OAuth apps<br />*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies|
 |App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
 |App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
 |App dashboard: special privileged accounts<br />*(Salesforce only)*|Overview of users by privileged user type.|
