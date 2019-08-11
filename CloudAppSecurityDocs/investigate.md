@@ -4,10 +4,10 @@
 title: Investigate cloud app risks & suspicious activity - Cloud App Security | Microsoft Docs
 description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -37,17 +37,17 @@ The following dashboards are available to help you investigate apps in your clou
 
 |Dashboard|Description|
 |---------------|-----------------|
-|Main dashboard|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations)|
-|App dashboard: overview|Overview of app usage per location, usage graphs per number of users|
-|App dashboard: info|Information about app details, security, and compliance|
-|App dashboard: insights<br />*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level|
+|Main dashboard|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations).|
+|App dashboard: overview|Overview of app usage per location, usage graphs per number of users.|
+|App dashboard: info|Information about app details, security, and compliance.|
+|App dashboard: insights<br />*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level.|
 |App dashboard: files<br />*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
-|App dashboard: accounts|Overview of all accounts/users linked to the app|
-|App dashboard: OAuth apps<br />*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies|
+|App dashboard: accounts|Overview of all accounts/users linked to the app.|
+|App dashboard: OAuth apps<br />*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies.|
 |App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
 |App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
 |App dashboard: special privileged accounts<br />*(Salesforce only)*|Overview of users by privileged user type.|
-|User dashboard|A complete overview of the user profile in the cloud, including groups, locations, recent activities, related alerts, and browsers used|
+|User dashboard|A complete overview of the user profile in the cloud, including groups, locations, recent activities, related alerts, and browsers used.|
 
 ##  <a name="sanctionapp"></a> Tag apps as sanctioned or unsanctioned
 An important step to understanding your cloud is to tag apps as sanctioned or unsanctioned. After you sanction an app, you can filter for apps that aren't sanctioned and start migration to sanctioned apps of the same type.
