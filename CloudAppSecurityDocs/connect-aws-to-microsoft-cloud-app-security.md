@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/1/2019
+ms.date: 8/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -124,6 +124,7 @@ Since you can add either or both of the connections, the steps in this article a
 1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
     **For a new connector**
+
     1. Click the plus sign followed by **Amazon Web Services**.
 
         ![connect AWS](media/connect-aws.png "connect AWS")
@@ -137,9 +138,14 @@ Since you can add either or both of the connections, the steps in this article a
         ![Connect AWS app security auditing](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
     **For an existing connector**
+
     1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security auditing**.
 
+        ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/aws-connect-app-edit-audit.png)
+
     1. On the Connect Amazon Web Services page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
+
+        ![Connect AWS app security auditing](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
 
 1. Make sure the connection succeeded by clicking **Test API**.  
 
@@ -190,11 +196,11 @@ Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-a
     **For an existing connector**
     1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security configuration**.
 
-        ![Screenshot of the Connected Apps page, showing edit Security Configuration link](media/aws-connect-app-edit.png)
+        ![Screenshot of the Connected Apps page, showing edit Security Configuration link](media/aws-connect-app-edit-config.png)
 
     1. On the Connect Amazon Web Services page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-        ![Connect AWS app security configuration](media/aws-connect-app-edit-creds.png "Connect AWS app security configuration")
+        ![Connect AWS app security configuration](media/aws-connect-app-edit-config-creds.png "Connect AWS app security configuration")
 
 1. Make sure the connection succeeded by clicking **Test API**.  
 
