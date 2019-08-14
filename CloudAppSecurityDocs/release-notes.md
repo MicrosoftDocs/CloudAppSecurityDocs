@@ -41,7 +41,7 @@ Released August 4, 2019
 - **New policy templates**<br>
 Cloud App Security now includes new built-in Activity policy templates for AWS security best practices.
 
-- **End of support for TLS 1.0 and 1.1**<br>
+- **Notice: End of support for TLS 1.0 and 1.1 on September 8**<br>
 Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
 
 <!-- **Workday app connector available (Preview)**<br>
