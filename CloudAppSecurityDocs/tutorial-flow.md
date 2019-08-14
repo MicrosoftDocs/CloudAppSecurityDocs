@@ -34,7 +34,7 @@ If you don’t have a Flow plan, [sign up for a free trial account](https://flow
 
 ## Run an antivirus scan using Microsoft Defender ATP
 
-This following steps guide you through creating a flow that runs an antivirus scan and adding it to a policy that detects suspicious behavior. When an alert for suspicious behavior is raised for a machine, it triggers the flow that runs the antivirus scan on the machine that is suspected of being compromised.
+This following steps guide you through creating a flow that runs an antivirus scan and adding it to a policy that detects suspicious behavior. When an alert for suspicious behavior is raised for a user, it triggers the flow that runs an antivirus scan on the machine used by the user suspected of being compromised.
 
 ### Step 1: Create a flow to run an antivirus scan
 
@@ -49,7 +49,7 @@ This following steps guide you through creating a flow that runs an antivirus sc
     ![Screenshot of the templates Flow page, showing the sign in process.](media/tutorial-flow-templates-signin.png)
 
 > [!TIP]
-> Keep this page open to that you can
+> Keep this page open to that you can return to it later.
 
 ### Step 2: Create a Cloud App Security connector
 
