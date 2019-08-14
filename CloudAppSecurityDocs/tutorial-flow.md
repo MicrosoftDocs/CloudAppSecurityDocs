@@ -5,7 +5,7 @@ author: ShlomoSagir-MS
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 8/12/2019
+ms.date: 8/14/2019
 ---
 
 # Tutorial: Automate alerts to protect endpoints
@@ -49,7 +49,7 @@ This following steps guide you through creating a flow that runs an antivirus sc
     ![Screenshot of the templates Flow page, showing the sign in process.](media/tutorial-flow-templates-signin.png)
 
 > [!TIP]
-> Keep this page open to that you can return to it later.
+> Keep this page open, you'll need it later.
 
 ### Step 2: Create a Cloud App Security connector
 
