@@ -72,17 +72,18 @@ This following steps guide you through creating a flow that runs an antivirus sc
     ![Screenshot of the templates Flow page, showing the create in process.](media/tutorial-flow-templates-create.png)
 1. In the **Cloud App Security** pop-up window, enter the connection name (for example, "Cloud App Security Token"), paste the API token you copied, and then click **Create**.
     ![Screenshot of the Cloud App Security window, showing the name and key entry and create button.](media/tutorial-flow-token-generate.png)
-1. Click **Continue** to connect to Azure Active Directory.
-    ![Screenshot of the templates Flow window, showing the completed actions and continue button.](media/tutorial-flow-templates-continue.png)
+1. In the list of apps, on the row in which **HTTP with Azure AD** appears, choose the three dots at the end of the row, and then click **Add new connection**.
 1. In the **HTTP with Azure AD** pop-up window, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then click **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
-    ![Screenshot of the HTTP with Azure AD window, showing the Resource fields and sign in button.](media/tutorial-flow-templates-continue.png)
+    ![Screenshot of the HTTP with Azure AD window, showing the Resource fields and sign in button.](media/tutorial-flow-templates-azure.png)
+1. Click **Continue**.
+    ![Screenshot of the templates Flow window, showing the completed actions and continue button.](media/tutorial-flow-templates-continue.png)
 1. Once all the connecters are successfully connected, on the flow's page under **Apply to each machine**, optionally modify the comment and scan type, and then click **Save**.
-    ![Screenshot of the flow page, showing the scan setting section.](media/tutorial-flow-templates-continue.png)
+    ![Screenshot of the flow page, showing the scan setting section.](media/tutorial-flow-templates-scan.png)
 
 ### Step 4: Apply the flow to a policy
 
 1. In Cloud App Security, edit the policy where you want to add the antivirus flow, and under **Alerts**, select **Send alerts to Flow**, and then select **Run antivirus scan using Windows Defender upon a Cloud App Security alert**.
-    ![Screenshot of the policy page, showing the alerts settings section.](media/tutorial-flow-templates-continue.png)
+    ![Screenshot of the policy page, showing the alerts settings section.](media/tutorial-flow-templates-alerts.png)
 
 ## Next steps
 
