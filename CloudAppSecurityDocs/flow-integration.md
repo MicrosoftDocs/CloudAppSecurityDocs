@@ -36,7 +36,7 @@ Cloud App Security integrates with [Microsoft Flow](https://docs.microsoft.com/f
 
 ## Prerequisites 
 
- - You must have a valid [Microsoft Flow plan](https://flow.microsoft.com/en-us/pricing)
+ - You must have a valid [Microsoft Flow plan](https://flow.microsoft.com/pricing)
 
 ## How it works
 
