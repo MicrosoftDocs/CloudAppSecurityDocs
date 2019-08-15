@@ -35,6 +35,8 @@
     href: use-case-admin-quarantine.md
   - name: Apply Azure Information Protection labels automatically
     href: use-case-information-protection.md
+  - name: Automate alerts to protect endpoints
+    href: tutorial-flow.md
 - name: Concepts
   items:
   - name: Protect apps with Conditional Access App Control
