@@ -5,7 +5,7 @@ author: ShlomoSagir-MS
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 8/14/2019
+ms.date: 8/15/2019
 ---
 
 # Tutorial: Automate alerts to protect endpoints
@@ -58,7 +58,7 @@ This following steps guide you through creating a flow that runs an antivirus sc
 
 1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Security extensions**.
 1. In the **Security extensions** page, click the plus button to generate a new API token.
-1. In the **Generate new token** pop-up window, enter the token name (for example, "Flow-Token"), and then click **Generate**. 
+1. In the **Generate new token** pop-up window, enter the token name (for example, "Flow-Token"), and then click **Generate**.
     ![Screenshot of the token window, showing the name entry and generate button.](media/tutorial-flow-token-generate.png)
 1. Once the token is generated, click the copy icon to the right of the generated token, and then click **Close**. You'll need the token later.
     ![Screenshot of the token window, showing the token and the copy process.](media/tutorial-flow-token-copy.png)
