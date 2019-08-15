@@ -38,7 +38,7 @@ Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank
 Cloud App Security now provides you with greater visibility into unclassified activities performed by apps in your environment. These activities are available in the Activity log and also in Activity policies. To see unclassified activities, in the **Type** filter select **Unspecified**. For more information about activity filters, see [Activity filters and queries](activity-filters-queries.md).
 
 - **Risky user investigation enhancement**<br>
-Cloud App Security provides the ability to identify risky users on the **Users and accounts** page by specific groups, apps, and even roles. Now you can also investigate your organization users in by their **Investigation priority** score. For more information, see [Understand the investigation priority score](tutorial-ueba.md#understand-the-investigation-priority-score-a-name-risk-scorea).
+Cloud App Security provides the ability to identify risky users on the **Users and accounts** page by specific groups, apps, and even roles. Now you can also investigate your organization users in by their **Investigation priority** score. For more information, see [Understand the investigation priority score](tutorial-ueba.md#risk-score).
 
 - **Activity policy enhancements**<br>
 You can now create activity policy alerts based on activity object. For example, this capability allows you to create alerts on changes to Azure Active Directory administrative roles. For more information about activity objects, see [Activity filters](activity-filters-queries.md#activity-filters).
