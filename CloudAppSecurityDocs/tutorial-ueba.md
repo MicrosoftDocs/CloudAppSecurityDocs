@@ -39,8 +39,7 @@ This tutorial provides instructions for using Cloud App Security to investigate 
 > * 3: [Further investigate users](#investigate)
 > * 4: [Protect your organization](#protect)
 
-
-## Understand the investigation priority score <a name ="risk-score"></a>
+## Understand the investigation priority score<a name="risk-score"></a>
 
 The investigation priority score is a score Cloud App Security gives to each user to let you know how risky a user is relative to other users in your organization.
     
