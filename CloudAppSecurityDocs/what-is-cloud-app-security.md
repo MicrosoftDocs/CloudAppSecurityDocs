@@ -5,9 +5,9 @@ title: What is Cloud App Security?
 description: This article describes Microsoft Cloud App Security and how it works.
 keywords:
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/17/2019
+ms.date: 8/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -75,7 +75,7 @@ For more information about Cloud Discovery, see [Set up Cloud Discovery](set-up-
 
 ### Sanctioning and unsanctioning an app  
 
-You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 16,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is. Scoring is based on over 70 risk factors that might affect your environment.  
+You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 16,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is. Scoring is based on over 80 risk factors that might affect your environment.  
 
 ### App connectors
 
