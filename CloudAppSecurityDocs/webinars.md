@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Webinar listing - Cloud App Security | Microsoft Docs
-description: Displays a listing of past webinars, including time, date and topics covered.
+description: Displays a listing of past webinars, including time, date, and subject covered.
 author: ShlomoSagir-MS
 ms.author: shsagir
 ms.service: cloud-app-security
@@ -12,13 +12,11 @@ ms.date: 8/19/2019
 ms.collection: M365-security-compliance
 ---
 
-# Microsoft Cloud App Security webinar listing
+# Microsoft Cloud App Security webinars
 
 *Applies to: Microsoft Cloud App Security*
 
-These webinars can help you to leverage the features and functions of Microsoft Cloud App Security.
-
-If you were unable to join us live, but have questions about something covered in a webinar, you can ask them on our [webinar Q&A](https://aka.ms/MCASQandA) site, or, as always, feel free to make a post on our [Tech Community group](https://go.microsoft.com/fwlink/?linkid=2101418) with your question.
+These webinars can help you to learn more about the features and capabilities of Microsoft Cloud App Security.
 
 To hear about our future webinars and other developments, join the Cloud App Security community at [https://aka.ms/SecurityCommunity](https://aka.ms/SecurityCommunity).
 
@@ -32,7 +30,9 @@ Watch recorded sessions at any time
 | **Threat detection** [Watch now](https://youtu.be/MbLHpTd4eE4) |
 | **Conditional Access App Control** [Watch now](https://youtu.be/CNTLbZvi_fs) |
 | **App Discovery and Log Collector Configuration** [Watch now](https://youtu.be/6SwTGf1HTYI) |
-| **Connecting 3rd party Applications** [Watch now](https://youtu.be/Tk0tnPvx6_M) |
+| **Connecting third-party Applications** [Watch now](https://youtu.be/Tk0tnPvx6_M) |
 | **Automation and integration with Microsoft Flow** [Watch now](https://youtu.be/M-JTAk4SDUQ) |
 
-To receive updates for our webinar recordings you can subscribe to our [YouTube channel](https://aka.ms/YouTubeSecurityCommunity).
+If you have questions about something covered in any of these webinars, you can ask them on our [webinar Q&A](https://aka.ms/MCASQandA) site.
+
+To receive updates for our webinar recordings, you can subscribe to our [YouTube channel](https://aka.ms/YouTubeSecurityCommunity).
