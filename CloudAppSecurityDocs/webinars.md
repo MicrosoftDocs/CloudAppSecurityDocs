@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-These webinars can help you to learn more about the features and capabilities of Microsoft Cloud App Security.
+View this six-part webinar series to learn more about Microsoft Cloud App Security key use cases and deployment best practices to help you better secure your cloud environments.
 
 To hear about our future webinars and other developments, [join the Cloud App Security community](https://aka.ms/SecurityCommunity).
 
@@ -32,7 +32,5 @@ Watch recorded sessions at any time
 | **App discovery and log collector configuration** [Watch now](https://youtu.be/6SwTGf1HTYI) |
 | **Connecting third-party apps** [Watch now](https://youtu.be/Tk0tnPvx6_M) |
 | **Automation and integration with Microsoft Flow** [Watch now](https://youtu.be/M-JTAk4SDUQ) |
-
-If you have questions about something covered in any of these webinars, you can ask them on our [webinar Q&A](https://aka.ms/MCASQandA) site.
 
 To receive updates for our webinar recordings, you can subscribe to our [YouTube channel](https://aka.ms/YouTubeSecurityCommunity).
