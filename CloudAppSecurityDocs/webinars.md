@@ -24,13 +24,13 @@ To hear about our future webinars and other developments, [join the Cloud App Se
 
 Watch recorded sessions at any time
 
-| |
-| --- |
-| **Information protection** [Watch now](https://youtu.be/DCXNJmcMBI4) |
-| **Threat detection** [Watch now](https://youtu.be/MbLHpTd4eE4) |
-| **Conditional Access App Control** [Watch now](https://youtu.be/CNTLbZvi_fs) |
-| **App discovery and log collector configuration** [Watch now](https://youtu.be/6SwTGf1HTYI) |
-| **Connecting third-party apps** [Watch now](https://youtu.be/Tk0tnPvx6_M) |
-| **Automation and integration with Microsoft Flow** [Watch now](https://youtu.be/M-JTAk4SDUQ) |
+| Title | Learn about |
+| --- | --- | --- |
+| **Information protection**<br>[Watch now](https://youtu.be/DCXNJmcMBI4) | - Protecting your cloud data<br>- Real-time monitoring and control<br>- Best practices for connecting your apps, identify data types, auditing your environment, and remediating with governance actions |
+| **Threat detection**<br>[Watch now](https://youtu.be/MbLHpTd4eE4) | - Protecting against cloud threats<br>- Detecting threats *across* cloud apps<br>- Detecting malware<br>- OAuth app permissions<br>- Configuring alerts in policies |
+| **Conditional Access App Control**<br>[Watch now](https://youtu.be/CNTLbZvi_fs) | - Conditional Access App Control<br>- Azure Active Directory Conditional Access integration<br>- Protecting your environment |
+| **App discovery and log collector configuration**<br>[Watch now](https://youtu.be/6SwTGf1HTYI) | - How discovery works<br>- The Shadow IT discovery lifecycle<br>- Extending integration with secure web gateways<br>- Discovery using log collectors |
+| **Connecting third-party apps**<br>[Watch now](https://youtu.be/Tk0tnPvx6_M) | How to connect to third-party apps using:<br>- APIs<br>- OAuth<br>- Conditional Access App Control<br>- Azure Active Directory App Proxy |
+| **Automation and integration with Microsoft Flow**<br>[Watch now](https://youtu.be/M-JTAk4SDUQ) | How to extend Cloud App Security with Microsoft Flow to automate advanced remediation scenarios |
 
 To receive updates for our webinar recordings, you can subscribe to our [YouTube channel](https://aka.ms/YouTubeSecurityCommunity).
