@@ -35,7 +35,7 @@
     href: use-case-admin-quarantine.md
   - name: Apply Azure Information Protection labels automatically
     href: use-case-information-protection.md
-  - name: Automate alerts to protect endpoints
+  - name: Extending governance to coordinate remediation with endpoints
     href: tutorial-flow.md
 - name: Concepts
   items:
