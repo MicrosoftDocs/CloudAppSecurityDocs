@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.date: 8/22/2019
 ---
 
-# Tutorial: Extending Cloud App Security governance to coordinate remediation with endpoints
+# Tutorial: Extending governance to coordinate remediation with endpoints
 
 Cloud App Security provides predefined governance options for policies, such as suspend a user or make a file private. With Microsoft Flow, you can use a large ecosystem of software as a service (SaaS) connectors to build workflows to automate processes. Using predefined or custom workflows as policy governance actions, you can extend Cloud App Security remediation capabilities.
 
