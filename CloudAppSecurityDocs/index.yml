@@ -57,6 +57,14 @@ sections:
         src: https://docs.microsoft.com/media/common/i_event.svg
       text: Work with discovered apps
       href: discovered-apps.md
+    - image: 
+        src: https://docs.microsoft.com/media/common/i_video.svg
+      text: Watch our webinars
+      href: webinars.md
+    - image: 
+        src: https://docs.microsoft.com/media/common/i_library.svg
+      text: Read our e-books
+      href: e-books.md
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
