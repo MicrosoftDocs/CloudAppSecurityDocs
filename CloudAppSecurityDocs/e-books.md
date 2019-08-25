@@ -30,4 +30,4 @@ Read our e-books to learn more about Microsoft Cloud App Security, its key use c
 ## Next steps
 
 > [!div class="nextstepaction"]
-[webinars](webinars.md)
+[Watch our webinars](webinars.md)

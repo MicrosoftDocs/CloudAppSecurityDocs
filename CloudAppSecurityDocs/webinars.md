@@ -40,4 +40,4 @@ To receive updates for our webinar recordings, you can subscribe to our [YouTube
 ## Next steps
 
 > [!div class="nextstepaction"]
-[e-books](e-books.md)
+[Read our e-books](e-books.md)
