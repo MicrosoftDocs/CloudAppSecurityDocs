@@ -42,6 +42,16 @@ sections:
       image: 
         src: /office/media/icons/caret-right-blue.svg
         href: https://docs.microsoft.com/microsoft-365/
+    - title: Watch our webinars
+      href: webinars.md
+      image: 
+        src: https://docs.microsoft.com/media/common/i_video.svg
+        href: webinars.md
+    - title: Read our e-books
+      href: e-books.md
+      image: 
+        src: https://docs.microsoft.com/media/common/i_library.svg
+        href: e-books.md
 - title: 5-Minute Quickstarts
   items:
   - type: paragraph
@@ -57,14 +67,6 @@ sections:
         src: https://docs.microsoft.com/media/common/i_event.svg
       text: Work with discovered apps
       href: discovered-apps.md
-    - image: 
-        src: https://docs.microsoft.com/media/common/i_video.svg
-      text: Watch our webinars
-      href: webinars.md
-    - image: 
-        src: https://docs.microsoft.com/media/common/i_library.svg
-      text: Read our e-books
-      href: e-books.md
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
