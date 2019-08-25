@@ -40,7 +40,7 @@ sections:
     - title: Explore Microsoft 365, a complete solution that includes Cloud App Security
       href: https://docs.microsoft.com/microsoft-365/
       image: 
-        src: /office/media/icons/caret-right-blue.svg
+        src: https://docs.microsoft.com/office/media/icons/caret-right-blue.svg
         href: https://docs.microsoft.com/microsoft-365/
     - title: Watch our webinars
       href: webinars.md
