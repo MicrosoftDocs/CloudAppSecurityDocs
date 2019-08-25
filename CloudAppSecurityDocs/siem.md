@@ -7,26 +7,22 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/11/2019
+ms.date: 8/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 
 
 # optional metadata
 
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: reutam
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
 ---
+
 # SIEM integration
 
 *Applies to: Microsoft Cloud App Security*
@@ -37,8 +33,6 @@ When you first integrate your SIEM with Cloud App Security, activities and alert
 
 > [!IMPORTANT]
 > If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
-
-
 
 ## SIEM integration architecture
 
@@ -56,21 +50,20 @@ Cloud App Security currently supports Micro Focus ArcSight and generic CEF.
 ## How to integrate
 
 Integrating with your SIEM is accomplished in three steps:
-1. Set it up in the Cloud App Security portal. 
+
+1. Set it up in the Cloud App Security portal.
 2. Download the JAR file and run it on your server.
 3. Validate that the SIEM agent is working.
 
 ### Prerequisites
 
 - A standard Windows or Linux server (can be a virtual machine).
-- The server must be running Java 8; earlier versions aren't supported.
 - OS: Windows or Linux
 - CPU: 2
 - Disk space: 20 GB
 - RAM: 2 GB
 - The server must be running Java 8. Earlier versions aren't supported.
 - Set your firewall as described in [Network requirements](network-requirements.md)
- 
 
 ## Integrating with your SIEM
 
@@ -79,31 +72,25 @@ Integrating with your SIEM is accomplished in three steps:
 1. In the Cloud App Security portal, under the Settings cog, click Security extensions, and then click on the **SIEM agents** tab.
 
 2. Click the plus icon to start the **Add SIEM agent** wizard.
-3. In the wizard, click **Start Wizard**.   
-4. In the wizard, fill in a name, and **Select your SIEM format** and set any **Advanced settings** that are relevant to that format. 
-   Click **Next**.
+3. In the wizard, click **Start Wizard**.
+4. In the wizard, fill in a name, and **Select your SIEM format** and set any **Advanced settings** that are relevant to that format. Click **Next**.
 
    ![General SIEM settings](./media/siem1.png)
 
 5. Type in the IP address or hostname of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
-   You can work with your security admin to get these details if you don't have them.
-   Click **Next**.
+   You can work with your security admin to get these details if you don't have them. Click **Next**.
 
    ![Remote Syslog settings](./media/siem2.png)
 
-6. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. 
-   Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server.
-   Click **Edit and preview results** to check that the filter works as expected. 
-   Click **Next**. 
+6. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server. Click **Edit and preview results** to check that the filter works as expected. Click **Next**. 
 
    ![Data types settings](./media/siem3.png)
 
-7. Copy the token and save it for later. 
+7. Copy the token and save it for later.
    Click Finish and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
 
 > [!NOTE]
 > Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid.
-
 
 ### Step 2: Download the JAR file and run it on your server
 
@@ -121,17 +108,17 @@ Integrating with your SIEM is accomplished in three steps:
 >   - Linux: Add the run command with an **&** to the rc.local file. For example: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Where the following variables are used:
+
 - DIRNAME is the path to the directory you want to use for local agent debug logs.
 - ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the Internet.
 - TOKEN is the SIEM agent token you copied in the previous step.
 
 You can type -h at any time to get help.
 
-
-## Sample activity logs<a name="siem-samples"></a>
-
+#### Sample activity logs<a name="siem-samples"></a>
 
 The following are sample activity logs sent to your SIEM:
+
 ```
 2017-11-22T17:50:04.000Z CEF:0|MCAS|SIEM_Agent|0.111.85|EVENT_CATEGORY_LOGOUT|Log out|0|externalId=1511373015679_167ae3eb-ed33-454a-b548-c2ed6cea6ef0 rt=1511373004000 start=1511373004000 end=1511373004000 msg=Log out suser=admin@contoso.com destinationServiceName=ServiceNow dvc=13.82.149.151 requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511373015679_167ae3eb-ed33-454a-b548-c2ed6cea6ef0,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
 
@@ -161,8 +148,8 @@ The following text is an alerts logfile example:
 
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
 ```
-#### Sample Cloud App Security alerts in CEF format
 
+#### Sample Cloud App Security alerts in CEF format
 
 |   Applicable to   |      CEF field name      |                                                   Description                                                   |
 |-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -188,11 +175,10 @@ The following text is an alerts logfile example:
 1. Make sure the status of the SIEM agent in the Cloud App Security portal isn't **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours. The status shows as **Disconnected** if the connection is down for over 12 hours.
  ![SIEM disconnected](./media/siem-not-connected.png)
 
-   Instead, the status should be connected, as seen here:
+    Instead, the status should be connected, as seen here:
     ![SIEM connected](./media/siem-connected.png)
 
 2. In your Syslog/SIEM server, make sure you see activities and alerts arriving from Cloud App Security.
-
 
 ## Regenerating your token
 
@@ -215,11 +201,8 @@ To delete the SIEM agent, click on the three dots at the end of the row for the 
 > [!NOTE]
 > This feature is in public preview.
 
-
-
 ## Next steps
-  
-[Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[Troubleshooting SIEM integration issues](troubleshooting-siem.md)
 
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
