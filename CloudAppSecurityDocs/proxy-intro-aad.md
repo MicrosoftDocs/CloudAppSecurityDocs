@@ -7,22 +7,17 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/2/2019
+ms.date: 8/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 
 # optional metadata
 
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: reutam
 ms.suite: ems
-#ms.tgt_pltfrm:
 ms.custom: seodec18
 ---
 # Protect apps with Microsoft Cloud App Security Conditional Access App Control
@@ -78,7 +73,7 @@ Conditional Access App Control enables you to create policies that take into acc
 ### Compliant and domain joined devices
 
 Azure AD conditional access enables compliant and domain-joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter.
-For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). 
+For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 ### Client-certificate authenticated devices
 
@@ -93,6 +88,9 @@ When a client certificate check is performed, Cloud App Security checks for the 
 1. The selected client certificate is valid and is under the correct root or intermediate CA.
 1. The certificate is not revoked (if CRL is enabled).
 
+> [!NOTE]
+> Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
+
 For information on how to deploy client certificates see [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md).
 
 ## Supported apps and clients
@@ -101,7 +99,10 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 > [!NOTE]
 > Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
 
-**Session control is available for any browser on any major platform on any operating system**. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Mobile apps and desktop apps can also be blocked or allowed.
+**Session control is available for any browser on any major platform on any operating system**. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
+
+> [!NOTE]
+> Using the **Client app** filter in access policies can cause the resulting user session to be proxied by Cloud App Security.
 
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client applications and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
@@ -143,6 +144,7 @@ If you're interested in a specific app being featured, [send us details about th
 [NEXT: Deploy Conditional Access App Control »](proxy-deployment-aad.md)
 
 ## Next steps
+
 [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
