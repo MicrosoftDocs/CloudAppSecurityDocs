@@ -31,7 +31,7 @@ landingContent:
             url: cas-compliance-trust.md
       - linkListType: whats-new
         links:
-          - text: Release
+          - text: Releases
             url: release-notes.md
       - linkListType: learn
         links:
