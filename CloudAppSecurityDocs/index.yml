@@ -21,11 +21,11 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About [service]
+  - title: About Cloud App Security
     linkLists:
       - linkListType: overview
         links:
-          - text: What is [service]?
+          - text: What is Cloud App Security?
             url: what-is-cloud-app-security.md
           - text: Data security and privacy
             url: cas-compliance-trust.md
@@ -35,14 +35,14 @@ landingContent:
             url: release-notes.md
       - linkListType: learn
         links:
+          - text: Read our e-books
+            url: e-books.md
           - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
             url: https://docs.microsoft.com/microsoft-365/
       - linkListType: video
         links:
           - text: Watch our webinars
             url: webinars.md
-          - text: Read our e-books
-            url: e-books.md
 
   # Card (optional)
   - title: Get started
