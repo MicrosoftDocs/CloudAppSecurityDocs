@@ -1,71 +1,97 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft Cloud App Security
+### YamlMime:Landing
+
+title: Microsoft Cloud App Security documentation # < 60 chars
+summary: Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. # < 160 chars
+
 metadata:
-  title: Microsoft Cloud App Security| Microsoft Docs
-  description: Provide enterprise-grade security for your cloud apps with Microsoft Cloud App Security, for deeper visibility, comprehensive controls, and enhanced protection against cloud security issues.
-  author: ShlomoSagir-MS
-  manager: angrobe
-  ms.prod: cloud-app-security
-  ms.tgt_pltfrm: na
-  ms.devlang: na
-  ms.topic: landing-page
-  ms.date: 21/8/2019
-  ms.author: ShlomoSagir-MS
-  ms.service: cloud-app-security
-  layout: LandingPage
-abstract:
-  description: Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
-sections:
-- title: Learn More
-  items:
-  - type: list
-    style: cards
-    className: cardsFTitle
-    items:
-    - title: Learn More about Microsoft Cloud App Security.
-      href: what-is-cloud-app-security.md
-      image: 
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-        href: what-is-cloud-app-security.md
-    - title:  MCAS data security and privacy
-      href: cas-compliance-trust.md
-      image: 
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-        href: cas-compliance-trust.md
-    - title:  What's New with MCAS
-      href: release-notes.md
-      image: 
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-        href: release-notes.md
-    - title: Explore Microsoft 365, a complete solution that includes Cloud App Security
-      href: https://docs.microsoft.com/microsoft-365/
-      image: 
-        src: /office/media/icons/caret-right-blue.svg
-        href: https://docs.microsoft.com/microsoft-365/
-- title: 5-Minute Quickstarts
-  items:
-  - type: paragraph
-    text: Learn the fundamentals of Microsoft Cloud App Security.
-  - type: list
-    style: icon48
-    items: 
-    - image: 
-        src: https://docs.microsoft.com/media/common/i_design.svg
-      text: Get started with Microsoft Cloud App Security
-      href: getting-started-with-cloud-app-security.md
-    - image: 
-        src: https://docs.microsoft.com/media/common/i_event.svg
-      text: Work with discovered apps
-      href: discovered-apps.md
-- title: Step-by-Step Tutorials
-  items:
-  - type: paragraph
-    text: Learn to understand alerts and undertake investigations with these tutorials.
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="/cloud-app-security/tutorial-shadow-it">Discover and manage shadow IT in your network</a>
-    - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">Block download of sensitive information</a>
-    - html: <a href="/cloud-app-security/use-case-admin-quarantine">Protect files with admin quarantine</a>
-    - html: <a href="/cloud-app-security/use-case-information-protection">Apply Azure Information Protection classification labels</a>
+  title: Microsoft Cloud App Security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.service: cloud-app-security #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: na
+  ms.topic: landing-page # Required
+  ms.collection: na
+  author: ShlomoSagir-MS #Required; your GitHub user alias, with correct capitalization.
+  ms.author: shsagir #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/26/2019 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About [service]
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is [service]?
+            url: what-is-cloud-app-security.md
+          - text: Data security and privacy
+            url: cas-compliance-trust.md
+      - linkListType: whats-new
+        links:
+          - text: Release
+            url: release-notes.md
+      - linkListType: learn
+        links:
+          - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
+            url: https://docs.microsoft.com/microsoft-365/
+      - linkListType: video
+        links:
+          - text: Watch our webinars
+            url: webinars.md
+          - text: Read our e-books
+            url: e-books.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Get started with Cloud App Security
+            url: getting-started-with-cloud-app-security.md
+          - text: Work with discovered apps
+            url: discovered-apps.md
+      - linkListType: tutorial
+        links:
+          - text: Discover and manage shadow IT in your network
+            url: tutorial-shadow-it.md
+          - text: Block download of sensitive information
+            url: use-case-proxy-block-session-aad.md
+          - text: Protect files with admin quarantine
+            url: use-case-admin-quarantine.md
+          - text: Automatically apply Azure Information Protection classification labels
+            url: use-case-admin-quarantine.md
+
+  # Card
+  - title: cardtitle3
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card
+  - title: cardtitle4
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
