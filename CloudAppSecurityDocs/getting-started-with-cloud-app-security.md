@@ -6,7 +6,7 @@ description: This quickstart outlines the process for getting Cloud App Security
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 28/8/2019
+ms.date: 8/28/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
