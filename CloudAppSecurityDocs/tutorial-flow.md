@@ -99,7 +99,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 
 Now every alert raised for this policy will initiate the flow to run the antivirus scan.
 
-The steps used in this tutorial can be used to create a wide range of workflow-based actions to extend Cloud App Security remediation capabilities, including other Defender ATP actions. To see a list of predefined Cloud App Security workflows, in Microsoft Flow, [search for "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
+You can use the steps in this tutorial to create a wide range of workflow-based actions to extend Cloud App Security remediation capabilities, including other Defender ATP actions. To see a list of predefined Cloud App Security workflows, in Microsoft Flow, [search for "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
 
 ## Next steps
 
