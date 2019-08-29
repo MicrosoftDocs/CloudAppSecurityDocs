@@ -4,17 +4,14 @@
 title: Discovery capability differences for Cloud App Security and Azure AD
 description: This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure AD.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 03/25/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/29/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
-ms.technology:
-ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
-
 
 # optional metadata
 
@@ -35,9 +32,9 @@ This article describes the differences between discovery capabilities in Microso
 
 For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
-## Microsoft Cloud App Security 
+## Microsoft Cloud App Security
 
-Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Cloud App Security, which enables you to gain visibility into Shadow IT by discovering cloud apps in use. 
+Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Cloud App Security, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
 ## Enhanced Cloud App Discovery in Azure Active Directory
 
@@ -57,9 +54,19 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 ||Cloud usage analytics per app, user, IP address|Yes|Yes|
 ||Ongoing analytics & reporting|Yes|Yes|
 ||Anomaly detection for discovered apps|Yes||
+|Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control||
+||App permissions and ability to revoke access|Yes||
+||Policy setting and enforcement|Yes||
+||Integration with Azure Information Protection |Yes||
+||Integration with third-party DLP solutions|Yes||
+|Threat Detection|Anomaly detection and behavioral analytics|For Cross-SaaS apps||
+||Manual and automatic alert remediation|Yes||
+||SIEM connector|Yes. Alerts and activity logs for cross-SaaS apps.||
+||Integration to Microsoft Intelligent Security Graph|Yes||
+||Activity policies|Yes||
 
-## Next steps 
+## Next steps
 
-Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
+Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).   
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).
