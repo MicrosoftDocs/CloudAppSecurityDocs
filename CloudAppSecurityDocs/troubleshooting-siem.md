@@ -42,11 +42,13 @@ If you received a system alert regarding an issue with activity delivery through
 ### Step 1 – Configure a new SIEM Agent in parallel to your existing agent 
 1. In the Cloud App Security portal, go to Security Extensions page.  
 2. In the SIEM Agents tab, click on add a new SIEM agent, and use the wizard to configure the connection details to your SIEM. For more information about using the wizard, see [Integrating with your SIEM](siem.md#integrating-with-your-siem).
->[!NOTE]
->This agent should run in parallel to the existing one, so network configuration might not be identical. 
-3. In the wizard, configure the Data Types to include only Activities apply the same activity filter that was used in your original SIEM agent (if it exists). 
-4. Save the setting. Once you save the settings, MCAS sets the starting date of the events to cover the missing events. 
-5. Run the new agent using the token. 
+
+    >[!NOTE]
+    >This agent should run in parallel to the existing one, so network configuration might not be identical. 
+
+1. In the wizard, configure the Data Types to include only Activities apply the same activity filter that was used in your original SIEM agent (if it exists). 
+2. Save the setting. Once you save the settings, MCAS sets the starting date of the events to cover the missing events. 
+3. Run the new agent using the token. 
 
 ### Step 2 – Validate the successful data delivery to your SIEM 
 1. Connect to your SIEM and validate that new data is received from the new SIEM Agent you configured. 
