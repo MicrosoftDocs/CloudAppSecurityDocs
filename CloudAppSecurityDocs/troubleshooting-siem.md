@@ -41,23 +41,25 @@ If you received a system alert regarding an issue with activity delivery through
 
 ### Step 1 – Configure a new SIEM Agent in parallel to your existing agent 
 1. In the Cloud App Security portal, go to Security Extensions page.  
-2. In the SIEM Agents tab, click on add a new SIEM agent, and use the wizard to configure the connection details to your SIEM. For more information about using the wizard, see [Integrating with your SIEM](siem.md#integrating-with-your-siem).
+2. In the SIEM Agents tab, click on [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM. 
 
     >[!NOTE]
     >This agent should run in parallel to the existing one, so network configuration might not be identical. 
 
-1. In the wizard, configure the Data Types to include only Activities apply the same activity filter that was used in your original SIEM agent (if it exists). 
-2. Save the setting. Once you save the settings, MCAS sets the starting date of the events to cover the missing events. 
-3. Run the new agent using the token. 
+1. In the wizard, configure the Data Types to include **only Activities** and apply the same activity filter that was used in your original SIEM agent (if it exists). 
+2. Turn on **Recovery mode** by checking the Recovery mode checkbox. This action will automatically configure the SIEM Agent to send only the missing activities due to the issue and stop sending activities once all activities are fully recovered.
+3. Save the settings.
+4. Run the new agent using the generated token.
+
 
 ### Step 2 – Validate the successful data delivery to your SIEM 
-1. Connect to your SIEM and validate that new data is received from the new SIEM Agent you configured. 
+1. Connect to your SIEM and validate that new data is received from the new SIEM Agent that you configured. 
 2. The agent will only send activities from the timeframe of the issue, which you were alerted on. 
 
 ### Step 3 – Remove the Recovery SIEM agent 
-1. The recovery SIEM agent will stop sending data and gets disabled once the end date is reached.
+1. The recovery SIEM agent will automatically stop sending data and be disabled once it reaches the end date.
 2. Validate in your SIEM that no new data is sent by the recovery SIEM agent. 
-3. On your machine, disable the Agent execution. 
+3. Stop the execution of the agent on your machine. 
 4. In the portal, go to SIEM Agent page, and remove the Recovery SIEM Agent. 
 5. Make sure your original SIEM Agent is still running properly. 
 
