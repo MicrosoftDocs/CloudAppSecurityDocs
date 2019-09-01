@@ -2,18 +2,17 @@
 # required metadata
 
 title: Governance actions to control connected apps - Cloud App Security | Microsoft Docs
-description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them. 
+description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them.
 keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/7/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 
 # optional metadata
 
@@ -30,81 +29,77 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Governance enables you to control what your users do, in real time, across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Cloud App Security. Governance actions control what your users do, in real time, across connected apps. 
+Governance enables you to control what your users do, in real time, across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Cloud App Security. Governance actions control what your users do, in real time, across connected apps.
 
 > [!NOTE]
-> When Microsoft Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action. 
+> When Microsoft Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action.
 
-
-## File governance actions 
+## File governance actions
 
 The following governance actions can be taken for connected apps either on a specific file, user or from a specific policy.
 
-- **Notifications:** 
+- **Notifications:**
 
-     - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level. 
+  - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level.
 
-     - **User email notification** – Email messages can be customized and will be sent to all violating file owners. 
+  - **User email notification** – Email messages can be customized and will be sent to all violating file owners.
 
-     - **Notify specific users** – Specific list of email addresses that will receive these notifications. 
+  - **Notify specific users** – Specific list of email addresses that will receive these notifications.
 
-     - **Notify last file editor** – Send notifications to the last person who modified the file. 
+  - **Notify last file editor** – Send notifications to the last person who modified the file.
 
-- **Governance actions in apps** - Granular actions can be enforced per app, specific actions vary depending on app terminology. 
+- **Governance actions in apps** - Granular actions can be enforced per app, specific actions vary depending on app terminology.
 
-     
-     - **Labeling**
-         - **Apply label** - Ability to add an Azure Information Protection classification label.
-         - **Remove label** - Ability to remove an Azure Information Protection classification label.
-     - **Change sharing** 
+  - **Labeling**
+    - **Apply label** - Ability to add an Azure Information Protection classification label.
+    - **Remove label** - Ability to remove an Azure Information Protection classification label.
+  - **Change sharing**
 
-        - **Remove public sharing** – Allow access only to named collaborators, for example: Remove public access for G Suite and Remove direct shared link for Box. 
+    - **Remove public sharing** – Allow access only to named collaborators, for example: Remove public access for G Suite and Remove direct shared link for Box.
 
-       - **Remove external users** – Allow access only to company users. 
+    - **Remove external users** – Allow access only to company users.
 
-       - **Make private** – Only the owner can access the file, all shares are removed. 
+    - **Make private** – Only the owner can access the file, all shares are removed.
 
-       - **Remove a collaborator** – Remove a specific collaborator from the file. 
+    - **Remove a collaborator** – Remove a specific collaborator from the file.
 
-       - **Reduce public access** - Set Publicly available files to be available only with a shared link. (Google)
-        
-       - **Expire shared link** - Ability to set an experation date for a shared link after which it will no longer be active. (Box)
+    - **Reduce public access** - Set Publicly available files to be available only with a shared link. (Google)
 
-       - **Change sharing link access level** - Ability to change the access level of the shared link between company only, collaborators only, and public. (Box)
+    - **Expire shared link** - Ability to set an experation date for a shared link after which it will no longer be active. (Box)
 
-  - **Quarantine** 
+    - **Change sharing link access level** - Ability to change the access level of the shared link between company only, collaborators only, and public. (Box)
 
-       - **Put in user quarantine** – Allow self-service by moving the file to a user-controlled quarantine folder 
+  - **Quarantine**
 
-       - **Put in admin quarantine** – File is moved to quarantine in the admin drive, and the admin has to approve it. 
+    - **Put in user quarantine** – Allow self-service by moving the file to a user-controlled quarantine folder
+
+    - **Put in admin quarantine** – File is moved to quarantine in the admin drive, and the admin has to approve it.
 
   - **Inherit permissions from parent** - This governance action enables you to remove specific permissions set for a file or folder in Office 365. Then revert to whatever permissions are set for the parent folder.
 
   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts") 
+   ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")
 
-
-## Activity governance actions 
+## Activity governance actions
 
 - **Notifications**
 
-    - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level. 
+  - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level.
 
-    - **User email notification** – Email messages can be customized and will be sent to all violating file owners. 
+  - **User email notification** – Email messages can be customized and will be sent to all violating file owners.
 
-    - **Notify additional users** – Specific list of email addresses that will receive these notifications. 
+  - **Notify additional users** – Specific list of email addresses that will receive these notifications.
 
-- **Governance actions in apps** - Granular actions can be enforced per app, specific actions vary depending on app terminology. 
+- **Governance actions in apps** - Granular actions can be enforced per app, specific actions vary depending on app terminology.
 
-    - **Suspend user** – Suspend the user from the application. 
-      > [!NOTE] 
-      > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted. 
+  - **Suspend user** – Suspend the user from the application.
+    > [!NOTE]
+    > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
 
-    - **Require user to sign in again** – Signs the user out and requires them to sign in again. 
+  - **Require user to sign in again** – Signs the user out and requires them to sign in again.
 
-    ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6") 
-
+  ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6")
 
 ## Governance conflicts
 
@@ -118,22 +113,22 @@ After creating multiple policies, a situation may arise in which the governance 
 
 ### Conflicts in user sync
 
-- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment, the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted. 
+- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment, the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
 
 ## Governance log
-The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log. 
+
+The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log.
 
 The following table is the full list of actions the Cloud App Security portal enables you to take. These actions are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
 For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md).
 
-
-|<strong>Location</strong> | <strong>Target object type</strong> | <strong>Governance action</strong> |<strong>Description</strong>| <strong>Related connectors</strong>|
+| Location | Target object type | Governance action |Description| Related connectors|
 |-------------------|---------|-----|--------|-------|
 |Accounts |File |Remove user's collaborations | Remove all the collaborations of a specific user for any files - good for people leaving the company. |Box, G Suite|
 |Accounts | Account | Unsuspend user |Unsuspends the user |G Suite, Box, Office, Salesforce|
 |Accounts | Account |Account settings | Takes you to the account settings page in the specific app (for example, inside Salesforce). | All apps -One Drive and SharePoint settings are configured from within Office. |
 |Accounts |File |Transfer all files ownership | On an account, you transfer one user's files to all be owned by a new person you select. The previous owner becomes an editor and can no longer change sharing settings. The new owner will receive an email notification about the change of ownership. | G Suite|
-|Accounts, Activity policy | Account | Suspend user| Sets user to have no access and no ability to sign in. If they'e logged in when you set this action, they're immediately locked out. |G Suite, Box, Office, Salesforce|
+|Accounts, Activity policy | Account | Suspend user| Sets user to have no access and no ability to sign in. If they're logged in when you set this action, they're immediately locked out. |G Suite, Box, Office, Salesforce|
 |Activity policy, Accounts | Account |Require user to sign in again|Revokes all refresh tokens and session cookies issues to applications by the user. This action will prevent access to any of the organization's data and will force the user to sign into all applications again.| G Suite|
 |Activity policy, Accounts | Account | Revoke admin privileges |Revokes privileges for an admin account. For example, setting an activity policy that revokes admin privileges after 10 failed login attempts. | G Suite|
 |App dashboard > App permissions |Permissions|Unban app| In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third-party app with their Google or Salesforce. In Office 365: restores the permissions of the third-party app’s to Office. |G Suite, Salesforce, Office |
@@ -162,7 +157,7 @@ For information about how governance actions are treated when there are policy c
 |Files, File policy|File | Reduce public access|This action enables you to set publicly available files to be available only with a shared link.| G Suite|
 |Files, File policy|File | Remove a collaborator | Removes a specific collaborator from a file. | G Suite, Box, One Drive, SharePoint|
 |Files, File policy|File | Make private| Make the file private - no more collaborators or public links, not shared with anyone. | G Suite, One Drive, SharePoint |
-|Files, File policy|File | Remove external users | Removes all external collaborators - outside the domains configured as internal in Settings. |G Suite, Box|
+|Files, File policy|File | Remove external users | Removes all external collaborators - outside the domains configured as internal in Settings. |G Suite, Box, One Drive, SharePoint|
 |Files, File policy|File |Grant read permission to domain|Grants read permissions for the file to the specified domain for your entire domain or a specific domain. This action is useful if you want to remove public access after granting access to the domain of people who need to work on it.| G Suite|
 |Files, File policy|File | Put in user quarantine | Removes all permissions from the file and moves the file to a quarantine folder under the user's root drive. This action allows the user to review the file and move it. If it's manually moved back, the file sharing isn't restored. | Box, One Drive, SharePoint |
 |Files|File|Expire shared link| Set an expiration date for a shared link after which it will no longer be active.|Box|
@@ -174,9 +169,8 @@ For information about how governance actions are treated when there are policy c
 |Settings> Cloud discovery settings > Delete data| Cloud Discovery | Delete Cloud Discovery data |Deletes all the data collected from discovery sources.| Discovery |
 |Settings> Cloud discovery settings > Upload logs manually/Upload logs automatically | Cloud Discovery | Parse Cloud Discovery data| Notification that all the log data was parsed. | Discovery |
 
-## Next steps 
+## Next steps
+
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/) 
-
-
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
