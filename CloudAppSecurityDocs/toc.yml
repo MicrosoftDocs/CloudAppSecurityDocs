@@ -244,6 +244,10 @@
       href: troubleshoot-policies.md
 - name: Resources
   items:
+  - name: Watch our webinars
+    href: webinars.md
+  - name: Read our e-books
+    href: e-books.md
   - name: Release note archive
     href: release-note-archive.md
   - name: Licensing datasheet
