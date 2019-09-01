@@ -63,10 +63,6 @@ sections:
         src: https://docs.microsoft.com/media/common/i_design.svg
       text: Get started with Microsoft Cloud App Security
       href: getting-started-with-cloud-app-security.md
-    - image: 
-        src: https://docs.microsoft.com/media/common/i_event.svg
-      text: Work with discovered apps
-      href: discovered-apps.md
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
