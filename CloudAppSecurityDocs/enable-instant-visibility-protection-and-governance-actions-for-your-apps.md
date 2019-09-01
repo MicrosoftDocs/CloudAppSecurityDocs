@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/26/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -108,8 +108,7 @@ To use App Connectors, you need to make sure you have the following things for e
 | Salesforce | | Admin |
 | ServiceNow | Eureka and up | Admin + RestAPI role |
 | Webex | | Admin + Compliance Admin |
-
-<!--| Workday | | Admin |-->
+| Workday | | See the [connect Workday prerequisites](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
 
 ### ExpressRoute
 
