@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/18/2019
+ms.date: 9/1/2019
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -27,6 +27,28 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 157
+
+Released September 1, 2019
+
+- **Reminder: End of support for TLS 1.0 and 1.1 on September 8**<br>
+Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
+
+- **New detection – Suspicious Microsoft Power BI sharing (Preview)**<br>
+The new suspicious Power BI report sharing policy is now available out-of-the-box and automatically enabled to alert you when a potentially sensitive Power BI report is suspiciously shared outside of your organization.
+
+- **New export feature for OAuth app auditing**<br>
+Cloud App Security audits all OAuth authorization activities to provide you with comprehensive monitoring and investigation of activities performed. Now you can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
+
+- **Enhanced Okta event auditing**<br>
+Cloud App Security now supports the new System Log API released by Okta. For more information about connecting Okta, see [Connect Okta](connect-okta-to-microsoft-cloud-app-security.md).
+
+- **Workday connector (Preview)**<br>
+A new app connector is now available for Workday. You can now connect Workday to Cloud App Security to monitor activities and protect its users and activities. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).
+
+- **Enhanced assessment for the “Password policy” risk factor**<br>
+The Cloud App Catalog now provides granular assessment for the **Password policy** risk factor. By hovering over its information icon, you can see a breakdown of the specific policies that are enforced by the app.
+
 ## Cloud App Security release 156
 
 Released August 18, 2019
@@ -42,9 +64,6 @@ Cloud App Security provides the ability to identify risky users on the **Users a
 
 - **Activity policy enhancements**<br>
 You can now create activity policy alerts based on activity objects. For example, this capability allows you to create alerts on changes to Azure Active Directory administrative roles. For more information about activity objects, see [Activity filters](activity-filters-queries.md#activity-filters).
-
-<!-- **Workday app connector available (Preview)**<br>
-A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
 
 ## Cloud App Security release 155
 
