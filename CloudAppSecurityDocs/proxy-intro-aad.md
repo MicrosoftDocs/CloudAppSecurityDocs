@@ -72,8 +72,10 @@ Conditional Access App Control enables you to create policies that take into acc
 
 ### Compliant and domain joined devices
 
-Azure AD conditional access enables compliant and domain-joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter.
-For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+Azure AD conditional access enables compliant and domain-joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+
+> [!NOTE]
+> Some browsers may require additional configuration such as installing an extension. For more information, see [https://go.microsoft.com/fwlink/?linkid=2102732](https://go.microsoft.com/fwlink/?linkid=2102732).
 
 ### Client-certificate authenticated devices
 
