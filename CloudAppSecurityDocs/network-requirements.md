@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/16/2019
+ms.date: 8/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -31,11 +31,11 @@ This article provides a list of ports and IP addresses you need to allow and all
 
 ## View your data center
 
-Some of the requirements below depend on which data center you're connected to. 
+Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the Cloud App Security portal, click the **question mark icon** in the menu bar. Then, select **About**. 
+1. In the Cloud App Security portal, click the **question mark icon** in the menu bar. Then, select **About**.
 
     ![click About](./media/about-menu.png)
 
@@ -45,12 +45,12 @@ To see which data center you're connecting to, do the following steps:
 
 ## Portal access
 
-For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:  
+For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
     cdn.cloudappsecurity.com
-    https://adaproddiscovery.azureedge.net 
+    https://adaproddiscovery.azureedge.net
     *.s-microsoft.com
     *.msecnd.net
     dev.virtualearth.net
@@ -62,7 +62,7 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
 
 Additionally, the following items should be whitelisted, depending on which data center you use:
 > [!div class="mx-tableFixed"]
-> 
+>
 > |Data center|IP addresses|DNS name|
 > |----|----|----|
 > |US1|13.64.26.88<br>13.64.29.32<br>13.80.125.22<br>13.91.91.243<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|\*.us.portal.cloudappsecurity.com|
@@ -76,11 +76,11 @@ Additionally, the following items should be whitelisted, depending on which data
 
 ## SIEM agent connection
 
-To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allow list:  
+To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allow list:
 
 > [!div class="mx-tableFixed"]
-> 
-> |Data center|IP addresses|  
+>
+> |Data center|IP addresses|
 > |----|----|
 > |US1|13.64.26.88<br>13.64.29.32<br>13.80.125.22<br>13.91.91.243<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
 > |US2|13.80.125.22<br>20.36.222.59<br>20.36.222.60<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62<br>52.184.165.82|
@@ -101,38 +101,38 @@ For some third-party apps to be accessed by Cloud App Security, these IP address
 To connect to third-party apps, enable Cloud App Security to connect from these IP addresses:
 
 > [!div class="mx-tableFixed"]
-> 
+>
 > |Data center|IP addresses||
 > |----|----|----|
-> |US1|104.209.35.177<br>13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.64.26.88<br>13.64.29.32<br>13.64.30.117<br>13.64.30.118<br>13.64.30.76|13.64.31.116<br>13.86.176.189<br>13.86.176.211<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br><br>|
-> |US2|104.46.116.211<br>104.46.116.211<br>104.46.121.72<br>104.46.121.72<br>104.46.122.189<br>104.46.122.189<br>20.36.222.59<br>20.36.222.60<br>40.67.152.91|40.67.154.160<br>40.67.155.146<br>40.67.159.55<br>40.84.2.83<br>40.84.4.119<br>40.84.4.93<br>52.184.165.82<br>52.232.224.227<br>52.232.225.84|
-> |US3|40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242||
-> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.115.25.50|40.119.154.72<br>40.67.219.133<br>51.105.179.157<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180|
-> |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.145.108.227<br>51.145.108.250|
+> |US1|13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.64.26.88<br>13.64.29.32<br>13.64.30.117<br>13.64.30.118<br>13.64.30.76<br>13.64.31.116<br>13.68.76.47|13.86.176.189<br>13.86.176.211<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br>104.42.54.148<br>104.209.35.177<br><br>|
+> |US2|13.68.76.47<br>20.36.222.59<br>20.36.222.60<br>40.67.152.91<br>40.67.154.160<br>40.67.155.146<br>40.67.159.55<br>40.84.2.83<br>40.84.4.119<br>40.84.4.93|52.184.165.82<br>52.232.224.227<br>52.232.225.84<br>104.46.116.211<br>104.46.116.211<br>104.46.121.72<br>104.46.121.72<br>104.46.122.189<br>104.42.54.148<br>104.46.122.189<br>|
+> |US3|13.68.76.47<br>40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242<br>104.42.54.148||
+> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.115.25.50<br>40.119.154.72|40.67.219.133<br>51.105.55.62<br>51.105.179.157<br>51.137.200.32<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180|
+> |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.105.55.62<br>51.137.200.32<br>51.145.108.227<br>51.145.108.250|
 
 ## Third-party DLP integration
 
-To enable Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number. 
+To enable Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number.
 
 1. **Source addresses** - These addresses should be whitelisted as listed above for API connector third-party apps
 2. **Source TCP port** - Dynamic
 3. **Destination address(es)** - One or two IP address of the stunnel connected to the external ICAP server
 4. **Destination TCP port** - As defined in your network
 
-> [!NOTE] 
-> -  By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
+> [!NOTE]
+> - By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
 > - You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses.
 
 To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security to connect from these IP addresses:
 
 > [!div class="mx-tableFixed"]
-> 
+>
 > |Data center|IP addresses||
 > |----|----|----|
-> |US1|104.209.35.177<br>13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.64.26.88<br>13.64.29.32<br>13.64.30.117<br>13.64.30.118<br>13.64.30.76|13.64.31.116<br>13.86.176.189<br>13.86.176.211<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br><br>|
-> |US2|104.46.116.211<br>104.46.116.211<br>104.46.121.72<br>104.46.121.72<br>104.46.122.189<br>104.46.122.189<br>20.36.222.59<br>20.36.222.60<br>40.67.152.91|40.67.154.160<br>40.67.155.146<br>40.67.159.55<br>40.84.2.83<br>40.84.4.119<br>40.84.4.93<br>52.184.165.82<br>52.232.224.227<br>52.232.225.84|
+> |US1|13.64.196.27<br>13.64.198.19<br>13.64.198.97<br>13.64.199.41<br>13.64.26.88<br>13.64.29.32<br>13.64.30.117<br>13.64.30.118<br>13.64.30.76<br>13.64.31.116|13.86.176.189<br>13.86.176.211<br>13.91.61.249<br>13.91.91.243<br>13.91.98.185<br>13.93.216.68<br>13.93.233.42<br>40.118.211.172<br>104.209.35.177<br><br>|
+> |US2|20.36.222.59<br>20.36.222.60<br>40.67.152.91<br>40.67.154.160<br>40.67.155.146<br>40.67.159.55<br>40.84.2.83<br>40.84.4.119<br>40.84.4.93|52.184.165.82<br>52.232.224.227<br>52.232.225.84<br>104.46.116.211<br>104.46.116.211<br>104.46.121.72<br>104.46.121.72<br>104.46.122.189<br>104.46.122.189|
 > |US3|40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242||
-> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.119.154.72|40.67.219.133<br>51.105.179.157<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180<br><br>|
+> |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.67.219.133<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50|40.119.154.72<br>51.105.179.157<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180<br><br>|
 > |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.145.108.227<br>51.145.108.250||
 
 ## Mail server
