@@ -7,7 +7,7 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 9/5/2019
+ms.date: 9/8/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -33,19 +33,22 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 ## Prerequisites
 
-- The Workday account used for connecting to Cloud App Security must be a member of a security group that has the following domains enabled for them:
+The Workday account used for connecting to Cloud App Security must be a member of a security group (new or existing). The security group must have the following permissions selected for the following domains:
 
-  - System - Security Administration
-  - System - System auditing
-  - Staffing - Worker Data: Public Worker Reports
+| Functional area | Domain | Subdomain | Report/Task Permissions | Integration Permissions |
+| --- | --- | --- | --- | --- |
+| System | Set Up: Tenant Setup – General | Set Up: Tenant Setup –  Security | View, Modify | Get, Put |
+| System | Security Administration | | View, Modify | Get, Put |
+| System | System auditing | | View | Get |
+| Staffing | Worker Data: Staffing | Worker Data: Public Worker Reports | View | Get |
 
-  We recommended using a Workday Integration System User.
+For more information about setting up Workday integration users, security groups, and permissions, see steps 1 to 4 of the [Grant Integration or External Endpoint Access to Workday](https://go.microsoft.com/fwlink/?linkid=2103212) guide (accessible with Workday documentation/community credentials).
 
-- If your Workday deployment manages IP address ranges, you must whitelist all Cloud App Security IP addresses. For the list of IP addresses, see [Network requirements - App connector](network-requirements.md#app-connector).
+We recommended using a Workday Integration System User.
 
 ## How to connect Workday to Cloud App Security using OAuth
 
-1. Sign in with an Admin account to your Workday account.
+1. Sign in to your Workday account with a Admin user that is a member of the security group mentioned in the prerequisites.
 
 1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
 
