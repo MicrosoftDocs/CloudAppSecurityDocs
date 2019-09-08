@@ -35,7 +35,7 @@
     href: use-case-admin-quarantine.md
   - name: Apply Azure Information Protection labels automatically
     href: use-case-information-protection.md
-  - name: Extending governance to endpoint remediation
+  - name: Extend governance to endpoint remediation
     href: tutorial-flow.md
 - name: Concepts
   items:
@@ -125,6 +125,8 @@
       href: connect-servicenow-to-microsoft-cloud-app-security.md
     - name: Connect WebEx
       href: connect-webex-to-microsoft-cloud-app-security.md
+    - name: Connect Workday
+      href: connect-workday-to-microsoft-cloud-app-security.md
   - name: Deploy Conditional Access App Control apps
     items:
     - name: Deploy Conditional Access App Control for featured apps
