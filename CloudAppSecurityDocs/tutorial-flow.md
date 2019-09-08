@@ -1,20 +1,26 @@
 ---
-title: Extending governance to endpoint remediation | Microsoft Docs
+title: Extend governance to endpoint remediation | Microsoft Docs
 description: This tutorial describes the process to configure Microsoft Cloud App Security policy alerts to trigger Microsoft Flow workflows to run Microsoft Defender Advanced Threat Protection remediation actions.
 author: ShlomoSagir-MS
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 8/22/2019
+ms.date: 9/8/2019
 ---
 
-# Tutorial: Extending governance to endpoint remediation
+# Tutorial: Extend governance to endpoint remediation
 
 Cloud App Security provides predefined governance options for policies, such as suspend a user or make a file private. Using the native integration with Microsoft Flow, you can use a large ecosystem of software as a service (SaaS) connectors to build workflows to automate processes including remediation.
 
 For example, when detecting a possible malware threat, you can use workflows to start Microsoft Defender Advanced Threat Protection (ATP) remediation actions such as running an antivirus scan or isolating an endpoint.
 
 In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior.
+
+> [!div class="checklist"]
+> * 1: [Generate a Cloud App Security API token](#generate-token)
+> * 2: [Create a flow to run an antivirus scan](#create-flow)
+> * 3: [Configure the flow](#configure-flow)
+> * 4: [Configure a policy to run the flow](#configure-policy)
 
 > [!NOTE]
 > These workflows are only relevant for policies that contains user activity. For example, you can't use these workflows with Discovery or OAuth policies.
@@ -27,9 +33,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 * You must have a valid Microsoft Defender ATP plan
 * The Microsoft Flow environment must be Azure AD synced, Defender ATP monitored, and domain joined
 
-## To configure an antivirus scan remediation action
-
-### Step 1: Generate a Cloud App Security API token
+## Phase 1: Generate a Cloud App Security API token<a name="generate-token"></a>
 
 > [!NOTE]
 > If you have previously created a workflow using a Cloud App Security connector, Microsoft Flow automatically reuses the token and you can skip this step.
@@ -44,7 +48,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 
     ![Screenshot of the token window, showing the token and the copy process.](media/tutorial-flow-token-copy.png)
 
-### Step 2: Create a flow to run an antivirus scan
+## Phase 2: Create a flow to run an antivirus scan<a name="create-flow"></a>
 
 > [!NOTE]
 > If you have previously created a flow using a Defender ATP connector, Flow automatically reuses the connector and you can skip the **Sign in** step.
@@ -60,7 +64,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 
     ![Screenshot of the templates Microsoft Flow page, showing the sign-in process.](media/tutorial-flow-templates-signin.png)
 
-### Step 3: Configure the flow
+## Phase 3: Configure the flow<a name="configure-flow"></a>
 
 > [!NOTE]
 > If you have previously created a flow using an Azure AD connector, Microsoft Flow automatically reuses the token and you can skip this step.
@@ -87,7 +91,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 
     ![Screenshot of the flow page, showing the scan setting section.](media/tutorial-flow-templates-scan.png)
 
-### Step 4: Configure the policy to run the flow
+## Phase 4: Configure a policy to run the flow<a name="configure-policy"></a>
 
 1. In Cloud App Security, click **Control**, and then click **Policies**.
 
@@ -101,7 +105,7 @@ Now every alert raised for this policy will initiate the flow to run the antivir
 
 You can use the steps in this tutorial to create a wide range of workflow-based actions to extend Cloud App Security remediation capabilities, including other Defender ATP actions. To see a list of predefined Cloud App Security workflows, in Microsoft Flow, [search for "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
 
-## Next steps
+## See Also
 
 > [!div class="nextstepaction"]
 [Integrate with Microsoft Flow for custom alert automation](flow-integration.md)
