@@ -48,7 +48,7 @@ We recommended using a Workday Integration System User.
 
 ## How to connect Workday to Cloud App Security using OAuth
 
-1. Sign in to your Workday account with a Admin user that is a member of the security group mentioned in the prerequisites.
+1. Sign in to Workday with an account that is a member of the security group mentioned in the prerequisites.
 
 1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
 
