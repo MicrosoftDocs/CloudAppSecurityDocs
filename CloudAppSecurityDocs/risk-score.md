@@ -4,9 +4,9 @@
 title: Working with the risk score - Cloud App Security | Microsoft Docs
 description: This article provides instructions for how to use and customize the Cloud App Security app risk score.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
