@@ -32,7 +32,7 @@ Follow these steps to configure featured apps to be controlled by Microsoft Clou
 
 **Step 2: [Sign in to each app using a user scoped to the policy](#sign-in-scoped)**
 
-**Step 3: [Configure advanced controls](#portal)**
+**Step 3: [Verify the apps are configured to use access and session controls](#portal)**
 
 **Step 4: [Test the deployment](#test)**
 
@@ -66,22 +66,18 @@ After you've created the policy, sign in to each app configured in that policy. 
 
 Cloud App Security will sync your policy details to its servers for each new app you sign in to. This may take up to one minute.
 
-## Step 3: Configure advanced controls<a name="portal"></a>
+## Step 3: Verify the apps are configured to use access and session controls<a name="portal"></a>
 
-The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD.
+The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
-To configure a policy to leverage device management via client certificates:
+1. In the Cloud App Security portal, click the settings cog ![settings icon](./media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
-1. Go to the settings cog and choose **Device identification**.
-2. Upload one or more root or intermediate certificates.
-3. After the certificate is uploaded, you can create [access policies](access-policy-aad.md) and [session policies](session-policy-aad.md) based on **Device tag** and **Valid client certificate**.
+1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** and **Session control** appear for your apps.
 
-    ![Conditional access app control device ID](./media/caac-device-id.png)
-
-To apply the policy to any app, follow the instructions to [onboard and deploy any app for use with Conditional Access App Control](proxy-deployment-any-app.md).
-
-> [!NOTE]
-> A certificate is only requested from a user if the session matches a policy that uses the valid client certificate filter.
+   > [!NOTE]
+   > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](proxy-deployment-any-app.md), or you can open a request to add it as a featured app by clicking **Request session control**.
+    >
+    >![Conditional access app control request](media/caac-request.png)
 
 ## Step 4: Test the deployment<a name="test"></a>
 
