@@ -27,22 +27,12 @@ landingContent:
         links:
           - text: What is Cloud App Security?
             url: what-is-cloud-app-security.md
-          - text: Data security and privacy
-            url: cas-compliance-trust.md
+          - text: Top 20 CASB use cases
+            url: https://go.microsoft.com/fwlink/p/?linkid=2099428
       - linkListType: whats-new
         links:
           - text: Releases
             url: release-notes.md
-      - linkListType: learn
-        links:
-          - text: Read our e-books
-            url: e-books.md
-          - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
-            url: https://docs.microsoft.com/microsoft-365/
-      - linkListType: video
-        links:
-          - text: Watch our webinars
-            url: webinars.md
 
   # Card (optional)
   - title: Get started
@@ -51,8 +41,12 @@ landingContent:
         links:
           - text: Get started with Cloud App Security
             url: getting-started-with-cloud-app-security.md
-          - text: Work with discovered apps
-            url: discovered-apps.md
+          - text: Best practices
+            url: best-practices.md
+
+  # Card
+  - title: Tutorials
+    linkLists:
       - linkListType: tutorial
         links:
           - text: Discover and manage shadow IT in your network
@@ -65,7 +59,7 @@ landingContent:
             url: use-case-admin-quarantine.md
 
   # Card
-  - title: cardtitle3
+  - title: Concepts
     linkLists:
       - linkListType: concept
         links:
@@ -81,17 +75,15 @@ landingContent:
             url: file2.md
 
   # Card
-  - title: cardtitle4
+  - title: Additional Resources
     linkLists:
-      - linkListType: concept
+      - linkListType: learn
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: concept
+          - text: Read our e-books
+            url: e-books.md
+          - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
+            url: https://docs.microsoft.com/microsoft-365/
+      - linkListType: video
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
+          - text: Watch our webinars
+            url: webinars.md
