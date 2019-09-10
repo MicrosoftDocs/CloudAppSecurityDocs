@@ -41,7 +41,7 @@
     href: proxy-intro-aad.md
   - name: Working with the dashboard
     href: daily-activities-to-protect-your-cloud-environment.md
-  - name: Working with the risk score
+  - name: Working with App risk scores
     href: risk-score.md
   - name: Working with discovered apps
     href: discovered-apps.md

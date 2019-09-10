@@ -26,7 +26,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Working with the risk score
+# Working with App risk scores
 
 *Applies to: Microsoft Cloud App Security*
 
