@@ -7,13 +7,12 @@ keywords:
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 9/8/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 
 # optional metadata
 
@@ -26,21 +25,36 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Placeholder article
-<!--
 # Connect Workday to Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use.
 
+## Prerequisites
+
+The Workday account used for connecting to Cloud App Security must be a member of a security group (new or existing). The security group must have the following permissions selected for the following domains:
+
+| Functional area | Domain | Subdomain | Report/Task Permissions | Integration Permissions |
+| --- | --- | --- | --- | --- |
+| System | Set Up: Tenant Setup – General | Set Up: Tenant Setup –  Security | View, Modify | Get, Put |
+| System | Security Administration | | View, Modify | Get, Put |
+| System | System auditing | | View | Get |
+| Staffing | Worker Data: Staffing | Worker Data: Public Worker Reports | View | Get |
+
+For more information about setting up Workday integration users, security groups, and permissions, see steps 1 to 4 of the [Grant Integration or External Endpoint Access to Workday](https://go.microsoft.com/fwlink/?linkid=2103212) guide (accessible with Workday documentation/community credentials).
+
+We recommended using a Workday Integration System User.
+
 ## How to connect Workday to Cloud App Security using OAuth
 
-1. Sign in with an Admin account to your Workday account.
+1. Sign in to Workday with an account that is a member of the security group mentioned in the prerequisites.
 
 1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
 
     ![Screenshot of allowing user activity logging](media/connect-workday-enable-logging.png)
+
+1. Search for "Edit tenant setup – security", and under **OAuth 2.0 Settings**, select **OAuth 2.0 Clients Enabled**.
 
 1. Search for "Register API Client" and select **Register API Client – Task**.
 
@@ -51,7 +65,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     | Client Name | Microsoft Cloud App Security |
     | Client Grant Type | Authorization Code Grant |
     | Access Token Type | Bearer |
-    | Redirection URI | https://portal.cloudappsecurity.com/api/oauth/connect |
+    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
     | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
@@ -85,11 +99,15 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
 
-1. Back in the Cloud App Security console, you should see a message that Workday was successfully connected. Make sure the connection succeeded by clicking **Test API**.
+1. Back in the Cloud App Security portal, you should see a message that Workday was successfully connected. Make sure the connection succeeded by clicking **Test API**.
 
     Testing may take a couple of minutes. After receiving a success notice, click **Close**.
 
-## Next steps 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+> [!NOTE]
+> After connecting Workday, you'll receive events for seven days prior to connection.
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)-->
+## Next steps
+
+[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)

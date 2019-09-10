@@ -7,7 +7,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 12/10/2018
+ms.date: 08/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -32,7 +32,38 @@ ms.custom: seodec18
 
 This article provides a list of possible issues when connecting your SIEM to Cloud App Security and provides possible resolutions.
 
-## Troubleshooting
+## Recover missing activity events in MCAS SIEM Agent 
+
+If you received a system alert regarding an issue with activity delivery through the SIEM agent, follow the steps below to recover the activity events in the timeframe of the issue. These steps will guide you through setting up a new Recovery SIEM agent that will run in parallel and resend the activity events to your SIEM.
+
+>[!NOTE]
+>The recovery process will resend all activity events in the timeframe described in the system alert. If your SIEM already contains activity events from this timeframe, you will experience duplicated events after this recovery. 
+
+### Step 1 – Configure a new SIEM Agent in parallel to your existing agent 
+1. In the Cloud App Security portal, go to Security Extensions page.  
+2. In the SIEM Agents tab, click on [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM. 
+
+    >[!NOTE]
+    >This agent should run in parallel to the existing one, so network configuration might not be identical. 
+
+1. In the wizard, configure the Data Types to include **only Activities** and apply the same activity filter that was used in your original SIEM agent (if it exists). 
+2. Turn on **Recovery mode** by checking the Recovery mode checkbox. This action will automatically configure the SIEM Agent to send only the missing activities due to the issue and stop sending activities once all activities are fully recovered.
+3. Save the settings.
+4. Run the new agent using the generated token.
+
+
+### Step 2 – Validate the successful data delivery to your SIEM 
+1. Connect to your SIEM and validate that new data is received from the new SIEM Agent that you configured. 
+2. The agent will only send activities from the timeframe of the issue, which you were alerted on. 
+
+### Step 3 – Remove the Recovery SIEM agent 
+1. The recovery SIEM agent will automatically stop sending data and be disabled once it reaches the end date.
+2. Validate in your SIEM that no new data is sent by the recovery SIEM agent. 
+3. Stop the execution of the agent on your machine. 
+4. In the portal, go to SIEM Agent page, and remove the Recovery SIEM Agent. 
+5. Make sure your original SIEM Agent is still running properly. 
+
+## General troubleshooting
 
 Make sure the status of the SIEM agent in the Microsoft Cloud App Security portal isn't **Connection error** or **Disconnected** and there are no agent notifications. The status shows as **Connection error** if the connection is down for more than two hours. The status changes to **Disconnected** if the connection is down for over 12 hours.
 
