@@ -45,34 +45,38 @@ landingContent:
             url: best-practices.md
 
   # Card
-  - title: Tutorials
+  - title: Learn
     linkLists:
       - linkListType: tutorial
         links:
           - text: Discover and manage shadow IT in your network
             url: tutorial-shadow-it.md
+          - text: Investigate risky users
+            url: tutorial-ueba.md
+          - text: Investigate risky OAuth apps
+            url: investigate-risky-oauth.md
           - text: Block download of sensitive information
             url: use-case-proxy-block-session-aad.md
           - text: Protect files with admin quarantine
             url: use-case-admin-quarantine.md
-          - text: Automatically apply Azure Information Protection classification labels
-            url: use-case-admin-quarantine.md
+          - text: Apply Azure Information Protection classification labels
+            url: use-case-information-protection.md
+          - text: Extend governance to endpoint remediation
+            url: tutorial-flow.md
 
   # Card
   - title: Concepts
     linkLists:
       - linkListType: concept
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: concept
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
+          - text: Protect apps with Conditional Access App Control
+            url: proxy-intro-aad.md
+          - text: Working with the dashboard
+            url: daily-activities-to-protect-your-cloud-environment.md
+          - text: Working with App risk scores
+            url: risk-score.md
+          - text: Working with discovered apps
+            url: discovered-apps.md
 
   # Card
   - title: Additional Resources
