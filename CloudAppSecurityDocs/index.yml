@@ -45,7 +45,7 @@ landingContent:
             url: best-practices.md
 
   # Card
-  - title: Learn
+  - title: Explore our top use cases
     linkLists:
       - linkListType: tutorial
         links:
