@@ -51,7 +51,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 ### Phase 1: Discover and identify Shadow IT
 
-1. **Discover Shadow IT**: Identify your organization's security posture by running Cloud Discovery in your organization to see what's actually happening in your network. For more information see [Set up cloud discovery](set-up-cloud-discovery.md). This can be done using any of the following methods:
+1. **Discover Shadow IT**: Identify your organization's security posture by running Cloud Discovery in your organization to see what's actually happening in your network. For more information, see [Set up cloud discovery](set-up-cloud-discovery.md). This can be done using any of the following methods:
 
     * Get up and running quickly with Cloud Discovery by integrating with [Microsoft Defender ATP](wdatp-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 
@@ -75,7 +75,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
     * In the Cloud App Security portal, under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the compliance risk factors you are concerned about. For example, use the suggested query to filter out non-compliant apps.
 
-    * You can drill down into the app to see understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
+    * You can drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
 
 1. **Analyze usage**: Now that you know whether or not you want the app to be used in your organization, you want to investigate how and who is using it. If it's only used in a limited way in your organization maybe it's ok, but maybe if the use is growing you want to be notified about it so you can decide if you want to block the app.
 
@@ -99,7 +99,7 @@ Look at the alerts page and use the **Policy type** filter to look at app discov
 
 ### Phase 4: Advanced Shadow IT discovery reporting
 
-In addition to the reporting available in Cloud App Security, you can integrate Cloud Discovery logs into Azure Sentinel for further investigation and analysis. Once the data is in Azure Sentinel, you can view the data in dashboard, run queries using Kusto query language, export queries to Microsoft Power BI, integrate with other sources, and create custom alerts. For more information, see NEW_TOPIC_TBD.
+In addition to the reporting options available in Cloud App Security, you can integrate Cloud Discovery logs into Azure Sentinel for further investigation and analysis. Once the data is in Azure Sentinel, you can view it in dashboards, run queries using Kusto query language, export queries to Microsoft Power BI, integrate with other sources, and create custom alerts. For more information, see NEW_TOPIC_TBD.
 
 ### Phase 5: Control sanctioned apps
 
