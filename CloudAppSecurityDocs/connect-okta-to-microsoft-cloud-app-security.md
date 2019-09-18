@@ -4,7 +4,7 @@
 title: Connect Okta to Cloud App Security
 description: This article provides information about how to connect your Okta to Cloud App Security using the API connector for visibility and control over use.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 9/1/2019
