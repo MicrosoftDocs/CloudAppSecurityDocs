@@ -3,7 +3,7 @@
 
 title: Create policies to control activities in Cloud App Security
 description: This article provides instructions for creating and working with activity policies.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual

@@ -19,8 +19,6 @@
   items:
   - name: Getting started
     href: getting-started-with-cloud-app-security.md
-  - name: Work with discovered apps
-    href: discovered-apps.md
 - name: Tutorials
   items:
   - name: Discover and manage shadow IT
@@ -43,8 +41,10 @@
     href: proxy-intro-aad.md
   - name: Working with the dashboard
     href: daily-activities-to-protect-your-cloud-environment.md
-  - name: Working with the risk score
+  - name: Working with App risk scores
     href: risk-score.md
+  - name: Working with discovered apps
+    href: discovered-apps.md
 - name: How-to guides
   items:
   - name: Basic set up

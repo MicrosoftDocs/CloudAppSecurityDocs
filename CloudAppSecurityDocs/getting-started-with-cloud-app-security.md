@@ -3,10 +3,10 @@
 
 title: Deploy Cloud App Security
 description: This quickstart outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
-ms.date: 8/28/2019
+manager: shsagir
+ms.date: 9/9/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -46,10 +46,15 @@ Your organization must have a license to use Cloud App Security. For pricing det
 
 ## To access the portal
 
-To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com).
-You can also access the portal through the **Microsoft 365 admin center** by clicking the Admin centers icon. ![O365 admin centers icon](./media/o365-admin-centers-icon.png "O365 admin centers icon") Then select **Cloud App Security**.
+To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **Microsoft 365 admin center**, as follows:
 
-![Access from O365](./media/access-from-o365.png "Access from O365")
+1. In the Microsoft 365 admin center, click the **App launcher** icon ![Office 365 app launcher icon](media/o365-admin-centers-icon.png), and then select **Security**.
+
+    ![Access from Office 365](media/access-from-o365.png)
+
+1. In the Microsoft 365 security page, click **More resources**, and then select **Cloud App Security**.
+
+    ![Select Cloud App Security](media/access-from-o365-s2.png)
 
 ## Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 

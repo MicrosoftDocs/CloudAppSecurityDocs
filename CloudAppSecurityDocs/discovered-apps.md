@@ -2,18 +2,17 @@
 # required metadata
 
 title: Working with discovered apps in Cloud App Security
-description: This quickstart describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
+description: This article describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 05/23/2019
-ms.topic: quickstart
+author: shsagir
+ms.author: shsagir
+manager: shsagir
+ms.date: 9/3/2019
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 
 # optional metadata
 
@@ -26,52 +25,54 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Quickstart: Work with discovered apps
+# Working with discovered apps
 
 *Applies to: Microsoft Cloud App Security*
 
-This quickstart provides you with getting started information about how to monitor and manage discovered apps. The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
+The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, and the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
 
 ![cloud discovery dashboard](./media/cloud-discovery-dashboard.png)
 
 ## Review the Cloud Discovery Dashboard
 
 The first thing you should do to get a general picture of your Cloud Discovery apps is review the following information in the Cloud Discovery Dashboard:
- 
+
 1. First look at the overall cloud app use in your organization in the **High-level usage overview**.
 
-2. Then, dive one level deeper to see which are the **top categories** used in your org for each of the different use parameters. You can see how much of this usage is by Sanction apps.
+1. Then, dive one level deeper to see which are the **top categories** used in your org for each of the different use parameters. You can see how much of this usage is by Sanction apps.
 
-3. Go even deeper and see all the apps in a specific category in the **Discovered apps** tab.
+1. Go even deeper and see all the apps in a specific category in the **Discovered apps** tab.
 
-4. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
-5. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
+1. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
+1. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
 
-6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
+1. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
 
 ## Deep dive into Discovered apps
 
 If you want to deep dive into the data Cloud Discovery provides, use the filters to review which apps are risky and which are commonly used.
 
-
 For example, if you want to identify commonly used risky cloud storage and collaboration apps, you can use the Discovered apps page to filter for the apps you want. Then you can [unsanction or block](governance-discovery.md) them as follows:
 
 1. In the **Discovered apps** page, under **Browse by category** select both **Cloud storage** and **Collaboration**.
-2. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**
-3. For **Usage**, set **Users** to greater than 50 users and **Usage** for  **Transactions** to greater than 100.
-4. Set the **Security risk factor** for **Data at rest encryption** equals **Not supported**. Then set **Risk score** equals 6 or lower.
+
+1. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**
+
+1. For **Usage**, set **Users** to greater than 50 users and **Usage** for  **Transactions** to greater than 100.
+
+1. Set the **Security risk factor** for **Data at rest encryption** equals **Not supported**. Then set **Risk score** equals 6 or lower.
 
 ![Discovered app filters](./media/discovered-app-filters.png)
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they're unsanctioned, you can use a blocking script to block them from being used in your environment.
 
 Cloud discovery enables you to dive even deeper into your organization’s cloud usage. You can identify specific instances that are in use by investigating the discovered subdomains.
- 	 
+
 For example, you can differentiate between different SharePoint sites.
 
 This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
- ![subdomain information](./media/discovery-domains.png) 
+![subdomain information](./media/discovery-domains.png)
 
 ## Discover resources and custom apps
 
@@ -86,94 +87,94 @@ To view discovered resources:
 
 1. In the Cloud App Security portal, select **Discover** and then **Discovered resources**.
 
-  ![Discovered resources menu](./media/discovered-resources-menu.png) 
+    ![Discovered resources menu](./media/discovered-resources-menu.png)
 
-2. In the Discovered resource page, you can drill down into each resource to see what kinds of transactions occurred, who accessed it, and then drill down to investigate the users even further.
- 
-  ![Discovery resources](./media/discovery-resources.png) 
+1. In the Discovered resource page, you can drill down into each resource to see what kinds of transactions occurred, who accessed it, and then drill down to investigate the users even further.
 
-3. For custom apps, you can click the three buttons at the end of the row and select **Add custom app**. This will open the **Add custom app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
+   ![Discovery resources](./media/discovery-resources.png)
 
+1. For custom apps, you can click the three buttons at the end of the row and select **Add custom app**. This will open the **Add custom app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
 
 ## Generate Cloud Discovery executive report
 
 The best way to get an overview of Shadow IT use across your organization is by generating a Cloud Discovery executive report. This report identifies the top potential risks and helps you plan a workflow to mitigate and manage risks until they're resolved.
 
-To generate a Cloud Discovery executive report: 
+To generate a Cloud Discovery executive report:
 
 From the **Cloud Discovery dashboard**, click the three dots in the upper right corner of the menu and select **Generate Cloud Discovery executive report**.
 
 ## Exclude entities
 
-If you have system users, IP addresses, or machines that are noisy but uninteresting or apps that aren't relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.  
-  
-To create an exclusion:  
-  
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.  
-2. Click the **Exclude entities** tab.  
-3. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded machines** tab and click the + button to add your exclusion.
-4. Add a user alias, IP address, or machine name. We recommend adding information about why the exclusion was made.
-  
-     ![exclude user](./media/exclude-user.png "exclude user")  
-  
+If you have system users, IP addresses, or machines that are noisy but uninteresting or apps that aren't relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.
+
+To create an exclusion:
+
+1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+
+1. Click the **Exclude entities** tab.
+
+1. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded machines** tab and click the + button to add your exclusion.
+
+1. Add a user alias, IP address, or machine name. We recommend adding information about why the exclusion was made.
+
+    ![exclude user](./media/exclude-user.png "exclude user")
+
 ## Manage continuous reports
 
-Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:  
-  
+Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
+
 - The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn’t include data from Microsoft Defender ATP.
-  
-- The **Data source specific report** displays only information from a specific data source.  
-  
-To create a new continuous report:  
-  
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.  
-  
-2. Click the **Continuous report** tab.  
-  
-3. Click the **Create report** button.  
-  
-4. Enter a report name.  
-  
-5. Select the data sources you want to include (all or specific).  
-  
-6. Set the filters you want on the data. These filters can be **User groups**, **IP address tags**, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).  
-  
-    ![create custom continuous report](./media/create-custom-continuous-report.png) 
+
+- The **Data source specific report** displays only information from a specific data source.
+
+To create a new continuous report:
+
+1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+
+1. Click the **Continuous report** tab.
+
+1. Click the **Create report** button.
+
+1. Enter a report name.
+
+1. Select the data sources you want to include (all or specific).
+
+1. Set the filters you want on the data. These filters can be **User groups**, **IP address tags**, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).
+
+    ![create custom continuous report](./media/create-custom-continuous-report.png)
 
 > [!NOTE]
 > All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
 
-
 ## Deleting Cloud Discovery data
 
-There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:  
-  
-- If you manually uploaded log files and a long time passed before you updated the system with new log files and you don't want old data affecting your results.  
-  
-- When you set a new custom data view, it will apply only to new data from that point forward. So, you may want to erase old data and then upload your log files again to enable the custom data view to pick up events in the log file data.  
-  
-- If many users or IP addresses recently started working again after being offline for some time, their activity will be identified as anomalous and may give you false positive violations.  
-  
-To delete Cloud Discovery data:  
-  
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.  
-  
-2. Click the **Delete data** tab.  
-  
-    It's important to be sure you want to delete data before continuing - it can't be undone and it deletes **all** Cloud Discovery data in the system.  
-  
-3. Click the **Delete** button.  
-  
-    ![delete data](./media/delete-data.png "delete data")  
-  
-   > [!NOTE]  
-   >  The deletion process takes a few minutes and is not immediate.
+There are a number of reasons why you may want to delete your Cloud Discovery data. We recommend deleting it in the following cases:
+
+- If you manually uploaded log files and a long time passed before you updated the system with new log files and you don't want old data affecting your results.
+
+- When you set a new custom data view, it will apply only to new data from that point forward. So, you may want to erase old data and then upload your log files again to enable the custom data view to pick up events in the log file data.
+
+- If many users or IP addresses recently started working again after being offline for some time, their activity will be identified as anomalous and may give you false positive violations.
+
+To delete Cloud Discovery data:
+
+1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+
+1. Click the **Delete data** tab.
+
+    It's important to be sure you want to delete data before continuing - it can't be undone and it deletes **all** Cloud Discovery data in the system.
+
+1. Click the **Delete** button.
+
+    ![delete data](./media/delete-data.png "delete data")
+
+    > [!NOTE]
+    > The deletion process takes a few minutes and is not immediate.
 
 ## Next steps
- 
+
 [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
-
