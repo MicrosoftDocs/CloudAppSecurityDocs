@@ -4,9 +4,9 @@
 title: Log collector FTP configuration
 description: This article describes the process for modifying configuration for the Cloud App Security Cloud Discovery docker.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
