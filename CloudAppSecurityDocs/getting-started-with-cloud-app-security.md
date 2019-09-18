@@ -3,9 +3,9 @@
 
 title: Deploy Cloud App Security
 description: This quickstart outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/9/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance

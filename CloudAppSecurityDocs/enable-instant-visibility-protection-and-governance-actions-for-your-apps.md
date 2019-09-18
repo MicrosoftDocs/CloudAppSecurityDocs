@@ -4,9 +4,9 @@
 title: Connect apps to get visibility and control - Cloud App Security | Microsoft Docs
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

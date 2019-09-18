@@ -4,9 +4,9 @@
 title: Control which third-party cloud OAuth apps get permissions - Cloud App Security | Microsoft Docs
 description: This article provides information about how you can control, ban and allow third-party OAuth apps.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

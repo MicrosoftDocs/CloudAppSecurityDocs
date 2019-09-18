@@ -4,9 +4,9 @@
 title: Troubleshoot Conditional Access App Control
 description: This article provides a list of possible Conditional Access App Control issues and provides possible resolutions.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 6/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
