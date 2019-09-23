@@ -4,7 +4,7 @@
 title: Connect G Suite to Cloud App Security
 description: This article provides information about how to connect your G Suite to Cloud App Security using the API connector for visibility and control over use.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 6/17/2019

@@ -43,6 +43,17 @@ landingContent:
             url: getting-started-with-cloud-app-security.md
           - text: Best practices
             url: best-practices.md
+      - linkListType: learn
+        links:
+          - text: Read our e-books
+            url: e-books.md
+          - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
+            url: https://docs.microsoft.com/microsoft-365/
+      - linkListType: video
+        links:
+          - text: Watch our webinars
+            url: webinars.md
+
 
   # Card
   - title: Explore our top use cases
@@ -77,17 +88,3 @@ landingContent:
             url: risk-score.md
           - text: Working with discovered apps
             url: discovered-apps.md
-
-  # Card
-  - title: Additional resources
-    linkLists:
-      - linkListType: learn
-        links:
-          - text: Read our e-books
-            url: e-books.md
-          - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
-            url: https://docs.microsoft.com/microsoft-365/
-      - linkListType: video
-        links:
-          - text: Watch our webinars
-            url: webinars.md

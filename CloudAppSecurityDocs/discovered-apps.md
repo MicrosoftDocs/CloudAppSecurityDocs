@@ -4,9 +4,9 @@
 title: Working with discovered apps in Cloud App Security
 description: This article describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/3/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

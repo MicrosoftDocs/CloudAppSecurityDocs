@@ -4,9 +4,9 @@
 title: Investigate cloud app risks & suspicious activity - Cloud App Security | Microsoft Docs
 description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

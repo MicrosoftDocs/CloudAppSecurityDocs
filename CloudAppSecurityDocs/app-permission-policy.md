@@ -4,9 +4,9 @@
 title: Create policies to control OAuth apps in Cloud App Security
 description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
