@@ -4,10 +4,10 @@
 title: Protect with Microsoft Cloud App Security Conditional Access App Control
 description: This article provides information about how the Cloud App Security Conditional Access App Control reverse proxy works.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
-ms.date: 8/25/2019
+manager: shsagir
+ms.date: 9/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -70,6 +70,17 @@ Conditional Access App Control enables you to create policies that take into acc
 - Domain-joined devices
 - Client certificates deployment
 
+To configure a policy to leverage device management via client certificates:
+
+1. Go to the settings cog and choose **Device identification**.
+1. Upload one or more root or intermediate certificates.
+1. After the certificate is uploaded, you can create [access policies](access-policy-aad.md) and [session policies](session-policy-aad.md) based on **Device tag** and **Valid client certificate**.
+
+    ![Conditional access app control device ID](./media/caac-device-id.png)
+
+> [!NOTE]
+> A certificate is only requested from a user if the session matches a policy that uses the valid client certificate filter.
+
 ### Compliant and domain joined devices
 
 Azure AD conditional access enables compliant and domain-joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
@@ -105,11 +116,15 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 
 > [!NOTE]
 > Using the **Client app** filter in access policies can cause the resulting user session to be proxied by Cloud App Security.
+>
+> In access policies, when using the **Client app** filter it defaults to **Mobile and desktop**. This can cause the resulting user session to be proxied by Cloud App Security. To void this behavior, set the value to **Browser**.
+>
+> By default, evaluating whether an app is mobile or desktop can cause the resulting user session to be proxied by Cloud App Security. To avoid this behavior, set the Client App filter in your Access policies to be equal to **Browser**.
 
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client applications and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
 
-By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect can be self-onboarded. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
+<a name="featured-apps"></a>By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect can be self-onboarded. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
