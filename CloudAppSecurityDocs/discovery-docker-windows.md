@@ -4,9 +4,9 @@
 title: Roll out continuous reports for Cloud App Security using a Docker on Windows | Microsoft Docs
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Windows in an on-premises server.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

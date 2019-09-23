@@ -4,9 +4,9 @@
 title: Set up your organization's settings in Cloud App Security
 description: This article explains how to provide information about your organization in Cloud App Security.
 keywords:
-author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

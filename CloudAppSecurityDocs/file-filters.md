@@ -4,9 +4,9 @@
 title: Understanding file data and filters available in Cloud App Security
 description: This reference article provides information about the types of files and file filters used by Cloud App Security.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MSn
+manager: shsagirn
 ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
