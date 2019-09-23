@@ -26,6 +26,14 @@ ms.suite: ems
 [« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
 [Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
+Session controls in Microsoft Cloud App Security work with the featured apps. For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
+
+## Prerequisites
+
+To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
+
+## To deploy featured apps
+
 Follow these steps to configure featured apps to be controlled by Microsoft Cloud App Security Conditional Access App Control.
 
 **Step 1: [Go to the Azure AD portal and create a conditional access policy for the apps and route the session to Cloud App Security](#add-azure-ad)**
@@ -35,9 +43,6 @@ Follow these steps to configure featured apps to be controlled by Microsoft Clou
 **Step 3: [Verify the apps are configured to use access and session controls](#portal)**
 
 **Step 4: [Test the deployment](#test)**
-
-> [!NOTE]
-> To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure AD Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
 
 ## Step 1: Create an Azure AD conditional access test policy <a name="add-azure-ad"></a>
 
@@ -55,14 +60,14 @@ Follow these steps to configure featured apps to be controlled by Microsoft Clou
 
    ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
 
-      > [!NOTE]
-      > Conditional Access App Control supports any SAML or Open ID Connect app that is configured with single sign-on in Azure AD, including these featured apps. Non-featured apps can be configured with access control in the Cloud App Security portal by making a request to onboarded them with session control.
-
 1. Click **Enable** and **Save**.
 
 ## Step 2: Sign in to each app using a user scoped to the policy<a name="sign-in-scoped"></a>
 
-After you've created the policy, sign in to each app configured in that policy. Make sure you sign in using a user configured in the policy. Make sure to first sign out of existing sessions.
+> [!NOTE]
+> Before proceeding, make sure to first sign out of existing sessions.
+
+After you've created the policy, sign in to each app configured in that policy. Make sure you sign in using a user configured in the policy.
 
 Cloud App Security will sync your policy details to its servers for each new app you sign in to. This may take up to one minute.
 

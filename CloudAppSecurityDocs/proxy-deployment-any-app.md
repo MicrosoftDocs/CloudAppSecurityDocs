@@ -30,7 +30,7 @@ ms.suite: ems
 
 Session controls in Microsoft Cloud App Security can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure Active Directory (Azure AD) Application Proxy with Session controls.
 
-For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md).
+For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
 
 ## Prerequisites
 
@@ -93,12 +93,12 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
 ## Step 3: Configure the app that you are deploying<a name="conf-app"></a>
 
-1. Go to the app that you are deploying. The page you see depends on whether the app is recognized. Do one of the following:
+Go to the app that you are deploying. The page you see depends on whether the app is recognized. Do one of the following:
 
-| App status | Description | Do this |
+| App status | Description | Steps |
 | --- | --- | --- |
 | Not recognized | You will see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](#add-app).<br> 2. [Add the domains for the app](#add-domains), and then return to the app and refresh the page.<br> 3. [Install the certificates for the app](#install-certs). |
-| Recognized | You will see an onboarding page prompting you to continue the app configuration process. | 1. Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](#add-domains), and then return to the app page.<br> 2. [Install the certificates for the app](#install-certs). |
+| Recognized | You will see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](#install-certs). <br><br> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](#add-domains), and then return to the app page. |
 
 ### To add a new app<a name="add-app"></a>
 
@@ -155,7 +155,7 @@ For example, if you have configured a policy that blocks downloading files for a
 
 ## Step 4: Verify that the app is working correctly<a name="verify-app"></a>
 
-1. Verify that the sign in flow correctly works.
+1. Verify that the sign in flow works correctly.
     <!--
     > [!NOTE]
     > Some apps issue a nonce hash during authentication that may break the sign-in process. If this happens, see the Troubleshooting Guide to resolve the issue.-->
