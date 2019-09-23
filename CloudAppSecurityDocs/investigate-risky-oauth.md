@@ -4,9 +4,9 @@
 title: Investigate risky OAuth apps - Cloud App Security | Microsoft Docs
 description: This article provides information on how to investigate risky OAuth apps in Cloud App Security.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

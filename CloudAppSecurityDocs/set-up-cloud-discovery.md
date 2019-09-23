@@ -3,7 +3,7 @@
 
 title: Deploy Cloud Discovery - Cloud App Security | Microsoft Docs
 description: This article describes the setup procedure for getting Cloud Discovery working.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
