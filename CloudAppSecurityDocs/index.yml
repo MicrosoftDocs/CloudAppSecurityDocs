@@ -11,9 +11,9 @@ metadata:
   ms.subservice: na
   ms.topic: landing-page # Required
   ms.collection: na
-  author: ShlomoSagir-MS #Required; your GitHub user alias, with correct capitalization.
+  author: shsagir #Required; your GitHub user alias, with correct capitalization.
   ms.author: shsagir #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/26/2019 #Required; mm/dd/yyyy format.
+  ms.date: 09/24/2019 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -43,6 +43,44 @@ landingContent:
             url: getting-started-with-cloud-app-security.md
           - text: Best practices
             url: best-practices.md
+
+  # Card
+  - title: Explore our top use cases
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Discover and manage shadow IT in your network
+            url: tutorial-shadow-it.md
+          - text: Investigate risky users
+            url: tutorial-ueba.md
+          - text: Investigate risky OAuth apps
+            url: investigate-risky-oauth.md
+          - text: Block download of sensitive information
+            url: use-case-proxy-block-session-aad.md
+          - text: Protect files with admin quarantine
+            url: use-case-admin-quarantine.md
+          - text: Apply Azure Information Protection classification labels
+            url: use-case-information-protection.md
+          - text: Extend governance to endpoint remediation
+            url: tutorial-flow.md
+
+  # Card
+  - title: Concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Protect apps with Conditional Access App Control
+            url: proxy-intro-aad.md
+          - text: Working with the dashboard
+            url: daily-activities-to-protect-your-cloud-environment.md
+          - text: Working with App risk scores
+            url: risk-score.md
+          - text: Working with discovered apps
+            url: discovered-apps.md
+
+  # Card
+  - title: Additional resources
+    linkLists:
       - linkListType: learn
         links:
           - text: Read our e-books
@@ -53,127 +91,3 @@ landingContent:
         links:
           - text: Watch our webinars
             url: webinars.md
-
-  # Card
-  - title: Address Shadow IT
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Discover and manage shadow IT in your network
-            url: tutorial-shadow-it.md
-      - linkListType: concept
-        links:
-          - text: Working with the dashboard
-            url: daily-activities-to-protect-your-cloud-environment.md
-          - text: Working with the discovered apps
-            url: discovered-apps.md
-          - text: Working with App risk scores
-            url: risk-score.md
-      - linkListType: deploy
-        links:
-          - text: Deploy Cloud Discovery
-            url: set-up-cloud-discovery.md
-      - linkListType: how-to-guide
-        links:
-          - text: Integrate with Microsoft Defender Advanced Threat Protection
-            url: wdatp-integration.md
-          - text: Cloud Discovery enrichment
-            url: cloud-discovery-aad-enrichment.md
-      - linkListType: video
-        links:
-          - text: Shadow IT discovery beyond the corporate network
-            url: https://www.youtube.com/watch?v=f8hbvbY1Hnc
-
-  # Card
-  - title: Identify and manage risky users
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Investigate risky users
-            url: tutorial-ueba.md
-      - linkListType: concept
-        links:
-          - text: Working with discovery data
-            url: working-with-cloud-discovery-data.md
-      - linkListType: how-to-guide
-        links:
-          - text: Investigate activities using the API
-            url: investigate-activities-api.md
-          - text: Activity policies
-            url: user-activity-policies.md
-
-  # Card
-  - title: Detect and control risky OAuth apps
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Investigate risky OAuth apps
-            url: investigate-risky-oauth.md
-      - linkListType: how-to-guide
-        links:
-          - text: Detect risky OAuth apps using alerts
-            url: app-permission-policy.md
-          - text: OAuth app policies
-            url: app-permission-policy.md
-          - text: OAuth app auditing
-            url: manage-app-permissions.md
-
-  # Card
-  - title: Protect sensitive information
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Block download of sensitive information
-            url: use-case-proxy-block-session-aad.md
-      - linkListType: concept
-        links:
-          - text: Protect apps with Conditional Access App Control
-            url: proxy-intro-aad.md
-      - linkListType: how-to-guide
-        links:
-          - text: Deploy Conditional Access App Control for featured apps
-            url: proxy-deployment-aad.md
-          - text: Onboard and deploy Conditional Access App Control for any app
-            url: proxy-deployment-any-app.md
-          - text: Session policies
-            url: session-policy-aad.md
-
-  # Card
-  - title: Locate and quarantine risky files
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Protect files with admin quarantine
-            url: use-case-admin-quarantine.md
-      - linkListType: how-to-guide
-        links:
-          - text: File policies
-            url: data-protection-policies.md
-
-  # Card
-  - title: Protect confidential files
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Apply Azure Information Protection classification labels
-            url: use-case-information-protection.md
-      - linkListType: how-to-guide
-        links:
-          - text: File policies
-            url: data-protection-policies.md
-          - text: Azure Information Protection integration
-            url: azip-integration.md
-          - text: Information protection policies
-            url: policies-information-protection.md
-
-  # Card
-  - title: Extend and customize governance
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Extend governance to endpoint remediation
-            url: tutorial-flow.md
-      - linkListType: how-to-guide
-        links:
-          - text: Integrate with Flow for custom alert automation
-            url: flow-integration.md
