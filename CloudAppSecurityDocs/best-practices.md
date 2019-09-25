@@ -32,7 +32,7 @@ The best practices discussed in this article include:
 > * [Block and protect download of sensitive data to unmanaged or risky devices](#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)
 > * [Secure collaboration with external users by enforcing real-time session controls](#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)
 > * [Detect cloud threats, compromised accounts, malicious insiders, and ransomware](#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
-> * [Use the audit trail of activities for forensic investigations](#view-an-audit-trail-of-activities-for-forensic-investigations)
+> * [Use the audit trail of activities for forensic investigations](#use-the-audit-trail-of-activities-for-forensic-investigations)
 > * [Secure IaaS services and custom apps](#secure-iaas-services-and-custom-apps)
 
 ## Discover and assess cloud apps
