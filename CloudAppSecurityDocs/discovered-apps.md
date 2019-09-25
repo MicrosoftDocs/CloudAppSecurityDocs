@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/3/2019
+ms.date: 09/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -101,7 +101,9 @@ The best way to get an overview of Shadow IT use across your organization is by 
 
 To generate a Cloud Discovery executive report:
 
-From the **Cloud Discovery dashboard**, click the three dots in the upper right corner of the menu and select **Generate Cloud Discovery executive report**.
+1. From the **Cloud Discovery dashboard**, click the three dots in the upper-right corner of the dashboard, and then select **Generate Cloud Discovery executive report**.
+1. Optionally, change the report name.
+1. Click **Generate**.
 
 ## Exclude entities
 
