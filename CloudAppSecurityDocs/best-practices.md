@@ -60,7 +60,7 @@ Integrating Cloud App Security with Microsoft Defender Advanced Threat Protectio
 ---
 
 **Best practice**: Manage OAuth apps that are authorized by your users  
-**Detail**: Many users casually grant OAuth permissions to third-party apps to access their account information and, in so doing, inadvertently also give access to their data in other cloud apps. Usually, IT has no visibility into these apps in order to weigh the security risk of an app against the productivity benefit that it provides.
+**Detail**: Many users casually grant OAuth permissions to third-party apps to access their account information and, in so doing, inadvertently also give access to their data in other cloud apps. Usually, IT has no visibility into these apps making it difficult to weigh the security risk of an app against the productivity benefit that it provides.
 
 Cloud App Security provides you with the ability to investigate and monitor the app permissions your users granted. You can use this information to identify a potentially suspicious app and, if you determine that it is risky, you can be ban access to it.  
 **For more information**:
@@ -79,7 +79,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ## Limit exposure of shared data and enforce collaboration policies
 
 **Best practice**: Connect Office 365  
-**Detail**: Connecting Office 365 to Cloud App Security gives you immediate visibility into your users activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, PowerBI, Exchange and Dynamics.  
+**Detail**: Connecting Office 365 to Cloud App Security gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
@@ -88,7 +88,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ---
 
 **Best practice**: Connect third-party apps  
-**Detail**: Connecting third-party apps to Cloud App Security gives you improved insights into your users activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [AWS](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [G Suite](connect-google-apps-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
+**Detail**: Connecting third-party apps to Cloud App Security gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [G Suite](connect-google-apps-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
@@ -108,7 +108,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ---
 
 **Best practice**: Create policies to remove sharing with personal accounts  
-**Detail**: Connecting Office 365 to Cloud App Security gives you immediate visibility into your users activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, PowerBI, Exchange and Dynamics.  
+**Detail**: Connecting Office 365 to Cloud App Security gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
 **For more information**:
 
 * [Governing connected apps](governance-actions.md)
@@ -116,7 +116,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ## Discover, classify, label, and protect regulated and sensitive data stored in the cloud
 
 **Best practice**: Integrate with Azure Information Protection  
-**Detail**: Integrating with Azure Information Protection gives you the capability to automatically apply classification labels and optionally add encryption protection. Once the integration is turned on, you can apply labels as a governance action, view files by classification, investigate files by classification level, and create granular policies to make sure classified files are being handled properly. If you do not turn on the integration, you cannot benefit from the ability to automatically scan, label and encrypt files in the cloud.  
+**Detail**: Integrating with Azure Information Protection gives you the capability to automatically apply classification labels and optionally add encryption protection. Once the integration is turned on, you can apply labels as a governance action, view files by classification, investigate files by classification level, and create granular policies to make sure classified files are being handled properly. If you do not turn on the integration, you cannot benefit from the ability to automatically scan, label, and encrypt files in the cloud.  
 **For more information**:
 
 * [Azure Information Protection integration](azip-integration.md)
@@ -198,7 +198,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 ---
 
 **Best practice**: Detect activity from unexpected locations or countries  
-**Detail**: Create an activity policy to notify you when users login from unexpected locations or countries. These notifications can alert you to possibly compromised sessions in your environment so that you can detect and remediate threats before they occur.  
+**Detail**: Create an activity policy to notify you when users log in from unexpected locations or countries. These notifications can alert you to possibly compromised sessions in your environment so that you can detect and remediate threats before they occur.  
 **For more information**:
 
 * [Threat protection policies](policies-threat-protection.md)
@@ -206,7 +206,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 ---
 
 **Best practice**: Create OAuth app policies  
-**Detail**: Create an OAuth app policy to notify you when an OAuth app meet certain criteria. For example, you can choose to be notified when a specific apps that requires a high permission level was accessed by more than 100 users.  
+**Detail**: Create an OAuth app policy to notify you when an OAuth app meets certain criteria. For example, you can choose to be notified when a specific app that requires a high permission level was accessed by more than 100 users.  
 **For more information**:
 
 * [OAuth app policies](app-permission-policy.md)
@@ -225,8 +225,8 @@ When dismissing alerts, it’s important to investigate and understand why they 
 
 ## Secure IaaS services and custom apps
 
-**Best practice**: Connect Azure and Amazon Web Services (AWS)  
-**Detail**: Connecting each of these cloud storage apps to Cloud App Security helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user accounts, and other threats in your environment. For example, you can to identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
+**Best practice**: Connect Azure and AWS  
+**Detail**: Connecting each of these cloud storage apps to Cloud App Security helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
 **For more information**:
 
 * [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
@@ -237,7 +237,7 @@ When dismissing alerts, it’s important to investigate and understand why they 
 **Best practice**: Review CSPM for Azure and AWS  
 **Detail**: Integrating with Azure Security Center provides you with a security configuration assessment of your Azure environment. The assessment provides recommendations for missing configuration and security control. Reviewing these recommendations helps you identify anomalies and potential vulnerabilities in your environment, and navigate directly in the relevant location in the Azure Security portal to resolve them.
 
-AWS gives you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security. With these recommendations, you can to monitor the compliance status of your AWS accounts.  
+AWS gives you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security. With these recommendations, you can monitor the compliance status of your AWS accounts.  
 **For more information**:
 
 * [Security configuration for Azure](security-config.md)
@@ -246,7 +246,7 @@ AWS gives you the ability to gain visibility into your security configurations r
 ---
 
 **Best practice**: Onboard custom apps  
-**Detail**: To gain additional visibility into activities from your line of business apps, you can onboard custom apps to Cloud App Security. Once custom apps are configured, you see information about whose using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
+**Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Cloud App Security. Once custom apps are configured, you see information about whose using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
 
 Additionally, you can onboard a custom app as a Conditional Access App Control app to monitor their low-trust sessions.  
 **For more information**:
