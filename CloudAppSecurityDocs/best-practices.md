@@ -198,7 +198,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 ---
 
 **Best practice**: Detect activity from unexpected locations or countries  
-**Detail**: Create an activity policy to notify you when users log in from unexpected locations or countries. These notifications can alert you to possibly compromised sessions in your environment so that you can detect and remediate threats before they occur.  
+**Detail**: Create an activity policy to notify you when users sign in from unexpected locations or countries. These notifications can alert you to possibly compromised sessions in your environment so that you can detect and remediate threats before they occur.  
 **For more information**:
 
 * [Threat protection policies](policies-threat-protection.md)
