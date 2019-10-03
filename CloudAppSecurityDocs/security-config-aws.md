@@ -4,9 +4,9 @@
 title: Get security configuration recommendations for AWS - Cloud App Security | Microsoft Docs
 description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Amazon Web Services.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

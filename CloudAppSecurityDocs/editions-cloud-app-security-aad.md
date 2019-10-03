@@ -4,9 +4,9 @@
 title: Discovery capability differences for Cloud App Security and Azure AD
 description: This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure AD.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/29/2019
 ms.topic: overview
 ms.collection: M365-security-compliance

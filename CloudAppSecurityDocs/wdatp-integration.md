@@ -4,9 +4,9 @@
 title: Integrate Microsoft Defender ATP with Cloud App Security
 description: This article describes how to integrate Microsoft Defender Advanced Threat Protection with Cloud App Security for enhanced visibility into Shadow IT and risk management.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

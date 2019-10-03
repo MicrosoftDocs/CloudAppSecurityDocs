@@ -4,9 +4,9 @@
 title: Attest your apps - Cloud App Security | Microsoft Docs
 description: This article provides instructions for attesting your apps in Cloud App Security. 
 keywords:
-author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

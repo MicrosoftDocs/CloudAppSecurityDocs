@@ -1,7 +1,7 @@
 ---
 title: Extend governance to endpoint remediation | Microsoft Docs
 description: This tutorial describes the process to configure Microsoft Cloud App Security policy alerts to trigger Microsoft Flow workflows to run Microsoft Defender Advanced Threat Protection remediation actions.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial

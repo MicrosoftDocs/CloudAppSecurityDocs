@@ -4,9 +4,9 @@
 title: SIEM integration with Cloud App Security
 description: This article provides information integrating your SIEM with Cloud App Security.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -4,9 +4,9 @@
 title: Manage alerts raised in Cloud App Security
 description: This article explains how to work with alerts raised in the Cloud App Security portal.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

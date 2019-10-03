@@ -3,7 +3,7 @@
 # required metadata
 title: Read our e-books - Cloud App Security | Microsoft Docs
 description: Displays a listing of ebooks, including a description.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
