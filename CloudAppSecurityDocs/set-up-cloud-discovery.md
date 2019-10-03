@@ -64,6 +64,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Cisco IronPort WSA
 - Cisco Meraki – URLs log
 - Clavister NGFW (Syslog)
+- ContentKeeper
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -103,6 +104,7 @@ Data attributes (according to vendor documentation):
 | Cisco Ironport WSA | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Cisco Meraki | **Yes** | **Yes** | No | **Yes** | No | No |
 | Clavister NGFW (Syslog) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| ContentKeeper | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
