@@ -34,6 +34,21 @@ Released October 6, 2019
 - **New Cloud Discovery ContentKeeper log parser**  
 Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support ContentKeeper log formats. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
+- **New Detections**  
+The following new anomaly detection policies are available out-of-the-box and automatically enabled:
+
+  - **Suspicious email deletion activity (Preview)**  
+    Alerts you when a user performs unusual email deletion activities. This policy can help you detect user mailboxes that may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
+
+  - **Multiple Power BI report sharing (Preview)**  
+    Alerts you when a user performs an unusual amount of Power BI report sharing activities, compared to the learned baseline.
+
+  - **Multiple VM creation activities (Preview)**  
+    Alerts you when a user performs an unusual amount of VM creation activities, compared to the learned baseline. Currently applies to Azure.
+
+  - **Multiple storage deletion activities (Preview)**  
+    Alerts you when a user performs an unusual amount of storage deletion activities, compared to the learned baseline. Currently applies to Azure.
+
 ## Cloud App Security release 158
 
 Released September 15, 2019
