@@ -106,7 +106,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
    > - A single Log collector can handle multiple data sources.
    > - Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
 
-4. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon](./media/copy-icon.png). You will need this later.
+4. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon, ![copy to clipboard icon](./media/copy-icon.png). You will need this later.
 
 5. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
@@ -117,18 +117,18 @@ The following steps describe the deployment in Windows. The deployment steps for
 
 1. Open a PowerShell terminal as an administrator on your Windows machine.
 
-2. Use the following command to download the Windows Docker installer:<br>
+2. Run the following command to download the Windows Docker installer PowerShell script file to a temp path:
  `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
-<br>If you want to validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature).
+ To validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature)
 
-3. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`.
+3. Set the PowerShell script execution by running `Set-ExecutionPolicy RemoteSigned`
 
-4. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again. **Make sure the Docker client is set to use Linux containers.**
+4. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+This installs the Docker client on your Windows machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again. **Make sure the Docker client is set to use Linux containers.**
 
-5. After each restart, from the directory into which you saved the installer, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
+5. After each restart, open a PowerShell terminal as an administrator on your Windows machine, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-6. Before the installation completes, you will have to paste in the run command you copied earlier.
+6. Before the installation completes, you will have to paste in the run command you copied earlier (see Step 1 number 4).
 
 7. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
