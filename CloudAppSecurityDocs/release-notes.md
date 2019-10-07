@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/25/2019
+ms.date: 10/06/2019
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -41,13 +41,13 @@ The following new anomaly detection policies are available out-of-the-box and au
     Alerts you when a user performs unusual email deletion activities. This policy can help you detect user mailboxes that may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
   - **Multiple Power BI report sharing (Preview)**  
-    Alerts you when a user performs an unusual amount of Power BI report sharing activities, compared to the learned baseline.
+    Alerts you when a user performs an unusual number of Power BI report sharing activities, compared to the learned baseline.
 
   - **Multiple VM creation activities (Preview)**  
-    Alerts you when a user performs an unusual amount of VM creation activities, compared to the learned baseline. Currently applies to Azure.
+    Alerts you when a user performs an unusual number of VM creation activities, compared to the learned baseline. Currently applies to Azure.
 
   - **Multiple storage deletion activities (Preview)**  
-    Alerts you when a user performs an unusual amount of storage deletion activities, compared to the learned baseline. Currently applies to Azure.
+    Alerts you when a user performs an unusual number of storage deletion activities, compared to the learned baseline. Currently applies to Azure.
 
 ## Cloud App Security release 158
 
