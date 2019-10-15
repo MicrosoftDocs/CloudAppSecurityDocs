@@ -4,9 +4,9 @@
 title: Investigate activities using the API - Cloud App Security | Microsoft Docs
 description: This article provides information on how to use the API to investigate user activity in Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

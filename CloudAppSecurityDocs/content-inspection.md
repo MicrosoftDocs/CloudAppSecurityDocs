@@ -4,9 +4,9 @@
 title: How Cloud App Security performs content inspection
 description: This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

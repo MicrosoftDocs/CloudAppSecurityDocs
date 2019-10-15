@@ -4,9 +4,9 @@
 title: Set IP ranges and tags - Cloud App Security | Microsoft Docs
 description: This article provides instructions for working with IP tags and IP categories.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
