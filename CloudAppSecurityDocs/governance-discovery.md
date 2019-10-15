@@ -4,9 +4,9 @@
 title: Blocking discovered apps - Cloud App Security | Microsoft Docs
 description: This article describes the procedure for exporting block scripts for discovered apps. 
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

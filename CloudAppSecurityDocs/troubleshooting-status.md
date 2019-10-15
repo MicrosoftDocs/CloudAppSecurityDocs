@@ -4,9 +4,9 @@
 title: Troubleshooting Cloud App Security service status
 description: This article provides a link to the Cloud App Security status page
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
