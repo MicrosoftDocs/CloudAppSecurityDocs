@@ -4,9 +4,9 @@
 title: Troubleshooting content inspection errors - Cloud App Security | Microsoft Docs
 description: This article provides a list of content inspection statuses and their meanings.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

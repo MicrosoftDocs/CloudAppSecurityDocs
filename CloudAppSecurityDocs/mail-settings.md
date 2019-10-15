@@ -4,9 +4,9 @@
 title: Set email notification preferences - Cloud App Security | Microsoft Docs
 description: This article provides information about how to personalize the email notifications sent by Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

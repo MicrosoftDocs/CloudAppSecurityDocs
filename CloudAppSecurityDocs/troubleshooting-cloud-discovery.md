@@ -4,9 +4,9 @@
 title: Troubleshooting Cloud Discovery errors - Cloud App Security | Microsoft Docs
 description: This article provides a list of Cloud Discovery frequent errors and resolution recommendations for each.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
