@@ -107,6 +107,9 @@ Cloud App Security now includes new built-in Activity policy templates for AWS s
 - **Notice: End of support for TLS 1.0 and 1.1 on September 8**  
 Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
 
+- **Enhanced logic for interactive sign-in activities (gradual rollout)**  
+We are gradually rolling out new logic to identify if an Azure Active Directory sign-in activity is interactive. The new logic enhances Cloud App Security's ability to only surface sign-in activities that are initiated by a user.
+
 ## Cloud App Security release 154
 
 Released July 21, 2019
@@ -167,6 +170,8 @@ Cloud App Security now supports configuring the **Trash** governance action for 
 Cloud App Security now supports the **Trash** governance action for Google Drive – This governance action provides you with the ability to move Google Drive files to the trash folder.
 - **New permission for App admin and Group admin roles**  
 *App/instance admin* and *User group admin* roles now support read-only access.
+- **Legacy authentication sign-in activities (gradual rollout)**  
+Cloud App Security now surfaces Azure Active Directory sign-in activities that use legacy protocols such as ActiveSync. These sign-in activities can be viewed in the activity log and can be used when configuring policies.
 
 ## Cloud App Security release 150
 

@@ -70,6 +70,14 @@ The higher the sensitivity level, the lower the suppression that is applied as p
 
 * This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Cloud App Security uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Not every file is scanned, but heuristics are used to look for files that are potentially risky. After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about that type of malware the file is infected with.
 
+    > [!NOTE]
+    >- For Office 365 malware detection, you need a valid license for Office 365 Advanced Threat Protection P1.
+    >- Cloud App Security supports malware detection the following apps:
+    >    - Box
+    >    - Dropbox
+    >    - G Suite
+    >    - Office 365
+
 ### Activity from anonymous IP addresses
 
 * This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device’s IP address, and may be used for malicious intent. This detection uses a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
