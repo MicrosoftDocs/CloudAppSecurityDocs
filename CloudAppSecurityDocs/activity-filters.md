@@ -4,9 +4,9 @@
 title: Visibility into cloud app activities - Cloud App Security | Microsoft Docs
 description: This article provides a list of activities, filters and match parameters that can be applied to activity policies.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

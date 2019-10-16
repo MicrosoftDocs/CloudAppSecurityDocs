@@ -2,9 +2,9 @@
 title: Integrate Azure Advanced Threat Protection with Cloud App Security
 description: This article provides information about how to leverage Azure Advanced Threat Protection insights in Cloud App Security for hybrid risk detection.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

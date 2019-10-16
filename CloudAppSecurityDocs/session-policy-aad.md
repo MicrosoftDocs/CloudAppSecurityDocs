@@ -4,9 +4,9 @@
 title: Create session policies in Cloud App Security
 description: This article describes the procedure for setting up a Cloud App Security Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -4,9 +4,9 @@
 title: Overview of threat protection scenario - Cloud App Security | Microsoft Docs
 description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
