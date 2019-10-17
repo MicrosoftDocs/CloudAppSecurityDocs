@@ -53,7 +53,7 @@ Create a dedicated project in GCP under your organization to enable integration 
     ![Screenshot showing GCP create project dialog](media/connect-gcp-create-project.png)
 
 > [!NOTE]
-> After the project is created, in the tool bar, click on **Google Cloud Platform**. Make sure that the right project is selected in the drop-down at the top.
+> After the project is created, in the tool bar, make sure that the dedicated project is selected in the drop-down at the top.
 
 ### Create a dedicated service account for the integration
 
@@ -68,7 +68,7 @@ Create a dedicated project in GCP under your organization to enable integration 
 
 1. Under **IAM & admin**, click **IAM**.
 
-    1. Switch to integration project level.
+    1. Verify that you are at the integration project level.
     1. Click on the edit icon for the dedicated service account.
     1. Specify the **Role** as **Pub/Sub Admin** and then click **Save**.
 
@@ -106,7 +106,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 In the **App connectors** page, to provide the GCP connection details, do one of the following:
 
-**For a new connector**
+**For a GCP instance that is not part of a connected G Suite organization**
 
 1. Click the plus sign followed by **Google Cloud Platform**.
 
@@ -122,7 +122,7 @@ In the **App connectors** page, to provide the GCP connection details, do one of
     > [!NOTE]
     > We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
 
-**For an existing connector**
+**For a GCP instance that is part of a connected G Suite organization**
 
 1. In the list of connectors, at the end of row in which the G Suite connector appears, click the three dots and then click **Add Google Cloud Platform**.
 
