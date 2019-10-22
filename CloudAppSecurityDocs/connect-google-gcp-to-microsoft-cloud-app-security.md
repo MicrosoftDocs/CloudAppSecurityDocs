@@ -55,7 +55,10 @@ Create a dedicated project in GCP under your organization to enable integration 
     ![Screenshot showing GCP create project dialog](media/connect-gcp-create-project.png)
 
 > [!NOTE]
-> After the project is created, in the tool bar, make sure that the dedicated project is selected in the drop-down at the top.
+> After the project is created, make sure that:
+>
+> * The dedicated project is selected in the drop-down at the top.
+> * The Pub/Sub API is enabled. To enable, go to the Pub/Sub tab.
 
 ### Create a dedicated service account for the integration
 
