@@ -49,8 +49,8 @@ Integrating Cloud App Security with Microsoft Defender Advanced Threat Protectio
 
 ---
 
-**Best practice**: Configure App Discovery policies to proactively identify risky, non-complaint, and trending apps  
-**Details**: App discovery policies make it easier to track of the significant discovered applications in your organization to help you manage these applications efficiently. Create Cloud Discovery policies to receive alerts when discovering newly discovered apps that are identified as either risky, non-compliant, trending, or high-volume.  
+**Best practice**: Configure App Discovery policies to proactively identify risky, non-compliant, and trending apps  
+**Details**: App Discovery policies make it easier to track of the significant discovered applications in your organization to help you manage these applications efficiently. Create policies to receive alerts when detecting new apps that are identified as either risky, non-compliant, trending, or high-volume.  
 **For more information**:
 
 * [Cloud Discovery policies](cloud-discovery-policies.md)
