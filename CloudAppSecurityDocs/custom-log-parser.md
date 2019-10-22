@@ -4,9 +4,9 @@
 title: Cloud App Security custom log parser for logs that are't supported
 description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

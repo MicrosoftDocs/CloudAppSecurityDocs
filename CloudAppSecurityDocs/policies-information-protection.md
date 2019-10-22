@@ -3,8 +3,8 @@
 
 title: Information protection policies - Cloud App Security | Microsoft Docs
 description: This topic outlines the steps to configure many information protection policies in Cloud App Security.
-author: rkarlin
-ms.author: rkarlin
+author: shsagir
+ms.author: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

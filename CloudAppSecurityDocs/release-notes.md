@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/25/2019
+ms.date: 10/06/2019
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -26,6 +26,28 @@ ms.custom: seodec18
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## Cloud App Security release 159
+
+Released October 6, 2019
+
+- **New Cloud Discovery ContentKeeper log parser**  
+Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support ContentKeeper log formats. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **New Detections**  
+The following new anomaly detection policies are available out-of-the-box and automatically enabled:
+
+  - **Suspicious email deletion activity (Preview)**  
+    Alerts you when a user performs unusual email deletion activities. This policy can help you detect user mailboxes that may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
+
+  - **Multiple Power BI report sharing (Preview)**  
+    Alerts you when a user performs an unusual number of Power BI report sharing activities, compared to the learned baseline.
+
+  - **Multiple VM creation activities (Preview)**  
+    Alerts you when a user performs an unusual number of VM creation activities, compared to the learned baseline. Currently applies to Azure.
+
+  - **Multiple storage deletion activities (Preview)**  
+    Alerts you when a user performs an unusual number of storage deletion activities, compared to the learned baseline. Currently applies to Azure.
 
 ## Cloud App Security release 158
 
@@ -84,6 +106,9 @@ Cloud App Security now includes new built-in Activity policy templates for AWS s
 
 - **Notice: End of support for TLS 1.0 and 1.1 on September 8**  
 Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
+
+- **Enhanced logic for interactive sign-in activities (gradual rollout)**  
+We are gradually rolling out new logic to identify if an Azure Active Directory sign-in activity is interactive. The new logic enhances Cloud App Security's ability to only surface sign-in activities that are initiated by a user.
 
 ## Cloud App Security release 154
 
@@ -145,6 +170,8 @@ Cloud App Security now supports configuring the **Trash** governance action for 
 Cloud App Security now supports the **Trash** governance action for Google Drive – This governance action provides you with the ability to move Google Drive files to the trash folder.
 - **New permission for App admin and Group admin roles**  
 *App/instance admin* and *User group admin* roles now support read-only access.
+- **Legacy authentication sign-in activities (gradual rollout)**  
+Cloud App Security now surfaces Azure Active Directory sign-in activities that use legacy protocols such as ActiveSync. These sign-in activities can be viewed in the activity log and can be used when configuring policies.
 
 ## Cloud App Security release 150
 
