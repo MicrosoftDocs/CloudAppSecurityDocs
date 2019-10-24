@@ -41,8 +41,6 @@ landingContent:
         links:
           - text: Get started with Cloud App Security
             url: getting-started-with-cloud-app-security.md
-          - text: Best practices
-            url: best-practices.md
 
   # Card
   - title: Explore our top use cases
@@ -71,6 +69,20 @@ landingContent:
         links:
           - text: Protect apps with Conditional Access App Control
             url: proxy-intro-aad.md
+          - text: Working with the dashboard
+            url: daily-activities-to-protect-your-cloud-environment.md
+          - text: Working with App risk scores
+            url: risk-score.md
+          - text: Working with discovered apps
+            url: discovered-apps.md
+
+  # Card
+  - title: Best practices
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Discover and assess cloud apps
+            url: best-practices.md#discover-and-assess-cloud-apps
           - text: Working with the dashboard
             url: daily-activities-to-protect-your-cloud-environment.md
           - text: Working with App risk scores
