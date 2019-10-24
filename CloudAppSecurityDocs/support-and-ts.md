@@ -4,9 +4,9 @@
 title: Support and troubleshooting information for Cloud App Security
 description: This article describes your support and troubleshooting options for Microsoft Cloud App Security 
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -4,9 +4,9 @@
 title: Enrich Cloud App Security Discovery data with Azure AD usernames 
 description: This article provides information about how to enrich Cloud App Security Discovery data with Azure AD usernames.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

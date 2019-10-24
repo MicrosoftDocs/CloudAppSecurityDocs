@@ -4,8 +4,8 @@
 title: Investigate risky users| Microsoft Docs
 description: This tutorial describes the process to investigate risky users in Microsoft Cloud App Security, across hybrid environments, by integrating with Azure ATP.
 keywords:
-author: rkarlin
-ms.author: rkarlin
+author: shsagir
+ms.author: shsagir
 ms.date: 07/02/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

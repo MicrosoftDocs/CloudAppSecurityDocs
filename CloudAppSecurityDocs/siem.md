@@ -39,7 +39,7 @@ When you first integrate your SIEM with Cloud App Security, activities and alert
 The SIEM agent is deployed in your organization’s network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
 The traffic is then sent over an encrypted HTTPS channel on port 443.
 
-Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM. Cloud App security uses the network configurations you provided during the setup (TCP or UDP with a custom port). 
+Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM. Cloud App security uses the network configurations you provided during the setup (TCP or UDP with a custom port).
 
 ![SIEM integration architecture](./media/siem-architecture.png)
 
@@ -82,7 +82,7 @@ Integrating with your SIEM is accomplished in three steps:
 
    ![Remote Syslog settings](./media/siem2.png)
 
-6. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server. Click **Edit and preview results** to check that the filter works as expected. Click **Next**. 
+6. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server. Click **Edit and preview results** to check that the filter works as expected. Click **Next**.
 
    ![Data types settings](./media/siem3.png)
 
@@ -104,7 +104,7 @@ Integrating with your SIEM is accomplished in three steps:
 > - The file name may differ depending on the version of the SIEM agent.
 > - Parameters in brackets [  ] are optional, and should be used only if relevant.
 > - It is recommended to run the JAR during server startup.
->   - Windows: Run as a scheduled task and make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs logner than** checkbox.
+>   - Windows: Run as a scheduled task and make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs longer than** checkbox.
 >   - Linux: Add the run command with an **&** to the rc.local file. For example: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 Where the following variables are used:
