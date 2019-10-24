@@ -41,8 +41,8 @@ landingContent:
         links:
           - text: Get started with Cloud App Security
             url: getting-started-with-cloud-app-security.md
-          #- text: Best practices
-          #  url: best-practices.md
+          - text: Best practices
+            url: best-practices.md
 
   # Card
   - title: Explore our top use cases

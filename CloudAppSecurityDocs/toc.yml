@@ -19,6 +19,8 @@
   items:
   - name: Getting started
     href: getting-started-with-cloud-app-security.md
+  - name: Best practices
+    href: best-practices.md
 - name: Tutorials
   items:
   - name: Discover and manage shadow IT
