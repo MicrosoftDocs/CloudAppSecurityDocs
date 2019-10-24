@@ -60,7 +60,7 @@ Integrating Cloud App Security with Microsoft Defender Advanced Threat Protectio
 ---
 
 **Best practice**: Manage OAuth apps that are authorized by your users  
-**Detail**: Many users casually grant OAuth permissions to third-party apps to access their account information and, in so doing, inadvertently also give access to their data in other cloud apps. Usually, IT has no visibility into these apps making it difficult to weigh the security risk of an app against the productivity benefit that it provides.
+**Detail**: Many users casually grant OAuth permissions to third-party apps to access their account information and, in doing so, inadvertently also give access to their data in other cloud apps. Usually, IT has no visibility into these apps making it difficult to weigh the security risk of an app against the productivity benefit that it provides.
 
 Cloud App Security provides you with the ability to investigate and monitor the app permissions your users granted. You can use this information to identify a potentially suspicious app and, if you determine that it is risky, you can be ban access to it.  
 **For more information**:
