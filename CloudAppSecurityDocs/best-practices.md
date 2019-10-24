@@ -70,6 +70,8 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 ---
 ---
+---
+---
 
 ## Apply cloud governance policies
 
@@ -79,6 +81,8 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 * [Govern discovered apps](governance-discovery.md)
 
+---
+---
 ---
 ---
 
@@ -121,6 +125,8 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 ---
 ---
+---
+---
 
 ## Discover, classify, label, and protect regulated and sensitive data stored in the cloud
 
@@ -159,6 +165,8 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 ---
 ---
+---
+---
 
 ## Enforce DLP and compliance policies for data stored in the cloud
 
@@ -168,6 +176,8 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 * [Governing connected apps](governance-actions.md)
 
+---
+---
 ---
 ---
 
@@ -182,6 +192,8 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 ---
 ---
+---
+---
 
 ## Secure collaboration with external users by enforcing real-time session controls
 
@@ -192,6 +204,8 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 * [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
+---
+---
 ---
 ---
 
@@ -234,6 +248,8 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 
 ---
 ---
+---
+---
 
 ## Use the audit trail of activities for forensic investigations
 
@@ -247,6 +263,8 @@ When dismissing alerts, it’s important to investigate and understand why they 
 
 * [Activities](activity-filters.md)
 
+---
+---
 ---
 ---
 
