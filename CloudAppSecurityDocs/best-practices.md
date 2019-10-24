@@ -68,6 +68,9 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 * [Manage OAuth apps](manage-app-permissions.md)
 * [OAuth app policies](app-permission-policy.md)
 
+---
+---
+
 ## Apply cloud governance policies
 
 **Best practice**: Tag apps and export block scripts  
@@ -75,6 +78,9 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 **For more information**:
 
 * [Govern discovered apps](governance-discovery.md)
+
+---
+---
 
 ## Limit exposure of shared data and enforce collaboration policies
 
@@ -113,6 +119,9 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 * [Governing connected apps](governance-actions.md)
 
+---
+---
+
 ## Discover, classify, label, and protect regulated and sensitive data stored in the cloud
 
 **Best practice**: Integrate with Azure Information Protection  
@@ -148,6 +157,9 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 * [File filters](file-filters.md)
 * [Content inspection](content-inspection.md)
 
+---
+---
+
 ## Enforce DLP and compliance policies for data stored in the cloud
 
 **Best practice**: Protect confidential data from being shared with external users  
@@ -155,6 +167,9 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 **For more information**:
 
 * [Governing connected apps](governance-actions.md)
+
+---
+---
 
 ## Block and protect download of sensitive data to unmanaged or risky devices
 
@@ -165,6 +180,9 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 * [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
+---
+---
+
 ## Secure collaboration with external users by enforcing real-time session controls
 
 **Best practice**: Monitor sessions with external users using Conditional Access App Control  
@@ -173,6 +191,9 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 
 * [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
+
+---
+---
 
 ## Detect cloud threats, compromised accounts, malicious insiders, and ransomware
 
@@ -211,6 +232,9 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 
 * [OAuth app policies](app-permission-policy.md)
 
+---
+---
+
 ## Use the audit trail of activities for forensic investigations
 
 **Best practice**: Use the audit trail of activities when investigating alerts  
@@ -222,6 +246,9 @@ When dismissing alerts, it’s important to investigate and understand why they 
 **For more information**:
 
 * [Activities](activity-filters.md)
+
+---
+---
 
 ## Secure IaaS services and custom apps
 
