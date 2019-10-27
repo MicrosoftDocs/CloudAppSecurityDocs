@@ -41,8 +41,6 @@ landingContent:
         links:
           - text: Get started with Cloud App Security
             url: getting-started-with-cloud-app-security.md
-          #- text: Best practices
-          #  url: best-practices.md
 
   # Card
   - title: Explore our top use cases
@@ -77,6 +75,32 @@ landingContent:
             url: risk-score.md
           - text: Working with discovered apps
             url: discovered-apps.md
+
+  # Card
+  - title: Best practices
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Discover and assess cloud apps
+            url: best-practices.md#discover-and-assess-cloud-apps
+          - text: Apply cloud governance policies
+            url: best-practices.md#apply-cloud-governance-policies
+          - text: Limit exposure of shared data and enforce collaboration policies
+            url: best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies
+          - text: Discover, classify, label, and protect regulated and sensitive data stored in the cloud
+            url: best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud
+          - text: Enforce DLP and compliance policies for data stored in the cloud
+            url: best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud
+          - text: Block and protect download of sensitive data to unmanaged or risky devices
+            url: best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices
+          - text: Secure collaboration with external users by enforcing real-time session controls
+            url: best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls
+          - text: Detect cloud threats, compromised accounts, malicious insiders, and ransomware
+            url: best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware
+          - text: Use the audit trail of activities for forensic investigations
+            url: best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations
+          - text: Secure IaaS services and custom apps
+            url: best-practices.md#secure-iaas-services-and-custom-apps
 
   # Card
   - title: Additional resources
