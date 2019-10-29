@@ -99,7 +99,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Require user to sign in again** – Signs the user out and requires them to sign in again.
 
-  - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced.
+  - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
 
   ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png "activity policy ref6")
 
