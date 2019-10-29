@@ -61,7 +61,7 @@ To integrate with Azure Sentinel:
 
 1. On the **SIEM agents** tab, click add (**+**), and then choose **Azure Sentinel**.
 
-    ![Screeshot showing Add SIEM integration menu](media/siem0.png)
+    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
 
 1. In the wizard, select the data types you want to forward to Azure Sentinel. You can configure the integration, as follows:
     1. **Alerts**: Alerts are automatically turned on once Azure Sentinel is enabled. Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.
@@ -136,9 +136,9 @@ You can get started quickly by using the following steps:
 
     ![Screenshot showing connect app data page](media/siem-sentinel-powerbi-connect.png)
 
-1. On the workspace id page, enter your Azure Sentinel workspace ID for your log analytics overview page, and then click **Next**.
+1. On the workspace ID page, enter your Azure Sentinel workspace ID for your log analytics overview page, and then click **Next**.
 
-    ![Screenshot showing request for weorkspace id](media/siem-sentinel-powerbi-workspace-id.png)
+    ![Screenshot showing request for workspace ID](media/siem-sentinel-powerbi-workspace-id.png)
 
 1. On the authentication page, specify the authentication method and privacy level, and then click **Sign in**.
 
