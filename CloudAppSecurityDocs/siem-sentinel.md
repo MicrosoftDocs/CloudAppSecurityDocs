@@ -21,7 +21,7 @@ ms.suite: ems
 ms.custom: seodec18
 ---
 
-# Azure Sentinel integration
+# Azure Sentinel integration (preview)
 
 *Applies to: Microsoft Cloud App Security*
 
