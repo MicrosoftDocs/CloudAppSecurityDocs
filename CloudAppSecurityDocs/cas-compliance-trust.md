@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
-ms.date: 8/21/2019
+ms.date: 11/01/2019
 
 # optional metadata
 ms.collection: M365-security-compliance
@@ -149,6 +149,10 @@ Microsoft Cloud App Security enables you to scope your deployment. Scoping enabl
 ### Anonymization
 
 You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
+
+## Security and Privacy for Cloud App Security US Government GCC High customers
+
+For information on Cloud App Security compliance standards and the location of data for US Government GCC High customers, see [Enterprise Mobility + Security for US Government service description](https://docs.microsoft.com/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
 
 ## Next steps
 
