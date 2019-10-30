@@ -14,7 +14,7 @@
       href: editions-cloud-app-security-o365.md
     - name: Azure AD
       href: editions-cloud-app-security-aad.md
-    -name: US Government GCC High
+    - name: US Government GCC High
       href: editions-cloud-app-security-gcc.md
 - name: Quickstarts
   expanded: true
