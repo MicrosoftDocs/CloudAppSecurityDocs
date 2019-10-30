@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generic SIEM integration with Cloud App Security
+title: Azure Sentinel integration with Cloud App Security
 description: This article provides information integrating your generic SIEM with Cloud App Security.
 keywords:
 author: shsagir
@@ -25,21 +25,18 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-You can integrate Microsoft Cloud App Security with Azure Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and activities from connected apps. As new activities and events are supported by connected apps, visibility into them is then rolled out into Microsoft Cloud App Security. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
+You can integrate Microsoft Cloud App Security with Azure Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and activities from connected apps. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
 Benefits of using Azure Sentinel include:
 
 * Longer data retention provided by Log Analytics.
 * Out-of-the-box visualizations.
-* Use tools such as Microsoft Power BI or Microsoft Excel to create your own discovery data visualizations that fit your organizational needs.
+* Use tools such as Microsoft Power BI or Azure Sentinel workbooks to create your own discovery data visualizations that fit your organizational needs.
 
 Additional integration solutions include:
 
 * **Generic SIEMs** - Integrate Cloud App Security with your generic SIEM server. For information in integrating with a Generic SIEM, see [Generic SIEM integration](siem.md).
 * **Microsoft security graph API** - A unified programmability model that you can use to build apps for organizations. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
-
-> [!IMPORTANT]
-> If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to Azure Sentinel, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
 
 ## How to integrate
 
@@ -64,7 +61,7 @@ To integrate with Azure Sentinel:
     ![Screenshot showing Add SIEM integration menu](media/siem0.png)
 
 1. In the wizard, select the data types you want to forward to Azure Sentinel. You can configure the integration, as follows:
-    1. **Alerts**: Alerts are automatically turned on once Azure Sentinel is enabled. Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.
+    1. **Alerts**: Alerts are automatically turned on once Azure Sentinel is enabled. <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
     1. **Discovery logs**: Use the slider to enable and disable them, by default, everything is selected, and then use the **Apply to** drop-down to filter which discovery logs are sent to Azure Sentinel.
 
     ![Screenshot showing start page of Configure Azure Sentinel integration](media/siem-sentinel-configuration.png)
@@ -122,7 +119,7 @@ You can get started quickly by using the following steps:
 1. [Install the Cloud App Security Shadow IT Discovery app](https://aka.ms/MCASShadowITReporting) and [connect it](#connect-the-cloud-app-security-app) to your discovery log data to view the built-in Shadow IT Discovery dashboard.
 
     > [!NOTE]
-    > Currently, the app is not in published on Microsoft AppSource. Therefore, you may need to contact your Power BI admin for permissions to install the app.
+    > Currently, the app is not published on Microsoft AppSource. Therefore, you may need to contact your Power BI admin for permissions to install the app.
 
     ![Screenshot showing the Shadow IT Discovery dashboard](media/siem-sentinel-configuration-powerbi-dashboard.png)
 
@@ -136,7 +133,7 @@ You can get started quickly by using the following steps:
 
     ![Screenshot showing connect app data page](media/siem-sentinel-powerbi-connect.png)
 
-1. On the workspace ID page, enter your Azure Sentinel workspace ID for your log analytics overview page, and then click **Next**.
+1. On the workspace ID page, enter your Azure Sentinel workspace ID as displayed in your log analytics overview page, and then click **Next**.
 
     ![Screenshot showing request for workspace ID](media/siem-sentinel-powerbi-workspace-id.png)
 

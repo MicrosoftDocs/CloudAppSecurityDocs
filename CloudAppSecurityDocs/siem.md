@@ -78,7 +78,6 @@ Integrating with your SIEM is accomplished in three steps:
 
     ![Screenshot showing Add SIEM integration menu](media/siem0.png)
 
-1. Click the plus icon to start the **Add SIEM agent** wizard.
 1. In the wizard, click **Start Wizard**.
 1. In the wizard, fill in a name, and **Select your SIEM format** and set any **Advanced settings** that are relevant to that format. Click **Next**.
 
