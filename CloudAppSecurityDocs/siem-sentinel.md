@@ -25,7 +25,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-You can integrate Microsoft Cloud App Security with Azure Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and activities from connected apps. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
+You can integrate Microsoft Cloud App Security with Azure Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
 Benefits of using Azure Sentinel include:
 
@@ -36,7 +36,7 @@ Benefits of using Azure Sentinel include:
 Additional integration solutions include:
 
 * **Generic SIEMs** - Integrate Cloud App Security with your generic SIEM server. For information in integrating with a Generic SIEM, see [Generic SIEM integration](siem.md).
-* **Microsoft security graph API** - A unified programmability model that you can use to build apps for organizations. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
 ## How to integrate
 

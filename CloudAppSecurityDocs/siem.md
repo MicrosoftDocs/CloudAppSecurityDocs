@@ -32,7 +32,7 @@ When you first integrate your SIEM with Cloud App Security, activities and alert
 Additional integration solutions include:
 
 * **Azure Sentinel** - A scalable, cloud-native SIEM and SOAR for native integration. For information about integrating with Azure Sentinel, see [Azure Sentinel integration](siem-sentinel.md).
-* **Microsoft security graph API** - A unified programmability model that you can use to build apps for organizations. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
 > If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
