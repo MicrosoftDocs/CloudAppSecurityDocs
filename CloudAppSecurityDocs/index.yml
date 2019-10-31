@@ -128,7 +128,7 @@ landingContent:
           - text: Integrate with Microsoft Defender Advanced Threat Protection
             url: wdatp-integration.md
           - text: Cloud Discovery enrichment
-            url: cloud-discovery-aad-enrichment.md'
+            url: cloud-discovery-aad-enrichment.md
       - linkListType: reference
         links:
           - text: Discover and assess cloud apps
