@@ -14,6 +14,7 @@ ms.service: cloud-app-security
 
 # optional metadata
 ms.collection: M365-security-compliance
+ms.suite: ems
 ---
 # Microsoft Cloud App Security for US Government GCC High
 
