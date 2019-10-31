@@ -210,8 +210,10 @@
       href: azip-integration.md
     - name: Integrate with external solutions
       items: 
-      - name: SIEM integration
+      - name: Generic SIEM integration
         href: siem.md
+      - name: Azure Sentinel integration
+        href: siem-sentinel.md
       - name: External DLP integration
         href: icap-stunnel.md
     - name: Automate processes and workflows
