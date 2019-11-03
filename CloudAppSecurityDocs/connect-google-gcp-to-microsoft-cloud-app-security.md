@@ -64,30 +64,27 @@ Create a dedicated project in GCP under your organization to enable integration 
 
 1. Under **IAM & admin**, click **Service accounts**.
 1. Click **CREATE SERVICE ACCOUNT** to create a dedicated service account.
-1. Copy the **Member** value, you'll need this later.
+1. Enter an account name, and then click **Create**.
+1. Specify the **Role** as **Pub/Sub Admin** and then click **Save**.
 
-    > [!NOTE]
-    > Do not set any roles at this stage.
+    ![Screenshot showing GCP add IAM role](media/connect-gcp-iam-role.PNG)
+
+1. Copy the **Email** value, you'll need this later.
 
     ![Screenshot showing GCP service account dialog](media/connect-gcp-create-service-account.png)
 
 1. Under **IAM & admin**, click **IAM**.
 
-    1. Verify that you are at the integration project level.
-    1. Click on the edit icon for the dedicated service account.
-    1. Specify the **Role** as **Pub/Sub Admin** and then click **Save**.
-
-        ![Screenshot showing IAM role dialog](media/connect-gcp-iam-role.png)
-
-    4. Switch to organization level.
+    1. Switch to organization level.
     1. Click **ADD**.
-    1. In the **New members** box, paste the **Member** value you copied earlier.
+    1. In the **New members** box, paste the **Email** value you copied earlier.
     1. Specify the **Role** as **Logs Configuration Writer** and then click **Save**.
 
         ![Screenshot showing add member dialog](media/connect-gcp-add-member.png)
 
 ### Create a private key for the dedicated service account
 
+1. Switch to project level.
 1. Under **IAM & admin**, click **Service accounts**.
 1. Open the dedicated service account and click **Edit**.
 1. Click **CREATE KEY**.
@@ -109,7 +106,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 ### Add the GCP connection details
 
-In the **App connectors** page, to provide the GCP connection details, do one of the following:
+To provide the GCP connection details, under **App connectors**, do one of the following:
 
 **For a GCP instance that is not part of a connected G Suite organization**
 
@@ -129,7 +126,7 @@ In the **App connectors** page, to provide the GCP connection details, do one of
 
 **For a GCP instance that is part of a connected G Suite organization**
 
-1. In the list of connectors, at the end of row in which the G Suite connector appears, click the three dots and then click **Add Google Cloud Platform**.
+1. In the list of connected instances, at the end of row in which the G Suite connector appears, click the three dots and then click **Add Google Cloud Platform**.
 
 1. On the Google Cloud Platform page, do the following:
     1. In the **Organization ID** box, enter the organization you made a note of earlier.
@@ -146,10 +143,11 @@ Make sure the connection succeeded by clicking **Test API**.
 Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
 
 > [!NOTE]
-> Disabling Log Sinks is currently only possible via GCP PowerShell. The disabling script is available upon request.
+> Disabling Log Sinks is currently only possible via Google Cloud Shell. The disabling script is available upon request.
 
 ## Next steps
 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
