@@ -17,7 +17,7 @@ ms.service: cloud-app-security
 #ms.subservice: na
 ms.collection: M365-security-compliance
 ---
-# Connect Google Cloud Platform to Microsoft Cloud App Security
+# Connect Google Cloud Platform to Microsoft Cloud App Security (Preview)
 
 *Applies to: Microsoft Cloud App Security*
 
