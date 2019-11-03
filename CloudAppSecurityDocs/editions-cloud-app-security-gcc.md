@@ -25,3 +25,8 @@ The Microsoft Cloud App Security GCC High offering is built on the Microsoft Azu
 The Microsoft Cloud App Security US Government Service Description is designed to serve as an overview of the service offering in the GCC High environment and will cover feature variations from the commercial offering.
 
 For more information about the Microsoft Cloud App Security for US Government GCC High offering, see [Microsoft Cloud App Security for US Government Service Description](https://docs.microsoft.com/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn more about Government GCC High](https://docs.microsoft.com/enterprise-mobility-security/solution/ems-security-govt-description)
