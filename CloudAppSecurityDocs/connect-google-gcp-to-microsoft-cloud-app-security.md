@@ -142,8 +142,18 @@ Make sure the connection succeeded by clicking **Test API**.
 
 Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
 
-> [!NOTE]
-> Disabling Log Sinks is currently only possible via Google Cloud Shell. The disabling script is available upon request.
+## Log Sinks
+
+Disabling Log Sinks is currently only possible via Google Cloud Shell.
+
+### To disable log sinks
+
+| Step | Script | For more information |
+|-|-|-|
+| 1. Start a Google Cloud Shell session. | | [Using Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
+| 2. Set the current project. | `gcloud config set project {PROJECT_ID}` | [gcloud config set](https://cloud.google.com/sdk/gcloud/reference/config/set) |
+| 3. List the organization-level sinks. | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud logging sinks list](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
+| 4. Delete the relevant sink. | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud logging sinks delete](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
 
 ## Next steps
 
