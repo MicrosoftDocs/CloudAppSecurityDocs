@@ -234,13 +234,13 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. To provide the G Suite connection details, under **App connectors**, do one of the following:
 
-### For a G Suite organization that already has a connected GCP instance
+    **For a G Suite organization that already has a connected GCP instance**
 
-* In the list of connectors, at the end of row in which the GCP instance appears, click the three dots and then click **Add G Suite**.
+    * In the list of connectors, at the end of row in which the GCP instance appears, click the three dots and then click **Add G Suite**.
 
-### For a G Suite organization that does not already have a connected GCP instance
+    **For a G Suite organization that does not already have a connected GCP instance**
 
-* In the **Connected apps** page, click the plus sign and select **G Suite**.
+    * In the **Connected apps** page, click the plus sign and select **G Suite**.
 
 3. In the pop-up, fill in the following information:
 
