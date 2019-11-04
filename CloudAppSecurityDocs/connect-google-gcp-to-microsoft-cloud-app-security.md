@@ -26,7 +26,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 > [!NOTE]
 > The instructions for connecting your GCP environment follow [Google’s recommendations](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) for consuming aggregated logs. The integration leverages Google StackDriver and will consume additional resources that might impact your billing. The consumed resources are:
 >
-> * [Aggregated export sink- Organization level](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
+> * [Aggregated export sink – Organization level](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
 > * [Pub/Sub topic – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
 > * [Pub/Sub subscription – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
 >
@@ -142,11 +142,11 @@ Make sure the connection succeeded by clicking **Test API**.
 
 Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
 
-## Log Sinks
+## Aggregated export sink
 
-Disabling Log Sinks is currently only possible via Google Cloud Shell.
+Disabling aggregated export sink is currently only possible via Google Cloud Shell.
 
-### To disable log sinks
+### To disable aggregated export sink
 
 | Step | Script | For more information |
 |-|-|-|
