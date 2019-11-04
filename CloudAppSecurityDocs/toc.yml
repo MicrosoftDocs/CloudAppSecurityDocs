@@ -117,6 +117,8 @@
       href: connect-dropbox-to-microsoft-cloud-app-security.md
     - name: Connect G Suite
       href: connect-google-apps-to-microsoft-cloud-app-security.md
+    - name: Connect GCP
+      href: connect-google-gcp-to-microsoft-cloud-app-security.md
     - name: Connect Office 365
       href: connect-office-365-to-microsoft-cloud-app-security.md
     - name: Connect Okta
