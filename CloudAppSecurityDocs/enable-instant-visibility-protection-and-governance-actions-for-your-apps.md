@@ -68,22 +68,22 @@ The following table lists, per cloud app, which abilities are supported with App
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Workday**|
-> |-|-|-|-|-|-|-|-|-|-|-|
-> |**List accounts**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Group**|✔|✔|✔|✔|✔|✔|✔|✔|Not applicable|Not applicable|
-> |**Privileges**|✔|✔|Not supported by provider|✔|✔|✔|✔||✔|Not applicable|
-> |**User governance**|✔|✔||✔|Coming soon|Coming soon|Coming soon||Coming soon|Coming soon|
-> |**Log on activity**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**User activity**|✔*|✔|✔|✔ - requires Google Business or Enterprise|Partial|Supported with Salesforce Shield|✔|Not applicable|✔|✔|
-> |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|✔|✔|
-> |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Not applicable|||
-> |**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Business or Enterprise|||Coming soon||✔||
-> |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||✔||
-> |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||Not applicable|Not applicable|
-> |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||Not applicable|Not applicable|
-> |**Revoke app permissions**|✔||Not applicable|✔||✔|Not applicable||Not applicable|Not applicable|
-> |**Apply Azure Information Protection labels**|✔|✔||✔|||||Not applicable|Not applicable|
+> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Workday**|
+> |-|-|-|-|-|-|-|-|-|-|-|-|
+> |**List accounts**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
+> |**Group**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|Not applicable|Not applicable|
+> |**Privileges**|✔|✔|Not supported by provider|Subject to connecting G Suite|✔|✔|✔|✔||✔|Not applicable|
+> |**User governance**|✔|✔||Subject to connecting G Suite|✔|Coming soon|✔|Coming soon||Coming soon|Coming soon|
+> |**Log on activity**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
+> |**User activity**|✔*|✔|✔|✔|✔ - requires Google Business or Enterprise|Partial|Supported with Salesforce Shield|✔|Not applicable|✔|✔|
+> |**Administrative activity**|✔|✔|✔|✔|✔|Partial|✔|✔|✔|✔|✔|
+> |**Periodic file scan**|✔|✔|Not applicable||✔|✔|✔|✔|Not applicable|||
+> |**Near-realtime file scan**|✔|✔|Not applicable||✔ - requires Google Business or Enterprise|||Coming soon||✔||
+> |**Sharing control**|✔|✔|Not applicable||✔|Not applicable||✔||✔||
+> |**Quarantine**|✔|✔|Not applicable||Coming soon|||Coming soon||Not applicable|Not applicable|
+> |**View app permissions**|✔|Not supported by provider|Not applicable||✔||✔|Not supported by provider||Not applicable|Not applicable|
+> |**Revoke app permissions**|✔||Not applicable||✔||✔|Not applicable||Not applicable|Not applicable|
+> |**Apply Azure Information Protection labels**|✔|✔|||✔|||||Not applicable|Not applicable|
 
 ## Prerequisites
 
@@ -102,7 +102,8 @@ To use App Connectors, you need to make sure you have the following things for e
 | AWS | | Newly created user |
 | Box | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions. |
 | Dropbox | Business/Enterprise | Admin |
-| G Suite | G Suite Business or Enterprise preferred<br /><br /> G Suite Enterprise (minimally) | Super Admin |
+| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| G Suite | G Suite Business or Enterprise preferred<br /><br />G Suite Enterprise (minimally) | Super Admin |
 | Office 365 | | Global Admin |
 | Okta | Enterprise (not trial) | Admin |
 | Salesforce | | Admin |
