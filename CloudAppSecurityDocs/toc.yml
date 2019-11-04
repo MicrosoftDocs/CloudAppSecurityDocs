@@ -125,7 +125,7 @@
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
-    - name: Connect WebEx
+    - name: Connect Webex
       href: connect-webex-to-microsoft-cloud-app-security.md
     - name: Connect Workday
       href: connect-workday-to-microsoft-cloud-app-security.md
