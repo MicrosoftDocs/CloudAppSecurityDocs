@@ -30,8 +30,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-After you've reviewed the list of discovered apps in your environment, you can secure your environment against unwanted app use in the following ways.
-
+After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
 
 ## <a name="BKMK_SanctionApp"></a> Sanctioning/unsanctioning an app 
 
