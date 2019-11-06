@@ -7,13 +7,12 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/7/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 
 # optional metadata
 
@@ -57,38 +56,38 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 - I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
 
-## Set up and configuration  
+## Set up and configuration
 
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1. Go to the **Automatic log upload** settings page. 
+1. Go to the **Automatic log upload** settings page.
 
-     a. In the Cloud App Security portal, click the settings icon followed by **Log collectors**.
+    a. In the Cloud App Security portal, click the settings icon followed by **Log collectors**.
 
-      ![settings icon](./media/settings-icon.png)
+    ![settings icon](./media/settings-icon.png)
 
 2. For each firewall or proxy from which you want to upload logs, create a matching data source.
 
-     a. Click **Add data source**.
+    a. Click **Add data source**.
 
-      ![Add a data source](./media/add-data-source.png)
+    ![Add a data source](./media/add-data-source.png)
 
-     b. **Name** your proxy or firewall.
+    b. **Name** your proxy or firewall.
 
-      ![ubuntu1](./media/ubuntu1.png)
+        ![ubuntu1](./media/ubuntu1.png)
 
-     c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
+    c. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
 
-     d. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
+    d. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
 
-     e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
+    e. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
 
-     >[!NOTE]
-     >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
+    >[!NOTE]
+    >Integrating with secure transfer protocols (FTPS and Syslog – TLS) often requires additional settings or your firewall/proxy.
 
-      f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. It's recommended to set up a dedicated data source per network device to enable you to:
-     - Monitor the status of each device separately, for investigation purposes.
-     - Explore Shadow IT Discovery per device, if each device is used by a different user segment.
+    f. Repeat this process for each firewall and proxy whose logs can be used to detect traffic on your network. It's recommended to set up a dedicated data source per network device to enable you to:
+        - Monitor the status of each device separately, for investigation purposes.
+        - Explore Shadow IT Discovery per device, if each device is used by a different user segment.
 
 3. Go to the **Log collectors** tab at the top.
 
@@ -113,26 +112,27 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
    ![Create log collector](./media/windows7.png)
 
 ### Step 2 – On-premises deployment of your machine
+
 The following steps describe the deployment in Windows. The deployment steps for other platforms are slightly different.
 
 1. Open a PowerShell terminal as an administrator on your Windows machine.
 
-2. Run the following command to download the Windows Docker installer PowerShell script file to a temp path:
- `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
- To validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature)
+2. Run the following command to download the Windows Docker installer PowerShell script file: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-3. Set the PowerShell script execution by running `Set-ExecutionPolicy RemoteSigned`
+    To validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature)
+
+3. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`
 
 4. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
-This installs the Docker client on your Windows machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again. **Make sure the Docker client is set to use Linux containers.**
+This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again. **Make sure the Docker client is set to use Linux containers.**
 
-5. After each restart, open a PowerShell terminal as an administrator on your Windows machine, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+5. After each restart, open a PowerShell terminal as an administrator on your machine, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-6. Before the installation completes, you will have to paste in the run command you copied earlier (see Step 1 number 4).
+6. Before the installation completes, you will have to paste in the run command you copied earlier.
 
 7. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
-           (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    `(echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
    ![Create log collector](./media/windows7.png)
 8. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
@@ -161,20 +161,21 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**. 
+1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
 2. Click the **Create report** button and fill in the fields.
-3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
+3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
-![Custom continuous report](./media/custom-continuous-report.png)
+    ![Custom continuous report](./media/custom-continuous-report.png)
 
 ### Optional - Validate installer signature <a name="validate-signature"></a>
 
 To make sure that the docker installer is signed by Microsoft:
-1. Right click on the file and select **Properties**.
-2. Click on **Digital Signatures** and make sure that it says **This digital signature is OK**.  
-3. Make sure that **Microsoft Corporation** is listed as the sole entry under **Name of signer**.  
 
-![Digital signature valid](./media/digital-signature-successful.png)
+1. Right click on the file and select **Properties**.
+2. Click on **Digital Signatures** and make sure that it says **This digital signature is OK**.
+3. Make sure that **Microsoft Corporation** is listed as the sole entry under **Name of signer**.
+
+    ![Digital signature valid](./media/digital-signature-successful.png)
 
 If the digital signature is not valid, it will say **This digital signature is not valid**:
 
@@ -182,6 +183,7 @@ If the digital signature is not valid, it will say **This digital signature is n
 
 ## Next steps
 
-[Log collector FTP configuration](log-collector-ftp.md)
+> [!div class="nextstepaction"]
+> [Log collector FTP configuration](log-collector-ftp.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
