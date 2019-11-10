@@ -37,35 +37,39 @@ Use this process to roll out real-time controls in your organization.
 ### Phase 1: Monitor user activities for anomalies
 <!--Monitor user activities for anomalies within popular custom cloud and on-premise apps-->
 
-* Start by deploying the important apps that your organization uses
-  * Our integration with Azure AD conditional access makes this very simple to deploy
+1. **Deploy your apps**: Start by deploying the important apps that your organization uses. The deployment is made simple by our native integration with Azure Active Directory (Azure AD) Conditional Access. This can be done using the following methods:
 
-* In addition to the 30 apps we feature, you can onboard any app with a simple process: https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-any-app
+    * Commence by [deploying apps that are featured](proxy-intro-aad.md) by Cloud App Security to work out of the box. For a list of apps that are featured, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-* After this, use the Activity Log in MCAS to monitor and better characterize usage of these apps, and understand risks
+    * Then, for apps not featured by Cloud App Security, use our simple process to [onboard and deploy any app](proxy-deployment-any-app.md).
 
-### Phase2: Protect your data when it’s exfiltrated
+    After deploying your apps, they are monitored in real time giving you immediate insights into their activities and related information that you can use to identify anomalous behavior.
+
+1. **Monitor and assess**: Use the [Activity Log](activity-filters.md) in the Cloud App Security portal to view and better characterize how these apps are used in your environment, and understand their risks. You can narrow the scope of activities listed by using [search, filters, and queries](activity-filters-queries.md) to quickly identify risky activities.
+
+### Phase 2: Protect your data when it’s exfiltrated
 <!--Protect your data when it’s exfiltrated to unmanaged devices or by guest users-->
 
-* Top of mind for many organizations is how to prevent data exfiltration before it happens
+A primary concern for many organizations is how to prevent data exfiltration before it happens. Two of the biggest risks for data exfiltration are unmanaged devices (that may not be pin-protected or may contain malicious apps), and guest users over whom your IT department has little visibility and control.
 
-* Two of the biggest risks for data exfiltration are unmanaged devices, which may not be pin-protected, or may contain malicious apps, and guest users, over whom your IT department has little visibility and control
+Now that your apps are deployed, you can easily configure policies to mitigate both of these risks by leveraging our native integrations with Windows Intune for device management, Azure AD for user groups, and Azure Information Protection for data protection.
 
-* Our integration with Intune for device management and Azure AD for user groups means that you can easily configure policies to mitigate both of these risks
+* **Mitigate unmanaged devices**: Create a [session policy to label](session-policy-aad.md#create-a-cloud-app-security-session-policy) and protect highly confidential files meant for users in your organization only.
+* **Mitigate guest users**: Create a [session policy to apply custom permissions](session-policy-aad.md#protect-files-on-download-) to any file that is downloaded by guest users. For example, you can set permissions so that guest users can only access the protected file.
 
-* For any of the apps you’ve configured above, you can configure a policy to protect data that is downloaded, by leveraging our integration with Azure Information Protection
-  * Unmanaged devices: create a session policy to label and protect files with a highly confidential policy meant for users in your organization only
-  * Guest Users: create a session policy to apply custom permissions to any file that is downloaded, so only the guest user can access that file
+### Phase 3: Prevent unprotected data from being uploaded to your apps
 
-### Prevent unprotected data from being uploaded to your apps
+In addition to preventing data exfiltration, organizations often want to make sure that data that is infiltrated to cloud apps is also secure. A common use case for this is when a user attempts to upload files that are not labeled correctly.
 
-* In addition to data exfiltration, organizations want to make sure that data that is infiltrated to cloud apps is also secure
+For any of the apps you’ve configured above, you can configure a session policy to prevent the upload of files that are not labeled correctly, as follows:
 
-* For any of the apps you’ve configured above, you can configure a session policy to prevent upload of files that have not been correctly labeled, by leveraging our integration with Azure Information Protection
-  * Configure an information block message to the user, giving them instructions on how to correct the mistake and try again
-  * That way, data that is uploaded to the cloud, if shared or lost in the future, will have access permissions for only those that are intended to see it
+1. Create a session policy to block uploads of incorrectly labeled files.
 
-### Enforce adaptive access controls to manage user actions in real time
+1. Configure the policy to display a block message with instructions on how to correct the label and try again.
+
+Protecting file uploads in this way ensures that data saved to the cloud has the correct access permissions applied. In the event that the file is shared or lost, it can only be accessed by authorized users.
+
+### Phase 4: Enforce adaptive access controls to manage user actions in real time
 
 * Many times evaluating risk at the gate is not enough—session risk can involve throughout the session
   * For example, token theft and replay can occur to hijack a session, the user could locations to a public space, or a seemingly innocuous user can go rogue
