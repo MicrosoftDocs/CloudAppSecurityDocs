@@ -14,11 +14,15 @@
       href: editions-cloud-app-security-o365.md
     - name: Azure AD
       href: editions-cloud-app-security-aad.md
+    - name: US Government GCC High
+      href: editions-cloud-app-security-gcc.md
 - name: Quickstarts
   expanded: true
   items:
   - name: Getting started
     href: getting-started-with-cloud-app-security.md
+  - name: Best practices
+    href: best-practices.md
 - name: Tutorials
   items:
   - name: Discover and manage shadow IT
@@ -115,6 +119,8 @@
       href: connect-dropbox-to-microsoft-cloud-app-security.md
     - name: Connect G Suite
       href: connect-google-apps-to-microsoft-cloud-app-security.md
+    - name: Connect GCP
+      href: connect-google-gcp-to-microsoft-cloud-app-security.md
     - name: Connect Office 365
       href: connect-office-365-to-microsoft-cloud-app-security.md
     - name: Connect Okta
@@ -123,7 +129,7 @@
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
-    - name: Connect WebEx
+    - name: Connect Webex
       href: connect-webex-to-microsoft-cloud-app-security.md
     - name: Connect Workday
       href: connect-workday-to-microsoft-cloud-app-security.md
@@ -208,8 +214,10 @@
       href: azip-integration.md
     - name: Integrate with external solutions
       items: 
-      - name: SIEM integration
+      - name: Generic SIEM integration
         href: siem.md
+      - name: Azure Sentinel integration
+        href: siem-sentinel.md
       - name: External DLP integration
         href: icap-stunnel.md
     - name: Automate processes and workflows
