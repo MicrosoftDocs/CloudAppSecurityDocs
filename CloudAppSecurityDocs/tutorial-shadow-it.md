@@ -4,23 +4,15 @@
 title: Discover and manager Shadow IT | Microsoft Docs
 description: This tutorial describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
-<<<<<<< HEAD
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 09/12/2019
-=======
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 04/21/2019
->>>>>>> 99b537a362c1c9e240e818333218c333f6fab31b
+ms.date: 11/11/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 
 # optional metadata
 
