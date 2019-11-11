@@ -4,10 +4,17 @@
 title: Discover and manager Shadow IT | Microsoft Docs
 description: This tutorial describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
+<<<<<<< HEAD
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
 ms.date: 09/12/2019
+=======
+author: shsagir
+ms.author: shsagir
+manager: shsagir
+ms.date: 04/21/2019
+>>>>>>> 99b537a362c1c9e240e818333218c333f6fab31b
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
@@ -91,13 +98,13 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 * **Continuous monitoring**: Now that you have thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
 
-Now it's time to create policies so you can be automatically alerted when something happens that you're concerned about. For example, you might want to create an **App discovery policy** that lets you know when there is a spike in downloads or traffic from an app you're concerned about. To achieve this, you should enable **Anomalous behavior in discovered users policy**, **Cloud storage app compliance check**, and **New risky app**. You should also set the policy to notify you by email or text message. For more information, see [policy template reference](policy-template-reference.md),  more about [Cloud Discovery policies](cloud-discovery-policies.md) and Configure [**App discovery policies**](cloud-discovery-policies.md).
+Now it's time to create policies so you can be automatically alerted when something happens that you're concerned about. For example, you might want to create an **App discovery policy** that lets you know when there is a spike in downloads or traffic from an app you're concerned about. To achieve this, you should enable **Anomalous behavior in discovered users policy**, **Cloud storage app compliance check**, and **New risky app**. You should also set the policy to notify you by email or text message. For more information, see [policy template reference](policy-template-reference.md),  more about [Cloud Discovery policies](cloud-discovery-policies.md) and Configure [App discovery policies](cloud-discovery-policies.md).
 
 Look at the alerts page and use the **Policy type** filter to look at app discovery alerts. For apps that were matched by your app discovery policies, it is recommended that you do an advanced investigation to learn more about the business justification for using the app, for example, by contacting the users of the app. Then, repeat the steps in Phase 2 to evaluate the risk of the app. Then determine next steps for the application, whether you approve use of it in the future or want to block it the next time a user accesses it, in which case you should tag it as unsanctioned so it can be blocked using your firewall, proxy, or secure web gateway. For more information, see [Integrate with Microsoft Defender ATP](wdatp-integration.md), [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), and [Export a block script to govern discovered apps](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
 
 ### Phase 4: Advanced Shadow IT discovery reporting
 
-In addition to the reporting options available in Cloud App Security, you can integrate Cloud Discovery logs into Azure Sentinel for further investigation and analysis. Once the data is in Azure Sentinel, you can view it in dashboards, run queries using Kusto query language, export queries to Microsoft Power BI, integrate with other sources, and create custom alerts. For more information, see NEW_TOPIC_TBD.
+In addition to the reporting options available in Cloud App Security, you can integrate Cloud Discovery logs into Azure Sentinel for further investigation and analysis. Once the data is in Azure Sentinel, you can view it in dashboards, run queries using Kusto query language, export queries to Microsoft Power BI, integrate with other sources, and create custom alerts. For more information, see [Azure Sentinel integration](siem-sentinel.md).
 
 ### Phase 5: Control sanctioned apps
 
