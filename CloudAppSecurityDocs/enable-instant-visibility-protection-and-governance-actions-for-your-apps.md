@@ -68,22 +68,22 @@ The following table lists, per cloud app, which abilities are supported with App
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Workday**|
+> | | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
-> |**List accounts**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
-> |**Group**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|Not applicable|Not applicable|
-> |**Privileges**|✔|✔|Not supported by provider|Subject to connecting G Suite|✔|✔|✔|✔||✔|Not applicable|
-> |**User governance**|✔|✔||Subject to connecting G Suite|✔|Coming soon|✔|Coming soon||Coming soon|Coming soon|
-> |**Log on activity**|✔|✔|✔|Subject to connecting G Suite|✔|✔|✔|✔|✔|✔|✔|
-> |**User activity**|✔*|✔|✔|✔|✔ - requires Google Business or Enterprise|Partial|Supported with Salesforce Shield|✔|Not applicable|✔|✔|
-> |**Administrative activity**|✔|✔|✔|✔|✔|Partial|✔|✔|✔|✔|✔|
-> |**Periodic file scan**|✔|✔|Not applicable||✔|✔|✔|✔|Not applicable|||
-> |**Near-realtime file scan**|✔|✔|Not applicable||✔ - requires Google Business or Enterprise|||Coming soon||✔||
-> |**Sharing control**|✔|✔|Not applicable||✔|Not applicable||✔||✔||
-> |**Quarantine**|✔|✔|Not applicable||Coming soon|||Coming soon||Not applicable|Not applicable|
-> |**View app permissions**|✔|Not supported by provider|Not applicable||✔||✔|Not supported by provider||Not applicable|Not applicable|
-> |**Revoke app permissions**|✔||Not applicable||✔||✔|Not applicable||Not applicable|Not applicable|
-> |**Apply Azure Information Protection labels**|✔|✔|||✔|||||Not applicable|Not applicable|
+> | **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
+> | **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not pported by provider |
+> | **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | t supported by provider |
+> | **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with lesforce Shield | ✔ | ✔ |
+> | **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
+> | **DLP - Periodic scan** | | ✔ | Coming soon | Not applicable | ✔ | ✔ | Not applicable | | | | Not supported by ovider |
+> | **DLP - Near-real-time scan** | | ✔ | ✔ | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
+> | **Sharing control** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by ovider |
+> | **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
+> | **View app permissions** | Not applicable | Not supported by provider | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **Revoke app permissions** | Not applicable | Not supported by provider | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **Apply Azure Information Protection labels** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
 
 ## Prerequisites
 
