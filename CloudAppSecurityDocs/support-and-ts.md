@@ -95,7 +95,7 @@ Check the [current status of Microsoft Cloud App Security](https://status.clouda
 
 * [Stay up to date with our blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Microsoft%20Cloud%20App%20Security)
 
-* Download [the Cloud App Security datasheet](http://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
+* Download [the Cloud App Security datasheet](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
 
 ## Feedback
 
