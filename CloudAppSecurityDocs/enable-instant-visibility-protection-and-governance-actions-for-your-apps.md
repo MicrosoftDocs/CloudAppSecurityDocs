@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 11/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -68,22 +68,22 @@ The following table lists, per cloud app, which abilities are supported with App
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**Workday**|
-> |-|-|-|-|-|-|-|-|-|-|-|
-> |**List accounts**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**Group**|✔|✔|✔|✔|✔|✔|✔|✔|Not applicable|Not applicable|
-> |**Privileges**|✔|✔|Not supported by provider|✔|✔|✔|✔||✔|Not applicable|
-> |**User governance**|✔|✔||✔|Coming soon|Coming soon|Coming soon||Coming soon|Coming soon|
-> |**Log on activity**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**User activity**|✔*|✔|✔|✔ - requires Google Business or Enterprise|Partial|Supported with Salesforce Shield|✔|Not applicable|✔|✔|
-> |**Administrative activity**|✔|✔|✔|✔|Partial|✔|✔|✔|✔|✔|
-> |**Periodic file scan**|✔|✔|Not applicable|✔|✔|✔|✔|Not applicable|||
-> |**Near-realtime file scan**|✔|✔|Not applicable|✔ - requires Google Business or Enterprise|||Coming soon||✔||
-> |**Sharing control**|✔|✔|Not applicable|✔|Not applicable||✔||✔||
-> |**Quarantine**|✔|✔|Not applicable|Coming soon|||Coming soon||Not applicable|Not applicable|
-> |**View app permissions**|✔|Not supported by provider|Not applicable|✔||✔|Not supported by provider||Not applicable|Not applicable|
-> |**Revoke app permissions**|✔||Not applicable|✔||✔|Not applicable||Not applicable|Not applicable|
-> |**Apply Azure Information Protection labels**|✔|✔||✔|||||Not applicable|Not applicable|
+> | | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+> |-|-|-|-|-|-|-|-|-|-|-|-|
+> | **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
+> | **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not pported by provider |
+> | **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | t supported by provider |
+> | **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+> | **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with lesforce Shield | ✔ | ✔ |
+> | **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
+> | **DLP - Periodic scan** | | ✔ | Coming soon | Not applicable | ✔ | ✔ | Not applicable | | | | Not supported by ovider |
+> | **DLP - Near-real-time scan** | | ✔ | ✔ | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
+> | **Sharing control** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by ovider |
+> | **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
+> | **View app permissions** | Not applicable | Not supported by provider | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **Revoke app permissions** | Not applicable | Not supported by provider | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+> | **Apply Azure Information Protection labels** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
 
 ## Prerequisites
 
@@ -102,7 +102,8 @@ To use App Connectors, you need to make sure you have the following things for e
 | AWS | | Newly created user |
 | Box | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions. |
 | Dropbox | Business/Enterprise | Admin |
-| G Suite | G Suite Business or Enterprise preferred<br /><br /> G Suite Enterprise (minimally) | Super Admin |
+| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| G Suite | G Suite Business or Enterprise preferred<br /><br />G Suite Enterprise (minimally) | Super Admin |
 | Office 365 | | Global Admin |
 | Okta | Enterprise (not trial) | Admin |
 | Salesforce | | Admin |

@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/12/2019
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -60,6 +60,12 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
+For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allow list to provide access for the Cloud App Security GCC High portal:
+
+    portal.cloudappsecurity.us
+    *.portal.cloudappsecurity.us
+    cdn.cloudappsecurity.com
+
 Additionally, the following items should be whitelisted, depending on which data center you use:
 > [!div class="mx-tableFixed"]
 >
@@ -70,6 +76,7 @@ Additionally, the following items should be whitelisted, depending on which data
 > |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.us3.portal.cloudappsecurity.com|
 > |EU1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|\*.eu.portal.cloudappsecurity.com<|
 > |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|*.eu2.portal.cloudappsecurity.com|
+> |Gov US1|13.72.19.4<br>52.227.143.223|*.us1.portal.cloudappsecurity.us|
 
 > [!NOTE]
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
@@ -105,6 +112,7 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 > |US3|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.90.218.196<br>40.90.218.198<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
 > |EU1|13.80.125.22<br>40.119.154.72<br>40.74.1.235<br>40.74.6.204<br>51.143.58.207<br>52.137.89.147<br>52.157.238.58<br>52.174.56.180<br>52.183.75.62|
 > |EU2|13.80.125.22<br>40.74.1.235<br>40.74.6.204<br>40.81.156.154<br>40.81.156.156<br>51.143.58.207<br>52.137.89.147<br>52.183.75.62|
+> |Gov US1|13.72.19.4<br>52.227.143.223|
 
 > [!NOTE]
 > If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
@@ -127,6 +135,7 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 > |US3|13.68.76.47<br>40.90.218.196<br>40.90.218.197<br>40.90.218.198<br>40.90.218.203<br>40.90.220.190<br>40.90.220.196<br>51.143.120.236<br>51.143.120.242<br>104.42.54.148||
 > |EU1|13.80.22.71<br>13.95.29.177<br>13.95.30.46<br>40.114.217.8<br>40.114.217.8<br>40.115.24.65<br>40.115.24.65<br>40.115.25.50<br>40.115.25.50<br>40.119.154.72|40.67.219.133<br>51.105.55.62<br>51.105.179.157<br>51.137.200.32<br>52.157.232.110<br>52.157.233.133<br>52.157.233.92<br>52.157.238.58<br>52.157.239.110<br>52.174.56.180|
 > |EU2|40.81.152.171<br>40.81.152.172<br>40.81.156.153<br>40.81.156.154<br>40.81.156.155<br>40.81.156.156<br>51.105.55.62<br>51.137.200.32<br>51.145.108.227<br>51.145.108.250|
+> |Gov US1|52.227.138.248<br>52.227.142.192<br>52.227.143.223|
 
 ## Third-party DLP integration
 
@@ -178,13 +187,14 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 - Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
-  | Data center |                        URL                        |
-  |-------------|---------------------------------------------------|
-  |     US1     | https:\//adaprodconsole.blob.core.windows.net/     |
-  |     US2     | https:\//prod03use2console1.blob.core.windows.net/ |
-  |     US3     | https:\//prod5usw2console1.blob.core.windows.net/  |
-  |     EU1     | https:\//prod02euwconsole1.blob.core.windows.net/  |
-  |     EU2     | https:\//prod4uksconsole1.blob.core.windows.net/   |
+  | Data center |                        URL                                 |
+  |-------------|------------------------------------------------------------|
+  |     US1     | https:\//adaprodconsole.blob.core.windows.net/             |
+  |     US2     | https:\//prod03use2console1.blob.core.windows.net/         |
+  |     US3     | https:\//prod5usw2console1.blob.core.windows.net/          |
+  |     EU1     | https:\//prod02euwconsole1.blob.core.windows.net/          |
+  |     EU2     | https:\//prod4uksconsole1.blob.core.windows.net/           |
+  |   Gov US1   | https:\//gprd1usgvconsole1.blob.core.usgovcloudapi.net/    |
 
 > [!NOTE]
 > - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.

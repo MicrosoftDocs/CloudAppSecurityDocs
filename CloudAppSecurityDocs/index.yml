@@ -33,6 +33,10 @@ landingContent:
         links:
           - text: Releases
             url: release-notes.md
+      - linkListType: video
+        links:
+          - text: Deployment videos
+            url: https://go.microsoft.com/fwlink/?linkid=2110166
 
   # Card (optional)
   - title: Get started
