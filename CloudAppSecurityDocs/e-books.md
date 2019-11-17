@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 
 ---
 
-# Microsoft Cloud App Security webinars
+# Microsoft Cloud App Security e-books
 
 *Applies to: Microsoft Cloud App Security*
 
