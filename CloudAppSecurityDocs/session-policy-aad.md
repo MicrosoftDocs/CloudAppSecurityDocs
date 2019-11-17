@@ -110,7 +110,7 @@ To create a new session policy, follow this procedure:
 
 1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select whether you want the alert as an email, a text message, or both.
 
-## <a id="monitor-session" />Monitor all activities
+## <a name="monitor-session" />Monitor all activities
 
 When you create a session policy, each user session that matches the policy is redirected to session control rather than to the app directly. The user will see a monitoring notice to let them know that their sessions are being monitored.
 
@@ -139,29 +139,29 @@ To download the exported log:
 
     ![download button](./media/download-button.png)
 
-## <a id="block-download" />Block all downloads
+## <a name="block-download" />Block all downloads
 
 When **Block** is set as the **Action** you want to take in the Cloud App Security session policy, Conditional Access App Control prevents a user from downloading a file per the policy’s file filters. A download event is recognized by Microsoft Cloud App Security for each app when a user starts a download. Conditional Access App Control intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, Conditional Access App Control returns a **Download restricted** message to the user and replaces the downloaded file with a text file. The text file's message to the user can be configured and customized from the session policy.
 
-## <a id="block-activities" />Block specific activities
+## <a name="block-activities" />Block specific activities
 
 When **Block activities** is set as the **Activity type**, you can select specific activities to block in specific apps. All activities from selected apps will be monitored and reported in the Activity log. The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
 
 **Block specific activities** and apply it to specific groups to create a comprehensive read-only mode for your organization.
 
-## <a id="protect-download" />Protect files on download
+## <a name="protect-download" />Protect files on download
 
 Select **Block activities** to block specific activities, which you can find using the **Activity type** filter. All activities from selected apps will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
 
 When **Protect** is set as the **Action** to be taken in the Cloud App Security session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy’s file filters. Labels are configured in the Azure Information Protection console and **Protect** must be selected within the label for it to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.
 
-## <a id="protect-upload" />Protect uploads of sensitive files
+## <a name="protect-upload" />Protect uploads of sensitive files
 
 When **Control file upload (with DLP)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy’s file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and does not have proper label, the file upload is blocked.
 
 For example, you can create a policy that recognizes uploads, scans the content of the file, and blocks the upload if it contains sensitive content and is not labeled with Azure Information Protection. You can configure a customized message about hot to label a file and successfully upload it. to display to the user when a file is blocked. If the file is blocked, you can [display a custom message to the user](#educate-protect). By doing so, you ensure that files stored in your cloud apps comply with your policies.
 
-## <a id="educate-protect" />Educate users to protect sensitive files
+## <a name="educate-protect" />Educate users to protect sensitive files
 
 It is important to educate users when they are in violation of a policy, so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Cloud App Security allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanged device, to ensure files are uploaded successfully.
 

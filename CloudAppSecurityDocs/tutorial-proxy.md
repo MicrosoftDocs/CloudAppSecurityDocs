@@ -55,7 +55,7 @@ A primary concern for many organizations is how to prevent data exfiltration bef
 Now that your apps are deployed, you can easily configure policies to mitigate both of these risks by leveraging our native integrations with Windows Intune for device management, Azure AD for user groups, and Azure Information Protection for data protection.
 
 * **Mitigate unmanaged devices**: Create a [session policy to label](session-policy-aad.md#create-a-cloud-app-security-session-policy) and protect highly confidential files meant for users in your organization only.
-* **Mitigate guest users**: Create a [session policy to apply custom permissions](session-policy-aad.md#protect-files-on-download-) to any file that is downloaded by guest users. For example, you can set permissions so that guest users can only access the protected file.
+* **Mitigate guest users**: Create a [session policy to apply custom permissions](session-policy-aad.md#protect-download) to any file that is downloaded by guest users. For example, you can set permissions so that guest users can only access the protected file.
 
 ### Phase 3: Prevent unprotected data from being uploaded to your apps
 
