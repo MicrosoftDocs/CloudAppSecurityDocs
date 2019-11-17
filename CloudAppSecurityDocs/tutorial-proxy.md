@@ -63,21 +63,8 @@ In addition to preventing data exfiltration, organizations often want to make su
 
 For any of the apps you’ve configured above, you can configure a session policy to prevent the upload of files that are not labeled correctly, as follows:
 
-1. Create a session policy to block uploads of incorrectly labeled files.
+1. Create a session policy to [block uploads of incorrectly labeled files](tutorial-proxy.md#protect-upload).
 
-1. Configure the policy to display a block message with instructions on how to correct the label and try again.
+1. Configure the policy to display a [block message with instructions on how to correct the label and try again](tutorial-proxy.md#educate-protect).
 
 Protecting file uploads in this way ensures that data saved to the cloud has the correct access permissions applied. In the event that the file is shared or lost, it can only be accessed by authorized users.
-
-### Phase 4: Enforce adaptive access controls to manage user actions in real time
-
-* Many times evaluating risk at the gate is not enough—session risk can involve throughout the session
-  * For example, token theft and replay can occur to hijack a session, the user could locations to a public space, or a seemingly innocuous user can go rogue
-
-* For this reason, it’s important to be able to continuously re-evaluate conditional access policies on sensitive actions during a session, and take action accordingly
-
-* Leveraging our deep integration with Azure AD, you can ensure that:
-  * If an IP address changes, such as if the session is hijacked or the user moves, the user is prompted to perform an additional factor of authentication during the session, upon any risky action
-  * If anomalous activity starts to occur, such as download of large amounts of sensitive content, the user is blocked from accessing the application
-
-## See Also
