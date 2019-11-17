@@ -63,8 +63,8 @@ In addition to preventing data exfiltration, organizations often want to make su
 
 For any of the apps you’ve configured above, you can configure a session policy to prevent the upload of files that are not labeled correctly, as follows:
 
-1. Create a session policy to [block uploads of incorrectly labeled files](tutorial-proxy.md#protect-upload).
+1. Create a session policy to [block uploads of incorrectly labeled files](session-policy-aad.md#protect-upload).
 
-1. Configure the policy to display a [block message with instructions on how to correct the label and try again](tutorial-proxy.md#educate-protect).
+1. Configure the policy to display a [block message with instructions on how to correct the label and try again](session-policy-aad.md#educate-protect).
 
 Protecting file uploads in this way ensures that data saved to the cloud has the correct access permissions applied. In the event that the file is shared or lost, it can only be accessed by authorized users.
