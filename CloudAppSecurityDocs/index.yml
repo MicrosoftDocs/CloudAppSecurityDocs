@@ -81,7 +81,7 @@ landingContent:
   # Card
   - title: Best practices
     linkLists:
-      - linkListType: reference
+      - linkListType: get-started
         links:
           - text: Discover and assess cloud apps
             url: best-practices.md#discover-and-assess-cloud-apps
