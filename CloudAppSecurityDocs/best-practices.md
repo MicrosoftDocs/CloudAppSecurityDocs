@@ -279,7 +279,7 @@ When dismissing alerts, it’s important to investigate and understand why they 
 
 ---
 
-**Best practice**: Review CSPM for Azure and AWS  
+**Best practice**: Review security configuration assessments for Azure and AWS  
 **Detail**: Integrating with Azure Security Center provides you with a security configuration assessment of your Azure environment. The assessment provides recommendations for missing configuration and security control. Reviewing these recommendations helps you identify anomalies and potential vulnerabilities in your environment, and navigate directly in the relevant location in the Azure Security portal to resolve them.
 
 AWS gives you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security. With these recommendations, you can monitor the compliance status of your AWS accounts.  
