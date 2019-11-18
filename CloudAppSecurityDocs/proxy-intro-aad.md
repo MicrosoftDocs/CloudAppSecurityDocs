@@ -30,7 +30,7 @@ ms.custom: seodec18
 In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact. You want to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It's important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, Microsoft Cloud App Security delivers these capabilities in a holistic and integrated experience with Conditional Access App Control.
 
 > [!NOTE]
-> To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), and an active Microsoft Cloud App Security subscription or Office 365 E5 license. For a list of featured apps included with Office 365 E5, see [Office 365 Cloud App Security featured apps](#O365-apps).
+> To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), and an active Microsoft Cloud App Security subscription or Office 365 E5 license. For a list of featured apps included with Office 365 E5, see [Office 365 featured apps](#O365-apps).
 
 Office 365 E5 license. For a list of apps included with supported Office 365 E5, see Office 365 featured apps
 
@@ -156,7 +156,7 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 - Workplace by Facebook
 - Yammer (preview)
 
-### <a id="O365-apps" />Office 365 Cloud App Security featured apps
+### <a id="O365-apps" />Office 365 featured apps
 
 The following is a list of featured apps that are supported in Office 365 Cloud App Security:
 
