@@ -44,14 +44,11 @@ Automatic groups are created by default by Microsoft Cloud App Security. For exa
 - Imported groups  
 You can import any group from your connected apps. For example, you can import user groups from Office 365 (Active Directory) and other connected apps. These groups enable you to look for threats in your org, not by looking at the whole org or at a specific user, but by looking at a specific group.
 
-    > [!NOTE]
-    > There may be a short delay until imported user groups are available in Cloud App Security. You may experience these delays in filters used in activity logs and policies.
+  Typical scenarios that use imported user groups include:
 
-Typical scenarios that use imported user groups include:
-
-- Investigating which docs the HR people look at
-- Check if there's something unusual happening in the executive group
-- Find if someone from the admin group performed an activity outside the US.
+  - Investigating which docs the HR people look at
+  - Check if there's something unusual happening in the executive group
+  - Find if someone from the admin group performed an activity outside the US.
 
 ## How to import user groups
 
@@ -70,6 +67,7 @@ Importing groups enables you to select those groups as filters when investigatin
 
 > [!NOTE]
 >
+> - There may be a short delay until imported user groups are available in filters.
 > - Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
 > - After the initial sync, groups are updated every hour.
 
