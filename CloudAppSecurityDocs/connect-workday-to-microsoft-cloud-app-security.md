@@ -44,9 +44,9 @@ The Workday account used for connecting to Cloud App Security must be a member o
 
 > [!NOTE]
 >
-> * The account used to set up permissions for the security group must be a Workday Administrator.
-> * To set permissions, go to **Domain Security Policies for Functional Area** and for the respective functional areas (**System**/**Staffing**), set the specified report and integration permissions.
-> * Once all permissions have been set, go to **Activate Pending Security Policy Changes** and approve the changes.
+> * The account that is used to set up permissions for the security group must be a Workday Administrator.
+> * To set permissions, search for "Domain Security Policies for Functional Area", then search for each functional area ("System"/"Staffing") and grant the permissions listed in the table.
+> * Once all permissions have been set, search for "Activate Pending Security Policy Changes" and approve the changes.
 
 For more information about setting up Workday integration users, security groups, and permissions, see steps 1 to 4 of the [Grant Integration or External Endpoint Access to Workday](https://go.microsoft.com/fwlink/?linkid=2103212) guide (accessible with Workday documentation/community credentials).
 
