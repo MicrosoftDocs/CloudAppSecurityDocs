@@ -4,9 +4,9 @@
 title: Create Cloud Discovery anomaly detection policy in Cloud App Security
 description: This topic provides information about how to work with Cloud Discovery anomaly detection policies.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

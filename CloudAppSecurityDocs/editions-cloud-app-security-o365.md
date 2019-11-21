@@ -4,16 +4,15 @@
 title: Differences between Cloud App Security and Office 365 Cloud App Security
 description: This article describes the differences between Cloud App Security and Office 365 Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 03/6/2019
+author: shsagir
+ms.author: shsagir
+manager: shsagir
+ms.date: 11/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 
 # optional metadata
 
@@ -35,13 +34,13 @@ This article describes the differences between Cloud App Security and Office 365
 
 For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
-## Microsoft Cloud App Security 
+## Microsoft Cloud App Security
 
 Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. With this service, you can gain visibility into Shadow IT by discovering cloud apps in use. You can control and protect data in the apps once you sanction them to the service.
 
 ## Office 365 Cloud App Security
 
-Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that provides enhanced visibility and control for Office 365. Office 365 Cloud App Security includes threat detection based on user activity logs, discovery of Shadow IT for apps that have similar functionality to Office 365 offerings, and control app permissions to Office 365.
+Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that provides enhanced visibility and control for Office 365. Office 365 Cloud App Security includes threat detection based on user activity logs, discovery of Shadow IT for apps that have similar functionality to Office 365 offerings, control app permissions to Office 365, and apply access and session controls.
 
 ### Feature support
 
@@ -62,14 +61,13 @@ Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that p
 ||Integration with third-party DLP solutions|Yes||
 |Threat Detection|Anomaly detection and behavioral analytics|For Cross-SaaS apps including Office 365|For Office 365 apps |
 ||Manual and automatic alert remediation|Yes|Yes|
-||SIEM connector|Yes. Alerts and activity logs for cross-SaaS apps.|Yes. Office 365 alerts only.|
+||SIEM connector|Yes. Alerts and activity logs for cross-SaaS apps.|For Office 365 alerts only|
 ||Integration to Microsoft Intelligent Security Graph|Yes|Yes|
 ||Activity policies|Yes|Yes|
+|Conditional Access App Control|Real-time session monitoring and control|Any cloud and on-premises app|For Office 365 apps|
 
+## Next steps
 
+Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).
 
-## Next steps  
-
-Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
-
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).   
+[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).

@@ -4,9 +4,9 @@
 title: Configure automatic log upload for continuous reports - Cloud App Security | Microsoft Docs
 description: This article provides information about how to upload logs to create automatic Cloud Discovery reports.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance

@@ -2,11 +2,11 @@
 # required metadata
 title: Cloud App Security compliance, data security, privacy, trust | Microsoft Docs
 description: This article describes the Cloud App Security compliance offering, trust center, privacy, and data security.
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
-ms.date: 8/21/2019
+ms.date: 11/01/2019
 
 # optional metadata
 ms.collection: M365-security-compliance
@@ -138,7 +138,7 @@ Microsoft Cloud App Security enables you to limit access of administrators to th
 
 ### Permissions
 
-Microsoft Cloud App Security supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](https://docs.microsoft.com/cloud-app-security/manage-admins).
+Microsoft Cloud App Security supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](/cloud-app-security/manage-admins).
 
 ## Customer controls for organizational compliance
 
@@ -148,13 +148,17 @@ Microsoft Cloud App Security enables you to scope your deployment. Scoping enabl
 
 ### Anonymization
 
-You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer).
+You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](/cloud-app-security/cloud-discovery-anonymizer).
+
+## Security and Privacy for Cloud App Security US Government GCC High customers
+
+For information on Cloud App Security compliance standards and the location of data for US Government GCC High customers, see [Enterprise Mobility + Security for US Government service description](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
 
 ## Next steps
 
 [Cloud App Security Overview](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-[Cloud App Security documentation](https://docs.microsoft.com/cloud-app-security/)
+[Cloud App Security documentation](/cloud-app-security/)
 
 [Sign up for Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 

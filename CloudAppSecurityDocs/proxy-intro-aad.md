@@ -4,10 +4,10 @@
 title: Protect with Microsoft Cloud App Security Conditional Access App Control
 description: This article provides information about how the Cloud App Security Conditional Access App Control reverse proxy works.
 keywords:
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
-ms.date: 8/25/2019
+manager: shsagir
+ms.date: 9/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -30,8 +30,9 @@ ms.custom: seodec18
 In today’s workplace, it’s often not enough to know what’s happening in your cloud environment after the fact. You want to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It's important to enable users in your organization to make the most of the services and tools available to them in cloud apps, and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Together with Azure Active Directory, Microsoft Cloud App Security delivers these capabilities in a holistic and integrated experience with Conditional Access App Control.
 
 > [!NOTE]
-> To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/) and an active Microsoft Cloud App Security subscription.
->
+> To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), and an active Microsoft Cloud App Security subscription or Office 365 E5 license. For a list of featured apps included with Office 365 E5, see [Office 365 featured apps](#O365-apps).
+
+Office 365 E5 license. For a list of apps included with supported Office 365 E5, see Office 365 featured apps
 
 ## How it works
 
@@ -70,6 +71,17 @@ Conditional Access App Control enables you to create policies that take into acc
 - Domain-joined devices
 - Client certificates deployment
 
+To configure a policy to leverage device management via client certificates:
+
+1. Go to the settings cog and choose **Device identification**.
+1. Upload one or more root or intermediate certificates.
+1. After the certificate is uploaded, you can create [access policies](access-policy-aad.md) and [session policies](session-policy-aad.md) based on **Device tag** and **Valid client certificate**.
+
+    ![Conditional access app control device ID](./media/caac-device-id.png)
+
+> [!NOTE]
+> A certificate is only requested from a user if the session matches a policy that uses the valid client certificate filter.
+
 ### Compliant and domain joined devices
 
 Azure AD conditional access enables compliant and domain-joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
@@ -97,7 +109,7 @@ For information on how to deploy client certificates see [Deploy Conditional Acc
 
 ## Supported apps and clients
 
-Conditional Access App Control currently supports SAML and Open ID Connect apps configured with single sign-on, along with web apps hosted on-prem configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Conditional Access App Control currently supports SAML and Open ID Connect apps configured with single sign-on, along with web apps hosted on-premises configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 > [!NOTE]
 > Conditional Access App Control also supports apps that are configured with identity providers other than Azure AD. For more information about this scenario, send an email to mcaspreview@microsoft.com.
 
@@ -105,11 +117,15 @@ Conditional Access App Control currently supports SAML and Open ID Connect apps 
 
 > [!NOTE]
 > Using the **Client app** filter in access policies can cause the resulting user session to be proxied by Cloud App Security.
+>
+> In access policies, when using the **Client app** filter it defaults to **Mobile and desktop**. This can cause the resulting user session to be proxied by Cloud App Security. To void this behavior, set the value to **Browser**.
+>
+> By default, evaluating whether an app is mobile or desktop can cause the resulting user session to be proxied by Cloud App Security. To avoid this behavior, set the Client App filter in your Access policies to be equal to **Browser**.
 
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client applications and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
 
-By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect can be self-onboarded. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
+<a name="featured-apps"></a>By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect you can onboard any app yourself. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -140,13 +156,25 @@ By natively integrating with Azure AD, any app that is configured with SAML or O
 - Workplace by Facebook
 - Yammer (preview)
 
+### <a id="O365-apps" />Office 365 featured apps
+
+The following is a list of featured apps that are supported in Office 365 Cloud App Security:
+
+- Exchange Online
+- OneDrive for Business
+- Power BI
+- SharePoint Online
+- Microsoft Teams (preview)
+- Yammer (preview)
+
 If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for on-boarding it.
 
->[!div class="step-by-step"]
-[NEXT: Deploy Conditional Access App Control »](proxy-deployment-aad.md)
+> [!div class="step-by-step"]
+> [NEXT: Deploy Conditional Access App Control »](proxy-deployment-aad.md)
 
 ## Next steps
 
-[Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)
+> [!div class="nextstepaction"]
+> [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)
 
 [Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)

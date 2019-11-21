@@ -4,9 +4,9 @@
 title: Automatically apply Azure Information Protection classification labels
 description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance

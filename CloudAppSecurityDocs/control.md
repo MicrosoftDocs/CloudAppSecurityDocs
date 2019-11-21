@@ -4,9 +4,9 @@
 title: How to use governance actions in Cloud App Security
 description: This article provides information about the governance actions you can take in Cloud App Security to control your organization's cloud app use.
 keywords:
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
