@@ -15,7 +15,7 @@ ms.date: 8/19/2019
 ms.collection: M365-security-compliance
 ---
 
-# Protect your organization from any app in real time
+# Tutorial: Protect your organization from any app in real time
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ Use this process to roll out real-time controls in your organization.
 
 1. **Deploy your apps**: Start by deploying the important apps that your organization uses. The deployment is made simple by our native integration with Azure Active Directory (Azure AD) Conditional Access. You can deploy apps  using the following steps:
 
-    * Start by [deploying apps that are featured](proxy-intro-aad.md) by Cloud App Security to work out of the box. For a list of apps that are featured, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+    * Start by [deploying apps that are featured](proxy-intro-aad.md) by Cloud App Security to work out-of-the-box. For a list of apps that are featured, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
     * Then, for apps not featured by Cloud App Security, use the following process to [onboard and deploy any app](proxy-deployment-any-app.md).
 
