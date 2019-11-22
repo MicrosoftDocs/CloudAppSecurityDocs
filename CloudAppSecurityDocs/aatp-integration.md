@@ -63,7 +63,7 @@ To disable Cloud App Security integration with Azure ATP:
 1. Clear **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
 
 > [!NOTE]
-> Existing azure ATP data is kept but the Identity Security Posture report is removed.
+> Existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments are removed.
 
 ## Next steps
 
