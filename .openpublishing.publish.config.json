@@ -1,4 +1,7 @@
 {
+  "docs_build_engine": {
+    "name": "docfx_v3"
+   },
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
