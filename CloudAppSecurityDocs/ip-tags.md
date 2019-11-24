@@ -88,6 +88,6 @@ In the menu bar, click the settings icon. Select **IP address ranges**. Click th
 ## Next steps
 [Set up Cloud Discovery](set-up-cloud-discovery.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

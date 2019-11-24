@@ -58,4 +58,4 @@ We recommend you check the dashboard daily to see what new alerts have been trig
 ## Next steps  
 For more information about investigating alerts, see [Investigate](investigate.md).  
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

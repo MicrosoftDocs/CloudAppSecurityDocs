@@ -126,6 +126,6 @@ After completing this task, go to the Cloud App Security portal and create a ses
   
 [Create a session policy](session-policy-aad.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   
