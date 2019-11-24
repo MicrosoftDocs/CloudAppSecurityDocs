@@ -108,4 +108,4 @@ The log collector is now able to communicate with Cloud App Security. After send
 
 [User activity policies](user-activity-policies.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

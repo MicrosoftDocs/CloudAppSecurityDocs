@@ -192,4 +192,4 @@ If the digital signature is not valid, it will say **This digital signature is n
 > [!div class="nextstepaction"]
 > [Log collector FTP configuration](log-collector-ftp.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

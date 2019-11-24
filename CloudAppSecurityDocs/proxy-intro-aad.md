@@ -177,4 +177,4 @@ If you're interested in a specific app being featured, [send us details about th
 > [!div class="nextstepaction"]
 > [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

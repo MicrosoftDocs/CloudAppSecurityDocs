@@ -101,4 +101,4 @@ The following table provides a list of the types of alerts that can be triggered
 ## Next steps  
 For more information about investigating alerts, see [Investigate](investigate.md).  
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

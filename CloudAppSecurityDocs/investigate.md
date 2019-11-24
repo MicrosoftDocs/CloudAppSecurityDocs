@@ -167,4 +167,4 @@ Now that you have the policy in place, you're surprised to see that you get an a
 
 To learn how to control your organization's cloud app, see [Control](control.md).
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).
+[!INCLUDE [Open support ticket](includes/support.md)].

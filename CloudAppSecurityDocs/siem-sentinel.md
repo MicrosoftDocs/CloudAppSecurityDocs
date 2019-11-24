@@ -143,4 +143,4 @@ You can get started quickly by using the following steps:
 
 1. After connecting your data, go to the workspace **Datasets** tab and click **Refresh**. This will update the report with your own data.
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

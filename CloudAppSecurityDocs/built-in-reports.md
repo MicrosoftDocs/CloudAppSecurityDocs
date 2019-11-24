@@ -60,6 +60,6 @@ This lists users who are sharing corporate files with the outside world. Externa
 ## Next steps 
 [Control](control.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   
