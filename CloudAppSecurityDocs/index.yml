@@ -112,7 +112,7 @@ landingContent:
           - text: Discover and identify Shadow IT
             url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
           - text: Evaluate and analyze
-            url: tutorial-shadow-it.md##phase-2-evaluate-and-analyze
+            url: tutorial-shadow-it.md#phase-2-evaluate-and-analyze
           - text: Manage your apps
             url: tutorial-shadow-it.md#phase-3-manage-your-apps
       - linkListType: concept
