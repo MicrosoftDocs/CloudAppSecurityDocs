@@ -191,4 +191,4 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 > [!div class="nextstepaction"]
 > [Log collector FTP configuration](log-collector-ftp.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
