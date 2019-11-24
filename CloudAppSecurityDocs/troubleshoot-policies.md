@@ -44,5 +44,5 @@ The following chart has the description and resolution for errors you might see 
 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
 
