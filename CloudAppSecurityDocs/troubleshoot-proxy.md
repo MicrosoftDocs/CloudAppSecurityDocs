@@ -58,4 +58,4 @@ The following steps are based on using Fiddler as the traffic logging tool. The 
 
 [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

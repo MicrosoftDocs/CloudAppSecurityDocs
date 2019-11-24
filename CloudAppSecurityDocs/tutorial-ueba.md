@@ -114,6 +114,6 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 ## See Also  
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   
