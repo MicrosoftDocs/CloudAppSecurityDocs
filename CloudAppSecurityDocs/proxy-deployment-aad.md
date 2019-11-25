@@ -107,4 +107,4 @@ To verify that the activity is properly captured, click on a single sign-on log 
 
 [Working with Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

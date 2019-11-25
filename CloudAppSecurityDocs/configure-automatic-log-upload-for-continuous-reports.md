@@ -175,4 +175,4 @@ After you've verified that the logs are being uploaded to Cloud App Security and
 ## Next steps 
 [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

@@ -687,6 +687,6 @@ Released: May 15, 2016
 
 ### Next steps 
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

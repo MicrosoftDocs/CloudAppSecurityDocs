@@ -53,4 +53,4 @@ You have to be a Global admin, Compliance admin, or Security admin in Azure Acti
 ## Next steps  
 To learn how to set up and use policies for controlling cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
 
-Premier customers can also choose Cloud App Security directly from the [Premier Portal](https://premier.microsoft.com/).  
+[!INCLUDE [Open support ticket](includes/support.md)]  

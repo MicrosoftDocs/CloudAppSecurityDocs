@@ -68,6 +68,6 @@ In order to view all your custom apps, set the **App tag** filter to be equal to
 ## Next steps 
 [User activity policies](user-activity-policies.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   
