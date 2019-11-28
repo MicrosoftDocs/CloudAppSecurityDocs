@@ -221,11 +221,9 @@ In **Application description** type "Microsoft Cloud App Security provides visib
 
     1. **Follow the link** to connect to G Suite. This opens G Suite and you're asked to authorize access for Cloud App Security.
 
-    1. Make sure the connection succeeded by clicking **Test now**.
-
-            Testing may take a couple of minutes.
-
-            After receiving a success notice, click **Done** and close the G Suite page.
+    1. Make sure the connection succeeded by clicking **Test now**.  
+    Testing may take a couple of minutes.  
+    After receiving a success notice, click **Done** and close the G Suite page.
 
 After connecting G Suite, you'll receive events for 60 days prior to connection.
 
