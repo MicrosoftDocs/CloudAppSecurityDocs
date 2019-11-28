@@ -66,7 +66,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     >
     > Ignore the **Credentials** warning for now.
 
-1. Make sure you have the following APIs enabled:
+1. Select menu, go to **APIs & Services** > **Dashboard**, and make sure you have the following APIs enabled:
 
     ![google enabled apis](media/google5.png)
 
@@ -80,11 +80,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![Google oauth consent](media/google-oauth-consent.png)
 
-1. Select menu, go to **APIs & Services** > **Credentials**, click the arrow next to **Create credentials**, and select **Service account key**.
+1. In the **Credentials** screen, click the arrow next to **Create credentials**, and select **Service account key**.
 
     ![Google credentials](media/google7.png)
 
-1. Under **Create service account key**, choose **New service account**, and type any name, for example **Service account 1**. Under **Role**, choose **Project** and then **Editor**. Under **Key type**, choose **P12** and click **Create**. A P12 certificate file is saved to your computer.
+1. For **Service account**, choose **New service account**, and provide a name for the account, for example **Service account 1**. Under **Role**, choose **Project** and then **Editor**. Under **Key type**, choose **P12** and click **Create**. A P12 certificate file is saved to your computer.
 
     ![Create service account key in Google](media/google9.png)
 
@@ -96,30 +96,29 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![google edit](media/google11.png "google edit")
 
-1. Click **VIEW DOMAIN WIDE DELEGATION CLIENT ID**.
+1. Click **SHOW DOMAIN-WIDE DELEGATION**, select **Enable G Suite Domain-wide Delegation**.
 
     ![google client ID](media/google12.png "google12")
 
-    * Copy the **Client ID** - you need it later.
+    1. Copy the **Client ID** - you need it later.
 
-    * Go to [admin.google.com](https://admin.google.com/) and then choose **Security**.
+    1. Click **SAVE**
 
-    * Select **Show more** and then choose **Advanced settings**.
+    1. Go to [admin.google.com](https://admin.google.com/) and then choose **Security**.
 
-    * In the **Authentication** section, select **Manage API client access**.
+    1. Expand **Advanced settings**, and then under **Authentication**, select **Manage API client access**.
 
-    * In the **Client Name** box, enter the **Client ID** that you copied earlier.
-
+    1. In the **Client Name** box, enter the **Client ID** that you copied earlier.  
     ![manage api client access](media/google12-2.png "google12-2")
 
-    * In the **One or More API Scopes** box, enter the following list of required scopes (copy the text and paste it in the box):  
+    1. In the **One or More API Scopes** box, enter the following list of required scopes (copy the text and paste it in the box):  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
-    * Click **Authorize**.
+    1. Click **Authorize**.
 
-1. Open the Google menu by clicking the three horizontal lines next to Google Cloud Platform in the title bar. Click on **Google Cloud Platform** and then click the **APIs and services** tab in the left-menu.
+1. In the [Google Cloud Platform](https://console.cloud.google.com/), select menu and go to **APIs and services** > **Dashboard**.
 
-1. In the Dashboard that opens, scroll down to the list of enabled APIs and click on **Google Drive API**.
+1. In the dashboard, scroll down to the list of enabled APIs and click on **Google Drive API**.
     ![Select Google Drive](media/google14.png)
 
 1. Click on the **Drive UI Integration** tab and fill in the following information:
