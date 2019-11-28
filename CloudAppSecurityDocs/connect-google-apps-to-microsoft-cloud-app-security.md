@@ -88,7 +88,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![Create service account key in Google](media/google9.png)
 
-1. In the **Credentials** screen, click **Manage service accounts** in the far right. Copy the **Email** assigned to your service - you'll need it later.
+1. In the **Credentials** screen, click **Manage service accounts** in the far right. Copy the **Email** assigned to your service account - you'll need it later.
 
     ![G Suite credentials service account](media/google10.png)
 
@@ -101,6 +101,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     ![google client ID](media/google12.png "google12")
 
     1. Copy the **Client ID** - you need it later.
+    ![manage api client access](media/google12-2.png "google12-2")
 
     1. Click **SAVE**
 
@@ -109,7 +110,6 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     1. Expand **Advanced settings**, and then under **Authentication**, select **Manage API client access**.
 
     1. In the **Client Name** box, enter the **Client ID** that you copied earlier.  
-    ![manage api client access](media/google12-2.png "google12-2")
 
     1. In the **One or More API Scopes** box, enter the following list of required scopes (copy the text and paste it in the box):  
 `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
@@ -207,7 +207,7 @@ In **Application description** type "Microsoft Cloud App Security provides visib
 
     ![G Suite Configuration in Cloud App Security](media/gsuite-config-cas.png "G Suite Configuration in Cloud App Security")
 
-    1. Enter the **Service account ID** that you copied earlier.
+    1. Enter the **Service account ID**, the **Email** that you copied earlier.
 
     1. Enter the **Project number (App ID)** that you copied earlier.
 
