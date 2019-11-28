@@ -186,4 +186,4 @@ Once you are ready to enable the app for use in your organization's production e
 
 [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -106,4 +106,4 @@ You can use policies to define your users' behavior in the cloud. Use policies t
 
 Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).   
+[!INCLUDE [Open support ticket](includes/support.md)].   

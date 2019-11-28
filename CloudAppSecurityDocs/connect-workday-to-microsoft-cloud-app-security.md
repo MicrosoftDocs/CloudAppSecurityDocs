@@ -33,18 +33,22 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 ## Prerequisites
 
-The Workday account used for connecting to Cloud App Security must be a member of a security group (new or existing). The security group must have the following permissions selected for the following domains:
+The Workday account used for connecting to Cloud App Security must be a member of a security group (new or existing). We recommended using a Workday Integration System User. The security group must have the following permissions selected for the following domain security policies:
 
-| Functional area | Domain | Subdomain | Report/Task Permissions | Integration Permissions |
+| Functional area | Domain Security policy | Subdomain Security policy | Report/Task Permissions | Integration Permissions |
 | --- | --- | --- | --- | --- |
 | System | Set Up: Tenant Setup – General | Set Up: Tenant Setup –  Security | View, Modify | Get, Put |
 | System | Security Administration | | View, Modify | Get, Put |
 | System | System auditing | | View | Get |
 | Staffing | Worker Data: Staffing | Worker Data: Public Worker Reports | View | Get |
 
-For more information about setting up Workday integration users, security groups, and permissions, see steps 1 to 4 of the [Grant Integration or External Endpoint Access to Workday](https://go.microsoft.com/fwlink/?linkid=2103212) guide (accessible with Workday documentation/community credentials).
+> [!NOTE]
+>
+> * The account that is used to set up permissions for the security group must be a Workday Administrator.
+> * To set permissions, search for "Domain Security Policies for Functional Area", then search for each functional area ("System"/"Staffing") and grant the permissions listed in the table.
+> * Once all permissions have been set, search for "Activate Pending Security Policy Changes" and approve the changes.
 
-We recommended using a Workday Integration System User.
+For more information about setting up Workday integration users, security groups, and permissions, see steps 1 to 4 of the [Grant Integration or External Endpoint Access to Workday](https://go.microsoft.com/fwlink/?linkid=2103212) guide (accessible with Workday documentation/community credentials).
 
 ## How to connect Workday to Cloud App Security using OAuth
 
@@ -73,11 +77,11 @@ We recommended using a Workday Integration System User.
 
 1. Once registered, make a note for the following parameters, and then click **Done**.
 
-    - Client ID
-    - Client Secret
-    - Workday REST API Endpoint
-    - Token Endpoint
-    - Authorization Endpoint
+    * Client ID
+    * Client Secret
+    * Workday REST API Endpoint
+    * Token Endpoint
+    * Authorization Endpoint
 
     ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
 
@@ -110,4 +114,4 @@ We recommended using a Workday Integration System User.
 
 [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

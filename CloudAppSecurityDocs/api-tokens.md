@@ -87,7 +87,7 @@ After a token is revoked, it's removed from the table, and the software that was
 ## Next steps
 [Troubleshooting SIEM integration issues](troubleshooting-siem.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 
 ## Check out this video!
 [Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  

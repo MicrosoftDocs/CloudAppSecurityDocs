@@ -59,7 +59,7 @@ The following governance actions can be taken for connected apps either on a spe
 
     - **Remove external users** – Allow access only to company users.
 
-    - **Make private** – Only the owner can access the file, all shares are removed.
+    - **Make private** – Only Site Admins can access the file, all shares are removed.
 
     - **Remove a collaborator** – Remove a specific collaborator from the file.
 
@@ -156,7 +156,7 @@ For information about how governance actions are treated when there are policy c
 |Files, File policy|File | Transfer file ownership | Changes the owner - in the policy you choose a specific owner. | G Suite|
 |Files, File policy|File | Reduce public access|This action enables you to set publicly available files to be available only with a shared link.| G Suite|
 |Files, File policy|File | Remove a collaborator | Removes a specific collaborator from a file. | G Suite, Box, One Drive, SharePoint|
-|Files, File policy|File | Make private| Make the file private - no more collaborators or public links, not shared with anyone. | G Suite, One Drive, SharePoint |
+|Files, File policy|File | Make private| Only Site Admins can access the file, all shares are removed. | G Suite, One Drive, SharePoint |
 |Files, File policy|File | Remove external users | Removes all external collaborators - outside the domains configured as internal in Settings. |G Suite, Box, One Drive, SharePoint|
 |Files, File policy|File |Grant read permission to domain|Grants read permissions for the file to the specified domain for your entire domain or a specific domain. This action is useful if you want to remove public access after granting access to the domain of people who need to work on it.| G Suite|
 |Files, File policy|File | Put in user quarantine | Removes all permissions from the file and moves the file to a quarantine folder under the user's root drive. This action allows the user to review the file and move it. If it's manually moved back, the file sharing isn't restored. | Box, One Drive, SharePoint |
@@ -173,4 +173,4 @@ For information about how governance actions are treated when there are policy c
 
 [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/17/2019
+ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -42,6 +42,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. In the **New project** screen, name your project as follows:  
 **Cloud App Security** and click **Create**.
+
     ![google2](media/google2.png)
 
 1. After the project is created, in the tool bar, click on **Google Cloud Platform**. Make sure that the right project is selected in the drop-down at the top.
@@ -275,4 +276,4 @@ After connecting G Suite, Cloud App Security performs a full scan. Depending on 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]
