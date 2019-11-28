@@ -48,7 +48,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![google project](media/googleverify-project.png)
 
-1. Select menu, go to **APIs & Services** > **Library** and enable the following APIs (use the search line if the API isn't listed in the **Popular APIs** list):
+1. Select menu, go to **APIs & Services** > **Library** and enable the following APIs (use the search line if the API isn't listed):
 
     * Admin SDK
 
@@ -56,15 +56,16 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     * Google Drive API
 
-    * G Suite Marketplace SDK
-
-    ![google apis](media/google4.png)
+    * G Suite Marketplace SDK  
+![google apis](media/google4.png)
 
     > [!NOTE]
+    > For each API, click **Enable** to active it.
+    >
+    > ![enable Google APPI](media/google-api.png)
+    >
     > Ignore the **Credentials** warning for now.
 
-1. Click on Enable for each API.
-    ![enable Google APPI](media/google-api.png)
 1. Make sure you have the following APIs enabled:
 
     ![google enabled apis](media/google5.png)
