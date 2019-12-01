@@ -7,13 +7,12 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 
 # optional metadata
 
@@ -30,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides information on policy templates included in Microsoft Cloud App Security. 
+This article provides information on policy templates included in Microsoft Cloud App Security.
 
 ## Policy templates
 
@@ -70,12 +69,11 @@ We recommend starting policy creation based on an existing template whenever pos
 |Sharing control|File shared with unauthorized domain|Alert when file is shared with an unauthorized domain (such as your competitor).|
 |Sharing control|Shared digital certificates (file extensions)|Alert when a file containing digital certificates is publicly shared. Use this template to help govern your AWS storage.|
 |Sharing control|Publicly accessible S3 buckets (AWS)|Alert when an AWS S3 bucket is publicly shared.|
-|Sharing control|Stale externally shared files|Find externally shared files that haven't been opened or modified for 6 months.|
+|Sharing control|Stale externally shared files|Alert when externally shared files haven't been modified for at least 6 months.|
 
+## Next steps
 
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-## Next steps 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
