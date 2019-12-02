@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/06/2019
+ms.date: 12/1/2019
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -154,6 +154,9 @@ To affect the anomaly detection engine to suppress or surface alerts according t
 * In the Impossible Travel policy, you can set the sensitivity slider to determine the level of anomalous behavior needed before an alert is triggered. For example, if you set it to low, it will suppress Impossible Travel alerts from a user’s common locations, and if you set it to high, it  will surface such alerts.
 
 * You can also configure whether the alerts for Activity from infrequent country, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or just successful logins.
+
+> [!NOTE]
+> By default, legacy sign-in protocols, such as those that don't use multi-factor authentication (for example, WS-Trust), are not monitored by the impossible travel policy. If your organization uses legacy protocols, to avoid missing relevant activities, edit the policy and under **Advanced configuration**, set **Analyze sign in activities** to **All sign ins**.
 
 ## Scope anomaly detection policies
 
