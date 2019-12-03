@@ -52,10 +52,10 @@ You can import any group from your connected apps. For example, you can import u
 
 ## How to import user groups
 
-1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "settings icon") and select **User groups**.
+1. In the menu bar, click the settings icon ![settings icon](media/settings-icon.png "settings icon") and select **User groups**.
 1. Click **Import user group**.
 
-    ![Import user groups](./media/user-groups-add.png)
+    ![Import user groups](media/user-groups-add.png)
 
 1. Select the app from which to import the user group. The list of apps will depend on which App Connectors you deployed.
 1. Select the group to import. The list of available groups will be a list of all the existing user groups in the app itself. If you want to add a new group, you have to do it directly in the app itself. Then, when the group appears in the list here, select it.

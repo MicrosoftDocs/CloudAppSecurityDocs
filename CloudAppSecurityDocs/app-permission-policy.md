@@ -43,13 +43,13 @@ To create a new OAuth app policy:
 
 1. Filter the apps according to your needs, for example, you can view all apps that request **Permission** to **Modify calendars in your mailbox**.
 1. Click the **New policy from search** button.
-    ![new policy from search](./media/app-permissions-filter.png)
+    ![new policy from search](media/app-permissions-filter.png)
 1. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
 1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
 
 Alternatively, you can also create the policy by clicking **Control** followed by **Policies**. Then click **Create policy** followed by **OAuth app policy**.
 
-   ![new OAuth app policy](./media/app-permissions-policy.png)
+   ![new OAuth app policy](media/app-permissions-policy.png)
 
 ## OAuth app anomaly detection policies
 

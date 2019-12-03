@@ -55,9 +55,9 @@ Every Azure AD user has a dynamic investigation priority score, that is constant
 
 Cloud App Security uses the following to measure risk: 
 
-- **Alert scoring**<br>The alert score represents the potential impact of a specific alert on each user. Alert scoring is based on severity, user impact, alert popularity across users, and all entities in the organization.
+- **Alert scoring**<br />The alert score represents the potential impact of a specific alert on each user. Alert scoring is based on severity, user impact, alert popularity across users, and all entities in the organization.
 
-- **Activity scoring**<br> The activity score determines the probability of a specific user performing a specific activity, based on behavioral learning of the user and their peers. Activities identified as the most abnormal receive the highest scores. 
+- **Activity scoring**<br /> The activity score determines the probability of a specific user performing a specific activity, based on behavioral learning of the user and their peers. Activities identified as the most abnormal receive the highest scores. 
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
@@ -69,19 +69,19 @@ Cloud App Security uses the following to measure risk:
 
 To identify who your riskiest users are in Cloud App Security:
 
-1. Go to the Cloud App Security dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them. <br>The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week. 
+1. Go to the Cloud App Security dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them. <br />The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week. 
 
-   ![Top users dashboard](./media/dashboard-top-users.png) 
+   ![Top users dashboard](media/dashboard-top-users.png) 
 
 2. Click on a particular user to get to the **User** page. 
-   ![User page](./media/user-page.png) 
+   ![User page](media/user-page.png) 
 
-4. Review the information in the User page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.<br>The User page helps you answer the questions:
-	- Who is the user?<br>Look at the left pane to get information about who the user is and what is known about them. This pane provides you with information about the user's role in your company and their department. Is the user a DevOps engineer who often performs unusual activities as part of their job? Is the user a disgruntled employee who just got passed over for a promotion?
+4. Review the information in the User page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.<br />The User page helps you answer the questions:
+	- Who is the user?<br />Look at the left pane to get information about who the user is and what is known about them. This pane provides you with information about the user's role in your company and their department. Is the user a DevOps engineer who often performs unusual activities as part of their job? Is the user a disgruntled employee who just got passed over for a promotion?
 	  
-   - Is the user risky?<br>Check out the top of the right pane so you know whether it's worth your while to investigate the user. What is the employee's [risk score](#risk-score)?
+   - Is the user risky?<br />Check out the top of the right pane so you know whether it's worth your while to investigate the user. What is the employee's [risk score](#risk-score)?
 	
-   - What's risk does the user present to your organization?<br>Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, click on each line so you can drill down deeper into the activity or alert itself. You can click also on the number next to the activity so that you can understand the evidence that influenced the score itself.
+   - What's risk does the user present to your organization?<br />Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, click on each line so you can drill down deeper into the activity or alert itself. You can click also on the number next to the activity so that you can understand the evidence that influenced the score itself.
 
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.

@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 
 # optional metadata
 
@@ -35,7 +34,6 @@ This article provides a list of API App connector error messages and resolution 
 ## Troubleshooting
 
 App connector errors can be seen in the app connector dialog after attempting to connect a cloud app using the API App connector.
-
 
 > [!div class="mx-tableFixed"]
 > 
@@ -71,7 +69,7 @@ App connector errors can be seen in the app connector dialog after attempting to
 
 ## Next steps
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
-

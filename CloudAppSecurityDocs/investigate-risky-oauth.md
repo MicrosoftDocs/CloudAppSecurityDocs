@@ -33,13 +33,13 @@ OAuth is an open standard for token-based authentication and authorization. OAut
 
 For example, an app that analyses the user’s calendar and gives him advice on how to become more productive needs access to the user’s calendar. Instead of providing the user’s credentials, OAuth enables the app to get access to the data based only on a token, which is generated when the user provides consent to a page as can be seen in the below picture.
 
- ![OAuth app permission](./media/oauth-permission.png)
+![OAuth app permission](media/oauth-permission.png)
 
 Many third-party apps that might be installed by business users in your organization, request permission to access user information and data and sign in on behalf of the user in other cloud apps. When users install these apps, they often click **accept** without closely reviewing the details in the prompt, including granting permissions to the app. Accepting third-party app permissions is a potential security risk to your organization.
 
 For example, the following OAuth app consent page might look legitimate to the average user, however, “Google APIs Explorer” shouldn't need to request permissions from Google itself. So this indicates that the app might be a phishing attempt, not related to Google at all.
 
-![OAuth phishing](./media/oauth-phishing.png)
+![OAuth phishing](media/oauth-phishing.png)
 
 As a security admin, you need visibility and control over the apps in your environment and that includes the permissions they have. You need the ability to prevent use of apps that require permission to resources you wish to revoke. Therefore, Microsoft Cloud App Security provides you with the ability to investigate and monitor the app permissions your users granted. This article is dedicated to helping you investigate the OAuth apps in your organization, and focus on the apps that are more likely to be suspicious.
 
@@ -63,7 +63,7 @@ You can set policies to automatically send you notifications when an OAuth app m
     - Set the filter to **Permission level high severity** and **Community use not common**. Using this filter, you can focus on apps that are potentially very risky, where users may have underestimated the risk.
     - Under **Permissions** select all the options that are particularly risky in a specific context. For example, you can select all the filters that provide permission to email access, such as **Full access to all mailboxes** and then review the list of apps to make sure that they all really need mail-related access. This can help you investigate within a specific context, and find apps that seem legitimate, but contain unnecessary permissions. These apps are more likely to be risky.
 
-            ![OAuth phishing](./media/oauth-filters.png)
+            ![OAuth phishing](media/oauth-filters.png)
 
     - Select the saved query **Apps authorized by external users**. Using this filter, you can find apps that might not be aligned with your company’s security standards.
 1. After you review your apps, you can focus on the apps in the queries that seem legitimate but might actually be risky. Use the filters to find them:
@@ -72,7 +72,7 @@ You can set policies to automatically send you notifications when an OAuth app m
 1. Click on each app to open the app drawer, and check to see if the app has a suspicious name, publisher, or website.
 1. Look at the list of apps and target apps that have a date under **Last authorized** that isn't recent. These apps may no longer be required.
 
-    ![OAuth app drawer](./media/oauth-drawer.png)
+    ![OAuth app drawer](media/oauth-drawer.png)
 
 ## How to investigate
 
@@ -103,6 +103,7 @@ You can easily [ban revoke an app from the OAuth apps page](manage-app-permissio
 
 ## Next steps
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

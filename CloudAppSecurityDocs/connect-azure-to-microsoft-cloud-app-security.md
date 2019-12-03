@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 
 
 # optional metadata
@@ -31,30 +30,30 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use. 
-  
-## How to connect Azure to Cloud App Security  
-  
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use.
+
+## How to connect Azure to Cloud App Security
+
 > [!NOTE]
-> - User must be a Global administrator in Azure AD to connect Azure to Microsoft Cloud App Security. 
+>
+> - User must be a Global administrator in Azure AD to connect Azure to Microsoft Cloud App Security.
 > - Cloud App Security displays activities from **all** subscriptions.
->-  Currently, Cloud App Security monitors only ARM activities. 
- 
-1.  In **Connected apps** page, click the plus button and select **Microsoft Azure**.  
-  
-     ![connect Azure](./media/connect-azure-menu.png) 
+> - Currently, Cloud App Security monitors only ARM activities.
 
-2.  In the Azure pop-up, click **Connect Microsoft Azure**.
+1. In **Connected apps** page, click the plus button and select **Microsoft Azure**.
 
-      ![connect Azure](./media/connect-azure.png) 
- 
-> [!NOTE] 
+    ![connect Azure](media/connect-azure-menu.png)
+
+2. In the Azure pop-up, click **Connect Microsoft Azure**.
+
+    ![connect Azure](media/connect-azure.png)
+
+> [!NOTE]
 > After connecting Azure, data will be pulled. You will see data from then onwards.
 
+## Next steps
 
-## Next steps 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

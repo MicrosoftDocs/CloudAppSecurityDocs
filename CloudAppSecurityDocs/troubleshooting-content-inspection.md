@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 
 # optional metadata
 
@@ -54,12 +53,9 @@ The table lists each content inspection status and its description.
 > [!NOTE]
 > If you see a dash in the scan status, this means that the file is not queued to be scanned. See [File policies](data-protection-policies.md) for information on setting content inspection policies.
 
-## See Also  
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-
 ## Next steps
- 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

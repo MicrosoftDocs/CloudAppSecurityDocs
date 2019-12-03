@@ -77,7 +77,7 @@ To configure a policy to leverage device management via client certificates:
 1. Upload one or more root or intermediate certificates.
 1. After the certificate is uploaded, you can create [access policies](access-policy-aad.md) and [session policies](session-policy-aad.md) based on **Device tag** and **Valid client certificate**.
 
-    ![Conditional access app control device ID](./media/caac-device-id.png)
+    ![Conditional access app control device ID](media/caac-device-id.png)
 
 > [!NOTE]
 > A certificate is only requested from a user if the session matches a policy that uses the valid client certificate filter.

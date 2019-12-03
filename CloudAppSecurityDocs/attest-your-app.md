@@ -2,7 +2,7 @@
 # required metadata
 
 title: Attest your apps - Cloud App Security | Microsoft Docs
-description: This article provides instructions for attesting your apps in Cloud App Security. 
+description: This article provides instructions for attesting your apps in Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 
 # optional metadata
 
@@ -129,11 +128,11 @@ Follow the service attributes described below to successfully complete the submi
 | GDPR - lawful basis for processing | Legal | Boolean | True, False, N/A | Does this app process personal data lawfully in accordance with consent, contract, legal obligation, vital interests, legitimate interests, special category, data, and criminal offense data? |
 | GDPR - Right to rectification | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to rectify their personal data? The controller must respond to all requests from its data subjects within one month. |
 
-
 \* Fields of type *Array* should be separated with semicolon (;).
 
-## Next steps 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+## Next steps
 
-[!INCLUDE [Open support ticket](includes/support.md)] 
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
+[!INCLUDE [Open support ticket](includes/support.md)]

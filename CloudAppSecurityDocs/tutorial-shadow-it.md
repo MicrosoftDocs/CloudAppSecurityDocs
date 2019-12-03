@@ -46,7 +46,7 @@ This tutorial provides instructions for using Cloud Discovery to discover which 
 
 Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
-![shadow IT lifecycle](./media/shadow-it-lifecycle.png)
+![shadow IT lifecycle](media/shadow-it-lifecycle.png)
 
 ### Phase 1: Discover and identify Shadow IT
 
@@ -108,6 +108,7 @@ The nature of cloud apps means that they are updated daily and new apps appear a
 
 ## See Also
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
