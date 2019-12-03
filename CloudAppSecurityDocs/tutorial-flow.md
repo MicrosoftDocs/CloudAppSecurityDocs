@@ -17,6 +17,7 @@ For example, when detecting a possible malware threat, you can use workflows to 
 In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior.
 
 > [!div class="checklist"]
+>
 > * 1: [Generate a Cloud App Security API token](#generate-token)
 > * 2: [Create a flow to run an antivirus scan](#create-flow)
 > * 3: [Configure the flow](#configure-flow)
@@ -108,4 +109,4 @@ You can use the steps in this tutorial to create a wide range of workflow-based 
 ## See Also
 
 > [!div class="nextstepaction"]
-[Integrate with Microsoft Flow for custom alert automation](flow-integration.md)
+> [Integrate with Microsoft Flow for custom alert automation](flow-integration.md)

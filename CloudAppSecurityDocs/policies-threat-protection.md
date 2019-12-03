@@ -170,9 +170,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-- It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
+2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
 > This applies to Office 365, G Suite, Box, and Dropbox.
@@ -246,8 +246,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
-- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+
+2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous file shares by a user
 
@@ -259,8 +260,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
-- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+
+2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous activities from infrequent country
 
@@ -272,8 +274,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
-- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+
+2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
 > Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Cloud App Security does not generate alerts for new locations.
@@ -288,8 +291,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-- This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
-- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+
+2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Next steps
 

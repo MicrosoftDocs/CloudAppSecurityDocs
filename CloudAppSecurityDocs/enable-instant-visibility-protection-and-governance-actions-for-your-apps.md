@@ -125,4 +125,5 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 
 ## Check out this video!
 
-[Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [!div class="nextstepaction"]
+> [Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

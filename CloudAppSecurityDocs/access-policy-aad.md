@@ -88,8 +88,7 @@ To create a new access policy, follow this procedure:
 6. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
 
 >[!div class="step-by-step"]
-[« PREVIOUS: How to create a session policy](session-policy-aad.md)<br />
-[NEXT: Explore popular use cases »](use-case-proxy-block-session-aad.md)
+>[« PREVIOUS: How to create a session policy](session-policy-aad.md)<br />[NEXT: Explore popular use cases »](use-case-proxy-block-session-aad.md)
 
 ## Next steps
 

@@ -119,7 +119,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 12. Open the file and paste the following server configuration lines. The **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **MCASCAfile** is the public certificate of the Cloud App Security stunnel client. Delete any example text that is in place (in the example it displays Gmail text) and copy the following text into the file:
 
-    ```text
+    ```
     [microsoft-Cloud App Security]
     accept = 0.0.0.0:11344
     connect = **ICAP Server IP**:1344
@@ -184,15 +184,15 @@ The stunnel configuration is set in the stunnel.conf file.
 
 2. Open the file and paste the following server configuration lines.  The **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **MCASCAfile** is the public certificate of the Cloud App Security stunnel client:
 
-```text
-[microsoft-Cloud App Security]
-accept = 0.0.0.0:11344
-connect = **ICAP Server IP**:1344
-cert = /etc/ssl/private/**stunnel-key**.pem
-CAfile = /etc/ssl/certs/**MCASCAfile**.pem
-TIMEOUTclose = 1
-client = no
-```
+    ```
+    [microsoft-Cloud App Security]
+    accept = 0.0.0.0:11344
+    connect = **ICAP Server IP**:1344
+    cert = /etc/ssl/private/**stunnel-key**.pem
+    CAfile = /etc/ssl/certs/**MCASCAfile**.pem
+    TIMEOUTclose = 1
+    client = no
+    ```
 
 ### Update your IP table
 
@@ -244,7 +244,8 @@ If the process is still not running, refer to the [stunnel documentation](https:
     - **Forcepoint DLP** – Use the customized integration for Forcepoint DLP appliances.
     - **Generic ICAP – REQMOD** - Use other DLP appliances that use [Request Modification](https://tools.ietf.org/html/rfc3507).
     - **Generic ICAP – RESPMOD** - Use other DLP appliances that use [Response Modification](https://tools.ietf.org/html/rfc3507).
-    ![Cloud App Security ICAP connection](media/icap-wizard1.png)
+
+        ![Cloud App Security ICAP connection](media/icap-wizard1.png)
 
 5. Browse to select the public certificate you generated in the previous steps, “cert.pem”, to connect to your stunnel. Click **Next**.
 
@@ -253,7 +254,8 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 6. In the **Server configuration** screen, provide the **IP address** and **Port** of the stunnel server that you set up in Step 2. For load-balancing purposes, you can configure the **IP address** and **Port** of an additional server. The provided IP addresses should be the external static IP addresses of your servers.
 
-   ![Cloud App Security ICAP connection](media/icap-wizard2.png)
+    ![Cloud App Security ICAP connection](media/icap-wizard2.png)
+
 7. Click **Next**. Cloud App Security tests connectivity to the server you configured. If you receive an error, review the instructions and network settings. After it's successfully connected, you can click **Quit**.
 
 8. Now, to direct traffic to this external DLP server, when you create a **File policy** under **Content inspection method**, select the connection you created. Read more about [creating a File policy](data-protection-policies.md).
@@ -266,8 +268,7 @@ In ForcePoint, set your appliance using the following steps:
 
     ![ICAP deployment](media/icap-system-modules.png)
 
-2. In the **General** tab, make sure **ICAP Server** is **Enabled** and the default **Port** is set to **1344**.
-Also, under **Allow connection to this ICAP Server from the following IP addresses**, select **Any IP address**.
+2. In the **General** tab, make sure **ICAP Server** is **Enabled** and the default **Port** is set to **1344**. Also, under **Allow connection to this ICAP Server from the following IP addresses**, select **Any IP address**.
 
     ![ICAP configuration](media/icap-ip-address.png)
 
@@ -288,7 +289,7 @@ The detection server used by Cloud App Security is a standard Network Prevent fo
 1. Disable **Trial Mode**:
     1. Under **System** > **Servers and Detectors**, click on the ICAP target.
 
-    ![ICAP target](media/icap-target.png)
+        ![ICAP target](media/icap-target.png)
 
     1. Click **Configure**.
 
@@ -302,7 +303,7 @@ The detection server used by Cloud App Security is a standard Network Prevent fo
 
 3. And add "application/\*" to the list of **Inspect Content Type</em>**.
 
-        ![inspect content type](media/icap-inspect-content-type.png)
+    ![inspect content type](media/icap-inspect-content-type.png)
 
 4. Click **Save**
 

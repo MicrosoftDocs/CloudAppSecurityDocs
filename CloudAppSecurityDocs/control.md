@@ -112,7 +112,6 @@ Imagine this scenario: you're considering buying a productivity tool, and you ar
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+To learn how to use and set up policies to control cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]

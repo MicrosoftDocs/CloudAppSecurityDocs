@@ -49,7 +49,7 @@ If you work with both Cloud App Security and iboss, you can integrate the two pr
 
         - Name = iboss
         - Source = iboss Secure Cloud Gateway
-    - Receiver type = Syslog - UDP
+        - Receiver type = Syslog - UDP
 
         ![data source iboss](media/iboss-integration.png)
 

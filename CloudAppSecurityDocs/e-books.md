@@ -30,4 +30,4 @@ Read our e-books to learn about Microsoft Cloud App Security, its key use cases,
 ## Next steps
 
 > [!div class="nextstepaction"]
-[Watch our webinars](webinars.md)
+> [Watch our webinars](webinars.md)

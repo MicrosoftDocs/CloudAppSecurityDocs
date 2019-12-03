@@ -76,16 +76,12 @@ The following table gives you example expressions and if they would match or not
 
 ## Check out this video!
 
-[Working with the Regex Engine](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
+> [!div class="nextstepaction"]
+> [Working with the Regex Engine](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
-
-## Check out this video!
-
-> [!div class="nextstepaction"]
-> [Working with the Regex Engine](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

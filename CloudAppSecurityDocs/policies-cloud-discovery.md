@@ -63,9 +63,9 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
     1. Optional: To get more meaningful detections, customize the amount of traffic that will trigger an alert.
 
-        1. Check the **Trigger a policy match if all the following occur on the same day** checkbox.
+    2. Check the **Trigger a policy match if all the following occur on the same day** checkbox.
 
-        2. Select **Daily traffic** greater than 2000 GB (or other).
+    3. Select **Daily traffic** greater than 2000 GB (or other).
 
 4. Configure governance actions to be taken when an alert is triggered. Under **Governance**, select **Tag app as unsanctioned.**<br />Access to the app will be automatically blocked when the policy is matched.
 

@@ -73,7 +73,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
     - If legitimate use triggered the alert and it isn't a security issue, it could be one of these types:
 
       - Benign positive: The alert is accurate but the activity is legitimate. You can dismiss the alert and set the reason to **Actual severity is lower** or **Not interesting**.
-        - False positive: The alert is inaccurate. Dismiss the alert and set the reason to **Alert is not accurate**.
+      - False positive: The alert is inaccurate. Dismiss the alert and set the reason to **Alert is not accurate**.
     - If there's too much noise to determine the legitimacy and accuracy of an alert, dismiss it and set the reason to **Too many similar alerts**.
     - True positive: If the alert is related to an actual risky event that was either committed maliciously or unintentionally by an insider or outsider, you should set the event to **Resolve** after all appropriate action has been taken to remediate the event.
 

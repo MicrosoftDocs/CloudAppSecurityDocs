@@ -14,7 +14,6 @@ ms.prod:
 ms.service: cloud-app-security
 ms.technology:
 
-
 # optional metadata
 
 #ROBOTS:
@@ -91,8 +90,10 @@ All you have to do to integrate Azure Information Protection with Cloud App Secu
 To enable Cloud App Security to scan files with content inspection enabled for classification labels:
 
 1. In Cloud App Security, under the settings cog, select the **Settings** page under the **System** heading.
+
     ![Settings menu](media/azip-system-settings.png)
 1. Under **Azure Information Protection**, select **Automatically scan files for Azure Information Protection classification labels**.
+
     ![enable azure information protection](media/enable-azip.png)
 
 After enabling Azure Information Protection, you'll be able to see files that have classification labels and filter them per label in Cloud App Security. After Cloud App Security is connected to the cloud app, you'll be able to use the Azure Information Protection integration features to apply Azure Information Protection classification labels (with or without protection) in the Cloud App Security portal, by adding them directly to files or by configuring a file policy to apply classification labels automatically as a governance action.
@@ -112,13 +113,14 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 1. From the **Files** page under **Investigate**, select the file you want to protect. Click the three dots at the end of the file's row then choose **Apply classification label**.  
 
-   ![protect app](media/protect-app.png)
+    ![protect app](media/protect-app.png)
   
-   >[!NOTE]
-   > Cloud App Security can apply Azure Information Protection on files that are up to 50 MB.  
+    >[!NOTE]
+    > Cloud App Security can apply Azure Information Protection on files that are up to 50 MB.
 
 2. You're asked to choose one of your organization's classification labels to apply to the file, and click **Apply**.
-   ![protection classification label](media/protect-template.png)
+
+    ![protection classification label](media/protect-template.png)
 
 3. After you choose a classification label and click apply, Cloud App Security will apply the classification label to the original file.
 
@@ -139,7 +141,7 @@ Follow these instructions to create the file policy:
 2. Set the policy to include the type of file you want to detect. For example, select all files where **Access level** does not equal **Internal** and where the **Owner OU** equals your finance team.
 3. Under governance actions for the relevant app, click **Apply a classification label** then select the label type.
 
-   ![Apply label](media/aip-gov-action.png)
+    ![Apply label](media/aip-gov-action.png)
 
 > [!NOTE]
 > The ability to automatically apply an Azure Information Protection label through file policy is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
@@ -148,15 +150,15 @@ Follow these instructions to create the file policy:
 
 - For example, if the below is a document you labeled with an Azure Information Protection classification label:
 
-   ![sample Azure Information Protection screen](media/azip-screen.png)
+    ![sample Azure Information Protection screen](media/azip-screen.png)
 
 - You can see this document in Cloud App Security by filtering on the classification label for Azure Information Protection in the **Files** page.
 
-   ![Cloud App Security compared to Azure Information Protection](media/cas-compared-azip.png)
+    ![Cloud App Security compared to Azure Information Protection](media/cas-compared-azip.png)
 
 - You can get more information about these files and their classification labels in the file drawer. Just click on the relevant file in the **Files** page and check whether it has a classification label.
 
-   ![file drawer](media/azip-file-drawer.png)
+    ![file drawer](media/azip-file-drawer.png)
 
 - Then, you can create file policies in Cloud App Security to control files that are shared inappropriately and find files that are labeled and were recently modified.
 
@@ -189,7 +191,8 @@ Learn more about [Azure Information Protection](https://docs.microsoft.com/infor
 
 ## Related Videos
 
-[Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
+> [!div class="nextstepaction"]
+> [Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
 
 ## Next steps
 

@@ -110,8 +110,8 @@ For example, if you want to assign Stephanie, who is a Security reader in Azure 
 
 You can add additional admins to Cloud App Security without adding users to Azure Active Directory administrative roles. To add additional admins, perform the following steps:
 
-    >[!IMPORTANT]
-    > Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
+> [!IMPORTANT]
+> Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
 
 1. Click the settings cog ![settings icon](media/settings-icon.png "settings icon") and then **Manage admin access**.
 

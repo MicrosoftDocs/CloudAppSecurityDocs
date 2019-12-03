@@ -67,7 +67,7 @@ To enable integration with Cloud App Security from Microsoft Defender ATP:
 > It takes up to two hours after you enable the integration for the data to show up in Cloud App Security.
 >
 
-    ![WD ATP settings](media/wdatp-settings.png)
+![WD ATP settings](media/wdatp-settings.png)
 
 ## Investigate machines in Cloud App Security
 
@@ -102,7 +102,8 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 ## Related Videos
 
-[Shadow IT discovery beyond the corporate network with Microsoft Defender ATP and Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
+> [!div class="nextstepaction"]
+> [Shadow IT discovery beyond the corporate network with Microsoft Defender ATP and Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
 ## Next steps
 

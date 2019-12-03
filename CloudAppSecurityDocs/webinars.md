@@ -39,4 +39,4 @@ Watch recorded sessions at any time
 ## Next steps
 
 > [!div class="nextstepaction"]
-[Read our e-books](e-books.md)
+> [Read our e-books](e-books.md)

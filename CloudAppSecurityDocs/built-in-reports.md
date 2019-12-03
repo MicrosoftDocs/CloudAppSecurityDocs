@@ -36,7 +36,7 @@ To generate these reports
 1. Go to **Files**.
 2. In the upper right-hand corner, click the three dots and under **Data management reports**, select one of the following reports.
 
- ![reports](media/reports.png)
+    ![reports](media/reports.png)
 
 ## Data sharing overview
 

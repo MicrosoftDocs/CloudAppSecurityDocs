@@ -76,6 +76,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
     b. Give the log collector a **Name**.
 
     c. Select all **Data sources** that you want to connect to the collector. Click **Update** to save the configuration and generate an access token.
+
     ![discovery data sources](media/discovery-data-sources.png)
 
     > [!NOTE]
@@ -91,6 +92,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 1. Open the Hyper-V Manager.
 
 2. Select **New** and then **Virtual Machine** and click **Next**.
+
     ![discovery Hyper-V virtual machine](media/discovery-hyperv-virtual-machine.png)
 
 3. Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.

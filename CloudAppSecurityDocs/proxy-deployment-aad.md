@@ -23,8 +23,7 @@ ms.suite: ems
 *Applies to: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br />
-[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+>[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br />[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 Session controls in Microsoft Cloud App Security work with the featured apps. For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
 
@@ -101,7 +100,7 @@ To verify that the activity is properly captured, click on a single sign-on log 
 > After it is deployed, you can't remove an app from the Conditional Access App Control page. As long as you don't set a session or access policy on the app, the Conditional Access App Control won't change any behavior for the app.
 
 >[!div class="step-by-step"]
-[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br />[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+>[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br />[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 ## Next steps
 

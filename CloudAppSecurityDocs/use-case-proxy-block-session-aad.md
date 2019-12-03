@@ -30,7 +30,7 @@ ms.custom: seodec18
 *Applies to: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PREVIOUS: How to create an access policy](access-policy-aad.md)
+>[« PREVIOUS: How to create an access policy](access-policy-aad.md)
 
 Today's IT admin is stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data? **This tutorial allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 
@@ -118,12 +118,13 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 4. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
 
->[!div class="step-by-step"]
-[« PREVIOUS: How to create an access policy](access-policy-aad.md)
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create a session policy](session-policy-aad.md)
+> [How to create an access policy](access-policy-aad.md)
+
+> [!div class="nextstepaction"]
+> [How to create a session policy](session-policy-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
