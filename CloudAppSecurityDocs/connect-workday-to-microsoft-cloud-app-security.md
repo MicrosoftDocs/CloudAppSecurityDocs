@@ -112,6 +112,7 @@ For more information about setting up Workday integration users, security groups
 
 ## Next steps
 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

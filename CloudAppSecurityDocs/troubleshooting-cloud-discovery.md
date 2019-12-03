@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 
 # optional metadata
 
@@ -35,7 +34,6 @@ This article provides a list of Cloud Discovery errors and resolution recommenda
 ## Microsoft Defender ATP integration
 
 If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
-
 
 ## Log parsing errors
 
@@ -69,8 +67,8 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 |Discovery data was uploaded and parsed successfully but the Cloud Discovery dashboard looks empty|The Dashboard might be filtered on data your logs don't have so there's no data to show. Try changing the filters in the Cloud Discovery dashboard to show different types of data to see the results.|
 
 ## Next steps
-  
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
+[!INCLUDE [Open support ticket](includes/support.md)]

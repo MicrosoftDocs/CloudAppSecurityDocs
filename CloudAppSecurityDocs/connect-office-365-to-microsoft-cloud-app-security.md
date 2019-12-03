@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 
 
 # optional metadata
@@ -63,11 +62,11 @@ Cloud App Security supports the following Office 365 apps:
 
 1. In **Connected apps** page, click the plus button and select **Office 365**.  
 
-      ![connect 0365](./media/connect-0365.png) 
+      ![connect 0365](media/connect-0365.png) 
 
 2. In the Office 365 pop-up, click **Connect Office 365**.
 
-      ![connect 0365](./media/office-connect.png) 
+      ![connect 0365](media/office-connect.png) 
 
 3. After Office 365 is displayed as successfully connected, click **Close**.
 
@@ -76,6 +75,7 @@ Cloud App Security supports the following Office 365 apps:
 
 ## Next steps
 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

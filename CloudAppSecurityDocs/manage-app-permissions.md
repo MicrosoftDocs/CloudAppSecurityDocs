@@ -41,7 +41,7 @@ To access the OAuth tab:
 
 In the Cloud App Security portal, click **Investigate**, and then **OAuth apps**.
 
-![app permissions](./media/app-permissions.png)
+![app permissions](media/app-permissions.png)
 
 The OAuth apps page provides the following information about each OAuth app that was granted permissions:
 
@@ -64,27 +64,27 @@ The OAuth apps page provides the following information about each OAuth app that
 
 1. On the **OAuth apps** page, click on the app to open the **App drawer** to view more information about the app and the permissions it was granted.
 
-   - Click on the **Permissions** link to view a full list of permissions that were granted to the app.
-   - Under **Community use**, you can view how common the app is in other organizations.
-   - Click the **Related activity** link to view the activities that are listed in the governance log related to this app.
+    - Click on the **Permissions** link to view a full list of permissions that were granted to the app.
+    - Under **Community use**, you can view how common the app is in other organizations.
+    - Click the **Related activity** link to view the activities that are listed in the governance log related to this app.
 
 2. To ban the app, click on the ban icon at the end of the app row in the table.
 
-     ![ban app icon](./media/ban-app-icon.png)
+    ![ban app icon](media/ban-app-icon.png)
 
     - You can choose if you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog.
     - It's recommended that you let the app users know their app is about to be banned from use.
 
-      ![ban app](./media/ban-app.png)
+    ![ban app](media/ban-app.png)
 
 3. Type the message you want to send to the app users in the Enter a custom notification message box. Click **Ban app** to send the mail, and ban the app from your connected app users.
 
 4. To approve the app, click on the approve icon at the end of the row in the table.
 
-   ![approve app](./media/approve-app.png)
+    ![approve app](media/approve-app.png)
 
-   - The icon turns green, and the app is approved for all your connected app users.
-   - When you mark an app as approved, there's no effect on the end user. This color change is meant to help you see the apps that you've approved to separate them from ones that you haven't reviewed yet.
+    - The icon turns green, and the app is approved for all your connected app users.
+    - When you mark an app as approved, there's no effect on the end user. This color change is meant to help you see the apps that you've approved to separate them from ones that you haven't reviewed yet.
 
 ## Revoke app and notify user
 
@@ -93,7 +93,7 @@ For G Suite and Salesforce, it's possible to revoke permission to an app or to n
 1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user. Click the icon at the end of the app row in the table and selecting **Revoke app**.
 
-    ![revoke app](./media/revoke-app.png)
+    ![revoke app](media/revoke-app.png)
 
 ## Query OAuth apps
 
@@ -121,11 +121,12 @@ If there’s an OAuth app discovered in your organization that seems malicious, 
 
 1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Report app**.
 
-    ![report app](./media/report-app.png)
+    ![report app](media/report-app.png)
 2. In the **Report this app** screen, you can select whether to report the app as malicious or to report another issue with the way Cloud App Security perceives the app. For example, you could use **Incorrect publisher**, **Incorrect permissions**, or **Other**. The data you submit will be used to update the app's risk score and other analytics about the app.
 
 ## Next steps
 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

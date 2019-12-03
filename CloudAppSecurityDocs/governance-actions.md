@@ -79,7 +79,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")
+   ![policy_create alerts](media/policy_create-alerts.png "policy_create alerts")
 
 ## Activity governance actions
 
@@ -99,7 +99,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Require user to sign in again** – Signs the user out and requires them to sign in again.
 
-  ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6")
+  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png "activity policy ref6")
 
 ## Governance conflicts
 
@@ -171,6 +171,7 @@ For information about how governance actions are treated when there are policy c
 
 ## Next steps
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

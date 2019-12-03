@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 
 # optional metadata
 
@@ -47,7 +46,7 @@ You might need to modify the configuration for the Cloud App Security Cloud Disc
 
 3. Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
 
-  ![change ftp password](./media/ftp-connect.png)
+    ![change ftp password](media/ftp-connect.png)
 
 ### Customize certificate files
 
@@ -55,22 +54,23 @@ Follow this procedure to customize the certificate files you use for secure conn
 
 1. Open an FTP client and connect to the log collector.
 
-   ![Connect to ftp client](./media/ftp-connect.png)
+    ![Connect to ftp client](media/ftp-connect.png)
 
 2. Navigate to the `ssl_update` directory.
 3. Upload new certificate files to the `ssl_update` directory (the names are mandatory).
 
-    ![Change ftp password](./media/new-certs.png)
+    ![Change ftp password](media/new-certs.png)
 
     - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
     - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files are missing, the update won't take place.
 
 4. In a terminal run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 
-    ![Change ftp password](./media/update-certs.png)
+    ![Change ftp password](media/update-certs.png)
 
 ## Next steps
 
-[Deploy Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

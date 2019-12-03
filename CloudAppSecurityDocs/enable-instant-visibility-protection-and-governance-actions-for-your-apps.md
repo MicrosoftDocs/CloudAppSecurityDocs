@@ -118,10 +118,12 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 
 ## Next steps
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 
 ## Check out this video!
 
-[Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [!div class="nextstepaction"]
+> [Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

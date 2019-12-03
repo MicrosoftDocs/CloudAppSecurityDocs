@@ -13,9 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
-
-
 
 # optional metadata
 
@@ -42,8 +39,6 @@ Microsoft Cloud App Security uses the native integration with Microsoft Defender
 
 > [!NOTE]
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
->
-
 
 ## Prerequisites
 
@@ -71,7 +66,7 @@ To enable integration with Cloud App Security from Microsoft Defender ATP:
 > It takes up to two hours after you enable the integration for the data to show up in Cloud App Security.
 >
 
-   ![WD ATP settings](./media/wdatp-settings.png)
+![WD ATP settings](media/wdatp-settings.png)
 
 ## Investigate machines in Cloud App Security
 
@@ -79,35 +74,40 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
 
 1. In the Cloud App Security portal, click **Cloud Discovery** and then **Cloud Discovery dashboard**.
 2. In the top navigation bar, under **Continuous reports**, select **Win10 endpoint users**.
-  ![WD ATP report](./media/win10-dashboard-report.png)
+  ![WD ATP report](media/win10-dashboard-report.png)
 3. Across the top, you'll see the number of discovered machines added after the integration.
 4. Click the **Machines** tab.
 5. You can drill down into each machine that's listed, and use the tabs to view the investigation data. Find correlations between the machines, the users, IP addresses, and apps that were involved in incidents:
-   - **Overview**
-      - Transactions: Information about the number of transactions that took place on the machine over the selected period of time.
-      - Total traffic: Information about the total amount of traffic (in MB) over the selected period of time.
-     - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
-     - Downloads: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
-   - **Discovered apps**<br>
+
+    - **Overview**
+        - Transactions: Information about the number of transactions that took place on the machine over the selected period of time.
+        - Total traffic: Information about the total amount of traffic (in MB) over the selected period of time.
+        - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
+        - Downloads: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
+    - **Discovered apps**  
   Lists all the discovered apps that were accessed by the machine.
-   - **User history**<br>
+    - **User history**  
     Lists all the users who signed in to the machine.
-   - **IP address history**<br>
+    - **IP address history**  
     Lists all the IP addresses that were assigned to the machine.
- ![Machines overview](./media/machines-overview.png)
- 
-As with any other Cloud Discovery source, you can export the data from the Win10 endpoint users report for further investigation. 
+ ![Machines overview](media/machines-overview.png)
+
+As with any other Cloud Discovery source, you can export the data from the Win10 endpoint users report for further investigation.
 
 > [!NOTE]
+>
 > - Defender ATP forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender ATP reports all the transactions performed over the last hour.
+> - If the endpoint device is behind a forward proxy, the volume of traffic won't be visible to Microsoft Defender ATP and hence will not be included in Cloud Discovery reports. For more information, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
-## Related Videos
+## Next steps
 
-[Shadow IT discovery beyond the corporate network with Microsoft Defender ATP and Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-## Next steps 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md) 
+## Related videos
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

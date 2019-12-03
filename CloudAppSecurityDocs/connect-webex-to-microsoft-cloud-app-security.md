@@ -42,7 +42,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. In the **App connectors** page, click the plus button followed by **Cisco Webex**.
 
-    ![connect Webex](./media/cisco-webex.png "connect Webex")
+    ![connect Webex](media/cisco-webex.png "connect Webex")
 
 1. In the pop-up, enter the instance name of this connector.
 
