@@ -32,22 +32,22 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
 
 - To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Cloud App Security. By default, you'll see the following groups:
 
-    - **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
+  - **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
 
-    - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
+  - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 
 - Setting an include rule will automatically exclude all groups not within the included group. For example, if you set a rule to include all members of the US-office groups, any groups who aren't part of that group won't be monitored.
 
 - Excluded user groups override included user groups. Meaning that if you include the user group "UK-employees" but exclude "Marketing", marketing members from the UK won't be monitored even if they're members of the group **UK-employees**.
 
-1. In the menu bar, click the settings cog and select **Scoped deployment**.  
+1. In the menu bar, click the settings cog and select **Scoped deployment**.
 
-    ![settings icon](./media/settings-icon.png "settings icon")
+    ![settings icon](media/settings-icon.png "settings icon")
 
 2. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Cloud App Security.
 
 3. To set specific groups to be monitored by Microsoft Cloud App Security, in the **Include** tab, click the plus icon.
-    ![icon](./media/plus-icon.png)
+    ![icon](media/plus-icon.png)
 
 4. In the **Create new include rule** dialog, do the following steps:
 
@@ -55,11 +55,11 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
     2. Under **Select user groups**, select all the groups you want to monitor with Cloud App Security.
     3. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, the rule will only affect monitoring of the apps you select. For example, if you select the group **UI team users** and **Box**, Cloud App Security will only monitor Box activity for users in your UI team users group and for all other apps, Cloud App Security will monitor all activities for all users.
 
-        ![include rule](./media/include-rule.png)
+        ![include rule](media/include-rule.png)
 
 5. To set specific groups to be excluded from monitoring, in the **Exclude** tab, click the plus icon.
 
-   ![icon](./media/plus-icon.png)
+   ![icon](media/plus-icon.png)
 
 6. In the **Create new Exclude rule** dialog, set the following parameters:
 
@@ -67,7 +67,7 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
     Under **Select user groups**, select all the groups you don't want Cloud App Security to monitor.
     2. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, Cloud App Security will stop monitoring the group you selected only for the apps you select. That means that if you select the group **UI team users** and **Active Directory**, Cloud App Security will monitor all user activity except Active Directory activities that are performed by UI team users.
 
-       ![exclude rule](./media/exclude-rule.png)
+       ![exclude rule](media/exclude-rule.png)
 
 ## Example results for include and exclude rules
 
@@ -84,9 +84,9 @@ The following user activities are monitored:
 
 |User|Group membership|Activities monitored|
 |----|----|----|
-|Adriana|Germany all users<br>Global sales<br>Sales managers|None|
+|Adriana|Germany all users<br />Global sales<br />Sales managers|None|
 |Alain|Global sales|Office 365 and all subapps except Power BI|
-|Cornel|Global sales<br>Sales managers|Office 365 and all subapps|
+|Cornel|Global sales<br />Sales managers|Office 365 and all subapps|
 |Raymond|Sales managers|Power BI only|
 
 > [!NOTE]
@@ -95,6 +95,7 @@ The following user activities are monitored:
 
 ## Next steps
 
-[Set up Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

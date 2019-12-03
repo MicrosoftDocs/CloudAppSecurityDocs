@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 
 # optional metadata
 
@@ -181,7 +180,8 @@ Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-a
 1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
     **For a new connector**
-    1. Click the plus sign followed by **Amazon Web Services**.<br>
+
+    1. Click the plus sign followed by **Amazon Web Services**.<br />
 
         ![connect AWS](media/connect-aws.png "connect AWS")
 
@@ -194,6 +194,7 @@ Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-a
         ![Connect AWS app security configuration](media/aws-connect-app-config.png "Connect AWS app security configuration")
 
     **For an existing connector**
+
     1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security configuration**.
 
         ![Screenshot of the Connected Apps page, showing edit Security Configuration link](media/aws-connect-app-edit-config.png)
@@ -208,6 +209,7 @@ Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-a
 
 ## Next steps
 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

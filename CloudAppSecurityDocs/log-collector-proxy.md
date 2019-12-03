@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 
 # optional metadata
 
@@ -42,42 +41,48 @@ Make sure you performed the necessary steps run Docker on a Windows or Linux mac
 
 In the shell, verify that the container was created and is running using the following command:
 
-    bash
-    docker ps
+```bash
+docker ps
+```
 
-![docker ps](./media/docker-1.png "docker ps")
+![docker ps](media/docker-1.png)
 
 ### Copy proxy root CA certificate to the container
 
 From your virtual machine, copy the CA certificate to the Cloud App Security container. In the following example, the container is named *Ubuntu-LogCollector* and the CA certificate is named *Proxy-CA.crt*.
 Run the command on the Ubuntu host. It copies the certificate to a folder in the running container:
 
-    bash
-    docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
+```bash
+docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
+```
 
 ### Set the configuration to work with the CA certificate
 
 1. Go into the container, using the following command. It will open bash in the log collector container:
 
-        bash
-        docker exec -it Ubuntu-LogCollector /bin/bash
+    ```bash
+    docker exec -it Ubuntu-LogCollector /bin/bash
+    ```
 
 2. From the bash inside the container, go to the Java jre directory. To avoid a version related path error, use this command:
 
-       bash
-       cd 'find /opt/jdk/*/jre -iname bin'
+    ```bash
+    cd 'find /opt/jdk/*/jre -iname bin'
+    ```
 
 3. Import the root certificate that you copied earlier, from the *discovery* folder into the Java keystore and define a password. The default password is "changeit":
 
-       bash
-       ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ```bash
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ```
 
 4. Validate that the certificate was imported correctly into the CA keystore, by using the following command to search for the alias you provided during the import (*SelfSignedCert*):
 
-       bash
-       ./keytool --list --keystore ../lib/security/cacerts | grep self
+    ```bash
+    ./keytool --list --keystore ../lib/security/cacerts | grep self
+    ```
 
-![keytool](./media/docker-2.png "keytool")
+    ![keytool](media/docker-2.png "keytool")
 
 You should see your imported proxy CA certificate.
 
@@ -87,25 +92,26 @@ The container is now ready.
 
 Run the **collector_config** command using the API token that you used during the creation of your log collector:
 
-![API token](./media/docker-3.png "API token")
+![API token](media/docker-3.png "API token")
 
 When you run the command, specify your own API token:
 
-      bash
-      collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
+```bash
+collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
+```
 
-
-![Configuration update](./media/docker-4.png "Configuration update")
+![Configuration update](media/docker-4.png "Configuration update")
 
 The log collector is now able to communicate with Cloud App Security. After sending data to it, the status will change from **Healthy** to **Connected** in the Cloud App Security portal.
 
-![Status](./media/docker-5.png "Status")
+![Status](media/docker-5.png "Status")
 
 >[!NOTE]
 > If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Cloud App Security portal.
 
 ## Next steps
 
-[User activity policies](user-activity-policies.md)
+> [!div class="nextstepaction"]
+> [User activity policies](user-activity-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

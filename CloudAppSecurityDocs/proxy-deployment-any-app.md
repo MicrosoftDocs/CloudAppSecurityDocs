@@ -24,10 +24,6 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
-[« Previous: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)<br>
-[Next: How to create a session policy »](session-policy-aad.md)
-
 Session controls in Microsoft Cloud App Security can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure Active Directory (Azure AD) Application Proxy with Session controls.
 
 For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
@@ -75,7 +71,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
 1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policies (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
 
-   ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
+    ![Azure AD conditional access](media/azure-ad-caac-policy.png)
 
 1. Optional: Add conditions and grant controls as required.
 
@@ -83,7 +79,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
 ## Step 2: Configure the users that will deploy the app<a name="conf-users"></a>
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -97,12 +93,12 @@ Go to the app that you are deploying. The page you see depends on whether the ap
 
 | App status | Description | Steps |
 | --- | --- | --- |
-| Not recognized | You will see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](#add-app).<br> 2. [Add the domains for the app](#add-domains), and then return to the app and refresh the page.<br> 3. [Install the certificates for the app](#install-certs). |
-| Recognized | You will see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](#install-certs). <br><br> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](#add-domains), and then return to the app page. |
+| Not recognized | You will see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](#add-app).<br /> 2. [Add the domains for the app](#add-domains), and then return to the app and refresh the page.<br /> 3. [Install the certificates for the app](#install-certs). |
+| Recognized | You will see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](#install-certs). <br /><br /> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](#add-domains), and then return to the app page. |
 
 ### To add a new app<a name="add-app"></a>
 
-1. In the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
 1. Click **View new apps**.
 
@@ -110,8 +106,8 @@ Go to the app that you are deploying. The page you see depends on whether the ap
 
 1. In the screen that opens, you can see a list of new apps. For each app you are onboarding, click on the **+** sign, and then click **Add**.
 
-   > [!NOTE]
-   > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
+    > [!NOTE]
+    > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
 
     ![Conditional access app control discovered Azure AD apps](media/caac-discovered-aad-apps.png)
 
@@ -129,7 +125,7 @@ For example, if you have configured a policy that blocks downloading files for a
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
     > [!NOTE]
     > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
-1. Go to Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
+1. Go to Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
     > [!TIP]
     > To view the list of domains configured in the app, click **View app domains**.
@@ -168,7 +164,7 @@ For example, if you have configured a policy that blocks downloading files for a
 
 Once you are ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Cloud App Security, click the settings cog ![settings icon](./media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In Cloud App Security, click the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then click **Save**.
 
@@ -178,12 +174,20 @@ Once you are ready to enable the app for use in your organization's production e
 1. Update the policy you created earlier to include the relevant users, groups, and controls you require.
 1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Cloud App Security and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
->[!div class="step-by-step"]
-[« Previous: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)<br>
-[Next: How to create a session policy »](session-policy-aad.md)
-
 ## Next steps
 
-[Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+> [!div class="nextstepaction"]
+> [How to create a session policy »](session-policy-aad.md)
+
+## See also
+
+> [!div class="nextstepaction"]
+> [Introduction to Conditional Access App Control](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
