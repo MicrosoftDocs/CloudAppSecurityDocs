@@ -6,7 +6,7 @@ description: This tutorial describes the process to investigate risky users in M
 keywords:
 author: shsagir
 ms.author: shsagir
-ms.date: 10/28/2019
+ms.date: 12/03/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -64,7 +64,6 @@ The activity score determines the probability of a specific user performing a sp
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
 1. Connect at least one app to Microsoft Cloud App Security using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
-
 1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
 1. To enable insights across your on-premises environment, configure Cloud App Security to [integrate with your Azure ATP environment](aatp-integration.md).
 
@@ -72,7 +71,8 @@ The activity score determines the probability of a specific user performing a sp
 
 To identify who your riskiest users are in Cloud App Security:
 
-1. Go to the Cloud App Security dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them. <br>The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
+1. Go to the Cloud App Security dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them.  
+The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
    ![Top users dashboard](./media/dashboard-top-users.png)
 
@@ -116,6 +116,7 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 
 ## See Also
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

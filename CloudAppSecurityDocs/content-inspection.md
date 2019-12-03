@@ -2,7 +2,7 @@
 # required metadata
 
 title: How Cloud App Security performs content inspection
-description: This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud. 
+description: This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 
 # optional metadata
 
@@ -30,15 +29,13 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
+If you enable content inspection, you can choose to use preset expressions or to search for other customized expressions.
 
-If you enable content inspection, you can choose to use preset expressions or to search for other customized expressions.  
+You can specify a regular expression to exclude a file from the results. This option is highly useful if you have an inner classification keyword standard that you want to exclude from the policy.
 
-You can specify a regular expression to exclude a file from the results. This option is highly useful if you have an inner classification keyword standard that you want to exclude from the policy.  
-   
-You can decide set the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.  
+You can decide set the minimum number of content violations that you want to match before the file is considered a violation. For example, you can choose 10 if you want to be alerted on files with at least 10 credit card numbers found within its content.
 
-When content is matched against the selected expression, the violation text is replaced with "X" characters. By default, violations are masked and shown in their context displaying 100 characters before and after the violation. Numbers in the context of the expression are replaced with “#” characters and are never stored within Cloud App Security. You can select the option to **Unmask the last four characters of a violation** to unmask the last four characters of the violation itself. It's necessary to set which data types the regular expression searches: content, metadata and/or file name. By default it searches the content and the metadata. 
-
+When content is matched against the selected expression, the violation text is replaced with "X" characters. By default, violations are masked and shown in their context displaying 100 characters before and after the violation. Numbers in the context of the expression are replaced with “#” characters and are never stored within Cloud App Security. You can select the option to **Unmask the last four characters of a violation** to unmask the last four characters of the violation itself. It's necessary to set which data types the regular expression searches: content, metadata and/or file name. By default it searches the content and the metadata.
 
 ## Content inspection for protected files
 
@@ -51,10 +48,9 @@ In order to give Cloud app Security the necessary permissions:
 3. Follow the prompt to allow the required permissions in Azure Active Directory.
 4. You can configure the settings per file policy to determine which policies will scan protected files.
 
-
-
 ## Next steps
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)   
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

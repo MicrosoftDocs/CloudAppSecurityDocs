@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 
 # optional metadata
 
@@ -33,14 +32,13 @@ ms.custom: seodec18
 This article describes what you should do with Cloud App Security daily.  After you get Microsoft Cloud App Security up and running, you'll need to:
 
 - Configure data streams
-- Sanction apps you want to allow people to use 
-- Set up policies to monitor your cloud environment. 
+- Sanction apps you want to allow people to use
+- Set up policies to monitor your cloud environment.
 
-You can then use Cloud App Security to control and protect your cloud and manage risk.  
+You can then use Cloud App Security to control and protect your cloud and manage risk.
 
+## Check the dashboard
 
-
-## Check the dashboard  
 The Cloud App Security dashboard provides you with an overview of activities and features, including:
 
 - Open alerts
@@ -50,12 +48,13 @@ The Cloud App Security dashboard provides you with an overview of activities and
 - Connected app usage trends in your cloud environment
 - Top users by threat detection
 
-We recommend you check the dashboard daily to see what new alerts have been triggered. It's a good place to keep an eye on the health of your cloud environment. The dashboard helps you get a sense of what's happening.  
+We recommend you check the dashboard daily to see what new alerts have been triggered. It's a good place to keep an eye on the health of your cloud environment. The dashboard helps you get a sense of what's happening.
 
-![Cloud App Security dashboard](./media/dashboard.png "dashboard")  
+![Cloud App Security dashboard](media/dashboard.png "dashboard")
 
+## Next steps
 
-## Next steps  
-For more information about investigating alerts, see [Investigate](investigate.md).  
+> [!div class="nextstepaction"]
+> [Investigate alerts](investigate.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]

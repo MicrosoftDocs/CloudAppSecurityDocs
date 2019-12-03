@@ -2,12 +2,12 @@
 # required metadata
 
 title: Visibility into cloud app accounts - Cloud App Security | Microsoft Docs
-description: This article provides information about reviewing accounts from your connected apps. 
+description: This article provides information about reviewing accounts from your connected apps.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/28/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -82,8 +82,11 @@ You can manually apply the **Confirm user compromised** action using one of the 
 
 * From the **User page**, select **User actions**, and then choose **Confirm user compromised**.
 
+* **User name**: Enables you to filter to specific users.
+
 ## Next steps
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also create a new issue directly from the Premier portal.](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]

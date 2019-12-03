@@ -13,8 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
-
 
 # optional metadata
 
@@ -46,14 +44,15 @@ Microsoft Cloud App Security provides you with a security configuration assessme
     - Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
     - It might take up to 15 minutes before your changes take effect.
 
-     ![security configuration menu](media/security-configuration-menu.png)
+    ![security configuration menu](media/security-configuration-menu.png)
 
-1. You can filter the recommendations by type, by resource, and by accounts. Additionally, you can click on the security configuration icon ![ASC icon](./media/asc-icon.png) to open the recommendation in Amazon Security Hub for more information and to deep dive into the recommendation.
+1. You can filter the recommendations by type, by resource, and by accounts. Additionally, you can click on the security configuration icon ![ASC icon](media/asc-icon.png) to open the recommendation in Amazon Security Hub for more information and to deep dive into the recommendation.
 
-   ![security configuration](media/security-configuration-aws.png)
+    ![security configuration](media/security-configuration-aws.png)
 
-## Next steps 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+## Next steps
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)  
-  
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]
