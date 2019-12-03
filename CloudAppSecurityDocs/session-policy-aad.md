@@ -163,10 +163,10 @@ When **Protect** is set as the **Action** to be taken in the Cloud App Security 
 ## See also
 
 > [!div class="nextstepaction"]
-> [Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+> [How to create an access policy](access-policy-aad.md)
 
 > [!div class="nextstepaction"]
-> [How to create an access policy »](access-policy-aad.md)
+> [Deploy Conditional Access App Control for any app](proxy-deployment-any-app.md)
 
 > [!div class="nextstepaction"]
 > [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)

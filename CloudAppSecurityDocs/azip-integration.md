@@ -174,7 +174,7 @@ Follow these instructions to create the file policy:
 2. Set the policy’s name, severity, and category.
 3. Add the following filters to find all confidential data that is externally shared on Box:
 
-![confidentiality policy](media/azip-confidentiality-policy.png)
+    ![confidentiality policy](media/azip-confidentiality-policy.png)
 
 **Sample policy - restricted data that was recently modified outside the Finance folder on SharePoint:**
 
@@ -182,7 +182,7 @@ Follow these instructions to create the file policy:
 2. Set the policy’s name, severity, and category.
 3. Add the following filters to find all recently modified restricted files while excluding the Finance folder in the folder selection option:
 
-![restricted data policy](media/azip-restricted-data-policy.png)
+    ![restricted data policy](media/azip-restricted-data-policy.png)
 
 You can also choose to set alerts, user notification or take immediate action for these policies.
 Learn more about [governance actions](governance-actions.md).

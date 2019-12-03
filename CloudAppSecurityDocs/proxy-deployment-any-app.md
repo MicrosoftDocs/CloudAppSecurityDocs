@@ -182,9 +182,12 @@ Once you are ready to enable the app for use in your organization's production e
 ## See also
 
 > [!div class="nextstepaction"]
-> [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+> [Introduction to Conditional Access App Control](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
 > [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

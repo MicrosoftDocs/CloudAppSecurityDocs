@@ -169,6 +169,9 @@ If you're interested in a specific app being featured, [send us details about th
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Deploy Conditional Access App Control for Azure AD apps](proxy-deployment-aad.md)
+> [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+
+> [!div class="nextstepaction"]
+> [Deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
