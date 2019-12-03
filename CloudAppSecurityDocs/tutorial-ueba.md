@@ -108,7 +108,8 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 
 * Contact the user – Using the user contact information integrated with Cloud App Security from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-* Directly from the Cloud App Security portal, click on the **User actions** control and set the user as high risk, suspend the user, or confirm user compromised.
+* Directly from the Cloud App Security portal, click on the **User actions** control and choose to whether to require user to sign in again, suspend the user, or confirm user compromised.
+
 * In case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
 * If you drill down into an alert and determine that the activity should not have triggered an alert, in the [Activity drawer](activity-filters.md), click the **Send us feedback** link so that we can be sure to fine tune our alerting system with your organization in mind.
 * After you remediate the issue, close the alert.
