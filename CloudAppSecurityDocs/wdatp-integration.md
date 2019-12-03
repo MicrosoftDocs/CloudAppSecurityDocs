@@ -39,7 +39,6 @@ Microsoft Cloud App Security uses the native integration with Microsoft Defender
 
 > [!NOTE]
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
->
 
 ## Prerequisites
 
@@ -85,11 +84,11 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
         - Total traffic: Information about the total amount of traffic (in MB) over the selected period of time.
         - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
         - Downloads: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
-    - **Discovered apps**<br />
+    - **Discovered apps**  
   Lists all the discovered apps that were accessed by the machine.
-    - **User history**<br />
+    - **User history**  
     Lists all the users who signed in to the machine.
-    - **IP address history**<br />
+    - **IP address history**  
     Lists all the IP addresses that were assigned to the machine.
  ![Machines overview](media/machines-overview.png)
 
@@ -99,15 +98,16 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 >
 > - Defender ATP forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender ATP reports all the transactions performed over the last hour.
-
-## Related Videos
-
-> [!div class="nextstepaction"]
-> [Shadow IT discovery beyond the corporate network with Microsoft Defender ATP and Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
+> - If the endpoint device is behind a forward proxy, the volume of traffic won't be visible to Microsoft Defender ATP and hence will not be included in Cloud Discovery reports. For more information, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

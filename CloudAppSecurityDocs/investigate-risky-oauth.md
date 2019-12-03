@@ -63,7 +63,7 @@ You can set policies to automatically send you notifications when an OAuth app m
     - Set the filter to **Permission level high severity** and **Community use not common**. Using this filter, you can focus on apps that are potentially very risky, where users may have underestimated the risk.
     - Under **Permissions** select all the options that are particularly risky in a specific context. For example, you can select all the filters that provide permission to email access, such as **Full access to all mailboxes** and then review the list of apps to make sure that they all really need mail-related access. This can help you investigate within a specific context, and find apps that seem legitimate, but contain unnecessary permissions. These apps are more likely to be risky.
 
-            ![OAuth phishing](media/oauth-filters.png)
+        ![OAuth phishing](media/oauth-filters.png)
 
     - Select the saved query **Apps authorized by external users**. Using this filter, you can find apps that might not be aligned with your company’s security standards.
 1. After you review your apps, you can focus on the apps in the queries that seem legitimate but might actually be risky. Use the filters to find them:

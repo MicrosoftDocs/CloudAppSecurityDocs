@@ -29,9 +29,6 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
->[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br />[NEXT: How to create an access policy »](access-policy-aad.md)
-
 Microsoft Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities using the reverse proxy capabilities of Conditional Access App Control.
 
 For example, you can decide that from unmanaged devices, or for sessions coming from specific locations, you want to allow the user to access the app but also limit the download of sensitive files or require that certain documents be protected upon download. Session policies enable you to set these user-session controls and allow access and enables you to:
@@ -158,12 +155,20 @@ Select **Block activities** to block specific activities, which you can find usi
 
 When **Protect** is set as the **Action** to be taken in the Cloud App Security session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy’s file filters. Labels are configured in the Azure Information Protection console and **Protect** must be selected within the label for it to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.
 
-> [!div class="step-by-step"]
-> [« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br />[NEXT: How to create an access policy »](access-policy-aad.md)
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Blocking downloads on unmanaged devices using session controls](use-case-proxy-block-session-aad.md)
+
+## See also
+
+> [!div class="nextstepaction"]
+> [Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+
+> [!div class="nextstepaction"]
+> [How to create an access policy »](access-policy-aad.md)
+
+> [!div class="nextstepaction"]
+> [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

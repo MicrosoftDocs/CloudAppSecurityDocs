@@ -24,9 +24,6 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
->[« Previous: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)<br />[Next: How to create a session policy »](session-policy-aad.md)
-
 Session controls in Microsoft Cloud App Security can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure Active Directory (Azure AD) Application Proxy with Session controls.
 
 For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
@@ -177,10 +174,15 @@ Once you are ready to enable the app for use in your organization's production e
 1. Update the policy you created earlier to include the relevant users, groups, and controls you require.
 1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Cloud App Security and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
->[!div class="step-by-step"]
->[« Previous: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)<br />[Next: How to create a session policy »](session-policy-aad.md)
-
 ## Next steps
+
+> [!div class="nextstepaction"]
+> [How to create a session policy »](session-policy-aad.md)
+
+## See also
+
+> [!div class="nextstepaction"]
+> [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)

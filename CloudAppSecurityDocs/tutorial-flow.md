@@ -55,6 +55,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 > If you have previously created a flow using a Defender ATP connector, Flow automatically reuses the connector and you can skip the **Sign in** step.
 
 1. Go to the [Microsoft Flow portal](https://flow.microsoft.com/) and select Templates.
+
     ![Screenshot of the main Microsoft Flow page, showing the selection of templates.](media/tutorial-flow-templates.png)
 
 1. Search for "Cloud App Security" and select **Run antivirus scan using Windows Defender upon a Cloud App Security alert**.

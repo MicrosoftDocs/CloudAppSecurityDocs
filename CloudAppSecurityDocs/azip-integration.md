@@ -189,14 +189,14 @@ Learn more about [governance actions](governance-actions.md).
 
 Learn more about [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) and check out the Azure Information Protection [Quick start tutorial](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial).
 
-## Related Videos
-
-> [!div class="nextstepaction"]
-> [Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
-
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
 
 [!INCLUDE [Open support ticket](includes/support.md)]
