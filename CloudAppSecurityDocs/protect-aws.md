@@ -73,7 +73,7 @@ For more information about remediating threats from apps, see [Governing connect
 
 ## Protect AWS in real time
 
-Review our [best practices](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) for securing collaboration with external users by enforcing real-time session controls.
+Review our [best practices](best-practices.md#https://docs.microsoft.com/en-us/cloud-app-security/best-practices#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices) for blocking and protecting the download of sensitive data to unmanaged or risky devices.
 
 ## Next steps
 
