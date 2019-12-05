@@ -69,6 +69,8 @@ In addition to monitoring, you can apply and automate the following AWS governan
 
 * Require user to sign in again (via Azure AD)
 
+For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
+
 ## Protect AWS in real time
 
 Review our [best practices](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) for securing collaboration with external users by enforcing real-time session controls.
