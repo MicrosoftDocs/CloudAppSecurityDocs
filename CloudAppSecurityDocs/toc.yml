@@ -51,7 +51,7 @@
     href: discovered-apps.md
   - name: Working with connected apps
     items:
-    - name: protect AWS
+    - name: Protect AWS
       href: protect-aws.md
 - name: How-to guides
   items:

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Benefits of connecting Amazon Web Services to Microsoft Cloud App Security
+title: How Cloud App Security helps protect your AWS environment
 description: This article provides information about the benefits of connecting your AWS app to Cloud App Security using the API connector for visibility and control over use.
 author: shsagir
 ms.author: shsagir
@@ -15,7 +15,7 @@ ms.date: 12/04/2019
 ms.collection: M365-security-compliance
 ---
 
-# How Cloud App Security help protect your AWS environment
+# How Cloud App Security helps protect your AWS environment
 
 *Applies to: Microsoft Cloud App Security*
 
