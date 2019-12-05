@@ -6,10 +6,6 @@
     href: what-is-cloud-app-security.md
   - name: Cloud App Security data security and privacy
     href: cas-compliance-trust.md
-  - name: Benefits of connected apps
-    items:
-    - name: AWS
-      href: benefits-aws.md
   - name: What's new?
     href: release-notes.md
   - name: Compare
@@ -53,6 +49,10 @@
     href: risk-score.md
   - name: Working with discovered apps
     href: discovered-apps.md
+  - name: Working with connected apps
+    items:
+    - name: protect AWS
+      href: protect-aws.md
 - name: How-to guides
   items:
   - name: Basic set up
