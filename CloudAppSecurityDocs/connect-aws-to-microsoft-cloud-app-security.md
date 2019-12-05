@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting your existing Amazon Web Services (AWS) account to Microsoft Cloud App Security using the connector APIs.
+This article provides instructions for connecting your existing Amazon Web Services (AWS) account to Microsoft Cloud App Security using the connector APIs. For information about why you should connect AWS to Cloud App Security, see [Benefits of connecting AWS](benefits-aws.md).
 
 You can connect one or both of the following AWS to Cloud App Security connections:
 
