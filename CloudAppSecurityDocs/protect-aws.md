@@ -39,7 +39,7 @@ Review our [best practices](best-practices.md#detect-cloud-threats-compromised-a
 * Alert on Network access control list (ACL) changes
 * Alert on security group configuration changes
 
-For more information about creating policies, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
 
 ## Use Audit trail of activities for forensic investigations
 
