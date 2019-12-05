@@ -39,6 +39,8 @@ Review our [best practices](best-practices.md#detect-cloud-threats-compromised-a
 * Alert on Network access control list (ACL) changes
 * Alert on security group configuration changes
 
+For more information about creating policies, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+
 ## Use Audit trail of activities for forensic investigations
 
 Review our [best practices](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations) for forensic investigations.
@@ -55,7 +57,7 @@ Use the AWS security configuration recommendations available in our portal to im
 
 ## Automate governance controls
 
-In addition to monitoring, you can apply the following AWS governance actions to remediate threats:
+In addition to monitoring, you can apply and automate the following AWS governance actions to remediate threats:
 
 * Make an S3 bucket private
 
