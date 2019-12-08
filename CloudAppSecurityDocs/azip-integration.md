@@ -72,12 +72,12 @@ You're probably familiar with file classification labels in [Azure Information P
 
 2. Cloud App Security then scans the files for classification labels, as follows:
 
-    - If you enabled automatic scan, all new or modified files are added to the scan queue and all existing files and repositories will be scanned, classified, and protected.
+    - If you enabled automatic scan, all new or modified files are added to the scan queue and all existing files and repositories will be scanned.
     - If you set a file policy to search for classification labels, these files are added to the scan queue for classification labels.
 
 3. As noted above, these scans are for the classification labels discovered in the initial scan Cloud App Security does to see which classification labels are used in your tenant. External labels, classification labels set by someone external to your tenant, are added to the list of classification labels. If you don't want to scan for these, select the **Only scan files for Azure Information Protection classification labels from this tenant** check box.
 
-4. After you enable Azure Information Protection on Cloud App Security, all new files that are added to Office 365 will be scanned for classification labels.
+4. After you enable Azure Information Protection on Cloud App Security, all new files that are added to your connected cloud apps will be scanned for classification labels.
 
 5. You can create new policies within Cloud App Security that apply your classification labels automatically.
 
