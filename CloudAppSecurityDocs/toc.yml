@@ -226,7 +226,7 @@
         href: api-tokens.md
       - name: Investigate activities with APIs
         href: investigate-activities-api.md  
-      - name: Use Microsoft Flow
+      - name: Use Microsoft Automation
         href: flow-integration.md
 - name: Reference
   items:
