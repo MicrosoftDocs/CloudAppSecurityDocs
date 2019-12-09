@@ -57,8 +57,8 @@ Cloud App Security currently supports applying Azure Information Protection clas
 - Excel: xlam, xlsm, xlsx, xltx
 - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
 - PDF
-    > [!NOTE]
-    > For PDF, you must use unified labels.
+  > [!NOTE]
+  > For PDF, you must use unified labels.
 
 This feature is currently available for files stored in Box, G Suite, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
 
