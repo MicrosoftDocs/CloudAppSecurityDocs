@@ -19,19 +19,9 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-Amazon Web Services (AWS) is a provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud (IaaS), your organization's most critical assets may be exposed to threats, including:
+Amazon Web Services (AWS) is a provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud (IaaS), your organization's most critical assets may be exposed to threats. Potentially exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, and ports and virtual private networks that enable access to your organization
 
-- Storage instances with potentially sensitive information
-- Compute resources that operate some of your most critical applications
-- Ports and virtual private networks that enable access to your organization
-
-Connecting AWS to Cloud App Security helps you secure your assets by detecting potential threats by:
-
-- Monitoring administrative and sign-in activities
-- Detecting and notifying about:
-  - Possible brute force attacks
-  - Malicious use of a privileged user accounts
-  - Unusual deletions of VMs and publicly exposed storage buckets
+Connecting AWS to Cloud App Security helps you secure your assets by detecting potential threats, including monitoring administrative and sign-in activities, detecting and notifying such as possible brute force attacks, malicious use of a privileged user accounts, and unusual deletions of VMs and publicly exposed storage buckets.
 
 ## Main threats
 
@@ -47,7 +37,7 @@ Connecting AWS to Cloud App Security helps you secure your assets by detecting p
 - [Stay up to date with latest security configuration recommendation](security-config-aws.md)
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 
-## Monitor and detect suspicious activities
+## Control AWS with built-in policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
 
