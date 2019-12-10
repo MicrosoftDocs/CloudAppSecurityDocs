@@ -19,9 +19,9 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-Amazon Web Services (AWS) is a provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud (IaaS), your organization's most critical assets may be exposed to threats. Potentially exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, and ports and virtual private networks that enable access to your organization
+Amazon Web Services (AWS) is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
 
-Connecting AWS to Cloud App Security helps you secure your assets by detecting potential threats, including monitoring administrative and sign-in activities, detecting and notifying such as possible brute force attacks, malicious use of a privileged user accounts, and unusual deletions of VMs and publicly exposed storage buckets.
+Connecting AWS to Cloud App Security helps you secure your assets and detect potential threats by monitoring administrative and sign-in activities, notifying on possible brute force attacks, malicious use of a privileged user accounts, unusual deletions of VMs, and publicly exposed storage buckets.
 
 ## Main threats
 
