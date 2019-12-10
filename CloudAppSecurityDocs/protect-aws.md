@@ -78,7 +78,7 @@ For more information about remediating threats from apps, see [Governing connect
 
 ## Protect AWS in real time
 
-Review our [best practices](best-practices.md#https://docs.microsoft.com/en-us/cloud-app-security/best-practices#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices) for blocking and protecting the download of sensitive data to unmanaged or risky devices.
+Review our [best practices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices) for blocking and protecting the download of sensitive data to unmanaged or risky devices.
 
 ## Next steps
 
