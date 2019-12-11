@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: How Cloud App Security helps protect your AWS environment
+title: How Cloud App Security helps protect your Amazon Web Services environment
 description: This article provides information about the benefits of connecting your AWS app to Cloud App Security using the API connector for visibility and control over use.
 author: shsagir
 ms.author: shsagir
@@ -15,13 +15,13 @@ ms.date: 12/04/2019
 ms.collection: M365-security-compliance
 ---
 
-# How Cloud App Security helps protect your AWS environment
+# How Cloud App Security helps protect your Amazon Web Services (AWS) environment
 
 *Applies to: Microsoft Cloud App Security*
 
-Amazon Web Services (AWS) is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
+Amazon Web Services is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
 
-Connecting AWS to Cloud App Security helps you secure your assets and detect potential threats by monitoring administrative and sign-in activities, notifying on possible brute force attacks, malicious use of a privileged user accounts, unusual deletions of VMs, and publicly exposed storage buckets.
+Connecting AWS to Cloud App Security helps you secure your assets and detect potential threats by monitoring administrative and sign-in activities, notifying on possible brute force attacks, malicious use of a privileged user account, unusual deletions of VMs, and publicly exposed storage buckets.
 
 ## Main threats
 
