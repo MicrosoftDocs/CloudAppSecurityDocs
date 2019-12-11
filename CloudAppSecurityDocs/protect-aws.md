@@ -37,20 +37,15 @@ Connecting AWS to Cloud App Security helps you secure your assets and detect pot
 - [Stay up to date with latest security configuration recommendation](security-config-aws.md)
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 
-## Control AWS with built-in policy templates
+## Control AWS with built-in policies and policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
 
-- Alert on virtual private network changes
-- Alert on IAM policy changes
-- Alert on admin console sign-in failures
-- Alert on CloudTrail configuration changes
-- Alert on EC2 instance configuration changes
-- Alert on any S3 configuration changes
-- Alert on Network gateway changes
-- Alert on Network access control list (ACL) changes
-- Alert on security group configuration changes
-- Alert when an S3 bucket in AWS is publicly accessible
+| Name | Type |
+| ---- | ---- |
+| Virtual private network changes <br />IAM policy changes <br />Admin console sign-in failures <br />CloudTrail configuration changes <br />EC2 instance configuration changes <br />S3 configuration changes <br />Network gateway changes <br />Network access control list (ACL) changes <br />security group configuration changes <br />Logon from a risky IP address | Activity policy template |
+| S3 bucket is publicly accessible | File policy template |
+| Activity from infrequent country <br />Multiple failed login attempts <br />Activity from anonymous IP addresses <br />Activity performed by terminated user <br />Activity from suspicious IP addresses <br />Unusual administrative activities <br />Unusual multiple VM creation activities (preview) <br />Unusual multiple storage deletion activities (preview) <br />Multiple delete VM activities | Built-in anomaly detection policy |
 
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
 
