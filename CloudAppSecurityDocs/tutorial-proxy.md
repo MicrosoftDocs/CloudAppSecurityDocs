@@ -47,7 +47,7 @@ Use this process to roll out real-time controls in your organization.
 
 1. **Monitor and assess**: In Cloud App Security, use the [Activity Log](activity-filters.md) to monitor and characterize app use in your environment, and understand their risks. You can narrow the scope of activities listed by using [search, filters, and queries](activity-filters-queries.md) to quickly identify risky activities.
 
-### Phase 2: Protect your data when it’s Infiltrated
+### Phase 2: Protect your data when it’s infiltrated
 <!--Protect your data when it’s exfiltrated to unmanaged devices or by guest users-->
 
 A primary concern for many organizations is how to prevent data exfiltration before it happens. Two of the biggest risks are unmanaged devices (that may not be protected with a pin or may contain malicious apps) and guest users where your IT department has little visibility and control.
