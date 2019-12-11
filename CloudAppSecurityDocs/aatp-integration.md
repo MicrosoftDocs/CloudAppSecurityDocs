@@ -31,7 +31,8 @@ For complete user investigation across a hybrid environment, you must have:
 - If do not have Azure ATP, try it now
 
 >[!NOTE]
->If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
+>If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights. Details on managing administrative permissions to the Cloud App Security portal can be found [here]( https://docs.microsoft.com/en-us/cloud-app-security/manage-admins).
+
 
 ## Enable Azure Advanced Threat Protection
 
