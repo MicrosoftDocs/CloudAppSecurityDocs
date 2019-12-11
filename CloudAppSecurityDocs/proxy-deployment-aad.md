@@ -22,10 +22,6 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
-[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>
-[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
-
 Session controls in Microsoft Cloud App Security work with the featured apps. For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
 
 ## Prerequisites
@@ -58,7 +54,7 @@ Follow these steps to configure featured apps to be controlled by Microsoft Clou
 
 1. Add any applicable **Condition assignments** or **Grant controls** (optional).
 
-   ![Azure AD conditional access](./media/azure-ad-caac-policy.png)
+    ![Azure AD conditional access](media/azure-ad-caac-policy.png)
 
 1. Click **Enable** and **Save**.
 
@@ -75,12 +71,12 @@ Cloud App Security will sync your policy details to its servers for each new app
 
 The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
-1. In the Cloud App Security portal, click the settings cog ![settings icon](./media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In the Cloud App Security portal, click the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
 1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** and **Session control** appear for your apps.
 
-   > [!NOTE]
-   > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](proxy-deployment-any-app.md), or you can open a request to add it as a featured app by clicking **Request session control**.
+    > [!NOTE]
+    > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](proxy-deployment-any-app.md), or you can open a request to add it as a featured app by clicking **Request session control**.
     >
     >![Conditional access app control request](media/caac-request.png)
 
@@ -92,19 +88,28 @@ The instructions above helped you create a built-in Cloud App Security policy fo
 
 1. You can filter by clicking on **Advanced**, and then filtering using **Source equals Access control**.
 
-    ![Filter using Azure AD conditional access](./media/sso-logon.png)
+    ![Filter using Azure AD conditional access](media/sso-logon.png)
 
-1. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.<br>
+1. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.<br />
 To verify that the activity is properly captured, click on a single sign-on log on activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
 
 > [!NOTE]
 > After it is deployed, you can't remove an app from the Conditional Access App Control page. As long as you don't set a session or access policy on the app, the Conditional Access App Control won't change any behavior for the app.
 
->[!div class="step-by-step"]
-[« Previous: Introduction to Conditional Access App Control](proxy-intro-aad.md)<br>[Next: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
-
 ## Next steps
 
-[Working with Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+> [!div class="nextstepaction"]
+> [How to create an access policy](access-policy-aad.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+## See also
+
+> [!div class="nextstepaction"]
+> [Introduction to Conditional Access App Control](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

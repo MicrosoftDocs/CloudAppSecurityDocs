@@ -32,10 +32,10 @@ There are two types of reports you can generate:
 
 - **Continuous reports** - Analyze all logs that are forwarded from your network using Cloud App Security. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define. These reports can be created by connecting in the following ways:
 
-     - [Microsoft Defender ATP integration](wdatp-integration.md): Cloud App Security integrates with Microsoft Defender Advanced Threat Protection (ATP) natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
-     - [Log collector](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
-     - [Zscaler integration](zscaler-integration.md): If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Zscaler provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Zscaler portal.
-     - [iboss integration](iboss-integration.md): If you work with both Cloud App Security and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and iboss provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the iboss portal.
+  - [Microsoft Defender ATP integration](wdatp-integration.md): Cloud App Security integrates with Microsoft Defender Advanced Threat Protection (ATP) natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
+  - [Log collector](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
+  - [Zscaler integration](zscaler-integration.md): If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Zscaler provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Zscaler portal.
+  - [iboss integration](iboss-integration.md): If you work with both Cloud App Security and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and iboss provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the iboss portal.
 
 ## Log process flow: From raw data to risk assessment
 
@@ -127,8 +127,11 @@ Data attributes (according to vendor documentation):
 
 ## Next steps
 
-[Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
-[Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)

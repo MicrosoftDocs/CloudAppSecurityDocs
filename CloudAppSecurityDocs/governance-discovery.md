@@ -35,7 +35,7 @@ After you've reviewed the list of discovered apps in your environment, you can s
 
 You can unsanction a specific risky app by clicking the three dots at the end of the row. Then select **Unsanction**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use.
 
-![Tag as unsanctioned](./media/tag-as-unsanctioned.png)
+![Tag as unsanctioned](media/tag-as-unsanctioned.png)
 
 If you have a list of apps you want to sanction or unsanction, use the checkbox to select the apps you want to manage, then select the action.
 
@@ -50,19 +50,19 @@ Cloud App Security enables you to block access to unsanctioned apps by using you
 
 1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
 
-    ![Tag as unsanctioned](./media/tag-as-unsanctioned.png)
+    ![Tag as unsanctioned](media/tag-as-unsanctioned.png)
 
 2. In the title bar, click on the three dots and select **Generate block script...**.
 
-    ![Generate block script](./media/generate-block-script.png)
+    ![Generate block script](media/generate-block-script.png)
 
 3. In **Generate block script**, select the appliance you want to generate the block script for.
 
-    ![Generate block script pop-up](./media/generate-block-script-popup.png)
+    ![Generate block script pop-up](media/generate-block-script-popup.png)
 
 4. Then, click the Generate script button to create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name
 
-   ![Generate block script button](./media/generate-block-script-button.png)
+   ![Generate block script button](media/generate-block-script-button.png)
 
 5. Import the file created to your appliance.
 
@@ -71,4 +71,4 @@ Cloud App Security enables you to block access to unsanctioned apps by using you
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

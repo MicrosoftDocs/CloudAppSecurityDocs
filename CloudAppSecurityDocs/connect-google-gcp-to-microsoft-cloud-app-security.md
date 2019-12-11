@@ -54,11 +54,10 @@ Create a dedicated project in GCP under your organization to enable integration 
 
     ![Screenshot showing GCP create project dialog](media/connect-gcp-create-project.png)
 
-> [!NOTE]
-> After the project is created, make sure that:
->
-> * The dedicated project is selected in the drop-down at the top.
-> * The Pub/Sub API is enabled. To enable, go to the Pub/Sub tab.
+### Enable the Pub/Sub API
+
+1. Switch to the dedicated project.
+1. Go to the Pub/Sub tab. A service activation message should appear.
 
 ### Create a dedicated service account for the integration
 
@@ -160,4 +159,4 @@ Disabling aggregated export sink is currently only possible via Google Cloud She
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

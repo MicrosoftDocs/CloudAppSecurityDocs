@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/1/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -59,7 +59,7 @@ The following governance actions can be taken for connected apps either on a spe
 
     - **Remove external users** – Allow access only to company users.
 
-    - **Make private** – Only the owner can access the file, all shares are removed.
+    - **Make private** – Only Site Admins can access the file, all shares are removed.
 
     - **Remove a collaborator** – Remove a specific collaborator from the file.
 
@@ -79,7 +79,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](./media/policy_create-alerts.png "policy_create alerts")
+   ![policy_create alerts](media/policy_create-alerts.png "policy_create alerts")
 
 ## Activity governance actions
 
@@ -95,11 +95,13 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Suspend user** – Suspend the user from the application.
     > [!NOTE]
-    > If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
+    > If your Azure Active Directory (Azure AD) is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
 
   - **Require user to sign in again** – Signs the user out and requires them to sign in again.
 
-  ![Cloud App Security activity policy governance actions](./media/activity-policy-ref6.png "activity policy ref6")
+  - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
+
+  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png "activity policy ref6")
 
 ## Governance conflicts
 
@@ -113,7 +115,7 @@ After creating multiple policies, a situation may arise in which the governance 
 
 ### Conflicts in user sync
 
-- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment, the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
+- If your Azure AD is set to automatically sync with the users in your Active Directory on-premises environment, the settings in the on-premises environment will override the Azure AD settings and this governance action will be reverted.
 
 ## Governance log
 
@@ -129,7 +131,8 @@ For information about how governance actions are treated when there are policy c
 |Accounts | Account |Account settings | Takes you to the account settings page in the specific app (for example, inside Salesforce). | All apps -One Drive and SharePoint settings are configured from within Office. |
 |Accounts |File |Transfer all files ownership | On an account, you transfer one user's files to all be owned by a new person you select. The previous owner becomes an editor and can no longer change sharing settings. The new owner will receive an email notification about the change of ownership. | G Suite|
 |Accounts, Activity policy | Account | Suspend user| Sets user to have no access and no ability to sign in. If they're logged in when you set this action, they're immediately locked out. |G Suite, Box, Office, Salesforce|
-|Activity policy, Accounts | Account |Require user to sign in again|Revokes all refresh tokens and session cookies issues to applications by the user. This action will prevent access to any of the organization's data and will force the user to sign into all applications again.| G Suite|
+|Activity policy, Accounts | Account |Require user to sign in again|Revokes all refresh tokens and session cookies issues to applications by the user. This action will prevent access to any of the organization's data and will force the user to sign into all applications again.| G Suite, Office|
+|Activity policy, Accounts | Account |Confirm user compromised|Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. | Office |
 |Activity policy, Accounts | Account | Revoke admin privileges |Revokes privileges for an admin account. For example, setting an activity policy that revokes admin privileges after 10 failed login attempts. | G Suite|
 |App dashboard > App permissions |Permissions|Unban app| In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third-party app with their Google or Salesforce. In Office 365: restores the permissions of the third-party app’s to Office. |G Suite, Salesforce, Office |
 |App dashboard > App permissions |Permissions| Disable app permissions | Revoke a third-party app's permissions to Google, Salesforce, or Office. This is a one-time action that will occur on all existing permissions, but won't prevent future connections.|G Suite, Salesforce, Office |
@@ -156,7 +159,7 @@ For information about how governance actions are treated when there are policy c
 |Files, File policy|File | Transfer file ownership | Changes the owner - in the policy you choose a specific owner. | G Suite|
 |Files, File policy|File | Reduce public access|This action enables you to set publicly available files to be available only with a shared link.| G Suite|
 |Files, File policy|File | Remove a collaborator | Removes a specific collaborator from a file. | G Suite, Box, One Drive, SharePoint|
-|Files, File policy|File | Make private| Make the file private - no more collaborators or public links, not shared with anyone. | G Suite, One Drive, SharePoint |
+|Files, File policy|File | Make private| Only Site Admins can access the file, all shares are removed. | G Suite, One Drive, SharePoint |
 |Files, File policy|File | Remove external users | Removes all external collaborators - outside the domains configured as internal in Settings. |G Suite, Box, One Drive, SharePoint|
 |Files, File policy|File |Grant read permission to domain|Grants read permissions for the file to the specified domain for your entire domain or a specific domain. This action is useful if you want to remove public access after granting access to the domain of people who need to work on it.| G Suite|
 |Files, File policy|File | Put in user quarantine | Removes all permissions from the file and moves the file to a quarantine folder under the user's root drive. This action allows the user to review the file and move it. If it's manually moved back, the file sharing isn't restored. | Box, One Drive, SharePoint |
@@ -171,6 +174,7 @@ For information about how governance actions are treated when there are policy c
 
 ## Next steps
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

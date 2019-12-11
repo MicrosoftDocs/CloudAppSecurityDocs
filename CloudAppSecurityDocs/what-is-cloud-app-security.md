@@ -41,7 +41,7 @@ Microsoft Cloud App Security natively integrates with leading Microsoft solution
 
 For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
-## The Cloud App Security framework  
+## The Cloud App Security framework
 
 - **Discover and control the use of Shadow IT**: Identify the cloud apps, IaaS, and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 16,000 SaaS apps against more than 80 risks. Start managing them to ensure security and compliance.
 
@@ -51,39 +51,39 @@ For information about licensing, see the [Microsoft Cloud App Security licensing
 
 - **Assess the compliance of your cloud apps**: Assess if your cloud apps meet relevant compliance requirements including regulatory compliance and industry standards. Prevent data leaks to non-compliant apps, and limit access to regulated data.
 
-## Architecture  
+## Architecture
 
-Cloud App Security integrates visibility with your cloud by:  
+Cloud App Security integrates visibility with your cloud by:
 
 - Using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
-- Sanctioning and unsanctioning apps in your cloud.  
-- Using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.  
+- Sanctioning and unsanctioning apps in your cloud.
+- Using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.
 - Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
-- Helping you have continuous control by setting, and then continually fine-tuning, policies.  
+- Helping you have continuous control by setting, and then continually fine-tuning, policies.
 
-![Cloud App Security architecture diagram](./media/proxy-architecture.png)  
+![Cloud App Security architecture diagram](media/proxy-architecture.png)
 
 ### Data retention & compliance
 
 For more information about Microsoft Cloud App Security data retention and compliance, see [Microsoft Cloud App Security data security and privacy](cas-compliance-trust.md).
 
-### Cloud Discovery  
+### Cloud Discovery
 
-Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Cloud App Security log collectors to periodically forward your logs.  
+Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Cloud App Security log collectors to periodically forward your logs.
 
 For more information about Cloud Discovery, see [Set up Cloud Discovery](set-up-cloud-discovery.md).
 
-### Sanctioning and unsanctioning an app  
+### Sanctioning and unsanctioning an app
 
-You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 16,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is. Scoring is based on over 80 risk factors that might affect your environment.  
+You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 16,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is. Scoring is based on over 80 risk factors that might affect your environment.
 
 ### App connectors
 
-App connectors use APIs from cloud app providers to integrate the Cloud App Security cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps, for Cloud App Security analysis.  
+App connectors use APIs from cloud app providers to integrate the Cloud App Security cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps, for Cloud App Security analysis.
 
-To connect an app and extend protection, the app administrator authorizes Cloud App Security to access the app. Then, Cloud App Security queries the app for activity logs, and it scans data, accounts, and cloud content. Cloud App Security can enforce policies, detects threats, and provides governance actions for resolving issues.  
+To connect an app and extend protection, the app administrator authorizes Cloud App Security to access the app. Then, Cloud App Security queries the app for activity logs, and it scans data, accounts, and cloud content. Cloud App Security can enforce policies, detects threats, and provides governance actions for resolving issues.
 
-Cloud App Security uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Cloud App Security works with app providers on optimizing the use of APIs to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Cloud App Security engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they're spread over a longer period. Expect some policies to run for several hours or several days.  
+Cloud App Security uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Cloud App Security works with app providers on optimizing the use of APIs to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Cloud App Security engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they're spread over a longer period. Expect some policies to run for several hours or several days.
 
 ### Conditional Access App Control protection
 
@@ -94,16 +94,16 @@ Microsoft Cloud App Security Conditional Access App Control uses reverse proxy a
 - Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices
 - Control access from non-corporate networks or risky IP addresses
 
-### Policy control  
+### Policy control
 
-You can use policies to define your users' behavior in the cloud. Use policies to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If needed, you can use policies to integrate remediation processes to achieve complete risk mitigation. Types of policies correlate to the different types of information you might want to gather about your cloud environment and the types of remediation actions you might take.  
+You can use policies to define your users' behavior in the cloud. Use policies to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If needed, you can use policies to integrate remediation processes to achieve complete risk mitigation. Types of policies correlate to the different types of information you might want to gather about your cloud environment and the types of remediation actions you might take.
 
 ## Related Videos
 
 - [Joining the security community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
-## Next steps  
+## Next steps
 
-Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).    
+Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).   
+[!INCLUDE [Open support ticket](includes/support.md)].

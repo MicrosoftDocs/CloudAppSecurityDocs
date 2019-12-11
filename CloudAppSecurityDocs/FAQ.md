@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 
 
 # optional metadata
@@ -50,7 +49,8 @@ You have to be a Global admin, Compliance admin, or Security admin in Azure Acti
  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
 ```
 
-## Next steps  
-To learn how to set up and use policies for controlling cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).   
+## Next steps
 
-Premier customers can also choose Cloud App Security directly from the [Premier Portal](https://premier.microsoft.com/).  
+To learn how to set up and use policies for controlling cloud app use, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+
+[!INCLUDE [Open support ticket](includes/support.md)]

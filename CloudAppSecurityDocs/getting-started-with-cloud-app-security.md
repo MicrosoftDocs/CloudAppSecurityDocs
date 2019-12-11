@@ -37,7 +37,7 @@ Your organization must have a license to use Cloud App Security. For pricing det
 
 - Your organization must have a license to use Cloud App Security. For pricing details, see the [Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
-     For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+    For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 - After you have a license for Cloud App Security, you'll receive an email with activation information and a link to the Cloud App Security portal.
 
 - To set up Cloud App Security, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
@@ -91,10 +91,10 @@ Required task: Enable Cloud App Security to view your cloud app use
 1. If you use [Zscaler, integrate](zscaler-integration.md) it with Cloud App Security.
 1. To achieve full coverage, create a continuous Cloud Discovery report
 
-   1. From the settings cog, select   **Cloud Discovery settings**.
-   1. Choose **Automatic log upload**.
-   1. On the **Data sources** tab, add your sources.
-   1. On the **Log collectors** tab, configure the log collector.
+    1. From the settings cog, select   **Cloud Discovery settings**.
+    1. Choose **Automatic log upload**.
+    1. On the **Data sources** tab, add your sources.
+    1. On the **Log collectors** tab, configure the log collector.
 
 ### To create a snapshot Cloud Discovery report
 
@@ -147,7 +147,7 @@ Recommended task: Configure important settings
 1. Enter the IP range **details**, **location**, **tags**, and **category**.
 1. Choose **Create**.
 
-   Now you can use IP tags when you create policies, and when you filter and create continuous reports.
+    Now you can use IP tags when you create policies, and when you filter and create continuous reports.
 
 ### To create continuous reports
 
@@ -170,6 +170,7 @@ These settings help give you better control of features in the console. With IP 
 
 ## Next Steps
 
-Set policies [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/).
+[!INCLUDE [Open support ticket](includes/support.md)].

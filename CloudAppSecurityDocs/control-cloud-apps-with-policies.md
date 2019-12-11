@@ -41,13 +41,13 @@ The following types of policies can be created:
 
 |Policy type icon|Policy type|Use|
 |-----|-----------------|---------|
-|![access policy icon](./media/proxy-policy.png)|Access policy|Access policies provide you with real-time monitoring and control over user logins to your cloud apps.|
-|![activity policy icon](./media/activity_policy.png)|Activity policy|Activity policies allow you to enforce a wide range of automated processes using the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|
-|![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud. Detection is based on the risk factors you set to alert you when something happens that is different from the baseline of your organization or from the user's regular activity.|
-|![cloud discovery policy icon](./media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|
-|![anomaly detection policy icon](./media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|
-|![file policy icon](./media/file_policy.png)|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, personal data, credit card information, and other types of data) and apply governance actions to the files (governance actions are cloud-app specific).|
-|![session policy icon](./media/proxy-policy.png)|Session policy|Session policies provide you with real-time monitoring and control over user activity in your cloud apps.|
+|![access policy icon](media/proxy-policy.png)|Access policy|Access policies provide you with real-time monitoring and control over user logins to your cloud apps.|
+|![activity policy icon](media/activity_policy.png)|Activity policy|Activity policies allow you to enforce a wide range of automated processes using the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|
+|![anomaly detection policy icon](media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud. Detection is based on the risk factors you set to alert you when something happens that is different from the baseline of your organization or from the user's regular activity.|
+|![cloud discovery policy icon](media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|
+|![anomaly detection policy icon](media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|
+|![file policy icon](media/file_policy.png)|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, personal data, credit card information, and other types of data) and apply governance actions to the files (governance actions are cloud-app specific).|
+|![session policy icon](media/proxy-policy.png)|Session policy|Session policies provide you with real-time monitoring and control over user activity in your cloud apps.|
 
 ## Identifying risk
 
@@ -105,7 +105,7 @@ To create a policy from **Policy templates**, perform the following steps:
 
 1. In the console, click on **Control** followed by **Templates**.
 
-    ![Create the policy from a a template](./media/create-policy-from-template.png)
+    ![Create the policy from a a template](media/create-policy-from-template.png)
 
 1. Click the **+** at the far right of the row of the template you want to use. A create policy page opens, with the pre-defined configuration of the template.
 
@@ -127,11 +127,11 @@ To create a policy based on investigation results, do the following steps:
 
 1. Use the filters at the top of the page to limit the search results to the suspicious area. For example, in the Activity log page, click **Activity type** and select **Write Administrators** under Azure operation. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate, and VPN IP addresses.
 
-    ![Create file from investigation](./media/create-file-from-investigation.png)
+    ![Create file from investigation](media/create-file-from-investigation.png)
 
 1. In the upper right corner of the console, click **New policy from search**.
 
-    ![New policy from search button](./media/new-policy-from-search-button.png)
+    ![New policy from search button](media/new-policy-from-search-button.png)
 
 1. A create policy page opens, containing the filters you used in your investigation.
 
@@ -141,7 +141,7 @@ To create a policy based on investigation results, do the following steps:
     > When using the policy filters, **Contains**  searches only for full words – separated by comas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe.  
 **Equals** searches only for the complete string, for example if you search for **malware.exe** it finds malware.exe but not malware.exe.txt.
 
-    ![create activity policy from investigation](./media/create-activity-policy-from-investigation.png)
+    ![create activity policy from investigation](media/create-activity-policy-from-investigation.png)
 
     > [!NOTE]
     > For more information on setting the policy fields, see the corresponding policy documentation:
@@ -169,11 +169,11 @@ After you create a policy, you can enable or disable it. Disabling avoids the ne
 
 - To enable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to enable. Select **Enable**.
 
-    ![Enable policy](./media/enable-policy.png)
+    ![Enable policy](media/enable-policy.png)
 
 - To disable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to disable. Select **Disable**.
 
-    ![Disable policy](./media/disable-policy.png)
+    ![Disable policy](media/disable-policy.png)
 
 By default, after you create a new policy, it's enabled.
 
@@ -195,10 +195,11 @@ To download the exported report:
 
 1. In the table, select the relevant report from the list of **Policies overview report** and click download.
 
-    ![download button](./media/download-button.png)
+    ![download button](media/download-button.png)
 
 ## Next steps
 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier customers can also create a new support request directly in the Premier Portal.](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -17,6 +17,7 @@ For example, when detecting a possible malware threat, you can use workflows to 
 In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior.
 
 > [!div class="checklist"]
+>
 > * 1: [Generate a Cloud App Security API token](#generate-token)
 > * 2: [Create a flow to run an antivirus scan](#create-flow)
 > * 3: [Configure the flow](#configure-flow)
@@ -38,7 +39,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 > [!NOTE]
 > If you have previously created a workflow using a Cloud App Security connector, Microsoft Flow automatically reuses the token and you can skip this step.
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Security extensions**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Security extensions**.
 
 1. On the **Security extensions** page, click the plus button to generate a new API token.
 1. In the **Generate new token** pop-up window, enter the token name (for example, "Flow-Token"), and then click **Generate**.
@@ -54,6 +55,7 @@ If you don’t have a Microsoft Flow plan, [sign up for a free trial account](ht
 > If you have previously created a flow using a Defender ATP connector, Flow automatically reuses the connector and you can skip the **Sign in** step.
 
 1. Go to the [Microsoft Flow portal](https://flow.microsoft.com/) and select Templates.
+
     ![Screenshot of the main Microsoft Flow page, showing the selection of templates.](media/tutorial-flow-templates.png)
 
 1. Search for "Cloud App Security" and select **Run antivirus scan using Windows Defender upon a Cloud App Security alert**.
@@ -108,4 +110,4 @@ You can use the steps in this tutorial to create a wide range of workflow-based 
 ## See Also
 
 > [!div class="nextstepaction"]
-[Integrate with Microsoft Flow for custom alert automation](flow-integration.md)
+> [Integrate with Microsoft Flow for custom alert automation](flow-integration.md)

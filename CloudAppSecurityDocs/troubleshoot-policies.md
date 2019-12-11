@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 
 # optional metadata
 
@@ -42,7 +41,7 @@ The following chart has the description and resolution for errors you might see 
 
 ## Next steps
 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
-[Premier customers can also choose Cloud App Security directly from the Premier Portal](https://premier.microsoft.com/)
-
+[!INCLUDE [Open support ticket](includes/support.md)]
