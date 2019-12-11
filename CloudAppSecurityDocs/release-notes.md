@@ -32,7 +32,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 Released December 8, 2019
 
 - **Change to SIEM activities and alerts in CEF format**  
-The [portal URL format (CS1)](siem.md#sample-cloud-app-security-alerts-in-cef-format) for activity and alert information sent by Cloud App Security to SIEMs has changed to `https://<tenant_name>.protal.cloudappsecurity.com` and no longer contains the data center location. Customers using pattern matching for the portal URL should update their pattern to reflect this change.
+The [portal URL format (CS1)](siem.md#sample-cloud-app-security-alerts-in-cef-format) for activity and alert information sent by Cloud App Security to SIEMs has changed to `https://<tenant_name>.protal.cloudappsecurity.com` and no longer contains the data center location. Customers using pattern matching for the portal URL should update the pattern to reflect this change.
 
 ## Cloud App Security release 160 and 161
 
@@ -382,7 +382,7 @@ Conditional Access App Control now supports adding and using multiple trusted ro
 Cloud App Security now provides a new admin role for Cloud Discovery users. This role can be used in order to scope the access of an admin user to only Cloud Discovery settings and data within the Cloud App Security portal.
 
 - **Support for Microsoft Information Protection unified labels** (gradual roll out)  
-Cloud App Security now supports Microsoft Information Protection unified labels. For customers that already [migrated their classification labels for the Office 365 Security and Compliance Center](/azure/information-protection/configure-policy-migrate-labels), Cloud App Security will identify and work with these labels as described in [Integrating with Azure Information Protecion](azip-integration.md).
+Cloud App Security now supports Microsoft Information Protection unified labels. For customers that already [migrated their classification labels for the Office 365 Security and Compliance Center](/azure/information-protection/configure-policy-migrate-labels), Cloud App Security will identify and work with these labels as described in [Integrating with Azure Information Protection](azip-integration.md).
 
 **Support for PDF file labeling** (gradual roll out)  
 For customers using unified labels, Cloud App Security now supports auto-labeling for PDF files.
