@@ -41,11 +41,11 @@ Connecting AWS to Cloud App Security helps you secure your assets and detect pot
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
 
-| Name | Type |
+| Type | Name |
 | ---- | ---- |
-| Virtual private network changes <br />IAM policy changes <br />Admin console sign-in failures <br />CloudTrail configuration changes <br />EC2 instance configuration changes <br />S3 configuration changes <br />Network gateway changes <br />Network access control list (ACL) changes <br />security group configuration changes <br />Logon from a risky IP address | Activity policy template |
-| S3 bucket is publicly accessible | File policy template |
-| Activity from infrequent country <br />Multiple failed login attempts <br />Activity from anonymous IP addresses <br />Activity performed by terminated user <br />Activity from suspicious IP addresses <br />Unusual administrative activities <br />Unusual multiple VM creation activities (preview) <br />Unusual multiple storage deletion activities (preview) <br />Multiple delete VM activities | Built-in anomaly detection policy |
+| Activity policy template | Admin console sign-in failures <br/>CloudTrail configuration changes <br/>EC2 instance configuration changes <br/>IAM policy changes <br/>Logon from a risky IP address <br/>Network access control list (ACL) changes <br/>Network gateway changes <br/>S3 configuration changes <br/>Security group configuration changes <br/>Virtual private network changes |
+| Built-in anomaly detection policy | Activity from anonymous IP addresses <br />Activity from infrequent country <br />Activity from suspicious IP addresses <br />Activity performed by terminated user <br />Multiple delete VM activities <br />Multiple failed login attempts <br />Unusual administrative activities <br />Unusual multiple storage deletion activities (preview) <br />Unusual multiple VM creation activities (preview) |
+| File policy template | S3 bucket is publicly accessible |
 
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
 
