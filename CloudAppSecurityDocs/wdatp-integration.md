@@ -107,7 +107,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 ## Block access to unsanctioned cloud apps
 
-Cloud App Security uses the built-in [**Unsanctioned**](governance-discovery#BKMK_SanctionApp) app tag to mark cloud apps as prohibited for use, available in both the Cloud Discovery and Cloud app catalog pages. By enabling the integration with Microsoft Defender ATP, you can seamlessly block access to unsanctioned apps with a single click in the Cloud App Security portal.
+Cloud App Security uses the built-in [**Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) app tag to mark cloud apps as prohibited for use, available in both the Cloud Discovery and Cloud app catalog pages. By enabling the integration with Microsoft Defender ATP, you can seamlessly block access to unsanctioned apps with a single click in the Cloud App Security portal.
 
 ### How it works
 
