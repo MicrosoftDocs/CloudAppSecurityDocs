@@ -32,7 +32,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 Released December 8, 2019
 
 - **Change to SIEM activities and alerts in CEF format**  
-The [portal URL format (CS1)](siem.md#sample-cloud-app-security-alerts-in-cef-format) for activity and alert information sent by Cloud App Security to SIEMs has changed to `https://<tenant_name>.protal.cloudappsecurity.com` and no longer contains the data center location. Customers using pattern matching for the portal URL should update the pattern to reflect this change.
+The [portal URL format (CS1)](siem.md#sample-cloud-app-security-alerts-in-cef-format) for activity and alert information sent by Cloud App Security to SIEMs has changed to `https://<tenant_name>.portal.cloudappsecurity.com` and no longer contains the data center location. Customers using pattern matching for the portal URL should update the pattern to reflect this change.
 
 ## Cloud App Security release 160 and 161
 
