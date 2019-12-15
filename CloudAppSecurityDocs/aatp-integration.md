@@ -33,7 +33,7 @@ For complete user investigation across a hybrid environment, you must have:
 >[!NOTE]
 >If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
 
-## Enable Azure Advanced Threat Protection
+## Enable Azure ATP
 
 To enable Cloud App Security integration with Azure ATP:
 
@@ -50,9 +50,9 @@ To enable Cloud App Security integration with Azure ATP:
 > [!NOTE]
 > It may take up to 12 hours until the integration takes effect.
 
-After enabling Azure Advanced Threat Protection integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments.
+After enabling Azure ATP integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments. Additionally, policies from Azure ATP will appear on the Cloud App Security policies page. For a list of Azure ATP policies, see [Security Alerts](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
 
-## Disable Azure Advanced Threat Protection
+## Disable Azure ATP
 
 To disable Cloud App Security integration with Azure ATP:
 
