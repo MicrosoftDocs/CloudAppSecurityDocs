@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing ServiceNow account using the app connector API. This connection gives you visibility into and control over ServiceNow use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing ServiceNow account using the app connector API. This connection gives you visibility into and control over ServiceNow use. For information about how Cloud App Security protects ServiceNow, see [Protect ServiceNow](protect-servicenow.md).
 
 > [!NOTE]
 > We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0).

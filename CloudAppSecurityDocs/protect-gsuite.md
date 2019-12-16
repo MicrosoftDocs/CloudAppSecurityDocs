@@ -21,7 +21,7 @@ ms.collection: M365-security-compliance
 
 As a cloud file storage and collaboration tool, G Suite enables your users to persist and share their documents across your organization in a streamlined and efficient way. Using G Suite may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees. G Suite also features a productivity boost by providing a large third-party app eco-system which introduces the risk of malicious apps or use of apps with excessive permissions.
 
-Connecting G Suite to Cloud App Security gives you improved insights into your users’ activities, provide threat detection using machine learning based anomaly detections, information protection related detections such as detecting external information sharing and enabling automated remediation controls, and detecting threats from enabled third-party apps in your organization.
+Connecting G Suite to Cloud App Security gives you improved insights into your users’ activities, provides threat detection using machine learning based anomaly detections and information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
 ## Main threats
 
@@ -48,7 +48,7 @@ You can use the following built-in policy templates to detect and notify you abo
 
 | Type | Name |
 | ---- | ---- |
-| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires AAD as IdP)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Malware detection](anomaly-detection-policy.md#malware-detection)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Unusual administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual file deletion activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual file share activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires AAD as IdP)<br />[Malware detection](anomaly-detection-policy.md#malware-detection)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Unusual administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual file deletion activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual file share activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Activity policy template | Logon from a risky IP address<br />Mass download by a single user<br />Potential ransomware activity |
 | File policy template | Detect a file shared with an unauthorized domain<br />Detect a file shared with personal email addresses<br />Detect files with PII/PCI/PHI |
 
@@ -58,25 +58,11 @@ For more information about creating policies, see [Create a policy](control-clou
 
 In addition to monitoring for potential threats, you can apply and automate the following G Suite governance actions to remediate detected threats:
 
-- Apply Azure Information Protection classification label
-- Grant read permission to domain
-- Make a file / folder in Google Drive private
-- Notify user on alert (via Azure AD)
-- Reduce public access to file/folder
-- Remove a collaborator from a file
-- Remove Azure Information Protection classification label
-- Remove external collaborators on file/folder
-- Remove file editor’s ability to share
-- Remove public access to file/folder
-- Require user to reset password to Google
-- Require user to sign in again (via Azure AD)
-- Revoke OAuth app permission
-- Send DLP violation digest to file owners
-- Send DLP violation to last file editor
-- Suspend user
-- Suspend user (via Azure AD)
-- Transfer file ownership
-- Trash file
+| Type | Action |
+| ---- | ---- |
+| Data governance | - Apply Azure Information Protection classification label<br />- Grant read permission to domain<br />- Make a file/folder in Google Drive private<br />- Reduce public access to file/folder<br />- Remove a collaborator from a file<br />- Remove Azure Information Protection classification label<br />- Remove external collaborators on file/folder<br />- Remove file editor’s ability to share<br />- Remove public access to file/folder<br />- Require user to reset password to Google<br />- Send DLP violation digest to file owners<br />- Send DLP violation to last file editor<br />- Transfer file ownership<br />- Trash file |
+| User governance | - Suspend user<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
+| OAuth app governance | - Revoke OAuth app permission |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 

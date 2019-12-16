@@ -44,7 +44,7 @@ You can use the following built-in policy templates to detect and notify you abo
 | Type | Name |
 | ---- | ---- |
 | Activity policy template | Admin console sign-in failures<br />CloudTrail configuration changes<br />EC2 instance configuration changes<br />IAM policy changes<br />Logon from a risky IP address<br />Network access control list (ACL) changes<br />Network gateway changes<br />S3 configuration changes<br />Security group configuration changes<br />Virtual private network changes |
-| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires AAD as IdP)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Multiple delete VM activities](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Unusual administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual multiple storage deletion activities](anomaly-detection-policy.md#unusual-activities-by-user) (preview)<br />[Unusual multiple VM creation activities](anomaly-detection-policy.md#unusual-activities-by-user) (preview) |
+| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires AAD as IdP)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Unusual administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual multiple storage deletion activities](anomaly-detection-policy.md#unusual-activities-by-user) (preview)<br />[Multiple delete VM activities](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[Unusual multiple VM creation activities](anomaly-detection-policy.md#unusual-activities-by-user) (preview) |
 | File policy template | S3 bucket is publicly accessible |
 
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
@@ -53,11 +53,10 @@ For more information about creating policies, see [Create a policy](control-clou
 
 In addition to monitoring for potential threats, you can apply and automate the following AWS governance actions to remediate detected threats:
 
-- Make an S3 bucket private
-- Notify user on alert (via Azure AD)
-- Remove a collaborator for an S3 bucket
-- Require user to sign in again (via Azure AD)
-- Suspend user (via Azure AD)
+| Type | Action |
+| ---- | ---- |
+| User governance | - Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
+| Data governance | - Make an S3 bucket private<br />- Remove a collaborator for an S3 bucket |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 

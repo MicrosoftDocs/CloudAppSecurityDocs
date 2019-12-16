@@ -21,7 +21,7 @@ ms.collection: M365-security-compliance
 
 As a cloud file storage and collaboration tool, Dropbox enables your users to persist and share their documents across your organization in a streamlined and efficient way. Using Dropbox may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees.
 
-Connecting Dropbox to Cloud App Security gives you improved insights into your users’ activities, provide threat detection using machine learning based anomaly detections, and information protection related detections such as detecting external information sharing and enabling automated remediation controls.
+Connecting Dropbox to Cloud App Security gives you improved insights into your users’ activities, provide threat detection using machine learning based anomaly detections, and information protection detections such as detecting external information sharing and enabling automated remediation controls.
 
 ## Main threats
 
@@ -46,7 +46,7 @@ You can use the following built-in policy templates to detect and notify you abo
 
 | Type | Name |
 | ---- | ---- |
-| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires AAD as IdP)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Malware detection](anomaly-detection-policy.md#malware-detection)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Unusual file deletion activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual file share activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires AAD as IdP)<br />[Malware detection](anomaly-detection-policy.md#malware-detection)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Unusual file deletion activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual file share activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Activity policy template | Logon from a risky IP address<br />Mass download by a single user<br />Potential ransomware activity |
 | File policy template | Detect a file shared with an unauthorized domain<br />Detect a file shared with personal email addresses<br />Detect files with PII/PCI/PHI |
 
@@ -56,12 +56,10 @@ For more information about creating policies, see [Create a policy](control-clou
 
 In addition to monitoring for potential threats, you can apply and automate the following Dropbox governance actions to remediate detected threats:
 
-- Notify user on alert (via Azure AD)
-- Remove direct shared link
-- Require user to sign in again (via Azure AD)
-- Send DLP violation digest to file owners
-- Suspend user (via Azure AD)
-- Trash file
+| Type | Action |
+| ---- | ---- |
+| Data governance | - Remove direct shared link<br />- Send DLP violation digest to file owners<br />- Trash file |
+| User governance | - Notify user on alert (via Azure AD)<br /> - Require user to sign in again (via Azure AD)<br /> - Suspend user (via Azure AD) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
