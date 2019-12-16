@@ -34,7 +34,6 @@ Connecting Azure to Cloud App Security helps you secure your assets and detect p
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
-- [Stay up to date with latest security configuration recommendation](security-config-Azure.md)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
 ## Control Azure with built-in policies and policy templates
