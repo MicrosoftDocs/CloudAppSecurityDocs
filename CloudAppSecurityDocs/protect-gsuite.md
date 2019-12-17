@@ -19,9 +19,9 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-As a cloud file storage and collaboration tool, G Suite enables your users to persist and share their documents across your organization in a streamlined and efficient way. Using G Suite may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees. G Suite also features a productivity boost by providing a large third-party app eco-system which introduces the risk of malicious apps or use of apps with excessive permissions.
+As a cloud file storage and collaboration tool, G Suite enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using G Suite may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees. G Suite also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
 
-Connecting G Suite to Cloud App Security gives you improved insights into your users’ activities, provides threat detection using machine learning based anomaly detections and information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
+Connecting G Suite to Cloud App Security gives you improved insights into your users’ activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
 ## Main threats
 

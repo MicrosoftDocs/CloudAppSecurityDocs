@@ -19,9 +19,9 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-As a cloud file storage and collaboration tool, Box enables your users to persist and share their documents across your organization in a streamlined and efficient way. Using Box may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees.
+As a cloud file storage and collaboration tool, Box enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Box may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees.
 
-Connecting Box to Cloud App Security gives you improved insights into your users’ activities, provide threat detection using machine learning based anomaly detections, and information protection detections such as detecting external information sharing and enabling automated remediation controls.
+Connecting Box to Cloud App Security gives you improved insights into your users’ activities, provide threat detection using machine learning based anomaly detections, information protection detections such as detecting external information sharing, and enabling automated remediation controls.
 
 ## Main threats
 

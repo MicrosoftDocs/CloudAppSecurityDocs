@@ -19,9 +19,9 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-As a major productivity suite providing cloud file storage, collaboration, BI, and CRM tools, Office 365 enables your users to persist and share their assets (documents, reports, and other assets) across your organization in a streamlined and efficient way. Using Office 365 may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents might occur due to malicious actor, or by an unaware employee. Office 365 also features a productivity boost by providing a large third-party app eco-system which introduces the risk of malicious apps or use of apps with excessive permissions.
+As a major productivity suite providing cloud file storage, collaboration, BI, and CRM tools, Office 365 enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Office 365 may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents might occur due to malicious actor, or by an unaware employee. Office 365 also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
 
-Connecting Office 365 to Cloud App Security gives you improved insights into your users’ activities, provides threat detection using machine learning based anomaly detections and information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
+Connecting Office 365 to Cloud App Security gives you improved insights into your users’ activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
 Using the Office 365 connector provides protection for the following products:
 
