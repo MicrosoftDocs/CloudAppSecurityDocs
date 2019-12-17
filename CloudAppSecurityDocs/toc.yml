@@ -53,6 +53,28 @@
     items:
     - name: Protect AWS
       href: protect-aws.md
+    - name: Protect Azure
+      href: protect-azure.md
+    - name: Protect Box
+      href: protect-box.md
+    - name: Protect Dropbox
+      href: protect-dropbox.md
+    - name: Protect GCP
+      href: protect-gcp.md
+    - name: Protect G Suite
+      href: protect-gsuite.md
+    - name: Protect Office 365
+      href: protect-o365.md
+    - name: Protect Okta
+      href: protect-okta.md
+    - name: Protect Salesforce
+      href: protect-salesforce.md
+    - name: Protect ServiceNow
+      href: protect-servicenow.md
+    - name: Protect Webex
+      href: protect-wbex.md
+    - name: Protect Workday
+      href: protect-workday.md
 - name: How-to guides
   items:
   - name: Basic set up
