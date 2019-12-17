@@ -42,7 +42,7 @@ If you have a list of apps you want to sanction or unsanction, use the checkbox 
 To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
-> If your tenant uses Zscaler NSS, iboss, or Microsoft Defender Advanced Threat Protection (ATP), any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrating with Zscaler](zscaler-integration.md), [Integrate Cloud App Security with iboss](iboss-integration.md) and [Integrate with Microsoft Defender ATP](wdatp-integration.md) respectively.
+> If your tenant uses Microsoft Defender Advanced Threat Protection (ATP), Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrate with Microsoft Defender ATP](wdatp-integration.md), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
 
 ## Export a block script to govern discovered apps
 
