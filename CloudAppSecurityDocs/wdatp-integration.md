@@ -35,9 +35,9 @@ Cloud App Security uses the traffic information collected by Microsoft Defender 
 
 The integration doesn't require any additional deployment and works out of the box. You don't need to route or mirror traffic from your endpoints or do complex integration steps. Logs from your endpoints sent to Cloud App Security provide user information for traffic activities. Microsoft Defender ATP network activity provides device context. Pairing device context with the username provides a full picture across your network enabling you to determine which user did which activity from which machine.
 
-Once activity information is collected, you are ready to [deep dive into cloud app use](discovered-apps.md#deep-dive-into-discovered-apps) in your organization. Cloud App Security takes advantage of Microsoft Defender ATP Network Protection capabilities to block endpoint device access to cloud apps. You can block apps by [tagging them as **Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) in the portal. Based on the comprehensive usage and risk assessment of each unsanctioned app, the app's domains are used to create [domain indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) in the Microsoft Defender ATP portal. Windows Defender Antivirus, running on endpoint devices, uses the domain indicators block access to these apps.
-
 Additionally, when you identify a risky user, you can check all the machines the user accessed to detect potential risks. If you identify a risky machine, check all the users who used it to detect further potential risks.
+
+Once traffic information is collected, you are ready to [deep dive into cloud app use](discovered-apps.md#deep-dive-into-discovered-apps) in your organization. Cloud App Security takes advantage of Microsoft Defender ATP Network Protection capabilities to block endpoint device access to cloud apps. You can block apps by [tagging them as **Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) in the portal. Based on the comprehensive usage and risk assessment of each unsanctioned app, the app's domains are used to create [domain indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) in the Microsoft Defender ATP portal. Windows Defender Antivirus, running on endpoint devices, uses the domain indicators to block access to these apps.
 
 > [!NOTE]
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
@@ -119,13 +119,13 @@ Use the following steps to enable access control for cloud apps:
 
 1. In Cloud App Security, go to **Settings** > **Cloud app control**, and then select **Block unsanctioned apps**.
 
-    // IMAGE PLACEHOLDER
+    ![Screenshot showing how to enable blocking with Microsoft Defender ATP](media/defender-atp-integration.png)
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
     This will allow you to leverage Windows Defender Antivirus network protection capabilities to block access to a predefined set of URL using Cloud App Security [app tags](governance-discovery.md#BKMK_SanctionApp) or an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
-    // IMAGE PLACEHOLDER
+    ![Screenshot showing how to enable custom network indicators in Microsoft Defender ATP](media/defender-atp-custom-network-indicators.png)
 
 ## Investigate unsanctioned apps in Microsoft Defender Security Center
 
@@ -133,7 +133,7 @@ Every attempt to access an unsanctioned app triggers an alert in Microsoft Defen
 
 Sometimes, access to an unsanctioned app is not blocked, either because the endpoint device is not configured correctly or if the enforcement policy has not yet propagated to the endpoint. In this instance, Microsoft Defender ATP admins will receive an alert in Microsoft Defender Security Center that the unsanctioned app was not blocked.
 
-// IMAGE PLACEHOLDER
+![Screenshot showing Microsoft Defender ATP unsanctioned app alert](media/defender-atp-unsanctioned-app-alert.png)
 
 > [!NOTE]
 > Notes:
