@@ -64,7 +64,7 @@
     - name: Protect G Suite
       href: protect-gsuite.md
     - name: Protect Office 365
-      href: protect-o365.md
+      href: protect-office-365.md
     - name: Protect Okta
       href: protect-okta.md
     - name: Protect Salesforce
@@ -72,7 +72,7 @@
     - name: Protect ServiceNow
       href: protect-servicenow.md
     - name: Protect Webex
-      href: protect-wbex.md
+      href: protect-webex.md
     - name: Protect Workday
       href: protect-workday.md
 - name: How-to guides
