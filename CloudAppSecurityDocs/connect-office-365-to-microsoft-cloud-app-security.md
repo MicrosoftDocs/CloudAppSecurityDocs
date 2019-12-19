@@ -30,9 +30,9 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Microsoft Office 365 account using the app connector API.  This connection gives you visibility into and control over Office 365 use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Microsoft Office 365 account using the app connector API. This connection gives you visibility into and control over Office 365 use. For information about how Cloud App Security protects Office 365, see [Protect Office 365](protect-office-365.md).
   
-Cloud App Security supports the legacy Office 365 Dedicated Platform as well as the latest offerings of Office 365 services (commonly referred as the vNext release family of Office 365).  Cloud App Security doesn't support the Legacy Microsoft Business Productivity Online Standard Suite (BPOS). 
+Cloud App Security supports the legacy Office 365 Dedicated Platform as well as the latest offerings of Office 365 services (commonly referred as the vNext release family of Office 365).  Cloud App Security doesn't support the Legacy Microsoft Business Productivity Online Standard Suite (BPOS).
 
 > [!NOTE]
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
@@ -40,16 +40,17 @@ Cloud App Security supports the legacy Office 365 Dedicated Platform as well as 
 Cloud App Security supports the following Office 365 apps:
 
 - Office 365
-- SharePoint
-- OneDrive
-- Teams (only appears after activities from Teams are detected in the portal)
-- Power BI (only appears after activities from Power BI are detected in the portal, and requires you to turn on auditing)
+- Dynamics 365 CRM
 - Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
-- Dynamics 365
+- OneDrive
+- Power BI (only appears after activities from Power BI are detected in the portal, and requires you to turn on auditing)
+- SharePoint
+- Teams (only appears after activities from Teams are detected in the portal)
 
 ## How to connect Office 365 to Cloud App Security  
 
 > [!NOTE]
+>
 >- You must have at least one assigned Office 365 license to connect Office 365 to Cloud App Security.
 >- To enable monitoring of Office 365 activities in Cloud App Security, you are required to enable auditing in the [Office Security and Compliance Center](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
 >- Exchange administrator audit logging, which is enabled by default in Office 365, logs an event in the Office 365 audit log when an administrator (or a user who has been assigned administrative privileges) makes a change in your Exchange Online organization. Changes made using the Exchange admin center or by running a cmdlet in Windows PowerShell are logged in the Exchange admin audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
@@ -60,13 +61,13 @@ Cloud App Security supports the following Office 365 apps:
 >- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Azure AD settings and use of the **Suspend user** governance action is reverted.
 >- For Azure AD sign-in activities, Cloud App Security only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Noninteractive sign-in activities may be viewed in the Azure AD audit log.
 
-1. In **Connected apps** page, click the plus button and select **Office 365**.  
+1. In **Connected apps** page, click the plus button and select **Office 365**.
 
-      ![connect 0365](media/connect-0365.png) 
+    ![connect 0365](media/connect-0365.png)
 
 2. In the Office 365 pop-up, click **Connect Office 365**.
 
-      ![connect 0365](media/office-connect.png) 
+    ![connect 0365](media/office-connect.png)
 
 3. After Office 365 is displayed as successfully connected, click **Close**.
 
