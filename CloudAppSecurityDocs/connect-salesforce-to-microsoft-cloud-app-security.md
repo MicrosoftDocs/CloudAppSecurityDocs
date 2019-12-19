@@ -30,7 +30,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft  Cloud App Security to your existing Salesforce account using the app connector API. This connection gives you visibility into and control over Salesforce use.
+This article provides instructions for connecting Microsoft  Cloud App Security to your existing Salesforce account using the app connector API. This connection gives you visibility into and control over Salesforce use. For information about how Cloud App Security protects Salesforce, see [Protect Salesforce](protect-salesforce.md).
 
 ## How to connect Salesforce to Cloud App Security
 
