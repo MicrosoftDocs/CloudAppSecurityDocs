@@ -5,7 +5,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/20/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -19,19 +19,20 @@ ms.custom: seodec18
 # Azure Advanced Threat Protection integration
 
 *Applies to: Microsoft Cloud App Security*
-
-Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md) For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
+git
+Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md). For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
 ## Prerequisites
 
 For complete user investigation across a hybrid environment, you must have:
 
 - A valid license for Azure ATP connected to your Active Directory instance
-- You must be a global admin to enable integration between Azure ATP and Microsoft Cloud App Security
-- If do not have Azure ATP, try it now
+- You must be a Azure Active Directory global admin to enable integration between Azure ATP and Cloud App Security
 
->[!NOTE]
->If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
+> [!NOTE]
+>
+> - If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use Cloud App Security to get Azure ATP insights.
+> - Azure ATP administrators may require new permissions to access Cloud App Security. To learn how to assign permissions to Cloud App Security, see [Manage admin access](manage-admins.md).
 
 ## Enable Azure Advanced Threat Protection
 
@@ -39,7 +40,7 @@ To enable Cloud App Security integration with Azure ATP:
 
 1. In Cloud App Security, under the settings cog, select **Settings**.
 
-   ![Settings menu](media/azip-system-settings.png)
+    ![Settings menu](media/azip-system-settings.png)
 
 1. Under **Threat Protection**, select **Azure ATP**.
 
