@@ -137,8 +137,8 @@ The log collector is now able to communicate with Cloud App Security. After send
 1. In a text editor, open the *server-install\conf\server\secured-installed.properties* file, and then add the following lines of code, and the save the changes:
     1. Specify the new Java KeyStore password for the server: `server.keystore.password=newStorePassword`
 
-    > [!NOTE]
-    > The `javax.net.ssl.trustStorePassword property` takes precedence over the     `secured-server.keystore.password property`. If it is present in file, update its password with this code: `javax.net.ssl.trustStorePassword=newpassword`. This property applies to all relevant KeyStores.
+        > [!NOTE]
+        > The `javax.net.ssl.trustStorePassword property` takes precedence over the     `secured-server.keystore.password property`. If it is present in file, update its password with this code: `javax.net.ssl.trustStorePassword=newpassword`. This property applies to all relevant KeyStores.
 
     1. Specify the new Certificate password for the server: `server.key.password=newKeyPassword`
 1. Start the server.
