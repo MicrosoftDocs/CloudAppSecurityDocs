@@ -64,16 +64,16 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-2. From the bash inside the container, go to the Java jre directory. To avoid a version related path error, use this command:
+2. From the bash inside the container, go to the Java *jre* folder. To avoid a version related path error, use this command:
 
     ```bash
     cd 'find /opt/jdk/*/jre -iname bin'
     ```
 
-3. Import the root certificate that you copied earlier, from the *discovery* folder into the Java keystore and define a password. The default password is "changeit":
+3. Import the root certificate that you copied earlier, from the *discovery* folder into the Java KeyStore and define a password. The default password is "changeit". For information about changing the password, see [How to change the Java KeyStore password](#how-to-change-the-java-keystore-password).
 
     ```bash
-    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass <password>
     ```
 
 4. Validate that the certificate was imported correctly into the CA keystore, by using the following command to search for the alias you provided during the import (*SelfSignedCert*):
@@ -108,6 +108,40 @@ The log collector is now able to communicate with Cloud App Security. After send
 
 >[!NOTE]
 > If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Cloud App Security portal.
+
+## How to change the Java KeyStore password
+
+1. Stop the Java KeyStore server.
+1. Open a bash shell inside the container and go to the *appdata/conf* folder.
+1. Change the server KeyStore password by using this command:
+
+    ```bash
+    keytool -storepasswd -new newStorePassword -keystore server.keystore
+    -storepass changeit
+    ```
+
+    > [!NOTE]
+    >
+    > - The default server password is *changeit*.
+    > - The keytool application is included in the Java developer kit and is not part of IBM® UrbanCode™ Deploy.
+
+1. Change the certificate password by using this command:
+
+    ```bash
+    keytool -keypasswd -alias server -keypass changeit -new newKeyPassword -keystore server.keystore -storepass newStorePassword
+    ```
+
+    > [!NOTE]
+    > The default server alias is *server*.
+
+1. In a text editor, open the *server-install\conf\server\secured-installed.properties* file, and then add the following lines of code, and the save the changes:
+    1. Specify the new Java KeyStore password for the server: `server.keystore.password=newStorePassword`
+
+    > [!NOTE]
+    > The `javax.net.ssl.trustStorePassword property` takes precedence over the     `secured-server.keystore.password property`. If it is present in file, update its password with this code: `javax.net.ssl.trustStorePassword=newpassword`. This property applies to all relevant KeyStores.
+
+    1. Specify the new Certificate password for the server: `server.key.password=newKeyPassword`
+1. Start the server.
 
 ## Next steps
 
