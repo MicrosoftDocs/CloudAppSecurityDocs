@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/12/2019
+ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -111,7 +111,7 @@ Cloud App Security uses the built-in [**Unsanctioned**](governance-discovery.md#
 
 ### How it works
 
-Apps marked as **Unsanctioned** in the Cloud App Security portal are automatically synced to Microsoft Defender ATP within a few minutes. More specifically, the domains used by these unsanctioned apps are propagated to the endpoint devices to be blocked by Windows Defender Antivirus within the Network Protection SLA (see notes for more details).
+Apps marked as **Unsanctioned** the Cloud App Security are automatically synced to Microsoft Defender ATP, usually within a few minutes. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Windows Defender Antivirus within the Network Protection SLA.
 
 ### How to enable app blocking with Microsoft Defender ATP
 
@@ -123,20 +123,19 @@ Use the following steps to enable access control for cloud apps:
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
-    This will allow you to leverage Windows Defender Antivirus network protection capabilities to block access to a predefined set of URL using Cloud App Security [app tags](governance-discovery.md#BKMK_SanctionApp) or an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
+    This allows you to leverage Windows Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Cloud App Security [app tags](governance-discovery.md#BKMK_SanctionApp) or using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
     ![Screenshot showing how to enable custom network indicators in Microsoft Defender ATP](media/defender-atp-custom-network-indicators.png)
 
 ## Investigate unsanctioned apps in Microsoft Defender Security Center
 
-Every attempt to access an unsanctioned app triggers an alert in Microsoft Defender Security Center with in-depth details about the entire session. This enables you to perform a deeper investigation into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
+Every attempt to access an unsanctioned app triggers an alert in Microsoft Defender Security Center with in-depth details about the entire session. This enables you to perform deeper investigations into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
 
-Sometimes, access to an unsanctioned app is not blocked, either because the endpoint device is not configured correctly or if the enforcement policy has not yet propagated to the endpoint. In this instance, Microsoft Defender ATP admins will receive an alert in Microsoft Defender Security Center that the unsanctioned app was not blocked.
+Sometimes, access to an unsanctioned app is not blocked, either because the endpoint device is not configured correctly or if the enforcement policy has not yet propagated to the endpoint. In this instance, Microsoft Defender ATP administrators will receive an alert in Microsoft Defender Security Center that the unsanctioned app was not blocked.
 
 ![Screenshot showing Microsoft Defender ATP unsanctioned app alert](media/defender-atp-unsanctioned-app-alert.png)
 
 > [!NOTE]
-> Notes:
 >
 > - It takes up to two hours after you tag an app as **Unsanctioned** for app domains to propagate to endpoint devices.
 > - By default, apps and domains marked as **Unsanctioned** in Cloud App Security, will be blocked for all endpoint devices in the organization.
