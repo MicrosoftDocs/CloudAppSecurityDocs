@@ -121,9 +121,7 @@ The log collector is now able to communicate with Cloud App Security. After send
     ```
 
     > [!NOTE]
-    >
-    > - The default server password is *changeit*.
-    > - The keytool application is included in the Java developer kit and is not part of IBM® UrbanCode™ Deploy.
+    > The default server password is *changeit*.
 
 1. Change the certificate password by using this command:
 
@@ -134,12 +132,8 @@ The log collector is now able to communicate with Cloud App Security. After send
     > [!NOTE]
     > The default server alias is *server*.
 
-1. In a text editor, open the *server-install\conf\server\secured-installed.properties* file, and then add the following lines of code, and the save the changes:
+1. In a text editor, open the *server-install\conf\server\secured-installed.properties* file, and then add the following lines of code, and then save the changes:
     1. Specify the new Java KeyStore password for the server: `server.keystore.password=newStorePassword`
-
-        > [!NOTE]
-        > The `javax.net.ssl.trustStorePassword property` takes precedence over the     `secured-server.keystore.password property`. If it is present in file, update its password with this code: `javax.net.ssl.trustStorePassword=newpassword`. This property applies to all relevant KeyStores.
-
     1. Specify the new Certificate password for the server: `server.key.password=newKeyPassword`
 1. Start the server.
 
