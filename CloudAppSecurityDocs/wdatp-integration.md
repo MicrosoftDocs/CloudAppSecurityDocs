@@ -111,9 +111,9 @@ Cloud App Security uses the built-in [**Unsanctioned**](governance-discovery.md#
 
 ### How it works
 
-Apps marked as **Unsanctioned** the Cloud App Security are automatically synced to Microsoft Defender ATP, usually within a few minutes. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Windows Defender Antivirus within the Network Protection SLA.
+Apps marked as **Unsanctioned** in Cloud App Security are automatically synced to Microsoft Defender ATP, usually within a few minutes. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Windows Defender Antivirus within the Network Protection SLA.
 
-### How to enable app blocking with Microsoft Defender ATP
+### How to enable cloud app blocking with Microsoft Defender ATP
 
 Use the following steps to enable access control for cloud apps:
 
@@ -123,7 +123,7 @@ Use the following steps to enable access control for cloud apps:
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
-    This allows you to leverage Windows Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Cloud App Security [app tags](governance-discovery.md#BKMK_SanctionApp) or using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
+    This allows you to leverage Windows Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Cloud App Security, either by manually assigning [app tags](governance-discovery.md#BKMK_SanctionApp) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
     ![Screenshot showing how to enable custom network indicators in Microsoft Defender ATP](media/defender-atp-custom-network-indicators.png)
 
