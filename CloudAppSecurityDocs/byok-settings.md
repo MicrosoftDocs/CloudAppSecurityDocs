@@ -18,109 +18,100 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft’s Cloud App Security encrypts data at rest for all new tenants as of {Date place holder}.
+**// OVERVIEW:** PMs to provide. Affects all content in this section and BYOK section
 
-Any data which resides in Cloud App Security for more than 48 hours will be encrypted.
+Microsoft’s Cloud App Security encrypts data at rest for all new tenants as of **{Date place holder}**.
 
-## Bring Your Own Key (BYOK)
+Any data that resides in Cloud App Security for more than 48 hours will be encrypted.
 
-It is possible to encrypt the data with your own key which is managed in your Azure Key Vault.
+Bring your own key (BYOK) allows you to encrypt data using your own key that you manage in your Azure Key Vault.
 
-Note: Currently, BYOK is not supported if your Azure Key Vault uses a firewall.
+## Set up your Azure Key Vault key
 
-## Setting up a designated Key Vault in Azure Key Vault
+1. [Create a new Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key-vault).
 
-1. Create new Key Vault in your Azure Key Vault
+1. Create an access policy, fill out the following information, and then click **Add**.
+    1. Click **Key permissions** and choose the following permissions from the dropdown menu:
 
-1. Create an access policy and set the following parameters:
-    1. Set Key permissions: Keys/Wrap, Keys/Unwrap, Keys/List
-        1. Key management operations:
-            1. List
-        1. Cryptographic operations:
-            1. Wrap key
-            1. Unwrap key
-    1. Principal: ??? @Yahav Amsalem What should be put here?
+        | Section | Required permissions |
+        | --- | --- |
+        | Key Management Operations | - List |
+        | Cryptographic Operations | - Wrap key<br />- Unwrap key |
 
-1. Create a new Key
-    1. Set permitted operations:
-        1. Wrap key
-        1. Unwrap key
+        ![Screenshot showing the selection of key permissions](media/byok-kv-access-policy-key-perms.PNG)
 
-1. Copy key URI
+    2. Principal: **// TBD**
 
-1. [Set up **soft-delete** behavior for your Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#soft-delete-behavior)
+        ![Screenshot showing add access policy page](media/byok-kv-add-access-policy.PNG)
 
-1. [Set up **no purge** behavior for your Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#purge-protection)
+1. [Create a new Key](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
+    1. Under **Permitted operations**, select the following options:
 
-## Enabling BYOK in MCAS
+        - Wrap key
+        - Unwrap key
 
-Enabling BYOK will use the provided key to encrypt your data at rest. It is important to maintain the designated Key Vault and Key state to enable a successful encryption process.
+    2. Under **Key Identifier**, copy the URI. You'll need this later.
 
-You can choose to setup the BYOK with a specific key version or version-less key.
+    ![Screenshot showing key settings page](media/byok-kv-key-perms.PNG)
 
-To enable the BYOK:
+1. [Set up the **soft-delete** behavior for your Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#soft-delete-behavior).
 
-1. Go to Settings page
+1. [Set up the **no purge** behavior for your Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#purge-protection).
 
-1. Click on the Data Encryption – BYOK tab
+1. Optionally, if using a firewall for a selected network, configure the following firewall settings to give Cloud App Security access the specified key, and then click **Save**:
+    1. Make sure no virtual networks are selected.
+    1. Add the following IP addresses: // Require list of MCAS IP addresses
 
-1. Enable the BYOK by moving the toggle and verify the requirements
+    ![Screenshot showing firewall configuration](media/byok-kv-firewall.PNG)
 
-1. Paste the URI from the Key Vault
+## Enable data encryption in Cloud App Security
 
-1. Once validation completes, Save the settings.
+When you enable data encryption, Cloud App Security immediately uses your Azure Key Vault key to encrypt data at rest. Since your key is essential to the encryption process, it is important to ensure that your designated Key Vault and Key are accessible at all times.
 
-## Disabling BYOK in MCAS
+You can choose to set up data encryption with an unversioned key or a specific key version.
 
-Disabling BYOK encryption, will remove your encryption from the data. The data will remain encrypted by Microsoft managed keys.
+### To enable the data encryption
 
-To disable BYOK:
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
 
-1. Go to setting page
+1. Click the **Data encryption** tab.
 
-1. Click on the Data Encryption – BYOK tab
+1. Click **Enable data encryption**.
 
-1. Disable the BYOK by moving the toggle and verify the implications
+1. In the **Azure Key Vault key URI** box, paste the URI value you copied earlier.
+
+1. Once the URI validation has completed, click **Enable**.
+
+## Disable data encryption in Cloud App Security
+
+When you disable data encryption, Cloud App Security removes your encryption from the data. However, your data remains encrypted by Cloud App Security's managed keys.
+
+### To disable the data encryption
+
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
+
+1. Click the **Data encryption** tab.
+
+1. Click **Disable data encryption**.
 
 ## Key roll handling
 
 ### Using versioned key
 
-### Using un-versioned key
+### Using unversioned key
 
-## BYOK - Encryption failure handling
+## How to handle data encryption failures
 
-In the following scenarios, Cloud App Security will fail to encrypt your data and will start a tenant shut-down process within an hour – access to the tenant will be blocked. Once failure reason is handled, the tenant will become available again.
+In the event of there being a problem with accessing your Azure Key Vault key, Cloud App Security will fail to encrypt your data and your tenant's lockdown process will be initiated within the hour. Once your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored.
 
-### Missing Key Vault permissions
+The following table lists the possible scenarios that can cause the data encryption to fail and the steps you can take to resolve them:
 
-Make sure the selected Key Vault has the following key permissions in the access policy:
-
-- Key management operations:
-  - List
-- Cryptographic operations:
-  - Wrap key
-  - Unwrap key
-
-### Missing Key permissions
-
-Make sure the selected Key has the following permitted operations:
-
-- Wrap key
-- Unwrap key
-
-### Encryption Key has expired
-
-Make sure the selected key expiration date has no passed.
-
-### Encryption key has an activation set for a later time
-
-While setting up the BYOK, make sure the selected key activation time is prior to the current time.
-
-### Azure Key Vault firewall blocks access to the encryption key
-
-TBD
-
-### Encryption key not found or deleted
-
-Verify the key is available in your Key Vault – if key was disabled or deleted, please recover it and re-enable so Cloud App Security can continue with the encryption process.
+| Scenario | Steps |
+| --- | --- |
+| <a name="missing-kv-permissions"></a>**Missing Key Vault permissions** | In the selected Key Vault, under access policy, make sure that the following key permissions are selected:<br />Under **Key management operations**<br />- List<br />Under **Cryptographic operations**<br />- Wrap key<br />- Unwrap key |
+| <a name="firewall-block"></a>**Azure Key Vault firewall blocking access to key** | In the selected Key Vault, make sure that the filewall is configured with the following IP addresses: // Require list of MCAS IP addresses |
+| <a name="missing-key-permissions"></a>**Missing key permissions** | In the selected key, make sure that the following operations are permitted:<br />- Wrap key<br />- Unwrap key |
+| <a name="key-not-enabled"></a>**Encryption key is not enabled** | In the selected key, make sure that enabled is turned on. ![Screenshot showing key enable option](media/byok-kv-key-enabled.PNG) |
+| <a name="key-not-active"></a>**Encryption key is not active** | In the selected key, make sure that the activation date and time is prior to the current date and time. ![Screenshot showing key activation date](media/byok-kv-key-activation-date.PNG) |
+| <a name="key-expired"></a>**Encryption key has expired** | In the selected key, make sure that the expiration date and time has not passed. ![Screenshot showing key expiration date](media/byok-kv-key-expiration-date.PNG) |
+| <a name="key-not-found"></a>**Encryption key not found or deleted** | Verify that the selected key exists in your Key Vault. If key was deleted, recover and enable it again. If the key was moved to another Key Vault, move it back to this Key Vault. |
