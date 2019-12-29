@@ -39,7 +39,6 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
 |![logo EU model clauses](media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
 |![logo privacy shield](media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft complies with this framework for protecting personal data transferred from the EU to the US.|
-|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|
 |![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
 |![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
 |![logo iso 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft is certified for its implementation of these information security management standards.|
@@ -48,6 +47,8 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo SOC](media/soc-logo.png)|[SOC 1 and SOC 2 Type 2 Reports](https://www\.microsoft\.com/trustcenter/compliance/soc)|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo SOC](media/soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo g-cloud](media/g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
+
+<!--|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|-->
 
 For more information, go to [Microsoft Compliance Offerings](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) and select Cloud App Security.  
 
@@ -98,7 +99,7 @@ The following table show what data is surfaced for each product integration:
 | Microsoft Threat Protection | Alerts and user activities | Enabled in MTP [need to validate] |
 | Azure Sentinel | Alerts and discovery data | Enabled in Sentinel |
 | Office Security and Compliance Center | Alerts for O365 | Automatically streamed to Office Security and Compliance Center |
-| Azure Security Center | Alerts for Azure | Automatically streamed to ASC |
+| Azure Security Center (ASC) | Alerts for Azure | Automatically streamed to ASC |
 | Microsoft Security Graph API | Alerts | Available via API |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | Configured in Cloud App Security |
 
