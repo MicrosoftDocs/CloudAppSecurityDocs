@@ -18,13 +18,13 @@ ms.collection: M365-security-compliance
 
 *Applies to: Microsoft Cloud App Security*
 
-**// TBD OVERVIEW:** PMs to provide. Affects all content in this section and BYOK section
+**// TBD OVERVIEW:** PMs to provide. Affects all content in this section.
 
-Microsoft’s Cloud App Security encrypts data at rest for all new tenants as of **{Date place holder}**.
+// Microsoft’s Cloud App Security encrypts data at rest for all new tenants as of **{Date place holder}**.
 
-Any data that resides in Cloud App Security for more than 48 hours will be encrypted.
+// Any data that resides in Cloud App Security for more than 48 hours will be encrypted.
 
-Bring your own key (BYOK) allows you to encrypt data using your own key that you manage in your Azure Key Vault.
+// Bring your own key (BYOK) allows you to encrypt data using your own key that you manage in your Azure Key Vault.
 
 ## Set up your Azure Key Vault key
 
@@ -47,7 +47,7 @@ Bring your own key (BYOK) allows you to encrypt data using your own key that you
 1. [Create a new key](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
 
     > [!NOTE]
-    > You can set up data encryption with an unversioned key or a specific key version. **// Do we have any additional info to provide the user? Maybe a link that explains the implications of each option?**
+    > You can set up data encryption with an unversioned key or a specific key version.<br />**// TBD: Do we have any additional info to provide the user? Maybe a link that explains the implications of each option?**
 
     1. Under **Permitted operations**, select the following options:
 
@@ -86,7 +86,7 @@ When you enable data encryption, Cloud App Security immediately uses your Azure 
 
 ## Disable data encryption in Cloud App Security
 
-When you disable data encryption, Cloud App Security removes your encryption from the data. However, your data remains encrypted by Cloud App Security's managed keys. **// Do we have any more info on this to clarify this for the user?**
+When you disable data encryption, Cloud App Security removes your encryption from the data. However, your data remains encrypted by Cloud App Security's managed keys.<br />**// TBD: Do we have any more info on this to clarify this for the user?**
 
 ### To disable data encryption
 
@@ -117,7 +117,7 @@ The following table lists the possible scenarios that can cause data encryption 
 | Scenario | Actions |
 | --- | --- |
 | <a name="missing-kv-permissions"></a>**Missing Key Vault permissions** | In the selected Key Vault, under access policy, make sure that the following key permissions are selected:<br />Under **Key management operations**<br />- List<br />Under **Cryptographic operations**<br />- Wrap key<br />- Unwrap key |
-| <a name="firewall-block"></a>**Azure Key Vault firewall blocking access to key** | In the selected Key Vault, make sure that the filewall is configured with the following IP addresses: **// Require list of MCAS IP addresses** |
+| <a name="firewall-block"></a>**Azure Key Vault firewall blocking access to key** | In the selected Key Vault, make sure that the filewall is configured with the following IP addresses:<br />**// Require list of MCAS IP addresses** |
 | <a name="missing-key-permissions"></a>**Missing key permissions** | In the selected key, make sure that the following operations are permitted:<br />- Wrap key<br />- Unwrap key<br /> |
 | <a name="key-not-enabled"></a>**Encryption key is not enabled** | In the selected key, make sure that the key is enabled.<br />![Screenshot showing key enable option](media/byok-kv-key-enabled.PNG) |
 | <a name="key-not-active"></a>**Encryption key is not active** | In the selected key, make sure that the activation date and time is prior to the current date and time.<br />![Screenshot showing key activation date](media/byok-kv-key-activation-date.PNG) |
