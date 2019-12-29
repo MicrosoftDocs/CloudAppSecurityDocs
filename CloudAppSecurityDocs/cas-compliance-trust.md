@@ -99,7 +99,7 @@ The following table show what data is surfaced for each product integration:
 | Microsoft Threat Protection | Alerts and user activities | Enabled in MTP [need to validate] |
 | Azure Sentinel | Alerts and discovery data | Enabled in Sentinel |
 | Office Security and Compliance Center | Alerts for O365 | Automatically streamed to Office Security and Compliance Center |
-| Azure Security Center (ASC) | Alerts for Azure | Automatically streamed to ASC |
+| Azure Security Center | Alerts for Azure | Automatically streamed to Azure Security Center |
 | Microsoft Security Graph API | Alerts | Available via API |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | Configured in Cloud App Security |
 
