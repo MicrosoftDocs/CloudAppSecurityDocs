@@ -44,10 +44,10 @@ Bring your own key (BYOK) allows you to encrypt data using your own key that you
 
         ![Screenshot showing add access policy page](media/byok-kv-add-access-policy.PNG)
 
-1. [Create a new Key](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
+1. [Create a new key](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
 
     > [!NOTE]
-    > You can set up data encryption with an unversioned key or a specific key version.
+    > You can set up data encryption with an unversioned key or a specific key version. **// Do we have any additional info to provide the user? Maybe a link that explains the implications of each option?**
 
     1. Under **Permitted operations**, select the following options:
 
@@ -70,7 +70,7 @@ Bring your own key (BYOK) allows you to encrypt data using your own key that you
 
 ## Enable data encryption in Cloud App Security
 
-When you enable data encryption, Cloud App Security immediately uses your Azure Key Vault key to encrypt data at rest. Since your key is essential to the encryption process, it is important to ensure that your designated Key Vault and Key are accessible at all times.
+When you enable data encryption, Cloud App Security immediately uses your Azure Key Vault key to encrypt data at rest. Since your key is essential to the encryption process, it is important to ensure that your designated Key Vault and key are accessible at all times.
 
 ### To enable data encryption
 
@@ -86,7 +86,7 @@ When you enable data encryption, Cloud App Security immediately uses your Azure 
 
 ## Disable data encryption in Cloud App Security
 
-When you disable data encryption, Cloud App Security removes your encryption from the data. However, your data remains encrypted by Cloud App Security's managed keys.
+When you disable data encryption, Cloud App Security removes your encryption from the data. However, your data remains encrypted by Cloud App Security's managed keys. **// Do we have any more info on this to clarify this for the user?**
 
 ### To disable data encryption
 
@@ -110,16 +110,16 @@ When you disable data encryption, Cloud App Security removes your encryption fro
 
 ## How to handle data encryption failures
 
-If there is a problem with accessing your Azure Key Vault key, Cloud App Security will fail to encrypt your data and your tenant will be lock down within an hour. When your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored.
+If there is a problem accessing your Azure Key Vault key, Cloud App Security will fail to encrypt your data and your tenant will be lock down within an hour. When your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored.
 
-The following table lists the possible scenarios that can cause the data encryption to fail and the actions you can take to resolve them:
+The following table lists the possible scenarios that can cause data encryption to fail and the actions you can take to resolve them:
 
-| Scenario | Action |
+| Scenario | Actions |
 | --- | --- |
 | <a name="missing-kv-permissions"></a>**Missing Key Vault permissions** | In the selected Key Vault, under access policy, make sure that the following key permissions are selected:<br />Under **Key management operations**<br />- List<br />Under **Cryptographic operations**<br />- Wrap key<br />- Unwrap key |
-| <a name="firewall-block"></a>**Azure Key Vault firewall blocking access to key** | In the selected Key Vault, make sure that the filewall is configured with the following IP addresses: // Require list of MCAS IP addresses |
+| <a name="firewall-block"></a>**Azure Key Vault firewall blocking access to key** | In the selected Key Vault, make sure that the filewall is configured with the following IP addresses: **// Require list of MCAS IP addresses** |
 | <a name="missing-key-permissions"></a>**Missing key permissions** | In the selected key, make sure that the following operations are permitted:<br />- Wrap key<br />- Unwrap key<br /> |
-| <a name="key-not-enabled"></a>**Encryption key is not enabled** | In the selected key, make sure that enabled is turned on.<br />![Screenshot showing key enable option](media/byok-kv-key-enabled.PNG) |
+| <a name="key-not-enabled"></a>**Encryption key is not enabled** | In the selected key, make sure that the key is enabled.<br />![Screenshot showing key enable option](media/byok-kv-key-enabled.PNG) |
 | <a name="key-not-active"></a>**Encryption key is not active** | In the selected key, make sure that the activation date and time is prior to the current date and time.<br />![Screenshot showing key activation date](media/byok-kv-key-activation-date.PNG) |
 | <a name="key-expired"></a>**Encryption key has expired** | In the selected key, make sure that the expiration date and time has not passed.<br />![Screenshot showing key expiration date](media/byok-kv-key-expiration-date.PNG) |
-| <a name="key-not-found"></a>**Encryption key not found or deleted** | Verify that the selected key exists in your Key Vault. If key was deleted, recover and enable it again. If the key was moved to another Key Vault, move it back to this Key Vault. |
+| <a name="key-not-found"></a>**Encryption key not found or deleted** | Verify that the selected key exists in your Key Vault. If key was deleted, recover and enable it again. If the key was moved to another Key Vault, move it back to the selected Key Vault. |
