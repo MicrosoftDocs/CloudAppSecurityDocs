@@ -6,6 +6,8 @@
     href: what-is-cloud-app-security.md
   - name: Cloud App Security data security and privacy
     href: cas-compliance-trust.md
+  - name: Encrypt data at rest with your own key
+    href: encrypt-data-with-own-key.md
   - name: What's new?
     href: release-notes.md
   - name: Compare
@@ -278,6 +280,8 @@
       href: troubleshooting-siem.md
     - name: Troubleshooting policies
       href: troubleshoot-policies.md
+    - name: Troubleshooting data encryption
+      href: troubleshoot-data-encryption.md
 - name: Resources
   items:
   - name: Watch our webinars
