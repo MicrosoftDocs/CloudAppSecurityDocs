@@ -49,6 +49,32 @@
     href: risk-score.md
   - name: Working with discovered apps
     href: discovered-apps.md
+  - name: Working with connected apps
+    items:
+    - name: Protect AWS
+      href: protect-aws.md
+    - name: Protect Azure
+      href: protect-azure.md
+    - name: Protect Box
+      href: protect-box.md
+    - name: Protect Dropbox
+      href: protect-dropbox.md
+    - name: Protect GCP
+      href: protect-gcp.md
+    - name: Protect G Suite
+      href: protect-gsuite.md
+    - name: Protect Office 365
+      href: protect-office-365.md
+    - name: Protect Okta
+      href: protect-okta.md
+    - name: Protect Salesforce
+      href: protect-salesforce.md
+    - name: Protect ServiceNow
+      href: protect-servicenow.md
+    - name: Protect Webex
+      href: protect-webex.md
+    - name: Protect Workday
+      href: protect-workday.md
 - name: How-to guides
   items:
   - name: Basic set up

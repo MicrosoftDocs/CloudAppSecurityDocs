@@ -59,9 +59,9 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
 - In the Cloud App Security console, go to the App catalog or Discovered apps.
 
-- In the list of apps, on the row in which the app you want to tag as sanctioned appears, choose the three dots at the end of the row ![Tag as sanctioned dots](./media/sanction-three-dots.png "Tag as sanctioned dots") and choose **Mark as sanctioned**.
+- In the list of apps, on the row in which the app you want to tag as sanctioned appears, choose the three dots at the end of the row ![Tag as sanctioned dots](media/sanction-three-dots.png "Tag as sanctioned dots") and choose **Mark as sanctioned**.
 
-    ![Tag as sanctioned](./media/mark-as-sanctioned.png "tag as sanctioned")
+    ![Tag as sanctioned](media/mark-as-sanctioned.png "tag as sanctioned")
 
 ## Use the investigation tools
 
@@ -117,7 +117,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     - How many users have deployed them? How common are these apps in general?
 
-    ![App dashboard](./media/investigate-app.png "investigate app")
+    ![App dashboard](media/investigate-app.png "investigate app")
 
 5. Go to the **Cloud Discovery dashboard** and check the following items:
 
@@ -147,7 +147,7 @@ Let's say that you assume you don't have any access to your cloud environment by
 
 5. Under **Activities matching all of the following**, choose **+** to add a filter. Scroll down to **IP tag**, and then choose **Tor**.
 
-    ![Example policy for risky IPs](./media/example-policy-risky-ips.png "example policy risky ips")
+    ![Example policy for risky IPs](media/example-policy-risky-ips.png "example policy risky ips")
 
 Now that you have the policy in place, you're surprised to see that you get an alert that the policy was violated.
 

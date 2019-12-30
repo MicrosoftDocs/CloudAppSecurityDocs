@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 
 
 
@@ -32,14 +31,10 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
-[« PREVIOUS: How to create a session policy](session-policy-aad.md)<br>
-[NEXT: Explore popular use cases »](use-case-proxy-block-session-aad.md)
-
-Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate. 
+Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate.
 
 > [!NOTE]
-> Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities. 
+> Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities.
 
 ## Prerequisites to using access policies
 
@@ -54,50 +49,51 @@ Microsoft Cloud App Security access policies enable real-time monitoring and con
 
 Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. To set up a conditional access policy in Azure AD, follow this procedure:
 
-1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the app you want to control with Conditional Access App Control. 
+1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the app you want to control with Conditional Access App Control.
 
-   > [!NOTE]
-   > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy. 
+    > [!NOTE]
+    > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
 
 2. Route users to Microsoft Cloud App Security by selecting the **Use Conditional Access App Control enforced restrictions** under **Session**.
- 
-## Create a Cloud App Security access policy 
+
+## Create a Cloud App Security access policy
 
 To create a new access policy, follow this procedure:
 
 1. In the portal, select **Control** followed by **Policies**.
-2. In the **Policies** page, click **Create policy** and select **Access policy**.  
+2. In the **Policies** page, click **Create policy** and select **Access policy**.
 
 3. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
 
-4. In the **Activities matching all of the following** section, Under **Activity source**, select additional activity filters to apply to the policy. Filters include the following options: 
-     
-   - **Device tags**: Use this filter to identify unmanaged devices.
+4. In the **Activities matching all of the following** section, Under **Activity source**, select additional activity filters to apply to the policy. Filters include the following options:
 
-   - **Location**: Use this filter to identify unknown (and therefore risky) locations. 
+    - **Device tags**: Use this filter to identify unmanaged devices.
 
-   - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags. 
+    - **Location**: Use this filter to identify unknown (and therefore risky) locations.
 
-   - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal. The values should be tested against your mobile and desktop apps for each cloud app.
-  
-5. Under **Actions**, select one of the following options: 
+    - **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags.
+
+    - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal. The values should be tested against your mobile and desktop apps for each cloud app.
+
+5. Under **Actions**, select one of the following options:
 
     - **Allow**: Set this action to explicitly allow access according to the policy filters you set.
 
-    - **Block**: Set this action to explicitly block access according to the policy filters you set. 
+    - **Block**: Set this action to explicitly block access according to the policy filters you set.
 
 6. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
 
+## Next steps
 
+> [!div class="nextstepaction"]
+> [Blocking downloads on unmanaged devices using session controls](use-case-proxy-block-session-aad.md)
 
->[!div class="step-by-step"]
-[« PREVIOUS: How to create a session policy](session-policy-aad.md)<br>
-[NEXT: Explore popular use cases »](use-case-proxy-block-session-aad.md)
+## See also
 
- 
-## Next steps  
-[Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control capabilities](use-case-proxy-block-session-aad.md)   
+> [!div class="nextstepaction"]
+> [How to create an session policy](session-policy-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+> [!div class="nextstepaction"]
+> [Explore popular use cases »](use-case-proxy-block-session-aad.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

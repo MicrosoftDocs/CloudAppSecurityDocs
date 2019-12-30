@@ -7,15 +7,12 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/11/2019
+ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
-
-
 
 # optional metadata
 
@@ -32,25 +29,28 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security integrates with Microsoft Defender Advanced Threat Protection (ATP) natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network, and enables machine-based investigation. [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) is a security platform for intelligent protection, detection, investigation, and response. Microsoft Defender ATP protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
+Microsoft Cloud App Security integrates with Microsoft Defender Advanced Threat Protection (ATP) natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network, and enables machine-based investigation. [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) is a security platform for intelligent protection, detection, investigation, and response. Microsoft Defender ATP protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
-Microsoft Cloud App Security uses the traffic information collected by Microsoft Defender ATP about the cloud apps and services being accessed from IT-managed Windows 10 machines. The integration enables you to run Cloud Discovery on any machine in the corporate network, using public wifi, while roaming and over remote access. It also enables machine-based investigation.
+Cloud App Security uses the traffic information collected by Microsoft Defender ATP about the cloud apps and services being accessed from IT-managed Windows 10 machines. The native integration enables you to run Cloud Discovery on any machine in the corporate network, using public Wi-Fi, while roaming, and over remote access. It also enables machine-based investigation.
 
-After you identify a risky user, you can check all the machines the user accessed to detect potential risks. If you identify a risky machine, check all the users who used it to detect potential risks. Logs from your endpoints routed to Cloud App Security provide user information for traffic activities. Microsoft Defender ATP network activity provides device context. Pair device context with the username to provide a full picture across your network of which user did which activity from which machine.
+The integration doesn't require any additional deployment and works out of the box. You don't need to route or mirror traffic from your endpoints or do complex integration steps. Logs from your endpoints sent to Cloud App Security provide user information for traffic activities. Microsoft Defender ATP network activity provides device context. Pairing device context with the username provides a full picture across your network enabling you to determine which user did which activity from which machine.
 
-Microsoft Cloud App Security uses the native integration with Microsoft Defender ATP to tap into data about cloud app and service traffic from managed Windows devices. The integration doesn't require any additional deployment and works out of the box. You don't need to route or mirror traffic from your endpoints or do complex integration steps.
+Additionally, when you identify a risky user, you can check all the machines the user accessed to detect potential risks. If you identify a risky machine, check all the users who used it to detect further potential risks.
+
+Once traffic information is collected, you are ready to [deep dive into cloud app use](discovered-apps.md#deep-dive-into-discovered-apps) in your organization. Cloud App Security takes advantage of Microsoft Defender ATP Network Protection capabilities to block endpoint device access to cloud apps. You can block apps by [tagging them as **Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) in the portal. Based on the comprehensive usage and risk assessment of each unsanctioned app, the app's domains are used to create [domain indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview) in the Microsoft Defender ATP portal. Windows Defender Antivirus, running on endpoint devices, uses the domain indicators to block access to these apps.
 
 > [!NOTE]
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
->
-
 
 ## Prerequisites
 
 - Microsoft Cloud App Security license
 - Microsoft Defender ATP license
 - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 versions
-- Toggle on **Preview features** to enable this feature in Cloud App Security
+- Windows Defender Antivirus
+  - [real-time protection enabled](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+  - [cloud-delivered protection enabled](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+  - [Network protection enabled and configured to block mode](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
 ## How it works
 
@@ -60,7 +60,7 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 
 ## How to integrate Microsoft Defender ATP with Cloud App Security
 
-To enable integration with Cloud App Security from Microsoft Defender ATP:
+To enable Microsoft Defender ATP integration with Cloud App Security:
 
 1. In the Microsoft Defender ATP portal, from the navigation pane, select **Preferences setup**.
 2. In the **Settings** menu, under **General**, select **Advanced features**.
@@ -71,7 +71,7 @@ To enable integration with Cloud App Security from Microsoft Defender ATP:
 > It takes up to two hours after you enable the integration for the data to show up in Cloud App Security.
 >
 
-   ![WD ATP settings](./media/wdatp-settings.png)
+![WD ATP settings](media/wdatp-settings.png)
 
 ## Investigate machines in Cloud App Security
 
@@ -79,35 +79,77 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
 
 1. In the Cloud App Security portal, click **Cloud Discovery** and then **Cloud Discovery dashboard**.
 2. In the top navigation bar, under **Continuous reports**, select **Win10 endpoint users**.
-  ![WD ATP report](./media/win10-dashboard-report.png)
+  ![WD ATP report](media/win10-dashboard-report.png)
 3. Across the top, you'll see the number of discovered machines added after the integration.
 4. Click the **Machines** tab.
 5. You can drill down into each machine that's listed, and use the tabs to view the investigation data. Find correlations between the machines, the users, IP addresses, and apps that were involved in incidents:
-   - **Overview**
-      - Transactions: Information about the number of transactions that took place on the machine over the selected period of time.
-      - Total traffic: Information about the total amount of traffic (in MB) over the selected period of time.
-     - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
-     - Downloads: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
-   - **Discovered apps**<br>
+
+    - **Overview**
+        - Transactions: Information about the number of transactions that took place on the machine over the selected period of time.
+        - Total traffic: Information about the total amount of traffic (in MB) over the selected period of time.
+        - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
+        - Downloads: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
+    - **Discovered apps**  
   Lists all the discovered apps that were accessed by the machine.
-   - **User history**<br>
+    - **User history**  
     Lists all the users who signed in to the machine.
-   - **IP address history**<br>
+    - **IP address history**  
     Lists all the IP addresses that were assigned to the machine.
- ![Machines overview](./media/machines-overview.png)
- 
-As with any other Cloud Discovery source, you can export the data from the Win10 endpoint users report for further investigation. 
+ ![Machines overview](media/machines-overview.png)
+
+As with any other Cloud Discovery source, you can export the data from the Win10 endpoint users report for further investigation.
 
 > [!NOTE]
-> - Defender ATP forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
-> - If the 4 MB limit isn't reached within 1 hour, Defender ATP reports all the transactions performed over the last hour.
+>
+> - Microsoft Defender ATP forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
+> - If the 4 MB limit isn't reached within 1 hour, Microsoft Defender ATP reports all the transactions performed over the last hour.
+> - If the endpoint device is behind a forward proxy, the volume of traffic won't be visible to Microsoft Defender ATP and hence will not be included in Cloud Discovery reports. For more information, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
-## Related Videos
+## Block access to unsanctioned cloud apps
 
-[Shadow IT discovery beyond the corporate network with Microsoft Defender ATP and Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+Cloud App Security uses the built-in [**Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) app tag to mark cloud apps as prohibited for use, available in both the Cloud Discovery and Cloud app catalog pages. By enabling the integration with Microsoft Defender ATP, you can seamlessly block access to unsanctioned apps with a single click in the Cloud App Security portal.
 
-## Next steps 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md) 
+### How it works
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+Apps marked as **Unsanctioned** in Cloud App Security are automatically synced to Microsoft Defender ATP, usually within a few minutes. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Windows Defender Antivirus within the Network Protection SLA.
+
+### How to enable cloud app blocking with Microsoft Defender ATP
+
+Use the following steps to enable access control for cloud apps:
+
+1. In Cloud App Security, go to **Settings** > **Cloud app control**, and then select **Block unsanctioned apps**.
+
+    ![Screenshot showing how to enable blocking with Microsoft Defender ATP](media/defender-atp-integration.png)
+
+1. In Microsoft Defender Security Center, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
+
+    This allows you to leverage Windows Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Cloud App Security, either by manually assigning [app tags](governance-discovery.md#BKMK_SanctionApp) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
+
+    ![Screenshot showing how to enable custom network indicators in Microsoft Defender ATP](media/defender-atp-custom-network-indicators.png)
+
+## Investigate unsanctioned apps in Microsoft Defender Security Center
+
+Every attempt to access an unsanctioned app triggers an alert in Microsoft Defender Security Center with in-depth details about the entire session. This enables you to perform deeper investigations into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
+
+Sometimes, access to an unsanctioned app is not blocked, either because the endpoint device is not configured correctly or if the enforcement policy has not yet propagated to the endpoint. In this instance, Microsoft Defender ATP administrators will receive an alert in Microsoft Defender Security Center that the unsanctioned app was not blocked.
+
+![Screenshot showing Microsoft Defender ATP unsanctioned app alert](media/defender-atp-unsanctioned-app-alert.png)
+
+> [!NOTE]
+>
+> - It takes up to two hours after you tag an app as **Unsanctioned** for app domains to propagate to endpoint devices.
+> - By default, apps and domains marked as **Unsanctioned** in Cloud App Security, will be blocked for all endpoint devices in the organization.
+> - Currently, full URLs are not supported for unsanctioned apps. Therefore, when unsanctioning apps configured with full URLs, they are not propagated to Microsoft Defender ATP and will not be blocked. For example, `google.com/drive` is not supported, while `drive.google.com` is supported.
+> - In-browser notifications may vary between different browsers.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

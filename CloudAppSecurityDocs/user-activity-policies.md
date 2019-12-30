@@ -42,7 +42,7 @@ To create a new activity policy, follow this procedure:
 
 2. Click **Create policy** and select **Activity policy**.
 
-     ![activity policy menu](./media/activity-policy-menu.png)
+     ![activity policy menu](media/activity-policy-menu.png)
 
 3. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
@@ -61,17 +61,17 @@ Take a look at these examples:
 
 - Multiple failed logins
 
-     You can set policy so that you receive an alert when a large number of failed logins within a short time period occurs. To configure this sort of policy, choose the appropriate activity filter in the **New Activity Policy** page.
+    You can set policy so that you receive an alert when a large number of failed logins within a short time period occurs. To configure this sort of policy, choose the appropriate activity filter in the **New Activity Policy** page.
 
-     Beneath the **Activity filters** field, configure the parameters for which the alert will be triggered.
+    Beneath the **Activity filters** field, configure the parameters for which the alert will be triggered.
 
-     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")
+    ![Policy example for multiple failed sign-in attempts](media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")
 
 - High download rate
 
-     You can set your policy so that you receive an alert when there has been an unexpected or uncharacteristic level of downloading activity. To configure this sort of policy, under **Rate** parameters, choose the parameters to trigger the alert.
+    You can set your policy so that you receive an alert when there has been an unexpected or uncharacteristic level of downloading activity. To configure this sort of policy, under **Rate** parameters, choose the parameters to trigger the alert.
 
-     ![high download rate example](./media/high-download-rate-example.png "high download rate example")
+    ![high download rate example](media/high-download-rate-example.png "high download rate example")
 
 ## Activity policy reference
 
@@ -90,6 +90,7 @@ Each policy is composed of the following parts:
 
 ## Next steps
 
-[Data protection policies](data-protection-policies.md)
+> [!div class="nextstepaction"]
+> [Data protection policies](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

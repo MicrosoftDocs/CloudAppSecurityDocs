@@ -13,7 +13,6 @@ ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 
 # optional metadata
 
@@ -37,12 +36,11 @@ This article provides instructions and a link to get to the Cloud App Security s
 You can check the current Microsoft Cloud App Security service status by:
 
 - Going [status.cloudappsecurity.com](https://status.cloudappsecurity.com).
-- Clicking on **Help**>**System status** directly from within the portal.
+- Clicking on **Help** > **System status** directly from within the portal.
 
 ## Next steps
- 
-[Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)   
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+> [!div class="nextstepaction"]
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

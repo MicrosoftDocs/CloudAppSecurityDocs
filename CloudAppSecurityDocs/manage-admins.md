@@ -7,13 +7,12 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/6/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
 ms.technology:
-ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 
 # optional metadata
 
@@ -39,6 +38,10 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
 - **Global administrator and Security administrator:** Admins with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions.
 
 - **Compliance administrator:** Has read-only permissions and can manage alerts. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
+
+- **Compliance data administrator:** Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports.
+
+- **Security operator:** Has read-only permissions and can manage alerts.
 
 - **Security reader:** Has read-only permissions and can manage alerts. The Security reader is restricted from doing the following actions:
 
@@ -111,19 +114,19 @@ For example, if you want to assign Stephanie, who is a Security reader in Azure 
 
 You can add additional admins to Cloud App Security without adding users to Azure Active Directory administrative roles. To add additional admins, perform the following steps:
 
-   >[!IMPORTANT]
-   > Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
+> [!IMPORTANT]
+> Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
 
-1. Click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and then **Manage admin access**.
+1. Click the settings cog ![settings icon](media/settings-icon.png "settings icon") and then **Manage admin access**.
 
 2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
-  
-   ![add admins](./media/add-admin.png)
+
+    ![add admins](media/add-admin.png)
 
 3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, or **App/Instance admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
-     >[!NOTE]
-      >Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
+    >[!NOTE]
+    >Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
 
 4. Click **Add admin**.
 
@@ -145,8 +148,9 @@ Cloud App Security enables you to invite external Managed Security Service Provi
 
 To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
-![choose tenant](./media/choose-tenant.png "choose tenant")
+![choose tenant](media/choose-tenant.png "choose tenant")
 
 ## Next steps  
 
-[Set up Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Set up Cloud Discovery](set-up-cloud-discovery.md)

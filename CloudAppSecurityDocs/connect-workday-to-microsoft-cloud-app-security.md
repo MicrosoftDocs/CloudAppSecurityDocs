@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use. For information about how Cloud App Security protects Workday, see [Protect Workday](protect-workday.md).
 
 ## Prerequisites
 
@@ -112,6 +112,7 @@ For more information about setting up Workday integration users, security groups
 
 ## Next steps
 
-[Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

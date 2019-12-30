@@ -24,7 +24,7 @@ This article prohvides a list of possible Conditional Access App Control issues 
 
 ### The sign in to the app is not working
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Click **Nonce-handling** to expand the section and then select **Enable nonce handling**.
 
@@ -56,6 +56,7 @@ The following steps are based on using Fiddler as the traffic logging tool. The 
 
 ## Next steps
 
-[Deploy Cloud Discovery](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Deploy Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
