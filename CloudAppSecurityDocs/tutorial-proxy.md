@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Protect any app in use in your organization in real time
+title: Protect any apps in use in your organization in real time
 description: This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data.
 author: shsagir
 ms.author: shsagir
@@ -15,7 +15,7 @@ ms.date: 8/19/2019
 ms.collection: M365-security-compliance
 ---
 
-# Tutorial: Protect any app in use in your organization in real time
+# Tutorial: Protect any apps in use in your organization in real time
 
 *Applies to: Microsoft Cloud App Security*
 
