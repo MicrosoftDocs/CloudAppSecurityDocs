@@ -86,34 +86,6 @@ Microsoft Cloud App Security currently operates in datacenters in the United Sta
 
 [Learn more about privacy](https://www\.microsoft\.com/trustcenter/privacy)
 
-### Data sharing with other products
-
-Cloud App Security provides you with the convenience of working with some data, such as alerts and activities, without disrupting your usual security workflow. For example, SecOps may prefer to view alerts in their preferred SIEM product such as [Azure Sentinel](siem-sentinel.md). To enable such workflows, when integrating with Microsoft or non-Microsoft products, Cloud App Security exposes some data through them.
-
-The following table show what data is surfaced for each product integration:
-
-#### Microsoft products
-
-| Product | Exposed data | Integration control |
-| --- | --- | --- |
-| Microsoft Threat Protection | Alerts and user activities | Enabled in MTP [need to validate] |
-| Azure Sentinel | Alerts and discovery data | Enabled in Sentinel |
-| Office Security and Compliance Center | Alerts for O365 | Automatically streamed to Office Security and Compliance Center |
-| Azure Security Center | Alerts for Azure | Automatically streamed to Azure Security Center |
-| Microsoft Security Graph API | Alerts | Available via API |
-| Microsoft Power Automate | Alerts sent to trigger an automated flow | Configured in Cloud App Security |
-
-#### Non-Microsoft products
-
-| Product | Exposed data | Integration control |
-| --- | --- | --- |
-| Based on SIEM agent | Alerts and events | Enabled and configured in Cloud App Security |
-| Based on MCAS REST API | Alerts and events | Enabled and configured in Cloud App Security |
-| ICAP connector | File for DLP scan | Enabled and configured in Cloud App Security |
-
-> [!NOTE]
-> Other products may not enforce Cloud App Security role-based security permissions to control who has access to what data. Therefore, before integrating with other products, make sure you understand what data is sent to the product you want to use and who has access to it.
-
 ## Transparency
 
 Microsoft provides transparency about its practices:
@@ -140,6 +112,34 @@ Microsoft Cloud App Security retains data as follows:
 You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www\.microsoft\.com/trustcenter/about/transparency)
+
+### Data flow
+
+Cloud App Security provides you with the convenience of working with some data, such as alerts and activities, without disrupting your usual security workflow. For example, SecOps may prefer to view alerts in their preferred SIEM product such as [Azure Sentinel](siem-sentinel.md). To enable such workflows, when integrating with Microsoft or third-party products, Cloud App Security exposes some data through them.
+
+The following table show what data is surfaced for each product integration:
+
+#### Microsoft products
+
+| Product | Exposed data | Configuration |
+| --- | --- | --- |
+| Microsoft Threat Protection | Alerts and user activities | Enabled in Microsoft Threat Protection [need to validate] |
+| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) |
+| Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
+| Azure Security Center | Alerts for Azure | Automatically streamed to Azure Security Center |
+| Microsoft Security Graph API | Alerts | Available via API |
+| Microsoft Power Automate | Alerts sent to trigger an automated flow | Configured in Cloud App Security |
+
+#### Third-party products
+
+| Integration type | Exposed data | Configuration |
+| --- | --- | --- |
+| Using a SIEM agent | Alerts and events | Enabled and configured in Cloud App Security |
+| Using Cloud App Security's REST API | Alerts and events | Enabled and configured in Cloud App Security |
+| ICAP connector | File for DLP scan | Enabled and configured in Cloud App Security |
+
+> [!NOTE]
+> Other products may not enforce Cloud App Security role-based security permissions to control who has access to what data. Therefore, before integrating with other products, make sure you understand what data is sent to the product you want to use and who has access to it.
 
 ### Deleting personal data
 
