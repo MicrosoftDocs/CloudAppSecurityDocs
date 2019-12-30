@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Protect your organization in real time
+title: Protect any app in use in your organization in real time
 description: This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data.
 author: shsagir
 ms.author: shsagir
@@ -15,7 +15,7 @@ ms.date: 8/19/2019
 ms.collection: M365-security-compliance
 ---
 
-# Tutorial: Protect your organization from any app in real time
+# Tutorial: Protect any app in use in your organization in real time
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -28,7 +28,6 @@ This tutorial provides instructions for using access and session controls to mon
 > * Monitor user activities for anomalies
 > * Protect your data when it’s exfiltrated
 > * Prevent unprotected data from being uploaded to your apps
-> * Enforce adaptive access controls to manage user actions in real time
 
 ## How to protect your organization from any app in real time
 
@@ -47,8 +46,7 @@ Use this process to roll out real-time controls in your organization.
 
 1. **Monitor and assess**: In Cloud App Security, use the [Activity Log](activity-filters.md) to monitor and characterize app use in your environment, and understand their risks. You can narrow the scope of activities listed by using [search, filters, and queries](activity-filters-queries.md) to quickly identify risky activities.
 
-### Phase 2: Protect your data when it’s infiltrated
-<!--Protect your data when it’s exfiltrated to unmanaged devices or by guest users-->
+### Phase 2: Protect your data when it’s exfiltrated
 
 A primary concern for many organizations is how to prevent data exfiltration before it happens. Two of the biggest risks are unmanaged devices (that may not be protected with a pin or may contain malicious apps) and guest users where your IT department has little visibility and control.
 
