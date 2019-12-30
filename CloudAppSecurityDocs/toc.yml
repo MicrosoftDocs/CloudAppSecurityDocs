@@ -281,7 +281,7 @@
     - name: Troubleshooting policies
       href: troubleshoot-policies.md
     - name: Troubleshooting data encryption
-      href: troubleshoot-data-encryption.md
+      href: troubleshooting-data-encryption.md
 - name: Resources
   items:
   - name: Watch our webinars
