@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/8/2019
+ms.date: 12/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -30,6 +30,14 @@ ms.custom: seodec18
 *Applies to: Microsoft Cloud App Security*
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use. For information about how Cloud App Security protects Workday, see [Protect Workday](protect-workday.md).
+
+## Quick start
+
+Watch our quick start video showing how to configure the prerequisites and perform the steps in Workday. Once you've completed the steps in the video, you can proceed to [add the Workday connector](#add-connector).
+
+<br />
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n1ZO]
 
 ## Prerequisites
 
@@ -85,7 +93,7 @@ For more information about setting up Workday integration users, security groups
 
     ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
 
-1. In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
+1. <a name="add-connector"></a>In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
 
 1. In the **App connectors** page, click the plus button and then **Workday**.
 
