@@ -123,20 +123,20 @@ The following table show what data is surfaced for each product integration:
 
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
-| Microsoft Threat Protection | Alerts and user activities | Enabled in Microsoft Threat Protection [need to validate] |
+| Microsoft Threat Protection | Alerts and user activities | Enabled automatically on Microsoft Threat Protection upon onboarding |
 | Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) |
 | Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
-| Azure Security Center | Alerts for Azure | Automatically streamed to Azure Security Center |
-| Microsoft Security Graph API | Alerts | Available via API |
-| Microsoft Power Automate | Alerts sent to trigger an automated flow | Configured in Cloud App Security |
+| Azure Security Center | Alerts for Azure | Enabled by default in Cloud App Security; can be disabled in Azure Security Center |
+| Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](https://docs.microsoft.com/graph/api/resources/security-api-overview) |
+| Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Cloud App Security](flow-integration.md) |
 
 #### Third-party products
 
 | Integration type | Exposed data | Configuration |
 | --- | --- | --- |
-| Using a SIEM agent | Alerts and events | Enabled and configured in Cloud App Security |
-| Using Cloud App Security's REST API | Alerts and events | Enabled and configured in Cloud App Security |
-| ICAP connector | File for DLP scan | Enabled and configured in Cloud App Security |
+| Using a SIEM agent | Alerts and events | [Enabled and configured in Cloud App Security](siem.md) |
+| Using Cloud App Security's REST API | Alerts and events | [Enabled and configured in Cloud App Security](api-tokens.md) |
+| ICAP connector | File for DLP scan | [Enabled and configured in Cloud App Security](icap-stunnel.md) |
 
 > [!NOTE]
 > Other products may not enforce Cloud App Security role-based security permissions to control who has access to what data. Therefore, before integrating with other products, make sure you understand what data is sent to the product you want to use and who has access to it.
