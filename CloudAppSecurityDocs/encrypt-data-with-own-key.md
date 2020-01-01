@@ -25,6 +25,22 @@ Cloud App Security takes your security and privacy seriously. Therefore, once Cl
 > [!IMPORTANT]
 > If there is a problem accessing your Azure Key Vault key, Cloud App Security will fail to encrypt your data and your tenant will be lock down within an hour. When your tenant is locked down, all access to it will be blocked until the cause has been resolved. Once your key is accessible again, full access to your tenant will be restored.
 
+## Prerequisites
+
+You must register your app
+
+### To install the app
+
+1. Install [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+
+1. Open a PowerShell terminal, run the following commands:
+
+    ``` Powershell
+    Connect-AzureAD
+    New-AzureADServicePrincipal -AppId df29d221-6835-4718-9d9b-fbef8e951827
+    Set-AzureADServicePrincipal -ObjectId 6df48023-381c-4587-85e2-467d67670e49  -AccountEnabled true
+    ```
+
 > [!NOTE]
 >
 > - Cloud App Security encrypts data at rest for all new tenants as of **//TBD: Yahav to provide {Date place holder}**.
