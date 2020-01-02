@@ -27,13 +27,13 @@ Cloud App Security takes your security and privacy seriously. Therefore, once Cl
 
 ## Prerequisites
 
-You must register your app
+You must register the **Microsoft Cloud App Security - BYOK** app in your portal with Azure Active Directory (Azure AD).
 
-### To install the app
+### To register the app
 
 1. Install [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
 
-1. Open a PowerShell terminal, run the following commands:
+1. Open a PowerShell terminal and run the following commands:
 
     ``` Powershell
     Connect-AzureAD
