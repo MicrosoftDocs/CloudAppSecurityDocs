@@ -27,7 +27,7 @@ Cloud App Security takes your security and privacy seriously. Therefore, once Cl
 
 ## Prerequisites
 
-You must register the **Microsoft Cloud App Security - BYOK** app in your portal with Azure Active Directory (Azure AD).
+You must register the **Microsoft Cloud App Security - BYOK** app in your tenant's Azure Active Directory (Azure AD).
 
 ### To register the app
 
