@@ -60,14 +60,16 @@ You must register the **Microsoft Cloud App Security - BYOK** app in your tenant
 
         ![Screenshot showing the selection of key permissions](media/byok-kv-access-policy-key-perms.PNG)
 
-    2. Principal: **// TBD: Yahav to provide**
+    2. Under **Select principal**, choose **Microsoft Cloud App Security - BYOK**.
 
         ![Screenshot showing add access policy page](media/byok-kv-add-access-policy.PNG)
 
-1. Create a [new key](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
+1. Create a [new RSA key](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
 
     > [!NOTE]
-    > You can set up data encryption with an unversioned key or a specific key version. For more information, see [About keys versioning](https://docs.microsoft.com/azure/key-vault/about-keys-secrets-and-certificates#objects-identifiers-and-versioning).
+    >
+    > - Only RSA keys are supported.
+    > - You can set up data encryption with an unversioned key or a specific key version. For more information, see [About keys versioning](https://docs.microsoft.com/azure/key-vault/about-keys-secrets-and-certificates#objects-identifiers-and-versioning).
 
     1. Under **Permitted operations**, select the following options:
 
