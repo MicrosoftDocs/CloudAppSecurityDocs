@@ -55,6 +55,8 @@ landingContent:
             url: tutorial-ueba.md
           - text: Investigate risky OAuth apps
             url: investigate-risky-oauth.md
+          - text: Protect any apps in your organization in real time
+            url: tutorial-proxy.md
           - text: Block download of sensitive information
             url: use-case-proxy-block-session-aad.md
           - text: Protect files with admin quarantine

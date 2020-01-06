@@ -31,6 +31,8 @@
     href: tutorial-ueba.md
   - name: Investigate risky OAuth apps
     href: investigate-risky-oauth.md
+  - name: Protect any apps in your organization in real time
+    href: tutorial-proxy.md
   - name: Block downloads of sensitive information
     href: use-case-proxy-block-session-aad.md
   - name: Protecting your files with admin quarantine
