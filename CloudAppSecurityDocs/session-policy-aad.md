@@ -116,7 +116,7 @@ If you don't want to notify the user that they're being monitored, you can disab
 
 2. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
 
-To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Cloud App Security URLs. For example, if the app returns a page with links whose domains ends with myapp.com, Conditional Access App Control replaces the links with domains ending with something like myapp.com.us.cas.ms. This way the entire session is monitored by Microsoft Cloud App Security.
+To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Cloud App Security URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like myapp.com.us.cas.ms. This way the entire session is monitored by Microsoft Cloud App Security.
 
 Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Cloud App Security Conditional Access App Control**, is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
 
