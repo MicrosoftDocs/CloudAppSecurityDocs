@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/13/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -152,7 +152,38 @@ Since you can add either or both of the connections, the steps in this article a
 
 ## How to connect AWS Security configuration to Cloud App Security
 
-Follow the [How to connect AWS Security auditing](#how-to-connect-aws-security-auditing-to-cloud-app-security) steps to get to the [permissions](#set-permissions) page.
+Connecting AWS Security configuration gives you insights into fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
+
+Follow these steps to connect AWS Security configuration to Cloud App Security.
+
+> [!div class="checklist"]
+>
+> - [Set up AWS Security Hub](#set-up-aws-security-hub)
+> - [Connect AWS Security configuration to Cloud App Security](#connect-aws-security-configuration-to-cloud-app-security)
+
+### Set up AWS Security Hub
+
+1. Enable [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/gs-console.html).
+1. Enable [AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html).
+1. Verify that there is data flowing to the Security Hub.
+
+    > [!NOTE]
+    > When you first enable Security Hub, it may take several hours for data to be available.
+
+> [!IMPORTANT]
+> If you are using an AWS master account, to view security recommendations for all regions, you must do the following:
+>
+> 1. Set up [AWS Security Hub](#set-up-aws-security-hub) for the master account and all regional accounts.
+> 1. Connect all regional accounts to the master account. For more information about connecting accounts, see [Master and Member Accounts in AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts.html).
+
+### Connect AWS Security configuration to Cloud App Security
+
+Before you can connect AWS security configuration, make sure that you have [set up your AWS environment](#set-up-aws-security-hub) to collect fundamental security and compliance recommendations.
+
+> [!IMPORTANT]
+> If you are using an [AWS master account](https://aws.amazon.com/security-hub/faqs/), to receive security configuration recommendations from all regions, use the steps in this section to first connect the master account, and then connect all the associated regional accounts.
+
+1. Follow the *How to connect AWS Security auditing* steps to get to the [permissions](#set-permissions) page.
 
 1. On the permissions page, click **Attach existing policies directly**, apply the **AWSSecurityHubReadOnlyAccess** and **SecurityAudit** policies, and then click **Next Tags**.
 
