@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/6/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -38,6 +38,10 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
 - **Global administrator and Security administrator:** Admins with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions.
 
 - **Compliance administrator:** Has read-only permissions and can manage alerts. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
+
+- **Compliance data administrator:** Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports.
+
+- **Security operator:** Has read-only permissions and can manage alerts.
 
 - **Security reader:** Has read-only permissions and can manage alerts. The Security reader is restricted from doing the following actions:
 

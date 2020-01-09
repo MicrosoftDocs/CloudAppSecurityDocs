@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing G Suite account using the connector APIs. This connection gives you visibility into and control over G Suite use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing G Suite account using the connector APIs. This connection gives you visibility into and control over G Suite use. For information about how Cloud App Security protects G Suite, see [Protect G Suite](protect-gsuite.md).
 
 ## Configure G Suite
 

@@ -33,7 +33,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Prerequisites
 
-* OS: **Windows 10** (fall creators update) or Windows Server **version 1709+**
+* OS: **Windows 10** (fall creators update), Windows Server **version 1709+** (SAC), or **Windows Server 2019 (LTSC)**
 
 * Disk space: 250 GB
 
