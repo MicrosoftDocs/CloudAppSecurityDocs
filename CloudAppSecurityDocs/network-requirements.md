@@ -65,6 +65,13 @@ For US Government GCC High customers, it's also necessary to add the following D
     *.portal.cloudappsecurity.us
     cdn.cloudappsecurity.com
 
+For Azure customers using NSG rules with the **MicrosoftCloudAppSecurity** [service tag](/azure/virtual-network/service-tags-overview), it's also necessary to add the following IP addresses:
+
+    <IP_PLACEHOLDER>
+    <IP_PLACEHOLDER>
+    <IP_PLACEHOLDER>
+    <IP_PLACEHOLDER>
+
 Additionally, the following items should be whitelisted, depending on which data center you use:
 > [!div class="mx-tableFixed"]
 >
