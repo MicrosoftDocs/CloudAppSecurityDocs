@@ -62,7 +62,7 @@ This method doesn't require you to install anything on the device making it idea
 
 ## Managed device identification
 
-Conditional Access App Control enables you to create policies that take into account whether a device is managed or not. To identify whether a device is managed or not, users can configure the service to check for:
+Conditional Access App Control enables you to create policies that take into account whether a device is managed or not. To identify the state of a device, you can configure access and session policies to check for:
 
 - Microsoft Intune (Intune) Compliant devices
 - Hybrid Azure AD joined devices
@@ -102,16 +102,18 @@ After the certificates are uploaded, you can create access and session policies 
 
 ## Supported apps and clients
 
-Session and access controls can be applied to any interactive sign in to any SAML and Open ID Connect cloud apps configured with single sign-on, along with cloud apps hosted on-premises configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
+Session and access controls can be applied to any interactive single sign-on, using SAML 2.0 or Open ID Connect authentication protocols. You can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
+
+Cloud App Security identifies Apps using information available in its Cloud App Catalog. Some organizations and users customize apps by adding plugins. However, in order for session controls to work correctly with these plugins, the associated custom domains must be added to the respective app in the catalog.
 
 > [!NOTE]
-> The Authenticator app, among other native client app sign in flows, uses a non-interactive sign in flow and cannot be used with access controls.
+> The Authenticator app, among other native client app sign-in flows, uses a non-interactive sign-in flow and cannot be used with access controls.
 
 ### Access controls
 
-Many organizations that choose to use session controls for cloud apps to control in-session activities, also apply access controls to block the same set of native mobile and desktop client apps, thereby enabling comprehensive security for the apps in use.
+Many organizations that choose to use session controls for cloud apps to control in-session activities, also apply access controls to block the same set of native mobile and desktop client apps, thereby providing comprehensive security for the apps.
 
-To block access to native mobile and desktop client apps, in access policies, set the **Client app** filter to **Mobile and desktop**.
+You can block access to native mobile and desktop client apps with access policies, by setting the **Client app** filter to **Mobile and desktop**. Some native client apps can be individually recognized, whilst others that are part of a suite of apps can only be identified as their top-level app. For example, apps like SharePoint Online can only be recognized by creating an access policy applied to Office 365 apps.
 
 > [!NOTE]
 > Unless the **Client app** filter is specifically set to **Mobile and desktop**, the resulting access policy will only apply to browser sessions. The reason for this is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter. Whilst most major browsers support performing a client certificate check, some mobile and desktop apps use built-in browsers that may not support this check. Therefore, using this filter can affect authentication for these apps.
@@ -119,13 +121,6 @@ To block access to native mobile and desktop client apps, in access policies, se
 ### Session controls
 
 **Session control is available for any browser on any major platform on any operating system**. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
-
-> [!NOTE]
-> Using the **Client app** filter in access policies can cause the resulting user session to be proxied by Cloud App Security.
->
-> In access policies, when using the **Client app** filter, it defaults to **Mobile and desktop**. This can cause the resulting user session to be proxied by Cloud App Security. To void this behavior, set the value to **Browser**.
->
-> By default, evaluating whether an app is mobile or desktop can cause the resulting user session to be proxied by Cloud App Security. To avoid this behavior, set the Client App filter in your Access policies to be equal to **Browser**.
 
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
@@ -180,6 +175,6 @@ If you're interested in a specific app being featured, [send us details about th
 > [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
-> [Deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+> [Deploy Conditional Access App Control for any app](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
