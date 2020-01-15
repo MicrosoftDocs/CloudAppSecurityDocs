@@ -173,7 +173,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
