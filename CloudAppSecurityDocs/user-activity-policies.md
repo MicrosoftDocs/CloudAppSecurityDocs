@@ -7,7 +7,7 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 01/12/2020
 
 # optional metadata
 
@@ -25,6 +25,9 @@ ms.custom: seodec18
 Activity policies allow you to enforce a wide range of automated processes using the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.
 
 After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.
+
+> [!NOTE]
+> Policies that trigger more than 50,000 matches per day, for 3 out of the last 7 days, are automatically disabled. You can try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider [saving them as queries](activity-filters-queries.md#activity-queries) instead.
 
 ## Custom alerts
 
