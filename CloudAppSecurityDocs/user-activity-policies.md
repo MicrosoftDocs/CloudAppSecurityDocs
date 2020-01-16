@@ -27,7 +27,7 @@ Activity policies allow you to enforce a wide range of automated processes using
 After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.
 
 > [!NOTE]
-> Policies that trigger more 50,000 matches per day, for 3 out of 7 the last days, are automatically disabled. You can try refining policies by adding additional filters, or if you are using policies for reporting purposes, consider [saving them as queries](activity-filters-queries.md#activity-queries) instead.
+> Policies that trigger more than 50,000 matches per day, for 3 out of the last 7 days, are automatically disabled. You can try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider [saving them as queries](activity-filters-queries.md#activity-queries) instead.
 
 ## Custom alerts
 
