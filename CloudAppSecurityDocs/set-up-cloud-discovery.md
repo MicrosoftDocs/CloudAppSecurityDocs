@@ -68,6 +68,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
+- Hillstone CloudEdge
 - iboss Secure Cloud Gateway
 - Juniper SRX
 - Juniper SSG
