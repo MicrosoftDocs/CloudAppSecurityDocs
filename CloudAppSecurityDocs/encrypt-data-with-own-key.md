@@ -29,6 +29,8 @@ Cloud App Security takes your security and privacy seriously. Therefore, once Cl
 
 You must register the **Microsoft Cloud App Security - BYOK** app in your tenant's Azure Active Directory (Azure AD).
 
+**//TBD: Need updated First party app name**
+
 ### To register the app
 
 1. Install [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
@@ -37,13 +39,17 @@ You must register the **Microsoft Cloud App Security - BYOK** app in your tenant
 
     ``` Powershell
     Connect-AzureAD
-    New-AzureADServicePrincipal -AppId df29d221-6835-4718-9d9b-fbef8e951827
-    Set-AzureADServicePrincipal -ObjectId 6df48023-381c-4587-85e2-467d67670e49  -AccountEnabled true
+    New-AzureADServicePrincipal -AppId 61fc00cf-6d25-4d73-ba42-77a7ecec2b31
+    Set-AzureADServicePrincipal -ObjectId <object_id> -AccountEnabled true
     ```
+
+    Where *<object_id>* is the object ID returned by the previous command (`New-AzureADServicePrincipal`).
+
+**//TBD: Need updated AppId**
 
 > [!NOTE]
 >
-> - Cloud App Security encrypts data at rest for all new tenants as of **//TBD: Yahav to provide {Date place holder}**.
+> - Cloud App Security encrypts data at rest for all new tenants.
 > - Any data that resides in Cloud App Security for more than 48 hours will be encrypted.
 
 ## Deploy your Azure Key Vault key
@@ -67,9 +73,7 @@ You must register the **Microsoft Cloud App Security - BYOK** app in your tenant
 1. Create a [new RSA key](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
 
     > [!NOTE]
-    >
-    > - Only RSA keys are supported.
-    > - You can set up data encryption with an unversioned key or a specific key version. For more information, see [About keys versioning](https://docs.microsoft.com/azure/key-vault/about-keys-secrets-and-certificates#objects-identifiers-and-versioning).
+    > Only RSA keys are supported.
 
     1. Under **Permitted operations**, select the following options:
 
@@ -80,13 +84,19 @@ You must register the **Microsoft Cloud App Security - BYOK** app in your tenant
 
     ![Screenshot showing key settings page](media/byok-kv-key-perms.PNG)
 
-1. Set up the [**soft-delete** behavior](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#soft-delete-behavior) for your Key Vault.
+1. Set up the [soft-delete behavior](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#soft-delete-behavior) for your Key Vault.
 
-1. Set up the [no **purge protection** behavior](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#purge-protection) for your Key Vault.
+1. Set up the [no purge protection behavior](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-soft-delete#purge-protection) for your Key Vault.
 
 1. Optionally, if using a firewall for a selected network, configure the following firewall settings to give Cloud App Security access to the specified key, and then click **Save**:
     1. Make sure no virtual networks are selected.
-    1. Add the following IP addresses: **// TBD: Yahav to provide. Require list of Cloud App Security IP addresses**
+    1. Add the following IP addresses:
+        - 13.66.200.132
+        - 23.100.71.251
+        - 40.78.82.214
+        - 51.105.4.145
+        - 52.166.166.111
+    1. Select **Allow trusted Microsoft services to bypass this firewall**.
 
     ![Screenshot showing firewall configuration](media/byok-kv-firewall.PNG)
 
@@ -96,13 +106,16 @@ When you enable data encryption, Cloud App Security immediately uses your Azure 
 
 ### To enable data encryption
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png) and select **Settings**.
 
 1. Select the **Data encryption** tab.
 
 1. Click **Enable data encryption**.
 
 1. In the **Azure Key Vault key URI** box, paste the key identifier URI value you copied earlier.
+
+    > [!NOTE]
+    > Cloud App Security always uses the latest key version, regardless of the key version specified by the URI.
 
 1. Once the URI validation has completed, click **Enable**.
 
@@ -113,15 +126,7 @@ When you enable data encryption, Cloud App Security immediately uses your Azure 
 
 ## Key roll handling
 
-**// TBD: Speak to Yahav**
-
-### Using versioned key
-
-**// TBD: Speak to Yahav**
-
-### Using unversioned key
-
-**// TBD: Speak to Yahav**
+Whenever you create new version of the key configured for data encryption, Cloud App Security automatically rolls to the latest version of the key.
 
 ## How to handle data encryption failures
 
