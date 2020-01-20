@@ -46,7 +46,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 * Virtualization on the operating system must be enabled with Hyper-V
 
 > [!IMPORTANT]
-> A user must be signed in for Docker to collect logs. We recommend advising your Docker user's to disconnect without signing out.
+> A user must be signed in for Docker to collect logs. We recommend advising your Docker users to disconnect without signing out.
 
 > [!NOTE]
 > If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
