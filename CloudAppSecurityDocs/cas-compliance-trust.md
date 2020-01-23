@@ -39,7 +39,6 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
 |![logo EU model clauses](media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
 |![logo privacy shield](media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft complies with this framework for protecting personal data transferred from the EU to the US.|
-|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|
 |![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
 |![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
 |![logo iso 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft is certified for its implementation of these information security management standards.|
@@ -48,6 +47,8 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo SOC](media/soc-logo.png)|[SOC 1 and SOC 2 Type 2 Reports](https://www\.microsoft\.com/trustcenter/compliance/soc)|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo SOC](media/soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo g-cloud](media/g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
+
+<!--|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|-->
 
 For more information, go to [Microsoft Compliance Offerings](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) and select Cloud App Security.  
 
@@ -104,16 +105,41 @@ Microsoft Cloud App Security enforces data protection during content inspection.
 Microsoft Cloud App Security retains data as follows:
 
 - Activity log: 180 days
-
 - Discovery data: 90 days
-
 - Alerts: 180 days
-
 - Governance log: 120 days
 
 You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www\.microsoft\.com/trustcenter/about/transparency)
+
+### Data flow
+
+Cloud App Security provides you with the convenience of working with some data, such as alerts and activities, without disrupting your usual security workflow. For example, SecOps may prefer to view alerts in their preferred SIEM product such as [Azure Sentinel](siem-sentinel.md). To enable such workflows, when integrating with Microsoft or third-party products, Cloud App Security exposes some data through them.
+
+The following table show what data is surfaced for each product integration:
+
+#### Microsoft products
+
+| Product | Exposed data | Configuration |
+| --- | --- | --- |
+| Microsoft Threat Protection | Alerts and user activities | Enabled automatically on Microsoft Threat Protection upon onboarding |
+| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) |
+| Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
+| Azure Security Center | Alerts for Azure | Enabled by default in Cloud App Security; can be disabled in Azure Security Center |
+| Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](https://docs.microsoft.com/graph/api/resources/security-api-overview) |
+| Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Cloud App Security](flow-integration.md) |
+
+#### Third-party products
+
+| Integration type | Exposed data | Configuration |
+| --- | --- | --- |
+| Using a SIEM agent | Alerts and events | [Enabled and configured in Cloud App Security](siem.md) |
+| Using Cloud App Security's REST API | Alerts and events | [Enabled and configured in Cloud App Security](api-tokens.md) |
+| ICAP connector | File for DLP scan | [Enabled and configured in Cloud App Security](icap-stunnel.md) |
+
+> [!NOTE]
+> Other products may not enforce Cloud App Security role-based security permissions to control who has access to what data. Therefore, before integrating with other products, make sure you understand what data is sent to the product you want to use and who has access to it.
 
 ### Deleting personal data
 
