@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/28/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -56,7 +56,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
 
     - There are three types of violations you'll need to deal with when investigating alerts:
 
-       - **Serious violations** - Serious violations require immediate response. <br />
+       - **Serious violations** - Serious violations require immediate response.  
      *Examples:*
          - For a suspicious activity alert, you might want to suspend the account until the user changes their password.
          - For a data leak you might want to restrict permissions or quarantine the file.
@@ -83,16 +83,15 @@ The following table provides a list of the types of alerts that can be triggered
 
 |Alert type|Description|Recommended resolution|
 |----------------|-----------------|----------------------------|
-|Activity policy violation|This type of alert is the result of a policy you created.|To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br /> If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|
-|File policy violation|This type of alert is the result of a policy you created.| To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br /> If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|
+|Activity policy violation|This type of alert is the result of a policy you created.|To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br />If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|
+|File policy violation|This type of alert is the result of a policy you created.| To work with this type of alert in bulk, we recommend that you work in the Policy center to mitigate them.<br /><br /> Fine-tune the policy to exclude noisy entities by adding more filters and more granular controls.<br /><br />If the policy is accurate, the alert is warranted, and it's a violation you want to stop immediately, consider adding automatic remediation in the policy.|
 |Compromised account|This type of alert is triggered when Cloud App Security identifies an account that was compromised. This means there's a very high probability that the account was used in an unauthorized way.|We recommend that you suspend the account until you can reach the user and make sure they change their password.|
 |Inactive account|This alert is triggered when an account hasn't been used in 60 days in one of your connected cloud apps.|Contact the user and the user's manager to determine  whether the account is still active. If not, suspend the user and terminate the license for the app.|
 |New admin user|Alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user. If they aren't, recommend revoking admin privileges to reduce exposure.|
 |New admin location|Alerts you to changes in your privileged accounts for connected apps.|Confirm that the sign-in from this anomalous location was legitimate. If it's not, recommend revoking admin permissions or suspending the account to reduce exposure.|
 |New location|An informative alert about access to a connected app from a new location, and it's triggered only once per country.|Investigate the specific user's activity.|
 |New discovered service|This alert is an alert about Shadow IT. A new app was detected by Cloud Discovery.|<ul><li>Assess the risk of the service based on the app catalog.</li><li>Drill down into the activity to understand usage patterns and prevalence.</li><li>Decide whether to sanction or unsanction the app.</li><br /></ul>For unsanctioned apps:<br /><br /><ul><li>You may want to block use in your proxy or firewall.</li><li>If you have an unsanctioned app and a sanctioned app in the same category, you can export a list of users of the unsanctioned app. Then, contact them to migrate them to the sanctioned app.</li></ul></li>|
-|Suspicious activity|This alert lets you know that anomalous activity has been detected that isn't aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|
-|Suspicious cloud use|This alert lets you know that anomalous activity has been detected that isn't aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br /> This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|
+|Suspicious activity|This alert lets you know that anomalous activity has been detected that isn't aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br />This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|
 |Use of personal account|This alert lets  you know that a new personal account has access to resources in your connected apps.|Remove the user's collaborations in the external account.|
 
 ## Next steps
