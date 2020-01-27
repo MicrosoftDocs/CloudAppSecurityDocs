@@ -163,11 +163,15 @@ It is important to educate users when they are in violation of a policy, so that
 
 For example, if a user uploads a file without an Azure Information Protection label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
 
->[!div class="step-by-step"]
+## Next steps
+
+>[!div class="nextstepaction"]
 > [« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+
+>[!div class="nextstepaction"]
 > [NEXT: How to create an access policy »](access-policy-aad.md)
 
-## Next steps
+## See also
 
 > [!div class="nextstepaction"]
 > [Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control](use-case-proxy-block-session-aad.md)
