@@ -163,6 +163,11 @@ Follow these steps to connect AWS Security configuration to Cloud App Security.
 
 ### Set up AWS Security Hub
 
+To view security recommendations for multiple regions, repeat the following steps for each relevant region.
+
+> [!NOTE]
+> If you are using a master account, repeat these steps to configure the master account and all connected member accounts across all relevant regions.
+
 1. Enable [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/gs-console.html).
 1. Enable [AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html).
 1. Verify that there is data flowing to the Security Hub.
@@ -170,18 +175,12 @@ Follow these steps to connect AWS Security configuration to Cloud App Security.
     > [!NOTE]
     > When you first enable Security Hub, it may take several hours for data to be available.
 
-> [!IMPORTANT]
-> If you are using an AWS master account, to view security recommendations for all regions, you must do the following:
->
-> 1. Set up [AWS Security Hub](#set-up-aws-security-hub) for the master account and all regional accounts.
-> 1. Connect all regional accounts to the master account. For more information about connecting accounts, see [Master and Member Accounts in AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts.html).
-
 ### Connect AWS Security configuration to Cloud App Security
 
 Before you can connect AWS security configuration, make sure that you have [set up your AWS environment](#set-up-aws-security-hub) to collect fundamental security and compliance recommendations.
 
-> [!IMPORTANT]
-> If you are using an [AWS master account](https://aws.amazon.com/security-hub/faqs/), to receive security configuration recommendations from all regions, use the steps in this section to first connect the master account, and then connect all the associated regional accounts.
+> [!NOTE]
+> If you are using an [AWS master account](https://aws.amazon.com/security-hub/faqs/), use the following steps to connect the master account. Connecting your master account allows you to receive recommendations for all member accounts across all regions.
 
 1. Follow the *How to connect AWS Security auditing* steps to get to the [permissions](#set-permissions) page.
 
