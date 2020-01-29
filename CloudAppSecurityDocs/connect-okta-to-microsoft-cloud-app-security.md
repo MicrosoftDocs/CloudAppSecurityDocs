@@ -73,6 +73,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 After connecting Okta, you'll receive events for 60 days prior to connection.
 
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]

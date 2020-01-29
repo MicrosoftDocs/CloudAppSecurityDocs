@@ -74,6 +74,8 @@ Cloud App Security supports the following Office 365 apps:
 > [!NOTE]
 > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
 
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]
