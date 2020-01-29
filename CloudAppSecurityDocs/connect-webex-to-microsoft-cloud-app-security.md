@@ -58,6 +58,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 After connecting Webex, you'll receive events for 7 days prior to connection. Cloud App Security scans events over the past three months. To increase this, you must have a Cisco Webex pro license and open a ticket with Cloud App Security support.
 
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]
