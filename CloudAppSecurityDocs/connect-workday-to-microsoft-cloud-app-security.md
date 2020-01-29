@@ -118,6 +118,8 @@ For more information about setting up Workday integration users, security groups
 > [!NOTE]
 > After connecting Workday, you'll receive events for seven days prior to connection.
 
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]
