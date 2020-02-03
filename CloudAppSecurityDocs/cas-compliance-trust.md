@@ -178,7 +178,7 @@ You can choose to keep **Cloud Discovery** reports anonymous. After your log fil
 
 ## Security and Privacy for Cloud App Security US Government GCC High customers
 
-For information on Cloud App Security compliance standards and the location of data for US Government GCC High customers, see [Enterprise Mobility + Security for US Government service description](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description).
+For information on Cloud App Security compliance standards and the location of data for US Government GCC High customers, see [Enterprise Mobility + Security for US Government service description](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
 
 ## Next steps
 
