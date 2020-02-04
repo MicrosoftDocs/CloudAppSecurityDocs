@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/1/2019
+ms.date: 02/04/2020
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -46,6 +46,13 @@ Anomalies are detected by scanning user activity. The risk is evaluated by looki
 * Activity rate
 
 Based on the policy results, security alerts are triggered. Cloud App Security looks at every user session on your cloud and alerts you when something happens that is different from the baseline of your organization or from the user's regular activity.
+
+In addition to native Cloud App Security alerts, you will also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
+
+* Leaked credentials: Triggered when a user’s valid credentials have been leaked. For more information, see [Azure AD’s Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
+* Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection (disabled by default). For more information, see [Azure AD’s Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+
+These policies will appear on the Cloud App Security policies page and can be enabled, or disabled, but not edited.
 
 ## Anomaly detection policies
 
