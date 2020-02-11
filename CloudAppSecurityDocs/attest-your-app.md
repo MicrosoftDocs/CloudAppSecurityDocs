@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/20/2019
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -43,7 +43,7 @@ Follow the service attributes described below to successfully complete the submi
 | Hosting company | General | String | Free text | The name of the company that provides server hosting for the app. |
 | Founded | General | Integer | YYYY (no later than 2019) | The year in which the provider was founded. |
 | Holding | General | String | Private, Public | Displays whether the provider is a publicly or privately held company |
-| App domain | General | URL array* | Free text | The list of domains that are used to interact with the service (for example, 'teams.microsoft.com' for Microsoft Teams) |
+| App domain | General | URL array* | Free text | The list of specific domains that are used to interact with the service. For example, 'teams.microsoft.com' for Microsoft Teams and not the generic domain ‘microsoft.com’. |
 | Terms of service | General | URL | Free text | Does this app provide a set of regulations that users must agree to follow in order to use the app? |
 | Privacy policy | General | URL | Free text | A link to a legally binding document relating to how this provider handles customer, client, or employee information gathered as part of the app. |
 | Logon URL | General | URL array* | Free text | The URL through which users log on to the app. |

@@ -62,6 +62,8 @@ After connecting Dropbox, you'll receive events for 60 days prior to connection.
 > [!NOTE]
 > Any Dropbox events for adding a file are displayed in Cloud App Security as Upload file to align to all other apps connected to Cloud App Security.
 
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]

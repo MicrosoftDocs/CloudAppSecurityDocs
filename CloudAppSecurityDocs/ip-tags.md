@@ -36,6 +36,7 @@ Cloud App Security comes preconfigured with built-in IP ranges for popular cloud
 >
 > - To use these built-in tags as part of a search, refer to their ID in the Cloud App Security API documentation.
 > - You can add IP ranges in bulk by creating a script using the **IP address ranges API**.
+> - You cannot add IP ranges with overlapping IP addresses.
 > - To view the API documentation, in the Cloud App Security portal menu bar, click the question mark then **API documentation**.
 
 Built-in IP address tags and custom IP tags are considered hierarchically. Custom IP tags take precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence but there's a custom IP tag that identifies it as **Corporate**, the custom category and tags take precedence.

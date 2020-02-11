@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -52,9 +52,7 @@ Key points:
     1. Under the Settings cog, select **Cloud Discovery settings**.
 
     2. In the Anonymization tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize machine information by default in 'Win10 Endpoint Users' report**.
-
-    3. Under Encryption key, select whether you want to **Use the dedicated key generated for your portal** or **Use a custom key**. If you **Use a custom key**, enter a 16-byte UTF8 encryption key.
-    4. Click **Save**.
+    3. Click **Save**.
 
     ![Anonymization](media/anonymizer1.png)
 
