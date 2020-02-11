@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 02/11/2020
 
 # optional metadata
 #ROBOTS: NOINDEX # Used to prevent showing on search pages
