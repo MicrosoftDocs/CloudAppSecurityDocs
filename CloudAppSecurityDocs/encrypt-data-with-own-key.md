@@ -50,7 +50,7 @@ You must register the **Microsoft Cloud App Security - BYOK** app in your tenant
 
 ## Deploy your Azure Key Vault key
 
-1. Create a [new Key Vault](/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key-vault).
+1. Create a [new Key Vault](/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key-vault) with the **Soft-delete** and **Purge protection** options enabled.
 
 1. Create an access policy, fill out the following information, and then click **Add**.
     1. Click **Key permissions** and choose the following permissions from the dropdown menu:
@@ -66,6 +66,8 @@ You must register the **Microsoft Cloud App Security - BYOK** app in your tenant
 
         ![Screenshot showing add access policy page](media/byok-kv-add-access-policy.PNG)
 
+    3. Click **Save**.
+
 1. Create a [new RSA key](/azure-stack/user/azure-stack-key-vault-manage-portal#create-a-key), do the following, and then click **Add**.
 
     > [!NOTE]
@@ -79,10 +81,6 @@ You must register the **Microsoft Cloud App Security - BYOK** app in your tenant
     2. Copy the **Key Identifier** URI, you'll need this later.
 
     ![Screenshot showing key settings page](media/byok-kv-key-perms.PNG)
-
-1. Set up the [soft-delete behavior](/azure/key-vault/key-vault-ovw-soft-delete#soft-delete-behavior) for your Key Vault.
-
-1. Set up the [no purge protection behavior](/azure/key-vault/key-vault-ovw-soft-delete#purge-protection) for your Key Vault.
 
 1. Optionally, if using a firewall for a selected network, configure the following firewall settings to give Cloud App Security access to the specified key, and then click **Save**:
     1. Make sure no virtual networks are selected.
