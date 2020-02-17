@@ -90,7 +90,7 @@ After you determine that an app is suspicious and you want to investigate it, we
     - Apps whose last update is not recent. This might indicate an app that is no longer supported.
     - Apps that have irrelevant permissions. This might indicate that an app is risky.
 1. If the app is still suspicious, you can research the app name, publisher, and URL online.
-1. You can export the OAuth app audit for further analysis of the users who authorized an app. For more information, see [AOuth app auditing](manage-app-permissions.md#oauth-app-auditing).
+1. You can export the OAuth app audit for further analysis of the users who authorized an app. For more information, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
 
 ## How to remediate
 
