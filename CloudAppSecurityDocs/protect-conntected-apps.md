@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: Protect apps used in your environment using cloud service provider APIs
-description: This article describes the benefits and features available for apps connected using API connectors.
+title: Protect apps in your environment using cloud service provider APIs
+description: This article describes how Cloud App Security protects your connected apps.
 keywords:
 author: shsagir
 ms.author: shsagir
