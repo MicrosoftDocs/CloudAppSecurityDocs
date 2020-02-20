@@ -24,7 +24,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Protecting your apps
+# Protecting connected apps
 
 Cloud App Security provides end-to-end protection for connected apps using Cloud-to-Cloud integration, [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md), and real-time access and session [controls leveraging our Conditional](proxy-intro-aad.md) App Access Controls.
 
