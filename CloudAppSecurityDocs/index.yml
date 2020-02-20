@@ -79,6 +79,8 @@ landingContent:
             url: risk-score.md
           - text: Working with discovered apps
             url: discovered-apps.md
+          - text: Protecting your apps
+            url: protecting-your-apps.md
 
   # Card
   - title: Best practices
@@ -125,8 +127,6 @@ landingContent:
             url: discovered-apps.md
           - text: Working with App risk scores
             url: risk-score.md
-          - text: Protecting your apps
-            url: protecting-your-apps.md
       - linkListType: deploy
         links:
           - text: Deploy Cloud Discovery
