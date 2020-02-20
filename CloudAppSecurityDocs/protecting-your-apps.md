@@ -32,18 +32,18 @@ Once an app is connected using one or more of these methods, you get instant out
 
 The breadth of support for each app relies on the richness of its APIs. Use the following links to learn about how Cloud App Security protects connected apps and what risks those apps expose. For each app, review the list of available built-in anomaly detections, explore ready-to-use policy templates for monitoring and alerting on risky activities, and discover which automated governance actions can be applied.
 
-- [Protect AWS](protect-aws)
-- [Protect Azure](protect-azure)
-- [Protect Box](protect-box)
-- [Protect Dropbox](protect-dropbox)
-- [Protect GCP](protect-gcp)
-- [Protect G Suite](protect-gsuite)
-- [Protect Office 365](protect-office-365)
-- [Protect Okta](protect-okta)
-- [Protect Salesforce](protect-salesforce)
-- [Protect ServiceNow](protect-servicenow)
-- [Protect Webex](protect-webex)
-- [Protect Workday](protect-workday)
+- [Protect AWS](protect-aws.md)
+- [Protect Azure](protect-azure.md)
+- [Protect Box](protect-box.md)
+- [Protect Dropbox](protect-dropbox.md)
+- [Protect GCP](protect-gcp.md)
+- [Protect G Suite](protect-gsuite.md)
+- [Protect Office 365](protect-office-365.md)
+- [Protect Okta](protect-okta.md)
+- [Protect Salesforce](protect-salesforce.md)
+- [Protect ServiceNow](protect-servicenow.md)
+- [Protect Webex](protect-webex.md)
+- [Protect Workday](protect-workday.md)
 
 ## Next steps
 
