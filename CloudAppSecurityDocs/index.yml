@@ -79,6 +79,8 @@ landingContent:
             url: risk-score.md
           - text: Working with discovered apps
             url: discovered-apps.md
+          - text: Protect connected apps
+            url: protect-connected-apps.md
 
   # Card
   - title: Best practices
