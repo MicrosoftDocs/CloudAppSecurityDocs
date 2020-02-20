@@ -125,7 +125,7 @@ landingContent:
             url: discovered-apps.md
           - text: Working with App risk scores
             url: risk-score.md
-          -text: Protecting your apps
+          - text: Protecting your apps
             url: protecting-your-apps.md
       - linkListType: deploy
         links:
