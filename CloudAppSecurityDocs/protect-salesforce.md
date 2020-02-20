@@ -30,7 +30,6 @@ Connecting Salesforce to Cloud App Security gives you improved insights into you
 - Elevated privileges
 - Insufficient security awareness
 - Malicious third-party apps and Google add-ons
-- Malware
 - Ransomware
 - Unmanaged bring your own device (BYOD)
 
