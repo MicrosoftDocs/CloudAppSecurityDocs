@@ -87,7 +87,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     Testing may take a couple of minutes. After receiving a success notice, click **Close**.
 
-After connecting ServiceNow, you'll receive events for 60 days prior to connection.
+After connecting ServiceNow, you'll receive events for 7 days prior to connection.
 
 ## Legacy ServiceNow connection
 
