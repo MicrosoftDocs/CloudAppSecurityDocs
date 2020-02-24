@@ -169,7 +169,7 @@ To affect the anomaly detection engine to suppress or surface alerts according t
     | Suppression type | Description |
     | --- | --- |
     | **System** | Built-in detections that are always suppressed. |
-    | **Tenant** | Common activities based on previous activity in the tenant. For example, suppressing activities from a previously alerted on ISP in the tenant. |
+    | **Tenant** | Common activities based on previous activity in the tenant. For example, suppressing activities from an ISP previously alerted on in your organization. |
     | **User** | Common activities based on previous activity of the specific user. For example, suppressing activities from a location that is commonly used by the user. |
 
 * You can also configure whether the alerts for Activity from infrequent country, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or just successful logins.

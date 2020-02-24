@@ -54,10 +54,10 @@ The Docker-based log collector was enhanced with the following important updates
 Cloud App Security now supports the latest version (New York) of ServiceNow. To learn about securing ServiceNow, see [Connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md).
 
 - **Enhanced detection logic: Impossible travel**  
-We’ve updated the detection logic for Impossible Travel to provide enhanced coverage and better accuracy. As part of this update, we also updated the detection logic for [Impossible Travel from corporate networks](anomaly-detection-policy.md#impossible-travel).
+We’ve updated the detection logic for impossible travel to provide enhanced coverage and better accuracy. As part of this update, we also updated the detection logic for [impossible travel from corporate networks](anomaly-detection-policy.md#impossible-travel).
 
 - **New threshold for activity policies**  
-We've added a threshold for [activity policies](user-activity-policies.md) to help you manage the volume of alerts. Policies that trigger more than 50,000 matches per day, for 3 out of the last 7 days are automatically disabled. If you receive a system alert about this, you should try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider saving them as queries instead.
+We've added a threshold for [activity policies](user-activity-policies.md) to help you manage the volume of alerts. Policies that trigger a large volume of matches per day, for 3 out of the last 7 days are automatically disabled. If you receive a system alert about this, you should try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider saving them as queries instead.
 
 ## Cloud App Security release 162, 163, and 164
 
