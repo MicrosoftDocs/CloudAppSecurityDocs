@@ -42,8 +42,7 @@ Cloud App Security comes preconfigured with built-in IP ranges for popular cloud
 Built-in IP address tags and custom IP tags are considered hierarchically. Custom IP tags take precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence but there's a custom IP tag that identifies it as **Corporate**, the custom category and tags take precedence.
 
 >[!NOTE]
-> When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, impossible travel) because these IP addresses are considered trusted.
->
+> When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, [impossible travel](anomaly-detection-policy.md#impossible-travel)) because these IP addresses are considered trusted.
 
 ## Create an IP address range
 
