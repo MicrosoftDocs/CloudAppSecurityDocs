@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/29/2019
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -55,6 +55,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Accessing and viewing the App connectors page
   - Accessing and viewing the Governance log
   - Accessing and viewing the Manage snapshot reports page
+  - Accessing and editing the SIEM agent
 
 - **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
 
