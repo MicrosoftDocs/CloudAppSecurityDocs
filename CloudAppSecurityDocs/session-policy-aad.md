@@ -151,6 +151,15 @@ Select **Block activities** to block specific activities, which you can find usi
 
 When **Protect** is set as the **Action** to be taken in the Cloud App Security session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy’s file filters. Labels are configured in the Azure Information Protection console and **Protect** must be selected within the label for it to appear as an option in the Cloud App Security policy. When a label is selected, and a file is downloaded that meets the criteria of the Cloud App Security policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.
 
+Cloud App Security currently supports applying [Azure Information Protection classification labels](azip-integration.md) for the following file types:
+
+* Word: docm, docx, dotm, dotx
+* Excel: xlam, xlsm, xlsx, xltx
+* PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
+* PDF
+  > [!NOTE]
+  > For PDF, you must use unified labels.
+
 ## <a name="protect-upload"></a>Protect uploads of sensitive files
 
 When **Control file upload (with DLP)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy’s file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and does not have a proper label, the file upload is blocked.
