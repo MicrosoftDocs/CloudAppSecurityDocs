@@ -31,7 +31,7 @@
     "globalMetadata": {
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/cloudappsecuritydocs",
-      "feedback_product_url": "mailto:casfeedback@microsoft.com",
+      "feedback_product_url": "https://docs.microsoft.com/cloud-app-security/support-and-ts#feedback",
       "layout": "Conceptual",
       "breadcrumb_path": "/cloud-app-security/bread/toc.json",
       "searchScope": ["Cloud App Security"]
