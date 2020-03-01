@@ -99,9 +99,7 @@ Check the [current status of Microsoft Cloud App Security](https://status.clouda
 
 ## Feedback
 
-The Cloud App Security team is always eager to hear your thoughts about our product. Provide feedback on the following options:
-
-[Product feedback](https://microsoftsecurity.uservoice.com/forums/905161-cloud-app-security)
+The Cloud App Security team is always eager to hear your thoughts about our product. Send product feedback to [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com).
 
 Documentation feedback. Our new feedback system is built on GitHub Issues. To provide feedback on documentation you must first create a GitHub account. Read about this change in [our blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
