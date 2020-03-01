@@ -46,12 +46,19 @@ To enable Cloud App Security integration with Azure ATP:
 
     ![enable azure advanced threat protection](media/aatp-integration.png)
 
-1. Select **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
+1. Select **Enable Azure ATP data integration** and then click **Save**.
 
 > [!NOTE]
 > It may take up to 12 hours until the integration takes effect.
 
 After enabling Azure ATP integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments. Additionally, policies from Azure ATP will appear on the Cloud App Security policies page. For a list of Azure ATP policies, see [Security Alerts](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
+
+You should also use the **Azure ATP configuration** links to configure Azure ATP settings that are relevant to Cloud App Security. Use the following information to learn more about these settings:
+
+- [Configure Azure ATP sensors](/azure-advanced-threat-protection/install-atp-step5)
+- [Configure directory service accounts](/azure-advanced-threat-protection/install-atp-step2)
+- [Configure radius accounting for VPN](/azure-advanced-threat-protection/install-atp-step6-vpn)
+- [Access Azure ATP health center](/azure-advanced-threat-protection/atp-health-center)
 
 ## Disable Azure ATP
 
@@ -64,7 +71,7 @@ To disable Cloud App Security integration with Azure ATP:
 1. Clear **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
 
 > [!NOTE]
-> Existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments are removed.
+> When the integration is disabled, existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments section is removed.
 
 ## Next steps
 
