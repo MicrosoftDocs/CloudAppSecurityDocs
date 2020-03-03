@@ -58,8 +58,6 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
         > [!NOTE]
         > Make sure the name of the data source is identical to the feed name used when creating the Cloud App Security NSS Feed. For more information, see [Adding Cloud App Security NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
-        For **Name**, you
-
     4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
 
 3. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
