@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/29/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -54,6 +54,11 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
         - Receiver type = Syslog - UDP
 
         ![data source Zscaler](media/data-source-zscaler.png)
+
+        > [!NOTE]
+        > You can use any preffered Name fields are case-sensitive. Make sure you spell and type the names of the columns identically in Cloud App Security and in the log file. Also, make sure that the date format you choose is identical.
+
+        For **Name**, you
 
     4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
 
