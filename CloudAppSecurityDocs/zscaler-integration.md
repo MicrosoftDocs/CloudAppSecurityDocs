@@ -56,7 +56,7 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
         ![data source Zscaler](media/data-source-zscaler.png)
 
         > [!NOTE]
-        > You can use any preffered Name fields are case-sensitive. Make sure you spell and type the names of the columns identically in Cloud App Security and in the log file. Also, make sure that the date format you choose is identical.
+        > Make sure the name of the data source is identical to the feed name used when creating the Cloud App Security NSS Feed. For more information, see [Adding Cloud App Security NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
         For **Name**, you
 
