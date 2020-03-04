@@ -27,6 +27,26 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 169
+
+Released March 1, 2020
+
+- **New detection for Workday**  
+We have expanded our current anomalous behavior alerts for Workday. The new alerts include the following user geo-location detections:
+  - [Activity from anonymous IP addresses](anomaly-detection-policy.#activity-from-anonymous-ip-addresses)
+  - [Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)
+  - [Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
+  - [Impossible travel](anomaly-detection-policy.md#impossible-travel)
+
+- **Enhanced Salesforce log collection**  
+Cloud App Security now supports Salesforce's hourly event log. Hourly event logs give you accelerated, near real-time monitoring of user activities. For more information, see [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md).
+
+- **Support for AWS security configuration using a master account**  
+Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS Security configuration to Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
+
+- **Session controls support for modern browsers**  
+Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. Whilst we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+
 ## Cloud App Security release 165, 166, 167, and 168
 
 Released February 16, 2020
