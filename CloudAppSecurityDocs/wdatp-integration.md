@@ -117,7 +117,7 @@ Apps marked as **Unsanctioned** in Cloud App Security are automatically synced t
 
 Use the following steps to enable access control for cloud apps:
 
-1. In Cloud App Security, go to **Settings** > **Cloud app control**, and then select **Block unsanctioned apps**.
+1. In Cloud App Security, under the settings cog, select **Settings**, under **Cloud Discovery** select **Microsoft Defender ATP**, and then select **Block unsanctioned apps**.
 
     ![Screenshot showing how to enable blocking with Microsoft Defender ATP](media/defender-atp-integration.png)
 
