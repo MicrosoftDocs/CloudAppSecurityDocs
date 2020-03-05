@@ -56,7 +56,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        Then click **Save**. For information on how to see which Cloud App Security data center you're connected to, see [API tokens](api-tokens.md).
+        Then click **Save**. For information on how to see which Cloud App Security data center you're connected to, see [View your data center](network-requirements.md#view-your-data-center).
 
     ![box settings except for](media/box-settings-except-for.png)
 
