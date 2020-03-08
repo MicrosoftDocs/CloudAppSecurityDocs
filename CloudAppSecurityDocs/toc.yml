@@ -282,6 +282,8 @@
       href: troubleshooting-siem.md
     - name: Troubleshooting policies
       href: troubleshoot-policies.md
+    - name: Troubleshooting - What is cas.ms?
+      href: troubleshooting-proxy-url.md
 - name: Resources
   items:
   - name: Watch our webinars
