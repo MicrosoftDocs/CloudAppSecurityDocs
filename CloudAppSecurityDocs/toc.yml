@@ -1,4 +1,4 @@
-- name: Microsoft Cloud App Security Documentation
+- name: Microsoft Cloud App Security documentation
   href: index.yml
 - name: Overview
   items:
@@ -53,6 +53,8 @@
     href: discovered-apps.md
   - name: Working with connected apps
     items:
+    - name: Protect connected apps
+      href: protect-connected-apps.md
     - name: Protect AWS
       href: protect-aws.md
     - name: Protect Azure

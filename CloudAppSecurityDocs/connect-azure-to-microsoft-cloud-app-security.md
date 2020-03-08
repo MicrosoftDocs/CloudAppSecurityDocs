@@ -51,6 +51,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 > [!NOTE]
 > After connecting Azure, data will be pulled. You will see data from then onwards.
 
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
+
 ## Next steps
 
 > [!div class="nextstepaction"]

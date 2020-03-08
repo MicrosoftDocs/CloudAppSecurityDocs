@@ -56,7 +56,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        Then click **Save**. For information on how to see which Cloud App Security data center you're connected to, see [API tokens](api-tokens.md).
+        Then click **Save**. For information on how to see which Cloud App Security data center you're connected to, see [View your data center](network-requirements.md#view-your-data-center).
 
     ![box settings except for](media/box-settings-except-for.png)
 
@@ -86,6 +86,8 @@ Box is now connected to Cloud App Security.
 After connecting Box, you'll receive events for 60 days prior to connection.
 
 After connecting Box, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activities are detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away rather than waiting for the regular scan process. Near real-time scanning doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned as part of the regularly scheduled scan.
+
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
 

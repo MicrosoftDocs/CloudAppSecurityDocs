@@ -77,7 +77,7 @@ To create a new access policy, follow this procedure:
 
 5. Under **Actions**, select one of the following options:
 
-    - **Allow**: Set this action to explicitly allow access according to the policy filters you set.
+    - **Test**: Set this action to explicitly allow access according to the policy filters you set.
 
     - **Block**: Set this action to explicitly block access according to the policy filters you set.
 

@@ -27,6 +27,58 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 169
+
+Released March 1, 2020
+
+- **New detection for Workday**  
+We have expanded our current anomalous behavior alerts for Workday. The new alerts include the following user geo-location detections:
+  - [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
+  - [Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)
+  - [Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
+  - [Impossible travel](anomaly-detection-policy.md#impossible-travel)
+
+- **Enhanced Salesforce log collection**  
+Cloud App Security now supports Salesforce's hourly event log. Hourly event logs give you accelerated, near real-time monitoring of user activities. For more information, see [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md).
+
+- **Support for AWS security configuration using a master account**  
+Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS Security configuration to Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
+
+- **Session controls support for modern browsers**  
+Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. Whilst we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+
+## Cloud App Security release 165, 166, 167, and 168
+
+Released February 16, 2020
+
+- **New block unsanctioned apps with Microsoft Defender ATP**  
+Cloud App Security has extended its native integration with Microsoft Defender Advanced Threat Protection (ATP). You can now block access to apps marked as unsanctioned using Microsoft Defender ATP’s network protection capability. For more information, see [Block access to unsanctioned cloud apps](wdatp-integration.md#block-access-to-unsanctioned-cloud-apps).
+
+- **New OAuth app anomaly detection**  
+We have expanded our current capability to detect malicious OAuth app consent. The new detection is now available out-of-the-box and automatically enabled to alert you when a potentially malicious OAuth app is authorized in your environment. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.
+
+- **Log collector updates**  
+The Docker-based log collector was enhanced with the following important updates:
+
+  - Container OS version upgrade
+
+  - Java security vulnerabilities patches
+
+  - Syslog service upgrade
+
+  - Stability and performance improvements
+
+    We strongly recommend that you upgrade your environment to this new version. For more information, see [Log collector deployment modes](discovery-docker.md#deployment-modes).
+
+- **Support for ServiceNow New York**  
+Cloud App Security now supports the latest version (New York) of ServiceNow. To learn about securing ServiceNow, see [Connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md).
+
+- **Enhanced detection logic: Impossible travel**  
+We’ve updated the detection logic for impossible travel to provide enhanced coverage and better accuracy. As part of this update, we also updated the detection logic for [impossible travel from corporate networks](anomaly-detection-policy.md#impossible-travel).
+
+- **New threshold for activity policies**  
+We've added a threshold for [activity policies](user-activity-policies.md) to help you manage the volume of alerts. Policies that trigger a large volume of matches for several days are automatically disabled. If you receive a system alert about this, you should try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider saving them as queries instead.
+
 ## Cloud App Security release 162, 163, and 164
 
 Released December 8, 2019

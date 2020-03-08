@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/29/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -54,6 +54,9 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
         - Receiver type = Syslog - UDP
 
         ![data source Zscaler](media/data-source-zscaler.png)
+
+        > [!NOTE]
+        > Make sure the name of the data source is identical to the feed name used when creating the Cloud App Security NSS Feed. For more information, see [Adding Cloud App Security NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
     4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
 
