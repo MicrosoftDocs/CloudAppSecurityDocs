@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting - What is cas.ms?
-description: This article provides information about the cas.ms url suffix used by Conditional Access App Control.
+description: This article provides information about the cas.ms URL suffix used by Conditional Access App Control.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -18,7 +18,7 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides information about the cas.ms url suffix used by Conditional Access App Control.
+This article provides information about the `cas.ms` URL suffix used by Conditional Access App Control.
 
 ## Our system flagged a new DNS entry or generated certificate for *.cas.ms, but we don't use Cloud App Security
 
