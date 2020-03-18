@@ -2,12 +2,12 @@
 # required metadata
 
 title: Troubleshooting - What is cas.ms, mcas.ms, or mcas-gov.us?
-description: This article provides information about the cas.ms URL suffix used by Conditional Access App Control.
+description: This article provides information about the cas.ms, mcas.ms, or mcas-gov.us URL suffix used by Conditional Access App Control.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/08/2020
+ms.date: 03/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
