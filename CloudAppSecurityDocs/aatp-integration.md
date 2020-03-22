@@ -73,6 +73,16 @@ To disable Cloud App Security integration with Azure ATP:
 > [!NOTE]
 > When the integration is disabled, existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments section is removed.
 
+## Known issues
+
+### Missing SIEM alert updates
+
+This issue affects alerts that are triggered more than once. The first instance of the alert is sent to the SIEM, but subsequent triggers of the same alert are not sent.
+
+#### Resolution
+
+No known resolution.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
