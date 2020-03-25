@@ -66,8 +66,8 @@ The following policies are available:
 
 |Policy|Description|Default state|Default Severity|
 |---|---|---|---|
-|Leaked Credentials|Shows leaked credentials alerts, user's valid credentials have been leaked|Enabled|Low|
-|Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that weren't performed by the user|Disabled|High|
+|Leaked Credentials|Shows leaked credentials alerts, user's valid credentials have been leaked|Enabled|Low - Receive all alerts|
+|Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that weren't performed by the user|Disabled|High - Receive only high severity alerts|
 
 ## Next steps
 
