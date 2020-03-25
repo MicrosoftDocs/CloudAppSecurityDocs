@@ -32,7 +32,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 Released March 22, 2020
 
 - **New anomaly detection: Unusual region for cloud resource (Preview)**  
-We have expanded our current capability to detect anomalous behavior for AWS. The new detection is now available out-of-the-box and automatically enabled to alert you when a resource is created in an AWS region where the activity is not normally performed. Attackers often leverage an organization's AWS credentials to perform malicious activities such as crypto-mining. Detecting such anomalous behavior can help mitigate an attack.
+We have expanded our current capability to detect anomalous behavior for AWS. The new detection is now available out-of-the-box and automatically enabled to alert you when a resource is created in an AWS region where the activity is not normally performed. Attackers often leverage an organization's AWS credits to perform malicious activities such as crypto-mining. Detecting such anomalous behavior can help mitigate an attack.
 
 - **New activity policy templates for Microsoft Teams**  
 Cloud App Security now provides the following new activity policy templates enabling you to detect potentially suspicious activities in Microsoft Teams:
