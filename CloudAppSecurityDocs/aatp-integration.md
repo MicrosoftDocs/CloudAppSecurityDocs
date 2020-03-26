@@ -5,7 +5,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/19/2019
+ms.date: 03/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -19,7 +19,7 @@ ms.custom: seodec18
 # Azure Advanced Threat Protection integration
 
 *Applies to: Microsoft Cloud App Security*
-git
+
 Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md). For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
 ## Prerequisites
@@ -27,7 +27,7 @@ Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (A
 For complete user investigation across a hybrid environment, you must have:
 
 - A valid license for Azure ATP connected to your Active Directory instance
-- You must be a Azure Active Directory global admin to enable integration between Azure ATP and Cloud App Security
+- You must be an Azure Active Directory global admin to enable integration between Azure ATP and Cloud App Security
 
 > [!NOTE]
 >
@@ -68,7 +68,7 @@ To disable Cloud App Security integration with Azure ATP:
 
 1. Under **Threat Protection**, select **Azure ATP**.
 
-1. Clear **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
+1. Clear **Enable Azure ATP data integration** and then click **Save**.
 
 > [!NOTE]
 > When the integration is disabled, existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments section is removed.
