@@ -60,14 +60,14 @@ To disable Cloud App Security integration with Identity Protection:
 
 ## Configure Identity Protection Policies
 
-The Identity Protection policies can fine-tuned to your organization's need using the severity slider. The sensitivity slider allows you to impact the algorithm and define how strict the detection logic is. The higher the sensitivity level, the lower the suppression that is applied as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your (SNR) targets.
+The Identity Protection policies can be fine-tuned to your organization's need using the severity slider. The sensitivity slider allows you to control which alerts are ingested. In this way, you can adapt the detection according to your coverage needs and your (SNR) targets.
 
 The following policies are available:
 
 |Policy|Description|Default state|Default Severity|
 |---|---|---|---|
 |Leaked Credentials|Shows leaked credentials alerts, user's valid credentials have been leaked|Enabled|Low - Receive all alerts|
-|Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that weren't performed by the user|Disabled|High - Receive only high severity alerts|
+|Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that weren't performed by the user|Enabled|High - Receive only high severity alerts|
 
 ## Next steps
 
