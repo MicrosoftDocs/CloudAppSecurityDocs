@@ -41,7 +41,7 @@ Cloud App Security now provides the following new activity policy templates enab
   - **Mass deletion (Teams):** Alerts when a user deletes a large number of teams.
 
 - **Azure Active Directory (Azure AD) Identity Protection Integration**  
-You can now control the severity of Azure AD Identity Protection alerts that are ingested into Cloud App Security. Additionally, if you haven't already enabled the **Azure AD Risky sign-in** detection, the detection will be automatically enabled to ingest high severity alerts.
+You can now control the severity of Azure AD Identity Protection alerts that are ingested into Cloud App Security. Additionally, if you haven't already enabled the **Azure AD Risky sign-in** detection, the detection will be automatically enabled to ingest high severity alerts. For more information, see [Azure Active Directory Identity Protection integration](aadip-integration.md).
 
 ## Cloud App Security release 169
 
