@@ -27,7 +27,8 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 1. On the **Settings** menu, select **Security extensions** and then **API tokens**.
 
 2. Click the plus icon, **Generate new token** and provide a name to identify the token in the future, and click **Next**.
-  ![Cloud App Security generates API token](media/api-token-gen.png)
+
+    ![Cloud App Security generates API token](media/api-token-gen.png)
 
 3. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader can't issue a token that can alter data.
 
