@@ -1,45 +1,24 @@
 ---
 # required metadata
-
 title: API token management in Cloud App Security
 description: This article provides information about generating API tokens for Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 03/27/2020
+ms.topic: reference
 ms.collection: M365-security-compliance
-ms.prod:
 ms.service: cloud-app-security
-ms.technology:
-
 
 # optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
 ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # API tokens
 
 *Applies to: Microsoft Cloud App Security*
 
-The Microsoft Cloud App Security API provides programmatic access to Cloud App Security through REST API endpoints. Applications can use the API to perform read and update operations on Cloud App Security data and objects. For example, the Cloud App Security API supports the following common operations for a user object:
-
-- Upload log files for Cloud Discovery
-- Generate block scripts
-- List activities, alerts, and policy reports
-- Dismiss or resolve alerts
-
-To see the full documentation of the API, in the Cloud App Security portal go to Help > **API documentation**.
-
-In order to access the API, you have to create an API token and use it in your software to connect to the Cloud App Security API.
+In order to access the Cloud App Security API, you have to create an API token and use it in your software to connect to the API.
 
 The API tokens tab enables you to help you manage all the API tokens of your tenant.
 
@@ -54,9 +33,9 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 4. You can filter the tokens by status: Active, Inactive, or Generated.
 
-    - Generated are tokens that have never been used.
-    - Active are tokens that were generated and were used within the past seven days.
-    - Inactive were used but there was no activity in the last seven days.
+    - **Generated:** Tokens that have never been used.
+    - **Active:** Tokens that were generated and were used within the past seven days.
+    - **Inactive:** Tokens that were used but there was no activity in the last seven days.
 
 5. After you generate a new token, you'll be provided with a new URL to use to access the Cloud App Security portal.
 

@@ -124,7 +124,7 @@
       - name: Log collector FTP configuration
         href: log-collector-ftp.md
       - name: Log collector behind a proxy
-        href: log-collector-proxy.md  
+        href: log-collector-proxy.md
       - name: Use the custom log parser
         href: custom-log-parser.md
     - name: Cloud Discovery enrichment
@@ -174,7 +174,7 @@
     items:
     - name: Activities
       href: activity-filters.md
-      items: 
+      items:
       - name: Activity filters and queries
         href: activity-filters-queries.md
     - name: Files
@@ -243,7 +243,7 @@
     - name: Azure Information Protection integration
       href: azip-integration.md
     - name: Integrate with external solutions
-      items: 
+      items:
       - name: Generic SIEM integration
         href: siem.md
       - name: Azure Sentinel integration
@@ -251,11 +251,11 @@
       - name: External DLP integration
         href: icap-stunnel.md
     - name: Automate processes and workflows
-      items: 
+      items:
       - name: Use the REST API
         href: api-tokens.md
       - name: Investigate activities with APIs
-        href: investigate-activities-api.md  
+        href: investigate-activities-api.md
       - name: Use Microsoft Flow
         href: flow-integration.md
 - name: Reference
@@ -269,7 +269,25 @@
     - name: Threat protection policies
       href: policies-threat-protection.md
     - name: Information protection policies
-      href: policies-information-protection.md    
+      href: policies-information-protection.md
+  - name: REST API
+    items:
+    - name: Introduction
+      href: api-introduction.md
+    - name: Authentication
+      href: api-authentication.md
+    - name: Cloud Discovery
+      items:
+      - name: Overview
+        href: api-discovery.md
+      - name: Initiate file upload
+        href: api-discovery-initiate.md
+      - name: Perform file upload
+        href: api-discovery-perform.md
+      - name: Finalize file upload
+        href: api-discovery-finalize.md
+      - name: Generate block script
+        href: api-discovery-script.md
   - name: Troubleshooting
     items:
     - name: Troubleshooting Cloud Discovery

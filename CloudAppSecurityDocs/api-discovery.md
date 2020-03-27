@@ -1,12 +1,12 @@
 ---
 # required metadata
-title: Cloud App Security Discovery API
-description: This article provides information about generating API tokens for Cloud App Security.
+title: Cloud App Security Cloud Discovery API
+description: This article provides information about using the Cloud Discovery API.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 03/27/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -14,58 +14,19 @@ ms.service: cloud-app-security
 # optional metadata
 ms.suite: ems
 ---
-# API tokens
+# Cloud Discovery API
 
 *Applies to: Microsoft Cloud App Security*
 
-In order to access the Cloud App Security API, you have to create an API token and use it in your software to connect to the API.
+Cloud Discovery parses system logs provided by the user to detect new and unknown applications in your cloud environment. Use the Cloud Discovery API to automate the uploading of your company's discovery log files. The file upload process consists of 3 API calls which must be called consecutively.
 
-The API tokens tab enables you to help you manage all the API tokens of your tenant.
+Additionally, Cloud App Security enables you to block access to unsanctioned apps by using your existing on-premises security appliances. Use the Generate block script call to get a dedicated block script and import it to your appliance.
 
-## Generate a token
+The following is a list of discovery requests:
 
-1. On the **Settings** menu, select **Security extensions** and then **API tokens**.
-
-2. Click the plus icon, **Generate new token** and provide a name to identify the token in the future, and click **Next**.
-  ![Cloud App Security generates API token](media/api-token-gen.png)
-
-3. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader can't issue a token that can alter data.
-
-4. You can filter the tokens by status: Active, Inactive, or Generated.
-
-    - **Generated:** Tokens that have never been used.
-    - **Active:** Tokens that were generated and were used within the past seven days.
-    - **Inactive:** Tokens that were used but there was no activity in the last seven days.
-
-5. After you generate a new token, you'll be provided with a new URL to use to access the Cloud App Security portal.
-
-    ![Cloud App Security API token](media/generate-api-token.png)
-
-    The generic portal URL continues to work but is considerably slower than the custom URL provided with your token. If you forget the URL at any time, you can view it by going to the **?** icon in the menu and selecting **About**.
-
-> [!NOTE]
-> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
-
-## API token management
-
-The API token page includes a table of all the API tokens that were generated.
-
-Full admins see all tokens generated for this tenant. Other users only see the tokens that they generated themselves.
-
-The table provides details about when the token was generated and when it was last used and allows you to revoke the token.
-
-After a token is revoked, it's removed from the table, and the software that was using it fails to make API calls until a new token is provided.
-
-> [!NOTE]
-> SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Troubleshooting SIEM integration issues](troubleshooting-siem.md)
+- **upload_url:** Initiate file upload
+- **<initiate_file_upload_response_url>:** Perform file upload
+- **done_upload:** Finalize file upload
+- **discovery_block_scripts:** Generate block script
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
-## Check out this video!
-
-[Microsoft Cloud App Security – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
