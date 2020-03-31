@@ -75,7 +75,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 6. Under **Activity source** in the **Activities matching all of the following** section, select the filters:
 
-   * **Device tag**: Select **Does not equal**. and then select **Compliant**,  **Domain joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
+   * **Device tag**: Select **Does not equal**. and then select **Intune Compliant**,  **Hybrid Azure AD Joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
 
    * **App**: Select the app you want to control.
 
@@ -111,7 +111,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 2. The file should be blocked and you should receive the message you set under **Customize block messages**.
 
-3. In the Cloud App Security portal, click on **Control** followed by **Policies**, and then click on the policy you’ve created to view the policy report. A session policy match should appear shortly.
+3. In the Cloud App Security portal, click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
 
 4. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
 

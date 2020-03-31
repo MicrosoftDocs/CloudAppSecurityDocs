@@ -58,7 +58,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Device tag - Search by compliant, managed or verified device.
+- Device tag - Search by Intune compliant, managed or verified device.
 
 - Device type - Search only for activities that were done using a specific device type. For example, search all activities from mobile devices, PCs, or Tablets.
 
@@ -94,10 +94,10 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - Registered ISP – The ISP from which the activity was performed.
 
 - Source - Search by the source from which the activity was detected. Source can be any of the following:
-  - App connector - logs coming directly from the app’s API connector.
+  - App connector - logs coming directly from the app's API connector.
   - App connector analysis - Cloud App Security enrichments based on information scan by the API connector.
 
-- User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.
+- User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the 'is not set' operator.
   - User domain - Search for a specific user domain.
   - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users. This is only relevant for connected G Suite instances using organizational units.
   - User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.
