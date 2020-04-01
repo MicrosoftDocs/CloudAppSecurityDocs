@@ -78,7 +78,9 @@ The table provides details about when the token was generated and when it was la
 After a token is revoked, it's removed from the table, and the software that was using it fails to make API calls until a new token is provided.
 
 > [!NOTE]
-> SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table.
+>
+> - SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table.
+> - Deprovisioned users API tokens are retained in Cloud App Security but cannot be used. Any attempt to use them will result in a permission denied response. However, we recommend that such tokens are revoked on the **API tokens** page.
 
 ## Next steps
 
@@ -89,4 +91,4 @@ After a token is revoked, it's removed from the table, and the software that was
 
 ## Check out this video!
 
-[Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+[Microsoft Cloud App Security – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
