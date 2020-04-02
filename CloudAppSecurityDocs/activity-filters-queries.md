@@ -58,7 +58,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Device tag - Search by Intune compliant, managed or verified device.
+- Device tag - Search by **Intune compliant**, **Hybrid Azure AD joined** or **Valid client certificate**.
 
 - Device type - Search only for activities that were done using a specific device type. For example, search all activities from mobile devices, PCs, or Tablets.
 

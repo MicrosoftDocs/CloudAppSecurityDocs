@@ -72,9 +72,9 @@ Conditional Access App Control enables you to create policies that take into acc
 - Hybrid Azure AD joined devices
 - Presence of client certificates in a trusted chain
 
-### Intune compliant and Hybrid Azure AD Joined devices
+### Intune compliant and Hybrid Azure AD joined devices
 
-Azure AD Conditional Access enables Intune compliant and hybrid joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+Azure AD Conditional Access enables Intune compliant and hybrid Azure AD joined device information to be passed directly to Microsoft Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
 > Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](https://go.microsoft.com/fwlink/?linkid=2102732).
