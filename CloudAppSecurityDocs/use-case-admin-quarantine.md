@@ -44,6 +44,7 @@ This tutorial helps you use Microsoft Cloud App Security to detect unwanted file
 >
 > * For a list of apps that support admin quarantine, see the list of [governance actions](governance-actions.md).
 > * If a file in SharePoint or OneDrive is detected to be malware, it is not quarantined in the Cloud App Security portal.
+> * Files with labels cannot be quarantined.
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
 
@@ -79,7 +80,7 @@ This tutorial helps you use Microsoft Cloud App Security to detect unwanted file
 
     1. Inspect the file in the quarantined folder on SharePoint online.
     2. You can also look at the audit logs to deep dive into the file properties.
-    3. If you find the file is against corporate policy, run the organization’s Incident Response (IR) process.
+    3. If you find the file is against corporate policy, run the organization's Incident Response (IR) process.
     4. If you find that the file is harmless, you can restore the file from quarantine. At that point the original file is released, meaning it's copied back to the original location, the tombstone is deleted, and the user can access the file.
 
       ![quarantine restore](media/quarantine-restore.png)
@@ -91,7 +92,7 @@ This tutorial helps you use Microsoft Cloud App Security to detect unwanted file
 >
 > * Original shares are not restored, default folder inheritance applied.
 > * The restored file contains only the most recent version.
-> * The quarantine folder site access management is the customer’s responsibility.
+> * The quarantine folder site access management is the customer's responsibility.
 
 ## Set up admin quarantine
 
