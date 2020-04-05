@@ -76,7 +76,7 @@ Built-in content inspection scan policies can search for the following items:
 The Cloud App Security content inspection engine:
 
 - Supports all Unicode characters
-- Covers over 1,000 file types
+- Covers over 100 file types
 - Multiple languages are supported, especially files that use Unicode character sets. Make sure to define your policies to account for those languages. For example if you're looking for keywords, you must put in the keywords across the languages you intend to use.
 - In text-based file types that use non-Unicode encoding, for example Chinese GB2312, comparing against Unicode Chinese keywords won't work as expected.
 - For file types that rely on third-party libraries, matching strings and words may not always work as expected. This is most common in files (such as binary file types) in which content inspection relies on third-party libraries that return Java strings for language and character sets.
