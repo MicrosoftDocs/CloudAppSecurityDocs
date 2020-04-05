@@ -177,17 +177,14 @@ Once you are ready to enable the app for use in your organization's production e
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to create a session policy »](session-policy-aad.md)
+> [« PREVIOUS: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+
+> [!div class="nextstepaction"]
+> [NEXT: How to create a session policy »](session-policy-aad.md)
 
 ## See also
 
 > [!div class="nextstepaction"]
 > [Introduction to Conditional Access App Control](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

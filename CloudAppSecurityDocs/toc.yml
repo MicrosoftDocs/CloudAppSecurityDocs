@@ -240,6 +240,8 @@
       href: governance-discovery.md
     - name: Azure ATP integration
       href: aatp-integration.md
+    - name: Azure AD Identity Protection integration
+      href: aadip-integration.md
     - name: Azure Information Protection integration
       href: azip-integration.md
     - name: Integrate with external solutions
@@ -282,6 +284,8 @@
       href: troubleshooting-siem.md
     - name: Troubleshooting policies
       href: troubleshoot-policies.md
+    - name: Troubleshooting - What is cas.ms?
+      href: troubleshooting-proxy-url.md
 - name: Resources
   items:
   - name: Watch our webinars

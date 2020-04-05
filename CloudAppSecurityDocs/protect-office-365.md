@@ -21,17 +21,23 @@ ms.collection: M365-security-compliance
 
 As a major productivity suite providing cloud file storage, collaboration, BI, and CRM tools, Office 365 enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Office 365 may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents might occur due to malicious actor, or by an unaware employee. Office 365 also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
 
-Connecting Office 365 to Cloud App Security gives you improved insights into your users’ activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
+Connecting Office 365 to Cloud App Security gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
 Using the Office 365 connector provides protection for the following products:
 
-- Office 365
 - Dynamics 365 CRM
 - Exchange
+- Office 365
 - OneDrive
+- Power Automate
 - Power BI
 - SharePoint
+- Skype for Business
 - Teams
+- Yammer
+
+> [!NOTE]
+> Cloud App Security integrates directly with [Office 365's audit logs](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
 
 ## Main threats
 
@@ -60,9 +66,9 @@ You can use the following built-in policy templates to detect and notify you abo
 | Type | Name |
 | ---- | ---- |
 | Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires AAD as IdP)<br />[Malware detection](anomaly-detection-policy.md#malware-detection)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Suspicious email deletion activity (Preview)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[Suspicious inbox forwarding](anomaly-detection-policy.md#suspicious-inbox-forwarding)[Unusual file deletion activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual file share activities](anomaly-detection-policy.md#unusual-activities-by-user)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
-| Activity policy template | Logon from a risky IP address<br />Mass download by a single user<br />Potential ransomware activity |
+| Activity policy template | Logon from a risky IP address<br />Mass download by a single user<br />Potential ransomware activity<br />Access level change (Teams)<br />External user added (Teams)<br />Mass deletion (Teams) |
 | File policy template | Detect a file shared with an unauthorized domain<br />Detect a file shared with personal email addresses<br />Detect files with PII/PCI/PHI |
-| OAuth app anomaly detection policy | [Misleading OAuth app name](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Misleading publisher name for an OAuth app](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Malicious OAuth app consent](anomaly-detection-policy.md#unusual-activities-by-user) |
+| OAuth app anomaly detection policy | [Misleading OAuth app name](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Misleading publisher name for an OAuth app](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[Malicious OAuth app consent](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
 
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
 

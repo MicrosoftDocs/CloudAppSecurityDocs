@@ -99,17 +99,9 @@ To verify that the activity is properly captured, click on a single sign-on log 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to create an access policy](access-policy-aad.md)
-
-## See also
+> [« PREVIOUS: Introduction to Conditional Access App Control](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
-> [Introduction to Conditional Access App Control](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Working with the Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
-
-> [!div class="nextstepaction"]
-> [Deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
+> [NEXT: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -67,7 +67,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
 2. From the bash inside the container, go to the Java *jre* folder. To avoid a version related path error, use this command:
 
     ```bash
-    cd 'find /opt/jdk/*/jre -iname bin'
+    cd "$(find /opt/jdk/*/jre -name "bin" -printf '%h' -quit)"
     ```
 
 3. Import the root certificate that you copied earlier, from the *discovery* folder into the Java KeyStore and define a password. The default password is "changeit". For information about changing the password, see [How to change the Java KeyStore password](#how-to-change-the-java-keystore-password).
