@@ -33,7 +33,12 @@ This article provides a list of Cloud Discovery errors and resolution recommenda
 
 ## Microsoft Defender ATP integration
 
-If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
+If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration.
+
+|Issue|Resolution|
+|----|----|
+|**Win10 endpoint users** reports do not appear in the list|Make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.|
+|Discovery reports are empty|If the endpoint device is behind a forward proxy, you can send logs from your forward proxy using a log collector|
 
 ## Log parsing errors
 
@@ -51,8 +56,8 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 
 ## Log collector errors
 
-|ISSUE | RESOLUTION |
-|--------|--|
+|Issue|Resolution|
+|----|----|
 |Could not connect to the log collector over FTP| 1. Verify that you are using FTP credentials and not SSH credentials. <br />2. Verify that the FTP client you are using is not set to SFTP.  |
 |Failed updating collector configuration | 1. Verify that you entered the latest access token. <br />2. Verify in your firewall that the log collector is allowed to initiate outbound traffic on port 443.|
 |Logs sent to the collector do not appear in the portal | 1.  Check to see if there are failed parsing tasks in the Governance log.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;If so, troubleshoot the error with the Log Parsing error table above.<br /> 2. If not, check the data sources and Log collector configuration in the portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. In the Data source page, verify that the data source you are using is accurately configured. <br />&nbsp;&nbsp;&nbsp;&nbsp;b. In the Log collectors page, verify that the data source is linked to the right log collector. <br /> 3. Check the local configuration of the on-premises log collector machine.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. Log in to the log collector over SSH and run the collector_config utility.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. Confirm that your firewall or proxy is sending logs to the log collector using the protocol you defined (Syslog/TCP, Syslog/UDP or FTP) and that it is sending them to the correct port and directory.<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. Run netstat on the machine and verify that it receives incoming connections from your firewall or proxy <br /> 4.   Verify that the log collector is allowed to initiate outbound traffic on port 443. |
