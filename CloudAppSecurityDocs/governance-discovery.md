@@ -58,7 +58,7 @@ Cloud App Security enables you to block access to unsanctioned apps by using you
 
 3. In **Generate block script**, select the appliance you want to generate the block script for.
 
-    ![Generate block script pop-up](media/generate-block-script-popup.png)
+    ![Generate block script pop-up](media/generate-block-script-pop-up.png)
 
 4. Then, click the Generate script button to create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name
 

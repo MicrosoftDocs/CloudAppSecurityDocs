@@ -75,7 +75,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![connect ServiceNow](media/connect-servicenow.png "connect ServiceNow")
 
-8. In the popup, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
+8. In the pop-up, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
     ![ServiceNow user ID](media/servicenow-userid.png)
 
