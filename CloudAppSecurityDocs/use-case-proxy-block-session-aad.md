@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/24/2019
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
@@ -42,22 +42,29 @@ An account manager in your organization wants to check something in Salesforce f
 
 ## The solution
 
-Protect your organization by monitoring and controlling cloud app use using Azure AD conditional access and Microsoft Cloud App Security Conditional Access App Control.
+Protect your organization by monitoring and controlling cloud app use with any IdP solution and Cloud App Security's Conditional Access App Control.
 
 ## Prerequisites
 
-* A valid license for Azure AD Premium P1
-* Configure a cloud app for SSO in Azure AD
+* A valid license for Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
+* Configure a cloud app for SSO using one of the following authentication protocols:
+
+    |IdP|Protocols|
+    |---|---|
+    |Azure AD|SAML 2.0 or OpenID Connect|
+    |Other|SAML 2.0|
 * Make sure the [app is deployed to Cloud App Security](proxy-deployment-aad.md)
 
 ## Create a block download policy for unmanaged devices
 
 Cloud App Security session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy AND a session policy.
 
-### Step 1: Create an Azure AD conditional access policy
+### Step 1: Configure your IdP to work with Cloud App Security
 
-1. Create an Azure AD conditional access policy with assigned users and app.
-2. Select **Use Conditional Access App Control enforced restrictions** under session controls within the conditional access policy.
+Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
+
+* For [Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+* For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 After completing this task, go to the Cloud App Security portal and create a session policy to monitor and control file downloads in the session.
 
@@ -111,7 +118,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 2. The file should be blocked and you should receive the message you set under **Customize block messages**.
 
-3. In the Cloud App Security portal, click on **Control** followed by **Policies**, and then click on the policy you’ve created to view the policy report. A session policy match should appear shortly.
+3. In the Cloud App Security portal, click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
 
 4. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
 
