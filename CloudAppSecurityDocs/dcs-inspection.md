@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/30/2019
+ms.date: 04/16/2020
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -33,7 +33,7 @@ ms.custom: seodec18
 Microsoft Cloud App Security enables you to natively use the Microsoft Data Classification Service to classify the files in your cloud apps. Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection, and Microsoft Cloud App Security. The classification service allows you to extend your data classification efforts to the third-party cloud apps protected by Microsoft Cloud App Security, using the decisions you already made across an even greater number of apps.
 
 >[!NOTE]
-> This feature is currently available in the US, Europe (except France), Australia, India, Canada, Japan, and APAC.
+> This feature is currently available in the US, Europe, Australia, India, Canada, Japan, and APAC.
 
 ## Enable content inspection with Data Classification Services
 
