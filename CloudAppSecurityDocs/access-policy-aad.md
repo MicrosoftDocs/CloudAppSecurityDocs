@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -31,30 +31,18 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't domain joined, and not managed by Windows Intune by rolling out client certificates to managed devices or by using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate.
+Microsoft Cloud App Security access policies enable real-time monitoring and control over access to cloud apps based on user, location, device, and app. You can create access policies for any device, including devices that aren't Hybrid Azure AD Join, and not managed by Microsoft Intune by rolling out client certificates to managed devices or by using existing certificates, such as third-party MDM certificates. For example, you can deploy client certificates to managed devices, and then block access from devices without a certificate.
 
 > [!NOTE]
 > Instead of allowing or blocking access completely, with [session policies](session-policy-aad.md) you can allow access while monitoring the session and/or limit specific session activities.
 
 ## Prerequisites to using access policies
 
-- Azure AD Premium P1 license
+- Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
 - The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
-- An [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) should be in place that redirects users to Microsoft Cloud App Security, as described below.
-
-> [!NOTE]
-> - Access policies also support apps that are configured with identity providers other than Azure AD. For more information send an email to mcaspreview@microsoft.com.
-
-## Create an Azure AD conditional access policy
-
-Azure Active Directory conditional access policies and Cloud App Security session policies work in tandem to examine each user session and make policy decisions for each app. To set up a conditional access policy in Azure AD, follow this procedure:
-
-1. Configure an [Azure AD conditional access policy](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) with assignments for user or group of users and the app you want to control with Conditional Access App Control.
-
-    > [!NOTE]
-    > Only apps that were [deployed with Conditional Access App Control](proxy-deployment-aad.md) will be affected by this policy.
-
-2. Route users to Microsoft Cloud App Security by selecting the **Use Conditional Access App Control enforced restrictions** under **Session**.
+- Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
+  - For [Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Cloud App Security access policy
 

@@ -127,7 +127,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     * **Short Description & Long Description** (optional): Microsoft Cloud App Security provides you with visibility into cloud applications, helping you control, investigate, and govern cloud application use; secure corporate data; and detect suspicious activities for any cloud application.
 
-    * Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon**, click **Select** next to the 128x128 image and drag it to the popup screen. Click **Select** next to the 32x32 image and drag it to the popup screen.
+    * Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon**, click **Select** next to the 128x128 image and drag it to the pop-up screen. Click **Select** next to the 32x32 image and drag it to the pop-up screen.
 
     * Scroll down and in the **Drive Integration** section, type the following URL under **Open URL:**
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
