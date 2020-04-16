@@ -99,7 +99,7 @@ For more information about setting up Workday integration users, security groups
 
     ![Screenshot of adding app connector](media/connect-workday-add-app.png)
 
-1. In the popup, add your instance name and then click **Connect Workday**.
+1. In the pop-up, add your instance name and then click **Connect Workday**.
 
     ![Screenshot of adding instance name](media/connect-workday-add-app-connect.png)
 
@@ -107,7 +107,7 @@ For more information about setting up Workday integration users, security groups
 
     ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
 
-1. In Workday, a popup will ask you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
+1. In Workday, a pop-up will ask you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
 
     ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
 

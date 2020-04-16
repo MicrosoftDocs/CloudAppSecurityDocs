@@ -127,7 +127,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 1. After you've finished building your query, click the **Save as** button in the top right corner of the filters.
 
-1. In the **Save query** popup, name your query.
+1. In the **Save query** pop-up, name your query.
 
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
