@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -53,11 +53,14 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Log collector performance
 
-The Log collector can successfully handle log capacity of up to 50 GB per hour. The main bottlenecks in the log collection process are:
+The Log collector can successfully handle log capacity of up to 50 GB per hour comprised of up to 10 data sources. The main bottlenecks in the log collection process are:
 
 * Network bandwidth - Your network bandwidth determines the log upload speed.
 
-* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
+* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector's disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, we recommend that you split the traffic between multiple log collectors.
+
+> [!NOTE]
+> If you require more than 10 data sources, we recommend that you split the data sources between multiple log collectors.
 
 ## Set up and configuration  
 
