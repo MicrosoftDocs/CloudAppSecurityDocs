@@ -71,7 +71,7 @@ The following table lists, per cloud app, which abilities are supported with App
 | **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
 | **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
-| **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | t supported by provider |
+| **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | Not supported by provider |
 | **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
 | **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
