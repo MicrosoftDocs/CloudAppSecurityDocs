@@ -65,7 +65,7 @@ The following governance actions can be taken for connected apps either on a spe
 
     - **Reduce public access** - Set Publicly available files to be available only with a shared link. (Google)
 
-    - **Expire shared link** - Ability to set an experation date for a shared link after which it will no longer be active. (Box)
+    - **Expire shared link** - Ability to set an expiration date for a shared link after which it will no longer be active. (Box)
 
     - **Change sharing link access level** - Ability to change the access level of the shared link between company only, collaborators only, and public. (Box)
 
