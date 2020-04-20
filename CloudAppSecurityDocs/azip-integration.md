@@ -92,7 +92,7 @@ To enable Cloud App Security to scan files with content inspection enabled for c
 1. In Cloud App Security, under the settings cog, select the **Settings** page under the **System** heading.
 
     ![Settings menu](media/azip-system-settings.png)
-1. Under **Azure Information Protection**, select **Automatically scan files for Azure Information Protection classification labels**.
+1. Under **Azure Information Protection**, select **Automatically scan new files for Azure Information Protection classification labels**.
 
     ![enable azure information protection](media/enable-azip.png)
 

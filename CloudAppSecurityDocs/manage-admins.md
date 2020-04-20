@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/25/2020
+ms.date: 04/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -145,9 +145,9 @@ To export a log, perform the following steps:
 
 ## Invite external admins
 
-Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal.
+Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. To add external users, provide an external email address in the steps under [Add additional admins](#add-additional-admins).
 
-To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
+Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
 ![choose tenant](media/choose-tenant.png "choose tenant")
 

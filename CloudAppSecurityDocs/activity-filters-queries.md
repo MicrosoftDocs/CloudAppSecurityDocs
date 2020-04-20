@@ -123,7 +123,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 2. After you've finished building your query, click the **Save as** button in the top right corner of the filters.
 
-3. In the **Save query** popup, name your query.
+3. In the **Save query** pop-up, name your query.
 
    ![new query](media/new-activity-query.png)
 

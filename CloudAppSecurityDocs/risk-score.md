@@ -80,9 +80,9 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
     ![Suggest an app to Cloud App Security](media/suggest-new-app.png)
 
-2. In the **Suggest new cloud app** popup, fill in details about the new . Include the name and domain of the app.
+2. In the **Suggest new cloud app** pop-up, fill in details about the new . Include the name and domain of the app.
 
-    ![Suggest an app popup to Cloud App Security](media/suggest-new-app-popup.png)
+    ![Suggest an app pop-up to Cloud App Security](media/suggest-new-app-pop-up.png)
 
 3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. Filling in contact information allows you to be updated when the analysis is complete.
 
@@ -92,9 +92,9 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
     ![Request score update](media/request-score-update.png)
 
-2. In the **Suggest an improvement** popup, select whether you want to request a score update, suggest a new risk factor or update app data.
+2. In the **Suggest an improvement** pop-up, select whether you want to request a score update, suggest a new risk factor or update app data.
 
-    ![suggest and improvement to Cloud App Security](media/suggest-improvement-popup.png)
+    ![suggest and improvement to Cloud App Security](media/suggest-improvement-pop-up.png)
 
 3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. Filling in contact information allows you to be updated when the analysis is complete.
 
