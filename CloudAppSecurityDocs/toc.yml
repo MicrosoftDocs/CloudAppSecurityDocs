@@ -321,19 +321,19 @@
       - name: Mark alert as unread
         href: api-alerts-mark-unread.md
     -name: Entities
-      items:
-      - name: Overview
-        href: api-entities.md
-      - name: List entities
-        href: api-entities-list.md
-      - name: Fetch entity
-        href: api-entities-fetch.md
-      - name: Fetch entity tree
-        href: api-entities-fetch-tree.md
+     items:
+     - name: Overview
+       href: api-entities.md
+     - name: List entities
+       href: api-entities-list.md
+     - name: Fetch entity
+       href: api-entities-fetch.md
+     - name: Fetch entity tree
+       href: api-entities-fetch-tree.md
     -name: Files
-      items:
-      - name: Overview
-        href: api-files.md
+     items:
+     - name: Overview
+       href: api-files.md
   - name: Troubleshooting
     items:
     - name: Troubleshooting Cloud Discovery
