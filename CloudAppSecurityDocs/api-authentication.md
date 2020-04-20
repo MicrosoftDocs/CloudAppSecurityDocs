@@ -18,7 +18,7 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-In order to access the Cloud App Security API, you have to create an API token and use it in your software to connect to the API.
+In order to access the Cloud App Security API, you have to create an API token and use it in your software to connect to the API. This token will be included in the header when Cloud App Security makes API requests.
 
 The API tokens tab enables you to help you manage all the API tokens of your tenant.
 
@@ -59,11 +59,6 @@ After a token is revoked, it's removed from the table, and the software that was
 
 > [!NOTE]
 > SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Troubleshooting SIEM integration issues](troubleshooting-siem.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 

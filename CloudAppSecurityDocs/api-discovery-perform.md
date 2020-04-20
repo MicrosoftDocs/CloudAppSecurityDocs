@@ -46,7 +46,7 @@ PUT https://<initiate_file_upload_response_url>
 Here is an example of the request for Azure.
 
 ```rest
-curl --request PUT --upload-file <file_to_upload> "https://<initiate_file_upload_response_url>" -H "x-ms-blob-type: BlockBlob"
+curl --request PUT --upload-file <file_to_upload> -H "x-ms-blob-type: BlockBlob" "https://<initiate_file_upload_response_url>"
 ```
 
 Here is an example of the request for Azure Java SDK.

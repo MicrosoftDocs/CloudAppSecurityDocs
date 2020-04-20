@@ -24,9 +24,9 @@ Additionally, Cloud App Security enables you to block access to unsanctioned app
 
 The following is a list of discovery requests:
 
-- **upload_url:** Initiate file upload
-- **<initiate_file_upload_response_url>:** Perform file upload
-- **done_upload:** Finalize file upload
-- **discovery_block_scripts:** Generate block script
+- [Initiate file upload](api-discovery-initiate.md)
+- [Perform file upload](api-discovery-perform.md)
+- [Finalize file upload](api-discovery-finalize.md)
+- [Generate block script](api-discovery-script.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
