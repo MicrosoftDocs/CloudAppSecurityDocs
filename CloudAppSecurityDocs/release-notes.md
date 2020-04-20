@@ -33,6 +33,8 @@ Released April 5, 2020
 
 - **Enhanced access and session controls with any IdP (Preview)**  
 Access and session controls now support SAML apps configured with any identity provider. The public preview of this new feature is now gradually rolling out. To configure these controls, see the [Deployment guide](proxy-deployment-aad.md).
+- **New bulk deanonymization of users and machines**  
+We have expanded and simplified the process of deanonymizing one or more users and machines under investigation. For more information about bulk deanonymization, see [How data anonymization works](cloud-discovery-anonymizer.md#how-data-anonymization-works).
 
 ## Cloud App Security release 170 and 171
 
