@@ -26,12 +26,12 @@ Run the GET request to initiate the upload process. This call, the first of the 
 GET /api/v1/discovery/upload_url/
 ```
 
-## Request parameters
+## Request URL parameters
 
-|Parameter|Description|
-|---|---|
-|filename|Name of the file you want to upload to Cloud Discovery processing|
-|source|The type of Cloud Discovery log file being uploaded|
+| Parameter | Description |
+| --- |--- |
+| filename | Name of the file you want to upload to Cloud Discovery processing |
+| source | The type of Cloud Discovery log file being uploaded |
 
 The following source types are currently supported:
 
@@ -82,10 +82,10 @@ The following source types are currently supported:
 
 ## Response parameters
 
-|Parameter|Description|
-|---|---|
-|url|The target URL that will perform your Cloud Discovery upload.|
-|provider|Either "azure" or "aws", an indication whether the upload is target to Windows Azure Storage and AWS S3 storage.|
+| Parameter | Description |
+| --- | --- |
+| url | The target URL that will perform your Cloud Discovery upload. |
+| provider | Either "azure" or "aws", an indication whether the upload is target to Windows Azure Storage and AWS S3 storage. |
 
 ## Example
 

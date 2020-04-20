@@ -288,6 +288,52 @@
         href: api-discovery-finalize.md
       - name: Generate block script
         href: api-discovery-script.md
+    - name: Data Enhancement
+      items:
+      - name: Create IP address range
+        href: api-data-enrichment.md
+    - name: Activities
+      items:
+      - name: Overview
+        href: api-activities.md
+      - name: List activities
+        href: api-activities-list.md
+      - name: Fetch activity
+        href: api-activities-fetch.md
+      - name: Feedback on activity
+        href: api-activities-feedback.md
+    - name: Alerts
+      items:
+      - name: Overview
+        href: api-alerts.md
+      - name: List alerts
+        href: api-alerts-list.md
+      - name: Bulk dismiss
+        href: api-alerts-bulk-dismiss.md
+      - name: Bulk resolve
+        href: api-alerts-bulk-resolve.md
+      - name: Fetch alert
+        href: api-alerts-fetch.md
+      - name: Dismiss alert
+        href: api-alerts-dismiss.md
+      - name: Mark alert as read
+        href: api-alerts-mark-read.md
+      - name: Mark alert as unread
+        href: api-alerts-mark-unread.md
+    -name: Entities
+      items:
+      - name: Overview
+        href: api-entities.md
+      - name: List entities
+        href: api-entities-list.md
+      - name: Fetch entity
+        href: api-entities-fetch.md
+      - name: Fetch entity tree
+        href: api-entities-fetch-tree.md
+    -name: Files
+      items:
+      - name: Overview
+        href: api-files.md
   - name: Troubleshooting
     items:
     - name: Troubleshooting Cloud Discovery

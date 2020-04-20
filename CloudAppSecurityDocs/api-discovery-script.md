@@ -26,23 +26,23 @@ Run the GET request to get a block script for your network appliance.
 GET /api/discovery/discovery_block_scripts/
 ```
 
-## Request parameters
+## Request URL parameters
 
-|Parameter|Description|
-|---|---|
-|format|The format of the network appliance.|
+| Parameter | Description |
+| --- | --- |
+| format | The format of the network appliance. |
 
 The following formats are currently supported:
 
-|Appliance|Format|
-|---|---|
-|BlueCoat ProxySG|102|
-|Cisco ASA|104|
-|Fortinet FortiGate|108|
-|Juniper SRX|129|
-|Palo Alto|112|
-|Websense|135|
-|Zscaler|120|
+| Appliance | Format |
+| --- | --- |
+| BlueCoat ProxySG | 102 |
+| Cisco ASA | 104 |
+| Fortinet FortiGate | 108 |
+| Juniper SRX | 129 |
+| Palo Alto | 112 |
+| Websense | 135 |
+| Zscaler | 120 |
 
 > [!NOTE]
 > If you can't find your appliance, generate a block script manually using the portal.

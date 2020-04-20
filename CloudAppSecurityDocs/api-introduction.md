@@ -103,29 +103,29 @@ curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_regi
 
 The following is a list of supported operators:
 
-|Operator|Field type|Description|
-|---|---|---|
-|contains|list of strings|Returns all relevant records containing one of the provided strings|
-|deq|list of values|Returns all records who contain one value that does not equal one the provided values|
-|descendantof|list of values|Returns all relevant records matching values or descendants of them|
-|doesnotstartwith|list of strings|Returns all relevant records not starting with each of the provided strings|
-|endswith|list of strings|Returns all relevant records ending with one of the provided strings
-|eq|list of values|Returns all relevant records containing one of the provided values|
-|gt|single value|Returns all records whose value is greater than the provided value|
-|gte|single value|Returns all records whose value is greater than or equal to the provided value|
-|gte_ndays|number|Returns all records with date later than N days ago|
-|isnotset|boolean|When set to “true”, returns all relevant records that don’t have a value in the specified field|
-|isset|boolean|When set to “true”, returns all relevant records that have a value in the specified field|
-|lt|single value|Returns all records whose value is less than the provided value|
-|lte|single value|Returns all records whose value is less than or equal to the provided value|
-|lte_ndays|number|Returns all records with date earlier than N days ago|
-|ncontains|list of strings|Returns all relevant records not containing one of the provided strings|
-|ndescendantof|list of values|Returns all relevant records not matching values or descendants of them|
-|neq|list of values|Returns all relevant records not containing all the provided values|
-|range|list of objects containing “start” and “end” fields|Returns all records within one of the provided ranges|
-|startswith|list of strings|Returns all relevant records starting with one of the provided strings|
-|startswithsingle|string|Returns all relevant records starting with the provided string|
-|text|string|Performs a full-text search of all records|
+| Operator | Response type | Description |
+| --- | --- | --- |
+| contains | list of strings | Returns all relevant records containing one of the provided strings |
+| deq | list of values | Returns all records who contain one value that does not equal one the provided values |
+| descendantof | list of values | Returns all relevant records matching values or descendants of them |
+| doesnotstartwith | list of strings | Returns all relevant records not starting with each of the provided strings |
+| endswith | list of strings | Returns all relevant records ending with one of the provided strings |
+| eq | list of values | Returns all relevant records containing one of the provided values |
+| gt | single value | Returns all records whose value is greater than the provided value |
+| gte | single value | Returns all records whose value is greater than or equal to the provided value |
+| gte_ndays | number | Returns all records with date later than N days ago |
+| isnotset | boolean | When set to “true”, returns all relevant records that don’t have a value in the specified field |
+| isset | boolean | When set to “true”, returns all relevant records that have a value in the specified field |
+| lt | single value | Returns all records whose value is less than the provided value |
+| lte | single value | Returns all records whose value is less than or equal to the provided value |
+| lte_ndays | number | Returns all records with date earlier than N days ago |
+| ncontains | list of strings | Returns all relevant records not containing one of the provided strings |
+| ndescendantof | list of values | Returns all relevant records not matching values or descendants of them |
+| neq | list of values | Returns all relevant records not containing all the provided values |
+| range | list of objects containing “start” and “end” fields | Returns all records within one of the provided ranges |
+| startswith | list of strings | Returns all relevant records starting with one of the provided strings |
+| startswithsingle | string | Returns all relevant records starting with the provided string |
+| text | string | Performs a full-text search of all records |
 
 ## Next steps
 
