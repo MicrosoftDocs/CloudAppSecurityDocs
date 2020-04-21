@@ -36,7 +36,7 @@ This article provides a list of content inspection statuses and their meanings.
 The table lists each content inspection status and its description.
 
 |Content inspection status|Description|
-|----|----|
+|---|---|
 |Completed|The content inspection completed successfully.|
 |Not applicable|Content inspection wasn't applicable for this file. This status might appear because no policy requires content inspection of this file or because the file type isn't supported.|
 |Pending|The file is currently in the content inspection queue.|
@@ -45,7 +45,7 @@ The table lists each content inspection status and its description.
 |Failed: File is corrupted|The file is corrupted in some way and couldn't be inspected.|
 |Failed: Internal error|Something undetermined went wrong when trying to inspect the file.|
 |Failed: External DLP error|Something in your external DLP went wrong causing Cloud App Security to fail inspecting the content.|
-|Failed: File size exceeded|The file limit varies depending on the file size and the number of characters.|
+|Failed: File size exceeded|The file exceeded the maximum file size of 50 MB or 1 million characters.|
 |Failed: File access denied|The file is external to your cloud and couldn't be accessed by Cloud App Security.|
 |Failed: File was deleted|The file no longer exists in your cloud and couldn't be inspected.|
 |Failed: Unsupported file type|Cloud App Security can't perform content inspection on this file type. This status may appear because the file type isn't supported or because the file isn't actually in the format of the expected file type.|
