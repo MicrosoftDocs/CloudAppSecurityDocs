@@ -18,9 +18,9 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-The Files API provides you with metadata about the files and folders stored in your cloud apps, such as last modification date, ownership and more.
+The Files API provides you with metadata about the files and folders stored in your cloud apps, such as last modification date, ownership, and more.
 
-The following is a list of file requests:
+The following lists the supported requests:
 
 - List files
 - Report on files
@@ -31,14 +31,14 @@ The following is a list of file requests:
 
 For information about how filters work, see [Filters](api-introduction.md#filters).
 
-The following is a list of supported filters:
+The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
 | service | integer | eq, neq | Filter files from specified app appID, for example: 11770 |
 | instance | integer | eq, neq | Filter files from specified instances |
 | fileType | integer | eq, neq | Filter files with the specified file type. Possible values include:<br /><br />**0**: Other<br />**1**: Document<br />**2**: Spreadsheet<br />**3**: Presentation<br />**4**: Text<br />**5**: Image<br />**6**: Folder |
-| allowDeleted | boolean | eq | Possible values include:<br /><br />**true**: Returns deleted files<br />**false** or not set: Returns non-deleted (including trashed) files. This will be overidden by trashed operator |
+| allowDeleted | boolean | eq | Possible values include:<br /><br />**true**: Returns deleted files<br />**false** or not set: Returns non-deleted (including trashed) files. This will be overridden by trashed operator |
 | policy | string | cabinetmatchedrulesequals, neq, isset, isnotset | Filter activities related to the specified policies |
 | filename | string | eq | text Filter files by filename |
 | modifiedDate | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter files by the date they were last modified |

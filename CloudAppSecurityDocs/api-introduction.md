@@ -29,7 +29,7 @@ The Microsoft Cloud App Security API provides programmatic access to Cloud App S
 
 ## What actions are supported?
 
-The following is a list of actions supported:
+The following table describes the actions supported:
 
 |Resource|HTTP verbs|URI routes|
 |---|---|---|
@@ -44,7 +44,7 @@ Where **Resource** represents a group of related entities.
 
 ## What field types are supported?
 
-The following is a list of supported field types:
+The following table describes the supported field types:
 
 |Field|Description|
 |---|---|
@@ -101,7 +101,7 @@ curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_regi
 > [!NOTE]
 > Not all operators are compatible with all filters.
 
-The following is a list of supported operators:
+The following table describes the supported operators:
 
 | Operator | Response type | Description |
 | --- | --- | --- |

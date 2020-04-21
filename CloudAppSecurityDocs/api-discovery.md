@@ -22,7 +22,7 @@ Cloud Discovery parses system logs provided by the user to detect new and unknow
 
 Additionally, Cloud App Security enables you to block access to unsanctioned apps by using your existing on-premises security appliances. Use the Generate block script call to get a dedicated block script and import it to your appliance.
 
-The following is a list of discovery requests:
+The following lists the supported requests:
 
 - [Initiate file upload](api-discovery-initiate.md)
 - [Perform file upload](api-discovery-perform.md)

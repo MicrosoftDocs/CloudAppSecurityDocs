@@ -20,7 +20,7 @@ ms.suite: ems
 
 The Activity API gives you visibility into all actions performed in your cloud apps. The data from this API can supply information regarding who logs in to which app and when, which files are being downloaded from suspicious locations, and so on.
 
-The following is a list of activity requests:
+The following lists the supported requests:
 
 - [List activities](api-activities-list.md)
 - [Fetch activity](api-activities-fetch.md)
@@ -30,7 +30,7 @@ The following is a list of activity requests:
 
 For information about how filters work, see [Filters](api-introduction.md#filters).
 
-The following is a list of supported filters:
+The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -58,8 +58,8 @@ The following is a list of supported filters:
 | date | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter activities that occurred in the specified time ranges |
 | policy | string | eq, neq, isset, isnotset | Filter activities related to the specified policies |
 | source | string | eq, neq | Filter all activities by source type or stream ID. Example: `[{ “s:stream-id”, “t:source-type” }]` Possible source type values include:<br /><br />**0**: Access control<br />**1**: Session control<br />**2**: App connector<br />**3**: App connector analysis<br />**5**: Discovery<br />**6**: MDATP |
-| activity.alertId | string | eq | Filter all activities relevant to an alert id |
-| activityObject | string | eq, neq | Filter activities containing the specified Id |
+| activity.alertId | string | eq | Filter all activities relevant to an alert ID |
+| activityObject | string | eq, neq | Filter activities containing the specified ID |
 | fileLabels | string | eq, neq | Filter files containing the specified file labels (tags) IDs |
 | created || lte, gte, range, gt, lt, eq | |
 | entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ “id”: “entity-id”, “saas”: 11161, “inst”: 0 }]` |

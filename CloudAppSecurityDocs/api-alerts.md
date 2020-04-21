@@ -20,7 +20,7 @@ ms.suite: ems
 
 The Alerts API provides you with information about immediate risks identified by Cloud App Security and require attention. Alerts can result from suspicious usage patterns or from files containing content that violates company policy.
 
-The following is a list of activity requests:
+The following lists the supported requests:
 
 - [List alerts](api-alerts-list.md)
 - [Bulk dismiss](api-alerts-bulk-dismiss.md)
@@ -34,7 +34,7 @@ The following is a list of activity requests:
 
 For information about how filters work, see [Filters](api-introduction.md#filters).
 
-The following is a list of supported filters:
+The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ The following is a list of supported filters:
 | resolutionDate | timestamp | lte, gte, range | Filter by the time when an alert was resolved |
 | risk | integer | eq, neq | Filter by risk |
 | alertType | integer | eq, neq | Filter by alert type |
-| id | string | eq, neq | Filter by alert IDs |
+| ID | string | eq, neq | Filter by alert IDs |
 | source | string | eq | The alert’s origin, either built-in or policy |
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -20,7 +20,7 @@ ms.suite: ems
 
 The Entities API provides you with basic information about the users and accounts using your organization’s cloud apps, allowing you to understand service use patterns.
 
-The following is a list of entity requests:
+The following lists the supported requests:
 
 - [List entities](api-entities-list.md)
 - [Fetch entity](api-entities-fetch.md)
@@ -30,16 +30,16 @@ The following is a list of entity requests:
 
 For information about how filters work, see [Filters](api-introduction.md#filters).
 
-The following is a list of supported filters:
+The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
 | type| string | eq, neq | Filter entities by their type |
 | isAdmin | string | eq | Filter entities that are admins |
-| entity | entity pk | eq, neq | Filter entities with specific entities pks. If a user is selected, will also return all of it’s accounts. Example: `[{ “id”: “entity-id”, “saas”: 11161, “inst”: 0 }]` |
+| entity | entity pk | eq, neq | Filter entities with specific entities pks. If a user is selected, will also return all of its accounts. Example: `[{ “id”: “entity-id”, “saas”: 11161, “inst”: 0 }]` |
 | userGroups |string | eq, neq | Filter entities by their associated group IDs |
-| app | integer | eq, neq | Filter entities using services with the specified saas id for example: 11770 |
-| instance | integer | eq, neq | Filter entities using services with the specified Appstances (SaaS Id and Instance Id), for example: 11770, 1059065 |
+| app | integer | eq, neq | Filter entities using services with the specified SaaS ID for example: 11770 |
+| instance | integer | eq, neq | Filter entities using services with the specified Appstances (SaaS ID and Instance ID), for example: 11770, 1059065 |
 | isExternal | boolean | eq | The entity’s affiliation. Possible values include:<br /><br />**true**: External<br />**false**: Internal<br />**null**: No value |
 | domain | string | eq, neq, isset, isnotset | The entity’s related domain |
 | organization | string | eq, neq, isset, isnotset | Filter entities with the specified organization unit |
