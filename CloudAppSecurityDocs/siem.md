@@ -154,24 +154,26 @@ The following text is an alerts logfile example:
 
 #### Sample Cloud App Security alerts in CEF format
 
-|   Applicable to   |      CEF field name      |                                                   Description                                                   |
-|-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Activities/Alerts |          start           |                                           Activity or alert timestamp                                           |
-| Activities/Alerts |           end            |                                           Activity or alert timestamp                                           |
-| Activities/Alerts |            rt            |                                           Activity or alert timestamp                                           |
-| Activities/Alerts |           msg            |                              Activity or alert description as shown in the portal                               |
-| Activities/Alerts |          suser           |                                         Activity or alert subject user                                          |
-| Activities/Alerts |  destinationServiceName  |                  Activity or alert originating app, for example, Office 365, Sharepoint, Box.                   |
-| Activities/Alerts |        cs\<X>Label        |        Each label has a different meaning, but the label itself explains it, for example, targetObjects.        |
-| Activities/Alerts |          cs\<X>           | The information corresponding to the label (the target user of the activity or alert as per the label example). |
-|    Activities     |     EVENT_CATEGORY_*     |                                       High-level category of the activity                                       |
-|    Activities     |         \<ACTION>         |                                  The activity type, as displayed in the portal                                  |
-|    Activities     |        externalId        |                                                    Event ID                                                     |
-|    Activities     |           dvc            |                                             IP of the client device                                             |
-|    Activities     | requestClientApplication |                                         User agent of the client device                                         |
-|      Alerts       |       \<alert type>       |                                  For example, “ALERT_CABINET_EVENT_MATCH_AUDIT”                                  |
-|      Alerts       |          \<name>          |                                             The matched policy name                                             |
-|      Alerts       |        externalId        |                                                    Alert ID                                                     |
+| Applicable to | CEF field name | Description |
+| --- | --- | --- |
+| Activities/Alerts | start | Activity or alert timestamp |
+| Activities/Alerts | end | Activity or alert timestamp |
+| Activities/Alerts | rt | Activity or alert timestamp |
+| Activities/Alerts | msg | Activity or alert description as shown in the portal |
+| Activities/Alerts | suser | Activity or alert subject user |
+| Activities/Alerts | destinationServiceName | Activity or alert originating app, for example, Office 365, Sharepoint, Box. |
+| Activities/Alerts | cs\<X>Label | Each label has a different meaning, but the label itself explains it, for example, targetObjects. |
+| Activities/Alerts | cs\<X> | The information corresponding to the label (the target user of the activity or alert as per the label example). |
+| Activities | EVENT_CATEGORY_* | High-level category of the activity |
+| Activities | \<ACTION> | The activity type, as displayed in the portal |
+| Activities | externalId | Event ID |
+| Activities | dvc | IP of the client device |
+| Activities | requestClientApplication | User agent of the client device |
+| Alerts | \<alert type> | For example, “ALERT_CABINET_EVENT_MATCH_AUDIT” |
+| Alerts | \<name> | The matched policy name |
+| Alerts | externalId | Alert ID |
+| Alerts | src | IPv4 address of the client device |
+| Alerts | c6a1 | IPv6 address of the client device |
 
 ### Step 3: Validate that the SIEM agent is working
 
