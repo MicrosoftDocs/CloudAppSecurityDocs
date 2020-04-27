@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 04/26/2020
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -27,12 +27,28 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 173 and 174
+
+Released April 26, 2020
+
+- **New SEIM agent CEF format for alerts**  
+As part of our effort to enrich the alert information provided in the CEF files used by generic SIEM servers, we have extended the format to include the following client fields:
+  - IPv4 address
+  - IPv6 address
+  - IP address location
+
+    For more information, see [CEF file format](siem.md#sample-cloud-app-security-alerts-in-cef-format).
+- **Enhanced detection logic: Impossible travel**  
+We've updated the detection logic for impossible travel to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Impossible travel](anomaly-detection-policy.md#impossible-travel).
+
 ## Cloud App Security release 172
 
 Released April 5, 2020
 
 - **Enhanced access and session controls with any IdP (Preview)**  
 Access and session controls now support SAML apps configured with any identity provider. The public preview of this new feature is now gradually rolling out. To configure these controls, see the [Deployment guide](proxy-deployment-aad.md).
+- **New bulk deanonymization of users and machines**  
+We have expanded and simplified the process of deanonymizing one or more users and machines under investigation. For more information about bulk deanonymization, see [How data anonymization works](cloud-discovery-anonymizer.md#how-data-anonymization-works).
 
 ## Cloud App Security release 170 and 171
 
