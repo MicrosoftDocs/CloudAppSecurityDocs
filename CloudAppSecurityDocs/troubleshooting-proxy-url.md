@@ -35,6 +35,7 @@ So even though Fabrikam does not actually use Cloud App Security, they see the D
 > - `*.rs-mcas.ms`
 > - `*.admin-rs2-mcas.ms`
 > - `*.rs2-mcas.ms`
+> - `*.admin-mcas.ms`
 > - `*.mcas.ms`
 
 ## Here's why you see `*.cas.ms`, `*.mcas.ms`, or `*.mcas-gov.us` in your URL
