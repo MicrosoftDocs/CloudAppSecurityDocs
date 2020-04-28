@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/31/2020
+ms.date: 04/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -82,7 +82,7 @@ Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD Joined 
 
 ### Client-certificate authenticated devices
 
-The device identification mechanism can request authentication from relevant devices using client certificates. You can either use existing client certificates already deployed in your organization or roll out new client certificates to managed devices. You then use the presence of those certificates to set access and session policies.
+The device identification mechanism can request authentication from relevant devices using client certificates. You can either use existing client certificates already deployed in your organization or roll out new client certificates to managed devices. Make sure that the client certificate is installed in the user store and not the computer store. You then use the presence of those certificates to set access and session policies.
 
 SSL client certificates are verified via a trust chain. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session.
 
@@ -95,8 +95,7 @@ When a client certificate check is performed, Cloud App Security checks for the 
 
 > [!NOTE]
 >
-> - A client certificate check requires the CRL protocol and applies to all certificates. If your client certificate does not contain a CRL endpoint, you will not be able to connect from managed devices.
-> - Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
+> Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
 
 To configure a policy to leverage device management via client certificates:
 
