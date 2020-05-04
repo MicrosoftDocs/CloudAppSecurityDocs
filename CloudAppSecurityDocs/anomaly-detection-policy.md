@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/04/2020
+ms.date: 03/24/2020
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -32,7 +32,7 @@ ms.custom: seodec18
 
 Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you can immediately run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies provide immediate results by providing immediate detections, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network.  In addition, the new policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats.
 
-The anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities.  These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity. These detections also use machine learning algorithms designed to profile the users and sign in pattern to reduce false positives.
+The anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities.  These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also use machine learning algorithms designed to profile the users and sign in pattern to reduce false positives.
 
 Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into risk factors, as follows:
 
@@ -49,8 +49,8 @@ Based on the policy results, security alerts are triggered. Cloud App Security l
 
 In addition to native Cloud App Security alerts, you will also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
 
-* Leaked credentials: Triggered when a user’s valid credentials have been leaked. For more information, see [Azure AD’s Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
-* Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection (disabled by default). For more information, see [Azure AD’s Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
+* Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Azure AD's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
+* Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection (disabled by default). For more information, see [Azure AD's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
 These policies will appear on the Cloud App Security policies page and can be enabled, or disabled, but not edited.
 
@@ -64,10 +64,10 @@ The following anomaly detection policies are available:
 
 ### Impossible travel
 
-* This detection identifies two user activities (is a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user’s activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities. The sensitivity slider allows you to impact the algorithm and define how strict the detection logic is. The higher the sensitivity level, the lower the suppression that is applied as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
+* This detection identifies two user activities (is a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user's activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities. The sensitivity slider allows you to impact the algorithm and define how strict the detection logic is. The higher the sensitivity level, the lower the suppression that is applied as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
 
     > [!NOTE]
-    > When the IP addresses on both sides of the travel are [tagged as corporate](ip-tags.md), the travel is considered trusted and excluded from triggering the Impossible travel detection. However, if the IP address of only one side of the travel is tagged as corporate, the detection is triggered as normal.
+    > When the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
 
 ### Activity from infrequent country
 
@@ -87,7 +87,7 @@ The following anomaly detection policies are available:
 
 ### Activity from anonymous IP addresses
 
-* This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device’s IP address, and may be used for malicious intent. This detection uses a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
+* This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device's IP address, and may be used for malicious intent. This detection uses a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
 
 ### Ransomware activity
 
@@ -96,7 +96,7 @@ The following anomaly detection policies are available:
 ### Activity performed by terminated user
 
 * This detection enables you to able to identify when a terminated employee continues to perform actions on your SaaS apps. Because data shows that the greatest risk of insider threat comes from employees who left on bad terms, it's important to keep an eye on the activity on accounts from terminated employees. Sometimes, when employees leave a company, their accounts are de-provisioned from corporate apps, but in many cases they still retain access to certain corporate resources. This is even more important when considering privileged accounts, as the potential damage a former admin can do is inherently greater.
-This detection takes advantage of Cloud App Security's ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was terminated, and actual activity on other apps. For example, an employee who’s Azure AD account was terminated, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
+This detection takes advantage of Cloud App Security's ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was terminated, and actual activity on other apps. For example, an employee who's Azure AD account was terminated, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
 
 The detection looks for users whose account was terminated in Azure AD, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account (not their primary single sign-on account) to manage resources, since these accounts are often not terminated when a user leaves the company.
 
@@ -113,7 +113,7 @@ The detection looks for users whose account was terminated in Azure AD, but stil
 
 ### Suspicious inbox manipulation rules
 
-* This detection profiles your environment and triggers alerts when suspicious rules that delete or move messages or folders are set on a user's inbox. This may indicate that the user’s account is compromised, that messages are being intentionally hidden, and that the mailbox is being used to distribute spam or malware in your organization.
+* This detection profiles your environment and triggers alerts when suspicious rules that delete or move messages or folders are set on a user's inbox. This may indicate that the user's account is compromised, that messages are being intentionally hidden, and that the mailbox is being used to distribute spam or malware in your organization.
 
 ### Suspicious email deletion activity (Preview)
 
@@ -131,8 +131,9 @@ These detections identify users who perform:
 * Unusual Power BI report sharing activities (preview)
 * Unusual multiple VM creation activities (preview)
 * Unusual multiple storage deletion activities (preview)
+* Unusual region for cloud resource (preview)
 
-These policies look for activities within a single session with respect to the baseline learned, which could indicate on a breach attempt. These detections leverage a machine learning algorithm that profiles the users log on pattern and reduces false positives. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization’s activity.
+These policies look for activities within a single session with respect to the baseline learned, which could indicate on a breach attempt. These detections leverage a machine learning algorithm that profiles the users log on pattern and reduces false positives. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity.
 
 ### Multiple failed login attempts
 
@@ -158,7 +159,7 @@ You can enable automated remediation actions on alerts generated by anomaly dete
 
 To affect the anomaly detection engine to suppress or surface alerts according to your preferences:
 
-* In the Impossible Travel policy, you can set the sensitivity slider to determine the level of anomalous behavior needed before an alert is triggered. For example, if you set it to low, it will suppress Impossible Travel alerts from a user’s common locations, and if you set it to high, it  will surface such alerts. You can choose from the following sensitivity levels:
+* In the Impossible Travel policy, you can set the sensitivity slider to determine the level of anomalous behavior needed before an alert is triggered. For example, if you set it to low, it will suppress Impossible Travel alerts from a user's common locations, and if you set it to high, it  will surface such alerts. You can choose from the following sensitivity levels:
 
   * **Low**: System, tenant and user suppressions
   * **Medium**: System and user suppressions
@@ -201,7 +202,7 @@ You can triage the various alerts triggered by the new anomaly detection policie
     ![anomaly detection alert1](media/anomaly-alert-user1.png)
     ![anomaly detection alert1](media/anomaly-alert-user2.png)
 
-1. This enables you to understand what the suspicious activities are that the user performed and gain deeper confidence as to whether the account was compromised. For example, an alert on multiple failed logins may indeed be suspicious and can indicate potential brute force attack, but it can also be an application misconfiguration, causing the alert to be a benign true positive. However, if you see a multiple failed logins alert with additional suspicious activities, then there is a higher probability that the account is compromised. In the example below, you can see that the **Multiple failed login attempts** alert was followed by **Activity from a TOR IP address** and **Impossible travel activity**, both strong indicators of compromise (IOCs) by themselves. If this wasn’t suspicious enough, then you can see that the same user performed a **Mass download activity**, which is often an indicator of the attacker performing exfiltration of data.
+1. This enables you to understand what the suspicious activities are that the user performed and gain deeper confidence as to whether the account was compromised. For example, an alert on multiple failed logins may indeed be suspicious and can indicate potential brute force attack, but it can also be an application misconfiguration, causing the alert to be a benign true positive. However, if you see a multiple failed logins alert with additional suspicious activities, then there is a higher probability that the account is compromised. In the example below, you can see that the **Multiple failed login attempts** alert was followed by **Activity from a TOR IP address** and **Impossible travel activity**, both strong indicators of compromise (IOCs) by themselves. If this wasn't suspicious enough, then you can see that the same user performed a **Mass download activity**, which is often an indicator of the attacker performing exfiltration of data.
 
     ![anomaly detection alert1](media/anomaly-alert-user3.png)
 

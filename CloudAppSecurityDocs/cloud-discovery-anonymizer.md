@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 01/29/2020
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -62,14 +62,46 @@ Key points:
 
     ![Anonymize Cloud Discovery dashboard](media/anonymize-dashboard.png)
 
-5. For specific investigation, such as investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
-   This page can also be used to look up the encrypted username of a known username.
+5. For a specific investigation, such as an investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
+
+    > [!NOTE]
+    > The following steps also work for machine names on the **Machines** tab.
+
+    **To resolve a single username**
+
+    1. Click on the three dots at the end of the row of the user you want to resolve and select **Deanonymize user**.
+
+        ![Anonymize user table](media/anonymize-user-table.png)
+
+    1. In the pop-up, enter the justification for resolving the username and then click **Resolve**. In the relevant row, the resolved username is displayed.
+
+        > [!NOTE]
+        > This action is audited.
+
+        ![Anonymize resolve pop-up](media/anonymize-resolve-dialog.png)
+
+    The following alternative way to resolve single usernames can also be used to look up the encrypted username of a known username.
 
     1. Under the Settings cog, select **Cloud Discovery settings**.
-    2. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
-    3. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Click **Resolve**.
 
-    ![Anonymization](media/anonymizer.png)
+    1. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
+    1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Click **Resolve**.
+
+        ![Anonymization](media/anonymizer.png)
+
+    **To resolve multiple usernames**
+
+    1. Either select the checkboxes that appear when you hover over the user icons by the users you want to resolve or, in the top-left, corner select the **Bulk selection** checkbox.
+
+        ![Anonymize bulk resolve](media/anonymize-bulk-resolve.png)
+
+    1. Click **Deanonymize user**.
+    1. In the pop-up, enter the justification for resolving the username and then click **Resolve**. In the relevant rows, the resolved usernames are displayed.
+
+        > [!NOTE]
+        > This action is audited.
+
+        ![Anonymize resolve pop-up](media/anonymize-resolve-dialog.png)
 
 6. The action is audited in the portal’s **Governance log**.
 

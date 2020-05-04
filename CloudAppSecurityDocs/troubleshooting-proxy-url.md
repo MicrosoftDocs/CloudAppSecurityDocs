@@ -14,7 +14,7 @@ ms.prod:
 ms.service: cloud-app-security
 ms.suite: ems
 ---
-# Troubleshooting - What is `cas.ms`, `mcas.ms`, or `mcas-gov.us`?
+# Troubleshooting - What is `*.cas.ms`, `*.mcas.ms`, or `*.mcas-gov.us`?
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -27,6 +27,16 @@ This is normal behavior and results from Cloud App Security protecting your envi
 For example, Contoso protects its environment using Conditional Access App Control provided by Cloud App Security. When a Contoso user visits `fabrikam.com`, the user is automatically redirected to `fabrikam.com.<region>.cas.ms`. As a result, Fabrikam's phishing team will see a new DNS entry and certificate for `fabrikam.com.<region>.cas.ms`.
 
 So even though Fabrikam does not actually use Cloud App Security, they see the DNS entry or certificate because Contoso does.
+
+> [!NOTE]
+> You may also see the following domains in the transparency logs:
+>
+> - `*.admin-rs-mcas.ms`
+> - `*.rs-mcas.ms`
+> - `*.admin-rs2-mcas.ms`
+> - `*.rs2-mcas.ms`
+> - `*.admin-mcas.ms`
+> - `*.mcas.ms`
 
 ## Here's why you see `*.cas.ms`, `*.mcas.ms`, or `*.mcas-gov.us` in your URL
 

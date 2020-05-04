@@ -240,6 +240,8 @@
       href: governance-discovery.md
     - name: Azure ATP integration
       href: aatp-integration.md
+    - name: Azure AD Identity Protection integration
+      href: aadip-integration.md
     - name: Azure Information Protection integration
       href: azip-integration.md
     - name: Integrate with external solutions
