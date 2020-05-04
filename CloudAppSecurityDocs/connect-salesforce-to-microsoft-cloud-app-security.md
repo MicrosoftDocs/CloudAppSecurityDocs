@@ -48,29 +48,33 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
     * Sign in to your Salesforce account and go to the **Setup** page.
 
-    * Under **Manage Users**, go to the **User Profiles** page.
+    * Under **Users**, go to the **Permission Sets** page.
 
-        ![salesforce manage users profiles](media/salesforce-manageusers-profiles.png "salesforce manage users profiles")
+        ![salesforce manage users permission sets](media/salesforce-users-permissionsets.png "salesforce manage users permissionsets")
 
-    * Create a new profile by clicking **New**.
-    * Choose the profile you just created to deploy Cloud App Security and click **Edit**. This profile will be used for the Cloud App Security service account to set up the App connector.
+    * Create a new permission set by clicking **New**.
+    * Enter the following information for the permission set below and click **Save**.
 
-         ![salesforce edit profile](media/salesforce-edit-profile.png "salesforce edit profile")
+         ![salesforce create permission set](media/salesforce-create-permissionset.png "salesforce create permission set")
 
-    * Make sure you have the following checkboxes enabled:
+    * In the System Permissions section of this permission set, enable the following checkboxes:
       * **API Enabled**
       * **View All Data**
-      * **Manage Salesforce CRM Content**
       * **Manage Users**
+    
+    * In the App Permissions section of this permission set, enable the following checkboxes:
+      * **Manage Salesforce CRM Content**
       * **[Query All Files](https://go.microsoft.com/fwlink/?linkid=2106480)**
 
       If these checkboxes aren't selected, you may need to contact Salesforce to add them to your account.
 
+    * Assign the permission set to the dedicated service admin account for Cloud App Security by clicking **Manage Assignments**.
+
+        ![salesforce assign user](media/salesforce-assign-user.png "salesforce assign user")
+
 1. If your organization has **Salesforce CRM Content** enabled, make sure that the current administrative account has it enabled as well.
 
     1. Go to your Salesforce setup page.
-
-        ![salesforce setup](media/salesforce-setup.png "salesforce setup")
 
     1. From the side-menu, select **Manage Users** and then click **Users**.
 
