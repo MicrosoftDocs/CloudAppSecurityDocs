@@ -336,6 +336,10 @@
       items:
       - name: Overview
         href: api-files.md
+      - name: List Files
+        href: api-files-list.md
+      - name: Fetch File
+        href: api-files-fetch.md
   - name: Troubleshooting
     items:
     - name: Troubleshooting Cloud Discovery

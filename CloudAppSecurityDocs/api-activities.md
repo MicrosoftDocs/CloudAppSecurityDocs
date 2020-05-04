@@ -55,13 +55,13 @@ The following table describes the supported filters:
 | ip.category | integer | eq, neq | Filter activities with the specified subnet categories. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
 | ip.tags | string | eq, neq | Filter activities by IP tag IDs |
 | text | string | eq, startswithsingle, text | Filter activities by performing a free text search |
-| date | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter activities that occurred in the specified time ranges |
+| date | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter activities that occurred in the specified time range |
 | policy | string | eq, neq, isset, isnotset | Filter activities related to the specified policies |
 | source | string | eq, neq | Filter all activities by source type or stream ID. Example: `[{ “s:stream-id”, “t:source-type” }]` Possible source type values include:<br /><br />**0**: Access control<br />**1**: Session control<br />**2**: App connector<br />**3**: App connector analysis<br />**5**: Discovery<br />**6**: MDATP |
 | activity.alertId | string | eq | Filter all activities relevant to an alert ID |
 | activityObject | string | eq, neq | Filter activities containing the specified ID |
 | fileLabels | string | eq, neq | Filter files containing the specified file labels (tags) IDs |
-| created || lte, gte, range, gt, lt, eq | |
+| created || lte, gte, range, gt, lt, eq | Filter activities that were created in the specified time range |
 | entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ “id”: “entity-id”, “saas”: 11161, “inst”: 0 }]` |
 | user.username | string | eq, neq, isset, isnotset, startswith | Filter activities by the user who performed the activity |
 | user.tags | string | eq, neq, isset, isnotset, startswith | Filter activities by tags belonging to the performing user. Requires group IDs |

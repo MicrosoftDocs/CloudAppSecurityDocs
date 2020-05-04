@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: List - Alerts API
-description: This article describes the list request in Cloud App Security's Alerts API.
+title: List - Files API
+description: This article describes the list request in Cloud App Security's Files API.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -14,29 +14,27 @@ ms.service: cloud-app-security
 # optional metadata
 ms.suite: ems
 ---
-# List - Alerts API
+# List - Files API
 
 *Applies to: Microsoft Cloud App Security*
 
-Run the GET or POST request to fetch a list of alerts matching the specified filters.
+Run the GET or POST request to fetch a list of files matching the specified filters.
 
 ## HTTP request
 
 ```rest
-GET /api/v1/alerts/
+GET /api/v1/files/
 ```
 
 ```rest
-POST /api/v1/alerts/
+POST /api/v1/files/
 ```
 
 ## Request BODY parameters
 
 | Parameter | Description |
 | --- | --- |
-| filters | Filter objects with all the search filters for the request, see [alert filters](api-alerts.md#filters) for more details |
-| sortDirection | The sorting direction. Possible values are: `asc` and `desc` |
-| sortField | Fields used to sort alerts. Possible values are:<br /><br />**date**: The date when then the alert was created<br /><br />**severity**: The severity of the alert |
+| filters | Filter objects with all the search filters for the request, see [file filters](api-files.md#filters) for more details |
 | skip | Skips the specified number of records |
 | limit | Maximum number of records returned by the request |
 
@@ -47,7 +45,7 @@ POST /api/v1/alerts/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/" -d '{
+curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/" -d '{
   "filters": {
     // some filters
   },
@@ -59,7 +57,7 @@ curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_reg
 
 ### Response
 
-Returns a list of alerts in JSON format.
+Returns a list of files in JSON format.
 
 ```json
 {
