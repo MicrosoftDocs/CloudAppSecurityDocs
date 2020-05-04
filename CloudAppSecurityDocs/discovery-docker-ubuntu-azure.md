@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -33,7 +33,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Prerequisites
 
-* OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), RHEL 7.2 or higher, or CentOS 7.2 or higher
+* OS: Ubuntu 16.04 and 18.04, RHEL 7.2 or higher, or CentOS 7.2 or higher
 
 * Disk space: 250 GB
 
