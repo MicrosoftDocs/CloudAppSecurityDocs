@@ -33,7 +33,7 @@ POST /cas/api/subnet/
 | category | The id of the range category |
 | subnetMasks | An array of masks as strings (IPv4 / IPv6) |
 | organization (Optional) | The registered ISP |
-| tags (Optional) | An array of tags (objects with “text” property set with the tag name) - new or existing |
+| tags (Optional) | An array of tags (objects with "text" property set with the tag name) - new or existing |
 
 The following categories are currently supported:
 

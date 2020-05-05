@@ -38,7 +38,7 @@ The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
-| entity.entity | entity pk | eq,neq | Filter alerts related to specified entities. Example: `[{ “id”: “entity-id”, “saas”: 11161, “inst”: 0 }]` |
+| entity.entity | entity pk | eq,neq | Filter alerts related to specified entities. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | entity.ip | string | eq, neq | Filter alerts related to specified IP addresses |
 | entity.service | integer | eq, neq | Filter alerts related to the specified service appId, e.g: 11770 |
 | entity.instance | integer | eq, neq | Filter alerts related to the specified instances, e.g: 11770, 1059065 |
@@ -46,7 +46,7 @@ The following table describes the supported filters:
 | entity.file | string | eq, neq | Filter alerts related to specified file |
 | severity | integer | eq, neq | Filter by severity. Possible values include:<br /><br />**0**: Low<br />**1**: Medium<br/>**2**: High |
 | resolutionStatus | integer | eq, neq | Filter by alert resolution status, possible values include:<br /><br />**0**: Open<br />**1**: Dismissed<br />**2**: Resolved |
-| read | boolean | eq | If set to “true”, returns only read alerts, if set to “false”, returns unread alerts |
+| read | boolean | eq | If set to "true", returns only read alerts, if set to "false", returns unread alerts |
 | date | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter by the time when an alert was triggered |
 | resolutionDate | timestamp | lte, gte, range | Filter by the time when an alert was resolved |
 | risk | integer | eq, neq | Filter by risk |

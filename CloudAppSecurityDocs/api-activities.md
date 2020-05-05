@@ -39,8 +39,8 @@ The following table describes the supported filters:
 | user.orgUnit | string | eq, neq, isset, isnotset | Filter activities by the organization unit of the performing user |
 | activity.eventType | string | eq, neq | Filter activities by event type |
 | activity.id | string | eq | Find an activity by ID |
-| activity.impersonated | boolean | eq | If set to “true”, returns only impersonated events, if set to “false”, returns non-impersonated events |
-| activity.type | boolean | eq | If set to “true”, returns only admin events, if set to “false”, returns regular events |
+| activity.impersonated | boolean | eq | If set to "true", returns only impersonated events, if set to "false", returns non-impersonated events |
+| activity.type | boolean | eq | If set to "true", returns only admin events, if set to "false", returns regular events |
 | activity.takenAction | string | eq, neq | Filter activities by the actions taken on them. Possible values include:<br /><br />**block**: Blocked<br />**proxy**: Redirected to session control<br />**BypassProxy**: Bypass session control<br />**encrypt**: Encrypted<br />**decrypt**: Decrypted<br />**verified**: Verified<br />**encryptionFailed**: Encryption failed<br />**protect**: Protected<br />**verify**: Require step-up authentication<br />**null**: No action |
 | device.type | string | eq, neq | Filter activities by device type. Possible values include:<br /><br />**DESKTOP**: PC<br />**MOBILE**: Mobile<br />**TABLET**: Tablet<br />**OTHER**: Other<br />**null**: No value |
 | device.tags | string | eq, neq | Filter activities by device tag IDs |
@@ -57,12 +57,12 @@ The following table describes the supported filters:
 | text | string | eq, startswithsingle, text | Filter activities by performing a free text search |
 | date | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter activities that occurred in the specified time range |
 | policy | string | eq, neq, isset, isnotset | Filter activities related to the specified policies |
-| source | string | eq, neq | Filter all activities by source type or stream ID. Example: `[{ “s:stream-id”, “t:source-type” }]` Possible source type values include:<br /><br />**0**: Access control<br />**1**: Session control<br />**2**: App connector<br />**3**: App connector analysis<br />**5**: Discovery<br />**6**: MDATP |
+| source | string | eq, neq | Filter all activities by source type or stream ID. Example: `[{ "s:stream-id", "t:source-type" }]` Possible source type values include:<br /><br />**0**: Access control<br />**1**: Session control<br />**2**: App connector<br />**3**: App connector analysis<br />**5**: Discovery<br />**6**: MDATP |
 | activity.alertId | string | eq | Filter all activities relevant to an alert ID |
 | activityObject | string | eq, neq | Filter activities containing the specified ID |
 | fileLabels | string | eq, neq | Filter files containing the specified file labels (tags) IDs |
 | created || lte, gte, range, gt, lt, eq | Filter activities that were created in the specified time range |
-| entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ “id”: “entity-id”, “saas”: 11161, “inst”: 0 }]` |
+| entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | user.username | string | eq, neq, isset, isnotset, startswith | Filter activities by the user who performed the activity |
 | user.tags | string | eq, neq, isset, isnotset, startswith | Filter activities by tags belonging to the performing user. Requires group IDs |
 | activity.azureSubscriptions | string | eq, neq | Filter azure subscriptions activities |
