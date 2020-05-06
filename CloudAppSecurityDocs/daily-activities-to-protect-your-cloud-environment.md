@@ -64,7 +64,7 @@ The information presented in the dashboard is an overview of all the most import
 Shows the number of open alerts, a graph of the alert status distribution, and recent alerts
 
 - **Discovered apps**  
-Shows the number of discovered apps ,a graph of the app risk distribution, and the top app categories by traffic.
+Shows the number of discovered apps, a graph of the app risk distribution, and the top app categories by traffic.
 - **Top users to investigate**  
 Shows the number of users to investigate and the users with the highest investigation priority.
 - **Conditional Access App Control**  
