@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
@@ -153,12 +153,7 @@ Create the automation playbooks you require and set it as the policy’s alert t
 
 ## Phase 6: Investigate and remediate
 
-Great, you’ve set up your policies and start receiving suspicious activity alerts. What should you do about them? For a start, you should take steps to investigate the activity. The following topics will help you investigate some of the common scenarios that arise:
-
-* [Investigate](investigate.md)
-* [Investigate activities](activity-filters.md)
-* [Investigate risky users](tutorial-ueba.md)
-* [Investigate anomaly detections](anomaly-detection-policy.md#triage-anomaly-detection-alerts)
+Great, you’ve set up your policies and start receiving suspicious activity alerts. What should you do about them? For a start, you should take steps to investigate the activity. For example, you may want to look into activities that indicate that a [user has been compromised](tutorial-ueba.md#phase-2-identify-top-risky-usersa-nameidentifya).
 
 To optimize your protection, you should consider setting up automatic remediation actions to minimize the risk to your organization. Our policies allow you to apply [governance actions](control.md) in conjunction to the alerts so that the risk to your organization is reduced even before you start investigating. Available actions are determined by the policy type including actions such as suspending a user or blocking access to the requested resource.
 
