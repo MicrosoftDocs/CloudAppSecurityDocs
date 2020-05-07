@@ -44,7 +44,7 @@ To set up your preferences as an admin of Microsoft Cloud App Security, click yo
     > [!NOTE]
     >
     > - The maximum number of alerts that are sent via text message is 10 per phone number per day. The day is calculated according to the UTC timezone.
-    > - Alerts are not triggered for Azure Active Directory IPC events.
+    > - Notifications are not sent for Azure Active Directory IPC events.
 
     ![notification settings](media/notification-settings.png)
 
