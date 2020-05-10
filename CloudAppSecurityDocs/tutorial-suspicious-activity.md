@@ -34,7 +34,7 @@ Hence, to fully realize the benefits of these detections, first make sure you co
 * **[Activity log](activity-filters.md)**  
 Activities from your [API connected apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 * **[Discovery log](tutorial-shadow-it.md)**  
-Activities extracted from firewall and proxy traffic logs forwarded to Cloud App Security. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 80 risk factors.
+Activities extracted from firewall and proxy traffic logs that are forwarded to Cloud App Security. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 80 risk factors.
 * **[Proxy log](proxy-intro-aad.md)**  
 Activities from your [Conditional Access App Control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
 
