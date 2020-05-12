@@ -6,7 +6,7 @@ description: This tutorial describes the process to investigate risky users in M
 keywords:
 author: shsagir
 ms.author: shsagir
-ms.date: 12/03/2019
+ms.date: 04/28/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -88,6 +88,8 @@ The User page helps you answer the questions:
     Check out the top of the right pane so you know whether it's worth your while to investigate the user. What is the employee's [risk score](#risk-score)?
     * What's risk does the user present to your organization?  
     Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, click on each line so you can drill down deeper into the activity or alert itself. You can click also on the number next to the activity so that you can understand the evidence that influenced the score itself.
+    * What's the risk to other assets in your organization?  
+    Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. For example, even if the user you are investigating has a non-sensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. For more information, see [Use Lateral Movement Paths](/azure-advanced-threat-protection/investigate-lateral-movement-path).
 
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
@@ -102,13 +104,13 @@ When you investigate a user, you want to ask these questions about the activitie
 
 * Go to the **Activity log** to understand why this activity received a high score while others did not. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can very easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
 
-## Phase 4: Protect your organization<a name="protect"></a>
+## Phase 4: Protect your organization<a name="protect"></a>j
 
 If your investigation leads you to the conclusion that a user is compromised, follow these steps to mitigate the risk.
 
 * Contact the user – Using the user contact information integrated with Cloud App Security from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-* Directly from the Cloud App Security portal, click on the **User actions** control and choose to whether to require user to sign in again, suspend the user, or confirm user compromised.
+* Directly from the Cloud App Security portal, click on the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
 
 * In case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
 * If you drill down into an alert and determine that the activity should not have triggered an alert, in the [Activity drawer](activity-filters.md), click the **Send us feedback** link so that we can be sure to fine tune our alerting system with your organization in mind.
