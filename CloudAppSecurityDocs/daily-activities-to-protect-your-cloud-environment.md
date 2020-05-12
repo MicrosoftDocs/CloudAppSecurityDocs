@@ -73,18 +73,18 @@ Shows the number of users to investigate and the users with the highest investig
 Shows the number of apps protected by Conditional Access App Control as well as the number of protected sessions and actions over the last 30 days.
 - **App connectors status**  
 Shows the number of API connected app instances and their status.
-- **DLP alerts**  
-Shows a graph of DLP alerts over the last 30 days.
-- **Privileged Office 365 OAuth apps**  
-Shows the number of rarely used OAuth apps granted highly privileged permissions.
 - **Files infected with malware**  
 Shows the number of files infected with malware.
-- **Activity map**  
-Shows the global spread of activities performed by users over the last 30 days.
+- **Privileged Office 365 OAuth apps**  
+Shows the number of rarely used OAuth apps granted highly privileged permissions.
 - **Azure security configuration**  
 Shows the number and severity of Azure security configuration recommendations.
 - **AWS security configuration**  
 Shows the number and severity of AWS security configuration recommendations.
+- **DLP alerts**  
+Shows a graph of DLP alerts over the last 30 days.
+<!-- - **Activity map**  
+Shows the global spread of activities performed by users over the last 30 days. -->
 
 ## Next steps
 
