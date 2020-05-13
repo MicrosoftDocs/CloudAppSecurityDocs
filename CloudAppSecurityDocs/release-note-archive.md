@@ -28,7 +28,9 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article is an archive that describes updates made in past releases of Cloud App Security. To see the latest what's new list, see [What's new in Cloud App Security](release-notes.md).
+Update for the event.
+
+Th articles is an archive that describes updates made in past releases of Cloud App Security. To see the latest what's new list, see [What's new in Cloud App Security](release-notes.md).
 
 ## Updates made in 2017
 
