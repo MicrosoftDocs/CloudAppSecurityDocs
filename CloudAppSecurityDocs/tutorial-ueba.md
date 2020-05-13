@@ -104,7 +104,7 @@ When you investigate a user, you want to ask these questions about the activitie
 
 * Go to the **Activity log** to understand why this activity received a high score while others did not. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can very easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
 
-## Phase 4: Protect your organization<a name="protect"></a>j
+## Phase 4: Protect your organization<a name="protect"></a>
 
 If your investigation leads you to the conclusion that a user is compromised, follow these steps to mitigate the risk.
 
