@@ -85,6 +85,7 @@ Additionally, the following items should be whitelisted, depending on which data
 To enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
     *.cas.ms
+    mcasproxy.azureedge.net 
 
 Additionally, the following items should be whitelisted, depending on which data center you use:
 
