@@ -51,6 +51,8 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
+          - text: Detect and manage suspicious activities
+            url: tutorial-suspicious-activity.md
           - text: Investigate risky users
             url: tutorial-ueba.md
           - text: Investigate risky OAuth apps
