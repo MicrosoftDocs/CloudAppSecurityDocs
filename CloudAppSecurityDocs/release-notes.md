@@ -32,7 +32,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 Released May 17, 2020
 
 - **New Shadow IT Discovery integration with Corrata (Preview)**  
-We've added native integration with Corrata providing you with Shadow IT visibility into app use and control over app access. For more information, see [Integrate Cloud App Security with Coratta](corrata-integration.md).
+We've added native integration with Corrata providing you with Shadow IT visibility into app use and control over app access. For more information, see [Integrate Cloud App Security with Corrata](corrata-integration.md).
 
 - **New Cloud Discovery log parsers**  
 Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support Corrata and Cisco ASA with FirePOWER 6.4 log formats. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
