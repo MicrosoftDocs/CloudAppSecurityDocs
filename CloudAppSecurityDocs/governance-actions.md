@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Governance enables you to control what your users do, in real time, across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Cloud App Security. Governance actions control what your users do, in real time, across connected apps.
+Governance enables you to control what your users do, in real time, across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Cloud App Security. Governance actions control what your users do, in real time, across connected apps. For information about where you can use governance actions, see [Apply governance actions](control.md#apply-governance-actions).
 
 > [!NOTE]
 > When Microsoft Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action.
@@ -65,7 +65,7 @@ The following governance actions can be taken for connected apps either on a spe
 
     - **Reduce public access** - Set Publicly available files to be available only with a shared link. (Google)
 
-    - **Expire shared link** - Ability to set an experation date for a shared link after which it will no longer be active. (Box)
+    - **Expire shared link** - Ability to set an expiration date for a shared link after which it will no longer be active. (Box)
 
     - **Change sharing link access level** - Ability to change the access level of the shared link between company only, collaborators only, and public. (Box)
 
@@ -120,6 +120,8 @@ After creating multiple policies, a situation may arise in which the governance 
 ## Governance log
 
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log.
+
+To view the governance log, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and then select **Governance log**.
 
 The following table is the full list of actions the Cloud App Security portal enables you to take. These actions are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
 For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md).

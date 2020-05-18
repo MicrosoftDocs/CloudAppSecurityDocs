@@ -74,7 +74,7 @@ To make investigation even simpler, you can create custom queries and save them 
 
 2. After you've achieved the wanted results, click the **Save as** button in the top right corner of the filters.
 
-3. In the **Save query** popup, name your query.
+3. In the **Save query** pop-up, name your query.
 
     ![new query](media/new-query.png)
 

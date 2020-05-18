@@ -62,7 +62,7 @@ Cloud App Security currently supports applying Azure Information Protection clas
 
 This feature is currently available for files stored in Box, G Suite, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
 
-Files that were labeled with protection outside of Cloud App Security can't be changed by Cloud App Security. However, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files). Files that were labeled (without protection) external to Cloud App Security, can be scanned and Cloud App Security can apply a different label (with or without protection) as defined in Cloud App Security policies.
+Files that were labeled with protection outside of Cloud App Security can't be changed by Cloud App Security. However, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
 
 ## How it works
 
@@ -92,7 +92,7 @@ To enable Cloud App Security to scan files with content inspection enabled for c
 1. In Cloud App Security, under the settings cog, select the **Settings** page under the **System** heading.
 
     ![Settings menu](media/azip-system-settings.png)
-1. Under **Azure Information Protection**, select **Automatically scan files for Azure Information Protection classification labels**.
+1. Under **Azure Information Protection**, select **Automatically scan new files for Azure Information Protection classification labels**.
 
     ![enable azure information protection](media/enable-azip.png)
 
@@ -171,7 +171,7 @@ Follow these instructions to create the file policy:
 **Sample policy - confidential data that is externally shared on Box:**
 
 1. Create a file policy.
-2. Set the policy’s name, severity, and category.
+2. Set the policy's name, severity, and category.
 3. Add the following filters to find all confidential data that is externally shared on Box:
 
     ![confidentiality policy](media/azip-confidentiality-policy.png)
@@ -179,7 +179,7 @@ Follow these instructions to create the file policy:
 **Sample policy - restricted data that was recently modified outside the Finance folder on SharePoint:**
 
 1. Create a file policy.
-2. Set the policy’s name, severity, and category.
+2. Set the policy's name, severity, and category.
 3. Add the following filters to find all recently modified restricted files while excluding the Finance folder in the folder selection option:
 
     ![restricted data policy](media/azip-restricted-data-policy.png)

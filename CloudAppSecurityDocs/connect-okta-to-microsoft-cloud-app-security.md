@@ -51,7 +51,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     - In the **Create Token** pop-up, name your Cloud App Security token, and click **Create Token**.
 
-         ![Okta token popup](media/okta-token-popup.png "Okta token popup")
+         ![Okta token pop-up](media/okta-token-pop-up.png)
 
     - In the **Token created successfully** pop-up, copy the **Token value**.
 
