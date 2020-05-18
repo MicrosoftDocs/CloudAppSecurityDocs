@@ -82,7 +82,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 6. Under **Activity source** in the **Activities matching all of the following** section, select the filters:
 
-   * **Device tag**: Select **Does not equal**. and then select **Compliant**,  **Domain joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
+   * **Device tag**: Select **Does not equal**. and then select **Intune compliant**, **Hybrid Azure AD joined**, or **Valid client certificate**. Your selection depends on the method used in your organization for identifying managed devices.
 
    * **App**: Select the app you want to control.
 
