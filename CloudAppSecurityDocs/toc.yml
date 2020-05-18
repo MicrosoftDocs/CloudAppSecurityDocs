@@ -114,7 +114,7 @@
       - name: Integrate with iboss
         href: iboss-integration.md
       - name: Integrate with Corrata
-        href: coratta-integration.md
+        href: corrata-integration.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
