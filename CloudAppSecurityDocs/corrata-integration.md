@@ -52,7 +52,7 @@ If you work with both Cloud App Security and Corrata, you can integrate the two 
         - Source = Corrata
         - Receiver type = FTP
 
-        ![data source Corrata](media/data-source-Corrata.png)
+        ![data source Corrata](media/data-source-corrata.png)
 
     4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.
 
