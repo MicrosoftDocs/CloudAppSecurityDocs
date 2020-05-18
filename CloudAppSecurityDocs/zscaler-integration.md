@@ -31,7 +31,7 @@ ms.custom: seodec18
 
 If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Zscaler, as a standalone cloud proxy, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Cloud App Security and Zscaler provide the following capabilities:
 
-- Seamless deployment of Cloud Discovery - Using Zscaler to proxy your traffic and send it to Cloud App Security eliminates the need for installing log collectors on your network endpoints to enable Cloud Discovery.
+- Seamless deployment of Cloud Discovery - Use Zscaler to proxy your traffic and send it to Cloud App Security. This eliminates the need for installation of log collectors on your network endpoints to enable Cloud Discovery.
 - Zscaler's block capabilities are automatically applied on apps you set as unsanctioned in Cloud App Security.
 - Enhance your Zscaler portal with Cloud App Security's risk assessment for 200 leading cloud apps, which can be viewed directly in the Zscaler portal.
 
