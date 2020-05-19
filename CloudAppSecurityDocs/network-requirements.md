@@ -107,7 +107,7 @@ Additionally, the following items should be whitelisted, depending on which data
 
 ### US Government GCC High customers
 
-For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
+For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allow list:
 
     *.mcas-gov.us
     *.admin-mcas-gov.us
