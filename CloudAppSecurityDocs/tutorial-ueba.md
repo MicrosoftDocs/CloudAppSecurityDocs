@@ -51,7 +51,7 @@ The investigation priority score is based on security alerts, abnormal activitie
 
 If you click on the score value for an alert or an activity, you can view the evidence that explains how Cloud App Security scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Azure ATP, Microsoft Cloud App Security as well as Azure AD Identity Protection. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they are compromised, exfiltrating data, or acting as insider threats.
+Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Azure ATP and Cloud App Security. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they are compromised, exfiltrating data, or acting as insider threats.
 
 Cloud App Security uses the following to measure risk:
 
