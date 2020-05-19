@@ -81,10 +81,13 @@ Additionally, the following items should be whitelisted, depending on which data
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
 
 ## Access and session controls
+###Private Sector Customers
 
-To enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
+For private sector customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
     *.cas.ms
+    *.mcas.ms
+    *.admin-mcas.ms
     mcasproxy.azureedge.net
 
 Additionally, the following items should be whitelisted, depending on which data center you use:
@@ -99,6 +102,13 @@ Additionally, the following items should be whitelisted, depending on which data
 > |EU1|40.81.57.138<br />40.81.57.157<br />52.156.204.139<br />52.156.205.182<br />52.157.232.147<br />52.157.235.144<br />40.119.207.200<br />40.119.207.174<br />40.81.120.13<br />40.81.120.25<br />104.45.168.114<br />104.45.168.103<br />40.80.222.197<br />40.80.220.215<br />40.81.57.169<br />40.81.57.144<br />20.40.163.178<br />20.40.163.179<br />52.156.204.24<br />52.156.204.51<br />52.155.161.88<br />52.155.161.91<br />52.157.233.205<br />52.157.234.160|51.145.181.214<br />51.145.181.195<br />40.119.207.193<br />40.119.207.164<br />52.148.115.188<br />52.148.115.194<br />40.81.121.78<br />40.81.122.203<br />51.137.137.237<br />51.137.137.200<br />104.45.168.106<br />104.45.168.104<br />52.151.247.27<br />52.151.244.65<br />40.80.219.49<br />40.80.222.91<br />52.153.240.107<br />20.188.72.248<br />40.81.57.164<br />40.81.57.141<br />52.156.203.22<br />52.156.205.137<br />52.157.237.213<br />52.157.237.107|40.119.207.182<br />40.119.207.166<br />40.81.121.76<br />40.81.120.24<br />104.45.168.111<br />104.45.168.108<br />40.80.220.246<br />40.80.221.77<br />20.40.161.132<br />20.40.161.131<br />52.156.203.199<br />40.67.254.233<br />52.157.218.232<br />52.157.218.219<br />52.139.251.219<br />52.139.252.105<br />40.81.122.63<br />20.40.106.50<br />52.224.201.216<br />52.224.201.223<br />52.249.25.165<br />52.249.25.160|\*.eu1.cas.ms<br />\*.eu1.access-control.cas.ms<br />\*.eu1.saml.cas.ms|
 > |EU2|40.81.62.222<br />40.81.62.212<br />52.155.182.49<br />52.155.181.181<br />52.157.234.222<br />52.157.236.195<br />40.66.60.221<br />40.66.60.101<br />40.119.203.98<br />40.119.203.208<br />104.45.170.174<br />104.45.170.127<br />40.81.62.221<br />40.81.62.206<br />20.40.160.184<br />20.40.163.130<br />52.155.181.183<br />52.155.168.45<br />52.156.202.7<br />52.142.124.23|52.157.233.49<br />52.157.235.27<br />51.105.164.234<br />51.105.164.241<br />40.66.60.232<br />40.66.60.222<br />20.40.134.79<br />40.66.57.203<br />40.119.203.158<br />40.119.203.209<br />20.184.61.67<br />20.184.60.77<br />104.45.170.173<br />104.45.170.176<br />52.224.188.157<br />52.224.188.168<br />40.81.62.209<br />40.81.62.199<br />52.155.181.180<br />52.155.182.50|52.157.237.255<br />52.157.239.132<br />40.66.60.225<br />40.66.60.220<br />40.119.203.159<br />40.119.203.99<br />104.45.170.161<br />104.45.170.175<br />20.40.161.142<br />20.40.161.143<br />52.155.181.182<br />52.155.182.48<br />40.119.145.130<br />40.119.147.102<br />40.66.62.154<br />40.66.62.225<br />20.184.58.46<br />40.90.191.153<br />52.190.31.62<br />52.190.26.220|\*.eu2.cas.ms<br />\*.eu2.access-control.cas.ms<br />\*.eu2.saml.cas.ms|
 
+###US Government GCC High Customers
+For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
+
+    *.mcas-gov.us
+    *.admin-mcas-gov.us
+    mcasproxy.azureedge.net
+    
 ## SIEM agent connection
 
 To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allow list:
