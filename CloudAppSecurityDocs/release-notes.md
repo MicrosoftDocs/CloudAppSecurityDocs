@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 05/17/2020
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -27,12 +27,41 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 175
+
+Released May 17, 2020
+
+- **New Shadow IT Discovery integration with Corrata (Preview)**  
+We've added native integration with Corrata providing you with Shadow IT visibility into app use and control over app access. For more information, see [Integrate Cloud App Security with Corrata](corrata-integration.md).
+
+- **New Cloud Discovery log parsers**  
+Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support Corrata and Cisco ASA with FirePOWER 6.4 log formats. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **Enhanced dashboard (gradual rollout)**
+As part of our ongoing improvements to the portal design, we are now gradually rolling out the improved Cloud App Security dashboard. The dashboard has been modernized based on your feedback and offers an enhanced user experience with updated content and data. For more information, see [Gradual deployment of our enhanced dashboard](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard).
+
+## Cloud App Security release 173 and 174
+
+Released April 26, 2020
+
+- **New SIEM agent CEF format for alerts**  
+As part of our effort to enrich the alert information provided in the CEF files used by generic SIEM servers, we have extended the format to include the following client fields:
+  - IPv4 address
+  - IPv6 address
+  - IP address location
+
+    For more information, see [CEF file format](siem.md#sample-cloud-app-security-alerts-in-cef-format).
+- **Enhanced detection logic: Impossible travel**  
+We've updated the detection logic for impossible travel to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Impossible travel](anomaly-detection-policy.md#impossible-travel).
+
 ## Cloud App Security release 172
 
 Released April 5, 2020
 
 - **Enhanced access and session controls with any IdP (Preview)**  
 Access and session controls now support SAML apps configured with any identity provider. The public preview of this new feature is now gradually rolling out. To configure these controls, see the [Deployment guide](proxy-deployment-aad.md).
+- **New bulk deanonymization of users and machines**  
+We have expanded and simplified the process of deanonymizing one or more users and machines under investigation. For more information about bulk deanonymization, see [How data anonymization works](cloud-discovery-anonymizer.md#how-data-anonymization-works).
 
 ## Cloud App Security release 170 and 171
 

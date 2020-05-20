@@ -7,7 +7,7 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 05/17/2020
 
 # optional metadata
 
@@ -36,6 +36,7 @@ There are two types of reports you can generate:
   - [Log collector](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
   - [Zscaler integration](zscaler-integration.md): If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Zscaler provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Zscaler portal.
   - [iboss integration](iboss-integration.md): If you work with both Cloud App Security and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and iboss provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the iboss portal.
+  - [Corrata integration](corrata-integration.md): If you work with both Cloud App Security and Corrata, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Corrata provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Corrata portal.
 
 ## Log process flow: From raw data to risk assessment
 
@@ -65,6 +66,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Cisco Meraki – URLs log
 - Clavister NGFW (Syslog)
 - ContentKeeper
+- Corrata
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -96,7 +98,7 @@ Data attributes (according to vendor documentation):
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **Yes** | **Yes** | **Yes** | **Yes** | No | No |
 | Blue Coat | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
-| Checkpoint | No | **Yes** | No | **Yes** | No | No |
+| Check Point | No | **Yes** | No | **Yes** | No | No |
 | Cisco ASA (Syslog) | No | **Yes** | No | **Yes** | **Yes** | No |
 | Cisco ASA with FirePOWER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Cisco Cloud Web Security |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
@@ -105,6 +107,7 @@ Data attributes (according to vendor documentation):
 | Cisco Meraki | **Yes** | **Yes** | No | **Yes** | No | No |
 | Clavister NGFW (Syslog) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ContentKeeper | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Corrata | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
@@ -131,7 +134,7 @@ Data attributes (according to vendor documentation):
 > [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
-> [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
+> [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
 > [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)

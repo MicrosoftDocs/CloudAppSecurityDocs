@@ -27,6 +27,8 @@
   items:
   - name: Discover and manage shadow IT
     href: tutorial-shadow-it.md
+  - name: Detect and manage suspicious activities
+    href: tutorial-suspicious-activity.md
   - name: Investigate risky users
     href: tutorial-ueba.md
   - name: Investigate risky OAuth apps
@@ -111,6 +113,8 @@
         href: zscaler-integration.md
       - name: Integrate with iboss
         href: iboss-integration.md
+      - name: Integrate with Corrata
+        href: corrata-integration.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
