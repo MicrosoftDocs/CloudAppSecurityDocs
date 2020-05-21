@@ -40,6 +40,9 @@ Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank
 - **Enhanced dashboard (gradual rollout)**
 As part of our ongoing improvements to the portal design, we are now gradually rolling out the improved Cloud App Security dashboard. The dashboard has been modernized based on your feedback and offers an enhanced user experience with updated content and data. For more information, see [Gradual deployment of our enhanced dashboard](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard).
 
+- **Enhanced governance: Confirm User Compromised for anomaly detections**  
+We have expanded our current governance actions for anomaly policies to include **Confirm User Compromised** allowing you to proactively protect your environment from suspicious user activity. For more information, see [Activity governance actions](governance-actions.md#activity-governance-actions).
+
 ## Cloud App Security release 173 and 174
 
 Released April 26, 2020
