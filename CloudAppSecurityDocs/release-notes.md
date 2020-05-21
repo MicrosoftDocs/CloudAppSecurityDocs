@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/26/2020
+ms.date: 05/17/2020
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -27,11 +27,27 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 175
+
+Released May 17, 2020
+
+- **New Shadow IT Discovery integration with Corrata (Preview)**  
+We've added native integration with Corrata providing you with Shadow IT visibility into app use and control over app access. For more information, see [Integrate Cloud App Security with Corrata](corrata-integration.md).
+
+- **New Cloud Discovery log parsers**  
+Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support Corrata and Cisco ASA with FirePOWER 6.4 log formats. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **Enhanced dashboard (gradual rollout)**
+As part of our ongoing improvements to the portal design, we are now gradually rolling out the improved Cloud App Security dashboard. The dashboard has been modernized based on your feedback and offers an enhanced user experience with updated content and data. For more information, see [Gradual deployment of our enhanced dashboard](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard).
+
+- **Enhanced governance: Confirm User Compromised for anomaly detections**  
+We have expanded our current governance actions for anomaly policies to include **Confirm User Compromised** allowing you to proactively protect your environment from suspicious user activity. For more information, see [Activity governance actions](governance-actions.md#activity-governance-actions).
+
 ## Cloud App Security release 173 and 174
 
 Released April 26, 2020
 
-- **New SEIM agent CEF format for alerts**  
+- **New SIEM agent CEF format for alerts**  
 As part of our effort to enrich the alert information provided in the CEF files used by generic SIEM servers, we have extended the format to include the following client fields:
   - IPv4 address
   - IPv6 address

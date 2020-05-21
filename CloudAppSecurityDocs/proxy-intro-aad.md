@@ -69,7 +69,7 @@ This method doesn't require you to install anything on the device making it idea
 
 Conditional Access App Control enables you to create policies that take into account whether a device is managed or not. To identify the state of a device, you can configure access and session policies to check for:
 
-- Microsoft Intune (Intune) Compliant devices [only available with Azure AD]
+- Microsoft Intune Compliant devices [only available with Azure AD]
 - Hybrid Azure AD joined devices [only available with Azure AD]
 - Presence of client certificates in a trusted chain
 
