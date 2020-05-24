@@ -78,6 +78,7 @@ For more information about setting up Workday integration users, security groups
     | Client Grant Type | Authorization Code Grant |
     | Access Token Type | Bearer |
     | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Non-Expiring Refresh Tokens | Yes |
     | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
