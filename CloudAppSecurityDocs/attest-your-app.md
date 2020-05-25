@@ -119,7 +119,7 @@ Follow the service attributes described below to successfully complete the submi
 | GDPR - lawful basis for processing | Legal | Boolean | True, False, N/A | Does this app process personal data lawfully in accordance with consent, contract, legal obligation, vital interests, legitimate interests, special category, data, and criminal offense data? |
 | GDPR - Right to rectification | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to rectify their personal data? The controller must respond to all requests from its data subjects within one month. |
 
-\* Fields of type *Array* should be separated with semicolon (;).
+\* Fields of type *Array* should be separated with a semicolon (;).
 
 ## Next steps
 
