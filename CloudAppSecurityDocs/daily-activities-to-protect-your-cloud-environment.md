@@ -39,23 +39,6 @@ You can then use Cloud App Security to control and protect your cloud and manage
 
 ## Check the dashboard
 
-![Cloud App Security dashboard](media/dashboard.png "dashboard")
-
-The Cloud App Security dashboard provides you with an overview of activities and features, including:
-
-- Open alerts
-- Activity violations
-- Content violations
-- An activity map that plots where user activity originates
-- Connected app usage trends in your cloud environment
-- Top users by threat detection
-
-We recommend you check the dashboard daily to see what new alerts have been triggered. It's a good place to keep an eye on the health of your cloud environment. The dashboard helps you get a sense of what's happening.
-
-## Gradual deployment of our enhanced dashboard
-
-As part of our ongoing improvements to the portal design, the Cloud App Security dashboard has been improved based on your feedback. The dashboard offers an enhanced user experience with updated content and data.
-
 The information presented in the dashboard is an overview of all the most important information about your organization. Each information card provides links to a deeper investigation of the information presented. You can also choose to view the dashboard information for a specific app using the filter provided.
 
 ![Cloud App Security dashboard](media/dashboard-enhanced.png)
