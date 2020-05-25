@@ -29,13 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article describes what you should do with Cloud App Security daily.  After you get Microsoft Cloud App Security up and running, you'll need to:
-
-- Configure data streams
-- Sanction apps you want to allow people to use
-- Set up policies to monitor your cloud environment.
-
-You can then use Cloud App Security to control and protect your cloud and manage risk.
+This article describes what you should do with Cloud App Security daily.  
 
 ## Check the dashboard
 
