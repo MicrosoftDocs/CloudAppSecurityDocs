@@ -33,6 +33,8 @@
     href: tutorial-ueba.md
   - name: Investigate risky OAuth apps
     href: investigate-risky-oauth.md
+  - name: Discover and protect sensitive information
+    href: tutorial-dlp.md
   - name: Protect any app in your organization in real time
     href: tutorial-proxy.md
   - name: Block downloads of sensitive information
