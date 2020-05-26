@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
+title: Get security configuration recommendations for Azure - Cloud App Security
 description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Azure Security Center.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/1/2019
+ms.date: 06/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -29,38 +29,15 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security provides you with a security configuration assessment of your Azure environment. The assessment, powered by Azure Security Center, provides recommendations for missing configuration and security control.
+Microsoft Cloud App Security provides you with security configuration assessments of your public cloud platforms, including Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP).
 
-## Enable security configuration recommendations
+The assessments are based on the native cloud platform tools:
 
-To use this feature, you need the appropriate permissions in Azure AD and in the Azure portal. By default, the Azure AD Global administrator role doesn't provide you with access to Azure subscriptions. Elevate your permissions to grant access to Azure subscriptions for yourself and other users.
+- [Azure recommendations](security-config-azure.md) are sourced from Azure Security Center surfacing Azure best practices security recommendations
+- [AWS recommendations](security-config-aws.md) are sourced from AWS Security Hub surfacing security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0.
+- [GCP recommendations](security-config-gcp.md) are sourced from Google Security Command Center and Security Health Analytics surfacing security recommendations based on the Center for Internet Security (CIS) benchmark for GCP, version 1.1.0.
 
-> [!IMPORTANT]
-> We recommend that you disable the elevation after you complete the following process.
-
-To enable security configuration recommendations in Microsoft Cloud App Security:
-
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Gain tenant-wide visibility for Azure Security Center</a>. This process includes:
-
-    - Granting yourself and all the other Microsoft Cloud App Security administrators you want to grant access to this page, the role of Reader for all subscriptions.
-    - Assigning the role on the root management group in Azure Security Center
-    - Elevating your Azure AD Global administrator to grant access to Azure subscriptions.
-    - The article describes the process for becoming a Security administrator. For this integration to work, the minimum permissions you need are **Reader**.
-
-1. Make sure to open <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> for the changes to take effect.
-
-1. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
-
-    - Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
-    - It might take up to 15 minutes before your changes take effect.
-
-    ![security configuration menu](media/security-configuration-menu.png)
-
-1. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can click on the security configuration icon ![ASC icon](media/asc-icon.png) to open the recommendation in Azure Security Center for more information and to deep dive into the recommendation.
-
-For information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
-
-![security configuration](media/security-configuration-azure.png)
+This organization-level view of all public cloud platform security configuration recommendations enables security admins to investigate security configuration gaps in one central location. Recommendations cover all Azure subscriptions of the Azure tenant, AWS accounts within the organization including member accounts, and all GCP projects within the organization.
 
 ## Next steps
 

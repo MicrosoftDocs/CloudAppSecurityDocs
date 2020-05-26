@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
+title: Get security configuration recommendations for Azure - Cloud App Security
 description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Azure Security Center.
 keywords:
 author: shsagir
@@ -38,6 +38,8 @@ To use this feature, you need the appropriate permissions in Azure AD and in the
 > [!IMPORTANT]
 > We recommend that you disable the elevation after you complete the following process.
 
+## How to enable Azure security recommendations
+
 To enable security configuration recommendations in Microsoft Cloud App Security:
 
 1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Gain tenant-wide visibility for Azure Security Center</a>. This process includes:
@@ -49,10 +51,12 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 
 1. Make sure to open <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> for the changes to take effect.
 
+## How to view Azure security recommendations
+
 1. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
 
-    - Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
-    - It might take up to 15 minutes before your changes take effect.
+    > [!NOTE]
+    > It might take up to 15 minutes before your changes take effect.
 
     ![security configuration menu](media/security-configuration-menu.png)
 

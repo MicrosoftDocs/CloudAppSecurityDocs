@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Threat protection policies - Cloud App Security | Microsoft Docs
+title: Threat protection policies - Cloud App Security
 description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
