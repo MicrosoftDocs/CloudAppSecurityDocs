@@ -24,78 +24,58 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor based on group membership. This feature enables you to select users whose activities will be hidden by default and assign dedicated admins with the ability to view these activities, with all view actions audited in the products governance log for monitoring. The activity privacy is meant to allow organizations to follow their compliance regulations without compromising the users security.
+Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor based on group membership. Activity privacy adds the ability to follow your organization's compliance regulations without compromising user privacy. This is achieved by enabling you to monitor users whilst maintaining their privacy by hiding their activities in the activity log. Only authorized admins have the option to choose to view these private activities, with each instance being audited in the governance log.
 
-## Include or exclude user groups
+## Configure activity privacy user groups
 
-You may not want to use Microsoft Cloud App Security for all the users in your organization. Scoping is especially useful when you want to limit your deployment because of license restrictions. You may also need to limit because of compliance regulations requiring you not monitor users from certain countries. For example, use scoped deployment to only monitor US-based employees. Alternatively, you can avoid showing any activities for your users based in Germany.
+You may have users in Cloud App Security that you want to monitor but, due to compliance regulations, you need to limit the people who can do so. Activity privacy allows you to define a user group for which the activities will be hidden by default.
 
-- To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Cloud App Security. By default, you'll see the following groups:
+To configure your user privacy groups, you must first [import user groups](user-groups.md) to Cloud App Security. By default, you'll see the following groups:
 
-  - **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
+- **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
 
-  - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
+- **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 
-- Setting an include rule will automatically exclude all groups not within the included group. For example, if you set a rule to include all members of the US-office groups, any groups who aren't part of that group won't be monitored.
+1. In the menu bar, click the settings cog and select **Scoped deployment and privacy**.
 
-- Excluded user groups override included user groups. Meaning that if you include the user group "UK-employees" but exclude "Marketing", marketing members from the UK won't be monitored even if they're members of the group **UK-employees**.
+    ![settings icon](media/settings-icon.png)
 
-1. In the menu bar, click the settings cog and select **Scoped deployment**.
-
-    ![settings icon](media/settings-icon.png "settings icon")
-
-2. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Cloud App Security.
-
-3. To set specific groups to be monitored by Microsoft Cloud App Security, in the **Include** tab, click the plus icon.
+1. To set specific groups to be monitored by Cloud App Security, in the **Activity privacy** tab, click the plus icon.
     ![icon](media/plus-icon.png)
 
-4. In the **Create new include rule** dialog, do the following steps:
+1. In the **Add user groups** dialog, under **Select user groups**, select all the groups you want to make private in Cloud App Security, and then click **Add**.
 
-    1. Under **Type rule name**, give the rule a descriptive name.
-    2. Under **Select user groups**, select all the groups you want to monitor with Cloud App Security.
-    3. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, the rule will only affect monitoring of the apps you select. For example, if you select the group **UI team users** and **Box**, Cloud App Security will only monitor Box activity for users in your UI team users group and for all other apps, Cloud App Security will monitor all activities for all users.
+    ![Screenshot showing the add user groups dialog box](media/activity-privacy-add-user-groups.png)
 
-        ![include rule](media/include-rule.png)
+    > [!NOTE]
+    > Once a user group is added, all the activities performed by users of the group will be made private from then on. Existing activities are not affected.
 
-5. To set specific groups to be excluded from monitoring, in the **Exclude** tab, click the plus icon.
+## Assign admins permission to view private activities
 
-   ![icon](media/plus-icon.png)
+1. In the menu bar, click the settings cog and select **Manage admin access**.
 
-6. In the **Create new Exclude rule** dialog, set the following parameters:
+    ![settings icon](media/settings-icon.png)
 
-    1. Under **Type rule name**, give the rule a descriptive name.
-    Under **Select user groups**, select all the groups you don't want Cloud App Security to monitor.
-    2. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, Cloud App Security will stop monitoring the group you selected only for the apps you select. That means that if you select the group **UI team users** and **Active Directory**, Cloud App Security will monitor all user activity except Active Directory activities that are performed by UI team users.
+1. To give specific admins permission to view private activities, in the **Activity privacy permissions** tab, click the plus icon.
+    ![icon](media/plus-icon.png)
 
-       ![exclude rule](media/exclude-rule.png)
+1. In the **Add admin permission** dialog, enter the admin's UPN or email address, and then click **Add permission**.
 
-## Example results for include and exclude rules
+    ![Screenshot showing the add admin permission dialog box](media/activity-privacy-add-admin-permission.png)
 
-The include and exclude rules you create work together to scope the overall monitoring performed by Microsoft Cloud App Security. Here's an example of include and exclude rules you can create, and the final result of what Microsoft Cloud App Security monitors after these rules are running.
+    > [!NOTE]
+    > Only admins can be assigned permission to view private activities.
 
-If you create the following rules:
+## Viewing private activities
 
-- Exclude user group "Germany all users"
-- Include for user group "Global sales" only Office 365 activities
-- Include for user group "Sales managers" only Power BI activities
-- Salesforce is connected to Microsoft Cloud App Security and no rules are set for it
+Once an admin has been granted the appropriate permission to view private activities, they have the option to choose to see these activities in the activity log.
 
-The following user activities are monitored:
+### To view private activities
 
-|User|Group membership|Activities monitored|
-|----|----|----|
-|Adriana|Germany all users<br />Global sales<br />Sales managers|None|
-|Alain|Global sales|Office 365 and all subapps except Power BI|
-|Cornel|Global sales<br />Sales managers|Office 365 and all subapps|
-|Raymond|Sales managers|Power BI only|
+1. In the **Activity log** page, to the right of the activity table, click the settings icon, and then select **Show private activities**.
 
-> [!NOTE]
-> Other apps will not be affected by the group scoping in these rules.
-> In the example, for Salesforce, all activities are monitored for all user groups.
+    ![Screenshot showing the activity log settings icon](media/activity-privacy-view-settings-icon.png)
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Set up Cloud Discovery](set-up-cloud-discovery.md)
+1. In the **Show private activities** dialog, click **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log and the action is recorded in the governance log.
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -24,7 +24,7 @@ This article provides information about the `cas.ms`, `mcas.ms`, and `mcas-gov.u
 
 This is normal behavior and results from Cloud App Security protecting your environment. Even if your organization does not use Cloud App Security, when someone visits your site or service from an environment that does, their URLs are rewritten to protect their access.
 
-For example, Contoso protects its environment using Conditional Access App Control provided by Cloud App Security. When a Contoso user visits `fabrikam.com`, the user is automatically redirected to `fabrikam.com.<region>.cas.ms`. As a result, Fabrikam's phishing team will see a new DNS entry and certificate for `fabrikam.com.<region>.cas.ms`.
+For example, Contoso protects its environment using Conditional Access App Control provided by Cloud App Security. When a Contoso user visits `fabrikam.com`, the user is automatically redirected to `fabrikam.com.cas.ms`. As a result, Fabrikam's phishing team will see a new DNS entry and certificate for `fabrikam.com.cas.ms`.
 
 So even though Fabrikam does not actually use Cloud App Security, they see the DNS entry or certificate because Contoso does.
 
@@ -44,6 +44,6 @@ First of all, you have not been phished! This kind of URL is expected and indica
 
 They do this by using Cloud App Security, a solution for protecting your organization's cloud environment, to replace all relevant URLs and cookies relating to cloud apps that you use.
 
-So when you try accessing a cloud app such as Salesforce, SharePoint Online, or AWS, you will notice that its URL is suffixed with `<region>.cas.ms`, `<region>.mcas.ms`, or `<region>.mcas-gov.us`. For example, when using the XYZ app, the URL you're used to seeing changes from `XYZ.com` to `XYZ.com.<region>.cas.ms`.
+So when you try accessing a cloud app such as Salesforce, SharePoint Online, or AWS, you will notice that its URL is suffixed with `.cas.ms`, `.mcas.ms`, or `.mcas-gov.us`. For example, when using the XYZ app, the URL you're used to seeing changes from `XYZ.com` to `XYZ.com.cas.ms`.
 
-If the URL does not exactly match one of the replacement patterns (for example, `<app_site>.com` is not replaced with `<app_site>.com.<region>.cas.ms`), or if you have additional concerns, contact your IT department.
+If the URL does not exactly match one of the replacement patterns (for example, `<app_site>.com` is not replaced with `<app_site>.com.cas.ms`), or if you have additional concerns, contact your IT department.
