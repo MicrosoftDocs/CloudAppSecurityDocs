@@ -101,6 +101,8 @@
       href: user-groups.md
     - name: Scoped deployment
       href: scoped-deployment.md
+    - name: Activity privacy
+      href: activity-privacy.md
     - name: IP tags and ranges
       href: ip-tags.md
   - name: Cloud Discovery
