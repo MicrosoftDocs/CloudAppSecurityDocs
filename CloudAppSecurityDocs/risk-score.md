@@ -29,13 +29,13 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps. The apps are ranked and scored based on more than 70 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses to your organization. This article provides instructions for how to use and customize the Cloud App Security app risk score.
+The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps. The apps are ranked and scored based on more than 80 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses to your organization. This article provides instructions for how to use and customize the Cloud App Security app risk score.
 
 ## The Cloud App Catalog
 
 The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up-to-date:
 
-1. Automated data extraction directly from the cloud app. The extraction is for attributes such as SOC 2 compliance, terms of service, sign in URL, privacy policy, and HQ location.
+1. Automated data extraction directly from the cloud app. The extraction is for attributes such as SOC 2 compliance, terms of service, sign-in URL, privacy policy, and HQ location.
 2. Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
 3. Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
 4. Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
@@ -112,7 +112,7 @@ Cloud Discovery provides you with important data regarding the credibility and r
 
 Each of the categories is composed of many specific properties. According to the Cloud App Security scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly. However, continuous properties, such as domain age, will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category to create the category's subscore. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.
 
-It's important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given an equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:
+It's important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:
 
 1. In the portal, under the settings icon, select **Cloud Discovery settings**.
 
@@ -122,11 +122,11 @@ It's important to take a minute to review and modify the default weights given t
 
     ![score](media/score.png "score metrics")
 
-All the information needed to understand how the Cloud App Security risk scores are stacking up is available in the Cloud App Security portal. To better understand a risk factor’s weight in specific risk category, use the “i” button to the right of each field name in the app’s profile. This provides information about how exactly Cloud App Security scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
+All the information needed to understand how the Cloud App Security risk scores are stacking up is available in the Cloud App Security portal. To better understand a risk factor's weight in a specific risk category, use the "i" button to the right of each field name in the app's profile. This provides information about how exactly Cloud App Security scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
 
 ![risk calculation](media/cac-weight.png)
 
-To understand a risk category's weight in an app’s total score, hover over the risk category score:
+To understand a risk category's weight in an app's total score, hover over the risk category score:
 
 ![risk category weight](media/risk-category-weight.png)
 
