@@ -52,11 +52,11 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 Creating a session policy with Conditional Access App Control enables you to control user sessions by redirecting the user through a reverse proxy instead of directly to the app. From then on, user requests and responses go through Cloud App Security rather than directly to the app.
 
-When a session is protected by proxy, all the relevant URLs and cookies are replaced by Cloud App Security. For example, if the app returns a page with links whose domains end with `myapp.com`, the link's domain is suffixed with something like `*.cas.ms`, as follows:
+When a session is protected by proxy, all the relevant URLs and cookies are replaced by Cloud App Security. For example, if the app returns a page with links whose domains end with `myapp.com`, the link's domain is suffixed with something like `*.mcas.ms`, as follows:
 
 |App URL|Replaced URL|
 |---|---|
-|`myapp.com`|`myapp.com.us.cas.ms`|
+|`myapp.com`|`myapp.com.mcas.ms`|
 
 This method doesn't require you to install anything on the device making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
 
