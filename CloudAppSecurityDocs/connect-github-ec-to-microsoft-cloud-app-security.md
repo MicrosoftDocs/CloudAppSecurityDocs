@@ -89,7 +89,7 @@ Repeat this step for each additional connected organization.
 
     ![Screenshot showing connect github api](media/connect-github-connect-app.png)
 
-    The GitHub sign-in page opens. If required, enter your GitHub administrator credentials to allow Cloud App Security access to your team's GitHub Enterprise Cloud instance.
+    The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Cloud App Security access to your team's GitHub Enterprise Cloud instance.
 
 1. Authorize the app to give Cloud App Security to access your GitHub organization.
 
