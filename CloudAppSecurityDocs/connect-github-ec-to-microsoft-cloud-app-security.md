@@ -52,7 +52,7 @@ For Cloud App Security to match the domain emails of your GitHub organization's 
 In GitHub, browse to your organization's page, and from the URL, make a note of your organization login name, you'll need it later.
 
     > [!NOTE]
-    > The page will have a URL like https://github.com/\<your-organization>. For example, if your organization's page is https://github.com/*sample-organization*, the organization's login name is *sample-organization*.
+    > The page will have a URL like `https://github.com/<your-organization>`. For example, if your organization's page is `https://github.com/sample-organization`, the organization's login name is *sample-organization*.
 
     ![Screenshot showing obtaining organization login name](media/connect-github-org-login-name.png)
 
