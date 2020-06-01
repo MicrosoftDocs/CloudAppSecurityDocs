@@ -39,12 +39,15 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 ## How to connect GitHub Enterprise Cloud to Cloud App Security
 
-### Verify your GitHub domain
+### Verify your GitHub domains
 
-For Cloud App Security to match the domain emails of your GitHub organization's members to their corresponding Azure Active Directory user, you must verify your GitHub domain. You can skip these steps if you have already verified your domain.
+For Cloud App Security to match the domain emails of your GitHub organization's members to their corresponding Azure Active Directory user, you must verify your GitHub domains. You can skip these steps if you have already verified your domains.
 
 1. Upgrade your organization to the [Corporate Terms of Service](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/upgrading-to-the-corporate-terms-of-service).
-1. Verify [your organization's domain](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/verifying-your-organizations-domain).
+1. Verify [your organization's domains](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/verifying-your-organizations-domain).
+
+    > [!NOTE]
+    > Make sure to verify each of the managed domains listed in your Cloud App Security portal. To view your managed domains, browse to **Settings** > **Organization details** > **Managed domains**.
 
 ### Configure GitHub Enterprise Cloud
 
