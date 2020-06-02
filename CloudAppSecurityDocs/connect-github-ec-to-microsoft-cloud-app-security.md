@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/01/2020
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -41,7 +41,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 ### Verify your GitHub domains
 
-Verifying your domains is optional. However, we highly recommend that you do verify your domains so that Cloud App Security can match the domain emails of your GitHub organization's members to their corresponding Azure Active Directory user. Emails are only shown for users that do not keep their GitHub Email addresses private (Settings > Emails > Keep my email addresses private).
+Verifying your domains is optional. However, we highly recommend that you do verify your domains so that Cloud App Security can match the domain emails of your GitHub organization's members to their corresponding Azure Active Directory user.
 
 These steps can be completed independently of the [Configure GitHub Enterprise Cloud](#configure-github-enterprise-cloud) steps and can skipped if you have already verified your domains.
 
