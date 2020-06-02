@@ -47,7 +47,7 @@ For Cloud App Security to match the domain emails of your GitHub organization's 
 1. Verify [your organization's domains](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/verifying-your-organizations-domain).
 
     > [!NOTE]
-    > Make sure to verify each of the managed domains listed in your Cloud App Security portal. To view your managed domains, browse to **Settings** > **Organization details** > **Managed domains**.
+    > Make sure to verify each of the managed domains listed in your Cloud App Security portal. To view your managed domains, in Cloud App Security, browse to **Settings** > **Organization details** > **Managed domains**.
 
 ### Configure GitHub Enterprise Cloud
 
