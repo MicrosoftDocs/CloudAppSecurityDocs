@@ -2,12 +2,12 @@
 # required metadata
 
 title: Configure automatic log upload using Docker in Azure 
-description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or RHEL in Azure.
+description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in Azure.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/04/2020
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -25,15 +25,18 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Set up and configuration on Ubuntu or RHEL in Azure
+# Docker on Linux in Azure
 
 *Applies to: Microsoft Cloud App Security*
 
-You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or Red Hat Enterprise Linux (RHEL) in Azure. This article describes how to set up the automatic log upload.
+You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS in Azure.
 
 ## Prerequisites
 
-* OS: Ubuntu 16.04 and 18.04, RHEL 7.2 or higher, or CentOS 7.2 or higher
+* OS:
+    * Ubuntu 14.04, 16.04, and 18.04
+    * RHEL 7.2 or higher
+    * CentOS 7.2 or higher
 
 * Disk space: 250 GB
 
