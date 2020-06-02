@@ -42,8 +42,4 @@ Here is an example of the request.
 curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/unread/"
 ```
 
-### Response
-
-Not applicable.
-
 [!INCLUDE [Open support ticket](includes/support.md)]

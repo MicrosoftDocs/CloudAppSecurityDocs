@@ -24,7 +24,7 @@ The Microsoft Cloud App Security API provides programmatic access to Cloud App S
 
 - Upload log files for Cloud Discovery
 - Generate block scripts
-- List activities, alerts, and policy reports
+- List activities and alerts
 - Dismiss or resolve alerts
 
 ## What actions are supported?
@@ -41,6 +41,24 @@ The following table describes the actions supported:
 |Files|GET or POST|/api/v1/files|
 
 Where **Resource** represents a group of related entities.
+
+## API tokens
+
+Cloud App Security requires an API token in the header of all API requests to the server, such as the following:
+
+```http
+Authorization: Token <your_token_key>
+```
+
+Where `<your_token_key>` is your personal API token.
+
+For more information about API tokens, see [Managing API tokens](api-authentication.md).
+
+### Example
+
+```rest
+curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
+```
 
 ## What field types are supported?
 
@@ -78,7 +96,7 @@ Some of our API endpoints support filters when performing queries. In their rele
 
 Most filters support multiple values to provide you with powerful queries. When combining filters and operators we use AND as the logical operator between the filters.
 
-#### Example
+### Example
 
 ```rest
 curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
@@ -114,7 +132,7 @@ The following table describes the supported operators:
 | gt | single value | Returns all records whose value is greater than the provided value |
 | gte | single value | Returns all records whose value is greater than or equal to the provided value |
 | gte_ndays | number | Returns all records with date later than N days ago |
-| isnotset | boolean | When set to "true", returns all relevant records that don’t have a value in the specified field |
+| isnotset | boolean | When set to "true", returns all relevant records that don't have a value in the specified field |
 | isset | boolean | When set to "true", returns all relevant records that have a value in the specified field |
 | lt | single value | Returns all records whose value is less than the provided value |
 | lte | single value | Returns all records whose value is less than or equal to the provided value |

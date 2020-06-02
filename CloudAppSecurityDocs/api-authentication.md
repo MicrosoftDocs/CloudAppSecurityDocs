@@ -14,7 +14,7 @@ ms.service: cloud-app-security
 # optional metadata
 ms.suite: ems
 ---
-# API tokens
+# Managing API tokens
 
 *Applies to: Microsoft Cloud App Security*
 

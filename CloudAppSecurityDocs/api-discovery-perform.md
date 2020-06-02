@@ -60,8 +60,4 @@ CloudBlockBlob sasBlob = new CloudBlockBlob(uri);
 sasBlob.upload(new FileInputStream(fileReference), fileReference.length());
 ```
 
-### Response
-
-Not applicable.
-
 [!INCLUDE [Open support ticket](includes/support.md)]

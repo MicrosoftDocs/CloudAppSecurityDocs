@@ -53,8 +53,4 @@ curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_reg
 }'
 ```
 
-### Response
-
-Not applicable.
-
 [!INCLUDE [Open support ticket](includes/support.md)]

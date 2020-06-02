@@ -18,6 +18,9 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
+> [!NOTE]
+> This request is not available for Office 365 Cloud App Security.
+
 Run the GET request to fetch all entities related to the entity matching the specified primary key. If the entity is a user, fetches all accounts associated with the user. If the entity is an account, fetches the entity's parent and siblings.
 
 ## HTTP request

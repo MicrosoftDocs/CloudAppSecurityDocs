@@ -18,6 +18,9 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
+> [!NOTE]
+> This request is not available for Office 365 Cloud App Security.
+
 Run the GET or POST request to fetch a list of files matching the specified filters.
 
 ## HTTP request
