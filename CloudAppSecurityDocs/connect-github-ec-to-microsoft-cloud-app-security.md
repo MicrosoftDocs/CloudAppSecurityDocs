@@ -16,7 +16,7 @@ ms.technology:
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX
 #audience:
 #ms.devlang:
 ms.reviewer: reutam
