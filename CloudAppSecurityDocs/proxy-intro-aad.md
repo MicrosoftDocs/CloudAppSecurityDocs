@@ -162,7 +162,7 @@ While session controls are built to work with any browser on any major platform 
 - Workplace by Facebook
 - Yammer (preview)
 
-### <a id="O365-apps"></a>Office 365 featured apps
+### <a name="O365-apps"></a>Office 365 featured apps
 
 The following is a list of featured apps that are supported in Office 365 Cloud App Security. To use these apps with Cloud App Security, you must have an Office 365 E5 license.
 
