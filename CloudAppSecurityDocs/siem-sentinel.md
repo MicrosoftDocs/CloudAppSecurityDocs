@@ -71,7 +71,7 @@ To integrate with Azure Sentinel:
     ![Screenshot showing finish page of Configure Azure Sentinel integration](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> Discovery logs will start forwarding to Azure Sentinel within 15 minutes of configuring them in the Cloud app Security portal.
+> New discovery logs will start forwarding to Azure Sentinel within 15 minutes of configuring them in the Cloud App Security portal.
 
 ## Alerts and discovery logs in Azure Sentinel
 
