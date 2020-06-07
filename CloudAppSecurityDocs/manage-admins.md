@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/19/2020
+ms.date: 06/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -58,6 +58,9 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Accessing and editing the SIEM agent
 
 - **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
+
+> [!NOTE]
+> Office 365 and Azure AD roles do not not listed in the **Manage admin access** page.
 
 Additionally, the following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
 
@@ -133,7 +136,7 @@ You can add additional admins to Cloud App Security without adding users to Azur
 
 ## Admin activity auditing
 
-Cloud App Security lets you export a log of all admin activities including auditing of an admin investigating a specific user or viewing specific alerts.
+Cloud App Security lets you export a log of admin sign-in activities and an audit of views of a specific user or alerts carried out as part of an investigation.
 
 To export a log, perform the following steps:
 
