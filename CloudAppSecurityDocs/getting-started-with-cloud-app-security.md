@@ -6,7 +6,7 @@ description: This quickstart outlines the process for getting Cloud App Security
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 06/07/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -46,9 +46,9 @@ Your organization must have a license to use Cloud App Security. For pricing det
 
 ## To access the portal
 
-To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **Microsoft 365 admin center**, as follows:
+To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **[Microsoft 365 admin center](https://security.microsoft.com)**, as follows:
 
-1. In the Microsoft 365 admin center, click the **App launcher** icon ![Office 365 app launcher icon](media/o365-admin-centers-icon.png), and then select **Security**.
+1. In the Microsoft 365 admin center, in the side menu, click **show all**, and then select **Security**.
 
     ![Access from Office 365](media/access-from-o365.png)
 
@@ -133,7 +133,7 @@ Now the risk scores given to discovered apps are configured precisely according 
 ### Why personalize your environment?
 
 Some features work best when they're customized to your needs.
-Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization’s preferences.
+Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization's preferences.
 
 ## Step 5. [Organize the data according to your needs](ip-tags.md)
 
