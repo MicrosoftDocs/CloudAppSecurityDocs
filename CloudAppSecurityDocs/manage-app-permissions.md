@@ -64,9 +64,9 @@ The OAuth apps page provides the following information about each OAuth app that
 
 1. On the **OAuth apps** page, click on the app to open the **App drawer** to view more information about the app and the permissions it was granted.
 
-    - Click on the **Permissions** link to view a full list of permissions that were granted to the app.
+    - Click **Permissions** to view a full list of permissions that were granted to the app.
     - Under **Community use**, you can view how common the app is in other organizations.
-    - Click the **Related activity** link to view the activities that are listed in the governance log related to this app.
+    - Click **Related activity** to view the activities that are listed in the activity log related to this app.
 
 2. To ban the app, click on the ban icon at the end of the app row in the table.
 
@@ -88,7 +88,7 @@ The OAuth apps page provides the following information about each OAuth app that
 
 ## Revoke app and notify user
 
-For G Suite and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under “Enterprise Applications” in Azure AD.
+For G Suite and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
 
 1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user. Click the icon at the end of the app row in the table and selecting **Revoke app**.
@@ -117,7 +117,7 @@ To export the log, perform the following steps:
 
 ## Send feedback
 
-If there’s an OAuth app discovered in your organization that seems malicious, you can send the Cloud App Security team feedback to let us know. This feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
+If there's an OAuth app discovered in your organization that seems malicious, you can send the Cloud App Security team feedback to let us know. This feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
 
 1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Report app**.
 
