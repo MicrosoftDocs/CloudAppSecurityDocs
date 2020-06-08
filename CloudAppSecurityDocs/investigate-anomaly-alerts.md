@@ -356,7 +356,7 @@ Activities indicating that an attacker gained access to a user's inbox and creat
 
 This section describes alerts indicating that a malicious actor may be attempting to gain higher-level permissions in your organization.
 
-## Unusual administrative activity (by user)
+### Unusual administrative activity (by user)
 
 Activities indicating that an attacker has compromised a user account and performed administrative actions that are not common for that user. For example, an attacker can try to change a security setting for a user, an operation that is relatively rare for a common user. Cloud App Security creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
 
