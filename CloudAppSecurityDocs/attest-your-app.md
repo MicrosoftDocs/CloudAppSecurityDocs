@@ -63,15 +63,6 @@ Follow the service attributes described below to successfully complete the submi
 | Remember password | Security | Boolean | True, False | Does this app enable the option for remembering and saving user passwords in the app? |
 | User-roles support | Security | Boolean | True, False | Does this app support distribution of users by roles and levels of permission? |
 | File sharing | Security | Boolean | True, False | Does this app include features that allow file sharing between users? |
-| Valid certificate name | Security | Boolean | True, False | Does the server provide an SSL certificate matching the domain name? |
-| Trusted certificate | Security | Boolean | True, False | Does the server provide a trusted SSL certificate (not expired, verified, and trusted signature chain, etc.)? |
-| Encryption protocol | Security | String | Close list - provided in questionnaire | The latest version of Transport Layer Security (TLS) encryption protocol supported between user endpoint and app provider. If the server's certificate is non-existent or not valid, encryption is considered unsupported.|
-| Heartbleed patched | Security | Boolean | True, False | Is the SSL implementation of the server patched for the Heartbleed bug to reduce vulnerability? |
-| HTTP security headers: Strict-Transport-Security | Security | Boolean | True, False | Are HTTP Strict-Transport-Security headers implemented by the app on its website? |
-| HTTP security headers: Content-Security-Policy | Security | Boolean | True, False | Are HTTP Content-Security-Policy headers implemented by the app on its website? |
-| HTTP security headers: X-Frame-Options | Security | Boolean | True, False | Are HTTP X-Frame-Options headers implemented by the app on its website? |
-| HTTP security headers: X-Content-Type-Options | Security | Boolean | True, False | Are HTTP X-Content-Type-Options headers implemented by the app on its website? |
-| HTTP security headers: X-XSS-Protection | Security | Boolean | True, False | Are HTTP X-XSS-Protection headers implemented by the app on its website? |
 | Supports SAML | Security | Boolean | True, False | Does this app support the SAML standard for exchanging authentication and authorization data? |
 | Protected against DROWN | Security | Boolean | True, False | Are the application servers protected from DROWN attacks? |
 | Penetration Testing | Security | Boolean | True, False | Does this app carry out penetration testing to detect and assess network vulnerabilities? |
@@ -87,27 +78,27 @@ Follow the service attributes described below to successfully complete the submi
 | GAAP | Compliance | Boolean | True, False, N/A | Does this app comply with GAAP, a collection of commonly-followed accounting rules and standards for financial reporting? |
 | HIPAA | Compliance | Boolean | True, False, N/A | Does this app comply with HIPAA, the US legislation that sets standards for protecting the confidentiality and security of individually identifiable health information? |
 | ISAE 3402 | Compliance | Boolean | True, False, N/A | Does this app comply with ISAE 3402, the global standard providing assurance that a service organization has appropriate controls in place? |
-| ISO 27001 | Compliance | Boolean | True, False, N/A | Is this app ISO 27001 certified, a certificate given to companies upholding internationally recognized guidelines and general principles for initiating, implementing, maintaining, and improving information security management within an organization? |
+| ISO 27001 | Compliance | Boolean | True, False | Is this app ISO 27001 certified, a certificate given to companies upholding internationally recognized guidelines and general principles for initiating, implementing, maintaining, and improving information security management within an organization? |
 | ITAR | Compliance | Boolean | True, False, N/A | Does this app comply with ITAR, regulations controlling the export and import of defense-related articles and services found on the US Munitions List? |
 | SOC 1 | Compliance | Boolean | True, False, N/A | Does this app comply with SOC 1, reporting on controls at a service organization which are relevant to user entities' internal control over financial reporting? |
-| SOC 2 | Compliance | Boolean | True, False, N/A | Does this app comply with SOC 2, reporting on non-financial processing based on one or more of the Trust service criteria on security, privacy, availability, confidentiality, and processing integrity? |
-| SOC 3 | Compliance | Boolean | True, False, N/A | Does this app comply with SOC 3, reporting based on the Trust service criteria, that may be distributed freely and only contain management's assertion that they have met the requirements of the chosen criteria? |
+| SOC 2 | Compliance | Boolean | True, False | Does this app comply with SOC 2, reporting on non-financial processing based on one or more of the Trust service criteria on security, privacy, availability, confidentiality, and processing integrity? |
+| SOC 3 | Compliance | Boolean | True, False | Does this app comply with SOC 3, reporting based on the Trust service criteria, that may be distributed freely and only contain management's assertion that they have met the requirements of the chosen criteria? |
 | SOX | Compliance | Boolean | True, False, N/A | Does this app comply with SOX, US legislation aimed at protecting shareholders and the general public from accounting errors and frauds, as well as improving the accuracy of corporate disclosures? |
-| SP 800-53 | Compliance | Boolean | True, False, N/A | Does this app comply with SP80053, recommended security controls for federal information systems and organizations? |
+| SP 800-53 | Compliance | Boolean | True, False | Does this app comply with SP80053, recommended security controls for federal information systems and organizations? |
 | SSAE 16 | Compliance | Boolean | True, False, N/A | Does this app comply with the SSAE 16 standard for auditing a service organization's internal compliance controls and reporting processes? |
 | PCI DSS version | Compliance | String | 1, 2, 3, 3.1, 3.2, N/A | The version of the PCI-DSS protocol supported by this app. |
 | ISO 27018 | Compliance | Boolean | True, False, N/A | Does this app comply with ISO 27018, which establishes commonly accepted controls and guidelines for processing and protecting Personally Identifiable Information (PII) in a public cloud computing environment? |
 | GLBA | Compliance | Boolean | True, False, N/A | Does this app comply with the Gramm-Leach-Bliley Act (GLBA), which requires financial institutions to establish standards for protecting the security and confidentiality of customers' personal information? |
-| FedRAMP level | Compliance | String | High, Moderate, Low, N/A | The level of the FedRAMP-compliant solution provided by this app. |
-| CSA STAR level | Compliance | String | Self-assessment, Certification, Attestation, C-STAR assessment, Continuous monitoring, N/A | The level of CSA STAR program at which the app is certified |
+| FedRAMP level | Compliance | String | High, Moderate, Low, Li-SaaS | The level of the FedRAMP-compliant solution provided by this app. |
+| CSA STAR level | Compliance | String | Self-assessment, Certification, Attestation, C-STAR assessment, Continuous monitoring | The level of CSA STAR program at which the app is certified |
 | Privacy Shield | Compliance | Boolean | True, False, N/A | Does this app comply with the EU-US Privacy Shield Framework, which imposes stronger obligations on US companies to protect Europeans' personal data? |
-| ISO 27017 | Compliance | Boolean | True, False, N/A | Does this app comply with ISO 27017, which establishes commonly accepted controls and guidelines for processing and protecting user information in a public cloud-computing environment? |
-| COBIT | Compliance | Boolean | True, False, N/A | Does this app comply with COBIT, which sets best practices for the governance and control of information systems and technology, and aligns IT with business principles? |
+| ISO 27017 | Compliance | Boolean | True, False | Does this app comply with ISO 27017, which establishes commonly accepted controls and guidelines for processing and protecting user information in a public cloud-computing environment? |
+| COBIT | Compliance | Boolean | True, False | Does this app comply with COBIT, which sets best practices for the governance and control of information systems and technology, and aligns IT with business principles? |
 | COPPA | Compliance | Boolean | True, False, N/A | Does this app comply with COPPA, which defines requirements on website and online services operators that provide content to children under 13 years of age? |
 | FERPA | Compliance | Boolean | True, False, N/A | Does this app comply with FERPA, a federal law that protects the privacy of student education records? |
 | GAPP | Compliance | Boolean | True, False, N/A | Does this app comply with GAPP, a collection of commonly-followed rules that address privacy risks in an organization? |
 | HITRUST CSF | Compliance | Boolean | True, False, N/A | Does this app comply with HITRUST CSF, a set of controls that harmonizes the requirements of information security regulations and standards? |
-| Jericho Forum Commandments | Compliance | Boolean | True, False, N/A | Does this app follow Jericho Forum Commandments, a set if principles to be observed when architecting systems for secure operation in de-perimeterized environments? |
+| Jericho Forum Commandments | Compliance | Boolean | True, False | Does this app follow Jericho Forum Commandments, a set if principles to be observed when architecting systems for secure operation in de-perimeterized environments? |
 | ISO 27002 | Compliance | Boolean | True, False, N/A | Does this app comply with ISO 27002, which establishes common guidelines for organizational information security standards and information security management practices? |
 | FFIEC | Compliance | Boolean | True, False, N/A | Does this app comply with the Federal Financial Institutions Examination Council’s guidance on the risk management controls necessary to authenticate services in an Internet banking environment? |
 | Data ownership | Legal | Boolean | True, False | Does this app fully preserve the user's ownership of uploaded data? |
@@ -128,7 +119,7 @@ Follow the service attributes described below to successfully complete the submi
 | GDPR - lawful basis for processing | Legal | Boolean | True, False, N/A | Does this app process personal data lawfully in accordance with consent, contract, legal obligation, vital interests, legitimate interests, special category, data, and criminal offense data? |
 | GDPR - Right to rectification | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to rectify their personal data? The controller must respond to all requests from its data subjects within one month. |
 
-\* Fields of type *Array* should be separated with semicolon (;).
+\* Fields of type *Array* should be separated with a semicolon (;).
 
 ## Next steps
 

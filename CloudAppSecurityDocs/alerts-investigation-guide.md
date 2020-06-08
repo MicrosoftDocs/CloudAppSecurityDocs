@@ -648,3 +648,8 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 1. Review the deletion activities and create a list of deleted files. If needed, recover the deleted files.
 1. Optionally, create a playbook using Power Automate to contact users and their managers to verify the activity.
+
+## See also
+
+> [!div class="nextstepaction"]
+> [Investigate risky users](tutorial-ueba.md)

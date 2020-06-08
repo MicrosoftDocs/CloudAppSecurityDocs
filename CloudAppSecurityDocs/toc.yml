@@ -10,9 +10,9 @@
     href: release-notes.md
   - name: Compare
     items:
-    - name: Office 365
+    - name: Office 365 Cloud App Security
       href: editions-cloud-app-security-o365.md
-    - name: Azure AD
+    - name: Azure AD Cloud App Discovery
       href: editions-cloud-app-security-aad.md
     - name: US Government GCC High
       href: editions-cloud-app-security-gcc.md
@@ -33,6 +33,8 @@
     href: tutorial-ueba.md
   - name: Investigate risky OAuth apps
     href: investigate-risky-oauth.md
+  - name: Discover and protect sensitive information
+    href: tutorial-dlp.md
   - name: Protect any app in your organization in real time
     href: tutorial-proxy.md
   - name: Block downloads of sensitive information
@@ -99,6 +101,8 @@
       href: user-groups.md
     - name: Scoped deployment
       href: scoped-deployment.md
+    - name: Activity privacy
+      href: activity-privacy.md
     - name: IP tags and ranges
       href: ip-tags.md
   - name: Cloud Discovery
@@ -119,11 +123,11 @@
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
         href: discovery-docker.md
-      - name: Docker on Windows
+      - name: Docker on Windows on-premises
         href: discovery-docker-windows.md
-      - name: Docker on Ubuntu and RHEL on-premises
+      - name: Docker on Linux on-premises
         href: discovery-docker-ubuntu.md
-      - name: Docker on Ubuntu in Azure
+      - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
       - name: Log collector FTP configuration
         href: log-collector-ftp.md
