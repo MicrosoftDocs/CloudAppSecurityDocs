@@ -49,6 +49,8 @@ landingContent:
         links:
           - text: Using the Cloud App Security REST API
             url: api-introduction.md
+          - text: Investigate anomaly alerts
+            url: investigate-anomaly-alerts.md
 
   # Card
   - title: Explore our top use cases
