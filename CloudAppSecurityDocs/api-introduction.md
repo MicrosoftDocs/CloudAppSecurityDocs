@@ -27,20 +27,21 @@ The Microsoft Cloud App Security API provides programmatic access to Cloud App S
 - List activities and alerts
 - Dismiss or resolve alerts
 
-## What actions are supported?
+## API URL structure
 
-The following table describes the actions supported:
+To use the Cloud App Security API, you must first obtain the API URL from your tenant. The API URL uses the following format: `https://<portal_url>/api/<endpoint>`.
 
-|Resource|HTTP verbs|URI routes|
-|---|---|---|
-|Discovery|GET, POST, or PUT|/api/v1/discovery|
-|Data enrichment|POST|/cas/api/subnet|
-|Activities|GET or POST|/api/v1/activities|
-|Alerts|GET or POST|/api/v1/alerts|
-|Entities|GET or POST|/api/v1/entities|
-|Files|GET or POST|/api/v1/files|
+To obtain the Cloud App Security portal URL for your tenant, do the following steps:
 
-Where **Resource** represents a group of related entities.
+1. In the Cloud App Security portal, click the **question mark icon** in the menu bar. Then, select **About**.
+
+    ![click About](media/about-menu.png)
+
+1. In the Cloud App Security about screen, you can see the portal url.
+
+    ![View your data center](media/api-url.png)
+
+Once you have the portal url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
 
 ## API tokens
 
@@ -59,6 +60,21 @@ For more information about API tokens, see [Managing API tokens](api-authenticat
 ```rest
 curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
 ```
+
+## What actions are supported?
+
+The following table describes the actions supported:
+
+|Resource|HTTP verbs|URI routes|
+|---|---|---|
+|Discovery|GET, POST, or PUT|/api/v1/discovery|
+|Data enrichment|POST|/cas/api/subnet|
+|Activities|GET or POST|/api/v1/activities|
+|Alerts|GET or POST|/api/v1/alerts|
+|Entities|GET or POST|/api/v1/entities|
+|Files|GET or POST|/api/v1/files|
+
+Where **Resource** represents a group of related entities.
 
 ## What field types are supported?
 
