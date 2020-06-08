@@ -132,7 +132,7 @@
       - name: Log collector FTP configuration
         href: log-collector-ftp.md
       - name: Log collector behind a proxy
-        href: log-collector-proxy.md  
+        href: log-collector-proxy.md
       - name: Use the custom log parser
         href: custom-log-parser.md
     - name: Cloud Discovery enrichment
@@ -182,7 +182,7 @@
     items:
     - name: Activities
       href: activity-filters.md
-      items: 
+      items:
       - name: Activity filters and queries
         href: activity-filters-queries.md
     - name: Files
@@ -205,6 +205,8 @@
       items:
       - name: Manage alerts
         href: managing-alerts.md
+    - name: Investigate anomaly alerts
+      href: investigate-anomaly-alerts.md
   - name: Control
     href: control.md
     items:
@@ -253,7 +255,7 @@
     - name: Azure Information Protection integration
       href: azip-integration.md
     - name: Integrate with external solutions
-      items: 
+      items:
       - name: Generic SIEM integration
         href: siem.md
       - name: Azure Sentinel integration
@@ -261,11 +263,11 @@
       - name: External DLP integration
         href: icap-stunnel.md
     - name: Automate processes and workflows
-      items: 
+      items:
       - name: Use the REST API
         href: api-tokens.md
       - name: Investigate activities with APIs
-        href: investigate-activities-api.md  
+        href: investigate-activities-api.md
       - name: Use Microsoft Flow
         href: flow-integration.md
 - name: Reference
@@ -279,7 +281,75 @@
     - name: Threat protection policies
       href: policies-threat-protection.md
     - name: Information protection policies
-      href: policies-information-protection.md    
+      href: policies-information-protection.md
+  - name: REST API
+    items:
+    - name: Introduction
+      href: api-introduction.md
+    - name: Authentication
+      href: api-authentication.md
+    - name: Cloud Discovery
+      items:
+      - name: Overview
+        href: api-discovery.md
+      - name: Initiate file upload
+        href: api-discovery-initiate.md
+      - name: Perform file upload
+        href: api-discovery-perform.md
+      - name: Finalize file upload
+        href: api-discovery-finalize.md
+      - name: Generate block script
+        href: api-discovery-script.md
+    - name: Data Enhancement
+      items:
+      - name: Create IP address range
+        href: api-data-enrichment.md
+    - name: Activities
+      items:
+      - name: Overview
+        href: api-activities.md
+      - name: List activities
+        href: api-activities-list.md
+      - name: Fetch activity
+        href: api-activities-fetch.md
+      - name: Feedback on activity
+        href: api-activities-feedback.md
+    - name: Alerts
+      items:
+      - name: Overview
+        href: api-alerts.md
+      - name: List alerts
+        href: api-alerts-list.md
+      - name: Bulk dismiss
+        href: api-alerts-bulk-dismiss.md
+      - name: Bulk resolve
+        href: api-alerts-bulk-resolve.md
+      - name: Fetch alert
+        href: api-alerts-fetch.md
+      - name: Dismiss alert
+        href: api-alerts-dismiss.md
+      - name: Mark alert as read
+        href: api-alerts-mark-read.md
+      - name: Mark alert as unread
+        href: api-alerts-mark-unread.md
+    - name: Entities
+      items:
+      - name: Overview
+        href: api-entities.md
+      - name: List entities
+        href: api-entities-list.md
+      - name: Fetch entity
+        href: api-entities-fetch.md
+      - name: Fetch entity tree
+        href: api-entities-fetch-tree.md
+    - name: Files
+      items:
+      - name: Overview
+        href: api-files.md
+      - name: List Files
+        href: api-files-list.md
+      - name: Fetch File
+        href: api-files-fetch.md
   - name: Troubleshooting
     items:
     - name: Troubleshooting Cloud Discovery
