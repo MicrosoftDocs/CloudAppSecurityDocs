@@ -126,7 +126,7 @@ You can add additional admins to Cloud App Security without adding users to Azur
 2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
 
     > [!NOTE]
-    > To grant portal access to MSSPs, you must add the MSSP users to your Azure AD as guest users. For more information, see [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
+    > To grant portal access to MSSPs, you must add MSSP users to your Azure AD as guest users. For more information, see [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
 
     ![add admins](media/add-admin.png)
 
