@@ -21,7 +21,7 @@ ms.custom: seodec18
 
 ---
 
-# How to investigate anomaly alerts
+# How to investigate anomaly detection alerts
 
 *Applies to: Microsoft Cloud App Security*
 
