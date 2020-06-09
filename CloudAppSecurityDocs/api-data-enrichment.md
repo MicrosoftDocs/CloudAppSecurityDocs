@@ -23,7 +23,7 @@ Run the POST request to add a new IP address range.
 ## HTTP request
 
 ```rest
-POST /cas/api/subnet/
+POST /api/subnet/
 ```
 
 ## Request BODY parameters
@@ -53,7 +53,7 @@ The following categories are currently supported:
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/cas/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",
