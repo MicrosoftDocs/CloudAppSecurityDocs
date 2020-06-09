@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Cloud App Security alerts investigation guide
-description: This article explains how to investigate the Cloud App Security alerts issued when attacks are detected against your organization.
+title: Cloud App Security anomaly detection alerts investigation guide
+description: This article explains how to investigate the Cloud App Security anomaly detection alerts issued when attacks are detected against your organization.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -29,7 +29,7 @@ Microsoft Cloud App Security provides security detections and alerts for malicio
 
 ## MITRE ATT\&CK
 
-To explain and make it easier to map the relationship between Cloud App Security alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT\&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when a Cloud App Security alert is triggered.
+To explain and make it easier to map the relationship between Cloud App Security alerts and the familiar MITRE ATT\&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT\&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when a Cloud App Security alert is triggered.
 
 This guide provides information about investigating and remediating Cloud App Security alerts in the following categories.
 
@@ -49,12 +49,12 @@ This guide provides information about investigating and remediating Cloud App Se
 Following proper investigation, all Cloud App Security alerts can be classified as one of the following activity types:
 
 - **True positive (TP)**: An alert on a confirmed malicious activity.
-- **Benign true positive (B-TP)**: An alert on a suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
+- **Benign true positive (B-TP)**: An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
 - **False positive (FP)**: An alert on a non-malicious activity.
 
 ## General investigation steps
 
-You can use the following general guidelines when investigating any type of alert to gain a clearer understanding of the potential threat.
+You should use the following general guidelines when investigating any type of alert to gain a clearer understanding of the potential threat before applying the recommended action.
 
 - Review the user's [investigation priority score](tutorial-ueba.md#understand-the-investigation-priority-score) and compare with the rest of the organization. This will help you identify which users in your organization pose the greatest risk.
 - If you identify a **TP**, review all the user's activities to gain an understanding of the impact.
@@ -139,7 +139,7 @@ Activity from an IP address that has been identified as risky by Microsoft Threa
 
 Activity from the same user in different locations within a time period that is shorter than the expected travel time between the two locations. This can indicate a credential breach, however, it's also possible that the user's actual location is masked, for example, by using a VPN.
 
-To improve accuracy and alert only when there is a strong indication for a breach, Cloud App Security establishes a baseline on each user in the organization and will alert only when the unusual behavior is detected. The impossible travel policy can be fine-tuned to your requirements.
+To improve accuracy and alert only when there is a strong indication of a breach, Cloud App Security establishes a baseline on each user in the organization and will alert only when the unusual behavior is detected. The impossible travel policy can be fine-tuned to your requirements.
 
 **Learning period**
 
@@ -230,7 +230,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 1. **TP**: If you're to confirm that the deletions were unauthorized.
 
     **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact.
-1. **FP**: If, after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
+1. **FP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
 
     **Recommended action**: Dismiss the alert.
 
@@ -250,12 +250,12 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 **TP**, **B-TP**, or **FP**?
 
-To improve accuracy and alert only when there is a strong indication for a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents, such as an administrator legitimately created more VMs than the established baseline, and only alert when the unusual behavior is detected.
+To improve accuracy and alert only when there is a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents, such as an administrator legitimately created more VMs than the established baseline, and only alert when the unusual behavior is detected.
 
 - **TP**: If you're able to confirm that the creation activities were not performed by a legitimate user.
 
     **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact. In addition, contact the user, confirm their legitimate actions, and then make sure you disable or delete any compromised VMs.
-- **B-TP**: If, after your investigation, you're able to confirm that the administrator was authorized to perform these creation activities.
+- **B-TP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these creation activities.
 
     **Recommended action**: Dismiss the alert.
 
@@ -263,6 +263,30 @@ To improve accuracy and alert only when there is a strong indication for a breac
 
 1. Review all user activity for other indicators of compromise.
 1. Review the resources created or modified by the user and verify that they conform with your organization's policies.
+
+### Suspicious creation activity for cloud region (preview)
+
+Activities indicating that a user performed an unusual resource creation action in an uncommon AWS region when compared to the baseline learned. Resource creation in uncommon cloud regions could indicate an attempt to perform a malicious activity such as crypto mining operations from within your organization.
+
+**Learning period**
+
+Establishing a new user's activity pattern requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+
+**TP**, **B-TP**, or **FP**?
+
+To improve accuracy and alert only when there is a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents.
+
+- **TP**: If you're able to confirm that the creation activities were not performed by a legitimate user.
+
+    **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact. In addition, contact the user, confirm their legitimate actions, and then make sure you disable or delete any compromised cloud resources.
+- **B-TP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these creation activities.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all user activity for other indicators of compromise.
+1. Review the resources created and verify that they conform with your organization's policies.
 
 ## Persistence alerts
 
@@ -276,7 +300,7 @@ Activity performed by a terminated user can indicate that a terminated employee 
 
 1. **TP**: If you're able to confirm that the terminated user still has access to certain corporate resources and is performing activities.
 
-    **Recommended action**: Suspend the user and make sure all access is removed.
+    **Recommended action**: Disable the user.
 1. **B-TP**: If you're able to determine that the user was temporarily disabled or was deleted and re-registered.
 
     **Recommended action**: Dismiss the alert.
@@ -369,7 +393,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 1. **TP**: If you're able to confirm that the activity wasn't performed by a legitimate administrator.
 
     **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
-1. **FP**: If you're able to confirm that an administrator legitimately performed more administrative activities than the established baseline.
+1. **FP**: If you're able to confirm that an administrator legitimately performed the unusual volume of administrative activities.
 
     **Recommended action**: Dismiss the alert.
 
@@ -579,7 +603,7 @@ Activities in a single session indicating that a user performed an unusual numbe
 
 **TP**, **B-TP**, or **FP**?
 
-To improve accuracy and alert only when there is a strong indication for a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents and only alert when the unusual behavior is detected.
+To improve accuracy and alert only when there is a strong indication of a breach, this detection establishes a baseline on each environment in the organization to reduce **B-TP** incidents and only alert when the unusual behavior is detected.
 
 **Learning period**
 
@@ -588,7 +612,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 - **TP**: If you're able to confirm that the deletions were unauthorized.
 
     **Recommended action**: Suspend the user, reset their password, and scan all devices for malicious threats. Review all user activity for other indicators of compromise and explore the scope of impact.
-- **B-TP**: If, after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
+- **B-TP**: If after your investigation, you're able to confirm that the administrator was authorized to perform these deletion activities.
 
     **Recommended action**: Dismiss the alert.
 
