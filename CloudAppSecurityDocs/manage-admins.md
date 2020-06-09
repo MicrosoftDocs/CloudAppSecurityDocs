@@ -60,7 +60,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
 - **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
 
 > [!NOTE]
-> Office 365 and Azure AD roles do not not listed in the **Manage admin access** page.
+> Office 365 and Azure AD roles do are not listed in the **Manage admin access** page.
 
 Additionally, the following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
 
@@ -125,12 +125,15 @@ You can add additional admins to Cloud App Security without adding users to Azur
 
 2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
 
+    > [!NOTE]
+    > To grant portal access to MSSPs, you must add the MSSP users to your Azure AD as guest users. For more information, see [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
+
     ![add admins](media/add-admin.png)
 
 3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, or **App/Instance admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
     >[!NOTE]
-    >Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
+    > Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
 
 4. Click **Add admin**.
 
