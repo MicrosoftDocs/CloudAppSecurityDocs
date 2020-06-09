@@ -67,12 +67,12 @@ The following table describes the actions supported:
 
 |Resource|HTTP verbs|URI routes|
 |---|---|---|
-|Discovery|GET, POST, or PUT|/api/v1/discovery|
-|Data enrichment|POST|/cas/api/subnet|
-|Activities|GET or POST|/api/v1/activities|
-|Alerts|GET or POST|/api/v1/alerts|
-|Entities|GET or POST|/api/v1/entities|
-|Files|GET or POST|/api/v1/files|
+|Discovery|GET, POST, or PUT|/api/v1/discovery/|
+|Data enrichment|POST|/api/subnet/|
+|Activities|GET or POST|/api/v1/activities/|
+|Alerts|GET or POST|/api/v1/alerts/|
+|Entities|GET or POST|/api/v1/entities/|
+|Files|GET or POST|/api/v1/files/|
 
 Where **Resource** represents a group of related entities.
 
