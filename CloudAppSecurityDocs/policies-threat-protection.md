@@ -169,8 +169,7 @@ Automatic detection of potential Ransomware activity.
 
 ### Prerequisites
 
-- For Office 365 malware detection, you must have a valid license for Office 365 Advanced Threat Protection P1.
-- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
