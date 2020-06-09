@@ -49,7 +49,7 @@ landingContent:
         links:
           - text: Using the Cloud App Security REST API
             url: api-introduction.md
-          - text: Investigate anomaly alerts
+          - text: Investigate anomaly detection alerts
             url: investigate-anomaly-alerts.md
 
   # Card

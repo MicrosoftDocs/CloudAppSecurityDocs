@@ -205,7 +205,7 @@
       items:
       - name: Manage alerts
         href: managing-alerts.md
-    - name: Investigate anomaly alerts
+    - name: Investigate anomaly detection alerts
       href: investigate-anomaly-alerts.md
   - name: Control
     href: control.md
