@@ -126,7 +126,7 @@ You can block access to native mobile and desktop client apps with access polici
 
 ### Session controls
 
-While session controls are built to work with any browser on any major platform on any operating system, we support Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
+While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
@@ -162,7 +162,7 @@ While session controls are built to work with any browser on any major platform 
 - Workplace by Facebook
 - Yammer (preview)
 
-### <a id="O365-apps" />Office 365 featured apps
+### <a name="O365-apps"></a>Office 365 featured apps
 
 The following is a list of featured apps that are supported in Office 365 Cloud App Security. To use these apps with Cloud App Security, you must have an Office 365 E5 license.
 
