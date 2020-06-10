@@ -111,7 +111,7 @@ Data attributes (according to vendor documentation):
 | SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-| ForcePoint Web Security Cloud |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
+| ForcePoint Web Security Cloud\* |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Fortinet FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 | iboss |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
@@ -127,6 +127,8 @@ Data attributes (according to vendor documentation):
 | Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Zscaler | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+
+\* Versions 8.5 and later of Forcepoint Web Security Cloud are not supported
 
 ## Next steps
 
