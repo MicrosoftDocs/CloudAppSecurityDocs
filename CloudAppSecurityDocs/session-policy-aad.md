@@ -150,9 +150,17 @@ Cloud App Security currently supports applying [Azure Information Protection cla
 
 ## <a name="protect-upload"></a>Protect uploads of sensitive files
 
-When **Control file upload (with DLP)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and does not have a proper label, the file upload is blocked.
+When **Control file upload (with inspection)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and does not have a proper label, the file upload is blocked.
 
 For example, you can create a policy that scans the content of a file to determine if it contains a sensitive content match such as a social security number. If it contains sensitive content and is not labeled with an Azure Information Protection confidential label, the file upload is blocked. When the file is blocked, you can [display a custom message to the user](#educate-protect) instructing them on how to label the file in order to upload it. By doing so, you ensure that files stored in your cloud apps comply with your policies.
+
+## Block malware on upload
+
+When **Control file upload (with inspection)** is set as the **Session Control type** and **Malware Detection** is set as the **Inspection Method** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file in real time if malware is detected. Files are scanned using the Microsoft Threat Intelligence engine.
+
+You can view the files flagged as potential malware using the **Potential Malware Detected** filter in the activity Log.
+
+You can also configure session policies to block malware on download.
 
 ## <a name="educate-protect"></a>Educate users to protect sensitive files
 
