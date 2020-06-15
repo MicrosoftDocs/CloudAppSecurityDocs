@@ -77,9 +77,10 @@ The following anomaly detection policies are available:
 
 * This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Cloud App Security uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Not every file is scanned, but heuristics are used to look for files that are potentially risky. After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
 
-You can use this detection in real time using session policies to control file uploads and downloads.
+    You can use this detection in real time using session policies to control file uploads and downloads.
 
     > [!NOTE]
+    >
     > * For Office 365 malware detection, you need a valid license for Office 365 Advanced Threat Protection P1.
     > * Cloud App Security supports malware detection the following apps:
     >   * Box
