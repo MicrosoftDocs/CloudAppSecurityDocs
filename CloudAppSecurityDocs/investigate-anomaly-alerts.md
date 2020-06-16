@@ -75,7 +75,7 @@ Activity from an IP address that has been identified as an anonymous proxy IP ad
 
 **TP**, **B-TP**, or **FP**?
 
-This detection uses a machine learning algorithm that reduces **B-TP** incidents, such as mistagged IP addresses that are widely used by users in the organization.
+This detection uses a machine learning algorithm that reduces **B-TP** incidents, such as mis-tagged IP addresses that are widely used by users in the organization.
 
 1. **TP**: If you're able to confirm that the activity was performed from an anonymous or TOR IP address.
 
