@@ -34,9 +34,9 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 ## Prerequisites
 
 * OS:
-    * **Windows 10** (fall creators update)
-    * Windows Server **version 1709+** (SAC)
-    * **Windows Server 2019 (LTSC)**
+  * **Windows 10** (fall creators update)
+  * Windows Server **version 1709+** (SAC)
+  * **Windows Server 2019 (LTSC)**
 
 * Disk space: 250 GB
 
@@ -51,6 +51,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 > [!IMPORTANT]
 >
 > * A user must be signed in for Docker to collect logs. We recommend advising your Docker users to disconnect without signing out.
+> * Docker for Windows is not officially supported in VMWare virtualization scenarios.
 > * Docker for Windows is not officially supported in nested virtualization scenarios. If you still plan to use nested virtualization, refer to [Docker's official guide](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
 
 > [!NOTE]
