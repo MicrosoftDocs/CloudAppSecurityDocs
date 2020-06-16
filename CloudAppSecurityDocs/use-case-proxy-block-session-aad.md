@@ -78,7 +78,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 4. Assign a **Policy severity** and **Category**.
 
-5. For the **Session control type**, select **Control file download (with DLP)**. This setting gives you the ability to monitor everything your users do within a Salesforce session and gives you control to block and protect downloads in real time.
+5. For the **Session control type**, select **Control file download (with inspection)**. This setting gives you the ability to monitor everything your users do within a Salesforce session and gives you control to block and protect downloads in real time.
 
 6. Under **Activity source** in the **Activities matching all of the following** section, select the filters:
 
