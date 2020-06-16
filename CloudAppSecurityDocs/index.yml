@@ -45,16 +45,26 @@ landingContent:
         links:
           - text: Get started with Cloud App Security
             url: getting-started-with-cloud-app-security.md
+      - linkListType: reference
+        links:
+          - text: Using the Cloud App Security REST API
+            url: api-introduction.md
+          - text: Investigate anomaly detection alerts
+            url: investigate-anomaly-alerts.md
 
   # Card
   - title: Explore our top use cases
     linkLists:
       - linkListType: tutorial
         links:
+          - text: Detect and manage suspicious activities
+            url: tutorial-suspicious-activity.md
           - text: Investigate risky users
             url: tutorial-ueba.md
           - text: Investigate risky OAuth apps
             url: investigate-risky-oauth.md
+          - text: Protect any app in your organization in real time
+            url: tutorial-proxy.md
           - text: Block download of sensitive information
             url: use-case-proxy-block-session-aad.md
           - text: Protect files with admin quarantine
@@ -77,6 +87,8 @@ landingContent:
             url: risk-score.md
           - text: Working with discovered apps
             url: discovered-apps.md
+          - text: Protect connected apps
+            url: protect-connected-apps.md
 
   # Card
   - title: Best practices

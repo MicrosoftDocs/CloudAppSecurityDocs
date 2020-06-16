@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure automatic log upload using on-premise Docker
-description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or RHEL in an on-premises server.
+title: Configure automatic log upload using on-premises Docker
+description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in an on-premises server.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -25,15 +25,18 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Docker on Ubuntu and RHEL on-premises
+# Docker on Linux on-premises
 
 *Applies to: Microsoft Cloud App Security*
 
-You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on an on-premises Ubuntu or RHEL server.
+You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on an on-premises Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS server.
 
-## Technical requirements
+## Prerequisites
 
-* OS: Ubuntu 14.04, 16.04, and 18.04; RHEL 7.2 or higher, or CentOS 7.2 or higher 
+* OS:
+    * Ubuntu 14.04, 16.04, and 18.04
+    * RHEL 7.2 or higher
+    * CentOS 7.2 or higher
 
 * Disk space: 250 GB
 
@@ -57,7 +60,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 * Network bandwidth - Your network bandwidth determines the log upload speed.
 
-* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
+* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector's disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
 
 ## Set up and configuration  
 

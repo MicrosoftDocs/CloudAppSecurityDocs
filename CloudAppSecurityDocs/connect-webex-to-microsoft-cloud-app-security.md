@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files. For information about how Cloud App Security protects Cisco Webex, see [Protect Cisco Webex](protect-webex.md).
 
 ## Prerequisites
 
@@ -57,6 +57,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     Testing may take a couple of minutes. After you receive a success notice, click **Close**.
 
 After connecting Webex, you'll receive events for 7 days prior to connection. Cloud App Security scans events over the past three months. To increase this, you must have a Cisco Webex pro license and open a ticket with Cloud App Security support.
+
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
 

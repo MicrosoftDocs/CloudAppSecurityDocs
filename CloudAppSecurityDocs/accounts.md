@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
+ms.date: 05/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -64,7 +64,7 @@ Following is a list of the account filters that can be applied. Most filters sup
 * **Last seen**: The **last seen** filter enables you to find accounts that are dormant and whose users haven't performed any activities in a while.
 * **Organization**: Enables you to filter for members of specific organizational groups defined in your connected apps.
 * **Show Admins only**: Filters for accounts and users that are admins.
-* **Status**: Filter based on user account status of N/A, staged, active, suspended, or deleted.
+* **Status**: Filter based on user account status of N/A, staged, active, suspended, or deleted. A status of not available (N/A) is normal and may appear, for example, for anonymous accounts.
 * **Type**: Enables you to filter to either the user or the account type.
 * **User name**: Enables you to filter to specific users.
 

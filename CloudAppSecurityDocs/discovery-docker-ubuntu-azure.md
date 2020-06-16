@@ -2,12 +2,12 @@
 # required metadata
 
 title: Configure automatic log upload using Docker in Azure 
-description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or RHEL in Azure.
+description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in Azure.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -25,15 +25,18 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Set up and configuration on Ubuntu or RHEL in Azure
+# Docker on Linux in Azure
 
 *Applies to: Microsoft Cloud App Security*
 
-You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or Red Hat Enterprise Linux (RHEL) in Azure. This article describes how to set up the automatic log upload.
+You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS in Azure.
 
 ## Prerequisites
 
-* OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), RHEL 7.2 or higher, or CentOS 7.2 or higher
+* OS:
+    * Ubuntu 14.04, 16.04, and 18.04
+    * RHEL 7.2 or higher
+    * CentOS 7.2 or higher
 
 * Disk space: 250 GB
 
@@ -53,11 +56,14 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 ## Log collector performance
 
-The Log collector can successfully handle log capacity of up to 50 GB per hour. The main bottlenecks in the log collection process are:
+The Log collector can successfully handle log capacity of up to 50 GB per hour comprised of up to 10 data sources. The main bottlenecks in the log collection process are:
 
 * Network bandwidth - Your network bandwidth determines the log upload speed.
 
-* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
+* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector's disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, we recommend that you split the traffic between multiple log collectors.
+
+> [!NOTE]
+> If you require more than 10 data sources, we recommend that you split the data sources between multiple log collectors.
 
 ## Set up and configuration  
 

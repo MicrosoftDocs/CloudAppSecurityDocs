@@ -22,6 +22,9 @@ ms.custom: seodec18
 
 Cloud App Security enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
+> [!NOTE]
+> When integrating Cloud App Security with Azure Advanced Threat Protection (Azure ATP), policies from Azure ATP also appear on the policies page. For a list of Azure ATP policies, see [Security Alerts](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide).
+
 ## Detect and control user activity from unfamiliar locations
 
 Automatic detection of user access or activity from unfamiliar locations that were never visited by anyone else in your organization.
@@ -54,7 +57,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 3. Create the anomaly detection policy.
 
-## Detect suspicious activity from an “on-leave” employee
+## Detect suspicious activity from an "on-leave" employee
 
 Detect when a user, who is on unpaid leave and should not be active on any organizational resource, is accessing any of your organization's cloud resources.
 
@@ -96,7 +99,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ## Detect and alert when Admin activity is detected on risky IP addresses
 
-Detect admin activities performed from and IP address that is considered a risky IP address, and notify the system admin for further investigation or set a governance action on the admin’s account.
+Detect admin activities performed from and IP address that is considered a risky IP address, and notify the system admin for further investigation or set a governance action on the admin's account.
 
 ### Prerequisites
 
@@ -114,7 +117,7 @@ Detect admin activities performed from and IP address that is considered a risky
 
 4. Set the filter **Administrative activity** to **True**
 
-5. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components **CC the user’s manager**.
+5. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components **CC the user's manager**.
 
 6. Create the activity policy.
 
@@ -127,7 +130,7 @@ Detect service account activities originating from a non-internal IP addresses. 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 - From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
-- Standardize a naming conventions for service accounts in your environment, for example, set all account names to start with “svc”.
+- Standardize a naming conventions for service accounts in your environment, for example, set all account names to start with "svc".
 
 ### Steps
 
@@ -170,7 +173,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
@@ -179,11 +182,12 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ## Detect malware in the cloud
 
-Detect files containing malware in your cloud environments by utilizing Cloud App Security’s integration with the Microsoft’s Threat Intelligence engine.
+Detect files containing malware in your cloud environments by utilizing Cloud App Security's integration with the Microsoft's Threat Intelligence engine.
 
 ### Prerequisites
 
-You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- For Office 365 malware detection, you must have a valid license for Office 365 Advanced Threat Protection P1.
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
@@ -226,7 +230,7 @@ If a suspicious inbox rule was set on a user's inbox, it may indicate that the u
 
 When cyber criminals compromise valid passwords of legitimate users, they often share those credentials. This is usually done by posting them publicly on the dark web or paste sites or by trading or selling the credentials on the black market.
 
-Cloud App Security utilizes Microsoft’s Threat intelligence to match such credentials to the ones used inside your organization.
+Cloud App Security utilizes Microsoft's Threat intelligence to match such credentials to the ones used inside your organization.
 
 ### Prerequisites
 

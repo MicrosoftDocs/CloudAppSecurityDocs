@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/8/2019
+ms.date: 12/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -29,7 +29,15 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use. For information about how Cloud App Security protects Workday, see [Protect Workday](protect-workday.md).
+
+## Quick start
+
+Watch our quick start video showing how to configure the prerequisites and perform the steps in Workday. Once you've completed the steps in the video, you can proceed to [add the Workday connector](#add-connector).
+
+<br />
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n1ZO]
 
 ## Prerequisites
 
@@ -70,6 +78,7 @@ For more information about setting up Workday integration users, security groups
     | Client Grant Type | Authorization Code Grant |
     | Access Token Type | Bearer |
     | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Non-Expiring Refresh Tokens | Yes |
     | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
@@ -85,13 +94,13 @@ For more information about setting up Workday integration users, security groups
 
     ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
 
-1. In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
+1. <a name="add-connector"></a>In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
 
 1. In the **App connectors** page, click the plus button and then **Workday**.
 
     ![Screenshot of adding app connector](media/connect-workday-add-app.png)
 
-1. In the popup, add your instance name and then click **Connect Workday**.
+1. In the pop-up, add your instance name and then click **Connect Workday**.
 
     ![Screenshot of adding instance name](media/connect-workday-add-app-connect.png)
 
@@ -99,7 +108,7 @@ For more information about setting up Workday integration users, security groups
 
     ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
 
-1. In Workday, a popup will ask you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
+1. In Workday, a pop-up will ask you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
 
     ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
 
@@ -109,6 +118,8 @@ For more information about setting up Workday integration users, security groups
 
 > [!NOTE]
 > After connecting Workday, you'll receive events for seven days prior to connection.
+
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
 
