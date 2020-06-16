@@ -47,9 +47,11 @@ The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudap
 
 1. [Create an API token](api-tokens.md) in Cloud App Security.
 
-2. Navigate to the [Power Automate portal](https://flow.microsoft.com) and choose [**Create a new flow from scratch**](https://docs.microsoft.com/flow/get-started-logic-flow).
+2. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New**, and from the dropdown, select **Automated - from blank**.
 
-3. In search connectors and triggers, type **Cloud App Security** and select **When an alert is generated**.
+    ![Power Automate create new flow](media/flow-create-new.png)
+
+3. Provide a name for the flow, and in **Choose your flow's trigger**, type **Cloud App Security** and select **When an alert is generated**.
 
     ![Power Automate when an alert is generated](media/flow-when-alert.png)
 
@@ -64,7 +66,7 @@ The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudap
 
     ![Enable Power Automate in Cloud App Security portal](media/flow-mcas-config.png)
 
-8. Cloud App Security playbooks that you’ve authored or are granted access to can be seen in the **Security extensions** screen.
+8. Cloud App Security playbooks that you've authored or are granted access to can be seen in the **Security extensions** screen.
 
     ![view playbooks in Cloud App Security](media/flow-extensions.png)
 

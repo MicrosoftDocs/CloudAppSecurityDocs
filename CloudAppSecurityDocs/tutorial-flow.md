@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to configure a policy governance action to us
 > [!NOTE]
 > These workflows are only relevant for policies that contains user activity. For example, you can't use these workflows with Discovery or OAuth policies.
 
-If you don’t have a Power Automate plan, [sign up for a free trial account](https://flow.microsoft.com/pricing).
+If you don't have a Power Automate plan, [sign up for a free trial account](https://flow.microsoft.com/pricing).
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ If you don’t have a Power Automate plan, [sign up for a free trial account](ht
 > [!NOTE]
 > If you have previously created a flow using a Defender ATP connector, Power Automate automatically reuses the connector and you can skip the **Sign in** step.
 
-1. Go to the [Power Automate portal](https://flow.microsoft.com/) and select Templates.
+1. Go to the [Power Automate portal](https://flow.microsoft.com/) and select **Templates**.
 
     ![Screenshot of the main Power Automate page, showing the selection of templates.](media/tutorial-flow-templates.png)
 
@@ -62,7 +62,7 @@ If you don’t have a Power Automate plan, [sign up for a free trial account](ht
 
     ![Screenshot of the templates Power Automate page, showing the search results.](media/tutorial-flow-templates-search.png)
 
-1. Click **Sign in** and enter the admin credentials you want to use with the Microsoft Defender ATP connector.
+1. In the list of apps, on the row in which **Microsoft Defender ATP connector** appears, click **Sign in**.
 
     ![Screenshot of the templates Power Automate page, showing the sign-in process.](media/tutorial-flow-templates-signin.png)
 
@@ -71,7 +71,7 @@ If you don’t have a Power Automate plan, [sign up for a free trial account](ht
 > [!NOTE]
 > If you have previously created a flow using an Azure AD connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. Click **Create**.
+1. In the list of apps, on the row in which **Cloud App Security** appears, click **Create**.
 
     ![Screenshot of the templates Power Automate page, showing the Cloud App Security create button.](media/tutorial-flow-templates-create.png)
 
@@ -79,7 +79,7 @@ If you don’t have a Power Automate plan, [sign up for a free trial account](ht
 
     ![Screenshot of the Cloud App Security window, showing the name and key entry and create button.](media/tutorial-flow-templates-create-window.png)
 
-1. In the list of apps, on the row in which **HTTP with Azure AD** appears, choose the three dots at the end of the row, and then click **Add new connection**.
+1. In the list of apps, on the row in which **HTTP with Azure AD** appears, click **Sign in**.
 
 1. In the **HTTP with Azure AD** pop-up window, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then click **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
 
