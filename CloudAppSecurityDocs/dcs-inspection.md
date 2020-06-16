@@ -39,7 +39,7 @@ Microsoft Cloud App Security enables you to natively use the Microsoft Data Clas
 
 You have the option to set the **Inspection method** to use the **Microsoft Data Classification Service** with no additional configuration required. This option is useful when creating a data leak prevention policy for your files in Microsoft Cloud App Security.
 
-1. In the [file policy](data-protection-policies.md) page, under **Inspection method**, select **Data Classification Service**. You can also set the **Inspection method** in the [session policy](session-policy-aad.md) page with **Control file download (with DLP)** selected.
+1. In the [file policy](data-protection-policies.md) page, under **Inspection method**, select **Data Classification Service**. You can also set the **Inspection method** in the [session policy](session-policy-aad.md) page with **Control file download (with inspection)** selected.
 
     ![data classification service setting](media/dcs-enable.png)
 2. Select whether the policy should apply when **any** or **all** of the criteria are met.
