@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/17/2020
+ms.date: 06/16/2020
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -29,10 +29,13 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 ## Cloud App Security release 177
 
-Released May 31, 2020
+Released June 14, 2020
 
 - **New real-time malware detection (Preview, gradual rollout)**  
 We have expanded our session controls to detect potential malware using Microsoft Threat Intelligence upon file uploads or downloads. The new detection is now available out-of-the-box and can be configured to automatically block files identified as potential malware. For more information, see [Block malware on upload](session-policy-aad.md#block-malware-on-upload).
+
+- **New access token support for access and session controls**  
+We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, click the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then click **Save**. For more information about onboarding apps, see [Onboard and deploy any app](proxy-deployment-any-app.md) and [Deploy featured apps](proxy-deployment-aad.md).
 
 <!--
 - **New OAuth app policy templates**  
@@ -44,7 +47,7 @@ Cloud App Security now provides the following new OAuth app policy templates ena
   - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
 -->
 
-- **Enhanced suffix proxy for session controls (gradual rollout)**  
+- **Enhanced proxy URL suffix for session controls (gradual rollout)**  
 On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely blacklist domains in your network appliances or gateways, make sure you whitelist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **New documentation**  
@@ -66,7 +69,7 @@ We've leveraged our native integration with Azure AD to give you the ability to 
 - **New feedback option available in selected policies**  
 We're interested in receiving your feedback and learning how we can help. So now a new feedback dialog gives you the opportunity to help improve Cloud App Security, when creating, modifying, or deleting a file, anomaly detection, or session policy.
 
-- **Enhanced suffix proxy for session controls (gradual rollout)**  
+- **Enhanced proxy URL suffix for session controls (gradual rollout)**  
 Starting June 7, 2020, we are gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely blacklist domains in your network appliances or gateways, make sure you whitelist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **Performance improvements for Session Controls (gradual rollout)**  
