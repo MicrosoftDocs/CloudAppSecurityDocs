@@ -52,7 +52,7 @@ In addition to native Cloud App Security alerts, you will also get the following
 * Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Azure AD's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
 * Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection. For more information, see [Azure AD's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
-These policies will appear on the Cloud App Security policies page and can be enabled, or disabled, but not edited.
+These policies will appear on the Cloud App Security policies page and can be enabled or disabled.
 
 ## Anomaly detection policies
 
