@@ -267,8 +267,8 @@
       - name: Use the REST API
         href: api-tokens.md
       - name: Investigate activities with APIs
-        href: investigate-activities-api.md
-      - name: Use Microsoft Flow
+        href: investigate-activities-api.md  
+      - name: Use Microsoft Power Automate
         href: flow-integration.md
 - name: Reference
   items:
