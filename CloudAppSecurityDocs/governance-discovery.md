@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/06/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -42,7 +42,7 @@ If you have a list of apps you want to sanction or unsanction, use the checkbox 
 To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
 
 > [!NOTE]
-> If your tenant uses Zscaler NSS or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrating with Zscaler](zscaler-integration.md) and [Integrate Cloud App Security with iboss](iboss-integration.md) respectively.
+> If your tenant uses Microsoft Defender Advanced Threat Protection (ATP), Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrate with Microsoft Defender ATP](wdatp-integration.md), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
 
 ## Export a block script to govern discovered apps
 
@@ -58,7 +58,7 @@ Cloud App Security enables you to block access to unsanctioned apps by using you
 
 3. In **Generate block script**, select the appliance you want to generate the block script for.
 
-    ![Generate block script pop-up](media/generate-block-script-popup.png)
+    ![Generate block script pop-up](media/generate-block-script-pop-up.png)
 
 4. Then, click the Generate script button to create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name
 

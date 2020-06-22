@@ -29,14 +29,14 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing ServiceNow account using the app connector API. This connection gives you visibility into and control over ServiceNow use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing ServiceNow account using the app connector API. This connection gives you visibility into and control over ServiceNow use. For information about how Cloud App Security protects ServiceNow, see [Protect ServiceNow](protect-servicenow.md).
 
 > [!NOTE]
 > We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0).
 > For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password. The username/password provided are only used for API token generation and are not saved after the initial connection process.
 
 > [!NOTE]
-> Cloud App Security supports ServiceNow versions of Jakarta, Kingston, Eureka, Fiji, Geneva, Helsinki, Istanbul, London, and Madrid. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access.  For more information, see the [ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
+> Cloud App Security supports the following ServiceNow versions: Eureka, Fiji, Geneva, Helsinki, Istanbul, Jakarta, Kingston, London, Madrid, and New York. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access. For more information, see the [ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0).
 
 ## How to connect ServiceNow to Cloud App Security using OAuth
 
@@ -75,7 +75,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![connect ServiceNow](media/connect-servicenow.png "connect ServiceNow")
 
-8. In the popup, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
+8. In the pop-up, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
     ![ServiceNow user ID](media/servicenow-userid.png)
 
@@ -87,7 +87,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     Testing may take a couple of minutes. After receiving a success notice, click **Close**.
 
-After connecting ServiceNow, you'll receive events for 60 days prior to connection.
+After connecting ServiceNow, you'll receive events for 7 days prior to connection.
 
 ## Legacy ServiceNow connection
 
@@ -117,7 +117,9 @@ To connect ServiceNow with Cloud App Security, you must have admin-level permiss
 
     Testing may take a couple of minutes. After receiving a success notice, click **Close**.
 
-After connecting ServiceNow, you will receive events for 60 days prior to connection.
+After connecting ServiceNow, you will receive events for 7 days prior to connection.
+
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
 

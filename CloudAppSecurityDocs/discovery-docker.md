@@ -51,7 +51,4 @@ The Log Collector supports two deployment modes:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
-
-> [!div class="nextstepaction"]
 > [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)

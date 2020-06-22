@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Okta account using the connector APIs. This connection gives you visibility into and control over Okta use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Okta account using the connector APIs. This connection gives you visibility into and control over Okta use. For information about how Cloud App Security protects Okta, see [Protect Okta](protect-okta.md).
 
 ## How to connect Okta to Cloud App Security
 
@@ -51,7 +51,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     - In the **Create Token** pop-up, name your Cloud App Security token, and click **Create Token**.
 
-         ![Okta token popup](media/okta-token-popup.png "Okta token popup")
+         ![Okta token pop-up](media/okta-token-pop-up.png)
 
     - In the **Token created successfully** pop-up, copy the **Token value**.
 
@@ -72,6 +72,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     Testing may take a couple of minutes. After receiving a success notice, click **Close**.
 
 After connecting Okta, you'll receive events for 60 days prior to connection.
+
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
 

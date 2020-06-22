@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/6/2019
+ms.date: 06/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -39,6 +39,10 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
 
 - **Compliance administrator:** Has read-only permissions and can manage alerts. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
+- **Compliance data administrator:** Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports.
+
+- **Security operator:** Has read-only permissions and can manage alerts.
+
 - **Security reader:** Has read-only permissions and can manage alerts. The Security reader is restricted from doing the following actions:
 
   - Create policies or edit and change existing ones
@@ -51,8 +55,12 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
   - Accessing and viewing the App connectors page
   - Accessing and viewing the Governance log
   - Accessing and viewing the Manage snapshot reports page
+  - Accessing and editing the SIEM agent
 
 - **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
+
+> [!NOTE]
+> Office 365 and Azure AD roles do are not listed in the **Manage admin access** page.
 
 Additionally, the following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
 
@@ -117,18 +125,21 @@ You can add additional admins to Cloud App Security without adding users to Azur
 
 2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
 
+    > [!NOTE]
+    > To grant portal access to MSSPs, you must add MSSP users to your Azure AD as guest users. For more information, see [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
+
     ![add admins](media/add-admin.png)
 
 3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, or **App/Instance admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
     >[!NOTE]
-    >Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
+    > Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
 
 4. Click **Add admin**.
 
 ## Admin activity auditing
 
-Cloud App Security lets you export a log of all admin activities including auditing of an admin investigating a specific user or viewing specific alerts.
+Cloud App Security lets you export a log of admin sign-in activities and an audit of views of a specific user or alerts carried out as part of an investigation.
 
 To export a log, perform the following steps:
 
@@ -140,9 +151,9 @@ To export a log, perform the following steps:
 
 ## Invite external admins
 
-Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal.
+Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. To add external users, provide an external email address in the steps under [Add additional admins](#add-additional-admins).
 
-To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
+Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
 ![choose tenant](media/choose-tenant.png "choose tenant")
 

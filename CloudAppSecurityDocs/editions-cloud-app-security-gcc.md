@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/01/2019
+ms.date: 01/30/2020
 ms.topic: overview
 ms.prod:
 ms.service: cloud-app-security
@@ -29,4 +29,4 @@ For more information about the Microsoft Cloud App Security for US Government GC
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn more about Government GCC High](/enterprise-mobility-security/solution/ems-security-govt-description)
+> [Learn more about Government GCC High](/enterprise-mobility-security/solutions/ems-govt-service-description)

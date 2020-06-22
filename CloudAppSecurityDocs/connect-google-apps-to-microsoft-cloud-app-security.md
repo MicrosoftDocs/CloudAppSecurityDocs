@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing G Suite account using the connector APIs. This connection gives you visibility into and control over G Suite use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing G Suite account using the connector APIs. This connection gives you visibility into and control over G Suite use. For information about how Cloud App Security protects G Suite, see [Protect G Suite](protect-gsuite.md).
 
 ## Configure G Suite
 
@@ -127,7 +127,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     * **Short Description & Long Description** (optional): Microsoft Cloud App Security provides you with visibility into cloud applications, helping you control, investigate, and govern cloud application use; secure corporate data; and detect suspicious activities for any cloud application.
 
-    * Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon**, click **Select** next to the 128x128 image and drag it to the popup screen. Click **Select** next to the 32x32 image and drag it to the popup screen.
+    * Google requires you to upload at least one application Icon. Go to [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) to download a zip file containing Cloud App Security icons. Then, under **Application icon**, click **Select** next to the 128x128 image and drag it to the pop-up screen. Click **Select** next to the 32x32 image and drag it to the pop-up screen.
 
     * Scroll down and in the **Drive Integration** section, type the following URL under **Open URL:**
     `https://portal.cloudappsecurity.com/#/services/11770?tab=files`
@@ -228,6 +228,8 @@ In **Application description** type "Microsoft Cloud App Security provides visib
 After connecting G Suite, you'll receive events for 60 days prior to connection.
 
 After connecting G Suite, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activity is detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away. This doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned during the regular scan.
+
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
 

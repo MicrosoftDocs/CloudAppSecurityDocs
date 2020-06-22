@@ -30,7 +30,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use. For information about how Cloud App Security protects Azure, see [Protect Azure](protect-azure.md).
 
 ## How to connect Azure to Cloud App Security
 
@@ -50,6 +50,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 > [!NOTE]
 > After connecting Azure, data will be pulled. You will see data from then onwards.
+
+If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
 
