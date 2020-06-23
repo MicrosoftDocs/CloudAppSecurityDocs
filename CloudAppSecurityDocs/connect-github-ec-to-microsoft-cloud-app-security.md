@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Connect GitHub Enterprise Cloud to Microsoft Cloud App Security
+# Connect GitHub Enterprise Cloud to Microsoft Cloud App Security (Preview)
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -63,7 +63,7 @@ In GitHub, browse to your organization's page, and from the URL, make a note of 
 
     ![Screenshot showing obtaining organization login name](media/connect-github-org-login-name.png)
 
-1. **Create an OAuth App inside your organization.**  
+1. **Create an OAuth App for Cloud App Security to connect your GitHub organization.**  
 Repeat this step for each additional connected organization.
 
     1. Browse to **Settings** > **Developer settings**, select  **OAuth Apps**, and then click **Register an application**. Alternatively, if you have existing OAuth apps, click **New OAuth App**.
@@ -71,7 +71,7 @@ Repeat this step for each additional connected organization.
         ![Screenshot showing creating an oauth app](media/connect-github-create-oauth-app.png)
 
     1. Fill out the **Register a new OAuth app** details and then click **Register application**.
-        - In the **Application name** box, enter the name for the app.
+        - In the **Application name** box, enter a name for the app.
         - In the **Homepage URL** box, enter the URL for the app's homepage.
         - In the **Authorization callback URL** box, enter the following value: `https://portal.cloudappsecurity.com/api/oauth/connect`.
 
