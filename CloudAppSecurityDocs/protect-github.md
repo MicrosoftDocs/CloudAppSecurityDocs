@@ -9,7 +9,7 @@ ms.topic: article
 ms.date: 06/23/2020
 
 # optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
+ROBOTS: NOINDEX
 #services: na
 #ms.subservice: na
 ms.collection: M365-security-compliance

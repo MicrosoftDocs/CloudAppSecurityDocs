@@ -31,7 +31,7 @@ ms.custom: seodec18
 
 The GitHub Enterprise Cloud API connector is currently in private preview and being gradually rolled out. This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use.<!-- For more information about how Cloud App Security protects GitHub Enterprise Cloud, see **//TODO:: ???**.-->
+This article provides instructions for connecting Microsoft Cloud App Security to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use. For more information about how Cloud App Security protects GitHub Enterprise Cloud, see [Protect GitHub Enterprise](protect-github.md).
 
 ## Prerequisites
 
