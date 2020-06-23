@@ -65,6 +65,7 @@ Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that p
 ||Integration to Microsoft Intelligent Security Graph|Yes|Yes|
 ||Activity policies|Yes|Yes|
 |Conditional Access App Control|Real-time session monitoring and control|Any cloud and on-premises app|For Office 365 apps|
+|Cloud Platform Security|Security configurations|For Azure, AWS, and GCP|For Azure|
 
 ## Next steps
 
