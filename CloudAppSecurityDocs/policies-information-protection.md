@@ -261,7 +261,7 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 1. On the **Policies** page, create a new **Session policy**.
 
-2. Under **Session control type**, select **Control file download (with DLP)**.
+2. Under **Session control type**, select **Control file download (with inspection)**.
 
 3. Under **Activity filters**, select **User** and set it to **From group** equals **External users**.
 
@@ -320,7 +320,7 @@ Prevent users from uploading unprotected data to the cloud, by utilizing Cloud A
 
 1. On the **Policies** page, create a new **Session policy**.
 
-2. Under **Session control type**, select **Control file upload (with DLP)** or **Control file download (with DLP)**.
+2. Under **Session control type**, select **Control file upload (with inspection)** or **Control file download (with inspection)**.
 
    >[!NOTE]
    > You don't need to set any filters to enable this policy to apply to all users and apps.

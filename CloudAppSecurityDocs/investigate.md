@@ -53,7 +53,7 @@ The following dashboards are available to help you investigate apps in your clou
 *(Salesforce only)*|Overview of users by privileged user type.|
 |User dashboard|A complete overview of the user profile in the cloud, locations, recent activities, related alerts.|
 
-## <a name="sanctionapp" />Tag apps as sanctioned or unsanctioned
+## <a name="sanctionapp"></a>Tag apps as sanctioned or unsanctioned
 
 An important step to understanding your cloud is to tag apps as sanctioned or unsanctioned. After you sanction an app, you can filter for apps that aren't sanctioned and start migration to sanctioned apps of the same type.
 
@@ -131,7 +131,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     - For the alternative solutions, do you want to unsanction any cloud apps in your organization?
 
-    - Are there cloud apps that are used but not in compliance with your organization’s policy?
+    - Are there cloud apps that are used but not in compliance with your organization's policy?
 
 ## Sample investigation
 

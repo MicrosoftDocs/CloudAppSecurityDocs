@@ -37,7 +37,7 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
 
 ## Prerequisites
 
-- A valid license for Microsoft Cloud App Security
+- A valid license for Microsoft Cloud App Security, or a valid license for Azure Active Directory Premium P1
 - A valid license for Zscaler Cloud 5.6
 - An active Zscaler NSS subscription
 

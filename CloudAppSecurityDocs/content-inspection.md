@@ -41,7 +41,7 @@ When content is matched against the selected expression, the violation text is r
 
 Cloud App Security allows admins to grant Cloud App Security permission to decrypt encrypted files and scan their content for violations.
 
-In order to give Cloud app Security the necessary permissions:
+In order to give Cloud App Security the necessary permissions:
 
 1. Go to **Settings** and then **Azure Information Protection**.
 2. Enable **Inspect protected files.**

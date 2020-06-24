@@ -42,6 +42,8 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Prevent upload of unlabeled files**: Before a sensitive file is uploaded, distributed, and used by others, it's important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
 
+- **Block potential malware**: You can protect your environment from malware by blocking the upload of potentially malicious files. Any file that is uploaded or downloaded can be scanned against Microsoft threat intelligence and blocked instantaneously.
+
 - **Monitor user sessions for compliance**: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future.
 
 - **Block access**: You can granularly block access for specific apps and users depending on several risk factors. For example, you can block them if they are using client certificates as a form of device management.
@@ -52,11 +54,11 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 Creating a session policy with Conditional Access App Control enables you to control user sessions by redirecting the user through a reverse proxy instead of directly to the app. From then on, user requests and responses go through Cloud App Security rather than directly to the app.
 
-When a session is protected by proxy, all the relevant URLs and cookies are replaced by Cloud App Security. For example, if the app returns a page with links whose domains end with `myapp.com`, the link's domain is suffixed with something like `*.cas.ms`, as follows:
+When a session is protected by proxy, all the relevant URLs and cookies are replaced by Cloud App Security. For example, if the app returns a page with links whose domains end with `myapp.com`, the link's domain is suffixed with something like `*.mcas.ms`, as follows:
 
 |App URL|Replaced URL|
 |---|---|
-|`myapp.com`|`myapp.com.us.cas.ms`|
+|`myapp.com`|`myapp.com.mcas.ms`|
 
 This method doesn't require you to install anything on the device making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
 
@@ -126,7 +128,7 @@ You can block access to native mobile and desktop client apps with access polici
 
 ### Session controls
 
-While session controls are built to work with any browser on any major platform on any operating system, we support Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
+While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
@@ -162,7 +164,7 @@ While session controls are built to work with any browser on any major platform 
 - Workplace by Facebook
 - Yammer (preview)
 
-### <a id="O365-apps" />Office 365 featured apps
+### <a name="O365-apps"></a>Office 365 featured apps
 
 The following is a list of featured apps that are supported in Office 365 Cloud App Security. To use these apps with Cloud App Security, you must have an Office 365 E5 license.
 

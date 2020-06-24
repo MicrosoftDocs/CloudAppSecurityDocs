@@ -59,7 +59,7 @@ To create a new session policy, follow this procedure:
 
     1. Select **Monitor only** if you only want to monitor activities by users. This selection will create a Monitor only policy for the apps you selected where all sign-ins, heuristic downloads, and Activity types will be downloaded.
 
-    1. Select **Control file download (with DLP)** if you want to monitor user activities. You can take additional actions like block or protect downloads for users.
+    1. Select **Control file download (with inspection)** if you want to monitor user activities. You can take additional actions like block or protect downloads for users.
     1. Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
 1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These filters can include the following options:
 
@@ -74,7 +74,7 @@ To create a new session policy, follow this procedure:
     >[!NOTE]
     >Session policies don't support mobile and desktop apps. Mobile apps and desktop apps can also be blocked or allowed by creating an access policy.
 
-1. If you selected the option to **Control file download (with DLP)**:
+1. If you selected the option to **Control file download (with inspection)**:
 
     1. Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These filters can include the following options:
 
@@ -90,7 +90,7 @@ To create a new session policy, follow this procedure:
 
         * **Block (Block file download and monitor all activities)**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
 
-        * **Protect (Apply classification label to download and monitor all activities)**: This option is only available if you selected **Control file download (with DLP)** under **Session policy**. If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
+        * **Protect (Apply classification label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
 1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select whether you want the alert as an email, a text message, or both.
 
@@ -104,7 +104,7 @@ If you don't want to notify the user that they're being monitored, you can disab
 
 2. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
 
-To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Cloud App Security URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like myapp.com.us.cas.ms. This way the entire session is monitored by Microsoft Cloud App Security.
+To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Cloud App Security URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like `myapp.com.mcas.ms`. This way the entire session is monitored by Microsoft Cloud App Security.
 
 Conditional Access App Control records the traffic logs of every user session that is routed through it. The traffic logs include the time, IP, user agent, URLs visited, and the number of bytes uploaded and downloaded. These logs are analyzed and a continuous report, **Cloud App Security Conditional Access App Control**, is added to the list of Cloud Discovery reports in the Cloud Discovery dashboard.
 
@@ -150,9 +150,17 @@ Cloud App Security currently supports applying [Azure Information Protection cla
 
 ## <a name="protect-upload"></a>Protect uploads of sensitive files
 
-When **Control file upload (with DLP)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and does not have a proper label, the file upload is blocked.
+When **Control file upload (with inspection)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and does not have a proper label, the file upload is blocked.
 
 For example, you can create a policy that scans the content of a file to determine if it contains a sensitive content match such as a social security number. If it contains sensitive content and is not labeled with an Azure Information Protection confidential label, the file upload is blocked. When the file is blocked, you can [display a custom message to the user](#educate-protect) instructing them on how to label the file in order to upload it. By doing so, you ensure that files stored in your cloud apps comply with your policies.
+
+## Block malware on upload
+
+When **Control file upload (with inspection)** is set as the **Session Control type** and **Malware Detection** is set as the **Inspection Method** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file in real time if malware is detected. Files are scanned using the Microsoft threat intelligence engine.
+
+You can view the files flagged as potential malware using the **Potential Malware Detected** filter in the activity log.
+
+You can also configure session policies to block malware on download.
 
 ## <a name="educate-protect"></a>Educate users to protect sensitive files
 
