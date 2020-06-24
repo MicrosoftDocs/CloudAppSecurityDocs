@@ -37,7 +37,6 @@ Use the following links to get more details about the different assessment types
 - **[AWS recommendations](security-config-aws.md)**: Security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0, collected from AWS Security Hub.
 - **[GCP recommendations](security-config-gcp.md)**: Security recommendations based on the CIS benchmark for GCP, version 1.1.0, collected from Google Security Command Center and Security Health Analytics.
 
-
 ## Next steps
 
 > [!div class="nextstepaction"]
