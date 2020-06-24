@@ -196,7 +196,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 > - [Set up GCP Security Command Center with Security Health Analytics](#set-up-gcp-security-command-center-with-security-health-analytics)
 > - [Enable Security Command Center API](#enable-security-command-center-api)
 > - [Create a dedicated service account for the security configuration integration](#create-a-dedicated-service-account-for-the-security-configuration-integration)
-> - [Connect GCP Security configuration to Cloud App Security](#connect-gcp-security-configuration-to-cloud-app-security)
+> - [Configure Cloud App Security](#configure-cloud-app-security-1)
 
 ### Set up GCP Security Command Center with Security Health Analytics
 
