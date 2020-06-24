@@ -82,7 +82,7 @@ The following anomaly detection policies are available:
     > [!NOTE]
     >
     > * For Office 365 malware detection, you need a valid license for Office 365 Advanced Threat Protection P1.
-    > * Cloud App Security supports malware detection the following apps:
+    > * Cloud App Security supports malware detection in the following apps:
     >   * Box
     >   * Dropbox
     >   * G Suite
