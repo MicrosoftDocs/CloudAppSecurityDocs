@@ -29,13 +29,13 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). Recommendations cover all Azure subscriptions, AWS accounts including member accounts, and all GCP projects that are connected to your Cloud App Security portal. This organization-level view of all public cloud platform security configuration recommendations enables security admins to investigate security configuration gaps in one central location.
+Microsoft Cloud App Security provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). Recommendations cover all Azure subscriptions, AWS accounts including member accounts, and all GCP projects that are connected to your organization. This multi-cloud view of all cloud platform security configuration recommendations enables security admins to investigate all security configuration gaps in Cloud App Security.
 
 Use the following links to get more details about the different assessment types.
 
-- **[Azure recommendations](security-config-azure.md)**: Azure best practices security recommendations collected from Azure Security Center.
-- **[AWS recommendations](security-config-aws.md)**: Security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0, collected from AWS Security Hub.
-- **[GCP recommendations](security-config-gcp.md)**: Security recommendations based on the CIS benchmark for GCP, version 1.1.0, collected from Google Security Command Center and Security Health Analytics.
+- **[Azure recommendations](security-config-azure.md)**: Azure best practices security recommendations consumed from Azure Security Center.
+- **[AWS recommendations](security-config-aws.md)**: Security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0, consumed from AWS Security Hub.
+- **[GCP recommendations](security-config-gcp.md)**: Security recommendations based on the CIS benchmark for GCP, version 1.1.0, consumed from Google Security Command Center and Security Health Analytics.
 
 ## Next steps
 

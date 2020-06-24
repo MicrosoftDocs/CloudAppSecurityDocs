@@ -23,15 +23,6 @@ ms.collection: M365-security-compliance
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Cloud App Security protects GCP, see [Protect GCP](protect-gcp.md).
 
-> [!NOTE]
-> The instructions for connecting your GCP environment follow [Google's recommendations](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) for consuming aggregated logs. The integration leverages Google StackDriver and will consume additional resources that might impact your billing. The consumed resources are:
->
-> - [Aggregated export sink – Organization level](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
-> - [Pub/Sub topic – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
-> - [Pub/Sub subscription – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
->
-> Currently, the Cloud App Security auditing connection only imports Admin Activity audit logs; Data Access and System Event audit logs are not imported. For more information about GCP logs, see [Cloud Audit Logs](https://go.microsoft.com/fwlink/?linkid=2109230).
-
 We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a G Suite instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected G Suite organization** steps when you add the GCP connection details.
 
 ## Prerequisites
@@ -57,17 +48,25 @@ Follow these steps to connect AWS Security auditing to Cloud App Security.
 > [!div class="checklist"]
 >
 > - [Configure Google Cloud Platform](#configure-google-cloud-platform)
-> - [Configure Cloud App Security](#configure-cloud-app-security)
+> - [Connect Google Cloud Platform auditing to Cloud App Security](#configure-cloud-app-security)
 > - [Aggregated export sink](#aggregated-export-sink)
 
 ### Configure Google Cloud Platform
 
-- Sign in to your GCP portal using your integrating GCP user account.
+> [!NOTE]
+> The instructions for connecting your GCP environment for auditing follow [Google's recommendations](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) for consuming aggregated logs. The integration leverages Google StackDriver and will consume additional resources that might impact your billing. The consumed resources are:
+>
+> - [Aggregated export sink – Organization level](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
+> - [Pub/Sub topic – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
+> - [Pub/Sub subscription – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
+>
+> The Cloud App Security auditing connection only imports Admin Activity audit logs; Data Access and System Event audit logs are not imported. For more information about GCP logs, see [Cloud Audit Logs](https://go.microsoft.com/fwlink/?linkid=2109230).
 
 #### Create a dedicated project
 
 Create a dedicated project in GCP under your organization to enable integration isolation and stability
 
+1. Sign in to your GCP portal using your integrating GCP user account.
 1. Click **Create Project** to start a new.
 1. In the **New project** screen, name your project and click **Create**.
 
@@ -119,7 +118,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 ![Screenshot showing organization ID dialog](media/connect-gcp-org-id.png)
 
-### Configure Cloud App Security
+### Connect Google Cloud Platform auditing to Cloud App Security
 
 - In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
 
@@ -152,24 +151,6 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 > [!NOTE]
 > We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
 
-**For a GCP instance that is part of a connected G Suite organization**
-
-1. In the list of connected instances, at the end of row in which the G Suite connector appears, click the three dots and then click **Add Google Cloud Platform**.
-
-1. On the Google Cloud Platform page, do the following:
-    1. In the **Organization ID** box, enter the organization you made a note of earlier.
-    1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
-    1. Click **Connect Google Cloud Platform**.
-
-    > [!NOTE]
-    > This enables unified user management and governance via the G Suite user identity realm.
-
-#### Test the connection
-
-Make sure the connection succeeded by clicking **Test API**.
-
-Testing may take a couple of minutes. When it's finished, you get a Success or Failure notification. After receiving a success notice, click **Done**.
-
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ### Aggregated export sink
@@ -196,7 +177,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 > - [Set up GCP Security Command Center with Security Health Analytics](#set-up-gcp-security-command-center-with-security-health-analytics)
 > - [Enable Security Command Center API](#enable-security-command-center-api)
 > - [Create a dedicated service account for the security configuration integration](#create-a-dedicated-service-account-for-the-security-configuration-integration)
-> - [Configure Cloud App Security](#configure-cloud-app-security-1)
+> - [Connect Google Cloud Platform security configuration to Cloud App Security](#configure-cloud-app-security-1)
 
 ### Set up GCP Security Command Center with Security Health Analytics
 
@@ -205,7 +186,9 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 1. Verify that there is data flowing to the Security Command Center.
 
     > [!NOTE]
-    > When you first enable Security Health Analytics, it may take several hours for data to be available.
+    >
+    > - The instructions for connecting your GCP environment for security configuration follow [Google's recommendations](https://cloud.google.com/security-command-center/docs/how-to-notifications#enable-scc-api) for consuming security configuration recommendations. The integration leverages Google Security Command Center and will consume additional resources that might impact your billing.
+    > - When you first enable Security Health Analytics, it may take several hours for data to be available.
 
 ### Enable Security Command Center API
 
@@ -254,7 +237,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
     ![Screenshot showing organization ID dialog](media/connect-gcp-org-id.png)
 
-### Configure Cloud App Security
+### Connect Google Cloud Platform security configuration to Cloud App Security
 
 1. In Cloud App Security, click **Investigate**, and then select **Connected apps**.
 
