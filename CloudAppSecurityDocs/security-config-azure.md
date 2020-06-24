@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get security configuration recommendations for Azure - Cloud App Security
-description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Azure Security Center.
+title: Get security configuration recommendations for Azure
+description: This article provides information about how to get security configuration recommendations in Cloud App Security by integrating with Azure Security Center.
 keywords:
 author: shsagir
 ms.author: shsagir

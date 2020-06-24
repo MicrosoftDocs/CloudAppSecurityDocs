@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get security configuration recommendations for Azure - Cloud App Security
-description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Azure Security Center.
+title: Get security configuration recommendations for your public cloud platforms
+description: This article provides information about how to get security configuration recommendations in Cloud App Security for your organization's public cloud platforms.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -25,19 +25,18 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Security configuration for Azure
+# Security configuration overview
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security provides you with security configuration assessments of your public cloud platforms, including Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP).
+Microsoft Cloud App Security provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). Recommendations cover all Azure subscriptions, AWS accounts including member accounts, and all GCP projects that are connected to your Cloud App Security portal. This organization-level view of all public cloud platform security configuration recommendations enables security admins to investigate security configuration gaps in one central location.
 
-The assessments are based on the native cloud platform tools:
+Use the following links to get more details about the different assessment types.
 
-- [Azure recommendations](security-config-azure.md) are sourced from Azure Security Center surfacing Azure best practices security recommendations
-- [AWS recommendations](security-config-aws.md) are sourced from AWS Security Hub surfacing security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0.
-- [GCP recommendations](security-config-gcp.md) are sourced from Google Security Command Center and Security Health Analytics surfacing security recommendations based on the Center for Internet Security (CIS) benchmark for GCP, version 1.1.0.
+- **[Azure recommendations](security-config-azure.md)**: Azure best practices security recommendations collected from Azure Security Center.
+- **[AWS recommendations](security-config-aws.md)**: Security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0, collected from AWS Security Hub.
+- **[GCP recommendations](security-config-gcp.md)**: Security recommendations based on the CIS benchmark for GCP, version 1.1.0, collected from Google Security Command Center and Security Health Analytics.
 
-This organization-level view of all public cloud platform security configuration recommendations enables security admins to investigate security configuration gaps in one central location. Recommendations cover all Azure subscriptions of the Azure tenant, AWS accounts within the organization including member accounts, and all GCP projects within the organization.
 
 ## Next steps
 
