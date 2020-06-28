@@ -52,7 +52,7 @@ Cloud App Security provides the ability to identify risky machines as part of yo
 - **New feature: Self-service disable app connector (gradual rollout)**  
 We've added the ability to disable app connectors directly in Cloud App Security. For more information, see [Disable app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
 
-- **Enhanced detection logic: Ransomware activity**  
+- **Enhanced detection logic: Ransomware activity (gradual rollout)**  
 We've updated the detection logic for Ransomware activity to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Ransomware activity](anomaly-detection-policy.md#ransomware-activity).
 
 <!--
