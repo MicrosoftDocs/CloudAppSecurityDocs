@@ -124,27 +124,37 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
 ### Step 2: Connect Amazon Web Services auditing to Cloud App Security
 
-1. In Cloud App Security, click **Investigate**, and then select **Connected apps**.
+1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
 
-1. In the **App connectors** tab, click the plus button, and then select **Amazon Web Services**.
+1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
-    ![connect AWS](media/connect-aws.png)
+    **For a new connector**
 
-1. In the **Instance name** page, choose the instance type, and then click **Next**.
+    1. Click the plus sign followed by **Amazon Web Services**.
 
-    - For an existing connector, choose the relevant instance.
+        ![connect AWS](media/connect-aws.png "connect AWS")
 
-        ![AWS instance selection](media/connect-aws-existing-instance.png)
+    1. In the pop-up, provide a name for the connector, and then click **Connect Amazon Web Services**.
 
-    - For a new connector, provide a name for the instance.
+        ![AWS connector name](media/connect-aws-name.png)
 
-        ![AWS connector name](media/aws-connect-name.png)
+    1. On the Connect Amazon Web services page, select **Security auditing**, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-1. In the **Account details** page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and then click **Next**.
+        ![Connect AWS app security auditing](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
-    ![Connect AWS account details](media/aws-connect-account-details.png)
+    **For an existing connector**
 
-1. In the **Finished** page, make sure the connection succeeded, and then click **Finished**.
+    1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security auditing**.
+
+        ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/aws-connect-app-edit-audit.png)
+
+    1. On the Connect Amazon Web Services page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
+
+        ![Connect AWS app security auditing](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
+
+1. Click **Test API** to make sure the connection succeeded.
+
+    Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, click **Done**.
 
 ## How to connect AWS security configuration to Cloud App Security
 

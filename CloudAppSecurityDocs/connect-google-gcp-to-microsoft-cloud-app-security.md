@@ -120,36 +120,46 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 ### Connect Google Cloud Platform auditing to Cloud App Security
 
-- In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
-
 #### Add the GCP connection details
 
-1. In Cloud App Security, click **Investigate**, and then select **Connected apps**.
+1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
 
-1. In the **App connectors** tab, click the plus button, and then select **Google Cloud Platform**.
+1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
-    ![Screenshot showing add GCP menu](media/connect-gcp-add.png)
+    > [!NOTE]
+    > We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
 
-1. In the **Instance name** page, choose the instance type, and then click **Next**.
+    **For a new connector**
 
-    - For an existing connector, choose the relevant instance.
+    1. Click the plus sign followed by **Google Cloud Platform**.
 
-        ![GCP instance selection](media/connect-gcp-existing-instance.png)
+        ![connect GCP](media/connect-gcp-add.png)
 
-    - For a new connector, provide a name for the instance.
+    1. In the pop-up, provide a name for the connector, and then click **Connect Google Cloud Platform**.
 
-        ![GCP connector name](media/connect-gcp-new-instance.png)
+        ![GCP connector name](media/connect-gcp-name.png)
 
-1. In the **Project details** page, do the following, and then click **Next**.
-    1. In the **Organization ID** box, enter the organization you made a note of earlier.
-    1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
+    1. In the **Project details** page, do the following, and then click **Connect Google Cloud Platform**.
+        1. In the **Organization ID** box, enter the organization you made a note of earlier.
+        1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
-    ![Add GCP project details](media/connect-gcp-security-configuration-6.png)
+        ![Connect GCP app security auditing](media/connect-gcp-app-audit.png)
 
-1. In the **Finished** page, make sure the connection succeeded, and then click **Finished**.
+    **For an existing connector**
 
-> [!NOTE]
-> We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
+    1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security auditing**.
+
+        ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/connect-gcp-app-edit-audit.png)
+
+    1. In the **Project details** page, do the following, and then click **Connect Google Cloud Platform**.
+        1. In the **Organization ID** box, enter the organization you made a note of earlier.
+        1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
+
+        ![Connect GCP app security auditing](media/connect-gcp-app-edit-audit-creds.png)
+
+1. Click **Test API** to make sure the connection succeeded.
+
+    Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, click **Done**.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
