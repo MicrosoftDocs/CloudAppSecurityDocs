@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Connect Workday to Microsoft Cloud App Security (Preview)
+# Connect Workday to Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 

@@ -17,14 +17,14 @@ ms.service: cloud-app-security
 #ms.subservice: na
 ms.collection: M365-security-compliance
 ---
-# Connect Google Cloud Platform to Microsoft Cloud App Security (Preview)
+# Connect Google Cloud Platform to Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Cloud App Security protects GCP, see [Protect GCP](protect-gcp.md).
 
 > [!NOTE]
-> The instructions for connecting your GCP environment follow [Google’s recommendations](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) for consuming aggregated logs. The integration leverages Google StackDriver and will consume additional resources that might impact your billing. The consumed resources are:
+> The instructions for connecting your GCP environment follow [Google's recommendations](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) for consuming aggregated logs. The integration leverages Google StackDriver and will consume additional resources that might impact your billing. The consumed resources are:
 >
 > * [Aggregated export sink – Organization level](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
 > * [Pub/Sub topic – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)

@@ -100,6 +100,7 @@ To use App Connectors, you need to make sure you have the following things for e
 | AWS | | Newly created user |
 | Box | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions. |
 | Dropbox | Business/Enterprise | Admin |
+| GitHub | GitHub Enterprise Cloud | Owner |
 | GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business or Enterprise preferred<br /><br />G Suite Enterprise (minimally) | Super Admin |
 | Office 365 | | Global Admin |
@@ -114,6 +115,15 @@ To use App Connectors, you need to make sure you have the following things for e
 Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
 For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
 
+## Disable app connectors
+
+To disable connected apps:
+
+1. In the **Connected apps** page, in the relevant row, click the three dots and select **Disable App connector**.
+1. In the pop-up, click **Disable App connector instance** to confirm the action.
+
+Once disabled, the connector instance will stop consuming data from the connector.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
@@ -124,4 +134,4 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 ## Check out this video!
 
 > [!div class="nextstepaction"]
-> [Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [Microsoft Cloud App Security – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
