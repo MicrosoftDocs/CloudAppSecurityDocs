@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/16/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.service: cloud-app-security
 
