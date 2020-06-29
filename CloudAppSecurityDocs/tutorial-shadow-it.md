@@ -76,13 +76,16 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
     * You can drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
 
+    > [!TIP]
+    > Get notified when a discovered app is associated with a recently published security breach using the built-in **Discovered app security breach** alert. Investigate all users, IP addresses, and devices accessing the breached app in the last 90 days, and apply relevant controls.
+
 1. **Analyze usage**: Now that you know whether or not you want the app to be used in your organization, you want to investigate how and who is using it. If it's only used in a limited way in your organization maybe it's ok, but maybe if the use is growing you want to be notified about it so you can decide if you want to block the app.
 
     * In the Cloud App Security portal, under **Discover**, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The **Use** tab lets you know how many active users are using the app and how much traffic it's generating. This can already give you a pretty good picture of what's happening with the app. Then, if you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**. This important step can give you pertinent information, for example, if you discover that all the users of a specific app are from the Marketing department, it's possible that there's a business need for this app, and if it's risky you should talk to them about an alternative before blocking it.
 
     * Dive even deeper when investigating use of discovered apps. View subdomains and resources to learn about specific activities, data access, and resource usage in your cloud services. For more information, see [Deep dive into Discovered apps](discovered-apps.md#deep-dive-into-discovered-apps) and [Discover resources and custom apps](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. Use the cloud app catalog and filter for apps that belong to the same app category and using the advanced filters identify solutions that do comply with the different security controls that are required in order to comply with your organization's policy.
+1. **Identify alternative apps**: Use the cloud app catalog and filter for apps that belong to the same app category and using the advanced filters identify solutions that do comply with the different security controls that are required in order to comply with your organization's policy.
 
 ### Phase 3: Manage your apps
 
