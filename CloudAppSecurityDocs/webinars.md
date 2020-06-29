@@ -1,7 +1,7 @@
 ---
 
 # required metadata
-title: Watch our webinars - Cloud App Security | Microsoft Docs
+title: Watch our webinars - Cloud App Security
 description: Displays a listing of past webinars, including a description.
 author: shsagir
 ms.author: shsagir

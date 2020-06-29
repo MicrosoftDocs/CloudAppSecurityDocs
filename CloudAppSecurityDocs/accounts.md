@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Visibility into cloud app accounts - Cloud App Security | Microsoft Docs
+title: Visibility into cloud app accounts - Cloud App Security
 description: This article provides information about reviewing accounts from your connected apps.
 keywords:
 author: shsagir

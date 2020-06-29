@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get security configuration recommendations for AWS - Cloud App Security | Microsoft Docs
-description: This article provides information about how to Get security configuration recommendations in Cloud App Security by integrating with Amazon Web Services.
+title: Get security configuration recommendations for AWS
+description: This article provides information about how to get security configuration recommendations in Cloud App Security by integrating with Amazon Web Services.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -35,14 +35,15 @@ Microsoft Cloud App Security provides you with a security configuration assessme
 
 - AWS Security Hub must be set up for all your AWS account regions. For more information, see [Setting Up AWS Security Hub](https://go.microsoft.com/fwlink/?linkid=2100208).
     > [!NOTE]
-    > If this is the first time you’re enabling Security Hub, it can take several hours for the initial data to become available.
+    > If this is the first time you're enabling Security Hub, it can take several hours for the initial data to become available.
 - Your Amazon Web Services must be connected to Cloud App Security. For more information, see [Connect AWS to Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md).
 
-## How to view AWS security recommendation
+## How to view AWS security recommendations
 
 1. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Amazon Web Services** tab.
-    - Microsoft Cloud App Security provides recommendations for only the top 50 subscriptions.
-    - It might take up to 15 minutes before your changes take effect.
+
+    > [!NOTE]
+    > It might take up to 15 minutes before your changes take effect.
 
     ![security configuration menu](media/security-configuration-menu.png)
 

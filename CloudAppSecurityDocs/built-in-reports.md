@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate reports - Microsoft Cloud App Security | Microsoft Docs
+title: Generate reports - Microsoft Cloud App Security
 description: This article provides instructions for generating data management reports in Microsoft Cloud App Security.
 keywords:
 author: shsagir

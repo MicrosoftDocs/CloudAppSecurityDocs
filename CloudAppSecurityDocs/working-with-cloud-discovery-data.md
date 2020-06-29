@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use Cloud Discovery data to detect risky behavior - Cloud App Security | Microsoft Docs
+title: Use Cloud Discovery data to detect risky behavior - Cloud App Security
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 keywords:
 author: shsagir

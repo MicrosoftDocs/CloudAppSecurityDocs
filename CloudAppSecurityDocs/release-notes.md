@@ -40,7 +40,7 @@ We've added the following app connectors to our portfolio of generally available
   - [Google Cloud Platform](connect-google-gcp-to-microsoft-cloud-app-security.md)
   - [Workday](protect-workday.md)
 
-- **New real-time malware detection GA (gradual rollout)**  
+- **New real-time malware detection GA**  
 We've expanded our session controls to detect potential malware using Microsoft Threat Intelligence upon file uploads or downloads. The new detection is now generally available out-of-the-box and can be configured to automatically block files identified as potential malware. For more information, see [Block malware on upload](session-policy-aad.md#block-malware-on-upload).
 
 - **Enhanced access and session controls with any IdP GA**  

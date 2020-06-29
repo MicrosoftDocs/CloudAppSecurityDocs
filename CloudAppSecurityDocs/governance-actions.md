@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Governance actions to control connected apps - Cloud App Security | Microsoft Docs
+title: Governance actions to control connected apps - Cloud App Security
 description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them.
 keywords:
 author: shsagir

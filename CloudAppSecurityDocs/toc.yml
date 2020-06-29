@@ -200,10 +200,14 @@
       href: manage-app-permissions.md
     - name: Security configuration
       items:
-      - name: Security configuration for Azure
+      - name: Overview
         href: security-config.md
+      - name: Security configuration for Azure
+        href: security-config-azure.md
       - name: Security configuration for AWS
         href: security-config-aws.md
+      - name: Security configuration for GCP
+        href: security-config-gcp.md
     - name: Monitor apps
       href: monitor-alerts.md
       items:
