@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cloud Discovery policies - Cloud App Security | Microsoft Docs
+title: Cloud Discovery policies - Cloud App Security
 description: This article outlines the steps to configure many Cloud Discovery policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir

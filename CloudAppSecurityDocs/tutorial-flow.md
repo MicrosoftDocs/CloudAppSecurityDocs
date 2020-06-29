@@ -1,5 +1,5 @@
 ---
-title: Extend governance to endpoint remediation | Microsoft Docs
+title: Extend governance to endpoint remediation
 description: This tutorial describes the process to configure Microsoft Cloud App Security policy alerts to trigger Microsoft Power Automate workflows to run Microsoft Defender Advanced Threat Protection remediation actions.
 author: shsagir
 ms.author: shsagir
@@ -42,7 +42,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Security extensions**.
 
 1. On the **Security extensions** page, click the plus button to generate a new API token.
-1. In the **Generate new token** pop-up window, enter the token name (for example, "Flow-Token"), and then click **Generate**.
+1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then click **Generate**.
 
     ![Screenshot of the token window, showing the name entry and generate button.](media/tutorial-flow-token-generate.png)
 1. Once the token is generated, click the copy icon to the right of the generated token, and then click **Close**. You'll need the token later.
@@ -75,13 +75,13 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
     ![Screenshot of the templates Power Automate page, showing the Cloud App Security create button.](media/tutorial-flow-templates-create.png)
 
-1. In the **Cloud App Security** pop-up window, enter the connection name (for example, "Cloud App Security Token"), paste the API token you copied, and then click **Create**.
+1. In the **Cloud App Security** pop-up, enter the connection name (for example, "Cloud App Security Token"), paste the API token you copied, and then click **Create**.
 
     ![Screenshot of the Cloud App Security window, showing the name and key entry and create button.](media/tutorial-flow-templates-create-window.png)
 
 1. In the list of apps, on the row in which **HTTP with Azure AD** appears, click **Sign in**.
 
-1. In the **HTTP with Azure AD** pop-up window, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then click **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
+1. In the **HTTP with Azure AD** pop-up, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then click **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
 
     ![Screenshot of the HTTP with Azure AD window, showing the Resource fields and sign-in button.](media/tutorial-flow-templates-azure.png)
 

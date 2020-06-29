@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Control cloud app usage by creating policies - Cloud App Security | Microsoft Docs
+title: Control cloud app usage by creating policies - Cloud App Security
 description: This article provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: shsagir

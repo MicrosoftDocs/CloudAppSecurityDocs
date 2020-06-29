@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Control which third-party cloud OAuth apps get permissions - Cloud App Security | Microsoft Docs
+title: Control which third-party cloud OAuth apps get permissions - Cloud App Security
 description: This article provides information about how you can control, ban and allow third-party OAuth apps.
 keywords:
 author: shsagir
@@ -111,7 +111,7 @@ To export the log, perform the following steps:
 
 1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, click the link showing the number of users that authorized the app.
 
-1. In the pop-up window, click **Export**.
+1. In the pop-up, click **Export**.
 
     ![Screenshot showing export of OAuth app auditing](media/oauth-export-users.png)
 
