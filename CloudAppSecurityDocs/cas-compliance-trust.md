@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Cloud App Security compliance, data security, privacy, trust | Microsoft Docs
+title: Cloud App Security compliance, data security, privacy, trust
 description: This article describes the Cloud App Security compliance offering, trust center, privacy, and data security.
 author: shsagir
 ms.author: shsagir

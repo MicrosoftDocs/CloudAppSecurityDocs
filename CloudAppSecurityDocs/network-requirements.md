@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Network requirements - Cloud App Security | Microsoft Docs
+title: Network requirements - Cloud App Security
 description: This article describes the IP addresses and ports you need to open to work with Cloud App Security.
 keywords:
 author: shsagir
