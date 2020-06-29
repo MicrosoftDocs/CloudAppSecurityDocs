@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/24/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.service: cloud-app-security
 
@@ -48,7 +48,7 @@ Follow these steps to connect AWS Security auditing to Cloud App Security.
 > [!div class="checklist"]
 >
 > - [Configure Google Cloud Platform](#configure-google-cloud-platform)
-> - [Connect Google Cloud Platform auditing to Cloud App Security](#configure-cloud-app-security)
+> - [Connect Google Cloud Platform auditing to Cloud App Security](#connect-google-cloud-platform-auditing-to-cloud-app-security)
 > - [Aggregated export sink](#aggregated-export-sink)
 
 ### Configure Google Cloud Platform
@@ -187,7 +187,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 > - [Set up GCP Security Command Center with Security Health Analytics](#set-up-gcp-security-command-center-with-security-health-analytics)
 > - [Enable Security Command Center API](#enable-security-command-center-api)
 > - [Create a dedicated service account for the security configuration integration](#create-a-dedicated-service-account-for-the-security-configuration-integration)
-> - [Connect Google Cloud Platform security configuration to Cloud App Security](#configure-cloud-app-security-1)
+> - [Connect Google Cloud Platform security configuration to Cloud App Security](#connect-google-cloud-platform-security-configuration-to-cloud-app-security)
 
 ### Set up GCP Security Command Center with Security Health Analytics
 

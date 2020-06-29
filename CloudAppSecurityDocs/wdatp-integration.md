@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/24/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -85,10 +85,11 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
 5. You can drill down into each machine that's listed, and use the tabs to view the investigation data. Find correlations between the machines, the users, IP addresses, and apps that were involved in incidents:
 
     - **Overview**
-        - Transactions: Information about the number of transactions that took place on the machine over the selected period of time.
-        - Total traffic: Information about the total amount of traffic (in MB) over the selected period of time.
+        - **Machine risk level**: Shows how risky the machine's profile is relative to other machines in your organization, as indicated by the severity (high, medium, low, informational). Cloud App Security uses machine profiles from Microsoft Defender ATP for each machine based on advanced analytics. Activity that is anomalous to a machine's baseline is evaluated and determines the machine's risk level. Use the machine risk level to determine which machines to investigate first.
+        - **Transactions**: Information about the number of transactions that took place on the machine over the selected period of time.
+        - **Total traffic**: Information about the total amount of traffic (in MB) over the selected period of time.
         - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
-        - Downloads: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
+        - **Downloads**: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
     - **Discovered apps**  
   Lists all the discovered apps that were accessed by the machine.
     - **User history**  

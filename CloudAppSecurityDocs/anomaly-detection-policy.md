@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 06/28/2020
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -120,7 +120,12 @@ The detection looks for users whose account was terminated in Azure AD, but stil
 
 ### Suspicious email deletion activity (Preview)
 
-* This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
+* This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user's mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
+
+> [!NOTE]
+> Cloud App Security integrates with Office Advanced Threat Protection (Office ATP) to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Office ATP is enabled, you'll start seeing alerts in the Cloud App Security activity log.
+
+<!-- // MATP? Delay tile start appearing? -->
 
 ### Unusual activities (by user)
 

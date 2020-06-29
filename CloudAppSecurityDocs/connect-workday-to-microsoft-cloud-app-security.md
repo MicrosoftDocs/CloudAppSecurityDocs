@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/31/2019
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Connect Workday to Microsoft Cloud App Security (Preview)
+# Connect Workday to Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
