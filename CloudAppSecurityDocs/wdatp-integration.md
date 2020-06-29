@@ -58,6 +58,8 @@ On its own, Cloud App Security collects logs from your endpoints using either [l
 
 To enable you to perform Cloud Discovery across other platforms, it's best to use both the Cloud App Security [log collector](discovery-docker.md), along with Microsoft Defender ATP integration to monitor your Windows 10 machines.
 
+[Watch our videos](#related-videos) showing the benefits of using Microsoft Defender ATP with Cloud App Security.
+
 ## How to integrate Microsoft Defender ATP with Cloud App Security
 
 To enable Microsoft Defender ATP integration with Cloud App Security:
@@ -149,6 +151,9 @@ Sometimes, access to an unsanctioned app is not blocked, either because the endp
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 ## Related videos
+
+> [!div class="nextstepaction"]
+> [Discover and block Shadow IT using Microsoft Defender ATP](https://www.youtube.com/watch?v=MsHkTOoqSQo)
 
 > [!div class="nextstepaction"]
 > [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
