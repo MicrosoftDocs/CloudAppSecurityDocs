@@ -37,7 +37,7 @@ We've expanded our multi-cloud security configurations to provide security recom
 - **New app connectors GA**  
 We've added the following app connectors to our portfolio of generally available API connectors, giving you more visibility into and control over how your apps are used in your organization:
   - [GitHub Enterprise Cloud](protect-github.md)
-  - [Google Cloud Platform](connect-google-gcp-to-microsoft-cloud-app-security.md)
+  - [Google Cloud Platform](protect-gcp.md)
   - [Workday](protect-workday.md)
 
 - **New real-time malware detection GA**  
