@@ -67,6 +67,8 @@
       href: protect-box.md
     - name: Protect Dropbox
       href: protect-dropbox.md
+    - name: Protect GitHub
+      href: protect-github.md
     - name: Protect GCP
       href: protect-gcp.md
     - name: Protect G Suite
@@ -155,6 +157,8 @@
       href: connect-box-to-microsoft-cloud-app-security.md
     - name: Connect Dropbox
       href: connect-dropbox-to-microsoft-cloud-app-security.md
+    - name: Connect GitHub
+      href: connect-github-ec-to-microsoft-cloud-app-security.md
     - name: Connect G Suite
       href: connect-google-apps-to-microsoft-cloud-app-security.md
     - name: Connect GCP
