@@ -63,12 +63,14 @@ Discovery policies enable you to set alerts that notify you when new apps are de
 
 9. Click **Create**.
 
+> [!NOTE]
+> Newly created discovery policies (or policies with updated continuous reports) trigger an alert once in 90 days per app per continuous report, regardless of whether there are existing alerts for the same app. So, for example, if you create a policy for discovering new popular apps, it may trigger additional alerts for apps that have already been discovered and alerted on.
+
 For example, if you're interested in discovering risky hosting apps found in your cloud environment, set your policy as follows:
 
 Set the policy filters to discover any services found in the **hosting services** category, and that have a risk score of 1, indicating they're highly risky.
 
- Set the thresholds that should trigger an alert for a certain discovered app at the bottom. For instance, alert only if over 100 users in the environment used the app and if they downloaded a certain amount of data from the service.
-Additionally, you can set the limit of daily alerts you wish to receive.
+Set the thresholds that should trigger an alert for a certain discovered app at the bottom. For instance, alert only if over 100 users in the environment used the app and if they downloaded a certain amount of data from the service. Additionally, you can set the limit of daily alerts you wish to receive.
 
 ![app discovery policy example](media/app-discovery-policy-example.png "app discovery policy example")
 
