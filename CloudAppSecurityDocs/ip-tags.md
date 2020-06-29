@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set IP ranges and tags - Cloud App Security | Microsoft Docs
+title: Set IP ranges and tags - Cloud App Security
 description: This article provides instructions for working with IP tags and IP categories.
 keywords:
 author: shsagir

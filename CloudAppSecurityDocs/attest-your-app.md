@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Attest your apps - Cloud App Security | Microsoft Docs
+title: Attest your apps - Cloud App Security
 description: This article provides instructions for attesting your apps in Cloud App Security.
 keywords:
 author: shsagir

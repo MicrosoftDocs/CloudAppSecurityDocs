@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set admin preferences - Cloud App Security | Microsoft Docs
+title: Set admin preferences - Cloud App Security
 description: This article provides instructions for setting admin preferences in Cloud App Security.
 keywords:
 author: shsagir

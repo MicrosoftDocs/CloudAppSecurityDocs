@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Investigate risky OAuth apps - Cloud App Security | Microsoft Docs
+title: Investigate risky OAuth apps - Cloud App Security
 description: This article provides information on how to investigate risky OAuth apps in Cloud App Security.
 keywords:
 author: shsagir
