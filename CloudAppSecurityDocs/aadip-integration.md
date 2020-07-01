@@ -69,10 +69,6 @@ The following policies are available:
 |Leaked Credentials|Shows leaked credentials alerts, user's valid credentials have been leaked|Enabled|Low - Receive all alerts|
 |Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that weren't performed by the user|Enabled|High - Receive only high severity alerts|
 
-## Remediating risky users
-
-The Identity Protection policies can be used to automatically remediate risky users by setting the user's risk level to high. Once a user is set to high, the advanced user risk analytics algorithm takes into consideration the new user status as well as the *Machine Device Management* status. This causes the relevant policy actions defined in Azure AD to be enforced, such as reset the user's password, require MFA authentication, or force the user to use a managed device. For more information, see [How does Azure AD use my risk feedback](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback) and [Governance actions](accounts.md#governance-actions).
-
 ## Next steps
 
 > [!div class="nextstepaction"]
