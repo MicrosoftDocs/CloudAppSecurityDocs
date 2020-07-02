@@ -125,9 +125,6 @@ You can add additional admins to Cloud App Security without adding users to Azur
 
 2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
 
-    > [!NOTE]
-    > To grant portal access to MSSPs, you must add MSSP users to your Azure AD as guest users. For more information, see [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).
-
     ![add admins](media/add-admin.png)
 
 3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, or **App/Instance admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
@@ -151,7 +148,7 @@ To export a log, perform the following steps:
 
 ## Invite external admins
 
-Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. To add external users, provide an external email address in the steps under [Add additional admins](#add-additional-admins).
+Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. To add external users, make sure Cloud App Security is enabled on the source tenant, and then provide an external email address in the steps under [Add additional admins](#add-additional-admins).
 
 Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
 
