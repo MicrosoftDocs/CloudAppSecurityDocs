@@ -131,7 +131,9 @@ You can block access to native mobile and desktop client apps with access polici
 While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
-> Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
+>
+> - Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
+> - To apply session controls to portal.office.com, you must onboard Microsoft Office 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
 <a name="featured-apps"></a>Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
 
