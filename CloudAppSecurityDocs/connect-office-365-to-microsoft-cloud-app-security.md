@@ -66,6 +66,7 @@ Cloud App Security supports the following Office 365 apps:
 >- You must [enable auditing in Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) to get the logs from there. Once auditing is enabled, Cloud App Security starts getting the logs (with a delay of 24-72 hours).
 >- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Azure AD settings and use of the **Suspend user** governance action is reverted.
 >- For Azure AD sign-in activities, Cloud App Security only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Noninteractive sign-in activities may be viewed in the Azure AD audit log.
+> - [Multi-geo deployments](/office365/enterprise/office-365-multi-geo) are only supported for OneDrive
 
 1. In **Connected apps** page, click the plus button and select **Office 365**.
 
