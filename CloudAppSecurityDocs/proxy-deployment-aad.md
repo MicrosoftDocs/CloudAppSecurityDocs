@@ -67,7 +67,7 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 
 1. Under **Assignments**, click **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then click **Done**.
 
-1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policies (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
+1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
 
     ![Azure AD conditional access](media/azure-ad-caac-policy.png)
 

@@ -329,7 +329,7 @@ Add the rule you created to any existing policies:
 
 1. In each Policy, switch to the **Response** tab.
 
-2. From the **Response rule** dropdown, select the block response rule you created earlier.
+2. From the **Response rule** drop-down, select the block response rule you created earlier.
 
 3. Save the policy.
 

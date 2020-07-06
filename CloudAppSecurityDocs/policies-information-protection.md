@@ -103,7 +103,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 2. Select and apply the policy template **Stale externally shared files**.
 
-3. Customize the filter **Last modified** to match your organization’s policy.
+3. Customize the filter **Last modified** to match your organization's policy.
 
 4. Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
 
@@ -117,7 +117,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ## Detect data access from an unauthorized location
 
-Detect when files are accessed from an unauthorized location, based on your organization’s common locations, to identify a potential data leak or malicious access.
+Detect when files are accessed from an unauthorized location, based on your organization's common locations, to identify a potential data leak or malicious access.
 
 ### Prerequisites
 
@@ -232,7 +232,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Azure Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Azure Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
 
 ### Steps
 
@@ -249,7 +249,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 ## Block downloads for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -276,7 +276,7 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ## Enforce read-only mode for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -306,7 +306,7 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ## Block upload of unclassified documents in real time
 
-Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
