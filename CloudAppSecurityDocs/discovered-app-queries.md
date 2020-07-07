@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -49,8 +49,7 @@ There are basic and advanced Discovered app filters. To achieve a complex filter
 
 ### Creating and managing custom app tags
 
-You can create a custom app tag.
-These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. For example, custom watch list, assignment to a specific business unit, or custom approvals, such as “approved by legal”.
+You can create a custom app tag. These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. For example, custom watch list, assignment to a specific business unit, or custom approvals, such as "approved by legal". App tags can be also used in app discovery policies in filters or by applying tags to apps as part of the policy governance actions.
 
 To create a custom app tag:
 
@@ -68,7 +67,7 @@ To create a custom app tag:
 
 ## Discovered app queries
 
-To make investigation even simpler, you can create custom queries and save them for later use.
+To make an investigation even simpler, you can create custom queries and save them for later use.
 
 1. In the **Discovered apps** page, use the filters as described above to drill down into your apps as necessary.
 
@@ -98,7 +97,7 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 
 - **Enterprise cloud apps that have weak encryption** - filters all your discovered apps to display only apps that are risky because they don't encrypt data-at-rest and don't support any encryption protocol.
 
-- **GDPR ready cloud apps** - Filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren’t.
+- **GDPR ready cloud apps** - Filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren't.
 
 ![query discovered apps](media/queries-discovered-apps.png)
 

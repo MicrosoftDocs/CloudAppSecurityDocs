@@ -38,6 +38,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * [Block specific activities](#block-activities)
 * [Protect files on download](#protect-download)
 * [Protect uploads of sensitive files](#protect-upload)
+* [Block malware on upload](#block-malware-on-upload)
 * [Educate users to protect sensitive files](#educate-protect)
 
 ## Prerequisites to using session policies
@@ -164,7 +165,7 @@ You can also configure session policies to block malware on download.
 
 ## <a name="educate-protect"></a>Educate users to protect sensitive files
 
-It is important to educate users when they are in violation of a policy, so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Cloud App Security allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
+It is important to educate users when they are in violation of a policy so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Cloud App Security allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
 
 For example, if a user uploads a file without an Azure Information Protection label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
 
