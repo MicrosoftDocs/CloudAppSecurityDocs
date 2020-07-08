@@ -80,7 +80,7 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
     ![Suggest an app to Cloud App Security](media/suggest-new-app.png)
 
-2. In the **Suggest new cloud app** pop-up, fill in details about the new . Include the name and domain of the app.
+2. In the **Suggest new cloud app** pop-up, fill in details about the new app. Include the name and domain of the app.
 
     ![Suggest an app pop-up to Cloud App Security](media/suggest-new-app-pop-up.png)
 

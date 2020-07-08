@@ -117,7 +117,7 @@ Integrating with your SIEM is accomplished in three steps:
 Where the following variables are used:
 
 * DIRNAME is the path to the directory you want to use for local agent debug logs.
-* ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the *nternet.
+* ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the internet.
 * TOKEN is the SIEM agent token you copied in the previous step.
 
 You can type -h at any time to get help.
