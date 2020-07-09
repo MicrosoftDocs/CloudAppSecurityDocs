@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -105,6 +105,13 @@ To configure a policy to leverage device management via client certificates:
 
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.
+
+    > [!TIP]
+    > To test how this works, you can use our sample root CA and client certificate, as follows:
+    >
+    > 1. Download the sample [root CA](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) and [client certificate](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx).
+    > 1. Upload the root CA to Cloud App Security.
+    > 1. Install the client certificate (password=Microsoft) onto the relevant devices.
 
 After the certificates are uploaded, you can create access and session policies based on **Device tag** and **Valid client certificate**.
 
