@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -106,6 +106,13 @@ To configure a policy to leverage device management via client certificates:
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.
 
+    > [!TIP]
+    > To test how this works, you can use our sample root CA and client certificate, as follows:
+    >
+    > 1. Download the sample [root CA](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) and [client certificate](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx).
+    > 1. Upload the root CA to Cloud App Security.
+    > 1. Install the client certificate (password=Microsoft) onto the relevant devices.
+
 After the certificates are uploaded, you can create access and session policies based on **Device tag** and **Valid client certificate**.
 
 ## Supported apps and clients
@@ -131,7 +138,9 @@ You can block access to native mobile and desktop client apps with access polici
 While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
-> Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
+>
+> - Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
+> - To apply session controls to portal.office.com, you must onboard Microsoft Office 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
 <a name="featured-apps"></a>Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
 
