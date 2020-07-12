@@ -85,7 +85,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
     * Dive even deeper when investigating use of discovered apps. View subdomains and resources to learn about specific activities, data access, and resource usage in your cloud services. For more information, see [Deep dive into Discovered apps](discovered-apps.md#deep-dive-into-discovered-apps) and [Discover resources and custom apps](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. **Identify alternative apps**: Use the cloud app catalog and filter for apps that belong to the same app category and using the advanced filters identify solutions that do comply with the different security controls that are required in order to comply with your organization's policy.
+1. **Identify alternative apps**: Use the cloud app catalog to identify safer apps that achieve similar business functionality as the detected risky apps, but do comply with your organization's policy. You can do this by using the advanced filters to find apps in the same category that meet with your different security controls.
 
 ### Phase 3: Manage your apps
 
