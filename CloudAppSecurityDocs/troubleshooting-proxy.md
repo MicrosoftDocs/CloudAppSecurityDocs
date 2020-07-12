@@ -82,7 +82,7 @@ Proxy chaining and nonce-handling are some of the common issues that could resul
     > [!NOTE]
     > Some apps use a nonce hash during authentication to prevent replay attacks. By default, Cloud App Security assumes an app uses a nonce. If the app you are working with does not use nonce, you can disable nonce-handling for this app in Cloud App Security.
 
-    1. In Cloud App Security, in the menu bar, click the settings cog and select **Conditional Access App Control**.
+    1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
     1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit** app.
     1. Click **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
     1. Log out of the app and close out all browser sessions.
@@ -135,7 +135,7 @@ Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD joined 
 
 **Recommended steps**
 
-1. In Cloud App Security, in the menu bar, click the settings cog and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Cloud App Security.
 1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are setup.
 
@@ -157,7 +157,7 @@ The device identification mechanism can request authentication from relevant dev
 
 **Recommended steps**
 
-1. In Cloud App Security, in the menu bar, click the settings cog  and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Cloud App Security.
 1. Verify that you uploaded an X.509 root or intermediate CA. You must upload the CA that is used to sign your relevant certificate authority.
 1. Create an access or session policy with the **Device Tag** filter equal to **Valid client certificate**.
@@ -215,9 +215,9 @@ Common scenarios you may encounter while onboarding an app include:
 
 - [App does not appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)
 - [App status: Continue Setup](#app-status-continue-setup)
-- Cannot configure controls for native apps
-- App is not recognized page
-- Adding session controls on an app
+- [Cannot configure controls for native apps](#cannot-configure-controls-for-native-apps)
+- [**App is not recognized** page appears](#something-went-wrong-page-appears)
+- [**Request session control** option appears](#request-session-control-option-appears)
 - [Additional considerations](#onboarding-apps-additional-considerations)
 
 #### App does not appear on the Conditional Access App Control apps page
@@ -230,7 +230,7 @@ When onboarding an app to Conditional Access App Control, the final step in the 
 
 | Identity provider | Validations |
 |---|---|
-| Azure AD | 1. Make sure you have a valid license for Azure AD Premium P1 in addition to a Cloud App Security license<br />2. Make sure that the app uses the SAML 2.0  or the OpenID Connect protocol<br />3. Make sure that the app single-sign on in Azure AD |
+| Azure AD | 1. Make sure you have a valid license for Azure AD Premium P1 in addition to a Cloud App Security license<br />2. Make sure that the app uses the SAML 2.0  or the OpenID Connect protocol<br />3. Make sure that the app SSO in Azure AD |
 | Third-party | 1. Make sure you have a valid Cloud App Security license<br />2. Create a duplicate app<br />3. Make sure that the app uses the SAML protocol<br />4. Validate that you have fully onboarded the app and the status of the app is **Connected** |
 
 1. In your Azure AD policy, under the **Session**, make sure that the session is forced to route to Cloud App Security, which will in turn allow the app to appear in on the **Conditional Access App Control apps** page, as follows:
@@ -250,6 +250,40 @@ For apps connected via third-party identity providers (IdP), if the setup is not
 1. Go through the [deployment guide](proxy-deployment-any-app.md#conf-app) and verify that you have completed all the steps. Pay particular attention to the following:
     1. Make sure you create a new custom SAML app. You need this to change the URLs and SAML attributes that might not be available in gallery apps.
     1. If your identity provider does not allow the reuse of the same identifier (also known as Entity ID or Audience), change the identifier of the original app.
+
+#### Cannot configure controls for native apps
+
+Native apps can be detected heuristically and you can use access policies to monitor or block them. Use the following steps to configure controls for native apps.
+
+**Recommended steps**
+
+1. In an access policy, add a **Client app** filter, and set it equal to **Mobile and desktop**.
+1. Under Actions, select **Block**.
+1. Optionally, customize the blocking message that your users get when they're unable to download files, for example, "You must use a web browser to access this app".
+1. Test and validate that the control is working as expected.
+
+#### "App is not recognized" page appears
+
+Cloud App Security can recognize over 16,000 apps through the cloud app catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Azure AD SSO that is NOT one of the 16,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must to configure the app on the Conditional Access App Control.
+
+**Recommended steps**
+
+1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
+1. In the banner, click **View new apps**.
+1. In the list of new apps, locate the app that you are onboarding, click on the **+** sign, and then click **Add**.
+    1. Select whether the app is a **custom** or **standard** app.
+    1. Continue through the wizard, make sure that specified **User-defined domains** are correct for the app you are configuring.
+1. Verify the app appears in the **Conditional Access App Control apps** page.
+
+#### "Request session control" option appears
+
+After adding an app, you may see the **Request session control** option. This occurs because only featured apps have out-of-the-box session controls. For any other app, you must go through a self-onboarding process.
+
+**Recommended steps**
+
+1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**.
+1. Under **Conditional Access App Control**, select **Admin onboarding/maintenance**.
+1. 
 
 <a name="onboarding-apps-additional-considerations"></a>
 
@@ -295,7 +329,7 @@ When creating an access or session policy, you may see the following error messa
 
 **Recommended steps**
 
-1. In Cloud App Security, in the menu bar, click the settings cog and select **Conditional Access App Control**.
+1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
 1. If you see the message **No apps connected**, use the following guide to deploy apps:
 
     - [Deploy featured apps that have session control enabled](proxy-deployment-aad.md)
@@ -371,7 +405,7 @@ When routing a user through the Cloud App Security, you can notify the user that
 
 **Recommended steps**
 
-1. In Cloud App Security, in the menu bar, click the settings cog and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**.
 1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Cloud App Security.
 
     ![Screenshot showing user monitoring options](media/proxy-user-monitoring.png)
@@ -392,7 +426,7 @@ If an end user is receiving a general failure after logging into an app from a t
 
 **Recommended steps**
 
-1. In Cloud App Security, in the menu bar, click the settings cog and select **Conditional Access App Control**.
+1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are not able to access appears, choose the three dots at the end of the row, and then choose **Edit** app.
     1. Validate that the SAML certificate that was uploaded is correct
     1. Verify that valid SSO URLs have been provided in the app configuration
@@ -447,7 +481,7 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
     1. On the activity drawer's **General** tab, click the matched policies link, to verify the policy you enforced is present.
     1. If you do not see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
-        1. To change the default behavior, in Cloud App Security, in the menu bar, click the settings cog and select **Settings**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
+        1. To change the default behavior, in Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
         1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
     1. If you are protecting the file with an AIP label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
         - Word: docm, docx, dotm, dotx
