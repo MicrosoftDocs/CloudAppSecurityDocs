@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -117,6 +117,9 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 
 ## Disable app connectors
 
+> [!NOTE]
+> Before disabling an app connector, make sure you have the connection details available as you will need them if you want to re-enable the connector.
+
 To disable connected apps:
 
 1. In the **Connected apps** page, in the relevant row, click the three dots and select **Disable App connector**.
@@ -129,7 +132,7 @@ Once disabled, the connector instance will stop consuming data from the connecto
 To re-enable connected apps:
 
 1. In the **Connected apps** page, in the relevant row, click the three dots and select **Edit app**. This starts the process to add a connector.
-1. Add the connector using the steps in relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
+1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
 ## Next steps
 
