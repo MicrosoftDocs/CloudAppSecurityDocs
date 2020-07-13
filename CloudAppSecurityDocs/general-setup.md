@@ -37,7 +37,7 @@ For portal access, it's necessary to add the following IP addresses to your Fire
 
 * 104.42.231.28
 
-For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall’s allow list to provide access for the Cloud App Security GCC High portal:
+For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security GCC High portal:
 
 * 52.227.143.223
 * 13.72.19.4
@@ -55,7 +55,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 1. It's also possible to provide a **Logo** that is displayed in email notifications and web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.
 
-1. Make sure you add a list of your **Managed domains**. Adding managed domains is a crucial step. Cloud App Security uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.
+1. Make sure you add a list of your **Managed domains** to identify internal users. Adding managed domains is a crucial step. Cloud App Security uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.
 
     * Users in domains that aren't configured as internal are marked as external. External users aren't scanned for activities or files.
 
