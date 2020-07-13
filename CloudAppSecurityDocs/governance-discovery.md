@@ -39,7 +39,7 @@ You can unsanction a specific risky app by clicking the three dots at the end of
 
 If you have a list of apps you want to sanction or unsanction, use the checkbox to select the apps you want to manage, then select the action.
 
-To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script).
+To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](api-discovery-script.md).
 
 > [!NOTE]
 > If your tenant uses Microsoft Defender Advanced Threat Protection (ATP), Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrate with Microsoft Defender ATP](wdatp-integration.md), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
