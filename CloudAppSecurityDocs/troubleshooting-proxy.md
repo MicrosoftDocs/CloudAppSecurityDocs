@@ -25,15 +25,18 @@ Before you proceed, make sure your environment meets the following minimum gener
   - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0
   - Third-party IdP using SAML 2.0
 - **Browser support**: Session controls are available for browser-based sessions on these supported browsers: Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest)
+- **Downtime**: Cloud App Security allows you to define the default behavior to apply in the event of a service disruption, such as a component not functioning correctly. You can choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. This default behavior during system downtime can be configured in the Cloud App Security portal, as follows: **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.
 
 ## Issues experienced by admins
 
 This section is for admins configuring access and session controls with Cloud App Security and helps identify common situations that may arise in the following areas:
 
-- [Network conditions](#network-conditions)
-- [Device identification](#device-identification)
-- [Onboarding an app](#onboarding-an-app)
-- [Creating access and session policies](#creating-access-and-session-policies)
+|Section|Issues|
+|---|---|
+|[Network conditions](#network-conditions)|- [Network errors when navigating to a browser page](#network-errors-when-navigating-to-a-browser-page)<br />- [Slow login](#slow-login)<br />- [Additional considerations](#network-conditions-additional-considerations)|
+|[Device identification](#device-identification)|- [Misidentified Intune Compliant or Hybrid Azure AD joined devices](#misidentified-intune-compliant-or-hybrid-azure-ad-joined-devices)<br />- [Client certificates are not prompting when expected](#client-certificates-are-not-prompting-when-expected)<br />- [Client certificates are prompting at every login](#client-certificates-are-prompting-at-every-login)<br />- [Additional considerations](#device-identification-additional-considerations)|
+|[Onboarding an app](#onboarding-an-app)|- [App does not appear on the **Conditional Access App Control apps** page](#app-does-not-appear-on-the-conditional-access-app-control-apps-page)<br />- [App status: Continue Setup](#app-status-continue-setup)<br />- [Cannot configure controls for native apps](#cannot-configure-controls-for-native-apps)<br />- [**App is not recognized** page appears](#something-went-wrong-page-appears)<br />- [**Request session control** option appears](#request-session-control-option-appears)<br />- [Additional considerations](#onboarding-apps-additional-considerations)|
+|[Creating access and session policies](#creating-access-and-session-policies)|- [In Conditional Access policies, you cannot see the **Conditional Access App Control** option](#in-conditional-access-policies-you-cannot-see-the-conditional-access-app-control-option)<br />- [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)<br />- [Cannot create session policies for an app](#cannot-create-session-policies-for-an-app)<br />- [Cannot choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)<br />- [Cannot choose **Action**: **Protect**](#cannot-choose-action-protect)<br />- [Additional considerations](#policies-additional-considerations)|
 
 ### Network conditions
 
@@ -102,7 +105,7 @@ While troubleshooting network conditions, there are some additional things to co
 
     Deriving a performance baseline depends on many factors outside of Cloud App Security's proxy, such as:
 
-    - What other proxies / gateways sit in series with this proxy
+    - What other proxies or gateways sit in series with this proxy
     - Where the user is coming from
     - Where the targeted resource resides
     - Specific requests on the page
@@ -137,7 +140,7 @@ Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD joined 
 
 1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Cloud App Security.
-1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are setup.
+1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are set up.
 
     > [!NOTE]
     > These are automatically synced from Azure AD and Intune respectively.
@@ -163,7 +166,7 @@ The device identification mechanism can request authentication from relevant dev
 1. Create an access or session policy with the **Device Tag** filter equal to **Valid client certificate**.
 1. Make sure that your client certificate is:
     - deployed using the PKCS #12 file format, typically a .p12 or .pfx file extension
-    - installed in the user store, not the the device store, of the machine you are using for testing
+    - installed in the user store, not the device store, of the machine you are using for testing
 1. Restart your browser session
 1. When logging in to the protected app
     - Verify that you are redirected to the URL `<https://*.managed.access-control.cas.ms/aad_login>`
@@ -173,7 +176,7 @@ The device identification mechanism can request authentication from relevant dev
     - If it does not appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
 1. Verify that activities from these devices are populating the log. In Cloud App Security, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Valid client certificate**.
 1. If you still do not see the prompt, open a [support ticket](support-and-ts.md) and include the following information:
-    - The details of the browser or native app where you experienced problem
+    - The details of the browser or native app where you experienced the problem
     - The operating system version (ex. iOS/Android/Windows 10)
     - Mention if the prompt is working on Edge Chromium
 
@@ -262,9 +265,9 @@ Native apps can be detected heuristically and you can use access policies to mon
 1. Optionally, customize the blocking message that your users get when they're unable to download files, for example, "You must use a web browser to access this app".
 1. Test and validate that the control is working as expected.
 
-#### "App is not recognized" page appears
+#### App is not recognized page appears
 
-Cloud App Security can recognize over 16,000 apps through the cloud app catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Azure AD SSO that is NOT one of the 16,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must to configure the app on the Conditional Access App Control.
+Cloud App Security can recognize over 16,000 apps through the cloud app catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Azure AD SSO that is NOT one of the 16,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on the Conditional Access App Control.
 
 **Recommended steps**
 
@@ -275,15 +278,21 @@ Cloud App Security can recognize over 16,000 apps through the cloud app catalog 
     1. Continue through the wizard, make sure that specified **User-defined domains** are correct for the app you are configuring.
 1. Verify the app appears in the **Conditional Access App Control apps** page.
 
-#### "Request session control" option appears
+#### Request session control option appears
 
 After adding an app, you may see the **Request session control** option. This occurs because only featured apps have out-of-the-box session controls. For any other app, you must go through a self-onboarding process.
 
 **Recommended steps**
 
-1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**.
-1. Under **Conditional Access App Control**, select **Admin onboarding/maintenance**.
-1. 
+1. In Cloud App Security, in the menu bar, click the settings cog and select **Settings**.
+1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
+1. Enter the user principal name or email for the users that will be onboarding the app, and then click **Save**.
+1. Go to the app that you are deploying. The page you see depends on whether the app is recognized. Do one of the following:
+
+    | App status | Description | Steps |
+    | --- | --- | --- |
+    | Not recognized | You will see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](proxy-deployment-any-app.md#add-app).<br /> 2. [Add the domains for the app](proxy-deployment-any-app.md#add-domains), and then return to the app and refresh the page.<br /> 3. [Install the certificates for the app](proxy-deployment-any-app.md#install-certs). |
+    | Recognized | You will see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](proxy-deployment-any-app.md#install-certs). <br /><br /> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](proxy-deployment-any-app.md#add-domains), and then return to the app page. |
 
 <a name="onboarding-apps-additional-considerations"></a>
 
@@ -304,7 +313,7 @@ Cloud App Security provides the following configurable policies:
 1. [Access policies](access-policy-aad.md): To monitor or block access to browser, mobile, and/or desktop apps
 1. [Session policies](session-policy-aad.md). To monitor, block, and perform specific actions to prevent data infiltration and exfiltration scenarios in the browser
 
-To use these policies in Cloud App Security, you must first configure a policy in Azure AD Conditional Access to extend session controls, as follows: In the Azure AD policy, Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
+To use these policies in Cloud App Security, you must first configure a policy in Azure AD Conditional Access to extend session controls, as follows: In the Azure AD policy, under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
 
 Common scenarios you may encounter while configuring these policies include:
 
@@ -312,7 +321,7 @@ Common scenarios you may encounter while configuring these policies include:
 - [Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control](#error-message-when-creating-a-policy-you-dont-have-any-apps-deployed-with-conditional-access-app-control)
 - [Cannot create session policies for an app](#cannot-create-session-policies-for-an-app)
 - [Cannot choose **Inspection Method**: **Data Classification Service**](#cannot-choose-inspection-method-data-classification-service)
-[- Cannot choose **Action**: **Protect**](#cannot-choose-action-protect)
+- [Cannot choose **Action**: **Protect**](#cannot-choose-action-protect)
 - [Additional considerations](#policies-additional-considerations)
 
 #### In Conditional Access policies, you cannot see the Conditional Access App Control option
@@ -382,11 +391,11 @@ While troubleshooting onboarding apps, there are some additional things to consi
 
 - **Understanding the difference between the Azure AD Conditional Access policy settings: "Monitor only", "Block downloads", and "Use custom policy"**
 
-In Azure AD Conditional Access policies, you can configure the following built-in Cloud App Security controls: **Monitor only** and **Block downloads**. This applies and enforces the Cloud App Security proxy feature for cloud apps and conditions configured in Azure AD. For more complex policies, select **Use custom policy**, which allows you to configure access and session policies in Cloud App Security.
+    In Azure AD Conditional Access policies, you can configure the following built-in Cloud App Security controls: **Monitor only** and **Block downloads**. This applies and enforces the Cloud App Security proxy feature for cloud apps and conditions configured in Azure AD. For more complex policies, select **Use custom policy**, which allows you to configure access and session policies in Cloud App Security.
 
 - **Understanding the "Mobile and desktop" client app filter option in access policies**
 
-In Cloud App Security access policies, unless the **Client app** filter is specifically set to **Mobile and desktop**, the resulting access policy will only apply to browser sessions. The reason for this, is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter.
+    In Cloud App Security access policies, unless the **Client app** filter is specifically set to **Mobile and desktop**, the resulting access policy will only apply to browser sessions. The reason for this, is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter.
 
 ## Issues experienced by end users
 
@@ -434,7 +443,7 @@ If an end user is receiving a general failure after logging into an app from a t
         ![Screenshot showing gather identity providers SAML information page](media/proxy-deploy-add-idp-ext-conf.png)
 1. If you still can't access the app, open a [support ticket](support-and-ts.md).
 
-### "Something Went Wrong" page appears
+### Something Went Wrong page appears
 
 Sometimes during a proxied session, the **Something Went Wrong** page may appear. This can happen when:
 
@@ -493,10 +502,22 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
 
 <a name="app-additional-considerations"></a>
 
-#### Additional considerations
+### Additional considerations
 
 While troubleshooting apps, there are some additional things to consider.
 
 - **Session controls support for modern browsers**
 
-Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. Whilst we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+    Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. Whilst we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+
+- **Double login**
+
+    A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Cloud App Security assumes an app uses a nonce. If you are confident the app does not use a nonce, you can disable this by editing the app in Cloud App Security and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
+
+    If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
+
+- **Previewing or printing PDF files may be blocked**
+
+    This is normal behavior when you have a policy configured to block downloads. Occasionally when previewing or printing PDF files, apps initiate a download of the file causing Cloud App Security to intervene to ensure the download is blocked and that data is not leaked from your environment.
+
+    If you would like to allow PDF file downloads, you can exclude PDF files based on their file extension in the relevant session policy.
