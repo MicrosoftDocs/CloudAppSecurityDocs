@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -75,8 +75,8 @@ The following table lists, per cloud app, which abilities are supported with App
 | **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
 | **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
-| **DLP - Periodic scan** | | ✔ | Coming soon | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
-| **DLP - Near real-time scan** | | ✔ | ✔ | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | | | ✔ | Not supported by provider |
+| **DLP - Periodic scan** | | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
+| **DLP - Near real-time scan** | | ✔ | | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | | | ✔ | Not supported by provider |
 | **Sharing control** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by provider |
 | **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
 | **View app permissions** | Not applicable | Not supported by provider | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
@@ -117,12 +117,22 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 
 ## Disable app connectors
 
+> [!NOTE]
+> Before disabling an app connector, make sure you have the connection details available as you will need them if you want to re-enable the connector.
+
 To disable connected apps:
 
 1. In the **Connected apps** page, in the relevant row, click the three dots and select **Disable App connector**.
 1. In the pop-up, click **Disable App connector instance** to confirm the action.
 
 Once disabled, the connector instance will stop consuming data from the connector.
+
+## Re-enable app connectors
+
+To re-enable connected apps:
+
+1. In the **Connected apps** page, in the relevant row, click the three dots and select **Edit app**. This starts the process to add a connector.
+1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
 ## Next steps
 
