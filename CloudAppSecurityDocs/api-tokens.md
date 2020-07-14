@@ -37,7 +37,7 @@ The Microsoft Cloud App Security API provides programmatic access to Cloud App S
 - List activities, alerts, and policy reports
 - Dismiss or resolve alerts
 
-To see the full documentation of the API, in the Cloud App Security portal go to Help > **API documentation**.
+For more information about using our API, see [Cloud App Security REST API](api-introduction.md).
 
 In order to access the API, you have to create an API token and use it in your software to connect to the Cloud App Security API.
 
@@ -80,6 +80,9 @@ After a token is revoked, it's removed from the table, and the software that was
 > - Deprovisioned users API tokens are retained in Cloud App Security but cannot be used. Any attempt to use them will result in a permission denied response. However, we recommend that such tokens are revoked on the **API tokens** page.
 
 ## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud App Security REST API](api-introduction.md)
 
 > [!div class="nextstepaction"]
 > [Troubleshooting SIEM integration issues](troubleshooting-siem.md)
