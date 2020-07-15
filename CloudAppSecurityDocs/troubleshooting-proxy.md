@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshooting proxy issues
-description: This article provides a list of common access and session control errors and corresponding resolution recommendations.
+title: Troubleshooting access and session control issues
+description: This article provides admins with guidance on how to investigate and resolve common access and session control issues.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/02/2020
+ms.date: 07/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Troubleshooting access and session controls
 
-This article provides a list of common access and session control issues as experienced by [admins](#issues-experienced-by-admins) and [end users](#issues-experienced-by-end-users). Admins can use the recommendations in this guide to investigate and resolve issues.
+This article provides admins with guidance on how to investigate and resolve common access and session control issues as experienced by [admins](#issues-experienced-by-admins) and [end users](#issues-experienced-by-end-users).
 
 Before you proceed, make sure your environment meets the following minimum general requirements for access and session controls.
 
@@ -357,7 +357,7 @@ After adding a custom app, in the **Conditional Access App Control apps** page, 
 1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 1. Create a session policy, select the **App** filter, make sure that your app is now listed in the dropdown list.
 
-##### Cannot choose **Inspection Method**: **Data Classification Service**
+#### Cannot choose **Inspection Method**: **Data Classification Service**
 
 In session policies, when using the **Control file download (with inspection)** session control type, you can use the **Data Classification Service** inspection method to scan your files in real time and detect sensitive content that matches any of the criteria you have configured. If the **Data Classification Service** inspection method is not available, use the following steps to investigate the issue.
 
