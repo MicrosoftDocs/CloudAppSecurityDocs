@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshooting access and session control issues
-description: This article provides admins with guidance on how to investigate and resolve common access and session control issues.
+title: Troubleshooting access and session controls
+description: This article provides admins with guidance on how to investigate and resolve common access and session controls.
 keywords:
 author: shsagir
 ms.author: shsagir
