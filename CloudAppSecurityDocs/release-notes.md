@@ -487,7 +487,7 @@ As part of this change, malware detection policies now include a Detection type 
 
 - **Conditional Access updates**  
 Conditional Access App Control added the ability to monitor and block the following activities:
-  - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with AIP prior to upload.
+  - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with Azure Information Protection prior to upload.
   - Copy and paste in any app - rounding out robust controls of data exfiltration that already included controlling download, print, and custom activities such as share.
   - Send message - ensuring that PII data such as passwords is not shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
   - Session Policies now include built-in templates to enable your organization to effortlessly enable popular real-time monitoring and control over your sanctioned apps, such as **Block upload based on real-time content inspection**.
