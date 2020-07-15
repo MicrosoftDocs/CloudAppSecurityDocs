@@ -78,7 +78,7 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 
 1. Under **Assignments**, click **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then click **Done**.
 
-1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policies (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
+1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
 
     ![Azure AD conditional access](media/azure-ad-caac-policy.png)
 
@@ -181,11 +181,11 @@ Go to the app that you are deploying. The page you see depends on whether the ap
 
 1. In the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
-1. Click **View new apps**.
+1. In the banner, click **View new apps**.
 
     ![Conditional access app control view new apps](media/caac-view-apps.png)
 
-1. In the screen that opens, you can see a list of new apps. For each app you are onboarding, click on the **+** sign, and then click **Add**.
+1. In the list of new apps, for each app that you are onboarding, click on the **+** sign, and then click **Add**.
 
     > [!NOTE]
     > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
