@@ -125,7 +125,9 @@ The detection looks for users whose account was terminated in Azure AD, but stil
 > [!NOTE]
 > Cloud App Security integrates with Office Advanced Threat Protection (Office ATP) to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Office ATP is enabled, you'll start seeing alerts in the Cloud App Security activity log.
 
-<!-- // MATP? Delay tile start appearing? -->
+### Suspicious OAuth app file download activities
+
+* Scans the OAuth apps connected to your environment and triggers an alert when an app downloads multiple files from Microsoft SharePoint or Microsoft OneDrive in a manner that is unusual for the user. This may indicate that the user account is compromised.
 
 ### Unusual activities (by user)
 

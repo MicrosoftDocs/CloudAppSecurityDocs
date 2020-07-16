@@ -66,6 +66,7 @@ This method doesn't require you to install anything on the device making it idea
 >
 > - Our technology uses best-in-class patented heuristics to identify and control activities performed by the user in the target app. Our heuristics are designed to optimize and balance security with usability. In some rare scenarios, when blocking activities on the server-side renders the app unusable, we secure these activities only on the client-side, which makes them potentially susceptible to exploitation by malicious insiders.
 > - Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+> - Our proxy servers do not store data at rest. When caching content, we follow the requirements laid out in RFC 7234 (HTTP caching) and only cache public content.
 
 ## Managed device identification
 
