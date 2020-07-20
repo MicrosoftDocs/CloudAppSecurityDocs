@@ -46,6 +46,7 @@ To see which data center you're connecting to, do the following steps:
 
 For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
+```ini
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
     cdn.cloudappsecurity.com
@@ -58,12 +59,15 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
     static2.sharepointonline.com
     dc.services.visualstudio.com
     *.blob.core.windows.net
+```
 
 For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allow list to provide access for the Cloud App Security GCC High portal:
 
+```ini
     portal.cloudappsecurity.us
     *.portal.cloudappsecurity.us
     cdn.cloudappsecurity.com
+```
 
 Additionally, the following items should be whitelisted, depending on which data center you use:
 
@@ -87,10 +91,12 @@ Configure your firewall for reverse proxy using the settings relevant to your en
 
 For commercial customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
+```ini
     *.cas.ms
     *.mcas.ms
     *.admin-mcas.ms
     mcasproxy.azureedge.net
+```
 
 Additionally, the following items should be whitelisted, depending on which data center you use:
 
@@ -106,9 +112,11 @@ Additionally, the following items should be whitelisted, depending on which data
 
 For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allow list:
 
+```ini
     *.mcas-gov.us
     *.admin-mcas-gov.us
     mcasproxy.azureedge.net
+```
 
 ## SIEM agent connection
 
