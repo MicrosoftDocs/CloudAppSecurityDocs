@@ -102,6 +102,9 @@ Cloud App Security searches all the logs in your Cloud Discovery for anomalies. 
 
 ![new discovery anomaly policy](media/new-discovery-anomaly-policy.png "new discovery anomaly policy")
 
+> [!NOTE]
+> Data from **snapshot reports** can not trigger alerts in app discovery policies.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
