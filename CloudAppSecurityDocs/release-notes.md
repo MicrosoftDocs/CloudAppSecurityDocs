@@ -34,6 +34,12 @@ Released July 26, 2020
 - **New anomaly detection: Suspicious OAuth app file download activities**  
 We've extended our anomaly detections to include suspicious download activities by an OAuth app. The new detection is now available out-of-the-box and automatically enabled to alert you when an OAuth app downloads multiple files from Microsoft SharePoint or Microsoft OneDrive in a manner that is unusual for the user.
 
+Performance improvements via proxy caching for Session Controls (gradual rollout)
+
+- **Performance improvements using proxy caching for Session Controls (gradual rollout)**  
+We've made additional performance improvements to our session controls, by improving our content caching mechanisms. The improved service is even more streamlined and provides increased responsiveness when using session controls. Note that session controls do not cache private content, aligning with the appropriate standards to only cache shared (public) content. For more information, see
+[How session control works](proxy-intro-aad.md#how-session-control-works).
+
 ## Cloud App Security release 178
 
 Released June 28, 2020
