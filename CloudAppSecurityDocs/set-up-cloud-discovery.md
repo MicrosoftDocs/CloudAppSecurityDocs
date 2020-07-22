@@ -124,8 +124,8 @@ Data attributes (according to vendor documentation):
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |
-| Squid (Common) | **Yes** | No | **Yes** | **Yes** | No | **Yes** |
-| Squid (Native) | **Yes** | No | **Yes** | **Yes** | No | **Yes** |
+| Squid (Common) | **Yes** | No | **Yes** | **Yes** | **Yes** | No |
+| Squid (Native) | **Yes** | No | **Yes** | **Yes** | No | No |
 | Stormshield | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
