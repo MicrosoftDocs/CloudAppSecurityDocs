@@ -47,7 +47,7 @@ This strong level of protection travels with the file. The file is still protect
 
 ## The threat
 
-A user in your organization saves confidential customer information files to Box and sets it to be shared with everyone in the organization. The user doesn't realize that not only their immediate team, but the entire support staff has access to that Box account. This access includes vendors, partners, and visitors who occasionally stop into the office. Any person with access to your organization's Box account now has access to that information. Not only can that access be dangerous for your organization, it can be against personal information regulations in many countries, causing potential legal issues.
+A user in your organization saves confidential customer information files to Box and sets it to be shared with everyone in the organization. The user doesn't realize that not only their immediate team, but the entire support staff has access to that Box account. This access includes vendors, partners, and visitors who occasionally stop into the office. Any person with access to your organization's Box account now has access to that information. Not only can that access be dangerous for your organization, it can be against personal information regulations in many countries/regions, causing potential legal issues.
 
 ## The solution
 

@@ -38,8 +38,8 @@ Follow the service attributes described below to successfully complete the submi
 | App name | General | String | Free text | The name for your application as it should appear in the Cloud App Catalog. |
 | Description | General | String | Free text | Short explanation of what your application enables users to do or achieve. |
 | Category| General | String | Close list - provided in questionnaire | Classification of the app according to the field to which it relates. |
-| Headquarters | General | Country code | Close list - provided in questionnaire | The country of the provider's headquarters.|
-| Data center| General | Country code array* | Close list - provided in questionnaire (Multi selection) | The country in which your data center resides (can be multiple locations) |
+| Headquarters | General | Country code | Close list - provided in questionnaire | The country/region of the provider's headquarters.|
+| Data center| General | Country code array* | Close list - provided in questionnaire (Multi selection) | The country/region in which your data center resides (can be multiple locations) |
 | Hosting company | General | String | Free text | The name of the company that provides server hosting for the app. |
 | Founded | General | Integer | YYYY (no later than 2019) | The year in which the provider was founded. |
 | Holding | General | String | Private, Public | Displays whether the provider is a publicly or privately held company |
@@ -113,7 +113,7 @@ Follow the service attributes described below to successfully complete the submi
 | GDPR - Right to object | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to object to the processing of their personal data in certain circumstances? |
 | GDPR - Right to access | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to know, upon request, what personal data a company is using and how it is being used? |
 | GDPR - Right to data Portablility | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to obtain and reuse their personal data for their own purposes across different services upon request? |
-| GDPR - Right to be informed | Legal | Boolean | True, False, N/A | Does this app inform individuals of the appropriate safeguards it takes when personal data is transferred to a non-EU country or to an international organization? |
+| GDPR - Right to be informed | Legal | Boolean | True, False, N/A | Does this app inform individuals of the appropriate safeguards it takes when personal data is transferred to a non-EU country/region or to an international organization? |
 | GDPR - Right to restriction of processing | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to block or suppress processing of personal data? |
 | GDPR - Rights related to automated decision making | Legal | Boolean | True, False, N/A | Does this app provide individuals with the ability to choose not to be subject to a decision that is based solely on automated processing? This includes profiling, which may have legal ramifications. |
 | GDPR - lawful basis for processing | Legal | Boolean | True, False, N/A | Does this app process personal data lawfully in accordance with consent, contract, legal obligation, vital interests, legitimate interests, special category, data, and criminal offense data? |
