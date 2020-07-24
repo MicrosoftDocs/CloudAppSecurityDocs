@@ -79,7 +79,7 @@ Personal data about users is derived from the user's object in the SaaS applicat
 
 ## Data location
 
-Microsoft Cloud App Security currently operates in datacenters in the United States and Europe (each a “Geo”). Your tenant account will be created in a Geo based on the country you chose when you signed up. Specifically, your data will be stored in a data center in the Geo nearest to that location.
+Microsoft Cloud App Security currently operates in datacenters in the United States and Europe (each a “Geo”). Your tenant account will be created in a Geo based on the country/region you chose when you signed up. Specifically, your data will be stored in a data center in the Geo nearest to that location.
 
 > [!NOTE]
 > Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user’s session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
