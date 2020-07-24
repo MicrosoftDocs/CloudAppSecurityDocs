@@ -456,7 +456,7 @@ Cloud App Security Cloud Discovery now includes a built-in log parser to support
 Released March 31, 2019
 
 - **Impossible travel enhancement**  
-Impossible travel detection was enhanced with dedicated support for neighboring countries.
+Impossible travel detection was enhanced with dedicated support for neighboring countries/regions.
 - **Additional attribute support for the generic CEF parser**  
 The Cloud Discovery log parser support for generic CEF format was enhanced to support additional attributes.
 - **Scoped access to Cloud Discovery reports**  
@@ -778,7 +778,7 @@ Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyon
 
 - **Scoped deployments** (gradual rollout)  
 Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. The scoped monitoring capability is especially useful for:
-  - Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
+  - Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries/regions due to local regulations.
   - Licensing – If you want to monitor fewer users to stay within the limits of your Microsoft Cloud App Security licenses.
   For more information, see [Scoped deployment](scoped-deployment.md).
 

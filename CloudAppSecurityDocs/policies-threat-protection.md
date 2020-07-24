@@ -278,7 +278,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
+1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country/region. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
 2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
