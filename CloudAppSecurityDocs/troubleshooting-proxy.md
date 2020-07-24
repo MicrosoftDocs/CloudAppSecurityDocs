@@ -406,6 +406,7 @@ This section is for end users using apps protected by Cloud App Security and hel
 - [**Something Went Wrong** page appears](#something-went-wrong-page-appears)
 - [Clipboard actions or file controls are not being blocked](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Downloads are not being protected](#downloads-are-not-being-protected)
+- [Navigating to a particular URL of a suffixed application and landing on a generic page](#navigating-to-a-paticular-URL-of-a-suffixed-application-and-landing-on-a-generic-page)
 - [Additional considerations](#app-additional-considerations)
 
 ### User monitoring page is not appearing
@@ -499,6 +500,20 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
         - PDF* if Unified Labeling is enabled
     - If the file type is not supported, in the session policy, you can select **Block download of any file that in unsupported by native protection or where native protection is unsuccessful**.
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
+
+
+### Navigating to a particular URL of a suffixed application and landing on a generic page
+All suffix proxies are susceptible to context loss, an issue where navigating to a link loses the full path of the link, and typically lands the user on the home page of the application. 
+
+As Microsoft, we are positioned uniquely to address this product limitation and solve context loss, and have partnered with Microsoft and non-Microsoft vendors to do so. Apps on our featured apps page marked with a (preview) flag may suffer from context loss. If you are experiencing context loss in a non-featured app, please submit a support ticket. We are working with each service individually to fix these core issues. 
+
+As a temporary mitigation, the following is a workaround for context loss 
+
+1. Navigate to a URL where context loss occurs
+2. Note the suffix added by Cloud App Security (e.g., .us2.cas.ms) 
+3. Copy the original URL path into the browser (e.g. https://www.yammer.com /organization/threads/threadnumber) 
+4. Append the suffix to the original URL path (e.g., https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber)
+5. Navigate to the new suffixed URL
 
 <a name="app-additional-considerations"></a>
 
