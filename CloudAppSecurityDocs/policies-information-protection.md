@@ -129,9 +129,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 2. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
-3. Set the filter **Location** does not equal, and then enter the countries from which your organization expects activity.
+3. Set the filter **Location** does not equal, and then enter the countries/regions from which your organization expects activity.
 
-    1. Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries.
+    1. Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries/regions.
 
 4. Optional: Create **Governance** actions to be applied to detected violation (availability varies between services), such as  **Suspend user**.
 
