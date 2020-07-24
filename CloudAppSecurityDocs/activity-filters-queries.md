@@ -87,7 +87,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Instance - The app instance where the activity was or wasn't performed.
 
-- Location – The /region from which the activity was performed.
+- Location – The country/region from which the activity was performed.
 
 - Matched policy – Search for activities that matched on a specific policy that was set in the portal.
 
