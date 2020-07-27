@@ -33,7 +33,7 @@ GET /api/v1/entities/<pk>/
 
 | Parameter | Description |
 | --- | --- |
-| pk | The ID of the entity |
+| pk | A dictionary with the entity ID, SaaS, and instance details encoded as a base64 string. For example: `{"id":"3fa9f28b-eb0e-463a-ba7b-8089fe9991e2","saas":11161,"inst":0}` encoded as a base64 string. |
 
 ## Example
 
