@@ -72,10 +72,12 @@ Create a dedicated project in GCP under your organization to enable integration 
 
     ![Screenshot showing GCP create project dialog](media/connect-gcp-create-project.png)
 
-#### Enable the Pub/Sub API
+#### Enable required APIs
 
 1. Switch to the dedicated project.
-1. Go to the Pub/Sub tab. A service activation message should appear.
+1. Go to the **Library** tab.
+1. Search for "Cloud Logging API" and then in the API page, click **ENABLE**.
+1. Search for "Cloud Pub/Sub API", select the Lite version of the Pub/Sub API, and then in the API page, click **ENABLE**.
 
 #### Create a dedicated service account for the security auditing integration
 
@@ -86,7 +88,7 @@ Create a dedicated project in GCP under your organization to enable integration 
 
     ![Screenshot showing GCP add IAM role](media/connect-gcp-iam-role.PNG)
 
-1. Copy the **Email** value, you'll need this later.
+1. Copy the **Email** value, you'll need this later.p[]
 
     ![Screenshot showing GCP service account dialog](media/connect-gcp-create-service-account.png)
 
