@@ -6,7 +6,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/27/2020
+ms.date: 03/27/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -33,7 +33,7 @@ GET /api/v1/entities/<pk>/
 
 | Parameter | Description |
 | --- | --- |
-| pk | A dictionary with the entity ID, SaaS, and instance details encoded as a base64 string. For example: `{"id":"3fa9f28b-eb0e-463a-ba7b-8089fe9991e2","saas":11161,"inst":0}` encoded as a base64 string. |
+| pk | The ID of the entity |
 
 ## Example
 
