@@ -195,4 +195,7 @@ If you're interested in a specific app being featured, [send us details about th
 > [!div class="nextstepaction"]
 > [Deploy Conditional Access App Control for any app](proxy-deployment-any-app.md)
 
+> [!div class="nextstepaction"]
+> [Troubleshooting access and session controls](troubleshooting-proxy.md)
+
 [!INCLUDE [Open support ticket](includes/support.md)]
