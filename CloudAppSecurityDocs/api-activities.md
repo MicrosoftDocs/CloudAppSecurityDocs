@@ -34,7 +34,7 @@ The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
-| service | integer | eq | neq Filter activities related to the specified service appID, for example: 11770 |
+| service | integer | eq, neq | Filter activities related to the specified service appID, for example: 11770 |
 | instance | integer | eq, neq | Filter activities from specified instances |
 | user.orgUnit | string | eq, neq, isset, isnotset | Filter activities by the organization unit of the performing user |
 | activity.eventType | string | eq, neq | Filter activities by event type |
