@@ -76,8 +76,11 @@ Create a dedicated project in GCP under your organization to enable integration 
 
 1. Switch to the dedicated project.
 1. Go to the **Library** tab.
-1. Search for "Cloud Logging API" and then in the API page, click **ENABLE**.
-1. Search for "Cloud Pub/Sub API", select the Lite version of the Pub/Sub API, and then in the API page, click **ENABLE**.
+1. Search for and select **Cloud Logging API**, and then on the API page, click **ENABLE**.
+1. Search for and select **Cloud Pub/Sub API**, and then on the API page, click **ENABLE**.
+
+    > [!NOTE]
+    > Make sure that you do not select **Pub/Sub Lite API**.
 
 #### Create a dedicated service account for the security auditing integration
 
