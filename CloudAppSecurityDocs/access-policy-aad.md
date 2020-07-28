@@ -84,4 +84,7 @@ To create a new access policy, follow this procedure:
 > [!div class="nextstepaction"]
 > [Blocking downloads on unmanaged devices using session controls](use-case-proxy-block-session-aad.md)
 
+> [!div class="nextstepaction"]
+> [Troubleshooting access and session controls](troubleshooting-proxy.md)
+
 [!INCLUDE [Open support ticket](includes/support.md)]

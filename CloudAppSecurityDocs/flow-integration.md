@@ -47,7 +47,7 @@ The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudap
 
 1. [Create an API token](api-tokens.md) in Cloud App Security.
 
-2. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New**, and from the dropdown, select **Automated - from blank**.
+2. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New**, and from the drop-down, select **Automated - from blank**.
 
     ![Power Automate create new flow](media/flow-create-new.png)
 
@@ -62,7 +62,7 @@ The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudap
     ![Power Automate workflow](media/flow-workflow.png)
 
 6. In the Cloud App Security portal, go to **Policies** and in the row of the policy whose alerts you want to forward to Power Automate, click the three dots and select **Settings**.
-7. Under **Alerts**, select **Send Alerts to Power Automate** and choose the name of the playbook from the dropdown menu.
+7. Under **Alerts**, select **Send Alerts to Power Automate** and choose the name of the playbook from the drop-down menu.
 
     ![Enable Power Automate in Cloud App Security portal](media/flow-mcas-config.png)
 

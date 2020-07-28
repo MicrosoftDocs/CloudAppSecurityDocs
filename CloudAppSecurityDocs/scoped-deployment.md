@@ -28,7 +28,7 @@ Microsoft Cloud App Security enables you to scope your deployment. Scoping allow
 
 ## Include or exclude user groups
 
-You may not want to use Microsoft Cloud App Security for all the users in your organization. Scoping is especially useful when you want to limit your deployment because of license restrictions. You may also need to limit because of compliance regulations requiring you not monitor users from certain countries. For example, use scoped deployment to only monitor US-based employees. Alternatively, you can avoid showing any activities for your users based in Germany.
+You may not want to use Microsoft Cloud App Security for all the users in your organization. Scoping is especially useful when you want to limit your deployment because of license restrictions. You may also need to limit because of compliance regulations requiring you not monitor users from certain countries/regions. For example, use scoped deployment to only monitor US-based employees. Alternatively, you can avoid showing any activities for your users based in Germany.
 
 - To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Cloud App Security. By default, you'll see the following groups:
 

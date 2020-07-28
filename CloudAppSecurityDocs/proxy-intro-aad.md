@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -66,6 +66,7 @@ This method doesn't require you to install anything on the device making it idea
 >
 > - Our technology uses best-in-class patented heuristics to identify and control activities performed by the user in the target app. Our heuristics are designed to optimize and balance security with usability. In some rare scenarios, when blocking activities on the server-side renders the app unusable, we secure these activities only on the client-side, which makes them potentially susceptible to exploitation by malicious insiders.
 > - Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+> - Our proxy servers do not store data at rest. When caching content, we follow the requirements laid out in RFC 7234 (HTTP caching) and only cache public content.
 
 ## Managed device identification
 
@@ -105,6 +106,13 @@ To configure a policy to leverage device management via client certificates:
 
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.
+
+    > [!TIP]
+    > To test how this works, you can use our sample root CA and client certificate, as follows:
+    >
+    > 1. Download the sample [root CA](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) and [client certificate](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx).
+    > 1. Upload the root CA to Cloud App Security.
+    > 1. Install the client certificate (password=Microsoft) onto the relevant devices.
 
 After the certificates are uploaded, you can create access and session policies based on **Device tag** and **Valid client certificate**.
 
@@ -186,5 +194,8 @@ If you're interested in a specific app being featured, [send us details about th
 
 > [!div class="nextstepaction"]
 > [Deploy Conditional Access App Control for any app](proxy-deployment-any-app.md)
+
+> [!div class="nextstepaction"]
+> [Troubleshooting access and session controls](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

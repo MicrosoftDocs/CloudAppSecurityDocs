@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/20/2020
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -26,6 +26,28 @@ ms.custom: seodec18
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## Cloud App Security release 179 and 180
+
+Released July 26, 2020
+
+- **New anomaly detection: Suspicious OAuth app file download activities**  
+We've extended our anomaly detections to include suspicious download activities by an OAuth app. The new detection is now available out-of-the-box and automatically enabled to alert you when an OAuth app downloads multiple files from Microsoft SharePoint or Microsoft OneDrive in a manner that is unusual for the user.
+
+- **Performance improvements using proxy caching for Session Controls (gradual rollout)**  
+We've made additional performance improvements to our session controls, by improving our content caching mechanisms. The improved service is even more streamlined and provides increased responsiveness when using session controls. Note that session controls do not cache private content, aligning with the appropriate standards to only cache shared (public) content. For more information, see [How session control works](proxy-intro-aad.md#how-session-control-works).
+
+- **New feature: Save security configuration queries**  
+We've added the ability to save queries for our security configuration dashboard filters for Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). This can help make future investigations even simpler by reusing common queries. Learn more about [Security configuration recommendations](security-config.md).
+
+- **Enhanced anomaly detection alerts**  
+We've extended the information we provide for anomaly detection alerts to include a mapping to the corresponding MITRE ATT\&CK tactic. This mapping will help you understand the phase and impact of the attack and assist with your investigations. Learn more about [How to investigate anomaly detection alerts](investigate-anomaly-alerts.md).
+
+- **Enhanced detection logic: Ransomware activity**  
+We've updated the detection logic for Ransomware activity to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Ransomware activity](anomaly-detection-policy.md#ransomware-activity).
+
+- **Identity Security Posture reports: Tags visibility**  
+We've added entity tags to Identity Security Posture reports providing additional insights about entities. For example, the **Sensitive** tag can help you identify risky users and prioritize your investigations. Learn more about [Investigating risky users](tutorial-ueba.md).
 
 ## Cloud App Security release 178
 
@@ -51,19 +73,6 @@ Cloud App Security provides the ability to identify risky machines as part of yo
 
 - **New feature: Self-service disable app connector (gradual rollout)**  
 We've added the ability to disable app connectors directly in Cloud App Security. For more information, see [Disable app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
-
-<!--
-- **Enhanced detection logic: Ransomware activity (gradual rollout)**  
-We've updated the detection logic for Ransomware activity to provide improved accuracy and reduced alert volume. For more information about this anomaly detection policy, see [Ransomware activity](anomaly-detection-policy.md#ransomware-activity).
-
-- **New OAuth app policy templates**  
-Cloud App Security now provides the following new OAuth app policy templates enabling you to detect potentially malicious apps:
-
-  - **OAuth apps authorized by external users**: Alert when an app was authorized by an external user.
-  - **OAuth apps with high permissions and rare community use – Google**: Alert for apps with high permissions and rare community use in Google.
-  - **OAuth apps with high permissions and rare community use – Office**: Alert for apps with high permissions and rare community use in Office
-  - **OAuth apps with rare community use - Salesforce**: Alert for apps with rare community use in Salesforce.
--->
 
 ## Cloud App Security release 177
 
@@ -107,7 +116,7 @@ We've made significant network performance improvements to our proxy service. Th
 We've expanded our current capability to detect risky behavior. The new detection is now available out-of-the-box and automatically enabled to alert you when an unusual failed login attempt is identified. Unusual failed login attempts may be an indication of a potential *password-spray* brute force attack (also known as the *low and slow* method). This detection impacts the overall [investigation priority score](tutorial-ueba.md) of the user.
 
 - **Enhanced table experience**  
-We've added the ability to resize table column widths, so that you can widen or narrow columns to customize and improve the way you view tables. You also have the option to restore the original layout by selecting the table settings menu and choosing **Default width**.
+We've added the ability to resize table column widths so that you can widen or narrow columns to customize and improve the way you view tables. You also have the option to restore the original layout by selecting the table settings menu and choosing **Default width**.
 
 ## Cloud App Security release 175
 
@@ -456,7 +465,7 @@ Cloud App Security Cloud Discovery now includes a built-in log parser to support
 Released March 31, 2019
 
 - **Impossible travel enhancement**  
-Impossible travel detection was enhanced with dedicated support for neighboring countries.
+Impossible travel detection was enhanced with dedicated support for neighboring countries/regions.
 - **Additional attribute support for the generic CEF parser**  
 The Cloud Discovery log parser support for generic CEF format was enhanced to support additional attributes.
 - **Scoped access to Cloud Discovery reports**  
@@ -487,7 +496,7 @@ As part of this change, malware detection policies now include a Detection type 
 
 - **Conditional Access updates**  
 Conditional Access App Control added the ability to monitor and block the following activities:
-  - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with AIP prior to upload.
+  - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with Azure Information Protection prior to upload.
   - Copy and paste in any app - rounding out robust controls of data exfiltration that already included controlling download, print, and custom activities such as share.
   - Send message - ensuring that PII data such as passwords is not shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
   - Session Policies now include built-in templates to enable your organization to effortlessly enable popular real-time monitoring and control over your sanctioned apps, such as **Block upload based on real-time content inspection**.
@@ -778,7 +787,7 @@ Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyon
 
 - **Scoped deployments** (gradual rollout)  
 Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. The scoped monitoring capability is especially useful for:
-  - Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations.
+  - Compliance – If your compliance regulations necessitate that you refrain from monitoring users from certain countries/regions due to local regulations.
   - Licensing – If you want to monitor fewer users to stay within the limits of your Microsoft Cloud App Security licenses.
   For more information, see [Scoped deployment](scoped-deployment.md).
 

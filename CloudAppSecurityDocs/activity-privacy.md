@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Scope your Microsoft Cloud App Security deployment
-description: This article provides information about how to scope your Cloud App Security deployment, including and excluding specific users or groups.
+title: Activity privacy
+description: This article provides information about how to configure your activity monitoring to comply with your user privacy policy.
 keywords:
 author: shsagir
 ms.author: shsagir

@@ -46,6 +46,7 @@ To see which data center you're connecting to, do the following steps:
 
 For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
+```ini
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
     cdn.cloudappsecurity.com
@@ -58,12 +59,15 @@ For access to the Cloud App Security portal, add **outbound port 443** for the f
     static2.sharepointonline.com
     dc.services.visualstudio.com
     *.blob.core.windows.net
+```
 
 For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allow list to provide access for the Cloud App Security GCC High portal:
 
+```ini
     portal.cloudappsecurity.us
     *.portal.cloudappsecurity.us
     cdn.cloudappsecurity.com
+```
 
 Additionally, the following items should be whitelisted, depending on which data center you use:
 
@@ -87,10 +91,12 @@ Configure your firewall for reverse proxy using the settings relevant to your en
 
 For commercial customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
+```ini
     *.cas.ms
     *.mcas.ms
     *.admin-mcas.ms
     mcasproxy.azureedge.net
+```
 
 Additionally, the following items should be whitelisted, depending on which data center you use:
 
@@ -106,9 +112,11 @@ Additionally, the following items should be whitelisted, depending on which data
 
 For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allow list:
 
+```ini
     *.mcas-gov.us
     *.admin-mcas-gov.us
     mcasproxy.azureedge.net
+```
 
 ## SIEM agent connection
 
@@ -204,9 +212,9 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
 > [!NOTE]
 >
-> - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=41653) on port 443.
->- Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
->- If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> - If your firewall requires a static IP address access list and does not support whitelisting based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
+> - Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
+> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## Next steps
 

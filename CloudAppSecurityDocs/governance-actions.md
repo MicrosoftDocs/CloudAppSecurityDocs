@@ -79,7 +79,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](media/policy_create-alerts.png "policy_create alerts")
+   ![policy_create alerts](media/policy_create-alerts.png)
 
 ## Activity governance actions
 
@@ -101,7 +101,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
 
-  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png "activity policy ref6")
+  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png)
 
 ## Governance conflicts
 
