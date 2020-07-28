@@ -268,4 +268,7 @@ Once you are ready to enable the app for use in your organization's production e
 > [!div class="nextstepaction"]
 > [Introduction to Conditional Access App Control](proxy-intro-aad.md)
 
+> [!div class="nextstepaction"]
+> [Troubleshooting access and session controls](troubleshooting-proxy.md)
+
 [!INCLUDE [Open support ticket](includes/support.md)]

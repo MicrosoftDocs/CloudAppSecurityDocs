@@ -177,6 +177,9 @@ For example, if a user uploads a file without an Azure Information Protection la
 >[!div class="nextstepaction"]
 > [NEXT: How to create an access policy »](access-policy-aad.md)
 
+> [!div class="nextstepaction"]
+> [Troubleshooting access and session controls](troubleshooting-proxy.md)
+
 ## See also
 
 > [!div class="nextstepaction"]
