@@ -64,7 +64,9 @@ Discovery policies enable you to set alerts that notify you when new apps are de
 9. Click **Create**.
 
 > [!NOTE]
-> Newly created discovery policies (or policies with updated continuous reports) trigger an alert once in 90 days per app per continuous report, regardless of whether there are existing alerts for the same app. So, for example, if you create a policy for discovering new popular apps, it may trigger additional alerts for apps that have already been discovered and alerted on.
+>
+> - Newly created discovery policies (or policies with updated continuous reports) trigger an alert once in 90 days per app per continuous report, regardless of whether there are existing alerts for the same app. So, for example, if you create a policy for discovering new popular apps, it may trigger additional alerts for apps that have already been discovered and alerted on.
+> - Data from **snapshot reports** do not trigger alerts in app discovery policies.
 
 For example, if you're interested in discovering risky hosting apps found in your cloud environment, set your policy as follows:
 
