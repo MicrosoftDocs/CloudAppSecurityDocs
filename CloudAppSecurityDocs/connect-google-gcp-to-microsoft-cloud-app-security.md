@@ -91,7 +91,7 @@ Create a dedicated project in GCP under your organization to enable integration 
 
     ![Screenshot showing GCP add IAM role](media/connect-gcp-iam-role.PNG)
 
-1. Copy the **Email** value, you'll need this later.p[]
+1. Copy the **Email** value, you'll need this later.
 
     ![Screenshot showing GCP service account dialog](media/connect-gcp-create-service-account.png)
 
