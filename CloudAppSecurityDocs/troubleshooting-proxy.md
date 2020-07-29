@@ -406,6 +406,7 @@ This section is for end users using apps protected by Cloud App Security and hel
 - [**Something Went Wrong** page appears](#something-went-wrong-page-appears)
 - [Clipboard actions or file controls are not being blocked](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Downloads are not being protected](#downloads-are-not-being-protected)
+- [Navigating to a particular URL of a suffixed app and landing on a generic page](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
 - [Additional considerations](#app-additional-considerations)
 
 ### User monitoring page is not appearing
@@ -499,6 +500,20 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
         - PDF* if Unified Labeling is enabled
     - If the file type is not supported, in the session policy, you can select **Block download of any file that in unsupported by native protection or where native protection is unsuccessful**.
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
+
+### Navigating to a particular URL of a suffixed app and landing on a generic page
+
+All proxies that suffix URLs are susceptible to context loss, an issue where navigating to a link loses the full path of the link and typically lands on the home page of the app. Cloud App Security is uniquely positioned to address this limitation and solve context loss by partnering with Microsoft and non-Microsoft vendors.
+
+Apps on our featured apps page marked as **(preview)** may suffer from context loss. For non-featured apps experiencing context loss, please submit a support ticket. We are working with each app provider individually to fix these core issues.
+
+As a temporary mitigation, you can workaround context loss issues, as follows:
+
+1. Navigate to a URL where context loss occurs.
+1. Make a note of the suffixed URL domain including the suffix added by Cloud App Security, for example `https://www.yammer.com.us2.cas.ms`.
+1. Copy the path from the original URL, for example if the original particular URL was `https://www.yammer.com/organization/threads/threadnumber`, copy `/organization/threads/threadnumber`.
+1. Append the copied path to the suffixed domain, for example `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber`.
+1. Navigate to the new suffixed URL.
 
 <a name="app-additional-considerations"></a>
 
