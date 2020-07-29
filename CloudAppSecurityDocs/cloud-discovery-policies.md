@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Cloud Discovery policies
+# Create Cloud Discovery policies
 
 *Applies to: Microsoft Cloud App Security*
 
