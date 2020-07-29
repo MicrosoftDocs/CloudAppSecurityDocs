@@ -65,7 +65,6 @@ The following table describes the supported filters:
 | entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | user.username | string | eq, neq, isset, isnotset, startswith | Filter activities by the user who performed the activity |
 | user.tags | string | eq, neq, isset, isnotset, startswith | Filter activities by tags belonging to the performing user. Requires group IDs |
-| activity.azureSubscriptions | string | eq, neq | Filter azure subscriptions activities |
 | user.domain | string | eq, neq, isset, isnotset | Filter activities by the performing user domain |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
