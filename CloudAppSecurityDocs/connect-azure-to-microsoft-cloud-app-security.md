@@ -36,7 +36,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 > [!NOTE]
 >
-> - User must be a Global administrator in Azure AD to connect Azure to Microsoft Cloud App Security.
+> - User must be a Global or Security administrator in Azure AD to connect Azure to Microsoft Cloud App Security.
 > - Cloud App Security displays activities from **all** subscriptions.
 > - Currently, Cloud App Security monitors only ARM activities.
 
