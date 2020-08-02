@@ -36,7 +36,7 @@ This article provides information about how to personalize the email notificatio
 
 ## <a name="mailsettings"></a> Set email notification preferences
 
- Microsoft Cloud App Security enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Cloud App Security email server IP address that you should whitelist in your anti-spam service, see [Network requirements](network-requirements.md).
+ Microsoft Cloud App Security enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Cloud App Security email server IP address that you should allow list in your anti-spam service, see [Network requirements](network-requirements.md).
 
 1. In the menu bar, click the settings cog, select **Settings**, and then select the **Mail settings** tab.
 
