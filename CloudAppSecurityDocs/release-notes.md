@@ -850,7 +850,7 @@ Released March 4, 2018
 
 - The search functionality in the User and IP address pages now enables auto complete to make it easier for you to find what you're looking for.
 
-- You can now perform bulk actions in the Exclude entities and Exclude IP address settings pages. This makes it easier for you to select multiple users and groups or IP addresses and exclude them from being monitored as part of the Cloud Discovery in your organization.
+- You can now perform bulk actions in the Exclude entities and Exclude IP address settings pages. This makes it easier for you to select multiple users or IP addresses and exclude them from being monitored as part of the Cloud Discovery in your organization.
 
 ## Cloud App Security release 117
 
