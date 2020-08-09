@@ -97,7 +97,8 @@ Check the [current status of Microsoft Cloud App Security](https://status.clouda
 
 * Download [the Cloud App Security datasheet](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
 
-## Feedback
+<a name="feedback"></a>
+## How to provide feedback
 
 The Cloud App Security team is always eager to hear your thoughts about our product. Provide feedback using one of the following options:
 
