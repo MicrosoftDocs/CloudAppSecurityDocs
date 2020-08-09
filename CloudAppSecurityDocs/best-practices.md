@@ -271,7 +271,7 @@ When dismissing alerts, it's important to investigate and understand why they ar
 ## Secure IaaS services and custom apps
 
 **Best practice**: Connect Azure, AWS and GCP  
-**Detail**: Connecting each of these cloud storage apps to Cloud App Security helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
+**Detail**: Connecting each of these cloud platforms to Cloud App Security helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
 **For more information**:
 
 * [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
