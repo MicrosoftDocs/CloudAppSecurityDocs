@@ -27,13 +27,13 @@ Microsoft Cloud app security has tools that help uncover shadow IT and assess ri
 
 In a world where data breaches and attacks are daily occurrences, it's essential for organizations to choose a cloud app security broker that makes every effort to protect their data. Microsoft Cloud App Security, like all Microsoft cloud products and services, is built to address the rigorous security and privacy demands of our customers.
 
-To help organizations comply with national, regional, and industry-specific requirements governing the collection and use of individuals’ data, Microsoft Cloud App Security provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
+To help organizations comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft Cloud App Security provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
 
 ### Compliance framework and offerings
 
 Microsoft Cloud App Security meets many international and industry-specific compliance standards including, but not limited to:
 
-| |Title|Description|
+| Organization |Title|Description|
 |----|----|----|
 |![logo csa](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
 |![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
@@ -48,7 +48,9 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo SOC](media/soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo g-cloud](media/g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
 
-<!--|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|-->
+<!--
+|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|
+-->
 
 For more information, go to [Microsoft Compliance Offerings](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) and select Cloud App Security.  
 
@@ -57,7 +59,7 @@ For more information, go to [Microsoft Compliance Offerings](https://www\.micros
 ### You're the owner of your data
 
 - In Microsoft Cloud App Security, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
-- Admins can search for a specific user’s metadata or user’s activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user’s activity history and security alerts related to the user.
+- Admins can search for a specific user's metadata or user's activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
 - You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
@@ -79,10 +81,10 @@ Personal data about users is derived from the user's object in the SaaS applicat
 
 ## Data location
 
-Microsoft Cloud App Security currently operates in datacenters in the United States and Europe (each a “Geo”). Your tenant account will be created in a Geo based on the country/region you chose when you signed up. Specifically, your data will be stored in a data center in the Geo nearest to that location.
+Microsoft Cloud App Security currently operates in datacenters in the United States and Europe (each a "Geo"). Your tenant account will be created in a Geo based on the country/region you chose when you signed up. Specifically, your data will be stored in a data center in the Geo nearest to that location.
 
 > [!NOTE]
-> Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user’s session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+> Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
 
 [Learn more about privacy](https://www\.microsoft\.com/trustcenter/privacy)
 
