@@ -38,7 +38,6 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo csa](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
 |![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
 |![logo EU model clauses](media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
-|![logo privacy shield](media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft complies with this framework for protecting personal data transferred from the EU to the US.|
 |![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
 |![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
 |![logo iso 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft is certified for its implementation of these information security management standards.|
