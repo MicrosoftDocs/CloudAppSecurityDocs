@@ -7,7 +7,7 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 05/17/2020
+ms.date: 08/09/2020
 
 # optional metadata
 
@@ -74,6 +74,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Juniper SRX
 - Juniper SSG
 - McAfee Secure Web Gateway
+- Menlo Security (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
 - Sonicwall (formerly Dell)
@@ -121,6 +122,7 @@ Data attributes (according to vendor documentation):
 | Juniper SRX | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Juniper SSG | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | McAfee SWG | **Yes** | No | No | **Yes** | **Yes** | **Yes** |
+| Menlo Security (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |

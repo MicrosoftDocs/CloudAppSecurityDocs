@@ -35,6 +35,7 @@ POST /api/v1/alerts/<pk>/dismiss/
 ## Request BODY parameters
 
 | Parameter | Description |
+| --- | --- |
 | comment | A comment about why the alert was dismissed |
 
 ## Example
