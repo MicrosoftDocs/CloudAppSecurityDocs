@@ -188,7 +188,7 @@ You can now control the severity of Azure AD Identity Protection alerts that are
 Released March 1, 2020
 
 - **New detection for Workday**  
-We've expanded our current anomalous behavior alerts for Workday. The new alerts include the following user geo-location detections:
+We've expanded our current anomalous behavior alerts for Workday. The new alerts include the following user geolocation detections:
   - [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
   - [Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)
   - [Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
