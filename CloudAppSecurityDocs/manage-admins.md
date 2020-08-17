@@ -37,9 +37,9 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](htt
 
 - **Global administrator and Security administrator:** Admins with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions.
 
-- **Compliance administrator:** Has read-only permissions and can manage alerts. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
+- **Compliance administrator:** Has read-only permissions and can manage alerts. Cannot access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
-- **Compliance data administrator:** Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports.
+- **Compliance data administrator:** Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Cannot access Security recommendations for cloud platforms.
 
 - **Security operator:** Has read-only permissions and can manage alerts.
 
@@ -76,6 +76,7 @@ Additionally, the following Cloud App Security specific admin roles can be confi
   - Cloud Discovery activity - No permissions
   - Security extensions - Permissions only for API token with user permissions
   - Governance actions - Only for the specific app/instance
+  - Security recommendations for cloud platforms - No permissions
 
 - **User group admin:** Has full or read-only permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin can view and modify information in Microsoft Cloud App Security only for that user group:
 
@@ -89,6 +90,7 @@ Additionally, the following Cloud App Security specific admin roles can be confi
   - Cloud Discovery activity - No permissions
   - Security extensions - Permissions only for API token with users in the group
   - Governance actions - Only for the specific users in the group
+  - Security recommendations for cloud platforms - No permissions
 
 - **Cloud Discovery global admin:**  Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has access as follows:
 
@@ -105,14 +107,13 @@ Additionally, the following Cloud App Security specific admin roles can be confi
   - Conditional Access App Control - No permissions
   - Security extensions - No permissions
   - Governance actions - Only Cloud Discovery related actions
+  - Security recommendations for cloud platforms - No permissions
 
-- **Cloud Discovery report admin:** Has permissions to view all the data in Microsoft Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog.
-This admin will not have access to the **Activities** or **Files** pages and limited access to policies.
+- **Cloud Discovery report admin:** Has permissions to view all the data in Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin will not have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
 
 ## Override admin permissions
 
-If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions.
-For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the necessary permissions in Cloud App Security.
+If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the necessary permissions in Cloud App Security.
 
 ## Add additional admins
 
@@ -127,7 +128,7 @@ You can add additional admins to Cloud App Security without adding users to Azur
 
     ![add admins](media/add-admin.png)
 
-3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, or **App/Instance admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
+3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, or **Cloud Discovery report admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
     >[!NOTE]
     > Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
