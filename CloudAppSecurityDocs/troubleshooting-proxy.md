@@ -505,7 +505,7 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
 
 All proxies that suffix URLs are susceptible to context loss, an issue where navigating to a link loses the full path of the link and typically lands on the home page of the app. Cloud App Security is uniquely positioned to address this limitation and solve context loss by partnering with Microsoft and non-Microsoft vendors.
 
-Apps on our featured apps page marked as **(preview)** may suffer from context loss. For non-featured apps experiencing context loss, please submit a support ticket. We are working with each app provider individually to fix these core issues.
+Apps on our featured apps page marked as **(preview)** may suffer from context loss. Similarly, context loss can be caused by global policies that block third-party cookies or cross-site tracking. You can remediate the issue by disabling these options. For non-featured apps experiencing context loss, please submit a support ticket. We are working with each app provider individually to fix these core issues.
 
 As a temporary mitigation, you can workaround context loss issues, as follows:
 
