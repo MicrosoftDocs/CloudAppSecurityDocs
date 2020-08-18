@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/30/2019
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -70,16 +70,25 @@ Cloud App Security supports the following Office 365 apps:
 
 1. In **Connected apps** page, click the plus button and select **Office 365**.
 
-    ![connect 0365](media/connect-0365.png)
+    ![connect 0365](media/connect-o365.png)
 
-2. In the Office 365 pop-up, click **Connect Office 365**.
+1. In the Office 365 pop-up, click **Connect Office 365**.
 
     ![connect 0365](media/office-connect.png)
 
-3. After Office 365 is displayed as successfully connected, click **Close**.
+1. In the Office 365 components page, select the options you require, and then click **Connect**.
+
+    > [!NOTE]
+    >
+    > - For best protection, we recommend selecting all Office 365 components.
+    > - The **Office 365 files** component, requires the **Office 365 activities** component and Cloud App Security file monitoring (**Settings** > **Files** > **Enable file monitoring**).
+
+    ![connect 0365 components](media/connect-o365-components.png)
+
+1. After Office 365 is displayed as successfully connected, click **Close**.
 
 > [!NOTE]
-> After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365, because Cloud App Security turns on any APIs that had been off by default.
+> After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365 because Cloud App Security turns on any APIs that had been off by default.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
