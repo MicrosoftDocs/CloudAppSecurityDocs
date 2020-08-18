@@ -45,6 +45,9 @@ Integrating with your SIEM is accomplished in two steps:
 1. Set it up in Cloud App Security.
 1. Set it up in Azure Sentinel.
 
+> [!NOTE]
+> The option to add Azure Sentinel is not available if you have previously performed the integration.
+
 ### Prerequisites
 
 To integrate with Azure Sentinel:
