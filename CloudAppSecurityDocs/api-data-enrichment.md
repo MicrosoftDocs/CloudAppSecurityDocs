@@ -23,7 +23,7 @@ Run the POST request to add a new IP address range.
 ## HTTP request
 
 ```rest
-POST /api/subnet/
+POST /api/v1/subnet/
 ```
 
 ## Request BODY parameters
@@ -31,7 +31,7 @@ POST /api/subnet/
 | Parameter | Description |
 | --- | --- |
 | category | The id of the range category |
-| subnetMasks | An array of masks as strings (IPv4 / IPv6) |
+| subnets | An array of masks as strings (IPv4 / IPv6) |
 | organization (Optional) | The registered ISP |
 | tags (Optional) | An array of tags (objects with "text" property set with the tag name) - new or existing |
 
@@ -53,7 +53,7 @@ The following categories are currently supported:
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",
