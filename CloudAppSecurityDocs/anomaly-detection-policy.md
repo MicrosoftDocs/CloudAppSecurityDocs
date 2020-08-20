@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 08/20/2020
 
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -26,13 +26,13 @@ ms.custom: seodec18
 
 ---
 
-# Get instantaneous behavioral analytics and anomaly detection
+# Get behavioral analytics and anomaly detection
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you can immediately run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies provide immediate results by providing immediate detections, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network.  In addition, the new policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats.
+Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you are ready from the outset to run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies immediately start the process of detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. In addition, the policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats.
 
-The anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities.  These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also use machine learning algorithms designed to profile the users and sign in pattern to reduce false positives.
+The anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, as data is collected from your configured API connectors, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. Be aware that it may take several hours for data to be available from API connectors. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also use machine learning algorithms designed to profile the users and sign in pattern to reduce false positives.
 
 Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into risk factors, as follows:
 
