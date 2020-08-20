@@ -58,7 +58,7 @@ For more information about API tokens, see [Managing API tokens](api-authenticat
 ### Example
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
 ```
 
 ## What actions are supported?
@@ -115,7 +115,7 @@ Most filters support multiple values to provide you with powerful queries. When 
 ### Example
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
   "filters": {
     "some.field": {
       "eq": ["value1", "value2"],
