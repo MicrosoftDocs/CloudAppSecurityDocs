@@ -6,7 +6,7 @@ description: This article provides instructions for creating and working with ac
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/01/2020
 
 # optional metadata

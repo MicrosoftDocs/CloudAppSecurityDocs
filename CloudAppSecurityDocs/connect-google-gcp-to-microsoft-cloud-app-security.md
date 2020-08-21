@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: cloud-app-security
 
 # optional metadata
