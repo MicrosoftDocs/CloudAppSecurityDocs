@@ -2,12 +2,12 @@
 # required metadata
 
 title: Azure Sentinel integration with Cloud App Security
-description: This article provides information integrating your generic SIEM with Cloud App Security.
+description: This article provides information integrating Azure Sentinel with Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/28/2019
+ms.date: 08/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
