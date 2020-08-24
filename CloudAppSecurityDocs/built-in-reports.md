@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -36,7 +36,7 @@ To generate these reports
 1. Go to **Files**.
 2. In the upper right-hand corner, click the three dots and under **Data management reports**, select one of the following reports.
 
-    ![reports](media/reports.png)
+    ![Screenshot showing Data management reports menu](media/reports.png)
 
 ## Data sharing overview
 

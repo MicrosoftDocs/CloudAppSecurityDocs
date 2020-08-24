@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -56,7 +56,7 @@ This assessment provides an organizational view of security configuration recomm
 
 1. Select a recommendation to view additional information about the recommendation including a description and detailed remediation guidelines.
 
-    ![security configuration](media/security-configuration-gcp-details.png)
+    ![security configuration recommendation](media/security-configuration-gcp-details.png)
 
 ## Next steps
 
