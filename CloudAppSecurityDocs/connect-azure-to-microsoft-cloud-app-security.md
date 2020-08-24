@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -42,7 +42,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. In **Connected apps** page, click the plus button and select **Microsoft Azure**.
 
-    ![connect Azure](media/connect-azure-menu.png)
+    ![connect Azure menu item](media/connect-azure-menu.png)
 
 2. In the Azure pop-up, click **Connect Microsoft Azure**.
 

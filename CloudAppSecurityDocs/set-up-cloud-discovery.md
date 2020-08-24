@@ -6,7 +6,7 @@ description: This article describes the setup procedure for getting Cloud Discov
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/09/2020
 
 # optional metadata

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Managing API tokens
-description: This article provides information about generating API tokens for Cloud App Security.
+description: This article provides information about generating and managing API tokens for Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
