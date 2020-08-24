@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagirn
 ms.date: 7/7/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security

@@ -5,7 +5,7 @@ description: This article provides a set of best practices for protecting your o
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
-ms.topic: best-practice
+ms.topic: quickstart
 ms.date: 10/24/2019
 
 # optional metadata
