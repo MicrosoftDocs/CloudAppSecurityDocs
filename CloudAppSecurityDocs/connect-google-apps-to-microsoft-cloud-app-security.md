@@ -42,11 +42,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. In the **New project** screen, name your project as follows:
 **Cloud App Security** and click **Create**.
 
-    ![google2](media/google2.png)
+    ![Google new project pop-up](media/google2.png)
 
 1. After the project is created, in the tool bar, click on **Google Cloud Platform**. Make sure that the right project is selected in the drop-down at the top.
 
-    ![Google new project pop-up](media/googleverify-project.png)
+    ![Click Google Cloud Platform in tool bar](media/googleverify-project.png)
 
 1. Select menu, go to **APIs & Services** > **Library** and enable the following APIs (use the search line if the API isn't listed):
 
