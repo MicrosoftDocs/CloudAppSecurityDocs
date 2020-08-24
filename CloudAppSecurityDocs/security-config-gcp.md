@@ -56,7 +56,7 @@ This assessment provides an organizational view of security configuration recomm
 
 1. Select a recommendation to view additional information about the recommendation including a description and detailed remediation guidelines.
 
-    ![security configuration](media/security-configuration-gcp-details.png)
+    ![security configuration recommendation](media/security-configuration-gcp-details.png)
 
 ## Next steps
 

@@ -261,7 +261,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
     - **Generic ICAP – REQMOD** - Use other DLP appliances that use [Request Modification](https://tools.ietf.org/html/rfc3507).
     - **Generic ICAP – RESPMOD** - Use other DLP appliances that use [Response Modification](https://tools.ietf.org/html/rfc3507).
 
-        ![Cloud App Security ICAP connection](media/icap-wizard1.png)
+        ![Cloud App Security ICAP connection type](media/icap-wizard1.png)
 
 5. Browse to select the public certificate you generated in the previous steps, "cert.pem", to connect to your stunnel. Click **Next**.
 
@@ -270,7 +270,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 6. In the **Server configuration** screen, provide the **IP address** and **Port** of the stunnel server that you set up in Step 2. For load-balancing purposes, you can configure the **IP address** and **Port** of an additional server. The provided IP addresses should be the external static IP addresses of your servers.
 
-    ![Cloud App Security ICAP connection](media/icap-wizard2.png)
+    ![Cloud App Security ICAP connection IP address and port](media/icap-wizard2.png)
 
 7. Click **Next**. Cloud App Security tests connectivity to the server you configured. If you receive an error, review the instructions and network settings. After it's successfully connected, you can click **Quit**.
 
@@ -313,7 +313,7 @@ The detection server used by Cloud App Security is a standard Network Prevent fo
 
     1. Disable **Trial Mode**.
 
-        ![disable trial mode](media/icap-disable-trial-mode.png)
+        ![disable trial mode pop-up](media/icap-disable-trial-mode.png)
 
 2. Under **ICAP** > **Response Filtering**, change the **Ignore Responses Smaller Than** value to 1.
 
@@ -349,7 +349,7 @@ Add the rule you created to any existing policies:
 
 3. Save the policy.
 
-    ![disable trial mode](media/icap-add-policy.png)
+    ![disable trial mode in policy](media/icap-add-policy.png)
 
 This rule must be added to all existing policies.
 

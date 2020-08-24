@@ -29,7 +29,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal’s **Governance log**.
+Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal's **Governance log**.
 
 Key points:
 
@@ -54,7 +54,7 @@ Key points:
     2. In the Anonymization tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize machine information by default in 'Win10 Endpoint Users' report**.
     3. Click **Save**.
 
-    ![Anonymization](media/anonymizer1.png)
+    ![Anonymization settings page](media/anonymizer1.png)
 
 2. When anonymization is selected, Cloud App Security parses the traffic log and extracts specific data attributes.
 3. Cloud App Security replaces the username with an encrypted username.
@@ -87,7 +87,7 @@ Key points:
     1. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
     1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Click **Resolve**.
 
-        ![Anonymization](media/anonymizer.png)
+        ![Resolve anonymization pop-up](media/anonymizer.png)
 
     **To resolve multiple usernames**
 
@@ -103,9 +103,9 @@ Key points:
 
         ![Anonymize resolve pop-up](media/anonymize-resolve-dialog.png)
 
-6. The action is audited in the portal’s **Governance log**.
+6. The action is audited in the portal's **Governance log**.
 
-    ![Anonymization](media/anonymize-gov-log.png)
+    ![Anonymization action in governance log](media/anonymize-gov-log.png)
 
 ## Next steps
 

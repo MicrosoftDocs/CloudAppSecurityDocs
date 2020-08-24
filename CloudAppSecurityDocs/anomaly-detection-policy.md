@@ -210,11 +210,11 @@ You can triage the various alerts triggered by the new anomaly detection policie
 1. In the **Activity log**, you can open an activity to display the Activity drawer. Click on **User** to view the user insights tab. This tab includes information like number of alerts, activities, and where they've connected from, which is important in an investigation.
 
     ![anomaly detection alert1](media/anomaly-alert-user1.png)
-    ![anomaly detection alert1](media/anomaly-alert-user2.png)
+    ![anomaly detection alert2](media/anomaly-alert-user2.png)
 
 1. This enables you to understand what the suspicious activities are that the user performed and gain deeper confidence as to whether the account was compromised. For example, an alert on multiple failed logins may indeed be suspicious and can indicate potential brute force attack, but it can also be an application misconfiguration, causing the alert to be a benign true positive. However, if you see a multiple failed logins alert with additional suspicious activities, then there is a higher probability that the account is compromised. In the example below, you can see that the **Multiple failed login attempts** alert was followed by **Activity from a TOR IP address** and **Impossible travel activity**, both strong indicators of compromise (IOCs) by themselves. If this wasn't suspicious enough, then you can see that the same user performed a **Mass download activity**, which is often an indicator of the attacker performing exfiltration of data.
 
-    ![anomaly detection alert1](media/anomaly-alert-user3.png)
+    ![anomaly detection alert3](media/anomaly-alert-user3.png)
 
 1. For malware infected files, After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about that type of malware the file is infected with.
 

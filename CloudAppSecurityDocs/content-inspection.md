@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How Cloud App Security performs content inspection
+title: How Cloud App Security performs DLP content inspection
 description: This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud.
 keywords:
 author: shsagir
