@@ -245,9 +245,11 @@ For example, if you have configured a policy that blocks downloading files for a
 
 Once you are ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Cloud App Security, click the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In Cloud App Security, click the settings cog ![settings icon](media/settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then click **Save**.
+
+    ![Enable session controls pop-up](media/edit-app-enable-session-controls.png)
 
 ## Step 6: Update the Azure AD policy (Azure AD only)<a name="update-azure-ad"></a>
 
