@@ -34,7 +34,7 @@ Microsoft Cloud App Security leverages the APIs provided by the cloud provider. 
 Cloud App Security supports multiple instances of the same connected app. For example, if you have more than one instance of Salesforce (one for sales, one for marketing) you can connect both to Cloud App Security. You can manage the different instances from the same console to create granular policies and deeper investigation. This support applies only to API connected apps, not to Cloud Discovered apps or Proxy connected apps.
 
 > [!NOTE]
-> Multi-instance is not supported for Office 365 and Azure.
+> Multi-instance is not supported for Microsoft 365 and Azure.
 
 ## How it works
 
@@ -66,7 +66,7 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following table lists, per cloud app, which abilities are supported with App connectors:
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+| | AWS | Box | Dropbox | GCP | G Suite | Microsoft 365 | Okta | Service Now | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
 | **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
@@ -103,7 +103,7 @@ To use App Connectors, you need to make sure you have the following things for e
 | GitHub | GitHub Enterprise Cloud | Owner |
 | GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business or Enterprise preferred<br /><br />G Suite Enterprise (minimally) | Super Admin |
-| Office 365 | | Global Admin |
+| Microsoft 365 | | Global Admin |
 | Okta | Enterprise (not trial) | Admin |
 | Salesforce | | Admin |
 | ServiceNow | Eureka and up | Admin + RestAPI role |

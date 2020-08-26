@@ -126,7 +126,7 @@ The following table show what data is surfaced for each product integration:
 | --- | --- | --- |
 | Microsoft Threat Protection | Alerts and user activities | Enabled automatically on Microsoft Threat Protection upon onboarding |
 | Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) |
-| Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
+| Office Security and Compliance Center | Alerts for Microsoft 365 | Automatically streamed to Office Security and Compliance Center |
 | Azure Security Center | Alerts for Azure | Enabled by default in Cloud App Security; can be disabled in Azure Security Center |
 | Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](https://docs.microsoft.com/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Cloud App Security](flow-integration.md) |
@@ -165,7 +165,7 @@ Microsoft Cloud App Security enables you to limit access of administrators to th
 
 ### Permissions
 
-Microsoft Cloud App Security supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](/cloud-app-security/manage-admins).
+Microsoft Cloud App Security supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](/cloud-app-security/manage-admins).
 
 ## Customer controls for organizational compliance
 
