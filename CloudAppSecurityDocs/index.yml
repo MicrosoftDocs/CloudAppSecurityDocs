@@ -162,7 +162,7 @@ landingContent:
           - text: Read our e-books
             url: e-books.md
           - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
-            url: https://docs.microsoft.com/microsoft-365/
+            url: /microsoft-365/
       - linkListType: video
         links:
           - text: Watch our webinars
