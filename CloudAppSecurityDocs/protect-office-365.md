@@ -37,7 +37,7 @@ Using the Office 365 connector provides protection for the following products:
 - Yammer
 
 > [!NOTE]
-> Cloud App Security integrates directly with [Office 365's audit logs](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
+> Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
 
 ## Main threats
 

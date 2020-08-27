@@ -67,7 +67,7 @@ To enable security configuration recommendations in Microsoft Cloud App Security
 
     ![security configuration](media/security-configuration-azure.png)
 
-For information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations).
+For information about how to implement security recommendations, see [Managing security recommendations in Azure Security Center](/azure/security-center/security-center-recommendations).
 
 ## Next steps
 
