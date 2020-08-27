@@ -39,7 +39,7 @@ The breadth of support for each app relies on the richness of its APIs. Use the 
 - [Protect GitHub Enterprise Cloud](protect-github.md)
 - [Protect GCP](protect-gcp.md)
 - [Protect G Suite](protect-gsuite.md)
-- [Protect Office 365](protect-office-365.md)
+- [Protect Microsoft 365](protect-office-365.md)
 - [Protect Okta](protect-okta.md)
 - [Protect Salesforce](protect-salesforce.md)
 - [Protect ServiceNow](protect-servicenow.md)
