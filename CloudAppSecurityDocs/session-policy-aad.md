@@ -46,7 +46,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 * Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
-  * For [Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  * For [Azure AD Conditional Access](/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Cloud App Security session policy
@@ -114,7 +114,7 @@ To export these logs:
 1. Go to the settings cog and click **Conditional Access App Control**.
 2. On the right side of the table, click the export button.
 
-    ![export button](./media/export-button.png)
+    ![export button](media/export-button.png)
 3. Select the range of the report and click **Export**. This process may take some time.
 
 To download the exported log:
@@ -122,7 +122,7 @@ To download the exported log:
 1. After the report is ready, go to **Settings** and then **Exported reports**.
 2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and click download.
 
-    ![download button](./media/download-button.png)
+    ![download button](media/download-button.png)
 
 ## <a name="block-download"></a>Block all downloads
 
@@ -185,4 +185,4 @@ For example, if a user uploads a file without an Azure Information Protection la
 > [!div class="nextstepaction"]
 > [Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control](use-case-proxy-block-session-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]

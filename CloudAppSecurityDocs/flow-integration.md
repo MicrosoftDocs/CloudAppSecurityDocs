@@ -31,7 +31,7 @@ ms.suite: ems
 
 *Applies to: Microsoft Cloud App Security*
 
-Cloud App Security integrates with [Microsoft Power Automate](https://docs.microsoft.com/flow/getting-started) to provide custom alert automation and orchestration playbooks. By using the [ecosystem of connectors](https://docs.microsoft.com/connectors/) available in Power Automate, you can automate the triggering of playbooks when Cloud App Security generates alerts. For example, automatically create an issue in ticketing systems using [ServiceNow connector](https://docs.microsoft.com/connectors/service-now/) or send an approval email to execute a custom governance action when an alert is triggered in Cloud App Security.
+Cloud App Security integrates with [Microsoft Power Automate](/flow/getting-started) to provide custom alert automation and orchestration playbooks. By using the [ecosystem of connectors](/connectors/) available in Power Automate, you can automate the triggering of playbooks when Cloud App Security generates alerts. For example, automatically create an issue in ticketing systems using [ServiceNow connector](/connectors/service-now/) or send an approval email to execute a custom governance action when an alert is triggered in Cloud App Security.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Cloud App Security integrates with [Microsoft Power Automate](https://docs.micro
 
 On its own, Cloud App Security provides predefined governance options such as suspend a user or make a file private when defining policies. By creating a playbook in Power Automate using Cloud App Security connector, you can create workflows to enable customized governance options for your policies. After the playbook is created in Power Automate, simply associate it with a policy in Cloud App Security to send alerts to Power Automate. Microsoft Power Automate offers several connectors and conditions to create a customized workflow for your organization.
 
-The [Cloud App Security connector](https://docs.microsoft.com/connectors/cloudappsecurity/) in Power Automate supports automated triggers and actions. Power Automate is triggered automatically when Cloud App Security generates an alert. Actions include changing the alert status in Cloud App Security.
+The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Automate supports automated triggers and actions. Power Automate is triggered automatically when Cloud App Security generates an alert. Actions include changing the alert status in Cloud App Security.
 
 ## How to create playbooks with Power Automate
 

@@ -78,7 +78,7 @@ Conditional Access App Control enables you to create policies that take into acc
 
 ### Intune compliant and Hybrid Azure AD Joined devices
 
-Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD Joined device information to be passed directly to Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD Joined device information to be passed directly to Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
 > Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](https://go.microsoft.com/fwlink/?linkid=2102732).
@@ -118,7 +118,7 @@ After the certificates are uploaded, you can create access and session policies 
 
 ## Supported apps and clients
 
-Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you are using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
+Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you are using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
 
 Cloud App Security identifies Apps using information available in its Cloud App Catalog. Some organizations and users customize apps by adding plugins. However, in order for session controls to work correctly with these plugins, the associated custom domains must be added to the respective app in the catalog.
 

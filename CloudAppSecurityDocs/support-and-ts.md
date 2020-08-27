@@ -37,7 +37,7 @@ This article describes the available support and troubleshooting options for Clo
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Cloud App Security. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available
 in additional languages.
 
-As an admin, you can use the **Help + Support** option to file an online support request for Cloud App Security from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+As an admin, you can use the **Help + Support** option to file an online support request for Cloud App Security from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 * Global administrator
 
@@ -104,7 +104,7 @@ The Cloud App Security team is always eager to hear your thoughts about our prod
 
 * **Product feedback**: Send feedback to [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com).
 
-* **Documentation feedback**: Our new feedback system is built on GitHub Issues. To provide feedback on documentation you must first create a GitHub account. Read about this change in [our blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+* **Documentation feedback**: Our new feedback system is built on GitHub Issues. To provide feedback on documentation you must first create a GitHub account. Read about this change in [our blog post](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 ## Next steps
 
