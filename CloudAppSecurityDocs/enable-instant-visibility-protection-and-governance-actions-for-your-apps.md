@@ -85,7 +85,7 @@ The following table lists, per cloud app, which abilities are supported with App
 
 ## Prerequisites
 
-- For some apps, it may be necessary to white list IP addresses to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. For more information, see [Network requirements](network-requirements.md).
+- For some apps, it may be necessary to allow list IP addresses to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. For more information, see [Network requirements](network-requirements.md).
 
 - For each app that you want to connect with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.
 
