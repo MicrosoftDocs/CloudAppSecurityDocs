@@ -114,7 +114,7 @@ To export these logs:
 1. Go to the settings cog and click **Conditional Access App Control**.
 2. On the right side of the table, click the export button.
 
-    ![export button](./media/export-button.png)
+    ![export button](media/export-button.png)
 3. Select the range of the report and click **Export**. This process may take some time.
 
 To download the exported log:
@@ -122,7 +122,7 @@ To download the exported log:
 1. After the report is ready, go to **Settings** and then **Exported reports**.
 2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and click download.
 
-    ![download button](./media/download-button.png)
+    ![download button](media/download-button.png)
 
 ## <a name="block-download"></a>Block all downloads
 
