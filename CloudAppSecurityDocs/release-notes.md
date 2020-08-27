@@ -95,7 +95,7 @@ We've expanded our session controls to detect potential malware using Microsoft 
 We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, click the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then click **Save**. For more information about onboarding apps, see [Onboard and deploy any app](proxy-deployment-any-app.md) and [Deploy featured apps](proxy-deployment-aad.md).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely blacklist domains in your network appliances or gateways, make sure you whitelist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block list domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **New documentation**  
 Cloud App Security documentation has been expanded to include the following new content:
@@ -117,7 +117,7 @@ We've leveraged our native integration with Azure AD to give you the ability to 
 We're interested in receiving your feedback and learning how we can help. So now a new feedback dialog gives you the opportunity to help improve Cloud App Security, when creating, modifying, or deleting a file, anomaly detection, or session policy.
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-Starting June 7, 2020, we are gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely blacklist domains in your network appliances or gateways, make sure you whitelist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+Starting June 7, 2020, we are gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block list domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **Performance improvements for Session Controls (gradual rollout)**  
 We've made significant network performance improvements to our proxy service. The improved service is even more streamlined and provides increased responsiveness when using session controls.
@@ -508,7 +508,7 @@ As part of this change, malware detection policies now include a Detection type 
 Conditional Access App Control added the ability to monitor and block the following activities:
   - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with Azure Information Protection prior to upload.
   - Copy and paste in any app - rounding out robust controls of data exfiltration that already included controlling download, print, and custom activities such as share.
-  - Send message - ensuring that PII data such as passwords is not shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
+  - Send message - ensuring that personal data such as passwords is not shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
   - Session Policies now include built-in templates to enable your organization to effortlessly enable popular real-time monitoring and control over your sanctioned apps, such as **Block upload based on real-time content inspection**.
 
 ## Cloud App Security release 143
@@ -805,7 +805,7 @@ Microsoft Cloud App Security provides enterprises with the ability to granularly
  We now have a built-in alert to notify you when any of a tenant's discovered apps is breached. The alert will provide information about the time and date of the breach, which users used the app, and will link to publicly available sources that provide information about the breach.
 
 - **New mail server**  
- Cloud App Security's mail server changed and uses different IP address ranges. To make sure you can get notifications, add the new IP addresses to your anti-spam whitelist. For users who customize their notifications, Microsoft Cloud App Security enables this for you using MailChimp&reg;, a third-party email service. For the list of mail server IP addresses, and instructions for enabling work with MailChimp, see [Network requirements](network-requirements.md#mail-server) and [Mail settings](mail-settings.md).
+ Cloud App Security's mail server changed and uses different IP address ranges. To make sure you can get notifications, add the new IP addresses to your anti-spam allow list. For users who customize their notifications, Microsoft Cloud App Security enables this for you using MailChimp&reg;, a third-party email service. For the list of mail server IP addresses, and instructions for enabling work with MailChimp, see [Network requirements](network-requirements.md#mail-server) and [Mail settings](mail-settings.md).
 
 ## Cloud App Security release 123
 
