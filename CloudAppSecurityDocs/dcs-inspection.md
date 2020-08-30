@@ -30,7 +30,7 @@ ms.custom: seodec18
 
 *Applies to: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security enables you to natively use the Microsoft Data Classification Service to classify the files in your cloud apps. Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection, and Microsoft Cloud App Security. The classification service allows you to extend your data classification efforts to the third-party cloud apps protected by Microsoft Cloud App Security, using the decisions you already made across an even greater number of apps.
+Microsoft Cloud App Security enables you to natively use the Microsoft Data Classification Service to classify the files in your cloud apps. Microsoft Data Classification Service provides a unified information protection experience across Microsoft 365, Azure Information Protection, and Microsoft Cloud App Security. The classification service allows you to extend your data classification efforts to the third-party cloud apps protected by Microsoft Cloud App Security, using the decisions you already made across an even greater number of apps.
 
 >[!NOTE]
 > This feature is currently available in the US, Europe, Australia, India, Canada, Japan, and APAC.
@@ -55,7 +55,7 @@ You have the option to set the **Inspection method** to use the **Microsoft Data
 
 6. Leveraging file policies, you can also set alerts and governance actions for the policy. For more information, see [file policies](data-protection-policies.md) and [governance actions](governance-actions.md). Leveraging session policies, you can also monitor and control actions in real-time when a file matches a DCS type. For more information, see [session policy](session-policy-aad.md).
 
-Setting these policies enables you to easily extend the strength of the Office 365 DLP capabilities to all your other sanctioned cloud apps and protect the data stored in them with the full toolset provided to you by Microsoft Cloud App Security – such as the ability to [automatically apply Azure Information Protection classification labels](azip-integration.md) and the ability to control sharing permissions.
+Setting these policies enables you to easily extend the strength of the Microsoft 365 DLP capabilities to all your other sanctioned cloud apps and protect the data stored in them with the full toolset provided to you by Microsoft Cloud App Security – such as the ability to [automatically apply Azure Information Protection classification labels](azip-integration.md) and the ability to control sharing permissions.
 
 ## Next steps
 

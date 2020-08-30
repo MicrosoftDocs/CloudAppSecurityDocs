@@ -35,8 +35,8 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 
 | Organization |Title|Description|
 |----|----|----|
-|![logo csa Attestation](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
-|![logo csa Certification](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
+|![logo csa attestation](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
+|![logo csa certification](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
 |![logo EU model clauses](media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
 |![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
 |![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
@@ -60,7 +60,7 @@ For more information, go to [Microsoft Compliance Offerings](https://www\.micros
 - In Microsoft Cloud App Security, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
 - Admins can search for a specific user's metadata or user's activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
-- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 - If you ever choose to terminate the service, you can take your data with you.
 
@@ -110,7 +110,7 @@ Microsoft Cloud App Security retains data as follows:
 - Alerts: 180 days
 - Governance log: 120 days
 
-You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www\.microsoft\.com/trustcenter/about/transparency)
 
@@ -165,7 +165,7 @@ Microsoft Cloud App Security enables you to limit access of administrators to th
 
 ### Permissions
 
-Microsoft Cloud App Security supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](manage-admins.md).
+Microsoft Cloud App Security supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](manage-admins.md).
 
 ## Customer controls for organizational compliance
 
