@@ -74,10 +74,10 @@ To identify who your riskiest users are in Cloud App Security:
 1. Go to the Cloud App Security dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them.  
 The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
-   ![Top users dashboard](./media/dashboard-top-users.png)
+   ![Top users dashboard](media/dashboard-top-users.png)
 
 1. Click on a particular user to get to the **User** page.
-    ![User page](./media/user-page.png)
+    ![User page](media/user-page.png)
 
 1. Review the information in the User page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.  
 The User page helps you answer the questions:

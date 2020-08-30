@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/22/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -44,7 +44,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
 
     This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It can help you safeguard the security posture you defined for your cloud environment.
 
-    ![Alerts](media/alerts.png "alerts")
+    ![Alerts resolution status page](media/alerts.png "alerts")
 
 2. For each alert, you need to investigate and determine the nature of the violation and the required response.
 

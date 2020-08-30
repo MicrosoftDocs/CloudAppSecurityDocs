@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -41,7 +41,7 @@ Microsoft Cloud App Security access policies enable real-time monitoring and con
 - Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
 - The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 - Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
-  - For [Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  - For [Azure AD Conditional Access](/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Cloud App Security access policy

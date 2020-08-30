@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 05/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -47,7 +47,7 @@ The **Users and accounts** page enables you to easily investigate your accounts,
 * You can see which accounts are included in each user group  
 * You can see which apps are accessed by each account and which apps are deleted for specific accounts
 
-    ![accounts screen](./media/accounts-page.png)
+    ![accounts screen](media/accounts-page.png)
 
 ## Users and accounts filters
 
@@ -55,7 +55,7 @@ Following is a list of the account filters that can be applied. Most filters sup
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Microsoft 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. In the event that the account has admin permissions the icon in the Accounts table appears with the addition of the red tie. ![accounts admin icon](./media/accounts-admin-icon.png)
+* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. In the event that the account has admin permissions the icon in the Accounts table appears with the addition of the red tie. ![accounts admin icon](media/accounts-admin-icon.png)
 
 * **App**: You can filter for any API connected app being used by accounts in your organization.
 * **Domain**: Enables you to filter for users in specific domains.

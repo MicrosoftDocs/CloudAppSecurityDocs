@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -132,15 +132,15 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
     1. Click the plus sign followed by **Amazon Web Services**.
 
-        ![connect AWS](media/connect-aws.png "connect AWS")
+        ![connect AWS auditing](media/connect-aws.png "connect AWS")
 
     1. In the pop-up, provide a name for the connector, and then click **Connect Amazon Web Services**.
 
-        ![AWS connector name](media/connect-aws-name.png)
+        ![AWS auditing connector name](media/connect-aws-name.png)
 
     1. On the Connect Amazon Web services page, select **Security auditing**, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-        ![Connect AWS app security auditing](media/aws-connect-app-audit.png "Connect AWS app security auditing")
+        ![Connect AWS app security auditing for new connector](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
     **For an existing connector**
 
@@ -150,7 +150,7 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
     1. On the Connect Amazon Web Services page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and click **Connect**.
 
-        ![Connect AWS app security auditing](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
+        ![Connect AWS app security auditing for existing connector](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
 
 1. Click **Test API** to make sure the connection succeeded.
 
@@ -219,7 +219,7 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
 1. In the **Security configuration apps** tab, click the plus button, and then select **Amazon Web Services**.
 
-    ![connect AWS](media/connect-aws-security-configuration.png)
+    ![connect AWS security configuration](media/connect-aws-security-configuration.png)
 
 1. In the **Instance name** page, choose the instance type, and then click **Next**.
 
@@ -229,7 +229,7 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
     - For a new connector, provide a name for the instance.
 
-        ![AWS connector name](media/aws-connect-name.png)
+        ![AWS security configuration connector name](media/aws-connect-name.png)
 
 1. In the **Account details** page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and then click **Next**.
 

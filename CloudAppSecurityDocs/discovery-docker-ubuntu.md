@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -77,7 +77,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Click **Add data source**.  
     ![Add a data source](media/add-data-source.png)
     1. **Name** your proxy or firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Name for your data source](media/ubuntu1.png)
     1. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
     1. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
     1. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
@@ -97,7 +97,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
     1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
-    ![ubuntu2](media/ubuntu2.png)
+    ![Select data sources to connect](media/ubuntu2.png)
 
 1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon](media/copy-icon.png)
 
@@ -135,7 +135,7 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
     > [!NOTE]
     > If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
 
-    ![ubuntu5](media/ubuntu5.png)
+    ![Command to install docker](media/ubuntu5.png)
 
 1. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
@@ -148,11 +148,11 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
 1. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
 You should see the message: **Finished successfully!**
-![ubuntu8](media/ubuntu8.png)
+![Command to verify that docker is running properly](media/ubuntu8.png)
 
 ### Step 3 - On-premises configuration of your network appliances
 
-Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog. For example:
+Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port or the FTP directory according to the directions in the dialog. For example:
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -162,7 +162,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![ubuntu9](media/ubuntu9.png)
+![Verify successful deployment of log collector](media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 

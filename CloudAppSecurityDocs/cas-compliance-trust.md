@@ -60,7 +60,7 @@ For more information, go to [Microsoft Compliance Offerings](https://www\.micros
 - In Microsoft Cloud App Security, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
 - Admins can search for a specific user's metadata or user's activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
-- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 - If you ever choose to terminate the service, you can take your data with you.
 
@@ -110,7 +110,7 @@ Microsoft Cloud App Security retains data as follows:
 - Alerts: 180 days
 - Governance log: 120 days
 
-You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www\.microsoft\.com/trustcenter/about/transparency)
 
@@ -125,10 +125,10 @@ The following table show what data is surfaced for each product integration:
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
 | Microsoft Threat Protection | Alerts and user activities | Enabled automatically on Microsoft Threat Protection upon onboarding |
-| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) |
-| Office Security and Compliance Center | Alerts for Microsoft 365 | Automatically streamed to Office Security and Compliance Center |
+| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](/azure/sentinel/connect-cloud-app-security) |
+| Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
 | Azure Security Center | Alerts for Azure | Enabled by default in Cloud App Security; can be disabled in Azure Security Center |
-| Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](https://docs.microsoft.com/graph/api/resources/security-api-overview) |
+| Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Cloud App Security](flow-integration.md) |
 
 #### Third-party products
@@ -165,7 +165,7 @@ Microsoft Cloud App Security enables you to limit access of administrators to th
 
 ### Permissions
 
-Microsoft Cloud App Security supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](/cloud-app-security/manage-admins).
+Microsoft Cloud App Security supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](manage-admins.md).
 
 ## Customer controls for organizational compliance
 
@@ -175,7 +175,7 @@ Microsoft Cloud App Security enables you to scope your deployment. Scoping enabl
 
 ### Anonymization
 
-You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](/cloud-app-security/cloud-discovery-anonymizer).
+You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](cloud-discovery-anonymizer.md).
 
 ## Security and Privacy for Cloud App Security US Government GCC High customers
 
@@ -187,7 +187,7 @@ For information on Cloud App Security compliance standards and the location of d
 > [Cloud App Security Overview](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
 > [!div class="nextstepaction"]
-> [Cloud App Security documentation](/cloud-app-security/)
+> [Cloud App Security documentation](index.yml)
 
 > [!div class="nextstepaction"]
 > [Sign up for Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)

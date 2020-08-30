@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/17/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -51,7 +51,7 @@ Cloud App Security supports the following Microsoft 365 apps:
 - Yammer
 
 > [!NOTE]
-> Cloud App Security integrates directly with [Microsoft 365's audit logs](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
+> Cloud App Security integrates directly with [Microsoft 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
 
 ## How to connect Microsoft 365 to Cloud App Security  
 
@@ -59,22 +59,22 @@ Cloud App Security supports the following Microsoft 365 apps:
 >
 >- You must have at least one assigned Microsoft 365 license to connect Microsoft 365 to Cloud App Security.
 >- To enable monitoring of Microsoft 365 activities in Cloud App Security, you are required to enable auditing in the [Office Security and Compliance Center](https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins).
->- Exchange administrator audit logging, which is enabled by default in Microsoft 365, logs an event in the Microsoft 365 audit log when an administrator (or a user who has been assigned administrative privileges) makes a change in your Exchange Online organization. Changes made using the Exchange admin center or by running a cmdlet in Windows PowerShell are logged in the Exchange admin audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
+>- Exchange administrator audit logging, which is enabled by default in Microsoft 365, logs an event in the Microsoft 365 audit log when an administrator (or a user who has been assigned administrative privileges) makes a change in your Exchange Online organization. Changes made using the Exchange admin center or by running a cmdlet in Windows PowerShell are logged in the Exchange admin audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
 >- Exchange Mailbox audit logging must be turned on for each user mailbox before user activity in Exchange Online is logged, see [Exchange Mailbox activities](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 >- If Office apps are enabled, groups that are part of Microsoft 365 are also imported to Cloud App Security from the specific Office apps, for example if SharePoint is enabled, Microsoft 365 groups are imported as SharePoint groups as well.
 >- You must [enable auditing in PowerBI](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/) to get the logs from there. Once auditing is enabled, Cloud App Security starts getting the logs (with a delay of 24-72 hours).
->- You must [enable auditing in Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) to get the logs from there. Once auditing is enabled, Cloud App Security starts getting the logs (with a delay of 24-72 hours).
+>- You must [enable auditing in Dynamics 365](/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing) to get the logs from there. Once auditing is enabled, Cloud App Security starts getting the logs (with a delay of 24-72 hours).
 >- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Azure AD settings and use of the **Suspend user** governance action is reverted.
 >- For Azure AD sign-in activities, Cloud App Security only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Noninteractive sign-in activities may be viewed in the Azure AD audit log.
 > - [Multi-geo deployments](/office365/enterprise/office-365-multi-geo) are only supported for OneDrive
 
 1. In **Connected apps** page, click the plus button and select **Office 365**.
 
-    ![connect 0365](media/connect-o365.png)
+    ![connect O365 menu option](media/connect-o365.png)
 
 1. In the Office 365 pop-up, click **Connect Office 365**.
 
-    ![connect 0365](media/office-connect.png)
+    ![connect O365 pop-up](media/office-connect.png)
 
 1. In the Office 365 components page, select the options you require, and then click **Connect**.
 
@@ -83,7 +83,7 @@ Cloud App Security supports the following Microsoft 365 apps:
     > - For best protection, we recommend selecting all Office 365 components.
     > - The **Office 365 files** component, requires the **Office 365 activities** component and Cloud App Security file monitoring (**Settings** > **Files** > **Enable file monitoring**).
 
-    ![connect 0365 components](media/connect-o365-components.png)
+    ![connect O365 components](media/connect-o365-components.png)
 
 1. After Microsoft 365 is displayed as successfully connected, click **Close**.
 

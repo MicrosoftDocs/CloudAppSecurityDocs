@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -32,7 +32,7 @@ For a list of apps that are featured by Cloud App Security to work out-of-the-bo
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
-  - [Azure Active Directory (Azure AD) Premium P1](https://docs.microsoft.com/azure/active-directory/license-users-groups) or higher, or the license required by your identity provider (IdP) solution
+  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/license-users-groups) or higher, or the license required by your identity provider (IdP) solution
   - Microsoft Cloud App Security
 
 - Apps must be configured with single sign-on
@@ -60,7 +60,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 **Step 6: [Update the Azure AD policy](#update-azure-ad)**
 
 > [!NOTE]
-> To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](https://docs.microsoft.com/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
+> To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
 
 ## Step 1:  Configure your IdP to work with Cloud App Security<a name="conf-idp"></a><a name="conf-azure-ad"></a>
 
@@ -245,9 +245,11 @@ For example, if you have configured a policy that blocks downloading files for a
 
 Once you are ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Cloud App Security, click the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In Cloud App Security, click the settings cog ![settings icon](media/settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then click **Save**.
+
+    ![Enable session controls pop-up](media/edit-app-enable-session-controls.png)
 
 ## Step 6: Update the Azure AD policy (Azure AD only)<a name="update-azure-ad"></a>
 
