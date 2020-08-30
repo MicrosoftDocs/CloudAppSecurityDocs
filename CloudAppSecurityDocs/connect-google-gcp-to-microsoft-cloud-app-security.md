@@ -43,7 +43,7 @@ Since you can add either or both of the connections, the steps in this article a
 
 Connecting GCP security auditing gives you visibility into and control over GCP app use.
 
-Follow these steps to connect AWS Security auditing to Cloud App Security.
+Follow these steps to connect GCP Security auditing to Cloud App Security.
 
 > [!div class="checklist"]
 >
