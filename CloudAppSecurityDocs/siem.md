@@ -161,7 +161,7 @@ The following text is an alerts logfile example:
 | Activities/Alerts | rt | Activity or alert timestamp |
 | Activities/Alerts | msg | Activity or alert description as shown in the portal |
 | Activities/Alerts | suser | Activity or alert subject user |
-| Activities/Alerts | destinationServiceName | Activity or alert originating app, for example, Office 365, Sharepoint, Box. |
+| Activities/Alerts | destinationServiceName | Activity or alert originating app, for example, Microsoft 365, Sharepoint, Box. |
 | Activities/Alerts | cs\<X>Label | Each label has a different meaning, but the label itself explains it, for example, targetObjects. |
 | Activities/Alerts | cs\<X> | The information corresponding to the label (the target user of the activity or alert as per the label example). |
 | Activities | EVENT_CATEGORY_* | High-level category of the activity |

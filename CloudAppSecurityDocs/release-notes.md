@@ -95,7 +95,7 @@ We've expanded our session controls to detect potential malware using Microsoft 
 We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, click the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then click **Save**. For more information about onboarding apps, see [Onboard and deploy any app](proxy-deployment-any-app.md) and [Deploy featured apps](proxy-deployment-aad.md).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely blacklist domains in your network appliances or gateways, make sure you whitelist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block list domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **New documentation**  
 Cloud App Security documentation has been expanded to include the following new content:
@@ -117,7 +117,7 @@ We've leveraged our native integration with Azure AD to give you the ability to 
 We're interested in receiving your feedback and learning how we can help. So now a new feedback dialog gives you the opportunity to help improve Cloud App Security, when creating, modifying, or deleting a file, anomaly detection, or session policy.
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-Starting June 7, 2020, we are gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely blacklist domains in your network appliances or gateways, make sure you whitelist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+Starting June 7, 2020, we are gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block list domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **Performance improvements for Session Controls (gradual rollout)**  
 We've made significant network performance improvements to our proxy service. The improved service is even more streamlined and provides increased responsiveness when using session controls.
@@ -452,8 +452,8 @@ Microsoft Cloud App Security has extended its Cloud Discovery capabilities and i
 - **App attestation**  
 Microsoft Cloud App Security compliance and risk assessment now allows cloud providers to attest their app to be up to date in Cloud App Catalog. This pilot allows cloud providers to fill out a self-attestation questionnaire based on the Cloud App Catalog's risk attributes to make sure that their risk assessment in Cloud App Security is accurate and up-to-date. Users can then get an indication as to which risk attributes were attested by the provider (rather than assessed by the Cloud App Security team) and when each attribute was submitted by the provider. For more information, see [Attest your app](attest-your-app.md).
 
-- **Office 365 workload granularity**  
-When connecting Office 365 to Microsoft Cloud App Security, you now have control over which workloads you want to connect. For example, customers only interested in connecting Office 365 for activity monitoring can now do so during the connection process, or by editing an existing Office 365 connector. As part of this change, OneDrive and SharePoint Online will no longer be shown as separate connectors but will be included in the Office 365 connector as the _Office 365 files_ workload. Customers with an existing Office 365 connector are not impacted by this change.
+- **Microsoft 365 workload granularity**  
+When connecting Microsoft 365 to Microsoft Cloud App Security, you now have control over which workloads you want to connect. For example, customers only interested in connecting Microsoft 365 for activity monitoring can now do so during the connection process, or by editing an existing Microsoft 365 connector. As part of this change, OneDrive and SharePoint will no longer be shown as separate connectors but will be included in the Microsoft 365 connector as the _Office 365 files_ workload. Customers with an existing Microsoft 365 connector are not impacted by this change.
 
 - **Enhanced Teams support**  
 You can now monitor and block message sending in the Teams web app in real time, by configuring a Session policy based on sensitive content.
@@ -508,7 +508,7 @@ As part of this change, malware detection policies now include a Detection type 
 Conditional Access App Control added the ability to monitor and block the following activities:
   - File uploads in any app - enabling scenarios such as preventing upload of known malware extensions, and ensuring users protect files with Azure Information Protection prior to upload.
   - Copy and paste in any app - rounding out robust controls of data exfiltration that already included controlling download, print, and custom activities such as share.
-  - Send message - ensuring that PII data such as passwords is not shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
+  - Send message - ensuring that personal data such as passwords is not shared in popular collaboration tools such as Slack, Salesforce, and Workplace by Facebook.
   - Session Policies now include built-in templates to enable your organization to effortlessly enable popular real-time monitoring and control over your sanctioned apps, such as **Block upload based on real-time content inspection**.
 
 ## Cloud App Security release 143
@@ -518,11 +518,11 @@ Released February 17, 2019
 - **Scope deployment for app instances**  
 Scoped deployment can now be configured at the app instance level, allowing for greater granularity and control.
 - **Role enhancements**  
-  - The data admin and security operator Office 365 roles are now supported in Cloud App Security. The data admin role enables users to manage everything file related, as well as view the Cloud Discovery reports. Security operators have permission to manage alerts and view policy configuration.
+  - The data admin and security operator Microsoft 365 roles are now supported in Cloud App Security. The data admin role enables users to manage everything file related, as well as view the Cloud Discovery reports. Security operators have permission to manage alerts and view policy configuration.
   - The security reader role now has the ability to configure the SIEM agent, allowing better permission scoping.
 
 - **Microsoft Flow support**  
-Cloud App Security now monitors user activities in Microsoft Flow. The activities supported are the activities reported by Flow to the Office 365 audit log.
+Cloud App Security now monitors user activities in Microsoft Flow. The activities supported are the activities reported by Flow to the Microsoft 365 audit log.
 
 - **Alert entity grouping**  
 The **Alert** page now groups related entities that were involved in an alert to aid in your investigation.
@@ -537,8 +537,8 @@ You can now configure session policies to monitor users or block downloads in re
 - **Suggested and Saved queries for OAuth apps**  
 Suggested queries have been added to the OAuth apps page provide out-of-the-box investigation templates to filter your OAuth apps. Suggested queries include custom filters to identify risky apps such as apps authorized by administrators. Saved queries enable you to save custom queries for future use, similar to saved queries available today in the Activity log and Discovery pages.
 
-- **Office 365 auditing default configuration**  
-If you want to enable monitoring of Office 365 activities in Cloud App Security, you are now required to enable auditing in the [Office Security and Compliance Center](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search), this is a result of a [change to Office 365 auditing](/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). This change only needs to be performed if you haven't already enabled monitoring of Office 365 activities in Cloud App Security.
+- **Microsoft 365 auditing default configuration**  
+If you want to enable monitoring of Microsoft 365 activities in Cloud App Security, you are now required to enable auditing in the [Office Security and Compliance Center](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search), this is a result of a [change to Microsoft 365 auditing](/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). This change only needs to be performed if you haven't already enabled monitoring of Microsoft 365 activities in Cloud App Security.
 
 - **Enhanced Box support**  
 Cloud App Security now supports two new governance actions for Box:
@@ -609,7 +609,7 @@ Cloud App Security now supports automatic log upload for Windows 10 (fall creato
 Released November 25, 2018
 
 - **Added support for Dynamics**  
-Cloud App Security now includes support for the Microsoft Dynamics activities that are supported in the Office 365 audit log.
+Cloud App Security now includes support for the Microsoft Dynamics activities that are supported in the Microsoft 365 audit log.
 
 - **Scanning encrypted content (preview)**  
 Cloud App Security now enables you to scan content that is protected by Azure Information Protection protection labels. This will allow you to find sensitive content, even in files that have already been encrypted by Azure Information Protection.
@@ -652,8 +652,8 @@ Released October, 2018
 
 Released September 25, 2018
 
-- **Conditional Access App Control for Office 365 is now in Public Preview**  
-  - Conditional Access App Control now also supports Office 365 and any app that is configured with Open ID Connect.
+- **Conditional Access App Control for Microsoft 365 is now in Public Preview**  
+  - Conditional Access App Control now also supports Microsoft 365 and any app that is configured with Open ID Connect.
   - Provide feedback from within a session: This new tool enables you to provide feedback to the Cloud App Security team about the performance of an application under session control, directly from within the session.
 
 - **Native integration with Microsoft Defender ATP for Shadow IT Discovery beyond your corp**  
@@ -724,7 +724,7 @@ There is a new suggested query to enable you to identify discovered apps that ar
 
 Released July 8, 2018
 
-- You now have the ability to see generic activities for Office 365. In the **Activity log** and in **Activity policies** you can now filter the Office 365 activities for **Unspecified** activities. Reviewing these activities enables you to investigate information about activities performed that aren't yet classified by type in Cloud App Security, and you can use these activities to send requests to the Cloud App Security team to create new activity types based on these activities.
+- You now have the ability to see generic activities for Microsoft 365. In the **Activity log** and in **Activity policies** you can now filter the Microsoft 365 activities for **Unspecified** activities. Reviewing these activities enables you to investigate information about activities performed that aren't yet classified by type in Cloud App Security, and you can use these activities to send requests to the Cloud App Security team to create new activity types based on these activities.
 
 ## Cloud App Security release 126
 
@@ -782,7 +782,7 @@ Released May 27, 2018
 
 - **Integrate with Microsoft Data Classification Service**  
 Microsoft Cloud App Security now enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps.   
-The Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection, and Microsoft Cloud App Security. It allows you to extend the same data classification framework to the third-party cloud apps that are protected by Microsoft Cloud App Security, leveraging the decisions you already made across an even greater number of apps.
+The Microsoft Data Classification Service provides a unified information protection experience across Microsoft 365, Azure Information Protection, and Microsoft Cloud App Security. It allows you to extend the same data classification framework to the third-party cloud apps that are protected by Microsoft Cloud App Security, leveraging the decisions you already made across an even greater number of apps.
 
 - **Connect to Microsoft Azure** (gradual rollout)  
 Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyond Amazon Web Services and now supports Microsoft Azure. This enables you to seamlessly connect and monitor all your Azure subscriptions with Cloud App Security. This connection provides you with a powerful set of tools to protect your Azure environment, including:
@@ -805,7 +805,7 @@ Microsoft Cloud App Security provides enterprises with the ability to granularly
  We now have a built-in alert to notify you when any of a tenant's discovered apps is breached. The alert will provide information about the time and date of the breach, which users used the app, and will link to publicly available sources that provide information about the breach.
 
 - **New mail server**  
- Cloud App Security's mail server changed and uses different IP address ranges. To make sure you can get notifications, add the new IP addresses to your anti-spam whitelist. For users who customize their notifications, Microsoft Cloud App Security enables this for you using MailChimp&reg;, a third-party email service. For the list of mail server IP addresses, and instructions for enabling work with MailChimp, see [Network requirements](network-requirements.md#mail-server) and [Mail settings](mail-settings.md).
+ Cloud App Security's mail server changed and uses different IP address ranges. To make sure you can get notifications, add the new IP addresses to your anti-spam allow list. For users who customize their notifications, Microsoft Cloud App Security enables this for you using MailChimp&reg;, a third-party email service. For the list of mail server IP addresses, and instructions for enabling work with MailChimp, see [Network requirements](network-requirements.md#mail-server) and [Mail settings](mail-settings.md).
 
 ## Cloud App Security release 123
 
@@ -834,7 +834,7 @@ Released April 22, 2018
 
 Released April 8, 2018
 
-- For Office 365 and Azure AD, we are now gradually rolling out the ability to detect internal applications as user account activities performed by the Office 365 and Azure AD applications (both internal and external). This enables you to create policies that will alert you if an application performs unexpected and unauthorized activities.
+- For Microsoft 365 and Azure AD, we are now gradually rolling out the ability to detect internal applications as user account activities performed by the Microsoft 365 and Azure AD applications (both internal and external). This enables you to create policies that will alert you if an application performs unexpected and unauthorized activities.
 
 - When exporting an app permissions list to csv, additional fields such as publisher, permissions level, and community usage are included to assist with the compliance and investigation process.
 
@@ -844,7 +844,7 @@ Released April 8, 2018
 
 Released March 18, 2018
 
-- The IP address ranges page includes built-in IP addresses that are discovered by Cloud App Security. This includes IP addresses for identified cloud services, like Azure and Office 365, as well as the Threat intelligence feed that automatically enriches IP addresses with information about known risky IP addresses.
+- The IP address ranges page includes built-in IP addresses that are discovered by Cloud App Security. This includes IP addresses for identified cloud services, like Azure and Microsoft 365, as well as the Threat intelligence feed that automatically enriches IP addresses with information about known risky IP addresses.
 
 - When Cloud App Security attempts to run a governance action on a file but fails because the file is locked, it will now automatically retry the governance action.
 
