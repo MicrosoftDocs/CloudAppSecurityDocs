@@ -79,7 +79,7 @@ To enable Microsoft Defender ATP integration with Cloud App Security:
 
 After you integrate Microsoft Defender ATP with Cloud App Security, you can investigate discovered machine data in the Cloud Discovery dashboard.
 
-1. In the Cloud App Security portal, click **Cloud Discovery** and then **Cloud Discovery dashboard**.
+1. In Cloud App Security, click **Cloud Discovery** and then **Cloud Discovery dashboard**.
 2. In the top navigation bar, under **Continuous reports**, select **Win10 endpoint users**.
   ![WD ATP report](media/win10-dashboard-report.png)
 3. Across the top, you'll see the number of discovered machines added after the integration.
@@ -93,7 +93,7 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
         - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
         - **Downloads**: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
     - **Discovered apps**  
-  Lists all the discovered apps that were accessed by the machine.
+    Lists all the discovered apps that were accessed by the machine.
     - **User history**  
     Lists all the users who signed in to the machine.
     - **IP address history**  
@@ -107,6 +107,38 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 > - Microsoft Defender ATP forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Microsoft Defender ATP reports all the transactions performed over the last hour.
 > - If the endpoint device is behind a forward proxy, traffic data will not be visible to Microsoft Defender ATP and hence will not be included in Cloud Discovery reports. For more information, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+
+## Investigate device network events in Microsoft Defender ATP
+
+Use the following steps to gain more granular visibility on device's network activity in Microsoft Defender ATP:
+
+1. In Cloud App Security, under **Discovery** and then select **Machines**.
+1. Select the machine you want to investigate and then in the top-right click **View in Microsoft Defender ATP**.
+1. In Microsoft Defender Security Center, under **Devices** > {selected device}, select **Timeline**.
+1. Under **Filters**, select **Network events**.
+1. Investigate the device's network events as required.
+
+![Screenshot showing device timeline in Microsoft Defender Security Center](media/mdatp-selected-device.png)
+
+## Investigate app usage in Microsoft Defender ATP with advanced hunting
+
+Use the following steps to gain more granular visibility on app-related network events in Microsoft Defender ATP:
+
+1. In Cloud App Security, under **Discovery** and then select **Discovered**.
+1. Click on the app you want to investigate to open its drawer.
+1. Click on the app's **Domain** list and then copy the list of domains.
+1. In Microsoft Defender Security Center, under **Devices**, select **Advanced hunting**.
+1. Paste the following query and replace `<DOMAIN_LIST>` with the list of domains you copied earlier.
+
+    ```kusto
+    DeviceNetworkEvents
+    | where RemoteUrl in ("<DOMAIN_LIST>")
+    | order by Timestamp desc
+    ```
+
+1. Run the query and investigate network events for this app.
+
+![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mdatp-advanced-hunting.png)
 
 ## Block access to unsanctioned cloud apps
 
