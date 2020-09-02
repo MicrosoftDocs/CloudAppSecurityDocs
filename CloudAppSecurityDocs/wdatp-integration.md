@@ -144,7 +144,7 @@ Use the following steps to gain more granular visibility on app-related network 
 
 Cloud App Security uses the built-in [**Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) app tag to mark cloud apps as prohibited for use, available in both the Cloud Discovery and Cloud app catalog pages. By enabling the integration with Microsoft Defender ATP, you can seamlessly block access to unsanctioned apps with a single click in the Cloud App Security portal.
 
-### How it works
+### How blocking works
 
 Apps marked as **Unsanctioned** in Cloud App Security are automatically synced to Microsoft Defender ATP, usually within a few minutes. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Microsoft Defender Antivirus within the Network Protection SLA.
 
