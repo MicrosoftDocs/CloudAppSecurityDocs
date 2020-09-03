@@ -31,7 +31,7 @@ ms.custom: seodec18
 
 This article provides a list of possible issues when connecting your SIEM to Cloud App Security and provides possible resolutions.
 
-## Recover missing activity events in MCAS SIEM Agent
+## Recover missing activity events in Cloud App Security SIEM Agent
 
 Before you proceed, check that your [Cloud App Security license](https://aka.ms/mcaslicensing) supports the SIEM integration you are trying to configure.
 
