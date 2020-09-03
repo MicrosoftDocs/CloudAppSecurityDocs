@@ -33,6 +33,8 @@ This article provides a list of possible issues when connecting your SIEM to Clo
 
 ## Recover missing activity events in MCAS SIEM Agent
 
+Before you proceed, check that your [Cloud App Security license](https://aka.ms/mcaslicensing) supports the SIEM integration you are trying to configure.
+
 If you received a system alert regarding an issue with activity delivery through the SIEM agent, follow the steps below to recover the activity events in the timeframe of the issue. These steps will guide you through setting up a new Recovery SIEM agent that will run in parallel and resend the activity events to your SIEM.
 
 > [!NOTE]
@@ -41,10 +43,13 @@ If you received a system alert regarding an issue with activity delivery through
 ### Step 1 – Configure a new SIEM Agent in parallel to your existing agent
 
 1. In the Cloud App Security portal, go to Security Extensions page.
-1. In the SIEM Agents tab, click on [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM.
+1. In the SIEM Agents tab, click on [add a new SIEM agent](siem.md), and use the wizard to configure the connection details to your SIEM. For example, you can create a new SIEM agent with the following configuration:
+    - **Protocol**: TCP
+    - **Remote host**: Any machine where you can listen to a port. For example, a simple solution would to use the same machine as the agent and set the remote host IP address to 127.0.0.1
+    - **Port**: Any port you can listen to on the remote host machine
 
-    >[!NOTE]
-    >This agent should run in parallel to the existing one, so network configuration might not be identical.
+    > [!NOTE]
+    > This agent should run in parallel to the existing one, so network configuration might not be identical.
 
 1. In the wizard, configure the Data Types to include **only Activities** and apply the same activity filter that was used in your original SIEM agent (if it exists).
 1. Save the settings.
@@ -52,15 +57,26 @@ If you received a system alert regarding an issue with activity delivery through
 
 ### Step 2 – Validate the successful data delivery to your SIEM
 
-1. Connect to your SIEM and validate that new data is received from the new SIEM Agent that you configured.
-1. The agent will only send activities from the timeframe of the issue, which you were alerted on.
+Use the following steps to validate your configuration:
+
+1. Connect to your SIEM and check that new data is received from the new SIEM agent that you configured.
+
+> [!NOTE]
+> The agent will only send activities in the timeframe of the issue on which you were alerted.
+
+1. If data is not received by your SIEM, then on the new SIEM agent machine, try listening to the port that you configured to forward activities to see if data is being sent from the agent to the SIEM. For example, run `netcat -l <port>` where `<port>` is the previously configured port number.
+
+> [!NOTE]
+> If you are using `ncat`, make sure you specify the ipv4 flag `-4`.
+
+1. If data is being sent by the agent but not received by your SIEM, check the SIEM agent log. If you can see "connection refused" messages, make sure that your SIEM agent is configured to use TLS 1.2 or newer.
 
 ### Step 3 – Remove the Recovery SIEM agent
 
 1. The recovery SIEM agent will automatically stop sending data and be disabled once it reaches the end date.
 1. Validate in your SIEM that no new data is sent by the recovery SIEM agent.
 1. Stop the execution of the agent on your machine.
-1. In the portal, go to SIEM Agent page, and remove the Recovery SIEM Agent.
+1. In the portal, go to the SIEM Agent page and remove the recovery SIEM agent.
 1. Make sure your original SIEM Agent is still running properly.
 
 ## General troubleshooting
