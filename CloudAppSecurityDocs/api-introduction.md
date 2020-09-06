@@ -101,6 +101,7 @@ The following methods are supported for providing the limit parameter:
 >
 > - If no limit is provided a default of 100 will be set.
 > - Responses for all requests made with the API token are limited to a maximum of 100 items.
+> - The throttle limit for all API requests is 30 requests per minute per tenant.
 
 ## Filters
 
