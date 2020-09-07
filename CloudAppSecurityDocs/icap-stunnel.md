@@ -31,7 +31,7 @@ ms.custom: seodec18
 
 Microsoft Cloud App Security can integrate with existing DLP solutions to extend these controls to the cloud while preserving a consistent and unified policy across on-premises and cloud activities. The platform exports easy-to-use interfaces including REST API and ICAP, enabling integration with content classification systems such as Symantec Data Loss Prevention (formerly Vontu Data Loss Prevention) or Forcepoint DLP.
 
-Integration is accomplished by using the standard ICAP protocol, an http-like protocol described in [RFC 3507](https://tools.ietf.org/html/rfc3507). To secure ICAP for transmission of your data, it's required to set up a secure SSL tunnel (stunnel) between your DLP solution and Cloud App Security. The stunnel setup provides TLS encryption functionality to your data as it travels between your DLP server and Cloud App Security.
+Integration is accomplished by using the standard ICAP protocol, an http-like protocol described in [RFC 3507](https://tools.ietf.org/html/rfc3507). To secure ICAP for transmission of your data, it's required to set up a secure TLS tunnel (stunnel) between your DLP solution and Cloud App Security. The stunnel setup provides TLS encryption functionality to your data as it travels between your DLP server and Cloud App Security.
 
 This guide provides the steps necessary for configuring the ICAP connection in Cloud App Security and the stunnel setup to secure communication through it.
 
@@ -86,7 +86,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 4. Create a certificate in one of the following ways:
 
-    - Use your certificate management server to create an SSL certificate on your ICAP server. Then copy the keys to the server you prepared for the stunnel installation.
+    - Use your certificate management server to create an TLS certificate on your ICAP server. Then copy the keys to the server you prepared for the stunnel installation.
     - Or, on the stunnel server, use the following OpenSSL commands to generate a private key and a self-signed certificate. Replace these variables:
         - **key.pem** with the name of your private key
         - **cert.pem** with the name of your certificate
@@ -159,7 +159,7 @@ Make sure you create the private key without a pass phrase so that stunnel can r
 
 You can create the certificates in one of the following ways:
 
-- Use your certificate management server to create an SSL certificate on your ICAP server. Then copy the keys to the server you prepared for the stunnel installation.
+- Use your certificate management server to create an TLS certificate on your ICAP server. Then copy the keys to the server you prepared for the stunnel installation.
 - Or, on the stunnel server, use the following OpenSSL commands to generate a private key and a self-signed certificate.
 Replace these variables:
   - **key.pem** with the name of your private key
