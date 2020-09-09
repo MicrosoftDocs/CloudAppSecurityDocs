@@ -38,17 +38,17 @@ To create a snapshot report:
 
 1. Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
-2. In the Cloud App Security portal, click on **Discover** then **Create snapshot report**.
+1. In the Cloud App Security portal, click on **Discover** then **Create snapshot report**.
 
     ![Create new snapshot report](media/create-new-snapshot-report.png)
 
-3. Enter a **Report name** and a **Description**
+1. Enter a **Report name** and a **Description**
 
     ![New snapshot report](media/new-snapshot-report.png)
 
-4. Select the **Data source** from which you want to upload the log files.
+1. Select the **Data source** from which you want to upload the log files.
 
-5. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Click **View and verify** then **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
+1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Click **View and verify** then **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
 
     ![Verify your log format](media/cloud-discovery-snapshot-verify.png)
 
@@ -56,22 +56,21 @@ To create a snapshot report:
     > The FTP sample format is supported in snapshots and automated upload while  syslog is supported in automated upload only.  
     Downloading a sample log will download a sample FTP log.
 
-6. **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.
+1. **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.
 
-7. Click **Create**.
+1. Click **Create**.
 
-8. After upload completes, the status message will appear at the top right corner of your screen letting you know that your log was successfully uploaded.
+1. After upload completes, the status message will appear at the top right corner of your screen letting you know that your log was successfully uploaded.
 
-9. After you upload your log files, it will take some time for them to be parsed and analyzed.
+1. After you upload your log files, it will take some time for them to be parsed and analyzed.
     After processing of your log files completes, you'll receive an email to notify you that it's done.
 
-10. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
+1. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
     ![processing log file menu bar](media/processing-log-file-menu-bar.png)
 
-11. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by going to the Settings cog and selecting **Cloud Discovery settings**.
+1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by clicking the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Settings**.
 
-    ![Discovery settings tab](media/discovery-settings-tab.png)
-12. Then selecting **Snapshot reports** and select your snapshot report.
+1. Then under **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
 
     ![snapshot report management](media/snapshot-report-managment.png)
 
