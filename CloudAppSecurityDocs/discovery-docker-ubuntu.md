@@ -113,7 +113,10 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 2 – On-premises deployment of your machine
 
-The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
+The following steps describe the deployment in Ubuntu.
+
+> [!NOTE]
+> The deployment steps for other supported platforms may be slightly different.
 
 1. Open a terminal on your Ubuntu machine.
 
