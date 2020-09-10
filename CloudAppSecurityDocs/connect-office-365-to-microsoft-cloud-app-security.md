@@ -51,7 +51,7 @@ Cloud App Security supports the following Office 365 apps:
 - Yammer
 
 > [!NOTE]
-> Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
+> Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
 
 ## How to connect Office 365 to Cloud App Security  
 
