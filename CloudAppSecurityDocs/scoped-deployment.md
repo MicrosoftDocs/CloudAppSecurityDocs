@@ -32,7 +32,7 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
 
 - To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Cloud App Security. By default, you'll see the following groups:
 
-  - **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
+  - **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
 
   - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 
@@ -76,7 +76,7 @@ The include and exclude rules you create work together to scope the overall moni
 If you create the following rules:
 
 - Exclude user group "Germany all users"
-- Include for user group "Global sales" only Microsoft 365 activities
+- Include for user group "Global sales" only Office 365 activities
 - Include for user group "Sales managers" only Power BI activities
 - Salesforce is connected to Microsoft Cloud App Security and no rules are set for it
 
@@ -85,8 +85,8 @@ The following user activities are monitored:
 |User|Group membership|Activities monitored|
 |----|----|----|
 |Adriana|Germany all users<br />Global sales<br />Sales managers|None|
-|Alain|Global sales|Microsoft 365 and all subapps except Power BI|
-|Cornel|Global sales<br />Sales managers|Microsoft 365 and all subapps|
+|Alain|Global sales|Office 365 and all subapps except Power BI|
+|Cornel|Global sales<br />Sales managers|Office 365 and all subapps|
 |Raymond|Sales managers|Power BI only|
 
 > [!NOTE]

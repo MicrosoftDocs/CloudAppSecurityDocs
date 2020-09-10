@@ -22,7 +22,7 @@ ms.custom: seodec18
 
 This article provides an overview of how to get started using Cloud App Security to gain visibility across your organization into Shadow IT using Cloud Discovery.
 
-Cloud App Security enables you to discover and analyze cloud apps that are in use in your organization’s environment. The Cloud Discovery dashboard shows all the cloud apps running in the environment and categorizes them by function and enterprise readiness. For each app, discover the associated users, IP addresses, machines, transactions, and conducts risk assessment without needing to install an agent on your endpoint devices.
+Cloud App Security enables you to discover and analyze cloud apps that are in use in your organization's environment. The Cloud Discovery dashboard shows all the cloud apps running in the environment and categorizes them by function and enterprise readiness. For each app, discover the associated users, IP addresses, machines, transactions, and conducts risk assessment without needing to install an agent on your endpoint devices.
 
 ## Detect new high-volume or wide app use <a name= "detect-volume"></a>
 
@@ -38,7 +38,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 2. In the **Policy template** field, select **New high volume app** or **New popular app** and apply the template.
 
-3. Customize policy filters to meet your organization’s requirements.
+3. Customize policy filters to meet your organization's requirements.
 
 4. Configure the actions to be take when an alert is triggered.
 
@@ -59,7 +59,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 2. In the **Policy template** field, select the **New risky app** template and apply the template.
 
-3. Under **App matching all of the following** set the [Risk Score](risk-score.md) slider and the Compliance risk factor to customize you are the level of risk you want to trigger an alert, and set the other policy filters to meet your organization’s security requirements.
+3. Under **App matching all of the following** set the [Risk Score](risk-score.md) slider and the Compliance risk factor to customize you are the level of risk you want to trigger an alert, and set the other policy filters to meet your organization's security requirements.
 
     1. Optional: To get more meaningful detections, customize the amount of traffic that will trigger an alert.
 
@@ -93,7 +93,7 @@ You can detect when your employees continue to use unsanctioned apps as a replac
 
 ## Detect unusual usage patterns on your network
 
-Detect anomalous traffic use patterns (uploads/downloads) in your cloud apps, that originate from users or IP addresses inside your organization’s network.
+Detect anomalous traffic use patterns (uploads/downloads) in your cloud apps, that originate from users or IP addresses inside your organization's network.
 
 ### Prerequisites
 
@@ -134,26 +134,26 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ## Detect risky OAuth apps
 
-Get visibility and control over [OAuth apps](investigate-risky-oauth.md) that are installed inside apps like G Suite, Microsoft 365, and Salesforce. OAuth apps that request high permissions and have rare community use might be considered risky.
+Get visibility and control over [OAuth apps](investigate-risky-oauth.md) that are installed inside apps like G Suite, Office 365, and Salesforce. OAuth apps that request high permissions and have rare community use might be considered risky.
 
 ### Prerequisites
 
-You must have the G Suite, Microsoft 365, or Salesforce app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+You must have the G Suite, Office 365, or Salesforce app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
 
 1. On the **Policies** page, create a new **OAuth app policy**.
 
-2. Select the filter **App** and set the app the policy should cover, G Suite, Microsoft 365, or Salesforce.
+2. Select the filter **App** and set the app the policy should cover, G Suite, Office 365, or Salesforce.
 
-3. Select **Permission level** filter equals **High** (available for G Suite and Microsoft 365).
+3. Select **Permission level** filter equals **High** (available for G Suite and Office 365).
 
 4. Add the filter **Community use** equals **Rare**.
 
-5. Configure the actions to take when an alert is triggered. For example, for Microsoft 365, check **Revoke app** for OAuth apps detected by the policy.
+5. Configure the actions to take when an alert is triggered. For example, for Office 365, check **Revoke app** for OAuth apps detected by the policy.
 
 > [!NOTE]
-> Supported for G Suite, Microsoft 365, and Salesforce app stores.
+> Supported for G Suite, Office 365, and Salesforce app stores.
 
 ## Next steps
 

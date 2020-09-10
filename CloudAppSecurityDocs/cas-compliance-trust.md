@@ -165,7 +165,7 @@ Microsoft Cloud App Security enables you to limit access of administrators to th
 
 ### Permissions
 
-Microsoft Cloud App Security supports role-based access control. Microsoft 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](manage-admins.md).
+Microsoft Cloud App Security supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](manage-admins.md).
 
 ## Customer controls for organizational compliance
 
