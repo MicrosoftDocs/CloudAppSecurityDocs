@@ -39,7 +39,7 @@ Additional integration solutions include:
 
 ## Generic SIEM integration architecture
 
-The SIEM agent is deployed in your organization’s network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
+The SIEM agent is deployed in your organization's network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
 The traffic is then sent over an encrypted HTTPS channel on port 443.
 
 Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM. Cloud App security uses the network configurations you provided during the setup (TCP or UDP with a custom port).
@@ -93,7 +93,7 @@ Integrating with your SIEM is accomplished in three steps:
    ![Data types settings](media/siem3.png)
 
 1. Copy the token and save it for later.
-    Click Finish and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
+    Click Finish and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later.
 
 > [!NOTE]
 > Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid.
@@ -161,7 +161,7 @@ The following text is an alerts logfile example:
 | Activities/Alerts | rt | Activity or alert timestamp |
 | Activities/Alerts | msg | Activity or alert description as shown in the portal |
 | Activities/Alerts | suser | Activity or alert subject user |
-| Activities/Alerts | destinationServiceName | Activity or alert originating app, for example, Microsoft 365, Sharepoint, Box. |
+| Activities/Alerts | destinationServiceName | Activity or alert originating app, for example, Office 365, Sharepoint, Box. |
 | Activities/Alerts | cs\<X>Label | Each label has a different meaning, but the label itself explains it, for example, targetObjects. |
 | Activities/Alerts | cs\<X> | The information corresponding to the label (the target user of the activity or alert as per the label example). |
 | Activities | EVENT_CATEGORY_* | High-level category of the activity |
@@ -169,7 +169,7 @@ The following text is an alerts logfile example:
 | Activities | externalId | Event ID |
 | Activities | dvc | IP of the client device |
 | Activities | requestClientApplication | User agent of the client device |
-| Alerts | \<alert type> | For example, “ALERT_CABINET_EVENT_MATCH_AUDIT” |
+| Alerts | \<alert type> | For example, "ALERT_CABINET_EVENT_MATCH_AUDIT" |
 | Alerts | \<name> | The matched policy name |
 | Alerts | externalId | Alert ID |
 | Alerts | src | IPv4 address of the client device |

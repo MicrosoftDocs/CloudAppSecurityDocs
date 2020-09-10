@@ -32,7 +32,7 @@ You may have users in Cloud App Security that you want to monitor but, due to co
 
 To configure your user privacy groups, you must first [import user groups](user-groups.md) to Cloud App Security. By default, you'll see the following groups:
 
-- **Application** user group -  A built-in group that enables you to see activities performed by Microsoft 365 and Azure AD applications.
+- **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
 
 - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
 
