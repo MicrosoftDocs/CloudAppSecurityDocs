@@ -27,6 +27,13 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## Cloud App Security release 182 and 183
+
+Released September 6, 2020
+
+- **Access & session controls for Azure portal GA**  
+Conditional Access App Control for the Azure portal is now generally available. For information about configuring these controls, see the [Deployment guide](proxy-deployment-aad.md).
+
 ## Cloud App Security release 181
 
 Released August 9, 2020
