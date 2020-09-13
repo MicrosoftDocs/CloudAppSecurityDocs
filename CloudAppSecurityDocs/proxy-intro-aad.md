@@ -147,7 +147,7 @@ While session controls are built to work with any browser on any major platform 
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Azure portal (preview)
+- Azure portal
 - Box
 - Concur
 - CornerStone on Demand
