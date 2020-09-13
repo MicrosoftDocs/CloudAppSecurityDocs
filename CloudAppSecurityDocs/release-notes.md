@@ -6,7 +6,7 @@ description: This article is updated frequently to let you know what's new in th
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/09/2020
+ms.date: 09/13/2020
 ms.topic: overview
 ms.service: cloud-app-security
 
@@ -31,7 +31,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 Released September 6, 2020
 
-- **Access & session controls for Azure portal GA**  
+- **Access and session controls for Azure portal GA**  
 Conditional Access App Control for the Azure portal is now generally available. For information about configuring these controls, see the [Deployment guide](proxy-deployment-aad.md).
 
 ## Cloud App Security release 181
