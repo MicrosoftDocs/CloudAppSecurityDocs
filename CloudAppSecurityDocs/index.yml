@@ -68,7 +68,7 @@ landingContent:
           - text: Block download of sensitive information
             url: use-case-proxy-block-session-aad.md
           - text: Manage cloud platform security
-            url: tutorial-security-configuration.md
+            url: tutorial-cloud-platform-security.md
           - text: Protect files with admin quarantine
             url: use-case-admin-quarantine.md
           - text: Apply Azure Information Protection classification labels
