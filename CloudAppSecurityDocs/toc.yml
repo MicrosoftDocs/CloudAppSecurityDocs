@@ -39,6 +39,8 @@
     href: tutorial-proxy.md
   - name: Block downloads of sensitive information
     href: use-case-proxy-block-session-aad.md
+  - name: Manage cloud platform security
+    href: tutorial-security-configuration.md
   - name: Protecting your files with admin quarantine
     href: use-case-admin-quarantine.md
   - name: Apply Azure Information Protection labels automatically
