@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # List - Alerts API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the GET or POST request to fetch a list of alerts matching the specified filters.
 

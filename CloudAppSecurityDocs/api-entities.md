@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Entities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > This API is not available for Office 365 Cloud App Security.

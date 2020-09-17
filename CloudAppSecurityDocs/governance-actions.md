@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Governing connected apps
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Governance enables you to control what your users do, in real time, across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Cloud App Security. Governance actions control what your users do, in real time, across connected apps. For information about where you can use governance actions, see [Apply governance actions](control.md#apply-governance-actions).
 

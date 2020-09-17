@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Troubleshooting Microsoft Cloud App Security policies
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes the process for troubleshooting policy creation in Cloud App Security.
 

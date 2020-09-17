@@ -28,7 +28,7 @@ ms.custom: seodec18
 
 # Cloud Discovery anomaly detection policy
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article gives you reference details about policies. Explanations for each policy type and fields that can be configured for each policy are listed.
 

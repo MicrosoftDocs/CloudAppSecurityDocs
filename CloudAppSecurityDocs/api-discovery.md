@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Cloud Discovery API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud Discovery parses system logs provided by the user to detect new and unknown applications in your cloud environment. Use the Cloud Discovery API to automate the uploading of your company's discovery log files. The file upload process consists of 3 API calls which must be called consecutively.
 

@@ -21,7 +21,7 @@ ms.custom: seodec18
 ---
 # What's new with Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 

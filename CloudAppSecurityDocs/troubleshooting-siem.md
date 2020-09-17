@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Troubleshooting the SIEM agent
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides a list of possible issues when connecting your SIEM to Cloud App Security and provides possible resolutions.
 

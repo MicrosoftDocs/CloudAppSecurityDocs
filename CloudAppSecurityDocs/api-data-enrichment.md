@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Create IP address range - Data Enrichment API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the POST request to add a new IP address range.
 

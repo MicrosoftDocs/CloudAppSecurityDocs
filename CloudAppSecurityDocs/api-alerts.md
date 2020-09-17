@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Alerts API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The Alerts API provides you with information about immediate risks identified by Cloud App Security and require attention. Alerts can result from suspicious usage patterns or from files containing content that violates company policy.
 

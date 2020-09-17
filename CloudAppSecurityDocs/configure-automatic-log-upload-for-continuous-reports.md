@@ -26,7 +26,7 @@ ms.custom: seodec18
 ---
 # Configure automatic log upload for continuous reports on a virtual appliance - Deprecated
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!WARNING]
 > It is highly recommended to configure log upload using [Docker](discovery-docker.md) for more flexible deployment.
