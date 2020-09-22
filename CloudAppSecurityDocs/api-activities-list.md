@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # List - Activities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the GET or POST request to fetch a list of activities matching the specified filters.
 

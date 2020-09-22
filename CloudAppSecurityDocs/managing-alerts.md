@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Manage alerts
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article explains how to work with alerts raised in the Cloud App Security portal.
 

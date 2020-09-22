@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Investigate activities using the API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security provides you with a fully supported REST API to enable you to programmatically interact with the service.
 

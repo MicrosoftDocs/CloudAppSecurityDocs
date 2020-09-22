@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Docker on Linux on-premises
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on an on-premises Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS server.
 

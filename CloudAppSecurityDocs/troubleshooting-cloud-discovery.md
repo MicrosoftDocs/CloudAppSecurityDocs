@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Troubleshooting Cloud Discovery
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides a list of Cloud Discovery errors and resolution recommendations for each.
 

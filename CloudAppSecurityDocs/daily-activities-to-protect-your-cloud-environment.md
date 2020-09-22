@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Working with the dashboard
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes what you should do with Cloud App Security daily.  
 

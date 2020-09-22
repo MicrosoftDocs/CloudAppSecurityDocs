@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Feedback on activity - Activities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the POST request to send feedback about the activity matching the specified primary key.
 

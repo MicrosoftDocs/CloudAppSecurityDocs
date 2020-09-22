@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Tutorial: Automatically apply Azure Information Protection classification labels
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Cloud App Security helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
 

@@ -22,7 +22,7 @@ ms.custom: seodec18
 ---
 # Activity privacy
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security provides enterprises with the ability to granularly determine which users they want to monitor based on group membership. Activity privacy adds the ability to follow your organization's compliance regulations without compromising user privacy. This is achieved by enabling you to monitor users whilst maintaining their privacy by hiding their activities in the activity log. Only authorized admins have the option to choose to view these private activities, with each instance being audited in the governance log.
 

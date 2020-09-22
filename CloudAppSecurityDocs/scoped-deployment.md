@@ -22,7 +22,7 @@ ms.custom: seodec18
 ---
 # Scoped deployment <a name="scoped-deployment"></a> 
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring.
 

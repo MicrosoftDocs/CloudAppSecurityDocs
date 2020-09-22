@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Log collector FTP configuration
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes how to modify the configuration for the Cloud App Security Cloud Discovery docker.
 

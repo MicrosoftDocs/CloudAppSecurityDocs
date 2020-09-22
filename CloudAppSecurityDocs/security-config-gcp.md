@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Security configuration for Google Cloud Platform
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security provides you with a security configuration assessment of your Google Cloud Platform (GCP) environment. This assessment provides fundamental security recommendations based on the [Center for Internet Security (CIS) benchmark for GCP](https://www.cisecurity.org/benchmark/google_cloud_computing_platform/), version 1.1.0.
 

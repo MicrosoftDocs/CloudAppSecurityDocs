@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Cloud App Security REST API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes how to interact with Cloud App Security over HTTPS.
 
