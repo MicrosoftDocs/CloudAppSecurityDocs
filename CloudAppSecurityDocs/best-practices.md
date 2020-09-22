@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 
 # Cloud App Security best practices
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides best practices for protecting your organization by using Microsoft Cloud App Security. These best practices come from our experience with Cloud App Security and the experiences of customers like you.
 

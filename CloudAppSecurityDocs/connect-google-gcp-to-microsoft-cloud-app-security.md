@@ -19,7 +19,7 @@ ms.collection: M365-security-compliance
 ---
 # Connect Google Cloud Platform to Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Cloud App Security protects GCP, see [Protect GCP](protect-gcp.md).
 

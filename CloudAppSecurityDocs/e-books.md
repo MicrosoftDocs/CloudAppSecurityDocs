@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 
 # Microsoft Cloud App Security e-books
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Read our e-books to learn about Microsoft Cloud App Security, its key use cases, and deployment best practices to help you better secure your cloud environments.
 

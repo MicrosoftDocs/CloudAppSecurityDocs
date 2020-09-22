@@ -18,7 +18,7 @@ ms.custom: seodec18
 ---
 # Cloud Discovery policies
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides an overview of how to get started using Cloud App Security to gain visibility across your organization into Shadow IT using Cloud Discovery.
 

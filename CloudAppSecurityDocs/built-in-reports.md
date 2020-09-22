@@ -27,7 +27,7 @@ ms.custom: seodec18
 
 # Generate data management reports
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security enables you to generate reports that provide you with an overview of files in your cloud apps.
 

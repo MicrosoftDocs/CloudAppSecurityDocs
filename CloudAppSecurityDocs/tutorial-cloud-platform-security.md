@@ -22,7 +22,7 @@ ms.suite: ems
 
 # Tutorial: Manage cloud platform security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Remote work often leads to extensive use of cloud apps and cloud platforms for common business tasks and surfaces the need to secure cloud environments and the adoption of cloud security products. According to the [shared responsibility model](/azure/security/fundamentals/shared-responsibility), an organization is responsible for managing and securing its cloud platform: Identity Access Management (IAM), Virtual Machines (VM) and their compute resources, data and storage, network resources, and more.
 

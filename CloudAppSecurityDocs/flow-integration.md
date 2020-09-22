@@ -29,7 +29,7 @@ ms.suite: ems
 
 # Integrate with Microsoft Power Automate for custom alert automation
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security integrates with [Microsoft Power Automate](/flow/getting-started) to provide custom alert automation and orchestration playbooks. By using the [ecosystem of connectors](/connectors/) available in Power Automate, you can automate the triggering of playbooks when Cloud App Security generates alerts. For example, automatically create an issue in ticketing systems using [ServiceNow connector](/connectors/service-now/) or send an approval email to execute a custom governance action when an alert is triggered in Cloud App Security.
 

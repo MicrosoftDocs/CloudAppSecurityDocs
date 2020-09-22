@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Bulk dismiss - Alerts API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the POST request to dismiss multiple alerts matching the specified filters.
 

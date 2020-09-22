@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Troubleshooting - What is `*.cas.ms`, `*.mcas.ms`, or `*.mcas-gov.us`?
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides information about the `cas.ms`, `mcas.ms`, and `mcas-gov.us` URL suffixes used by Conditional Access App Control.
 

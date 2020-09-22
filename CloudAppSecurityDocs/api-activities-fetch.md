@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Fetch - Activities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the GET request to fetch the activity matching the specified primary key.
 

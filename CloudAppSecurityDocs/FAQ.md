@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Frequently asked questions
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides frequently asked questions and answers about Cloud App Security.
 

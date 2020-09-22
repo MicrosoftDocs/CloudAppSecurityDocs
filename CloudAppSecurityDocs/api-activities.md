@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Activities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The Activity API gives you visibility into all actions performed in your cloud apps. The data from this API can supply information regarding who logs in to which app and when, which files are being downloaded from suspicious locations, and so on.
 

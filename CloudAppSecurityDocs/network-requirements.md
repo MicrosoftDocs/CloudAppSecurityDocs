@@ -24,7 +24,7 @@ ms.custom: seodec18
 ---
 # Network requirements
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides a list of ports and IP addresses you need to allow and allow list to work with Microsoft Cloud App Security.
 

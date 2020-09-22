@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Managing API tokens
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 In order to access the Cloud App Security API, you have to create an API token and use it in your software to connect to the API. This token will be included in the header when Cloud App Security makes API requests.
 

@@ -26,7 +26,7 @@ ms.custom: seodec18
 ---
 # Past-release archive of Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article is an archive that describes updates made in past releases of Cloud App Security. To see the latest what's new list, see [What's new in Cloud App Security](release-notes.md).
 

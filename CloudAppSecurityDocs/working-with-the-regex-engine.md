@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Working with the RegEx engine
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for using RegEx for pattern matching in Cloud App Security policies.
 

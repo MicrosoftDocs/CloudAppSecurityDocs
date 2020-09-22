@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 
 # How Cloud App Security helps protect your Okta environment
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As an identity and access management solution, Okta holds the keys to your organizations most business critical services. Okta manages the authentication and authorization processes for your users and customers. Any abuse of Okta by a malicious actor or any human error may expose your most critical assets and services to potential attacks.
 

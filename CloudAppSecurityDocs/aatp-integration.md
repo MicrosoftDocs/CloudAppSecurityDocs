@@ -18,7 +18,7 @@ ms.custom: seodec18
 
 # Azure Advanced Threat Protection integration
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md). For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](/azure-advanced-threat-protection/what-is-atp)
 

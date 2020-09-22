@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Integrate Cloud App Security with Corrata
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 If you work with both Cloud App Security and Corrata, you can integrate the two products to enhance your security Cloud Discovery experience for mobile app use. Corrata, as a local Mobile gateway, monitors your organization's traffic from mobile devices enabling you to set policies for blocking transactions. Together, Cloud App Security and Corrata provide the following capabilities:
 

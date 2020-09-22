@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Connect GitHub Enterprise Cloud to Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use. For more information about how Cloud App Security protects GitHub Enterprise Cloud, see [Protect GitHub Enterprise](protect-github.md).
 

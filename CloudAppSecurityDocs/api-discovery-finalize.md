@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Finalize file upload - Cloud Discovery API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 After the file content upload successfully completes, notify us in order to begin the processing of the file.
 

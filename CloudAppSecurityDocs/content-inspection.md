@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Content inspection
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 If you enable content inspection, you can choose to use preset expressions or to search for other customized expressions.
 

@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Connect Office 365 to Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Office 365 account using the app connector API. This connection gives you visibility into and control over Office 365 use. For information about how Cloud App Security protects Office 365, see [Protect Office 365](protect-office-365.md).
   

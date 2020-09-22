@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Dismiss - Alerts API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the POST request to dismiss the alert matching the specified primary key.
 
