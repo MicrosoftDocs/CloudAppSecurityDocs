@@ -1,4 +1,4 @@
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+*Applies to: Microsoft Cloud App Security*
 
 > [!IMPORTANT]
 >

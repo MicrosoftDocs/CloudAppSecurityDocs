@@ -104,7 +104,7 @@ This tutorial helps you use Microsoft Cloud App Security to detect unwanted file
 
 2. Set a quarantine location:
    1. For Office 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
-      ![quarantine settings](media/quarantine-warning.png)
+      ![quarantine warning](media/quarantine-warning.png)
 
       To set admin quarantine settings, under the settings cog, go to **Settings**. Provide a location for the quarantined files and a user notification that your user will receive when their file is quarantined.
       ![quarantine settings](media/quarantine-settings.png)

@@ -120,7 +120,7 @@ It's important to take a minute to review and modify the default weights given t
 
 3. Additionally, you can set whether certain values are either not available or not applicable in the score calculation. When included, N/A values have a negative contribution to the calculated score.
 
-    ![score](media/score.png "score metrics")
+    ![score metrics](media/score.png)
 
 All the information needed to understand how the Cloud App Security risk scores are stacking up is available in the Cloud App Security portal. To better understand a risk factor's weight in a specific risk category, use the "i" button to the right of each field name in the app's profile. This provides information about how exactly Cloud App Security scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
 

@@ -93,7 +93,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 * **Manage discovered apps using Azure Active Directory (Azure AD) Gallery**<a name ="gallery-apps"></a>: Cloud App Security also leverages its native integration with Azure AD to enable you to manage your discovered apps in Azure AD Gallery. For apps that already appear in the Azure AD Gallery, you can apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
 
-    ![shadow IT lifecycle](media/manage-app-in-azure-ad-gallery.png)
+    ![manage app in azure ad gallery](media/manage-app-in-azure-ad-gallery.png)
 
 * **Continuous monitoring**: Now that you have thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
 
