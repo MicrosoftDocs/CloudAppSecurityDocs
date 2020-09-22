@@ -21,11 +21,15 @@ ms.custom: seodec18
 ---
 # What's new with Microsoft Cloud App Security
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
+*Applies to: Microsoft Cloud App Security*
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+> [!IMPORTANT]
+>
+> Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
 ## Cloud App Security release 182 and 183
 
