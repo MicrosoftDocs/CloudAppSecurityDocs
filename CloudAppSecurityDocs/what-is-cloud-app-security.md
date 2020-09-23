@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/15/2019
+ms.date: 09/23/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
