@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Built-in content inspection
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes the process Microsoft Cloud App Security follows when running the built-in DLP content inspection on data in your cloud.
 

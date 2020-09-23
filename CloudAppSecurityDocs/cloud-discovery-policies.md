@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Create Cloud Discovery policies
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can create app discovery policies to alert you when new apps are detected. Cloud App Security also searches all the logs in your Cloud Discovery for anomalies.
 

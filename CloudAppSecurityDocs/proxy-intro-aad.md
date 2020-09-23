@@ -22,7 +22,7 @@ ms.custom: seodec18
 ---
 # Protect apps with Microsoft Cloud App Security Conditional Access App Control
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 In today's workplace, it's often not enough to know what's happening in your cloud environment after the fact. You want to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It's important to enable users in your organization to make the most of the services and tools available to them in cloud apps and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Microsoft Cloud App Security integrates with any identity provider (IdP) to deliver these capabilities with access and session controls. If you are using Azure Active Directory (Azure AD) as your IdP, these controls are integrated and streamlined for a simpler and more tailored deployment built on Azure AD's [Conditional Access tool](/azure/active-directory/conditional-access/overview).
 

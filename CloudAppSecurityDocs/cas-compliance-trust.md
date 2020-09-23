@@ -15,7 +15,7 @@ ms.suite: ems
 ---
 # Microsoft Cloud App Security data security and privacy
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

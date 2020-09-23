@@ -23,7 +23,7 @@ ms.custom: seodec18
 
 # Additional integrations with external solutions
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can integrate Microsoft Cloud App Security with your other security investments to leverage and enhance an integrated ecosystem of protection. For example, you can integrate with external mobile device management solutions, UEBA solutions, and external threat intelligence feeds.
 

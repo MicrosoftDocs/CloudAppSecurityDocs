@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Discovered app filters and queries
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 When you have a large number of discovered apps, you'll find it useful to filter and query them. This article describes what filters are available and how to query your discovered apps.
 

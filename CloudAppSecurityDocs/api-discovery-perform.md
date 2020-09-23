@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Perform file upload - Cloud Discovery API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Upload the file contents by performing an HTTP PUT request. You will be required to use the URL returned by the [Initiate file upload](api-discovery-initiate.md) request.
 

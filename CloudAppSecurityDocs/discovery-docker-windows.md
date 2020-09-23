@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 # Docker on Windows on-premises
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Windows.
 

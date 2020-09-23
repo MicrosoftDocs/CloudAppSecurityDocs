@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 
 # Microsoft Cloud App Security webinars
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 View this six-part webinar series to learn more about Microsoft Cloud App Security key use cases and deployment best practices to help you better secure your cloud environments.
 

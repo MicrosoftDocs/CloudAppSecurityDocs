@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # How to find built-in deprecating reports
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 We're updating the functionality of built-in reports by embedding it in other parts of the portal. Updating this functionality is ongoing to improve Microsoft Cloud App Security reporting.
 

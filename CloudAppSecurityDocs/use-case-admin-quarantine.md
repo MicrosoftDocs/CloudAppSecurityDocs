@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Tutorial: Protect files with admin quarantine
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 [File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies. For instance, create file policies that find places where users stored sensitive information, credit card numbers, and third-party ICAP files in your cloud.
 
@@ -104,7 +104,7 @@ This tutorial helps you use Microsoft Cloud App Security to detect unwanted file
 
 2. Set a quarantine location:
    1. For Office 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
-      ![quarantine settings](media/quarantine-warning.png)
+      ![quarantine warning](media/quarantine-warning.png)
 
       To set admin quarantine settings, under the settings cog, go to **Settings**. Provide a location for the quarantined files and a user notification that your user will receive when their file is quarantined.
       ![quarantine settings](media/quarantine-settings.png)

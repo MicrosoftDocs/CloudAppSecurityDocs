@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Basic setup for Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The following procedure gives you instructions for customizing the Microsoft Cloud App Security portal.
 

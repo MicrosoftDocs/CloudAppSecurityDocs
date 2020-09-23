@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Policy template reference
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides information on policy templates included in Microsoft Cloud App Security.
 

@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Email notification preferences
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides information about how to personalize the email notifications sent by Cloud App Security to your users when a breach is detected.
 

@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Monitor alerts in Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Alerts are the entry points to understanding your cloud environment more deeply. This article provides a list and description of all alerts.
 

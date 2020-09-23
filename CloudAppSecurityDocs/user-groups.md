@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Importing user groups from connected apps
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 When you connect apps using API connectors, Microsoft Cloud App Security enables you to import user groups, for example from Office 365 and Azure Active Directory. There are two types of user groups:
 
