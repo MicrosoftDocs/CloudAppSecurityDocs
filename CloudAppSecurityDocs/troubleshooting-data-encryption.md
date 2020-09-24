@@ -2,12 +2,12 @@
 # required metadata
 
 title: Troubleshooting data encryption with your own key
-description: This article provides a list of content inspection statuses and their meanings.
+description: This article provides a list of problems that can prevent Cloud App Security from accessing your Azure Key Vault key used to encrypt collected data at rest.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/11/2020
+ms.date: 09/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
