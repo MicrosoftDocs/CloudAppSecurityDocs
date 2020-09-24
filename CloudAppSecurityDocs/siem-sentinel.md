@@ -2,13 +2,13 @@
 # required metadata
 
 title: Azure Sentinel integration with Cloud App Security
-description: This article provides information integrating your generic SIEM with Cloud App Security.
+description: This article provides information integrating Azure Sentinel with Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/28/2019
-ms.topic: conceptual
+ms.date: 08/23/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.custom: seodec18
 
 # Azure Sentinel integration (preview)
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can integrate Microsoft Cloud App Security with Azure Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
@@ -36,7 +36,7 @@ Benefits of using Azure Sentinel include:
 Additional integration solutions include:
 
 * **Generic SIEMs** - Integrate Cloud App Security with your generic SIEM server. For information in integrating with a Generic SIEM, see [Generic SIEM integration](siem.md).
-* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
 ## How to integrate
 
@@ -44,6 +44,9 @@ Integrating with your SIEM is accomplished in two steps:
 
 1. Set it up in Cloud App Security.
 1. Set it up in Azure Sentinel.
+
+> [!NOTE]
+> The option to add Azure Sentinel is not available if you have previously performed the integration.
 
 ### Prerequisites
 
@@ -66,12 +69,12 @@ To integrate with Azure Sentinel:
 
     ![Screenshot showing start page of Configure Azure Sentinel integration](media/siem-sentinel-configuration.png)
 
-1. Click **Next**, and continue to Azure Sentinel to finalize the integration. For information on configuring Azure Sentinel, see [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security).
+1. Click **Next**, and continue to Azure Sentinel to finalize the integration. For information on configuring Azure Sentinel, see [/azure/sentinel/connect-cloud-app-security](/azure/sentinel/connect-cloud-app-security).
 
     ![Screenshot showing finish page of Configure Azure Sentinel integration](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> Discovery logs will start forwarding to Azure Sentinel within 15 minutes of configuring them in the Cloud app Security portal.
+> New discovery logs will start forwarding to Azure Sentinel within 15 minutes of configuring them in the Cloud App Security portal.
 
 ## Alerts and discovery logs in Azure Sentinel
 
@@ -115,7 +118,7 @@ This section describes how you can use Microsoft Power BI (Power BI) to easily s
 
 You can get started quickly by using the following steps:
 
-1. In Power BI, import queries from Azure Sentinel for Cloud App Security data. For more information, see [Import Azure Monitor log data into Power BI](https://docs.microsoft.com/azure/azure-monitor/platform/powerbi).
+1. In Power BI, import queries from Azure Sentinel for Cloud App Security data. For more information, see [Import Azure Monitor log data into Power BI](/azure/azure-monitor/platform/powerbi).
 1. [Install the Cloud App Security Shadow IT Discovery app](https://aka.ms/MCASShadowITReporting) and [connect it](#connect-the-cloud-app-security-app) to your discovery log data to view the built-in Shadow IT Discovery dashboard.
 
     > [!NOTE]

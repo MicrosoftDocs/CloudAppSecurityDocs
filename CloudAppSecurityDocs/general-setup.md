@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Basic setup for Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The following procedure gives you instructions for customizing the Microsoft Cloud App Security portal.
 
@@ -37,7 +37,7 @@ For portal access, it's necessary to add the following IP addresses to your Fire
 
 * 104.42.231.28
 
-For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall’s allow list to provide access for the Cloud App Security GCC High portal:
+For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security GCC High portal:
 
 * 52.227.143.223
 * 13.72.19.4
@@ -55,7 +55,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 1. It's also possible to provide a **Logo** that is displayed in email notifications and web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.
 
-1. Make sure you add a list of your **Managed domains**. Adding managed domains is a crucial step. Cloud App Security uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.
+1. Make sure you add a list of your **Managed domains** to identify internal users. Adding managed domains is a crucial step. Cloud App Security uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.
 
     * Users in domains that aren't configured as internal are marked as external. External users aren't scanned for activities or files.
 
@@ -70,9 +70,9 @@ For US Government GCC High customers, it's also necessary to add the following I
 1. If at any point you want to back up your portal settings, this screen enables you to do that. Click **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
 
 > [!NOTE]
-> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
+> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
 >
-> For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+> For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 
 ## Next steps
 

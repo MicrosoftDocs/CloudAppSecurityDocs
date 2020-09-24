@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Tutorial: Automatically apply Azure Information Protection classification labels
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Cloud App Security helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
 
@@ -47,7 +47,7 @@ This strong level of protection travels with the file. The file is still protect
 
 ## The threat
 
-A user in your organization saves confidential customer information files to Box and sets it to be shared with everyone in the organization. The user doesn't realize that not only their immediate team, but the entire support staff has access to that Box account. This access includes vendors, partners, and visitors who occasionally stop into the office. Any person with access to your organization's Box account now has access to that information. Not only can that access be dangerous for your organization, it can be against personal information regulations in many countries, causing potential legal issues.
+A user in your organization saves confidential customer information files to Box and sets it to be shared with everyone in the organization. The user doesn't realize that not only their immediate team, but the entire support staff has access to that Box account. This access includes vendors, partners, and visitors who occasionally stop into the office. Any person with access to your organization's Box account now has access to that information. Not only can that access be dangerous for your organization, it can be against personal information regulations in many countries/regions, causing potential legal issues.
 
 ## The solution
 
@@ -98,7 +98,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 >[!NOTE]
 >
 > *- Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
-> *- When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> *- When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## Next steps
 

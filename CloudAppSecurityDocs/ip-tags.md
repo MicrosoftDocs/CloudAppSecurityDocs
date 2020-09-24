@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set IP ranges and tags - Cloud App Security | Microsoft Docs
+title: Set IP ranges and tags - Cloud App Security
 description: This article provides instructions for working with IP tags and IP categories.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/16/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -26,9 +26,9 @@ ms.custom: seodec18
 ---
 #  <a name="IPtagsandRanges"></a> Working with IP ranges and tags
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. Each group of IP ranges can be categorized based on a preset list of IP categories. You're also able to create custom IP tags for your IP ranges. Additionally, you can override public geo-location information based on your internal network knowledge. Both IPv4 and IPv6 are supported.
+To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. Each group of IP ranges can be categorized based on a preset list of IP categories. You're also able to create custom IP tags for your IP ranges. Additionally, you can override public geolocation information based on your internal network knowledge. Both IPv4 and IPv6 are supported.
 
 Cloud App Security comes preconfigured with built-in IP ranges for popular cloud providers such as Azure and Office 365. Additionally, we have built-in tagging based on Microsoft threat intelligence including anonymous proxy, Botnet, and Tor. You can see the full list in the drop-down on the IP address ranges page.
 
@@ -42,8 +42,7 @@ Cloud App Security comes preconfigured with built-in IP ranges for popular cloud
 Built-in IP address tags and custom IP tags are considered hierarchically. Custom IP tags take precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence but there's a custom IP tag that identifies it as **Corporate**, the custom category and tags take precedence.
 
 >[!NOTE]
-> When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, impossible travel) because these IP addresses are considered trusted.
->
+> When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, [impossible travel](anomaly-detection-policy.md#impossible-travel)) because these IP addresses are considered trusted.
 
 ## Create an IP address range
 

@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.custom: seodec18
 
 # Cloud Discovery anomaly detection policy
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article gives you reference details about policies. Explanations for each policy type and fields that can be configured for each policy are listed.
 

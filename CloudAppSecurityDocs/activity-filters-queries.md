@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Activity filters and queries
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides descriptions and instructions for Cloud App Security activity filters and queries.
 
@@ -58,7 +58,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- Device tag - Search by compliant, managed or verified device.
+- Device tag - Search by **Intune compliant**, **Hybrid Azure AD joined** or **Valid client certificate**.
 
 - Device type - Search only for activities that were done using a specific device type. For example, search all activities from mobile devices, PCs, or Tablets.
 
@@ -87,19 +87,19 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Instance - The app instance where the activity was or wasn't performed.
 
-- Location – The country from which the activity was performed.
+- Location – The country/region from which the activity was performed.
 
 - Matched policy – Search for activities that matched on a specific policy that was set in the portal.
 
 - Registered ISP – The ISP from which the activity was performed.
 
 - Source - Search by the source from which the activity was detected. Source can be any of the following:
-  - App connector - logs coming directly from the app’s API connector.
+  - App connector - logs coming directly from the app's API connector.
   - App connector analysis - Cloud App Security enrichments based on information scan by the API connector.
 
-- User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the ‘is not set’ operator.
+- User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the 'is not set' operator.
   - User domain - Search for a specific user domain.
-  - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users.
+  - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users. This is only relevant for connected G Suite instances using organizational units.
   - User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.
   - User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, click on the name of the user group. Clicking will take you to the Accounts page that lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
   - The **User group** and **User name** filters can be further filtered by using the **As** filter, and selecting the role of the user, which can be any of the following:
@@ -123,7 +123,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 2. After you've finished building your query, click the **Save as** button in the top right corner of the filters.
 
-3. In the **Save query** popup, name your query.
+3. In the **Save query** pop-up, name your query.
 
    ![new query](media/new-activity-query.png)
 
@@ -137,7 +137,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Download activities - filters all your activities to display only those activities that were download activities, including download user list as a .csv vile, downloading of shared content and downloading a folder.
 
-- Failed log in - filters all your activities to display only failed log ons and failed sign in via SSO
+- Failed log in - filters all your activities to display only failed log-ons and failed sign in via SSO
 
 - File and folder activities - filters all your activities to display only those activities that involved files and folders. The filter includes upload, download, and accessing folders, along with creating, deleting, uploading, downloading, quarantining, and accessing files, and transferring content.
 
@@ -151,7 +151,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link and granting read/write permissions.
 
-- Successful log in - filters all your activities to display only those activities that involve successful log ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from new device.
+- Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from new device.
 
 ![query activities](media/queries-activity.png)
 

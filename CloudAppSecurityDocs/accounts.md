@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Visibility into cloud app accounts - Cloud App Security | Microsoft Docs
+title: Visibility into cloud app accounts - Cloud App Security
 description: This article provides information about reviewing accounts from your connected apps.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
-ms.topic: conceptual
+ms.date: 05/20/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,11 +27,11 @@ ms.custom: seodec18
 ---
 # Accounts
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security gives you visibility into the accounts from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security reads account information associated with connected apps. The Accounts page enables you to investigate those accounts, permissions, the groups they're members of, their aliases and the apps they're using. Additionally, when Cloud App Security detects a new account that wasn't previously seen in one of the connected apps - for example in activities or in file sharing - the account is added to the accounts list of that app. This enables you to have visibility into the activity of external users interacting with your cloud apps.
 
-Admins can search for a specific user’s metadata or user’s activity. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user’s activity history and security alerts related to the user.
+Admins can search for a specific user's metadata or user's activity. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -47,7 +47,7 @@ The **Users and accounts** page enables you to easily investigate your accounts,
 * You can see which accounts are included in each user group  
 * You can see which apps are accessed by each account and which apps are deleted for specific accounts
 
-    ![accounts screen](./media/accounts-page.png)
+    ![accounts screen](media/accounts-page.png)
 
 ## Users and accounts filters
 
@@ -55,7 +55,7 @@ Following is a list of the account filters that can be applied. Most filters sup
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. In the event that the account has admin permissions the icon in the Accounts table appears with the addition of the red tie. ![accounts admin icon](./media/accounts-admin-icon.png)
+* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. In the event that the account has admin permissions the icon in the Accounts table appears with the addition of the red tie. ![accounts admin icon](media/accounts-admin-icon.png)
 
 * **App**: You can filter for any API connected app being used by accounts in your organization.
 * **Domain**: Enables you to filter for users in specific domains.
@@ -64,7 +64,7 @@ Following is a list of the account filters that can be applied. Most filters sup
 * **Last seen**: The **last seen** filter enables you to find accounts that are dormant and whose users haven't performed any activities in a while.
 * **Organization**: Enables you to filter for members of specific organizational groups defined in your connected apps.
 * **Show Admins only**: Filters for accounts and users that are admins.
-* **Status**: Filter based on user account status of N/A, staged, active, suspended, or deleted.
+* **Status**: Filter based on user account status of N/A, staged, active, suspended, or deleted. A status of not available (N/A) is normal and may appear, for example, for anonymous accounts.
 * **Type**: Enables you to filter to either the user or the account type.
 * **User name**: Enables you to filter to specific users.
 

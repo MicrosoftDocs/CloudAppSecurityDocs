@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 10/28/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.custom: seodec18
 
 # Generic SIEM integration
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can integrate Microsoft Cloud App Security with your generic SIEM server to enable centralized monitoring of alerts and activities from connected apps. As new activities and events are supported by connected apps, visibility into them is then rolled out into Microsoft Cloud App Security. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events. The Microsoft Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Microsoft Cloud App Security and streams them into the SIEM server.
 
@@ -32,14 +32,14 @@ When you first integrate your SIEM with Cloud App Security, activities and alert
 Additional integration solutions include:
 
 * **Azure Sentinel** - A scalable, cloud-native SIEM and SOAR for native integration. For information about integrating with Azure Sentinel, see [Azure Sentinel integration](siem-sentinel.md).
-* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
 > If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
 
 ## Generic SIEM integration architecture
 
-The SIEM agent is deployed in your organization’s network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
+The SIEM agent is deployed in your organization's network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
 The traffic is then sent over an encrypted HTTPS channel on port 443.
 
 Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM. Cloud App security uses the network configurations you provided during the setup (TCP or UDP with a custom port).
@@ -93,7 +93,7 @@ Integrating with your SIEM is accomplished in three steps:
    ![Data types settings](media/siem3.png)
 
 1. Copy the token and save it for later.
-    Click Finish and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it’s connected later.
+    Click Finish and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later.
 
 > [!NOTE]
 > Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid.
@@ -117,7 +117,7 @@ Integrating with your SIEM is accomplished in three steps:
 Where the following variables are used:
 
 * DIRNAME is the path to the directory you want to use for local agent debug logs.
-* ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the *nternet.
+* ADDRESS[:PORT] is the proxy server address and port that the server uses to connect to the internet.
 * TOKEN is the SIEM agent token you copied in the previous step.
 
 You can type -h at any time to get help.
@@ -154,24 +154,26 @@ The following text is an alerts logfile example:
 
 #### Sample Cloud App Security alerts in CEF format
 
-|   Applicable to   |      CEF field name      |                                                   Description                                                   |
-|-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Activities/Alerts |          start           |                                           Activity or alert timestamp                                           |
-| Activities/Alerts |           end            |                                           Activity or alert timestamp                                           |
-| Activities/Alerts |            rt            |                                           Activity or alert timestamp                                           |
-| Activities/Alerts |           msg            |                              Activity or alert description as shown in the portal                               |
-| Activities/Alerts |          suser           |                                         Activity or alert subject user                                          |
-| Activities/Alerts |  destinationServiceName  |                  Activity or alert originating app, for example, Office 365, Sharepoint, Box.                   |
-| Activities/Alerts |        cs\<X>Label        |        Each label has a different meaning, but the label itself explains it, for example, targetObjects.        |
-| Activities/Alerts |          cs\<X>           | The information corresponding to the label (the target user of the activity or alert as per the label example). |
-|    Activities     |     EVENT_CATEGORY_*     |                                       High-level category of the activity                                       |
-|    Activities     |         \<ACTION>         |                                  The activity type, as displayed in the portal                                  |
-|    Activities     |        externalId        |                                                    Event ID                                                     |
-|    Activities     |           dvc            |                                             IP of the client device                                             |
-|    Activities     | requestClientApplication |                                         User agent of the client device                                         |
-|      Alerts       |       \<alert type>       |                                  For example, “ALERT_CABINET_EVENT_MATCH_AUDIT”                                  |
-|      Alerts       |          \<name>          |                                             The matched policy name                                             |
-|      Alerts       |        externalId        |                                                    Alert ID                                                     |
+| Applicable to | CEF field name | Description |
+| --- | --- | --- |
+| Activities/Alerts | start | Activity or alert timestamp |
+| Activities/Alerts | end | Activity or alert timestamp |
+| Activities/Alerts | rt | Activity or alert timestamp |
+| Activities/Alerts | msg | Activity or alert description as shown in the portal |
+| Activities/Alerts | suser | Activity or alert subject user |
+| Activities/Alerts | destinationServiceName | Activity or alert originating app, for example, Office 365, Sharepoint, Box. |
+| Activities/Alerts | cs\<X>Label | Each label has a different meaning, but the label itself explains it, for example, targetObjects. |
+| Activities/Alerts | cs\<X> | The information corresponding to the label (the target user of the activity or alert as per the label example). |
+| Activities | EVENT_CATEGORY_* | High-level category of the activity |
+| Activities | \<ACTION> | The activity type, as displayed in the portal |
+| Activities | externalId | Event ID |
+| Activities | dvc | IP of the client device |
+| Activities | requestClientApplication | User agent of the client device |
+| Alerts | \<alert type> | For example, "ALERT_CABINET_EVENT_MATCH_AUDIT" |
+| Alerts | \<name> | The matched policy name |
+| Alerts | externalId | Alert ID |
+| Alerts | src | IPv4 address of the client device |
+| Alerts | c6a1 | IPv6 address of the client device |
 
 ### Step 3: Validate that the SIEM agent is working
 

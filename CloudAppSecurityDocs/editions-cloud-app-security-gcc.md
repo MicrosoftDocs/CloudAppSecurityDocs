@@ -18,7 +18,7 @@ ms.suite: ems
 ---
 # Microsoft Cloud App Security for US Government GCC High
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The Microsoft Cloud App Security GCC High offering is built on the Microsoft Azure Government Cloud and is designed to interoperate with Office 365 GCC High. The GCC High offering utilizes the same underlying technologies and capabilities as the commercial instance of Microsoft Cloud App Security. Therefore, the commercial offering's public documentation should be used as a starting point for deploying and operating the service.
 

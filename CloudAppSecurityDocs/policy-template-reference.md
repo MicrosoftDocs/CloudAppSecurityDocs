@@ -2,13 +2,13 @@
 # required metadata
 
 title: Policy template reference for Cloud App Security
-description: This article provides information on how policies are used and set up to control cloud app use.
+description: This article provides information on policy templates included in Microsoft Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/1/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Policy template reference
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides information on policy templates included in Microsoft Cloud App Security.
 
@@ -59,13 +59,11 @@ We recommend starting policy creation based on an existing template whenever pos
 |DLP|File containing PHI detected in the cloud (built-in DLP engine)|Alert when a file with protected health information (PHI) is detected by the Microsoft Cloud App Security built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
 |DLP|File containing private information detected in the cloud (built-in DLP engine)|Alert when a file with personal data is detected by the Microsoft Cloud App Security built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
 |Threat detection|Administrative activity from a non-corporate IP address|Alert when an admin user performs an administrative activity from an IP address that isn't included in the corporate IP address range category. First configure your corporate IP addresses by going to the Settings page, and setting **IP address ranges**.|
-|Threat detection|General anomaly detection|Alert when an anomalous session is detected in one of the sanctioned apps, such as: impossible travel, sign in pattern, inactive account.|
 |Threat detection|Log on from a risky IP address|Alert when a user signs into your sanctioned apps from a risky IP address. By default, the Risky IP address category contains addresses that have IP address tags of Anonymous proxy, TOR, or Botnet. You can add more IP addresses to this category in the IP address ranges settings page.|
 |Threat detection|Mass download by a single user|Alert when a single user performs more than 50 downloads within 1 minute.|
 |Threat detection|Multiple failed user sign-in attempts to an app|Alert when a single user tries to sign in to a single app and fails more than 10 times within 5 minutes.|
 |Threat detection|Potential ransomware activity|Alert when a user uploads files to the cloud that might be infected with ransomware.|
-|Threat detection|User log on from a non-categorized IP address|Alert when a user logs on from an IP address that isn't included in a specific IP range category. You can categorize IP addresses by going to the Settings page, and selecting IP address ranges.|
-|Sharing control|File shared with personal email addresses|Alert when a file is shared with a user’s personal email address.|
+|Sharing control|File shared with personal email addresses|Alert when a file is shared with a user's personal email address.|
 |Sharing control|File shared with unauthorized domain|Alert when file is shared with an unauthorized domain (such as your competitor).|
 |Sharing control|Shared digital certificates (file extensions)|Alert when a file containing digital certificates is publicly shared. Use this template to help govern your AWS storage.|
 |Sharing control|Publicly accessible S3 buckets (AWS)|Alert when an AWS S3 bucket is publicly shared.|

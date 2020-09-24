@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: How Cloud App Security performs content inspection
-description: This article describes the process Cloud App Security follows when performing DLP content inspection on data in your cloud.
+title: How Cloud App Security performs built-in DLP content inspection
+description: This article describes the process Microsoft Cloud App Security follows when running the built-in DLP content inspection on data in your cloud.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Built-in content inspection
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes the process Microsoft Cloud App Security follows when running the built-in DLP content inspection on data in your cloud.
 
@@ -76,7 +76,7 @@ Built-in content inspection scan policies can search for the following items:
 The Cloud App Security content inspection engine:
 
 - Supports all Unicode characters
-- Covers over 1,000 file types
+- Covers over 100 file types
 - Multiple languages are supported, especially files that use Unicode character sets. Make sure to define your policies to account for those languages. For example if you're looking for keywords, you must put in the keywords across the languages you intend to use.
 - In text-based file types that use non-Unicode encoding, for example Chinese GB2312, comparing against Unicode Chinese keywords won't work as expected.
 - For file types that rely on third-party libraries, matching strings and words may not always work as expected. This is most common in files (such as binary file types) in which content inspection relies on third-party libraries that return Java strings for language and character sets.

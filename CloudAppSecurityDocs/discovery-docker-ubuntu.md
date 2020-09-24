@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure automatic log upload using on-premise Docker
-description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Ubuntu or RHEL in an on-premises server.
+title: Configure automatic log upload using on-premises Docker
+description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in an on-premises server.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
-ms.topic: conceptual
+ms.date: 06/02/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -25,15 +25,18 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Docker on Ubuntu and RHEL on-premises
+# Docker on Linux on-premises
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on an on-premises Ubuntu or RHEL server.
+You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on an on-premises Ubuntu, Red Hat Enterprise Linux (RHEL), or CentOS server.
 
-## Technical requirements
+## Prerequisites
 
-* OS: Ubuntu 14.04, 16.04, and 18.04; RHEL 7.2 or higher, or CentOS 7.2 or higher 
+* OS:
+    * Ubuntu 14.04, 16.04, and 18.04
+    * RHEL 7.2 or higher
+    * CentOS 7.2 or higher
 
 * Disk space: 250 GB
 
@@ -57,7 +60,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 * Network bandwidth - Your network bandwidth determines the log upload speed.
 
-* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
+* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector's disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
 
 ## Set up and configuration  
 
@@ -74,7 +77,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Click **Add data source**.  
     ![Add a data source](media/add-data-source.png)
     1. **Name** your proxy or firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Name for your data source](media/ubuntu1.png)
     1. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
     1. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
     1. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
@@ -94,7 +97,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
     1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
-    ![ubuntu2](media/ubuntu2.png)
+    ![Select data sources to connect](media/ubuntu2.png)
 
 1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon](media/copy-icon.png)
 
@@ -110,7 +113,10 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 2 – On-premises deployment of your machine
 
-The following steps describe the deployment in Ubuntu. The deployment steps for other platforms are slightly different.
+The following steps describe the deployment in Ubuntu.
+
+> [!NOTE]
+> The deployment steps for other supported platforms may be slightly different.
 
 1. Open a terminal on your Ubuntu machine.
 
@@ -132,7 +138,7 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
     > [!NOTE]
     > If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
 
-    ![ubuntu5](media/ubuntu5.png)
+    ![Command to install docker](media/ubuntu5.png)
 
 1. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
@@ -145,11 +151,11 @@ The following steps describe the deployment in Ubuntu. The deployment steps for 
 1. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
 You should see the message: **Finished successfully!**
-![ubuntu8](media/ubuntu8.png)
+![Command to verify that docker is running properly](media/ubuntu8.png)
 
 ### Step 3 - On-premises configuration of your network appliances
 
-Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port of the FTP directory according to the directions in the dialog. For example:
+Configure your network firewalls and proxies to periodically export logs to the dedicated Syslog port or the FTP directory according to the directions in the dialog. For example:
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -159,7 +165,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![ubuntu9](media/ubuntu9.png)
+![Verify successful deployment of log collector](media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 

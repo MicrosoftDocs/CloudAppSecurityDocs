@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/22/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Manage alerts
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article explains how to work with alerts raised in the Cloud App Security portal.
 
@@ -44,7 +44,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
 
     This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It can help you safeguard the security posture you defined for your cloud environment.
 
-    ![Alerts](media/alerts.png "alerts")
+    ![Alerts resolution status page](media/alerts.png "alerts")
 
 2. For each alert, you need to investigate and determine the nature of the violation and the required response.
 
@@ -89,7 +89,7 @@ The following table provides a list of the types of alerts that can be triggered
 |Inactive account|This alert is triggered when an account hasn't been used in 60 days in one of your connected cloud apps.|Contact the user and the user's manager to determine  whether the account is still active. If not, suspend the user and terminate the license for the app.|
 |New admin user|Alerts you to changes in your privileged accounts for connected apps.|Confirm that the new admin permissions are in fact required for the user. If they aren't, recommend revoking admin privileges to reduce exposure.|
 |New admin location|Alerts you to changes in your privileged accounts for connected apps.|Confirm that the sign-in from this anomalous location was legitimate. If it's not, recommend revoking admin permissions or suspending the account to reduce exposure.|
-|New location|An informative alert about access to a connected app from a new location, and it's triggered only once per country.|Investigate the specific user's activity.|
+|New location|An informative alert about access to a connected app from a new location, and it's triggered only once per country/region.|Investigate the specific user's activity.|
 |New discovered service|This alert is an alert about Shadow IT. A new app was detected by Cloud Discovery.|<ul><li>Assess the risk of the service based on the app catalog.</li><li>Drill down into the activity to understand usage patterns and prevalence.</li><li>Decide whether to sanction or unsanction the app.</li><br /></ul>For unsanctioned apps:<br /><br /><ul><li>You may want to block use in your proxy or firewall.</li><li>If you have an unsanctioned app and a sanctioned app in the same category, you can export a list of users of the unsanctioned app. Then, contact them to migrate them to the sanctioned app.</li></ul></li>|
 |Suspicious activity|This alert lets you know that anomalous activity has been detected that isn't aligned with expected activities or users in your  organization.|Investigate the behavior and confirm it with the user.<br /><br />This type of alert is a great place to start learning more about your environment and creating new policies with these alerts. For example, if someone suddenly uploads a large amount of data to one of your connected apps, you can set a rule to govern that type of anomalous behavior.|
 |Use of personal account|This alert lets  you know that a new personal account has access to resources in your connected apps.|Remove the user's collaborations in the external account.|

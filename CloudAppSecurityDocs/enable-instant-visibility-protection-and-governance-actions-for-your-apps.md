@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Connect apps to get visibility and control - Cloud App Security | Microsoft Docs
+title: Connect apps to get visibility and control - Cloud App Security
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/12/2019
-ms.topic: conceptual
+ms.date: 07/14/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.custom: seodec18
 ---
 # Connect apps
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Cloud App Security over the apps you connect to.
 
@@ -52,7 +52,7 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 - **Account information** - Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.
 
-- **Audit trail** - Visibility into user activities, admin activities, sign in activity.
+- **Audit trail** - Visibility into user activities, admin activities, sign-in activities.
 
 - **Data scan** - Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time scan (triggered each time a change is detected).
 
@@ -66,28 +66,26 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following table lists, per cloud app, which abilities are supported with App connectors:
 
-> [!div class="mx-tableFixed"]
->
-> | | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
-> |-|-|-|-|-|-|-|-|-|-|-|-|
-> | **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
-> | **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not pported by provider |
-> | **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | t supported by provider |
-> | **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-> | **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with lesforce Shield | ✔ | ✔ |
-> | **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
-> | **DLP - Periodic scan** | | ✔ | Coming soon | Not applicable | ✔ | ✔ | Not applicable | | | | Not supported by ovider |
-> | **DLP - Near-real-time scan** | | ✔ | ✔ | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
-> | **Sharing control** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by ovider |
-> | **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
-> | **View app permissions** | Not applicable | Not supported by provider | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-> | **Revoke app permissions** | Not applicable | Not supported by provider | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-> | **Apply Azure Information Protection labels** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
+| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+|-|-|-|-|-|-|-|-|-|-|-|-|
+| **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
+| **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
+| **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | Not supported by provider |
+| **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
+| **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
+| **DLP - Periodic scan** | | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
+| **DLP - Near real-time scan** | | ✔ | | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | | | ✔ | Not supported by provider |
+| **Sharing control** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by provider |
+| **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
+| **View app permissions** | Not applicable | Not supported by provider | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+| **Revoke app permissions** | Not applicable | Not supported by provider | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+| **Apply Azure Information Protection labels** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
 
 ## Prerequisites
 
-- For some apps, it may be necessary to white list IP addresses to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. For more information, see [Network requirements](network-requirements.md).
+- For some apps, it may be necessary to allow list IP addresses to enable Cloud App Security to collect logs and provide access for the Cloud App Security console. For more information, see [Network requirements](network-requirements.md).
 
 - For each app that you want to connect with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.
 
@@ -102,6 +100,7 @@ To use App Connectors, you need to make sure you have the following things for e
 | AWS | | Newly created user |
 | Box | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions. |
 | Dropbox | Business/Enterprise | Admin |
+| GitHub | GitHub Enterprise Cloud | Owner |
 | GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
 | G Suite | G Suite Business or Enterprise preferred<br /><br />G Suite Enterprise (minimally) | Super Admin |
 | Office 365 | | Global Admin |
@@ -113,8 +112,29 @@ To use App Connectors, you need to make sure you have the following things for e
 
 ### ExpressRoute
 
-Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
-For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).
+Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
+For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
+
+## Disable app connectors
+
+> [!NOTE]
+>
+> - Before disabling an app connector, make sure you have the connection details available as you will need them if you want to re-enable the connector.
+> - These steps cannot be used to disable the Azure connector.
+
+To disable connected apps:
+
+1. In the **Connected apps** page, in the relevant row, click the three dots and select **Disable App connector**.
+1. In the pop-up, click **Disable App connector instance** to confirm the action.
+
+Once disabled, the connector instance will stop consuming data from the connector.
+
+## Re-enable app connectors
+
+To re-enable connected apps:
+
+1. In the **Connected apps** page, in the relevant row, click the three dots and select **Edit app**. This starts the process to add a connector.
+1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
 ## Next steps
 
@@ -126,4 +146,4 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 ## Check out this video!
 
 > [!div class="nextstepaction"]
-> [Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+> [Microsoft Cloud App Security – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.custom: seodec18
 ---
 # Cloud Discovery enrichment
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud Discovery data can now be enriched with Azure Active Directory username data. When you enable this feature, the username, received in discovery traffic logs, is matched and replaced by the Azure AD username. Cloud discovery enrichment enables the following features:
 
@@ -37,7 +37,7 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
 ## Prerequisites
 
 - Data source must provide username information
-- Office 365 app connector connected
+- [Office 365 app connector](connect-office-365-to-microsoft-cloud-app-security.md) connected
 
 ## Enabling user data enrichment
 

@@ -5,7 +5,7 @@ description: This article provides a set of best practices for protecting your o
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
-ms.topic: best-practice
+ms.topic: quickstart
 ms.date: 10/24/2019
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 
 # Cloud App Security best practices
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides best practices for protecting your organization by using Microsoft Cloud App Security. These best practices come from our experience with Cloud App Security and the experiences of customers like you.
 
@@ -156,7 +156,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ---
 
 **Best practice**: Review reports in the **Files** page  
-**Detail**: Once you’ve connected various SaaS apps using app connectors, Cloud App Security scans files stored by these apps. In addition, each time a file is modified it is scanned again. You can use the **Files** page to understand and investigate the types of data being stored in your cloud apps. To help you investigate, you can filter by domains, groups, users, creation date, extension, file name and type, file ID, classification label, and more. Using these filters puts you in control of how you choose to investigate files to make sure none of your data is at risk. Once you have a better understanding of how your data is being used, you can create policies to scan for sensitive content in these files.  
+**Detail**: Once you've connected various SaaS apps using app connectors, Cloud App Security scans files stored by these apps. In addition, each time a file is modified it is scanned again. You can use the **Files** page to understand and investigate the types of data being stored in your cloud apps. To help you investigate, you can filter by domains, groups, users, creation date, extension, file name and type, file ID, classification label, and more. Using these filters puts you in control of how you choose to investigate files to make sure none of your data is at risk. Once you have a better understanding of how your data is being used, you can create policies to scan for sensitive content in these files.  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
@@ -171,7 +171,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ## Enforce DLP and compliance policies for data stored in the cloud
 
 **Best practice**: Protect confidential data from being shared with external users  
-**Detail**: Create a file policy that detects when a user tries to share a file with the **Confidential** classification label with someone external to your organization, and configure its governance action to remove external users. This policy ensures your confidential data doesn’t leave your organization and external users cannot gain access to it.  
+**Detail**: Create a file policy that detects when a user tries to share a file with the **Confidential** classification label with someone external to your organization, and configure its governance action to remove external users. This policy ensures your confidential data doesn't leave your organization and external users cannot gain access to it.  
 **For more information**:
 
 * [Governing connected apps](governance-actions.md)
@@ -198,7 +198,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ## Secure collaboration with external users by enforcing real-time session controls
 
 **Best practice**: Monitor sessions with external users using Conditional Access App Control  
-**Detail**: To secure collaboration in your environment, you can create a session policy to monitor sessions between your internal and external users. This not only gives you the ability to monitor the session between your users (and notify them that their session activities are being monitored), but it also enables you to limit specific activities as well. When creating session policies to monitor activity, you can choose the apps and users you’d like to monitor.  
+**Detail**: To secure collaboration in your environment, you can create a session policy to monitor sessions between your internal and external users. This not only gives you the ability to monitor the session between your users (and notify them that their session activities are being monitored), but it also enables you to limit specific activities as well. When creating session policies to monitor activity, you can choose the apps and users you'd like to monitor.  
 **For more information**:
 
 * [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
@@ -222,7 +222,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 
 * **Send Feedback for alerts**
 
-    When dismissing or resolving alerts, make sure to send feedback with the reason you dismissed the alert or how it’s been resolved. This information assists Cloud App Security to improve our alerts and reduce false positives.
+    When dismissing or resolving alerts, make sure to send feedback with the reason you dismissed the alert or how it's been resolved. This information assists Cloud App Security to improve our alerts and reduce false positives.
 
 **For more information**:
 
@@ -233,7 +233,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 ---
 
 **Best practice**: Detect activity from unexpected locations or countries  
-**Detail**: Create an activity policy to notify you when users sign in from unexpected locations or countries. These notifications can alert you to possibly compromised sessions in your environment so that you can detect and remediate threats before they occur.  
+**Detail**: Create an activity policy to notify you when users sign in from unexpected locations or countries/regions. These notifications can alert you to possibly compromised sessions in your environment so that you can detect and remediate threats before they occur.  
 **For more information**:
 
 * [Threat protection policies](policies-threat-protection.md)
@@ -254,11 +254,11 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 ## Use the audit trail of activities for forensic investigations
 
 **Best practice**: Use the audit trail of activities when investigating alerts  
-**Detail**: Alerts are triggered when user, admin, or sign-in activities don’t comply with your policies. It is important to investigate alerts to understand if there is a possible threat in your environment.
+**Detail**: Alerts are triggered when user, admin, or sign-in activities don't comply with your policies. It is important to investigate alerts to understand if there is a possible threat in your environment.
 
 You can investigate an alert by selecting it on the **Alerts** page and reviewing the audit trail of activities relating to that alert. The audit trail gives you visibility into activities of the same type, same user, same IP address and location, to provide you with the overall story of an alert. If an alert warrants further investigation, create a plan to resolve these alerts in your organization.
 
-When dismissing alerts, it’s important to investigate and understand why they are of no importance or if they are false positives. If there is a high volume of such activities, you may also want to consider reviewing and tuning the policy triggering the alert.  
+When dismissing alerts, it's important to investigate and understand why they are of no importance or if they are false positives. If there is a high volume of such activities, you may also want to consider reviewing and tuning the policy triggering the alert.  
 **For more information**:
 
 * [Activities](activity-filters.md)
@@ -270,23 +270,27 @@ When dismissing alerts, it’s important to investigate and understand why they 
 
 ## Secure IaaS services and custom apps
 
-**Best practice**: Connect Azure and AWS  
-**Detail**: Connecting each of these cloud storage apps to Cloud App Security helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
+**Best practice**: Connect Azure, AWS and GCP  
+**Detail**: Connecting each of these cloud platforms to Cloud App Security helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
 **For more information**:
 
 * [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
 * [Connect AWS to Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)
+* [Connect GCP to Microsoft Cloud App Security (Preview)](connect-google-gcp-to-microsoft-cloud-app-security.md)
 
 ---
 
-**Best practice**: Review security configuration assessments for Azure and AWS  
+**Best practice**: Review security configuration assessments for Azure, AWS and GCP  
 **Detail**: Integrating with Azure Security Center provides you with a security configuration assessment of your Azure environment. The assessment provides recommendations for missing configuration and security control. Reviewing these recommendations helps you identify anomalies and potential vulnerabilities in your environment, and navigate directly in the relevant location in the Azure Security portal to resolve them.
 
-AWS gives you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security. With these recommendations, you can monitor the compliance status of your AWS accounts.  
+AWS and GCP give you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security.
+
+Use these recommendations to monitor the compliance status and security posture of your entire organization, including Azure subscriptions, AWS accounts, and GCP projects.  
 **For more information**:
 
 * [Security configuration for Azure](security-config.md)
 * [Security configuration for AWS](security-config-aws.md)
+* [Security configuration for GCP](security-config-gcp.md)
 
 ---
 

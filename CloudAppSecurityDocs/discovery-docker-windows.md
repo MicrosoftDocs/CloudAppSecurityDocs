@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Roll out continuous reports for Cloud App Security using a Docker on Windows | Microsoft Docs
+title: Roll out continuous reports for Cloud App Security using a Docker on Windows
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Windows in an on-premises server.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,13 +27,16 @@ ms.suite: ems
 ---
 # Docker on Windows on-premises
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Windows.
 
 ## Prerequisites
 
-* OS: **Windows 10** (fall creators update), Windows Server **version 1709+** (SAC), or **Windows Server 2019 (LTSC)**
+* OS:
+  * **Windows 10** (fall creators update)
+  * Windows Server **version 1709+** (SAC)
+  * **Windows Server 2019 (LTSC)**
 
 * Disk space: 250 GB
 
@@ -46,7 +49,10 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 * Virtualization on the operating system must be enabled with Hyper-V
 
 > [!IMPORTANT]
-> A user must be signed in for Docker to collect logs. We recommend advising your Docker users to disconnect without signing out.
+>
+> * A user must be signed in for Docker to collect logs. We recommend advising your Docker users to disconnect without signing out.
+> * Docker for Windows is not officially supported in VMWare virtualization scenarios.
+> * Docker for Windows is not officially supported in nested virtualization scenarios. If you still plan to use nested virtualization, refer to [Docker's official guide](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
 
 > [!NOTE]
 > If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
@@ -62,7 +68,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 * Network bandwidth - Your network bandwidth determines the log upload speed.
 
-* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector’s disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
+* I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector's disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
 
 ## Set up and configuration
 
@@ -79,7 +85,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Click **Add data source**.  
     ![Add a data source](media/add-data-source.png)
     1. **Name** your proxy or firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Add name for data source](media/ubuntu1.png)
     1. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
     1. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
     1. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
@@ -98,7 +104,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Give the log collector a **name**.
     1. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
     1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
-    ![ubuntu2](media/ubuntu2.png)
+    ![Select data source to connect](media/ubuntu2.png)
 
 1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon, ![copy to clipboard icon](media/copy-icon.png). You will need this later.
 
@@ -143,7 +149,7 @@ This installs the Docker client on your machine. While the log collector contain
 
 You should see the message: **Finished successfully!**
 
-![ubuntu8](media/ubuntu8.png)
+![Verify that collector is running properly](media/ubuntu8.png)
 
 ### Step 3 - On-premises configuration of your network appliances
 
@@ -157,7 +163,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![ubuntu9](media/ubuntu9.png)
+![Verify that collector deployed successfully](media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 

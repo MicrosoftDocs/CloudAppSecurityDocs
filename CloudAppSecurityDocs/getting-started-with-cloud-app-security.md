@@ -6,7 +6,7 @@ description: This quickstart outlines the process for getting Cloud App Security
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/23/2019
+ms.date: 06/07/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -24,33 +24,33 @@ ms.custom: seodec18
 
 # Quickstart: Get started with Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This quickstart provides you with steps for getting up and running with Cloud App Security. Microsoft Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity and helping to increase the protection of corporate data. In this article, we walk you through the steps you take to set up and work with Microsoft Cloud App Security.
 
 Your organization must have a license to use Cloud App Security. For pricing details, see the [Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
 >[!NOTE]
->You don't need an Office 365 license to use Cloud App Security.
+>Cloud App Security does not require any Office 365 licenses.
 
 ## Prerequisites
 
 - Your organization must have a license to use Cloud App Security. For pricing details, see the [Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
-    For tenant activation support, see [Contact Office 365 for business support - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+    For tenant activation support, see [Ways to contact support for business products - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 - After you have a license for Cloud App Security, you'll receive an email with activation information and a link to the Cloud App Security portal.
 
-- To set up Cloud App Security, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx). For more information, see [Assigning admin roles in Office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
+- To set up Cloud App Security, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true). For more information, see [Assign admin roles](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 - To run the Cloud App Security portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest).
 
 ## To access the portal
 
-To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **Microsoft 365 admin center**, as follows:
+To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **[Microsoft 365 admin center](https://security.microsoft.com)**, as follows:
 
-1. In the Microsoft 365 admin center, click the **App launcher** icon ![Office 365 app launcher icon](media/o365-admin-centers-icon.png), and then select **Security**.
+1. In the Microsoft 365 admin center, in the side menu, click **show all**, and then select **Security**.
 
-    ![Access from Office 365](media/access-from-o365.png)
+    ![Access from Microsoft 365 admin center](media/access-from-o365.png)
 
 1. In the Microsoft 365 security page, click **More resources**, and then select **Cloud App Security**.
 
@@ -133,7 +133,7 @@ Now the risk scores given to discovered apps are configured precisely according 
 ### Why personalize your environment?
 
 Some features work best when they're customized to your needs.
-Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization’s preferences.
+Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization's preferences.
 
 ## Step 5. [Organize the data according to your needs](ip-tags.md)
 

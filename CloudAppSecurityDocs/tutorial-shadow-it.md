@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Discover and manager Shadow IT | Microsoft Docs
+title: Discover and manager Shadow IT
 description: This tutorial describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/11/2019
+ms.date: 06/29/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Tutorial: Discover and manage shadow IT in your network
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 When IT admins are asked how many cloud apps they think their employees use, on average they say 30 or 40, when in reality, the average is over 1,000 separate apps being used by employees in your organization. Shadow IT helps you know and identify which apps are being used and what your risk level is. 80% of employees use non-sanctioned apps that no one has reviewed, and may not be compliant with your security and compliance policies. And because your employees are able to access your resources and apps from outside your corporate network, it's no longer enough to have rules and policies on your firewalls.
 
@@ -76,17 +76,24 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
     * You can drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
 
+    > [!TIP]
+    > Get notified when a discovered app is associated with a recently published security breach using the built-in **Discovered app security breach** alert. Investigate all users, IP addresses, and devices accessing the breached app in the last 90 days, and apply relevant controls.
+
 1. **Analyze usage**: Now that you know whether or not you want the app to be used in your organization, you want to investigate how and who is using it. If it's only used in a limited way in your organization maybe it's ok, but maybe if the use is growing you want to be notified about it so you can decide if you want to block the app.
 
     * In the Cloud App Security portal, under **Discover**, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The **Use** tab lets you know how many active users are using the app and how much traffic it's generating. This can already give you a pretty good picture of what's happening with the app. Then, if you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**. This important step can give you pertinent information, for example, if you discover that all the users of a specific app are from the Marketing department, it's possible that there's a business need for this app, and if it's risky you should talk to them about an alternative before blocking it.
 
     * Dive even deeper when investigating use of discovered apps. View subdomains and resources to learn about specific activities, data access, and resource usage in your cloud services. For more information, see [Deep dive into Discovered apps](discovered-apps.md#deep-dive-into-discovered-apps) and [Discover resources and custom apps](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. Use the cloud app catalog and filter for apps that belong to the same app category and using the advanced filters identify solutions that do comply with the different security controls that are required in order to comply with your organization's policy.
+1. **Identify alternative apps**: Use the cloud app catalog to identify safer apps that achieve similar business functionality as the detected risky apps, but do comply with your organization's policy. You can do this by using the advanced filters to find apps in the same category that meet with your different security controls.
 
 ### Phase 3: Manage your apps
 
 * **Manage cloud apps**: Cloud App Security helps you with the process for managing app use in your organization. After you identified the different patterns and behaviors used in your organization, you can create new custom app tags in order to classify each app according to its business status or justification. These tags can be then used for specific monitoring purposes, for example, identify high traffic that is going to apps that are tagged as risky cloud storage apps. App tags can be managed under **Cloud Discovery settings** > **App tags**. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
+
+* **Manage discovered apps using Azure Active Directory (Azure AD) Gallery**<a name ="gallery-apps"></a>: Cloud App Security also leverages its native integration with Azure AD to enable you to manage your discovered apps in Azure AD Gallery. For apps that already appear in the Azure AD Gallery, you can apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+
+    ![manage app in azure ad gallery](media/manage-app-in-azure-ad-gallery.png)
 
 * **Continuous monitoring**: Now that you have thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
 

@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 
 # How Cloud App Security helps protect your Salesforce environment
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a major CRM cloud provider, Salesforce incorporates large amounts of sensitive information about customers, pricing playbooks, and major deals inside your organization. Being a business-critical app, Salesforce is accessed and used by people inside your organization and by others outside of it (such as partners and contractors) for various purposes. In many cases, a large proportion of your users accessing Salesforce have low awareness of security and might put your sensitive information at risk by unintentionally sharing it. In other instances, malicious actors may gain access to your most sensitive customer-related assets.
 
@@ -30,7 +30,6 @@ Connecting Salesforce to Cloud App Security gives you improved insights into you
 - Elevated privileges
 - Insufficient security awareness
 - Malicious third-party apps and Google add-ons
-- Malware
 - Ransomware
 - Unmanaged bring your own device (BYOD)
 

@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Use a custom log parser
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Cloud App Security. This can be a CSV parser or a custom key value parser.
 
@@ -50,14 +50,14 @@ To configure a custom parser:
 
 5. Open the logs you want to process in a text editor. Review their format, making sure that the column names in the log correspond to the fields in the **Custom log format** screen.
 
-    ![custom log parser](media/log-data.png)
+    ![Review field in custom log parser](media/log-data.png)
 
 6. Then, fill in the fields based on your data to delineate which columns in the data correlate to specific fields in Cloud App Security. You may have to modify column names in your log file to correlate properly.
 
     > [!NOTE]
     > The fields are case-sensitive. Make sure you spell and type the names of the columns identically in Cloud App Security and in the log file. Also, make sure that the date format you choose is identical.
 
-    ![custom log parser](media/custom-log-parser.png)
+    ![Fill in custom log parser fields](media/custom-log-parser.png)
 
 7. Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on **Edit**.
 

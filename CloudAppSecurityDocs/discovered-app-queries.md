@@ -7,8 +7,8 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 07/07/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Discovered app filters and queries
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 When you have a large number of discovered apps, you'll find it useful to filter and query them. This article describes what filters are available and how to query your discovered apps.
 
@@ -49,8 +49,7 @@ There are basic and advanced Discovered app filters. To achieve a complex filter
 
 ### Creating and managing custom app tags
 
-You can create a custom app tag.
-These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. For example, custom watch list, assignment to a specific business unit, or custom approvals, such as “approved by legal”.
+You can create a custom app tag. These tags can then be used as filters for deeper diving into specific types of apps that you want to investigate. For example, custom watch list, assignment to a specific business unit, or custom approvals, such as "approved by legal". App tags can be also used in app discovery policies in filters or by applying tags to apps as part of the policy governance actions.
 
 To create a custom app tag:
 
@@ -68,13 +67,13 @@ To create a custom app tag:
 
 ## Discovered app queries
 
-To make investigation even simpler, you can create custom queries and save them for later use.
+To make an investigation even simpler, you can create custom queries and save them for later use.
 
 1. In the **Discovered apps** page, use the filters as described above to drill down into your apps as necessary.
 
 2. After you've achieved the wanted results, click the **Save as** button in the top right corner of the filters.
 
-3. In the **Save query** popup, name your query.
+3. In the **Save query** pop-up, name your query.
 
     ![new query](media/new-query.png)
 
@@ -98,7 +97,7 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 
 - **Enterprise cloud apps that have weak encryption** - filters all your discovered apps to display only apps that are risky because they don't encrypt data-at-rest and don't support any encryption protocol.
 
-- **GDPR ready cloud apps** - Filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren’t.
+- **GDPR ready cloud apps** - Filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren't.
 
 ![query discovered apps](media/queries-discovered-apps.png)
 

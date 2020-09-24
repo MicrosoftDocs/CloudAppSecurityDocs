@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Information protection policies - Cloud App Security | Microsoft Docs
+title: Information protection policies - Cloud App Security
 description: This topic outlines the steps to configure many information protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
@@ -18,7 +18,7 @@ ms.custom: seodec18
 ---
 # Information protection policies
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud App Security file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
@@ -103,7 +103,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 2. Select and apply the policy template **Stale externally shared files**.
 
-3. Customize the filter **Last modified** to match your organization’s policy.
+3. Customize the filter **Last modified** to match your organization's policy.
 
 4. Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
 
@@ -117,7 +117,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ## Detect data access from an unauthorized location
 
-Detect when files are accessed from an unauthorized location, based on your organization’s common locations, to identify a potential data leak or malicious access.
+Detect when files are accessed from an unauthorized location, based on your organization's common locations, to identify a potential data leak or malicious access.
 
 ### Prerequisites
 
@@ -129,9 +129,9 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 2. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
-3. Set the filter **Location** does not equal, and then enter the countries from which your organization expects activity.
+3. Set the filter **Location** does not equal, and then enter the countries/regions from which your organization expects activity.
 
-    1. Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries.
+    1. Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries/regions.
 
 4. Optional: Create **Governance** actions to be applied to detected violation (availability varies between services), such as  **Suspend user**.
 
@@ -232,7 +232,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Azure Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Azure Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
 
 ### Steps
 
@@ -249,7 +249,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 ## Block downloads for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -261,7 +261,7 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 1. On the **Policies** page, create a new **Session policy**.
 
-2. Under **Session control type**, select **Control file download (with DLP)**.
+2. Under **Session control type**, select **Control file download (with inspection)**.
 
 3. Under **Activity filters**, select **User** and set it to **From group** equals **External users**.
 
@@ -276,7 +276,7 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ## Enforce read-only mode for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -306,7 +306,7 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ## Block upload of unclassified documents in real time
 
-Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -320,7 +320,7 @@ Prevent users from uploading unprotected data to the cloud, by utilizing Cloud A
 
 1. On the **Policies** page, create a new **Session policy**.
 
-2. Under **Session control type**, select **Control file upload (with DLP)** or **Control file download (with DLP)**.
+2. Under **Session control type**, select **Control file upload (with inspection)** or **Control file download (with inspection)**.
 
    >[!NOTE]
    > You don't need to set any filters to enable this policy to apply to all users and apps.

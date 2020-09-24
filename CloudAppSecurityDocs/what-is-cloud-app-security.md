@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/15/2019
+ms.date: 09/23/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod:
@@ -28,18 +28,39 @@ ms.custom: seodec18
 
 # Microsoft Cloud App Security overview
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
 
 Moving to the cloud increases flexibility for employees and IT alike. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while maintaining control to protect critical data.
 
-Microsoft Cloud App Security is a Cloud Access Security Broker that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
+Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
 
 Microsoft Cloud App Security natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities.
 
 For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
+
+## What is a CASB?
+
+Moving to the cloud increases flexibility for employees and IT teams. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while protecting critical data.
+
+This is where a Cloud App Security Broker steps in to address the balance, adding safeguards to your organization's use of cloud services by enforcing your enterprise security policies. As the name suggests, CASBs act a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using.
+
+CASBs do this by discovering and providing visibility into Shadow IT and app use, monitoring user activities for anomalous behaviors, controlling access to your resources, providing the ability to classify and prevent sensitive information leak, protecting against malicious actors, and assessing the compliance of cloud services.
+
+CASBs address security gaps in an organization's use of cloud services by providing granular visibility into and control over user activities and sensitive data. CASB coverage scope applies broadly across SaaS, PaaS, and IaaS. For SaaS coverage, CASBs commonly work with the most popular content collaboration platforms (CCP), CRM systems, HR systems, Enterprise resource planning (ERP) solutions, service desks, office productivity suites, and enterprise social networking sites. For IaaS and PaaS coverage, several CASBs govern the API-based usage of popular cloud service providers (CSP) and extend visibility and governance to applications running in these clouds.
+
+## Why do I need a CASB?
+
+You need a CASB to better understand your overall cloud posture across SaaS apps and cloud services and, as such, Shadow IT discovery and app governance are key use cases. Additionally, an organization is responsible for managing and securing its cloud platform including IAM, VMs and their compute resources, data and storage, network resources, and more. Therefore, if you are an organization that uses, or is considering using, cloud apps to your portfolio of network services, you most likely need a CASB to address the additional, unique challenges of regulating and securing your environment. For example, there are many ways for malicious actors to leverage cloud apps to get into your enterprise network and exfiltrate sensitive business data.
+
+As an organization, you need to protect your users and confidential data from the different methods employed by malicious actors. In general, CASBs should help you do this by providing a wide array of capabilities that protect your environment across the following pillars:
+
+- **Visibility**: detect all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in
+- **Data security**: identify and control sensitive information (DLP); respond to classification labels on content
+- **Threat protection**: offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware
+- **Compliance**: supply reports and dashboards to demonstrate cloud governance; assist efforts to conform to data residency and regulatory compliance requirements
 
 ## The Cloud App Security framework
 

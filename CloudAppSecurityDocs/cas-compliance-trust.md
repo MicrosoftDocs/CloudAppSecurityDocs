@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Cloud App Security compliance, data security, privacy, trust | Microsoft Docs
+title: Cloud App Security compliance, data security, privacy, trust
 description: This article describes the Cloud App Security compliance offering, trust center, privacy, and data security.
 author: shsagir
 ms.author: shsagir
@@ -15,7 +15,7 @@ ms.suite: ems
 ---
 # Microsoft Cloud App Security data security and privacy
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -27,18 +27,17 @@ Microsoft Cloud app security has tools that help uncover shadow IT and assess ri
 
 In a world where data breaches and attacks are daily occurrences, it's essential for organizations to choose a cloud app security broker that makes every effort to protect their data. Microsoft Cloud App Security, like all Microsoft cloud products and services, is built to address the rigorous security and privacy demands of our customers.
 
-To help organizations comply with national, regional, and industry-specific requirements governing the collection and use of individuals’ data, Microsoft Cloud App Security provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
+To help organizations comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft Cloud App Security provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
 
 ### Compliance framework and offerings
 
 Microsoft Cloud App Security meets many international and industry-specific compliance standards including, but not limited to:
 
-| |Title|Description|
+| Organization |Title|Description|
 |----|----|----|
-|![logo csa](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
-|![logo csa](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
+|![logo csa attestation](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
+|![logo csa certification](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
 |![logo EU model clauses](media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
-|![logo privacy shield](media/privacy_shield.png)|EU-U.S. Privacy Shield|Microsoft complies with this framework for protecting personal data transferred from the EU to the US.|
 |![logo HIPAA](media/hipaa-logo.png)|[HIPAA/HITECH](https://www\.microsoft\.com/trustcenter/compliance/hipaa)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
 |![logo iso 9001](media/iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
 |![logo iso 27001](media/iso-27001.png)|[ISO/IEC 27001](https://www\.microsoft\.com/trustcenter/compliance/iso-iec-27001)|Microsoft is certified for its implementation of these information security management standards.|
@@ -48,7 +47,9 @@ Microsoft Cloud App Security meets many international and industry-specific comp
 |![logo SOC](media/soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo g-cloud](media/g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
 
-<!--|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|-->
+<!--
+|![logo FISC](media/logo_fisc.png)|FISC|Microsoft meets the requirements of the Financial Industry Information Systems v8 standard in Japan.|
+-->
 
 For more information, go to [Microsoft Compliance Offerings](https://www\.microsoft\.com/trustcenter/compliance/complianceofferings) and select Cloud App Security.  
 
@@ -57,9 +58,9 @@ For more information, go to [Microsoft Compliance Offerings](https://www\.micros
 ### You're the owner of your data
 
 - In Microsoft Cloud App Security, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
-- Admins can search for a specific user’s metadata or user’s activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user’s activity history and security alerts related to the user.
+- Admins can search for a specific user's metadata or user's activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
-- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 - If you ever choose to terminate the service, you can take your data with you.
 
@@ -79,10 +80,10 @@ Personal data about users is derived from the user's object in the SaaS applicat
 
 ## Data location
 
-Microsoft Cloud App Security currently operates in datacenters in the United States and Europe (each a “Geo”). Your tenant account will be created in a Geo based on the country you chose when you signed up. Specifically, your data will be stored in a data center in the Geo nearest to that location.
+Microsoft Cloud App Security currently operates in datacenters in the United States and Europe (each a "Geo"). Your tenant account will be created in a Geo based on the country/region you chose when you signed up. Specifically, your data will be stored in a data center in the Geo nearest to that location.
 
 > [!NOTE]
-> Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user’s session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+> Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
 
 [Learn more about privacy](https://www\.microsoft\.com/trustcenter/privacy)
 
@@ -109,7 +110,7 @@ Microsoft Cloud App Security retains data as follows:
 - Alerts: 180 days
 - Governance log: 120 days
 
-You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www\.microsoft\.com/trustcenter/about/transparency)
 
@@ -124,10 +125,10 @@ The following table show what data is surfaced for each product integration:
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
 | Microsoft Threat Protection | Alerts and user activities | Enabled automatically on Microsoft Threat Protection upon onboarding |
-| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) |
+| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](/azure/sentinel/connect-cloud-app-security) |
 | Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
 | Azure Security Center | Alerts for Azure | Enabled by default in Cloud App Security; can be disabled in Azure Security Center |
-| Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](https://docs.microsoft.com/graph/api/resources/security-api-overview) |
+| Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Cloud App Security](flow-integration.md) |
 
 #### Third-party products
@@ -164,7 +165,7 @@ Microsoft Cloud App Security enables you to limit access of administrators to th
 
 ### Permissions
 
-Microsoft Cloud App Security supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](/cloud-app-security/manage-admins).
+Microsoft Cloud App Security supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Cloud App Security, and Security readers have read access. [For more information](manage-admins.md).
 
 ## Customer controls for organizational compliance
 
@@ -174,7 +175,7 @@ Microsoft Cloud App Security enables you to scope your deployment. Scoping enabl
 
 ### Anonymization
 
-You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](/cloud-app-security/cloud-discovery-anonymizer).
+You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](cloud-discovery-anonymizer.md).
 
 ## Security and Privacy for Cloud App Security US Government GCC High customers
 
@@ -186,7 +187,7 @@ For information on Cloud App Security compliance standards and the location of d
 > [Cloud App Security Overview](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
 > [!div class="nextstepaction"]
-> [Cloud App Security documentation](/cloud-app-security/)
+> [Cloud App Security documentation](index.yml)
 
 > [!div class="nextstepaction"]
 > [Sign up for Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
