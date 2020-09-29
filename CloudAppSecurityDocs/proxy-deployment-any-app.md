@@ -142,6 +142,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
         >
         > - Some providers may refer to them as *User attributes* or *Claims*.
         > - When creating a new SAML app, the Okta Identity Provider limits attributes to 1024 characters. To mitigate this limitation, first create the app without the relevant attributes. After creating the app, edit it, and then add the relevant attributes.
+
     1. Verify that the name identifier is in the email address format.
     1. Save your settings.
 1. On the **APP CHANGES** page, do the following, and then click **Next**. You'll need the information in the next step.
@@ -153,8 +154,8 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 
 1. In your app's portal, on the single sign-on settings, do the following:
     1. [Recommended] Create a backup of your current settings.
-    1. In the single sign-on URL field, enter the single sign-on URL you made a note of earlier.
-    1. Upload the Cloud App Security SAML certificate you made a note of earlier.
+    1. In the single sign-on URL field, enter the Cloud App Security single sign-on URL you made a note of earlier.
+    1. Upload the Cloud App Security SAML certificate you downloaded earlier.
     > [!NOTE]
     > After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
 
