@@ -52,7 +52,7 @@ The process of generating a risk assessment consists of the following steps. The
 - **Generate report** - A risk assessment report of the data extracted from log files is generated.
 
 >[!NOTE]
-> Continuous report data is analyzed twice a day.
+> Continuous report data is analyzed four times a day.
 
 ## Supported firewalls and proxies <a name="supported-firewalls-and-proxies"></a>
 
