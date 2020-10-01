@@ -183,6 +183,8 @@
       href: proxy-deployment-aad.md
     - name: Onboard and deploy Conditional Access App Control for any apps
       href: proxy-deployment-any-app.md
+    - name: Configuring your IdP
+      href: proxy-idp-examples.md
   - name: Investigation
     href: investigate.md
     items:

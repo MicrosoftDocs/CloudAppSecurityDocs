@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Deploy Cloud App Security Conditional Access App Control for Salesforce app using PingOne
-description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for Salesforce app using PingOne identity provider.
+title: Deploy Cloud App Security Conditional Access App Control for any web app using PingOne
+description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for any web app using the PingOne identity provider.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -20,11 +20,13 @@ ms.technology:
 #audience:
 ms.suite: ems
 ---
-# Onboard and deploy Conditional Access App Control for Salesforce app using PingOne identity provider (IdP)
+# Onboard and deploy Conditional Access App Control for any web app using PingOne identity provider (IdP)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Session controls in Microsoft Cloud App Security can be configured to work with any web app and any third-party IdP. Using the Salesforce app as an example, this article describes how to route app sessions from PingOne to Cloud App Security for real-time session controls.
+You can configure session controls in Microsoft Cloud App Security to work with any web app and any third-party IdP. This article describes how to route app sessions from PingOne to Cloud App Security for real-time session controls.
+
+For this article, we'll use the Salesforce app as an example of a web app being configured to use Cloud App Security session controls.
 
 ## Prerequisites
 
@@ -33,39 +35,39 @@ Session controls in Microsoft Cloud App Security can be configured to work with 
   - A relevant PingOne license (required for single sign-on)
   - Microsoft Cloud App Security
 
-- An existing PingOne single sign-on configuration for the Salesforce app using the SAML 2.0 authentication protocol
+- An existing PingOne single sign-on configuration for the app using the SAML 2.0 authentication protocol
 
-## To configure session controls for your Salesforce app using PingOne as the IdP
+## To configure session controls for your app using PingOne as the IdP
 
-Use the following steps to route your Salesforce app sessions from PingOne to Cloud App Security. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
+Use the following steps to route your web app sessions from PingOne to Cloud App Security. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
 
 > [!NOTE]
-> You can configure the Salesforce app's SAML single sign-on information provided by PingOne using one of the following methods:
+> You can configure the app's SAML single sign-on information provided by PingOne using one of the following methods:
 >
 > - **Option 1**: Uploading the app's SAML metadata file.
 > - **Option 2**: Manually providing the app's SAML data.
 >
-> For the purpose of this example, we will use option 2.
+> In the following steps, we'll use option 2.
 
-**Step 1: [Get Salesforce SAML single sign-on settings](#sf-get-saml-info)**
+**Step 1: [Get app SAML single sign-on settings](#idp1-get-app-saml-sso-info)**
 
-**Step 2: [Configure Cloud App Security with Salesforce SAML information](#cas-config-sf-saml-info)**
+**Step 2: [Configure Cloud App Security with app SAML information](#idp1-conf-cas-with-app-saml-info)**
 
-**Step 3: [Create a custom Salesforce app in PingOne](#pingone-create-sf-app)**
+**Step 3: [Create a custom app in PingOne](#idp1-create-custom-app-pingone)**
 
-**Step 4: [Configure Cloud App Security with PingOne app information](#cas-config-pingone-app-info)**
+**Step 4: [Configure Cloud App Security with PingOne app information](#idp1-conf-cas-with-pingone-app-info)**
 
-**Step 5: [Complete custom Salesforce app in PingOne](#pingone-complete-sf-app)**
+**Step 5: [Complete custom app in PingOne](#idp1-complete-custom-app-in-pingone)**
 
-**Step 6: [Get Salesforce app changes in Cloud App Security](#cas-get-sf-app-changes)**
+**Step 6: [Get app changes in Cloud App Security](#idp1-get-app-changes-in-cas)**
 
-**Step 7: [Complete app changes in Salesforce](#sf-complete-app-changes)**
+**Step 7: [Complete app changes](#idp1-complete-app-changes)**
 
-**Step 8: [Complete configuration in Cloud App Security](#cas-complete-setup)**
+**Step 8: [Complete configuration in Cloud App Security](#idp1-complete-conf-in-cas)**
 
-<a name="sf-get-saml-info"></a>
+<a name="idp1-get-app-saml-sso-info"></a>
 
-## Step 1: Get Salesforce SAML single sign-on settings
+## Step 1: Get app SAML single sign-on settings
 
 1. In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign-On Settings**.
 
@@ -77,9 +79,9 @@ Use the following steps to route your Salesforce app sessions from PingOne to Cl
 
     ![Select Salesforce SSO login URL](media/proxy-idp-examples/idp-pingone-sf-copy-saml-sso-login-url.png)
 
-<a name="cas-config-sf-saml-info"></a>
+<a name="idp1-conf-cas-with-app-saml-info"></a>
 
-## Step 2: Configure Cloud App Security with Salesforce SAML information
+## Step 2: Configure Cloud App Security with app SAML information
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
@@ -91,9 +93,9 @@ Use the following steps to route your Salesforce app sessions from PingOne to Cl
 
     ![Manually fill in Salesforce SAML information](media/proxy-idp-examples/idp-pingone-cas-sf-app-info.png)
 
-<a name="pingone-create-sf-app"></a>
+<a name="idp1-create-custom-app-pingone"></a>
 
-## Step 3: Create a custom Salesforce app in PingOne
+## Step 3: Create a custom app in PingOne
 
 Before you proceed, use the following steps to get information from your existing Salesforce app.
 
@@ -134,7 +136,7 @@ Then use the instructions from the **Add a SAML application with your identity p
     - In the **Entity ID** field, enter a unique ID starting with *https://*. Make sure this is different to the exiting Salesforce PingOne app's configuration.
     - Make a note of the **Entity ID**. You'll need this later.
 
-    ![Configure custom app with Salesforce SAML details](media/proxy-idp-examples/idp-pingone-sf-custom-app-details.png)
+    ![Configure custom app with Salesforce SAML details](media/proxy-idp-examples/idp-pingone-sf-custom-app-set-saml-sso-properties.png)
 
 1. On the **SSO Attribute Mapping** page, add the existing Salesforce app's **SAML_SUBJECT** attribute and value you noted earlier, and then click **Continue to Next Step**.
 
@@ -144,7 +146,7 @@ Then use the instructions from the **Add a SAML application with your identity p
 
     ![Assign groups to custom Salesforce app](media/proxy-idp-examples/idp-pingone-sf-custom-app-set-saml-sso-user-groups.png)
 
-<a name="cas-config-pingone-app-info"></a>
+<a name="idp1-conf-cas-with-pingone-app-info"></a>
 
 ## Step 4: Configure Cloud App Security with PingOne app information
 
@@ -161,11 +163,11 @@ Then use the instructions from the **Add a SAML application with your identity p
     - Cloud App Security single sign-on URL
     - Cloud App Security attributes and values
 
-    ![In Cloud App Securty, note SSO URL and attributes](media/proxy-idp-examples/idp-pingone-cas-get-sf-app-external-config.png)
+    ![In Cloud App Security, note SSO URL and attributes](media/proxy-idp-examples/idp-pingone-cas-get-sf-app-external-config.png)
 
-<a name="pingone-complete-sf-app"></a>
+<a name="idp1-complete-custom-app-in-pingone"></a>
 
-## Step 5: Complete custom Salesforce app in PingOne
+## Step 5: Complete custom app in PingOne
 
 1. In PingOne, locate and edit the custom Salesforce app.
 
@@ -177,41 +179,43 @@ Then use the instructions from the **Add a SAML application with your identity p
 
 1. Add the Cloud App Security attributes and values you noted earlier to the app's properties.
 
-    ![Add Cloud App Security attibutes to custom Salesforce app](media/proxy-idp-examples/idp-pingone-sf-custom-app-replace-saml-sso-attributes.png)
+    ![Add Cloud App Security attributes to custom Salesforce app](media/proxy-idp-examples/idp-pingone-sf-custom-app-replace-saml-sso-attributes.png)
 
 1. Save your settings.
 
-<a name="cas-get-sf-app-changes"></a>
+<a name="idp1-get-app-changes-in-cas"></a>
 
-## Step 6: Get Salesforce app changes in Cloud App Security
+## Step 6: Get app changes in Cloud App Security
 
-1. Back in the Cloud App Security **APP CHANGES** page, do the following, but **don't click Finish**. You'll need the information later.
+Back in the Cloud App Security **APP CHANGES** page, do the following, but **don't click Finish**. You'll need the information later.
 
-    - Copy the Cloud App Security SAML Single sign-on URL
-    - Download the Cloud App Security SAML certificate
+- Copy the Cloud App Security SAML Single sign-on URL
+- Download the Cloud App Security SAML certificate
 
-    ![Note the Cloud App Security SAML SSO URL and download the certificate](media/proxy-idp-examples/idp-pingone-cas-sf-app-changes.png)
+![Note the Cloud App Security SAML SSO URL and download the certificate](media/proxy-idp-examples/idp-pingone-cas-sf-app-changes.png)
 
-<a name="sf-complete-app-changes"></a>
+<a name="idp1-complete-app-changes"></a>
 
-## Step 7: Complete app changes in Salesforce
+## Step 7: Complete app changes
 
-1. In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign-On Settings**, and do the following:
-    1. [Recommended] Create a backup of your current settings.
-    1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
-    1. Upload the Cloud App Security SAML certificate you downloaded earlier.
-    1. Replace the **Entity ID** field value with the PingOne custom app entity ID you noted earlier.
-    1. Click **Save**.
+In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign-On Settings**, and do the following:
+
+1. Recommended: Create a backup of your current settings.
+1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
+1. Upload the Cloud App Security SAML certificate you downloaded earlier.
+1. Replace the **Entity ID** field value with the PingOne custom app entity ID you noted earlier.
+1. Click **Save**.
+
     > [!NOTE]
     > The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
     ![Update custom Salesforce app with Cloud App Security SAML details](media/proxy-idp-examples/idp-pingone-sf-custom-app-changes.png)
 
-<a name="cas-complete-setup"></a>
+<a name="idp1-complete-conf-in-cas"></a>
 
 ## Step 8: Complete configuration in Cloud App Security
 
-- Back in the Cloud App Security **APP CHANGES** page,, click **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
+- Back in the Cloud App Security **APP CHANGES** page, click **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
 
 ## Next steps
 

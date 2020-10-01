@@ -77,7 +77,7 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 
 ### Configure integration with other IdP solutions
 
-Use the following steps to route app sessions from other IdP solutions to Cloud App Security. For Azure AD, see [Configure integration with Azure AD](#configure-integration-with-azure-ad).
+Use the following steps to route app sessions from other IdP solutions to Cloud App Security. For Azure AD, see [Configure integration with Azure AD](#configure-integration-with-azure-ad). For examples of how to configuring IdP solutions, see [Configuring your IdP](proxy-idp-examples.md).
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
