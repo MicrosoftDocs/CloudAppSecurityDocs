@@ -50,6 +50,37 @@ It's a good idea to review all of your alerts. Understanding why an alert is occ
   - **Adjust the policy** that matched the alert to improve future alert matches.
   - Resolving an alert gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
 
+## Deployment of our enhanced alert monitoring and management experience
+
+As part of our ongoing improvements to monitoring and managing alerts, the Cloud App Security Alerts page has been improved based on your feedback. In the enhanced experience, the **Resolved** and **Dismissed** statuses are replaced by the **Closed** status, and closed alerts have one of the following resolution types:
+
+- **True positive**: An alert on a confirmed malicious activity
+- **Benign**: An alert on a suspicious but not malicious activity, such as a penetration test or other authorized suspicious action
+- **False positive**: An alert on a non-malicious activity
+
+> [!NOTE]
+> The enhanced experience only applies to new alerts and does not affect the status of existing (legacy) alerts that were **Resolved** or **Dismissed**.
+
+![Enhanced alerts page](media/monitor-alerts/enhanced-alerts.png)
+
+### Enhanced alert monitoring
+
+In the enhanced alerts page, the **Status** column shows whether an alert is opened or closed and the **Resolution type** column shows the type of resolution used when closing an alert. You can use the **Status** filter to help you identify opened or closed alerts, and then using the **Advanced** filter, you can further investigate closed alerts by **Resolution type** using both enhanced and legacy resolution types.
+
+![Enhanced alerts page showing advanced filter](media/monitor-alerts/enhanced-alerts-advanced-filter.png)
+
+### Enhanced alert management
+
+When closing alerts, choose one of the following resolution options:
+
+- **Close as true positive**: If the activity is confirmed as malicious
+- **Close as benign**: If the activity is suspicious but not malicious activity, such as a penetration test or other authorized suspicious action
+- **Close as false positive**: If the activity is confirmed as non-malicious
+
+In the pop-up that appears, provide a reason for closing the alert and fill out the rest of the details as required, and then click **Close alert**.
+
+![Enhanced alerts close popup](media/monitor-alerts/enhanced-alerts-close-resolution.png)
+
 ## Built-in alerts
 
 The following alerts types will be displayed.
