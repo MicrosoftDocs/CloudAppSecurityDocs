@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/07/2020
+ms.date: 10/12/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
@@ -57,14 +57,14 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
   - Accessing and viewing the Manage snapshot reports page
   - Accessing and editing the SIEM agent
 
-- **Global reader:** Has full read-only access to all aspects of Microsoft Cloud App Security. Cannot change any settings or take any actions.
+- **Global reader:** Has full read-only access to all aspects of Cloud App Security. Cannot change any settings or take any actions.
 
 > [!NOTE]
 > Office 365 and Azure AD roles do are not listed in the **Manage admin access** page.
 
 Additionally, the following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
 
-- **App/instance admin:** Has full or read-only permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
+- **App/instance admin:** Has full or read-only permissions to all of the data in Cloud App Security that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
   - Activities page - Only activities about the specific app
   - Alerts - Only alerts relating to the specific app
@@ -78,7 +78,7 @@ Additionally, the following Cloud App Security specific admin roles can be confi
   - Governance actions - Only for the specific app/instance
   - Security recommendations for cloud platforms - No permissions
 
-- **User group admin:** Has full or read-only permissions to all of the data in Microsoft Cloud App Security that deals exclusively with the specific group selected here. For example, if you give a user admin permission to the group "Germany - all users", the admin can view and modify information in Microsoft Cloud App Security only for that user group:
+- **User group admin:** Has full or read-only permissions to all of the data in Cloud App Security that deals exclusively with the specific groups assigned to them. For example, if you assign a user admin permissions to the group "Germany - all users", the admin can view and edit information in Cloud App Security only for that user group. The User group admin has the following access:
 
   - Activities page - Only activities about the users in the group
   - Alerts - Only alerts relating to the users in the group
@@ -92,7 +92,12 @@ Additionally, the following Cloud App Security specific admin roles can be confi
   - Governance actions - Only for the specific users in the group
   - Security recommendations for cloud platforms - No permissions
 
-- **Cloud Discovery global admin:**  Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has access as follows:
+> [!NOTE]
+>
+> - To assign groups to user group admins, you must first [import user groups](user-groups.md) from connected apps.
+> - You can only assign user group admins permissions to imported Azure AD groups.
+
+- **Cloud Discovery global admin:** Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has the following access:
 
   - Settings
     - System settings - View only
