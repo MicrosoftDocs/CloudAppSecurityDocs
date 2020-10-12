@@ -92,10 +92,10 @@ Additionally, the following Cloud App Security specific admin roles can be confi
   - Governance actions - Only for the specific users in the group
   - Security recommendations for cloud platforms - No permissions
 
-> [!NOTE]
->
-> - To assign groups to user group admins, you must first [import user groups](user-groups.md) from connected apps.
-> - You can only assign user group admins permissions to imported Azure AD groups.
+    > [!NOTE]
+    >
+    > - To assign groups to user group admins, you must first [import user groups](user-groups.md) from connected apps.
+    > - You can only assign user group admins permissions to imported Azure AD groups.
 
 - **Cloud Discovery global admin:** Has permission to view and edit all Cloud Discovery settings and data. The Global Discovery admin has the following access:
 
