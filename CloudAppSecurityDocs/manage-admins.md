@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
@@ -62,7 +62,9 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
 > [!NOTE]
 > Office 365 and Azure AD roles do are not listed in the **Manage admin access** page.
 
-Additionally, the following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
+## Built-in Cloud App Security admin roles
+
+The following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
 
 - **App/instance admin:** Has full or read-only permissions to all of the data in Cloud App Security that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
@@ -115,6 +117,9 @@ Additionally, the following Cloud App Security specific admin roles can be confi
   - Security recommendations for cloud platforms - No permissions
 
 - **Cloud Discovery report admin:** Has permissions to view all the data in Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin will not have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
+
+> [!NOTE]
+> The built-in Cloud App Security admin roles only provide access permissions to Cloud App Security.
 
 ## Override admin permissions
 
