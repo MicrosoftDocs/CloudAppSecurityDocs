@@ -185,7 +185,6 @@ The following is a list of featured apps that are supported in [Office 365 Cloud
 - Microsoft Teams (preview)
 - Yammer (preview)
 
-
 If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
 
 ## Next steps
