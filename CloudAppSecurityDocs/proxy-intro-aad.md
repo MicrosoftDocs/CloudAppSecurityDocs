@@ -28,7 +28,7 @@ In today's workplace, it's often not enough to know what's happening in your clo
 
 > [!NOTE]
 >
-> - To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution, as well as a Cloud App Security license.
+> - In addition to a valid Cloud App Security license, to use Cloud App Security Conditional Access App Control, you also need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution, as well as a Cloud App Security license.
 
 ## How it works
 
