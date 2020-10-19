@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of threat protection scenario - Cloud App Security
+title: Overview of threat protection scenario 
 description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
 keywords:
 author: shsagir

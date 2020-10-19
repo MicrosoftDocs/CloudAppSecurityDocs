@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Frequently Asked Questions - Cloud App Security
+title: Frequently Asked Questions 
 description: This article provides frequently asked questions and answers about Cloud App Security.
 keywords:
 author: shsagir
