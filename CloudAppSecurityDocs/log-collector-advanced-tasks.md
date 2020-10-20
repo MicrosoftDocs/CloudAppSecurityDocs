@@ -88,7 +88,7 @@ After you configured the log collector, if you are running behind a proxy, the l
 Use these steps to enable your log collector behind a proxy.
 
 >[!NOTE]
-> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Log collector FTP configuration](log-collector-ftp.md).
+> For information on how to change the certificates used by the log collector for Syslog or FTP, and to resolve connectivity issues from the firewalls and proxies to the log collector, see [Modify the log collector FTP configuration](#modify-the-log-collector-ftp-configuration).
 >
 
 ### Set up the log collector behind a proxy
@@ -204,7 +204,7 @@ The following steps describe moving data to a partition called *datastore* and a
 > [!NOTE]
 > Adding and configuring a new partition on your Linux host is not in the scope of this guide.
 
-![List of Linux partitions](media/log-collector-advanced-tasks/move-lc-new-partition-linux-partition-list.png)
+![List of Linux partitions](media/log-collector-advanced-tasks/move-lc-new-partition-linux-disk-list.png)
 
 1. Stop the Docker service by using this command:
 
@@ -275,7 +275,7 @@ Use these steps to download the log collector image using a computer that has ac
 >
 > After the download, use the [offline installation guide](https://docs.docker.com/datacenter/dtr/2.0/install/install-dtr-offline/#download-the-offline-package) to install your operating system.
 
-Start the process by [exporting the log collector image](#export-the-log-collector-image) and then [import the image to your destination host](#import-the-log-collector-image-to-your-desired-host).
+Start the process by [exporting the log collector image](#export-the-log-collector-image-from-your-docker-hub) and then [import the image to your destination host](#import-and-load-the-log-collector-image-to-your-destination-host).
 
 ### Export the log collector image from your Docker Hub
 
