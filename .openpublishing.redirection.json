@@ -1,0 +1,19 @@
+{
+    "redirections": [
+        {
+            "source_path": "CloudAppSecurityDocs/api-alerts-bulk-dismiss.md",
+            "redirect_url": "/cloud-app-security/api-alerts-close-false-positive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/api-alerts-bulk-resolve.md",
+            "redirect_url": "/cloud-app-security/api-alerts-close-true-positive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/api-alerts-dismiss.md",
+            "redirect_url": "/cloud-app-security/api-alerts-close-false-positive",
+            "redirect_document_id": false
+        }
+    ]
+}

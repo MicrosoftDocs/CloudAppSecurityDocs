@@ -6,7 +6,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/20/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -23,10 +23,13 @@ The Alerts API provides you with information about immediate risks identified by
 The following lists the supported requests:
 
 - [List alerts](api-alerts-list.md)
-- [Bulk dismiss](api-alerts-bulk-dismiss.md)
-- [Bulk resolve](api-alerts-bulk-resolve.md)
+- Bulk dismiss [deprecated - replaced by [Close false positive](api-alerts-close-false-positive.md)]
+- Bulk resolve [deprecated - replaced by [Close true positive](api-alerts-close-true-positive.md)]
+- [Close benign](api-alerts-close-benign.md)
+- [Close false positive](api-alerts-close-false-positive.md)
+- [Close true positive](api-alerts-close-true-positive.md)
+- Dismiss alert [deprecated - replaced by [Close false positive](api-alerts-close-false-positive.md)]
 - [Fetch alert](api-alerts-fetch.md)
-- [Dismiss alert](api-alerts-dismiss.md)
 - [Mark alert as read](api-alerts-mark-read.md)
 - [Mark alert as unread](api-alerts-mark-unread.md)
 
@@ -52,6 +55,6 @@ The following table describes the supported filters:
 | risk | integer | eq, neq | Filter by risk |
 | alertType | integer | eq, neq | Filter by alert type |
 | ID | string | eq, neq | Filter by alert IDs |
-| source | string | eq | The alert’s origin, either built-in or policy |
+| source | string | eq | The alert's origin, either built-in or policy |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
