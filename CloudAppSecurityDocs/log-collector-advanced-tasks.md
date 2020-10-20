@@ -122,7 +122,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-2. From the bash inside the container, go to the Java *jre* folder. To avoid a version related path error, use this command:
+2. From the bash inside the container, go to the Java *jre* folder. To avoid a version-related path error, use this command:
 
     ```bash
     cd "$(find /opt/jdk/*/jre -name "bin" -printf '%h' -quit)"
@@ -305,7 +305,7 @@ Use the steps relevant to the operating system of the Docker Hub where the log c
 
 #### Exporting the image on Windows
 
-1. On a Windowns 10 computer that has access to the Docker Hub, install [Docker Desktop](https://docs.docker.com/docker-for-windows/install/).
+1. On a Windows 10 computer that has access to the Docker Hub, install [Docker Desktop](https://docs.docker.com/docker-for-windows/install/).
 
 1. Download the log collector image.
 
@@ -352,7 +352,7 @@ Use these steps to transfer the exported image to your destination host.
 ## Define custom ports for Syslog and FTP receivers for log collectors on Linux
 
 Some organizations have a requirement to define custom ports for Syslog and FTP services.
-When adding a data source, Cloud App Security log collectors uses specific port numbers to listen for traffic logs from one or more data sources sources.
+When adding a data source, Cloud App Security log collectors uses specific port numbers to listen for traffic logs from one or more data sources.
 
 The following is a list of the listening ports for Syslog:
 
