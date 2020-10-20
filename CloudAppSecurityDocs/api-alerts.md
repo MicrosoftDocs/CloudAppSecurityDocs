@@ -23,15 +23,25 @@ The Alerts API provides you with information about immediate risks identified by
 The following lists the supported requests:
 
 - [List alerts](api-alerts-list.md)
-- Bulk dismiss [deprecated - replaced by [Close false positive](api-alerts-close-false-positive.md)]
-- Bulk resolve [deprecated - replaced by [Close true positive](api-alerts-close-true-positive.md)]
 - [Close benign](api-alerts-close-benign.md)
 - [Close false positive](api-alerts-close-false-positive.md)
 - [Close true positive](api-alerts-close-true-positive.md)
-- Dismiss alert [deprecated - replaced by [Close false positive](api-alerts-close-false-positive.md)]
 - [Fetch alert](api-alerts-fetch.md)
 - [Mark alert as read](api-alerts-mark-read.md)
 - [Mark alert as unread](api-alerts-mark-unread.md)
+
+## Deprecated requests
+
+The following table lists the requests deprecated as obsolete, and the requests that replace them.
+
+| Obsolete request | Alternative |
+| --- | --- |
+| Bulk dismiss | [Close false positive](api-alerts-close-false-positive.md) |
+| Bulk resolve | [Close true positive](api-alerts-close-true-positive.md) |
+| Dismiss alert | [Close false positive](api-alerts-close-false-positive.md) |
+
+> [!NOTE]
+> The deprecated requests have been mapped to their alternatives to avoid disruption. However, if you are using obsolete requests in your environment, we recommend updating them to their alternatives.
 
 ## Filters
 
