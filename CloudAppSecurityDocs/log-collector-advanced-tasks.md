@@ -354,10 +354,12 @@ Use these steps to transfer the exported image to your destination host.
 Some organizations have a requirement to define custom ports for Syslog and FTP services.
 When adding a data source, Cloud App Security log collectors uses specific port numbers to listen for traffic logs from one or more data sources.
 
-The following is a list of the listening ports for Syslog:
+The following table lists of the default listening ports for receivers:
 
-- UDP/514 - UDP/51x
-- TCP/601 - TCP/60x
+| Receiver type | Ports |
+| --- | --- |
+| Syslog | \* UDP/514 - UDP/51x<br />\* TCP/601 - TCP/60x |
+| FTP | \* TCP/21 |
 
 Use these steps to define custom ports.
 
@@ -420,7 +422,7 @@ Use these steps to validate the traffic received by log collectors.
         1. Determine if Syslog messages are being written to the messages file by using this command:
 
         ```bash
-        cat : /var/adallom/syslog/<your_log_collector_port>/messages
+        cat /var/adallom/syslog/<your_log_collector_port>/messages
         ```
 
         If everything is correctly configured, you should see network traffic from your appliances.
