@@ -54,7 +54,7 @@ When you are first setting up Cloud App Security access and session controls for
 
 1. Configure your firewall to work with Cloud App Security using the Azure IP addresses and DNS names relevant to your environment.
     1. Add **outbound port 443** for the following IP addresses and DNS names for your [Cloud App Security data center](network-requirements.md#access-and-session-controls).
-    1. Restart your machine and your browser session
+    1. Restart your device and your browser session
     1. Verify that the login is working as expected
 1. Enable TLS 1.2 in your browser's internet options.
 
@@ -166,7 +166,7 @@ The device identification mechanism can request authentication from relevant dev
 1. Create an access or session policy with the **Device Tag** filter equal to **Valid client certificate**.
 1. Make sure that your client certificate is:
     - deployed using the PKCS #12 file format, typically a .p12 or .pfx file extension
-    - installed in the user store, not the device store, of the machine you are using for testing
+    - installed in the user store, not the device store, of the device you are using for testing
 1. Restart your browser session
 1. When logging in to the protected app
     - Verify that you are redirected to the URL `<https://*.managed.access-control.cas.ms/aad_login>`

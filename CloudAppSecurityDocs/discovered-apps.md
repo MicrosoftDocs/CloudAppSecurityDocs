@@ -46,7 +46,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 1. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
 1. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
 
-1. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
+1. Finally, don't forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
 
 ## Deep dive into Discovered apps
 
@@ -66,7 +66,7 @@ For example, if you want to identify commonly used risky cloud storage and colla
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they're unsanctioned, you can use a blocking script to block them from being used in your environment.
 
-Cloud discovery enables you to dive even deeper into your organization’s cloud usage. You can identify specific instances that are in use by investigating the discovered subdomains.
+Cloud discovery enables you to dive even deeper into your organization's cloud usage. You can identify specific instances that are in use by investigating the discovered subdomains.
 
 For example, you can differentiate between different SharePoint sites.
 
@@ -107,7 +107,7 @@ To generate a Cloud Discovery executive report:
 
 ## Exclude entities
 
-If you have system users, IP addresses, or machines that are noisy but uninteresting or apps that aren't relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.
+If you have system users, IP addresses, or devices that are noisy but uninteresting or apps that aren't relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.
 
 To create an exclusion:
 
@@ -115,9 +115,9 @@ To create an exclusion:
 
 1. Click the **Exclude entities** tab.
 
-1. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded machines** tab and click the + button to add your exclusion.
+1. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded devices** tab and click the + button to add your exclusion.
 
-1. Add a user alias, IP address, or machine name. We recommend adding information about why the exclusion was made.
+1. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
 
     ![exclude user](media/exclude-user.png "exclude user")
 
@@ -125,7 +125,7 @@ To create an exclusion:
 
 Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
 
-- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn’t include data from Microsoft Defender ATP.
+- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender ATP.
 
 - The **Data source specific report** displays only information from a specific data source.
 
