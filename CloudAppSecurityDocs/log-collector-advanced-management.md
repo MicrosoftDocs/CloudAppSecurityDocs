@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Advanced log collector tasks
-description: This article provides information about how advanced tasks for Cloud App Security Cloud Discovery log collectors.
+title: Advanced log collector management
+description: This article provides information about how advanced management tasks for Cloud App Security Cloud Discovery log collectors.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -26,7 +26,7 @@ ms.custom: seodec18
 
 ---
 
-# Advanced log collector tasks
+# Advanced log collector management
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -52,12 +52,12 @@ You might need to modify the configuration for the Cloud App Security Cloud Disc
 
 1. Connect to the log collector host.
 
-2. Run `docker exec -it <collector name> pure-pw passwd <ftp user>`
+1. Run `docker exec -it <collector name> pure-pw passwd <ftp user>`
 
     1. Enter the new password.
-    2. Enter the new password again for confirmation.
+    1. Enter the new password again for confirmation.
 
-3. Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
+1. Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
 
     ![change ftp password](media/log-collector-advanced-tasks/ftp-connect.png)
 
@@ -69,17 +69,19 @@ Follow this procedure to customize the certificate files you use for secure conn
 
     ![Connect to ftp client](media/log-collector-advanced-tasks/ftp-connect.png)
 
-2. Navigate to the `ssl_update` directory.
-3. Upload new certificate files to the `ssl_update` directory (the names are mandatory).
+1. Navigate to the `ssl_update` directory.
+1. Upload new certificate files to the `ssl_update` directory (the names are mandatory).
 
     ![Upload certificate files](media/log-collector-advanced-tasks/new-certs.png)
 
     - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
     - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files are missing, the update won't take place.
 
-4. In a terminal run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
+1. In a terminal window run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 
     ![Update certificate files](media/log-collector-advanced-tasks/update-certs.png)
+
+1. In a terminal window run: `docker exec <collector name> chmod -R 700 /etc/ssl/private/`.
 
 ## Enable the log collector behind a proxy
 
@@ -122,19 +124,19 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-2. From the bash inside the container, go to the Java *jre* folder. To avoid a version-related path error, use this command:
+1. From the bash inside the container, go to the Java *jre* folder. To avoid a version-related path error, use this command:
 
     ```bash
     cd "$(find /opt/jdk/*/jre -name "bin" -printf '%h' -quit)"
     ```
 
-3. Import the root certificate that you copied earlier, from the *discovery* folder into the Java KeyStore and define a password. The default password is "changeit". For information about changing the password, see [How to change the Java KeyStore password](#how-to-change-the-java-keystore-password).
+1. Import the root certificate that you copied earlier, from the *discovery* folder into the Java KeyStore and define a password. The default password is "changeit". For information about changing the password, see [How to change the Java KeyStore password](#how-to-change-the-java-keystore-password).
 
     ```bash
     ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass <password>
     ```
 
-4. Validate that the certificate was imported correctly into the CA keystore, by using the following command to search for the alias you provided during the import (*SelfSignedCert*):
+1. Validate that the certificate was imported correctly into the CA keystore, by using the following command to search for the alias you provided during the import (*SelfSignedCert*):
 
     ```bash
     ./keytool --list --keystore ../lib/security/cacerts | grep self
@@ -292,7 +294,7 @@ Use the steps relevant to the operating system of the Docker Hub where the log c
 1. Export the log collector image.
 
     ```bash
-    docker save --output /tmp/mcasLC.tar microsoft/caslogcollector
+    docker save --output /tmp/mcasLC.targ mcr.microsoft.com/mcas/logcollector
     chmod +r /tmp/mcasLC.tar
     ```
 
@@ -311,13 +313,13 @@ Use the steps relevant to the operating system of the Docker Hub where the log c
 
     ```dos
     docker login -u caslogcollector -p C0llector3nthusiast
-    docker pull microsoft/caslogcollector
+    docker pull mcr.microsoft/mcas/logcollector
     ```
 
 1. Export the log collector image.
 
     ```dos
-    docker save --output C:\mcasLogCollector\mcasLC.tar microsoft/caslogcollector
+    docker save --output C:\mcasLogCollector\mcasLC.targ mcr.microsoft.com/mcas/logcollector
     ```
 
     > [!NOTE]
@@ -437,6 +439,15 @@ Use these steps to validate the traffic received by log collectors.
     ![Review uploaded log files](media/log-collector-advanced-tasks/validate-traffic-and-log-format-review-uploaded-logs.png)
 
 1. Validate the log format received by the log collector by comparing the messages stored in `/var/adallom/discoverylogsbackup` to the sample log format provided in the Cloud App Security **Create log collector** wizard.
+
+> [!NOTE]
+> If you want to use your own sample log but don't have access to the appliance, use the following commands to write the output of the *messages* file (located in the og collector's syslog directory) to a local file on the host.
+>
+> ```bash
+> docker exec CustomerLogCollectorName tail -f -q /var/adallom/syslog/<datasource_port>/messages > /tmp/log.log
+> ```
+>
+> Compare the output file (`/tmp/log.log`) to the messages stored in `/var/adallom/discoverylogsbackup`.
 
 ## Next steps
 
