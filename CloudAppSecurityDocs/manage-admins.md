@@ -76,7 +76,7 @@ The following Cloud App Security specific admin roles can be configured in the C
   - Files page - Only files from the specific app/instance
   - Conditional Access App Control - No permissions
   - Cloud Discovery activity - No permissions
-  - Security extensions - Permissions only for API token with user permissions
+  - Security extensions - Only permissions for API token with user permissions
   - Governance actions - Only for the specific app/instance
   - Security recommendations for cloud platforms - No permissions
 
@@ -90,7 +90,7 @@ The following Cloud App Security specific admin roles can be configured in the C
   - Files page – No permissions
   - Conditional Access App Control - No permissions
   - Cloud Discovery activity - No permissions
-  - Security extensions - Permissions only for API token with users in the group
+  - Security extensions - Only permissions for API token with users in the group
   - Governance actions - Only for the specific users in the group
   - Security recommendations for cloud platforms - No permissions
 
@@ -112,7 +112,7 @@ The following Cloud App Security specific admin roles can be configured in the C
   - App permissions – No permissions
   - Files page – No permissions
   - Conditional Access App Control - No permissions
-  - Security extensions - No permissions
+  - Security extensions - Creating and deleting their own API tokens
   - Governance actions - Only Cloud Discovery related actions
   - Security recommendations for cloud platforms - No permissions
 
@@ -165,7 +165,7 @@ Additionally, to enable MSSPs to provide services across multiple customer tenan
 
 ![choose tenant](media/choose-tenant.png "choose tenant")
 
-## Next steps  
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
