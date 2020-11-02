@@ -115,14 +115,14 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 >
 > - Defender for Endpoint forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
-> - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoint and hence will not be included in Cloud Discovery reports. For an alternative way to view this traffic, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
+> - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoints and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Cloud App Security using the **Automated log upload** in order to get complete visibility. For an alternative way to view this traffic and investigate accessed URLs by devices behind the forward proxy, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## Investigate device network events in Defender for Endpoint
 
-Use the following steps to gain more granular visibility on device's network activity in Defender for Endpoint:
+Use the following steps to gain more granular visibility on device's network activity in Microsoft Defender for Endpoint:
 
 1. In Cloud App Security, under **Discovery** and then select **Devices**.
-1. Select the device you want to investigate and then in the top-right click **View in Microsoft Defender for Endpoint**.
+1. Select the machine you want to investigate and then in the top-right click **View in Microsoft Defender for Endpoint**.
 1. In Microsoft Defender Security Center, under **Devices** > {selected device}, select **Timeline**.
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
