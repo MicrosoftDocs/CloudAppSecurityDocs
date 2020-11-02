@@ -37,6 +37,17 @@ Use the following links to get more details about the different assessment types
 - **[AWS recommendations](security-config-aws.md)**: Security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0, consumed from AWS Security Hub.
 - **[GCP recommendations](security-config-gcp.md)**: Security recommendations based on the CIS benchmark for GCP, version 1.1.0, consumed from Google Security Command Center and Security Health Analytics.
 
+## Security recommendations report
+
+Cloud App Security lets you export a details list of security recommendations to help you monitor, understand, and customize your cloud environments to better protect your organization.
+
+To export a security recommendations list, perform the following steps:
+
+1. In Cloud App Security, browse to **Investigate** > **Security configuration**.
+
+1. Select the security recommendations tab for the relevant cloud.
+1. On the top-right of the recommendations table, click **Export**.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
