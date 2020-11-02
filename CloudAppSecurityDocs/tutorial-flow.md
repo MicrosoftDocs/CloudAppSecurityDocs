@@ -89,7 +89,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
     ![Screenshot of the templates Power Automate window, showing the completed actions and continue button.](media/tutorial-flow-templates-continue.png)
 
-1. Once all the connecters are successfully connected, on the flow's page under **Apply to each machine**, optionally modify the comment and scan type, and then click **Save**.
+1. Once all the connecters are successfully connected, on the flow's page under **Apply to each device**, optionally modify the comment and scan type, and then click **Save**.
 
     ![Screenshot of the flow page, showing the scan setting section.](media/tutorial-flow-templates-scan.png)
 
