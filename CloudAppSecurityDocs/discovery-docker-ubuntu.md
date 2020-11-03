@@ -109,7 +109,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     >
     > * A single Log collector can handle multiple data sources.
     > * Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-advanced-tasks.md#changing-the-ftp-password).
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-advanced-management.md#changing-the-ftp-password).
 
 ### Step 2 – On-premises deployment of your machine
 
@@ -184,6 +184,6 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Modify the log collector FTP configuration](log-collector-advanced-tasks.md)
+> [Modify the log collector FTP configuration](log-collector-advanced-management.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
