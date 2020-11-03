@@ -55,7 +55,7 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 ||Ongoing analytics & reporting|Yes|Yes|
 ||Anomaly detection for discovered apps|Yes||
 |Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control||
-||App permissions and ability to revoke access|Yes||
+||App permissions and ability to revoke access (OAuth apps)|Yes||
 ||Policy setting and enforcement|Yes||
 ||Integration with Azure Information Protection |Yes||
 ||Integration with third-party DLP solutions|Yes||
