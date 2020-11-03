@@ -22,7 +22,7 @@ ms.custom: seodec18
 
 This article provides an overview of how to get started using Cloud App Security to gain visibility across your organization into Shadow IT using Cloud Discovery.
 
-Cloud App Security enables you to discover and analyze cloud apps that are in use in your organization's environment. The Cloud Discovery dashboard shows all the cloud apps running in the environment and categorizes them by function and enterprise readiness. For each app, discover the associated users, IP addresses, machines, transactions, and conducts risk assessment without needing to install an agent on your endpoint devices.
+Cloud App Security enables you to discover and analyze cloud apps that are in use in your organization's environment. The Cloud Discovery dashboard shows all the cloud apps running in the environment and categorizes them by function and enterprise readiness. For each app, discover the associated users, IP addresses, devices, transactions, and conducts risk assessment without needing to install an agent on your endpoint devices.
 
 ## Detect new high-volume or wide app use <a name= "detect-volume"></a>
 

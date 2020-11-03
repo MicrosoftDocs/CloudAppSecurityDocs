@@ -57,8 +57,9 @@ The following table describes the supported filters:
 | entity.instance | integer | eq, neq | Filter alerts related to the specified instances, e.g: 11770, 1059065 |
 | entity.policy | string | eq, neq | Filter alerts related to the specified policies |
 | entity.file | string | eq, neq | Filter alerts related to specified file |
+| alertOpen | boolean | eq | If set to "true", returns only open alerts, if set to "false", returns only closed alerts |
 | severity | integer | eq, neq | Filter by severity. Possible values include:<br /><br />**0**: Low<br />**1**: Medium<br/>**2**: High |
-| resolutionStatus | integer | eq, neq | Filter by alert resolution status, possible values include:<br /><br />**0**: Open<br />**1**: Dismissed<br />**2**: Resolved |
+| resolutionStatus | integer | eq, neq | Filter by alert resolution status, possible values include:<br /><br />**0**: Open <br />**1**: Dismissed (legacy status)<br />**2**: Resolved (legacy status)<br />**3**: Closed as false positive<br />**4**: Closed as benign<br />**5**: Closed as true positive |
 | read | boolean | eq | If set to "true", returns only read alerts, if set to "false", returns unread alerts |
 | date | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter by the time when an alert was triggered |
 | resolutionDate | timestamp | lte, gte, range | Filter by the time when an alert was resolved |

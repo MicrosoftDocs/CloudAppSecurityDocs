@@ -115,7 +115,7 @@ Create a dedicated project in GCP under your organization to enable integration 
     ![Screenshot showing create private key dialog](media/connect-gcp-create-private-key.png)
 
     > [!NOTE]
-    > You'll need the JSON file that is downloaded to your machine later.
+    > You'll need the JSON file that is downloaded to your device later.
 
 #### Retrieve your Organization ID
 
@@ -245,7 +245,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
     ![Screenshot showing create private key for dedicated service account dialog](media/connect-gcp-security-configuration-4.png)
 
     > [!NOTE]
-    > You'll need the JSON file that is downloaded to your machine later.
+    > You'll need the JSON file that is downloaded to your device later.
 
 #### Retrieve your Organization ID
 

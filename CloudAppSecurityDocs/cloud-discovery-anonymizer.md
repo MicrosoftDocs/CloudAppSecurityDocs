@@ -49,9 +49,9 @@ Key points:
 
     - You can set the default in Cloud App Security to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
 
-    1. Under the Settings cog, select **Cloud Discovery settings**.
+    1. Select **Settings** > **Cloud Discovery settings**.
 
-    2. In the Anonymization tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize machine information by default in 'Win10 Endpoint Users' report**.
+    2. In the **Anonymization** tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
     3. Click **Save**.
 
     ![Anonymization settings page](media/anonymizer1.png)
@@ -65,7 +65,7 @@ Key points:
 5. For a specific investigation, such as an investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
 
     > [!NOTE]
-    > The following steps also work for machine names on the **Machines** tab.
+    > The following steps also work for device names on the **Devices** tab.
 
     **To resolve a single username**
 
