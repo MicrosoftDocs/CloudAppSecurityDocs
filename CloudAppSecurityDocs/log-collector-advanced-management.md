@@ -124,7 +124,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-1. From the bash inside the container, go to the Java *jre* folder. To avoid a version-related path error, use this command:
+1. From a bash window inside the container, go to the Java `jre` folder. To avoid a version-related path error, use this command:
 
     ```bash
     cd "$(find /opt/jdk/*/jre -name "bin" -printf '%h' -quit)"
@@ -404,7 +404,7 @@ Use these steps to validate the traffic received by log collectors.
 
 1. Validate that the log collector is receiving Syslog messages using any of the following methods:
 
-    - By using this, or similar, command to analyze network traffic on port 514:
+    - By using *tcpdump*, or similar command to analyze network traffic on port 514:
 
         ```bash
         tcpdump -Als0 port 514
@@ -413,6 +413,24 @@ Use these steps to validate the traffic received by log collectors.
         If everything is correctly configured, you should see network traffic from your appliances.
 
         ![Analyze network traffic tcpdump command](media/log-collector-advanced-tasks/validate-traffic-and-log-format-tcpdump-analyze-traffic.png)
+
+    - By using *netcat*, or similar command to analyze network traffic on the host machine:
+
+        1. Install *netcat* and *wget*.
+
+        1. Download, and if required unzip, a sample log. You can can obtain the URL address from the snapshot reports portal under verify your log format section.
+
+        ```bash
+        wget <URL_address_to_sample_log>
+        ```
+
+        1. Run `netcat` to stream the data to the log-collector.
+
+        ```bash
+        cat <path_to_downloaded_sample_log>.log | nc -w 0 localhost <datasource_port>
+        ```
+
+        If the collector is correctly configured, the log data will be present in the messages file and shortly after that it will be uploaded to the Cloud App Security portal.
 
     - By inspecting relevant files within the Cloud App Security Docker container:
         1. Log in to the container by using this command:
