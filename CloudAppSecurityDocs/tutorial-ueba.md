@@ -2,11 +2,11 @@
 # required metadata
 
 title: Investigate risky users| Microsoft Docs
-description: This tutorial describes the process to investigate risky users in Microsoft Cloud App Security, across hybrid environments, by integrating with Azure ATP.
+description: This tutorial describes the process to investigate risky users in Microsoft Cloud App Security, across hybrid environments, by integrating with Microsoft Defender for Identity.
 keywords:
 author: shsagir
 ms.author: shsagir
-ms.date: 04/28/2020
+ms.date: 11/08/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -26,7 +26,7 @@ ms.suite: ems
 
 Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often are not connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Cloud App Security now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 
-To help you focus on user identity, Microsoft Cloud App Security provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Azure Advanced Threat Protection (ATP). After you integrate with Azure ATP, you will also gain context around user identity from its native integration with Active Directory.
+To help you focus on user identity, Microsoft Cloud App Security provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Microsoft Defender for Identity. After you integrate with Defender for Identity, you will also gain context around user identity from its native integration with Active Directory.
 
 Whether your trigger is an alert you see in the Cloud App Security dashboard, or whether you have information from a third-party security service, start your investigation from the Cloud App Security dashboard to deep dive into risky users.
 
@@ -51,7 +51,7 @@ The investigation priority score is based on security alerts, abnormal activitie
 
 If you click on the score value for an alert or an activity, you can view the evidence that explains how Cloud App Security scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Azure ATP and Cloud App Security. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they are compromised, exfiltrating data, or acting as insider threats.
+Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Cloud App Security. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they are compromised, exfiltrating data, or acting as insider threats.
 
 Cloud App Security uses the following to measure risk:
 
@@ -65,7 +65,7 @@ The activity score determines the probability of a specific user performing a sp
 
 1. Connect at least one app to Microsoft Cloud App Security using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
-1. To enable insights across your on-premises environment, configure Cloud App Security to [integrate with your Azure ATP environment](aatp-integration.md).
+1. To enable insights across your on-premises environment, configure Cloud App Security to [integrate with your Defender for Identity environment](mdi-integration.md).
 
 ## Phase 2: Identify top risky users<a name="identify"></a>
 
@@ -89,7 +89,7 @@ The User page helps you answer the questions:
     * What's risk does the user present to your organization?  
     Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, click on each line so you can drill down deeper into the activity or alert itself. You can click also on the number next to the activity so that you can understand the evidence that influenced the score itself.
     * What's the risk to other assets in your organization?  
-    Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. For example, even if the user you are investigating has a non-sensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. For more information, see [Use Lateral Movement Paths](/azure-advanced-threat-protection/investigate-lateral-movement-path).
+    Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. For example, even if the user you are investigating has a non-sensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. For more information, see [Use Lateral Movement Paths](/defender-for-identity/investigate-lateral-movement-path).
 
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.

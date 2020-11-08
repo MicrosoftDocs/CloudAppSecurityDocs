@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrate Microsoft Defender for Endpoint with Cloud App Security
-description: This article describes how to integrate Microsoft Defender Advanced Threat Protection with Cloud App Security for enhanced visibility into Shadow IT and risk management.
+description: This article describes how to integrate Microsoft Defender for Endpoint with Cloud App Security for enhanced visibility into Shadow IT and risk management.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -26,11 +26,11 @@ ms.custom: seodec18
 
 ---
 
-# Microsoft Defender Advanced Threat Protection integration with Microsoft Cloud App Security
+# Microsoft Defender for Endpoint integration with Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security integrates with Microsoft Defender for Endpoint natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network, and enables device-based investigation. [Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) is a security platform for intelligent protection, detection, investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
+Microsoft Cloud App Security integrates with Microsoft Defender for Endpoint natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network, and enables device-based investigation. [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a security platform for intelligent protection, detection, investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
 Cloud App Security uses the traffic information collected by Defender for Endpoint about the cloud apps and services being accessed from IT-managed Windows 10 devices. The native integration enables you to run Cloud Discovery on any device in the corporate network, using public Wi-Fi, while roaming, and over remote access. It also enables device-based investigation.
 
@@ -61,7 +61,7 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 
 [Watch our videos](#related-videos) showing the benefits of using Defender for Endpoint with Cloud App Security.
 
-## How to integrate Defender for Endpoint with Cloud App Security
+## How to integrate Microsoft Defender for Endpoint with Cloud App Security
 
 To enable Defender for Endpoint integration with Cloud App Security:
 
@@ -127,7 +127,7 @@ Use the following steps to gain more granular visibility on device's network act
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
 
-![Screenshot showing device timeline in Microsoft Defender Security Center](media/mdatp-selected-device.png)
+![Screenshot showing device timeline in Microsoft Defender Security Center](media/mde-selected-device.png)
 
 ## Investigate app usage in Defender for Endpoint with advanced hunting
 
@@ -147,7 +147,7 @@ Use the following steps to gain more granular visibility on app-related network 
 
 1. Run the query and investigate network events for this app.
 
-![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mdatp-advanced-hunting.png)
+![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mde-advanced-hunting.png)
 
 ## Block access to unsanctioned cloud apps
 
@@ -163,13 +163,13 @@ Use the following steps to enable access control for cloud apps:
 
 1. In Cloud App Security, under the settings cog, select **Settings**, under **Cloud Discovery** select **Microsoft Defender for Endpoint**, and then select **Block unsanctioned apps**.
 
-    ![Screenshot showing how to enable blocking with Defender for Endpoint](media/defender-atp-integration.png)
+    ![Screenshot showing how to enable blocking with Defender for Endpoint](media/mde-integration.png)
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
     This allows you to leverage Microsoft Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Cloud App Security, either by manually assigning [app tags](governance-discovery.md#BKMK_SanctionApp) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
-    ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/defender-atp-custom-network-indicators.png)
+    ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/mde-custom-network-indicators.png)
 
 ## Investigate unsanctioned apps in Microsoft Defender Security Center
 
@@ -177,7 +177,7 @@ Every attempt to access an unsanctioned app triggers an alert in Microsoft Defen
 
 Sometimes, access to an unsanctioned app is not blocked, either because the endpoint device is not configured correctly or if the enforcement policy has not yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft Defender Security Center that the unsanctioned app was not blocked.
 
-![Screenshot showing Defender for Endpoint unsanctioned app alert](media/defender-atp-unsanctioned-app-alert.png)
+![Screenshot showing Defender for Endpoint unsanctioned app alert](media/mde-unsanctioned-app-alert.png)
 
 > [!NOTE]
 >

@@ -5,7 +5,7 @@ title: Threat protection policies - Cloud App Security
 description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
-ms.date: 06/13/2019
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.custom: seodec18
 Cloud App Security enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
 > [!NOTE]
-> When integrating Cloud App Security with Azure Advanced Threat Protection (Azure ATP), policies from Azure ATP also appear on the policies page. For a list of Azure ATP policies, see [Security Alerts](/azure-advanced-threat-protection/suspicious-activity-guide).
+> When integrating Cloud App Security with Microsoft Defender for Identity, policies from Defender for Identity also appear on the policies page. For a list of Defender for Identity policies, see [Security Alerts](/defender-for-identity/suspicious-activity-guide).
 
 ## Detect and control user activity from unfamiliar locations
 
@@ -44,6 +44,7 @@ Automatic detection of user access or activity from 2 different locations within
 ### Prerequisites
 
 You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+
 ### Steps
 
 1. This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
@@ -186,7 +187,7 @@ Detect files containing malware in your cloud environments by utilizing Cloud Ap
 
 ### Prerequisites
 
-- For Office 365 malware detection, you must have a valid license for Office 365 Advanced Threat Protection P1.
+- For Office 365 malware detection, you must have a valid license for Microsoft Defender for Office 365 P1.
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
