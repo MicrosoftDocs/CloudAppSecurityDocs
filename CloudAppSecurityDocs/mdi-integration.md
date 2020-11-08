@@ -20,7 +20,7 @@ ms.custom: seodec18
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md). For more information about the machine learning and behavioral analytics provided by Defender for Identity, see [What is Defender for Identity?](/azure-advanced-threat-protection/what-is-atp)
+Microsoft Cloud App Security integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md). For more information about the machine learning and behavioral analytics provided by Defender for Identity, see [What is Defender for Identity?](/defender-for-identity/what-is)
 
 ## Prerequisites
 
@@ -44,21 +44,21 @@ To enable Cloud App Security integration with Defender for Identity:
 
 1. Under **Threat Protection**, select **Microsoft Defender for Identity**.
 
-    ![enable azure advanced threat protection](media/mde-integration.png)
+    ![enable azure advanced threat protection](media/mdi-integration.png)
 
 1. Select **Enable Microsoft Defender for Identity data integration** and then click **Save**.
 
 > [!NOTE]
 > It may take up to 12 hours until the integration takes effect.
 
-After enabling Defender for Identity integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments. Additionally, policies from Defender for Identity will appear on the Cloud App Security policies page. For a list of Defender for Identity policies, see [Security Alerts](/azure-advanced-threat-protection/suspicious-activity-guide).
+After enabling Defender for Identity integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments. Additionally, policies from Defender for Identity will appear on the Cloud App Security policies page. For a list of Defender for Identity policies, see [Security Alerts](/defender-for-identity/suspicious-activity-guide).
 
 You should also use the **Defender for Identity configuration** links to configure Defender for Identity settings that are relevant to Cloud App Security. Use the following information to learn more about these settings:
 
-- [Configure Microsoft Defender for Identity sensors](/azure-advanced-threat-protection/install-atp-step5)
-- [Configure directory service accounts](/azure-advanced-threat-protection/install-atp-step2)
-- [Configure radius accounting for VPN](/azure-advanced-threat-protection/install-atp-step6-vpn)
-- [Access Microsoft Defender for Identity health center](/azure-advanced-threat-protection/atp-health-center)
+- [Configure Microsoft Defender for Identity sensors](/defender-for-identity/install-step5)
+- [Configure directory service accounts](/defender-for-identity/install-step2)
+- [Configure radius accounting for VPN](/defender-for-identity/install-step6-vpn)
+- [Access Microsoft Defender for Identity health center](/defender-for-identity/health-center)
 
 ## Disable Defender for Identity
 
