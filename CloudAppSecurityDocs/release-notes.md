@@ -449,7 +449,7 @@ You can now configure automatic sign out of admin sessions to the portal that ar
 Released June 9, 2019
 
 - **Hybrid UEBA - Native integration with Azure ATP (preview)**  
-Cloud App Security now natively integrates with Azure ATP to provide a single view of identity activities in both cloud apps and your on-premises network. For more information, see [Azure Advanced Threat Protection integration](aatp-integration.md).
+Cloud App Security now natively integrates with Azure ATP to provide a single view of identity activities in both cloud apps and your on-premises network. For more information, see [Azure Advanced Threat Protection integration](mdi-integration.md).
 - **UEBA enhancements**  
 To help you identify threats that fall below the radar, Cloud App Security now uses unique profiling to provide risk scores for individual activities and alerts. The risk scores can be used to identify activities that aren't suspicious enough on their own to trigger alerts. However, by aggregating the risk scores to a user's **Investigation priority score**, Cloud App Security helps you identify risky behavior and focus your investigation. These new capabilities are now available on our redesigned user page.
 - **New risk factor added to Cloud App Catalog**  
