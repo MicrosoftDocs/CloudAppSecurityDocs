@@ -61,7 +61,7 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 
 [Watch our videos](#related-videos) showing the benefits of using Defender for Endpoint with Cloud App Security.
 
-## How to integrate Defender for Endpoint with Cloud App Security
+## How to integrate Microsoft Defender for Endpoint with Cloud App Security
 
 To enable Defender for Endpoint integration with Cloud App Security:
 
@@ -127,7 +127,7 @@ Use the following steps to gain more granular visibility on device's network act
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
 
-![Screenshot showing device timeline in Microsoft Defender Security Center](media/mdatp-selected-device.png)
+![Screenshot showing device timeline in Microsoft Defender Security Center](media/mde-selected-device.png)
 
 ## Investigate app usage in Defender for Endpoint with advanced hunting
 
@@ -147,7 +147,7 @@ Use the following steps to gain more granular visibility on app-related network 
 
 1. Run the query and investigate network events for this app.
 
-![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mdatp-advanced-hunting.png)
+![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mde-advanced-hunting.png)
 
 ## Block access to unsanctioned cloud apps
 
