@@ -1,6 +1,6 @@
 ---
 title: Extend governance to endpoint remediation
-description: This tutorial describes the process to configure Microsoft Cloud App Security policy alerts to trigger Microsoft Power Automate workflows to run Microsoft Defender Advanced Threat Protection remediation actions.
+description: This tutorial describes the process to configure Microsoft Cloud App Security policy alerts to trigger Microsoft Power Automate workflows to run Microsoft Defender for Endpoint remediation actions.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
@@ -12,7 +12,7 @@ ms.date: 04/27/2020
 
 Cloud App Security provides predefined governance options for policies, such as suspend a user or make a file private. Using the native integration with Microsoft Power Automate, you can use a large ecosystem of software as a service (SaaS) connectors to build workflows to automate processes including remediation.
 
-For example, when detecting a possible malware threat, you can use workflows to start Microsoft Defender Advanced Threat Protection (ATP) remediation actions such as running an antivirus scan or isolating an endpoint.
+For example, when detecting a possible malware threat, you can use workflows to start Microsoft Defender for Endpoint remediation actions such as running an antivirus scan or isolating an endpoint.
 
 In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior.
 
@@ -31,8 +31,8 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 ## Prerequisites
 
 * You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
-* You must have a valid Microsoft Defender ATP plan
-* The Power Automate environment must be Azure AD synced, Defender ATP monitored, and domain-joined
+* You must have a valid Microsoft Defender for Endpoint plan
+* The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
 
 ## Phase 1: Generate a Cloud App Security API token<a name="generate-token"></a>
 
@@ -52,7 +52,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 ## Phase 2: Create a flow to run an antivirus scan<a name="create-flow"></a>
 
 > [!NOTE]
-> If you have previously created a flow using a Defender ATP connector, Power Automate automatically reuses the connector and you can skip the **Sign in** step.
+> If you have previously created a flow using a Defender for Endpoint connector, Power Automate automatically reuses the connector and you can skip the **Sign in** step.
 
 1. Go to the [Power Automate portal](https://flow.microsoft.com/) and select **Templates**.
 
@@ -62,7 +62,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
     ![Screenshot of the templates Power Automate page, showing the search results.](media/tutorial-flow-templates-search.png)
 
-1. In the list of apps, on the row in which **Microsoft Defender ATP connector** appears, click **Sign in**.
+1. In the list of apps, on the row in which **Microsoft Defender for Endpoint connector** appears, click **Sign in**.
 
     ![Screenshot of the templates Power Automate page, showing the sign-in process.](media/tutorial-flow-templates-signin.png)
 
@@ -105,7 +105,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 Now every alert raised for this policy will initiate the flow to run the antivirus scan.
 
-You can use the steps in this tutorial to create a wide range of workflow-based actions to extend Cloud App Security remediation capabilities, including other Defender ATP actions. To see a list of predefined Cloud App Security workflows, in Power Automate, [search for "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
+You can use the steps in this tutorial to create a wide range of workflow-based actions to extend Cloud App Security remediation capabilities, including other Defender for Endpoint actions. To see a list of predefined Cloud App Security workflows, in Power Automate, [search for "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
 
 ## See Also
 

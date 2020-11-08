@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrate Microsoft Defender for Endpoint with Cloud App Security
-description: This article describes how to integrate Microsoft Defender Advanced Threat Protection with Cloud App Security for enhanced visibility into Shadow IT and risk management.
+description: This article describes how to integrate Microsoft Defender for Endpoint with Cloud App Security for enhanced visibility into Shadow IT and risk management.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -26,7 +26,7 @@ ms.custom: seodec18
 
 ---
 
-# Microsoft Defender Advanced Threat Protection integration with Microsoft Cloud App Security
+# Microsoft Defender for Endpoint integration with Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
