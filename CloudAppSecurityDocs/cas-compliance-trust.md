@@ -124,7 +124,7 @@ The following table show what data is surfaced for each product integration:
 
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
-| Microsoft Threat Protection | Alerts and user activities | Enabled automatically on Microsoft Threat Protection upon onboarding |
+| Microsoft 365 Defender | Alerts and user activities | Enabled automatically on Microsoft 365 Defender upon onboarding |
 | Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](/azure/sentinel/connect-cloud-app-security) |
 | Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
 | Azure Security Center | Alerts for Azure | Enabled by default in Cloud App Security; can be disabled in Azure Security Center |
