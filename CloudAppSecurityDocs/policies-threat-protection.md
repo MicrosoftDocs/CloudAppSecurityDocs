@@ -5,7 +5,7 @@ title: Threat protection policies - Cloud App Security
 description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
-ms.date: 06/13/2019
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -186,7 +186,7 @@ Detect files containing malware in your cloud environments by utilizing Cloud Ap
 
 ### Prerequisites
 
-- For Office 365 malware detection, you must have a valid license for Office 365 Advanced Threat Protection P1.
+- For Office 365 malware detection, you must have a valid license for Microsoft Defender for Office 365 P1.
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### Steps
