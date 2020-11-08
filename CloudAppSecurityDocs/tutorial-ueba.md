@@ -6,7 +6,7 @@ description: This tutorial describes the process to investigate risky users in M
 keywords:
 author: shsagir
 ms.author: shsagir
-ms.date: 04/28/2020
+ms.date: 11/08/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -89,7 +89,7 @@ The User page helps you answer the questions:
     * What's risk does the user present to your organization?  
     Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, click on each line so you can drill down deeper into the activity or alert itself. You can click also on the number next to the activity so that you can understand the evidence that influenced the score itself.
     * What's the risk to other assets in your organization?  
-    Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. For example, even if the user you are investigating has a non-sensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. For more information, see [Use Lateral Movement Paths](/azure-advanced-threat-protection/investigate-lateral-movement-path).
+    Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. For example, even if the user you are investigating has a non-sensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. For more information, see [Use Lateral Movement Paths](/defender-for-identity/investigate-lateral-movement-path).
 
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
