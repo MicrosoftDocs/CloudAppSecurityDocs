@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/28/2019
+ms.date: 11/08/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
@@ -35,7 +35,7 @@ Additional integration solutions include:
 * **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
-> If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
+> If you are integrating Microsoft Defender for Identity in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
 
 ## Generic SIEM integration architecture
 
