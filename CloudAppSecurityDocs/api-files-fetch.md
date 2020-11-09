@@ -19,7 +19,9 @@ ms.suite: ems
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> This request is not available for Office 365 Cloud App Security.
+>
+> - This API will soon be deprecated. Microsoft Cloud App Security is developing a new solution for identifying and acting upon files that violate policies.
+> - This API is not available for Office 365 Cloud App Security.
 
 Run the GET request to fetch the file matching the specified primary key.
 
