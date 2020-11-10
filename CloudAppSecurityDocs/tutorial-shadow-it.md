@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Discover and manager Shadow IT
+title: Discover and manage Shadow IT
 description: This tutorial describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 keywords:
 author: shsagir
