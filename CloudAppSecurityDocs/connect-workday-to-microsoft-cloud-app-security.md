@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 11/10/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
@@ -77,7 +77,7 @@ For more information about setting up Workday integration users, security groups
     | Client Name | Microsoft Cloud App Security |
     | Client Grant Type | Authorization Code Grant |
     | Access Token Type | Bearer |
-    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Note**: For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Non-Expiring Refresh Tokens | Yes |
     | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
