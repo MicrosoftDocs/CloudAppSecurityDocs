@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Generate reports - Microsoft Cloud App Security | Microsoft Docs
+title: Generate reports - Microsoft Cloud App Security
 description: This article provides instructions for generating data management reports in Microsoft Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 
 # Generate data management reports
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security enables you to generate reports that provide you with an overview of files in your cloud apps.
 
@@ -36,7 +36,7 @@ To generate these reports
 1. Go to **Files**.
 2. In the upper right-hand corner, click the three dots and under **Data management reports**, select one of the following reports.
 
-    ![reports](media/reports.png)
+    ![Screenshot showing Data management reports menu](media/reports.png)
 
 ## Data sharing overview
 

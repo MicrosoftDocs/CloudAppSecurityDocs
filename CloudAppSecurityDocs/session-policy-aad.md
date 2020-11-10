@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/31/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Session policies
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security session policies enable real-time session-level monitoring, affording you granular visibility into cloud apps and the ability to take different actions depending on the policy you set for a user session. Instead of [allowing or blocking access completely](access-policy-aad.md), with session control you can allow access while monitoring the session and/or limit specific session activities using the reverse proxy capabilities of Conditional Access App Control.
 
@@ -38,6 +38,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * [Block specific activities](#block-activities)
 * [Protect files on download](#protect-download)
 * [Protect uploads of sensitive files](#protect-upload)
+* [Block malware on upload](#block-malware-on-upload)
 * [Educate users to protect sensitive files](#educate-protect)
 
 ## Prerequisites to using session policies
@@ -45,7 +46,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 * Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
-  * For [Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  * For [Azure AD Conditional Access](/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Cloud App Security session policy
@@ -113,7 +114,7 @@ To export these logs:
 1. Go to the settings cog and click **Conditional Access App Control**.
 2. On the right side of the table, click the export button.
 
-    ![export button](./media/export-button.png)
+    ![export button](media/export-button.png)
 3. Select the range of the report and click **Export**. This process may take some time.
 
 To download the exported log:
@@ -121,7 +122,7 @@ To download the exported log:
 1. After the report is ready, go to **Settings** and then **Exported reports**.
 2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and click download.
 
-    ![download button](./media/download-button.png)
+    ![download button](media/download-button.png)
 
 ## <a name="block-download"></a>Block all downloads
 
@@ -164,7 +165,7 @@ You can also configure session policies to block malware on download.
 
 ## <a name="educate-protect"></a>Educate users to protect sensitive files
 
-It is important to educate users when they are in violation of a policy, so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Cloud App Security allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
+It is important to educate users when they are in violation of a policy so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Cloud App Security allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
 
 For example, if a user uploads a file without an Azure Information Protection label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
 
@@ -176,9 +177,12 @@ For example, if a user uploads a file without an Azure Information Protection la
 >[!div class="nextstepaction"]
 > [NEXT: How to create an access policy »](access-policy-aad.md)
 
+> [!div class="nextstepaction"]
+> [Troubleshooting access and session controls](troubleshooting-proxy.md)
+
 ## See also
 
 > [!div class="nextstepaction"]
 > [Blocking downloads on unmanaged devices using Azure AD Conditional Access App Control](use-case-proxy-block-session-aad.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]

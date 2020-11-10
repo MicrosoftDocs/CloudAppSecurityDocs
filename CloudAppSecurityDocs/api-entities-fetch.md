@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Fetch - Entities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > This request is not available for Office 365 Cloud App Security.
@@ -33,7 +33,7 @@ GET /api/v1/entities/<pk>/
 
 | Parameter | Description |
 | --- | --- |
-| pk | The ID of the entity |
+| pk | A dictionary with the entity ID, SaaS, and instance details encoded as a base64 string. For example: `{"id":"3fa9f28b-eb0e-463a-ba7b-8089fe9991e2","saas":11161,"inst":0}` encoded as a base64 string. |
 
 ## Example
 
@@ -42,7 +42,7 @@ GET /api/v1/entities/<pk>/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/<pk>/"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/<pk>/"
 ```
 
 ### Response

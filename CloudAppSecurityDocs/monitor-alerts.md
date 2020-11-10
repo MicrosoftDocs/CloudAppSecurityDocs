@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Monitor alerts in Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Alerts are the entry points to understanding your cloud environment more deeply. This article provides a list and description of all alerts.
 
@@ -50,16 +50,47 @@ It's a good idea to review all of your alerts. Understanding why an alert is occ
   - **Adjust the policy** that matched the alert to improve future alert matches.
   - Resolving an alert gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
 
+## Deployment of our enhanced alert monitoring and management experience
+
+As part of our ongoing improvements to monitoring and managing alerts, the Cloud App Security Alerts page has been improved based on your feedback. In the enhanced experience, the **Resolved** and **Dismissed** statuses are replaced by the **Closed** status, and closed alerts have one of the following resolution types:
+
+- **True positive**: An alert on a confirmed malicious activity
+- **Benign**: An alert on a suspicious but not malicious activity, such as a penetration test or other authorized suspicious action
+- **False positive**: An alert on a non-malicious activity
+
+> [!NOTE]
+> The enhanced experience only applies to new alerts and does not affect the status of existing (legacy) alerts that were **Resolved** or **Dismissed**.
+
+![Enhanced alerts page](media/monitor-alerts/enhanced-alerts.png)
+
+### Enhanced alert monitoring
+
+In the enhanced alerts page, the **Status** column shows whether an alert is opened or closed and the **Resolution type** column shows the type of resolution used when closing an alert. You can use the **Status** filter to help you identify opened or closed alerts, and then using the **Advanced** filter, you can further investigate closed alerts by **Resolution type** using both enhanced and legacy resolution types.
+
+![Enhanced alerts page showing advanced filter](media/monitor-alerts/enhanced-alerts-advanced-filter.png)
+
+### Enhanced alert management
+
+When closing alerts, choose one of the following resolution options:
+
+- **Close as true positive**: If the activity is confirmed as malicious
+- **Close as benign**: If the activity is suspicious but not malicious activity, such as a penetration test or other authorized suspicious action
+- **Close as false positive**: If the activity is confirmed as non-malicious
+
+In the pop-up that appears, provide a reason for closing the alert and fill out the rest of the details as required, and then click **Close alert**.
+
+![Enhanced alerts close popup](media/monitor-alerts/enhanced-alerts-close-resolution.png)
+
 ## Built-in alerts
 
 The following alerts types will be displayed.
 
 |Alert name|AlertID|Description|
 |----|----|----|
-|New location|ALERT_GEOLOCATION_NEW_COUNTRY|A new location was detected since the scan began (up to 6 months). This alert only shows up once for each country for your entire organization. |
+|New location|ALERT_GEOLOCATION_NEW_COUNTRY|A new location was detected since the scan began (up to 6 months). This alert only shows up once for each country/region for your entire organization. |
 |New admin user|ALERT_ADMIN_USER|A new admin was detected for a specific app. This admin can be someone who is an admin in one application and is now an admin for another application. This alert relates to the specific admin type, so it will show up each time the type of admin changes. If a user lost admin privileges and then got them again, this alert will be displayed.|
 |Inactive account|ALERT_ZOMBIE_USER|If a user is inactive for 60 days per application – for example, if someone is active in Box but hasn't touched G Suite for 60 days, the user will be considered inactive in G Suite. A tag is added to these users so you can search for inactive accounts.|
-|Unexpected admin location|ALERT_NEW_ADMIN_LOCATION|A new location was detected for administrators since the scan began (up to 6 months). This alert only shows up once for each country for any admin across your organization. |
+|Unexpected admin location|ALERT_NEW_ADMIN_LOCATION|A new location was detected for administrators since the scan began (up to 6 months). This alert only shows up once for each country/region for any admin across your organization. |
 |Compromised account|ALERT_COMPROMISED_ACCOUNT|If there was a breach in an application and the list of breached accounts is published, Cloud App Security downloads the list and compares it to your list of users. The user list includes internal users, external users, and personal accounts. |
 
 ## Custom Alerts

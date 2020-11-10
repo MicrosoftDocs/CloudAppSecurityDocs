@@ -26,7 +26,7 @@ ms.custom: seodec18
 ---
 # What are the differences in discovery capabilities for Azure Active Directory and Microsoft Cloud App Security?
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure Active Directory (Azure AD).
 
@@ -38,7 +38,7 @@ Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing dee
 
 ## Enhanced Cloud App Discovery in Azure Active Directory
 
-Azure Active Directory Premium P1 includes [Azure Active Directory Cloud App Discovery](https://aka.ms/caddocsnew) at no additional cost. This feature is based on the Microsoft Cloud App Security Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations. [Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
+Azure Active Directory Premium P1 includes [Azure Active Directory Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This feature is based on the Microsoft Cloud App Security Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations. [Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
 
 ### Feature comparison
 
@@ -55,7 +55,7 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 ||Ongoing analytics & reporting|Yes|Yes|
 ||Anomaly detection for discovered apps|Yes||
 |Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control||
-||App permissions and ability to revoke access|Yes||
+||App permissions and ability to revoke access (OAuth apps)|Yes||
 ||Policy setting and enforcement|Yes||
 ||Integration with Azure Information Protection |Yes||
 ||Integration with third-party DLP solutions|Yes||

@@ -7,8 +7,8 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/02/2020
-ms.topic: conceptual
+ms.date: 11/10/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -25,11 +25,9 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Connect GitHub Enterprise Cloud to Microsoft Cloud App Security (Preview)
+# Connect GitHub Enterprise Cloud to Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
-
-The GitHub Enterprise Cloud API connector is currently in private preview and being gradually rolled out. This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use. For more information about how Cloud App Security protects GitHub Enterprise Cloud, see [Protect GitHub Enterprise](protect-github.md).
 
@@ -74,6 +72,9 @@ Repeat this step for each additional connected organization.
         - In the **Application name** box, enter a name for the app.
         - In the **Homepage URL** box, enter the URL for the app's homepage.
         - In the **Authorization callback URL** box, enter the following value: `https://portal.cloudappsecurity.com/api/oauth/connect`.
+
+            > [!NOTE]
+            > For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect`
 
         ![Screenshot showing registering an oauth app](media/connect-github-register-oauth-app.png)
 

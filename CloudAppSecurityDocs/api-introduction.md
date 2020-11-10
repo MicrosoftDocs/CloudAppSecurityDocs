@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Cloud App Security REST API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article describes how to interact with Cloud App Security over HTTPS.
 
@@ -58,7 +58,7 @@ For more information about API tokens, see [Managing API tokens](api-authenticat
 ### Example
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
 ```
 
 ## What actions are supported?
@@ -101,6 +101,7 @@ The following methods are supported for providing the limit parameter:
 >
 > - If no limit is provided a default of 100 will be set.
 > - Responses for all requests made with the API token are limited to a maximum of 100 items.
+> - The throttle limit for all API requests is 30 requests per minute per tenant.
 
 ## Filters
 
@@ -115,7 +116,7 @@ Most filters support multiple values to provide you with powerful queries. When 
 ### Example
 
 ```rest
-curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{
   "filters": {
     "some.field": {
       "eq": ["value1", "value2"],

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set admin preferences - Cloud App Security | Microsoft Docs
+title: Set admin preferences - Cloud App Security
 description: This article provides instructions for setting admin preferences in Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/19/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Admin user settings
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security allows you to customize your admin user settings. The notification settings allow admins to specify if they would like to receive email or text notifications for alerts.
 

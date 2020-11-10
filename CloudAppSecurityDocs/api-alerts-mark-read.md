@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Mark as read - Alerts API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Run the POST request to mark the alert matching the specified primary key as read.
 
@@ -39,7 +39,7 @@ POST /api/v1/alerts/<pk>/read/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/read/"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/read/"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

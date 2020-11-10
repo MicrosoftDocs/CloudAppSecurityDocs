@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: article
-ms.date: 12/04/2019
+ms.date: 09/15/2020
 
 # optional metadata
 #ROBOTS: NOINDEX # Used to prevent showing on search pages
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 
 # How Cloud App Security helps protect your Google Cloud Platform (GCP) environment
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Google Cloud Platform is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
 
@@ -34,6 +34,7 @@ Connecting GCP to Cloud App Security helps you secure your assets and detect pot
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Review security configuration recommendations](security-config-gcp.md)
 
 ## Control GCP with built-in policies and policy templates
 
@@ -55,6 +56,14 @@ In addition to monitoring for potential threats, you can apply and automate the 
 | User governance | - Require user to reset password to Google (requires connected linked G Suite instance)<br />- Suspend user (requires connected linked G Suite instance)<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
+
+## Security Recommendations
+
+Cloud App Security provides an overview of your GCP platform configuration compliance for all your GCP projects based on the Center for Internet Security (CIS) benchmark for GCP.
+
+You should continuously review the security recommendations to assess and evaluate the current status of your platform's security posture and identify important configuration gaps. Then, you should create a plan to mitigate the issues in your GCP platform.
+
+For more information, [GCP security recommendations](security-config-gcp.md).
 
 ## Protect GCP in real time
 

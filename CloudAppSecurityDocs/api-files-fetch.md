@@ -16,10 +16,12 @@ ms.suite: ems
 ---
 # Fetch - Files API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> This request is not available for Office 365 Cloud App Security.
+>
+> - This API will soon be deprecated. Microsoft Cloud App Security is developing a new solution for identifying and acting upon files that violate policies.
+> - This API is not available for Office 365 Cloud App Security.
 
 Run the GET request to fetch the file matching the specified primary key.
 
@@ -42,7 +44,7 @@ GET /api/v1/files/<pk>/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/<pk>/"
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/<pk>/"
 ```
 
 ### Response

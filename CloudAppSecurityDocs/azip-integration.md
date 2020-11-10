@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/09/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -28,12 +28,12 @@ ms.custom: seodec18
 
 # Azure Information Protection integration
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security lets you apply Azure Information Protection classification labels automatically, with or without protection, to files as a file policy governance action. You can also investigate files by filtering for the applied classification label within the Cloud App Security portal. Using classifications enables greater visibility and control of your sensitive data in the cloud. Integrating Azure Information Protection with Cloud App Security is as easy as selecting one single checkbox.
 
 > [!NOTE]
-> This article is also relevant for Office 365 unified sensitivity labels if you already [migrated your classification labels for the Office 365 Security and Compliance Center](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Office 365 Security and Compliance Center, Cloud App Security will only use the preexisting labels configured in the Azure Information Protection portal.
+> This article is also relevant for Office 365 unified sensitivity labels if you already [migrated your classification labels for the Office 365 Security and Compliance Center](/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Office 365 Security and Compliance Center, Cloud App Security will only use the preexisting labels configured in the Azure Information Protection portal.
 
 By integrating Azure Information Protection into Cloud App Security, you can use the full power of both services and secure files in your cloud, including:
 
@@ -66,7 +66,7 @@ Files that were labeled with protection outside of Cloud App Security can't be c
 
 ## How it works
 
-You're probably familiar with file classification labels in [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection). You can see the Azure Information Protection classification tags in Cloud App Security. As soon as you integrate Cloud App Security with Azure Information Protection, Cloud App Security scans files as follows:
+You're probably familiar with file classification labels in [Azure Information Protection](/azure/information-protection/what-is-information-protection). You can see the Azure Information Protection classification tags in Cloud App Security. As soon as you integrate Cloud App Security with Azure Information Protection, Cloud App Security scans files as follows:
 
 1. Cloud App Security retrieves the list of all the classification labels used in your tenant. This action is performed every hour to keep the list up-to-date.
 
@@ -82,7 +82,7 @@ You're probably familiar with file classification labels in [Azure Information P
 5. You can create new policies within Cloud App Security that apply your classification labels automatically.
 
 ## How to integrate Azure Information Protection with Cloud App Security
-  
+
 ### Enable Azure Information Protection
 
 All you have to do to integrate Azure Information Protection with Cloud App Security is click a single checkbox. By enabling automatic scan, you enable searching for Azure Information Protection classification labels on your Office 365 files without the need to create a policy. After you enable it, if you have files in your cloud environment that are labeled with Azure Information Protection classification labels, you'll see them in Cloud App Security.
@@ -103,7 +103,7 @@ After enabling Azure Information Protection, you'll be able to see files that ha
 
 #### Set internal and external tags
 
-By default, Cloud App Security scans classification labels that were defined in your organization as well as external ones defined by other organizations. 
+By default, Cloud App Security scans classification labels that were defined in your organization as well as external ones defined by other organizations.
 
 To ignore classification labels set external to your organization, in the Cloud App Security portal, go under **Settings** and **Azure Information Protection**. Select **Only scan files for Azure Information Protection classification labels and content inspection warnings from this tenant**.
 
@@ -111,10 +111,10 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 ### Apply labels directly to files
 
-1. From the **Files** page under **Investigate**, select the file you want to protect. Click the three dots at the end of the file's row then choose **Apply classification label**.  
+1. From the **Files** page under **Investigate**, select the file you want to protect. Click the three dots at the end of the file's row then choose **Apply classification label**.
 
     ![protect app](media/protect-app.png)
-  
+
     >[!NOTE]
     > Cloud App Security can apply Azure Information Protection on files that are up to 50 MB.
 
@@ -187,7 +187,7 @@ Follow these instructions to create the file policy:
 You can also choose to set alerts, user notification or take immediate action for these policies.
 Learn more about [governance actions](governance-actions.md).
 
-Learn more about [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) and check out the Azure Information Protection [Quick start tutorial](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial).
+Learn more about [Azure Information Protection](/information-protection/understand-explore/what-is-information-protection) and check out the Azure Information Protection [Quick start tutorial](/information-protection/get-started/infoprotect-quick-start-tutorial).
 
 ## Next steps
 
@@ -197,6 +197,6 @@ Learn more about [Azure Information Protection](https://docs.microsoft.com/infor
 ## Related videos
 
 > [!div class="nextstepaction"]
-> [Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
+> [Cloud App Security + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

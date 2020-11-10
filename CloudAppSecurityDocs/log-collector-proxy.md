@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Enable the log collector behind a proxy - Cloud App Security | Microsoft Docs
+title: Enable the log collector behind a proxy - Cloud App Security
 description: This article provides information about how to enable the Cloud App Security Cloud Discovery log collector from behind a proxy.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 8/6/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security

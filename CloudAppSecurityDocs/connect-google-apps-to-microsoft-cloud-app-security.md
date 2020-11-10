@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/27/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Connect G Suite to Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing G Suite account using the connector APIs. This connection gives you visibility into and control over G Suite use. For information about how Cloud App Security protects G Suite, see [Protect G Suite](protect-gsuite.md).
 
@@ -37,16 +37,16 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. Click **Create project** to start a new project.
 
-    ![google1](media/google1.png)
+    ![Google create project](media/google1.png)
 
 1. In the **New project** screen, name your project as follows:
 **Cloud App Security** and click **Create**.
 
-    ![google2](media/google2.png)
+    ![Google new project pop-up](media/google2.png)
 
 1. After the project is created, in the tool bar, click on **Google Cloud Platform**. Make sure that the right project is selected in the drop-down at the top.
 
-    ![google project](media/googleverify-project.png)
+    ![Click Google Cloud Platform in tool bar](media/googleverify-project.png)
 
 1. Select menu, go to **APIs & Services** > **Library** and enable the following APIs (use the search line if the API isn't listed):
 

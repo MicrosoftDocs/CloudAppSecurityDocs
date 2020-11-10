@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set IP ranges and tags - Cloud App Security | Microsoft Docs
+title: Set IP ranges and tags - Cloud App Security
 description: This article provides instructions for working with IP tags and IP categories.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/16/2018
-ms.topic: conceptual
+ms.date: 11/09/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -24,11 +24,11 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: seodec18
 ---
-#  <a name="IPtagsandRanges"></a> Working with IP ranges and tags
+# <a name="IPtagsandRanges"></a> Working with IP ranges and tags
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. Each group of IP ranges can be categorized based on a preset list of IP categories. You're also able to create custom IP tags for your IP ranges. Additionally, you can override public geo-location information based on your internal network knowledge. Both IPv4 and IPv6 are supported.
+To easily identify known IP addresses, such as your physical office IP addresses, you need to set IP address ranges. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. Each group of IP ranges can be categorized based on a preset list of IP categories. You're also able to create custom IP tags for your IP ranges. Additionally, you can override public geolocation information based on your internal network knowledge. Both IPv4 and IPv6 are supported.
 
 Cloud App Security comes preconfigured with built-in IP ranges for popular cloud providers such as Azure and Office 365. Additionally, we have built-in tagging based on Microsoft threat intelligence including anonymous proxy, Botnet, and Tor. You can see the full list in the drop-down on the IP address ranges page.
 
@@ -62,7 +62,7 @@ In the menu bar, click the settings icon. Select **IP address ranges**. Click th
 
     - **Cloud provider**: These IPs should be the IP addresses used by your cloud provider.
 
-    - **Corporate**: These IPs should be all the IP addresses of your internal network, your branch offices, and your Wi-Fi roaming addresses.
+    - **Corporate**: These IPs should be all the public IP addresses of your internal network, your branch offices, and your Wi-Fi roaming addresses.
 
     - **Risky**: These IPs should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, and so on.
 

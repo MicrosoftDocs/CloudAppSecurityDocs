@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Control cloud app usage by creating policies - Cloud App Security | Microsoft Docs
+title: Control cloud app usage by creating policies - Cloud App Security
 description: This article provides information on how policies are used and set up to control cloud app use.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/26/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Control cloud apps with policies
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Policies allow you to define the way you want your users to behave in the cloud. They enable you to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If necessary, you can integrate remediation work flows to achieve complete risk mitigation. There are multiple types of policies that correlate to the different types of information you want to gather about your cloud environment and the types of remediation actions you may want to take.
 

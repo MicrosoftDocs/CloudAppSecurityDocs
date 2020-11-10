@@ -6,7 +6,7 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: article
-ms.date: 12/04/2019
+ms.date: 09/15/2020
 
 # optional metadata
 #ROBOTS: NOINDEX # Used to prevent showing on search pages
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 
 # How Cloud App Security helps protect your Amazon Web Services (AWS) environment
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Amazon Web Services is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
 
@@ -36,6 +36,7 @@ Connecting AWS to Cloud App Security helps you secure your assets and detect pot
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Stay up to date with latest security configuration recommendation](security-config-aws.md)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
+- [Review security configuration recommendations](security-config-aws.md)
 
 ## Control AWS with built-in policies and policy templates
 
@@ -59,6 +60,14 @@ In addition to monitoring for potential threats, you can apply and automate the 
 | Data governance | - Make an S3 bucket private<br />- Remove a collaborator for an S3 bucket |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
+
+## Security Recommendations
+
+Cloud App Security provides an overview of your AWS platform configuration compliance for all your AWS accounts based on the Center for Internet Security (CIS) benchmark for AWS.
+
+You should continuously review the security recommendations to assess and evaluate the current status of your platform's security posture and identify important configuration gaps. Then, you should create a plan to mitigate the issues in your AWS platform.
+
+For more information, [AWS security recommendations](security-config-aws.md).
 
 ## Protect AWS in real time
 

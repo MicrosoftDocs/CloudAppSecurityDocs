@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Monitor and protect files in cloud apps - Cloud App Security | Microsoft Docs
+title: Monitor and protect files in cloud apps - Cloud App Security
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 10/7/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # File policies
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 File Policies allow you to enforce a wide range of automated processes using the cloud provider's APIs. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type).
 
@@ -45,7 +45,7 @@ The engine combines three aspects under each policy:
 
 * Automated actions for governance and remediation. For more information, see [Control](control.md).
     > [!NOTE]
-    > Only the governance action of the first triggered policy is guaranteed to be applied. For example, if a file policy has already applied an AIP label to a file, a second file policy cannot apply another AIP label to it.
+    > Only the governance action of the first triggered policy is guaranteed to be applied. For example, if a file policy has already applied an Azure Information Protection (AIP) label to a file, a second file policy cannot apply another AIP label to it.
 
 Once enabled, the policy continuously scans your cloud environment and identifies files that match the content and context filters, and apply the requested automated actions. These policies detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console-generated reports.
 

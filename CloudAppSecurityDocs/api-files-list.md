@@ -16,10 +16,13 @@ ms.suite: ems
 ---
 # List - Files API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> This request is not available for Office 365 Cloud App Security.
+>
+> - This API will soon be deprecated. Microsoft Cloud App Security is developing a new solution for identifying and acting upon files that violate policies.
+> - This endpoint may time out when filtering and paginating large collections.
+> - This API is not available for Office 365 Cloud App Security.
 
 Run the GET or POST request to fetch a list of files matching the specified filters.
 
@@ -48,7 +51,7 @@ POST /api/v1/files/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/" -d '{
   "filters": {
     // some filters
   },

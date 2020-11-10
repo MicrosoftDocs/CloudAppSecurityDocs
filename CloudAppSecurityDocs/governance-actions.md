@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Governance actions to control connected apps - Cloud App Security | Microsoft Docs
+title: Governance actions to control connected apps - Cloud App Security
 description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them.
 keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/03/2019
-ms.topic: conceptual
+ms.date: 06/28/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Governing connected apps
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Governance enables you to control what your users do, in real time, across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Cloud App Security. Governance actions control what your users do, in real time, across connected apps. For information about where you can use governance actions, see [Apply governance actions](control.md#apply-governance-actions).
 
@@ -79,7 +79,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](media/policy_create-alerts.png "policy_create alerts")
+   ![policy_create alerts](media/policy_create-alerts.png)
 
 ## Activity governance actions
 
@@ -99,9 +99,9 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Require user to sign in again** – Signs the user out and requires them to sign in again.
 
-  - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
+  - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
 
-  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png "activity policy ref6")
+  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png)
 
 ## Governance conflicts
 
@@ -136,10 +136,10 @@ For information about how governance actions are treated when there are policy c
 |Activity policy, Accounts | Account |Require user to sign in again|Revokes all refresh tokens and session cookies issues to applications by the user. This action will prevent access to any of the organization's data and will force the user to sign into all applications again.| G Suite, Office|
 |Activity policy, Accounts | Account |Confirm user compromised|Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. | Office |
 |Activity policy, Accounts | Account | Revoke admin privileges |Revokes privileges for an admin account. For example, setting an activity policy that revokes admin privileges after 10 failed login attempts. | G Suite|
-|App dashboard > App permissions |Permissions|Unban app| In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third-party app with their Google or Salesforce. In Office 365: restores the permissions of the third-party app’s to Office. |G Suite, Salesforce, Office |
+|App dashboard > App permissions |Permissions|Unban app| In Google and Salesforce: remove the banning from the app and allow users to give permissions to the third-party app with their Google or Salesforce. In Office 365: restores the permissions of the third-party app's to Office. |G Suite, Salesforce, Office |
 |App dashboard > App permissions |Permissions| Disable app permissions | Revoke a third-party app's permissions to Google, Salesforce, or Office. This is a one-time action that will occur on all existing permissions, but won't prevent future connections.|G Suite, Salesforce, Office |
 |App dashboard > App permissions |Permissions| Enable app permissions |Grant a third-party app's permissions to Google, Salesforce, or Office. This is a one-time action that will occur on all existing permissions, but won't prevent future connections.|G Suite, Salesforce, Office |
-|App dashboard > App permissions |Permissions| Ban app | In Google and Salesforce: revoke a third-party app's permissions to Google or Salesforce and ban it from receiving permissions in the future. In Office 365: doesn’t allow the permission of third-party apps to access Office, but doesn’t revoke them. |G Suite, Salesforce, Office |
+|App dashboard > App permissions |Permissions| Ban app | In Google and Salesforce: revoke a third-party app's permissions to Google or Salesforce and ban it from receiving permissions in the future. In Office 365: doesn't allow the permission of third-party apps to access Office, but doesn't revoke them. |G Suite, Salesforce, Office |
 |App dashboard > App permissions |Permissions|Revoke app|Revoke a third-party app's permissions to Google or Salesforce. This is a one-time action that will occur on all existing permissions, but won't prevent future connections. | G Suite, Salesforce|
 |App dashboard > App permissions | Account | Revoke user from app|You can revoke specific users when clicking on the number under Users. The screen will display the specific users and you can use the X to delete permissions for any user.| G Suite, Salesforce|
 |Discover > Discovered Apps/IP addresses/Users| Cloud Discovery | Export discovery data | Creates a CSV from the discovery data. | Discovery |
@@ -155,7 +155,7 @@ For information about how governance actions are treated when there are policy c
 |File policy, Activity policy, Alerts | App |Require users to sign in again| You can require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option. | Office 365, Azure AD |
 |Files |File |Restore from user quarantine |Restores a user from being quarantined. |Box |
 |Files |File | Grant read permissions to myself| Grants read permissions for the file for yourself so you can access the file and understand if it has a violation or not.| G Suite|
-|Files |File | Allow editors to share | In Google Drive, the default editor permission of a file allows sharing as well. This governance action is the opposite of Remove editor’s ability to share and enables the editor to share the file. | G Suite|
+|Files |File | Allow editors to share | In Google Drive, the default editor permission of a file allows sharing as well. This governance action is the opposite of Remove editor's ability to share and enables the editor to share the file. | G Suite|
 |Files |File | Protect | Protect a file with Azure Information Protection by applying an organization template. | Office 365 (SharePoint and OneDrive) |
 |Files |File | Revoke read permissions form myself | Revokes read permissions for the file for yourself, useful after granting yourself permission to understand if a file has a violation or not.| G Suite|
 |Files, File policy|File | Transfer file ownership | Changes the owner - in the policy you choose a specific owner. | G Suite|

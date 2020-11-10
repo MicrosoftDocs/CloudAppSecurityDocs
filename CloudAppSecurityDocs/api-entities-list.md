@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # List - Entities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
 > This request is not available for Office 365 Cloud App Security.
@@ -50,7 +50,7 @@ POST /api/v1/entities/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
   "filters": {
     // some filters
   },

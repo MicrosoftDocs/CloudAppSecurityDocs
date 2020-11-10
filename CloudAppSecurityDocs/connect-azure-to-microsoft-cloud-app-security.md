@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Connect Azure to Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use. For information about how Cloud App Security protects Azure, see [Protect Azure](protect-azure.md).
 
@@ -36,13 +36,13 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 > [!NOTE]
 >
-> - User must be a Global administrator in Azure AD to connect Azure to Microsoft Cloud App Security.
+> - User must be a Global or Security administrator in Azure AD to connect Azure to Microsoft Cloud App Security.
 > - Cloud App Security displays activities from **all** subscriptions.
 > - Currently, Cloud App Security monitors only ARM activities.
 
 1. In **Connected apps** page, click the plus button and select **Microsoft Azure**.
 
-    ![connect Azure](media/connect-azure-menu.png)
+    ![connect Azure menu item](media/connect-azure-menu.png)
 
 2. In the Azure pop-up, click **Connect Microsoft Azure**.
 

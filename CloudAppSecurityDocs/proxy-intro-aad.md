@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/27/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -22,13 +22,13 @@ ms.custom: seodec18
 ---
 # Protect apps with Microsoft Cloud App Security Conditional Access App Control
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 In today's workplace, it's often not enough to know what's happening in your cloud environment after the fact. You want to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It's important to enable users in your organization to make the most of the services and tools available to them in cloud apps and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Microsoft Cloud App Security integrates with any identity provider (IdP) to deliver these capabilities with access and session controls. If you are using Azure Active Directory (Azure AD) as your IdP, these controls are integrated and streamlined for a simpler and more tailored deployment built on Azure AD's [Conditional Access tool](/azure/active-directory/conditional-access/overview).
 
 > [!NOTE]
 >
-> - To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution, as well as a Cloud App Security license.
+> - In addition to a valid Cloud App Security license, to use Cloud App Security Conditional Access App Control, you also need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution, as well as a Cloud App Security license.
 
 ## How it works
 
@@ -66,6 +66,7 @@ This method doesn't require you to install anything on the device making it idea
 >
 > - Our technology uses best-in-class patented heuristics to identify and control activities performed by the user in the target app. Our heuristics are designed to optimize and balance security with usability. In some rare scenarios, when blocking activities on the server-side renders the app unusable, we secure these activities only on the client-side, which makes them potentially susceptible to exploitation by malicious insiders.
 > - Cloud App Security leverages Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+> - Our proxy servers do not store data at rest. When caching content, we follow the requirements laid out in [RFC 7234 (HTTP caching)](https://tools.ietf.org/html/rfc7234) and only cache public content.
 
 ## Managed device identification
 
@@ -77,10 +78,10 @@ Conditional Access App Control enables you to create policies that take into acc
 
 ### Intune compliant and Hybrid Azure AD Joined devices
 
-Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD Joined device information to be passed directly to Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD Joined device information to be passed directly to Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
-> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](https://go.microsoft.com/fwlink/?linkid=2102732).
+> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions).
 
 ### Client-certificate authenticated devices
 
@@ -106,11 +107,18 @@ To configure a policy to leverage device management via client certificates:
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.
 
+    > [!TIP]
+    > To test how this works, you can use our sample root CA and client certificate, as follows:
+    >
+    > 1. Download the sample [root CA](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleRootCA.crt.pem) and [client certificate](https://github.com/microsoft/Microsoft-Cloud-App-Security/blob/master/Doc%20Assets/Proxy/Samples/SampleClientCert.pfx).
+    > 1. Upload the root CA to Cloud App Security.
+    > 1. Install the client certificate (password=Microsoft) onto the relevant devices.
+
 After the certificates are uploaded, you can create access and session policies based on **Device tag** and **Valid client certificate**.
 
 ## Supported apps and clients
 
-Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you are using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
+Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you are using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
 
 Cloud App Security identifies Apps using information available in its Cloud App Catalog. Some organizations and users customize apps by adding plugins. However, in order for session controls to work correctly with these plugins, the associated custom domains must be added to the respective app in the catalog.
 
@@ -131,13 +139,15 @@ You can block access to native mobile and desktop client apps with access polici
 While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
-> Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
+>
+> - Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
+> - To apply session controls to portal.office.com, you must onboard Microsoft 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
-<a name="featured-apps"></a>Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
+<a name="featured-apps"></a>Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
-- Azure portal (preview)
+- Azure portal
 - Box
 - Concur
 - CornerStone on Demand
@@ -164,9 +174,9 @@ While session controls are built to work with any browser on any major platform 
 - Workplace by Facebook
 - Yammer (preview)
 
-### <a name="O365-apps"></a>Office 365 featured apps
+### <a name="O365-apps"></a>Office 365 Cloud App Security featured apps
 
-The following is a list of featured apps that are supported in Office 365 Cloud App Security. To use these apps with Cloud App Security, you must have an Office 365 E5 license.
+The following is a list of featured apps that are supported in [Office 365 Cloud App Security](editions-cloud-app-security-o365.md).
 
 - Exchange Online
 - OneDrive for Business
@@ -184,5 +194,8 @@ If you're interested in a specific app being featured, [send us details about th
 
 > [!div class="nextstepaction"]
 > [Deploy Conditional Access App Control for any app](proxy-deployment-any-app.md)
+
+> [!div class="nextstepaction"]
+> [Troubleshooting access and session controls](troubleshooting-proxy.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

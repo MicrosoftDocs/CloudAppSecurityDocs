@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 06/08/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -23,7 +23,7 @@ ms.custom: seodec18
 
 # How to investigate anomaly detection alerts
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Cloud App Security provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it is important to note that since anomaly detections are non-deterministic by nature, they are only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
@@ -90,7 +90,7 @@ This detection uses a machine learning algorithm that reduces **B-TP** incidents
 
 ### Activity from infrequent country
 
-Activity from a country that could indicate malicious activity. This policy profiles your environment and triggers alerts when activity is detected from a location that was not recently or was never visited by any user in the organization.
+Activity from a country/region that could indicate malicious activity. This policy profiles your environment and triggers alerts when activity is detected from a location that was not recently or was never visited by any user in the organization.
 
 By default, the policy is configured to include only successful sign-in activities but can be configured to include any sign-in activities. The policy can be further scoped to a subset of users or can exclude users known to travel to remote locations.
 
@@ -350,7 +350,7 @@ Activities in a single session indicating that, a user performed suspicious emai
 - Review all user activity for additional indicators of compromise such as the [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert followed by an [Impossible Travel](#impossible-travel) alert. Look for:
 
     1. New SMTP forwarding rules, as follows:
-        - Check for malicious forwarding rule names. Rule names can vary from simple names, such as "Forward All Emails" and "Auto forward", or deceptive names, such as a barely visible ".". Forwarding rule names can even be empty, and the forwarding recipient can be a single email account or an entire list. Malicious rules can also be hidden from the user interface. Once detected, you can use this helpful [blog post](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) on how to delete hidden rules from mailboxes.
+        - Check for malicious forwarding rule names. Rule names can vary from simple names, such as "Forward All Emails" and "Auto forward", or deceptive names, such as a barely visible ".". Forwarding rule names can even be empty, and the forwarding recipient can be a single email account or an entire list. Malicious rules can also be hidden from the user interface. Once detected, you can use this helpful [blog post](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) on how to delete hidden rules from mailboxes.
         - If you detect an unrecognized forwarding rule to an unknown internal or external email address, you can assume that the inbox account was compromised.
     1. New inbox rules, such as "delete all", "move messages to another folder", or those with obscure naming conventions, for example "…".
     1. An increase in sent emails.
@@ -539,7 +539,7 @@ Activities indicating that an attacker gained access to a user's inbox and creat
 1. Review all user activity for additional indicators of compromise such as the alert is followed by an [Impossible Travel](#impossible-travel) alert. Look for:
 
     1. New SMTP forwarding rules, as follows:
-        - Check for malicious forwarding rule names. Rule names can vary from simple names, such as "Forward All Emails" and "Auto forward", or deceptive names, such as a barely visible ".". Forwarding rule names can even be empty, and the forwarding recipient can be a single email account or an entire list. Malicious rules can also be hidden from the user interface. Once detected, you can use this helpful [blog post](https://blogs.msdn.microsoft.com/hkong/2015/02/27/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi/) on how to delete hidden rules from mailboxes.
+        - Check for malicious forwarding rule names. Rule names can vary from simple names, such as "Forward All Emails" and "Auto forward", or deceptive names, such as a barely visible ".". Forwarding rule names can even be empty, and the forwarding recipient can be a single email account or an entire list. Malicious rules can also be hidden from the user interface. Once detected, you can use this helpful [blog post](/archive/blogs/hkong/how-to-delete-corrupted-hidden-inbox-rules-from-a-mailbox-using-mfcmapi) on how to delete hidden rules from mailboxes.
         - If you detect an unrecognized forwarding rule to an unknown internal or external email address, you can assume that the inbox account was compromised.
     1. New inbox rules, such as "delete all", "move messages to another folder", or those with obscure naming conventions, for example "…".
 1. Review activities performed from the IP address used to create the rule to detect other compromised users.
@@ -648,7 +648,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 **Understand the scope of the breach**
 
 1. Review the activity log for other indicators of compromise such as mass download, or mass deletion, of files.
-1. If you're using Microsoft Defender Advanced Threat Protection, review the user's computer alerts to see if malicious files were detected.
+1. If you're using Microsoft Defender for Endpoint, review the user's computer alerts to see if malicious files were detected.
 1. Search the activity log for malicious file upload and sharing activities.
 
 ### Unusual file deletion activity (by user)

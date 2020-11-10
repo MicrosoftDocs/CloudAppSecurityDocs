@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Deploy Cloud Discovery - Cloud App Security | Microsoft Docs
+title: Deploy Cloud Discovery - Cloud App Security
 description: This article describes the setup procedure for getting Cloud Discovery working.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
-ms.topic: conceptual
-ms.date: 05/17/2020
+ms.topic: how-to
+ms.date: 08/09/2020
 
 # optional metadata
 
@@ -20,23 +20,27 @@ ms.custom: seodec18
 ---
 # Set up Cloud Discovery
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps. The apps are ranked and scored based on more than 80 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
 ## Snapshot and continuous risk assessment reports
 
-There are two types of reports you can generate:
+You can generate the following types of reports:
 
 - **Snapshot reports** - Provides ad-hoc visibility on a set on traffic logs you manually upload from your firewalls and proxies.
 
 - **Continuous reports** - Analyze all logs that are forwarded from your network using Cloud App Security. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define. These reports can be created by connecting in the following ways:
 
-  - [Microsoft Defender ATP integration](wdatp-integration.md): Cloud App Security integrates with Microsoft Defender Advanced Threat Protection (ATP) natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
-  - [Log collector](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
-  - [Zscaler integration](zscaler-integration.md): If you work with both Cloud App Security and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Zscaler provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Zscaler portal.
-  - [iboss integration](iboss-integration.md): If you work with both Cloud App Security and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and iboss provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the iboss portal.
-  - [Corrata integration](corrata-integration.md): If you work with both Cloud App Security and Corrata, you can integrate the two products to enhance your security Cloud Discovery experience. Together, Cloud App Security and Corrata provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the Corrata portal.
+  - [**Microsoft Defender for Endpoint integration**](mde-integration.md): Cloud App Security integrates with Defender for Endpoint natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
+  - [**Log collector**](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
+  - **Secure Web Gateway (SWG)**: If you work with both Cloud App Security and one of the following SWGs, you can integrate the products to enhance your security Cloud Discovery experience. Together, Cloud App Security and SWGs provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the SWG's portal.
+    - [Zscaler integration](zscaler-integration.md)
+    - [iboss integration](iboss-integration.md)
+    - [Corrata integration](corrata-integration.md)
+    - [Menlo Security integration](menlo-integration.md)
+
+- **[Cloud Discovery API](api-discovery.md)** – Use Cloud App Security's Cloud Discovery API to automate traffic log upload and get automated Cloud discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
 
 ## Log process flow: From raw data to risk assessment
 
@@ -51,7 +55,7 @@ The process of generating a risk assessment consists of the following steps. The
 - **Generate report** - A risk assessment report of the data extracted from log files is generated.
 
 >[!NOTE]
-> Continuous report data is analyzed twice a day.
+> Continuous report data is analyzed four times a day.
 
 ## Supported firewalls and proxies <a name="supported-firewalls-and-proxies"></a>
 
@@ -74,6 +78,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Juniper SRX
 - Juniper SSG
 - McAfee Secure Web Gateway
+- Menlo Security (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
 - Sonicwall (formerly Dell)
@@ -121,11 +126,12 @@ Data attributes (according to vendor documentation):
 | Juniper SRX | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Juniper SSG | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | McAfee SWG | **Yes** | No | No | **Yes** | **Yes** | **Yes** |
+| Menlo Security (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |
-| Squid (Common) | **Yes** | No | **Yes** | **Yes** | No | **Yes** |
-| Squid (Native) | **Yes** | No | **Yes** | **Yes** | No | **Yes** |
+| Squid (Common) | **Yes** | No | **Yes** | **Yes** | **Yes** | No |
+| Squid (Native) | **Yes** | No | **Yes** | **Yes** | No | No |
 | Stormshield | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |

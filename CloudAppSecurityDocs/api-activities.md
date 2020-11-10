@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Activities API
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The Activity API gives you visibility into all actions performed in your cloud apps. The data from this API can supply information regarding who logs in to which app and when, which files are being downloaded from suspicious locations, and so on.
 
@@ -34,7 +34,7 @@ The following table describes the supported filters:
 
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
-| service | integer | eq | neq Filter activities related to the specified service appID, for example: 11770 |
+| service | integer | eq, neq | Filter activities related to the specified service appID, for example: 11770 |
 | instance | integer | eq, neq | Filter activities from specified instances |
 | user.orgUnit | string | eq, neq, isset, isnotset | Filter activities by the organization unit of the performing user |
 | activity.eventType | string | eq, neq | Filter activities by event type |
@@ -65,7 +65,6 @@ The following table describes the supported filters:
 | entity | entity pk | eq, neq, isset, isnotset, startswith | Filter activities by the entity who performed the activity. Example: `[{ "id": "entity-id", "saas": 11161, "inst": 0 }]` |
 | user.username | string | eq, neq, isset, isnotset, startswith | Filter activities by the user who performed the activity |
 | user.tags | string | eq, neq, isset, isnotset, startswith | Filter activities by tags belonging to the performing user. Requires group IDs |
-| activity.azureSubscriptions | string | eq, neq | Filter azure subscriptions activities |
 | user.domain | string | eq, neq, isset, isnotset | Filter activities by the performing user domain |
 
 [!INCLUDE [Open support ticket](includes/support.md)]

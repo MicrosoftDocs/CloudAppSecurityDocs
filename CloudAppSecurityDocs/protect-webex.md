@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: How Cloud App Security helps protect your Cisco Webex environment
-description: This article provides information about the benefits of connecting your Cisco Webex app to Cloud App Security using the API connector for visibility and control over use.
+title: How Cloud App Security helps protect your Cisco Webex Teams environment
+description: This article provides information about the benefits of connecting your Cisco Webex Teams app to Cloud App Security using the API connector for visibility and control over use.
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
@@ -15,13 +15,13 @@ ms.date: 12/04/2019
 ms.collection: M365-security-compliance
 ---
 
-# How Cloud App Security helps protect your Cisco Webex environment
+# How Cloud App Security helps protect your Cisco Webex Teams environment
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-As a communication and collaboration platform, Cisco Webex enables streamlined communication and collaboration across your organization. Using Cisco Webex for your data and assets exchange may expose your sensitive organizational information to external users, for example, in chat rooms where they may also be participating in a conversation with your employees.
+As a communication and collaboration platform, Cisco Webex Teams enables streamlined communication and collaboration across your organization. Using Cisco Webex for your data and assets exchange may expose your sensitive organizational information to external users, for example, in chat rooms where they may also be participating in a conversation with your employees.
 
-Connecting Cisco Webex to Cloud App Security gives you improved insights into your users’ activities, provides information protection detections, and enables automated governance controls.
+Connecting Cisco Webex Teams to Cloud App Security gives you improved insights into your users' activities, provides information protection detections, and enables automated governance controls.
 
 ## Main threats
 
@@ -37,7 +37,7 @@ Connecting Cisco Webex to Cloud App Security gives you improved insights into yo
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## Control Cisco Webex with built-in policies and policy templates
+## Control Cisco Webex Teams with built-in policies and policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
 
@@ -51,7 +51,7 @@ For more information about creating policies, see [Create a policy](control-clou
 
 ## Automate governance controls
 
-In addition to monitoring for potential threats, you can apply and automate the following Cisco Webex governance actions to remediate detected threats:
+In addition to monitoring for potential threats, you can apply and automate the following Cisco Webex Teams governance actions to remediate detected threats:
 
 | Type | Action |
 | ---- | ---- |
@@ -60,11 +60,11 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
-## Protect Cisco Webex in real time
+## Protect Cisco Webex Teams in real time
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect Cisco Webex to Microsoft Cloud App Security](connect-webex-to-microsoft-cloud-app-security.md)
+> [How to connect Cisco Webex Teams to Microsoft Cloud App Security](connect-webex-to-microsoft-cloud-app-security.md)

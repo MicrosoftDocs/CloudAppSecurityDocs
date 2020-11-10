@@ -7,8 +7,8 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/31/2019
-ms.topic: conceptual
+ms.date: 11/10/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -25,9 +25,9 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Connect Workday to Microsoft Cloud App Security (Preview)
+# Connect Workday to Microsoft Cloud App Security
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use. For information about how Cloud App Security protects Workday, see [Protect Workday](protect-workday.md).
 
@@ -77,7 +77,7 @@ For more information about setting up Workday integration users, security groups
     | Client Name | Microsoft Cloud App Security |
     | Client Grant Type | Authorization Code Grant |
     | Access Token Type | Bearer |
-    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Note**: For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Non-Expiring Refresh Tokens | Yes |
     | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
@@ -108,7 +108,7 @@ For more information about setting up Workday integration users, security groups
 
     ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
 
-1. In Workday, a pop-up will ask you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
+1. In Workday, a pop-up appears asking you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
 
     ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
 

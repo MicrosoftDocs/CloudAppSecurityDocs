@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: API token management in Cloud App Security
-description: This article provides information about generating API tokens for Cloud App Security.
+title: Managing API tokens
+description: This article provides information about generating and managing API tokens for Cloud App Security.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Managing API tokens
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 In order to access the Cloud App Security API, you have to create an API token and use it in your software to connect to the API. This token will be included in the header when Cloud App Security makes API requests.
 
@@ -43,9 +43,6 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
     ![Cloud App Security API token](media/generate-api-token.png)
 
     The generic portal URL continues to work but is considerably slower than the custom URL provided with your token. If you forget the URL at any time, you can view it by going to the **?** icon in the menu and selecting **About**.
-
-> [!NOTE]
-> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
 
 ## API token management
 

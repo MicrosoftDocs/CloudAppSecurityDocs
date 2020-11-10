@@ -27,7 +27,7 @@
   items:
   - name: Discover and manage shadow IT
     href: tutorial-shadow-it.md
-  - name: Detect and manage suspicious activities
+  - name: Detect suspicious user activity with UEBA
     href: tutorial-suspicious-activity.md
   - name: Investigate risky users
     href: tutorial-ueba.md
@@ -39,6 +39,8 @@
     href: tutorial-proxy.md
   - name: Block downloads of sensitive information
     href: use-case-proxy-block-session-aad.md
+  - name: Manage cloud platform security
+    href: tutorial-cloud-platform-security.md
   - name: Protecting your files with admin quarantine
     href: use-case-admin-quarantine.md
   - name: Apply Azure Information Protection labels automatically
@@ -67,6 +69,8 @@
       href: protect-box.md
     - name: Protect Dropbox
       href: protect-dropbox.md
+    - name: Protect GitHub
+      href: protect-github.md
     - name: Protect GCP
       href: protect-gcp.md
     - name: Protect G Suite
@@ -112,7 +116,7 @@
       - name: Set up Cloud Discovery
         href: set-up-cloud-discovery.md
       - name: Integrate with Microsoft Defender ATP
-        href: wdatp-integration.md
+        href: mde-integration.md
       - name: Integrate with Zscaler
         href: zscaler-integration.md
       - name: Integrate with iboss
@@ -155,6 +159,8 @@
       href: connect-box-to-microsoft-cloud-app-security.md
     - name: Connect Dropbox
       href: connect-dropbox-to-microsoft-cloud-app-security.md
+    - name: Connect GitHub
+      href: connect-github-ec-to-microsoft-cloud-app-security.md
     - name: Connect G Suite
       href: connect-google-apps-to-microsoft-cloud-app-security.md
     - name: Connect GCP
@@ -177,6 +183,8 @@
       href: proxy-deployment-aad.md
     - name: Onboard and deploy Conditional Access App Control for any apps
       href: proxy-deployment-any-app.md
+    - name: Configuring your PingOne IdP
+      href: proxy-idp-examples.md
   - name: Investigation
     href: investigate.md
     items:
@@ -196,10 +204,14 @@
       href: manage-app-permissions.md
     - name: Security configuration
       items:
-      - name: Security configuration for Azure
+      - name: Overview
         href: security-config.md
+      - name: Security configuration for Azure
+        href: security-config-azure.md
       - name: Security configuration for AWS
         href: security-config-aws.md
+      - name: Security configuration for GCP
+        href: security-config-gcp.md
     - name: Monitor apps
       href: monitor-alerts.md
       items:
@@ -248,20 +260,22 @@
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
-    - name: Azure ATP integration
-      href: aatp-integration.md
+    - name: Microsoft Defender for Identity integration
+      href: mdi-integration.md
     - name: Azure AD Identity Protection integration
       href: aadip-integration.md
     - name: Azure Information Protection integration
       href: azip-integration.md
+    - name: Azure Sentinel integration
+      href: siem-sentinel.md
     - name: Integrate with external solutions
       items:
       - name: Generic SIEM integration
         href: siem.md
-      - name: Azure Sentinel integration
-        href: siem-sentinel.md
       - name: External DLP integration
         href: icap-stunnel.md
+      - name: Additional integrations
+        href: additional-integrations.md
     - name: Automate processes and workflows
       items:
       - name: Use the REST API
@@ -320,14 +334,14 @@
         href: api-alerts.md
       - name: List alerts
         href: api-alerts-list.md
-      - name: Bulk dismiss
-        href: api-alerts-bulk-dismiss.md
-      - name: Bulk resolve
-        href: api-alerts-bulk-resolve.md
+      - name: Close benign
+        href: api-alerts-close-benign.md
+      - name: Close false positive
+        href: api-alerts-close-false-positive.md
+      - name: Close true positive
+        href: api-alerts-close-true-positive.md
       - name: Fetch alert
         href: api-alerts-fetch.md
-      - name: Dismiss alert
-        href: api-alerts-dismiss.md
       - name: Mark alert as read
         href: api-alerts-mark-read.md
       - name: Mark alert as unread
@@ -362,6 +376,8 @@
       href: troubleshooting-siem.md
     - name: Troubleshooting policies
       href: troubleshoot-policies.md
+    - name: Troubleshooting access and session controls
+      href: troubleshooting-proxy.md
     - name: Troubleshooting - What is cas.ms?
       href: troubleshooting-proxy-url.md
 - name: Resources

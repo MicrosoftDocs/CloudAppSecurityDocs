@@ -7,8 +7,8 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 07/14/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # API tokens
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The Microsoft Cloud App Security API provides programmatic access to Cloud App Security through REST API endpoints. Applications can use the API to perform read and update operations on Cloud App Security data and objects. For example, the Cloud App Security API supports the following common operations for a user object:
 
@@ -37,7 +37,7 @@ The Microsoft Cloud App Security API provides programmatic access to Cloud App S
 - List activities, alerts, and policy reports
 - Dismiss or resolve alerts
 
-To see the full documentation of the API, in the Cloud App Security portal go to Help > **API documentation**.
+For more information about using our API, see [Cloud App Security REST API](api-introduction.md).
 
 In order to access the API, you have to create an API token and use it in your software to connect to the Cloud App Security API.
 
@@ -64,9 +64,6 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
     The generic portal URL continues to work but is considerably slower than the custom URL provided with your token. If you forget the URL at any time, you can view it by going to the **?** icon in the menu and selecting **About**.
 
-> [!NOTE]
-> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
-
 ## API token management
 
 The API token page includes a table of all the API tokens that were generated.
@@ -83,6 +80,9 @@ After a token is revoked, it's removed from the table, and the software that was
 > - Deprovisioned users API tokens are retained in Cloud App Security but cannot be used. Any attempt to use them will result in a permission denied response. However, we recommend that such tokens are revoked on the **API tokens** page.
 
 ## Next steps
+
+> [!div class="nextstepaction"]
+> [Cloud App Security REST API](api-introduction.md)
 
 > [!div class="nextstepaction"]
 > [Troubleshooting SIEM integration issues](troubleshooting-siem.md)

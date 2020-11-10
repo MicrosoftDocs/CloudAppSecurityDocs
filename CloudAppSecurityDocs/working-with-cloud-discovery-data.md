@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use Cloud Discovery data to detect risky behavior - Cloud App Security | Microsoft Docs
+title: Use Cloud Discovery data to detect risky behavior - Cloud App Security
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 keywords:
 author: shsagir
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Working with discovery data
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
 
@@ -46,18 +46,18 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 4. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
 5. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
 
-6. Finally, don’t forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
+6. Finally, don't forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
 
 ## Exclude entities
 
-If you have system users, IP addresses, or machines that are noisy but uninteresting or apps that aren't relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.
+If you have system users, IP addresses, or device that are noisy but uninteresting or apps that aren't relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.
 
 To create an exclusion:
 
 1. In the portal, under the settings icon, select **Cloud Discovery settings**.
 2. Click the **Exclude entities** tab.
-3. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded machines** tab and click the + button to add your exclusion.
-4. Add a user alias, IP address, or machine name. We recommend adding information about why the exclusion was made.
+3. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded device** tab and click the + button to add your exclusion.
+4. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
 
     ![exclude user](media/exclude-user.png "exclude user")
 
@@ -65,7 +65,7 @@ To create an exclusion:
 
 Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
 
-- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn’t include data from Microsoft Defender ATP.
+- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender ATP.
 
 - The **Data source specific report** displays only information from a specific data source.
 

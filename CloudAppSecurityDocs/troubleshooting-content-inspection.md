@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshooting content inspection errors - Cloud App Security | Microsoft Docs
+title: Troubleshooting content inspection errors - Cloud App Security
 description: This article provides a list of content inspection statuses and their meanings.
 keywords:
 author: shsagir
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Troubleshooting content inspection
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides a list of content inspection statuses and their meanings.
 

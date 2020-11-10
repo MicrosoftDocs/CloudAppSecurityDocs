@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -28,7 +28,7 @@ ms.custom: seodec18
 ---
 # Activity filters and queries
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides descriptions and instructions for Cloud App Security activity filters and queries.
 
@@ -87,7 +87,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Instance - The app instance where the activity was or wasn't performed.
 
-- Location – The country from which the activity was performed.
+- Location – The country/region from which the activity was performed.
 
 - Matched policy – Search for activities that matched on a specific policy that was set in the portal.
 
@@ -137,7 +137,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Download activities - filters all your activities to display only those activities that were download activities, including download user list as a .csv vile, downloading of shared content and downloading a folder.
 
-- Failed log in - filters all your activities to display only failed log ons and failed sign in via SSO
+- Failed log in - filters all your activities to display only failed log-ons and failed sign in via SSO
 
 - File and folder activities - filters all your activities to display only those activities that involved files and folders. The filter includes upload, download, and accessing folders, along with creating, deleting, uploading, downloading, quarantining, and accessing files, and transferring content.
 
@@ -151,7 +151,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link and granting read/write permissions.
 
-- Successful log in - filters all your activities to display only those activities that involve successful log ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from new device.
+- Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from new device.
 
 ![query activities](media/queries-activity.png)
 

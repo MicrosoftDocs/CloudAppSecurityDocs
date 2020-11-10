@@ -8,7 +8,7 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/19/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
 ms.service: cloud-app-security
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 # Docker on Windows on-premises
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Windows.
 
@@ -85,7 +85,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Click **Add data source**.  
     ![Add a data source](media/add-data-source.png)
     1. **Name** your proxy or firewall.  
-    ![ubuntu1](media/ubuntu1.png)
+    ![Add name for data source](media/ubuntu1.png)
     1. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
     1. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
     1. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
@@ -104,7 +104,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     1. Give the log collector a **name**.
     1. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
     1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
-    ![ubuntu2](media/ubuntu2.png)
+    ![Select data source to connect](media/ubuntu2.png)
 
 1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon, ![copy to clipboard icon](media/copy-icon.png). You will need this later.
 
@@ -149,7 +149,7 @@ This installs the Docker client on your machine. While the log collector contain
 
 You should see the message: **Finished successfully!**
 
-![ubuntu8](media/ubuntu8.png)
+![Verify that collector is running properly](media/ubuntu8.png)
 
 ### Step 3 - On-premises configuration of your network appliances
 
@@ -163,7 +163,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![ubuntu9](media/ubuntu9.png)
+![Verify that collector deployed successfully](media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 

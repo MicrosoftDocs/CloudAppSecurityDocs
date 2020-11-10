@@ -27,7 +27,7 @@ ms.custom: seodec18
 ---
 # Tutorial: Block download of sensitive information
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Today's IT admin is stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data? **This tutorial allows you to block downloads by users who have access to your sensitive data in enterprise cloud apps from either unmanaged devices or off-corporate network locations.**
 
@@ -38,7 +38,7 @@ Today's IT admin is stuck between a rock and hard place. You want to enable your
 
 ## The threat
 
-An account manager in your organization wants to check something in Salesforce from home over the weekend, on their personal laptop. The Salesforce data might include client credit card information or personal information. The home PC is unmanaged. If they download documents from Salesforce onto the PC, it might be infected with malware. Should the machine be lost or stolen, it may not be password protected and anyone who finds it has access to sensitive information.
+An account manager in your organization wants to check something in Salesforce from home over the weekend, on their personal laptop. The Salesforce data might include client credit card information or personal information. The home PC is unmanaged. If they download documents from Salesforce onto the PC, it might be infected with malware. Should the device be lost or stolen, it may not be password protected and anyone who finds it has access to sensitive information.
 
 ## The solution
 
@@ -63,7 +63,7 @@ Cloud App Security session policies allow you to restrict a session based on dev
 
 Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
 
-* For [Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+* For [Azure AD Conditional Access](/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
 * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 After completing this task, go to the Cloud App Security portal and create a session policy to monitor and control file downloads in the session.

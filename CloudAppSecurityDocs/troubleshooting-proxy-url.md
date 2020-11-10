@@ -16,7 +16,7 @@ ms.suite: ems
 ---
 # Troubleshooting - What is `*.cas.ms`, `*.mcas.ms`, or `*.mcas-gov.us`?
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 This article provides information about the `cas.ms`, `mcas.ms`, and `mcas-gov.us` URL suffixes used by Conditional Access App Control.
 
@@ -37,6 +37,7 @@ So even though Fabrikam does not actually use Cloud App Security, they see the D
 > - `*.rs2-mcas.ms`
 > - `*.admin-mcas.ms`
 > - `*.mcas.ms`
+> - `*.admin-mcas-gov.us`
 
 ## Here's why you see `*.cas.ms`, `*.mcas.ms`, or `*.mcas-gov.us` in your URL
 
