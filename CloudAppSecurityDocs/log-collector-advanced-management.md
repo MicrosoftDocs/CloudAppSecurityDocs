@@ -418,7 +418,7 @@ Use these steps to validate the traffic received by log collectors.
 
         1. Install *netcat* and *wget*.
 
-        1. Download, and if required unzip, a sample log. You can can obtain the URL address from the snapshot reports portal under verify your log format section.
+        1. Download, and if required unzip, a sample log. You can obtain the URL address from the snapshot reports portal under verify your log format section.
 
         ```bash
         wget <URL_address_to_sample_log>
