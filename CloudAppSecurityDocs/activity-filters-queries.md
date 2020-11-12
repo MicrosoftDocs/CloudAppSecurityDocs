@@ -135,7 +135,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Admin activities - filters all your activities to display only those activities that involved admins.
 
-- Download activities - filters all your activities to display only those activities that were download activities, including download user list as a .csv vile, downloading of shared content and downloading a folder.
+- Download activities - filters all your activities to display only those activities that were download activities, including download user list as a .csv file, downloading of shared content, and downloading a folder.
 
 - Failed log in - filters all your activities to display only failed log-ons and failed sign in via SSO
 
@@ -143,7 +143,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Impersonation activities - filters all your activities to display only impersonation activities.
 
-- Mailbox activities - filters all your activities to display only Microsoft Exchange Online activities such as create item, purge messages from mailbox, update message and send message using Send As permissions (impersonation).
+- Mailbox activities - filters all your activities to display only Microsoft Exchange Online activities such as create item, purge messages from mailbox, update message, and send message using Send As permissions (impersonation).
 
 - Password changes and reset requests - filters all your activities to display only those activities that involving password reset, change password, and force user to change password on next sign-in.
 
@@ -151,7 +151,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link and granting read/write permissions.
 
-- Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from new device.
+- Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from a new device.
 
 ![query activities](media/queries-activity.png)
 
