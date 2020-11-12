@@ -258,8 +258,8 @@
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
-    - name: Azure ATP integration
-      href: aatp-integration.md
+    - name: Microsoft Defender for Identity integration
+      href: mdi-integration.md
     - name: Azure AD Identity Protection integration
       href: aadip-integration.md
     - name: Azure Information Protection integration
