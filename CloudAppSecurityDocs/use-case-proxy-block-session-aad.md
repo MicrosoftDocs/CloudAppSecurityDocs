@@ -38,7 +38,7 @@ Today's IT admin is stuck between a rock and hard place. You want to enable your
 
 ## The threat
 
-An account manager in your organization wants to check something in Salesforce from home over the weekend, on their personal laptop. The Salesforce data might include client credit card information or personal information. The home PC is unmanaged. If they download documents from Salesforce onto the PC, it might be infected with malware. Should the machine be lost or stolen, it may not be password protected and anyone who finds it has access to sensitive information.
+An account manager in your organization wants to check something in Salesforce from home over the weekend, on their personal laptop. The Salesforce data might include client credit card information or personal information. The home PC is unmanaged. If they download documents from Salesforce onto the PC, it might be infected with malware. Should the device be lost or stolen, it may not be password protected and anyone who finds it has access to sensitive information.
 
 ## The solution
 

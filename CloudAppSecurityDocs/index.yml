@@ -143,8 +143,8 @@ landingContent:
             url: set-up-cloud-discovery.md
       - linkListType: how-to-guide
         links:
-          - text: Integrate with Microsoft Defender Advanced Threat Protection
-            url: wdatp-integration.md
+          - text: Integrate with Microsoft Defender for Endpoint
+            url: mde-integration.md
           - text: Cloud Discovery enrichment
             url: cloud-discovery-aad-enrichment.md
       - linkListType: reference

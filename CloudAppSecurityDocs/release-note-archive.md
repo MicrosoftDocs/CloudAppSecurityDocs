@@ -539,7 +539,7 @@ Released September 4, 2016
 
 **Improvements:**
 
-- When the DLP scan fails, you're now provided with an explanation of why Cloud App Security couldn't scan the file. For more information, see [Content Inspection](https://aka.ms/aka.ms/cas-contentinspection).
+- When the DLP scan fails, you're now provided with an explanation of why Cloud App Security couldn't scan the file. For more information, see [Content Inspection](./content-inspection.md).
 - Improvements were made to the anomaly detection engines, including improvements in the impossible travel alerts.
 - Improvements were made to the dismiss alert experience. You can also add feedback so that you can let the Cloud App Security team know whether the alert was interesting and why. Your feedback will be used to improve the Cloud App Security detections.
 - The Cisco ASA Cloud Discovery parsers were improved.

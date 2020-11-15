@@ -6,7 +6,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/27/2020
+ms.date: 10/21/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
@@ -50,6 +50,7 @@ The following source types are currently supported:
 - CISCO_SCAN_SAFE
 - CLAVISTER
 - CORRATA
+- CUSTOM_PARSER
 - FORCEPOINT
 - FORCEPOINT_LEEF
 - FORTIGATE
@@ -81,7 +82,9 @@ The following source types are currently supported:
 - ZSCALER_QRADAR
 
 > [!NOTE]
-> If you can't find your file format, perform a manual upload using the portal.
+>
+> - When using a custom parser, Cloud App Security will use the custom parser attached to the selected data source.
+> - If you can't find your file format, perform a manual upload using the portal.
 
 ## Response parameters
 

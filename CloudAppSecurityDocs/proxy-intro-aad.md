@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/09/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod:
@@ -81,7 +81,7 @@ Conditional Access App Control enables you to create policies that take into acc
 Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD Joined device information to be passed directly to Cloud App Security. From there, an access policy or a session policy can be developed that uses device state as a filter. For more information, see the [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction).
 
 > [!NOTE]
-> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](https://go.microsoft.com/fwlink/?linkid=2102732).
+> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions).
 
 ### Client-certificate authenticated devices
 
@@ -143,7 +143,7 @@ While session controls are built to work with any browser on any major platform 
 > - Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
 > - To apply session controls to portal.office.com, you must onboard Microsoft 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
-<a name="featured-apps"></a>Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
+<a name="featured-apps"></a>Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -174,9 +174,9 @@ While session controls are built to work with any browser on any major platform 
 - Workplace by Facebook
 - Yammer (preview)
 
-### <a name="O365-apps"></a>Office 365 featured apps
+### <a name="O365-apps"></a>Office 365 Cloud App Security featured apps
 
-The following is a list of featured apps that are supported in Office 365 Cloud App Security. To use these apps with Cloud App Security, you must have an Office 365 E5 license.
+The following is a list of featured apps that are supported in [Office 365 Cloud App Security](editions-cloud-app-security-o365.md).
 
 - Exchange Online
 - OneDrive for Business

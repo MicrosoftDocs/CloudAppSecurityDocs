@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Connect Webex to Cloud App Security
-description: This article provides information about how to connect your Webex app to Cloud App Security using the API connector  for visibility and control over use.
+title: Connect Webex Teams to Cloud App Security
+description: This article provides information about how to connect your Webex Teams app to Cloud App Security using the API connector  for visibility and control over use.
 keywords:
 author: shsagir
 ms.author: shsagir
@@ -25,11 +25,11 @@ ms.suite: ems
 ms.custom: seodec18
 
 ---
-# Connect Cisco Webex to Microsoft Cloud App Security
+# Connect Cisco Webex Teams to Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files. For information about how Cloud App Security protects Cisco Webex, see [Protect Cisco Webex](protect-webex.md).
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Cisco Webex account using the connector APIs. This connection gives you visibility into and control over Webex users, activities, and files. For information about how Cloud App Security protects Cisco Webex Teams, see [Protect Cisco Webex Teams](protect-webex.md).
 
 ## Prerequisites
 

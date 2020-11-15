@@ -121,6 +121,7 @@ For more information about  Public Peering, see [ExpressRoute circuits and routi
 >
 > - Before disabling an app connector, make sure you have the connection details available as you will need them if you want to re-enable the connector.
 > - These steps cannot be used to disable the Azure connector.
+> - These steps cannot be used to disable Conditional Access App Control apps and Security configuration apps.
 
 To disable connected apps:
 

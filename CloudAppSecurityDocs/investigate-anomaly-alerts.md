@@ -648,7 +648,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 **Understand the scope of the breach**
 
 1. Review the activity log for other indicators of compromise such as mass download, or mass deletion, of files.
-1. If you're using Microsoft Defender Advanced Threat Protection, review the user's computer alerts to see if malicious files were detected.
+1. If you're using Microsoft Defender for Endpoint, review the user's computer alerts to see if malicious files were detected.
 1. Search the activity log for malicious file upload and sharing activities.
 
 ### Unusual file deletion activity (by user)

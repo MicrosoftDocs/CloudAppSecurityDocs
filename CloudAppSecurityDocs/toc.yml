@@ -115,8 +115,8 @@
       items:
       - name: Set up Cloud Discovery
         href: set-up-cloud-discovery.md
-      - name: Integrate with Microsoft Defender ATP
-        href: wdatp-integration.md
+      - name: Integrate with Microsoft Defender for Endpoint
+        href: mde-integration.md
       - name: Integrate with Zscaler
         href: zscaler-integration.md
       - name: Integrate with iboss
@@ -183,6 +183,8 @@
       href: proxy-deployment-aad.md
     - name: Onboard and deploy Conditional Access App Control for any apps
       href: proxy-deployment-any-app.md
+    - name: Configuring your PingOne IdP
+      href: proxy-idp-examples.md
   - name: Investigation
     href: investigate.md
     items:
@@ -258,8 +260,8 @@
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
-    - name: Azure ATP integration
-      href: aatp-integration.md
+    - name: Microsoft Defender for Identity integration
+      href: mdi-integration.md
     - name: Azure AD Identity Protection integration
       href: aadip-integration.md
     - name: Azure Information Protection integration
@@ -332,14 +334,14 @@
         href: api-alerts.md
       - name: List alerts
         href: api-alerts-list.md
-      - name: Bulk dismiss
-        href: api-alerts-bulk-dismiss.md
-      - name: Bulk resolve
-        href: api-alerts-bulk-resolve.md
+      - name: Close benign
+        href: api-alerts-close-benign.md
+      - name: Close false positive
+        href: api-alerts-close-false-positive.md
+      - name: Close true positive
+        href: api-alerts-close-true-positive.md
       - name: Fetch alert
         href: api-alerts-fetch.md
-      - name: Dismiss alert
-        href: api-alerts-dismiss.md
       - name: Mark alert as read
         href: api-alerts-mark-read.md
       - name: Mark alert as unread
