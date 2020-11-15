@@ -131,7 +131,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     cd bin
     ```
 
-1. Import the root certificate that you copied earlier, from the *discovery* folder into the Java KeyStore and define a password. The default password is "changeit". <!-- For information about changing the password, see [How to change the Java KeyStore password](#how-to-change-the-java-keystore-password). -->
+1. Import the root certificate that you copied earlier, from the *discovery* folder into the Java KeyStore and define a password. The default password is "changeit". For information about changing the password, see [How to change the Java KeyStore password](#how-to-change-the-java-keystore-password).
 
     ```bash
     ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass <password>
@@ -170,22 +170,11 @@ The log collector is now able to communicate with Cloud App Security. After send
 >[!NOTE]
 > If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Cloud App Security portal.
 
-<!--
-
-// This proc is needs verifying (step 2 & 3)
-
 ### How to change the Java KeyStore password
 
 1. Stop the Java KeyStore server.
 
-1. From a bash window inside the container, go to the Java `jre` folder. To avoid a version-related path error, use this command:
-
-     ```bash
-    cd "$(find /opt/jdk/*/jre -name "bin" -printf '%h' -quit)"
-    cd bin
-    ```
-
-/opt/jdk/amazon-corretto-8.222.10.1-linux-x64/jre/lib/security
+<!-- /opt/jdk/amazon-corretto-8.222.10.1-linux-x64/jre/lib/security -->
 
 1. Open a bash shell inside the container and go to the *appdata/conf* folder.
 1. Change the server KeyStore password by using this command:
@@ -211,8 +200,6 @@ The log collector is now able to communicate with Cloud App Security. After send
     1. Specify the new Java KeyStore password for the server: `server.keystore.password=newStorePassword`
     1. Specify the new Certificate password for the server: `server.key.password=newKeyPassword`
 1. Start the server.
-
--->
 
 ## Move the log collector to a different data partition on Linux
 
