@@ -129,16 +129,85 @@ The following steps describe the deployment in Ubuntu.
     export https_proxy='<IP>:<PORT>'
     ```
 
-1. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the following command:
+1. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the commands appropriate for your environment:
+
+#### [CentOS](#tab/centos)
+
+1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
+1. Install Docker engine prerequisites: `yum install -y yum-utils`
+1. Add Docker repository:
+
+```bash
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum makecache
+```
+
+1. Install Docker engine: `yum -y install docker-ce`
+1. Start Docker
+
+```bash
+systemctl start docker
+systemctl enable docker
+```
+
+1. Test Docker installation: `docker run hello-world`
+
+#### [Red Hat](#tab/red-hat)
+
+1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
+1. Install Docker engine prerequisites:
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
     ```
 
-    > [!NOTE]
-    > If this command fails to validate your proxy certificate, run the command using `curl -k` at the beginning.
+1. Add Docker repository:
 
-    ![Command to install docker](media/ubuntu5.png)
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Install Docker engine: `yum -y install docker-ce`
+1. Start Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+#### [Ubuntu](#tab/ubuntu)
+
+1. Remove old versions of Docker: `apt-get remove docker docker-engine docker.io`
+1. If you are installing on Ubuntu 14.04, install the linux-image-extra package.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Install Docker engine prerequisites:
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Verify that the apt-key fingerprint UID is docker@docker.com: `apt-key fingerprint | grep uid`
+1. Install Docker engine:
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+---
 
 1. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
