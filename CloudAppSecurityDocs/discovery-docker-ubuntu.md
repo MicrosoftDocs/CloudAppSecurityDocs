@@ -137,18 +137,18 @@ The following steps describe the deployment in Ubuntu.
 1. Install Docker engine prerequisites: `yum install -y yum-utils`
 1. Add Docker repository:
 
-```bash
-yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-yum makecache
-```
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
 
 1. Install Docker engine: `yum -y install docker-ce`
 1. Start Docker
 
-```bash
-systemctl start docker
-systemctl enable docker
-```
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
 
 1. Test Docker installation: `docker run hello-world`
 
@@ -209,7 +209,7 @@ systemctl enable docker
 
 ---
 
-1. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
+5. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
     ```bash
     (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
