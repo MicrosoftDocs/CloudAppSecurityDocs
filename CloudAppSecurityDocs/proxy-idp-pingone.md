@@ -71,11 +71,14 @@ Use the following steps to route your web app sessions from PingOne to Cloud App
 
 1. In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign-On Settings**.
 
-1. Under **Single Sign-On Settings**, click on the name of the SAML 2.0 app you want to configure.
+1. Under **Single Sign-On Settings**, click on the name of the your existing SAML 2.0 configuration.
 
     ![Select Salesforce SSO settings](media/proxy-idp-pingone/idp-pingone-sf-select-sso-settings.png)
 
 1. On the **SAML Single Sign-On Setting** page, make a note of the Salesforce **Login URL**. You'll need this later.
+
+    > [!NOTE]
+    > If your app provides a SAML certificate, download the certificate file.
 
     ![Select Salesforce SSO login URL](media/proxy-idp-pingone/idp-pingone-sf-copy-saml-sso-login-url.png)
 
@@ -132,7 +135,7 @@ Then use the instructions from the **Add a SAML application with your identity p
     ![Fill out the custom app details](media/proxy-idp-pingone/idp-pingone-sf-custom-app-details.png)
 
 1. On the **Application Configuration** page, do the following, and then click **Continue to Next Step**.
-    - In the **Assertion Consumer Service (ACS)** field, enter the Salesforce **Login URL** you noted earlier.
+    - In the **Single sigh-on service URL** field, enter the Salesforce **Login URL** you noted earlier.
     - In the **Entity ID** field, enter a unique ID starting with *https://*. Make sure this is different from the exiting Salesforce PingOne app's configuration.
     - Make a note of the **Entity ID**. You'll need this later.
 
