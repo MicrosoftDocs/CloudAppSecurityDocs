@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Investigate activities using the API - Cloud App Security
+title: Investigate activities using the API 
 description: This article provides information on how to use the API to investigate user activity in Cloud App Security.
 keywords:
 author: shsagir

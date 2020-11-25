@@ -38,7 +38,7 @@ To create a snapshot report:
 
 1. Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
-1. In the Cloud App Security portal, click on **Discover** then **Create snapshot report**.
+1. In the Cloud App Security portal, click **Discover**, and then click **Create snapshot report**.
 
     ![Create new snapshot report](media/create-new-snapshot-report.png)
 
@@ -48,13 +48,12 @@ To create a snapshot report:
 
 1. Select the **Data source** from which you want to upload the log files.
 
-1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Click **View and verify** then **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
+1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Click **View and verify** then click **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
 
     ![Verify your log format](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
-    > The FTP sample format is supported in snapshots and automated upload while  syslog is supported in automated upload only.  
-    Downloading a sample log will download a sample FTP log.
+    > The FTP sample format is supported in snapshots and automated upload while syslog is supported in automated upload only. Downloading a sample log will download a sample FTP log.
 
 1. **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.
 

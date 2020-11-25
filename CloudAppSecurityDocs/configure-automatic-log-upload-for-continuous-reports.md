@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure automatic log upload for continuous reports - Cloud App Security
+title: Configure automatic log upload for continuous reports 
 description: This article provides information about how to upload logs to create automatic Cloud Discovery reports.
 keywords:
 author: shsagir
