@@ -67,6 +67,7 @@ Importing groups enables you to select those groups as filters when investigatin
 
 > [!NOTE]
 >
+> - The maximum number of imported user groups is 500.
 > - There may be a short delay until imported user groups are available in filters.
 > - Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
 > - After the initial sync, groups are updated every hour.
