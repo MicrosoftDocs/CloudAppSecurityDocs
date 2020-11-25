@@ -117,12 +117,11 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 
     ![View IdP signing certificate properties](media/proxy-idp-adfs/idp-adfs-view-signing-cert-props.png)
 
-    1. On the certificate's details tab, click **Copy to File**.
+    1. On the certificate's details tab, click **Copy to File** and follow the steps in the **Certificate Export Wizard** to export your certificate as a *Base-64 encoded X.509 (.CER)* file.
 
     ![Save IdP signing certificate file](media/proxy-idp-adfs/idp-adfs-save-signing-cert-file.png)
 
-
-1. Back in Salesforce existing AD FS configuration page, and make a note of the settings.
+1. Back in Salesforce, on the existing AD FS single sign-on settings page, make a note of the settings.
 1. Create a new SAML single sign-on configuration. Apart from the **Entity ID** value that must match the relying party trust **Identifier**, configure the single sign-on using the settings you noted earlier. You'll need this configuration later when configuring Cloud App Security.
 
 <a name="idp1-conf-cas-with-adfs-app-info"></a>
@@ -144,6 +143,9 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 
     - Cloud App Security single sign-on URL
     - Cloud App Security attributes and values
+
+    > [!NOTE]
+    > If you see an option to upload the **Cloud App Security SAML certificate for the identity provider**, click on the click to download the certificate file. You'll need this later.
 
     ![In Cloud App Security, note SSO URL and attributes](media/proxy-idp-adfs/idp-adfs-cas-get-sf-app-external-config.png)
 
