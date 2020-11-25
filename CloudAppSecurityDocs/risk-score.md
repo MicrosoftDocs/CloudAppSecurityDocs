@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Working with the risk score - Cloud App Security
+title: Working with the risk score 
 description: This article provides instructions for how to use and customize the Cloud App Security app risk score.
 keywords:
 author: shsagir
