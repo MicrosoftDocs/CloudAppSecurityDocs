@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/13/2020
+ms.date: 11/25/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.prod:
@@ -50,7 +50,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
   - Uploading discovery logs
   - Banning or approving third-party apps
   - Accessing and viewing the IP address range settings page
-  - Accessing and viewing any settings pages
+  - Accessing and viewing any system settings pages
   - Accessing and viewing the Discovery settings
   - Accessing and viewing the App connectors page
   - Accessing and viewing the Governance log
