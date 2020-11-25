@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Monitor and protect files in cloud apps - Cloud App Security
+title: Monitor and protect files in cloud apps 
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 keywords:
 author: shsagir

@@ -1,7 +1,7 @@
 ---
 
 # required metadata
-title: Watch our webinars - Cloud App Security
+title: Watch our webinars 
 description: Displays a listing of past webinars, including a description.
 author: shsagir
 ms.author: shsagir
