@@ -56,7 +56,7 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 
 **Step 4: [Configure Cloud App Security with the AD FS app's information](#idp1-conf-cas-with-adfs-app-info)**
 
-**Step 5: [Complete the custom app in AD FS](#idp1-complete-custom-app-in-adfs)**
+**Step 5: [Complete the configuration of the AD FS Relying Party Trust](#idp1-complete-custom-app-in-adfs)**
 
 **Step 6: [Get the app changes in Cloud App Security](#idp1-get-app-changes-in-cas)**
 
@@ -115,14 +115,14 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 1. Download the identity provider's Signing Certificate. You'll need this later.
     1. Under **Services** > **Certificates**, right-click on the AD FS signing certificate, and then select **View Certificate**.
 
-    ![View IdP signing certificate properties](media/proxy-idp-adfs/idp-adfs-view-signing-cert-props.png)
+        ![View IdP signing certificate properties](media/proxy-idp-adfs/idp-adfs-view-signing-cert-props.png)
 
     1. On the certificate's details tab, click **Copy to File** and follow the steps in the **Certificate Export Wizard** to export your certificate as a *Base-64 encoded X.509 (.CER)* file.
 
-    ![Save IdP signing certificate file](media/proxy-idp-adfs/idp-adfs-save-signing-cert-file.png)
+        ![Save IdP signing certificate file](media/proxy-idp-adfs/idp-adfs-save-signing-cert-file.png)
 
-1. Back in Salesforce, on the existing AD FS single sign-on settings page, make a note of the settings.
-1. Create a new SAML single sign-on configuration. Apart from the **Entity ID** value that must match the relying party trust **Identifier**, configure the single sign-on using the settings you noted earlier. You'll need this configuration later when configuring Cloud App Security.
+1. Back in Salesforce, on the existing AD FS single sign-on settings page, make a note of all the settings.
+1. Create a new SAML single sign-on configuration. Apart from the **Entity ID** value that must match the relying party trust **Identifier**, configure the single sign-on using the settings you noted earlier. You'll need this later when configuring Cloud App Security.
 
 <a name="idp1-conf-cas-with-adfs-app-info"></a>
 
@@ -155,9 +155,9 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 
 1. Back in the **AD FS Management** console, right-click on the relying party trust you created earlier, and then select **Edit Claim Issuance Policy**.
 
-    ![Locate and edit custom Salesforce app](media/proxy-idp-adfs/idp-adfs-sf-custom-app-edit.png)
+    ![Locate and edit relying trust claim issuance](media/proxy-idp-adfs/idp-adfs-sf-relying-trust-edit.png)
 
-1. In the **Edit Claim Issuance Policy** dialog box, under **Issuance Transform Rules**, use the provided information in the following steps to create the custom rules.
+1. In the **Edit Claim Issuance Policy** dialog box, under **Issuance Transform Rules**, use the provided information in the following table to complete the steps to create custom rules.
 
     | Claim rule name | Custom rule |
     | --- | --- |
@@ -170,14 +170,14 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
     > [!NOTE]
     > These rules are in addition to any claim rules or attributes required by the app you are configuring.
 
-1. Back in the **Relying Party Trust** page, right-click on the relying party trust you created earlier, and then select **Properties**.
-1. On the **Endpoints** tab, select **SAML Assertion Consumer Endpoint**, click **Edit** and replace the **Trusted URL** with the Cloud App Security single sign-on URL you noted earlier, and then click **Apply**.
+1. Back on the **Relying Party Trust** page, right-click on the relying party trust you created earlier, and then select **Properties**.
+1. On the **Endpoints** tab, select **SAML Assertion Consumer Endpoint**, click **Edit** and replace the **Trusted URL** with the Cloud App Security single sign-on URL you noted earlier, and then click **OK**.
 
-    ![Replace ACS in custom Salesforce app](media/proxy-idp-adfs/idp-adfs-sf-custom-app-replace-saml-sso-properties.png)
+    ![Update relying trust endpoint properties Trusted URL](media/proxy-idp-adfs/idp-adfs-sf-relying-trust-endpoint-properties.png)
 
-1. Add the Cloud App Security attributes and values you noted earlier to the app's properties.
+1. If you downloaded a **Cloud App Security SAML certificate for the identity provider**, On the **Signature** tab, click **Add** and upload the certificate file, and then click **OK**.
 
-    ![Add Cloud App Security attributes to custom Salesforce app](media/proxy-idp-adfs/idp-adfs-sf-custom-app-replace-saml-sso-attributes.png)
+    ![Update relying trust signature properties SAML certificate](media/proxy-idp-adfs/idp-adfs-sf-relying-trust-signature-properties.png)
 
 1. Save your settings.
 
@@ -201,13 +201,10 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
 1. Recommended: Create a backup of your current settings.
 1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
 1. Upload the Cloud App Security SAML certificate you downloaded earlier.
-1. Replace the **Entity ID** field value with the AD FS custom app Entity ID you noted earlier.
 1. Click **Save**.
 
     > [!NOTE]
     > The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
-
-    ![Update custom Salesforce app with Cloud App Security SAML details](media/proxy-idp-adfs/idp-adfs-sf-custom-app-changes.png)
 
 <a name="idp1-complete-conf-in-cas"></a>
 
