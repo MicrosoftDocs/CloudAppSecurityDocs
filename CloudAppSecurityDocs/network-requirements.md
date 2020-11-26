@@ -69,7 +69,7 @@ For US Government GCC High customers, it's also necessary to add the following D
     cdn.cloudappsecurity.com
 ```
 
-Additionally, the following items should be whitelisted, depending on which data center you use:
+Additionally, the following items should be allowed, depending on which data center you use:
 
 |Data center|IP addresses|DNS name|
 |----|----|----|
@@ -98,7 +98,7 @@ For commercial customers, to enable Cloud App Security reverse proxy, add **outb
     mcasproxy.azureedge.net
 ```
 
-Additionally, the following items should be whitelisted, depending on which data center you use:
+Additionally, the following items should be allowed, depending on which data center you use:
 
 |Data center|IP addresses|DNS name|
 |----|----|----|----|----|
@@ -156,7 +156,7 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 
 To enable Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number.
 
-1. **Source addresses** - These addresses should be whitelisted as listed above for API connector third-party apps
+1. **Source addresses** - These addresses should be allowed as listed above for API connector third-party apps
 2. **Source TCP port** - Dynamic
 3. **Destination address(es)** - One or two IP address of the stunnel connected to the external ICAP server
 4. **Destination TCP port** - As defined in your network
