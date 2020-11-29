@@ -1,32 +1,21 @@
 ---
-# required metadata
 title: Protect any apps in use in your organization in real time
 description: This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: tutorial
 ms.date: 01/01/2020
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: tutorial
 ---
-
 # Tutorial: Protect any apps in use in your organization in real time
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-The apps you sanction employees to use, often store some of your most sensitive corporate data and secrets. In the modern workplace, users access these apps in many risky situations. These users could be partners in your organization over who you have little visibility, or employees using unmanaged devices or coming from public IP addresses. Due to the wide range of risks in this landscape, a zero-trust strategy must be employed. Often, it’s not enough to know about breaches and data loss in these apps after the fact; therefore, many information protection and cyberthreat scenarios must be addressed or prevented in real time.
+The apps you sanction employees to use, often store some of your most sensitive corporate data and secrets. In the modern workplace, users access these apps in many risky situations. These users could be partners in your organization over who you have little visibility, or employees using unmanaged devices or coming from public IP addresses. Due to the wide range of risks in this landscape, a zero-trust strategy must be employed. Often, it's not enough to know about breaches and data loss in these apps after the fact; therefore, many information protection and cyberthreat scenarios must be addressed or prevented in real time.
 
-This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data. Adaptively managing access to your data and mitigating against threats allows Cloud App Security to protect your most sensitive assets. Specifically, we’ll cover the following scenarios:
+This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data. Adaptively managing access to your data and mitigating against threats allows Cloud App Security to protect your most sensitive assets. Specifically, we'll cover the following scenarios:
 
 > [!div class="checklist"]
 >
 > * Monitor user activities for anomalies
-> * Protect your data when it’s exfiltrated
+> * Protect your data when it's exfiltrated
 > * Prevent unprotected data from being uploaded to your apps
 
 ## How to protect your organization from any app in real time
@@ -45,7 +34,7 @@ Use this process to roll out real-time controls in your organization.
 
 1. **Monitor and investigate**: In Cloud App Security, use the [Activity Log](activity-filters.md) to monitor and characterize app use in your environment, and understand their risks. You can narrow the scope of activities listed by using [search, filters, and queries](activity-filters-queries.md) to quickly identify risky activities.
 
-### Phase 2: Protect your data when it’s exfiltrated
+### Phase 2: Protect your data when it's exfiltrated
 
 A primary concern for many organizations is how to prevent data exfiltration before it happens. Two of the biggest risks are unmanaged devices (that may not be protected with a pin or may contain malicious apps) and guest users where your IT department has little visibility and control.
 
@@ -58,7 +47,7 @@ Now that your apps are deployed, you can easily configure policies to mitigate b
 
 In addition to preventing data exfiltration, organizations often want to make sure that data that is infiltrated to cloud apps is also secure. A common use case is when a user attempts to upload files that are not labeled correctly.
 
-For any of the apps you’ve configured above, you can configure a session policy to prevent the upload of files that are not labeled correctly, as follows:
+For any of the apps you've configured above, you can configure a session policy to prevent the upload of files that are not labeled correctly, as follows:
 
 1. Create a session policy to [block uploads of incorrectly labeled files](session-policy-aad.md#protect-upload).
 

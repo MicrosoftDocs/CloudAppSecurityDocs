@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Working with the Cloud App Security dashboard
 description: This article provides a foundation for how to use the Cloud App Security dashboard.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/06/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Working with the dashboard
 

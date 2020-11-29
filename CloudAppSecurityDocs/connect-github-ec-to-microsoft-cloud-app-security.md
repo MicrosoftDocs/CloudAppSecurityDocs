@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Connect GitHub Enterprise Cloud to Cloud App Security
 description: This article provides information about how to connect your GitHub Enterprise Cloud app to Cloud App Security using the API connector  for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/10/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ROBOTS: NOINDEX
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Connect GitHub Enterprise Cloud to Microsoft Cloud App Security
 

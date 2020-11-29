@@ -1,31 +1,9 @@
 ---
-# required metadata
-
 title: Advanced log collector management
 description: This article provides information about how advanced management tasks for Cloud App Security Cloud Discovery log collectors.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/25/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
-
 # Advanced log collector management
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

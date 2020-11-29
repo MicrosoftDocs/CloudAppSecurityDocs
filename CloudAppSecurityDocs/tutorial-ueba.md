@@ -1,25 +1,9 @@
 ---
-# required metadata
-
 title: Investigate risky users| Microsoft Docs
 description: This tutorial describes the process to investigate risky users in Microsoft Cloud App Security, across hybrid environments, by integrating with Microsoft Defender for Identity.
-keywords:
-author: shsagir
-ms.author: shsagir
 ms.date: 11/08/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-
-#ROBOTS:
-ms.reviewer: dannyk
-ms.suite: ems
-
-#Customer intent: As a sec op, I want to know and control which apps are used in my org so that I can harden my organization's security.
 ---
-
 # Tutorial: Investigate risky users
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

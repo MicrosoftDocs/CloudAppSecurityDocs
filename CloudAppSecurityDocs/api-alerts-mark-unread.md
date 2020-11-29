@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Mark as unread - Alerts API
 description: This article describes the mark as unread request in Cloud App Security's Alerts API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Mark as unread - Alerts API
 

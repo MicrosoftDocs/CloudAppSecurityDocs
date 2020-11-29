@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Cloud App Security Alerts API
 description: This article provides information about using the Alerts API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/20/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Alerts API
 

@@ -1,32 +1,9 @@
 ---
-# required metadata
-
 title: Integrate Microsoft Power Automate with Microsoft Cloud App Security to get custom alert automation
 description: This article provides information about how to get custom alert automation by integrating Microsoft Power Automate with Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
 ---
-
 # Integrate with Microsoft Power Automate for custom alert automation
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

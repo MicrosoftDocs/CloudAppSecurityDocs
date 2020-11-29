@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Feedback - Activities API
 description: This article describes the feedback request in Cloud App Security's Activities API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Feedback on activity - Activities API
 

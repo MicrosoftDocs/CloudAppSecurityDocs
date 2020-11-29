@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Configure automatic log upload using on-premises Docker
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in an on-premises server.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Docker on Linux on-premises
 
@@ -34,9 +13,9 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 ## Prerequisites
 
 * OS:
-    * Ubuntu 14.04, 16.04, and 18.04
-    * RHEL 7.2 or higher
-    * CentOS 7.2 or higher
+  * Ubuntu 14.04, 16.04, and 18.04
+  * RHEL 7.2 or higher
+  * CentOS 7.2 or higher
 
 * Disk space: 250 GB
 
