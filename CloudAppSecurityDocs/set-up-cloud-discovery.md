@@ -76,6 +76,7 @@ The process of generating a risk assessment consists of the following steps. The
 - Stormshield
 - Websense - Web Security Solutions - Investigative detail report (CSV)
 - Websense - Web Security Solutions - Internet activity log (CEF)
+- WatchGuard
 - Zscaler
 
 > [!NOTE]
@@ -121,6 +122,7 @@ Data attributes (according to vendor documentation):
 | Stormshield | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| WatchGuard | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Zscaler | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 
 \* Versions 8.5 and later of Forcepoint Web Security Cloud are not supported
