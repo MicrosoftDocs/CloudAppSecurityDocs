@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Investigate cloud app risks & suspicious activity - Cloud App Security
+title: Investigate cloud app risks & suspicious activity 
 description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
 keywords:
 author: shsagir

@@ -116,7 +116,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     >
     > * A single Log collector can handle multiple data sources.
     > * Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-advanced-management.md#changing-the-ftp-password).
 
 ### Step 2 – On-premises deployment of your machine
 
@@ -140,7 +140,7 @@ This installs the Docker client on your machine. While the log collector contain
 1. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
     ```console
-    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
     ![Create log collector](media/windows7.png)
@@ -196,6 +196,6 @@ If the digital signature is not valid, it will say **This digital signature is n
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [Modify the log collector FTP configuration](log-collector-advanced-management.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

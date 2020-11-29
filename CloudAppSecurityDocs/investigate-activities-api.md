@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Investigate activities using the API - Cloud App Security
+title: Investigate activities using the API 
 description: This article provides information on how to use the API to investigate user activity in Cloud App Security.
 keywords:
 author: shsagir
@@ -45,19 +45,19 @@ The Cloud App Security activities API mode is optimized for scanning and retriev
 
 **Request body parameters**:
 
-- “filters”: Filter objects with all the search filters for the request, see [Activity filters](activity-filters.md) for more information. To avoid having your requests be throttled, make sure to include a limitation on your query, for example, query the last day’s activities, or filter for a particular app.
-- “isScan”: Boolean. Enables the scanning mode.
-- “sortDirection”: The sorting direction, possible values are “asc” and “desc”
-- “sortField”: Fields used to sort activities. Possible values are:
+- "filters": Filter objects with all the search filters for the request, see [Activity filters](activity-filters-queries.md) for more information. To avoid having your requests be throttled, make sure to include a limitation on your query, for example, query the last day's activities, or filter for a particular app.
+- "isScan": Boolean. Enables the scanning mode.
+- "sortDirection": The sorting direction, possible values are "asc" and "desc"
+- "sortField": Fields used to sort activities. Possible values are:
   - date - The date when then the activity occurred (this is the default).
   - created - The timestamp when the activity was saved.
-- “limit”: Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data.
+- "limit": Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data.
 
 **Response parameters**:
 
-- “data”: the returned data. Will contain up to “limit” number of records each iteration. If there are more records to be pulled (hasNext=true), the last few records will be dropped to ensure that all data is listed only once.
-- “hasNext”: Boolean. Denotes whether another iteration on the data is needed.
-- “nextQueryFilters”: If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the “filters” parameter in the next request.
+- "data": the returned data. Will contain up to "limit" number of records each iteration. If there are more records to be pulled (hasNext=true), the last few records will be dropped to ensure that all data is listed only once.
+- "hasNext": Boolean. Denotes whether another iteration on the data is needed.
+- "nextQueryFilters": If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the "filters" parameter in the next request.
 
 The following Python example gets all the activities from the past day from Exchange Online.
 

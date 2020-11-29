@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Control which third-party cloud OAuth apps get permissions - Cloud App Security
+title: Control which third-party cloud OAuth apps get permissions 
 description: This article provides information about how you can control, ban and allow third-party OAuth apps.
 keywords:
 author: shsagir

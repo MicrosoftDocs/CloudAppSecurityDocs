@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Best practices for protecting your organization - Cloud App Security
+title: Best practices for protecting your organization 
 description: This article provides a set of best practices for protecting your organization.
 author: shsagir
 ms.author: shsagir
