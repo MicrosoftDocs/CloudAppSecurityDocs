@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Overview of threat protection scenario 
 description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Protecting your organization from ransomware
 

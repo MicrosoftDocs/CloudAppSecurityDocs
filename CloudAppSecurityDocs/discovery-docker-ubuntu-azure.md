@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Configure automatic log upload using Docker in Azure 
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in Azure.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Docker on Linux in Azure
 

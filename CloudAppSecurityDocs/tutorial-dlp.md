@@ -1,25 +1,9 @@
 ---
-# required metadata
-
 title: Discover and protect sensitive information in your organization
 description: This tutorial describes the process to discover and protect sensitive information in Microsoft Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-ms.suite: ems
 ---
-
 # Tutorial: Discover and protect sensitive information in your organization
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -100,7 +84,7 @@ You should create as many policies as required to detect sensitive data in compl
 
 So now you can detect files with sensitive information, but what you really want to do is protect that information from potential threats. Once you are aware of an incident, you can manually remediate the situation or you can use one of the automatic governance actions provided by Cloud App Security for securing your files. Actions include, but are not limited to, Azure Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring, as follows:
 
-1. **[File policy governance](governance-actions.md#file-governance-actions) actions**: Uses the cloud app provider’s API and our native integrations to secure files, including:
+1. **[File policy governance](governance-actions.md#file-governance-actions) actions**: Uses the cloud app provider's API and our native integrations to secure files, including:
     * Trigger alerts and send email notifications about the incident
     * Manage labels applied to a file to enforce native Azure Information Protection controls
     * Change sharing access to a file
@@ -111,12 +95,12 @@ So now you can detect files with sensitive information, but what you really want
 1. **Session policy controls**: Uses reverse proxy capabilities to protect files, including:
     * Trigger alerts and send email notifications about the incident
     * [Monitor all activities](session-policy-aad.md#monitor-session): Explicitly allows the download or upload of files and monitors all related activities.
-    * [Block](session-policy-aad.md#block-download): Explicitly blocks the download or upload of files. Use this option to protect your organization’s sensitive files from exfiltration or infiltration from any device, including unmanaged devices.
-    * [Protect](session-policy-aad.md#protect-download): Automatically applies a classification label to files that match the policy’s file filters. Use this option to protect the download of sensitive files.
+    * [Block](session-policy-aad.md#block-download): Explicitly blocks the download or upload of files. Use this option to protect your organization's sensitive files from exfiltration or infiltration from any device, including unmanaged devices.
+    * [Protect](session-policy-aad.md#protect-download): Automatically applies a classification label to files that match the policy's file filters. Use this option to protect the download of sensitive files.
 
 ### Phase 4: Monitor and report on your data
 
-Your policies are all in place to inspect and protect your data. Now, you’ll want to [check your dashboard](daily-activities-to-protect-your-cloud-environment.md#check-the-dashboard) daily to see what new alerts have been triggered. It's a good place to keep an eye on the health of your cloud environment. Your dashboard helps you get a sense of what's happening and, if necessary, launch an [investigation](investigate.md).
+Your policies are all in place to inspect and protect your data. Now, you'll want to [check your dashboard](daily-activities-to-protect-your-cloud-environment.md#check-the-dashboard) daily to see what new alerts have been triggered. It's a good place to keep an eye on the health of your cloud environment. Your dashboard helps you get a sense of what's happening and, if necessary, launch an [investigation](investigate.md).
 
 One of the most effective ways of monitoring sensitive file incidents, is to head over to the **Policies** page, and review the matches for policies you have configured. Additionally, if you configured alerts, you should also consider regularly monitoring file alerts by heading over to the **Alerts** page, specifying the category as **DLP**, and reviewing which file-related policies are being triggered. Reviewing these incidents can help you fine-tune your policies to focus on threats that are of interest to your organization.
 

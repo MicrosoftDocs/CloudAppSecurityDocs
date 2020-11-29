@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Troubleshooting Cloud Discovery errors 
 description: This article provides a list of Cloud Discovery frequent errors and resolution recommendations for each.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/19/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Troubleshooting Cloud Discovery
 

@@ -1,22 +1,8 @@
 ---
-# required metadata
-
 title: Deploy Cloud App Security Conditional Access App Control for Azure AD apps
 description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for Azure AD apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-ms.suite: ems
 ---
 # Deploy Conditional Access App Control for featured apps
 

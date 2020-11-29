@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Connect Dropbox to Cloud App Security
 description: This article provides information about how to connect your Dropbox app to Cloud App Security using the API connector  for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Connect Dropbox to Microsoft Cloud App Security
 

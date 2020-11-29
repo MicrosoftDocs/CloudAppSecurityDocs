@@ -1,24 +1,8 @@
 ---
-# required metadata
-
 title: Deploy Cloud App Security Conditional Access App Control for any apps
 description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for any apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/31/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-ms.suite: ems
 ---
 # Onboard and deploy Conditional Access App Control for any app
 

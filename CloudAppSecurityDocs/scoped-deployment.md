@@ -1,24 +1,8 @@
 ---
-# required metadata
-
 title: Scope your Microsoft Cloud App Security deployment
 description: This article provides information about how to scope your Cloud App Security deployment, including and excluding specific users or groups.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 8/25/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-# optional metadata
-
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
 # Scoped deployment <a name="scoped-deployment"></a> 
 

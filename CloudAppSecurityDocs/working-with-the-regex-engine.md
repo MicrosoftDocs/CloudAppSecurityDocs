@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Use the RegEx engine in Cloud App Security for content inspection policies
 description: This article provides instructions for using RegEx for pattern matching in Cloud App Security policies.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/14/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Working with the RegEx engine
 

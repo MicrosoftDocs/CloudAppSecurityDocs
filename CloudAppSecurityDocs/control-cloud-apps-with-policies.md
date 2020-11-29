@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Control cloud app usage by creating policies 
 description: This article provides information on how policies are used and set up to control cloud app use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/26/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Control cloud apps with policies
 
@@ -42,7 +21,7 @@ The following types of policies can be created:
 |Policy type icon|Policy type|Use|
 |-----|-----------------|---------|
 |![access policy icon](media/proxy-policy.png)|Access policy|Access policies provide you with real-time monitoring and control over user logins to your cloud apps.|
-|![activity policy icon](media/activity_policy.png)|Activity policy|Activity policies allow you to enforce a wide range of automated processes using the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|
+|![activity policy icon](media/activity_policy.png)|Activity policy|Activity policies allow you to enforce a wide range of automated processes using the app provider's APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|
 |![anomaly detection policy icon](media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud. Detection is based on the risk factors you set to alert you when something happens that is different from the baseline of your organization or from the user's regular activity.|
 |![cloud discovery policy icon](media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|
 |![anomaly detection policy icon](media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|
@@ -97,7 +76,7 @@ Follow this process to control risk with policies:
 
 ### Create a policy
 
-You can either use Cloud App Security’s policy templates as a basis for all your policies, or create policies from a query.
+You can either use Cloud App Security's policy templates as a basis for all your policies, or create policies from a query.
 
 Policy templates help you set the correct filters and configurations necessary to detect specific events of interest within your environment. The templates include policies of all types, and can apply to various services.
 
@@ -111,7 +90,7 @@ To create a policy from **Policy templates**, perform the following steps:
 
 1. Modify the template as needed for your custom policy. Every property and field of this new template-based policy can be modified according to your needs.
    > [!NOTE]
-   > When using the policy filters, **Contains**  searches only for full words – separated by comas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for *malware.exe*, you find ALL files with either malware or exe in their filename, whereas if you search for **“malware.exe”** (with the quotation marks) you will find only files that contain exactly “malware.exe”.  
+   > When using the policy filters, **Contains**  searches only for full words – separated by comas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for *malware.exe*, you find ALL files with either malware or exe in their filename, whereas if you search for **"malware.exe"** (with the quotation marks) you will find only files that contain exactly "malware.exe".  
 **Equals** searches only for the complete string, for example if you search for *malware.exe* it finds malware.exe but not malware.exe.txt.
 
 1. After you create the new template-based policy, a link to the new policy appears in the **Linked policies** column in the policy template table next to the template from which the policy was created.
@@ -119,7 +98,7 @@ To create a policy from **Policy templates**, perform the following steps:
 
 Alternatively, you can **create a policy during investigation**. If you're investigating the **Activity log**, **Files** or **Accounts**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.
 
-For example, if you're looking at the **Activity log**, and see an admin activity from outside your office’s IP addresses.
+For example, if you're looking at the **Activity log**, and see an admin activity from outside your office's IP addresses.
 
 To create a policy based on investigation results, do the following steps:
 

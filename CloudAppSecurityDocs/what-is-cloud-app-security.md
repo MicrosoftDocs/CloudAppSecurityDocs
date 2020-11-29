@@ -1,31 +1,9 @@
 ---
-# required metadata
-
 title: What is Cloud App Security?
 description: This article describes Microsoft Cloud App Security and how it works.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/23/2020
 ms.topic: overview
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
-
 # Microsoft Cloud App Security overview
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

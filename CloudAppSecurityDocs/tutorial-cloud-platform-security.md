@@ -1,25 +1,9 @@
 ---
-# required metadata
-
 title: Manage cloud platform security used by your organization
 description: This tutorial describes how to use Microsoft Cloud App Security to secure your Azure, AWS, and GCP cloud platforms.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/17/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-ms.suite: ems
 ---
-
 # Tutorial: Manage cloud platform security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
