@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Close true positive - Alerts API
 description: This article describes the bulk close an alert as true positive request in Cloud App Security's Alerts API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/20/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Close true positive - Alerts API
 

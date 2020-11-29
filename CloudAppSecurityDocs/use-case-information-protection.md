@@ -1,30 +1,8 @@
 ---
-# required metadata
-
 title: Automatically apply Azure Information Protection classification labels
 description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 3/5/2019
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-#Customer intent: As a sec op, I want to apply AIP labels automatically so that I can monitor classified files.
-
 ---
 # Tutorial: Automatically apply Azure Information Protection classification labels
 
@@ -51,7 +29,7 @@ A user in your organization saves confidential customer information files to Box
 
 ## The solution
 
-Use Cloud App Security with Azure Information Protection to embed classification and protection information for persistent protection that follows your data — so it stays protected no matter where it’s stored or who it’s shared with. This protection enables you to share data safely with coworkers, customers, and partners. Define who can access data and what they can do with it. For instance, allow users to view and edit files but not print or forward. You can also add other [governance actions](governance-actions.md) supported by Cloud App Security to the files such as remove collaborators and remove sharing abilities.
+Use Cloud App Security with Azure Information Protection to embed classification and protection information for persistent protection that follows your data — so it stays protected no matter where it's stored or who it's shared with. This protection enables you to share data safely with coworkers, customers, and partners. Define who can access data and what they can do with it. For instance, allow users to view and edit files but not print or forward. You can also add other [governance actions](governance-actions.md) supported by Cloud App Security to the files such as remove collaborators and remove sharing abilities.
 
 ## Prerequisites
 

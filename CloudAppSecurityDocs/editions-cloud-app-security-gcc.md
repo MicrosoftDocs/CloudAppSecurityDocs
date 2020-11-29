@@ -1,20 +1,8 @@
 ---
-# required metadata
-
 title: Microsoft Cloud App Security for US Government GCC High
 description: This article describes the features differences between Microsoft Cloud App Security for US Government GCC High and the commercial offering.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/30/2020
 ms.topic: overview
-ms.prod:
-ms.service: cloud-app-security
-
-# optional metadata
-ms.collection: M365-security-compliance
-ms.suite: ems
 ---
 # Microsoft Cloud App Security for US Government GCC High
 

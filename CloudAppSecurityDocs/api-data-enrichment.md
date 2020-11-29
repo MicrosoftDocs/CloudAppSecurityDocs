@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Create IP address range - Data Enrichment API
 description: This article describes the create IP address range request in Cloud App Security's Data Enrichment API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Create IP address range - Data Enrichment API
 

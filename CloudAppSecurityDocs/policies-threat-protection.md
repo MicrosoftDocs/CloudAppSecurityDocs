@@ -1,20 +1,8 @@
 ---
-# required metadata
-
 title: Threat protection policies 
 description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
-author: shsagir
-ms.author: shsagir
 ms.date: 11/08/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-
-# optional metadata
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # Threat protection policies
 

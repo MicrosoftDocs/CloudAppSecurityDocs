@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Create policies to control activities in Cloud App Security
 description: This article provides instructions for creating and working with activity policies.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 03/01/2020
-
-# optional metadata
-
-#ROBOTS:
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
+ms.topic: how-to
 ---
 # Activity policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Activity policies allow you to enforce a wide range of automated processes using the app provider’s APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.
+Activity policies allow you to enforce a wide range of automated processes using the app provider's APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of one certain type of activity.
 
 After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.
 

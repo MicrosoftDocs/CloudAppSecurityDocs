@@ -1,30 +1,8 @@
 ---
-# required metadata
-
 title: Create snapshot reports of Cloud Discovery cloud app use
 description: This article provides information about how to upload logs manually to create a snapshot report of your Cloud Discovery apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 04/07/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
-
 ---
 # Create snapshot Cloud Discovery reports
 

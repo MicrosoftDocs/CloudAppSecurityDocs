@@ -1,24 +1,8 @@
 ---
-# required metadata
-
 title: Cloud App Security anomaly detection alerts investigation guide
 description: This article explains how to investigate the Cloud App Security anomaly detection alerts issued when attacks are detected against your organization.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-ms.reviewer: itfalcon
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 
 # How to investigate anomaly detection alerts
