@@ -1,22 +1,8 @@
 ---
-# required metadata
-
 title: Deploy Cloud Discovery 
 description: This article describes the setup procedure for getting Cloud Discovery working.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: how-to
 ms.date: 08/09/2020
-
-# optional metadata
-
-#ROBOTS:
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
+ms.topic: how-to
 ---
 # Set up Cloud Discovery
 

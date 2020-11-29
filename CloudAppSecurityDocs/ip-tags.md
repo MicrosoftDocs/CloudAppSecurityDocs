@@ -1,30 +1,10 @@
 ---
-# required metadata
-
 title: Set IP ranges and tags 
 description: This article provides instructions for working with IP tags and IP categories.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
-# <a name="IPtagsandRanges"></a> Working with IP ranges and tags
+# <a name="IPtagsandRanges"></a>Working with IP ranges and tags
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

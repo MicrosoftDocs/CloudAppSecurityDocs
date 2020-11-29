@@ -1,30 +1,8 @@
 ---
-# required metadata
-
 title: Cloud App Security content inspection using Microsoft Data Classification Service
-description: This article describes the process Cloud App Security follows when performing DLP content inspection using Microsoft Data Classification Service. 
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
+description: This article describes the process Cloud App Security follows when performing DLP content inspection using Microsoft Data Classification Service.
 ms.date: 06/24/2020
-
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Microsoft Data Classification Services integration
 

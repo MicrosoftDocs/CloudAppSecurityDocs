@@ -1,21 +1,8 @@
 ---
-# required metadata
-
 title: Connect Google Cloud Platform to Cloud App Security
 description: This article provides information about how to connect your Google Cloud Platform to Cloud App Security using the API connector for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.service: cloud-app-security
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
 ---
 # Connect Google Cloud Platform to Microsoft Cloud App Security
 

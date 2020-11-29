@@ -1,27 +1,16 @@
 ---
-# required metadata
 title: How Cloud App Security helps protect your Salesforce environment
 description: This article provides information about the benefits of connecting your Salesforce app to Cloud App Security using the API connector for visibility and control over use.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: article
 ---
-
 # How Cloud App Security helps protect your Salesforce environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a major CRM cloud provider, Salesforce incorporates large amounts of sensitive information about customers, pricing playbooks, and major deals inside your organization. Being a business-critical app, Salesforce is accessed and used by people inside your organization and by others outside of it (such as partners and contractors) for various purposes. In many cases, a large proportion of your users accessing Salesforce have low awareness of security and might put your sensitive information at risk by unintentionally sharing it. In other instances, malicious actors may gain access to your most sensitive customer-related assets.
 
-Connecting Salesforce to Cloud App Security gives you improved insights into your users’ activities, provides threat detection using machine learning based anomaly detections and information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
+Connecting Salesforce to Cloud App Security gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections and information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
 ## Main threats
 
