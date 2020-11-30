@@ -26,7 +26,7 @@ We've added native integration with Menlo Security providing you with Shadow IT 
 - **New Cloud Discovery WatchGuard log parser**  
 Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support the WatchGuard format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-- **New permission for Cloud Discovery global admin role**
+- **New permission for Cloud Discovery global admin role**  
 Cloud App Security now allows users with the Cloud Discovery global admin role to create API tokens and use all Cloud Discovery related APIs. For more information about the role, see [Built-in Cloud App Security admin roles](manage-admins.md#built-in-cloud-app-security-admin-roles).
 
 - **Enhanced sensitivity slider: Impossible travel**  
