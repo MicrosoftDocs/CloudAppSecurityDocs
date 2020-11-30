@@ -123,6 +123,8 @@
         href: iboss-integration.md
       - name: Integrate with Corrata
         href: corrata-integration.md
+      - name: Integrate with Menlo
+        href: menlo-integration.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
