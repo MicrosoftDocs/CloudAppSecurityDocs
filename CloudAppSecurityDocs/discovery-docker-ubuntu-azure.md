@@ -1,7 +1,7 @@
 ---
 title: Configure automatic log upload using Docker in Azure 
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in Azure.
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ---
 # Docker on Linux in Azure
@@ -158,6 +158,11 @@ Check the collector status in the **Log collector** table and make sure the stat
 ![Check the collector status in the Log collector](media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
+
+Alternatively, you can check the log collector status from within the docker container using the following commands:
+
+1. Log in to the container by using this command: `docker exec -it <Container Name> bash`
+1. Verify the log collector status using this command: `collector_status -p`
 
 If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
