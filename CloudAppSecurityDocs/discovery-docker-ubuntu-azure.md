@@ -195,6 +195,10 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
     apt-get install -y docker-ce
     ```
 
+1. Test Docker installation: `docker run hello-world`
+
+---
+
 1. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
     ![Copy command to import collector configuration on hosting machine](media/windows7.png)
