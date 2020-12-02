@@ -119,13 +119,85 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 1. Change to root privileges using `sudo -i`.
 
-1. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the following command:
+1. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the commands appropriate for your environment:
+
+#### [CentOS](#tab/centos)
+
+1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
+1. Install Docker engine prerequisites: `yum install -y yum-utils`
+1. Add Docker repository:
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
     ```
 
-    ![Ubuntu Azure command](media/ubuntu-azure-command.png)
+1. Install Docker engine: `yum -y install docker-ce`
+1. Start Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+#### [Red Hat](#tab/red-hat)
+
+1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
+1. Install Docker engine prerequisites:
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Add Docker repository:
+
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Install Docker engine: `yum -y install docker-ce`
+1. Start Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+#### [Ubuntu](#tab/ubuntu)
+
+1. Remove old versions of Docker: `apt-get remove docker docker-engine docker.io`
+1. If you are installing on Ubuntu 14.04, install the linux-image-extra package.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Install Docker engine prerequisites:
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Verify that the apt-key fingerprint UID is docker@docker.com: `apt-key fingerprint | grep uid`
+1. Install Docker engine:
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+---
 
 1. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
