@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Troubleshooting SIEM integration - Cloud App Security
+title: Troubleshooting SIEM integration 
 description: This article provides a list of possible issues when connecting your SIEM to Cloud App Security and provides resolutions for each.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/29/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Troubleshooting the SIEM agent
 

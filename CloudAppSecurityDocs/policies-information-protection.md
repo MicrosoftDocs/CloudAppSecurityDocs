@@ -1,20 +1,8 @@
 ---
-# required metadata
-
-title: Information protection policies - Cloud App Security
+title: Information protection policies 
 description: This topic outlines the steps to configure many information protection policies in Cloud App Security.
-author: shsagir
-ms.author: shsagir
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-
-# optional metadata
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # Information protection policies
 

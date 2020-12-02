@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Visibility into cloud app accounts - Cloud App Security
+title: Visibility into cloud app accounts 
 description: This article provides information about reviewing accounts from your connected apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 05/20/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Accounts
 

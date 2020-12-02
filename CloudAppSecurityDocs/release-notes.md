@@ -1,23 +1,8 @@
 ---
-# required metadata
-
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/25/2020
 ms.topic: overview
-ms.service: cloud-app-security
-
-# optional metadata
-
-#ROBOTS:
-ms.collection: M365-security-compliance
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # What's new with Microsoft Cloud App Security
 
@@ -30,6 +15,25 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 > [!IMPORTANT]
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
+
+## Cloud App Security release 187 and 188
+
+Released November 22, 2020
+
+- **New Shadow IT integration with Menlo Security**  
+We've added native integration with Menlo Security providing you with Shadow IT visibility into app use and control over app access. For more information, see [Integrate Cloud App Security with Menlo Security](menlo-integration.md).
+
+- **New Cloud Discovery WatchGuard log parser**  
+Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support the WatchGuard format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+- **New permission for Cloud Discovery global admin role**  
+Cloud App Security now allows users with the Cloud Discovery global admin role to create API tokens and use all Cloud Discovery related APIs. For more information about the role, see [Built-in Cloud App Security admin roles](manage-admins.md#built-in-cloud-app-security-admin-roles).
+
+- **Enhanced sensitivity slider: Impossible travel**  
+We've updated the sensitivity slider for impossible travel to configure different sensitivity levels for different user scopes, allowing enhanced control over the fidelity of alerts for user scopes. For example, you can define a higher sensitivity level for administrators than for other users in the org. For more information about this anomaly detection policy, see [Impossible travel](anomaly-detection-policy.md#impossible-travel).
+
+- **Enhanced proxy URL suffix for session controls (gradual rollout)**  
+On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 ## Cloud App Security release 184, 185, and 186
 
@@ -200,6 +204,7 @@ Released April 5, 2020
 
 - **Enhanced access and session controls with any IdP (preview)**  
 Access and session controls now support SAML apps configured with any identity provider. The public preview of this new feature is now gradually rolling out. To configure these controls, see the [Deployment guide](proxy-deployment-aad.md).
+
 - **New bulk deanonymization of users and machines**  
 We've expanded and simplified the process of deanonymizing one or more users and machines under investigation. For more information about bulk deanonymization, see [How data anonymization works](cloud-discovery-anonymizer.md#how-data-anonymization-works).
 

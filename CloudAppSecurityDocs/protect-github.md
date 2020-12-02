@@ -1,20 +1,9 @@
 ---
-# required metadata
 title: How Cloud App Security helps protect your GitHub Enterprise environment
 description: This article provides information about the benefits of connecting your GitHub Enterprise app to Cloud App Security using the API connector for visibility and control over use.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 06/23/2020
-
-# optional metadata
-ROBOTS: NOINDEX
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: article
 ---
-
 # How Cloud App Security helps protect your GitHub Enterprise environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

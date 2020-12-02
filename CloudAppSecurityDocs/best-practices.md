@@ -1,20 +1,9 @@
 ---
-# required metadata
-title: Best practices for protecting your organization - Cloud App Security
+title: Best practices for protecting your organization 
 description: This article provides a set of best practices for protecting your organization.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: quickstart
 ms.date: 10/24/2019
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: quickstart
 ---
-
 # Cloud App Security best practices
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -24,6 +13,7 @@ This article provides best practices for protecting your organization by using M
 The best practices discussed in this article include:
 
 > [!div class="checklist"]
+>
 > * [Discover and assess cloud apps](#discover-and-assess-cloud-apps)
 > * [Apply cloud governance policies](#apply-cloud-governance-policies)
 > * [Limit exposure of shared data and enforce collaboration policies](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)

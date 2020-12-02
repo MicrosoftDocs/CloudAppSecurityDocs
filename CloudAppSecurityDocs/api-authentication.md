@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Managing API tokens
 description: This article provides information about generating and managing API tokens for Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Managing API tokens
 

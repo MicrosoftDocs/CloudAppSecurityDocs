@@ -1,26 +1,9 @@
 ---
-# required metadata
-
 title: Additional integration with Cloud App Security
 description: This article provides information integrating third-party solutions with Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
-
 # Additional integrations with external solutions
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

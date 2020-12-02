@@ -1,21 +1,9 @@
 ---
 title: Integrate Azure Active Directory Identity Protection with Cloud App Security
 description: This article provides information about how to leverage Identity Protection alerts in Cloud App Security for hybrid risk detection.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
 ---
-
 # Azure Active Directory Identity Protection integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

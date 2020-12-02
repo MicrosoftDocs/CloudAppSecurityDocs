@@ -1,18 +1,8 @@
 ---
-# required metadata
-
 title: Troubleshooting access and session controls
 description: This article provides admins with guidance on how to investigate and resolve common access and session controls.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/15/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.suite: ems
 ---
 # Troubleshooting access and session controls
 

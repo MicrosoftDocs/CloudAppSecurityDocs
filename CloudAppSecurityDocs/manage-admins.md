@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Manage admin access to the Cloud App Security portal
 description: This article provides instructions for setting access to the Cloud App Security portal for your admins.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 10/13/2020
+ms.date: 11/25/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Manage admin access
 
@@ -50,7 +29,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
   - Uploading discovery logs
   - Banning or approving third-party apps
   - Accessing and viewing the IP address range settings page
-  - Accessing and viewing any settings pages
+  - Accessing and viewing any system settings pages
   - Accessing and viewing the Discovery settings
   - Accessing and viewing the App connectors page
   - Accessing and viewing the Governance log

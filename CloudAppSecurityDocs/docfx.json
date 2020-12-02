@@ -34,7 +34,14 @@
       "feedback_product_url": "https://docs.microsoft.com/cloud-app-security/support-and-ts#feedback",
       "layout": "Conceptual",
       "breadcrumb_path": "/cloud-app-security/bread/toc.json",
-      "searchScope": ["Cloud App Security"]
+      "searchScope": ["Cloud App Security"],
+
+      "author": "shsagir",
+      "manager": "shsagir",
+      "ms.author": "shsagir",
+      "ms.collection": "M365-security-compliance",
+      "ms.service": "cloud-app-security",
+      "ms.suite": "ems"
     },
     "fileMetadata": {},
     "template": [],

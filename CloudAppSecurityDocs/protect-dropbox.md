@@ -1,27 +1,16 @@
 ---
-# required metadata
 title: How Cloud App Security helps protect your Dropbox environment
-description: This article provides information about the benefits of connecting your Dropbox app to Cloud App Security using the API connector for visibility and control over use.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
+description: This article provides information about the benefits of connecting your Dropbox app to Cloud App Security using the API connector for visibility and control over use.app-security
 ms.date: 12/04/2019
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: article
 ---
-
 # How Cloud App Security helps protect your Dropbox environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a cloud file storage and collaboration tool, Dropbox enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Dropbox may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees.
 
-Connecting Dropbox to Cloud App Security gives you improved insights into your users’ activities, provide threat detection using machine learning based anomaly detections, information protection detections such as detecting external information sharing, and enabling automated remediation controls.
+Connecting Dropbox to Cloud App Security gives you improved insights into your users' activities, provide threat detection using machine learning based anomaly detections, information protection detections such as detecting external information sharing, and enabling automated remediation controls.
 
 ## Main threats
 
