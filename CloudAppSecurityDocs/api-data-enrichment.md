@@ -4,7 +4,7 @@ description: This article provides information about using the Data Enrichment A
 ms.date: 12/07/2020
 ms.topic: reference
 ---
-# Create IP address range - Data Enrichment API
+# Data Enrichment API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
