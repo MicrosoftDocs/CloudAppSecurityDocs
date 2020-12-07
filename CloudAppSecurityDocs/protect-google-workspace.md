@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your G Suite environment
-description: This article provides information about the benefits of connecting your G Suite app to Cloud App Security using the API connector for visibility and control over use.
+title: How Cloud App Security helps protect your Google Workspace environment
+description: This article provides information about the benefits of connecting your Google Workspace app to Cloud App Security using the API connector for visibility and control over use.
 ms.date: 12/04/2019
 ms.topic: article
 ---
-# How Cloud App Security helps protect your G Suite environment
+# How Cloud App Security helps protect your Google Workspace environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-As a cloud file storage and collaboration tool, G Suite enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using G Suite may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees. G Suite also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
+As a cloud file storage and collaboration tool, Google Workspace enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Google Workspace may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees. Google Workspace also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
 
-Connecting G Suite to Cloud App Security gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
+Connecting Google Workspace to Cloud App Security gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
 ## Main threats
 
@@ -31,7 +31,7 @@ Connecting G Suite to Cloud App Security gives you improved insights into your u
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
 
-## Control G Suite with built-in policies and policy templates
+## Control Google Workspace with built-in policies and policy templates
 
 You can use the following built-in policy templates to detect and notify you about potential threats:
 
@@ -45,7 +45,7 @@ For more information about creating policies, see [Create a policy](control-clou
 
 ## Automate governance controls
 
-In addition to monitoring for potential threats, you can apply and automate the following G Suite governance actions to remediate detected threats:
+In addition to monitoring for potential threats, you can apply and automate the following Google Workspace governance actions to remediate detected threats:
 
 | Type | Action |
 | ---- | ---- |
@@ -55,11 +55,11 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
-## Protect G Suite in real time
+## Protect Google Workspace in real time
 
 Review our best practices for [securing and collaborating with external users](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls) and [blocking and protecting the download of sensitive data to unmanaged or risky devices](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect G Suite to Microsoft Cloud App Security](connect-google-apps-to-microsoft-cloud-app-security.md)
+> [How to connect Google Workspace to Microsoft Cloud App Security](connect-google-apps-to-microsoft-cloud-app-security.md)
