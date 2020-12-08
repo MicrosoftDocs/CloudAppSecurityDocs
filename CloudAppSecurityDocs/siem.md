@@ -4,7 +4,7 @@ description: This article provides information integrating your generic SIEM wit
 ms.date: 11/08/2020
 ms.topic: how-to
 ---
-# Generic SIEM integration
+# Generic SIEM integration (preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
