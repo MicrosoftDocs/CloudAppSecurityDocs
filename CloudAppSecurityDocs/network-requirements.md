@@ -102,10 +102,10 @@ mcasproxy.azureedge.net
 
 Additionally, the following items should be allowed:
 
-|Data center|IP addresses|DNS name|
-|----|----|----|
-|Gov US1|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222, 52.244.39.14, 52.244.38.212, 52.244.39.0, 52.244.39.80|\*.mcas-gov.us<br />\*.admin-mcas-gov.us mcasproxy.azureedge.net|
-|??|13.72.27.216, 13.72.27.215,52.244.39.82, 52.244.39.15|\*.access.cloudappsecurity.us<br />\*.saml.cloudappsecurity.us|
+|IP addresses|DNS name|
+|----|----|
+|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222, 52.244.39.14, 52.244.38.212, 52.244.39.0, 52.244.39.80|\*.mcas-gov.us<br />\*.admin-mcas-gov.us mcasproxy.azureedge.net|
+|13.72.27.216, 13.72.27.215,52.244.39.82, 52.244.39.15|\*.access.cloudappsecurity.us<br />\*.saml.cloudappsecurity.us|
 
 ## SIEM agent connection
 
