@@ -193,6 +193,8 @@
       items:
       - name: Activity filters and queries
         href: activity-filters-queries.md
+    - name: Investigate apps discovered by Microsoft Defender for Endpoint
+      href: mde-investigation.md
     - name: Files
       href: file-filters.md
       items:
@@ -260,6 +262,8 @@
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
+    - name: Govern apps discovered by Microsoft Defender for Endpoint
+      href: mde-govern.md
     - name: Microsoft Defender for Identity integration
       href: mdi-integration.md
     - name: Azure AD Identity Protection integration

@@ -1,16 +1,16 @@
 ---
-title: Integrate Microsoft Defender for Endpoint with Cloud App Security
-description: This article describes how to integrate Microsoft Defender for Endpoint with Cloud App Security for enhanced visibility into Shadow IT and risk management.
-ms.date: 10/29/2020
+title: Investigate apps discovered by Microsoft Defender for Endpoint
+description: This article describes how to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
+ms.date: 12/10/2020
 ms.topic: how-to
 ---
-# Microsoft Defender for Endpoint integration with Microsoft Cloud App Security
+# Investigate apps discovered by Microsoft Defender for Endpoint
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-<!-- ADD SOME BLURB -->
+Microsoft Cloud App Security's [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enable Cloud App Security administrators to investigate discovered devices, network events, and app usage.
 
-## Investigate devices in Cloud App Security
+## Investigate discovered devices in Cloud App Security
 
 After you integrate Defender for Endpoint with Cloud App Security, you can investigate discovered device data in the Cloud Discovery dashboard.
 
@@ -59,7 +59,7 @@ Use the following steps to gain more granular visibility on device's network act
 
 Use the following steps to gain more granular visibility on app-related network events in Defender for Endpoint:
 
-1. In Cloud App Security, under **Discovery** and then select **Discovered**.
+1. In Cloud App Security, under **Discovery** and then select **Discovered apps**.
 1. Click on the app you want to investigate to open its drawer.
 1. Click on the app's **Domain** list and then copy the list of domains.
 1. In Microsoft Defender Security Center, under **Devices**, select **Advanced hunting**.
@@ -91,6 +91,9 @@ Sometimes, access to an unsanctioned app is not blocked, either because the endp
 > - In-browser notifications may vary between different browsers.
 
 ## Next steps
+
+> [!div class="nextstepaction"]
+> [Govern apps discovered by Microsoft Defender for Endpoint](mde-govern.md)
 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
