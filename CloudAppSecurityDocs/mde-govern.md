@@ -77,7 +77,7 @@ Once controls are applied, you can monitor app usage patterns by the applied con
 1. In Cloud App Security, under **Discovery** > **Discovered apps**, use the [filters](discovered-app-queries.md) to find the relevant monitored app.
 1. Click on the app's name to view applied app controls on the app's overview page.
 
-    ![Screenshot showing how to configure bypass duration](media/mde-educate-applied-controls-overview.png)
+    ![Screenshot showing how to monitor applied controls](media/mde-educate-applied-controls-overview.png)
 
 ## Next steps
 
