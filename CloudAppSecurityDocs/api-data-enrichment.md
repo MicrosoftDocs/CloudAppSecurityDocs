@@ -1,7 +1,7 @@
 ---
 title: Cloud App Security Data Enrichment API
 description: This article provides information about using the Data Enrichment API.
-ms.date: 12/07/2020
+ms.date: 12/13/2020
 ms.topic: reference
 ---
 # Data Enrichment API

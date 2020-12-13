@@ -1,7 +1,7 @@
 ---
 title: Delete IP address range - Data Enrichment API
 description: This article describes the delete IP address range request in Cloud App Security's Data Enrichment API.
-ms.date: 12/07/2020
+ms.date: 12/13/2020
 ms.topic: reference
 ---
 # Delete IP address range - Data Enrichment API
@@ -23,7 +23,7 @@ DELETE /api/v1/subnet/<ip_range_id>/
 Here is an example of the request.
 
 ```rest
-curl --L --X DELETE -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/<ip_range_id>/"
+curl --X DELETE -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/<ip_range_id>/"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

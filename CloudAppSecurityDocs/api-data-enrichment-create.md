@@ -1,7 +1,7 @@
 ---
 title: Create IP address range - Data Enrichment API
 description: This article describes the create IP address range request in Cloud App Security's Data Enrichment API.
-ms.date: 12/07/2020
+ms.date: 12/13/2020
 ms.topic: reference
 ---
 # Create IP address range - Data Enrichment API
@@ -20,21 +20,11 @@ POST /api/v1/subnet/create_rule/
 
 | Parameter | Description |
 | --- | --- |
-| category | The id of the range category |
+| name | The unique name of the range |
+| category | The id of the range category. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
 | subnets | An array of masks as strings (IPv4 / IPv6) |
 | organization (Optional) | The registered ISP |
 | tags (Optional) | An array of tags (objects with "text" property set with the tag name) - new or existing |
-
-The following categories are currently supported:
-
-| Category | Id |
-| --- | -- |
-| Corporate | 1 |
-| Administrative | 2 |
-| Risky | 3 |
-| VPN | 4 |
-| Cloud provider | 5 |
-| Other | 6 |
 
 ## Example
 
