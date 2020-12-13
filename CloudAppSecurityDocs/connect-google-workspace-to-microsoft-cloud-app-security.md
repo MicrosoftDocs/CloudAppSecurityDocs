@@ -28,11 +28,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. Select menu, go to **APIs & Services** > **Library** and enable the following APIs (use the search line if the API isn't listed):
 
-    - Admin SDK
+    - Admin SDK API
 
     - Audit API
     - Google Drive API
-    -* Google Marketplace SDK
+    - Google Workspace Marketplace SDK
 
     > [!NOTE]
     > For each API, click **Enable** to active it.
@@ -43,11 +43,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. Select menu, go to **APIs & Services** > **Dashboard**, and make sure you have the following APIs enabled:
 
-    - Admin SDK
+    - Admin SDK API
 
     - Audit API
     - Google Drive API
-    - Google Marketplace SDK
+    - Google Workspace Marketplace SDK
 
 1. In the **OAuth consent page** page, do the following:
     1. Under **User Type**, choose **External**, and then click **Create**.
@@ -69,18 +69,18 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. In the **Credentials** page, do the following:
     1. Select **CREATE CREDENTIALS** and then select **Service Account**.
     1. Under **Service account details**, provide a name and description, and then click **Create**.
-    1. Under **Grant this service account access to project**, for **Role** select Project, select **Editor** and then click **Done**, but do not click **Continue**.
+    1. Under **Grant this service account access to project**, for **Role** select **Project**, select **Editor** and then click **Done**.
 
     ![Google edit service account](media/connect-google-workspace/google-workspace-create-service-account.png)
 
 1. In the **Service Account** page, do the following:
     1. Under **Service Accounts**, locate and edit the service account you created earlier.
 
-    ![Google edit service account](media/connect-google-workspace/google-workspace-edit-service-account.png)
+        ![Google edit service account](media/connect-google-workspace/google-workspace-edit-service-account.png)
 
-    1. Under **Service account status**, select **Enable G Suite Domain-wide Delegation**, and then click **Save**.
+    1. Make a copy of the email address. You'll need this later.
     1. Under **Keys**, from the **ADD KEY** menu select **Create new key**, select **P12**, and then click **CREATE**. Save the file that's downloaded, you'll need it later.
-    1. Click **Close**.
+    1. Under **Service account status**, select **Enable G Suite Domain-wide Delegation**, and then click **Save**.
 
     ![Google update service account](media/connect-google-workspace/google-workspace-update-service-account.png)
 
@@ -92,7 +92,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     1. In the **Client ID** box, enter the **Client ID** that you copied earlier.
     1. In the **OAuth Scopes** box, enter the following list of required scopes (copy the text and paste it in the box):  
-`https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
+    `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
     1. Click **AUTHORIZE**.
 
