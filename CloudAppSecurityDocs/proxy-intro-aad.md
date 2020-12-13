@@ -140,8 +140,8 @@ While session controls are built to work with any browser on any major platform 
 - Dynamics 365 CRM (preview)
 - Egnyte
 - Exchange Online
-- G Suite
 - GitHub
+- Google Workspace
 - HighQ
 - JIRA/Confluence
 - OneDrive for Business

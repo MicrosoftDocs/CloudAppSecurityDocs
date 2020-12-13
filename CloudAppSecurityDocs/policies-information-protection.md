@@ -28,7 +28,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 3. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-4. Configure the **Governance** actions to be take when an alert is triggered. For example, you can create a governance action that runs on detected file violations in G Suite in which you select the option to **Remove external users** and **Remove public access**.
+4. Configure the **Governance** actions to be take when an alert is triggered. For example, you can create a governance action that runs on detected file violations in Google Workspace in which you select the option to **Remove external users** and **Remove public access**.
 
 5. Create the file policy.
 
@@ -75,7 +75,7 @@ Detect files containing personally identifying information and other sensitive d
 4. Create the file policy.
 
 > [!NOTE]
-> The ability to apply a classification label directly in Cloud App Security is currently only supported for Box, G Suite, SharePoint online and OneDrive for business.
+> The ability to apply a classification label directly in Cloud App Security is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
 
 ## Detect stale externally shared data
 
@@ -95,7 +95,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 4. Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
 
-    - G Suite: Make the file private and notify the last file editor
+    - Google Workspace: Make the file private and notify the last file editor
 
     - Box: Notify the last file editor
 
@@ -233,7 +233,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 4. Create the file policy
 
 > [!NOTE]
-> Currently, **Apply classification label** is only supported for Box, G Suite, SharePoint online and OneDrive for business.
+> Currently, **Apply classification label** is only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
 
 ## Block downloads for external users in real time
 
