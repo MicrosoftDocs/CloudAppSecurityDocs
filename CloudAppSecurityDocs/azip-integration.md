@@ -38,7 +38,7 @@ Cloud App Security currently supports applying Azure Information Protection clas
   > [!NOTE]
   > For PDF, you must use unified labels.
 
-This feature is currently available for files stored in Box, G Suite, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
+This feature is currently available for files stored in Box, Google Workspace, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
 
 Files that were labeled with protection outside of Cloud App Security can't be changed by Cloud App Security. However, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
 

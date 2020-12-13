@@ -24,7 +24,7 @@ As an admin, you can use the **Help + Support** option to file an online support
 Select **support request** to create a new support request that opens to the **Basics** tab of the Azure *Help + support* page by following the protocol below.
 
 >[!NOTE]
-> For technical support with third-party products that work with Microsoft Cloud App Security (for example, Box, Salesforce, and G Suite) contact the supplier of that product first.
+> For technical support with third-party products that work with Microsoft Cloud App Security (for example, Box, Salesforce, and Google Workspace) contact the supplier of that product first.
 
 ### Create an online support request
 

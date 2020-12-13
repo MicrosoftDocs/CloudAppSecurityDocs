@@ -16,7 +16,7 @@ Automatic groups are created by default by Microsoft Cloud App Security. For exa
   - External
   - Dropbox administrator
   - Office 365 administrator
-  - G Suite administrator
+  - Google Workspace administrator
   - Box administrator
   - All Salesforce standard and custom profiles, for example, Salesforce System Administrator. See the full list [here](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
 

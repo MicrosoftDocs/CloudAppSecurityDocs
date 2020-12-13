@@ -42,7 +42,7 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 | Type | Action |
 | ---- | ---- |
-| User governance | - Require user to reset password to Google (requires connected linked G Suite instance)<br />- Suspend user (requires connected linked G Suite instance)<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
+| User governance | - Require user to reset password to Google (requires connected linked Google Workspace instance)<br />- Suspend user (requires connected linked Google Workspace instance)<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
