@@ -71,7 +71,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     1. Under **Service account details**, provide a name and description, and then click **Create**.
     1. Under **Grant this service account access to project**, for **Role** select **Project**, select **Editor** and then click **Done**.
 
-    ![Google edit service account](media/connect-google-workspace/google-workspace-create-service-account.png)
+    ![Google create service account](media/connect-google-workspace/google-workspace-create-service-account.png)
 
 1. In the **Service Account** page, do the following:
     1. Under **Service Accounts**, locate and edit the service account you created earlier.
