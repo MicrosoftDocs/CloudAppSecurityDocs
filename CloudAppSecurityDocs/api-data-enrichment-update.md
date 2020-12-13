@@ -20,6 +20,7 @@ POST /api/v1/subnet/<ip_range_id>/update_rule/
 
 | Parameter | Description |
 | --- | --- |
+| name | The name of the range |
 | category | The id of the range category |
 | subnets | An array of masks as strings (IPv4 / IPv6) |
 | organization (Optional) | The registered ISP |
@@ -59,7 +60,7 @@ curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tena
 
 ### Response
 
-Returns the updated ip range in JSON format.
+Returns the updated IP range in JSON format.
 
 ```json
   // ip range record

@@ -13,7 +13,7 @@ Run the POST request to delete an IP address range.
 ## HTTP request
 
 ```rest
-POST /api/v1/subnet/<ip_range_id>/
+DELETE /api/v1/subnet/<ip_range_id>/
 ```
 
 ## Example
@@ -23,7 +23,7 @@ POST /api/v1/subnet/<ip_range_id>/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/<ip_range_id>/"
+curl --L --X DELETE -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/<ip_range_id>/"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]
