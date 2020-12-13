@@ -1,8 +1,29 @@
 ---
+# required metadata
+
 title: Create anomaly detection policies in Cloud App Security
 description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
+keywords:
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 08/20/2020
+
 ms.topic: how-to
+ms.collection: M365-security-compliance
+ms.prod:
+ms.service: cloud-app-security
+ms.technology:
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: reutam
+ms.suite: ems
+ms.custom: seodec18
+
 ---
 
 # Get behavioral analytics and anomaly detection
@@ -64,7 +85,7 @@ The following anomaly detection policies are available:
     >
     > * Box
     > * Dropbox
-    > * G Suite
+    > * Google Workspace
     > * Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
 
 ### Activity from anonymous IP addresses
