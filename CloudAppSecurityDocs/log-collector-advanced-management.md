@@ -1,7 +1,7 @@
 ---
 title: Advanced log collector management
 description: This article provides information about how advanced management tasks for Cloud App Security Cloud Discovery log collectors.
-ms.date: 11/25/2020
+ms.date: 12/14/2020
 ms.topic: how-to
 ---
 # Advanced log collector management
@@ -251,13 +251,13 @@ Use these steps to download the log collector image using a computer that has ac
 
 > [!NOTE]
 >
-> - The downloaded image can be imported to either in your private repository or directly on your host. The following steps guide you through downloading your log collector image to your Windows computer and then uses WinSCP to move the log collector to your destination host.
+> - The downloaded image can be imported either in your private repository or directly on your host. The following steps guide you through downloading your log collector image to your Windows computer and then uses WinSCP to move the log collector to your destination host.
 > - To install Docker on your host, download the desired operating system:
 >   - https://download.docker.com/linux/ubuntu
 >   - https://download.docker.com/linux/centos/
 >   - https://download.docker.com/linux/rhel/
 >
-> After the download, use the [offline installation guide](https://docs.docker.com/datacenter/dtr/2.0/install/install-dtr-offline/#download-the-offline-package) to install your operating system.
+> After the download, use the [offline installation guide](https://docs.docker.com/engine/install/binaries/) to install your operating system.
 
 Start the process by [exporting the log collector image](#export-the-log-collector-image-from-your-docker-hub) and then [import the image to your destination host](#import-and-load-the-log-collector-image-to-your-destination-host).
 
