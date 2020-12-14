@@ -12,6 +12,7 @@ The Data Enrichment API enables you to create identifiable IP address ranges, su
 
 The following lists the supported requests:
 
+- [List IP address ranges](api-data-enrichment-list.md)
 - [Create IP address range](api-data-enrichment-create.md)
 - [Update IP address range](api-data-enrichment-update.md)
 - [Delete IP address range](api-data-enrichment-delete.md)
@@ -25,6 +26,7 @@ The following table describes the supported filters:
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
 | category | integer | eq, neq | Filter IP ranges by category. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
+| name | string | eq, neq | Filter IP ranges by name |
 | tags | string | eq, neq | Filter IP ranges by tag IDs |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
