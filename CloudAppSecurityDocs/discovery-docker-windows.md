@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Roll out continuous reports for Cloud App Security using a Docker on Windows
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Windows in an on-premises server.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 11/19/2019
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
 ---
 # Docker on Windows on-premises
 
@@ -116,7 +95,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     >
     > * A single Log collector can handle multiple data sources.
     > * Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-advanced-management.md#changing-the-ftp-password).
 
 ### Step 2 – On-premises deployment of your machine
 
@@ -140,7 +119,7 @@ This installs the Docker client on your machine. While the log collector contain
 1. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
     ```console
-    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
     ![Create log collector](media/windows7.png)
@@ -166,6 +145,11 @@ Check the collector status in the **Log collector** table and make sure the stat
 ![Verify that collector deployed successfully](media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
+
+Alternatively, you can check the log collector status from within the docker container using the following commands:
+
+1. Log in to the container by using this command: `docker exec -it <Container Name> bash`
+1. Verify the log collector status using this command: `collector_status -p`
 
 If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
@@ -196,6 +180,6 @@ If the digital signature is not valid, it will say **This digital signature is n
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [Modify the log collector FTP configuration](log-collector-advanced-management.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

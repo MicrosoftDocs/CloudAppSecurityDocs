@@ -1,19 +1,9 @@
 ---
-
-# required metadata
-title: Watch our webinars - Cloud App Security
+title: Watch our webinars 
 description: Displays a listing of past webinars, including a description.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: conceptual
 ms.date: 8/25/2019
-
-# optional metadata
-ms.collection: M365-security-compliance
-
+ms.topic: conceptual
 ---
-
 # Microsoft Cloud App Security webinars
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

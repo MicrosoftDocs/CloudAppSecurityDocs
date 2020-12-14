@@ -1,31 +1,9 @@
 ---
-# required metadata
-
 title: Discover and manager Shadow IT
 description: This tutorial describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/29/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: dannyk
-ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-#Customer intent: As a sec op, I want to know and control which apps are used in my org so that I can harden my organization's security.
 ---
-
 # Tutorial: Discover and manage shadow IT in your network
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

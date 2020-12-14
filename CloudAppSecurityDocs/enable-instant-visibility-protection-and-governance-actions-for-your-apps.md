@@ -1,25 +1,8 @@
 ---
-# required metadata
-
-title: Connect apps to get visibility and control - Cloud App Security
+title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/14/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # Connect apps
 
@@ -66,13 +49,13 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following table lists, per cloud app, which abilities are supported with App connectors:
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+| | AWS | Box | Dropbox | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 |-|-|-|-|-|-|-|-|-|-|-|-|
-| **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
-| **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
-| **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | Not supported by provider |
-| **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **List accounts** | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **List groups** | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
+| **List privileges** | | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
+| **User governance** | | ✔ | Coming soon | Subject Google Workspace connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | Not supported by provider |
+| **Log on activity** | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
 | **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
 | **DLP - Periodic scan** | | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
@@ -102,7 +85,7 @@ To use App Connectors, you need to make sure you have the following things for e
 | Dropbox | Business/Enterprise | Admin |
 | GitHub | GitHub Enterprise Cloud | Owner |
 | GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
-| G Suite | G Suite Business or Enterprise preferred<br /><br />G Suite Enterprise (minimally) | Super Admin |
+| Google Workspace | Google Workspace Business or Enterprise preferred<br /><br />Google Workspace Enterprise (minimally) | Super Admin |
 | Office 365 | | Global Admin |
 | Okta | Enterprise (not trial) | Admin |
 | Salesforce | | Admin |
@@ -112,7 +95,7 @@ To use App Connectors, you need to make sure you have the following things for e
 
 ### ExpressRoute
 
-Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
+Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.
 For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 
 ## Disable app connectors

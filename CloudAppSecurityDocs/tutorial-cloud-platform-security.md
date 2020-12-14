@@ -1,25 +1,9 @@
 ---
-# required metadata
-
 title: Manage cloud platform security used by your organization
 description: This tutorial describes how to use Microsoft Cloud App Security to secure your Azure, AWS, and GCP cloud platforms.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 09/17/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-ms.suite: ems
 ---
-
 # Tutorial: Manage cloud platform security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -32,7 +16,7 @@ Remote work often leads to extensive use of cloud apps and cloud platforms for c
 
 Having the appropriate security tools in place to protect resources that might have not been properly protected is critical. Organizations must gain visibility to their cloud resources posture, have discovery capabilities to learn about the actual usage of each platform, be able to monitor suspicious activities, assess, and review configurations and compliance statuses, and be enabled to deploy real-time protection mechanisms.
 
-Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, G Suite or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Cloud App Security product.
+Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Cloud App Security product.
 
 ## Protecting multiple clouds from a single management portal
 

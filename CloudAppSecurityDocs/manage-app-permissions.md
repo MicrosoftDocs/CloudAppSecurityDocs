@@ -1,35 +1,14 @@
 ---
-# required metadata
-
-title: Control which third-party cloud OAuth apps get permissions - Cloud App Security
+title: Control which third-party cloud OAuth apps get permissions 
 description: This article provides information about how you can control, ban and allow third-party OAuth apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/05/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Manage OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, G Suite and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Microsoft Cloud App Security app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, G Suite data, and Salesforce data. Cloud App Security tells you what permissions the apps have and which users granted these apps access to their Office 365, G Suite, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
+Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Microsoft Cloud App Security app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, Google Workspace data, and Salesforce data. Cloud App Security tells you what permissions the apps have and which users granted these apps access to their Office 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
 
 For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
 
@@ -50,15 +29,15 @@ The OAuth apps page provides the following information about each OAuth app that
 
 |Item|What it means|Applies to|
 |-------|-------|-------|
-|Basic icon in the app query bar  |Switch to query in the basic view.|Office 365, G Suite, Salesforce|
-|Advanced icon in the app query bar  |Switch to query in the Advanced view.|Office 365, G Suite, Salesforce|
+|Basic icon in the app query bar  |Switch to query in the basic view.|Office 365, Google Workspace, Salesforce|
+|Advanced icon in the app query bar  |Switch to query in the Advanced view.|Office 365, Google Workspace, Salesforce|
 |Open or close all details icon in the app list  |View more or less details about each app.|
-|Export icon in the app list  |Export a CSV file that contains a list of apps, number of users for each app, permissions associated with the app, permissions level, app state, and community use level.|Office 365, G Suite, Salesforce|
-|App|Name of the app. Select the name to view more information, including the description, publisher (for Office 365), app website, and ID.|Office 365, G Suite, Salesforce|
-|Authorized by|The number of users who authorized this app to access their app's account, and granted the app permissions. Select the number to view more information, including a list of user emails and whether an admin has consented the app previously.|Office 365, G Suite, Salesforce|
-|Permissions Level  |The permissions level icon and text indicating either High, Medium, or Low. The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](governance-actions.md).|Office 365, G Suite|
-|App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Office 365, G Suite, Salesforce|
-|Community use|Shows you how popular the app is across all your users (common, uncommon, rare)|Office 365, G Suite, Salesforce|
+|Export icon in the app list  |Export a CSV file that contains a list of apps, number of users for each app, permissions associated with the app, permissions level, app state, and community use level.|Office 365, Google Workspace, Salesforce|
+|App|Name of the app. Select the name to view more information, including the description, publisher (for Office 365), app website, and ID.|Office 365, Google Workspace, Salesforce|
+|Authorized by|The number of users who authorized this app to access their app's account, and granted the app permissions. Select the number to view more information, including a list of user emails and whether an admin has consented the app previously.|Office 365, Google Workspace, Salesforce|
+|Permissions Level  |The permissions level icon and text indicating either High, Medium, or Low. The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](governance-actions.md).|Office 365, Google Workspace|
+|App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Office 365, Google Workspace, Salesforce|
+|Community use|Shows you how popular the app is across all your users (common, uncommon, rare)|Office 365, Google Workspace, Salesforce|
 |Last authorized|The most recent date on which a user granted permissions to this app.|Office 365, Salesforce|
 |Publisher|The name of the vendor who provides the app.|Office 365|
 |Last used|The most recent date on which this app was used by anyone in your organization.|Salesforce|
@@ -91,9 +70,9 @@ The OAuth apps page provides the following information about each OAuth app that
 
 ## Revoke app and notify user
 
-For G Suite and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
+For Google Workspace and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
 
-1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your G Suite account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
+1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user. Click the icon at the end of the app row in the table and selecting **Revoke app**.
 
     ![revoke app](media/revoke-app.png)

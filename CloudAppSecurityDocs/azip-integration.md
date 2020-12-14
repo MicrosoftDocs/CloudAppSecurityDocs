@@ -1,31 +1,9 @@
 ---
-# required metadata
-
 title: Integrate Azure Information Protection with Cloud App Security
 description: This article provides information about how to leverage your Azure Information Protection tags in Cloud App Security for added control of your organization's cloud app use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/09/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
-
 # Azure Information Protection integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -60,7 +38,7 @@ Cloud App Security currently supports applying Azure Information Protection clas
   > [!NOTE]
   > For PDF, you must use unified labels.
 
-This feature is currently available for files stored in Box, G Suite, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
+This feature is currently available for files stored in Box, Google Workspace, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
 
 Files that were labeled with protection outside of Cloud App Security can't be changed by Cloud App Security. However, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
 

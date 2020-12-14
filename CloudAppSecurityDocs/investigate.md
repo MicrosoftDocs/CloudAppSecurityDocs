@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Investigate cloud app risks & suspicious activity - Cloud App Security
+title: Investigate cloud app risks & suspicious activity 
 description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/18/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Investigate
 
@@ -46,7 +25,7 @@ The following dashboards are available to help you investigate apps in your clou
 *(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
 |App dashboard: accounts|Overview of all accounts/users linked to the app.|
 |App dashboard: OAuth apps  
-*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies.|
+*(where applicable)*|Drill down into OAuth apps currently deployed, like Google Workspace, and define policies.|
 |App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
 |App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
 |App dashboard: special privileged accounts  

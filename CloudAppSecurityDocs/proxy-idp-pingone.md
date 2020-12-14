@@ -1,24 +1,8 @@
 ---
-# required metadata
-
 title: Deploy Cloud App Security Conditional Access App Control for any web app using PingOne
-description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for any web app using PingOne as the identity provider.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
+description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for any web app using the PingOne identity provider.
 ms.date: 09/29/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-ms.suite: ems
 ---
 # Onboard and deploy Conditional Access App Control for any web app using PingOne as the identity provider (IdP)
 

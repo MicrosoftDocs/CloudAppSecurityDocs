@@ -1,28 +1,8 @@
 ---
-# required metadata
-
-title: Configure automatic log upload for continuous reports - Cloud App Security
+title: Configure automatic log upload for continuous reports 
 description: This article provides information about how to upload logs to create automatic Cloud Discovery reports.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
 # Configure automatic log upload for continuous reports on a virtual appliance - Deprecated
 
@@ -45,7 +25,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour.
 The main bottlenecks in the log collection process are:
 
 - Network bandwidth - your network bandwidth determines the log upload speed.
-- I/O performance of the virtual machine - determines the speed at which logs are written to the log collector’s disk.
+- I/O performance of the virtual machine - determines the speed at which logs are written to the log collector's disk.
 The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup generally exceeds 50 GB per hour, it's recommended to split the traffic between multiple log collectors.
 
 ## Set up and configuration

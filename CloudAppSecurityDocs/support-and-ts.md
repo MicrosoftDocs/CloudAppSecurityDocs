@@ -1,30 +1,8 @@
 ---
-# required metadata
-
 title: Support and troubleshooting information for Cloud App Security
 description: This article describes your support and troubleshooting options for Microsoft Cloud App Security
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/14/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Support and troubleshooting Microsoft Cloud App Security
 
@@ -46,7 +24,7 @@ As an admin, you can use the **Help + Support** option to file an online support
 Select **support request** to create a new support request that opens to the **Basics** tab of the Azure *Help + support* page by following the protocol below.
 
 >[!NOTE]
-> For technical support with third-party products that work with Microsoft Cloud App Security (for example, Box, Salesforce, and G Suite) contact the supplier of that product first.
+> For technical support with third-party products that work with Microsoft Cloud App Security (for example, Box, Salesforce, and Google Workspace) contact the supplier of that product first.
 
 ### Create an online support request
 

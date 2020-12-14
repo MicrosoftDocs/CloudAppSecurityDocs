@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Cloud App Security discovered app filters and queries
 description: This article provides a list of Cloud App Security discovered app filters and queries and explains how to work with them.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 07/07/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Discovered app filters and queries
 

@@ -1,26 +1,8 @@
 ---
-# required metadata
-
-title: Network requirements - Cloud App Security
+title: Network requirements 
 description: This article describes the IP addresses and ports you need to open to work with Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/01/2019
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # Network requirements
 
@@ -47,29 +29,29 @@ To see which data center you're connecting to, do the following steps:
 For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
 ```ini
-    portal.cloudappsecurity.com
-    *.portal.cloudappsecurity.com
-    cdn.cloudappsecurity.com
-    https://adaproddiscovery.azureedge.net
-    *.s-microsoft.com
-    *.msecnd.net
-    dev.virtualearth.net
-    *.cloudappsecurity.com
-    flow.microsoft.com
-    static2.sharepointonline.com
-    dc.services.visualstudio.com
-    *.blob.core.windows.net
+portal.cloudappsecurity.com
+*.portal.cloudappsecurity.com
+cdn.cloudappsecurity.com
+https://adaproddiscovery.azureedge.net
+*.s-microsoft.com
+*.msecnd.net
+dev.virtualearth.net
+*.cloudappsecurity.com
+flow.microsoft.com
+static2.sharepointonline.com
+dc.services.visualstudio.com
+*.blob.core.windows.net
 ```
 
 For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allow list to provide access for the Cloud App Security GCC High portal:
 
 ```ini
-    portal.cloudappsecurity.us
-    *.portal.cloudappsecurity.us
-    cdn.cloudappsecurity.com
+portal.cloudappsecurity.us
+*.portal.cloudappsecurity.us
+cdn.cloudappsecurity.com
 ```
 
-Additionally, the following items should be whitelisted, depending on which data center you use:
+Additionally, the following items should be allowed, depending on which data center you use:
 
 |Data center|IP addresses|DNS name|
 |----|----|----|
@@ -92,13 +74,13 @@ Configure your firewall for reverse proxy using the settings relevant to your en
 For commercial customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allow list:
 
 ```ini
-    *.cas.ms
-    *.mcas.ms
-    *.admin-mcas.ms
-    mcasproxy.azureedge.net
+*.cas.ms
+*.mcas.ms
+*.admin-mcas.ms
+mcasproxy.azureedge.net
 ```
 
-Additionally, the following items should be whitelisted, depending on which data center you use:
+Additionally, the following items should be allowed, depending on which data center you use:
 
 |Data center|IP addresses|DNS name|
 |----|----|----|----|----|
@@ -113,10 +95,17 @@ Additionally, the following items should be whitelisted, depending on which data
 For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allow list:
 
 ```ini
-    *.mcas-gov.us
-    *.admin-mcas-gov.us
-    mcasproxy.azureedge.net
+*.mcas-gov.us
+*.admin-mcas-gov.us
+mcasproxy.azureedge.net
 ```
+
+Additionally, the following items should be allowed:
+
+|IP addresses|DNS name|
+|----|----|
+|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222, 52.244.39.14, 52.244.38.212, 52.244.39.0, 52.244.39.80|\*.mcas-gov.us<br />\*.admin-mcas-gov.us mcasproxy.azureedge.net|
+|13.72.27.216, 13.72.27.215,52.244.39.82, 52.244.39.15|\*.access.cloudappsecurity.us<br />\*.saml.cloudappsecurity.us|
 
 ## SIEM agent connection
 
@@ -132,7 +121,7 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 |Gov US1|13.72.19.4, 52.227.143.223|
 
 > [!NOTE]
-> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## App connector
 
@@ -156,7 +145,7 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 
 To enable Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number.
 
-1. **Source addresses** - These addresses should be whitelisted as listed above for API connector third-party apps
+1. **Source addresses** - These addresses should be allowed as listed above for API connector third-party apps
 2. **Source TCP port** - Dynamic
 3. **Destination address(es)** - One or two IP address of the stunnel connected to the external ICAP server
 4. **Destination TCP port** - As defined in your network
@@ -214,7 +203,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 >
 > - If your firewall requires a static IP address access list and does not support allowing based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
 > - Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
-> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections to http://ocsp.msocsp.com/ and ocsp.digicert.com on port 80. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## Next steps
 

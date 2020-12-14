@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Investigate risky OAuth apps - Cloud App Security
+title: Investigate risky OAuth apps 
 description: This article provides information on how to investigate risky OAuth apps in Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 9/1/2019
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Tutorial: Investigate risky OAuth apps
 

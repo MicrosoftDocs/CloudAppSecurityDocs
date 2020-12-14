@@ -1,21 +1,9 @@
 ---
 title: Integrate Microsoft Defender for Identity with Cloud App Security
 description: This article provides information about how to leverage Microsoft Defender for Identity insights in Cloud App Security for hybrid risk detection.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/08/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
 ---
-
 # Microsoft Defender for Identity integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

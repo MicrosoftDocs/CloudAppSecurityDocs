@@ -1,20 +1,8 @@
 ---
-# required metadata
-
-title: Threat protection policies - Cloud App Security
+title: Threat protection policies 
 description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
-author: shsagir
-ms.author: shsagir
 ms.date: 11/08/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-
-# optional metadata
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # Threat protection policies
 
@@ -179,7 +167,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> This applies to Office 365, G Suite, Box, and Dropbox.
+> This applies to Office 365, Google Workspace, Box, and Dropbox.
 
 ## Detect malware in the cloud
 

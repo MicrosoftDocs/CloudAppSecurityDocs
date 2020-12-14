@@ -1,24 +1,8 @@
 ---
-# required metadata
-
 title: Protect with Microsoft Cloud App Security Conditional Access App Control
 description: This article provides information about how the Cloud App Security Conditional Access App Control reverse proxy works.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/14/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
 ---
 # Protect apps with Microsoft Cloud App Security Conditional Access App Control
 
@@ -156,8 +140,8 @@ While session controls are built to work with any browser on any major platform 
 - Dynamics 365 CRM (preview)
 - Egnyte
 - Exchange Online
-- G Suite
 - GitHub
+- Google Workspace
 - HighQ
 - JIRA/Confluence
 - OneDrive for Business

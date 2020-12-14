@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Cloud App Security REST API
 description: This article describes how to interact with Cloud App Security over HTTPS.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Cloud App Security REST API
 

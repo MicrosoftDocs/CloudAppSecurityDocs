@@ -1,28 +1,8 @@
 ---
-# required metadata
-
 title: Archive of past updates in Cloud App Security
 description: This article is an archive that describes updates made in past releases of Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/25/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
 # Past-release archive of Microsoft Cloud App Security
 

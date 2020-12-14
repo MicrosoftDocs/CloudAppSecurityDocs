@@ -85,7 +85,7 @@ The following anomaly detection policies are available:
     >
     > * Box
     > * Dropbox
-    > * G Suite
+    > * Google Workspace
     > * Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
 
 ### Activity from anonymous IP addresses
