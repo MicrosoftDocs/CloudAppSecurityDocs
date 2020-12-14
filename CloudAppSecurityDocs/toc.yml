@@ -322,6 +322,8 @@
       items:
       - name: Overview
         href: api-data-enrichment.md
+      - name: List IP ranges
+        href: api-data-enrichment-list.md
       - name: Create IP address range
         href: api-data-enrichment-create.md
       - name: Update IP address range
