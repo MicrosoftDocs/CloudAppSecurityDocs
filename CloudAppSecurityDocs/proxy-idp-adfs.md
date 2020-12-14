@@ -70,7 +70,7 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 
 1. In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign-On Settings**.
 
-1. Under **Single Sign-On Settings**, click on the name of the your existing AD FS configuration.
+1. Under **Single Sign-On Settings**, click on the name of your existing AD FS configuration.
 
     ![Select Salesforce SSO settings](media/proxy-idp-adfs/idp-adfs-sf-select-sso-settings.png)
 
@@ -104,7 +104,7 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 
 1. In the **AD FS Management** console, under **Relying Party Trusts**, view the properties of your existing relying party trust for your app, and make note of the settings.
 
-1. Under **Actions**, click **Add Relying Party Trust**. Apart from the **Identifier** value that can be unique name, configure the new trust using the settings you noted earlier. You'll need this trust later when configuring Cloud App Security.
+1. Under **Actions**, click **Add Relying Party Trust**. Apart from the **Identifier** value that must be a unique name, configure the new trust using the settings you noted earlier. You'll need this trust later when configuring Cloud App Security.
 1. Open the federation metadata file and make a note of the AD FS **SingleSignOnService Location**. You'll need this later.
 
     > [!NOTE]
@@ -131,11 +131,8 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 1. Back in the Cloud App Security **IDENTITY PROVIDER** page, click **Next** to proceed.
 
 1. On the next page, select **Fill in data manually**, do the following, and then click **Next**.
-    - For the **Single sigh-on service URL**, enter the Salesforce **Login URL** you noted earlier.
+    - For the **Single sign-on service URL**, enter the Salesforce **Login URL** you noted earlier.
     - Select **Upload identity provider's SAML certificate** and upload the certificate file you downloaded earlier.
-
-    > [!NOTE]
-    > We do not recommend using the **Upload metadata file from your identity provider** option with AD FS because this may result in certificate issues.
 
     ![Add SSO service URL and SAML certificate](media/proxy-idp-adfs/idp-adfs-cas-sf-app-idp-info.png)
 
@@ -161,8 +158,8 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
 
     | Claim rule name | Custom rule |
     | --- | --- |
-    | McasSigningCert | `=> issue(type="McasSigningCert", value="<value>");` where `<value>` is the is the **McasSigningCert** value from the Cloud App Security wizard you noted earlier |
-    | McasAppId | `=> issue(type="McasAppId", value="<value>");` is the is the **McasAppId** value from the Cloud App Security wizard you noted earlier |
+    | McasSigningCert | `=> issue(type="McasSigningCert", value="<value>");` where `<value>` is the **McasSigningCert** value from the Cloud App Security wizard you noted earlier |
+    | McasAppId | `=> issue(type="McasAppId", value="<value>");` is the **McasAppId** value from the Cloud App Security wizard you noted earlier |
 
     1. Click **Add Rule**, under **Claim rule template** select **Send Claims Using a Custom Rule**, and then click **Next**.
     1. On the **Configure Rule** page, enter the respective **Claim rule name** and **Custom rule** provided.
