@@ -53,10 +53,43 @@ Returns a list of IP ranges in JSON format.
 
 ```json
 {
-  "total": 5 // total number of records
+  "total": 1 // total number of records
   "hasNext": false // whether there is more data to show or not.
   "data": [
     // returned records
+    {
+      "_id":"5b314916be854fd7804a3d3e", // <ip_range_id>
+      "category": 5,
+      "sourceIsps": [
+        "Contoso"
+      ],
+      "builtIn": true,
+      "name": "Contoso",
+      "_tid": 0,
+      "tags": [
+        {
+          "_id": "5ce2aaf42207ad108c76fa5d",
+          "id": "0000004b0000000000000000",
+          "target": 1,
+          "type": 2,
+          "name": "Contoso",
+          "nameTemplate": {
+            "template": "SAGE_BUILTIN_TAG_CONTOSO_CLOUD_NAME"
+          },
+          "description": "IP addresses used by Contoso",
+          "descriptionTemplate": {
+            "template": "SAGE_BUILTIN_TAG_CONTOSO_CLOUD_DESCRIPTION"
+          },
+          "visibility": 0,
+          "status": 0,
+          "_tid": 113348336
+        }
+      ],
+      "subnets": {
+        "address": "0000004b0000000000000000"
+      },
+      "id": "0000004b0000000000000000"
+    }
   ]
 }
 ```

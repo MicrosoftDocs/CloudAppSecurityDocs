@@ -8,7 +8,7 @@ ms.topic: reference
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Run the POST request to delete an IP address range.
+Run the DELETE request to delete an IP address range.
 
 ## HTTP request
 
