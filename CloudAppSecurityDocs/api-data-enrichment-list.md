@@ -57,38 +57,45 @@ Returns a list of IP ranges in JSON format.
   "hasNext": false // whether there is more data to show or not.
   "data": [
     // returned records
-    {
-      "_id":"5b314916be854fd7804a3d3e", // <ip_range_id>
-      "category": 5,
-      "sourceIsps": [
-        "Contoso"
+    "_id": "5fd767259cd24bb563567d7c",
+      "name": "range name",
+      "subnets": [
+        {
+          "mask": 112,
+          "address": "0000:0000:0000:0000:0000:ffff:c5c6:0000",
+          "originalString": "197.198.192.20/16"
+        }
       ],
-      "builtIn": true,
-      "name": "Contoso",
-      "_tid": 0,
+      "location": {
+        "name": "United States",
+        "latitude": 39.5035514831543,
+        "longitude": -99.01830291748047,
+        "countryCode": "US",
+        "countryName": "United States"
+      },
+      "organization": "isp name",
       "tags": [
         {
-          "_id": "5ce2aaf42207ad108c76fa5d",
-          "id": "0000004b0000000000000000",
+          "_id": "5ce2aaf42207ad108c76fa3a",
+          "id": "000000290000000000000000",
           "target": 1,
           "type": 2,
           "name": "Contoso",
           "nameTemplate": {
-            "template": "SAGE_BUILTIN_TAG_CONTOSO_CLOUD_NAME"
+            "template": "SAGE_BUILTIN_TAG_CONTOSO_NAME"
           },
           "description": "IP addresses used by Contoso",
           "descriptionTemplate": {
-            "template": "SAGE_BUILTIN_TAG_CONTOSO_CLOUD_DESCRIPTION"
+            "template": "SAGE_BUILTIN_TAG_CONTOSO_DESCRIPTION"
           },
           "visibility": 0,
           "status": 0,
           "_tid": 113348336
         }
       ],
-      "subnets": {
-        "address": "0000004b0000000000000000"
-      },
-      "id": "0000004b0000000000000000"
+      "category": 5,
+      "lastModified": 1607952165309.8032,
+      "_tid": 113348336
     }
   ]
 }
