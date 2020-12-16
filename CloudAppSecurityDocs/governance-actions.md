@@ -1,7 +1,7 @@
 ---
 title: Governance actions to control connected apps 
 description: This article lists and describes all the governance actions that can be taken in Cloud App Security and the log messages that track them.
-ms.date: 06/28/2020
+ms.date: 12/16/2020
 ms.topic: how-to
 ---
 # Governing connected apps
@@ -34,7 +34,7 @@ The following governance actions can be taken for connected apps either on a spe
     - **Remove label** - Ability to remove an Azure Information Protection classification label.
   - **Change sharing**
 
-    - **Remove public sharing** – Allow access only to named collaborators, for example: Remove public access for Google Workspace and Remove direct shared link for Box.
+    - **Remove public sharing** – Allow access only to named collaborators, for example: *Remove public access* for Google Workspace, and *Remove direct shared link* for Box and Dropbox.
 
     - **Remove external users** – Allow access only to company users.
 
@@ -147,7 +147,7 @@ For information about how governance actions are treated when there are policy c
 |Files|File|Expire shared link| Set an expiration date for a shared link after which it will no longer be active.|Box|
 |Files|File|Change sharing link access level|Changes the access level of the shared link between company only, collaborators only, and public.| Box|
 |Files, File policy|File | Remove public access| If a file was yours and you put it in public access, it becomes accessible to anyone else configured with access to the file (depending on what kind of access the file had). | Google Workspace|
-|Files, File policy|File |Remove direct shared link| Removes a link that is created for the file that is public but only shared with specific people.|Box |
+|Files, File policy|File |Remove direct shared link| Removes a link that is created for the file that is public but only shared with specific people.|Box, Dropbox |
 |Settings> Cloud discovery settings| Cloud Discovery | Recalculate Cloud Discovery scores |Recalculates the scores in the Cloud app catalog after a score metric change.| Discovery |
 |Settings> Cloud discovery settings > Manage data views| Cloud Discovery | Create custom Cloud Discovery filter data view|Creates a new data view for a more granular view of the discovery results. For example, specific IP ranges. | Discovery |
 |Settings> Cloud discovery settings > Delete data| Cloud Discovery | Delete Cloud Discovery data |Deletes all the data collected from discovery sources.| Discovery |
