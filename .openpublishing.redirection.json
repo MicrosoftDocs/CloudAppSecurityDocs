@@ -3,7 +3,7 @@
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-bulk-dismiss.md",
             "redirect_url": "/cloud-app-security/api-alerts-close-false-positive",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-bulk-resolve.md",
