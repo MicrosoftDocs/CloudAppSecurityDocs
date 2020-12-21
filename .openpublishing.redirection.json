@@ -8,22 +8,27 @@
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-bulk-resolve.md",
             "redirect_url": "/cloud-app-security/api-alerts-close-true-positive",
-            "redirect_document_id": false
+            "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-dismiss.md",
             "redirect_url": "/cloud-app-security/api-alerts-close-false-positive",
-            "redirect_document_id": false
+            "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/connect-google-apps-to-microsoft-cloud-app-security.md",
             "redirect_url": "/cloud-app-security/connect-google-workspace-to-microsoft-cloud-app-security",
-            "redirect_document_id": false
+            "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/protect-gsuite.md",
             "redirect_url": "/cloud-app-security/protect-google-workspace",
-            "redirect_document_id": false
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/api-tokens.md",
+            "redirect_url": "/cloud-app-security/api-authentication",
+            "redirect_document_id": true
         }
     ]
 }

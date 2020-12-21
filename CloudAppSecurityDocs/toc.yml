@@ -280,14 +280,8 @@
         href: icap-stunnel.md
       - name: Additional integrations
         href: additional-integrations.md
-    - name: Automate processes and workflows
-      items:
-      - name: Use the REST API
-        href: api-tokens.md
-      - name: Investigate activities with APIs
-        href: investigate-activities-api.md  
-      - name: Use Microsoft Power Automate
-        href: flow-integration.md
+    - name: Automate processes using Microsoft Power Automate
+      href: flow-integration.md
 - name: Reference
   items:
   - name: Attest your app
@@ -334,6 +328,8 @@
       items:
       - name: Overview
         href: api-activities.md
+      - name: Investigate activities with APIs
+        href: investigate-activities-api.md
       - name: List activities
         href: api-activities-list.md
       - name: Fetch activity
