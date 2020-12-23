@@ -1,18 +1,16 @@
 ---
 title: Investigate activities using the API 
 description: This article provides information on how to use the API to investigate user activity in Cloud App Security.
-ms.date: 03/26/2019
+ms.date: 12/22/2020
 ms.topic: how-to
 ---
 # Investigate activities using the API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security provides you with a fully supported REST API to enable you to programmatically interact with the service.
+You can use the Activities APIs to investigate the activities performed by your users across connected cloud apps.
 
-You can use the Microsoft Cloud App Security APIs to investigate the activities performed by your users across connected cloud apps.
-
-The Cloud App Security activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned.
+The activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned.
 
 > [!NOTE]
 > For large quantities of activities and large scale deployments, we recommended that you use the [SIEM agent](siem.md) for activity scanning.
