@@ -49,22 +49,22 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following table lists, per cloud app, which abilities are supported with App connectors:
 
-| | AWS | Box | Dropbox | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
-|-|-|-|-|-|-|-|-|-|-|-|-|
-| **List accounts** | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **List groups** | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
-| **List privileges** | | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
-| **User governance** | | ✔ | Coming soon | Subject Google Workspace connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | Not supported by provider |
-| **Log on activity** | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
-| **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
-| **DLP - Periodic scan** | | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
-| **DLP - Near real-time scan** | | ✔ | | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | | | ✔ | Not supported by provider |
-| **Sharing control** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by provider |
-| **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
-| **View app permissions** | Not applicable | Not supported by provider | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-| **Revoke app permissions** | Not applicable | Not supported by provider | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-| **Apply Azure Information Protection labels** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
+| | AWS | Box | Dropbox | GitHub | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| **List accounts** | ✔ | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **List groups** | ✔ | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
+| **List privileges** | | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
+| **User governance** | | ✔ | Coming soon | | Subject Google Workspace connection | ✔ | ✔ | | | ✔ | | Not supported by provider |
+| **Log on activity** | ✔ | ✔ | ✔ | | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
+| **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
+| **DLP - Periodic scan** | | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
+| **DLP - Near real-time scan** | | ✔ | | | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | | | ✔ | Not supported by provider |
+| **Sharing control** | ✔ | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by provider |
+| **File governance** | ✔ | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
+| **View app permissions** | Not applicable | Not supported by provider | Coming soon | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+| **Revoke app permissions** | Not applicable | Not supported by provider | Coming soon | | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+| **Apply Azure Information Protection labels** | Not applicable | ✔ | | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
 
 ## Prerequisites
 
