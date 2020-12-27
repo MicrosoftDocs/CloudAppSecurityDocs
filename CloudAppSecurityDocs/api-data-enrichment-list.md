@@ -49,15 +49,16 @@ curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tena
 
 ### Response
 
-Returns a list of IP ranges in JSON format.
+Returns a list of IP ranges in JSON format. For information about the response fields, see [Properties](api-data-enrichment.md#properties).
 
 ```json
 {
   "total": 1 // total number of records
   "hasNext": false // whether there is more data to show or not.
   "data": [
-    // returned records
-    "_id": "5fd767259cd24bb563567d7c",
+    {
+      // returned records
+      "_id": "5fd767259cd24bb563567d7c",
       "name": "range name",
       "subnets": [
         {

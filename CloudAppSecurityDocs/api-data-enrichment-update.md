@@ -33,7 +33,7 @@ POST /api/v1/subnet/<ip_range_id>/update_rule/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/<ip_range_id>/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/<ip_range_id>/update_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",

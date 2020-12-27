@@ -23,42 +23,17 @@ The response object defines the following properties.
 
 | Property | Type | Description |
 | --- | --- | --- |
+| total | int | Total number of record |
+| hasNext | bool | Indicates whether there are additional records |
+| data | list | List of the existing records |
+| _id | string | Unique id of the IP range |
 | name | string | The unique name of the range |
-| category | int | The id of the range category. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
-| subnets | list | An array of masks as strings (IPv4 / IPv6) |
+| subnets | list | An array of masks, IP addresses (IPv4 / IPv6), and original strings |
+| location | string | An object including the location name, latitude, longitude, country code, and country name |
 | organization | string | The registered ISP |
-| tags| list(json) | An array of tags (objects with "text" property set with the tag name) - new or existing |
-
-| data | list | List of the existing records according to filters chosen. |
-| _id | string | ip range unique id |
-| name | string | ip range unique name |
-| subnets | list | contains mask, address and originalString. |
-| mask | int | subnet mask value |
-| address | string | subnet address ipv6 |
-| originalString | string | subnet value |
-| location name | string | original location value |
-| latitude | long | location latitude (decimal) |
-| longitude | long | location longitude (decimal) |
-| countryCode | string | country code (two digit) |
-| countryName | string | country full name |
-| organization | string | organization name |
-| tags | list(json) | IP address tags list, including tag data |
-| _id | string | db id of tag |
-| id | string | tag unique identifier |
-| name | string | tag name |
-| nameTemplate | string | tag template name |
-| description | string | tag description |
-| _tid | int | tenant id |
-| lastModified | long | timestamp of the last time the rule changed. |
-| hasNext | bool | is there any additional records? |
-| total | int | total record amount. |
-
-
-// List or array
-// _id duplicated with diff desc
-// subnets diff desc
-// organization diff desc
-// tags diff desc
+| tags| list | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
+| category | int | The id of the range category. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
+| lastModified | long | Timestamp of the last rule changed |
 
 ## Filters
 
