@@ -13,7 +13,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ## Prerequisites
 
 - We suggest that you create a dedicated service account for the connection. This enables you to see that governance actions performed in Webex as being performed from this account, such as delete messages sent in Webex. Otherwise, the name of the admin who connected Cloud App Security to Webex will appear as the user who performed the actions.
-- You must have Full administrator **and** Compliance administrator permissions in Webex.
+- You must have Full Administrator **and** Compliance Officer roles in Webex (under **Roles and Security** > **Administrator Roles**).
+
+    ![connect Webex](media/connect-webex-roles.png "connect Webex")
 
 ## How to connect Webex to Cloud App Security
 
