@@ -1,24 +1,8 @@
 ---
-# required metadata
-
 title: Deploy Cloud App Security Conditional Access App Control for any web app using AD FS
 description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for any web app using AD FS as the identity provider.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/16/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-ms.suite: ems
 ---
 # Onboard and deploy Conditional Access App Control for any web app using Active Directory Federation Services (AD FS) as the identity provider (IdP)
 
