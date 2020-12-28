@@ -26,7 +26,7 @@ POST /api/v1/subnet/
 | --- | --- |
 | filters | Filter objects with all the search filters for the request, see [IP range filters](api-data-enrichment.md#filters) for more details |
 | sortDirection | The sorting direction. Possible values are: `asc` and `desc` |
-| sortField | Fields used to sort IP ranges. Possible values are:<br />- **date**: The date when then the IP range was created<br />- **category**: The category of the IP range<br />- **tags**: The tags of the IP range<br />- **name**: The name of the IP range |
+| sortField | Fields used to sort IP ranges. Possible values are:<br />- **category**: The category of the IP range<br />- **tags**: The tags of the IP range<br />- **name**: The name of the IP range |
 | skip | Skips the specified number of records |
 | limit | Maximum number of records returned by the request |
 
