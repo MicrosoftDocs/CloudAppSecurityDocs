@@ -45,6 +45,6 @@ The following table describes the supported filters:
 | --- | --- | --- | --- |
 | category | integer | eq, neq | Filter IP ranges by category. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
 | tags | string | eq, neq | Filter IP ranges by tag IDs |
-| builtIn | bool | eq | Filter IP ranges by type. Possible values include: **built-in** or **custom** |
+| builtIn | bool | eq | Filter IP ranges by type. Possible values include: **true** (built-in) or **false** (custom) |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
