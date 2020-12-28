@@ -24,7 +24,7 @@ POST /api/v1/subnet/<ip_range_id>/update_rule/
 | category | The id of the range category. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
 | subnets | An array of masks as strings (IPv4 / IPv6) |
 | organization (Optional) | The registered ISP |
-| tags (Optional) | An array of tags (objects with "text" property set with the tag name) - new or existing |
+| tags (Optional) | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
 
 ## Example
 

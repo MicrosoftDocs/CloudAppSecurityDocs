@@ -32,7 +32,7 @@ The response object defines the following properties.
 | location | string | An object including the location name, latitude, longitude, country code, and country name |
 | organization | string | The registered ISP |
 | tags| list | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
-| category | int | The id of the range category. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
+| category | int | The category of the IP range. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
 | lastModified | long | Timestamp of the last rule changed |
 
 ## Filters
@@ -44,7 +44,6 @@ The following table describes the supported filters:
 | Filter | Type | Operators | Description |
 | --- | --- | --- | --- |
 | category | integer | eq, neq | Filter IP ranges by category. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
-| name | string | eq, neq | Filter IP ranges by name |
 | tags | string | eq, neq | Filter IP ranges by tag IDs |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
