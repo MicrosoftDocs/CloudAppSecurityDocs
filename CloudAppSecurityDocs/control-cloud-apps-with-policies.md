@@ -1,7 +1,7 @@
 ---
 title: Control cloud app usage by creating policies 
 description: This article provides information on how policies are used and set up to control cloud app use.
-ms.date: 09/26/2019
+ms.date: 12/31/2020
 ms.topic: how-to
 ---
 # Control cloud apps with policies
@@ -14,19 +14,20 @@ For example, if there's a data violation threat that you want to quarantine, you
 
 ## Policy types
 
-When you look at the **Policy** page, the various policies and templates can be distinguished by type and icon to see which policies are available. The available policies depend on the data source and what you have enabled in Cloud App Security for your organization. For example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discovery are displayed.
+When you look at the **Policy** page, the various policies and templates can be distinguished by type and icon to see which policies are available. The policies can be viewed together on the **All policies** tab, or in their respective category tabs. The available policies depend on the data source and what you have enabled in Cloud App Security for your organization. For example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discovery are displayed.
 
 The following types of policies can be created:
 
-|Policy type icon|Policy type|Use|
-|-----|-----------------|---------|
-|![access policy icon](media/proxy-policy.png)|Access policy|Access policies provide you with real-time monitoring and control over user logins to your cloud apps.|
-|![activity policy icon](media/activity_policy.png)|Activity policy|Activity policies allow you to enforce a wide range of automated processes using the app provider's APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|
-|![anomaly detection policy icon](media/anomaly_detection_policy.png)|Anomaly detection policy|Anomaly detection policies enable you to look for unusual activities on your cloud. Detection is based on the risk factors you set to alert you when something happens that is different from the baseline of your organization or from the user's regular activity.|
-|![cloud discovery policy icon](media/discovery_policy.png)|App discovery policy|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|
-|![anomaly detection policy icon](media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|
-|![file policy icon](media/file_policy.png)|File policy|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, personal data, credit card information, and other types of data) and apply governance actions to the files (governance actions are cloud-app specific).|
-|![session policy icon](media/proxy-policy.png)|Session policy|Session policies provide you with real-time monitoring and control over user activity in your cloud apps.|
+|Policy type icon|Policy type|Category|Use|
+|-----|---------|--------|---------|
+|![activity policy icon](media/activity_policy.png)|Activity policy|Threat detection|Activity policies allow you to enforce a wide range of automated processes using the app provider's APIs. These policies enable you to monitor specific activities carried out by various users, or follow unexpectedly high rates of a certain type of activity.|
+|![anomaly detection policy icon](media/anomaly_detection_policy.png)|Anomaly detection policy|Threat detection|Anomaly detection policies enable you to look for unusual activities on your cloud. Detection is based on the risk factors you set to alert you when something happens that is different from the baseline of your organization or from the user's regular activity.|
+|![OAuth app policy icon](media/anomaly_detection_policy.png)|OAuth app policy|Threat detection|OAuth app policies enable you to investigate which permissions each OAuth app requested and automatically approve or revoke it.|
+|![file policy icon](media/file_policy.png)|File policy|Information protection|File policies enable you to scan your cloud apps for specified files or file types (shared, shared with external domains), data (proprietary information, personal data, credit card information, and other types of data) and apply governance actions to the files (governance actions are cloud-app specific).|
+|![access policy icon](media/proxy-policy.png)|Access policy|Conditional access|Access policies provide you with real-time monitoring and control over user logins to your cloud apps.|
+|![session policy icon](media/proxy-policy.png)|Session policy|Conditional access|Session policies provide you with real-time monitoring and control over user activity in your cloud apps.|
+|![cloud discovery policy icon](media/discovery_policy.png)|App discovery policy|Shadow IT|App discovery policies enable you to set alerts that notify you when new apps are detected within your organization.|
+|![anomaly detection policy icon](media/anomaly_detection_policy.png)|Cloud Discovery anomaly detection policy|Shadow IT|Cloud Discovery anomaly detection policies look at the logs you use for discovering cloud apps and search for unusual occurrences. For example, when a user who never used Dropbox before suddenly uploads 600 GB to Dropbox, or when there are a lot more transactions than usual on a particular app.|
 
 ## Identifying risk
 

@@ -81,7 +81,7 @@ Cloud App Security searches all the logs in your Cloud Discovery for anomalies. 
 
 8. Click **Create**.
 
-![new discovery anomaly policy](media/new-discovery-anomaly-policy.png "new discovery anomaly policy")
+    ![new discovery anomaly policy](media/new-discovery-anomaly-policy.png "new discovery anomaly policy")
 
 ## Next steps
 
