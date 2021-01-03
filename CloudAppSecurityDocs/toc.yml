@@ -229,20 +229,18 @@
     - name: Control cloud apps with policies
       href: control-cloud-apps-with-policies.md
       items:
-      - name: Cloud Discovery policies
-        href: cloud-discovery-policies.md
+      - name: Threat detection
         items:
-        - name: Cloud Discovery anomaly detection policy
-          href: cloud-discovery-anomaly-detection-policy.md
-      - name: Activity policies
-        href: user-activity-policies.md
-      - name: Anomaly detection policies
-        href: anomaly-detection-policy.md
-      - name: OAuth policies
-        href: app-permission-policy.md
-      - name: File policies
-        href: data-protection-policies.md
+        - name: Activity policies
+          href: user-activity-policies.md
+        - name: Anomaly detection policies
+          href: anomaly-detection-policy.md
+        - name: OAuth policies
+          href: app-permission-policy.md
+      - name: Information protection
         items:
+        - name: File policies
+          href: data-protection-policies.md
         - name: Content inspection
           href: content-inspection.md
           items:
@@ -252,12 +250,18 @@
             href: dcs-inspection.md
           - name: Working with the RegEx engine
             href: working-with-the-regex-engine.md
-      - name: Conditional Access App Control policies
+      - name: Conditional Access policies
         items:
         - name: Access policies
           href: access-policy-aad.md
         - name: Session policies
           href: session-policy-aad.md
+      - name: Shadow IT policies
+        items:
+        - name: Cloud Discovery policy
+          href: cloud-discovery-policies.md
+        - name: Cloud Discovery anomaly detection policy
+          href: cloud-discovery-anomaly-detection-policy.md
       - name: Policy template reference
         href: policy-template-reference.md
     - name: Govern connected apps

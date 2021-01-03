@@ -41,7 +41,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 2. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
 
-3. In the **App connectors** page, click the plus sign button and select **Box**.
+3. In the **App connectors** page, click the plus sign (**+**) button and select **Box**.
 
     ![connect box](media/connect-box.png "connect box")
 
