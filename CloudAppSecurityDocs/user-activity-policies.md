@@ -31,7 +31,7 @@ To create a new activity policy, follow this procedure:
 
 1. Click **Create policy** and select **Activity policy**.
 
-    ![Create a Cloud Discovery policy](media/create-policy-from-threat-detection-tab.png)
+    ![Create a Threat Detection policy](media/create-policy-from-threat-detection-tab.png)
 
 1. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
