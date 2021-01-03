@@ -1,7 +1,7 @@
 ---
 title: Create Cloud Discovery anomaly detection policy in Cloud App Security
 description: This topic provides information about how to work with Cloud Discovery anomaly detection policies.
-ms.date: 12/10/2018
+ms.date: 01/03/2021
 ms.topic: how-to
 ---
 # Cloud Discovery anomaly detection policy
@@ -15,6 +15,12 @@ This article gives you reference details about policies. Explanations for each p
 A Cloud Discovery anomaly detection policy enables you to set up and configure continuous monitoring of unusual increases in cloud application usage. Increases in downloaded data, uploaded data, transactions, and users are considered for each cloud application. Each increase is compared to the normal usage pattern of the application as learned from past usage. The most extreme increases trigger security alerts.
 
 For each policy, you set filters that enable you to selectively monitor application usage. Filters include an application filter, selected data views, and a selected start date. You can also set the sensitivity, which enables you to set how many alerts the policy should trigger.
+
+1. Go to **Control** > **Policies** > **Shadow IT**.
+
+1. Click **Create policy** and select **Cloud Discovery anomaly detection policy**.
+
+    ![Create a Cloud Discovery policy](media/create-policy-from-shadow-it-tab.png)
 
 For each policy, set the following parameters:
 

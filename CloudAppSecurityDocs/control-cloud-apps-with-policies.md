@@ -85,9 +85,9 @@ To create a policy from **Policy templates**, perform the following steps:
 
 1. In the console, click on **Control** followed by **Templates**.
 
-    ![Create the policy from a a template](media/create-policy-from-template.png)
+    ![Create the policy from a template](media/create-policy-from-template.png)
 
-1. Click the **+** at the far right of the row of the template you want to use. A create policy page opens, with the pre-defined configuration of the template.
+1. Click the plus sign (**+**) at the far right of the row of the template you want to use. A create policy page opens, with the pre-defined configuration of the template.
 
 1. Modify the template as needed for your custom policy. Every property and field of this new template-based policy can be modified according to your needs.
    > [!NOTE]
