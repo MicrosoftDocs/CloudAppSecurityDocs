@@ -123,7 +123,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     **For a new connector**
 
-    1. Click the plus sign followed by **Google Cloud Platform**.
+    1. Click the plus sign (**+**) followed by **Google Cloud Platform**.
 
         ![connect GCP](media/connect-gcp-add.png)
 

@@ -67,7 +67,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
-1. Click the plus sign, and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
+1. Click the plus sign (**+**), and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
 1. On the **APP INFORMATION** page, fill out the form using the information from your app's single sign-on configuration page, and then click **Next**.
     - If your IdP provides a single sign-on metadata file for the selected app, select **Upload metadata file from the app** and upload the metadata file.
     - Or, select **Fill in data manually** and provide the following information:

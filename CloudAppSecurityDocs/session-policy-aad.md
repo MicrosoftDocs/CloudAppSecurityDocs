@@ -1,7 +1,7 @@
 ---
 title: Create session policies in Cloud App Security
 description: This article describes the procedure for setting up a Cloud App Security Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
-ms.date: 03/31/2020
+ms.date: 01/03/2021
 ms.topic: how-to
 ---
 # Session policies
@@ -32,8 +32,12 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 To create a new session policy, follow this procedure:
 
-1. In the portal, select **Control** followed by **Policies**.
-1. In the **Policies** page, click **Create policy** and select **Session policy**.
+1. Go to **Control** > **Policies** > **Conditional access**.
+
+1. Click **Create policy** and select **Session policy**.
+
+    ![Create a Conditional access policy](media/create-policy-from-conditional-access-tab.png)
+
 1. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
 1. In the **Session control type** field:
 
