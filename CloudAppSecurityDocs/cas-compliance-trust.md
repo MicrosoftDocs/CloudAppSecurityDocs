@@ -1,7 +1,7 @@
 ---
 title: Cloud App Security compliance, data security, privacy, trust
 description: This article describes the Cloud App Security compliance offering, trust center, privacy, and data security.
-ms.date: 10/18/2020
+ms.date: 01/04/2021
 ms.topic: overview
 ---
 # Microsoft Cloud App Security data security and privacy
@@ -145,7 +145,7 @@ Microsoft Cloud App Security provides you with the ability to [export](activity-
 
 ### Encryption
 
-Microsoft uses encryption technology to protect your data while at rest in a Microsoft database and when it travels between user devices and Cloud App Security datacenters.
+Microsoft uses encryption technology to protect your data while at rest in a Microsoft database and when it travels between user devices and Cloud App Security datacenters. Additionally, all communication between Cloud App Security and connected apps is encrypted using HTTPS.
 
 > [!NOTE]
 > Cloud App security leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in class encryption. Native client applications and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Cloud App Security.
