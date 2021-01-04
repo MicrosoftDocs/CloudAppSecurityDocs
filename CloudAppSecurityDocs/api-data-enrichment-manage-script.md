@@ -12,7 +12,7 @@ You can use the Data Enrichment APIs to manage IP address ranges.
 
 ## To use the manage IP address ranges script
 
-1. Create a CSV file with the following expected fields: Name, IP_Address_Ranges, Category, Tag(id) and Override_ISP_Name.
+1. Create a CSV file with the following expected fields: Name, IP_Address_Ranges, Category, Tag(id), and Override_ISP_Name.
 
 1. Update the values for the following script variables: **OPTION_DELETE_ENABLED**, **IP_RANGES_BASE_URL**, **CSV_ABSOLUTE_PATH**, **YOUR_TOKEN**
 
