@@ -16,8 +16,8 @@ You can use the Data Enrichment APIs to manage IP address ranges.
 
 1. Update the values for the following script variables: **OPTION_DELETE_ENABLED**, **IP_RANGES_BASE_URL**, **CSV_ABSOLUTE_PATH**, **YOUR_TOKEN**
 
-> [!IMPORTANT]
-> If you set **OPTION_DELETE_ENABLED** to **True**, any IP address ranges that are defined in your tenant by do not exist in the CSV files will be deleted from the tenant by the script. If you use this option, make sure that the CSV file defines all the IP address ranges you want in your tenant.
+    > [!IMPORTANT]
+    > If you set **OPTION_DELETE_ENABLED** to **True**, any IP address ranges that are defined in your tenant by do not exist in the CSV files will be deleted from the tenant by the script. If you use this option, make sure that the CSV file defines all the IP address ranges you want in your tenant.
 
 1. Run the script to create new records and update existing rules with the matching name.
 
