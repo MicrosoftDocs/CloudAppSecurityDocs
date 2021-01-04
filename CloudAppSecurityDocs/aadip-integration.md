@@ -44,7 +44,9 @@ To disable Cloud App Security integration with Identity Protection:
 1. Clear **Enable Azure AD Identity Protection alert integration** and then click **Save**.
 
 > [!NOTE]
-> When the integration is disabled, existing Identity Protection alerts are kept in accordance with Cloud App Security retention policies.
+>
+> - When the integration is disabled, existing Identity Protection alerts are kept in accordance with Cloud App Security retention policies.
+> - Since Cloud App Security only consumes interactive logins from Azure AD, some alerts may not show related activities. You can investigate such activities in the Azure AD portal.
 
 ## Configure Identity Protection Policies
 
