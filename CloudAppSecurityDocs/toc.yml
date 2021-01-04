@@ -316,16 +316,26 @@
         href: api-discovery-finalize.md
       - name: Generate block script
         href: api-discovery-script.md
-    - name: Data Enhancement
+    - name: Data Enrichment
       items:
-      - name: Create IP address range
+      - name: Overview
         href: api-data-enrichment.md
+      - name: Manage IP address ranges using the API
+        href: api-data-enrichment-manage-script.md
+      - name: List IP ranges
+        href: api-data-enrichment-list.md
+      - name: Create IP address range
+        href: api-data-enrichment-create.md
+      - name: Update IP address range
+        href: api-data-enrichment-update.md
+      - name: Delete IP address range
+        href: api-data-enrichment-delete.md
     - name: Activities
       items:
       - name: Overview
         href: api-activities.md
       - name: Investigate activities with APIs
-        href: investigate-activities-api.md
+        href: api-activities-investigate-script.md
       - name: List activities
         href: api-activities-list.md
       - name: Fetch activity

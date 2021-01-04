@@ -29,7 +29,7 @@ POST /api/v1/entities/
 | --- | --- |
 | filters | Filter objects with all the search filters for the request, see [entity filters](api-entities.md#filters) for more details |
 | sortDirection | The sorting direction. Possible values are: `asc` and `desc` |
-| sortField | Fields used to sort entities. Possible values are:<br /><br />**date**: The date when then the entity was created<br /><br />**severity**: The severity of the entity |
+| sortField | Fields used to sort entities. Possible values are:<br />- **date**: The date when then the entity was created<br />- **severity**: The severity of the entity |
 | skip | Skips the specified number of records |
 | limit | Maximum number of records returned by the request |
 
