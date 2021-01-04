@@ -722,7 +722,7 @@ Released November 12, 2017
 
 - Using the new blue question mark in the corner, you can now access the relevant Cloud App Security documentation page on docs.microsoft.com from within the pages of the portal. Each link is context-sensitive, taking you to the information you need based on the page you're on.
 - You can now send feedback from every page of the Cloud App Security portal. Feedback enables you to report bugs, request new features and share your experience directly with the Cloud App Security team.
-- Improvements were made to the Cloud discovery ability to recognize subdomains for deep-dive investigations into your organization's cloud usage. For more information, see [Working with discovered apps](discovered-apps.md).
+- Improvements were made to the Cloud Discovery ability to recognize subdomains for deep-dive investigations into your organization's cloud usage. For more information, see [Working with discovered apps](discovered-apps.md).
 
 ### Cloud App Security release 109
 
@@ -739,7 +739,7 @@ Released October 29, 2017
 
 - We're gradually rolling out the ability to filter according to specific service activity names. This new Activity Type filter is more granular, to enable you to monitor specific app activities, as opposed to more general activity types. For example, previously, you could filter for the **Run command**, and now you can filter for specific EXO cmdlets. The activity name can also be seen in the Activity drawer under **Type (in app)**. This capability will eventually replace the Activity type filter.
 
-- Cloud discovery now supports Cisco ASA with FirePOWER.
+- Cloud Discovery now supports Cisco ASA with FirePOWER.
 
 - Performance enhancements were made to the Discovery User and IP pages to improve user experience.
 
@@ -749,7 +749,7 @@ Released September/October 2017
 
 - Cloud App Security now includes a data center located in the EU. In addition to our US data center, the EU data center will enable Cloud App Security customers to be in complete compliance with new and upcoming European standardization and certifications.
 - New filters were added to the **App connectors** page that provide you with simpler filtering and additional insight.
-- Cloud discovery on log files that have only destination IP information was improved.
+- Cloud Discovery on log files that have only destination IP information was improved.
 
 ### Cloud App Security release 104
 

@@ -153,7 +153,7 @@ This detection uses a machine learning algorithm that ignores obvious **B-TP** c
 
 ### Misleading OAuth app name
 
-Misleading OAuth app name identifies apps with characters, such as foreign letters, that resemble Latin letters. This can indicate an attempt to disguise a malicious app as a known and trusted app so that attackers can deceive users into downloading their malicious app.
+This detection identifies apps with characters, such as foreign letters, that resemble Latin letters. This can indicate an attempt to disguise a malicious app as a known and trusted app so that attackers can deceive users into downloading their malicious app.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -175,7 +175,7 @@ To ban access to the app, on the **OAuth apps** page, on the row in which the ap
 
 ### Misleading publisher name for an OAuth app
 
-Misleading OAuth publisher name for an OAuth app identifies apps with characters, such as foreign letters, that resemble Latin letters. This can indicate an attempt to disguise a malicious app as a known and trusted app so that attackers can deceive users into downloading their malicious app.
+This detection identifies apps with characters, such as foreign letters, that resemble Latin letters. This can indicate an attempt to disguise a malicious app as a known and trusted app so that attackers can deceive users into downloading their malicious app.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -196,6 +196,18 @@ Misleading OAuth publisher name for an OAuth app identifies apps with characters
     - Apps that have not been recently updated. This might indicate an app that is no longer supported.
     - Apps that have irrelevant permissions. This might indicate that an app is risky.
 1. If you still suspect that an app is suspicious, you can research the app name, publisher, and URL online.
+
+### Unusual addition of credentials to an OAuth app
+
+This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity.
+
+> [!NOTE]
+> Since the risk posed by a successful attack is high, Cloud App Security also notifies you of detections dating back to mid-September 2020.
+> Alerts for past events have the title "System alert: Unusual addition of credentials to an OAuth app" and the alert type will be MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Learning period**
+
+Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
 
 ## Execution alerts
 

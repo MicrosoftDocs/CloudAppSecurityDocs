@@ -44,7 +44,7 @@ To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.
 Required task: Connect apps
 
 1. From the settings cog, select   **App connectors**.
-1. Click the plus sign to add an app and select an app.
+1. Click the plus sign (**+**) to add an app and select an app.
 1. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
@@ -126,7 +126,7 @@ Recommended task: Configure important settings
 
 1. From the settings cog, select **Cloud Discovery settings**.
 1. From the settings cog, select **IP address ranges**.
-1. Click the plus sign to add an IP address range.
+1. Click the plus sign (**+**) to add an IP address range.
 1. Enter the IP range **details**, **location**, **tags**, and **category**.
 1. Choose **Create**.
 

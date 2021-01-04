@@ -109,7 +109,7 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
     **For a new connector**
 
-    1. Click the plus sign followed by **Amazon Web Services**.
+    1. Click the plus sign (**+**) followed by **Amazon Web Services**.
 
         ![connect AWS auditing](media/connect-aws.png "connect AWS")
 
