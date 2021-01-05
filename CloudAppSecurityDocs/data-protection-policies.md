@@ -112,6 +112,11 @@ To make investigation even simpler, you can now create custom queries and save t
 
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Information protection webinar](webinars.md#on-demand-webinars)
+
 ## Next steps
 
 > [!div class="nextstepaction"]

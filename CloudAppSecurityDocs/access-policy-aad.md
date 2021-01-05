@@ -51,6 +51,11 @@ To create a new access policy, follow this procedure:
 
 1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
 
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Conditional Access App Control webinar](webinars.md#on-demand-webinars)
+
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -152,6 +152,11 @@ It is important to educate users when they are in violation of a policy so that 
 
 For example, if a user uploads a file without an Azure Information Protection label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
 
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Conditional Access App Control webinar](webinars.md#on-demand-webinars)
+
 ## Next steps
 
 >[!div class="nextstepaction"]

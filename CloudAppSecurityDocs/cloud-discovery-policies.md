@@ -83,6 +83,11 @@ Cloud App Security searches all the logs in your Cloud Discovery for anomalies. 
 
     ![new discovery anomaly policy](media/new-discovery-anomaly-policy.png "new discovery anomaly policy")
 
+## Related videos
+
+> [!div class="nextstepaction"]
+> [App discovery and log collector configuration webinar](webinars.md#on-demand-webinars)
+
 ## Next steps
 
 > [!div class="nextstepaction"]
