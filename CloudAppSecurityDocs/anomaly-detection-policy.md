@@ -218,6 +218,11 @@ You can triage the various alerts triggered by the new anomaly detection policie
 
 1. For malware infected files, After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about that type of malware the file is infected with.
 
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Threat protection webinar](webinars.md#on-demand-webinars)
+
 ## Next steps
 
 > [!div class="nextstepaction"]

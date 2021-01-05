@@ -47,6 +47,11 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
     ![view playbooks in Cloud App Security](media/flow-extensions.png)
 
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Automation and integration with Power Automate webinar](webinars.md#on-demand-webinars)
+
 ## Next steps
 
 > [!div class="nextstepaction"]
