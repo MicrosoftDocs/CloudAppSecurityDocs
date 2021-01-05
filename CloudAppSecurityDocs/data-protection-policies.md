@@ -1,7 +1,7 @@
 ---
 title: Monitor and protect files in cloud apps 
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
-ms.date: 01/03/2021
+ms.date: 01/05/2021
 ms.topic: how-to
 ---
 # File policies
