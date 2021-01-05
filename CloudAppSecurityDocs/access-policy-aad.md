@@ -1,7 +1,7 @@
 ---
 title: Create Cloud App Security access policies to allow and block access
 description: This article describes the procedure for setting up a Cloud App Security Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
-ms.date: 01/03/2021
+ms.date: 01/05/2021
 ms.topic: how-to
 ---
 # Access policies
