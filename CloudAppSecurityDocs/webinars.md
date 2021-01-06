@@ -14,7 +14,10 @@ To hear about our future webinars and other developments, [join the Cloud App Se
 
 ## On-Demand webinars
 
-You can watch recorded sessions at any time and where available, you can turn on captions by clicking **Closed captions** and selecting the desired language.
+You can watch recorded sessions at any time.
+
+> [!NOTE]
+> Where available, you can turn on captions by clicking **Closed captions** and selecting the desired language.
 
 | Title | Learn about |
 | --- | --- |
