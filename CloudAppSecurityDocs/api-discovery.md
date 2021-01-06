@@ -1,7 +1,7 @@
 ---
 title: Cloud App Security Cloud Discovery API
 description: This article provides information about using the Cloud Discovery API.
-ms.date: 03/27/2020
+ms.date: 01/07/2021
 ms.topic: reference
 ---
 # Cloud Discovery API
@@ -18,10 +18,10 @@ The following lists the supported requests:
 - [Perform file upload](api-discovery-perform.md)
 - [Finalize file upload](api-discovery-finalize.md)
 - [Generate block script](api-discovery-script.md)
-- List continuous reports
-- List continuous report categories
-- List app tags
-- Create app tag
-- Delete app tag
+- [List streams](api-discovery-list-streams.md)
+- [List stream categories](api-discovery-list-categories.md)
+- [List app tags](api-discovery-list-app-tags.md)
+- [Create app tag](api-discovery-create-app-tag.md)
+- [Delete app tag](api-discovery-delete-app-tag.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
