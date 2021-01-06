@@ -18,5 +18,10 @@ The following lists the supported requests:
 - [Perform file upload](api-discovery-perform.md)
 - [Finalize file upload](api-discovery-finalize.md)
 - [Generate block script](api-discovery-script.md)
+- List continuous reports
+- List continuous report categories
+- List app tags
+- Create app tag
+- Delete app tag
 
 [!INCLUDE [Open support ticket](includes/support.md)]

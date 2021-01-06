@@ -334,6 +334,18 @@
         href: api-alerts-mark-read.md
       - name: Mark alert as unread
         href: api-alerts-mark-unread.md
+    - name: Cloud Discovery
+      items:
+      - name: Overview
+        href: api-discovery.md
+      - name: Initiate file upload
+        href: api-discovery-initiate.md
+      - name: Perform file upload
+        href: api-discovery-perform.md
+      - name: Finalize file upload
+        href: api-discovery-finalize.md
+      - name: Generate block script
+        href: api-discovery-script.md
     - name: Data Enrichment
       items:
       - name: Overview
@@ -348,18 +360,6 @@
         href: api-data-enrichment-update.md
       - name: Delete IP address range
         href: api-data-enrichment-delete.md
-    - name: Discovery
-      items:
-      - name: Overview
-        href: api-discovery.md
-      - name: Initiate file upload
-        href: api-discovery-initiate.md
-      - name: Perform file upload
-        href: api-discovery-perform.md
-      - name: Finalize file upload
-        href: api-discovery-finalize.md
-      - name: Generate block script
-        href: api-discovery-script.md
     - name: Entities
       items:
       - name: Overview
