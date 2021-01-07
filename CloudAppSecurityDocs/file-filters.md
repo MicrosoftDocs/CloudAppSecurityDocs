@@ -93,9 +93,23 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **File type** – Cloud App Security takes both the MIME type received from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, All folders that are ... or All spreadsheet files that are...
 
-    ![policy_file filters trash](media/policy_file-filters-trash.png "policy_file filters trash")
+
+Cloud App Security currently supports applying Azure Information Protection classification labels for the following file types:
+
+- Word: docm, docx, dotm, dotx
+- Excel: xlam, xlsm, xlsx, xltx
+- PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
+- PDF
+  > [!NOTE]
+  > For PDF, you must use unified labels.
+
+
+
+    ![policy_file filters type](media/policy_file-filters-type.png)
 
 - **In trash** – Exclude/include files in the trash folder. These files may still be shared and pose a risk.
+
+    ![policy_file filters trash](media/policy_file-filters-trash.png)
 
 - **Last modified** – File modification time. The filter supports before and after dates, date range, and relative time expressions. For example, all files that weren't modified in the last six months.
 
