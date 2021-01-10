@@ -16,6 +16,25 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
+## Cloud App Security release 189, 190, and 191
+
+Released January 10, 2021
+
+- **New anomaly detection: Suspicious addition of credentials to an OAuth app**  
+We've extended our anomaly detections to include suspicious addition of privileged credentials to an OAuth app. The new detection is now available out-of-the-box and automatically enabled. The detection can indicate that an attacker has compromised the app and is using it for malicious activity. For more information, see [Unusual addition of credentials to an OAuth app](investigate-anomaly-alerts.md#unusual-addition-of-credentials-to-an-oauth-app).
+
+- **Enhanced auditing for Shadow IT discovery activities**  
+We've updated the auditing for [Shadow IT](tutorial-shadow-it.md) activities to include actions performed by administrators. The following new activities are now available in the activity log and can be used as part of your Cloud App Security [investigation experience](investigate.md#use-the-investigation-tools).
+  - Tagging or untagging apps
+  - Creating, updating, or deleting log collectors
+  - Creating, updating, or deleting  data sources
+
+- **New Data Enrichment REST API endpoints**  
+We've added the following [Data Enrichment API endpoints](api-data-enrichment.md) enabling you to fully manage your IP address ranges using the API. Use our [sample management script](api-data-enrichment-manage-script.md) to help you get started. For more information about ranges, see [Working with IP ranges and tags](ip-tags.md).
+  - [List IP address range](api-data-enrichment-list.md)
+  - [Update IP address range](api-data-enrichment-update.md)
+  - [Delete IP address range](api-data-enrichment-delete.md)
+
 ## Cloud App Security release 187 and 188
 
 Released November 22, 2020
