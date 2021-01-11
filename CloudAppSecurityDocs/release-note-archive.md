@@ -800,7 +800,7 @@ Released July 3, 2017
 
 - **Security extensions:** Security extensions is a new dashboard for centralized management of all security extensions to Cloud App Security.  Extensions include API token management, SIEM agents, and External DLP connectors. The new dashboard is available in Cloud App Security under "Settings".
 
-  - API tokens – generate and manage your own [API tokens](api-tokens.md)  to integrate Cloud App Security with third-party software using our RESTful APIs.
+  - API tokens – generate and manage your own [API tokens](./api-authentication.md)  to integrate Cloud App Security with third-party software using our RESTful APIs.
   - SIEM agents – [SIEM integration](siem.md) was previously located directly under "Settings", now available as a tab in Security Extensions.
   - External DLP (Preview) – Cloud App Security allows you to [leverage existing investments in third-party classification systems](icap-stunnel.md) such as Data Loss Prevention (DLP) solutions, and enables you to scan the contents of cloud applications using existing deployments running in your environment. Contact your account manager to join the preview.
 

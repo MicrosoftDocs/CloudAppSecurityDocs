@@ -22,7 +22,7 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
 ## How to create playbooks with Power Automate
 
-1. [Create an API token](api-tokens.md) in Cloud App Security.
+1. [Create an API token](./api-authentication.md) in Cloud App Security.
 
 2. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New**, and from the drop-down, select **Automated - from blank**.
 

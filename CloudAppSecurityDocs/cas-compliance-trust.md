@@ -127,7 +127,7 @@ The following table show what data is surfaced for each product integration:
 | Integration type | Exposed data | Configuration |
 | --- | --- | --- |
 | Using a SIEM agent | Alerts and events | [Enabled and configured in Cloud App Security](siem.md) |
-| Using Cloud App Security's REST API | Alerts and events | [Enabled and configured in Cloud App Security](api-tokens.md) |
+| Using Cloud App Security's REST API | Alerts and events | [Enabled and configured in Cloud App Security](./api-authentication.md) |
 | ICAP connector | File for DLP scan | [Enabled and configured in Cloud App Security](icap-stunnel.md) |
 
 > [!NOTE]
