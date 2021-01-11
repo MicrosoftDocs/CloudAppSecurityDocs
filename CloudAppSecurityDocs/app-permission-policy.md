@@ -1,7 +1,7 @@
 ---
 title: Create policies to control OAuth apps in Cloud App Security
 description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
-ms.date: 11/27/2019
+ms.date: 01/11/2021
 ms.topic: how-to
 ---
 # OAuth app policies
@@ -49,7 +49,9 @@ In addition to OAuth app policies you can create, there are the following out-of
 -->
 
 > [!NOTE]
-> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+>
+> - Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> - The severity of OAuth app anomaly detection policies cannot be modified.
 
 ## Next steps
 
