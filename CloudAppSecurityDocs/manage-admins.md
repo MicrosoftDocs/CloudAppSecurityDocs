@@ -20,7 +20,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
 
 - **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Cannot access Security recommendations for cloud platforms.
 
-- **Security operator and Security reader**: Have read-only permissions and can manage alerts. The admins are restricted from doing the following actions:
+- **Security operator and Security reader**: Have read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
   - Create policies or edit and change existing ones
   - Performing any governance actions
