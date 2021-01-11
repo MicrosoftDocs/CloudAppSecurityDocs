@@ -70,7 +70,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
     - **Any from domain** – If any user from this domain has access to the file.
 
-    - **Entire domain** – If the entire domain has access to the file.
+    - **Entire organization** – If the entire organization has access to the file.
 
     - **Groups** – If a specific group has access to the file. Groups can be imported from Active Directory, cloud apps or manually created in the service.
 
