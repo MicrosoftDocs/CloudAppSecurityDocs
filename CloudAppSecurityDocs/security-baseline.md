@@ -96,7 +96,7 @@ For administrator and privileged users, ensure the highest level of the strong a
 
 **Guidance**: Cloud App Security supports Azure Active Directory (Azure AD) Conditional Access for more granular access control based on user-defined conditions, such as user logins from certain IP ranges will need to use MFA for login. Granular authentication session management policies can also be used for different use cases.
 
-- [Conditional Access App Control protection](./what-is-cloud-app-security.md#conditional-access-app-control-protection)
+- [Conditional Access App Control protection](what-is-cloud-app-security.md#conditional-access-app-control-protection)
 
 - [Azure conditional access overview](/azure/active-directory/conditional-access/overview) 
 
@@ -148,7 +148,7 @@ Limit the number of highly privileged accounts or roles and protect these accoun
 
 You can enable just-in-time (JIT) privileged access to Azure resources and Azure AD using Azure AD Privileged Identity Management (PIM). JIT grants temporary permissions to perform privileged tasks only when users need it. PIM can also generate security alerts when there is suspicious or unsafe activity in your Azure AD organization.
 
-- [Manage admin access in Cloud App Security](./manage-admins.md)
+- [Manage admin access in Cloud App Security](manage-admins.md)
 
 **Azure Security Center monitoring**: Yes
 
@@ -158,7 +158,7 @@ You can enable just-in-time (JIT) privileged access to Azure resources and Azure
 
 **Guidance**: Cloud App Security offers role-based access control for admins.
 
-- [Manage Cloud App Security admin access](./manage-admins.md)
+- [Manage Cloud App Security admin access](manage-admins.md)
 
 **Azure Security Center monitoring**: Yes
 
@@ -210,7 +210,7 @@ You should ensure that the credentials (such as password, certificate, or smart 
 
 Use built-in roles to allocate permission and only create custom roles when required.
 
-- [Office 365 and Azure AD roles with access to Cloud App Security](./manage-admins.md)
+- [Office 365 and Azure AD roles with access to Cloud App Security](manage-admins.md)
 
 What is Azure role-based access control (Azure RBAC) https://docs.microsoft.com/azure/role-based-access-control/overview 
 
@@ -230,7 +230,7 @@ What is Azure role-based access control (Azure RBAC) https://docs.microsoft.com/
 
 **Guidance**: Cloud App Security manages sensitive data and uses Azure AD roles to control permissions for different types of data.
 
-- [Azure AD roles with access to Cloud App Security](./manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security)
+- [Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security)
 
 **Azure Security Center monitoring**: Yes
 
@@ -244,7 +244,7 @@ While this is optional for traffic on private networks, this is critical for tra
 
 By default, Azure provides encryption for data in transit between Azure data centers.
 
-- [Microsoft Cloud App Security data security and privacy](./cas-compliance-trust.md#encryption)
+- [Microsoft Cloud App Security data security and privacy](cas-compliance-trust.md#encryption)
 
 - [Understand encryption in transit with Azure](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) 
 
@@ -286,8 +286,8 @@ Note: Additional permissions might be required to get visibility into workloads 
 
 **Guidance**: Forward any logs from Cloud App Security to your SIEM which can be used to set up custom threat detections. Ensure you are monitoring different types of Azure assets for potential threats and anomalies. Focus on getting high-quality alerts to reduce false positives for analysts to sort through. Alerts can be sourced from log data, agents, or other data.
 
-- [Azure Sentinel integration](./siem-sentinel.md)
-- [Generic SIEM integration](./siem.md)
+- [Azure Sentinel integration](siem-sentinel.md)
+- [Generic SIEM integration](siem.md)
 
 - [Create custom analytics rules to detect threats](/azure/sentinel/tutorial-detect-threats-custom) 
 
