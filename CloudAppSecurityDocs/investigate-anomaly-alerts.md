@@ -197,18 +197,6 @@ This detection identifies apps with characters, such as foreign letters, that re
     - Apps that have irrelevant permissions. This might indicate that an app is risky.
 1. If you still suspect that an app is suspicious, you can research the app name, publisher, and URL online.
 
-### Unusual addition of credentials to an OAuth app
-
-This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity.
-
-> [!NOTE]
-> Since the risk posed by a successful attack is high, Cloud App Security also notifies you of detections dating back to mid-September 2020.
-> Alerts for past events have the title "System alert: Unusual addition of credentials to an OAuth app" and the alert type will be MCAS_ALERT_MANAGEMENT_GENERIC.
-
-**Learning period**
-
-Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
-
 ## Execution alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to run malicious code in your organization.
@@ -442,6 +430,18 @@ This policy is based on learning the normal login behavior of a user. When a dev
     - IP address and location
 1. Identify the source IP address or location where the authentication attempt occurred.
 1. Identify if the user recently changed their password and ensure all apps and devices have the updated password.
+
+### Unusual addition of credentials to an OAuth app
+
+This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity.
+
+> [!NOTE]
+> Since the risk posed by a successful attack is high, Cloud App Security also notifies you of detections dating back to mid-September 2020.
+> Alerts for past events have the title "System alert: Unusual addition of credentials to an OAuth app" and the alert type will be MCAS_ALERT_MANAGEMENT_GENERIC.
+
+**Learning period**
+
+Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
 
 ## Collection alerts
 
