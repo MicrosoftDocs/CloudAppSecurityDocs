@@ -93,7 +93,7 @@ The following Cloud App Security specific admin roles can be configured in the C
   - Governance actions - Only Cloud Discovery related actions
   - Security recommendations for cloud platforms - No permissions
 
-- **Cloud Discovery report admin**: Has permissions to view all the data in Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender ATP. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin will not have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
+- **Cloud Discovery report admin**: Has permissions to view all the data in Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender for Endpoint. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin will not have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
 
 > [!NOTE]
 > The built-in Cloud App Security admin roles only provide access permissions to Cloud App Security.
