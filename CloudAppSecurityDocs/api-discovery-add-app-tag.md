@@ -13,7 +13,7 @@ Run the POST request to create a new app tag.
 ## HTTP request
 
 ```rest
-POST api/v1/discovery/discovery_app/{service}/add_tag/
+POST api/v1/discovery/discovery_app/{appId}/add_tag/
 ```
 
 ## Request BODY parameters
@@ -29,7 +29,7 @@ POST api/v1/discovery/discovery_app/{service}/add_tag/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/discovery_app/<service>}/add_tag/" -d {
+curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/discovery_app/<appId>}/add_tag/" -d {
   "tagName": <tag name>
 }
 ```

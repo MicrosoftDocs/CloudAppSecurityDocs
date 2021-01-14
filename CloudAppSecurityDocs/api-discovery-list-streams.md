@@ -32,23 +32,6 @@ Returns a list of streams in JSON format.
 
 ```json
 {
-  "streams": [
-  {
-    "anonymizeUsers": false,
-    "displayName": "tcp_corrata_sanity",
-    "logType": 220,
-    "receiverType": "syslog",
-    "protocol": "tcp",
-    "streamType": 1,
-    "isManual": false,
-    "created": "2021-01-05T10:29:48.476Z",
-    "lastModified": "2021-01-05T10:29:48.476Z",
-    "logFilesHistoryCount": 0,
-    "supportedEntityTypes": [],
-    "supportedTrafficTypes": [],
-    "lastAlertProcessingTime": 1609845803112,
-    "sourceStreams": []
-  },
   {
     "anonymizeUsers": false,
     "displayName": "dependency_udp",
