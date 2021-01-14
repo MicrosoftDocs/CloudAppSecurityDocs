@@ -123,7 +123,7 @@ The detection looks for users whose account was terminated in Azure AD, but stil
 * This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user's mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
 > [!NOTE]
-> Cloud App Security integrates with Office Advanced Threat Protection (Office ATP) to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Office ATP is enabled, you'll start seeing alerts in the Cloud App Security activity log.
+> Cloud App Security integrates with Microsoft Defender for Office 365 to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Office 365 is enabled, you'll start seeing alerts in the Cloud App Security activity log.
 
 ### Suspicious OAuth app file download activities
 
