@@ -7,7 +7,7 @@ keywords:
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/20/2020
+ms.date: 01/05/2021
 
 ms.topic: how-to
 ms.collection: M365-security-compliance
@@ -123,7 +123,7 @@ The detection looks for users whose account was terminated in Azure AD, but stil
 * This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user's mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
 > [!NOTE]
-> Cloud App Security integrates with Office Advanced Threat Protection (Office ATP) to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Office ATP is enabled, you'll start seeing alerts in the Cloud App Security activity log.
+> Cloud App Security integrates with Microsoft Defender for Office 365 to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Office 365 is enabled, you'll start seeing alerts in the Cloud App Security activity log.
 
 ### Suspicious OAuth app file download activities
 
@@ -217,6 +217,11 @@ You can triage the various alerts triggered by the new anomaly detection policie
     ![anomaly detection alert3](media/anomaly-alert-user3.png)
 
 1. For malware infected files, After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about that type of malware the file is infected with.
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Threat protection webinar](webinars.md#on-demand-webinars)
 
 ## Next steps
 

@@ -1,7 +1,7 @@
 ---
 title: Watch our webinars 
 description: Displays a listing of past webinars, including a description.
-ms.date: 8/25/2019
+ms.date: 01/05/2021
 ms.topic: conceptual
 ---
 # Microsoft Cloud App Security webinars
@@ -14,17 +14,20 @@ To hear about our future webinars and other developments, [join the Cloud App Se
 
 ## On-Demand webinars
 
-Watch recorded sessions at any time
+You can watch recorded sessions at any time.
+
+> [!NOTE]
+> Where available, you can turn on captions by clicking **Closed captions** and selecting the desired language.
 
 | Title | Learn about |
 | --- | --- |
-| **Information protection**<br />[Watch now](https://go.microsoft.com/fwlink/?linkid=2101487) | - Protecting your cloud data<br />- Real-time monitoring and control<br />- Best practices for connecting your apps, identify data types, auditing your environment, and remediating with governance actions |
-| **Threat detection**<br />[Watch now](https://go.microsoft.com/fwlink/?linkid=2101574) | - Protecting against cloud threats<br />- Detecting threats across cloud apps<br />- Detecting malware<br />- OAuth app permissions<br />- Configuring alerts in policies |
-| **Conditional Access App Control**<br />[Watch now](https://go.microsoft.com/fwlink/?linkid=2102100) | - Conditional Access App Control<br />- Azure Active Directory Conditional Access integration<br />- Protecting your environment |
-| **Extending real-time monitoring & controls**<br />[Watch now](https://go.microsoft.com/fwlink/?linkid=2110389) | - Session control & reverse proxy infrastructure<br />- Featured apps and out-of-the-box controls<br />- Onboarding any apps (new, custom, and on-premises apps)<br />- Extending controls for any app |
-| **App discovery and log collector configuration**<br />[Watch now](https://go.microsoft.com/fwlink/?linkid=2102101) | - How discovery works<br />- The Shadow IT discovery lifecycle<br />- Extending integration with secure web gateways<br />- Discovery using log collectors |
-| **Connecting third-party apps**<br />[Watch now](https://go.microsoft.com/fwlink/?linkid=2102200) | Connecting third-party apps using:<br />- APIs<br />- OAuth<br />- Conditional Access App Control<br />- Azure Active Directory App Proxy |
-| **Automation and integration with Microsoft Flow**<br />[Watch now](https://go.microsoft.com/fwlink/?linkid=2102102) | Extending Cloud App Security with Microsoft Flow to automate advanced remediation scenarios |
+| **Information protection**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4Gejk)<br />*Captions available* | - Protecting your cloud data<br />- Real-time monitoring and control<br />- Best practices for connecting your apps, identify data types, auditing your environment, and remediating with governance actions |
+| **Threat detection**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4I2y0)<br />*Captions available* | - Protecting against cloud threats<br />- Detecting threats across cloud apps<br />- Detecting malware<br />- OAuth app permissions<br />- Configuring alerts in policies |
+| **Conditional Access App Control**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4GoIC)<br />*Captions available* | - Conditional Access App Control<br />- Azure Active Directory Conditional Access integration<br />- Protecting your environment |
+| **Extending real-time monitoring & controls**<br />[Watch now](https://www.youtube.com/watch?v=hGqL89V6zAI) | - Session control & reverse proxy infrastructure<br />- Featured apps and out-of-the-box controls<br />- Onboarding any apps (new, custom, and on-premises apps)<br />- Extending controls for any app |
+| **App discovery and log collector configuration**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4GtTy)<br />*Captions available* | - How discovery works<br />- The Shadow IT discovery lifecycle<br />- Extending integration with secure web gateways<br />- Discovery using log collectors |
+| **Connecting third-party apps**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4GriX)<br />*Captions available* | Connecting third-party apps using:<br />- APIs<br />- OAuth<br />- Conditional Access App Control<br />- Azure Active Directory App Proxy |
+| **Automation and integration with Microsoft Power Automate**<br />[Watch now](https://www.microsoft.com/videoplayer/embed/RE4GjvM)<br />*Captions available* | Extending Cloud App Security with Microsoft Flow to automate advanced remediation scenarios |
 
 ## Next steps
 

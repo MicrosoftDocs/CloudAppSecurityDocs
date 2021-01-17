@@ -1,7 +1,7 @@
 ---
 title: Integrate Azure Active Directory Identity Protection with Cloud App Security
 description: This article provides information about how to leverage Identity Protection alerts in Cloud App Security for hybrid risk detection.
-ms.date: 06/28/2020
+ms.date: 12/27/2020
 ms.topic: how-to
 ---
 # Azure Active Directory Identity Protection integration
@@ -44,7 +44,9 @@ To disable Cloud App Security integration with Identity Protection:
 1. Clear **Enable Azure AD Identity Protection alert integration** and then click **Save**.
 
 > [!NOTE]
-> When the integration is disabled, existing Identity Protection alerts are kept in accordance with Cloud App Security retention policies.
+>
+> - When the integration is disabled, existing Identity Protection alerts are kept in accordance with Cloud App Security retention policies.
+> - Since Cloud App Security only consumes interactive logins from Azure AD, some alerts may not show related activities. You can investigate such activities in the Azure AD portal.
 
 ## Configure Identity Protection Policies
 
@@ -56,6 +58,9 @@ The following policies are available:
 |---|---|---|---|
 |Leaked Credentials|Shows leaked credentials alerts, user's valid credentials have been leaked|Enabled|Low - Receive all alerts|
 |Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that weren't performed by the user|Enabled|High - Receive only high severity alerts|
+
+> [!NOTE]
+> Cloud App Security does not send email notifications for Identity Protection alerts. However, you can configure email notifications for them in the Identity Protection portal.
 
 ## Next steps
 

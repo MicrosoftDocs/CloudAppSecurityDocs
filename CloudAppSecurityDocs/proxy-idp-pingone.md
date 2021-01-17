@@ -72,7 +72,7 @@ Use the following steps to route your web app sessions from PingOne to Cloud App
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
-1. Click the plus sign, and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
+1. Click the plus sign (**+**), and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then click **Next**.
 
     > [!NOTE]

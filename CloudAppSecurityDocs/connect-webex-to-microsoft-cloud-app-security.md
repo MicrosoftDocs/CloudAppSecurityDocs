@@ -1,7 +1,7 @@
 ---
 title: Connect Webex Teams to Cloud App Security
 description: This article provides information about how to connect your Webex Teams app to Cloud App Security using the API connector  for visibility and control over use.
-ms.date: 04/16/2019
+ms.date: 12/27/2020
 ms.topic: how-to
 ---
 # Connect Cisco Webex Teams to Microsoft Cloud App Security
@@ -13,7 +13,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ## Prerequisites
 
 - We suggest that you create a dedicated service account for the connection. This enables you to see that governance actions performed in Webex as being performed from this account, such as delete messages sent in Webex. Otherwise, the name of the admin who connected Cloud App Security to Webex will appear as the user who performed the actions.
-- You must have Full administrator **and** Compliance administrator permissions in Webex.
+- You must have Full Administrator **and** Compliance Officer roles in Webex (under **Roles and Security** > **Administrator Roles**).
+
+    ![Prerequisite Webex roles](media/connect-webex-roles.png)
 
 ## How to connect Webex to Cloud App Security
 
@@ -21,7 +23,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. In the **App connectors** page, click the plus button followed by **Cisco Webex**.
 
-    ![connect Webex](media/cisco-webex.png "connect Webex")
+    ![connect Webex](media/cisco-webex.png)
 
 1. In the pop-up, enter the instance name of this connector.
 

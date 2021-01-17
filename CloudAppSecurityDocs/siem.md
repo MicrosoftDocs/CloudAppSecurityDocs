@@ -1,10 +1,10 @@
 ---
 title: Generic SIEM integration with Cloud App Security
 description: This article provides information integrating your generic SIEM with Cloud App Security.
-ms.date: 11/08/2020
+ms.date: 01/17/2021
 ms.topic: how-to
 ---
-# Generic SIEM integration (preview)
+# Generic SIEM integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -185,9 +185,6 @@ To edit the SIEM agent, click on the three dots at the end of the row for the SI
 To delete the SIEM agent, click on the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
 
 ![SIEM - delete](media/siem-delete.png)
-
-> [!NOTE]
-> This feature is in public preview.
 
 ## Next steps
 

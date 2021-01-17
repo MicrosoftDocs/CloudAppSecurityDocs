@@ -1,5 +1,5 @@
 ---
-title: Discover and manager Shadow IT
+title: Discover and manage Shadow IT
 description: This tutorial describes the process to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
 ms.date: 06/29/2020
 ms.topic: tutorial
@@ -30,7 +30,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 1. **Discover Shadow IT**: Identify your organization's security posture by running Cloud Discovery in your organization to see what's actually happening in your network. For more information, see [Set up cloud discovery](set-up-cloud-discovery.md). This can be done using any of the following methods:
 
-    * Get up and running quickly with Cloud Discovery by integrating with [Microsoft Defender ATP](mde-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+    * Get up and running quickly with Cloud Discovery by integrating with [Microsoft Defender for Endpoint](mde-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 
     * For coverage on all devices connected to your network, it's important to deploy the [Cloud App Security log collector](discovery-docker.md) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 
@@ -77,7 +77,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 Now it's time to create policies so you can be automatically alerted when something happens that you're concerned about. For example, you might want to create an **App discovery policy** that lets you know when there is a spike in downloads or traffic from an app you're concerned about. To achieve this, you should enable **Anomalous behavior in discovered users policy**, **Cloud storage app compliance check**, and **New risky app**. You should also set the policy to notify you by email or text message. For more information, see [policy template reference](policy-template-reference.md),  more about [Cloud Discovery policies](cloud-discovery-policies.md) and Configure [App discovery policies](cloud-discovery-policies.md).
 
-Look at the alerts page and use the **Policy type** filter to look at app discovery alerts. For apps that were matched by your app discovery policies, it is recommended that you do an advanced investigation to learn more about the business justification for using the app, for example, by contacting the users of the app. Then, repeat the steps in Phase 2 to evaluate the risk of the app. Then determine next steps for the application, whether you approve use of it in the future or want to block it the next time a user accesses it, in which case you should tag it as unsanctioned so it can be blocked using your firewall, proxy, or secure web gateway. For more information, see [Integrate with Microsoft Defender ATP](mde-integration.md#block-access-to-unsanctioned-cloud-apps), [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), and [Export a block script to govern discovered apps](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
+Look at the alerts page and use the **Policy type** filter to look at app discovery alerts. For apps that were matched by your app discovery policies, it is recommended that you do an advanced investigation to learn more about the business justification for using the app, for example, by contacting the users of the app. Then, repeat the steps in Phase 2 to evaluate the risk of the app. Then determine next steps for the application, whether you approve use of it in the future or want to block it the next time a user accesses it, in which case you should tag it as unsanctioned so it can be blocked using your firewall, proxy, or secure web gateway. For more information, see [Integrate with Microsoft Defender for Endpoint](mde-integration.md#block-access-to-unsanctioned-cloud-apps), [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), and [Export a block script to govern discovered apps](governance-discovery.md#export-a-block-script-to-govern-discovered-apps).
 
 ### Phase 4: Advanced Shadow IT discovery reporting
 

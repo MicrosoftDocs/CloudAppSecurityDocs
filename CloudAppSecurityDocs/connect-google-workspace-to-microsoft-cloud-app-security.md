@@ -110,7 +110,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     **For a Google Workspace organization that does not already have a connected GCP instance**
 
-    - In the **Connected apps** page, click the plus sign and select **Google Workspace**.
+    - In the **Connected apps** page, click the plus sign (**+**) and select **Google Workspace**.
 
 1. In the pop-up, fill in the following information:
 

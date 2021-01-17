@@ -1,7 +1,7 @@
 ---
 title: Create policies on Cloud Discovery apps 
 description: This article provides information about working with Cloud Discovery policies.
-ms.date: 06/29/2020
+ms.date: 01/05/2021
 ms.topic: how-to
 ---
 # Create Cloud Discovery policies
@@ -14,19 +14,19 @@ You can create app discovery policies to alert you when new apps are detected. C
 
 Discovery policies enable you to set alerts that notify you when new apps are detected within your organization.
 
-1. In the console, click on **Control** followed by **Policies**.
+1. Go to **Control** > **Policies** > **Shadow IT**.
 
-2. Click **Create policy** and select **App discovery policy**.
+1. Click **Create policy** and select **App discovery policy**.
 
-    ![app discovery policy menu](media/app-discovery-policy-menu.png "app discovery policy menu")
+    ![Create a Cloud Discovery policy](media/create-policy-from-shadow-it-tab.png)
 
-3. Give your policy a name and description. If you want, you can base it on a template. For more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+1. Give your policy a name and description. If you want, you can base it on a template. For more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
-4. Set the **Severity** of the policy.
+1. Set the **Severity** of the policy.
 
-5. To set which discovered apps trigger this policy, add filters.
+1. To set which discovered apps trigger this policy, add filters.
 
-6. You can set a threshold for how sensitive the policy should be. Enable **Trigger a policy match if all the following occur on the same day**. You can set criteria that the app must exceed daily to match the policy. Select one of the following criteria:
+1. You can set a threshold for how sensitive the policy should be. Enable **Trigger a policy match if all the following occur on the same day**. You can set criteria that the app must exceed daily to match the policy. Select one of the following criteria:
     - Daily traffic
     - Downloaded data
     - Number of IP addresses
@@ -34,13 +34,13 @@ Discovery policies enable you to set alerts that notify you when new apps are de
     - Number of users
     - Uploaded data
 
-7. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
+1. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
     - Clicking **Save alert settings as the default for your organization** enables future policies to use the setting.
     - If you have a default setting, you can select **Use your organization's default settings**.
 
-8. Select **Governance** actions to apply when an app matches this policy. It can tag policies as **Sanctioned**, **Unsanctioned**, or a custom tag.
+1. Select **Governance** actions to apply when an app matches this policy. It can tag policies as **Sanctioned**, **Unsanctioned**, or a custom tag.
 
-9. Click **Create**.
+1. Click **Create**.
 
 > [!NOTE]
 >
@@ -61,27 +61,32 @@ Cloud App Security searches all the logs in your Cloud Discovery for anomalies. 
 
 1. In the console, click on **Control** followed by **Policies**.
 
-2. Click **Create policy** and select **Cloud Discovery anomaly detection policy**.
+1. Click **Create policy** and select **Cloud Discovery anomaly detection policy**.
 
     ![cloud discovery anomaly detection policy menu](media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")
 
-3. Give your policy a name and description. If you want, you can base it on a template, For more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
+1. Give your policy a name and description. If you want, you can base it on a template, For more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
-4. To set which discovered apps trigger this policy, click **Add filters**.
+1. To set which discovered apps trigger this policy, click **Add filters**.
 
     The filters are chosen from drop-down lists. To add filters, click the plus button. To remove a filter, you click the 'X'.
 
-5. Under **Apply to** choose whether this policy applies **All continuous reports** or **Specific continuous reports**. Select whether the policy applies to **Users**, **IP addresses**, or both.
+1. Under **Apply to** choose whether this policy applies **All continuous reports** or **Specific continuous reports**. Select whether the policy applies to **Users**, **IP addresses**, or both.
 
-6. Select the dates during which the anomalous activity occurred to trigger the alert under **Raise alerts only for suspicious activities occurring after date.**
+1. Select the dates during which the anomalous activity occurred to trigger the alert under **Raise alerts only for suspicious activities occurring after date.**
 
-7. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
+1. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
     - Clicking **Save alert settings as the default for your organization** enables future policies to use the setting.
     - If you have a default setting, you can select **Use your organization's default settings**.
 
-8. Click **Create**.
+1. Click **Create**.
 
-![new discovery anomaly policy](media/new-discovery-anomaly-policy.png "new discovery anomaly policy")
+    ![new discovery anomaly policy](media/new-discovery-anomaly-policy.png "new discovery anomaly policy")
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [App discovery and log collector configuration webinar](webinars.md#on-demand-webinars)
 
 ## Next steps
 

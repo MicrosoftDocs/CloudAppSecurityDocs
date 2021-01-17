@@ -1,7 +1,7 @@
 ---
 title: Create Cloud App Security access policies to allow and block access
 description: This article describes the procedure for setting up a Cloud App Security Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
-ms.date: 03/31/2020
+ms.date: 01/05/2021
 ms.topic: how-to
 ---
 # Access policies
@@ -25,12 +25,15 @@ Microsoft Cloud App Security access policies enable real-time monitoring and con
 
 To create a new access policy, follow this procedure:
 
-1. In the portal, select **Control** followed by **Policies**.
-2. In the **Policies** page, click **Create policy** and select **Access policy**.
+1. Go to **Control** > **Policies** > **Conditional access**.
 
-3. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
+1. Click **Create policy** and select **Access policy**.
 
-4. In the **Activities matching all of the following** section, Under **Activity source**, select additional activity filters to apply to the policy. Filters include the following options:
+    ![Create a Conditional access policy](media/create-policy-from-conditional-access-tab.png)
+
+1. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
+
+1. In the **Activities matching all of the following** section, Under **Activity source**, select additional activity filters to apply to the policy. Filters include the following options:
 
     - **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -40,13 +43,18 @@ To create a new access policy, follow this procedure:
 
     - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or does not equal. The values should be tested against your mobile and desktop apps for each cloud app.
 
-5. Under **Actions**, select one of the following options:
+1. Under **Actions**, select one of the following options:
 
     - **Test**: Set this action to explicitly allow access according to the policy filters you set.
 
     - **Block**: Set this action to explicitly block access according to the policy filters you set.
 
-6. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
+1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Conditional Access App Control webinar](webinars.md#on-demand-webinars)
 
 ## Next steps
 

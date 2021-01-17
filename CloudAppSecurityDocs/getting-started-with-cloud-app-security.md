@@ -44,7 +44,7 @@ To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.
 Required task: Connect apps
 
 1. From the settings cog, select   **App connectors**.
-1. Click the plus sign to add an app and select an app.
+1. Click the plus sign (**+**) to add an app and select an app.
 1. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
@@ -70,7 +70,7 @@ You can use policies to help you monitor trends, see security threats, and gener
 
 Required task: Enable Cloud App Security to view your cloud app use
 
-1. [Integrate with Microsoft Defender ATP](mde-integration.md) to automatically enable Cloud App Security to monitor your Windows 10 devices inside and outside your corporation.
+1. [Integrate with Microsoft Defender for Endpoint](mde-integration.md) to automatically enable Cloud App Security to monitor your Windows 10 devices inside and outside your corporation.
 1. If you use [Zscaler, integrate](zscaler-integration.md) it with Cloud App Security.
 1. To achieve full coverage, create a continuous Cloud Discovery report
 
@@ -126,7 +126,7 @@ Recommended task: Configure important settings
 
 1. From the settings cog, select **Cloud Discovery settings**.
 1. From the settings cog, select **IP address ranges**.
-1. Click the plus sign to add an IP address range.
+1. Click the plus sign (**+**) to add an IP address range.
 1. Enter the IP range **details**, **location**, **tags**, and **category**.
 1. Choose **Create**.
 
