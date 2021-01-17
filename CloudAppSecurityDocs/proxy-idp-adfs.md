@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud App Security Conditional Access App Control for any web app using AD FS
 description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for any web app using AD FS as the identity provider.
-ms.date: 11/16/2020
+ms.date: 01/17/2021
 ms.topic: how-to
 ---
 # Onboard and deploy Conditional Access App Control for any web app using Active Directory Federation Services (AD FS) as the identity provider (IdP)
@@ -16,7 +16,8 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
-  - A pre-configured AD FS environment.
+  - A pre-configured AD FS environment
+  - Microsoft Cloud App Security
 
 - An existing AD FS single sign-on configuration for the app using the SAML 2.0 authentication protocol
 
@@ -126,7 +127,7 @@ Use the following steps to route your web app sessions from AD FS to Cloud App S
     - Cloud App Security attributes and values
 
     > [!NOTE]
-    > If you see an option to upload the **Cloud App Security SAML certificate for the identity provider**, click on the click to download the certificate file. You'll need this later.
+    > If you see an option to upload the **Cloud App Security SAML certificate for the identity provider**, click on the link to download the certificate file. You'll need this later.
 
     ![In Cloud App Security, note SSO URL and attributes](media/proxy-idp-adfs/idp-adfs-cas-get-sf-app-external-config.png)
 
