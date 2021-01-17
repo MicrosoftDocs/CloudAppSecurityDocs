@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud Discovery 
 description: This article describes the setup procedure for getting Cloud Discovery working.
-ms.date: 08/09/2020
+ms.date: 01/17/2021
 ms.topic: how-to
 ---
 # Set up Cloud Discovery
@@ -107,8 +107,8 @@ Data attributes (according to vendor documentation):
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | ForcePoint Web Security Cloud\* |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-| Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
-| Fortinet FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
+| Fortinet Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
+| FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 | iboss |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | Juniper SRX | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Juniper SSG | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
