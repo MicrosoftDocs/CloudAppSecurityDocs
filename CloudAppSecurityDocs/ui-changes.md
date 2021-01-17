@@ -55,4 +55,4 @@ We've updated the following filters and controls for tables and forms across all
 
 #### New design
 
-![Current UI](media/ui-changes-new.png)
+![New UI](media/ui-changes-new.png)
