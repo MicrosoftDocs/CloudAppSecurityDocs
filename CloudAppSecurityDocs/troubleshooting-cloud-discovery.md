@@ -10,9 +10,9 @@ ms.topic: conceptual
 
 This article provides a list of Cloud Discovery errors and resolution recommendations for each.
 
-## Microsoft Defender ATP integration
+## Microsoft Defender for Endpoint integration
 
-If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration.
+If you integrated Microsoft Defender for Endpoint with Cloud App Security, and you don't see the results of the integration.
 
 |Issue|Resolution|
 |----|----|
