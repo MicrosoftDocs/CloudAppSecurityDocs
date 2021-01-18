@@ -49,6 +49,7 @@ Integrating with your SIEM is accomplished in three steps:
 * Disk space: 20 GB
 * RAM: 2 GB
 * The server must be running Java 8. Earlier versions aren't supported.
+* Transport Layer Security (TLS) 1.2+. Earlier versions aren't supported.
 * Set your firewall as described in [Network requirements](network-requirements.md)
 
 ## Integrating with your SIEM
