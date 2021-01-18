@@ -73,14 +73,14 @@ The response object defines the following properties. Properties marked as *opti
 | created | date | The creation date of the continuous report |
 | default (*optional*) | boolean | **true** if the continuous report is the default continuous report |
 | displayName | string | The display name of the continuous report |
-| enableActivityGeneration (*optional*) | boolean | **true** if the continuous report is enabled for activity generation |
+| enableActivityGeneration (*optional*) | boolean | **true** if enabled the report generates activities for the activity log |
 | enableTrafficLog (*optional*) | boolean | **true** if the continuous report is enabled for traffic log |
 | isManual (*optional*) | boolean | **true** if the continuous report is manual configured |
 | globalAggregated | boolean | **true** if the continuous report is global aggregated |
 | lastDataReceived | date | The date that data was last received |
 | lastModified | date | The  date the continuous report was last modified |
 | logFilesHistoryCount (*optional*) | int | Count of log files history |
-| logType | int | Thw log type of the continuous report. For possible values, see [Supported log types](#supported-log-types) |
+| logType | int | The log type of the continuous report. For possible values, see [Supported log types](#supported-log-types) |
 | protocol (*optional*) | string | The protocol used by the continuous report |
 | receiverType | string | The receiver type of the continuous report. Possible values include: syslog and ftp |
 | snapshotData | boolean | **true** if the data is from snapshot report |
