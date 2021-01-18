@@ -33,11 +33,6 @@ Returns a list of app tags in JSON format.
 ```json
 [
   {
-    "name": "Sanctioned",
-    "appIds": [1,2,3],
-    "builtIn": true
-  },
-  {
     "name": "test",
     "target": 6,
     "id":"test",
