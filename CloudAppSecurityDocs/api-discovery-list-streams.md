@@ -1,14 +1,14 @@
 ---
-title: List streams - Cloud Discovery API
-description: This article describes the list streams request in Cloud App Security's Cloud Discovery API.
-ms.date: 01/07/2021
+title: List continuous reports - Cloud Discovery API
+description: This article describes the list continuous reports request in Cloud App Security's Cloud Discovery API.
+ms.date: 01/18/2021
 ms.topic: reference
 ---
-# List streams - Cloud Discovery API
+# List continuous reports - Cloud Discovery API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Run the GET request to fetch a list of streams.
+Run the GET request to fetch a list of continuous reports.
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenan
 
 ### Response
 
-Returns a list of streams in JSON format.
+Returns a list of continuous reports in JSON format.
 
 ```json
 {
@@ -62,29 +62,29 @@ Returns a list of streams in JSON format.
 }
 ```
 
-The response object defines the following properties. Properties marked as *optional* may not appear for some streams.
+The response object defines the following properties. Properties marked as *optional* may not appear for some continuous reports.
 
 | Field name | Field type | Field description |
 |--|--|--|
 | anonymizeMachines (*optional*) | boolean | **true** if machine information is anonymized |
 | anonymizeUsers (*optional*) | boolean | **true** if user information is anonymized |
-| builtInStreamType | int | The built-in type of the stream. Possible values are:<br />**0**: PROXY<br />**1**: WINDOWS_DEFENDER |
-| comment | string | The comment/description of the stream |
-| created | date | The creation date of the stream |
-| default (*optional*) | boolean | **true** if the stream is the default stream |
-| displayName | string | The display name of the stream |
-| enableActivityGeneration (*optional*) | boolean | **true** if the stream is enabled for activity generation |
-| enableTrafficLog (*optional*) | boolean | **true** if the stream is enabled for traffic log |
-| isManual (*optional*) | boolean | **true** if the stream is manual configured |
-| globalAggregated | boolean | **true** if the stream is global aggregated |
+| builtInStreamType | int | The built-in type of the continuous report. Possible values are:<br />**0**: PROXY<br />**1**: WINDOWS_DEFENDER |
+| comment | string | The comment/description of the continuous report |
+| created | date | The creation date of the continuous report |
+| default (*optional*) | boolean | **true** if the continuous report is the default continuous report |
+| displayName | string | The display name of the continuous report |
+| enableActivityGeneration (*optional*) | boolean | **true** if the continuous report is enabled for activity generation |
+| enableTrafficLog (*optional*) | boolean | **true** if the continuous report is enabled for traffic log |
+| isManual (*optional*) | boolean | **true** if the continuous report is manual configured |
+| globalAggregated | boolean | **true** if the continuous report is global aggregated |
 | lastDataReceived | date | The date that data was last received |
-| lastModified | date | The  date the stream was last modified |
+| lastModified | date | The  date the continuous report was last modified |
 | logFilesHistoryCount (*optional*) | int | Count of log files history |
-| logType | int | Thw log type of the stream. For possible values, see [Supported log types](#supported-log-types) |
-| protocol (*optional*) | string | The protocol used by the stream |
-| receiverType | string | The receiver type of the stream. Possible values include: syslog and ftp |
+| logType | int | Thw log type of the continuous report. For possible values, see [Supported log types](#supported-log-types) |
+| protocol (*optional*) | string | The protocol used by the continuous report |
+| receiverType | string | The receiver type of the continuous report. Possible values include: syslog and ftp |
 | snapshotData | boolean | **true** if the data is from snapshot report |
-| streamType | int | The type of the stream. Possible values are:<br />**0**: INVALID<br />**1**: INPUT<br />**2**: LOGICAL<br />**3**: VIEW<br />**4**: ENRICHMENT<br />**5**: PREVIEW |
+| streamType | int | The type of the continuous report. Possible values are:<br />**0**: INVALID<br />**1**: INPUT<br />**2**: LOGICAL<br />**3**: VIEW<br />**4**: ENRICHMENT<br />**5**: PREVIEW |
 | supportedEntityTypes | list | An array of entity types. Possible values are:<br />**0**: INVALID<br />**1**: USER_NAME<br />**2**: IP_ADDRESS<br />**3**: MACHINE_NAME<br />**4**: RESOURCE |
 | supportedTrafficTypes | list | An array of traffic types. Possible values are:<br />**0**: INVALID<br />**1**: TOTAL_BYTES<br />**2**: DOWNLOADED_BYTES<br />**3**: UPLOADED_BYTES |
 | timeFrames | list | An array of time frame objects including days (30, 90) and the total of several different events |

@@ -344,18 +344,18 @@
         href: api-discovery-perform.md
       - name: Finalize file upload
         href: api-discovery-finalize.md
+      - name: List continuous reports
+        href: api-discovery-list-streams.md
+      - name: List continuous report categories
+        href: api-discovery-list-categories.md
+      # - name: List app tags
+      #   href: api-discovery-list-app-tags.md
+      # - name: Create app tag
+      #   href: api-discovery-create-app-tag.md
+      # - name: Delete app tag
+      #   href: api-discovery-delete-app-tag.md
       - name: Generate block script
         href: api-discovery-script.md
-      - name: List streams
-        href: api-discovery-list-streams.md
-      - name: List stream categories
-        href: api-discovery-list-categories.md
-      - name: List app tags
-        href: api-discovery-list-app-tags.md
-      - name: Create app tag
-        href: api-discovery-create-app-tag.md
-      - name: Delete app tag
-        href: api-discovery-delete-app-tag.md
     - name: Data Enrichment
       items:
       - name: Overview

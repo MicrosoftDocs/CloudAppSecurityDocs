@@ -1,14 +1,14 @@
 ---
-title: List stream categories - Cloud Discovery API
-description: This article describes the list stream categories request in Cloud App Security's Cloud Discovery API.
-ms.date: 01/07/2021
+title: List continuous report categories - Cloud Discovery API
+description: This article describes the list continuous report categories request in Cloud App Security's Cloud Discovery API.
+ms.date: 01/18/2021
 ms.topic: reference
 ---
 # List stream categories - Cloud Discovery API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Run the POST request to fetch a list of categories associated with a stream.
+Run the POST request to fetch a list of categories associated with a continuous report.
 
 ## HTTP request
 
@@ -25,8 +25,8 @@ POST api/v1/discovery/discovered_apps/categories/
 | sortField (*optional*) | Fields used to sort entities. Possible values are:<br />- **date**: The date when then the category happened<br />- **created**: The date when then the category was created |
 | skip (*optional*) | Skips the specified number of records |
 | limit (*optional*) | Maximum number of records returned by the request |
-| streamId | Filter records by stream ID |
-| timeFrame (*optional*) | Filter records by the number of days since the stream was last used |
+| streamId | Filter records by continuous report ID |
+| timeFrame (*optional*) | Filter records by the number of days since the continuous report was last used |
 
 ## Example
 
@@ -41,7 +41,7 @@ curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tena
   },
   "skip": 5,
   "limit": 10,
-  "streamId": 
+  "streamId": <continuous_report_id>
 }'
 ```
 
