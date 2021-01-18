@@ -4,7 +4,7 @@ description: This article describes the list continuous report categories reques
 ms.date: 01/18/2021
 ms.topic: reference
 ---
-# List stream categories - Cloud Discovery API
+# List continuous report categories - Cloud Discovery API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
