@@ -68,8 +68,8 @@ The response object defines the following properties. Properties marked as *opti
 |--|--|--|
 | anonymizeMachines (*optional*) | boolean | **true** if machine information is anonymized |
 | anonymizeUsers (*optional*) | boolean | **true** if user information is anonymized |
-| builtInStreamType | int | The built-in type of the continuous report. Possible values are:<br />**0**: PROXY<br />**1**: WINDOWS_DEFENDER |
-| comment | string | The comment/description of the continuous report |
+| builtInStreamType (*optional*) | int | The built-in type of the continuous report. Possible values are:<br />**0**: PROXY<br />**1**: WINDOWS_DEFENDER |
+| comment (*optional*) | string | The comment/description of the continuous report |
 | created | date | The creation date of the continuous report |
 | default (*optional*) | boolean | **true** if the continuous report is the default continuous report |
 | displayName | string | The display name of the continuous report |
@@ -81,13 +81,13 @@ The response object defines the following properties. Properties marked as *opti
 | lastModified | date | The  date the continuous report was last modified |
 | logFilesHistoryCount (*optional*) | int | Count of log files history |
 | logType | int | The log type of the continuous report. For possible values, see [Supported log types](#supported-log-types) |
-| protocol (*optional*) | string | The protocol used by the continuous report |
+| protocol (*optional*) | string | The protocol (TCP, UDP) used by the continuous report |
 | receiverType | string | The receiver type of the continuous report. Possible values include: syslog and ftp |
-| snapshotData | boolean | **true** if the data is from snapshot report |
+| snapshotData (*optional*) | boolean | **true** if the data is from snapshot report |
 | streamType | int | The type of the continuous report. Possible values are:<br />**0**: INVALID<br />**1**: INPUT<br />**2**: LOGICAL<br />**3**: VIEW<br />**4**: ENRICHMENT<br />**5**: PREVIEW |
-| supportedEntityTypes | list | An array of entity types. Possible values are:<br />**0**: INVALID<br />**1**: USER_NAME<br />**2**: IP_ADDRESS<br />**3**: MACHINE_NAME<br />**4**: RESOURCE |
+| supportedEntityTypes | list | An array of discovery entity types. Possible values are:<br />**0**: INVALID<br />**1**: USER_NAME<br />**2**: IP_ADDRESS<br />**3**: MACHINE_NAME<br />**4**: RESOURCE |
 | supportedTrafficTypes | list | An array of traffic types. Possible values are:<br />**0**: INVALID<br />**1**: TOTAL_BYTES<br />**2**: DOWNLOADED_BYTES<br />**3**: UPLOADED_BYTES |
-| timeFrames | list | An array of time frame objects including days (30, 90) and the total of several different events |
+| timeFrames/timeframes2 | list | An array of time frame objects for the last 7, 30, or 60 days with totals such as: Machine names count or IP addresses count |
 | userTags | list | An array of user tags |
 
 ## Supported log types

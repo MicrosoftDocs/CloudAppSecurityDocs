@@ -22,7 +22,7 @@ POST api/v1/discovery/discovered_apps/categories/
 | --- | --- |
 | filters (*optional*) | Filter objects with all the search filters for the request by category id |
 | sortDirection (*optional*) | The sorting direction. Possible values are: `asc` and `desc` |
-| sortField (*optional*) | Fields used to sort entities. Possible values are:<br />- **date**: The date when then the category happened<br />- **created**: The date when then the category was created |
+| sortField (*optional*) | Fields used to sort entities. Possible values are:<br />- **score**: The total number of apps in this category |
 | skip (*optional*) | Skips the specified number of records |
 | limit (*optional*) | Maximum number of records returned by the request |
 | streamId | Filter records by continuous report ID |
