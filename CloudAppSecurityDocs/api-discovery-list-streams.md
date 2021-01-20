@@ -71,10 +71,9 @@ The response object defines the following properties. Properties marked as *opti
 | builtInStreamType (*optional*) | int | The built-in type of the continuous report. Possible values are:<br />**0**: PROXY<br />**1**: WINDOWS_DEFENDER |
 | comment (*optional*) | string | The comment/description of the continuous report |
 | created | date | The creation date of the continuous report |
-| default (*optional*) | boolean | **true** if the continuous report is the default continuous report |
 | displayName | string | The display name of the continuous report |
-| enableActivityGeneration (*optional*) | boolean | **true** if enabled the report generates activities for the activity log |
-| enableTrafficLog (*optional*) | boolean | **true** if the continuous report is enabled for traffic log |
+| enableActivityGeneration (*optional*) | boolean | **true** if the continuous report is viewable in the (**Investigate** >) **Activity log** page after new data is processed |
+| enableTrafficLog (*optional*) | boolean | **true** if the continuous report is viewable in the (**Investigate** > **Activity log** > ) Investigate in **Web traffic log** page after new data is processed |
 | isManual (*optional*) | boolean | **true** if the continuous report is manual configured |
 | globalAggregated | boolean | **true** if the continuous report is global aggregated |
 | lastDataReceived | date | The date that data was last received |
@@ -84,7 +83,7 @@ The response object defines the following properties. Properties marked as *opti
 | protocol (*optional*) | string | The protocol (TCP, UDP) used by the continuous report |
 | receiverType | string | The receiver type of the continuous report. Possible values include: syslog and ftp |
 | snapshotData (*optional*) | boolean | **true** if the data is from snapshot report |
-| streamType | int | The type of the continuous report. Possible values are:<br />**0**: INVALID<br />**1**: INPUT<br />**2**: LOGICAL<br />**3**: VIEW<br />**4**: ENRICHMENT<br />**5**: PREVIEW |
+| streamType | int | The type of the continuous report. Possible values are:<br />**1**: INPUT (Log collector or Data source)<br />**3**: VIEW (Continuous report)<br />**5**: PREVIEW (Snapshot report) |
 | supportedEntityTypes | list | An array of discovery entity types. Possible values are:<br />**0**: INVALID<br />**1**: USER_NAME<br />**2**: IP_ADDRESS<br />**3**: MACHINE_NAME<br />**4**: RESOURCE |
 | supportedTrafficTypes | list | An array of traffic types. Possible values are:<br />**0**: INVALID<br />**1**: TOTAL_BYTES<br />**2**: DOWNLOADED_BYTES<br />**3**: UPLOADED_BYTES |
 | timeFrames/timeframes2 | list | An array of time frame objects for the last 7, 30, or 60 days with totals such as: Machine names count or IP addresses count |
