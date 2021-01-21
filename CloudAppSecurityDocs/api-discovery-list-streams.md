@@ -32,33 +32,30 @@ Returns a list of continuous reports in JSON format.
 
 ```json
 {
-  {
-    "anonymizeUsers": false,
-    "displayName": "dependency_udp",
-    "logType": 223,
-    "receiverType": "syslog",
-    "protocol": "udp",
-    "streamType": 1,
-    "isManual": false,
-    "created": "2020-12-16T17:23:40.687Z",
-    "lastModified": "2021-01-05T13:41:36.104Z",
-    "logFilesHistoryCount": 2,
-    "supportedEntityTypes": [],
-    "supportedTrafficTypes": [1],
-    "lastAlertProcessingTime": 1609853011480,
-    "lastDataReceived": "2020-12-18T06:33:32.908Z",
-    "logFilesFailsCount": 2,
-    "currentServicesCollectionName": "discovery_services",
-    "globalAggregated": true,
-    "readTimeFramesFromSecond": true,
-    "timeFrames2": {},
-    "validTimeFrames2": [],
-    "timeFrames": {},
-    "validTimeFrames": [],
-    "timeWithoutLogs": 0,
-    "sourceStreams": []
-    }
-  ]
+  "anonymizeUsers": false,
+  "displayName": "dependency_udp",
+  "logType": 223,
+  "receiverType": "syslog",
+  "protocol": "udp",
+  "streamType": 1,
+  "isManual": false,
+  "created": "2020-12-16T17:23:40.687Z",
+  "lastModified": "2021-01-05T13:41:36.104Z",
+  "logFilesHistoryCount": 2,
+  "supportedEntityTypes": [],
+  "supportedTrafficTypes": [1],
+  "lastAlertProcessingTime": 1609853011480,
+  "lastDataReceived": "2020-12-18T06:33:32.908Z",
+  "logFilesFailsCount": 2,
+  "currentServicesCollectionName": "discovery_services",
+  "globalAggregated": true,
+  "readTimeFramesFromSecond": true,
+  "timeFrames2": {},
+  "validTimeFrames2": [],
+  "timeFrames": {},
+  "validTimeFrames": [],
+  "timeWithoutLogs": 0,
+  "sourceStreams": []
 }
 ```
 
@@ -75,7 +72,7 @@ The response object defines the following properties. Properties marked as *opti
 | enableActivityGeneration (*optional*) | boolean | **true** if the continuous report is viewable in the (**Investigate** >) **Activity log** page after new data is processed |
 | enableTrafficLog (*optional*) | boolean | **true** if the continuous report is viewable in the (**Investigate** > **Activity log** > ) Investigate in **Web traffic log** page after new data is processed |
 | isManual (*optional*) | boolean | **true** if the continuous report is manual configured |
-| globalAggregated | boolean | **true** if the continuous report is global aggregated |
+| globalAggregated | boolean | **true** if the continuous report data is aggregated into the global report |
 | lastDataReceived | date | The date that data was last received |
 | lastModified | date | The  date the continuous report was last modified |
 | logFilesHistoryCount (*optional*) | int | Count of log files history |
@@ -83,7 +80,7 @@ The response object defines the following properties. Properties marked as *opti
 | protocol (*optional*) | string | The protocol (TCP, UDP) used by the continuous report |
 | receiverType | string | The receiver type of the continuous report. Possible values include: syslog and ftp |
 | snapshotData (*optional*) | boolean | **true** if the data is from snapshot report |
-| streamType | int | The type of the continuous report. Possible values are:<br />**1**: INPUT (Log collector or Data source)<br />**3**: VIEW (Continuous report)<br />**5**: PREVIEW (Snapshot report) |
+| streamType | int | The type of the continuous report. Possible values are:<br />**1**: INPUT (continuous report automatically created by log collector or data source)<br />**3**: VIEW (continuous report manually created in the portal)<br />**5**: PREVIEW (one-time continuous report created by snapshot report) |
 | supportedEntityTypes | list | An array of discovery entity types. Possible values are:<br />**0**: INVALID<br />**1**: USER_NAME<br />**2**: IP_ADDRESS<br />**3**: MACHINE_NAME<br />**4**: RESOURCE |
 | supportedTrafficTypes | list | An array of traffic types. Possible values are:<br />**0**: INVALID<br />**1**: TOTAL_BYTES<br />**2**: DOWNLOADED_BYTES<br />**3**: UPLOADED_BYTES |
 | timeFrames/timeframes2 | list | An array of time frame objects for the last 7, 30, or 60 days with totals such as: Machine names count or IP addresses count |
