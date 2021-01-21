@@ -70,7 +70,7 @@ The response object defines the following properties. Properties marked as *opti
 | created | date | The creation date of the continuous report |
 | displayName | string | The display name of the continuous report |
 | enableActivityGeneration (*optional*) | boolean | **true** if the continuous report is viewable in the (**Investigate** >) **Activity log** page after new data is processed |
-| enableTrafficLog (*optional*) | boolean | **true** if the continuous report is viewable in the (**Investigate** > **Activity log** > ) Investigate in **Web traffic log** page after new data is processed |
+| enableTrafficLog (*optional*) | boolean | **true** if the continuous report is viewable in the (**Investigate** > **Activity log** >) Investigate in **Web traffic log** page after new data is processed |
 | isManual (*optional*) | boolean | **true** if the continuous report is manual configured |
 | globalAggregated | boolean | **true** if the continuous report data is aggregated into the global report |
 | lastDataReceived | date | The date that data was last received |
