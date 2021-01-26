@@ -188,7 +188,9 @@
     - name: Onboard and deploy Conditional Access App Control for any apps
       href: proxy-deployment-any-app.md
     - name: Configuring your PingOne IdP
-      href: proxy-idp-examples.md
+      href: proxy-idp-pingone.md
+    - name: Configuring your AD FS IdP
+      href: proxy-idp-adfs.md
   - name: Investigation
     href: investigate.md
     items:
