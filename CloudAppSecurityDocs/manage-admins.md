@@ -14,7 +14,7 @@ Microsoft Cloud App Security supports role-based access control. This article pr
 
 By default, the following Office 365 and [Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
 
-- **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions.
+- **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
 - **Compliance administrator**: Has read-only permissions and can manage alerts. Cannot access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
@@ -32,7 +32,7 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
   - Accessing and viewing the App connectors page
   - Accessing and viewing the Governance log
   - Accessing and viewing the Manage snapshot reports page
-  - Accessing and editing the SIEM agent
+  - Accessing and viewing SIEM agents
 
 - **Global reader**: Has full read-only access to all aspects of Cloud App Security. Cannot change any settings or take any actions.
 
