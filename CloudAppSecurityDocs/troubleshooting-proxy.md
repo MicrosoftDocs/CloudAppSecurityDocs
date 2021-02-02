@@ -500,9 +500,9 @@ Apps on our featured apps page marked as **(preview)** may suffer from context l
 As a temporary mitigation, you can workaround context loss issues, as follows:
 
 1. Navigate to a URL where context loss occurs.
-1. Make a note of the suffixed URL domain including the suffix added by Cloud App Security, for example `https://www.yammer.com.us2.cas.ms`.
+1. Make a note of the suffixed URL domain including the suffix added by Cloud App Security, for example `https://www.yammer.com.mcas.ms`.
 1. Copy the path from the original URL, for example if the original particular URL was `https://www.yammer.com/organization/threads/threadnumber`, copy `/organization/threads/threadnumber`.
-1. Append the copied path to the suffixed domain, for example `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber`.
+1. Append the copied path to the suffixed domain, for example `https://www.yammer.com.mcas.ms/organization/threads/threadnumber`.
 1. Navigate to the new suffixed URL.
 
 <a name="app-additional-considerations"></a>
