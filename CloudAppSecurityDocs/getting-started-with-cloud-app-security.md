@@ -43,14 +43,27 @@ To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.
 
 Required task: Connect apps
 
-1. From the settings cog, select   **App connectors**.
+1. From the settings cog, select **App connectors**.
 1. Click the plus sign (**+**) to add an app and select an app.
 1. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
 After you connect an app, you can gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment.
 
-## Step 2. [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+## Step 2. [Protect sensitive information with DLP policies](policies-information-protection.md)
+
+1. Go to **Settings**, and then under **Information Protection**, select **Files**.
+1. Select **Enable file monitoring** and then click **Save**.
+1. If you use Azure Information Protection classification labels, under **Information Protection**, select **Azure Information Protection**.
+1. Select the required settings and then click **Save**.
+1. In [step 3](#step-3), create [File policies](data-protection-policies.md) to meet your organizational requirements.
+
+> [!TIP]
+> You can view files from your connected apps by browsing to **Investigate** > **Files**.
+
+<a name="step-3"></a>
+
+## Step 3. [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 Required task: Create policies
 
@@ -60,13 +73,15 @@ Required task: Create policies
 1. Select a policy template from the list, and then choose (+) **Create policy**.
 1. Customize the policy (select filters, actions, and other settings), and then choose **Create**.
 1. On the **Policies** tab, choose the policy to see the relevant matches (activities, files, alerts).
- Tip: To cover all your cloud environment security scenarios, create a policy for each **risk category**.
+
+> [!TIP]
+> To cover all your cloud environment security scenarios, create a policy for each **risk category**.
 
 ### How can policies help your organization?
 
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
-## Step 3. [Set up Cloud Discovery](set-up-cloud-discovery.md)
+## Step 4. [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 Required task: Enable Cloud App Security to view your cloud app use
 
@@ -88,7 +103,7 @@ Required task: Enable Cloud App Security to view your cloud app use
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
-## Step 4. [Personalize your experience](mail-settings.md)
+## Step 5. [Personalize your experience](mail-settings.md)
 
 Recommended task: Add your organization details
 
@@ -118,7 +133,7 @@ Now the risk scores given to discovered apps are configured precisely according 
 Some features work best when they're customized to your needs.
 Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization's preferences.
 
-## Step 5. [Organize the data according to your needs](ip-tags.md)
+## Step 6. [Organize the data according to your needs](ip-tags.md)
 
 Recommended task: Configure important settings
 
