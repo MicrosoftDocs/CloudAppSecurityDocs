@@ -39,6 +39,11 @@
             "source_path": "CloudAppSecurityDocs/investigate-activities-api.md",
             "redirect_url": "/cloud-app-security/api-activities-investigate-script",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/aatp-integration.md",
+            "redirect_url": "/cloud-app-security/mdi-integration",
+            "redirect_document_id": true
         }
     ]
 }
