@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud App Security
 description: This quickstart outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
-ms.date: 06/07/2020
+ms.date: 02/10/2021
 ms.topic: quickstart
 ---
 
@@ -52,6 +52,8 @@ After you connect an app, you can gain deeper visibility so you can investigate 
 
 ## Step 2. [Protect sensitive information with DLP policies](policies-information-protection.md)
 
+Recommended task: Enable file monitoring and create file policies
+
 1. Go to **Settings**, and then under **Information Protection**, select **Files**.
 1. Select **Enable file monitoring** and then click **Save**.
 1. If you use Azure Information Protection classification labels, under **Information Protection**, select **Azure Information Protection**.
@@ -96,7 +98,7 @@ Required task: Enable Cloud App Security to view your cloud app use
 
 ### To create a snapshot Cloud Discovery report
 
- Go to **Discover** > **Snapshot report** and follow the steps shown.
+Go to **Discover** > **Snapshot report** and follow the steps shown.
 
 ### Why should you configure Cloud Discovery reports?
 
