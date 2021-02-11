@@ -1,7 +1,7 @@
 ---
 title: Manage admin access to the Cloud App Security portal
 description: This article provides instructions for setting access to the Cloud App Security portal for your admins.
-ms.date: 01/11/2021
+ms.date: 02/11/2021
 ms.topic: how-to
 ---
 # Manage admin access
@@ -138,7 +138,7 @@ Cloud App Security enables you to invite external admins (MSSPs) as administrato
 
 By default, MSSPs access their Cloud App Security tenant through the following URL: `https://portal.cloudappsecurity.com`.
 
-MSSPs however, will need to access the MSSP customer Cloud App Security portal using a tenant-specific URL in the following format: `https://securitycenter.windows.com?tid=customer_tenant_id`.
+MSSPs however, will need to access the MSSP customer Cloud App Security portal using a tenant-specific URL in the following format: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
 
 MSSPs can use the following steps to obtain the MSSP customer portal tenant ID and then use the ID to access the tenant-specific URL:
 
@@ -146,7 +146,7 @@ MSSPs can use the following steps to obtain the MSSP customer portal tenant ID a
 
 1. Switch directory to the MSSP customer's tenant.
 1. Select **Azure Active Directory** > **Properties**. You'll find the MSSP customer tenant ID in the **Tenant ID** field.
-1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://securitycenter.windows.com?tid=customer_tenant_id`.
+1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
 
 ## Admin activity auditing
 
