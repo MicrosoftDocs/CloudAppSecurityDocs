@@ -1,7 +1,7 @@
 ---
 title: Understanding file data and filters available in Cloud App Security
 description: This reference article provides information about the types of files and file filters used by Cloud App Security.
-ms.date: 01/11/2021
+ms.date: 02/14/2021
 ms.topic: how-to
 ---
 # Files
@@ -119,6 +119,9 @@ Below is a list of the file filters that can be applied. To provide you with a p
 - **Owner OU** – Include or exclude file owners that belong to certain organizational group. For example, all public files except files shared by EMEA_marketing. Applies only to files stored in Google Drive.
 
 - **Parent folder** – Include or exclude based on parent folder. For example, all publicly shared files except for files in this folder.
+
+    > [!NOTE]
+    > Cloud App Security only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
 
 - **Quarantined** – Is the file quarantined by the service, For example, show me all files that are quarantined.
 
