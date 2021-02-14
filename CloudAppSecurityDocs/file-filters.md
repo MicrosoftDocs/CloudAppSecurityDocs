@@ -120,6 +120,9 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Parent folder** – Include or exclude based on parent folder. For example, all publicly shared files except for files in this folder.
 
+    > [!NOTE]
+    > Cloud App Security only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
+
 - **Quarantined** – Is the file quarantined by the service, For example, show me all files that are quarantined.
 
 You can also set the policy to run on specific files by setting the **Apply to** filter. Filter to either **all files**, **selected folders**, or **all files excluding selected folders**. Then select the files or folders that are relevant.
