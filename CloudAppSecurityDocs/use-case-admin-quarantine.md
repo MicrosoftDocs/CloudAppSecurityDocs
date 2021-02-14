@@ -1,7 +1,7 @@
 ---
 title: Protect files with Cloud App Security admin quarantine
 description: This tutorial describes the scenario for using admin quarantine to control data breaches.
-ms.date: 7/30/2019
+ms.date: 02/14/2021
 ms.topic: tutorial
 ---
 # Tutorial: Protect files with admin quarantine
