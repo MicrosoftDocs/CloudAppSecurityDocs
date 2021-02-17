@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 01/24/2021
+ms.date: 02/7/2021
 ms.topic: overview
 ---
 # What's new with Microsoft Cloud App Security
@@ -16,9 +16,9 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
-## Cloud App Security release 192 and 193
+## Cloud App Security release 192, 193, and 194
 
-Released January 24, 2021
+Released February 7, 2021
 
 - **Updated: Policies page grouped by categories**  
 We've updated the **Policies** page, adding a tab for every policy category. We also added an **All policies** tab to give you a complete list of all your policies. For more information about the categorization, see [Policy types](control-cloud-apps-with-policies.md#policy-types).
