@@ -20,8 +20,8 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 Released February 7, 2021
 
-- **Updated: Policies page grouped by categories**  
-We've updated the **Policies** page, adding a tab for every policy category. We also added an **All policies** tab to give you a complete list of all your policies. For more information about the categorization, see [Policy types](control-cloud-apps-with-policies.md#policy-types).
+- **Updates to Policies page**  
+We've updated the **Policies** page, adding a tab for every policy category. We also added an **All policies** tab to give you a complete list of all your policies. For more information about the policy categorization, see [Policy types](control-cloud-apps-with-policies.md#policy-types).
 
 - **Enhanced Office 365 OAuth apps export**  
 We've enhanced the Office 365 OAuth apps activities export to CSV file with the *Redirect URL* of the OAuth apps. For more information about exporting OAuth app activities, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
