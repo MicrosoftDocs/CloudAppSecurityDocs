@@ -17,6 +17,7 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
   - A pre-configured Okta tenant.
+  - Microsoft Cloud App Security
 
 - An existing Okta single sign-on configuration for the app using the SAML 2.0 authentication protocol
 
