@@ -26,7 +26,7 @@ Built-in IP address tags and custom IP tags are considered hierarchically. Custo
 
 ## Create an IP address range
 
-In the menu bar, click the settings icon. Select **IP address ranges**. Click the plus sign to add IP address ranges and set the following fields:
+In the menu bar, click the settings icon. Select **IP address ranges**. Click the plus sign (**+**) to add IP address ranges and set the following fields:
 
 1. **Name** your IP range. The name doesn't appear in the activities log, it's only used to manage your IP range.
 

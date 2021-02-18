@@ -1,7 +1,7 @@
 ---
 title: Create session policies in Cloud App Security
 description: This article describes the procedure for setting up a Cloud App Security Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
-ms.date: 03/31/2020
+ms.date: 01/05/2021
 ms.topic: how-to
 ---
 # Session policies
@@ -32,8 +32,12 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 To create a new session policy, follow this procedure:
 
-1. In the portal, select **Control** followed by **Policies**.
-1. In the **Policies** page, click **Create policy** and select **Session policy**.
+1. Go to **Control** > **Policies** > **Conditional access**.
+
+1. Click **Create policy** and select **Session policy**.
+
+    ![Create a Conditional access policy](media/create-policy-from-conditional-access-tab.png)
+
 1. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
 1. In the **Session control type** field:
 
@@ -147,6 +151,11 @@ You can also configure session policies to block malware on download.
 It is important to educate users when they are in violation of a policy so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Cloud App Security allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
 
 For example, if a user uploads a file without an Azure Information Protection label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Conditional Access App Control webinar](webinars.md#on-demand-webinars)
 
 ## Next steps
 

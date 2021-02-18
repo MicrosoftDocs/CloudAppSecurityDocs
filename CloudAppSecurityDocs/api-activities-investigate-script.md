@@ -1,28 +1,26 @@
 ---
 title: Investigate activities using the API 
 description: This article provides information on how to use the API to investigate user activity in Cloud App Security.
-ms.date: 03/26/2019
+ms.date: 12/22/2020
 ms.topic: how-to
 ---
 # Investigate activities using the API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security provides you with a fully supported REST API to enable you to programmatically interact with the service.
+You can use the Activities APIs to investigate the activities performed by your users across connected cloud apps.
 
-You can use the Microsoft Cloud App Security APIs to investigate the activities performed by your users across connected cloud apps.
-
-The Cloud App Security activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned.
+The activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned.
 
 > [!NOTE]
 > For large quantities of activities and large scale deployments, we recommended that you use the [SIEM agent](siem.md) for activity scanning.
 
-**To use the activity scan API:**
+## To use the activity scan script
 
 1. Run the query on your data.
 1. If there are more records than could be listed in a single scan, you will get a return command with `nextQueryFilters` that you should run. You will get this command each time you scan until the query has returned all the results.
 
-**Request body parameters**:
+## Request body parameters
 
 - "filters": Filter objects with all the search filters for the request, see [Activity filters](activity-filters-queries.md) for more information. To avoid having your requests be throttled, make sure to include a limitation on your query, for example, query the last day's activities, or filter for a particular app.
 - "isScan": Boolean. Enables the scanning mode.
@@ -32,7 +30,7 @@ The Cloud App Security activities API mode is optimized for scanning and retriev
   - created - The timestamp when the activity was saved.
 - "limit": Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data.
 
-**Response parameters**:
+## Response parameters
 
 - "data": the returned data. Will contain up to "limit" number of records each iteration. If there are more records to be pulled (hasNext=true), the last few records will be dropped to ensure that all data is listed only once.
 - "hasNext": Boolean. Denotes whether another iteration on the data is needed.
@@ -43,7 +41,7 @@ The following Python example gets all the activities from the past day from Exch
 ``` python
 import requests
 import json
-ACTIVITIES_URL = 'https://<your_tenant>.portal.cloudappsecurity.com/api/v1/activities/'
+ACTIVITIES_URL = 'https://<your_tenant>.<tenant_region>.contoso.com/api/v1/activities/'
 
 your_token = '<your_token>'
 headers = {

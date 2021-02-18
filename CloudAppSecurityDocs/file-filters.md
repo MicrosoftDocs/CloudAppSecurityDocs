@@ -1,7 +1,7 @@
 ---
 title: Understanding file data and filters available in Cloud App Security
 description: This reference article provides information about the types of files and file filters used by Cloud App Security.
-ms.date: 7/7/2019
+ms.date: 02/14/2021
 ms.topic: how-to
 ---
 # Files
@@ -70,7 +70,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
     - **Any from domain** – If any user from this domain has access to the file.
 
-    - **Entire domain** – If the entire domain has access to the file.
+    - **Entire organization** – If the entire organization has access to the file.
 
     - **Groups** – If a specific group has access to the file. Groups can be imported from Active Directory, cloud apps or manually created in the service.
 
@@ -91,11 +91,22 @@ Below is a list of the file filters that can be applied. To provide you with a p
         - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
         - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
 
-- **File type** – Cloud App Security takes both the MIME type received from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, All folders that are ... or All spreadsheet files that are...
+- **File type** – Cloud App Security takes both the MIME type received (see table) from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, All folders that are ... or All spreadsheet files that are...
 
-    ![policy_file filters trash](media/policy_file-filters-trash.png "policy_file filters trash")
+    | MIME type | File type |
+    |--|--|
+    | - application/vnd.openxmlformats-officedocument.wordprocessingml.document<br />- application/vnd.ms-word.document.macroEnabled.12<br />- application/msword<br />- application/vnd.oasis.opendocument.text<br />- application/vnd.stardivision.writer<br />- application/vnd.stardivision.writer-global<br />- application/vnd.sun.xml.writer<br />- application/vnd.stardivision.math<br />- application/vnd.stardivision.chart<br />- application/x-starwriter<br />- application/x-stardraw<br />- application/x-starmath<br />- application/x-starchart<br />- application/vnd.google-apps.document<br />- application/vnd.google-apps.kix<br />- application/pdf<br />- application/x-pdf<br />- application/vnd.box.webdoc<br />- application/vnd.box.boxnote<br />- application/vnd.jive.document<br />- text/rtf<br />- application/rtf | Document |
+    | - application/vnd.oasis.opendocument.image<br />- application/vnd.google-apps.photo<br />- **starts with:** image/ | Image |
+    | - application/vnd.openxmlformats-officedocument.presentationml.presentation<br />- application/vnd.ms-powerpoint.template.macroEnabled.12<br />- application/mspowerpoint<br />- application/powerpoint<br />- application/vnd.ms-powerpoint<br />- application/x-mspowerpoint<br />- application/mspowerpoint<br />- application/vnd.ms-powerpoint<br />- application/vnd.oasis.opendocument.presentation<br />- application/vnd.sun.xml.impress<br />- application/vnd.stardivision.impress<br />- application/x-starimpress<br />- application/vnd.google-apps.presentation | Presentation |
+    | - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br />- application/vnd.ms-excel.sheet.macroEnabled.12<br />- application/excel<br />- application/vnd.ms-excel<br />- application/x-excel<br />- application/x-msexcel<br />- application/vnd.oasis.opendocument.spreadsheet<br />- application/vnd.sun.xml.calc<br />- application/vnd.stardivision.calc<br />- application/x-starcalc<br />- application/vnd.google-apps.spreadsheet | Spreadsheet |
+    | - **starts with:** text/ | Text |
+    | All other file MIME types | Other |
+
+    ![policy_file filters type](media/policy_file-filters-type.png)
 
 - **In trash** – Exclude/include files in the trash folder. These files may still be shared and pose a risk.
+
+    ![policy_file filters trash](media/policy_file-filters-trash.png)
 
 - **Last modified** – File modification time. The filter supports before and after dates, date range, and relative time expressions. For example, all files that weren't modified in the last six months.
 
@@ -108,6 +119,9 @@ Below is a list of the file filters that can be applied. To provide you with a p
 - **Owner OU** – Include or exclude file owners that belong to certain organizational group. For example, all public files except files shared by EMEA_marketing. Applies only to files stored in Google Drive.
 
 - **Parent folder** – Include or exclude based on parent folder. For example, all publicly shared files except for files in this folder.
+
+    > [!NOTE]
+    > Cloud App Security only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
 
 - **Quarantined** – Is the file quarantined by the service, For example, show me all files that are quarantined.
 

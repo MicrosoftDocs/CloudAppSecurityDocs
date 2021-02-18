@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud Discovery 
 description: This article describes the setup procedure for getting Cloud Discovery working.
-ms.date: 08/09/2020
+ms.date: 01/17/2021
 ms.topic: how-to
 ---
 # Set up Cloud Discovery
@@ -26,7 +26,7 @@ You can generate the following types of reports:
     - [Corrata integration](corrata-integration.md)
     - [Menlo Security integration](menlo-integration.md)
 
-- **[Cloud Discovery API](api-discovery.md)** – Use Cloud App Security's Cloud Discovery API to automate traffic log upload and get automated Cloud discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
+- **[Cloud Discovery API](api-discovery.md)** – Use Cloud App Security's Cloud Discovery API to automate traffic log upload and get automated Cloud Discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
 
 ## Log process flow: From raw data to risk assessment
 
@@ -107,8 +107,8 @@ Data attributes (according to vendor documentation):
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | ForcePoint Web Security Cloud\* |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-| Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
-| Fortinet FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
+| Fortinet Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
+| FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 | iboss |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | Juniper SRX | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Juniper SSG | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |

@@ -179,7 +179,7 @@ If you are experiencing the client certificate popping up after opening a new ta
 | Microsoft Internet Explorer | 1. Open Internet Explorer<br />2. Select **Tools** > **Internet Options** > **Advance** tab<br />3. Under **Security**, select **Don't prompt for Client Certificate selection when only one certificate exists**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app without the additional prompts |
 | Microsoft Edge / Edge Chromium | 1. Open search from the taskbar and search for "Internet Options"<br />2. Select **Internet Options**<br />3. Select **Security**, select **Local intranet**, and then click **Custom level**<br />4. Under **Miscellaneous** > **Don't prompt for Client Certificate selection when only one certificate exists**, select **Disable**<br />5. Click **OK** to close the custom level dialog box<br />6. Click **Apply**, and then select **OK** to close Internet options<br />7. Restart your browser and verify that you can access the app without the additional prompts |
 
-<a name="device-identification-additional-considerations"></a>s
+<a name="device-identification-additional-considerations"></a>
 
 #### Additional considerations
 
@@ -500,9 +500,9 @@ Apps on our featured apps page marked as **(preview)** may suffer from context l
 As a temporary mitigation, you can workaround context loss issues, as follows:
 
 1. Navigate to a URL where context loss occurs.
-1. Make a note of the suffixed URL domain including the suffix added by Cloud App Security, for example `https://www.yammer.com.us2.cas.ms`.
+1. Make a note of the suffixed URL domain including the suffix added by Cloud App Security, for example `https://www.yammer.com.mcas.ms`.
 1. Copy the path from the original URL, for example if the original particular URL was `https://www.yammer.com/organization/threads/threadnumber`, copy `/organization/threads/threadnumber`.
-1. Append the copied path to the suffixed domain, for example `https://www.yammer.com.us2.cas.ms/organization/threads/threadnumber`.
+1. Append the copied path to the suffixed domain, for example `https://www.yammer.com.mcas.ms/organization/threads/threadnumber`.
 1. Navigate to the new suffixed URL.
 
 <a name="app-additional-considerations"></a>

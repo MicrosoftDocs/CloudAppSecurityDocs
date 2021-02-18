@@ -45,7 +45,7 @@ For example, if you want to identify commonly used risky cloud storage and colla
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they're unsanctioned, you can use a blocking script to block them from being used in your environment.
 
-Cloud discovery enables you to dive even deeper into your organization's cloud usage. You can identify specific instances that are in use by investigating the discovered subdomains.
+Cloud Discovery enables you to dive even deeper into your organization's cloud usage. You can identify specific instances that are in use by investigating the discovered subdomains.
 
 For example, you can differentiate between different SharePoint sites.
 
@@ -104,7 +104,7 @@ To create an exclusion:
 
 Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
 
-- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender ATP.
+- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender for Endpoint.
 
 - The **Data source specific report** displays only information from a specific data source.
 

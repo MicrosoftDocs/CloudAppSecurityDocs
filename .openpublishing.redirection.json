@@ -16,6 +16,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "CloudAppSecurityDocs/proxy-idp-examples.md",
+            "redirect_url": "/cloud-app-security/proxy-idp-pingone",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "CloudAppSecurityDocs/connect-google-apps-to-microsoft-cloud-app-security.md",
             "redirect_url": "/cloud-app-security/connect-google-workspace-to-microsoft-cloud-app-security",
             "redirect_document_id": true
@@ -28,6 +33,16 @@
         {
             "source_path": "CloudAppSecurityDocs/api-tokens.md",
             "redirect_url": "/cloud-app-security/api-authentication",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/investigate-activities-api.md",
+            "redirect_url": "/cloud-app-security/api-activities-investigate-script",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/aatp-integration.md",
+            "redirect_url": "/cloud-app-security/mdi-integration",
             "redirect_document_id": true
         }
     ]

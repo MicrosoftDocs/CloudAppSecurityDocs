@@ -1,7 +1,7 @@
 ---
 title: Monitor and protect files in cloud apps 
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
-ms.date: 10/7/2019
+ms.date: 01/05/2021
 ms.topic: how-to
 ---
 # File policies
@@ -47,9 +47,11 @@ The following are examples of file policies that can be created:
 
 To create a new file policy, follow this procedure:
 
-1. In the console, click on **Control** followed by **Policies**.
+1. Go to **Control** > **Policies** > **Information Protection**.
 
-1. Click **Create policy** and select **File** policy.
+1. Click **Create policy** and select **File policy**.
+
+    ![Create a Information Protection policy](media/create-policy-from-information-protection-tab.png)
 
 1. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
@@ -109,6 +111,11 @@ To make investigation even simpler, you can now create custom queries and save t
 1. In the **Save query** pop-up, name your query.
 
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Information protection webinar](webinars.md#on-demand-webinars)
 
 ## Next steps
 
