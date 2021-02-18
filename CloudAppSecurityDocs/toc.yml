@@ -1,3 +1,4 @@
+items:
 - name: Microsoft Cloud App Security documentation
   href: index.yml
 - name: Overview
@@ -191,6 +192,8 @@
       href: proxy-idp-pingone.md
     - name: Configuring your AD FS IdP
       href: proxy-idp-adfs.md
+    - name: Configuring your Okta IdP
+      href: proxy-idp-okta.md
   - name: Investigation
     href: investigate.md
     items:
