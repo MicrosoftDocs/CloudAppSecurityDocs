@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud App Security Conditional Access App Control for any apps
 description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for any apps.
-ms.date: 01/26/2021
+ms.date: 02/18/2021
 ms.topic: how-to
 ---
 # Onboard and deploy Conditional Access App Control for any app
@@ -77,8 +77,9 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 > [!NOTE]
 > For examples of how to configure IdP solutions, see:
 >
-> - [Configuring your PingOne IdP](proxy-idp-pingone.md)
-> - [Configuring your AD FS IdP](proxy-idp-adfs.md)
+> - [Configure your PingOne IdP](proxy-idp-pingone.md)
+> - [Configure your AD FS IdP](proxy-idp-adfs.md)
+> - [Configure your Okta IdP](proxy-idp-okta.md)
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
