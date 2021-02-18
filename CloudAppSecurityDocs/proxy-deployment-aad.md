@@ -136,10 +136,14 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 
 1. In your app's portal, on the single sign-on settings, do the following:
     1. [Recommended] Create a backup of your current settings.
-    1. In the single sign-on URL field, enter the single sign-on URL you made a note of earlier.
-    1. Upload the Cloud App Security SAML certificate you made a note of earlier.
+    1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
+    1. Upload the Cloud App Security SAML certificate you downloaded earlier.
+    1. Click **Save**.
+
     > [!NOTE]
-    > After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
+    >
+    > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
+    > - The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
 ## Step 2: Sign in to each app using a user scoped to the policy<a name="sign-in-scoped"></a>
 
