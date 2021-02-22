@@ -1,10 +1,10 @@
 ---
 title: Microsoft Cloud App Security for US Government GCC High
 description: This article describes the features differences between Microsoft Cloud App Security for US Government GCC High and the commercial offering.
-ms.date: 01/30/2020
+ms.date: 02/22/2021
 ms.topic: overview
 ---
-# Microsoft Cloud App Security for US Government GCC High
+# What is Microsoft Cloud App Security for US Government GCC High?
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -16,5 +16,4 @@ For more information about the Microsoft Cloud App Security for US Government GC
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Learn more about Government GCC High](/enterprise-mobility-security/solutions/ems-govt-service-description)
+- [Learn more about Government GCC High](/enterprise-mobility-security/solutions/ems-govt-service-description)
