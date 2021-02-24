@@ -1,7 +1,7 @@
 ---
-title: Extend governance to endpoint remediation
+title: Extend governance to endpoint remediation tutorial
 description: This tutorial describes the process to configure Microsoft Cloud App Security policy alerts to trigger Microsoft Power Automate workflows to run Microsoft Defender for Endpoint remediation actions.
-ms.date: 04/27/2020
+ms.date: 02/24/2021
 ms.topic: tutorial
 ---
 # Tutorial: Extend governance to endpoint remediation
@@ -10,14 +10,14 @@ Cloud App Security provides predefined governance options for policies, such as 
 
 For example, when detecting a possible malware threat, you can use workflows to start Microsoft Defender for Endpoint remediation actions such as running an antivirus scan or isolating an endpoint.
 
-In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior.
+In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior:
 
 > [!div class="checklist"]
 >
-> * 1: [Generate a Cloud App Security API token](#generate-token)
-> * 2: [Create a flow to run an antivirus scan](#create-flow)
-> * 3: [Configure the flow](#configure-flow)
-> * 4: [Configure a policy to run the flow](#configure-policy)
+> - 1: [Generate a Cloud App Security API token](#generate-token)
+> - 2: [Create a flow to run an antivirus scan](#create-flow)
+> - 3: [Configure the flow](#configure-flow)
+> - 4: [Configure a policy to run the flow](#configure-policy)
 
 > [!NOTE]
 > These workflows are only relevant for policies that contains user activity. For example, you can't use these workflows with Discovery or OAuth policies.
@@ -26,9 +26,9 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 ## Prerequisites
 
-* You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
-* You must have a valid Microsoft Defender for Endpoint plan
-* The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
+- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
+- You must have a valid Microsoft Defender for Endpoint plan
+- The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
 
 ## Phase 1: Generate a Cloud App Security API token<a name="generate-token"></a>
 
