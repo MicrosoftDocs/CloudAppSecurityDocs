@@ -103,7 +103,7 @@ Now every alert raised for this policy will initiate the flow to run the antivir
 
 You can use the steps in this tutorial to create a wide range of workflow-based actions to extend Cloud App Security remediation capabilities, including other Defender for Endpoint actions. To see a list of predefined Cloud App Security workflows, in Power Automate, [search for "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
 
-## See Also
+## See also
 
 > [!div class="nextstepaction"]
 > [Integrate with Power Automate for custom alert automation](flow-integration.md)

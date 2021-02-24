@@ -100,7 +100,7 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 - If you drill down into an alert and determine that the activity should not have triggered an alert, in the [Activity drawer](activity-filters.md), click the **Send us feedback** link so that we can be sure to fine tune our alerting system with your organization in mind.
 - After you remediate the issue, close the alert.
 
-## See Also
+## See also
 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)

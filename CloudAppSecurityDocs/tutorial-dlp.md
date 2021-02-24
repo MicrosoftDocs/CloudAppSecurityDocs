@@ -106,7 +106,7 @@ One of the most effective ways of monitoring sensitive file incidents, is to hea
 
 In conclusion, managing sensitive information in this way ensures that data saved to the cloud has maximal protection from malicious exfiltration and infiltration. Also, if a file is shared or lost, it can only be accessed by authorized users.
 
-## See Also
+## See also
 
 > [!div class="nextstepaction"]
 > [Understanding file data and filters](file-filters.md)
