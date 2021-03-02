@@ -1,7 +1,7 @@
 ---
 title: Microsoft Cloud App Security for US Government offerings
 description: This article describes the features differences between Microsoft Cloud App Security for US Government GCC High and the commercial offering.
-ms.date: 02/28/2021
+ms.date: 03/01/2021
 ms.topic: overview
 ---
 # Microsoft Cloud App Security for title: Microsoft Cloud App Security for US Government offerings
