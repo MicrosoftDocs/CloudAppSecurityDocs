@@ -1,7 +1,7 @@
 ---
-title: Protect files with Cloud App Security admin quarantine
+title: Protect files with Cloud App Security admin quarantine tutorial
 description: This tutorial describes the scenario for using admin quarantine to control data breaches.
-ms.date: 02/14/2021
+ms.date: 02/24/2021
 ms.topic: tutorial
 ---
 # Tutorial: Protect files with admin quarantine
@@ -10,12 +10,12 @@ ms.topic: tutorial
 
 [File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies. For instance, create file policies that find places where users stored sensitive information, credit card numbers, and third-party ICAP files in your cloud.
 
-This tutorial helps you use Microsoft Cloud App Security to detect unwanted files stored in your cloud that leave you vulnerable, and take immediate action to stop them in their tracks and lock down the files that pose a threat by using **Admin quarantine** to protect your files in the cloud, remediate problems, and prevent future leaks from occurring.
+In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect unwanted files stored in your cloud that leave you vulnerable, and take immediate action to stop them in their tracks and lock down the files that pose a threat by using **Admin quarantine** to protect your files in the cloud, remediate problems, and prevent future leaks from occurring.
 
 > [!div class="checklist"]
 >
-> - Understand how quarantine works
-> - Set up admin quarantine
+> - [Understand how quarantine works](#understand-how-quarantine-works)
+> - [Set up admin quarantine](#set-up-admin-quarantine)
 
 ## Understand how quarantine works
 

@@ -1,7 +1,7 @@
 ---
-title: Detect suspicious user activity with behavioral analytics (UEBA)
+title: Detect suspicious user activity with behavioral analytics (UEBA) tutorial
 description: This tutorial describes the process for tuning user activity detections in Microsoft Cloud App Security.
-ms.date: 05/10/2020
+ms.date: 02/24/2021
 ms.topic: tutorial
 ---
 # Tutorial: Detect suspicious user activity with UEBA
@@ -16,29 +16,29 @@ Using data captured from several sources, Cloud App Security analyzes the data t
 
 Hence, to fully realize the benefits of these detections, first make sure you configure the following sources:
 
-* **[Activity log](activity-filters.md)**  
+- **[Activity log](activity-filters.md)**  
 Activities from your [API connected apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-* **[Discovery log](tutorial-shadow-it.md)**  
+- **[Discovery log](tutorial-shadow-it.md)**  
 Activities extracted from firewall and proxy traffic logs that are forwarded to Cloud App Security. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 80 risk factors.
-* **[Proxy log](proxy-intro-aad.md)**  
+- **[Proxy log](proxy-intro-aad.md)**  
 Activities from your [Conditional Access App Control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
 
 Next, you'll want to tune your policies. The following policies can be fine-tuned by setting filters, dynamic thresholds (UEBA) to help train their detection models, and suppressions to reduce common false positive detections:
 
-* Anomaly detection
-* Cloud Discovery anomaly detection
-* Rule-based activity detection
+- Anomaly detection
+- Cloud Discovery anomaly detection
+- Rule-based activity detection
 
-This tutorial provides instructions for tuning user activity detections to identify true compromises and reduce alert fatigue resulting from handling large volumes of false positive detections.
+In this tutorial, you'll learn how to tune user activity detections to identify true compromises and reduce alert fatigue resulting from handling large volumes of false positive detections:
 
 > [!div class="checklist"]
 >
-> * Configure IP address ranges
-> * Tune anomaly detection policies
-> * Tune cloud discovery anomaly detection policies
-> * Tune rule-based detection policies
-> * Configure alerts
-> * Investigate and remediate
+> - [Configure IP address ranges](#phase-1-configure-ip-address-ranges)
+> - [Tune anomaly detection policies](#phase-2-tune-anomaly-detection-policies)
+> - [Tune cloud discovery anomaly detection policies](#phase-3-tune-cloud-discovery-anomaly-detection-policies)
+> - [Tune rule-based detection policies](#phase-4-tune-rule-based-detection-activity-policies)
+> - [Configure alerts](#phase-5-configure-alerts)
+> - [Investigate and remediate](#phase-6-investigate-and-remediate)
 
 ## Phase 1: Configure IP address ranges
 
@@ -58,21 +58,21 @@ Start by familiarizing yourself with the [different detection policies](control-
 
 Several built-in anomaly detection policies are available in Cloud App Security that are preconfigured for common security use cases. You should take some time to familiarize yourself with the more popular detections, such as:
 
-* **Impossible travel**  
+- **Impossible travel**  
 Activities from the same user in different locations within a period that is shorter than the expected travel time between the two locations.
-* **Activity from infrequent country**  
+- **Activity from infrequent country**  
 Activity from a location that was not recently or never visited by the user or by any user in the organization.
-* **Malware detection**  
+- **Malware detection**  
 Scans files in your cloud apps and runs suspicious files through Microsoft's threat intelligence engine to determine whether they are associated with known malware.
-* **Ransomware activity**  
+- **Ransomware activity**  
 File uploads to the cloud that might be infected with ransomware.
-* **Activity from suspicious IP addresses**  
+- **Activity from suspicious IP addresses**  
 Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence.
-* **Suspicious inbox forwarding**  
+- **Suspicious inbox forwarding**  
 Detects suspicious inbox forwarding rules set on a user's inbox.
-* **Unusual multiple file download activities**  
+- **Unusual multiple file download activities**  
 Detects multiple file download activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
-* **Unusual administrative activities**  
+- **Unusual administrative activities**  
 Detects multiple administrative activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
 
 For a full list of detections and what they do, see [Anomaly detection policies](anomaly-detection-policy.md#anomaly-detection-policies).
@@ -83,23 +83,23 @@ Once you are familiar with the policies, you should consider how you want to fin
 
     Scoping policies to specific users can help reduce noise from alerts that are not relevant to your organization. Each policy can be [configured to include or exclude specific users and groups](anomaly-detection-policy.md#scope-anomaly-detection-policies), such as in the following examples:
 
-    * **Attack simulations**  
+    - **Attack simulations**  
     Many organizations use a user or a group to constantly simulate attacks. Obviously, it doesn't make sense to constantly receive alerts from these users' activities. Therefore, you can configure your policies to exclude these users or groups. This also helps the machine learning models identify these users and fine-tune their dynamic thresholds accordingly.
-    * **Targeted detections**  
+    - **Targeted detections**  
     Your organization may be interested in investigating a specific group of VIP users such as members of an administrator or CXO group. In this scenario, you can create a policy for the activities you want to detect and choose to only include the set of users or groups you are interested.
 
-2. **Tune anomalous sign-in detections**
+1. **Tune anomalous sign-in detections**
 
     Some organizations want to see alerts resulting from [failed sign-in activities](anomaly-detection-policy.md#multiple-failed-login-attempts) as they may indicate that someone is attempting to target one or more user accounts. On the other hand, brute force attacks on user accounts occur all the time in the cloud and organizations have no way to prevent them. Therefore, larger organizations usually decide to only receive alerts for suspicious sign-in activities that result in successful sign-in activities, as they may represent true compromises.
 
     Identity theft is a key source of compromise and poses a major threat vector for your organization. Our [impossible travel](anomaly-detection-policy.md#impossible-travel), [anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses), and  [infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country) detections alerts help you discover activities that suggest an account is potentially compromised. You may want to customize these policies to only focus on successful sign-ins that indicate an actionable, imminent threat and quickly act on them. For example, you can customize the infrequent country policy to only alert successful sign-ins from locations that were not recently visited by any user in your organization. You can achieve this by [editing the policy](anomaly-detection-policy.md#tune-anomaly-detection-policies) and under Advanced configuration, set Analyze sign-in activities to one of the successful sign-in options.
 
-3. **Tune sensitivity of [impossible travel](anomaly-detection-policy.md#impossible-travel)**
+1. **Tune sensitivity of [impossible travel](anomaly-detection-policy.md#impossible-travel)**
     [Configure the sensitivity slider](anomaly-detection-policy.md#tune-anomaly-detection-policies) that determines the level of suppressions applied to anomalous behavior before triggering an impossible travel alert. For example, organizations interested in high fidelity should consider increasing the sensitivity level. On the other hand, if your organization has many users that travel, consider lowering the sensitivity level to suppress activities from a user's common locations learned from previous activities. You can choose from the following sensitivity levels:
 
-    * **Low**: System, tenant, and user suppressions
-    * **Medium**: System and user suppressions
-    * **High**: Only system suppressions
+    - **Low**: System, tenant, and user suppressions
+    - **Medium**: System and user suppressions
+    - **High**: Only system suppressions
 
     Where:
 
@@ -118,7 +118,7 @@ However, you can fine-tune the built-in policies or create your own policies to 
 1. **Tune usage monitoring**  
 Set the usage filters to control the baseline, scope, and activity period for detecting anomalous behavior. For example, you may want to receive alerts for anomalous activities relating to executive-level employees.
 
-2. **Tune alert sensitivity**  
+1. **Tune alert sensitivity**  
 To prevent alert fatigue, configure the sensitivity of alerts. You can use the sensitivity slider to control the number of high-risk alerts sent per 1,000 users per week. Higher sensitivities require less variance to be considered an anomaly and generate more alerts. In general, set low sensitivity for users that don't have access to confidential data.
 
 ## Phase 4: Tune rule-based detection (activity) policies
@@ -127,9 +127,9 @@ To prevent alert fatigue, configure the sensitivity of alerts. You can use the s
 
 1. **Tune activity volume**  
 Choose the volume of activity required before the detection raises an alert. Using our country example, if you have no presence in a country/region, even a single activity is significant and warrants an alert. However, a single sign-in failure could be human error and only of interest if there are many failures in a short period.
-2. **Tune [activity filters](activity-filters-queries.md)**  
+1. **Tune [activity filters](activity-filters-queries.md)**  
 Set the filters you require to detect the type of activity you want to alert on. For example, to detect activity from a country, use the **Location** parameter.
-3. **Tune alerts**  
+1. **Tune alerts**  
 To prevent alert fatigue, set the **daily alert limit**.
 
 ## Phase 5: Configure alerts
@@ -144,9 +144,9 @@ Use the following guidelines to configure your alerts:
 
 1. **Email/SMS**  
 Choose your delivery preference for receiving alerts. You can receive alerts by email, text message, or both.
-2. **SIEM**  
+1. **SIEM**  
 There are several SIEM integration options including [Azure Sentinel](siem-sentinel.md), [Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft), and other [generic SIEMs](siem.md). Choose the integration that best meets your requirements.
-3. **Power Automate automation**  
+1. **Power Automate automation**  
 Create the automation playbooks you require and set it as the policy's alert to Power Automate action.
 
 ## Phase 6: Investigate and remediate
