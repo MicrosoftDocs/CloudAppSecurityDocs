@@ -16,5 +16,4 @@ For more information about the Microsoft Cloud App Security for title: Microsoft
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Learn more about Government GCC High](/enterprise-mobility-security/solutions/ems-govt-service-description)
+- [Learn more about Government GCC High](/enterprise-mobility-security/solutions/ems-govt-service-description)

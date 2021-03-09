@@ -1,10 +1,10 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 02/7/2021
+ms.date: 02/22/2021
 ms.topic: overview
 ---
-# What's new with Microsoft Cloud App Security
+# What's new with Microsoft Cloud App Security?
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -308,8 +308,8 @@ We've updated the detection logic for impossible travel to provide enhanced cove
 - **New threshold for activity policies**  
 We've added a threshold for [activity policies](user-activity-policies.md) to help you manage the volume of alerts. Policies that trigger a large volume of matches for several days are automatically disabled. If you receive a system alert about this, you should try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider saving them as queries instead.
 
-## See Also
+## Next steps
 
-For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
+- For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
