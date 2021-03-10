@@ -1,8 +1,8 @@
 ---
 title: Connect ServiceNow to Cloud App Security
-description: This article provides information about how to connect your ServiceNow app to Cloud App Security using the API connector for visibility and control over use.![image](https://user-images.githubusercontent.com/23345911/110385542-0fdbc980-8085-11eb-9b1d-a0c17eaddece.png)
+description: This article provides information about how to connect your ServiceNow app to Cloud App Security using the API connector for visibility and control over use.
 
-ms.date: 6/24/2019
+ms.date: 03/10/2021
 ms.topic: how-to
 ---
 # Connect ServiceNow to Microsoft Cloud App Security
