@@ -1,7 +1,7 @@
 ---
 title: Configure automatic log upload using on-premises Docker
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in an on-premises server.
-ms.date: 12/02/2020
+ms.date: 03/10/2021
 ms.topic: how-to
 ---
 # Docker on Linux on-premises
@@ -133,22 +133,11 @@ The following steps describe the deployment in Ubuntu.
 
 #### [Red Hat](#tab/red-hat)
 
-1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
-1. Install Docker engine prerequisites:
+1. Remove the container-tools module: `yum module remove container-tools`
+1. Add the Docker CE repository: `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
+1. Modify the yum repo file to use CentOS 8/RHEL 8 packages: `sed -i s/7/8/g /etc/yum.repos.d/docker-ce.repo`
+1. Install Docker CE: `yum install docker-ce`
 
-    ```bash
-    yum install -y yum-utils
-    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
-    ```
-
-1. Add Docker repository:
-
-    ```bash
-    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-    yum makecache
-    ```
-
-1. Install Docker engine: `yum -y install docker-ce`
 1. Start Docker
 
     ```bash
