@@ -63,6 +63,12 @@ Recommended task: Enable file monitoring and create file policies
 > [!TIP]
 > You can view files from your connected apps by browsing to **Investigate** > **Files**.
 
+**Migration recommendation**  
+We recommend running Cloud App Security sensitive information protection in parallel with your current Cloud Access Security Broker (CASB) solution. Start by [connecting the apps you want to protect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) to Microsoft Cloud App Security. Since API connectors use out-of-band connectivity, no conflict will occur. Then progressively migrate your policies from your current CASB solution to Cloud App Security.
+
+> [!NOTE]
+> For third-party apps, verify that the current load does not exceed the app's maximum number of allowed API calls.
+
 <a name="step-3"></a>
 
 ## Step 3. [Control cloud apps with policies](control-cloud-apps-with-policies.md)
@@ -95,6 +101,9 @@ Required task: Enable Cloud App Security to view your cloud app use
     1. Choose **Automatic log upload**.
     1. On the **Data sources** tab, add your sources.
     1. On the **Log collectors** tab, configure the log collector.
+
+**Migration recommendation**  
+We recommend running Cloud App Security discovery in parallel with your current Cloud Access Security Broker (CASB) solution. Start by configuring automatic firewall log upload to Cloud App Security log collectors. If you use Defender for Endpoint, in Microsoft Defender Security Center, make sure you turn on the option to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
 
 ### To create a snapshot Cloud Discovery report
 
