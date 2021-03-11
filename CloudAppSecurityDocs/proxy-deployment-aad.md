@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud App Security Conditional Access App Control for Azure AD apps
 description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for Azure AD apps.
-ms.date: 01/26/2021
+ms.date: 02/18/2021
 ms.topic: how-to
 ---
 # Deploy Conditional Access App Control for featured apps
@@ -35,7 +35,9 @@ Follow these steps to configure featured apps to be controlled by Microsoft Clou
 
 **Step 3: [Verify the apps are configured to use access and session controls](#portal)**
 
-**Step 4: [Test the deployment](#test)**
+**Step 4: [Enable the app for use in your organization](#enable-app)**
+
+**Step 5: [Test the deployment](#test)**
 
 ## Step 1:  Configure your IdP to work with Cloud App Security<a name="conf-idp"></a><a name="add-azure-ad"></a>
 
@@ -68,8 +70,9 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 > [!NOTE]
 > For examples of how to configure IdP solutions, see:
 >
-> - [Configuring your PingOne IdP](proxy-idp-pingone.md)
-> - [Configuring your AD FS IdP](proxy-idp-adfs.md)
+> - [Configure your PingOne IdP](proxy-idp-pingone.md)
+> - [Configure your AD FS IdP](proxy-idp-adfs.md)
+> - [Configure your Okta IdP](proxy-idp-okta.md)
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
@@ -134,10 +137,14 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 
 1. In your app's portal, on the single sign-on settings, do the following:
     1. [Recommended] Create a backup of your current settings.
-    1. In the single sign-on URL field, enter the single sign-on URL you made a note of earlier.
-    1. Upload the Cloud App Security SAML certificate you made a note of earlier.
+    1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
+    1. Upload the Cloud App Security SAML certificate you downloaded earlier.
+    1. Click **Save**.
+
     > [!NOTE]
-    > After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
+    >
+    > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
+    > - The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
 ## Step 2: Sign in to each app using a user scoped to the policy<a name="sign-in-scoped"></a>
 
@@ -161,7 +168,17 @@ The instructions above helped you create a built-in Cloud App Security policy fo
     >
     >![Conditional access app control request](media/caac-request.png)
 
-## Step 4: Test the deployment<a name="test"></a>
+## Step 4: Enable the app for use in your organization<a name="enable-app"></a>
+
+Once you are ready to enable the app for use in your organization's production environment, do the following steps.
+
+1. In Cloud App Security, click the settings cog ![settings icon](media/settings-icon.png), and then select **Conditional Access App Control**.
+1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
+1. Select **Use with Conditional Access App Control** and then click **Save**.
+
+    ![Enable session controls pop-up](media/edit-app-enable-session-controls.png)
+
+## Step 5: Test the deployment<a name="test"></a>
 
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Azure AD, or for a SAML app configured with your identity provider.
 

@@ -168,7 +168,7 @@ Now you can view discovered data based on your own preferences, such as business
 
 These settings help give you better control of features in the console. With IP tags, it's easier to create policies that fit your needs, to accurately filter data, and more. Use Data views to group your data into logical categories.
 
-## Next Steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md).

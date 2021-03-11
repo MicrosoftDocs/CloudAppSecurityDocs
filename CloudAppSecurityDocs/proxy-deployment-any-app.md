@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud App Security Conditional Access App Control for any apps
 description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for any apps.
-ms.date: 01/26/2021
+ms.date: 02/18/2021
 ms.topic: how-to
 ---
 # Onboard and deploy Conditional Access App Control for any app
@@ -77,8 +77,9 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 > [!NOTE]
 > For examples of how to configure IdP solutions, see:
 >
-> - [Configuring your PingOne IdP](proxy-idp-pingone.md)
-> - [Configuring your AD FS IdP](proxy-idp-adfs.md)
+> - [Configure your PingOne IdP](proxy-idp-pingone.md)
+> - [Configure your AD FS IdP](proxy-idp-adfs.md)
+> - [Configure your Okta IdP](proxy-idp-okta.md)
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
@@ -124,7 +125,8 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
     > [!NOTE]
     > The settings are commonly found in IdP portal's custom app settings page
 
-    1. In the single sign-on URL field, enter the single sign-on URL you made a note of earlier.
+    1. [Recommended] Create a backup of your current settings.
+    1. Replace the single sign-on URL field value with the Cloud App Security SAML single sign-on URL you noted earlier.
         > [!NOTE]
         > Some providers may refer to the single sign-on URL as the *Reply URL*.
     1. Add the attributes and values you made a note of earlier to the app's properties.
@@ -147,7 +149,9 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
     1. In the single sign-on URL field, enter the Cloud App Security single sign-on URL you made a note of earlier.
     1. Upload the Cloud App Security SAML certificate you downloaded earlier.
     > [!NOTE]
-    > After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
+    >
+    > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
+    > - The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
 ## Step 2: Configure the users that will deploy the app<a name="conf-users"></a>
 
