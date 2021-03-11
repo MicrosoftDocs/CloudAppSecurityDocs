@@ -64,7 +64,7 @@ Recommended task: Enable file monitoring and create file policies
 > You can view files from your connected apps by browsing to **Investigate** > **Files**.
 
 **Migration recommendation**  
-We recommend running Cloud App Security sensitive information protection in parallel with your current Cloud Access Security Broker (CASB) solution. Start by [connecting the apps you want to protect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) to Microsoft Cloud App Security. Since API connectors use out-of-band connectivity, no conflict will occur. Then progressively migrate your policies from your current CASB solution to Cloud App Security.
+We recommend using Cloud App Security sensitive information protection in parallel with your current Cloud Access Security Broker (CASB) solution. Start by [connecting the apps you want to protect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) to Microsoft Cloud App Security. Since API connectors use out-of-band connectivity, no conflict will occur. Then progressively migrate your [policies](control-cloud-apps-with-policies.md) from your current CASB solution to Cloud App Security.
 
 > [!NOTE]
 > For third-party apps, verify that the current load does not exceed the app's maximum number of allowed API calls.
@@ -103,7 +103,7 @@ Required task: Enable Cloud App Security to view your cloud app use
     1. On the **Log collectors** tab, configure the log collector.
 
 **Migration recommendation**  
-We recommend running Cloud App Security discovery in parallel with your current Cloud Access Security Broker (CASB) solution. Start by configuring automatic firewall log upload to Cloud App Security log collectors. If you use Defender for Endpoint, in Microsoft Defender Security Center, make sure you turn on the option to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
+We recommend using Cloud App Security discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Cloud App Security [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft Defender Security Center, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security) to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
 
 ### To create a snapshot Cloud Discovery report
 
@@ -114,7 +114,23 @@ Go to **Discover** > **Snapshot report** and follow the steps shown.
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
-## Step 5. [Personalize your experience](mail-settings.md)
+## Step 5. [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+
+Recommended task: Deploy Conditional Access App Control for featured apps
+
+1. Configure your IdP to work with Cloud App Security. If you have Azure AD, you can leverage inline controls such as *Monitor only* and *Block downloads* which will work for any featured app out of the box.
+1. Onboard apps onto access and session controls.
+    1. From the settings cog, select **Conditional Access App Control**.
+    1. Sign in to each app using a user scoped to the policy
+    1. Refresh the **Conditional Access App Control** page and to view the app.
+1. Verify the apps are configured to use access and session controls
+
+To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premise apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
+
+**Migration recommendation**  
+Using Conditional Access App Control in parallel with another CASB solution can potentially lead to an app being proxied twice, causing latency or other errors. Therefore, we recommended progressively migrating apps and policies to Conditional Access App Control, creating the relevant session or access policies in  Cloud App Security as you go.
+
+## Step 6. [Personalize your experience](mail-settings.md)
 
 Recommended task: Add your organization details
 
@@ -144,7 +160,7 @@ Now the risk scores given to discovered apps are configured precisely according 
 Some features work best when they're customized to your needs.
 Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization's preferences.
 
-## Step 6. [Organize the data according to your needs](ip-tags.md)
+## Step 7. [Organize the data according to your needs](ip-tags.md)
 
 Recommended task: Configure important settings
 
