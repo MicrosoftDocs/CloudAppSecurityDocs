@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud App Security
 description: This quickstart outlines the process for getting Cloud App Security up and running so you have cloud app use, insight, and control.
-ms.date: 06/07/2020
+ms.date: 02/10/2021
 ms.topic: quickstart
 ---
 
@@ -43,14 +43,35 @@ To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.
 
 Required task: Connect apps
 
-1. From the settings cog, select   **App connectors**.
+1. From the settings cog, select **App connectors**.
 1. Click the plus sign (**+**) to add an app and select an app.
 1. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
 After you connect an app, you can gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment.
 
-## Step 2. [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+## Step 2. [Protect sensitive information with DLP policies](policies-information-protection.md)
+
+Recommended task: Enable file monitoring and create file policies
+
+1. Go to **Settings**, and then under **Information Protection**, select **Files**.
+1. Select **Enable file monitoring** and then click **Save**.
+1. If you use Azure Information Protection classification labels, under **Information Protection**, select **Azure Information Protection**.
+1. Select the required settings and then click **Save**.
+1. In [step 3](#step-3), create [File policies](data-protection-policies.md) to meet your organizational requirements.
+
+> [!TIP]
+> You can view files from your connected apps by browsing to **Investigate** > **Files**.
+
+**Migration recommendation**  
+We recommend using Cloud App Security sensitive information protection in parallel with your current Cloud Access Security Broker (CASB) solution. Start by [connecting the apps you want to protect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) to Microsoft Cloud App Security. Since API connectors use out-of-band connectivity, no conflict will occur. Then progressively migrate your [policies](control-cloud-apps-with-policies.md) from your current CASB solution to Cloud App Security.
+
+> [!NOTE]
+> For third-party apps, verify that the current load does not exceed the app's maximum number of allowed API calls.
+
+<a name="step-3"></a>
+
+## Step 3. [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 Required task: Create policies
 
@@ -60,13 +81,15 @@ Required task: Create policies
 1. Select a policy template from the list, and then choose (+) **Create policy**.
 1. Customize the policy (select filters, actions, and other settings), and then choose **Create**.
 1. On the **Policies** tab, choose the policy to see the relevant matches (activities, files, alerts).
- Tip: To cover all your cloud environment security scenarios, create a policy for each **risk category**.
+
+> [!TIP]
+> To cover all your cloud environment security scenarios, create a policy for each **risk category**.
 
 ### How can policies help your organization?
 
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
-## Step 3. [Set up Cloud Discovery](set-up-cloud-discovery.md)
+## Step 4. [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 Required task: Enable Cloud App Security to view your cloud app use
 
@@ -79,16 +102,35 @@ Required task: Enable Cloud App Security to view your cloud app use
     1. On the **Data sources** tab, add your sources.
     1. On the **Log collectors** tab, configure the log collector.
 
+**Migration recommendation**  
+We recommend using Cloud App Security discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Cloud App Security [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft Defender Security Center, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security) to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
+
 ### To create a snapshot Cloud Discovery report
 
- Go to **Discover** > **Snapshot report** and follow the steps shown.
+Go to **Discover** > **Snapshot report** and follow the steps shown.
 
 ### Why should you configure Cloud Discovery reports?
 
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
-## Step 4. [Personalize your experience](mail-settings.md)
+## Step 5. [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+
+Recommended task: Deploy Conditional Access App Control for featured apps
+
+1. Configure your IdP to work with Cloud App Security. If you have Azure AD, you can leverage inline controls such as *Monitor only* and *Block downloads* which will work for any featured app out of the box.
+1. Onboard apps onto access and session controls.
+    1. From the settings cog, select **Conditional Access App Control**.
+    1. Sign in to each app using a user scoped to the policy
+    1. Refresh the **Conditional Access App Control** page and to view the app.
+1. Verify the apps are configured to use access and session controls
+
+To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premise apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
+
+**Migration recommendation**  
+Using Conditional Access App Control in parallel with another CASB solution can potentially lead to an app being proxied twice, causing latency or other errors. Therefore, we recommended progressively migrating apps and policies to Conditional Access App Control, creating the relevant session or access policies in  Cloud App Security as you go.
+
+## Step 6. [Personalize your experience](mail-settings.md)
 
 Recommended task: Add your organization details
 
@@ -118,7 +160,7 @@ Now the risk scores given to discovered apps are configured precisely according 
 Some features work best when they're customized to your needs.
 Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization's preferences.
 
-## Step 5. [Organize the data according to your needs](ip-tags.md)
+## Step 7. [Organize the data according to your needs](ip-tags.md)
 
 Recommended task: Configure important settings
 
