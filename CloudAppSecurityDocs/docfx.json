@@ -36,9 +36,9 @@
       "breadcrumb_path": "/cloud-app-security/bread/toc.json",
       "searchScope": ["Cloud App Security"],
 
-      "author": "shsagir",
-      "manager": "shsagir",
-      "ms.author": "shsagir",
+      "author": "dcurwin",
+      "manager": "dcurwin",
+      "ms.author": "dacurwin",
       "ms.collection": "M365-security-compliance",
       "ms.service": "cloud-app-security",
       "ms.suite": "ems"
