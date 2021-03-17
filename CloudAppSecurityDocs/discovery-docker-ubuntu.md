@@ -173,9 +173,6 @@ The following steps describe the deployment in Ubuntu.
 
 #### [Red Hat 8](#tab/red-hat-8)
 
-> [!NOTE]
-> The following steps are for Red Hat 8 only.
-
 1. Remove the container-tools module: `yum module remove container-tools`
 1. Add the Docker CE repository: `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
 1. Modify the yum repo file to use CentOS 8/RHEL 8 packages: `sed -i s/7/8/g /etc/yum.repos.d/docker-ce.repo`
