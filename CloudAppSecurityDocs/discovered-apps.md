@@ -81,6 +81,7 @@ The best way to get an overview of Shadow IT use across your organization is by 
 To generate a Cloud Discovery executive report:
 
 1. From the **Cloud Discovery dashboard**, click the three dots in the upper-right corner of the dashboard, and then select **Generate Cloud Discovery executive report**.
+
 1. Optionally, change the report name.
 1. Click **Generate**.
 
@@ -90,9 +91,9 @@ If you have system users, IP addresses, or devices that are noisy but uninterest
 
 To create an exclusion:
 
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+1. In the portal, under the settings icon, select **Settings**.
 
-1. Click the **Exclude entities** tab.
+1. Under **Cloud Discovery**, click the **Exclude entities** tab.
 
 1. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded devices** tab and click the + button to add your exclusion.
 
@@ -102,7 +103,7 @@ To create an exclusion:
 
 ## Manage continuous reports
 
-Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
+Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks, and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
 
 - The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender for Endpoint.
 
@@ -110,9 +111,9 @@ Custom continuous reports provide you more granularity when monitoring your orga
 
 To create a new continuous report:
 
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+1. In the portal, under the settings icon, select **Settings**.
 
-1. Click the **Continuous report** tab.
+1. Under **Cloud Discovery**, click **Continuous report**.
 
 1. Click the **Create report** button.
 
@@ -139,9 +140,9 @@ There are a number of reasons why you may want to delete your Cloud Discovery da
 
 To delete Cloud Discovery data:
 
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+1. In the portal, under the settings icon, select **Settings**.
 
-1. Click the **Delete data** tab.
+1. Under **Cloud Discovery**, click the **Delete data** tab.
 
     It's important to be sure you want to delete data before continuing - it can't be undone and it deletes **all** Cloud Discovery data in the system.
 

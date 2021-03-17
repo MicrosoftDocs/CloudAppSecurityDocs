@@ -1,7 +1,7 @@
 ---
 title: Configure automatic log upload using on-premises Docker
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in an on-premises server.
-ms.date: 03/10/2021
+ms.date: 03/17/2021
 ms.topic: how-to
 ---
 # Docker on Linux on-premises
@@ -131,10 +131,47 @@ The following steps describe the deployment in Ubuntu.
 
 1. Test Docker installation: `docker run hello-world`
 
-#### [Red Hat](#tab/red-hat)
+#### [Red Hat 7](#tab/red-hat)
 
-> [!NOTE]
-> The following steps are for Red Hat 8 only.
+1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
+1. Install Docker engine prerequisites:
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Add Docker repository:
+
+    ```bash
+    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    sudo yum-config-manager --setopt="docker-ce-stable.baseurl=https://download.docker.com/linux/centos/7/x86_64/stable" --save
+    ```
+
+1. Install dependencies:
+
+    ```bash
+    wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/slirp4netns-0.4.3-4.el7_8.x86_64.rpm
+    sudo yum localinstall slirp4netns-0.4.3-4.el7_8.x86_64.rpm
+    wget https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/f/fuse3-libs-3.6.1-2.el7.x86_64.rpm
+    sudo yum localinstall fuse3-libs-3.6.1-2.el7.x86_64.rpm
+    wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm
+    sudo yum localinstall fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm
+    wget http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.119.2-1.911c772.el7_8.noarch.rpm
+    sudo yum localinstall container-selinux-2.119.2-1.911c772.el7_8.noarch.rpm
+    ```
+
+1. Install Docker engine: `sudo yum install docker-ce`
+1. Start Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+#### [Red Hat 8](#tab/red-hat-8)
 
 1. Remove the container-tools module: `yum module remove container-tools`
 1. Add the Docker CE repository: `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
