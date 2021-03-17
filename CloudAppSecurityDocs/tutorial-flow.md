@@ -1,27 +1,23 @@
 ---
-title: Extend governance to endpoint remediation
+title: Extend governance to endpoint remediation tutorial
 description: This tutorial describes the process to configure Microsoft Cloud App Security policy alerts to trigger Microsoft Power Automate workflows to run Microsoft Defender for Endpoint remediation actions.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
+ms.date: 02/24/2021
 ms.topic: tutorial
-ms.date: 04/27/2020
 ---
-
 # Tutorial: Extend governance to endpoint remediation
 
 Cloud App Security provides predefined governance options for policies, such as suspend a user or make a file private. Using the native integration with Microsoft Power Automate, you can use a large ecosystem of software as a service (SaaS) connectors to build workflows to automate processes including remediation.
 
 For example, when detecting a possible malware threat, you can use workflows to start Microsoft Defender for Endpoint remediation actions such as running an antivirus scan or isolating an endpoint.
 
-In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior.
+In this tutorial, you'll learn how to configure a policy governance action to use a workflow to run an antivirus scan on an endpoint where a user shows signs of suspicious behavior:
 
 > [!div class="checklist"]
 >
-> * 1: [Generate a Cloud App Security API token](#generate-token)
-> * 2: [Create a flow to run an antivirus scan](#create-flow)
-> * 3: [Configure the flow](#configure-flow)
-> * 4: [Configure a policy to run the flow](#configure-policy)
+> - 1: [Generate a Cloud App Security API token](#generate-token)
+> - 2: [Create a flow to run an antivirus scan](#create-flow)
+> - 3: [Configure the flow](#configure-flow)
+> - 4: [Configure a policy to run the flow](#configure-policy)
 
 > [!NOTE]
 > These workflows are only relevant for policies that contains user activity. For example, you can't use these workflows with Discovery or OAuth policies.
@@ -30,9 +26,9 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 ## Prerequisites
 
-* You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
-* You must have a valid Microsoft Defender for Endpoint plan
-* The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
+- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
+- You must have a valid Microsoft Defender for Endpoint plan
+- The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
 
 ## Phase 1: Generate a Cloud App Security API token<a name="generate-token"></a>
 
@@ -107,7 +103,7 @@ Now every alert raised for this policy will initiate the flow to run the antivir
 
 You can use the steps in this tutorial to create a wide range of workflow-based actions to extend Cloud App Security remediation capabilities, including other Defender for Endpoint actions. To see a list of predefined Cloud App Security workflows, in Power Automate, [search for "Cloud App Security"](https://go.microsoft.com/fwlink/?linkid=2102574).
 
-## See Also
+## See also
 
 > [!div class="nextstepaction"]
 > [Integrate with Power Automate for custom alert automation](flow-integration.md)

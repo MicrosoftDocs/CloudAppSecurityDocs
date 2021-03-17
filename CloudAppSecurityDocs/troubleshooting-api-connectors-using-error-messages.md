@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Troubleshoot App Connector error messages - Cloud App Security
+title: Troubleshoot App Connector error messages 
 description: This article provides a list of API App connector error messages as well as resolution recommendations for each.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/29/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Troubleshooting App Connectors using error messages
 
@@ -49,9 +28,9 @@ App connector errors can be seen in the app connector dialog after attempting to
 > |BoxServerException: Unauthorized - Cannot authorize with this service|Box|The Box admin deleted the Cloud App Security application in Box.|Follow the process to connect Box to Cloud App Security again.|
 > |HttpRequestFailure: Server returned: 401 Unauthorized|Exchange Online|User or password are incorrect|Make sure the username and password are correct and Follow the process to connect Exchange Online to Cloud App Security again.|
 > |HttpRequestFailure: Server returned: 404 Not Found|Exchange Online|The user you are using to log into Exchange Online does not have a primary mailbox in Exchange Online (for example, a user who does not exist in Azure AD or a user exists in Azure AD, but does not have an Exchange Online license).|Follow the process to connect Exchange Online to Cloud App Security again using a new admin account.|
-> |GoogleJsonResponseException: 401 Unauthorized|G Suite|Access denied. You are not authorized to read activity records. The user you log into G Suite with must be an admin user.|Follow the process to connect G Suite to Cloud App Security again using an admin account.|
-> |GoogleJsonResponseException: 403 Forbidden|G Suite|Problem running the G Suite API.|If you just deployed the Cloud App Security App Connector for G Suite, check the following: If you clicked Unlimited, make sure that your G Suite account is really unlimited. If it is not, run the App Connector again and un-select the option for an unlimited account. Check that the scopes you defined during setup are correct. If this is not a new deployment and you see this error, it may be that you reached the API limit for today and G Suite events will be renewed tomorrow.|
-> |TokenResponseException: 400 Bad Request|G Suite|Either the connection to G Suite did not complete or is expired.|Follow the process to connect G Suite to Cloud App Security again.|
+> |GoogleJsonResponseException: 401 Unauthorized|Google Workspace|Access denied. You are not authorized to read activity records. The user you log into Google Workspace with must be an admin user.|Follow the process to connect Google Workspace to Cloud App Security again using an admin account.|
+> |GoogleJsonResponseException: 403 Forbidden|Google Workspace|Problem running the Google Workspace API.|If you just deployed the Cloud App Security App Connector for Google Workspace, check the following: If you clicked Unlimited, make sure that your Google Workspace account is really unlimited. If it is not, run the App Connector again and un-select the option for an unlimited account. Check that the scopes you defined during setup are correct. If this is not a new deployment and you see this error, it may be that you reached the API limit for today and Google Workspace events will be renewed tomorrow.|
+> |TokenResponseException: 400 Bad Request|Google Workspace|Either the connection to Google Workspace did not complete or is expired.|Follow the process to connect Google Workspace to Cloud App Security again.|
 > |HttpRequestFailure: Server returned: 401 Unauthorized|Okta|The Okta token is not valid.|Follow the process to connect Okta to Cloud App Security again.|
 > |IOException:|Okta|Internal error|Contact support|
 > |HttpRequestFailure: Server returned: 404 Not Found|Okta|Internal error|Contact support|
@@ -66,6 +45,7 @@ App connector errors can be seen in the app connector dialog after attempting to
 > |HttpRequestFailure: Server returned: 400 Bad Request|Office 365|Internal error|Click the Test now link again in a few minutes, if it does not work, follow the process to connect Office 365 to Cloud App Security again.|
 > |SocketTimeoutException: Read timed out|Salesforce|Internal error|Click the Test now link again to test the connection to Salesforce.|
 > |HttpRequestFailure: Server returned: 400 Bad Request|Salesforce|Either the connection to Salesforce did not complete or is expired.|Follow the process to connect Salesforce to Cloud App Security again.|
+> |Get Permissions: NoHttpResponseException: `*******.salesforce.com:443` failed to respond|Salesforce|IP restriction on customer ENV.|In the Salesforce portal, under **Setup** > **Session Settings**, clear the **Lock sessions to the IP address from which they originated** check box.|
 > |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: Server returned: 403 Forbidden|ServiceNow|Permissions are incorrect|Follow the process to connect ServiceNow to Cloud App Security again using an admin account.|
 > |Get events: {"code":403,"serverResponse"<br />Get users: {"code":403,"serverResponse"<br />…<br />"body":"{"error":"permission denied"}"|Workday|Insufficient permission to access audit logs and/or user endpoints|Verify all permissions are in place. [Learn more](connect-workday-to-microsoft-cloud-app-security.md#prerequisites)|
 > |"code":400,"serverResponse"<br />…<br />body":"{"error":"invalid_grant"}|Workday|Authentication issue|Account used to set up the instance may be locked or disabled. To verify, view the Workday account and select **View Sign-on History**. You may see an authentication failure message in the report specifying that the System Account is disabled. [Learn more](connect-workday-to-microsoft-cloud-app-security.md#how-to-connect-workday-to-cloud-app-security-using-oauth)|

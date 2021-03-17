@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Managing API tokens
 description: This article provides information about generating and managing API tokens for Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Managing API tokens
 
@@ -55,7 +45,9 @@ The table provides details about when the token was generated and when it was la
 After a token is revoked, it's removed from the table, and the software that was using it fails to make API calls until a new token is provided.
 
 > [!NOTE]
-> SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table.
+>
+> - SIEM connectors and log collectors also use API tokens. These tokens should be managed from the log collectors and SIEM agent sections and do not appear in this table.
+> - Deprovisioned users API tokens are retained in Cloud App Security but cannot be used. Any attempt to use them will result in a permission denied response. However, we recommend that such tokens are revoked on the **API tokens** page.
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 

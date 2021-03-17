@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Connect Box to Cloud App Security
 description: This article provides information about how to connect your Box app to Cloud App Security using the API connector for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Connect Box to Microsoft Cloud App Security
 
@@ -62,7 +41,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 2. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
 
-3. In the **App connectors** page, click the plus sign button and select **Box**.
+3. In the **App connectors** page, click the plus sign (**+**) button and select **Box**.
 
     ![connect box](media/connect-box.png "connect box")
 

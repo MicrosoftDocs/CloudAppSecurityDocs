@@ -1,28 +1,8 @@
 ---
-# required metadata
 title: Protect apps in your environment using cloud service provider APIs
 description: This article describes how Cloud App Security protects your connected apps.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 02/20/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Protecting connected apps
 
@@ -38,7 +18,7 @@ The breadth of support for each app relies on the richness of its APIs. Use the 
 - [Protect Dropbox](protect-dropbox.md)
 - [Protect GitHub Enterprise Cloud](protect-github.md)
 - [Protect GCP](protect-gcp.md)
-- [Protect G Suite](protect-gsuite.md)
+- [Protect Google Workspace](protect-google-workspace.md)
 - [Protect Office 365](protect-office-365.md)
 - [Protect Okta](protect-okta.md)
 - [Protect Salesforce](protect-salesforce.md)

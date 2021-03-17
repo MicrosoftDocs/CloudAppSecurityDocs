@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Fetch - Alerts API
 description: This article describes the fetch request in Cloud App Security's Alerts API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Fetch - Alerts API
 
@@ -39,7 +29,7 @@ GET /api/v1/alerts/<pk>/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/"
 ```
 
 ### Response

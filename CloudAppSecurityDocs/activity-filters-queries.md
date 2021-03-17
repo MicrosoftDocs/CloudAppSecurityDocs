@@ -1,30 +1,8 @@
 ---
-# required metadata
-
 title: Working with Cloud App Security activity filters and queries
 description: This article provides a list of Cloud App Security activity filters and queries and explains how to work with them.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 12/10/2018
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Activity filters and queries
 
@@ -99,7 +77,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the 'is not set' operator.
   - User domain - Search for a specific user domain.
-  - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users. This is only relevant for connected G Suite instances using organizational units.
+  - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users. This is only relevant for connected Google Workspace instances using organizational units.
   - User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.
   - User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, click on the name of the user group. Clicking will take you to the Accounts page that lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
   - The **User group** and **User name** filters can be further filtered by using the **As** filter, and selecting the role of the user, which can be any of the following:
@@ -135,7 +113,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Admin activities - filters all your activities to display only those activities that involved admins.
 
-- Download activities - filters all your activities to display only those activities that were download activities, including download user list as a .csv vile, downloading of shared content and downloading a folder.
+- Download activities - filters all your activities to display only those activities that were download activities, including download user list as a .csv file, downloading of shared content, and downloading a folder.
 
 - Failed log in - filters all your activities to display only failed log-ons and failed sign in via SSO
 
@@ -143,7 +121,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Impersonation activities - filters all your activities to display only impersonation activities.
 
-- Mailbox activities - filters all your activities to display only Microsoft Exchange Online activities such as create item, purge messages from mailbox, update message and send message using Send As permissions (impersonation).
+- Mailbox activities - filters all your activities to display only Microsoft Exchange Online activities such as create item, purge messages from mailbox, update message, and send message using Send As permissions (impersonation).
 
 - Password changes and reset requests - filters all your activities to display only those activities that involving password reset, change password, and force user to change password on next sign-in.
 
@@ -151,7 +129,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link and granting read/write permissions.
 
-- Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from new device.
+- Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from a new device.
 
 ![query activities](media/queries-activity.png)
 

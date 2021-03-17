@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Attest your apps - Cloud App Security
+title: Attest your apps 
 description: This article provides instructions for attesting your apps in Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/30/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Attest your app
 
@@ -43,7 +22,7 @@ Follow the service attributes described below to successfully complete the submi
 | Hosting company | General | String | Free text | The name of the company that provides server hosting for the app. |
 | Founded | General | Integer | YYYY (no later than 2019) | The year in which the provider was founded. |
 | Holding | General | String | Private, Public | Displays whether the provider is a publicly or privately held company |
-| App domain | General | URL array* | Free text | The list of specific domains that are used to interact with the service. For example, 'teams.microsoft.com' for Microsoft Teams and not the generic domain ‘microsoft.com’. |
+| App domain | General | URL array* | Free text | The list of specific domains that are used to interact with the service. For example, 'teams.microsoft.com' for Microsoft Teams and not the generic domain 'microsoft.com'. |
 | Terms of service | General | URL | Free text | Does this app provide a set of regulations that users must agree to follow in order to use the app? |
 | Privacy policy | General | URL | Free text | A link to a legally binding document relating to how this provider handles customer, client, or employee information gathered as part of the app. |
 | Logon URL | General | URL array* | Free text | The URL through which users log on to the app. |
@@ -100,12 +79,12 @@ Follow the service attributes described below to successfully complete the submi
 | HITRUST CSF | Compliance | Boolean | True, False, N/A | Does this app comply with HITRUST CSF, a set of controls that harmonizes the requirements of information security regulations and standards? |
 | Jericho Forum Commandments | Compliance | Boolean | True, False | Does this app follow Jericho Forum Commandments, a set if principles to be observed when architecting systems for secure operation in de-perimeterized environments? |
 | ISO 27002 | Compliance | Boolean | True, False, N/A | Does this app comply with ISO 27002, which establishes common guidelines for organizational information security standards and information security management practices? |
-| FFIEC | Compliance | Boolean | True, False, N/A | Does this app comply with the Federal Financial Institutions Examination Council’s guidance on the risk management controls necessary to authenticate services in an Internet banking environment? |
+| FFIEC | Compliance | Boolean | True, False, N/A | Does this app comply with the Federal Financial Institutions Examination Council's guidance on the risk management controls necessary to authenticate services in an Internet banking environment? |
 | Data ownership | Legal | Boolean | True, False | Does this app fully preserve the user's ownership of uploaded data? |
 | DMCA | Legal | Boolean | True, False | Does this app comply with the Digital Millennium Copyright Act (DMCA), which criminalizes any attempt to unlawfully access copyrighted material? |
-| Data retention policy | Legal | Boolean | True, False | What is the app’s policy for user data retention after account termination? |
+| Data retention policy | Legal | Boolean | True, False | What is the app's policy for user data retention after account termination? |
 | GDPR readiness statement | Legal | URL | Free text | A link to your website, when relevant, relating how this provider plans to handle GDPR compliance. |
-| GDPR - Right to erasure | Legal | Boolean | True, False, N/A | Does this app stop processing and delete an individual’s personal data upon request? |
+| GDPR - Right to erasure | Legal | Boolean | True, False, N/A | Does this app stop processing and delete an individual's personal data upon request? |
 | GDPR - Report data breaches | Legal | Boolean | True, False, N/A | Does this app report data breaches to supervisory authorities and individuals affected by the breach, within 72 hours of breach detection? |
 | GDPR - Impact assessment | Legal | Boolean | True, False, N/A | Does this app conduct data protection impact assessments to identify risk to individuals? |
 | GDPR - Secure cross border data control | Legal | Boolean | True, False, N/A | Does this app securely transfer data across borders? |

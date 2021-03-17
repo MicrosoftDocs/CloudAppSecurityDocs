@@ -1,31 +1,9 @@
 ---
-# required metadata
-
 title: Integrate Microsoft Defender for Endpoint with Cloud App Security
 description: This article describes how to integrate Microsoft Defender for Endpoint with Cloud App Security for enhanced visibility into Shadow IT and risk management.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 10/29/2020
+ms.date: 02/10/2021
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
-
 # Microsoft Defender for Endpoint integration with Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -113,8 +91,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 > [!NOTE]
 >
-> - Defender for Endpoint forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
-> - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
+> - Defender for Endpoint sends reports every hour, with a maximum daily bandwidth of 4 MB (~4000 transactions) per endpoint.
 > - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoints and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Cloud App Security using the **Automated log upload** in order to get complete visibility. For an alternative way to view this traffic and investigate accessed URLs by devices behind the forward proxy, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
 ## Investigate device network events in Defender for Endpoint

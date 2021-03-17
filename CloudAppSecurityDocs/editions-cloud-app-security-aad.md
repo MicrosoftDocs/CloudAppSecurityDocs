@@ -1,29 +1,10 @@
 ---
-# required metadata
-
 title: Discovery capability differences for Cloud App Security and Azure AD
 description: This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure AD.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 8/29/2019
+ms.date: 02/22/2021
 ms.topic: overview
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
+
 # What are the differences in discovery capabilities for Azure Active Directory and Microsoft Cloud App Security?
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -47,7 +28,7 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 |Capability|Feature|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
 |Cloud Discovery|Discovered apps|16,000 + cloud apps|16,000 + cloud apps|
-||Deployment for discovery analysis|Manual and automatic log upload|Manual and automatic log upload|
+||Deployment for discovery analysis|Manual and automatic log upload|Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
 ||Log anonymization for user privacy|Yes|Yes|
 ||Access to full Cloud App Catalog|Yes|Yes|
 ||Cloud app risk assessment|Yes|Yes|
@@ -67,6 +48,6 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 
 ## Next steps
 
-Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).
+- Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].

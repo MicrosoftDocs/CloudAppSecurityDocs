@@ -1,20 +1,9 @@
 ---
-# required metadata
-title: Best practices for protecting your organization - Cloud App Security
+title: Best practices for protecting your organization 
 description: This article provides a set of best practices for protecting your organization.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: quickstart
 ms.date: 10/24/2019
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: quickstart
 ---
-
 # Cloud App Security best practices
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -24,6 +13,7 @@ This article provides best practices for protecting your organization by using M
 The best practices discussed in this article include:
 
 > [!div class="checklist"]
+>
 > * [Discover and assess cloud apps](#discover-and-assess-cloud-apps)
 > * [Apply cloud governance policies](#apply-cloud-governance-policies)
 > * [Limit exposure of shared data and enforce collaboration policies](#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
@@ -98,7 +88,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ---
 
 **Best practice**: Connect third-party apps  
-**Detail**: Connecting third-party apps to Cloud App Security gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [G Suite](connect-google-apps-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
+**Detail**: Connecting third-party apps to Cloud App Security gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [Google Workspace](connect-google-workspace-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)

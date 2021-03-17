@@ -1,21 +1,8 @@
 ---
-# required metadata
-
 title: Connect Google Cloud Platform to Cloud App Security
 description: This article provides information about how to connect your Google Cloud Platform to Cloud App Security using the API connector for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 06/28/2020
 ms.topic: how-to
-ms.service: cloud-app-security
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
 ---
 # Connect Google Cloud Platform to Microsoft Cloud App Security
 
@@ -23,7 +10,7 @@ ms.collection: M365-security-compliance
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Cloud App Security protects GCP, see [Protect GCP](protect-gcp.md).
 
-We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a G Suite instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected G Suite organization** steps when you add the GCP connection details.
+We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a Google Workspace instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected Google Workspace organization** steps when you add the GCP connection details.
 
 ## Prerequisites
 
@@ -132,11 +119,11 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
     > [!NOTE]
-    > We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
+    > We recommended that you connect your Google Workspace instance to get unified user management and governance. This is the recommended even if you do not use any Google Workspace products and the GCP users are managed via the Google Workspace user management system.
 
     **For a new connector**
 
-    1. Click the plus sign followed by **Google Cloud Platform**.
+    1. Click the plus sign (**+**) followed by **Google Cloud Platform**.
 
         ![connect GCP](media/connect-gcp-add.png)
 

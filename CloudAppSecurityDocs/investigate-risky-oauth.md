@@ -1,31 +1,10 @@
 ---
-# required metadata
-
-title: Investigate risky OAuth apps - Cloud App Security
-description: This article provides information on how to investigate risky OAuth apps in Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 9/1/2019
+title: Investigate and remediate risky OAuth apps tutorial
+description: This tutorial provides information on how to investigate and remediate risky OAuth apps in Cloud App Security.
+ms.date: 02/24/2021
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
-# Tutorial: Investigate risky OAuth apps
+# Tutorial: Investigate and remediate risky OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -44,6 +23,14 @@ For example, the following OAuth app consent page might look legitimate to the a
 As a security admin, you need visibility and control over the apps in your environment and that includes the permissions they have. You need the ability to prevent use of apps that require permission to resources you wish to revoke. Therefore, Microsoft Cloud App Security provides you with the ability to investigate and monitor the app permissions your users granted. This article is dedicated to helping you investigate the OAuth apps in your organization, and focus on the apps that are more likely to be suspicious.
 
 Our recommended approach is to investigate the apps by using the abilities and information provided in the Cloud App Security portal to filter out apps with a low chance of being risky, and focus on the suspicious apps.
+
+In this tutorial, you'll learn how to:
+
+> [!div class="checklist"]
+>
+> - [Detect risky OAuth apps](#how-to-detect-risky-oauth-apps)
+> - [Investigate risky OAuth apps](#how-to-investigate-suspicious-oauth-apps)
+> - [Remediate risky OAuth apps](#how-to-remediate-suspicious-oauth-apps)
 
 ## How to detect risky OAuth apps
 
@@ -74,7 +61,7 @@ You can set policies to automatically send you notifications when an OAuth app m
 
     ![OAuth app drawer](media/oauth-drawer.png)
 
-## How to investigate
+## How to investigate suspicious OAuth apps
 
 After you determine that an app is suspicious and you want to investigate it, we recommend the following key principles for efficient investigation:
 
@@ -92,7 +79,7 @@ After you determine that an app is suspicious and you want to investigate it, we
 1. If the app is still suspicious, you can research the app name, publisher, and URL online.
 1. You can export the OAuth app audit for further analysis of the users who authorized an app. For more information, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
 
-## How to remediate
+## How to remediate suspicious OAuth apps
 
 After you determine that an OAuth app is risky, Cloud App Security provides the following remediation options:
 

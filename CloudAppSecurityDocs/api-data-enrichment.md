@@ -1,74 +1,50 @@
 ---
-# required metadata
-title: Create IP address range - Data Enrichment API
-description: This article describes the create IP address range request in Cloud App Security's Data Enrichment API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 03/27/2020
+title: Cloud App Security Data Enrichment API
+description: This article provides information about using the Data Enrichment API.
+ms.date: 12/13/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
-# Create IP address range - Data Enrichment API
+# Data Enrichment API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Run the POST request to add a new IP address range.
+The Data Enrichment API enables you to manage identifiable IP address ranges, such as your physical office IP addresses. IP address ranges allow you to tag, categorize, and customize the way logs and alerts are displayed and investigated. For more information, see [Working with IP ranges and tags](ip-tags.md).
 
-## HTTP request
+The following lists the supported requests:
 
-```rest
-POST /api/v1/subnet/
-```
+- [List IP address ranges](api-data-enrichment-list.md)
+- [Create IP address range](api-data-enrichment-create.md)
+- [Update IP address range](api-data-enrichment-update.md)
+- [Delete IP address range](api-data-enrichment-delete.md)
 
-## Request BODY parameters
+## Properties
 
-| Parameter | Description |
-| --- | --- |
-| category | The id of the range category |
-| subnets | An array of masks as strings (IPv4 / IPv6) |
-| organization (Optional) | The registered ISP |
-| tags (Optional) | An array of tags (objects with "text" property set with the tag name) - new or existing |
+The response object defines the following properties.
 
-The following categories are currently supported:
+| Property | Type | Description |
+| --- | --- | --- |
+| total | int | Total number of record |
+| hasNext | bool | Indicates whether there are additional records |
+| data | list | List of the existing records |
+| _id | string | Unique id of the IP range |
+| name | string | The unique name of the range |
+| subnets | list | An array of masks, IP addresses (IPv4 / IPv6), and original strings |
+| location | string | An object including the location name, latitude, longitude, country code, and country name |
+| organization | string | The registered ISP |
+| tags| list | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
+| category | int | The category of the IP range. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
+| lastModified | long | Timestamp of the last rule changed |
 
-| Category | Id |
-| --- | -- |
-| Corporate | 1 |
-| Administrative | 2 |
-| Risky | 3 |
-| VPN | 4 |
-| Cloud provider | 5 |
-| Other | 6 |
+## Filters
 
-## Example
+For information about how filters work, see [Filters](api-introduction.md#filters).
 
-### Request
+The following table describes the supported filters:
 
-Here is an example of the request.
-
-```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
-  "name":"range name",
-  "category":5,
-  "organization":"Microsoft",
-  "subnets":[
-    "192.168.1.0/24",
-    "192.168.2.0/16"
-  ],
-  "tags":[
-    "existing tag"
-  ]
-}'
-```
-
-### Response
-
-Returns the id of the new range as a string.
+| Filter | Type | Operators | Description |
+| --- | --- | --- | --- |
+| category | integer | eq, neq | Filter IP ranges by category. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
+| tags | string | eq, neq | Filter IP ranges by tag IDs |
+| builtIn | bool | eq | Filter IP ranges by type. Possible values include: **true** (built-in) or **false** (custom) |
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Initiate file upload - Cloud Discovery API
 description: This article describes the upload_url request in Cloud App Security's Cloud Discovery API.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/21/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Initiate file upload - Cloud Discovery API
 
@@ -100,7 +90,7 @@ The following source types are currently supported:
 Here is an example of the request.
 
 ```rest
-curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/upload_url/?filename=my_discovery_file.txt&source=LOG_3COM"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/upload_url/?filename=my_discovery_file.txt&source=GENERIC_CEF"
 ```
 
 ### Response

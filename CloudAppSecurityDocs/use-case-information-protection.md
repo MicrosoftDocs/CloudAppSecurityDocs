@@ -1,30 +1,8 @@
 ---
-# required metadata
-
-title: Automatically apply Azure Information Protection classification labels
+title: Automatically apply Azure Information Protection classification labels tutorial
 description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 3/5/2019
+ms.date: 02/24/2021
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-#Customer intent: As a sec op, I want to apply AIP labels automatically so that I can monitor classified files.
-
 ---
 # Tutorial: Automatically apply Azure Information Protection classification labels
 
@@ -32,12 +10,12 @@ ms.custom: seodec18
 
 In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Cloud App Security helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
 
-This tutorial helps you identify which public permissions are set on a document that's saved in your cloud storage, so you are alerted when a breach occurs. In addition, you can automatically apply your Azure Information Protection **Confidential** classification label to provide added encryption to files.
+In this tutorial, you'll learn how to identify which public permissions are set on a document that's saved in your cloud storage, so you are alerted when a breach occurs. In addition, you can automatically apply your Azure Information Protection **Confidential** classification label to provide added encryption to files.
 
 > [!div class="checklist"]
 >
-> * Set up data protection
-> * Validate your policy
+> - [Set up data protection](#set-up-data-protection)
+> - [Validate your policy](#validate-your-policy)
 
 ## Enhanced data-level encryption protection
 
@@ -51,12 +29,12 @@ A user in your organization saves confidential customer information files to Box
 
 ## The solution
 
-Use Cloud App Security with Azure Information Protection to embed classification and protection information for persistent protection that follows your data — so it stays protected no matter where it’s stored or who it’s shared with. This protection enables you to share data safely with coworkers, customers, and partners. Define who can access data and what they can do with it. For instance, allow users to view and edit files but not print or forward. You can also add other [governance actions](governance-actions.md) supported by Cloud App Security to the files such as remove collaborators and remove sharing abilities.
+Use Cloud App Security with Azure Information Protection to embed classification and protection information for persistent protection that follows your data — so it stays protected no matter where it's stored or who it's shared with. This protection enables you to share data safely with coworkers, customers, and partners. Define who can access data and what they can do with it. For instance, allow users to view and edit files but not print or forward. You can also add other [governance actions](governance-actions.md) supported by Cloud App Security to the files such as remove collaborators and remove sharing abilities.
 
 ## Prerequisites
 
-* [Enable Cloud App Security and Azure Information Protection](azip-integration.md) for your tenant.
-* [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Cloud App Security.
+- [Enable Cloud App Security and Azure Information Protection](azip-integration.md) for your tenant.
+- [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Cloud App Security.
 
 ## Set up data protection
 
@@ -66,39 +44,39 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
     1. On the **Control** tab, click [**Policies**](control-cloud-apps-with-policies.md).
 
-    2. Click **Create policy** and select **File policy**.
+    1. Click **Create policy** and select **File policy**.
 
-    3. Call the policy *Box data protection*.
+    1. Call the policy *Box data protection*.
 
-    4. Under **Create a filter for the files this policy will act on**, target your proprietary and sensitive data.
-        * For example, select **Parent folder** equals **Customer data** in Box and select **Owner** equals the finance team.
+    1. Under **Create a filter for the files this policy will act on**, target your proprietary and sensitive data.
+        - For example, select **Parent folder** equals **Customer data** in Box and select **Owner** equals the finance team.
 
-    5. Within that folder, look for files containing credit card information. Under **Content inspection method**, select **Built-in DLP**, select **Include files that match a preset expression**, and select **All countries:Finance:Credit card number**.
+    1. Within that folder, look for files containing credit card information. Under **Content inspection method**, select **Built-in DLP**, select **Include files that match a preset expression**, and select **All countries:Finance:Credit card number**.
 
-    6. Under **Governance**, open the **Box** section and select **Apply classification label**. Select the label you want to apply.
+    1. Under **Governance**, open the **Box** section and select **Apply classification label**. Select the label you want to apply.
 
-    7. Because [Cloud App Security is integrated with Azure Information Protection](azip-integration.md), you can select from your existing list of classification labels to be used to protect the data.
+    1. Because [Cloud App Security is integrated with Azure Information Protection](azip-integration.md), you can select from your existing list of classification labels to be used to protect the data.
 
-    8. Click **Create**.
+    1. Click **Create**.
 
    ![Add classification label to policy](media/aip-auto-policy.png)
 
-2. Investigating your matches
+1. Investigating your matches
 
     1. In the **Policies** page, click on the policy name to go to the **Policy report**. Review the matches that were triggered for the policy.
 
-    2. You can investigate the match by clicking on a specific match to open the file drawer. In the drawer, you can see the other policies that this file matched.
+    1. You can investigate the match by clicking on a specific match to open the file drawer. In the drawer, you can see the other policies that this file matched.
 
 ## Validate your policy
 
 1. To simulate an alert, go to your Box account and try to access a file in the folder **Customer data**.
-2. Go to the policy report. A file policy match should appear shortly.
-3. You can click on the match to see which files were protected. The match itself will be masked to protect the sensitive data.
+1. Go to the policy report. A file policy match should appear shortly.
+1. You can click on the match to see which files were protected. The match itself will be masked to protect the sensitive data.
 
 >[!NOTE]
 >
-> *- Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
-> *- When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> - Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
+> - When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
 
 ## Next steps
 

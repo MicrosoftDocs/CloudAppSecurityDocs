@@ -1,18 +1,8 @@
 ---
-# required metadata
 title: Cloud App Security REST API
 description: This article describes how to interact with Cloud App Security over HTTPS.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 03/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: cloud-app-security
-
-# optional metadata
-ms.suite: ems
 ---
 # Cloud App Security REST API
 
@@ -67,10 +57,10 @@ The following table describes the actions supported:
 
 |Resource|HTTP verbs|URI routes|
 |---|---|---|
-|Discovery|GET, POST, or PUT|/api/v1/discovery/|
-|Data enrichment|POST|/api/subnet/|
 |Activities|GET or POST|/api/v1/activities/|
 |Alerts|GET or POST|/api/v1/alerts/|
+|Cloud Discovery|GET, POST, or PUT|/api/v1/discovery/|
+|Data Enrichment|GET, POST, or DELETE|/api/subnet/|
 |Entities|GET or POST|/api/v1/entities/|
 |Files|GET or POST|/api/v1/files/|
 

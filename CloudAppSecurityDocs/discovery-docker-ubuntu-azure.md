@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Configure automatic log upload using Docker in Azure 
 description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Linux in Azure.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 06/02/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Docker on Linux in Azure
 
@@ -111,7 +90,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
     >
     > * A single Log collector can handle multiple data sources.
     > * Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-advanced-management.md#changing-the-ftp-password).
 
 ### Step 2 – Deployment of your machine in Azure
 
@@ -140,13 +119,85 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 1. Change to root privileges using `sudo -i`.
 
-1. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the following command:
+1. If you accept the [software license terms](https://go.microsoft.com/fwlink/?linkid=862492), uninstall old versions and install Docker CE by running the commands appropriate for your environment:
+
+#### [CentOS](#tab/centos)
+
+1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
+1. Install Docker engine prerequisites: `yum install -y yum-utils`
+1. Add Docker repository:
 
     ```bash
-    curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
     ```
 
-    ![Ubuntu Azure command](media/ubuntu-azure-command.png)
+1. Install Docker engine: `yum -y install docker-ce`
+1. Start Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+#### [Red Hat](#tab/red-hat)
+
+1. Remove old versions of Docker: `yum erase docker docker-engine docker.io`
+1. Install Docker engine prerequisites:
+
+    ```bash
+    yum install -y yum-utils
+    yum install -y https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm
+    ```
+
+1. Add Docker repository:
+
+    ```bash
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    yum makecache
+    ```
+
+1. Install Docker engine: `yum -y install docker-ce`
+1. Start Docker
+
+    ```bash
+    systemctl start docker
+    systemctl enable docker
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+#### [Ubuntu](#tab/ubuntu)
+
+1. Remove old versions of Docker: `apt-get remove docker docker-engine docker.io`
+1. If you are installing on Ubuntu 14.04, install the linux-image-extra package.
+
+    ```bash
+    apt-get update -y
+    apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+    ```
+
+1. Install Docker engine prerequisites:
+
+    ```bash
+    apt-get update -y
+    (apt-get install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - )
+    ```
+
+1. Verify that the apt-key fingerprint UID is docker@docker.com: `apt-key fingerprint | grep uid`
+1. Install Docker engine:
+
+    ```bash
+    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    apt-get update -y
+    apt-get install -y docker-ce
+    ```
+
+1. Test Docker installation: `docker run hello-world`
+
+---
 
 1. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
@@ -155,7 +206,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 1. Run the command to deploy the log collector.
 
     ```bash
-    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
     ![Ubuntu proxy](media/ubuntu-proxy.png)
@@ -180,6 +231,11 @@ Check the collector status in the **Log collector** table and make sure the stat
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 
+Alternatively, you can check the log collector status from within the docker container using the following commands:
+
+1. Log in to the container by using this command: `docker exec -it <Container Name> bash`
+1. Verify the log collector status using this command: `collector_status -p`
+
 If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
 ### Optional - Create custom continuous reports
@@ -195,6 +251,6 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [Modify the log collector FTP configuration](log-collector-advanced-management.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

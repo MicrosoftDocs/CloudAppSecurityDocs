@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Create policies to control OAuth apps in Cloud App Security
 description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 11/27/2019
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # OAuth app policies
 
@@ -31,7 +10,7 @@ ms.custom: seodec18
 
 In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies to so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users.
 
-OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, G Suite, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will revoke permissions for each app for each user who authorized it.
+OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will revoke permissions for each app for each user who authorized it.
 
 ## Create a new OAuth app policy
 
@@ -70,7 +49,9 @@ In addition to OAuth app policies you can create, there are the following out-of
 -->
 
 > [!NOTE]
-> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+>
+> - Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> - The severity of OAuth app anomaly detection policies cannot be modified.
 
 ## Next steps
 

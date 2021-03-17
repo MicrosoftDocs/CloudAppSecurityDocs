@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Working with the risk score - Cloud App Security
+title: Working with the risk score 
 description: This article provides instructions for how to use and customize the Cloud App Security app risk score.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 1/27/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Working with App risk scores
 

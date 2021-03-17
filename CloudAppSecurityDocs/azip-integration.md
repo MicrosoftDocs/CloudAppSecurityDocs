@@ -1,31 +1,9 @@
 ---
-# required metadata
-
 title: Integrate Azure Information Protection with Cloud App Security
 description: This article provides information about how to leverage your Azure Information Protection tags in Cloud App Security for added control of your organization's cloud app use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 12/09/2019
+ms.date: 12/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
-
 # Azure Information Protection integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -42,10 +20,10 @@ By integrating Azure Information Protection into Cloud App Security, you can use
 - The ability to investigate according to classification level, and quantify exposure of sensitive data over your cloud applications
 - The ability to create policies to make sure classified files are being handled properly
 
-> [!NOTE]
-> To enable this feature, you need both a Cloud App Security license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Cloud App Security syncs the organizations labels from the Azure Information Protection service.
-
 ## Prerequisites
+
+> [!NOTE]
+> To enable this feature, you need both a Cloud App Security license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Cloud App Security syncs the organization's labels from the Azure Information Protection service.
 
 - To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
@@ -60,9 +38,7 @@ Cloud App Security currently supports applying Azure Information Protection clas
   > [!NOTE]
   > For PDF, you must use unified labels.
 
-This feature is currently available for files stored in Box, G Suite, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
-
-Files that were labeled with protection outside of Cloud App Security can't be changed by Cloud App Security. However, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
+This feature is currently available for files stored in Box, Google Workspace, SharePoint Online, and OneDrive for Business. More cloud apps will be supported in future versions.
 
 ## How it works
 
@@ -80,6 +56,11 @@ You're probably familiar with file classification labels in [Azure Information P
 4. After you enable Azure Information Protection on Cloud App Security, all new files that are added to your connected cloud apps will be scanned for classification labels.
 
 5. You can create new policies within Cloud App Security that apply your classification labels automatically.
+
+> [!NOTE]
+>
+> - Files that were labeled with protection outside of Cloud App Security can't be changed by Cloud App Security. However, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
+> - Conversely, files labeled by Cloud App Security and uploaded to SharePoint or OneDrive and the label applied encryption by using an account from a service principal name, the files can't be opened in Office on the web. Example scenarios include Cloud App Security and a file sent to Teams by email.
 
 ## How to integrate Azure Information Protection with Cloud App Security
 
@@ -144,7 +125,9 @@ Follow these instructions to create the file policy:
     ![Apply label](media/aip-gov-action.png)
 
 > [!NOTE]
-> The ability to automatically apply an Azure Information Protection label through file policy is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
+>
+> - The ability to automatically apply an Azure Information Protection label through file policy is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
+> - When a policy is disabled, all pending labeling tasks for that policy are suspended.
 
 ### Control file exposure
 

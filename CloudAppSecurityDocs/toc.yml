@@ -1,3 +1,4 @@
+items:
 - name: Microsoft Cloud App Security documentation
   href: index.yml
 - name: Overview
@@ -14,7 +15,7 @@
       href: editions-cloud-app-security-o365.md
     - name: Azure AD Cloud App Discovery
       href: editions-cloud-app-security-aad.md
-    - name: US Government GCC High
+    - name: Cloud App Security for US Government
       href: editions-cloud-app-security-gcc.md
 - name: Quickstarts
   expanded: true
@@ -73,8 +74,8 @@
       href: protect-github.md
     - name: Protect GCP
       href: protect-gcp.md
-    - name: Protect G Suite
-      href: protect-gsuite.md
+    - name: Protect Google Workspace
+      href: protect-google-workspace.md
     - name: Protect Office 365
       href: protect-office-365.md
     - name: Protect Okta
@@ -87,6 +88,10 @@
       href: protect-webex.md
     - name: Protect Workday
       href: protect-workday.md
+  - name: Security
+    items:
+    - name: Security baseline
+      href: security-baseline.md
 - name: How-to guides
   items:
   - name: Basic set up
@@ -115,7 +120,7 @@
       items:
       - name: Set up Cloud Discovery
         href: set-up-cloud-discovery.md
-      - name: Integrate with Microsoft Defender ATP
+      - name: Integrate with Microsoft Defender for Endpoint
         href: mde-integration.md
       - name: Integrate with Zscaler
         href: zscaler-integration.md
@@ -123,6 +128,8 @@
         href: iboss-integration.md
       - name: Integrate with Corrata
         href: corrata-integration.md
+      - name: Integrate with Menlo
+        href: menlo-integration.md
       - name: Create snapshot Cloud Discovery reports
         href: create-snapshot-cloud-discovery-reports.md
       - name: Configure automatic log upload for continuous reports
@@ -133,10 +140,8 @@
         href: discovery-docker-ubuntu.md
       - name: Docker on Linux in Azure
         href: discovery-docker-ubuntu-azure.md
-      - name: Log collector FTP configuration
-        href: log-collector-ftp.md
-      - name: Log collector behind a proxy
-        href: log-collector-proxy.md
+      - name: Advanced log collector management
+        href: log-collector-advanced-management.md
       - name: Use the custom log parser
         href: custom-log-parser.md
     - name: Cloud Discovery enrichment
@@ -161,8 +166,8 @@
       href: connect-dropbox-to-microsoft-cloud-app-security.md
     - name: Connect GitHub
       href: connect-github-ec-to-microsoft-cloud-app-security.md
-    - name: Connect G Suite
-      href: connect-google-apps-to-microsoft-cloud-app-security.md
+    - name: Connect Google Workspace
+      href: connect-google-workspace-to-microsoft-cloud-app-security.md
     - name: Connect GCP
       href: connect-google-gcp-to-microsoft-cloud-app-security.md
     - name: Connect Office 365
@@ -184,7 +189,11 @@
     - name: Onboard and deploy Conditional Access App Control for any apps
       href: proxy-deployment-any-app.md
     - name: Configuring your PingOne IdP
-      href: proxy-idp-examples.md
+      href: proxy-idp-pingone.md
+    - name: Configuring your AD FS IdP
+      href: proxy-idp-adfs.md
+    - name: Configuring your Okta IdP
+      href: proxy-idp-okta.md
   - name: Investigation
     href: investigate.md
     items:
@@ -225,20 +234,18 @@
     - name: Control cloud apps with policies
       href: control-cloud-apps-with-policies.md
       items:
-      - name: Cloud Discovery policies
-        href: cloud-discovery-policies.md
+      - name: Threat detection
         items:
-        - name: Cloud Discovery anomaly detection policy
-          href: cloud-discovery-anomaly-detection-policy.md
-      - name: Activity policies
-        href: user-activity-policies.md
-      - name: Anomaly detection policies
-        href: anomaly-detection-policy.md
-      - name: OAuth policies
-        href: app-permission-policy.md
-      - name: File policies
-        href: data-protection-policies.md
+        - name: Activity policies
+          href: user-activity-policies.md
+        - name: Anomaly detection policies
+          href: anomaly-detection-policy.md
+        - name: OAuth policies
+          href: app-permission-policy.md
+      - name: Information protection
         items:
+        - name: File policies
+          href: data-protection-policies.md
         - name: Content inspection
           href: content-inspection.md
           items:
@@ -248,12 +255,18 @@
             href: dcs-inspection.md
           - name: Working with the RegEx engine
             href: working-with-the-regex-engine.md
-      - name: Conditional Access App Control policies
+      - name: Conditional Access policies
         items:
         - name: Access policies
           href: access-policy-aad.md
         - name: Session policies
           href: session-policy-aad.md
+      - name: Shadow IT policies
+        items:
+        - name: Cloud Discovery policy
+          href: cloud-discovery-policies.md
+        - name: Cloud Discovery anomaly detection policy
+          href: cloud-discovery-anomaly-detection-policy.md
       - name: Policy template reference
         href: policy-template-reference.md
     - name: Govern connected apps
@@ -276,14 +289,8 @@
         href: icap-stunnel.md
       - name: Additional integrations
         href: additional-integrations.md
-    - name: Automate processes and workflows
-      items:
-      - name: Use the REST API
-        href: api-tokens.md
-      - name: Investigate activities with APIs
-        href: investigate-activities-api.md  
-      - name: Use Microsoft Power Automate
-        href: flow-integration.md
+    - name: Automate processes using Microsoft Power Automate
+      href: flow-integration.md
 - name: Reference
   items:
   - name: Attest your app
@@ -302,26 +309,12 @@
       href: api-introduction.md
     - name: Authentication
       href: api-authentication.md
-    - name: Cloud Discovery
-      items:
-      - name: Overview
-        href: api-discovery.md
-      - name: Initiate file upload
-        href: api-discovery-initiate.md
-      - name: Perform file upload
-        href: api-discovery-perform.md
-      - name: Finalize file upload
-        href: api-discovery-finalize.md
-      - name: Generate block script
-        href: api-discovery-script.md
-    - name: Data Enhancement
-      items:
-      - name: Create IP address range
-        href: api-data-enrichment.md
     - name: Activities
       items:
       - name: Overview
         href: api-activities.md
+      - name: Investigate activities with APIs
+        href: api-activities-investigate-script.md
       - name: List activities
         href: api-activities-list.md
       - name: Fetch activity
@@ -346,6 +339,42 @@
         href: api-alerts-mark-read.md
       - name: Mark alert as unread
         href: api-alerts-mark-unread.md
+    - name: Cloud Discovery
+      items:
+      - name: Overview
+        href: api-discovery.md
+      - name: Initiate file upload
+        href: api-discovery-initiate.md
+      - name: Perform file upload
+        href: api-discovery-perform.md
+      - name: Finalize file upload
+        href: api-discovery-finalize.md
+      - name: List continuous reports
+        href: api-discovery-list-streams.md
+      - name: List continuous report categories
+        href: api-discovery-list-categories.md
+      # - name: List app tags
+      #   href: api-discovery-list-app-tags.md
+      # - name: Create app tag
+      #   href: api-discovery-create-app-tag.md
+      # - name: Delete app tag
+      #   href: api-discovery-delete-app-tag.md
+      - name: Generate block script
+        href: api-discovery-script.md
+    - name: Data Enrichment
+      items:
+      - name: Overview
+        href: api-data-enrichment.md
+      - name: Manage IP address ranges using the API
+        href: api-data-enrichment-manage-script.md
+      - name: List IP ranges
+        href: api-data-enrichment-list.md
+      - name: Create IP address range
+        href: api-data-enrichment-create.md
+      - name: Update IP address range
+        href: api-data-enrichment-update.md
+      - name: Delete IP address range
+        href: api-data-enrichment-delete.md
     - name: Entities
       items:
       - name: Overview

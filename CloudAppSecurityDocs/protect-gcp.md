@@ -1,20 +1,9 @@
 ---
-# required metadata
 title: How Cloud App Security helps protect your Google Cloud Platform environment
 description: This article provides information about the benefits of connecting your Google Cloud Platform app to Cloud App Security using the API connector for visibility and control over use.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 09/15/2020
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: article
 ---
-
 # How Cloud App Security helps protect your Google Cloud Platform (GCP) environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -53,7 +42,7 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 | Type | Action |
 | ---- | ---- |
-| User governance | - Require user to reset password to Google (requires connected linked G Suite instance)<br />- Suspend user (requires connected linked G Suite instance)<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
+| User governance | - Require user to reset password to Google (requires connected linked Google Workspace instance)<br />- Suspend user (requires connected linked Google Workspace instance)<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 

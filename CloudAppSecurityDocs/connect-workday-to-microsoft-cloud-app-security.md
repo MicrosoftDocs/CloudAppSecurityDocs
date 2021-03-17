@@ -1,29 +1,8 @@
 ---
-# required metadata
-
 title: Connect Workday to Cloud App Security (Preview)
 description: This article provides information about how to connect your Workday app to Cloud App Security using the API connector for visibility and control over use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 11/10/2020
+ms.date: 02/09/2021
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Connect Workday to Microsoft Cloud App Security
 
@@ -34,6 +13,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ## Quick start
 
 Watch our quick start video showing how to configure the prerequisites and perform the steps in Workday. Once you've completed the steps in the video, you can proceed to [add the Workday connector](#add-connector).
+
+> [!NOTE]
+> The video does not show the prerequisite step for configuring the security group **Set Up: Tenant Setup –  System** permission. Make sure you configure it as well.
 
 <br />
 
@@ -46,6 +28,7 @@ The Workday account used for connecting to Cloud App Security must be a member o
 | Functional area | Domain Security policy | Subdomain Security policy | Report/Task Permissions | Integration Permissions |
 | --- | --- | --- | --- | --- |
 | System | Set Up: Tenant Setup – General | Set Up: Tenant Setup –  Security | View, Modify | Get, Put |
+| System | Set Up: Tenant Setup – General | Set Up: Tenant Setup –  System | Modify | None |
 | System | Security Administration | | View, Modify | Get, Put |
 | System | System auditing | | View | Get |
 | Staffing | Worker Data: Staffing | Worker Data: Public Worker Reports | View | Get |

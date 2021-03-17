@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Monitor and protect files in cloud apps - Cloud App Security
+title: Monitor and protect files in cloud apps 
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 10/7/2019
+ms.date: 01/05/2021
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # File policies
 
@@ -58,7 +37,7 @@ The following are examples of file policies that can be created:
 
 * **Sharing with external domains** - Receive an alert about any file shared with accounts owned by specific external domains. For example, files shared with a competitor's domain. Select the external domain with which you want to limit sharing.
 
-* **Quarantine shared files not modified during the last period** - Receive an alert about shared files that no one modified recently, to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren't modified during a specified date range. On G Suite, you can choose to quarantine these files, using the 'quarantine file' checkbox on the policy creation page.
+* **Quarantine shared files not modified during the last period** - Receive an alert about shared files that no one modified recently, to quarantine them or choose to turn on an automated action. Exclude all the Private files that  weren't modified during a specified date range. On Google Workspace, you can choose to quarantine these files, using the 'quarantine file' checkbox on the policy creation page.
 
 * **Sharing with unauthorized users** - Receive an alert about files shared with unauthorized group of users in your organization. Select the users for whom sharing is unauthorized.
 
@@ -68,9 +47,11 @@ The following are examples of file policies that can be created:
 
 To create a new file policy, follow this procedure:
 
-1. In the console, click on **Control** followed by **Policies**.
+1. Go to **Control** > **Policies** > **Information Protection**.
 
-1. Click **Create policy** and select **File** policy.
+1. Click **Create policy** and select **File policy**.
+
+    ![Create a Information Protection policy](media/create-policy-from-information-protection-tab.png)
 
 1. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
@@ -130,6 +111,11 @@ To make investigation even simpler, you can now create custom queries and save t
 1. In the **Save query** pop-up, name your query.
 
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
+
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Information protection webinar](webinars.md#on-demand-webinars)
 
 ## Next steps
 

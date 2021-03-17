@@ -1,19 +1,9 @@
 ---
-
-# required metadata
-title: Read our e-books - Cloud App Security
+title: Read our e-books 
 description: Displays a listing of ebooks, including a description.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: conceptual
 ms.date: 8/22/2019
-
-# optional metadata
-ms.collection: M365-security-compliance
-
+ms.topic: conceptual
 ---
-
 # Microsoft Cloud App Security e-books
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]

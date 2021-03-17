@@ -1,25 +1,8 @@
 ---
-# required metadata
-
-title: Connect apps to get visibility and control - Cloud App Security
+title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 07/14/2020
+ms.date: 03/10/2021
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 # Connect apps
 
@@ -27,7 +10,7 @@ ms.custom: seodec18
 
 App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Cloud App Security over the apps you connect to.
 
-Microsoft Cloud App Security leverages the APIs provided by the cloud provider. Each service has its own framework and API limitations such as throttling, API limits, dynamic time-shifting API windows, and others. Microsoft Cloud App Security worked with the services to optimize the usage of the APIs and to provide the best performance. Taking into account different limitations services impose on the APIs, the Cloud App Security engines use the allowed capacity. Some operations, such as scanning all files in the tenant, require numerous APIs so they're spread over a longer period. Expect some policies to run for several hours or several days.
+Microsoft Cloud App Security leverages the APIs provided by the cloud provider. All communication between Cloud App Security and connected apps is encrypted using HTTPS. Each service has its own framework and API limitations such as throttling, API limits, dynamic time-shifting API windows, and others. Microsoft Cloud App Security worked with the services to optimize the usage of the APIs and to provide the best performance. Taking into account different limitations services impose on the APIs, the Cloud App Security engines use the allowed capacity. Some operations, such as scanning all files in the tenant, require numerous APIs so they're spread over a longer period. Expect some policies to run for several hours or several days.
 
 ## Multi-instance support
 
@@ -43,8 +26,9 @@ Cloud App Security is deployed with system admin privileges to allow full access
 The App Connector flow is as follows:
 
 1. Cloud App Security scans and saves authentication permissions.
-2. Cloud App Security requests the user list. The first time the request is done, it may take some time until the scan completes. After the user scan is over, Cloud App Security moves on to activities and files. As soon as the scan starts, some activities will be available in Cloud App Security.
-3. After completion of the user request, Cloud App Security periodically scans users, groups, activities, and files. All activities will be available after the first full scan.
+
+1. Cloud App Security requests the user list. The first time the request is done, it may take some time until the scan completes. After the user scan is over, Cloud App Security moves on to activities and files. As soon as the scan starts, some activities will be available in Cloud App Security.
+1. After completion of the user request, Cloud App Security periodically scans users, groups, activities, and files. All activities will be available after the first full scan.
 
 This connection may take some time depending on the size of the tenant, the number of users, and the size and number of files that need to be scanned.
 
@@ -66,22 +50,22 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following table lists, per cloud app, which abilities are supported with App connectors:
 
-| | AWS | Box | Dropbox | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
-|-|-|-|-|-|-|-|-|-|-|-|-|
-| **List accounts** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **List groups** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | | Not supported by provider |
-| **List privileges** | | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
-| **User governance** | | ✔ | Coming soon | Subject G Suite connection | ✔ | ✔ | | Coming soon | ✔ | Coming soon | Not supported by provider |
-| **Log on activity** | ✔ | ✔ | ✔ | Subject G Suite connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **User activity** | Not applicable | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
-| **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
-| **DLP - Periodic scan** | | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
-| **DLP - Near real-time scan** | | ✔ | | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | | | ✔ | Not supported by provider |
-| **Sharing control** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by provider |
-| **File governance** | ✔ | ✔ | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
-| **View app permissions** | Not applicable | Not supported by provider | Coming on | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-| **Revoke app permissions** | Not applicable | Not supported by provider | ming soon | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-| **Apply Azure Information Protection labels** | Not applicable | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
+| | AWS | Azure| Box | Dropbox | GitHub | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| **List accounts** | ✔ | ✔ | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **List groups** | | ✔ | ✔ | ✔ | | Subject Google Workspace connection | ✔ | ✔ | | ✔ | ✔ | | Not supported by provider |
+| **List privileges** | | | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
+| **User governance** | | | ✔ | Coming soon | | Subject Google Workspace connection | ✔ | ✔ | | | ✔ | | Not supported by provider |
+| **Log on activity** | ✔ | ✔ | ✔ | ✔ | | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **User activity** | Not applicable | | ✔ | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
+| **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
+| **DLP - Periodic scan** | | | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
+| **DLP - Near real-time scan** | ✔ | | ✔ | ✔ | | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
+| **Sharing control** | ✔ | | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by provider |
+| **File governance** | ✔ | | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
+| **View app permissions** | Not applicable | | Not supported by provider | Coming soon | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+| **Revoke app permissions** | Not applicable | Not supported by provider | | Coming soon | | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
+| **Apply Azure Information Protection labels** | Not applicable | | ✔ | | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
 
 ## Prerequisites
 
@@ -102,7 +86,7 @@ To use App Connectors, you need to make sure you have the following things for e
 | Dropbox | Business/Enterprise | Admin |
 | GitHub | GitHub Enterprise Cloud | Owner |
 | GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
-| G Suite | G Suite Business or Enterprise preferred<br /><br />G Suite Enterprise (minimally) | Super Admin |
+| Google Workspace | Google Workspace Business or Enterprise preferred<br /><br />Google Workspace Enterprise (minimally) | Super Admin |
 | Office 365 | | Global Admin |
 | Okta | Enterprise (not trial) | Admin |
 | Salesforce | | Admin |
@@ -112,7 +96,7 @@ To use App Connectors, you need to make sure you have the following things for e
 
 ### ExpressRoute
 
-Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance, and security. There are no configuration steps required from the customer side.
+Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.
 For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 
 ## Disable app connectors
@@ -137,14 +121,17 @@ To re-enable connected apps:
 1. In the **Connected apps** page, in the relevant row, click the three dots and select **Edit app**. This starts the process to add a connector.
 1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Cloud App Security](connect-github-ec-to-microsoft-cloud-app-security.md).
 
+## Related videos
+
+> [!div class="nextstepaction"]
+> [Connecting third-party apps webinar](webinars.md#on-demand-webinars)
+
+> [!div class="nextstepaction"]
+> [Microsoft Cloud App Security – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
+
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
-## Check out this video!
-
-> [!div class="nextstepaction"]
-> [Microsoft Cloud App Security – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

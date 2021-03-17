@@ -1,26 +1,9 @@
 ---
-# required metadata
-
 title: Generic SIEM integration with Cloud App Security
 description: This article provides information integrating your generic SIEM with Cloud App Security.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 11/08/2020
+ms.date: 01/17/2021
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
 ---
-
 # Generic SIEM integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -66,6 +49,7 @@ Integrating with your SIEM is accomplished in three steps:
 * Disk space: 20 GB
 * RAM: 2 GB
 * The server must be running Java 8. Earlier versions aren't supported.
+* Transport Layer Security (TLS) 1.2+. Earlier versions aren't supported.
 * Set your firewall as described in [Network requirements](network-requirements.md)
 
 ## Integrating with your SIEM
@@ -202,9 +186,6 @@ To edit the SIEM agent, click on the three dots at the end of the row for the SI
 To delete the SIEM agent, click on the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
 
 ![SIEM - delete](media/siem-delete.png)
-
-> [!NOTE]
-> This feature is in public preview.
 
 ## Next steps
 

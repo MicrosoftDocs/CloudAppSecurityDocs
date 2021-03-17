@@ -1,29 +1,8 @@
 ---
-# required metadata
-
-title: Use Cloud Discovery data to detect risky behavior - Cloud App Security
+title: Use Cloud Discovery data to detect risky behavior 
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: angrobe
 ms.date: 05/06/2019
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: seodec18
-
 ---
 # Working with discovery data
 
@@ -65,7 +44,7 @@ To create an exclusion:
 
 Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
 
-- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender ATP.
+- The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender for Endpoint.
 
 - The **Data source specific report** displays only information from a specific data source.
 

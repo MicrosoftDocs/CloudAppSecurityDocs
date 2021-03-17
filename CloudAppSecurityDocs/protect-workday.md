@@ -1,27 +1,16 @@
 ---
-# required metadata
 title: How Cloud App Security helps protect your Workday environment
 description: This article provides information about the benefits of connecting your Workday app to Cloud App Security using the API connector for visibility and control over use.
-author: shsagir
-ms.author: shsagir
-ms.service: cloud-app-security
-ms.topic: article
 ms.date: 12/04/2019
-
-# optional metadata
-#ROBOTS: NOINDEX # Used to prevent showing on search pages
-#services: na
-#ms.subservice: na
-ms.collection: M365-security-compliance
+ms.topic: article
 ---
-
 # How Cloud App Security helps protect your Workday environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a major HCM solution, Workday holds some of the most sensitive information in your organization such as employees' personal data, contracts, vendor details, and more. Preventing exposure of this data requires continuous monitoring to prevent any malicious actors or security unaware insiders from exfiltrating the sensitive information.
 
-Connecting Workday to Cloud App Security gives you improved insights into your users’ activities and provides threat detection for anomalous behavior.
+Connecting Workday to Cloud App Security gives you improved insights into your users' activities and provides threat detection for anomalous behavior.
 
 ## Main threats
 
