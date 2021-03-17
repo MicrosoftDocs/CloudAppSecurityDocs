@@ -1,10 +1,10 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 02/7/2021
+ms.date: 03/07/2021
 ms.topic: overview
 ---
-# What's new with Microsoft Cloud App Security
+# What's new with Microsoft Cloud App Security?
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -15,6 +15,22 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 > [!IMPORTANT]
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
+
+## Cloud App Security release 195 and 196
+
+Released March 7, 2021
+
+- **Enhanced Shadow IT discovery with Microsoft Defender for Endpoint**  
+We've further improved our Defender for Endpoint integration by leveraging enhanced signals for the Defender agent, providing more accurate app discovery and organizational user context.
+
+    To benefit from the latest enhancements, make sure your organizational endpoints are updated with the latest Windows 10 updates:
+
+    - [KB4601383](https://support.microsoft.com/topic/february-16-2021-kb4601383-os-build-17763-1790-preview-9535653c-8012-47f0-0f90-44cdd57cdc36): Windows 10, version 1809
+    - [KB4601380](https://support.microsoft.com/topic/february-16-2021-kb4601380-os-build-18363-1411-preview-2e3c38e1-a947-1033-8006-a30f3806da18): Windows 10, version 1909
+    - [KB4601382](https://support.microsoft.com/topic/february-24-2021-kb4601382-os-builds-19041-844-and-19042-844-preview-1a7ed2b4-017d-2644-a1e8-dd6bf14cba76): Windows 10, version 20H2, version [21H1 Insider](https://blogs.windows.com/windows-insider/2021/02/17/announcing-windows-10-insider-preview-build-19043-844-21h1/)
+
+- **Configurable session lifetime**  
+We're enabling customers to configure a shorter session lifetime for Conditional Access App Control. By default, sessions proxied by Cloud App Security have a maximum lifetime of 14 days. For more information about shortening session lifetimes, please contact us at mcaspreview@microsoft.com.
 
 ## Cloud App Security release 192, 193, and 194
 
@@ -308,8 +324,8 @@ We've updated the detection logic for impossible travel to provide enhanced cove
 - **New threshold for activity policies**  
 We've added a threshold for [activity policies](user-activity-policies.md) to help you manage the volume of alerts. Policies that trigger a large volume of matches for several days are automatically disabled. If you receive a system alert about this, you should try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider saving them as queries instead.
 
-## See Also
+## Next steps
 
-For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
+- For a description of releases prior to those listed here, see [Past releases of Microsoft Cloud App Security](release-note-archive.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]

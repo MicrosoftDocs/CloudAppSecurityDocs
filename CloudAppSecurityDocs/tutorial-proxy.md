@@ -1,7 +1,7 @@
 ---
-title: Protect any apps in use in your organization in real time
+title: Protect any apps in use in your organization in real time tutorial
 description: This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data.
-ms.date: 01/01/2020
+ms.date: 02/24/2021
 ms.topic: tutorial
 ---
 # Tutorial: Protect any apps in use in your organization in real time
@@ -10,13 +10,13 @@ ms.topic: tutorial
 
 The apps you sanction employees to use, often store some of your most sensitive corporate data and secrets. In the modern workplace, users access these apps in many risky situations. These users could be partners in your organization over who you have little visibility, or employees using unmanaged devices or coming from public IP addresses. Due to the wide range of risks in this landscape, a zero-trust strategy must be employed. Often, it's not enough to know about breaches and data loss in these apps after the fact; therefore, many information protection and cyberthreat scenarios must be addressed or prevented in real time.
 
-This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data. Adaptively managing access to your data and mitigating against threats allows Cloud App Security to protect your most sensitive assets. Specifically, we'll cover the following scenarios:
+In this tutorial, you'll learn how to use access and session controls to monitor and control access to apps and their data. Adaptively managing access to your data and mitigating against threats allows Cloud App Security to protect your most sensitive assets. Specifically, we'll cover the following scenarios:
 
 > [!div class="checklist"]
 >
-> * Monitor user activities for anomalies
-> * Protect your data when it's exfiltrated
-> * Prevent unprotected data from being uploaded to your apps
+> - [Monitor user activities for anomalies](#phase-1-monitor-user-activities-for-anomalies)
+> - [Protect your data when it's exfiltrated](#phase-2-protect-your-data-when-its-exfiltrated)
+> - [Prevent unprotected data from being uploaded to your apps](#phase-3-prevent-unprotected-data-from-being-uploaded-to-your-apps)
 
 ## How to protect your organization from any app in real time
 
@@ -26,9 +26,9 @@ Use this process to roll out real-time controls in your organization.
 
 1. **Deploy your apps**: Start by deploying the important apps that your organization uses. The deployment is made simple by our native integration with Azure Active Directory (Azure AD) Conditional Access. You can deploy apps using the following steps:
 
-    * Start by [deploying apps that are featured](proxy-intro-aad.md) by Cloud App Security to work out-of-the-box. For a list of apps that are featured, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+    - Start by [deploying apps that are featured](proxy-intro-aad.md) by Cloud App Security to work out-of-the-box. For a list of apps that are featured, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-    * Then, for apps not featured by Cloud App Security, use the following process to [onboard and deploy any app](proxy-deployment-any-app.md).
+    - Then, for apps not featured by Cloud App Security, use the following process to [onboard and deploy any app](proxy-deployment-any-app.md).
 
     Once your apps are deployed, they are monitored in real time giving you immediate insights into their activities and related information. You can use this information to identify anomalous behavior.
 
@@ -40,8 +40,8 @@ A primary concern for many organizations is how to prevent data exfiltration bef
 
 Now that your apps are deployed, you can easily configure policies to mitigate both of these risks by leveraging our native integrations with Microsoft Intune for device management, Azure AD for user groups, and Azure Information Protection for data protection.
 
-* **Mitigate unmanaged devices**: Create a [session policy to label](session-policy-aad.md#create-a-cloud-app-security-session-policy) and protect highly confidential files meant for users in your organization only.
-* **Mitigate guest users**: Create a [session policy to apply custom permissions](session-policy-aad.md#protect-download) to any file that is downloaded by guest users. For example, you can set permissions so that guest users can only access a protected file.
+- **Mitigate unmanaged devices**: Create a [session policy to label](session-policy-aad.md#create-a-cloud-app-security-session-policy) and protect highly confidential files meant for users in your organization only.
+- **Mitigate guest users**: Create a [session policy to apply custom permissions](session-policy-aad.md#protect-download) to any file that is downloaded by guest users. For example, you can set permissions so that guest users can only access a protected file.
 
 ### Phase 3: Prevent unprotected data from being uploaded to your apps
 
