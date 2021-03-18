@@ -29,7 +29,7 @@ On April 29, Cloud App Security will deprecate the service health status page, r
   >In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information regarding dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
 - **OAuth app consents link**  
-You can now scope activity investigations to specific OAuth app’s consent activities directly from the OAuth app view.
+We've added the ability to scope activity investigations to specific OAuth app's consent activities directly from the OAuth app view. For more information, see [How to investigate suspicious OAuth apps](investigate-risky-oauth.md#how-to-investigate-suspicious-oauth-apps).
 
 ## Cloud App Security release 195 and 196
 
