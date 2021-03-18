@@ -16,6 +16,21 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
+## Cloud App Security release 197
+
+Released March 21, 2021
+
+- **Status page deprecation notice**  
+On April 29, Cloud App Security will deprecate the service health status page, replacing it with the [Service Health Dashboard](https://admin.microsoft.com/Adminportal/Home?ref=/servicehealth) within the Microsoft 365 Admin portal. The change aligns Cloud App Security with other Microsoft services and provides an enhanced service overview.
+
+  >[!NOTE]
+  >Only users with **Monitor service health** permissions can access the dashboard. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).  
+  >
+  >In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information regarding dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
+
+- **OAuth app consents link**  
+You can now scope activity investigations to specific OAuth app’s consent activities directly from the OAuth app view.
+
 ## Cloud App Security release 195 and 196
 
 Released March 7, 2021
@@ -30,7 +45,7 @@ We've further improved our Defender for Endpoint integration by leveraging enhan
     - [KB4601382](https://support.microsoft.com/topic/february-24-2021-kb4601382-os-builds-19041-844-and-19042-844-preview-1a7ed2b4-017d-2644-a1e8-dd6bf14cba76): Windows 10, version 20H2, version [21H1 Insider](https://blogs.windows.com/windows-insider/2021/02/17/announcing-windows-10-insider-preview-build-19043-844-21h1/)
 
 - **Configurable session lifetime**  
-We're enabling customers to configure a shorter session lifetime for Conditional Access App Control. By default, sessions proxied by Cloud App Security have a maximum lifetime of 14 days. For more information about shortening session lifetimes, please contact us at mcaspreview@microsoft.com.
+We're enabling customers to configure a shorter session lifetime for Conditional Access App Control. By default, sessions proxied by Cloud App Security have a maximum lifetime of 14 days. For more information about shortening session lifetimes, contact us at mcaspreview@microsoft.com.
 
 ## Cloud App Security release 192, 193, and 194
 
@@ -81,7 +96,7 @@ Cloud App Security now allows users with the Cloud Discovery global admin role t
 We've updated the sensitivity slider for impossible travel to configure different sensitivity levels for different user scopes, allowing enhanced control over the fidelity of alerts for user scopes. For example, you can define a higher sensitivity level for administrators than for other users in the org. For more information about this anomaly detection policy, see [Impossible travel](anomaly-detection-policy.md#impossible-travel).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 ## Cloud App Security release 184, 185, and 186
 
@@ -97,7 +112,7 @@ We've added the ability to set the global severity setting for signals sent to M
 Cloud App Security provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) giving you insights into security configuration gaps in your multi-cloud environment. Now you can export detailed security recommendation reports to help you monitor, understand, and customize your cloud environments to better protect your organization. For more information about exporting the report, see [Security recommendations report](security-config.md#security-recommendations-report).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **Updates to the Cloud App Catalog**  
 We've made the following updates to our Cloud App Catalog:
@@ -133,7 +148,7 @@ Released July 26, 2020
 We've extended our anomaly detections to include suspicious download activities by an OAuth app. The new detection is now available out-of-the-box and automatically enabled to alert you when an OAuth app downloads multiple files from Microsoft SharePoint or Microsoft OneDrive in a manner that is unusual for the user.
 
 - **Performance improvements using proxy caching for Session Controls (gradual rollout)**  
-We've made additional performance improvements to our session controls, by improving our content caching mechanisms. The improved service is even more streamlined and provides increased responsiveness when using session controls. Note that session controls do not cache private content, aligning with the appropriate standards to only cache shared (public) content. For more information, see [How session control works](proxy-intro-aad.md#how-session-control-works).
+We've made additional performance improvements to our session controls, by improving our content caching mechanisms. The improved service is even more streamlined and provides increased responsiveness when using session controls. Note that session controls don't cache private content, aligning with the appropriate standards to only cache shared (public) content. For more information, see [How session control works](proxy-intro-aad.md#how-session-control-works).
 
 - **New feature: Save security configuration queries**  
 We've added the ability to save queries for our security configuration dashboard filters for Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). This can help make future investigations even simpler by reusing common queries. Learn more about [Security configuration recommendations](security-config.md).
@@ -180,10 +195,10 @@ Released June 14, 2020
 We've expanded our session controls to detect potential malware using Microsoft Threat Intelligence upon file uploads or downloads. The new detection is now available out-of-the-box and can be configured to automatically block files identified as potential malware. For more information, see [Block malware on upload](session-policy-aad.md#block-malware-on-upload).
 
 - **New access token support for access and session controls**  
-We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, click the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then click **Save**. For more information about onboarding apps, see [Onboard and deploy any app](proxy-deployment-any-app.md) and [Deploy featured apps](proxy-deployment-aad.md).
+We've added the ability to treat access token and code requests as logins when onboarding apps to access and session controls. To use tokens, select the settings cog icon, select **Conditional Access App Control**, edit the relevant app (three dots menu > **Edit app**), select **Treat access token and code requests as app logins**, and then select **Save**. For more information about onboarding apps, see [Onboard and deploy any app](proxy-deployment-any-app.md) and [Deploy featured apps](proxy-deployment-aad.md).
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **New documentation**  
 Cloud App Security documentation has been expanded to include the following new content:
@@ -205,7 +220,7 @@ We've leveraged our native integration with Azure AD to give you the ability to 
 We're interested in receiving your feedback and learning how we can help. So now a new feedback dialog gives you the opportunity to help improve Cloud App Security, when creating, modifying, or deleting a file, anomaly detection, or session policy.
 
 - **Enhanced proxy URL suffix for session controls (gradual rollout)**  
-Starting June 7, 2020, we are gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block list domains in your network appliances or gateways, make sure you allow list all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
+Starting June 7, 2020, we are gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely blocklist domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **Performance improvements for Session Controls (gradual rollout)**  
 We've made significant network performance improvements to our proxy service. The improved service is even more streamlined and provides increased responsiveness when using session controls.
@@ -290,7 +305,7 @@ Cloud App Security now supports Salesforce's hourly event log. Hourly event logs
 Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS Security configuration to Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
 
 - **Session controls support for modern browsers**  
-Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. Whilst we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
 
 ## Cloud App Security release 165, 166, 167, and 168
 
@@ -322,7 +337,7 @@ Cloud App Security now supports the latest version (New York) of ServiceNow. To 
 We've updated the detection logic for impossible travel to provide enhanced coverage and better accuracy. As part of this update, we also updated the detection logic for [impossible travel from corporate networks](anomaly-detection-policy.md#impossible-travel).
 
 - **New threshold for activity policies**  
-We've added a threshold for [activity policies](user-activity-policies.md) to help you manage the volume of alerts. Policies that trigger a large volume of matches for several days are automatically disabled. If you receive a system alert about this, you should try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider saving them as queries instead.
+We've added a threshold for [activity policies](user-activity-policies.md) to help you manage the volume of alerts. Policies that trigger a large volume of matches for several days are automatically disabled. If you receive a system alert about this, you should try refining policies by adding additional filters or, if you're using policies for reporting purposes, consider saving them as queries instead.
 
 ## Next steps
 
