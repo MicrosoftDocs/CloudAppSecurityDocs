@@ -10,7 +10,7 @@ ms.topic: tutorial
 
 OAuth is an open standard for token-based authentication and authorization. OAuth enables a user's account information to be used by third-party services, without exposing the user's password. OAuth acts as an intermediary on behalf of the user, providing the service with an access token that authorizes specific account information to be shared.
 
-For example, an app that analyses the user's calendar and gives him advice on how to become more productive needs access to the user's calendar. Instead of providing the user's credentials, OAuth enables the app to get access to the data based only on a token, which is generated when the user provides consent to a page as can be seen in the below picture.
+For example, an app that analyses the user's calendar and gives advice on how to become more productive, needs access to the user's calendar. Instead of providing the user's credentials, OAuth enables the app to get access to the data based only on a token, which is generated when the user provides consent to a page as can be seen in the below picture.
 
 ![OAuth app permission](media/oauth-permission.png)
 
@@ -41,7 +41,7 @@ Detecting a risky OAuth app can be accomplished using:
 
 ### Detect risky apps using alerts
 
-You can set policies to automatically send you notifications when an OAuth app meets certain criteria. For example, you can set a policy to automatically notify you when an app is detected that requires high permissions and was authorized by more than 50 users. For further details on creating OAuth policies, see [OAuth app policies](app-permission-policy.md).
+You can set policies to automatically send you notifications when an OAuth app meets certain criteria. For example, you can set a policy to automatically notify you when an app is detected that requires high permissions and was authorized by more than 50 users. For more information on creating OAuth policies, see [OAuth app policies](app-permission-policy.md).
 
 ### Detect risky apps by hunting
 
@@ -56,7 +56,7 @@ You can set policies to automatically send you notifications when an OAuth app m
 1. After you review your apps, you can focus on the apps in the queries that seem legitimate but might actually be risky. Use the filters to find them:
     - Filter for apps that are **Authorized by a small number of users**. If you focus on these apps, you can look for risky apps that were authorized by a compromised user.
     - Apps that have permissions that don't match the app's purpose, for example, a clock app with full access to all mailboxes.
-1. Click on each app to open the app drawer, and check to see if the app has a suspicious name, publisher, or website.
+1. Select each app to open the app drawer, and check to see if the app has a suspicious name, publisher, or website.
 1. Look at the list of apps and target apps that have a date under **Last authorized** that isn't recent. These apps may no longer be required.
 
     ![OAuth app drawer](media/oauth-drawer.png)
@@ -69,7 +69,8 @@ After you determine that an app is suspicious and you want to investigate it, we
 - An app should require only permissions that are related to the app's purpose. If that's not the case, the app might be risky.
 - Apps that require high privileges or admin consent are more likely to be risky.
 
-1. Click on the app to open the app drawer and click the link under **Related activities**. This opens the Activity log page filtered for activities performed by the app. Keep in mind that some apps perform activities that are registered as having been performed by a user. These activities are automatically filtered out of the results in the Activity log. For further investigation using the activity log, see [Activity log](activity-filters.md).
+1. Select the app to open the app drawer and select the link under **Related activities**. This opens the Activity log page filtered for activities performed by the app. Keep in mind that some apps perform activities that are registered as having been performed by a user. These activities are automatically filtered out of the results in the Activity log. For further investigation using the activity log, see [Activity log](activity-filters.md).
+1. In the drawer, select **Consent activities** to investigate user consents to the app in the activity log.
 1. If an app seems suspicious, we recommended that you investigate the app's name and publisher in different app stores. Focus on following apps, which might be suspicions:
     - Apps with a low number of downloads.
     - Apps with a low rating or score or bad comments.
