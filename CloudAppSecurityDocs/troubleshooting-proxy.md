@@ -397,6 +397,7 @@ This section is for end users using apps protected by Cloud App Security and hel
 - [Clipboard actions or file controls are not being blocked](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Downloads are not being protected](#downloads-are-not-being-protected)
 - [Navigating to a particular URL of a suffixed app and landing on a generic page](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
+- [Bypass blocked PDF previews in OWA](#bypass-blocked-pdf-previews-in-owa)
 - [Additional considerations](#app-additional-considerations)
 
 ### User monitoring page is not appearing
@@ -507,13 +508,36 @@ As a temporary mitigation, you can workaround context loss issues, as follows:
 
 <a name="app-additional-considerations"></a>
 
+### Bypass blocked PDF previews in OWA
+
+By default, PDF previews are blocked in the Outlook Web App (OWA).
+
+![Blocked PDF preview](media/before-powershell.png)
+
+To bypass this block, an Exchange administrator should perform the following steps:
+
+1. Download the [Exchange Online PowerShell Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.4).
+1. Connect to the module using the commands described in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa-and-modern-authentication)
+1. After you've connected to the Exchange Online PowerShell, use the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet to update the parameters in the policy:
+
+    ```powershell
+    Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -DirectFileAccessOnPrivateComputersEnabled $false -DirectFileAccessOnPublicComputersEnabled $false
+    ```
+
+    >[!NOTE]
+    >The **OwaMailboxPolicy-Default** policy is the default OWA policy name in Exchange Online. Some customers may have deployed additional or created a custom OWA policy with a different name. If you have multiple OWA policies, they may be applied to specific users. Therefore, you'll need to also update them to have complete coverage.
+
+1. After these parameters have been set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file.
+
+    ![PDF preview not blocked](media/after-powershell.png)
+
 ### Additional considerations
 
 While troubleshooting apps, there are some additional things to consider.
 
 - **Session controls support for modern browsers**
 
-    Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. Whilst we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+    Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
 
 - **Double login**
 
