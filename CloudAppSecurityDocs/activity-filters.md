@@ -36,6 +36,7 @@ To drill down into more specific activities, you can expand the basic filter by 
 ### Working with the Activity drawer
 
 You can view more information about each activity, by clicking on the Activity itself in the Activity log. This opens the Activity drawer that provides the following additional actions and insights for each activity:
+
 - Matched policies: Click on the Matched policies link to see a list of policies this activity matched.
 
 - View raw data: Click on View raw data to see the actual data that was received from the app.
@@ -51,6 +52,7 @@ You can view more information about each activity, by clicking on the Activity i
 The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the add to filter icon ![add to filter](media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
 You can also use the icons at the top of the tab to:
+
 - View activities of the same type
 - View all activities of the same user
 - View activities from the same IP address
