@@ -12,6 +12,9 @@ Microsoft Cloud App Security supports role-based access control. This article pr
 
 ## Office 365 and Azure AD roles with access to Cloud App Security
 
+> [!NOTE]
+> Office 365 and Azure AD roles aren't listed in the Cloud App Security **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
+
 By default, the following Office 365 and [Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
@@ -35,9 +38,6 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
   - Accessing and viewing SIEM agents
 
 - **Global reader**: Has full read-only access to all aspects of Cloud App Security. Cannot change any settings or take any actions.
-
-> [!NOTE]
-> Office 365 and Azure AD roles do are not listed in the **Manage admin access** page.
 
 ## Built-in Cloud App Security admin roles
 
