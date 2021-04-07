@@ -61,7 +61,7 @@ Additionally, the following items should be allowed, depending on which data cen
 |EU1|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.119.154.72, 51.143.58.207, 52.137.89.147, 52.157.238.58, 52.174.56.180, 52.183.75.62|\*.eu.portal.cloudappsecurity.com|
 |EU2|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.81.156.154, 40.81.156.156, 51.143.58.207, 52.137.89.147, 52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 |Gov US1|13.72.19.4, 52.227.143.223|*.us1.portal.cloudappsecurity.us|
-|GCC| 52.227.23.181, 52.227.180.126| portal</>.cloudappsecuritygov</>.com, *.portal.cloudappsecuritygov.com |
+|GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com |
 
 > [!NOTE]
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
@@ -102,7 +102,7 @@ Additionally, the following items should be allowed:
 
 |IP addresses|DNS name|
 |----|----|
-|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222, 52.244.39.14, 52.244.38.212, 52.244.39.0, 52.244.39.80|\*.mcas-gov.us<br />\*.admin-mcas-gov.us mcasproxy.azureedge.net|
+|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222, 52.244.39.14, 52.244.38.212, 52.244.39.0, 52.244.39.80|\*.mcas-gov.us<br />\*.admin-mcas-gov.us `mcasproxy.azureedge.net`|
 |13.72.27.216, 13.72.27.215,52.244.39.82, 52.244.39.15|\*.access.cloudappsecurity.us<br />\*.saml.cloudappsecurity.us|
 
 ## SIEM agent connection
@@ -180,7 +180,7 @@ If you want to customize the email sender identity, Microsoft Cloud App Security
 
 If you don't customize the sender identity, your email notifications will be sent using all the default settings.
 
-To work with MailChimp, add this IP address to your anti-spam allowlist to enable notifications to be sent: 198.2.134.139 (mail1.cloudappsecurity.com)
+To work with MailChimp, add this IP address to your anti-spam allowlist to enable notifications to be sent: 198.2.134.139 (`mail1.cloudappsecurity.com`)
 
 ## Log collector
 
