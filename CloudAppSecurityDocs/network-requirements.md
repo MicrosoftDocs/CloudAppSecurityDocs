@@ -61,7 +61,7 @@ Additionally, the following items should be allowed, depending on which data cen
 |EU1|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.119.154.72, 51.143.58.207, 52.137.89.147, 52.157.238.58, 52.174.56.180, 52.183.75.62|\*.eu.portal.cloudappsecurity.com|
 |EU2|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.81.156.154, 40.81.156.156, 51.143.58.207, 52.137.89.147, 52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 |Gov US1|13.72.19.4, 52.227.143.223|*.us1.portal.cloudappsecurity.us|
-|GCC| 52.227.23.181, 52.227.180.126| portal/.cloudappsecuritygov/.com, *.portal.cloudappsecuritygov.com |
+|GCC| 52.227.23.181, 52.227.180.126| portal</>.cloudappsecuritygov</>.com, *.portal.cloudappsecuritygov.com |
 
 > [!NOTE]
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
