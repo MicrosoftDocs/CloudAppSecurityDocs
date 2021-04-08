@@ -18,6 +18,8 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 ## Cloud App Security release 198
 
+Released April 4, 2021
+
 - **Exclusion of Azure Active Directory groups entities from discovery**  
 We've added the ability to exclude discovered entities based on imported Azure Active Directory groups. Excluding AAD groups will hide all discovery-related data for any users in these groups. For more information, see [Exclude entities](discovered-apps.md#exclude-entities).
 
