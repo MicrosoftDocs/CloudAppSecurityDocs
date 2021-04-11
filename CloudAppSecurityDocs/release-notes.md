@@ -16,6 +16,22 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
+## Cloud App Security release 198
+
+Released April 4, 2021
+
+- **Exclusion of Azure Active Directory groups entities from discovery**  
+We've added the ability to exclude discovered entities based on imported Azure Active Directory groups. Excluding AAD groups will hide all discovery-related data for any users in these groups. For more information, see [Exclude entities](discovered-apps.md#exclude-entities).
+
+- **API connector support for ServiceNow Orlando and Paris versions**  
+We have added support for the ServiceNow API connector to the Orlando and Paris versions. For more information, see [Connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md).
+
+- **Always apply the selected action even if data cannot be scanned**  
+We've added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy.
+
+  >[!NOTE]
+  >Deprecation notice: this feature replaces both **Treat encrypted as match**, and **Treat files that cannot be scanned as match**, in addition to adding new functionality. New policies will contain the new checkbox by default, deselected by default. Pre-existing policies will be migrated to the new checkbox on May 30. Policies with either or both options selected will have the new option selected by default; all other policies will have it deselected.
+
 ## Cloud App Security release 197
 
 Released March 21, 2021
