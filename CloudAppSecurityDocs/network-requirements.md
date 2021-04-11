@@ -109,12 +109,12 @@ For **US Government GCC High** customers:
 |13.72.27.216, 13.72.27.215<br/><br/>52.244.215.83, 52.244.212.197|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
 |20.140.49.129, 52.227.216.80|\*.saml.cloudappsecurity.us|
 
-For **US Government GCC** customers:
+<!--For **US Government GCC** customers:
 
 |IP addresses|DNS name|
 |----|----|
 |52.245.225.0, 52.245.224.229, 52.245.224.234, 52.245.224.228| \*.mcas-gov.ms<br/>\*.admin-mcas-gov.ms|
-|52.245.224.235, 52.245.224.227 | \*.access.mcas-gov.ms|
+|52.245.224.235, 52.245.224.227 | \*.access.mcas-gov.ms|-->
 
 ## SIEM agent connection
 
