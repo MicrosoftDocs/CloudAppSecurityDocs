@@ -28,7 +28,7 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 |Capability|Feature|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
 |----|----|----|----|
 |Cloud Discovery|Discovered apps|16,000 + cloud apps|16,000 + cloud apps|
-||Deployment for discovery analysis|Manual and automatic log upload|Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
+||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
 ||Log anonymization for user privacy|Yes|Yes|
 ||Access to full Cloud App Catalog|Yes|Yes|
 ||Cloud app risk assessment|Yes|Yes|
