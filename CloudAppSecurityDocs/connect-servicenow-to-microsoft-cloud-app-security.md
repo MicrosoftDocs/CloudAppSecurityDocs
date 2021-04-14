@@ -12,11 +12,11 @@ ms.topic: how-to
 This article provides instructions for connecting Microsoft Cloud App Security to your existing ServiceNow account using the app connector API. This connection gives you visibility into and control over ServiceNow use. For information about how Cloud App Security protects ServiceNow, see [Protect ServiceNow](protect-servicenow.md).
 
 > [!NOTE]
-> We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/administer/security/concept/c_OAuthApplications.html?title=OAuth_Applications).
+> We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
 > For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password. The username/password provided are only used for API token generation and are not saved after the initial connection process.
 
 > [!NOTE]
-> Cloud App Security supports the following ServiceNow versions: Eureka, Fiji, Geneva, Helsinki, Istanbul, Jakarta, Kingston, London, Madrid, New York, Orlando and Paris. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access. For more information, see the [ServiceNow Product Documentation](https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/administer/security/concept/c_OAuthApplications.html?title=OAuth_Applications).
+> Cloud App Security supports the following ServiceNow versions: Eureka, Fiji, Geneva, Helsinki, Istanbul, Jakarta, Kingston, London, Madrid, New York, Orlando and Paris. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access. For more information, see the [ServiceNow Product Documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
 
 ## How to connect ServiceNow to Cloud App Security using OAuth
 
