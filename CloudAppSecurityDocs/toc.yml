@@ -308,7 +308,13 @@ items:
     - name: Introduction
       href: api-introduction.md
     - name: Authentication
-      href: api-authentication.md
+      items:
+      - name: Managing API tokens
+        href: api-authentication.md
+      - name: Application context
+        href: api-authentication-application.md
+      - name: User context
+        href: api-authentication-user.md
     - name: Activities
       items:
       - name: Overview
