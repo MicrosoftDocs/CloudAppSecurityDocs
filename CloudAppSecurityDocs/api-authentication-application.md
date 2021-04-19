@@ -30,10 +30,10 @@ This article explains how to create an Azure AD application, get an access token
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Cloud App Security and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
+4. To enable your app to access Cloud App Security and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Cloud App Security**, and then select **Microsoft Cloud App Security**.
 
    > [!NOTE]
-   > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
+   > *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear.
 
    ![add permission](images/add-permission.png)
 

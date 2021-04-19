@@ -29,7 +29,7 @@ Used by apps that run without a signed-in user present. For example, apps that r
 Steps that need to be taken to access Cloud App Security API with application context:
 
 1. Create an AAD Web-Application.
-1. Assign the desired permission to the application. For example, **Read Alerts** or **Isolate Machines**.
+1. Assign the desired permission to the application. For example, **Read Alerts** or **Upload Discovery Report**.
 1. Create a key for this application.
 1. Get the token using the application with its key.
 1. Use the token to access the Cloud App Security API
@@ -43,7 +43,7 @@ Used to perform actions in the API on behalf of a user.
 Steps to take to access the Cloud App Security API with application context:
 
 1. Create an AAD Native-Application.
-1. Assign the desired permission to the application. For example, **Read Alerts** or **Isolate Machines**.
+1. Assign the desired permission to the application. For example, **Read Alerts** or **Upload Discovery Report**.
 1. Get the token using the application with user credentials.
 1. Use the token to access the Cloud App Security API.
 
