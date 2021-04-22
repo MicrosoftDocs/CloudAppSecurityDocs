@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 03/07/2021
+ms.date: 04/22/2021
 ms.topic: overview
 ---
 # What's new with Microsoft Cloud App Security?
@@ -15,6 +15,22 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 > [!IMPORTANT]
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
+
+## Cloud App Security release 199
+
+April 18, 2021
+
+- **AIP support deprecated**  
+Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-identity/understanding-unified-labeling-migration/ba-p/783185).
+
+- **DLP near real-time rollout completed for Dropbox, ServiceNow, AWS, and Salesforce**  
+New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- **Public preview for overriding privilege sensitivity labels**  
+Cloud App Security supports overriding or removing sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [Apply labels directly to files](azip-integration.md#how-to-integrate-azure-information-protection-with-cloud-app-security).
+
+- **Extended Advanced Hunting events**  
+We've expanded the available events in Cloud App Security. Microsoft 365 Defender Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Office 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
 
 ## Cloud App Security release 198
 
