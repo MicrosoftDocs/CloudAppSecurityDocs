@@ -23,6 +23,10 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 April 18, 2021
 
+- **Service Health Dashboard availability**  
+The enhanced Cloud App Security [Service Health Dashboard](https://admin.microsoft.com/Adminportal/Home#/servicehealth) is now available within the Microsoft 365 Admin portal for users with **Monitor service health** permissions. Learn more about [Microsoft 365 Admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information about the dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
+
 - **AIP support deprecated**  
 Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-identity/understanding-unified-labeling-migration/ba-p/783185).
 
