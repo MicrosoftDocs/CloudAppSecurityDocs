@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 03/07/2021
+ms.date: 04/22/2021
 ms.topic: overview
 ---
 # What's new with Microsoft Cloud App Security?
@@ -15,6 +15,29 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 > [!IMPORTANT]
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
+
+>[!NOTE]
+>**Deprecation reminder:** In [release 198](#cloud-app-security-release-198), we added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy. This feature replaces both **Treat encrypted as match**, and **Treat files that cannot be scanned as match**, in addition to adding new functionality. New policies will contain the new checkbox by default, deselected by default. Pre-existing policies will be migrated to the new checkbox on May 30. Policies with either or both options selected will have the new option selected by default; all other policies will have it deselected.
+
+## Cloud App Security release 199
+
+April 18, 2021
+
+- **Service Health Dashboard availability**  
+The enhanced Cloud App Security [Service Health Dashboard](https://admin.microsoft.com/Adminportal/Home#/servicehealth) is now available within the Microsoft 365 Admin portal for users with **Monitor service health** permissions. Learn more about [Microsoft 365 Admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information about the dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
+
+- **AIP support deprecated**  
+Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-identity/understanding-unified-labeling-migration/ba-p/783185).
+
+- **DLP near real-time rollout completed for Dropbox, ServiceNow, AWS, and Salesforce**  
+New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- **Public preview for overriding privilege sensitivity labels**  
+Cloud App Security supports overriding or removing sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [Apply labels directly to files](azip-integration.md#how-to-integrate-azure-information-protection-with-cloud-app-security).
+
+- **Extended Advanced Hunting events**  
+We've expanded the available events in Cloud App Security. Microsoft 365 Defender Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Office 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
 
 ## Cloud App Security release 198
 
