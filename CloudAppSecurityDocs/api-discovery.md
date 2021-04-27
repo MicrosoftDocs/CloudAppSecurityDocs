@@ -29,11 +29,6 @@ As part of its Cloud Discovery solution, Cloud App Security uses continuous repo
 
 You can use the following API endpoints to work with continuous reports.
 
-<!--
-- IP addresses: 
-- Users: 
--->
-
 - [List continuous reports](api-discovery-list-streams.md)
 - [List continuous report categories](api-discovery-list-categories.md)
 
@@ -42,11 +37,5 @@ You can use the following API endpoints to work with continuous reports.
 Cloud App Security enables you to block access to unsanctioned apps by using your existing on-premises security appliances. Use the Generate block script call to get a dedicated block script and import it to your appliance.
 
 - [Generate block script](api-discovery-script.md)
-
-<!--
-- [List app tags](api-discovery-list-app-tags.md)
-- [Create app tag](api-discovery-create-app-tag.md)
-- [Delete app tag](api-discovery-delete-app-tag.md)
--->
 
 [!INCLUDE [Open support ticket](includes/support.md)]

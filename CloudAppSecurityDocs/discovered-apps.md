@@ -57,7 +57,7 @@ This is supported only in firewalls and proxies that contain target URL data. Fo
 
 Cloud Discovery also enables you to deep dive into your IaaS and PaaS resources. You can discover activity across your resource-hosting platforms, viewing access to data across your self-hosted apps and resources including storage accounts, infrastructure and custom apps hosted on Azure, Google Cloud Platform, and AWS. Not only can you see overall usage in your IaaS solutions, but you can get visibility into the specific resources that are hosted on each, and the overall usage of the resources, to help mitigate risk per resource.
 
-For example, from Cloud App Security you can monitor activity such as if  a lot of data is uploaded, you can discover what resource it is uploaded to and drill down to see who performed the activity.
+For example, from Cloud App Security you can monitor activity such as if a lot of data is uploaded, you can discover what resource it's uploaded to and drill down to see who performed the activity.
 
 > [!NOTE]
 > This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
@@ -81,28 +81,32 @@ The best way to get an overview of Shadow IT use across your organization is by 
 To generate a Cloud Discovery executive report:
 
 1. From the **Cloud Discovery dashboard**, click the three dots in the upper-right corner of the dashboard, and then select **Generate Cloud Discovery executive report**.
+
 1. Optionally, change the report name.
-1. Click **Generate**.
+1. Select **Generate**.
 
 ## Exclude entities
 
-If you have system users, IP addresses, or devices that are noisy but uninteresting or apps that aren't relevant, you may want to exclude their data from the Cloud Discovery data that is analyzed. For example, you might want to exclude all information originating from 127.0.0.1 or local host.
+If you have system users, IP addresses, or devices that are noisy but uninteresting, or entities that shouldn't be presented in the Shadow IT reports, you may want to exclude their data from the Cloud Discovery data that's analyzed. For example, you might want to exclude all information originating from a local host.
 
 To create an exclusion:
 
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+1. In the portal, under the settings icon, select **Settings**.
 
-1. Click the **Exclude entities** tab.
+1. Under **Cloud Discovery**, select the **Exclude entities** tab.
 
-1. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded devices** tab and click the + button to add your exclusion.
+1. Choose either the **Excluded users**, **User groups**, **IP addresses**, or **Excluded devices** tab and select the **+** button to add your exclusion.
 
 1. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
 
     ![exclude user](media/exclude-user.png "exclude user")
 
+>[!NOTE]
+>Any entity exclusion applies to newly received data. Historical data of the excluded entities will remain through the retention period (90 days).
+
 ## Manage continuous reports
 
-Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
+Custom continuous reports provide you more granularity when monitoring your organization's Cloud Discovery log data. By creating custom reports, it's possible to filter on specific geographic locations, networks, and sites, or organizational units. By default, only the following reports appear in your Cloud Discovery report selector:
 
 - The **Global report** consolidates all the information in the portal from all the data sources you included in your logs.  The global report doesn't include data from Microsoft Defender for Endpoint.
 
@@ -110,11 +114,11 @@ Custom continuous reports provide you more granularity when monitoring your orga
 
 To create a new continuous report:
 
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+1. In the portal, under the settings icon, select **Settings**.
 
-1. Click the **Continuous report** tab.
+1. Under **Cloud Discovery**, select **Continuous report**.
 
-1. Click the **Create report** button.
+1. Select the **Create report** button.
 
 1. Enter a report name.
 
@@ -139,13 +143,13 @@ There are a number of reasons why you may want to delete your Cloud Discovery da
 
 To delete Cloud Discovery data:
 
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+1. In the portal, under the settings icon, select **Settings**.
 
-1. Click the **Delete data** tab.
+1. Under **Cloud Discovery**, select the **Delete data** tab.
 
     It's important to be sure you want to delete data before continuing - it can't be undone and it deletes **all** Cloud Discovery data in the system.
 
-1. Click the **Delete** button.
+1. Select the **Delete** button.
 
     ![delete data](media/delete-data.png "delete data")
 

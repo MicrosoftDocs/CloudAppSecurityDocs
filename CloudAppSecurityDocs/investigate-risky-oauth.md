@@ -1,16 +1,16 @@
 ---
-title: Investigate risky OAuth apps 
-description: This article provides information on how to investigate risky OAuth apps in Cloud App Security.
-ms.date: 9/1/2019
+title: Investigate and remediate risky OAuth apps tutorial
+description: This tutorial provides information on how to investigate and remediate risky OAuth apps in Cloud App Security.
+ms.date: 02/24/2021
 ms.topic: tutorial
 ---
-# Tutorial: Investigate risky OAuth apps
+# Tutorial: Investigate and remediate risky OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 OAuth is an open standard for token-based authentication and authorization. OAuth enables a user's account information to be used by third-party services, without exposing the user's password. OAuth acts as an intermediary on behalf of the user, providing the service with an access token that authorizes specific account information to be shared.
 
-For example, an app that analyses the user's calendar and gives him advice on how to become more productive needs access to the user's calendar. Instead of providing the user's credentials, OAuth enables the app to get access to the data based only on a token, which is generated when the user provides consent to a page as can be seen in the below picture.
+For example, an app that analyses the user's calendar and gives advice on how to become more productive, needs access to the user's calendar. Instead of providing the user's credentials, OAuth enables the app to get access to the data based only on a token, which is generated when the user provides consent to a page as can be seen in the below picture.
 
 ![OAuth app permission](media/oauth-permission.png)
 
@@ -24,6 +24,14 @@ As a security admin, you need visibility and control over the apps in your envir
 
 Our recommended approach is to investigate the apps by using the abilities and information provided in the Cloud App Security portal to filter out apps with a low chance of being risky, and focus on the suspicious apps.
 
+In this tutorial, you'll learn how to:
+
+> [!div class="checklist"]
+>
+> - [Detect risky OAuth apps](#how-to-detect-risky-oauth-apps)
+> - [Investigate risky OAuth apps](#how-to-investigate-suspicious-oauth-apps)
+> - [Remediate risky OAuth apps](#how-to-remediate-suspicious-oauth-apps)
+
 ## How to detect risky OAuth apps
 
 Detecting a risky OAuth app can be accomplished using:
@@ -33,7 +41,7 @@ Detecting a risky OAuth app can be accomplished using:
 
 ### Detect risky apps using alerts
 
-You can set policies to automatically send you notifications when an OAuth app meets certain criteria. For example, you can set a policy to automatically notify you when an app is detected that requires high permissions and was authorized by more than 50 users. For further details on creating OAuth policies, see [OAuth app policies](app-permission-policy.md).
+You can set policies to automatically send you notifications when an OAuth app meets certain criteria. For example, you can set a policy to automatically notify you when an app is detected that requires high permissions and was authorized by more than 50 users. For more information on creating OAuth policies, see [OAuth app policies](app-permission-policy.md).
 
 ### Detect risky apps by hunting
 
@@ -48,12 +56,12 @@ You can set policies to automatically send you notifications when an OAuth app m
 1. After you review your apps, you can focus on the apps in the queries that seem legitimate but might actually be risky. Use the filters to find them:
     - Filter for apps that are **Authorized by a small number of users**. If you focus on these apps, you can look for risky apps that were authorized by a compromised user.
     - Apps that have permissions that don't match the app's purpose, for example, a clock app with full access to all mailboxes.
-1. Click on each app to open the app drawer, and check to see if the app has a suspicious name, publisher, or website.
+1. Select each app to open the app drawer, and check to see if the app has a suspicious name, publisher, or website.
 1. Look at the list of apps and target apps that have a date under **Last authorized** that isn't recent. These apps may no longer be required.
 
     ![OAuth app drawer](media/oauth-drawer.png)
 
-## How to investigate
+## How to investigate suspicious OAuth apps
 
 After you determine that an app is suspicious and you want to investigate it, we recommend the following key principles for efficient investigation:
 
@@ -61,7 +69,8 @@ After you determine that an app is suspicious and you want to investigate it, we
 - An app should require only permissions that are related to the app's purpose. If that's not the case, the app might be risky.
 - Apps that require high privileges or admin consent are more likely to be risky.
 
-1. Click on the app to open the app drawer and click the link under **Related activities**. This opens the Activity log page filtered for activities performed by the app. Keep in mind that some apps perform activities that are registered as having been performed by a user. These activities are automatically filtered out of the results in the Activity log. For further investigation using the activity log, see [Activity log](activity-filters.md).
+1. Select the app to open the app drawer and select the link under **Related activities**. This opens the Activity log page filtered for activities performed by the app. Keep in mind that some apps perform activities that are registered as having been performed by a user. These activities are automatically filtered out of the results in the Activity log. For further investigation using the activity log, see [Activity log](activity-filters.md).
+1. In the drawer, select **Consent activities** to investigate user consents to the app in the activity log.
 1. If an app seems suspicious, we recommended that you investigate the app's name and publisher in different app stores. Focus on following apps, which might be suspicions:
     - Apps with a low number of downloads.
     - Apps with a low rating or score or bad comments.
@@ -71,7 +80,7 @@ After you determine that an app is suspicious and you want to investigate it, we
 1. If the app is still suspicious, you can research the app name, publisher, and URL online.
 1. You can export the OAuth app audit for further analysis of the users who authorized an app. For more information, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
 
-## How to remediate
+## How to remediate suspicious OAuth apps
 
 After you determine that an OAuth app is risky, Cloud App Security provides the following remediation options:
 

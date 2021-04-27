@@ -63,7 +63,7 @@ You can view a support request from within the Azure portal. To do so:
 
 ## Troubleshooting Microsoft Cloud App Security status
 
-Check the [current status of Microsoft Cloud App Security](https://status.cloudappsecurity.com/).
+Check the [current status of Microsoft Cloud App Security](https://portal.microsoft.com/Adminportal/Home#/servicehealth).
 
 ## Additional resources
 

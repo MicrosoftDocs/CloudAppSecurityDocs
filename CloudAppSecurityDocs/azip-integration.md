@@ -107,9 +107,6 @@ To ignore classification labels set external to your organization, in the Cloud 
 
 4. You can also remove classification labels by choosing the **Remove classification label** option.
 
-> [!NOTE]
-> You can remove labels only if they do not include protection, and they were applied from within Cloud App Security, not labels applied directly in Information Protection.
-
 For more information about how Cloud App Security and Azure Information Protection work together, see [Automatically apply Azure Information Protection classification labels](use-case-information-protection.md).
 
 ### Automatically label files
