@@ -119,7 +119,7 @@ Then use the instructions from the **Add a SAML application with your identity p
     ![Fill out the custom app details](media/proxy-idp-pingone/idp-pingone-sf-custom-app-details.png)
 
 1. On the **Application Configuration** page, do the following, and then click **Continue to Next Step**.
-    - In the **Single sigh-on service URL** field, enter the Salesforce **Login URL** you noted earlier.
+    - In the **Single sign-on service URL** field, enter the Salesforce **Login URL** you noted earlier.
     - In the **Entity ID** field, enter a unique ID starting with *https://*. Make sure this is different from the exiting Salesforce PingOne app's configuration.
     - Make a note of the **Entity ID**. You'll need this later.
 
