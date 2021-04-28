@@ -1,5 +1,10 @@
 {
     "redirections": [
+		{
+			"source_path": "CloudAppSecurityDocs/security-baseline.md",
+			"redirect_url": "/security/benchmark/azure/baselines/cloud-app-security-security-baseline",
+			"redirect_document_id": false
+		},
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-bulk-dismiss.md",
             "redirect_url": "/cloud-app-security/api-alerts-close-false-positive",
