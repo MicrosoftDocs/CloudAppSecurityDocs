@@ -91,7 +91,7 @@ items:
   - name: Security
     items:
     - name: Security baseline
-      href: security-baseline.md
+      href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
 - name: How-to guides
   items:
   - name: Basic set up
