@@ -508,13 +508,13 @@ As a temporary mitigation, you can workaround context loss issues, as follows:
 
 <a name="app-additional-considerations"></a>
 
-### Bypass blocked PDF previews in OWA
+### Blocking downloads cause PDF previews to be blocked
 
-By default, PDF previews are blocked in the Outlook Web App (OWA).
+Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Cloud App Security to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked:
 
 ![Blocked PDF preview](media/before-powershell.png)
 
-To bypass this block, an Exchange administrator should perform the following steps:
+To allow the preview, an Exchange administrator should perform the following steps:
 
 1. Download the [Exchange Online PowerShell Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.4).
 1. Connect to the module using the commands described in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa-and-modern-authentication)
@@ -544,9 +544,3 @@ While troubleshooting apps, there are some additional things to consider.
     A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Cloud App Security assumes an app uses a nonce. If you are confident the app does not use a nonce, you can disable this by editing the app in Cloud App Security and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
 
     If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
-
-- **Previewing or printing PDF files may be blocked**
-
-    This is normal behavior when you have a policy configured to block downloads. Occasionally when previewing or printing PDF files, apps initiate a download of the file causing Cloud App Security to intervene to ensure the download is blocked and that data is not leaked from your environment.
-
-    If you would like to allow PDF file downloads, you can exclude PDF files based on their file extension in the relevant session policy.
