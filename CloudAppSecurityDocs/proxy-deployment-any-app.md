@@ -50,6 +50,9 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
 ### Configure integration with Azure AD
 
+>[!NOTE]
+>When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
+
 Use the following steps to create an Azure AD Conditional Access policy that routes app sessions to Cloud App Security. For other IdP solutions, see [Configure integration with other IdP solutions](#configure-integration-with-other-idp-solutions).
 
 1. In Azure AD, browse to **Security** > **Conditional Access**.
