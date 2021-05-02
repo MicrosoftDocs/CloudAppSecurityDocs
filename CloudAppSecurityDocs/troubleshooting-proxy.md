@@ -397,7 +397,7 @@ This section is for end users using apps protected by Cloud App Security and hel
 - [Clipboard actions or file controls are not being blocked](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Downloads are not being protected](#downloads-are-not-being-protected)
 - [Navigating to a particular URL of a suffixed app and landing on a generic page](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
-- [Bypass blocked PDF previews in OWA](#bypass-blocked-pdf-previews-in-owa)
+- [Blocking downloads cause PDF previews to be blocked](#blocking-downloads-cause-pdf-previews-to-be-blocked)
 - [Additional considerations](#app-additional-considerations)
 
 ### User monitoring page is not appearing
