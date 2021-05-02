@@ -50,6 +50,9 @@ Blast radius adds an additional score factor to the investigation priority calcu
 
   ![Blast radius](media/blast-radius-design.png)
 
+  >[!NOTE]
+  > The blast radius is available only in part of the tenant, based on the size of the tenant and the comprehensiveness of the organizational structure that appears in Azure Active Directory. For other tenants, the blast radius will not affect the user score.
+
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
 1. Connect at least one app to Microsoft Cloud App Security using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
