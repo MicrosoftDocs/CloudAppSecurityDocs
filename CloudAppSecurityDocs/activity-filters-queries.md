@@ -79,7 +79,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   - User domain - Search for a specific user domain.
   - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users. This is only relevant for connected Google Workspace instances using organizational units.
   - User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.
-  - User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, click on the name of the user group. Clicking will take you to the Accounts page that lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
+  - User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, select the name of the user group. Clicking will take you to the Accounts page that lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
   - The **User group** and **User name** filters can be further filtered by using the **As** filter, and selecting the role of the user, which can be any of the following:
     - Activity object only - meaning that the user or user group selected didn't perform the activity in question, they were the object of the activity.
     - Actor only - meaning that the user or user group performed the activity.
@@ -87,7 +87,10 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - User agent – The user agent of from with the activity was performed.
 
-- User agent tag – Built-in user agent tag, for example, all activities from an outdated browser or outdated operating systems.
+- User agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
+
+>[!NOTE]
+>Cloud App Security considers *outdated* as two major versions older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
 
 <!--
 >[!NOTE]
@@ -99,7 +102,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 1. In the **Activity log** page, use the filters as described above to drill down into your apps as necessary.
 
-2. After you've finished building your query, click the **Save as** button in the top right corner of the filters.
+2. After you've finished building your query, select the **Save as** button in the top-right corner of the filters.
 
 3. In the **Save query** pop-up, name your query.
 
@@ -133,7 +136,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 ![query activities](media/queries-activity.png)
 
-Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
+Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally select **Save as** to create a new **Saved query**.
 
 ## Next steps
 

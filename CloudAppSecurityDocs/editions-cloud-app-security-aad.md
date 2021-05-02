@@ -15,7 +15,7 @@ For information about licensing, see the [Microsoft Cloud App Security licensing
 
 ## Microsoft Cloud App Security
 
-Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Cloud App Security, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
+Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Cloud App Security, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
 ## Enhanced Cloud App Discovery in Azure Active Directory
 
@@ -34,6 +34,7 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 ||Cloud app risk assessment|Yes|Yes|
 ||Cloud usage analytics per app, user, IP address|Yes|Yes|
 ||Ongoing analytics & reporting|Yes|Yes|
+||Custom policy creation |Yes|Yes|
 ||Anomaly detection for discovered apps|Yes||
 |Information Protection|Data Loss Prevention (DLP) support|Cross-SaaS DLP and data sharing control||
 ||App permissions and ability to revoke access (OAuth apps)|Yes||

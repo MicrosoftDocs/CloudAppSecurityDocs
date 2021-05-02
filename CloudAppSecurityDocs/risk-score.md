@@ -63,7 +63,7 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
     ![Suggest an app pop-up to Cloud App Security](media/suggest-new-app-pop-up.png)
 
-3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. Filling in contact information allows you to be updated when the analysis is complete.
+3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. 
 
 **To update a risk factor, score, or update app data:**
 

@@ -12,11 +12,11 @@ ms.topic: how-to
 This article provides instructions for connecting Microsoft Cloud App Security to your existing ServiceNow account using the app connector API. This connection gives you visibility into and control over ServiceNow use. For information about how Cloud App Security protects ServiceNow, see [Protect ServiceNow](protect-servicenow.md).
 
 > [!NOTE]
-> We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/administer/security/concept/c_OAuthApplications.html?title=OAuth_Applications).
+> We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
 > For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password. The username/password provided are only used for API token generation and are not saved after the initial connection process.
 
 > [!NOTE]
-> Cloud App Security supports the following ServiceNow versions: Eureka, Fiji, Geneva, Helsinki, Istanbul, Jakarta, Kingston, London, Madrid, and New York. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access. For more information, see the [ServiceNow Product Documentation](https://docs.servicenow.com/bundle/jakarta-servicenow-platform/page/administer/security/concept/c_OAuthApplications.html?title=OAuth_Applications).
+> Cloud App Security supports the following ServiceNow versions: Eureka, Fiji, Geneva, Helsinki, Istanbul, Jakarta, Kingston, London, Madrid, New York, Orlando and Paris. In order to connect ServiceNow with Cloud App Security, you must have the role **Admin** and make sure the ServiceNow instance supports API access. For more information, see the [ServiceNow Product Documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
 
 ## How to connect ServiceNow to Cloud App Security using OAuth
 
@@ -27,11 +27,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 2. In the **Filter navigator** search bar, type **OAuth** and select **Application Registry**.
 
-3. In the **Application Registries** menu bar, click **New** to create a new OAuth profile.
+3. In the **Application Registries** menu bar, select **New** to create a new OAuth profile.
 
     ![ServiceNow new OAuth profile](media/servicenow-app-registry.png)
 
-4. Under **What kind of OAuth application?**, click **Create an OAuth API endpoint for external clients**.
+4. Under **What kind of OAuth application?**, select **Create an OAuth API endpoint for external clients**.
 
     ![ServiceNow OAuth type](media/servicenow-oauth-app-type.png)
 
@@ -45,13 +45,13 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     - Increase the **Access Token Lifespan** to at least 3,600.
 
-    - Click **Submit**.
+    - Select **Submit**.
 
     ![ServiceNow profile IDs](media/servicenow-profile-ids.png)
 
-6. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+6. In the Cloud App Security portal, select **Investigate** and then **Connected apps**.
 
-7. In the **App connectors** page, click the plus button and then **ServiceNow**.
+7. In the **App connectors** page, select the plus button and then **ServiceNow**.
 
     ![connect ServiceNow](media/connect-servicenow.png "connect ServiceNow")
 
@@ -59,15 +59,15 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![ServiceNow user ID](media/servicenow-userid.png)
 
-9. Click **Connect**.
+9. Select **Connect**.
 
     ![ServiceNow connect to CAS](media/servicenow-portal-connect.png "ServiceNow connect in portal")
 
-10. Make sure the connection succeeded by clicking **Test now**.
+10. Make sure the connection succeeded by selecting **Test now**.
 
-    Testing may take a couple of minutes. After receiving a success notice, click **Close**.
+    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
 
-After connecting ServiceNow, you'll receive events for 7 days prior to connection.
+After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
 ## Legacy ServiceNow connection
 
@@ -81,23 +81,23 @@ To connect ServiceNow with Cloud App Security, you must have admin-level permiss
 
     ![ServiceNow account](media/servicenow-account.png "ServiceNow account")
 
-4. In the Cloud App Security portal, click **Investigate** and then **Sanctioned apps**.
+4. In the Cloud App Security portal, select **Investigate** and then **Sanctioned apps**.
 
-5. In the ServiceNow row, click **Connect** in the **App Connector status** column, or click the **Connect an app** button and then **ServiceNow**.
+5. In the ServiceNow row, select **Connect** in the **App Connector status** column, or select the **Connect an app** button and then **ServiceNow**.
 
    ![connect ServiceNow](media/connect-servicenow.png "connect ServiceNow")
 
 6. In the ServiceNow settings page, on the API tab, add your ServiceNow user ID, password, and instance URL in the appropriate boxes.
 
-7. Click **Connect**.
+7. Select **Connect**.
 
     ![ServiceNow update password](media/servicenow-update-password.png "ServiceNow update password")
 
-8. Make sure the connection succeeded by clicking **Test API**.
+8. Make sure the connection succeeded by selecting **Test API**.
 
-    Testing may take a couple of minutes. After receiving a success notice, click **Close**.
+    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
 
-After connecting ServiceNow, you will receive events for 7 days prior to connection.
+After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
