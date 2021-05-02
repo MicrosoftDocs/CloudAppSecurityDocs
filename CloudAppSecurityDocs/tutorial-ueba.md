@@ -8,9 +8,9 @@ ms.topic: tutorial
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often are not connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Cloud App Security now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
+Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often aren't connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Cloud App Security now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 
-To help you focus on user identity, Microsoft Cloud App Security provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Microsoft Defender for Identity. After you integrate with Defender for Identity, you will also gain context around user identity from its native integration with Active Directory.
+To help you focus on user identity, Microsoft Cloud App Security provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Microsoft Defender for Identity. After you integrate with Defender for Identity, you'll also gain context around user identity from its native integration with Active Directory.
 
 Whether your trigger is an alert you see in the Cloud App Security dashboard, or whether you have information from a third-party security service, start your investigation from the Cloud App Security dashboard to deep dive into risky users.
 
@@ -33,9 +33,9 @@ The **Investigation priority score** provides you with the ability to detect bot
 
 The investigation priority score is based on security alerts, abnormal activities, and potential business and asset impact related to each user to help you assess how urgent it is to investigate each specific user.
 
-If you click on the score value for an alert or an activity, you can view the evidence that explains how Cloud App Security scored the activity.
+If you select the score value for an alert or an activity, you can view the evidence that explains how Cloud App Security scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Cloud App Security. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they are compromised, exfiltrating data, or acting as insider threats.
+Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Cloud App Security. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
 
 Cloud App Security uses the following to measure risk:
 
@@ -44,6 +44,11 @@ The alert score represents the potential impact of a specific alert on each user
 
 - **Activity scoring**  
 The activity score determines the probability of a specific user performing a specific activity, based on behavioral learning of the user and their peers. Activities identified as the most abnormal receive the highest scores.
+
+- **Blast radius**  
+Blast radius adds an additional score factor to the investigation priority calculations, based on multiple factors that determine the potential impact a compromised user has on the organization.
+
+  ![Blast radius](media/blast-radius-design.png)
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
@@ -60,7 +65,7 @@ The **investigation priority number**, found next to the user name, is a sum of 
 
    ![Top users dashboard](media/dashboard-top-users.png)
 
-1. Click on a particular user to get to the **User** page.
+1. Select a particular user to get to the **User** page.
     ![User page](media/user-page.png)
 
 1. Review the information in the User page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.  
@@ -71,22 +76,22 @@ The User page helps you answer the questions:
     - Is the user risky?  
     Check out the top of the right pane so you know whether it's worth your while to investigate the user. What is the employee's [risk score](#risk-score)?
     - What's risk does the user present to your organization?  
-    Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, click on each line so you can drill down deeper into the activity or alert itself. You can click also on the number next to the activity so that you can understand the evidence that influenced the score itself.
+    Look at the list in the bottom pane, which provides you with each activity and each alert related to the user to help you start understanding what type of risk the user represents. In the timeline, select each line so you can drill down deeper into the activity or alert itself. You can also select the number next to the activity so that you can understand the evidence that influenced the score itself.
     - What's the risk to other assets in your organization?  
-    Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. For example, even if the user you are investigating has a non-sensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. For more information, see [Use Lateral Movement Paths](/defender-for-identity/investigate-lateral-movement-path).
+    Select the **Lateral movement paths** tab to understand which paths an attacker can use to gain control of other assets in your organization. For example, even if the user you're investigating has a non-sensitive account, an attacker can use connections to the account to discover and attempt to compromise sensitive accounts in your network. For more information, see [Use Lateral Movement Paths](/defender-for-identity/investigate-lateral-movement-path).
 
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
 
 ## Phase 3: Further investigate users<a name="investigate"></a>
 
-When you investigate a user based on an alert or if you saw an alert in an external system, there may be activities which alone may not be cause for alarm, but when Cloud App Security aggregates them together with other activities, the alert may be an indication of a suspicious event.
+When you investigate a user based on an alert or if you saw an alert in an external system, there may be activities that alone may not be cause for alarm, but when Cloud App Security aggregates them together with other activities, the alert may be an indication of a suspicious event.
 
 When you investigate a user, you want to ask these questions about the activities and alerts you see:
 
 - Is there a business justification for this employee to perform these activities? For example, if someone from Marketing is accessing the code base, or someone from Development accesses the Finance database, you should follow up with the employee to make sure this was an intentional and justified activity.
 
-- Go to the **Activity log** to understand why this activity received a high score while others did not. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can very easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
+- Go to the **Activity log** to understand why this activity received a high score while others didn't. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
 
 ## Phase 4: Protect your organization<a name="protect"></a>
 
@@ -94,10 +99,10 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 
 - Contact the user – Using the user contact information integrated with Cloud App Security from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-- Directly from the Cloud App Security portal, click on the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
+- Directly from the Cloud App Security portal, select the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
 
 - In case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
-- If you drill down into an alert and determine that the activity should not have triggered an alert, in the [Activity drawer](activity-filters.md), click the **Send us feedback** link so that we can be sure to fine tune our alerting system with your organization in mind.
+- If you drill down into an alert and determine that the activity shouldn't have triggered an alert, in the [Activity drawer](activity-filters.md), select the **Send us feedback** link so that we can be sure to fine-tune our alerting system with your organization in mind.
 - After you remediate the issue, close the alert.
 
 ## See also
