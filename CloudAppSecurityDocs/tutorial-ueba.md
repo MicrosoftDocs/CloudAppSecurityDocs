@@ -51,7 +51,7 @@ Blast radius adds an additional score factor to the investigation priority calcu
   ![Blast radius](media/blast-radius-design.png)
 
   >[!NOTE]
-  > The blast radius factor is dependent on various considerations in the tenant, and therefore may not appear for all tenants.
+  > The blast radius factor is dependent on the relevancy of the tenant, and therefore may not appear for all tenants.
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
