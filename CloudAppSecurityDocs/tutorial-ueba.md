@@ -51,7 +51,7 @@ Blast radius adds an additional score factor to the investigation priority calcu
   ![Blast radius](media/blast-radius-design.png)
 
   >[!NOTE]
-  > The blast radius is available only in part of the tenant, based on the size of the tenant and the comprehensiveness of the organizational structure that appears in Azure Active Directory. For other tenants, the blast radius will not affect the user score.
+  > The blast radius factor is dependent on various considerations in the tenant, and therefore may not appear for all tenants.
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
