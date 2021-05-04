@@ -1,14 +1,14 @@
 ---
 title: Cloud App Security Alerts API
 description: This article provides information about using the Alerts API.
-ms.date: 10/20/2020
+ms.date: 05/04/2021
 ms.topic: reference
 ---
 # Alerts API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-The Alerts API provides you with information about immediate risks identified by Cloud App Security and require attention. Alerts can result from suspicious usage patterns or from files containing content that violates company policy.
+The Alerts API provides you with information about immediate risks identified by Cloud App Security that require attention. Alerts can result from suspicious usage patterns or from files containing content that violates company policy.
 
 The following lists the supported requests:
 
@@ -32,6 +32,30 @@ The following table lists the requests deprecated as obsolete, and the requests 
 
 > [!NOTE]
 > The deprecated requests have been mapped to their alternatives to avoid disruption. However, if you are using obsolete requests in your environment, we recommend updating them to their alternatives.
+
+## Properties
+
+The response object defines the following properties.
+
+| Property | Type | Description |
+| --- | --- | --- |
+| id | int | Alert type identifier |
+| timestamp | long | Timestamp of when the alert was raised |
+| entities | list | A list of entities related to the alert |
+| title                | string | The title of the alert                                       |
+| description          | string | The alert's description                                          |
+| isMarkdown           | bool   | Flag to indicate if the alert's description is already in HTML |
+| status               | int    | The alert's state. Possible values include:<br /><br />**0**: UNREAD<br />**1**: READ<br />**2**: ARCHIVED |
+| severity             | int    | The alert's severity. Possible values include:<br /><br />**0**: LOW<br />**1**: MEDIUM<br />**2**: HIGH<br />**3**: INFORMATIONAL |
+| resolutionStatus     | int    | Alert's status. Possible values include:<br /><br />**0**: OPEN<br />**1**: DISMISSED<br />**2**: RESOLVED<br />**3**: FALSE_POSITIVE<br />**4**: BENIGN<br />**5**: TRUE_POSITIVE |
+| stories              | int    | Risk category. Possible values include:<br /><br />**0**: THREAT_DETECTION<br />**1**: PRIVILEGED_ACCOUNT_MONITORING<br />**2**: COMPLIANCE<br />**3**: DLP<br />**4**: DISCOVERY<br />**5**: SHARING_CONTROL<br />**7**: ACCESS_CONTROL<br />**8**: CONFIGURATION_MONITORING |
+| eventsConsoleFilters | string | Filter for console to display related activities             |
+| evidence             | list   | List of short descriptions of main parts of the alert        |
+| intent               | list   | A field that specifies the kill chain related intent behind the alert. Multiple values can be reported in this field. The **intent** enumeration values follow the [MITRE att@ck enterprise matrix model](https://attack.mitre.org/matrices/enterprise/). Further guidance on the different techniques that make up each intent can be found in MITRE's documentation.<br>  Possible values include:<br/><br>**0**: UNKNOWN<br />**1**: PREATTACK<br />**2**: INITIAL_ACCESS<br />**3**: PERSISTENCE<br />**4**: PRIVILEGE_ESCALATION<br />**5**: DEFENSE_EVASION<br />**6**: CREDENTIAL_ACCESS<br />**7**: DISCOVERY<br />**8**: LATERAL_MOVEMENT<br />**9**: EXECUTION<br />**10**: COLLECTION<br />**11**: EXFILTRATION<br />**12**: COMMAND_AND_CONTROL<br />**13**: IMPACT |
+| isPreview            | bool   | Alerts that have been recently released as GA                |
+| audits *(optional)*  | list   | List of event ids that are related to the alert              |
+| threatScore          | int    | User investigation priority                                  |
+| threatScoreReasoning | list   | The activity's investigation priority score evidence             |
 
 ## Filters
 
