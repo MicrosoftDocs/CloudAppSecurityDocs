@@ -8,7 +8,7 @@ ms.topic: reference
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This page describes how to create an application to get programmatic access to Cloud App Security without a user. If you need programmatic access to Cloud App Security on behalf of a user, see [Get access with user context](api-authentication-user.md). If you aren't sure which access you need, see [Get started](api-authentication.md).
+This page describes how to create an application to get programmatic access to Cloud App Security without a user. If you need programmatic access to Cloud App Security on behalf of a user, see [Get access with user context](api-authentication-user.md). If you aren't sure which access you need, see the [Managing API tokens](api-authentication.md) page.
 
 Microsoft Cloud App Security exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Cloud App Security capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
@@ -37,14 +37,12 @@ This article explains how to create an Azure AD application, get an access token
 
    ![add permission](images/add-permission.png)
 
-   - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
+   - Select **Application permissions** > **Investigation.Read.All**, and then select **Add permissions**.
 
    ![app permission](images/application-permissions.png)
 
-     You need to select the relevant permissions. **Read All Alerts** is only an example. For instance:
+     You need to select the relevant permissions. **Read All Alerts** is only an example.
 
-     - To [run advanced queries](run-advanced-query-api.md), select the 'Run advanced queries' permission.
-     - To [isolate a device](isolate-machine.md), select the 'Isolate machine' permission.
      - To determine which permission you need, look at the **Permissions** section in the API you're interested to call.
 
 5. Select **Grant consent**.

@@ -315,6 +315,8 @@ items:
         href: api-authentication-application.md
       - name: User context
         href: api-authentication-user.md
+      - name: Legacy method
+        href: api-tokens-legacy.md
     - name: Activities
       items:
       - name: Overview

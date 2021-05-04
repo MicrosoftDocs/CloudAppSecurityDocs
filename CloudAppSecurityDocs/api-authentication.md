@@ -22,6 +22,9 @@ In general, you’ll need to take the following steps to use the APIs:
 
 You can access the Cloud App Security API with **Application Context** or **User Context**.
 
+>[!NOTE]
+>[The legacy method](api-tokens-legacy.md) of accessing the Cloud App Security is still supported. However, it is on a deprecation path, so we recommend using the methods described on this page.
+
 ## Application context (recommended)
   
 Used by apps that run without a signed-in user present. For example, apps that run as background services or daemons.

@@ -66,16 +66,12 @@ This page explains how to create an AAD application, get an access token to Micr
 
       ![add permission](images/add-permission.png)
 
-    - Choose **Delegated permissions** > **Alert.Read** > select **Add permissions**
+    - Choose **Delegated permissions** > **Investigation.Read** > select **Add permissions**
 
       ![application permissions](images/application-permissions-public-client.png)
 
     - **Important note**: Select the relevant permissions. Read alerts is only an example.
 
-      For instance,
-
-      - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-      - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
       - To determine which permission you need, view the **Permissions** section in the API you're interested to call.
 
     - Select **Grant consent**
