@@ -1,7 +1,7 @@
 ---
 title: Cloud App Security custom log parser for logs that aren't supported
 description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Cloud App Security.
-ms.date: 12/10/2018
+ms.date: 05/05/2021
 ms.topic: how-to
 ---
 # Use a custom log parser
@@ -14,13 +14,13 @@ The custom parser enables you to use logs from unsupported firewalls by followin
 
 To configure a custom parser:
 
-1. In the Cloud App Security portal, click on **Discover** and then **Create new snapshot report**.
+1. In the Cloud App Security portal, select **Discover** and then **Create snapshot report**.
 
     ![Create new snapshot report](media/create-new-snapshot-report.png)
 
 2. Enter a **Report name** and a **Description**
 
-3. Under **Data source**, select **Custom log format...**.
+3. Under **Source**, select **Custom log format...**.
 
     ![New snapshot report](media/custom-log-upload.png)
 
@@ -37,13 +37,13 @@ To configure a custom parser:
 
     ![Fill in custom log parser fields](media/custom-log-parser.png)
 
-7. Click **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on **Edit**.
+7. Select **Save**. The custom log format your configured will be saved as the default custom parser. You can edit it at any time by clicking on **Edit**.
 
-8. Under **Choose the traffic logs**, select the log file you modified and upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.
+8. Under **Upload traffic logs**, select the log file you modified and upload it. You can upload up to 20 files at once. Compressed and zipped files are also supported.
 
-9. Click **Create**.
+9. Select **Upload logs**.
 
-10. After upload completes, the status message will appear at the top right corner of your screen letting you know that your log was successfully uploaded.
+10. After upload completes, the status message will appear at the top-right corner of your screen letting you know that your log was successfully uploaded.
 
 11. After you upload your log files, it will take some time for them to be parsed and analyzed.
     After processing of your log files completes, you'll receive an email to notify you that it's done.
@@ -56,7 +56,7 @@ To configure a custom parser:
     ![Discovery settings tab](media/discovery-settings-tab.png)
 14. Then selecting **Manage snapshot reports** and select your snapshot report.
 
-    ![snapshot report management](media/snapshot-report-managment.png)
+    ![snapshot report management](media/snapshot-report-management.png)
 
 ## Next steps
 
