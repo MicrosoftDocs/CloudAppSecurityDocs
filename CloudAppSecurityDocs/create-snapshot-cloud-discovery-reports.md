@@ -1,7 +1,7 @@
 ---
 title: Create snapshot reports of Cloud Discovery cloud app use
 description: This article provides information about how to upload logs manually to create a snapshot report of your Cloud Discovery apps.
-ms.date: 04/07/2019
+ms.date: 05/05/2021
 ms.topic: how-to
 ---
 # Create snapshot Cloud Discovery reports
@@ -16,7 +16,7 @@ To create a snapshot report:
 
 1. Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
-1. In the Cloud App Security portal, click **Discover**, and then click **Create snapshot report**.
+1. In the Cloud App Security portal, select **Discover**, and then select **Create snapshot report**.
 
     ![Create new snapshot report](media/create-new-snapshot-report.png)
 
@@ -24,20 +24,22 @@ To create a snapshot report:
 
     ![New snapshot report](media/new-snapshot-report.png)
 
-1. Select the **Data source** from which you want to upload the log files.
+1. Select the **Source** from which you want to upload the log files.
 
-1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Click **View and verify** then click **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
+1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Under **Verify your log format**, select **View log format** then select **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
 
     ![Verify your log format](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
     > The FTP sample format is supported in snapshots and automated upload while syslog is supported in automated upload only. Downloading a sample log will download a sample FTP log.
 
-1. **Choose the traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.
+1. **Upload traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.
 
-1. Click **Create**.
+    ![Upload traffic logs](media/upload-traffic-logs.png)
 
-1. After upload completes, the status message will appear at the top right corner of your screen letting you know that your log was successfully uploaded.
+1. Select **Upload logs**.
+
+1. After upload completes, the status message will appear at the top-right corner of your screen letting you know that your log was successfully uploaded.
 
 1. After you upload your log files, it will take some time for them to be parsed and analyzed.
     After processing of your log files completes, you'll receive an email to notify you that it's done.
@@ -47,9 +49,9 @@ To create a snapshot report:
 
 1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by clicking the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Settings**.
 
-1. Then under **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
+1. Then under  **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
 
-    ![snapshot report management](media/snapshot-report-managment.png)
+    ![snapshot report management](media/snapshot-report-management.png)
 
 ## Using traffic logs for Cloud Discovery <a name="log-format"></a>
 
@@ -66,7 +68,7 @@ Cloud Discovery uses the data in your traffic logs. The more detailed your log, 
 
 Cloud Discovery can't show or analyze attributes that aren't included in your logs.
 For example, **Cisco ASA Firewall** standard log format doesn't have the **number of uploaded bytes per transaction**, **Username**, and  **Target URL** (only target IP).
-Therefore, these attributes will not be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps will be limited. For Cisco ASA firewalls, it is necessary to set the information level to 6.
+Therefore, these attributes won't be shown in Cloud Discovery data for these logs, and the visibility into the cloud apps will be limited. For Cisco ASA firewalls, it's necessary to set the information level to 6.
 
 To successfully generate a Cloud Discovery report, your traffic logs must meet the following conditions:
 
