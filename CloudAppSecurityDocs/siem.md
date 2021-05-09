@@ -56,31 +56,31 @@ Integrating with your SIEM is accomplished in three steps:
 
 ### Step 1: Set it up in the Cloud App Security portal
 
-1. In the Cloud App Security portal, under the **Settings** cog, click **Security extensions**.
+1. In the Cloud App Security portal, under the **Settings** cog, select **Security extensions**.
 
-1. On the **SIEM agents** tab, click add (**+**), and then choose **Generic SIEM**.
+1. On the **SIEM agents** tab, select "add" (**+**), and then choose **Generic SIEM**.
 
     ![Screenshot showing Add SIEM integration menu](media/siem0.png)
 
-1. In the wizard, click **Start Wizard**.
-1. In the wizard, fill in a name, and **Select your SIEM format** and set any **Advanced settings** that are relevant to that format. Click **Next**.
+1. In the wizard, select **Start Wizard**.
+1. In the wizard, fill in a name, and **Select your SIEM format** and set any **Advanced settings** that are relevant to that format. Select **Next**.
 
     ![General SIEM settings](media/siem1.png)
 
 1. Type in the IP address or hostname of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
-    You can work with your security admin to get these details if you don't have them. Click **Next**.
+    You can work with your security admin to get these details if you don't have them. Select **Next**.
 
     ![Remote Syslog settings](media/siem2.png)
 
-1. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server. Click **Edit and preview results** to check that the filter works as expected. Click **Next**.
+1. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server. Select **Edit and preview results** to check that the filter works as expected. Select **Next**.
 
    ![Data types settings](media/siem3.png)
 
 1. Copy the token and save it for later.
-    Click Finish and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later.
+    Select **Finish** and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later.
 
 > [!NOTE]
-> Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid.
+> Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid. A generic SIEM token provides read-only permissions to the only required resources. No other permissions are granted a part of this token.
 
 ### Step 2: Download the JAR file and run it on your server
 
@@ -177,13 +177,13 @@ If you lose the token, you can always regenerate it by clicking the three dots a
 
 ## Editing your SIEM agent
 
-To edit the SIEM agent, click on the three dots at the end of the row for the SIEM agent in the table, and select **Edit**. If you edit the SIEM agent, you don't need to rerun the .jar file, it updates automatically.
+To edit the SIEM agent, select the three dots at the end of the row for the SIEM agent in the table, and select **Edit**. If you edit the SIEM agent, you don't need to rerun the .jar file, it updates automatically.
 
 ![SIEM - edit](media/siem-edit.png)
 
 ## Deleting your SIEM agent
 
-To delete the SIEM agent, click on the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
+To delete the SIEM agent, select the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
 
 ![SIEM - delete](media/siem-delete.png)
 
