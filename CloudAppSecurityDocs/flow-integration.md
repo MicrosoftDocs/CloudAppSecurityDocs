@@ -58,3 +58,7 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
+## Learn more
+
+- Try our interactive guide: [Automate alerts management with Microsoft Power Automate and Cloud App Security](https://mslearn.cloudguides.com/guides/Automate%20alerts%20management%20with%20Microsoft%20Power%20Automate%20and%20Cloud%20App%20Security)

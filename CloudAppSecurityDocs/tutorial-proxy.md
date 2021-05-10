@@ -54,3 +54,7 @@ For any of the apps you've configured above, you can configure a session policy 
 1. Configure a policy to display a [block message with instructions on how to correct the label and try again](session-policy-aad.md#educate-protect).
 
 Protecting file uploads in this way ensures that data saved to the cloud has the correct access permissions applied. In the event that a file is shared or lost, it can only be accessed by authorized users.
+
+## Learn more
+
+- Try our interactive guide: [Protect and control information with Microsoft Cloud App Security](https://mslearn.cloudguides.com/guides/Protect%20and%20control%20information%20with%20Microsoft%20Cloud%20App%20Security)
