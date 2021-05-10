@@ -156,3 +156,7 @@ Great, you've set up your policies and start receiving suspicious activity alert
 To optimize your protection, you should consider setting up automatic remediation actions to minimize the risk to your organization. Our policies allow you to apply [governance actions](control.md) in conjunction to the alerts so that the risk to your organization is reduced even before you start investigating. Available actions are determined by the policy type including actions such as suspending a user or blocking access to the requested resource.
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
+## Learn more
+
+- Try our interactive guide: [Detect threats and manage alerts with Microsoft Cloud App Security](https://mslearn.cloudguides.com/guides/Detect%20threats%20and%20manage%20alerts%20with%20Microsoft%20Cloud%20App%20Security)
