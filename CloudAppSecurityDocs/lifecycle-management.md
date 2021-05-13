@@ -40,7 +40,7 @@ To best maintain Cloud App Security posture, regularly follow the recommendation
 
 ## Settings
 
-- Review [managed domains](general-setup.md#set-up-the-portal.md)
+- Review [managed domains](general-setup.md#set-up-the-portal)
 - Verify current [IP ranges](ip-tags.md) for Corporate and VPN
 - [Verify App Tag strategy and add/remove as needed](discovered-app-queries.md#creating-and-managing-custom-app-tags)
 - Check rights on [admin qauarantine folder](use-case-admin-quarantine.md)
