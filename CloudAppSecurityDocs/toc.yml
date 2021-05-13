@@ -9,6 +9,8 @@ items:
     href: cas-compliance-trust.md
   - name: What's new?
     href: release-notes.md
+  - name: Lifecycle management
+    href: lifecycle-management.md
   - name: Compare
     items:
     - name: Office 365 Cloud App Security
