@@ -12,11 +12,11 @@ This tutorial allows you to reevaluate Azure AD Conditional Access policies when
 
 ## The threat
 
-[What should be included here?]
+An employee logged in to SharePoint Online from the corporate office. During the same session, their IP address registered outside of the corporate network. Maybe they went to the coffee shop downstairs, or maybe their token was compromised or stolen by a malicious attacker.
 
 ## The solution
 
-Protect your organization by monitoring and controlling cloud app use with Azure AD and Cloud App Security's Conditional Access App Control.
+Protect your organization by requiring Azure AD Conditional Access policies to be reassessed during sensitive session actions Cloud App Security's Conditional Access App Control.
 
 ## Prerequisites
 
