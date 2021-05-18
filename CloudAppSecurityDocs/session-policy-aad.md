@@ -15,6 +15,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * [Monitor all activities](#monitor-session)
 * [Block all downloads](#block-download)
 * [Block specific activities](#block-activities)
+* [Require step-up authentication (authentication context)](#require-step-up-authentication-authentication-context)
 * [Protect files on download](#protect-download)
 * [Protect uploads of sensitive files](#protect-upload)
 * [Block malware on upload](#block-malware-on-upload)
@@ -34,7 +35,7 @@ To create a new session policy, follow this procedure:
 
 1. Go to **Control** > **Policies** > **Conditional access**.
 
-1. Click **Create policy** and select **Session policy**.
+1. Select **Create policy** and select **Session policy**.
 
     ![Create a Conditional access policy](media/create-policy-from-conditional-access-tab.png)
 
@@ -94,22 +95,26 @@ Conditional Access App Control records the traffic logs of every user session th
 
 To export these logs:
 
-1. Go to the settings cog and click **Conditional Access App Control**.
-2. On the right side of the table, click the export button.
+1. Go to the settings cog and select **Conditional Access App Control**.
+2. On the right side of the table, select the export button.
 
     ![export button](media/export-button.png)
-3. Select the range of the report and click **Export**. This process may take some time.
+3. Select the range of the report and select **Export**. This process may take some time.
 
 To download the exported log:
 
 1. After the report is ready, go to **Settings** and then **Exported reports**.
-2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and click download.
+2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and selet **Download**.
 
     ![download button](media/download-button.png)
 
 ## <a name="block-download"></a>Block all downloads
 
 When **Block** is set as the **Action** you want to take in the Cloud App Security session policy, Conditional Access App Control prevents a user from downloading a file per the policy's file filters. A download event is recognized by Microsoft Cloud App Security for each app when a user starts a download. Conditional Access App Control intervenes in real time to prevent it from running. When the signal is received that a user has initiated a download, Conditional Access App Control returns a **Download restricted** message to the user and replaces the downloaded file with a text file. The text file's message to the user can be configured and customized from the session policy.
+
+## Require step-up authentication (authentication context)
+
+When **Session control type** is set to **Block activities, Control file download (with inspection), Control file upload (with inspection)**, you can select an **Action** of **Require step-up authentication**. When this action is selected, Cloud App Security will redirect the session to Azure AD Conditional Access for policy re-evaluation, whenever the selected activity occurs. Based on the configured authentication context in Azure AD, claims such as multi-factor authentication and device compliance can be checked during a session.
 
 ## <a name="block-activities"></a>Block specific activities
 
@@ -134,7 +139,7 @@ Cloud App Security currently supports applying [Azure Information Protection cla
 
 ## <a name="protect-upload"></a>Protect uploads of sensitive files
 
-When **Control file upload (with inspection)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and does not have a proper label, the file upload is blocked.
+When **Control file upload (with inspection)** is set as the **Session Control type** in the Cloud App Security session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and doesn't have a proper label, the file upload is blocked.
 
 For example, you can create a policy that scans the content of a file to determine if it contains a sensitive content match such as a social security number. If it contains sensitive content and is not labeled with an Azure Information Protection confidential label, the file upload is blocked. When the file is blocked, you can [display a custom message to the user](#educate-protect) instructing them on how to label the file in order to upload it. By doing so, you ensure that files stored in your cloud apps comply with your policies.
 

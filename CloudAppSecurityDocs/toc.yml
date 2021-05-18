@@ -48,6 +48,8 @@ items:
     href: use-case-information-protection.md
   - name: Extend governance to endpoint remediation
     href: tutorial-flow.md
+  - name: Require step-up authentication upon risky action
+    href: tutorial-step-up-authentication.md
 - name: Concepts
   items:
   - name: Protect apps with Conditional Access App Control
