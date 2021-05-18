@@ -43,25 +43,28 @@ Follow these steps to configure featured apps to be controlled by Microsoft Clou
 
 ### Configure integration with Azure AD
 
+>[!NOTE]
+>When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
+
 Use the following steps to create an Azure AD Conditional Access policy that routes app sessions to Cloud App Security. For other IdP solutions, see [Configure integration with other IdP solutions](#configure-integration-with-other-idp-solutions).
 
 1. In Azure AD, browse to **Security** > **Conditional Access**.
 
-1. On the **Conditional Access** pane, in the toolbar at the top, click **New policy**.
+1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy**.
 
 1. On the **New** pane, in the **Name** textbox, enter the policy name.
 
-1. Under **Assignments**, click **Users and groups**, assign the users that will be onboarding (initial sign on and verification) the app, and then click **Done**.
+1. Under **Assignments**, select **Users and groups**, assign the users that will be onboarding (initial sign-on and verification) the app, and then select **Done**.
 
-1. Under **Assignments**, click **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then click **Done**.
+1. Under **Assignments**, select **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then select **Done**.
 
-1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
+1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then select **Select**.
 
     ![Azure AD conditional access](media/azure-ad-caac-policy.png)
 
 1. Optionally, add conditions and grant controls as required.
 
-1. Set **Enable policy** to **On** and then click **Create**.
+1. Set **Enable policy** to **On** and then select **Create**.
 
 ### Configure integration with other IdP solutions
 
@@ -76,8 +79,8 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 
 1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
-1. Click the plus sign (**+**), and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
-1. On the **APP INFORMATION** page, fill out the form using the information from your app's single sign-on configuration page, and then click **Next**.
+1. Select the plus sign (**+**), and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
+1. On the **APP INFORMATION** page, fill out the form using the information from your app's single sign-on configuration page, and then select **Next**.
     - If your IdP provides a single sign-on metadata file for the selected app, select **Upload metadata file from the app** and upload the metadata file.
     - Or, select **Fill in data manually** and provide the following information:
         - **Assertion consumer service URL**
@@ -85,11 +88,11 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 
     ![Screenshot showing app information page](media/proxy-deploy-add-idp-app-info.png)
 
-1. On the **IDENTITY PROVIDER** page, use the provided steps to set up a new application in your IdP's portal, and then click **Next**.
+1. On the **IDENTITY PROVIDER** page, use the provided steps to set up a new application in your IdP's portal, and then select **Next**.
     1. Go to your IdP's portal and create a new custom SAML app.
     1. Copy the single sign-on configuration of the existing `<app_name>` app to the new custom app.
     1. Assign users to the new custom app.
-    1. Copy the apps single sign-on configuration inf'rmation, you'll need it in the next step.
+    1. Copy the apps single sign-on configuration information. You'll need it in the next step.
 
     ![Screenshot showing gather identity provider information page](media/proxy-deploy-add-idp-get-conf.png)
 
@@ -99,7 +102,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
     > - Some identity providers do not allow you to change the SAML attributes or URL properties of a gallery app
     > - Configuring a custom app enables you to test this application with access and session controls without changing the existing behavior for your organization.
 
-1. On the next page, fill out the form using the information from your app's single sign-on configuration page, and then click **Next**.
+1. On the next page, fill out the form using the information from your app's single sign-on configuration page, and then select **Next**.
     - If your IdP provides a single sign-on metadata file for the selected app, select **Upload metadata file from the app** and upload the metadata file.
     - Or, select **Fill in data manually** and provide the following information:
         - **Assertion consumer service URL**
@@ -107,7 +110,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 
     ![Screenshot showing enter identity provider information page](media/proxy-deploy-add-idp-enter-conf.png)
 
-1. On the next page, copy the following information, and then click **Next**. You'll need the information in the next step.
+1. On the next page, copy the following information, and then select **Next**. You'll need the information in the next step.
 
     - Single sign-on URL
     - Attributes and values
@@ -128,7 +131,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
         > - When creating a new SAML app, the Okta Identity Provider limits attributes to 1024 characters. To mitigate this limitation, first create the app without the relevant attributes. After creating the app, edit it, and then add the relevant attributes.
     1. Verify that the name identifier is in the email address format.
     1. Save your settings.
-1. On the **APP CHANGES** page, do the following, and then click **Next**. You'll need the information in the next step.
+1. On the **APP CHANGES** page, do the following, and then select **Next**. You'll need the information in the next step.
 
     - Copy the Single sign-on URL
     - Download the Cloud App Security SAML certificate
@@ -139,7 +142,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
     1. [Recommended] Create a backup of your current settings.
     1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
     1. Upload the Cloud App Security SAML certificate you downloaded earlier.
-    1. Click **Save**.
+    1. Select **Save**.
 
     > [!NOTE]
     >
@@ -159,7 +162,7 @@ Cloud App Security will sync your policy details to its servers for each new app
 
 The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
-1. In the Cloud App Security portal, click the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In the Cloud App Security portal, select the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
 1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
 
@@ -170,11 +173,11 @@ The instructions above helped you create a built-in Cloud App Security policy fo
 
 ## Step 4: Enable the app for use in your organization<a name="enable-app"></a>
 
-Once you are ready to enable the app for use in your organization's production environment, do the following steps.
+Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Cloud App Security, click the settings cog ![settings icon](media/settings-icon.png), and then select **Conditional Access App Control**.
-1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
-1. Select **Use with Conditional Access App Control** and then click **Save**.
+1. In Cloud App Security, select the settings cog ![settings icon](media/settings-icon.png), and then select **Conditional Access App Control**.
+1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
+1. Select **Use with Conditional Access App Control** and then select **Save**.
 
     ![Enable session controls pop-up](media/edit-app-enable-session-controls.png)
 
@@ -189,7 +192,7 @@ Once you are ready to enable the app for use in your organization's production e
     ![Filter using Azure AD conditional access](media/sso-logon.png)
 
 1. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.  
-To verify that the activity is properly captured, click on a single sign-on login activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
+To verify that the activity is properly captured, select a single sign-on login activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).
 
 > [!NOTE]
 > After it is deployed, you can't remove an app from the Conditional Access App Control page. As long as you don't set a session or access policy on the app, the Conditional Access App Control won't change any behavior for the app.
