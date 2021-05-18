@@ -1,7 +1,7 @@
 ---
 title: Create Cloud Discovery anomaly detection policy in Cloud App Security
-description: This topic provides information about how to work with Cloud Discovery anomaly detection policies.
-ms.date: 01/03/2021
+description: This article provides information about how to work with Cloud Discovery anomaly detection policies.
+ms.date: 05/18/2021
 ms.topic: how-to
 ---
 # Cloud Discovery anomaly detection policy
@@ -16,9 +16,9 @@ A Cloud Discovery anomaly detection policy enables you to set up and configure c
 
 For each policy, you set filters that enable you to selectively monitor application usage. Filters include an application filter, selected data views, and a selected start date. You can also set the sensitivity, which enables you to set how many alerts the policy should trigger.
 
-1. Go to **Control** > **Policies** > **Shadow IT**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go to **Control** > **Policies** > **Shadow IT**.
 
-1. Click **Create policy** and select **Cloud Discovery anomaly detection policy**.
+1. Select **Create policy** and select **Cloud Discovery anomaly detection policy**.
 
     ![Create a Cloud Discovery policy](media/create-policy-from-shadow-it-tab.png)
 
@@ -29,7 +29,7 @@ For each policy, set the following parameters:
 1. Provide a **Policy name** and **Description**.
 
 1. Create a filter for the apps you want to monitor by clicking **Add filter**.
-   You can select a specific app, an app **Category**, or filter by **Name**, **Domain**, and **Risk factor**, and click **Save**.
+   You can select a specific app, an app **Category**, or filter by **Name**, **Domain**, and **Risk factor**, and select **Save**.
 
 1. Under **Apply to**, set how you want the usage to be filtered. The usage being monitored can be filtered in two different ways:
 
@@ -44,19 +44,19 @@ For each policy, set the following parameters:
 
         - Selecting **IP addresses** ignores the association of application usage with users.
 
-        - Selecting **Users and IP addresses** (default) considers both associations, but may produce duplicate alerts when there is a tight correspondence between users and IP addresses.
+        - Selecting **Users and IP addresses** (default) considers both associations, but may produce duplicate alerts when there's a tight correspondence between users and IP addresses.
 
-    - **Trigger alerts only for suspicious activities occurring after date** – Any increase in application usage before the selected date is ignored. However, activity from before the selected date is learned to establish the normal usage pattern.
+    - **Raise alerts only for suspicious activities occurring after** – Any increase in application usage before the selected date is ignored. However, activity from before the selected date is learned to establish the normal usage pattern.
 
-1. Under **Alerts**, you can set the alert sensitivity. There are a number of ways to control the number of alerts triggered by the policy:
+1. Under **Alerts**, you can set the alert sensitivity. There are several ways to control the number of alerts triggered by the policy:
 
     - The **Select anomaly detection sensitivity** slider – Trigger alerts for the top X anomalous activities per 1,000 users per week. The alerts are triggered for the activities with the highest risk.
 
     - **Daily alert limit** – restrict the number of alerts raised on a single day. You can select whether to **Send alert as email**, **Send alert as text message or both**. Messages sent by text message are limited to 10 per day, for the UTC time zone, meaning that the 10 message limit resets at midnight in the UTC time zone.
 
-    - You can also select the option to **Use your organization's default settings**. This option fills in the **Daily alert limit**, email, and text message settings from your organization's default settings. To set the default, fill out the **Alert configuration** settings and click **Save these alert settings as the default for your organization**.
+    - You can also select the option to **Use your organization's default settings**. This option fills in the **Daily alert limit**, email, and text message settings from your organization's default settings. To set the default, fill out the **Alert configuration** settings and many **Save these alert settings as the default for your organization**.
 
-1. Click **Create**.
+1. Select **Create**.
 
 1. Like with all policies, you can **Edit**, **Disable**, and **Enable** the policy by clicking the three dots at the end of the row in the **Policies** page. By default, when you create a policy it's enabled.
 
