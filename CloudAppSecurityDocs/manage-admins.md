@@ -16,7 +16,9 @@ Microsoft Cloud App Security supports role-based access control. This article pr
 ## Office 365 and Azure AD roles with access to Cloud App Security
 
 > [!NOTE]
-> Office 365 and Azure AD roles aren't listed in the Cloud App Security **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
+>
+> - Office 365 and Azure AD roles aren't listed in the Cloud App Security **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
+> - Cloud App Security uses Azure Active Directory to determine the status of a user with regards to sign-out properties. If a user is configured as permanently signed in in AAD, it will be permanently signed-in within Cloud App Security as well.
 
 By default, the following Office 365 and [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
 
