@@ -70,7 +70,7 @@ You can detect when your employees continue to use unsanctioned apps as a replac
 ### Steps
 
 1. In the Cloud app catalog, search for your business-ready apps and mark them with a [custom app tag](discovered-app-queries.md#creating-and-managing-custom-app-tags).
-
+ 
 2. Follow the steps in [Detect new high volume or wide app usage](#detect-volume).
 
 3. Add an **App tag** filter and choose the app tags you created for your business-ready apps.
