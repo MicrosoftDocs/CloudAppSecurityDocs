@@ -88,7 +88,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Get an access token
 
-For more information on AAD tokens, see [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on AAD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using C#
 

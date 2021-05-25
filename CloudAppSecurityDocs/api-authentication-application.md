@@ -85,7 +85,7 @@ This article explains how to create an Azure AD application, get an access token
 
 ## Get an access token
 
-For more information on Azure AD tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Azure AD tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Use PowerShell
 
