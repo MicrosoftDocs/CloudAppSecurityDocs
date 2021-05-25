@@ -112,7 +112,7 @@ If you want to override an administrator's permission from Azure AD or Office 36
 You can add additional admins to Cloud App Security without adding users to Azure AD administrative roles. To add additional admins, perform the following steps:
 
 > [!IMPORTANT]
-> Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
+> Only Azure AD Global Administrators or Security Administrators can access the **Manage admin access** page and grant other users access to Cloud App Security.
 
 1. Select the settings cog ![settings icon](media/settings-icon.png "settings icon") and then **Manage admin access**.
 
