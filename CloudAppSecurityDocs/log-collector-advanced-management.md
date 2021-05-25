@@ -401,7 +401,7 @@ Use these steps to validate the traffic received by log collectors.
         1. Install *netcat* and *wget*.
 
         1. Download, and if required unzip, a sample log, as follows:
-            1. In the Cloud App Security portal, click **Discover**, and then click **Create snapshot report**.
+            1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Discover**, and then click **Create snapshot report**.
             1. Select the **Data source** from which you want to upload the log files.
             1. Click **View and verify** then right-click **Download sample log** and copy the URL address link.
             1. Click **Close**.

@@ -40,7 +40,7 @@ To integrate with Azure Sentinel:
 
 ### Integrating with Azure Sentinel
 
-1. In the Cloud App Security portal, under the **Settings** cog, click **Security extensions**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, click **Security extensions**.
 
 1. On the **SIEM agents** tab, click add (**+**), and then choose **Azure Sentinel**.
 

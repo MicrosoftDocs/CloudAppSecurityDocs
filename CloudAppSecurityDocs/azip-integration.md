@@ -86,7 +86,7 @@ After enabling Azure Information Protection, you'll be able to see files that ha
 
 By default, Cloud App Security scans classification labels that were defined in your organization as well as external ones defined by other organizations.
 
-To ignore classification labels set external to your organization, in the Cloud App Security portal, go under **Settings** and **Azure Information Protection**. Select **Only scan files for Azure Information Protection classification labels and content inspection warnings from this tenant**.
+To ignore classification labels set external to your organization, in the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go under **Settings** and **Azure Information Protection**. Select **Only scan files for Azure Information Protection classification labels and content inspection warnings from this tenant**.
 
 ![ignore labels](media/azip-ignore.png)
 

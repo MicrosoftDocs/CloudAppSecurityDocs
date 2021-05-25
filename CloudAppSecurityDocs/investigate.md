@@ -44,7 +44,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
 ## Use the investigation tools
 
-1. In the Cloud App Security portal, go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following items:
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following items:
 
     - Who is accessing your cloud environment?
 

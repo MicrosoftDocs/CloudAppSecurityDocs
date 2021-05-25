@@ -23,7 +23,7 @@ To use the Cloud App Security API, you must first obtain the API URL from your t
 
 To obtain the Cloud App Security portal URL for your tenant, do the following steps:
 
-1. In the Cloud App Security portal, click the **question mark icon** in the menu bar. Then, select **About**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the **question mark icon** in the menu bar. Then, select **About**.
 
     ![click About](media/about-menu.png)
 

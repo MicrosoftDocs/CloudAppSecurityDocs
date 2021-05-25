@@ -16,7 +16,7 @@ To create a snapshot report:
 
 1. Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
-1. In the Cloud App Security portal, select **Discover**, and then select **Create snapshot report**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Discover**, and then select **Create snapshot report**.
 
     ![Create new snapshot report](media/create-new-snapshot-report.png)
 

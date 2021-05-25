@@ -101,7 +101,7 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
 ### Step 2: Connect Amazon Web Services auditing to Cloud App Security
 
-1. In the Cloud App Security portal, select **Investigate** and then **Connected apps**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
