@@ -38,7 +38,7 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
     ![Power Automate workflow](media/flow-workflow.png)
 
-6. In the Cloud App Security portal, go to **Policies** and in the row of the policy whose alerts you want to forward to Power Automate, click the three dots and select **Settings**.
+6. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go to **Policies** and in the row of the policy whose alerts you want to forward to Power Automate, click the three dots and select **Settings**.
 7. Under **Alerts**, select **Send Alerts to Power Automate** and choose the name of the playbook from the drop-down menu.
 
     ![Enable Power Automate in Cloud App Security portal](media/flow-mcas-config.png)

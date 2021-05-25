@@ -114,7 +114,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 #### Add the GCP connection details
 
-1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 

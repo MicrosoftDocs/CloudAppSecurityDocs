@@ -42,7 +42,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 1. **Identify the risk levels of your apps**: Use the Cloud App Security cloud app catalog to dive deeper into the risks that are involved with each discovered app. Cloud App Security's risk catalog includes over 16,000 apps that are assessed using over 80 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
 
-    - In the Cloud App Security portal, under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
+    - In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
 
     - You can drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's security risk factors.
 

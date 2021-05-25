@@ -100,7 +100,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 ## Configure Cloud App Security
 
-1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 1. To provide the Google Workspace connection details, under **App connectors**, do one of the following:
 

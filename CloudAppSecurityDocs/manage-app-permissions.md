@@ -21,7 +21,7 @@ The **OAuth** page displays information about app permissions in your connected 
 
 To access the OAuth tab:
 
-In the Cloud App Security portal, click **Investigate**, and then **OAuth apps**.
+In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate**, and then **OAuth apps**.
 
 ![app permissions](media/app-permissions.png)
 

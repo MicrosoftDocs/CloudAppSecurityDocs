@@ -68,7 +68,7 @@ Repeat this step for each additional connected organization.
 
 ### Configure Cloud App Security
 
-1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+1. In the C[loud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, click the plus button followed by **GitHub**.
 

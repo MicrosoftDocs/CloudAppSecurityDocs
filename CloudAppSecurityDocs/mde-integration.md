@@ -43,7 +43,7 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 
 To enable Defender for Endpoint integration with Cloud App Security:
 
-1. In Microsoft Defender Security Center, from the navigation pane, select **Settings**.
+1. In [Microsoft Defender Security Center](https://securitycenter.windows.com/), from the navigation pane, select **Settings**.
 2. Under **General**, select **Advanced features**.
 3. Toggle the **Microsoft Cloud App Security** to **On**.
 4. Click **Apply**.

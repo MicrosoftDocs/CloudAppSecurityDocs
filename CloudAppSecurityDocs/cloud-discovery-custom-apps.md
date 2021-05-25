@@ -16,7 +16,7 @@ By adding a new custom cloud app, Cloud App Security can match uploaded firewall
 
 ## Add a new custom cloud app
 
-1. In the Cloud App Security portal, click on **Discover** and then **Cloud Discovery dashboard**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click on **Discover** and then **Cloud Discovery dashboard**.
 
     ![cloud discovery dashboard menu](media/cloud-discovery-dashboard-menu.png)
 
