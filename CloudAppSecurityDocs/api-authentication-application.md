@@ -173,7 +173,7 @@ Ensure that you got the correct token:
 
 ## Use the token to access Microsoft Cloud App Security API
 
-1. Choose the API you want to use. For more information, see [Supported Cloud App Security APIs](exposed-apis-list.md).
+1. Choose the API you want to use. For more information, see [Cloud App Security APIs](api-introduction.md).
 1. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
 1. The expiration time of the token is one hour. You can send more than one request with the same token.
 

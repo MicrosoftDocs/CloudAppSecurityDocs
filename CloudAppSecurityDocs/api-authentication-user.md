@@ -26,7 +26,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 >[!NOTE]
 > When accessing Microsoft Cloud App Security API on behalf of a user, you will need the correct Application permission and user permission.
-> If you are not familiar with user permissions on Microsoft Cloud App Security, see [Manage portal access using role-based access control](rbac.md).
+> If you are not familiar with user permissions on Microsoft Cloud App Security, see [Manage admin access](manage-admins.md).
 
 >[!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API.
@@ -145,7 +145,7 @@ Verify to make sure you got a correct token:
 
 ## Use the token to access Microsoft Cloud App Security API
 
-- Choose the API you want to use - [Supported Microsoft Cloud App Security APIs](exposed-apis-list.md)
+- Choose the API you want to use. For more information, see [Cloud App Security APIs](api-introduction.md).
 - Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more than one request with the same token)
 
