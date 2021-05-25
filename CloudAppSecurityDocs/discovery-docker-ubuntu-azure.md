@@ -50,7 +50,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 1. Go to the **Automatic log upload** settings page.
 
-    1. In the Cloud App Security portal, click the settings icon followed by **Log collectors**.
+    1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the settings icon followed by **Log collectors**.
 
     ![settings icon](media/settings-icon.png)
 
@@ -228,7 +228,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 ---
 
-1. In the Cloud App Security portal in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/) in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
     ![Copy command to import collector configuration on hosting machine](media/windows7.png)
 
@@ -271,7 +271,7 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Cloud App Security portal, under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**. 
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**. 
 1. Click the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
 

@@ -162,7 +162,7 @@ Cloud App Security will sync your policy details to its servers for each new app
 
 The instructions above helped you create a built-in Cloud App Security policy for featured apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
-1. In the Cloud App Security portal, select the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
 1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
 
@@ -185,7 +185,7 @@ Once you're ready to enable the app for use in your organization's production en
 
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Azure AD, or for a SAML app configured with your identity provider.
 
-1. In the Cloud App Security portal, under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
 
 1. You can filter by clicking on **Advanced**, and then filtering using **Source equals Access control**.
 

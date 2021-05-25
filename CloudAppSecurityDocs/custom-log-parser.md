@@ -14,7 +14,7 @@ The custom parser enables you to use logs from unsupported firewalls by followin
 
 To configure a custom parser:
 
-1. In the Cloud App Security portal, select **Discover** and then **Create snapshot report**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Create snapshot report**.
 
     ![Create new snapshot report](media/create-new-snapshot-report.png)
 

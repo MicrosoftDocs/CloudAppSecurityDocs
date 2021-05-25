@@ -22,7 +22,7 @@ If you work with both Cloud App Security and Corrata, you can integrate the two 
 ## Deployment
 
 1. In the Corrata portal, do the steps to complete the [Corrata partner integration with Microsoft Cloud App Security](https://corrata.com/microsoft-mcas-onboarding).
-2. In the Cloud App Security portal, do the following integration steps:
+2. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), do the following integration steps:
     1. Click on the settings cog and select **Cloud Discovery Settings**.
     2. Click on the **Automatic log upload** tab and then click **Add data source**.
     3. In the **Add data source** page, enter the following settings:

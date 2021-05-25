@@ -46,7 +46,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 ### Step 2: Create a session policy
 
-1. In the Cloud App Security portal, select **Control** followed by **Policies**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
 
 1. In the **Policies** page, select **Create policy** followed by **Session policy**.
 

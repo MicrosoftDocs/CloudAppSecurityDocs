@@ -49,7 +49,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![ServiceNow profile IDs](media/servicenow-profile-ids.png)
 
-6. In the Cloud App Security portal, select **Investigate** and then **Connected apps**.
+6. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 7. In the **App connectors** page, select the plus button and then **ServiceNow**.
 
@@ -81,7 +81,7 @@ To connect ServiceNow with Cloud App Security, you must have admin-level permiss
 
     ![ServiceNow account](media/servicenow-account.png "ServiceNow account")
 
-4. In the Cloud App Security portal, select **Investigate** and then **Sanctioned apps**.
+4. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Sanctioned apps**.
 
 5. In the ServiceNow row, select **Connect** in the **App Connector status** column, or select the **Connect an app** button and then **ServiceNow**.
 

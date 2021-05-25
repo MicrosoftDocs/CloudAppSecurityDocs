@@ -39,7 +39,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
         > [!NOTE]
         > If you are an existing Adallom customer, and your console URL is for Adallom and not Cloud App Security, use this app serial number: `bwahmilhdlpbqy2ongkl119o3lrkoshc`.
 
-2. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+2. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 3. In the **App connectors** page, click the plus sign (**+**) button and select **Box**.
 

@@ -23,7 +23,7 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
 ## Deployment
 
 1. In the Zscaler portal, do the steps to complete the [Zscaler partner integration with Microsoft Cloud App Security](https://help.zscaler.com/zia/configuring-mcas-integration).
-2. In the Cloud App Security portal, do the following integration steps:
+2. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), do the following integration steps:
     1. Click on the settings cog and select **Cloud Discovery Settings**.
     2. Click on the **Automatic log upload** tab and then click **Add data source**.
     3. In the **Add data source** page, enter the following settings:

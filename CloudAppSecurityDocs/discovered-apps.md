@@ -64,7 +64,7 @@ For example, from Cloud App Security you can monitor activity such as if a lot o
 
 To view discovered resources:
 
-1. In the Cloud App Security portal, select **Discover** and then **Discovered resources**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Discovered resources**.
 
     ![Discovered resources menu](media/discovered-resources-menu.png)
 

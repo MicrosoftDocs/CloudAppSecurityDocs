@@ -56,7 +56,7 @@ Integrating with your SIEM is accomplished in three steps:
 
 ### Step 1: Set it up in the Cloud App Security portal
 
-1. In the Cloud App Security portal, under the **Settings** cog, select **Security extensions**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, select **Security extensions**.
 
 1. On the **SIEM agents** tab, select "add" (**+**), and then choose **Generic SIEM**.
 

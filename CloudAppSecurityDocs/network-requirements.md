@@ -16,7 +16,7 @@ Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the Cloud App Security portal, select the **question mark icon** in the menu bar. Then, select **About**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
 
     ![click About](media/about-menu.png)
 
