@@ -39,7 +39,7 @@ Detect potential exposure of your organization in cloud apps that do not meet yo
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
 
 ### Steps
 
@@ -112,7 +112,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. On the **Policies** page, edit the built-in policy **Data exfiltration to unsanctioned apps**.
+1. On the **Policies** page, edit the built-in policy **Data exfiltration to an app that is not sanctioned**.
 
 2. Select the filter **App category** equals **Cloud storage**.
 
