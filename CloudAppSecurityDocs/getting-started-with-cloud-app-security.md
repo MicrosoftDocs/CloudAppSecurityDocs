@@ -18,7 +18,7 @@ This quickstart provides you with steps for getting up and running with Cloud Ap
     For tenant activation support, see [Ways to contact support for business products - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
     >[!NOTE]
-    >Microsoft Cloud App Security is a security tool and therefore doesn't require Office 365 productivity suite licenses. For [Office Cloud App Security](editions-cloud-app-security-o365.md) (Microsoft Cloud App Security only for Office 365), see [Office Cloud App Security licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-cloud-app-security).
+    >Microsoft Cloud App Security is a security tool and therefore doesn't require Office 365 productivity suite licenses. For [Office 365 Cloud App Security](editions-cloud-app-security-o365.md) (Microsoft Cloud App Security only for Office 365), see [Office 365 Cloud App Security licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-cloud-app-security).
 
 - After you have a license for Cloud App Security, you'll receive an email with activation information and a link to the Cloud App Security portal.
 
