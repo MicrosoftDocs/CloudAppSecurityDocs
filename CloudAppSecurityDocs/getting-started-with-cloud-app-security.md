@@ -11,16 +11,15 @@ ms.topic: quickstart
 
 This quickstart provides you with steps for getting up and running with Cloud App Security. Microsoft Cloud App Security can help you take advantage of the benefits of cloud applications while maintaining control of your corporate resources. It works by improving visibility of cloud activity and helping to increase the protection of corporate data. In this article, we walk you through the steps you take to set up and work with Microsoft Cloud App Security.
 
-Your organization must have a license to use Cloud App Security. For pricing details, see the [Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
-
->[!NOTE]
->Cloud App Security does not require any Office 365 licenses.
-
 ## Prerequisites
 
-- Your organization must have a license to use Cloud App Security. For pricing details, see the [Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
+- In order for your organization to be in compliance for licensing Microsoft Cloud App Security, you must obtain a license for every user protected by Microsoft Cloud App Security. For pricing details, see the [Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
     For tenant activation support, see [Ways to contact support for business products - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+
+    >[!NOTE]
+    >Microsoft Cloud App Security is a security tool and therefore doesn't require Office 365 productivity suite licenses. For [Office 365 Cloud App Security](editions-cloud-app-security-o365.md) (Microsoft Cloud App Security only for Office 365), see [Office 365 Cloud App Security licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-cloud-app-security).
+
 - After you have a license for Cloud App Security, you'll receive an email with activation information and a link to the Cloud App Security portal.
 
 - To set up Cloud App Security, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true). For more information, see [Assign admin roles](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).

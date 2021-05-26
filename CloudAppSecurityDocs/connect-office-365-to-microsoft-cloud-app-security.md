@@ -10,7 +10,7 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft Cloud App Security to your existing Office 365 account using the app connector API. This connection gives you visibility into and control over Office 365 use. For information about how Cloud App Security protects Office 365, see [Protect Office 365](protect-office-365.md).
   
-Cloud App Security supports the legacy Office 365 Dedicated Platform as well as the latest offerings of Office 365 services (commonly referred as the vNext release family of Office 365).  Cloud App Security doesn't support the Legacy Microsoft Business Productivity Online Standard Suite (BPOS).
+Cloud App Security supports the legacy Office 365 Dedicated Platform as well as the latest offerings of Office 365 services (commonly referred as the vNext release family of Office 365).  
 
 > [!NOTE]
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
