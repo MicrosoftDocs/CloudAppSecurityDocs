@@ -96,24 +96,24 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
 - Use **AcquireUserTokenAsync** method with your application ID, tenant ID, user name, and password to acquire a token.
 
     ```csharp
-    namespace WindowsDefenderATP
+    namespace MCAS
     {
         using System.Net.Http;
         using System.Text;
         using System.Threading.Tasks;
         using Newtonsoft.Json.Linq;
 
-        public static class WindowsDefenderATPUtils
+        public static class MCASUtils
         {
             private const string Authority = "https://login.microsoftonline.com";
 
-            private const string WdatpResourceId = "https://api.securitycenter.microsoft.com";
+            private const string MCASId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
 
             public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var urlEncodedBody = $"resource={WdatpResourceId}&client_id={appId}&grant_type=password&username={username}&password={password}";
+                    var urlEncodedBody = $"resource={MCASId}&client_id={appId}&grant_type=password&username={username}&password={password}";
 
                     var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
 
@@ -130,7 +130,7 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
                 }
             }
         }
-    }
+    } 
     ```
 
 ## Validate the token
@@ -154,7 +154,7 @@ Verify to make sure you got a correct token:
     ```csharp
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://portal.cloudappsecurity.com/cas/api/v1/alerts/");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 

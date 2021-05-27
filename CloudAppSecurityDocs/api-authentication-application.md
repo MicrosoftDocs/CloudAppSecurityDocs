@@ -97,7 +97,7 @@ $tenantId = '' ### Paste your tenant ID here
 $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application key here
 
-$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+$resourceAppIdUri = '05a65629-4c1b-48c1-a78b-804c4abdd4af'
 $oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $authBody = [Ordered] @{
     resource = "$resourceAppIdUri"
@@ -126,20 +126,20 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
     ```c#
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
 
     const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    const string MCASResourceId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
 
     AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
     ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
+    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(MCASResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
 
 ### Use Python
 
-See [Get token using Python](run-advanced-query-sample-python.md#get-token).
+See [Microsoft Authentication Library (MSAL) for Python](https://github.com/AzureAD/microsoft-authentication-library-for-python).
 
 ### Use Curl
 
@@ -152,7 +152,7 @@ See [Get token using Python](run-advanced-query-sample-python.md#get-token).
 1. Run the following command:
 
 ```curl
-curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
+curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=05a65629-4c1b-48c1-a78b-804c4abdd4af/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 You'll get an answer in the following form:
@@ -182,7 +182,7 @@ The following is an example of sending a request to get a list of alerts **using
 ```C#
     var httpClient = new HttpClient();
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://portal.cloudappsecurity.com/cas/api/v1/alerts/");
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
