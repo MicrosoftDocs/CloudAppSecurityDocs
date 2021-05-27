@@ -37,7 +37,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 1. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration](media/atp-azure-new-app2.png)
 
 1. When the **Register an application** page appears, enter your application's registration information:
 
@@ -64,27 +64,27 @@ This page explains how to create an AAD application, get an access token to Micr
 
     - **Note**: *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-      ![add permission](images/add-permission.png)
+      ![add permission](media/add-permission.png)
 
     - Choose **Delegated permissions** > **Investigation.Read** > select **Add permissions**
 
-      ![application permissions](images/application-permissions-public-client.png)
+      ![application permissions](media/application-permissions-public-client.png)
 
-    - **Important note**: Select the relevant permissions. Read alerts is only an example.
+    - **Important note**: Select the relevant permissions. **Investigation.Read** is only an example.
 
       - To determine which permission you need, view the **Permissions** section in the API you're interested to call.
 
-    - Select **Grant consent**
+    - Select **Grant admin consent**
 
-      **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
+      **Note**: Every time you add permission you must select **Grant admin consent** for the new permission to take effect.
 
-      ![Image of Grant permissions](images/grant-consent.png)
+      ![Image of Grant permissions](media/grant-consent.png)
 
 1. Write down your application ID and your tenant ID:
 
    - On your application page, go to **Overview** and copy the following information:
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+        ![Image of created app id](media/app-and-tenant-ids.png)
 
 ## Get an access token
 
@@ -138,10 +138,10 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
 Verify to make sure you got a correct token:
 
 - Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
-- Validate you get a 'scp' claim with the desired app permissions
+- Validate that you get a 'scp' claim with the desired app permissions
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-![Image of token validation](images/nativeapp-decoded-token.png)
+    ![Image of token validation](media/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Cloud App Security API
 
@@ -164,3 +164,5 @@ Verify to make sure you got a correct token:
     ```
 
 ## See also
+
+- [Managing API tokens](api-authentication.md)

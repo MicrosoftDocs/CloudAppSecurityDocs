@@ -26,7 +26,7 @@ This article explains how to create an Azure AD application, get an access token
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration](media/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -35,33 +35,33 @@ This article explains how to create an Azure AD application, get an access token
    > [!NOTE]
    > *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![add permission](images/add-permission.png)
+   ![add permission](media/add-permission.png)
 
-   - Select **Application permissions** > **Investigation.Read.All**, and then select **Add permissions**.
+   - Select **Application permissions** > **Investigation.Read**, and then select **Add permissions**.
 
-   ![app permission](images/application-permissions.png)
+        ![app permission](media/application-permissions.png)
 
-     You need to select the relevant permissions. **Read All Alerts** is only an example.
+     You need to select the relevant permissions. **Investigation.Read** is only an example.
 
      - To determine which permission you need, look at the **Permissions** section in the API you're interested to call.
 
-5. Select **Grant consent**.
+5. Select **Grant admin consent**.
 
      > [!NOTE]
-     > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
+     > Every time you add a permission, you must select **Grant admin consent** for the new permission to take effect.
 
-    ![Grant permissions](images/grant-consent.png)
+    ![Grant permissions](media/grant-consent.png)
 
-6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
+6. To add a secret to the application, select **Certificates & secrets**, select **New client secret**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key](media/webapp-create-key2.png)
 
-7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
+7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the **Application (client) ID** and the **Directory (tenant) ID**.
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+   ![Image of created app id](media/app-and-tenant-ids.png)
 
 8. **For Microsoft Cloud App Security Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
@@ -167,9 +167,9 @@ Ensure that you got the correct token:
 
 1. Copy and paste the token you got in the previous step into [JWT](https://jwt.ms) in order to decode it.
 1. Validate that you get a 'roles' claim with the desired permissions
-1. In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Cloud App Security's roles:
+1. In the following image, you can see a decoded token acquired from an app with permissions to all of Microsoft Cloud App Security's roles:
 
-![Image of token validation](images/webapp-decoded-token.png)
+![Image of token validation](media/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Cloud App Security API
 
@@ -192,3 +192,5 @@ The following is an example of sending a request to get a list of alerts **using
 ```
 
 ## See also
+
+- [Managing API tokens](api-authentication.md)
