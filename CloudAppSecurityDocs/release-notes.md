@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 04/22/2021
+ms.date: 05/27/2021
 ms.topic: overview
 ---
 # What's new with Microsoft Cloud App Security?
@@ -18,6 +18,13 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 >[!NOTE]
 >**Deprecation reminder:** In [release 198](#cloud-app-security-release-198), we added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy. This feature replaces both **Treat encrypted as match**, and **Treat files that cannot be scanned as match**, in addition to adding new functionality. New policies will contain the new checkbox by default, deselected by default. Pre-existing policies will be migrated to the new checkbox on May 30. Policies with either or both options selected will have the new option selected by default; all other policies will have it deselected.
+
+## Cloud App Security release 200, 201, and 202
+
+May 30, 2021
+
+- **Authentication Context (Step-Up Authentication) in public preview**  
+We've added the ability to protect users working with proprietary and privileged assets by requiring Azure AD Conditional Access policies to be reassessed in the session. For example, if a change in IP address is detected because an employee in a highly sensitive session has moved from the office to the coffee shop downstairs, step-up can be configured to reauthenticate that user. For more information, see [Require step-up authentication (authentication context) upon risky action](tutorial-step-up-authentication.md).
 
 ## Cloud App Security release 199
 
