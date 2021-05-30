@@ -70,7 +70,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
       ![application permissions](media/application-permissions-public-client.png)
 
-    - **Important note**: Select the relevant permissions. **Investigation.Read** is only an example.
+    - **Important note**: Select the relevant permissions. **Investigation.Read** is only an example. For other permission scopes, see [Supported permission scopes](#supported-permission-scopes)
 
       - To determine which permission you need, view the **Permissions** section in the API you're interested to call.
 
@@ -85,6 +85,17 @@ This page explains how to create an AAD application, get an access token to Micr
    - On your application page, go to **Overview** and copy the following information:
 
         ![Image of created app id](media/app-and-tenant-ids.png)
+
+## Supported permission scopes
+
+| Permission name      | Supported actions                                            |
+| -------------------- | ------------------------------------------------------------ |
+| Investigation.read   | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unreadEntities list, fetch, fetch treeSubnet list |
+| Investigation.manage | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unread, closeEntities list, fetch, fetch treeSubnet list, create/update/delete |
+| Discovery.read       | Alerts list, fetch, mark as read/unreadDiscovery list reports, list report categories |
+| Discovery.manage     | Alerts list, fetch, mark as read/unread, closeDiscovery list reports, list report categoriesDiscovery file upload, generate block script |
+| Settings.read        | Subnet list                                                  |
+| Settings.manage      | Subnet list, create/update/delete                            |
 
 ## Get an access token
 

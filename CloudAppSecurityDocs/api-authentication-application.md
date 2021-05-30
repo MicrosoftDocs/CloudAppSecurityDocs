@@ -41,7 +41,7 @@ This article explains how to create an Azure AD application, get an access token
 
         ![app permission](media/application-permissions.png)
 
-     You need to select the relevant permissions. **Investigation.Read** is only an example.
+     You need to select the relevant permissions. **Investigation.Read** is only an example. For other permission scopes, see [Supported permission scopes](#supported-permission-scopes)
 
      - To determine which permission you need, look at the **Permissions** section in the API you're interested to call.
 
@@ -82,6 +82,17 @@ This article explains how to create an Azure AD application, get an access token
     Where 00000000-0000-0000-0000-000000000000 is replaced with your application ID.
 
 **Done!** You've successfully registered an application! See examples below for token acquisition and validation.
+
+## Supported permission scopes
+
+| Permission name      | Supported actions                                            |
+| -------------------- | ------------------------------------------------------------ |
+| Investigation.read   | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unreadEntities list, fetch, fetch treeSubnet list |
+| Investigation.manage | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unread, closeEntities list, fetch, fetch treeSubnet list, create/update/delete |
+| Discovery.read       | Alerts list, fetch, mark as read/unreadDiscovery list reports, list report categories |
+| Discovery.manage     | Alerts list, fetch, mark as read/unread, closeDiscovery list reports, list report categoriesDiscovery file upload, generate block script |
+| Settings.read        | Subnet list                                                  |
+| Settings.manage      | Subnet list, create/update/delete                            |
 
 ## Get an access token
 
@@ -127,10 +138,10 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
-
+    
     const string authority = "https://login.microsoftonline.com";
     const string MCASResourceId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
-
+    
     AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
     ClientCredential clientCredential = new ClientCredential(appId, appSecret);
     AuthenticationResult authenticationResult = auth.AcquireTokenAsync(MCASResourceId, clientCredential).GetAwaiter().GetResult();
