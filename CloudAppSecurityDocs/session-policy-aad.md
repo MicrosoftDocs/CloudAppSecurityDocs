@@ -25,7 +25,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 * Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
-* Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
+* Make sure you've configured your IdP solution to work with Cloud App Security, as follows:
   * For [Azure AD Conditional Access](/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
@@ -46,7 +46,8 @@ To create a new session policy, follow this procedure:
 
     1. Select **Control file download (with inspection)** if you want to monitor user activities. You can take additional actions like block or protect downloads for users.
     1. Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
-1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These filters can include the following options:
+
+1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These filters can include the following options for **Activity type**:
 
     * **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -55,6 +56,10 @@ To create a new session policy, follow this procedure:
     * **IP address**: Use this filter to filter per IP addresses or use previously assigned IP address tags.
 
     * **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or doesn't equal **Native client**. This filter should be tested against your mobile and desktop apps for each cloud app.
+
+    You can also match the activity type to **Send item**, which allows you to match for specific applications. Cloud App Security will display all the available apps in your environment that can be controlled for the specific activity. For example, this can be used to block submission of specific content in Microsoft Forms.
+
+    ![Filter Activity type for Send item](media/activity-type.png)
 
     >[!NOTE]
     >Session policies don't support mobile and desktop apps. Mobile apps and desktop apps can also be blocked or allowed by creating an access policy.
@@ -104,7 +109,7 @@ To export these logs:
 To download the exported log:
 
 1. After the report is ready, go to **Settings** and then **Exported reports**.
-2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and selet **Download**.
+2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and select **Download**.
 
     ![download button](media/download-button.png)
 
