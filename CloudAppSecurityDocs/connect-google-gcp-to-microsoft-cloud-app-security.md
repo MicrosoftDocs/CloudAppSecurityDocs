@@ -116,7 +116,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
-1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
+1. In the **App connectors** page, to provide the GCP connector credentials, do one of the following:
 
     > [!NOTE]
     > We recommended that you connect your Google Workspace instance to get unified user management and governance. This is the recommended even if you do not use any Google Workspace products and the GCP users are managed via the Google Workspace user management system.
@@ -139,7 +139,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     **For an existing connector**
 
-    1. In the list of connectors, on the row in which the AWS connector appears, click **Connect security auditing**.
+    1. In the list of connectors, on the row in which the GCP connector appears, click **Connect security auditing**.
 
         ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/connect-gcp-app-edit-audit.png)
 
