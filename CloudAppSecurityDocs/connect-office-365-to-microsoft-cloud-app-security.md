@@ -45,6 +45,7 @@ Cloud App Security supports the following Office 365 apps:
 >- If your Azure Active Directory is set to automatically sync with the users in your Active Directory on-premises environment the settings in the on-premises environment override the Azure AD settings and use of the **Suspend user** governance action is reverted.
 >- For Azure AD sign-in activities, Cloud App Security only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Noninteractive sign-in activities may be viewed in the Azure AD audit log.
 > - [Multi-geo deployments](/office365/enterprise/office-365-multi-geo) are only supported for OneDrive
+>- In SharePoint and OneDrive, Cloud App Security supports user quarantine only for files in **Shared Documents** libraries (SharePoint Online) and files in the **Documents** library (OneDrive for Business).
 
 1. In the **Connected apps** page, click the plus button and select **Office 365**.
 
