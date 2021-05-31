@@ -50,7 +50,7 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following tables list, per cloud app, which abilities are supported with App connectors:
 
-|                   | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
+| App                 | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
 | ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
@@ -67,7 +67,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 ---
 
-|                   | User governance                      | View app permissions      | Revoke app permissions    |
+|  App                 | User governance                      | View app permissions      | Revoke app permissions    |
 | ----------------- | ------------------------------------ | ------------------------- | ------------------------- |
 | AWS               |                                      | Not applicable            | Not applicable            |
 | Azure             |                                      |                           | Not supported by provider |
@@ -84,7 +84,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
 ---
 
-|                   | DLP - Periodic scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
+|    App               | DLP - Periodic scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
 | AWS               |                           | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
