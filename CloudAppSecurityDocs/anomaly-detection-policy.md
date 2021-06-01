@@ -48,7 +48,7 @@ The following anomaly detection policies are available:
     > [!NOTE]
     >
     > * When the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
-    > * The locations are calculated on a country level. That means that there be no alerts for two actions originating in the same country or in bordering countries.
+    > * The locations are calculated on a country level. This means that there will be no alerts for two actions originating in the same country or in bordering countries.
 
 ### Activity from infrequent country
 
