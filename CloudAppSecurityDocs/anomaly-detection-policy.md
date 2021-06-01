@@ -1,38 +1,17 @@
 ---
-# required metadata
-
 title: Create anomaly detection policies in Cloud App Security
 description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/05/2021
-
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 
 # Get behavioral analytics and anomaly detection
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you are ready from the outset to run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies immediately start the process of detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. In addition, the policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats.
+Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you're ready from the outset to run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies immediately start the process of detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. In addition, the policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats.
 
-The anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, as data is collected from your configured API connectors, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. Be aware that it may take several hours for data to be available from API connectors. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also use machine learning algorithms designed to profile the users and sign in pattern to reduce false positives.
+The anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, as data is collected from your configured API connectors, each session is compared to the activity, when users were active, IP addresses, devices, and so on, detected over the past month and the risk score of these activities. Be aware that it may take several hours for data to be available from API connectors. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also use machine learning algorithms designed to profile the users and sign in pattern to reduce false positives.
 
 Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into risk factors, as follows:
 
@@ -47,7 +26,7 @@ Anomalies are detected by scanning user activity. The risk is evaluated by looki
 
 Based on the policy results, security alerts are triggered. Cloud App Security looks at every user session on your cloud and alerts you when something happens that is different from the baseline of your organization or from the user's regular activity.
 
-In addition to native Cloud App Security alerts, you will also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
+In addition to native Cloud App Security alerts, you'll also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
 
 * Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Azure AD's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
 * Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection. For more information, see [Azure AD's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
@@ -64,10 +43,12 @@ The following anomaly detection policies are available:
 
 ### Impossible travel
 
-* This detection identifies two user activities (is a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user's activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities. The sensitivity slider allows you to impact the algorithm and define how strict the detection logic is. The higher the sensitivity level, the lower the suppression that is applied as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
+* This detection identifies two user activities (in a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user's activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities. The sensitivity slider allows you to impact the algorithm and define how strict the detection logic is. The higher the sensitivity level, the lower the suppression that is applied as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
 
     > [!NOTE]
-    > When the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
+    >
+    > * When the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
+    > * The locations are calculated on a country level. This means that there will be no alerts for two actions originating in the same country or in bordering countries.
 
 ### Activity from infrequent country
 
@@ -171,7 +152,7 @@ To affect the anomaly detection engine to suppress or surface alerts according t
 
 * In the Impossible Travel policy, you can set the sensitivity slider to determine the level of anomalous behavior needed before an alert is triggered. For example, if you set it to low, it will suppress Impossible Travel alerts from a user's common locations, and if you set it to high, it  will surface such alerts. You can choose from the following sensitivity levels:
 
-  * **Low**: System, tenant and user suppressions
+  * **Low**: System, tenant, and user suppressions
   * **Medium**: System and user suppressions
   * **High**: Only system suppressions
 
@@ -205,7 +186,7 @@ To scope an anomaly detection policy:
 
 ## Triage anomaly detection alerts
 
-You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones need to be taken care of first. To do this, you need the context for the alert, so you're able to see the bigger picture and understand whether something malicious is indeed happening.
+You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones need to be taken care of first. To do this, you need the context for the alert, so you can see the bigger picture and understand whether something malicious is indeed happening.
 
 1. In the **Activity log**, you can open an activity to display the Activity drawer. Click on **User** to view the user insights tab. This tab includes information like number of alerts, activities, and where they've connected from, which is important in an investigation.
 
