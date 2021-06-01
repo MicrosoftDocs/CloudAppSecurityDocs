@@ -50,6 +50,8 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following tables list, per cloud app, which abilities are supported with App connectors:
 
+### Users and activities
+
 |   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
 | ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
@@ -66,6 +68,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Webex             | ✔                                    |                                      | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 
+### User and app governance
 
 |  App                 | User governance                      | View app permissions      | Revoke app permissions    |
 | ----------------- | ------------------------------------ | ------------------------- | ------------------------- |
@@ -83,8 +86,9 @@ The following tables list, per cloud app, which abilities are supported with App
 | Webex             |                                      | Not applicable            | Not applicable            |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
 
+### Information protection
 
-|     App              | DLP - Periodic scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
+|     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
 | AWS               |                           | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
