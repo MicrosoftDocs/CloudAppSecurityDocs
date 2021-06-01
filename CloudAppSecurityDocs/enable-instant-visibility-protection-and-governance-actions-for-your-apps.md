@@ -48,24 +48,61 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 - **App permission governance** - Ability to remove tokens.
 
-The following table lists, per cloud app, which abilities are supported with App connectors:
+The following tables list, per cloud app, which abilities are supported with App connectors:
 
-| | AWS | Azure| Box | Dropbox | GitHub | GCP | Google Workspace | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
-| - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-| **List accounts** | ✔ | ✔ | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **List groups** | | ✔ | ✔ | ✔ | | Subject Google Workspace connection | ✔ | ✔ | | ✔ | ✔ | | Not supported by provider |
-| **List privileges** | | | ✔ | ✔ | ✔ | Subject Google Workspace connection | ✔ | ✔ | Not supported by provider | ✔ | ✔ | ✔ | Not supported by provider |
-| **User governance** | | | ✔ | Coming soon | | Subject Google Workspace connection | ✔ | ✔ | | | ✔ | | Not supported by provider |
-| **Log on activity** | ✔ | ✔ | ✔ | ✔ | | Subject Google Workspace connection | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **User activity** | Not applicable | | ✔ | ✔ | ✔ | ✔ | ✔ - requires Google Business or Enterprise | ✔ | ✔ | Partial | Supported with Salesforce Shield | ✔ | ✔ |
-| **Administrative activity** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | Partial | ✔ | ✔ | Not supported by provider |
-| **DLP - Periodic scan** | | | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
-| **DLP - Near real-time scan** | ✔ | | ✔ | ✔ | | Not applicable | ✔ - requires Google Business Enterprise | ✔ | Not applicable | ✔ | ✔ | ✔ | Not supported by provider |
-| **Sharing control** | ✔ | | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | Not applicable | | ✔ | Not supported by provider |
-| **File governance** | ✔ | | ✔ | ✔ | | Not applicable | ✔ | ✔ | Not applicable | | ✔ | | Not supported by provider |
-| **View app permissions** | Not applicable | | Not supported by provider | Coming soon | ✔ | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-| **Revoke app permissions** | Not applicable | Not supported by provider | | Coming soon | | Not applicable | ✔ | ✔ | Not applicable | | ✔ | Not applicable | Not applicable |
-| **Apply Azure Information Protection labels** | Not applicable | | ✔ | | | Not applicable | ✔ | ✔ | Not applicable | | | Not applicable | Not applicable |
+### Users and activities
+
+|   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
+| ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
+| AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
+| Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
+| Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
+| GCP               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
+| Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
+| Office 365        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Okta              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
+| Service  Now      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
+| Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
+| Webex             | ✔                                    |                                      | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
+
+### User and app governance
+
+|  App                 | User governance                      | View app permissions      | Revoke app permissions    |
+| ----------------- | ------------------------------------ | ------------------------- | ------------------------- |
+| AWS               |                                      | Not applicable            | Not applicable            |
+| Azure             |                                      |                           | Not supported by provider |
+| Box               | ✔                                    | Not supported by provider |                           |
+| Dropbox           | Coming soon                          | Coming soon               | Coming soon               |
+| GitHub            |                                      | ✔                         |                           |
+| GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |
+| Google  Workspace | ✔                                    | ✔                         | ✔                         |
+| Office 365        | ✔                                    | ✔                         | ✔                         |
+| Okta              |                                      | Not applicable            | Not applicable            |
+| Service  Now      |                                      |                           |                           |
+| Salesforce        | ✔                                    | ✔                         | ✔                         |
+| Webex             |                                      | Not applicable            | Not applicable            |
+| Workday           | Not supported by provider            | Not applicable            | Not applicable            |
+
+### Information protection
+
+|     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
+| ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
+| AWS               |                           | ✔                                        | ✔                         | ✔                         | Not applicable                             |
+| Azure             |                           |                                          |                           |                           |                                            |
+| Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
+| GitHub            |                           |                                          |                           |                           |                                            |
+| GCP               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
+| Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
+| Office 365        | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| Okta              | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
+| Service  Now      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
+| Salesforce        | ✔                         | ✔                                        |                           | ✔                         |                                            |
+| Webex             | ✔                         | ✔                                        | ✔                         |                           | Not applicable                             |
+| Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
 
 ## Prerequisites
 
