@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Power Automate with Microsoft Cloud App Security to get custom alert automation
 description: This article provides information about how to get custom alert automation by integrating Microsoft Power Automate with Cloud App Security.
-ms.date: 01/05/2021
+ms.date: 06/02/2021
 ms.topic: how-to
 ---
 # Integrate with Microsoft Power Automate for custom alert automation
@@ -24,7 +24,7 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
 1. [Create an API token](api-authentication.md) in Cloud App Security.
 
-2. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New**, and from the drop-down, select **Automated - from blank**.
+2. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New flow**, and in the drop-down, under **Build your own from blank**, select **Automated cloud flow**.
 
     ![Power Automate create new flow](media/flow-create-new.png)
 
@@ -32,7 +32,9 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
     ![Power Automate when an alert is generated](media/flow-when-alert.png)
 
-4. Under **Authentication settings**, paste the API token from step 1.
+4. Under **Authentication settings**, paste the API token from step 1. Give your connection a name and select **Create**.
+
+    ![Power Automate add token](media/add-token.png)
 
 5. Define the workflow that should be triggered when a policy in Cloud App Security generates an alert. You can add an action, logical condition, switch case conditions or loops and save the playbook.
 
