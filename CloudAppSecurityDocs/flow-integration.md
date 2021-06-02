@@ -36,7 +36,7 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
     ![Power Automate add token](media/add-token.png)
 
-5. Define the workflow that should be triggered when a policy in Cloud App Security generates an alert. You can add an action, logical condition, switch case conditions or loops and save the playbook.
+5. Select **+New step** to define the workflow that should be triggered when a policy in Cloud App Security generates an alert. You can add an action, logical condition, switch case conditions or loops and save the playbook. In this example, we'll be adding a [ServiceNow connector](/connectors/service-now/).
 
     ![Power Automate workflow](media/flow-workflow.png)
 
