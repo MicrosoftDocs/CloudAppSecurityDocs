@@ -21,6 +21,9 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 - An existing AD FS single sign-on configuration for the app using the SAML 2.0 authentication protocol
 
+>[!NOTE]
+>The steps here apply to all versions of AD FS that run on supported version of Windows Server.
+
 ## To configure session controls for your app using AD FS as the IdP
 
 Use the following steps to route your web app sessions from AD FS to Cloud App Security. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
