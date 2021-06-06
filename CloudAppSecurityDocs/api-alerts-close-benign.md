@@ -62,8 +62,11 @@ Response if alert was properly closed:
 {
     "closed_benign": 1
 }
- 
+```
+
 Response if alert not found:
+
+```json
 {
     "closed_benign": 0,
     "alertsNotFound": [

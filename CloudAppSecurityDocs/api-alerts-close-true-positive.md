@@ -60,8 +60,11 @@ Response if alert was properly closed
 {
     "closed_true_positive": 1
 }
- 
+```
+
 Response if alert not found
+
+```json
 {
     "closed_true_positive": 0,
     "alertsNotFound": [
