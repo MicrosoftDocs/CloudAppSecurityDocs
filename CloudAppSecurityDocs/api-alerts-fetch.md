@@ -34,7 +34,7 @@ curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenan
 
 ### Response
 
-Returns the specified alert in JSON format.
+Returns the specified alert in JSON format. For detailed information on each property, refer to the [alert properties specifications](api-alerts.md#properties).
 
 ```json
 {

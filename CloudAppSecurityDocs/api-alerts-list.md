@@ -49,7 +49,7 @@ curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tena
 
 ### Response
 
-Returns a list of alerts in JSON format.
+Returns a list of alerts in JSON format. For detailed information on each property, refer to the [alert properties specifications](api-alerts.md#properties).
 
 ```json
 {
