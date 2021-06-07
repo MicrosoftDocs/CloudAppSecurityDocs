@@ -24,6 +24,8 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/user
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
+- **Cloud App Security administrator**: Allows full access and permissions in Cloud App Security. Similar to **Global administrator** or **Security administrator** but scoped solely to Cloud App Security. 
+
 - **Compliance administrator**: Has read-only permissions and can manage alerts. Can't access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
 - **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Can't access Security recommendations for cloud platforms.
