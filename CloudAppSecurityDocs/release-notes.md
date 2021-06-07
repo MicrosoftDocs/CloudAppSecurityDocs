@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 05/27/2021
+ms.date: 06/07/2021
 ms.topic: overview
 ---
 # What's new with Microsoft Cloud App Security?
@@ -18,6 +18,13 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 >[!NOTE]
 >**Deprecation reminder:** In [release 198](#cloud-app-security-release-198), we added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy. This feature replaces both **Treat encrypted as match**, and **Treat files that cannot be scanned as match**, in addition to adding new functionality. New policies will contain the new checkbox by default, deselected by default. Pre-existing policies will be migrated to the new checkbox on May 30. Policies with either or both options selected will have the new option selected by default; all other policies will have it deselected.
+
+## Cloud App Security release 203
+
+June 13, 2021
+
+- **Expose verified publisher property in O365 OAuth apps**  
+Cloud App Security now surfaces whether a publisher of an Office 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
 
 ## Cloud App Security release 200, 201, and 202
 
