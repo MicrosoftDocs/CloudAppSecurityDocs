@@ -27,8 +27,8 @@ Once traffic information is collected, you are ready to [deep dive into cloud ap
 - Microsoft Defender for Endpoint license
 - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 versions
 - Microsoft Defender Antivirus
-  - [real-time protection enabled](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
-  - [cloud-delivered protection enabled](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+  - [Real-time protection enabled](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+  - [Cloud-delivered protection enabled](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
   - [Network protection enabled and configured to block mode](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
 ## How it works
@@ -48,11 +48,11 @@ To enable Defender for Endpoint integration with Cloud App Security:
 3. Toggle the **Microsoft Cloud App Security** to **On**.
 4. Click **Apply**.
 
->[!NOTE]
-> It takes up to two hours after you enable the integration for the data to show up in Cloud App Security.
->
+    >[!NOTE]
+    > It takes up to two hours after you enable the integration for the data to show up in Cloud App Security.
+    >
 
-![Defender for Endpoint settings](media/mde-settings.png)
+    ![Defender for Endpoint settings](media/mde-settings.png)
 
 To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 
@@ -60,7 +60,7 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 1. Under **Alerts**, select the global severity level for alerts.
 1. Click **Save**.
 
-![Defender for Endpoint alert settings](media/mde-alert-severity-settings.png)
+    ![Defender for Endpoint alert settings](media/mde-alert-severity-settings.png)
 
 ## Investigate devices in Cloud App Security
 
@@ -104,7 +104,7 @@ Use the following steps to gain more granular visibility on device's network act
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
 
-![Screenshot showing device timeline in Microsoft Defender Security Center](media/mde-selected-device.png)
+    ![Screenshot showing device timeline in Microsoft Defender Security Center](media/mde-selected-device.png)
 
 ## Investigate app usage in Defender for Endpoint with advanced hunting
 
@@ -122,9 +122,12 @@ Use the following steps to gain more granular visibility on app-related network 
     | order by Timestamp desc
     ```
 
+    >[!NOTE]
+    >Network events are meant for the investigation of discovered apps in MCAS only. They don't represent the raw data that Cloud App Security uses for Shadow IT discovery.
+
 1. Run the query and investigate network events for this app.
 
-![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mde-advanced-hunting.png)
+    ![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mde-advanced-hunting.png)
 
 ## Block access to unsanctioned cloud apps
 
