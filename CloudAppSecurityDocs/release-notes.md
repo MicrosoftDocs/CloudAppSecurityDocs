@@ -26,6 +26,12 @@ June 13, 2021
 - **Expose verified publisher property in O365 OAuth apps**  
 Cloud App Security now surfaces whether a publisher of an Office 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
 
+- **Azure Active Directory Cloud App Security admin**  
+A Cloud App Security admin role has been added to Azure Active Directory (AAD), allowing the assignment of global admin capabilities to Cloud App Security alone via AAD. For more information, see [Office 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
+
+- **Export custom tag and app domains per discovered app**  
+**Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
+
 ## Cloud App Security release 200, 201, and 202
 
 May 30, 2021
