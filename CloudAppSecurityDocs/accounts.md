@@ -12,8 +12,6 @@ Microsoft Cloud App Security gives you visibility into the accounts from your co
 
 Admins can search for a specific user's metadata or user's activity. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
-[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
-
 The **Users and accounts** page can be [filtered](#users-and-accounts-filters) to enable you to find specific accounts and to deep dive into different types of accounts, for example, you can filter for all External accounts that haven't been accessed since last year.
 
 The **Users and accounts** page enables you to easily investigate your accounts, including the following issues:
