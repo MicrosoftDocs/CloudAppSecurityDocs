@@ -33,7 +33,7 @@ A Cloud App Security admin role has been added to Azure Active Directory (AAD), 
 **Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
 
 - **Slack and OneLogin app connectors available in public preview**  
-New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](connect-slack-to-microsoft-cloud-app-security.md) and [Connect OneLogin(connect-okta-to-microsoft-cloud-app-security.md)].
+New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](connect-slack-to-microsoft-cloud-app-security.md) and [Connect OneLogin](connect-okta-to-microsoft-cloud-app-security.md).
 
 ## Cloud App Security release 200, 201, and 202
 
