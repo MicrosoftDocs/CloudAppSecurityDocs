@@ -23,7 +23,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 
 June 13, 2021
 
-- **Expose verified publisher indicationg in O365 OAuth apps**  
+- **Expose verified publisher indicating in O365 OAuth apps**  
 Cloud App Security now surfaces whether a publisher of an Office 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
 
 - **Azure Active Directory Cloud App Security admin**  
