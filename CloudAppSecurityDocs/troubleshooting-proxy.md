@@ -503,7 +503,7 @@ If adjusting the global policy does not fix the issue, then you can workaround c
 1. Append the copied path to the suffixed domain. For example: `https://www.yammer.com.mcas.ms/organization/threads/threadnumber`.
 1. Navigate to the new suffixed URL.
 
-For apps experiencing context loss, please submit a support ticket. We are working with each app provider individually to fix these core issues.
+For apps experiencing context loss, please submit a support ticket. We will work with each app provider directly to resolve those issues.
 
 <a name="app-additional-considerations"></a>
 
