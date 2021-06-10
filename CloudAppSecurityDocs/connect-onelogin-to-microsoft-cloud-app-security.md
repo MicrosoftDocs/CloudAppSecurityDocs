@@ -14,7 +14,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 - The OneLogin account used for logging into OneLogin must be a Super User. For more information about OneLogin administrative privileges, see [this article](https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010391).
 
-## How to connect Slack to Cloud App Security
+## How to connect OneLogin to Cloud App Security
 
 ### Configure OneLogin
 
