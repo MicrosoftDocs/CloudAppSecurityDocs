@@ -1,5 +1,5 @@
 ---
-title: Connect Slack to Cloud App Security
+title: Connect Slack to Cloud App Security (Preview)
 description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Slack Enterprise Grid or Slack Enterprise Select using the App Connector APIs. 
 ms.date: 06/09/2021
 ms.topic: how-to
