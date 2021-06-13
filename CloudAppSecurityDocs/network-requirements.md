@@ -71,7 +71,7 @@ Additionally, the following items should be allowed, depending on which data cen
 Configure your firewall for reverse proxy using the settings relevant to your environment.
 
 >[!NOTE]
-Starting in early July 2021, we will change our access endpoint from `<AppName>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules, as this change can lead to access issues.
+>Starting in early July 2021, we will change our access endpoint from `<AppName>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules, as this change can lead to access issues.
 
 ### Commercial customers
 
