@@ -39,7 +39,7 @@ The OAuth apps page provides the following information about each OAuth app that
 |App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Office 365, Google Workspace, Salesforce|
 |Community use|Shows you how popular the app is across all your users (common, uncommon, rare)|Office 365, Google Workspace, Salesforce|
 |Last authorized|The most recent date on which a user granted permissions to this app.|Office 365, Salesforce|
-|Publisher|The name of the vendor who provides the app.|Office 365|
+|Publisher|The name of the vendor who provides the app.<br><br> Publisher verification - Publisher verification helps admins and end users understand the authenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview). |Office 365|
 |Last used|The most recent date on which this app was used by anyone in your organization.|Salesforce|
 
 ## Ban or approve an app
@@ -72,7 +72,7 @@ The OAuth apps page provides the following information about each OAuth app that
 
 For Google Workspace and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
 
-1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
+1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: <https://security.google.com/settings/security/permissions?hl=en&pli=1>  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user. Click the icon at the end of the app row in the table and selecting **Revoke app**.
 
     ![revoke app](media/revoke-app.png)
