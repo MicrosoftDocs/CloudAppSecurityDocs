@@ -24,7 +24,7 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/user
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
-- **Cloud App Security administrator**: Allows full access and permissions in Cloud App Security. Similar to **Global administrator** or **Security administrator** but scoped solely to Cloud App Security. 
+- **Cloud App Security administrator**: Allows full access and permissions in Cloud App Security. Similar to **Global administrator** or **Security administrator** but scoped solely to Cloud App Security.
 
 - **Compliance administrator**: Has read-only permissions and can manage alerts. Can't access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
@@ -114,7 +114,9 @@ If you want to override an administrator's permission from Azure AD or Office 36
 You can add additional admins to Cloud App Security without adding users to Azure AD administrative roles. To add additional admins, perform the following steps:
 
 > [!IMPORTANT]
-> Only Azure AD Global Administrators or Security Administrators can access the **Manage admin access** page and grant other users access to Cloud App Security.
+>
+> - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
+> - Only Azure AD Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Cloud App Security.
 
 1. Select the settings cog ![settings icon](media/settings-icon.png "settings icon") and then **Manage admin access**.
 
