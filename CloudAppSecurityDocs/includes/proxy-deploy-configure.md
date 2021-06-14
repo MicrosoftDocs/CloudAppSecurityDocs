@@ -14,7 +14,7 @@ ms.custom: include file
 
 Applications in the app catalog are automatically populated into the table under Connected Apps. Check that the app you want to deploy is recognized by navigating there.
 
-1. In the menu bar of Cloud App Security, select the settings cog ![settings icon](../media/settings-icon.png "settings icon"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
+1. In the menu bar of Cloud App Security, select the settings cog ![settings icon 1](../media/settings-icon.png "settings icon 1"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
 
     ![Conditional access app control apps](../media/conditional-access-app-control-apps.png)
 
@@ -51,7 +51,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
     > [!NOTE]
     > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
-1. Go to Cloud App Security, in the menu bar, select the settings cog ![settings icon](../media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
+1. Go to Cloud App Security, in the menu bar, select the settings cog ![settings icon 2](../media/settings-icon.png "settings icon 2") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
     > [!TIP]
     > To view the list of domains configured in the app, select **View app domains**.
@@ -95,7 +95,7 @@ If you encounter errors or issues, use the admin toolbar to gather resources suc
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Cloud App Security, select the settings cog ![settings icon](../media/settings-icon.png), and then select **Conditional Access App Control**.
+1. In Cloud App Security, select the settings cog ![settings icon 3](../media/settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then select **Save**.
 

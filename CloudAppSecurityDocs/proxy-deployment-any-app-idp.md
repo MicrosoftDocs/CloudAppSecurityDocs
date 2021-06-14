@@ -16,7 +16,7 @@ For a list of apps that are featured by Cloud App Security to work out-of-the-bo
 
 ### Add admins to the app onboarding/maintenance list
 
-1. In the menu bar of Cloud App Security, select the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
+1. In the menu bar of Cloud App Security, select the settings cog ![settings icon 4](media/settings-icon.png "settings icon 4") and select **Settings**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
