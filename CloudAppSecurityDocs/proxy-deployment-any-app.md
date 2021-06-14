@@ -55,7 +55,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 > [!NOTE]
 > To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](/azure/active-directory/license-users-groups) as well as a Cloud App Security license.
 
-## Step 1:  Configure Azure AD to work with Cloud App Security
+## Step 1: Configure Azure AD to work with Cloud App Security
 
 >[!NOTE]
 >When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
