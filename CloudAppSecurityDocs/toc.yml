@@ -188,8 +188,10 @@ items:
     items:
     - name: Deploy Conditional Access App Control for featured apps
       href: proxy-deployment-aad.md
-    - name: Onboard and deploy Conditional Access App Control for any apps
+    - name: Deploy Conditional Access App Control for custom apps with AAD
       href: proxy-deployment-any-app.md
+    - name: Deploy Conditional Access App Control for custom apps with 3rd party IdP
+      href: proxy-deployment-any-app-idp.md
     - name: Configuring your PingOne IdP
       href: proxy-idp-pingone.md
     - name: Configuring your AD FS IdP
