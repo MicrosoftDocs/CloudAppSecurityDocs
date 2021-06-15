@@ -102,7 +102,7 @@ Required task: Enable Cloud App Security to view your cloud app use
     1. On the **Log collectors** tab, configure the log collector.
 
 **Migration recommendation**  
-We recommend using Cloud App Security discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Cloud App Security [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft Defender Security Center, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security) to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
+We recommend using Cloud App Security discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Cloud App Security [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft 365 Defender, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security) to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
 
 ### To create a snapshot Cloud Discovery report
 
