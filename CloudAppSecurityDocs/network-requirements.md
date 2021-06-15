@@ -70,9 +70,6 @@ Additionally, the following items should be allowed, depending on which data cen
 
 Configure your firewall for reverse proxy using the settings relevant to your environment.
 
->[!NOTE]
->Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues.
-
 ### Commercial customers
 
 For commercial customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
