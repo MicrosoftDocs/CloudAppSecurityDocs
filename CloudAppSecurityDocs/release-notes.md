@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 06/07/2021
+ms.date: 06/13/2021
 ms.topic: overview
 ---
 # What's new with Microsoft Cloud App Security?
@@ -31,6 +31,10 @@ A Cloud App Security admin role has been added to Azure Active Directory (AAD), 
 
 - **Export custom tag and app domains per discovered app**  
 **Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
+
+  >[!IMPORTANT]
+  >**Enhanced proxy URL for access controls (gradual rollout)**  
+  Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
 
 ## Cloud App Security release 200, 201, and 202
 
