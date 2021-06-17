@@ -18,7 +18,7 @@ This guide provides the steps necessary for configuring the ICAP connection in C
 
 Cloud App Security scans your cloud environment and based on your file policy configuration, decides whether to scan the file using the internal DLP engine or the external DLP. If external DLP scan is applied, the file is sent over the secure tunnel to the customer environment where it's relayed to the ICAP appliance for the DLP verdict: allowed/blocked. Responses are sent back to Cloud App Security over the stunnel where it's used by the policy to determine subsequent actions such as notifications, quarantine, and sharing control.
 
-![Stunnel architecture](media/icap-architecture-stunnel.png)
+![Stunnel architecture.](media/icap-architecture-stunnel.png)
 
 Since Cloud App Security runs in Azure, a deployment in Azure yields improved performance. However, other options including other Clouds and On-Premises deployment are supported. Deploying in other environments may result in degraded performance due to higher latency and lower throughput. The ICAP server and stunnel must be deployed together on the same network to make sure the traffic is encrypted.
 
@@ -96,7 +96,7 @@ Refer to the [stunnel website](https://www.stunnel.org/index.html) for details a
 
 11. Click **Configuration** and then **Edit configuration**.
 
-    ![Edit Windows Server configuration](media/stunnel-windows.png)
+    ![Edit Windows Server configuration.](media/stunnel-windows.png)
 
 12. Open the file and paste the following server configuration lines. The **DLP Server IP** is the IP address of your ICAP server, **stunnel-key** is the key that you created in the previous step, and **MCASCAfile** is the public certificate of the Cloud App Security stunnel client. Delete any example text that is in place (in the example it displays Gmail text) and copy the following text into the file:
 
@@ -240,7 +240,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
     - **Generic ICAP – REQMOD** - Use other DLP appliances that use [Request Modification](https://tools.ietf.org/html/rfc3507).
     - **Generic ICAP – RESPMOD** - Use other DLP appliances that use [Response Modification](https://tools.ietf.org/html/rfc3507).
 
-        ![Cloud App Security ICAP connection type](media/icap-wizard1.png)
+        ![Cloud App Security ICAP connection type.](media/icap-wizard1.png)
 
 5. Browse to select the public certificate you generated in the previous steps, "cert.pem", to connect to your stunnel. Click **Next**.
 
@@ -249,7 +249,7 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 6. In the **Server configuration** screen, provide the **IP address** and **Port** of the stunnel server that you set up in Step 2. For load-balancing purposes, you can configure the **IP address** and **Port** of an additional server. The provided IP addresses should be the external static IP addresses of your servers.
 
-    ![Cloud App Security ICAP connection IP address and port](media/icap-wizard2.png)
+    ![Cloud App Security ICAP connection IP address and port.](media/icap-wizard2.png)
 
 7. Click **Next**. Cloud App Security tests connectivity to the server you configured. If you receive an error, review the instructions and network settings. After it's successfully connected, you can click **Quit**.
 
@@ -261,15 +261,15 @@ In ForcePoint, set your appliance using the following steps:
 
 1. In your DLP appliance, go to **Deployment** > **System Modules**.
 
-    ![ICAP deployment](media/icap-system-modules.png)
+    ![ICAP deployment.](media/icap-system-modules.png)
 
 2. In the **General** tab, make sure **ICAP Server** is **Enabled** and the default **Port** is set to **1344**. Also, under **Allow connection to this ICAP Server from the following IP addresses**, select **Any IP address**.
 
-    ![ICAP configuration](media/icap-ip-address.png)
+    ![ICAP configuration.](media/icap-ip-address.png)
 
 3. In the HTTP/HTTPS tab, make sure to set **Mode** to **Blocking**.
 
-    ![ICAP blocking](media/icap-blocking.png)
+    ![ICAP blocking.](media/icap-blocking.png)
 
 ## Appendix B: Symantec Deployment Guide <a name="symantec"></a>
 
@@ -284,21 +284,21 @@ The detection server used by Cloud App Security is a standard Network Prevent fo
 1. Disable **Trial Mode**:
     1. Under **System** > **Servers and Detectors**, click on the ICAP target.
 
-        ![ICAP target](media/icap-target.png)
+        ![ICAP target.](media/icap-target.png)
 
     1. Click **Configure**.
 
-        ![Configure ICAP target](media/configure-icap-target.png)
+        ![Configure ICAP target.](media/configure-icap-target.png)
 
     1. Disable **Trial Mode**.
 
-        ![disable trial mode pop-up](media/icap-disable-trial-mode.png)
+        ![disable trial mode pop-up.](media/icap-disable-trial-mode.png)
 
 2. Under **ICAP** > **Response Filtering**, change the **Ignore Responses Smaller Than** value to 1.
 
 3. And add "application/\*" to the list of **Inspect Content Type</em>**.
 
-    ![inspect content type](media/icap-inspect-content-type.png)
+    ![inspect content type.](media/icap-inspect-content-type.png)
 
 4. Click **Save**
 
@@ -310,15 +310,15 @@ Add the configuration change to your Vontu:
 
 1. Go to **Manage** > **Policies** > **Response Rules** and click **Add Response Rule**.
 
-    ![add response rule](media/icap-add-response-rule.png)
+    ![add response rule.](media/icap-add-response-rule.png)
 
 2. Make sure **Automated Response** is selected and click **Next**.
 
-    ![automated response](media/icap-automated-response.png)
+    ![automated response.](media/icap-automated-response.png)
 
 3. Type a rule name, for example, **Block HTTP/HTTPS**. Under **Actions**, select **Block HTTP/HTTPS** and click **Save**.
 
-    ![block http](media/icap-block-http.png)
+    ![block http.](media/icap-block-http.png)
 
 Add the rule you created to any existing policies:
 
@@ -328,7 +328,7 @@ Add the rule you created to any existing policies:
 
 3. Save the policy.
 
-    ![disable trial mode in policy](media/icap-add-policy.png)
+    ![disable trial mode in policy.](media/icap-add-policy.png)
 
 This rule must be added to all existing policies.
 

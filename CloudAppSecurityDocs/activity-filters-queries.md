@@ -94,7 +94,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 <!--
 >[!NOTE]
-> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](media/clear-filters.png). -->
+> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon.](media/clear-filters.png). -->
 
 ## Activity queries
 
@@ -106,11 +106,11 @@ To make investigation even simpler, you can now create custom queries and save t
 
 3. In the **Save query** pop-up, name your query.
 
-   ![new query](media/new-activity-query.png)
+   ![new query.](media/new-activity-query.png)
 
 4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
-   ![open query](media/select-activity-query.png)
+   ![open query.](media/select-activity-query.png)
 
 Cloud App Security also provides you with **Suggested queries**. Suggested queries provide you with recommended avenues of investigation that filter your activities. You can edit these queries and save the as custom queries. The following are optional suggested queries:
 
@@ -134,7 +134,7 @@ Cloud App Security also provides you with **Suggested queries**. Suggested queri
 
 - Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from a new device.
 
-![query activities](media/queries-activity.png)
+![query activities.](media/queries-activity.png)
 
 Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally select **Save as** to create a new **Saved query**.
 

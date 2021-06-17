@@ -16,7 +16,7 @@ It's a good idea to review all of your alerts. Understanding why an alert is occ
 
 **To view alerts:** In the Microsoft Cloud App Security portal, click on **Alerts**.
 
-![Alert menu](media/alert-menu.png)
+![Alert menu.](media/alert-menu.png)
 
 - **Dismiss** an alert after you look at it and determine it's not interesting.
   - Enter a **comment** to explain why you dismissed the alert
@@ -40,13 +40,13 @@ As part of our ongoing improvements to monitoring and managing alerts, the Cloud
 > [!NOTE]
 > The enhanced experience only applies to new alerts and does not affect the status of existing (legacy) alerts that were **Resolved** or **Dismissed**.
 
-![Enhanced alerts page](media/monitor-alerts/enhanced-alerts.png)
+![Enhanced alerts page.](media/monitor-alerts/enhanced-alerts.png)
 
 ### Enhanced alert monitoring
 
 In the enhanced alerts page, the **Status** column shows whether an alert is opened or closed and the **Resolution type** column shows the type of resolution used when closing an alert. You can use the **Status** filter to help you identify opened or closed alerts, and then using the **Advanced** filter, you can further investigate closed alerts by **Resolution type** using both enhanced and legacy resolution types.
 
-![Enhanced alerts page showing advanced filter](media/monitor-alerts/enhanced-alerts-advanced-filter.png)
+![Enhanced alerts page showing advanced filter.](media/monitor-alerts/enhanced-alerts-advanced-filter.png)
 
 ### Enhanced alert management
 
@@ -58,7 +58,7 @@ When closing alerts, choose one of the following resolution options:
 
 In the pop-up that appears, provide a reason for closing the alert and fill out the rest of the details as required, and then click **Close alert**.
 
-![Enhanced alerts close popup](media/monitor-alerts/enhanced-alerts-close-resolution.png)
+![Enhanced alerts close popup.](media/monitor-alerts/enhanced-alerts-close-resolution.png)
 
 ## Built-in alerts
 

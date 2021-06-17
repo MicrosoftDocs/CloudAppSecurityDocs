@@ -25,11 +25,11 @@ To obtain the Cloud App Security portal URL for your tenant, do the following st
 
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the **question mark icon** in the menu bar. Then, select **About**.
 
-    ![click About](media/about-menu.png)
+    ![click About.](media/about-menu.png)
 
 1. In the Cloud App Security about screen, you can see the portal url.
 
-    ![View your data center](media/api-url.png)
+    ![View your data center.](media/api-url.png)
 
 Once you have the portal url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
 

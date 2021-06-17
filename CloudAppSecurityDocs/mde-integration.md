@@ -52,7 +52,7 @@ To enable Defender for Endpoint integration with Cloud App Security:
     > It takes up to two hours after you enable the integration for the data to show up in Cloud App Security.
     >
 
-    ![Defender for Endpoint settings](media/mde-settings.png)
+    ![Defender for Endpoint settings.](media/mde-settings.png)
 
 To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 
@@ -60,7 +60,7 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 1. Under **Alerts**, select the global severity level for alerts.
 1. Click **Save**.
 
-    ![Defender for Endpoint alert settings](media/mde-alert-severity-settings.png)
+    ![Defender for Endpoint alert settings.](media/mde-alert-severity-settings.png)
 
 ## Investigate devices in Cloud App Security
 
@@ -68,7 +68,7 @@ After you integrate Defender for Endpoint with Cloud App Security, you can inves
 
 1. In Cloud App Security, click **Cloud Discovery** and then **Cloud Discovery dashboard**.
 2. In the top navigation bar, under **Continuous reports**, select **Win10 endpoint users**.
-  ![Defender for Endpoint report](media/win10-dashboard-report.png)
+  ![Defender for Endpoint report.](media/win10-dashboard-report.png)
 3. Across the top, you'll see the number of discovered devices added after the integration.
 4. Click the **Devices** tab.
 5. You can drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
@@ -85,7 +85,7 @@ After you integrate Defender for Endpoint with Cloud App Security, you can inves
     Lists all the users who signed in to the device.
     - **IP address history**  
     Lists all the IP addresses that were assigned to the device.
- ![Devices overview](media/devices-overview.png)
+ ![Devices overview.](media/devices-overview.png)
 
 As with any other Cloud Discovery source, you can export the data from the Win10 endpoint users report for further investigation.
 
@@ -104,7 +104,7 @@ Use the following steps to gain more granular visibility on device's network act
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
 
-    ![Screenshot showing device timeline in Microsoft 365 Defender](media/mde-selected-device.png)
+    ![Screenshot showing device timeline in Microsoft 365 Defender.](media/mde-selected-device.png)
 
 ## Investigate app usage in Defender for Endpoint with advanced hunting
 
@@ -127,7 +127,7 @@ Use the following steps to gain more granular visibility on app-related network 
 
 1. Run the query and investigate network events for this app.
 
-    ![Screenshot showing Microsoft 365 Defender advanced hunting](media/mde-advanced-hunting.png)
+    ![Screenshot showing Microsoft 365 Defender advanced hunting.](media/mde-advanced-hunting.png)
 
 ## Block access to unsanctioned cloud apps
 
@@ -143,13 +143,13 @@ Use the following steps to enable access control for cloud apps:
 
 1. In Cloud App Security, under the settings cog, select **Settings**, under **Cloud Discovery** select **Microsoft Defender for Endpoint**, and then select **Block unsanctioned apps**.
 
-    ![Screenshot showing how to enable blocking with Defender for Endpoint](media/mde-integration.png)
+    ![Screenshot showing how to enable blocking with Defender for Endpoint.](media/mde-integration.png)
 
 1. In Microsoft 365 Defender, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
 
     This allows you to leverage Microsoft Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Cloud App Security, either by manually assigning [app tags](governance-discovery.md#BKMK_SanctionApp) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
-    ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/mde-custom-network-indicators.png)
+    ![Screenshot showing how to enable custom network indicators in Defender for Endpoint.](media/mde-custom-network-indicators.png)
 
 ## Investigate unsanctioned apps in Microsoft 365 Defender
 
@@ -157,7 +157,7 @@ Every attempt to access an unsanctioned app triggers an alert in Microsoft 365 D
 
 Sometimes, access to an unsanctioned app is not blocked, either because the endpoint device is not configured correctly or if the enforcement policy has not yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft 365 Defender that the unsanctioned app was not blocked.
 
-![Screenshot showing Defender for Endpoint unsanctioned app alert](media/mde-unsanctioned-app-alert.png)
+![Screenshot showing Defender for Endpoint unsanctioned app alert.](media/mde-unsanctioned-app-alert.png)
 
 > [!NOTE]
 >

@@ -29,11 +29,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 3. In the **Application Registries** menu bar, select **New** to create a new OAuth profile.
 
-    ![ServiceNow new OAuth profile](media/servicenow-app-registry.png)
+    ![ServiceNow new OAuth profile.](media/servicenow-app-registry.png)
 
 4. Under **What kind of OAuth application?**, select **Create an OAuth API endpoint for external clients**.
 
-    ![ServiceNow OAuth type](media/servicenow-oauth-app-type.png)
+    ![ServiceNow OAuth type.](media/servicenow-oauth-app-type.png)
 
 5. Under **Application Registries New record** fill in the following fields:
 
@@ -47,21 +47,21 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     - Select **Submit**.
 
-    ![ServiceNow profile IDs](media/servicenow-profile-ids.png)
+    ![ServiceNow profile IDs.](media/servicenow-profile-ids.png)
 
 6. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 7. In the **App connectors** page, select the plus button and then **ServiceNow**.
 
-    ![connect ServiceNow](media/connect-servicenow.png "connect ServiceNow")
+    ![connect ServiceNow.](media/connect-servicenow.png "connect ServiceNow")
 
 8. In the pop-up, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
-    ![ServiceNow user ID](media/servicenow-userid.png)
+    ![ServiceNow user ID.](media/servicenow-userid.png)
 
 9. Select **Connect**.
 
-    ![ServiceNow connect to CAS](media/servicenow-portal-connect.png "ServiceNow connect in portal")
+    ![ServiceNow connect to CAS.](media/servicenow-portal-connect.png "ServiceNow connect in portal")
 
 10. Make sure the connection succeeded by selecting **Test now**.
 
@@ -79,19 +79,19 @@ To connect ServiceNow with Cloud App Security, you must have admin-level permiss
 
 3. Make sure the REST API plug-in is turned on.
 
-    ![ServiceNow account](media/servicenow-account.png "ServiceNow account")
+    ![ServiceNow account.](media/servicenow-account.png "ServiceNow account")
 
 4. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Sanctioned apps**.
 
 5. In the ServiceNow row, select **Connect** in the **App Connector status** column, or select the **Connect an app** button and then **ServiceNow**.
 
-   ![connect ServiceNow](media/connect-servicenow.png "connect ServiceNow")
+   ![connect ServiceNow.](media/connect-servicenow.png "connect ServiceNow")
 
 6. In the ServiceNow settings page, on the API tab, add your ServiceNow user ID, password, and instance URL in the appropriate boxes.
 
 7. Select **Connect**.
 
-    ![ServiceNow update password](media/servicenow-update-password.png "ServiceNow update password")
+    ![ServiceNow update password.](media/servicenow-update-password.png "ServiceNow update password")
 
 8. Make sure the connection succeeded by selecting **Test API**.
 

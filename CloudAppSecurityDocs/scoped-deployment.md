@@ -26,12 +26,12 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
 
 1. In the menu bar, click the settings cog and select **Scoped deployment**.
 
-    ![settings icon](media/settings-icon.png "settings icon")
+    ![settings icon.](media/settings-icon.png "settings icon")
 
 2. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Cloud App Security.
 
 3. To set specific groups to be monitored by Microsoft Cloud App Security, in the **Include** tab, click the plus icon.
-    ![icon](media/plus-icon.png)
+    ![icon.](media/plus-icon.png)
 
 4. In the **Create new include rule** dialog, do the following steps:
 
@@ -39,11 +39,11 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
     2. Under **Select user groups**, select all the groups you want to monitor with Cloud App Security.
     3. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, the rule will only affect monitoring of the apps you select. For example, if you select the group **UI team users** and **Box**, Cloud App Security will only monitor Box activity for users in your UI team users group and for all other apps, Cloud App Security will monitor all activities for all users.
 
-        ![include rule](media/include-rule.png)
+        ![include rule.](media/include-rule.png)
 
 5. To set specific groups to be excluded from monitoring, in the **Exclude** tab, click the plus icon.
 
-   ![icon](media/plus-icon.png)
+   ![icon.](media/plus-icon.png)
 
 6. In the **Create new Exclude rule** dialog, set the following parameters:
 
@@ -51,7 +51,7 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
     Under **Select user groups**, select all the groups you don't want Cloud App Security to monitor.
     2. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, Cloud App Security will stop monitoring the group you selected only for the apps you select. That means that if you select the group **UI team users** and **Active Directory**, Cloud App Security will monitor all user activity except Active Directory activities that are performed by UI team users.
 
-       ![exclude rule](media/exclude-rule.png)
+       ![exclude rule.](media/exclude-rule.png)
 
 ## Example results for include and exclude rules
 

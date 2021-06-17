@@ -22,11 +22,11 @@ After you take a look at your open alerts, go to the Policy center to review pol
 
     If your policy is set to find compliance breaches and someone saves credit card numbers in files on OneDrive, you'll have a match in the policy.
 
-    ![PCI matches](media/pci-matches.png "pci matches")
+    ![PCI matches.](media/pci-matches.png "pci matches")
 
 - Select the match to see the actual files that breached the policy.
 
-    ![PCI content matches](media/pci-content-matches.png "pci content matches")
+    ![PCI content matches.](media/pci-content-matches.png "pci content matches")
 
     You can select the file itself to get information about the files.
 
@@ -34,15 +34,15 @@ After you take a look at your open alerts, go to the Policy center to review pol
 
     You can click **Matches** to see the actual credit card numbers.
 
-    ![Content matches credit card numbers](media/content-matches-ccn.png "content matches credit card numbers")
+    ![Content matches credit card numbers.](media/content-matches-ccn.png "content matches credit card numbers")
 
 ## Apply governance actions
 
 You can apply governance actions from within policies, from inside alerts, and from the **File** log.
 
-At any point, you can review and see the status of all previously applied governance actions by going to the **Settings** cog and choosing **Governance log**. ![settings icon](media/settings-icon.png "settings icon")
+At any point, you can review and see the status of all previously applied governance actions by going to the **Settings** cog and choosing **Governance log**. ![settings icon.](media/settings-icon.png "settings icon")
 
-For any governance action that failed, choose the **Retry** icon to apply it again. ![Retry icon](media/retry-icon.png "retry icon")
+For any governance action that failed, choose the **Retry** icon to apply it again. ![Retry icon.](media/retry-icon.png "retry icon")
 
 Depending on the type of policy, violation, and app, different governance actions are available.
 
@@ -57,7 +57,7 @@ Because remediation actions use the cloud provider APIs, actions might vary from
 >
 > For guidance, you can use the **Edit and preview results** button in the **Filters** section.
 
-![File policy edit and preview results](media/file-policy-edit-and-preview-results.png "file policy edit and preview results")
+![File policy edit and preview results.](media/file-policy-edit-and-preview-results.png "file policy edit and preview results")
 
 ## Migration
 
@@ -73,7 +73,7 @@ Imagine this scenario: you recently bought Office 365, and you want all the user
 
     1. In your **Cloud Discovery Dashboard**, choose **Dropbox** and then choose the **IP address** or **Users** tab.
 
-    2. Choose the **Export** arrow icon and choose your export options. ![Arrow icon](media/arrow-icon.png "arrow icon")
+    2. Choose the **Export** arrow icon and choose your export options. ![Arrow icon.](media/arrow-icon.png "arrow icon")
 
 ### Find more secure alternatives
 

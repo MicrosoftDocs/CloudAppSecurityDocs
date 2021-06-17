@@ -23,7 +23,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
 
     This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It can help you safeguard the security posture you defined for your cloud environment.
 
-    ![Alerts resolution status page](media/alerts.png "alerts")
+    ![Alerts resolution status page.](media/alerts.png "alerts")
 
 2. For each alert, you need to investigate and determine the nature of the violation and the required response.
 

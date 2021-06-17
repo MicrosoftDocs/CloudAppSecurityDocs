@@ -57,7 +57,7 @@ Create a dedicated project in GCP under your organization to enable integration 
 1. Click **Create Project** to start a new.
 1. In the **New project** screen, name your project and click **Create**.
 
-    ![Screenshot showing GCP create project dialog](media/connect-gcp-create-project.png)
+    ![Screenshot showing GCP create project dialog.](media/connect-gcp-create-project.png)
 
 #### Enable required APIs
 
@@ -76,11 +76,11 @@ Create a dedicated project in GCP under your organization to enable integration 
 1. Enter an account name, and then click **Create**.
 1. Specify the **Role** as **Pub/Sub Admin** and then click **Save**.
 
-    ![Screenshot showing GCP add IAM role](media/connect-gcp-iam-role.PNG)
+    ![Screenshot showing GCP add IAM role.](media/connect-gcp-iam-role.PNG)
 
 1. Copy the **Email** value, you'll need this later.
 
-    ![Screenshot showing GCP service account dialog](media/connect-gcp-create-service-account.png)
+    ![Screenshot showing GCP service account dialog.](media/connect-gcp-create-service-account.png)
 
 1. Under **IAM & admin**, click **IAM**.
 
@@ -89,7 +89,7 @@ Create a dedicated project in GCP under your organization to enable integration 
     1. In the **New members** box, paste the **Email** value you copied earlier.
     1. Specify the **Role** as **Logs Configuration Writer** and then click **Save**.
 
-        ![Screenshot showing add member dialog](media/connect-gcp-add-member.png)
+        ![Screenshot showing add member dialog.](media/connect-gcp-add-member.png)
 
 #### Create a private key for the dedicated service account
 
@@ -99,7 +99,7 @@ Create a dedicated project in GCP under your organization to enable integration 
 1. Click **CREATE KEY**.
 1. In the **Create private key** screen, select **JSON**, and then click **CREATE**.
 
-    ![Screenshot showing create private key dialog](media/connect-gcp-create-private-key.png)
+    ![Screenshot showing create private key dialog.](media/connect-gcp-create-private-key.png)
 
     > [!NOTE]
     > You'll need the JSON file that is downloaded to your device later.
@@ -108,7 +108,7 @@ Create a dedicated project in GCP under your organization to enable integration 
 
 Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
 
-![Screenshot showing organization ID dialog](media/connect-gcp-org-id.png)
+![Screenshot showing organization ID dialog.](media/connect-gcp-org-id.png)
 
 ### Connect Google Cloud Platform auditing to Cloud App Security
 
@@ -125,29 +125,29 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     1. Click the plus sign (**+**) followed by **Google Cloud Platform**.
 
-        ![connect GCP](media/connect-gcp-add.png)
+        ![connect GCP.](media/connect-gcp-add.png)
 
     1. In the pop-up, provide a name for the connector, and then click **Connect Google Cloud Platform**.
 
-        ![GCP connector name](media/connect-gcp-name.png)
+        ![GCP connector name.](media/connect-gcp-name.png)
 
     1. In the **Project details** page, do the following, and then click **Connect Google Cloud Platform**.
         1. In the **Organization ID** box, enter the organization you made a note of earlier.
         1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
-        ![Connect GCP app security auditing for new connector](media/connect-gcp-app-audit.png)
+        ![Connect GCP app security auditing for new connector.](media/connect-gcp-app-audit.png)
 
     **For an existing connector**
 
     1. In the list of connectors, on the row in which the GCP connector appears, click **Connect security auditing**.
 
-        ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/connect-gcp-app-edit-audit.png)
+        ![Screenshot of the Connected Apps page, showing edit Security Auditing link.](media/connect-gcp-app-edit-audit.png)
 
     1. In the **Project details** page, do the following, and then click **Connect Google Cloud Platform**.
         1. In the **Organization ID** box, enter the organization you made a note of earlier.
         1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
-        ![Connect GCP app security auditing for existing connector](media/connect-gcp-app-edit-audit-creds.png)
+        ![Connect GCP app security auditing for existing connector.](media/connect-gcp-app-edit-audit-creds.png)
 
 1. Click **Test API** to make sure the connection succeeded.
 
@@ -206,11 +206,11 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 1. Enter an account name, and then click **Create**.
 1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
 
-    ![Screenshot showing add GCP menu item for Security Center Admin Viewer](media/connect-gcp-security-configuration-1.png)
+    ![Screenshot showing add GCP menu item for Security Center Admin Viewer.](media/connect-gcp-security-configuration-1.png)
 
 1. Copy the **Email** value, you'll need this later.
 
-    ![Screenshot showing copy GCP service account](media/connect-gcp-security-configuration-2.png)
+    ![Screenshot showing copy GCP service account.](media/connect-gcp-security-configuration-2.png)
 
 1. Under **IAM & admin**, click **IAM**.
 
@@ -219,7 +219,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
     1. In the **New members** box, paste the **Email** value you copied earlier.
     1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
 
-        ![Screenshot showing add member to project dialog](media/connect-gcp-security-configuration-3.png)
+        ![Screenshot showing add member to project dialog.](media/connect-gcp-security-configuration-3.png)
 
 #### Create a private key for the dedicated service account
 
@@ -229,7 +229,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 1. Click **CREATE KEY**.
 1. In the **Create private key** screen, select **JSON**, and then click **CREATE**.
 
-    ![Screenshot showing create private key for dedicated service account dialog](media/connect-gcp-security-configuration-4.png)
+    ![Screenshot showing create private key for dedicated service account dialog.](media/connect-gcp-security-configuration-4.png)
 
     > [!NOTE]
     > You'll need the JSON file that is downloaded to your device later.
@@ -237,7 +237,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 #### Retrieve your Organization ID
 
 Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
-    ![Screenshot showing organization ID dialog](media/connect-gcp-org-id.png)
+    ![Screenshot showing organization ID dialog.](media/connect-gcp-org-id.png)
 
 ### Connect Google Cloud Platform security configuration to Cloud App Security
 
@@ -245,23 +245,23 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 1. In the **Security configuration apps** tab, click the plus button, and then select **Google Cloud Platform**.
 
-    ![Screenshot showing add GCP menu option](media/connect-gcp-security-configuration-5.png)
+    ![Screenshot showing add GCP menu option.](media/connect-gcp-security-configuration-5.png)
 
 1. In the **Instance name** page, choose the instance type, and then click **Next**.
 
     - For an existing connector, choose the relevant instance.
 
-        ![GCP instance selection](media/connect-gcp-existing-instance.png)
+        ![GCP instance selection.](media/connect-gcp-existing-instance.png)
 
     - For a new connector, provide a name for the instance.
 
-        ![GCP new connector name](media/connect-gcp-new-instance.png)
+        ![GCP new connector name.](media/connect-gcp-new-instance.png)
 
 1. In the **Project details** page, do the following, and then click **Next**.
     1. In the **Organization ID** box, enter the organization you made a note of earlier.
     1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
-    ![Add GCP project details](media/connect-gcp-security-configuration-6.png)
+    ![Add GCP project details.](media/connect-gcp-security-configuration-6.png)
 
 1. In the **Finished** page, make sure the connection succeeded, and then click **Finished**.
 

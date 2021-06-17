@@ -59,7 +59,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
     1. Click **Create**.
 
-   ![Add classification label to policy](media/aip-auto-policy.png)
+   ![Add classification label to policy.](media/aip-auto-policy.png)
 
 1. Investigating your matches
 
