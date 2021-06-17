@@ -29,7 +29,7 @@ To create a new access policy, follow this procedure:
 
 1. Click **Create policy** and select **Access policy**.
 
-    ![Create a Conditional access policy](media/create-policy-from-conditional-access-tab.png)
+    ![Create a Conditional access policy.](media/create-policy-from-conditional-access-tab.png)
 
 1. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
 

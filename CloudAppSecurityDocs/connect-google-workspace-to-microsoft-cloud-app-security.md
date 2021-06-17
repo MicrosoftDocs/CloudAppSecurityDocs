@@ -16,15 +16,15 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. Click **Create project** to start a new project.
 
-    ![Google create project](media/connect-google-workspace/google-workspace-create-new-project.png)
+    ![Google create project.](media/connect-google-workspace/google-workspace-create-new-project.png)
 
 1. In the **New project** page, name your project as follows: **Cloud App Security** and click **Create**.
 
-    ![Google new project pop-up](media/connect-google-workspace/google-workspace-create-new-project-popup.png)
+    ![Google new project pop-up.](media/connect-google-workspace/google-workspace-create-new-project-popup.png)
 
 1. After the project is created, in the tool bar, click on **Google Cloud Platform**. Make sure that the right project is selected in the drop-down at the top.
 
-    ![Click Google Cloud Platform in tool bar](media/connect-google-workspace/google-workspace-verify-project.png)
+    ![Click Google Cloud Platform in tool bar.](media/connect-google-workspace/google-workspace-verify-project.png)
 
 1. Select menu, go to **APIs & Services** > **Library** and enable the following APIs (use the search line if the API isn't listed):
 
@@ -37,7 +37,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     > [!NOTE]
     > For each API, click **Enable** to active it.
     >
-    > ![enable Google APPI](media/connect-google-workspace/google-workspace-api.png)
+    > ![enable Google APPI.](media/connect-google-workspace/google-workspace-api.png)
     >
     > Ignore the **Credentials** warning for now.
 
@@ -52,7 +52,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. In the **OAuth consent page** page, do the following:
     1. Under **User Type**, choose **External**, and then click **Create**.
 
-        ![Google oauth consent user type](media/connect-google-workspace/google-workspace-oauth-consent-user-type.png)
+        ![Google oauth consent user type.](media/connect-google-workspace/google-workspace-oauth-consent-user-type.png)
 
     1. Fill out the following information, and then click **Save**.
 
@@ -64,29 +64,29 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
         All other fields are optional.
 
-        ![Google oauth consent app type](media/connect-google-workspace/google-workspace-oauth-consent-app-type.png)
+        ![Google oauth consent app type.](media/connect-google-workspace/google-workspace-oauth-consent-app-type.png)
 
 1. In the **Credentials** page, do the following:
     1. Select **CREATE CREDENTIALS** and then select **Service Account**.
     1. Under **Service account details**, provide a name and description, and then click **Create**.
     1. Under **Grant this service account access to project**, for **Role** select **Project**, select **Editor** and then click **Done**.
 
-    ![Google create service account](media/connect-google-workspace/google-workspace-create-service-account.png)
+    ![Google create service account.](media/connect-google-workspace/google-workspace-create-service-account.png)
 
 1. In the **Service Account** page, do the following:
     1. Under **Service Accounts**, locate and edit the service account you created earlier.
 
-        ![Google edit service account](media/connect-google-workspace/google-workspace-edit-service-account.png)
+        ![Google edit service account.](media/connect-google-workspace/google-workspace-edit-service-account.png)
 
     1. Make a copy of the email address. You'll need this later.
     1. Under **Keys**, from the **ADD KEY** menu select **Create new key**, select **P12**, and then click **CREATE**. Save the file that's downloaded, you'll need it later.
     1. Under **Service account status**, select **Enable G Suite Domain-wide Delegation**, and then click **Save**.
 
-    ![Google update service account](media/connect-google-workspace/google-workspace-update-service-account.png)
+    ![Google update service account.](media/connect-google-workspace/google-workspace-update-service-account.png)
 
 1. In the **Credentials** page, under **OAuth 2.0 Client IDs**, copy the **Client ID** assigned to your service account - you'll need it later.
 
-    ![Google Workspace credentials service account](media/connect-google-workspace/google-workspace-copy-service-account-client-id.png)
+    ![Google Workspace credentials service account.](media/connect-google-workspace/google-workspace-copy-service-account-client-id.png)
 
 1. Go to [admin.google.com](https://admin.google.com/) and navigate to **Security** > **API Controls** > **MANAGE DOMAIN WIDE DELEGATION**, click **Add New**, and do the following:
 
@@ -96,7 +96,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     1. Click **AUTHORIZE**.
 
-    ![Google Workspace add new client ID](media/connect-google-workspace/google-workspace-add-new-client-id.png)
+    ![Google Workspace add new client ID.](media/connect-google-workspace/google-workspace-add-new-client-id.png)
 
 ## Configure Cloud App Security
 
@@ -114,7 +114,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. In the pop-up, fill in the following information:
 
-    ![Google Workspace Configuration in Cloud App Security](media/connect-google-workspace/cas-config-google-workspace.png "Google Workspace Configuration in Cloud App Security")
+    ![Google Workspace Configuration in Cloud App Security.](media/connect-google-workspace/cas-config-google-workspace.png "Google Workspace Configuration in Cloud App Security")
 
     1. Enter the **Service account ID**, the **Email** that you copied earlier.
 

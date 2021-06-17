@@ -32,7 +32,7 @@ If you work with both Cloud App Security and Zscaler, you can integrate the two 
         - Source = Zscaler QRadar LEEF
         - Receiver type = Syslog - UDP
 
-        ![data source Zscaler](media/data-source-zscaler.png)
+        ![data source Zscaler.](media/data-source-zscaler.png)
 
         > [!NOTE]
         > Make sure the name of the data source is **NSS.** For more information about setting up NSS feeds, see [Adding Cloud App Security NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
