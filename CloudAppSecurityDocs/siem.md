@@ -27,7 +27,7 @@ The traffic is then sent over an encrypted HTTPS channel on port 443.
 
 Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM. Cloud App security uses the network configurations you provided during the setup (TCP or UDP with a custom port).
 
-![SIEM integration architecture](media/siem-architecture.png)
+![SIEM integration architecture.](media/siem-architecture.png)
 
 ## Supported SIEMs
 
@@ -60,21 +60,21 @@ Integrating with your SIEM is accomplished in three steps:
 
 1. On the **SIEM agents** tab, select "add" (**+**), and then choose **Generic SIEM**.
 
-    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
+    ![Screenshot showing Add SIEM integration menu.](media/siem0.png)
 
 1. In the wizard, select **Start Wizard**.
 1. In the wizard, fill in a name, and **Select your SIEM format** and set any **Advanced settings** that are relevant to that format. Select **Next**.
 
-    ![General SIEM settings](media/siem1.png)
+    ![General SIEM settings.](media/siem1.png)
 
 1. Type in the IP address or hostname of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
     You can work with your security admin to get these details if you don't have them. Select **Next**.
 
-    ![Remote Syslog settings](media/siem2.png)
+    ![Remote Syslog settings.](media/siem2.png)
 
 1. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server. Select **Edit and preview results** to check that the filter works as expected. Select **Next**.
 
-   ![Data types settings](media/siem3.png)
+   ![Data types settings.](media/siem3.png)
 
 1. Copy the token and save it for later.
     Select **Finish** and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later.
@@ -162,10 +162,10 @@ The following text is an alerts logfile example:
 ### Step 3: Validate that the SIEM agent is working
 
 1. Make sure the status of the SIEM agent in the Cloud App Security portal isn't **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours. The status shows as **Disconnected** if the connection is down for over 12 hours.
- ![SIEM disconnected](media/siem-not-connected.png)
+ ![SIEM disconnected.](media/siem-not-connected.png)
 
     Instead, the status should be connected, as seen here:
-    ![SIEM connected](media/siem-connected.png)
+    ![SIEM connected.](media/siem-connected.png)
 
 1. In your Syslog/SIEM server, make sure you see activities and alerts arriving from Cloud App Security.
 
@@ -173,19 +173,19 @@ The following text is an alerts logfile example:
 
 If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table. Select **Regenerate token** to get a new token.
 
-![SIEM - regenerate token](media/siem-regenerate-token.png)
+![SIEM - regenerate token.](media/siem-regenerate-token.png)
 
 ## Editing your SIEM agent
 
 To edit the SIEM agent, select the three dots at the end of the row for the SIEM agent in the table, and select **Edit**. If you edit the SIEM agent, you don't need to rerun the .jar file, it updates automatically.
 
-![SIEM - edit](media/siem-edit.png)
+![SIEM - edit.](media/siem-edit.png)
 
 ## Deleting your SIEM agent
 
 To delete the SIEM agent, select the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
 
-![SIEM - delete](media/siem-delete.png)
+![SIEM - delete.](media/siem-delete.png)
 
 ## Next steps
 

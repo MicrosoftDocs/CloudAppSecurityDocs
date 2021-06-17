@@ -59,7 +59,7 @@ In the menu bar, click the settings icon. Select **IP address ranges**. Click th
 
 7. When you're done, click **Create**.
 
-    ![newipaddress range](media/newipaddress-range.png "newipaddress range")
+    ![newipaddress range.](media/newipaddress-range.png "newipaddress range")
 
 ## Next steps
 

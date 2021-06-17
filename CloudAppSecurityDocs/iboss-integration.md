@@ -30,7 +30,7 @@ If you work with both Cloud App Security and iboss, you can integrate the two pr
         - Source = iboss Secure Cloud Gateway
         - Receiver type = Syslog - UDP
 
-        ![data source iboss](media/iboss-integration.png)
+        ![data source iboss.](media/iboss-integration.png)
 
     4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
 

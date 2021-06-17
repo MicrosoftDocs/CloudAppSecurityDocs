@@ -19,11 +19,11 @@ You have the option to set the **Inspection method** to use the **Microsoft Data
 
 1. In the [file policy](data-protection-policies.md) page, under **Inspection method**, select **Data Classification Service**. You can also set the **Inspection method** in the [session policy](session-policy-aad.md) page with **Control file download (with inspection)** selected.
 
-    ![data classification service setting](media/dcs-enable.png)
+    ![data classification service setting.](media/dcs-enable.png)
 2. Select whether the policy should apply when **any** or **all** of the criteria are met.
 3. **Choose inspection type** by selecting the **Sensitive information types**.
 
-    ![Choose data classification service inspection type](media/dcs-sensitive-information-type.png)
+    ![Choose data classification service inspection type.](media/dcs-sensitive-information-type.png)
 
 4. You can use the [default sensitive information types](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) to define what happens to files protected by Microsoft Cloud App Security. You can also reuse any of your [Office 365 custom sensitive information types](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
     > [!NOTE]

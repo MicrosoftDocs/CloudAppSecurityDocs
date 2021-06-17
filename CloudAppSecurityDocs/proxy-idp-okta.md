@@ -57,14 +57,14 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
 1. Under **Single Sign-On Settings**, click on the name of your existing Okta configuration.
 
-    ![Select Salesforce SSO settings](media/proxy-idp-okta/idp-okta-sf-select-sso-settings.png)
+    ![Select Salesforce SSO settings.](media/proxy-idp-okta/idp-okta-sf-select-sso-settings.png)
 
 1. On the **SAML Single Sign-On Setting** page, make a note of the Salesforce **Login URL**. You'll need this later when configuring Cloud App Security.
 
     > [!NOTE]
     > If your app provides a SAML certificate, download the certificate file.
 
-    ![Select Salesforce SSO login URL](media/proxy-idp-okta/idp-okta-sf-copy-saml-sso-login-url.png)
+    ![Select Salesforce SSO login URL.](media/proxy-idp-okta/idp-okta-sf-copy-saml-sso-login-url.png)
 
 <a name="idp1-conf-cas-with-your-app-saml-info"></a>
 
@@ -78,7 +78,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
     > [!NOTE]
     > If your app provides a SAML certificate, select **Use <app_name> SAML certificate** and upload the certificate file.
 
-    ![Manually fill in Salesforce SAML information](media/proxy-idp-okta/idp-okta-cas-sf-app-info.png)
+    ![Manually fill in Salesforce SAML information.](media/proxy-idp-okta/idp-okta-cas-sf-app-info.png)
 
 <a name="idp1-create-custom-app-okta"></a>
 
@@ -92,7 +92,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 1. Click **Add Application**, and then click **Create New App**. Apart from the **Audience URI (SP Entity ID)** value that must be a unique name, configure the new application using the settings you noted earlier. You'll need this application later when configuring Cloud App Security.
 1. Navigate to **Applications**, view your existing Okta configuration, and on the **Sign On** tab, select **View Setup Instructions**.
 
-    ![Note existing Salesforce app's SSO service location](media/proxy-idp-okta/idp-okta-sf-view-setup-instructions.png)
+    ![Note existing Salesforce app's SSO service location.](media/proxy-idp-okta/idp-okta-sf-view-setup-instructions.png)
 
 1. Make a note of the **Identity Provider Single Sign-On URL** and download the identity provider's Signing Certificate (X.509). You'll need this later.
 
@@ -110,7 +110,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
     - For the **Single sign-on service URL**, enter the Salesforce **Login URL** you noted earlier.
     - Select **Upload identity provider's SAML certificate** and upload the certificate file you downloaded earlier.
 
-    ![Add SSO service URL and SAML certificate](media/proxy-idp-okta/idp-okta-cas-sf-app-idp-info.png)
+    ![Add SSO service URL and SAML certificate.](media/proxy-idp-okta/idp-okta-cas-sf-app-idp-info.png)
 
 1. On the next page, make a note of the following information, and then click **Next**. You'll need the information later.
 
@@ -120,7 +120,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
     > [!NOTE]
     > If you see an option to upload the **Cloud App Security SAML certificate for the identity provider**, click on the click to download the certificate file. You'll need this later.
 
-    ![In Cloud App Security, note SSO URL and attributes](media/proxy-idp-okta/idp-okta-cas-get-sf-app-external-config.png)
+    ![In Cloud App Security, note SSO URL and attributes.](media/proxy-idp-okta/idp-okta-cas-get-sf-app-external-config.png)
 
 <a name="idp1-complete-custom-app-in-okta"></a>
 
@@ -128,7 +128,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
 1. Back in the **Okta Admin** console, under **Applications**, select the custom application you created earlier, and then under **General** > **SAML Settings**, click **Edit**.
 
-    ![Locate and edit SAML settings](media/proxy-idp-okta/idp-okta-sf-saml-settings-edit.png)
+    ![Locate and edit SAML settings.](media/proxy-idp-okta/idp-okta-sf-saml-settings-edit.png)
 
 1. In the **Single Sign On URL** field, replace the URL with the Cloud App Security single sign-on URL you noted earlier, and then save your settings.
 
@@ -139,7 +139,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
     | McasSigningCert | McasSigningCert | string | Custom |
     | McasAppId | McasAppId | string | Custom |
 
-    ![Add profile attributes](media/proxy-idp-okta/idp-okta-sf-add-profile-attributes-edit.png)
+    ![Add profile attributes.](media/proxy-idp-okta/idp-okta-sf-add-profile-attributes-edit.png)
 
 1. Back on the **Profile Editor** page, select the custom application you created earlier, click **Mappings**, and then select **Okta User to {custom_app_name}**. Map the **McasSigningCert** and **McasAppId** attributes to the Cloud App Security attribute values you noted earlier.
 
@@ -148,7 +148,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
     > - Make sure you enclose the values in double quotes (")
     > - Okta limits attributes to 1024 characters. To mitigate this limitation, add the attributes using the **Profile Editor** as described.
 
-    ![Map profile attributes](media/proxy-idp-okta/idp-okta-sf-map-profile-attributes-edit.png)
+    ![Map profile attributes.](media/proxy-idp-okta/idp-okta-sf-map-profile-attributes-edit.png)
 
 1. Save your settings.
 
@@ -161,7 +161,7 @@ Back in the Cloud App Security **APP CHANGES** page, do the following, but **don
 - Copy the Cloud App Security SAML Single sign-on URL
 - Download the Cloud App Security SAML certificate
 
-![Note the Cloud App Security SAML SSO URL and download the certificate](media/proxy-idp-okta/idp-okta-cas-sf-app-changes.png)
+![Note the Cloud App Security SAML SSO URL and download the certificate.](media/proxy-idp-okta/idp-okta-cas-sf-app-changes.png)
 
 <a name="idp1-complete-app-changes"></a>
 
@@ -179,7 +179,7 @@ In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign
     > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
     > - The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
-    ![Update SSO settings](media/proxy-idp-okta/idp-okta-sf-update-sso-settings.png)
+    ![Update SSO settings.](media/proxy-idp-okta/idp-okta-sf-update-sso-settings.png)
 
 <a name="idp1-complete-conf-in-cas"></a>
 

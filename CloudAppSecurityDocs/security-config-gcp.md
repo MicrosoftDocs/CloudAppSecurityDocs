@@ -24,18 +24,18 @@ This assessment provides an organizational view of security configuration recomm
     > [!NOTE]
     > It might take up to 15 minutes before your changes take effect.
 
-    ![security configuration menu](media/security-configuration-menu.png)
+    ![security configuration menu.](media/security-configuration-menu.png)
 
-1. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can click on the security configuration icon ![ASC icon](media/asc-icon.png) to open the recommendation in GCP Security Command Center for more information and to deep dive into the recommendation.
+1. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can click on the security configuration icon ![ASC icon.](media/asc-icon.png) to open the recommendation in GCP Security Command Center for more information and to deep dive into the recommendation.
 
     > [!NOTE]
     > To make investigation even simpler, you can create custom queries and save them for later use. After you've finished building your query, click the **Save as** button in the top right corner of the filters. In the **Save query** pop-up, name your query.
 
-    ![security configuration](media/security-configuration-gcp.png)
+    ![security configuration.](media/security-configuration-gcp.png)
 
 1. Select a recommendation to view additional information about the recommendation including a description and detailed remediation guidelines.
 
-    ![security configuration recommendation](media/security-configuration-gcp-details.png)
+    ![security configuration recommendation.](media/security-configuration-gcp-details.png)
 
 ## Next steps
 

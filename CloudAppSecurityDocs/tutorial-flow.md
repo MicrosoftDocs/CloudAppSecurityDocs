@@ -35,7 +35,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 > [!NOTE]
 > If you have previously created a workflow using a Cloud App Security connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Security extensions**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Security extensions**.
 
 1. On the **Security extensions** page, click the plus button to generate a new API token.
 1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then click **Generate**.

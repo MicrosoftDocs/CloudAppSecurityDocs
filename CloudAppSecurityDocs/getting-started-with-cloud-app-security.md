@@ -32,11 +32,11 @@ To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), in the side menu, click **show all**, and then select **Security**.
 
-    ![Access from Microsoft 365 admin center](media/access-from-o365.png)
+    ![Access from Microsoft 365 admin center.](media/access-from-o365.png)
 
 1. In the Microsoft 365 security page, click **More resources**, and then select **Cloud App Security**.
 
-    ![Select Cloud App Security](media/access-from-o365-s2.png)
+    ![Select Cloud App Security.](media/access-from-o365-s2.png)
 
 ## Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 
