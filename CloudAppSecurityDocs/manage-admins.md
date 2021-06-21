@@ -46,6 +46,8 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/user
 
 - **Global reader**: Has full read-only access to all aspects of Cloud App Security. Can't change any settings or take any actions.
 
+### Roles and permissions
+
 ## Built-in Cloud App Security admin roles
 
 The following Cloud App Security specific admin roles can be configured in the Cloud App Security portal:
