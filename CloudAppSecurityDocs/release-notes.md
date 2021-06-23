@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 06/13/2021
+ms.date: 06/23/2021
 ms.topic: overview
 ---
 # What's new with Microsoft Cloud App Security?
@@ -12,12 +12,28 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
-> [!IMPORTANT]
+> [!NOTE]
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
->[!NOTE]
->**Deprecation reminder:** In [release 198](#cloud-app-security-release-198), we added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy. This feature replaces both **Treat encrypted as match**, and **Treat files that cannot be scanned as match**, in addition to adding new functionality. New policies will contain the new checkbox by default, deselected by default. Pre-existing policies will be migrated to the new checkbox on May 30. Policies with either or both options selected will have the new option selected by default; all other policies will have it deselected.
+>[!IMPORTANT]
+>**Enhanced proxy URL for access controls (gradual rollout)**  
+Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 204
+
+June 27, 2021
+
+- **New log collector version**  
+Upgraded Log collector for Shadow IT discovery is now available. It includes the following updates:
+
+  - We've upgraded our Pure-PTPd version to the latest version: 1.0.49. TLS < 1.2 is now disabled by default.
+  - We've disabled the "octet-counted" framing feature in RSyslog to prevent failed processing.
+
+  For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
+
+- **Slack and OneLogin app connectors available in public preview**  
+New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](connect-slack-to-microsoft-cloud-app-security.md) and [Connect OneLogin](connect-okta-to-microsoft-cloud-app-security.md).
 
 ## Cloud App Security release 203
 
