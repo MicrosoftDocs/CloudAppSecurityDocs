@@ -27,7 +27,7 @@ June 27, 2021
 - **New log collector version**  
 Upgraded Log collector for Shadow IT discovery is now available. It includes the following updates:
 
-  - We've upgraded our Pure-PTPd version to the latest version: 1.0.49. TLS < 1.2 is now disabled by default.
+  - We've upgraded our Pure-FTPd version to the latest version: 1.0.49. TLS < 1.2 is now disabled by default.
   - We've disabled the "octet-counted" framing feature in RSyslog to prevent failed processing.
 
   For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
