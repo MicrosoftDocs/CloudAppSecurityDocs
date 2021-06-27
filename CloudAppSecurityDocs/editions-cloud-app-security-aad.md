@@ -19,13 +19,15 @@ Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing dee
 
 ## Enhanced Cloud App Discovery in Azure Active Directory
 
-Azure Active Directory Premium P1 includes [Azure Active Directory Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This feature is based on the Microsoft Cloud App Security Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations. [Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
+Azure Active Directory Premium P1 includes [Azure Active Directory Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This feature is based on the Microsoft Cloud App Security Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations. The Cloud Discovery included in Azure Active Directory P1 has the same discovery capabilities as found in Cloud App Security, and there are no separate instructions for deployment.
+
+[Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
 
 ### Feature comparison
 
 The following table is a comparison of the discovery capabilities in Microsoft Cloud App Security and Azure AD.
 
-|Capability|Feature|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
+|Capability|Feature|Microsoft Cloud App Security| Microsoft Cloud App Discovery (as part of Azure Active Directory P1)|
 |----|----|----|----|
 |Cloud Discovery|Discovered apps|16,000 + cloud apps|16,000 + cloud apps|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
