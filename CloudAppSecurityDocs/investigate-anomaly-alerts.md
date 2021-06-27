@@ -683,10 +683,14 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 **TP**, **B-TP**, or **FP**?
 
-1. **TP**: If you're able to confirm that the activities of the user aren't legitimate.  
+1. **TP**: If you're able to confirm that the activities of the user aren't legitimate.
+  
     **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
+
 1. **B-TP**: If you’re able to confirm that user indeed significantly deviated from usual behavior, but there's no potential breach.
-1. **FP**  (Unusual behavior): If you're able to confirm that the user legitimately performed the unusual activities, or more activities than the established baseline.  
+
+1. **FP**  (Unusual behavior): If you're able to confirm that the user legitimately performed the unusual activities, or more activities than the established baseline.
+
     **Recommended action**: Dismiss the alert.
 
 **Understand the scope of the breach**
