@@ -4,7 +4,7 @@ description: This article is updated frequently to let you know what's new in th
 ms.date: 06/23/2021
 ms.topic: overview
 ---
-# What's new with Microsoft Cloud App Security?
+# What's new in Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
