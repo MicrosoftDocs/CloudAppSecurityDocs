@@ -11,6 +11,8 @@ By using a lifecycle management strategy, you can ensure your configurations, ex
 >[!NOTE]
 >Remember to also check [What’s New in Cloud App Security](release-notes.md) to stay current with new features and releases.
 
+![Microsoft Cloud App Security lifecycle management](media/cloud-app-security-lifecycle.png)
+
 To best maintain Cloud App Security posture, regularly follow the recommendations below:
 
 ## Role-based access controls
@@ -43,7 +45,7 @@ To best maintain Cloud App Security posture, regularly follow the recommendation
 - Review [managed domains](general-setup.md#set-up-the-portal)
 - Verify current [IP ranges](ip-tags.md) for Corporate and VPN
 - [Verify App Tag strategy and add/remove as needed](discovered-app-queries.md#creating-and-managing-custom-app-tags)
-- Check rights on [admin qauarantine folder](use-case-admin-quarantine.md)
+- Check rights on [admin quarantine folder](use-case-admin-quarantine.md)
 - Adjust [score metrics](risk-score.md) based on industry best practices
 - Review members allowed to view [private activities](activity-privacy.md)
 - Verify integrations are enabled:
@@ -58,5 +60,3 @@ To best maintain Cloud App Security posture, regularly follow the recommendation
 > [Cloud App Security best practices](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
-[https://docs.microsoft.com/en-us/azure/active-directory/governance/conditional-access-exclusion](/azure/active-directory/governance/conditional-access-exclusion)
