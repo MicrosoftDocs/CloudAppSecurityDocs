@@ -7,7 +7,7 @@ items:
     href: what-is-cloud-app-security.md
   - name: Cloud App Security data security and privacy
     href: cas-compliance-trust.md
-  - name: What's new?
+  - name: What's new in Cloud App Security
     href: release-notes.md
   - name: Compare
     items:
