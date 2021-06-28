@@ -17,17 +17,19 @@ For information about licensing, see the [Microsoft Cloud App Security licensing
 
 Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Cloud App Security, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
-## Enhanced Cloud App Discovery in Azure Active Directory
+## Cloud App Discovery (as part of Azure Active Directory P1)
 
-Azure Active Directory Premium P1 includes [Azure Active Directory Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This feature is based on the Microsoft Cloud App Security Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations. [Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
+Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This is a subset of Microsoft Cloud App Security. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
+
+[Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
 
 ### Feature comparison
 
 The following table is a comparison of the discovery capabilities in Microsoft Cloud App Security and Azure AD.
 
-|Capability|Feature|Microsoft Cloud App Security|Azure AD Cloud App Discovery|
+|Capability|Feature|Microsoft Cloud App Security| Cloud App Discovery (as part of Azure Active Directory P1)|
 |----|----|----|----|
-|Cloud Discovery|Discovered apps|16,000 + cloud apps|16,000 + cloud apps|
+|Cloud Discovery|Discovered apps|20,000 + cloud apps|20,000 + cloud apps|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
 ||Log anonymization for user privacy|Yes|Yes|
 ||Access to full Cloud App Catalog|Yes|Yes|
