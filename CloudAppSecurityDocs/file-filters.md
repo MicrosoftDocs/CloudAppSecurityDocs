@@ -68,7 +68,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Collaborators** – Include/exclude specific collaborator groups.
 
-    - **Any from domain** – If any user from this domain has access to the file.
+    - **Any from domain** – If any user from this domain has direct access to the file.
 
     - **Entire organization** – If the entire organization has access to the file.
 
