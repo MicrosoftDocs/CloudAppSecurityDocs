@@ -18,7 +18,7 @@ Detect new apps that are highly used, in terms of number of users or amount of t
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
 
 ### Steps
 
@@ -39,7 +39,7 @@ Detect potential exposure of your organization in cloud apps that do not meet yo
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
 
 ### Steps
 
@@ -65,7 +65,7 @@ You can detect when your employees continue to use unsanctioned apps as a replac
 
 ### Prerequisites
 
-- Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+- Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
 
 ### Steps
 
@@ -85,7 +85,7 @@ Detect anomalous traffic use patterns (uploads/downloads) in your cloud apps, th
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
 
 ### Steps
 
@@ -108,7 +108,7 @@ Detect potential data exfiltration by a user to an unsanctioned cloud storage ap
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
 
 ### Steps
 

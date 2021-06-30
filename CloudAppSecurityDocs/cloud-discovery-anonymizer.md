@@ -23,7 +23,7 @@ Key points:
     - You can set the data from a specific log file to be anonymized, by [creating a new snapshot report](create-snapshot-cloud-discovery-reports.md) and selecting **Anonymize private information**.  
     ![Anonymize snapshot data.](media/anonymize-log.png)
 
-    - You can set the data from an [automated upload for a new data source](configure-automatic-log-upload-for-continuous-reports.md) to be anonymized by selecting  **Anonymize private information** when you add the new data source.  
+    - You can set the data from an [automated upload for a new data source](discovery-docker.md) to be anonymized by selecting  **Anonymize private information** when you add the new data source.  
     ![Anonymize log data.](media/anonymize-autolog.png)
 
     - You can set the default in Cloud App Security to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
