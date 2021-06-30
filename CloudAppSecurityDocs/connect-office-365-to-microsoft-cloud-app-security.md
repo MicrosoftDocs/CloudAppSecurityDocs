@@ -15,7 +15,7 @@ Cloud App Security supports the legacy Office 365 Dedicated Platform as well as 
 > [!NOTE]
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
 
-Cloud App Security supports the following Office 365 apps:
+Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from **all supported services**, such as:
 
 - Dynamics 365 CRM
 - Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
@@ -27,9 +27,6 @@ Cloud App Security supports the following Office 365 apps:
 - Skype for Business
 - Teams (only appears after activities from Teams are detected in the portal)
 - Yammer
-
-> [!NOTE]
-> Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
 
 ## How to connect Office 365 to Cloud App Security  
 
