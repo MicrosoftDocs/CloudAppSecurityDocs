@@ -161,7 +161,7 @@ The device identification mechanism can request authentication from relevant dev
 1. When logging in to the protected app
     - Verify that you are redirected to the URL `<https://*.managed.access-control.cas.ms/aad_login>`
     - If you are using iOS, make sure you are using the Safari browser
-    - If you are using Firefox, you must also add the certificate to Firefox's own certificate store. All other browsers use the same default certificate store. Learn [how to add a certificate to the Firefox certificate store](http://www.jscape.com/blog/firefox-client-certificate).
+    - If you are using Firefox, you must also add the certificate to Firefox's own certificate store. All other browsers use the same default certificate store. Learn [how to add a certificate to the Firefox certificate store](https://www.jscape.com/blog/firefox-client-certificate).
 1. Validate that the client certificate prompted in your browser.
     - If it does not appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
 1. Verify that activities from these devices are populating the log. In Cloud App Security, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Valid client certificate**.

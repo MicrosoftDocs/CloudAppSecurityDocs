@@ -8,7 +8,7 @@ ms.topic: overview
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes the differences between Cloud App Security and Office 365 Cloud App Security. For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+This article describes the differences between Cloud App Security and Office 365 Cloud App Security.
 
 For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
