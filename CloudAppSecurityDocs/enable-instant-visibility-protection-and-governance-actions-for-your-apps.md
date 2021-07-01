@@ -57,8 +57,10 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
 | Office 365        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Okta              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
+| OneLogin (Preview) | ✔ | | ✔ | ✔ | ✔ | ✔ |
 | Service  Now      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
 | Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
+| Slack (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 
@@ -75,8 +77,10 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |
 | Office 365        | ✔                                    | ✔                         | ✔                         |
 | Okta              |                                      | Not applicable            | Not applicable            |
+| OneLogin (Preview) | |  |  |
 | Service  Now      |                                      |                           |                           |
 | Salesforce        | ✔                                    | ✔                         | ✔                         |
+| Slack (Preview) |  |  |  |
 | Webex             |                                      | Not applicable            | Not applicable            |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
 
@@ -93,8 +97,10 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
 | Office 365        | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Okta              | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
+| OneLogin (Preview) |  |  |  |  |  |
 | Service  Now      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
 | Salesforce        | ✔                         | ✔                                        |                           | ✔                         |                                            |
+| Slack (Preview) |  |  | |  | |
 | Webex             | ✔                         | ✔                                        | ✔                         |                           | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
 
