@@ -4,7 +4,7 @@ description: This article provides information about the benefits of connecting 
 ms.date: 07/01/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Zendesk Enterprise (Preview)
+# How Cloud App Security helps protect your Zendesk (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
