@@ -24,14 +24,6 @@ Starting in early July 2021, we will change our access endpoint from `<mcas-dc-i
 
 June 27, 2021
 
-- **New log collector version**  
-Upgraded Log collector for Shadow IT discovery is now available. It includes the following updates:
-
-  - We've upgraded our Pure-FTPd version to the latest version: 1.0.49. TLS < 1.2 is now disabled by default.
-  - We've disabled the "octet-counted" framing feature in RSyslog to prevent failed processing.
-
-  For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
-
 - **Slack and OneLogin app connectors available in public preview**  
 New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](connect-slack-to-microsoft-cloud-app-security.md) and [Connect OneLogin](connect-okta-to-microsoft-cloud-app-security.md).
 
@@ -142,6 +134,14 @@ In the coming months, Cloud App Security will be updating its User Interface to 
 ## Cloud App Security release 189, 190, and 191
 
 Released January 10, 2021
+
+- **New log collector version**  
+Upgraded Log collector for Shadow IT discovery is now available. It includes the following updates:
+
+  - We've upgraded our Pure-FTPd version to the latest version: 1.0.49. TLS < 1.2 is now disabled by default.
+  - We've disabled the "octet-counted" framing feature in RSyslog to prevent failed processing.
+
+  For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
 - **New anomaly detection: Suspicious addition of credentials to an OAuth app**  
 We've extended our anomaly detections to include suspicious addition of privileged credentials to an OAuth app. The new detection is now available out-of-the-box and automatically enabled. The detection can indicate that an attacker has compromised the app and is using it for malicious activity. For more information, see [Unusual addition of credentials to an OAuth app](investigate-anomaly-alerts.md#unusual-addition-of-credentials-to-an-oauth-app).
