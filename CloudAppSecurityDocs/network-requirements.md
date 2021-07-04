@@ -132,7 +132,9 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 |GCC| 52.227.23.181, 52.227.180.126|
 
 > [!NOTE]
-> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+>
+> - If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> - A genuine Microsoft Cloud App Security certificate usage is required for the SIEM agent connection.
 
 ## App connector
 
