@@ -44,7 +44,7 @@ Cloud App Security integrates directly with [Office 365's audit logs](/microsoft
 > - [Multi-geo deployments](/office365/enterprise/office-365-multi-geo) are only supported for OneDrive
 >- In SharePoint and OneDrive, Cloud App Security supports user quarantine only for files in **Shared Documents** libraries (SharePoint Online) and files in the **Documents** library (OneDrive for Business).
 
-1. In the **Connected apps** page, click the plus button and select **Office 365**.
+1. In the **Connected apps** page, under **App connectors**, select **+Connect an app** and then select **Office 365**.
 
     ![connect O365 menu option.](media/connect-o365.png)
 
