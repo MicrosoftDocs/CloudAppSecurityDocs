@@ -22,6 +22,8 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 
+- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multi-factor authentication on download of a highly confidential file.
+
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
 - **Prevent upload of unlabeled files**: Before a sensitive file is uploaded, distributed, and used by others, it's important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
@@ -86,7 +88,7 @@ When a client certificate check is performed, Cloud App Security checks for the 
 
 To configure a policy to leverage device management via client certificates:
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
 
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.

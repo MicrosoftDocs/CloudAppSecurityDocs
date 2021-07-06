@@ -1,10 +1,10 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 04/22/2021
+ms.date: 06/23/2021
 ms.topic: overview
 ---
-# What's new with Microsoft Cloud App Security?
+# What's new in Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -12,12 +12,44 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
-> [!IMPORTANT]
+> [!NOTE]
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
->[!NOTE]
->**Deprecation reminder:** In [release 198](#cloud-app-security-release-198), we added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy. This feature replaces both **Treat encrypted as match**, and **Treat files that cannot be scanned as match**, in addition to adding new functionality. New policies will contain the new checkbox by default, deselected by default. Pre-existing policies will be migrated to the new checkbox on May 30. Policies with either or both options selected will have the new option selected by default; all other policies will have it deselected.
+>[!IMPORTANT]
+>**Enhanced proxy URL for access controls (gradual rollout)**  
+Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 204
+
+June 27, 2021
+
+- **Slack and OneLogin app connectors available in public preview**  
+New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](connect-slack-to-microsoft-cloud-app-security.md) and [Connect OneLogin](connect-okta-to-microsoft-cloud-app-security.md).
+
+## Cloud App Security release 203
+
+June 13, 2021
+
+- **Expose verified publisher indicating in O365 OAuth apps**  
+Cloud App Security now surfaces whether a publisher of an Office 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
+
+- **Azure Active Directory Cloud App Security admin**  
+A Cloud App Security admin role has been added to Azure Active Directory (AAD), allowing the assignment of global admin capabilities to Cloud App Security alone via AAD. For more information, see [Office 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
+
+- **Export custom tag and app domains per discovered app**  
+**Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
+
+  >[!IMPORTANT]
+  >**Enhanced proxy URL for access controls (gradual rollout)**  
+  Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 200, 201, and 202
+
+May 30, 2021
+
+- **Authentication Context (Step-Up Authentication) in public preview**  
+We've added the ability to protect users working with proprietary and privileged assets by requiring Azure AD Conditional Access policies to be reassessed in the session. For example, if a change in IP address is detected because an employee in a highly sensitive session has moved from the office to the coffee shop downstairs, step-up can be configured to reauthenticate that user. For more information, see [Require step-up authentication (authentication context) upon risky action](tutorial-step-up-authentication.md).
 
 ## Cloud App Security release 199
 
@@ -34,7 +66,7 @@ Label management from the Azure Information Protection portal (classic) is depre
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 - **Public preview for overriding privilege sensitivity labels**  
-Cloud App Security supports overriding or removing sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [Apply labels directly to files](azip-integration.md#how-to-integrate-azure-information-protection-with-cloud-app-security).
+Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [Apply labels directly to files](azip-integration.md#how-to-integrate-azure-information-protection-with-cloud-app-security).
 
 - **Extended Advanced Hunting events**  
 We've expanded the available events in Cloud App Security. Microsoft 365 Defender Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Office 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
@@ -102,6 +134,14 @@ In the coming months, Cloud App Security will be updating its User Interface to 
 ## Cloud App Security release 189, 190, and 191
 
 Released January 10, 2021
+
+- **New log collector version**  
+Upgraded Log collector for Shadow IT discovery is now available. It includes the following updates:
+
+  - We've upgraded our Pure-FTPd version to the latest version: 1.0.49. TLS < 1.2 is now disabled by default.
+  - We've disabled the "octet-counted" framing feature in RSyslog to prevent failed processing.
+
+  For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
 - **New anomaly detection: Suspicious addition of credentials to an OAuth app**  
 We've extended our anomaly detections to include suspicious addition of privileged credentials to an OAuth app. The new detection is now available out-of-the-box and automatically enabled. The detection can indicate that an attacker has compromised the app and is using it for malicious activity. For more information, see [Unusual addition of credentials to an OAuth app](investigate-anomaly-alerts.md#unusual-addition-of-credentials-to-an-oauth-app).

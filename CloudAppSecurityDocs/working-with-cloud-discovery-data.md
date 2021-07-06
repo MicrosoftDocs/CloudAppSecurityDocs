@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
 
-![cloud discovery dashboard](media/cloud-discovery-dashboard.png)
+![cloud discovery dashboard.](media/cloud-discovery-dashboard.png)
 
 ## Review the Cloud Discovery Dashboard
 
@@ -38,7 +38,7 @@ To create an exclusion:
 3. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded device** tab and click the + button to add your exclusion.
 4. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
 
-    ![exclude user](media/exclude-user.png "exclude user")
+    ![exclude user.](media/exclude-user.png "exclude user")
 
 ## Manage continuous reports
 
@@ -62,7 +62,7 @@ To create a new continuous report:
 
 6. Set the filters you want on the data. These filters can be **User groups**, **IP address tags**, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).
 
-    ![create custom continuous report](media/create-custom-continuous-report.png)
+    ![create custom continuous report.](media/create-custom-continuous-report.png)
 
 > [!NOTE]
 > All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
@@ -87,7 +87,7 @@ To delete Cloud Discovery data:
 
 3. Click the **Delete** button.
 
-    ![delete data](media/delete-data.png "delete data")
+    ![delete data.](media/delete-data.png "delete data")
 
     > [!NOTE]
     >  The deletion process takes a few minutes and is not immediate.

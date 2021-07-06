@@ -21,11 +21,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. In the **Connected apps** page, click the plus button and select **Microsoft Azure**.
 
-    ![connect Azure menu item](media/connect-azure-menu.png)
+    ![connect Azure menu item.](media/connect-azure-menu.png)
 
 2. In the Azure pop-up, click **Connect Microsoft Azure**.
 
-    ![connect Azure](media/connect-azure.png)
+    ![connect Azure.](media/connect-azure.png)
 
 > [!NOTE]
 > After connecting Azure, data will be pulled. You will see data from then onwards.

@@ -24,7 +24,7 @@ In this tutorial, you'll learn how to use Cloud Discovery to discover which apps
 
 Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
-![shadow IT lifecycle](media/shadow-it-lifecycle.png)
+![shadow IT lifecycle.](media/shadow-it-lifecycle.png)
 
 ### Phase 1: Discover and identify Shadow IT
 
@@ -42,7 +42,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 1. **Identify the risk levels of your apps**: Use the Cloud App Security cloud app catalog to dive deeper into the risks that are involved with each discovered app. Cloud App Security's risk catalog includes over 16,000 apps that are assessed using over 80 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
 
-    - In the Cloud App Security portal, under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
+    - In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
 
     - You can drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's security risk factors.
 
@@ -71,7 +71,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 - **Manage discovered apps using Azure Active Directory (Azure AD) Gallery**<a name ="gallery-apps"></a>: Cloud App Security also leverages its native integration with Azure AD to enable you to manage your discovered apps in Azure AD Gallery. For apps that already appear in the Azure AD Gallery, you can apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
 
-    ![manage app in azure ad gallery](media/manage-app-in-azure-ad-gallery.png)
+    ![manage app in azure ad gallery.](media/manage-app-in-azure-ad-gallery.png)
 
 - **Continuous monitoring**: Now that you have thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
 
@@ -96,4 +96,8 @@ The nature of cloud apps means that they are updated daily and new apps appear a
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]
+
+## Learn more
+
+- Try our interactive guide: [Discover and manage cloud app usage with Microsoft Cloud App Security](https://mslearn.cloudguides.com/guides/Discover%20and%20manage%20cloud%20app%20usage%20with%20Microsoft%20Cloud%20App%20Security)

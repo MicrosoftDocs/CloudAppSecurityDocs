@@ -7,7 +7,7 @@ items:
     href: what-is-cloud-app-security.md
   - name: Cloud App Security data security and privacy
     href: cas-compliance-trust.md
-  - name: What's new?
+  - name: What's new in Cloud App Security
     href: release-notes.md
   - name: Compare
     items:
@@ -48,6 +48,8 @@ items:
     href: use-case-information-protection.md
   - name: Extend governance to endpoint remediation
     href: tutorial-flow.md
+  - name: Require step-up authentication upon risky action
+    href: tutorial-step-up-authentication.md
 - name: Concepts
   items:
   - name: Protect apps with Conditional Access App Control
@@ -80,10 +82,14 @@ items:
       href: protect-office-365.md
     - name: Protect Okta
       href: protect-okta.md
+    - name: Protect OneLogin (Preview)
+      href: protect-onelogin.md
     - name: Protect Salesforce
       href: protect-salesforce.md
     - name: Protect ServiceNow
       href: protect-servicenow.md
+    - name: Protect Slack (Preview)
+      href: protect-slack.md
     - name: Protect Webex
       href: protect-webex.md
     - name: Protect Workday
@@ -174,10 +180,14 @@ items:
       href: connect-office-365-to-microsoft-cloud-app-security.md
     - name: Connect Okta
       href: connect-okta-to-microsoft-cloud-app-security.md
+    - name: Connect OneLogin (Preview)
+      href: connect-onelogin-to-microsoft-cloud-app-security.md
     - name: Connect Salesforce
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
+    - name: Connect Slack (Preview)
+      href: connect-slack-to-microsoft-cloud-app-security.md
     - name: Connect Webex
       href: connect-webex-to-microsoft-cloud-app-security.md
     - name: Connect Workday

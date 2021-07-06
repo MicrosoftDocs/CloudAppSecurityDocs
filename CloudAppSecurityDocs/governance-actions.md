@@ -58,7 +58,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
 
-   ![policy_create alerts](media/policy_create-alerts.png)
+   ![policy_create alerts.](media/policy_create-alerts.png)
 
 ## Activity governance actions
 
@@ -80,7 +80,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
 
-  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png)
+  ![Cloud App Security activity policy governance actions.](media/activity-policy-ref6.png)
 
 ## Governance conflicts
 
@@ -100,7 +100,7 @@ After creating multiple policies, a situation may arise in which the governance 
 
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log.
 
-To view the governance log, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and then select **Governance log**.
+To view the governance log, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and then select **Governance log**.
 
 The following table is the full list of actions the Cloud App Security portal enables you to take. These actions are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
 For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md).

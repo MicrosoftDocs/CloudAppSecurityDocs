@@ -25,7 +25,7 @@ In this tutorial, you'll learn how to use Cloud App Security to discover potenti
 
 Our approach to information protection can be split into the following phases that allow you to protect your data through its full lifecycle, across multiple locations and devices.
 
-![shadow IT lifecycle](media/tutorial-dlp-solution.png)
+![shadow IT lifecycle.](media/tutorial-dlp-solution.png)
 
 ### Phase 1: Discover your data
 

@@ -27,7 +27,7 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
 
 3. Click **Save**.
 
-![Enrich Cloud App Security Discovery with Azure AD usernames](media/discovery-enrichment.png)
+![Enrich Cloud App Security Discovery with Azure AD usernames.](media/discovery-enrichment.png)
 
 ## Next steps
 

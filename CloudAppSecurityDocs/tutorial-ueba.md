@@ -66,7 +66,7 @@ To identify who your riskiest users are in Cloud App Security:
 1. Go to the Cloud App Security dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them.  
 The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
-   ![Top users dashboard](media/dashboard-top-users.png)
+   ![Top users dashboard.](media/dashboard-top-users.png)
 
 1. Select a particular user to get to the **User** page.
     ![User page](media/user-page.png)
@@ -102,9 +102,9 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 
 - Contact the user – Using the user contact information integrated with Cloud App Security from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-- Directly from the Cloud App Security portal, select the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
+- Directly from the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
 
-- In case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
+- In the case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
 - If you drill down into an alert and determine that the activity shouldn't have triggered an alert, in the [Activity drawer](activity-filters.md), select the **Send us feedback** link so that we can be sure to fine-tune our alerting system with your organization in mind.
 - After you remediate the issue, close the alert.
 

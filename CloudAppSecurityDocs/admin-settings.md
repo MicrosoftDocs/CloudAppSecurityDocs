@@ -16,7 +16,7 @@ To set up your preferences as an admin of Microsoft Cloud App Security, click yo
 
 1. Click **Language**. Here you can choose the language to use in the Cloud App Security portal.
 
-    ![custom user settings](media/custom-language-settings.png)
+    ![custom user settings.](media/custom-language-settings.png)
 
 2. Click **Notifications** and set email and text notification preferences for emails you receive from the system. You can set the severity that determines which alerts and violations you want to receive emails. The severity is set per policy. When violations are triggered, you receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails are sent to the alias associated with the administrator user account you used to sign in to Cloud App Security. Enter a phone number to enable Cloud App Security to send you text messages when alerts and notifications are sent, and set the severity level for which you want to receive notifications via text message.
 
@@ -25,7 +25,7 @@ To set up your preferences as an admin of Microsoft Cloud App Security, click yo
     > - The maximum number of alerts that are sent via text message is 10 per phone number per day. The day is calculated according to the UTC timezone.
     > - Notifications are not sent for Azure Active Directory IPC events.
 
-    ![notification settings](media/notification-settings.png)
+    ![notification settings.](media/notification-settings.png)
 
 3. When you're done, click **Save**.
 

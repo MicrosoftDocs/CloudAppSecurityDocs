@@ -37,7 +37,7 @@ You might need to modify the configuration for the Cloud App Security Cloud Disc
 
 1. Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
 
-    ![change ftp password](media/log-collector-advanced-tasks/ftp-connect.png)
+    ![change ftp password.](media/log-collector-advanced-tasks/ftp-connect.png)
 
 #### Customize certificate files
 
@@ -45,19 +45,19 @@ Follow this procedure to customize the certificate files you use for secure conn
 
 1. Open an FTP client and connect to the log collector.
 
-    ![Connect to ftp client](media/log-collector-advanced-tasks/ftp-connect.png)
+    ![Connect to ftp client.](media/log-collector-advanced-tasks/ftp-connect.png)
 
 1. Navigate to the `ssl_update` directory.
 1. Upload new certificate files to the `ssl_update` directory (the names are mandatory).
 
-    ![Upload certificate files](media/log-collector-advanced-tasks/new-certs.png)
+    ![Upload certificate files.](media/log-collector-advanced-tasks/new-certs.png)
 
     - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
     - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files are missing, the update won't take place.
 
 1. In a terminal window run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 
-    ![Update certificate files](media/log-collector-advanced-tasks/update-certs.png)
+    ![Update certificate files.](media/log-collector-advanced-tasks/update-certs.png)
 
 1. In a terminal window run: `docker exec <collector name> chmod -R 700 /etc/ssl/private/`.
 
@@ -83,7 +83,7 @@ In the shell, verify that the container was created and is running using the fol
 docker ps
 ```
 
-![docker ps](media/log-collector-advanced-tasks/docker-1.png)
+![docker ps.](media/log-collector-advanced-tasks/docker-1.png)
 
 #### Copy proxy root CA certificate to the container
 
@@ -121,7 +121,7 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     ./keytool --list --keystore ../lib/security/cacerts | grep self
     ```
 
-    ![keytool](media/log-collector-advanced-tasks/docker-2.png "keytool")
+    ![keytool.](media/log-collector-advanced-tasks/docker-2.png "keytool")
 
 You should see your imported proxy CA certificate.
 
@@ -131,7 +131,7 @@ The container is now ready.
 
 Run the **collector_config** command using the API token that you used during the creation of your log collector:
 
-![API token](media/log-collector-advanced-tasks/docker-3.png "API token")
+![API token.](media/log-collector-advanced-tasks/docker-3.png "API token")
 
 When you run the command, specify your own API token:
 
@@ -139,11 +139,11 @@ When you run the command, specify your own API token:
 collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 ```
 
-![Configuration update](media/log-collector-advanced-tasks/docker-4.png "Configuration update")
+![Configuration update.](media/log-collector-advanced-tasks/docker-4.png "Configuration update")
 
 The log collector is now able to communicate with Cloud App Security. After sending data to it, the status will change from **Healthy** to **Connected** in the Cloud App Security portal.
 
-![Status](media/log-collector-advanced-tasks/docker-5.png "Status")
+![Status.](media/log-collector-advanced-tasks/docker-5.png "Status")
 
 >[!NOTE]
 > If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Cloud App Security portal.
@@ -188,7 +188,7 @@ The following steps describe moving data to a partition called *datastore* and a
 > [!NOTE]
 > Adding and configuring a new partition on your Linux host is not in the scope of this guide.
 
-![List of Linux partitions](media/log-collector-advanced-tasks/move-lc-new-partition-linux-disk-list.png)
+![List of Linux partitions.](media/log-collector-advanced-tasks/move-lc-new-partition-linux-disk-list.png)
 
 1. Stop the Docker service by using this command:
 
@@ -230,7 +230,7 @@ Use these steps to review your log collector disk usage and location.
     docker inspect <collector_name> | grep WorkDir
     ```
 
-    ![Identify log collector directory](media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-directory.png)
+    ![Identify log collector directory.](media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-directory.png)
 
 1. Get the size on disk of the log collector using the identified path without the "/work" suffix:
 
@@ -238,7 +238,7 @@ Use these steps to review your log collector disk usage and location.
     du -sh /var/lib/docker/overlay2/<log_collector_id>/
     ```
 
-    ![Get log collector size on disk](media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-size.png)
+    ![Get log collector size on disk.](media/log-collector-advanced-tasks/inspect-lc-linux-disk-usage-size.png)
 
     > [!NOTE]
     > If you only need to know the size on disk, you can use this command: `docker ps -s`
@@ -285,7 +285,7 @@ Use the steps relevant to the operating system of the Docker Hub where the log c
 
 1. Download the log collector image to your Windows computer under `C:\mcasLogCollector\` using WinSCP.
 
-    ![Download log collector to Windows computer](media/log-collector-advanced-tasks/move-lc-to-accessible-host-download-linux-winscp.png)
+    ![Download log collector to Windows computer.](media/log-collector-advanced-tasks/move-lc-to-accessible-host-download-linux-winscp.png)
 
 #### Exporting the image on Windows
 
@@ -313,7 +313,7 @@ Use these steps to transfer the exported image to your destination host.
 
 1. Upload the log collector image to your destination host under `/tmp/`.
 
-    ![Upload log collector to destination host](media/log-collector-advanced-tasks/move-lc-to-accessible-host-upload-host-winscp.png)
+    ![Upload log collector to destination host.](media/log-collector-advanced-tasks/move-lc-to-accessible-host-upload-host-winscp.png)
 
 1. On the destination host, import the log collector image to the Docker images repository by using this command:
 
@@ -321,7 +321,7 @@ Use these steps to transfer the exported image to your destination host.
     docker load --input /tmp/mcasLC.tar
     ```
 
-    ![Import log collector image to Docker repo](media/log-collector-advanced-tasks/move-lc-to-accessible-host-import-docker-repo.png)
+    ![Import log collector image to Docker repo.](media/log-collector-advanced-tasks/move-lc-to-accessible-host-import-docker-repo.png)
 
 1. Optionally, verify that the import completed successfully by using this command:
 
@@ -329,7 +329,7 @@ Use these steps to transfer the exported image to your destination host.
     docker image ls
     ```
 
-    ![Verify log collector image import succeeded](media/log-collector-advanced-tasks/move-lc-to-accessible-host-verify-docker-image.png)
+    ![Verify log collector image import succeeded.](media/log-collector-advanced-tasks/move-lc-to-accessible-host-verify-docker-image.png)
 
     You can now proceed to [create your log collector](discovery-docker.md) using the image from the destination host.
 
@@ -351,7 +351,7 @@ Use these steps to define custom ports.
 
 1. On the **Log collectors** tab, add or edit a log collector and after updating the data sources, copy the run command from the dialog.
 
-    ![Copy run command from log collector wizard](media/log-collector-advanced-tasks/define-lc-custom-ports-copy-default-run-command.png)
+    ![Copy run command from log collector wizard.](media/log-collector-advanced-tasks/define-lc-custom-ports-copy-default-run-command.png)
 
     > [!NOTE]
     > If used as provided, the following wizard provided command configures the log collector to use ports 514/udp and 515/udp.
@@ -360,7 +360,7 @@ Use these steps to define custom ports.
     > (echo <credentials>) | docker run --name LogCollector1 -p 514:514/udp -p 515:515/udp -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='10.0.0.100'" -e "PROXY=" -e "SYSLOG=true" -e "CONSOLE=machine.us2.portal.cloudappsecurity.com" -e "COLLECTOR=LogCollector1" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     > ```
     >
-    > ![Run command from log collector wizard](media/log-collector-advanced-tasks/define-lc-custom-ports-default-run-command.png)
+    > ![Run command from log collector wizard.](media/log-collector-advanced-tasks/define-lc-custom-ports-default-run-command.png)
 
 1. Before using the command on your host machine, modify the command to use your custom ports. For example, to configure the log collector to use UDP ports 414 and 415, change the command as follows:
 
@@ -368,7 +368,7 @@ Use these steps to define custom ports.
     (echo <credentials>) | docker run --name LogCollector1 -p 414:514/udp -p 415:515/udp -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='10.0.0.100'" -e "PROXY=" -e "SYSLOG=true" -e "CONSOLE=machine.us2.portal.cloudappsecurity.com" -e "COLLECTOR=LogCollector1" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
-    ![Run custom command on your host](media/log-collector-advanced-tasks/define-lc-custom-ports-custom-run-command.png)
+    ![Run custom command on your host.](media/log-collector-advanced-tasks/define-lc-custom-ports-custom-run-command.png)
 
     > [!NOTE]
     > Only the Docker mapping is modified. The internally assigned ports are not changed enabling you to choose any listening port on the host.
@@ -394,14 +394,14 @@ Use these steps to validate the traffic received by log collectors.
 
         If everything is correctly configured, you should see network traffic from your appliances.
 
-        ![Analyze network traffic tcpdump command](media/log-collector-advanced-tasks/validate-traffic-and-log-format-tcpdump-analyze-traffic.png)
+        ![Analyze network traffic tcpdump command.](media/log-collector-advanced-tasks/validate-traffic-and-log-format-tcpdump-analyze-traffic.png)
 
     - By using *netcat*, or similar command to analyze network traffic on the host machine:
 
         1. Install *netcat* and *wget*.
 
         1. Download, and if required unzip, a sample log, as follows:
-            1. In the Cloud App Security portal, click **Discover**, and then click **Create snapshot report**.
+            1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Discover**, and then click **Create snapshot report**.
             1. Select the **Data source** from which you want to upload the log files.
             1. Click **View and verify** then right-click **Download sample log** and copy the URL address link.
             1. Click **Close**.
@@ -437,11 +437,11 @@ Use these steps to validate the traffic received by log collectors.
         > [!NOTE]
         > This file will continue to be written to until it reaches 40 KB in size.
 
-        ![Analyze network traffic cat command](media/log-collector-advanced-tasks/validate-traffic-and-log-format-cat-analyze-traffic.png)
+        ![Analyze network traffic cat command.](media/log-collector-advanced-tasks/validate-traffic-and-log-format-cat-analyze-traffic.png)
 
 1. Review logs that have been uploaded to Cloud App Security in the `/var/adallom/discoverylogsbackup` directory.
 
-    ![Review uploaded log files](media/log-collector-advanced-tasks/validate-traffic-and-log-format-review-uploaded-logs.png)
+    ![Review uploaded log files.](media/log-collector-advanced-tasks/validate-traffic-and-log-format-review-uploaded-logs.png)
 
 1. Validate the log format received by the log collector by comparing the messages stored in `/var/adallom/discoverylogsbackup` to the sample log format provided in the Cloud App Security **Create log collector** wizard.
 
