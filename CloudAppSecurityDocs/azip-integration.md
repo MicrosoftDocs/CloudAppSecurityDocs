@@ -60,7 +60,6 @@ You're probably familiar with file classification labels in [Azure Information P
 > [!NOTE]
 >
 > - Labels with protection outside of Cloud App Security can be overridden by Cloud App Security, but can't be removed. In addition, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
-> - Conversely, files labeled by Cloud App Security and uploaded to SharePoint or OneDrive and the label applied encryption by using an account from a service principal name, the files can't be opened in Office on the web. Example scenarios include Cloud App Security and a file sent to Teams by email.
 > - Cloud App Security does not support reading labels of password-protected files.
 
 ## How to integrate Azure Information Protection with Cloud App Security
