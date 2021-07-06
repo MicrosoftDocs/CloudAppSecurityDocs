@@ -200,8 +200,8 @@ To work with MailChimp, add this IP address to your anti-spam allowlist to enabl
 
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
-- Allow the log collector to receive inbound FTP and Syslog traffic.
-- Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
+- Allow the log collector to receive inbound FTP and Syslog traffic as configured for the data sources.
+- Allow the log collector to initiate outbound traffic to the Cloud App Security portal (for example `contoso.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services).
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
   | Data center |                        URL                                 |
@@ -216,7 +216,6 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 >
 > - If your firewall requires a static IP address access list and does not support allowing based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
-> - Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
 > - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## Next steps
