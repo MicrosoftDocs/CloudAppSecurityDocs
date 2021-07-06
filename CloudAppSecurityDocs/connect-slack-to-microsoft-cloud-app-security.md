@@ -40,6 +40,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     >
     > * The first connection can take up to 4 hours to get all users and their activities in the 7 days before the connection.
     > * After the connector’s **Status** is marked as **Connected**, the connector is live and works.
+    > * The received activities are from Slack Audit Log API. You can find them in [Slack docmentation](https://api.slack.com/admins/audit-logs#audit_logs_actions).
+    > * **Send Slack message** activity is an activity that can be recieved from [Conditional Access App Control](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad), and not from Slack API connector.
 
 ## Next steps
 
