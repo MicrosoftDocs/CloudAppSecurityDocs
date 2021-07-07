@@ -122,7 +122,7 @@ You can block access to native mobile and desktop client apps with access polici
 
 ### Session controls
 
-While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), [Google Chrome](https://www.google.com/chrome/) (latest), [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/) (latest), or [Apple Safari](https://www.apple.com/safari/) (latest). Access to mobile and desktop apps can also be blocked or allowed.
+While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), [Google Chrome](https://www.google.com/chrome/) (latest), [Mozilla Firefox](https://www.mozilla.org/firefox/) (latest), or [Apple Safari](https://www.apple.com/safari/) (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
 >
