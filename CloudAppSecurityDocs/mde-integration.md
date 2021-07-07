@@ -114,7 +114,7 @@ Use the following steps to gain more granular visibility on app-related network 
 1. Click on the app you want to investigate to open its drawer.
 1. Click on the app's **Domain** list and then copy the list of domains.
 1. In Microsoft 365 Defender, under **Hunting**, select **Advanced hunting**.
-1. Paste the following query and replace `<DOMAIN_LIST>` with the list of domains you copied earlier.
+1. Paste the following query and replace `<DOMAIN_LIST>` with the list of domains you copied earlier. Make sure to remove any wildcard characters from the domain list (for example `contoso.com` and not `*.contoso.com`.)
 
     ```kusto
     DeviceNetworkEvents
