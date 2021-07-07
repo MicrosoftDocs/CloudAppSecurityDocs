@@ -77,12 +77,13 @@ The process of generating a risk assessment consists of the following steps. The
 - Websense - Web Security Solutions - Investigative detail report (CSV)
 - Websense - Web Security Solutions - Internet activity log (CEF)
 - WatchGuard
+- Wandera
 - Zscaler
 
 > [!NOTE]
 > Cloud Discovery supports both IPv4 and IPv6 addresses.
 
-If your log isn't supported, or if you are using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
+If your log isn't supported, or if you're using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
 
 > [!NOTE]
 > The following list of supported appliances may not work with newly released log formats. If you are using a newly released format and the upload is failing, [use a custom log parser](custom-log-parser.md) and if required, open a support case.
@@ -123,9 +124,10 @@ Data attributes (according to vendor documentation):
 | Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | WatchGuard | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Wandera| **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Zscaler | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 
-\* Versions 8.5 and later of Forcepoint Web Security Cloud are not supported
+\* Versions 8.5 and later of Forcepoint Web Security Cloud aren't supported
 
 ## Next steps
 
