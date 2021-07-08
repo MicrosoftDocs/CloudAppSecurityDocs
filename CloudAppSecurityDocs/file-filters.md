@@ -66,9 +66,9 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **App** – Search only for files within these apps.
 
-- **Collaborators** – Include/exclude specific collaborator groups.
+- **Collaborators** – Include/exclude specific collaborators or groups.
 
-    - **Any from domain** – If any user from this domain has direct access to the file.
+    - **Any from domain** – If any user from this domain has direct access to the file. Note that this filter does not support files that were shared with a group, only with specific collaborators.
 
     - **Entire organization** – If the entire organization has access to the file.
 
