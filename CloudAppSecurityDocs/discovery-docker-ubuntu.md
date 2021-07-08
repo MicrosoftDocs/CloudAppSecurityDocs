@@ -73,7 +73,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     1. Click **Add log collector**.
     1. Give the log collector a **name**.
-    1. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
+    1. Enter the **Host IP address** (private IP address) of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
     1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
     ![Select data sources to connect.](media/ubuntu2.png)

@@ -13,9 +13,9 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 ## Prerequisites
 
 * OS:
-    * Ubuntu 14.04, 16.04, and 18.04
-    * RHEL 7.2 or higher
-    * CentOS 7.2 or higher
+  * Ubuntu 14.04, 16.04, and 18.04
+  * RHEL 7.2 or higher
+  * CentOS 7.2 or higher
 
 * Disk space: 250 GB
 
@@ -76,7 +76,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
     1. Click **Add log collector**.
     1. Give the log collector a **name**.
-    1. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
+    1. Enter the **Host IP address** (private IP address) of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
     1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.  
     ![Select data sources.](media/ubuntu2.png)
 
@@ -271,9 +271,9 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**. 
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
 1. Click the **Create report** button and fill in the fields.
-1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md). 
+1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
      ![Custom continuous report.](media/custom-continuous-report.png)
 
