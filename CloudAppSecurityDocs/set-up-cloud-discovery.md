@@ -68,16 +68,16 @@ The process of generating a risk assessment consists of the following steps. The
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto series Firewall
 - Sonicwall (formerly Dell)
+- Sophos Cyberoam
 - Sophos SG
 - Sophos XG
-- Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)
 - Stormshield
-- Websense - Web Security Solutions - Investigative detail report (CSV)
-- Websense - Web Security Solutions - Internet activity log (CEF)
-- WatchGuard
 - Wandera
+- WatchGuard
+- Websense - Web Security Solutions - Internet activity log (CEF)
+- Websense - Web Security Solutions - Investigative detail report (CSV)
 - Zscaler
 
 > [!NOTE]
@@ -104,7 +104,6 @@ Data attributes (according to vendor documentation):
 | Clavister NGFW (Syslog) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ContentKeeper | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Corrata | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | ForcePoint Web Security Cloud\* |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
@@ -117,17 +116,18 @@ Data attributes (according to vendor documentation):
 | Menlo Security (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |
 | Squid (Common) | **Yes** | No | **Yes** | **Yes** | **Yes** | No |
 | Squid (Native) | **Yes** | No | **Yes** | **Yes** | No | No |
 | Stormshield | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| WatchGuard | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Wandera| **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| WatchGuard | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Zscaler | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 
-\* Versions 8.5 and later of Forcepoint Web Security Cloud aren't supported
+\* Versions 8.5 and later of ForcePoint Web Security Cloud aren't supported
 
 ## Next steps
 
