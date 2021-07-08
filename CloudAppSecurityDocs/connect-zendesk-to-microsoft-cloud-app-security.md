@@ -35,9 +35,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     - Description: **Microsoft Cloud App Security API Connector** (you can also choose another description).
     - Company: **Microsoft Cloud App Security** (you can also choose another company).
     - Unique identifier: **microsoft_cloud_app_security** (you can also choose another unique identifier).
-    - Redirect URLs:
-      - For commercial customers: `https://portal.cloudappsecurity.com/api/oauth/connect`
-      - For US Government GCC High customers: `https://portal.cloudappsecurity.us/api/oauth/connect`
+    - Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
 
         ![Zendesk create API app.](media/zendesk-create-api-app.png)
 
