@@ -85,27 +85,33 @@ After creating the agent, check the SIEM agent page in the Cloud App Security po
 
 Newer versions of Java can cause problems with the SIEM agent. If you've installed Java Runtime Engine (JRE) update 291 or higher, follow these steps:
 
-1. From an elevated PowerShell prompt, download the Azure TLS issuing certificate (CRT file) to a temporary folder.
+1. In an elevated PowerShell prompt, switch to the Java install bin folder.
 
     ```powershell
-    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt" -OutFile "c:\temp\azuretls01.crt"
-    ```
-
-1. Switch to the Java install bin folder.
-
-    ```cmd
     cd "C:\Program Files (x86)\Java\jre1.8.0_291\bin"
     ```
 
-1. Import the CRT file to the Java keystore. The default keystore password is *changeit*.
+1. Download each of the four Azure TLS Issuing CA certificates.
 
-    ```cmd
-    keytool -importcert -file "c:\temp\azuretls01.crt" -keystore ..\lib\security\cacerts -alias azuretls01crt
+    ```powershell
+    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt" -OutFile "$env:temp\azuretls01.crt"
+    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt" -OutFile "$env:temp\azuretls02.crt"
+    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt" -OutFile "$env:temp\azuretls05.crt"
+    Invoke-WebRequest -Uri "https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt" -OutFile "$env:temp\azuretls06.crt"
     ```
 
-1. To verify, view the Java keystore for this Azure TLS issuing CA certificate SHA256 thumbprint: `24:C7:29:98:64:E0:A2:A6:96:4F:55:1C:0E:8D:F2:46:15:32:FA:8C:48:E4:DB:BB:60:80:71:66:91:F1:90:E5`
+1. Import each CA certificate CRT file to the Java keystore, using the default keystore password *changeit*.
 
-    ```cmd
+    ```powershell
+    keytool -importcert -file "$env:temp\azuretls01.crt" -keystore ..\lib\security\cacerts -alias azuretls01crt -storepass changeit
+    keytool -importcert -file "$env:temp\azuretls02.crt" -keystore ..\lib\security\cacerts -alias azuretls02crt -storepass changeit
+    keytool -importcert -file "$env:temp\azuretls05.crt" -keystore ..\lib\security\cacerts -alias azuretls05crt -storepass changeit
+    keytool -importcert -file "$env:temp\azuretls06.crt" -keystore ..\lib\security\cacerts -alias azuretls06crt -storepass changeit
+    ```
+
+1. To verify, view the Java keystore for Azure TLS issuing CA certificate aliases listed above.
+
+    ```powershell
     keytool -list -keystore ..\lib\security\cacerts
     ```
 
