@@ -94,6 +94,8 @@ items:
       href: protect-webex.md
     - name: Protect Workday
       href: protect-workday.md
+    - name: Protect Zendesk (Preview)
+      href: protect-zendesk.md
   - name: Security
     items:
     - name: Security baseline
@@ -192,6 +194,8 @@ items:
       href: connect-webex-to-microsoft-cloud-app-security.md
     - name: Connect Workday
       href: connect-workday-to-microsoft-cloud-app-security.md
+    - name: Connect Zendesk (Preview)
+      href: connect-zendesk-to-microsoft-cloud-app-security.md
   - name: Deploy Conditional Access App Control apps
     items:
     - name: Deploy Conditional Access App Control for featured apps
