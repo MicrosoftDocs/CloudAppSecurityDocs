@@ -63,6 +63,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Slack (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
+| Zendesk (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 
 ### User and app governance
 
@@ -83,6 +84,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Slack (Preview) |  |  |  |
 | Webex             |                                      | Not applicable            | Not applicable            |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
+| Zendesk (Preview) |  |  |  |
 
 ### Information protection
 
@@ -103,6 +105,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Slack (Preview) |  |  | |  | |
 | Webex             | ✔                         | ✔                                        | ✔                         |                           | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
+| Zendesk (Preview) |  |  |  |  |  |
 
 ## Prerequisites
 
