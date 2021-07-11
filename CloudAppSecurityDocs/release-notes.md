@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 06/23/2021
+ms.date: 07/11/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
@@ -19,6 +19,16 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >[!IMPORTANT]
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 205
+
+July 11, 2021
+
+- **Zendesk app connector available in public preview**  
+A new app connector for Zendesk is available in public preview. You can now connect Microsoft Cloud App Security to Zendesk to monitor and protect users and activities. For more information, see [Connect Zendesk](connect-zendesk-to-microsoft-cloud-app-security.md).
+
+- **New Cloud Discovery parser for Wandera**  
+Cloud Discovery in Cloud App Security analyzes a wide range of traffic logs to rank and score apps. Now, Cloud Discovery includes a built-in log parser to support the Wandera format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
 ## Cloud App Security release 204
 
