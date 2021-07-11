@@ -81,7 +81,7 @@ After creating the agent, check the SIEM agent page in the Cloud App Security po
 |**SIEM agent error**|The SIEM agent has been disconnected for more than X hours|Make sure that you didn't change the SIEM configuration in the Cloud App Security portal. Otherwise, this error could indicate connectivity issues between Cloud App Security and the computer on which you're running the SIEM agent.|
 |**SIEM agent notification error**|SIEM agent notification forward errors were received from a SIEM agent.|This error indicates that you've received errors about the connection between the SIEM agent and your SIEM server. Make sure there isn't a firewall blocking your SIEM server or the computer on which you're running the SIEM agent. Also, check that the IP address of the SIEM server wasn't changed. If you've installed Java Runtime Engine (JRE) update 291 or higher, follow the instructions in [Issue with new versions of Java](#issue-with-new-versions-of-java).|
 
-### Issue with new versions of Java
+## Issue with new versions of Java
 
 Newer versions of Java can cause problems with the SIEM agent. If you've installed Java Runtime Engine (JRE) update 291 or higher, follow these steps:
 
