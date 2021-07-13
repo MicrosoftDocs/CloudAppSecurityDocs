@@ -9,6 +9,10 @@ ms.topic: how-to
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 To provide data protection, Microsoft Cloud App Security gives you visibility into all the files from your connected apps. After you connect Microsoft Cloud App Security to an app using the App connector, Microsoft Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it's modified – the modification can be to content, metadata, or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps.
+> [!NOTE]
+> File monitoring should be enabled from the settings. Go to **Settings**, and then under **Information Protection**, select **Files**. Select **Enable file monitoring** and then click **Save**.
+> If there are no active file policies, after 7 days since last file page engagement time, file monitoring becomes disabled.
+> If there are no active file policies,	after 35 days since last file page engagement time, cloud app security starts deleting the data regarding files that was stored.
 
 ## File filter examples
 
