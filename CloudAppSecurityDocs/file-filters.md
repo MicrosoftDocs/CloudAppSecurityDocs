@@ -12,7 +12,7 @@ To provide data protection, Microsoft Cloud App Security gives you visibility in
 > [!NOTE]
 > File monitoring should be enabled in Settings. Go to **Settings**, and then under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.
 > If there are no active file policies, then after seven days since the last file page engagement time, file monitoring becomes disabled.
-> If there are no active file policies,	after 35 days since last file page engagement time, cloud app security starts deleting the data regarding files that was stored.
+> If there are no active file policies, then after 35 days since the last file page engagement time, Cloud App Security begins deleting the data of the stored files.
 
 ## File filter examples
 
