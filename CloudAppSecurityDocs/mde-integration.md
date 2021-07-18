@@ -62,6 +62,7 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 
     ![Defender for Endpoint alert settings.](media/mde-alert-severity-settings.png)
 
+<<<<<<< HEAD
 ## Investigate devices in Cloud App Security
 
 After you integrate Defender for Endpoint with Cloud App Security, you can investigate discovered device data in the Cloud Discovery dashboard.
@@ -167,11 +168,15 @@ Sometimes, access to an unsanctioned app is not blocked, either because the endp
 > - In-browser notifications may vary between different browsers.
 
 ## Next steps
+=======
+## Related videos
+>>>>>>> 39ba7793f8fe622dbefccb0cba290b7cbe438084
 
 > [!div class="nextstepaction"]
-> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [Investigate apps discovered by Microsoft Defender for Endpoint](mde-investigation.md)
 
-## Related videos
+> [!div class="nextstepaction"]
+> [Govern apps discovered by Microsoft Defender for Endpoint](mde-govern.md)
 
 > [!div class="nextstepaction"]
 > [Discover and block Shadow IT using Defender for Endpoint](https://www.youtube.com/watch?v=MsHkTOoqSQo)
