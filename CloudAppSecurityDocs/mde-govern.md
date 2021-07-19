@@ -36,7 +36,7 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable blocking with Defender for Endpoint](media/mde-integration.png)
 
-1. In Microsoft Defender Security Center, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview).
+1. In Microsoft Defender Security Center, go to **Settings** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](https://review.docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-ip-domain?view=o365-worldwide&branch=warn-educate).
 
     This allows you to leverage Microsoft Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Cloud App Security, either by manually assigning [app tags](governance-discovery.md#BKMK_SanctionApp) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
@@ -44,11 +44,11 @@ Use the following steps to enable access control for cloud apps:
 
 ## Educate users when accessing risky apps
 
-Admins have the option to warn users when they access risky apps. Rather than blocking users, they are prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provide and options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
+Admins have the option to warn users when they access risky apps. Rather than blocking users, they are prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provides options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
 
 ### How does it work
 
-Cloud App Security uses the built-in **Monitored** app tag to mark cloud apps as risky for use. The tag is available on both the Cloud Discovery and Cloud App Catalog pages. By enabling the integration with Defender for Endpoint, you can seamlessly warn users on access to monitored apps with a single click the Cloud App Security.
+Cloud App Security uses the built-in **Monitored** app tag to mark cloud apps as risky for use. The tag is available on both the Cloud Discovery and Cloud App Catalog pages. By enabling the integration with Defender for Endpoint, you can seamlessly warn users on access to monitored apps with a single click in the Cloud App Security portal.
 
 Apps marked as **Monitored** are automatically synced to Defender for Endpoint's custom URL indicators, usually within a few minutes. More specifically, the domains used by monitored apps are propagated to endpoint devices to provide a warning message by Microsoft Defender Antivirus within the Network Protection SLA.
 
@@ -75,7 +75,7 @@ Since users can bypass the warning message, you can use the following steps to c
 Once controls are applied, you can monitor app usage patterns by the applied controls (access, block, bypass) using the following steps.
 
 1. In Cloud App Security, under **Discovery** > **Discovered apps**, use the [filters](discovered-app-queries.md) to find the relevant monitored app.
-1. Click on the app's name to view applied app controls on the app's overview page.
+1. Select the app's name to view applied app controls on the app's overview page.
 
     ![Screenshot showing how to monitor applied controls](media/mde-educate-applied-controls-overview.png)
 

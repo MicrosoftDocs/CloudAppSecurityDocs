@@ -62,7 +62,7 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 
     ![Defender for Endpoint alert settings.](media/mde-alert-severity-settings.png)
 
-## Related videos
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Investigate apps discovered by Microsoft Defender for Endpoint](mde-investigation.md)

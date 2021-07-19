@@ -14,11 +14,11 @@ Microsoft Cloud App Security's [integration with Microsoft Defender for Endpoint
 
 After you integrate Defender for Endpoint with Cloud App Security, you can investigate discovered device data in the Cloud Discovery dashboard.
 
-1. In Cloud App Security, click **Cloud Discovery** and then **Cloud Discovery dashboard**.
+1. In Cloud App Security, select **Cloud Discovery** and then **Cloud Discovery dashboard**.
 2. In the top navigation bar, under **Continuous reports**, select **Win10 endpoint users**.
   ![Defender for Endpoint report](media/win10-dashboard-report.png)
 3. Across the top, you'll see the number of discovered devices added after the integration.
-4. Click the **Devices** tab.
+4. Select the **Devices** tab.
 5. You can drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
 
     - **Overview**
@@ -48,7 +48,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 Use the following steps to gain more granular visibility on device's network activity in Microsoft Defender for Endpoint:
 
 1. In Cloud App Security, under **Discovery** and then select **Devices**.
-1. Select the machine you want to investigate and then in the top-right click **View in Microsoft Defender for Endpoint**.
+1. Select the machine you want to investigate and then in the top-right select **View in Microsoft Defender for Endpoint**.
 1. In Microsoft Defender Security Center, under **Devices** > {selected device}, select **Timeline**.
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
@@ -59,9 +59,9 @@ Use the following steps to gain more granular visibility on device's network act
 
 Use the following steps to gain more granular visibility on app-related network events in Defender for Endpoint:
 
-1. In Cloud App Security, under **Discovery** and then select **Discovered apps**.
-1. Click on the app you want to investigate to open its drawer.
-1. Click on the app's **Domain** list and then copy the list of domains.
+1. In Cloud App Security, under **Discovery** select **Discovered apps**.
+1. Select the app you want to investigate to open its drawer.
+1. Select the app's **Domain** list and then copy the list of domains.
 1. In Microsoft Defender Security Center, under **Devices**, select **Advanced hunting**.
 1. Paste the following query and replace `<DOMAIN_LIST>` with the list of domains you copied earlier.
 
@@ -79,7 +79,7 @@ Use the following steps to gain more granular visibility on app-related network 
 
 Every attempt to access an unsanctioned app triggers an alert in Microsoft Defender Security Center with in-depth details about the entire session. This enables you to perform deeper investigations into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
 
-Sometimes, access to an unsanctioned app is not blocked, either because the endpoint device is not configured correctly or if the enforcement policy has not yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft Defender Security Center that the unsanctioned app was not blocked.
+Sometimes, access to an unsanctioned app isn't blocked, either because the endpoint device isn't configured correctly or if the enforcement policy hasn't yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft Defender Security Center that the unsanctioned app wasn't blocked.
 
 ![Screenshot showing Defender for Endpoint unsanctioned app alert](media/mde-unsanctioned-app-alert.png)
 
