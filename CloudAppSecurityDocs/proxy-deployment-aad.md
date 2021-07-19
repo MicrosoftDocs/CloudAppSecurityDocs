@@ -58,7 +58,7 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 
 1. Under **Assignments**, select **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then select **Done**.
 
-1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then select **Select**.
+1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only (Preview)** or **Block downloads (Preview)**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then select **Select**.
 
     ![Azure AD conditional access.](media/azure-ad-caac-policy.png)
 
@@ -129,6 +129,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
         >
         > - Some providers may refer to them as *User attributes* or *Claims*.
         > - When creating a new SAML app, the Okta Identity Provider limits attributes to 1024 characters. To mitigate this limitation, first create the app without the relevant attributes. After creating the app, edit it, and then add the relevant attributes.
+        >
     1. Verify that the name identifier is in the email address format.
     1. Save your settings.
 1. On the **APP CHANGES** page, do the following, and then select **Next**. You'll need the information in the next step.
