@@ -70,6 +70,8 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 > [!div class="nextstepaction"]
 > [Govern apps discovered by Microsoft Defender for Endpoint](mde-govern.md)
 
+## Related videos
+
 > [!div class="nextstepaction"]
 > [Discover and block Shadow IT using Defender for Endpoint](https://www.youtube.com/watch?v=MsHkTOoqSQo)
 
