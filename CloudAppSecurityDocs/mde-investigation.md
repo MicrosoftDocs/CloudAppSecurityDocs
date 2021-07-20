@@ -45,6 +45,9 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 ## Investigate device network events in Microsoft Defender Security Center
 
+>[!NOTE]
+>Network events should be used to investigate discovered apps and not used to debug missing data.
+
 Use the following steps to gain more granular visibility on device's network activity in Microsoft Defender for Endpoint:
 
 1. In Cloud App Security, under **Discovery** and then select **Devices**.
