@@ -27,7 +27,7 @@ The activities API mode is optimized for scanning and retrieval of large quantit
 - "sortDirection": The sorting direction, possible values are "asc" and "desc"
 - "sortField": Fields used to sort activities. Possible values are:
   - date - The date when then the activity occurred (this is the default).
-  - created - The timestamp when the activity was saved.
+  - created - The [timestamp](api-introduction.md#timestamps) when the activity was saved.
 - "limit": Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data.
 
 ## Response parameters

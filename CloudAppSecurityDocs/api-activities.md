@@ -45,7 +45,7 @@ The following table describes the supported filters:
 | ip.category | integer | eq, neq | Filter activities with the specified subnet categories. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
 | ip.tags | string | eq, neq | Filter activities by IP tag IDs |
 | text | string | eq, startswithsingle, text | Filter activities by performing a free text search |
-| date | timestamp | lte, gte, range, lte_ndays, gte_ndays | Filter activities that occurred in the specified time range |
+| date | [timestamp](api-introduction.md#timestamps) | lte, gte, range, lte_ndays, gte_ndays | Filter activities that occurred in the specified time range |
 | policy | string | eq, neq, isset, isnotset | Filter activities related to the specified policies |
 | source | string | eq, neq | Filter all activities by source type or stream ID. Example: `[{ "s:stream-id", "t:source-type" }]` Possible source type values include:<br /><br />**0**: Access control<br />**1**: Session control<br />**2**: App connector<br />**3**: App connector analysis<br />**5**: Discovery<br />**6**: MDATP |
 | activity.alertId | string | eq | Filter all activities relevant to an alert ID |
