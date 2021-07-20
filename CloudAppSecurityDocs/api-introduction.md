@@ -77,7 +77,7 @@ The following table describes the supported field types:
 |integer|32-bit signed integer|
 |timestamp|Milliseconds since epoch|
 
-## Limits
+## Limits 
 
 You can choose to limit your requests by providing a limit parameter in the request.
 
