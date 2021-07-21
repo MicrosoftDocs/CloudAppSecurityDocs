@@ -43,7 +43,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 > - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
 > - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoints and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Cloud App Security using the **Automated log upload** in order to get complete visibility. For an alternative way to view this traffic and investigate accessed URLs by devices behind the forward proxy, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274).
 
-## Investigate device network events in Microsoft Defender Security Center
+## Investigate device network events in Microsoft 365 Defender
 
 >[!NOTE]
 >Network events should be used to investigate discovered apps and not used to debug missing data.
@@ -52,20 +52,20 @@ Use the following steps to gain more granular visibility on device's network act
 
 1. In Cloud App Security, under **Discovery** and then select **Devices**.
 1. Select the machine you want to investigate and then in the top-right select **View in Microsoft Defender for Endpoint**.
-1. In Microsoft Defender Security Center, under **Devices** > {selected device}, select **Timeline**.
+1. In Microsoft 365 Defender, under **Devices** > {selected device}, select **Timeline**.
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
 
-![Screenshot showing device timeline in Microsoft Defender Security Center](media/mde-selected-device.png)
+![Screenshot showing device timeline in Microsoft 365 Defender](media/mde-selected-device.png)
 
-## Investigate app usage in Microsoft Defender Security Center with advanced hunting
+## Investigate app usage in Microsoft 365 Defender with advanced hunting
 
 Use the following steps to gain more granular visibility on app-related network events in Defender for Endpoint:
 
 1. In Cloud App Security, under **Discovery** select **Discovered apps**.
 1. Select the app you want to investigate to open its drawer.
 1. Select the app's **Domain** list and then copy the list of domains.
-1. In Microsoft Defender Security Center, under **Devices**, select **Advanced hunting**.
+1. In Microsoft 365 Defender, under **Devices**, select **Advanced hunting**.
 1. Paste the following query and replace `<DOMAIN_LIST>` with the list of domains you copied earlier.
 
     ```kusto
@@ -76,13 +76,13 @@ Use the following steps to gain more granular visibility on app-related network 
 
 1. Run the query and investigate network events for this app.
 
-![Screenshot showing Microsoft Defender Security Center advanced hunting](media/mde-advanced-hunting.png)
+![Screenshot showing Microsoft 365 Defender advanced hunting](media/mde-advanced-hunting.png)
 
-## Investigate unsanctioned apps in Microsoft Defender Security Center
+## Investigate unsanctioned apps in Microsoft 365 Defender
 
-Every attempt to access an unsanctioned app triggers an alert in Microsoft Defender Security Center with in-depth details about the entire session. This enables you to perform deeper investigations into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
+Every attempt to access an unsanctioned app triggers an alert in Microsoft 365 Defender with in-depth details about the entire session. This enables you to perform deeper investigations into attempts to access unsanctioned apps, as well as providing additional relevant information for use in endpoint device investigation.
 
-Sometimes, access to an unsanctioned app isn't blocked, either because the endpoint device isn't configured correctly or if the enforcement policy hasn't yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft Defender Security Center that the unsanctioned app wasn't blocked.
+Sometimes, access to an unsanctioned app isn't blocked, either because the endpoint device isn't configured correctly or if the enforcement policy hasn't yet propagated to the endpoint. In this instance, Defender for Endpoint administrators will receive an alert in Microsoft 365 Defender that the unsanctioned app wasn't blocked.
 
 ![Screenshot showing Defender for Endpoint unsanctioned app alert](media/mde-unsanctioned-app-alert.png)
 
