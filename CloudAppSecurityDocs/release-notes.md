@@ -20,6 +20,13 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
 
+## Cloud App Security release 206
+
+July 25, 2021
+
+- **New Cloud Discovery Open Systems log parser**  
+Cloud App Security's Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support the Open Systems format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
 ## Cloud App Security release 205
 
 July 11, 2021
