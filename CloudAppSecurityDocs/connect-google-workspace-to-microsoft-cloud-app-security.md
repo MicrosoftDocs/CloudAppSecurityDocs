@@ -134,7 +134,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     Testing may take a couple of minutes.  
     After receiving a success notice, click **Done** and close the Google Workspace page.
 
-After connecting Google Workspace, you'll receive events for 60 days prior to connection.
+After connecting Google Workspace, you'll receive events for 7 days prior to connection.
 
 After connecting Google Workspace, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activity is detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away. This doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned during the regular scan.
 
