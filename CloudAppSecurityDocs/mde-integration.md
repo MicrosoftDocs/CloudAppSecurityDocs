@@ -44,9 +44,10 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 To enable Defender for Endpoint integration with Cloud App Security:
 
 1. In [Microsoft 365 Defender](https://security.microsoft.com/), from the navigation pane, select **Settings**.
-2. Under **General**, select **Advanced features**.
-3. Toggle the **Microsoft Cloud App Security** to **On**.
-4. Click **Apply**.
+2. Select **Endpoints**.
+3. Under **General**, select **Advanced features**.
+4. Toggle the **Microsoft Cloud App Security** to **On**.
+5. Click **Apply**.
 
     >[!NOTE]
     > It takes up to two hours after you enable the integration for the data to show up in Cloud App Security.
