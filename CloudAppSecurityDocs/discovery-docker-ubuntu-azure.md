@@ -275,6 +275,9 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 1. Click the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
+    >[!NOTE]
+    >When applying filters on continuous reports, the selection will be included, not excluded. For example, if you apply a filter on a certain user group, only that user group will be included in the report.
+
      ![Custom continuous report.](media/custom-continuous-report.png)
 
 ## Next steps
