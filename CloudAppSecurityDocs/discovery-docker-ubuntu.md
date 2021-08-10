@@ -225,7 +225,7 @@ The following steps describe the deployment in Ubuntu.
 
     ![Create log collector.](media/windows7.png)
 
-1. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
+6. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
 You should see the message: **Finished successfully!**
 ![Command to verify that docker is running properly.](media/ubuntu8.png)
@@ -261,7 +261,10 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 1. Click the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
-![Custom continuous report.](media/custom-continuous-report.png)
+    >[!NOTE]
+    >When applying filters on continuous reports, the selection will be included, not excluded. For example, if you apply a filter on a certain user group, only that user group will be included in the report.
+
+    ![Custom continuous report.](media/custom-continuous-report.png)
 
 ## Next steps
 
