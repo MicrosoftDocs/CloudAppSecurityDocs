@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 07/11/2021
+ms.date: 08/11/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
@@ -19,6 +19,15 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >[!IMPORTANT]
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 207
+
+August 8, 2021
+
+- **Warn and educate users on access to risky apps**  
+Cloud App Security has extended its native integration with Microsoft Defender for Endpoint (MDE). You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
+  - [Warn and educate users on risky app usage](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/warn-and-educate-users-on-risky-app-usage/ba-p/2630982)
+  - [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md)
 
 ## Cloud App Security release 206
 
