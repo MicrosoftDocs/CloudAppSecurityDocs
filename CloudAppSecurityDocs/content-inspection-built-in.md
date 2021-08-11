@@ -15,7 +15,7 @@ Cloud App Security content inspection works as follows:
 1. First, Cloud App Security performs Near Real-Time (NRT) scan of drives and events that are detected to be new or changed.
 2. After that scan is complete, Cloud App Security performs a continuous scan of all relevant files in all drives.
 
-Both the files in the NRT scan and the continuous scan are added to the queue for inspection. The order of the files in the scan queue is set per activity on files and on the scan of your drives. Files are scanned only if the file metadata shows it's a supported MIME type. That this scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files).
+Both the files in the NRT scan and the continuous scan are added to the queue for inspection. The order of the files in the scan queue is set per activity on files and on the scan of your drives. The file contents are scanned only if the file metadata shows it's a supported MIME type (documents, presentations, spreadsheets, text, and zip/archive files).
 
 After a file is scanned, the following actions occur:
 
