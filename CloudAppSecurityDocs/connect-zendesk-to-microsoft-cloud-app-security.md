@@ -45,6 +45,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 ### Configure Cloud App Security
 
+>[!NOTE]
+>The Zendesk user that is configuring the integration must always remain a Zendesk admin, even after the connector is installed.
+
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, select the plus button followed by **Zendesk**.

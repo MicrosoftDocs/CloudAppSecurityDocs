@@ -77,6 +77,10 @@ The following table describes the supported field types:
 |integer|32-bit signed integer|
 |timestamp|Milliseconds since epoch|
 
+### Timestamps
+
+Mentions of timestamps in the Cloud App Security API refer to the Unix timestamp in milliseconds. This timestamp is determined by the number of milliseconds since 1970-01-01 0:00:00. You can use the [get-date](/powershell/module/microsoft.powershell.utility/get-date) PowerShell cmdlet to convert dates to timestamps.
+
 ## Limits
 
 You can choose to limit your requests by providing a limit parameter in the request.

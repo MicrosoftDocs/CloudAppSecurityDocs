@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps. The apps are ranked and scored based on more than 80 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 22,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
 ## Snapshot and continuous risk assessment reports
 
@@ -66,6 +66,7 @@ The process of generating a risk assessment consists of the following steps. The
 - McAfee Secure Web Gateway
 - Menlo Security (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
+- Open Systems format
 - Palo Alto series Firewall
 - Sonicwall (formerly Dell)
 - Sophos Cyberoam
@@ -115,6 +116,7 @@ Data attributes (according to vendor documentation):
 | McAfee SWG | **Yes** | No | No | **Yes** | **Yes** | **Yes** |
 | Menlo Security (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
+| Open Systems format | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |

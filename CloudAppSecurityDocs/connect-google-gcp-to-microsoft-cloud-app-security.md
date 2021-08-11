@@ -36,7 +36,6 @@ Follow these steps to connect GCP Security auditing to Cloud App Security.
 >
 > - [Configure Google Cloud Platform](#configure-google-cloud-platform)
 > - [Connect Google Cloud Platform auditing to Cloud App Security](#connect-google-cloud-platform-auditing-to-cloud-app-security)
-> - [Aggregated export sink](#aggregated-export-sink)
 
 ### Configure Google Cloud Platform
 
@@ -155,19 +154,6 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
-### Aggregated export sink
-
-Disabling aggregated export sink is currently only possible via Google Cloud Shell.
-
-#### To disable aggregated export sink
-
-| Step | Script | For more information |
-|-|-|-|
-| 1. Start a Google Cloud Shell session. | | [Using Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
-| 2. Set the current project. | `gcloud config set project {PROJECT_ID}` | [gcloud config set](https://cloud.google.com/sdk/gcloud/reference/config/set) |
-| 3. List the organization-level sinks. | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud logging sinks list](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
-| 4. Delete the relevant sink. | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud logging sinks delete](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
-
 ## How to connect GCP security configuration to Cloud App Security
 
 Connecting GCP security configuration gives you insights into fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for GCP.
@@ -189,7 +175,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 
     > [!NOTE]
     >
-    > - The instructions for connecting your GCP environment for security configuration follow [Google's recommendations](https://cloud.google.com/security-command-center/docs/how-to-notifications#enable-scc-api) for consuming security configuration recommendations. The integration leverages Google Security Command Center and will consume additional resources that might impact your billing.
+    > - The instructions for connecting your GCP environment for security configuration follow [Google's recommendations](https://cloud.google.com/security-command-center/docs/how-to-notifications#enable-scc-api) for consuming security configuration recommendations. The integration leverages Google Security Command Center and will consume **additional resources** that might impact your billing.
     > - When you first enable Security Health Analytics, it may take several hours for data to be available.
 
 ### Enable Security Command Center API
