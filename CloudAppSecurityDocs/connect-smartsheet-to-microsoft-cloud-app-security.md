@@ -1,7 +1,7 @@
 ---
 title: Connect Smartsheet to Cloud App Security (Preview)
 description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Smartsheet using the App Connector APIs. 
-ms.date: 15/08/2021
+ms.date: 08/12/2021
 ms.topic: how-to
 ---
 # Connect Smartsheet to Microsoft Cloud App Security (Preview)
@@ -21,18 +21,18 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ### Configure Smartsheet
 
 1. Register to add **Developer Tools** to your existing Smartsheet account:
-    - Add your Smartsheet mail [here](https://developers.smartsheet.com/register/).
+    1. Add your Smartsheet mail [here](https://developers.smartsheet.com/register/).
 
-    ![Smartsheet_register_to_developer_tools.](media/Smartsheet_register_to_developer_tools.png)
-    - Enter your mailbox and activate your Developer Tools by clicking the activation mail.
-    - In the redirected screen in Smartsheet click **Create Developer Profile**, fill your name and mail, click **Save**, and then **Close**. 
-    ![Smartsheet_create_developer_tools.](media/Smartsheet_create_developer_tools.png)
+        ![Smartsheet_register_to_developer_tools.](media/smartsheet-register-to-developer-tools.png)
+    1. Enter your mailbox and activate your Developer Tools by clicking the activation mail.
+    1. In the redirected screen in Smartsheet select **Create Developer Profile**, fill your name and mail, select **Save**, and then **Close**.
+    ![Smartsheet_create_developer_tools.](media/smartsheet-create-developer-tools.png)
 
-2. In Smartsheet enter to **Developer Tools**:
-![Smartsheet_entering_developer_tools.](media/Smartsheet_entering_developer_tools.png)
+2. In Smartsheet, enter **Developer Tools**:
+![Smartsheet_entering_developer_tools.](media/smartsheet-entering-developer-tools.png)
 
-3. In Developer Tools, click **Create New App**:
-![Smartsheet_developer_tools.](media/Smartsheet_developer_tools.png)
+3. In **Developer Tools**, select **Create New App**:
+![Smartsheet_developer_tools.](media/smartsheet-developer-tools.png)
 
 4. In the new app creation page, fill the following:
     - App name: **Microsoft Cloud App Security** (you can also choose another name).
@@ -42,10 +42,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
     - App Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
     - Publish app: **Yes**.
     - Logo: keep empty.
-![Smartsheet_OAuth_app_creation.](media/Smartsheet_OAuth_app_creation.png)
+![Smartsheet_OAuth_app_creation.](media/smartsheet-oauth-app-creation.png)
 
-5. Click **Save**, and copy the **App client id** and **App secret** that was generated. You will need it in the following steps.
-
+5. Select **Save**, and copy the **App client id** and **App secret** that was generated. You'll need it in the following steps.
 
 ### Configure Cloud App Security
 
@@ -58,12 +57,12 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 3. In the pop-up, give the connector a descriptive name, and press **Connect Smartsheet**.
 
-    ![Connect_Smartsheet.](media/connect_Smartsheet.png)
+    ![Connect_Smartsheet.](media/connect-smartsheet.png)
 
 4. In the next screen, enter the following fields:
 
-    - **Client ID**: the app client id that you have saved.
-    - **Client Secret**: the app secret that you have saved.
+    - **Client ID**: the app client id that you've saved.
+    - **Client Secret**: the app secret that you've saved.
 
 5. Select **Connect in Smartsheet**.
 6. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
@@ -71,15 +70,14 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 8. After the connector’s **Status** is marked as **Connected**, the connector is live and works.
 
 ## Activities limitations
-- Login/Logouts activities are not supported by Smartsheet.
-- Smartsheet activities does not contain IP addresses.
-- System activities will be shown with the **Smartsheet** account name.
 
+- Login/Logouts activities are not supported by Smartsheet.
+- Smartsheet activities don't contain IP addresses.
+- System activities will be shown with the **Smartsheet** account name.
 
 ## Rate limits
 
 The default rate limit is 300 requests per minute. For more information, see [Smartsheet documentation](https://smartsheet.redoc.ly/#section/Work-at-Scale/Rate-Limiting).
-
 
 ## Next steps
 
