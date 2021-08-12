@@ -42,7 +42,7 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/mde-custom-network-indicators.png)
 
-## Educate users when accessing risky apps
+## Educate users when accessing risky apps (public preview)
 
 Admins have the option to warn users when they access risky apps. Rather than blocking users, they are prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provides options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
 

@@ -24,7 +24,7 @@ Starting in early July 2021, we will change our access endpoint from `<mcas-dc-i
 
 August 8, 2021
 
-- **New warn experience for monitored apps with Microsoft Defender for Endpoint**  
+- **New warn experience for monitored apps with Microsoft Defender for Endpoint (public preview)**  
 Cloud App Security has extended its native integration with Microsoft Defender for Endpoint (MDE). You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
   - [Warn and educate users on risky app usage](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/warn-and-educate-users-on-risky-app-usage/ba-p/2630982)
   - [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md)
