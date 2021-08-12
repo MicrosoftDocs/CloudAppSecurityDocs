@@ -101,7 +101,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
 
-1. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
+1. In the policy report, you can see which logins were redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
 
 ## Next steps
 
