@@ -29,10 +29,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. Select menu, go to **APIs & Services** > **Library** and enable the following APIs (use the search line if the API isn't listed):
 
     - Admin SDK API
-
-    - Audit API
     - Google Drive API
-    - Google Workspace Marketplace SDK
 
     > [!NOTE]
     > For each API, click **Enable** to active it.
@@ -44,10 +41,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. Select menu, go to **APIs & Services** > **Dashboard**, and make sure you have the following APIs enabled:
 
     - Admin SDK API
-
-    - Audit API
     - Google Drive API
-    - Google Workspace Marketplace SDK
 
 1. In the **OAuth consent page** page, do the following:
     1. Under **User Type**, choose **External**, and then click **Create**.
