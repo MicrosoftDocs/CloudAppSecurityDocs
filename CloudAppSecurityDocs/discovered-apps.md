@@ -166,3 +166,6 @@ To delete Cloud Discovery data:
 
 > [!div class="nextstepaction"]
 > [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+
+> [!div class="nextstepaction"]
+> [Discover apps using Microsoft Defender for Endpoint's integration](mde-integration.md)
