@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 07/11/2021
+ms.date: 08/11/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
@@ -19,6 +19,15 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >[!IMPORTANT]
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 207
+
+August 8, 2021
+
+- **New warn experience for monitored apps with Microsoft Defender for Endpoint (public preview)**  
+Cloud App Security has extended its native integration with Microsoft Defender for Endpoint (MDE). You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
+  - [Warn and educate users on risky app usage](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/warn-and-educate-users-on-risky-app-usage/ba-p/2630982)
+  - [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md)
 
 ## Cloud App Security release 206
 
@@ -278,7 +287,7 @@ We've expanded our session controls to detect potential malware using Microsoft 
 Access and session controls support for SAML apps configured with any identity provider is now generally available. For information about configuring these controls, see the [Deployment guide](proxy-deployment-aad.md).
 
 - **Risky machine investigation enhancement**  
-Cloud App Security provides the ability to identify risky machines as part of your shadow IT discovery investigation. Now, we've added the Microsoft Defender Advanced Threat Protection **Machine risk level** to the **machines** page giving analysts more context when investigating machines in your organization. For more information, see [Investigate devices in Cloud App Security](mde-integration.md#investigate-devices-in-cloud-app-security).
+Cloud App Security provides the ability to identify risky machines as part of your shadow IT discovery investigation. Now, we've added the Microsoft Defender Advanced Threat Protection **Machine risk level** to the **machines** page giving analysts more context when investigating machines in your organization. For more information, see [Investigate devices in Cloud App Security](mde-investigation.md).
 
 - **New feature: Self-service disable app connector (gradual rollout)**  
 We've added the ability to disable app connectors directly in Cloud App Security. For more information, see [Disable app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
@@ -408,7 +417,7 @@ Cloud App Security session controls now includes support for the new Microsoft E
 Released February 16, 2020
 
 - **New block unsanctioned apps with Microsoft Defender ATP**  
-Cloud App Security has extended its native integration with Microsoft Defender Advanced Threat Protection (ATP). You can now block access to apps marked as unsanctioned using Microsoft Defender ATP's network protection capability. For more information, see [Block access to unsanctioned cloud apps](mde-integration.md#block-access-to-unsanctioned-cloud-apps).
+Cloud App Security has extended its native integration with Microsoft Defender Advanced Threat Protection (ATP). You can now block access to apps marked as unsanctioned using Microsoft Defender ATP's network protection capability. For more information, see [Block access to unsanctioned cloud apps](mde-govern.md).
 
 - **New OAuth app anomaly detection**  
 We've expanded our current capability to detect malicious OAuth app consent. The new detection is now available out-of-the-box and automatically enabled to alert you when a potentially malicious OAuth app is authorized in your environment. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.
