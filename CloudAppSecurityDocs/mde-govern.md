@@ -44,6 +44,9 @@ Use the following steps to enable access control for cloud apps:
 
 ## Educate users when accessing risky apps (public preview)
 
+>[!NOTE]
+> **Prerequisite**: Opt in to the public preview feature in Microsoft Defender for Endpoint. For more information, see [Microsoft Defender for Endpoint preview features](/microsoft-365/security/defender-endpoint/preview).
+
 Admins have the option to warn users when they access risky apps. Rather than blocking users, they are prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provides options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
 
 ### How does it work
