@@ -24,6 +24,11 @@ As a security admin, you need visibility and control over the apps in your envir
 
 Our recommended approach is to investigate the apps by using the abilities and information provided in the Cloud App Security portal to filter out apps with a low chance of being risky, and focus on the suspicious apps.
 
+>[!NOTE]
+>Try the new app governance add-on to Microsoft Cloud App Security to get deeper protection, app usage insights, governance, and remediation capabilities for apps that directly access M365 app customer data. For more information, see [App governance add-on to Microsoft Cloud App Security (in preview)](/microsoft-365/compliance/app-governance-manage-app-governance).
+>
+>Learn about [customer eligibility](/microsoft-365/compliance/app-governance-get-started) and [sign up for a free trial here](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
+
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
