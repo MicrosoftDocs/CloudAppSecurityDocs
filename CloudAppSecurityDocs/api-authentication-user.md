@@ -88,14 +88,14 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Supported permission scopes
 
-| Permission name      | Supported actions                                            |
-| -------------------- | ------------------------------------------------------------ |
-| Investigation.read   | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unreadEntities list, fetch, fetch treeSubnet list |
-| Investigation.manage | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unread, closeEntities list, fetch, fetch treeSubnet list, create/update/delete |
-| Discovery.read       | Alerts list, fetch, mark as read/unreadDiscovery list reports, list report categories |
-| Discovery.manage     | Alerts list, fetch, mark as read/unread, closeDiscovery list reports, list report categoriesDiscovery file upload, generate block script |
-| Settings.read        | Subnet list                                                  |
-| Settings.manage      | Subnet list, create/update/delete                            |
+| Permission name      | Description                                                  | Supported actions                                            |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Investigation.read   | Perform all supported actions on activities and alerts except closing alerts.<br />View IP ranges but not add, update or delete.<br /><br />Perform all entities actions. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread<br />Entities list, fetch, fetch tree<br />Subnet list |
+| Investigation.manage | Perform all investigation.read actions in addition to managing alerts and IP ranges. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread, close<br />Entities list, fetch, fetch tree<br />Subnet list, create/update/delete |
+| Discovery.read       | Perform all supported actions on activities and alerts except closing alerts.<br />List discovery reports and categories. | Alerts list, fetch, mark as read/unread<br />Discovery list reports, list report categories |
+| Discovery.manage     | Discovery.read permissions<br />Close alerts, upload discovery files and generate block scripts | Alerts list, fetch, mark as read/unread, close<br />Discovery list reports, list report categories<br />Discovery file upload, generate block script |
+| Settings.read        | List IP ranges.                                              | Subnet list                                                  |
+| Settings.manage      | List and manage IP ranges.                                   | Subnet list, create/update/delete                            |
 
 ## Get an access token
 
@@ -113,29 +113,29 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
         using System.Text;
         using System.Threading.Tasks;
         using Newtonsoft.Json.Linq;
-
+    
         public static class MCASUtils
         {
             private const string Authority = "https://login.microsoftonline.com";
-
+    
             private const string MCASId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
-
+    
             public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
             {
                 using (var httpClient = new HttpClient())
                 {
                     var urlEncodedBody = $"resource={MCASId}&client_id={appId}&grant_type=password&username={username}&password={password}";
-
+    
                     var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
-
+    
                     using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
                     {
                         response.EnsureSuccessStatusCode();
-
+    
                         var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-
+    
                         var jObject = JObject.Parse(json);
-
+    
                         return jObject["access_token"].Value<string>();
                     }
                 }
@@ -164,13 +164,13 @@ Verify to make sure you got a correct token:
 
     ```csharp
     var httpClient = new HttpClient();
-
+    
     var request = new HttpRequestMessage(HttpMethod.Get, "https://portal.cloudappsecurity.com/cas/api/v1/alerts/");
-
+    
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
-
+    
     var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
-
+    
     // Do something useful with the response
     ```
 

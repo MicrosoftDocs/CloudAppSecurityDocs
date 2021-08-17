@@ -85,14 +85,14 @@ This article explains how to create an Azure AD application, get an access token
 
 ## Supported permission scopes
 
-| Permission name      | Supported actions                                            |
-| -------------------- | ------------------------------------------------------------ |
-| Investigation.read   | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unreadEntities list, fetch, fetch treeSubnet list |
-| Investigation.manage | Activities list, fetch, feedbackAlerts list, fetch, mark as read/unread, closeEntities list, fetch, fetch treeSubnet list, create/update/delete |
-| Discovery.read       | Alerts list, fetch, mark as read/unreadDiscovery list reports, list report categories |
-| Discovery.manage     | Alerts list, fetch, mark as read/unread, closeDiscovery list reports, list report categoriesDiscovery file upload, generate block script |
-| Settings.read        | Subnet list                                                  |
-| Settings.manage      | Subnet list, create/update/delete                            |
+| Permission name      | Description                                                  | Supported actions                                            |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Investigation.read   | Perform all supported actions on activities and alerts except closing alerts.<br />View IP ranges but not add, update or delete.<br /><br />Perform all entities actions. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread<br />Entities list, fetch, fetch tree<br />Subnet list |
+| Investigation.manage | Perform all investigation.read actions in addition to managing alerts and IP ranges. | Activities list, fetch, feedback<br />Alerts list, fetch, mark as read/unread, close<br />Entities list, fetch, fetch tree<br />Subnet list, create/update/delete |
+| Discovery.read       | Perform all supported actions on activities and alerts except closing alerts.<br />List discovery reports and categories. | Alerts list, fetch, mark as read/unread<br />Discovery list reports, list report categories |
+| Discovery.manage     | Discovery.read permissions<br />Close alerts, upload discovery files and generate block scripts | Alerts list, fetch, mark as read/unread, close<br />Discovery list reports, list report categories<br />Discovery file upload, generate block script |
+| Settings.read        | List IP ranges.                                              | Subnet list                                                  |
+| Settings.manage      | List and manage IP ranges.                                   | Subnet list, create/update/delete                            |
 
 ## Get an access token
 
