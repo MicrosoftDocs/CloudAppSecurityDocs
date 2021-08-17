@@ -8,9 +8,14 @@ ms.topic: tutorial
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+>[!NOTE]
+>Try the new app governance add-on to Microsoft Cloud App Security to get deeper protection, app usage insights, governance, and remediation capabilities for apps that directly access M365 app customer data. For more information, see [App governance add-on to Microsoft Cloud App Security (in preview)](/microsoft-365/compliance/app-governance-manage-app-governance).
+>
+>Learn about [customer eligibility](/microsoft-365/compliance/app-governance-get-started) and [sign up for a free trial here](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
+
 OAuth is an open standard for token-based authentication and authorization. OAuth enables a user's account information to be used by third-party services, without exposing the user's password. OAuth acts as an intermediary on behalf of the user, providing the service with an access token that authorizes specific account information to be shared.
 
-For example, an app that analyses the user's calendar and gives advice on how to become more productive, needs access to the user's calendar. Instead of providing the user's credentials, OAuth enables the app to get access to the data based only on a token, which is generated when the user provides consent to a page as can be seen in the below picture.
+For example, an app that analyses the user's calendar and gives advice on how to become more productive, needs access to the user's calendar. Instead of providing the user's credentials, OAuth enables the app to get access to the data based only on a token, which is generated when the user provides consent to a page as can be seen in the picture below.
 
 ![OAuth app permission.](media/oauth-permission.png)
 
@@ -23,11 +28,6 @@ For example, the following OAuth app consent page might look legitimate to the a
 As a security admin, you need visibility and control over the apps in your environment and that includes the permissions they have. You need the ability to prevent use of apps that require permission to resources you wish to revoke. Therefore, Microsoft Cloud App Security provides you with the ability to investigate and monitor the app permissions your users granted. This article is dedicated to helping you investigate the OAuth apps in your organization, and focus on the apps that are more likely to be suspicious.
 
 Our recommended approach is to investigate the apps by using the abilities and information provided in the Cloud App Security portal to filter out apps with a low chance of being risky, and focus on the suspicious apps.
-
->[!NOTE]
->Try the new app governance add-on to Microsoft Cloud App Security to get deeper protection, app usage insights, governance, and remediation capabilities for apps that directly access M365 app customer data. For more information, see [App governance add-on to Microsoft Cloud App Security (in preview)](/microsoft-365/compliance/app-governance-manage-app-governance).
->
->Learn about [customer eligibility](/microsoft-365/compliance/app-governance-get-started) and [sign up for a free trial here](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
 
 In this tutorial, you'll learn how to:
 
