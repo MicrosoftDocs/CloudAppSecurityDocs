@@ -56,9 +56,9 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Inherit permissions from parent** - This governance action enables you to remove specific permissions set for a file or folder in Office 365. Then revert to whatever permissions are set for the parent folder.
 
-  - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
+  - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint, Cisco Webex)
 
-   ![policy_create alerts](media/policy_create-alerts.png)
+   ![policy_create alerts.](media/policy_create-alerts.png)
 
 ## Activity governance actions
 
@@ -80,7 +80,7 @@ The following governance actions can be taken for connected apps either on a spe
 
   - **Confirm user compromised** - Set the user's risk level to high. This causes the relevant policy actions defined in Azure AD to be enforced. For more information How Azure AD works with risk levels, see [How does Azure AD use my risk feedback](/azure/active-directory/identity-protection/howto-identity-protection-risk-feedback#how-does-azure-ad-use-my-risk-feedback).
 
-  ![Cloud App Security activity policy governance actions](media/activity-policy-ref6.png)
+  ![Cloud App Security activity policy governance actions.](media/activity-policy-ref6.png)
 
 ## Governance conflicts
 
@@ -100,7 +100,7 @@ After creating multiple policies, a situation may arise in which the governance 
 
 The Governance log provides a status record of each task that you set Cloud App Security to run, including both manual and automatic tasks. These tasks include those you set in policies, governance actions that you set on files and users, and any other action you set Cloud App Security to take. The Governance log also provides information about the success or failure of these actions. You can choose to retry or revert some of the governance actions from the Governance log.
 
-To view the governance log, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and then select **Governance log**.
+To view the governance log, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and then select **Governance log**.
 
 The following table is the full list of actions the Cloud App Security portal enables you to take. These actions are enabled in various places throughout the console as described in the **Location** column. Each governance action taken is listed in the Governance Log.
 For information about how governance actions are treated when there are policy conflicts, see [Policy Conflicts](control-cloud-apps-with-policies.md).
@@ -122,7 +122,7 @@ For information about how governance actions are treated when there are policy c
 |App dashboard > App permissions |Permissions|Revoke app|Revoke a third-party app's permissions to Google or Salesforce. This is a one-time action that will occur on all existing permissions, but won't prevent future connections. | Google Workspace, Salesforce|
 |App dashboard > App permissions | Account | Revoke user from app|You can revoke specific users when clicking on the number under Users. The screen will display the specific users and you can use the X to delete permissions for any user.| Google Workspace, Salesforce|
 |Discover > Discovered Apps/IP addresses/Users| Cloud Discovery | Export discovery data | Creates a CSV from the discovery data. | Discovery |
-|File policy|File |Trash|Moves the file in the user's trash.| Box, Dropbox, Google Drive, OneDrive, SharePoint |
+|File policy|File |Trash|Moves the file in the user's trash.| Box, Dropbox, Google Drive, OneDrive, SharePoint, Cisco Webex (Permanently delete) |
 |File Policy|File | Notify last file editor |Sends an email to notify the last person who edited the file that it violates a policy. |Google Workspace, Box|
 |File Policy|File |Notify file owner|Sends an email to the file owner, when a file violates a policy. In Dropbox, if no owner is associated with a file, the notification will be sent to the specific user you set. | All apps |
 |File Policy, Activity Policy | File, Activity | Notify specific users |Sends an email to notify specific users about a file that violates a policy.| All apps |

@@ -1,10 +1,10 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 03/07/2021
+ms.date: 08/11/2021
 ms.topic: overview
 ---
-# What's new with Microsoft Cloud App Security?
+# What's new in Microsoft Cloud App Security
 
 *Applies to: Microsoft Cloud App Security*
 
@@ -12,9 +12,90 @@ This article is updated frequently to let you know what's new in the latest rele
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
-> [!IMPORTANT]
+> [!NOTE]
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
+
+>[!IMPORTANT]
+>**Enhanced proxy URL for access controls (gradual rollout)**  
+Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 207
+
+August 8, 2021
+
+- **New warn experience for monitored apps with Microsoft Defender for Endpoint (public preview)**  
+Cloud App Security has extended its native integration with Microsoft Defender for Endpoint (MDE). You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
+  - [Warn and educate users on risky app usage](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/warn-and-educate-users-on-risky-app-usage/ba-p/2630982)
+  - [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md)
+
+## Cloud App Security release 206
+
+July 25, 2021
+
+- **New Cloud Discovery Open Systems log parser**  
+Cloud App Security's Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support the Open Systems format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+## Cloud App Security release 205
+
+July 11, 2021
+
+- **Zendesk app connector available in public preview**  
+A new app connector for Zendesk is available in public preview. You can now connect Microsoft Cloud App Security to Zendesk to monitor and protect users and activities. For more information, see [Connect Zendesk](connect-zendesk-to-microsoft-cloud-app-security.md).
+
+- **New Cloud Discovery parser for Wandera**  
+Cloud Discovery in Cloud App Security analyzes a wide range of traffic logs to rank and score apps. Now, Cloud Discovery includes a built-in log parser to support the Wandera format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+
+## Cloud App Security release 204
+
+June 27, 2021
+
+- **Slack and OneLogin app connectors available in public preview**  
+New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](connect-slack-to-microsoft-cloud-app-security.md) and [Connect OneLogin](connect-okta-to-microsoft-cloud-app-security.md).
+
+## Cloud App Security release 203
+
+June 13, 2021
+
+- **Expose verified publisher indicating in O365 OAuth apps**  
+Cloud App Security now surfaces whether a publisher of an Office 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
+
+- **Azure Active Directory Cloud App Security admin**  
+A Cloud App Security admin role has been added to Azure Active Directory (AAD), allowing the assignment of global admin capabilities to Cloud App Security alone via AAD. For more information, see [Office 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
+
+- **Export custom tag and app domains per discovered app**  
+**Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
+
+  >[!IMPORTANT]
+  >**Enhanced proxy URL for access controls (gradual rollout)**  
+  Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 200, 201, and 202
+
+May 30, 2021
+
+- **Authentication Context (Step-Up Authentication) in public preview**  
+We've added the ability to protect users working with proprietary and privileged assets by requiring Azure AD Conditional Access policies to be reassessed in the session. For example, if a change in IP address is detected because an employee in a highly sensitive session has moved from the office to the coffee shop downstairs, step-up can be configured to reauthenticate that user. For more information, see [Require step-up authentication (authentication context) upon risky action](tutorial-step-up-authentication.md).
+
+## Cloud App Security release 199
+
+April 18, 2021
+
+- **Service Health Dashboard availability**  
+The enhanced Cloud App Security [Service Health Dashboard](https://admin.microsoft.com/Adminportal/Home#/servicehealth) is now available within the Microsoft 365 Admin portal for users with **Monitor service health** permissions. Learn more about [Microsoft 365 Admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information about the dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
+
+- **AIP support deprecated**  
+Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-identity/understanding-unified-labeling-migration/ba-p/783185).
+
+- **DLP near real-time rollout completed for Dropbox, ServiceNow, AWS, and Salesforce**  
+New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- **Public preview for overriding privilege sensitivity labels**  
+Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [Apply labels directly to files](azip-integration.md#how-to-integrate-azure-information-protection-with-cloud-app-security).
+
+- **Extended Advanced Hunting events**  
+We've expanded the available events in Cloud App Security. Microsoft 365 Defender Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Office 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
 
 ## Cloud App Security release 198
 
@@ -79,6 +160,14 @@ In the coming months, Cloud App Security will be updating its User Interface to 
 ## Cloud App Security release 189, 190, and 191
 
 Released January 10, 2021
+
+- **New log collector version**  
+Upgraded Log collector for Shadow IT discovery is now available. It includes the following updates:
+
+  - We've upgraded our Pure-FTPd version to the latest version: 1.0.49. TLS < 1.2 is now disabled by default.
+  - We've disabled the "octet-counted" framing feature in RSyslog to prevent failed processing.
+
+  For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
 - **New anomaly detection: Suspicious addition of credentials to an OAuth app**  
 We've extended our anomaly detections to include suspicious addition of privileged credentials to an OAuth app. The new detection is now available out-of-the-box and automatically enabled. The detection can indicate that an attacker has compromised the app and is using it for malicious activity. For more information, see [Unusual addition of credentials to an OAuth app](investigate-anomaly-alerts.md#unusual-addition-of-credentials-to-an-oauth-app).
@@ -198,7 +287,7 @@ We've expanded our session controls to detect potential malware using Microsoft 
 Access and session controls support for SAML apps configured with any identity provider is now generally available. For information about configuring these controls, see the [Deployment guide](proxy-deployment-aad.md).
 
 - **Risky machine investigation enhancement**  
-Cloud App Security provides the ability to identify risky machines as part of your shadow IT discovery investigation. Now, we've added the Microsoft Defender Advanced Threat Protection **Machine risk level** to the **machines** page giving analysts more context when investigating machines in your organization. For more information, see [Investigate devices in Cloud App Security](mde-integration.md#investigate-devices-in-cloud-app-security).
+Cloud App Security provides the ability to identify risky machines as part of your shadow IT discovery investigation. Now, we've added the Microsoft Defender Advanced Threat Protection **Machine risk level** to the **machines** page giving analysts more context when investigating machines in your organization. For more information, see [Investigate devices in Cloud App Security](mde-investigation.md).
 
 - **New feature: Self-service disable app connector (gradual rollout)**  
 We've added the ability to disable app connectors directly in Cloud App Security. For more information, see [Disable app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#disable-app-connectors).
@@ -328,7 +417,7 @@ Cloud App Security session controls now includes support for the new Microsoft E
 Released February 16, 2020
 
 - **New block unsanctioned apps with Microsoft Defender ATP**  
-Cloud App Security has extended its native integration with Microsoft Defender Advanced Threat Protection (ATP). You can now block access to apps marked as unsanctioned using Microsoft Defender ATP's network protection capability. For more information, see [Block access to unsanctioned cloud apps](mde-integration.md#block-access-to-unsanctioned-cloud-apps).
+Cloud App Security has extended its native integration with Microsoft Defender Advanced Threat Protection (ATP). You can now block access to apps marked as unsanctioned using Microsoft Defender ATP's network protection capability. For more information, see [Block access to unsanctioned cloud apps](mde-govern.md).
 
 - **New OAuth app anomaly detection**  
 We've expanded our current capability to detect malicious OAuth app consent. The new detection is now available out-of-the-box and automatically enabled to alert you when a potentially malicious OAuth app is authorized in your environment. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.

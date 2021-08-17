@@ -38,14 +38,14 @@ In GitHub, browse to your organization's page, and from the URL, make a note of 
     > [!NOTE]
     > The page will have a URL like `https://github.com/<your-organization>`. For example, if your organization's page is `https://github.com/sample-organization`, the organization's login name is *sample-organization*.
 
-    ![Screenshot showing obtaining organization login name](media/connect-github-org-login-name.png)
+    ![Screenshot showing obtaining organization login name.](media/connect-github-org-login-name.png)
 
 1. **Create an OAuth App for Cloud App Security to connect your GitHub organization.**  
 Repeat this step for each additional connected organization.
 
     1. Browse to **Settings** > **Developer settings**, select  **OAuth Apps**, and then click **Register an application**. Alternatively, if you have existing OAuth apps, click **New OAuth App**.
 
-        ![Screenshot showing creating an oauth app](media/connect-github-create-oauth-app.png)
+        ![Screenshot showing creating an oauth app.](media/connect-github-create-oauth-app.png)
 
     1. Fill out the **Register a new OAuth app** details and then click **Register application**.
         - In the **Application name** box, enter a name for the app.
@@ -55,7 +55,7 @@ Repeat this step for each additional connected organization.
             > [!NOTE]
             > For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect`
 
-        ![Screenshot showing registering an oauth app](media/connect-github-register-oauth-app.png)
+        ![Screenshot showing registering an oauth app.](media/connect-github-register-oauth-app.png)
 
     > [!NOTE]
     >
@@ -64,17 +64,17 @@ Repeat this step for each additional connected organization.
 
 1. Browse to **Settings** > **OAuth Apps**, select the OAuth App you just created, and make note of its **Client ID** and **Client Secret**.
 
-    ![Screenshot showing details of an oauth app](media/connect-github-oauth-app-details.png)
+    ![Screenshot showing details of an oauth app.](media/connect-github-oauth-app-details.png)
 
 ### Configure Cloud App Security
 
-1. In the Cloud App Security portal, click **Investigate** and then **Connected apps**.
+1. In the C[loud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, click the plus button followed by **GitHub**.
 
 1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then click **Connect in GitHub**.
 
-    ![Screenshot showing connect github api](media/connect-github-connect-app.png)
+    ![Screenshot showing connect github api.](media/connect-github-connect-app.png)
 
     The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Cloud App Security access to your team's GitHub Enterprise Cloud instance.
 
@@ -88,7 +88,7 @@ Repeat this step for each additional connected organization.
     > - **repo:status** - required for synchronizing repository-related events in the audit log
     > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
 
-    ![Screenshot showing authorize github oauth](media/connect-github-authorize-app.png)
+    ![Screenshot showing authorize github oauth.](media/connect-github-authorize-app.png)
 
 1. Back in the Cloud App Security console, you should receive a message that GitHub was successfully connected.
 

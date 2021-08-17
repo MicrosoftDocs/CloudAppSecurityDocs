@@ -22,6 +22,8 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 
+- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multi-factor authentication on download of a highly confidential file.
+
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
 - **Prevent upload of unlabeled files**: Before a sensitive file is uploaded, distributed, and used by others, it's important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
@@ -86,7 +88,7 @@ When a client certificate check is performed, Cloud App Security checks for the 
 
 To configure a policy to leverage device management via client certificates:
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
 
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.
@@ -120,7 +122,7 @@ You can block access to native mobile and desktop client apps with access polici
 
 ### Session controls
 
-While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
+While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), [Google Chrome](https://www.google.com/chrome/) (latest), [Mozilla Firefox](https://www.mozilla.org/firefox/) (latest), or [Apple Safari](https://www.apple.com/safari/) (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
 >

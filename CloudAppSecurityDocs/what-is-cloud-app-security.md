@@ -60,7 +60,7 @@ Cloud App Security integrates visibility with your cloud by:
 - Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 - Helping you have continuous control by setting, and then continually fine-tuning, policies.
 
-![Cloud App Security architecture diagram](media/proxy-architecture.png)
+![Cloud App Security architecture diagram.](media/proxy-architecture.png)
 
 ### Data retention & compliance
 

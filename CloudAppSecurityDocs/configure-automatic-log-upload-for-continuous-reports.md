@@ -33,7 +33,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
 1. Go to the automated upload setting page:
-   In the Cloud App Security portal, click the settings icon ![settings icon](media/settings-icon.png "settings icon"), followed by  **Log collectors**.
+   In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the settings icon ![settings icon.](media/settings-icon.png "settings icon"), followed by  **Log collectors**.
 
 2. For each firewall or proxy from which you want to upload logs, create a matching data source:
 
@@ -57,11 +57,13 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 
     c. Select all **Data sources** that you want to connect to the collector. Click **Update** to save the configuration and generate an access token.
 
-    ![discovery data sources](media/discovery-data-sources.png)
+    ![discovery data sources.](media/discovery-data-sources.png)
 
     > [!NOTE]
+    >
     > - A single Log collector can handle multiple data sources.
     > - Copy the contents of the screen because you will use it when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information includes information about which port the Syslog listener is listening on.
+
 4. If you accept the [end-user license terms](https://go.microsoft.com/fwlink/?linkid=862492), **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare. Then, unzip the file using the password you received in the portal.
 
 ### Step 2 – On-premises deployment of the virtual machine and network configuration
@@ -73,7 +75,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 
 2. Select **New** and then **Virtual Machine** and click **Next**.
 
-    ![discovery Hyper-V virtual machine](media/discovery-hyperv-virtual-machine.png)
+    ![discovery Hyper-V virtual machine.](media/discovery-hyperv-virtual-machine.png)
 
 3. Provide a **Name** for the new virtual machine, for example CloudAppSecurityLogCollector01.then click **Next**.
 
@@ -130,7 +132,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible that the log collector connection and parsing haven't completed.
 
-![log collector status](media/log-collector-status.png)
+![log collector status.](media/log-collector-status.png)
 
 Go to the Governance log and verify that logs are being periodically uploaded to the portal.
 
@@ -140,14 +142,14 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 After you've verified that the logs are being uploaded to Cloud App Security and the reports are being generated, you can create custom reports. You can now create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the Cloud App Security portal, under the Settings cog, select **Cloud Discovery settings**, and then select **Continuous reports**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the Settings cog, select **Cloud Discovery settings**, and then select **Continuous reports**.
 2. Click the **Create report** button and fill in the fields.
 3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
 > [!NOTE]
 > All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
 
-![Custom continuous report](media/custom-continuous-report.png)
+![Custom continuous report.](media/custom-continuous-report.png)
 
 ## Next steps
 

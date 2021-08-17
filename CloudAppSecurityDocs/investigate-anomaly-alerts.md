@@ -669,6 +669,34 @@ Establishing a new user's activity pattern requires an initial learning period o
 1. Review the deletion activities and create a list of deleted files. If needed, recover the deleted files.
 1. Optionally, create a playbook using Power Automate to contact users and their managers to verify the activity.
 
+### Investigation priority score increase (preview)
+
+Anomalous activities and activities that triggered alerts are given scores based on severity, user impact, and behavioral analysis of the user. The analysis is done based on other users in the tenants.
+
+When there's a significant and anomalous increase in the investigation priority score of a certain user, the alert will be triggered.
+
+This alert enables detecting potential breaches that are characterized by activities that don't necessarily trigger specific alerts but accumulate to a suspicious behavior for the user.
+
+**Learning period**
+
+Establishing a new user's activity pattern requires an initial learning period of seven days, during which alerts aren't triggered for any score increase.
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activities of the user aren't legitimate.
+  
+    **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
+
+1. **B-TP**: If you’re able to confirm that user indeed significantly deviated from usual behavior, but there's no potential breach.
+
+1. **FP**  (Unusual behavior): If you're able to confirm that the user legitimately performed the unusual activities, or more activities than the established baseline.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all user activity and alerts for additional indicators of compromise.
+
 ## See also
 
 > [!div class="nextstepaction"]

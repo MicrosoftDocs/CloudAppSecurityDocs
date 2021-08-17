@@ -21,7 +21,7 @@ If you work with both Cloud App Security and iboss, you can integrate the two pr
 
 ## Deployment
 
-1. In the Cloud App Security portal, perform the following integration steps:
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), perform the following integration steps:
     1. Click on the settings cog and select **Cloud Discovery settings**.
     2. Select the **Automatic log upload** tab, and then **Add data source**.
     3. In the **Add data source** page, enter the following settings:
@@ -30,7 +30,7 @@ If you work with both Cloud App Security and iboss, you can integrate the two pr
         - Source = iboss Secure Cloud Gateway
         - Receiver type = Syslog - UDP
 
-        ![data source iboss](media/iboss-integration.png)
+        ![data source iboss.](media/iboss-integration.png)
 
     4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
 

@@ -1,27 +1,34 @@
 ---
 title: Manage admin access to the Cloud App Security portal
 description: This article provides instructions for setting access to the Cloud App Security portal for your admins.
-ms.date: 01/11/2021
+ms.date: 04/27/2021
 ms.topic: how-to
 ---
 # Manage admin access
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security supports role-based access control. This article provides instructions for setting access to the Cloud App Security portal for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) and [Office 365](/office365/admin/add-users/assign-admin-roles).
+Microsoft Cloud App Security supports role-based access control. This article provides instructions for setting access to the [Cloud App Security portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-assign-admin-roles) and [Office 365](/office365/admin/add-users/assign-admin-roles).
+
+>[!IMPORTANT]
+>We have changed the flow for adding external admins to Cloud App Security. For more information, see [Invite external admins](#invite-external-admins).
 
 ## Office 365 and Azure AD roles with access to Cloud App Security
 
 > [!NOTE]
-> Office 365 and Azure AD roles aren't listed in the Cloud App Security **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
+>
+> - Office 365 and Azure AD roles aren't listed in the Cloud App Security **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
+> - Cloud App Security uses Azure Active Directory to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in AAD to never sign out when inactive, the same setting will apply in Cloud App Security as well.
 
-By default, the following Office 365 and [Azure Active Directory (Azure AD)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
+By default, the following Office 365 and [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
-- **Compliance administrator**: Has read-only permissions and can manage alerts. Cannot access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
+- **Cloud App Security administrator**: Allows full access and permissions in Cloud App Security. Similar to **Global administrator** or **Security administrator** but scoped solely to Cloud App Security.
 
-- **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Cannot access Security recommendations for cloud platforms.
+- **Compliance administrator**: Has read-only permissions and can manage alerts. Can't access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
+
+- **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Can't access Security recommendations for cloud platforms.
 
 - **Security operator and Security reader**: Have read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
@@ -37,7 +44,29 @@ By default, the following Office 365 and [Azure Active Directory (Azure AD)](/az
   - Accessing and viewing the Manage snapshot reports page
   - Accessing and viewing SIEM agents
 
-- **Global reader**: Has full read-only access to all aspects of Cloud App Security. Cannot change any settings or take any actions.
+- **Global reader**: Has full read-only access to all aspects of Cloud App Security. Can't change any settings or take any actions.
+
+### Roles and permissions
+
+| Permissions                                                  | Global  Admin | Security  Admin | Compliance  Admin | Compliance  Data Admin | Security  Operator | Security  Reader | Global  Reader | PBI Admin |
+| ------------------------------------------------------------ | ------------- | --------------- | ----------------- | ---------------------- | ------------------ | ---------------- | -------------- | --------- |
+| Read alerts                                                  | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
+| Manage alerts                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                |                | ✔         |
+| Read OAuth applications                                      | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
+| Perform OAuth application actions                            | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
+| Access discovered apps, cloud app catalog and other cloud  discovery data | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           |
+| Perform cloud discovery actions                              | ✔             | ✔               |                   |                        |                    |                  |                |           |
+| Access files data and file policies                          | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
+| Perform file actions                                         | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
+| Access governance log                                        | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
+| Perform governance log actions                               | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
+| Access scoped discovery governance log                       | ✔             | ✔               |                   |                        |                    |                  |                |           |
+| Read policies                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
+| Perform all policy actions                                   | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
+| Perform file policy actions                                  | ✔             | ✔               | ✔                 | ✔                      |                    |                  |                |           |
+| Perform OAuth policy actions                                 | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
+| View manage admin access                                     | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           |
+| Manage admins and activity privacy                           | ✔             | ✔               |                   |                        |                    |                  |                |           |
 
 ## Built-in Cloud App Security admin roles
 
@@ -93,34 +122,62 @@ The following Cloud App Security specific admin roles can be configured in the C
   - Governance actions - Only Cloud Discovery related actions
   - Security recommendations for cloud platforms - No permissions
 
-- **Cloud Discovery report admin**: Has permissions to view all the data in Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender for Endpoint. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin will not have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
+- **Cloud Discovery report admin**: Has permissions to view all the data in Cloud App Security that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender for Endpoint. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin won't have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
 
 > [!NOTE]
 > The built-in Cloud App Security admin roles only provide access permissions to Cloud App Security.
 
 ## Override admin permissions
 
-If you want to override an administrator's permission from Azure Active Directory or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure Active Directory to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the necessary permissions in Cloud App Security.
+If you want to override an administrator's permission from Azure AD or Office 365, you can do so by manually adding the user to Cloud App Security and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Cloud App Security, you can add her manually to Cloud App Security and assign her **Full access** to override her role and allow her the necessary permissions in Cloud App Security.
 
 ## Add additional admins
 
-You can add additional admins to Cloud App Security without adding users to Azure Active Directory administrative roles. To add additional admins, perform the following steps:
+You can add additional admins to Cloud App Security without adding users to Azure AD administrative roles. To add additional admins, perform the following steps:
 
 > [!IMPORTANT]
-> Only Global administrators or Security administrators can grant access to other users to Cloud App Security.
+>
+> - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
+> - Only Azure AD Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Cloud App Security.
 
-1. Click the settings cog ![settings icon](media/settings-icon.png "settings icon") and then **Manage admin access**.
+1. Select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and then **Manage admin access**.
 
-2. Click the plus to add the admins who should have access to Cloud App Security. You can type an internal or external email address to enable administrators from inside your organization or external Managed Security Service Providers (MSSPs) to administer your security alerts.
+1. Select the plus icon to add the admins who should have access to Cloud App Security. Provide an email address of a user from inside your organization.
 
-    ![add admins](media/add-admin.png)
+    > [!NOTE]
+    > If you want to add external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal, make sure you first [invite them as a guest](#invite-external-admins) to your organization.
 
-3. Next, click the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, or **Cloud Discovery report admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
+    ![add admins.](media/add-admin.png)
+
+1. Next, select the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, or **Cloud Discovery report admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
     >[!NOTE]
     > Any admin, whose access is limited, that attempts to access a restricted page or perform a restricted action will receive an error that they don't have permission to access the page or perform the action.
 
-4. Click **Add admin**.
+1. Select **Add admin**.
+
+## Invite external admins
+
+Cloud App Security enables you to invite external admins (MSSPs) as administrators of your organization's (MSSP customer) Cloud App Security portal. To add MSSPs, make sure Cloud App Security is enabled on MSSPs tenant and then add them as [Azure AD B2B collaboration users](/azure/active-directory/external-identities/add-users-administrator) in the MSSPs customers Azure portal. Once added, MSSPs can be configured as administrators and assigned any of the roles available in Cloud App Security.
+
+### To add MSSPs to the MSSP customer Cloud App Security portal
+
+1. Add MSSPs as a guest in the MSSP customer directory using the steps under [Add guest users to the directory](/azure/active-directory/external-identities/add-users-administrator#add-guest-users-to-the-directory).
+1. Add MSSPs and assign an administrator role in the MSSP customer Cloud App Security portal using the steps under [Add additional admins](#add-additional-admins). Provide the same external email address used when adding them as guests in the MSSP customer directory.
+
+### Access for MSSPs to the MSSP customer Cloud App Security portal
+
+By default, MSSPs access their Cloud App Security tenant through the following URL: `https://portal.cloudappsecurity.com`.
+
+MSSPs however, will need to access the MSSP customer Cloud App Security portal using a tenant-specific URL in the following format: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
+
+MSSPs can use the following steps to obtain the MSSP customer portal tenant ID and then use the ID to access the tenant-specific URL:
+
+1. As an MSSP, sign in to Azure AD with your credentials.
+
+1. Switch directory to the MSSP customer's tenant.
+1. Select **Azure Active Directory** > **Properties**. You'll find the MSSP customer tenant ID in the **Tenant ID** field.
+1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
 
 ## Admin activity auditing
 
@@ -132,15 +189,7 @@ To export a log, perform the following steps:
 
 1. Specify the required time range.
 
-1. Click **Export**.
-
-## Invite external admins
-
-Cloud App Security enables you to invite external Managed Security Service Providers (MSSPs) as administrators of your Cloud App Security portal. External users can now be configured as administrators and assigned any of the roles available in Cloud App Security. To add external users, make sure Cloud App Security is enabled on the source tenant, and then provide an external email address in the steps under [Add additional admins](#add-additional-admins).
-
-Additionally, to enable MSSPs to provide services across multiple customer tenants, Administrators who have access rights to more than one tenant can now easily switch tenants within the portal. To switch between tenants, after you have permissions to multiple tenants, click the user icon. You will see a list of the tenants for which you have permissions. Select the tenant you want to manage.
-
-![choose tenant](media/choose-tenant.png "choose tenant")
+1. Select **Export**.
 
 ## Next steps
 

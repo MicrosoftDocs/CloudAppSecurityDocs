@@ -23,7 +23,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
 
     This section of the dashboard provides full visibility into any suspicious activity or violation of your established policies. It can help you safeguard the security posture you defined for your cloud environment.
 
-    ![Alerts resolution status page](media/alerts.png "alerts")
+    ![Alerts resolution status page.](media/alerts.png "alerts")
 
 2. For each alert, you need to investigate and determine the nature of the violation and the required response.
 
@@ -48,7 +48,7 @@ It's a good idea to review all of your alerts and use them as tools for modifyin
        - **Authorized violations or anomalous behavior** -  Authorized violations or anomalous behavior can result from legitimate use.
          - You can dismiss the alert.
 
-3. Any time you dismiss an alert, it's important to submit feedback about why you're dismissing the alert. The Cloud App Security team uses this feedback as an indication of the accuracy of the alert. This information is then used to fine-tune our machine learning models for future alerts. You can follow these guidelines in deciding how to categorize the alert:
+3. When you dismiss an alert, it's helpful if you submit feedback about why you're dismissing the alert. The Cloud App Security team uses this feedback as an indication of the accuracy of the alert. This information is then used to fine-tune our machine learning models for future alerts. If you check the **It's OK to contact me about this alert** box, in select cases we may get back to you for additional information. You can follow these guidelines in deciding how to categorize the alert:
     - If legitimate use triggered the alert and it isn't a security issue, it could be one of these types:
 
       - Benign positive: The alert is accurate but the activity is legitimate. You can dismiss the alert and set the reason to **Actual severity is lower** or **Not interesting**.

@@ -22,25 +22,25 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     - Click on **Security** and then **API**.
 
-         ![Okta api](media/okta-api.png "Okta api")
+         ![Okta api.](media/okta-api.png "Okta api")
 
     - Click **Create Token**.
 
-         ![Okta create token](media/okta-createtoken.jpg "Okta create token")
+         ![Okta create token.](media/okta-createtoken.jpg "Okta create token")
 
     - In the **Create Token** pop-up, name your Cloud App Security token, and click **Create Token**.
 
-         ![Okta token pop-up](media/okta-token-pop-up.png)
+         ![Okta token pop-up.](media/okta-token-pop-up.png)
 
     - In the **Token created successfully** pop-up, copy the **Token value**.
 
-         ![Okta token value](media/okta-token-value.png "Okta token value")
+         ![Okta token value.](media/okta-token-value.png "Okta token value")
 
 1. In the Cloud App Security console, click **Investigate** and then **Connected apps**.
 
 1. In the **App connectors page**, click the plus button and then **Okta**.
 
-    ![connect Okta](media/connect-okta.png "connect Okta")
+    ![connect Okta.](media/connect-okta.png "connect Okta")
 
 1. In the pop-up, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.
 

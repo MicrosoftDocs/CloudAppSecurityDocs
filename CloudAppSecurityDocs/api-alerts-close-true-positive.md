@@ -52,4 +52,25 @@ curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tena
 }'
 ```
 
+### Response
+
+Response if alert was properly closed
+
+```json
+{
+    "closed_true_positive": 1
+}
+```
+
+Response if alert not found
+
+```json
+{
+    "closed_true_positive": 0,
+    "alertsNotFound": [
+        "5f843e9cfe3f6d80fe58a962"
+    ]
+}
+```
+
 [!INCLUDE [Open support ticket](includes/support.md)]

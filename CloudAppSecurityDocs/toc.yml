@@ -7,7 +7,7 @@ items:
     href: what-is-cloud-app-security.md
   - name: Cloud App Security data security and privacy
     href: cas-compliance-trust.md
-  - name: What's new?
+  - name: What's new in Cloud App Security
     href: release-notes.md
   - name: Compare
     items:
@@ -48,6 +48,8 @@ items:
     href: use-case-information-protection.md
   - name: Extend governance to endpoint remediation
     href: tutorial-flow.md
+  - name: Require step-up authentication upon risky action
+    href: tutorial-step-up-authentication.md
 - name: Concepts
   items:
   - name: Protect apps with Conditional Access App Control
@@ -80,18 +82,24 @@ items:
       href: protect-office-365.md
     - name: Protect Okta
       href: protect-okta.md
+    - name: Protect OneLogin (Preview)
+      href: protect-onelogin.md
     - name: Protect Salesforce
       href: protect-salesforce.md
     - name: Protect ServiceNow
       href: protect-servicenow.md
+    - name: Protect Slack (Preview)
+      href: protect-slack.md
     - name: Protect Webex
       href: protect-webex.md
     - name: Protect Workday
       href: protect-workday.md
+    - name: Protect Zendesk (Preview)
+      href: protect-zendesk.md
   - name: Security
     items:
     - name: Security baseline
-      href: security-baseline.md
+      href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
 - name: How-to guides
   items:
   - name: Basic set up
@@ -174,14 +182,20 @@ items:
       href: connect-office-365-to-microsoft-cloud-app-security.md
     - name: Connect Okta
       href: connect-okta-to-microsoft-cloud-app-security.md
+    - name: Connect OneLogin (Preview)
+      href: connect-onelogin-to-microsoft-cloud-app-security.md
     - name: Connect Salesforce
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
+    - name: Connect Slack (Preview)
+      href: connect-slack-to-microsoft-cloud-app-security.md
     - name: Connect Webex
       href: connect-webex-to-microsoft-cloud-app-security.md
     - name: Connect Workday
       href: connect-workday-to-microsoft-cloud-app-security.md
+    - name: Connect Zendesk (Preview)
+      href: connect-zendesk-to-microsoft-cloud-app-security.md
   - name: Deploy Conditional Access App Control apps
     items:
     - name: Deploy Conditional Access App Control for featured apps
@@ -202,6 +216,8 @@ items:
       items:
       - name: Activity filters and queries
         href: activity-filters-queries.md
+    - name: Investigate apps discovered by Microsoft Defender for Endpoint
+      href: mde-investigation.md
     - name: Files
       href: file-filters.md
       items:
@@ -273,6 +289,8 @@ items:
       href: governance-actions.md
     - name: Govern discovered apps
       href: governance-discovery.md
+    - name: Govern apps discovered by Microsoft Defender for Endpoint
+      href: mde-govern.md
     - name: Microsoft Defender for Identity integration
       href: mdi-integration.md
     - name: Azure AD Identity Protection integration

@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps. The apps are ranked and scored based on more than 80 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 22,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
 ## Snapshot and continuous risk assessment reports
 
@@ -66,23 +66,25 @@ The process of generating a risk assessment consists of the following steps. The
 - McAfee Secure Web Gateway
 - Menlo Security (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
+- Open Systems format
 - Palo Alto series Firewall
 - Sonicwall (formerly Dell)
+- Sophos Cyberoam
 - Sophos SG
 - Sophos XG
-- Sophos Cyberoam
 - Squid (Common)
 - Squid (Native)
 - Stormshield
-- Websense - Web Security Solutions - Investigative detail report (CSV)
-- Websense - Web Security Solutions - Internet activity log (CEF)
+- Wandera
 - WatchGuard
+- Websense - Web Security Solutions - Internet activity log (CEF)
+- Websense - Web Security Solutions - Investigative detail report (CSV)
 - Zscaler
 
 > [!NOTE]
 > Cloud Discovery supports both IPv4 and IPv6 addresses.
 
-If your log isn't supported, or if you are using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
+If your log isn't supported, or if you're using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
 
 > [!NOTE]
 > The following list of supported appliances may not work with newly released log formats. If you are using a newly released format and the upload is failing, [use a custom log parser](custom-log-parser.md) and if required, open a support case.
@@ -103,7 +105,6 @@ Data attributes (according to vendor documentation):
 | Clavister NGFW (Syslog) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ContentKeeper | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Corrata | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | ForcePoint Web Security Cloud\* |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
@@ -115,17 +116,20 @@ Data attributes (according to vendor documentation):
 | McAfee SWG | **Yes** | No | No | **Yes** | **Yes** | **Yes** |
 | Menlo Security (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
+| Open Systems format | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |
 | Squid (Common) | **Yes** | No | **Yes** | **Yes** | **Yes** | No |
 | Squid (Native) | **Yes** | No | **Yes** | **Yes** | No | No |
 | Stormshield | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Wandera| **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | WatchGuard | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Websense - Internet activity log (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Websense - Investigative detail report (CSV) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Zscaler | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 
-\* Versions 8.5 and later of Forcepoint Web Security Cloud are not supported
+\* Versions 8.5 and later of ForcePoint Web Security Cloud aren't supported
 
 ## Next steps
 

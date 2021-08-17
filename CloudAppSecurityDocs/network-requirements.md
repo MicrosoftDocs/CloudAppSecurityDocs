@@ -16,13 +16,13 @@ Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the Cloud App Security portal, select the **question mark icon** in the menu bar. Then, select **About**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
 
-    ![click About](media/about-menu.png)
+    ![click About.](media/about-menu.png)
 
 2. In the Cloud App Security version screen, you can see the region and the data center.
 
-    ![View your data center](media/data-center.png)
+    ![View your data center.](media/data-center.png)
 
 ## Portal access
 
@@ -61,7 +61,7 @@ Additionally, the following items should be allowed, depending on which data cen
 |EU1|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.119.154.72, 51.143.58.207, 52.137.89.147, 52.157.238.58, 52.174.56.180, 52.183.75.62|\*.eu.portal.cloudappsecurity.com|
 |EU2|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.81.156.154, 40.81.156.156, 51.143.58.207, 52.137.89.147, 52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 |Gov US1|13.72.19.4, 52.227.143.223|*.us1.portal.cloudappsecurity.us|
-|GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com |
+|GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com, \*.us1.portal.cloudappsecuritygov.com |
 
 > [!NOTE]
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
@@ -85,10 +85,11 @@ Additionally, the following items should be allowed, depending on which data cen
 
 | **IP Addresses** | **DNS Name** |
 |--|--|
-| 40.81.58.184, 40.65.170.125, 40.81.121.140, 104.45.170.196, 191.235.123.114, 52.156.88.173, 52.156.205.222, 40.82.187.211, 20.193.137.191 40.81.62.221, 40.119.203.158, 52.157.233.49, 104.45.170.173, 52.155.181.183, 191.233.23.29, 20.190.7.24, 40.82.187.199, 20.193.131.246 | \*.mcas.ms |
-| 40.71.11.134, 13.69.228.51 | \*.us.saml.cas.ms, \*.us2.saml.cas.ms, \*.us3.saml.cas.ms, \*.eu.saml.cas.ms, \*.eu2.saml.cas.ms |
+| Australia Southeast: 40.81.58.184, 40.81.58.180, 20.40.163.96, 20.40.163.88, 40.81.62.221, 40.81.62.206, 20.40.160.184, 20.40.163.130<br /><br />Brazil South: 191.235.123.114, 191.235.121.164, 191.235.122.101, 191.235.119.253, 191.233.23.29, 191.234.216.181, 191.233.21.52, 191.234.216.10<br /><br />Canada Central: 40.82.187.211, 40.82.187.164, 52.139.18.234, 52.139.20.118, 40.82.187.199, 40.82.187.179, 52.139.19.215, 52.139.18.236<br /><br />Central India: 20.193.137.191, 20.193.137.153, 20.193.138.1, 20.193.136.234, 20.193.131.246, 20.193.131.250, 20.193.131.247, 20.193.131.248<br /><br />North Europe: 52.156.205.222, 52.156.204.99, 52.155.166.50, 52.142.127.127, 52.155.181.183, 52.155.168.45, 52.156.202.7, 52.142.124.23<br /><br />Southeast Asia: 40.65.170.125, 40.65.170.123, 52.139.245.40, 52.139.245.48, 40.119.203.158, 40.119.203.209, 20.184.61.67, 20.184.60.77<br /><br />West Europe: 52.157.233.49, 52.157.235.27, 51.105.164.234, 51.105.164.241<br /><br />UK West: 40.81.121.140, 40.81.121.135, 51.137.137.121, 51.137.137.118<br /><br />East US: 104.45.170.196, 104.45.170.182, 52.151.238.5, 52.151.237.243, 104.45.170.173, 104.45.170.176, 52.224.188.157, 52.224.188.168<br /><br />West US 2: 52.156.88.173, 52.149.61.128, 52.149.61.214, 52.149.63.211, 20.190.7.24, 20.190.6.224, 20.190.7.239, 20.190.7.233 | *.mcas.ms<br/>\*.admin-mcas.ms |
+| Australia Southeast: 40.81.63.7, 40.81.59.90, 40.81.62.222, 40.81.62.212<br /><br />Brazil South: 191.235.123.242, 191.235.122.224, 20.197.208.38, 20.197.208.36<br /><br />North Europe: 40.67.251.0, 52.156.206.47, 52.155.182.49, 52.155.181.181<br /><br />West Europe: 52.157.234.222, 52.157.236.195<br /><br />Southeast Asia: 40.65.170.137, 40.65.170.26, 40.119.203.98, 40.119.203.208<br /><br />UK West: 40.81.127.139, 40.81.127.25<br /><br />East US: 104.45.170.184, 104.45.170.185, 104.45.170.174, 104.45.170.127<br /><br />West US 2: 52.149.59.151, 52.156.89.175, 20.72.216.133, 20.72.216.137 | \*.access.mcas.ms<br/>\*.us.access-control.cas.ms<br/>\*.us2.access-control.cas.ms<br/>\*.eu.access-control.cas.ms<br/>\*.prod04.access-control.cas.ms<br/>\*.prod05.access-control.cas.ms |
+| North Europe: 20.50.64.15<br /><br />East US: 20.49.104.26<br /><br />West US 2: 20.42.128.102 | \*.us.saml.cas.ms \*.us2.saml.cas.ms \*.us3.saml.cas.ms \*.eu.saml.cas.ms *.eu2.saml.cas.ms |
 
-### US Government GCC High customers
+### US Government offerings
 
 For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allowlist:
 
@@ -100,10 +101,21 @@ mcasproxy.azureedge.net
 
 Additionally, the following items should be allowed:
 
+For **US Government GCC High** customers:
+
 |IP addresses|DNS name|
 |----|----|
-|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222, 52.244.39.14, 52.244.38.212, 52.244.39.0, 52.244.39.80|\*.mcas-gov.us<br />\*.admin-mcas-gov.us `mcasproxy.azureedge.net`|
-|13.72.27.216, 13.72.27.215,52.244.39.82, 52.244.39.15|\*.access.cloudappsecurity.us<br />\*.saml.cloudappsecurity.us|
+|US Gov Arizona: 52.244.144.65, 52.244.43.90, 52.244.43.225, 52.244.215.117<br /><br />US Gov Virginia: 13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222|\*.mcas-gov.us<br/>\*.admin-mcas-gov.us|
+|US Gov Arizona: 52.244.215.83, 52.244.212.197<br /><br />US Gov Virginia: 13.72.27.216, 13.72.27.215|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
+|US Gov Arizona: 20.140.49.129<br /><br />US Gov Virginia: 52.227.216.80|\*.saml.cloudappsecurity.us|
+
+For **US Government GCC** customers:
+
+|IP addresses|DNS name|
+|----|----|
+|US Gov Virginia: 52.245.225.0, 52.245.224.229, 52.245.224.234, 52.245.224.228| \*.mcas-gov.ms<br/>\*.admin-mcas-gov.ms|
+|US Gov Virginia: 52.245.224.235, 52.245.224.227 | \*.access.mcas-gov.ms|
+|US Gov Virginia: 52.227.216.80 | \*.saml.cloudappsecuritygov.com|
 
 ## SIEM agent connection
 
@@ -120,7 +132,9 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 |GCC| 52.227.23.181, 52.227.180.126|
 
 > [!NOTE]
-> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+>
+> - If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> - A genuine Microsoft Cloud App Security certificate usage is required for the SIEM agent connection.
 
 ## App connector
 
@@ -186,8 +200,8 @@ To work with MailChimp, add this IP address to your anti-spam allowlist to enabl
 
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
-- Allow the log collector to receive inbound FTP and Syslog traffic.
-- Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
+- Allow the log collector to receive inbound FTP and Syslog traffic as configured for the data sources.
+- Allow the log collector to initiate outbound traffic to the Cloud App Security portal (for example `contoso.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services).
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
   | Data center |                        URL                                 |
@@ -202,7 +216,6 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 >
 > - If your firewall requires a static IP address access list and does not support allowing based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
-> - Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
 > - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
 
 ## Next steps

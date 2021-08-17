@@ -18,7 +18,7 @@ Because Dropbox enables access to files from shared links without signing in, Cl
 
 2. In the **App connectors** page, click the plus button followed by **Dropbox**.
 
-    ![connect dropbox](media/connect-dropbox.png "connect dropbox")
+    ![connect dropbox.](media/connect-dropbox.png "connect dropbox")
 
 3. In the pop-up, enter the admin account email address.
 

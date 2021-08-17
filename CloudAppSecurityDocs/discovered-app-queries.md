@@ -14,7 +14,7 @@ When you have a large number of discovered apps, you'll find it useful to filter
 
 There are basic and advanced Discovered app filters. To achieve a complex filter (such as in the example above) use the advanced option, which includes all of the following filters:
 
-![Discovered apps](media/discovered-apps.png)
+![Discovered apps.](media/discovered-apps.png)
 
 - **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. Additionally, you can create a custom tag for your app and then use it to filter for specific types of apps.
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains.
@@ -32,9 +32,9 @@ You can create a custom app tag. These tags can then be used as filters for deep
 
 To create a custom app tag:
 
-1. From the **Settings** cog, select **Cloud Discovery settings**, then the **App tags** tab. Click the plus icon. ![plus icon](media/plus-icon.png)
+1. From the **Settings** cog, select **Cloud Discovery settings**, then the **App tags** tab. Click the plus icon. ![plus icon.](media/plus-icon.png)
 
-   ![create custom app tag](media/create-app-tag.png)
+   ![create custom app tag.](media/create-app-tag.png)
 
 2. You can use the **App tags** table to view which apps are currently tagged with each app tag and you can delete unused app tags.
 
@@ -42,7 +42,7 @@ To create a custom app tag:
 
 > [!NOTE]
 >You can also create a new app tag directly in the **Discovered apps** table by clicking **Create app tag** after selecting the three dots to the right of any selected app. When you create the tag from the discovered app, you can apply it to the app. You can also access the **App tags** screen by clicking the **Manage tags** link in the corner.
-> ![create custom app tag from app](media/create-app-tag-from-app.png)
+> ![create custom app tag from app.](media/create-app-tag-from-app.png)
 
 ## Discovered app queries
 
@@ -54,11 +54,11 @@ To make an investigation even simpler, you can create custom queries and save th
 
 3. In the **Save query** pop-up, name your query.
 
-    ![new query](media/new-query.png)
+    ![new query.](media/new-query.png)
 
 4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
-    ![open query](media/discovered-app-query.png)
+    ![open query.](media/discovered-app-query.png)
 
 Cloud App Security also provides you with **Suggested queries** and enables you to save custom queries you frequently use. Suggested queries provide you with recommended avenues of investigation that filter your discovered apps by using the following optional suggested queries:
 
@@ -78,7 +78,7 @@ Cloud App Security also provides you with **Suggested queries** and enables you 
 
 - **GDPR ready cloud apps** - Filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren't.
 
-![query discovered apps](media/queries-discovered-apps.png)
+![query discovered apps.](media/queries-discovered-apps.png)
 
 Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
 
@@ -88,7 +88,7 @@ Additionally, you can use the suggested queries as a starting point for a new qu
 > [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
-> [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
+> [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
 > [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)

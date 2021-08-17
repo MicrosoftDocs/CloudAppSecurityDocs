@@ -8,7 +8,7 @@ ms.topic: overview
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes the differences between Cloud App Security and Office 365 Cloud App Security. For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+This article describes the differences between Cloud App Security and Office 365 Cloud App Security.
 
 For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
 
@@ -25,7 +25,7 @@ Office 365 Cloud App Security is a subset of Microsoft Cloud App Security that p
 |Capability|Feature|Microsoft Cloud App Security|Office 365 Cloud App Security|
 |----|----|----|----|
 |Cloud Discovery|Discovered apps |16,000 + cloud apps  |750+ cloud apps with similar functionality to Office 365|
-||Deployment for discovery analysis|Manual and automatic log upload|Manual log upload|
+||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual log upload|
 ||Log anonymization for user privacy|Yes||
 ||Access to full Cloud App Catalog|Yes||
 ||Cloud app risk assessment|Yes||

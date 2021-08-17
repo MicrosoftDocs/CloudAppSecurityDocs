@@ -51,7 +51,7 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 ### Step 2: Create a session policy
 
-1. In the Cloud App Security portal, select **Control** followed by **Policies**.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
 
 1. In the **Policies** page, click **Create policy** followed by **Session policy**.
 
@@ -99,9 +99,9 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 1. The file should be blocked and you should receive the message you set under **Customize block messages**.
 
-1. In the Cloud App Security portal, click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
 
-1. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
+1. In the policy report, you can see which logins were redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
 
 ## Next steps
 
