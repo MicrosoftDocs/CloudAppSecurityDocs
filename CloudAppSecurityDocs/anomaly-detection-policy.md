@@ -123,6 +123,7 @@ These detections identify users who perform:
 * Unusual multiple VM creation activities (preview)
 * Unusual multiple storage deletion activities (preview)
 * Unusual region for cloud resource (preview)
+* Unusual file access
 
 These policies look for activities within a single session with respect to the baseline learned, which could indicate on a breach attempt. These detections leverage a machine learning algorithm that profiles the users log on pattern and reduces false positives. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity.
 
