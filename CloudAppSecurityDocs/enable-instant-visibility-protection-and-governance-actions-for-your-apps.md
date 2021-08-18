@@ -61,6 +61,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Service  Now      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
 | Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
 | Slack (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Smartsheet (Preview) | ✔ | | ✔ |  | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
@@ -82,6 +83,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Service  Now      |                                      |                           |                           |
 | Salesforce        | ✔                                    | ✔                         | ✔                         |
 | Slack (Preview) |  |  |  |
+| Smartsheet (Preview) | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
 | Zendesk (Preview) |  |  |  |
@@ -103,6 +105,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Service  Now      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
 | Salesforce        | ✔                         | ✔                                        |                           | ✔                         |                                            |
 | Slack (Preview) |  |  | |  | |
+| Smartsheet (Preview) | | | | | |
 | Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
 | Zendesk (Preview) |  |  |  |  |  |
