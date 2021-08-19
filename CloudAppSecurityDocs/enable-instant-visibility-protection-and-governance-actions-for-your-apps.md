@@ -92,7 +92,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
-| AWS               |                           | ✔                                        | ✔                         | ✔                         | Not applicable                             |
+| AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
