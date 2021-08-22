@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 08/11/2021
+ms.date: 08/22/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
@@ -19,6 +19,22 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >[!IMPORTANT]
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+
+## Cloud App Security release 208
+
+August 22, 2021
+
+- **New discovered app experience in public preview**  
+As part of continuous improvement of our entity experiences, we're introducing a modernized discovered app experience to cover discovered web apps and OAuth apps and provide a unified view of an application entity. For more information, see [Working with the app page](working-with-app-page.md).
+
+- **App governance add-on to Cloud App Security available in public preview**  
+The app governance add-on to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs.  App governance delivers full visibility, remediation, and governance into how these apps access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. For more information:
+  - [Learn more about app governance](/microsoft-365/compliance/app-governance-manage-app-governance)
+  - [Learn about customer eligibility](/microsoft-365/compliance/app-governance-get-started)
+  - [Sign up for a free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+
+- **Smartsheet app connector available in public preview**  
+A new app connector for Smartsheet is available in public preview. You can now connect Microsoft Cloud App Security to Smartsheet to monitor and protect users and activities. For more information, see [Connect Smartsheet to Microsoft Cloud App Security](connect-smartsheet-to-microsoft-cloud-app-security.md).
 
 ## Cloud App Security release 207
 
