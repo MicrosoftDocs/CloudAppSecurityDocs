@@ -4,7 +4,7 @@ description: This article describes the features differences between Microsoft C
 ms.date: 03/01/2021
 ms.topic: overview
 ---
-# Microsoft Cloud App Security for title: Microsoft Cloud App Security for US Government offerings
+# Microsoft Cloud App Security for US Government offerings
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
