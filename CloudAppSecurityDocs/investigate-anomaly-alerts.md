@@ -435,10 +435,6 @@ This policy is based on learning the normal login behavior of a user. When a dev
 
 This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity.
 
-> [!NOTE]
-> Since the risk posed by a successful attack is high, Cloud App Security also notifies you of detections dating back to mid-September 2020.
-> Alerts for past events have the title "System alert: Unusual addition of credentials to an OAuth app" and the alert type will be MCAS_ALERT_MANAGEMENT_GENERIC.
-
 **Learning period**
 
 Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
