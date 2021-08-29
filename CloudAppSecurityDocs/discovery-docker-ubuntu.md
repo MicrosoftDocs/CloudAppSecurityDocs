@@ -49,14 +49,14 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the settings icon followed by **Log collectors**.
 
-    ![settings icon](media/settings-icon.png)
+    ![settings icon.](media/settings-icon.png)
 
 1. For each firewall or proxy from which you want to upload logs, create a matching data source.
 
     1. Click **Add data source**.  
-    ![Add a data source](media/add-data-source.png)
+    ![Add a data source.](media/add-data-source.png)
     1. **Name** your proxy or firewall.  
-    ![Name for your data source](media/ubuntu1.png)
+    ![Name for your data source.](media/ubuntu1.png)
     1. Select the appliance from the **Source** list. If you select **Custom log format** to work with a network appliance that isn't listed, see [Working with the custom log parser](custom-log-parser.md) for configuration instructions.
     1. Compare your log with the sample of the expected log format. If your log file format doesn't match this sample, you should add your data source as **Other**.
     1. Set the **Receiver type** to either **FTP**, **FTPS**, **Syslog – UDP**, or **Syslog – TCP**, or **Syslog – TLS**.
@@ -73,16 +73,16 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
     1. Click **Add log collector**.
     1. Give the log collector a **name**.
-    1. Enter the **Host IP address** of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
+    1. Enter the **Host IP address** (private IP address) of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
     1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
-    ![Select data sources to connect](media/ubuntu2.png)
+    ![Select data sources to connect.](media/ubuntu2.png)
 
-1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon](media/copy-icon.png)
+1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon. ![copy to clipboard icon.](media/copy-icon.png)
 
 1. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
-    ![Create log collector](media/windows7.png)
+    ![Create log collector.](media/windows7.png)
 
     > [!NOTE]
     >
@@ -223,12 +223,12 @@ The following steps describe the deployment in Ubuntu.
     (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
-    ![Create log collector](media/windows7.png)
+    ![Create log collector.](media/windows7.png)
 
-1. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
+6. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
 You should see the message: **Finished successfully!**
-![Command to verify that docker is running properly](media/ubuntu8.png)
+![Command to verify that docker is running properly.](media/ubuntu8.png)
 
 ### Step 3 - On-premises configuration of your network appliances
 
@@ -242,7 +242,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![Verify successful deployment of log collector](media/ubuntu9.png)
+![Verify successful deployment of log collector.](media/ubuntu9.png)
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 
@@ -261,7 +261,10 @@ Verify that the logs are being uploaded to Cloud App Security and that reports a
 1. Click the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
-![Custom continuous report](media/custom-continuous-report.png)
+    >[!NOTE]
+    >When applying filters on continuous reports, the selection will be included, not excluded. For example, if you apply a filter on a certain user group, only that user group will be included in the report.
+
+    ![Custom continuous report.](media/custom-continuous-report.png)
 
 ## Next steps
 

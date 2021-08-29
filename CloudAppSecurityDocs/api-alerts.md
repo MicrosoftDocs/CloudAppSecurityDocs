@@ -40,7 +40,7 @@ The response object defines the following properties.
 | Property | Type | Description |
 | --- | --- | --- |
 | _id | int | Alert type identifier |
-| timestamp | long | Timestamp of when the alert was raised |
+| timestamp | long | [Timestamp](api-introduction.md#timestamps) of when the alert was raised |
 | entities | list | A list of entities related to the alert |
 | title                | string | The title of the alert                                       |
 | description          | string | The alert's description                                          |

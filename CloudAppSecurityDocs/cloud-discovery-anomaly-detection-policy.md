@@ -20,7 +20,7 @@ For each policy, you set filters that enable you to selectively monitor applicat
 
 1. Select **Create policy** and select **Cloud Discovery anomaly detection policy**.
 
-    ![Create a Cloud Discovery policy](media/create-policy-from-shadow-it-tab.png)
+    ![Create a Cloud Discovery policy.](media/create-policy-from-shadow-it-tab.png)
 
 This will bring you to the **Create Cloud Discovery anomaly detection policy** page.
 
@@ -28,16 +28,16 @@ For each policy, set the following parameters:
 
 1. Decide if you want to base the policy on a template. One relevant policy template is the **Anomalous behavior in discovered users** template. It alerts when anomalous behavior is detected in discovered users and apps, such as: large amounts of uploaded data compared to other users, large user transactions compared to the user's history. You can also select the **Anomalous behavior of discovered IP addresses** template. This template alerts when anomalous behavior is detected in discovered IP addresses and apps, such as: large amounts of uploaded data compared to other IP addresses, large app transactions compared to the IP address's history.
 
-    ![Select policy template](media/anomaly-policy-template.png)
+    ![Select policy template.](media/anomaly-policy-template.png)
 
 1. Provide a **Policy name** and **Description**.
 
-    ![Select policy name and description](media/anomaly-name-description.png)
+    ![Select policy name and description.](media/anomaly-name-description.png)
 
 1. Create a filter for the apps you want to monitor by selecting **Select a filter**.
    You can select a filter by **App tag**, **Apps and domain**, **Category**, various **Risk factors**, or **Risk score.** To create additional filters, select **Add a filter**.
 
-    ![Select filter for apps](media/anomaly-filter-apps.png)
+    ![Select filter for apps.](media/anomaly-filter-apps.png)
 
 1. Under **Apply to**, set how you want the usage to be filtered. The usage being monitored can be filtered in two different ways:
 
@@ -56,7 +56,7 @@ For each policy, set the following parameters:
 
     - **Raise alerts only for suspicious activities occurring after** – Any increase in application usage before the selected date is ignored. However, activity from before the selected date is learned to establish the normal usage pattern.
 
-        ![Select usage to apply](media/anomaly-apply-to.png)
+        ![Select usage to apply.](media/anomaly-apply-to.png)
 
 1. Under **Alerts**, you can set the alert sensitivity. There are several ways to control the number of alerts triggered by the policy:
 
@@ -71,7 +71,7 @@ For each policy, set the following parameters:
 
     - If you select **Save as default settings**, your choices for **Daily alert limit**, email, and text message settings will become your organization's default settings. To fill in these default settings for a new policy, select **Restore default settings**.
 
-        ![Select alert settings](media/anomaly-alerts.png)
+        ![Select alert settings.](media/anomaly-alerts.png)
 
 1. Select **Create**.
 

@@ -44,17 +44,17 @@ To integrate with Azure Sentinel:
 
 1. On the **SIEM agents** tab, click add (**+**), and then choose **Azure Sentinel**.
 
-    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
+    ![Screenshot showing Add SIEM integration menu.](media/siem0.png)
 
 1. In the wizard, select the data types you want to forward to Azure Sentinel. You can configure the integration, as follows:
     1. **Alerts**: Alerts are automatically turned on once Azure Sentinel is enabled. <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
     1. **Discovery logs**: Use the slider to enable and disable them, by default, everything is selected, and then use the **Apply to** drop-down to filter which discovery logs are sent to Azure Sentinel.
 
-    ![Screenshot showing start page of Configure Azure Sentinel integration](media/siem-sentinel-configuration.png)
+    ![Screenshot showing start page of Configure Azure Sentinel integration.](media/siem-sentinel-configuration.png)
 
 1. Click **Next**, and continue to Azure Sentinel to finalize the integration. For information on configuring Azure Sentinel, see [/azure/sentinel/connect-cloud-app-security](/azure/sentinel/connect-cloud-app-security).
 
-    ![Screenshot showing finish page of Configure Azure Sentinel integration](media/siem-sentinel-configuration-complete.png)
+    ![Screenshot showing finish page of Configure Azure Sentinel integration.](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
 > New discovery logs will start forwarding to Azure Sentinel within 15 minutes of configuring them in the Cloud App Security portal.
@@ -107,7 +107,7 @@ You can get started quickly by using the following steps:
     > [!NOTE]
     > Currently, the app is not published on Microsoft AppSource. Therefore, you may need to contact your Power BI admin for permissions to install the app.
 
-    ![Screenshot showing the Shadow IT Discovery dashboard](media/siem-sentinel-configuration-powerbi-dashboard.png)
+    ![Screenshot showing the Shadow IT Discovery dashboard.](media/siem-sentinel-configuration-powerbi-dashboard.png)
 
 1. Optionally, build custom dashboards in Power BI Desktop and tweak it to fit the visual analytics and reporting requirements of your organization.
 
@@ -117,15 +117,15 @@ You can get started quickly by using the following steps:
 
 1. On the **Get started with your new app** page, click **Connect**.
 
-    ![Screenshot showing connect app data page](media/siem-sentinel-powerbi-connect.png)
+    ![Screenshot showing connect app data page.](media/siem-sentinel-powerbi-connect.png)
 
 1. On the workspace ID page, enter your Azure Sentinel workspace ID as displayed in your log analytics overview page, and then click **Next**.
 
-    ![Screenshot showing request for workspace ID](media/siem-sentinel-powerbi-workspace-id.png)
+    ![Screenshot showing request for workspace ID.](media/siem-sentinel-powerbi-workspace-id.png)
 
 1. On the authentication page, specify the authentication method and privacy level, and then click **Sign in**.
 
-    ![Screenshot showing the authentication page](media/siem-sentinel-powerbi-authentication.png)
+    ![Screenshot showing the authentication page.](media/siem-sentinel-powerbi-authentication.png)
 
 1. After connecting your data, go to the workspace **Datasets** tab and click **Refresh**. This will update the report with your own data.
 

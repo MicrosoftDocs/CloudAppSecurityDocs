@@ -33,7 +33,7 @@ The response object defines the following properties.
 | organization | string | The registered ISP |
 | tags| list | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
 | category | int | The category of the IP range. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
-| lastModified | long | Timestamp of the last rule changed |
+| lastModified | long | [Timestamp](api-introduction.md#timestamps) of the last rule changed |
 
 ## Filters
 

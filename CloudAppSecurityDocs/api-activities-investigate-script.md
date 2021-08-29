@@ -27,21 +27,21 @@ The activities API mode is optimized for scanning and retrieval of large quantit
 - "sortDirection": The sorting direction, possible values are "asc" and "desc"
 - "sortField": Fields used to sort activities. Possible values are:
   - date - The date when then the activity occurred (this is the default).
-  - created - The timestamp when the activity was saved.
+  - created - The [timestamp](api-introduction.md#timestamps) when the activity was saved.
 - "limit": Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data.
 
 ## Response parameters
 
 - "data": the returned data. Will contain up to "limit" number of records each iteration. If there are more records to be pulled (hasNext=true), the last few records will be dropped to ensure that all data is listed only once.
 - "hasNext": Boolean. Denotes whether another iteration on the data is needed.
-- "nextQueryFilters": If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the "filters" parameter in the next request.
+- "nextQueryFilters": If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the "filters" parameter in the next request. Note that if the "hasNext" parameter is set to False, this parameter will be missing since you've iterated over all of the data.
 
 The following Python example gets all the activities from the past day from Exchange Online.
 
 ``` python
 import requests
 import json
-ACTIVITIES_URL = 'https://<your_tenant>.<tenant_region>.contoso.com/api/v1/activities/'
+ACTIVITIES_URL = 'https://<your_tenant>.<tenant_region>.portal.cloudappsecurity.com/api/v1/activities/'
 
 your_token = '<your_token>'
 headers = {

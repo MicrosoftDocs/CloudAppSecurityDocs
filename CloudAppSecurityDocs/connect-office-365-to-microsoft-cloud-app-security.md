@@ -15,7 +15,7 @@ Cloud App Security supports the legacy Office 365 Dedicated Platform as well as 
 > [!NOTE]
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
 
-Cloud App Security supports the following Office 365 apps:
+Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from **all supported services**, such as:
 
 - Dynamics 365 CRM
 - Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
@@ -27,9 +27,6 @@ Cloud App Security supports the following Office 365 apps:
 - Skype for Business
 - Teams (only appears after activities from Teams are detected in the portal)
 - Yammer
-
-> [!NOTE]
-> Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
 
 ## How to connect Office 365 to Cloud App Security  
 
@@ -47,13 +44,13 @@ Cloud App Security supports the following Office 365 apps:
 > - [Multi-geo deployments](/office365/enterprise/office-365-multi-geo) are only supported for OneDrive
 >- In SharePoint and OneDrive, Cloud App Security supports user quarantine only for files in **Shared Documents** libraries (SharePoint Online) and files in the **Documents** library (OneDrive for Business).
 
-1. In the **Connected apps** page, click the plus button and select **Office 365**.
+1. In the **Connected apps** page, under **App connectors**, select **+Connect an app** and then select **Office 365**.
 
-    ![connect O365 menu option](media/connect-o365.png)
+    ![connect O365 menu option.](media/connect-o365.png)
 
 1. In the Office 365 pop-up, click **Connect Office 365**.
 
-    ![connect O365 pop-up](media/office-connect.png)
+    ![connect O365 pop-up.](media/office-connect.png)
 
 1. In the Office 365 components page, select the options you require, and then click **Connect**.
 
@@ -62,7 +59,7 @@ Cloud App Security supports the following Office 365 apps:
     > - For best protection, we recommend selecting all Office 365 components.
     > - The **Office 365 files** component, requires the **Office 365 activities** component and Cloud App Security file monitoring (**Settings** > **Files** > **Enable file monitoring**).
 
-    ![connect O365 components](media/connect-o365-components.png)
+    ![connect O365 components.](media/connect-o365-components.png)
 
 1. After Office 365 is displayed as successfully connected, click **Close**.
 

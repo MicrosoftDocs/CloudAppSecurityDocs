@@ -60,7 +60,7 @@ You're probably familiar with file classification labels in [Azure Information P
 > [!NOTE]
 >
 > - Labels with protection outside of Cloud App Security can be overridden by Cloud App Security, but can't be removed. In addition, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
-> - Conversely, files labeled by Cloud App Security and uploaded to SharePoint or OneDrive and the label applied encryption by using an account from a service principal name, the files can't be opened in Office on the web. Example scenarios include Cloud App Security and a file sent to Teams by email.
+> - Cloud App Security does not support reading labels of password-protected files.
 
 ## How to integrate Azure Information Protection with Cloud App Security
 
@@ -72,10 +72,10 @@ To enable Cloud App Security to scan files with content inspection enabled for c
 
 1. In Cloud App Security, under the settings cog, select the **Settings** page under the **System** heading.
 
-    ![Settings menu](media/azip-system-settings.png)
+    ![Settings menu.](media/azip-system-settings.png)
 1. Under **Azure Information Protection**, select **Automatically scan new files for Azure Information Protection classification labels**.
 
-    ![enable azure information protection](media/enable-azip.png)
+    ![enable azure information protection.](media/enable-azip.png)
 
 After enabling Azure Information Protection, you'll be able to see files that have classification labels and filter them per label in Cloud App Security. After Cloud App Security is connected to the cloud app, you'll be able to use the Azure Information Protection integration features to apply Azure Information Protection classification labels (with or without protection) in the Cloud App Security portal, by adding them directly to files or by configuring a file policy to apply classification labels automatically as a governance action.
 
@@ -88,20 +88,20 @@ By default, Cloud App Security scans classification labels that were defined in 
 
 To ignore classification labels set external to your organization, in the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go under **Settings** and **Azure Information Protection**. Select **Only scan files for Azure Information Protection classification labels and content inspection warnings from this tenant**.
 
-![ignore labels](media/azip-ignore.png)
+![ignore labels.](media/azip-ignore.png)
 
 ### Apply labels directly to files
 
 1. From the **Files** page under **Investigate**, select the file you want to protect. Select the three dots at the end of the file's row then choose **Apply classification label**.
 
-    ![protect app](media/protect-app.png)
+    ![protect app.](media/protect-app.png)
 
     >[!NOTE]
     > Cloud App Security can apply Azure Information Protection on files that are up to 50 MB.
 
 2. You're asked to choose one of your organization's classification labels to apply to the file, and click **Apply**.
 
-    ![protection classification label](media/protect-template.png)
+    ![protection classification label.](media/protect-template.png)
 
 3. After you choose a classification label and select apply, Cloud App Security will apply the classification label to the original file.
 
@@ -119,26 +119,26 @@ Follow these instructions to create the file policy:
 2. Set the policy to include the type of file you want to detect. For example, select all files where **Access level** doesn't equal **Internal** and where the **Owner OU** equals your finance team.
 3. Under governance actions for the relevant app, select **Apply a classification label** then select the label type.
 
-    ![Apply label](media/aip-gov-action.png)
+    ![Apply label.](media/aip-gov-action.png)
 
 > [!NOTE]
 >
-> - The ability to automatically apply an Azure Information Protection label through file policy is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
+> - The ability to apply an Azure Information Protection label is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
 > - When a policy is disabled, all pending labeling tasks for that policy are suspended.
 
 ### Control file exposure
 
 - For example, if you labeled the document below with an Azure Information Protection classification label:
 
-    ![sample Azure Information Protection screen](media/azip-screen.png)
+    ![sample Azure Information Protection screen.](media/azip-screen.png)
 
 - You can see this document in Cloud App Security by filtering on the classification label for Azure Information Protection in the **Files** page.
 
-    ![Cloud App Security compared to Azure Information Protection](media/cas-compared-azip.png)
+    ![Cloud App Security compared to Azure Information Protection.](media/cas-compared-azip.png)
 
 - You can get more information about these files and their classification labels in the file drawer. Just select the relevant file in the **Files** page and check whether it has a classification label.
 
-    ![file drawer](media/azip-file-drawer.png)
+    ![file drawer.](media/azip-file-drawer.png)
 
 - Then, you can create file policies in Cloud App Security to control files that are shared inappropriately and find files that are labeled and were recently modified.
 
@@ -154,7 +154,7 @@ Follow these instructions to create the file policy:
 2. Set the policy's name, severity, and category.
 3. Add the following filters to find all confidential data that is externally shared on Box:
 
-    ![confidentiality policy](media/azip-confidentiality-policy.png)
+    ![confidentiality policy.](media/azip-confidentiality-policy.png)
 
 **Sample policy - restricted data that was recently modified outside the Finance folder on SharePoint:**
 
@@ -162,7 +162,7 @@ Follow these instructions to create the file policy:
 2. Set the policy's name, severity, and category.
 3. Add the following filters to find all recently modified restricted files while excluding the Finance folder in the folder selection option:
 
-    ![restricted data policy](media/azip-restricted-data-policy.png)
+    ![restricted data policy.](media/azip-restricted-data-policy.png)
 
 You can also choose to set alerts, user notification or take immediate action for these policies.
 Learn more about [governance actions](governance-actions.md).

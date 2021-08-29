@@ -15,9 +15,9 @@ Cloud App Security comes preconfigured with built-in IP ranges for popular cloud
 > [!NOTE]
 >
 > - To use these built-in tags as part of a search, refer to their ID in the Cloud App Security API documentation.
-> - You can add IP ranges in bulk by creating a script using the **IP address ranges API**.
+> - You can add IP ranges in bulk by creating a script using the [IP address ranges API](api-data-enrichment.md).
 > - You cannot add IP ranges with overlapping IP addresses.
-> - To view the API documentation, in the Cloud App Security portal menu bar, click the question mark then **API documentation**.
+> - To view the API documentation, go to the Cloud App Security portal menu bar, click the question mark, and then select [API documentation](api-introduction.md).
 
 Built-in IP address tags and custom IP tags are considered hierarchically. Custom IP tags take precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence but there's a custom IP tag that identifies it as **Corporate**, the custom category and tags take precedence.
 
@@ -59,7 +59,7 @@ In the menu bar, click the settings icon. Select **IP address ranges**. Click th
 
 7. When you're done, click **Create**.
 
-    ![newipaddress range](media/newipaddress-range.png "newipaddress range")
+    ![newipaddress range.](media/newipaddress-range.png "newipaddress range")
 
 ## Next steps
 

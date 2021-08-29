@@ -26,29 +26,29 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
 1. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New flow**, and in the drop-down, under **Build your own from blank**, select **Automated cloud flow**.
 
-    ![Power Automate create new flow](media/flow-create-new.png)
+    ![Power Automate create new flow.](media/flow-create-new.png)
 
 1. Provide a name for the flow, and in **Choose your flow's trigger**, type **Cloud App Security** and select **When an alert is generated**.
 
-    ![Power Automate when an alert is generated](media/flow-when-alert.png)
+    ![Power Automate when an alert is generated.](media/flow-when-alert.png)
 
 1. Under **Authentication settings**, paste the API token from step 1. Give your connection a name and select **Create**.
 
-    ![Power Automate add token](media/add-token.png)
+    ![Power Automate add token.](media/add-token.png)
 
 1. Now create the playbook according to your requirements. Select **+New step** to define the workflow that should be triggered when a policy in Cloud App Security generates an alert. You can add an action, logical condition, switch case conditions, or loops and save the playbook. In this example, we'll be adding a [ServiceNow connector](/connectors/service-now/).
 
-    ![Power Automate workflow](media/flow-workflow.png)
+    ![Power Automate workflow.](media/flow-workflow.png)
 
 1. Continue to configure your playbook. The playbook will be automatically synchronized with Cloud App Security. For more information about creating playbooks in Power Automate, see [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go to **Policies**. In the row of the policy whose alerts you want to forward to Power Automate, select the three dots and then select **Edit Policy**.
 1. Under **Alerts**, select **Send Alerts to Power Automate** and choose the name of the playbook you created earlier from the drop-down menu.
 
-    ![Enable Power Automate in Cloud App Security portal](media/flow-mcas-config.png)
+    ![Enable Power Automate in Cloud App Security portal.](media/flow-mcas-config.png)
 
 1. Cloud App Security playbooks that you've authored or are granted access to can be seen by going to **Settings** -> **Security extensions**.
 
-    ![view playbooks in Cloud App Security](media/flow-extensions.png)
+    ![view playbooks in Cloud App Security.](media/flow-extensions.png)
 
 ## Related videos
 

@@ -23,7 +23,7 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
 >
 > - For a list of apps that support admin quarantine, see the list of [governance actions](governance-actions.md).
 > - If a file in SharePoint or OneDrive is detected to be malware, it is not quarantined in the Cloud App Security portal.
-> - Files with labels cannot be quarantined.
+> - Files labeled by Cloud App Security can't be quarantined.
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
 
@@ -31,11 +31,11 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
 
     - Manually apply the **Admin quarantine** action:
 
-        ![quarantine action](media/quarantine-action.png)
+        ![quarantine action.](media/quarantine-action.png)
 
     - Set it as an automated quarantine action in the policy:
 
-        ![quarantine automatically](media/quarantine-automated.png)
+        ![quarantine automatically.](media/quarantine-automated.png)
 
 1. When **Admin quarantine** is applied, the following things occur behind the scenes:
 
@@ -43,17 +43,17 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
     1. The original file is deleted.
     1. A tombstone file is uploaded to the original file location.
 
-        ![quarantine tombstone](media/quarantine-tombstone.png)
+        ![quarantine tombstone.](media/quarantine-tombstone.png)
 
     1. The user can only access the tombstone file. In the file, they can read the custom guidelines provided by IT and the correlation ID to give IT to release the file.
 
 1. When you receive the alert that a file has been quarantined, investigate the file in the Cloud App Security **Alerts** page:
 
-    ![quarantine alerts](media/quarantine-alerts.png)
+    ![quarantine alerts.](media/quarantine-alerts.png)
 
 1. And also in the **Policy Report** on the **Quarantined** tab:
 
-    ![quarantine report](media/quarantine-report.png)
+    ![quarantine report.](media/quarantine-report.png)
 
 1. After a file is quarantined, use the following process to remediate the threat situation:
 
@@ -62,7 +62,7 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
     1. If you find the file is against corporate policy, run the organization's Incident Response (IR) process.
     1. If you find that the file is harmless, you can restore the file from quarantine. At that point the original file is released, meaning it's copied back to the original location, the tombstone is deleted, and the user can access the file.
 
-      ![quarantine restore](media/quarantine-restore.png)
+      ![quarantine restore.](media/quarantine-restore.png)
 
 1. Validate that the policy runs smoothly. Then, you can use the automatic governance actions in the policy to prevent further leaks and automatically apply an Admin quarantine when the policy is matched.
 
@@ -83,10 +83,10 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
 
 1. Set a quarantine location:
     1. For Office 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
-        ![quarantine warning](media/quarantine-warning.png)
+        ![quarantine warning.](media/quarantine-warning.png)
 
         To set admin quarantine settings, under the settings cog, go to **Settings**. Provide a location for the quarantined files and a user notification that your user will receive when their file is quarantined.
-        ![quarantine settings](media/quarantine-settings.png)
+        ![quarantine settings.](media/quarantine-settings.png)
 
         > [!NOTE]
         > Cloud App Security only detects new SharePoint and OneDrive folders, including if they are set as the admin quarantine folder, after some file activity has been performed in them.

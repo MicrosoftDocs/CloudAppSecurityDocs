@@ -161,7 +161,7 @@ The device identification mechanism can request authentication from relevant dev
 1. When logging in to the protected app
     - Verify that you are redirected to the URL `<https://*.managed.access-control.cas.ms/aad_login>`
     - If you are using iOS, make sure you are using the Safari browser
-    - If you are using Firefox, you must also add the certificate to Firefox's own certificate store. All other browsers use the same default certificate store. Learn [how to add a certificate to the Firefox certificate store](http://www.jscape.com/blog/firefox-client-certificate).
+    - If you are using Firefox, you must also add the certificate to Firefox's own certificate store. All other browsers use the same default certificate store. Learn [how to add a certificate to the Firefox certificate store](https://www.jscape.com/blog/firefox-client-certificate).
 1. Validate that the client certificate prompted in your browser.
     - If it does not appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
 1. Verify that activities from these devices are populating the log. In Cloud App Security, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Valid client certificate**.
@@ -197,7 +197,7 @@ You can onboard the following types of apps for access and session controls:
 
 - Any (custom) apps: Custom line-of-business (LOB) or on-premises apps can be onboarded to session controls by an admin
 
-![Proxy list showing featured and any (custom) apps](media/troubleshooting-onboarding.png)
+![Proxy list showing featured and any (custom) apps.](media/troubleshooting-onboarding.png)
 
 When onboarding an app, it is crucial to make sure that you follow each step in the proxy deployment guides:
 
@@ -408,7 +408,7 @@ When routing a user through the Cloud App Security, you can notify the user that
 1. In Cloud App Security, in the menu bar, click the settings cog, and then select **Settings**.
 1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Cloud App Security.
 
-    ![Screenshot showing user monitoring options](media/proxy-user-monitoring.png)
+    ![Screenshot showing user monitoring options.](media/proxy-user-monitoring.png)
 
 1. Verify that the **Notify users that their activity is being monitored** option is selected.
 1. Choose whether you want to use the default message or provide a custom message.
@@ -431,7 +431,7 @@ If an end user is receiving a general failure after logging into an app from a t
     1. Validate that the SAML certificate that was uploaded is correct
     1. Verify that valid SSO URLs have been provided in the app configuration
     1. Validate that the attributes and values in the custom app are reflected in identity provider settings
-        ![Screenshot showing gather identity providers SAML information page](media/proxy-deploy-add-idp-ext-conf.png)
+        ![Screenshot showing gather identity providers SAML information page.](media/proxy-deploy-add-idp-ext-conf.png)
 1. If you still can't access the app, open a [support ticket](support-and-ts.md).
 
 ### Something Went Wrong page appears

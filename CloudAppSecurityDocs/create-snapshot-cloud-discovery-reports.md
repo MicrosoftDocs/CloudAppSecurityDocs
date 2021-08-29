@@ -18,24 +18,24 @@ To create a snapshot report:
 
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Discover**, and then select **Create snapshot report**.
 
-    ![Create new snapshot report](media/create-new-snapshot-report.png)
+    ![Create new snapshot report.](media/create-new-snapshot-report.png)
 
 1. Enter a **Report name** and a **Description**
 
-    ![New snapshot report](media/new-snapshot-report.png)
+    ![New snapshot report.](media/new-snapshot-report.png)
 
 1. Select the **Source** from which you want to upload the log files.
 
 1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Under **Verify your log format**, select **View log format** then select **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
 
-    ![Verify your log format](media/cloud-discovery-snapshot-verify.png)
+    ![Verify your log format.](media/cloud-discovery-snapshot-verify.png)
 
     > [!NOTE]
     > The FTP sample format is supported in snapshots and automated upload while syslog is supported in automated upload only. Downloading a sample log will download a sample FTP log.
 
 1. **Upload traffic logs** that you want to upload. You can upload up to 20 files at once. Compressed and zipped files are also supported.
 
-    ![Upload traffic logs](media/upload-traffic-logs.png)
+    ![Upload traffic logs.](media/upload-traffic-logs.png)
 
 1. Select **Upload logs**.
 
@@ -45,13 +45,13 @@ To create a snapshot report:
     After processing of your log files completes, you'll receive an email to notify you that it's done.
 
 1. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
-    ![processing log file menu bar](media/processing-log-file-menu-bar.png)
+    ![processing log file menu bar.](media/processing-log-file-menu-bar.png)
 
-1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by clicking the settings cog ![settings icon](media/settings-icon.png "settings icon"), and then select **Settings**.
+1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by clicking the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Settings**.
 
 1. Then under  **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
 
-    ![snapshot report management](media/snapshot-report-management.png)
+    ![snapshot report management.](media/snapshot-report-management.png)
 
 ## Using traffic logs for Cloud Discovery <a name="log-format"></a>
 

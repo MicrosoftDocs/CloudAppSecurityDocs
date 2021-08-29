@@ -51,7 +51,7 @@ To create a new file policy, follow this procedure:
 
 1. Click **Create policy** and select **File policy**.
 
-    ![Create a Information Protection policy](media/create-policy-from-information-protection-tab.png)
+    ![Create a Information Protection policy.](media/create-policy-from-information-protection-tab.png)
 
 1. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
@@ -80,7 +80,7 @@ To create a new file policy, follow this procedure:
 
 1. Once you've created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. The policy is automatically enabled upon creation and starts scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It's recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button in the Filters section.
 
-    ![file policy edit and preview results](media/file-policy-edit-and-preview-results.png)
+    ![file policy edit and preview results.](media/file-policy-edit-and-preview-results.png)
 
 1. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the "Matching now" files for the policy. Click the **History** tab to see a history back to up to six months of files that matched the policy.
 

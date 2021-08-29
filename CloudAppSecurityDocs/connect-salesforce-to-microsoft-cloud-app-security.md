@@ -1,7 +1,7 @@
 ---
 title: Connect Salesforce to Cloud App Security
 description: This article provides information about how to connect your Salesforce to Cloud App Security using the API connector for visibility and control over use.
-ms.date: 10/06/2019
+ms.date: 07/04/2021
 ms.topic: how-to
 ---
 # Connect Salesforce to Microsoft Cloud App Security
@@ -24,16 +24,16 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
     Check to see that your edition has REST API available and enabled as follows:
 
-    * Sign in to your Salesforce account and go to the **Setup** page.
+    * Sign in to your Salesforce account and go to the **Setup Home** page.
 
-    * Under **Manage Users**, go to the **User Profiles** page.
+    * Under **Administration** -> **Users**, go to the **Profiles** page.
 
-        ![salesforce manage users profiles](media/salesforce-manageusers-profiles.png)
+        ![Salesforce manage users profiles.](media/salesforce-profiles.png)
 
-    * Create a new profile by clicking **New**.
-    * Choose the profile you just created to deploy Cloud App Security and click **Edit**. This profile will be used for the Cloud App Security service account to set up the App connector.
+    * Create a new profile by selecting **New Profile**.
+    * Choose the profile you just created to deploy Cloud App Security and select **Edit**. This profile will be used for the Cloud App Security service account to set up the App connector.
 
-         ![salesforce edit profile](media/salesforce-edit-profile.png)
+         ![Salesforce edit profile.](media/salesforce-edit-profile.png)
 
     * Make sure you have the following checkboxes enabled:
       * **API Enabled**
@@ -46,41 +46,37 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
 1. If your organization has **Salesforce CRM Content** enabled, make sure that the current administrative account has it enabled as well.
 
-    1. Go to your Salesforce setup page.
+    1. Go to the Salesforce **Setup Home** page.
 
-        ![salesforce setup](media/salesforce-setup.png)
+    1. Under **Administration** -> **Users**, go to the **Users** page.
 
-    1. From the side-menu, select **Manage Users** and then click **Users**.
-
-        ![salesforce menu users](media/salesforce-menu-users.png)
+        ![Salesforce menu users.](media/salesforce-menu-users.png)
 
     1. Select the current administrative user to your dedicated Cloud App Security user.
 
     1. Make sure that the **Salesforce CRM Content User** check box is selected.
 
-        If it isn't selected, click **Edit** and then check the check box.
+        ![Salesforce crm content user.](media/salesforce-crm-content-user.png)
 
-        ![salesforce crm content user](media/salesforce-crm-content-user.png)
+    1. Go to **Setup Home** -> **Security** -> **Session Settings**. Under **Session Settings**, make sure that  **Lock sessions to the IP address from which they originated** check box is **not** selected.
 
-    1. Under **Session Settings**, make sure that the select **Lock sessions to the IP address from which they originated** check box is **not** selected.
+        ![Salesforce session settings.](media/salesforce-setup-session-settings.png)
 
-        ![salesforce session settings](media/salesforce-setup-session-settings.png)
+    1. Select **Save**.
 
-    1. Click **Save**.
+1. In the Cloud App Security console, select **Investigate** and then **Connected apps**.
 
-1. In the Cloud App Security console, click **Investigate** and then **Connected apps**.
+1. In the **App connectors** page, select the plus button followed by **Salesforce**.
 
-1. In the **App connectors** page, click the plus button followed by **Salesforce**.
+    ![Connect salesforce.](media/connect-salesforce.png)
 
-    ![connect salesforce](media/connect-salesforce.png)
-
-1. In the Salesforce settings page, on the API tab, click **Follow this link**, depending on which instance you want to install.
+1. In the Salesforce settings page, on the API tab, select **Follow this link**, depending on which instance you want to install.
 
 1. This opens the Salesforce sign in page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.
 
-    ![salesforce sign-in](media/salesforce-logon.png)
+    ![Salesforce sign-in.](media/salesforce-logon.png)
 
-1. Salesforce will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To proceed, click **Allow**.
+1. Salesforce will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To continue, select **Allow**.
 
 1. At this point, you'll receive a success or failure notice for the deployment. Cloud App Security is now authorized in Salesforce.com.
 
@@ -88,7 +84,7 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
 1. Make sure the connection succeeded by clicking **Test API**.
 
-    Testing may take a couple of minutes. After receiving a success notice, click **Done**.
+    Testing may take a couple of minutes. After receiving a success notice, select **Done**.
 
 After connecting Salesforce, you'll receive Events as follows: Triggers from the moment of connection, Log in events, and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days, or 1 day back - depending on your Salesforce EventMonitoring license. The Cloud App Security API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Cloud App Security takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Cloud App Security calculates this into a percentage and makes sure to always leave 10% of available API calls remaining.
 

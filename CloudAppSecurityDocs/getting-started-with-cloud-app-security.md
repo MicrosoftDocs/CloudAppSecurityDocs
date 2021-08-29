@@ -32,11 +32,11 @@ To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), in the side menu, click **show all**, and then select **Security**.
 
-    ![Access from Microsoft 365 admin center](media/access-from-o365.png)
+    ![Access from Microsoft 365 admin center.](media/access-from-o365.png)
 
 1. In the Microsoft 365 security page, click **More resources**, and then select **Cloud App Security**.
 
-    ![Select Cloud App Security](media/access-from-o365-s2.png)
+    ![Select Cloud App Security.](media/access-from-o365-s2.png)
 
 ## Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 
@@ -102,7 +102,7 @@ Required task: Enable Cloud App Security to view your cloud app use
     1. On the **Log collectors** tab, configure the log collector.
 
 **Migration recommendation**  
-We recommend using Cloud App Security discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Cloud App Security [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft Defender Security Center, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security) to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
+We recommend using Cloud App Security discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Cloud App Security [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft 365 Defender, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security) to forward signals to Cloud App Security. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
 
 ### To create a snapshot Cloud Discovery report
 

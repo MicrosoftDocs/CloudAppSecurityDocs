@@ -31,11 +31,11 @@ To enable Cloud App Security integration with Defender for Identity:
 
 1. In Cloud App Security, under the settings cog, select **Settings**.
 
-    ![Settings menu](media/azip-system-settings.png)
+    ![Settings menu.](media/azip-system-settings.png)
 
 1. Under **Threat Protection**, select **Microsoft Defender for Identity**.
 
-    ![enable azure advanced threat protection](media/mdi-integration.png)
+    ![enable azure advanced threat protection.](media/mdi-integration.png)
 
 1. Select **Enable Microsoft Defender for Identity data integration** and then click **Save**.
 

@@ -25,23 +25,23 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
 1. In your [Amazon Web Services console](https://console.aws.amazon.com/), under **Security, Identity & Compliance**, select **IAM**.
 
-    ![AWS identity and access](media/aws-identity-and-access.png "AWS identity and access")
+    ![AWS identity and access.](media/aws-identity-and-access.png "AWS identity and access")
 
 1. Select **Users** and then select **Add user**.
 
-    ![AWS users](media/aws-users.png "AWS users")
+    ![AWS users.](media/aws-users.png "AWS users")
 
 1. In the **Details** step, provide a new user name for Cloud App Security. Make sure that under **Access type** you select **Programmatic access** and select **Next Permissions**.<a name="set-permissions"></a>
 
-    ![Create user in AWS](media/aws-create-user.png "Create user in AWS")
+    ![Create user in AWS.](media/aws-create-user.png "Create user in AWS")
 
 1. Select **Attach existing policies directly**, and then **Create policy**.
 
-    ![Attach existing policies](media/attach-existing-policies.png)
+    ![Attach existing policies.](media/attach-existing-policies.png)
 
 1. Select the **JSON** tab:
 
-    ![AWS JSON tab](media/aws-json.png "AWS JSON tab")
+    ![AWS JSON tab.](media/aws-json.png "AWS JSON tab")
 
 1. Paste the following script into the provided area:
 
@@ -72,29 +72,29 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
 1. Select **Next: Tags**
 
-     ![AWS code](media/aws-code.png "AWS code")
+     ![AWS code.](media/aws-code.png "AWS code")
 
 1. Select **Next: Review**.
 
-    ![Add tags (optional)](media/aws-add-tags-optional.png)
+    ![Add tags (optional).](media/aws-add-tags-optional.png)
 
 1. Provide a **Name** and select **Create policy**.
 
-    ![Provide AWS policy name](media/aws-create-policy.png "Provide AWS policy name")
+    ![Provide AWS policy name.](media/aws-create-policy.png "Provide AWS policy name")
 
 1. Back in the **Add user** screen, refresh the list if necessary, and select the user you created, and select **Next: Tags**.
 
-    ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
+    ![Attach existing policy in AWS.](media/aws-attach-policy.png "Attach existing policy in AWS")
 
 1. Select **Next: Review**.
 
 1. If all the details are correct, select **Create user**.
 
-    ![User permissions in AWS](media/aws-user-permissions.png "Review user permissions in AWS")
+    ![User permissions in AWS.](media/aws-user-permissions.png "Review user permissions in AWS")
 
 1. When you get the success message, select **Download .csv** to save a copy of the new user's credentials. You'll need these later.
 
-    ![Download csv in AWS](media/aws-download-csv.png "Download csv in AWS")
+    ![Download csv in AWS.](media/aws-download-csv.png "Download csv in AWS")
 
     > [!NOTE]
     > After connecting AWS, you'll receive events for seven days prior to connection. If you just enabled CloudTrail, you'll receive events from the time you enabled CloudTrail.
@@ -109,25 +109,25 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
     1. Select the plus sign (**+**) followed by **Amazon Web Services**.
 
-        ![connect AWS auditing](media/connect-aws.png "connect AWS")
+        ![connect AWS auditing.](media/connect-aws.png "connect AWS")
 
     1. In the pop-up, provide a name for the connector, and then select **Connect Amazon Web Services**.
 
-        ![AWS auditing connector name](media/connect-aws-name.png)
+        ![AWS auditing connector name.](media/connect-aws-name.png)
 
     1. On the Connect Amazon Web services page, select **Security auditing**, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and select **Connect**.
 
-        ![Connect AWS app security auditing for new connector](media/aws-connect-app-audit.png "Connect AWS app security auditing")
+        ![Connect AWS app security auditing for new connector.](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
     **For an existing connector**
 
     1. In the list of connectors, on the row in which the AWS connector appears, select **Connect security auditing**.
 
-        ![Screenshot of the Connected Apps page, showing edit Security Auditing link](media/aws-connect-app-edit-audit.png)
+        ![Screenshot of the Connected Apps page, showing edit Security Auditing link.](media/aws-connect-app-edit-audit.png)
 
     1. On the Connect Amazon Web Services page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and select **Connect**.
 
-        ![Connect AWS app security auditing for existing connector](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
+        ![Connect AWS app security auditing for existing connector.](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
 
 1. Select **Test API** to make sure the connection succeeded.
 
@@ -171,11 +171,11 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
 1. On the permissions page, select **Attach existing policies directly**, apply the **AWSSecurityHubReadOnlyAccess** and **SecurityAudit** policies, and then select **Next Tags**.
 
-    ![Attach existing policy in AWS](media/aws-attach-policy.png "Attach existing policy in AWS")
+    ![Attach existing policy in AWS.](media/aws-attach-policy.png "Attach existing policy in AWS")
 
 1. Optional: Add tags to the user.
 
-    ![Add tags to user in AWS](media/aws-add-tags.png)
+    ![Add tags to user in AWS.](media/aws-add-tags.png)
 
     > [!NOTE]
     > Adding tags to the user won't affect the connection.
@@ -184,11 +184,11 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
 1. If all the details are correct, select **Create user**.
 
-    ![User permissions in AWS](media/aws-user-permissions.png "Review user permissions in AWS")
+    ![User permissions in AWS.](media/aws-user-permissions.png "Review user permissions in AWS")
 
 1. When you get the success message, select **Download .csv** to save a copy of the **Access key ID** and the **Secret access key**. You'll need these later.
 
-    ![Download csv in AWS](media/aws-download-csv.png "Download csv in AWS")
+    ![Download csv in AWS.](media/aws-download-csv.png "Download csv in AWS")
 
 ### Step 2: Connect Amazon Web Services security configuration to Cloud App Security
 
@@ -196,21 +196,21 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
 1. In the **Security configuration apps** tab, select the plus button, and then select **Amazon Web Services**.
 
-    ![connect AWS security configuration](media/connect-aws-security-configuration.png)
+    ![connect AWS security configuration.](media/connect-aws-security-configuration.png)
 
 1. In the **Instance name** page, choose the instance type, and then select **Next**.
 
     - For an existing connector, choose the relevant instance.
 
-        ![AWS instance selection](media/connect-aws-existing-instance.png)
+        ![AWS instance selection.](media/connect-aws-existing-instance.png)
 
     - For a new connector, provide a name for the instance.
 
-        ![AWS security configuration connector name](media/aws-connect-name.png)
+        ![AWS security configuration connector name.](media/aws-connect-name.png)
 
 1. In the **Account details** page, paste the **Access key** and **Secret key** from the .csv file into the relevant fields, and then select **Next**.
 
-    ![Connect AWS account details](media/aws-connect-account-details.png)
+    ![Connect AWS account details.](media/aws-connect-account-details.png)
 
 1. In the **Finished** page, make sure the connection succeeded, and then select **Finished**.
 

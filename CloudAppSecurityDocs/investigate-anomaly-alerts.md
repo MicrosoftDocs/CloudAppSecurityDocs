@@ -9,7 +9,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it is important to note that since anomaly detections are non-deterministic by nature, they are only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+Microsoft Cloud App Security provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it's important to note that since anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT\&CK
 
@@ -80,7 +80,7 @@ By default, the policy is configured to include only successful sign-in activiti
 
 **Learning period**
 
-Detecting anomalous locations requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Detecting anomalous locations requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -435,10 +435,6 @@ This policy is based on learning the normal login behavior of a user. When a dev
 
 This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity.
 
-> [!NOTE]
-> Since the risk posed by a successful attack is high, Cloud App Security also notifies you of detections dating back to mid-September 2020.
-> Alerts for past events have the title "System alert: Unusual addition of credentials to an OAuth app" and the alert type will be MCAS_ALERT_MANAGEMENT_GENERIC.
-
 **Learning period**
 
 Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
@@ -566,6 +562,29 @@ Establishing a new user's activity pattern requires an initial learning period o
 1. Review the download activities and create a list of downloaded files.
 1. Review the sensitivity of the downloaded files with the resource owner and validate the access level.
 
+### Unusual file access (by user)
+
+Activities indicating that a user performed an unusual number of file accesses in SharePoint or OneDrive to files that contain  financial data or network data as compared to the baseline learned. This can indicate an attempt to gain information about the organization, whether for financial purposes or for credential access and lateral movement. Cloud App Security creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
+
+**Learning period**
+
+The learning period depends on the user’s activity. Generally, the learning period is between 21 and 45 days for most users.
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activity wasn't performed by a legitimate user.
+
+    **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
+
+1. **FP** (Unusual behavior): If you can confirm that the user legitimately performed more file access activities than the established baseline.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the access activities and create a list of accessed files.
+1. Review the sensitivity of the accessed files with the resource owner and validate the access level.
+
 ### Unusual file share activity (by user)
 
 Activities indicating that a user performed an unusual number of file sharing actions from a cloud storage platform when compared to the baseline learned. This can indicate an attempt to gain information about the organization. Cloud App Security creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
@@ -668,6 +687,34 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 1. Review the deletion activities and create a list of deleted files. If needed, recover the deleted files.
 1. Optionally, create a playbook using Power Automate to contact users and their managers to verify the activity.
+
+### Investigation priority score increase (preview)
+
+Anomalous activities and activities that triggered alerts are given scores based on severity, user impact, and behavioral analysis of the user. The analysis is done based on other users in the tenants.
+
+When there's a significant and anomalous increase in the investigation priority score of a certain user, the alert will be triggered.
+
+This alert enables detecting potential breaches that are characterized by activities that don't necessarily trigger specific alerts but accumulate to a suspicious behavior for the user.
+
+**Learning period**
+
+Establishing a new user's activity pattern requires an initial learning period of seven days, during which alerts aren't triggered for any score increase.
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activities of the user aren't legitimate.
+  
+    **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
+
+1. **B-TP**: If you’re able to confirm that user indeed significantly deviated from usual behavior, but there's no potential breach.
+
+1. **FP**  (Unusual behavior): If you're able to confirm that the user legitimately performed the unusual activities, or more activities than the established baseline.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all user activity and alerts for additional indicators of compromise.
 
 ## See also
 

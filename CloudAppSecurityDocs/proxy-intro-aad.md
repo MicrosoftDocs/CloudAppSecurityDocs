@@ -88,7 +88,7 @@ When a client certificate check is performed, Cloud App Security checks for the 
 
 To configure a policy to leverage device management via client certificates:
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](media/settings-icon.png "settings icon") and select **Settings**.
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
 
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.
@@ -122,7 +122,7 @@ You can block access to native mobile and desktop client apps with access polici
 
 ### Session controls
 
-While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
+While session controls are built to work with any browser on any major platform on any operating system, we support [Microsoft Edge](https://www.microsoft.com/edge) (latest), [Google Chrome](https://www.google.com/chrome/) (latest), [Mozilla Firefox](https://www.mozilla.org/firefox/) (latest), or [Apple Safari](https://www.apple.com/safari/) (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
 >

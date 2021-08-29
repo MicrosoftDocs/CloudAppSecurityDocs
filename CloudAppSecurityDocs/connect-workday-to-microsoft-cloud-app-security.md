@@ -47,7 +47,7 @@ For more information about setting up Workday integration users, security groups
 
 1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
 
-    ![Screenshot of allowing user activity logging](media/connect-workday-enable-logging.png)
+    ![Screenshot of allowing user activity logging.](media/connect-workday-enable-logging.png)
 
 1. Search for "Edit tenant setup – security", and under **OAuth 2.0 Settings**, select **OAuth 2.0 Clients Enabled**.
 
@@ -65,7 +65,7 @@ For more information about setting up Workday integration users, security groups
     | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
-    ![Screenshot of registering API client](media/connect-workday-register-api-client.png)
+    ![Screenshot of registering API client.](media/connect-workday-register-api-client.png)
 
 1. Once registered, make a note for the following parameters, and then click **Done**.
 
@@ -75,25 +75,25 @@ For more information about setting up Workday integration users, security groups
     * Token Endpoint
     * Authorization Endpoint
 
-    ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
+    ![Screenshot of confirming registration of API client.](media/connect-workday-register-api-client-confirm.png)
 
 1. <a name="add-connector"></a>In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
 
 1. In the **App connectors** page, click the plus button and then **Workday**.
 
-    ![Screenshot of adding app connector](media/connect-workday-add-app.png)
+    ![Screenshot of adding app connector.](media/connect-workday-add-app.png)
 
 1. In the pop-up, add your instance name and then click **Connect Workday**.
 
-    ![Screenshot of adding instance name](media/connect-workday-add-app-connect.png)
+    ![Screenshot of adding instance name.](media/connect-workday-add-app-connect.png)
 
 1. On the next page, fill out the details with the information you noted earlier, and then click **Connect in Workday**.
 
-    ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
+    ![Screenshot of filling out app details.](media/connect-workday-add-app-connect-details.png)
 
 1. In Workday, a pop-up appears asking you if you want to allow Cloud App Security access to your Workday account. To proceed, click **Allow**.
 
-    ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
+    ![Screenshot of authorizing access to app.](media/connect-workday-add-app-allow.png)
 
 1. Back in the Cloud App Security portal, you should see a message that Workday was successfully connected. Make sure the connection succeeded by clicking **Test API**.
 

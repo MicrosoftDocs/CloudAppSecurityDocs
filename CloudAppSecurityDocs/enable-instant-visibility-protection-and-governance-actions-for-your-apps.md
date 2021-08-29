@@ -57,10 +57,14 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
 | Office 365        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Okta              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
+| OneLogin (Preview) | ✔ | | ✔ | ✔ | ✔ | ✔ |
 | Service  Now      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
 | Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
+| Slack (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Smartsheet (Preview) | ✔ | | ✔ |  | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
+| Zendesk (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 
 ### User and app governance
 
@@ -75,16 +79,20 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |
 | Office 365        | ✔                                    | ✔                         | ✔                         |
 | Okta              |                                      | Not applicable            | Not applicable            |
+| OneLogin (Preview) | |  |  |
 | Service  Now      |                                      |                           |                           |
 | Salesforce        | ✔                                    | ✔                         | ✔                         |
+| Slack (Preview) |  |  |  |
+| Smartsheet (Preview) | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
+| Zendesk (Preview) |  |  |  |
 
 ### Information protection
 
 |     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
-| AWS               |                           | ✔                                        | ✔                         | ✔                         | Not applicable                             |
+| AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
@@ -93,10 +101,14 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
 | Office 365        | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Okta              | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
+| OneLogin (Preview) |  |  |  |  |  |
 | Service  Now      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
 | Salesforce        | ✔                         | ✔                                        |                           | ✔                         |                                            |
-| Webex             | ✔                         | ✔                                        | ✔                         |                           | Not applicable                             |
+| Slack (Preview) |  |  | |  | |
+| Smartsheet (Preview) | | | | | |
+| Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
+| Zendesk (Preview) |  |  |  |  |  |
 
 ## Prerequisites
 
@@ -105,7 +117,7 @@ The following tables list, per cloud app, which abilities are supported with App
 - For each app that you want to connect with the Cloud App Security API integration, we recommend creating an admin service account dedicated to Cloud App Security.
 
 > [!NOTE]
-> To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+> To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 To use App Connectors, you need to make sure you have the following things for each specific app:
 

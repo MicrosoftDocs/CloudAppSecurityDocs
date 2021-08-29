@@ -72,7 +72,7 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 
 1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
 
-    ![Azure AD conditional access](media/azure-ad-caac-policy.png)
+    ![Azure AD conditional access.](media/azure-ad-caac-policy.png)
 
 1. Optionally, add conditions and grant controls as required.
 
@@ -89,10 +89,10 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [« PREVIOUS: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+> [PREVIOUS: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
-> [NEXT: How to create a session policy »](session-policy-aad.md)
+> [NEXT: How to create a session policy](session-policy-aad.md)
 
 ## See also
 
