@@ -107,7 +107,7 @@ This opens the Activity drawer **IP address** tab, which provides the following 
 
 ![IP address insights in Cloud App Security.](media/ip-address-insights.png)
 
-## Export activities <a name="export"></a>
+## Export activities
 
 You can export all user activities to a CSV file.
 
