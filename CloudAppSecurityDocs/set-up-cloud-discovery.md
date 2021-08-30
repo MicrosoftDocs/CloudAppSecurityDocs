@@ -66,7 +66,7 @@ The process of generating a risk assessment consists of the following steps. The
 - McAfee Secure Web Gateway
 - Menlo Security (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
-- Open Systems format
+- Open Systems Secure Web Gateway
 - Palo Alto series Firewall
 - Sonicwall (formerly Dell)
 - Sophos Cyberoam
@@ -116,7 +116,7 @@ Data attributes (according to vendor documentation):
 | McAfee SWG | **Yes** | No | No | **Yes** | **Yes** | **Yes** |
 | Menlo Security (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
-| Open Systems format | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Open Systems Secure Web Gateway | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |
