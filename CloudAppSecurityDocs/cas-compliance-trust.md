@@ -135,7 +135,7 @@ After data is deleted from a connected cloud application, Cloud App Security wil
 
 ### Exporting personal data
 
-Cloud App Security provides you with the ability to [export](activity-filters.md#export) to CSV all user activity and security alert information.
+Cloud App Security provides you with the ability to [export](activity-filters.md#export-activities) to CSV all user activity and security alert information.
 
 ## Security
 
