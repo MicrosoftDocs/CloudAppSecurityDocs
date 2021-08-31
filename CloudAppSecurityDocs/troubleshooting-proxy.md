@@ -510,9 +510,9 @@ As a temporary mitigation, you can workaround context loss issues, as follows:
 
 ### Blocking downloads cause PDF previews to be blocked
 
-Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Cloud App Security to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked:
+Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Cloud App Security to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked, with a message like this:
 
-![Blocked PDF preview](media/before-powershell.png)
+![Blocked download](media/before-powershell.png)
 
 To allow the preview, an Exchange administrator should perform the following steps:
 
