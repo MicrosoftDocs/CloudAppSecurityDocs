@@ -14,7 +14,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 - The Smartsheet user used for logging into Smartsheet must be a System Admin.
 - Supported Smartsheet licenses:
-  - Enterprise
+  - Enterprise plan with Platinum package.
 
 ## How to connect Smartsheet to Cloud App Security
 
