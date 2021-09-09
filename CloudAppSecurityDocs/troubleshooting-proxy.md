@@ -397,6 +397,7 @@ This section is for end users using apps protected by Cloud App Security and hel
 - [Clipboard actions or file controls are not being blocked](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Downloads are not being protected](#downloads-are-not-being-protected)
 - [Navigating to a particular URL of a suffixed app and landing on a generic page](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
+- [Blocking downloads cause PDF previews to be blocked](#blocking-downloads-cause-pdf-previews-to-be-blocked)
 - [Additional considerations](#app-additional-considerations)
 
 ### User monitoring page is not appearing
@@ -507,22 +508,39 @@ For apps experiencing context loss, please submit a support ticket. We will work
 
 <a name="app-additional-considerations"></a>
 
+### Blocking downloads cause PDF previews to be blocked
+
+Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Cloud App Security to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked, with a message like this:
+
+![Blocked download](media/before-powershell.png)
+
+To allow the preview, an Exchange administrator should perform the following steps:
+
+1. Download the [Exchange Online PowerShell Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.4).
+1. Connect to the module using the commands described in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa-and-modern-authentication)
+1. After you've connected to the Exchange Online PowerShell, use the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet to update the parameters in the policy:
+
+    ```powershell
+    Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -DirectFileAccessOnPrivateComputersEnabled $false -DirectFileAccessOnPublicComputersEnabled $false
+    ```
+
+    >[!NOTE]
+    >The **OwaMailboxPolicy-Default** policy is the default OWA policy name in Exchange Online. Some customers may have deployed additional or created a custom OWA policy with a different name. If you have multiple OWA policies, they may be applied to specific users. Therefore, you'll need to also update them to have complete coverage.
+
+1. After these parameters have been set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file.
+
+    ![PDF preview not blocked](media/after-powershell.png)
+
 ### Additional considerations
 
 While troubleshooting apps, there are some additional things to consider.
 
 - **Session controls support for modern browsers**
 
-    Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. Whilst we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
+    Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
 
 - **Double login**
 
     A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Cloud App Security assumes an app uses a nonce. If you are confident the app does not use a nonce, you can disable this by editing the app in Cloud App Security and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
 
     If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
-
-- **Previewing or printing PDF files may be blocked**
-
-    This is normal behavior when you have a policy configured to block downloads. Occasionally when previewing or printing PDF files, apps initiate a download of the file causing Cloud App Security to intervene to ensure the download is blocked and that data is not leaked from your environment.
-
-    If you would like to allow PDF file downloads, you can exclude PDF files based on their file extension in the relevant session policy.
