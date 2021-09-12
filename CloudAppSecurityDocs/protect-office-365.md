@@ -12,21 +12,7 @@ As a major productivity suite providing cloud file storage, collaboration, BI, a
 
 Connecting Office 365 to Cloud App Security gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
-Using the Office 365 connector provides protection for the following products:
-
-- Dynamics 365 CRM
-- Exchange
-- Office 365
-- OneDrive
-- Power Automate
-- Power BI
-- SharePoint
-- Skype for Business
-- Teams
-- Yammer
-
-> [!NOTE]
-> Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from **all supported services**, such as PowerApps, Forms, Sway, and Stream.
+Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and provides protection for all supported services. For a list of supported services, see [Microsoft 365 services that support auditing](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#microsoft-365-services-that-support-auditing).
 
 ## Main threats
 
