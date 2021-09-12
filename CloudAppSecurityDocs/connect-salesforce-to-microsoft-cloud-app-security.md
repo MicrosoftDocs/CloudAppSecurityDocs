@@ -62,6 +62,11 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
         ![Salesforce session settings.](media/salesforce-setup-session-settings.png)
 
+    1. Go to **Build** -> **Customize** -> **Salesforce Files** -> **Settings** -> **Content Deliveries and Public Links**.
+    
+    1. Select **Edit** and then select **Checked Content Deliveries feature can be enabled for users**
+
+
     1. Select **Save**.
 
 1. In the Cloud App Security console, select **Investigate** and then **Connected apps**.
