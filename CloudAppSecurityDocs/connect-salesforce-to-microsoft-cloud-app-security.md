@@ -40,6 +40,7 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
       * **View All Data**
       * **Manage Salesforce CRM Content**
       * **Manage Users**
+      * **Content Deliveries**
       * **[Query All Files](https://go.microsoft.com/fwlink/?linkid=2106480)**
 
       If these checkboxes aren't selected, you may need to contact Salesforce to add them to your account.
