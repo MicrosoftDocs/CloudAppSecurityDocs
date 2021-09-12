@@ -15,18 +15,7 @@ Cloud App Security supports the legacy Office 365 Dedicated Platform as well as 
 > [!NOTE]
 > In some cases, a vNext service release differs slightly at the administrative and management levels from the standard Office 365 offering.
 
-Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from **all supported services**, such as:
-
-- Dynamics 365 CRM
-- Exchange (only appears after activities from Exchange are detected in the portal, and requires you to turn on auditing)
-- Office
-- OneDrive
-- Power Automate
-- Power BI (only appears after activities from Power BI are detected in the portal, and requires you to turn on auditing)
-- SharePoint
-- Skype for Business
-- Teams (only appears after activities from Teams are detected in the portal)
-- Yammer
+Cloud App Security integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and receives all audited events from all supported services. For a list of supported services, see [Microsoft 365 services that support auditing](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#microsoft-365-services-that-support-auditing).
 
 ## How to connect Office 365 to Cloud App Security  
 
@@ -43,6 +32,7 @@ Cloud App Security integrates directly with [Office 365's audit logs](/microsoft
 >- For Azure AD sign-in activities, Cloud App Security only surfaces interactive sign-in activities and sign-in activities from legacy protocols such as ActiveSync. Noninteractive sign-in activities may be viewed in the Azure AD audit log.
 > - [Multi-geo deployments](/office365/enterprise/office-365-multi-geo) are only supported for OneDrive
 >- In SharePoint and OneDrive, Cloud App Security supports user quarantine only for files in **Shared Documents** libraries (SharePoint Online) and files in the **Documents** library (OneDrive for Business).
+> - Events from **Exchange**, **Power BI**, and **Teams** will only appear after activities from those services are detected in the portal.
 
 1. In the **Connected apps** page, under **App connectors**, select **+Connect an app** and then select **Office 365**.
 
