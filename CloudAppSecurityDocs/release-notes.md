@@ -22,7 +22,7 @@ Starting in early July 2021, we will change our access endpoint from `<mcas-dc-i
 
 For more information on what's new with other Microsoft Defender security products see:
 
-- [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new.md)
+- [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-atp)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
