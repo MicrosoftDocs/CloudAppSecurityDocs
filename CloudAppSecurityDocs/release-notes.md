@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 08/22/2021
+ms.date: 09/19/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
@@ -20,12 +20,21 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
 
-For more information on what's new with other Microsoft Defender security products see:
+For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-atp)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
+## Cloud App Security release 209 and 210
+
+September 19, 2021
+
+- **Impossible travel, activity from infrequent countries, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
+After a thorough security review, we decided to separate failed login handling from the alerts mentioned above. From now on, they'll only be triggered by successful login cases and not by unsuccessful logins or attack attempts. Mass failed login alert will still be applied if there are anomalous high amount of failed login attempts on a user.
+
+- **New anomaly detection: Unusual ISP for an OAuth app**  
+We've extended our anomaly detections to include suspicious addition of privileged credentials to an OAuth app. The new detection is now available out-of-the-box and automatically enabled. The detection can indicate that an attacker has compromised the app and is using it for malicious activity. For more information, see  [Unusual ISP for an OAuth app](investigate-anomaly-alerts.md#unusual-isp-for-an-oauth-app).
 
 ## Cloud App Security release 208
 
