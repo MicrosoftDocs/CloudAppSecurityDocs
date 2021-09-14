@@ -44,7 +44,7 @@ Cloud App Security's built in DLP engines perform content inspection by extracti
 Below is a list of the file filters that can be applied. To provide you with a powerful tool for policy creation, most filters support multiple values and a NOT.
 
 > [!NOTE]
-> When using the file policy filters, **Contains**  will search only for **full words** – separated by comas, dots, spaces or underscores to search.
+> When using the file policy filters, **Contains**  will search only for **full words** – separated by commas, dots, or spaces to search.
 >
 > - Spaces between words function like OR, for example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both malware-virus.exe and virus.exe.
 > - If you want to search for a string, enclose the words in quotation marks. This functions like AND, for example: if you search for **"malware"** **"virus"**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe and it will not find malware.exe. However, it will search for the exact string. If you search for **"malware virus"** it will not find **"virus"** or **"virus_malware"**.
