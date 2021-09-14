@@ -439,6 +439,30 @@ This detection identifies the suspicious addition of privileged credentials to a
 
 Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
 
+### Unusual ISP for an OAuth app
+
+The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
+
+**Learning period** 
+
+The learning period for this detection is 30 days.  
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activity wasn't a legitimate activity of the OAuth app or that this ISP is not used by the legitimate OAuth app.
+
+    **Recommended action**: Revoke all the access tokens of the OAuth app and investigate if an attacker has access to generating OAuth access tokens.
+
+1. **FP**: If you can confirm that the activity was made legitimately by the genuine OAuth app.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the activities performed by the OAuth app.
+
+1. Investigate if an attacker has access to generating OAuth access tokens.
+
 ## Collection alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to gather data of interest to their goal from your organization.
@@ -464,30 +488,6 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 1. Review the activity log to gain a better understanding of other activities performed by the user. Look at the IP address they are logged in from and the device details.
 1. Contact your Power BI team or Information Protection team to understand the guidelines for sharing reports internally and externally.
-
-### Unusual ISP for an OAuth app
-
-The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
-
-**Learning period** 
-
-The learning period for this detection is 30 days.  
-
-**TP**, **B-TP**, or **FP**?
-
-1. **TP**: If you're able to confirm that the activity wasn't a legitimate activity of the OAuth app or that this ISP is not used by the legitimate OAuth app.
-
-    **Recommended action**: Revoke all the access tokens of the OAuth app and investigate if an attacker has access to generating OAuth access tokens.
-
-1. **FP**: If you can confirm that the activity was made legitimately by the genuine OAuth app.
-
-    **Recommended action**: Dismiss the alert.
-
-**Understand the scope of the breach**
-
-1. Review the activities performed by the OAuth app.
-
-1. Investigate if an attacker has access to generating OAuth access tokens.
 
 ### Suspicious Power BI report sharing
 
