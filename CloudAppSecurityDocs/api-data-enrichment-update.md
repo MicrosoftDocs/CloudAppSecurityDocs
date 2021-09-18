@@ -18,13 +18,17 @@ POST /api/v1/subnet/<ip_range_id>/update_rule/
 
 ## Request BODY parameters
 
-| Parameter | Description |
-| --- | --- |
-| name | The unique name of the range |
-| category | The id of the range category. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
-| subnets | An array of masks as strings (IPv4 / IPv6) |
-| organization (Optional) | The registered ISP |
-| tags (Optional) | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
+| Parameter | Type | Description |
+| --- | --- | --- |
+| name | string | The unique name of the range |
+| _id (Optional)| string | The IP range id. Required if you are not changing the name. |
+| category | int | The id of the range category. Providing a category helps you easily recognize activities from interesting IP addresses. Possible values include:<br /><br />**1**: Corporate<br />**2**: Administrative<br />**3**: Risky<br />**4**: VPN<br />**5**: Cloud provider<br />**6**: Other |
+| subnets | list | An array of masks as strings (IPv4 / IPv6) |
+| overrideOrganization (Optional) | bool | Flag to enable or disable overriding the Organization field. |
+| organization (Optional) | string | The registered ISP |
+| tags (Optional) | list | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
+| overrideLocation (Optional) | bool | Flag to enable or disable overriding the Location field. |
+| location (Optional) | string |An object including the location name, latitude, longitude, country code, and country name|
 
 ## Example
 
