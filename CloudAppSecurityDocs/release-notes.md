@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 09/19/2021
+ms.date: 10/10/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
@@ -26,9 +26,9 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-atp)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
-## Cloud App Security release 209 and 210
+## Cloud App Security release 209, 210, and 211
 
-September 19, 2021
+October 10, 2021
 
 - **Impossible travel, activity from infrequent countries, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
 After a thorough security review, we decided to separate failed login handling from the alerts mentioned above. From now on, they'll only be triggered by successful login cases and not by unsuccessful logins or attack attempts. Mass failed login alert will still be applied if there are anomalous high amount of failed login attempts on a user.
