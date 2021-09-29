@@ -36,7 +36,6 @@ The following table describes the supported filters:
 | isExternal | boolean | eq | The entity's affiliation. Possible values include:<br /><br />**true**: External<br />**false**: Internal<br />**null**: No value |
 | domain | string | eq, neq, isset, isnotset | The entity's related domain |
 | organization | string | eq, neq, isset, isnotset | Filter entities with the specified organization unit |
-| lastSeen | timestamp | lte, gte, | range Filter entities that were last seen between the given dates |
 | status | string | eq, neq | Filter entities by status. Possible values include:<br /><br />**0**: N/A<br />**1**: Staged<br />**2**: Active<br />**3**: Suspended<br />**4**: Deleted |
 | score | integer | lt, gt, isset, isnotset | Filter entities by their Investigation Priority Score |
 
