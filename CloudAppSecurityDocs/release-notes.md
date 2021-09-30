@@ -20,7 +20,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
 >[!NOTE]
->On November 15, 2021, Cloud App Security will update its IP addresses in the **App connectors** section. Please update the IP addresses in your third-party apps accordingly. For more information, see the [App connector] (network-requirements.md#app-connector) section in the Network requirements page.
+>On November 15, 2021, Cloud App Security will update its IP addresses in the **App connectors** section. Please update the IP addresses in your third-party apps accordingly. For more information, see the [App connector](network-requirements.md#app-connector) documentation.
 
 For more information on what's new with other Microsoft Defender security products see:
 
