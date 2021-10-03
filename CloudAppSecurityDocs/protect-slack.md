@@ -1,10 +1,10 @@
 ---
-title: How Cloud App Security helps protect your Slack Enterprise (Preview)
+title: How Cloud App Security helps protect your Slack Enterprise
 description: This article provides information about the benefits of connecting your Slack Enterprise app to Cloud App Security using the API connector for visibility and control over use.
 ms.date: 06/09/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Slack Enterprise (Preview)
+# How Cloud App Security helps protect your Slack Enterprise
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
