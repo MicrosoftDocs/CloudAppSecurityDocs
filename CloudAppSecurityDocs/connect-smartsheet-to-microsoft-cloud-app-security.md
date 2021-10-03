@@ -19,6 +19,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ## How to connect Smartsheet to Cloud App Security
 
 ### Configure Smartsheet
+>[!NOTE]
+>The Smartsheet license must be an Enterprise plan with Platinum package.
 
 1. Register to add **Developer Tools** to your existing Smartsheet account:
     1. Add your Smartsheet mail [here](https://developers.smartsheet.com/register/).
