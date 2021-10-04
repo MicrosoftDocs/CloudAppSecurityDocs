@@ -21,7 +21,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
   - Enterprise Plus
  
  >[!NOTE]
-> Connecting Zendesk to Cloud App Security with a Zendesk user that is not an admin will result with connection error.
+> Connecting Zendesk to Cloud App Security with a Zendesk user that is not an admin will result in a connection error.
 
 ## How to connect Zendesk to Cloud App Security
 
