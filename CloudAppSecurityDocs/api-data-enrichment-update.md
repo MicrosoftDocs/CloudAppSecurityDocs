@@ -26,7 +26,6 @@ POST /api/v1/subnet/<ip_range_id>/update_rule/
 | overrideOrganization (Optional) | bool | Flag to enable or disable overriding the Organization field. |
 | organization (Optional) | string | The registered ISP |
 | tags (Optional) | list | An array of new or existing objects including the tag name, id, description, name template, and tenant id |
-| location (Optional) | string |An object including the location name, latitude, longitude, country code, and country name|
 
 ## Example
 
