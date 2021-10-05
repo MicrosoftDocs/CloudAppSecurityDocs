@@ -44,7 +44,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
     * To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](azip-integration.md) for information.
+1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](mdi-integration.md) for information.
 
 1. If at any point you want to back up your portal settings, this screen enables you to do that. Select **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
 
