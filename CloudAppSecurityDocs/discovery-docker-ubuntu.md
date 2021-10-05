@@ -19,7 +19,9 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 * Disk space: 250 GB
 
-* CPU: 2
+* CPU cores: 2
+
+* CPU Architecture: Intel® 64 and AMD 64
 
 * RAM: 4 GB
 
