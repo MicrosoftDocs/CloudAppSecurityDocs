@@ -10,6 +10,9 @@ ms.topic: reference
 
 Run the POST request to update an existing IP address range.
 
+    > [!IMPORTANT]
+    > This endpoint is not built for partial updates. All required parameters must be passed and any optional parameters will get an empty value if not passed.
+
 ## HTTP request
 
 ```rest
