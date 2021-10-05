@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security compliance, data security, privacy, trust
+title: Cloud App Security data security and privacy practices
 description: This article describes the Cloud App Security compliance offering, trust center, privacy, and data security.
 ms.date: 02/22/2021
 ms.topic: overview
@@ -82,7 +82,7 @@ Microsoft provides transparency about its practices:
 - Affirming that your data is used only to deliver agreed-upon services.
 - Specifying how Microsoft engineers and approved subcontractors use this data to provide services.
 
-Microsoft uses strict controls to govern access to customer data, granting the lowest level of access required to complete key tasks and revoking access when it is no longer needed.
+Microsoft uses strict controls to govern access to customer data, granting the lowest level of access required to complete key tasks and revoking access when it's no longer needed.
 
 ### Data protection
 
@@ -100,6 +100,10 @@ Cloud App Security retains data as follows:
 You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
 
 [Learn more about transparency](https://www.microsoft.com/trust-center/privacy/data-management)
+
+### Deleting personal data
+
+After a user's account  is deleted from a connected cloud application, Cloud App Security will automatically delete the copy of the data within two years.
 
 ### Data flow
 
@@ -128,10 +132,6 @@ The following table show what data is surfaced for each product integration:
 
 > [!NOTE]
 > Other products may not enforce Cloud App Security role-based security permissions to control who has access to what data. Therefore, before integrating with other products, make sure you understand what data is sent to the product you want to use and who has access to it.
-
-### Deleting personal data
-
-After data is deleted from a connected cloud application, Cloud App Security will automatically delete the copy of the data within 2 years.
 
 ### Exporting personal data
 
@@ -162,7 +162,7 @@ Cloud App Security enables you to scope your deployment. Scoping enables you to 
 
 ### Anonymization
 
-You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](cloud-discovery-anonymizer.md).
+You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to Microsoft Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](cloud-discovery-anonymizer.md).
 
 ## Security and Privacy for Cloud App Security US Government GCC High customers
 
