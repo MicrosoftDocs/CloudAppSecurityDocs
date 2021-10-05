@@ -105,6 +105,10 @@ You can learn more about Microsoft data practices by reading the [Online Service
 
 After a user's account  is deleted from a connected cloud application, Cloud App Security will automatically delete the copy of the data within two years.
 
+### Exporting personal data
+
+Cloud App Security provides you with the ability to [export](activity-filters.md#export-activities) to CSV all user activity and security alert information.
+
 ### Data flow
 
 Cloud App Security provides you with the convenience of working with some data, such as alerts and activities, without disrupting your usual security workflow. For example, SecOps may prefer to view alerts in their preferred SIEM product such as [Azure Sentinel](siem-sentinel.md). To enable such workflows, when integrating with Microsoft or third-party products, Cloud App Security exposes some data through them.
@@ -132,10 +136,6 @@ The following table show what data is surfaced for each product integration:
 
 > [!NOTE]
 > Other products may not enforce Cloud App Security role-based security permissions to control who has access to what data. Therefore, before integrating with other products, make sure you understand what data is sent to the product you want to use and who has access to it.
-
-### Exporting personal data
-
-Cloud App Security provides you with the ability to [export](activity-filters.md#export-activities) to CSV all user activity and security alert information.
 
 ## Security
 
