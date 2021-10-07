@@ -19,7 +19,7 @@ The **Cloud app catalog** rates risk for your cloud apps based on regulatory cer
 3. Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
 4. Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
 
-![Cloud app catalog.](media/cloud-app-catalog.png)
+![Screenshot showing the cloud app catalog.](media/cloud-app-catalog.png)
 
 The demand by business units for cloud apps as a solution to their changing needs is growing. The Cloud app catalog enables you to wisely choose which apps fit your organization's security requirements. The catalog keeps you up-to-date with the latest security standards, vulnerabilities, and breaches.
 
@@ -32,7 +32,7 @@ For example, say you want to compare CRM apps and make sure they're adequately s
 5. Set **Security risk factor** for **Admin audit trail** equals **True**.
 6. Select **Security risk factor** for **User audit trail** equals **True**.
 
-![Cloud app catalog filters.](media/cloud-app-catalog-filters.png)
+![Screenshot showing cloud app catalog filters.](media/cloud-app-catalog-filters.png)
 
 After the results are filtered, you can review the relevant apps and find the one that best fits your needs.
 
@@ -57,13 +57,13 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
 1. At the top of the **Discovered apps** page, click the three dots and then select **Suggest new app**.
 
-    ![Suggest an app to Cloud App Security.](media/suggest-new-app.png)
+    ![Screenshot showing the **Suggest an app** menu item in Cloud App Security.](media/suggest-new-app.png)
 
 2. In the **Suggest new cloud app** pop-up, fill in details about the new app. Include the name and domain of the app.
 
-    ![Suggest an app pop-up to Cloud App Security.](media/suggest-new-app-pop-up.png)
+    ![Screenshot showing the **Suggest new cloud app** pop-up box in Cloud App Security.](media/suggest-new-app-pop-up.png)
 
-3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. 
+3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed.
 
 **To update a risk factor, score, or update app data:**
 
@@ -99,22 +99,22 @@ It's important to take a minute to review and modify the default weights given t
 
 3. Additionally, you can set whether certain values are either not available or not applicable in the score calculation. When included, N/A values have a negative contribution to the calculated score.
 
-    ![score metrics.](media/score.png)
+    ![Screenshot showing score metrics.](media/score.png)
 
 All the information needed to understand how the Cloud App Security risk scores are stacking up is available in the Cloud App Security portal. To better understand a risk factor's weight in a specific risk category, use the "i" button to the right of each field name in the app's profile. This provides information about how exactly Cloud App Security scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
 
-![risk calculation.](media/cac-weight.png)
+![Screenshot showing a risk calculation.](media/cac-weight.png)
 
 To understand a risk category's weight in an app's total score, hover over the risk category score:
 
-![risk category weight.](media/risk-category-weight.png)
+![Screenshot showing a risk category weight.](media/risk-category-weight.png)
 
 ## Overriding the risk score
 
 To override the risk score, in the **Discovered apps** table or in the **Cloud app catalog**, click the three dots to the right of any app and select **Override app score**.
 You can override the risk score of an app without changing the way it's weighted so that you get immediate results for your organization. For example, The risk score of an LOB app you use is 8. However, the app is sanctioned and encouraged by your organization. You might want to change the risk score to 10 for the LOB app.
 
-![override cloud app security app risk score.](media/override-risk-score.png)
+![Screenshot of overriding a risk score in Cloud App Security.](media/override-risk-score.png)
 
 After you update the score, you can include app notes to make your business justification for modifying this app score clear to other administrators.
 

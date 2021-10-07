@@ -378,7 +378,7 @@ Use these steps to define custom ports.
 Occasionally, you may need to investigate issues such as the following:
 
 - **Log collectors are receiving data**: Validate that log collectors are receiving Syslog messages from your appliances and are not blocked by firewalls.
-- **Received data is in the correct log format**: Validate the log format to help you troubleshoot parsing errors by comparing the log format expected by Cloud App security and the one sent by your appliance.
+- **Received data is in the correct log format**: Validate the log format to help you troubleshoot parsing errors by comparing the log format expected by Cloud App Security and the one sent by your appliance.
 
 Use these steps to validate the traffic received by log collectors.
 
