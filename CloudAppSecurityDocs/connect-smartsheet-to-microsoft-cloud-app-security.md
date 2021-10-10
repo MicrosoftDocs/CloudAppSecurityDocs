@@ -13,8 +13,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ## Prerequisites
 
 - The Smartsheet user used for logging into Smartsheet must be a System Admin.
-- Supported Smartsheet licenses:
-  - Enterprise plan with Platinum package.
+- Event Reporting must be enabled by Smartsheet either through Stand Alone purchase or via Enterprise plan with Advance Platinum package.
+
 
 ## How to connect Smartsheet to Cloud App Security
 
