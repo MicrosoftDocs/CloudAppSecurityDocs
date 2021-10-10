@@ -21,7 +21,7 @@ Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing dee
 
 Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This is a subset of Microsoft Cloud App Security. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
 
-[Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud App Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
+[Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) to receive the full suite of Cloud Access Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
 
 ### Feature comparison
 
