@@ -92,7 +92,7 @@ items:
       href: protect-salesforce.md
     - name: Protect ServiceNow
       href: protect-servicenow.md
-    - name: Protect Slack (Preview)
+    - name: Protect Slack
       href: protect-slack.md
     - name: Protect Smartsheet (Preview)
       href: protect-smartsheet.md
@@ -194,7 +194,7 @@ items:
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
-    - name: Connect Slack (Preview)
+    - name: Connect Slack
       href: connect-slack-to-microsoft-cloud-app-security.md
     - name: Connect Smartsheet (Preview)
       href: connect-smartsheet-to-microsoft-cloud-app-security.md

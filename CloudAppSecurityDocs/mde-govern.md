@@ -42,7 +42,7 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/mde-custom-network-indicators.png)
 
-## Educate users when accessing risky apps (public preview)
+## Educate users when accessing risky apps 
 
 >[!NOTE]
 > **Prerequisite**: Opt in to the public preview feature in Microsoft Defender for Endpoint. For more information, see [Microsoft Defender for Endpoint preview features](/microsoft-365/security/defender-endpoint/preview).

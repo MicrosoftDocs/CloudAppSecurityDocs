@@ -1,7 +1,7 @@
 ---
 title: What's new in Cloud App Security
 description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 10/10/2021
+ms.date: 10/24/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
@@ -19,6 +19,8 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >[!IMPORTANT]
 >**Enhanced proxy URL for access controls (gradual rollout)**  
 Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+>[!NOTE]
+>On November 15, 2021, Cloud App Security will update its IP addresses in the **App connectors** section. Please update the IP addresses in your third-party apps accordingly. For more information, see the [App connector](network-requirements.md#app-connector) documentation.
 
 For more information on what's new with other Microsoft Defender security products, see:
 
@@ -26,15 +28,30 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-atp)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
-## Cloud App Security release 209, 210, and 211
+## Cloud App Security release 212
 
-October 10, 2021
+October 24, 2021
 
 - **Impossible travel, activity from infrequent countries, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
 After a thorough security review, we decided to separate failed login handling from the alerts mentioned above. From now on, they'll only be triggered by successful login cases and not by unsuccessful logins or attack attempts. Mass failed login alert will still be applied if there are anomalous high amount of failed login attempts on a user.
 
 - **New anomaly detection: Unusual ISP for an OAuth app**  
 We've extended our anomaly detections to include suspicious addition of privileged credentials to an OAuth app. The new detection is now available out-of-the-box and automatically enabled. The detection can indicate that an attacker has compromised the app and is using it for malicious activity. For more information, see  [Unusual ISP for an OAuth app](investigate-anomaly-alerts.md#unusual-isp-for-an-oauth-app).
+
+## Cloud App Security release 209, 210, and 211
+
+October 10, 2021
+
+- **Slack API connector is now in general availability**  
+Slack API connector is in general availability, giving you more visibility in to, and control over, how your app is used in your organization. For more information, see [How Cloud App Security helps protect your Slack Enterprise](protect-slack.md).
+
+- **New warn experience for monitored apps with Microsoft Defender for Endpoint is now in general availability**  
+Cloud App Security has extended its native integration with Microsoft Defender for Endpoint. You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
+  - [Warn and educate users on risky app usage](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/warn-and-educate-users-on-risky-app-usage/ba-p/2630982)
+  - [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md)
+
+- **New discovered app experience in general availability**  
+As part of continuous improvement of our entity experiences, we're introducing a modernized discovered app experience to cover discovered web apps and OAuth apps and provide a unified view of an application entity. For more information, see [Working with the app page](working-with-app-page.md).
 
 ## Cloud App Security release 208
 

@@ -51,6 +51,7 @@ App connector errors can be seen in the app connector dialog after attempting to
 > |Get events: {"code":403,"serverResponse"<br />Get users: {"code":403,"serverResponse"<br />…<br />"body":"{"error":"permission denied"}"|Workday|Insufficient permission to access audit logs and/or user endpoints|Verify all permissions are in place. [Learn more](connect-workday-to-microsoft-cloud-app-security.md#prerequisites)|
 > |"code":400,"serverResponse"<br />…<br />body":"{"error":"invalid_grant"}|Workday|Authentication issue|Account used to set up the instance may be locked or disabled. To verify, view the Workday account and select **View Sign-on History**. You may see an authentication failure message in the report specifying that the System Account is disabled. [Learn more](connect-workday-to-microsoft-cloud-app-security.md#how-to-connect-workday-to-cloud-app-security-using-oauth)|
 > |"code":401,"serverResponse":<br />…<br />body":"{"error":"invalid_client"}"|Workday|Client token validity issue|OAuth 2.0 REST API Client token not valid. The token may have expired, or may be incorrect. Generate another token and assign it to the connected instance. [Learn more](connect-workday-to-microsoft-cloud-app-security.md#how-to-connect-workday-to-cloud-app-security-using-oauth)|
+> |Get user: Success Get events: Request failed with status code 403|Zendesk|The Zendesk user that is configuring the integration is no longer a Zendesk admin|Upgrade the Zendesk user who configured the connector to admin (from Zendesk admin portal).|
 
 ## Next steps
 
