@@ -16,7 +16,7 @@ Cloud App Security has tools that help uncover shadow IT and assess risk while e
 
 ## Cloud App Security compliance
 
-In a world where data breaches and attacks are daily occurrences, it's essential for organizations to choose a cloud application security broker that makes every effort to protect their data. Cloud App Security, like all Microsoft cloud products and services, is built to address the rigorous security and privacy demands of our customers.
+In a world where data breaches and attacks are daily occurrences, it's essential for organizations to choose a Cloud Access Security Broker (CASB) that makes every effort to protect their data. Cloud App Security, like all Microsoft cloud products and services, is built to address the rigorous security and privacy demands of our customers.
 
 To help organizations comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Cloud App Security provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
 
