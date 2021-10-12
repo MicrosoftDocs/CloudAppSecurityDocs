@@ -61,6 +61,7 @@ You're probably familiar with file classification labels in [Azure Information P
 >
 > - Labels with protection outside of Cloud App Security can be overridden by Cloud App Security, but can't be removed. In addition, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
 > - Cloud App Security does not support reading labels of password-protected files.
+> - Empty files will not be labeled.
 
 ## How to integrate Azure Information Protection with Cloud App Security
 
