@@ -97,7 +97,7 @@ The following table describes each field in the **McasShadowItReporting** schema
 
 Once the integration is completed, you can also use the Cloud App Security data stored in Azure Sentinel in other tools.
 
-This section describes how you can use Microsoft Power BI (Power BI) to easily shape and combine data to build reports and dashboards that meet the needs of your organization.
+This section describes how you can use Microsoft Power BI to easily shape and combine data to build reports and dashboards that meet the needs of your organization.
 
 You can get started quickly by using the following steps:
 
