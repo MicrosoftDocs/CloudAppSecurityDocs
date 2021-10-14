@@ -14,7 +14,7 @@ Microsoft Cloud App Security's [integration with Microsoft Defender for Endpoint
 
 - Microsoft Cloud App Security license
 - Microsoft Defender for Endpoint license
-- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 versions
+- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
 - Microsoft Defender Antivirus
   - [real-time protection enabled](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
   - [cloud-delivered protection enabled](/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
@@ -42,7 +42,7 @@ Use the following steps to enable access control for cloud apps:
 
     ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/mde-custom-network-indicators.png)
 
-## Educate users when accessing risky apps 
+## Educate users when accessing risky apps
 
 >[!NOTE]
 > **Prerequisite**: Opt in to the public preview feature in Microsoft Defender for Endpoint. For more information, see [Microsoft Defender for Endpoint preview features](/microsoft-365/security/defender-endpoint/preview).
