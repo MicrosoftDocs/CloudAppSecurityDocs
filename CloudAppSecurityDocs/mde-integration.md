@@ -19,7 +19,7 @@ Additionally, when you identify a risky user, you can check all the devices the 
 Once traffic information is collected, you're ready to [deep dive into cloud app use](discovered-apps.md#deep-dive-into-discovered-apps) in your organization. Cloud App Security takes advantage of Defender for Endpoint Network Protection capabilities to block endpoint device access to cloud apps. You can block apps by [tagging them as **Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) in the portal. Based on the comprehensive usage and risk assessment of each unsanctioned app, the app's domains are used to create [domain indicators](/microsoft-365/security/defender-endpoint/manage-indicators) in the Defender for Endpoint portal. Microsoft Defender Antivirus, running on endpoint devices, uses the domain indicators to block access to these apps.
 
 > [!NOTE]
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/windows/business?ocid=docs-wdatp-assignaccess-abovefoldlink).
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 
 To enable Defender for Endpoint integration with Cloud App Security:
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), from the navigation pane, select **Settings**.
+1. In [Microsoft 365 Defender](https://sip.security.microsoft.com/homepage), from the navigation pane, select **Settings**.
 1. Select **Endpoints**.
 1. Under **General**, select **Advanced features**.
 1. Toggle the **Microsoft Cloud App Security** to **On**.

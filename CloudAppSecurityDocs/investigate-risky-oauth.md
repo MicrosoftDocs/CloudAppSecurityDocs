@@ -11,7 +11,7 @@ ms.topic: tutorial
 >[!NOTE]
 >Try the new app governance add-on to Microsoft Cloud App Security to get deeper protection, app usage insights, governance, and remediation capabilities for apps that directly access M365 app customer data. For more information, see [App governance add-on to Microsoft Cloud App Security (in preview)](/microsoft-365/compliance/app-governance-manage-app-governance).
 >
->Learn about [customer eligibility](/microsoft-365/compliance/app-governance-get-started) and [sign up for a free trial here](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
+>Learn about [customer eligibility](/microsoft-365/compliance/app-governance-get-started) and [sign up for a free trial here](https://www.microsoft.com/microsoft-365/try).
 
 OAuth is an open standard for token-based authentication and authorization. OAuth enables a user's account information to be used by third-party services, without exposing the user's password. OAuth acts as an intermediary on behalf of the user, providing the service with an access token that authorizes specific account information to be shared.
 

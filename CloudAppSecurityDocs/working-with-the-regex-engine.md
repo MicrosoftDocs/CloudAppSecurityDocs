@@ -18,7 +18,7 @@ Microsoft Cloud App Security's content inspection policies use RegEx for pattern
 
 To test regular expressions, you can use the following websites:
 
-- [https://regexpal.com/](https://regexpal.com/) - Make sure you select **Case insensitive**.
+- [https://regexpal.com/](https://www.regexpal.com/) - Make sure you select **Case insensitive**.
 
 - [https://regex101.com/](https://regex101.com/) - Provides detailed analysis of the RegEx.
 
