@@ -28,7 +28,7 @@ This quickstart provides you with steps for getting up and running with Cloud Ap
 
 ## To access the portal
 
-To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **[Microsoft 365 admin center](https://https://sip.security.microsoft.com/homepage)**, as follows:
+To access the Cloud App Security portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **[Microsoft 365 admin center](https://security.microsoft.com)**, as follows:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), in the side menu, select **Show all**, and then select **Security**.
 
