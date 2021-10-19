@@ -14,7 +14,7 @@ Session controls in Microsoft Cloud App Security work with the featured apps. Fo
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
-  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/license-users-groups) or higher, or the license required by your identity provider (IdP) solution
+  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/license-users-groups) or higher, or the license required by your identity provider (IdP) solution
   - Microsoft Cloud App Security
 
 - Apps must be configured with single sign-on

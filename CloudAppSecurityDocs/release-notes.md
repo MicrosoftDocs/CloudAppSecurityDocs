@@ -54,7 +54,7 @@ As part of continuous improvement of our entity experiences, we're introducing a
 The app governance add-on to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs.  App governance delivers full visibility, remediation, and governance into how these apps access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. For more information:
   - [Learn more about app governance](/microsoft-365/compliance/app-governance-manage-app-governance)
   - [Learn about customer eligibility](/microsoft-365/compliance/app-governance-get-started)
-  - [Sign up for a free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+  - [Sign up for a free trial](https://www.microsoft.com/microsoft-365/try)
 
 - **Smartsheet app connector available in public preview**  
 A new app connector for Smartsheet is available in public preview. You can now connect Microsoft Cloud App Security to Smartsheet to monitor and protect users and activities. For more information, see [Connect Smartsheet to Microsoft Cloud App Security](connect-smartsheet-to-microsoft-cloud-app-security.md).
@@ -125,7 +125,7 @@ The enhanced Cloud App Security [Service Health Dashboard](https://admin.microso
 In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information about the dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
 - **AIP support deprecated**  
-Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-identity/understanding-unified-labeling-migration/ba-p/783185).
+Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/understanding-unified-labeling-migration/ba-p/783185).
 
 - **DLP near real-time rollout completed for Dropbox, ServiceNow, AWS, and Salesforce**  
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
@@ -194,7 +194,7 @@ We've updated the **Policies** page, adding a tab for every policy category. We 
 We've enhanced the Office 365 OAuth apps activities export to CSV file with the *Redirect URL* of the OAuth apps. For more information about exporting OAuth app activities, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
 
 - **Updates to the portal interface**  
-In the coming months, Cloud App Security will be updating its User Interface to provide a more consistent experience across Microsoft 365 security portals. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-cloud-app-security-user-interface-updates/ba-p/2083113)
+In the coming months, Cloud App Security will be updating its User Interface to provide a more consistent experience across Microsoft 365 security portals. [Learn more](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-cloud-app-security-user-interface-updates/ba-p/2083113)
 
 ## Cloud App Security release 189, 190, and 191
 

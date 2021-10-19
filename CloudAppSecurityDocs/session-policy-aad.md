@@ -26,7 +26,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 * Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
-  * For [Azure AD Conditional Access](/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+  * For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
   * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
 ## Create a Cloud App Security session policy
