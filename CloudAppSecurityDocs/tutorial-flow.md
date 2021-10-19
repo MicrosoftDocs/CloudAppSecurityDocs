@@ -22,11 +22,11 @@ In this tutorial, you'll learn how to configure a policy governance action to us
 > [!NOTE]
 > These workflows are only relevant for policies that contains user activity. For example, you can't use these workflows with Discovery or OAuth policies.
 
-If you don't have a Power Automate plan, [sign up for a free trial account](https://flow.microsoft.com/pricing).
+If you don't have a Power Automate plan, [sign up for a free trial account](https://flow.microsoft.com/pricing/).
 
 ## Prerequisites
 
-- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
+- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing/)
 - You must have a valid Microsoft Defender for Endpoint plan
 - The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
 

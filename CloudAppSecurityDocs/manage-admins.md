@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security supports role-based access control. This article provides instructions for setting access to the [Cloud App Security portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-assign-admin-roles) and [Office 365](/office365/admin/add-users/assign-admin-roles).
+Microsoft Cloud App Security supports role-based access control. This article provides instructions for setting access to the [Cloud App Security portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Office 365](/microsoft-365/admin/add-users/assign-admin-roles).
 
 >[!IMPORTANT]
 >We have changed the flow for adding external admins to Cloud App Security. External admin not enrolled using the new process will be deleted by October 31st. For more information, see [Invite external admins](#invite-external-admins).
@@ -20,7 +20,7 @@ Microsoft Cloud App Security supports role-based access control. This article pr
 > - Office 365 and Azure AD roles aren't listed in the Cloud App Security **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
 > - Cloud App Security uses Azure Active Directory to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in AAD to never sign out when inactive, the same setting will apply in Cloud App Security as well.
 
-By default, the following Office 365 and [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
+By default, the following Office 365 and [Azure AD](/azure/active-directory/roles/permissions-reference) admin roles have access to Cloud App Security:
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
