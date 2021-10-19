@@ -6,6 +6,8 @@ ms.topic: conceptual
 ---
 # Cloud App Security lifecycle management strategy
 
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 By using a lifecycle management strategy, you can ensure your configurations, exclusions, and policies for Microsoft Cloud App Security remain up to date and are reviewed on an established cadence.
 
 >[!NOTE]
