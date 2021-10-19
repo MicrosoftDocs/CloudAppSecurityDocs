@@ -14,9 +14,6 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 - The Zendesk user used for logging into Zendesk must be an admin.
 - Supported Zendesk licenses:
-  - Team
-  - Growth
-  - Professional
   - Enterprise
   - Enterprise Plus
  
