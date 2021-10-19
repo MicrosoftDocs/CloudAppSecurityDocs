@@ -1,10 +1,10 @@
 ---
-title: How Cloud App Security helps protect your Smartsheet (Preview)
+title: How Cloud App Security helps protect your Smartsheet
 description: This article provides information about the benefits of connecting your Smartsheet app to Cloud App Security using the API connector for visibility and control over use.
 ms.date: 08/15/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Smartsheet (Preview)
+# How Cloud App Security helps protect your Smartsheet
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -59,4 +59,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect Smartsheet to Microsoft Cloud App Security (Preview)](connect-smartsheet-to-microsoft-cloud-app-security.md)
+> [Connect Smartsheet to Microsoft Cloud App Security](connect-smartsheet-to-microsoft-cloud-app-security.md)
