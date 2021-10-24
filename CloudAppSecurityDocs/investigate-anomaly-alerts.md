@@ -102,7 +102,7 @@ Detecting anomalous locations requires an initial learning period of seven days 
 
 ### Activity from suspicious IP addresses
 
-Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as botnet command and control (C&C), and may indicate a compromised account.
+Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as performing password spray, botnet command and control (C&C), and may indicate a compromised account.
 
 **TP**, **B-TP**, or **FP**?
 
