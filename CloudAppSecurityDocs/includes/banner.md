@@ -1,7 +1,2 @@
-<!--
-*Applies to: Microsoft Cloud App Security*
-
-> [!IMPORTANT]
->
-> Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be updating names in products and in the docs in the near future.
--->
+> [!NOTE]
+> We've renamed Microsoft Cloud App Security. It's now called [Microsoft Defender for Cloud Apps]( https://aka.ms/defender-for-cloud-apps). In the coming weeks, we'll update the screenshots and instructions here and in related pages. For more information about the change, see [this announcement](https://aka.ms/defender-for-cloud-apps-Igniteblog). To learn more about the recent renaming of Microsoft security services, see the [Microsoft Ignite Security blog](https://aka.ms/secblg11).
