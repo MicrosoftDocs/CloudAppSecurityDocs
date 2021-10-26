@@ -46,6 +46,9 @@ This detection compares IP addresses performing successful activities in your cl
 - **Smartsheet and OneLogin API connectors are now in general availability**  
 Smartsheet and OneLogin API connectors are now in general availability. You can now connect Microsoft Cloud App Security to Smartsheet and to OneLogin to monitor and protect users and activities. For more information, see  [Connect Smartsheet](connect-smartsheet-to-microsoft-cloud-app-security.md) and [Connect OneLogin](connect-onelogin-to-microsoft-cloud-app-security.md).
 
+- **New Shadow IT integration with Open Systems**  
+We've added native integration with Open Systems providing you with Shadow IT visibility into app use and control over app access. For more information, see [Integrate Cloud App Security with Open Systems](open-systems-integration.md).
+
 ## Cloud App Security release 209, 210, and 211
 
 October 10, 2021
