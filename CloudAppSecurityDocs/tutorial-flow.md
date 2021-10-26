@@ -6,6 +6,8 @@ ms.topic: tutorial
 ---
 # Tutorial: Extend governance to endpoint remediation
 
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 Cloud App Security provides predefined governance options for policies, such as suspend a user or make a file private. Using the native integration with Microsoft Power Automate, you can use a large ecosystem of software as a service (SaaS) connectors to build workflows to automate processes including remediation.
 
 For example, when detecting a possible malware threat, you can use workflows to start Microsoft Defender for Endpoint remediation actions such as running an antivirus scan or isolating an endpoint.
@@ -22,11 +24,11 @@ In this tutorial, you'll learn how to configure a policy governance action to us
 > [!NOTE]
 > These workflows are only relevant for policies that contains user activity. For example, you can't use these workflows with Discovery or OAuth policies.
 
-If you don't have a Power Automate plan, [sign up for a free trial account](https://flow.microsoft.com/pricing).
+If you don't have a Power Automate plan, [sign up for a free trial account](https://flow.microsoft.com/pricing/).
 
 ## Prerequisites
 
-- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
+- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing/)
 - You must have a valid Microsoft Defender for Endpoint plan
 - The Power Automate environment must be Azure AD synced, Defender for Endpoint monitored, and domain-joined
 

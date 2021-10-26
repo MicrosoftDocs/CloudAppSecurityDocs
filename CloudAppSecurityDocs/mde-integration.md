@@ -19,13 +19,13 @@ Additionally, when you identify a risky user, you can check all the devices the 
 Once traffic information is collected, you're ready to [deep dive into cloud app use](discovered-apps.md#deep-dive-into-discovered-apps) in your organization. Cloud App Security takes advantage of Defender for Endpoint Network Protection capabilities to block endpoint device access to cloud apps. You can block apps by [tagging them as **Unsanctioned**](governance-discovery.md#BKMK_SanctionApp) in the portal. Based on the comprehensive usage and risk assessment of each unsanctioned app, the app's domains are used to create [domain indicators](/microsoft-365/security/defender-endpoint/manage-indicators) in the Defender for Endpoint portal. Microsoft Defender Antivirus, running on endpoint devices, uses the domain indicators to block access to these apps.
 
 > [!NOTE]
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/windows/business?ocid=docs-wdatp-assignaccess-abovefoldlink).
 
 ## Prerequisites
 
 - Microsoft Cloud App Security license
 - Microsoft Defender for Endpoint license
-- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 versions
+- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
 - Microsoft Defender Antivirus
   - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
   - [Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
@@ -35,7 +35,7 @@ Once traffic information is collected, you're ready to [deep dive into cloud app
 
 On its own, Cloud App Security collects logs from your endpoints using either [logs you upload](create-snapshot-cloud-discovery-reports.md) or by [configuring automatic log upload](discovery-docker.md). Native integration enables you to take advantage of the logs Defender for Endpoint's agent creates when it runs on Windows and monitors network transactions. Use this information for Shadow IT discovery across the Windows devices on your network.
 
-To enable you to perform Cloud Discovery across other platforms, it's best to use both the Cloud App Security [log collector](discovery-docker.md), along with Defender for Endpoint integration to monitor your Windows 10 devices.
+To enable you to perform Cloud Discovery across other platforms, it's best to use both the Cloud App Security [log collector](discovery-docker.md), along with Defender for Endpoint integration to monitor your Windows 10 and Windows 11 devices.
 
 [Watch our videos](#related-videos) showing the benefits of using Defender for Endpoint with Cloud App Security.
 
@@ -43,7 +43,7 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 
 To enable Defender for Endpoint integration with Cloud App Security:
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), from the navigation pane, select **Settings**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), from the navigation pane, select **Settings**.
 1. Select **Endpoints**.
 1. Under **General**, select **Advanced features**.
 1. Toggle the **Microsoft Cloud App Security** to **On**.

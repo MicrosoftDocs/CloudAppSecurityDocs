@@ -86,7 +86,7 @@ items:
       href: protect-office-365.md
     - name: Protect Okta
       href: protect-okta.md
-    - name: Protect OneLogin (Preview)
+    - name: Protect OneLogin
       href: protect-onelogin.md
     - name: Protect Salesforce
       href: protect-salesforce.md
@@ -94,7 +94,7 @@ items:
       href: protect-servicenow.md
     - name: Protect Slack
       href: protect-slack.md
-    - name: Protect Smartsheet (Preview)
+    - name: Protect Smartsheet
       href: protect-smartsheet.md
     - name: Protect Webex
       href: protect-webex.md
@@ -188,7 +188,7 @@ items:
       href: connect-office-365-to-microsoft-cloud-app-security.md
     - name: Connect Okta
       href: connect-okta-to-microsoft-cloud-app-security.md
-    - name: Connect OneLogin (Preview)
+    - name: Connect OneLogin 
       href: connect-onelogin-to-microsoft-cloud-app-security.md
     - name: Connect Salesforce
       href: connect-salesforce-to-microsoft-cloud-app-security.md
@@ -196,7 +196,7 @@ items:
       href: connect-servicenow-to-microsoft-cloud-app-security.md
     - name: Connect Slack
       href: connect-slack-to-microsoft-cloud-app-security.md
-    - name: Connect Smartsheet (Preview)
+    - name: Connect Smartsheet
       href: connect-smartsheet-to-microsoft-cloud-app-security.md
     - name: Connect Webex
       href: connect-webex-to-microsoft-cloud-app-security.md
@@ -450,4 +450,4 @@ items:
   - name: Cloud App Security portal
     href: https://portal.cloudappsecurity.com
   - name: How to buy Cloud App Security
-    href: https://www.microsoft.com/cloud-platform/cloud-app-security
+    href: https://www.microsoft.com/security/business/cloud-app-security

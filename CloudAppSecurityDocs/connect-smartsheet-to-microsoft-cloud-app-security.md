@@ -1,10 +1,10 @@
 ---
-title: Connect Smartsheet to Cloud App Security (Preview)
+title: Connect Smartsheet to Cloud App Security
 description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Smartsheet using the App Connector APIs. 
 ms.date: 08/12/2021
 ms.topic: how-to
 ---
-# Connect Smartsheet to Microsoft Cloud App Security (Preview)
+# Connect Smartsheet to Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

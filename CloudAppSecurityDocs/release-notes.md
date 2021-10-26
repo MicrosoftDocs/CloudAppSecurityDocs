@@ -6,6 +6,8 @@ ms.topic: overview
 ---
 # What's new in Microsoft Cloud App Security
 
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 *Applies to: Microsoft Cloud App Security*
 
 This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
@@ -70,7 +72,7 @@ As part of continuous improvement of our entity experiences, we're introducing a
 The app governance add-on to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs.  App governance delivers full visibility, remediation, and governance into how these apps access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. For more information:
   - [Learn more about app governance](/microsoft-365/compliance/app-governance-manage-app-governance)
   - [Learn about customer eligibility](/microsoft-365/compliance/app-governance-get-started)
-  - [Sign up for a free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+  - [Sign up for a free trial](https://www.microsoft.com/microsoft-365/try)
 
 - **Smartsheet app connector available in public preview**  
 A new app connector for Smartsheet is available in public preview. You can now connect Microsoft Cloud App Security to Smartsheet to monitor and protect users and activities. For more information, see [Connect Smartsheet to Microsoft Cloud App Security](connect-smartsheet-to-microsoft-cloud-app-security.md).
@@ -141,7 +143,7 @@ The enhanced Cloud App Security [Service Health Dashboard](https://admin.microso
 In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information about the dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
 - **AIP support deprecated**  
-Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-identity/understanding-unified-labeling-migration/ba-p/783185).
+Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/understanding-unified-labeling-migration/ba-p/783185).
 
 - **DLP near real-time rollout completed for Dropbox, ServiceNow, AWS, and Salesforce**  
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
@@ -190,11 +192,11 @@ Released March 7, 2021
 - **Enhanced Shadow IT discovery with Microsoft Defender for Endpoint**  
 We've further improved our Defender for Endpoint integration by leveraging enhanced signals for the Defender agent, providing more accurate app discovery and organizational user context.
 
-    To benefit from the latest enhancements, make sure your organizational endpoints are updated with the latest Windows 10 updates:
+  To benefit from the latest enhancements, make sure your organizational endpoints are updated with the latest Windows 10 updates:
 
-    - [KB4601383](https://support.microsoft.com/topic/february-16-2021-kb4601383-os-build-17763-1790-preview-9535653c-8012-47f0-0f90-44cdd57cdc36): Windows 10, version 1809
-    - [KB4601380](https://support.microsoft.com/topic/february-16-2021-kb4601380-os-build-18363-1411-preview-2e3c38e1-a947-1033-8006-a30f3806da18): Windows 10, version 1909
-    - [KB4601382](https://support.microsoft.com/topic/february-24-2021-kb4601382-os-builds-19041-844-and-19042-844-preview-1a7ed2b4-017d-2644-a1e8-dd6bf14cba76): Windows 10, version 20H2, version [21H1 Insider](https://blogs.windows.com/windows-insider/2021/02/17/announcing-windows-10-insider-preview-build-19043-844-21h1/)
+  - [KB4601383](https://support.microsoft.com/topic/february-16-2021-kb4601383-os-build-17763-1790-preview-9535653c-8012-47f0-0f90-44cdd57cdc36): Windows 10, version 1809
+  - [KB4601380](https://support.microsoft.com/topic/february-16-2021-kb4601380-os-build-18363-1411-preview-2e3c38e1-a947-1033-8006-a30f3806da18): Windows 10, version 1909
+  - [KB4601382](https://support.microsoft.com/topic/february-24-2021-kb4601382-os-builds-19041-844-and-19042-844-preview-1a7ed2b4-017d-2644-a1e8-dd6bf14cba76): Windows 10, version 20H2, version [21H1 Insider](https://blogs.windows.com/windows-insider/2021/02/17/announcing-windows-10-insider-preview-build-19043-844-21h1/)
 
 - **Configurable session lifetime**  
 We're enabling customers to configure a shorter session lifetime for Conditional Access App Control. By default, sessions proxied by Cloud App Security have a maximum lifetime of 14 days. For more information about shortening session lifetimes, contact us at mcaspreview@microsoft.com.
@@ -210,7 +212,7 @@ We've updated the **Policies** page, adding a tab for every policy category. We 
 We've enhanced the Office 365 OAuth apps activities export to CSV file with the *Redirect URL* of the OAuth apps. For more information about exporting OAuth app activities, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
 
 - **Updates to the portal interface**  
-In the coming months, Cloud App Security will be updating its User Interface to provide a more consistent experience across Microsoft 365 security portals. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-cloud-app-security-user-interface-updates/ba-p/2083113)
+In the coming months, Cloud App Security will be updating its User Interface to provide a more consistent experience across Microsoft 365 security portals. [Learn more](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-cloud-app-security-user-interface-updates/ba-p/2083113)
 
 ## Cloud App Security release 189, 190, and 191
 

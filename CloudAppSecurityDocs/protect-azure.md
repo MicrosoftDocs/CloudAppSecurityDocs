@@ -38,7 +38,7 @@ For more information about creating policies, see [Create a policy](control-clou
 
 ## Security Recommendations
 
-Cloud App Security provides a tenant-level view of your Azure platform, listing security recommendations of all Azure subscriptions in the tenant. You can use out-of-the-box Azure security recommendations for over 100 Azure resources against the [Azure Security Benchmark](/azure/security/benchmarks/introduction), as well as [custom recommendations](/azure/security-center/custom-security-policies). Out-of-the-box recommendations include the following resource types: virtual machines, identity and access, data and storage, compute and apps, networks, containers, and app services.
+Cloud App Security provides a tenant-level view of your Azure platform, listing security recommendations of all Azure subscriptions in the tenant. You can use out-of-the-box Azure security recommendations for over 100 Azure resources against the [Azure Security Benchmark](/security/benchmark/azure/introduction), as well as [custom recommendations](/azure/security-center/custom-security-policies). Out-of-the-box recommendations include the following resource types: virtual machines, identity and access, data and storage, compute and apps, networks, containers, and app services.
 
 You should continuously review the security recommendations to assess and evaluate the current status of your platform's security posture and identify important configuration gaps. Then, you should create a plan to mitigate the issues in your Azure platform.
 

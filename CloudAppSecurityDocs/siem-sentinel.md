@@ -52,7 +52,7 @@ To integrate with Azure Sentinel:
 
     ![Screenshot showing start page of Configure Azure Sentinel integration.](media/siem-sentinel-configuration.png)
 
-1. Click **Next**, and continue to Azure Sentinel to finalize the integration. For information on configuring Azure Sentinel, see [/azure/sentinel/connect-cloud-app-security](/azure/sentinel/connect-cloud-app-security).
+1. Click **Next**, and continue to Azure Sentinel to finalize the integration. For information on configuring Azure Sentinel, see [/azure/sentinel/connect-cloud-app-security](/azure/sentinel/data-connectors-reference#microsoft-cloud-app-security-mcas).
 
     ![Screenshot showing finish page of Configure Azure Sentinel integration.](media/siem-sentinel-configuration-complete.png)
 
@@ -97,11 +97,11 @@ The following table describes each field in the **McasShadowItReporting** schema
 
 Once the integration is completed, you can also use the Cloud App Security data stored in Azure Sentinel in other tools.
 
-This section describes how you can use Microsoft Power BI (Power BI) to easily shape and combine data to build reports and dashboards that meet the needs of your organization.
+This section describes how you can use Microsoft Power BI to easily shape and combine data to build reports and dashboards that meet the needs of your organization.
 
 You can get started quickly by using the following steps:
 
-1. In Power BI, import queries from Azure Sentinel for Cloud App Security data. For more information, see [Import Azure Monitor log data into Power BI](/azure/azure-monitor/platform/powerbi).
+1. In Power BI, import queries from Azure Sentinel for Cloud App Security data. For more information, see [Import Azure Monitor log data into Power BI](/azure/azure-monitor/logs/log-powerbi).
 1. [Install the Cloud App Security Shadow IT Discovery app](https://aka.ms/MCASShadowITReporting) and [connect it](#connect-the-cloud-app-security-app) to your discovery log data to view the built-in Shadow IT Discovery dashboard.
 
     > [!NOTE]

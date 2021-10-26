@@ -8,11 +8,11 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud App Security integrates with [Microsoft Power Automate](/flow/getting-started) to provide custom alert automation and orchestration playbooks. By using the [connectors](/connectors/) available in Power Automate, you can automate the triggering of playbooks when Cloud App Security generates alerts. For example, automatically create an issue in ticketing systems using [ServiceNow connector](/connectors/service-now/) or send an approval email to execute a custom governance action when an alert is triggered in Cloud App Security.
+Cloud App Security integrates with [Microsoft Power Automate](/power-automate/getting-started) to provide custom alert automation and orchestration playbooks. By using the [connectors](/connectors/) available in Power Automate, you can automate the triggering of playbooks when Cloud App Security generates alerts. For example, automatically create an issue in ticketing systems using [ServiceNow connector](/connectors/service-now/) or send an approval email to execute a custom governance action when an alert is triggered in Cloud App Security.
 
 ## Prerequisites
 
-- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing)
+- You must have a valid [Microsoft Power Automate plan](https://flow.microsoft.com/pricing/)
 
 ## How it works
 
@@ -24,7 +24,7 @@ The [Cloud App Security connector](/connectors/cloudappsecurity/) in Power Autom
 
 1. [Create an API token](api-authentication.md) in Cloud App Security.
 
-1. Navigate to the [Power Automate portal](https://flow.microsoft.com), select **My flows**, select **New flow**, and in the drop-down, under **Build your own from blank**, select **Automated cloud flow**.
+1. Navigate to the [Power Automate portal](https://flow.microsoft.com/), select **My flows**, select **New flow**, and in the drop-down, under **Build your own from blank**, select **Automated cloud flow**.
 
     ![Power Automate create new flow.](media/flow-create-new.png)
 

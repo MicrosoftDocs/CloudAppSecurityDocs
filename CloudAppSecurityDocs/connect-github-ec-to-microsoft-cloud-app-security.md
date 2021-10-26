@@ -86,7 +86,7 @@ Repeat this step for each additional connected organization.
     > - **admin:org** - required for synchronizing your organization's audit log
     > - **read:user** and **user:email** - required for synchronizing your organization's members
     > - **repo:status** - required for synchronizing repository-related events in the audit log
-    > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
+    > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://docs.github.com/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
 
     ![Screenshot showing authorize github oauth.](media/connect-github-authorize-app.png)
 

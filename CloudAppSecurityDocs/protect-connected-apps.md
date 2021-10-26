@@ -6,6 +6,8 @@ ms.topic: conceptual
 ---
 # Protecting connected apps
 
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 Cloud App Security provides end-to-end protection for connected apps using Cloud-to-Cloud integration, [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md), and real-time access and session [controls leveraging our Conditional](proxy-intro-aad.md) App Access Controls.
 
 Once an app is connected using one or more of these methods, you get instant out-of-the-box protection with our built-in anomaly detection engine. Additionally, you gain deep visibility into the app's user and device activities, control over data shared by the app, and can build detection policies with governance to mitigate any risky activities or sensitive-data sharing by the app.

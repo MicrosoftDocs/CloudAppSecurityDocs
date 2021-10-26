@@ -6,6 +6,8 @@ ms.topic: tutorial
 ---
 # Tutorial: Require step-up authentication (authentication context) upon risky action
 
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
 As an IT admin today, you're stuck between a rock and hard place. You want to enable your employees to be productive. That means allowing employees to access apps so they can work at any time, from any device. However, you want to protect the company's assets including proprietary and privileged information. How can you enable employees to access your cloud apps while protecting your data?
 
 This tutorial allows you to reevaluate Azure AD Conditional Access policies when users take sensitive actions during a session.
@@ -38,7 +40,7 @@ Cloud App Security session policies allow you to restrict a session based on dev
 
 Make sure you've configured your IdP solution to work with Cloud App Security, as follows:
 
-- For [Azure AD Conditional Access](/azure/active-directory/active-directory-conditional-access-azure-portal), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
+- For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
 
 - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
