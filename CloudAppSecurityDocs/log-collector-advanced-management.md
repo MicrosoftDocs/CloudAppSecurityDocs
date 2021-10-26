@@ -293,14 +293,14 @@ Use the steps relevant to the operating system of the Docker Hub where the log c
 
 1. Download the log collector image.
 
-    ```dos
+    ```cmd
     docker login -u caslogcollector -p C0llector3nthusiast
     docker pull mcr.microsoft/mcas/logcollector
     ```
 
 1. Export the log collector image.
 
-    ```dos
+    ```cmd
     docker save --output C:\mcasLogCollector\mcasLC.targ mcr.microsoft.com/mcas/logcollector
     ```
 

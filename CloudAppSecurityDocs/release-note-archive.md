@@ -97,7 +97,7 @@ Cloud App Security detects policy matches and, where defined, logs alerts that y
 Released September 1, 2019
 
 - **Reminder: End of support for TLS 1.0 and 1.1 on September 8**  
-Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
+Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/end-of-support-for-tls-1-0-and-1-1-in-microsoft-cloud-app/ba-p/770507).
 
 - **New detection – Suspicious Microsoft Power BI sharing (preview)**  
 The new suspicious Power BI report sharing policy is now available out-of-the-box and automatically enabled to alert you when a potentially sensitive Power BI report is suspiciously shared outside of your organization.
@@ -138,7 +138,7 @@ Released August 4, 2019
 Cloud App Security now includes new built-in Activity policy templates for AWS security best practices.
 
 - **Notice: End of support for TLS 1.0 and 1.1 on September 8**  
-Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507).
+Microsoft is moving all its online services to Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption. Therefore, as of September 8, 2019 Cloud App Security will no longer support TLS 1.0 and 1.1 and connections using these protocols will not be supported. For more information about how the change affects you, see [our blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/end-of-support-for-tls-1-0-and-1-1-in-microsoft-cloud-app/ba-p/770507).
 
 - **Enhanced logic for interactive sign-in activities (gradual rollout)**  
 We are gradually rolling out new logic to identify if an Azure Active Directory sign-in activity is interactive. The new logic enhances Cloud App Security's ability to only surface sign-in activities that are initiated by a user.
@@ -265,7 +265,7 @@ Microsoft Cloud App Security now supports the Azure AD Global Reader role. The G
 Released March 17, 2019
 
 - **Microsoft Defender ATP integration is now GA**  
-Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
+Last year we announced [integration with Windows Defender Advanced Threat Protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-cloud-app-security-and-windows-defender-atp-better/ba-p/263265) that enhances the Discovery of Shadow IT in your organization, and extends it beyond the corporate network. [Enabled with a single click](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG), we are excited to announce that this unique integration is now generally available.
 - **Dynamics 365 CRM support**  
 Cloud App Security added real-time monitoring and control for Dynamics 365 CRM, to enable you to protect your business applications and the sensitive content stored within these apps. For more information about what can be done with Dynamics 365 CRM, see [this article](proxy-intro-aad.md#how-it-works).
 
@@ -274,7 +274,7 @@ Cloud App Security added real-time monitoring and control for Dynamics 365 CRM, 
 Released March 3, 2019
 
 - **Unified SecOps Investigation for Hybrid Environments**  
-Because many organizations have hybrid environments, attacks start in the cloud and then pivot to on-premises, meaning SecOps teams need to investigate these attacks from multiple places. By combining signals from cloud and on-premises sources including Microsoft Cloud App Security, Azure ATP, and Azure AD Identity Protection, Microsoft empowers security analysts by providing unified identity and user information, in a single console, ending the need to toggle between security solutions. This gives your SecOps teams more time and the right information to make better decisions, and actively remediate the real identity threats and risks. For more information, see [Unified SecOps Investigation for Hybrid Environments](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)
+Because many organizations have hybrid environments, attacks start in the cloud and then pivot to on-premises, meaning SecOps teams need to investigate these attacks from multiple places. By combining signals from cloud and on-premises sources including Microsoft Cloud App Security, Azure ATP, and Azure AD Identity Protection, Microsoft empowers security analysts by providing unified identity and user information, in a single console, ending the need to toggle between security solutions. This gives your SecOps teams more time and the right information to make better decisions, and actively remediate the real identity threats and risks. For more information, see [Unified SecOps Investigation for Hybrid Environments](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/unified-secops-investigation-for-hybrid-environments/ba-p/360850)
 
 - **Sandboxing capabilities for malware detection** (gradual rollout)  
 Cloud App Security's malware detection capabilities are being expanded to include the ability to identify zero-day malware through advanced Sandboxing technology.  
@@ -315,7 +315,7 @@ You can now configure session policies to monitor users or block downloads in re
 Suggested queries have been added to the OAuth apps page provide out-of-the-box investigation templates to filter your OAuth apps. Suggested queries include custom filters to identify risky apps such as apps authorized by administrators. Saved queries enable you to save custom queries for future use, similar to saved queries available today in the Activity log and Discovery pages.
 
 - **Office 365 auditing default configuration**  
-If you want to enable monitoring of Office 365 activities in Cloud App Security, you are now required to enable auditing in the [Office Security and Compliance Center](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search), this is a result of a [change to Office 365 auditing](/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api). This change only needs to be performed if you haven't already enabled monitoring of Office 365 activities in Cloud App Security.
+If you want to enable monitoring of Office 365 activities in Cloud App Security, you are now required to enable auditing in the [Office Security and Compliance Center](/microsoft-365/compliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search), this is a result of a [change to Office 365 auditing](/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api#frequently-asked-questions-about-the-office-365-management-activity-api). This change only needs to be performed if you haven't already enabled monitoring of Office 365 activities in Cloud App Security.
 
 - **Enhanced Box support**  
 Cloud App Security now supports two new governance actions for Box:
@@ -350,7 +350,7 @@ Released January 20, 2019
 Released January 6, 2019
 
 - **Change in file detection**  
-Files shared with everyone in SharePoint and One Drive are now considered **internal** [due to changes made to SharePoint and One Drive](https://support.microsoft.com/help/4089534/how-to-grant-the-everyone-claim-to-external-users-in-office-365). So if a file is detected that is shared with everyone, it will now be treated as an internal file – this affects how the file is handled by policies and shown in the files page.
+Files shared with everyone in SharePoint and One Drive are now considered **internal** [due to changes made to SharePoint and One Drive](/office365/troubleshoot/access-management/grant-everyone-claim-to-external-users). So if a file is detected that is shared with everyone, it will now be treated as an internal file – this affects how the file is handled by policies and shown in the files page.
 
 - **Change in file monitoring**  
 The default file monitoring behavior changed for new and idle customers. You will now need to turn on file monitoring to enable the feature, via **Settings** > **Files**. Existing active customers will not be affected by this change.
@@ -381,7 +381,7 @@ Released December 9, 2018
 - **Automatic log upload using Docker on Windows**  
 Cloud App Security now supports automatic log upload for Windows 10 (fall creators update) and Windows Server, version 1709 and later using a Docker for Windows. For more information and instructions on how this can be configured, see [Docker on Windows on-premises](discovery-docker-windows.md).
 
-- Cloud App Security integrates with [Microsoft Flow](/flow/getting-started) to provide custom alert automation and orchestration playbooks. For more information and integration instructions, see [Integrating with Microsoft Flow](flow-integration.md).
+- Cloud App Security integrates with [Microsoft Flow](/power-automate/getting-started) to provide custom alert automation and orchestration playbooks. For more information and integration instructions, see [Integrating with Microsoft Flow](flow-integration.md).
 
 ### Cloud App Security release 137
 
@@ -410,7 +410,7 @@ Suspicious inbox manipulation rules: This policy profiles your environment and t
 Cloud App Security now gives you the ability to define app permission policies more granularly, based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
 
 - **Conditional Access App Control now integrates with your on-prem apps via Azure Active Directory Application Proxy**  
-  - The [Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-prem.
+  - The [Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) provides single sign-on and secure remote access for your web apps hosted on-prem.
   - These on-prem web apps can now be routed to Microsoft Cloud App Security via Azure AD conditional access to provide real-time monitoring and controls, via [access](access-policy-aad.md) and [session](session-policy-aad.md) policies.
 
 ### Cloud App Security release 133, 134, 135
@@ -892,7 +892,7 @@ Released May 24, 2017
 
 **Other updates:**
 
-- Cloud App Security now includes support for the Microsoft Power BI activities that are supported in the Office 365 audit log. This feature is being rolled out gradually. You need to enable [this functionality in the Power BI portal](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/).
+- Cloud App Security now includes support for the Microsoft Power BI activities that are supported in the Office 365 audit log. This feature is being rolled out gradually. You need to enable [this functionality in the Power BI portal](/power-bi/admin/service-admin-auditing).
 - In activity policies, you can now set notify and suspend actions to be taken on the user across all connected apps. For example, you can set a policy to always notify the user's manager and suspend the user immediately whenever the user has multiple failed logins in any connected app.
 
 ### OOB release
@@ -1239,7 +1239,7 @@ Released July 24, 2016
 - Two new risk factors were added to the Anomaly Detection engine:
   - Cloud App Security now uses the IP address tags that are associated with a botnet and anonymous IP addresses as part of the calculation of Risk.
   - Office 365 activity is now monitored for high-download rates. If the Office 365 download rate is much higher than your organization's, or a specific user's, normal download rate, an Anomaly Detection alert is triggered.
-- Cloud App Security is now compatible with the new Dropbox [Secure Sharing functionality](https://blogs.dropbox.com/dropbox/2016/06/new-dropbox-productivity-tools/) API.
+- Cloud App Security is now compatible with the new Dropbox [Secure Sharing functionality](https://blog.dropbox.com/topics/product/new-dropbox-productivity-tools) API.
 - Improvements were made to add details to the Discovery log parsing errors, including: No cloud-related transactions, All events are outdated, Corrupted file, Log format doesn't match.
 - The Activity log date filter was improved; it now includes the ability to filter by time.
 - The IP address ranges page was improved for usability.

@@ -18,7 +18,7 @@ Automatic groups are created by default by Microsoft Cloud App Security. For exa
   - Office 365 administrator
   - Google Workspace administrator
   - Box administrator
-  - All Salesforce standard and custom profiles, for example, Salesforce System Administrator. See the full list [here](https://help.salesforce.com/articleView?id=standard_profiles.htm&language=en&type=0).
+  - All Salesforce standard and custom profiles, for example, Salesforce System Administrator. See the full list [here](https://help.salesforce.com/s/articleView?id=sf.standard_profiles.htm).
 
 - Imported groups  
 You can import any group from your connected apps. For example, you can import user groups from Office 365 (Active Directory) and other connected apps. These groups enable you to look for threats in your org, not by looking at the whole org or at a specific user, but by looking at a specific group.

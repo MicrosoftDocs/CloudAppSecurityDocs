@@ -42,7 +42,7 @@ To enable Cloud App Security integration with Defender for Identity:
 > [!NOTE]
 > It may take up to 12 hours until the integration takes effect.
 
-After enabling Defender for Identity integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments. Additionally, policies from Defender for Identity will appear on the Cloud App Security policies page. For a list of Defender for Identity policies, see [Security Alerts](/defender-for-identity/suspicious-activity-guide). To edit these policies, see [Excluding entities from detections](/defender-for-identity/excluding-entities-from-detections).
+After enabling Defender for Identity integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments. Additionally, policies from Defender for Identity will appear on the Cloud App Security policies page. For a list of Defender for Identity policies, see [Security alerts](/defender-for-identity/suspicious-activity-guide). To edit these policies, see [Excluding entities from detections](/defender-for-identity/configure-detection-exclusions).
 
 You should also use the **Defender for Identity configuration** links to configure Defender for Identity settings that are relevant to Cloud App Security. Use the following information to learn more about these settings:
 
