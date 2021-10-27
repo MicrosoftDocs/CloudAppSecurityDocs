@@ -4,7 +4,7 @@ description: Learn how to create an application to get programmatic access to Cl
 ms.date: 04/14/2021
 ms.topic: reference
 ---
-# Access Microsoft Cloud App Security API with user context
+# Access Microsoft Cloud App Security API with user context (preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

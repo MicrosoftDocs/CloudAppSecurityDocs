@@ -337,9 +337,9 @@ items:
       items:
       - name: Managing API tokens
         href: api-authentication.md
-      - name: Application context
+      - name: Application context (preview)
         href: api-authentication-application.md
-      - name: User context
+      - name: User context (preview)
         href: api-authentication-user.md
       - name: Legacy method
         href: api-tokens-legacy.md

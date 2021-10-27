@@ -4,7 +4,7 @@ description: Learn how to design a web app to get programmatic access to Cloud A
 ms.date: 04/14/2021
 ms.topic: reference
 ---
-# Create an app to access Microsoft Cloud App Security without a user
+# Create an app to access Microsoft Cloud App Security without a user (preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
