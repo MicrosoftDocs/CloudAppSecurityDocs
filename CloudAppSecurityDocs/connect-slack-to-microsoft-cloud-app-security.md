@@ -1,19 +1,19 @@
 ---
-title: Connect Slack to Cloud App Security (Preview)
-description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Slack Enterprise Grid or Slack Enterprise Select using the App Connector APIs. 
+title: Connect Slack to Cloud App Security
+description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Slack using the App Connector APIs. 
 ms.date: 06/09/2021
 ms.topic: how-to
 ---
-# Connect Slack to Microsoft Cloud App Security (Preview)
+# Connect Slack to Microsoft Cloud App Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Slack Enterprise Grid or Slack Enterprise Select using the App Connector APIs. This connection gives you visibility into and control over your organization’s Slack use.
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Slack using the App Connector APIs. This connection gives you visibility into and control over your organization’s Slack use.
 
 ## Prerequisites
 
 * Your Slack tenant must meet the following requirements:
-  * Your Slack tenant must have an **Enterprise Grid** or **Enterprise Select** license. Cloud App Security doesn't support non-enterprise licenses.
+  * Your Slack tenant must have an **Enterprise** license. Cloud App Security doesn't support non-enterprise licenses.
   * Your Slack tenant should have **Discovery API** enabled. To enable **Discovery API** for your Slack tenant, contact Slack support.
 
 * The org Owner needs to be logged into their Slack organization within their browser before installing the connector.

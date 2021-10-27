@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 22,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 25,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
 ## Snapshot and continuous risk assessment reports
 
@@ -36,12 +36,12 @@ The process of generating a risk assessment consists of the following steps. The
 
 - **Parse** – Cloud App Security parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.
 
-- **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 16,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.
+- **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 25,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.
 
 - **Generate report** - A risk assessment report of the data extracted from log files is generated.
 
 >[!NOTE]
-> Continuous report data is analyzed four times a day.
+> Discovery data is analyzed and updated four times a day.
 
 ## Supported firewalls and proxies <a name="supported-firewalls-and-proxies"></a>
 
@@ -66,7 +66,7 @@ The process of generating a risk assessment consists of the following steps. The
 - McAfee Secure Web Gateway
 - Menlo Security (CEF)
 - Microsoft Forefront Threat Management Gateway (W3C)
-- Open Systems format
+- Open Systems Secure Web Gateway
 - Palo Alto series Firewall
 - Sonicwall (formerly Dell)
 - Sophos Cyberoam
@@ -116,7 +116,7 @@ Data attributes (according to vendor documentation):
 | McAfee SWG | **Yes** | No | No | **Yes** | **Yes** | **Yes** |
 | Menlo Security (CEF) | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | MS TMG | **Yes** | No | **Yes** | **Yes** | **Yes** | **Yes** |
-| Open Systems format | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| Open Systems Secure Web Gateway | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | Palo Alto Networks | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | SonicWall (formerly Dell) | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** |
 | Sophos | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | No |

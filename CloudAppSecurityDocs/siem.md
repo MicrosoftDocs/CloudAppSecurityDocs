@@ -80,7 +80,7 @@ Integrating with your SIEM is accomplished in three steps:
     Select **Finish** and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later.
 
 > [!NOTE]
-> Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid. A generic SIEM token provides read-only permissions to the only required resources. No other permissions are granted a part of this token.
+> Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App Security, the token will no longer be valid. A generic SIEM token provides read-only permissions to the only required resources. No other permissions are granted a part of this token.
 
 ### Step 2: Download the JAR file and run it on your server
 

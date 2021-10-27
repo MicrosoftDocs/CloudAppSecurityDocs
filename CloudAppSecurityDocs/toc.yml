@@ -9,6 +9,8 @@ items:
     href: cas-compliance-trust.md
   - name: What's new in Cloud App Security
     href: release-notes.md
+  - name: Lifecycle management
+    href: lifecycle-management.md
   - name: Compare
     items:
     - name: Office 365 Cloud App Security
@@ -56,6 +58,8 @@ items:
     href: proxy-intro-aad.md
   - name: Working with the dashboard
     href: daily-activities-to-protect-your-cloud-environment.md
+  - name: Working with the app page
+    href: working-with-app-page.md
   - name: Working with App risk scores
     href: risk-score.md
   - name: Working with discovered apps
@@ -82,14 +86,16 @@ items:
       href: protect-office-365.md
     - name: Protect Okta
       href: protect-okta.md
-    - name: Protect OneLogin (Preview)
+    - name: Protect OneLogin
       href: protect-onelogin.md
     - name: Protect Salesforce
       href: protect-salesforce.md
     - name: Protect ServiceNow
       href: protect-servicenow.md
-    - name: Protect Slack (Preview)
+    - name: Protect Slack
       href: protect-slack.md
+    - name: Protect Smartsheet
+      href: protect-smartsheet.md
     - name: Protect Webex
       href: protect-webex.md
     - name: Protect Workday
@@ -182,14 +188,16 @@ items:
       href: connect-office-365-to-microsoft-cloud-app-security.md
     - name: Connect Okta
       href: connect-okta-to-microsoft-cloud-app-security.md
-    - name: Connect OneLogin (Preview)
+    - name: Connect OneLogin 
       href: connect-onelogin-to-microsoft-cloud-app-security.md
     - name: Connect Salesforce
       href: connect-salesforce-to-microsoft-cloud-app-security.md
     - name: Connect ServiceNow
       href: connect-servicenow-to-microsoft-cloud-app-security.md
-    - name: Connect Slack (Preview)
+    - name: Connect Slack
       href: connect-slack-to-microsoft-cloud-app-security.md
+    - name: Connect Smartsheet
+      href: connect-smartsheet-to-microsoft-cloud-app-security.md
     - name: Connect Webex
       href: connect-webex-to-microsoft-cloud-app-security.md
     - name: Connect Workday
@@ -450,4 +458,4 @@ items:
   - name: Cloud App Security portal
     href: https://portal.cloudappsecurity.com
   - name: How to buy Cloud App Security
-    href: https://www.microsoft.com/cloud-platform/cloud-app-security
+    href: https://www.microsoft.com/security/business/cloud-app-security

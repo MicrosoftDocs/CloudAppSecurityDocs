@@ -63,6 +63,12 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
         ![Salesforce session settings.](media/salesforce-setup-session-settings.png)
 
     1. Select **Save**.
+    
+    1. Go to **Build** -> **Customize** -> **Salesforce Files** -> **Settings** -> **Content Deliveries and Public Links**.
+    
+    1. Select **Edit** and then select **Checked Content Deliveries feature can be enabled for users**
+
+    1. Select **Save**.
 
 1. In the Cloud App Security console, select **Investigate** and then **Connected apps**.
 
@@ -92,7 +98,7 @@ After connecting Salesforce, you'll receive Events as follows: Triggers from the
 > Cloud App Security throttling is calculated solely on its own API calls with Salesforce, not with those of any other applications making API calls with Salesforce.
 > Limiting API calls due to the limitation may slow down the rate at which data is ingested in Cloud App Security, but usually catches up over night.
 
-Salesforce events are processed by Cloud App security as follows:
+Salesforce events are processed by Cloud App Security as follows:
 
 * Sign-in events every 15 minutes
 * Setup audit trails every 15 minutes

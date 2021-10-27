@@ -26,7 +26,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 ## Set up the portal
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
 
 1. Under **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
 
@@ -44,9 +44,9 @@ For US Government GCC High customers, it's also necessary to add the following I
 
     * To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](azip-integration.md) for information.
+1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](mdi-integration.md) for information.
 
-1. If at any point you want to back up your portal settings, this screen enables you to do that. Click **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
+1. If at any point you want to back up your portal settings, this screen enables you to do that. Select **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
 
 > [!NOTE]
 > If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.

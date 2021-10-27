@@ -1,10 +1,10 @@
 ---
-title: How Cloud App Security helps protect your OneLogin (Preview)
+title: How Cloud App Security helps protect your OneLogin
 description: This article provides information about the benefits of connecting your OneLogin app to Cloud App Security using the API connector for visibility and control over use.
 ms.date: 06/09/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your OneLogin (Preview)
+# How Cloud App Security helps protect your OneLogin
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -10,7 +10,7 @@ ms.topic: how-to
 
 Microsoft Cloud App Security allows you to customize your admin user settings. The notification settings allow admins to specify if they would like to receive email or text notifications for alerts.
 
-## <a name="Adminsettings"></a>Customize your admin settings
+## Customize your admin settings
 
 To set up your preferences as an admin of Microsoft Cloud App Security, click your name in the portal menu bar, and select **User settings** to set the following settings:
 

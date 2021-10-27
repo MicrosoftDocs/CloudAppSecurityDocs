@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security compliance, data security, privacy, trust
+title: Cloud App Security data security and privacy practices
 description: This article describes the Cloud App Security compliance offering, trust center, privacy, and data security.
 ms.date: 02/22/2021
 ms.topic: overview
@@ -16,7 +16,7 @@ Cloud App Security has tools that help uncover shadow IT and assess risk while e
 
 ## Cloud App Security compliance
 
-In a world where data breaches and attacks are daily occurrences, it's essential for organizations to choose a cloud app security broker that makes every effort to protect their data. Cloud App Security, like all Microsoft cloud products and services, is built to address the rigorous security and privacy demands of our customers.
+In a world where data breaches and attacks are daily occurrences, it's essential for organizations to choose a Cloud Access Security Broker (CASB) that makes every effort to protect their data. Cloud App Security, like all Microsoft cloud products and services, is built to address the rigorous security and privacy demands of our customers.
 
 To help organizations comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Cloud App Security provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
 
@@ -34,7 +34,7 @@ Cloud App Security meets many international and industry-specific compliance sta
 |![logo iso 27001.](media/iso-27001.png)|[ISO/IEC 27001](/compliance/regulatory/offering-ISO-27001)|Microsoft is certified for its implementation of these information security management standards.|
 |![logo iso 27018.](media/iso-27018.png)|[ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018)|Microsoft was the first cloud provider to adhere to this code of practice for cloud privacy.|
 |![logo PCI.](media/pci-logo.png)|PCI DSS|Azure complies with Payment Card Industry Data Security Standards Level 1 version 3.1.|
-|![logo SOC.](media/soc-logo.png)|[SOC 1 and SOC 2 Type 2 Reports](/compliance/regulatory/offering-SOC)|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
+|![logo SOC.](media/soc-logo.png)|[SOC 1 and SOC 2 Type 2 Reports](/compliance/regulatory/offering-home)|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo SOC.](media/soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
 |![logo g-cloud.](media/g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
 
@@ -47,7 +47,7 @@ For more information, go to [Microsoft Compliance Offerings](/compliance/regulat
 - In Cloud App Security, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
 - Admins can search for a specific user's metadata or user's activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
-- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+- You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoft.com/licensing/docs?DocumentTypeId=31&redirected=true&Mode=3).
 
 - If you ever choose to terminate the service, you can take your data with you.
 
@@ -72,7 +72,7 @@ Cloud App Security currently operates in datacenters in the European Union, the 
 > [!NOTE]
 > Cloud App Security uses Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
 
-[Learn more about privacy](https://www\.microsoft\.com/trustcenter/privacy)
+[Learn more about privacy](https://www.microsoft.com/trustcenter/privacy)
 
 ## Transparency
 
@@ -82,7 +82,7 @@ Microsoft provides transparency about its practices:
 - Affirming that your data is used only to deliver agreed-upon services.
 - Specifying how Microsoft engineers and approved subcontractors use this data to provide services.
 
-Microsoft uses strict controls to govern access to customer data, granting the lowest level of access required to complete key tasks and revoking access when it is no longer needed.
+Microsoft uses strict controls to govern access to customer data, granting the lowest level of access required to complete key tasks and revoking access when it's no longer needed.
 
 ### Data protection
 
@@ -97,9 +97,17 @@ Cloud App Security retains data as follows:
 - Alerts: 180 days
 - Governance log: 120 days
 
-You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31).
+You can learn more about Microsoft data practices by reading the [Online Service Terms](https://www.microsoft.com/licensing/docs?DocumentTypeId=31&Mode=3).
 
 [Learn more about transparency](https://www.microsoft.com/trust-center/privacy/data-management)
+
+### Deleting personal data
+
+After a user's account  is deleted from a connected cloud application, Cloud App Security will automatically delete the copy of the data within two years.
+
+### Exporting personal data
+
+Cloud App Security provides you with the ability to [export](activity-filters.md#export-activities) to CSV all user activity and security alert information.
 
 ### Data flow
 
@@ -112,7 +120,7 @@ The following table show what data is surfaced for each product integration:
 | Product | Exposed data | Configuration |
 | --- | --- | --- |
 | Microsoft 365 Defender | Alerts and user activities | Enabled automatically on Microsoft 365 Defender upon onboarding |
-| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](/azure/sentinel/connect-cloud-app-security) |
+| Azure Sentinel | Alerts and discovery data | [Enabled in Cloud App Security](siem-sentinel.md) and [configured in Azure Sentinel](/azure/sentinel/data-connectors-reference#microsoft-cloud-app-security-mcas) |
 | Office Security and Compliance Center | Alerts for Office 365 | Automatically streamed to Office Security and Compliance Center |
 | Azure Security Center | Alerts for Azure | Enabled by default in Cloud App Security; can be disabled in Azure Security Center |
 | Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
@@ -128,14 +136,6 @@ The following table show what data is surfaced for each product integration:
 
 > [!NOTE]
 > Other products may not enforce Cloud App Security role-based security permissions to control who has access to what data. Therefore, before integrating with other products, make sure you understand what data is sent to the product you want to use and who has access to it.
-
-### Deleting personal data
-
-After data is deleted from a connected cloud application, Cloud App Security will automatically delete the copy of the data within 2 years.
-
-### Exporting personal data
-
-Cloud App Security provides you with the ability to [export](activity-filters.md#export) to CSV all user activity and security alert information.
 
 ## Security
 
@@ -162,7 +162,7 @@ Cloud App Security enables you to scope your deployment. Scoping enables you to 
 
 ### Anonymization
 
-You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to **Microsoft** Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](cloud-discovery-anonymizer.md).
+You can choose to keep **Cloud Discovery** reports anonymous. After your log files are uploaded to Microsoft Cloud App Security, all username information is replaced with encrypted usernames. For specific security investigations, you can resolve the real username. Private data is encrypted using AES-128 with a dedicated key per tenant. [For more information](cloud-discovery-anonymizer.md).
 
 ## Security and Privacy for Cloud App Security US Government GCC High customers
 
@@ -170,8 +170,8 @@ For information on Cloud App Security compliance standards and the location of d
 
 ## Next steps
 
-- [Cloud App Security overview](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Cloud App Security overview](https://www.microsoft.com/security/business/cloud-app-security)
 - [Cloud App Security documentation](index.yml)
-- [Sign up for Cloud App Security](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
+- [Sign up for Cloud App Security](https://signup.microsoft.com/create-account/signup?ali=1&products=757c4c34-d589-46e4-9579-120bba5c92ed&OfferId=757c4c34-d589-46e4-9579-120bba5c92ed)
 
 Get a free trial of Cloud App Security, and see how it meets your business challenges.

@@ -8,10 +8,10 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security supports role-based access control. This article provides instructions for setting access to the [Cloud App Security portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-assign-admin-roles) and [Office 365](/office365/admin/add-users/assign-admin-roles).
+Microsoft Cloud App Security supports role-based access control. This article provides instructions for setting access to the [Cloud App Security portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Office 365](/microsoft-365/admin/add-users/assign-admin-roles).
 
 >[!IMPORTANT]
->We have changed the flow for adding external admins to Cloud App Security. For more information, see [Invite external admins](#invite-external-admins).
+>We have changed the flow for adding external admins to Cloud App Security. External admin not enrolled using the new process will be deleted by October 31st. For more information, see [Invite external admins](#invite-external-admins).
 
 ## Office 365 and Azure AD roles with access to Cloud App Security
 
@@ -20,11 +20,11 @@ Microsoft Cloud App Security supports role-based access control. This article pr
 > - Office 365 and Azure AD roles aren't listed in the Cloud App Security **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
 > - Cloud App Security uses Azure Active Directory to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in AAD to never sign out when inactive, the same setting will apply in Cloud App Security as well.
 
-By default, the following Office 365 and [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) admin roles have access to Cloud App Security:
+By default, the following Office 365 and [Azure AD](/azure/active-directory/roles/permissions-reference) admin roles have access to Cloud App Security:
 
 - **Global administrator and Security administrator**: Administrators with **Full access** have full permissions in Cloud App Security. They can add admins, add policies and settings, upload logs and perform governance actions, access and manage SIEM agents.
 
-- **Cloud App Security administrator**: Allows full access and permissions in Cloud App Security. Similar to **Global administrator** or **Security administrator** but scoped solely to Cloud App Security.
+- **Cloud App Security administrator**: Allows full access and permissions in Cloud App Security. This role grants full permissions to Cloud App Security, like the Azure AD **Global administrator** role. However, this role is scoped to Cloud App Security and won’t grant full permissions across other Microsoft security products.
 
 - **Compliance administrator**: Has read-only permissions and can manage alerts. Can't access Security recommendations for cloud platforms. Can create and modify file policies, allow file governance actions, and view all the built-in reports under Data Management.
 
@@ -48,25 +48,25 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/user
 
 ### Roles and permissions
 
-| Permissions                                                  | Global  Admin | Security  Admin | Compliance  Admin | Compliance  Data Admin | Security  Operator | Security  Reader | Global  Reader | PBI Admin |
-| ------------------------------------------------------------ | ------------- | --------------- | ----------------- | ---------------------- | ------------------ | ---------------- | -------------- | --------- |
-| Read alerts                                                  | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
-| Manage alerts                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                |                | ✔         |
-| Read OAuth applications                                      | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
-| Perform OAuth application actions                            | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
-| Access discovered apps, cloud app catalog and other cloud  discovery data | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           |
-| Perform cloud discovery actions                              | ✔             | ✔               |                   |                        |                    |                  |                |           |
-| Access files data and file policies                          | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
-| Perform file actions                                         | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
-| Access governance log                                        | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
-| Perform governance log actions                               | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
-| Access scoped discovery governance log                       | ✔             | ✔               |                   |                        |                    |                  |                |           |
-| Read policies                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         |
-| Perform all policy actions                                   | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
-| Perform file policy actions                                  | ✔             | ✔               | ✔                 | ✔                      |                    |                  |                |           |
-| Perform OAuth policy actions                                 | ✔             | ✔               |                   |                        |                    |                  |                | ✔         |
-| View manage admin access                                     | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           |
-| Manage admins and activity privacy                           | ✔             | ✔               |                   |                        |                    |                  |                |           |
+| Permissions                                                  | Global  Admin | Security  Admin | Compliance  Admin | Compliance  Data Admin | Security  Operator | Security  Reader | Global  Reader | PBI Admin | Cloud App Security admin |
+| ------------------------------------------------------------ | ------------- | --------------- | ----------------- | ---------------------- | ------------------ | ---------------- | -------------- | --------- | ------------------- |
+| Read alerts                                                  | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
+| Manage alerts                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                |                | ✔         | ✔                      |
+| Read OAuth applications                                      | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
+| Perform OAuth application actions                            | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
+| Access discovered apps, cloud app catalog and other cloud  discovery data | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           | ✔                      |
+| Perform cloud discovery actions                              | ✔             | ✔               |                   |                        |                    |                  |                |           | ✔                      |
+| Access files data and file policies                          | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
+| Perform file actions                                         | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
+| Access governance log                                        | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
+| Perform governance log actions                               | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
+| Access scoped discovery governance log                       | ✔             | ✔               |                   |                        |                    |                  |                |           | ✔                      |
+| Read policies                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
+| Perform all policy actions                                   | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
+| Perform file policy actions                                  | ✔             | ✔               | ✔                 | ✔                      |                    |                  |                |           | ✔                      |
+| Perform OAuth policy actions                                 | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
+| View manage admin access                                     | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           | ✔                      |
+| Manage admins and activity privacy                           | ✔             | ✔               |                   |                        |                    |                  |                |           | ✔                      |
 
 ## Built-in Cloud App Security admin roles
 

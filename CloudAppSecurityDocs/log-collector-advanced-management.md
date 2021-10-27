@@ -293,14 +293,14 @@ Use the steps relevant to the operating system of the Docker Hub where the log c
 
 1. Download the log collector image.
 
-    ```dos
+    ```cmd
     docker login -u caslogcollector -p C0llector3nthusiast
     docker pull mcr.microsoft/mcas/logcollector
     ```
 
 1. Export the log collector image.
 
-    ```dos
+    ```cmd
     docker save --output C:\mcasLogCollector\mcasLC.targ mcr.microsoft.com/mcas/logcollector
     ```
 
@@ -378,7 +378,7 @@ Use these steps to define custom ports.
 Occasionally, you may need to investigate issues such as the following:
 
 - **Log collectors are receiving data**: Validate that log collectors are receiving Syslog messages from your appliances and are not blocked by firewalls.
-- **Received data is in the correct log format**: Validate the log format to help you troubleshoot parsing errors by comparing the log format expected by Cloud App security and the one sent by your appliance.
+- **Received data is in the correct log format**: Validate the log format to help you troubleshoot parsing errors by comparing the log format expected by Cloud App Security and the one sent by your appliance.
 
 Use these steps to validate the traffic received by log collectors.
 

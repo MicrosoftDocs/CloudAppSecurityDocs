@@ -57,10 +57,11 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
 | Office 365        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Okta              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
-| OneLogin (Preview) | ✔ | | ✔ | ✔ | ✔ | ✔ |
+| OneLogin | ✔ | | ✔ | ✔ | ✔ | ✔ |
 | Service  Now      | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Partial                                     | Partial                   |
 | Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
-| Slack (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Slack | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
@@ -78,10 +79,11 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |
 | Office 365        | ✔                                    | ✔                         | ✔                         |
 | Okta              |                                      | Not applicable            | Not applicable            |
-| OneLogin (Preview) | |  |  |
+| OneLogin | |  |  |
 | Service  Now      |                                      |                           |                           |
 | Salesforce        | ✔                                    | ✔                         | ✔                         |
-| Slack (Preview) |  |  |  |
+| Slack |  |  |  |
+| Smartsheet | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
 | Zendesk (Preview) |  |  |  |
@@ -90,7 +92,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Azure Information Protection  labels |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
-| AWS               |                           | ✔                                        | ✔                         | ✔                         | Not applicable                             |
+| AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
@@ -99,10 +101,11 @@ The following tables list, per cloud app, which abilities are supported with App
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
 | Office 365        | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Okta              | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
-| OneLogin (Preview) |  |  |  |  |  |
+| OneLogin |  |  |  |  |  |
 | Service  Now      | ✔                         | ✔                                        | Not applicable            |                           |                                            |
 | Salesforce        | ✔                         | ✔                                        |                           | ✔                         |                                            |
-| Slack (Preview) |  |  | |  | |
+| Slack |  |  | |  | |
+| Smartsheet | | | | | |
 | Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
 | Zendesk (Preview) |  |  |  |  |  |

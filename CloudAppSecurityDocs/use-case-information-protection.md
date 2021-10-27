@@ -76,7 +76,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 >[!NOTE]
 >
 > - Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
-> - When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied).
+> - When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/azure/information-protection/configure-policy-markings#when-visual-markings-are-applied).
 
 ## Next steps
 
