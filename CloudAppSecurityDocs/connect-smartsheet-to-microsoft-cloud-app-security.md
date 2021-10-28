@@ -1,6 +1,6 @@
 ---
 title: Connect Smartsheet to Cloud App Security
-description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Smartsheet using the App Connector APIs. 
+description: This article describes how to connect Microsoft Cloud App Security to your existing Smartsheet by using the App Connector APIs. 
 ms.date: 08/12/2021
 ms.topic: how-to
 ---
@@ -8,43 +8,48 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Smartsheet using the App Connector APIs. This connection gives you visibility into and control over your organization's Smartsheet use.
+This article describes how to connect Microsoft Cloud App Security to your existing Smartsheet by using the App Connector APIs. The resulting connection gives you visibility into and control over your organization's use of Smartsheet.
 
 ## Prerequisites
 
-- The Smartsheet user used for logging into Smartsheet must be a System Admin.
-- Event Reporting must be enabled by Smartsheet either through Stand Alone purchase or via Enterprise plan with Advance Platinum package.
+- The Smartsheet user used to sign in to Smartsheet must be a system admin.
+- Event Reporting must be enabled by Smartsheet, either through standalone purchase or via an Enterprise plan with the Advance Platinum package.
 
 
 ## How to connect Smartsheet to Cloud App Security
 
 ### Configure Smartsheet
 >[!NOTE]
->The Smartsheet license must be an Enterprise plan with Platinum package.
+>The Smartsheet license must be an Enterprise plan with the Platinum package.
 
-1. Register to add **Developer Tools** to your existing Smartsheet account:
-    1. Add your Smartsheet mail [here](https://developers.smartsheet.com/register/).
+1. Register to add Developer Tools to your existing Smartsheet account:
+    1.  Go to the [Developer Sandbox Account Registration](https://developers.smartsheet.com/register/) page.
+    1. Enter your Smartsheet email address in the text box:
 
-        ![Smartsheet_register_to_developer_tools.](media/smartsheet-register-to-developer-tools.png)
-    1. Enter your mailbox and activate your Developer Tools by clicking the activation mail.
-    1. In the redirected screen in Smartsheet select **Create Developer Profile**, fill your name and mail, select **Save**, and then **Close**.
-    ![Smartsheet_create_developer_tools.](media/smartsheet-create-developer-tools.png)
+        ![Screenshot that shows the Developer Sandbox Account Registration page.](media/smartsheet-register-to-developer-tools.png)
+    1. An activation mail will appear in your mailbox. Activate Developer Tools by using the activation mail.
+    1. In Smartsheet, select **Create Developer Profile**. Enter your name and email address. Select **Save** and then **Close**:
+    
+       ![Screenshot that shows the name and email text boxes.](media/smartsheet-create-developer-tools.png)
 
-2. In Smartsheet, enter **Developer Tools**:
-![Smartsheet_entering_developer_tools.](media/smartsheet-entering-developer-tools.png)
+2. In Smartsheet, select **Developer Tools**:
 
-3. In **Developer Tools**, select **Create New App**:
-![Smartsheet_developer_tools.](media/smartsheet-developer-tools.png)
+   ![Screenshot that shows the Developer Tools menu item.](media/smartsheet-entering-developer-tools.png)
 
-4. In the new app creation page, fill the following:
-    - App name: **Microsoft Cloud App Security** (you can also choose another name).
-    - Description: **Microsoft Cloud App Security connects to Smartsheet via its API and detects threats within users' activity.** (you can also choose another description).
-    - App URL: `https://portal.cloudappsecurity.com`
-    - App contact/support: `https://docs.microsoft.com/en-us/cloud-app-security/support-and-ts`
-    - App Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
-    - Publish app: **Yes**.
-    - Logo: keep empty.
-![Smartsheet_OAuth_app_creation.](media/smartsheet-oauth-app-creation.png)
+3. In the **Developer Tools** dialog, select **Create New App**:
+
+   ![Screenshot that shows the Create New App button.](media/smartsheet-developer-tools.png)
+
+4. In the **Create New App** dialog, provide the following values:
+    - **App name**: For example, **Microsoft Cloud App Security**. 
+    - **App description**: For example, **Microsoft Cloud App Security connects to Smartsheet via its API and detects threats within users' activity.** 
+    - **App URL**: **https://portal.cloudappsecurity.com**
+    - **App contact/support**: **https://docs.microsoft.com/en-us/cloud-app-security/support-and-ts**
+    - **App redirect URL**: **https://portal.cloudappsecurity.com/api/oauth/saga**
+    - **Publish App?**: Select. 
+    - **Logo**: Leave blank.
+    
+      ![Smartsheet_OAuth_app_creation.](media/smartsheet-oauth-app-creation.png)
 
 5. Select **Save**, and copy the **App client id** and **App secret** that was generated. You'll need it in the following steps.
 
