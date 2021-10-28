@@ -43,9 +43,9 @@ This article describes how to connect Microsoft Cloud App Security to your exist
 4. In the **Create New App** dialog, provide the following values:
     - **App name**: For example, **Microsoft Cloud App Security**. 
     - **App description**: For example, **Microsoft Cloud App Security connects to Smartsheet via its API and detects threats within users' activity.** 
-    - **App URL**: **https://portal.cloudappsecurity.com**
-    - **App contact/support**: **https://docs.microsoft.com/en-us/cloud-app-security/support-and-ts**
-    - **App redirect URL**: **https://portal.cloudappsecurity.com/api/oauth/saga**
+    - **App URL**: `https://portal.cloudappsecurity.com`
+    - **App contact/support**: `https://docs.microsoft.com/en-us/cloud-app-security/support-and-ts`
+    - **App redirect URL**: `https://portal.cloudappsecurity.com/api/oauth/saga`
     - **Publish App?**: Select. 
     - **Logo**: Leave blank.
     
