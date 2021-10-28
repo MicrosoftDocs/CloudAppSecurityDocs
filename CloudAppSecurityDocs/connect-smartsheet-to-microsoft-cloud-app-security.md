@@ -49,46 +49,46 @@ This article describes how to connect Microsoft Cloud App Security to your exist
     - **Publish App?**: Select. 
     - **Logo**: Leave blank.
     
-      ![Smartsheet_OAuth_app_creation.](media/smartsheet-oauth-app-creation.png)
+      ![Screenshot that shows the Create New App dialog.](media/smartsheet-oauth-app-creation.png)
 
-5. Select **Save**, and copy the **App client id** and **App secret** that was generated. You'll need it in the following steps.
+5. Select **Save**. Copy the **App client id** and the **App secret** that's generated. You'll need it in the following steps.
 
 ### Configure Cloud App Security
 
 >[!NOTE]
->The Smartsheet user that is configuring the integration must always remain a Smartsheet admin, even after the connector is installed.
+>The Smartsheet user configuring the integration must always remain a Smartsheet admin, even after the connector is installed.
 
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
-2. In the **App connectors** page, select the plus button followed by **Smartsheet**.
+2. On the **App connectors** tab, select the plus button, and then select **Smartsheet**.
 
-3. In the pop-up, give the connector a descriptive name, and press **Connect Smartsheet**.
+3. In the window that appears, give the connector a descriptive name, and then select **Connect Smartsheet**:
 
-    ![Connect_Smartsheet.](media/connect-smartsheet.png)
+    ![Screenshot that shows the Connect Smartsheet button.](media/connect-smartsheet.png)
 
-4. In the next screen, enter the following fields:
+4. On the next screen, enter these values:
 
-    - **Client ID**: the app client id that you've saved.
-    - **Client Secret**: the app secret that you've saved.
+    - **Client ID**: The app client ID that you saved earlier.
+    - **Client Secret**: The app secret that you saved earlier.
 
 5. Select **Connect in Smartsheet**.
-6. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
+6. Make sure the connection succeeded by selecting **Test now**. The test might take a few minutes. After you see a success notice, select **Close**.
 7. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
-8. After the connector’s **Status** is marked as **Connected**, the connector is live and works.
+8. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 
-## Activities limitations
+## Limitations
 
-- Login/Logouts activities are not supported by Smartsheet.
+- Sign in and sign out activities aren't supported by Smartsheet.
 - Smartsheet activities don't contain IP addresses.
-- System activities will be shown with the **Smartsheet** account name.
+- System activities are shown with the Smartsheet account name.
 
 ## Rate limits
 
-The default rate limit is 300 requests per minute. For more information, see [Smartsheet documentation](https://smartsheet.redoc.ly/#section/Work-at-Scale/Rate-Limiting).
+The default rate limit is 300 requests per minute. For more information, see the [Smartsheet documentation](https://smartsheet.redoc.ly/#section/Work-at-Scale/Rate-Limiting).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+> [Control cloud apps by using policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
