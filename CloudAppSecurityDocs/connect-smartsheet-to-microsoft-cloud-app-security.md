@@ -51,7 +51,7 @@ This article describes how to connect Microsoft Cloud App Security to your exist
     
       ![Screenshot that shows the Create New App dialog.](media/smartsheet-oauth-app-creation.png)
 
-5. Select **Save**. Copy the **App client id** and the **App secret** that's generated. You'll need it in the following steps.
+5. Select **Save**. Copy the **App client id** and the **App secret** that are generated. You'll need them in the following steps.
 
 ### Configure Cloud App Security
 
@@ -60,7 +60,7 @@ This article describes how to connect Microsoft Cloud App Security to your exist
 
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
-2. On the **App connectors** tab, select the plus button, and then select **Smartsheet**.
+2. On the **App connectors** tab, select the plus sign, and then select **Smartsheet**.
 
 3. In the window that appears, give the connector a descriptive name, and then select **Connect Smartsheet**:
 
