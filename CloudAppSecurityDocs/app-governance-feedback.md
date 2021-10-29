@@ -17,7 +17,7 @@ description: "How to send feedback for app governance."
 ---
 
 
-# How to submit feedback on app governance 
+# How to submit feedback on app governance
 
 In order to submit feedback on the app governance add-on to Defender for Cloud Apps:
 

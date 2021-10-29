@@ -27,7 +27,7 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
-To create a new app policy, go to **Microsoft 365 Compliance Center > App governance > Overview page > Policies**:
+To create a new app policy, go to **Microsoft 365 Defender > App governance > Overview page > Policies**:
 
 - To create a new app policy with templates designed for app usage, select **Create policy** under **Create an app usage policy**.
 - To create a new app policy with templates designed for app permissions, select **Create policy** under **Create a permissions policy**.
@@ -177,7 +177,7 @@ App governance provides some basic templates that make it easy to create useful 
 
 Now that your app policy is created, you should monitor it on the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing.
 
-![The MAPG policies summary page in the Microsoft 365 Compliance Center with a highlighted policy.](media\app-governance\mapg-cc-policies-policy.png)
+![The app governance policies summary page in the Microsoft 365 Defender with a highlighted policy.](media\app-governance\mapg-cc-policies-policy.png)
 
 If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly before setting its status.
 
