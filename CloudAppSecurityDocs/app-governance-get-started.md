@@ -51,6 +51,9 @@ To verify the integration with Defender for Cloud Apps is active, look for the a
 - Microsoft 365 OAuth Phishing Detection
 - Microsoft 365 OAuth App Governance
 
+> [!NOTE]
+> App governance alerts will not flow to Microsoft 365 Defender until app governance is enabled in Defender for Cloud Apps and you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
+
 ## Prerequisites
 
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Defender for Cloud Apps, and thus Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
@@ -107,15 +110,9 @@ For additional information about each role, see [Administrator role permissions]
 
 ## Canceling your trial
 
-If you did not participate in private preview and would like to cancel your trial of app governance, you can communicate with your CXE contact, or use these steps:
+If you would like to cancel your trial of app governance, you can communicate with your CXE contact, or use these steps:
 
 1. In the Microsoft 365 admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a>.
 1. Navigate to the app governance trial, click the three dots, and select **Cancel subscription**.
 1. In the resulting fly-out pane, provide a reason for cancellation, any additional feedback, and select **Cancel subscription**.
 1. Select **Cancel subscription** in the resulting pop up screen. Your trial is canceled, you will lose access to app governance, and your app governance data will be deleted (log data that is used to create the app governance insights and detections - no emails or other files will be affected).
-
-## Known issues for the public preview
-
-The app governance team has identified the following known issues for the preview:
-
-- 2-way sync between Microsoft Defender and app governance alerts – currently alerts resolved in Defender will have to be manually resolved in app governance as well.
