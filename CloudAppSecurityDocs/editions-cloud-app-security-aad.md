@@ -1,33 +1,33 @@
 ---
-title: Discovery capability differences for Cloud App Security and Azure AD
-description: This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure AD.
+title: Discovery capability differences for Defender for Cloud Apps and Azure AD
+description: This article describes the differences between discovery capabilities in Microsoft Defender for Cloud Apps and Azure AD.
 ms.date: 02/22/2021
 ms.topic: overview
 ---
 
-# What are the differences in discovery capabilities for Azure Active Directory and Microsoft Cloud App Security?
+# What are the differences in discovery capabilities for Azure Active Directory and Microsoft Defender for Cloud Apps?
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes the differences between discovery capabilities in Microsoft Cloud App Security and Azure Active Directory (Azure AD).
+This article describes the differences between discovery capabilities in Microsoft Defender for Cloud Apps and Azure Active Directory (Azure AD).
 
-For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
 
-## Microsoft Cloud App Security
+## Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Cloud App Security, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
+Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Defender for Cloud Apps, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
 ## Cloud App Discovery (as part of Azure Active Directory P1)
 
-Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This is a subset of Microsoft Cloud App Security. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
+Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This is a subset of Microsoft Defender for Cloud Apps. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
 
-[Upgrade to Microsoft Cloud App Security](https://www.microsoft.com/security/business/cloud-app-security) to receive the full suite of Cloud Access Security Broker (CASB) capabilities offered by Microsoft Cloud App Security.
+[Upgrade to Microsoft Defender for Cloud Apps](https://www.microsoft.com/security/business/cloud-app-security) to receive the full suite of Cloud Access Security Broker (CASB) capabilities offered by Microsoft Defender for Cloud Apps.
 
 ### Feature comparison
 
-The following table is a comparison of the discovery capabilities in Microsoft Cloud App Security and Azure AD.
+The following table is a comparison of the discovery capabilities in Microsoft Defender for Cloud Apps and Azure AD.
 
-|Capability|Feature|Microsoft Cloud App Security| Cloud App Discovery (as part of Azure Active Directory P1)|
+|Capability|Feature|Microsoft Defender for Cloud Apps| Cloud App Discovery (as part of Azure Active Directory P1)|
 |----|----|----|----|
 |Cloud Discovery|Discovered apps|20,000 + cloud apps|20,000 + cloud apps|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
@@ -51,6 +51,6 @@ The following table is a comparison of the discovery capabilities in Microsoft C
 
 ## Next steps
 
-- Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).
+- Read about the basics in [Getting started with Defender for Cloud Apps](getting-started-with-cloud-app-security.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].

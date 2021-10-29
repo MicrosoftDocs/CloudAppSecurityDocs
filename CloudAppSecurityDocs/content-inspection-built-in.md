@@ -1,6 +1,6 @@
 ---
-title: How Cloud App Security performs built-in DLP content inspection
-description: This article describes the process Microsoft Cloud App Security follows when running the built-in DLP content inspection on data in your cloud.
+title: How Defender for Cloud Apps performs built-in DLP content inspection
+description: This article describes the process Microsoft Defender for Cloud Apps follows when running the built-in DLP content inspection on data in your cloud.
 ms.date: 12/10/2018
 ms.topic: how-to
 ---
@@ -8,18 +8,18 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes the process Microsoft Cloud App Security follows when running the built-in DLP content inspection on data in your cloud.
+This article describes the process Microsoft Defender for Cloud Apps follows when running the built-in DLP content inspection on data in your cloud.
 
-Cloud App Security content inspection works as follows:
+Defender for Cloud Apps content inspection works as follows:
 
-1. First, Cloud App Security performs Near Real-Time (NRT) scan of drives and events that are detected to be new or changed.
-2. After that scan is complete, Cloud App Security performs a continuous scan of all relevant files in all drives.
+1. First, Defender for Cloud Apps performs Near Real-Time (NRT) scan of drives and events that are detected to be new or changed.
+2. After that scan is complete, Defender for Cloud Apps performs a continuous scan of all relevant files in all drives.
 
 Both the files in the NRT scan and the continuous scan are added to the queue for inspection. The order of the files in the scan queue is set per activity on files and on the scan of your drives. The file contents are scanned only if the file metadata shows it's a supported MIME type (documents, presentations, spreadsheets, text, and zip/archive files).
 
 After a file is scanned, the following actions occur:
 
-1. Cloud App Security applies all your custom policies that relate to metadata and not to the content itself. For example, a policy that alerts you when files are more than 20 MB or a policy that alerts you when docx files are saved to OneDrive.
+1. Defender for Cloud Apps applies all your custom policies that relate to metadata and not to the content itself. For example, a policy that alerts you when files are more than 20 MB or a policy that alerts you when docx files are saved to OneDrive.
 
 2. If there's a policy that requires content inspection and the file qualifies for content inspection, the content is queued for inspection. The queue length depends on the size of the tenant and the number of files that require scan.
 
@@ -52,7 +52,7 @@ Built-in content inspection scan policies can search for the following items:
 
 ## Supported languages
 
-The Cloud App Security content inspection engine:
+The Defender for Cloud Apps content inspection engine:
 
 - Supports all Unicode characters
 - Covers over 100 file types

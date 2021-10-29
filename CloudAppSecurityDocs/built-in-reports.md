@@ -1,6 +1,6 @@
 ---
-title: Generate reports - Microsoft Cloud App Security
-description: This article provides instructions for generating data management reports in Microsoft Cloud App Security.
+title: Generate reports - Microsoft Defender for Cloud Apps
+description: This article provides instructions for generating data management reports in Microsoft Defender for Cloud Apps.
 ms.date: 12/10/2018
 ms.topic: how-to
 ---
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security enables you to generate reports that provide you with an overview of files in your cloud apps.
+Microsoft Defender for Cloud Apps enables you to generate reports that provide you with an overview of files in your cloud apps.
 
 To generate these reports
 
@@ -19,7 +19,7 @@ To generate these reports
 
 ## Data sharing overview
 
-This report lists the number of files, by access permissions, stored in each of your cloud apps. Sharing files has been made easy with cloud apps because of the ease of access and ubiquity. A **Private file** isn't shared with anyone except its owner. If the file is shared, Cloud App Security differentiates between four types of states:
+This report lists the number of files, by access permissions, stored in each of your cloud apps. Sharing files has been made easy with cloud apps because of the ease of access and ubiquity. A **Private file** isn't shared with anyone except its owner. If the file is shared, Defender for Cloud Apps differentiates between four types of states:
 
 - A **Publicly shared (Internet)** file is a file that can be accessed without any authentication, even through a search engine result.
 - A **Publicly shared** file is a file that can be accessed without any authentication, using a link.

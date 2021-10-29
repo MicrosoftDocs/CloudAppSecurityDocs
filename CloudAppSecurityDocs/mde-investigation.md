@@ -8,13 +8,13 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security's [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enable Cloud App Security administrators to investigate discovered devices, network events, and app usage.
+The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for Endpoint](mde-integration.md) provides a seamless Shadow IT visibility and control solution. Our integration enable Cloud App Security administrators to investigate discovered devices, network events, and app usage.
 
-## Investigate discovered devices in Cloud App Security
+## Investigate discovered devices in Defender for Cloud Apps
 
-After you integrate Defender for Endpoint with Cloud App Security, you can investigate discovered device data in the Cloud Discovery dashboard.
+After you integrate Defender for Endpoint with Defender for Cloud Apps, you can investigate discovered device data in the Cloud Discovery dashboard.
 
-1. In Cloud App Security, select **Cloud Discovery** and then **Cloud Discovery dashboard**.
+1. In Defender for Cloud Apps, select **Cloud Discovery** and then **Cloud Discovery dashboard**.
 2. In the top navigation bar, under **Continuous reports**, select **Win10 endpoint users**.
   ![Defender for Endpoint report](media/win10-dashboard-report.png)
 3. Across the top, you'll see the number of discovered devices added after the integration.
@@ -22,7 +22,7 @@ After you integrate Defender for Endpoint with Cloud App Security, you can inves
 5. You can drill down into each device that's listed, and use the tabs to view the investigation data. Find correlations between the devices, the users, IP addresses, and apps that were involved in incidents:
 
     - **Overview**
-        - **Device risk level**: Shows how risky the device's profile is relative to other devices in your organization, as indicated by the severity (high, medium, low, informational). Cloud App Security uses device profiles from Defender for Endpoint for each device based on advanced analytics. Activity that is anomalous to a device's baseline is evaluated and determines the device's risk level. Use the device risk level to determine which devices to investigate first.
+        - **Device risk level**: Shows how risky the device's profile is relative to other devices in your organization, as indicated by the severity (high, medium, low, informational). Defender for Cloud Apps uses device profiles from Defender for Endpoint for each device based on advanced analytics. Activity that is anomalous to a device's baseline is evaluated and determines the device's risk level. Use the device risk level to determine which devices to investigate first.
         - **Transactions**: Information about the number of transactions that took place on the device over the selected period of time.
         - **Total traffic**: Information about the total amount of traffic (in MB) over the selected period of time.
         - Uploads: Information about the total amount of traffic (in MB) uploaded by the device over the selected period of time.
@@ -39,9 +39,9 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 > [!NOTE]
 >
-> - Defender for Endpoint forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
+> - Defender for Endpoint forwards data to Defender for Cloud Apps in chunks of ~4 MB (~4000 endpoint transactions)
 > - If the 4 MB limit isn't reached within 1 hour, Defender for Endpoint reports all the transactions performed over the last hour.
-> - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoints and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Cloud App Security using the **Automated log upload** in order to get complete visibility. For an alternative way to view this traffic and investigate accessed URLs by devices behind the forward proxy, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/mdatp-monitoring-network-connection-behind-forward-proxy-public/ba-p/758274).
+> - If the endpoint device is behind a forward proxy, traffic data will not be visible to Defender for Endpoint and hence will not be included in Cloud Discovery reports. We recommend to routing the forward proxy's logs to Defender for Cloud Apps using the **Automated log upload** in order to get complete visibility. For an alternative way to view this traffic and investigate accessed URLs by devices behind the forward proxy, see [Monitoring network connection behind forward proxy](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/mdatp-monitoring-network-connection-behind-forward-proxy-public/ba-p/758274).
 
 ## Investigate device network events in Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 Use the following steps to gain more granular visibility on device's network activity in Microsoft Defender for Endpoint:
 
-1. In Cloud App Security, under **Discovery** and then select **Devices**.
+1. In Defender for Cloud Apps, under **Discovery** and then select **Devices**.
 1. Select the machine you want to investigate and then in the top-right select **View in Microsoft Defender for Endpoint**.
 1. In Microsoft 365 Defender, under **Devices** > {selected device}, select **Timeline**.
 1. Under **Filters**, select **Network events**.
@@ -62,7 +62,7 @@ Use the following steps to gain more granular visibility on device's network act
 
 Use the following steps to gain more granular visibility on app-related network events in Defender for Endpoint:
 
-1. In Cloud App Security, under **Discovery** select **Discovered apps**.
+1. In Defender for Cloud Apps, under **Discovery** select **Discovered apps**.
 1. Select the app you want to investigate to open its drawer.
 1. Select the app's **Domain** list and then copy the list of domains.
 1. In Microsoft 365 Defender, under **Devices**, select **Advanced hunting**.
@@ -89,7 +89,7 @@ Sometimes, access to an unsanctioned app isn't blocked, either because the endpo
 > [!NOTE]
 >
 > - It takes up to two hours after you tag an app as **Unsanctioned** for app domains to propagate to endpoint devices.
-> - By default, apps and domains marked as **Unsanctioned** in Cloud App Security, will be blocked for all endpoint devices in the organization.
+> - By default, apps and domains marked as **Unsanctioned** in Defender for Cloud Apps, will be blocked for all endpoint devices in the organization.
 > - Currently, full URLs are not supported for unsanctioned apps. Therefore, when unsanctioning apps configured with full URLs, they are not propagated to Defender for Endpoint and will not be blocked. For example, `google.com/drive` is not supported, while `drive.google.com` is supported.
 > - In-browser notifications may vary between different browsers.
 

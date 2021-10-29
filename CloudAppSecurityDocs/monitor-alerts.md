@@ -1,10 +1,10 @@
 ---
-title: Monitor alerts raised in Cloud App Security
+title: Monitor alerts raised in Defender for Cloud Apps
 description: This article provides a list and description of all alerts.
 ms.date: 02/14/2021
 ms.topic: how-to
 ---
-# Monitor alerts in Cloud App Security
+# Monitor alerts in Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -14,7 +14,7 @@ Alerts are the entry points to understanding your cloud environment more deeply.
 
 It's a good idea to review all of your alerts. Understanding why an alert is occurring allows you to use them as tools for modifying your policies.
 
-**To view alerts:** In the Microsoft Cloud App Security portal, click on **Alerts**.
+**To view alerts:** In the Microsoft Defender for Cloud Apps portal, click on **Alerts**.
 
 ![Alert menu.](media/alert-menu.png)
 
@@ -27,11 +27,11 @@ It's a good idea to review all of your alerts. Understanding why an alert is occ
   - The alert will no longer show up in the alerts table.
   - **Mark as unread** if you started investigating an issue but you want to make sure you remember to continue.
   - **Adjust the policy** that matched the alert to improve future alert matches.
-  - Resolving an alert gives you the option to enter a comment and **Send feedback to the Cloud App Security team**.
+  - Resolving an alert gives you the option to enter a comment and **Send feedback to the Defender for Cloud Apps team**.
 
 ## Deployment of our enhanced alert monitoring and management experience
 
-As part of our ongoing improvements to monitoring and managing alerts, the Cloud App Security Alerts page has been improved based on your feedback. In the enhanced experience, the **Resolved** and **Dismissed** statuses are replaced by the **Closed** status, and closed alerts have one of the following resolution types:
+As part of our ongoing improvements to monitoring and managing alerts, the Defender for Cloud Apps Alerts page has been improved based on your feedback. In the enhanced experience, the **Resolved** and **Dismissed** statuses are replaced by the **Closed** status, and closed alerts have one of the following resolution types:
 
 - **True positive**: An alert on a confirmed malicious activity
 - **Benign**: An alert on a suspicious but not malicious activity, such as a penetration test or other authorized suspicious action
@@ -66,7 +66,7 @@ The following alerts types will be displayed.
 
 |Alert name|AlertID|Description|
 |----|----|----|
-|Compromised account|ALERT_COMPROMISED_ACCOUNT|If there was a breach in an application and the list of breached accounts is published, Cloud App Security downloads the list and compares it to your list of users. The user list includes internal users, external users, and personal accounts. |
+|Compromised account|ALERT_COMPROMISED_ACCOUNT|If there was a breach in an application and the list of breached accounts is published, Defender for Cloud Apps downloads the list and compares it to your list of users. The user list includes internal users, external users, and personal accounts. |
 |New admin user|ALERT_ADMIN_USER|A new admin was detected for a specific app. This admin can be someone who is an admin in one application and is now an admin for another application. This alert relates to the specific admin type, so it will show up each time the type of admin changes. If a user lost admin privileges and then got them again, this alert will be displayed.|
 |New location|ALERT_GEOLOCATION_NEW_COUNTRY|A new location was detected since the scan began (up to 6 months). This alert only shows up once for each country/region for your entire organization. |
 |Inactive account|ALERT_ZOMBIE_USER|If a user is inactive for 60 days per application – for example, if someone is active in Box but hasn't touched Google Workspace for 60 days, the user will be considered inactive in Google Workspace. A tag is added to these users so you can search for inactive accounts.|

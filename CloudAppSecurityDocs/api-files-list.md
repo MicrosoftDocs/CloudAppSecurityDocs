@@ -1,6 +1,6 @@
 ---
 title: List - Files API
-description: This article describes the list request in Cloud App Security's Files API.
+description: This article describes the list request in the Defender for Cloud Apps Files API.
 ms.date: 03/27/2020
 ms.topic: reference
 ---
@@ -10,7 +10,7 @@ ms.topic: reference
 
 > [!NOTE]
 >
-> - This API will soon be deprecated. Microsoft Cloud App Security is developing a new solution for identifying and acting upon files that violate policies.
+> - This API will soon be deprecated. Microsoft Defender for Cloud Apps is developing a new solution for identifying and acting upon files that violate policies.
 > - This endpoint may time out when filtering and paginating large collections.
 > - This API is not available for Office 365 Cloud App Security.
 

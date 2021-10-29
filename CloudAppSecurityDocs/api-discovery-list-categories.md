@@ -1,6 +1,6 @@
 ---
 title: List continuous report categories - Cloud Discovery API
-description: This article describes the list continuous report categories request in Cloud App Security's Cloud Discovery API.
+description: This article describes the list continuous report categories request in the Defender for Cloud Apps Cloud Discovery API.
 ms.date: 01/18/2021
 ms.topic: reference
 ---

@@ -1,22 +1,22 @@
 ---
-title: How Cloud App Security helps protect your Okta environment
-description: This article provides information about the benefits of connecting your Okta app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your Okta environment
+description: This article provides information about the benefits of connecting your Okta app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/04/2019
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Okta environment
+# How Defender for Cloud Apps helps protect your Okta environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As an identity and access management solution, Okta holds the keys to your organizations most business critical services. Okta manages the authentication and authorization processes for your users and customers. Any abuse of Okta by a malicious actor or any human error may expose your most critical assets and services to potential attacks.
 
-Connecting Okta to Cloud App Security gives you improved insights into your Okta admin activities, managed users, and customer sigh ins and provides threat detection for anomalous behavior.
+Connecting Okta to Defender for Cloud Apps gives you improved insights into your Okta admin activities, managed users, and customer sigh ins and provides threat detection for anomalous behavior.
 
 ## Main threats
 
 - Compromised accounts and insider threats
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
@@ -34,7 +34,7 @@ For more information about creating policies, see [Create a policy](control-clou
 
 ## Automate governance controls
 
-Currently, there are no governance controls available for Okta. If you are interested in having governance actions for this connector, you can [send the Cloud App Security team feedback](support-and-ts.md#feedback) with details of the actions you want.
+Currently, there are no governance controls available for Okta. If you are interested in having governance actions for this connector, you can [send the Defender for Cloud Apps team feedback](support-and-ts.md#feedback) with details of the actions you want.
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
@@ -45,4 +45,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect Okta to Microsoft Cloud App Security](connect-okta-to-microsoft-cloud-app-security.md)
+> [How to connect Okta to Microsoft Defender for Cloud Apps](connect-okta-to-microsoft-cloud-app-security.md)

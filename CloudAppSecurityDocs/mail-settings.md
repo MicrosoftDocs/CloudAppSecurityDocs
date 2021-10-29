@@ -1,6 +1,6 @@
 ---
 title: Set email notification preferences 
-description: This article provides information about how to personalize the email notifications sent by Cloud App Security.
+description: This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps.
 ms.date: 2/4/2019
 ms.topic: how-to
 ---
@@ -8,20 +8,20 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides information about how to personalize the email notifications sent by Cloud App Security to your users when a breach is detected.
+This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps to your users when a breach is detected.
 
 > [!NOTE]
 > This customization only affects the notifications sent to your end users, not the notifications sent to Cloud App Security administrators.
 
 ## <a name="mailsettings"></a> Set email notification preferences
 
- Microsoft Cloud App Security enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Cloud App Security email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
+ Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
 1. In the menu bar, click the settings cog, select **Settings**, and then select the **Mail settings** tab.
 
     ![mail settings.](media/mail-settings-config.png)
 
-2. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Cloud App Security accomplishes the customization by using a third-party mail service called MailChimp&reg;. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Cloud App Security will send the notifications using the default settings.
+2. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Defender for Cloud Apps accomplishes the customization by using a third-party mail service called MailChimp&reg;. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Defender for Cloud Apps will send the notifications using the default settings.
 
     > [!NOTE]
     > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](https://www.rfc-editor.org/rfc/rfc822.txt).

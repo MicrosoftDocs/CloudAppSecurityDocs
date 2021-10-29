@@ -1,14 +1,14 @@
 ---
-title: Connect Smartsheet to Cloud App Security
-description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Smartsheet using the App Connector APIs. 
+title: Connect Smartsheet to Defender for Cloud Apps
+description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Smartsheet using the App Connector APIs. 
 ms.date: 08/12/2021
 ms.topic: how-to
 ---
-# Connect Smartsheet to Microsoft Cloud App Security
+# Connect Smartsheet to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Smartsheet using the App Connector APIs. This connection gives you visibility into and control over your organization's Smartsheet use.
+This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Smartsheet using the App Connector APIs. This connection gives you visibility into and control over your organization's Smartsheet use.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 - Event Reporting must be enabled by Smartsheet either through Stand Alone purchase or via Enterprise plan with Advance Platinum package.
 
 
-## How to connect Smartsheet to Cloud App Security
+## How to connect Smartsheet to Defender for Cloud Apps
 
 ### Configure Smartsheet
 >[!NOTE]
@@ -37,8 +37,8 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 ![Smartsheet_developer_tools.](media/smartsheet-developer-tools.png)
 
 4. In the new app creation page, fill the following:
-    - App name: **Microsoft Cloud App Security** (you can also choose another name).
-    - Description: **Microsoft Cloud App Security connects to Smartsheet via its API and detects threats within users' activity.** (you can also choose another description).
+    - App name: **Microsoft Defender for Cloud Apps** (you can also choose another name).
+    - Description: **Microsoft Defender for Cloud Apps connects to Smartsheet via its API and detects threats within users' activity.** (you can also choose another description).
     - App URL: `https://portal.cloudappsecurity.com`
     - App contact/support: `https://docs.microsoft.com/en-us/cloud-app-security/support-and-ts`
     - App Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
@@ -48,12 +48,12 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 5. Select **Save**, and copy the **App client id** and **App secret** that was generated. You'll need it in the following steps.
 
-### Configure Cloud App Security
+### Configure Defender for Cloud Apps
 
 >[!NOTE]
 >The Smartsheet user that is configuring the integration must always remain a Smartsheet admin, even after the connector is installed.
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 2. In the **App connectors** page, select the plus button followed by **Smartsheet**.
 
@@ -69,7 +69,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 5. Select **Connect in Smartsheet**.
 6. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
 7. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
-8. After the connector’s **Status** is marked as **Connected**, the connector is live and works.
+8. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 
 ## Activities limitations
 

@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your Smartsheet
-description: This article provides information about the benefits of connecting your Smartsheet app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your Smartsheet
+description: This article provides information about the benefits of connecting your Smartsheet app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 08/15/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Smartsheet
+# How Defender for Cloud Apps helps protect your Smartsheet
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a productivity and collaboration cloud solution, Smartsheet holds sensitive information to your organization. Any abuse of Smartsheet by a malicious actor or any human error may expose your most critical assets and services to potential attacks.
 
-Connecting Smartsheet to Cloud App Security gives you improved insights into your Smartsheet activities and provides threat detection for anomalous behavior.
+Connecting Smartsheet to Defender for Cloud Apps gives you improved insights into your Smartsheet activities and provides threat detection for anomalous behavior.
 
 ## Main threats
 
@@ -22,7 +22,7 @@ Connecting Smartsheet to Cloud App Security gives you improved insights into you
 
 - Unmanaged bring your own device (BYOD)
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 
@@ -59,4 +59,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect Smartsheet to Microsoft Cloud App Security](connect-smartsheet-to-microsoft-cloud-app-security.md)
+> [Connect Smartsheet to Microsoft Defender for Cloud Apps](connect-smartsheet-to-microsoft-cloud-app-security.md)

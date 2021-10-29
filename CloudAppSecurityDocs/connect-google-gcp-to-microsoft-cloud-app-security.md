@@ -1,16 +1,16 @@
 ---
-title: Connect Google Cloud Platform to Cloud App Security
-description: This article provides information about how to connect your Google Cloud Platform to Cloud App Security using the API connector for visibility and control over use.
+title: Connect Google Cloud Platform to Defender for Cloud Apps
+description: This article provides information about how to connect your Google Cloud Platform to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 06/28/2020
 ms.topic: how-to
 ---
-# Connect Google Cloud Platform to Microsoft Cloud App Security
+# Connect Google Cloud Platform to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Cloud App Security protects GCP, see [Protect GCP](protect-gcp.md).
+This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Defender for Cloud Apps protects GCP, see [Protect GCP](protect-gcp.md).
 
-We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a Google Workspace instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected Google Workspace organization** steps when you add the GCP connection details.
+We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a Google Workspace instance already connected to Defender for Cloud Apps, we recommend following the **For a GCP instance that is part of a connected Google Workspace organization** steps when you add the GCP connection details.
 
 ## Prerequisites
 
@@ -19,23 +19,23 @@ The integrating GCP user must have the following permissions:
 - **IAM and Admin edit** – Organization level
 - **Project creation and edit**
 
-You can connect one or both of the following GCP to Cloud App Security connections:
+You can connect one or both of the following GCP to Defender for Cloud Apps connections:
 
 - **Security auditing**: This connection gives you visibility into and control over GCP app use.
 - **Security configuration**: This connection gives you fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for GCP.
 
 Since you can add either or both of the connections, the steps in this article are written as independent instructions. If you have already added one of the connections, where relevant edit the existing configurations.
 
-## How to connect GCP security auditing to Cloud App Security
+## How to connect GCP security auditing to Defender for Cloud Apps
 
 Connecting GCP security auditing gives you visibility into and control over GCP app use.
 
-Follow these steps to connect GCP Security auditing to Cloud App Security.
+Follow these steps to connect GCP Security auditing to Defender for Cloud Apps.
 
 > [!div class="checklist"]
 >
 > - [Configure Google Cloud Platform](#configure-google-cloud-platform)
-> - [Connect Google Cloud Platform auditing to Cloud App Security](#connect-google-cloud-platform-auditing-to-cloud-app-security)
+> - [Connect Google Cloud Platform auditing to Defender for Cloud Apps](#connect-google-cloud-platform-auditing-to-cloud-app-security)
 
 ### Configure Google Cloud Platform
 
@@ -46,7 +46,7 @@ Follow these steps to connect GCP Security auditing to Cloud App Security.
 > - [Pub/Sub topic – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
 > - [Pub/Sub subscription – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
 >
-> The Cloud App Security auditing connection only imports Admin Activity audit logs; Data Access and System Event audit logs are not imported. For more information about GCP logs, see [Cloud Audit Logs](https://go.microsoft.com/fwlink/?linkid=2109230).
+> The Defender for Cloud Apps auditing connection only imports Admin Activity audit logs; Data Access and System Event audit logs are not imported. For more information about GCP logs, see [Cloud Audit Logs](https://go.microsoft.com/fwlink/?linkid=2109230).
 
 #### Create a dedicated project
 
@@ -109,11 +109,11 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 ![Screenshot showing organization ID dialog.](media/connect-gcp-org-id.png)
 
-### Connect Google Cloud Platform auditing to Cloud App Security
+### Connect Google Cloud Platform auditing to Defender for Cloud Apps
 
 #### Add the GCP connection details
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, to provide the GCP connector credentials, do one of the following:
 
@@ -154,18 +154,18 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
-## How to connect GCP security configuration to Cloud App Security
+## How to connect GCP security configuration to Defender for Cloud Apps
 
 Connecting GCP security configuration gives you insights into fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for GCP.
 
-Follow these steps to connect GCP security configuration to Cloud App Security.
+Follow these steps to connect GCP security configuration to Defender for Cloud Apps.
 
 > [!div class="checklist"]
 >
 > - [Set up GCP Security Command Center with Security Health Analytics](#set-up-gcp-security-command-center-with-security-health-analytics)
 > - [Enable Security Command Center API](#enable-security-command-center-api)
 > - [Create a dedicated service account for the security configuration integration](#create-a-dedicated-service-account-for-the-security-configuration-integration)
-> - [Connect Google Cloud Platform security configuration to Cloud App Security](#connect-google-cloud-platform-security-configuration-to-cloud-app-security)
+> - [Connect Google Cloud Platform security configuration to Defender for Cloud Apps](#connect-google-cloud-platform-security-configuration-to-cloud-app-security)
 
 ### Set up GCP Security Command Center with Security Health Analytics
 
@@ -180,19 +180,19 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 
 ### Enable Security Command Center API
 
-1. In Cloud Console API Library, select the project you want to connect to Cloud App Security.
+1. In Cloud Console API Library, select the project you want to connect to Defender for Cloud Apps.
 1. In the API Library, search for and select the "Security Command Center API".
 1. In the API page, click **ENABLE**.
 
 ### Create a dedicated service account for the security configuration integration
 
-1. In GCP Security Command Center, select the project you want to connect to Cloud App Security.
+1. In GCP Security Command Center, select the project you want to connect to Defender for Cloud Apps.
 1. Under **IAM & admin**, click **Service accounts**.
 1. Click **CREATE SERVICE ACCOUNT** to create a dedicated service account.
 1. Enter an account name, and then click **Create**.
-1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
+1. Specify the **Role** as **Defender for Cloud Admin Viewer** and then click **Save**.
 
-    ![Screenshot showing add GCP menu item for Security Center Admin Viewer.](media/connect-gcp-security-configuration-1.png)
+    ![Screenshot showing add GCP menu item for Defender for Cloud Admin Viewer.](media/connect-gcp-security-configuration-1.png)
 
 1. Copy the **Email** value, you'll need this later.
 
@@ -203,7 +203,7 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
     1. Switch to organization level.
     1. Click **ADD**.
     1. In the **New members** box, paste the **Email** value you copied earlier.
-    1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
+    1. Specify the **Role** as **Defender for Cloud Admin Viewer** and then click **Save**.
 
         ![Screenshot showing add member to project dialog.](media/connect-gcp-security-configuration-3.png)
 
@@ -225,9 +225,9 @@ Follow these steps to connect GCP security configuration to Cloud App Security.
 Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
     ![Screenshot showing organization ID dialog.](media/connect-gcp-org-id.png)
 
-### Connect Google Cloud Platform security configuration to Cloud App Security
+### Connect Google Cloud Platform security configuration to Defender for Cloud Apps
 
-1. In Cloud App Security, click **Investigate**, and then select **Connected apps**.
+1. In Defender for Cloud Apps, click **Investigate**, and then select **Connected apps**.
 
 1. In the **Security configuration apps** tab, click the plus button, and then select **Google Cloud Platform**.
 

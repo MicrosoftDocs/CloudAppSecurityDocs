@@ -1,6 +1,6 @@
 ---
-title: Working with discovered apps in Cloud App Security
-description: This article describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
+title: Working with discovered apps in Defender for Cloud Apps
+description: This article describes the process for identifying and remediating risky cloud discovery apps in Defender for Cloud Apps.
 ms.date: 09/25/2019
 ms.topic: conceptual
 ---
@@ -57,14 +57,14 @@ This is supported only in firewalls and proxies that contain target URL data. Fo
 
 Cloud Discovery also enables you to deep dive into your IaaS and PaaS resources. You can discover activity across your resource-hosting platforms, viewing access to data across your self-hosted apps and resources including storage accounts, infrastructure and custom apps hosted on Azure, Google Cloud Platform, and AWS. Not only can you see overall usage in your IaaS solutions, but you can get visibility into the specific resources that are hosted on each, and the overall usage of the resources, to help mitigate risk per resource.
 
-For example, from Cloud App Security you can monitor activity such as if a lot of data is uploaded, you can discover what resource it's uploaded to and drill down to see who performed the activity.
+For example, from Defender for Cloud Apps you can monitor activity such as if a lot of data is uploaded, you can discover what resource it's uploaded to and drill down to see who performed the activity.
 
 > [!NOTE]
 > This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
 To view discovered resources:
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Discovered resources**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Discovered resources**.
 
     ![Discovered resources menu.](media/discovered-resources-menu.png)
 

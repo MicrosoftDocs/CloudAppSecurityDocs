@@ -1,6 +1,6 @@
 ---
-title: Policy template reference for Cloud App Security
-description: This article provides information on policy templates included in Microsoft Cloud App Security.
+title: Policy template reference for Defender for Cloud Apps
+description: This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
 ms.date: 12/1/2019
 ms.topic: how-to
 ---
@@ -8,11 +8,11 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides information on policy templates included in Microsoft Cloud App Security.
+This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
 
 ## Policy templates
 
-We recommend starting policy creation based on an existing template whenever possible for ease of use. This table lists policy templates that exist in Microsoft Cloud App Security.
+We recommend starting policy creation based on an existing template whenever possible for ease of use. This table lists policy templates that exist in Microsoft Defender for Cloud Apps.
 
 |Risk category|Template name|Description|
 |-----|----|----|
@@ -34,9 +34,9 @@ We recommend starting policy creation based on an existing template whenever pos
 |Cloud Discovery|New sales app|Alert when new sales apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
 |Cloud Discovery|New vendor management system apps|Alert when new vendor management system apps are discovered that are used by more than 50 users with a total daily use of more than 50 MB.|
 |DLP|Externally shared source code|Alert when a file containing source code is shared outside your organization.|
-|DLP|File containing PCI detected in the cloud (built-in DLP engine)|Alert when a file with payment card information (PCI) is detected by the Microsoft Cloud App Security built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
-|DLP|File containing PHI detected in the cloud (built-in DLP engine)|Alert when a file with protected health information (PHI) is detected by the Microsoft Cloud App Security built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
-|DLP|File containing private information detected in the cloud (built-in DLP engine)|Alert when a file with personal data is detected by the Microsoft Cloud App Security built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
+|DLP|File containing PCI detected in the cloud (built-in DLP engine)|Alert when a file with payment card information (PCI) is detected by the Microsoft Defender for Cloud Apps built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
+|DLP|File containing PHI detected in the cloud (built-in DLP engine)|Alert when a file with protected health information (PHI) is detected by the Microsoft Defender for Cloud Apps built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
+|DLP|File containing private information detected in the cloud (built-in DLP engine)|Alert when a file with personal data is detected by the Microsoft Defender for Cloud Apps built-in data loss prevention (DLP) engine in a sanctioned cloud app.|
 |Threat detection|Administrative activity from a non-corporate IP address|Alert when an admin user performs an administrative activity from an IP address that isn't included in the corporate IP address range category. First configure your corporate IP addresses by going to the Settings page, and setting **IP address ranges**.|
 |Threat detection|Log on from a risky IP address|Alert when a user signs into your sanctioned apps from a risky IP address. By default, the Risky IP address category contains addresses that have IP address tags of Anonymous proxy, TOR, or Botnet. You can add more IP addresses to this category in the IP address ranges settings page.|
 |Threat detection|Mass download by a single user|Alert when a single user performs more than 50 downloads within 1 minute.|

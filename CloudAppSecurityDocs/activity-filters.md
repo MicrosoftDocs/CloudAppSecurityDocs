@@ -8,15 +8,15 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security gives you visibility into all the activities from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security scans all the activities that happened - the retroactive scan time period differs per app - and then it's updated constantly with new activities.
+Microsoft Defender for Cloud Apps gives you visibility into all the activities from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps scans all the activities that happened - the retroactive scan time period differs per app - and then it's updated constantly with new activities.
 
 > [!NOTE]
-> For a full list of Office 365 activities monitored by Cloud App Security, see [Search the audit log in the Office 365 Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#audited-activities)
+> For a full list of Office 365 activities monitored by Defender for Cloud Apps, see [Search the audit log in the Office 365 Security & Compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#audited-activities)
 
 The **Activity log** can be filtered to enable you to find specific activities. You create policies based on the activities and then define what you want to be alerted about and act on. You are able to search for activities performed on certain files. The type of activities and the information we get for each activity depends on the app and what kind of data the app can provide.
 
 For example, you can use the **Activity log** to find users in your organization who are using operating systems or browsers that are out of date, as follows:
-After you connect an app to Cloud App Security in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**.
+After you connect an app to Defender for Cloud Apps in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**.
 
 ![Activity outdated browser example.](media/activity-example-outdated.png)
 
@@ -80,7 +80,7 @@ Clicking opens the Activity drawer **User** tab provides the following insights 
     - **ISPs**: The number of ISPs the user connected from in past 30 days.
     - **IP addresses**: The number of IP addresses the user connected from in past 30 days.
 
-![user insights in Cloud App Security.](media/user-insights.png)
+![user insights in Defender for Cloud Apps.](media/user-insights.png)
 
 #### IP address insights
 
@@ -105,7 +105,7 @@ This opens the Activity drawer **IP address** tab, which provides the following 
    >[!NOTE]
    > When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, impossible travel) because these IP addresses are considered trusted.
 
-![IP address insights in Cloud App Security.](media/ip-address-insights.png)
+![IP address insights in Defender for Cloud Apps.](media/ip-address-insights.png)
 
 ## Export activities
 

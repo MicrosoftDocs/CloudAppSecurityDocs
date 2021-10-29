@@ -33,7 +33,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
 1. Go to the automated upload setting page:
-   In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the settings icon ![settings icon.](media/settings-icon.png "settings icon"), followed by  **Log collectors**.
+   In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click the settings icon ![settings icon.](media/settings-icon.png "settings icon"), followed by  **Log collectors**.
 
 2. For each firewall or proxy from which you want to upload logs, create a matching data source:
 
@@ -62,7 +62,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
     > [!NOTE]
     >
     > - A single Log collector can handle multiple data sources.
-    > - Copy the contents of the screen because you will use it when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information includes information about which port the Syslog listener is listening on.
+    > - Copy the contents of the screen because you will use it when you configure the Log Collector to communicate with Defender for Cloud Apps. If you selected Syslog, this information includes information about which port the Syslog listener is listening on.
 
 4. If you accept the [end-user license terms](https://go.microsoft.com/fwlink/?linkid=862492), **Download** a new log collector virtual machine by clicking on Hyper-V or VMWare. Then, unzip the file using the password you received in the portal.
 
@@ -98,7 +98,7 @@ The log collector has a built-in safety mechanism that monitors the rate at whic
     > [!NOTE]
     > The virtual machine is pre-configured to obtain an IP address from a DHCP server. If you need to configure a static IP address, default gateway, hostname, DNS servers, and NTPS, you can use the **network_config** utility or perform changes manually.
 
-At this point, your log collector should be connected to your network and should be able to reach the Cloud App Security portal.
+At this point, your log collector should be connected to your network and should be able to reach the Defender for Cloud Apps portal.
 
 ### Step 3 – On-premises configuration of the log collection
 
@@ -107,7 +107,7 @@ The first time you sign in to the log collector and import the log collector's c
 1. Sign in to the log collector over SSH using the Interactive admin credentials provided to you in the portal. (If this is your first time logging in to the console, you'll need to change the password and sign in again after changing the password. If you're using a terminal session, you might need to restart the terminal session. )
 2. Run the collector config utility with the access token provided to you when you created the log collector. `sudo collector_config <access token>`
 3. Enter your console domain, for example: `contoso.portal.cloudappsecurity.com`
-  This is available from the URL you see after logging in to the Cloud App Security portal.
+  This is available from the URL you see after logging in to the Defender for Cloud Apps portal.
 4. Enter the name of the log collector you want to configure, for example:
 **CloudAppSecurityLogCollector01** or **NewYork** from the preceding picture.
 5. Import the log collector's configuration from the portal, as follows:
@@ -128,7 +128,7 @@ Configure your network firewalls and proxies to periodically export logs to the 
 
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-### Step 5 - Verify the successful deployment in the Cloud App Security portal
+### Step 5 - Verify the successful deployment in the Defender for Cloud Apps portal
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible that the log collector connection and parsing haven't completed.
 
@@ -140,9 +140,9 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 ### Optional - Create custom continuous reports
 
-After you've verified that the logs are being uploaded to Cloud App Security and the reports are being generated, you can create custom reports. You can now create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
+After you've verified that the logs are being uploaded to Defender for Cloud Apps and the reports are being generated, you can create custom reports. You can now create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, you can import the marketing group using the import user group feature, and then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the Settings cog, select **Cloud Discovery settings**, and then select **Continuous reports**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the Settings cog, select **Cloud Discovery settings**, and then select **Continuous reports**.
 2. Click the **Create report** button and fill in the fields.
 3. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Working with the risk score 
-description: This article provides instructions for how to use and customize the Cloud App Security app risk score.
+description: This article provides instructions for how to use and customize the Defender for Cloud Apps app risk score.
 ms.date: 1/27/2019
 ms.topic: conceptual
 ---
@@ -8,15 +8,15 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 16,000 cloud apps. The apps are ranked and scored based on more than 80 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses to your organization. This article provides instructions for how to use and customize the Cloud App Security app risk score.
+The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 16,000 cloud apps. The apps are ranked and scored based on more than 80 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses to your organization. This article provides instructions for how to use and customize the Defender for Cloud Apps app risk score.
 
 ## The Cloud App Catalog
 
 The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up-to-date:
 
 1. Automated data extraction directly from the cloud app. The extraction is for attributes such as SOC 2 compliance, terms of service, sign-in URL, privacy policy, and HQ location.
-2. Automated advanced data extraction for data by Cloud App Security's algorithms (for attributes such as HTTP security headers).
-3. Continuous analysis by the Cloud App Security cloud analyst team (for attributes such as encryption at rest).
+2. Automated advanced data extraction for data by the Defender for Cloud Apps algorithms (for attributes such as HTTP security headers).
+3. Continuous analysis by the Defender for Cloud Apps cloud analyst team (for attributes such as encryption at rest).
 4. Customer-based revision requests, based on customer submission requests for changes to the Cloud app catalog. All requests are reviewed by our cloud analyst team and updated based on their findings.
 
 ![Screenshot showing the cloud app catalog.](media/cloud-app-catalog.png)
@@ -51,19 +51,19 @@ There are basic and advanced Cloud App Catalog filters. To build a complex filte
 
 ## Suggesting a change
 
-If you find a new app in your environment that hasn't been scored by Cloud App Security, you can request a review of the app. You can also request a review for a new risk factor, a score update, or app data that is outdated.
+If you find a new app in your environment that hasn't been scored by Defender for Cloud Apps, you can request a review of the app. You can also request a review for a new risk factor, a score update, or app data that is outdated.
 
 **To suggest a new app:**
 
 1. At the top of the **Discovered apps** page, click the three dots and then select **Suggest new app**.
 
-    ![Screenshot showing the **Suggest an app** menu item in Cloud App Security.](media/suggest-new-app.png)
+    ![Screenshot showing the **Suggest an app** menu item in Defender for Cloud Apps.](media/suggest-new-app.png)
 
 2. In the **Suggest new cloud app** pop-up, fill in details about the new app. Include the name and domain of the app.
 
-    ![Screenshot showing the **Suggest new cloud app** pop-up box in Cloud App Security.](media/suggest-new-app-pop-up.png)
+    ![Screenshot showing the **Suggest new cloud app** pop-up box in Defender for Cloud Apps.](media/suggest-new-app-pop-up.png)
 
-3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed.
+3. We recommend selecting the checkbox to enable Defender for Cloud Apps analysts to contact you in case additional information about the app is needed.
 
 **To update a risk factor, score, or update app data:**
 
@@ -73,13 +73,13 @@ If you find a new app in your environment that hasn't been scored by Cloud App S
 
 2. In the **Suggest an improvement** pop-up, select whether you want to request a score update, suggest a new risk factor or update app data.
 
-    ![suggest and improvement to Cloud App Security.](media/suggest-improvement-pop-up.png)
+    ![suggest and improvement to Defender for Cloud Apps.](media/suggest-improvement-pop-up.png)
 
-3. We recommend selecting the checkbox to enable Cloud App Security analysts to contact you in case additional information about the app is needed. Filling in contact information allows you to be updated when the analysis is complete.
+3. We recommend selecting the checkbox to enable Defender for Cloud Apps analysts to contact you in case additional information about the app is needed. Filling in contact information allows you to be updated when the analysis is complete.
 
 ## Customizing the risk score
 
-Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score. The score represents Cloud App Security's assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three subscores relating to the three subcategories which Cloud App Security considers when assessing reliability:
+Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score. The score represents the Defender for Cloud Apps assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three subscores relating to the three subcategories which Defender for Cloud Apps considers when assessing reliability:
 
 - **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year, and popularity. These fields are meant to show the company's stability on the most basic level.
 
@@ -89,7 +89,7 @@ Cloud Discovery provides you with important data regarding the credibility and r
 
 - **Legal** - This category displays which apps have which regulations and policies in-place to ensure data protection and privacy of the app's users such as GDPR, DMCA, and data retention policy.
 
-Each of the categories is composed of many specific properties. According to the Cloud App Security scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly. However, continuous properties, such as domain age, will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category to create the category's subscore. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.
+Each of the categories is composed of many specific properties. According to the Defender for Cloud Apps scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly. However, continuous properties, such as domain age, will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category to create the category's subscore. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.
 
 It's important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:
 
@@ -101,7 +101,7 @@ It's important to take a minute to review and modify the default weights given t
 
     ![Screenshot showing score metrics.](media/score.png)
 
-All the information needed to understand how the Cloud App Security risk scores are stacking up is available in the Cloud App Security portal. To better understand a risk factor's weight in a specific risk category, use the "i" button to the right of each field name in the app's profile. This provides information about how exactly Cloud App Security scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
+All the information needed to understand how the Defender for Cloud Apps risk scores are stacking up is available in the Defender for Cloud Apps portal. To better understand a risk factor's weight in a specific risk category, use the "i" button to the right of each field name in the app's profile. This provides information about how exactly Defender for Cloud Apps scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
 
 ![Screenshot showing a risk calculation.](media/cac-weight.png)
 
@@ -114,7 +114,7 @@ To understand a risk category's weight in an app's total score, hover over the r
 To override the risk score, in the **Discovered apps** table or in the **Cloud app catalog**, click the three dots to the right of any app and select **Override app score**.
 You can override the risk score of an app without changing the way it's weighted so that you get immediate results for your organization. For example, The risk score of an LOB app you use is 8. However, the app is sanctioned and encouraged by your organization. You might want to change the risk score to 10 for the LOB app.
 
-![Screenshot of overriding a risk score in Cloud App Security.](media/override-risk-score.png)
+![Screenshot of overriding a risk score in Defender for Cloud Apps.](media/override-risk-score.png)
 
 After you update the score, you can include app notes to make your business justification for modifying this app score clear to other administrators.
 

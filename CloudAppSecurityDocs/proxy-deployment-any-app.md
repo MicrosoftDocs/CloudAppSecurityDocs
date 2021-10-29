@@ -1,6 +1,6 @@
 ---
-title: Deploy Cloud App Security Conditional Access App Control for any apps
-description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control reverse proxy features for any apps.
+title: Deploy Defender for Cloud Apps Conditional Access App Control for any apps
+description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for any apps.
 ms.date: 02/18/2021
 ms.topic: how-to
 ---
@@ -8,16 +8,16 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Session controls in Microsoft Cloud App Security can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
+Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 
-For a list of apps that are featured by Cloud App Security to work out-of-the-box, see [Protect apps with Cloud App Security Conditional Access App Control](proxy-intro-aad.md#featured-apps).
+For a list of apps that are featured by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#featured-apps).
 
 ## Prerequisites
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
   - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/license-users-groups) or higher, or the license required by your identity provider (IdP) solution
-  - Microsoft Cloud App Security
+  - Microsoft Defender for Cloud Apps
 
 - Apps must be configured with single sign-on
 - Apps must use one of the following authentication protocols:
@@ -29,9 +29,9 @@ For a list of apps that are featured by Cloud App Security to work out-of-the-bo
 
 ## To deploy any app
 
-Follow these steps to configure any app to be controlled by Cloud App Security Conditional Access App Control.
+Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
 
-**Step 1: [Configure your IdP to work with Cloud App Security](#conf-idp)**
+**Step 1: [Configure your IdP to work with Defender for Cloud Apps](#conf-idp)**
 
 **Step 2: [Configure the users that will deploy the app](#conf-users)**
 
@@ -44,16 +44,16 @@ Follow these steps to configure any app to be controlled by Cloud App Security C
 **Step 6: [Update the Azure AD policy](#update-azure-ad)**
 
 > [!NOTE]
-> To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](/azure/active-directory/fundamentals/license-users-groups) as well as a Cloud App Security license.
+> To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](/azure/active-directory/fundamentals/license-users-groups) as well as a Defender for Cloud Apps license.
 
-## Step 1:  Configure your IdP to work with Cloud App Security<a name="conf-idp"></a><a name="conf-azure-ad"></a>
+## Step 1:  Configure your IdP to work with Defender for Cloud Apps<a name="conf-idp"></a><a name="conf-azure-ad"></a>
 
 ### Configure integration with Azure AD
 
 >[!NOTE]
 >When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
 
-Use the following steps to create an Azure AD Conditional Access policy that routes app sessions to Cloud App Security. For other IdP solutions, see [Configure integration with other IdP solutions](#configure-integration-with-other-idp-solutions).
+Use the following steps to create an Azure AD Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Configure integration with other IdP solutions](#configure-integration-with-other-idp-solutions).
 
 1. In Azure AD, browse to **Security** > **Conditional Access**.
 
@@ -65,7 +65,7 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 
 1. Under **Assignments**, click **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then click **Done**.
 
-1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Cloud App Security, and then click **Select**.
+1. Under **Access controls**, click **Session**, select **Use Conditional Access App Control** and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then click **Select**.
 
     ![Azure AD conditional access.](media/azure-ad-caac-policy.png)
 
@@ -75,7 +75,7 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 
 ### Configure integration with other IdP solutions
 
-Use the following steps to route app sessions from other IdP solutions to Cloud App Security. For Azure AD, see [Configure integration with Azure AD](#configure-integration-with-azure-ad).
+Use the following steps to route app sessions from other IdP solutions to Defender for Cloud Apps. For Azure AD, see [Configure integration with Azure AD](#configure-integration-with-azure-ad).
 
 > [!NOTE]
 > For examples of how to configure IdP solutions, see:
@@ -84,7 +84,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 > - [Configure your AD FS IdP](proxy-idp-adfs.md)
 > - [Configure your Okta IdP](proxy-idp-okta.md)
 
-1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
+1. In Defender for Cloud Apps, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
 1. Click the plus sign (**+**), and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
 1. On the **APP INFORMATION** page, fill out the form using the information from your app's single sign-on configuration page, and then click **Next**.
@@ -129,7 +129,7 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
     > The settings are commonly found in IdP portal's custom app settings page
 
     1. [Recommended] Create a backup of your current settings.
-    1. Replace the single sign-on URL field value with the Cloud App Security SAML single sign-on URL you noted earlier.
+    1. Replace the single sign-on URL field value with the Defender for Cloud Apps SAML single sign-on URL you noted earlier.
         > [!NOTE]
         > Some providers may refer to the single sign-on URL as the *Reply URL*.
     1. Add the attributes and values you made a note of earlier to the app's properties.
@@ -143,22 +143,22 @@ Use the following steps to route app sessions from other IdP solutions to Cloud 
 1. On the **APP CHANGES** page, do the following, and then click **Next**. You'll need the information in the next step.
 
     - Copy the Single sign-on URL
-    - Download the Cloud App Security SAML certificate
+    - Download the Defender for Cloud Apps SAML certificate
 
-    ![Screenshot showing gather Cloud App Security SAML information page.](media/proxy-deploy-add-idp-app-changes.png)
+    ![Screenshot showing gather Defender for Cloud Apps SAML information page.](media/proxy-deploy-add-idp-app-changes.png)
 
 1. In your app's portal, on the single sign-on settings, do the following:
     1. [Recommended] Create a backup of your current settings.
-    1. In the single sign-on URL field, enter the Cloud App Security single sign-on URL you made a note of earlier.
-    1. Upload the Cloud App Security SAML certificate you downloaded earlier.
+    1. In the single sign-on URL field, enter the Defender for Cloud Apps single sign-on URL you made a note of earlier.
+    1. Upload the Defender for Cloud Apps SAML certificate you downloaded earlier.
     > [!NOTE]
     >
     > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
-    > - The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
+    > - The Defender for Cloud Apps SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
 ## Step 2: Configure the users that will deploy the app<a name="conf-users"></a>
 
-1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
+1. In Defender for Cloud Apps, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -186,25 +186,25 @@ Go to the app that you are deploying. The page you see depends on whether the ap
 1. In the list of new apps, for each app that you are onboarding, click on the **+** sign, and then click **Add**.
 
     > [!NOTE]
-    > If an app does not appear in the Cloud App Security app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
+    > If an app does not appear in the Defender for Cloud Apps app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
 
     ![Conditional access app control discovered Azure AD apps.](media/caac-discovered-aad-apps.png)
 
 ### To add domains for an app<a name="add-domains"></a>
 
-Associating the correct domains to an app allows Cloud App Security to enforce policies and audit activities.
+Associating the correct domains to an app allows Defender for Cloud Apps to enforce policies and audit activities.
 
 For example, if you have configured a policy that blocks downloading files for an associated domain, file downloads by the app from that domain will be blocked. However, file downloads by the app from domains not associated with the app will not be blocked and the action will not be audited in the activity log.
 > [!NOTE]
-> Cloud App Security still adds a suffix to domains not associated with the app to ensure a seamless user experience.
+> Defender for Cloud Apps still adds a suffix to domains not associated with the app to ensure a seamless user experience.
 
-1. From within the app, on the Cloud App Security admin toolbar, click **Discovered domains**.
+1. From within the app, on the Defender for Cloud Apps admin toolbar, click **Discovered domains**.
     > [!NOTE]
     > The admin toolbar is only visible to users with permissions to onboard or maintenance apps.
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
     > [!NOTE]
     > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
-1. Go to Cloud App Security, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
+1. Go to Defender for Cloud Apps, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
     > [!TIP]
     > To view the list of domains configured in the app, click **View app domains**.
@@ -243,7 +243,7 @@ For example, if you have configured a policy that blocks downloading files for a
 
 Once you are ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Cloud App Security, click the settings cog ![settings icon.](media/settings-icon.png), and then select **Conditional Access App Control**.
+1. In Defender for Cloud Apps, click the settings cog ![settings icon.](media/settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you are deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then click **Save**.
 
@@ -253,7 +253,7 @@ Once you are ready to enable the app for use in your organization's production e
 
 1. In Azure AD, under **Security**, click **Conditional Access**.
 1. Update the policy you created earlier to include the relevant users, groups, and controls you require.
-1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Cloud App Security and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
+1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Defender for Cloud Apps and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
 
 ## Next steps
 

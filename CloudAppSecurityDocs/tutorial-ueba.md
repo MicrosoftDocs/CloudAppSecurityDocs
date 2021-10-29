@@ -1,6 +1,6 @@
 ---
 title: Investigate risky users tutorial
-description: This tutorial describes the process to investigate risky users in Microsoft Cloud App Security, across hybrid environments, by integrating with Microsoft Defender for Identity.
+description: This tutorial describes the process to investigate risky users in Microsoft Defender for Cloud Apps, across hybrid environments, by integrating with Microsoft Defender for Identity.
 ms.date: 02/24/2021
 ms.topic: tutorial
 ---
@@ -8,13 +8,13 @@ ms.topic: tutorial
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often aren't connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Cloud App Security now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
+Security operations teams are challenged to monitor user activity, suspicious or otherwise, across all dimensions of the identity attack surface, using multiple security solutions that often aren't connected. While many companies now have hunting teams to proactively identify threats in their environments, knowing what to look for across the vast amount of data can be a challenge. Microsoft Defender for Cloud Apps now simplifies this by taking away the need to create complex correlation rules, and lets you look for attacks that span across your cloud and on-premises network.
 
-To help you focus on user identity, Microsoft Cloud App Security provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Microsoft Defender for Identity. After you integrate with Defender for Identity, you'll also gain context around user identity from its native integration with Active Directory.
+To help you focus on user identity, Microsoft Defender for Cloud Apps provides user entity behavioral analytics (UEBA) in the cloud. This can be extended to your on-premises environment by integrating with Microsoft Defender for Identity. After you integrate with Defender for Identity, you'll also gain context around user identity from its native integration with Active Directory.
 
-Whether your trigger is an alert you see in the Cloud App Security dashboard, or whether you have information from a third-party security service, start your investigation from the Cloud App Security dashboard to deep dive into risky users.
+Whether your trigger is an alert you see in the Defender for Cloud Apps dashboard, or whether you have information from a third-party security service, start your investigation from the Defender for Cloud Apps dashboard to deep dive into risky users.
 
-In this tutorial, you'll learn how to use Cloud App Security to investigate risky users:
+In this tutorial, you'll learn how to use Defender for Cloud Apps to investigate risky users:
 
 > [!div class="checklist"]
 >
@@ -25,19 +25,19 @@ In this tutorial, you'll learn how to use Cloud App Security to investigate risk
 
 ## Understand the investigation priority score<a name="risk-score"></a>
 
-The investigation priority score is a score Cloud App Security gives to each user to let you know how risky a user is relative to other users in your organization.
+The investigation priority score is a score Defender for Cloud Apps gives to each user to let you know how risky a user is relative to other users in your organization.
 
-Use the **Investigation priority score** to determine which users to investigate first. Cloud App Security builds user profiles for each user based on analytics that take time, peer groups, and expected user activity into consideration. Activity that is anomalous to a user's baseline is evaluated and scored. After scoring is complete, Microsoft's proprietary dynamic peer calculations and machine learning are run on the user activities to calculate the investigation priority for each user.
+Use the **Investigation priority score** to determine which users to investigate first. Defender for Cloud Apps builds user profiles for each user based on analytics that take time, peer groups, and expected user activity into consideration. Activity that is anomalous to a user's baseline is evaluated and scored. After scoring is complete, Microsoft's proprietary dynamic peer calculations and machine learning are run on the user activities to calculate the investigation priority for each user.
 
 The **Investigation priority score** provides you with the ability to detect both malicious insiders, and external attackers moving laterally in your organizations, without having to rely on standard deterministic detections.
 
 The investigation priority score is based on security alerts, abnormal activities, and potential business and asset impact related to each user to help you assess how urgent it is to investigate each specific user.
 
-If you select the score value for an alert or an activity, you can view the evidence that explains how Cloud App Security scored the activity.
+If you select the score value for an alert or an activity, you can view the evidence that explains how Defender for Cloud Apps scored the activity.
 
-Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Cloud App Security. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
+Every Azure AD user has a dynamic investigation priority score, that is constantly updated based on recent behavior and impact, built from data evaluated from Defender for Identity and Defender for Cloud Apps. You can now immediately understand who the real top risky users are, by filtering according to **Investigation priority score**, directly verify what their business impact is, and investigate all related activities – whether they're compromised, exfiltrating data, or acting as insider threats.
 
-Cloud App Security uses the following to measure risk:
+Defender for Cloud Apps uses the following to measure risk:
 
 - **Alert scoring**  
 The alert score represents the potential impact of a specific alert on each user. Alert scoring is based on severity, user impact, alert popularity across users, and all entities in the organization.
@@ -55,15 +55,15 @@ Blast radius adds an additional score factor to the investigation priority calcu
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
-1. Connect at least one app to Microsoft Cloud App Security using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
-1. To enable insights across your on-premises environment, configure Cloud App Security to [integrate with your Defender for Identity environment](mdi-integration.md).
+1. To enable insights across your on-premises environment, configure Defender for Cloud Apps to [integrate with your Defender for Identity environment](mdi-integration.md).
 
 ## Phase 2: Identify top risky users<a name="identify"></a>
 
-To identify who your riskiest users are in Cloud App Security:
+To identify who your riskiest users are in Defender for Cloud Apps:
 
-1. Go to the Cloud App Security dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them.  
+1. Go to the Defender for Cloud Apps dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them.  
 The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
    ![Top users dashboard.](media/dashboard-top-users.png)
@@ -88,7 +88,7 @@ The User page helps you answer the questions:
 
 ## Phase 3: Further investigate users<a name="investigate"></a>
 
-When you investigate a user based on an alert or if you saw an alert in an external system, there may be activities that alone may not be cause for alarm, but when Cloud App Security aggregates them together with other activities, the alert may be an indication of a suspicious event.
+When you investigate a user based on an alert or if you saw an alert in an external system, there may be activities that alone may not be cause for alarm, but when Defender for Cloud Apps aggregates them together with other activities, the alert may be an indication of a suspicious event.
 
 When you investigate a user, you want to ask these questions about the activities and alerts you see:
 
@@ -100,9 +100,9 @@ When you investigate a user, you want to ask these questions about the activitie
 
 If your investigation leads you to the conclusion that a user is compromised, follow these steps to mitigate the risk.
 
-- Contact the user – Using the user contact information integrated with Cloud App Security from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
+- Contact the user – Using the user contact information integrated with Defender for Cloud Apps from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-- Directly from the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
+- Directly from the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
 
 - In the case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
 - If you drill down into an alert and determine that the activity shouldn't have triggered an alert, in the [Activity drawer](activity-filters.md), select the **Send us feedback** link so that we can be sure to fine-tune our alerting system with your organization in mind.

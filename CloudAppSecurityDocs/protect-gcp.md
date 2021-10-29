@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your Google Cloud Platform environment
-description: This article provides information about the benefits of connecting your Google Cloud Platform app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your Google Cloud Platform environment
+description: This article provides information about the benefits of connecting your Google Cloud Platform app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 09/15/2020
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Google Cloud Platform (GCP) environment
+# How Defender for Cloud Apps helps protect your Google Cloud Platform (GCP) environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Google Cloud Platform is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
 
-Connecting GCP to Cloud App Security helps you secure your assets and detect potential threats by monitoring administrative and sign-in activities, notifying on possible brute force attacks, malicious use of a privileged user account, and unusual deletions of VMs.
+Connecting GCP to Defender for Cloud Apps helps you secure your assets and detect potential threats by monitoring administrative and sign-in activities, notifying on possible brute force attacks, malicious use of a privileged user account, and unusual deletions of VMs.
 
 ## Main threats
 
@@ -19,7 +19,7 @@ Connecting GCP to Cloud App Security helps you secure your assets and detect pot
 - Data leakage
 - Resource misconfiguration and insufficient access control
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
@@ -48,7 +48,7 @@ For more information about remediating threats from apps, see [Governing connect
 
 ## Security Recommendations
 
-Cloud App Security provides an overview of your GCP platform configuration compliance for all your GCP projects based on the Center for Internet Security (CIS) benchmark for GCP.
+Defender for Cloud Apps provides an overview of your GCP platform configuration compliance for all your GCP projects based on the Center for Internet Security (CIS) benchmark for GCP.
 
 You should continuously review the security recommendations to assess and evaluate the current status of your platform's security posture and identify important configuration gaps. Then, you should create a plan to mitigate the issues in your GCP platform.
 
@@ -61,4 +61,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect GCP to Microsoft Cloud App Security](connect-google-gcp-to-microsoft-cloud-app-security.md)
+> [How to connect GCP to Microsoft Defender for Cloud Apps](connect-google-gcp-to-microsoft-cloud-app-security.md)

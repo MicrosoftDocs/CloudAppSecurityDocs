@@ -1,14 +1,14 @@
 ---
-title: Connect Google Workspace to Cloud App Security
-description: This article provides information about how to connect your Google Workspace to Cloud App Security using the API connector for visibility and control over use.
+title: Connect Google Workspace to Defender for Cloud Apps
+description: This article provides information about how to connect your Google Workspace to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 11/27/2019
 ms.topic: how-to
 ---
-# Connect Google Workspace to Microsoft Cloud App Security
+# Connect Google Workspace to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Workspace account using the connector APIs. This connection gives you visibility into and control over Google Workspace use. For information about how Cloud App Security protects Google Workspace, see [Protect Google Workspace](protect-google-workspace.md).
+This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Google Workspace account using the connector APIs. This connection gives you visibility into and control over Google Workspace use. For information about how Defender for Cloud Apps protects Google Workspace, see [Protect Google Workspace](protect-google-workspace.md).
 
 ## Configure Google Workspace
 
@@ -18,7 +18,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![Google create project.](media/connect-google-workspace/google-workspace-create-new-project.png)
 
-1. In the **New project** page, name your project as follows: **Cloud App Security** and click **Create**.
+1. In the **New project** page, name your project as follows: **Defender for Cloud Apps** and click **Create**.
 
     ![Google new project pop-up.](media/connect-google-workspace/google-workspace-create-new-project-popup.png)
 
@@ -53,7 +53,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
         | Field name | Value |
         | --- | --- |
         | Application type | Public |
-        | Application name | Microsoft Cloud App Security |
+        | Application name | Microsoft Defender for Cloud Apps |
         | Support email | `<your_email_address>` |
 
         All other fields are optional.
@@ -92,9 +92,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     ![Google Workspace add new client ID.](media/connect-google-workspace/google-workspace-add-new-client-id.png)
 
-## Configure Cloud App Security
+## Configure Defender for Cloud Apps
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
 1. To provide the Google Workspace connection details, under **App connectors**, do one of the following:
 
@@ -108,7 +108,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. In the pop-up, fill in the following information:
 
-    ![Google Workspace Configuration in Cloud App Security.](media/connect-google-workspace/cas-config-google-workspace.png "Google Workspace Configuration in Cloud App Security")
+    ![Google Workspace Configuration in Defender for Cloud Apps.](media/connect-google-workspace/cas-config-google-workspace.png "Google Workspace Configuration in Defender for Cloud Apps")
 
     1. Enter the **Service account ID**, the **Email** that you copied earlier.
 
@@ -118,11 +118,11 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
     1. Enter one **admin account email** of your Google Workspace admin.
 
-    1. If you have a Google Workspace Business or Enterprise account, check this check box. For information about which features are available in Cloud App Security for Google Workspace Business or Enterprise, see [Enable instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+    1. If you have a Google Workspace Business or Enterprise account, check this check box. For information about which features are available in Defender for Cloud Apps for Google Workspace Business or Enterprise, see [Enable instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
     1. Click **Save settings**.
 
-    1. **Follow the link** to connect to Google Workspace. This opens Google Workspace and you're asked to authorize access for Cloud App Security.
+    1. **Follow the link** to connect to Google Workspace. This opens Google Workspace and you're asked to authorize access for Defender for Cloud Apps.
 
     1. Make sure the connection succeeded by clicking **Test now**.  
     Testing may take a couple of minutes.  
@@ -130,7 +130,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 After connecting Google Workspace, you'll receive events for 7 days prior to connection.
 
-After connecting Google Workspace, Cloud App Security performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activity is detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away. This doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned during the regular scan.
+After connecting Google Workspace, Defender for Cloud Apps performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activity is detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away. This doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned during the regular scan.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 

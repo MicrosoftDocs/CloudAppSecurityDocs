@@ -1,27 +1,27 @@
 ---
-title: Integrate Cloud App Security with iboss
-description: This article describes how to integrate Microsoft Cloud App Security with iboss secure cloud gateway for seamless Cloud Discovery and automated block of unsanctioned apps.
+title: Integrate Defender for Cloud Apps with iboss
+description: This article describes how to integrate Microsoft Defender for Cloud Apps with iboss secure cloud gateway for seamless Cloud Discovery and automated block of unsanctioned apps.
 ms.date: 2/2/2019
 ms.topic: how-to
 ---
-# Integrate Cloud App Security with iboss
+# Integrate Defender for Cloud Apps with iboss
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-If you work with both Cloud App Security and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. iboss is a standalone secure cloud gateway that monitors your organization's traffic and enables you to set policies that block transactions. Together, Cloud App Security and iboss provide the following capabilities:
+If you work with both Defender for Cloud Apps and iboss, you can integrate the two products to enhance your security Cloud Discovery experience. iboss is a standalone secure cloud gateway that monitors your organization's traffic and enables you to set policies that block transactions. Together, Defender for Cloud Apps and iboss provide the following capabilities:
 
-- Seamless deployment of Cloud Discovery - Use iboss to proxy your traffic and send it to Cloud App Security. This eliminates the need for installation of log collectors on your network endpoints to enable Cloud Discovery.
-- iboss's block capabilities are automatically applied on apps you set as unsanctioned in Cloud App Security.
-- Enhance your iboss admin portal with Cloud App Security's risk assessment of the top 100 cloud apps in your organization, which can be viewed directly in the iboss admin portal.
+- Seamless deployment of Cloud Discovery - Use iboss to proxy your traffic and send it to Defender for Cloud Apps. This eliminates the need for installation of log collectors on your network endpoints to enable Cloud Discovery.
+- iboss's block capabilities are automatically applied on apps you set as unsanctioned in Defender for Cloud Apps.
+- Enhance your iboss admin portal with the Defender for Cloud Apps risk assessment of the top 100 cloud apps in your organization, which can be viewed directly in the iboss admin portal.
 
 ## Prerequisites
 
-- A valid license for Microsoft Cloud App Security
+- A valid license for Microsoft Defender for Cloud Apps
 - A valid license for iboss secure cloud gateway (release 9.1.100.0 or later)
 
 ## Deployment
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), perform the following integration steps:
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), perform the following integration steps:
     1. Click on the settings cog and select **Cloud Discovery settings**.
     2. Select the **Automatic log upload** tab, and then **Add data source**.
     3. In the **Add data source** page, enter the following settings:
@@ -36,9 +36,9 @@ If you work with both Cloud App Security and iboss, you can integrate the two pr
 
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 
-1. Any app that you set as unsanctioned in Cloud App Security will be pinged by iboss once every ten minutes, and then automatically blocked by iboss. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by iboss once every ten minutes, and then automatically blocked by iboss. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
 
-1. To configure iboss to send traffic logs to Microsoft Cloud App Security, contact iboss support.
+1. To configure iboss to send traffic logs to Microsoft Defender for Cloud Apps, contact iboss support.
 
 ## Next steps
 

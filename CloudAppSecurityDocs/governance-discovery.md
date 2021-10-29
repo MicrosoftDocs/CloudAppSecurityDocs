@@ -18,14 +18,14 @@ You can unsanction a specific risky app by clicking the three dots at the end of
 
 If you have a list of apps you want to sanction or unsanction, use the checkbox to select the apps you want to manage, then select the action.
 
-To query a list of unsanctioned apps, you can [generate a block script using the Cloud App Security APIs](api-discovery-script.md).
+To query a list of unsanctioned apps, you can [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md).
 
 > [!NOTE]
-> If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrate with Microsoft Defender for Endpoint](mde-integration.md), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
+> If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Defender for Cloud Apps, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrate with Microsoft Defender for Endpoint](mde-integration.md), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
 
 ## Export a block script to govern discovered apps
 
-Cloud App Security enables you to block access to unsanctioned apps by using your existing on-prem security appliances. You can generate a dedicated block script and import it to your appliance. This solution doesn't require redirection of all of the organization's web traffic to a proxy.
+Defender for Cloud Apps enables you to block access to unsanctioned apps by using your existing on-prem security appliances. You can generate a dedicated block script and import it to your appliance. This solution doesn't require redirection of all of the organization's web traffic to a proxy.
 
 1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
 

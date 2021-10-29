@@ -18,7 +18,7 @@ An employee logged in to SharePoint Online from the corporate office. During the
 
 ## The solution
 
-Protect your organization by requiring Azure AD Conditional Access policies to be reassessed during sensitive session actions Cloud App Security's Conditional Access App Control.
+Protect your organization by requiring Azure AD Conditional Access policies to be reassessed during sensitive session actions the Defender for Cloud Apps Conditional Access App Control.
 
 ## Prerequisites
 
@@ -30,25 +30,25 @@ Protect your organization by requiring Azure AD Conditional Access policies to b
     | ----------- | -------------------------- |
     | Azure AD    | SAML 2.0 or OpenID Connect |
 
-- Make sure the [app is deployed to Cloud App Security](proxy-deployment-aad.md)
+- Make sure the [app is deployed to Defender for Cloud Apps](proxy-deployment-aad.md)
 
 ## Create a policy to enforce step-up authentication
 
-Cloud App Security session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy **and** a session policy.
+Defender for Cloud Apps session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy **and** a session policy.
 
-### Step 1: Configure your IdP to work with Cloud App Security
+### Step 1: Configure your IdP to work with Defender for Cloud Apps
 
-Make sure you've configured your IdP solution to work with Cloud App Security, as follows:
+Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
 
 - For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
 
 - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
-After completing this task, go to the Cloud App Security portal and create a session policy to monitor and control file downloads in the session.
+After completing this task, go to the Defender for Cloud Apps portal and create a session policy to monitor and control file downloads in the session.
 
 ### Step 2: Create a session policy
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
 
 1. In the **Policies** page, select **Create policy** followed by **Session policy**.
 
@@ -89,9 +89,9 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 1. You should be required to perform the action configured in the authentication context policy.
 
-1. In the Cloud App Security portal, select **Control** followed by **Policies**, and then select the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the Defender for Cloud Apps portal, select **Control** followed by **Policies**, and then select the policy you've created to view the policy report. A session policy match should appear shortly.
 
-1. In the policy report, you can see which logins where redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
+1. In the policy report, you can see which logins where redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 
 ## Next steps
 

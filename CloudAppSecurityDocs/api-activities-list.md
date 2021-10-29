@@ -1,6 +1,6 @@
 ---
 title: List - Activities API
-description: This article describes the list request in Cloud App Security's Activities API.
+description: This article describes the list request in the Defender for Cloud Apps Activities API.
 ms.date: 03/27/2020
 ms.topic: reference
 ---

@@ -1,6 +1,6 @@
 ---
-title: Use the RegEx engine in Cloud App Security for content inspection policies
-description: This article provides instructions for using RegEx for pattern matching in Cloud App Security policies.
+title: Use the RegEx engine in Defender for Cloud Apps for content inspection policies
+description: This article provides instructions for using RegEx for pattern matching in Defender for Cloud Apps policies.
 ms.date: 12/14/2018
 ms.topic: how-to
 ---
@@ -8,11 +8,11 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for using RegEx for pattern matching in Cloud App Security policies.
+This article provides instructions for using RegEx for pattern matching in Defender for Cloud Apps policies.
 
-## Regular expressions in Cloud App Security
+## Regular expressions in Defender for Cloud Apps
 
-Microsoft Cloud App Security's content inspection policies use RegEx for pattern matching. Content inspection may be applied as part of file policies.
+The Microsoft Defender for Cloud Apps content inspection policies use RegEx for pattern matching. Content inspection may be applied as part of file policies.
 
 ### Testing regular expressions
 
@@ -22,7 +22,7 @@ To test regular expressions, you can use the following websites:
 
 - [https://regex101.com/](https://regex101.com/) - Provides detailed analysis of the RegEx.
 
-### Limitations of regular expressions in Cloud App Security
+### Limitations of regular expressions in Defender for Cloud Apps
 
 The following limitations are imposed on custom regular expressions:
 

@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security Cloud Discovery API
+title: Defender for Cloud Apps Cloud Discovery API
 description: This article provides information about using the Cloud Discovery API.
 ms.date: 01/18/2021
 ms.topic: reference
@@ -22,7 +22,7 @@ Use the Cloud Discovery API to automate the uploading of your company's discover
 
 ## List continuous reports and categories
 
-As part of its Cloud Discovery solution, Cloud App Security uses continuous reports. These reports represent an automatic log upload from a specific data source (such as your Microsoft Defender for Endpoint devices). Each continuous report contains the following:
+As part of its Cloud Discovery solution, Defender for Cloud Apps uses continuous reports. These reports represent an automatic log upload from a specific data source (such as your Microsoft Defender for Endpoint devices). Each continuous report contains the following:
 
 - Discovered apps: All apps found in the specified continuous report
 - Categories: All app categories associated with the specified continuous report
@@ -34,7 +34,7 @@ You can use the following API endpoints to work with continuous reports.
 
 ## Blocking unsanctioned applications using a firewall or Security Web Gateway
 
-Cloud App Security enables you to block access to unsanctioned apps by using your existing on-premises security appliances. Use the Generate block script call to get a dedicated block script and import it to your appliance.
+Defender for Cloud Apps enables you to block access to unsanctioned apps by using your existing on-premises security appliances. Use the Generate block script call to get a dedicated block script and import it to your appliance.
 
 - [Generate block script](api-discovery-script.md)
 

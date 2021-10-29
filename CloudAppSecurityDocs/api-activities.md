@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security Activities API
+title: Defender for Cloud Apps Activities API
 description: This article provides information about using the Activities API.
 ms.date: 03/27/2020
 ms.topic: reference

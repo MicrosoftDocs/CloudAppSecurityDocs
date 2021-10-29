@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your Slack Enterprise
-description: This article provides information about the benefits of connecting your Slack Enterprise app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your Slack Enterprise
+description: This article provides information about the benefits of connecting your Slack Enterprise app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 06/09/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Slack Enterprise
+# How Defender for Cloud Apps helps protect your Slack Enterprise
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Slack is a cloud service that helps organizations collaborate and communicate in one place. Along with the benefits of effective collaboration in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include messages, channels, and files with potentially sensitive information, collaboration, and partnership details, and more. Preventing exposure of this data requires continuous monitoring to prevent any malicious actors or security-unaware insiders from exfiltrating sensitive information.
 
-Connecting Slack Enterprise (**Grid** or **Select**) to Cloud App Security gives you improved insights into your users' activities and provides threat detection for anomalous behavior.
+Connecting Slack Enterprise (**Grid** or **Select**) to Defender for Cloud Apps gives you improved insights into your users' activities and provides threat detection for anomalous behavior.
 
 ## Main threats
 
@@ -22,7 +22,7 @@ Connecting Slack Enterprise (**Grid** or **Select**) to Cloud App Security gives
 
 - Unmanaged bring your own device (BYOD)
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 
@@ -54,4 +54,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect Slack to Microsoft Cloud App Security (Preview)](connect-slack-to-microsoft-cloud-app-security.md)
+> [Connect Slack to Microsoft Defender for Cloud Apps (Preview)](connect-slack-to-microsoft-cloud-app-security.md)

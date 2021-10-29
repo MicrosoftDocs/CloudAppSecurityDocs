@@ -8,13 +8,13 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Microsoft Cloud App Security app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, Google Workspace data, and Salesforce data. Cloud App Security tells you what permissions the apps have and which users granted these apps access to their Office 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
+Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Microsoft Defender for Cloud Apps app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, Google Workspace data, and Salesforce data. Defender for Cloud Apps tells you what permissions the apps have and which users granted these apps access to their Office 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
 
 For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
 
 > [!NOTE]
 >
-> - Cloud App Security only identifies apps that request "Delegated" permissions. For more information, see [Client app permissions](/azure/active-directory/develop/developer-glossary#permissions).
+> - Defender for Cloud Apps only identifies apps that request "Delegated" permissions. For more information, see [Client app permissions](/azure/active-directory/develop/developer-glossary#permissions).
 >
 > - **Manage OAuth apps** is available only after connecting one or more of the supported platforms - Office 365, Google Workspace, or Salesforce. Once connected, the **OAuth apps** menu option will appear under **Investigate**.
 
@@ -24,7 +24,7 @@ The **OAuth** page displays information about app permissions in your connected 
 
 To access the OAuth tab:
 
-In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate**, and then **OAuth apps**.
+In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Investigate**, and then **OAuth apps**.
 
 ![app permissions.](media/app-permissions.png)
 
@@ -90,7 +90,7 @@ You can query OAuth apps in either the **Basic** view or the **Advanced** view. 
 
 ## OAuth app auditing
 
-Cloud App Security audits all OAuth authorization activities to provide you with comprehensive monitoring and investigation of activities performed. You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
+Defender for Cloud Apps audits all OAuth authorization activities to provide you with comprehensive monitoring and investigation of activities performed. You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
 
 To export the log, perform the following steps:
 
@@ -102,12 +102,12 @@ To export the log, perform the following steps:
 
 ## Send feedback
 
-If there's an OAuth app discovered in your organization that seems malicious, you can send the Cloud App Security team feedback to let us know. This feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
+If there's an OAuth app discovered in your organization that seems malicious, you can send the Defender for Cloud Apps team feedback to let us know. This feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
 
 1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Report app**.
 
     ![report app.](media/report-app.png)
-2. In the **Report this app** screen, you can select whether to report the app as malicious or to report another issue with the way Cloud App Security perceives the app. For example, you could use **Incorrect publisher**, **Incorrect permissions**, or **Other**. The data you submit will be used to update the app's risk score and other analytics about the app.
+2. In the **Report this app** screen, you can select whether to report the app as malicious or to report another issue with the way Defender for Cloud Apps perceives the app. For example, you could use **Incorrect publisher**, **Incorrect permissions**, or **Other**. The data you submit will be used to update the app's risk score and other analytics about the app.
 
 ## Next steps
 

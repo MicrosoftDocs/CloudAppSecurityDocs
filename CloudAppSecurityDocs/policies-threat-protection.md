@@ -1,6 +1,6 @@
 ---
 title: Threat protection policies 
-description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
+description: This topic outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
 ms.date: 11/08/2020
 ms.topic: conceptual
 ---
@@ -8,10 +8,10 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud App Security enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
+Defender for Cloud Apps enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
 > [!NOTE]
-> When integrating Cloud App Security with Microsoft Defender for Identity, policies from Defender for Identity also appear on the policies page. For a list of Defender for Identity policies, see [Security Alerts](/defender-for-identity/suspicious-activity-guide).
+> When integrating Defender for Cloud Apps with Microsoft Defender for Identity, policies from Defender for Identity also appear on the policies page. For a list of Defender for Identity policies, see [Security Alerts](/defender-for-identity/suspicious-activity-guide).
 
 ## Detect and control user activity from unfamiliar locations
 
@@ -164,14 +164,14 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. This detection is automatically configured out-of-the-box to alert you when there is a potential ransomware risk detected. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
+2. It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Defender for Cloud Apps identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
 > This applies to Office 365, Google Workspace, Box, and Dropbox.
 
 ## Detect malware in the cloud
 
-Detect files containing malware in your cloud environments by utilizing Cloud App Security's integration with the Microsoft's Threat Intelligence engine.
+Detect files containing malware in your cloud environments by utilizing the Defender for Cloud Apps integration with the Microsoft's Threat Intelligence engine.
 
 ### Prerequisites
 
@@ -219,7 +219,7 @@ If a suspicious inbox rule was set on a user's inbox, it may indicate that the u
 
 When cyber criminals compromise valid passwords of legitimate users, they often share those credentials. This is usually done by posting them publicly on the dark web or paste sites or by trading or selling the credentials on the black market.
 
-Cloud App Security utilizes Microsoft's Threat intelligence to match such credentials to the ones used inside your organization.
+Defender for Cloud Apps utilizes Microsoft's Threat intelligence to match such credentials to the ones used inside your organization.
 
 ### Prerequisites
 
@@ -272,7 +272,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
-> Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Cloud App Security does not generate alerts for new locations.
+> Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Defender for Cloud Apps does not generate alerts for new locations.
 
 ## Detect activity performed by a terminated user
 

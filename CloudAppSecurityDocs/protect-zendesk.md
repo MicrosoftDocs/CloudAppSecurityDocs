@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your Zendesk (Preview)
-description: This article provides information about the benefits of connecting your Zendesk app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your Zendesk (Preview)
+description: This article provides information about the benefits of connecting your Zendesk app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 07/01/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Zendesk (Preview)
+# How Defender for Cloud Apps helps protect your Zendesk (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a customer service software solution, Zendesk holds the sensitive information to your organization. Any abuse of Zendesk by a malicious actor or any human error may expose your most critical assets and services to potential attacks.
 
-Connecting Zendesk to Cloud App Security gives you improved insights into your Zendesk admin activities and provides threat detection for anomalous behavior.
+Connecting Zendesk to Defender for Cloud Apps gives you improved insights into your Zendesk admin activities and provides threat detection for anomalous behavior.
 
 ## Main threats
 
@@ -22,7 +22,7 @@ Connecting Zendesk to Cloud App Security gives you improved insights into your Z
 
 - Unmanaged bring your own device (BYOD)
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 
@@ -54,4 +54,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect Zendesk to Microsoft Cloud App Security (Preview)](connect-zendesk-to-microsoft-cloud-app-security.md)
+> [Connect Zendesk to Microsoft Defender for Cloud Apps (Preview)](connect-zendesk-to-microsoft-cloud-app-security.md)

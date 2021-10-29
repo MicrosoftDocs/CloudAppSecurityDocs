@@ -1,6 +1,6 @@
 ---
-title: Understanding file data and filters available in Cloud App Security
-description: This reference article provides information about the types of files and file filters used by Cloud App Security.
+title: Understanding file data and filters available in Defender for Cloud Apps
+description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
 ms.date: 02/14/2021
 ms.topic: how-to
 ---
@@ -8,22 +8,22 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-To provide data protection, Microsoft Cloud App Security gives you visibility into all the files from your connected apps. After you connect Microsoft Cloud App Security to an app using the App connector, Microsoft Cloud App Security scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Cloud App Security rescans each file every time it's modified – the modification can be to content, metadata, or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps.
+To provide data protection, Microsoft Defender for Cloud Apps gives you visibility into all the files from your connected apps. After you connect Microsoft Defender for Cloud Apps to an app using the App connector, Microsoft Defender for Cloud Apps scans all the files, for example all the files stored in OneDrive and Salesforce. Then, Defender for Cloud Apps rescans each file every time it's modified – the modification can be to content, metadata, or sharing permissions. Scanning times depend on the number of files stored in your app. You can also use the **Files** page to filter files to investigate what kind of data is saved in your cloud apps.
 
 > [!NOTE]
 > File monitoring should be enabled in Settings. Go to **Settings**, and then under **Information Protection**, select **Files**. Select **Enable file monitoring** and then select **Save**.  
 > If there are no active file policies, then seven days after the last file page engagement time file monitoring will become disabled.  
-> If there are no active file policies, then 35 days after the last file page engagement time Cloud App Security will begin deleting the data of the stored files.
+> If there are no active file policies, then 35 days after the last file page engagement time Defender for Cloud Apps will begin deleting the data of the stored files.
 
 ## File filter examples
 
 For example, use the **Files** page to secure externally shared files labeled as **confidential**, as follows:
-After you connect an app to Cloud App Security, integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
+After you connect an app to Defender for Cloud Apps, integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
 
 ![File filter confidential.](media/file-filter-confidential.png)
 
 Here's another example of how you can use the **Files** page. Make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last six months:
-Connect an app to Cloud App Security and go to the **Files** page. Filter for files whose access level is **External** or **Public** and set the **Last modified** date to six months ago. Create a file policy that detects these stale public files by clicking **New policy from search**. Apply automatic governance actions to them, such as **Remove external users**, to prevent data loss to your organization.
+Connect an app to Defender for Cloud Apps and go to the **Files** page. Filter for files whose access level is **External** or **Public** and set the **Last modified** date to six months ago. Create a file policy that detects these stale public files by clicking **New policy from search**. Apply automatic governance actions to them, such as **Remove external users**, to prevent data loss to your organization.
 
 ![File filter stale external.](media/file-example-stale-external.png)
 
@@ -37,9 +37,9 @@ To drill down into more specific files, you can expand the basic filter by click
 
 ## <a name="Filefilters"></a> File filters
 
-Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type).
+Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters (for example, access level, file type).
 
-Cloud App Security's built in DLP engines perform content inspection by extracting text from common file types. Some of the included file types are PDF, Office files, RTF, HTML, and code files.
+The Defender for Cloud Apps built in DLP engines perform content inspection by extracting text from common file types. Some of the included file types are PDF, Office files, RTF, HTML, and code files.
 
 Below is a list of the file filters that can be applied. To provide you with a powerful tool for policy creation, most filters support multiple values and a NOT.
 
@@ -62,12 +62,12 @@ Below is a list of the file filters that can be applied. To provide you with a p
         - Public - Files that can be found by searching the Internet.
 
       > [!NOTE]
-      > Files shared into your connected storage apps by external users are handled as follows by Cloud App Security:
+      > Files shared into your connected storage apps by external users are handled as follows by Defender for Cloud Apps:
       >
-      > - **OneDrive:** OneDrive assigns an internal user as the owner of any file placed into your OneDrive by an external user. Because these files are then considered owned by your organization, Cloud App Security scans these files and applies policies as it does to any other file in your OneDrive.
-      > - **Google Drive:** Google Drive considers these as being owned by the external user, and because of legal restrictions on files and data that your organization does not own, Cloud App Security does not have access to these files.
-      > - **Box:** Because Box considers externally owned files to be private information, Box Global Admins cannot see the content of the files. For this reason, Cloud App Security does not have access to these files.
-      > - **Dropbox:** Because Dropbox considers externally owned files to be private information, Dropbox Global Admins cannot see the content of the files. For this reason, Cloud App Security does not have access to these files.
+      > - **OneDrive:** OneDrive assigns an internal user as the owner of any file placed into your OneDrive by an external user. Because these files are then considered owned by your organization, Defender for Cloud Apps scans these files and applies policies as it does to any other file in your OneDrive.
+      > - **Google Drive:** Google Drive considers these as being owned by the external user, and because of legal restrictions on files and data that your organization does not own, Defender for Cloud Apps does not have access to these files.
+      > - **Box:** Because Box considers externally owned files to be private information, Box Global Admins cannot see the content of the files. For this reason, Defender for Cloud Apps does not have access to these files.
+      > - **Dropbox:** Because Dropbox considers externally owned files to be private information, Dropbox Global Admins cannot see the content of the files. For this reason, Defender for Cloud Apps does not have access to these files.
 
 - **App** – Search only for files within these apps.
 
@@ -91,12 +91,12 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Classification label** - Search for files with specific tags set. Labels are either:
     - **Azure Information Protection tags** - Requires integration with Azure Information Protection.
-    - **Cloud App Security tags** - Provides more insight into the files it scans. For each file scanned by Cloud App Security DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally.
+    - **Defender for Cloud Apps tags** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally.
         - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
         - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
         - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
 
-- **File type** – Cloud App Security takes both the MIME type received (see table) from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, All folders that are ... or All spreadsheet files that are...
+- **File type** – Defender for Cloud Apps takes both the MIME type received (see table) from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, All folders that are ... or All spreadsheet files that are...
 
     | MIME type | File type |
     |--|--|
@@ -115,7 +115,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Last modified** – File modification time. The filter supports before and after dates, date range, and relative time expressions. For example, all files that weren't modified in the last six months.
 
-- **Matched policy** - Files that are matched by an active Cloud App Security policy.
+- **Matched policy** - Files that are matched by an active Defender for Cloud Apps policy.
 
 - **MIME type** – File MIME type check, accepts free text.
 
@@ -126,7 +126,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 - **Parent folder** – Include or exclude based on parent folder. For example, all publicly shared files except for files in this folder.
 
     > [!NOTE]
-    > Cloud App Security only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
+    > Defender for Cloud Apps only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
 
 - **Quarantined** – Is the file quarantined by the service, For example, show me all files that are quarantined.
 
@@ -140,11 +140,11 @@ You can also set the policy to run on specific files by setting the **Apply to**
 
 ## Authorizing files
 
-After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
+After Defender for Cloud Apps has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
 
 ### To authorize files
 
-1. In Cloud App Security, click **Control** and then **Policies**.
+1. In Defender for Cloud Apps, click **Control** and then **Policies**.
 1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
 
     > [!TIP]

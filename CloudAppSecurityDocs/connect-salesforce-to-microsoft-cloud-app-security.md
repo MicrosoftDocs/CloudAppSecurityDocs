@@ -1,18 +1,18 @@
 ---
-title: Connect Salesforce to Cloud App Security
-description: This article provides information about how to connect your Salesforce to Cloud App Security using the API connector for visibility and control over use.
+title: Connect Salesforce to Defender for Cloud Apps
+description: This article provides information about how to connect your Salesforce to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 07/04/2021
 ms.topic: how-to
 ---
-# Connect Salesforce to Microsoft Cloud App Security
+# Connect Salesforce to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft  Cloud App Security to your existing Salesforce account using the app connector API. This connection gives you visibility into and control over Salesforce use. For information about how Cloud App Security protects Salesforce, see [Protect Salesforce](protect-salesforce.md).
+This article provides instructions for connecting Microsoft  Defender for Cloud Apps to your existing Salesforce account using the app connector API. This connection gives you visibility into and control over Salesforce use. For information about how Defender for Cloud Apps protects Salesforce, see [Protect Salesforce](protect-salesforce.md).
 
-## How to connect Salesforce to Cloud App Security
+## How to connect Salesforce to Defender for Cloud Apps
 
-1. It's recommended to have a dedicated service admin account for Cloud App Security.
+1. It's recommended to have a dedicated service admin account for Defender for Cloud Apps.
 
 1. Validate that REST API is enabled in Salesforce.
 
@@ -31,7 +31,7 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
         ![Salesforce manage users profiles.](media/salesforce-profiles.png)
 
     * Create a new profile by selecting **New Profile**.
-    * Choose the profile you just created to deploy Cloud App Security and select **Edit**. This profile will be used for the Cloud App Security service account to set up the App connector.
+    * Choose the profile you just created to deploy Defender for Cloud Apps and select **Edit**. This profile will be used for the Defender for Cloud Apps service account to set up the App connector.
 
          ![Salesforce edit profile.](media/salesforce-edit-profile.png)
 
@@ -52,7 +52,7 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
         ![Salesforce menu users.](media/salesforce-menu-users.png)
 
-    1. Select the current administrative user to your dedicated Cloud App Security user.
+    1. Select the current administrative user to your dedicated Defender for Cloud Apps user.
 
     1. Make sure that the **Salesforce CRM Content User** check box is selected.
 
@@ -70,7 +70,7 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
     1. Select **Save**.
 
-1. In the Cloud App Security console, select **Investigate** and then **Connected apps**.
+1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, select the plus button followed by **Salesforce**.
 
@@ -78,27 +78,27 @@ This article provides instructions for connecting Microsoft  Cloud App Security 
 
 1. In the Salesforce settings page, on the API tab, select **Follow this link**, depending on which instance you want to install.
 
-1. This opens the Salesforce sign in page. Enter your credentials to allow Cloud App Security access to your team's Salesforce app.
+1. This opens the Salesforce sign in page. Enter your credentials to allow Defender for Cloud Apps access to your team's Salesforce app.
 
     ![Salesforce sign-in.](media/salesforce-logon.png)
 
-1. Salesforce will ask you if you want to allow Cloud App Security access to your team information and activity log and perform any activity as any team member. To continue, select **Allow**.
+1. Salesforce will ask you if you want to allow Defender for Cloud Apps access to your team information and activity log and perform any activity as any team member. To continue, select **Allow**.
 
-1. At this point, you'll receive a success or failure notice for the deployment. Cloud App Security is now authorized in Salesforce.com.
+1. At this point, you'll receive a success or failure notice for the deployment. Defender for Cloud Apps is now authorized in Salesforce.com.
 
-1. Back in the Cloud App Security console, you should see the Salesforce was successfully connected message.
+1. Back in the Defender for Cloud Apps console, you should see the Salesforce was successfully connected message.
 
 1. Make sure the connection succeeded by clicking **Test API**.
 
     Testing may take a couple of minutes. After receiving a success notice, select **Done**.
 
-After connecting Salesforce, you'll receive Events as follows: Triggers from the moment of connection, Log in events, and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days, or 1 day back - depending on your Salesforce EventMonitoring license. The Cloud App Security API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Cloud App Security takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Cloud App Security calculates this into a percentage and makes sure to always leave 10% of available API calls remaining.
+After connecting Salesforce, you'll receive Events as follows: Triggers from the moment of connection, Log in events, and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days, or 1 day back - depending on your Salesforce EventMonitoring license. The Defender for Cloud Apps API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Defender for Cloud Apps takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Defender for Cloud Apps calculates this into a percentage and makes sure to always leave 10% of available API calls remaining.
 
 > [!NOTE]
-> Cloud App Security throttling is calculated solely on its own API calls with Salesforce, not with those of any other applications making API calls with Salesforce.
-> Limiting API calls due to the limitation may slow down the rate at which data is ingested in Cloud App Security, but usually catches up over night.
+> Defender for Cloud Apps throttling is calculated solely on its own API calls with Salesforce, not with those of any other applications making API calls with Salesforce.
+> Limiting API calls due to the limitation may slow down the rate at which data is ingested in Defender for Cloud Apps, but usually catches up over night.
 
-Salesforce events are processed by Cloud App Security as follows:
+Salesforce events are processed by Defender for Cloud Apps as follows:
 
 * Sign-in events every 15 minutes
 * Setup audit trails every 15 minutes

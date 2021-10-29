@@ -1,13 +1,13 @@
 items:
-- name: Microsoft Cloud App Security documentation
+- name: Microsoft Defender for Cloud Apps documentation
   href: index.yml
 - name: Overview
   items:
-  - name: What is Microsoft Cloud App Security?
+  - name: What is Microsoft Defender for Cloud Apps?
     href: what-is-cloud-app-security.md
-  - name: Cloud App Security data security and privacy
+  - name: Defender for Cloud Apps data security and privacy
     href: cas-compliance-trust.md
-  - name: What's new in Cloud App Security
+  - name: What's new in Defender for Cloud Apps
     href: release-notes.md
   - name: Lifecycle management
     href: lifecycle-management.md
@@ -17,7 +17,7 @@ items:
       href: editions-cloud-app-security-o365.md
     - name: Azure AD Cloud App Discovery
       href: editions-cloud-app-security-aad.md
-    - name: Cloud App Security for US Government
+    - name: Defender for Cloud Apps for US Government
       href: editions-cloud-app-security-gcc.md
 - name: Quickstarts
   expanded: true
@@ -305,7 +305,7 @@ items:
       href: aadip-integration.md
     - name: Azure Information Protection integration
       href: azip-integration.md
-    - name: Azure Sentinel integration
+    - name: Microsoft Sentinel integration
       href: siem-sentinel.md
     - name: Integrate with external solutions
       items:
@@ -447,7 +447,7 @@ items:
     href: https://aka.ms/mcaslicensing
   - name: Support and troubleshooting
     href: support-and-ts.md
-  - name: Cloud App Security portal
+  - name: Defender for Cloud Apps portal
     href: https://portal.cloudappsecurity.com
-  - name: How to buy Cloud App Security
+  - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-app-security

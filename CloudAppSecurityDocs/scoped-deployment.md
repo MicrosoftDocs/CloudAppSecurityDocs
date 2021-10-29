@@ -1,6 +1,6 @@
 ---
-title: Scope your Microsoft Cloud App Security deployment
-description: This article provides information about how to scope your Cloud App Security deployment, including and excluding specific users or groups.
+title: Scope your Microsoft Defender for Cloud Apps deployment
+description: This article provides information about how to scope your Defender for Cloud Apps deployment, including and excluding specific users or groups.
 ms.date: 8/25/2019
 ms.topic: how-to
 ---
@@ -8,13 +8,13 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring.
+Microsoft Defender for Cloud Apps enables you to scope your deployment. Scoping allows you to select certain user groups to be monitored for apps or excluded from monitoring.
 
 ## Include or exclude user groups
 
-You may not want to use Microsoft Cloud App Security for all the users in your organization. Scoping is especially useful when you want to limit your deployment because of license restrictions. You may also need to limit because of compliance regulations requiring you not monitor users from certain countries/regions. For example, use scoped deployment to only monitor US-based employees. Alternatively, you can avoid showing any activities for your users based in Germany.
+You may not want to use Microsoft Defender for Cloud Apps for all the users in your organization. Scoping is especially useful when you want to limit your deployment because of license restrictions. You may also need to limit because of compliance regulations requiring you not monitor users from certain countries/regions. For example, use scoped deployment to only monitor US-based employees. Alternatively, you can avoid showing any activities for your users based in Germany.
 
-- To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Cloud App Security. By default, you'll see the following groups:
+- To scope your deployment, you must first [import user groups](user-groups.md) to Microsoft Defender for Cloud Apps. By default, you'll see the following groups:
 
   - **Application** user group -  A built-in group that enables you to see activities performed by Office 365 and Azure AD applications.
 
@@ -28,16 +28,16 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
 
     ![settings icon.](media/settings-icon.png "settings icon")
 
-2. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Cloud App Security.
+2. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Defender for Cloud Apps.
 
-3. To set specific groups to be monitored by Microsoft Cloud App Security, in the **Include** tab, click the plus icon.
+3. To set specific groups to be monitored by Microsoft Defender for Cloud Apps, in the **Include** tab, click the plus icon.
     ![icon.](media/plus-icon.png)
 
 4. In the **Create new include rule** dialog, do the following steps:
 
     1. Under **Type rule name**, give the rule a descriptive name.
-    2. Under **Select user groups**, select all the groups you want to monitor with Cloud App Security.
-    3. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, the rule will only affect monitoring of the apps you select. For example, if you select the group **UI team users** and **Box**, Cloud App Security will only monitor Box activity for users in your UI team users group and for all other apps, Cloud App Security will monitor all activities for all users.
+    2. Under **Select user groups**, select all the groups you want to monitor with Defender for Cloud Apps.
+    3. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, the rule will only affect monitoring of the apps you select. For example, if you select the group **UI team users** and **Box**, Defender for Cloud Apps will only monitor Box activity for users in your UI team users group and for all other apps, Defender for Cloud Apps will monitor all activities for all users.
 
         ![include rule.](media/include-rule.png)
 
@@ -48,21 +48,21 @@ You may not want to use Microsoft Cloud App Security for all the users in your o
 6. In the **Create new Exclude rule** dialog, set the following parameters:
 
     1. Under **Type rule name**, give the rule a descriptive name.
-    Under **Select user groups**, select all the groups you don't want Cloud App Security to monitor.
-    2. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, Cloud App Security will stop monitoring the group you selected only for the apps you select. That means that if you select the group **UI team users** and **Active Directory**, Cloud App Security will monitor all user activity except Active Directory activities that are performed by UI team users.
+    Under **Select user groups**, select all the groups you don't want Defender for Cloud Apps to monitor.
+    2. Select whether you want to apply this rule to all connected apps or only to **Specific apps**. If you select **Specific apps**, Defender for Cloud Apps will stop monitoring the group you selected only for the apps you select. That means that if you select the group **UI team users** and **Active Directory**, Defender for Cloud Apps will monitor all user activity except Active Directory activities that are performed by UI team users.
 
        ![exclude rule.](media/exclude-rule.png)
 
 ## Example results for include and exclude rules
 
-The include and exclude rules you create work together to scope the overall monitoring performed by Microsoft Cloud App Security. Here's an example of include and exclude rules you can create, and the final result of what Microsoft Cloud App Security monitors after these rules are running.
+The include and exclude rules you create work together to scope the overall monitoring performed by Microsoft Defender for Cloud Apps. Here's an example of include and exclude rules you can create, and the final result of what Microsoft Defender for Cloud Apps monitors after these rules are running.
 
 If you create the following rules:
 
 - Exclude user group "Germany all users"
 - Include for user group "Global sales" only Office 365 activities
 - Include for user group "Sales managers" only Power BI activities
-- Salesforce is connected to Microsoft Cloud App Security and no rules are set for it
+- Salesforce is connected to Microsoft Defender for Cloud Apps and no rules are set for it
 
 The following user activities are monitored:
 

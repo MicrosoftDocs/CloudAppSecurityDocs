@@ -1,6 +1,6 @@
 ---
 title: Information protection policies 
-description: This topic outlines the steps to configure many information protection policies in Cloud App Security.
+description: This topic outlines the steps to configure many information protection policies in Defender for Cloud Apps.
 ms.date: 06/13/2019
 ms.topic: conceptual
 ---
@@ -8,9 +8,9 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud App Security file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
+Defender for Cloud Apps file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
-Cloud App Security can monitor any file type based on more than 20 metadata filters, for example, access level, and file type. For more information, see [File policies](data-protection-policies.md).
+Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters, for example, access level, and file type. For more information, see [File policies](data-protection-policies.md).
 
 ## Detect and prevent external sharing of sensitive data
 
@@ -75,7 +75,7 @@ Detect files containing personally identifying information and other sensitive d
 4. Create the file policy.
 
 > [!NOTE]
-> The ability to apply a classification label directly in Cloud App Security is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
+> The ability to apply a classification label directly in Defender for Cloud Apps is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
 
 ## Detect stale externally shared data
 
@@ -237,7 +237,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 ## Block downloads for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -264,7 +264,7 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ## Enforce read-only mode for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -294,7 +294,7 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ## Block upload of unclassified documents in real time
 
-Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security's [session controls](proxy-intro-aad.md).
+Prevent users from uploading unprotected data to the cloud, by utilizing the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
@@ -322,7 +322,7 @@ Prevent users from uploading unprotected data to the cloud, by utilizing Cloud A
 6. Click **Create**.
 
 > [!NOTE]
-> For the list of file types that Cloud App Security currently supports for Azure Information Protection classification labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
+> For the list of file types that Defender for Cloud Apps currently supports for Azure Information Protection classification labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
 
 ## Next steps
 

@@ -1,6 +1,6 @@
 ---
-title: Working with Cloud App Security activity filters and queries
-description: This article provides a list of Cloud App Security activity filters and queries and explains how to work with them.
+title: Working with Defender for Cloud Apps activity filters and queries
+description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
 ms.date: 12/10/2018
 ms.topic: how-to
 ---
@@ -8,13 +8,13 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides descriptions and instructions for Cloud App Security activity filters and queries.
+This article provides descriptions and instructions for Defender for Cloud Apps activity filters and queries.
 
 ## Activity filters
 
 Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT to provide you with a powerful tool for policy creation.
 
-- Activity ID - Search only for specific activities by their ID. This filter is useful when you connect Microsoft Cloud App Security to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Cloud App Security portal.
+- Activity ID - Search only for specific activities by their ID. This filter is useful when you connect Microsoft Defender for Cloud Apps to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Defender for Cloud Apps portal.
 
 - Activity objects – Search for the objects the activity was done on. This filter applies to file, folder, user, or app objects.
   - Activity object ID - the ID of the object (file, folder, user, or app ID).
@@ -48,7 +48,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - IP address – The raw IP address, category, or tag from which the activity was performed.
   - Raw IP address - Enables you to search for activities that were performed on or by raw IP addresses. The raw IPs can equal, don't equal, start with, or don't start with a particular sequence.
   - IP category - The category of the IP address from which the activity was performed, for example, all activities from administrative IP address range. The categories need to be configured to include the relevant IP addresses, except for the "Risky" category, which is pre-configured and includes two IP tags - Anonymous proxy and Tor. To learn how to configure the IP categories, see [Organize the data according to your needs](ip-tags.md).
-  - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. Cloud App Security creates a set of built-in IP tags that aren't configurable. Additionally, you can configure your own IP tags. For more information about configuring your own IP tags, see [Organize the data according to your needs](ip-tags.md).
+  - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. Defender for Cloud Apps creates a set of built-in IP tags that aren't configurable. Additionally, you can configure your own IP tags. For more information about configuring your own IP tags, see [Organize the data according to your needs](ip-tags.md).
   The built-in IP tags include:
     - Microsoft apps (14 of them)
     - Anonymous proxy
@@ -73,7 +73,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Source - Search by the source from which the activity was detected. Source can be any of the following:
   - App connector - logs coming directly from the app's API connector.
-  - App connector analysis - Cloud App Security enrichments based on information scan by the API connector.
+  - App connector analysis - Defender for Cloud Apps enrichments based on information scan by the API connector.
 
 - User – The user who performed the activity, which can be filtered into domain, group, name, or organization. In order to filter activities with no specific user, you can use the 'is not set' operator.
   - User domain - Search for a specific user domain.
@@ -90,7 +90,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - User agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
 
 >[!NOTE]
->Cloud App Security considers *outdated* as two major versions older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
+>Defender for Cloud Apps considers *outdated* as two major versions older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
 
 <!--
 >[!NOTE]
@@ -112,7 +112,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
    ![open query.](media/select-activity-query.png)
 
-Cloud App Security also provides you with **Suggested queries**. Suggested queries provide you with recommended avenues of investigation that filter your activities. You can edit these queries and save the as custom queries. The following are optional suggested queries:
+Defender for Cloud Apps also provides you with **Suggested queries**. Suggested queries provide you with recommended avenues of investigation that filter your activities. You can edit these queries and save the as custom queries. The following are optional suggested queries:
 
 - Admin activities - filters all your activities to display only those activities that involved admins.
 

@@ -12,7 +12,7 @@ This article provides a list of Cloud Discovery errors and resolution recommenda
 
 ## Microsoft Defender for Endpoint integration
 
-If you integrated Microsoft Defender for Endpoint with Cloud App Security, and you don't see the results of the integration.
+If you integrated Microsoft Defender for Endpoint with Defender for Cloud Apps, and you don't see the results of the integration.
 
 |Issue|Resolution|
 |----|----|
@@ -31,7 +31,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 |The log format does not match|The log format you uploaded didn't match the expected log format for this data source.|1. Verify that the log isn't corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
 |Transactions are more than 90 days old|All transactions are more than 90 days old and are being ignored.|Export a new log with recent events and reupload it.|
 |No transactions to cataloged cloud apps|No transactions to any recognized cloud apps are found in the log.|Verify that the log contains outbound traffic information.|
-|Unsupported log type|When you select **Data source = Other (unsupported)**, the log isn't parsed. Instead, it's sent for review to the Cloud App Security technical team.|The Cloud App Security technical team builds a dedicated parser per each data source. Most popular data sources are [already supported](set-up-cloud-discovery.md). Each upload of an unsupported data source is reviewed and added to the pipeline for new data source parsers. New parser notifications are published as part of the Cloud App Security [release notes](release-notes.md).|
+|Unsupported log type|When you select **Data source = Other (unsupported)**, the log isn't parsed. Instead, it's sent for review to the Defender for Cloud Apps technical team.|The Defender for Cloud Apps technical team builds a dedicated parser per each data source. Most popular data sources are [already supported](set-up-cloud-discovery.md). Each upload of an unsupported data source is reviewed and added to the pipeline for new data source parsers. New parser notifications are published as part of the Defender for Cloud Apps [release notes](release-notes.md).|
 
 ## Log collector errors
 

@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your ServiceNow environment
-description: This article provides information about the benefits of connecting your ServiceNow app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your ServiceNow environment
+description: This article provides information about the benefits of connecting your ServiceNow app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/04/2019
 ms.topic: article
 ---
-# How Cloud App Security helps protect your ServiceNow environment
+# How Defender for Cloud Apps helps protect your ServiceNow environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a major CRM cloud provider, ServiceNow incorporates large amounts of sensitive information about customers, internal processes, incidents, and reports inside your organization. Being a business-critical app, ServiceNow is accessed and used by people inside your organization and by others outside of it (such as partners and contractors) for various purposes. In many cases, a large proportion of your users accessing ServiceNow have low awareness of security and might put your sensitive information at risk by unintentionally sharing it. In other instances, malicious actors may gain access to your most sensitive customer-related assets.
 
-Connecting ServiceNow to Cloud App Security gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, and information protection detections such as identifying when sensitive customer information is uploaded to the ServiceNow cloud.
+Connecting ServiceNow to Defender for Cloud Apps gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, and information protection detections such as identifying when sensitive customer information is uploaded to the ServiceNow cloud.
 
 ## Main threats
 
@@ -20,7 +20,7 @@ Connecting ServiceNow to Cloud App Security gives you improved insights into you
 - Ransomware
 - Unmanaged bring your own device (BYOD)
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
@@ -57,4 +57,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)
+> [How to connect ServiceNow to Microsoft Defender for Cloud Apps](connect-servicenow-to-microsoft-cloud-app-security.md)

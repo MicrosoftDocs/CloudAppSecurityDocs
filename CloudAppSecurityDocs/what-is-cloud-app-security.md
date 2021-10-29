@@ -1,10 +1,10 @@
 ---
-title: What is Cloud App Security?
-description: This article describes Microsoft Cloud App Security and how it works.
+title: What is Defender for Cloud Apps?
+description: This article describes Microsoft Defender for Cloud Apps and how it works.
 ms.date: 02/22/2021
 ms.topic: overview
 ---
-# Microsoft Cloud App Security overview
+# Microsoft Defender for Cloud Apps overview
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -13,11 +13,11 @@ ms.topic: overview
 
 Moving to the cloud increases flexibility for employees and IT alike. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while maintaining control to protect critical data.
 
-Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
+Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
 
-Microsoft Cloud App Security natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities.
+Microsoft Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities.
 
-For information about licensing, see the [Microsoft Cloud App Security licensing datasheet](https://aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
 
 ## What is a CASB?
 
@@ -40,7 +40,7 @@ As an organization, you need to protect your users and confidential data from th
 - **Threat protection**: offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware
 - **Compliance**: supply reports and dashboards to demonstrate cloud governance; assist efforts to conform to data residency and regulatory compliance requirements
 
-## The Cloud App Security framework
+## The Defender for Cloud Apps framework
 
 - **Discover and control the use of Shadow IT**: Identify the cloud apps, IaaS, and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 16,000 SaaS apps against more than 80 risks. Start managing them to ensure security and compliance.
 
@@ -52,7 +52,7 @@ As an organization, you need to protect your users and confidential data from th
 
 ## Architecture
 
-Cloud App Security integrates visibility with your cloud by:
+Defender for Cloud Apps integrates visibility with your cloud by:
 
 - Using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
 - Sanctioning and unsanctioning apps in your cloud.
@@ -60,33 +60,33 @@ Cloud App Security integrates visibility with your cloud by:
 - Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 - Helping you have continuous control by setting, and then continually fine-tuning, policies.
 
-![Cloud App Security architecture diagram.](media/proxy-architecture.png)
+![Defender for Cloud Apps architecture diagram.](media/proxy-architecture.png)
 
 ### Data retention & compliance
 
-For more information about Microsoft Cloud App Security data retention and compliance, see [Microsoft Cloud App Security data security and privacy](cas-compliance-trust.md).
+For more information about Microsoft Defender for Cloud Apps data retention and compliance, see [Microsoft Defender for Cloud Apps data security and privacy](cas-compliance-trust.md).
 
 ### Cloud Discovery
 
-Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Cloud App Security log collectors to periodically forward your logs.
+Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Defender for Cloud Apps log collectors to periodically forward your logs.
 
 For more information about Cloud Discovery, see [Set up Cloud Discovery](set-up-cloud-discovery.md).
 
 ### Sanctioning and unsanctioning an app
 
-You can use Cloud App Security to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 16,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Cloud App Security lets you know how risky an app is. Scoring is based on over 80 risk factors that might affect your environment.
+You can use Defender for Cloud Apps to sanction or unsanction apps in your organization by using the *Cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 16,000 cloud apps that are ranked and scored based on industry standards. You can use the Cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Defender for Cloud Apps lets you know how risky an app is. Scoring is based on over 80 risk factors that might affect your environment.
 
 ### App connectors
 
-App connectors use APIs from cloud app providers to integrate the Cloud App Security cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps, for Cloud App Security analysis.
+App connectors use APIs from cloud app providers to integrate the Defender for Cloud Apps cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps, for Defender for Cloud Apps analysis.
 
-To connect an app and extend protection, the app administrator authorizes Cloud App Security to access the app. Then, Cloud App Security queries the app for activity logs, and it scans data, accounts, and cloud content. Cloud App Security can enforce policies, detects threats, and provides governance actions for resolving issues.
+To connect an app and extend protection, the app administrator authorizes Defender for Cloud Apps to access the app. Then, Defender for Cloud Apps queries the app for activity logs, and it scans data, accounts, and cloud content. Defender for Cloud Apps can enforce policies, detects threats, and provides governance actions for resolving issues.
 
-Cloud App Security uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Cloud App Security works with app providers on optimizing the use of APIs to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Cloud App Security engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they're spread over a longer period. Expect some policies to run for several hours or several days.
+Defender for Cloud Apps uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Defender for Cloud Apps works with app providers on optimizing the use of APIs to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Defender for Cloud Apps engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they're spread over a longer period. Expect some policies to run for several hours or several days.
 
 ### Conditional Access App Control protection
 
-Microsoft Cloud App Security Conditional Access App Control uses reverse proxy architecture to give you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With Conditional Access App Control, you can protect your organization:
+Microsoft Defender for Cloud Apps Conditional Access App Control uses reverse proxy architecture to give you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With Conditional Access App Control, you can protect your organization:
 
 - Avoid data leaks by blocking downloads before they happen
 - Set rules that force data stored in and downloaded from the cloud to be protected with encryption
@@ -103,6 +103,6 @@ You can use policies to define your users' behavior in the cloud. Use policies t
 
 ## Next steps
 
-- Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md).
+- Read about the basics in [Getting started with Defender for Cloud Apps](getting-started-with-cloud-app-security.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].

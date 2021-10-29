@@ -1,6 +1,6 @@
 ---
 title: Close benign - Alerts API
-description: This article describes the bulk close an alert as benign request in Cloud App Security's Alerts API.
+description: This article describes the bulk close an alert as benign request in the Defender for Cloud Apps Alerts API.
 ms.date: 10/20/2020
 ms.topic: reference
 ---

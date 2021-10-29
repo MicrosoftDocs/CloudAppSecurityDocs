@@ -1,6 +1,6 @@
 ---
 title: Initiate file upload - Cloud Discovery API
-description: This article describes the upload_url request in Cloud App Security's Cloud Discovery API.
+description: This article describes the upload_url request in the Defender for Cloud Apps Cloud Discovery API.
 ms.date: 10/21/2020
 ms.topic: reference
 ---
@@ -73,7 +73,7 @@ The following source types are currently supported:
 
 > [!NOTE]
 >
-> - When using a custom parser, Cloud App Security will use the custom parser attached to the selected data source.
+> - When using a custom parser, Defender for Cloud Apps will use the custom parser attached to the selected data source.
 > - If you can't find your file format, perform a manual upload using the portal.
 
 ## Response parameters

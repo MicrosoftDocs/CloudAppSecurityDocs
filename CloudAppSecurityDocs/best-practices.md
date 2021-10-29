@@ -4,11 +4,11 @@ description: This article provides a set of best practices for protecting your o
 ms.date: 10/24/2019
 ms.topic: quickstart
 ---
-# Cloud App Security best practices
+# Defender for Cloud Apps best practices
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides best practices for protecting your organization by using Microsoft Cloud App Security. These best practices come from our experience with Cloud App Security and the experiences of customers like you.
+This article provides best practices for protecting your organization by using Microsoft Defender for Cloud Apps. These best practices come from our experience with Defender for Cloud Apps and the experiences of customers like you.
 
 The best practices discussed in this article include:
 
@@ -27,13 +27,13 @@ The best practices discussed in this article include:
 
 ## Discover and assess cloud apps
 
-Integrating Cloud App Security with Microsoft Defender for Endpoint gives you the ability to use Cloud Discovery beyond your corporate network or secure web gateways. With the combined user and device information, you can identify risky users or devices, see what apps they are using, and investigate further in the Defender for Endpoint portal.
+Integrating Defender for Cloud Apps with Microsoft Defender for Endpoint gives you the ability to use Cloud Discovery beyond your corporate network or secure web gateways. With the combined user and device information, you can identify risky users or devices, see what apps they are using, and investigate further in the Defender for Endpoint portal.
 
 **Best practice**: Enable Shadow IT Discovery using Defender for Endpoint  
 **Detail**: Cloud Discovery analyzes traffic logs collected by Defender for Endpoint and assesses identified apps against the cloud app catalog to provide compliance and security information. By configuring Cloud Discovery, you gain visibility into cloud use, Shadow IT, and continuous monitoring of the unsanctioned apps being used by your users.  
 **For more information**:
 
-* [Microsoft Defender for Endpoint integration with Cloud App Security](mde-integration.md)
+* [Microsoft Defender for Endpoint integration with Defender for Cloud Apps](mde-integration.md)
 * [Set up Cloud Discovery](set-up-cloud-discovery.md)
 * [Discover and manage shadow IT in your network](tutorial-shadow-it.md)
 
@@ -52,7 +52,7 @@ Integrating Cloud App Security with Microsoft Defender for Endpoint gives you th
 **Best practice**: Manage OAuth apps that are authorized by your users  
 **Detail**: Many users casually grant OAuth permissions to third-party apps to access their account information and, in doing so, inadvertently also give access to their data in other cloud apps. Usually, IT has no visibility into these apps making it difficult to weigh the security risk of an app against the productivity benefit that it provides.
 
-Cloud App Security provides you with the ability to investigate and monitor the app permissions your users granted. You can use this information to identify a potentially suspicious app and, if you determine that it is risky, you can be ban access to it.  
+Defender for Cloud Apps provides you with the ability to investigate and monitor the app permissions your users granted. You can use this information to identify a potentially suspicious app and, if you determine that it is risky, you can be ban access to it.  
 **For more information**:
 
 * [Manage OAuth apps](manage-app-permissions.md)
@@ -79,16 +79,16 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ## Limit exposure of shared data and enforce collaboration policies
 
 **Best practice**: Connect Office 365  
-**Detail**: Connecting Office 365 to Cloud App Security gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
+**Detail**: Connecting Office 365 to Defender for Cloud Apps gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Connect Office 365 to Microsoft Cloud App Security](connect-office-365-to-microsoft-cloud-app-security.md)
+* [Connect Office 365 to Microsoft Defender for Cloud Apps](connect-office-365-to-microsoft-cloud-app-security.md)
 
 ---
 
 **Best practice**: Connect third-party apps  
-**Detail**: Connecting third-party apps to Cloud App Security gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [Google Workspace](connect-google-workspace-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
+**Detail**: Connecting third-party apps to Defender for Cloud Apps gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [Google Workspace](connect-google-workspace-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
@@ -108,7 +108,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ---
 
 **Best practice**: Create policies to remove sharing with personal accounts  
-**Detail**: Connecting Office 365 to Cloud App Security gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
+**Detail**: Connecting Office 365 to Defender for Cloud Apps gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
 **For more information**:
 
 * [Governing connected apps](governance-actions.md)
@@ -146,7 +146,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 ---
 
 **Best practice**: Review reports in the **Files** page  
-**Detail**: Once you've connected various SaaS apps using app connectors, Cloud App Security scans files stored by these apps. In addition, each time a file is modified it is scanned again. You can use the **Files** page to understand and investigate the types of data being stored in your cloud apps. To help you investigate, you can filter by domains, groups, users, creation date, extension, file name and type, file ID, classification label, and more. Using these filters puts you in control of how you choose to investigate files to make sure none of your data is at risk. Once you have a better understanding of how your data is being used, you can create policies to scan for sensitive content in these files.  
+**Detail**: Once you've connected various SaaS apps using app connectors, Defender for Cloud Apps scans files stored by these apps. In addition, each time a file is modified it is scanned again. You can use the **Files** page to understand and investigate the types of data being stored in your cloud apps. To help you investigate, you can filter by domains, groups, users, creation date, extension, file name and type, file ID, classification label, and more. Using these filters puts you in control of how you choose to investigate files to make sure none of your data is at risk. Once you have a better understanding of how your data is being used, you can create policies to scan for sensitive content in these files.  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
@@ -177,7 +177,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 **Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you do not to create session policies to monitor high-risk sessions, you will lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
 **For more information**:
 
-* [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
 ---
@@ -191,7 +191,7 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 **Detail**: To secure collaboration in your environment, you can create a session policy to monitor sessions between your internal and external users. This not only gives you the ability to monitor the session between your users (and notify them that their session activities are being monitored), but it also enables you to limit specific activities as well. When creating session policies to monitor activity, you can choose the apps and users you'd like to monitor.  
 **For more information**:
 
-* [Protect apps with Microsoft Cloud App Security Conditional Access App Control](proxy-intro-aad.md)
+* [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md)
 * [Session policies](session-policy-aad.md)
 
 ---
@@ -204,21 +204,21 @@ Cloud App Security provides you with the ability to investigate and monitor the 
 **Best practice**: Tune Anomaly policies, set IP ranges, send feedback for alerts  
 **Detail**: Anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you can immediately run advanced threat detection across your cloud environment.
 
-Anomaly detection policies are triggered when there are unusual activities performed by the users in your environment. Cloud App Security continually monitors your users activities and uses UEBA and ML to learn and understand the *normal* behavior of your users. You can tune policy settings to fit your organizations requirements, for example, you can set the sensitivity of a policy, as well as scope a policy to a specific group.
+Anomaly detection policies are triggered when there are unusual activities performed by the users in your environment. Defender for Cloud Apps continually monitors your users activities and uses UEBA and ML to learn and understand the *normal* behavior of your users. You can tune policy settings to fit your organizations requirements, for example, you can set the sensitivity of a policy, as well as scope a policy to a specific group.
 
 * **Tune and Scope Anomaly Detection Policies**: As an example, to reduce the number of false positives within the impossible travel alert, you can set the policy's sensitivity slider to low. If you have users in your organization that are frequent corporate travelers, you can add them to a user group and select that group in the scope of the policy.
 
-* **Set IP Ranges**: Cloud App Security can identify known IP addresses once IP address ranges are set. With IP address ranges configured, you can tag, categorize, and customize the way logs and alerts are displayed and investigated. Adding IP address ranges helps to reduce false positive detections and improve the accuracy of alerts. If you choose not to add your IP addresses, you may see an increased number of possible false positives and alerts to investigate.
+* **Set IP Ranges**: Defender for Cloud Apps can identify known IP addresses once IP address ranges are set. With IP address ranges configured, you can tag, categorize, and customize the way logs and alerts are displayed and investigated. Adding IP address ranges helps to reduce false positive detections and improve the accuracy of alerts. If you choose not to add your IP addresses, you may see an increased number of possible false positives and alerts to investigate.
 
 * **Send Feedback for alerts**
 
-    When dismissing or resolving alerts, make sure to send feedback with the reason you dismissed the alert or how it's been resolved. This information assists Cloud App Security to improve our alerts and reduce false positives.
+    When dismissing or resolving alerts, make sure to send feedback with the reason you dismissed the alert or how it's been resolved. This information assists Defender for Cloud Apps to improve our alerts and reduce false positives.
 
 **For more information**:
 
 * [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md)
 * [Working with IP ranges and tags](ip-tags.md)
-* [Monitor alerts in Cloud App Security](monitor-alerts.md)
+* [Monitor alerts in Defender for Cloud Apps](monitor-alerts.md)
 
 ---
 
@@ -261,17 +261,17 @@ When dismissing alerts, it's important to investigate and understand why they ar
 ## Secure IaaS services and custom apps
 
 **Best practice**: Connect Azure, AWS and GCP  
-**Detail**: Connecting each of these cloud platforms to Cloud App Security helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
+**Detail**: Connecting each of these cloud platforms to Defender for Cloud Apps helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
 **For more information**:
 
-* [Connect Azure to Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
-* [Connect AWS to Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)
-* [Connect GCP to Microsoft Cloud App Security (Preview)](connect-google-gcp-to-microsoft-cloud-app-security.md)
+* [Connect Azure to Microsoft Defender for Cloud Apps](connect-azure-to-microsoft-cloud-app-security.md)
+* [Connect AWS to Microsoft Defender for Cloud Apps](connect-aws-to-microsoft-cloud-app-security.md)
+* [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](connect-google-gcp-to-microsoft-cloud-app-security.md)
 
 ---
 
 **Best practice**: Review security configuration assessments for Azure, AWS and GCP  
-**Detail**: Integrating with Azure Security Center provides you with a security configuration assessment of your Azure environment. The assessment provides recommendations for missing configuration and security control. Reviewing these recommendations helps you identify anomalies and potential vulnerabilities in your environment, and navigate directly in the relevant location in the Azure Security portal to resolve them.
+**Detail**: Integrating with Microsoft Defender for Cloud provides you with a security configuration assessment of your Azure environment. The assessment provides recommendations for missing configuration and security control. Reviewing these recommendations helps you identify anomalies and potential vulnerabilities in your environment, and navigate directly in the relevant location in the Azure Security portal to resolve them.
 
 AWS and GCP give you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security.
 
@@ -285,7 +285,7 @@ Use these recommendations to monitor the compliance status and security posture 
 ---
 
 **Best practice**: Onboard custom apps  
-**Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Cloud App Security. Once custom apps are configured, you see information about whose using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
+**Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Defender for Cloud Apps. Once custom apps are configured, you see information about whose using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
 
 Additionally, you can onboard a custom app as a Conditional Access App Control app to monitor their low-trust sessions.  
 **For more information**:

@@ -1,21 +1,21 @@
 ---
-title: Integrate Cloud App Security with Menlo Security
-description: This article describes how to integrate Microsoft Cloud App Security with Menlo Security for seamless Cloud Discovery and automated block of unsanctioned apps.
+title: Integrate Defender for Cloud Apps with Menlo Security
+description: This article describes how to integrate Microsoft Defender for Cloud Apps with Menlo Security for seamless Cloud Discovery and automated block of unsanctioned apps.
 ms.date: 11/09/2020
 ms.topic: how-to
 ---
-# Integrate Cloud App Security with Menlo Security
+# Integrate Defender for Cloud Apps with Menlo Security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-If you work with both Cloud App Security and Menlo Security, you can integrate the two products to enhance your security Cloud Discovery experience. Menlo Security, as a standalone Secure Web Gateway, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Cloud App Security and Menlo Security provide the following capabilities:
+If you work with both Defender for Cloud Apps and Menlo Security, you can integrate the two products to enhance your security Cloud Discovery experience. Menlo Security, as a standalone Secure Web Gateway, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Defender for Cloud Apps and Menlo Security provide the following capabilities:
 
-- Seamless deployment of Cloud Discovery - Use Menlo Security to proxy your traffic and send it to Cloud App Security. This eliminates the need for installation of log collectors on your network endpoints to enable Cloud Discovery.
-- Menlo Security's block capabilities are automatically applied on apps you set as unsanctioned in Cloud App Security.
+- Seamless deployment of Cloud Discovery - Use Menlo Security to proxy your traffic and send it to Defender for Cloud Apps. This eliminates the need for installation of log collectors on your network endpoints to enable Cloud Discovery.
+- Menlo Security's block capabilities are automatically applied on apps you set as unsanctioned in Defender for Cloud Apps.
 
 ## Prerequisites
 
-- A valid license for Microsoft Cloud App Security, or a valid license for Azure Active Directory Premium P1
+- A valid license for Microsoft Defender for Cloud Apps, or a valid license for Azure Active Directory Premium P1
 - A valid license for Menlo Security
 
 ## Deployment
@@ -23,7 +23,7 @@ If you work with both Cloud App Security and Menlo Security, you can integrate t
 1. Log into your Menlo Admin portal and use the [Menlo Security Integration with Microsoft Cloud Access Security Setup Guide](https://admin.menlosecurity.com/docs/guides/web_admin_settings_casb.html?highlight=microsoft) to integrate the products.
 
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
-1. Any app that you set as unsanctioned in Cloud App Security will be pinged by Menlo Security every two hours, and then automatically blocked by Menlo Security. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Menlo Security every two hours, and then automatically blocked by Menlo Security. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
 
 ## Next steps
 

@@ -4,22 +4,22 @@ description: This article provides information about how plan a lifecycle manage
 ms.date: 05/13/2021
 ms.topic: conceptual
 ---
-# Cloud App Security lifecycle management strategy
+# Defender for Cloud Apps lifecycle management strategy
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-By using a lifecycle management strategy, you can ensure your configurations, exclusions, and policies for Microsoft Cloud App Security remain up to date and are reviewed on an established cadence.
+By using a lifecycle management strategy, you can ensure your configurations, exclusions, and policies for Microsoft Defender for Cloud Apps remain up to date and are reviewed on an established cadence.
 
 >[!NOTE]
->Remember to also check [What’s New in Cloud App Security](release-notes.md) to stay current with new features and releases.
+>Remember to also check [What's New in Defender for Cloud Apps](release-notes.md) to stay current with new features and releases.
 
-![Microsoft Cloud App Security lifecycle management](media/cloud-app-security-lifecycle.png)
+![Microsoft Defender for Cloud Apps lifecycle management](media/cloud-app-security-lifecycle.png)
 
-To best maintain Cloud App Security posture, regularly follow the recommendations below:
+To best maintain Defender for Cloud Apps posture, regularly follow the recommendations below:
 
 ## Role-based access controls
 
-- [Review any users that have access to the Cloud App Security portal and verify role need](manage-admins.md)
+- [Review any users that have access to the Defender for Cloud Apps portal and verify role need](manage-admins.md)
 - [Inventory external users with access to your environment and determine validity](manage-admins.md#invite-external-admins)
 
 ## Real-time controls
@@ -59,6 +59,6 @@ To best maintain Cloud App Security posture, regularly follow the recommendation
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Cloud App Security best practices](best-practices.md)
+> [Defender for Cloud Apps best practices](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

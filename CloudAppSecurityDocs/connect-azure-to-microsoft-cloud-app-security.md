@@ -1,23 +1,23 @@
 ---
-title: Connect Azure to Cloud App Security
-description: This article provides information about how to connect Azure to Cloud App Security using the API connector for visibility and control over use.
+title: Connect Azure to Defender for Cloud Apps
+description: This article provides information about how to connect Azure to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/27/2020
 ms.topic: how-to
 ---
-# Connect Azure to Microsoft Cloud App Security
+# Connect Azure to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use. For information about how Cloud App Security protects Azure, see [Protect Azure](protect-azure.md).
+This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use. For information about how Defender for Cloud Apps protects Azure, see [Protect Azure](protect-azure.md).
 
-## How to connect Azure to Cloud App Security
+## How to connect Azure to Defender for Cloud Apps
 
 > [!NOTE]
 >
-> - User must be a Global or Security administrator in Azure AD to connect Azure to Microsoft Cloud App Security.
-> - Cloud App Security displays activities from **all** subscriptions.
-> - User account information is populated in Cloud App Security as users perform activities in Azure.
-> - Currently, Cloud App Security monitors only ARM activities.
+> - User must be a Global or Security administrator in Azure AD to connect Azure to Microsoft Defender for Cloud Apps.
+> - Defender for Cloud Apps displays activities from **all** subscriptions.
+> - User account information is populated in Defender for Cloud Apps as users perform activities in Azure.
+> - Currently, Defender for Cloud Apps monitors only ARM activities.
 
 1. In the **Connected apps** page, click the plus button and select **Microsoft Azure**.
 

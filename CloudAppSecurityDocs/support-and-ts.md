@@ -1,21 +1,21 @@
 ---
-title: Support and troubleshooting information for Cloud App Security
-description: This article describes your support and troubleshooting options for Microsoft Cloud App Security
+title: Support and troubleshooting information for Defender for Cloud Apps
+description: This article describes your support and troubleshooting options for Microsoft Defender for Cloud Apps
 ms.date: 11/14/2019
 ms.topic: conceptual
 ---
-# Support and troubleshooting Microsoft Cloud App Security
+# Support and troubleshooting Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes the available support and troubleshooting options for Cloud App Security.
+This article describes the available support and troubleshooting options for Defender for Cloud Apps.
 
-## Manage support requests for Cloud App Security
+## Manage support requests for Defender for Cloud Apps
 
-Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Cloud App Security. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available
+Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Defender for Cloud Apps. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available
 in additional languages.
 
-As an admin, you can use the **Help + Support** option to file an online support request for Cloud App Security from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+As an admin, you can use the **Help + Support** option to file an online support request for Defender for Cloud Apps from the Azure portal. To create a support request, your account must be assigned one of the following [administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
 * Global administrator
 
@@ -24,7 +24,7 @@ As an admin, you can use the **Help + Support** option to file an online support
 Select **support request** to create a new support request that opens to the **Basics** tab of the Azure *Help + support* page by following the protocol below.
 
 >[!NOTE]
-> For technical support with third-party products that work with Microsoft Cloud App Security (for example, Box, Salesforce, and Google Workspace) contact the supplier of that product first.
+> For technical support with third-party products that work with Microsoft Defender for Cloud Apps (for example, Box, Salesforce, and Google Workspace) contact the supplier of that product first.
 
 ### Create an online support request
 
@@ -61,9 +61,9 @@ You can view a support request from within the Azure portal. To do so:
 
 2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
-## Troubleshooting Microsoft Cloud App Security status
+## Troubleshooting Microsoft Defender for Cloud Apps status
 
-Check the [current status of Microsoft Cloud App Security](https://portal.microsoft.com/Adminportal/Home#/servicehealth).
+Check the [current status of Microsoft Defender for Cloud Apps](https://portal.microsoft.com/Adminportal/Home#/servicehealth).
 
 ## Additional resources
 
@@ -73,12 +73,12 @@ Check the [current status of Microsoft Cloud App Security](https://portal.micros
 
 * [Stay up to date with our blog](https://aka.ms/mcasblogposts)
 
-* Download [the Cloud App Security datasheet](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
+* Download [the Defender for Cloud Apps datasheet](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
 
 <a name="feedback"></a>
 ## How to provide feedback
 
-The Cloud App Security team is always eager to hear your thoughts about our product. Provide feedback using one of the following options:
+The Defender for Cloud Apps team is always eager to hear your thoughts about our product. Provide feedback using one of the following options:
 
 * **Product feedback**: Send feedback to [casfeedback@microsoft.com](mailto:casfeedback@microsoft.com).
 
@@ -86,4 +86,4 @@ The Cloud App Security team is always eager to hear your thoughts about our prod
 
 ## Next steps
 
-Read about the basics in [Getting started with Cloud App Security](getting-started-with-cloud-app-security.md)
+Read about the basics in [Getting started with Defender for Cloud Apps](getting-started-with-cloud-app-security.md)

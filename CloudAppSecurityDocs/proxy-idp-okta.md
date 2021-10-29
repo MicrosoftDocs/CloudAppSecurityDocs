@@ -1,6 +1,6 @@
 ---
-title: Deploy Cloud App Security Conditional Access App Control for any web app using Okta
-description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for any web app using Okta as the identity provider.
+title: Deploy Defender for Cloud Apps Conditional Access App Control for any web app using Okta
+description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using Okta as the identity provider.
 ms.date: 02/18/2021
 ms.topic: how-to
 ---
@@ -8,22 +8,22 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can configure session controls in Microsoft Cloud App Security to work with any web app and any third-party IdP. This article describes how to route app sessions from Okta to Cloud App Security for real-time session controls.
+You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any third-party IdP. This article describes how to route app sessions from Okta to Defender for Cloud Apps for real-time session controls.
 
-For this article, we'll use the Salesforce app as an example of a web app being configured to use Cloud App Security session controls.
+For this article, we'll use the Salesforce app as an example of a web app being configured to use Defender for Cloud Apps session controls.
 
 ## Prerequisites
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
   - A pre-configured Okta tenant.
-  - Microsoft Cloud App Security
+  - Microsoft Defender for Cloud Apps
 
 - An existing Okta single sign-on configuration for the app using the SAML 2.0 authentication protocol
 
 ## To configure session controls for your app using Okta as the IdP
 
-Use the following steps to route your web app sessions from Okta to Cloud App Security. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
+Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by Okta using one of the following methods:
@@ -35,19 +35,19 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
 **Step 1: [Get your app's SAML single sign-on settings](#idp1-get-your-app-saml-sso-info)**
 
-**Step 2: [Configure Cloud App Security with your app's SAML information](#idp1-conf-cas-with-your-app-saml-info)**
+**Step 2: [Configure Defender for Cloud Apps with your app's SAML information](#idp1-conf-cas-with-your-app-saml-info)**
 
 **Step 3: [Create a new Okta Custom Application and App Single Sign-On configuration](#idp1-create-custom-app-okta)**
 
-**Step 4: [Configure Cloud App Security with the Okta app's information](#idp1-conf-cas-with-okta-app-info)**
+**Step 4: [Configure Defender for Cloud Apps with the Okta app's information](#idp1-conf-cas-with-okta-app-info)**
 
 **Step 5: [Complete the configuration of the Okta Custom Application](#idp1-complete-custom-app-in-okta)**
 
-**Step 6: [Get the app changes in Cloud App Security](#idp1-get-app-changes-in-cas)**
+**Step 6: [Get the app changes in Defender for Cloud Apps](#idp1-get-app-changes-in-cas)**
 
 **Step 7: [Complete the app changes](#idp1-complete-app-changes)**
 
-**Step 8: [Complete the configuration in Cloud App Security](#idp1-complete-conf-in-cas)**
+**Step 8: [Complete the configuration in Defender for Cloud Apps](#idp1-complete-conf-in-cas)**
 
 <a name="idp1-get-your-app-saml-sso-info"></a>
 
@@ -59,7 +59,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
     ![Select Salesforce SSO settings.](media/proxy-idp-okta/idp-okta-sf-select-sso-settings.png)
 
-1. On the **SAML Single Sign-On Setting** page, make a note of the Salesforce **Login URL**. You'll need this later when configuring Cloud App Security.
+1. On the **SAML Single Sign-On Setting** page, make a note of the Salesforce **Login URL**. You'll need this later when configuring Defender for Cloud Apps.
 
     > [!NOTE]
     > If your app provides a SAML certificate, download the certificate file.
@@ -68,9 +68,9 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
 <a name="idp1-conf-cas-with-your-app-saml-info"></a>
 
-## Step 2: Configure Cloud App Security with your app's SAML information
+## Step 2: Configure Defender for Cloud Apps with your app's SAML information
 
-1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
+1. In Defender for Cloud Apps, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
 1. Click the plus sign, and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then click **Next**.
@@ -89,7 +89,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
 1. In the **Okta Admin** console, under **Applications**, view the properties of your existing configuration for your app, and make note of the settings.
 
-1. Click **Add Application**, and then click **Create New App**. Apart from the **Audience URI (SP Entity ID)** value that must be a unique name, configure the new application using the settings you noted earlier. You'll need this application later when configuring Cloud App Security.
+1. Click **Add Application**, and then click **Create New App**. Apart from the **Audience URI (SP Entity ID)** value that must be a unique name, configure the new application using the settings you noted earlier. You'll need this application later when configuring Defender for Cloud Apps.
 1. Navigate to **Applications**, view your existing Okta configuration, and on the **Sign On** tab, select **View Setup Instructions**.
 
     ![Note existing Salesforce app's SSO service location.](media/proxy-idp-okta/idp-okta-sf-view-setup-instructions.png)
@@ -97,14 +97,14 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 1. Make a note of the **Identity Provider Single Sign-On URL** and download the identity provider's Signing Certificate (X.509). You'll need this later.
 
 1. Back in Salesforce, on the existing Okta single sign-on settings page, make a note of all the settings.
-1. Create a new SAML single sign-on configuration. Apart from the **Entity ID** value that must match the custom application's **Audience URI (SP Entity ID)**, configure the single sign-on using the settings you noted earlier. You'll need this later when configuring Cloud App Security.
+1. Create a new SAML single sign-on configuration. Apart from the **Entity ID** value that must match the custom application's **Audience URI (SP Entity ID)**, configure the single sign-on using the settings you noted earlier. You'll need this later when configuring Defender for Cloud Apps.
 1. After saving your new application, navigate to **Assignments** page and assign the **People** or **Groups** that require access to the application.
 
 <a name="idp1-conf-cas-with-okta-app-info"></a>ׂ
 
-## Step 4: Configure Cloud App Security with the Okta app's information
+## Step 4: Configure Defender for Cloud Apps with the Okta app's information
 
-1. Back in the Cloud App Security **IDENTITY PROVIDER** page, click **Next** to proceed.
+1. Back in the Defender for Cloud Apps **IDENTITY PROVIDER** page, click **Next** to proceed.
 
 1. On the next page, select **Fill in data manually**, do the following, and then click **Next**.
     - For the **Single sign-on service URL**, enter the Salesforce **Login URL** you noted earlier.
@@ -114,13 +114,13 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
 1. On the next page, make a note of the following information, and then click **Next**. You'll need the information later.
 
-    - Cloud App Security single sign-on URL
-    - Cloud App Security attributes and values
+    - Defender for Cloud Apps single sign-on URL
+    - Defender for Cloud Apps attributes and values
 
     > [!NOTE]
-    > If you see an option to upload the **Cloud App Security SAML certificate for the identity provider**, click on the click to download the certificate file. You'll need this later.
+    > If you see an option to upload the **Defender for Cloud Apps SAML certificate for the identity provider**, click on the click to download the certificate file. You'll need this later.
 
-    ![In Cloud App Security, note SSO URL and attributes.](media/proxy-idp-okta/idp-okta-cas-get-sf-app-external-config.png)
+    ![In Defender for Cloud Apps, note SSO URL and attributes.](media/proxy-idp-okta/idp-okta-cas-get-sf-app-external-config.png)
 
 <a name="idp1-complete-custom-app-in-okta"></a>
 
@@ -130,7 +130,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
     ![Locate and edit SAML settings.](media/proxy-idp-okta/idp-okta-sf-saml-settings-edit.png)
 
-1. In the **Single Sign On URL** field, replace the URL with the Cloud App Security single sign-on URL you noted earlier, and then save your settings.
+1. In the **Single Sign On URL** field, replace the URL with the Defender for Cloud Apps single sign-on URL you noted earlier, and then save your settings.
 
 1. Under **Directory**, select **Profile Editor**, select the custom application you created earlier, and then click **Profile**. Add attributes using the following information.
 
@@ -141,7 +141,7 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
     ![Add profile attributes.](media/proxy-idp-okta/idp-okta-sf-add-profile-attributes-edit.png)
 
-1. Back on the **Profile Editor** page, select the custom application you created earlier, click **Mappings**, and then select **Okta User to {custom_app_name}**. Map the **McasSigningCert** and **McasAppId** attributes to the Cloud App Security attribute values you noted earlier.
+1. Back on the **Profile Editor** page, select the custom application you created earlier, click **Mappings**, and then select **Okta User to {custom_app_name}**. Map the **McasSigningCert** and **McasAppId** attributes to the Defender for Cloud Apps attribute values you noted earlier.
 
     > [!NOTE]
     >
@@ -154,14 +154,14 @@ Use the following steps to route your web app sessions from Okta to Cloud App Se
 
 <a name="idp1-get-app-changes-in-cas"></a>
 
-## Step 6: Get the app changes in Cloud App Security
+## Step 6: Get the app changes in Defender for Cloud Apps
 
-Back in the Cloud App Security **APP CHANGES** page, do the following, but **don't click Finish**. You'll need the information later.
+Back in the Defender for Cloud Apps **APP CHANGES** page, do the following, but **don't click Finish**. You'll need the information later.
 
-- Copy the Cloud App Security SAML Single sign-on URL
-- Download the Cloud App Security SAML certificate
+- Copy the Defender for Cloud Apps SAML Single sign-on URL
+- Download the Defender for Cloud Apps SAML certificate
 
-![Note the Cloud App Security SAML SSO URL and download the certificate.](media/proxy-idp-okta/idp-okta-cas-sf-app-changes.png)
+![Note the Defender for Cloud Apps SAML SSO URL and download the certificate.](media/proxy-idp-okta/idp-okta-cas-sf-app-changes.png)
 
 <a name="idp1-complete-app-changes"></a>
 
@@ -170,22 +170,22 @@ Back in the Cloud App Security **APP CHANGES** page, do the following, but **don
 In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign-On Settings**, and do the following:
 
 1. [Recommended] Create a backup of your current settings.
-1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
-1. Upload the Cloud App Security SAML certificate you downloaded earlier.
+1. Replace the **Identity Provider Login URL** field value with the Defender for Cloud Apps SAML single sign-on URL you noted earlier.
+1. Upload the Defender for Cloud Apps SAML certificate you downloaded earlier.
 1. Click **Save**.
 
     > [!NOTE]
     >
     > - After saving your settings, all associated login requests to this app will be routed through Conditional Access App Control.
-    > - The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
+    > - The Defender for Cloud Apps SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
     ![Update SSO settings.](media/proxy-idp-okta/idp-okta-sf-update-sso-settings.png)
 
 <a name="idp1-complete-conf-in-cas"></a>
 
-## Step 8: Complete the configuration in Cloud App Security
+## Step 8: Complete the configuration in Defender for Cloud Apps
 
-- Back in the Cloud App Security **APP CHANGES** page, click **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
+- Back in the Defender for Cloud Apps **APP CHANGES** page, click **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
 
 ## Next steps
 

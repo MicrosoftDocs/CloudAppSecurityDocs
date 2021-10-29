@@ -1,6 +1,6 @@
 ---
 title: Advanced log collector management
-description: This article provides information about how advanced management tasks for Cloud App Security Cloud Discovery log collectors.
+description: This article provides information about how advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
 ms.date: 12/14/2020
 ms.topic: how-to
 ---
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides information about the following advanced configuration options for Cloud App Security Cloud Discovery log collectors:
+This article provides information about the following advanced configuration options for Defender for Cloud Apps Cloud Discovery log collectors:
 
 - [Modify the log collector FTP configuration](#modify-the-log-collector-ftp-configuration)
 - [Enable the log collector behind a proxy](#enable-the-log-collector-behind-a-proxy)
@@ -20,11 +20,11 @@ This article provides information about the following advanced configuration opt
 
 ## Modify the log collector FTP configuration
 
-Use these steps to modify the configuration for your Cloud App Security Cloud Discovery Docker.
+Use these steps to modify the configuration for your Defender for Cloud Apps Cloud Discovery Docker.
 
 ### Docker deployment
 
-You might need to modify the configuration for the Cloud App Security Cloud Discovery Docker.
+You might need to modify the configuration for the Defender for Cloud Apps Cloud Discovery Docker.
 
 #### Changing the FTP password
 
@@ -63,7 +63,7 @@ Follow this procedure to customize the certificate files you use for secure conn
 
 ## Enable the log collector behind a proxy
 
-After you configured the log collector, if you are running behind a proxy, the log collector might have trouble sending data to Cloud App Security. This may happen because the log collector doesn't trust the proxy's root certificate authority and is not able to connect to Microsoft Cloud App Security to retrieve its configuration or upload the received logs.
+After you configured the log collector, if you are running behind a proxy, the log collector might have trouble sending data to Defender for Cloud Apps. This may happen because the log collector doesn't trust the proxy's root certificate authority and is not able to connect to Microsoft Defender for Cloud Apps to retrieve its configuration or upload the received logs.
 
 Use these steps to enable your log collector behind a proxy.
 
@@ -73,7 +73,7 @@ Use these steps to enable your log collector behind a proxy.
 
 ### Set up the log collector behind a proxy
 
-Make sure you performed the necessary steps run Docker on a Windows or Linux machine and successfully download the Cloud App Security Docker image on the machine. For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
+Make sure you performed the necessary steps run Docker on a Windows or Linux machine and successfully download the Defender for Cloud Apps Docker image on the machine. For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
 #### Validate Docker log collector container creation
 
@@ -87,7 +87,7 @@ docker ps
 
 #### Copy proxy root CA certificate to the container
 
-From your virtual machine, copy the CA certificate to the Cloud App Security container. In the following example, the container is named *Ubuntu-LogCollector* and the CA certificate is named *Proxy-CA.crt*.
+From your virtual machine, copy the CA certificate to the Defender for Cloud Apps container. In the following example, the container is named *Ubuntu-LogCollector* and the CA certificate is named *Proxy-CA.crt*.
 Run the command on the Ubuntu host. It copies the certificate to a folder in the running container:
 
 ```bash
@@ -141,12 +141,12 @@ collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 ![Configuration update.](media/log-collector-advanced-tasks/docker-4.png "Configuration update")
 
-The log collector is now able to communicate with Cloud App Security. After sending data to it, the status will change from **Healthy** to **Connected** in the Cloud App Security portal.
+The log collector is now able to communicate with Defender for Cloud Apps. After sending data to it, the status will change from **Healthy** to **Connected** in the Defender for Cloud Apps portal.
 
 ![Status.](media/log-collector-advanced-tasks/docker-5.png "Status")
 
 >[!NOTE]
-> If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Cloud App Security portal.
+> If you have to update the configuration of the log collector, to add or remove a data source for example, you normally have to **delete** the container and perform the previous steps again. To avoid this, you can re-run the *collector_config* tool with the new API token generated in the Defender for Cloud Apps portal.
 
 ### How to change the Java KeyStore password
 
@@ -181,7 +181,7 @@ The log collector is now able to communicate with Cloud App Security. After send
 
 ## Move the log collector to a different data partition on Linux
 
-Many companies have the requirement to move data to a separate partition. Use these steps to move your Cloud App Security Docker log collector images to a data partition on your Linux host.
+Many companies have the requirement to move data to a separate partition. Use these steps to move your Defender for Cloud Apps Docker log collector images to a data partition on your Linux host.
 
 The following steps describe moving data to a partition called *datastore* and assumes you have already mounted the partition.
 
@@ -245,7 +245,7 @@ Use these steps to review your log collector disk usage and location.
 
 ## Move the log collector to an accessible host
 
-In regulated environments, access to Docker Hubs where the log collector image is hosted may be blocked. This prevents Cloud App Security from importing the data from the log collector and can be resolved my moving the log collector image to an accessible host.
+In regulated environments, access to Docker Hubs where the log collector image is hosted may be blocked. This prevents Defender for Cloud Apps from importing the data from the log collector and can be resolved my moving the log collector image to an accessible host.
 
 Use these steps to download the log collector image using a computer that has access to Docker Hub and import it to your destination host.
 
@@ -336,7 +336,7 @@ Use these steps to transfer the exported image to your destination host.
 ## Define custom ports for Syslog and FTP receivers for log collectors on Linux
 
 Some organizations have a requirement to define custom ports for Syslog and FTP services.
-When adding a data source, Cloud App Security log collectors uses specific port numbers to listen for traffic logs from one or more data sources.
+When adding a data source, Defender for Cloud Apps log collectors uses specific port numbers to listen for traffic logs from one or more data sources.
 
 The following table lists of the default listening ports for receivers:
 
@@ -347,7 +347,7 @@ The following table lists of the default listening ports for receivers:
 
 Use these steps to define custom ports.
 
-1. In Cloud App Security, click the settings icon followed by **Log collectors**.
+1. In Defender for Cloud Apps, click the settings icon followed by **Log collectors**.
 
 1. On the **Log collectors** tab, add or edit a log collector and after updating the data sources, copy the run command from the dialog.
 
@@ -378,7 +378,7 @@ Use these steps to define custom ports.
 Occasionally, you may need to investigate issues such as the following:
 
 - **Log collectors are receiving data**: Validate that log collectors are receiving Syslog messages from your appliances and are not blocked by firewalls.
-- **Received data is in the correct log format**: Validate the log format to help you troubleshoot parsing errors by comparing the log format expected by Cloud App Security and the one sent by your appliance.
+- **Received data is in the correct log format**: Validate the log format to help you troubleshoot parsing errors by comparing the log format expected by Defender for Cloud Apps and the one sent by your appliance.
 
 Use these steps to validate the traffic received by log collectors.
 
@@ -401,7 +401,7 @@ Use these steps to validate the traffic received by log collectors.
         1. Install *netcat* and *wget*.
 
         1. Download, and if required unzip, a sample log, as follows:
-            1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click **Discover**, and then click **Create snapshot report**.
+            1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Discover**, and then click **Create snapshot report**.
             1. Select the **Data source** from which you want to upload the log files.
             1. Click **View and verify** then right-click **Download sample log** and copy the URL address link.
             1. Click **Close**.
@@ -417,9 +417,9 @@ Use these steps to validate the traffic received by log collectors.
         cat <path_to_downloaded_sample_log>.log | nc -w 0 localhost <datasource_port>
         ```
 
-        If the collector is correctly configured, the log data will be present in the messages file and shortly after that it will be uploaded to the Cloud App Security portal.
+        If the collector is correctly configured, the log data will be present in the messages file and shortly after that it will be uploaded to the Defender for Cloud Apps portal.
 
-    - By inspecting relevant files within the Cloud App Security Docker container:
+    - By inspecting relevant files within the Defender for Cloud Apps Docker container:
         1. Log in to the container by using this command:
 
         ```bash
@@ -439,11 +439,11 @@ Use these steps to validate the traffic received by log collectors.
 
         ![Analyze network traffic cat command.](media/log-collector-advanced-tasks/validate-traffic-and-log-format-cat-analyze-traffic.png)
 
-1. Review logs that have been uploaded to Cloud App Security in the `/var/adallom/discoverylogsbackup` directory.
+1. Review logs that have been uploaded to Defender for Cloud Apps in the `/var/adallom/discoverylogsbackup` directory.
 
     ![Review uploaded log files.](media/log-collector-advanced-tasks/validate-traffic-and-log-format-review-uploaded-logs.png)
 
-1. Validate the log format received by the log collector by comparing the messages stored in `/var/adallom/discoverylogsbackup` to the sample log format provided in the Cloud App Security **Create log collector** wizard.
+1. Validate the log format received by the log collector by comparing the messages stored in `/var/adallom/discoverylogsbackup` to the sample log format provided in the Defender for Cloud Apps **Create log collector** wizard.
 
 > [!NOTE]
 > If you want to use your own sample log but don't have access to the appliance, use the following commands to write the output of the *messages* file (located in the og collector's syslog directory) to a local file on the host.

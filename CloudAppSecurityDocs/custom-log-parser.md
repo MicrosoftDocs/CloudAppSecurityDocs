@@ -1,6 +1,6 @@
 ---
-title: Cloud App Security custom log parser for logs that aren't supported
-description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Cloud App Security.
+title: Defender for Cloud Apps custom log parser for logs that aren't supported
+description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Defender for Cloud Apps.
 ms.date: 05/05/2021
 ms.topic: how-to
 ---
@@ -8,13 +8,13 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud App Security enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Cloud App Security. This can be a CSV parser or a custom key value parser.
+Defender for Cloud Apps enables you to configure a custom parser to match and process the format of your logs so that they can be used for Cloud Discovery. Typically you would use a custom parser if the firewall or device is not explicitly supported by Defender for Cloud Apps. This can be a CSV parser or a custom key value parser.
 
 The custom parser enables you to use logs from unsupported firewalls by following this process.
 
 To configure a custom parser:
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Create snapshot report**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Create snapshot report**.
 
     ![Create new snapshot report.](media/create-new-snapshot-report.png)
 
@@ -30,10 +30,10 @@ To configure a custom parser:
 
     ![Review field in custom log parser.](media/log-data.png)
 
-6. Then, fill in the fields based on your data to delineate which columns in the data correlate to specific fields in Cloud App Security. You may have to modify column names in your log file to correlate properly.
+6. Then, fill in the fields based on your data to delineate which columns in the data correlate to specific fields in Defender for Cloud Apps. You may have to modify column names in your log file to correlate properly.
 
     > [!NOTE]
-    > The fields are case-sensitive. Make sure you spell and type the names of the columns identically in Cloud App Security and in the log file. Also, make sure that the date format you choose is identical.
+    > The fields are case-sensitive. Make sure you spell and type the names of the columns identically in Defender for Cloud Apps and in the log file. Also, make sure that the date format you choose is identical.
 
     ![Fill in custom log parser fields.](media/custom-log-parser.png)
 

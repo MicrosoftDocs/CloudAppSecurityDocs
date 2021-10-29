@@ -1,5 +1,5 @@
 ---
-title: Protect files with Cloud App Security admin quarantine tutorial
+title: Protect files with Defender for Cloud Apps admin quarantine tutorial
 description: This tutorial describes the scenario for using admin quarantine to control data breaches.
 ms.date: 02/24/2021
 ms.topic: tutorial
@@ -10,7 +10,7 @@ ms.topic: tutorial
 
 [File policies](data-protection-policies.md) are a great tool for finding threats to your information protection policies. For instance, create file policies that find places where users stored sensitive information, credit card numbers, and third-party ICAP files in your cloud.
 
-In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect unwanted files stored in your cloud that leave you vulnerable, and take immediate action to stop them in their tracks and lock down the files that pose a threat by using **Admin quarantine** to protect your files in the cloud, remediate problems, and prevent future leaks from occurring.
+In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to detect unwanted files stored in your cloud that leave you vulnerable, and take immediate action to stop them in their tracks and lock down the files that pose a threat by using **Admin quarantine** to protect your files in the cloud, remediate problems, and prevent future leaks from occurring.
 
 > [!div class="checklist"]
 >
@@ -22,8 +22,8 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
 >[!NOTE]
 >
 > - For a list of apps that support admin quarantine, see the list of [governance actions](governance-actions.md).
-> - If a file in SharePoint or OneDrive is detected to be malware, it is not quarantined in the Cloud App Security portal.
-> - Files labeled by Cloud App Security can't be quarantined.
+> - If a file in SharePoint or OneDrive is detected to be malware, it is not quarantined in the Defender for Cloud Apps portal.
+> - Files labeled by Defender for Cloud Apps can't be quarantined.
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
 
@@ -47,7 +47,7 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
 
     1. The user can only access the tombstone file. In the file, they can read the custom guidelines provided by IT and the correlation ID to give IT to release the file.
 
-1. When you receive the alert that a file has been quarantined, investigate the file in the Cloud App Security **Alerts** page:
+1. When you receive the alert that a file has been quarantined, investigate the file in the Defender for Cloud Apps **Alerts** page:
 
     ![quarantine alerts.](media/quarantine-alerts.png)
 
@@ -89,9 +89,9 @@ In this tutorial, you'll learn how to use Microsoft Cloud App Security to detect
         ![quarantine settings.](media/quarantine-settings.png)
 
         > [!NOTE]
-        > Cloud App Security only detects new SharePoint and OneDrive folders, including if they are set as the admin quarantine folder, after some file activity has been performed in them.
+        > Defender for Cloud Apps only detects new SharePoint and OneDrive folders, including if they are set as the admin quarantine folder, after some file activity has been performed in them.
 
-    1. For Box, the quarantine folder location and user message can't be customized. The folder location is the drive of the admin who connected Box to Cloud App Security and the user message is: This file was quarantined to your administrator's drive because it might violate your company's security and compliance policies. Contact your IT administrator for help.
+    1. For Box, the quarantine folder location and user message can't be customized. The folder location is the drive of the admin who connected Box to Defender for Cloud Apps and the user message is: This file was quarantined to your administrator's drive because it might violate your company's security and compliance policies. Contact your IT administrator for help.
 
 ## Next steps
 

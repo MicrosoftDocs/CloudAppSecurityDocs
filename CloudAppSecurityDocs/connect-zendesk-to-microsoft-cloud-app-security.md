@@ -1,14 +1,14 @@
 ---
-title: Connect Zendesk to Cloud App Security (Preview)
-description: This article provides instructions for connecting Microsoft Cloud App Security to your existing Zendesk using the App Connector APIs. 
+title: Connect Zendesk to Defender for Cloud Apps (Preview)
+description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zendesk using the App Connector APIs. 
 ms.date: 07/01/2021
 ms.topic: how-to
 ---
-# Connect Zendesk to Microsoft Cloud App Security (Preview)
+# Connect Zendesk to Microsoft Defender for Cloud Apps (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing Zendesk using the App Connector APIs. This connection gives you visibility into and control over your organization's Zendesk use.
+This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zendesk using the App Connector APIs. This connection gives you visibility into and control over your organization's Zendesk use.
 
 ## Prerequisites
 
@@ -18,9 +18,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
   - Enterprise Plus
  
  >[!NOTE]
-> Connecting Zendesk to Cloud App Security with a Zendesk user that is not an admin will result in a connection error.
+> Connecting Zendesk to Defender for Cloud Apps with a Zendesk user that is not an admin will result in a connection error.
 
-## How to connect Zendesk to Cloud App Security
+## How to connect Zendesk to Defender for Cloud Apps
 
 ### Configure Zendesk
 
@@ -31,9 +31,9 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. Select **New Credential**.
 1. Fill out the following fields:
 
-    - Client name: **Microsoft Cloud App Security** (you can also choose another name).
-    - Description: **Microsoft Cloud App Security API Connector** (you can also choose another description).
-    - Company: **Microsoft Cloud App Security** (you can also choose another company).
+    - Client name: **Microsoft Defender for Cloud Apps** (you can also choose another name).
+    - Description: **Microsoft Defender for Cloud Apps API Connector** (you can also choose another description).
+    - Company: **Microsoft Defender for Cloud Apps** (you can also choose another company).
     - Unique identifier: **microsoft_cloud_app_security** (you can also choose another unique identifier).
     - Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
 
@@ -43,12 +43,12 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 
 1. Copy the **Secret** that was generated. You'll need it in the upcoming steps.
 
-### Configure Cloud App Security
+### Configure Defender for Cloud Apps
 
 >[!NOTE]
 >The Zendesk user that is configuring the integration must always remain a Zendesk admin, even after the connector is installed.
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, select the plus button followed by **Zendesk**.
 
@@ -65,7 +65,7 @@ This article provides instructions for connecting Microsoft Cloud App Security t
 1. Select **Connect in Zendesk**.
 1. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
-1. After the connector’s **Status** is marked as **Connected**, the connector is live and works.
+1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 
 >[!NOTE]
 >System activities will be shown with the **Zendesk** account name.

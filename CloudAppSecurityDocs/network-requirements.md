@@ -1,6 +1,6 @@
 ---
 title: Network requirements 
-description: This article describes the IP addresses and ports you need to open to work with Cloud App Security.
+description: This article describes the IP addresses and ports you need to open to work with Defender for Cloud Apps.
 ms.date: 03/14/2021
 ms.topic: how-to
 ---
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides a list of ports and IP addresses you need to allow and allowlist to work with Microsoft Cloud App Security.
+This article provides a list of ports and IP addresses you need to allow and allowlist to work with Microsoft Defender for Cloud Apps.
 
 ## View your data center
 
@@ -16,17 +16,17 @@ Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
 
     ![click About.](media/about-menu.png)
 
-2. In the Cloud App Security version screen, you can see the region and the data center.
+2. In the Defender for Cloud Apps version screen, you can see the region and the data center.
 
     ![View your data center.](media/data-center.png)
 
 ## Portal access
 
-For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
+For access to the Defender for Cloud Apps portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
 portal.cloudappsecurity.com
@@ -43,7 +43,7 @@ dc.services.visualstudio.com
 *.blob.core.windows.net
 ```
 
-For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allowlist to provide access for the Cloud App Security GCC High portal:
+For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allowlist to provide access for the Defender for Cloud Apps GCC High portal:
 
 ```ini
 portal.cloudappsecurity.us
@@ -72,7 +72,7 @@ Configure your firewall for reverse proxy using the settings relevant to your en
 
 ### Commercial customers
 
-For commercial customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
+For commercial customers, to enable Defender for Cloud Apps reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
 *.cas.ms
@@ -91,7 +91,7 @@ Additionally, the following items should be allowed, depending on which data cen
 
 ### US Government offerings
 
-For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allowlist:
+For US Government GCC High customers, to enable Defender for Cloud Apps reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allowlist:
 
 ```ini
 *.mcas-gov.us
@@ -119,7 +119,7 @@ For **US Government GCC** customers:
 
 ## SIEM agent connection
 
-To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allowlist:
+To enable Defender for Cloud Apps to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allowlist:
 
 |Data center|IP addresses|
 |----|----|
@@ -133,17 +133,17 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 
 > [!NOTE]
 >
-> - If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
-> - A genuine Microsoft Cloud App Security certificate usage is required for the SIEM agent connection.
+> - If you didn't specify a proxy when you set up the Defender for Cloud Apps SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps portal.
+> - A genuine Microsoft Defender for Cloud Apps certificate usage is required for the SIEM agent connection.
 
 ## App connector
 
-For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used. The IP addresses enable Cloud App Security to collect logs and provide access for the Cloud App Security console.
+For some third-party apps to be accessed by Defender for Cloud Apps, these IP addresses may be used. The IP addresses enable Defender for Cloud Apps to collect logs and provide access for the Defender for Cloud Apps console.
 
 > [!NOTE]
-> You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses.
+> You may see these IP addresses in activity logs from the vendor because Defender for Cloud Apps performs governance actions and scans from these IP addresses.
 
-To connect to third-party apps, enable Cloud App Security to connect from these IP addresses:
+To connect to third-party apps, enable Defender for Cloud Apps to connect from these IP addresses:
 
 |Data center|IP addresses|
 |----|----|----|
@@ -157,7 +157,7 @@ To connect to third-party apps, enable Cloud App Security to connect from these 
 
 ## Third-party DLP integration
 
-To enable Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number.
+To enable Defender for Cloud Apps to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number.
 
 1. **Source addresses** - These addresses should be allowed as listed above for API connector third-party apps
 2. **Source TCP port** - Dynamic
@@ -167,9 +167,9 @@ To enable Cloud App Security to send data through your stunnel to your ICAP serv
 > [!NOTE]
 >
 > - By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
-> - You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses.
+> - You may see these IP addresses in activity logs from the vendor because Defender for Cloud Apps performs governance actions and scans from these IP addresses.
 
-To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security to connect from these IP addresses:
+To connect to third-party apps and integrate with external DLP solutions, enable Defender for Cloud Apps to connect from these IP addresses:
 
 |Data center|IP addresses|
 |----|----|----|
@@ -181,7 +181,7 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 
 ## Mail server
 
-To enable notifications to be sent from the default template and settings, add these IP addresses to your anti-spam allowlist. The Cloud App Security dedicated email IP addresses are:
+To enable notifications to be sent from the default template and settings, add these IP addresses to your anti-spam allowlist. The Defender for Cloud Apps dedicated email IP addresses are:
 
 - 65.55.234.192/26
 - 207.46.50.192/26
@@ -190,7 +190,7 @@ To enable notifications to be sent from the default template and settings, add t
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-If you want to customize the email sender identity, Microsoft Cloud App Security enables customization by using MailChimp&reg;, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, go to **Settings**. Select **Mail settings** and review MailChimp's Terms of Service and Privacy Statement. Then, give Microsoft permission to use MailChimp on your behalf.
+If you want to customize the email sender identity, Microsoft Defender for Cloud Apps enables customization by using MailChimp&reg;, a third-party email service. To make it work, in the Microsoft Defender for Cloud Apps portal, go to **Settings**. Select **Mail settings** and review MailChimp's Terms of Service and Privacy Statement. Then, give Microsoft permission to use MailChimp on your behalf.
 
 If you don't customize the sender identity, your email notifications will be sent using all the default settings.
 
@@ -201,7 +201,7 @@ To work with MailChimp, add this IP address to your anti-spam allowlist to enabl
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
 - Allow the log collector to receive inbound FTP and Syslog traffic as configured for the data sources.
-- Allow the log collector to initiate outbound traffic to the Cloud App Security portal (for example `contoso.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services).
+- Allow the log collector to initiate outbound traffic to the Defender for Cloud Apps portal (for example `contoso.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services).
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
   | Data center |                        URL                                 |
@@ -216,7 +216,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 >
 > - If your firewall requires a static IP address access list and does not support allowing based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
-> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps portal.
 
 ## Next steps
 

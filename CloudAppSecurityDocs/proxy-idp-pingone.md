@@ -1,6 +1,6 @@
 ---
-title: Deploy Cloud App Security Conditional Access App Control for any web app using PingOne
-description: This article provides information about how to deploy the Microsoft Cloud App Security Conditional Access App Control for any web app using the PingOne identity provider.
+title: Deploy Defender for Cloud Apps Conditional Access App Control for any web app using PingOne
+description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using the PingOne identity provider.
 ms.date: 09/29/2020
 ms.topic: how-to
 ---
@@ -8,22 +8,22 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can configure session controls in Microsoft Cloud App Security to work with any web app and any third-party IdP. This article describes how to route app sessions from PingOne to Cloud App Security for real-time session controls.
+You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any third-party IdP. This article describes how to route app sessions from PingOne to Defender for Cloud Apps for real-time session controls.
 
-For this article, we'll use the Salesforce app as an example of a web app being configured to use Cloud App Security session controls. To configure other apps, perform the same steps according to their requirements.
+For this article, we'll use the Salesforce app as an example of a web app being configured to use Defender for Cloud Apps session controls. To configure other apps, perform the same steps according to their requirements.
 
 ## Prerequisites
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
   - A relevant PingOne license (required for single sign-on)
-  - Microsoft Cloud App Security
+  - Microsoft Defender for Cloud Apps
 
 - An existing PingOne single sign-on configuration for the app using the SAML 2.0 authentication protocol
 
 ## To configure session controls for your app using PingOne as the IdP
 
-Use the following steps to route your web app sessions from PingOne to Cloud App Security. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
+Use the following steps to route your web app sessions from PingOne to Defender for Cloud Apps. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by PingOne using one of the following methods:
@@ -35,19 +35,19 @@ Use the following steps to route your web app sessions from PingOne to Cloud App
 
 **Step 1: [Get your app's SAML single sign-on settings](#idp1-get-your-app-saml-sso-info)**
 
-**Step 2: [Configure Cloud App Security with your app's SAML information](#idp1-conf-cas-with-your-app-saml-info)**
+**Step 2: [Configure Defender for Cloud Apps with your app's SAML information](#idp1-conf-cas-with-your-app-saml-info)**
 
 **Step 3: [Create a custom app in PingOne](#idp1-create-custom-app-pingone)**
 
-**Step 4: [Configure Cloud App Security with the PingOne app's information](#idp1-conf-cas-with-pingone-app-info)**
+**Step 4: [Configure Defender for Cloud Apps with the PingOne app's information](#idp1-conf-cas-with-pingone-app-info)**
 
 **Step 5: [Complete the custom app in PingOne](#idp1-complete-custom-app-in-pingone)**
 
-**Step 6: [Get the app changes in Cloud App Security](#idp1-get-app-changes-in-cas)**
+**Step 6: [Get the app changes in Defender for Cloud Apps](#idp1-get-app-changes-in-cas)**
 
 **Step 7: [Complete the app changes](#idp1-complete-app-changes)**
 
-**Step 8: [Complete the configuration in Cloud App Security](#idp1-complete-conf-in-cas)**
+**Step 8: [Complete the configuration in Defender for Cloud Apps](#idp1-complete-conf-in-cas)**
 
 <a name="idp1-get-your-app-saml-sso-info"></a>
 
@@ -68,9 +68,9 @@ Use the following steps to route your web app sessions from PingOne to Cloud App
 
 <a name="idp1-conf-cas-with-your-app-saml-info"></a>
 
-## Step 2: Configure Cloud App Security with your app's SAML information
+## Step 2: Configure Defender for Cloud Apps with your app's SAML information
 
-1. In Cloud App Security, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
+1. In Defender for Cloud Apps, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
 1. Select plus sign (**+**), and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then select **Next**.
@@ -135,9 +135,9 @@ Then use the instructions from the **Add a SAML application with your identity p
 
 <a name="idp1-conf-cas-with-pingone-app-info"></a>
 
-## Step 4: Configure Cloud App Security with the PingOne app's information
+## Step 4: Configure Defender for Cloud Apps with the PingOne app's information
 
-1. Back in the Cloud App Security **IDENTITY PROVIDER** page, select **Next** to proceed.
+1. Back in the Defender for Cloud Apps **IDENTITY PROVIDER** page, select **Next** to proceed.
 
 1. On the next page, select **Fill in data manually**, do the following, and then select **Next**.
     - For the **Assertion consumer service URL**, enter the Salesforce **Login URL** you noted earlier.
@@ -147,10 +147,10 @@ Then use the instructions from the **Add a SAML application with your identity p
 
 1. On the next page, make a note of the following information, and then select **Next**. You'll need the information later.
 
-    - Cloud App Security single sign-on URL
-    - Cloud App Security attributes and values
+    - Defender for Cloud Apps single sign-on URL
+    - Defender for Cloud Apps attributes and values
 
-    ![In Cloud App Security, note SSO URL and attributes.](media/proxy-idp-pingone/idp-pingone-cas-get-sf-app-external-config.png)
+    ![In Defender for Cloud Apps, note SSO URL and attributes.](media/proxy-idp-pingone/idp-pingone-cas-get-sf-app-external-config.png)
 
 <a name="idp1-complete-custom-app-in-pingone"></a>
 
@@ -160,26 +160,26 @@ Then use the instructions from the **Add a SAML application with your identity p
 
     ![Locate and edit custom Salesforce app.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-edit.png)
 
-1. In the **Assertion Consumer Service (ACS)** field, replace the URL with the Cloud App Security single sign-on URL you noted earlier, and then select **Next**.
+1. In the **Assertion Consumer Service (ACS)** field, replace the URL with the Defender for Cloud Apps single sign-on URL you noted earlier, and then select **Next**.
 
     ![Replace ACS in custom Salesforce app.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-replace-saml-sso-properties.png)
 
-1. Add the Cloud App Security attributes and values you noted earlier to the app's properties.
+1. Add the Defender for Cloud Apps attributes and values you noted earlier to the app's properties.
 
-    ![Add Cloud App Security attributes to custom Salesforce app.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-replace-saml-sso-attributes.png)
+    ![Add Defender for Cloud Apps attributes to custom Salesforce app.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-replace-saml-sso-attributes.png)
 
 1. Save your settings.
 
 <a name="idp1-get-app-changes-in-cas"></a>
 
-## Step 6: Get the app changes in Cloud App Security
+## Step 6: Get the app changes in Defender for Cloud Apps
 
-Back in the Cloud App Security **APP CHANGES** page, do the following, but **don't select Finish**. You'll need the information later.
+Back in the Defender for Cloud Apps **APP CHANGES** page, do the following, but **don't select Finish**. You'll need the information later.
 
-- Copy the Cloud App Security SAML Single sign-on URL
-- Download the Cloud App Security SAML certificate
+- Copy the Defender for Cloud Apps SAML Single sign-on URL
+- Download the Defender for Cloud Apps SAML certificate
 
-![Note the Cloud App Security SAML SSO URL and download the certificate.](media/proxy-idp-pingone/idp-pingone-cas-sf-app-changes.png)
+![Note the Defender for Cloud Apps SAML SSO URL and download the certificate.](media/proxy-idp-pingone/idp-pingone-cas-sf-app-changes.png)
 
 <a name="idp1-complete-app-changes"></a>
 
@@ -188,21 +188,21 @@ Back in the Cloud App Security **APP CHANGES** page, do the following, but **don
 In Salesforce, browse to **Setup** > **Settings** > **Identity** > **Single Sign-On Settings**, and do the following:
 
 1. Recommended: Create a backup of your current settings.
-1. Replace the **Identity Provider Login URL** field value with the Cloud App Security SAML single sign-on URL you noted earlier.
-1. Upload the Cloud App Security SAML certificate you downloaded earlier.
+1. Replace the **Identity Provider Login URL** field value with the Defender for Cloud Apps SAML single sign-on URL you noted earlier.
+1. Upload the Defender for Cloud Apps SAML certificate you downloaded earlier.
 1. Replace the **Entity ID** field value with the PingOne custom app Entity ID you noted earlier.
 1. Select **Save**.
 
     > [!NOTE]
-    > The Cloud App Security SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
+    > The Defender for Cloud Apps SAML certificate is valid for one year. After it expires, a new certificate will need to be generated.
 
-    ![Update custom Salesforce app with Cloud App Security SAML details.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-changes.png)
+    ![Update custom Salesforce app with Defender for Cloud Apps SAML details.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-changes.png)
 
 <a name="idp1-complete-conf-in-cas"></a>
 
-## Step 8: Complete the configuration in Cloud App Security
+## Step 8: Complete the configuration in Defender for Cloud Apps
 
-- Back in the Cloud App Security **APP CHANGES** page, select **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
+- Back in the Defender for Cloud Apps **APP CHANGES** page, select **Finish**. After completing the wizard, all associated login requests to this app will be routed through Conditional Access App Control.
 
 ## Next steps
 

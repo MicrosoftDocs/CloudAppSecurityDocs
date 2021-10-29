@@ -1,6 +1,6 @@
 ---
 title: Mark as read - Alerts API
-description: This article describes the mark as read request in Cloud App Security's Alerts API.
+description: This article describes the mark as read request in the Defender for Cloud Apps Alerts API.
 ms.date: 03/27/2020
 ms.topic: reference
 ---

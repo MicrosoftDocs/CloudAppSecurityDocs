@@ -1,25 +1,25 @@
 ---
-title: Connect Amazon Web Services with Cloud App Security
-description: This article provides information about how to connect your AWS app to Cloud App Security using the API connector for visibility and control over use.
+title: Connect Amazon Web Services with Defender for Cloud Apps
+description: This article provides information about how to connect your AWS app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 05/12/2021
 ms.topic: how-to
 ---
-# Connect AWS to Microsoft Cloud App Security
+# Connect AWS to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting your existing Amazon Web Services (AWS) account to Microsoft Cloud App Security using the connector APIs. For information about how Cloud App Security protects AWS, see [Protect AWS](protect-aws.md).
+This article provides instructions for connecting your existing Amazon Web Services (AWS) account to Microsoft Defender for Cloud Apps using the connector APIs. For information about how Defender for Cloud Apps protects AWS, see [Protect AWS](protect-aws.md).
 
-You can connect one or both of the following AWS to Cloud App Security connections:
+You can connect one or both of the following AWS to Defender for Cloud Apps connections:
 
 - **Security auditing**: This connection gives you visibility into and control over AWS app use.
 - **Security configuration**: This connection gives you fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
 
 Since you can add either or both of the connections, the steps in this article are written as independent instructions. If you've already added one of the connections, where relevant edit the existing configurations.
 
-## How to connect AWS Security auditing to Cloud App Security
+## How to connect AWS Security auditing to Defender for Cloud Apps
 
-Use the following steps to configure your AWS auditing and then connect it to Cloud App Security.
+Use the following steps to configure your AWS auditing and then connect it to Defender for Cloud Apps.
 
 ### Step 1: Configure Amazon Web Services auditing
 
@@ -31,7 +31,7 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
     ![AWS users.](media/aws-users.png "AWS users")
 
-1. In the **Details** step, provide a new user name for Cloud App Security. Make sure that under **Access type** you select **Programmatic access** and select **Next Permissions**.<a name="set-permissions"></a>
+1. In the **Details** step, provide a new user name for Defender for Cloud Apps. Make sure that under **Access type** you select **Programmatic access** and select **Next Permissions**.<a name="set-permissions"></a>
 
     ![Create user in AWS.](media/aws-create-user.png "Create user in AWS")
 
@@ -99,9 +99,9 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
     > [!NOTE]
     > After connecting AWS, you'll receive events for seven days prior to connection. If you just enabled CloudTrail, you'll receive events from the time you enabled CloudTrail.
 
-### Step 2: Connect Amazon Web Services auditing to Cloud App Security
+### Step 2: Connect Amazon Web Services auditing to Defender for Cloud Apps
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, to provide the AWS connector credentials, do one of the following:
 
@@ -133,16 +133,16 @@ Use the following steps to configure your AWS auditing and then connect it to Cl
 
     Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, select **Done**.
 
-## How to connect AWS security configuration to Cloud App Security
+## How to connect AWS security configuration to Defender for Cloud Apps
 
 Connecting AWS security configuration gives you insights into fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
 
-Follow these steps to connect AWS security configuration to Cloud App Security.
+Follow these steps to connect AWS security configuration to Defender for Cloud Apps.
 
 > [!div class="checklist"]
 >
 > - [Set up AWS Security Hub](#set-up-aws-security-hub)
-> - [Connect AWS security configuration to Cloud App Security](#connect-aws-security-configuration-to-cloud-app-security)
+> - [Connect AWS security configuration to Defender for Cloud Apps](#connect-aws-security-configuration-to-cloud-app-security)
 
 ### Set up AWS Security Hub
 
@@ -158,7 +158,7 @@ To view security recommendations for multiple regions, repeat the following step
     > [!NOTE]
     > When you first enable Security Hub, it may take several hours for data to be available.
 
-### Connect AWS Security configuration to Cloud App Security
+### Connect AWS Security configuration to Defender for Cloud Apps
 
 Before you can connect AWS security configuration, make sure that you have [set up your AWS environment](#set-up-aws-security-hub) to collect fundamental security and compliance recommendations.
 
@@ -190,9 +190,9 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
     ![Download csv in AWS.](media/aws-download-csv.png "Download csv in AWS")
 
-### Step 2: Connect Amazon Web Services security configuration to Cloud App Security
+### Step 2: Connect Amazon Web Services security configuration to Defender for Cloud Apps
 
-1. In Cloud App Security, select **Investigate**, and then select **Connected apps**.
+1. In Defender for Cloud Apps, select **Investigate**, and then select **Connected apps**.
 
 1. In the **Security configuration apps** tab, select the plus button, and then select **Amazon Web Services**.
 

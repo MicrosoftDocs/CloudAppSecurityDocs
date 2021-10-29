@@ -1,6 +1,6 @@
 ---
 title: Investigate cloud app risks & suspicious activity 
-description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Cloud App Security.
+description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Defender for Cloud Apps.
 ms.date: 11/18/2019
 ms.topic: how-to
 ---
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-After Microsoft Cloud App Security runs in your cloud environment, you'll need a stage of learning and investigating. Learn to use the Microsoft Cloud App Security tools to gain a deeper understanding of what's happening in your cloud environment. Based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk. This article describes how to do an investigation to get a better understanding of your cloud environment.
+After Microsoft Defender for Cloud Apps runs in your cloud environment, you'll need a stage of learning and investigating. Learn to use the Microsoft Defender for Cloud Apps tools to gain a deeper understanding of what's happening in your cloud environment. Based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk. This article describes how to do an investigation to get a better understanding of your cloud environment.
 
 ## Dashboards
 
@@ -36,7 +36,7 @@ The following dashboards are available to help you investigate apps in your clou
 
 An important step to understanding your cloud is to tag apps as sanctioned or unsanctioned. After you sanction an app, you can filter for apps that aren't sanctioned and start migration to sanctioned apps of the same type.
 
-- In the Cloud App Security console, go to the App catalog or Discovered apps.
+- In the Defender for Cloud Apps console, go to the App catalog or Discovered apps.
 
 - In the list of apps, on the row in which the app you want to tag as sanctioned appears, choose the three dots at the end of the row ![Tag as sanctioned dots.](media/sanction-three-dots.png "Tag as sanctioned dots") and choose **Mark as sanctioned**.
 
@@ -44,7 +44,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
 ## Use the investigation tools
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following items:
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following items:
 
     - Who is accessing your cloud environment?
 

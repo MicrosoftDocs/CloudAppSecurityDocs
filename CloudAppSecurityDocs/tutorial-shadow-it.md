@@ -1,6 +1,6 @@
 ---
 title: Discover and manage Shadow IT tutorial
-description: This tutorial describes the process to discover and manage Shadow IT in Microsoft Cloud App Security.
+description: This tutorial describes the process to discover and manage Shadow IT in Microsoft Defender for Cloud Apps.
 ms.date: 02/24/2021
 ms.topic: tutorial
 ---
@@ -32,17 +32,17 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
     - Get up and running quickly with Cloud Discovery by integrating with [Microsoft Defender for Endpoint](mde-integration.md). This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 and Windows 11 devices, on and off your network.
 
-    - For coverage on all devices connected to your network, it's important to deploy the [Cloud App Security log collector](discovery-docker.md) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
+    - For coverage on all devices connected to your network, it's important to deploy the [Defender for Cloud Apps log collector](discovery-docker.md) on your firewalls and other proxies to collect data from your endpoints and send it to Defender for Cloud Apps for analysis.
 
-    - Integrate Cloud App Security with your proxy. Cloud App Security natively integrates with some third-party proxies, including [Zscaler](zscaler-integration.md).
+    - Integrate Defender for Cloud Apps with your proxy. Defender for Cloud Apps natively integrates with some third-party proxies, including [Zscaler](zscaler-integration.md).
 
 Because policies are different across user groups, regions and business groups, you might want to create a dedicated Shadow IT report for each of these units. For more information, see [Docker on Windows on-premises](discovery-docker-windows.md#continuous-reports).
 
 Now that Cloud Discovery is running on your network, look at the continuous reports that are generated and look at the [Cloud Discovery dashboard](working-with-cloud-discovery-data.md) to get a full picture of what apps are being used in your organization. It's a good idea to look at them by category, because you will often find that non-sanctioned apps are being used for legitimate work-related purposes that were not addressed by a sanctioned app.
 
-1. **Identify the risk levels of your apps**: Use the Cloud App Security cloud app catalog to dive deeper into the risks that are involved with each discovered app. Cloud App Security's risk catalog includes over 16,000 apps that are assessed using over 80 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
+1. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud Apps risk catalog includes over 16,000 apps that are assessed using over 80 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
 
-    - In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
+    - In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
 
     - You can drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's security risk factors.
 
@@ -50,7 +50,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 1. **Evaluate compliance**: Check whether the apps are certified as compliant with your organization's standards, such as HIPAA, SOC2, GDPR.
 
-    - In the Cloud App Security portal, under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the compliance risk factors you are concerned about. For example, use the suggested query to filter out non-compliant apps.
+    - In the Defender for Cloud Apps portal, under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the compliance risk factors you are concerned about. For example, use the suggested query to filter out non-compliant apps.
 
     - You can drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
 
@@ -59,7 +59,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 1. **Analyze usage**: Now that you know whether or not you want the app to be used in your organization, you want to investigate how and who is using it. If it's only used in a limited way in your organization maybe it's ok, but maybe if the use is growing you want to be notified about it so you can decide if you want to block the app.
 
-    - In the Cloud App Security portal, under **Discover**, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The **Use** tab lets you know how many active users are using the app and how much traffic it's generating. This can already give you a pretty good picture of what's happening with the app. Then, if you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**. This important step can give you pertinent information, for example, if you discover that all the users of a specific app are from the Marketing department, it's possible that there's a business need for this app, and if it's risky you should talk to them about an alternative before blocking it.
+    - In the Defender for Cloud Apps portal, under **Discover**, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The **Use** tab lets you know how many active users are using the app and how much traffic it's generating. This can already give you a pretty good picture of what's happening with the app. Then, if you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**. This important step can give you pertinent information, for example, if you discover that all the users of a specific app are from the Marketing department, it's possible that there's a business need for this app, and if it's risky you should talk to them about an alternative before blocking it.
 
     - Dive even deeper when investigating use of discovered apps. View subdomains and resources to learn about specific activities, data access, and resource usage in your cloud services. For more information, see [Deep dive into Discovered apps](discovered-apps.md#deep-dive-into-discovered-apps) and [Discover resources and custom apps](discovered-apps.md#discover-resources-and-custom-apps).
 
@@ -67,9 +67,9 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 ### Phase 3: Manage your apps
 
-- **Manage cloud apps**: Cloud App Security helps you with the process for managing app use in your organization. After you identified the different patterns and behaviors used in your organization, you can create new custom app tags in order to classify each app according to its business status or justification. These tags can be then used for specific monitoring purposes, for example, identify high traffic that is going to apps that are tagged as risky cloud storage apps. App tags can be managed under **Cloud Discovery settings** > **App tags**. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
+- **Manage cloud apps**: Defender for Cloud Apps helps you with the process for managing app use in your organization. After you identified the different patterns and behaviors used in your organization, you can create new custom app tags in order to classify each app according to its business status or justification. These tags can be then used for specific monitoring purposes, for example, identify high traffic that is going to apps that are tagged as risky cloud storage apps. App tags can be managed under **Cloud Discovery settings** > **App tags**. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
 
-- **Manage discovered apps using Azure Active Directory (Azure AD) Gallery**<a name ="gallery-apps"></a>: Cloud App Security also leverages its native integration with Azure AD to enable you to manage your discovered apps in Azure AD Gallery. For apps that already appear in the Azure AD Gallery, you can apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+- **Manage discovered apps using Azure Active Directory (Azure AD) Gallery**<a name ="gallery-apps"></a>: Defender for Cloud Apps also leverages its native integration with Azure AD to enable you to manage your discovered apps in Azure AD Gallery. For apps that already appear in the Azure AD Gallery, you can apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
 
     ![manage app in azure ad gallery.](media/manage-app-in-azure-ad-gallery.png)
 
@@ -81,7 +81,7 @@ Look at the alerts page and use the **Policy type** filter to look at app discov
 
 ### Phase 4: Advanced Shadow IT discovery reporting
 
-In addition to the reporting options available in Cloud App Security, you can integrate Cloud Discovery logs into Azure Sentinel for further investigation and analysis. Once the data is in Azure Sentinel, you can view it in dashboards, run queries using Kusto query language, export queries to Microsoft Power BI, integrate with other sources, and create custom alerts. For more information, see [Azure Sentinel integration](siem-sentinel.md).
+In addition to the reporting options available in Defender for Cloud Apps, you can integrate Cloud Discovery logs into Microsoft Sentinel for further investigation and analysis. Once the data is in Microsoft Sentinel, you can view it in dashboards, run queries using Kusto query language, export queries to Microsoft Power BI, integrate with other sources, and create custom alerts. For more information, see [Microsoft Sentinel integration](siem-sentinel.md).
 
 ### Phase 5: Control sanctioned apps
 
@@ -100,4 +100,4 @@ The nature of cloud apps means that they are updated daily and new apps appear a
 
 ## Learn more
 
-- Try our interactive guide: [Discover and manage cloud app usage with Microsoft Cloud App Security](https://mslearn.cloudguides.com/guides/Discover%20and%20manage%20cloud%20app%20usage%20with%20Microsoft%20Cloud%20App%20Security)
+- Try our interactive guide: [Discover and manage cloud app usage with Microsoft Defender for Cloud Apps](https://mslearn.cloudguides.com/guides/Discover%20and%20manage%20cloud%20app%20usage%20with%20Microsoft%20Cloud%20App%20Security)

@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security gives you visibility into the accounts from your connected apps. After you connect Cloud App Security to an app using the App connector, Cloud App Security reads account information associated with connected apps. The Accounts page enables you to investigate those accounts, permissions, the groups they're members of, their aliases and the apps they're using. Additionally, when Cloud App Security detects a new account that wasn't previously seen in one of the connected apps - for example in activities or in file sharing - the account is added to the accounts list of that app. This enables you to have visibility into the activity of external users interacting with your cloud apps.
+Microsoft Defender for Cloud Apps gives you visibility into the accounts from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps reads account information associated with connected apps. The Accounts page enables you to investigate those accounts, permissions, the groups they're members of, their aliases and the apps they're using. Additionally, when Defender for Cloud Apps detects a new account that wasn't previously seen in one of the connected apps - for example in activities or in file sharing - the account is added to the accounts list of that app. This enables you to have visibility into the activity of external users interacting with your cloud apps.
 
 Admins can search for a specific user's metadata or user's activity. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
@@ -38,7 +38,7 @@ Following is a list of the account filters that can be applied. Most filters sup
 
 * **App**: You can filter for any API connected app being used by accounts in your organization.
 * **Domain**: Enables you to filter for users in specific domains.
-* **Groups**: Enables you to filter for members of user groups in Cloud App Security - both built-in user groups and imported user groups.
+* **Groups**: Enables you to filter for members of user groups in Defender for Cloud Apps - both built-in user groups and imported user groups.
 * **Instance**: Enables you to filter for members of a specific app instance.
 * **Last seen**: The **last seen** filter enables you to find accounts that are dormant and whose users haven't performed any activities in a while.
 * **Organization**: Enables you to filter for members of specific organizational groups defined in your connected apps.

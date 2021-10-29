@@ -1,6 +1,6 @@
 ---
 title: Manage cloud platform security used by your organization tutorial
-description: This tutorial describes how to use Microsoft Cloud App Security to secure your Azure, AWS, and GCP cloud platforms.
+description: This tutorial describes how to use Microsoft Defender for Cloud Apps to secure your Azure, AWS, and GCP cloud platforms.
 ms.date: 02/24/2021
 ms.topic: tutorial
 ---
@@ -16,7 +16,7 @@ Remote work often leads to extensive use of cloud apps and cloud platforms for c
 
 Having the appropriate security tools in place to protect resources that might have not been properly protected is critical. Organizations must gain visibility to their cloud resources posture, have discovery capabilities to learn about the actual usage of each platform, be able to monitor suspicious activities, assess, and review configurations and compliance statuses, and be enabled to deploy real-time protection mechanisms.
 
-Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Cloud App Security product.
+Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Defender for Cloud Apps product.
 
 ## Protecting multiple clouds from a single management portal
 
@@ -24,7 +24,7 @@ The modern complexity of organizations, many of whom use several cloud platforms
 
 Organizational security posture encompasses all cloud platforms in an organization and this new functionality is designed for use by security architects, central security admins, or compliance analysts. From this feature, admins can review subscriptions with non-compliant resources and drive remediation of each by the resource owner.
 
-In this tutorial, you'll learn how to use Cloud App Security to secure your Azure, AWS, and GCP cloud platforms:
+In this tutorial, you'll learn how to use Defender for Cloud Apps to secure your Azure, AWS, and GCP cloud platforms:
 
 > [!div class="checklist"]
 >
@@ -39,7 +39,7 @@ To avoid critical cloud platform misconfigurations, it is important for organiza
 
 ### Phase 1: Discover multi-cloud resources, usage, and Shadow IT
 
-**Identify security posture**: Start by identifying your organization's cloud security posture by running Cloud Discovery to see what's happening in your network and evaluate the actual resource usage in your cloud platforms. You can achieve this by [setting up Cloud Discovery](set-up-cloud-discovery.md) to monitor and analyze your network traffic  in Cloud App Security. Web traffic logs analysis with Cloud App Security's Shadow IT discovery  provide improved visibility over your Shadow IT usage of cloud resources, identifying anomalous activities using either the Machine Learning anomaly detection engine or by using custom policies that you define:
+**Identify security posture**: Start by identifying your organization's cloud security posture by running Cloud Discovery to see what's happening in your network and evaluate the actual resource usage in your cloud platforms. You can achieve this by [setting up Cloud Discovery](set-up-cloud-discovery.md) to monitor and analyze your network traffic  in Defender for Cloud Apps. Web traffic logs analysis with the Defender for Cloud Apps Shadow IT discovery  provide improved visibility over your Shadow IT usage of cloud resources, identifying anomalous activities using either the Machine Learning anomaly detection engine or by using custom policies that you define:
 
 - **Discover**: Discover usage across your organization's resource-hosting cloud platforms. For example, evaluate the actual volume of data that was downloaded from your storage resources and identify suspicious resource use that may indicate attempts at data exfiltration. Similarly, identify suspicious upload activities that may indicate an attempt to compromise your environment by injecting malicious code onto a target.
 - **Investigate**: Use the **Discovered resources** page to view access to data across resources including storage accounts, infrastructure, and custom apps hosted on Azure, AWS, and GCP. Ask questions such as: Was there a suspicious number of transactions in accessing a specific resource?
@@ -78,7 +78,7 @@ Cloud architects or compliance analysts can evaluate configuration gaps for each
 - Subscription to differentiate between production from non-production environments
 - Severity to identify high-severity recommendations that often have different SLA and processes relative to low-severity recommendations
 
-For Azure security configuration recommendations, we surface recommendations of the entire Azure tenant and all its subscriptions based on Azure Security Center best practices. Selecting a recommendation redirects you to the recommendation page in Azure Security Center, where you can see additional details about the recommendation and use it to drive remediation by the subscription owner. Some recommendations have **Quick Fix** options to remediate the issue. For more information about Azure security recommendations, see [Security configuration for Azure](security-config-azure.md).
+For Azure security configuration recommendations, we surface recommendations of the entire Azure tenant and all its subscriptions based on Microsoft Defender for Cloud best practices. Selecting a recommendation redirects you to the recommendation page in Microsoft Defender for Cloud, where you can see additional details about the recommendation and use it to drive remediation by the subscription owner. Some recommendations have **Quick Fix** options to remediate the issue. For more information about Azure security recommendations, see [Security configuration for Azure](security-config-azure.md).
 
 ![View Azure recommendations.](media/tutorial-cloud-platform-security-view-azure-recommendations.png)
 

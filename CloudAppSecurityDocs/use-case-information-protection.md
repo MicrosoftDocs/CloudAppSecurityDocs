@@ -1,6 +1,6 @@
 ---
 title: Automatically apply Azure Information Protection classification labels tutorial
-description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Cloud App Security.
+description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Defender for Cloud Apps.
 ms.date: 02/24/2021
 ms.topic: tutorial
 ---
@@ -8,7 +8,7 @@ ms.topic: tutorial
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Cloud App Security helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
+In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Defender for Cloud Apps helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying an Azure Information Protection label is one of a long list of available [governance actions](governance-actions.md).
 
 In this tutorial, you'll learn how to identify which public permissions are set on a document that's saved in your cloud storage, so you are alerted when a breach occurs. In addition, you can automatically apply your Azure Information Protection **Confidential** classification label to provide added encryption to files.
 
@@ -19,9 +19,9 @@ In this tutorial, you'll learn how to identify which public permissions are set 
 
 ## Enhanced data-level encryption protection
 
-Cloud App Security integration with Azure Information Protection enables an added level of protection by automatically encrypting files. When Azure Information Protection encrypts files, applications that support Azure Information Protection like Office 365, know how to open the files and honors permissions set in the classification labels. Use labels to apply specific protection rules. For example, set a file that can be opened but not shared, printed, forwarded, or edited.
+Defender for Cloud Apps integration with Azure Information Protection enables an added level of protection by automatically encrypting files. When Azure Information Protection encrypts files, applications that support Azure Information Protection like Office 365, know how to open the files and honors permissions set in the classification labels. Use labels to apply specific protection rules. For example, set a file that can be opened but not shared, printed, forwarded, or edited.
 
-This strong level of protection travels with the file. The file is still protected if you send the file, copy it, or store it in your online storage app. If one of your employees loses a thumb drive with the file on it, the file will be locked. Should someone try to open the file, the file owner will receive an alert. With Cloud App Security, you can apply protection automatically. For example, set all files that have credit card numbers, or were uploaded by the finance department and are shared externally, to be automatically protected with a classification label.
+This strong level of protection travels with the file. The file is still protected if you send the file, copy it, or store it in your online storage app. If one of your employees loses a thumb drive with the file on it, the file will be locked. Should someone try to open the file, the file owner will receive an alert. With Defender for Cloud Apps, you can apply protection automatically. For example, set all files that have credit card numbers, or were uploaded by the finance department and are shared externally, to be automatically protected with a classification label.
 
 ## The threat
 
@@ -29,12 +29,12 @@ A user in your organization saves confidential customer information files to Box
 
 ## The solution
 
-Use Cloud App Security with Azure Information Protection to embed classification and protection information for persistent protection that follows your data — so it stays protected no matter where it's stored or who it's shared with. This protection enables you to share data safely with coworkers, customers, and partners. Define who can access data and what they can do with it. For instance, allow users to view and edit files but not print or forward. You can also add other [governance actions](governance-actions.md) supported by Cloud App Security to the files such as remove collaborators and remove sharing abilities.
+Use Defender for Cloud Apps with Azure Information Protection to embed classification and protection information for persistent protection that follows your data — so it stays protected no matter where it's stored or who it's shared with. This protection enables you to share data safely with coworkers, customers, and partners. Define who can access data and what they can do with it. For instance, allow users to view and edit files but not print or forward. You can also add other [governance actions](governance-actions.md) supported by Defender for Cloud Apps to the files such as remove collaborators and remove sharing abilities.
 
 ## Prerequisites
 
-- [Enable Cloud App Security and Azure Information Protection](azip-integration.md) for your tenant.
-- [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Cloud App Security.
+- [Enable Defender for Cloud Apps and Azure Information Protection](azip-integration.md) for your tenant.
+- [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Defender for Cloud Apps.
 
 ## Set up data protection
 
@@ -55,7 +55,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
     1. Under **Governance**, open the **Box** section and select **Apply classification label**. Select the label you want to apply.
 
-    1. Because [Cloud App Security is integrated with Azure Information Protection](azip-integration.md), you can select from your existing list of classification labels to be used to protect the data.
+    1. Because [Defender for Cloud Apps is integrated with Azure Information Protection](azip-integration.md), you can select from your existing list of classification labels to be used to protect the data.
 
     1. Click **Create**.
 
@@ -75,8 +75,8 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
 >[!NOTE]
 >
-> - Cloud App Security currently supports automatic application of Azure Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
-> - When a document is labeled by using Cloud App Security, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/azure/information-protection/configure-policy-markings#when-visual-markings-are-applied).
+> - Defender for Cloud Apps currently supports automatic application of Azure Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
+> - When a document is labeled by using Defender for Cloud Apps, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/azure/information-protection/configure-policy-markings#when-visual-markings-are-applied).
 
 ## Next steps
 

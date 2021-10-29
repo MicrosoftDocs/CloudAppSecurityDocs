@@ -1,6 +1,6 @@
 ---
-title: Working with the Cloud App Security dashboard
-description: This article provides a foundation for how to use the Cloud App Security dashboard.
+title: Working with the Defender for Cloud Apps dashboard
+description: This article provides a foundation for how to use the Defender for Cloud Apps dashboard.
 ms.date: 05/06/2020
 ms.topic: conceptual
 ---
@@ -8,13 +8,13 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes what you should do with Cloud App Security daily.  
+This article describes what you should do with Defender for Cloud Apps daily.  
 
 ## Check the dashboard
 
 The information presented in the dashboard is an overview of all the most important information about your organization. Each information card provides links to a deeper investigation of the information presented. You can also choose to view the dashboard information for a specific app using the filter provided.
 
-![Cloud App Security dashboard.](media/dashboard-enhanced.png)
+![Defender for Cloud Apps dashboard.](media/dashboard-enhanced.png)
 
 ### What can you expect to see in the dashboard?
 

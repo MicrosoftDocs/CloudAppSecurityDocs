@@ -1,6 +1,6 @@
 ---
 title: Close true positive - Alerts API
-description: This article describes the bulk close an alert as true positive request in Cloud App Security's Alerts API.
+description: This article describes the bulk close an alert as true positive request in the Defender for Cloud Apps Alerts API.
 ms.date: 10/20/2020
 ms.topic: reference
 ---

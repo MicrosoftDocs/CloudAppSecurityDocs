@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your Amazon Web Services environment
-description: This article provides information about the benefits of connecting your AWS app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your Amazon Web Services environment
+description: This article provides information about the benefits of connecting your AWS app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 09/15/2020
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Amazon Web Services (AWS) environment
+# How Defender for Cloud Apps helps protect your Amazon Web Services (AWS) environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Amazon Web Services is an IaaS provider that enables your organization to host and manage their entire workloads in the cloud. Along with the benefits of leveraging infrastructure in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include storage instances with potentially sensitive information, compute resources that operate some of your most critical applications, ports, and virtual private networks that enable access to your organization.
 
-Connecting AWS to Cloud App Security helps you secure your assets and detect potential threats by monitoring administrative and sign-in activities, notifying on possible brute force attacks, malicious use of a privileged user account, unusual deletions of VMs, and publicly exposed storage buckets.
+Connecting AWS to Defender for Cloud Apps helps you secure your assets and detect potential threats by monitoring administrative and sign-in activities, notifying on possible brute force attacks, malicious use of a privileged user account, unusual deletions of VMs, and publicly exposed storage buckets.
 
 ## Main threats
 
@@ -19,7 +19,7 @@ Connecting AWS to Cloud App Security helps you secure your assets and detect pot
 - Data leakage
 - Resource misconfiguration and insufficient access control
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
@@ -52,7 +52,7 @@ For more information about remediating threats from apps, see [Governing connect
 
 ## Security Recommendations
 
-Cloud App Security provides an overview of your AWS platform configuration compliance for all your AWS accounts based on the Center for Internet Security (CIS) benchmark for AWS.
+Defender for Cloud Apps provides an overview of your AWS platform configuration compliance for all your AWS accounts based on the Center for Internet Security (CIS) benchmark for AWS.
 
 You should continuously review the security recommendations to assess and evaluate the current status of your platform's security posture and identify important configuration gaps. Then, you should create a plan to mitigate the issues in your AWS platform.
 
@@ -65,4 +65,4 @@ Review our best practices for [blocking and protecting the download of sensitive
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect AWS to Microsoft Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md)
+> [How to connect AWS to Microsoft Defender for Cloud Apps](connect-aws-to-microsoft-cloud-app-security.md)

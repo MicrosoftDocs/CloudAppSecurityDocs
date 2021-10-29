@@ -1,6 +1,6 @@
 ---
-title: How to use governance actions in Cloud App Security
-description: This article provides information about the governance actions you can take in Cloud App Security to control your organization's cloud app use.
+title: How to use governance actions in Defender for Cloud Apps
+description: This article provides information about the governance actions you can take in Defender for Cloud Apps to control your organization's cloud app use.
 ms.date: 12/10/2018
 ms.topic: how-to
 ---
@@ -14,7 +14,7 @@ You can apply governance actions to users' files across your cloud environment. 
 
 After you take a look at your open alerts, go to the Policy center to review policy violations that didn't trigger alerts.
 
-- In the Cloud App Security dashboard, click **Control** and then **Policies**.
+- In the Defender for Cloud Apps dashboard, click **Control** and then **Policies**.
 
 - Select a specific policy to see the **Matching now** list of policy matches that didn't trigger alerts.
 
@@ -61,7 +61,7 @@ Because remediation actions use the cloud provider APIs, actions might vary from
 
 ## Migration
 
-Cloud App Security helps you roll out your migrations by letting you know who in your organization is using which apps and giving you the tools to monitor new app adoption. It can also help you figure out which types of apps you should offer in your organization, by giving you the tools to see what everyone is already using.
+Defender for Cloud Apps helps you roll out your migrations by letting you know who in your organization is using which apps and giving you the tools to monitor new app adoption. It can also help you figure out which types of apps you should offer in your organization, by giving you the tools to see what everyone is already using.
 
 ### Migrate your users to a new app
 
@@ -77,7 +77,7 @@ Imagine this scenario: you recently bought Office 365, and you want all the user
 
 ### Find more secure alternatives
 
-The Cloud App Security service catalog can help you find alternatives that work for your organization, instead of risky apps that your users might be using.
+The Defender for Cloud Apps service catalog can help you find alternatives that work for your organization, instead of risky apps that your users might be using.
 
 Imagine this scenario: you're considering buying a productivity tool, and you aren't sure if your users would make use of it.
 

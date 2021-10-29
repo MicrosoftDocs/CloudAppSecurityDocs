@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 25,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+Cloud Discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 25,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
 ## Snapshot and continuous risk assessment reports
 
@@ -16,17 +16,17 @@ You can generate the following types of reports:
 
 - **Snapshot reports** - Provides ad-hoc visibility on a set on traffic logs you manually upload from your firewalls and proxies.
 
-- **Continuous reports** - Analyze all logs that are forwarded from your network using Cloud App Security. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define. These reports can be created by connecting in the following ways:
+- **Continuous reports** - Analyze all logs that are forwarded from your network using Defender for Cloud Apps. They provide improved visibility over all data, and automatically identify anomalous use using either the Machine Learning anomaly detection engine or by using custom policies that you define. These reports can be created by connecting in the following ways:
 
-  - [**Microsoft Defender for Endpoint integration**](mde-integration.md): Cloud App Security integrates with Defender for Endpoint natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
+  - [**Microsoft Defender for Endpoint integration**](mde-integration.md): Defender for Cloud Apps integrates with Defender for Endpoint natively, to simplify rollout of Cloud Discovery, extend Cloud Discovery capabilities beyond your corporate network, and enable machine-based investigation.
   - [**Log collector**](discovery-docker.md): Log collectors enable you to easily automate log upload from your network. The log collector runs on your network and receives logs over Syslog or FTP.
-  - **Secure Web Gateway (SWG)**: If you work with both Cloud App Security and one of the following SWGs, you can integrate the products to enhance your security Cloud Discovery experience. Together, Cloud App Security and SWGs provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the SWG's portal.
+  - **Secure Web Gateway (SWG)**: If you work with both Defender for Cloud Apps and one of the following SWGs, you can integrate the products to enhance your security Cloud Discovery experience. Together, Defender for Cloud Apps and SWGs provide seamless deployment of Cloud Discovery, automatic blocking of unsanctioned apps, and risk assessment directly in the SWG's portal.
     - [Zscaler integration](zscaler-integration.md)
     - [iboss integration](iboss-integration.md)
     - [Corrata integration](corrata-integration.md)
     - [Menlo Security integration](menlo-integration.md)
 
-- **[Cloud Discovery API](api-discovery.md)** – Use Cloud App Security's Cloud Discovery API to automate traffic log upload and get automated Cloud Discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
+- **[Cloud Discovery API](api-discovery.md)** – Use the Defender for Cloud Apps Cloud Discovery API to automate traffic log upload and get automated Cloud Discovery report and risk assessment. You can also use the API to [generate block scripts](api-discovery-script.md) and streamline app controls directly to your network appliance.
 
 ## Log process flow: From raw data to risk assessment
 
@@ -34,7 +34,7 @@ The process of generating a risk assessment consists of the following steps. The
 
 - **Upload** – Web traffic logs from your network are uploaded to the portal.
 
-- **Parse** – Cloud App Security parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.
+- **Parse** – Defender for Cloud Apps parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.
 
 - **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 25,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.
 
@@ -84,7 +84,7 @@ The process of generating a risk assessment consists of the following steps. The
 > [!NOTE]
 > Cloud Discovery supports both IPv4 and IPv6 addresses.
 
-If your log isn't supported, or if you're using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Cloud App Security cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
+If your log isn't supported, or if you're using a newly released log format from one of the supported data sources and the upload is failing, select **Other** as the **Data source** and specify the appliance and log you're trying to upload. Your log will be reviewed by the Defender for Cloud Apps cloud analyst team and you'll be notified if support for your log type is added. Alternatively, you can define a custom parser that matches your format. For more information, see [Use a custom log parser](custom-log-parser.md).
 
 > [!NOTE]
 > The following list of supported appliances may not work with newly released log formats. If you are using a newly released format and the upload is failing, [use a custom log parser](custom-log-parser.md) and if required, open a support case.

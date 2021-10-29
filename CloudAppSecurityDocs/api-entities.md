@@ -1,5 +1,5 @@
 ---
-title: Cloud App Security Entities API
+title: Defender for Cloud Apps Entities API
 description: This article provides information about using the Entities API.
 ms.date: 03/27/2020
 ms.topic: reference

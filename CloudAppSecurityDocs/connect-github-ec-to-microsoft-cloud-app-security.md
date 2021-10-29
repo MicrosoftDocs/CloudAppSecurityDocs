@@ -1,26 +1,26 @@
 ---
-title: Connect GitHub Enterprise Cloud to Cloud App Security
-description: This article provides information about how to connect your GitHub Enterprise Cloud app to Cloud App Security using the API connector  for visibility and control over use.
+title: Connect GitHub Enterprise Cloud to Defender for Cloud Apps
+description: This article provides information about how to connect your GitHub Enterprise Cloud app to Defender for Cloud Apps using the API connector  for visibility and control over use.
 ms.date: 11/10/2020
 ms.topic: how-to
 ---
-# Connect GitHub Enterprise Cloud to Microsoft Cloud App Security
+# Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Cloud App Security to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use. For more information about how Cloud App Security protects GitHub Enterprise Cloud, see [Protect GitHub Enterprise](protect-github.md).
+This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use. For more information about how Defender for Cloud Apps protects GitHub Enterprise Cloud, see [Protect GitHub Enterprise](protect-github.md).
 
 ## Prerequisites
 
 - Your organization must have a GitHub Enterprise Cloud license.
-- The GitHub account used for connecting to Cloud App Security must have *Owner* permissions for your organization.
+- The GitHub account used for connecting to Defender for Cloud Apps must have *Owner* permissions for your organization.
 - To verify owners of your organization, browse to your organization's page, select **People**, and then filter by *Owner*.
 
-## How to connect GitHub Enterprise Cloud to Cloud App Security
+## How to connect GitHub Enterprise Cloud to Defender for Cloud Apps
 
 ### Verify your GitHub domains
 
-Verifying your domains is optional. However, we highly recommend that you do verify your domains so that Cloud App Security can match the domain emails of your GitHub organization's members to their corresponding Azure Active Directory user.
+Verifying your domains is optional. However, we highly recommend that you do verify your domains so that Defender for Cloud Apps can match the domain emails of your GitHub organization's members to their corresponding Azure Active Directory user.
 
 These steps can be completed independently of the [Configure GitHub Enterprise Cloud](#configure-github-enterprise-cloud) steps and can skipped if you have already verified your domains.
 
@@ -28,7 +28,7 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 1. Verify [your organization's domains](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/verifying-your-organizations-domain).
 
     > [!NOTE]
-    > Make sure to verify each of the managed domains listed in your Cloud App Security portal. To view your managed domains, in Cloud App Security, browse to **Settings** > **Organization details** > **Managed domains**.
+    > Make sure to verify each of the managed domains listed in your Defender for Cloud Apps portal. To view your managed domains, in Defender for Cloud Apps, browse to **Settings** > **Organization details** > **Managed domains**.
 
 ### Configure GitHub Enterprise Cloud
 
@@ -40,7 +40,7 @@ In GitHub, browse to your organization's page, and from the URL, make a note of 
 
     ![Screenshot showing obtaining organization login name.](media/connect-github-org-login-name.png)
 
-1. **Create an OAuth App for Cloud App Security to connect your GitHub organization.**  
+1. **Create an OAuth App for Defender for Cloud Apps to connect your GitHub organization.**  
 Repeat this step for each additional connected organization.
 
     1. Browse to **Settings** > **Developer settings**, select  **OAuth Apps**, and then click **Register an application**. Alternatively, if you have existing OAuth apps, click **New OAuth App**.
@@ -66,7 +66,7 @@ Repeat this step for each additional connected organization.
 
     ![Screenshot showing details of an oauth app.](media/connect-github-oauth-app-details.png)
 
-### Configure Cloud App Security
+### Configure Defender for Cloud Apps
 
 1. In the C[loud App Security portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
 
@@ -76,12 +76,12 @@ Repeat this step for each additional connected organization.
 
     ![Screenshot showing connect github api.](media/connect-github-connect-app.png)
 
-    The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Cloud App Security access to your team's GitHub Enterprise Cloud instance.
+    The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
-1. Authorize the app to give Cloud App Security to access your GitHub organization.
+1. Authorize the app to give Defender for Cloud Apps to access your GitHub organization.
 
     > [!NOTE]
-    > Cloud App Security requires the following OAuth scopes:
+    > Defender for Cloud Apps requires the following OAuth scopes:
     >
     > - **admin:org** - required for synchronizing your organization's audit log
     > - **read:user** and **user:email** - required for synchronizing your organization's members
@@ -90,7 +90,7 @@ Repeat this step for each additional connected organization.
 
     ![Screenshot showing authorize github oauth.](media/connect-github-authorize-app.png)
 
-1. Back in the Cloud App Security console, you should receive a message that GitHub was successfully connected.
+1. Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
 
 1. Make sure the connection succeeded by clicking **Test API**.
 

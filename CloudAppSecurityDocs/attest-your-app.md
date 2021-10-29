@@ -1,6 +1,6 @@
 ---
 title: Attest your apps 
-description: This article provides instructions for attesting your apps in Cloud App Security.
+description: This article provides instructions for attesting your apps in Defender for Cloud Apps.
 ms.date: 01/30/2020
 ms.topic: conceptual
 ---
@@ -8,7 +8,7 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our Cloud App Catalog are up to date.
+Microsoft Defender for Cloud Apps enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our Cloud App Catalog are up to date.
 
 Whether your app is already listed in the Cloud App Catalog, or it's new, submit a [self-attestation questionnaire](https://go.microsoft.com/fwlink/?linkid=2106624). For details on the self-attestation process, contact casfeedback@microsoft.com.
 

@@ -1,16 +1,16 @@
 ---
-title: Cloud App Security REST API
-description: This article describes how to interact with Cloud App Security over HTTPS.
+title: Defender for Cloud Apps REST API
+description: This article describes how to interact with Defender for Cloud Apps over HTTPS.
 ms.date: 03/27/2020
 ms.topic: reference
 ---
-# Cloud App Security REST API
+# Defender for Cloud Apps REST API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes how to interact with Cloud App Security over HTTPS.
+This article describes how to interact with Defender for Cloud Apps over HTTPS.
 
-The Microsoft Cloud App Security API provides programmatic access to Cloud App Security through REST API endpoints. Applications can use the API to perform read and update operations on Cloud App Security data and objects. For example, the Cloud App Security API supports the following common operations for a user object:
+The Microsoft Defender for Cloud Apps API provides programmatic access to Defender for Cloud Apps through REST API endpoints. Applications can use the API to perform read and update operations on Defender for Cloud Apps data and objects. For example, the Defender for Cloud Apps API supports the following common operations for a user object:
 
 - Upload log files for Cloud Discovery
 - Generate block scripts
@@ -19,15 +19,15 @@ The Microsoft Cloud App Security API provides programmatic access to Cloud App S
 
 ## API URL structure
 
-To use the Cloud App Security API, you must first obtain the API URL from your tenant. The API URL uses the following format: `https://<portal_url>/api/<endpoint>`.
+To use the Defender for Cloud Apps API, you must first obtain the API URL from your tenant. The API URL uses the following format: `https://<portal_url>/api/<endpoint>`.
 
-To obtain the Cloud App Security portal URL for your tenant, do the following steps:
+To obtain the Defender for Cloud Apps portal URL for your tenant, do the following steps:
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the **question mark icon** in the menu bar. Then, select **About**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click the **question mark icon** in the menu bar. Then, select **About**.
 
     ![click About.](media/about-menu.png)
 
-1. In the Cloud App Security about screen, you can see the portal url.
+1. In the Defender for Cloud Apps about screen, you can see the portal url.
 
     ![View your data center.](media/api-url.png)
 
@@ -35,7 +35,7 @@ Once you have the portal url, add the `/api` suffix to it to obtain your API URL
 
 ## API tokens
 
-Cloud App Security requires an API token in the header of all API requests to the server, such as the following:
+Defender for Cloud Apps requires an API token in the header of all API requests to the server, such as the following:
 
 ```http
 Authorization: Token <your_token_key>
@@ -79,7 +79,7 @@ The following table describes the supported field types:
 
 ### Timestamps
 
-Mentions of timestamps in the Cloud App Security API refer to the Unix timestamp in milliseconds. This timestamp is determined by the number of milliseconds since 1970-01-01 0:00:00. You can use the [get-date](/powershell/module/microsoft.powershell.utility/get-date) PowerShell cmdlet to convert dates to timestamps.
+Mentions of timestamps in the Defender for Cloud Apps API refer to the Unix timestamp in milliseconds. This timestamp is determined by the number of milliseconds since 1970-01-01 0:00:00. You can use the [get-date](/powershell/module/microsoft.powershell.utility/get-date) PowerShell cmdlet to convert dates to timestamps.
 
 ## Limits
 

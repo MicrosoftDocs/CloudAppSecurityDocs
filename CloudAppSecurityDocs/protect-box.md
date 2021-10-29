@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your Box environment
-description: This article provides information about the benefits of connecting your Box app to Cloud App Security using the API connector for visibility and control over use.
+title: How Defender for Cloud Apps helps protect your Box environment
+description: This article provides information about the benefits of connecting your Box app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/04/2019
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Box environment
+# How Defender for Cloud Apps helps protect your Box environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a cloud file storage and collaboration tool, Box enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Box may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees.
 
-Connecting Box to Cloud App Security gives you improved insights into your users' activities, provide threat detection using machine learning based anomaly detections, information protection detections such as detecting external information sharing, and enabling automated remediation controls.
+Connecting Box to Defender for Cloud Apps gives you improved insights into your users' activities, provide threat detection using machine learning based anomaly detections, information protection detections such as detecting external information sharing, and enabling automated remediation controls.
 
 ## Main threats
 
@@ -21,7 +21,7 @@ Connecting Box to Cloud App Security gives you improved insights into your users
 - Ransomware
 - Unmanaged bring your own device (BYOD)
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
@@ -59,4 +59,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect Box to Microsoft Cloud App Security](connect-box-to-microsoft-cloud-app-security.md)
+> [How to connect Box to Microsoft Defender for Cloud Apps](connect-box-to-microsoft-cloud-app-security.md)

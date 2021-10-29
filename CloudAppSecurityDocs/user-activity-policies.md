@@ -1,5 +1,5 @@
 ---
-title: Create policies to control activities in Cloud App Security
+title: Create policies to control activities in Defender for Cloud Apps
 description: This article provides instructions for creating and working with activity policies.
 ms.date: 01/03/2021
 ms.topic: how-to

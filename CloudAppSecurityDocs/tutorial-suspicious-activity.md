@@ -1,6 +1,6 @@
 ---
 title: Detect suspicious user activity with behavioral analytics (UEBA) tutorial
-description: This tutorial describes the process for tuning user activity detections in Microsoft Cloud App Security.
+description: This tutorial describes the process for tuning user activity detections in Microsoft Defender for Cloud Apps.
 ms.date: 02/24/2021
 ms.topic: tutorial
 ---
@@ -8,18 +8,18 @@ ms.topic: tutorial
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security provides best-of-class detections across the attack kill chain for compromised users, insider threats, exfiltration, ransomware, and more. Our comprehensive solution is achieved by combining multiple detection methods, including anomaly, behavioral analytics (UEBA), and rule-based activity detections, to provide a broad view of how your users use apps in your environment.
+Microsoft Defender for Cloud Apps provides best-of-class detections across the attack kill chain for compromised users, insider threats, exfiltration, ransomware, and more. Our comprehensive solution is achieved by combining multiple detection methods, including anomaly, behavioral analytics (UEBA), and rule-based activity detections, to provide a broad view of how your users use apps in your environment.
 
 So why is it important to detect suspicious behavior? The impact of a user able to alter your cloud environment can be significant and directly impact your ability to run your business. For instance, key corporate resources like the servers running your public website or service you're providing to customers can be compromised.
 
-Using data captured from several sources, Cloud App Security analyzes the data to extract app and user activities in your organization giving your security analysts visibility into cloud use. The collected data is correlated, standardized, and enriched with threat intelligence, location, and many other details to provide an accurate, consistent view of suspicious activities.
+Using data captured from several sources, Defender for Cloud Apps analyzes the data to extract app and user activities in your organization giving your security analysts visibility into cloud use. The collected data is correlated, standardized, and enriched with threat intelligence, location, and many other details to provide an accurate, consistent view of suspicious activities.
 
 Hence, to fully realize the benefits of these detections, first make sure you configure the following sources:
 
 - **[Activity log](activity-filters.md)**  
 Activities from your [API connected apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 - **[Discovery log](tutorial-shadow-it.md)**  
-Activities extracted from firewall and proxy traffic logs that are forwarded to Cloud App Security. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 80 risk factors.
+Activities extracted from firewall and proxy traffic logs that are forwarded to Defender for Cloud Apps. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 80 risk factors.
 - **[Proxy log](proxy-intro-aad.md)**  
 Activities from your [Conditional Access App Control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
 
@@ -46,17 +46,17 @@ Before configuring individual policies, it advisable to configure IP ranges so t
 
 Because IP address information is crucial for almost all investigations, [configuring known IP addresses](ip-tags.md) helps our machine learning algorithms identify known locations and consider them as part of the machine learning models. For example, adding the IP address range of your VPN will help the model to correctly classify this IP range and automatically exclude it from impossible travel detections because the VPN location doesn't represent the true location of that user.
 
-Note:  Configured IP ranges are not limited to detections and are used throughout Cloud App Security in areas such as activities in the activity log, conditional access, etc. Keep this in mind when configuring the ranges. So, for example, identifying your physical office IP addresses allows you to customize the way logs and alerts are displayed and investigated.
+Note:  Configured IP ranges are not limited to detections and are used throughout Defender for Cloud Apps in areas such as activities in the activity log, conditional access, etc. Keep this in mind when configuring the ranges. So, for example, identifying your physical office IP addresses allows you to customize the way logs and alerts are displayed and investigated.
 
 ### Review out-of-the-box anomaly detection alerts
 
-Cloud App Security includes a set of anomaly detection alerts to identify different security scenarios. These detections are automatically enabled out of the box and will start to profile user activity and generate alerts as soon as the relevant [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) are connected.
+Defender for Cloud Apps includes a set of anomaly detection alerts to identify different security scenarios. These detections are automatically enabled out of the box and will start to profile user activity and generate alerts as soon as the relevant [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) are connected.
 
 Start by familiarizing yourself with the [different detection policies](control-cloud-apps-with-policies.md), prioritize the top scenarios that you think are most relevant for your organization, and tune the policies accordingly.
 
 ## Phase 2: Tune anomaly detection policies
 
-Several built-in anomaly detection policies are available in Cloud App Security that are preconfigured for common security use cases. You should take some time to familiarize yourself with the more popular detections, such as:
+Several built-in anomaly detection policies are available in Defender for Cloud Apps that are preconfigured for common security use cases. You should take some time to familiarize yourself with the more popular detections, such as:
 
 - **Impossible travel**  
 Activities from the same user in different locations within a period that is shorter than the expected travel time between the two locations.
@@ -145,7 +145,7 @@ Use the following guidelines to configure your alerts:
 1. **Email/SMS**  
 Choose your delivery preference for receiving alerts. You can receive alerts by email, text message, or both.
 1. **SIEM**  
-There are several SIEM integration options including [Azure Sentinel](siem-sentinel.md), [Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft), and other [generic SIEMs](siem.md). Choose the integration that best meets your requirements.
+There are several SIEM integration options including [Microsoft Sentinel](siem-sentinel.md), [Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft), and other [generic SIEMs](siem.md). Choose the integration that best meets your requirements.
 1. **Power Automate automation**  
 Create the automation playbooks you require and set it as the policy's alert to Power Automate action.
 
@@ -159,4 +159,4 @@ To optimize your protection, you should consider setting up automatic remediatio
 
 ## Learn more
 
-- Try our interactive guide: [Detect threats and manage alerts with Microsoft Cloud App Security](https://mslearn.cloudguides.com/guides/Detect%20threats%20and%20manage%20alerts%20with%20Microsoft%20Cloud%20App%20Security)
+- Try our interactive guide: [Detect threats and manage alerts with Microsoft Defender for Cloud Apps](https://mslearn.cloudguides.com/guides/Detect%20threats%20and%20manage%20alerts%20with%20Microsoft%20Cloud%20App%20Security)

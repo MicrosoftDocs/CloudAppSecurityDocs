@@ -1,6 +1,6 @@
 ---
 title: Generate block script - Cloud Discovery API
-description: This article describes the discovery_block_scripts request in Cloud App Security's Cloud Discovery API.
+description: This article describes the discovery_block_scripts request in the Defender for Cloud Apps Cloud Discovery API.
 ms.date: 03/27/2020
 ms.topic: reference
 ---

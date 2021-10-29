@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Microsoft Cloud App Security documentation
-summary: Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
+title: Microsoft Defender for Cloud Apps documentation
+summary: Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
 
 metadata:
   title: Microsoft Cloud App Security documentation
@@ -21,11 +21,11 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Cloud App Security
+  - title: About Defender for Cloud Apps
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Cloud App Security?
+          - text: What is Defender for Cloud Apps?
             url: what-is-cloud-app-security.md
           - text: Top 20 CASB use cases
             url: https://go.microsoft.com/fwlink/p/?linkid=2099428
@@ -43,11 +43,11 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Get started with Cloud App Security
+          - text: Get started with Defender for Cloud Apps
             url: getting-started-with-cloud-app-security.md
       - linkListType: reference
         links:
-          - text: Using the Cloud App Security REST API
+          - text: Using the Defender for Cloud Apps REST API
             url: api-introduction.md
           - text: Investigate anomaly detection alerts
             url: investigate-anomaly-alerts.md
@@ -163,7 +163,7 @@ landingContent:
         links:
           - text: Read our e-books
             url: e-books.md
-          - text: Explore Microsoft 365, a complete solution that includes Cloud App Security
+          - text: Explore Microsoft 365, a complete solution that includes Defender for Cloud Apps
             url: /microsoft-365/
       - linkListType: video
         links:

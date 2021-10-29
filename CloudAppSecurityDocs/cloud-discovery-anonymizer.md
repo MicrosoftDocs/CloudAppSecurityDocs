@@ -1,5 +1,5 @@
 ---
-title: Anonymize user data in Cloud App Security
+title: Anonymize user data in Defender for Cloud Apps
 description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
 ms.date: 04/20/2020
 ms.topic: how-to
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Cloud App Security portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal's **Governance log**.
+Cloud Discovery data anonymization enables you to protect user privacy. Once the data log is uploaded to the Microsoft Defender for Cloud Apps portal, the log is sanitized and all username information is replaced with encrypted usernames. This way, all cloud activities are kept anonymous. When necessary, for a specific security investigation (for example, a security breach or suspicious user activity), admins can resolve the real username. If an admin has a reason to suspect a specific user, they can also look up the encrypted username of a known username, and then start investigating using the encrypted username. Each username conversion is audited in the portal's **Governance log**.
 
 Key points:
 
@@ -26,7 +26,7 @@ Key points:
     - You can set the data from an [automated upload for a new data source](discovery-docker.md) to be anonymized by selecting  **Anonymize private information** when you add the new data source.  
     ![Anonymize log data.](media/anonymize-autolog.png)
 
-    - You can set the default in Cloud App Security to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
+    - You can set the default in Defender for Cloud Apps to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
 
         1. Select **Settings** > **Cloud Discovery settings**.
 
@@ -35,8 +35,8 @@ Key points:
 
         ![Anonymization settings page.](media/anonymizer1.png)
 
-2. When anonymization is selected, Cloud App Security parses the traffic log and extracts specific data attributes.
-3. Cloud App Security replaces the username with an encrypted username.
+2. When anonymization is selected, Defender for Cloud Apps parses the traffic log and extracts specific data attributes.
+3. Defender for Cloud Apps replaces the username with an encrypted username.
 4. It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
 
     ![Anonymize Cloud Discovery dashboard.](media/anonymize-dashboard.png)

@@ -1,5 +1,5 @@
 ---
-title: Block downloads from unmanaged devices with Cloud App Security Conditional Access App Control tutorial
+title: Block downloads from unmanaged devices with Defender for Cloud Apps Conditional Access App Control tutorial
 description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
 ms.date: 02/24/2021
 ms.topic: tutorial
@@ -23,7 +23,7 @@ An account manager in your organization wants to check something in Salesforce f
 
 ## The solution
 
-Protect your organization by monitoring and controlling cloud app use with any IdP solution and Cloud App Security's Conditional Access App Control.
+Protect your organization by monitoring and controlling cloud app use with any IdP solution and the Defender for Cloud Apps Conditional Access App Control.
 
 ## Prerequisites
 
@@ -34,24 +34,24 @@ Protect your organization by monitoring and controlling cloud app use with any I
     |---|---|
     |Azure AD|SAML 2.0 or OpenID Connect|
     |Other|SAML 2.0|
-- Make sure the [app is deployed to Cloud App Security](proxy-deployment-aad.md)
+- Make sure the [app is deployed to Defender for Cloud Apps](proxy-deployment-aad.md)
 
 ## Create a block download policy for unmanaged devices
 
-Cloud App Security session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy AND a session policy.
+Defender for Cloud Apps session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy AND a session policy.
 
-### Step 1: Configure your IdP to work with Cloud App Security
+### Step 1: Configure your IdP to work with Defender for Cloud Apps
 
-Make sure you have configured your IdP solution to work with Cloud App Security, as follows:
+Make sure you have configured your IdP solution to work with Defender for Cloud Apps, as follows:
 
 - For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
 - For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
 
-After completing this task, go to the Cloud App Security portal and create a session policy to monitor and control file downloads in the session.
+After completing this task, go to the Defender for Cloud Apps portal and create a session policy to monitor and control file downloads in the session.
 
 ### Step 2: Create a session policy
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
 
 1. In the **Policies** page, click **Create policy** followed by **Session policy**.
 
@@ -99,9 +99,9 @@ After completing this task, go to the Cloud App Security portal and create a ses
 
 1. The file should be blocked and you should receive the message you set under **Customize block messages**.
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
 
-1. In the policy report, you can see which logins were redirected to Microsoft Cloud App Security for session control, and which files were downloaded or blocked from the monitored sessions.
+1. In the policy report, you can see which logins were redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 
 ## Next steps
 

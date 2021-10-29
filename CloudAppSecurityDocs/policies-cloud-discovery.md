@@ -1,6 +1,6 @@
 ---
 title: Cloud Discovery policies 
-description: This article outlines the steps to configure many Cloud Discovery policies in Cloud App Security.
+description: This article outlines the steps to configure many Cloud Discovery policies in Defender for Cloud Apps.
 ms.date: 08/19/2021
 ms.topic: conceptual
 ---
@@ -8,9 +8,9 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides an overview of how to get started using Cloud App Security to gain visibility across your organization into Shadow IT using Cloud Discovery.
+This article provides an overview of how to get started using Defender for Cloud Apps to gain visibility across your organization into Shadow IT using Cloud Discovery.
 
-Cloud App Security enables you to discover and analyze cloud apps that are in use in your organization's environment. The Cloud Discovery dashboard shows all the cloud apps running in the environment and categorizes them by function and enterprise readiness. For each app, discover the associated users, IP addresses, devices, transactions, and conducts risk assessment without needing to install an agent on your endpoint devices.
+Defender for Cloud Apps enables you to discover and analyze cloud apps that are in use in your organization's environment. The Cloud Discovery dashboard shows all the cloud apps running in the environment and categorizes them by function and enterprise readiness. For each app, discover the associated users, IP addresses, devices, transactions, and conducts risk assessment without needing to install an agent on your endpoint devices.
 
 ## Detect new high-volume or wide app use <a name= "detect-volume"></a>
 
@@ -18,7 +18,7 @@ Detect new apps that are highly used, in terms of number of users or amount of t
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable the Defender for Cloud Apps integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](mde-integration.md).
 
 ### Steps
 
@@ -39,7 +39,7 @@ Detect potential exposure of your organization in cloud apps that don't meet you
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable the Defender for Cloud Apps integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](mde-integration.md).
 
 ### Steps
 
@@ -57,7 +57,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 4. Configure governance actions to be taken when an alert is triggered. Under **Governance**, select **Tag app as unsanctioned.**<br />Access to the app will be automatically blocked when the policy is matched.
 
-5. Optional: Leverage [Cloud App Security native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
+5. Optional: Leverage [Defender for Cloud Apps native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
 
 ## Detect use of unsanctioned business apps
 
@@ -65,7 +65,7 @@ You can detect when your employees continue to use unsanctioned apps as a replac
 
 ### Prerequisites
 
-- Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+- Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable the Defender for Cloud Apps integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](mde-integration.md).
 
 ### Steps
 
@@ -77,7 +77,7 @@ You can detect when your employees continue to use unsanctioned apps as a replac
 
 4. Configure governance actions to be taken when an alert is triggered. Under Governance, select **Tag app as unsanctioned**.<br />Access to the app will be automatically blocked when the policy is matched.
 
-5. Optional: Leverage [Cloud App Security native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
+5. Optional: Leverage [Defender for Cloud Apps native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
 
 ## Detect unusual usage patterns on your network
 
@@ -85,7 +85,7 @@ Detect anomalous traffic use patterns (uploads/downloads) in your cloud apps, th
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable the Defender for Cloud Apps integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](mde-integration.md).
 
 ### Steps
 
@@ -108,7 +108,7 @@ Detect anomalous behavior by a user in a cloud storage app that isn't sanctioned
 
 ### Prerequisites
 
-Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable Cloud App Security's integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md).
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](discovery-docker.md) or enable the Defender for Cloud Apps integration with Defender for Endpoint, as described in [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](mde-integration.md).
 
 ### Steps
 
