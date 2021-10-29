@@ -132,7 +132,7 @@ items:
     items: 
     - name: Protect and govern your apps
       href: app-governance-manage-app-governance.md
-    - name: Get Started with app governance
+    - name: Get started with app governance
       href: app-governance-get-started.md
     - name: Submit feedback on app governance
       href: app-governance-feedback.md

@@ -64,9 +64,7 @@ App governance includes these templates to generate alerts for app permissions.
 |---|---|
 |Overprivileged apps|Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <p> By default, this policy will flag all apps that are marked as Overprivileged if not used for 90 days. This time period filter can be customized with more conditions and actions.|
 |New app with high-privilege permissions|Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <p> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions.|
- |New app with non-Graph permissions|Highlights all new apps with permissions to non-Graph APIs to identify and review APIs that might not be getting the latest security updates or may not be supported in future.
- <p> By default, this policy will flag all apps registered within the last 7 days that have non-Graph permissions.|
-|||
+ |New app with non-Graph permissions|Highlights all new apps with permissions to non-Graph APIs to identify and review APIs that might not be getting the latest security updates or may not be supported in future. <p> By default, this policy will flag all apps registered within the last 7 days that have non-Graph permissions.|
 
 ### M365 certification
 
@@ -177,7 +175,7 @@ App governance provides some basic templates that make it easy to create useful 
 
 Now that your app policy is created, you should monitor it on the **Policies** page to ensure it is registering an expected number of active alerts and total alerts during testing.
 
-![The app governance policies summary page in the Microsoft 365 Defender with a highlighted policy.](media\app-governance\mapg-cc-policies-policy.png)
+:::image type="content" source="media\app-governance\mapg-cc-policies-policy.png" alt-text="The app governance policies summary page in the Microsoft 365 Defender with a highlighted policy." lightbox="media\app-governance\mapg-cc-policies-policy.png":::
 
 If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly before setting its status.
 
@@ -188,7 +186,7 @@ Here is an example of a process for creating a new policy, testing it, and then 
 3. If the behavior is not expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
 4. If the behavior is expected, edit the policy and change its status to **Active**.
 
-![The create app policy workflow.](media/app-governance/mapg-create-new-policy-process.png)
+:::image type="content" source="media/app-governance/mapg-create-new-policy-process.png" alt-text="The create app policy workflow." lightbox="media/app-governance/mapg-create-new-policy-process.png":::
 
 ## Next step
 

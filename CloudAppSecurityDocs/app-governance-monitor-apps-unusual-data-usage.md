@@ -25,3 +25,7 @@ App governance provides data usage information that can help you identify unwant
 - Policy conditions—you can create policies that automatically flag and deactivate apps whose data usage matches the following conditions:
   - Data usage—the total amount of downloads and uploads exceeds your specified threshold
   - Data usage trend—the percentage increase in the total amount of downloads and uploads compared to the previous day reaches your specified threshold
+
+## Next step
+
+[Investigate anomaly detection alerts](app-governance-anomaly-detection-alerts.md)

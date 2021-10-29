@@ -72,7 +72,7 @@ By sharing information across app governance, Azure AD, and Defender for Cloud A
 
 Here's a summary of the integration.
 
-![The integration of app governance with Azure AD and Defender for Cloud Apps.](media\app-governance\mapg-integration.png)
+:::image type="content" source="media\app-governance\app-governance-add-on-arch.png" alt-text="The integration of app governance with Azure AD and Defender for Cloud Apps." lightbox="media\app-governance\app-governance-add-on-arch.png":::
 
 App governance sends its alerts to Defender for Cloud Apps and Microsoft 365 Defender, and receives alerts from Defender for Cloud Apps, to enable more detailed analysis of app-based security incidents.
 - App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance"

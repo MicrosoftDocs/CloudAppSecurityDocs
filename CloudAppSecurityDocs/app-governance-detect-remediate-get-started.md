@@ -52,4 +52,4 @@ You can also export the current alert list to a comma separated value (CSV) file
 
 ## Next step
 
-[Investigate anomaly detection alerts](app-governance-anomaly-detection-alerts.md)
+[Monitor and respond to apps with unusual data usage](app-governance-monitor-apps-unusual-data-usage.md)

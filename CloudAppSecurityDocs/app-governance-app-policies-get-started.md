@@ -24,7 +24,7 @@ App policies for Microsoft app governance are the way that you can implement mor
 
 To see the list of current app policies, go to **Microsoft 365 Defender > App governance > Policies**.
 
-![The app governance policies summary page in the Microsoft 365 Defender.](media\app-governance\mapg-cc-policies.png)
+:::image type="content" source="media\app-governance\mapg-cc-policies.png" alt-text="The app governance policies summary page in the Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-policies.png":::
 
 ## What’s available on the app policies dashboard
 
