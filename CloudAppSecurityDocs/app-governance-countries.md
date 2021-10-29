@@ -2,6 +2,7 @@
 title: "Supported regions for app governance"
 f1.keywords:
 - NOCSH
+ms.date: 10/29/2021
 ms.author: v-tophillips
 author: JoeDavies-MSFT
 manager: laurawi

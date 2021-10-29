@@ -2,6 +2,7 @@
 title: "Get started with app threat detection and remediation"
 f1.keywords:
 - NOCSH
+ms.date: 10/29/2021
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
