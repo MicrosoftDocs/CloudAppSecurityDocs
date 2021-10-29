@@ -38,7 +38,7 @@ You can import any group from your connected apps. For example, you can import u
 
 1. Select the app from which to import the user group. The list of apps will depend on which App Connectors you deployed.
 1. Select the group to import. The list of available groups will be a list of all the existing user groups in the app itself. If you want to add a new group, you have to do it directly in the app itself. Then, when the group appears in the list here, select it.
-1. Depending on the size of the group, import can take up to an hour. You can select the option to be notified by email when the import process is complete.
+1. You can select the option to be notified by email when the import process is complete.
 1. Select **Import**. After you import a group, Cloud App Security automatically syncs the group members, just like Active Directory Connect.
 1. After the import is complete, from the **User groups** page you can select a specific group to view a list of all the members of the group. Select any member of the group to further drill down into the details of a specific account. You can view which apps they use and a summary of the account including graphs of the user and their activity.
 
