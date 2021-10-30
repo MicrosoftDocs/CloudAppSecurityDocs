@@ -14,9 +14,9 @@ Shadow IT, whether across pure web apps, or daily added OAuth apps, is a signifi
 
 An admin should be able to get all risk and usage-related information about applications in use to make the best decision for the organization.
 
-Microsoft Defender for Cloud Apps's app experience provides the necessary high-level overview of an app's usage in the organization, combined with the risk that the app potentially exposes the organization to. Allowing a single experience to review all apps' shadow usage and risk enable the admin to make rapid, in-context decisions about the app's usage in the organization.
+The app experience in the Microsoft Defender for Cloud Apps app experience provides the necessary high-level overview of an app's usage in the organization, combined with the risk that the app potentially exposes the organization to. Allowing a single experience to review all apps' shadow usage and risk enable the admin to make rapid, in-context decisions about the app's usage in the organization.
 
-The experience covers both Discovered apps as part of Defender for Cloud Apps's pure Shadow IT discovery capabilities and any discovered OAuth apps as part of Defender for Cloud Apps's OAuth app discovery for Microsoft 365 apps.
+The experience covers both Discovered apps as part of the pure Shadow IT discovery capabilities of Defender for Cloud Apps and any discovered OAuth apps as part of its OAuth app discovery for Microsoft 365 apps.
 
 ## Discovered cloud apps
 
@@ -43,7 +43,7 @@ After analyzing the risk versus the usage of the application, an admin can decid
 - Tagging the app with built-in tags to enforce further access control on the network layer (endpoints or integrated 3rd party network appliances). For more information, see [Govern discovered apps](governance-discovery.md).
 - On-boarding the app to Azure AD to manage logins and govern users when applicable. For more information, see [Add an application to your tenant](/azure/active-directory/manage-apps/add-application-portal).
 - Using Conditional Access app controls to monitor and control user sessions, prevent risky actions, and avert potential data exfiltration. For more information, see [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md).
-- Connecting the app via Defender for Cloud Apps's app connectors when applicable. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- Connecting the app via the app connectors in Defender for Cloud Apps when applicable. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ## Discovered OAuth apps
 
