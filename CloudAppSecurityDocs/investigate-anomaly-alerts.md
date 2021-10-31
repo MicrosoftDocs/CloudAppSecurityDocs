@@ -102,7 +102,7 @@ Detecting anomalous locations requires an initial learning period of seven days 
 
 ### Activity from suspicious IP addresses
 
-Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as botnet command and control (C&C), and may indicate a compromised account.
+Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as performing password spray, botnet command and control (C&C), and may indicate a compromised account.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -438,6 +438,30 @@ This detection identifies the suspicious addition of privileged credentials to a
 **Learning period**
 
 Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
+
+### Unusual ISP for an OAuth app
+
+The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
+
+**Learning period** 
+
+The learning period for this detection is 30 days.  
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activity wasn't a legitimate activity of the OAuth app or that this ISP is not used by the legitimate OAuth app.
+
+    **Recommended action**: Revoke all the access tokens of the OAuth app and investigate if an attacker has access to generating OAuth access tokens.
+
+1. **FP**: If you can confirm that the activity was made legitimately by the genuine OAuth app.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the activities performed by the OAuth app.
+
+1. Investigate if an attacker has access to generating OAuth access tokens.
 
 ## Collection alerts
 
