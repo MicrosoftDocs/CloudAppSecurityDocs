@@ -26,7 +26,7 @@ Microsoft Defender for Cloud Apps provides you with a security configuration ass
 
     ![security configuration menu.](media/security-configuration-menu.png)
 
-1. You can filter the recommendations by type, by resource, and by accounts. Additionally, you can click on the security configuration icon ![Defender for Cloud icon.](media/asc-icon.png) to open the recommendation in Amazon Security Hub for more information and to deep dive into the recommendation.
+1. You can filter the recommendations by type, by resource, and by accounts. Additionally, you can click on the security configuration icon ![Amazon Security Hub icon.](media/asc-icon.png) to open the recommendation in Amazon Security Hub for more information and to deep dive into the recommendation.
 
     > [!NOTE]
     > To make investigation even simpler, you can create custom queries and save them for later use. After you've finished building your query, click the **Save as** button in the top right corner of the filters. In the **Save query** pop-up, name your query.
