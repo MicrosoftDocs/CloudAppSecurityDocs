@@ -190,9 +190,9 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
 1. Under **IAM & admin**, click **Service accounts**.
 1. Click **CREATE SERVICE ACCOUNT** to create a dedicated service account.
 1. Enter an account name, and then click **Create**.
-1. Specify the **Role** as **Defender for Cloud Admin Viewer** and then click **Save**.
+1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
 
-    ![Screenshot showing add GCP menu item for Defender for Cloud Admin Viewer.](media/connect-gcp-security-configuration-1.png)
+    ![Screenshot showing add GCP menu item for Security Center Admin Viewer.](media/connect-gcp-security-configuration-1.png)
 
 1. Copy the **Email** value, you'll need this later.
 
@@ -203,7 +203,7 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
     1. Switch to organization level.
     1. Click **ADD**.
     1. In the **New members** box, paste the **Email** value you copied earlier.
-    1. Specify the **Role** as **Defender for Cloud Admin Viewer** and then click **Save**.
+    1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
 
         ![Screenshot showing add member to project dialog.](media/connect-gcp-security-configuration-3.png)
 
