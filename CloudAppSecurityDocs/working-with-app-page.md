@@ -14,7 +14,7 @@ Shadow IT, whether across pure web apps, or daily added OAuth apps, is a signifi
 
 An admin should be able to get all risk and usage-related information about applications in use to make the best decision for the organization.
 
-The app experience in the Microsoft Defender for Cloud Apps app experience provides the necessary high-level overview of an app's usage in the organization, combined with the risk that the app potentially exposes the organization to. Allowing a single experience to review all apps' shadow usage and risk enable the admin to make rapid, in-context decisions about the app's usage in the organization.
+The app experience in Microsoft Defender for Cloud Apps  provides the necessary high-level overview of an app's usage in the organization, combined with the risk that the app potentially exposes the organization to. Allowing a single experience to review all apps' shadow usage and risk enable the admin to make rapid, in-context decisions about the app's usage in the organization.
 
 The experience covers both Discovered apps as part of the pure Shadow IT discovery capabilities of Defender for Cloud Apps and any discovered OAuth apps as part of its OAuth app discovery for Microsoft 365 apps.
 
