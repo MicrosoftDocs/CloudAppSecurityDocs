@@ -24,10 +24,10 @@ The activities API mode is optimized for scanning and retrieval of large quantit
 
 - "filters": Filter objects with all the search filters for the request, see [Activity filters](activity-filters-queries.md) for more information. To avoid having your requests be throttled, make sure to include a limitation on your query, for example, query the last day's activities, or filter for a particular app.
 - "isScan": Boolean. Enables the scanning mode.
-- "sortDirection": The sorting direction, possible values are "Defender for Cloud" and "desc"
+- "sortDirection": The sorting direction. Possible values are `asc` and `desc`.
 - "sortField": Fields used to sort activities. Possible values are:
-  - date - The date when then the activity occurred (this is the default).
-  - created - The [timestamp](api-introduction.md#timestamps) when the activity was saved.
+  - `date` - The date when then the activity occurred (this is the default).
+  - `created` - The [timestamp](api-introduction.md#timestamps) when the activity was saved.
 - "limit": Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data.
 
 ## Response parameters
