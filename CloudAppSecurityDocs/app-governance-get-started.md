@@ -18,21 +18,20 @@ search.appverid:
 description: "Get started with app governance capabilities to govern your apps."
 ---
 
-# Get started with app governance (in preview)
+# Get started with app governance
 
 [![Sign up for the free trial of app governance](media/app-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
-To get started using the app governance add-on to Defender for Cloud Apps, start by verifying the prerequisites for admin role and licensing requirements. Then you're ready to [sign up for the trial version of app governance](#sign-up-for-app-governance). One last step is to [activate the integration with Defender for Cloud Apps](#add-integration-with-defender-for-cloud-apps).
-
 ## Sign up for app governance
 
-For existing Microsoft 365 customers, you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add app governance to your tenant.
+To get started using the app governance add-on to Defender for Cloud Apps, start by verifying the prerequisites for [admin role](#administrator-roles), [licensing](#licensing-for-app-governance), and [regional](#prerequisites) requirements. 
 
-If you are not already a Microsoft 365 customer, you can sign up for a free trial by selecting the **Free Account** button at the top of this page. Under **Try Microsoft 365 for business** select **Try 1 month free**, and complete the steps for the sign-up.
+For existing Defender for Cloud Apps customers, you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add app governance to your tenant.
 
-To purchase a subscription of app governance, please reach out to your sales account team.
+If you are not already a Defender for Cloud Apps customer, you can sign up for a free trial by navigating to the [sign up page for the free trial](https://www.microsoft.com/en-us/security/business/cloud-app-security) and complete the steps for sign up. Then, navigate to the [sign up page for the free trial for app governance](https://aka.ms/appgovernancetrial) and complete the steps to add a free trial of app governance to your tenant.
 
-## Add integration with Defender for Cloud Apps
+
+The final step is adding integration with Defender for Cloud Apps. Steps below.
 
 Prerequisites:
 
@@ -55,11 +54,13 @@ To verify the integration with Defender for Cloud Apps is active, look for the a
 > [!NOTE]
 > App governance alerts will not flow to Microsoft 365 Defender until app governance is enabled in Defender for Cloud Apps and you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
 
+To purchase a subscription of app governance, please reach out to your sales account team.
+
 ## Prerequisites
 
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Defender for Cloud Apps, and thus Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
-1. Your organization's billing address must be in a WW region or in GBR, CAN, JPN, IND, or AUS go-local region in order to activate the free trial.
+1. Your organization's billing address must be in a WW region or in GBR, CAN, JPN, or AUS go-local region in order to activate the free trial.
 
 ### Licensing for app governance
 
@@ -77,7 +78,7 @@ Before you get started with app governance, you should confirm your [Microsoft 3
 ### Administrator roles
 
 > [!NOTE]
-> Only Global Admin role can activate the app governance free trial.
+> Only Global Admin or Billing Admin role can activate the app governance free trial.
 
 One of the following administrator roles is required to see app governance pages or manage policies and settings:
 
@@ -100,7 +101,6 @@ Here are the capabilities for each role.
 | Company Administrator | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) |
 | Compliance Administrator | ![Check mark.](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) |  | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | |
 | Compliance Data Administrator | ![Check mark.](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) |  | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | |
-| Compliance Reader | ![Check mark.](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) |  | ![Check mark](media\checkmark.png) |  | ![Check mark](media\checkmark.png) |  | | |
 | Global Reader  | ![Check mark.](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) |  | ![Check mark](media\checkmark.png) |  | ![Check mark](media\checkmark.png) |  | | |
 | Security Administrator | ![Check mark.](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) |  | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | |
 | Security Operator | ![Check mark.](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | ![Check mark](media\checkmark.png) | |
