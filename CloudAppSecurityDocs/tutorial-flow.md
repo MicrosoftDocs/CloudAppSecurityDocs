@@ -56,7 +56,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
     ![Screenshot of the main Power Automate page, showing the selection of templates.](media/tutorial-flow-templates.png)
 
-1. Search for "Defender for Cloud Apps" and select **Run antivirus scan using Windows Defender upon a Defender for Cloud Apps alert**.
+1. Search for "Cloud App Security" and select **Run antivirus scan using Windows Defender upon a Defender for Cloud Apps alert**.
 
     ![Screenshot of the templates Power Automate page, showing the search results.](media/tutorial-flow-templates-search.png)
 
