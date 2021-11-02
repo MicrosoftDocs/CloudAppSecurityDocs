@@ -49,11 +49,11 @@ After analyzing the risk versus the usage of the application, an admin can decid
 
 Discover and review an OAuth app's privilege levels, amount and types of permissions granted, consented users across the organization, and trends of the app’s consents and audited activities across organizational assets.
 
-![OAuth app details on Apps page.](media/apps-oath-app-details.png)
+![OAuth app details on Apps page.](media/apps-oauth-app-details.png)
 
 Drill down to get more metadata about the OAuth app, pivot to investigate app activities and app consents, and decide whether this app should continue to have access to organizational assets or should be banned by using the app actions.
 
-![OAuth app info and usage on Apps page.](media/apps-oath-app-info-usage.png)
+![OAuth app info and usage on Apps page.](media/apps-oauth-app-info-usage.png)
 
 ## Client app context (preview)
 
