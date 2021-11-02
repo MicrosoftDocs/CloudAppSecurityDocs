@@ -60,7 +60,7 @@ One of the primary value points for app governance is the ability to quickly vie
       - New apps
   1. Select the name of an app to view details. Selecting an app name opens a detail pane on the right as show in the following graphic.
 
-    :::image type="content" source="media/app-governance/app-governance-app-insight.png" alt-text="Image showing the details pane for a selected app." lightbox="media/app-governance/app-governance-app-insight.png":::
+:::image type="content" source="media/app-governance/app-governance-app-insight.png" alt-text="Image showing the details pane for a selected app." lightbox="media/app-governance/app-governance-app-insight.png":::
 
 > [!NOTE]
 > The apps listed will depend on the apps present in your tenant.
