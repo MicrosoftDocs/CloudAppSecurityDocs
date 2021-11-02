@@ -28,7 +28,7 @@ The [Defender for Cloud Apps connector](/connectors/cloudappsecurity/) in Power 
 
     ![Power Automate create new flow.](media/flow-create-new.png)
 
-1. Provide a name for the flow, and in **Choose your flow's trigger**, type **Defender for Cloud Apps** and select **When an alert is generated**.
+1. Provide a name for the flow, and in **Choose your flow's trigger**, type **Cloud App Security** and select **When an alert is generated**.
 
     ![Power Automate when an alert is generated.](media/flow-when-alert.png)
 
