@@ -2,7 +2,7 @@
 title: "Investigate anomaly detection alerts"
 f1.keywords:
 - NOCSH
-ms.date: 10/29/2021
+ms.date: 11/02/2021
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
@@ -87,7 +87,7 @@ This detection identifies an OAuth app that was created recently and found to ha
    - Apps with a suspicious Reply domain
 1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
 
-### App with Bad URL Reputation
+### App with bad URL reputation
 
 **Severity**: Medium
 
@@ -134,7 +134,7 @@ This detection identifies an OAuth app that was found to have bad URL reputation
 
 Follow the tutorial on how to [investigate risky OAuth apps](/cloud-app-security/investigate-risky-oauth).
 
-### OAuth App with read Scopes have suspicious Reply URL
+### OAuth App with Read scopes have suspicious Reply URL
 
 **Severity**: Medium
 
@@ -241,7 +241,7 @@ Follow the tutorial on how to Reset a password using Azure Active Directory and 
 1. Review the scopes granted by the app.
 1. Review the inbox rule action and condition created by the app.
 
-### App with Suspicious OAuth scope made graph calls to read email and created Inbox Rule  
+### App with suspicious OAuth scope made graph calls to read email and created inbox rule  
 
 **Severity**: Medium
 
@@ -317,7 +317,7 @@ This detection triggers an alert when a Line of Business (LOB) app updated the c
 
 ## Discovery alerts
 
-### App performed Drive Enumeration
+### App performed drive enumeration
 
 **Severity**: Medium
 
