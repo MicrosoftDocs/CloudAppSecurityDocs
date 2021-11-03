@@ -1,20 +1,8 @@
 ---
-title: "Manage app policies"
-f1.keywords:
-- NOCSH
+title: Manage app policies
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Manage your app governance policies."
+ms.topic: how-to
+description: Manage your app governance policies.
 ---
 
 # Manage app policies
@@ -32,11 +20,11 @@ Here's an example of a process for managing an existing policy:
 
 1. Edit the policy:
 
-  - Change the settings of the policy.
-  - If needed, change the status to **Audit mode** for testing.
+    - Change the settings of the policy.
+    - If needed, change the status to **Audit mode** for testing.
 
-2. Check for expected behavior, such as alerts generated.
-1. If the behavior is not expected, go back to step 1.
+1. Check for expected behavior, such as alerts generated.
+1. If the behavior isn't expected, go back to step 1.
 1. If the behavior is expected, edit the policy and change its status to active (if needed).
 
 :::image type="content" source="media/app-governance/mapg-manage-policy-process.png" alt-text="The manage app policy workflow." lightbox="media/app-governance/mapg-manage-policy-process.png":::
@@ -63,4 +51,4 @@ To delete an app policy, you can:
 - Select the policy in the policy list, and then select **Delete** on the app policy pane.
 - Select the vertical ellipses for the policy in the list, and then select **Delete**.
 
-An alternative to deleting an app policy is to change its status to inactive. Once inactive, it will not generate alerts. For example, rather than deleting an app policy for an app with a specific set of conditions that are useful for a future policy, rename the app policy to indicate its usefulness and set its status to inactive. You can later return to the policy and modify it for a similar app and set its status to audit mode or inactive.
+An alternative to deleting an app policy is to change its status to inactive. Once inactive, it won't generate alerts. For example, rather than deleting an app policy for an app with a specific set of conditions that are useful for a future policy, rename the app policy to indicate its usefulness and set its status to inactive. You can later return to the policy and modify it for a similar app and set its status to audit mode or inactive.

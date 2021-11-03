@@ -1,20 +1,8 @@
 ---
-title: "Remediate app threats"
-f1.keywords:
-- NOCSH
+title: Remediate app threats
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Remediate app threats."
+ms.topic: conceptual
+description: Remediate app threats.
 ---
 
 # Remediate app threats

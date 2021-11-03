@@ -1,20 +1,8 @@
 ---
-title: "Monitor and respond to apps with unusual data usage"
-f1.keywords:
-- NOCSH
+title: Monitor and respond to apps with unusual data usage
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Monitor and respond to apps with unusual data usage."
+ms.topic: conceptual
+description: Monitor and respond to apps with unusual data usage.
 ---
 
 # Monitor and respond to apps with unusual data usage
