@@ -108,7 +108,7 @@ Data attributes (according to vendor documentation):
 | Digital Arts i-FILTER | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | ForcePoint LEEF |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | ForcePoint Web Security Cloud\* |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
-| Fortinet Fortigate | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
+| Fortinet Fortigate | No | **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | FortiOS |**Yes**|**Yes**|No|**Yes**|**Yes**|**Yes**|
 | iboss |**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|**Yes**|
 | Juniper SRX | No | **Yes** | No | **Yes** | **Yes** | **Yes** |
