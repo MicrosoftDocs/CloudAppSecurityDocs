@@ -1,20 +1,8 @@
 ---
-title: "Learn about app policies"
-f1.keywords:
-- NOCSH
+title: Learn about app policies
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Learn about app policies."
+ms.topic: overview
+description: Learn about app policies.
 ---
 
 # Learn about app policies

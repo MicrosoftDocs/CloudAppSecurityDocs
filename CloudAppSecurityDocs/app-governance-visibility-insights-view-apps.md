@@ -1,20 +1,8 @@
 ---
-title: "View your apps"
-f1.keywords:
-- NOCSH
+title: View your apps
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "View your apps."
+ms.topic: how-to
+description: View your apps.
 ---
 
 # View your apps
@@ -40,7 +28,7 @@ You will see a list of apps and this information:
 
 - App Name
 - Publisher
-- M365 certification
+- Microsoft 365 certification
 
   Indicates whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
 
@@ -71,11 +59,11 @@ The app details pane provides additional information on these tabs:
 |:-------|:-----|
 | Details | See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
 | Usage |See the data accessed by the app in the tenant and plot the data usage for SharePoint and Exchange resources. |
-| Users | See a list of users who are using the app, whether they are a priority account, and the amount of data downloaded and uploaded. |
-| Permissions | See a summary of the permissions granted to and used by the app and the list of specific permissions. See the [Microsoft Graph permissions reference](/graph/permissions-reference) for more information. |
+| Users | See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. |
+| Permissions | See a summary of the permissions granted to and used by the app and the list of specific permissions. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
 |||
 
-For an enabled app, there is also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
+For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
 
 - Compliance Administrator
 - Global Administrator

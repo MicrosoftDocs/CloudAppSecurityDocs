@@ -1,20 +1,8 @@
 ---
-title: "Investigate anomaly detection alerts"
-f1.keywords:
-- NOCSH
+title: Investigate anomaly detection alerts
 ms.date: 11/02/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Investigate anomaly detection alerts."
+ms.topic: conceptual
+description: Learn how to investigate anomaly detection alerts.
 ---
 
 # Investigate anomaly detection alerts
@@ -134,7 +122,7 @@ This detection identifies an OAuth app that was found to have bad URL reputation
 
 Follow the tutorial on how to [investigate risky OAuth apps](/cloud-app-security/investigate-risky-oauth).
 
-### OAuth App with Read scopes have suspicious Reply URL
+### OAuth App with Read scopes has suspicious Reply URL
 
 **Severity**: Medium
 
@@ -221,7 +209,7 @@ This detection triggers an alert when a Line of Business (LOB) app updated certi
 
 **MITRE ID**: T1137.005, T1114
 
-This detection identifies an OAuth App which was flagged high-risk by Machine Learning model that consented to suspicious scopes, creates a suspicious inbox rule, and then accessed users mail folders and messages through the Graph API. Inbox rules, such as forwarding all or specific emails to another email account, and Graph calls to access emails and send to another email account, may be an attempt to exfiltrate information from your organization.
+This detection identifies an OAuth App that was flagged high-risk by Machine Learning model that consented to suspicious scopes, creates a suspicious inbox rule, and then accessed users mail folders and messages through the Graph API. Inbox rules, such as forwarding all or specific emails to another email account, and Graph calls to access emails and send to another email account, may be an attempt to exfiltrate information from your organization.
 
 **TP or FP?**
 
@@ -273,7 +261,7 @@ This detection identifies an OAuth App that consented to suspicious scopes, crea
 
 **MITRE ID**: T1098
 
-This detection triggers an alert when a Line of Business (LOB) app was updated the certificate / secret and within few days post certificate update, app is accessed from unusual location which was not seen recently or never accessed in past.
+This detection triggers an alert when a Line of Business (LOB) app was updated the certificate / secret and within few days post certificate update, app is accessed from unusual location that wasn't seen recently or never accessed in past.
 
 **TP or FP?**
 
@@ -297,7 +285,7 @@ This detection triggers an alert when a Line of Business (LOB) app was updated t
 
 **MITRE ID**: T1098
 
-This detection triggers an alert when a Line of Business (LOB) app updated the certificate / secret and within few days post certificate update, app is accessed from an unusual location which was not seen recently or never accessed in past and observed unusual activities or usage through Graph API using Machine learning algorithm.
+This detection triggers an alert when a Line of Business (LOB) app updated the certificate / secret and within few days post certificate update, app is accessed from an unusual location that was not seen recently or never accessed in past and observed unusual activities or usage through Graph API using Machine learning algorithm.
 
 **TP or FP?**
 
@@ -395,7 +383,7 @@ This detection identifies when Line of Business (LOB) OAuth App accesses an unus
 
 **Severity**: Medium
 
-**MITRE IDs**: T1137 , T1114  
+**MITRE IDs**: T1137, T1114  
 
 This detection identifies App consented to high privilege scope, creates suspicious inbox rule, and made unusual email search activities in users mail folders through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to search and collect specific emails from your organization through Graph API.
 

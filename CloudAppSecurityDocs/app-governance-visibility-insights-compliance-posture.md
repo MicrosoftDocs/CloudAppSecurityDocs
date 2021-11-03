@@ -1,20 +1,8 @@
 ---
-title: "Determine your app compliance posture"
-f1.keywords:
-- NOCSH
+title: Determine your app compliance posture
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Determine your app compliance posture."
+ms.topic: conceptual
+description: Determine your app compliance posture.
 ---
 
 # Determine your app compliance posture

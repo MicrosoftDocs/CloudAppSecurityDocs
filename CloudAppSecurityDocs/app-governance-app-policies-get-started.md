@@ -1,20 +1,8 @@
 ---
-title: "Get started with app policies"
-f1.keywords:
-- NOCSH
+title: Get started with app policies
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Get started with Learn about app policies."
+ms.topic: how-to
+description: Get started learning about app policies.
 ---
 
 # Get started with app policies
@@ -65,7 +53,7 @@ You can also:
 1. In the app governance portal, select the **Policies** tab.
 1. Select the policy you want to edit. A panel will open on the right side with the details of the existing policy.
 1. Select **Edit**.
-1. You cannot change the name of the policy once created, but you can change the description and policy severity. Select **Next**.
+1. You can't change the name of the policy once created, but you can change the description and policy severity. Select **Next**.
 1. Choose whether you want to continue with the existing policy settings or customize them. Select **No. I want to customize the policy** to make changes. Select **Next**.
 1. Choose whether this policy will apply to all apps or to apps you specify in the list. Select **Add apps** to add more apps to the list if applying the policy to specific apps. Select **Next**.
 1. Choose whether to modify the existing conditions of the policy. If you choose to modify the conditions, select **Edit conditions**. Select **Next**.
