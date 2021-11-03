@@ -1,20 +1,8 @@
 ---
-title: "App governance in Microsoft 365"
-f1.keywords:
-- NOCSH
+title: App governance in Microsoft 365
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Implement Microsoft app governance capabilities to govern your apps."
+ms.topic: conceptual
+description: Implement Microsoft app governance capabilities to govern your apps.
 ---
 
 # App governance add-on to Defender for Cloud Apps
@@ -67,6 +55,7 @@ By sharing information across app governance, Azure AD, and Defender for Cloud A
 
   From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the app governance portal for the details of app usage.
 -->
+
 - API usage information in the Defender for Cloud Apps portal:
 
   From the Defender for Cloud Apps portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
@@ -76,6 +65,7 @@ Here's a summary of the integration.
 :::image type="content" source="media\app-governance\app-governance-add-on-arch.png" alt-text="The integration of app governance with Azure AD and Defender for Cloud Apps." lightbox="media\app-governance\app-governance-add-on-arch.png":::
 
 App governance sends its alerts to Defender for Cloud Apps and Microsoft 365 Defender, and receives alerts from Defender for Cloud Apps, to enable more detailed analysis of app-based security incidents.
+
 - App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance"
 - App governance alerts show up in the Defender for Cloud Apps alerts list as alerts with the Policy field set to one of the following:
   - Microsoft 365 OAuth App Governance

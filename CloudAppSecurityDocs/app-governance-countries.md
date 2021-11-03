@@ -1,26 +1,13 @@
 ---
-title: "Supported regions for app governance"
-f1.keywords:
-- NOCSH
+title: Supported regions for app governance
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: JoeDavies-MSFT
-manager: laurawi
-audience: Admin
 ms.topic: hub-page
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
 description: "List of countries where app governance is available."
 ---
 
 # App governance supported countries
 
 The Microsoft app governance add-on for Defender for Cloud Apps is available in the following countries and regions:
-
 
 |Country  |Region  |
 |---------|---------|

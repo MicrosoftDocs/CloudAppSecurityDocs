@@ -1,20 +1,8 @@
 ---
-title: "Learn about visibility and insights"
-f1.keywords:
-- NOCSH
+title: Learn about visibility and insights
 ms.date: 10/29/2021
-ms.author: v-tophillips
-author: v-tophillips
-manager: laurawi
-audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-ms.collection: m365-security-compliance
-ms.localizationpriority: high
-search.appverid: 
-- MOE150
-- MET150
-description: "Learn about visibility and insights."
+ms.topic: conceptual
+description: Learn about visibility and insights.
 ---
 
 # Learn about visibility and insights
@@ -52,9 +40,11 @@ With app governance, you can see:
 - A cumulative view of users accessing apps.
 - Alerts insights.
 - Policy list insights.
+
 <!--
 - Policies created in Defender for Cloud Apps in the app governance portal.
 -->
+
 - Alerts for OAuth apps generated in Defender for Cloud Apps, in the app governance portal.
 
 You can also:
