@@ -7,9 +7,7 @@ description: Learn how to create app policies.
 
 # Create app policies
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
-
-Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts, app policies in Microsoft app governance are a way for you to:
+Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts based on machine learning algorithms, app policies in app governance are a way for you to:
 
 - Specify conditions by which app governance can alert you to app behavior for automatic or manual remediation.
 - Implement the app compliance policies for your organization.
@@ -28,7 +26,7 @@ To create a new app policy based on an app policy template, on the **Choose App 
 
 App governance has three categories of app policy templates.
 
-### App users and data access
+### Usage
 
 App governance includes these templates to generate alerts for app usage.
 
@@ -41,7 +39,7 @@ App governance includes these templates to generate alerts for app usage.
 |New app with a high volume of data access|Highlights any recently registered apps with high volume data access to ensure those data patterns are expected. <p> By default, this policy will flag all apps that have been registered in the last seven days and that have had more than 1 GB in data access over that period. This policy can be customized with more conditions and actions.|
 |||
 
-### App Permissions
+### Permissions
 
 App governance includes these templates to generate alerts for app permissions.
 
@@ -55,7 +53,7 @@ App governance includes these templates to generate alerts for app permissions.
 |New app with high-privilege permissions|Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <p> By default, this policy will flag all apps registered within the last seven days that have high-scoped permissions.|
  |New app with non-Graph permissions|Highlights all new apps with permissions to non-Graph APIs to identify and review APIs that might not be getting the latest security updates or may not be supported in future. <p> By default, this policy will flag all apps registered within the last seven days that have non-Graph permissions.|
 
-### Microsoft 365 certification
+### Certification
 
 App governance includes these templates to generate alerts for Microsoft 365 certification.
 
@@ -68,7 +66,7 @@ App governance includes these templates to generate alerts for Microsoft 365 cer
 |New uncertified app|Highlights new apps that haven't been through the Microsoft 365 certification process to ensure that they're expected in the tenant. <p> By default, this policy will flag all apps that were registered in the last seven days and are uncertified.|
 |||
 
-## Custom app policies
+## Custom 
 
 Use a custom app policy when you need to do something not already done by one of the built-in templates.
 
