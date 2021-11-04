@@ -7,8 +7,6 @@ description: Get started with visibility and insights.
 
 # Get started with visibility and insights
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
-
 The first place to get started is the app governance dashboard at [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
 :::image type="content" source="media\app-governance\mapg-cc-overview.png" alt-text="The app governance overview page in Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-overview.png":::
@@ -20,18 +18,18 @@ You can also access the app governance dashboard from **Office 365 > Microsoft 3
 The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
 
 - **Tenant summary**: The count of key app and alert categories.
-- **Top alerts**: The 10 most recent active alerts in the tenant
-- **Data and resources access**: Mouse over each month column in the graph to see the corresponding value.
-  - **Data access over the last four months**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently only includes Mail and File upload/download usage.
-  - **Top resources data access over the last four months**: Data usage over the last four calendar months, broken down by resource type. Currently only includes Mail and File upload/download usage
-- **Improve your app protection and governance**: Recommended actions such as creating an app usage or permissions policy.
-- **Top apps by categories**: The top apps sorted by these categories:
+- **Latest alerts**: The 10 most recent active alerts in the tenant
+- **Data usage**: Mouse over each month column in the graph to see the corresponding value.
+  - **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently only includes Mail and File upload/download usage.
+  - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently only includes Mail and File upload/download usage
+- **Optimize app governance with policies**: Recommended actions such as creating an app usage or permissions policy.
+- **App categories**: The top apps sorted by these categories:
   
   - **All categories**: Sorts across all available categories.
-  - **High privilege**: High privilege is an internally determined category based on platform machine learning and signals.
+  - **Highly privileged**: High privilege is an internally determined category based on platform machine learning and signals.
   - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application hasn't been used in the last 90 days, that application is overprivileged. App governance must be operating for at least 90 days to determine if any app is overprivileged.  
-  - **Unverified**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
-  - **App only**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
+  - **Unverified publisher**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
+  - **App only permissions**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
 
 ## View app insights
@@ -41,7 +39,7 @@ One of the primary value points for app governance is the ability to quickly vie
 1. On your app governance portal page, select **Apps**.
 1. Use the **Categories** drop down list to select from the following options:
       - All apps
-      - High privilege
+      - Highly privileged
       - Overprivileged
       - Unverified Publisher
       - App only
