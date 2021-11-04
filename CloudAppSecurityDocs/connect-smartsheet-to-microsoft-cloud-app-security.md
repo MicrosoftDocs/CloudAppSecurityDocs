@@ -12,7 +12,7 @@ This article describes how to connect Microsoft Cloud App Security to your exist
 
 ## Prerequisites
 
-- The Smartsheet user used to sign in to Smartsheet must be a system admin.
+- The Smartsheet user used to log in to Smartsheet must be a System Admin.
 - Event Reporting must be enabled by Smartsheet, either through standalone purchase or via an Enterprise plan with the Advance Platinum package.
 
 
@@ -78,7 +78,7 @@ This article describes how to connect Microsoft Cloud App Security to your exist
 
 ## Limitations
 
-- Sign in and sign out activities aren't supported by Smartsheet.
+- Log in and log out activities aren't supported by Smartsheet.
 - Smartsheet activities don't contain IP addresses.
 - System activities are shown with the Smartsheet account name.
 
