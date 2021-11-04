@@ -7,8 +7,6 @@ description: Implement Microsoft app governance capabilities to govern your apps
 
 # App governance add-on to Defender for Cloud Apps
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
-
 > [!NOTE]
 > To sign up for app governance, see [Get started with app governance](app-governance-get-started.md).
 
@@ -34,7 +32,7 @@ App governance is a platform-based solution that is an integral part of the Micr
 
 ## A first glimpse at app governance
 
-To see the app governance dashboard, go to [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
+To see the app governance dashboard, go to [aka.ms/appgovernance](aka.ms/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
 ## App governance integration with Azure AD and Defender for Cloud Apps
 
@@ -72,6 +70,3 @@ App governance sends its alerts to Defender for Cloud Apps and Microsoft 365 Def
   - Microsoft 365 OAuth Phishing Detection
   - Microsoft 365 OAuth App Reputation
 - Defender for Cloud Apps alerts appear in the app governance alerts list as alerts with Source set to Defender for Cloud Apps
-
-> [!NOTE]
-> Alert status is currently not being synced between app governance and Defender for Cloud Apps.
