@@ -72,7 +72,7 @@ App governance includes these templates to generate alerts for Microsoft 365 cer
 
 Use a custom app policy when you need to do something not already done by one of the built-in templates.
 
-1. To create a new custom app policy, first select **Create new** on the **Policies** page. On the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then select **Next**.
+1. To create a new custom app policy, first select **Create new policy** on the **Policies** page. On the **Choose App policy template page**, select the **Custom** category, the **Custom policy** template, and then select **Next**.
 
 1. On the **Name and description** page, configure the following:
 
