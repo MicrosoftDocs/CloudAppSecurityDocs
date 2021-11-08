@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog. Over 16,000 cloud apps are in the cloud app catalog. The catalog contains publicly available cloud apps only, for which Cloud App Security provides visibility and risk information.
+Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog. Over 25,000 cloud apps are in the cloud app catalog. The catalog contains publicly available cloud apps only, for which Cloud App Security provides visibility and risk information.
 
 To gain visibility into cloud apps that are excluded from the Cloud App Catalog, Cloud App Security enables you to discover use of custom cloud apps (LOB apps) that were developed or assigned specifically for your organization.
 
