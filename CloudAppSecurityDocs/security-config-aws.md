@@ -1,7 +1,7 @@
 ---
 title: Get security configuration recommendations for AWS
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps by integrating with Amazon Web Services.
-ms.date: 06/28/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Security configuration for AWS

@@ -1,7 +1,7 @@
 ---
 title: Managing API tokens
 description: This article provides information about generating and managing API tokens for Defender for Cloud Apps.
-ms.date: 03/27/2020
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Managing API tokens

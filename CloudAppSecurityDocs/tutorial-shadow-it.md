@@ -1,7 +1,7 @@
 ---
 title: Discover and manage Shadow IT tutorial
 description: This tutorial describes the process to discover and manage Shadow IT in Microsoft Defender for Cloud Apps.
-ms.date: 02/24/2021
+ms.date: 11/09/2021
 ms.topic: tutorial
 ---
 # Tutorial: Discover and manage shadow IT in your network

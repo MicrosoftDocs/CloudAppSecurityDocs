@@ -1,7 +1,7 @@
 ---
 title: Deploy Defender for Cloud Apps Conditional Access App Control for any apps
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for any apps.
-ms.date: 02/18/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Onboard and deploy Conditional Access App Control for any app

@@ -1,7 +1,7 @@
 ---
 title: Fetch - Files API
 description: This article describes the fetch request in the Defender for Cloud Apps Files API.
-ms.date: 03/27/2020
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Fetch - Files API

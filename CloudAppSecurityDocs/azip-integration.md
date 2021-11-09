@@ -1,7 +1,7 @@
 ---
 title: Integrate Azure Information Protection with Defender for Cloud Apps
 description: This article provides information about how to leverage your Azure Information Protection tags in Defender for Cloud Apps for added control of your organization's cloud app use.
-ms.date: 12/27/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Azure Information Protection integration

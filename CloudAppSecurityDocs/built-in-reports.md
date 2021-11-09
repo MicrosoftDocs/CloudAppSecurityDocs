@@ -1,7 +1,7 @@
 ---
 title: Generate reports - Microsoft Defender for Cloud Apps
 description: This article provides instructions for generating data management reports in Microsoft Defender for Cloud Apps.
-ms.date: 12/10/2018
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Generate data management reports

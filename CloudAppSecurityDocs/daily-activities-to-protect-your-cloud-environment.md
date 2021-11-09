@@ -1,7 +1,7 @@
 ---
 title: Working with the Defender for Cloud Apps dashboard
 description: This article provides a foundation for how to use the Defender for Cloud Apps dashboard.
-ms.date: 05/06/2020
+ms.date: 11/09/2021
 ms.topic: conceptual
 ---
 # Working with the dashboard

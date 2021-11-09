@@ -1,7 +1,7 @@
 ---
 title: Best practices for protecting your organization 
 description: This article provides a set of best practices for protecting your organization.
-ms.date: 10/24/2019
+ms.date: 11/09/2021
 ms.topic: quickstart
 ---
 # Defender for Cloud Apps best practices

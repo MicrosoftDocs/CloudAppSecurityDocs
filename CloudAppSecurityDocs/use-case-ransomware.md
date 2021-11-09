@@ -1,7 +1,7 @@
 ---
 title: Overview of threat protection scenario 
 description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
-ms.date: 12/14/2018
+ms.date: 11/09/2021
 ms.topic: conceptual
 ---
 # Protecting your organization from ransomware

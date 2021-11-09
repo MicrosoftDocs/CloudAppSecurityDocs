@@ -1,7 +1,7 @@
 ---
 title: Configure automatic log upload using Docker in Azure 
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Linux in Azure.
-ms.date: 03/17/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Docker on Linux in Azure

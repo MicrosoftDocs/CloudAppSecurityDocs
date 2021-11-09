@@ -2,7 +2,7 @@
 title: Connect ServiceNow to Defender for Cloud Apps
 description: This article provides information about how to connect your ServiceNow app to Defender for Cloud Apps using the API connector for visibility and control over use.
 
-ms.date: 03/10/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Connect ServiceNow to Microsoft Defender for Cloud Apps

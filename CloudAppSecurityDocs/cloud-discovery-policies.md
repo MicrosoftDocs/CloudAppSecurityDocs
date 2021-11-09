@@ -1,7 +1,7 @@
 ---
 title: Create policies on Cloud Discovery apps 
 description: This article provides information about working with Cloud Discovery policies.
-ms.date: 01/05/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Create Cloud Discovery policies

@@ -1,7 +1,7 @@
 ---
 title: Configure automatic log upload for continuous reports in Defender for Cloud Apps
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps.
-ms.date: 7/22/2019
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Configure automatic log upload for continuous reports

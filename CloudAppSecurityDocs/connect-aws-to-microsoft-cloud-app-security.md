@@ -1,7 +1,7 @@
 ---
 title: Connect Amazon Web Services with Defender for Cloud Apps
 description: This article provides information about how to connect your AWS app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 05/12/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Connect AWS to Microsoft Defender for Cloud Apps

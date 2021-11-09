@@ -1,7 +1,7 @@
 ---
 title: Connect Okta to Defender for Cloud Apps
 description: This article provides information about how to connect your Okta to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 9/1/2019
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Connect Okta to Microsoft Defender for Cloud Apps

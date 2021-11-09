@@ -1,7 +1,7 @@
 ---
 title: Deploy Cloud Discovery 
 description: This article describes the setup procedure for getting Cloud Discovery working.
-ms.date: 01/17/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Set up Cloud Discovery

@@ -1,7 +1,7 @@
 ---
 title: Roll out continuous reports for Defender for Cloud Apps using a Docker on Windows
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Windows in an on-premises server.
-ms.date: 12/02/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Docker on Windows on-premises

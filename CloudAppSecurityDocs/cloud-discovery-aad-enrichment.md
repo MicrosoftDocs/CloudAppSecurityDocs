@@ -1,7 +1,7 @@
 ---
 title: Enrich Defender for Cloud Apps Discovery data with Azure AD usernames
 description: This article provides information about how to enrich Defender for Cloud Apps Discovery data with Azure AD usernames.
-ms.date: 09/09/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Cloud Discovery enrichment

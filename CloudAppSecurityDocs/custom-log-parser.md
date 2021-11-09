@@ -1,7 +1,7 @@
 ---
 title: Defender for Cloud Apps custom log parser for logs that aren't supported
 description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Defender for Cloud Apps.
-ms.date: 05/05/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Use a custom log parser

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Sentinel integration with Defender for Cloud Apps
 description: This article provides information integrating Microsoft Sentinel with Defender for Cloud Apps.
-ms.date: 08/23/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Microsoft Sentinel integration (preview)

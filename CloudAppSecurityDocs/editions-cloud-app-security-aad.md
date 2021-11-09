@@ -1,7 +1,7 @@
 ---
 title: Discovery capability differences for Defender for Cloud Apps and Azure AD
 description: This article describes the differences between discovery capabilities in Microsoft Defender for Cloud Apps and Azure AD.
-ms.date: 02/22/2021
+ms.date: 11/09/2021
 ms.topic: overview
 ---
 

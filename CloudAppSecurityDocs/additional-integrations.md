@@ -1,7 +1,7 @@
 ---
 title: Additional integration with Defender for Cloud Apps
 description: This article provides information integrating third-party solutions with Defender for Cloud Apps.
-ms.date: 06/28/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Additional integrations with external solutions

@@ -1,7 +1,7 @@
 ---
 title: Access Defender for Cloud Apps with application context
 description: Learn how to design a web app to get programmatic access to Defender for Cloud Apps without a user.
-ms.date: 04/14/2021
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 

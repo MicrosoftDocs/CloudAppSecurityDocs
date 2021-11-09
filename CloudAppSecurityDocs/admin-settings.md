@@ -1,7 +1,7 @@
 ---
 title: Set admin preferences 
 description: This article provides instructions for setting admin preferences in Defender for Cloud Apps.
-ms.date: 04/19/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Admin user settings

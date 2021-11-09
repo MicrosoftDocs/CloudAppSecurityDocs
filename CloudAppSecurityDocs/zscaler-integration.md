@@ -1,7 +1,7 @@
 ---
 title: Integrate Defender for Cloud Apps with Zscaler
 description: This article describes how to integrate Microsoft Defender for Cloud Apps with Zscaler for seamless Cloud Discovery and automated block of unsanctioned apps.
-ms.date: 03/03/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Zscaler

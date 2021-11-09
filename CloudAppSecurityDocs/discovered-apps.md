@@ -1,7 +1,7 @@
 ---
 title: Working with discovered apps in Defender for Cloud Apps
 description: This article describes the process for identifying and remediating risky cloud discovery apps in Defender for Cloud Apps.
-ms.date: 09/25/2019
+ms.date: 11/09/2021
 ms.topic: conceptual
 ---
 # Working with discovered apps

@@ -1,7 +1,7 @@
 ---
 title: Blocking discovered apps 
 description: This article describes the procedure for exporting block scripts for discovered apps.
-ms.date: 12/12/2019
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Govern discovered apps

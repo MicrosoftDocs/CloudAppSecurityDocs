@@ -1,7 +1,7 @@
 ---
 title: Connect Webex Teams to Defender for Cloud Apps
 description: This article provides information about how to connect your Webex Teams app to Defender for Cloud Apps using the API connector  for visibility and control over use.
-ms.date: 12/27/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Connect Cisco Webex Teams to Microsoft Defender for Cloud Apps

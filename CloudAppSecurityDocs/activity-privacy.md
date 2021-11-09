@@ -1,7 +1,7 @@
 ---
 title: Activity privacy
 description: This article provides information about how to configure your activity monitoring to comply with your user privacy policy.
-ms.date: 05/27/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Activity privacy

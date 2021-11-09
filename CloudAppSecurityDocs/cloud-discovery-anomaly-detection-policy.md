@@ -1,7 +1,7 @@
 ---
 title: Create Cloud Discovery anomaly detection policy in Defender for Cloud Apps
 description: This article provides information about how to work with Cloud Discovery anomaly detection policies.
-ms.date: 05/18/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Cloud Discovery anomaly detection policy

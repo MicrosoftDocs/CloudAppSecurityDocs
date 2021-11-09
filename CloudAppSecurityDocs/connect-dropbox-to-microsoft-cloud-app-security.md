@@ -1,7 +1,7 @@
 ---
 title: Connect Dropbox to Defender for Cloud Apps
 description: This article provides information about how to connect your Dropbox app to Defender for Cloud Apps using the API connector  for visibility and control over use.
-ms.date: 12/10/2018
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Connect Dropbox to Microsoft Defender for Cloud Apps

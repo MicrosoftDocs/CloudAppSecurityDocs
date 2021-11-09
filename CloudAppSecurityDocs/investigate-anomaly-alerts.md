@@ -1,7 +1,7 @@
 ---
 title: Defender for Cloud Apps anomaly detection alerts investigation guide
 description: This article explains how to investigate the Defender for Cloud Apps anomaly detection alerts issued when attacks are detected against your organization.
-ms.date: 06/08/2020
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 

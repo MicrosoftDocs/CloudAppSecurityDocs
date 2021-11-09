@@ -1,7 +1,7 @@
 ---
 title: Deploy Defender for Cloud Apps
 description: This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
-ms.date: 02/10/2021
+ms.date: 11/09/2021
 ms.topic: quickstart
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Lifecycle management strategy
 description: This article provides information about how plan a lifecycle management strategy to ensure your configurations, exclusions, and policies remain up to date.
-ms.date: 05/13/2021
+ms.date: 11/09/2021
 ms.topic: conceptual
 ---
 # Defender for Cloud Apps lifecycle management strategy

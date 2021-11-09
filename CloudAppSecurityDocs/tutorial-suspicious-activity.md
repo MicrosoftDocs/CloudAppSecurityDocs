@@ -1,7 +1,7 @@
 ---
 title: Detect suspicious user activity with behavioral analytics (UEBA) tutorial
 description: This tutorial describes the process for tuning user activity detections in Microsoft Defender for Cloud Apps.
-ms.date: 02/24/2021
+ms.date: 11/09/2021
 ms.topic: tutorial
 ---
 # Tutorial: Detect suspicious user activity with UEBA

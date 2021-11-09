@@ -1,7 +1,7 @@
 ---
 title: Fetch entity tree - Entities API
 description: This article describes the fetch entity tree request in the Defender for Cloud Apps Entities API.
-ms.date: 03/27/2020
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Fetch entity tree - Entities API

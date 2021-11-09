@@ -1,7 +1,7 @@
 ---
 title: List - Activities API
 description: This article describes the list request in the Defender for Cloud Apps Activities API.
-ms.date: 03/27/2020
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # List - Activities API
@@ -26,7 +26,7 @@ POST /api/v1/activities/
 | --- | --- |
 | filters | Filter objects with all the search filters for the request, see [activity filters](api-activities.md#filters) for more details |
 | sortDirection | The sorting direction. Possible values are: `asc` and `desc` |
-| sortField | Fields used to sort activities. Possible values are:<br />- **date**: The date when then the activity happened<br />- **created**: The [timestamp](api-introduction.md#timestamps) when the activity was saved |
+| sortField | Fields used to sort activities. Possible values are: <li> **date**: The date when then the activity happened <li> **created**: The [timestamp](api-introduction.md#timestamps) when the activity was saved |
 | skip | Skips the specified number of records |
 | limit | Maximum number of records returned by the request |
 

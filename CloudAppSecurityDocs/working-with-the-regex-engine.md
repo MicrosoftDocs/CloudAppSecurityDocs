@@ -1,7 +1,7 @@
 ---
 title: Use the RegEx engine in Defender for Cloud Apps for content inspection policies
 description: This article provides instructions for using RegEx for pattern matching in Defender for Cloud Apps policies.
-ms.date: 12/14/2018
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Working with the RegEx engine

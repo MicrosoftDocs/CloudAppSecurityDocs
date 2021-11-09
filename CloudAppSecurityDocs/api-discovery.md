@@ -1,7 +1,7 @@
 ---
 title: Defender for Cloud Apps Cloud Discovery API
 description: This article provides information about using the Cloud Discovery API.
-ms.date: 01/18/2021
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Cloud Discovery API

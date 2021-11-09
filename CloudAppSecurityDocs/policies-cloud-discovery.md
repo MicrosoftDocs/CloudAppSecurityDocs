@@ -1,7 +1,7 @@
 ---
 title: Cloud Discovery policies 
 description: This article outlines the steps to configure many Cloud Discovery policies in Defender for Cloud Apps.
-ms.date: 08/19/2021
+ms.date: 11/09/2021
 ms.topic: conceptual
 ---
 # Cloud Discovery policies

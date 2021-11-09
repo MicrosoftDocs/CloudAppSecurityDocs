@@ -1,7 +1,7 @@
 ---
 title: Defender for Cloud Apps data security and privacy practices
 description: This article describes the Defender for Cloud Apps compliance offering, trust center, privacy, and data security.
-ms.date: 02/22/2021
+ms.date: 11/09/2021
 ms.topic: overview
 ---
 # What are Microsoft Defender for Cloud Apps data security and privacy practices?

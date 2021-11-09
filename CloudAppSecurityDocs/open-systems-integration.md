@@ -1,7 +1,7 @@
 ---
 title: Integrate Defender for Cloud Apps with Open Systems
 description: This article describes how to integrate Microsoft Defender for Cloud Apps with Open Systems for seamless Cloud Discovery and automated block of unsanctioned apps.
-ms.date: 10/26/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Open Systems

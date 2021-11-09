@@ -1,7 +1,7 @@
 ---
 title: Close true positive - Alerts API
 description: This article describes the bulk close an alert as true positive request in the Defender for Cloud Apps Alerts API.
-ms.date: 10/20/2020
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Close true positive - Alerts API

@@ -1,7 +1,7 @@
 ---
 title: How Defender for Cloud Apps performs built-in DLP content inspection
 description: This article describes the process Microsoft Defender for Cloud Apps follows when running the built-in DLP content inspection on data in your cloud.
-ms.date: 12/10/2018
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Built-in content inspection

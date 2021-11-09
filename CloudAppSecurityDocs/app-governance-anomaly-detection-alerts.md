@@ -1,6 +1,6 @@
 ---
 title: Investigate anomaly detection alerts
-ms.date: 11/02/2021
+ms.date: 11/09/2021
 ms.topic: conceptual
 description: Learn how to investigate anomaly detection alerts.
 ---
