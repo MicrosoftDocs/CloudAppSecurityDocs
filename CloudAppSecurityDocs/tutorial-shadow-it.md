@@ -40,7 +40,7 @@ Because policies are different across user groups, regions and business groups, 
 
 Now that Cloud Discovery is running on your network, look at the continuous reports that are generated and look at the [Cloud Discovery dashboard](working-with-cloud-discovery-data.md) to get a full picture of what apps are being used in your organization. It's a good idea to look at them by category, because you will often find that non-sanctioned apps are being used for legitimate work-related purposes that were not addressed by a sanctioned app.
 
-1. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud Apps risk catalog includes over 16,000 apps that are assessed using over 80 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
+1. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud App Catalog includes over 25,000 apps that are assessed using over 80 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
 
     - In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under **Discover**, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
 
@@ -63,7 +63,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
     - Dive even deeper when investigating use of discovered apps. View subdomains and resources to learn about specific activities, data access, and resource usage in your cloud services. For more information, see [Deep dive into Discovered apps](discovered-apps.md#deep-dive-into-discovered-apps) and [Discover resources and custom apps](discovered-apps.md#discover-resources-and-custom-apps).
 
-1. **Identify alternative apps**: Use the cloud app catalog to identify safer apps that achieve similar business functionality as the detected risky apps, but do comply with your organization's policy. You can do this by using the advanced filters to find apps in the same category that meet with your different security controls.
+1. **Identify alternative apps**: Use the Cloud App Catalog to identify safer apps that achieve similar business functionality as the detected risky apps, but do comply with your organization's policy. You can do this by using the advanced filters to find apps in the same category that meet with your different security controls.
 
 ### Phase 3: Manage your apps
 

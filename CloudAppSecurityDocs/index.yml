@@ -91,6 +91,8 @@ landingContent:
             url: discovered-apps.md
           - text: Protect connected apps
             url: protect-connected-apps.md
+          - text: Manage app governance
+            url: app-governance-manage-app-governance.md
 
   # Card
   - title: Best practices
