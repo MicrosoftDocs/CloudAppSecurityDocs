@@ -70,7 +70,7 @@ Below is a sample email template:
                 <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">
                   <tr>
                     <td align="right" id="header-table-cell">
-                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />
+                      <img src="%%logo%%" alt="Microsoft Defender for Cloud Apps" id="org-logo" />
                     </td>
                   </tr>
                   <tr>

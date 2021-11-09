@@ -29,7 +29,7 @@ You can access the Defender for Cloud Apps API with **Application Context** or *
   
 Used by apps that run without a signed-in user present. For example, apps that run as background services or daemons.
 
-Steps that need to be taken to access Cloud App Security API with application context:
+Steps that need to be taken to access Defender for Cloud Apps API with application context:
 
 1. Create an AAD Web-Application.
 1. Assign the desired permission to the application. For example, **Read Alerts** or **Upload Discovery Report**.

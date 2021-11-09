@@ -1,32 +1,32 @@
 ---
-title: Access Cloud App Security with user context
-description: Learn how to create an application to get programmatic access to Cloud App Security on behalf of a user.
+title: Access Defender for Cloud Apps with user context
+description: Learn how to create an application to get programmatic access to Defender for Cloud Apps on behalf of a user.
 ms.date: 04/14/2021
 ms.topic: reference
 ---
-# Access Microsoft Cloud App Security API with user context (preview)
+# Access Microsoft Defender for Cloud Apps API with user context (preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This page describes how to create an application to get programmatic access to Cloud App Security on behalf of a user.
+This page describes how to create an application to get programmatic access to Defender for Cloud Apps on behalf of a user.
 
-If you need programmatic access Microsoft Cloud App Security without a user, refer to [Access Microsoft Cloud App Security with application context](api-authentication-application.md).
+If you need programmatic access Microsoft Defender for Cloud Apps without a user, refer to [Access Microsoft Defender for Cloud Apps with application context](api-authentication-application.md).
 
 If you aren't sure which access you need, read the [Introduction page](api-authentication.md).
 
-Microsoft Cloud App Security exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Cloud App Security capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender for Cloud Apps exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate work flows and innovate based on Microsoft Defender for Cloud Apps capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 
 - Create an AAD application
 - Get an access token using this application
-- Use the token to access Cloud App Security API
+- Use the token to access Defender for Cloud Apps API
 
-This page explains how to create an AAD application, get an access token to Microsoft Cloud App Security and validate the token.
+This page explains how to create an AAD application, get an access token to Microsoft Defender for Cloud Apps and validate the token.
 
 >[!NOTE]
-> When accessing Microsoft Cloud App Security API on behalf of a user, you will need the correct Application permission and user permission.
-> If you are not familiar with user permissions on Microsoft Cloud App Security, see [Manage admin access](manage-admins.md).
+> When accessing Microsoft Defender for Cloud Apps API on behalf of a user, you will need the correct Application permission and user permission.
+> If you are not familiar with user permissions on Microsoft Defender for Cloud Apps, see [Manage admin access](manage-admins.md).
 
 >[!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API.
@@ -58,9 +58,9 @@ This page explains how to create an AAD application, get an access token to Micr
 
      When finished, select **Register**.
 
-1. Allow your Application to access Microsoft Cloud App Security and assign it 'Read alerts' permission:
+1. Allow your Application to access Microsoft Defender for Cloud Apps and assign it 'Read alerts' permission:
 
-    - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft Cloud App Security** and select on **Microsoft Cloud App Security**.
+    - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type *Microsoft Cloud App Security* and then select **Microsoft Cloud App Security**.
 
     - **Note**: *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear.
 
@@ -154,9 +154,9 @@ Verify to make sure you got a correct token:
 
     ![Image of token validation](media/webapp-decoded-token.png)
 
-## Use the token to access Microsoft Cloud App Security API
+## Use the token to access the Microsoft Defender for Cloud Apps API
 
-- Choose the API you want to use. For more information, see [Cloud App Security APIs](api-introduction.md).
+- Choose the API you want to use. For more information, see [Defender for Cloud Apps API](api-introduction.md).
 - Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
 - The Expiration time of the token is 1 hour (you can send more than one request with the same token)
 

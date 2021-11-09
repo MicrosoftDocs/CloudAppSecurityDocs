@@ -12,7 +12,7 @@ Microsoft Defender for Cloud Apps integrates with Azure Active Directory Identit
 
 ## Prerequisites
 
-- A Defender for Cloud Apps Admin account to enable integration between Identity Protection and Defender for Cloud Apps.
+- A Cloud App Security Admin account to enable integration between Identity Protection and Defender for Cloud Apps.
 
 ## Enable Identity Protection
 

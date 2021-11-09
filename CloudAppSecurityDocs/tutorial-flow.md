@@ -56,7 +56,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
     ![Screenshot of the main Power Automate page, showing the selection of templates.](media/tutorial-flow-templates.png)
 
-1. Search for "Cloud App Security" and select **Run antivirus scan using Windows Defender upon a Defender for Cloud Apps alert**.
+1. Search for *Cloud App Security* and select **Run antivirus scan using Windows Defender upon a Defender for Cloud Apps alert**.
 
     ![Screenshot of the templates Power Automate page, showing the search results.](media/tutorial-flow-templates-search.png)
 
@@ -69,7 +69,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 > [!NOTE]
 > If you have previously created a flow using an Azure AD connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In the list of apps, on the row in which **Cloud App Security** appears, click **Create**.
+1. In the list of apps, on the row in which **Defender for Cloud Apps** appears, click **Create**.
 
     ![Screenshot of the templates Power Automate page, showing the Defender for Cloud Apps create button.](media/tutorial-flow-templates-create.png)
 

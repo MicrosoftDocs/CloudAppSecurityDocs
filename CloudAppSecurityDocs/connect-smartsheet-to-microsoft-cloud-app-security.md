@@ -44,8 +44,8 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
    ![Screenshot that shows the Create New App button.](media/smartsheet-developer-tools.png)
 
 4. In the **Create New App** dialog, provide the following values:
-    - **App name**: For example, **Microsoft Cloud App Security**.
-    - **App description**: For example, **Microsoft Cloud App Security connects to Smartsheet via its API and detects threats within users' activity.**
+    - **App name**: For example, **Microsoft Defender for Cloud Apps**.
+    - **App description**: For example, **Microsoft Defender for Cloud Apps connects to Smartsheet via its API and detects threats within users' activity.**
     - **App URL**: `https://portal.cloudappsecurity.com`
     - **App contact/support**: `https://docs.microsoft.com/en-us/cloud-app-security/support-and-ts`
     - **App redirect URL**: `https://portal.cloudappsecurity.com/api/oauth/saga`
