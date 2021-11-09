@@ -39,6 +39,8 @@ To enable you to perform Cloud Discovery across other platforms, it's best to us
 
 [Watch our videos](#related-videos) showing the benefits of using Defender for Endpoint with Defender for Cloud Apps.
 
+<a name="how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security"></a>
+
 ## How to integrate Microsoft Defender for Endpoint with Defender for Cloud Apps
 
 To enable Defender for Endpoint integration with Defender for Cloud Apps:

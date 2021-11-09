@@ -142,7 +142,7 @@ Follow these steps to connect AWS security configuration to Defender for Cloud A
 > [!div class="checklist"]
 >
 > - [Set up AWS Security Hub](#set-up-aws-security-hub)
-> - [Connect AWS security configuration to Defender for Cloud Apps](#connect-aws-security-configuration-to-cloud-app-security)
+> - [Connect AWS security configuration to Defender for Cloud Apps](#connect-aws-security-configuration-to-defender-for-cloud-apps)
 
 ### Set up AWS Security Hub
 

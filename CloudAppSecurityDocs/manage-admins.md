@@ -13,6 +13,8 @@ Microsoft Defender for Cloud Apps supports role-based access control. This artic
 >[!IMPORTANT]
 >We have changed the flow for adding external admins to Defender for Cloud Apps. External admin not enrolled using the new process will be deleted by October 31st. For more information, see [Invite external admins](#invite-external-admins).
 
+<a name="manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>
+
 ## Office 365 and Azure AD roles with access to Defender for Cloud Apps
 
 > [!NOTE]
@@ -68,9 +70,11 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 | View manage admin access                                     | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           | ✔                      |
 | Manage admins and activity privacy                           | ✔             | ✔               |                   |                        |                    |                  |                |           | ✔                      |
 
-## Built-in Defender for Cloud Apps admin roles
+<a name="built-in-cloud-app-security-admin-roles"></a>
 
-The following Defender for Cloud Apps specific admin roles can be configured in the Defender for Cloud Apps portal:
+## Built-in admin roles in Defender for Cloud Apps
+
+The following specific admin roles can be configured in the Defender for Cloud Apps portal:
 
 - **App/instance admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 

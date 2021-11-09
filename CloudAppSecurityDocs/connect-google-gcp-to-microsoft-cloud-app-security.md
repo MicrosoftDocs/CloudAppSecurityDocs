@@ -35,7 +35,7 @@ Follow these steps to connect GCP Security auditing to Defender for Cloud Apps.
 > [!div class="checklist"]
 >
 > - [Configure Google Cloud Platform](#configure-google-cloud-platform)
-> - [Connect Google Cloud Platform auditing to Defender for Cloud Apps](#connect-google-cloud-platform-auditing-to-cloud-app-security)
+> - [Connect Google Cloud Platform auditing to Defender for Cloud Apps](#connect-google-cloud-platform-auditing-to-defender-for-cloud-apps)
 
 ### Configure Google Cloud Platform
 
@@ -165,7 +165,7 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
 > - [Set up GCP Security Command Center with Security Health Analytics](#set-up-gcp-security-command-center-with-security-health-analytics)
 > - [Enable Security Command Center API](#enable-security-command-center-api)
 > - [Create a dedicated service account for the security configuration integration](#create-a-dedicated-service-account-for-the-security-configuration-integration)
-> - [Connect Google Cloud Platform security configuration to Defender for Cloud Apps](#connect-google-cloud-platform-security-configuration-to-cloud-app-security)
+> - [Connect Google Cloud Platform security configuration to Defender for Cloud Apps](#connect-google-cloud-platform-security-configuration-to-defender-for-cloud-apps)
 
 ### Set up GCP Security Command Center with Security Health Analytics
 

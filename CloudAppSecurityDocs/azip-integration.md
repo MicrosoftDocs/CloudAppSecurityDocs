@@ -63,6 +63,8 @@ You're probably familiar with file classification labels in [Azure Information P
 > - Defender for Cloud Apps does not support reading labels of password-protected files.
 > - Empty files will not be labeled.
 
+<a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>
+
 ## How to integrate Azure Information Protection with Defender for Cloud Apps
 
 ### Enable Azure Information Protection
