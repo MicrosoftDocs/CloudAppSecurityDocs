@@ -21,6 +21,8 @@ To create a new app policy, go to **Microsoft 365 Defender > App governance > Ov
 - To create a new app policy from a template, choose the relevant template category followed by the template in that category. 
 - To create a custom policy, select the **Custom** category.
 
+    ![Create a policy.](media/app-governance/app-governance-create-policy.png)
+
 ## App policy templates
 
 To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category of app template, select the name of the template, and then select **Next**.
