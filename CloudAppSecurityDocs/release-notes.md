@@ -18,10 +18,6 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
->[!IMPORTANT]
->**Enhanced proxy URL for access controls (gradual rollout)**  
-Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
-
 >[!NOTE]
 >In November 2021, Defender for Cloud Apps is updating its IP addresses in the **App connectors** and **Access and session controls** sections. Please update the IP addresses in your third-party apps and network appliance rules accordingly. For more information, see the [App connector](network-requirements.md#app-connector) and [Access and session controls](network-requirements.md#access-and-session-controls) documentation.
 
