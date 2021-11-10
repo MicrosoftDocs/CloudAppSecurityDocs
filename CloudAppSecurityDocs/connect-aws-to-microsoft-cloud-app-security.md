@@ -17,6 +17,8 @@ You can connect one or both of the following AWS to Defender for Cloud Apps conn
 
 Since you can add either or both of the connections, the steps in this article are written as independent instructions. If you've already added one of the connections, where relevant edit the existing configurations.
 
+<a name="how-to-connect-aws-security-configuration-to-cloud-app-security"></a>
+
 ## How to connect AWS Security auditing to Defender for Cloud Apps
 
 Use the following steps to configure your AWS auditing and then connect it to Defender for Cloud Apps.

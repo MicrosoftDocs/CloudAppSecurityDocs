@@ -13,7 +13,7 @@ Microsoft Defender for Cloud Apps supports role-based access control. This artic
 >[!IMPORTANT]
 >We have changed the flow for adding external admins to Defender for Cloud Apps. External admin not enrolled using the new process will be deleted by October 31st. For more information, see [Invite external admins](#invite-external-admins).
 
-<a name="manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>
+<a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>
 
 ## Office 365 and Azure AD roles with access to Defender for Cloud Apps
 
