@@ -1,6 +1,6 @@
 ---
 title: View your apps
-ms.date: 10/29/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 description: View your apps.
 ---

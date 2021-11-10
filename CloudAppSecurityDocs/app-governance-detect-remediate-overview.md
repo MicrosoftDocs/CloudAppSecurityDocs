@@ -1,6 +1,6 @@
 ---
 title: Learn about app threat detection and remediation
-ms.date: 10/29/2021
+ms.date: 11/09/2021
 ms.topic: conceptual
 description: Learn about app threat detection and remediation.
 ---

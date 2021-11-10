@@ -1,6 +1,6 @@
 ---
 title: Learn about visibility and insights
-ms.date: 10/29/2021
+ms.date: 11/09/2021
 ms.topic: conceptual
 description: Learn about visibility and insights.
 ---

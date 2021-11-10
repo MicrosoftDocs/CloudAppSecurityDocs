@@ -1,16 +1,16 @@
 ---
-title: What's new in Cloud App Security
-description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 10/31/2021
+title: What's new in Microsoft Defender for Cloud Apps
+description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
+ms.date: 11/09/2021
 ms.topic: overview
 ---
-# What's new in Microsoft Cloud App Security
+# What's new in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-*Applies to: Microsoft Cloud App Security*
+*Applies to: Microsoft Defender for Cloud Apps*
 
-This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
+This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 

@@ -1,7 +1,7 @@
 ---
 title: List - Data Enrichment API
-description: This article describes the list request in Cloud App Security's Data Enrichment API.
-ms.date: 12/13/2020
+description: This article describes the list request in the Defender for Cloud Apps Data Enrichment API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # List - Data Enrichment API
