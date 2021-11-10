@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
-description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
+description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 ms.date: 11/09/2021
 ms.topic: overview
 ---
