@@ -1,6 +1,6 @@
 ---
 title: Learn about app policies
-ms.date: 10/29/2021
+ms.date: 11/09/2021
 ms.topic: overview
 description: Learn about app policies.
 ---

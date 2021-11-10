@@ -1,7 +1,7 @@
 ---
 title: Fetch - Files API
-description: This article describes the fetch request in Cloud App Security's Files API.
-ms.date: 03/27/2020
+description: This article describes the fetch request in the Defender for Cloud Apps Files API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Fetch - Files API
@@ -10,7 +10,7 @@ ms.topic: reference
 
 > [!NOTE]
 >
-> - This API will soon be deprecated. Microsoft Cloud App Security is developing a new solution for identifying and acting upon files that violate policies.
+> - This API will soon be deprecated. Microsoft Defender for Cloud Apps is developing a new solution for identifying and acting upon files that violate policies.
 > - This API is not available for Office 365 Cloud App Security.
 
 Run the GET request to fetch the file matching the specified primary key.

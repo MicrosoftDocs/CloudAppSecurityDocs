@@ -1,14 +1,14 @@
 ---
-title: Cloud App Security Alerts API
+title: Defender for Cloud Apps Alerts API
 description: This article provides information about using the Alerts API.
-ms.date: 05/04/2021
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Alerts API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-The Alerts API provides you with information about immediate risks identified by Cloud App Security that require attention. Alerts can result from suspicious usage patterns or from files containing content that violates company policy.
+The Alerts API provides you with information about immediate risks identified by Defender for Cloud Apps that require attention. Alerts can result from suspicious usage patterns or from files containing content that violates company policy.
 
 The following lists the supported requests:
 

@@ -1,6 +1,6 @@
 ---
 title: App governance in Microsoft 365
-ms.date: 10/29/2021
+ms.date: 11/09/2021
 ms.topic: conceptual
 description: Implement Microsoft app governance capabilities to govern your apps.
 ---

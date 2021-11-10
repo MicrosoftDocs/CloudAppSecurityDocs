@@ -1,6 +1,6 @@
 ---
 title: Create app policies
-ms.date: 11/02/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 description: Learn how to create app policies.
 ---

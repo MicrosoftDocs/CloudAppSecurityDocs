@@ -1,7 +1,7 @@
 ---
-title: Cloud App Security Files API
+title: Defender for Cloud Apps Files API
 description: This article provides information about using the Files API.
-ms.date: 03/27/2020
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Files API
