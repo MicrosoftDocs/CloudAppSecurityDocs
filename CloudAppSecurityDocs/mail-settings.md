@@ -11,7 +11,7 @@ ms.topic: how-to
 This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps to your users when a breach is detected.
 
 > [!NOTE]
-> This customization only affects the notifications sent to your end users, not the notifications sent to Cloud App Security administrators.
+> This customization only affects the notifications sent to your end users, not the notifications sent to Defender for Cloud Apps administrators.
 
 ## <a name="mailsettings"></a> Set email notification preferences
 

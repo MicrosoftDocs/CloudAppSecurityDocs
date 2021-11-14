@@ -1,14 +1,14 @@
 ---
-title: Archive of past updates in Cloud App Security
-description: This article is an archive that describes updates made in past releases of Cloud App Security.
+title: Archive of past updates in Defender for Cloud Apps
+description: This article is an archive that describes updates made in past releases of Defender for Cloud Apps.
 ms.date: 11/25/2020
 ms.topic: conceptual
 ---
-# Past-release archive of Microsoft Cloud App Security
+# Past-release archive of Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article is an archive that describes updates made in past releases of Cloud App Security. To see the latest what's new list, see [What's new in Cloud App Security](release-notes.md).
+This article is an archive that describes updates made in past releases of Defender for Cloud Apps. To see the latest what's new list, see [What's new in Defender for Cloud Apps](release-notes.md).
 
 ## Updates made in 2019
 
