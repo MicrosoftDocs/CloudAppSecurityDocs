@@ -48,7 +48,7 @@ You will see a list of apps and this information:
 - Privilege level
 - Certification
 
-  Indicates whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
+  Indicates whether the app is compatible with Microsoft technologies, compliant with Defender for Cloud Apps best practices, and supported by Microsoft.
 
 - App ID
 
