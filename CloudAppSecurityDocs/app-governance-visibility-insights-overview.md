@@ -7,9 +7,7 @@ description: Learn about visibility and insights.
 
 # Learn about visibility and insights
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
-
-With Microsoft app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level overview of the alerts and apps in your tenant that require administrator attention.
+With app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level overview of the alerts and apps in your tenant that require administrator attention.
 
 With app governance visibility and insights, you can see:
 
@@ -26,7 +24,7 @@ With app governance, you can see:
 
 - A dashboard of all insights.
 - Data accessed by single and all apps with workload and user level insights.
-- App information and metadata, such as permissions, registration date, and certification.
+- App information and metadata, such as Graph API and legacy permissions, registration date, and certification.
 - Publisher information and metadata, such as name and verification status.
 - Usage of top resources (emails and files) across the tenant.
 - Insights on:
