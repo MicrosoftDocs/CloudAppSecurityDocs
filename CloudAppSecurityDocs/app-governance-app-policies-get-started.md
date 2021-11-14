@@ -9,7 +9,7 @@ description: Get started learning about app policies.
 
 Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization.
 
-To see your list of current app policies, go to **Microsoft 365 Defender > App governance > Policies**. This will show you a list of all the policies you have created in app governance and in Microsoft Defender for Cloud Apps. In built threat detection policies will not show up here, but you can read more about these [here](https://docs.microsoft.com/en-us/cloud-app-security/app-governance-anomaly-detection-alerts)
+To see your list of current app policies, go to **Microsoft 365 Defender > App governance > Policies**. This will show you a list of all the policies you have created in app governance and in Microsoft Defender for Cloud Apps. In built threat detection policies will not show up here, but you can read more about these [here](app-governance-anomaly-detection-alerts.md)
 
 :::image type="content" source="media\app-governance\mapg-cc-policies.png" alt-text="The app governance policies summary page in the Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-policies.png":::
 

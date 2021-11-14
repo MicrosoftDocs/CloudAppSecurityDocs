@@ -16,7 +16,7 @@ You can create app policies from provided templates that can be customized, or y
 
 To create a new app policy, go to **Microsoft 365 Defender > App governance > Overview page > Policies**. Select the **Create New Policy** option:
 
-- To create a new app policy from a template, choose the relevant template category followed by the template in that category. 
+- To create a new app policy from a template, choose the relevant template category followed by the template in that category.
 - To create a custom policy, select the **Custom** category.
 
     ![Create a policy.](media/app-governance/app-governance-create-policy.png)
@@ -67,7 +67,7 @@ App governance includes these templates to generate alerts for Microsoft 365 cer
 |New uncertified app|Highlights new apps that haven't been through the Microsoft 365 certification process to ensure that they're expected in the tenant. <p> By default, this policy will flag all apps that were registered in the last seven days and are uncertified.|
 |||
 
-## Custom 
+## Custom
 
 Use a custom app policy when you need to do something not already done by one of the built-in templates.
 
