@@ -52,7 +52,6 @@ You will see a list of apps and this information:
 
 - App ID
 
-
 App governance sorts the app list alphabetically by **App name** by default. To sort the list by another app attribute, select the attribute name.
 
 You can also select **Search** to search for an app by name.

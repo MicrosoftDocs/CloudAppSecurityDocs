@@ -71,7 +71,7 @@ One of the following administrator roles is required to see app governance pages
 
 - Application Administrator
 - Cloud Application Administrator
-- Company or Global Administrator 
+- Company or Global Administrator
 - Compliance Administrator
 - Compliance Data Administrator
 - Global Reader
