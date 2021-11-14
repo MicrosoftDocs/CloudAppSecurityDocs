@@ -32,7 +32,7 @@ App governance is a platform-based solution that is an integral part of the Micr
 
 ## A first glimpse at app governance
 
-To see the app governance dashboard, go to [aka.ms/appgovernance](aka.ms/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
+To see the app governance dashboard, go to [aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
 ## App governance integration with Azure AD and Defender for Cloud Apps
 
