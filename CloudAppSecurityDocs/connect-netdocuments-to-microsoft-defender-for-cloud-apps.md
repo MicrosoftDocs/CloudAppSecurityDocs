@@ -32,7 +32,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     ![Your NetDocuments repository ID.](media/netdocuments-repository-id.png)
 
-1. Record the location of your account from the URL of your NetDocuments account. You'll need this information later.
+1. Record the URL of your account (it should be one of URLs in the following list). You'll need this information later.
 
     | Location       |              URL            |
     | -------------- | --------------------------- |
@@ -54,7 +54,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. In the next screen, enter the following fields:
 
     - **Repository ID**: the app repository ID that you saved.
-    - **Location**: your account location.
+    - **Application URL**: the URL that you saved.
 
 1. Select **Connect in NetDocuments**.
 1. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
