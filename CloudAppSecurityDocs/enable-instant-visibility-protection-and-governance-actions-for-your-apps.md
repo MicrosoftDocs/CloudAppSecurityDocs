@@ -44,6 +44,9 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 The following tables list, per cloud app, which abilities are supported with App connectors:
 
+>[!NOTE]
+>Since not all app connectors support all abilities, some rows may be empty.
+
 ### Users and activities
 
 |   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
