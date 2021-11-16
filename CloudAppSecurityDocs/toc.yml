@@ -505,3 +505,13 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-app-security
+- name: Microsoft 365 Defender Docs
+  items:
+  - name: Microsoft 365 Defender
+    href: /microsoft-365/security/defender/
+  - name: Microsoft Defender for Office 365
+    href: /microsoft-365/security/office-365-security/
+  - name: Microsoft Defender for Endpoint
+    href: /microsoft-365/security/defender-endpoint/
+  - name: Microsoft Defender for Identity
+    href: /defender-for-identity/
