@@ -89,9 +89,9 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **File name** – File name or sub string of the name as defined in the cloud app, for example, all files with a password in their name.
 
-- **Classification label** - Search for files with specific tags set. Labels are either:
-    - **Azure Information Protection tags** - Requires integration with Azure Information Protection.
-    - **Cloud App Security tags** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally.
+- **Sensitivity label** - Search for files with specific tags set. Labels are either:
+    - **Microsoft Information Protection tags** - Requires integration with Microsoft Information Protection.
+    - **Defender for Cloud Apps tags** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally.
         - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
         - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
         - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
