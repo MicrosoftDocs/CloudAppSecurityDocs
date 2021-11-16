@@ -125,7 +125,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **For more information**:
 
 * [Azure Information Protection integration](azip-integration.md)
-* [Tutorial: Automatically apply Azure Information Protection classification labels](use-case-information-protection.md)
+* [Tutorial: Automatically apply Microsoft Information Protection sensitivity labels](use-case-information-protection.md)
 
 ---
 

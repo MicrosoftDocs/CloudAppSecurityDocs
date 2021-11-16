@@ -30,8 +30,8 @@ The following governance actions can be taken for connected apps either on a spe
 - **Governance actions in apps** - Granular actions can be enforced per app, specific actions vary depending on app terminology.
 
   - **Labeling**
-    - **Apply label** - Ability to add an Azure Information Protection classification label.
-    - **Remove label** - Ability to remove an Azure Information Protection classification label.
+    - **Apply label** - Ability to add an Microsoft Information Protection sensitivity label.
+    - **Remove label** - Ability to remove an Microsoft Information Protection sensitivity label.
   - **Change sharing**
 
     - **Remove public sharing** – Allow access only to named collaborators, for example: *Remove public access* for Google Workspace, and *Remove direct shared link* for Box and Dropbox.
@@ -129,8 +129,8 @@ For information about how governance actions are treated when there are policy c
 |File policy and Activity policy | File, Activity |Notify user|Sends an email to users to notify them that something they did or a file they own violates a policy. You can add a custom notification to let them know what the violation was. |All |
 |File policy and Files|File | Remove editors' ability to share|In Google Drive, the default editor permissions of a file allow sharing as well. This governance action restricts this option and restricts file sharing to the owner.| Google Workspace|
 |File policy and Files|File | [Put in admin quarantine](use-case-admin-quarantine.md) |Removes any permissions from the file and moves the file to a quarantine folder in a location for the admin. This action enables the admin to review the file and remove it.| Office 365 SharePoint, OneDrive for Business, Box|
-|File policy and Files|File | Apply classification label|Applies an Azure Information Protection classification label to files automatically based on the conditions set in the policy.| Box, One Drive, Google Workspace, SharePoint |
-|File policy and Files|File | Remove classification label | Removes an Azure Information Protection classification label from files automatically based on the conditions set in the policy. You can remove labels only if they do not include protection, and they were applied from within Defender for Cloud Apps, not labels applied directly in Information Protection.| Box, One Drive, Google Workspace, SharePoint |
+|File policy and Files|File | Apply classification label|Applies an Microsoft Information Protection sensitivity label to files automatically based on the conditions set in the policy.| Box, One Drive, Google Workspace, SharePoint |
+|File policy and Files|File | Remove classification label | Removes an Microsoft Information Protection sensitivity label from files automatically based on the conditions set in the policy. You can remove labels only if they do not include protection, and they were applied from within Defender for Cloud Apps, not labels applied directly in Information Protection.| Box, One Drive, Google Workspace, SharePoint |
 |File policy, Activity policy, Alerts | App |Require users to sign in again| You can require users to sign in again to all Office 365 and Azure AD apps as a quick and effective remediation for suspicious user activity alerts and compromised accounts. You can find the new governance in the policy settings and the alert pages, next to the Suspend user option. | Office 365, Azure AD |
 |Files |File |Restore from user quarantine |Restores a user from being quarantined. |Box |
 |Files |File | Grant read permissions to myself| Grants read permissions for the file for yourself so you can access the file and understand if it has a violation or not.| Google Workspace|

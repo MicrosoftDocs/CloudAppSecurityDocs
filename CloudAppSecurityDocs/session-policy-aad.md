@@ -128,7 +128,7 @@ Select **Block activities** to block specific activities, which you can find usi
 
 When **Protect** is set as the **Action** to be taken in the Defender for Cloud Apps session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy's file filters. Labels are configured in the Azure Information Protection console and **Protect** must be selected within the label for it to appear as an option in the Defender for Cloud Apps policy. When a label is selected, and a file is downloaded that meets the criteria of the Defender for Cloud Apps policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.
 
-Defender for Cloud Apps currently supports applying [Azure Information Protection classification labels](azip-integration.md) for the following file types:
+Defender for Cloud Apps currently supports applying [Microsoft Information Protection sensitivity labels](azip-integration.md) for the following file types:
 
 * Word: docm, docx, dotm, dotx
 * Excel: xlam, xlsm, xlsx, xltx

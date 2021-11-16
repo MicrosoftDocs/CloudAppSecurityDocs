@@ -1,10 +1,10 @@
 ---
-title: Automatically apply Azure Information Protection classification labels tutorial
-description: This tutorial describes how to automatically apply Azure Information Protection classification labels in Microsoft Defender for Cloud Apps.
+title: Automatically apply Microsoft Information Protection sensitivity labels tutorial
+description: This tutorial describes how to automatically apply Microsoft Information Protection sensitivity labels in Microsoft Defender for Cloud Apps.
 ms.date: 11/09/2021
 ms.topic: tutorial
 ---
-# Tutorial: Automatically apply Azure Information Protection classification labels
+# Tutorial: Automatically apply Microsoft Information Protection sensitivity labels
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

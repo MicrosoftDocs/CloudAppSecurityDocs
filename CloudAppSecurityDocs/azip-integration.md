@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps lets you apply Azure Information Protection classification labels automatically, with or without protection, to files as a file policy governance action. You can also investigate files by filtering for the applied classification label within the Defender for Cloud Apps portal. Using classifications enables greater visibility and control of your sensitive data in the cloud. Integrating Azure Information Protection with Defender for Cloud Apps is as easy as selecting one single checkbox.
+Microsoft Defender for Cloud Apps lets you apply Microsoft Information Protection sensitivity labels automatically, with or without protection, to files as a file policy governance action. You can also investigate files by filtering for the applied classification label within the Defender for Cloud Apps portal. Using classifications enables greater visibility and control of your sensitive data in the cloud. Integrating Azure Information Protection with Defender for Cloud Apps is as easy as selecting one single checkbox.
 
 > [!NOTE]
 > This article is also relevant for Office 365 unified sensitivity labels if you already [migrated your classification labels for the Office 365 Security and Compliance Center](/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Office 365 Security and Compliance Center, Defender for Cloud Apps will only use the preexisting labels configured in the Azure Information Protection portal.
@@ -29,7 +29,7 @@ By integrating Azure Information Protection into Defender for Cloud Apps, you ca
 
 To use labels in Defender for Cloud Apps, the labels must be published as part of the policy. If you're using Azure Information Protection, labels must be published via the Azure Information Protection portal. If you migrated to unified labels, labels must be published via Office 365 Security and Compliance Center.
 
-Defender for Cloud Apps currently supports applying Azure Information Protection classification labels for the following file types:
+Defender for Cloud Apps currently supports applying Microsoft Information Protection sensitivity labels for the following file types:
 
 - Word: docm, docx, dotm, dotx
 - Excel: xlam, xlsm, xlsx, xltx
@@ -42,7 +42,7 @@ This feature is currently available for files stored in Box, Google Workspace, S
 
 ## How it works
 
-You're probably familiar with file classification labels in [Azure Information Protection](/azure/information-protection/what-is-information-protection). You can see the Azure Information Protection classification tags in Defender for Cloud Apps. As soon as you integrate Defender for Cloud Apps with Azure Information Protection, Defender for Cloud Apps scans files as follows:
+You're probably familiar with file classification labels in [Azure Information Protection](/azure/information-protection/what-is-information-protection). You can see the Microsoft Information Protection sensitivity tags in Defender for Cloud Apps. As soon as you integrate Defender for Cloud Apps with Azure Information Protection, Defender for Cloud Apps scans files as follows:
 
 1. Defender for Cloud Apps retrieves the list of all the classification labels used in your tenant. This action is performed every hour to keep the list up to date.
 
@@ -51,7 +51,7 @@ You're probably familiar with file classification labels in [Azure Information P
     - If you enabled automatic scan, all new or modified files are added to the scan queue and all existing files and repositories will be scanned.
     - If you set a file policy to search for classification labels, these files are added to the scan queue for classification labels.
 
-3. As noted above, these scans are for the classification labels discovered in the initial scan Defender for Cloud Apps does to see which classification labels are used in your tenant. External labels, classification labels set by someone external to your tenant, are added to the list of classification labels. If you don't want to scan for these, select the **Only scan files for Azure Information Protection classification labels from this tenant** check box.
+3. As noted above, these scans are for the classification labels discovered in the initial scan Defender for Cloud Apps does to see which classification labels are used in your tenant. External labels, classification labels set by someone external to your tenant, are added to the list of classification labels. If you don't want to scan for these, select the **Only scan files for Microsoft Information Protection sensitivity labels from this tenant** check box.
 
 4. After you enable Azure Information Protection on Defender for Cloud Apps, all new files that are added to your connected cloud apps will be scanned for classification labels.
 
@@ -69,27 +69,27 @@ You're probably familiar with file classification labels in [Azure Information P
 
 ### Enable Azure Information Protection
 
-All you have to do to integrate Azure Information Protection with Defender for Cloud Apps is click a single checkbox. By enabling automatic scan, you enable searching for Azure Information Protection classification labels on your Office 365 files without the need to create a policy. After you enable it, if you have files in your cloud environment that are labeled with Azure Information Protection classification labels, you'll see them in Defender for Cloud Apps.
+All you have to do to integrate Azure Information Protection with Defender for Cloud Apps is click a single checkbox. By enabling automatic scan, you enable searching for Microsoft Information Protection sensitivity labels on your Office 365 files without the need to create a policy. After you enable it, if you have files in your cloud environment that are labeled with Microsoft Information Protection sensitivity labels, you'll see them in Defender for Cloud Apps.
 
 To enable Defender for Cloud Apps to scan files with content inspection enabled for classification labels:
 
 1. In Defender for Cloud Apps, under the settings cog, select the **Settings** page under the **System** heading.
 
     ![Settings menu.](media/azip-system-settings.png)
-1. Under **Azure Information Protection**, select **Automatically scan new files for Azure Information Protection classification labels**.
+1. Under **Azure Information Protection**, select **Automatically scan new files for Microsoft Information Protection sensitivity labels**.
 
     ![enable azure information protection.](media/enable-azip.png)
 
-After enabling Azure Information Protection, you'll be able to see files that have classification labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Azure Information Protection integration features to apply Azure Information Protection classification labels (with or without protection) in the Defender for Cloud Apps portal, by adding them directly to files or by configuring a file policy to apply classification labels automatically as a governance action.
+After enabling Azure Information Protection, you'll be able to see files that have classification labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Azure Information Protection integration features to apply Microsoft Information Protection sensitivity labels (with or without protection) in the Defender for Cloud Apps portal, by adding them directly to files or by configuring a file policy to apply classification labels automatically as a governance action.
 
 > [!NOTE]
-> Automatic scan does not scan existing files until they are modified again. To scan existing files for Azure Information Protection classification labels, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects Azure Information Protection classification labels.
+> Automatic scan does not scan existing files until they are modified again. To scan existing files for Microsoft Information Protection sensitivity labels, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects Microsoft Information Protection sensitivity labels.
 
 #### Set internal and external tags
 
 By default, Defender for Cloud Apps scans classification labels that were defined in your organization as well as external ones defined by other organizations.
 
-To ignore classification labels set external to your organization, in the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go under **Settings** and **Azure Information Protection**. Select **Only scan files for Azure Information Protection classification labels and content inspection warnings from this tenant**.
+To ignore classification labels set external to your organization, in the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go under **Settings** and **Azure Information Protection**. Select **Only scan files for Microsoft Information Protection sensitivity labels and content inspection warnings from this tenant**.
 
 ![ignore labels.](media/azip-ignore.png)
 
@@ -110,7 +110,7 @@ To ignore classification labels set external to your organization, in the [Defen
 
 4. You can also remove classification labels by choosing the **Remove classification label** option.
 
-For more information about how Defender for Cloud Apps and Azure Information Protection work together, see [Automatically apply Azure Information Protection classification labels](use-case-information-protection.md).
+For more information about how Defender for Cloud Apps and Azure Information Protection work together, see [Automatically apply Microsoft Information Protection sensitivity labels](use-case-information-protection.md).
 
 ### Automatically label files
 
@@ -131,7 +131,7 @@ Follow these instructions to create the file policy:
 
 ### Control file exposure
 
-- For example, if you labeled the document below with an Azure Information Protection classification label:
+- For example, if you labeled the document below with an Microsoft Information Protection sensitivity label:
 
     ![sample Azure Information Protection screen.](media/azip-screen.png)
 

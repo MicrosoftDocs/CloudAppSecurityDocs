@@ -302,7 +302,7 @@ Prevent users from uploading unprotected data to the cloud, by utilizing the Def
 
 - Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-- Azure Information Protection classification labels must be configured and used inside your organization.
+- Microsoft Information Protection sensitivity labels must be configured and used inside your organization.
 
 ### Steps
 
@@ -322,7 +322,7 @@ Prevent users from uploading unprotected data to the cloud, by utilizing the Def
 6. Click **Create**.
 
 > [!NOTE]
-> For the list of file types that Defender for Cloud Apps currently supports for Azure Information Protection classification labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
+> For the list of file types that Defender for Cloud Apps currently supports for Microsoft Information Protection sensitivity labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
 
 ## Next steps
 

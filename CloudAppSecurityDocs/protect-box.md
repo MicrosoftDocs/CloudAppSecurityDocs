@@ -47,7 +47,7 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 | Type | Action |
 | ---- | ---- |
-| Data governance | - Apply Azure Information Protection classification label<br />- Change shared link access level<br />- Put file in admin quarantine<br />- Put file in user quarantine<br />- Remove a collaborator from a file<br />- Remove Azure Information Protection classification label<br />- Remove direct shared links<br />- Remove external collaborators<br />- Send DLP violation digest to file owners<br />- Send violation digest to last file editor<br />- Set expiration date to a shared link<br /> - Trash file |
+| Data governance | - Apply Microsoft Information Protection sensitivity label<br />- Change shared link access level<br />- Put file in admin quarantine<br />- Put file in user quarantine<br />- Remove a collaborator from a file<br />- Remove Microsoft Information Protection sensitivity label<br />- Remove direct shared links<br />- Remove external collaborators<br />- Send DLP violation digest to file owners<br />- Send violation digest to last file editor<br />- Set expiration date to a shared link<br /> - Trash file |
 | User governance | - Suspend user<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).

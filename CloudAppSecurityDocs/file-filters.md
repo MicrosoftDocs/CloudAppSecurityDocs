@@ -165,7 +165,7 @@ You can view more information about each file, by clicking on the file itself in
 - **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys.
 - **Owner** - View the user page for the owner of this file.
 - **Matched policies** - See a list of policies the file matched.
-- **Classification label** - View the list of Azure Information Protection classification labels found in this file. You can then filter by all files matching this label.
+- **Classification label** - View the list of Microsoft Information Protection sensitivity labels found in this file. You can then filter by all files matching this label.
 
 The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Classification labels**.
 

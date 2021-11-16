@@ -43,7 +43,7 @@ Our approach to information protection can be split into the following phases th
     For those of you that have already done the hard work of identifying sensitive information and applying the appropriate sensitivity labels, you can use those labels in your policies without having to scan the contents again.
 1. **Enable Azure Information Protection integration**
     1. In Defender for Cloud Apps, under the settings cog, select the **Settings** page under the **System** heading.
-    1. Under **Azure Information Protection**, select **Automatically scan new files for Azure Information Protection classification labels**.
+    1. Under **Azure Information Protection**, select **Automatically scan new files for Microsoft Information Protection sensitivity labels**.
 
     For more information, see [Azure Information Protection integration](azip-integration.md).
 1. **Create policies to identify sensitive information in files**: Once you know the kinds of information you want to protect, it's time to create policies to detect them. Start by creating the following policies:
