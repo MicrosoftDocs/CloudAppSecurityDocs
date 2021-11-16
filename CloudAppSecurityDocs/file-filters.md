@@ -31,7 +31,7 @@ The basic filter provides you with great tools to get started filtering your fil
 
 ![basic file log filter.](media/file-log-filter-basic-1.png)
 
-To drill down into more specific files, you can expand the basic filter by clicking Advanced.
+To drill down into more specific files, you can expand the basic filter by clicking **Advanced**.
 
 ![advanced file log filter.](media/file-log-filter-advanced-1.png)
 
