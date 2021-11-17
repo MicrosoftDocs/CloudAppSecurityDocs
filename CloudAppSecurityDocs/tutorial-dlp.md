@@ -41,11 +41,11 @@ Our approach to information protection can be split into the following phases th
 1. **Define which information is sensitive**: Before looking for sensitive information in your files, you first need to define what counts as sensitive for your organization. As part of our [data classification service](dcs-inspection.md), we offer over 100 out-of-the-box sensitive information types, or you can [create your own](/microsoft-365/compliance/create-a-custom-sensitive-information-type) to suit to your company policy. **Defender for Cloud Apps is natively integrated with Microsoft Information Protection** and the same sensitive types and labels are available throughout both services. So when you want to define sensitive information, head over to the Microsoft Information Protection portal to create them, and once defined they will be available in Defender for Cloud Apps. You can also use advanced classifications types such as fingerprint or Exact Data Match (EDM).
 
     For those of you that have already done the hard work of identifying sensitive information and applying the appropriate sensitivity labels, you can use those labels in your policies without having to scan the contents again.
-1. **Enable Azure Information Protection integration**
+1. **Enable Microsoft Information Protection integration**
     1. In Defender for Cloud Apps, under the settings cog, select the **Settings** page under the **System** heading.
-    1. Under **Azure Information Protection**, select **Automatically scan new files for Microsoft Information Protection sensitivity labels**.
+    1. Under **Microsoft Information Protection**, select **Automatically scan new files for Microsoft Information Protection sensitivity labels**.
 
-    For more information, see [Azure Information Protection integration](azip-integration.md).
+    For more information, see [Microsoft Information Protection integration](azip-integration.md).
 1. **Create policies to identify sensitive information in files**: Once you know the kinds of information you want to protect, it's time to create policies to detect them. Start by creating the following policies:
 
     **File policy**  
@@ -65,7 +65,7 @@ Our approach to information protection can be split into the following phases th
     Use this type of policy to scan and protect files in real time on access to:
 
     - **Prevent data exfiltration**: Block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
-    - **Protect files on download**: Require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
+    - **Protect files on download**: Require documents to be labeled and protected with Microsoft Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
     - **Prevent the upload of unlabeled files**: Require a file to have the right label and protection before a sensitive file is uploaded, distributed, and used by others. With this action, you can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
 
     1. Go to **Control** > **Policies**, click **Create Policy**, and then select **Session policy**.
@@ -96,7 +96,7 @@ So now you can detect files with sensitive information, but what you really want
     - Trigger alerts and send email notifications about the incident
     - [Monitor all activities](session-policy-aad.md#monitor-session): Explicitly allows the download or upload of files and monitors all related activities.
     - [Block](session-policy-aad.md#block-download): Explicitly blocks the download or upload of files. Use this option to protect your organization's sensitive files from exfiltration or infiltration from any device, including unmanaged devices.
-    - [Protect](session-policy-aad.md#protect-download): Automatically applies a classification label to files that match the policy's file filters. Use this option to protect the download of sensitive files.
+    - [Protect](session-policy-aad.md#protect-download): Automatically applies a sensitivity label to files that match the policy's file filters. Use this option to protect the download of sensitive files.
 
 ### Phase 4: Monitor and report on your data
 

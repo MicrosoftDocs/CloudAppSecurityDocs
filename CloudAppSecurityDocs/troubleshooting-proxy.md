@@ -370,7 +370,7 @@ In session policies, when using the **Control file download (with inspection)** 
 
 **Recommended steps**
 
-1. If the **Protect** action is not available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Azure Information Protection integration](azip-integration.md).
+1. If the **Protect** action is not available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Microsoft Information Protection integration](azip-integration.md).
 1. If the **Protect** action is available, but are not seeing the appropriate labels.
     1. In Defender for Cloud Apps, in the menu bar, click the settings cog, select **Azure Information Protection**, and verify that the AIP integration is enabled.
     1. For Office labels, in the AIP portal, make sure **Unified Labeling** is selected.

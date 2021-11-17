@@ -36,7 +36,7 @@ You need a CASB to better understand your overall cloud posture across SaaS apps
 As an organization, you need to protect your users and confidential data from the different methods employed by malicious actors. In general, CASBs should help you do this by providing a wide array of capabilities that protect your environment across the following pillars:
 
 - **Visibility**: detect all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in
-- **Data security**: identify and control sensitive information (DLP); respond to classification labels on content
+- **Data security**: identify and control sensitive information (DLP); respond to sensitivity labels on content
 - **Threat protection**: offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware
 - **Compliance**: supply reports and dashboards to demonstrate cloud governance; assist efforts to conform to data residency and regulatory compliance requirements
 
