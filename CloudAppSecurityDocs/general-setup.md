@@ -40,9 +40,9 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out.
 
-1. If you're integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for information.
+1. If you're integrating with Microsoft Information Protection integration, see [Microsoft Information Protection Integration](azip-integration.md) for information.
 
-    * To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    * To work with Microsoft Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
 1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](mdi-integration.md) for information.
 

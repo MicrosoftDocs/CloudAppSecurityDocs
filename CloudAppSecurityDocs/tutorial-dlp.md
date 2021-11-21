@@ -49,12 +49,12 @@ Our approach to information protection can be split into the following phases th
 1. **Create policies to identify sensitive information in files**: Once you know the kinds of information you want to protect, it's time to create policies to detect them. Start by creating the following policies:
 
     **File policy**  
-    Use this type of policy to scan the content of files stored in your API connected cloud apps in near real-time and data at rest. Files are scanned using one of our supported inspection methods including **Azure Information Protection encrypted content** thanks to its **native integration** with Defender for Cloud Apps.
+    Use this type of policy to scan the content of files stored in your API connected cloud apps in near real-time and data at rest. Files are scanned using one of our supported inspection methods including **Microsoft Information Protection encrypted content** thanks to its **native integration** with Defender for Cloud Apps.
 
     1. Go to **Control** > **Policies**, click **Create Policy**, and then select **File policy**.
     1. Under **Inspection method**, choose and configure one of the following classification services:
 
-        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Office 365, Azure Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
+        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Office 365, Microsoft Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
         - **[Built-in DLP](content-inspection-built-in.md)**: Inspects files for sensitive information using our built-in DLP content inspection engine.
         - **[External DLP integration](icap-stunnel.md)**: For enterprises wishing to use their own third-party DLP solutions, Defender for Cloud Apps file policies can securely direct files for inspection to your external DLP solution via an ICAP server.
 
@@ -72,7 +72,7 @@ Our approach to information protection can be split into the following phases th
     1. Under **Session control type**, choose one of the options with DLP.
     1. Under **Inspection method**, choose and configure one of the following classification services:
 
-        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Office 365, Azure Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
+        - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Office 365, Microsoft Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
         - **[Built-in DLP](content-inspection-built-in.md)**: Inspects files for sensitive information using our built-in DLP content inspection engine.
 
     1. For highly sensitive files, select **Create an alert** and choose the alerts you require, so that you are informed when there are files with unprotected sensitive information in your organization.
@@ -82,11 +82,11 @@ You should create as many policies as required to detect sensitive data in compl
 
 ### Phase 3: Protect your data
 
-So now you can detect files with sensitive information, but what you really want to do is protect that information from potential threats. Once you are aware of an incident, you can manually remediate the situation or you can use one of the automatic governance actions provided by Defender for Cloud Apps for securing your files. Actions include, but are not limited to, Azure Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring, as follows:
+So now you can detect files with sensitive information, but what you really want to do is protect that information from potential threats. Once you are aware of an incident, you can manually remediate the situation or you can use one of the automatic governance actions provided by Defender for Cloud Apps for securing your files. Actions include, but are not limited to, Microsoft Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring, as follows:
 
 1. **[File policy governance](governance-actions.md#file-governance-actions) actions**: Uses the cloud app provider's API and our native integrations to secure files, including:
     - Trigger alerts and send email notifications about the incident
-    - Manage labels applied to a file to enforce native Azure Information Protection controls
+    - Manage labels applied to a file to enforce native Microsoft Information Protection controls
     - Change sharing access to a file
     - Quarantine a file
     - Remove specific file or folder permissions in Office 365

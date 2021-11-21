@@ -22,7 +22,7 @@ Defender for Cloud Apps allows admins to grant Defender for Cloud Apps permissio
 
 In order to give Defender for Cloud Apps the necessary permissions:
 
-1. Go to **Settings** and then **Azure Information Protection**.
+1. Go to **Settings** and then **Microsoft Information Protection**.
 2. Enable **Inspect protected files.**
 3. Follow the prompt to allow the required permissions in Azure Active Directory.
 4. You can configure the settings per file policy to determine which policies will scan protected files.

@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to identify which public permissions are set 
 
 ## Enhanced data-level encryption protection
 
-Defender for Cloud Apps integration with Azure Information Protection enables an added level of protection by automatically encrypting files. When Azure Information Protection encrypts files, applications that support Azure Information Protection like Office 365, know how to open the files and honors permissions set in the sensitivity labels. Use labels to apply specific protection rules. For example, set a file that can be opened but not shared, printed, forwarded, or edited.
+Defender for Cloud Apps integration with Microsoft Information Protection enables an added level of protection by automatically encrypting files. When Microsoft Information Protection encrypts files, applications that support Microsoft Information Protection like Office 365, know how to open the files and honors permissions set in the sensitivity labels. Use labels to apply specific protection rules. For example, set a file that can be opened but not shared, printed, forwarded, or edited.
 
 This strong level of protection travels with the file. The file is still protected if you send the file, copy it, or store it in your online storage app. If one of your employees loses a thumb drive with the file on it, the file will be locked. Should someone try to open the file, the file owner will receive an alert. With Defender for Cloud Apps, you can apply protection automatically. For example, set all files that have credit card numbers, or were uploaded by the finance department and are shared externally, to be automatically protected with a sensitivity label.
 
@@ -77,7 +77,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 >[!NOTE]
 >
 > - Defender for Cloud Apps currently supports automatic application of Microsoft Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
-> - When a document is labeled by using Defender for Cloud Apps, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [How to configure a label for visual markings for Azure Information Protection](/azure/information-protection/configure-policy-markings#when-visual-markings-are-applied).
+> - When a document is labeled by using Defender for Cloud Apps, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
 ## Next steps
 

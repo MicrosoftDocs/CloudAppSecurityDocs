@@ -42,7 +42,7 @@ This feature is currently available for files stored in Box, Google Workspace, S
 
 ## How it works
 
-You're probably familiar with file classification labels in [Azure Information Protection](/azure/information-protection/what-is-information-protection). You can see the Microsoft Information Protection sensitivity tags in Defender for Cloud Apps. As soon as you integrate Defender for Cloud Apps with Microsoft Information Protection, Defender for Cloud Apps scans files as follows:
+You can see the Microsoft Information Protection sensitivity tags in Defender for Cloud Apps. As soon as you integrate Defender for Cloud Apps with Microsoft Information Protection, Defender for Cloud Apps scans files as follows:
 
 1. Defender for Cloud Apps retrieves the list of all the sensitivity labels used in your tenant. This action is performed every hour to keep the list up to date.
 
@@ -81,7 +81,7 @@ To enable Defender for Cloud Apps to scan files with content inspection enabled 
 
     ![Enable Microsoft Information Protection.](media/enable-azip.png)
 
-After enabling Microsoft Information Protection, you'll be able to see files that have sensitivity labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Azure Information Protection integration features to apply Microsoft Information Protection sensitivity labels (with or without protection) in the Defender for Cloud Apps portal, by adding them directly to files or by configuring a file policy to apply sensitivity labels automatically as a governance action.
+After enabling Microsoft Information Protection, you'll be able to see files that have sensitivity labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Microsoft Information Protection integration features to apply Microsoft Information Protection sensitivity labels (with or without protection) in the Defender for Cloud Apps portal, by adding them directly to files or by configuring a file policy to apply sensitivity labels automatically as a governance action.
 
 > [!NOTE]
 > Automatic scan does not scan existing files until they are modified again. To scan existing files for Microsoft Information Protection sensitivity labels, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects Microsoft Information Protection sensitivity labels.
@@ -171,16 +171,11 @@ Follow these instructions to create the file policy:
 You can also choose to set alerts, user notification or take immediate action for these policies.
 Learn more about [governance actions](governance-actions.md).
 
-Learn more about [Azure Information Protection](/azure/information-protection/what-is-information-protection) and check out the Azure Information Protection [Quick start tutorial](/azure/information-protection/infoprotect-quick-start-tutorial).
+Learn more about [Microsoft Information Protection](/microsoft-365/compliance/information-protection).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
-
-## Related videos
-
-> [!div class="nextstepaction"]
-> [Defender for Cloud Apps + Azure Information Protection Integrations](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

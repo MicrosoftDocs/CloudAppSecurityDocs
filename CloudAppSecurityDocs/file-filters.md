@@ -19,7 +19,7 @@ To provide data protection, Microsoft Defender for Cloud Apps gives you visibili
 
 For example, use the **Files** page to secure externally shared files labeled as **Confidential**, as follows:
 
-After you connect an app to Defender for Cloud Apps, integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **Confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
+After you connect an app to Defender for Cloud Apps, integrate with Microsoft Information Protection. Then, in the **Files** page, filter for files labeled **Confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
 
 ![File filter confidential.](media/file-filter-confidential.png)
 
