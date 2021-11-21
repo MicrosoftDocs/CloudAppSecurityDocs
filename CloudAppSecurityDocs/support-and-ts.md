@@ -31,7 +31,7 @@ Select **support request** to create a new support request that opens to the **B
 1. Sign in to the Azure portal [https://portal.azure.com](https://portal.azure.com/) with your admin
     credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
-2. On the Azure **Help + support** page, select **Createa a support request**.
+2. On the Azure **Help + support** page, select **Create a support request**.
 
 3. On the **Basics** tab, for most support issues, choose the following options:
 
