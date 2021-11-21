@@ -24,7 +24,7 @@ This article provides information about how to personalize the email notificatio
 2. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Defender for Cloud Apps accomplishes the customization by using a third-party mail service called MailChimp&reg;. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Defender for Cloud Apps will send the notifications using the default settings.
 
     > [!NOTE]
-    > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](https://www.rfc-editor.org/rfc/rfc822.txt).
+    > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](https://datatracker.ietf.org/doc/html/rfc822).
 
 3. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following things:
 
