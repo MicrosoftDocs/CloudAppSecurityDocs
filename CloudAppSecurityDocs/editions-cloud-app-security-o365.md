@@ -47,6 +47,6 @@ Office 365 Cloud App Security is a subset of Microsoft Defender for Cloud Apps t
 
 ## Next steps
 
-- Read about the basics in [Getting started with Defender for Cloud Apps](getting-started-with-cloud-app-security.md).
+- Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)].

@@ -83,12 +83,12 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Connect Office 365 to Microsoft Defender for Cloud Apps](connect-office-365-to-microsoft-cloud-app-security.md)
+* [Connect Office 365 to Microsoft Defender for Cloud Apps](./connect-office-365.md)
 
 ---
 
 **Best practice**: Connect third-party apps  
-**Detail**: Connecting third-party apps to Defender for Cloud Apps gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](connect-aws-to-microsoft-cloud-app-security.md), [Box](connect-box-to-microsoft-cloud-app-security.md), [Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md), [Google Workspace](connect-google-workspace-to-microsoft-cloud-app-security.md), [Okta](connect-okta-to-microsoft-cloud-app-security.md), [Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md), [ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md), [WebEx](connect-webex-to-microsoft-cloud-app-security.md), and [Workday](connect-workday-to-microsoft-cloud-app-security.md).  
+**Detail**: Connecting third-party apps to Defender for Cloud Apps gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](./connect-aws.md), [Box](./connect-box.md), [Dropbox](./connect-dropbox.md), [Google Workspace](./connect-google-workspace.md), [Okta](./connect-okta.md), [Salesforce](./connect-salesforce.md), [ServiceNow](./connect-servicenow.md), [WebEx](./connect-webex.md), and [Workday](./connect-workday.md).  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
@@ -264,9 +264,9 @@ When dismissing alerts, it's important to investigate and understand why they ar
 **Detail**: Connecting each of these cloud platforms to Defender for Cloud Apps helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
 **For more information**:
 
-* [Connect Azure to Microsoft Defender for Cloud Apps](connect-azure-to-microsoft-cloud-app-security.md)
-* [Connect AWS to Microsoft Defender for Cloud Apps](connect-aws-to-microsoft-cloud-app-security.md)
-* [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](connect-google-gcp-to-microsoft-cloud-app-security.md)
+* [Connect Azure to Microsoft Defender for Cloud Apps](./connect-azure.md)
+* [Connect AWS to Microsoft Defender for Cloud Apps](./connect-aws.md)
+* [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](./connect-google-gcp.md)
 
 ---
 

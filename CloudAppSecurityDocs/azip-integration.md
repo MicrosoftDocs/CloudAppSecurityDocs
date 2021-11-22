@@ -25,7 +25,7 @@ By integrating Azure Information Protection into Defender for Cloud Apps, you ca
 > [!NOTE]
 > To enable this feature, you need both a Defender for Cloud Apps license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Defender for Cloud Apps syncs the organization's labels from the Azure Information Protection service.
 
-- To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+- To work with Azure Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
 
 To use labels in Defender for Cloud Apps, the labels must be published as part of the policy. If you're using Azure Information Protection, labels must be published via the Azure Information Protection portal. If you migrated to unified labels, labels must be published via Office 365 Security and Compliance Center.
 

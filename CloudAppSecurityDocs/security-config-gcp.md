@@ -15,7 +15,7 @@ This assessment provides an organizational view of security configuration recomm
 ## Prerequisites
 
 - You must set up GCP Security Command Center with Security Health Analytics for all your GCP projects in your organization. For more information, see [Setting up GCP Security Command Center](https://cloud.google.com/security-command-center/docs/quickstart-security-command-center) and [Enable Security Health Analytics](https://cloud.google.com/security-command-center/docs/how-to-use-security-health-analytics).
-- Your GCP projects must be connected to Defender for Cloud Apps. For more information, see [Connect GCP to Microsoft Defender for Cloud Apps](connect-google-gcp-to-microsoft-cloud-app-security.md).
+- Your GCP projects must be connected to Defender for Cloud Apps. For more information, see [Connect GCP to Microsoft Defender for Cloud Apps](./connect-google-gcp.md).
 
 ## How to view GCP security recommendations
 

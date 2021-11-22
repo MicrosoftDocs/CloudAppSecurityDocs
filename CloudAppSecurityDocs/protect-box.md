@@ -59,4 +59,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect Box to Microsoft Defender for Cloud Apps](connect-box-to-microsoft-cloud-app-security.md)
+> [How to connect Box to Microsoft Defender for Cloud Apps](./connect-box.md)

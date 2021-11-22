@@ -34,7 +34,7 @@ Use Defender for Cloud Apps with Azure Information Protection to embed classific
 ## Prerequisites
 
 - [Enable Defender for Cloud Apps and Azure Information Protection](azip-integration.md) for your tenant.
-- [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Defender for Cloud Apps.
+- [Connect Box](./connect-box.md) to Defender for Cloud Apps.
 
 ## Set up data protection
 

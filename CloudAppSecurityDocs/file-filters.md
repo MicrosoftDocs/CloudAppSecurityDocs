@@ -51,7 +51,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 >
 > **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt.
 
-- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [General Setup, Set up the portal](getting-started-with-cloud-app-security.md)
+- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [General Setup, Set up the portal](./get-started.md)
 
     - **Internal** - Any files within the Internal domains you set in [General setup](General-setup.md).
     - **External** - Any files saved in locations that aren't within the internal domains you set.

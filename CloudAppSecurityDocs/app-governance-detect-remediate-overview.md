@@ -7,7 +7,7 @@ description: Learn about app threat detection and remediation.
 
 # Learn about app threat detection and remediation
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 With Microsoft app governance, you can:
 

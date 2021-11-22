@@ -42,7 +42,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 1. If you're integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for information.
 
-    * To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    * To work with Azure Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
 
 1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](mdi-integration.md) for information.
 
