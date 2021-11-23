@@ -15,7 +15,7 @@ Microsoft Defender for Cloud Apps provides you with a security configuration ass
 - AWS Security Hub must be set up for all your AWS account regions. For more information, see [Setting Up AWS Security Hub](https://go.microsoft.com/fwlink/?linkid=2100208).
     > [!NOTE]
     > If this is the first time you're enabling Security Hub, it can take several hours for the initial data to become available.
-- Your Amazon Web Services must be connected to Defender for Cloud Apps. For more information, see [Connect AWS to Microsoft Defender for Cloud Apps](connect-aws-to-microsoft-cloud-app-security.md).
+- Your Amazon Web Services must be connected to Defender for Cloud Apps. For more information, see [Connect AWS to Microsoft Defender for Cloud Apps](./connect-aws.md).
 
 ## How to view AWS security recommendations
 

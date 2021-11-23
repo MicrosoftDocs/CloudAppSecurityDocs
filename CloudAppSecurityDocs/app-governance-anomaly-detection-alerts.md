@@ -120,7 +120,7 @@ This detection identifies an OAuth app that was found to have bad URL reputation
 
 **Understand the scope of the breach**
 
-Follow the tutorial on how to [investigate risky OAuth apps](/cloud-app-security/investigate-risky-oauth).
+Follow the tutorial on how to [investigate risky OAuth apps](./investigate-risky-oauth.md).
 
 ### OAuth App with Read scopes has suspicious Reply URL
 
@@ -452,4 +452,4 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review all activities done by the app.  
 1. Review the scopes granted by the app.  
 1. Review any inbox rule action created by the app.  
-1. Review any high importance email read activity done by the app.  
+1. Review any high importance email read activity done by the app. 

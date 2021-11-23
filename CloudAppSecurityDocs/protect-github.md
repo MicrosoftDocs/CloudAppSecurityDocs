@@ -31,4 +31,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps](connect-github-ec-to-microsoft-cloud-app-security.md)
+> [Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps](./connect-github-ec.md)

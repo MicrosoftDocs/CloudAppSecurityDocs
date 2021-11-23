@@ -65,4 +65,4 @@ Review our best practices for [blocking and protecting the download of sensitive
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect AWS to Microsoft Defender for Cloud Apps](connect-aws-to-microsoft-cloud-app-security.md)
+> [How to connect AWS to Microsoft Defender for Cloud Apps](./connect-aws.md)

@@ -86,4 +86,4 @@ The Defender for Cloud Apps team is always eager to hear your thoughts about our
 
 ## Next steps
 
-Read about the basics in [Getting started with Defender for Cloud Apps](getting-started-with-cloud-app-security.md)
+Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md)
