@@ -22,7 +22,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 >[!NOTE]
 >
 > - For a list of apps that support admin quarantine, see the list of [governance actions](governance-actions.md).
-> - If a file in SharePoint or OneDrive is detected to be malware, it is not quarantined in the Defender for Cloud Apps portal.
+> - If a file in SharePoint or OneDrive is detected to be malware, it can't be quarantined in the Defender for Cloud Apps portal. The file is already locked by SharePoint or OneDrive.
 > - Files labeled by Defender for Cloud Apps can't be quarantined.
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.

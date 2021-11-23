@@ -50,7 +50,3 @@ After a token is revoked, it's removed from the table, and the software that was
 > - Deprovisioned users API tokens are retained in Defender for Cloud Apps but cannot be used. Any attempt to use them will result in a permission denied response. However, we recommend that such tokens are revoked on the **API tokens** page.
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
-## Check out this video!
-
-[Microsoft Defender for Cloud Apps – REST APIs and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

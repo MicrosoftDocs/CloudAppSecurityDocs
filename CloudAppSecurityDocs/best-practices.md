@@ -87,8 +87,9 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 
 ---
 
-**Best practice**: Connect third-party apps  
-**Detail**: Connecting third-party apps to Defender for Cloud Apps gives you improved insights into your users' activities, threat detection, and governance capabilities. The following third-party app APIs are supported: [Amazon Web Services (AWS)](./connect-aws.md), [Box](./connect-box.md), [Dropbox](./connect-dropbox.md), [Google Workspace](./connect-google-workspace.md), [Okta](./connect-okta.md), [Salesforce](./connect-salesforce.md), [ServiceNow](./connect-servicenow.md), [WebEx](./connect-webex.md), and [Workday](./connect-workday.md).  
+**Best practice**: Connect your apps  
+**Detail**: Connecting your apps to Defender for Cloud Apps gives you improved insights into your users' activities, threat detection, and governance capabilities. To see which  third-party app APIs are supported, go to [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) 
+
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)

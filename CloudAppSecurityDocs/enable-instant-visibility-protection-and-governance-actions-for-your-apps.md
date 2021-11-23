@@ -175,9 +175,6 @@ To re-enable connected apps:
 > [!div class="nextstepaction"]
 > [Connecting third-party apps webinar](webinars.md#on-demand-webinars)
 
-> [!div class="nextstepaction"]
-> [Microsoft Defender for Cloud Apps – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
-
 ## Next steps
 
 > [!div class="nextstepaction"]
