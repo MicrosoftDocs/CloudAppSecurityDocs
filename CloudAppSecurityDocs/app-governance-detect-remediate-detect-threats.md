@@ -7,7 +7,7 @@ description: Remediate app threats.
 
 # Remediate app threats
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 You remediate app threats to your Microsoft 365 tenant through the **Alerts** page of the Microsoft app governance section of the Microsoft 365 Defender.
 

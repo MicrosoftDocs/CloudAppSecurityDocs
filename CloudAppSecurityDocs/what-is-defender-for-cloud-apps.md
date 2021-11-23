@@ -103,6 +103,6 @@ You can use policies to define your users' behavior in the cloud. Use policies t
 
 ## Next steps
 
-- Read about the basics in [Getting started with Defender for Cloud Apps](getting-started-with-cloud-app-security.md).
+- Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -83,7 +83,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [Connect Office 365 to Microsoft Defender for Cloud Apps](connect-office-365-to-microsoft-cloud-app-security.md)
+* [Connect Office 365 to Microsoft Defender for Cloud Apps](./connect-office-365.md)
 
 ---
 
@@ -265,9 +265,9 @@ When dismissing alerts, it's important to investigate and understand why they ar
 **Detail**: Connecting each of these cloud platforms to Defender for Cloud Apps helps you improve your threat detections capabilities. By monitoring administrative and sign-in activities for these services, you can detect and be notified about possible brute force attack, malicious use of a privileged user account, and other threats in your environment. For example, you can identify risks such as unusual deletions of VMs, or even impersonation activities in these apps.  
 **For more information**:
 
-* [Connect Azure to Microsoft Defender for Cloud Apps](connect-azure-to-microsoft-cloud-app-security.md)
-* [Connect AWS to Microsoft Defender for Cloud Apps](connect-aws-to-microsoft-cloud-app-security.md)
-* [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](connect-google-gcp-to-microsoft-cloud-app-security.md)
+* [Connect Azure to Microsoft Defender for Cloud Apps](./connect-azure.md)
+* [Connect AWS to Microsoft Defender for Cloud Apps](./connect-aws.md)
+* [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](./connect-google-gcp.md)
 
 ---
 

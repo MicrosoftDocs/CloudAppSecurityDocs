@@ -54,4 +54,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect Slack to Microsoft Defender for Cloud Apps (Preview)](connect-slack-to-microsoft-cloud-app-security.md)
+> [Connect Slack to Microsoft Defender for Cloud Apps (Preview)](./connect-slack.md)

@@ -7,7 +7,7 @@ description: Get started with app governance capabilities to govern your apps.
 
 # Get started with app governance
 
-[Microsoft 365 security & compliance licensing guidance for app governance.](https://aka.ms/ComplianceSD)
+[Microsoft 365 security & compliance licensing guidance for app governance.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 [![Sign up for the free trial of app governance](media/app-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
