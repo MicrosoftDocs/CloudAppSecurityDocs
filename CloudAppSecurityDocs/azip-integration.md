@@ -11,7 +11,7 @@ ms.topic: how-to
 Microsoft Defender for Cloud Apps lets you apply Microsoft Information Protection sensitivity labels automatically, with or without protection, to files as a file policy governance action. You can also investigate files by filtering for the applied sensitivity label within the Defender for Cloud Apps portal. Using labels enables greater visibility and control of your sensitive data in the cloud. Integrating Microsoft Information Protection with Defender for Cloud Apps is as easy as selecting one single checkbox.
 
 > [!NOTE]
-> This article is also relevant for Office 365 unified sensitivity labels if you already [migrated your classification labels for the Office 365 Security and Compliance Center](/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Office 365 Security and Compliance Center, Defender for Cloud Apps will only use the preexisting labels configured in the Azure Information Protection portal.
+> This article is also relevant for Microsoft 365 unified sensitivity labels if you already [migrated your classification labels for the Microsoft 365 Compliance center](/azure/information-protection/configure-policy-migrate-labels). If you did not migrate your existing classification labels, and you begin to create new labels in the Microsoft 365 Compliance center, Defender for Cloud Apps will only use the preexisting labels configured in the Azure Information Protection portal.
 
 By integrating Microsoft Information Protection into Defender for Cloud Apps, you can use the full power of both services and secure files in your cloud, including:
 
@@ -27,7 +27,7 @@ By integrating Microsoft Information Protection into Defender for Cloud Apps, yo
 
 - To work with Microsoft Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
 
-To use labels in Defender for Cloud Apps, the labels must be published as part of the policy. If you're using Microsoft Information Protection, labels must be published via the Azure Information Protection portal. If you migrated to unified labels, labels must be published via Office 365 Security and Compliance Center.
+To use labels in Defender for Cloud Apps, the labels must be published as part of the policy. If you're using Microsoft Information Protection, labels must be published via the Azure Information Protection portal. If you migrated to unified labels, labels must be published via the Microsoft 365 Compliance center.
 
 Defender for Cloud Apps currently supports applying Microsoft Information Protection sensitivity labels for the following file types:
 
