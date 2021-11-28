@@ -86,6 +86,8 @@ The User page helps you answer the questions:
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
 
+If the user was investigated and no suspicion for compromise was found, or in any case you prefer to reset the user's investigation priority score, you can reset the score by selecting the **Reset investigation priority score** link in the actions section in the top-right side of the page.
+
 ## Phase 3: Further investigate users<a name="investigate"></a>
 
 When you investigate a user based on an alert or if you saw an alert in an external system, there may be activities that alone may not be cause for alarm, but when Defender for Cloud Apps aggregates them together with other activities, the alert may be an indication of a suspicious event.
