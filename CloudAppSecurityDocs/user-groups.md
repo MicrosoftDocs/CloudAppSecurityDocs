@@ -48,7 +48,7 @@ Importing groups enables you to select those groups as filters when investigatin
 > - Only active users will be imported as part of the imported group. Any suspended, deleted, or disabled users will be ignored.
 > - There may be a short delay until imported user groups are available in filters.
 > - Only activities performed after importing a user group will be tagged as having been performed by a member of the user group.
-> - After the initial sync, groups are updated every hour.
+> - After the initial sync, groups are usually updated every hour. However, due to various factors there could be times where this might take several hours.
 
 For more information on using the User group filters, see [Activities](activity-filters.md).
 
