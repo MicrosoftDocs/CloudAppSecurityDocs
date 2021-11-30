@@ -170,7 +170,7 @@ For information on Defender for Cloud Apps compliance standards and the location
 
 ## Next steps
 
-- [Defender for Cloud Apps overview](https://www.microsoft.com/security/business/cloud-app-security)
+- [Defender for Cloud Apps overview](https://www.microsoft.com/security/business/cloud-apps-defender)
 - [Defender for Cloud Apps documentation](index.yml)
 - [Sign up for Defender for Cloud Apps](https://signup.microsoft.com/create-account/signup?ali=1&products=757c4c34-d589-46e4-9579-120bba5c92ed&OfferId=757c4c34-d589-46e4-9579-120bba5c92ed)
 
