@@ -134,14 +134,14 @@ To use App Connectors, you need to make sure you have the following things for e
 | Box | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions. |
 | Dropbox | Business/Enterprise | Admin |
 | GitHub | GitHub Enterprise Cloud | Owner |
-| GCP | | See the [connect GCP prerequisites](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites) |
+| GCP | | See the [connect GCP prerequisites](./connect-google-gcp.md#prerequisites) |
 | Google Workspace | Google Workspace Business or Enterprise preferred<br /><br />Google Workspace Enterprise (minimally) | Super Admin |
 | Office 365 | | Global Admin |
 | Okta | Enterprise (not trial) | Admin |
 | Salesforce | | Admin |
 | ServiceNow | Eureka and up | Admin + RestAPI role |
 | Webex | | Admin + Compliance Admin |
-| Workday | | See the [connect Workday prerequisites](connect-workday-to-microsoft-cloud-app-security.md#prerequisites) |
+| Workday | | See the [connect Workday prerequisites](./connect-workday.md#prerequisites) |
 
 ### ExpressRoute
 
@@ -168,15 +168,12 @@ Once disabled, the connector instance will stop consuming data from the connecto
 To re-enable connected apps:
 
 1. In the **Connected apps** page, in the relevant row, click the three dots and select **Edit app**. This starts the process to add a connector.
-1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Defender for Cloud Apps](connect-github-ec-to-microsoft-cloud-app-security.md).
+1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Defender for Cloud Apps](./connect-github-ec.md).
 
 ## Related videos
 
 > [!div class="nextstepaction"]
 > [Connecting third-party apps webinar](webinars.md#on-demand-webinars)
-
-> [!div class="nextstepaction"]
-> [Microsoft Defender for Cloud Apps – REST API's and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)
 
 ## Next steps
 

@@ -1,5 +1,5 @@
 ---
-title: Connect Workday to Defender for Cloud Apps (Preview)
+title: Connect Workday to Defender for Cloud Apps
 description: This article provides information about how to connect your Workday app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 11/09/2021
 ms.topic: how-to

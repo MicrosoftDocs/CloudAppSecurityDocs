@@ -24,7 +24,7 @@ The engine combines three aspects under each policy:
 
 * Automated actions for governance and remediation. For more information, see [Control](control.md).
     > [!NOTE]
-    > Only the governance action of the first triggered policy is guaranteed to be applied. For example, if a file policy has already applied a Microsoft Information Protection (MIP) label to a file, a second file policy cannot apply another MIP label to it.
+    > Only the governance action of the first triggered policy is guaranteed to be applied. For example, if a file policy has already applied a sensitivity label to a file, a second file policy cannot apply another sensitivity label to it.
 
 Once enabled, the policy continuously scans your cloud environment and identifies files that match the content and context filters, and apply the requested automated actions. These policies detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console-generated reports.
 

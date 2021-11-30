@@ -121,7 +121,7 @@ The following table show what data is surfaced for each product integration:
 | --- | --- | --- |
 | Microsoft 365 Defender | Alerts and user activities | Enabled automatically on Microsoft 365 Defender upon onboarding |
 | Microsoft Sentinel | Alerts and discovery data | [Enabled in Defender for Cloud Apps](siem-sentinel.md) and [configured in Microsoft Sentinel](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps) |
-| Microsoft 365 Compliance center | Alerts for Office 365 | Automatically streamed to Microsoft 365 Compliance center  |
+| Microsoft 365 compliance center | Alerts for Office 365 | Automatically streamed to Microsoft 365 compliance center  |
 | Microsoft Defender for Cloud | Alerts for Azure | Enabled by default in Defender for Cloud Apps; can be disabled in Microsoft Defender for Cloud |
 | Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Defender for Cloud Apps](flow-integration.md) |

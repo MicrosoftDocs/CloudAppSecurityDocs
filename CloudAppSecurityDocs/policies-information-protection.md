@@ -131,7 +131,7 @@ Detect files that are labeled as confidential and are stored in a non-compliant 
 
 ### Prerequisites
 
-Microsoft Information Protection labels are configured and used inside the organization.
+Sensitivity labels are configured and used inside the organization.
 
 ### Steps
 

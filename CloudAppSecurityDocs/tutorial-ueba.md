@@ -55,7 +55,7 @@ Blast radius adds an additional score factor to the investigation priority calcu
 
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
-1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](./connect-office-365.md).
 1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
 1. To enable insights across your on-premises environment, configure Defender for Cloud Apps to [integrate with your Defender for Identity environment](mdi-integration.md).
 
@@ -85,6 +85,8 @@ The User page helps you answer the questions:
 
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
+
+If the user was investigated and no suspicion for compromise was found, or in any case you prefer to reset the user's investigation priority score, you can reset the score by selecting the **Reset investigation priority score** link in the actions section in the top-right side of the page.
 
 ## Phase 3: Further investigate users<a name="investigate"></a>
 

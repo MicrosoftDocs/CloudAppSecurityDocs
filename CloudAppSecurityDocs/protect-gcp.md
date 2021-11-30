@@ -61,4 +61,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect GCP to Microsoft Defender for Cloud Apps](connect-google-gcp-to-microsoft-cloud-app-security.md)
+> [How to connect GCP to Microsoft Defender for Cloud Apps](./connect-google-gcp.md)

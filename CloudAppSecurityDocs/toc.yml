@@ -4,7 +4,7 @@ items:
 - name: Overview
   items:
   - name: What is Microsoft Defender for Cloud Apps?
-    href: what-is-cloud-app-security.md
+    href: ./what-is-defender-for-cloud-apps.md
   - name: Defender for Cloud Apps data security and privacy
     href: cas-compliance-trust.md
   - name: What's new in Defender for Cloud Apps
@@ -23,7 +23,7 @@ items:
   expanded: true
   items:
   - name: Getting started
-    href: getting-started-with-cloud-app-security.md
+    href: ./get-started.md
   - name: Best practices
     href: best-practices.md
 - name: Tutorials
@@ -215,41 +215,41 @@ items:
     - name: Connect apps to get visibility and protection
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Connect Azure
-      href: connect-azure-to-microsoft-cloud-app-security.md
+      href: ./connect-azure.md
     - name: Connect AWS
-      href: connect-aws-to-microsoft-cloud-app-security.md
+      href: ./connect-aws.md
     - name: Connect Box
-      href: connect-box-to-microsoft-cloud-app-security.md
+      href: ./connect-box.md
     - name: Connect Dropbox
-      href: connect-dropbox-to-microsoft-cloud-app-security.md
+      href: ./connect-dropbox.md
     - name: Connect GitHub
-      href: connect-github-ec-to-microsoft-cloud-app-security.md
+      href: ./connect-github-ec.md
     - name: Connect Google Workspace
-      href: connect-google-workspace-to-microsoft-cloud-app-security.md
+      href: ./connect-google-workspace.md
     - name: Connect GCP
-      href: connect-google-gcp-to-microsoft-cloud-app-security.md
+      href: ./connect-google-gcp.md
     - name: Connect NetDocuments (Preview)
       href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
     - name: Connect Office 365
-      href: connect-office-365-to-microsoft-cloud-app-security.md
+      href: ./connect-office-365.md
     - name: Connect Okta
-      href: connect-okta-to-microsoft-cloud-app-security.md
+      href: ./connect-okta.md
     - name: Connect OneLogin 
-      href: connect-onelogin-to-microsoft-cloud-app-security.md
+      href: ./connect-onelogin.md
     - name: Connect Salesforce
-      href: connect-salesforce-to-microsoft-cloud-app-security.md
+      href: ./connect-salesforce.md
     - name: Connect ServiceNow
-      href: connect-servicenow-to-microsoft-cloud-app-security.md
+      href: ./connect-servicenow.md
     - name: Connect Slack
-      href: connect-slack-to-microsoft-cloud-app-security.md
+      href: ./connect-slack.md
     - name: Connect Smartsheet
-      href: connect-smartsheet-to-microsoft-cloud-app-security.md
+      href: ./connect-smartsheet.md
     - name: Connect Webex
-      href: connect-webex-to-microsoft-cloud-app-security.md
+      href: ./connect-webex.md
     - name: Connect Workday
-      href: connect-workday-to-microsoft-cloud-app-security.md
+      href: ./connect-workday.md
     - name: Connect Zendesk (Preview)
-      href: connect-zendesk-to-microsoft-cloud-app-security.md
+      href: ./connect-zendesk.md
   - name: Deploy Conditional Access App Control apps
     items:
     - name: Deploy Conditional Access App Control for featured apps
@@ -505,3 +505,13 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-app-security
+- name: Microsoft 365 Defender Docs
+  items:
+  - name: Microsoft 365 Defender
+    href: /microsoft-365/security/defender/
+  - name: Microsoft Defender for Office 365
+    href: /microsoft-365/security/office-365-security/
+  - name: Microsoft Defender for Endpoint
+    href: /microsoft-365/security/defender-endpoint/
+  - name: Microsoft Defender for Identity
+    href: /defender-for-identity/

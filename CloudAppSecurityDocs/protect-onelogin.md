@@ -51,4 +51,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect OneLogin to Microsoft Defender for Cloud Apps (Preview)](connect-onelogin-to-microsoft-cloud-app-security.md)
+> [Connect OneLogin to Microsoft Defender for Cloud Apps (Preview)](./connect-onelogin.md)

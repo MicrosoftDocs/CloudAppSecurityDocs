@@ -26,7 +26,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Defender for Cloud Apps?
-            url: what-is-cloud-app-security.md
+            url: ./what-is-defender-for-cloud-apps.md
           - text: Top 20 CASB use cases
             url: https://go.microsoft.com/fwlink/p/?linkid=2099428
       - linkListType: whats-new
@@ -44,7 +44,7 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Get started with Defender for Cloud Apps
-            url: getting-started-with-cloud-app-security.md
+            url: ./get-started.md
       - linkListType: reference
         links:
           - text: Using the Defender for Cloud Apps REST API

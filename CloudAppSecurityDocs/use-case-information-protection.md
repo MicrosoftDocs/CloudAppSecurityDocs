@@ -8,7 +8,7 @@ ms.topic: tutorial
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Defender for Cloud Apps helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying a Microsoft Information Protection label is one of a long list of available [governance actions](governance-actions.md).
+In a perfect world, all your employees understand the importance of information protection and work within your policies. But in a real world, it's probable a partner who works with accounting uploads a document to your Box repository with the wrong permissions. A week later you realize your enterprise's confidential information was leaked to your competition. Microsoft Defender for Cloud Apps helps you prevent this kind of disaster before it happens. This feature is available for Box, SharePoint and OneDrive for Business. Applying a sensitivity label is one of a long list of available [governance actions](governance-actions.md).
 
 In this tutorial, you'll learn how to identify which public permissions are set on a document that's saved in your cloud storage, so you're alerted when a breach occurs. In addition, you can automatically apply your Microsoft Information Protection **Confidential** sensitivity label to provide added encryption to files.
 
@@ -33,12 +33,12 @@ Use Defender for Cloud Apps with Microsoft Information Protection to embed class
 
 ## Prerequisites
 
-- [Enable Defender for Cloud Apps and Microsoft Information Protection](azip-integration.md) for your tenant.
-- [Connect Box](connect-box-to-microsoft-cloud-app-security.md) to Defender for Cloud Apps.
+- [Enable Defender for Cloud Apps and Microosoft Information Protection](azip-integration.md) for your tenant.
+- [Connect Box](./connect-box.md) to Defender for Cloud Apps.
 
 ## Set up data protection
 
-Let's set up a policy that looks for credit card numbers in files stored in your Box account. When files are found, automatically apply a Microsoft Information Protection label and control what happens to all files with that label.
+Let's set up a policy that looks for credit card numbers in files stored in your Box account. When files are found, automatically apply a sensitivity label and control what happens to all files with that label.
 
 1. Start protecting the data you store in Box by setting up a policy that will encrypt any sensitive data stored in Box:
 
@@ -76,7 +76,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
 >[!NOTE]
 >
-> - Defender for Cloud Apps currently supports automatic application of Microsoft Information Protection labels on Box, GSuite, SharePoint and OneDrive for business.
+> - Defender for Cloud Apps currently supports automatic application of sensitivity labels on Box, GSuite, SharePoint and OneDrive for business.
 > - When a document is labeled by using Defender for Cloud Apps, visual markings are not immediately applied but are applied when that document is opened in an Office app and the document is first saved. For more information, see [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
 ## Next steps
