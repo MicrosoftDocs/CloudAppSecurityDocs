@@ -21,7 +21,7 @@ Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringin
 
 Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This is a subset of Microsoft Defender for Cloud Apps. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
 
-[Upgrade to Microsoft Defender for Cloud Apps](https://www.microsoft.com/security/business/cloud-app-security) to receive the full suite of Cloud Access Security Broker (CASB) capabilities offered by Microsoft Defender for Cloud Apps.
+[Upgrade to Microsoft Defender for Cloud Apps](https://www.microsoft.com/security/business/cloud-apps-defender) to receive the full suite of Cloud Access Security Broker (CASB) capabilities offered by Microsoft Defender for Cloud Apps.
 
 ### Feature comparison
 
