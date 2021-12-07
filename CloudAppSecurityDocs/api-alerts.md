@@ -54,7 +54,6 @@ The response object defines the following properties.
 | isPreview            | bool   | Alerts that have been recently released as GA                |
 | audits *(optional)*  | list   | List of event ids that are related to the alert              |
 | threatScore          | int    | User investigation priority                                  |
-| threatScoreReasoning | list   | The activity's investigation priority score evidence             |
 
 ## Filters
 
