@@ -26,7 +26,7 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and encrypted when you integrate with Microsoft Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
-- **Prevent upload of unlabeled files**: Before a sensitive file is uploaded, distributed, and used by others, it's important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
+- **Prevent upload of unlabeled files**: Before a sensitive file is uploaded, distributed, and used by others, it's important to make sure that the sensitive file has the label defined by your organization's policy. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
 
 - **Block potential malware**: You can protect your environment from malware by blocking the upload of potentially malicious files. Any file that is uploaded or downloaded can be scanned against Microsoft threat intelligence and blocked instantaneously.
 
