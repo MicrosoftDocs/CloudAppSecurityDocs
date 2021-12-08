@@ -1,7 +1,7 @@
 ---
 title: Deploy Defender for Cloud Apps Conditional Access App Control for Azure AD apps
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for Azure AD apps.
-ms.date: 11/09/2021
+ms.date: 12/08/2021
 ms.topic: how-to
 ---
 # Deploy Conditional Access App Control for featured apps
@@ -50,13 +50,13 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 
 1. In Azure AD, browse to **Security** > **Conditional Access**.
 
-1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy**.
+1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy** -> **Create new policy**.
 
 1. On the **New** pane, in the **Name** textbox, enter the policy name.
 
-1. Under **Assignments**, select **Users and groups**, assign the users that will be onboarding (initial sign-on and verification) the app, and then select **Done**.
+1. Under **Assignments**, select **Users or workload identities** and assign the users and groups that will be onboarding (initial sign-on and verification) the app.
 
-1. Under **Assignments**, select **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then select **Done**.
+1. Under **Assignments**, select **Cloud apps or actions** and assign the apps and actions you want to control with Conditional Access App Control.
 
 1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only (Preview)** or **Block downloads (Preview)**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then select **Select**.
 
@@ -79,7 +79,7 @@ Use the following steps to route app sessions from other IdP solutions to Defend
 
 1. In Defender for Cloud Apps, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
 
-1. Select the plus sign (**+**), and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
+1. Select **+ Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
 1. On the **APP INFORMATION** page, fill out the form using the information from your app's single sign-on configuration page, and then select **Next**.
     - If your IdP provides a single sign-on metadata file for the selected app, select **Upload metadata file from the app** and upload the metadata file.
     - Or, select **Fill in data manually** and provide the following information:
@@ -161,7 +161,7 @@ Defender for Cloud Apps will sync your policy details to its servers for each ne
 
 ## Step 3: Verify the apps are configured to use access and session controls<a name="portal"></a>
 
-The instructions above helped you create a built-in Defender for Cloud Apps policy for featured apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
+The preceding instructions helped you create a built-in Defender for Cloud Apps policy for featured apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
