@@ -52,13 +52,15 @@ To purchase a subscription of app governance, reach out to your sales account te
 
 ### Licensing for app governance
 
-Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
+Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. App governance is available as an add-on to organizations with:
 
-- Defender for Cloud Apps
+- Microsoft Defender for Cloud Apps (standalone)
+- Enterprise Mobility + Security E5/A5
 - Microsoft 365 E5/A5
+- Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 Compliance
 - Microsoft 365 E5/A5 Information Protection and Governance
-- Microsoft 365 E5/A5 Security
+- Microsoft 365 F5 Security add-on
 - Microsoft 365 F5 Compliance add-on
 - Microsoft 365 F5 Security + Compliance add-on
 
