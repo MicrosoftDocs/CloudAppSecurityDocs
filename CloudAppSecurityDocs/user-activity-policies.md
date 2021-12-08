@@ -21,7 +21,7 @@ Activity policies allow custom alerts to be sent or actions taken when user acti
 
 - A user tries to sign in and fails 70 times in one minute
 - A user downloads 7,000 files
-- A user is logged in from Afghanistan
+- A user is logged in from an unfamiliar country
 
 You can set activity alerts to be sent to yourself or to the user when these events occur. You can even suspend the user until you have finished investigating what happened.
 
