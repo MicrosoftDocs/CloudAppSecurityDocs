@@ -62,7 +62,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
     - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type *Microsoft Cloud App Security* and then select **Microsoft Cloud App Security**.
 
-    - **Note**: *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear.
+    - **Note**: *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
 
       ![add permission](media/add-permission.png)
 

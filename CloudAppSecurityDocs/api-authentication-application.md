@@ -34,7 +34,7 @@ This article explains how to create an Azure AD application, get an access token
 4. To enable your app to access Defender for Cloud Apps and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Cloud App Security**, and then select **Microsoft Cloud App Security**.
 
    > [!NOTE]
-   > *Microsoft Defender for Cloud Apps* does not appear in the original list. Start writing its name in the text box to see it appear.
+   > *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
 
    ![add permission](media/add-permission.png)
 
