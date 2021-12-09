@@ -43,7 +43,7 @@ The user investigation priority score can now be reset to 0 if an investigation 
 
 October 31, 2021
 
-- **Impossible travel, activity from infrequent countries, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
+- **Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
 After a thorough security review, we decided to separate failed login handling from the alerts mentioned above. From now on, they'll only be triggered by successful login cases and not by unsuccessful logins or attack attempts. Mass failed login alert will still be applied if there are anomalous high amount of failed login attempts on a user. For more information, see [Behavioral analytics and anomaly detection](anomaly-detection-policy.md).
 
 - **New anomaly detection: Unusual ISP for an OAuth app**  
