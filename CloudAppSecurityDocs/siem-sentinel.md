@@ -52,7 +52,7 @@ To integrate with Microsoft Sentinel:
 
     ![Screenshot showing start page of Configure Microsoft Sentinel integration.](media/siem-sentinel-configuration.png)
 
-1. Click **Next**, and continue to Microsoft Sentinel to finalize the integration. For information on configuring Microsoft Sentinel, see [/azure/Sentinel/connect-cloud-app-security](/azure/sentinel/data-connectors-reference#microsoft-cloud-app-security-mcas).
+1. Click **Next**, and continue to Microsoft Sentinel to finalize the integration. For information on configuring Microsoft Sentinel, see [the Microsoft Sentinel data connector for Defender for Cloud Apps](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps).
 
     ![Screenshot showing finish page of Configure Microsoft Sentinel integration.](media/siem-sentinel-configuration-complete.png)
 
