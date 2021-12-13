@@ -45,11 +45,10 @@ In the menu bar, select the Settings icon. In the drop-down menu, select **IP ad
 
     To include the IP range in a category, select a category from the drop-down menu.
 
-1. To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag, you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  Along with IP tags you configure, Defender for Cloud Apps has built-in tags that aren't configurable. You can see the list of tags under the [IP tags filter](activity-filters.md#ip-address-insights).
+1. To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag, you can easily add it to additional IP ranges by choosing it from the list. You can add more than one IP tag for each range. IP tags can be used when building policies.  Along with IP tags you configure, Defender for Cloud Apps has built-in tags that aren't configurable. You can see the list of tags under the [IP tags filter](activity-filters.md#ip-address-insights).
 
     > [!NOTE]
     >
-    > - The Location and Registered ISP override defaults.
     > - IP tags are added to the activity without overriding data.
 
 1. To **Override registered ISP** or **Override the location** or for these addresses, select the relevant checkbox. For example, if you have an IP address that is considered publicly to be in Ireland, but you know the IP is in the US. You'll override the location for that IP address range. Or if you don't want an IP address range to be associated with a registered ISP, you can override the registered ISP.
