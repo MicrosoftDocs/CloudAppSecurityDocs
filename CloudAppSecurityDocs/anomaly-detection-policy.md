@@ -58,16 +58,20 @@ The following anomaly detection policies are available:
 
 * This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Not every file is scanned, but heuristics are used to look for files that are potentially risky. After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
 
-    You can use this detection in real time using session policies to control file uploads and downloads.
+  You can use this detection in real time using session policies to control file uploads and downloads.
 
-    > [!NOTE]
-    >
-    > Defender for Cloud Apps supports malware detection for the following apps:
-    >
-    > * Box
-    > * Dropbox
-    > * Google Workspace
-    > * Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
+  Defender for Cloud Apps supports malware detection for the following apps:
+
+  * Box
+  * Dropbox
+  * Google Workspace
+  * Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
+
+  >[!NOTE]
+  >
+  >Malware detected in Office 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
+  >
+  >In Box, Dropbox, and Google Workspace. Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
 
 ### Activity from anonymous IP addresses
 
