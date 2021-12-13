@@ -25,7 +25,7 @@ Use the following steps to configure your AWS auditing and then connect it to De
 
 ### Step 1: Configure Amazon Web Services auditing
 
-1. In your [Amazon Web Services console](https://console.aws.amazon.com/), under **Security, Identity & Compliance**, select **IAM**.
+1. In your [Amazon Web Services console](https://aws.amazon.com/console/), under **Security, Identity & Compliance**, select **IAM**.
 
     ![AWS identity and access.](media/aws-identity-and-access.png "AWS identity and access")
 
