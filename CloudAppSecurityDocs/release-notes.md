@@ -24,7 +24,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
-- [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-atp)
+- [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 ## Defender for Cloud Apps release 214 and 215
@@ -34,14 +34,16 @@ November 28, 2021
 - **NetDocuments app connector available in public preview**  
 A new app connector for NetDocuments is available in public preview. You can now connect Microsoft Defender for Cloud Apps to NetDocuments to monitor and protect users and activities. For more information, see [Connect NetDocuments to Microsoft Defender for Cloud Apps](connect-netdocuments-to-microsoft-defender-for-cloud-apps.md).
 
+<!--
 - **Reset user investigation priority score**  
 The user investigation priority score can now be reset to 0 if an investigation was done and there's no need to see the user score for past events. For more information, see [Identify top risky users](tutorial-ueba.md#phase-2-identify-top-risky-users).
+-->
 
 ## Cloud App Security release 212 and 213
 
 October 31, 2021
 
-- **Impossible travel, activity from infrequent countries, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
+- **Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
 After a thorough security review, we decided to separate failed login handling from the alerts mentioned above. From now on, they'll only be triggered by successful login cases and not by unsuccessful logins or attack attempts. Mass failed login alert will still be applied if there are anomalous high amount of failed login attempts on a user. For more information, see [Behavioral analytics and anomaly detection](anomaly-detection-policy.md).
 
 - **New anomaly detection: Unusual ISP for an OAuth app**  

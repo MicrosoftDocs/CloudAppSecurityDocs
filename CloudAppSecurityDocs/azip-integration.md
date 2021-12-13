@@ -60,8 +60,8 @@ You can see the Microsoft Information Protection sensitivity labels in Defender 
 > [!NOTE]
 >
 > - Labels with protection outside of Defender for Cloud Apps can be overridden by Defender for Cloud Apps, but can't be removed. In addition, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
-> - Defender for Cloud Apps can't remove any privileged labels that were applied to files using the **Override user-defined label** option in file policies.
-> - Defender for Cloud Apps does not support reading labels of password-protected files.
+> - Defender for Cloud Apps doesn't support removing labels with protection from files that were labeled outside Defender for Cloud Apps.
+> - Defender for Cloud Apps doesn't support reading labels of password-protected files.
 > - Empty files will not be labeled.
 
 <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>

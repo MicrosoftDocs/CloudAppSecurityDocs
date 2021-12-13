@@ -504,7 +504,7 @@ items:
   - name: Defender for Cloud Apps portal
     href: https://portal.cloudappsecurity.com
   - name: How to buy Defender for Cloud Apps
-    href: https://www.microsoft.com/security/business/cloud-app-security
+    href: https://www.microsoft.com/security/business/cloud-apps-defender
 - name: Microsoft 365 Defender Docs
   items:
   - name: Microsoft 365 Defender

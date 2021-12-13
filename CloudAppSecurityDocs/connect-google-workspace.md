@@ -10,9 +10,12 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Google Workspace account using the connector APIs. This connection gives you visibility into and control over Google Workspace use. For information about how Defender for Cloud Apps protects Google Workspace, see [Protect Google Workspace](protect-google-workspace.md).
 
+>[!NOTE]
+>File download activities for Google Workspace aren't displayed in Defender for Cloud Apps.
+
 ## Configure Google Workspace
 
-1. As a Google Workspace Super Admin, sign in to <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>.
+1. As a Google Workspace Super Admin, sign in to <https://cloud.google.com/console/project>.
 
 1. Click **Create project** to start a new project.
 
@@ -34,7 +37,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     > [!NOTE]
     > For each API, click **Enable** to active it.
     >
-    > ![enable Google APPI.](media/connect-google-workspace/google-workspace-api.png)
+    > ![enable Google API.](media/connect-google-workspace/google-workspace-api.png)
     >
     > Ignore the **Credentials** warning for now.
 

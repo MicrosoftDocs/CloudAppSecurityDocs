@@ -17,7 +17,7 @@ To get started using the app governance add-on to Defender for Cloud Apps, start
 
 For existing Defender for Cloud Apps customers, you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add app governance to your tenant.
 
-If you aren't already a Defender for Cloud Apps customer, you can sign up for a free trial by navigating to the [sign up page for the free trial](https://www.microsoft.com/security/business/cloud-app-security) and complete the steps for sign-up. Then, navigate to the [sign up page for the free trial for app governance](https://aka.ms/appgovernancetrial) and complete the steps to add a free trial of app governance to your tenant.
+If you aren't already a Defender for Cloud Apps customer, you can sign up for a free trial by navigating to the [sign up page for the free trial](https://www.microsoft.com/security/business/cloud-apps-defender) and complete the steps for sign-up. Then, navigate to the [sign up page for the free trial for app governance](https://aka.ms/appgovernancetrial) and complete the steps to add a free trial of app governance to your tenant.
 
 The final step is adding integration with Defender for Cloud Apps:
 
@@ -52,13 +52,15 @@ To purchase a subscription of app governance, reach out to your sales account te
 
 ### Licensing for app governance
 
-Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
+Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. App governance is available as an add-on to organizations with:
 
-- Defender for Cloud Apps
+- Microsoft Defender for Cloud Apps (standalone)
+- Enterprise Mobility + Security E5/A5
 - Microsoft 365 E5/A5
+- Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 Compliance
 - Microsoft 365 E5/A5 Information Protection and Governance
-- Microsoft 365 E5/A5 Security
+- Microsoft 365 F5 Security add-on
 - Microsoft 365 F5 Compliance add-on
 - Microsoft 365 F5 Security + Compliance add-on
 
