@@ -1,10 +1,10 @@
 ---
 title: Set IP ranges and tags 
 description: This article provides instructions for working with IP tags and IP categories.
-ms.date: 11/09/2021
+ms.date: 12/07/2021
 ms.topic: how-to
 ---
-# <a name="IPtagsandRanges"></a>Working with IP ranges and tags
+# Working with IP ranges and tags
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -17,47 +17,43 @@ Defender for Cloud Apps comes preconfigured with built-in IP ranges for popular 
 > - To use these built-in tags as part of a search, refer to their ID in the Defender for Cloud Apps API documentation.
 > - You can add IP ranges in bulk by creating a script using the [IP address ranges API](api-data-enrichment.md).
 > - You cannot add IP ranges with overlapping IP addresses.
-> - To view the API documentation, go to the Defender for Cloud Apps portal menu bar, click the question mark, and then select [API documentation](api-introduction.md).
+> - To view the API documentation, go to the Defender for Cloud Apps portal menu bar, select the question mark, and then select [API documentation](api-introduction.md).
 
 Built-in IP address tags and custom IP tags are considered hierarchically. Custom IP tags take precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence but there's a custom IP tag that identifies it as **Corporate**, the custom category and tags take precedence.
 
->[!NOTE]
-> When an IP address is tagged as corporate, it is reflected in the portal, and the IP addresses are excluded from triggering specific detections (for example, [impossible travel](anomaly-detection-policy.md#impossible-travel)) because these IP addresses are considered trusted.
-
 ## Create an IP address range
 
-In the menu bar, click the settings icon. Select **IP address ranges**. Click the plus sign (**+**) to add IP address ranges and set the following fields:
+In the menu bar, select the Settings icon. In the drop-down menu, select **IP address ranges**. Select **Add IP address range** to add IP address ranges and set the following fields:
 
-1. **Name** your IP range. The name doesn't appear in the activities log, it's only used to manage your IP range.
+1. **Name** your IP range. The name doesn't appear in the activities log. It's only used to manage your IP range.
 
-    To include the IP range in an IP category, select a category from the drop-down menu.
+1. Enter each **IP address range** you wish to configure. You can add as many IP addresses and subnets as you want using network prefix notation (also known as CIDR notation), for example 192.168.1.0/32.
 
-2. Enter the **IP address range** you wish to configure and then click on the "+" button. You can add as many IP addresses and subnets as you want using network prefix notation (also known as CIDR notation), for example 192.168.1.0/32.
+1. **Categories** are used to easily recognize activities from important IP addresses in your logs and alerts. Categories are available in the portal. However, they typically require user configuration to determine which IP addresses are included in each category. The exception to this configuration is the **Risky** category, which includes two IP tags - Anonymous proxy and Tor.
 
-3. **Categories** are used to easily recognize activities from interesting IP addresses. Categories are available in the portal. However, they typically require user configuration to determine which IP addresses are included in each category. The exception to this configuration is the "Risky" category, which includes two IP tags - Anonymous proxy and Tor.
+    The following categories are available:
 
-    The following IP categories are available:
+    - **Administrative**: These IPs should be all the IP addresses used by your admins.
 
-    - **Administrative**: These IPs should be all the IP addresses of your admins.
-
-    - **Cloud provider**: These IPs should be the IP addresses used by your cloud provider.
+    - **Cloud provider**: These IPs should be the IP addresses used by your cloud provider. Apply this category if your cloud provider isn't automatically identified.
 
     - **Corporate**: These IPs should be all the public IP addresses of your internal network, your branch offices, and your Wi-Fi roaming addresses.
 
     - **Risky**: These IPs should be any IP addresses that you consider risky. They can include suspicious IP addresses you've seen in the past, IP addresses in your competitors' networks, and so on.
 
-    - **VPN**: These IPs should be any IP addresses you use for remote workers.
+    - **VPN**: These IPs should be any IP addresses you use for remote workers. By using this category, you can avoid raising [impossible travel](anomaly-detection-policy.md#impossible-travel) alerts when employees connect from their home locations via the corporate VPN.
 
-4. To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag, you can easily add it to additional IP ranges by choosing it from the list. You can add as many IP tags as you want for each range. IP tags can be used when building policies.  Along with IP tags you configure, Defender for Cloud Apps has built-in tags that aren't configurable. You can see the list of tags under the [IP tags filter](activity-filters.md).
+    To include the IP range in a category, select a category from the drop-down menu.
+
+1. To **Tag** the activities from these IP addresses enter a tag. Entering a word into the box creates the tag. After you already have a configured tag, you can easily add it to additional IP ranges by choosing it from the list. You can add more than one IP tag for each range. IP tags can be used when building policies.  Along with IP tags you configure, Defender for Cloud Apps has built-in tags that aren't configurable. You can see the list of tags under the [IP tags filter](activity-filters.md#ip-address-insights).
+
     > [!NOTE]
-    > - The Location and Registered ISP override defaults.
+    >
     > - IP tags are added to the activity without overriding data.
 
-5. To **Override the Location** or Organization (ISP) fields for these addresses, enter new value. For example, say you have an IP address that is considered publicly to be in Ireland. However, you know the IP is in the US. You'll override the location for that IP address range.
+1. To **Override registered ISP** or **Override the location** or for these addresses, select the relevant checkbox. For example, if you have an IP address that is considered publicly to be in Ireland, but you know the IP is in the US. You'll override the location for that IP address range. Or if you don't want an IP address range to be associated with a registered ISP, you can override the registered ISP.
 
-6. Enter a **Registered ISP**. This setting overrides the data in your activities.
-
-7. When you're done, click **Create**.
+1. When you're done, select **Create**.
 
     ![newipaddress range.](media/newipaddress-range.png "newipaddress range")
 
