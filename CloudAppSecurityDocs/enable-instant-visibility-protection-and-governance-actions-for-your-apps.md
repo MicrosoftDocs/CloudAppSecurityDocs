@@ -58,7 +58,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
 | GCP               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
-| NetDocuments (Preview) | ✔ |  | ✔ |  | ✔ | ✔ |
+| NetDocuments  | ✔ |  | ✔ |  | ✔ | ✔ |
 | Office 365        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Okta              | ✔                                    |                                      | Not supported by provider            | ✔                                    | ✔                                           | ✔                         |
 | OneLogin | ✔ | | ✔ | ✔ | ✔ | ✔ |
@@ -81,7 +81,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | GitHub            |                                      | ✔                         |                           |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |
-| NetDocuments (Preview) |  |  |  |
+| NetDocuments  |  |  |  |
 | Office 365        | ✔                                    | ✔                         | ✔                         |
 | Okta              |                                      | Not applicable            | Not applicable            |
 | OneLogin | |  |  |
@@ -104,7 +104,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | GitHub            |                           |                                          |                           |                           |                                            |
 | GCP               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
-| NetDocuments (Preview) |  |  |  |  |  |
+| NetDocuments  |  |  |  |  |  |
 | Office 365        | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Okta              | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | OneLogin |  |  |  |  |  |

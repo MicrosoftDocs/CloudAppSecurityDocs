@@ -82,7 +82,7 @@ items:
       href: protect-gcp.md
     - name: Protect Google Workspace
       href: protect-google-workspace.md
-    - name: Protect NetDocuments (Preview)
+    - name: Protect NetDocuments
       href: protect-netdocuments.md
     - name: Protect Office 365
       href: protect-office-365.md
@@ -228,7 +228,7 @@ items:
       href: ./connect-google-workspace.md
     - name: Connect GCP
       href: ./connect-google-gcp.md
-    - name: Connect NetDocuments (Preview)
+    - name: Connect NetDocuments
       href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
     - name: Connect Office 365
       href: ./connect-office-365.md
