@@ -1,10 +1,10 @@
 ---
-title: How Defender for Cloud Apps helps protect your NetDocuments (Preview)
+title: How Defender for Cloud Apps helps protect your NetDocuments
 description: This article provides information about the benefits of connecting your NetDocuments app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 11/11/2021
 ms.topic: article
 ---
-# How Defender for Cloud Apps helps protect your NetDocuments (Preview)
+# How Defender for Cloud Apps helps protect your NetDocuments 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -57,4 +57,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Connect NetDocuments to Microsoft Defender for Cloud Apps (Preview)](connect-netdocuments-to-microsoft-defender-for-cloud-apps.md)
+> [Connect NetDocuments to Microsoft Defender for Cloud Apps](connect-netdocuments-to-microsoft-defender-for-cloud-apps.md)
