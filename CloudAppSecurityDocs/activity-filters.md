@@ -98,9 +98,9 @@ This opens the Activity drawer **IP address** tab, which provides the following 
     - **Activities**: The number of activities performed from this IP address in past 30 days.
     - **Admin activities**: The number of administrative activities performed from this IP address in past 30 days.
     - You can perform the following IP address actions:
-        - Tag as Corporate IP and add to allowed list
-        - Tag as VPN IP address and add to allowed list
-        - Tag as Risky IP and add to blocked list
+        - Set as a Corporate IP and add to allowlist
+        - Set as a VPN IP address and add to allowlist
+        - Set as a Risky IP and add to denylist
 
    >[!NOTE]
    > To avoid raising [impossible travel](anomaly-detection-policy.md#impossible-travel) alerts when employees connect from their home locations via the corporate VPN, it's recommended to tag the IP address as **VPN**.
