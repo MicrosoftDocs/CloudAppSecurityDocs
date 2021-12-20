@@ -55,7 +55,7 @@ Recommended task: Enable file monitoring and create file policies
 
 1. Go to **Settings**, and then under **Information Protection**, select **Files**.
 1. Select **Enable file monitoring** and then click **Save**.
-1. If you use Azure Information Protection classification labels, under **Information Protection**, select **Azure Information Protection**.
+1. If you use Microsoft Information Protection sensitivity labels, under **Information Protection**, select **Microsoft Information Protection**.
 1. Select the required settings and then click **Save**.
 1. In [step 3](#step-3), create [File policies](data-protection-policies.md) to meet your organizational requirements.
 

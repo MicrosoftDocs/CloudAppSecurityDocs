@@ -77,7 +77,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 
 1. Set file policies that detect breaches. Examples of these types of policies include:
 
-    - A metadata only policy such as a classification label in SharePoint Online
+    - A metadata only policy such as a sensitivity label in SharePoint Online
     - A native DLP policy such as a policy that searches for credit card numbers
     - An ICAP third-party policy such as a policy that looks for Vontu
 

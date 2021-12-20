@@ -1,6 +1,6 @@
 ---
 title: Information protection policies 
-description: This topic outlines the steps to configure many information protection policies in Defender for Cloud Apps.
+description: This article outlines the steps to configure many information protection policies in Defender for Cloud Apps.
 ms.date: 11/09/2021
 ms.topic: conceptual
 ---
@@ -28,7 +28,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 3. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-4. Configure the **Governance** actions to be take when an alert is triggered. For example, you can create a governance action that runs on detected file violations in Google Workspace in which you select the option to **Remove external users** and **Remove public access**.
+4. Configure the **Governance** actions to be taken when an alert is triggered. For example, you can create a governance action that runs on detected file violations in Google Workspace in which you select the option to **Remove external users** and **Remove public access**.
 
 5. Create the file policy.
 
@@ -40,13 +40,13 @@ Detect when files that are labeled **Confidential** and are stored in a cloud se
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Enable [Azure Information Protection integration](azip-integration.md).
+- Enable [Microsoft Information Protection integration](azip-integration.md).
 
 ### Steps
 
 1. On the **Policies** page, create a new **File policy**.
 
-2. Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
+2. Set the filter **Sensitivity label** to **Microsoft Information Protection** equals the **Confidential** label, or your company's equivalent.
 
 3. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
@@ -56,13 +56,13 @@ Detect when files that are labeled **Confidential** and are stored in a cloud se
 
 ## Detect and encrypt sensitive data at rest
 
-Detect files containing personally identifying information and other sensitive data that is share in a cloud app and apply classification labels to limit access only to employees in your company.
+Detect files containing personally identifying information and other sensitive data that is share in a cloud app and apply sensitivity labels to limit access only to employees in your company.
 
 ### Prerequisites
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Enable [Azure Information Protection integration](azip-integration.md).
+- Enable [Microsoft Information Protection integration](azip-integration.md).
 
 ### Steps
 
@@ -70,16 +70,16 @@ Detect files containing personally identifying information and other sensitive d
 
 2. Under **Inspection method**, select **Data Classification Service (DCS)** and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-3. Under **Alert**, check **Apply classification label governance** and select the classification label that your company uses to restrict access to company employees.
+3. Under **Governance actions**, check **Apply sensitivity label** and select the sensitivity label that your company uses to restrict access to company employees.
 
 4. Create the file policy.
 
 > [!NOTE]
-> The ability to apply a classification label directly in Defender for Cloud Apps is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
+> The ability to apply a sensitivity label directly in Defender for Cloud Apps is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for Business.
 
 ## Detect stale externally shared data
 
-Detect unused and stale files, files that were not updated recently, that are accessible publicly via direct public link, web search, or to specific external users.
+Detect unused and stale files, files that weren't updated recently, that are accessible publicly via direct public link, web search, or to specific external users.
 
 ### Prerequisites
 
@@ -131,13 +131,13 @@ Detect files that are labeled as confidential and are stored in a non-compliant 
 
 ### Prerequisites
 
-Azure Information Protection labels are configured and used inside the organization.
+Sensitivity labels are configured and used inside the organization.
 
 ### Steps
 
 1. On the **Policies** page, create a new **File policy**.
 
-2. Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
+2. Set the filter **Sensitivity label** to **Microsoft Information Protection** equals the **Confidential** label, or your company's equivalent.
 
 3. Set the filter **Parent folder** does not equal, and then under **Select a folder** choose all the compliant folders in your organization.
 
@@ -179,7 +179,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. On the **Policies** page, create a new **Activity policy**.
 
-2. Under **Act on** select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
+2. Under **Act on**, select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
 
 3. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
@@ -214,13 +214,13 @@ You must have an AWS instance connected using [app connectors](enable-instant-vi
 
 ## Detect and protect GDPR related data across file storage apps
 
-Detect files that are shared in cloud storage apps and contain personally identifying information and other sensitive data that is bound by a GDPR compliance policy. Then, automatically apply classification labels to limit access only to authorized personnel.
+Detect files that are shared in cloud storage apps and contain personally identifying information and other sensitive data that are bound by a GDPR compliance policy. Then, automatically apply sensitivity labels to limit access only to authorized personnel.
 
 ### Prerequisites
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Azure Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Microsoft Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
 
 ### Steps
 
@@ -228,22 +228,22 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 2. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national identification number, EU passport number, EU SSN, SU tax identification number.
 
-3. Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply Classification label governance** for each supported app.
+3. Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply sensitivity label** for each supported app.
 
-4. Create the file policy
+4. Create the file policy.
 
 > [!NOTE]
-> Currently, **Apply classification label** is only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
+> Currently, **Apply sensitivity label** is only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
 
 ## Block downloads for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, using the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
 - [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
 
-- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based app that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -258,18 +258,18 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 4. You can use the **File filter** to customize the file type. This gives you more granular control over what type of files the session policy controls.
 
-5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
+5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
 
-6. Click **Create**.
+6. Select **Create**.
 
 ## Enforce read-only mode for external users in real time
 
-Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
+Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real time, using the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
 - [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
-- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based app that uses Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
 ### Steps
 
@@ -288,21 +288,21 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 4. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
+5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
 
-6. Click **Create**.
+6. Select **Create**.
 
 ## Block upload of unclassified documents in real time
 
-Prevent users from uploading unprotected data to the cloud, by utilizing the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
+Prevent users from uploading unprotected data to the cloud, by using the Defender for Cloud Apps [session controls](proxy-intro-aad.md).
 
 ### Prerequisites
 
 - [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
 
-- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+- Make sure your app is a SAML-based app that uses Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-- Azure Information Protection classification labels must be configured and used inside your organization.
+- Microsoft Information Protection sensitivity labels must be configured and used inside your organization.
 
 ### Steps
 
@@ -313,16 +313,16 @@ Prevent users from uploading unprotected data to the cloud, by utilizing the Def
    >[!NOTE]
    > You don't need to set any filters to enable this policy to apply to all users and apps.
 
-3. Select the file filter **Classification label** does not equal and then select the labels your company uses to tag classified files.
+3. Select the file filter **Sensitivity label** does not equal and then select the labels your company uses to tag classified files.
 
 4. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
+5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
 
-6. Click **Create**.
+6. Select **Create**.
 
 > [!NOTE]
-> For the list of file types that Defender for Cloud Apps currently supports for Azure Information Protection classification labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
+> For the list of file types that Defender for Cloud Apps currently supports for Microsoft Information Protection sensitivity labels, see [Microsoft Information Protection integration prerequisites](azip-integration.md#prerequisites).
 
 ## Next steps
 

@@ -121,12 +121,12 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 
 ## Discover, classify, label, and protect regulated and sensitive data stored in the cloud
 
-**Best practice**: Integrate with Azure Information Protection  
-**Detail**: Integrating with Azure Information Protection gives you the capability to automatically apply classification labels and optionally add encryption protection. Once the integration is turned on, you can apply labels as a governance action, view files by classification, investigate files by classification level, and create granular policies to make sure classified files are being handled properly. If you do not turn on the integration, you cannot benefit from the ability to automatically scan, label, and encrypt files in the cloud.  
+**Best practice**: Integrate with Microsoft Information Protection  
+**Detail**: Integrating with Microsoft Information Protection gives you the capability to automatically apply sensitivity labels and optionally add encryption protection. Once the integration is turned on, you can apply labels as a governance action, view files by classification, investigate files by classification level, and create granular policies to make sure classified files are being handled properly. If you do not turn on the integration, you cannot benefit from the ability to automatically scan, label, and encrypt files in the cloud.  
 **For more information**:
 
-* [Azure Information Protection integration](azip-integration.md)
-* [Tutorial: Automatically apply Azure Information Protection classification labels](use-case-information-protection.md)
+* [Microsoft Information Protection integration](azip-integration.md)
+* [Tutorial: Automatically apply Microsoft Information Protection sensitivity labels](use-case-information-protection.md)
 
 ---
 
@@ -147,7 +147,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 ---
 
 **Best practice**: Review reports in the **Files** page  
-**Detail**: Once you've connected various SaaS apps using app connectors, Defender for Cloud Apps scans files stored by these apps. In addition, each time a file is modified it is scanned again. You can use the **Files** page to understand and investigate the types of data being stored in your cloud apps. To help you investigate, you can filter by domains, groups, users, creation date, extension, file name and type, file ID, classification label, and more. Using these filters puts you in control of how you choose to investigate files to make sure none of your data is at risk. Once you have a better understanding of how your data is being used, you can create policies to scan for sensitive content in these files.  
+**Detail**: Once you've connected various SaaS apps using app connectors, Defender for Cloud Apps scans files stored by these apps. In addition, each time a file is modified it is scanned again. You can use the **Files** page to understand and investigate the types of data being stored in your cloud apps. To help you investigate, you can filter by domains, groups, users, creation date, extension, file name and type, file ID, sensitivity label, and more. Using these filters puts you in control of how you choose to investigate files to make sure none of your data is at risk. Once you have a better understanding of how your data is being used, you can create policies to scan for sensitive content in these files.  
 **For more information**:
 
 * [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
@@ -162,7 +162,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 ## Enforce DLP and compliance policies for data stored in the cloud
 
 **Best practice**: Protect confidential data from being shared with external users  
-**Detail**: Create a file policy that detects when a user tries to share a file with the **Confidential** classification label with someone external to your organization, and configure its governance action to remove external users. This policy ensures your confidential data doesn't leave your organization and external users cannot gain access to it.  
+**Detail**: Create a file policy that detects when a user tries to share a file with the **Confidential** sensitivity label with someone external to your organization, and configure its governance action to remove external users. This policy ensures your confidential data doesn't leave your organization and external users cannot gain access to it.  
 **For more information**:
 
 * [Governing connected apps](governance-actions.md)
