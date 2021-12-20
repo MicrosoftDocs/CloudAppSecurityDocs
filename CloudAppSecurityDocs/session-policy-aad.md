@@ -63,7 +63,7 @@ To create a new session policy, follow this procedure:
 
     1. Under **Activity source** in the **Files matching all of the following** section, select additional file filters to apply to the policy. These filters can include the following options:
 
-        * **Classification label** - Use this filter if your organization uses Azure Information Protection and your data has been protected by its Classification labels. You can filter files based on the Classification label you applied to them. For more information about integration with Azure Information Protection, see [Azure Information Protection integration](azip-integration.md).
+        * **Sensitivity label** - Use this filter if your organization uses Microsoft Information Protection and your data has been protected by its sensitivity labels. You can filter files based on the sensitivity label you applied to them. For more information about integration with Microsoft Information Protection, see [Microsoft Information Protection integration](azip-integration.md).
 
         * **File name** - Use this filter to apply the policy to specific files.
         * **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
@@ -75,7 +75,7 @@ To create a new session policy, follow this procedure:
 
         * **Block (Block file download and monitor all activities)**: Set this action to explicitly block download according to the policy filters you set. For more information, see [How block download works](#block-download).
 
-        * **Protect (Apply classification label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Azure Information Protection, you can set an **Action** to apply a classification label set in Azure Information Protection to the file. For more information, see [How protect download works](#protect-download).
+        * **Protect (Apply sensitivity label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Microsoft Information Protection, you can set an **Action** to apply a sensitivity label set in Microsoft Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
 1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select whether you want the alert as an email, a text message, or both.
 
@@ -126,9 +126,9 @@ When **Block activities** is set as the **Activity type**, you can select specif
 
 Select **Block activities** to block specific activities, which you can find using the **Activity type** filter. All activities from selected apps will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
 
-When **Protect** is set as the **Action** to be taken in the Defender for Cloud Apps session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy's file filters. Labels are configured in the Azure Information Protection console and **Protect** must be selected within the label for it to appear as an option in the Defender for Cloud Apps policy. When a label is selected, and a file is downloaded that meets the criteria of the Defender for Cloud Apps policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.
+When **Protect** is set as the **Action** to be taken in the Defender for Cloud Apps session policy, Conditional Access App Control enforces the labeling and subsequent protection of a file per the policy's file filters. Labels are configured in the Microsoft 365 compliance center and the label must be configured to apply encryption for it to appear as an option in the Defender for Cloud Apps policy. When a label is selected, and a file is downloaded that meets the criteria of the Defender for Cloud Apps policy, the label, and corresponding protection (with permissions) is applied to the file upon download. The original file remains as-is in the cloud app while the downloaded file is now protected. Users who try to access the file must meet the permission requirements determined by the protection applied.
 
-Defender for Cloud Apps currently supports applying [Azure Information Protection classification labels](azip-integration.md) for the following file types:
+Defender for Cloud Apps currently supports applying [Microsoft Information Protection sensitivity labels](azip-integration.md) for the following file types:
 
 * Word: docm, docx, dotm, dotx
 * Excel: xlam, xlsm, xlsx, xltx
@@ -141,7 +141,7 @@ Defender for Cloud Apps currently supports applying [Azure Information Protectio
 
 When **Control file upload (with inspection)** is set as the **Session Control type** in the Defender for Cloud Apps session policy, Conditional Access App Control prevents a user from uploading a file per the policy's file filters. When an upload event is recognized, Conditional Access App Control intervenes in real time to determine whether the file is sensitive and needs protection. If the file has sensitive data and doesn't have a proper label, the file upload is blocked.
 
-For example, you can create a policy that scans the content of a file to determine if it contains a sensitive content match such as a social security number. If it contains sensitive content and is not labeled with an Azure Information Protection confidential label, the file upload is blocked. When the file is blocked, you can [display a custom message to the user](#educate-protect) instructing them on how to label the file in order to upload it. By doing so, you ensure that files stored in your cloud apps comply with your policies.
+For example, you can create a policy that scans the content of a file to determine if it contains a sensitive content match such as a social security number. If it contains sensitive content and is not labeled with a Microsoft Information Protection confidential label, the file upload is blocked. When the file is blocked, you can [display a custom message to the user](#educate-protect) instructing them on how to label the file in order to upload it. By doing so, you ensure that files stored in your cloud apps comply with your policies.
 
 ## Block malware on upload
 
@@ -155,7 +155,7 @@ You can also configure session policies to block malware on download.
 
 It is important to educate users when they are in violation of a policy so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Defender for Cloud Apps allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
 
-For example, if a user uploads a file without an Azure Information Protection label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
+For example, if a user uploads a file without a sensitivity label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
 
 ## Related videos
 

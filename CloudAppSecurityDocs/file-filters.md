@@ -1,7 +1,7 @@
 ---
 title: Understanding file data and filters available in Defender for Cloud Apps
 description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
-ms.date: 11/09/2021
+ms.date: 11/17/2021
 ms.topic: how-to
 ---
 # Files
@@ -17,49 +17,51 @@ To provide data protection, Microsoft Defender for Cloud Apps gives you visibili
 
 ## File filter examples
 
-For example, use the **Files** page to secure externally shared files labeled as **confidential**, as follows:
-After you connect an app to Defender for Cloud Apps, integrate with Azure Information Protection. Then, in the **Files** page, filter for files labeled **confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
+For example, use the **Files** page to secure externally shared files labeled as **Confidential**, as follows:
+
+After you connect an app to Defender for Cloud Apps, integrate with Microsoft Information Protection. Then, in the **Files** page, filter for files labeled **Confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
 
 ![File filter confidential.](media/file-filter-confidential.png)
 
 Here's another example of how you can use the **Files** page. Make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last six months:
+
 Connect an app to Defender for Cloud Apps and go to the **Files** page. Filter for files whose access level is **External** or **Public** and set the **Last modified** date to six months ago. Create a file policy that detects these stale public files by clicking **New policy from search**. Apply automatic governance actions to them, such as **Remove external users**, to prevent data loss to your organization.
 
 ![File filter stale external.](media/file-example-stale-external.png)
 
 The basic filter provides you with great tools to get started filtering your files.
 
-![basic file log filter.](media/file-log-filter-basic-1.png)
+![Basic file log filter.](media/file-log-filter-basic-1.png)
 
-To drill down into more specific files, you can expand the basic filter by clicking Advanced.
+To drill down into more specific files, you can expand the basic filter by clicking **Advanced**.
 
-![advanced file log filter.](media/file-log-filter-advanced-1.png)
+![Advanced file log filter.](media/file-log-filter-advanced-1.png)
 
-## <a name="Filefilters"></a> File filters
+## File filters
 
 Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters (for example, access level, file type).
 
 The Defender for Cloud Apps built in DLP engines perform content inspection by extracting text from common file types. Some of the included file types are PDF, Office files, RTF, HTML, and code files.
 
-Below is a list of the file filters that can be applied. To provide you with a powerful tool for policy creation, most filters support multiple values and a NOT.
+Below is a list of the file filters that can be applied. To provide you with a powerful tool for policy creation, most filters support multiple values and a *NOT*.
 
 > [!NOTE]
 > When using the file policy filters, **Contains**  will search only for **full words** – separated by commas, dots, or spaces to search.
 >
-> - Spaces between words function like OR, for example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both malware-virus.exe and virus.exe.
-> - If you want to search for a string, enclose the words in quotation marks. This functions like AND, for example: if you search for **"malware"** **"virus"**, it will find virus_malware_file.exe but it will not find malwarevirusfile.exe and it will not find malware.exe. However, it will search for the exact string. If you search for **"malware virus"** it will not find **"virus"** or **"virus_malware"**.
+> - Spaces between words function like *OR*. For example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both *malware-virus.exe* and *virus.exe*.
+> - If you want to search for a string, enclose the words in quotation marks. This functions like *AND*. For example, if you search for **"malware"** **"virus"**, it will find *virus_malware_file.exe* but it will not find *malwarevirusfile.exe* and it will not find *malware.exe*. However, it will search for the exact string. If you search for **"malware virus"**, it will not find **"virus"** or **"virus_malware"**.
 >
-> **Equals** will search only for the complete string, for example if you search for **malware.exe** it will find malware.exe but not malware.exe.txt.
+> **Equals** will search only for the complete string. For example, if you search for **malware.exe** it will find *malware.exe* but not *malware.exe.txt*.
 
-- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [General Setup, Set up the portal](./get-started.md)
+- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [Set up the portal](general-setup.md#set-up-the-portal)
 
-    - **Internal** - Any files within the Internal domains you set in [General setup](General-setup.md).
-    - **External** - Any files saved in locations that aren't within the internal domains you set.
-    - **Shared** - Files that have a sharing level above private. Shared includes:
-        - Internal sharing - Files shared within your internal domains.
-        - External sharing - Files shared in domains that aren't listed in your internal domains.
-        - Public with a link - Files that can be shared with anyone via a link.
-        - Public - Files that can be found by searching the Internet.
+  - **Internal** - Any files within the Internal domains you set in [General setup](General-setup.md).
+  - **External** - Any files saved in locations that aren't within the internal domains you set.
+  - **Shared** - Files that have a sharing level above private. Shared includes:
+    - Internal sharing - Files shared within your internal domains.
+    - External sharing - Files shared in domains that aren't listed in your internal domains.
+    - Public with a link - Files that can be shared with anyone via a link.
+    - Public - Files that can be found by searching the Internet.
 
       > [!NOTE]
       > Files shared into your connected storage apps by external users are handled as follows by Defender for Cloud Apps:
@@ -73,35 +75,35 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Collaborators** – Include/exclude specific collaborators or groups.
 
-    - **Any from domain** – If any user from this domain has direct access to the file.
+  - **Any from domain** – If any user from this domain has direct access to the file.
 
       >[!NOTE]
       >
       > - This filter does not support files that were shared with a group, only with specific users.
       > - For SharePoint and OneDrive, the filter doesn't support files shared with a specific user through a shared link.
 
-    - **Entire organization** – If the entire organization has access to the file.
+  - **Entire organization** – If the entire organization has access to the file.
 
-    - **Groups** – If a specific group has access to the file. Groups can be imported from Active Directory, cloud apps or manually created in the service.
+  - **Groups** – If a specific group has access to the file. Groups can be imported from Active Directory, cloud apps or manually created in the service.
 
-    - **Users** – Certain set of users that may have access to the file.
+  - **Users** – Certain set of users that may have access to the file.
 
 - **Created** – File creation time. The filter supports before/after dates and a date range.
 
-- **Extension** – Focus on specific file extensions. For example, all files that are executables (exe).
+- **Extension** – Focus on specific file extensions. For example, all files that are executables (*.exe).
 
-- **File ID** – Search for specific file IDs File ID is an advanced feature that allows you to track certain high-value files without a dependency on owner, location, or name.
+- **File ID** – Search for specific file IDs. File ID is an advanced feature that allows you to track certain high-value files without a dependency on owner, location, or name.
 
-- **File name** – File name or sub string of the name as defined in the cloud app, for example, all files with a password in their name.
+- **File name** – File name or sub string of the name as defined in the cloud app. For example, all files with a password in their name.
 
-- **Classification label** - Search for files with specific tags set. Labels are either:
-    - **Azure Information Protection tags** - Requires integration with Azure Information Protection.
-    - **Cloud App Security tags** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For instance, you can set up policies to alert and quarantine password protected files that are shared externally.
-        - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
-        - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
-        - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
+- **Sensitivity label** - Search for files with specific labels set. Labels are either:
+  - **Microsoft Information Protection** - Requires integration with Microsoft Information Protection.
+  - **Defender for Cloud Apps** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For example, you can set up policies to alert and quarantine password-protected files that are shared externally.
+    - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
+    - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
+    - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
 
-- **File type** – Defender for Cloud Apps takes both the MIME type received (see table) from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, All folders that are ... or All spreadsheet files that are...
+- **File type** – Defender for Cloud Apps takes both the MIME type received (see table) from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, *All folders that are ...* or *All spreadsheet files that are...*
 
     | MIME type | File type |
     |--|--|
@@ -122,35 +124,35 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Matched policy** - Files that are matched by an active Defender for Cloud Apps policy.
 
-- **MIME type** – File MIME type check, accepts free text.
+- **MIME type** – File MIME type check. It accepts free text.
 
-- **Owner** -Include/exclude specific file owners. For example, track all files shared by rogue_employee_#100.
+- **Owner** -Include/exclude specific file owners. For example, track all files shared by *rogue_employee_#100*.
 
-- **Owner OU** – Include or exclude file owners that belong to certain organizational group. For example, all public files except files shared by EMEA_marketing. Applies only to files stored in Google Drive.
+- **Owner OU** – Include or exclude file owners that belong to certain organizational units. For example, all public files except files shared by *EMEA_marketing*. Applies only to files stored in Google Drive.
 
 - **Parent folder** – Include or exclude based on parent folder. For example, all publicly shared files except for files in this folder.
 
     > [!NOTE]
     > Defender for Cloud Apps only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
 
-- **Quarantined** – Is the file quarantined by the service, For example, show me all files that are quarantined.
+- **Quarantined** – If the file quarantined by the service. For example, show me all files that are quarantined.
 
 You can also set the policy to run on specific files by setting the **Apply to** filter. Filter to either **all files**, **selected folders**, or **all files excluding selected folders**. Then select the files or folders that are relevant.
 
 ![apply to filter.](media/apply-to-filter.png "apply to filter")
 <!--
 >[!NOTE]
-> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon.](media/clear-filters.png).
+> If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
 -->
 
 ## Authorizing files
 
-After Defender for Cloud Apps has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
+After Defender for Cloud Apps has identified files as posing a malware or DLP risk, we recommend you investigate the files. If you determine the files are safe, you can authorize them. Authorizing a file removes it from the malware detection report and suppresses future matches on this file.
 
 ### To authorize files
 
-1. In Defender for Cloud Apps, click **Control** and then **Policies**.
-1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
+1. In Defender for Cloud Apps, select **Control** and then **Policies**. Select the **Information protection** tab.
+1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, select the **matches** link.
 
     > [!TIP]
     > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
@@ -160,19 +162,19 @@ After Defender for Cloud Apps has identified files as posing a malware or DLP ri
     > | DLP | File policy |
     > | Malware | Malware detection policy |
 
-1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
+1. In the list of matched files, on the row in which the file under investigation appears, select the ✓ to **Authorize**.
 
 ## Working with the File drawer
 
-You can view more information about each file, by clicking on the file itself in the file log. Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
+You can view more information about each file, by selecting the file itself in the file log. Selecting it opens the **File drawer** that provides the following additional actions you can take on the file:
 
 - **URL** - Takes you to the file location.
 - **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys.
 - **Owner** - View the user page for the owner of this file.
 - **Matched policies** - See a list of policies the file matched.
-- **Classification label** - View the list of Azure Information Protection classification labels found in this file. You can then filter by all files matching this label.
+- **Sensitivity labels** - View the list of Microsoft Information Protection sensitivity labels found in this file. You can then filter by all files matching this label.
 
-The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Classification labels**.
+The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Sensitivity labels**.
 
 ![File drawer.](media/file-drawer.png "File drawer")
 

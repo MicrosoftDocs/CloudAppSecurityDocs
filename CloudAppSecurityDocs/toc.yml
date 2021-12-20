@@ -46,7 +46,7 @@ items:
     href: tutorial-cloud-platform-security.md
   - name: Protecting your files with admin quarantine
     href: use-case-admin-quarantine.md
-  - name: Apply Azure Information Protection labels automatically
+  - name: Apply Microsoft Information Protection labels automatically
     href: use-case-information-protection.md
   - name: Extend governance to endpoint remediation
     href: tutorial-flow.md
@@ -349,7 +349,7 @@ items:
       href: mdi-integration.md
     - name: Azure AD Identity Protection integration
       href: aadip-integration.md
-    - name: Azure Information Protection integration
+    - name: Microsoft Information Protection integration
       href: azip-integration.md
     - name: Microsoft Sentinel integration
       href: siem-sentinel.md

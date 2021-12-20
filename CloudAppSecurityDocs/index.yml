@@ -71,7 +71,7 @@ landingContent:
             url: tutorial-cloud-platform-security.md
           - text: Protect files with admin quarantine
             url: use-case-admin-quarantine.md
-          - text: Apply Azure Information Protection classification labels
+          - text: Apply Microsoft Information Protection sensitivity labels
             url: use-case-information-protection.md
           - text: Extend governance to endpoint remediation
             url: tutorial-flow.md
