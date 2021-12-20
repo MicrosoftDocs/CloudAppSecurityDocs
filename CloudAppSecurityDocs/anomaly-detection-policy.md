@@ -71,7 +71,7 @@ The following anomaly detection policies are available:
   >
   >Malware detected in Office 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
   >
-  >In Box, Dropbox, and Google Workspace. Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
+  >In Box, Dropbox, and Google Workspace, Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
 
 ### Activity from anonymous IP addresses
 
@@ -172,8 +172,6 @@ To affect the anomaly detection engine to suppress or surface alerts according t
     | **System** | Built-in detections that are always suppressed. |
     | **Tenant** | Common activities based on previous activity in the tenant. For example, suppressing activities from an ISP previously alerted on in your organization. |
     | **User** | Common activities based on previous activity of the specific user. For example, suppressing activities from a location that is commonly used by the user. |
-
-* You can also configure whether the alerts for Activity from infrequent country/region, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or just successful logins.
 
 > [!NOTE]
 > By default, legacy sign-in protocols, such as those that don't use multi-factor authentication (for example, WS-Trust), are not monitored by the impossible travel policy. If your organization uses legacy protocols, to avoid missing relevant activities, edit the policy and under **Advanced configuration**, set **Analyze sign in activities** to **All sign ins**.
