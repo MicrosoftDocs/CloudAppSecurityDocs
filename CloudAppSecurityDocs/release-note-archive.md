@@ -1111,7 +1111,7 @@ Released November 13, 2016
 
 **New features:**
 
-- Cloud App Security now supports for Microsoft Information Protection including enhanced integration and autoprovisioning. You can filter your Files and set File policies using the Tag Secure Classification and then set the classification label you want to view. The labels also indicate whether the classification was set by someone in your organization or by people from another tenant (External). You can also set activity policies, based on the Microsoft Information Protection sensitivity labels and enable automatic scan for classification labels in Office 365. For more information on how to take advantage of this great new feature, see [Integrating with Azure Information Protection](azip-integration.md).
+- Cloud App Security now supports for Microsoft Azure Information Protection including enhanced integration and autoprovisioning. You can filter your Files and set File policies using the Tag Secure Classification and then set the classification label you want to view. The labels also indicate whether the classification was set by someone in your organization or by people from another tenant (External). You can also set activity policies, based on the Azure Information Protection classification labels and enable automatic scan for classification labels in Office 365. For more information on how to take advantage of this great new feature, see [Integrating with Azure Information Protection](azip-integration.md).
 
 **Improvements:**
 
@@ -1243,7 +1243,7 @@ Released July 24, 2016
 - Improvements were made to add details to the Discovery log parsing errors, including: No cloud-related transactions, All events are outdated, Corrupted file, Log format doesn't match.
 - The Activity log date filter was improved; it now includes the ability to filter by time.
 - The IP address ranges page was improved for usability.
-- Cloud App Security now includes support for Microsoft Information Protection (Preview version). You can filter your Files and set File policies using the Tag Secure Classification. Then, set the level of the classification label you want to view. The labels also indicate whether the classification was set by someone in your organization or by people from another tenant (External).
+- Cloud App Security now includes support for Microsoft Azure Information Protection (Preview version). You can filter your Files and set File policies using the Tag Secure Classification. Then, set the level of the classification label you want to view. The labels also indicate whether the classification was set by someone in your organization or by people from another tenant (External).
 
 ### Cloud App Security release 76
 

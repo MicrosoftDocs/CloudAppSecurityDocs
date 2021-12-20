@@ -10,9 +10,6 @@ ms.topic: how-to
 
 Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Information Protection. These labels will be applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection. You can also investigate files by filtering for the applied sensitivity label within the Defender for Cloud Apps portal. Using labels enables greater visibility and control of your sensitive data in the cloud. Integrating Microsoft Information Protection with Defender for Cloud Apps is as easy as selecting a single checkbox.
 
-> [!NOTE]
-> If you have Azure Information Protection labels that are [not yet migrated](/azure/information-protection/configure-policy-migrate-labels) to unified sensitivity labels, Defender for Cloud Apps will continue to use those older labels rather than any new sensitivity labels that you create in the Microsoft 365 compliance center.
-
 By integrating Microsoft Information Protection into Defender for Cloud Apps, you can use the full power of both services and secure files in your cloud, including:
 
 - The ability to apply sensitivity labels as a governance action to files that match specific policies
@@ -27,7 +24,7 @@ By integrating Microsoft Information Protection into Defender for Cloud Apps, yo
 
 - To work with Microsoft Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
 
-For Defender for Cloud Apps to apply sensitivity labels, they must be published as part of a sensitivity label policy in the Microsoft 365 compliance center. However, if you have Azure Information Protection labels that you haven't yet [migrated to the unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), these labels must be published via the Azure portal.
+For Defender for Cloud Apps to apply sensitivity labels, they must be published as part of a sensitivity label policy in the Microsoft 365 compliance center.
 
 Defender for Cloud Apps currently supports applying Microsoft Information Protection sensitivity labels for the following file types:
 
