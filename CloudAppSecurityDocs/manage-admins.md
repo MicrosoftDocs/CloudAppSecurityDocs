@@ -10,9 +10,6 @@ ms.topic: how-to
 
 Microsoft Defender for Cloud Apps supports role-based access control. This article provides instructions for setting access to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Office 365](/microsoft-365/admin/add-users/assign-admin-roles).
 
->[!IMPORTANT]
->We have changed the flow for adding external admins to Defender for Cloud Apps. External admin not enrolled using the new process will be deleted by October 31st. For more information, see [Invite external admins](#invite-external-admins).
-
 <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>
 
 ## Office 365 and Azure AD roles with access to Defender for Cloud Apps
