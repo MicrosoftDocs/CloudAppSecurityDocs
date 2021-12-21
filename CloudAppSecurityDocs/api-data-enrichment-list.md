@@ -43,7 +43,7 @@ curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tena
   },
   "skip": 5,
   "limit": 10
-  ...
+  // ...
 }'
 ```
 
