@@ -26,6 +26,9 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Administrative activity – Search only for administrative activities.
 
+  >[!NOTE]
+  >Defender for Cloud Apps can't mark Google Cloud Platform (GCP) administrative activities as administrative activities.
+
 - Alert ID - Search by alert ID.
 
 - App – Search only for activities within specific apps.
