@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 11/28/2021
+ms.date: 12/22/2021
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -19,13 +19,23 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
 >[!NOTE]
->In November 2021, Defender for Cloud Apps is updating its IP addresses in the **App connectors** and **Access and session controls** sections. Please update the IP addresses in your third-party apps and network appliance rules accordingly. For more information, see the [App connector](network-requirements.md#app-connector) and [Access and session controls](network-requirements.md#access-and-session-controls) documentation.
+>In November 2021, Defender for Cloud Apps updated its IP addresses in the **App connectors** and **Access and session controls** sections. Please update the IP addresses in your third-party apps and network appliance rules accordingly. For more information, see the [App connector](network-requirements.md#app-connector) and [Access and session controls](network-requirements.md#access-and-session-controls) documentation.
 
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+## Defender for Cloud Apps release 216 and 217
+
+December 26, 2021
+
+- **Non-Microsoft activities in advanced hunting**  
+Non-Microsoft apps activities are now included the [CloudAppEvent table](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table) in Microsoft 365 Defender [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview). For more information, see [the Microsoft 365 Defender Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/cloudappevents-in-advanced-hunting-now-includes-non-microsoft/ba-p/3036692).
+
+- **NetDocuments API connector is now in general availability**  
+The NetDocuments API connector is in general availability, giving you more visibility into, and control over, how your NetDocument app is used in your organization. For more information, see [How Cloud App Security helps protect your NetDocuments](protect-netdocuments.md)
 
 ## Defender for Cloud Apps release 214 and 215
 
