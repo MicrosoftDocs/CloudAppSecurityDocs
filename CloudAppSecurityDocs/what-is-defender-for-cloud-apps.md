@@ -29,7 +29,7 @@ CASBs address security gaps in an organization's use of cloud services by provid
 
 ## Why do I need a CASB?
 
-You need a CASB to better understand your overall cloud posture across SaaS apps and cloud services and, as such, Shadow IT discovery and app governance are key use cases. Additionally, an organization is responsible for managing and securing its cloud platform including IAM, VMs and their compute resources, data and storage, network resources, and more. Therefore, if you are an organization that uses, or is considering using, cloud apps to your portfolio of network services, you most likely need a CASB to address the additional, unique challenges of regulating and securing your environment. For example, there are many ways for malicious actors to leverage cloud apps to get into your enterprise network and exfiltrate sensitive business data.
+You need a CASB to better understand your overall cloud posture across SaaS apps and cloud services and, as such, Shadow IT discovery and app governance are key use cases. Additionally, an organization is responsible for managing and securing its cloud platform including IAM, VMs and their compute resources, data and storage, network resources, and more. So if you're an organization that uses, or is considering using, cloud apps to your portfolio of network services, you most likely need a CASB to address the additional, unique challenges of regulating and securing your environment. For example, there are many ways for malicious actors to leverage cloud apps to get into your enterprise network and exfiltrate sensitive business data.
 
 As an organization, you need to protect your users and confidential data from the different methods employed by malicious actors. In general, CASBs should help you do this by providing a wide array of capabilities that protect your environment across the following pillars:
 
@@ -42,7 +42,7 @@ As an organization, you need to protect your users and confidential data from th
 
 - **Discover and control the use of Shadow IT**: Identify the cloud apps, IaaS, and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 25,000 SaaS apps against more than 80 risks. Start managing them to ensure security and compliance.
 
-- **Protect your sensitive information anywhere in the cloud**: Understand, classify, and protect the exposure of sensitive information at rest. Leverage out-of-the box policies and automated processes to apply controls in real-time across all your cloud apps.
+- **Protect your sensitive information anywhere in the cloud**: Understand, classify, and protect the exposure of sensitive information at rest. Leverage out-of-the box policies and automated processes to apply controls in real time across all your cloud apps.
 
 - **Protect against cyberthreats and anomalies**: Detect unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications, analyze high-risk usage and remediate automatically to limit the risk to your organization.
 
@@ -94,10 +94,6 @@ Microsoft Defender for Cloud Apps Conditional Access App Control uses reverse pr
 ### Policy control
 
 You can use policies to define your users' behavior in the cloud. Use policies to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If needed, you can use policies to integrate remediation processes to achieve complete risk mitigation. Types of policies correlate to the different types of information you might want to gather about your cloud environment and the types of remediation actions you might take.
-
-## Related Videos
-
-- [Joining the security community](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## Next steps
 
