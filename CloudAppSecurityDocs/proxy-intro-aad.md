@@ -8,7 +8,7 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-In today's workplace, it's often not enough to know what's happening in your cloud environment after the fact. You want to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It's important to enable users in your organization to make the most of the services and tools available to them in cloud apps and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Microsoft Defender for Cloud Apps integrates with any identity provider (IdP) to deliver these capabilities with access and session controls. If you are using Azure Active Directory (Azure AD) as your IdP, these controls are integrated and streamlined for a simpler and more tailored deployment built on Azure AD's [Conditional Access tool](/azure/active-directory/conditional-access/overview).
+In today's workplace, it's often not enough to know what's happening in your cloud environment after the fact. You want to stop breaches and leaks in real time, before employees intentionally or inadvertently put your data and your organization at risk. It's important to enable users in your organization to make the most of the services and tools available to them in cloud apps and let them bring their own devices to work. At the same time, you need tools to help protect your organization from data leaks, and data theft, in real time. Microsoft Defender for Cloud Apps integrates with any identity provider (IdP) to deliver these capabilities with access and session controls. If you're using Azure Active Directory (Azure AD) as your IdP, these controls are integrated and streamlined for a simpler and more tailored deployment built on Azure AD's [Conditional Access tool](/azure/active-directory/conditional-access/overview).
 
 > [!NOTE]
 >
@@ -22,7 +22,7 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 
-- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multi-factor authentication on download of a highly confidential file.
+- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multifactor authentication on download of a highly confidential file.
 
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and encrypted when you integrate with Microsoft Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
@@ -32,7 +32,7 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Monitor user sessions for compliance**: Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future.
 
-- **Block access**: You can granularly block access for specific apps and users depending on several risk factors. For example, you can block them if they are using client certificates as a form of device management.
+- **Block access**: You can granularly block access for specific apps and users depending on several risk factors. For example, you can block them if they're using client certificates as a form of device management.
 
 - **Block custom activities**: Some apps have unique scenarios that carry risk, for example, sending messages with sensitive content in apps like Microsoft Teams or Slack. In these kinds of scenarios, you can scan messages for sensitive content and block them in real time.
 
@@ -88,7 +88,7 @@ When a client certificate check is performed, Defender for Cloud Apps checks for
 
 To configure a policy to leverage device management via client certificates:
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
+1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
 
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.
@@ -115,7 +115,7 @@ Defender for Cloud Apps identifies Apps using information available in its Cloud
 
 Many organizations that choose to use session controls for cloud apps to control in-session activities, also apply access controls to block the same set of native mobile and desktop client apps, thereby providing comprehensive security for the apps.
 
-You can block access to native mobile and desktop client apps with access policies, by setting the **Client app** filter to **Mobile and desktop**. Some native client apps can be individually recognized, whilst others that are part of a suite of apps can only be identified as their top-level app. For example, apps like SharePoint Online can only be recognized by creating an access policy applied to Office 365 apps.
+You can block access to native mobile and desktop client apps with access policies, by setting the **Client app** filter to **Mobile and desktop**. Some native client apps can be individually recognized, while others that are part of a suite of apps can only be identified as their top-level app. For example, apps like SharePoint Online can only be recognized by creating an access policy applied to Office 365 apps.
 
 > [!NOTE]
 > Unless the **Client app** filter is specifically set to **Mobile and desktop**, the resulting access policy will only apply to browser sessions. The reason for this is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter. Whilst most major browsers support performing a client certificate check, some mobile and desktop apps use built-in browsers that may not support this check. Therefore, using this filter can affect authentication for these apps.
@@ -172,6 +172,20 @@ The following is a list of featured apps that are supported in [Office 365 Cloud
 - Yammer (preview)
 
 If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
+
+## Known issues
+
+- **Proxy can be bypassed using embedded token**  
+It's possible to bypass the proxy in cases where the application itself embeds the token within the links. An end user can copy the link and access the resource directly in that case.
+
+- **Copy/cut policy can be bypassed using Developer Tools**  
+It's possible to bypass the defined copy/cut policy by using the browser developer tools. For example, in a policy that prevents copy of content from Microsoft Word, it's possible to view the content using Developer Tools, copy the content from there and then bypass the proxy.
+
+- **Proxy can be bypassed by a parameter change**  
+It's possible to bypass the defined session policy by modifying parameters. For example, it's possible to alter the URL parameters and mislead the service in a way that bypasses the proxy and enables a download of a sensitive file.
+
+- **Browser plug-in limitation**  
+Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
 
 ## Next steps
 
