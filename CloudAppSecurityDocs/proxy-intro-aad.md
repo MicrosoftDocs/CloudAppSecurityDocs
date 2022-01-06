@@ -175,7 +175,7 @@ If you're interested in a specific app being featured, [send us details about th
 
 ## Known limitations
 
-- **Proxy can be bypassed using embedded token**  
+- **Proxy can be bypassed using embedded session token**  
 It's possible to bypass the proxy in cases where the application itself embeds the token within the links. An end user can copy the link and access the resource directly in that case.
 
 - **Copy/cut policy can be bypassed using Developer Tools**  
