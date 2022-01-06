@@ -173,7 +173,7 @@ The following is a list of featured apps that are supported in [Office 365 Cloud
 
 If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
 
-## Known issues
+## Known limitations
 
 - **Proxy can be bypassed using embedded token**  
 It's possible to bypass the proxy in cases where the application itself embeds the token within the links. An end user can copy the link and access the resource directly in that case.
