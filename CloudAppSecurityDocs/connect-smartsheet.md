@@ -49,6 +49,10 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
     - **App URL**: `https://portal.cloudappsecurity.com`
     - **App contact/support**: `https://docs.microsoft.com/cloud-app-security/support-and-ts`
     - **App redirect URL**: `https://portal.cloudappsecurity.com/api/oauth/saga`
+
+      > [!NOTE]
+      > For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
+
     - **Publish App?**: Select.
     - **Logo**: Leave blank.
 

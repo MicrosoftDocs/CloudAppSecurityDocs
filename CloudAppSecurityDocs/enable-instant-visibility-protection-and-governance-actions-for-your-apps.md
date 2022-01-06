@@ -68,7 +68,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           | ✔                         |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
-| Zendesk (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 
 ### User and app governance
 
@@ -91,7 +91,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |
-| Zendesk (Preview) |  |  |  |
+| Zendesk  |  |  |  |
 
 ### Information protection
 
@@ -114,7 +114,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | | | | | |
 | Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
-| Zendesk (Preview) |  |  |  |  |  |
+| Zendesk  |  |  |  |  |  |
 
 ## Prerequisites
 

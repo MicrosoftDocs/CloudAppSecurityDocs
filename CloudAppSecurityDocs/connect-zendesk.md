@@ -1,10 +1,10 @@
 ---
-title: Connect Zendesk to Defender for Cloud Apps (Preview)
+title: Connect Zendesk to Defender for Cloud Apps 
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zendesk using the App Connector APIs. 
 ms.date: 11/09/2021
 ms.topic: how-to
 ---
-# Connect Zendesk to Microsoft Defender for Cloud Apps (Preview)
+# Connect Zendesk to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -36,6 +36,9 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     - Company: **Microsoft Defender for Cloud Apps** (you can also choose another company).
     - Unique identifier: **microsoft_cloud_app_security** (you can also choose another unique identifier).
     - Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
+
+       > [!NOTE]
+       > For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
 
         ![Zendesk create API app.](media/zendesk-create-api-app.png)
 
