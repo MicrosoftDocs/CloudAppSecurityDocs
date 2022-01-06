@@ -37,7 +37,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     - Unique identifier: **microsoft_cloud_app_security** (you can also choose another unique identifier).
     - Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
 
-            > [!NOTE]
+          > [!NOTE]
             > For US Government GCC High customers, enter the following value: 'https://portal.cloudappsecurity.us/api/oauth/saga'
 
         ![Zendesk create API app.](media/zendesk-create-api-app.png)
