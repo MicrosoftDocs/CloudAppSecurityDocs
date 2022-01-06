@@ -1,10 +1,10 @@
 ---
-title: How Defender for Cloud Apps helps protect your Zendesk (Preview)
+title: How Defender for Cloud Apps helps protect your Zendesk
 description: This article provides information about the benefits of connecting your Zendesk app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 11/09/2021
 ms.topic: article
 ---
-# How Defender for Cloud Apps helps protect your Zendesk (Preview)
+# How Defender for Cloud Apps helps protect your Zendesk
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
