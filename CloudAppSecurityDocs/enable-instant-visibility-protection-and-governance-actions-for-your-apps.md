@@ -77,7 +77,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |
 | Azure             |                                      |                           | Not supported by provider |
 | Box               | ✔                                    | Not supported by provider |                           |
-| Dropbox           | Coming soon                          | Coming soon               | Coming soon               |
+| Dropbox           |                                      |                           |                            |
 | GitHub            |                                      | ✔                         |                           |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |
