@@ -18,9 +18,6 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
->[!NOTE]
->In November 2021, Defender for Cloud Apps updated its IP addresses in the **App connectors** and **Access and session controls** sections. Please update the IP addresses in your third-party apps and network appliance rules accordingly. For more information, see the [App connector](network-requirements.md#app-connector) and [Access and session controls](network-requirements.md#access-and-session-controls) documentation.
-
 For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
