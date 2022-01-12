@@ -40,9 +40,9 @@ To integrate with Microsoft Sentinel:
 
 ### Integrating with Microsoft Sentinel
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, click **Security extensions**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, select **Security extensions**.
 
-1. On the **SIEM agents** tab, click add (**+**), and then choose **Microsoft Sentinel**.
+1. On the **SIEM agents** tab, select add (**+**), and then choose **Microsoft Sentinel**.
 
     ![Screenshot showing Add SIEM integration menu.](media/siem0.png)
 
@@ -52,12 +52,12 @@ To integrate with Microsoft Sentinel:
 
     ![Screenshot showing start page of Configure Microsoft Sentinel integration.](media/siem-sentinel-configuration.png)
 
-1. Click **Next**, and continue to Microsoft Sentinel to finalize the integration. For information on configuring Microsoft Sentinel, see [the Microsoft Sentinel data connector for Defender for Cloud Apps](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps).
+1. Select **Next**, and continue to Microsoft Sentinel to finalize the integration. For information on configuring Microsoft Sentinel, see [the Microsoft Sentinel data connector for Defender for Cloud Apps](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps).
 
     ![Screenshot showing finish page of Configure Microsoft Sentinel integration.](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> New discovery logs will start forwarding to Microsoft Sentinel within 15 minutes of configuring them in the Defender for Cloud Apps portal.
+> New discovery logs will usually appear in Microsoft Sentinel within 15 minutes of configuring them in the Defender for Cloud Apps portal. However, it may take longer depending on system environment conditions. For more information, see [Handle ingestion delay in analytics rules](/azure/sentinel/ingestion-delay).
 
 ## Alerts and discovery logs in Microsoft Sentinel
 
@@ -113,20 +113,20 @@ You can get started quickly by using the following steps:
 
 ### Connect the Defender for Cloud Apps app
 
-1. In Power BI, click **Apps**, and then click on the **Shadow IT Discovery** app.
+1. In Power BI, select **Apps**, and then select on the **Shadow IT Discovery** app.
 
-1. On the **Get started with your new app** page, click **Connect**.
+1. On the **Get started with your new app** page, select **Connect**.
 
     ![Screenshot showing connect app data page.](media/siem-sentinel-powerbi-connect.png)
 
-1. On the workspace ID page, enter your Microsoft Sentinel workspace ID as displayed in your log analytics overview page, and then click **Next**.
+1. On the workspace ID page, enter your Microsoft Sentinel workspace ID as displayed in your log analytics overview page, and then select **Next**.
 
     ![Screenshot showing request for workspace ID.](media/siem-sentinel-powerbi-workspace-id.png)
 
-1. On the authentication page, specify the authentication method and privacy level, and then click **Sign in**.
+1. On the authentication page, specify the authentication method and privacy level, and then select **Sign in**.
 
     ![Screenshot showing the authentication page.](media/siem-sentinel-powerbi-authentication.png)
 
-1. After connecting your data, go to the workspace **Datasets** tab and click **Refresh**. This will update the report with your own data.
+1. After connecting your data, go to the workspace **Datasets** tab and select **Refresh**. This will update the report with your own data.
 
 [!INCLUDE [Open support ticket](includes/support.md)]
