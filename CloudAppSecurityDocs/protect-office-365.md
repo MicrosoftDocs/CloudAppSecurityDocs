@@ -14,6 +14,17 @@ Connecting Office 365 to Defender for Cloud Apps gives you improved insights int
 
 Defender for Cloud Apps integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and provides protection for all supported services. For a list of supported services, see [Microsoft 365 services that support auditing](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#microsoft-365-services-that-support-auditing).
 
+## File scanning improvements for Office 365 (New!)
+
+Defender for Cloud Apps has added new file scanning improvements for SharePoint and OneDrive:
+
+- Faster near-real-time scanning speed for files in SharePoint and OneDrive.  
+
+- Better identification for a file's access level in SharePoint: file access level in SharePoint will be marked by default as **Internal**, and not as **Private** (since every file in SharePoint is accessible by the site owner, and not only by the file owner).
+
+    >[!NOTE]
+    >This change could impact your file policies (if a file policy is looking for **Internal** or **Private** files in SharePoint).
+
 ## Main threats
 
 - Compromised accounts and insider threats
