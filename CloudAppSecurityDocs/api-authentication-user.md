@@ -163,11 +163,11 @@ Verify to make sure you got a correct token:
 - Example of sending a request to get a list of alerts **using C#**
 
     ```csharp
-    var httpClient = new HttpClient()
+    var httpClient = new HttpClient();
     
     var request = new HttpRequestMessage(HttpMethod.Get, "https://portal.cloudappsecurity.com/cas/api/v1/alerts/");
     
-     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
     
     var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
     
