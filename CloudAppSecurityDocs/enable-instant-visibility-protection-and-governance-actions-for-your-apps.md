@@ -55,6 +55,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Egnyte (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
 | GCP               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
@@ -78,6 +79,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Azure             |                                      |                           | Not supported by provider |
 | Box               | ✔                                    | Not supported by provider |                           |
 | Dropbox           |                                      |                           |                            |
+| Egnyte (Preview) | | | |
 | GitHub            |                                      | ✔                         |                           |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |
@@ -101,6 +103,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
+| Egnyte (Preview) |  |  |  |  | |
 | GitHub            |                           |                                          |                           |                           |                                            |
 | GCP               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
