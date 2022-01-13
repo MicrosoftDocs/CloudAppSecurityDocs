@@ -103,7 +103,7 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
 
 ### Using C#
 
-- Copy/Paste the below class in your application.
+- Copy/Paste the following class in your application.
 - Use **AcquireUserTokenAsync** method with your application ID, tenant ID, user name, and password to acquire a token.
 
     ```csharp
@@ -124,7 +124,7 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var urlEncodedBody = $"resource={MCASId}&client_id={appId}&grant_type=password&username={username}&password={password}";
+                    var urlEncodedBody = $"scope={MCASId}/Investigation.read&client_id={appId}&grant_type=password&username={username}&password={password}";
     
                     var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
     
@@ -163,11 +163,11 @@ Verify to make sure you got a correct token:
 - Example of sending a request to get a list of alerts **using C#**
 
     ```csharp
-    var httpClient = new HttpClient();
+    var httpClient = new HttpClient()
     
     var request = new HttpRequestMessage(HttpMethod.Get, "https://portal.cloudappsecurity.com/cas/api/v1/alerts/");
     
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
     
     var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
     
