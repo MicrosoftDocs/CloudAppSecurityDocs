@@ -120,28 +120,8 @@ The following tables list, per cloud app, which abilities are supported with App
 
 - For some apps, it may be necessary to allow list IP addresses to enable Defender for Cloud Apps to collect logs and provide access for the Defender for Cloud Apps console. For more information, see [Network requirements](network-requirements.md).
 
-- For each app that you want to connect with the Defender for Cloud Apps API integration, we recommend creating an admin service account dedicated to Defender for Cloud Apps.
-
 > [!NOTE]
 > To get updates when URLs and IP addresses are changed, subscribe to the RSS as explained in: [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
-
-To use App Connectors, you need to make sure you have the following things for each specific app:
-
-| App | License type | User |
-|-----|--------------|------|
-| Azure | | Global Admin |
-| AWS | | Newly created user |
-| Box | Enterprise | It's strongly recommended that you connect to Box as an Admin. Connecting as a Coadmin will result in only partial data visibility. If you connect as a Coadmin, make sure to select all permissions. |
-| Dropbox | Business/Enterprise | Admin |
-| GitHub | GitHub Enterprise Cloud | Owner |
-| GCP | | See the [connect GCP prerequisites](./connect-google-gcp.md#prerequisites) |
-| Google Workspace | Google Workspace Business or Enterprise preferred<br /><br />Google Workspace Enterprise (minimally) | Super Admin |
-| Office 365 | | Global Admin |
-| Okta | Enterprise (not trial) | Admin |
-| Salesforce | | Admin |
-| ServiceNow | Eureka and up | Admin + RestAPI role |
-| Webex | | Admin + Compliance Admin |
-| Workday | | See the [connect Workday prerequisites](./connect-workday.md#prerequisites) |
 
 ### ExpressRoute
 
