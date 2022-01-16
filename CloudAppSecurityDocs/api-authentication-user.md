@@ -107,24 +107,26 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
 - Use **AcquireUserTokenAsync** method with your application ID, tenant ID, user name, and password to acquire a token.
 
     ```csharp
-    namespace MCAS
+    namespace MDA
     {
         using System.Net.Http;
         using System.Text;
         using System.Threading.Tasks;
         using Newtonsoft.Json.Linq;
     
-        public static class MCASUtils
+        public static class MDAUtils
         {
             private const string Authority = "https://login.microsoftonline.com";
     
-            private const string MCASId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
+            private const string MDAId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
+
+            private const string Scope = "Investigation.read";
     
             public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var urlEncodedBody = $"scope={MCASId}/Investigation.read&client_id={appId}&grant_type=password&username={username}&password={password}";
+                    var urlEncodedBody = $"scope={MDAId}/{Scope}&client_id={appId}&grant_type=password&username={username}&password={password}";
     
                     var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
     
