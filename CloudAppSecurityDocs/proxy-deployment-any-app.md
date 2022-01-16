@@ -214,7 +214,7 @@ For example, if you have configured a policy that blocks downloading files for a
 
 ### To install root certificates<a name="install-certs"></a>
 
-1. Repeat the following steps to install the **Current CA** and **Next CA** self-signed root certificates.
+1. Repeat the following steps to install the **Root CA** and **Intermediate CA** self-signed root certificates.
     1. Select the certificate.
     1. Click **Open**, and when prompted click **Open** again.
     1. Click **Install certificate**.
