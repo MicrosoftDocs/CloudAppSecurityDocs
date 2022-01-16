@@ -179,3 +179,4 @@ Verify to make sure you got a correct token:
 ## See also
 
 - [Managing API tokens](api-authentication.md)
+- [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
