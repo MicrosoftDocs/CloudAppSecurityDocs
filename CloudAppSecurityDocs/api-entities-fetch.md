@@ -1,7 +1,7 @@
 ---
 title: Fetch - Entities API
-description: This article describes the fetch request in Cloud App Security's Entities API.
-ms.date: 03/27/2020
+description: This article describes the fetch request in the Defender for Cloud Apps Entities API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Fetch - Entities API

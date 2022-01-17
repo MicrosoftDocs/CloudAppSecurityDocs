@@ -1,7 +1,7 @@
 ---
 title: Close false positive - Alerts API
-description: This article describes the bulk close an alert as false positive request in Cloud App Security's Alerts API.
-ms.date: 10/20/2020
+description: This article describes the bulk close an alert as false positive request in the Defender for Cloud Apps Alerts API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Close false positive - Alerts API

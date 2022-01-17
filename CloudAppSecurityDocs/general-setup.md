@@ -1,22 +1,22 @@
 ---
-title: Set up your organization's settings in Cloud App Security
-description: This article explains how to provide information about your organization in Cloud App Security.
-ms.date: 11/08/2020
+title: Set up your organization's settings in Defender for Cloud Apps
+description: This article explains how to provide information about your organization in Defender for Cloud Apps.
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
-# Basic setup for Cloud App Security
+# Basic setup for Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-The following procedure gives you instructions for customizing the Microsoft Cloud App Security portal.
+The following procedure gives you instructions for customizing the Microsoft Defender for Cloud Apps portal.
 
 ## Prerequisites
 
-For portal access, it's necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security portal:
+For portal access, it's necessary to add the following IP addresses to your Firewall's allow list to provide access for the Defender for Cloud Apps portal:
 
 * 104.42.231.28
 
-For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security GCC High portal:
+For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall's allow list to provide access for the Defender for Cloud Apps GCC High portal:
 
 * 52.227.143.223
 * 13.72.19.4
@@ -26,7 +26,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 ## Set up the portal
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
 
 1. Under **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
 
@@ -34,22 +34,22 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 1. It's also possible to provide a **Logo** that is displayed in email notifications and web pages sent from the system. The logo should be a png file with a maximum size of 150 x 50 pixels on a transparent background.
 
-1. Make sure you add a list of your **Managed domains** to identify internal users. Adding managed domains is a crucial step. Cloud App Security uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.
+1. Make sure you add a list of your **Managed domains** to identify internal users. Adding managed domains is a crucial step. Defender for Cloud Apps uses the managed domains to determine which users are internal, external, and where files should and shouldn't be shared. This information is used for reports and alerts.
 
     * Users in domains that aren't configured as internal are marked as external. External users aren't scanned for activities or files.
 
 1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out.
 
-1. If you're integrating with Azure Information Protection integration, see [Azure Information Protection Integration](azip-integration.md) for information.
+1. If you're integrating with Microsoft Information Protection, see [Microsoft Information Protection Integration](azip-integration.md) for information.
 
-    * To work with Azure Information Protection integration, you must enable the [App connector for Office 365](connect-office-365-to-microsoft-cloud-app-security.md).
+    * To work with Microsoft Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
 
-1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](azip-integration.md) for information.
+1. If you're integrating with Microsoft Defender for Identity integration, see [Microsoft Defender for Identity Integration](mdi-integration.md) for information.
 
-1. If at any point you want to back up your portal settings, this screen enables you to do that. Click **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
+1. If at any point you want to back up your portal settings, this screen enables you to do that. Select **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
 
 > [!NOTE]
-> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.
+> If you use ExpressRoute, Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps and traffic sent to Defender for Cloud Apps, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.
 >
 > For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 

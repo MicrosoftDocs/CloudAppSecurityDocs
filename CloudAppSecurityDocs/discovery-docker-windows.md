@@ -1,14 +1,14 @@
 ---
-title: Roll out continuous reports for Cloud App Security using a Docker on Windows
-description: This article describes the process configuring automatic log upload for continuous reports in Cloud App Security using a Docker on Windows in an on-premises server.
-ms.date: 12/02/2020
+title: Roll out continuous reports for Defender for Cloud Apps using a Docker on Windows
+description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Windows in an on-premises server.
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Docker on Windows on-premises
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can configure automatic log upload for continuous reports in Cloud App Security using a Docker on Windows.
+You can configure automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Windows.
 
 ## Prerequisites
 
@@ -19,7 +19,9 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 
 * Disk space: 250 GB
 
-* CPU: 2
+* CPU cores: 2
+
+* CPU Architecture: Intel® 64 and AMD 64
 
 * RAM: 4 GB
 
@@ -32,6 +34,7 @@ You can configure automatic log upload for continuous reports in Cloud App Secur
 > * A user must be signed in for Docker to collect logs. We recommend advising your Docker users to disconnect without signing out.
 > * Docker for Windows is not officially supported in VMWare virtualization scenarios.
 > * Docker for Windows is not officially supported in nested virtualization scenarios. If you still plan to use nested virtualization, refer to [Docker's official guide](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
+> * For information about additional configuration and implementation considerations for Docker for Windows, see [Install Docker Desktop on Windows](https://docs.docker.com/desktop/windows/install/).
 
 > [!NOTE]
 > If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
@@ -55,7 +58,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1. Go to the **Automatic log upload** settings page.
 
-    1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), click the settings icon followed by **Log collectors**.
+    1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click the settings icon followed by **Log collectors**.
 
     ![settings icon.](media/settings-icon.png)
 
@@ -94,7 +97,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
     > [!NOTE]
     >
     > * A single Log collector can handle multiple data sources.
-    > * Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Cloud App Security. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
+    > * Copy the contents of the screen because you will need the information when you configure the Log Collector to communicate with Defender for Cloud Apps. If you selected Syslog, this information will include information about which port the Syslog listener is listening on.
     > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-advanced-management.md#changing-the-ftp-password).
 
 ### Step 2 – On-premises deployment of your machine
@@ -138,7 +141,7 @@ Configure your network firewalls and proxies to periodically export logs to the 
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 ```
 
-### Step 4 - Verify the successful deployment in the Cloud App Security portal
+### Step 4 - Verify the successful deployment in the Defender for Cloud Apps portal
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
@@ -155,9 +158,9 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 ### Optional - Create custom continuous reports <a name="continuous-reports"></a>
 
-Verify that the logs are being uploaded to Cloud App Security and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
+Verify that the logs are being uploaded to Defender for Cloud Apps and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
 1. Click the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 

@@ -2,7 +2,7 @@
 title: include file
 description: include file
 ms.collection: M365-security-compliance
-ms.service: cloud-app-security
+ms.service: defender-for-cloud-apps
 author: dcurwin
 ms.topic: include
 ms.date: 11/24/2019

@@ -1,7 +1,7 @@
 ---
 title: Mark as unread - Alerts API
-description: This article describes the mark as unread request in Cloud App Security's Alerts API.
-ms.date: 03/27/2020
+description: This article describes the mark as unread request in the Defender for Cloud Apps Alerts API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Mark as unread - Alerts API

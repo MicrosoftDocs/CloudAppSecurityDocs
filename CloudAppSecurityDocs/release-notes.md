@@ -1,14 +1,16 @@
 ---
-title: What's new in Cloud App Security
-description: This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
-ms.date: 08/22/2021
+title: What's new in Microsoft Defender for Cloud Apps
+description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
+ms.date: 12/22/2021
 ms.topic: overview
 ---
-# What's new in Microsoft Cloud App Security
+# What's new in Microsoft Defender for Cloud Apps
 
-*Applies to: Microsoft Cloud App Security*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article is updated frequently to let you know what's new in the latest release of Cloud App Security.
+*Applies to: Microsoft Defender for Cloud Apps*
+
+This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
@@ -16,9 +18,67 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 >
 > Threat protection product names from Microsoft are changing. Read more about this and other updates [here](https://www.microsoft.com/security/blog/?p=91813). We'll be using the new names in future releases.
 
->[!IMPORTANT]
->**Enhanced proxy URL for access controls (gradual rollout)**  
-Starting in early July 2021, we will change our access endpoint from `<mcas-dc-id>.access-control.cas.ms` to `access.mcas.ms`. Make sure you update your network appliance rules before the end of June, as this can lead to access issues. For more information, see [Access and session controls](network-requirements.md#access-and-session-controls)
+For more information on what's new with other Microsoft Defender security products, see:
+
+- [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
+- [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
+- [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+## Defender for Cloud Apps release 216 and 217
+
+December 26, 2021
+
+- **Non-Microsoft activities in advanced hunting**  
+Non-Microsoft apps activities are now included the [CloudAppEvent table](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table) in Microsoft 365 Defender [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview). For more information, see [the Microsoft 365 Defender Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/cloudappevents-in-advanced-hunting-now-includes-non-microsoft/ba-p/3036692).
+
+- **NetDocuments API connector is now in general availability**  
+The NetDocuments API connector is in general availability, giving you more visibility into, and control over, how your NetDocument app is used in your organization. For more information, see [How Cloud App Security helps protect your NetDocuments](protect-netdocuments.md)
+
+## Defender for Cloud Apps release 214 and 215
+
+November 28, 2021
+
+- **NetDocuments app connector available in public preview**  
+A new app connector for NetDocuments is available in public preview. You can now connect Microsoft Defender for Cloud Apps to NetDocuments to monitor and protect users and activities. For more information, see [Connect NetDocuments to Microsoft Defender for Cloud Apps](connect-netdocuments-to-microsoft-defender-for-cloud-apps.md).
+
+<!--
+- **Reset user investigation priority score**  
+The user investigation priority score can now be reset to 0 if an investigation was done and there's no need to see the user score for past events. For more information, see [Identify top risky users](tutorial-ueba.md#phase-2-identify-top-risky-users).
+-->
+
+## Cloud App Security release 212 and 213
+
+October 31, 2021
+
+- **Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts will not apply on failed logins.**  
+After a thorough security review, we decided to separate failed login handling from the alerts mentioned above. From now on, they'll only be triggered by successful login cases and not by unsuccessful logins or attack attempts. Mass failed login alert will still be applied if there are anomalous high amount of failed login attempts on a user. For more information, see [Behavioral analytics and anomaly detection](anomaly-detection-policy.md).
+
+- **New anomaly detection: Unusual ISP for an OAuth app**  
+We've extended our anomaly detections to include suspicious addition of privileged credentials to an OAuth app. The new detection is now available out-of-the-box and automatically enabled. The detection can indicate that an attacker has compromised the app and is using it for malicious activity. For more information, see  [Unusual ISP for an OAuth app](investigate-anomaly-alerts.md#unusual-isp-for-an-oauth-app).
+
+- **New detection: Activity from password-spray associated IP addresses**  
+This detection compares IP addresses performing successful activities in your cloud applications to IP addresses identified by Microsoft’s threat intelligence sources as recently performing password spray attacks. It alerts about users that were victims of password spray campaigns and managed to access your cloud applications from those malicious IPs. This new alert will be generated by the existing **Activity from suspicious IP addresses** policy. For more information, see [Activity from suspicious IP addresses](investigate-anomaly-alerts.md#activity-from-suspicious-ip-addresses).
+
+- **Smartsheet and OneLogin API connectors are now in general availability**  
+Smartsheet and OneLogin API connectors are now in general availability. You can now connect Microsoft Cloud App Security to Smartsheet and to OneLogin to monitor and protect users and activities. For more information, see  [Connect Smartsheet](./connect-smartsheet.md) and [Connect OneLogin](./connect-onelogin.md).
+
+- **New Shadow IT integration with Open Systems**  
+We've added native integration with Open Systems providing you with Shadow IT visibility into app use and control over app access. For more information, see [Integrate Cloud App Security with Open Systems](open-systems-integration.md).
+
+## Cloud App Security release 209, 210, and 211
+
+October 10, 2021
+
+- **Slack API connector is now in general availability**  
+Slack API connector is in general availability, giving you more visibility in to, and control over, how your app is used in your organization. For more information, see [How Cloud App Security helps protect your Slack Enterprise](protect-slack.md).
+
+- **New warn experience for monitored apps with Microsoft Defender for Endpoint is now in general availability**  
+Cloud App Security has extended its native integration with Microsoft Defender for Endpoint. You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
+  - [Warn and educate users on risky app usage](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/warn-and-educate-users-on-risky-app-usage/ba-p/2630982)
+  - [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md)
+
+- **New discovered app experience in general availability**  
+As part of continuous improvement of our entity experiences, we're introducing a modernized discovered app experience to cover discovered web apps and OAuth apps and provide a unified view of an application entity. For more information, see [Working with the app page](working-with-app-page.md).
 
 ## Cloud App Security release 208
 
@@ -31,10 +91,10 @@ As part of continuous improvement of our entity experiences, we're introducing a
 The app governance add-on to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs.  App governance delivers full visibility, remediation, and governance into how these apps access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. For more information:
   - [Learn more about app governance](/microsoft-365/compliance/app-governance-manage-app-governance)
   - [Learn about customer eligibility](/microsoft-365/compliance/app-governance-get-started)
-  - [Sign up for a free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+  - [Sign up for a free trial](https://www.microsoft.com/microsoft-365/try)
 
 - **Smartsheet app connector available in public preview**  
-A new app connector for Smartsheet is available in public preview. You can now connect Microsoft Cloud App Security to Smartsheet to monitor and protect users and activities. For more information, see [Connect Smartsheet to Microsoft Cloud App Security](connect-smartsheet-to-microsoft-cloud-app-security.md).
+A new app connector for Smartsheet is available in public preview. You can now connect Microsoft Cloud App Security to Smartsheet to monitor and protect users and activities. For more information, see [Connect Smartsheet to Microsoft Cloud App Security](./connect-smartsheet.md).
 
 ## Cloud App Security release 207
 
@@ -57,7 +117,7 @@ Cloud App Security's Cloud Discovery analyzes a wide range of traffic logs to ra
 July 11, 2021
 
 - **Zendesk app connector available in public preview**  
-A new app connector for Zendesk is available in public preview. You can now connect Microsoft Cloud App Security to Zendesk to monitor and protect users and activities. For more information, see [Connect Zendesk](connect-zendesk-to-microsoft-cloud-app-security.md).
+A new app connector for Zendesk is available in public preview. You can now connect Microsoft Cloud App Security to Zendesk to monitor and protect users and activities. For more information, see [Connect Zendesk](./connect-zendesk.md).
 
 - **New Cloud Discovery parser for Wandera**  
 Cloud Discovery in Cloud App Security analyzes a wide range of traffic logs to rank and score apps. Now, Cloud Discovery includes a built-in log parser to support the Wandera format. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
@@ -67,7 +127,7 @@ Cloud Discovery in Cloud App Security analyzes a wide range of traffic logs to r
 June 27, 2021
 
 - **Slack and OneLogin app connectors available in public preview**  
-New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](connect-slack-to-microsoft-cloud-app-security.md) and [Connect OneLogin](connect-okta-to-microsoft-cloud-app-security.md).
+New app connectors are now available for Slack and OneLogin in public preview. You can now connect Microsoft Cloud App Security to Slack and to OneLogin to monitor and protect users and activities. For more information, see [Connect Slack](./connect-slack.md) and [Connect OneLogin](./connect-okta.md).
 
 ## Cloud App Security release 203
 
@@ -102,7 +162,7 @@ The enhanced Cloud App Security [Service Health Dashboard](https://admin.microso
 In the dashboard, you can configure notifications, allowing relevant users to stay updated with the current Cloud App Security status. To learn how to configure email notifications and additional information about the dashboard, see [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
 - **AIP support deprecated**  
-Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-identity/understanding-unified-labeling-migration/ba-p/783185).
+Label management from the Azure Information Protection portal (classic) is deprecated beginning April 1, 2021. Customers without AIP extended support should migrate their labels to Microsoft Information Protection to continue using sensitivity labels in Cloud App Security. Without migration to Microsoft Information Protection or AIP extended support, file policies with sensitivity labels will be disabled. For more information, see [Understanding Unified Labeling migration](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/understanding-unified-labeling-migration/ba-p/783185).
 
 - **DLP near real-time rollout completed for Dropbox, ServiceNow, AWS, and Salesforce**  
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
@@ -121,7 +181,7 @@ Released April 4, 2021
 We've added the ability to exclude discovered entities based on imported Azure Active Directory groups. Excluding AAD groups will hide all discovery-related data for any users in these groups. For more information, see [Exclude entities](discovered-apps.md#exclude-entities).
 
 - **API connector support for ServiceNow Orlando and Paris versions**  
-We have added support for the ServiceNow API connector to the Orlando and Paris versions. For more information, see [Connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md).
+We have added support for the ServiceNow API connector to the Orlando and Paris versions. For more information, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md).
 
 - **Always apply the selected action even if data cannot be scanned**  
 We've added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy.
@@ -151,11 +211,11 @@ Released March 7, 2021
 - **Enhanced Shadow IT discovery with Microsoft Defender for Endpoint**  
 We've further improved our Defender for Endpoint integration by leveraging enhanced signals for the Defender agent, providing more accurate app discovery and organizational user context.
 
-    To benefit from the latest enhancements, make sure your organizational endpoints are updated with the latest Windows 10 updates:
+  To benefit from the latest enhancements, make sure your organizational endpoints are updated with the latest Windows 10 updates:
 
-    - [KB4601383](https://support.microsoft.com/topic/february-16-2021-kb4601383-os-build-17763-1790-preview-9535653c-8012-47f0-0f90-44cdd57cdc36): Windows 10, version 1809
-    - [KB4601380](https://support.microsoft.com/topic/february-16-2021-kb4601380-os-build-18363-1411-preview-2e3c38e1-a947-1033-8006-a30f3806da18): Windows 10, version 1909
-    - [KB4601382](https://support.microsoft.com/topic/february-24-2021-kb4601382-os-builds-19041-844-and-19042-844-preview-1a7ed2b4-017d-2644-a1e8-dd6bf14cba76): Windows 10, version 20H2, version [21H1 Insider](https://blogs.windows.com/windows-insider/2021/02/17/announcing-windows-10-insider-preview-build-19043-844-21h1/)
+  - [KB4601383](https://support.microsoft.com/topic/february-16-2021-kb4601383-os-build-17763-1790-preview-9535653c-8012-47f0-0f90-44cdd57cdc36): Windows 10, version 1809
+  - [KB4601380](https://support.microsoft.com/topic/february-16-2021-kb4601380-os-build-18363-1411-preview-2e3c38e1-a947-1033-8006-a30f3806da18): Windows 10, version 1909
+  - [KB4601382](https://support.microsoft.com/topic/february-24-2021-kb4601382-os-builds-19041-844-and-19042-844-preview-1a7ed2b4-017d-2644-a1e8-dd6bf14cba76): Windows 10, version 20H2, version [21H1 Insider](https://blogs.windows.com/windows-insider/2021/02/17/announcing-windows-10-insider-preview-build-19043-844-21h1/)
 
 - **Configurable session lifetime**  
 We're enabling customers to configure a shorter session lifetime for Conditional Access App Control. By default, sessions proxied by Cloud App Security have a maximum lifetime of 14 days. For more information about shortening session lifetimes, contact us at mcaspreview@microsoft.com.
@@ -171,7 +231,7 @@ We've updated the **Policies** page, adding a tab for every policy category. We 
 We've enhanced the Office 365 OAuth apps activities export to CSV file with the *Redirect URL* of the OAuth apps. For more information about exporting OAuth app activities, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
 
 - **Updates to the portal interface**  
-In the coming months, Cloud App Security will be updating its User Interface to provide a more consistent experience across Microsoft 365 security portals. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-cloud-app-security-user-interface-updates/ba-p/2083113)
+In the coming months, Cloud App Security will be updating its User Interface to provide a more consistent experience across Microsoft 365 security portals. [Learn more](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-cloud-app-security-user-interface-updates/ba-p/2083113)
 
 ## Cloud App Security release 189, 190, and 191
 
@@ -420,10 +480,10 @@ We've expanded our current anomalous behavior alerts for Workday. The new alerts
   - [Impossible travel](anomaly-detection-policy.md#impossible-travel)
 
 - **Enhanced Salesforce log collection**  
-Cloud App Security now supports Salesforce's hourly event log. Hourly event logs give you accelerated, near real-time monitoring of user activities. For more information, see [Connect Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md).
+Cloud App Security now supports Salesforce's hourly event log. Hourly event logs give you accelerated, near real-time monitoring of user activities. For more information, see [Connect Salesforce](./connect-salesforce.md).
 
 - **Support for AWS security configuration using a master account**  
-Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS Security configuration to Cloud App Security](connect-aws-to-microsoft-cloud-app-security.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
+Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS Security configuration to Cloud App Security](./connect-aws.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
 
 - **Session controls support for modern browsers**  
 Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.
@@ -452,7 +512,7 @@ The Docker-based log collector was enhanced with the following important updates
     We strongly recommend that you upgrade your environment to this new version. For more information, see [Log collector deployment modes](discovery-docker.md#deployment-modes).
 
 - **Support for ServiceNow New York**  
-Cloud App Security now supports the latest version (New York) of ServiceNow. To learn about securing ServiceNow, see [Connect ServiceNow to Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md).
+Cloud App Security now supports the latest version (New York) of ServiceNow. To learn about securing ServiceNow, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md).
 
 - **Enhanced detection logic: Impossible travel**  
 We've updated the detection logic for impossible travel to provide enhanced coverage and better accuracy. As part of this update, we also updated the detection logic for [impossible travel from corporate networks](anomaly-detection-policy.md#impossible-travel).

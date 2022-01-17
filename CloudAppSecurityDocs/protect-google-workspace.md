@@ -1,16 +1,16 @@
 ---
-title: How Cloud App Security helps protect your Google Workspace environment
-description: This article provides information about the benefits of connecting your Google Workspace app to Cloud App Security using the API connector for visibility and control over use.
-ms.date: 12/04/2019
+title: How Defender for Cloud Apps helps protect your Google Workspace environment
+description: This article provides information about the benefits of connecting your Google Workspace app to Defender for Cloud Apps using the API connector for visibility and control over use.
+ms.date: 11/09/2021
 ms.topic: article
 ---
-# How Cloud App Security helps protect your Google Workspace environment
+# How Defender for Cloud Apps helps protect your Google Workspace environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 As a cloud file storage and collaboration tool, Google Workspace enables your users to share their documents across your organization and partners in a streamlined and efficient way. Using Google Workspace may expose your sensitive data not only internally, but also to external collaborators, or even worse make it publicly available via a shared link. Such incidents can be caused by malicious actors, or by unaware employees. Google Workspace also provides a large third-party app eco-system to help boost productivity. Using these apps can expose your organization to the risk of malicious apps or use of apps with excessive permissions.
 
-Connecting Google Workspace to Cloud App Security gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
+Connecting Google Workspace to Defender for Cloud Apps gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
 ## Main threats
 
@@ -22,7 +22,7 @@ Connecting Google Workspace to Cloud App Security gives you improved insights in
 - Ransomware
 - Unmanaged bring your own device (BYOD)
 
-## How Cloud App Security helps to protect your environment
+## How Defender for Cloud Apps helps to protect your environment
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
@@ -49,7 +49,7 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 | Type | Action |
 | ---- | ---- |
-| Data governance | - Apply Azure Information Protection classification label<br />- Grant read permission to domain<br />- Make a file/folder in Google Drive private<br />- Reduce public access to file/folder<br />- Remove a collaborator from a file<br />- Remove Azure Information Protection classification label<br />- Remove external collaborators on file/folder<br />- Remove file editor's ability to share<br />- Remove public access to file/folder<br />- Require user to reset password to Google<br />- Send DLP violation digest to file owners<br />- Send DLP violation to last file editor<br />- Transfer file ownership<br />- Trash file |
+| Data governance | - Apply Microsoft Information Protection sensitivity label<br />- Grant read permission to domain<br />- Make a file/folder in Google Drive private<br />- Reduce public access to file/folder<br />- Remove a collaborator from a file<br />- Remove Microsoft Information Protection sensitivity label<br />- Remove external collaborators on file/folder<br />- Remove file editor's ability to share<br />- Remove public access to file/folder<br />- Require user to reset password to Google<br />- Send DLP violation digest to file owners<br />- Send DLP violation to last file editor<br />- Transfer file ownership<br />- Trash file |
 | User governance | - Suspend user<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
 | OAuth app governance | - Revoke OAuth app permission |
 
@@ -62,4 +62,4 @@ Review our best practices for [securing and collaborating with external users](b
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [How to connect Google Workspace to Microsoft Cloud App Security](connect-google-workspace-to-microsoft-cloud-app-security.md)
+> [How to connect Google Workspace to Microsoft Defender for Cloud Apps](./connect-google-workspace.md)
