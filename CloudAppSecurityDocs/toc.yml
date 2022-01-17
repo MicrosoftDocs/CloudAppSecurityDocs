@@ -68,6 +68,8 @@ items:
     items:
     - name: Protect connected apps
       href: protect-connected-apps.md
+    - name: Protect Atlassian (Preview)
+      href: protect-atlassian.md
     - name: Protect AWS
       href: protect-aws.md
     - name: Protect Azure
@@ -214,6 +216,8 @@ items:
     items:
     - name: Connect apps to get visibility and protection
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+    - name: Connect Atlassian (Preview)
+      href: connect-atlassian.md
     - name: Connect Azure
       href: ./connect-azure.md
     - name: Connect AWS
