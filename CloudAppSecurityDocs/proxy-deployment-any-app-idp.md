@@ -42,7 +42,7 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
 
 Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
 
-1. **[Configure your IdP to work with Defender for Cloud Apps](#step-1-configure-your-idp-to-work-with-cloud-app-security)**
+1. **[Configure your IdP to work with Defender for Cloud Apps](#step-1-configure-your-idp-to-work-with-defender-for-cloud-apps)**
 
 1. **[Configure the app that you are deploying](#conf-app)**
 
