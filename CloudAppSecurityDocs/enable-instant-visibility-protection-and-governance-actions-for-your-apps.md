@@ -51,6 +51,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
 | ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
+| Atlassian (Preview) | ✔ |  |  | ✔ | ✔ | ✔ |
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
@@ -74,6 +75,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |  App                 | User governance                      | View app permissions      | Revoke app permissions    |
 | ----------------- | ------------------------------------ | ------------------------- | ------------------------- |
+| Atlassian (Preview) |  |  |  |
 | AWS               |                                      | Not applicable            | Not applicable            |
 | Azure             |                                      |                           | Not supported by provider |
 | Box               | ✔                                    | Not supported by provider |                           |
@@ -97,6 +99,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Microsoft Information Protection sensitivity labels |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
+| Atlassian (Preview) |  |  |  |  |  |
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
