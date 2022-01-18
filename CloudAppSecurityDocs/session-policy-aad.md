@@ -27,7 +27,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 * Make sure you have configured your IdP solution to work with Defender for Cloud Apps, as follows:
   * For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-  * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
+  * For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp#configure-integration-with-other-idp-solutions)
 
 ## Create a Defender for Cloud Apps session policy
 
