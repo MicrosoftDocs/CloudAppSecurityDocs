@@ -129,7 +129,9 @@ While session controls are built to work with any browser on any major platform 
 > - Defender for Cloud Apps uses Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
 > - To apply session controls to portal.office.com, you must onboard Microsoft 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
-<a name="featured-apps"></a>Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls:
+#### Featured apps
+
+Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -189,13 +191,11 @@ Our current Conditional Access App Control session restrictions enforcement solu
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+For instructions on how to onboard your apps, see the appropriate document below:
 
-> [!div class="nextstepaction"]
-> [Deploy Conditional Access App Control for any app](proxy-deployment-any-app.md)
-
-> [!div class="nextstepaction"]
-> [Troubleshooting access and session controls](troubleshooting-proxy.md)
+- [Deploy Conditional Access App Control for featured apps with Azure AD](proxy-deployment-aad.md)
+- [Deploy Conditional Access App Control for featured apps with non-Microsoft IdP](proxy-deployment-featured-idp.md)
+- [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md)
+- [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
