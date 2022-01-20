@@ -59,7 +59,7 @@ To enable Defender for Endpoint integration with Defender for Cloud Apps:
 
 To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 
-1. In Defender for Cloud Apps, select the **Settings** icon, and then select **Microsoft Defender for Endpoint**.
+1. In Defender for Cloud Apps, select the **Settings** icon, select **Settings**, and then select **Microsoft Defender for Endpoint**.
 1. Under **Alerts**, select the global severity level for alerts.
 1. Select **Save**.
 
