@@ -39,8 +39,8 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
       > [!NOTE]
       >
+      > - For US Government GCC customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/saga`
       > - For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
-      > - For US Government GCC moderate customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/saga`
 
 1. Select **Save**, and then select **OK**.
 
