@@ -16,7 +16,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 - Supported Zendesk licenses:
   - Enterprise
   - Enterprise Plus
- 
+
  >[!NOTE]
 > Connecting Zendesk to Defender for Cloud Apps with a Zendesk user that is not an admin will result in a connection error.
 
@@ -37,10 +37,10 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     - Unique identifier: **microsoft_cloud_app_security** (you can also choose another unique identifier).
     - Redirect URL: `https://portal.cloudappsecurity.com/api/oauth/saga`
 
-       > [!NOTE]
-       > For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
-
-        ![Zendesk create API app.](media/zendesk-create-api-app.png)
+      > [!NOTE]
+      >
+      > - For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
+      > - For US Government GCC moderate customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/saga`
 
 1. Select **Save**, and then select **OK**.
 
