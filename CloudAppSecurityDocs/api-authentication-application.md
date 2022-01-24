@@ -5,7 +5,7 @@ ms.date: 11/09/2021
 ms.topic: reference
 ---
 
-# Create an app to access Microsoft Defender for Cloud Apps without a user (preview)
+# Create an app to access Microsoft Defender for Cloud Apps without a user
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -4,7 +4,7 @@ description: Learn how to create an application to get programmatic access to De
 ms.date: 11/09/2021
 ms.topic: reference
 ---
-# Access Microsoft Defender for Cloud Apps API with user context (preview)
+# Access Microsoft Defender for Cloud Apps API with user context
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
