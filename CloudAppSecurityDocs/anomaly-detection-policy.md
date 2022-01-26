@@ -56,7 +56,7 @@ The following anomaly detection policies are available:
 
 ### Malware detection
 
-* This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to our heuristics will also be sandbox scanned. After files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
+* This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to our heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
 
   You can use this detection in real time using session policies to control file uploads and downloads.
 
