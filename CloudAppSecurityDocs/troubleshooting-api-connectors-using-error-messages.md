@@ -20,6 +20,7 @@ App connector errors can be seen in the app connector dialog after attempting to
 > |----|----|----|------------|
 > |HttpRequestFailure: Server returned: 500 Internal server error|All apps|There was an error in the app.|Check the status of the app|
 > |Service timeout|All apps|A timeout was detected in the connection between Defender for Cloud Apps and the app. This could be due to a problem with the app.|Try again later.|
+> |Get events: Request failed with status code 402. Payment Required. Audit Log Entitlement validation failed|Atlassian|The Atlassian subscription doesn't have 'Atlassian Access' plan which is required to monitor events.|Please enable 'Atlassian Access' plan on your Atlassian subscription.|
 > |NullPointerException|AWS|Internal error|Contact support|
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|Box|The Box refresh token is not valid|Follow the process to connect Box to Defender for Cloud Apps again.|
 > |BoxRestException: Failed to parse response.|Box|Internal error|Click the Test now link again to test the connection to Box.|
