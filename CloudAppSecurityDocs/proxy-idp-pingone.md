@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any third-party IdP. This article describes how to route app sessions from PingOne to Defender for Cloud Apps for real-time session controls.
+You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microsoft IdP. This article describes how to route app sessions from PingOne to Defender for Cloud Apps for real-time session controls.
 
 For this article, we'll use the Salesforce app as an example of a web app being configured to use Defender for Cloud Apps session controls. To configure other apps, perform the same steps according to their requirements.
 
@@ -23,7 +23,8 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 ## To configure session controls for your app using PingOne as the IdP
 
-Use the following steps to route your web app sessions from PingOne to Defender for Cloud Apps. For Azure AD configuration steps, see [Configure integration with Azure AD](proxy-deployment-any-app.md#configure-integration-with-azure-ad).
+Use the following steps to route your web app sessions from PingOne to Defender for Cloud Apps. For Azure AD configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
+
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by PingOne using one of the following methods:

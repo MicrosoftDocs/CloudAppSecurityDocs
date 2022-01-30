@@ -15,7 +15,7 @@ Before you continue, make sure your environment meets the following minimum gene
 - **Licensing**: Make sure you have a valid [license](https://aka.ms/mcaslicensing).
 - **Single Sign-On (SSO)**: Apps must be configured with one of the supported SSO solutions.
   - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0
-  - Third-party IdP using SAML 2.0
+  - Non-Microsoft IdP using SAML 2.0
 - **Browser support**: Session controls are available for browser-based sessions on these supported browsers: Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest)
 - **Downtime**: Defender for Cloud Apps allows you to define the default behavior to apply if there is a service disruption, such as a component not functioning correctly. You can choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. This default behavior during system downtime can be configured in the Defender for Cloud Apps portal, as follows: **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.
 
@@ -226,7 +226,7 @@ When onboarding an app to Conditional Access App Control, the final step in the 
 | Identity provider | Validations |
 |---|---|
 | Azure AD | 1. Make sure you have a valid license for Azure AD Premium P1 in addition to a Defender for Cloud Apps license<br />2. Make sure that the app uses the SAML 2.0  or the OpenID Connect protocol<br />3. Make sure that the app SSO in Azure AD |
-| Third-party | 1. Make sure you have a valid Defender for Cloud Apps license<br />2. Create a duplicate app<br />3. Make sure that the app uses the SAML protocol<br />4. Validate that you have fully onboarded the app and the status of the app is **Connected** |
+| Non-Microsoft | 1. Make sure you have a valid Defender for Cloud Apps license<br />2. Create a duplicate app<br />3. Make sure that the app uses the SAML protocol<br />4. Validate that you have fully onboarded the app and the status of the app is **Connected** |
 
 1. In your Azure AD policy, under the **Session**, make sure that the session is forced to route to Defender for Cloud Apps, which will in turn allow the app to appear in on the **Conditional Access App Control apps** page, as follows:
     1. Conditional Access App Control is selected
@@ -237,7 +237,7 @@ When onboarding an app to Conditional Access App Control, the final step in the 
 
 An app's status can vary from **Continue Setup**, **Connected**, and **No Activities**.
 
-For apps connected via third-party identity providers (IdP), if the setup is not complete, when accessing the app you will see a page with the status of **Continue Setup**. Use the following steps complete the setup.
+For apps connected via non-Microsoft identity providers (IdP), if the setup is not complete, when accessing the app you will see a page with the status of **Continue Setup**. Use the following steps complete the setup.
 
 **Recommended steps**
 
@@ -394,7 +394,7 @@ While troubleshooting onboarding apps, there are some additional things to consi
 This section is for end users using apps protected by Defender for Cloud Apps and helps identify common situations that may arise in the following areas:
 
 - [User monitoring page is not appearing](#user-monitoring-page-is-not-appearing)
-- [Not able to access app from a third-party Identity Provider](#not-able-to-access-app-from-a-third-party-identity-provider)
+- [Not able to access app from a non-Microsoft Identity Provider](#not-able-to-access-app-from-a-non-microsoft-identity-provider)
 - [**Something Went Wrong** page appears](#something-went-wrong-page-appears)
 - [Clipboard actions or file controls are not being blocked](#clipboard-actions-or-file-controls-are-not-being-blocked)
 - [Downloads are not being protected](#downloads-are-not-being-protected)
@@ -423,9 +423,9 @@ When routing a user through the Defender for Cloud Apps, you can notify the user
 1. Click **Preview** to verify the user monitoring page that appears before accessing an app.
 1. Click **Save**.
 
-### Not able to access app from a third-party Identity Provider
+### Not able to access app from a non-Microsoft Identity Provider
 
-If an end user is receiving a general failure after logging into an app from a third-party Identity Provider, validate the third-party IdP configuration.
+If an end user is receiving a general failure after logging into an app from a non-Microsoft Identity Provider, validate the non-Microsoft IdP configuration.
 
 **Recommended steps**
 
@@ -443,11 +443,11 @@ Sometimes during a proxied session, the **Something Went Wrong** page may appear
 
 1. A user logs in after being idle for a while
 1. Refreshing the browser and the page load takes longer than expected
-1. The third-party IdP app is not configured correctly
+1. The non-Microsoft IdP app is not configured correctly
 
 **Recommended steps**
 
-1. If the end user is trying to access an app that is configured using a third-party IdP, see [Not able to access app from a third-party IdP](#not-able-to-access-app-from-a-third-party-identity-provider) and [App status: Continue Setup](#app-status-continue-setup).
+1. If the end user is trying to access an app that is configured using a non-Microsoft IdP, see [Not able to access app from a non-Microsoft IdP](#not-able-to-access-app-from-a-non-microsoft-identity-provider) and [App status: Continue Setup](#app-status-continue-setup).
 1. If the end user unexpectedly reached this page, do the following:
     1. Restart your browser session
     1. Clear history, cookies, and cache from the browser

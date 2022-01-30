@@ -45,7 +45,7 @@ Defender for Cloud Apps session policies allow you to restrict a session based o
 Make sure you have configured your IdP solution to work with Defender for Cloud Apps, as follows:
 
 - For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
-- For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)
+- For other IdP solutions, see [Configure integration with other IdP solutions](proxy-deployment-featured-idp.md#configure-integration-with-other-idp-solutions)
 
 After completing this task, go to the Defender for Cloud Apps portal and create a session policy to monitor and control file downloads in the session.
 
