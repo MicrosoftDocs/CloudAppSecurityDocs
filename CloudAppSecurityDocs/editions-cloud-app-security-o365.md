@@ -24,7 +24,7 @@ Office 365 Cloud App Security is a subset of Microsoft Defender for Cloud Apps t
 
 |Capability|Feature|Microsoft Defender for Cloud Apps|Office 365 Cloud App Security|
 |----|----|----|----|
-|Cloud Discovery|Discovered apps |20,000 + cloud apps  |750+ cloud apps with similar functionality to Office 365|
+|Cloud Discovery|Discovered apps |25,000 + cloud apps  |750+ cloud apps with similar functionality to Office 365|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual log upload|
 ||Log anonymization for user privacy|Yes||
 ||Access to full Cloud App Catalog|Yes||
@@ -49,4 +49,4 @@ Office 365 Cloud App Security is a subset of Microsoft Defender for Cloud Apps t
 
 - Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
 
-[!INCLUDE [Open support ticket](includes/support.md)].
+[!INCLUDE [Open support ticket](includes/support.md)]
