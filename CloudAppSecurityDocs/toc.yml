@@ -54,8 +54,6 @@ items:
     href: tutorial-step-up-authentication.md
 - name: Concepts
   items:
-  - name: Protect apps with Conditional Access App Control
-    href: proxy-intro-aad.md
   - name: Working with the dashboard
     href: daily-activities-to-protect-your-cloud-environment.md
   - name: Working with the app page
@@ -254,12 +252,18 @@ items:
       href: ./connect-workday.md
     - name: Connect Zendesk
       href: ./connect-zendesk.md
-  - name: Deploy Conditional Access App Control apps
+  - name: Conditional Access App Control
     items:
-    - name: Deploy Conditional Access App Control for featured apps
+    - name: Protect apps with Conditional Access App Control
+      href: proxy-intro-aad.md
+    - name: Deploy for featured apps with AAD
       href: proxy-deployment-aad.md
-    - name: Onboard and deploy Conditional Access App Control for any apps
+    - name: Deploy for featured apps with non-Microsoft IdP
+      href: proxy-deployment-featured-idp.md
+    - name: Deploy for custom apps with AAD
       href: proxy-deployment-any-app.md
+    - name: Deploy for custom apps with non-Microsoft IdP
+      href: proxy-deployment-any-app-idp.md
     - name: Configuring your PingOne IdP
       href: proxy-idp-pingone.md
     - name: Configuring your AD FS IdP
