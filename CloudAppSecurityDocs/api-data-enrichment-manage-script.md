@@ -47,6 +47,7 @@ CSV_ABSOLUTE_PATH = 'rules.csv'
 YOUR_TOKEN = '<your_token>'
 HEADERS = {
   'Authorization': 'Token {}'.format(YOUR_TOKEN),
+  'Content-Type': 'application/json'
 }
 
 # Get all records.
