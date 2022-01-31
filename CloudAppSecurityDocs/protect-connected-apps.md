@@ -14,19 +14,25 @@ Once an app is connected using one or more of these methods, you get instant out
 
 The breadth of support for each app relies on the richness of its APIs. Use the following links to learn about how Defender for Cloud Apps protects connected apps and what risks those apps expose. For each app, review the list of available built-in anomaly detections, explore ready-to-use policy templates for monitoring and alerting on risky activities, and discover which automated governance actions can be applied.
 
+- [Protect Atlassian (Preview)](protect-atlassian.md)
 - [Protect AWS](protect-aws.md)
 - [Protect Azure](protect-azure.md)
 - [Protect Box](protect-box.md)
 - [Protect Dropbox](protect-dropbox.md)
-- [Protect GitHub Enterprise Cloud](protect-github.md)
 - [Protect GCP](protect-gcp.md)
+- [Protect GitHub Enterprise Cloud](protect-github.md)
 - [Protect Google Workspace](protect-google-workspace.md)
+- [Protect NetDocuments](protect-netdocuments.md)
 - [Protect Office 365](protect-office-365.md)
 - [Protect Okta](protect-okta.md)
+- [Protect OneLogin](protect-onelogin.md)
 - [Protect Salesforce](protect-salesforce.md)
 - [Protect ServiceNow](protect-servicenow.md)
+- [Protect Slack](protect-slack.md)
+- [Protect Smartsheet](protect-smartsheet.md)
 - [Protect Webex](protect-webex.md)
 - [Protect Workday](protect-workday.md)
+- [Protect Zendesk](protect-zendesk.md)
 
 ## Next steps
 
