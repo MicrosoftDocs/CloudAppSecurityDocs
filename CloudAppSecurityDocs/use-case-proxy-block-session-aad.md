@@ -53,7 +53,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
 
-1. In the **Policies** page, click **Create policy** followed by **Session policy**.
+1. In the **Policies** page, select **Create policy** followed by **Session policy**.
 
 1. In the **Create session policy** page, give your policy a name and description. For example, **Block downloads from Salesforce for unmanaged devices**.
 
@@ -91,7 +91,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. Set the alerts you want to receive when the policy is matched. You can set a limit so that you don't receive too many alerts. Select whether to get the alerts as an email message, text message, or both.
 
-1. Click **Create**
+1. Select **Create**.
 
 ## Validate your policy
 
@@ -99,7 +99,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. The file should be blocked and you should receive the message you set under **Customize block messages**.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click on **Control** followed by **Policies**, and then click on the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**, and then select the policy you've created to view the policy report. A session policy match should appear shortly.
 
 1. In the policy report, you can see which logins were redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 
