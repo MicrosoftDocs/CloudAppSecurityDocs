@@ -40,7 +40,7 @@
       "manager": "dcurwin",
       "ms.author": "dacurwin",
       "ms.collection": "M365-security-compliance",
-      "ms.service": "cloud-app-security",
+      "ms.service": "defender-for-cloud-apps",
       "ms.suite": "ems"
     },
     "fileMetadata": {},

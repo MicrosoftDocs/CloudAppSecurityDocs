@@ -1,7 +1,7 @@
 ---
-title: Working with discovered apps in Cloud App Security
-description: This article describes the process for identifying and remediating risky cloud discovery apps in Cloud App Security.
-ms.date: 09/25/2019
+title: Working with discovered apps in Defender for Cloud Apps
+description: This article describes the process for identifying and remediating risky cloud discovery apps in Defender for Cloud Apps.
+ms.date: 11/09/2021
 ms.topic: conceptual
 ---
 # Working with discovered apps
@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, and the risk levels of apps in your organization. It also shows you who your top app users are and provides an App Headquarter location map. The Cloud Discovery Dashboard has many options for filtering the data. Filtering allows you to generate specific views depending on what you're most interested in using easy-to-understand graphics to give you the full picture at a glance.
 
-![cloud discovery dashboard](media/cloud-discovery-dashboard.png)
+![cloud discovery dashboard.](media/cloud-discovery-dashboard.png)
 
 ## Review the Cloud Discovery Dashboard
 
@@ -41,7 +41,7 @@ For example, if you want to identify commonly used risky cloud storage and colla
 
 1. Set the **Security risk factor** for **Data at rest encryption** equals **Not supported**. Then set **Risk score** equals 6 or lower.
 
-![Discovered app filters](media/discovered-app-filters.png)
+![Discovered app filters.](media/discovered-app-filters.png)
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they're unsanctioned, you can use a blocking script to block them from being used in your environment.
 
@@ -51,26 +51,26 @@ For example, you can differentiate between different SharePoint sites.
 
 This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-![subdomain information](media/discovery-domains.png)
+![subdomain information.](media/discovery-domains.png)
 
 ## Discover resources and custom apps
 
 Cloud Discovery also enables you to deep dive into your IaaS and PaaS resources. You can discover activity across your resource-hosting platforms, viewing access to data across your self-hosted apps and resources including storage accounts, infrastructure and custom apps hosted on Azure, Google Cloud Platform, and AWS. Not only can you see overall usage in your IaaS solutions, but you can get visibility into the specific resources that are hosted on each, and the overall usage of the resources, to help mitigate risk per resource.
 
-For example, from Cloud App Security you can monitor activity such as if a lot of data is uploaded, you can discover what resource it's uploaded to and drill down to see who performed the activity.
+For example, from Defender for Cloud Apps you can monitor activity such as if a lot of data is uploaded, you can discover what resource it's uploaded to and drill down to see who performed the activity.
 
 > [!NOTE]
 > This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
 To view discovered resources:
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Discovered resources**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Discovered resources**.
 
-    ![Discovered resources menu](media/discovered-resources-menu.png)
+    ![Discovered resources menu.](media/discovered-resources-menu.png)
 
 1. In the Discovered resource page, you can drill down into each resource to see what kinds of transactions occurred, who accessed it, and then drill down to investigate the users even further.
 
-   ![Discovery resources](media/discovery-resources.png)
+   ![Discovery resources.](media/discovery-resources.png)
 
 1. For custom apps, you can click the three buttons at the end of the row and select **Add custom app**. This will open the **Add custom app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
 
@@ -99,7 +99,7 @@ To create an exclusion:
 
 1. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
 
-    ![exclude user](media/exclude-user.png "exclude user")
+    ![exclude user.](media/exclude-user.png "exclude user")
 
 >[!NOTE]
 >Any entity exclusion applies to newly received data. Historical data of the excluded entities will remain through the retention period (90 days).
@@ -126,7 +126,7 @@ To create a new continuous report:
 
 1. Set the filters you want on the data. These filters can be **User groups**, **IP address tags**, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).
 
-    ![create custom continuous report](media/create-custom-continuous-report.png)
+    ![create custom continuous report.](media/create-custom-continuous-report.png)
 
 > [!NOTE]
 > All custom reports are limited to a maximum of 1 GB of uncompressed data. If there is more than 1 GB of data, the first 1 GB of data will be exported into the report.
@@ -151,7 +151,7 @@ To delete Cloud Discovery data:
 
 1. Select the **Delete** button.
 
-    ![delete data](media/delete-data.png "delete data")
+    ![delete data.](media/delete-data.png "delete data")
 
     > [!NOTE]
     > The deletion process takes a few minutes and is not immediate.
@@ -162,7 +162,10 @@ To delete Cloud Discovery data:
 > [Create snapshot Cloud Discovery reports](create-snapshot-cloud-discovery-reports.md)
 
 > [!div class="nextstepaction"]
-> [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md)
+> [Configure automatic log upload for continuous reports](discovery-docker.md)
 
 > [!div class="nextstepaction"]
 > [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+
+> [!div class="nextstepaction"]
+> [Discover apps using Microsoft Defender for Endpoint's integration](mde-integration.md)

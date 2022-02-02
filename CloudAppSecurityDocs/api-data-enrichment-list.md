@@ -1,7 +1,7 @@
 ---
 title: List - Data Enrichment API
-description: This article describes the list request in Cloud App Security's Data Enrichment API.
-ms.date: 12/13/2020
+description: This article describes the list request in the Defender for Cloud Apps Data Enrichment API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # List - Data Enrichment API
@@ -37,13 +37,13 @@ POST /api/v1/subnet/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/" -d '{
   "filters": {
     // some filters
   },
   "skip": 5,
   "limit": 10
-  ...
+  // ...
 }'
 ```
 

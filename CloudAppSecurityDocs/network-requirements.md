@@ -1,14 +1,15 @@
 ---
 title: Network requirements 
-description: This article describes the IP addresses and ports you need to open to work with Cloud App Security.
-ms.date: 03/14/2021
+description: This article describes the IP addresses and ports you need to open to work with Defender for Cloud Apps.
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
+
 # Network requirements
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides a list of ports and IP addresses you need to allow and allowlist to work with Microsoft Cloud App Security.
+This article provides a list of ports and IP addresses you need to allow and allowlist to work with Microsoft Defender for Cloud Apps.
 
 ## View your data center
 
@@ -16,17 +17,17 @@ Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
 
-    ![click About](media/about-menu.png)
+    ![click About.](media/about-menu.png)
 
-2. In the Cloud App Security version screen, you can see the region and the data center.
+2. In the Defender for Cloud Apps version screen, you can see the region and the data center.
 
-    ![View your data center](media/data-center.png)
+    ![View your data center.](media/data-center.png)
 
 ## Portal access
 
-For access to the Cloud App Security portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
+For access to the Defender for Cloud Apps portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
 portal.cloudappsecurity.com
@@ -43,7 +44,7 @@ dc.services.visualstudio.com
 *.blob.core.windows.net
 ```
 
-For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allowlist to provide access for the Cloud App Security GCC High portal:
+For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allowlist to provide access for the Defender for Cloud Apps GCC High portal:
 
 ```ini
 portal.cloudappsecurity.us
@@ -61,7 +62,7 @@ Additionally, the following items should be allowed, depending on which data cen
 |EU1|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.119.154.72, 51.143.58.207, 52.137.89.147, 52.157.238.58, 52.174.56.180, 52.183.75.62|\*.eu.portal.cloudappsecurity.com|
 |EU2|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.81.156.154, 40.81.156.156, 51.143.58.207, 52.137.89.147, 52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 |Gov US1|13.72.19.4, 52.227.143.223|*.us1.portal.cloudappsecurity.us|
-|GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com |
+|GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com, \*.us1.portal.cloudappsecuritygov.com |
 
 > [!NOTE]
 > Instead of a wildcard (\*) you can open only your specific tenant URL, for example, based on the screenshot above you can open: mod244533.us.portal.cloudappsecurity.com
@@ -72,7 +73,7 @@ Configure your firewall for reverse proxy using the settings relevant to your en
 
 ### Commercial customers
 
-For commercial customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
+For commercial customers, to enable Defender for Cloud Apps reverse proxy, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
 *.cas.ms
@@ -85,13 +86,13 @@ Additionally, the following items should be allowed, depending on which data cen
 
 | **IP Addresses** | **DNS Name** |
 |--|--|
-| 40.81.58.184, 40.81.58.180, 20.40.163.96, 20.40.163.88, 191.235.123.114, 191.235.121.164, 191.235.122.101, 191.235.119.253, 40.82.187.211, 40.82.187.164, 52.139.18.234, 52.139.20.118, 20.193.137.191, 20.193.137.153, 20.193.138.1, 20.193.136.234, 52.156.205.222, 52.156.204.99, 52.155.166.50, 52.142.127.127, 40.65.170.125, 40.65.170.123, 52.139.245.40, 52.139.245.48, 40.81.121.140, 40.81.121.135, 51.137.137.121, 51.137.137.118, 104.45.170.196, 104.45.170.182, 52.151.238.5, 52.151.237.243<br/><br/>40.81.62.221, 40.81.62.206, 20.40.160.184, 20.40.163.130, 191.233.23.29, 191.234.216.181, 191.233.21.52, 191.234.216.10, 40.82.187.199, 40.82.187.179, 52.139.19.215, 52.139.18.236, 20.193.131.246, 20.193.131.250, 20.193.131.247, 20.193.131.248, 52.155.181.183, 52.155.168.45, 52.156.202.7, 52.142.124.23, 52.157.233.49, 52.157.235.27, 51.105.164.234, 51.105.164.241, 40.119.203.158, 40.119.203.209, 20.184.61.67, 20.184.60.77, 104.45.170.173, 104.45.170.176, 52.224.188.157, 52.224.188.168 | *.mcas.ms<br/>\*.admin-mcas.ms |
-| 40.81.63.7, 40.81.59.90, 191.235.123.242, 191.235.122.224, 40.67.251.0, 52.156.206.47, 40.65.170.137, 40.65.170.26, 40.81.127.139, 40.81.127.25, 104.45.170.184, 104.45.170.185, 52.149.59.151, 52.156.89.175<br/><br/>40.81.62.222, 40.81.62.212, 20.197.208.38, 20.197.208.36, 52.155.182.49, 52.155.181.181, 52.157.234.222, 52.157.236.195, 40.119.203.98, 40.119.203.208, 104.45.170.174, 104.45.170.127, 20.72.216.133, 20.72.216.137 | \*.access.mcas.ms<br/>\*.us.access-control.cas.ms<br/>\*.us2.access-control.cas.ms<br/>\*.eu.access-control.cas.ms<br/>\*.prod04.access-control.cas.ms<br/>\*.prod05.access-control.cas.ms |
-| 40.71.11.134, 13.69.228.51 | \*.us.saml.cas.ms \*.us2.saml.cas.ms \*.us3.saml.cas.ms \*.eu.saml.cas.ms *.eu2.saml.cas.ms |
+| Australia Southeast: 40.81.58.184, 40.81.58.180, 20.40.163.96, 20.40.163.88, 40.81.62.221, 40.81.62.206, 20.40.160.184, 20.40.163.130<br /><br />Brazil South: 191.235.123.114, 191.235.121.164, 191.235.122.101, 191.235.119.253, 191.233.23.29, 191.234.216.181, 191.233.21.52, 191.234.216.10<br /><br />Canada Central: 40.82.187.211, 40.82.187.164, 52.139.18.234, 52.139.20.118, 40.82.187.199, 40.82.187.179, 52.139.19.215, 52.139.18.236<br /><br />Central India: 20.193.137.191, 20.193.137.153, 20.193.138.1, 20.193.136.234, 20.193.131.246, 20.193.131.250, 20.193.131.247, 20.193.131.248<br /><br />North Europe: 52.156.205.222, 52.156.204.99, 52.155.166.50, 52.142.127.127, 52.155.181.183, 52.155.168.45, 52.156.202.7, 52.142.124.23<br /><br />Southeast Asia: 40.65.170.125, 40.65.170.123, 52.139.245.40, 52.139.245.48, 40.119.203.158, 40.119.203.209, 20.184.61.67, 20.184.60.77<br /><br />West Europe: 52.157.233.49, 52.157.235.27, 51.105.164.234, 51.105.164.241<br /><br />UK West: 40.81.121.140, 40.81.121.135, 51.137.137.121, 51.137.137.118<br /><br />East US: 104.45.170.196, 104.45.170.182, 52.151.238.5, 52.151.237.243, 104.45.170.173, 104.45.170.176, 52.224.188.157, 52.224.188.168<br /><br />West US 2: 52.156.88.173, 52.149.61.128, 52.149.61.214, 52.149.63.211, 20.190.7.24, 20.190.6.224, 20.190.7.239, 20.190.7.233 | *.mcas.ms<br/>\*.admin-mcas.ms |
+| Australia Southeast: 40.81.63.7, 40.81.59.90, 40.81.62.222, 40.81.62.212, 20.42.228.161<br /><br />Brazil South: 191.235.123.242, 191.235.122.224, 20.197.208.38, 20.197.208.36<br /><br />North Europe: 40.67.251.0, 52.156.206.47, 52.155.182.49, 52.155.181.181, 20.50.64.15<br /><br />West Europe: 52.157.234.222, 52.157.236.195<br /><br />Southeast Asia: 40.65.170.137, 40.65.170.26, 40.119.203.98, 40.119.203.208, 20.43.132.128<br /><br />UK West: 40.81.127.139, 40.81.127.25, 51.137.163.32<br /><br />East US: 104.45.170.184, 104.45.170.185, 104.45.170.174, 104.45.170.127, 20.49.104.46<br /><br />West US 2: 52.149.59.151, 52.156.89.175, 20.72.216.133, 20.72.216.137 | \*.access.mcas.ms<br/>\*.us.access-control.cas.ms<br/>\*.us2.access-control.cas.ms<br/>\*.eu.access-control.cas.ms<br/>\*.prod04.access-control.cas.ms<br/>\*.prod05.access-control.cas.ms |
+| North Europe: 20.50.64.15<br /><br />East US: 20.49.104.26<br /><br />West US 2: 20.42.128.102 | \*.us.saml.cas.ms \*.us2.saml.cas.ms \*.us3.saml.cas.ms \*.eu.saml.cas.ms *.eu2.saml.cas.ms |
 
 ### US Government offerings
 
-For US Government GCC High customers, to enable Cloud App Security reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allowlist:
+For US Government GCC High customers, to enable Defender for Cloud Apps reverse proxy, add **outbound port 443** for the following DNS names to your firewall's allowlist:
 
 ```ini
 *.mcas-gov.us
@@ -105,20 +106,21 @@ For **US Government GCC High** customers:
 
 |IP addresses|DNS name|
 |----|----|
-|13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222<br/><br/>52.244.144.65, 52.244.43.90, 52.244.43.225, 52.244.215.117|\*.mcas-gov.us<br/>\*.admin-mcas-gov.us|
-|13.72.27.216, 13.72.27.215<br/><br/>52.244.215.83, 52.244.212.197|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
-|20.140.49.129, 52.227.216.80|\*.saml.cloudappsecurity.us|
+|US Gov Arizona: 52.244.144.65, 52.244.43.90, 52.244.43.225, 52.244.215.117<br /><br />US Gov Virginia: 13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222|\*.mcas-gov.us<br/>\*.admin-mcas-gov.us|
+|US Gov Arizona: 52.244.215.83, 52.244.212.197<br /><br />US Gov Virginia: 13.72.27.216, 13.72.27.215|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
+|US Gov Arizona: 20.140.49.129<br /><br />US Gov Virginia: 52.227.216.80|\*.saml.cloudappsecurity.us|
 
-<!--For **US Government GCC** customers:
+For **US Government GCC** customers:
 
 |IP addresses|DNS name|
 |----|----|
-|52.245.225.0, 52.245.224.229, 52.245.224.234, 52.245.224.228| \*.mcas-gov.ms<br/>\*.admin-mcas-gov.ms|
-|52.245.224.235, 52.245.224.227 | \*.access.mcas-gov.ms|-->
+|US Gov Virginia: 52.245.225.0, 52.245.224.229, 52.245.224.234, 52.245.224.228| \*.mcas-gov.ms<br/>\*.admin-mcas-gov.ms|
+|US Gov Virginia: 52.245.224.235, 52.245.224.227 | \*.access.mcas-gov.ms|
+|US Gov Virginia: 52.227.216.80 | \*.saml.cloudappsecuritygov.com|
 
 ## SIEM agent connection
 
-To enable Cloud App Security to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allowlist:
+To enable Defender for Cloud Apps to connect to your SIEM, add **outbound port 443** for the following IP addresses to your firewall's allowlist:
 
 |Data center|IP addresses|
 |----|----|
@@ -131,30 +133,32 @@ To enable Cloud App Security to connect to your SIEM, add **outbound port 443** 
 |GCC| 52.227.23.181, 52.227.180.126|
 
 > [!NOTE]
-> If you didn't specify a proxy when you set up the Cloud App Security SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+>
+> - If you didn't specify a proxy when you set up the Defender for Cloud Apps SIEM agent, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps portal.
+> - A genuine Microsoft Defender for Cloud Apps certificate usage is required for the SIEM agent connection.
 
 ## App connector
 
-For some third-party apps to be accessed by Cloud App Security, these IP addresses may be used. The IP addresses enable Cloud App Security to collect logs and provide access for the Cloud App Security console.
+For some third-party apps to be accessed by Defender for Cloud Apps, these IP addresses may be used. The IP addresses enable Defender for Cloud Apps to collect logs and provide access for the Defender for Cloud Apps console.
 
 > [!NOTE]
-> You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses.
+> You may see these IP addresses in activity logs from the vendor because Defender for Cloud Apps performs governance actions and scans from these IP addresses.
 
-To connect to third-party apps, enable Cloud App Security to connect from these IP addresses:
+To connect to third-party apps, enable Defender for Cloud Apps to connect from these IP addresses:
 
 |Data center|IP addresses|
 |----|----|----|
-|US1|13.64.26.88, 13.64.29.32, 13.64.30.76, 13.64.30.117, 13.64.30.118, 13.64.31.116, 13.64.196.27, 13.64.198.19, 13.64.198.97, 13.64.199.41, 13.68.76.47, 13.86.176.189, 13.86.176.211, 13.91.61.249, 13.91.91.243, 13.91.98.185, 13.93.216.68, 13.93.233.42, 40.118.211.172, 104.42.54.148, 104.209.35.177|
-|US2|13.68.76.47, 20.36.222.59, 20.36.222.60, 40.67.152.91, 40.67.154.160, 40.67.155.146, 40.67.159.55, 40.84.2.83, 40.84.4.93, 40.84.4.119, 52.184.165.82, 52.232.224.227, 52.232.225.84, 104.42.54.148, 104.46.116.211, 104.46.116.211, 104.46.121.72, 104.46.121.72, 104.46.122.189, 104.46.122.189|
-|US3|13.68.76.47, 40.90.218.196, 40.90.218.197, 40.90.218.198, 40.90.218.203, 40.90.220.190, 40.90.220.196, 51.143.120.236, 51.143.120.242, 104.42.54.148|
-|EU1|13.80.22.71, 13.95.29.177, 13.95.30.46, 40.67.219.133, 40.114.217.8, 40.114.217.8, 40.115.24.65, 40.115.24.65, 40.115.25.50, 40.115.25.50, 40.119.154.72, 51.105.55.62, 51.105.179.157, 51.137.200.32, 52.157.232.110, 52.157.233.92, 52.157.233.133, 52.157.238.58, 52.157.239.110, 52.174.56.180|
-|EU2|40.81.152.171, 40.81.152.172, 40.81.156.153, 40.81.156.154, 40.81.156.155, 40.81.156.156, 51.105.55.62, 51.137.200.32, 51.145.108.227, 51.145.108.250|
+|US1|13.64.26.88, 13.64.29.32, 13.64.30.76, 13.64.30.117, 13.64.30.118, 13.64.31.116, 13.64.196.27, 13.64.198.19, 13.64.198.97, 13.64.199.41, 13.68.76.47, 13.86.176.189, 13.86.176.211, 13.91.61.249, 13.91.91.243, 13.91.98.185, 13.93.216.68, 13.93.233.42, 40.118.211.172, 104.42.54.148, 104.209.35.177, 40.83.194.192, 40.83,.194.193, 40.83.194.194, 40.83.194.195, 40.83.194.196, 40.83.194.197, 40.83.194.198, 40.83.194.199, 40.83.194.200, 40.83.194.201, 40.83.194.202, 40.83.194.203, 40.83.194.204, 40.83.194.205, 40.83.194.206, 40.83.194.207|
+|US2|13.68.76.47, 20.36.222.59, 20.36.222.60, 40.67.152.91, 40.67.154.160, 40.67.155.146, 40.67.159.55, 40.84.2.83, 40.84.4.93, 40.84.4.119, 52.184.165.82, 52.232.224.227, 52.232.225.84, 104.42.54.148, 104.46.116.211, 104.46.116.211, 104.46.121.72, 104.46.121.72, 104.46.122.189, 104.46.122.189, 20.57.54.192, 20.57.54.193, 20.57.54.194, 20.57.54.195, 20.57.54.196, 20.57.54.197, 20.57.54.198, 20.57.54.199, 20.57.54.200, 20.57.54.201, 20.57.54.202, 20.57.54.203, 20.57.54.204, 20.57.54.205, 20.57.54.206, 20.57.54.207|
+|US3|13.68.76.47, 40.90.218.196, 40.90.218.197, 40.90.218.198, 40.90.218.203, 40.90.220.190, 40.90.220.196, 51.143.120.236, 51.143.120.242, 104.42.54.148, 52.156.123.128, 52.156.123.129, 52.156.123.130, 52.156.123.131, 52.156.123.132, 52.156.123.133, 52.156.123.134, 52.156.123.135, 52.156.123.136, 52.156.123.137, 52.156.123.138, 52.156.123.139, 52.156.123.140, 52.156.123.141, 52.156.123.142, 52.156.123.143|
+|EU1|13.80.22.71, 13.95.29.177, 13.95.30.46, 40.67.219.133, 40.114.217.8, 40.114.217.8, 40.115.24.65, 40.115.24.65, 40.115.25.50, 40.115.25.50, 40.119.154.72, 51.105.55.62, 51.105.179.157, 51.137.200.32, 52.157.232.110, 52.157.233.92, 52.157.233.133, 52.157.238.58, 52.157.239.110, 52.174.56.180, 20.73.240.208, 20.73.240.209, 20.73.240.210, 20.73.240.211, 20.73.240.212, 20.73.240.213, 20.73.240.214, 20.73.240.215, 20.73.240.216, 20.73.240.217, 20.73.240.218, 20.73.240.219, 20.73.240.220, 20.73.240.221, 20.73.240.222, 20.73.240.223|
+|EU2|40.81.152.171, 40.81.152.172, 40.81.156.153, 40.81.156.154, 40.81.156.155, 40.81.156.156, 51.105.55.62, 51.137.200.32, 51.145.108.227, 51.145.108.250, 20.58.119.224, 20.58.119.225, 20.58.119.226, 20.58.119.227, 20.58.119.228, 20.58.119.229, 20.58.119.230, 20.58.119.231, 20.58.119.232, 20.58.119.233, 20.58.119.234, 20.58.119.235, 20.58.119.236, 20.58.119.237, 20.58.119.238, 20.58.119.239|
 |Gov US1|52.227.138.248, 52.227.142.192, 52.227.143.223|
 |GCC|52.227.23.181, 52.227.180.126|
 
 ## Third-party DLP integration
 
-To enable Cloud App Security to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number.
+To enable Defender for Cloud Apps to send data through your stunnel to your ICAP server, open your DMZ firewall to these IP addresses with a dynamic source port number.
 
 1. **Source addresses** - These addresses should be allowed as listed above for API connector third-party apps
 2. **Source TCP port** - Dynamic
@@ -164,9 +168,9 @@ To enable Cloud App Security to send data through your stunnel to your ICAP serv
 > [!NOTE]
 >
 > - By default the stunnel port number is set to 11344. You can change it to another port if necessary, but be sure to make note of the new port number.
-> - You may see these IP addresses in activity logs from the vendor because Cloud App Security performs governance actions and scans from these IP addresses.
+> - You may see these IP addresses in activity logs from the vendor because Defender for Cloud Apps performs governance actions and scans from these IP addresses.
 
-To connect to third-party apps and integrate with external DLP solutions, enable Cloud App Security to connect from these IP addresses:
+To connect to third-party apps and integrate with external DLP solutions, enable Defender for Cloud Apps to connect from these IP addresses:
 
 |Data center|IP addresses|
 |----|----|----|
@@ -178,7 +182,7 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 
 ## Mail server
 
-To enable notifications to be sent from the default template and settings, add these IP addresses to your anti-spam allowlist. The Cloud App Security dedicated email IP addresses are:
+To enable notifications to be sent from the default template and settings, add these IP addresses to your anti-spam allowlist. The Defender for Cloud Apps dedicated email IP addresses are:
 
 - 65.55.234.192/26
 - 207.46.50.192/26
@@ -187,7 +191,7 @@ To enable notifications to be sent from the default template and settings, add t
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-If you want to customize the email sender identity, Microsoft Cloud App Security enables customization by using MailChimp&reg;, a third-party email service. To make it work, in the Microsoft Cloud App Security portal, go to **Settings**. Select **Mail settings** and review MailChimp's Terms of Service and Privacy Statement. Then, give Microsoft permission to use MailChimp on your behalf.
+If you want to customize the email sender identity, Microsoft Defender for Cloud Apps enables customization by using MailChimp&reg;, a third-party email service. To make it work, in the Microsoft Defender for Cloud Apps portal, go to **Settings**. Select **Mail settings** and review MailChimp's Terms of Service and Privacy Statement. Then, give Microsoft permission to use MailChimp on your behalf.
 
 If you don't customize the sender identity, your email notifications will be sent using all the default settings.
 
@@ -197,8 +201,8 @@ To work with MailChimp, add this IP address to your anti-spam allowlist to enabl
 
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
-- Allow the log collector to receive inbound FTP and Syslog traffic.
-- Allow the log collector to initiate outbound traffic to the portal (for example contoso.cloudappsecurity.com) on port 443.
+- Allow the log collector to receive inbound FTP and Syslog traffic as configured for the data sources.
+- Allow the log collector to initiate outbound traffic to the Defender for Cloud Apps portal (for example `contoso.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services).
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
   | Data center |                        URL                                 |
@@ -213,8 +217,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 >
 > - If your firewall requires a static IP address access list and does not support allowing based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
-> - Allow the log collector to initiate outbound traffic to the Cloud App Security portal.
-> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Cloud App Security portal.
+> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps portal.
 
 ## Next steps
 

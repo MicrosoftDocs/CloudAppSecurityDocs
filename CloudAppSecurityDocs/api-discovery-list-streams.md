@@ -1,7 +1,7 @@
 ---
 title: List continuous reports - Cloud Discovery API
-description: This article describes the list continuous reports request in Cloud App Security's Cloud Discovery API.
-ms.date: 01/18/2021
+description: This article describes the list continuous reports request in the Defender for Cloud Apps Cloud Discovery API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # List continuous reports - Cloud Discovery API
@@ -78,6 +78,7 @@ The response object defines the following properties. Properties marked as *opti
 | logFilesHistoryCount (*optional*) | int | Count of log files history |
 | logType | int | The log type of the continuous report. For possible values, see [Supported log types](#supported-log-types) |
 | protocol (*optional*) | string | The protocol (TCP, UDP) used by the continuous report |
+| readTimeFramesFromSecond | boolean | A reference to which data set is holding the latest consisted aggregated data (that is visible in the portal). **true** if 'timeFrames2' is the relevant data set, **false** if 'timeFrames' is the relevant data set. |
 | receiverType | string | The receiver type of the continuous report. Possible values include: syslog and ftp |
 | snapshotData (*optional*) | boolean | **true** if the data is from snapshot report |
 | streamType | int | The type of the continuous report. Possible values are:<br />**1**: INPUT (continuous report automatically created by log collector or data source)<br />**3**: VIEW (continuous report manually created in the portal)<br />**5**: PREVIEW (one-time continuous report created by snapshot report) |

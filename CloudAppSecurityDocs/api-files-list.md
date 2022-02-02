@@ -1,7 +1,7 @@
 ---
 title: List - Files API
-description: This article describes the list request in Cloud App Security's Files API.
-ms.date: 03/27/2020
+description: This article describes the list request in the Defender for Cloud Apps Files API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # List - Files API
@@ -10,7 +10,7 @@ ms.topic: reference
 
 > [!NOTE]
 >
-> - This API will soon be deprecated. Microsoft Cloud App Security is developing a new solution for identifying and acting upon files that violate policies.
+> - This API will soon be deprecated. Microsoft Defender for Cloud Apps is developing a new solution for identifying and acting upon files that violate policies.
 > - This endpoint may time out when filtering and paginating large collections.
 > - This API is not available for Office 365 Cloud App Security.
 
@@ -41,7 +41,7 @@ POST /api/v1/files/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/files/" -d '{
   "filters": {
     // some filters
   },

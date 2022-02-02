@@ -1,7 +1,7 @@
 ---
 title: Feedback - Activities API
-description: This article describes the feedback request in Cloud App Security's Activities API.
-ms.date: 03/27/2020
+description: This article describes the feedback request in the Defender for Cloud Apps Activities API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Feedback on activity - Activities API
@@ -35,7 +35,7 @@ POST /api/v1/activities/<pk>/feedback
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/feedback" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>"  -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/feedback" -d '{
   "feedbackValue": "0",
   "feedbackText": "Irrelevant",
   "allowContact": false,

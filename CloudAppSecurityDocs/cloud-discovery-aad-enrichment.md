@@ -1,7 +1,7 @@
 ---
-title: Enrich Cloud App Security Discovery data with Azure AD usernames
-description: This article provides information about how to enrich Cloud App Security Discovery data with Azure AD usernames.
-ms.date: 12/10/2018
+title: Enrich Defender for Cloud Apps Discovery data with Azure AD usernames
+description: This article provides information about how to enrich Defender for Cloud Apps Discovery data with Azure AD usernames.
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Cloud Discovery enrichment
@@ -17,17 +17,17 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
 ## Prerequisites
 
 - Data source must provide username information
-- [Office 365 app connector](connect-office-365-to-microsoft-cloud-app-security.md) connected
+- [Office 365 app connector](./connect-office-365.md) connected
 
 ## Enabling user data enrichment
 
-1. Under the Settings cog, select **Cloud Discovery settings**.
+1. Under the Settings cog, select **Settings**.
 
-2. In the **User enrichment** tab, select **Enrich discovered user identifiers with Azure Active Directory usernames**. This option enables Cloud App Security to use Azure Active Directory data to enrich usernames by default.
+1. In the **Settings** page, under **Cloud Discovery**, select **User enrichment**.
 
-3. Click **Save**.
+1. In the **User enrichment** tab, select **Enrich discovered user identifiers with Azure Active Directory usernames**. This option enables Defender for Cloud Apps to use Azure Active Directory data to enrich usernames by default.
 
-![Enrich Cloud App Security Discovery with Azure AD usernames](media/discovery-enrichment.png)
+    ![Enrich Defender for Cloud Apps Discovery with Azure AD usernames.](media/discovery-enrichment.png)
 
 ## Next steps
 

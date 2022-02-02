@@ -1,38 +1,17 @@
 ---
-# required metadata
-
-title: Create anomaly detection policies in Cloud App Security
+title: Create anomaly detection policies in Defender for Cloud Apps
 description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
-keywords:
-author: shsagir
-ms.author: shsagir
-manager: shsagir
-ms.date: 01/05/2021
-
+ms.date: 11/09/2021
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.prod:
-ms.service: cloud-app-security
-ms.technology:
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: reutam
-ms.suite: ems
-ms.custom: seodec18
-
 ---
 
 # Get behavioral analytics and anomaly detection
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security's anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you are ready from the outset to run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies immediately start the process of detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. In addition, the policies expose more data from the Cloud App Security detection engine, to help you speed up the investigation process and contain ongoing threats.
+The Microsoft Defender for Cloud Apps anomaly detection policies provide out-of-the-box user and entity behavioral analytics (UEBA) and machine learning (ML) so that you're ready from the outset to run advanced threat detection across your cloud environment. Because they're automatically enabled, the new anomaly detection policies immediately start the process of detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. In addition, the policies expose more data from the Defender for Cloud Apps detection engine, to help you speed up the investigation process and contain ongoing threats.
 
-The anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, as data is collected from your configured API connectors, each session is compared to the activity, when users were active, IP addresses, devices, etc. detected over the past month and the risk score of these activities. Be aware that it may take several hours for data to be available from API connectors. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also use machine learning algorithms designed to profile the users and sign in pattern to reduce false positives.
+The anomaly detection policies are automatically enabled, but Defender for Cloud Apps has an initial learning period of seven days during which not all anomaly detection alerts are raised. After that, as data is collected from your configured API connectors, each session is compared to the activity, when users were active, IP addresses, devices, and so on, detected over the past month and the risk score of these activities. Be aware that it may take several hours for data to be available from API connectors. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity. These detections also use machine-learning algorithms designed to profile the users and sign in pattern to reduce false positives.
 
 Anomalies are detected by scanning user activity. The risk is evaluated by looking at over 30 different risk indicators, grouped into risk factors, as follows:
 
@@ -45,29 +24,31 @@ Anomalies are detected by scanning user activity. The risk is evaluated by looki
 * Device and user agent
 * Activity rate
 
-Based on the policy results, security alerts are triggered. Cloud App Security looks at every user session on your cloud and alerts you when something happens that is different from the baseline of your organization or from the user's regular activity.
+Based on the policy results, security alerts are triggered. Defender for Cloud Apps looks at every user session on your cloud and alerts you when something happens that is different from the baseline of your organization or from the user's regular activity.
 
-In addition to native Cloud App Security alerts, you will also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
+In addition to native Defender for Cloud Apps alerts, you'll also get the following detection alerts based on information received from Azure Active Directory (AD) Identity Protection:
 
 * Leaked credentials: Triggered when a user's valid credentials have been leaked. For more information, see [Azure AD's Leaked credentials detection](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk).
 * Risky sign-in: Combines a number of Azure AD Identity Protection sign-in detections into a single detection. For more information, see [Azure AD's Sign-in risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk).
 
-These policies will appear on the Cloud App Security policies page and can be enabled or disabled.
+These policies will appear on the Defender for Cloud Apps policies page and can be enabled or disabled.
 
 ## Anomaly detection policies
 
 You can see the anomaly detection policies in the portal by clicking on **Control** then **Policies**. Select **Anomaly detection policy** for the policy type.
 
- ![new anomaly detection policies](media/new-anomaly-detection-policies.png)
+ ![new anomaly detection policies.](media/new-anomaly-detection-policies.png)
 
 The following anomaly detection policies are available:
 
 ### Impossible travel
 
-* This detection identifies two user activities (is a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user's activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities. The sensitivity slider allows you to impact the algorithm and define how strict the detection logic is. The higher the sensitivity level, the lower the suppression that is applied as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
+* This detection identifies two user activities (in a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine-learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user's activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities, or activity from cloud providers that don't indicate a physical location. The [sensitivity slider](#tune-anomaly-detection-policies) allows you to affect the algorithm and define how strict the detection logic is. The higher the sensitivity level, fewer activities will be suppressed as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
 
     > [!NOTE]
-    > When the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
+    >
+    > * When the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
+    > * The locations are calculated on a country level. This means that there will be no alerts for two actions originating in the same country or in bordering countries.
 
 ### Activity from infrequent country
 
@@ -75,44 +56,48 @@ The following anomaly detection policies are available:
 
 ### Malware detection
 
-* This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Cloud App Security uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Not every file is scanned, but heuristics are used to look for files that are potentially risky. After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
+* This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to our heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
 
-    You can use this detection in real time using session policies to control file uploads and downloads.
+  You can use this detection in real time using session policies to control file uploads and downloads.
 
-    > [!NOTE]
-    >
-    > Cloud App Security supports malware detection for the following apps:
-    >
-    > * Box
-    > * Dropbox
-    > * Google Workspace
-    > * Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
+  Defender for Cloud Apps supports malware detection for the following apps:
+
+  * Box
+  * Dropbox
+  * Google Workspace
+  * Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
+
+  >[!NOTE]
+  >
+  >Malware detected in Office 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
+  >
+  >In Box, Dropbox, and Google Workspace, Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
 
 ### Activity from anonymous IP addresses
 
-* This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device's IP address, and may be used for malicious intent. This detection uses a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
+* This detection identifies that users were active from an IP address that has been identified as an anonymous proxy IP address. These proxies are used by people who want to hide their device's IP address, and may be used for malicious intent. This detection uses a machine-learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
 
 ### Ransomware activity
 
-* Cloud App Security extended its ransomware detection capabilities with anomaly detection to ensure a more comprehensive coverage against sophisticated Ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Cloud App Security ensures holistic and robust protection. If Cloud App Security identifies, for example, a high rate of file uploads or file deletion activities it may represent an adverse encryption process. This data is collected in the logs received from connected APIs and is then combined with learned behavioral patterns and threat intelligence, for example, known ransomware extensions. For more information about how Cloud App Security detects ransomware, see [Protecting your organization against ransomware](use-case-ransomware.md).
+* Defender for Cloud Apps extended its ransomware detection capabilities with anomaly detection to ensure a more comprehensive coverage against sophisticated Ransomware attacks. Using our security research expertise to identify behavioral patterns that reflect ransomware activity, Defender for Cloud Apps ensures holistic and robust protection. If Defender for Cloud Apps identifies, for example, a high rate of file uploads or file deletion activities it may represent an adverse encryption process. This data is collected in the logs received from connected APIs and is then combined with learned behavioral patterns and threat intelligence, for example, known ransomware extensions. For more information about how Defender for Cloud Apps detects ransomware, see [Protecting your organization against ransomware](use-case-ransomware.md).
 
 ### Activity performed by terminated user
 
 * This detection enables you to able to identify when a terminated employee continues to perform actions on your SaaS apps. Because data shows that the greatest risk of insider threat comes from employees who left on bad terms, it's important to keep an eye on the activity on accounts from terminated employees. Sometimes, when employees leave a company, their accounts are de-provisioned from corporate apps, but in many cases they still retain access to certain corporate resources. This is even more important when considering privileged accounts, as the potential damage a former admin can do is inherently greater.
-This detection takes advantage of Cloud App Security's ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was terminated, and actual activity on other apps. For example, an employee who's Azure AD account was terminated, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
+This detection takes advantage of the Defender for Cloud Apps ability to monitor user behavior across apps, allowing identification of the regular activity of the user, the fact that the account was terminated, and actual activity on other apps. For example, an employee who's Azure AD account was terminated, but still has access to the corporate AWS infrastructure, has the potential to cause large-scale damage.
 
 The detection looks for users whose account was terminated in Azure AD, but still perform activities in other platforms such as AWS or Salesforce. This is especially relevant for users who use another account (not their primary single sign-on account) to manage resources, since these accounts are often not terminated when a user leaves the company.
 
 ### Activity from suspicious IP addresses
 
-* This detection identifies that users were active from an IP address identified as risky by Microsoft Threat Intelligence. These IP addresses are involved in malicious activities, such as Botnet C&C, and may indicate compromised account. This detection uses a machine learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
+* This detection identifies that users were active from an IP address identified as risky by Microsoft Threat Intelligence. These IP addresses are involved in malicious activities, such as performing password spray, Botnet C&C, and may indicate compromised account. This detection uses a machine-learning algorithm that reduces "false positives", such as mis-tagged IP addresses that are widely used by users in the organization.
 
 ### Suspicious inbox forwarding
 
 * This detection looks for suspicious email forwarding rules, for example, if a user created an inbox rule that forwards a copy of all emails to an external address.
 
 > [!NOTE]
-> Cloud App Security only alerts you for each forwarding rule that is identified as suspicious, based on the typical behavior for the user.
+> Defender for Cloud Apps only alerts you for each forwarding rule that is identified as suspicious, based on the typical behavior for the user.
 
 ### Suspicious inbox manipulation rules
 
@@ -123,11 +108,15 @@ The detection looks for users whose account was terminated in Azure AD, but stil
 * This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user's mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
 > [!NOTE]
-> Cloud App Security integrates with Microsoft Defender for Office 365 to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Office 365 is enabled, you'll start seeing alerts in the Cloud App Security activity log.
+> Defender for Cloud Apps integrates with Microsoft Defender for Office 365 to provide protection for Exchange online, including URL detonation, malware protection, and more. Once Defender for Office 365 is enabled, you'll start seeing alerts in the Defender for Cloud Apps activity log.
 
 ### Suspicious OAuth app file download activities
 
 * Scans the OAuth apps connected to your environment and triggers an alert when an app downloads multiple files from Microsoft SharePoint or Microsoft OneDrive in a manner that is unusual for the user. This may indicate that the user account is compromised.
+
+### Unusual ISP for an OAuth App
+
+* This policy profiles your environment and triggers alerts when an OAuth app connects to your cloud applications from an uncommon ISP. This policy may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
 
 ### Unusual activities (by user)
 
@@ -142,8 +131,9 @@ These detections identify users who perform:
 * Unusual multiple VM creation activities (preview)
 * Unusual multiple storage deletion activities (preview)
 * Unusual region for cloud resource (preview)
+* Unusual file access
 
-These policies look for activities within a single session with respect to the baseline learned, which could indicate on a breach attempt. These detections leverage a machine learning algorithm that profiles the users log on pattern and reduces false positives. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity.
+These policies look for activities within a single session with respect to the baseline learned, which could indicate on a breach attempt. These detections leverage a machine-learning algorithm that profiles the users log on pattern and reduces false positives. These detections are part of the heuristic anomaly detection engine that profiles your environment and triggers alerts with respect to a baseline that was learned on your organization's activity.
 
 ### Multiple failed login attempts
 
@@ -157,13 +147,13 @@ These policies look for activities within a single session with respect to the b
 
 * This policy profiles your environment and triggers alerts when users delete multiple VMs in a single session, relative to the baseline in your organization. This might indicate an attempted breach.
 
-## Enable automated governance<a name="adp-automated-gov"></a>
+## Enable automated governance
 
 You can enable automated remediation actions on alerts generated by anomaly detection policies.
 
-1. Click on the name of the detection policy in the **Policy** page.
+1. Select the name of the detection policy in the **Policy** page.
 1. In the **Edit anomaly detection policy** window that opens, under **Governance** set the remediation actions you want for each connected app or for all apps.
-1. Click **Update**.
+1. Select **Update**.
 
 ## Tune anomaly detection policies
 
@@ -171,7 +161,7 @@ To affect the anomaly detection engine to suppress or surface alerts according t
 
 * In the Impossible Travel policy, you can set the sensitivity slider to determine the level of anomalous behavior needed before an alert is triggered. For example, if you set it to low, it will suppress Impossible Travel alerts from a user's common locations, and if you set it to high, it  will surface such alerts. You can choose from the following sensitivity levels:
 
-  * **Low**: System, tenant and user suppressions
+  * **Low**: System, tenant, and user suppressions
   * **Medium**: System and user suppressions
   * **High**: Only system suppressions
 
@@ -183,8 +173,6 @@ To affect the anomaly detection engine to suppress or surface alerts according t
     | **Tenant** | Common activities based on previous activity in the tenant. For example, suppressing activities from an ISP previously alerted on in your organization. |
     | **User** | Common activities based on previous activity of the specific user. For example, suppressing activities from a location that is commonly used by the user. |
 
-* You can also configure whether the alerts for Activity from infrequent country/region, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or just successful logins.
-
 > [!NOTE]
 > By default, legacy sign-in protocols, such as those that don't use multi-factor authentication (for example, WS-Trust), are not monitored by the impossible travel policy. If your organization uses legacy protocols, to avoid missing relevant activities, edit the policy and under **Advanced configuration**, set **Analyze sign in activities** to **All sign ins**.
 
@@ -195,28 +183,28 @@ For example, you can set the Activity from infrequent county detection to ignore
 
 To scope an anomaly detection policy:
 
-1. Click **Control** > **Policies**, and set the **Type** filter to **Anomaly detection policy**.
-1. Click on the policy you want to scope.
+1. Select **Control** > **Policies**, and set the **Type** filter to **Anomaly detection policy**.
+1. Select the policy you want to scope.
 1. Under **Scope**, change the drop-down from the default setting of **All users and groups**, to **Specific users and groups**.
-1. Select **Include** to specify the users and groups for whom this policy will apply. Any user or group not selected here won't be considered a threat and won't generate an alert.
-1. Select **Exclude** to specify users for whom this policy won't apply. Any user selected here won't be considered a threat and won't generate an alert, even if they're members of groups selected under **Include**.
+1. Select **Include** to specify the users and groups for who this policy will apply. Any user or group not selected here won't be considered a threat and won't generate an alert.
+1. Select **Exclude** to specify users for who this policy won't apply. Any user selected here won't be considered a threat and won't generate an alert, even if they're members of groups selected under **Include**.
 
-    ![anomaly detection scoping](media/anomaly-detection-scoping.png)
+    ![anomaly detection scoping.](media/anomaly-detection-scoping.png)
 
 ## Triage anomaly detection alerts
 
-You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones need to be taken care of first. To do this, you need the context for the alert, so you're able to see the bigger picture and understand whether something malicious is indeed happening.
+You can triage the various alerts triggered by the new anomaly detection policies quickly and decide which ones need to be taken care of first. To do this, you need the context for the alert, so you can see the bigger picture and understand whether something malicious is indeed happening.
 
-1. In the **Activity log**, you can open an activity to display the Activity drawer. Click on **User** to view the user insights tab. This tab includes information like number of alerts, activities, and where they've connected from, which is important in an investigation.
+1. In the **Activity log**, you can open an activity to display the Activity drawer. Select **User** to view the user insights tab. This tab includes information like number of alerts, activities, and where they've connected from, which is important in an investigation.
 
-    ![anomaly detection alert1](media/anomaly-alert-user1.png)
-    ![anomaly detection alert2](media/anomaly-alert-user2.png)
+    ![anomaly detection alert1.](media/anomaly-alert-user1.png)
+    ![anomaly detection alert2.](media/anomaly-alert-user2.png)
 
-1. This enables you to understand what the suspicious activities are that the user performed and gain deeper confidence as to whether the account was compromised. For example, an alert on multiple failed logins may indeed be suspicious and can indicate potential brute force attack, but it can also be an application misconfiguration, causing the alert to be a benign true positive. However, if you see a multiple failed logins alert with additional suspicious activities, then there is a higher probability that the account is compromised. In the example below, you can see that the **Multiple failed login attempts** alert was followed by **Activity from a TOR IP address** and **Impossible travel activity**, both strong indicators of compromise (IOCs) by themselves. If this wasn't suspicious enough, then you can see that the same user performed a **Mass download activity**, which is often an indicator of the attacker performing exfiltration of data.
+1. This enables you to understand what the suspicious activities are that the user performed and gain deeper confidence as to whether the account was compromised. For example, an alert on multiple failed logins may indeed be suspicious and can indicate potential brute force attack, but it can also be an application misconfiguration, causing the alert to be a benign true positive. However, if you see a multiple failed logins alert with additional suspicious activities, then there's a higher probability that the account is compromised. In the example below, you can see that the **Multiple failed login attempts** alert was followed by **Activity from a TOR IP address** and **Impossible travel activity**, both strong indicators of compromise (IOCs) by themselves. If this wasn't suspicious enough, then you can see that the same user performed a **Mass download activity**, which is often an indicator of the attacker performing exfiltration of data.
 
-    ![anomaly detection alert3](media/anomaly-alert-user3.png)
+    ![anomaly detection alert3.](media/anomaly-alert-user3.png)
 
-1. For malware infected files, After files are detected, you can then see a list of **Infected files**. Click on the malware file name in the file drawer to open a malware report that provides you with information about that type of malware the file is infected with.
+1. For malware infected files, After files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about that type of malware the file is infected with.
 
 ## Related videos
 

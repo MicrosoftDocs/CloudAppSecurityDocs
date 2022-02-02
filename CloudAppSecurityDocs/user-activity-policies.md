@@ -1,7 +1,7 @@
 ---
-title: Create policies to control activities in Cloud App Security
+title: Create policies to control activities in Defender for Cloud Apps
 description: This article provides instructions for creating and working with activity policies.
-ms.date: 01/03/2021
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Activity policies
@@ -21,7 +21,7 @@ Activity policies allow custom alerts to be sent or actions taken when user acti
 
 - A user tries to sign in and fails 70 times in one minute
 - A user downloads 7,000 files
-- A user is logged in from Afghanistan
+- A user is logged in from an unfamiliar country/region
 
 You can set activity alerts to be sent to yourself or to the user when these events occur. You can even suspend the user until you have finished investigating what happened.
 
@@ -31,15 +31,15 @@ To create a new activity policy, follow this procedure:
 
 1. Click **Create policy** and select **Activity policy**.
 
-    ![Create a Threat Detection policy](media/create-policy-from-threat-detection-tab.png)
+    ![Create a Threat Detection policy.](media/create-policy-from-threat-detection-tab.png)
 
 1. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
 1. To set which actions or other metrics will trigger this policy, work with the **Activity filters**.
     > [!NOTE]
-    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
+    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries/regions, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
     >
-    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
+    > ![Screenshot of filter settings, showing location field is set.](media/activity-example-location-isset.png)
 
 1. Under **Activity match parameters**, select when a policy violation will be triggered. Choose to trigger when a single activity matches the filters or only when a specified number of **Repeated activities** are detected.
     - If you choose **Repeated activity**, you can set **In a single app**. This setting will trigger a policy match only when the repeated activities occur in the same app. For example, five downloads in 30 minutes from Box trigger a policy match.
@@ -54,13 +54,13 @@ Take a look at these examples:
 
     Beneath the **Activity filters** field, configure the parameters for which the alert will be triggered.
 
-    ![Policy example for multiple failed sign-in attempts](media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")
+    ![Policy example for multiple failed sign-in attempts.](media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")
 
 - High download rate
 
     You can set your policy so that you receive an alert when there has been an unexpected or uncharacteristic level of downloading activity. To configure this sort of policy, under **Rate** parameters, choose the parameters to trigger the alert.
 
-    ![high download rate example](media/high-download-rate-example.png "high download rate example")
+    ![high download rate example.](media/high-download-rate-example.png "high download rate example")
 
 ## Activity policy reference
 

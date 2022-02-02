@@ -1,7 +1,7 @@
 ---
 title: Manage IP address ranges using the API
-description: This article provides information on how to use the API to manage IP address ranges in Cloud App Security.
-ms.date: 01/04/2021
+description: This article provides information on how to use the API to manage IP address ranges in Defender for Cloud Apps.
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Manage IP address ranges using the API
@@ -32,7 +32,7 @@ You can use the Data Enrichment APIs to manage IP address ranges.
 - "hasNext": Boolean. Denotes whether another iteration on the data is needed.
 - "nextQueryFilters": If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the "filters" parameter in the next request.
 
-The following Python example uses the contents of a CSV file to manage (create, update, or delete) IP address ranges in your Cloud App Security environment.
+The following Python example uses the contents of a CSV file to manage (create, update, or delete) IP address ranges in your Defender for Cloud Apps environment.
 
 ```python
 import csv
@@ -47,6 +47,7 @@ CSV_ABSOLUTE_PATH = 'rules.csv'
 YOUR_TOKEN = '<your_token>'
 HEADERS = {
   'Authorization': 'Token {}'.format(YOUR_TOKEN),
+  'Content-Type': 'application/json'
 }
 
 # Get all records.

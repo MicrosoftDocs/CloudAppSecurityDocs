@@ -1,43 +1,43 @@
 ---
-title: Generic SIEM integration with Cloud App Security
-description: This article provides information integrating your generic SIEM with Cloud App Security.
-ms.date: 01/17/2021
+title: Generic SIEM integration with Defender for Cloud Apps
+description: This article provides information integrating your generic SIEM with Defender for Cloud Apps.
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Generic SIEM integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can integrate Microsoft Cloud App Security with your generic SIEM server to enable centralized monitoring of alerts and activities from connected apps. As new activities and events are supported by connected apps, visibility into them is then rolled out into Microsoft Cloud App Security. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events. The Microsoft Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Microsoft Cloud App Security and streams them into the SIEM server.
+You can integrate Microsoft Defender for Cloud Apps with your generic SIEM server to enable centralized monitoring of alerts and activities from connected apps. As new activities and events are supported by connected apps, visibility into them is then rolled out into Microsoft Defender for Cloud Apps. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events. The Microsoft Defender for Cloud Apps SIEM agent runs on your server and pulls alerts and activities from Microsoft Defender for Cloud Apps and streams them into the SIEM server.
 
-When you first integrate your SIEM with Cloud App Security, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts (based on the filter you select) from then on. If you disable this feature for an extended period, then re-enable, the past two days of alerts and activities are forwarded and then all alerts and activities from then on.
+When you first integrate your SIEM with Defender for Cloud Apps, activities and alerts from the last two days will be forwarded to the SIEM and all activities and alerts (based on the filter you select) from then on. If you disable this feature for an extended period, then re-enable, the past two days of alerts and activities are forwarded and then all alerts and activities from then on.
 
 Additional integration solutions include:
 
-* **Azure Sentinel** - A scalable, cloud-native SIEM and SOAR for native integration. For information about integrating with Azure Sentinel, see [Azure Sentinel integration](siem-sentinel.md).
+* **Microsoft Sentinel** - A scalable, cloud-native SIEM and SOAR for native integration. For information about integrating with Microsoft Sentinel, see [Microsoft Sentinel integration](siem-sentinel.md).
 * **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!IMPORTANT]
-> If you are integrating Microsoft Defender for Identity in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
+> If you are integrating Microsoft Defender for Identity in Defender for Cloud Apps and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. One alert will be issued from each service and they will have different alert IDs. To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
 
 ## Generic SIEM integration architecture
 
-The SIEM agent is deployed in your organization's network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Cloud App Security RESTful APIs.
+The SIEM agent is deployed in your organization's network. When deployed and configured, it pulls the data types that were configured (alerts and activities) using Defender for Cloud Apps RESTful APIs.
 The traffic is then sent over an encrypted HTTPS channel on port 443.
 
-Once the SIEM agent retrieves the data from Cloud App Security, it sends the Syslog messages to your local SIEM. Cloud App security uses the network configurations you provided during the setup (TCP or UDP with a custom port).
+Once the SIEM agent retrieves the data from Defender for Cloud Apps, it sends the Syslog messages to your local SIEM. Defender for Cloud Apps uses the network configurations you provided during the setup (TCP or UDP with a custom port).
 
-![SIEM integration architecture](media/siem-architecture.png)
+![SIEM integration architecture.](media/siem-architecture.png)
 
 ## Supported SIEMs
 
-Cloud App Security currently supports Micro Focus ArcSight and generic CEF.
+Defender for Cloud Apps currently supports Micro Focus ArcSight and generic CEF.
 
 ## How to integrate
 
 Integrating with your SIEM is accomplished in three steps:
 
-1. Set it up in the Cloud App Security portal.
+1. Set it up in the Defender for Cloud Apps portal.
 2. Download the JAR file and run it on your server.
 3. Validate that the SIEM agent is working.
 
@@ -54,33 +54,33 @@ Integrating with your SIEM is accomplished in three steps:
 
 ## Integrating with your SIEM
 
-### Step 1: Set it up in the Cloud App Security portal
+### Step 1: Set it up in the Defender for Cloud Apps portal
 
-1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, select **Security extensions**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, select **Security extensions**.
 
 1. On the **SIEM agents** tab, select "add" (**+**), and then choose **Generic SIEM**.
 
-    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
+    ![Screenshot showing Add SIEM integration menu.](media/siem0.png)
 
 1. In the wizard, select **Start Wizard**.
 1. In the wizard, fill in a name, and **Select your SIEM format** and set any **Advanced settings** that are relevant to that format. Select **Next**.
 
-    ![General SIEM settings](media/siem1.png)
+    ![General SIEM settings.](media/siem1.png)
 
 1. Type in the IP address or hostname of the **Remote syslog host** and the **Syslog port number**. Select TCP or UDP as the Remote Syslog protocol.
     You can work with your security admin to get these details if you don't have them. Select **Next**.
 
-    ![Remote Syslog settings](media/siem2.png)
+    ![Remote Syslog settings.](media/siem2.png)
 
 1. Select which data types you want to export to your SIEM server for **Alerts** and **Activities**. Use the slider to enable and disable them, by default, everything is selected. You can use the **Apply to** drop-down to set filters to send only specific alerts and activities to your SIEM server. Select **Edit and preview results** to check that the filter works as expected. Select **Next**.
 
-   ![Data types settings](media/siem3.png)
+   ![Data types settings.](media/siem3.png)
 
 1. Copy the token and save it for later.
     Select **Finish** and leave the Wizard. Go back to the SIEM page to see the SIEM agent you added in the table. It will show that it's **Created** until it's connected later.
 
 > [!NOTE]
-> Any token you create is bound to the admin who created it. This means that if the admin user is removed from Cloud App security, the token will no longer be valid. A generic SIEM token provides read-only permissions to the only required resources. No other permissions are granted a part of this token.
+> Any token you create is bound to the admin who created it. This means that if the admin user is removed from Defender for Cloud Apps, the token will no longer be valid. A generic SIEM token provides read-only permissions to the only required resources. No other permissions are granted a part of this token.
 
 ### Step 2: Download the JAR file and run it on your server
 
@@ -136,7 +136,9 @@ The following text is an alerts logfile example:
 >
 >`2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=`
 
-#### Sample Cloud App Security alerts in CEF format
+<a name="sample-cloud-app-security-alerts-in-cef-format"></a>
+
+#### Sample Defender for Cloud Apps alerts in CEF format
 
 | Applicable to | CEF field name | Description |
 | --- | --- | --- |
@@ -161,31 +163,31 @@ The following text is an alerts logfile example:
 
 ### Step 3: Validate that the SIEM agent is working
 
-1. Make sure the status of the SIEM agent in the Cloud App Security portal isn't **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours. The status shows as **Disconnected** if the connection is down for over 12 hours.
- ![SIEM disconnected](media/siem-not-connected.png)
+1. Make sure the status of the SIEM agent in the Defender for Cloud Apps portal isn't **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours. The status shows as **Disconnected** if the connection is down for over 12 hours.
+ ![SIEM disconnected.](media/siem-not-connected.png)
 
     Instead, the status should be connected, as seen here:
-    ![SIEM connected](media/siem-connected.png)
+    ![SIEM connected.](media/siem-connected.png)
 
-1. In your Syslog/SIEM server, make sure you see activities and alerts arriving from Cloud App Security.
+1. In your Syslog/SIEM server, make sure you see activities and alerts arriving from Defender for Cloud Apps.
 
 ## Regenerating your token
 
 If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table. Select **Regenerate token** to get a new token.
 
-![SIEM - regenerate token](media/siem-regenerate-token.png)
+![SIEM - regenerate token.](media/siem-regenerate-token.png)
 
 ## Editing your SIEM agent
 
 To edit the SIEM agent, select the three dots at the end of the row for the SIEM agent in the table, and select **Edit**. If you edit the SIEM agent, you don't need to rerun the .jar file, it updates automatically.
 
-![SIEM - edit](media/siem-edit.png)
+![SIEM - edit.](media/siem-edit.png)
 
 ## Deleting your SIEM agent
 
 To delete the SIEM agent, select the three dots at the end of the row for the SIEM agent in the table, and select **Delete**.
 
-![SIEM - delete](media/siem-delete.png)
+![SIEM - delete.](media/siem-delete.png)
 
 ## Next steps
 

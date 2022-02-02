@@ -1,14 +1,14 @@
 ---
-title: Create policies to control OAuth apps in Cloud App Security
-description: This article provides instructions for creating and working with app permission policies in Microsoft Cloud App Security.
-ms.date: 01/11/2021
+title: Create policies to control OAuth apps in Defender for Cloud Apps
+description: This article provides instructions for creating and working with app permission policies in Microsoft Defender for Cloud Apps.
+ms.date: 01/30/2022
 ms.topic: how-to
 ---
 # OAuth app policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies to so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users.
+In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users.
 
 OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will revoke permissions for each app for each user who authorized it.
 
@@ -18,17 +18,17 @@ There are two ways to create a new OAuth app policy. The first way is under **In
 
 To create a new OAuth app policy:
 
-1. Under **Investigate** select **OAuth app**.
+1. Under **Investigate**, select **OAuth apps**.
 
-1. Filter the apps according to your needs, for example, you can view all apps that request **Permission** to **Modify calendars in your mailbox**.
-1. Click the **New policy from search** button.
-    ![new policy from search](media/app-permissions-filter.png)
+1. Filter the apps according to your needs. For example, you can view all apps that request **Permission** to **Modify calendars in your mailbox**.
+1. Select the **New policy from search** button.
+    ![New policy from search.](media/app-permissions-filter.png)
 1. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
-1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the administrators group.
+1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.
 
-Alternatively, you can also create the policy by clicking **Control** followed by **Policies**. Then click **Create policy** followed by **OAuth app policy**.
+Alternatively, you can also create the policy by selecting **Control** followed by **Policies**. Then select **Create policy** followed by **OAuth app policy**.
 
-   ![new OAuth app policy](media/app-permissions-policy.png)
+   ![new OAuth app policy.](media/app-permissions-policy.png)
 
 ## OAuth app anomaly detection policies
 

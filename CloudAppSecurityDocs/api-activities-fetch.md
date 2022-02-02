@@ -1,7 +1,7 @@
 ---
 title: Fetch - Activities API
-description: This article describes the fetch request in Cloud App Security's Activities API.
-ms.date: 03/27/2020
+description: This article describes the fetch request in the Defender for Cloud Apps Activities API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Fetch - Activities API
@@ -29,7 +29,7 @@ GET /api/v1/activities/<pk>/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/activities/<pk>/"
 ```
 
 ### Response

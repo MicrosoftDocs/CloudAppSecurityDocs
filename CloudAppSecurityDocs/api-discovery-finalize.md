@@ -1,7 +1,7 @@
 ---
 title: Finalize file upload - Cloud Discovery API
-description: This article describes the done_upload request in Cloud App Security's Cloud Discovery API.
-ms.date: 03/27/2020
+description: This article describes the done_upload request in the Defender for Cloud Apps Cloud Discovery API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Finalize file upload - Cloud Discovery API
@@ -31,7 +31,7 @@ POST /api/v1/discovery/done_upload/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/done_upload/" -d "uploadUrl=<initiate_file_upload_response_url>"
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/done_upload/" -d "uploadUrl=<initiate_file_upload_response_url>"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

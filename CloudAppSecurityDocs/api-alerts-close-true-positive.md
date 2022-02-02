@@ -1,7 +1,7 @@
 ---
 title: Close true positive - Alerts API
-description: This article describes the bulk close an alert as true positive request in Cloud App Security's Alerts API.
-ms.date: 10/20/2020
+description: This article describes the bulk close an alert as true positive request in the Defender for Cloud Apps Alerts API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Close true positive - Alerts API
@@ -34,7 +34,7 @@ POST /api/v1/alerts/close_true_positive/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/close_true_positive" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/close_true_positive" -d '{
   "filters": {
     "id": {
       "eq": [
@@ -50,6 +50,27 @@ curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tena
   "allowContact": true,
   "contactEmail": " user@contoso.com"
 }'
+```
+
+### Response
+
+Response if alert was properly closed
+
+```json
+{
+    "closed_true_positive": 1
+}
+```
+
+Response if alert not found
+
+```json
+{
+    "closed_true_positive": 0,
+    "alertsNotFound": [
+        "5f843e9cfe3f6d80fe58a962"
+    ]
+}
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

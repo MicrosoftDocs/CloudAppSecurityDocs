@@ -1,7 +1,7 @@
 ---
 title: Manage cloud platform security used by your organization tutorial
-description: This tutorial describes how to use Microsoft Cloud App Security to secure your Azure, AWS, and GCP cloud platforms.
-ms.date: 02/24/2021
+description: This tutorial describes how to use Microsoft Defender for Cloud Apps to secure your Azure, AWS, and GCP cloud platforms.
+ms.date: 11/09/2021
 ms.topic: tutorial
 ---
 # Tutorial: Manage cloud platform security
@@ -10,13 +10,13 @@ ms.topic: tutorial
 
 Remote work often leads to extensive use of cloud apps and cloud platforms for common business tasks and surfaces the need to secure cloud environments and the adoption of cloud security products. According to the [shared responsibility model](/azure/security/fundamentals/shared-responsibility), an organization is responsible for managing and securing its cloud platform: Identity Access Management (IAM), Virtual Machines (VM) and their compute resources, data and storage, network resources, and more.
 
-![Securing your multi-cloud environment](media/tutorial-cloud-platform-security.png)
+![Securing your multi-cloud environment.](media/tutorial-cloud-platform-security.png)
 
 ## How does security posture management help?
 
 Having the appropriate security tools in place to protect resources that might have not been properly protected is critical. Organizations must gain visibility to their cloud resources posture, have discovery capabilities to learn about the actual usage of each platform, be able to monitor suspicious activities, assess, and review configurations and compliance statuses, and be enabled to deploy real-time protection mechanisms.
 
-Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Cloud App Security product.
+Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Defender for Cloud Apps product.
 
 ## Protecting multiple clouds from a single management portal
 
@@ -24,7 +24,7 @@ The modern complexity of organizations, many of whom use several cloud platforms
 
 Organizational security posture encompasses all cloud platforms in an organization and this new functionality is designed for use by security architects, central security admins, or compliance analysts. From this feature, admins can review subscriptions with non-compliant resources and drive remediation of each by the resource owner.
 
-In this tutorial, you'll learn how to use Cloud App Security to secure your Azure, AWS, and GCP cloud platforms:
+In this tutorial, you'll learn how to use Defender for Cloud Apps to secure your Azure, AWS, and GCP cloud platforms:
 
 > [!div class="checklist"]
 >
@@ -39,16 +39,16 @@ To avoid critical cloud platform misconfigurations, it is important for organiza
 
 ### Phase 1: Discover multi-cloud resources, usage, and Shadow IT
 
-**Identify security posture**: Start by identifying your organization's cloud security posture by running Cloud Discovery to see what's happening in your network and evaluate the actual resource usage in your cloud platforms. You can achieve this by [setting up Cloud Discovery](set-up-cloud-discovery.md) to monitor and analyze your network traffic  in Cloud App Security. Web traffic logs analysis with Cloud App Security's Shadow IT discovery  provide improved visibility over your Shadow IT usage of cloud resources, identifying anomalous activities using either the Machine Learning anomaly detection engine or by using custom policies that you define:
+**Identify security posture**: Start by identifying your organization's cloud security posture by running Cloud Discovery to see what's happening in your network and evaluate the actual resource usage in your cloud platforms. You can achieve this by [setting up Cloud Discovery](set-up-cloud-discovery.md) to monitor and analyze your network traffic  in Defender for Cloud Apps. Web traffic logs analysis with the Defender for Cloud Apps Shadow IT discovery  provide improved visibility over your Shadow IT usage of cloud resources, identifying anomalous activities using either the Machine Learning anomaly detection engine or by using custom policies that you define:
 
 - **Discover**: Discover usage across your organization's resource-hosting cloud platforms. For example, evaluate the actual volume of data that was downloaded from your storage resources and identify suspicious resource use that may indicate attempts at data exfiltration. Similarly, identify suspicious upload activities that may indicate an attempt to compromise your environment by injecting malicious code onto a target.
 - **Investigate**: Use the **Discovered resources** page to view access to data across resources including storage accounts, infrastructure, and custom apps hosted on Azure, AWS, and GCP. Ask questions such as: Was there a suspicious number of transactions in accessing a specific resource?
 
-    ![View discovered resources](media/tutorial-cloud-platform-security-view-discovered-resources.png)
+    ![View discovered resources.](media/tutorial-cloud-platform-security-view-discovered-resources.png)
 
     To investigate further, you can drill down into each resource to see the types of transactions that occurred, who accessed it, and then drill down to investigate the users even further.
 
-    ![Investigate discovered resources](media/tutorial-cloud-platform-security-investigate-discovered-resources.png)
+    ![Investigate discovered resources.](media/tutorial-cloud-platform-security-investigate-discovered-resources.png)
 
 ### Phase 2: Monitor activities and alerts to detect suspicious behavior across workloads
 
@@ -56,7 +56,7 @@ Track suspicious activities that may indicate a breach, like an IAM (Identity & 
 
 Monitoring audit logs for suspicious changes is a great place to apply anomaly detection tools, alerting on possible breaches by identifying multiple failed login attempts, or multiple deleted VM activities in combination with an impossible travel scenario.
 
-![View alerts](media/tutorial-cloud-platform-security-view-alerts.png)
+![View alerts.](media/tutorial-cloud-platform-security-view-alerts.png)
 
 Use what you learn from the alerts to tune user activity detections to identify true compromises and reduce alert fatigue resulting from handling large volumes of false positive detections. Consider tuning the following policy parameters:
 
@@ -78,17 +78,17 @@ Cloud architects or compliance analysts can evaluate configuration gaps for each
 - Subscription to differentiate between production from non-production environments
 - Severity to identify high-severity recommendations that often have different SLA and processes relative to low-severity recommendations
 
-For Azure security configuration recommendations, we surface recommendations of the entire Azure tenant and all its subscriptions based on Azure Security Center best practices. Selecting a recommendation redirects you to the recommendation page in Azure Security Center, where you can see additional details about the recommendation and use it to drive remediation by the subscription owner. Some recommendations have **Quick Fix** options to remediate the issue. For more information about Azure security recommendations, see [Security configuration for Azure](security-config-azure.md).
+For Azure security configuration recommendations, we surface recommendations of the entire Azure tenant and all its subscriptions based on Microsoft Defender for Cloud best practices. Selecting a recommendation redirects you to the recommendation page in Microsoft Defender for Cloud, where you can see additional details about the recommendation and use it to drive remediation by the subscription owner. Some recommendations have **Quick Fix** options to remediate the issue. For more information about Azure security recommendations, see [Security configuration for Azure](security-config-azure.md).
 
-![View Azure recommendations](media/tutorial-cloud-platform-security-view-azure-recommendations.png)
+![View Azure recommendations.](media/tutorial-cloud-platform-security-view-azure-recommendations.png)
 
 For AWS security configuration recommendations, you can select a recommendation to drill down into the details of the affected resources. For example, AWS CIS recommendation 2.9 'Ensure VPC flow logging in enabled in all VPC' surfaces resources that don't have VPC logging enabled. The details include the VPC names, the account in which the resource is hosted, and the region. You can select the AWS link to view the relevant finding and change the related settings in AWS to comply with the recommendation. For more information on Security Configuration for AWS, see [Security configuration for AWS](security-config-aws.md).
 
-![View AWS recommendations](media/tutorial-cloud-platform-security-view-aws-recommendations.png)
+![View AWS recommendations.](media/tutorial-cloud-platform-security-view-aws-recommendations.png)
 
 For GCP security configuration recommendations, selecting on a recommendation reveals detailed recommendation information and remediation steps to help you better understand and evaluate the impact and effort of remediating the issue. You can then select the GCP Security Command Center link to remediate the finding in the platform. For more information on GCP recommendations, see [Security configuration for GCP](security-config-gcp.md).
 
-![View GCP recommendations](media/tutorial-cloud-platform-security-view-gcp-recommendations.png)
+![View GCP recommendations.](media/tutorial-cloud-platform-security-view-gcp-recommendations.png)
 
 ### Phase 4: Automate protection and policy enforcement for cloud resources in real time
 
@@ -97,7 +97,7 @@ Protect your organization's resources from data leaks and theft in real time by 
 - Prevent data exfiltration by [blocking downloads](session-policy-aad.md#block-download) to unmanaged or risky devices, protect on download in a risky session.
 - Prevent [upload of malicious files](session-policy-aad.md#block-malware-on-upload) to your cloud platforms and block access for specific users based on many risk factors.
 
-![Specify policy remediation action](media/tutorial-cloud-platform-security-remediation.png)
+![Specify policy remediation action.](media/tutorial-cloud-platform-security-remediation.png)
 
 ## See also
 

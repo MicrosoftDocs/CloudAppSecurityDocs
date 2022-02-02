@@ -1,53 +1,153 @@
 {
     "redirections": [
-		{
-			"source_path": "CloudAppSecurityDocs/security-baseline.md",
-			"redirect_url": "/security/benchmark/azure/baselines/cloud-app-security-security-baseline",
-			"redirect_document_id": false
-		},
+        {
+            "source_path": "CloudAppSecurityDocs/security-baseline.md",
+            "redirect_url": "/security/benchmark/azure/baselines/cloud-app-security-security-baseline",
+            "redirect_document_id": false
+        },
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-bulk-dismiss.md",
-            "redirect_url": "/cloud-app-security/api-alerts-close-false-positive",
+            "redirect_url": "/defender-cloud-apps/api-alerts-close-false-positive",
             "redirect_document_id": false
         },
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-bulk-resolve.md",
-            "redirect_url": "/cloud-app-security/api-alerts-close-true-positive",
+            "redirect_url": "/defender-cloud-apps/api-alerts-close-true-positive",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/api-alerts-dismiss.md",
-            "redirect_url": "/cloud-app-security/api-alerts-close-false-positive",
+            "redirect_url": "/defender-cloud-apps/api-alerts-close-false-positive",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/proxy-idp-examples.md",
-            "redirect_url": "/cloud-app-security/proxy-idp-pingone",
+            "redirect_url": "/defender-cloud-apps/proxy-idp-pingone",
             "redirect_document_id": false
         },
         {
             "source_path": "CloudAppSecurityDocs/connect-google-apps-to-microsoft-cloud-app-security.md",
-            "redirect_url": "/cloud-app-security/connect-google-workspace-to-microsoft-cloud-app-security",
+            "redirect_url": "/defender-cloud-apps/connect-google-workspace-to-microsoft-cloud-app-security",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/protect-gsuite.md",
-            "redirect_url": "/cloud-app-security/protect-google-workspace",
+            "redirect_url": "/defender-cloud-apps/protect-google-workspace",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/api-tokens.md",
-            "redirect_url": "/cloud-app-security/api-authentication",
+            "redirect_url": "/defender-cloud-apps/api-authentication",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/investigate-activities-api.md",
-            "redirect_url": "/cloud-app-security/api-activities-investigate-script",
+            "redirect_url": "/defender-cloud-apps/api-activities-investigate-script",
             "redirect_document_id": true
         },
         {
             "source_path": "CloudAppSecurityDocs/aatp-integration.md",
-            "redirect_url": "/cloud-app-security/mdi-integration",
+            "redirect_url": "/defender-cloud-apps/mdi-integration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-aws-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-aws",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-azure-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-azure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-box-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-box",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-dropbox-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-dropbox",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-github-ec-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-github-ec",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-google-gcp-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-google-gcp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-google-workspace-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-google-workspace",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-office-365-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-office-365",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-okta-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-okta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-onelogin-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-onelogin",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-salesforce-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-salesforce",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-servicenow-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-servicenow",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-slack-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-slack",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-smartsheet-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-smartsheet",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-webex-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-webex",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-workday-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-workday",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/connect-zendesk-to-microsoft-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/connect-zendesk",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/getting-started-with-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/wdatp-integration.md",
+            "redirect_url": "/defender-cloud-apps/mde-integration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/what-is-cloud-app-security.md",
+            "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
             "redirect_document_id": true
         }
     ]

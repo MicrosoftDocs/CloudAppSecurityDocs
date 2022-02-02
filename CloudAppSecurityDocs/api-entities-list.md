@@ -1,7 +1,7 @@
 ---
 title: List - Entities API
-description: This article describes the list request in Cloud App Security's Entities API.
-ms.date: 03/27/2020
+description: This article describes the list request in the Defender for Cloud Apps Entities API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # List - Entities API
@@ -40,7 +40,7 @@ POST /api/v1/entities/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/" -d '{
   "filters": {
     // some filters
   },

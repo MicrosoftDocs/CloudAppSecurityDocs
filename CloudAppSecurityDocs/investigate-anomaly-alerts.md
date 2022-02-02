@@ -1,7 +1,7 @@
 ---
-title: Cloud App Security anomaly detection alerts investigation guide
-description: This article explains how to investigate the Cloud App Security anomaly detection alerts issued when attacks are detected against your organization.
-ms.date: 06/08/2020
+title: Defender for Cloud Apps anomaly detection alerts investigation guide
+description: This article explains how to investigate the Defender for Cloud Apps anomaly detection alerts issued when attacks are detected against your organization.
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 
@@ -9,13 +9,13 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Cloud App Security provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it is important to note that since anomaly detections are non-deterministic by nature, they are only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+Microsoft Defender for Cloud Apps provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. However, it's important to note that since anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT\&CK
 
-To explain and make it easier to map the relationship between Cloud App Security alerts and the familiar MITRE ATT\&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT\&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when a Cloud App Security alert is triggered.
+To explain and make it easier to map the relationship between Defender for Cloud Apps alerts and the familiar MITRE ATT\&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT\&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when a Defender for Cloud Apps alert is triggered.
 
-This guide provides information about investigating and remediating Cloud App Security alerts in the following categories.
+This guide provides information about investigating and remediating Defender for Cloud Apps alerts in the following categories.
 
 > [!div class="checklist"]
 >
@@ -30,7 +30,7 @@ This guide provides information about investigating and remediating Cloud App Se
 
 ## Security alert classifications
 
-Following proper investigation, all Cloud App Security alerts can be classified as one of the following activity types:
+Following proper investigation, all Defender for Cloud Apps alerts can be classified as one of the following activity types:
 
 - **True positive (TP)**: An alert on a confirmed malicious activity.
 - **Benign true positive (B-TP)**: An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
@@ -80,7 +80,7 @@ By default, the policy is configured to include only successful sign-in activiti
 
 **Learning period**
 
-Detecting anomalous locations requires an initial learning period of seven days during which alerts are not triggered for any new locations.
+Detecting anomalous locations requires an initial learning period of seven days during which alerts aren't triggered for any new locations.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -93,7 +93,7 @@ Detecting anomalous locations requires an initial learning period of seven days 
 
     **Recommended action**:
     1. Dismiss the alert and modify the policy to exclude the user.
-    1. Create a user group for frequent travelers, import the group into Cloud App Security, and exclude the users from this alert
+    1. Create a user group for frequent travelers, import the group into Defender for Cloud Apps, and exclude the users from this alert
     1. Optional: Create a playbook using Power Automate to contact users detected as connecting from infrequent locations, and their managers, to verify their activity.
 
 **Understand the scope of the breach**
@@ -102,7 +102,7 @@ Detecting anomalous locations requires an initial learning period of seven days 
 
 ### Activity from suspicious IP addresses
 
-Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as botnet command and control (C&C), and may indicate a compromised account.
+Activity from an IP address that has been identified as risky by Microsoft Threat Intelligence or by your organization. These IP addresses were identified as being involved in malicious activities, such as performing password spray, botnet command and control (C&C), and may indicate a compromised account.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -123,7 +123,7 @@ Activity from an IP address that has been identified as risky by Microsoft Threa
 
 Activity from the same user in different locations within a time period that is shorter than the expected travel time between the two locations. This can indicate a credential breach, however, it's also possible that the user's actual location is masked, for example, by using a VPN.
 
-To improve accuracy and alert only when there is a strong indication of a breach, Cloud App Security establishes a baseline on each user in the organization and will alert only when the unusual behavior is detected. The impossible travel policy can be fine-tuned to your requirements.
+To improve accuracy and alert only when there is a strong indication of a breach, Defender for Cloud Apps establishes a baseline on each user in the organization and will alert only when the unusual behavior is detected. The impossible travel policy can be fine-tuned to your requirements.
 
 **Learning period**
 
@@ -141,7 +141,7 @@ This detection uses a machine learning algorithm that ignores obvious **B-TP** c
     **Recommended action**: Dismiss the alert.
 1. **FP** (Untagged VPN): If you're able to confirm that the IP address range is from a sanctioned VPN.
 
-    **Recommended action**: Dismiss the alert and [add the VPN's IP address range](ip-tags.md#create-an-ip-address-range) to Cloud App Security and then use it to tag the VPN's IP address range.
+    **Recommended action**: Dismiss the alert and [add the VPN's IP address range](ip-tags.md#create-an-ip-address-range) to Defender for Cloud Apps and then use it to tag the VPN's IP address range.
 
 **Understand the scope of the breach**
 
@@ -248,7 +248,7 @@ To improve accuracy and alert only when there is a strong indication of a breach
 1. Review all user activity for other indicators of compromise.
 1. Review the resources created or modified by the user and verify that they conform with your organization's policies.
 
-### Suspicious creation activity for cloud region (preview)
+### Suspicious creation activity for cloud region (preview)
 
 Activities indicating that a user performed an unusual resource creation action in an uncommon AWS region when compared to the baseline learned. Resource creation in uncommon cloud regions could indicate an attempt to perform a malicious activity such as crypto mining operations from within your organization.
 
@@ -278,7 +278,7 @@ This section describes alerts indicating that a malicious actor may be attemptin
 
 ### Activity performed by terminated user
 
-Activity performed by a terminated user can indicate that a terminated employee who still has access to corporate resources is trying to perform a malicious activity. Cloud App Security profiles users in the organization and triggers an alert when a terminated user performs an activity.
+Activity performed by a terminated user can indicate that a terminated employee who still has access to corporate resources is trying to perform a malicious activity. Defender for Cloud Apps profiles users in the organization and triggers an alert when a terminated user performs an activity.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -341,7 +341,7 @@ Activities in a single session indicating that, a user performed suspicious emai
 
 ### Suspicious inbox manipulation rule
 
-Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as deleting or moving messages, or folders, from a user's inbox may be an attempt to exfiltrate information from your organization. Similarly, they can indicate an attempt to manipulate information that a user sees or to use their inbox to distribute spam, phishing emails, or malware. Cloud App Security profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This may indicate that the user's account is compromised.
+Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as deleting or moving messages, or folders, from a user's inbox may be an attempt to exfiltrate information from your organization. Similarly, they can indicate an attempt to manipulate information that a user sees or to use their inbox to distribute spam, phishing emails, or malware. Defender for Cloud Apps profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This may indicate that the user's account is compromised.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -366,7 +366,7 @@ This section describes alerts indicating that a malicious actor may be attemptin
 
 ### Unusual administrative activity (by user)
 
-Activities indicating that an attacker has compromised a user account and performed administrative actions that are not common for that user. For example, an attacker can try to change a security setting for a user, an operation that is relatively rare for a common user. Cloud App Security creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
+Activities indicating that an attacker has compromised a user account and performed administrative actions that are not common for that user. For example, an attacker can try to change a security setting for a user, an operation that is relatively rare for a common user. Defender for Cloud Apps creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
 
 **Learning period**
 
@@ -392,7 +392,7 @@ This section describes alerts indicating that a malicious actor may be attemptin
 
 ### Multiple failed login attempts
 
-Failed login attempts could indicate on an attempt to breach an account. However, failed logins can also be normal behavior. For example, when a user entered a wrong password by mistake. To achieve accuracy and alert only when there is a strong indication of an attempted breach, Cloud App Security establishes a baseline of login habits for each user in the organization and will only alert when the unusual behavior is detected.
+Failed login attempts could indicate on an attempt to breach an account. However, failed logins can also be normal behavior. For example, when a user entered a wrong password by mistake. To achieve accuracy and alert only when there is a strong indication of an attempted breach, Defender for Cloud Apps establishes a baseline of login habits for each user in the organization and will only alert when the unusual behavior is detected.
 
 **Learning period**
 
@@ -435,13 +435,33 @@ This policy is based on learning the normal login behavior of a user. When a dev
 
 This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity.
 
-> [!NOTE]
-> Since the risk posed by a successful attack is high, Cloud App Security also notifies you of detections dating back to mid-September 2020.
-> Alerts for past events have the title "System alert: Unusual addition of credentials to an OAuth app" and the alert type will be MCAS_ALERT_MANAGEMENT_GENERIC.
-
 **Learning period**
 
 Learning your organization's environment requires a period of seven days during which you may expect a high volume of alerts.
+
+### Unusual ISP for an OAuth app
+
+The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
+
+**Learning period** 
+
+The learning period for this detection is 30 days.  
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activity wasn't a legitimate activity of the OAuth app or that this ISP is not used by the legitimate OAuth app.
+
+    **Recommended action**: Revoke all the access tokens of the OAuth app and investigate if an attacker has access to generating OAuth access tokens.
+
+1. **FP**: If you can confirm that the activity was made legitimately by the genuine OAuth app.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the activities performed by the OAuth app.
+
+1. Investigate if an attacker has access to generating OAuth access tokens.
 
 ## Collection alerts
 
@@ -489,7 +509,7 @@ Activities indicating that a user shared a Power BI report that may contain sens
 
 ### Unusual impersonated activity (by user)
 
-In some software, there are options to allow other users to impersonate other users. For example, email services allow users to authorize other users to send email on their behalf. This activity is commonly used by attackers to create phishing emails in an attempt to extract information about your organization. Cloud App Security creates a baseline based on the user's behavior and creates an activity when an unusual impersonation activity is detected.
+In some software, there are options to allow other users to impersonate other users. For example, email services allow users to authorize other users to send email on their behalf. This activity is commonly used by attackers to create phishing emails in an attempt to extract information about your organization. Defender for Cloud Apps creates a baseline based on the user's behavior and creates an activity when an unusual impersonation activity is detected.
 
 **Learning period**
 
@@ -519,7 +539,7 @@ This section describes alerts indicating that a malicious actor may be attemptin
 
 ### Suspicious inbox forwarding
 
-Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as forward all or specific emails to another email account may be an attempt to exfiltrate information from your organization. Cloud App Security profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This may indicate that the user's account is compromised.
+Activities indicating that an attacker gained access to a user's inbox and created a suspicious rule. Manipulation rules, such as forward all or specific emails to another email account may be an attempt to exfiltrate information from your organization. Defender for Cloud Apps profiles your environment and triggers alerts when suspicious inbox manipulation rules are detected on a user's inbox. This may indicate that the user's account is compromised.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -543,7 +563,7 @@ Activities indicating that an attacker gained access to a user's inbox and creat
 
 ### Unusual file download (by user)
 
-Activities indicating that a user performed an unusual number of file downloads from a cloud storage platform when compared to the baseline learned. This can indicate an attempt to gain information about the organization. Cloud App Security creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
+Activities indicating that a user performed an unusual number of file downloads from a cloud storage platform when compared to the baseline learned. This can indicate an attempt to gain information about the organization. Defender for Cloud Apps creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
 
 **Learning period**
 
@@ -566,9 +586,32 @@ Establishing a new user's activity pattern requires an initial learning period o
 1. Review the download activities and create a list of downloaded files.
 1. Review the sensitivity of the downloaded files with the resource owner and validate the access level.
 
+### Unusual file access (by user)
+
+Activities indicating that a user performed an unusual number of file accesses in SharePoint or OneDrive to files that contain  financial data or network data as compared to the baseline learned. This can indicate an attempt to gain information about the organization, whether for financial purposes or for credential access and lateral movement. Defender for Cloud Apps creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
+
+**Learning period**
+
+The learning period depends on the user's activity. Generally, the learning period is between 21 and 45 days for most users.
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activity wasn't performed by a legitimate user.
+
+    **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
+
+1. **FP** (Unusual behavior): If you can confirm that the user legitimately performed more file access activities than the established baseline.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the access activities and create a list of accessed files.
+1. Review the sensitivity of the accessed files with the resource owner and validate the access level.
+
 ### Unusual file share activity (by user)
 
-Activities indicating that a user performed an unusual number of file sharing actions from a cloud storage platform when compared to the baseline learned. This can indicate an attempt to gain information about the organization. Cloud App Security creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
+Activities indicating that a user performed an unusual number of file sharing actions from a cloud storage platform when compared to the baseline learned. This can indicate an attempt to gain information about the organization. Defender for Cloud Apps creates a baseline based on the user's behavior and triggers an alert when the unusual behavior is detected.
 
 **Learning period**
 
@@ -619,11 +662,11 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 ### Ransomware activity
 
-Ransomware is a cyberattack in which an attacker locks victims out of their devices or blocks them from accessing their files until the victim pays a ransom. Ransomware can be spread by a malicious shared file or compromised network. Cloud App Security uses security research expertise, threat intelligence, and learned behavioral patterns to identify ransomware activity. For example, a high rate of file uploads, or files deletions, may represent an encryption process that is common among ransomware operations.
+Ransomware is a cyberattack in which an attacker locks victims out of their devices or blocks them from accessing their files until the victim pays a ransom. Ransomware can be spread by a malicious shared file or compromised network. Defender for Cloud Apps uses security research expertise, threat intelligence, and learned behavioral patterns to identify ransomware activity. For example, a high rate of file uploads, or files deletions, may represent an encryption process that is common among ransomware operations.
 
 This detection establishes a baseline of the normal working patterns of each user in your organization, such as when the user accesses the cloud and what they commonly do in the cloud.
 
-Cloud App Security's automated threat detection policies start running in the background from the moment you connect. Using our security research expertise to identify behavioral patterns that reflect ransomware activity in our organization, Cloud App Security provides comprehensive coverage against sophisticated ransomware attacks.
+The Defender for Cloud Apps automated threat detection policies start running in the background from the moment you connect. Using our security research expertise to identify behavioral patterns that reflect ransomware activity in our organization, Defender for Cloud Apps provides comprehensive coverage against sophisticated ransomware attacks.
 
 **Learning period**
 
@@ -649,7 +692,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 ### Unusual file deletion activity (by user)
 
-Activities indicating that a user performed an unusual file deletion activity when compared to the baseline learned. This can indicate ransomware attack. For example, an attacker can encrypt a user's files and delete all the originals, leaving only the encrypted versions that can be used to coerce the victim to pay a ransom. Cloud App Security creates a baseline based on the user's normal behavior and triggers an alert when the unusual behavior is detected.
+Activities indicating that a user performed an unusual file deletion activity when compared to the baseline learned. This can indicate ransomware attack. For example, an attacker can encrypt a user's files and delete all the originals, leaving only the encrypted versions that can be used to coerce the victim to pay a ransom. Defender for Cloud Apps creates a baseline based on the user's normal behavior and triggers an alert when the unusual behavior is detected.
 
 **Learning period**
 
@@ -668,6 +711,34 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 1. Review the deletion activities and create a list of deleted files. If needed, recover the deleted files.
 1. Optionally, create a playbook using Power Automate to contact users and their managers to verify the activity.
+
+### Investigation priority score increase (preview)
+
+Anomalous activities and activities that triggered alerts are given scores based on severity, user impact, and behavioral analysis of the user. The analysis is done based on other users in the tenants.
+
+When there's a significant and anomalous increase in the investigation priority score of a certain user, the alert will be triggered.
+
+This alert enables detecting potential breaches that are characterized by activities that don't necessarily trigger specific alerts but accumulate to a suspicious behavior for the user.
+
+**Learning period**
+
+Establishing a new user's activity pattern requires an initial learning period of seven days, during which alerts aren't triggered for any score increase.
+
+**TP**, **B-TP**, or **FP**?
+
+1. **TP**: If you're able to confirm that the activities of the user aren't legitimate.
+  
+    **Recommended action**: Suspend the user, mark the user as compromised, and reset their password.
+
+1. **B-TP**: If you're able to confirm that user indeed significantly deviated from usual behavior, but there's no potential breach.
+
+1. **FP**  (Unusual behavior): If you're able to confirm that the user legitimately performed the unusual activities, or more activities than the established baseline.
+
+    **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all user activity and alerts for additional indicators of compromise.
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: List continuous report categories - Cloud Discovery API
-description: This article describes the list continuous report categories request in Cloud App Security's Cloud Discovery API.
-ms.date: 01/18/2021
+description: This article describes the list continuous report categories request in the Defender for Cloud Apps Cloud Discovery API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # List continuous report categories - Cloud Discovery API
@@ -35,7 +35,7 @@ POST api/v1/discovery/discovered_apps/categories/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/discovered_apps/categories/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/discovery/discovered_apps/categories/" -d '{
   "filters": {
     // some filters
   },

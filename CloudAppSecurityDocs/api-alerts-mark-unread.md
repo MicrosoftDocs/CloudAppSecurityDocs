@@ -1,7 +1,7 @@
 ---
 title: Mark as unread - Alerts API
-description: This article describes the mark as unread request in Cloud App Security's Alerts API.
-ms.date: 03/27/2020
+description: This article describes the mark as unread request in the Defender for Cloud Apps Alerts API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Mark as unread - Alerts API
@@ -29,7 +29,7 @@ POST /api/v1/alerts/<pk>/unread/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/unread/"
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/alerts/<pk>/unread/"
 ```
 
 [!INCLUDE [Open support ticket](includes/support.md)]

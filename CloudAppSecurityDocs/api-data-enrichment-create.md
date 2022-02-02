@@ -1,7 +1,7 @@
 ---
 title: Create IP address range - Data Enrichment API
-description: This article describes the create IP address range request in Cloud App Security's Data Enrichment API.
-ms.date: 12/13/2020
+description: This article describes the create IP address range request in the Defender for Cloud Apps Data Enrichment API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Create IP address range - Data Enrichment API
@@ -33,7 +33,7 @@ POST /api/v1/subnet/create_rule/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
+curl -XPOST -H "Authorization:Token <your_token_key>" -H "Content-Type: application/json" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/subnet/create_rule/" -d '{
   "name":"range name",
   "category":5,
   "organization":"Microsoft",

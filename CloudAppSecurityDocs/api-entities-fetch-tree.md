@@ -1,7 +1,7 @@
 ---
 title: Fetch entity tree - Entities API
-description: This article describes the fetch entity tree request in Cloud App Security's Entities API.
-ms.date: 03/27/2020
+description: This article describes the fetch entity tree request in the Defender for Cloud Apps Entities API.
+ms.date: 11/09/2021
 ms.topic: reference
 ---
 # Fetch entity tree - Entities API
@@ -32,7 +32,7 @@ GET /api/v1/entities/<pk>/retrieve_tree/
 Here is an example of the request.
 
 ```rest
-curl -XPOST -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/<pk>/retrieve_tree/"
+curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/v1/entities/<pk>/retrieve_tree/"
 ```
 
 ### Response
