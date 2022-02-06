@@ -19,6 +19,7 @@ The breadth of support for each app relies on the richness of its APIs. Use the 
 - [Protect Azure](protect-azure.md)
 - [Protect Box](protect-box.md)
 - [Protect Dropbox](protect-dropbox.md)
+- [Protect Egnyte](protect-egnyte.md)
 - [Protect GCP](protect-gcp.md)
 - [Protect GitHub Enterprise Cloud](protect-github.md)
 - [Protect Google Workspace](protect-google-workspace.md)
