@@ -13,7 +13,7 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 ## Prerequisites
 
 - Microsoft Defender for Cloud Apps license
-- Microsoft Defender for Endpoint license
+- Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
 - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
 - Microsoft Defender Antivirus
   - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
@@ -47,7 +47,7 @@ Use the following steps to enable access control for cloud apps:
 >[!NOTE]
 > **Prerequisite**: Opt in to the public preview feature in Microsoft Defender for Endpoint. For more information, see [Microsoft Defender for Endpoint preview features](/microsoft-365/security/defender-endpoint/preview).
 
-Admins have the option to warn users when they access risky apps. Rather than blocking users, they are prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provides options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
+Admins have the option to warn users when they access risky apps. Rather than blocking users, they're prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provides options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
 
 ### How does it work
 
@@ -57,7 +57,7 @@ Apps marked as **Monitored** are automatically synced to Defender for Endpoint's
 
 ### Setting up the custom redirect URL for the warn message
 
-Use the following steps to configure a custom URL pointing to a company web page where you can educate employees on why they have been warned and provide a list of alternative approved apps that adhere to your organization's risk acceptance or are already managed by the organization.
+Use the following steps to configure a custom URL pointing to a company web page where you can educate employees on why they've been warned and provide a list of alternative approved apps that adhere to your organization's risk acceptance or are already managed by the organization.
 
 1. In Defender for Cloud Apps, under the settings cog, select **Settings**, and under **Cloud Discovery** select **Microsoft Defender for Endpoint**.
 1. In the **Notification URL** box, enter your URL.
