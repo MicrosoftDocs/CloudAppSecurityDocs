@@ -14,7 +14,7 @@ This article describes what you should do with Defender for Cloud Apps daily.
 
 The information presented in the dashboard is an overview of all the most important information about your organization. Each information card provides links to a deeper investigation of the information presented. You can also choose to view the dashboard information for a specific app using the filter provided.
 
-![Defender for Cloud Apps dashboard.](media/dashboard-enhanced.png)
+[![Defender for Cloud Apps dashboard.](media/dashboard-enhanced.png)](media/dashboard-enhanced.png#lightbox)
 
 ### What can you expect to see in the dashboard?
 
