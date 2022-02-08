@@ -23,8 +23,9 @@ The final step is adding integration with Defender for Cloud Apps:
 
 Prerequisites:
 
-- Office 365 is connected in Defender for Cloud Apps
-- Office 365 Azure AD apps are enabled
+- Office 365 is connected in Defender for Cloud Apps.
+- Office 365 Azure AD apps are enabled.
+- You're a Global Admin, Company Admin, or Billing Admin.
 
 To enable app governance sync with Defender for Cloud Apps, follow these steps:
 
