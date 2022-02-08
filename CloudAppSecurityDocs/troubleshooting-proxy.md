@@ -445,9 +445,13 @@ To record a session, follow these steps:
 
     ![Select Stop recording.](media/stop-recording.png)
 
-1. After you've finish recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear. Each recorded session can be downloaded or deleted.
+1. After you've finish recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
     ![List of session recordings.](media/session-recordings.png)
+
+1. Each recorded session can be downloaded or deleted.
+
+    ![Download or delete recording.](media/download-delete-recording.png)
 
 ## Issues experienced by end users
 
