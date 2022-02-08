@@ -10,7 +10,7 @@ ms.topic: article
 
 As an identity and access management solution, Okta holds the keys to your organizations most business critical services. Okta manages the authentication and authorization processes for your users and customers. Any abuse of Okta by a malicious actor or any human error may expose your most critical assets and services to potential attacks.
 
-Connecting Okta to Defender for Cloud Apps gives you improved insights into your Okta admin activities, managed users, and customer sigh ins and provides threat detection for anomalous behavior.
+Connecting Okta to Defender for Cloud Apps gives you improved insights into your Okta admin activities, managed users, and customer sign-ins and provides threat detection for anomalous behavior.
 
 ## Main threats
 
