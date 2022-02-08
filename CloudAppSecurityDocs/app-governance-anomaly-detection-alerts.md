@@ -50,6 +50,32 @@ Use the following general guidelines when investigating any type of alert to gai
 
 This section describes alerts indicating that a malicious app may be attempting to maintain their foothold in your organization.  
 
+### OAuth App with suspicious Reply URL
+
+**Severity**: Medium
+
+This detection identifies an OAuth app accessed a suspicious Reply URL through the Microsoft Graph API.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the OAuth app is delivered from an unknown source, and redirects to a suspicious URL, then a true positive is indicated.
+
+  **Recommended action**: Review the Reply URL, domains and scopes requested by the app. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users are granted access.
+
+  To ban access to the app, go to thee OAuth apps page. On the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled, and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the apps that are created recently and their Reply URLs.
+
+1. Review all activities done by the app.  
+
+1. Review the scopes granted by the app.  
+
 ### App created recently has low consent rate
 
 **Severity**: Low
@@ -452,4 +478,4 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review all activities done by the app.  
 1. Review the scopes granted by the app.  
 1. Review any inbox rule action created by the app.  
-1. Review any high importance email read activity done by the app. 
+1. Review any high importance email read activity done by the app.
