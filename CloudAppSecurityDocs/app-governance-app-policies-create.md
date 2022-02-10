@@ -112,6 +112,7 @@ Use a custom app policy when you need to do something not already done by one of
     |Data usage trend|X % increase in data usage compared to previous day||
     |API access|Greater than X API calls per day||
     |API access trend|X % increase in API calls compared to previous day||
+    |Number of consenting users|(Greater than or Less than) X consented users||
     |Increase in consenting users|X % increase in users in the last 90 days||
     |Priority account consent given|Yes or No|A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
     |Names of consenting users|Select users from list||
