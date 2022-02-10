@@ -35,7 +35,7 @@ App governance includes these templates to generate alerts for app usage.
 
 ****
 
-- |Template name|Description|
+  |Template name|Description|
   |---|---|
   |New app with high data usage|Find newly registered apps that have uploaded or downloaded large amounts of data. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Data access: Greater than 1 GB in one day (customizable)|
   |Increase in users|Find apps with a sizable increase in the number of users. This policy checks the following conditions:<br /><br /> <li> Time range: Last 90 days<br /> <li> Increase in consenting users: At least 50% (customizable)|
