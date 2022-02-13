@@ -58,7 +58,7 @@ This detection identifies an OAuth app accessed a suspicious Reply URL through t
 
 **TP or FP?**
 
-- **TP**: If you can confirm that the OAuth app is delivered from an unknown source, and redirects to a suspicious URL, then a true positive is indicated.
+- **TP**: If you can confirm that the OAuth app is delivered from an unknown source, and redirects to a suspicious URL, then a true positive is indicated. A suspicious URL is one where the reputation of the URL is unknown, not trusted, or whose domain was recently registered and the app request is for a high privilege scope.
 
   **Recommended action**: Review the Reply URL, domains and scopes requested by the app. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users are granted access.
 
