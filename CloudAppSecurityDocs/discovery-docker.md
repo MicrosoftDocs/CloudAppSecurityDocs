@@ -22,7 +22,7 @@ Before setting up automatic log file collection, verify your log matches the exp
 
 ## Deployment modes
 
-The Log Collector supports the **Container** deployment mode. It runs as a Docker image on [Windows](discovery-docker-windows.md), [Ubuntu on premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md), [RHEL on premises](discovery-docker-ubuntu.md) or CentOS.
+The Log Collector supports the **Container** deployment mode. It runs as a Docker image on [Windows](discovery-docker-windows.md), [Ubuntu on-premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md), [RHEL on-premises](discovery-docker-ubuntu.md) or CentOS.
 
 ## Next steps
 
