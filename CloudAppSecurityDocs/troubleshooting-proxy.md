@@ -334,7 +334,7 @@ When creating an access or session policy, you may see the following error messa
 1. If you see the message **No apps connected**, use the following guide to deploy apps:
 
     - [Deploy featured apps that have session control enabled](proxy-deployment-aad.md)
-    - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
+    - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
 1. If you run into any issues while deploying the app, see [Onboarding an app](#onboarding-an-app).
 
 #### Cannot create session policies for an app
@@ -346,7 +346,7 @@ After adding a custom app, in the **Conditional Access App Control apps** page, 
 
 **Recommended steps**
 
-1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
+1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 1. Create a session policy, select the **App** filter, make sure that your app is now listed in the dropdown list.
 
 #### Cannot choose **Inspection Method**: **Data Classification Service**
