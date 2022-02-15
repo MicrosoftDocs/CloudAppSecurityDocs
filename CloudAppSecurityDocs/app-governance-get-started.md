@@ -101,7 +101,7 @@ For more information about each role, see [Administrator role permissions](/azur
 
 ## Canceling your trial
 
-If you would like to cancel your trial of app governance, you can communicate with your CXE contact, or use these steps:
+If you would like to cancel your trial of app governance, use these steps:
 
 1. In the Microsoft 365 admin center, go to **Billing** > [Your products](https://go.microsoft.com/fwlink/p/?linkid=842054).
 1. Navigate to the app governance trial, select the three dots, and select **Cancel subscription**.
