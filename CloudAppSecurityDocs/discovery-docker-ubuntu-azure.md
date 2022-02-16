@@ -13,7 +13,7 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 ## Prerequisites
 
 * OS:
-  * Ubuntu 14.04, 16.04, and 18.04
+  * Ubuntu 14.04, 16.04, 18.04, and 20.04
   * RHEL 7.2 or higher
   * CentOS 7.2 or higher
 
