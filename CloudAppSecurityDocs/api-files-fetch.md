@@ -10,7 +10,6 @@ ms.topic: reference
 
 > [!NOTE]
 >
-> - This API will soon be deprecated. Microsoft Defender for Cloud Apps is developing a new solution for identifying and acting upon files that violate policies.
 > - This API is not available for Office 365 Cloud App Security.
 
 Run the GET request to fetch the file matching the specified primary key.
