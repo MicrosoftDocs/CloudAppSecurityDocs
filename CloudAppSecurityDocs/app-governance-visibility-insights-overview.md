@@ -43,8 +43,6 @@ With app governance, you can see:
 - Policies created in Defender for Cloud Apps in the app governance portal.
 -->
 
-- Alerts for OAuth apps generated in Defender for Cloud Apps, in the app governance portal.
-
 You can also:
 
 - Drill down to a single app (app page) with all its associated insights.
