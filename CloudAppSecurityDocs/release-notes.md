@@ -29,7 +29,7 @@ For more information on what's new with other Microsoft Defender security produc
 February 20, 2022
 
 - **Egnyte app connector available in public preview**  
-A new app connector for Atlassian is available in public preview. You can now connect Microsoft Defender for Cloud Apps to Atlassian to monitor and protect users and activities. For more information, see [Connect Egnyte to Microsoft Defender for Cloud Apps (Preview)](connect-egnyte.md).
+A new app connector for Egnyte is available in public preview. You can now connect Microsoft Defender for Cloud Apps to Atlassian to monitor and protect users and activities. For more information, see [Connect Egnyte to Microsoft Defender for Cloud Apps (Preview)](connect-egnyte.md).
 
 ## Defender for Cloud Apps release 220
 
