@@ -24,7 +24,7 @@ The table lists each content inspection status and its description.
 |Failed: File is corrupted|The file is corrupted in some way and couldn't be inspected.|
 |Failed: Internal error|Something undetermined went wrong when trying to inspect the file.|
 |Failed: External DLP error|Something in your external DLP went wrong causing Defender for Cloud Apps to fail inspecting the content.|
-|Failed: File size exceeded|The file exceeded the maximum file size of 50 MB.|
+|Failed: File size exceeded|The file exceeded the maximum file size of 30 MB.|
 |Failed: File is too long and was partially scanned|The file exceeded the maximum of 1 million characters. For the part of the content that was scanned, relevant policy matches were applied.|
 |Failed: File access denied|The file is external to your cloud and couldn't be accessed by Defender for Cloud Apps.|
 |Failed: File was deleted|The file no longer exists in your cloud and couldn't be inspected.|

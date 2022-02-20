@@ -99,7 +99,7 @@ To ignore sensitivity labels set external to your organization, in the [Defender
     ![Apply sensitivity label.](media/protect-app.png)
 
     >[!NOTE]
-    > Defender for Cloud Apps can apply Microsoft Information Protection on files that are up to 50 MB.
+    > Defender for Cloud Apps can apply Microsoft Information Protection on files that are up to 30 MB.
 
 2. Choose one of your organization's sensitivity labels to apply to the file, and select **Apply**.
 
