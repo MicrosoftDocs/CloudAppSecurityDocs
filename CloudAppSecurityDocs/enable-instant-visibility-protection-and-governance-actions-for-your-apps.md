@@ -55,6 +55,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| DocuSign (Preview) | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
@@ -80,6 +81,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |
 | Azure             |                                      |                           | Not supported by provider |
 | Box               | ✔                                    | Not supported by provider |                           |
+| DocuSign (Preview) |  |  | |
 | Dropbox           |                                      |                           |                            |
 | Egnyte (Preview) | | | |
 | GitHub            |                                      | ✔                         |                           |
@@ -105,6 +107,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| DocuSign (Preview) |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
 | Egnyte (Preview) |  |  |  |  | |
 | GitHub            |                           |                                          |                           |                           |                                            |
