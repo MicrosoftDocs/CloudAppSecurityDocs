@@ -24,6 +24,9 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Activity type - Search for the app activity.
 
+  > [!NOTE]
+  > Apps are added to the filter only if there is activity for that app.
+
 - Administrative activity – Search only for administrative activities.
 
   >[!NOTE]
