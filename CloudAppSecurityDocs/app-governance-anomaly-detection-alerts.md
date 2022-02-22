@@ -50,6 +50,27 @@ Use the following general guidelines when investigating any type of alert to gai
 
 This section describes alerts indicating that a malicious app may be attempting to maintain their foothold in your organization.  
 
+### App redirects to phishing URL by exploiting OAuth redirection vulnerability
+
+**Severity**: Medium
+
+This detection identifies OAuth apps redirecting to phishing URLs by exploiting the response type parameter in OAuth implementation through the Microsoft Graph API.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the OAuth app was delivered from an unknown source, the response type of the reply URL after consenting to the OAuth app contains an invalid request, and redirects to an unknown or untrusted reply URL.  
+
+  **Recommended action**: Disable and remove the app, reset the password, and remove the inbox rule.  
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all activities done by the app.  
+1. Review the scopes granted by the app.  
+
 ### OAuth App with suspicious Reply URL
 
 **Severity**: Medium
@@ -382,6 +403,29 @@ This detection identifies a large volume of suspicious enumeration activities pe
 
 This section describes alerts indicating that a malicious actor may be attempting to gather data of interest to their goal from your organization.
 
+### App made unusual email search activities
+
+**Severity**: Medium
+
+**MITRE ID**: T1114
+
+This detection identifies when an app consented to suspicious OAuth scope and made a high volume of unusual email search activities, such as email search for specific content through the Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to search and read specific email from your organization through Graph API.  
+
+**TP or FP?**
+
+- **TP**: If you can confirm a high volume of unusual email search and read activities through the Graph API by an OAuth app with a suspicious OAuth scope and that the app is delivered from unknown source.
+
+  **Recommended actions**: Disable and remove the app, reset the password, and remove the inbox rule.  
+
+- **FP**: If you can confirm the app has performed high volume of unusual email search and read through Graph API for legitimate reasons.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the scopes granted by the app.
+1. Review all activities done by the app.  
+
 ### App made anomalous Graph calls to read e-mail
 
 **Severity**: Medium
@@ -394,7 +438,7 @@ This detection identifies when Line of Business (LOB) OAuth App accesses an unus
 
 - **TP**: If you can confirm that the unusual graph activity was performed by the Line of Business (LOB) OAuth App, then a true positive is indicated.
 
-  **Recommend actions**: Temporarily disable the app and reset the password and then re-enable the app. Follow the tutorial on how to Reset a password using Azure Active Directory.
+  **Recommended actions**: Temporarily disable the app and reset the password and then re-enable the app. Follow the tutorial on how to Reset a password using Azure Active Directory.
 
 - **FP**: If you can confirm that the app is intended to do unusually high volume of graph calls.
 
