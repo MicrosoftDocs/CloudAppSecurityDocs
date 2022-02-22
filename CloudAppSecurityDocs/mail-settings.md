@@ -17,16 +17,16 @@ This article provides information about how to personalize the email notificatio
 
  Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
-1. In the menu bar, click the settings cog, select **Settings**, and then select the **Mail settings** tab.
+1. In the menu bar, select the settings cog, select **Settings**, and then select the **Mail settings** tab.
 
     ![mail settings.](media/mail-settings-config.png)
 
-2. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Defender for Cloud Apps accomplishes the customization by using a third-party mail service called MailChimp&reg;. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Defender for Cloud Apps will send the notifications using the default settings.
+1. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Defender for Cloud Apps accomplishes the customization by using a third-party mail service called MailChimp&reg;. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Defender for Cloud Apps will send the notifications using the default settings.
 
     > [!NOTE]
     > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](https://datatracker.ietf.org/doc/html/rfc822).
 
-3. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following things:
+1. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following things:
 
     - All template CSS files should be inline in the template.
 
@@ -38,9 +38,9 @@ This article provides information about how to personalize the email notificatio
 
         - **%%content%%** - Placeholder for the content that will be included for end users, as set by the policy.
 
-4. Click **Upload a template...** and select the file you created.
+1. Select **Upload a template...** and select the file you created.
 
-5. Click **Send a test email** to email yourself an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email, you'll see and verify the following items:
+1. Select **Send a test email** to email yourself an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email, you'll see and verify the following items:
     - The metadata fields
     - The template
     - The email subject

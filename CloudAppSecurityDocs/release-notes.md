@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 01/23/2022
+ms.date: 02/20/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -12,7 +12,7 @@ ms.topic: overview
 
 This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Microsoft+Defender+for+Cloud+Apps%22&locale=en-us&facet=`
 
 > [!NOTE]
 >
@@ -23,6 +23,20 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+## Defender for Cloud Apps release 221
+
+February 20, 2022
+
+- **Egnyte app connector available in public preview**  
+A new app connector for Egnyte is available in public preview. You can now connect Microsoft Defender for Cloud Apps to Atlassian to monitor and protect users and activities. For more information, see [Connect Egnyte to Microsoft Defender for Cloud Apps (Preview)](connect-egnyte.md).
+
+## Defender for Cloud Apps release 220
+
+February 6, 2022
+
+- **New Cloud discovery log collector**  
+The Cloud Discovery log collector has been updated to Ubuntu 20.04. To install it, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
 ## Defender for Cloud Apps release 218 and 219
 

@@ -124,7 +124,7 @@ Recommended task: Deploy Conditional Access App Control for featured apps
     1. Refresh the **Conditional Access App Control** page and to view the app.
 1. Verify the apps are configured to use access and session controls
 
-To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premise apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
+To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premises apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
 **Migration recommendation**  
 Using Conditional Access App Control in parallel with another CASB solution can potentially lead to an app being proxied twice, causing latency or other errors. Therefore, we recommended progressively migrating apps and policies to Conditional Access App Control, creating the relevant session or access policies in  Defender for Cloud Apps as you go.

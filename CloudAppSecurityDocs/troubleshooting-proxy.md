@@ -334,7 +334,7 @@ When creating an access or session policy, you may see the following error messa
 1. If you see the message **No apps connected**, use the following guide to deploy apps:
 
     - [Deploy featured apps that have session control enabled](proxy-deployment-aad.md)
-    - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
+    - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
 1. If you run into any issues while deploying the app, see [Onboarding an app](#onboarding-an-app).
 
 #### Cannot create session policies for an app
@@ -346,7 +346,7 @@ After adding a custom app, in the **Conditional Access App Control apps** page, 
 
 **Recommended steps**
 
-1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
+1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 1. Create a session policy, select the **App** filter, make sure that your app is now listed in the dropdown list.
 
 #### Cannot choose **Inspection Method**: **Data Classification Service**
@@ -388,6 +388,70 @@ While troubleshooting onboarding apps, there are some additional things to consi
 - **Understanding the "Mobile and desktop" client app filter option in access policies**
 
     In Defender for Cloud Apps access policies, unless the **Client app** filter is specifically set to **Mobile and desktop**, the resulting access policy will only apply to browser sessions. The reason for this, is to prevent inadvertently proxying user sessions, which may be a byproduct of using this filter.
+
+## Admin View toolbar
+
+The Admin View toolbar provides tools for an admin to diagnose and troubleshoot issues with Conditional Access App Control.
+
+To enable the Admin View toolbar for specific admin users, you first must add admins to the app onboarding/maintenance list.
+
+1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4](media/settings-icon.png "settings icon 4") and select **Settings**.
+
+1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
+
+1. Enter the user principal name or email address for the admin users that will be onboarding the app.
+1. Check the box for **Enable these users to bypass Conditional Access App Control from inside a proxied session**.
+1. Select **Save**.
+
+    ![App onboarding/maintenance settings.](media/app-onboarding-maintenance.png)
+
+When those users next start a session of an application, the Admin View toolbar will be available.
+
+### Bypass proxy session
+
+If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It will appear for users who have the [Admin View toolbar](#admin-view-toolbar) enabled.
+
+Once you select **Bypass session**, the application will run without the Conditional Access proxy.
+
+![Bypass session.](media/bypass-session.png)
+
+You can confirm the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
+
+In the next session of the application, the Conditional Access proxy will be used.
+
+### Session recording
+
+You can help the root cause analysis of problems by providing session recordings to Microsoft support engineers. To record a session, you must enable the [Admin View toolbar](#admin-view-toolbar).
+
+> [!NOTE]
+> All personal data is removed from the recordings.
+
+To record a session, follow these steps:
+
+1. From the Admin View toolbar, select **Record session**.
+
+    ![Select Record session.](media/record-session.png)
+
+1. After selecting **Record session**, accept the terms by selecting **Continue** in the next window:
+
+    ![Select continue to accept.](media/accept-continue.png)
+
+1. You can also start recording when signing in to the application. To do so, select **Record session** when this window appears:
+
+    ![Select Record session from window.](media/app-monitored.png)
+
+1. Sign in to the application to begin the scenario simulation.
+1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar.
+
+    ![Select Stop recording.](media/stop-recording.png)
+
+1. After you've finish recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
+
+    ![List of session recordings.](media/session-recordings.png)
+
+1. Each recorded session can be downloaded or deleted.
+
+    ![Download or delete recording.](media/download-delete-recording.png)
 
 ## Issues experienced by end users
 
@@ -455,6 +519,9 @@ Sometimes during a proxied session, the **Something Went Wrong** page may appear
 ### Clipboard actions or file controls are not being blocked
 
 The ability to block clipboard actions such as cut, copy, paste, and file controls such as download, upload, and print is required to prevent data exfiltration and infiltration scenarios. This ability enables companies to balance security and productivity for end users. If you are experiencing problems with these features, use the following steps to investigate the issue.
+
+> [!NOTE]
+> Cut, copy, and paste aren't blocked for data within the same Excel document. Only copying to external locations is blocked.
 
 **Recommended steps**
 

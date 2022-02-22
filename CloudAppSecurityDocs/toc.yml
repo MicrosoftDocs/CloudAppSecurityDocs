@@ -74,8 +74,12 @@ items:
       href: protect-azure.md
     - name: Protect Box
       href: protect-box.md
+    - name: Protect DocuSign (Preview)
+      href: protect-docusign.md
     - name: Protect Dropbox
       href: protect-dropbox.md
+    - name: Protect Egnyte (Preview)
+      href: protect-egnyte.md
     - name: Protect GitHub
       href: protect-github.md
     - name: Protect GCP
@@ -222,8 +226,12 @@ items:
       href: ./connect-aws.md
     - name: Connect Box
       href: ./connect-box.md
+    - name: Connect DocuSign (Preview)
+      href: ./connect-docusign.md
     - name: Connect Dropbox
       href: ./connect-dropbox.md
+    - name: Connect Egnyte (Preview)
+      href: ./connect-egnyte.md
     - name: Connect GitHub
       href: ./connect-github-ec.md
     - name: Connect Google Workspace
