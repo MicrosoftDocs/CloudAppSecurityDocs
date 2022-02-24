@@ -24,13 +24,13 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
 - Excluded user groups override included user groups. Meaning that if you include the user group "UK-employees" but exclude "Marketing", marketing members from the UK won't be monitored even if they're members of the group **UK-employees**.
 
-1. In the menu bar, click the settings cog and select **Scoped deployment**.
+1. In the menu bar, select the settings cog and select **Scoped deployment**.
 
     ![settings icon.](media/settings-icon.png "settings icon")
 
 2. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Defender for Cloud Apps.
 
-3. To set specific groups to be monitored by Microsoft Defender for Cloud Apps, in the **Include** tab, click the plus icon.
+3. To set specific groups to be monitored by Microsoft Defender for Cloud Apps, in the **Include** tab, select the plus icon.
     ![icon.](media/plus-icon.png)
 
 4. In the **Create new include rule** dialog, do the following steps:
@@ -41,7 +41,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
         ![include rule.](media/include-rule.png)
 
-5. To set specific groups to be excluded from monitoring, in the **Exclude** tab, click the plus icon.
+5. To set specific groups to be excluded from monitoring, in the **Exclude** tab, select the plus icon.
 
    ![icon.](media/plus-icon.png)
 
