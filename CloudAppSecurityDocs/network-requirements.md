@@ -104,19 +104,19 @@ Additionally, the following items should be allowed:
 
 For **US Government GCC High** customers:
 
-|IP addresses|DNS name|
-|----|----|
-|US Gov Arizona: 52.244.144.65, 52.244.43.90, 52.244.43.225, 52.244.215.117<br /><br />US Gov Virginia: 13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222|\*.mcas-gov.us<br/>\*.admin-mcas-gov.us|
-|US Gov Arizona: 52.244.215.83, 52.244.212.197<br /><br />US Gov Virginia: 13.72.27.216, 13.72.27.215|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
-|US Gov Arizona: 20.140.49.129<br /><br />US Gov Virginia: 52.227.216.80|\*.saml.cloudappsecurity.us|
+||IP addresses|DNS name|
+|----|----|----|
+|**Session controls**|US Gov Arizona: 52.244.144.65, 52.244.43.90, 52.244.43.225, 52.244.215.117<br /><br />US Gov Virginia: 13.72.27.223, 13.72.27.219, 13.72.27.220, 13.72.27.222|\*.mcas-gov.us<br/>\*.admin-mcas-gov.us|
+|**Access controls**|US Gov Arizona: 52.244.215.83, 52.244.212.197<br /><br />US Gov Virginia: 13.72.27.216, 13.72.27.215|\*.access.mcas-gov.us<br/>\*.access.cloudappsecurity.us|
+|**SAML proxy**|US Gov Arizona: 20.140.49.129<br /><br />US Gov Virginia: 52.227.216.80|\*.saml.cloudappsecurity.us|
 
 For **US Government GCC** customers:
 
-|IP addresses|DNS name|
-|----|----|
-|US Gov Virginia: 52.245.225.0, 52.245.224.229, 52.245.224.234, 52.245.224.228| \*.mcas-gov.ms<br/>\*.admin-mcas-gov.ms|
-|US Gov Virginia: 52.245.224.235, 52.245.224.227 | \*.access.mcas-gov.ms|
-|US Gov Virginia: 52.227.216.80 | \*.saml.cloudappsecuritygov.com|
+||IP addresses|DNS name|
+|----|----|----|
+|**Session controls**|US Gov Virginia: 52.245.225.0, 52.245.224.229, 52.245.224.234, 52.245.224.228| \*.mcas-gov.ms<br/>\*.admin-mcas-gov.ms|
+|**Access controls** |US Gov Virginia: 52.245.224.235, 52.245.224.227 | \*.access.mcas-gov.ms|
+|**SAML proxy** |US Gov Virginia: 52.227.216.80 | \*.saml.cloudappsecuritygov.com|
 
 ## SIEM agent connection
 
