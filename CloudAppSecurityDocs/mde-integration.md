@@ -12,7 +12,7 @@ Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Endpoin
 
 Defender for Cloud Apps uses the traffic information collected by Defender for Endpoint about the cloud apps and services being accessed from IT-managed Windows 10 devices. The native integration enables you to run Cloud Discovery on any device in the corporate network, using public Wi-Fi, while roaming, and over remote access. It also enables device-based investigation.
 
-The integration doesn't require any additional deployment and works out of the box. You don't need to route or mirror traffic from your endpoints or do complex integration steps. Logs from your endpoints sent to Defender for Cloud Apps provide user information for traffic activities. Defender for Endpoint network activity provides device context. Pairing device context with the username provides a full picture across your network enabling you to determine which user did which activity from which device.
+The integration doesn't require any additional deployment and can be enabled directly from the settings in Defender for Cloud Apps and Microsoft 365 Defender. You don't need to route or mirror traffic from your endpoints or do complex integration steps. Logs from your endpoints sent to Defender for Cloud Apps provide user information for traffic activities. Defender for Endpoint network activity provides device context. Pairing device context with the username provides a full picture across your network enabling you to determine which user did which activity from which device.
 
 Additionally, when you identify a risky user, you can check all the devices the user accessed to detect potential risks. If you identify a risky device, check all the users who used it to detect further potential risks.
 
