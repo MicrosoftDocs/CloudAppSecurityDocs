@@ -17,7 +17,7 @@ To get started using the app governance add-on to Defender for Cloud Apps, start
 
 For existing Defender for Cloud Apps customers, you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add app governance to your tenant.
 
-If you aren't already a Defender for Cloud Apps customer, you can sign up for a free trial by navigating to the [sign up page for the free trial](https://www.microsoft.com/security/business/cloud-apps-defender) and complete the steps for sign-up. Then, navigate to the [sign up page for the free trial for app governance](https://aka.ms/appgovernancetrial) and complete the steps to add a free trial of app governance to your tenant.
+If you aren't already a Defender for Cloud Apps customer, you can sign up for a free trial by navigating to the [sign up page for the free trial for app governance](https://aka.ms/appgovernancetrial) and completing the steps to add a free trial of app governance to your tenant. Then navigate to the [sign up page for the free trial for Defender for Cloud Apps](https://www.microsoft.com/security/business/cloud-apps-defender) and complete the steps for sign-up.
 
 The final step is adding integration with Defender for Cloud Apps:
 
@@ -49,7 +49,7 @@ To purchase a subscription of app governance, reach out to your sales account te
 
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Defender for Cloud Apps, and so Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
-1. Your organization's billing address must be in a WW region or in GBR, CAN, JPN, or AUS go-local region to activate the free trial.
+1. To activate the free trial, your organization's billing address can be in any regions except  Brazil, South Korea, Switzerland, Norway, South Africa, United Arab Emirates, Cuba, North Korea, Iran, Syria, and Sudan.
 
 ### Licensing for app governance
 
