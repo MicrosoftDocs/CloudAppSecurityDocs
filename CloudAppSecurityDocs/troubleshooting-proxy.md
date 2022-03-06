@@ -195,15 +195,15 @@ While troubleshooting device identification, there are some additional things to
 
 You can onboard the following types of apps for access and session controls:
 
-- Featured apps: Apps that come with session controls out-of-the-box as indicated by the **Session control** label
+- Catalog apps: Apps that come with session controls out-of-the-box as indicated by the **Session control** label
 
 - Any (custom) apps: Custom line-of-business (LOB) or on-premises apps can be onboarded to session controls by an admin
 
-![Proxy list showing featured and any (custom) apps.](media/troubleshooting-onboarding.png)
+![Proxy list showing catalog and any (custom) apps.](media/troubleshooting-onboarding.png)
 
 When onboarding an app, it is crucial to make sure that you follow each step in the proxy deployment guides:
 
-1. [Deploy featured apps with session controls](proxy-deployment-aad.md)
+1. [Deploy catalog apps with session controls](proxy-deployment-aad.md)
 1. [Deploy custom LOB apps, non-featured SaaS apps, and on-premises apps hosted via the Azure AD app proxy with session controls](proxy-deployment-any-app.md)
 
 Common scenarios you may encounter while onboarding an app include:
@@ -272,7 +272,7 @@ Defender for Cloud Apps can recognize over 25,000 apps through the Cloud App Cat
 
 #### Request session control option appears
 
-After adding an app, you may see the **Request session control** option. This occurs because only featured apps have out-of-the-box session controls. For any other app, you must go through a self-onboarding process.
+After adding an app, you may see the **Request session control** option. This occurs because only catalog apps have out-of-the-box session controls. For any other app, you must go through a self-onboarding process.
 
 **Recommended steps**
 
@@ -333,7 +333,7 @@ When creating an access or session policy, you may see the following error messa
 1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
 1. If you see the message **No apps connected**, use the following guide to deploy apps:
 
-    - [Deploy featured apps that have session control enabled](proxy-deployment-aad.md)
+    - [Deploy catalog apps that have session control enabled](proxy-deployment-aad.md)
     - [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls
 1. If you run into any issues while deploying the app, see [Onboarding an app](#onboarding-an-app).
 
@@ -342,7 +342,7 @@ When creating an access or session policy, you may see the following error messa
 After adding a custom app, in the **Conditional Access App Control apps** page, you may see the option: **Request session control**.
 
 > [!NOTE]
-> [Featured apps](proxy-intro-aad.md#session-controls) have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process.
+> [Catalog apps](proxy-intro-aad.md#session-controls) have out-of-the-box session controls. For any other apps, you must go through a self-onboarding process.
 
 **Recommended steps**
 

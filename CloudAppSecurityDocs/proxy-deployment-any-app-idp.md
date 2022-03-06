@@ -228,7 +228,7 @@ Once you're ready to enable the app for use in your organization's production en
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [« PREVIOUS: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+> [« PREVIOUS: Deploy Conditional Access App Control for catalog apps](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [NEXT: How to create a session policy »](session-policy-aad.md)

@@ -1,7 +1,7 @@
 ---
 title: Protect with Microsoft Defender for Cloud Apps Conditional Access App Control
 description: This article provides information about how the Defender for Cloud Apps Conditional Access App Control reverse proxy works.
-ms.date: 11/09/2021
+ms.date: 03/06/2022
 ms.topic: conceptual
 ---
 # Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control
@@ -129,49 +129,44 @@ While session controls are built to work with any browser on any major platform 
 > - Defender for Cloud Apps uses Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
 > - To apply session controls to portal.office.com, you must onboard Microsoft 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
-#### Featured apps
+#### Pre-onboarded apps
 
-Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls:
+Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls for Azure Access Directory.
+
+> [!NOTE]
+> It's required to route your desired applications to access and session controls, and to perform a first login.
 
 - AWS
-- Azure DevOps (Visual Studio Team Services)
-- Azure portal
 - Box
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
-- Dynamics 365 CRM (preview)
 - Egnyte
-- Exchange Online
 - GitHub
 - Google Workspace
 - HighQ
 - JIRA/Confluence
-- OneDrive for Business
 - LinkedIn Learning
-- Power BI
+- Microsoft Azure DevOps (Visual Studio Team Services)
+- Microsoft Azure portal
+- Microsoft Dynamics 365 CRM
+- Microsoft Exchange Online
+- Microsoft Forms
+- Microsoft Office Online
+- Microsoft Office Portal
+- Microsoft OneDrive for Business
+- Microsoft Power BI
+- Microsoft SharePoint Online
+- Microsoft Teams
+- Microsoft Yammer
 - Salesforce
 - ServiceNow
-- SharePoint Online
 - Slack
 - Tableau
-- Microsoft Teams (preview)
 - Workday
 - Workiva
 - Workplace by Facebook
-- Yammer (preview)
-
-### <a name="O365-apps"></a>Office 365 Cloud App Security featured apps
-
-The following is a list of featured apps that are supported in [Office 365 Cloud App Security](editions-cloud-app-security-o365.md).
-
-- Exchange Online
-- OneDrive for Business
-- Power BI
-- SharePoint Online
-- Microsoft Teams (preview)
-- Yammer (preview)
 
 If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
 
@@ -189,12 +184,20 @@ It's possible to bypass the defined session policy by modifying parameters. For 
 - **Browser plug-in limitation**  
 Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
 
+**Applications may break**  
+In the following applications, we've encountered scenarios where the application may break:
+
+- Microsoft Power BI
+- Microsoft Dynamics 365 CRM
+- Microsoft Power Apps
+- ArcGIS
+
 ## Next steps
 
 For instructions on how to onboard your apps, see the appropriate document below:
 
-- [Deploy Conditional Access App Control for featured apps with Azure AD](proxy-deployment-aad.md)
-- [Deploy Conditional Access App Control for featured apps with non-Microsoft IdP](proxy-deployment-featured-idp.md)
+- [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md)
+- [Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP](proxy-deployment-featured-idp.md)
 - [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md)
 - [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md)
 
