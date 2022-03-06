@@ -168,7 +168,7 @@ Any web app configured using the [previously mentioned authentication protocols]
 - Workiva
 - Workplace by Facebook
 
-If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
+If you're interested in a specific app being pre-onboarded, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
 
 ## Known limitations
 
