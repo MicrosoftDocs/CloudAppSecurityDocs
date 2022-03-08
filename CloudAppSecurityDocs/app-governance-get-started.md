@@ -102,12 +102,3 @@ To verify the integration with Defender for Cloud Apps is active, look for the a
 
 > [!NOTE]
 > App governance alerts will not flow to Microsoft 365 Defender until app governance is enabled in Defender for Cloud Apps and you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
-
-## Canceling your trial
-
-If you would like to cancel your trial of app governance, use these steps:
-
-1. In the Microsoft 365 admin center, go to **Billing** > [Your products](https://go.microsoft.com/fwlink/p/?linkid=842054).
-1. Navigate to the app governance trial, select the three dots, and select **Cancel subscription**.
-1. In the resulting fly-out pane, provide a reason for cancellation, any additional feedback, and select **Cancel subscription**.
-1. Select **Cancel subscription** in the resulting pop-up screen. Your trial is canceled, you'll lose access to app governance, and your app governance data will be deleted (log data that is used to create the app governance insights and detections - no emails or other files will be affected).
