@@ -27,7 +27,7 @@ To purchase a subscription for app governance, go to [Buy app governance](https:
 
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Defender for Cloud Apps, and so Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
-1. To activate the free trial, your organization's billing address can be in any regions except  Brazil, South Korea, Switzerland, Norway, South Africa, United Arab Emirates, Cuba, North Korea, Iran, Syria, and Sudan.
+1. To activate the free trial today, your organization's billing address can be in any region except Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
 
 ### Licensing for app governance
 
