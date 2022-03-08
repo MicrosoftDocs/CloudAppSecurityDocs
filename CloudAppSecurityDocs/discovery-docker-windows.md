@@ -30,7 +30,7 @@ You can configure automatic log upload for continuous reports in Defender for Cl
 * Virtualization on the operating system must be enabled with Hyper-V
 
 > [!IMPORTANT]
->
+> * Enterprise customers with more than 250 users require a paid subscription to use Docker Desktop for Windows.
 > * A user must be signed in for Docker to collect logs. We recommend advising your Docker users to disconnect without signing out.
 > * Docker for Windows is not officially supported in VMWare virtualization scenarios.
 > * Docker for Windows is not officially supported in nested virtualization scenarios. If you still plan to use nested virtualization, refer to [Docker's official guide](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
