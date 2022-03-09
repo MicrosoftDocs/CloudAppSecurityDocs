@@ -152,9 +152,6 @@ Any web app configured using the [previously mentioned authentication protocols]
 - Microsoft Azure portal
 - Microsoft Dynamics 365 CRM
 - Microsoft Exchange Online
-- Microsoft Forms
-- Microsoft Office Online
-- Microsoft Office Portal
 - Microsoft OneDrive for Business
 - Microsoft Power BI
 - Microsoft SharePoint Online
