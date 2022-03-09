@@ -113,11 +113,11 @@ Go to **Discover** > **Snapshot report** and follow the steps shown.
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
-## Step 5. [Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+## Step 5. [Deploy Conditional Access App Control for catalog apps](proxy-deployment-aad.md)
 
-Recommended task: Deploy Conditional Access App Control for featured apps
+Recommended task: Deploy Conditional Access App Control for catalog apps
 
-1. Configure your IdP to work with Defender for Cloud Apps. If you have Azure AD, you can leverage inline controls such as *Monitor only* and *Block downloads* which will work for any featured app out of the box.
+1. Configure your IdP to work with Defender for Cloud Apps. If you have Azure AD, you can leverage inline controls such as *Monitor only* and *Block downloads* which will work for any catalog app out of the box.
 1. Onboard apps onto access and session controls.
     1. From the settings cog, select **Conditional Access App Control**.
     1. Sign in to each app using a user scoped to the policy

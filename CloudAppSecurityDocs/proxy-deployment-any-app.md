@@ -10,7 +10,7 @@ ms.topic: how-to
 
 Session controls in Microsoft Defender for Cloud Apps can be configured to work with any web apps. This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls. It provides steps to create an Azure AD Conditional Access policy that routes app sessions to Defender for Cloud Apps. For other IdP solutions, see [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md).
 
-For a list of apps that are featured by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#featured-apps).
+For a list of apps that are featured by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
 
 ## Prerequisites
 
@@ -178,7 +178,7 @@ Once you're ready to enable the app for use in your organization's production en
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [PREVIOUS: Deploy Conditional Access App Control for featured apps](proxy-deployment-aad.md)
+> [PREVIOUS: Deploy Conditional Access App Control for catalog apps](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [NEXT: How to create a session policy](session-policy-aad.md)
