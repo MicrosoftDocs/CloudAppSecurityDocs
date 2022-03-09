@@ -264,9 +264,9 @@ items:
     items:
     - name: Protect apps with Conditional Access App Control
       href: proxy-intro-aad.md
-    - name: Deploy for featured apps with AAD
+    - name: Deploy for catalog apps with AAD
       href: proxy-deployment-aad.md
-    - name: Deploy for featured apps with non-Microsoft IdP
+    - name: Deploy for catalog apps with non-Microsoft IdP
       href: proxy-deployment-featured-idp.md
     - name: Deploy for custom apps with AAD
       href: proxy-deployment-any-app.md
