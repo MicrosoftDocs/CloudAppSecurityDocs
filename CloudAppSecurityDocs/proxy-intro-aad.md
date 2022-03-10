@@ -22,7 +22,7 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 
-- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multifactor authentication on download of a highly confidential file.
+- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multi-factor authentication on download of a highly confidential file.
 
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and encrypted when you integrate with Microsoft Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
@@ -80,7 +80,7 @@ Once the certificate is uploaded and a relevant policy is configured, when an ap
 When a client certificate check is performed, Defender for Cloud Apps checks for the following conditions:
 
 1. The selected client certificate is valid and is under the correct root or intermediate CA.
-1. The certificate is not revoked (if CRL is enabled).
+1. The certificate isn't revoked (if CRL is enabled).
 
 > [!NOTE]
 >
@@ -104,7 +104,7 @@ After the certificates are uploaded, you can create access and session policies 
 
 ## Supported apps and clients
 
-Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you are using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
+Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you're using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
 
 Defender for Cloud Apps identifies Apps using information available in its Cloud App Catalog. Some organizations and users customize apps by adding plugins. However, in order for session controls to work correctly with these plugins, the associated custom domains must be added to the respective app in the catalog.
 
@@ -188,6 +188,11 @@ In the following applications, we've encountered scenarios where the application
 - Microsoft Dynamics 365 CRM
 - Microsoft Power Apps
 - ArcGIS
+
+**Blocking downloads cause PDF previews to be blocked**  
+When a user accesses the Outlook Web App (OWA) and tries to preview a PDF attachment, it may be blocked by Defender for Cloud Apps.
+
+This happens because some browsers need the PDF to be downloaded on the backend to preview it. For more information and a workaround, see [Blocking downloads cause PDF previews to be blocked](troubleshooting-proxy.md#blocking-downloads-cause-pdf-previews-to-be-blocked).
 
 ## Next steps
 
