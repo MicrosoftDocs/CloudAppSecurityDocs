@@ -11,15 +11,7 @@ description: Get started with app governance capabilities to govern your apps.
 
 [![Sign up for the free trial of app governance](media/app-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
-To get started using the app governance add-on to Defender for Cloud Apps, start by verifying the prerequisites for [admin role](#administrator-roles), [licensing](#licensing-for-app-governance), and [regional](#prerequisites) requirements.
-
-The final step is adding integration with Defender for Cloud Apps:
-
-Prerequisites:
-
-- Office 365 is connected in Defender for Cloud Apps.
-- Office 365 Azure AD apps are enabled.
-- You're a Global Admin, Company Admin, or Billing Admin.
+To get started using the app governance add-on to Defender for Cloud Apps, start by verifying the [prerequisites](#prerequisites), and checking the [admin role](#administrator-roles) and [licensing](#licensing-for-app-governance) requirements.
 
 To purchase a subscription for app governance, go to [Buy app governance](https://aka.ms/buyappgovernance) or reach out to your sales account team.
 
@@ -28,12 +20,14 @@ To purchase a subscription for app governance, go to [Buy app governance](https:
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Defender for Cloud Apps, and so Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
 1. To activate the free trial today, your organization's billing address can be in any region except Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
+1. Office 365 is connected in Defender for Cloud Apps.
+1. Office 365 Azure AD apps are enabled.
 
-### Licensing for app governance
+## Licensing for app governance
 
 Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons.
 
-You can purchase app governance as an add-on to any license which entitles you to use Defender for Cloud Apps. For a list of these licenses, see the [Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
+You can purchase app governance as an add-on to any license that entitles you to use Defender for Cloud Apps. For a list of these licenses, see the [Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
 
 To use app governance in compliance with the terms of service, purchase an add-on license for each protected user after the trial ends. Each protected user must have both the Defender for Cloud Apps license and one of the app governance add-on licenses listed below:
 
