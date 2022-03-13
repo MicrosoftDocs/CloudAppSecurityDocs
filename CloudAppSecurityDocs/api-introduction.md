@@ -23,9 +23,9 @@ To use the Defender for Cloud Apps API, you must first obtain the API URL from y
 
 To obtain the Defender for Cloud Apps portal URL for your tenant, do the following steps:
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click the **question mark icon** in the menu bar. Then, select **About**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
 
-    ![click About.](media/about-menu.png)
+    ![Select About.](media/about-menu.png)
 
 1. In the Defender for Cloud Apps about screen, you can see the portal url.
 
@@ -93,7 +93,7 @@ The following methods are supported for providing the limit parameter:
 
 > [!NOTE]
 >
-> - If no limit is provided a default of 100 will be set.
+> - If no limit is provided, a default of 100 will be set.
 > - Responses for all requests made with the API token are limited to a maximum of 100 items.
 > - The throttle limit for all API requests is 30 requests per minute per tenant.
 
