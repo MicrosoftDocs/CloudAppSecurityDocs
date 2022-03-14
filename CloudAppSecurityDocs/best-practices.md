@@ -286,7 +286,7 @@ Use these recommendations to monitor the compliance status and security posture 
 ---
 
 **Best practice**: Onboard custom apps  
-**Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Defender for Cloud Apps. Once custom apps are configured, you see information about whose using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
+**Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Defender for Cloud Apps. Once custom apps are configured, you see information about who's using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
 
 Additionally, you can onboard a custom app as a Conditional Access App Control app to monitor their low-trust sessions.  
 **For more information**:
