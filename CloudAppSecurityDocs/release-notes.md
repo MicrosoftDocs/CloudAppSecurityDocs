@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 02/20/2022
+ms.date: 03/20/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -23,6 +23,13 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+## Defender for Cloud Apps release 222 and 223
+
+March 20, 2022
+
+- **Pre-onboarding of new applications to Conditional Access App Control (CaaC)**  
+Three new applications were added to the list of pre-onboarded apps: Microsoft Office Portal, Microsoft Office Online, and Microsoft Forms. It will now be more convenient for administrators to have those applications ready for session controls. Note that with this update, if you enabled session policies with these apps, but didn't enable it with session controls, their sign-ins will start going through session controls. For more information, see [Pre-onboarded apps](proxy-intro-aad.md#pre-onboarded-apps).
 
 ## Defender for Cloud Apps release 221
 
