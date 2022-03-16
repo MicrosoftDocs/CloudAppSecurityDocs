@@ -43,7 +43,7 @@ To access the Defender for Cloud Apps portal, go to [https://portal.cloudappsecu
 Required task: Connect apps
 
 1. From the settings cog, select **App connectors**.
-1. Click the plus sign (**+**) to add an app and select an app.
+1. Select the plus sign (**+**) to add an app and select an app.
 1. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
@@ -54,9 +54,9 @@ After you connect an app, you can gain deeper visibility so you can investigate 
 Recommended task: Enable file monitoring and create file policies
 
 1. Go to **Settings**, and then under **Information Protection**, select **Files**.
-1. Select **Enable file monitoring** and then click **Save**.
+1. Select **Enable file monitoring** and then select **Save**.
 1. If you use Microsoft Information Protection sensitivity labels, under **Information Protection**, select **Microsoft Information Protection**.
-1. Select the required settings and then click **Save**.
+1. Select the required settings and then select **Save**.
 1. In [step 3](#step-3), create [File policies](data-protection-policies.md) to meet your organizational requirements.
 
 > [!TIP]
