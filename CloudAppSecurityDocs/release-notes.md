@@ -29,7 +29,7 @@ For more information on what's new with other Microsoft Defender security produc
 March 20, 2022
 
 - **Pre-onboarding of new applications to Conditional Access App Control (CaaC)**  
-Three new applications were added to the list of pre-onboarded apps: Microsoft Office Portal, Microsoft Office Online, and Microsoft Forms. It will now be more convenient for administrators to have those applications ready for session controls. Note that with this update, if you enabled session policies with these apps, but didn't enable it with session controls, their sign-ins will start going through session controls. For more information, see [Pre-onboarded apps](proxy-intro-aad.md#pre-onboarded-apps).
+Three new applications were added to the list of pre-onboarded apps: Microsoft Office Portal, Microsoft Office Online, and Microsoft Forms. It will now be simpler for administrators to apply session controls for these apps. Note that with this update, if you enabled session policies with these apps, but didn't enable it with session controls, their sign-ins will start going through session controls. For more information, see [Pre-onboarded apps](proxy-intro-aad.md#pre-onboarded-apps).
 
 ## Defender for Cloud Apps release 221
 
