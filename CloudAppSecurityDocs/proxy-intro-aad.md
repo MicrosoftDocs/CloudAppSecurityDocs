@@ -200,7 +200,7 @@ When a session policy to block file uploads or downloads based on content inspec
 For example, when an admin defines one of the following session policies:
 - Block file upload for files containing Social Security Number (SSN)
 - Block file download for files containing PHI (Protected Health Information)
-In such cases files bigger than 5MB are not scanned and treated according to the policy setting of ‘Always apply the selected action even if the data cannot be scanned’
+In such cases, files larger than 5 MB are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned**.
 
 
 ## Next steps
