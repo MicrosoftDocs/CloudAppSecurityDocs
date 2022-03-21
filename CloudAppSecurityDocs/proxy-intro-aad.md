@@ -196,7 +196,7 @@ In the following applications, we've encountered scenarios where the application
 When a user accesses the Outlook Web App (OWA) and tries to preview a PDF attachment, it may be blocked by Defender for Cloud Apps. This happens because some browsers need the PDF to be downloaded on the backend to preview it. For more information and a workaround, see [Blocking downloads cause PDF previews to be blocked](troubleshooting-proxy.md#blocking-downloads-cause-pdf-previews-to-be-blocked).
 
 - **Inspections policies are valid for files sizes up to 5 MB**
-When a session policy to block file uploads or download based on content inspection is applied, inspection is performed for files smaller than 5MB.
+When a session policy to block file uploads or downloads based on content inspection is applied, inspection is performed on files smaller than 5 MB.
 For example, when admin defines one of the following session policies:
 Block file upload for files containing Social Security Number (SSN) OR
 Block file download for files containing PHI (Protected Health Information)
