@@ -7,11 +7,11 @@ description: Get started with app governance capabilities to govern your apps.
 
 # Get started with app governance
 
-[Microsoft 365 security & compliance licensing guidance for app governance.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+Learn how to get started using the app governance add-on feature for Microsoft Defender for Cloud Apps.
 
 ## Prerequisites
 
-To get started using the app governance add-on to Defender for Cloud Apps, first check that you satisfy the following prerequisites:
+To get started using the [app governance add-on for Defender for Cloud Apps](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#what-is-the-app-governance-add-on-feature-for-microsoft-defender-for-cloud-apps), first check that you satisfy the following prerequisites:
 
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Defender for Cloud Apps, and so Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
@@ -31,7 +31,7 @@ Before you get started with app governance, you should confirm your [Microsoft 3
 
 You can purchase app governance as an add-on to any license that entitles you to use Defender for Cloud Apps. For a list of these licenses, see the [Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
 
-To use app governance in compliance with the terms of service, purchase an add-on license for each protected user after the trial ends. Each protected user must have both the Defender for Cloud Apps license and one of the app governance add-on licenses listed below:
+To use app governance in compliance with the terms of service, purchase an add-on license for each protected user after the trial ends. Each protected user must have both the Defender for Cloud Apps license and [one of the app governance add-on licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16) listed below:
 
 - Microsoft Defender for Cloud Apps (standalone)
 - Enterprise Mobility + Security E5/A5
