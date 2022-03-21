@@ -198,7 +198,7 @@ When a user accesses the Outlook Web App (OWA) and tries to preview a PDF attach
 - **Inspections policies are valid for files sizes up to 5 MB**
 When a session policy to block file uploads or downloads based on content inspection is applied, inspection is performed on files smaller than 5 MB.
 For example, when an admin defines one of the following session policies:
-- Block file upload for files containing Social Security Number (SSN)
+  - Block file upload for files containing Social Security Number (SSN)
 - Block file download for files containing PHI (Protected Health Information)
 In such cases, files larger than 5 MB are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned**.
 
