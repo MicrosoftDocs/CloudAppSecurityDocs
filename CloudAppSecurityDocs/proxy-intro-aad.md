@@ -12,7 +12,7 @@ In today's workplace, it's often not enough to know what's happening in your clo
 
 > [!NOTE]
 >
-> - In addition to a valid Defender for Cloud Apps license, to use Defender for Cloud Apps Conditional Access App Control, you also need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution, as well as a Defender for Cloud Apps license.
+> - In addition to a valid Defender for Cloud Apps license, to use Defender for Cloud Apps Conditional Access App Control, you also need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution.
 
 ## How it works
 
