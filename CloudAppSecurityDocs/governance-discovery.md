@@ -27,6 +27,9 @@ To query a list of unsanctioned apps, you can [generate a block script using the
 
 Defender for Cloud Apps enables you to block access to unsanctioned apps by using Defender for Endpoint. You can block all devices in your organization, or block specific device groups.
 
+> [!NOTE]
+> The option to block specific device groups via include or exclude is in **Preview** mode.
+
 ### Prerequisites
 
 1. One of the following licenses:
