@@ -47,7 +47,7 @@ To create a snapshot report:
 1. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
     ![processing log file menu bar.](media/processing-log-file-menu-bar.png)
 
-1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by clicking the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Settings**.
+1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by selecting the link in the status bar, or by selecting the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Settings**.
 
 1. Then under  **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
 
