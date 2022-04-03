@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 02/20/2022
+ms.date: 04/03/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -23,6 +23,13 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+## Defender for Cloud Apps release 222, 223, and 224
+
+April 3, 2022
+
+- **Updated severity levels for Defender for Cloud Apps anomaly detections**  
+The severity levels for Defender for Cloud Apps built-in anomaly detection alerts are being changed to better reflect the risk level in the event of true positive alerts. The new severity levels can be seen in the policies page: <https://portal.cloudappsecurity.com/#/policy>
 
 ## Defender for Cloud Apps release 221
 
