@@ -15,6 +15,8 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 - DocuSign Enterprise Pro account plan with Monitor API enabled.
   - For more information about DocuSign Monitor API, see [How to get monitoring data | DocuSign](https://developers.docusign.com/docs/monitor-api/how-to/get-monitoring-data/) and [Enable DocuSign Monitor for your organization | DocuSign](https://developers.docusign.com/docs/monitor-api/how-to/enable-monitor/).
 
+- DNS domains used in your organization should be claimed and validated in your DocuSign organization. For more information on claiming and validating domains, see [Domains | DocuSign](https://support.docusign.com/en/guides/org-admin-guide-claim-domain/)
+
 - The DocuSign user used for logging into DocuSign must be an organization admin of one organization only. For more information, see the prerequisite role in [How to get monitoring data | DocuSign](https://developers.docusign.com/docs/monitor-api/how-to/get-monitoring-data/) and [Organization Administrators - DocuSign Admin for Organization Management | DocuSign Support Center](https://support.docusign.com/en/guides/org-admin-guide-org-admins).
 
 - The DocuSign account must be mapped to an organization. For more information, see:
