@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-[NOTE!]
+>[!NOTE]
 data management report is about to be deprecated by the end of May 2022. 
 A scan progress status feature would be lunched before deprecating the data management report feature, and would allow the user to view the policy data at-rest scan status (in progress/finished).
 
