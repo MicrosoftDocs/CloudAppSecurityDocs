@@ -423,7 +423,7 @@ This detection identifies an OAuth application that is using an unusual user age
 
 **Understand the scope of the breach**
 
-1. Review the apps that are created recently and the user agents used
+1. Review the apps that are created recently and the user agents used.
 2. Review all activities done by the app.  
 3. Review the scopes granted by the app.  
 
