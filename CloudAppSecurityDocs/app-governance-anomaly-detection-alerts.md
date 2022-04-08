@@ -24,7 +24,7 @@ This guide provides information about investigating and remediating app governan
 - [Discovery](#discovery-alerts)
 - Lateral Movement
 - [Collection](#collection-alerts)
-- Exfiltration
+- [Exfiltration](#exfiltration-alerts)
 - Impact
 
 ## Security alert classifications
@@ -398,6 +398,34 @@ This detection identifies a large volume of suspicious enumeration activities pe
 
 1. Review all activities performed by this application.
 1. Review the user activity associated with this application.
+
+## Exfiltration alerts
+
+This section describes alerts indicating that a malicious actor may be attempting to steal data of interest to their goal from your organization.
+
+### OAuth App using unusual user agent
+
+**Severity**: Low
+
+**MITRE ID**: T1567
+
+This detection identifies an OAuth application that is using an unusual user agent to access the Graph API.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app has recently started using a new user agent that was not used previously and this change is unexpected, then a true positive is indicated. 
+
+  **Recommended actions**: Review the user agents used and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the apps that are created recently and the user agents used.
+2. Review all activities done by the app.  
+3. Review the scopes granted by the app.  
 
 ## Collection alerts
 
