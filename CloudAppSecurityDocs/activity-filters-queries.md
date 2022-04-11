@@ -144,6 +144,25 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally select **Save as** to create a new **Saved query**.
 
+### Query activities six months back
+
+To investigate activities older than 30 days, you can navigate to the **Activity log** and select **Investigate 6 months back** in the top right-hand corner of the screen:
+
+![Select investigate 6 months back.](media/investigate-six-months-back.png)
+
+From there you can define the filters as is normally done with the **Activity Log**, but with two differences:
+
+1. The date filter is mandatory and is limited to a one week span.
+1. In addition, the following filers will be supported:
+    - Activity ID
+    - Activity type
+    - Application
+    - IP address
+    - Location
+    - User name
+
+![Filter after selecting investigate 6 months back.](media/filter-six-months-back.png)
+
 ## Next steps
 
 > [!div class="nextstepaction"]
