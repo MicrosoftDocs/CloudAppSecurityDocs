@@ -117,7 +117,7 @@ Use a custom app policy when you need to do something not already done by one of
     |Priority account consent given|Yes or No|A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
     |Names of consenting users|Select users from list||
     |Roles of consenting users|Select roles from list|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
-    |Services accessed|OneDrive and/or SharePoint and/or Exchange|Multiple selections allowed.|
+    |Services accessed|Exchange and/or OneDrive and/or SharePoint and/or Teams|Multiple selections allowed.|
     |Error rate|Error rate is greater than X% in the last seven days||
     ||||
 
