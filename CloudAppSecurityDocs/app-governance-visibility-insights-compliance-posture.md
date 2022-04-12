@@ -36,7 +36,7 @@ From this page, you can see:
 
 - For data usage:
 
-  - Total data accessed by apps in the tenant through Graph API over the current month and previous three calendar months. (Currently only includes Mail and File upload and download usage)
-  - Data usage over the current month and previous three calendar months, broken down by resource type. (Currently only includes Mail and File upload and download usage)
+  - Total data accessed by apps in the tenant through Graph API over the current month and previous three calendar months. (Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API)
+  - Data usage over the current month and previous three calendar months, broken down by resource type. (Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API)
 
   From this information, you can determine if there are anomalous spikes in data usage in your Microsoft 365 tenant.
