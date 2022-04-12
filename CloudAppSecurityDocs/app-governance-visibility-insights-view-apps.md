@@ -67,7 +67,7 @@ The app details pane provides additional information on these tabs:
 | Tab name | Description |
 |:-------|:-----|
 | Details | See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
-| Data usage |See the data usage by the app in the tenant and plot the data usage for SharePoint and Exchange resources. You can fliter usage insights by priority accounts only |
+| Data usage |See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources. You can filter usage insights by priority accounts only. |
 | Users | See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. If an app is admin consented, the Total consented users will be all users in the tenant. |
 | Permissions | See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
 |||
