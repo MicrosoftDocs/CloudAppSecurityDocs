@@ -1,13 +1,13 @@
 ---
-title: Investigate anomaly detection alerts
+title: Investigate threat detection alerts
 ms.date: 11/09/2021
 ms.topic: conceptual
-description: Learn how to investigate anomaly detection alerts.
+description: Learn how to investigate threat detection alerts from app governance.
 ---
 
-# Investigate anomaly detection alerts
+# Investigate threat detection alerts
 
- App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+ App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT&CK
 
