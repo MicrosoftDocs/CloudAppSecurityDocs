@@ -19,7 +19,7 @@ For a summary of apps in your tenant, go to **Microsoft 365 Defender > App gover
 :::image type="content" source="media\app-governance\mapg-cc-apps.png" alt-text="The app governance app summary page in Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-apps.png":::
 
 >[!Note]
-> Your sign-in account must have one of [these roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
+> Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
 
 You will see a list of apps and this information:

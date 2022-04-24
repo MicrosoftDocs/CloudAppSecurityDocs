@@ -12,7 +12,7 @@ App governance allows you to quickly assess the compliance posture of Line of Bu
 :::image type="content" source="media\app-governance\mapg-cc-overview.png" alt-text="The app governance overview page in Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-overview.png":::
 
 >[!Note]
-> Your sign-in account must have one of [these roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
+> Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
 
 From this page, you can see:
