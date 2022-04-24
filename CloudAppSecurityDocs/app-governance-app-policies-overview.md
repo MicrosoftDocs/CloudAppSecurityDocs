@@ -11,7 +11,7 @@ App governance uses machine learning-based detection algorithms to detect anomal
 
 These policies for app and user patterns and behaviors can protect your users from using non-compliant or malicious apps and limit the access of risky apps to your tenant data.
 
-See [Administrator roles](app-governance-get-started.md#administrator-roles) for information on which roles can modify policies.
+See [Administrator roles](app-governance-get-started.md#roles) for information on which roles can modify policies.
 
 ## Next step
 
