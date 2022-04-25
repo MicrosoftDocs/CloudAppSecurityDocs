@@ -79,7 +79,7 @@ If you find a new app in your environment that hasn't been scored by Defender fo
 
 ## Customizing the risk score
 
-Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score. The score represents the Defender for Cloud Apps assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three subscores relating to the three subcategories which Defender for Cloud Apps considers when assessing reliability:
+Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score. The score represents the Defender for Cloud Apps assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of four subscores relating to the four subcategories which Defender for Cloud Apps considers when assessing reliability:
 
 - **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year, and popularity. These fields are meant to show the company's stability on the most basic level.
 
@@ -93,9 +93,9 @@ Each of the categories is composed of many specific properties. According to the
 
 It's important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:
 
-1. In the portal, under the settings icon, select **Cloud Discovery settings**.
+1. In the portal, under the settings icon, select **Settings**.
 
-2. Under **Score metric**, slide the **Importance** to change the weight of the field or the risk category. Importance can be set to **Ignored**, **Low**, **Medium**, **High**, or **Very High**.
+2. Under **Cloud Discovery**, select **Score metrics**. Slide the **Importance** to change the weight of the field or the risk category. Importance can be set to **Ignored**, **Low**, **Medium**, **High**, or **Very High**.
 
 3. Additionally, you can set whether certain values are either not available or not applicable in the score calculation. When included, N/A values have a negative contribution to the calculated score.
 
