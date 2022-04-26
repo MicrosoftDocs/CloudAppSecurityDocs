@@ -52,7 +52,7 @@ sections:
           -	Billing admin
           -	Global admin
 
-          To get full access to app governance, you need to be an application admin. Security admins and compliance admins have fairly comprehensive permissions as well. [Read full list of roles and permissions](administrator-roles.md)
+          To get full access to app governance, you need to be an application admin. Security admins and compliance admins have fairly comprehensive permissions as well. [Read full list of roles and permissions](app-governance-get-started.md#administrator-roles)
       - question: Is app governance available in all regions?
         answer: |
           App governance is currently not available in Brazil, South Korea, Switzerland, Norway, South Africa, and United Arab Emirates. To use app governance, your billing location must be in another country/region.
