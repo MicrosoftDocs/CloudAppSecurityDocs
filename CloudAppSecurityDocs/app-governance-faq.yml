@@ -21,28 +21,28 @@ sections:
           -	Apps that use OAuth to authenticate to Azure Active Directory
           -	Apps that access Microsoft 365 data using Graph API
 
-          These apps represent modern apps that can access Microsoft 365 data, including sensitive data in mailboxes, OneDrive folders, SharePoint sites, and Teams. End users regularly introduce these apps and can give them consent to access data.
+          These apps represent modern apps that can access Microsoft 365 data in mailboxes, OneDrive folders, SharePoint sites, and Teams. End users regularly introduce these apps and can give them consent to access data.
           
-          While Defender for Cloud Apps also tracks apps that use OAuth to access Microsoft 365, app governance provides additional detection capabilities through out-of-box detections as well as highly customizable polices that track numerous app attributes and behaviors.
+          While Defender for Cloud Apps also tracks apps that use OAuth to access Microsoft 365, app governance provides additional out-of-box detections and highly customizable policies that track various app attributes and behaviors.
       - question: How can I try app governance?
         answer: |
           Once you have Defender for Cloud Apps, you can also get a trial license for app governance. The trial gives you full access to all app governance features for 90 days. [Learn how to start using app governance](app-governance-get-started.md)
       - question: How can I get the app governance add-on license?
         answer: |
-          If you haven't yet, get a trial license to start using app governance. Once the trial expires, you will need to purchase an add-on license to continue using the service. [Learn how to start using app governance](app-governance-get-started.md) 
+          If you haven't yet, get a trial license to start using app governance. Once the trial expires, you'll need to purchase an add-on license to continue using the service. [Learn how to start using app governance](app-governance-get-started.md) 
       - question: What can app governance detect?
         answer: |
           App governance generates two types of alerts:
-          - Threat detection alerts are based on Microsoft threat intelligence and are designed to identify apps that are malicious. These out-of-box detections utilize machine learning and anomaly detection to look at various attributes and find applications that are likely involved in an attack. [View threat detection alert types](app-governance-anomaly-detection-alerts.md)
-          - Policy alerts track various app attributes and behaviors — certification, data use, API access errors, unused permissions — that can indicate misuse and risk. The policies themselves are either customizable (user-defined) or predefined:
+          - Threat detection alerts are based on Microsoft threat intelligence and are designed to identify apps that are malicious. These out-of-box detections utilize machine learning and anomaly detection to find applications that are likely involved in an attack. [View threat detection alert types](app-governance-anomaly-detection-alerts.md)
+          - Policy alerts track various app attributes and behaviors—certification, data use, API access errors, unused permissions—that can indicate misuse and risk. The policies themselves are either customizable (user-defined) or predefined:
               - User-defined policies can use one or many conditions to identify risky apps. You can set custom thresholds to determine when these policies are triggered. 
-              - Predefined policies (preview) track the same app attributes and behaviors, but use dynamic thresholds that are informed by signals within the organization as well as Microsoft threat intelligence.
+              - Predefined policies (preview) track the same app attributes and behaviors, but look into other signals and dynamically adjust thresholds.
       - question: What types of actions can app governance take on cloud apps that trigger policy?
         answer: |
-          App governance can deactivate apps that match either user-defined or predefined policies (preview). Deactivated apps are not able to authenticate to Azure AD and access resources, until they are activated manually. [Learn about app governance policies](app-governance-app-policies-create.md)
+          App governance can deactivate apps that match either user-defined or predefined policies (preview). Deactivated apps aren't able to authenticate to Azure AD and access resources, until they're activated manually. [Learn about app governance policies](app-governance-app-policies-create.md)
       - question: Can I customize my policies?
         answer: |
-          You can create policies by combining conditions that track various app attributes and behaviors. When these conditions are met, policies trigger alerts and take the action you have specified. App governance also provides predefined policies (preview) that you switch on or off. You can also set the action on predefined policies. [Learn about app governance policies](app-governance-app-policies-create.md)
+          You can create policies by combining conditions that track various app attributes and behaviors. When these conditions are met, policies trigger alerts and take the action you've specified. App governance also provides predefined policies (preview) that you switch on or off. You can also set the action on predefined policies. [Learn about app governance policies](app-governance-app-policies-create.md)
       - question: Is app governance integrated with Microsoft 365 Defender?
         answer: |
            App governance alerts and related incidents are available in the Microsoft 365 Defender queue. Microsoft 365 Defender correlates the alerts with signals from other solutions, such as Defender for Endpoint, to associate related attack activities and identify security incidents. App governance alerts and incidents are also integrated with Microsoft Sentinel.
@@ -55,7 +55,7 @@ sections:
           To get full access to app governance, you need to be an application admin. Security admins and compliance admins have fairly comprehensive permissions as well. [Read full list of roles and permissions](administrator-roles.md)
       - question: Is app governance available in all regions?
         answer: |
-          App governance is currently not available in Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates. To use app governance, your billing location must be in another country/region.
+          App governance is currently not available in Brazil, South Korea, Switzerland, Norway, South Africa, and United Arab Emirates. To use app governance, your billing location must be in another country/region.
 
       - question: Why is app governance empty or showing inaccurate data?
         answer: |
