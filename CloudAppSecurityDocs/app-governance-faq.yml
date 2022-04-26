@@ -5,7 +5,9 @@ metadata:
 
 title: Frequently asked questions about app governance
 summary: |
-  Quickly get answers to your app governance questions. If you can't find answers or just want to learn more, join the app governance team in our free webinar sessions. [Sign up for the webinar](https://aka.ms/appgovernancemeet)
+  Quickly get answers to your app governance questions. If you can't find answers or just want to learn more, join the app governance team in our free webinar sessions. 
+  
+  > [Sign up for the webinar](https://aka.ms/appgovernancemeet)
 sections:
   - name: Single section - ignored
     questions:
