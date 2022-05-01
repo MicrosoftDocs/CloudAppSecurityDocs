@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 04/24/2022
+ms.date: 05/01/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -23,6 +23,13 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+## Defender for Cloud Apps release 226
+
+May 1, 2022
+
+- **Improvements in malware detection for non-Microsoft storage apps**  
+Defender for Cloud Apps has introduced major improvements in the non-Microsoft storage apps detection mechanism. This will reduce the number of false positive alerts.
 
 ## Defender for Cloud Apps release 225
 
