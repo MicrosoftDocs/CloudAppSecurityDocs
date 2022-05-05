@@ -383,8 +383,6 @@ Several users have revoked their consent to this recently created line-of-busine
 
 **Severity**: Medium  
 
-**MITRE ID**: T1036
-
 A non-Microsoft cloud app is using a logo that was found by a machine learning algorithm to be very similar to a Microsoft logo. This can be an attempt to impersonate Microsoft software products and appear legitimate.
 
 **TP or FP?**
