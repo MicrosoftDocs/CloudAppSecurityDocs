@@ -19,7 +19,7 @@ This guide provides information about investigating and remediating app governan
 - Execution
 - [Persistence](#persistence-alerts)
 - Privilege Escalation
-- Defense Evasion
+- [Defense Evasion](#defense-evasion-alerts)
 - Credential Access
 - [Discovery](#discovery-alerts)
 - Lateral Movement
@@ -350,6 +350,59 @@ This detection triggers an alert when a Line of Business (LOB) app updated the c
 1. Review the scopes granted by the app.
 1. Review the user activity associated with this app.
 
+### App created recently has a high volume of revoked consents
+
+**Severity**: Medium  
+
+**MITRE ID**: T1566, T1098
+
+Several users have revoked their consent to this recently created line-of-business (LOB) or third-party app. This app might have lured users into giving it consent inadvertently.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the OAuth app is delivered from an unknown source and app behavior is suspicious.  
+
+  **Recommended Action**: Revoke consents granted to the app and disable the app.  
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization and no unusual activities were performed by the app.
+
+  **Recommended Action**: Dismiss the alert  
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.  
+1. If you suspect that an app is suspicious, we recommend that you investigate the name and reply domain of the app in different app stores. When checking app stores, focus on the following types of apps:
+   - Apps that have been created recently
+   - Apps with an unusual display name
+   - Apps with a suspicious Reply domain
+1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
+
+## Defense Evasion alerts
+
+### App impersonating a Microsoft logo
+
+**Severity**: Medium  
+
+**MITRE ID**: T1036
+
+A non-Microsoft cloud app is using a logo that was found by a machine learning algorithm to be very similar to a Microsoft logo. This can be an attempt to impersonate Microsoft software products and appear legitimate.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app logo is an imitation of a Microsoft logo and the app behavior is suspicious.  
+
+  **Recommended Action**: Revoke consents granted to the app and disable the app.
+
+- **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
 ## Discovery alerts
 
 ### App performed drive enumeration
@@ -551,54 +604,3 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review the scopes granted by the app.  
 1. Review any inbox rule action created by the app.  
 1. Review any high importance email read activity done by the app.
-
-### App impersonating a Microsoft logo
-
-**Severity**: Medium  
-
-**MITRE ID**: T1036
-
-A non-Microsoft cloud app is using a logo that was found by a machine learning algrithm to be very similar to a Microsoft logo. This can be an attempt to impersonate Microsoft software products and appear legitimate.
-
-**TP or FP?**
-
-- **TP**: If you can confirm that the app logo is an imitation of a Microsoft logo and the app behavior is suspicious.  
-
-  **Recommended Action**: Revoke consents granted to the app and disable the app.
-
-- **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
-
-  **Recommended Action**: Dismiss the alert
-
-**Understand the scope of the breach**
-
-1. Review all activities performed by the app.  
-1. Review the scopes granted to the app.  
-1. Review the user activity associated with the app.  
-
-### App created recently has a high volume of revoked consents
-
-**Severity**: Medium  
-
-**MITRE ID**: T1566
-
-Several users have revoked their consent to this recently created line-of-business (LOB) or third-party app. This app might have lured users into giving it consent inadvertently.
-
-**TP or FP?**
-
-- **TP**: If you can confirm that the OAuth app is delivered from an unknown source and app behavior is suspicious.  
-
-  **Recommended Action**: Revoke consents granted to the app and disable the app.  
-
-- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization and no unusual activities were performed by the app.
-
-  **Recommended Action**: Dismiss the alert  
-
-**Understand the scope of the breach**
-
-1. Review all activities performed by the app.  
-1. If you suspect that an app is suspicious, we recommend that you investigate the name and reply domain of the app in different app stores. When checking app stores, focus on the following types of apps:
-   - Apps that have been created recently
-   - Apps with an unusual display name
-   - Apps with a suspicious Reply domain
-1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
