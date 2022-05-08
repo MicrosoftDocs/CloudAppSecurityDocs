@@ -33,7 +33,7 @@ Use Defender for Cloud Apps with Microsoft Information Protection to embed class
 
 ## Prerequisites
 
-- [Enable Defender for Cloud Apps and Microosoft Information Protection](azip-integration.md) for your tenant.
+- [Enable Defender for Cloud Apps and Microsoft Information Protection](azip-integration.md) for your tenant.
 - [Connect Box](./connect-box.md) to Defender for Cloud Apps.
 
 ## Set up data protection
