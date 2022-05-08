@@ -15,7 +15,7 @@ Use the following links to get more details about the different assessment types
 - **[Azure recommendations](security-config-azure.md)**: Azure best practices security recommendations consumed from Microsoft Defender for Cloud.
 - **[AWS recommendations](security-config-aws.md)**: Security recommendations based on the Center for Internet Security (CIS) benchmark for AWS, version 1.2.0, consumed from AWS Security Hub.
 - **[GCP recommendations](security-config-gcp.md)**: Security recommendations based on the CIS benchmark for GCP, version 1.1.0, consumed from Google Security Command Center and Security Health Analytics.
-- **[SaaS applications](security-saas.md)**: Security reommendations for different SaaS applications based on Microsoft benchmark.
+- **[SaaS applications](security-saas.md)**: Security recommendations for different SaaS applications based on Microsoft benchmarks.
 
 ## Security recommendations report
 
