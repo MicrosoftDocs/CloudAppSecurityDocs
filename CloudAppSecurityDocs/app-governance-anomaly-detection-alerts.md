@@ -360,11 +360,11 @@ Several users have revoked their consent to this recently created line-of-busine
 
 **TP or FP?**
 
-- **TP**: If you can confirm that the OAuth app is delivered from an unknown source and app behavior is suspicious.  
+- **TP**: If you can confirm that the OAuth app is delivered from an unknown source and app behavior is suspicious.  
 
   **Recommended Action**: Revoke consents granted to the app and disable the app.  
 
-- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization and no unusual activities were performed by the app.
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization and no unusual activities were performed by the app.
 
   **Recommended Action**: Dismiss the alert  
 
@@ -387,11 +387,11 @@ A non-Microsoft cloud app is using a logo that was found by a machine learning a
 
 **TP or FP?**
 
-- **TP**: If you can confirm that the app logo is an imitation of a Microsoft logo and the app behavior is suspicious.  
+- **TP**: If you can confirm that the app logo is an imitation of a Microsoft logo and the app behavior is suspicious.  
 
   **Recommended Action**: Revoke consents granted to the app and disable the app.
 
-- **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
+- **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
 
   **Recommended Action**: Dismiss the alert
 
@@ -464,7 +464,7 @@ This detection identifies an OAuth application that is using an unusual user age
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the OAuth app has recently started using a new user agent that was not used previously and this change is unexpected, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the OAuth app has recently started using a new user agent that was not used previously and this change is unexpected, then a true positive is indicated.
 
   **Recommended actions**: Review the user agents used and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
 
@@ -588,11 +588,11 @@ This detection identifies that an App consented to high privilege scope, creates
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that high volume of important email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
+- **TP**: If you’re able to confirm that high volume of important email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
 
   **Recommended Action**:  Disable and remove the App, reset the password, and remove the inbox rule.  
 
-- **FP**: If you’re able to confirm app has performed high volume of important email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
+- **FP**: If you’re able to confirm app has performed high volume of important email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
 
   **Recommended Action**: Dismiss the alert  
 
