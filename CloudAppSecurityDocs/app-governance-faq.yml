@@ -5,7 +5,7 @@ metadata:
 
 title: Frequently asked questions about app governance
 summary: |
-  Quickly get answers to your app governance questions. If you can't find answers or just want to learn more, join the app governance team in our free webinar sessions. 
+  Read this article to quickly get answers to your app governance questions. If you can't find answers or just want to learn more, join the free webinar sessions with the app governance team. 
   
   > [Sign up for the webinar](https://aka.ms/appgovernancemeet)
 sections:
@@ -14,10 +14,10 @@ sections:
       - question: What is app governance?
         answer: |
           App governance is an add-on to Microsoft Defender for Cloud Apps. It provides expanded visibility and control over apps that access your Microsoft 365 data. [Learn more about app governance](app-governance-manage-app-governance.md)
-      - question: What does app governance cover?
+      - question: What types of apps does app governance secure?
         answer: |
           App governance currently tracks apps with the following characteristics:
-          - Non-Microsoft apps 
+          - Non-Microsoft apps
           -	Apps that use OAuth to authenticate to Azure Active Directory
           -	Apps that access Microsoft 365 data using Graph API
 
@@ -26,7 +26,7 @@ sections:
           While Defender for Cloud Apps also tracks apps that use OAuth to access Microsoft 365, app governance provides additional out-of-box detections and highly customizable policies that track various app attributes and behaviors.
       - question: How can I try app governance?
         answer: |
-          Once you have Defender for Cloud Apps, you can also get a trial license for app governance. The trial gives you full access to all app governance features for 90 days. [Learn how to start using app governance](app-governance-get-started.md)
+          Once you have Defender for Cloud Apps, you can get use app governance with a trial license. The trial gives you full access to all app governance features for 90 days. [Learn how to start using app governance](app-governance-get-started.md)
       - question: How can I get the app governance add-on license?
         answer: |
           If you haven't yet, get a trial license to start using app governance. Once the trial expires, you'll need to purchase an add-on license to continue using the service. [Learn how to start using app governance](app-governance-get-started.md) 
@@ -52,7 +52,7 @@ sections:
           -	Billing admin
           -	Global admin
 
-          To get full access to app governance, you need to be an application admin. Security admins and compliance admins have fairly comprehensive permissions as well. [Read full list of roles and permissions](app-governance-get-started.md#administrator-roles)
+          For full access to app governance, you need to be an **application admin**. Security admins and compliance admins also have comprehensive access to app governance. [Read full list of roles and permissions](app-governance-get-started.md#administrator-roles)
       - question: Is app governance available in all regions?
         answer: |
           App governance is currently not available in Brazil, South Korea, Switzerland, Norway, South Africa, and United Arab Emirates. To use app governance, your billing location must be in another country/region.
@@ -61,10 +61,11 @@ sections:
         answer: |
           It can take up to 24 hours to fully prepare app governance and retrieve data after you first initiate it. During this period data access statistics and app counts can be inaccurate.
 
-additionalContent: |
-  ## App governance in social media
-  - [Protect your business with Microsoft Security's comprehensive protection](https://www.microsoft.com/security/blog/2021/11/02/protect-your-business-with-microsoft-securitys-comprehensive-protection/)
-  - [Announcing Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-microsoft-defender-for-cloud-apps/ba-p/2835842)
-  - [Microsoft Security Insights: App Governance with Eric Ouellet, Andrew Vahidnia, Jared Poeppelman](https://microsoftsecurityinsights.com/075-app-governance-with-eric-ouellet-andrew-vahidnia-jared-poeppelman)
-  - [How to Prevent App Cyber Attacks—Cloud & Hybrid](https://www.youtube.com/watch?v=KmE8LW_tJ1M)
-  - [Twitter:Microsoft is tracking a recent consent phishing campaign, reported by @ffforward, that abuses OAuth...](https://twitter.com/MsftSecIntel/status/1484623341155610624)
+      - question: Where can I get more information about app governance?
+        answer: |
+          You can find more information about app governance in the following resources:
+          - [Protect your business with Microsoft Security's comprehensive protection](https://www.microsoft.com/security/blog/2021/11/02/protect-your-business-with-microsoft-securitys-comprehensive-protection/)
+          - [Announcing Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-microsoft-defender-for-cloud-apps/ba-p/2835842)
+          - [Microsoft Security Insights: App Governance with Eric Ouellet, Andrew Vahidnia, Jared Poeppelman](https://microsoftsecurityinsights.com/075-app-governance-with-eric-ouellet-andrew-vahidnia-jared-poeppelman)
+          - [How to Prevent App Cyber Attacks—Cloud & Hybrid](https://www.youtube.com/watch?v=KmE8LW_tJ1M)
+          - [Twitter:Microsoft is tracking a recent consent phishing campaign, reported by @ffforward, that abuses OAuth...](https://twitter.com/MsftSecIntel/status/1484623341155610624)
