@@ -33,8 +33,8 @@ sections:
       - question: What can app governance detect?
         answer: |
           App governance generates two types of alerts:
-          - Threat detection alerts are based on Microsoft threat intelligence and are designed to identify apps that are malicious. These out-of-box detections utilize machine learning and anomaly detection to find applications that are likely involved in an attack. [View threat detection alert types](app-governance-anomaly-detection-alerts.md)
-          - Policy alerts track various app attributes and behaviors—certification, data use, API access errors, unused permissions—that can indicate misuse and risk. The policies themselves are either customizable (user-defined) or predefined:
+          - **Threat detection alerts** are based on Microsoft threat intelligence and are designed to identify apps that are malicious. These out-of-box detections utilize machine learning and anomaly detection to find applications that are likely involved in an attack. [View threat detection alert types](app-governance-anomaly-detection-alerts.md)
+          - **Policy alerts** track various app attributes and behaviors—certification, data use, API access errors, unused permissions—that can indicate misuse and risk. The policies themselves are either customizable (user-defined) or predefined:
               - User-defined policies can use one or many conditions to identify risky apps. You can set custom thresholds to determine when these policies are triggered. 
               - Predefined policies (preview) track the same app attributes and behaviors, but look into other signals and dynamically adjust thresholds.
       - question: What types of actions can app governance take on cloud apps that trigger policy?
@@ -52,7 +52,7 @@ sections:
           -	Billing admin
           -	Global admin
 
-          For full access to app governance, you need to be an **application admin**. Security admins and compliance admins also have comprehensive access to app governance. [Read full list of roles and permissions](app-governance-get-started.md#administrator-roles)
+          For full access to app governance, you need to be an **application admin**. **Security operators**, **security admins**, and **compliance admins** also have comprehensive access to app governance. [Read full list of roles and permissions](app-governance-get-started.md#roles)
       - question: Is app governance available in all regions?
         answer: |
           App governance is currently not available in Brazil, South Korea, Switzerland, Norway, South Africa, and United Arab Emirates. To use app governance, your billing location must be in another country/region.
