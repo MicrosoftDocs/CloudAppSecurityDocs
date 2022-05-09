@@ -73,31 +73,31 @@ The following tables list, per cloud app, which abilities are supported with App
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 
-### User and app governance
+### User, app governance, and security configuration visibility
 
-|  App                 | User governance                      | View app permissions      | Revoke app permissions    |
-| ----------------- | ------------------------------------ | ------------------------- | ------------------------- |
-| Atlassian (Preview) |  |  |  |
-| AWS               |                                      | Not applicable            | Not applicable            |
-| Azure             |                                      |                           | Not supported by provider |
-| Box               | ✔                                    | Not supported by provider |                           |
-| DocuSign (Preview) |  |  | |
-| Dropbox           |                                      |                           |                            |
-| Egnyte (Preview) | | | |
-| GitHub            |                                      | ✔                         |                           |
-| GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |
-| Google  Workspace | ✔                                    | ✔                         | ✔                         |
-| NetDocuments  |  |  |  |
-| Office 365        | ✔                                    | ✔                         | ✔                         |
-| Okta              |                                      | Not applicable            | Not applicable            |
-| OneLogin | |  |  |
-| Service  Now      |                                      |                           |                           |
-| Salesforce        | ✔                                    | ✔                         | ✔                         |
-| Slack |  |  |  |
-| Smartsheet | | | |
-| Webex             |                                      | Not applicable            | Not applicable            |
-| Workday           | Not supported by provider            | Not applicable            | Not applicable            |
-| Zendesk  |  |  |  |
+|  App                 | User governance                      | View app permissions      | Revoke app permissions    | Security configuration visibility |
+| ----------------- | ------------------------------------ | ------------------------- | ------------------------- | ------------------------- |
+| Atlassian (Preview) |  |  |  |  |
+| AWS               |                                      | Not applicable            | Not applicable            |             |
+| Azure             |                                      |                           | Not supported by provider |  |
+| Box               | ✔                                    | Not supported by provider |                           |                           |
+| DocuSign (Preview) |  |  | | |
+| Dropbox           |                                      |                           |                            |                            |
+| Egnyte (Preview) | | | | |
+| GitHub            |                                      | ✔                         |                           |                           |
+| GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
+| Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
+| NetDocuments  |  |  |  |  |
+| Office 365        | ✔                                    | ✔                         | ✔                         | Preview                  |
+| Okta              |                                      | Not applicable            | Not applicable            |             |
+| OneLogin | |  |  |  |
+| Service  Now      |                                      |                           |                           | Preview |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview                  |
+| Slack |  |  |  |  |
+| Smartsheet | | | | |
+| Webex             |                                      | Not applicable            | Not applicable            |             |
+| Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
+| Zendesk  |  |  |  |  |
 
 ### Information protection
 

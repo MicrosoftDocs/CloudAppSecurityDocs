@@ -301,6 +301,8 @@ items:
       items:
       - name: Overview
         href: security-config.md
+      - name: Security configuration for SaaS applications
+        href: security-saas.md
       - name: Security configuration for Azure
         href: security-config-azure.md
       - name: Security configuration for AWS
