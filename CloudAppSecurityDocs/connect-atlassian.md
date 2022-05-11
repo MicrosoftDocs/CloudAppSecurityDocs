@@ -1,10 +1,10 @@
 ---
-title: Connect Atlassian to Defender for Cloud Apps (Preview)
+title: Connect Atlassian to Defender for Cloud Apps
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Atlassian products using the App Connector APIs. 
 ms.date: 11/23/2021
 ms.topic: how-to
 ---
-# Connect Atlassian to Microsoft Defender for Cloud Apps (Preview)
+# Connect Atlassian to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -42,7 +42,10 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. After selecting **Create**, copy the **Organization ID** and the **API key**. You'll need it later.
 
-1. **Verify your domain:** To see your Atlassian users and their activities in Defender for Cloud Apps, you need to verify your domain. In Atlassian, domains are used to determine which user accounts can be managed by your organization. You won't see users and their activities if their domains aren't verified in the Atlassian configuration. To verify domains in Atlassian see [Verify a domain to manage accounts](https://support.atlassian.com/user-management/docs/verify-a-domain-to-manage-accounts/).
+        
+    >[!NOTE]
+    >Verify your domain: To see your Atlassian users and their activities in Defender for Cloud Apps, you need to verify your domain. In Atlassian, domains are used to     determine which user accounts can be managed by your organization. You won't see users and their activities if their domains aren't verified in the Atlassian           configuration. 
+    >To verify domains in Atlassian see [Verify a domain to manage accounts](https://support.atlassian.com/user-management/docs/verify-a-domain-to-manage-accounts/).
 
 ### Configure Defender for Cloud Apps
 
