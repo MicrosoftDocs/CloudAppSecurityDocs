@@ -62,7 +62,6 @@ For more information about setting up Workday integration users, security groups
     | Access Token Type | Bearer |
     | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Note**: For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Non-Expiring Refresh Tokens | Yes |
-    | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
     ![Screenshot of registering API client.](media/connect-workday-register-api-client.png)
