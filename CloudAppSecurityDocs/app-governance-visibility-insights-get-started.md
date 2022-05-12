@@ -20,8 +20,8 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
 - **Tenant summary**: The count of key app and alert categories.
 - **Latest alerts**: The 10 most recent active alerts in the tenant
 - **Data usage**: Mouse over each month column in the graph to see the corresponding value.
-  - **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently only includes Mail and File upload/download usage.
-  - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently only includes Mail and File upload/download usage.
+  - **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
+  - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
 - **Optimize app governance with policies**: Recommended actions such as creating an app usage or permissions policy.
 - **App categories**: The top apps sorted by these categories:
   
