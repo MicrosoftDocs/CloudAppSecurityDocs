@@ -142,6 +142,8 @@ items:
       href: app-governance-get-started.md
     - name: Submit feedback on app governance
       href: app-governance-feedback.md
+    - name: App governance FAQ
+      href: app-governance-faq.yml
     - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
