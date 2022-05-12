@@ -1,13 +1,13 @@
 ---
-title: Investigate anomaly detection alerts
+title: Investigate threat detection alerts
 ms.date: 11/09/2021
 ms.topic: conceptual
-description: Learn how to investigate anomaly detection alerts.
+description: Learn how to investigate threat detection alerts from app governance.
 ---
 
-# Investigate anomaly detection alerts
+# Investigate threat detection alerts
 
- App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because anomaly detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+ App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT&CK
 
@@ -19,12 +19,12 @@ This guide provides information about investigating and remediating app governan
 - Execution
 - [Persistence](#persistence-alerts)
 - Privilege Escalation
-- Defense Evasion
+- [Defense Evasion](#defense-evasion-alerts)
 - Credential Access
 - [Discovery](#discovery-alerts)
 - Lateral Movement
 - [Collection](#collection-alerts)
-- Exfiltration
+- [Exfiltration](#exfiltration-alerts)
 - Impact
 
 ## Security alert classifications
@@ -350,6 +350,57 @@ This detection triggers an alert when a Line of Business (LOB) app updated the c
 1. Review the scopes granted by the app.
 1. Review the user activity associated with this app.
 
+### App created recently has a high volume of revoked consents
+
+**Severity**: Medium  
+
+**MITRE ID**: T1566, T1098
+
+Several users have revoked their consent to this recently created line-of-business (LOB) or third-party app. This app might have lured users into giving it consent inadvertently.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the OAuth app is delivered from an unknown source and app behavior is suspicious.  
+
+  **Recommended Action**: Revoke consents granted to the app and disable the app.  
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization and no unusual activities were performed by the app.
+
+  **Recommended Action**: Dismiss the alert  
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.  
+1. If you suspect that an app is suspicious, we recommend that you investigate the name and reply domain of the app in different app stores. When checking app stores, focus on the following types of apps:
+   - Apps that have been created recently
+   - Apps with an unusual display name
+   - Apps with a suspicious Reply domain
+1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
+
+## Defense Evasion alerts
+
+### App impersonating a Microsoft logo
+
+**Severity**: Medium  
+
+A non-Microsoft cloud app is using a logo that was found by a machine learning algorithm to be very similar to a Microsoft logo. This can be an attempt to impersonate Microsoft software products and appear legitimate.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app logo is an imitation of a Microsoft logo and the app behavior is suspicious.  
+
+  **Recommended Action**: Revoke consents granted to the app and disable the app.
+
+- **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
 ## Discovery alerts
 
 ### App performed drive enumeration
@@ -398,6 +449,34 @@ This detection identifies a large volume of suspicious enumeration activities pe
 
 1. Review all activities performed by this application.
 1. Review the user activity associated with this application.
+
+## Exfiltration alerts
+
+This section describes alerts indicating that a malicious actor may be attempting to steal data of interest to their goal from your organization.
+
+### OAuth App using unusual user agent
+
+**Severity**: Low
+
+**MITRE ID**: T1567
+
+This detection identifies an OAuth application that is using an unusual user agent to access the Graph API.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app has recently started using a new user agent that was not used previously and this change is unexpected, then a true positive is indicated.
+
+  **Recommended actions**: Review the user agents used and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review the apps that are created recently and the user agents used.
+2. Review all activities done by the app.  
+3. Review the scopes granted by the app.  
 
 ## Collection alerts
 
@@ -509,11 +588,11 @@ This detection identifies that an App consented to high privilege scope, creates
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that high volume of important email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
+- **TP**: If you’re able to confirm that high volume of important email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
 
   **Recommended Action**:  Disable and remove the App, reset the password, and remove the inbox rule.  
 
-- **FP**: If you’re able to confirm app has performed high volume of important email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
+- **FP**: If you’re able to confirm app has performed high volume of important email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
 
   **Recommended Action**: Dismiss the alert  
 

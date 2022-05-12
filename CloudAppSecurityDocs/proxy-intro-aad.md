@@ -1,7 +1,7 @@
 ---
 title: Protect with Microsoft Defender for Cloud Apps Conditional Access App Control
 description: This article provides information about how the Defender for Cloud Apps Conditional Access App Control reverse proxy works.
-ms.date: 11/09/2021
+ms.date: 03/06/2022
 ms.topic: conceptual
 ---
 # Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control
@@ -12,7 +12,7 @@ In today's workplace, it's often not enough to know what's happening in your clo
 
 > [!NOTE]
 >
-> - In addition to a valid Defender for Cloud Apps license, to use Defender for Cloud Apps Conditional Access App Control, you also need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution, as well as a Defender for Cloud Apps license.
+> - In addition to a valid Defender for Cloud Apps license, to use Defender for Cloud Apps Conditional Access App Control, you also need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), or the license required by your IdP solution.
 
 ## How it works
 
@@ -22,7 +22,7 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 - **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 
-- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multifactor authentication on download of a highly confidential file.
+- **Require authentication context**: You can reevaluate Azure AD Conditional Access policies when a sensitive action occurs in the session. For example, require multi-factor authentication on download of a highly confidential file.
 
 - **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and encrypted when you integrate with Microsoft Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
@@ -80,7 +80,7 @@ Once the certificate is uploaded and a relevant policy is configured, when an ap
 When a client certificate check is performed, Defender for Cloud Apps checks for the following conditions:
 
 1. The selected client certificate is valid and is under the correct root or intermediate CA.
-1. The certificate is not revoked (if CRL is enabled).
+1. The certificate isn't revoked (if CRL is enabled).
 
 > [!NOTE]
 >
@@ -104,7 +104,7 @@ After the certificates are uploaded, you can create access and session policies 
 
 ## Supported apps and clients
 
-Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you are using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
+Session and access controls can be applied to any interactive single sign-on, using the SAML 2.0 authentication protocol or, if you're using Azure AD, the Open ID Connect authentication protocol as well. Furthermore, if your apps are configured with Azure AD, you can also apply these controls to apps hosted on-premises configured with the [Azure AD App Proxy](/azure/active-directory/manage-apps/application-proxy). In addition, access controls can be applied to native mobile and desktop client apps.
 
 Defender for Cloud Apps identifies Apps using information available in its Cloud App Catalog. Some organizations and users customize apps by adding plugins. However, in order for session controls to work correctly with these plugins, the associated custom domains must be added to the respective app in the catalog.
 
@@ -129,51 +129,43 @@ While session controls are built to work with any browser on any major platform 
 > - Defender for Cloud Apps uses Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+, will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
 > - To apply session controls to portal.office.com, you must onboard Microsoft 365 admin center. For more information about onboarding apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
 
-#### Featured apps
+#### Pre-onboarded apps
 
-Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls:
+Any web app configured using the [previously mentioned authentication protocols](#supported-apps-and-clients) can be onboarded to work with access and session controls. In addition, the following apps are already onboarded with both access and session controls for Azure Access Directory.
+
+> [!NOTE]
+> It's required to route your desired applications to access and session controls, and to perform a first login.
 
 - AWS
-- Azure DevOps (Visual Studio Team Services)
-- Azure portal
 - Box
 - Concur
 - CornerStone on Demand
 - DocuSign
 - Dropbox
-- Dynamics 365 CRM (preview)
 - Egnyte
-- Exchange Online
 - GitHub
 - Google Workspace
 - HighQ
 - JIRA/Confluence
-- OneDrive for Business
 - LinkedIn Learning
-- Power BI
+- Microsoft Azure DevOps (Visual Studio Team Services)
+- Microsoft Azure portal
+- Microsoft Dynamics 365 CRM
+- Microsoft Exchange Online
+- Microsoft OneDrive for Business
+- Microsoft Power BI
+- Microsoft SharePoint Online
+- Microsoft Teams
+- Microsoft Yammer
 - Salesforce
 - ServiceNow
-- SharePoint Online
 - Slack
 - Tableau
-- Microsoft Teams (preview)
 - Workday
 - Workiva
 - Workplace by Facebook
-- Yammer (preview)
 
-### <a name="O365-apps"></a>Office 365 Cloud App Security featured apps
-
-The following is a list of featured apps that are supported in [Office 365 Cloud App Security](editions-cloud-app-security-o365.md).
-
-- Exchange Online
-- OneDrive for Business
-- Power BI
-- SharePoint Online
-- Microsoft Teams (preview)
-- Yammer (preview)
-
-If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
+If you're interested in a specific app being pre-onboarded, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
 
 ## Known limitations
 
@@ -189,12 +181,34 @@ It's possible to bypass the defined session policy by modifying parameters. For 
 - **Browser plug-in limitation**  
 Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
 
+- **Applications may break**  
+In the following applications, we've encountered scenarios where the application may break:
+
+  - ArcGIS
+  - Microsoft Dynamics 365 CRM
+  - Microsoft Power Apps
+  - Microsoft Power BI
+  - Microsoft Yammer
+
+- **Blocking downloads cause PDF previews to be blocked**  
+When a user accesses the Outlook Web App (OWA) and tries to preview a PDF attachment, it may be blocked by Defender for Cloud Apps. This happens because some browsers need the PDF to be downloaded on the backend to preview it. For more information and a workaround, see [Blocking downloads cause PDF previews to be blocked](troubleshooting-proxy.md#blocking-downloads-cause-pdf-previews-to-be-blocked).
+
+- **Inspections policies are valid for files sizes up to 5 MB**  
+When a session policy to block file uploads or downloads based on content inspection is applied, inspection is performed on files smaller than 5 MB.
+For example, an admin may define one of the following session policies:
+
+  - Block file upload for files containing Social Security Number (SSN)
+  - Block file download for files containing PHI (Protected Health Information)
+  
+  In such cases, files larger than 5 MB are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned**.
+
+
 ## Next steps
 
 For instructions on how to onboard your apps, see the appropriate document below:
 
-- [Deploy Conditional Access App Control for featured apps with Azure AD](proxy-deployment-aad.md)
-- [Deploy Conditional Access App Control for featured apps with non-Microsoft IdP](proxy-deployment-featured-idp.md)
+- [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md)
+- [Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP](proxy-deployment-featured-idp.md)
 - [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md)
 - [Deploy Conditional Access App Control for custom apps with non-Microsoft IdP](proxy-deployment-any-app-idp.md)
 

@@ -14,11 +14,11 @@ You can apply governance actions to users' files across your cloud environment. 
 
 After you take a look at your open alerts, go to the Policy center to review policy violations that didn't trigger alerts.
 
-- In the Defender for Cloud Apps dashboard, click **Control** and then **Policies**.
+- In the Defender for Cloud Apps dashboard, select **Control** and then **Policies**.
 
 - Select a specific policy to see the **Matching now** list of policy matches that didn't trigger alerts.
 
-- Click the violations one at a time and decide what to do for each. For more information about governance actions, see the following figures.
+- Select the violations one at a time and decide what to do for each. For more information about governance actions, see the following figures:
 
     If your policy is set to find compliance breaches and someone saves credit card numbers in files on OneDrive, you'll have a match in the policy.
 
@@ -30,9 +30,9 @@ After you take a look at your open alerts, go to the Policy center to review pol
 
     You can select the file itself to get information about the files.
 
-    You can click **Collaborators** to see who has access to this file.
+    You can select **Collaborators** to see who has access to this file.
 
-    You can click **Matches** to see the actual credit card numbers.
+    You can select **Matches** to see the actual credit card numbers.
 
     ![Content matches credit card numbers.](media/content-matches-ccn.png "content matches credit card numbers")
 

@@ -14,7 +14,7 @@ Alerts are the entry points to understanding your cloud environment more deeply.
 
 It's a good idea to review all of your alerts. Understanding why an alert is occurring allows you to use them as tools for modifying your policies.
 
-**To view alerts:** In the Microsoft Defender for Cloud Apps portal, click on **Alerts**.
+**To view alerts:** In the Microsoft Defender for Cloud Apps portal, select **Alerts**.
 
 ![Alert menu.](media/alert-menu.png)
 
@@ -56,7 +56,7 @@ When closing alerts, choose one of the following resolution options:
 - **Close as benign**: If the activity is suspicious but not malicious activity, such as a penetration test or other authorized suspicious action
 - **Close as false positive**: If the activity is confirmed as non-malicious
 
-In the pop-up that appears, provide a reason for closing the alert and fill out the rest of the details as required, and then click **Close alert**.
+In the pop-up that appears, provide a reason for closing the alert and fill out the rest of the details as required, and then select **Close alert**.
 
 ![Enhanced alerts close popup.](media/monitor-alerts/enhanced-alerts-close-resolution.png)
 

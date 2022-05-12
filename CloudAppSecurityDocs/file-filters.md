@@ -25,7 +25,7 @@ After you connect an app to Defender for Cloud Apps, integrate with Microsoft In
 
 Here's another example of how you can use the **Files** page. Make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last six months:
 
-Connect an app to Defender for Cloud Apps and go to the **Files** page. Filter for files whose access level is **External** or **Public** and set the **Last modified** date to six months ago. Create a file policy that detects these stale public files by clicking **New policy from search**. Apply automatic governance actions to them, such as **Remove external users**, to prevent data loss to your organization.
+Connect an app to Defender for Cloud Apps and go to the **Files** page. Filter for files whose access level is **External** or **Public** and set the **Last modified** date to six months ago. Create a file policy that detects these stale public files by selecting **New policy from search**. Apply automatic governance actions to them, such as **Remove external users**, to prevent data loss to your organization.
 
 ![File filter stale external.](media/file-example-stale-external.png)
 
@@ -33,7 +33,7 @@ The basic filter provides you with great tools to get started filtering your fil
 
 ![Basic file log filter.](media/file-log-filter-basic-1.png)
 
-To drill down into more specific files, you can expand the basic filter by clicking **Advanced**.
+To drill down into more specific files, you can expand the basic filter by selecting **Advanced**.
 
 ![Advanced file log filter.](media/file-log-filter-advanced-1.png)
 
@@ -53,7 +53,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 >
 > **Equals** will search only for the complete string. For example, if you search for **malware.exe** it will find *malware.exe* but not *malware.exe.txt*.
 
-- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [Set up the portal](general-setup.md#set-up-the-portal)
+- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [Set up the portal](general-setup.md#set-up-the-portal).
 
   - **Internal** - Any files within the Internal domains you set in [General setup](General-setup.md).
   - **External** - Any files saved in locations that aren't within the internal domains you set.

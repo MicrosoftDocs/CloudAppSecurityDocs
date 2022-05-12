@@ -66,7 +66,7 @@ items:
     items:
     - name: Protect connected apps
       href: protect-connected-apps.md
-    - name: Protect Atlassian (Preview)
+    - name: Protect Atlassian
       href: protect-atlassian.md
     - name: Protect AWS
       href: protect-aws.md
@@ -220,7 +220,7 @@ items:
     items:
     - name: Connect apps to get visibility and protection
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
-    - name: Connect Atlassian (Preview)
+    - name: Connect Atlassian
       href: connect-atlassian.md
     - name: Connect Azure
       href: ./connect-azure.md
@@ -266,9 +266,9 @@ items:
     items:
     - name: Protect apps with Conditional Access App Control
       href: proxy-intro-aad.md
-    - name: Deploy for featured apps with AAD
+    - name: Deploy for catalog apps with AAD
       href: proxy-deployment-aad.md
-    - name: Deploy for featured apps with non-Microsoft IdP
+    - name: Deploy for catalog apps with non-Microsoft IdP
       href: proxy-deployment-featured-idp.md
     - name: Deploy for custom apps with AAD
       href: proxy-deployment-any-app.md

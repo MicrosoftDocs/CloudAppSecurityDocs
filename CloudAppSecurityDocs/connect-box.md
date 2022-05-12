@@ -59,7 +59,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 Box is now connected to Defender for Cloud Apps.
 
-After connecting Box, you'll receive events for 60 days prior to connection.
+After connecting Box, you'll receive events for 7 days prior to connection.
 
 After connecting Box, Defender for Cloud Apps performs a full scan. Depending on how many files and users you have, completing the full scan can take awhile. To enable near real-time scanning, files on which activities are detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away rather than waiting for the regular scan process. Near real-time scanning doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned as part of the regularly scheduled scan.
 

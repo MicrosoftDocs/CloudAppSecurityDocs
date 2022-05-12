@@ -1,14 +1,14 @@
 ---
-title: Deploy Conditional Access App Control for featured apps with non-Microsoft IdP
-description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for featured apps with non-Microsoft IdP.
+title: Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
+description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for catalog apps with non-Microsoft IdP.
 ms.date: 12/08/2021
 ms.topic: how-to
 ---
-# Deploy Conditional Access App Control for featured apps with non-Microsoft IdP
+# Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Session controls in Microsoft Defender for Cloud Apps work with the featured apps. For a list of apps that are featured by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#featured-apps).
+Access and session controls in Microsoft Defender for Cloud Apps work with applications from the Cloud app catalog and with custom applications. For a list of apps that are pre-onboarded by Defender for Cloud Apps to work out-of-the-box, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md#pre-onboarded-apps).
 
 ## Prerequisites
 
@@ -25,9 +25,9 @@ Session controls in Microsoft Defender for Cloud Apps work with the featured app
     |Azure AD|SAML 2.0 or OpenID Connect|
     |Other|SAML 2.0|
 
-## To deploy featured apps
+## To deploy catalog apps
 
-Follow these steps to configure featured apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
+Follow these steps to configure catalog apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
 
 **Step 1: [Configure your IdP to work with Defender for Cloud Apps](#configure-integration-with-other-idp-solutions)**
 
@@ -136,14 +136,14 @@ Defender for Cloud Apps will sync your policy details to its servers for each ne
 
 ## Step 3: Verify the apps are configured to use access and session controls<a name="portal"></a>
 
-The preceding instructions helped you create a built-in Defender for Cloud Apps policy for featured apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
+The preceding instructions helped you create a built-in Defender for Cloud Apps policy for catalog apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
 1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
 
     > [!NOTE]
-    > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](proxy-deployment-any-app.md), or you can open a request to add it as a featured app by clicking **Request session control**.
+    > If session control doesn't appear for an app, it's not yet available for that specific app. You can either add it immediately as a [custom app](proxy-deployment-any-app.md), or you can open a request to add it as a catalog app by clicking **Request session control**.
     >
     >![Conditional access app control request.](media/caac-request.png)
 

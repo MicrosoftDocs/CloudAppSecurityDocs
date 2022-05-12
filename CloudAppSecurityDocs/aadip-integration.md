@@ -41,7 +41,7 @@ To disable Defender for Cloud Apps integration with Identity Protection:
 
 1. Under **Threat Protection**, select **Azure AD Identity Protection**.
 
-1. Clear **Enable Azure AD Identity Protection alert integration** and then click **Save**.
+1. Clear **Enable Azure AD Identity Protection alert integration** and then select **Save**.
 
 > [!NOTE]
 >
