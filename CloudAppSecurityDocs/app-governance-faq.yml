@@ -36,13 +36,13 @@ sections:
           - **Threat detection alerts** are based on Microsoft threat intelligence and are designed to identify apps that are malicious. These out-of-box detections utilize machine learning and anomaly detection to find applications that are likely involved in an attack. [View threat detection alert types](app-governance-anomaly-detection-alerts.md)
           - **Policy alerts** track various app attributes and behaviors—certification, data use, API access errors, unused permissions—that can indicate misuse and risk. The policies themselves are either customizable (user-defined) or predefined:
               - User-defined policies can use one or many conditions to identify risky apps. You can set custom thresholds to determine when these policies are triggered. 
-              - Predefined policies (preview) track the same app attributes and behaviors, but look into other signals and dynamically adjust thresholds.
+              - Predefined policies track the same app attributes and behaviors, but look into other signals and dynamically adjust thresholds.
       - question: What types of actions can app governance take on cloud apps that trigger policy?
         answer: |
-          App governance can deactivate apps that match either user-defined or predefined policies (preview). Deactivated apps aren't able to authenticate to Azure AD and access resources, until they're activated manually. [Learn about app governance policies](app-governance-app-policies-create.md)
+          App governance can deactivate apps that match either user-defined or predefined policies. Deactivated apps aren't able to authenticate to Azure AD and access resources, until they're activated manually. [Learn about app governance policies](app-governance-app-policies-create.md)
       - question: Can I customize my policies?
         answer: |
-          You can create policies by combining conditions that track various app attributes and behaviors. When these conditions are met, policies trigger alerts and take the action you've specified. App governance also provides predefined policies (preview) that you switch on or off. You can also set the action on predefined policies. [Learn about app governance policies](app-governance-app-policies-create.md)
+          You can create policies by combining conditions that track various app attributes and behaviors. When these conditions are met, policies trigger alerts and take the action you've specified. App governance also provides predefined policies that you switch on or off. You can also set the action on predefined policies. [Learn about app governance policies](app-governance-app-policies-create.md)
       - question: Is app governance integrated with Microsoft 365 Defender?
         answer: |
            App governance alerts and related incidents are available in the Microsoft 365 Defender queue. Microsoft 365 Defender correlates the alerts with signals from other solutions, such as Defender for Endpoint, to associate related attack activities and identify security incidents. App governance alerts and incidents are also integrated with Microsoft Sentinel.
