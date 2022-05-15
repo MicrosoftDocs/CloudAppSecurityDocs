@@ -25,7 +25,7 @@ App governance contains a set of out of the box policies to detect anomalous app
 
     ![View number of policies.](media/app-governance/number-policies.png)
 
-- You can choose whether you want this policy to apply to all apps in your tenant, specific apps or all apps except the apps you choose. To do so, select Edit scope from the Scope and conditions tab. If you choose specific apps or all apps except for this policy, select Add apps and select the desired apps from the list. In the Choose apps pane, you can select multiple apps to which this policy will be applied. Select Save when you're satisfied with the list.
+- You can choose whether you want this policy to apply to all apps in your tenant, specific apps, or all apps except the apps you choose. To do so, select **Edit scope** from the **Scope and conditions** tab. If you choose specific apps or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied. Select **Save** when you're satisfied with the list.
 - Alerts generated from predefined policies are listed as policy alerts, in the **Alerts** page.
 
 ## Next steps
