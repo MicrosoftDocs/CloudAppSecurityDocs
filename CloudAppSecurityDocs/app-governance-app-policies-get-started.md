@@ -69,7 +69,7 @@ You can also:
 1. Select **Edit**.
 1. You can't change the name of the policy once created, but you can change the description and policy severity. Select **Next**.
 1. Choose whether you want to continue with the existing policy settings or customize them. Select **No, I'll customize the policy** to make changes. Select **Next**.
-1. Choose whether this policy will apply to all apps or to specific apps. Select **Choose apps** to select which apps to apply the policy to. Select **Next**.
+1. Choose whether this policy will apply to all apps, specific apps, or all apps except the apps you select. Select **Choose apps** to select which apps to apply the policy to. Select **Next**.
 1. Choose whether to modify the existing conditions of the policy. If you choose to modify the conditions, select **Edit or modify existing conditions for the policy** and choose which policy conditions to apply. Otherwise, select **Use existing conditions of the policy**. Select **Next**.
 1. Choose whether to disable the app if it triggers the policy conditions. Select **Next**.
 1. Set the policy status to Audit mode, Active, or Inactive. Select **Next**.
