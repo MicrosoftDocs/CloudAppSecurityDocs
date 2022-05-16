@@ -21,11 +21,7 @@ App governance contains a set of out of the box policies to detect anomalous app
 
 - To view the description of the policy, select the policy to see the policy summary and description in the detailed policy window.
 - To change the status of a policy (deactivate / activate), select the policy and select **Deactivate** in the detailed policy window.
-- You can view the total number of active predefined policies in the policy snapshot.
-
-    ![View number of policies.](media/app-governance/number-policies.png)
-
-- You can choose whether you want this policy to apply to all apps in your tenant, specific apps, or all apps except the apps you choose. To do so, select **Edit scope** from the **Scope and conditions** tab. If you choose specific apps or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied. Select **Save** when you're satisfied with the list.
+- By default, predefined policies will trigger alerts when the conditions are met. You can choose to automatically disable the app when the policy triggers. Use caution when applying these actions because a policy may affect users and legitimate app use. To disable the app, mark the **Disable app** box under **Policy action** in the summary section and select **Save**.
 - Alerts generated from predefined policies are listed as policy alerts, in the **Alerts** page.
 
 ## Next steps
