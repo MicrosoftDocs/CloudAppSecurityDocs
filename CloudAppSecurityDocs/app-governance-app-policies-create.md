@@ -86,6 +86,7 @@ Use a custom app policy when you need to do something not already done by one of
 
     - All Apps
     - Choose specific apps
+    - All apps except
 
 1. A pane allows you to select one or more apps.
     Select **Add**.
@@ -142,7 +143,7 @@ App governance provides some basic templates that make it easy to create useful 
 1. Under **Categories** select **Custom**. Under **Templates** select **Custom policy**. Select **Next**.
 1. Enter a name for your policy, type a description, and then in the **Policy severity** drop-down list, select a severity. Select **Next**.
 1. Select **No, I want to customize the policy** and then select **Next**.
-1. Choose whether you want this policy to apply to all apps in your tenant or choose specific apps. If you choose specific apps for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied, and then select **Add**. Select **Next** when you're satisfied with the list.
+1. Choose whether you want this policy to apply to all apps in your tenant, specific apps, or all apps except the ones you choose. If you choose specific apps, or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied, and then select **Add**. Select **Next** when you're satisfied with the list.
 1. Select **Set new conditions for the policy** and then select **Edit conditions**. Select **Add condition** and choose a condition from the list and then select the condition to apply. Repeat to add more conditions. Select **Save** to save the rule, and when you're finished adding rules, select **Next**.
 1. By default, this policy will trigger alerts when the conditions are met. You can choose to take action when the policy triggers such as **Disable app**. Use caution when applying actions because a policy may affect users and legitimate app use. Select **Next**.
 1. Choose the policy status:
