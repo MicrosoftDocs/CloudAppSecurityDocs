@@ -15,6 +15,7 @@ Key points:
 - No private information is stored or displayed. Only encrypted information.
 - Private data is encrypted using AES-128 with a dedicated key per tenant.
 - Resolving usernames is done ad-hoc, per-username by deciphering a given encrypted username.
+- Anonymization capabilities aren't supported when using the "Defender for Cloud Apps Proxy" stream.
 
 ## How data anonymization works
 

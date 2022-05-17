@@ -82,7 +82,7 @@ For commercial customers, to enable Defender for Cloud Apps reverse proxy, add *
 mcasproxy.azureedge.net
 ```
 
-Additionally, the following items should be allowed, depending on which data center you use:
+Additionally, the following IP addresses used by our reverse proxy regions should be allowed:
 
 |  | **IP Addresses** | **DNS Name** |
 |--|--|--|
@@ -100,7 +100,8 @@ For US Government GCC High customers, to enable Defender for Cloud Apps reverse 
 mcasproxy.azureedge.net
 ```
 
-Additionally, the following items should be allowed:
+Additionally, the following IP Addresses used by our reverse proxy regions, should be allowed:
+
 
 For **US Government GCC High** customers:
 

@@ -103,8 +103,8 @@ Use a custom app policy when you need to do something not already done by one of
     |App registration age|Within last X days||
     |Certification|No certification, Publisher attested, Microsoft 365 Certified|[Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
     |Publisher verified|Yes or No|[Publisher Verification](/azure/active-directory/develop/publisher-verification-overview)|
-    |Permissions|Select one or more API permissions from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
-    |Delegated Permissions|Select one or more API permissions from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
+    |Application permissions|Select one or more API permissions from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
+    |Delegated permissions|Select one or more API permissions from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
     |Highly privilege|Yes or No|This is an internal designation based on the same logic used by Defender for Cloud Apps.|
     |Overprivileged|Yes or No|Apps with more granted permissions than are being used by those apps.|
     |Non-Graph API permissions|Yes or No|Apps that have non-Graph API permissions.|
@@ -117,7 +117,7 @@ Use a custom app policy when you need to do something not already done by one of
     |Priority account consent given|Yes or No|A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
     |Names of consenting users|Select users from list||
     |Roles of consenting users|Select roles from list|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
-    |Services accessed|OneDrive and/or SharePoint and/or Exchange|Multiple selections allowed.|
+    |Services accessed|Exchange and/or OneDrive and/or SharePoint and/or Teams|Multiple selections allowed.|
     |Error rate|Error rate is greater than X% in the last seven days||
     ||||
 

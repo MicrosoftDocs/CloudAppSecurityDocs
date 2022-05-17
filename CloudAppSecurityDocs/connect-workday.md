@@ -1,7 +1,7 @@
 ---
 title: Connect Workday to Defender for Cloud Apps
 description: This article provides information about how to connect your Workday app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 11/09/2021
+ms.date: 05/11/2022
 ms.topic: how-to
 ---
 # Connect Workday to Microsoft Defender for Cloud Apps
@@ -62,7 +62,6 @@ For more information about setting up Workday integration users, security groups
     | Access Token Type | Bearer |
     | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Note**: For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Non-Expiring Refresh Tokens | Yes |
-    | OAuth2 Scopes | **Staffing** and **System** |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
     ![Screenshot of registering API client.](media/connect-workday-register-api-client.png)

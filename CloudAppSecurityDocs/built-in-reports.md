@@ -8,12 +8,16 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+>[!NOTE]
+>The data management report will be deprecated by the end of May 2022. 
+> A scan progress status feature will be launched before the data management report feature is deprecated, which will allow you to view the policy data's at-rest scan status (in progress/finished).
+
 Microsoft Defender for Cloud Apps enables you to generate reports that provide you with an overview of files in your cloud apps.
 
 To generate these reports
 
 1. Go to **Files**.
-2. In the upper right-hand corner, click the three dots and under **Data management reports**, select one of the following reports.
+2. In the upper right-hand corner, select the three dots and under **Data management reports**, and then select one of the following reports.
 
     ![Screenshot showing Data management reports menu.](media/reports.png)
 
