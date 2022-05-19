@@ -580,7 +580,7 @@ This detection identifies that an App consented to high privilege scope, created
 
 ### App made high volume of OneDrive search and edit activities 
 
-**Severity**: High
+**Severity**: Medium
 
 **MITRE ID’s**: T1137, T1213
 
