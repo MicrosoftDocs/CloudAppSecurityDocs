@@ -578,13 +578,13 @@ This detection identifies that an App consented to high privilege scope, created
 1. Review any inbox rule action created by the app.  
 1. Review any SharePoint or OneDrive search activities done by the app.
 
-### App made high volume of OneDrive search and edit activities 
+### App made numerous searches and edits in OneDrive
 
 **Severity**: Medium
 
 **MITRE ID’s**: T1137, T1213
 
-This detection identifies an OAuth app with high privilege permissions performing high volume of searches and edits to OneDrive files using Graph API.
+This detection identifies OAuth apps with high privilege permissions that perform a large number of searches and edits in OneDrive using Graph API.
 
 **TP or FP?**
 
@@ -594,13 +594,14 @@ This detection identifies an OAuth app with high privilege permissions performin
 
 - **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
-  **Recommended Action**: Dismiss the alert  
+  **Recommended Action**: Resolve the alert and report your findings.
 
 **Understand the scope of the breach**
 
-1. Review if the application was newly created or has had any recent changes made to it.
+1. Verify if the app is from a reliable source.
+1. Verify if the application was newly created or has had any recent changes made to it.
 1. Review the permissions granted to the application and users that have consented to the application. 
-1. Review all activities done by the app.
+1. Investigate all other app activities.
 
 ### App made high volume of importance mail read and created inbox rule
 
