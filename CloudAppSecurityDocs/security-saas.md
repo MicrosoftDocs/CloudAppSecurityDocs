@@ -12,6 +12,7 @@ Your SaaS application environments may be configured in a risky posture. Microso
 
 >[!NOTE]
 >
+> - SaaS Security Posture Management for non-Microsoft applications is currently in public preview for every customer with Defender for Cloud Apps. At General Availability the licensing of this capability may be changed.
 > - Currently only specific applications are supported with this functionality. Supported applications can be found at [connected apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility).
 > - Currently, it's possible to configure one instance for each app.
 > - The recommendations are based on Microsoft benchmarks.
