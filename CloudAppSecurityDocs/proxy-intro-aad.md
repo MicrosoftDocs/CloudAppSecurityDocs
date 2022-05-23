@@ -181,14 +181,16 @@ It's possible to bypass the defined session policy by modifying parameters. For 
 - **Browser plug-in limitation**  
 Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
 
-- **Applications may break**  
-In the following applications, we've encountered scenarios where the application may break:
-
+- **Context loss**  
+In the following applications, we've encountered scenarios where the navigating to a link may result in loss of the full path of the link and typically lands the user on the home page of the app. 
   - ArcGIS
+  - GitHub
   - Microsoft Dynamics 365 CRM
+  - Microsoft Power Automate
   - Microsoft Power Apps
   - Microsoft Power BI
   - Microsoft Yammer
+  - Workplace from Meta
 
 - **Blocking downloads cause PDF previews to be blocked**  
 When a user accesses the Outlook Web App (OWA) and tries to preview a PDF attachment, it may be blocked by Defender for Cloud Apps. This happens because some browsers need the PDF to be downloaded on the backend to preview it. For more information and a workaround, see [Blocking downloads cause PDF previews to be blocked](troubleshooting-proxy.md#blocking-downloads-cause-pdf-previews-to-be-blocked).
