@@ -52,7 +52,7 @@ Integrating Defender for Cloud Apps with Microsoft Defender for Endpoint gives y
 **Best practice**: Manage OAuth apps that are authorized by your users  
 **Detail**: Many users casually grant OAuth permissions to third-party apps to access their account information and, in doing so, inadvertently also give access to their data in other cloud apps. Usually, IT has no visibility into these apps making it difficult to weigh the security risk of an app against the productivity benefit that it provides.
 
-Defender for Cloud Apps provides you with the ability to investigate and monitor the app permissions your users granted. You can use this information to identify a potentially suspicious app and, if you determine that it is risky, you can be ban access to it.  
+Defender for Cloud Apps provides you with the ability to investigate and monitor the app permissions your users granted. You can use this information to identify a potentially suspicious app and, if you determine that it is risky, you can ban access to it.  
 **For more information**:
 
 * [Manage OAuth apps](manage-app-permissions.md)
@@ -88,7 +88,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 ---
 
 **Best practice**: Connect your apps  
-**Detail**: Connecting your apps to Defender for Cloud Apps gives you improved insights into your users' activities, threat detection, and governance capabilities. To see which  third-party app APIs are supported, go to [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) 
+**Detail**: Connecting your apps to Defender for Cloud Apps gives you improved insights into your users' activities, threat detection, and governance capabilities. To see which  third-party app APIs are supported, go to [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 **For more information**:
 
@@ -286,7 +286,7 @@ Use these recommendations to monitor the compliance status and security posture 
 ---
 
 **Best practice**: Onboard custom apps  
-**Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Defender for Cloud Apps. Once custom apps are configured, you see information about whose using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
+**Detail**: To gain additional visibility into activities from your line-of-business apps, you can onboard custom apps to Defender for Cloud Apps. Once custom apps are configured, you see information about who's using them, the IP addresses they are being used from, and how much traffic is coming into and out of the app.
 
 Additionally, you can onboard a custom app as a Conditional Access App Control app to monitor their low-trust sessions.  
 **For more information**:

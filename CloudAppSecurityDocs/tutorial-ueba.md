@@ -86,7 +86,26 @@ The User page helps you answer the questions:
   >[!NOTE]
   >It is important to remember that while the User page provides information for devices, resources, and accounts across all activities, the investigation priority score is the sum of all risky activities and alerts over the last 7 days.
 
-**Reset user score (gradual rollout)**: If the user was investigated and no suspicion for compromise was found, or in any case you prefer to reset the user's investigation priority score, you can reset the score by selecting the **Reset investigation priority score** link in the actions section in the top-right side of the page.
+### Reset user score
+
+If the user was investigated and no suspicion for compromise was found, or for any reason you prefer to reset the user's investigation priority score, you can manually reset the score.
+
+1. In the Defender for Cloud Apps dashboard, in the **Top users to investigate** tile, select the user you want to reset, or select **View all users to investigate**. Alternatively, under **Investigate** -> **Users and Accounts**, select the user with a value in the **Investigation priority** column.
+
+    > [!NOTE]
+    > Only users with a non-zero investigation priority score can be reset.
+
+1. In the window that opens, select **View User page** in the upper right.
+
+    ![Select View User page.](media/view-user-page.png)
+
+1. The user page will open in a new tab. Select the **Reset investigation priority score** link in the actions section in the top-right side of the page.
+
+    ![Select Reset investigation priority score link.](media/reset-investigation-priority-score.png)
+
+1. In the confirmation window, select **Reset score**.
+
+    ![Select Reset score button.](media/reset-score.png)
 
 ## Phase 3: Further investigate users<a name="investigate"></a>
 

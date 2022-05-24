@@ -1,7 +1,7 @@
 ---
 title: Create session policies in Defender for Cloud Apps
 description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
-ms.date: 02/22/2022
+ms.date: 05/24/2022
 ms.topic: how-to
 ---
 # Session policies
@@ -57,9 +57,12 @@ To create a new session policy, follow this procedure:
 
     * **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or doesn't equal **Native client**. This filter should be tested against your mobile and desktop apps for each cloud app.
 
-    You can also match the activity type to **Send item**, which allows you to match for specific applications. Defender for Cloud Apps will display all the available apps in your environment that can be controlled for the specific activity. For example, this can be used to block submission of specific content in Microsoft Forms.
-
-    ![Filter Activity type for Send item](media/activity-type.png)
+    * **Activity type**: Use this filter to select specific activities to be controlled, such as:
+      * Print
+      * Clipboard actions: Copy, Cut and Paste
+      * Send items in apps such as Teams, Slack and Salesforce
+      * Share and unshare items in various apps
+      * Edit items in various apps
 
     >[!NOTE]
     >Session policies don't support mobile and desktop apps. Mobile apps and desktop apps can also be blocked or allowed by creating an access policy.

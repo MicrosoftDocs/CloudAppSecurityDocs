@@ -18,7 +18,7 @@ With app governance visibility and insights, you can see:
 >Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in app governance.
 >
 
-See [administrator roles](app-governance-get-started.md#administrator-roles) for an overview of required administrator roles for visibility and insights.
+See [administrator roles](app-governance-get-started.md#roles) for an overview of required administrator roles for visibility and insights.
 
 With app governance, you can see:
 
@@ -42,8 +42,6 @@ With app governance, you can see:
 <!--
 - Policies created in Defender for Cloud Apps in the app governance portal.
 -->
-
-- Alerts for OAuth apps generated in Defender for Cloud Apps, in the app governance portal.
 
 You can also:
 

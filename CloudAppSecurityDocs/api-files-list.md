@@ -11,6 +11,7 @@ ms.topic: reference
 > [!NOTE]
 >
 > - This API is not available for Office 365 Cloud App Security.
+> - This endpoint may time out when filtering and paginating large collections.
 
 Run the GET or POST request to fetch a list of files matching the specified filters.
 
