@@ -40,13 +40,13 @@ Detect when files that are labeled **Confidential** and are stored in a cloud se
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Enable [Microsoft Information Protection integration](azip-integration.md).
+- Enable [Microsoft Purview Information Protection integration](azip-integration.md).
 
 ### Steps
 
 1. On the **Policies** page, create a new **File policy**.
 
-2. Set the filter **Sensitivity label** to **Microsoft Information Protection** equals the **Confidential** label, or your company's equivalent.
+2. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
 
 3. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
@@ -62,7 +62,7 @@ Detect files containing personally identifying information and other sensitive d
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- Enable [Microsoft Information Protection integration](azip-integration.md).
+- Enable [Microsoft Purview Information Protection integration](azip-integration.md).
 
 ### Steps
 
@@ -137,7 +137,7 @@ Sensitivity labels are configured and used inside the organization.
 
 1. On the **Policies** page, create a new **File policy**.
 
-2. Set the filter **Sensitivity label** to **Microsoft Information Protection** equals the **Confidential** label, or your company's equivalent.
+2. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
 
 3. Set the filter **Parent folder** does not equal, and then under **Select a folder** choose all the compliant folders in your organization.
 
@@ -220,7 +220,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Microsoft Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
+- [Microsoft Purview Information Protection integration (AIP)](azip-integration.md) is enabled and GDPR label is configured in AIP.
 
 ### Steps
 
@@ -302,7 +302,7 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 
 - Make sure your app is a SAML-based app that uses Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-- Microsoft Information Protection sensitivity labels must be configured and used inside your organization.
+- sensitivity labels from Microsoft Purview Information Protection must be configured and used inside your organization.
 
 ### Steps
 
@@ -322,7 +322,7 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 6. Select **Create**.
 
 > [!NOTE]
-> For the list of file types that Defender for Cloud Apps currently supports for Microsoft Information Protection sensitivity labels, see [Microsoft Information Protection integration prerequisites](azip-integration.md#prerequisites).
+> For the list of file types that Defender for Cloud Apps currently supports for sensitivity labels from Microsoft Purview Information Protection, see [Microsoft Purview Information Protection integration prerequisites](azip-integration.md#prerequisites).
 
 ## Next steps
 

@@ -19,7 +19,7 @@ To provide data protection, Microsoft Defender for Cloud Apps gives you visibili
 
 For example, use the **Files** page to secure externally shared files labeled as **Confidential**, as follows:
 
-After you connect an app to Defender for Cloud Apps, integrate with Microsoft Information Protection. Then, in the **Files** page, filter for files labeled **Confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
+After you connect an app to Defender for Cloud Apps, integrate with Microsoft Purview Information Protection. Then, in the **Files** page, filter for files labeled **Confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
 
 ![File filter confidential.](media/file-filter-confidential.png)
 
@@ -97,7 +97,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 - **File name** – File name or sub string of the name as defined in the cloud app. For example, all files with a password in their name.
 
 - **Sensitivity label** - Search for files with specific labels set. Labels are either:
-  - **Microsoft Information Protection** - Requires integration with Microsoft Information Protection.
+  - **Microsoft Purview Information Protection** - Requires integration with Microsoft Purview Information Protection.
   - **Defender for Cloud Apps** - Provides more insight into the files it scans. For each file scanned by Defender for Cloud Apps DLP, you can know if inspection was blocked because the file is encrypted or corrupted. For example, you can set up policies to alert and quarantine password-protected files that are shared externally.
     - **Azure RMS encrypted** – Files whose content wasn't inspected because they have an Azure RMS encryption set.
     - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
@@ -172,7 +172,7 @@ You can view more information about each file, by selecting the file itself in t
 - **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys.
 - **Owner** - View the user page for the owner of this file.
 - **Matched policies** - See a list of policies the file matched.
-- **Sensitivity labels** - View the list of Microsoft Information Protection sensitivity labels found in this file. You can then filter by all files matching this label.
+- **Sensitivity labels** - View the list of sensitivity labels from Microsoft Purview Information Protection found in this file. You can then filter by all files matching this label.
 
 The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Sensitivity labels**.
 

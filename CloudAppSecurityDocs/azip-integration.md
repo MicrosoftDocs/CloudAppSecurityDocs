@@ -1,16 +1,16 @@
 ---
-title: Integrate Microsoft Information Protection with Defender for Cloud Apps
-description: This article provides information about how to use Microsoft Information Protection sensitivity labels in Defender for Cloud Apps for added control of your organization's cloud app use.
+title: Integrate Microsoft Purview Information Protection with Defender for Cloud Apps
+description: This article provides information about how to use sensitivity labels from Microsoft Purview Information Protection in Defender for Cloud Apps for added control of your organization's cloud app use.
 ms.date: 11/17/2021
 ms.topic: how-to
 ---
-# Microsoft Information Protection integration
+# Microsoft Purview Information Protection integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Information Protection. These labels will be applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection. You can also investigate files by filtering for the applied sensitivity label within the Defender for Cloud Apps portal. Using labels enables greater visibility and control of your sensitive data in the cloud. Integrating Microsoft Information Protection with Defender for Cloud Apps is as easy as selecting a single checkbox.
+Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview Information Protection. These labels will be applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection. You can also investigate files by filtering for the applied sensitivity label within the Defender for Cloud Apps portal. Using labels enables greater visibility and control of your sensitive data in the cloud. Integrating Microsoft Purview Information Protection with Defender for Cloud Apps is as easy as selecting a single checkbox.
 
-By integrating Microsoft Information Protection into Defender for Cloud Apps, you can use the full power of both services and secure files in your cloud, including:
+By integrating Microsoft Purview Information Protection into Defender for Cloud Apps, you can use the full power of both services and secure files in your cloud, including:
 
 - The ability to apply sensitivity labels as a governance action to files that match specific policies
 - The ability to view all classified files in a central location
@@ -22,11 +22,11 @@ By integrating Microsoft Information Protection into Defender for Cloud Apps, yo
 > [!NOTE]
 > To enable this feature, you need both a Defender for Cloud Apps license and a license for Azure Information Protection Premium P1. As soon as both licenses are in place, Defender for Cloud Apps syncs the organization's labels from the Azure Information Protection service.
 
-- To work with Microsoft Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
+- To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
 
-For Defender for Cloud Apps to apply sensitivity labels, they must be published as part of a sensitivity label policy in the Microsoft 365 compliance center.
+For Defender for Cloud Apps to apply sensitivity labels, they must be published as part of a sensitivity label policy in the Microsoft Purview compliance portal.
 
-Defender for Cloud Apps currently supports applying Microsoft Information Protection sensitivity labels for the following file types:
+Defender for Cloud Apps currently supports applying sensitivity labels from Microsoft Purview Information Protection for the following file types:
 
 - Word: docm, docx, dotm, dotx
 - Excel: xlam, xlsm, xlsx, xltx
@@ -39,7 +39,7 @@ This feature is currently available for files stored in Box, Google Workspace, S
 
 ## How it works
 
-You can see the Microsoft Information Protection sensitivity labels in Defender for Cloud Apps. As soon as you integrate Defender for Cloud Apps with Microsoft Information Protection, Defender for Cloud Apps scans files as follows:
+You can see the sensitivity labels from Microsoft Purview Information Protection in Defender for Cloud Apps. As soon as you integrate Defender for Cloud Apps with Microsoft Purview Information Protection, Defender for Cloud Apps scans files as follows:
 
 1. Defender for Cloud Apps retrieves the list of all the sensitivity labels used in your tenant. This action is performed every hour to keep the list up to date.
 
@@ -48,9 +48,9 @@ You can see the Microsoft Information Protection sensitivity labels in Defender 
     - If you enabled automatic scan, all new or modified files are added to the scan queue and all existing files and repositories will be scanned.
     - If you set a file policy to search for sensitivity labels, these files are added to the scan queue for sensitivity labels.
 
-3. As noted above, these scans are for the sensitivity labels discovered in the initial scan Defender for Cloud Apps does to see which sensitivity labels are used in your tenant. External labels, classification labels set by someone external to your tenant, are added to the list of classification labels. If you don't want to scan for these, select the **Only scan files for Microsoft Information Protection sensitivity labels and content inspection warnings from this tenant** check box.
+3. As noted above, these scans are for the sensitivity labels discovered in the initial scan Defender for Cloud Apps does to see which sensitivity labels are used in your tenant. External labels, classification labels set by someone external to your tenant, are added to the list of classification labels. If you don't want to scan for these, select the **Only scan files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings from this tenant** check box.
 
-4. After you enable Microsoft Information Protection on Defender for Cloud Apps, all new files that are added to your connected cloud apps will be scanned for sensitivity labels.
+4. After you enable Microsoft Purview Information Protection on Defender for Cloud Apps, all new files that are added to your connected cloud apps will be scanned for sensitivity labels.
 
 5. You can create new policies within Defender for Cloud Apps that apply your sensitivity labels automatically.
 
@@ -63,11 +63,11 @@ You can see the Microsoft Information Protection sensitivity labels in Defender 
 
 <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>
 
-## How to integrate Microsoft Information Protection with Defender for Cloud Apps
+## How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps
 
-### Enable Microsoft Information Protection
+### Enable Microsoft Purview Information Protection
 
-All you have to do to integrate Microsoft Information Protection with Defender for Cloud Apps is select a single checkbox. By enabling automatic scan, you enable searching for Microsoft Information Protection sensitivity labels on your Office 365 files without the need to create a policy. After you enable it, if you have files in your cloud environment that are labeled with Microsoft Information Protection sensitivity labels, you'll see them in Defender for Cloud Apps.
+All you have to do to integrate Microsoft Purview Information Protection with Defender for Cloud Apps is select a single checkbox. By enabling automatic scan, you enable searching for sensitivity labels from Microsoft Purview Information Protection on your Office 365 files without the need to create a policy. After you enable it, if you have files in your cloud environment that are labeled with sensitivity labels from Microsoft Purview Information Protection, you'll see them in Defender for Cloud Apps.
 
 To enable Defender for Cloud Apps to scan files with content inspection enabled for sensitivity labels:
 
@@ -75,20 +75,20 @@ To enable Defender for Cloud Apps to scan files with content inspection enabled 
 
     ![Settings menu.](media/azip-system-settings.png)
 
-1. Under **Microsoft Information Protection**, select **Automatically scan new files for Microsoft Information Protection sensitivity labels and content inspection warnings**.
+1. Under **Microsoft Purview Information Protection**, select **Automatically scan new files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings**.
 
-    ![Enable Microsoft Information Protection.](media/enable-azip.png)
+    ![Enable Microsoft Purview Information Protection.](media/enable-azip.png)
 
-After enabling Microsoft Information Protection, you'll be able to see files that have sensitivity labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Microsoft Information Protection integration features to apply Microsoft Information Protection sensitivity labels (with or without encryption) in the Defender for Cloud Apps portal, by adding them directly to files or by configuring a file policy to apply sensitivity labels automatically as a governance action.
+After enabling Microsoft Purview Information Protection, you'll be able to see files that have sensitivity labels and filter them per label in Defender for Cloud Apps. After Defender for Cloud Apps is connected to the cloud app, you'll be able to use the Microsoft Purview Information Protection integration features to apply sensitivity labels from Microsoft Purview Information Protection (with or without encryption) in the Defender for Cloud Apps portal, by adding them directly to files or by configuring a file policy to apply sensitivity labels automatically as a governance action.
 
 > [!NOTE]
-> Automatic scan does not scan existing files until they are modified again. To scan existing files for Microsoft Information Protection sensitivity labels, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects Microsoft Information Protection sensitivity labels.
+> Automatic scan does not scan existing files until they are modified again. To scan existing files for sensitivity labels from Microsoft Purview Information Protection, you must have at least one **File policy** that includes content inspection. If you have none, create a new **File policy**, delete all the preset filters, under **Inspection method** select **Built-in DLP**. In the **Content inspection** field, select **Include files that match a preset expression** and select any predefined value, and save the policy. This enables content inspection, which automatically detects sensitivity labels from Microsoft Purview Information Protection.
 
 #### Set internal and external labels
 
 By default, Defender for Cloud Apps scans sensitivity labels that were defined in your organization as well as external ones defined by other organizations.
 
-To ignore sensitivity labels set external to your organization, in the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go to **Settings** and then **Microsoft Information Protection**. Select **Only scan files for Microsoft Information Protection sensitivity labels and content inspection warnings from this tenant**.
+To ignore sensitivity labels set external to your organization, in the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go to **Settings** and then **Microsoft Purview Information Protection**. Select **Only scan files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings from this tenant**.
 
 ![Ignore labels.](media/azip-ignore.png)
 
@@ -99,7 +99,7 @@ To ignore sensitivity labels set external to your organization, in the [Defender
     ![Apply sensitivity label.](media/protect-app.png)
 
     >[!NOTE]
-    > Defender for Cloud Apps can apply Microsoft Information Protection on files that are up to 30 MB.
+    > Defender for Cloud Apps can apply Microsoft Purview Information Protection on files that are up to 30 MB.
 
 2. Choose one of your organization's sensitivity labels to apply to the file, and select **Apply**.
 
@@ -109,7 +109,7 @@ To ignore sensitivity labels set external to your organization, in the [Defender
 
 4. You can also remove sensitivity labels by choosing the **Remove sensitivity label** option.
 
-For more information about how Defender for Cloud Apps and Microsoft Information Protection work together, see [Automatically apply Microsoft Information Protection sensitivity labels](use-case-information-protection.md).
+For more information about how Defender for Cloud Apps and Microsoft Purview Information Protection work together, see [Automatically apply sensitivity labels from Microsoft Purview Information Protection](use-case-information-protection.md).
 
 ### Automatically label files
 
@@ -130,13 +130,13 @@ Follow these instructions to create the file policy:
 
 ### Control file exposure
 
-- For example, if you labeled the document below with a Microsoft Information Protection sensitivity label:
+- For example, if you labeled the document below with a Microsoft Purview Information Protection sensitivity label:
 
-    ![Sample Microsoft Information Protection screen.](media/azip-screen.png)
+    ![Sample Microsoft Purview Information Protection screen.](media/azip-screen.png)
 
-- You can see this document in Defender for Cloud Apps by filtering on the sensitivity label for Microsoft Information Protection in the **Files** page.
+- You can see this document in Defender for Cloud Apps by filtering on the sensitivity label for Microsoft Purview Information Protection in the **Files** page.
 
-    ![Defender for Cloud Apps compared to Microsoft Information Protection.](media/cas-compared-azip.png)
+    ![Defender for Cloud Apps compared to Microsoft Purview Information Protection.](media/cas-compared-azip.png)
 
 - You can get more information about these files and their sensitivity labels in the file drawer. Just select the relevant file in the **Files** page and check whether it has a sensitivity label.
 
@@ -169,7 +169,7 @@ Follow these instructions to create the file policy:
 You can also choose to set alerts, user notification or take immediate action for these policies.
 Learn more about [governance actions](governance-actions.md).
 
-Learn more about [Microsoft Information Protection](/microsoft-365/compliance/information-protection).
+Learn more about [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection).
 
 ## Next steps
 

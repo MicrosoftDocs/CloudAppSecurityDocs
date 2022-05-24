@@ -101,7 +101,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 ### Information protection
 
-|     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply Microsoft Information Protection sensitivity labels |
+|     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply sensitivity labels from Microsoft Purview Information Protection |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
 | Atlassian (Preview) |  |  |  |  |  |
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
