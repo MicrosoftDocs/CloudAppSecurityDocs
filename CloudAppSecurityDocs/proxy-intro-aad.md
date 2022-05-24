@@ -182,7 +182,7 @@ It's possible to bypass the defined session policy by modifying parameters. For 
 Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
 
 - **Context loss**  
-In the following applications, we've encountered scenarios where the navigating to a link may result in loss of the full path of the link and typically lands the user on the home page of the app. 
+In the following applications, we've encountered scenarios where navigating to a link may result in loss of the full path of the link and typically the user lands on the home page of the app. 
   - ArcGIS
   - GitHub
   - Microsoft Dynamics 365 CRM
