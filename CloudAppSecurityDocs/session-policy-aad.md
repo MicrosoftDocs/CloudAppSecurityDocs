@@ -56,7 +56,7 @@ To create a new session policy, follow this procedure:
 
     * **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equals or doesn't equal **Native client**. This filter should be tested against your mobile and desktop apps for each cloud app.
 
-    * **Activity type**: Use this filter to select specific activities to be contrlloed, such as:
+    * **Activity type**: Use this filter to select specific activities to be controlled, such as:
     * Print
     * Clipboard actions: Copy, Cut and Paste
     * Sent items in apps such as Teams, Slack and Salesforce
