@@ -17,7 +17,7 @@ Microsoft Defender for Cloud Apps supports role-based access control. This artic
 > [!NOTE]
 >
 > - Office 365 and Azure AD roles aren't listed in the Defender for Cloud Apps **Manage admin access** page. To assign roles in Office 365 or Azure Active Directory, go to the relevant RBAC settings for that service.
-> - Defender for Cloud Apps uses Azure Active Directory to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in AAD to never sign out when inactive, the same setting will apply in Defender for Cloud Apps as well.
+> - Defender for Cloud Apps uses Azure Active Directory to determine the user's [directory level inactivity timeout setting](/azure/azure-portal/set-preferences#change-the-directory-timeout-setting-admin). If a user is configured in Azure Active Directory to never sign out when inactive, the same setting will apply in Defender for Cloud Apps as well.
 
 By default, the following Office 365 and [Azure AD](/azure/active-directory/roles/permissions-reference) admin roles have access to Defender for Cloud Apps:
 
