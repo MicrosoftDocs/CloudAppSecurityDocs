@@ -268,11 +268,11 @@ items:
     items:
     - name: Protect apps with Conditional Access App Control
       href: proxy-intro-aad.md
-    - name: Deploy for catalog apps with AAD
+    - name: Deploy for catalog apps with Azure Active Directory
       href: proxy-deployment-aad.md
     - name: Deploy for catalog apps with non-Microsoft IdP
       href: proxy-deployment-featured-idp.md
-    - name: Deploy for custom apps with AAD
+    - name: Deploy for custom apps with Azure Active Directory
       href: proxy-deployment-any-app.md
     - name: Deploy for custom apps with non-Microsoft IdP
       href: proxy-deployment-any-app-idp.md
