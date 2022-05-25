@@ -427,17 +427,17 @@ This detection identifies an OAuth app that was detected by Machine Learning mod
 1. Review the scopes granted by the app.
 1. Review the user activity associated with this app.
 
-### Suspicious enumeration activities performed using AAD PowerShell
+### Suspicious enumeration activities performed using Azure Active Directory PowerShell
 
 **Severity**: Medium
 
 **MITRE ID**: T1087
 
-This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an AAD PowerShell application.
+This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an Azure AD PowerShell application.
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the AAD PowerShell application.
+- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the Azure AD PowerShell application.
 
   **Recommended action**: Disable and remove the application and reset the password.
 
