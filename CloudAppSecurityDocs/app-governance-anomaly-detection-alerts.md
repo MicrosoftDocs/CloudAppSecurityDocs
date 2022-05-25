@@ -582,7 +582,7 @@ This detection identifies that an App consented to high privilege scope, created
 
 **Severity**: Medium
 
-**MITRE ID’s**: T1137, T1213
+**MITRE IDs**: T1137, T1213
 
 This detection identifies OAuth apps with high privilege permissions that perform a large number of searches and edits in OneDrive using Graph API.
 
