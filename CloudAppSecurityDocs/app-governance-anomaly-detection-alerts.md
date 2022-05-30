@@ -640,7 +640,7 @@ This detection identifies apps consented to high privilege OAuth scopes, that ac
 
   **Recommended Action**:  Disable and remove the app and reset the password
 
-- **FP**: If you’re able to confirm that unusual activities performed in Microsoft Team through Graph API for legitimate reasons. 
+- **FP**: If you’re able to confirm that the unusual activities performed in Microsoft Teams through Graph API were for legitimate reasons. 
 
   **Recommended Action**: Dismiss the alert 
  
