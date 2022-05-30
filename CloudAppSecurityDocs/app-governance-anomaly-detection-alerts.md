@@ -638,7 +638,7 @@ This detection identifies apps consented to high privilege OAuth scopes, that ac
 
 - **TP**: If you’re able to confirm that unusual chat message activities in Microsoft Teams through Graph API by an OAuth app with a high privilege scope, and the app is delivered from an unknown source. 
 
-  **Recommended Action**:  Disable and remove the App and reset the password
+  **Recommended Action**:  Disable and remove the app and reset the password
 
 - **FP**: If you’re able to confirm that unusual activities performed in Microsoft Team through Graph API for legitimate reasons. 
 
