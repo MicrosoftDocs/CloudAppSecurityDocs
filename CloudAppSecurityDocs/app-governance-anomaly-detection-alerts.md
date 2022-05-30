@@ -627,3 +627,26 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review the scopes granted by the app.  
 1. Review any inbox rule action created by the app.  
 1. Review any high importance email read activity done by the app.
+
+### App accessed Teams channels and post messages
+
+**Severity**: Medium 
+ 
+This detection identifies App consented to high privilege OAuth scope, accessed Microsoft Teams, joined multiple Teams channel, and made unusual volume of send / reply to chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API. 
+ 
+**TP or FP?** 
+
+- **TP**: If you’re able to confirm that unusual chat message activities in Microsoft Teams through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source. 
+
+  **Recommended Action**:  Disable and remove the App and reset the password
+
+- **FP**: If you’re able to confirm that unusual activities performed in Microsoft Team through Graph API for legitimate reasons. 
+
+  **Recommended Action**: Dismiss the alert 
+ 
+**Understand the scope of the breach**
+
+1.	Review the scopes granted by the app.
+2.	Review all activities done by the app.
+3.	Review the user activity associated with the app. 
+
