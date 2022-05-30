@@ -632,7 +632,7 @@ This detection identifies that an App consented to high privilege scope, creates
 
 **Severity**: Medium 
  
-This detection identifies App consented to high privilege OAuth scope, accessed Microsoft Teams, joined multiple Teams channel, and made unusual volume of send / reply to chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API. 
+This detection identifies apps consented to high privilege OAuth scopes, that accessed Microsoft Teams, joined multiple Teams channels, and made an unusual volume of send / reply to chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API. 
  
 **TP or FP?** 
 
