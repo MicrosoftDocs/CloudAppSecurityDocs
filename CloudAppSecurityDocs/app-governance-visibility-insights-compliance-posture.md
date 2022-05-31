@@ -25,14 +25,14 @@ From this page, you can see:
 
   From this information, you can determine the level of risk to your organization by overprivileged and highly privileged apps.
 
-- For alerts:
+- For incidents:
 
-  - How many active alerts your tenant has
-  - How many are based on app governance detections (**Threat alerts**)
-  - How many are based on app policies you have in place (**Policy alerts**)
-  - The 10 latest alerts
+  - How many active incidents your tenant has
+  - How many are based on app governance detections (**Threat incidents**)
+  - How many are based on app policies you have in place (**Policy incidents**)
+  - The 10 latest incidents
 
-  From this information, you can determine how quickly alerts are being generated and the relative number of detected and policy-based alerts.
+  From this information, you can determine how quickly incidents are being generated and the relative number of detected and policy-based incidents.
 
 - For data usage:
 
