@@ -27,6 +27,8 @@ You can purchase app governance as an add-on license to any license that entitle
 
 For a list of these licenses, see the [Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing). You can confirm the licenses in your tenant at Microsoft 365 admin center.
 
+App governance is currently not available as an add-on for Microsoft Defender for Cloud Apps Discovery, and Microsoft Office 365 Cloud App Security.
+
 ## Roles
 
 > [!NOTE]
