@@ -17,8 +17,8 @@ You can also access the app governance dashboard from **Office 365 > Microsoft 3
 
 The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
 
-- **Tenant summary**: The count of key app and alert categories.
-- **Latest alerts**: The 10 most recent active alerts in the tenant
+- **Tenant summary**: The count of key app and incident categories.
+- **Latest incidents**: The 10 most recent active incidents in the tenant
 - **Data usage**: Mouse over each month column in the graph to see the corresponding value.
   - **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
   - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
