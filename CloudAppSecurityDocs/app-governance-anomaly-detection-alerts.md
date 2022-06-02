@@ -427,17 +427,17 @@ This detection identifies an OAuth app that was detected by Machine Learning mod
 1. Review the scopes granted by the app.
 1. Review the user activity associated with this app.
 
-### Suspicious enumeration activities performed using AAD PowerShell
+### Suspicious enumeration activities performed using Azure Active Directory PowerShell
 
 **Severity**: Medium
 
 **MITRE ID**: T1087
 
-This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an AAD PowerShell application.
+This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an Azure AD PowerShell application.
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the AAD PowerShell application.
+- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the Azure AD PowerShell application.
 
   **Recommended action**: Disable and remove the application and reset the password.
 
@@ -578,6 +578,31 @@ This detection identifies that an App consented to high privilege scope, created
 1. Review any inbox rule action created by the app.  
 1. Review any SharePoint or OneDrive search activities done by the app.
 
+### App made numerous searches and edits in OneDrive
+
+**Severity**: Medium
+
+**MITRE IDs**: T1137, T1213
+
+This detection identifies OAuth apps with high privilege permissions that perform a large number of searches and edits in OneDrive using Graph API.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that a high usage of OneDrive workload via Graph API is not expected from this OAuth application having high privilege permissions to read and write to OneDrive, then a true positive is indicated. 
+
+  **Recommended Action**: Based on the investigation, if the application is malicious, you can revoke consents and disable the application in the tenant. If it is a compromised application, you can revoke the consents, temporarily disable the app, review the required permissions, reset the password and then re-enable the app.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Resolve the alert and report your findings.
+
+**Understand the scope of the breach**
+
+1. Verify if the app is from a reliable source.
+1. Verify if the application was newly created or has had any recent changes made to it.
+1. Review the permissions granted to the application and users that have consented to the application. 
+1. Investigate all other app activities.
+
 ### App made high volume of importance mail read and created inbox rule
 
 **Severity**: Medium  
@@ -602,3 +627,26 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review the scopes granted by the app.  
 1. Review any inbox rule action created by the app.  
 1. Review any high importance email read activity done by the app.
+
+### App accessed Teams channels and posted messages
+
+**Severity**: Medium 
+ 
+This detection identifies apps consented to high privilege OAuth scopes, that accessed Microsoft Teams, joined multiple Teams channels, and made an unusual volume of send / reply to chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API. 
+ 
+**TP or FP?** 
+
+- **TP**: If you’re able to confirm that unusual chat message activities in Microsoft Teams through Graph API by an OAuth app with a high privilege scope, and the app is delivered from an unknown source. 
+
+  **Recommended Action**:  Disable and remove the app and reset the password
+
+- **FP**: If you’re able to confirm that the unusual activities performed in Microsoft Teams through Graph API were for legitimate reasons. 
+
+  **Recommended Action**: Dismiss the alert 
+ 
+**Understand the scope of the breach**
+
+1.	Review the scopes granted by the app.
+2.	Review all activities done by the app.
+3.	Review the user activity associated with the app. 
+

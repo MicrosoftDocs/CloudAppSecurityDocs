@@ -18,11 +18,11 @@ Microsoft Defender for Cloud Apps exposes much of its data and actions through a
 
 In general, you’ll need to take the following steps to use the APIs:
 
-- Create an AAD application
+- Create an Azure Active Directory (Azure AD) application
 - Get an access token using this application
 - Use the token to access Defender for Cloud Apps API
 
-This page explains how to create an AAD application, get an access token to Microsoft Defender for Cloud Apps and validate the token.
+This page explains how to create an Azure AD application, get an access token to Microsoft Defender for Cloud Apps and validate the token.
 
 >[!NOTE]
 > When accessing Microsoft Defender for Cloud Apps API on behalf of a user, you will need the correct Application permission and user permission.
@@ -99,7 +99,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Get an access token
 
-For more information on AAD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on Azure AD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using C#
 

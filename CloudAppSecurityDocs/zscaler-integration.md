@@ -24,8 +24,8 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
 
 1. In the Zscaler portal, do the steps to complete the [Zscaler partner integration with Microsoft Defender for Cloud Apps](https://help.zscaler.com/zia/configuring-mcas-integration).
 2. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), do the following integration steps:
-    1. Click on the settings cog and select **Cloud Discovery Settings**.
-    2. Click on the **Automatic log upload** tab and then click **Add data source**.
+    1. Select the settings cog and then select **Cloud Discovery Settings**.
+    2. Select the **Automatic log upload** tab and then select **Add data source**.
     3. In the **Add data source** page, enter the following settings:
 
         - Name = NSS
@@ -37,7 +37,7 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
         > [!NOTE]
         > Make sure the name of the data source is **NSS.** For more information about setting up NSS feeds, see [Adding Defender for Cloud Apps NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
-    4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
+    4. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
 
 3. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 

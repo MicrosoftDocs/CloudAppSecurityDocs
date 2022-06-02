@@ -179,7 +179,7 @@ June 13, 2021
 Cloud App Security now surfaces whether a publisher of an Office 365 OAuth app has been verified by Microsoft to enable higher app trust. This feature is in a gradual rollout. For more information, see [Working with the OAuth app page](manage-app-permissions.md#working-with-the-oauth-apps-page).
 
 - **Azure Active Directory Cloud App Security admin**  
-A Cloud App Security admin role has been added to Azure Active Directory (AAD), allowing the assignment of global admin capabilities to Cloud App Security alone via AAD. For more information, see [Office 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
+A Cloud App Security admin role has been added to Azure Active Directory (Azure AD), allowing the assignment of global admin capabilities to Cloud App Security alone via Azure AD. For more information, see [Office 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
 
 - **Export custom tag and app domains per discovered app**  
 **Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
@@ -220,7 +220,7 @@ We've expanded the available events in Cloud App Security. Microsoft 365 Defende
 Released April 4, 2021
 
 - **Exclusion of Azure Active Directory groups entities from discovery**  
-We've added the ability to exclude discovered entities based on imported Azure Active Directory groups. Excluding AAD groups will hide all discovery-related data for any users in these groups. For more information, see [Exclude entities](discovered-apps.md#exclude-entities).
+We've added the ability to exclude discovered entities based on imported Azure Active Directory groups. Excluding Azure AD groups will hide all discovery-related data for any users in these groups. For more information, see [Exclude entities](discovered-apps.md#exclude-entities).
 
 - **API connector support for ServiceNow Orlando and Paris versions**  
 We have added support for the ServiceNow API connector to the Orlando and Paris versions. For more information, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md).
