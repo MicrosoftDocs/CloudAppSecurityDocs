@@ -478,6 +478,30 @@ This detection identifies an OAuth application that is using an unusual user age
 2. Review all activities done by the app.  
 3. Review the scopes granted by the app.  
 
+### App with an unusual user agent accessed email data through Exchange Web Services
+
+**Severity**: High
+
+**MITRE ID**: T1114, T1567
+
+This detection identifies an OAuth app that used an unusual user agent to access email data using Exchange Web services API. 
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth application is not expected to change the user agent it uses to make requests to the Exchange Web Services API, then a true positive is indicated. 
+
+  **Recommended actions**: Classify the alert as a TP. Based on the investigation, if the app is malicious, you can revoke consents and disable the app in the tenant. If it is a compromised app, you can revoke the consents, temporarily disable the app, review the permissions, reset the secret and certificate and then re-enable the app.
+
+- **FP**: If after investigation, you can confirm that the user agent used by the application has a legitimate business use in the organization.
+
+  **Recommended action**: Classify the alert as a FP. Also, please consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+1. Review if the application was newly created or has had any recent changes made to it. 
+2. Review the permissions granted to the application and users that have consented to the application.   
+3. Review all activities done by the app. 
+
 ## Collection alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to gather data of interest to their goal from your organization.
