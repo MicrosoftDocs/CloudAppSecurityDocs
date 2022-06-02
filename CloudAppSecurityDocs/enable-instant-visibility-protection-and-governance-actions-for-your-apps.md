@@ -88,11 +88,11 @@ The following tables list, per cloud app, which abilities are supported with App
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
-| Office 365        | ✔                                    | ✔                         | ✔                         | Preview                  |
+| Office 365        | ✔                                    | ✔                         | ✔                         |                   |
 | Okta              |                                      | Not applicable            | Not applicable            |             |
 | OneLogin | |  |  |  |
-| Service  Now      |                                      |                           |                           | Preview |
-| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview                  |
+| Service  Now      |                                      |                           |                           | Preview (At General Availability the licensing of this capability may be changed) |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview (At General Availability the licensing of this capability may be changed)                  |
 | Slack |  |  |  |  |
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
