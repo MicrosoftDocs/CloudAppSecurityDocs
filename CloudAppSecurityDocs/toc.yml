@@ -535,3 +535,5 @@ items:
     href: /microsoft-365/security/defender-endpoint/
   - name: Microsoft Defender for Identity
     href: /defender-for-identity/
+  - name: Microsoft Defender Vulnerability Management
+    href: /microsoft-365/security/defender-vulnerability-management/
