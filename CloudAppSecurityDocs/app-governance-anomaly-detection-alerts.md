@@ -628,11 +628,11 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review any inbox rule action created by the app.  
 1. Review any high importance email read activity done by the app.
 
-### App accessed Teams channels and posted messages
+### App made unusual chat activities in Teams
 
 **Severity**: Medium 
  
-This detection identifies apps consented to high privilege OAuth scopes, that accessed Microsoft Teams, joined multiple Teams channels, and made an unusual volume of send / reply to chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API. 
+This detection identifies apps consented to high privilege OAuth scopes, that accessed Microsoft Teams, and made an unusual volume of read or post chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API. 
  
 **TP or FP?** 
 
