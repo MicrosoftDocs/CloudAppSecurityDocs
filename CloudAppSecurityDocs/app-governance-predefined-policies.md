@@ -7,7 +7,11 @@ description: Get started learning about predefined app policies.
 
 # Predefined app policies
 
-App governance contains a set of out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to.
+App governance contains a set of out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to.<br>
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YpJN]
+
 
 ## Working with predefined policies
 
