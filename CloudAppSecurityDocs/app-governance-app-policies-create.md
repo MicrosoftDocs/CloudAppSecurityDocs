@@ -11,11 +11,11 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 
 - Specify conditions by which app governance can alert you to app behavior for automatic or manual remediation.
 - Implement the app compliance policies for your organization.
-
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
 
+<br>
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
 To create a new app policy, go to **Microsoft 365 Defender > App governance > Overview page > Policies**. Select the **Create New Policy** option:
