@@ -1,8 +1,8 @@
 ---
-title: Create app policies
+title: Create app policies on app governance
 ms.date: 11/09/2021
 ms.topic: how-to
-description: Learn how to create app policies.
+description: Learn how to create app policies on app governance.
 ---
 
 # Create app policies
@@ -13,6 +13,9 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 - Implement the app compliance policies for your organization.
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
 
 To create a new app policy, go to **Microsoft 365 Defender > App governance > Overview page > Policies**. Select the **Create New Policy** option:
 
