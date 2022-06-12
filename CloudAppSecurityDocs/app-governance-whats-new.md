@@ -11,10 +11,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](release-notes.md)
 - [What's new in Microsoft 365 Defender](https://docs.microsoft.com/en-us/microsoft-365/security/defender/whats-new?view=o365-worldwide) 
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint) 
-- [What's new in Microsoft Defender for Identity](https://docs.microsoft.com/en-us/defender-for-identity/whats-new)
+- [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
 
 ## App governance May 2022 release
 - **Predefined policies GA**: App governance released a set of out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to. [Learn more here](app-governance-predefined-policies.md)
 -  **Teams workload GA**: App governance added insights, policy capabilities, and governance for the Teams workload. You can see data usage, permissions usage, and create policies on Teams permissions and usage.
--  **App governance alerts unified in the M365D alerts and incidents queues**: the app governance alerts queue has been unified with the Microsoft 365 Defender alerts experience and are aggregated into incidents 
+-  **App governance alerts unified in the M365D alerts and incidents queues**: The app governance alerts queue has been unified with the Microsoft 365 Defender alerts experience and are aggregated into incidents. 
