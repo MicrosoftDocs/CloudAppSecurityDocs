@@ -62,13 +62,13 @@ Follow these steps to configure any app to be controlled by Defender for Cloud A
 
 1. In Azure AD, browse to **Security** > **Conditional Access**.
 
-1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy**.
+1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy** -> **Create new policy**.
 
 1. On the **New** pane, in the **Name** textbox, enter the policy name.
 
-1. Under **Assignments**, select **Users and groups**, assign the users that will be onboarding (initial sign-on and verification) the app, and then select **Done**.
+1. Under **Assignments**, select **Users or workload identities**, assign the users that will be onboarding (initial sign-on and verification) the app, and then select **Done**.
 
-1. Under **Assignments**, select **Cloud apps**, assign the apps you want to control with Conditional Access App Control, and then select **Done**.
+1. Under **Assignments**, select **Cloud apps or actions**, assign the apps you want to control with Conditional Access App Control, and then select **Done**.
 
 1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then click **Select**.
 
