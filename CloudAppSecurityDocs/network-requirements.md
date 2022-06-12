@@ -214,6 +214,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
   |     EU1     | <https://prod02euwconsole1.blob.core.windows.net/>          |
   |     EU2     | <https://prod4uksconsole1.blob.core.windows.net/>           |
   |   Gov US1   | <https://gprd1usgvconsole1.blob.core.usgovcloudapi.net/>    |
+  |     GCC     | <https://gccm1usgvconsole1.blob.core.usgovcloudapi.net/>    |
 
 > [!NOTE]
 >
