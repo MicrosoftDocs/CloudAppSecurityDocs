@@ -68,7 +68,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. Under **Activity source** in the **Files matching all of the following** section, set the following filters:
 
-    - **Sensitivity labels**: If you use Microsoft Information Protection sensitivity labels, filter the files based on a specific Microsoft Information Protection sensitivity label.
+    - **Sensitivity labels**: If you use sensitivity labels from Microsoft Purview Information Protection, filter the files based on a specific Microsoft Purview Information Protection sensitivity label.
 
     - Select **File name** or **File type** to apply restrictions based on file name or type.
 

@@ -121,12 +121,12 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 
 ## Discover, classify, label, and protect regulated and sensitive data stored in the cloud
 
-**Best practice**: Integrate with Microsoft Information Protection  
-**Detail**: Integrating with Microsoft Information Protection gives you the capability to automatically apply sensitivity labels and optionally add encryption protection. Once the integration is turned on, you can apply labels as a governance action, view files by classification, investigate files by classification level, and create granular policies to make sure classified files are being handled properly. If you do not turn on the integration, you cannot benefit from the ability to automatically scan, label, and encrypt files in the cloud.  
+**Best practice**: Integrate with Microsoft Purview Information Protection  
+**Detail**: Integrating with Microsoft Purview Information Protection gives you the capability to automatically apply sensitivity labels and optionally add encryption protection. Once the integration is turned on, you can apply labels as a governance action, view files by classification, investigate files by classification level, and create granular policies to make sure classified files are being handled properly. If you do not turn on the integration, you cannot benefit from the ability to automatically scan, label, and encrypt files in the cloud.  
 **For more information**:
 
-* [Microsoft Information Protection integration](azip-integration.md)
-* [Tutorial: Automatically apply Microsoft Information Protection sensitivity labels](use-case-information-protection.md)
+* [Microsoft Purview Information Protection integration](azip-integration.md)
+* [Tutorial: Automatically apply sensitivity labels from Microsoft Purview Information Protection](use-case-information-protection.md)
 
 ---
 
