@@ -74,7 +74,7 @@ items:
       href: protect-azure.md
     - name: Protect Box
       href: protect-box.md
-    - name: Protect DocuSign (Preview)
+    - name: Protect DocuSign
       href: protect-docusign.md
     - name: Protect Dropbox
       href: protect-dropbox.md
@@ -230,7 +230,7 @@ items:
       href: ./connect-aws.md
     - name: Connect Box
       href: ./connect-box.md
-    - name: Connect DocuSign (Preview)
+    - name: Connect DocuSign
       href: ./connect-docusign.md
     - name: Connect Dropbox
       href: ./connect-dropbox.md
