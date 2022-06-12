@@ -103,7 +103,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
     - **Password encrypted** – Files whose content wasn't inspected because they're password protected by the user.
     - **Corrupt file** – Files whose content wasn't inspected because their contents couldn't be read.
 
-- **File type** – Defender for Cloud Apps takes both the MIME type received (see table) from the service and scans the file to determine the true file type. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, *All folders that are ...* or *All spreadsheet files that are...*
+- **File type** – Defender for Cloud Apps scans the file to determine whether the true file type matches the MIME type received (see table) from the service. This scan is for files that are relevant for data scan (documents, images, presentations, spreadsheets, text, and zip/archive files). The filter works per file/folder type. For example, *All folders that are ...* or *All spreadsheet files that are...*
 
     | MIME type | File type |
     |--|--|
