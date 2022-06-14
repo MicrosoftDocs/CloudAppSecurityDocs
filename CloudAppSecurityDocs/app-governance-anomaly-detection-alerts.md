@@ -674,3 +674,51 @@ This detection identifies apps consented to high privilege OAuth scopes, that ac
 2.	Review all activities done by the app.
 3.	Review the user activity associated with the app. 
 
+### Anomalous OneDrive activity by app that just updated or added new credentials
+
+**Severity**: Medium 
+
+**MITRE IDs**: T1098.001, T1213
+ 
+A non-Microsoft cloud app made anomalous Graph API calls to OneDrive, including high-volume data usage. Detected by machine learning, these unusual API calls were made within a few days after the app added new or updated existing certificates/secrets. This app might be involved in data exfiltration or other attempts to access and retrieve sensitive information.
+ 
+**TP or FP?** 
+
+- **TP**: If you can confirm that unusual activities, such as high-volume usage of OneDrive workload, were performed by the app through Graph API. 
+
+  **Recommended Action**: Temporarily disable the app, reset the password and then re-enable the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app or that the app is intended to make unusually high volume of Graph calls. 
+
+  **Recommended Action**: Dismiss the alert 
+ 
+**Understand the scope of the breach**
+
+1.	Review all activities performed by the app.
+1.	Review the scopes granted by the app.
+1.	Review the user activity associated with the app.
+
+### Anomalous SharePoint activity by app that just updated or added new credentials
+
+**Severity**: Medium 
+
+**MITRE IDs**: T1098.001, T1213.002
+ 
+A non-Microsoft cloud app made anomalous Graph API calls to SharePoint, including high-volume data usage. Detected by machine learning, these unusual API calls were made within a few days after the app added new or updated existing certificates/secrets. This app might be involved in data exfiltration or other attempts to access and retrieve sensitive information.
+ 
+**TP or FP?** 
+
+- **TP**: If you can confirm that unusual activities, such as high-volume usage of SharePoint workload, were performed by the app through Graph API. 
+
+  **Recommended Action**: Temporarily disable the app, reset the password and then re-enable the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app or that the app is intended to make unusually high volume of Graph calls. 
+
+  **Recommended Action**: Dismiss the alert
+ 
+**Understand the scope of the breach**
+
+1.	Review all activities performed by the app.
+1.	Review the scopes granted by the app.
+1.	Review the user activity associated with the app.
+
