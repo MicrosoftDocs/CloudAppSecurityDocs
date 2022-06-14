@@ -9,9 +9,9 @@ description: Learn about new features and enhancements in app governance
 
 For more information on what's new with other Microsoft Defender security products, see:
 - [What's new in Microsoft Defender for Cloud Apps](release-notes.md)
-- [What's new in Microsoft 365 Defender](https://docs.microsoft.com/en-us/microsoft-365/security/defender/whats-new?view=o365-worldwide) 
-- [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint) 
-- [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+- [What's new in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/whats-new) 
+- [What's new in Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint) 
+- [What's new in Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/whats-new)
 
 
 ## App governance May 2022 release
