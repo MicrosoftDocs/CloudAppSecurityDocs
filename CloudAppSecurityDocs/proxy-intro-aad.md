@@ -192,18 +192,23 @@ In the following applications, we've encountered scenarios where navigating to a
   - Microsoft Yammer
   - Workplace from Meta
 
-- **Blocking downloads cause PDF previews to be blocked**  
-When a user accesses the Outlook Web App (OWA) and tries to preview a PDF attachment, it may be blocked by Defender for Cloud Apps. This happens because some browsers need the PDF to be downloaded on the backend to preview it. For more information and a workaround, see [Blocking downloads cause PDF previews to be blocked](troubleshooting-proxy.md#blocking-downloads-cause-pdf-previews-to-be-blocked).
-
-- **Inspections policies are valid for files sizes up to 5 MB**  
-When a session policy to block file uploads or downloads based on content inspection is applied, inspection is performed on files smaller than 5 MB.
+- **Inspections policies are valid for files sizes up to 5 MB in size and 1 M characters**
+When a session policy to block file uploads or downloads based on content inspection is applied, inspection is performed on files smaller than 5 MB and smaller than 1 M characters.
 For example, an admin may define one of the following session policies:
-
   - Block file upload for files containing Social Security Number (SSN)
   - Block file download for files containing PHI (Protected Health Information)
-  
-  In such cases, files larger than 5 MB are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned**.
-
+In such cases, files larger than 5 MB or 1 M characters are not scanned and are treated according to the policy setting of Always apply the selected action even if the data cannot be scanned.
+Here are some examples:
+  - TXT file, 1 MB size and 1 M characters will be scanned
+  - TXT file, 2 MB size and 2 M characters   will not be scanned
+  - Word file composed of images and text, 4 MB size and 400 K characters will be scanned
+  - Word file composed of images and text, 4 MB size and 2 M characters will not be scanned
+ 
+The file size threshold can be configured up to 50 MB (up from 5 MB).
+In this way, it would be possible to scan files containing both textual and non-textual objects comprising up to 1 M characters.
+ 
+The reason for the limitation is that larger amounts of data should be scanned in order to detect sensitive information.
+In such cases, Microsoft’s recommendation is to test the policy with a limited number of users and then to expand to the entire organization.
 
 ## Next steps
 
