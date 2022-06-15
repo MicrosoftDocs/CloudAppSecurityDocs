@@ -464,6 +464,7 @@ This section is for end users using apps protected by Defender for Cloud Apps an
 - [Downloads are not being protected](#downloads-are-not-being-protected)
 - [Navigating to a particular URL of a suffixed app and landing on a generic page](#navigating-to-a-particular-url-of-a-suffixed-app-and-landing-on-a-generic-page)
 - [Blocking downloads cause PDF previews to be blocked](#blocking-downloads-cause-pdf-previews-to-be-blocked)
+- [Similar site warning appears](#similar-site-warning-appears)
 - [Additional considerations](#app-additional-considerations)
 
 ### User monitoring page is not appearing
@@ -599,6 +600,20 @@ To allow the preview, an Exchange administrator should perform the following ste
 1. After these parameters have been set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file.
 
     ![PDF preview not blocked](media/after-powershell.png)
+
+### Similar site warning appears
+
+Malicious actors can craft URLs that are similar to other sites' URLs in order to impersonate and trick users to believe they're browsing to another site. Some browsers try to detect this behavior and warn users before accessing the URL or block access. In some rare cases, users under session control will receive a message from the browser indicating suspicious site access. The reason for this is the browser treats the suffixed domain (for example.:  `.mcas.ms`) as suspicious.
+
+In Microsoft Edge:
+
+  ![Edge similar site warning.](media/edge-similar-site-warning.png)
+
+In Chrome:
+
+  ![Chrome similar site warning.](media/chrome-similar-site-warning.png)
+
+If you receive a message like this, contact Microsoft’s support, who will address it with the relevant browser vendor.
 
 ### Additional considerations
 
