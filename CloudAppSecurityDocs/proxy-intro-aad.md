@@ -192,12 +192,15 @@ In the following applications, we've encountered scenarios where navigating to a
   - Microsoft Yammer
   - Workplace from Meta
 
-- **Inspections policies are valid for files sizes up to 5 MB in size and 1 million characters**
+- **Inspections policies are valid for files up to 5 MB in size and 1 million characters**
+
 When a session policy to block file uploads or downloads based on content inspection is applied, inspection is performed on files smaller than 5 MB and smaller than 1 million characters.
+
 For example, an admin may define one of the following session policies:
   - Block file upload for files containing Social Security Number (SSN)
   - Block file download for files containing PHI (Protected Health Information)
 In such cases, files larger than 5 MB or 1 million characters are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned**.
+
 Here are some examples:
   - a TXT file, 1 MB size and 1 million characters: will be scanned
   - a TXT file, 2 MB size and 2 million characters:  won't be scanned
