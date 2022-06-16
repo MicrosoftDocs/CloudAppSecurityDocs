@@ -51,7 +51,7 @@ Our approach to information protection can be split into the following phases th
     **File policy**  
     Use this type of policy to scan the content of files stored in your API connected cloud apps in near real-time and data at rest. Files are scanned using one of our supported inspection methods including **Microsoft Purview Information Protection encrypted content** thanks to its **native integration** with Defender for Cloud Apps.
 
-    1. Go to **Control** > **Policies**, click **Create Policy**, and then select **File policy**.
+    1. Go to **Control** > **Policies**, select **Create Policy**, and then select **File policy**.
     1. Under **Inspection method**, choose and configure one of the following classification services:
 
         - **[Data Classification Services](dcs-inspection.md)**: Uses classification decisions you've made across Office 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
@@ -59,7 +59,7 @@ Our approach to information protection can be split into the following phases th
         - **[External DLP integration](icap-stunnel.md)**: For enterprises wishing to use their own third-party DLP solutions, Defender for Cloud Apps file policies can securely direct files for inspection to your external DLP solution via an ICAP server.
 
     1. For highly sensitive files, select **Create an alert** and choose the alerts you require, so that you are informed when there are files with unprotected sensitive information in your organization.
-    1. Click **Create**.
+    1. Select **Create**.
 
     **Session policy**  
     Use this type of policy to scan and protect files in real time on access to:
@@ -68,7 +68,7 @@ Our approach to information protection can be split into the following phases th
     - **Protect files on download**: Require documents to be labeled and protected with Microsoft Purview Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
     - **Prevent the upload of unlabeled files**: Require a file to have the right label and protection before a sensitive file is uploaded, distributed, and used by others. With this action, you can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
 
-    1. Go to **Control** > **Policies**, click **Create Policy**, and then select **Session policy**.
+    1. Go to **Control** > **Policies**, select **Create Policy**, and then select **Session policy**.
     1. Under **Session control type**, choose one of the options with DLP.
     1. Under **Inspection method**, choose and configure one of the following classification services:
 
@@ -76,7 +76,7 @@ Our approach to information protection can be split into the following phases th
         - **[Built-in DLP](content-inspection-built-in.md)**: Inspects files for sensitive information using our built-in DLP content inspection engine.
 
     1. For highly sensitive files, select **Create an alert** and choose the alerts you require, so that you are informed when there are files with unprotected sensitive information in your organization.
-    1. Click **Create**.
+    1. Select **Create**.
 
 You should create as many policies as required to detect sensitive data in compliance with your company policy.
 
