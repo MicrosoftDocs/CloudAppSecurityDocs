@@ -47,6 +47,9 @@ This article provides information about how to personalize the email notificatio
     - The title in the email body
     - The content
 
+> [!NOTE]
+> Custom mail settings aren't available for US Government offering customers.
+
 ## Sample email template
 
 Below is a sample email template:
