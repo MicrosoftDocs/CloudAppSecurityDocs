@@ -73,6 +73,12 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 
 The following specific admin roles can be configured in the Defender for Cloud Apps portal:
 
+- **Global administrator**: Has **Full access** in Defender for Cloud Apps, similar to the Azure AD Global administrator role.
+
+- **Compliance administrator**: Grants the same permissions as the Azure AD Compliance administrator role.
+
+- **Security reader**: Grants the same permissions as the Azure AD Security reader role.
+
 - **App/instance admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
   - Activities page - Only activities about the specific app
@@ -130,7 +136,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
 
 ## Override admin permissions
 
-If you want to override an administrator's permission from Azure AD or Office 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps.
+If you want to override an administrator's permission from Azure AD or Office 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps. Note that it is not possible to override Azure AD roles that grant Full access (Global administrator, Security administrator, and Cloud App Security administrator).
 
 ## Add additional admins
 
