@@ -37,13 +37,13 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 > [!NOTE]
 > If you have previously created a workflow using a Defender for Cloud Apps connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Security extensions**.
+1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Security extensions**.
 
-1. On the **Security extensions** page, click the plus button to generate a new API token.
-1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then click **Generate**.
+1. On the **Security extensions** page, select the plus button to generate a new API token.
+1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then select **Generate**.
 
     ![Screenshot of the token window, showing the name entry and generate button.](media/tutorial-flow-token-generate.png)
-1. Once the token is generated, click the copy icon to the right of the generated token, and then click **Close**. You'll need the token later.
+1. Once the token is generated, select the copy icon to the right of the generated token, and then select **Close**. You'll need the token later.
 
     ![Screenshot of the token window, showing the token and the copy process.](media/tutorial-flow-token-copy.png)
 
@@ -60,7 +60,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
     ![Screenshot of the templates Power Automate page, showing the search results.](media/tutorial-flow-templates-search.png)
 
-1. In the list of apps, on the row in which **Microsoft Defender for Endpoint connector** appears, click **Sign in**.
+1. In the list of apps, on the row in which **Microsoft Defender for Endpoint connector** appears, select **Sign in**.
 
     ![Screenshot of the templates Power Automate page, showing the sign-in process.](media/tutorial-flow-templates-signin.png)
 
@@ -69,31 +69,31 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 > [!NOTE]
 > If you have previously created a flow using an Azure AD connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In the list of apps, on the row in which **Defender for Cloud Apps** appears, click **Create**.
+1. In the list of apps, on the row in which **Defender for Cloud Apps** appears, select **Create**.
 
     ![Screenshot of the templates Power Automate page, showing the Defender for Cloud Apps create button.](media/tutorial-flow-templates-create.png)
 
-1. In the **Defender for Cloud Apps** pop-up, enter the connection name (for example, "Defender for Cloud Apps Token"), paste the API token you copied, and then click **Create**.
+1. In the **Defender for Cloud Apps** pop-up, enter the connection name (for example, "Defender for Cloud Apps Token"), paste the API token you copied, and then select **Create**.
 
     ![Screenshot of the Defender for Cloud Apps window, showing the name and key entry and create button.](media/tutorial-flow-templates-create-window.png)
 
-1. In the list of apps, on the row in which **HTTP with Azure AD** appears, click **Sign in**.
+1. In the list of apps, on the row in which **HTTP with Azure AD** appears, select **Sign in**.
 
-1. In the **HTTP with Azure AD** pop-up, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then click **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
+1. In the **HTTP with Azure AD** pop-up, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then select **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
 
     ![Screenshot of the HTTP with Azure AD window, showing the Resource fields and sign-in button.](media/tutorial-flow-templates-azure.png)
 
-1. Click **Continue**.
+1. Select **Continue**.
 
     ![Screenshot of the templates Power Automate window, showing the completed actions and continue button.](media/tutorial-flow-templates-continue.png)
 
-1. Once all the connecters are successfully connected, on the flow's page under **Apply to each device**, optionally modify the comment and scan type, and then click **Save**.
+1. Once all the connecters are successfully connected, on the flow's page under **Apply to each device**, optionally modify the comment and scan type, and then select **Save**.
 
     ![Screenshot of the flow page, showing the scan setting section.](media/tutorial-flow-templates-scan.png)
 
 ## Phase 4: Configure a policy to run the flow<a name="configure-policy"></a>
 
-1. In Defender for Cloud Apps, click **Control**, and then click **Policies**.
+1. In Defender for Cloud Apps, select **Control**, and then select **Policies**.
 
 1. In the list of policies, on the row where the relevant policy appears, choose the three dots at the end of the row, and then choose **Edit policy**.
 
