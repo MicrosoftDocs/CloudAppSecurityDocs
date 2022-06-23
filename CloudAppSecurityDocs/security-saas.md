@@ -10,7 +10,7 @@ ms.topic: how-to
 
 Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to make sure you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application. 
 
-    ![SSPM_in_SecureScore_SalesForce_filter.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
+   ![SSPM_in_SecureScore_SalesForce_filter.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
 
 ## Prerequisites
 Your organization must have Microsoft Defender for Cloud Apps licenses.
@@ -20,7 +20,7 @@ Your organization must have Microsoft Defender for Cloud Apps licenses.
 ## How to enable SaaS apps security posture management
 1. You should connect the app that you want to manage to Defender for Cloud Apps. For connection guides to every app, see the [connecting an app pages](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-     >[!NOTE]
+    >[!NOTE]
     >
     > - Currently only Salesforce and ServiceNow are supported with SaaS Security Posture Management Capabilities.
     > - It's possible to configure one instance for each app.
