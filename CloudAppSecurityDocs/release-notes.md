@@ -26,7 +26,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## Defender for Cloud Apps release 230
 
-May 1, 2022
+June 26, 2022
 
 - **SaaS Security Posture Management capabilities for Salesforce and ServiceNow**  
 Security posture assessments are available for Salesforce and ServiceNow. For more information, see [Security posture management for SaaS apps](security-saas.md).
