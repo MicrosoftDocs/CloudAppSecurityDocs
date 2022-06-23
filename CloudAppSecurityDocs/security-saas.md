@@ -10,7 +10,7 @@ ms.topic: how-to
 
 Your SaaS application environments may be configured in a risky posture. Microsoft Defender for Cloud Apps provides you with risk security configuration assessments for your SaaS applications to make sure you prevent possible risks. These recommendations are shown via [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) once you have a connector to an application. 
 
-![SSPM_in_SecureScore_SalesForce_filter.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
+    ![SSPM_in_SecureScore_SalesForce_filter.](media/security-saas-sspm-in-secure-score-salesforce-filter.png)
 
 ## Prerequisites
 Your organization must have Microsoft Defender for Cloud Apps licenses.
@@ -20,30 +20,30 @@ Your organization must have Microsoft Defender for Cloud Apps licenses.
 ## How to enable SaaS apps security posture management
 1. You should connect the app that you want to manage to Defender for Cloud Apps. For connection guides to every app,  see [connecting an app pages](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
->[!NOTE]
->
-> - Currently only Salesforce and ServiceNow are suppoerted with SaaS Security Posture Management Capabilities.
-> - It's possible to configure one instance for each app.
+        >[!NOTE]
+    >
+    > - Currently only Salesforce and ServiceNow are supported with SaaS Security Posture Management Capabilities.
+    > - It's possible to configure one instance for each app.
 
 1. After you connected the application via Defender for Cloud Apps, make sure the connector is set to show data in Microsoft Secure Score. To verify it, in Defender for Cloud Apps portal, under **Connected apps**, open the instance drawer and make sure there is a field **Secure Score insights: Main instance**.
 
-![secure_score_instance_in_Defender_for_Cloud_Apps.](media/security-saas-secure-score-main-instance-drawer.png)
+    ![secure_score_instance_in_Defender_for_Cloud_Apps.](media/security-saas-secure-score-main-instance-drawer.png)
 
 1. If the instance is not set as Secure Score main instance, you can set it by click the three dots and select **Set as Microsoft Secure Score instance**.
 
-![choose_secure_score_instance_in_Defender_for_Cloud_Apps.](media/security-saas-choose-secure-score-main-instance.png)
+    ![choose_secure_score_instance_in_Defender_for_Cloud_Apps.](media/security-saas-choose-secure-score-main-instance.png)
 
 
 ## How to manage your SaaS apps security posture
 1. The security recommendations will be shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation). Navigate to [Microsoft Defender portal](https://security.microsoft.com). Under the navigtion bar, click **Secure score**, and enter to **Recommended actions** tab.
 
-  ![Secure_Score_main_page.](media/security-saas-secure-score-main-page.png)
+    ![Secure_Score_main_page.](media/security-saas-secure-score-main-page.png)
 
 1. Filter the desired **product** to see its security controls.
 1. When clicking on the control, you will find its description and status.
 1. To see a step-by-step remediation guide for risky controls, enter to **Implementation** tab in the control side pane.
 
-![Secure_Score_remediations_steps.](media/security-saas-secures-score-remediations-steps.png)
+    ![Secure_Score_remediations_steps.](media/security-saas-secures-score-remediations-steps.png)
 
 >[!NOTE]
 >
