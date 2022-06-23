@@ -73,11 +73,11 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 
 The following specific admin roles can be configured in the Defender for Cloud Apps portal:
 
-- **Global administrator**: Has **Full access** in Defender for Cloud Apps, similar to the Azure AD Global administrator role.
+- **Global administrator**: Has **Full access** similar to the Azure AD Global administrator role but only to Defender for Cloud Apps.
 
-- **Compliance administrator**: Grants the same permissions as the Azure AD Compliance administrator role.
+- **Compliance administrator**: Grants the same permissions as the Azure AD Compliance administrator role but only to Defender for Cloud Apps.
 
-- **Security reader**: Grants the same permissions as the Azure AD Security reader role.
+- **Security reader**: Grants the same permissions as the Azure AD Security reader role but only to Defender for Cloud Apps.
 
 - **App/instance admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
