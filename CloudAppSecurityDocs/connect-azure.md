@@ -18,7 +18,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 > - Defender for Cloud Apps displays activities from **all** subscriptions.
 > - User account information is populated in Defender for Cloud Apps as users perform activities in Azure.
 > - Currently, Defender for Cloud Apps monitors only ARM activities.
-> - If the Azure Connector is disabled post configuration, it cannot be re-enabled. If the connector is disabled by accident, please contact Microsoft support.
+> - If the Azure Connector is disabled after configuration, it can't be re-enabled. If the connector is disabled by accident, contact Microsoft support.
 
 1. In the **Connected apps** page, click the plus button and select **Microsoft Azure**.
 
