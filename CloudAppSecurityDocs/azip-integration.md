@@ -60,7 +60,7 @@ You can see the sensitivity labels from Microsoft Purview Information Protection
 > - Defender for Cloud Apps doesn't support removing labels with protection from files that were labeled outside Defender for Cloud Apps.
 > - Defender for Cloud Apps doesn't support reading labels of password-protected files.
 > - Empty files will not be labeled.
-> - Defender for Cloud Apps doesn't support labeling files in [library that is configured to require check out](https://support.microsoft.com/en-us/office/set-up-a-library-to-require-check-out-of-files-0c73792b-f727-4e19-a1f9-3173899e695b).
+> - Defender for Cloud Apps doesn't support labeling files in a [library that is configured to require checkout](https://support.microsoft.com/office/set-up-a-library-to-require-check-out-of-files-0c73792b-f727-4e19-a1f9-3173899e695b).
 
 <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>
 
