@@ -72,7 +72,7 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
     1. Select **Save**.
 
 > [!NOTE]
-> Content Deliveries feature needs to be enabled for Defender for Cloud Apps to query file sharing data, See [ContentDistribution](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contentdistribution.htm).
+> The Content Deliveries feature needs to be enabled for Defender for Cloud Apps to query file sharing data. For more information, see [ContentDistribution](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contentdistribution.htm).
 
 1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
 
