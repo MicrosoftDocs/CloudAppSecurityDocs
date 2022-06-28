@@ -127,6 +127,7 @@ Follow these instructions to create the file policy:
 >
 > - The ability to apply a sensitivity label is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
 > - When a policy is disabled, all pending labeling tasks for that policy are suspended.
+> - In the label configuration, permissions should be assigned to any authenticated user or all users in your organization for Defender for cloud apps to be able to read label information. 
 
 ### Control file exposure
 
