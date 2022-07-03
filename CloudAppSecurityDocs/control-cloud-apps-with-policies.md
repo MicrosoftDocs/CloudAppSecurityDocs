@@ -84,11 +84,11 @@ Policy templates help you set the correct filters and configurations necessary t
 
 To create a policy from **Policy templates**, perform the following steps:
 
-1. In the console, click on **Control** followed by **Templates**.
+1. In the console, select **Control** followed by **Templates**.
 
     ![Create the policy from a template.](media/create-policy-from-template.png)
 
-1. Click the plus sign (**+**) at the far right of the row of the template you want to use. A create policy page opens, with the pre-defined configuration of the template.
+1. Select the plus sign (**+**) at the far right of the row of the template you want to use. A create policy page opens, with the pre-defined configuration of the template.
 
 1. Modify the template as needed for your custom policy. Every property and field of this new template-based policy can be modified according to your needs.
    > [!NOTE]
@@ -104,13 +104,13 @@ For example, if you're looking at the **Activity log**, and see an admin activit
 
 To create a policy based on investigation results, do the following steps:
 
-1. In the console, click on **Investigate** followed by **Activity log**, **Files**, or **Accounts**.
+1. In the console, select **Investigate** followed by **Activity log**, **Files**, or **Accounts**.
 
-1. Use the filters at the top of the page to limit the search results to the suspicious area. For example, in the Activity log page, click **Activity type** and select **Write Administrators** under Azure operation. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate, and VPN IP addresses.
+1. Use the filters at the top of the page to limit the search results to the suspicious area. For example, in the Activity log page, select **Activity type** and select **Write Administrators** under Azure operation. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate, and VPN IP addresses.
 
     ![Create file from investigation.](media/create-file-from-investigation.png)
 
-1. In the upper right corner of the console, click **New policy from search**.
+1. In the upper right corner of the console, select **New policy from search**.
 
     ![New policy from search button.](media/new-policy-from-search-button.png)
 
@@ -148,11 +148,11 @@ To set your notification preferences, got to [Customize the portal](general-setu
 
 After you create a policy, you can enable or disable it. Disabling avoids the need to delete a policy after you create it in order to stop it. Instead, if for some reason you want to stop the policy, disable it until you choose to enable it again.
 
-- To enable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to enable. Select **Enable**.
+- To enable a policy, in the **Policy** page, select the three dots at the end of the row of the policy you want to enable. Select **Enable**.
 
     ![Enable policy.](media/enable-policy.png)
 
-- To disable a policy, in the **Policy** page, click the three dots at the end of the row of the policy you want to disable. Select **Disable**.
+- To disable a policy, in the **Policy** page, select the three dots at the end of the row of the policy you want to disable. Select **Disable**.
 
     ![Disable policy.](media/disable-policy.png)
 
@@ -164,17 +164,17 @@ Defender for Cloud Apps lets you export a policies overview report showing aggre
 
 To export a log, perform the following steps:
 
-1. In the **Policies** page, click the **Export** button.
+1. In the **Policies** page, select the **Export** button.
 
 1. Specify the required time range.
 
-1. Click **Export**. This process may take some time.
+1. Select **Export**. This process may take some time.
 
 To download the exported report:
 
 1. After the report is ready, go to **Settings** and then **Exported reports**.
 
-1. In the table, select the relevant report from the list of **Policies overview report** and click download.
+1. In the table, select the relevant report from the list of **Policies overview report** and select download.
 
     ![download button.](media/download-button.png)
 
