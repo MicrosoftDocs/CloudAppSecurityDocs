@@ -28,8 +28,8 @@ For more information on what's new with other Microsoft Defender security produc
 
 July 10, 2022
 
-- **Malware hashes available for Sharepoint and OneDrive (Preview)**  
-In addition to file hashes available for malware detected in non-Microsoft storage apps, now new malware detection alerts will provide hashes for malware detected in Sharepoint and OneDrive. For more information, see [Malware detection](anomaly-detection-policy.md#malware-detection).
+- **Malware hashes available for SharePoint and OneDrive (Preview)**  
+In addition to file hashes available for malware detected in non-Microsoft storage apps, now new malware detection alerts will provide hashes for malware detected in SharePoint and OneDrive. For more information, see [Malware detection](anomaly-detection-policy.md#malware-detection).
 
 ## Defender for Cloud Apps release 230
 
