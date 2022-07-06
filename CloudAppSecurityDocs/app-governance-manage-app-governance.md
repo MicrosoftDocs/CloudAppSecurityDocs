@@ -65,11 +65,5 @@ Here's a summary of the integration.
 
 :::image type="content" source="media\app-governance\app-governance-add-on-arch.png" alt-text="The integration of app governance with Azure AD and Defender for Cloud Apps." lightbox="media\app-governance\app-governance-add-on-arch.png":::
 
-App governance sends its alerts to Defender for Cloud Apps and Microsoft 365 Defender, and receives alerts from Defender for Cloud Apps, to enable more detailed analysis of app-based security incidents.
+App governance sends its alerts to Microsoft 365 Defender to enable more detailed analysis of app-based security incidents. App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance"
 
-- App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance"
-- App governance alerts show up in the Defender for Cloud Apps alerts list as alerts with the Policy field set to one of the following:
-  - Microsoft 365 OAuth App Governance
-  - Microsoft 365 OAuth Phishing Detection
-  - Microsoft 365 OAuth App Reputation
-- Defender for Cloud Apps alerts appear in the app governance alerts list as alerts with Source set to Defender for Cloud Apps
