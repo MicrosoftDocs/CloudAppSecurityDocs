@@ -10,7 +10,8 @@ ms.topic: how-to
 
 >[!NOTE]
 >The data management report will be deprecated by the end of May 2022. 
-> A scan progress status feature will be launched before the data management report feature is deprecated, which will allow you to view the policy data's at-rest scan status (in progress/finished).
+> Access level granularity per APP can be viewed in the 'insights' tab located in the APPs details page. 
+
 
 Microsoft Defender for Cloud Apps enables you to generate reports that provide you with an overview of files in your cloud apps.
 
