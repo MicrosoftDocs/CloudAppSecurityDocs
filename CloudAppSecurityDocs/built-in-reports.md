@@ -10,7 +10,7 @@ ms.topic: how-to
 
 >[!NOTE]
 >The data management report will be deprecated by the end of May 2022. 
-> Access level granularity per APP can be viewed in the 'insights' tab located in the APPs details page. 
+> Access level granularity per app can be viewed in the **Insights** tab located in the app's details page. 
 
 
 Microsoft Defender for Cloud Apps enables you to generate reports that provide you with an overview of files in your cloud apps.
