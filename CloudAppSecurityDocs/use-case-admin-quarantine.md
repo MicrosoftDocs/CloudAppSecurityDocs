@@ -86,11 +86,11 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
     1. For Office 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
         ![quarantine warning.](media/quarantine-warning.png)
 
-        To set admin quarantine settings, under the settings cog, go to **Settings**. Provide a location for the quarantined files and a user notification that your user will receive when their file is quarantined.
+        To set admin quarantine settings, under the settings cog, go to **Settings**. Provide a site for the quarantine folder location and a user notification that your user will receive when their file is quarantined.
         ![quarantine settings.](media/quarantine-settings.png)
 
         > [!NOTE]
-        > Defender for Cloud Apps only detects new SharePoint and OneDrive folders, including if they are set as the admin quarantine folder, after some file activity has been performed in them.
+        > Defender for Cloud Apps will create a quarantine folder on the selected site. 
 
     1. For Box, the quarantine folder location and user message can't be customized. The folder location is the drive of the admin who connected Box to Defender for Cloud Apps and the user message is: This file was quarantined to your administrator's drive because it might violate your company's security and compliance policies. Contact your IT administrator for help.
 
