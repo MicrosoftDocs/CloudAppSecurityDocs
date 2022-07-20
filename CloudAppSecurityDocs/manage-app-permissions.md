@@ -8,7 +8,9 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. The Microsoft Defender for Cloud Apps app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, Google Workspace data, and Salesforce data. Defender for Cloud Apps tells you what permissions the apps have and which users granted these apps access to their Office 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
+Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. 
+
+The Microsoft Defender for Cloud Apps app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, Google Workspace data, and Salesforce data. Defender for Cloud Apps tells you what permissions the apps have and which users granted these apps access to their Office 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
 
 For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
 
@@ -24,7 +26,7 @@ The **OAuth** page displays information about app permissions in your connected 
 
 To access the OAuth tab:
 
-In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Investigate**, and then **OAuth apps**.
+In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate**, and then **OAuth apps**.
 
 ![app permissions.](media/app-permissions.png)
 
@@ -47,13 +49,13 @@ The OAuth apps page provides the following information about each OAuth app that
 
 ## Ban or approve an app
 
-1. On the **OAuth apps** page, click on the app to open the **App drawer** to view more information about the app and the permissions it was granted.
+1. On the **OAuth apps** page, select the app to open the **App drawer** to view more information about the app and the permissions it was granted.
 
-    - Click **Permissions** to view a full list of permissions that were granted to the app.
+    - Select **Permissions** to view a full list of permissions that were granted to the app.
     - Under **Community use**, you can view how common the app is in other organizations.
-    - Click **Related activity** to view the activities that are listed in the activity log related to this app.
+    - Select **Related activity** to view the activities that are listed in the activity log related to this app.
 
-2. To ban the app, click on the ban icon at the end of the app row in the table.
+2. To ban the app, select the ban icon at the end of the app row in the table.
 
     ![ban app icon.](media/ban-app-icon.png)
 
@@ -62,9 +64,9 @@ The OAuth apps page provides the following information about each OAuth app that
 
     ![ban app.](media/ban-app.png)
 
-3. Type the message you want to send to the app users in the Enter a custom notification message box. Click **Ban app** to send the mail, and ban the app from your connected app users.
+3. Type the message you want to send to the app users in the Enter a custom notification message box. Select **Ban app** to send the mail, and ban the app from your connected app users.
 
-4. To approve the app, click on the approve icon at the end of the row in the table.
+4. To approve the app, select the approve icon at the end of the row in the table.
 
     ![approve app.](media/approve-app.png)
 
@@ -75,8 +77,8 @@ The OAuth apps page provides the following information about each OAuth app that
 
 For Google Workspace and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
 
-1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: <https://security.google.com/settings/security/permissions?hl=en&pli=1>  Select the app and click 'Revoke access' on the right menu bar.* You can customize the message that is sent.
-2. You can also revoke permissions to use the app for the user. Click the icon at the end of the app row in the table and selecting **Revoke app**.
+1. On the **OAuth apps** page, select the three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: <https://security.google.com/settings/security/permissions?hl=en&pli=1>  Select the app and select 'Revoke access' on the right menu bar.* You can customize the message that is sent.
+2. You can also revoke permissions to use the app for the user. Select the icon at the end of the app row in the table and selecting **Revoke app**.
 
     ![revoke app.](media/revoke-app.png)
 
@@ -94,9 +96,9 @@ Defender for Cloud Apps audits all OAuth authorization activities to provide you
 
 To export the log, perform the following steps:
 
-1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, click the link showing the number of users that authorized the app.
+1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, select the link showing the number of users that authorized the app.
 
-1. In the pop-up, click **Export**.
+1. In the pop-up, select **Export**.
 
     ![Screenshot showing export of OAuth app auditing.](media/oauth-export-users.png)
 
@@ -104,7 +106,7 @@ To export the log, perform the following steps:
 
 If there's an OAuth app discovered in your organization that seems malicious, you can send the Defender for Cloud Apps team feedback to let us know. This feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
 
-1. On the **OAuth apps** page, click on three dots at the end of the app row and select **Report app**.
+1. On the **OAuth apps** page, select the three dots at the end of the app row and select **Report app**.
 
     ![report app.](media/report-app.png)
 2. In the **Report this app** screen, you can select whether to report the app as malicious or to report another issue with the way Defender for Cloud Apps perceives the app. For example, you could use **Incorrect publisher**, **Incorrect permissions**, or **Other**. The data you submit will be used to update the app's risk score and other analytics about the app.
