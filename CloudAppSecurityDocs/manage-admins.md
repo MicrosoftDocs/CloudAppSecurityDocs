@@ -30,7 +30,7 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 - **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Can't access Security recommendations for cloud platforms.
 
 > [!NOTE]
-> As of 30 Aug 2022 the users who were assigned as an AAD “Security Reader” role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the users’ role should be updated to an AAD “Security Operator”
+> As of August 30 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
 - **Security operator and Security reader**: Have read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
