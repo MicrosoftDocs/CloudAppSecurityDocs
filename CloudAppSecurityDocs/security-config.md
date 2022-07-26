@@ -26,7 +26,7 @@ To export a security recommendations list, perform the following steps:
 1. In Defender for Cloud Apps, browse to **Investigate** > **Security configuration**.
 
 1. Select the security recommendations tab for the relevant cloud.
-1. On the top-right of the recommendations table, click **Export**.
+1. On the top-right of the recommendations table, select **Export**.
 
 ## Next steps
 
