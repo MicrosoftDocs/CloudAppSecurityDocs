@@ -29,7 +29,7 @@ So even though Fabrikam does not actually use Defender for Cloud Apps, they see 
 > - `*.mcas.ms`
 > - `*.admin-mcas-gov.us`
 > - `*.mcas-df.ms`
-> - `*.admin-mcas-df.ms
+> - `*.admin-mcas-df.ms`
 
 ## Here's why you see `*.cas.ms`, `*.mcas.ms`, or `*.mcas-gov.us` in your URL
 
