@@ -40,6 +40,8 @@ Protect your organization by monitoring and controlling cloud app use with any I
 
 Defender for Cloud Apps session policies allow you to restrict a session based on device state. To accomplish control of a session using its device as a condition, create both a conditional access policy AND a session policy.
 
+To create the conditional access policy, follow the steps in [Create a Defender for Cloud Apps access policy](access-policy-aad.md#create-a-defender-for-cloud-apps-access-policy). This tutorial will explain how to create the session policy.
+
 ### Step 1: Configure your IdP to work with Defender for Cloud Apps
 
 Make sure you have configured your IdP solution to work with Defender for Cloud Apps, as follows:
