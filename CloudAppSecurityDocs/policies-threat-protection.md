@@ -58,7 +58,7 @@ Detect when a user, who is on unpaid leave and should not be active on any organ
 
 ### Steps
 
-1. On the [User groups](user-groups.md) screen, click **Create user group** and import the relevant Azure AD group.
+1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Azure AD group.
 
 2. On the **Policies** page, create a new **Activity policy**.
 
@@ -94,7 +94,7 @@ Detect admin activities performed from and IP address that is considered a risky
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
+- From the Settings cog, select **IP address ranges** and select the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
 ### Steps
 
@@ -117,7 +117,7 @@ Detect service account activities originating from a non-internal IP addresses. 
 ### Prerequisites
 
 - You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
-- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
+- From the Settings cog, select **IP address ranges** and select the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
 - Standardize a naming conventions for service accounts in your environment, for example, set all account names to start with "svc".
 
