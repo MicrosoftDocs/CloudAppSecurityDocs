@@ -652,7 +652,7 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review any inbox rule action created by the app.  
 1. Review any high importance email read activity done by the app.
 
-### App made unusual chat activities in Teams
+### Privileged app performed unusual activities in Teams
 
 **Severity**: Medium 
  
