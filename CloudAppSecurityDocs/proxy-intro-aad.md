@@ -192,24 +192,24 @@ In the following applications, we've encountered scenarios where navigating to a
   - Microsoft Yammer
   - Workplace from Meta
 
-- **Session policies are valid for files up to 50 MB in size**
+- **Session policies are valid for files up to 50 MB in size**  
 Files with a size of up to 50MB are subject to session policies.
 For example, an admin may define one of the following session policies:
   - Monitor file downloads for OneDrive app
   - Block file upload
   - Block download\upload of malware files
 
-A file of up to 50 MB will be handled based on the session policies in that case.
-For a larger file, tenant settings (Settings > Conditional Access App Control > Default behavior) determine if the file is allowed or blocked, regardless of the matching policies.
+  A file of up to 50 MB will be handled based on the session policies in that case.
+  For a larger file, tenant settings (Settings > Conditional Access App Control > Default behavior) determine if the file is allowed or blocked, regardless of the matching policies.
 
-- **Inspections policies for information protection are valid for files up to 30 MB in size and 1 million characters**
+- **Inspections policies for information protection are valid for files up to 30 MB in size and 1 million characters**  
 When a session policy to block file uploads or downloads based on information protection content inspection is applied, inspection is performed on files smaller than 30 MB and smaller than 1 million characters.
 For example, an admin may define one of the following session policies:
   - Block file upload for files containing Social Security Number (SSN)
   - Protect file download for files containing PHI (Protected Health Information)
   - Block file download for with sensitivity label “very sensitive”
  
-In such cases, files larger than 30 MB or 1 million characters are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned.**
+  In such cases, files larger than 30 MB or 1 million characters are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned.**
 Here are some examples:
   - a TXT file, 1 MB size and 1 million characters: will be scanned
   - a TXT file, 2 MB size and 2 million characters: won't be scanned
