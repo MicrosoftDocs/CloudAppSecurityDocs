@@ -38,7 +38,7 @@ The Defender for Cloud Apps threat protection anomaly detections will now includ
 > **Deprecation of old proxy suffix domains for session controls (gradual rollout)**  
 > From September 15 2022, Defender for Cloud Apps will no longer support suffix domains in the form `<appName>.<region>.cas.ms.`  
 In November 2020, we moved to suffix domains in the form of `<appName>.mcas.ms`, but still provided grace time to switch from the old suffixes.  
-> End users will have very little chance of encountering navigation problems on such a domain. However, there may be situations where they may have issues -  for example, if bookmarks are saved in the old domain form.  
+> End users will have very little chance of encountering navigation problems on such a domain. However, there may be situations where they may have issues -  for example, if bookmarks are saved in the old domain form or an old link is stored somewhere.
 >
 > If users encounter the following message:
 >  
