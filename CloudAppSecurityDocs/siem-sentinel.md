@@ -22,7 +22,7 @@ Additional integration solutions include:
 * **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
 > [!NOTE]
-> Sentinel integration to Defender for Cloud Apps isn't available for GCC customers. Those customers should use Microsoft 365 Defender's integration with Sentinel. For more information, see  [Microsoft Sentinel feature availability in US Government clouds](/azure/security/fundamentals/feature-availability#microsoft-sentinel).
+> Sentinel integration to Defender for Cloud Apps isn't available for Gov customers. Those customers should use Microsoft 365 Defender's integration with Sentinel. For more information, see  [Microsoft Sentinel feature availability in US Government clouds](/azure/security/fundamentals/feature-availability#microsoft-sentinel).
 
 ## How to integrate
 
