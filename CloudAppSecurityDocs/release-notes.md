@@ -27,7 +27,7 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
-## Defender for Cloud Apps release 231 and 232
+## Defender for Cloud Apps release 232 and 233
 
 August 7, 2022
 
