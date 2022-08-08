@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 07/10/2022
+ms.date: 08/07/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -26,6 +26,26 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## Defender for Cloud Apps release 231 and 232
+
+August 7, 2022
+
+- **MITRE techniques**  
+The Defender for Cloud Apps threat protection anomaly detections will now include MITRE techniques and sub-techniques where relevant, in addition to the MITRE tactic that already exists. This data will also be available in the alert's side pane in Microsoft 365 Defender. For more information, see [How to investigate anomaly detection alerts](investigate-anomaly-alerts.md).
+
+> [!IMPORTANT]
+> **Deprecation of old proxy suffix domains for session controls (gradual rollout)**  
+> From September 15 2022, Defender for Cloud Apps will no longer support suffix domains in the form `<appName>.<region>.cas.ms.`  
+In November 2020, we moved to suffix domains in the form of `<appName>.mcas.ms`, but still provided grace time to switch from the old suffixes.  
+> End users will have very little chance of encountering navigation problems on such a domain. However, there may be situations where they may have issues -  for example, if bookmarks are saved in the old domain form or an old link is stored somewhere.
+>
+> If users encounter the following message:
+>  
+> **The connection for this site is not secure.**  
+> **missing.cert.microsoft.sharepoint.com.us.cas.ms sent an invalid response**
+>
+> They should manually replace the URL section `.<region>.cas.ms` with `.mcas.us`.
 
 ## Defender for Cloud Apps release 231
 
