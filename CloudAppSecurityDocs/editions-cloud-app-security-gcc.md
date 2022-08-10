@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Cloud Apps for US Government offerings
 description: This article describes the features differences between Microsoft Defender for Cloud Apps for US Government offerings and the commercial offering.
-ms.date: 07/13/2022
+ms.date: 08/10/2022
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps for US Government offerings
@@ -35,11 +35,6 @@ Microsoft Defender for Cloud Apps for US Government offers parity with the Micro
 | Feature Name                           | Description                                                  | GCC     | GCC High | DoD     |
 | -------------------------------------- | ------------------------------------------------------------ | ------- | -------- | ------- |
 | **Microsoft Secure Score integration** | Surfacing Microsoft Defender for Cloud Apps controls in Microsoft Secure Score | Roadmap | Roadmap  | Roadmap |
-
-> [!NOTE]
->Microsoft Defender for Cloud Apps in GCC is paired with Microsoft Sentinel and Microsoft Defender for Cloud  in the Azure Commercial cloud.
->
->Microsoft Defender for Cloud Apps in GCC High / DoD is paired with Microsoft Sentinel and Microsoft Defender for Cloud  in the Azure Government cloud.
 
 ## Next steps
 
