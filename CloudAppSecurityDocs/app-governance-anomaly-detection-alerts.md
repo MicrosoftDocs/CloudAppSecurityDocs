@@ -385,11 +385,11 @@ Several users have revoked their consent to this recently created line-of-busine
 
 **MITRE ID**: T1078
  
-This detection triggers an alert when a line of business app with suspicious metadata have privilege to manage permission over Exchange.
+This detection triggers an alert when a line of business app with suspicious metadata has privileges to manage permission over Exchange.
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the OAuth app is delivered from an unknown source, and have suspicious metadata characteristics, then a true positive is indicated.
+- **TP**: If you’re able to confirm that the OAuth app is delivered from an unknown source, and has suspicious metadata characteristics, then a true positive is indicated.
 
 **Recommended Action**:  Revoke consents granted to the app and disable the app.
 
