@@ -379,13 +379,13 @@ Several users have revoked their consent to this recently created line-of-busine
 
 ## Privilege Escalation alerts
 
-### OAuth app with suspicious metadata have exchange permission
+### OAuth app with suspicious metadata has exchange permission
  
 **Severity**: Medium 
 
 **MITRE ID**: T1078
  
-This detection triggers an alert when a line of business app with suspicious metadata has privileges to manage permission over Exchange.
+This alert is triggerd when a line of business app with suspicious metadata has privilege to manage permission over Exchange.
 
 **TP or FP?**
 
