@@ -10,7 +10,7 @@ ms.topic: article
 
 Slack is a cloud service that helps organizations collaborate and communicate in one place. Along with the benefits of effective collaboration in the cloud, your organization's most critical assets may be exposed to threats. Exposed assets include messages, channels, and files with potentially sensitive information, collaboration, and partnership details, and more. Preventing exposure of this data requires continuous monitoring to prevent any malicious actors or security-unaware insiders from exfiltrating sensitive information.
 
-Connecting Slack Enterprise (**Grid** or **Select**) to Defender for Cloud Apps gives you improved insights into your users' activities and provides threat detection for anomalous behavior.
+Connecting Slack Enterprise to Defender for Cloud Apps gives you improved insights into your users' activities and provides threat detection for anomalous behavior.
 
 ## Main threats
 
