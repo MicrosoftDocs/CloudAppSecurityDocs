@@ -4,6 +4,7 @@ description: This article provides information about how to deploy the Microsoft
 ms.date: 01/17/2022
 ms.topic: how-to
 ---
+
 # Deploy Conditional Access App Control for custom apps using Azure Active Directory
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -17,9 +18,7 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
 ### Add admins to the app onboarding/maintenance list
 
 1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4](media/settings-icon.png "settings icon 4") and select **Settings**.
-
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
-
 1. Enter the user principal name or email for the users that will be onboarding the app, and then select **Save**.
 
     ![Screenshot of settings for App onboarding and maintenance.](media/app-onboarding-settings.png)
@@ -28,28 +27,24 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
-  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/license-users-groups) or higher
-  - Microsoft Defender for Cloud Apps
-
+   - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/license-users-groups) or higher
+   - Microsoft Defender for Cloud Apps
 - Apps must be configured with single sign-on
 - Apps must use one of the following authentication protocols:
 
-    |IdP|Protocols|
-    |---|---|
-    |Azure AD|SAML 2.0 or OpenID Connect|
-  
+   |IdP|Protocols|
+   |---|---|
+   |Azure AD|SAML 2.0 or OpenID Connect|
+   
+
 ## To deploy any app
 
 Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
 
 1. **[Configure your Azure AD to work with Defender for Cloud Apps](#step-1-configure-azure-ad-to-work-with-defender-for-cloud-apps)**
-
 1. **[Configure the app that you are deploying](#conf-app)**
-
 1. **[Verify that the app is working correctly](#verify-app)**
-
 1. **[Enable the app for use in your organization](#enable-app)**
-
 1. **[Update the Azure AD policy](#update-azure-ad)**
 
 > [!NOTE]
@@ -57,35 +52,26 @@ Follow these steps to configure any app to be controlled by Defender for Cloud A
 
 ## Step 1: Configure Azure AD to work with Defender for Cloud Apps
 
->[!NOTE]
->When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
+> [!NOTE]
+> When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
 
 1. In Azure AD, browse to **Security** > **Conditional Access**.
-
 1. On the **Conditional Access** pane, in the toolbar at the top, select **New policy** -> **Create new policy**.
-
 1. On the **New** pane, in the **Name** textbox, enter the policy name.
-
 1. Under **Assignments**, select **Users or workload identities**, assign the users that will be onboarding (initial sign-on and verification) the app, and then select **Done**.
-
 1. Under **Assignments**, select **Cloud apps or actions**, assign the apps you want to control with Conditional Access App Control, and then select **Done**.
-
 1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only** or **Block downloads**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then click **Select**.
 
     ![Azure AD conditional access.](media/azure-ad-caac-policy.png)
 
 1. Optionally, add conditions and grant controls as required.
-
 1. Set **Enable policy** to **On** and then select **Create**.
-
-## Step 2: Add the app manually and install certificates, if necessary<a name="conf-app"></a><a name="add-app"></a>
 
 Applications in the app catalog are automatically populated into the table under Connected Apps. Check that the app you want to deploy is recognized by navigating there.
 
 1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 1](media/settings-icon.png "settings icon 1"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
 
     ![Conditional access app control apps](media/conditional-access-app-control-apps.png)
-
 1. Select the **App: Select apps…** dropdown menu to filter and search for the app you want to deploy.
 
     ![Select App: Select apps to search for the app](media/select-apps.png)
@@ -97,56 +83,54 @@ Applications in the app catalog are automatically populated into the table under
 1. In the banner, select **View new apps**.
 
     ![Conditional access app control view new apps](media/caac-view-apps.png)
-
 1. In the list of new apps, for each app that you're onboarding, select the **+** sign, and then select **Add**.
 
-    > [!NOTE]
-    > If an app does not appear in the Defender for Cloud Apps app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
+   > [!NOTE]
+   > If an app does not appear in the Defender for Cloud Apps app catalog, it will appear in the dialog under unidentified apps along with the login URL. When you click the + sign for these apps, you can onboard the application as a custom app.
 
     ![Conditional access app control discovered Azure AD apps](media/caac-discovered-aad-apps.png)
-
-### To add domains for an app<a name="add-domains"></a>
 
 Associating the correct domains to an app allows Defender for Cloud Apps to enforce policies and audit activities.
 
 For example, if you've configured a policy that blocks downloading files for an associated domain, file downloads by the app from that domain will be blocked. However, file downloads by the app from domains not associated with the app won't be blocked and the action won't be audited in the activity log.
+
 > [!NOTE]
 > Defender for Cloud Apps still adds a suffix to domains not associated with the app to ensure a seamless user experience.
 
 1. From within the app, on the Defender for Cloud Apps admin toolbar, select **Discovered domains**.
-    > [!NOTE]
-    > The admin toolbar is only visible to users with permissions to onboard or maintenance apps.
+
+   > [!NOTE]
+   > The admin toolbar is only visible to users with permissions to onboard or maintenance apps.
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
-    > [!NOTE]
-    > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
+
+   > [!NOTE]
+   > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
 1. Go to Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon 2](media/settings-icon.png "settings icon 2") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
-    > [!TIP]
-    > To view the list of domains configured in the app, select **View app domains**.
+
+   > [!TIP]
+   > To view the list of domains configured in the app, select **View app domains**.
 1. In **User-defined domains**, enter all the domains you want to associate with this app, and then select **Save**.
-    > [!NOTE]
-    > You can use the * wildcard character as a placeholder for any character. When adding domains, decide whether you want to add specific domains (`sub1.contoso.com`,`sub2.contoso.com`) or multiple domains (`*.contoso.com`).
 
-### Install root certificates<a name="install-certs"></a>
-
+   > [!NOTE]
+   > You can use the * wildcard character as a placeholder for any character. When adding domains, decide whether you want to add specific domains (`sub1.contoso.com`,`sub2.contoso.com`) or multiple domains (`*.contoso.com`).
 1. Repeat the following steps to install the **Current CA** and **Next CA** self-signed root certificates.
-    1. Select the certificate.
-    1. Select **Open**, and when prompted select **Open** again.
-    1. Select **Install certificate**.
-    1. Choose either **Current User** or **Local Machine**.
-    1. Select **Place all certificates in the following store** and then select **Browse**.
-    1. Select **Trusted Root Certificate Authorities** and then select **OK**.
-    1. Select **Finish**.
 
-    > [!NOTE]
-    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
+   1. Select the certificate.
+   1. Select **Open**, and when prompted select **Open** again.
+   1. Select **Install certificate**.
+   1. Choose either **Current User** or **Local Machine**.
+   1. Select **Place all certificates in the following store** and then select **Browse**.
+   1. Select **Trusted Root Certificate Authorities** and then select **OK**.
+   1. Select **Finish**.
 
+
+   > [!NOTE]
+   > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page.<!-- You'll see a check-mark by the certificates links confirmation they are installed.--
 1. Select **Continue**.
 1. Check that the application is available in the table.
 
     ![Check if app is available in table](media/available-apps.png)
-
-## Step 3: Verify that the app is working correctly<a name="verify-app"></a>
 
 To verify that the application is being proxied, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
 
@@ -159,18 +143,11 @@ Open the application and perform the following checks:
 
 If you encounter errors or issues, use the admin toolbar to gather resources such as `.har` files and recorded sessions for filing a support ticket.
 
-## Step 4: Enable the app for use in your organization<a name="enable-app"></a>
-
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
 1. In Defender for Cloud Apps, select the settings cog ![settings icon 3](media/settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
-1. Select **Use with Conditional Access App Control** and then select **Save**.
-
-    ![Enable session controls pop-up](media/edit-app-enable-session-controls.png)
-
-## Step 5: Update the Azure AD policy<a name="update-azure-ad"></a>
-
+1. Select **Use the app with session controls** and then select **Save**.
 1. In Azure AD, under **Security**, select **Conditional Access**.
 1. Update the policy you created earlier to include the relevant users, groups, and controls you require.
 1. Under **Session** > **Use Conditional Access App Control**, if you selected **Use Custom Policy**, go to Defender for Cloud Apps and create a corresponding session policy. For more information, see [Session policies](session-policy-aad.md).
