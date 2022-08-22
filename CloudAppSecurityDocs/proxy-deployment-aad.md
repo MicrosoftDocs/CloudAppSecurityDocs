@@ -81,7 +81,7 @@ Once you're ready to enable the app for use in your organization's production en
 
 1. In Defender for Cloud Apps, select the settings cog ![settings icon.](media/settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
-1. Select **Use with Conditional Access App Control** and then select **Save**.
+1. Select **Use the app with session controls** and then select **Save**.
 
    ![](media/proxy-deployment-aad/edit-app-checked.png) 
 
