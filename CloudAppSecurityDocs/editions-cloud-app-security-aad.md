@@ -29,7 +29,7 @@ The following table is a comparison of the discovery capabilities in Microsoft D
 
 |Capability|Feature|Microsoft Defender for Cloud Apps| Cloud App Discovery (as part of Azure Active Directory P1)|
 |----|----|----|----|
-|Cloud Discovery|Discovered apps|25,000 + cloud apps|25,000 + cloud apps|
+|Cloud Discovery|Discovered apps|31,000 + cloud apps|31,000 + cloud apps|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
 ||Log anonymization for user privacy|Yes|Yes|
 ||Access to full Cloud App Catalog|Yes|Yes|
