@@ -4,7 +4,7 @@ description: This article describes how to connect Microsoft Defender for Cloud 
 ms.date: 01/13/2022
 ms.topic: how-to
 ---
-# Connect Egnyte to Microsoft Defender for Cloud Apps (Preview)
+# Connect Egnyte to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
