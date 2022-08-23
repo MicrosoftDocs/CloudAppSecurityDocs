@@ -82,7 +82,7 @@ To block an app, do the following steps:
 
 ## Block apps by exporting a block script
 
-Defender for Cloud Apps enables you to block access to unsanctioned apps by using your existing on-prem security appliances. You can generate a dedicated block script and import it to your appliance. This solution doesn't require redirection of all of the organization's web traffic to a proxy.
+Defender for Cloud Apps enables you to block access to unsanctioned apps by using your existing on-premises security appliances. You can generate a dedicated block script and import it to your appliance. This solution doesn't require redirection of all of the organization's web traffic to a proxy.
 
 1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
 
@@ -101,6 +101,10 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
    ![Generate block script button.](media/generate-block-script-button.png)
 
 5. Import the file created to your appliance.
+
+## Governance conflicts
+
+If there's a conflict between [manual governance actions](#BKMK_SanctionApp) and [governance set by policy](cloud-discovery-policies.md), the last operation applied will take precedence.
 
 ## Next steps
 
