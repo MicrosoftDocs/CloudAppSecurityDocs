@@ -4,7 +4,7 @@ description: This article provides information about the benefits of connecting 
 ms.date: 11/09/2021
 ms.topic: article
 ---
-# How Defender for Cloud Apps helps protect your Egnyte environment (Preview)
+# How Defender for Cloud Apps helps protect your Egnyte environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
