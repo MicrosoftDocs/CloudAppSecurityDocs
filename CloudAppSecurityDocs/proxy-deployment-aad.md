@@ -28,21 +28,11 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
 
 ## To deploy catalog apps
 
-Follow these steps to configure catalog apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
+Follow the steps below to configure catalog apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
 
-**Step 1: [Configure Azure AD to work with Defender for Cloud Apps](#step-1-configure-azure-ad-to-work-with-defender-for-cloud-apps)**
+### Configure Azure AD to work with Defender for Cloud Apps
 
-**Step 2: [Sign in to each app using a user scoped to the policy](#sign-in-scoped)**
 
-**Step 3: [Verify the apps are configured to use access and session controls](#portal)**
-
-**Step 4: [Enable the app for use in your organization](#enable-app)**
-
-**Step 5: [Test the deployment](#test)**
-
-## Step 1: Configure Azure AD to work with Defender for Cloud Apps
-
-### Configure integration with Azure AD
 
 > [!NOTE]
 > When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
