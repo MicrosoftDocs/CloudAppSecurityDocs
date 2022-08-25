@@ -132,7 +132,7 @@ Open the application and perform the following checks:
 - Check that the URL contains the `.mcas` suffix
 - Visit all pages within the app that are part of a user's work process and verify that the pages render correctly.
 - Verify that the behavior and functionality of the app isn't adversely affected by performing common actions such as downloading and uploading files.
-- Review the list of domains associated with the app. For more information, see [Add the domains for the app](#add-domains).
+- Review the list of domains associated with the app.
 
 If you encounter errors or issues, use the admin toolbar to gather resources such as `.har` files and recorded sessions for filing a support ticket.
 
