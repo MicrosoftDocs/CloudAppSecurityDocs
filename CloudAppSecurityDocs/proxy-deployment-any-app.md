@@ -64,7 +64,7 @@ Applications in the app catalog are automatically populated into the table under
 
 1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 1](media/settings-icon.png "settings icon 1"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
 
-   ![](media/proxy-deployment-any-app/onboardwithsessioncontrol2.png)
+   ![Onboard with session control.](media/proxy-deployment-any-app/onboardwithsessioncontrol2.png)
 
     ![Conditional access app control apps](media/conditional-access-app-control-apps.png)
 1. Select the **App: Select apps…** dropdown menu to filter and search for the app you want to deploy.
@@ -134,7 +134,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. Check that the application is available in the table.
 
 
-   ![](media/proxy-deployment-any-app/onboardwithsessioncontrol2.png) 
+   ![Onboard with session control.](media/proxy-deployment-any-app/onboardwithsessioncontrol2.png) 
 
 To verify that the application is being proxied, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
 
