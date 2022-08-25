@@ -30,7 +30,7 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
 
 Follow the steps below to configure catalog apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
 
-### Configure Azure AD to work with Defender for Cloud Apps
+### Configure integration with Azure AD
 
 
 
