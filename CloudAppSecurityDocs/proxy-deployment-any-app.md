@@ -39,18 +39,11 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
 
 ## To deploy any app
 
-Follow these steps to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
-
-1. **[Configure your Azure AD to work with Defender for Cloud Apps](#step-1-configure-azure-ad-to-work-with-defender-for-cloud-apps)**
-1. **[Configure the app that you are deploying](#conf-app)**
-1. **[Verify that the app is working correctly](#verify-app)**
-1. **[Enable the app for use in your organization](#enable-app)**
-1. **[Update the Azure AD policy](#update-azure-ad)**
-
+Follow the steps below to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
 > [!NOTE]
 > To deploy Conditional Access App Control for Azure AD apps, you need a valid [license for Azure Active Directory Premium P1 or higher](/azure/active-directory/fundamentals/license-users-groups) as well as a Defender for Cloud Apps license.
 
-## Step 1: Configure Azure AD to work with Defender for Cloud Apps
+## Configure Azure AD to work with Defender for Cloud Apps
 
 > [!NOTE]
 > When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
