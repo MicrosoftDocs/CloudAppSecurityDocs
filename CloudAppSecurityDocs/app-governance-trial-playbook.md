@@ -68,7 +68,7 @@ Once in the trial, try these recommended actions:
 
 ### Step 1: [Get visibility and insights](app-governance-visibility-insights-get-started.md)
 
-The first place to get started is the app governance overview page at <https://aka.ms/appgovernance>. Your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
+The first place to get started is the app governance overview page at <https://aka.ms/appgovernance>. Your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
 1. [Determine compliance posture](app-governance-visibility-insights-compliance-posture.md): App governance allows you to quickly assess the compliance posture of your apps and incidents in your tenant from the app governance Overview page in Microsoft 365 Defender. You can see details like how many overprivileged apps are in your tenant, number of active incidents, total Graph API data access, and more.
 
