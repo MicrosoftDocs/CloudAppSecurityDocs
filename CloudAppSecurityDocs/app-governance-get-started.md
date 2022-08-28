@@ -11,7 +11,8 @@ To activate a license for the [app governance add-on for Defender for Cloud Apps
 
 1. Verify your account has the [appropriate level of licensing](#licensing). App governance is an add-on feature for Defender for Cloud Apps, and so to activate the app governance license Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must be a Global, Company, or Billing Admin to activate a license. You must have one of the [roles](#roles) listed to access the app governance portal.
-1. Your organization's billing address must be in a region other than Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
+1. Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
+2. Your organization must use commercial cloud, not government cloud (i.e., GCC, GCC-H, DoD, Fairfax). App governance is not yet available in government clouds
 
 If you satisfy the prerequisites,  you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add the app governance free trial to your tenant.
 
