@@ -32,7 +32,7 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
-- **Security operator and Security reader**: Have read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
+- **Security operator: Have read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
   - Create policies or edit and change existing ones
   - Performing any governance actions
@@ -46,6 +46,20 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
   - Accessing and viewing the Manage snapshot reports page
   - Accessing and viewing SIEM agents
 
+- **Security reader**: Have read-only permissions. These admins are restricted from doing the following actions:
+
+  - Create policies or edit and change existing ones
+  - Performing any governance actions
+  - Uploading discovery logs
+  - Banning or approving third-party apps
+  - Accessing and viewing the IP address range settings page
+  - Accessing and viewing any system settings pages
+  - Accessing and viewing the Discovery settings
+  - Accessing and viewing the App connectors page
+  - Accessing and viewing the Governance log
+  - Accessing and viewing the Manage snapshot reports page
+  - Accessing and viewing SIEM agents
+  
 - **Global reader**: Has full read-only access to all aspects of Defender for Cloud Apps. Can't change any settings or take any actions.
 
 ### Roles and permissions
@@ -53,7 +67,7 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 | Permissions                                                  | Global  Admin | Security  Admin | Compliance  Admin | Compliance  Data Admin | Security  Operator | Security  Reader | Global  Reader | PBI Admin | Cloud App Security admin |
 | ------------------------------------------------------------ | ------------- | --------------- | ----------------- | ---------------------- | ------------------ | ---------------- | -------------- | --------- | ------------------- |
 | Read alerts                                                  | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
-| Manage alerts                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                |                | ✔         | ✔                      |
+| Manage alerts                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  |                  |                | ✔         | ✔                      |
 | Read OAuth applications                                      | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
 | Perform OAuth application actions                            | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
 | Access discovered apps, the cloud app catalog, and other cloud discovery data | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           | ✔                      |
@@ -82,6 +96,8 @@ The following specific admin roles can be configured in the Defender for Cloud A
 - **Compliance administrator**: Grants the same permissions as the Azure AD Compliance administrator role but only to Defender for Cloud Apps.
 
 - **Security reader**: Grants the same permissions as the Azure AD Security reader role but only to Defender for Cloud Apps.
+
+- **Security operator**: Grants the same permissions as the Azure AD Security operator role but only to Defender for Cloud Apps.
 
 - **App/instance admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
