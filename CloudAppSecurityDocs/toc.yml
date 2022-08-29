@@ -84,7 +84,7 @@ items:
       href: protect-docusign.md
     - name: Protect Dropbox
       href: protect-dropbox.md
-    - name: Protect Egnyte (Preview)
+    - name: Protect Egnyte
       href: protect-egnyte.md
     - name: Protect GitHub
       href: protect-github.md
@@ -242,7 +242,7 @@ items:
       href: ./connect-docusign.md
     - name: Connect Dropbox
       href: ./connect-dropbox.md
-    - name: Connect Egnyte (Preview)
+    - name: Connect Egnyte
       href: ./connect-egnyte.md
     - name: Connect GitHub
       href: ./connect-github-ec.md

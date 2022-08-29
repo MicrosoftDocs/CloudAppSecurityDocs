@@ -167,7 +167,7 @@ Recommended task: Configure important settings
 
 1. From the settings cog, select **Cloud Discovery settings**.
 1. From the settings cog, select **IP address ranges**.
-1. Click the plus sign (**+**) to add an IP address range.
+1. Select the plus sign (**+**) to add an IP address range.
 1. Enter the IP range **details**, **location**, **tags**, and **category**.
 1. Choose **Create**.
 

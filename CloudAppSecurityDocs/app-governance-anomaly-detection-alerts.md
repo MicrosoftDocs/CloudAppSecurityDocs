@@ -377,6 +377,33 @@ Several users have revoked their consent to this recently created line-of-busine
    - Apps with a suspicious Reply domain
 1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
 
+## Privilege escalation alerts
+
+### OAuth app with suspicious metadata has Exchange permission
+ 
+**Severity**: Medium 
+
+**MITRE ID**: T1078
+ 
+This alert is triggered when a line of business app with suspicious metadata has privilege to manage permission over Exchange.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app is delivered from an unknown source, and has suspicious metadata characteristics, then a true positive is indicated.
+
+**Recommended Action**:  Revoke consents granted to the app and disable the app.
+
+**FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+**Recommended Action**:: Dismiss the alert 
+ 
+**Understand the scope of the breach**
+
+1. Review all activities done by the app. 
+2. Review the scopes granted by the app. 
+3. Review the user activity associated with the app.
+
+
 ## Defense Evasion alerts
 
 ### App impersonating a Microsoft logo
@@ -652,7 +679,7 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review any inbox rule action created by the app.  
 1. Review any high importance email read activity done by the app.
 
-### App made unusual chat activities in Teams
+### Privileged app performed unusual activities in Teams
 
 **Severity**: Medium 
  

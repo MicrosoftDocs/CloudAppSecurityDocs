@@ -51,13 +51,13 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
 | ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
-| Atlassian (Preview) | ✔ |  |  | ✔ | ✔ | ✔ |
+| Atlassian         | ✔ |  |  | ✔ | ✔ | ✔ |
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
-| DocuSign (Preview) | ✔ |  |  | ✔ | ✔ | ✔ |
+| DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
-| Egnyte (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
 | GCP               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
@@ -77,13 +77,13 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |  App                 | User governance                      | View app permissions      | Revoke app permissions    | Security configuration visibility |
 | ----------------- | ------------------------------------ | ------------------------- | ------------------------- | ------------------------- |
-| Atlassian (Preview) |  |  |  |  |
+| Atlassian         |  |  |  |  |
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| DocuSign (Preview) |  |  | | |
+| DocuSign          |  |  | | |
 | Dropbox           |                                      |                           |                            |                            |
-| Egnyte (Preview) | | | | |
+| Egnyte | | | | |
 | GitHub            |                                      | ✔                         |                           |                           |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
@@ -103,13 +103,13 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply sensitivity labels from Microsoft Purview Information Protection |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
-| Atlassian (Preview) |  |  |  |  |  |
+| Atlassian         |  |  |  |  |  |
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
-| DocuSign (Preview) |  |  |  |  |  |
+| DocuSign          |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
-| Egnyte (Preview) |  |  |  |  | |
+| Egnyte  |  |  |  |  | |
 | GitHub            |                           |                                          |                           |                           |                                            |
 | GCP               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |

@@ -242,7 +242,7 @@ For apps connected via non-Microsoft identity providers (IdP), if the setup is n
 **Recommended steps**
 
 1. Click **Continue Setup**.
-1. Go through the [deployment guide](proxy-deployment-any-app.md#conf-app) and verify that you have completed all the steps. Pay particular attention to the following:
+1. Go through the [deployment guide](proxy-deployment-any-app.md) and verify that you have completed all the steps. Pay particular attention to the following:
     1. Make sure you create a new custom SAML app. You need this to change the URLs and SAML attributes that might not be available in gallery apps.
     1. If your identity provider does not allow the reuse of the same identifier (also known as Entity ID or Audience), change the identifier of the original app.
 
@@ -283,8 +283,8 @@ After adding an app, you may see the **Request session control** option. This oc
 
     | App status | Description | Steps |
     | --- | --- | --- |
-    | Not recognized | You will see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](proxy-deployment-any-app.md#add-app).<br /> 2. [Add the domains for the app](proxy-deployment-any-app.md#add-domains), and then return to the app and refresh the page.<br /> 3. [Install the certificates for the app](proxy-deployment-any-app.md#install-certs). |
-    | Recognized | You will see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](proxy-deployment-any-app.md#install-certs). <br /><br /> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](proxy-deployment-any-app.md#add-domains), and then return to the app page. |
+    | Not recognized | You will see an app not recognized page prompting you to configure your app. | 1. [Add the app to Conditional Access App Control](proxy-deployment-any-app.md).<br /> 2. [Add the domains for the app](proxy-deployment-any-app.md), and then return to the app and refresh the page.<br /> 3. [Install the certificates for the app](proxy-deployment-any-app.md). |
+    | Recognized | You will see an onboarding page prompting you to continue the app configuration process. | - [Install the certificates for the app](proxy-deployment-any-app.md). <br /><br /> **Note:** Make sure the app is configured with all domains required for the app to function correctly. To configure additional domains, proceed to [Add the domains for the app](proxy-deployment-any-app.md), and then return to the app page. |
 
 <a name="onboarding-apps-additional-considerations"></a>
 

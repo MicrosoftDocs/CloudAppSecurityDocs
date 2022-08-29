@@ -13,7 +13,10 @@ This article provides information about how to personalize the email notificatio
 > [!NOTE]
 > This customization only affects the notifications sent to your end users, not the notifications sent to Defender for Cloud Apps administrators.
 
-## <a name="mailsettings"></a> Set email notification preferences
+## Set email notification preferences
+
+> [!NOTE]
+> Custom mail settings aren't available for US Government offering customers.
 
  Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
