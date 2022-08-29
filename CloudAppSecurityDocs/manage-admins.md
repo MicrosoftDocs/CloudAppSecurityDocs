@@ -32,7 +32,7 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
-- **Security operator: Have read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
+- **Security operator: Has read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
   - Create policies or edit and change existing ones
   - Performing any governance actions
@@ -46,7 +46,7 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
   - Accessing and viewing the Manage snapshot reports page
   - Accessing and viewing SIEM agents
 
-- **Security reader**: Have read-only permissions. These admins are restricted from doing the following actions:
+- **Security reader**: Has read-only permissions. These admins are restricted from doing the following actions:
 
   - Create policies or edit and change existing ones
   - Performing any governance actions
