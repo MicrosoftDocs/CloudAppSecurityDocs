@@ -61,6 +61,12 @@ sections:
         answer: |
           It can take up to 24 hours to fully prepare app governance and retrieve data after you first initiate it. During this period data access statistics and app counts can be inaccurate.
 
+      - question: How does app governance integrate with Microsoft Sentinel?
+        answer: |
+          App governance is integrated with Microsoft 365 Defender for a unified alert experience. The Microsoft 365 Defender connector for Microsoft Sentinel (preview) sends all Microsoft 365 Defender incidents and alerts information to Microsoft Sentinel and keeps the incidents synchronized.  
+
+          The Microsoft 365 Defender connector enables you to automatically detect, triage, investigate and remediate app governance incidents and alerts on Microsoft Sentinel. For more information see [Microsoft 365 Defender integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-365-defender-integration-with-azure-sentinel) and [Connect data from Microsoft 365 Defender to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
+
       - question: Where can I get more information about app governance?
         answer: |
           You can find more information about app governance in the following resources:
