@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 08/21/2022
+ms.date: 09/04/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -26,6 +26,33 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## Defender for Cloud Apps release 235
+
+September 4, 2022
+
+- **Log Collector version update**  
+We've released a new log collector version with the latest vulnerabilities fixes.
+
+  New version: **columbus-0.235.0-signed.jar**
+
+  Main changes:
+  - Docker image was rebuilt with latest updates
+  - Openssl library was update from 1.1.1l to 1.1.1q
+  - fasterxml.jackson.core.version was updated from 2.13.1 to 2.13.3
+
+  If you wish to update the version, stop your log collectors, remove the current image, and install a new one.  
+  To verify the version, run this command inside the Docker container: `cat var/adallom/versions | grep columbus-`  
+  For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
+
+- **Onboarding application to session controls (Preview)**  
+The process of onboarding an application to be used for session controls has been improved and should increase the success rate of the onboarding process. To onboard an application:
+
+  1. Go to the Conditional Access App Control list in **Settings** -> **Conditional access app control**.
+  1. After selecting **Onboard with session control**, you're presented with an **Edit this app** form.
+  1. To onboard the application to session controls, you must select the **Use the app with session controls** option.
+  
+  For more information, see [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md).
 
 ## Defender for Cloud Apps release 234
 
