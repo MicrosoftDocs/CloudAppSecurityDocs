@@ -17,9 +17,9 @@ The Cloud Discovery dashboard is designed to give you more insight into how clou
 
 The first thing you should do to get a general picture of your Cloud Discovery apps is review the following information in the Cloud Discovery Dashboard:
 
-1. First look at the overall cloud app use in your organization in the **High-level usage overview**.
+1. First, look at the overall cloud app use in your organization in the **High-level usage overview**.
 
-1. Then, dive one level deeper to see which are the **top categories** used in your org for each of the different use parameters. You can see how much of this usage is by Sanction apps.
+1. Then, dive one level deeper to see which are the **top categories** used in your org for each of the different use parameters. You can see how much of this usage is by Sanctioned apps.
 
 1. Go even deeper and see all the apps in a specific category in the **Discovered apps** tab.
 
@@ -73,7 +73,7 @@ To view discovered resources:
 
    ![Discovery resources.](media/discovery-resources.png)
 
-1. For custom apps, you can click the three buttons at the end of the row and select **Add custom app**. This will open the **Add custom app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
+1. For custom apps, you can select the three buttons at the end of the row and choose **Add custom app**. This will open the **Add custom app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
 
 ## Generate Cloud Discovery executive report
 
@@ -81,7 +81,7 @@ The best way to get an overview of Shadow IT use across your organization is by 
 
 To generate a Cloud Discovery executive report:
 
-1. From the **Cloud Discovery dashboard**, click the three dots in the upper-right corner of the dashboard, and then select **Generate Cloud Discovery executive report**.
+1. From the **Cloud Discovery dashboard**, select the three dots in the upper-right corner of the dashboard, and then choose **Generate Cloud Discovery executive report**.
 
 1. Optionally, change the report name.
 1. Select **Generate**.
