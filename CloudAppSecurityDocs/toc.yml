@@ -321,7 +321,7 @@ items:
         href: security-config-aws.md
       - name: Security configuration for GCP
         href: security-config-gcp.md
-    - name: Monitor apps
+    - name: Monitor alerts
       href: monitor-alerts.md
       items:
       - name: Manage alerts
