@@ -21,7 +21,7 @@ To see all of the alerts, select the **Alerts** tab.
 
 App governance alerts are now listed with all other Microsoft 365 Defender alerts. To find them, filter for "App governance" as the service source.
 
-
+:::image type="content" source="media/app-governance/appg-alerts.png" alt-text="The app governance alerts filtered in the Microsoft 365 Defender alerts." lightbox="media/app-governance/appg-alerts.png":::
 
 ## Next step
 
