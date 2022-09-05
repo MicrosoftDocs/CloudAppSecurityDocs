@@ -65,7 +65,7 @@ Additionally, the following items should be allowed, depending on which data cen
 |GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com, \*.us1.portal.cloudappsecuritygov.com |
 
 > [!NOTE]
-> Instead of a wildcard (\*), you can open only your specific tenant URL. For example, based on the screenshot above you can open: `tenant2.us.portal.cloudappsecurity.com`
+> For portal access, instead of a wildcard (\*), you can choose to open only your specific tenant URL. For example, based on the screenshot above you can open: `tenant2.us.portal.cloudappsecurity.com`
 
 ## Access and session controls
 
