@@ -15,7 +15,7 @@ Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that 
 
 Microsoft Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities.
 
-For information about licensing, see the [Microsoft Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
 ## What is a CASB?
 

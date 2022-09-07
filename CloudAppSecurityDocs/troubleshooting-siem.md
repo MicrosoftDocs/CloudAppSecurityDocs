@@ -12,7 +12,7 @@ This article provides a list of possible issues when connecting your SIEM to Def
 
 ## Recover missing activity events in Defender for Cloud Apps SIEM Agent
 
-Before you proceed, check that your [Defender for Cloud Apps license](https://aka.ms/mcaslicensing) supports the SIEM integration you're trying to configure.
+Before you proceed, check that your [Defender for Cloud Apps license](https://aka.ms/M365EnterprisePlans) supports the SIEM integration you're trying to configure.
 
 If you received a system alert regarding an issue with activity delivery through the SIEM agent, follow the steps below to recover the activity events in the timeframe of the issue. These steps will guide you through setting up a new Recovery SIEM agent that will run in parallel and resend the activity events to your SIEM.
 

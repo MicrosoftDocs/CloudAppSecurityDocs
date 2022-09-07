@@ -11,7 +11,7 @@ ms.topic: overview
 
 This article describes the differences between discovery capabilities in Microsoft Defender for Cloud Apps and Azure Active Directory (Azure AD).
 
-For information about licensing, see the [Microsoft Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
 ## Microsoft Defender for Cloud Apps
 
