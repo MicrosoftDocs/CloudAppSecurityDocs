@@ -10,7 +10,7 @@ ms.topic: overview
 
 This article describes the differences between Defender for Cloud Apps and Office 365 Cloud App Security.
 
-For information about licensing, see the [Microsoft Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
 ## Microsoft Defender for Cloud Apps
 
