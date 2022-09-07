@@ -13,7 +13,7 @@ This quickstart provides you with steps for getting up and running with Defender
 
 ## Prerequisites
 
-- In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps. For pricing details, see the [Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
+- In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps. For pricing details, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
     For tenant activation support, see [Ways to contact support for business products - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 

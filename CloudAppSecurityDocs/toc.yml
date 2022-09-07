@@ -530,7 +530,7 @@ items:
   - name: Release note archive
     href: release-note-archive.md
   - name: Licensing datasheet
-    href: https://aka.ms/mcaslicensing
+    href: https://aka.ms/M365EnterprisePlans
   - name: Support and troubleshooting
     href: support-and-ts.md
   - name: Defender for Cloud Apps portal

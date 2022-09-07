@@ -12,7 +12,7 @@ This article provides admins with guidance on how to investigate and resolve com
 
 Before you continue, make sure your environment meets the following minimum general requirements for access and session controls.
 
-- **Licensing**: Make sure you have a valid [license](https://aka.ms/mcaslicensing).
+- **Licensing**: Make sure you have a valid [license](https://aka.ms/M365EnterprisePlans).
 - **Single Sign-On (SSO)**: Apps must be configured with one of the supported SSO solutions.
   - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0
   - Non-Microsoft IdP using SAML 2.0
