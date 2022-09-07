@@ -146,6 +146,8 @@ items:
       href: app-governance-manage-app-governance.md
     - name: Get started with app governance
       href: app-governance-get-started.md
+    - name: App governance trial playbook
+      href: app-governance-trial-playbook.md
     - name: What's new in app governance
       href: app-governance-whats-new.md
     - name: Submit feedback on app governance
