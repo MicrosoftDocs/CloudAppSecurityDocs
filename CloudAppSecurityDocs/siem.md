@@ -173,7 +173,7 @@ The following text is an alerts logfile example:
 
 ## Regenerating your token
 
-If you lose the token, you can always regenerate it by clicking the three dots at the end of the row for the SIEM agent in the table. Select **Regenerate token** to get a new token.
+If you lose the token, you can always regenerate it by selecting the three dots at the end of the row for the SIEM agent in the table. Select **Regenerate token** to get a new token.
 
 ![SIEM - regenerate token.](media/siem-regenerate-token.png)
 
