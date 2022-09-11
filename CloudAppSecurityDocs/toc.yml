@@ -172,6 +172,8 @@ items:
           href: app-governance-app-policies-get-started.md
         - name: Predefined app policies
           href: app-governance-predefined-policies.md
+        - name: Investigate predefined app policy alerts
+          href: app-governance-investigate-predefined-policies.md
         - name: Create app policies
           href: app-governance-app-policies-create.md
         - name: Manage app policies
