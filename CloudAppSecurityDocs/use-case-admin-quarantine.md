@@ -25,6 +25,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 > - If a file in SharePoint or OneDrive is detected to be malware, it can't be quarantined in the Defender for Cloud Apps portal. The file is already locked by SharePoint or OneDrive.
 > - Files labeled by Defender for Cloud Apps can't be quarantined.
 > - Defender for Cloud Apps admin quarantine actions are limited to 100 actions per day. This limit can be increased with a support case.
+> - Sharepoint sites that are renamed either directly or as part of domain rename cannot be used as a folder location for admin quarantine. 
 
 1. When a file matches a policy, the **Admin quarantine** option will be available for the file.
 
