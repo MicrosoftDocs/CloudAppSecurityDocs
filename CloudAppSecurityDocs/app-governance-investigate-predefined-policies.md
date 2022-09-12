@@ -1,5 +1,6 @@
 ---
 title: Investigate predefined app policy alerts
+titleSuffix: App Governance
 ms.date: 09/09/2022
 ms.topic: conceptual
 description: Learn how to investigate predefined app policy alerts from app governance.
@@ -7,7 +8,7 @@ description: Learn how to investigate predefined app policy alerts from app gove
 
 # Investigate predefined app policy alerts
 
- App governance provides predefined app policy alerts for anomalous activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because predefined policies are non-deterministic by nature, they're only triggered when there is behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+App governance provides predefined app policy alerts for anomalous activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because predefined policies are non-deterministic by nature, they're only triggered when there is behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## Security alert classifications
 
@@ -21,12 +22,11 @@ Following proper investigation, all app governance alerts can be classified into
 
 Use the following general guidelines when investigating any type of alert to gain a clearer understanding of the potential threat before applying the recommended action.
 
-- Review the app severity level and compare with the rest of the apps in your tenant. This review will help you identify which apps in your tenant pose greater risk.
-- If you identify a TP, review all the app activities to gain an understanding of the impact. For example, review the following app information:
-
-  - Scopes granted access
-  - Unusual behavior  
-  - IP address and location
+1. Review the app severity level and compare with the rest of the apps in your tenant. This review will help you identify which apps in your tenant pose greater risk.
+1. If you identify a TP, review all the app activities to gain an understanding of the impact. For example, review the following app information:
+   - Scopes granted access
+   - Unusual behavior  
+   - IP address and location
 
 ## Predefined app policy alerts
 This section provides information on each predefined policy alert, along with steps for investigation and remediation.
@@ -220,3 +220,7 @@ Review all activities performed by the app, scopes granted to the app and user a
 
   **Recommended action**: Dismiss the alert.
   
+  
+## Next steps
+
+[Create an app policy](app-governance-app-policies-create.md)
