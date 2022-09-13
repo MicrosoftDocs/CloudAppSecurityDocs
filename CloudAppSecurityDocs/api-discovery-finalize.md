@@ -21,7 +21,7 @@ POST /api/v1/discovery/done_upload/
 | Parameter | Description |
 | --- | --- |
 | uploadUrl | The URL that was returned in the initial call requesting file upload. |
-| inputStreamName | The name of the data source from which data is coming in (in order to see the list of names, in the portal, go to settings --> Automatic log upload). |
+| inputStreamName | The name of the data source from which data is coming in (to see the list of names, in the portal, go to **Settings** > **Automatic log upload**). |
 | uploadAsSnapshot | Upload the data as a snapshot report instead of uploading to a continuous report. If this parameter is set, then the report will be created with the name specified in inputStreamName. |
 
 ## Example
