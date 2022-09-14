@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 09/04/2022
+ms.date: 09/18/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -26,6 +26,13 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## Defender for Cloud Apps release 236
+
+September 18, 2022
+
+- **Egnyte API connector is generally available**  
+The Egnyte API connector is generally available, providing you with deeper visibility and control over your organization's usage of the Egnyte app. For more information, see [How Defender for Cloud Apps helps protect your Egnyte environment](protect-egnyte.md).
 
 ## Defender for Cloud Apps release 235
 
