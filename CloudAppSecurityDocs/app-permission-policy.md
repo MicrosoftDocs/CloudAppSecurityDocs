@@ -30,7 +30,8 @@ Alternatively, you can also create the policy by selecting **Control** followed 
 
    ![new OAuth app policy.](media/app-permissions-policy.png)
 
-Note: OAuth apps policies will trigger alerts only on policies that were authorized by users in the tenant.
+> [!NOTE]
+> OAuth apps policies will trigger alerts only on policies that were authorized by users in the tenant.
 
 ## OAuth app anomaly detection policies
 
