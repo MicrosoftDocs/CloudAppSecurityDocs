@@ -152,21 +152,21 @@ The following specific admin roles can be configured in the Defender for Cloud A
 
 - **Cloud Discovery report admin**:
 
-- Settings
-  - System settings - View only
-  - Cloud Discovery settings - View all (anonymization permissions depend on whether it was allowed during role assignment)
-- Cloud Discovery activity - read permissions only
-- Alerts – view only alerts related to the relevant Cloud Discovery report
-- Policies - Can view all policies and can create only Cloud Discovery policies, without the possibility to govern application (tagging, sanction and unsanctioned)
-- Activities page - No permissions
-- Accounts page - No permissions
-- App permissions – No permissions
-- Files page – No permissions
-- Conditional Access App Control - No permissions
-- Security extensions - Creating and deleting their own API tokens
-- Governance actions – view only actions related to the relevant Cloud Discovery report
-- Security recommendations for cloud platforms - No permissions
-- IP ranges - No permissions
+  - Settings
+    - System settings - View only
+    - Cloud Discovery settings - View all (anonymization permissions depend on whether it was allowed during role assignment)
+  - Cloud Discovery activity - read permissions only
+  - Alerts – view only alerts related to the relevant Cloud Discovery report
+  - Policies - Can view all policies and can create only Cloud Discovery policies, without the possibility to govern application (tagging, sanction and unsanctioned)
+  - Activities page - No permissions
+  - Accounts page - No permissions
+  - App permissions – No permissions
+  - Files page – No permissions
+  - Conditional Access App Control - No permissions
+  - Security extensions - Creating and deleting their own API tokens
+  - Governance actions – view only actions related to the relevant Cloud Discovery report
+  - Security recommendations for cloud platforms - No permissions
+  - IP ranges - No permissions
 
 > [!NOTE]
 > The built-in Defender for Cloud Apps admin roles only provide access permissions to Defender for Cloud Apps.
