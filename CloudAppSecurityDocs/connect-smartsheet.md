@@ -47,7 +47,7 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
     - **App name**: For example, **Microsoft Defender for Cloud Apps**.
     - **App description**: For example, **Microsoft Defender for Cloud Apps connects to Smartsheet via its API and detects threats within users' activity.**
     - **App URL**: `https://portal.cloudappsecurity.com`
-    - **App contact/support**: `https://docs.microsoft.com/cloud-app-security/support-and-ts`
+    - **App contact/support**: `https://learn.microsoft.com/cloud-app-security/support-and-ts`
     - **App redirect URL**: `https://portal.cloudappsecurity.com/api/oauth/saga`
 
       > [!NOTE]
