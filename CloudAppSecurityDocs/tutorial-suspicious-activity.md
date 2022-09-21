@@ -134,6 +134,9 @@ To prevent alert fatigue, set the **daily alert limit**.
 
 ## Phase 5: Configure alerts
 
+Note - Starting November 15th, 2022, The Alerts/SMS (text messages) will be deprecated. 
+Customers who would like to receive text alerts should use Microsoft Power Automate for custom alert automation. For more details ((https://learn.microsoft.com/en-us/defender-cloud-apps/tutorial-suspicious-activity))
+
 You can choose to receive alerts in the format and medium that most suits your needs. To receive immediate alerts at any time of the day, you may prefer to receive them via email or text message.
 
 You may also want the ability to analyze alerts in the context of other alerts triggered by other products in your organization to give you a holistic view of a potential threat. For example, you may want to correlate between cloud-based and on-premises events to see if there is any other mitigating evidence that may confirm an attack.
