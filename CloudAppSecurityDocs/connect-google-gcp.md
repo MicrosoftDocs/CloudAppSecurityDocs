@@ -151,6 +151,11 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 1. Click **Test API** to make sure the connection succeeded.
 
     Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, click **Done**.
+    
+    > [!NOTE]
+    > Defender for Cloud Apps will create an aggregated export sink (organization level), a Pub/Sub topic and Pub/Sub subscription using the integration service        account in the integration project. 
+   
+    > Aggregated export sink is used to aggregate logs across the GCP organization and the Pub/Sub topic created is used as the destination. Defender for Cloud Apps subscribs to this topic through the Pub/Sub subscription created to retrieve the admin activity logs across GCP organization. 
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
