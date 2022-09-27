@@ -158,7 +158,6 @@ Any web app configured using the [previously mentioned authentication protocols]
 - Microsoft Teams
 - Microsoft Yammer
 - Salesforce
-- ServiceNow
 - Slack
 - Tableau
 - Workday
