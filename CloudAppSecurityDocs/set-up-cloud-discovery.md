@@ -36,7 +36,7 @@ The process of generating a risk assessment consists of the following steps. The
 
 - **Parse** – Defender for Cloud Apps parses and extracts traffic data from the traffic logs with a dedicated parser for each data source.
 
-- **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 25,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.
+- **Analyze** – Traffic data is analyzed against the Cloud App Catalog to identify more than 31,000 cloud apps and to assess their risk score. Active users and IP addresses are also identified as part of the analysis.
 
 - **Generate report** - A risk assessment report of the data extracted from log files is generated.
 
