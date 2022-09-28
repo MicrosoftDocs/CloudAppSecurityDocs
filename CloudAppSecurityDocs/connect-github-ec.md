@@ -61,7 +61,6 @@ Repeat this step for each additional connected organization.
 
     > [!NOTE]
     >
-    > - By default, OAuth app access is restricted for organizations. To enable access, browse to **Settings** > **Third-party access**, click **Remove restrictions**, and then click **Yes, remove application restrictions**.
     > - Apps owned by an organization have access to the organization's apps. For more information, see [About OAuth App access restrictions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-oauth-app-access-restrictions).
 
 1. Browse to **Settings** > **OAuth Apps**, select the OAuth App you just created, and make note of its **Client ID** and **Client Secret**.
@@ -80,7 +79,7 @@ Repeat this step for each additional connected organization.
 
     The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
-1. Authorize the app to give Defender for Cloud Apps to access your GitHub organization.
+1. Request for Organization access and Authorize the app to give Defender for Cloud Apps to access your GitHub organization.
 
     > [!NOTE]
     > Defender for Cloud Apps requires the following OAuth scopes:
@@ -93,6 +92,12 @@ Repeat this step for each additional connected organization.
     ![Screenshot showing authorize github oauth.](media/connect-github-authorize-app.png)
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
+
+1. Work with your GITHUB organization owner to grant organization access to the oAuth app created. Organization owner has to navigate to **Organization Settings** -> **Integrations** -> **Third-party access** for granting access. 
+
+ > [!NOTE]
+ > 
+ > Organization owner will find the request from oAuth app only post connecting GITHUB to Defender for Cloud Apps. 
 
 1. Make sure the connection succeeded by clicking **Test API**.
 
