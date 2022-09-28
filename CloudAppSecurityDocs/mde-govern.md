@@ -26,7 +26,10 @@ Defender for Cloud Apps uses the built-in [**Unsanctioned**](governance-discover
 
 ### How blocking works
 
-Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically synced to Defender for Endpoint, usually within a few minutes. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Microsoft Defender Antivirus within the Network Protection SLA.
+Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically synced to Defender for Endpoint. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Microsoft Defender Antivirus within the Network Protection SLA.
+
+> [!NOTE]
+> The time latency to block an app via Defender for Endpoint is up to three hours from the moment the unsanction action is done in Defender for Cloud Apps to the moment the app is blocked in the device. This is due to up to one hour of synchronization of Defender for Cloud Apps sanctioned/unsanctioned apps to Defender for Endpoint, and up to two hours to push the policy to the devices in order to block the app once the indicator was created in Defender for Endpoint.
 
 ### How to enable cloud app blocking with Defender for Endpoint
 
@@ -35,6 +38,9 @@ Use the following steps to enable access control for cloud apps:
 1. In Defender for Cloud Apps, under the settings cog, select **Settings**, under **Cloud Discovery** select **Microsoft Defender for Endpoint**, and then select **Block unsanctioned apps**.
 
     ![Screenshot showing how to enable blocking with Defender for Endpoint](media/mde-integration.png)
+
+    > [!NOTE]
+    > It can take up to 30 minutes for this setting to take effect.
 
 1. In Microsoft 365 Defender, go to **Settings** > **Endpoints** > **Advanced features**, and then select **Custom network indicators**. For information about network indicators, see [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain).
 
