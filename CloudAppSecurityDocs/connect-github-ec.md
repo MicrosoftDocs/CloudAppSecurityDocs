@@ -93,11 +93,11 @@ Repeat this step for each additional connected organization.
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
 
-1. Work with your GITHUB organization owner to grant organization access to the oAuth app created. Organization owner has to navigate to **Organization Settings** -> **Integrations** -> **Third-party access** for granting access. 
+1. Work with your GitHub organization owner to grant organization access to the OAuth app created. The organization owner should navigate to **Organization Settings** -> **Integrations** -> **Third-party access** to grant access. 
 
  > [!NOTE]
  > 
- > Organization owner will find the request from oAuth app only post connecting GITHUB to Defender for Cloud Apps. 
+ > The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps. 
 
 1. Make sure the connection succeeded by clicking **Test API**.
 
