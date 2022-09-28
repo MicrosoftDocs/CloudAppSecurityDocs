@@ -79,7 +79,7 @@ Repeat this step for each additional connected organization.
 
     The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
-1. Request for Organization access and Authorize the app to give Defender for Cloud Apps to access your GitHub organization.
+1. Request organization access and authorize the app to give Defender for Cloud Apps access to your GitHub organization.
 
     > [!NOTE]
     > Defender for Cloud Apps requires the following OAuth scopes:
