@@ -45,14 +45,6 @@ The alert score represents the potential impact of a specific alert on each user
 - **Activity scoring**  
 The activity score determines the probability of a specific user performing a specific activity, based on behavioral learning of the user and their peers. Activities identified as the most abnormal receive the highest scores.
 
-- **Blast radius (Preview)**
-Blast radius adds an additional score factor to the investigation priority calculations, based on multiple factors that determine the potential impact a compromised user has on the organization.
-
-  ![Blast radius](media/blast-radius-design.png)
-
-  >[!NOTE]
-  > The blast radius factor is dependent on the relevancy of the tenant, and therefore may not appear for all tenants.
-
 ## Phase 1: Connect to the apps you want to protect<a name="connect-apps-protect"></a>
 
 1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](./connect-office-365.md).
