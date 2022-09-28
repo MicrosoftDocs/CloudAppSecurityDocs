@@ -43,6 +43,9 @@ The following are examples of file policies that can be created:
 
 * **Sensitive file extension** - Receive an alert about files with specific extensions that are potentially highly exposed. Select the specific extension (for example, crt for certificates) or filename and exclude those files with private sharing level.
 
+> [!NOTE]
+> You are limited to 50 file policies in Defender for Cloud Apps.
+
 ## Create a new file policy
 
 To create a new file policy, follow this procedure:
