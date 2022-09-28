@@ -138,7 +138,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
     - System settings - View only
     - Cloud Discovery settings - View and edit all (anonymization permissions depend on whether it was allowed during role assignment)
   - Cloud Discovery activity - full permissions
-  - Alerts - only alerts related to Cloud Discovery data
+  - Alerts - view and manage only alerts related to the relevant Cloud Discovery report
   - Policies - Can view all policies and can edit or create only Cloud Discovery policies
   - Activities page - No permissions
   - Accounts page - No permissions
@@ -148,8 +148,25 @@ The following specific admin roles can be configured in the Defender for Cloud A
   - Security extensions - Creating and deleting their own API tokens
   - Governance actions - Only Cloud Discovery related actions
   - Security recommendations for cloud platforms - No permissions
+  - IP ranges - No permissions
 
-- **Cloud Discovery report admin**: Has permissions to view all the data in Defender for Cloud Apps that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender for Endpoint. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin won't have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
+- **Cloud Discovery report admin**:
+
+  - Settings
+    - System settings - View only
+    - Cloud Discovery settings - View all (anonymization permissions depend on whether it was allowed during role assignment)
+  - Cloud Discovery activity - read permissions only
+  - Alerts – view only alerts related to the relevant Cloud Discovery report
+  - Policies - Can view all policies and can create only Cloud Discovery policies, without the possibility to govern application (tagging, sanction and unsanctioned)
+  - Activities page - No permissions
+  - Accounts page - No permissions
+  - App permissions – No permissions
+  - Files page – No permissions
+  - Conditional Access App Control - No permissions
+  - Security extensions - Creating and deleting their own API tokens
+  - Governance actions – view only actions related to the relevant Cloud Discovery report
+  - Security recommendations for cloud platforms - No permissions
+  - IP ranges - No permissions
 
 > [!NOTE]
 > The built-in Defender for Cloud Apps admin roles only provide access permissions to Defender for Cloud Apps.
