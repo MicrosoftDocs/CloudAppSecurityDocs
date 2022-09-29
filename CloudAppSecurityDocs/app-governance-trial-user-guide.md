@@ -1,17 +1,17 @@
 ---
-title: App governance trial playbook
+title: App governance trial user guide
 ms.date: 08/25/2022
 ms.topic: conceptual
 description: Step-by-step guide to help you quickly get started with the app governance add-on trial
 ---
 
-# Trial playbook: App governance add-on to Defender for Cloud Apps
+# Trial user guide: App governance add-on to Defender for Cloud Apps
 
 Welcome to the step-by-step guide to help you quickly get started with the app governance add-on trial.
 
 Before getting into the details of setting up your trial, and recommended key features to try, let's review the relationship between the app governance add-on and Microsoft Defender for Cloud Apps.
 
-## Managing Risks from Apps
+## Managing risks from apps
 
 You can deploy three broad solution types to control and protect from risks posed by non-Microsoft and Line of Business (LOB) cloud apps:
 
@@ -58,7 +58,7 @@ App governance add-on offers an in-depth Microsoft 365 platform-level view & con
 - **Protect the data in your cloud apps** – Detect apps that have uploaded/downloaded large amounts of Microsoft 365 data
 
 > [!NOTE]
-> This step-by-step guide playbook is focused only on the app governance add-on to Defender for Cloud Apps and will provide you with recommendations to help you make the most of your free trial.
+> This step-by-step user guide is focused only on the app governance add-on to Defender for Cloud Apps and will provide you with recommendations to help you make the most of your free trial.
 
 ## Get started with the app governance add-on trial
 
