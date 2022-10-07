@@ -22,7 +22,9 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
 - **Data usage**: Mouse over each month column in the graph to see the corresponding value.
   - **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
   - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
-- **Optimize app governance with policies**: Recommended actions such as creating an app usage or permissions policy.
+- **Apps that accessed data across Microsoft 365 services**: The count of apps that have accessed data with and without sensitivity labels on SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days. For example, in the screenshot above, 99 apps accessed OneDrive in the last 30 days, out of which 27 apps accessed data with sensitivity labels. 
+- **Sensitivity labels accessed**: Count of apps that accessed labeled data across SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days, sorted by the count. For example, in the screenshot above, 90 apps accessed confidential data on SharePoint, OneDrive, Exchange Online, and Teams.
+- **Predefined policies**: Count of active and total predefined policies that identify risky apps, such as apps with excessive privileges, unusual characteristics, or suspicious activities.
 - **App categories**: The top apps sorted by these categories:
   
   - **All categories**: Sorts across all available categories.
