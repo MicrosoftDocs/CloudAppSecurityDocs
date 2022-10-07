@@ -51,6 +51,12 @@ You will see a list of apps and this information:
   Indicates whether the app is compatible with Microsoft technologies, compliant with Defender for Cloud Apps best practices, and supported by Microsoft.
 
 - App ID
+- Sensitivity label accessed
+
+  Sensitivity labels on content accessed by the app.
+- Service accessed
+
+  Microsoft 365 services accessed by the app
 
 App governance sorts the app list alphabetically by **App name** by default. To sort the list by another app attribute, select the attribute name.
 
