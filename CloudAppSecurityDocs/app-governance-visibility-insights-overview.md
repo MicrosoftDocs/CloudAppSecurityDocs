@@ -34,6 +34,7 @@ With app governance, you can see:
   - High-usage apps.
   - Top consented users whose data a specific app can access.
   - Priority accounts who have data that a specific app can access.
+  - OAuth applications that have accessed sensitive or regular content on SharePoint, OneDrive, Exchange Online, or Teams.
 
 - A cumulative view of users accessing apps.
 - Alerts insights.
