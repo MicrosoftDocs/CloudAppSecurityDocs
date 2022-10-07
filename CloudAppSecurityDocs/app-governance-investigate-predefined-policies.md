@@ -221,6 +221,24 @@ Review all activities performed by the app, scopes granted to the app and user a
   **Recommended action**: Dismiss the alert.
   
   
+### Access to sensitive data
+
+**Severity**: Medium
+
+Find apps that access sensitive data identified by specific sensitively labels.
+
+**TP or FP?**
+
+To determine if the alert is a true positive (TP) or a false positive (FP), review resources accessed by the app.
+
+- **TP**: Apply this recommended action if you have confirmed that the app or the detected activity is irregular or potentially malicious. 
+
+  **Recommended action**: Prevent the app from accessing any resources by deactivating it from Azure Active Directory.
+
+- **FP**: Apply this recommended action if you have confirmed that the app has legitimate business use in the organization and the detected activity was expected.
+
+  **Recommended action**: Dismiss the alert.
+
 ## Next steps
 
 [Create an app policy](app-governance-app-policies-create.md)
