@@ -21,6 +21,7 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
 
 >[!NOTE]
 >The Smartsheet license must be an Enterprise plan with the Platinum package.
+>Smartsheet accounts hosted in EU region (.eu domain suffix) is not supported currently.
 
 1. Register to add Developer Tools to your existing Smartsheet account:
     1. Go to the [Developer Sandbox Account Registration](https://developers.smartsheet.com/register/) page.
