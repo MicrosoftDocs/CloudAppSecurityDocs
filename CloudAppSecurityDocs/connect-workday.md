@@ -101,6 +101,9 @@ For more information about setting up Workday integration users, security groups
 > [!NOTE]
 > After connecting Workday, you'll receive events for seven days prior to connection.
 
+> [!NOTE]
+> If you are connecting Defender for Cloud Apps to Workday sandbox account for testing, note that Workday refreshes their sandbox account every week causing the Defender for Cloud Apps connection to fail. You should re-connect the sandbox environment every week with Defender for Cloud Apps for continuing testing.
+
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
 ## Next steps
