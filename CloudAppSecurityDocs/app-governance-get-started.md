@@ -64,22 +64,6 @@ Here are the capabilities for each role.
 
 For more information about each role, see [Administrator role permissions](/azure/active-directory/roles/permissions-reference).
 
-## Enable Defender for Cloud Apps sync
-
-To enable app governance sync with Defender for Cloud Apps, follow these steps:
-
-1. Ensure Office 365 is connected in Defender for Cloud Apps.
-1. Ensure there is at least one OAuth-enabled application that accesses Office 365 data registered in Azure AD.
-1. Go to your Defender for Cloud Apps portal – [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
-1. Select the gear icon (top-right corner) and select **Settings**.
-1. Under **Threat Protection**, select **App Governance**.
-1. Select **Enable App Governance integration**, and then select **Save**.
-
-To verify the integration with Defender for Cloud Apps is active, look for the app governance policies listed below to appear in Defender for Cloud Apps. The new policies might take few minutes to appear once integration is enabled.
-
-- Microsoft 365 OAuth app Reputation
-- Microsoft 365 OAuth Phishing Detection
-- Microsoft 365 OAuth App Governance
 
 > [!NOTE]
-> App governance alerts will not flow to Microsoft 365 Defender until app governance is enabled in Defender for Cloud Apps and you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
+> App governance alerts will not flow to Microsoft 365 Defender until you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
