@@ -75,6 +75,11 @@ For more information about setting up Workday integration users, security groups
     * Authorization Endpoint
 
     ![Screenshot of confirming registration of API client.](media/connect-workday-register-api-client-confirm.png)
+    
+>[!NOTE]
+>If the Workday account is enabled with SAML SSO, then append the query string parameter `'redirect=n'` to the authorization endpoint. 
+>
+>If the authorization endpoint already has other query string parameters, then append `'&redirect=n'` to the end of authorization endpoint. If the authorization endpoint doesn't have any query string parameters, then append `'?redirect=n'` to the end of authorization endpoint.
 
 1. <a name="add-connector"></a>In the Defender for Cloud Apps portal, click **Investigate** and then click **Connected Apps**.
 
