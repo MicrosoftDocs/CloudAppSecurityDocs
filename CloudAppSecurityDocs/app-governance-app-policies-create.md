@@ -123,6 +123,8 @@ Use a custom app policy when you need to do something not already done by one of
     |Names of consenting users|Select users from list||
     |Roles of consenting users|Select roles from list|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
     |Services accessed|Exchange and/or OneDrive and/or SharePoint and/or Teams|Multiple selections allowed.|
+    |Sensitivity labels accessed|Select one or more sensitivity labels from the list|Apps that accessed data with specific sensitivity labels in the last 30 days.|
+    |Services accessed|Exchange and/or OneDrive and/or SharePoint and/or Teams|Multiple selections allowed.|
     |Error rate|Error rate is greater than X% in the last seven days||
     ||||
 
