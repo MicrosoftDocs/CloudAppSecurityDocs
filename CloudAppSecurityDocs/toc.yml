@@ -164,6 +164,8 @@ items:
           href: app-governance-visibility-insights-view-apps.md
         - name: Determine compliance posture
           href: app-governance-visibility-insights-compliance-posture.md
+        - name: Sensitive content
+          href: app-governance-visibility-insights-sensitive-content.md
     - name: Implement app policies
       items:
         - name: Learn about app policies
