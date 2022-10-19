@@ -98,34 +98,32 @@ Use a custom app policy when you need to do something not already done by one of
 
 1. The **Create rule** pane allows you to select conditions for a new rule. Select **Add condition** and select from the list of conditions, and then specify the value of the condition. You can add multiple conditions.
 
-    Here are the available conditions for a custom app policy.
+1.  Here are the available conditions for a custom app policy.
 
-    |Condition|Condition values accepted|Description|More information|
-    |---|---|---|---|
-    |App registration age|Within last X days|Apps that were registered to Azure AD within a specified period from the current date||
-    |Certification|No certification, Publisher attested, Microsoft 365 Certified|Apps that are Microsoft 365 Certified, have a publisher attestation report, or neither|[Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
-    |Publisher verified|Yes or No|Apps that have verified publishers|[Publisher Verification](/azure/active-directory/develop/publisher-verification-overview)|
-    |Application permissions|Select one or more API permissions from list|Apps with specific Graph API permissions that have been granted directly|[Microsoft Graph permissions reference](/graph/permissions-reference)|
-    |Delegated permissions|Select one or more API permissions from list|Apps with specific Graph API permissions that have been given by a user|[Microsoft Graph permissions reference](/graph/permissions-reference)|
-    |Highly privileged|Yes or No|Apps with relatively powerful Graph API permissions|This is an internal designation based on the same logic used by Defender for Cloud Apps.|
-    |Overprivileged|Yes or No|Apps with unused Graph API permissions|Apps with more granted permissions than are being used by those apps.|
-    |Non-Graph API permissions|Yes or No|Apps with permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates.||
-    |Data usage|Greater than X GB of data downloaded and uploaded per day|Apps that have read and written more than a specified amount of data using Graph API||
-    |Data usage trend|X % increase in data usage compared to previous day|Apps whose data reads and writes using Graph API have increased by a specified percentage compared to the previous day||
-    |Graph API access|Greater than X API calls per day|Apps that have made over a specified number of Graph API calls in a day||
-    |Graph API access trend|X % increase in API calls compared to previous day|Apps whose number of Graph API calls have increased by a specified percentage compared to the previous day||
-    |Number of consenting users|(Greater than or Less than) X consented users|Apps that have been given consent by a greater or fewer number of users than specified||
-    |Increase in consenting users|X % increase in users in the last 90 days|Apps whose number of consenting users have increased by over a specified percentage in the last 90 days||
-    |Priority account consent given|Yes or No|Apps that have been given consent by priority users |A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
-    |Names of consenting users|Select users from list|Apps that have been given consent by specific users||
-    |Roles of consenting users|Select roles from list|Apps that have been given consent by users with specific roles|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
-    |Services accessed|Exchange and/or OneDrive and/or SharePoint and/or Teams|Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API|Multiple selections allowed.|
-    |Error rate|Error rate is greater than X% in the last seven days|Apps whose Graph API error rates in the last 7 days are greater than a specified percentage||
+|Condition|Condition values accepted|Description|More information|
+|---|---|---|---|
+|Registration age|Within last X days|Apps that were registered to Azure AD within a specified period from the current date||
+|Certification|No certification, Publisher attested, Microsoft 365 Certified|Apps that are Microsoft 365 Certified, have a publisher attestation report, or neither|[Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
+|Publisher verified|Yes or No|Apps that have verified publishers|[Publisher Verification](/azure/active-directory/develop/publisher-verification-overview)|
+|Application permissions (Graph only)|Select one or more API permissions from list|Apps with specific Graph API permissions that have been granted directly|[Microsoft Graph permissions reference](/graph/permissions-reference)|
+|Delegated permissions (Graph only)|Select one or more API permissions from list|Apps with specific Graph API permissions that have been given by a user|[Microsoft Graph permissions reference](/graph/permissions-reference)|
+|Highly privileged (Graph only)|Yes or No|Apps with relatively powerful Graph API permissions|This is an internal designation based on the same logic used by Defender for Cloud Apps.|
+|Overprivileged (Graph only)|Yes or No|Apps with unused Graph API permissions|Apps with more granted permissions than are being used by those apps.|
+|Non-Graph API permissions|Yes or No|Apps with permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates.||
+|Data usage (Graph only)|Greater than X GB of data downloaded and uploaded per day|Apps that have read and written more than a specified amount of data using Graph API||
+|Data usage trend (Graph only)|X % increase in data usage compared to previous day|Apps whose data reads and writes using Graph API have increased by a specified percentage compared to the previous day||
+|API access (Graph only)|Greater than X API calls per day|Apps that have made over a specified number of Graph API calls in a day||
+|API access trend (Graph only)|X % increase in API calls compared to previous day|Apps whose number of Graph API calls have increased by a specified percentage compared to the previous day||
+|Number of consenting users|(Greater than or Less than) X consented users|Apps that have been given consent by a greater or fewer number of users than specified||
+|Increase in consenting users|X % increase in users in the last 90 days|Apps whose number of consenting users have increased by over a specified percentage in the last 90 days||
+|Priority account consent given|Yes or No|Apps that have been given consent by priority users |A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
+|Names of consenting users|Select users from list|Apps that have been given consent by specific users||
+|Roles of consenting users|Select roles from list|Apps that have been given consent by users with specific roles|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
+|Services accessed (Graph only)|Exchange and/or OneDrive and/or SharePoint and/or Teams|Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API|Multiple selections allowed.|
+|Error rate (Graph only)|Error rate is greater than X% in the last seven days|Apps whose Graph API error rates in the last 7 days are greater than a specified percentage||
 
-    All of the specified conditions must be met for this app policy to generate an alert.
-
+All of the specified conditions must be met for this app policy to generate an alert.
 1. When you're done specifying the conditions, select **Save**, and then select **Next**.
-
 1. On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**.
 
 1. On the **Define Policy Status** page, select one of these options:
@@ -145,6 +143,9 @@ App governance provides some basic templates that make it easy to create useful 
 1. Select **No, I want to customize the policy** and then select **Next**.
 1. Choose whether you want this policy to apply to all apps in your tenant, specific apps, or all apps except the ones you choose. If you choose specific apps, or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied, and then select **Add**. Select **Next** when you're satisfied with the list.
 1. Select **Set new conditions for the policy** and then select **Edit conditions**. Select **Add condition** and choose a condition from the list and then select the condition to apply. Repeat to add more conditions. Select **Save** to save the rule, and when you're finished adding rules, select **Next**.
+    >[!Note]
+    > Some policy conditions are only applicable to apps that access Graph API permissions. When evaluating apps that access only non-Graph APIs, app governance will skip these policy conditions and proceed to check only other policy conditions.
+    >
 1. By default, this policy will trigger alerts when the conditions are met. You can choose to take action when the policy triggers such as **Disable app**. Use caution when applying actions because a policy may affect users and legitimate app use. Select **Next**.
 1. Choose the policy status:
     - **Audit** - policy evaluation is active but policy action is disabled.
@@ -174,4 +175,5 @@ Here's an example of a process for creating a new policy, testing it, and then m
 ## Next step
 
 [Manage your app policies.](app-governance-app-policies-manage.md)
+
 
