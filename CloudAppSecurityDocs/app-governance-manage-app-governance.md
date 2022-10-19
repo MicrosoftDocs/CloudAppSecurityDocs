@@ -60,7 +60,7 @@ By sharing information across app governance, Azure AD, and Defender for Cloud A
   From the Defender for Cloud Apps portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
 
 Here's a summary of the integration.
-![The integration of app governance with Azure AD and Defender for Cloud Apps.](media/app-governance-manage-app-governance/app-governance-add-on-arch.jpg)
+![The integration of app governance with Azure AD and Defender for Cloud Apps.](media/app-governance-manage-app-governance/app-governance-add-on-arch.png)
 App governance sends its alerts to Microsoft 365 Defender to enable more detailed analysis of app-based security incidents. App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance".
 
 
