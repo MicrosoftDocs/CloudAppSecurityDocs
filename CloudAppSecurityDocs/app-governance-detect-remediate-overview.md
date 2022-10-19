@@ -39,9 +39,7 @@ By sharing information across app governance, Azure AD, and Defender for Cloud A
   From the Defender for Cloud Apps portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
 
 Here's a summary of the integration.
-
-:::image type="content" source="media\app-governance\app-governance-add-on-arch.png" alt-text="The integration of app governance with Azure AD and Defender for Cloud Apps." lightbox="media\app-governance\app-governance-add-on-arch.png":::
-
+![The integration of app governance with Azure AD and Defender for Cloud Apps.](media/app-governance-detect-remediate-overview/app-governance-add-on-arch1.jpg)
 Additionally, app governance sends its alerts as signals to Defender for Cloud Apps and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
 
 <!--
@@ -54,3 +52,4 @@ CFA #3 Scenario 3: As an admin, I can configure policies to perform automatic
 ## Next step
 
 [Get started with app threat detection and remediation.](app-governance-detect-remediate-get-started.md)
+
