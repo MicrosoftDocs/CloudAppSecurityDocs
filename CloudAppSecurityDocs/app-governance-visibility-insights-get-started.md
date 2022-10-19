@@ -39,17 +39,22 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
 One of the primary value points for app governance is the ability to quickly view app alerts and insights. To view insights for your apps:
 
 1. On your app governance portal page, select **Apps**.
-1. Use the **Categories** drop down list to select from the following options:
-      - All apps
-      - Highly privileged
-      - Overprivileged
-      - Unverified Publisher
-      - App only
-      - New apps
+2. You can view a specific selection of apps by applying one or more of the following default filter options:
+    - API access
+    - Privilege level
+    - Permission usage
+    - Permission type
+    - Publisher type
+3. You can also use one or more of the non-default filters to further customize your selection of apps by choosing any of these options:
+    - Last modified
+    - Added on
+    - Certification
+    - Users
+    - Services accessed
+    - Data usage
+    - Sensitivity labels accessed
 1. Select the name of an app to view details. Selecting an app name opens a detail pane on the right as shown in the following graphic.
-
-    [![Image showing the details pane for a selected app.](media/app-governance/app-governance-app-insight.png)](media/app-governance/app-governance-app-insight.png#lightbox)
-
+   [![Image showing the details pane for a selected app.](media/app-governance/app-governance-app-insight.png)](media/app-governance/app-governance-app-insight.png#lightbox)
 > [!NOTE]
 > The apps listed will depend on the apps present in your tenant.
 
@@ -60,3 +65,4 @@ The details pane also lets you view the usage of the app over the past 30 days, 
 ## Next step
 
 [Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).
+

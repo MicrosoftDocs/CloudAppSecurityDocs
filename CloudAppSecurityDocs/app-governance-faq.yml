@@ -16,10 +16,7 @@ sections:
           App governance is an add-on to Microsoft Defender for Cloud Apps. It provides expanded visibility and control over apps that access your Microsoft 365 data. [Learn more about app governance](app-governance-manage-app-governance.md)
       - question: What types of apps does app governance secure?
         answer: |
-          App governance currently tracks apps with the following characteristics:
-          - Non-Microsoft apps
-          -	Apps that use OAuth to authenticate to Azure Active Directory
-          -	Apps that access Microsoft 365 data using Graph API
+          App governance currently tracks non-Microsoft apps that use OAuth to authenticate to Azure Active Directory.
 
           These apps represent modern apps that can access Microsoft 365 data in mailboxes, OneDrive folders, SharePoint sites, and Teams. End users regularly introduce these apps and can give them consent to access data.
           
