@@ -11,7 +11,7 @@ With app governance, you can quickly gain visibility and meaningful insights on 
 
 With app governance visibility and insights, you can see:
 
-- A list of the OAuth-enabled apps that access Microsoft 365 data via Microsoft Graph APIs in your tenant.
+- A list of the OAuth-enabled apps that access Microsoft 365 data in your tenant.
 - A rich view on app activities so that you can react or respond to them.
 
 >[!Note]
@@ -23,7 +23,7 @@ See [administrator roles](app-governance-get-started.md#roles) for an overview o
 With app governance, you can see:
 
 - A dashboard of all insights.
-- Data accessed by single and all apps with workload and user level insights.
+- Data accessed and permissions used by single and all apps with workload and user level insights.
 - App information and metadata, such as Graph API and legacy permissions, registration date, and certification.
 - Publisher information and metadata, such as name and verification status.
 - Usage of top resources (emails and files) across the tenant.
@@ -52,3 +52,4 @@ You can also:
 ## Next step
 
 [Get started with application insights.](app-governance-visibility-insights-get-started.md)
+
