@@ -43,8 +43,7 @@ For information about licensing, see the [Microsoft Defender for Cloud Apps prod
 
 ## What is the app governance add-on for Defender for Cloud Apps?
 
-The app governance add-on gives you in-depth governance against risky app behavior in your Microsoft 365 environment. It provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. It's designed for OAuth-enabled apps that access Microsoft 365 data via Microsoft Graph API.
-
+The app governance add-on gives you in-depth governance against risky app behavior in your Microsoft 365 environment. It provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. It's designed to secure OAuth-enabled apps registered on Azure AD.
 :::image type="content" source="media/app-governance/app-governance-add-on.png" alt-text="App governance add on":::
 
 App governance add-on offers an in-depth Microsoft 365 platform-level view & control of app behavior.
@@ -141,3 +140,4 @@ Try these actions:
 - Videos: [YouTube play list for AppG](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
 
 - Security Summit video: [App Governance segment](https://mssecuritysummit.event.microsoft.com/Home/Security) starts at 11:50 mark. You need to register to view.
+
