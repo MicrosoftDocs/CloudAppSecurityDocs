@@ -9,10 +9,8 @@ description: Get started with visibility and insights.
 
 The first place to get started is the app governance dashboard at [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
-:::image type="content" source="media\app-governance\mapg-cc-overview.png" alt-text="The app governance overview page in Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-overview.png":::
-
+![The app governance overview page in Microsoft 365 Defender.](media/app-governance-visibility-insights-get-started/image1.png)  
 You can also access the app governance dashboard from **Office 365 > Microsoft 365 Defender > App governance > Overview page**.
-
 ## What’s available on the dashboard
 
 The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
@@ -65,4 +63,5 @@ The details pane also lets you view the usage of the app over the past 30 days, 
 ## Next step
 
 [Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).
+
 
