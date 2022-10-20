@@ -68,8 +68,11 @@ You can also select **Search** to search for an app by name.
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Defender > App governance > Apps > *app name***.
 
-:::image type="content" source="media\app-governance\mapg-cc-apps-app.png" alt-text="The app governance app details pane in  Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-apps-app.png":::
-
+![](media/app-governance-visibility-insights-get-started/image2.png)![](media/app-governance-visibility-insights-view-apps/image3-1.png)
+![](media/app-governance-visibility-insights-view-apps/image3-2.png)
+![](media/app-governance-visibility-insights-view-apps/image4.png)
+![](media/app-governance-visibility-insights-view-apps/image5.png)
+![](media/app-governance-visibility-insights-view-apps/image6.png)
 The app details pane provides additional information on these tabs:
 
 | Tab name | Description |
@@ -90,4 +93,5 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 ## Next step
 
 [Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
+
 
