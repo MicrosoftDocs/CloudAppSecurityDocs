@@ -12,7 +12,7 @@ App governance lets you quickly identify the Microsoft 365 services apps have ac
 ## View apps
 
 To view apps that have accessed data across Microsoft 365 services, select **View apps** from the overview.
-![](media/app-governance-visibility-insights-sensitive-content/image7.png)
+![Apps that have accessed data across Microsoft 365 services](media/app-governance-visibility-insights-sensitive-content/image7.png)
 
 Alternatively, select any of the labels listed under **Sensitivity labels access** in the apps page.
 
@@ -32,6 +32,7 @@ For even more customization options, create a custom policy using the condition 
 ## Next step
 
 [Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).
+
 
 
 
