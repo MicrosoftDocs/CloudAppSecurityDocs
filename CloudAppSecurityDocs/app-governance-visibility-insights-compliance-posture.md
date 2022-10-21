@@ -13,8 +13,8 @@ From this page, you can see:
 
         - How many are in your tenant
    -   - How many might be overprivileged
-   -   - How many are highly privileged
-
+   - How many are highly privileged
+![](media/app-governance-visibility-insights-compliance-posture/image11.png)
  From this information, you can determine the level of risk to your organization by overprivileged and highly privileged apps.
 - - For incidents:
 
