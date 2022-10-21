@@ -66,13 +66,13 @@ You can also select **Search** to search for an app by name.
 
 ## Getting detailed information on an app
 
-For detailed information on a specific app in your tenant, go to **Microsoft 365 Defender > App governance > Apps > *app name***.
-
-![](media/app-governance-visibility-insights-get-started/image2.png)![](media/app-governance-visibility-insights-view-apps/image3-1.png)
+For detailed information on a specific app in your tenant, go to **Microsoft 365 Defender > App governance > Apps > *app name***
+![](media/app-governance-visibility-insights-view-apps/image2.png)
+![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources.](media/app-governance-visibility-insights-view-apps/data-usage.png)
 ![](media/app-governance-visibility-insights-view-apps/image3-2.png)
-![](media/app-governance-visibility-insights-view-apps/image4.png)
-
-![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)![](media/app-governance-visibility-insights-view-apps/image6.png)
+![See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded.](media/app-governance-visibility-insights-view-apps/users.png)
+![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)
+![](media/app-governance-visibility-insights-view-apps/image6.png)
 The app details pane provides additional information on these tabs:
 | Tab name | Description |
 |:-------|:-----|
