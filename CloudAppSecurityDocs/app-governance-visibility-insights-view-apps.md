@@ -71,15 +71,14 @@ For detailed information on a specific app in your tenant, go to **Microsoft 365
 ![](media/app-governance-visibility-insights-get-started/image2.png)![](media/app-governance-visibility-insights-view-apps/image3-1.png)
 ![](media/app-governance-visibility-insights-view-apps/image3-2.png)
 ![](media/app-governance-visibility-insights-view-apps/image4.png)
-![](media/app-governance-visibility-insights-view-apps/image5.png)
-![](media/app-governance-visibility-insights-view-apps/image6.png)
-The app details pane provides additional information on these tabs:
 
+![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)![](media/app-governance-visibility-insights-view-apps/image6.png)
+The app details pane provides additional information on these tabs:
 | Tab name | Description |
 |:-------|:-----|
 |Summary| See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
-|Data usage |See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources. You can filter usage insights by priority accounts only. You can filter usage insights by priority accounts only. |
-|Users | See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. If an app is admin consented, the Total consented users will be all users in the tenant. |
+|Data usage |See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources. You can filter usage insights by priority accounts only. |
+|Users |See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. If an app is admin consented, the Total consented users will be all users in the tenant. |
 |Permissions | See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
 |Sensitive labels | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
 
@@ -93,5 +92,6 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 ## Next step
 
 [Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
+
 
 
