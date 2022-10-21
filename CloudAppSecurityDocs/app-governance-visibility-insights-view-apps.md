@@ -67,13 +67,14 @@ You can also select **Search** to search for an app by name.
 ## Getting detailed information on an app
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Defender > App governance > Apps > *app name***
-![](media/app-governance-visibility-insights-view-apps/image2.png)
+![Apps summary](media/app-governance-visibility-insights-view-apps/image2.png)
 ![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources.](media/app-governance-visibility-insights-view-apps/data-usage.png)
-![](media/app-governance-visibility-insights-view-apps/image3-2.png)
+![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources](media/app-governance-visibility-insights-view-apps/image3-2.png)
 ![See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded.](media/app-governance-visibility-insights-view-apps/users.png)
 ![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)
-![](media/app-governance-visibility-insights-view-apps/image6.png)
+![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365.](media/app-governance-visibility-insights-view-apps/image6.png)
 The app details pane provides additional information on these tabs:
+
 | Tab name | Description |
 |:-------|:-----|
 |Summary| See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
@@ -92,6 +93,7 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 ## Next step
 
 [Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
+
 
 
 
