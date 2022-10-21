@@ -50,7 +50,7 @@ One of the primary value points for app governance is the ability to quickly vie
     - Data usage
     - Sensitivity labels accessed
 1. Select the name of an app to view details. Selecting an app name opens a detail pane on the right as shown in the following graphic.
-   ![](media/app-governance-visibility-insights-get-started/image2.png)
+   ![app details pane showing app summary](media/app-governance-visibility-insights-get-started/image2.png)
 > [!NOTE]
 > The apps listed will depend on the apps present in your tenant.
 
@@ -61,6 +61,7 @@ The details pane also lets you view the usage of the app over the past 30 days, 
 ## Next step
 
 [Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).
+
 
 
 
