@@ -67,13 +67,21 @@ You can also select **Search** to search for an app by name.
 ## Getting detailed information on an app
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Defender > App governance > Apps > *app name***
-![Apps summary](media/app-governance-visibility-insights-view-apps/image2.png)
+
+![See additional data on the app such as the date first consented and the App ID.](media/app-governance-visibility-insights-view-apps/image2.png)
+
 ![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources.](media/app-governance-visibility-insights-view-apps/data-usage.png)
-![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources](media/app-governance-visibility-insights-view-apps/image3-2.png)
+
 ![See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded.](media/app-governance-visibility-insights-view-apps/users.png)
+
 ![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)
-![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365.](media/app-governance-visibility-insights-view-apps/image6.png)
+
+![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365](media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png)
+
+
+
 The app details pane provides additional information on these tabs:
+
 
 | Tab name | Description |
 |:-------|:-----|
@@ -84,7 +92,6 @@ The app details pane provides additional information on these tabs:
 |Sensitive labels | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
 
 For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
-
 - Compliance Administrator
 - Global or Company Administrator
 - Security Administrator
