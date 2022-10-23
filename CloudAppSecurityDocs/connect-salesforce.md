@@ -92,7 +92,7 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
 1. Back in the Defender for Cloud Apps console, you should see the Salesforce was successfully connected message.
 
-1. Make sure the connection succeeded by clicking **Test API**.
+1. Make sure the connection succeeded by clicking **Test Now**.
 
     Testing may take a couple of minutes. After receiving a success notice, select **Done**.
 
