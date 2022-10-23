@@ -68,15 +68,20 @@ You can also select **Search** to search for an app by name.
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Defender > App governance > Apps > *app name***
 
-![See additional data on the app such as the date first consented and the App ID.](media/app-governance-visibility-insights-view-apps/image2.png)
+> [!div class="mx-imgBorder"]
+>![See additional data on the app such as the date first consented and the App ID.](media/app-governance-visibility-insights-view-apps/image2.png)
 
-![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources.](media/app-governance-visibility-insights-view-apps/data-usage.png)
+> [!div class="mx-imgBorder"]
+>![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources.](media/app-governance-visibility-insights-view-apps/data-usage.png)
 
-![See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded.](media/app-governance-visibility-insights-view-apps/users.png)
+> [!div class="mx-imgBorder"]
+>![See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded.](media/app-governance-visibility-insights-view-apps/users.png)
 
-![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)
+> [!div class="mx-imgBorder"]
+>![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)
 
-![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365](media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png)
+> [!div class="mx-imgBorder"]
+>![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365](media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png)
 
 
 
