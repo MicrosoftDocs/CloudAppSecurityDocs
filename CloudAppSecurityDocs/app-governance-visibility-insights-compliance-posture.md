@@ -18,6 +18,7 @@ From this information, you can determine the level of risk to your organization 
 
 > [!div class="mx-imgBorder"]
 >![Determine the level of risk to your organization by overprivileged and highly privileged apps.](media/app-governance-visibility-insights-compliance-posture/app-summary.png)
+
 For incidents:
    - How many active incidents your tenant has
    - How many are based on app governance detections (**Threat incidents**)
