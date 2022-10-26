@@ -68,9 +68,9 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ## Revoke and renew API keys
 
-1. Microsoft recommends using short lived keys / tokens for connecting apps as a security best practise. 
-2. We recommend refreshing Atlassian API key every 6 months as a best practise. To refresh the key, revoke the existing API key and generate a new key. 
-3. To revoke API key, navigate to **admin.atlassian.com** > **Settings** > **API keys**, determine the API key used for integration and click **Revoke**.
+1. Microsoft recommends using short lived keys or tokens for connecting apps as a security best practice. 
+2. We recommend refreshing the Atlassian API key every 6 months as a best practice. To refresh the key, revoke the existing API key and generate a new key. 
+3. To revoke API key, navigate to **admin.atlassian.com** > **Settings** > **API keys**, determine the API key used for integration and select **Revoke**.
 4. Recreate an API key in the Atlassian admin portal with the steps described above.
 5. Afterwards, go to the Defender for Cloud Apps portal and edit the connector:
 
@@ -80,7 +80,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 >[!NOTE]
 >
-> By default the API key is valid for 1 year and expires automatically after an year.
+> By default, the API key is valid for 1 year and expires automatically after a year.
 
 ## Rate limits
 
