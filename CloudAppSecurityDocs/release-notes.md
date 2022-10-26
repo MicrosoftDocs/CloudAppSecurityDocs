@@ -34,11 +34,11 @@ October 30, 2022
 - **Native Integration of Microsoft Defender for Cloud Apps in Microsoft 365 Defender is now in public preview**  
 The entire Defender for Cloud Apps experience in Microsoft 365 Defender is now available for public preview.
 
-  Unified SecOps and security admins will experience these benefits:
+  SecOps and security admins will experience these major benefits:
 
-  - Save time and costs
-  - Enable customers to have a holistic investigation experience
-  - Benefit from additional data and signals in advanced hunting
+  - Time and costs saved
+  - Holistic investigation experience
+  - Additional data and signals in advanced hunting
   - Integrated protection across all security workloads
 
   For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
