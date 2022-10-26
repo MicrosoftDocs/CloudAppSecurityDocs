@@ -66,7 +66,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 > - Activities from the "Atlassian Access" audit log are fetched by Defender for Cloud apps. Other activities aren't fetched currently. See [Product Audit Logs](https://support.atlassian.com/security-and-access-policies/docs/track-organization-activities-from-the-audit-log/).
 > - After the connector’s **Status** is marked as **Connected**, the connector is live and works.
 
-## Revoke and Renew API keys
+## Revoke and renew API keys
 
 1. Microsoft recommends using short lived keys / tokens for connecting apps as a security best practise. 
 2. We recommend refreshing Atlassian API key every 6 months as a best practise. To refresh the key, revoke the existing API key and generate a new key. 
