@@ -71,6 +71,10 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 
 >[!NOTE]
+>Microsoft recommends using a short lived access token. Zendesk doesn't support short lived token at the time of writing this document. We recommend our customers to refresh the token every 6 months as a security best practise. To refresh the access token, revoke the old token by following [Revoke Token](https://developer.zendesk.com/api-reference/ticketing/oauth/oauth_tokens/#revoke-token). Once the old token is revoked, create a new secrete and re-connect Zendesk connector as documented above. 
+
+
+>[!NOTE]
 >System activities will be shown with the **Zendesk** account name.
 
 ## Rate limits
