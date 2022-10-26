@@ -66,14 +66,21 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 > - Activities from the "Atlassian Access" audit log are fetched by Defender for Cloud apps. Other activities aren't fetched currently. See [Product Audit Logs](https://support.atlassian.com/security-and-access-policies/docs/track-organization-activities-from-the-audit-log/).
 > - After the connector’s **Status** is marked as **Connected**, the connector is live and works.
 
-## Update the API key after expiry
+## Revoke and renew API keys
 
-1. When the API key expires (one year after the creation), you'll need to recreate an API key in the Atlassian admin portal with the steps described above.
-1. Afterwards, go to the Defender for Cloud Apps portal and edit the connector:
+1. Microsoft recommends using short lived keys or tokens for connecting apps as a security best practice. 
+2. We recommend refreshing the Atlassian API key every 6 months as a best practice. To refresh the key, revoke the existing API key and generate a new key. 
+3. To revoke API key, navigate to **admin.atlassian.com** > **Settings** > **API keys**, determine the API key used for integration and select **Revoke**.
+4. Recreate an API key in the Atlassian admin portal with the steps described above.
+5. Afterwards, go to the Defender for Cloud Apps portal and edit the connector:
 
     ![Edit connector.](media/atlassian-edit-connector.png)
 
 1. Enter the new generated new **API key** and select **Connect Atlassian**.
+
+>[!NOTE]
+>
+> By default, the API key is valid for 1 year and expires automatically after a year.
 
 ## Rate limits
 
