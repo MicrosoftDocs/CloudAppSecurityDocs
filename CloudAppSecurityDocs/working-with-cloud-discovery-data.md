@@ -18,14 +18,14 @@ The first thing you should do to get a general picture of your Cloud Discovery a
 
 1. First look at the overall cloud app use in your organization in the **High-level usage overview**.
 
-2. Then, dive one level deeper to see which are the **top categories** used in your org for each of the different use parameters. You can see how much of this usage is by Sanction apps.
+1. Then, dive one level deeper to see which are the **top categories** used in your org for each of the different use parameters. You can see how much of this usage is by Sanction apps.
 
-3. Go even deeper and see all the apps in a specific category in the **Discovered apps** tab.
+1. Go even deeper and see all the apps in a specific category in the **Discovered apps** tab.
 
-4. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
-5. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
+1. You can see the **top users and source IP addresses** to identify which users are the most dominant users of cloud apps in your organization.
+1. Check how the discovered apps spread according to geographic location (according to their HQ) in the **App Headquarters map**.
 
-6. Finally, don't forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
+1. Finally, don't forget to review the risk score of the discovered app in the **App risk overview**. Check the **discovery alerts status** to see how many open alerts should you investigate.
 
 ## Exclude entities
 
@@ -34,9 +34,9 @@ If you have system users, IP addresses, or device that are noisy but uninteresti
 To create an exclusion:
 
 1. In the portal, under the settings icon, select **Cloud Discovery settings**.
-2. Click the **Exclude entities** tab.
-3. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded device** tab and click the + button to add your exclusion.
-4. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
+1. Select the **Exclude entities** tab.
+1. Choose either the **Excluded users**, **Excluded IP addresses**, or **Excluded device** tab and select the + button to add your exclusion.
+1. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
 
     ![exclude user.](media/exclude-user.png "exclude user")
 
@@ -52,15 +52,15 @@ To create a new continuous report:
 
 1. In the portal, under the settings icon, select **Cloud Discovery settings**.
 
-2. Click the **Continuous report** tab.
+1. Select the **Continuous report** tab.
 
-3. Click the **Create report** button.
+1. Select the **Create report** button.
 
-4. Enter a report name.
+1. Enter a report name.
 
-5. Select the data sources you want to include (all or specific).
+1. Select the data sources you want to include (all or specific).
 
-6. Set the filters you want on the data. These filters can be **User groups**, **IP address tags**, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).
+1. Set the filters you want on the data. These filters can be **User groups**, **IP address tags**, or **IP address ranges**. For more information on working with IP address tags and IP address ranges, see [Organize the data according to your needs](ip-tags.md).
 
     ![create custom continuous report.](media/create-custom-continuous-report.png)
 
@@ -81,11 +81,11 @@ To delete Cloud Discovery data:
 
 1. In the portal, under the settings icon, select **Cloud Discovery settings**.
 
-2. Click the **Delete data** tab.
+1. Select the **Delete data** tab.
 
     It's important to be sure you want to delete data before continuing - it can't be undone and it deletes **all** Cloud Discovery data in the system.
 
-3. Click the **Delete** button.
+1. Select the **Delete** button.
 
     ![delete data.](media/delete-data.png "delete data")
 
