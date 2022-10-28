@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microosoft IdP. This article describes how to route app sessions from AD FS to Defender for Cloud Apps for real-time session controls.
+You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microsoft IdP. This article describes how to route app sessions from AD FS to Defender for Cloud Apps for real-time session controls.
 
 For this article, we'll use the Salesforce app as an example of a web app being configured to use Defender for Cloud Apps session controls.
 
