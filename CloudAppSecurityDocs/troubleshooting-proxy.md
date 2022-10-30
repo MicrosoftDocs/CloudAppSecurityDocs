@@ -449,7 +449,7 @@ To record a session, follow these steps:
 
 1. After you've finish recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
-1.  ![](media/troubleshooting-proxy/recording-list.png)
+1.  ![List of session recordings.](media/troubleshooting-proxy/recording-list.png)
 
 1. Each recorded session can be downloaded or deleted.
 
