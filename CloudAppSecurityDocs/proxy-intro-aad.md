@@ -216,10 +216,6 @@ Here are some examples:
   - a Word file composed of images and text, 4 MB size and 2 million characters: won't be scanned
   - a Word file composed of images and text, 40 MB size and 400 K characters: won't be scanned
  
-  > [!NOTE]
-  >Client-side uploads and downloads are limited to 5 MB by default. It is possible to set the size to up to 30 MB. It is important to note that this may affect end user latency.
-
-
 ## Next steps
 
 For instructions on how to onboard your apps, see the appropriate document below:
