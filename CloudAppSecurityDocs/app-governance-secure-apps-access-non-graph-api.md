@@ -20,7 +20,7 @@ You can better protect your organization with the new functionalities and enhanc
 ## Identify apps that use only non-Graph APIs
 
 App governance lists all Azure AD OAuth apps in the [Apps page](https://security.microsoft.com/cloudapps/app-governance?viewid=allApps). To find apps that don't use Graph API, apply the API access filter, and select **Non-Graph only**. You can also use the Graph API access column to identify apps that don't have Graph API permissions among the listed apps.
-![](media/app-governance-secure-apps-access-non-graph-api/apps-page-non-graph-only.png)
+![Apps page showing non-graph only.](media/app-governance-secure-apps-access-non-graph-api/apps-page-non-graph-only.png)
 ## View non-Graph APIs used by OAuth apps
 
 To view the APIs used by an app, go to the **Permissions** tab on the app details flyout pane. You can find the names of the consented permissions and the APIs accessed by the app.
