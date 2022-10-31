@@ -15,9 +15,7 @@ App governance allows you to quickly gain deep insights into the Microsoft 365 O
 ## Getting a list of all the apps in your tenant
 
 For a summary of apps in your tenant, go to **Microsoft 365 Defender > App governance > Apps**.
-
-:::image type="content" source="media\app-governance\mapg-cc-apps.png" alt-text="The app governance app summary page in Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-apps.png":::
-
+![The app governance app summary page in Microsoft 365 Defender.](media/app-governance-visibility-insights-view-apps/appg-cc-apps.png)
 >[!Note]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
@@ -105,6 +103,7 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 ## Next step
 
 [Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
+
 
 
 
