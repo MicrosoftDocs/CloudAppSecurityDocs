@@ -444,7 +444,7 @@ To record a session, follow these steps:
 
 1.  ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
 
-1. After you've finish recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
+1. After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
    ![List of session recordings.](media/troubleshooting-proxy/recording-list.png)
 
