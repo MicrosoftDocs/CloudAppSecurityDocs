@@ -414,7 +414,7 @@ When those users next start a session of an application, the Admin View toolbar 
 If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It will appear for users who have the [Admin View toolbar](#admin-view-toolbar) enabled.
 
 Once you select **Bypass session**, the application will run without the Conditional Access proxy.
-![](media/troubleshooting-proxy/proxy-admin-toolbar-bypass.png)
+![Bypass session.](media/troubleshooting-proxy/proxy-admin-toolbar-bypass.png)
 You can confirm the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
 
 In the next session of the application, the Conditional Access proxy will be used.
@@ -430,7 +430,7 @@ To record a session, follow these steps:
 
 1. 1. From the Admin View toolbar, select **Record session**.
 
-   ![](media/troubleshooting-proxy/proxy-admin-toolbar-record.png)
+   ![Select Record session.](media/troubleshooting-proxy/proxy-admin-toolbar-record.png)
 1. After selecting **Record session**, accept the terms by selecting **Continue** in the next window:
 
     ![Select continue to accept.](media/accept-continue.png)
@@ -442,7 +442,7 @@ To record a session, follow these steps:
 1. Sign in to the application to begin the scenario simulation.
 1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar.
 
-1.  ![](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
+1.  ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
 
 1. After you've finish recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
