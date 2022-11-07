@@ -130,7 +130,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Owner OU** – Include or exclude file owners that belong to certain organizational units. For example, all public files except files shared by *EMEA_marketing*. Applies only to files stored in Google Drive.
 
-- **Parent folder** – Include or exclude based on explici folder (excluding subfolders). For example, all publicly shared files except for files in this folder.
+- **Parent folder** – Include or exclude a specific folder (doesn't apply to subfolders). For example, all publicly shared files except for files in this folder.
 
     > [!NOTE]
     > Defender for Cloud Apps only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
