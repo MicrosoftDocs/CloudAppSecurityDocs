@@ -35,7 +35,7 @@ These policies will appear on the Defender for Cloud Apps policies page and can 
 
 ## Anomaly detection policies
 
-You can see the anomaly detection policies in the portal by clicking on **Control** then **Policies**. Select **Anomaly detection policy** for the policy type.
+You can see the anomaly detection policies in the portal by selecting **Control** then **Policies**. Then choose **Anomaly detection policy** for the policy type.
 
  ![new anomaly detection policies.](media/new-anomaly-detection-policies.png)
 
