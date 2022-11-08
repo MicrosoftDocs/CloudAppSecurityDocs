@@ -32,7 +32,7 @@ Key points:
         1. Select **Settings** > **Cloud Discovery settings**.
 
         2. In the **Anonymization** tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
-        3. Click **Save**.
+        3. Select **Save**.
 
         ![Anonymization settings page.](media/anonymizer1.png)
 
@@ -49,11 +49,11 @@ Key points:
 
     **To resolve a single username**
 
-    1. Click on the three dots at the end of the row of the user you want to resolve and select **Deanonymize user**.
+    1. Select the three dots at the end of the row of the user you want to resolve and select **Deanonymize user**.
 
         ![Anonymize user table.](media/anonymize-user-table.png)
 
-    1. In the pop-up, enter the justification for resolving the username and then click **Resolve**. In the relevant row, the resolved username is displayed.
+    1. In the pop-up, enter the justification for resolving the username and then select **Resolve**. In the relevant row, the resolved username is displayed.
 
         > [!NOTE]
         > This action is audited.
@@ -65,7 +65,7 @@ Key points:
     1. Under the Settings cog, select **Cloud Discovery settings**.
 
     1. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
-    1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Click **Resolve**.
+    1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Select **Resolve**.
 
         ![Resolve anonymization pop-up.](media/anonymizer.png)
 
@@ -75,8 +75,8 @@ Key points:
 
         ![Anonymize bulk resolve.](media/anonymize-bulk-resolve.png)
 
-    1. Click **Deanonymize user**.
-    1. In the pop-up, enter the justification for resolving the username and then click **Resolve**. In the relevant rows, the resolved usernames are displayed.
+    1. Select **Deanonymize user**.
+    1. In the pop-up, enter the justification for resolving the username and then select **Resolve**. In the relevant rows, the resolved usernames are displayed.
 
         > [!NOTE]
         > This action is audited.
