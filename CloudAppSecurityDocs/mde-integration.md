@@ -31,6 +31,9 @@ Once traffic information is collected, you're ready to [deep dive into cloud app
   - [Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
   - [Network protection enabled and configured to block mode](/microsoft-365/security/defender-endpoint/enable-network-protection)
 
+> [!NOTE]
+The ability to perform Cloud Disocvery when Defender for Endpoint is deployed behind a proxy is in public preview. To do so, please make sure Defender for Endpoint is in **Active** mode (see here how to check it: [Microsoft Defender Antivirus in Windows | Microsoft Docs](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide#comparing-active-mode-passive-mode-and-disabled-mode)).
+
 ## How it works
 
 On its own, Defender for Cloud Apps collects logs from your endpoints using either [logs you upload](create-snapshot-cloud-discovery-reports.md) or by [configuring automatic log upload](discovery-docker.md). Native integration enables you to take advantage of the logs Defender for Endpoint's agent creates when it runs on Windows and monitors network transactions. Use this information for Shadow IT discovery across the Windows devices on your network.
