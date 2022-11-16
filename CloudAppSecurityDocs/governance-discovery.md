@@ -11,6 +11,9 @@ ms.topic: how-to
 
 After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
 
+
+## <a name="BKMK_SanctionApp"></a> Sanctioning/unsanctioning an app
+
 You can unsanction a specific risky app by clicking the three dots at the end of the row. Then select **Unsanction**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
 
 ![Tag as unsanctioned.](media/tag-as-unsanctioned.png)
@@ -23,7 +26,7 @@ You can unsanction a specific risky app by clicking the three dots at the end of
 Defender for Cloud Apps enables you to block access to unsanctioned apps by using Defender for Endpoint. You can block all devices in your organization, or block specific device groups.
 
 > [!NOTE]
-> The option to block specific device groups via include or exclude is in **Preview** mode. In order to use it, make sure to enable [cloud app blocking with Defender for Endpoint](mde-govern#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
+> The option to block specific device groups via include or exclude is in **Preview** mode. To use it, make sure to enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
 
 ### Prerequisites
 
@@ -33,7 +36,7 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
    - Microsoft 365 E5
 1. Onboarded machines: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
 1. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
-1. Enable [cloud app blocking with Defender for Endpoint](mde-govern#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
+1. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
    
 ### Blocking apps
 
