@@ -217,6 +217,7 @@ Here are some examples:
   - a Word file composed of images and text, 40 MB size and 400 K characters: won't be scanned
 
 - **File upload limitation**
+
 If a session policy to block the upload of sensitive files is applied, then in these scenarios the user's attempts to upload files or folders using **drag & drop** will block the entire list of files and folders:
   - a folder that contains 100 or more files
   - a folder that contains at least one file and at least one subfolder
