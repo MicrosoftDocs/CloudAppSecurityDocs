@@ -215,6 +215,23 @@ Here are some examples:
   - a Word file composed of images and text, 4 MB size and 400 K characters: will be scanned
   - a Word file composed of images and text, 4 MB size and 2 million characters: won't be scanned
   - a Word file composed of images and text, 40 MB size and 400 K characters: won't be scanned
+
+- **File upload limitation**
+In the case of a session policy blocking the upload of sensitive files:
+In each of the following scenarios, if the end-user attempts to upload files and/or folders using **drag & drop**, the entire list of files and folders will be blocked
+- a Folder that contains 100 or more files
+- a Folder that contains at least one file and at least one sub folder
+- a Folder that contains multiple sub folders
+- a Selection of at least one file and at least one folder
+- a Selection of multiple folders
+
+Few examples:
+The security administrator defines the following policy: "Block upload of files containing PII to OneDrive"
+- End-user tries to upload a selection of 200 files non sensitive files using file upload dialog. **Result:** the files are uploaded
+- End-user tries to upload a selection of 200 files non sensitive files using drag & drop. **Result:** the files are blocked
+- End-user tries to upload a selection of 200 files, some are sensitive, and some are not, using file upload dialog. **Result:** non-sensitive files are uploaded, sensitive files are blocked
+- End-user tries to upload a selection of 200 files, some are sensitive, and some are not, using drag & drop. **Result:** the whole set of files is blocked
+
  
 ## Next steps
 
