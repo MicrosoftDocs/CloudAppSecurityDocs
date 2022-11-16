@@ -83,8 +83,9 @@ mcasproxy.azureedge.net
 ```
 
 Additionally, the following IP addresses, used by our reverse proxy regions, should be allowed for both inbound and outbound connections:
-*Inbound IP addresses are used to receive incoming connections from end users by the proxy
-*Outbound IP addresses are used to establish connections from the proxy to the applications 
+>[!NOTE]
+>  -Inbound IP addresses are used to receive incoming connections from end users by the proxy
+>  -Outbound IP addresses are used to establish connections from the proxy to the applications 
 
 
 |  | **IP Addresses** | **DNS Name** |
