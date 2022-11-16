@@ -82,7 +82,12 @@ For commercial customers, to enable Defender for Cloud Apps reverse proxy, add *
 mcasproxy.azureedge.net
 ```
 
-Additionally, the following IP addresses used by our reverse proxy regions should be allowed:
+Additionally, the following IP addresses, used by our reverse proxy regions, should be allowed for both inbound and outbound connections:
+>[!NOTE]
+>  - Inbound IP addresses are used to receive incoming connections from end users by the proxy
+>
+>  - Outbound IP addresses are used to establish connections from the proxy to the applications 
+
 
 |  | **IP Addresses** | **DNS Name** |
 |--|--|--|
@@ -100,7 +105,11 @@ For US Government GCC High customers, to enable Defender for Cloud Apps reverse 
 mcasproxy.azureedge.net
 ```
 
-Additionally, the following IP Addresses used by our reverse proxy regions, should be allowed:
+Additionally, the following IP addresses, used by our reverse proxy regions, should be allowed for both inbound and outbound connections:
+>[!NOTE]
+>  - Inbound IP addresses are used to receive incoming connections from end users by the proxy
+>
+>  - Outbound IP addresses are used to establish connections from the proxy to the applications 
 
 For **US Government GCC High** customers:
 
