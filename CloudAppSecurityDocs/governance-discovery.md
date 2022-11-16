@@ -4,13 +4,12 @@ description: This article describes the procedure for governing your discovered 
 ms.date: 11/09/2021
 ms.topic: how-to
 ---
+
 # Govern discovered apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
-
-## <a name="BKMK_SanctionApp"></a> Sanctioning/unsanctioning an app
 
 You can unsanction a specific risky app by clicking the three dots at the end of the row. Then select **Unsanction**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
 
@@ -24,7 +23,7 @@ You can unsanction a specific risky app by clicking the three dots at the end of
 Defender for Cloud Apps enables you to block access to unsanctioned apps by using Defender for Endpoint. You can block all devices in your organization, or block specific device groups.
 
 > [!NOTE]
-> The option to block specific device groups via include or exclude is in **Preview** mode.
+> The option to block specific device groups via include or exclude is in **Preview** mode. In order to use it, make sure to enable [cloud app blocking with Defender for Endpoint](mde-govern#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
 
 ### Prerequisites
 
@@ -34,7 +33,8 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
    - Microsoft 365 E5
 1. Onboarded machines: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
 1. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
-
+1. Enable [cloud app blocking with Defender for Endpoint](mde-govern#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
+   
 ### Blocking apps
 
 To block usage for specific device groups, do the following steps:
@@ -112,3 +112,4 @@ If there's a conflict between [manual governance actions](#BKMK_SanctionApp) and
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
