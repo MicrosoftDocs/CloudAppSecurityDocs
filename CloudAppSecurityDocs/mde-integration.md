@@ -32,7 +32,7 @@ Once traffic information is collected, you're ready to [deep dive into cloud app
   - [Network protection enabled and configured to block mode](/microsoft-365/security/defender-endpoint/enable-network-protection)
 
 > [!NOTE]
-The ability to perform Cloud Disocvery when Defender for Endpoint is deployed behind a proxy is in public preview. To do so, please make sure Defender for Endpoint is in **Active** mode (see here how to check it: [Microsoft Defender Antivirus in Windows | Microsoft Docs](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide#comparing-active-mode-passive-mode-and-disabled-mode)).
+The ability to perform Cloud Discovery when Defender for Endpoint is deployed behind a proxy is in public preview. To use it, make sure Defender for Endpoint is in **Active** mode. as explained here: [Comparing active mode, passive mode, and disabled mode](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows#comparing-active-mode-passive-mode-and-disabled-mode).
 
 ## How it works
 
