@@ -135,7 +135,7 @@ To prevent alert fatigue, set the **daily alert limit**.
 ## Phase 5: Configure alerts
 
 > [!NOTE]
-> From December 1, 2022, the Alerts/SMS (text messages) will be deprecated. 
+> From December 15, 2022, the Alerts/SMS (text messages) will be deprecated. 
 > If you would like to receive text alerts, you should use Microsoft Power Automate for custom alert automation. For more information, see [Integrate with Microsoft Power Automate for custom alert automation](flow-integration.md).
 
 You can choose to receive alerts in the format and medium that most suits your needs. To receive immediate alerts at any time of the day, you may prefer to receive them via email or text message.
