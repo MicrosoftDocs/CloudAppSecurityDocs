@@ -41,7 +41,7 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
 
 3. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 
-4. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Zscaler every two hours, and then automatically blocked by Zscaler. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+4. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Zscaler every two hours, and then automatically blocked by Zscaler. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
 ## Next steps
 

@@ -22,7 +22,7 @@ If you work with both Defender for Cloud Apps and Open Systems, you can integrat
 
 1. Contact your Technical Account Manager in Open Systems to get the *Microsoft Cloud App Security with Secure Web Gateway Configuration Guide* to integrate the products.
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
-1. Any app that you set as unsanctioned in Defender for Cloud Apps will be retrieved by Open Systems, and then automatically blocked. It can take up to one hour for the app to be blocked on the Open Systems Secure Web Gateway. If you need the app to be blocked immediately after tagging it as **Unsanctioned**, contact Open Systems customer support. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+1. Any app that you set as unsanctioned in Defender for Cloud Apps will be retrieved by Open Systems, and then automatically blocked. It can take up to one hour for the app to be blocked on the Open Systems Secure Web Gateway. If you need the app to be blocked immediately after tagging it as **Unsanctioned**, contact Open Systems customer support. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
 ## Next steps
 
