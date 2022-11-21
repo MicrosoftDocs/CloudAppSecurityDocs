@@ -23,7 +23,7 @@ If you work with both Defender for Cloud Apps and Menlo Security, you can integr
 1. Log into your Menlo Admin portal and use the [Menlo Security Integration with Microsoft Cloud Access Security Setup Guide](https://admin.menlosecurity.com/docs/guides/web_admin_settings_casb.html?highlight=microsoft) to integrate the products.
 
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
-1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Menlo Security every two hours, and then automatically blocked by Menlo Security. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Menlo Security every two hours, and then automatically blocked by Menlo Security. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
 ## Next steps
 

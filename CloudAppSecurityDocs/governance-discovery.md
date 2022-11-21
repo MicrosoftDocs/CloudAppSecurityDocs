@@ -11,12 +11,11 @@ ms.topic: how-to
 
 After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
 
-
-## <a name="BKMK_SanctionApp"></a> Sanctioning/unsanctioning an app
+## Sanctioning/unsanctioning an app
 
 You can unsanction a specific risky app by clicking the three dots at the end of the row. Then select **Unsanction**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
 
-![Tag as unsanctioned.](media/tag-as-unsanctioned.png)
+  :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
 > [!NOTE]
 > If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Defender for Cloud Apps, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Block apps with Microsoft Defender for Endpoint](governance-discovery.md#block-apps-with-defender-for-endpoint), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
@@ -37,14 +36,14 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
 1. Onboarded machines: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
 1. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
 1. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
-   
+
 ### Blocking apps
 
 To block usage for specific device groups, do the following steps:
 
 1. Go to Defender for Cloud Apps.
 
-1. Under **Settings**, choose **Apps tags** and go to **Scoped profiles**.
+1. Under the **Settings** cog, choose **Settings**, then **Apps tags** and go to **Scoped profiles**.
 
 1. Select **Add profile**. The profile sets the entities scoped for blocking/unblocking apps.
 
@@ -89,9 +88,9 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
 
 1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
 
-    ![Tag as unsanctioned.](media/tag-as-unsanctioned.png)
+    :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
-2. In the title bar, select the three dots and select **Generate block script...**.
+2. In the title bar, select **Actions** and then select **Generate block script...**.
 
     ![Generate block script.](media/generate-block-script.png)
 
@@ -107,7 +106,7 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
 
 ## Governance conflicts
 
-If there's a conflict between [manual governance actions](#BKMK_SanctionApp) and [governance set by policy](cloud-discovery-policies.md), the last operation applied will take precedence.
+If there's a conflict between [manual governance actions](#sanctioningunsanctioning-an-app) and [governance set by policy](cloud-discovery-policies.md), the last operation applied will take precedence.
 
 ## Next steps
 
@@ -115,4 +114,3 @@ If there's a conflict between [manual governance actions](#BKMK_SanctionApp) and
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
