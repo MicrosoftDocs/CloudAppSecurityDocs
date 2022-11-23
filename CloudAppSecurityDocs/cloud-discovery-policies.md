@@ -16,7 +16,7 @@ Discovery policies enable you to set alerts that notify you when new apps are de
 
 1. Go to **Control** > **Policies** > **Shadow IT**.
 
-1. Click **Create policy** and select **App discovery policy**.
+1. Select **Create policy** and then select **App discovery policy**.
 
     ![Create a Cloud Discovery policy.](media/create-policy-from-shadow-it-tab.png)
 
@@ -35,12 +35,12 @@ Discovery policies enable you to set alerts that notify you when new apps are de
     - Uploaded data
 
 1. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
-    - Clicking **Save alert settings as the default for your organization** enables future policies to use the setting.
+    - Selecting **Save alert settings as the default for your organization** enables future policies to use the setting.
     - If you have a default setting, you can select **Use your organization's default settings**.
 
 1. Select **Governance** actions to apply when an app matches this policy. It can tag policies as **Sanctioned**, **Unsanctioned**, or a custom tag.
 
-1. Click **Create**.
+1. Select **Create**.
 
 > [!NOTE]
 >
@@ -59,27 +59,27 @@ Set the thresholds that should trigger an alert for a certain discovered app at 
 
 Defender for Cloud Apps searches all the logs in your Cloud Discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.
 
-1. In the console, click on **Control** followed by **Policies**.
+1. In the console, select **Control** followed by **Policies**.
 
-1. Click **Create policy** and select **Cloud Discovery anomaly detection policy**.
+1. Select **Create policy** and select **Cloud Discovery anomaly detection policy**.
 
     ![cloud discovery anomaly detection policy menu.](media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")
 
 1. Give your policy a name and description. If you want, you can base it on a template, For more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
-1. To set which discovered apps trigger this policy, click **Add filters**.
+1. To set which discovered apps trigger this policy, select **Add filters**.
 
-    The filters are chosen from drop-down lists. To add filters, click the plus button. To remove a filter, you click the 'X'.
+    The filters are chosen from drop-down lists. To add filters, select the plus button. To remove a filter, select the 'X'.
 
 1. Under **Apply to** choose whether this policy applies **All continuous reports** or **Specific continuous reports**. Select whether the policy applies to **Users**, **IP addresses**, or both.
 
 1. Select the dates during which the anomalous activity occurred to trigger the alert under **Raise alerts only for suspicious activities occurring after date.**
 
 1. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
-    - Clicking **Save alert settings as the default for your organization** enables future policies to use the setting.
+    - Selecting **Save alert settings as the default for your organization** enables future policies to use the setting.
     - If you have a default setting, you can select **Use your organization's default settings**.
 
-1. Click **Create**.
+1. Select **Create**.
 
     ![new discovery anomaly policy.](media/new-discovery-anomaly-policy.png "new discovery anomaly policy")
 
