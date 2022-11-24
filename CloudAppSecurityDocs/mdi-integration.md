@@ -11,7 +11,8 @@ ms.topic: how-to
 Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md). For more information about the machine learning and behavioral analytics provided by Defender for Identity, see [What is Defender for Identity?](/defender-for-identity/what-is)
 
 > [!NOTE]
-> Defender for Cloud Apps does not send email notifications for Defender for Identity alerts. However, you can configure email notifications for them in the Defender for Identity portal.
+> - Defender for Cloud Apps does not send email notifications for Defender for Identity alerts. However, you can configure email notifications for them in the Defender for Identity portal.
+> - Defender for Identity Alerts will be reflected in Defnder for Cloud Apps portal, but the alert's status will not be updated from external sources.
 
 ## Prerequisites
 
