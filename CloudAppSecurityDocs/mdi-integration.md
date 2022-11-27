@@ -12,7 +12,8 @@ Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Identit
 
 > [!NOTE]
 > - Defender for Cloud Apps does not send email notifications for Defender for Identity alerts. However, you can configure email notifications for them in the Defender for Identity portal.
-> - Defender for Identity Alerts will be reflected in Defnder for Cloud Apps portal, but the alert's status will not be updated from external sources.
+>
+> - Defender for Identity Alerts will be reflected in the Defender for Cloud Apps portal, but the alert's status won't be updated from external sources.
 
 ## Prerequisites
 
