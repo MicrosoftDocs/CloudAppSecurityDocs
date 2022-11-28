@@ -69,7 +69,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
 | Slack | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
-| Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           | ✔                         |
+| Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 
