@@ -8,6 +8,8 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
+
 Microsoft Defender for Cloud Apps provides you with a security configuration assessment of your Amazon Web Services environment. This assessment provides fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
 
 ## Prerequisites
