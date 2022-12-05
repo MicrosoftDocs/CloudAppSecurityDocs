@@ -23,7 +23,8 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 ## Prerequisites to using session policies
 
-* Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
+* Defender for Cloud Apps license (stand-alone or part of another license)
+* A license for Azure AD Premium P1 (as a stand-alone license or as an E5 license), or the license required by your identity provider (IdP) solution
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 * Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
   * For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
