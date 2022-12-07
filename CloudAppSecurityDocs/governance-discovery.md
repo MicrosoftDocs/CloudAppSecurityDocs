@@ -18,7 +18,7 @@ You can unsanction a specific risky app by clicking the three dots at the end of
   :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
 > [!NOTE]
-> If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Defender for Cloud Apps, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Block apps with Microsoft Defender for Endpoint](mde-govern#block-apps-with-defender-for-endpoint), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
+> If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, or iboss, any app you mark as unsanctioned is automatically blocked by Defender for Cloud Apps, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Block apps with Microsoft Defender for Endpoint](mde-govern.md#block-apps-with-defender-for-endpoint), [Integrate with Zscaler](zscaler-integration.md), and [Integrate with iboss](iboss-integration.md) respectively.
 
 ## Block apps by exporting a block script
 
