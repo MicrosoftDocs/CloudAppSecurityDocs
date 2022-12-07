@@ -102,6 +102,12 @@ After connecting Salesforce, you'll receive Events as follows: Log in events and
 > Defender for Cloud Apps throttling is calculated solely on its own API calls with Salesforce, not with those of any other applications making API calls with Salesforce.
 > Limiting API calls due to the limitation may slow down the rate at which data is ingested in Defender for Cloud Apps, but usually catches up over night.
 
+> [!NOTE]
+> If your Salesforce instance is not in English, make sure to select the appropriate 'language' attribute value for the integration service admin account. 
+
+> To change the language attribute, navigate to **Administration** -> **Users** -> **User** and open the integration system admin account. Now navigate to **Locale Settings** -> **Language** and select the desired langugage.
+
+
 Salesforce events are processed by Defender for Cloud Apps as follows:
 
 * Sign-in events every 15 minutes
