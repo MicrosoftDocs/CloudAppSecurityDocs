@@ -53,7 +53,7 @@ Use the following steps to enable access control for cloud apps:
 Defender for Cloud Apps enables you to block access to unsanctioned apps by using Defender for Endpoint. You can block all devices in your organization, or block specific device groups.
 
 > [!NOTE]
-> The option to block specific device groups via include or exclude is in **Preview** mode. To use it, make sure to enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
+> To use this feature, make sure to enable [cloud app blocking with Defender for Endpoint](#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
 
 ### Prerequisites for blocking apps with Defender for Endpoint
 
