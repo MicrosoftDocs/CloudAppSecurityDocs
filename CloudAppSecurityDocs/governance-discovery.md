@@ -17,8 +17,11 @@ You can unsanction a specific risky app by clicking the three dots at the end of
 
   :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
-> [!NOTE]
-> If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, iboss, Corrata, Menlo, or Open Systems any app you mark as unsanctioned is automatically blocked by Defender for Cloud Apps, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Block apps with Microsoft Defender for Endpoint](mde-govern.md#block-apps-with-defender-for-endpoint), [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), [Integrate with Corrata](Corrata-integration.md), [Integrate with Menlo](menlo-integration.md) and [Integrate with Open Systems](open-systems-integration.md) respectively.
+## Blocking apps with built-in streams
+
+If your tenant uses Microsoft Defender for Cloud Apps, once you unsanction an app it is automatically blocked. Moreover, you can scope blocking to specific device groups. For more information, see [Block apps with Microsoft Defender for Endpoint](mde-govern.md#block-apps-with-defender-for-endpoint).
+
+Otherwise, if your tenant uses Zscaler NSS, iboss, Corrata, Menlo, or Open Systems, you can still enjoy seamless blocking capabilities once unsanctioned an app, but you cannot scope by device groups. For more information, see [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), [Integrate with Corrata](Corrata-integration.md), [Integrate with Menlo](menlo-integration.md) and [Integrate with Open Systems](open-systems-integration.md).
 
 ## Block apps by exporting a block script
 
@@ -36,7 +39,7 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
 
     ![Generate block script pop-up.](media/generate-block-script-pop-up.png)
 
-4. Then select the Generate script button to create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name
+4. Then select the Generate script button to create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name.
 
    ![Generate block script button.](media/generate-block-script-button.png)
 
