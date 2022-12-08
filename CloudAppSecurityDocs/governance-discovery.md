@@ -19,7 +19,7 @@ You can unsanction a specific risky app by clicking the three dots at the end of
 
 ## Blocking apps with built-in streams
 
-If your tenant uses Microsoft Defender for Cloud Apps, once you unsanction an app it is automatically blocked. Moreover, you can scope blocking to specific device groups. For more information, see [Block apps with Microsoft Defender for Endpoint](mde-govern.md#block-apps-with-defender-for-endpoint).
+If your tenant uses Microsoft Defender for Cloud Apps, once you unsanction an app it is automatically blocked. Moreover, you can scope blocking to specific device groups. Also, with Defender for Endpoint you can monitor applications and leverage the "warn and educate" capabilities. For more information, see [Block apps with Microsoft Defender for Endpoint](mde-govern.md#block-apps-with-defender-for-endpoint).
 
 Otherwise, if your tenant uses Zscaler NSS, iboss, Corrata, Menlo, or Open Systems, you can still enjoy seamless blocking capabilities once unsanctioned an app, but you cannot scope by device groups. For more information, see [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), [Integrate with Corrata](Corrata-integration.md), [Integrate with Menlo](menlo-integration.md) and [Integrate with Open Systems](open-systems-integration.md).
 
