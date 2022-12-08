@@ -72,9 +72,6 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 * [Govern discovered apps](governance-discovery.md)
 
 ---
----
----
----
 
 ## Limit exposure of shared data and enforce collaboration policies
 
@@ -96,27 +93,12 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 
 ---
 
-**Best practice**: Review your organization's data exposure  
-**Detail**: Use the file exposure reports to gain visibility into how your users are sharing files with cloud apps. The following reports are available and can be exported to for further analysis in tools such as Microsoft Power BI:
-
-* **Data sharing overview**: Lists files by access permissions stored in each of your cloud apps
-* **Outbound sharing by domain**: Lists the domains with which corporate files are shared by your employees
-* **Owners of shared files**: Lists users who are sharing corporate files with the outside world  
-**For more information**:
-
-* [Generate data management reports](built-in-reports.md)
-
----
-
 **Best practice**: Create policies to remove sharing with personal accounts  
 **Detail**: Connecting Office 365 to Defender for Cloud Apps gives you immediate visibility into your users' activities, files they are accessing, and provides governance actions for Office 365, SharePoint, OneDrive, Teams, Power BI, Exchange, and Dynamics.  
 **For more information**:
 
 * [Governing connected apps](governance-actions.md)
 
----
----
----
 ---
 
 ## Discover, classify, label, and protect regulated and sensitive data stored in the cloud

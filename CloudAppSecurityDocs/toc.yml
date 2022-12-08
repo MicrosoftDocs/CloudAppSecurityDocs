@@ -312,9 +312,6 @@ items:
       href: mde-investigation.md
     - name: Files
       href: file-filters.md
-      items:
-      - name: Generate data management reports
-        href: built-in-reports.md
     - name: Accounts
       href: accounts.md
     - name: Manage OAuth apps
