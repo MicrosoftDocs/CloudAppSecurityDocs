@@ -34,7 +34,7 @@
       "feedback_product_url": "https://docs.microsoft.com/cloud-app-security/support-and-ts#feedback",
       "uhfHeaderId": "MSDocsHeader-MicrosoftDefender",
       "layout": "Conceptual",
-      "breadcrumb_path": "/cloud-app-security/bread/toc.json",
+      "breadcrumb_path": "/defender-cloud-apps/bread/toc.json",
       "searchScope": ["Defender for Cloud Apps"],
       "titleSuffix": "Microsoft Defender for Cloud Apps",
       "author": "dcurwin",
