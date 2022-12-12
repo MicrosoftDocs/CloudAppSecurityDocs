@@ -8,6 +8,8 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
+
 Microsoft Defender for Cloud Apps provides you with a security configuration assessment of your Azure environment. The assessment, powered by Microsoft Defender for Cloud, provides recommendations for missing configuration and security controls.
 
 ## Prerequisites

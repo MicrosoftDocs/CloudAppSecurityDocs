@@ -8,6 +8,8 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
+
 Microsoft Defender for Cloud Apps provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP) and other SaaS applications. Recommendations cover all Azure subscriptions, AWS accounts including member accounts, and all GCP projects that are connected to your organization. This multi-cloud view of all cloud platform security configuration recommendations enables security admins to investigate all security configuration gaps in Defender for Cloud Apps.
 
 Use the following links to get more details about the different assessment types.

@@ -8,6 +8,8 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
+
 Microsoft Defender for Cloud Apps provides you with a security configuration assessment of your Google Cloud Platform (GCP) environment. This assessment provides fundamental security recommendations based on the [Center for Internet Security (CIS) benchmark for GCP](https://www.cisecurity.org/benchmark/google_cloud_computing_platform/), version 1.1.0.
 
 This assessment provides an organizational view of security configuration recommendations of all GCP projects and enables security admins to investigate of security configuration gaps and initiate remediation by the resource owners.
