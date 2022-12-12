@@ -8,6 +8,8 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
+
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Azure account using the app connector API. This connection gives you visibility into and control over Azure use. For information about how Defender for Cloud Apps protects Azure, see [Protect Azure](protect-azure.md).
 
 ## How to connect Azure to Defender for Cloud Apps
