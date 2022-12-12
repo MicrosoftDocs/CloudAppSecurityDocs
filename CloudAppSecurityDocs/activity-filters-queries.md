@@ -23,10 +23,8 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
   - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for items that **Contain**, **Equal**, or **Starts with** the specific item.
    
-- Action type - Search for the app activity.
-   
-- Activity type - Search for a more specific action performed in an app.
-   
+- Action type - Search for a more specific action performed in an app.
+- Activity type - Search for the app activity.
   > [!NOTE]
   > Apps are added to the filter only if there is activity for that app.
 
@@ -170,4 +168,5 @@ From there you can define the filters as is normally done with the **Activity Lo
 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+
 
