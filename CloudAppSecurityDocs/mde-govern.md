@@ -29,7 +29,7 @@ Defender for Cloud Apps uses the built-in [**Unsanctioned**](governance-discover
 Apps marked as **Unsanctioned** in Defender for Cloud Apps are automatically synced to Defender for Endpoint. More specifically, the domains used by these unsanctioned apps are propagated to endpoint devices to be blocked by Microsoft Defender Antivirus within the Network Protection SLA.
 
 > [!NOTE]
-> The time latency to block an app via Defender for Endpoint is up to three hours from the moment the unsanction action is done in Defender for Cloud Apps to the moment the app is blocked in the device. This is due to up to one hour of synchronization of Defender for Cloud Apps sanctioned/unsanctioned apps to Defender for Endpoint, and up to two hours to push the policy to the devices in order to block the app once the indicator was created in Defender for Endpoint.
+> The time latency to block an app via Defender for Endpoint is up to three hours from the moment you mark the app as unsanctioned in Defender for Cloud Apps to the moment the app is blocked in the device. This is due to up to one hour of synchronization of Defender for Cloud Apps sanctioned/unsanctioned apps to Defender for Endpoint, and up to two hours to push the policy to the devices in order to block the app once the indicator was created in Defender for Endpoint.
 
 ### How to enable cloud app blocking with Defender for Endpoint
 
@@ -47,13 +47,6 @@ Use the following steps to enable access control for cloud apps:
     This allows you to leverage Microsoft Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Defender for Cloud Apps, either by manually assigning [app tags](governance-discovery.md#sanctioningunsanctioning-an-app) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
     ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/mde-custom-network-indicators.png)
-
-## Block apps with Defender for Endpoint
-
-Defender for Cloud Apps enables you to block access to unsanctioned apps by using Defender for Endpoint. You can block all devices in your organization, or block specific device groups.
-
-> [!NOTE]
-> To use this feature, make sure to enable [cloud app blocking with Defender for Endpoint](#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
 
 ### Prerequisites for blocking apps with Defender for Endpoint
 
