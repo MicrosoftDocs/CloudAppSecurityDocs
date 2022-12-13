@@ -13,12 +13,15 @@ After you've reviewed the list of discovered apps in your environment, you can s
 
 ## Sanctioning/unsanctioning an app
 
-You can unsanction a specific risky app by clicking the three dots at the end of the row. Then select **Unsanction**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
+You can mark a specific risky app as unsanctioned by clicking the three dots at the end of the row. Then select **Unsanctioned**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
 
   :::image type="content" source="media/tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/tag-as-unsanctioned.png":::
 
-> [!NOTE]
-> If your tenant uses Microsoft Defender for Endpoint, Zscaler NSS, iboss, Corrata, Menlo, or Open Systems any app you mark as unsanctioned is automatically blocked by Defender for Cloud Apps, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Block apps with Microsoft Defender for Endpoint](mde-govern.md#block-apps-with-defender-for-endpoint), [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), [Integrate with Corrata](Corrata-integration.md), [Integrate with Menlo](menlo-integration.md) and [Integrate with Open Systems](open-systems-integration.md) respectively.
+## Blocking apps with built-in streams
+
+If your tenant uses Microsoft Defender for Cloud Apps, once you mark an app as unsanctioned, it's automatically blocked. Moreover, you can scope blocking to specific device groups. Also, with Defender for Endpoint you can monitor applications and use the "warn and educate" capabilities. For more information, see [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md).
+
+Otherwise, if your tenant uses Zscaler NSS, iboss, Corrata, Menlo, or Open Systems, you can still enjoy seamless blocking capabilities when an app is unsanctioned, but you can't scope by device groups or use the "warn and educate" feature. For more information, see [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), [Integrate with Corrata](Corrata-integration.md), [Integrate with Menlo](menlo-integration.md) and [Integrate with Open Systems](open-systems-integration.md).
 
 ## Block apps by exporting a block script
 
@@ -36,11 +39,17 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
 
     ![Generate block script pop-up.](media/generate-block-script-pop-up.png)
 
-4. Then select the Generate script button to create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name
+4. Then select the Generate script button to create a block script for all your unsanctioned apps. By default, the file will be named with the date on which it was exported and the appliance type you selected. *2017-02-19_CAS_Fortigate_block_script.txt* would be an example file name.
 
    ![Generate block script button.](media/generate-block-script-button.png)
 
 5. Import the file created to your appliance.
+
+## Blocking unsupported streams
+
+If your tenant doesn't use any of the streams above, you can still export a list of all the domains of all unsanctioned apps and configure your third-party non-supported appliance to block those domains.
+
+In the **Discovered apps** page, filter all *Unsanctioned* apps and then use the export capability to export all the domains.
 
 ## Governance conflicts
 
