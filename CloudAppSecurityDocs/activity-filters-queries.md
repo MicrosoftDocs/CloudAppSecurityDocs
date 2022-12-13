@@ -4,6 +4,7 @@ description: This article provides a list of Defender for Cloud Apps activity fi
 ms.date: 11/09/2021
 ms.topic: how-to
 ---
+
 # Activity filters and queries
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -21,9 +22,9 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
   <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
   - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for items that **Contain**, **Equal**, or **Starts with** the specific item.
-
+   
+- Action type - Search for a more specific action performed in an app.
 - Activity type - Search for the app activity.
-
   > [!NOTE]
   > Apps are added to the filter only if there is activity for that app.
 
@@ -167,3 +168,6 @@ From there you can define the filters as is normally done with the **Activity Lo
 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+
+
+
