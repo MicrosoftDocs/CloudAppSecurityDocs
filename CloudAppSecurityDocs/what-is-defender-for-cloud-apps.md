@@ -1,7 +1,7 @@
 ---
 title: What is Defender for Cloud Apps?
 description: This article describes Microsoft Defender for Cloud Apps and how it works.
-ms.date: 11/09/2021
+ms.date: 12/14/2022
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps overview
@@ -9,7 +9,7 @@ ms.topic: overview
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> For information about Office 365 Cloud App Security, see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md)
 
 Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
 
@@ -21,7 +21,7 @@ For information about licensing, see the [Microsoft 365 licensing datasheet](htt
 
 Moving to the cloud increases flexibility for employees and IT teams. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while protecting critical data.
 
-This is where a Cloud Access Security Broker steps in to address the balance, adding safeguards to your organization's use of cloud services by enforcing your enterprise security policies. As the name suggests, CASBs act as a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using.
+This is where a Cloud Access Security Broker steps in to address the balance, adding safeguards to your organization's use of cloud services by enforcing your enterprise security policies. As the name suggests, CASBs act as a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and whatever device they're using.
 
 CASBs do this by discovering and providing visibility into Shadow IT and app use, monitoring user activities for anomalous behaviors, controlling access to your resources, providing the ability to classify and prevent sensitive information leak, protecting against malicious actors, and assessing the compliance of cloud services.
 

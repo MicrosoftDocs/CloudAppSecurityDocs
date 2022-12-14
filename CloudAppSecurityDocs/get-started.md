@@ -1,11 +1,11 @@
 ---
 title: Deploy Defender for Cloud Apps
 description: This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
-ms.date: 11/09/2021
+ms.date: 12/14/2022
 ms.topic: quickstart
 ---
 
-# Quickstart: Get started with Microsoft Defender for Cloud Apps
+# Get started with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -15,30 +15,28 @@ This quickstart provides you with steps for getting up and running with Defender
 
 - In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps. For pricing details, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
-    For tenant activation support, see [Ways to contact support for business products - Admin Help](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+    For activation support, see [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support)
 
     >[!NOTE]
-    >Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Office 365 productivity suite licenses. For [Office 365 Cloud App Security](editions-cloud-app-security-o365.md) (Microsoft Defender for Cloud Apps only for Office 365), see [Office 365 Cloud App Security licensing](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-cloud-app-security).
+    >Microsoft Defender for Cloud Apps is a security tool and therefore doesn't require Office 365 productivity suite licenses. For Office 365 Cloud App Security (Microsoft Defender for Cloud Apps only for Office 365), see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md).
 
 - After you have a license for Defender for Cloud Apps, you'll receive an email with activation information and a link to the Defender for Cloud Apps portal.
 
-- To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true). For more information, see [Assign admin roles](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
+- To set up Defender for Cloud Apps, you must be a Global Administrator or a Security Administrator in Azure Active Directory or Office 365. It's important to understand that a user who is assigned an admin role will have the same permissions across all of the cloud apps that your organization has subscribed to. This is regardless of whether you assign the role in the Microsoft 365 admin center, or in the Azure classic portal, or by using the Azure AD module for [Windows PowerShell](/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true). For more information, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles) and [Assigning administrator roles in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
 
 - To run the Defender for Cloud Apps portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest).
 
 ## To access the portal
 
-To access the Defender for Cloud Apps portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **[Microsoft 365 admin center](https://security.microsoft.com)**, as follows:
+To access the Defender for Cloud Apps portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **[Microsoft 365 Defender portal](https://security.microsoft.com)**, as follows:
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), in the side menu, select **Show all**, and then select **Security**.
-
-    ![Access from Microsoft 365 admin center.](media/access-from-o365.png)
-
-1. In the Microsoft 365 Defender page, select **More resources**, and then select **Defender for Cloud Apps**.
+1. In the [Microsoft 365 Defender Portal](https://security.microsoft.com/),  select **More resources**, and then select **Defender for Cloud Apps**.
 
     ![Select Defender for Cloud Apps.](media/access-from-o365-s2.png)
 
-## Step 1. [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
+## Step 1. Set instant visibility, protection, and governance actions for your apps
+
+How to page: [Set instant visibility, protection, and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 
 Required task: Connect apps
 
@@ -49,15 +47,17 @@ Required task: Connect apps
 **Why connect an app?**
 After you connect an app, you can gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment.
 
-## Step 2. [Protect sensitive information with DLP policies](policies-information-protection.md)
+## Step 2. Protect sensitive information with DLP policies
+
+How to page: [Protect sensitive information with DLP policies](policies-information-protection.md)
 
 Recommended task: Enable file monitoring and create file policies
 
 1. Go to **Settings**, and then under **Information Protection**, select **Files**.
 1. Select **Enable file monitoring** and then select **Save**.
-1. If you use sensitivity labels from Microsoft Purview Information Protection, under **Information Protection**, select **Microsoft Purview Information Protection**.
+1. If you use sensitivity labels from Microsoft Purview Information Protection, under **Information Protection**, select **Microsoft Information Protection**.
 1. Select the required settings and then select **Save**.
-1. In [step 3](#step-3), create [File policies](data-protection-policies.md) to meet your organizational requirements.
+1. In [Step 3](#step-3-control-cloud-apps-with-policies), create [File policies](data-protection-policies.md) to meet your organizational requirements.
 
 > [!TIP]
 > You can view files from your connected apps by browsing to **Investigate** > **Files**.
@@ -68,9 +68,9 @@ We recommend using Defender for Cloud Apps sensitive information protection in p
 > [!NOTE]
 > For third-party apps, verify that the current load does not exceed the app's maximum number of allowed API calls.
 
-<a name="step-3"></a>
+## Step 3. Control cloud apps with policies
 
-## Step 3. [Control cloud apps with policies](control-cloud-apps-with-policies.md)
+How to page: [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 Required task: Create policies
 
@@ -88,7 +88,9 @@ Required task: Create policies
 
 You can use policies to help you monitor trends, see security threats, and generate customized reports and alerts. With policies, you can create governance actions, and set data loss prevention and file-sharing controls.
 
-## Step 4. [Set up Cloud Discovery](set-up-cloud-discovery.md)
+## Step 4. Set up Cloud Discovery
+
+How to page: [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 Required task: Enable Defender for Cloud Apps to view your cloud app use
 
@@ -96,24 +98,26 @@ Required task: Enable Defender for Cloud Apps to view your cloud app use
 1. If you use [Zscaler, integrate](zscaler-integration.md) it with Defender for Cloud Apps.
 1. To achieve full coverage, create a continuous Cloud Discovery report
 
-    1. From the settings cog, select   **Cloud Discovery settings**.
-    1. Choose **Automatic log upload**.
+    1. From the settings cog, select **Settings**.
+    1. Under **Cloud Discovery**, choose **Automatic log upload**.
     1. On the **Data sources** tab, add your sources.
     1. On the **Log collectors** tab, configure the log collector.
 
 **Migration recommendation**  
-We recommend using Defender for Cloud Apps discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Defender for Cloud Apps [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft 365 Defender, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps) to forward signals to Defender for Cloud Apps. Configuring Cloud Discovery will not conflict with the log collection of your current CASB solution.
+We recommend using Defender for Cloud Apps discovery in parallel with your current CASB solution. Start by configuring automatic firewall log upload to Defender for Cloud Apps [log collectors](discovery-docker.md). If you use Defender for Endpoint, in Microsoft 365 Defender, make sure you [turn on the option](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps) to forward signals to Defender for Cloud Apps. Configuring Cloud Discovery won't conflict with the log collection of your current CASB solution.
 
 ### To create a snapshot Cloud Discovery report
 
-Go to **Discover** > **Snapshot report** and follow the steps shown.
+Go to **Discover** > **Create snapshot report** and follow the steps shown.
 
 ### Why should you configure Cloud Discovery reports?
 
 Having visibility into shadow IT in your organization is critical.
 After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
-## Step 5. [Deploy Conditional Access App Control for catalog apps](proxy-deployment-aad.md)
+## Step 5. Deploy Conditional Access App Control for catalog apps
+
+How to page: [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md)
 
 Recommended task: Deploy Conditional Access App Control for catalog apps
 
@@ -124,12 +128,14 @@ Recommended task: Deploy Conditional Access App Control for catalog apps
     1. Refresh the **Conditional Access App Control** page and to view the app.
 1. Verify the apps are configured to use access and session controls
 
-To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premises apps, see [Onboard and deploy Conditional Access App Control for any app](proxy-deployment-any-app.md).
+To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premises apps, see [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
 
 **Migration recommendation**  
 Using Conditional Access App Control in parallel with another CASB solution can potentially lead to an app being proxied twice, causing latency or other errors. Therefore, we recommended progressively migrating apps and policies to Conditional Access App Control, creating the relevant session or access policies in  Defender for Cloud Apps as you go.
 
-## Step 6. [Personalize your experience](mail-settings.md)
+## Step 6. Personalize your experience
+
+How to page: [Personalize your experience](mail-settings.md)
 
 Recommended task: Add your organization details
 
@@ -147,9 +153,9 @@ Recommended task: Add your organization details
 
 ### To customize the score metrics
 
-1. From the settings cog, select **Cloud Discovery settings**.
-1. From the settings cog, select **Cloud Discovery settings**.
-1. Under **Score metrics**, configure the importance of various risk values.
+1. From the settings cog, select **Settings**.
+1. Under **Cloud Discovery**, choose **Score metrics**.
+1. Configure the importance of various risk values.
 1. Choose **Save**.
 
 Now the risk scores given to discovered apps are configured precisely according to your organization needs and priorities.
@@ -159,15 +165,16 @@ Now the risk scores given to discovered apps are configured precisely according 
 Some features work best when they're customized to your needs.
 Provide a better experience for your users with your own email templates. Decide what notifications you receive and customize your risk score metric to fit your organization's preferences.
 
-## Step 7. [Organize the data according to your needs](ip-tags.md)
+## Step 7. Organize the data according to your needs
+
+How to page: [Working with IP ranges and tags](ip-tags.md)
 
 Recommended task: Configure important settings
 
 ### To create IP address tags
 
-1. From the settings cog, select **Cloud Discovery settings**.
 1. From the settings cog, select **IP address ranges**.
-1. Select the plus sign (**+**) to add an IP address range.
+1. Select **+ Add IP address range**  to add an IP address range.
 1. Enter the IP range **details**, **location**, **tags**, and **category**.
 1. Choose **Create**.
 
@@ -175,8 +182,9 @@ Recommended task: Configure important settings
 
 ### To create continuous reports
 
-1. From the settings cog, **Cloud Discovery settings**.
-1. Under **Continuous reports**, choose **Create report**.
+1. From the settings cog, select **Settings**.
+1. Under **Cloud Discovery**, choose **Continuous reports**.
+1. Choose **Create report**.
 1. Follow the configuration steps.
 1. Choose **Create**.
 
@@ -185,7 +193,8 @@ Now you can view discovered data based on your own preferences, such as business
 ### To add domains
 
 1. From the settings cog, select **Settings**.
-1. Under **Organization details**, add your organization's internal domains.
+1. Under **System**, choose  **Organization details**.
+1. Add your organization's internal domains.
 1. Choose **Save**.
 
 ### Why should you configure these settings?
