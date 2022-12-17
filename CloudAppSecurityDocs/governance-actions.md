@@ -4,11 +4,12 @@ description: This article lists and describes all the governance actions that ca
 ms.date: 11/09/2021
 ms.topic: how-to
 ---
+
 # Governing connected apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Governance enables you to control what your users do, in real time, across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Defender for Cloud Apps. Governance actions control what your users do, in real time, across connected apps. For information about where you can use governance actions, see [Apply governance actions](control.md#apply-governance-actions).
+Governance enables you to control what your users do across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Defender for Cloud Apps. Governance actions control what your users do across connected apps. For information about where you can use governance actions, see [Apply governance actions](control.md#apply-governance-actions).
 
 > [!NOTE]
 > When Microsoft Defender for Cloud Apps attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action.
@@ -159,3 +160,4 @@ For information about how governance actions are treated when there are policy c
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
