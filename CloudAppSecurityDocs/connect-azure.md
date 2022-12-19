@@ -22,11 +22,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 > - Currently, Defender for Cloud Apps monitors only ARM activities.
 > - If the Azure Connector is disabled after configuration, it can't be re-enabled. If the connector is disabled by accident, contact Microsoft support.
 
-1. In the **Connected apps** page, click the plus button and select **Microsoft Azure**.
+1. In the **Connected apps** page, select the plus button and then select **Microsoft Azure**.
 
     ![connect Azure menu item.](media/connect-azure-menu.png)
 
-2. In the Azure pop-up, click **Connect Microsoft Azure**.
+2. In the Azure pop-up, select **Connect Microsoft Azure**.
 
     ![connect Azure.](media/connect-azure.png)
 
