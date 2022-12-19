@@ -126,14 +126,13 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
 You should see your imported proxy CA certificate.
 
 #### Restrict IP addresses sending syslog messages to the log collector on Linux
-To secure the docker image and ensure that only specific IP address sends the syslog messages to the log collector, you can create an IP table rule on the host machine to allow input traffic over (TCP/601 or UDP/514 depending on the deployment) and drop the traffic coming over those ports. 
+To secure the docker image and ensure that only specific IP addresses send the syslog messages to the log collector, you can create an IP table rule on the host machine to allow input traffic over (TCP/601 or UDP/514 depending on the deployment) and drop the traffic coming over those ports. 
 
 
 This is an example for an IP table rule that can be added to the host machine to allow IP address 1.2.3.4 to connect to the log collector container over TCP or port 601 and drop all other connections over that port:
 
-    ```bash
-    iptables -I DOCKER-USER \! --src 1.2.3.4 -m tcp -p tcp --dport 601 -j DROP
-    ```
+```bash
+iptables -I DOCKER-USER \! --src 1.2.3.4 -m tcp -p tcp --dport 601 -j DROP
 
 
 #### Set the log collector to run with the new configuration
