@@ -133,7 +133,7 @@ This is an example for an IP table rule that can be added to the host machine to
 
 ```bash
 iptables -I DOCKER-USER \! --src 1.2.3.4 -m tcp -p tcp --dport 601 -j DROP
-
+```
 
 #### Set the log collector to run with the new configuration
 
