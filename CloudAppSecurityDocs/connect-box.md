@@ -18,7 +18,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. If you restrict application permission access, follow this step. Otherwise, skip to step 2.
 
     1. Sign in with an Admin account to your Box account.
-    1. Click on the **Apps** > **Custom apps** > **Settings**.
+    1. Select **Apps** > **Custom apps** > **Settings**.
 
          ![box apps.](media/box-apps.png "box apps")
 
@@ -32,30 +32,30 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        Then click **Save**. For information on how to see which Defender for Cloud Apps data center you're connected to, see [View your data center](network-requirements.md#view-your-data-center).
+        Then select **Save**. For information on how to see which Defender for Cloud Apps data center you're connected to, see [View your data center](network-requirements.md#view-your-data-center).
 
         ![box settings except for.](media/box-settings-except-for.png)
 
         > [!NOTE]
         > If you are an existing Adallom customer, and your console URL is for Adallom and not Defender for Cloud Apps, use this app serial number: `bwahmilhdlpbqy2ongkl119o3lrkoshc`.
 
-2. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
-3. In the **App connectors** page, click the plus sign (**+**) button and select **Box**.
+1. In the **App connectors** page, select the plus sign (**+**) button and then select **Box**.
 
     ![connect box.](media/connect-box.png "connect box")
 
-4. In the **Box settings** pop-up, click **Follow this link**.
+1. In the **Box settings** pop-up, select **Follow this link**.
 
-5. The Box sign-in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Box app.
+1. The Box sign-in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Box app.
 
-6. Box asks you if you want to allow Defender for Cloud Apps access to your team information, activity log, and perform activities as a team member. To proceed, click **Allow**.
+1. Box asks you if you want to allow Defender for Cloud Apps access to your team information, activity log, and perform activities as a team member. To proceed, select **Allow**.
 
-7. Back in the Defender for Cloud Apps portal, you should receive a message saying that Box was successfully connected.
+1. Back in the Defender for Cloud Apps portal, you should receive a message saying that Box was successfully connected.
 
-8. Make sure the connection succeeded by clicking **Test API**.
+1. Make sure the connection succeeded by selecting **Test API**.
 
-    Testing may take a couple of minutes. After receiving a success notice, click **Close**.
+    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
 
 Box is now connected to Defender for Cloud Apps.
 
