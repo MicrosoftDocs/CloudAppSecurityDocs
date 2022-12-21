@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 12/25/2022
+ms.date: 10/30/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -26,13 +26,6 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
-
-## Defender for Cloud Apps release 240, 241, 242, and 243
-
-December 25, 2022
-
-- **Azure AD identity protection**  
-Azure AD identity protection alerts will arrive directly to Microsoft 365 Defender. The Microsoft Defender for Cloud Apps policies won't affect the alerts in the Microsoft 365 Defender portal. Azure AD identity protection policies will be removed gradually from the cloud apps policies list in the Microsoft 365 Defender portal. To configure alerts from these policies, see [Configure Azure AD IP alert service](/microsoft-365/security/defender/investigate-alerts#configure-aad-ip-alert-service).
 
 ## Defender for Cloud Apps release 237, 238 and 239
 
