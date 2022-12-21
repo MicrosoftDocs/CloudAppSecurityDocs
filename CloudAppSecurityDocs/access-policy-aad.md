@@ -27,7 +27,7 @@ To create a new access policy, follow this procedure:
 
 1. Go to **Control** > **Policies** > **Conditional access**.
 
-1. Click **Create policy** and select **Access policy**.
+1. Select **Create policy** and then select **Access policy**.
 
     ![Create a Conditional access policy.](media/create-policy-from-conditional-access-tab.png)
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 06/26/2022
+ms.date: 10/30/2022
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -12,7 +12,7 @@ ms.topic: overview
 
 This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Microsoft+Defender+for+Cloud+Apps%22&locale=en-us&facet=`
+RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://learn.microsoft.com/api/search/rss?search=%22frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Microsoft+Defender+for+Cloud+Apps%22&locale=en-us&facet=`
 
 > [!NOTE]
 >
@@ -23,6 +23,98 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new)
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+
+> [!NOTE]
+> As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## Defender for Cloud Apps release 237, 238 and 239
+
+October 30, 2022
+
+- **Native Integration of Microsoft Defender for Cloud Apps in Microsoft 365 Defender is now in public preview**  
+The entire Defender for Cloud Apps experience in Microsoft 365 Defender is now available for public preview.
+
+  SecOps and security admins will experience these major benefits:
+
+  - Time and costs saved
+  - Holistic investigation experience
+  - Additional data and signals in advanced hunting
+  - Integrated protection across all security workloads
+
+  For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+
+## Defender for Cloud Apps release 236
+
+September 18, 2022
+
+- **Egnyte API connector is generally available**  
+The Egnyte API connector is generally available, providing you with deeper visibility and control over your organization's usage of the Egnyte app. For more information, see [How Defender for Cloud Apps helps protect your Egnyte environment](protect-egnyte.md).
+
+## Defender for Cloud Apps release 235
+
+September 4, 2022
+
+- **Log Collector version update**  
+We've released a new log collector version with the latest vulnerabilities fixes.
+
+  New version: **columbus-0.235.0-signed.jar**
+
+  Main changes:
+  - Docker image was rebuilt with latest updates
+  - Openssl library was update from 1.1.1l to 1.1.1q
+  - fasterxml.jackson.core.version was updated from 2.13.1 to 2.13.3
+
+  If you wish to update the version, stop your log collectors, remove the current image, and install a new one.  
+  To verify the version, run this command inside the Docker container: `cat var/adallom/versions | grep columbus-`  
+  For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
+
+- **Onboarding application to session controls (Preview)**  
+The process of onboarding an application to be used for session controls has been improved and should increase the success rate of the onboarding process. To onboard an application:
+
+  1. Go to the Conditional Access App Control list in **Settings** -> **Conditional access app control**.
+  1. After selecting **Onboard with session control**, you're presented with an **Edit this app** form.
+  1. To onboard the application to session controls, you must select the **Use the app with session controls** option.
+  
+  For more information, see [Deploy Conditional Access App Control for catalog apps with Azure AD](proxy-deployment-aad.md).
+
+## Defender for Cloud Apps release 234
+
+August 21, 2022
+
+- **Feature parity between commercial and government offerings**  
+We've consolidated the flow that allows Microsoft Defender for Cloud Apps data to be consumed through Microsoft 365 Defender. To consume this data in Microsoft Defender for Cloud, Microsoft 365 Defender should be used. For more information, see [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702) and [Connect Microsoft 365 Defender data to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE#connect-to-microsoft-365-defender).
+
+- **Protecting apps that use non-standard ports with session controls**  
+This feature allows Microsoft Defender for Cloud Apps to enforce session policies for applications that use port numbers other than 443.
+ Splunk and other applications that use ports other than 443 will now be eligible for session control.  
+There's no configuration requirement for this feature.  The feature is currently in preview mode. For more information, see [Session controls](proxy-intro-aad.md#session-controls).
+
+## Defender for Cloud Apps release 232 and 233
+
+August 7, 2022
+
+- **MITRE techniques**  
+The Defender for Cloud Apps threat protection anomaly detections will now include MITRE techniques and sub-techniques where relevant, in addition to the MITRE tactic that already exists. This data will also be available in the alert's side pane in Microsoft 365 Defender. For more information, see [How to investigate anomaly detection alerts](investigate-anomaly-alerts.md).
+
+> [!IMPORTANT]
+> **Deprecation of old proxy suffix domains for session controls (gradual rollout)**  
+> From September 15 2022, Defender for Cloud Apps will no longer support suffix domains in the form `<appName>.<region>.cas.ms.`  
+In November 2020, we moved to suffix domains in the form of `<appName>.mcas.ms`, but still provided grace time to switch from the old suffixes.  
+> End users will have very little chance of encountering navigation problems on such a domain. However, there may be situations where they may have issues -  for example, if bookmarks are saved in the old domain form or an old link is stored somewhere.
+>
+> If users encounter the following message:
+>  
+> **The connection for this site is not secure.**  
+> **missing.cert.microsoft.sharepoint.com.us.cas.ms sent an invalid response**
+>
+> They should manually replace the URL section `.<region>.cas.ms` with `.mcas.us`.
+
+## Defender for Cloud Apps release 231
+
+July 10, 2022
+
+- **Malware hashes available for SharePoint and OneDrive (Preview)**  
+In addition to file hashes available for malware detected in non-Microsoft storage apps, now new malware detection alerts will provide hashes for malware detected in SharePoint and OneDrive. For more information, see [Malware detection](anomaly-detection-policy.md#malware-detection).
 
 ## Defender for Cloud Apps release 230
 

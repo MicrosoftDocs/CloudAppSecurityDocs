@@ -33,16 +33,16 @@ You can create a custom app tag. These tags can then be used as filters for deep
 
 To create a custom app tag:
 
-1. From the **Settings** cog, select **Cloud Discovery settings**, then the **App tags** tab. Click the plus icon. ![plus icon.](media/plus-icon.png)
+1. From the **Settings** cog, select **Cloud Discovery settings**, then the **App tags** tab. Select the plus icon. ![plus icon.](media/plus-icon.png)
 
    ![create custom app tag.](media/create-app-tag.png)
 
 2. You can use the **App tags** table to view which apps are currently tagged with each app tag and you can delete unused app tags.
 
-3. To apply an app tag, in the **Discovered apps** tab, click on the three dots at the far right of the app name. Select the app tag to apply.
+3. To apply an app tag, in the **Discovered apps** tab, select the three dots at the far right of the app name. Select the app tag to apply.
 
 > [!NOTE]
->You can also create a new app tag directly in the **Discovered apps** table by clicking **Create app tag** after selecting the three dots to the right of any selected app. When you create the tag from the discovered app, you can apply it to the app. You can also access the **App tags** screen by clicking the **Manage tags** link in the corner.
+>You can also create a new app tag directly in the **Discovered apps** table by selecting **Create app tag** after selecting the three dots to the right of any selected app. When you create the tag from the discovered app, you can apply it to the app. You can also access the **App tags** screen by selecting the **Manage tags** link in the corner.
 > ![create custom app tag from app.](media/create-app-tag-from-app.png)
 
 ## Discovered app queries
@@ -51,7 +51,7 @@ To make an investigation even simpler, you can create custom queries and save th
 
 1. In the **Discovered apps** page, use the filters as described above to drill down into your apps as necessary.
 
-2. After you've achieved the wanted results, click the **Save as** button in the top right corner of the filters.
+2. After you've achieved the wanted results, select the **Save as** button in the top right corner of the filters.
 
 3. In the **Save query** pop-up, name your query.
 
@@ -81,7 +81,7 @@ Defender for Cloud Apps also provides you with **Suggested queries** and enables
 
 ![query discovered apps.](media/queries-discovered-apps.png)
 
-Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally click **Save as** to create a new **Saved query**.
+Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally select **Save as** to create a new **Saved query**.
 
 ## Next steps
 

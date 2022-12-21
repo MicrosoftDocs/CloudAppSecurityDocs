@@ -8,7 +8,7 @@ ms.topic: conceptual
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps cloud app catalog of over 25,000 cloud apps. The apps are ranked and scored based on more than 80 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses to your organization. This article provides instructions for how to use and customize the Defender for Cloud Apps app risk score.
+The Cloud App Catalog gives you a full picture of what Cloud Discovery identifies. Cloud Discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps cloud app catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses to your organization. This article provides instructions for how to use and customize the Defender for Cloud Apps app risk score.
 
 ## The Cloud App Catalog
 
@@ -55,7 +55,7 @@ If you find a new app in your environment that hasn't been scored by Defender fo
 
 **To suggest a new app:**
 
-1. At the top of the **Discovered apps** page, click the three dots and then select **Suggest new app**.
+1. At the top of the **Discovered apps** page, select the three dots and then choose **Suggest new app**.
 
     ![Screenshot showing the **Suggest an app** menu item in Defender for Cloud Apps.](media/suggest-new-app.png)
 
@@ -67,7 +67,7 @@ If you find a new app in your environment that hasn't been scored by Defender fo
 
 **To update a risk factor, score, or update app data:**
 
-1. In the **Cloud App Catalog** page, in the app row you want to update, click the three dots at the end of the row and select **Request score update**.
+1. In the **Cloud App Catalog** page, in the app row you want to update, select the three dots at the end of the row and choose **Request score update**.
 
     ![Request score update.](media/request-score-update.png)
 
@@ -111,7 +111,7 @@ To understand a risk category's weight in an app's total score, hover over the r
 
 ## Overriding the risk score
 
-To override the risk score, in the **Discovered apps** table or in the **Cloud app catalog**, click the three dots to the right of any app and select **Override app score**.
+To override the risk score, in the **Discovered apps** table or in the **Cloud app catalog**, select the three dots to the right of any app and choose **Override app score**.
 You can override the risk score of an app without changing the way it's weighted so that you get immediate results for your organization. For example, The risk score of an LOB app you use is 8. However, the app is sanctioned and encouraged by your organization. You might want to change the risk score to 10 for the LOB app.
 
 ![Screenshot of overriding a risk score in Defender for Cloud Apps.](media/override-risk-score.png)

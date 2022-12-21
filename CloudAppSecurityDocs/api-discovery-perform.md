@@ -10,8 +10,6 @@ ms.topic: reference
 
 Upload the file contents by performing an HTTP PUT request. You will be required to use the URL returned by the [Initiate file upload](api-discovery-initiate.md) request.
 
-Azure and AWS have different headers and limitations when uploading files to the target URL.
-
 > [!NOTE]
 >
 > - You can upload individual files of up to 5 GB. If you need to upload larger files, break the Cloud Discovery data into multiple chunks.
@@ -36,7 +34,7 @@ PUT https://<initiate_file_upload_response_url>
 Here is an example of the request for Azure.
 
 ```rest
-curl --request PUT --upload-file <file_to_upload> -H "x-ms-blob-type: BlockBlob" "https://<initiate_file_upload_response_url>"
+curl --request PUT --upload-file <file_to_upload_full_path> -H "x-ms-blob-type: BlockBlob" "https://<initiate_file_upload_response_url>"
 ```
 
 Here is an example of the request for Azure Java SDK.

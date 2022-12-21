@@ -19,8 +19,14 @@ items:
       href: editions-cloud-app-security-o365.md
     - name: Azure AD Cloud App Discovery
       href: editions-cloud-app-security-aad.md
+  - name: US Government offerings
+    items:
     - name: Defender for Cloud Apps for US Government
       href: editions-cloud-app-security-gcc.md
+    - name: Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)
+      href: ems-cloud-app-security-govt-service-byok.md
+    - name: Troubleshooting data encryption with your own key
+      href: ems-cloud-app-security-govt-service-byok-troubleshoot.md
 - name: Quickstarts
   expanded: true
   items:
@@ -80,7 +86,7 @@ items:
       href: protect-docusign.md
     - name: Protect Dropbox
       href: protect-dropbox.md
-    - name: Protect Egnyte (Preview)
+    - name: Protect Egnyte
       href: protect-egnyte.md
     - name: Protect GitHub
       href: protect-github.md
@@ -142,6 +148,8 @@ items:
       href: app-governance-manage-app-governance.md
     - name: Get started with app governance
       href: app-governance-get-started.md
+    - name: App governance trial user guide
+      href: app-governance-trial-user-guide.md
     - name: What's new in app governance
       href: app-governance-whats-new.md
     - name: Submit feedback on app governance
@@ -158,6 +166,8 @@ items:
           href: app-governance-visibility-insights-view-apps.md
         - name: Determine compliance posture
           href: app-governance-visibility-insights-compliance-posture.md
+        - name: Sensitive content
+          href: app-governance-visibility-insights-sensitive-content.md
     - name: Implement app policies
       items:
         - name: Learn about app policies
@@ -166,6 +176,8 @@ items:
           href: app-governance-app-policies-get-started.md
         - name: Predefined app policies
           href: app-governance-predefined-policies.md
+        - name: Investigate predefined app policy alerts
+          href: app-governance-investigate-predefined-policies.md
         - name: Create app policies
           href: app-governance-app-policies-create.md
         - name: Manage app policies
@@ -182,6 +194,10 @@ items:
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
           href: app-governance-detect-remediate-detect-threats.md
+    - name: Secure apps and other assets
+      items:
+        - name: Secure apps accessing non-Graph APIs
+          href: app-governance-secure-apps-access-non-graph-api.md
   - name: Cloud Discovery
     items:
     - name: Set up
@@ -238,7 +254,7 @@ items:
       href: ./connect-docusign.md
     - name: Connect Dropbox
       href: ./connect-dropbox.md
-    - name: Connect Egnyte (Preview)
+    - name: Connect Egnyte
       href: ./connect-egnyte.md
     - name: Connect GitHub
       href: ./connect-github-ec.md
@@ -298,9 +314,6 @@ items:
       href: mde-investigation.md
     - name: Files
       href: file-filters.md
-      items:
-      - name: Generate data management reports
-        href: built-in-reports.md
     - name: Accounts
       href: accounts.md
     - name: Manage OAuth apps
@@ -317,7 +330,7 @@ items:
         href: security-config-aws.md
       - name: Security configuration for GCP
         href: security-config-gcp.md
-    - name: Monitor apps
+    - name: Monitor alerts
       href: monitor-alerts.md
       items:
       - name: Manage alerts
@@ -524,7 +537,7 @@ items:
   - name: Release note archive
     href: release-note-archive.md
   - name: Licensing datasheet
-    href: https://aka.ms/mcaslicensing
+    href: https://aka.ms/M365EnterprisePlans
   - name: Support and troubleshooting
     href: support-and-ts.md
   - name: Defender for Cloud Apps portal

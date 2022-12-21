@@ -8,6 +8,8 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
+
 Microsoft Defender for Cloud Apps provides you with a security configuration assessment of your Azure environment. The assessment, powered by Microsoft Defender for Cloud, provides recommendations for missing configuration and security controls.
 
 ## Prerequisites
@@ -27,10 +29,10 @@ To enable security configuration recommendations in Defender for Cloud Apps, act
 
     ![security configuration menu.](media/security-configuration-menu.png)
 
-1. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can click on the security configuration icon ![Defender for Cloud icon.](media/asc-icon.png) to open the recommendation in Microsoft Defender for Cloud for more information and to deep dive into the recommendation.
+1. You can filter the recommendations by type, by resource, and by subscription. Additionally, you can select the security configuration icon ![Defender for Cloud icon.](media/asc-icon.png) to open the recommendation in Microsoft Defender for Cloud for more information and to deep dive into the recommendation.
 
     > [!NOTE]
-    > To make investigation even simpler, you can create custom queries and save them for later use. After you've finished building your query, click the **Save as** button in the top right corner of the filters.  In the **Save query** pop-up, name your query.
+    > To make investigation even simpler, you can create custom queries and save them for later use. After you've finished building your query, select the **Save as** button in the top right corner of the filters.  In the **Save query** pop-up, name your query.
 
     ![security configuration.](media/security-configuration-azure.png)
 

@@ -29,6 +29,10 @@ Here's an example of a process for managing an existing policy:
 
 :::image type="content" source="media/app-governance/mapg-manage-policy-process.png" alt-text="The manage app policy workflow." lightbox="media/app-governance/mapg-manage-policy-process.png":::
 
+> [!NOTE]
+> Following the change in the **Activity type** filter, policies with the previous filter will have a "LEGACY" label attached to the filter and if the policies are edited or deleted the filter can't be restored.
+
+
 ## Editing an app policy configuration
 
 To change the configuration of an existing app policy:

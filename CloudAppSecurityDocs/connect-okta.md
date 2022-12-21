@@ -26,7 +26,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     - Click **Create Token**.
 
-         ![Okta create token.](media/okta-createtoken.jpg "Okta create token")
+         ![Okta create token.](media/okta-createtoken.png "Okta create token")
 
     - In the **Create Token** pop-up, name your Defender for Cloud Apps token, and click **Create Token**.
 

@@ -16,19 +16,19 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 1. On the **Settings** menu, select **Security extensions** and then **API tokens**.
 
-2. Click the plus icon, **Generate new token** and provide a name to identify the token in the future, and click **Next**.
+1. Select the plus icon, **Generate new token** and provide a name to identify the token in the future, and select **Next**.
 
     ![Defender for Cloud Apps generates API token](media/api-token-gen.png)
 
-3. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader can't issue a token that can alter data.
+1. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader can't issue a token that can alter data.
 
-4. You can filter the tokens by status: Active, Inactive, or Generated.
+1. You can filter the tokens by status: Active, Inactive, or Generated.
 
     - **Generated:** Tokens that have never been used.
     - **Active:** Tokens that were generated and were used within the past seven days.
     - **Inactive:** Tokens that were used but there was no activity in the last seven days.
 
-5. After you generate a new token, you'll be provided with a new URL to use to access the Defender for Cloud Apps portal.
+1. After you generate a new token, you'll be provided with a new URL to use to access the Defender for Cloud Apps portal.
 
     ![Defender for Cloud Apps API token](media/generate-api-token.png)
 

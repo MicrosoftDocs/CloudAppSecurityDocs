@@ -158,7 +158,6 @@ Any web app configured using the [previously mentioned authentication protocols]
 - Microsoft Teams
 - Microsoft Yammer
 - Salesforce
-- ServiceNow
 - Slack
 - Tableau
 - Workday
@@ -192,27 +191,48 @@ In the following applications, we've encountered scenarios where navigating to a
   - Microsoft Yammer
   - Workplace from Meta
 
-- **Inspections policies are valid for files up to 5 MB in size and 1 million characters**
+- **Session policies are valid for files up to 50 MB in size**  
+Files with a size of up to 50MB are subject to session policies.
+For example, an admin may define one of the following session policies:
+  - Monitor file downloads for OneDrive app
+  - Block file upload
+  - Block download\upload of malware files
 
-  When a session policy to block file uploads or downloads based on content inspection is applied, inspection is performed on files smaller than 5 MB and smaller than 1 million characters.
+  A file of up to 50 MB will be handled based on the session policies in that case.
+  For a larger file, tenant settings (Settings > Conditional Access App Control > Default behavior) determine if the file is allowed or blocked, regardless of the matching policies.
 
-  For example, an admin may define one of the following session policies:
+- **Inspections policies for information protection are valid for files up to 30 MB in size and 1 million characters**  
+When a session policy to block file uploads or downloads based on information protection content inspection is applied, inspection is performed on files smaller than 30 MB and smaller than 1 million characters.
+For example, an admin may define one of the following session policies:
   - Block file upload for files containing Social Security Number (SSN)
-  - Block file download for files containing PHI (Protected Health Information)
-In such cases, files larger than 5 MB or 1 million characters are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned**.
-
-  Here are some examples:
+  - Protect file download for files containing PHI (Protected Health Information)
+  - Block file download for with sensitivity label “very sensitive”
+ 
+  In such cases, files larger than 30 MB or 1 million characters are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned.**
+Here are some examples:
   - a TXT file, 1 MB size and 1 million characters: will be scanned
-  - a TXT file, 2 MB size and 2 million characters:  won't be scanned
+  - a TXT file, 2 MB size and 2 million characters: won't be scanned
   - a Word file composed of images and text, 4 MB size and 400 K characters: will be scanned
   - a Word file composed of images and text, 4 MB size and 2 million characters: won't be scanned
- 
-  The file size threshold can be configured up to 50 MB (up from 5 MB).
-  In this way, it's possible to scan files containing both textual and non-textual objects comprising up to 1 million characters.
- 
-  The reason for the limitation is that larger amounts of data should be scanned in order to detect sensitive information.
-  In such cases, Microsoft’s recommendation is to test the policy with a limited number of users and then to expand to the entire organization.
+  - a Word file composed of images and text, 40 MB size and 400 K characters: won't be scanned
 
+- **File upload limitation**
+
+  If a session policy to block the upload of sensitive files is applied, then in these scenarios the user's attempts to upload files or folders using **drag & drop** will block the entire list of files and folders:
+  - a folder that contains 100 or more files
+  - a folder that contains at least one file and at least one subfolder
+  - a folder that contains multiple subfolders
+  - a selection of at least one file and at least one folder
+  - a selection of multiple folders
+
+    Here are a few examples:
+    
+  The security administrator defines the following policy: *Block upload of files containing PII to OneDrive*.
+  - The user tries to upload a selection of 200 non-sensitive files using the file upload dialog. **Result:** the files are uploaded
+  - The user tries to upload a selection of 200 non-sensitive files using drag & drop. **Result:** the files are blocked
+  - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using the file upload dialog. **Result:** the non-sensitive files are uploaded, the sensitive files are blocked
+  - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using drag & drop. **Result:** the whole set of files is blocked
+ 
 ## Next steps
 
 For instructions on how to onboard your apps, see the appropriate document below:

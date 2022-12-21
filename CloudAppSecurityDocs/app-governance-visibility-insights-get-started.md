@@ -8,13 +8,10 @@ description: Get started with visibility and insights.
 # Get started with visibility and insights
 
 The first place to get started is the app governance dashboard at [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#roles) to view any app governance data.
-
-:::image type="content" source="media\app-governance\mapg-cc-overview.png" alt-text="The app governance overview page in Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-overview.png":::
-
+> [!div class="mx-imgBorder"]
+>![App governance overview page in Microsoft 365 Defender.](media/app-governance-visibility-insights-get-started/overview.png)  
 You can also access the app governance dashboard from **Office 365 > Microsoft 365 Defender > App governance > Overview page**.
-
 ## What’s available on the dashboard
-
 The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
 
 - **Tenant summary**: The count of key app and incident categories.
@@ -22,7 +19,9 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
 - **Data usage**: Mouse over each month column in the graph to see the corresponding value.
   - **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
   - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
-- **Optimize app governance with policies**: Recommended actions such as creating an app usage or permissions policy.
+- **Apps that accessed data across Microsoft 365 services**: The count of apps that have accessed data with and without sensitivity labels on SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days. For example, in the screenshot above, 99 apps accessed OneDrive in the last 30 days, out of which 27 apps accessed data with sensitivity labels. 
+- **Sensitivity labels accessed**: Count of apps that accessed labeled data across SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days, sorted by the count. For example, in the screenshot above, 90 apps accessed confidential data on SharePoint, OneDrive, Exchange Online, and Teams.
+- **Predefined policies**: Count of active and total predefined policies that identify risky apps, such as apps with excessive privileges, unusual characteristics, or suspicious activities.
 - **App categories**: The top apps sorted by these categories:
   
   - **All categories**: Sorts across all available categories.
@@ -37,17 +36,23 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
 One of the primary value points for app governance is the ability to quickly view app alerts and insights. To view insights for your apps:
 
 1. On your app governance portal page, select **Apps**.
-1. Use the **Categories** drop down list to select from the following options:
-      - All apps
-      - Highly privileged
-      - Overprivileged
-      - Unverified Publisher
-      - App only
-      - New apps
+2. You can view a specific selection of apps by applying one or more of the following default filter options:
+    - API access
+    - Privilege level
+    - Permission usage
+    - Permission type
+    - Publisher type
+3. You can also use one or more of the non-default filters to further customize your selection of apps by choosing any of these options:
+    - Last modified
+    - Added on
+    - Certification
+    - Users
+    - Services accessed
+    - Data usage
+    - Sensitivity labels accessed
 1. Select the name of an app to view details. Selecting an app name opens a detail pane on the right as shown in the following graphic.
-
-    [![Image showing the details pane for a selected app.](media/app-governance/app-governance-app-insight.png)](media/app-governance/app-governance-app-insight.png#lightbox)
-
+> [!div class="mx-imgBorder"]
+ > ![app details pane showing app summary](media/app-governance-visibility-insights-get-started/image2.png)
 > [!NOTE]
 > The apps listed will depend on the apps present in your tenant.
 
@@ -58,3 +63,7 @@ The details pane also lets you view the usage of the app over the past 30 days, 
 ## Next step
 
 [Get detailed insights on a specific app](app-governance-visibility-insights-view-apps.md).
+
+
+
+

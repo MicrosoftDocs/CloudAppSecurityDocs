@@ -75,6 +75,11 @@ For more information about setting up Workday integration users, security groups
     * Authorization Endpoint
 
     ![Screenshot of confirming registration of API client.](media/connect-workday-register-api-client-confirm.png)
+    
+>[!NOTE]
+>If the Workday account is enabled with SAML SSO, then append the query string parameter `'redirect=n'` to the authorization endpoint. 
+>
+>If the authorization endpoint already has other query string parameters, then append `'&redirect=n'` to the end of authorization endpoint. If the authorization endpoint doesn't have any query string parameters, then append `'?redirect=n'` to the end of authorization endpoint.
 
 1. <a name="add-connector"></a>In the Defender for Cloud Apps portal, click **Investigate** and then click **Connected Apps**.
 
@@ -100,6 +105,9 @@ For more information about setting up Workday integration users, security groups
 
 > [!NOTE]
 > After connecting Workday, you'll receive events for seven days prior to connection.
+
+> [!NOTE]
+> If you are connecting Defender for Cloud Apps to a Workday sandbox account for testing, note that Workday refreshes their sandbox account every week, causing the Defender for Cloud Apps connection to fail. You should reconnect the sandbox environment every week with Defender for Cloud Apps to continue testing.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 

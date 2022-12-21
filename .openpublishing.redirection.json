@@ -146,6 +146,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "CloudAppSecurityDocs/app-governance-trial-playbook.md",
+            "redirect_url": "/defender-cloud-apps/app-governance-trial-user-guide",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/built-in-reports.md",
+            "redirect_url": "/defender-cloud-apps/file-filters",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "CloudAppSecurityDocs/what-is-cloud-app-security.md",
             "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
             "redirect_document_id": true

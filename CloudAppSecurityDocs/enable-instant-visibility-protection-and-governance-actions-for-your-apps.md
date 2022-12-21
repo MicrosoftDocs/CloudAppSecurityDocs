@@ -51,13 +51,13 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |   App                | List accounts                        | List groups                          | List privileges                      | Log on activity                      | User activity                               | Administrative activity   |
 | ----------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------ | ------------------------------------------- | ------------------------- |
-| Atlassian (Preview) | ✔ |  |  | ✔ | ✔ | ✔ |
+| Atlassian         | ✔ |  |  | ✔ | ✔ | ✔ |
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
-| DocuSign (Preview) | ✔ |  |  | ✔ | ✔ | ✔ |
+| DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
-| Egnyte (Preview) | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | GitHub            | ✔                                    |                                      | ✔                                    |                                      | ✔                                           | ✔                         |
 | GCP               | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | Subject Google Workspace  connection | ✔                                           | ✔                         |
 | Google  Workspace | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔ - requires Google Business or  Enterprise | ✔                         |
@@ -69,7 +69,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
 | Slack | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
-| Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           | ✔                         |
+| Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 
@@ -77,13 +77,13 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |  App                 | User governance                      | View app permissions      | Revoke app permissions    | Security configuration visibility |
 | ----------------- | ------------------------------------ | ------------------------- | ------------------------- | ------------------------- |
-| Atlassian (Preview) |  |  |  |  |
+| Atlassian         |  |  |  |  |
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| DocuSign (Preview) |  |  | | |
+| DocuSign          |  |  | | |
 | Dropbox           |                                      |                           |                            |                            |
-| Egnyte (Preview) | | | | |
+| Egnyte | | | | |
 | GitHub            |                                      | ✔                         |                           |                           |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
@@ -103,13 +103,13 @@ The following tables list, per cloud app, which abilities are supported with App
 
 |     App              | DLP - Periodic backlog scan       | DLP - Near real-time scan                | Sharing control           | File governance           | Apply sensitivity labels from Microsoft Purview Information Protection |
 | ----------------- | ------------------------- | ---------------------------------------- | ------------------------- | ------------------------- | ------------------------------------------ |
-| Atlassian (Preview) |  |  |  |  |  |
+| Atlassian         |  |  |  |  |  |
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
-| DocuSign (Preview) |  |  |  |  |  |
+| DocuSign          |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
-| Egnyte (Preview) |  |  |  |  | |
+| Egnyte  |  |  |  |  | |
 | GitHub            |                           |                                          |                           |                           |                                            |
 | GCP               | Not applicable            | Not applicable                           | Not applicable            | Not applicable            | Not applicable                             |
 | Google  Workspace | ✔                         | ✔ - requires Google Business  Enterprise | ✔                         | ✔                         | ✔                                          |
@@ -134,8 +134,8 @@ The following tables list, per cloud app, which abilities are supported with App
 
 ### ExpressRoute
 
-Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps and traffic sent to Defender for Cloud Apps, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.
-For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
+Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps and traffic sent to Defender for Cloud Apps, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security.
+For more information about  Microsoft Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 
 ## Disable app connectors
 

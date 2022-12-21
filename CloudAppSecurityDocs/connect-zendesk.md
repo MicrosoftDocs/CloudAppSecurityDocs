@@ -24,7 +24,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ### Configure Zendesk
 
-1. Navigate to **Admin** -> **Channels** -> **API** -> **OAuth Client** and select **Add OAuth client**.
+1. Navigate to **Admin** -> **Apps and integrations** -> **APIs** -> **Zendesk API** -> **OAuth Client** and select **Add OAuth client**.
 
     ![Zendesk API configuration.](media/zendesk-api-configuration.png)
 
@@ -69,6 +69,10 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
+
+>[!NOTE]
+>Microsoft recommends using a short lived access token. Zendesk doesn't currently support short lived tokens. We recommend our customers refresh the token every 6 months as a security best practice. To refresh the access token, revoke the old token by following [Revoke Token](https://developer.zendesk.com/api-reference/ticketing/oauth/oauth_tokens/#revoke-token). Once the old token is revoked, create a new secret and reconnect the Zendesk connector as documented above. 
+
 
 >[!NOTE]
 >System activities will be shown with the **Zendesk** account name.

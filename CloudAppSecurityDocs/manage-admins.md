@@ -29,7 +29,10 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 
 - **Compliance data administrator**: Has read-only permissions, can create and modify file policies, allow file governance actions, and view all discovery reports. Can't access Security recommendations for cloud platforms.
 
-- **Security operator and Security reader**: Have read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
+> [!NOTE]
+> As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+- **Security operator**: Has read-only permissions and can manage alerts. These admins are restricted from doing the following actions:
 
   - Create policies or edit and change existing ones
   - Performing any governance actions
@@ -43,6 +46,20 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
   - Accessing and viewing the Manage snapshot reports page
   - Accessing and viewing SIEM agents
 
+- **Security reader**: Has read-only permissions. These admins are restricted from doing the following actions:
+
+  - Create policies or edit and change existing ones
+  - Performing any governance actions
+  - Uploading discovery logs
+  - Banning or approving third-party apps
+  - Accessing and viewing the IP address range settings page
+  - Accessing and viewing any system settings pages
+  - Accessing and viewing the Discovery settings
+  - Accessing and viewing the App connectors page
+  - Accessing and viewing the Governance log
+  - Accessing and viewing the Manage snapshot reports page
+  - Accessing and viewing SIEM agents
+  
 - **Global reader**: Has full read-only access to all aspects of Defender for Cloud Apps. Can't change any settings or take any actions.
 
 ### Roles and permissions
@@ -50,10 +67,11 @@ By default, the following Office 365 and [Azure AD](/azure/active-directory/role
 | Permissions                                                  | Global  Admin | Security  Admin | Compliance  Admin | Compliance  Data Admin | Security  Operator | Security  Reader | Global  Reader | PBI Admin | Cloud App Security admin |
 | ------------------------------------------------------------ | ------------- | --------------- | ----------------- | ---------------------- | ------------------ | ---------------- | -------------- | --------- | ------------------- |
 | Read alerts                                                  | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
-| Manage alerts                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                |                | ✔         | ✔                      |
+| Manage alerts                                                | ✔             | ✔               | ✔                 | ✔                      | ✔                  |                  |                | ✔         | ✔                      |
 | Read OAuth applications                                      | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
 | Perform OAuth application actions                            | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
 | Access discovered apps, the cloud app catalog, and other cloud discovery data | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              |           | ✔                      |
+| Configure API connectors | ✔             | ✔               |                   |                        | ✔                  |                  |                |           | ✔                      |
 | Perform cloud discovery actions                              | ✔             | ✔               |                   |                        |                    |                  |                |           | ✔                      |
 | Access files data and file policies                          | ✔             | ✔               | ✔                 | ✔                      | ✔                  | ✔                | ✔              | ✔         | ✔                      |
 | Perform file actions                                         | ✔             | ✔               |                   |                        |                    |                  |                | ✔         | ✔                      |
@@ -78,6 +96,8 @@ The following specific admin roles can be configured in the Defender for Cloud A
 - **Compliance administrator**: Grants the same permissions as the Azure AD Compliance administrator role but only to Defender for Cloud Apps.
 
 - **Security reader**: Grants the same permissions as the Azure AD Security reader role but only to Defender for Cloud Apps.
+
+- **Security operator**: Grants the same permissions as the Azure AD Security operator role but only to Defender for Cloud Apps.
 
 - **App/instance admin**: Has full or read-only permissions to all of the data in Defender for Cloud Apps that deals exclusively with the specific app or instance of an app selected. For example, you give a user admin permission to your Box European instance. The admin will see only data that relates to the Box European instance, whether it's files, activities, policies, or alerts:
 
@@ -118,7 +138,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
     - System settings - View only
     - Cloud Discovery settings - View and edit all (anonymization permissions depend on whether it was allowed during role assignment)
   - Cloud Discovery activity - full permissions
-  - Alerts - only alerts related to Cloud Discovery data
+  - Alerts - view and manage only alerts related to the relevant Cloud Discovery report
   - Policies - Can view all policies and can edit or create only Cloud Discovery policies
   - Activities page - No permissions
   - Accounts page - No permissions
@@ -128,8 +148,25 @@ The following specific admin roles can be configured in the Defender for Cloud A
   - Security extensions - Creating and deleting their own API tokens
   - Governance actions - Only Cloud Discovery related actions
   - Security recommendations for cloud platforms - No permissions
+  - IP ranges - No permissions
 
-- **Cloud Discovery report admin**: Has permissions to view all the data in Defender for Cloud Apps that deals exclusively with the specific Cloud Discovery reports selected. For example, you can give someone admin permission to the continuous report from Microsoft Defender for Endpoint. The Discovery admin will see only the Cloud Discovery data that relates to that data source and to the app catalog. This admin won't have access to the **Activities**, **Files**, or **Security recommendations** pages and limited access to policies.
+- **Cloud Discovery report admin**:
+
+  - Settings
+    - System settings - View only
+    - Cloud Discovery settings - View all (anonymization permissions depend on whether it was allowed during role assignment)
+  - Cloud Discovery activity - read permissions only
+  - Alerts – view only alerts related to the relevant Cloud Discovery report
+  - Policies - Can view all policies and can create only Cloud Discovery policies, without the possibility to govern application (tagging, sanction and unsanctioned)
+  - Activities page - No permissions
+  - Accounts page - No permissions
+  - App permissions – No permissions
+  - Files page – No permissions
+  - Conditional Access App Control - No permissions
+  - Security extensions - Creating and deleting their own API tokens
+  - Governance actions – view only actions related to the relevant Cloud Discovery report
+  - Security recommendations for cloud platforms - No permissions
+  - IP ranges - No permissions
 
 > [!NOTE]
 > The built-in Defender for Cloud Apps admin roles only provide access permissions to Defender for Cloud Apps.

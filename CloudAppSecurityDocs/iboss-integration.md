@@ -22,7 +22,7 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 ## Deployment
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), perform the following integration steps:
-    1. Click on the settings cog and select **Cloud Discovery settings**.
+    1. Select the settings cog and then choose **Cloud Discovery settings**.
     2. Select the **Automatic log upload** tab, and then **Add data source**.
     3. In the **Add data source** page, enter the following settings:
 
@@ -32,11 +32,11 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 
         ![data source iboss.](media/iboss-integration.png)
 
-    4. Click **View sample of expected log file**. Then click **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
+    4. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
 
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 
-1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by iboss once every ten minutes, and then automatically blocked by iboss. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by iboss once every ten minutes, and then automatically blocked by iboss. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
 1. To configure iboss to send traffic logs to Microsoft Defender for Cloud Apps, contact iboss support.
 

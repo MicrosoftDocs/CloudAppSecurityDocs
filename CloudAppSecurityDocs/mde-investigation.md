@@ -1,7 +1,7 @@
 ---
 title: Investigate apps discovered by Microsoft Defender for Endpoint
 description: This article describes how to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
-ms.date: 11/09/2021
+ms.date: 08/16/2022
 ms.topic: how-to
 ---
 # Investigate apps discovered by Microsoft Defender for Endpoint
@@ -70,13 +70,13 @@ Use the following steps to gain more granular visibility on app-related network 
 
     ```kusto
     DeviceNetworkEvents
-    | where RemoteUrl in ("<DOMAIN_LIST>")
+    | where RemoteUrl has_any ("<DOMAIN_LIST>")
     | order by Timestamp desc
     ```
 
 1. Run the query and investigate network events for this app.
 
-![Screenshot showing Microsoft 365 Defender advanced hunting](media/mde-advanced-hunting.png)
+    ![Screenshot showing Microsoft 365 Defender advanced hunting](media/mde-advanced-hunting.png)
 
 ## Investigate unsanctioned apps in Microsoft 365 Defender
 
@@ -103,7 +103,7 @@ Sometimes, access to an unsanctioned app isn't blocked, either because the endpo
 
 ## Related videos
 
-- [Hunting with Microsoft Cloud App Security data](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)
+- [Hunting with Microsoft Cloud App Security data](https://www.microsoft.com/videoplayer/embed/RWFISa)
 
 - [Discover and block Shadow IT using Defender for Endpoint](https://www.youtube.com/watch?v=MsHkTOoqSQo)
 

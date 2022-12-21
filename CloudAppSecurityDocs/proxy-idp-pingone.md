@@ -25,7 +25,6 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 
 Use the following steps to route your web app sessions from PingOne to Defender for Cloud Apps. For Azure AD configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
 
-
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by PingOne using one of the following methods:
 >
@@ -120,7 +119,7 @@ Then use the instructions from the **Add a SAML application with your identity p
     ![Fill out the custom app details.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-details.png)
 
 1. On the **Application Configuration** page, do the following, and then select **Continue to Next Step**.
-    - In the **Single sign-on service URL** field, enter the Salesforce **Login URL** you noted earlier.
+    - In the **Assertion Consumer Service (ACS)** field, enter the Salesforce **Login URL** you noted earlier.
     - In the **Entity ID** field, enter a unique ID starting with *https://*. Make sure this is different from the exiting Salesforce PingOne app's configuration.
     - Make a note of the **Entity ID**. You'll need this later.
 

@@ -76,7 +76,7 @@ This detection uses a machine learning algorithm that reduces **B-TP** incidents
 
 Activity from a country/region that could indicate malicious activity. This policy profiles your environment and triggers alerts when activity is detected from a location that was not recently or was never visited by any user in the organization.
 
-By default, the policy is configured to include only successful sign-in activities but can be configured to include any sign-in activities. The policy can be further scoped to a subset of users or can exclude users known to travel to remote locations.
+The policy can be further scoped to a subset of users or can exclude users known to travel to remote locations.
 
 **Learning period**
 

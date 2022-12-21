@@ -11,7 +11,8 @@ To activate a license for the [app governance add-on for Defender for Cloud Apps
 
 1. Verify your account has the [appropriate level of licensing](#licensing). App governance is an add-on feature for Defender for Cloud Apps, and so to activate the app governance license Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must be a Global, Company, or Billing Admin to activate a license. You must have one of the [roles](#roles) listed to access the app governance portal.
-1. Your organization's billing address must be in a region other than Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
+1. Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
+2. Your organization must use commercial cloud, not government cloud (i.e., GCC, GCC-H, DoD, Fairfax). App governance is not yet available in government clouds
 
 If you satisfy the prerequisites,  you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add the app governance free trial to your tenant.
 
@@ -25,7 +26,7 @@ To purchase a subscription for app governance, go to [Buy app governance](https:
 
 You can purchase app governance as an add-on license to any license that entitles you to use Defender for Cloud Apps. To use app governance in compliance with the terms of service, purchase an add-on license for each protected user. Each protected user must have both the app governance add-on license and one of the Defender for Cloud Apps licenses.
 
-For a list of these licenses, see the [Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing). You can confirm the licenses in your tenant at Microsoft 365 admin center.
+For a list of these licenses, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans). You can confirm the licenses in your tenant at Microsoft 365 admin center.
 
 App governance is currently not available as an add-on for Microsoft Defender for Cloud Apps Discovery, and Microsoft Office 365 Cloud App Security.
 
@@ -63,22 +64,6 @@ Here are the capabilities for each role.
 
 For more information about each role, see [Administrator role permissions](/azure/active-directory/roles/permissions-reference).
 
-## Enable Defender for Cloud Apps sync
-
-To enable app governance sync with Defender for Cloud Apps, follow these steps:
-
-1. Ensure Office 365 is connected in Defender for Cloud Apps.
-1. Ensure Office 365 Azure AD apps are enabled.
-1. Go to your Defender for Cloud Apps portal – [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
-1. Select the gear icon (top-right corner) and select **Settings**.
-1. Under **Threat Protection**, select **App Governance**.
-1. Select **Enable App Governance integration**, and then select **Save**.
-
-To verify the integration with Defender for Cloud Apps is active, look for the app governance policies listed below to appear in Defender for Cloud Apps. The new policies might take few minutes to appear once integration is enabled.
-
-- Microsoft 365 OAuth app Reputation
-- Microsoft 365 OAuth Phishing Detection
-- Microsoft 365 OAuth App Governance
 
 > [!NOTE]
-> App governance alerts will not flow to Microsoft 365 Defender until app governance is enabled in Defender for Cloud Apps and you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
+> App governance alerts will not flow to Microsoft 365 Defender or show up in app governance until you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.

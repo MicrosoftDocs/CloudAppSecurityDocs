@@ -1,7 +1,7 @@
 ---
 title: What is Defender for Cloud Apps?
 description: This article describes Microsoft Defender for Cloud Apps and how it works.
-ms.date: 11/09/2021
+ms.date: 12/14/2022
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps overview
@@ -9,19 +9,19 @@ ms.topic: overview
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 > [!NOTE]
-> For information about Office 365 Cloud App Security, see [Get started with Office 365 Cloud App Security](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
+> For information about Office 365 Cloud App Security, see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md)
 
 Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
 
 Microsoft Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities.
 
-For information about licensing, see the [Microsoft Defender for Cloud Apps licensing datasheet](https://aka.ms/mcaslicensing).
+For information about licensing, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
 ## What is a CASB?
 
 Moving to the cloud increases flexibility for employees and IT teams. However, it also introduces new challenges and complexities for keeping your organization secure. To get the full benefit of cloud apps and services, an IT team must find the right balance of supporting access while protecting critical data.
 
-This is where a Cloud Access Security Broker steps in to address the balance, adding safeguards to your organization's use of cloud services by enforcing your enterprise security policies. As the name suggests, CASBs act as a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using.
+This is where a Cloud Access Security Broker steps in to address the balance, adding safeguards to your organization's use of cloud services by enforcing your enterprise security policies. As the name suggests, CASBs act as a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and whatever device they're using.
 
 CASBs do this by discovering and providing visibility into Shadow IT and app use, monitoring user activities for anomalous behaviors, controlling access to your resources, providing the ability to classify and prevent sensitive information leak, protecting against malicious actors, and assessing the compliance of cloud services.
 
@@ -40,7 +40,7 @@ As an organization, you need to protect your users and confidential data from th
 
 ## The Defender for Cloud Apps framework
 
-- **Discover and control the use of Shadow IT**: Identify the cloud apps, IaaS, and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 25,000 SaaS apps against more than 80 risks. Start managing them to ensure security and compliance.
+- **Discover and control the use of Shadow IT**: Identify the cloud apps, IaaS, and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 31,000 SaaS apps against more than 80 risks. Start managing them to ensure security and compliance.
 
 - **Protect your sensitive information anywhere in the cloud**: Understand, classify, and protect the exposure of sensitive information at rest. Leverage out-of-the box policies and automated processes to apply controls in real time across all your cloud apps.
 
@@ -72,7 +72,7 @@ For more information about Cloud Discovery, see [Set up Cloud Discovery](set-up-
 
 ### Sanctioning and unsanctioning an app
 
-You can use Defender for Cloud Apps to sanction or unsanction apps in your organization by using the *cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 25,000 cloud apps that are ranked and scored based on industry standards. You can use the cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Defender for Cloud Apps lets you know how risky an app is. Scoring is based on over 80 risk factors that might affect your environment.
+You can use Defender for Cloud Apps to sanction or unsanction apps in your organization by using the *cloud app catalog*. The Microsoft team of analysts has an extensive and continuously growing catalog of over 31,000 cloud apps that are ranked and scored based on industry standards. You can use the cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Defender for Cloud Apps lets you know how risky an app is. Scoring is based on over 90 risk factors that might affect your environment.
 
 ### App connectors
 

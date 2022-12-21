@@ -8,9 +8,11 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
+
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Defender for Cloud Apps protects GCP, see [Protect GCP](protect-gcp.md).
 
-We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of a Google Workspace instance already connected to Defender for Cloud Apps, we recommend following the **For a GCP instance that is part of a connected Google Workspace organization** steps when you add the GCP connection details.
+We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process.
 
 ## Prerequisites
 
@@ -151,6 +153,11 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 1. Click **Test API** to make sure the connection succeeded.
 
     Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, click **Done**.
+    
+    > [!NOTE]
+    > Defender for Cloud Apps will create an aggregated export sink (organization level), a Pub/Sub topic and Pub/Sub subscription using the integration service        account in the integration project. 
+    > 
+    > Aggregated export sink is used to aggregate logs across the GCP organization and the Pub/Sub topic created is used as the destination. Defender for Cloud Apps subscribes to this topic through the Pub/Sub subscription created to retrieve the admin activity logs across the GCP organization. 
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 

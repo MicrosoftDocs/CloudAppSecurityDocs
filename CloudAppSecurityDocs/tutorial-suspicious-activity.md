@@ -19,7 +19,7 @@ Hence, to fully realize the benefits of these detections, first make sure you co
 - **[Activity log](activity-filters.md)**  
 Activities from your [API connected apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 - **[Discovery log](tutorial-shadow-it.md)**  
-Activities extracted from firewall and proxy traffic logs that are forwarded to Defender for Cloud Apps. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 80 risk factors.
+Activities extracted from firewall and proxy traffic logs that are forwarded to Defender for Cloud Apps. The logs are analyzed against the [cloud app catalog](risk-score.md), ranked, and scored based on more than 90 risk factors.
 - **[Proxy log](proxy-intro-aad.md)**  
 Activities from your [Conditional Access App Control apps](tutorial-proxy.md#phase-1-monitor-user-activities-for-anomalies).
 
@@ -133,6 +133,10 @@ Set the filters you require to detect the type of activity you want to alert on.
 To prevent alert fatigue, set the **daily alert limit**.
 
 ## Phase 5: Configure alerts
+
+> [!NOTE]
+> From December 15, 2022, the Alerts/SMS (text messages) will be deprecated. 
+> If you would like to receive text alerts, you should use Microsoft Power Automate for custom alert automation. For more information, see [Integrate with Microsoft Power Automate for custom alert automation](flow-integration.md).
 
 You can choose to receive alerts in the format and medium that most suits your needs. To receive immediate alerts at any time of the day, you may prefer to receive them via email or text message.
 

@@ -28,7 +28,7 @@ The [Defender for Cloud Apps connector](/connectors/cloudappsecurity/) in Power 
 
     ![Power Automate create new flow.](media/flow-create-new.png)
 
-1. Provide a name for the flow, and in **Choose your flow's trigger**, type **Cloud App Security** and select **When an alert is generated**.
+1. Provide a name for the flow, and in **Choose your flow's trigger**, type *Defender for Cloud Apps* and select **When an alert is generated**.
 
     ![Power Automate when an alert is generated.](media/flow-when-alert.png)
 
@@ -44,7 +44,7 @@ The [Defender for Cloud Apps connector](/connectors/cloudappsecurity/) in Power 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go to **Policies**. In the row of the policy whose alerts you want to forward to Power Automate, select the three dots and then select **Edit Policy**.
 1. Under **Alerts**, select **Send Alerts to Power Automate** and choose the name of the playbook you created earlier from the drop-down menu.
 
-    ![Enable Power Automate in Defender for Cloud Apps portal.](media/flow-mcas-config.png)
+    ![Enable Power Automate in Defender for Cloud Apps portal.](media/flow-alerts-config.png)
 
 1. Defender for Cloud Apps playbooks that you've authored or are granted access to can be seen by going to **Settings** -> **Security extensions**.
 
