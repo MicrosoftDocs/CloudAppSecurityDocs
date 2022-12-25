@@ -34,9 +34,9 @@ Before setting up automatic log file collection, verify your log matches the exp
 > If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
 > ```
 >   
-> `docker stop <collector_name`
+> docker stop <collector_name>
 > 
-> `docker rm <collector_name`
+> docker rm <collector_name>
 > 
 > ```
 > 
