@@ -119,6 +119,7 @@ Use a custom app policy when you need to do something not already done by one of
 |Priority account consent given|Yes or No|Apps that have been given consent by priority users |A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
 |Names of consenting users|Select users from list|Apps that have been given consent by specific users||
 |Roles of consenting users|Select roles from list|Apps that have been given consent by users with specific roles|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
+|Sensitivity labels accessed|Select one or more sensitivity labels from the list|Apps that accessed data with specific sensitivity labels in the last 30 days.|    
 |Services accessed (Graph only)|Exchange and/or OneDrive and/or SharePoint and/or Teams|Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API|Multiple selections allowed.|
 |Error rate (Graph only)|Error rate is greater than X% in the last seven days|Apps whose Graph API error rates in the last 7 days are greater than a specified percentage||
 
