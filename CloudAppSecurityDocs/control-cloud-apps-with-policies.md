@@ -64,7 +64,7 @@ Defender for Cloud Apps helps you mitigate different risks in the cloud. You can
 
 - **Threat detection:** Are there suspicious activities threatening your cloud environment?
 
-    Receive real-time notifications for any policy violation or activity threshold via text message or email. By applying machine learning algorithms, Defender for Cloud Apps enables you to detect behavior that could indicate that a user is misusing data.
+    Receive real-time notifications for any policy violation or activity threshold via email. By applying machine learning algorithms, Defender for Cloud Apps enables you to detect behavior that could indicate that a user is misusing data.
 
 ## How to control risk
 
@@ -137,12 +137,9 @@ To create a policy based on investigation results, do the following steps:
 
 For a list of available governance actions per app, see the [Governing connected apps](governance-actions.md).
 
-You can also set the policy to send you an alert by email or text message when matches are detected.
+You can also set the policy to send you an alert by email when matches are detected.
 
 To set your notification preferences, got to [Customize the portal](general-setup.md)
-
-> [!NOTE]
-> The maximum number of alerts that are sent via text message is 10 per phone number per day. The day is calculated according to the UTC timezone.
 
 ## Enable and disable policies
 

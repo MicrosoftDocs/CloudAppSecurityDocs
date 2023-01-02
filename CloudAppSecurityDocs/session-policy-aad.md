@@ -86,7 +86,7 @@ To create a new session policy, follow this procedure:
 
         * **Protect (Apply sensitivity label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Microsoft Purview Information Protection, you can set an **Action** to apply a sensitivity label set in Microsoft Purview Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
-1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select whether you want the alert as an email, a text message, or both.
+1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select if you want the alert as an email.
 
 ## <a name="monitor-session"></a>Monitor all activities
 

@@ -11,7 +11,7 @@ ms.topic: how-to
 This article explains how to work with alerts raised in the Defender for Cloud Apps portal.
 
 > [!NOTE]
-> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
+> Alerts are managed in their respective policies and can be configured to be sent as an email.
 
 ## Manage your alerts
 

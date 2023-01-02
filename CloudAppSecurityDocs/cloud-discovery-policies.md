@@ -34,7 +34,7 @@ Discovery policies enable you to set alerts that notify you when new apps are de
     - Number of users
     - Uploaded data
 
-1. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
+1. Set a **Daily alert limit** under **Alerts**. Select if the alert is sent as an email. Then provide email addresses as needed.
     - Selecting **Save alert settings as the default for your organization** enables future policies to use the setting.
     - If you have a default setting, you can select **Use your organization's default settings**.
 
@@ -75,7 +75,7 @@ Defender for Cloud Apps searches all the logs in your Cloud Discovery for anomal
 
 1. Select the dates during which the anomalous activity occurred to trigger the alert under **Raise alerts only for suspicious activities occurring after date.**
 
-1. Set a **Daily alert limit** under **Alerts**. Select whether the alert is sent as an email, a text message, or both. Then provide phone numbers and email addresses as needed.
+1. Set a **Daily alert limit** under **Alerts**. Select if the alert is sent as an email. Then provide email addresses as needed.
     - Selecting **Save alert settings as the default for your organization** enables future policies to use the setting.
     - If you have a default setting, you can select **Use your organization's default settings**.
 

@@ -135,10 +135,10 @@ To prevent alert fatigue, set the **daily alert limit**.
 ## Phase 5: Configure alerts
 
 > [!NOTE]
-> From December 15, 2022, the Alerts/SMS (text messages) will be deprecated. 
+> Since December 15, 2022, the Alerts/SMS (text messages) has been deprecated.
 > If you would like to receive text alerts, you should use Microsoft Power Automate for custom alert automation. For more information, see [Integrate with Microsoft Power Automate for custom alert automation](flow-integration.md).
 
-You can choose to receive alerts in the format and medium that most suits your needs. To receive immediate alerts at any time of the day, you may prefer to receive them via email or text message.
+You can choose to receive alerts in the format and medium that most suits your needs. To receive immediate alerts at any time of the day, you may prefer to receive them via email.
 
 You may also want the ability to analyze alerts in the context of other alerts triggered by other products in your organization to give you a holistic view of a potential threat. For example, you may want to correlate between cloud-based and on-premises events to see if there is any other mitigating evidence that may confirm an attack.
 
@@ -146,8 +146,8 @@ Additionally, you can also trigger custom alert automation using our integration
 
 Use the following guidelines to configure your alerts:
 
-1. **Email/SMS**  
-Choose your delivery preference for receiving alerts. You can receive alerts by email, text message, or both.
+1. **Email**  
+Choose this option to receive alerts by email.
 1. **SIEM**  
 There are several SIEM integration options including [Microsoft Sentinel](siem-sentinel.md), [Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft), and other [generic SIEMs](siem.md). Choose the integration that best meets your requirements.
 1. **Power Automate automation**  
