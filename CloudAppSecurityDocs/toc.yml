@@ -11,6 +11,8 @@ items:
     href: release-notes.md
   - name: Lifecycle management
     href: lifecycle-management.md
+  - name: Preview features
+    href: preview-features.md
   - name: Compare
     items:
     - name: Office 365 Cloud App Security
