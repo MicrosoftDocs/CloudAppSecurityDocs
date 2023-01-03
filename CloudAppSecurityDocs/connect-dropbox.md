@@ -14,27 +14,27 @@ Because Dropbox enables access to files from shared links without signing in, De
 
 ## How to connect Dropbox to Defender for Cloud Apps
 
-1. In the Defender for Cloud Apps console, click **Investigate** and then **Connected apps**.
+1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
 
-2. In the **App connectors** page, click the plus button followed by **Dropbox**.
+1. In the **App connectors** page, select the plus button followed by **Dropbox**.
 
     ![connect dropbox.](media/connect-dropbox.png "connect dropbox")
 
-3. In the pop-up, enter the admin account email address.
+1. In the pop-up, enter the admin account email address.
 
-4. Click **Generate link**.
+1. Select **Generate link**.
 
-5. Click **Follow this link**.
+1. Select **Follow this link**.
 
     The Dropbox sign in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Dropbox instance.
 
-6. Dropbox asks you if you want to allow Defender for Cloud Apps access to your team information, activity log, and perform activities as a team member. To proceed, click **Allow**.
+1. Dropbox asks you if you want to allow Defender for Cloud Apps access to your team information, activity log, and perform activities as a team member. To proceed, select **Allow**.
 
-7. Back in the Defender for Cloud Apps console, you should receive a message that Dropbox was successfully connected.
+1. Back in the Defender for Cloud Apps console, you should receive a message that Dropbox was successfully connected.
 
-8. Make sure the connection succeeded by clicking **Test API**.
+1. Make sure the connection succeeded by selecting **Test API**.
 
-    Testing may take a couple of minutes. After you receive a success notice, click **Close**.
+    Testing may take a couple of minutes. After you receive a success notice, select **Close**.
 
 After connecting Dropbox, you'll receive events for 60 days prior to connection.
 
