@@ -157,6 +157,7 @@ From there you can define the filters as is normally done with the **Activity Lo
 1. In addition, the following filers will be supported:
     - Activity ID
     - Activity type
+    - Action type
     - Application
     - IP address
     - Location
@@ -168,6 +169,7 @@ From there you can define the filters as is normally done with the **Activity Lo
 
 > [!div class="nextstepaction"]
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+
 
 
 
