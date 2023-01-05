@@ -39,11 +39,11 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
 
     ![connect O365 menu option.](media/connect-o365.png)
 
-1. In the Office 365 pop-up, click **Connect Office 365**.
+1. In the Office 365 pop-up, select **Connect Office 365**.
 
     ![connect O365 pop-up.](media/office-connect.png)
 
-1. In the Office 365 components page, select the options you require, and then click **Connect**.
+1. In the Office 365 components page, select the options you require, and then select **Connect**.
 
     > [!NOTE]
     >
@@ -52,7 +52,7 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
 
     ![connect O365 components.](media/connect-o365-components.png)
 
-1. After Office 365 is displayed as successfully connected, click **Close**.
+1. After Office 365 is displayed as successfully connected, select **Close**.
 
 > [!NOTE]
 > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365 because Defender for Cloud Apps turns on any APIs that had been off by default.
