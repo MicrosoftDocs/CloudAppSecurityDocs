@@ -20,7 +20,7 @@ The following governance actions can be taken for connected apps either on a spe
 
 - **Notifications:**
 
-  - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level.
+  - **Alerts** – Alerts can be triggered in the system and propagated via email, based on severity level.
 
   - **User email notification** – Email messages can be customized and will be sent to all violating file owners.
 
@@ -65,7 +65,7 @@ The following governance actions can be taken for connected apps either on a spe
 
 - **Notifications**
 
-  - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level.
+  - **Alerts** – Alerts can be triggered in the system and propagated via email, based on severity level.
 
   - **User email notification** – Email messages can be customized and will be sent to all violating file owners.
 

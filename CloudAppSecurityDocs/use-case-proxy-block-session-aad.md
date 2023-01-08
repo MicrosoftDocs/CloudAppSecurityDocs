@@ -91,7 +91,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. Under **Actions**, select **block**. Customize the blocking message that your users get when they're unable to download files.
 
-1. Set the alerts you want to receive when the policy is matched. You can set a limit so that you don't receive too many alerts. Select whether to get the alerts as an email message, text message, or both.
+1. Set the alerts you want to receive when the policy is matched. You can set a limit so that you don't receive too many alerts. Select if to get the alerts as an email message.
 
 1. Select **Create**.
 
