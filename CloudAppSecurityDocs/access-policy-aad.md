@@ -49,7 +49,7 @@ To create a new access policy, follow this procedure:
 
     - **Block**: Set this action to explicitly block access according to the policy filters you set.
 
-1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email, a text message or both.
+1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit and select whether you want the alert as an email.
 
 ## Related videos
 
