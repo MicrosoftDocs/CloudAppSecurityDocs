@@ -12,6 +12,10 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
 ## How to connect Salesforce to Defender for Cloud Apps
 
+> [!NOTE]
+> Salesforce Shield should be available for your Salesforce instance as a pre-requisite for this integration.
+> 
+
 1. It's recommended to have a dedicated service admin account for Defender for Cloud Apps.
 
 1. Validate that REST API is enabled in Salesforce.
