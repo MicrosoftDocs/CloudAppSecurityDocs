@@ -18,17 +18,17 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     Make sure your Okta account is verified.
 
-1. In the Okta console, click **Admin**.
+1. In the Okta console, select **Admin**.
 
-    - Click on **Security** and then **API**.
+    - Select **Security** and then **API**.
 
          ![Okta api.](media/okta-api.png "Okta api")
 
-    - Click **Create Token**.
+    - Select **Create Token**.
 
          ![Okta create token.](media/okta-createtoken.png "Okta create token")
 
-    - In the **Create Token** pop-up, name your Defender for Cloud Apps token, and click **Create Token**.
+    - In the **Create Token** pop-up, name your Defender for Cloud Apps token, and select **Create Token**.
 
          ![Okta token pop-up.](media/okta-token-pop-up.png)
 
@@ -36,19 +36,19 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
          ![Okta token value.](media/okta-token-value.png "Okta token value")
 
-1. In the Defender for Cloud Apps console, click **Investigate** and then **Connected apps**.
+1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
 
-1. In the **App connectors page**, click the plus button and then **Okta**.
+1. In the **App connectors page**, select the plus button and then **Okta**.
 
     ![connect Okta.](media/connect-okta.png "connect Okta")
 
 1. In the pop-up, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.
 
-1. Click **Connect** to create the token for Okta in Defender for Cloud Apps.
+1. Select **Connect** to create the token for Okta in Defender for Cloud Apps.
 
-1. Make sure the connection succeeded by clicking **Test API**.
+1. Make sure the connection succeeded by selecting **Test API**.
 
-    Testing may take a couple of minutes. After receiving a success notice, click **Close**.
+    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
 
 After connecting Okta, you'll receive events for 60 days prior to connection.
 
