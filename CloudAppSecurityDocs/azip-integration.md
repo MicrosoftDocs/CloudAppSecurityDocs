@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Purview Information Protection with Defender for Cloud Apps
 description: This article provides information about how to use sensitivity labels from Microsoft Purview Information Protection in Defender for Cloud Apps for added control of your organization's cloud app use.
-ms.date: 11/17/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Microsoft Purview Information Protection integration

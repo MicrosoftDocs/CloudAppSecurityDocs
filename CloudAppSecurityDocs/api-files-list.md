@@ -1,7 +1,7 @@
 ---
 title: List - Files API
 description: This article describes the list request in the Defender for Cloud Apps Files API.
-ms.date: 11/09/2021
+ms.date: 05/24/2022
 ms.topic: reference
 ---
 # List - Files API

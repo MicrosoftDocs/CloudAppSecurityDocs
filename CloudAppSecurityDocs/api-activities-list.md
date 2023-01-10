@@ -1,7 +1,7 @@
 ---
 title: List - Activities API
 description: This article describes the list request in the Defender for Cloud Apps Activities API.
-ms.date: 11/09/2021
+ms.date: 02/02/2022
 ms.topic: reference
 ---
 # List - Activities API

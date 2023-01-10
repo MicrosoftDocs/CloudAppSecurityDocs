@@ -1,7 +1,7 @@
 ---
 title: How Defender for Cloud Apps helps protect your DocuSign environment
 description: This article provides information about the benefits of connecting your DocuSign app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 02/14/2022
+ms.date: 06/14/2022
 ms.topic: article
 ---
 # How Defender for Cloud Apps helps protect your DocuSign environment

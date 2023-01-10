@@ -1,6 +1,6 @@
 ---
 title: Get started with visibility and insights
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 description: Get started with visibility and insights.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Investigate threat detection alerts
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: conceptual
 description: Learn how to investigate threat detection alerts from app governance.
 ---
