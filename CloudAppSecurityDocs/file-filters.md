@@ -1,7 +1,7 @@
 ---
 title: Understanding file data and filters available in Defender for Cloud Apps
 description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
-ms.date: 11/17/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Files

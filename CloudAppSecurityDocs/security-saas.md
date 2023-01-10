@@ -1,7 +1,7 @@
 ---
 title: Get security configuration recommendations for your SaaS applications
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps for your organization's SaaS applications.
-ms.date: 06/15/2022
+ms.date: 08/08/2022
 ms.topic: how-to
 ---
 # Security posture management for SaaS apps

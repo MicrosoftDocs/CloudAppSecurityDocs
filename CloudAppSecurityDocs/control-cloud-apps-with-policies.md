@@ -1,7 +1,7 @@
 ---
 title: Control cloud app usage by creating policies 
 description: This article provides information on how policies are used and set up to control cloud app use.
-ms.date: 11/09/2021
+ms.date: 01/09/2023
 ms.topic: how-to
 ---
 # Control cloud apps with policies

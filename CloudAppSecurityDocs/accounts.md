@@ -1,7 +1,7 @@
 ---
 title: Visibility into cloud app accounts 
 description: This article provides information about reviewing accounts from your connected apps.
-ms.date: 11/09/2021
+ms.date: 02/02/2022
 ms.topic: how-to
 ---
 # Accounts

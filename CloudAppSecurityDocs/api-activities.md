@@ -1,7 +1,7 @@
 ---
 title: Defender for Cloud Apps Activities API
 description: This article provides information about using the Activities API.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: reference
 ---
 

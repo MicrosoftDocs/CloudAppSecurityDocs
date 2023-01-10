@@ -1,7 +1,7 @@
 ---
 title: Threat protection policies 
 description: This topic outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: conceptual
 ---
 # Threat protection policies

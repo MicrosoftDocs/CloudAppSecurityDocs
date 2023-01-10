@@ -1,7 +1,7 @@
 ---
 title: Defender for Cloud Apps Files API
 description: This article provides information about using the Files API.
-ms.date: 11/09/2021
+ms.date: 02/02/2022
 ms.topic: reference
 ---
 # Files API

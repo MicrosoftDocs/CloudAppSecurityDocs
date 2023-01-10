@@ -1,7 +1,7 @@
 ---
 title: Protect any apps in use in your organization in real time tutorial
 description: This tutorial provides instructions for using access and session controls to monitor and control access to apps and their data.
-ms.date: 11/09/2021
+ms.date: 06/14/2022
 ms.topic: tutorial
 ---
 # Tutorial: Protect any apps in use in your organization in real time

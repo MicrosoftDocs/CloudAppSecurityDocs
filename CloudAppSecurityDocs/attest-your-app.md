@@ -1,7 +1,7 @@
 ---
 title: Attest your apps 
 description: This article provides instructions for attesting your apps in Defender for Cloud Apps.
-ms.date: 11/09/2021
+ms.date: 02/02/2022
 ms.topic: conceptual
 ---
 # Attest your app

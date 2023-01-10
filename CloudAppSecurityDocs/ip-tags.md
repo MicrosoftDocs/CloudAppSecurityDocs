@@ -1,7 +1,7 @@
 ---
 title: Set IP ranges and tags 
 description: This article provides instructions for working with IP tags and IP categories.
-ms.date: 12/07/2021
+ms.date: 02/02/2022
 ms.topic: how-to
 ---
 # Working with IP ranges and tags

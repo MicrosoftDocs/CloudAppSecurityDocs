@@ -1,7 +1,7 @@
 ---
 title: Working with the risk score 
 description: This article provides instructions for how to use and customize the Defender for Cloud Apps app risk score.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: conceptual
 ---
 # Working with App risk scores

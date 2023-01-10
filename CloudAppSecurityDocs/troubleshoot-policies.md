@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Defender for Cloud Apps policies
 description: This article describes the process for troubleshooting policy creation in Defender for Cloud Apps.
-ms.date: 11/09/2021
+ms.date: 02/02/2022
 ms.topic: conceptual
 ---
 # Troubleshooting Microsoft Defender for Cloud Apps policies

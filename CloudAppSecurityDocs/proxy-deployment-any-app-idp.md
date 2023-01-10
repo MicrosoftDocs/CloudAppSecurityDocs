@@ -1,7 +1,7 @@
 ---
 title: Deploy Conditional Access App Control for custom apps with non-Microsoft identity providers
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for any apps using non-Microsoft identity providers
-ms.date: 06/14/2021
+ms.date: 05/24/2022
 ms.topic: how-to
 ---
 # Deploy Conditional Access App Control for custom apps with non-Microsoft IdP

@@ -1,7 +1,7 @@
 ---
 title: Manage alerts raised in Defender for Cloud Apps
 description: This article explains how to work with alerts raised in the Defender for Cloud Apps portal.
-ms.date: 11/09/2021
+ms.date: 01/09/2023
 ms.topic: how-to
 ---
 # Manage alerts
