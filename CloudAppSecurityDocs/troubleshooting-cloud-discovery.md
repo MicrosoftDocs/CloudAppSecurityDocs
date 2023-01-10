@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Cloud Discovery errors 
 description: This article provides a list of Cloud Discovery frequent errors and resolution recommendations for each.
-ms.date: 11/09/2021
+ms.date: 02/22/2022
 ms.topic: conceptual
 ---
 # Troubleshooting Cloud Discovery

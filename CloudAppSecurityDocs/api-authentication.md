@@ -1,7 +1,7 @@
 ---
 title: Managing API tokens
 description: This article provides information about generating and managing API tokens for Defender for Cloud Apps.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: reference
 ---
 # Managing API tokens
@@ -37,7 +37,7 @@ Steps that need to be taken to access Defender for Cloud Apps API with applicati
 1. Get the token using the application with its key.
 1. Use the token to access the Defender for Cloud Apps API.
 
-For more information, see [Get access with application context](api-authentication-application.md).
+For more detailed steps on how to perform these steps, see [Get access with application context](api-authentication-application.md).
 
 ## User context
 
@@ -50,7 +50,7 @@ Steps to take to access the Defender for Cloud Apps API with application context
 1. Get the token using the application with user credentials.
 1. Use the token to access the Defender for Cloud Apps API.
 
-For more information, see [Get access with user context](api-authentication-user.md).
+For more detailed steps on how to perform these step, see [Get access with user context](api-authentication-user.md).
 
 ## Related articles
 

@@ -1,9 +1,10 @@
 ---
 title: Defender for Cloud Apps Activities API
 description: This article provides information about using the Activities API.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: reference
 ---
+
 # Activities API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -27,6 +28,7 @@ The following table describes the supported filters:
 | service | integer | eq, neq | Filter activities related to the specified service appID, for example: 11770 |
 | instance | integer | eq, neq | Filter activities from specified instances |
 | user.orgUnit | string | eq, neq, isset, isnotset | Filter activities by the organization unit of the performing user |
+|actionType|string|Contains, eq, neq, isset, isnotset|Filter activities by more specific action type|
 | activity.eventType | string | eq, neq | Filter activities by event type |
 | activity.id | string | eq | Find an activity by ID |
 | activity.impersonated | boolean | eq | If set to "true", returns only impersonated events, if set to "false", returns non-impersonated events |
@@ -58,3 +60,4 @@ The following table describes the supported filters:
 | user.domain | string | eq, neq, isset, isnotset | Filter activities by the performing user domain |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

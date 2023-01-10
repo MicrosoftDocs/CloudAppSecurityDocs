@@ -1,7 +1,7 @@
 ---
 title: Create session policies in Defender for Cloud Apps
 description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
-ms.date: 05/24/2022
+ms.date: 01/09/2023
 ms.topic: how-to
 ---
 # Session policies
@@ -23,7 +23,8 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 ## Prerequisites to using session policies
 
-* Azure AD Premium P1 license, or the license required by your identity provider (IdP) solution
+* Defender for Cloud Apps license (stand-alone or part of another license)
+* A license for Azure AD Premium P1 (as a stand-alone license or as an E5 license), or the license required by your identity provider (IdP) solution
 * The relevant apps should be [deployed with Conditional Access App Control](proxy-deployment-aad.md)
 * Make sure you've configured your IdP solution to work with Defender for Cloud Apps, as follows:
   * For [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview), see [Configure integration with Azure AD](proxy-deployment-aad.md#configure-integration-with-azure-ad)
@@ -85,7 +86,7 @@ To create a new session policy, follow this procedure:
 
         * **Protect (Apply sensitivity label to download and monitor all activities)**: This option is only available if you selected **Control file download (with inspection)** under **Session policy**. If your organization uses Microsoft Purview Information Protection, you can set an **Action** to apply a sensitivity label set in Microsoft Purview Information Protection to the file. For more information, see [How protect download works](#protect-download).
 
-1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select whether you want the alert as an email, a text message, or both.
+1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit. Select if you want the alert as an email.
 
 ## <a name="monitor-session"></a>Monitor all activities
 

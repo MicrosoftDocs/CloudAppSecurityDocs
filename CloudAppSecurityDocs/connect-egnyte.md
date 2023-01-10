@@ -1,7 +1,7 @@
 ---
 title: Connect Egnyte to Microsoft Defender for Cloud Apps (Preview)
 description: This article describes how to connect Microsoft Defender for Cloud Apps to your existing Egnyte via the App Connector APIs. 
-ms.date: 01/13/2022
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Connect Egnyte to Microsoft Defender for Cloud Apps
@@ -34,6 +34,11 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
 1. Make sure the connection succeeded by selecting **Test now**. The test might take a few minutes. After you see a success notice, select **Close**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
+
+>[!NOTE]
+>Microsoft recommends using a short lived access token. Egnyte doesn't currently support short lived tokens. We recommend our customers to refresh the access token every 6 months as a security best practice. 
+>To refresh the access token, revoke the old token by following [Revoking an oAuth token](https://developers.egnyte.com/docs/read/Public_API_Authentication#Revoking-an-OAuth-Token). 
+>Once the old token is revoked, reconnect the Egnyte connector by following the process documented above. 
 
 ## Next steps
 

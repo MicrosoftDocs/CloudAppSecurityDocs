@@ -1,7 +1,7 @@
 ---
 title: Integrate Defender for Cloud Apps with iboss
 description: This article describes how to integrate Microsoft Defender for Cloud Apps with iboss secure cloud gateway for seamless Cloud Discovery and automated block of unsanctioned apps.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with iboss
@@ -36,7 +36,7 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 
-1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by iboss once every ten minutes, and then automatically blocked by iboss. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by iboss once every ten minutes, and then automatically blocked by iboss. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
 1. To configure iboss to send traffic logs to Microsoft Defender for Cloud Apps, contact iboss support.
 

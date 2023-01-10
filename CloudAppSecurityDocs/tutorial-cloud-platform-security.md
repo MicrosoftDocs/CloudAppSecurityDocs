@@ -1,12 +1,14 @@
 ---
 title: Manage cloud platform security used by your organization tutorial
 description: This tutorial describes how to use Microsoft Defender for Cloud Apps to secure your Azure, AWS, and GCP cloud platforms.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: tutorial
 ---
 # Tutorial: Manage cloud platform security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
 
 Remote work often leads to extensive use of cloud apps and cloud platforms for common business tasks and surfaces the need to secure cloud environments and the adoption of cloud security products. According to the [shared responsibility model](/azure/security/fundamentals/shared-responsibility), an organization is responsible for managing and securing its cloud platform: Identity Access Management (IAM), Virtual Machines (VM) and their compute resources, data and storage, network resources, and more.
 

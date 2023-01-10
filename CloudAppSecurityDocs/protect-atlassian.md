@@ -1,7 +1,7 @@
 ---
 title: How Defender for Cloud Apps protects your Atlassian environment (Preview)
 description: This article provides information about the benefits of connecting your Atlassian environment to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 11/23/2021
+ms.date: 02/02/2022
 ms.topic: article
 ---
 # How Defender for Cloud Apps helps protect your Atlassian environment (Preview)

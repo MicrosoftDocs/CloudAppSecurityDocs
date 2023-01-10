@@ -1,9 +1,10 @@
 ---
 title: Troubleshooting access and session controls
 description: This article provides admins with guidance on how to investigate and resolve common access and session controls.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: conceptual
 ---
+
 # Troubleshooting access and session controls
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -50,18 +51,18 @@ When you are first setting up Defender for Cloud Apps access and session control
     1. Verify that the login is working as expected
 1. Enable TLS 1.2 in your browser's internet options.
 
-    > [!NOTE]
-    >
-    > - Defender for Cloud Apps leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+ will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
-    > - While session controls are built to work with any browser on any major platform on any operating system, we support Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
-
-    | Browser | Steps |
-    |---|---|
-    | Microsoft Internet Explorer | 1. Open Internet Explorer<br />2. Select **Tools** > **Internet Options** > **Advance** tab<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
-    | Microsoft Edge / Edge Chromium | 1. Open search from the taskbar and search for "Internet Options"<br />2. Select **Internet Options**<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
-    | Google Chrome | 1. Open Google Chrome<br />2. At the top-right, click **More** (3 vertical dots) > **Settings**<br />3. At the bottom, click **Advanced**<br />4. Under **System**, click **Open proxy settings**<br />5. On the **Advanced** tab, under **Security**, select **TLS 1.2**<br />6. Click **OK**<br />7. Restart your browser and verify that you are able to access the app |
-    | Mozilla Firefox | 1. Open Mozilla Firefox<br />2. In the address bar and search for "about:config"<br />3. In the Search box, search for "TLS"<br />4. Double-click the entry for **security.tls.version.min**<br />5. Set the integer value to 3 to force TLS 1.2 as the minimum required version<br />6. Click **Save** (check mark to the right of the value box)<br />7. Restart your browser and verify that you are able to access the app |
-    | Safari | If you are using Safari version 7 or greater, TLS 1.2 is automatically enabled |
+1. > [!NOTE]
+   > - Defender for Cloud Apps leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+ will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
+   > 
+   > - While session controls are built to work with any browser on any major platform on any operating system, we support Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
+   
+ | Browser | Steps |
+ |---|---|
+ | Microsoft Internet Explorer | 1. Open Internet Explorer<br />2. Select **Tools** > **Internet Options** > **Advance** tab<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
+ | Microsoft Edge / Edge Chromium | 1. Open search from the taskbar and search for "Internet Options"<br />2. Select **Internet Options**<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
+ | Google Chrome | 1. Open Google Chrome<br />2. At the top-right, click **More** (3 vertical dots) > **Settings**<br />3. At the bottom, click **Advanced**<br />4. Under **System**, click **Open proxy settings**<br />5. On the **Advanced** tab, under **Security**, select **TLS 1.2**<br />6. Click **OK**<br />7. Restart your browser and verify that you are able to access the app |
+ | Mozilla Firefox | 1. Open Mozilla Firefox<br />2. In the address bar and search for "about:config"<br />3. In the Search box, search for "TLS"<br />4. Double-click the entry for **security.tls.version.min**<br />5. Set the integer value to 3 to force TLS 1.2 as the minimum required version<br />6. Click **Save** (check mark to the right of the value box)<br />7. Restart your browser and verify that you are able to access the app |
+ | Safari | If you are using Safari version 7 or greater, TLS 1.2 is automatically enabled |
 
 #### Slow login
 
@@ -74,9 +75,9 @@ Proxy chaining and nonce-handling are some of the common issues that could resul
     1. Remove additional forward proxies where possible
 1. Turn off nonce-handling for your apps that do not use nonce.
 
-    > [!NOTE]
-    > Some apps use a nonce hash during authentication to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If the app you are working with does not use nonce, you can disable nonce-handling for this app in Defender for Cloud Apps.
-
+1. > [!NOTE]
+   > Some apps use a nonce hash during authentication to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If the app you are working with does not use nonce, you can disable nonce-handling for this app in Defender for Cloud Apps.
+   
     1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
     1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit** app.
     1. Click **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
@@ -134,8 +135,9 @@ Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD joined 
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
 1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are set up.
 
-    > [!NOTE]
-    > These are automatically synced from Azure AD and Intune respectively.
+1. > [!NOTE]
+   > These are automatically synced from Azure AD and Intune respectively.
+   
 1. Create an access or session policy with the **Device Tag** filter equal to **Hybrid Azure AD joined**, **Intune compliant**, or both.
 1. In a browser, log in to a device that is Hybrid Azure AD joined or Intune compliant based on your policy filter.
 1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Hybrid Azure AD joined**, **Intune compliant**, or both based on your policy filters.
@@ -259,7 +261,7 @@ Native apps can be detected heuristically and you can use access policies to mon
 
 #### App is not recognized page appears
 
-Defender for Cloud Apps can recognize over 25,000 apps through the Cloud App Catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Azure AD SSO that is NOT one of the 25,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on the Conditional Access App Control.
+Defender for Cloud Apps can recognize over 31,000 apps through the Cloud App Catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Azure AD SSO that is NOT one of the 31,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on the Conditional Access App Control.
 
 **Recommended steps**
 
@@ -294,7 +296,7 @@ While troubleshooting onboarding apps, there are some additional things to consi
 
 - **Apps in Conditional Access App Control do not align with Azure AD apps**
 
-    The app names in Azure AD and Defender for Cloud Apps might differ based on the ways the products identify apps. Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md#the-cloud-app-catalog), where we have over 25,000 apps. Within each app, there you can view or add to the subset of domains. In contrast, Azure AD identifies apps using service principals. For more information, see [app and service principal objects in Azure AD](/azure/active-directory/develop/app-objects-and-service-principals).
+    The app names in Azure AD and Defender for Cloud Apps might differ based on the ways the products identify apps. Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md#the-cloud-app-catalog), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. In contrast, Azure AD identifies apps using service principals. For more information, see [app and service principal objects in Azure AD](/azure/active-directory/develop/app-objects-and-service-principals).
 
     In practice, it means that selecting **SharePoint Online** in Azure AD is equivalent to selecting apps, such as Word Online and Teams, in Defender for Cloud Apps because the apps use the `sharepoint.com` domain.
 
@@ -355,11 +357,11 @@ In session policies, when using the **Control file download (with inspection)** 
 
 **Recommended steps**
 
-1. Verify that the **Session control type** is set to **Control file download (with inspection)**.
+1. 1. Verify that the **Session control type** is set to **Control file download (with inspection)**.
 
-    > [!NOTE]
-    > The **Data Classification Service** inspection method is only available for the **Control file download (with inspection)** option.
-
+   > [!NOTE]
+   > The **Data Classification Service** inspection method is only available for the **Control file download (with inspection)** option.
+   
 1. Determine whether the **Data Classification Service** feature is available in your [region](dcs-inspection.md).
     1. If the feature is not available in your region, use the **Built-in DLP** inspection method.
     1. If the feature is available in your region but you still can't see the **Data Classification Service** inspection method, open a [support ticket](support-and-ts.md).
@@ -412,9 +414,7 @@ When those users next start a session of an application, the Admin View toolbar 
 If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It will appear for users who have the [Admin View toolbar](#admin-view-toolbar) enabled.
 
 Once you select **Bypass session**, the application will run without the Conditional Access proxy.
-
-![Bypass session.](media/bypass-session.png)
-
+![Bypass session.](media/troubleshooting-proxy/proxy-admin-toolbar-bypass.png)
 You can confirm the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
 
 In the next session of the application, the Conditional Access proxy will be used.
@@ -428,10 +428,9 @@ You can help the root cause analysis of problems by providing session recordings
 
 To record a session, follow these steps:
 
-1. From the Admin View toolbar, select **Record session**.
+1. 1. From the Admin View toolbar, select **Record session**.
 
-    ![Select Record session.](media/record-session.png)
-
+   ![Select Record session.](media/troubleshooting-proxy/proxy-admin-toolbar-record.png)
 1. After selecting **Record session**, accept the terms by selecting **Continue** in the next window:
 
     ![Select continue to accept.](media/accept-continue.png)
@@ -443,11 +442,11 @@ To record a session, follow these steps:
 1. Sign in to the application to begin the scenario simulation.
 1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar.
 
-    ![Select Stop recording.](media/stop-recording.png)
+1.  ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
 
-1. After you've finish recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
+1. After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
-    ![List of session recordings.](media/session-recordings.png)
+   ![List of session recordings.](media/troubleshooting-proxy/recording-list.png)
 
 1. Each recorded session can be downloaded or deleted.
 
@@ -628,3 +627,5 @@ While troubleshooting apps, there are some additional things to consider.
     A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If you are confident the app does not use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
 
     If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
+
+

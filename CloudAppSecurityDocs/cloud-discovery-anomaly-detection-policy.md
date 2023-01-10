@@ -1,7 +1,7 @@
 ---
 title: Create Cloud Discovery anomaly detection policy in Defender for Cloud Apps
 description: This article provides information about how to work with Cloud Discovery anomaly detection policies.
-ms.date: 11/09/2021
+ms.date: 01/09/2023
 ms.topic: how-to
 ---
 # Cloud Discovery anomaly detection policy
@@ -65,11 +65,10 @@ For each policy, set the following parameters:
     - Select **Create an alert for each matching event with the policy's severity** to set additional parameters for the alert:
 
         - **Send alert as email** - If you check this box, enter any email addresses that should receive the alert. A maximum of 500 email messages will be sent per email address, per day (resetting at midnight in the UTC time zone.)
-        - **Send alert as text message** - If you check this box, enter any phone numbers that should receive the alert by text message. A maximum of 10 text messages will be sent per phone number, per day (resetting at midnight in the UTC time zone.)
         - **Daily alert limit** - You can choose to restrict the number of alerts raised on a single day.
         - **Send alerts to Power Automate** - If you check this box, you can choose a playbook to run actions when an alert is raised.
 
-    - If you select **Save as default settings**, your choices for **Daily alert limit**, email, and text message settings will become your organization's default settings. To fill in these default settings for a new policy, select **Restore default settings**.
+    - If you select **Save as default settings**, your choices for **Daily alert limit** and email settings will become your organization's default settings. To fill in these default settings for a new policy, select **Restore default settings**.
 
         ![Select alert settings.](media/anomaly-alerts.png)
 

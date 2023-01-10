@@ -1,6 +1,6 @@
 ---
 title: Predefined app policies
-ms.date: 02/27/2022
+ms.date: 12/21/2022
 ms.topic: how-to
 description: Get started learning about predefined app policies.
 ---

@@ -1,12 +1,14 @@
 ---
 title: Get security configuration recommendations for your public cloud platforms
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps for your organization's public cloud platforms.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Security configuration overview
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
 
 Microsoft Defender for Cloud Apps provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP) and other SaaS applications. Recommendations cover all Azure subscriptions, AWS accounts including member accounts, and all GCP projects that are connected to your organization. This multi-cloud view of all cloud platform security configuration recommendations enables security admins to investigate all security configuration gaps in Defender for Cloud Apps.
 

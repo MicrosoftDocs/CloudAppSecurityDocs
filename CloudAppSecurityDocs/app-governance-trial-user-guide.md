@@ -1,6 +1,6 @@
 ---
 title: App governance trial user guide
-ms.date: 08/25/2022
+ms.date: 12/21/2022
 ms.topic: conceptual
 description: Step-by-step guide to help you quickly get started with the app governance add-on trial
 ---
@@ -62,6 +62,9 @@ App governance add-on offers an in-depth Microsoft 365 platform-level view & con
 ## Get started with the app governance add-on trial
 
 If you haven’t already, sign up for the free [app governance add-on trial](https://signup.microsoft.com/Signup?OfferId=a52e9277-0d85-4480-8cae-a84bc2ab32ae).  After you've launched the trial, you'll need to wait up to 24 hours to see and use the product.
+
+>[!NOTE]
+>To use full functionality for app governance alerts you must have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
 
 Once in the trial, try these recommended actions:
 

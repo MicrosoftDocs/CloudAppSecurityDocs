@@ -1,6 +1,6 @@
 ---
 title: Get Started with app governance
-ms.date: 03/16/2022
+ms.date: 12/21/2022
 ms.topic: how-to
 description: Get started with app governance capabilities to govern your apps.
 ---
@@ -66,4 +66,4 @@ For more information about each role, see [Administrator role permissions](/azur
 
 
 > [!NOTE]
-> App governance alerts will not flow to Microsoft 365 Defender until you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
+> App governance alerts will not flow to Microsoft 365 Defender or show up in app governance until you have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.

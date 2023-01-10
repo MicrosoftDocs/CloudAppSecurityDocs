@@ -1,7 +1,7 @@
 ---
 title: Set up your organization's settings in Defender for Cloud Apps
 description: This article explains how to provide information about your organization in Defender for Cloud Apps.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Basic setup for Defender for Cloud Apps
@@ -49,9 +49,9 @@ For US Government GCC High customers, it's also necessary to add the following I
 1. If at any point you want to back up your portal settings, this screen enables you to do that. Select **Export portal settings** to create a json file of all your portal settings, including policy rules, user groups, and IP address ranges.
 
 > [!NOTE]
-> If you use ExpressRoute, Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps and traffic sent to Defender for Cloud Apps, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security. There are no configuration steps required from the customer side.
+> If you use ExpressRoute, Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps and traffic sent to Defender for Cloud Apps, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security.
 >
-> For more information about  Public Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
+> For more information about Microsoft Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 
 ## Next steps
 

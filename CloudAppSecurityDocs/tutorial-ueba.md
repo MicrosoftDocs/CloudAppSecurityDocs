@@ -1,7 +1,7 @@
 ---
 title: Investigate risky users tutorial
 description: This tutorial describes the process to investigate risky users in Microsoft Defender for Cloud Apps, across hybrid environments, by integrating with Microsoft Defender for Identity.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: tutorial
 ---
 # Tutorial: Investigate risky users

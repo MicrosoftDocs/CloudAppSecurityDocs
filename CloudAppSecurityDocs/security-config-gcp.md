@@ -1,12 +1,14 @@
 ---
 title: Get security configuration recommendations for GCP
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps by integrating with Google Cloud Platform.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Security configuration for Google Cloud Platform
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
 
 Microsoft Defender for Cloud Apps provides you with a security configuration assessment of your Google Cloud Platform (GCP) environment. This assessment provides fundamental security recommendations based on the [Center for Internet Security (CIS) benchmark for GCP](https://www.cisecurity.org/benchmark/google_cloud_computing_platform/), version 1.1.0.
 

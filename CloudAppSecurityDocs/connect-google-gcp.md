@@ -1,12 +1,14 @@
 ---
 title: Connect Google Cloud Platform to Defender for Cloud Apps
 description: This article provides information about how to connect your Google Cloud Platform to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 11/09/2021
+ms.date: 01/09/2023
 ms.topic: how-to
 ---
 # Connect Google Cloud Platform to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use. For information about how Defender for Cloud Apps protects GCP, see [Protect GCP](protect-gcp.md).
 
@@ -53,8 +55,8 @@ Follow these steps to connect GCP Security auditing to Defender for Cloud Apps.
 Create a dedicated project in GCP under your organization to enable integration isolation and stability
 
 1. Sign in to your GCP portal using your integrating GCP user account.
-1. Click **Create Project** to start a new.
-1. In the **New project** screen, name your project and click **Create**.
+1. Select **Create Project** to start a new project.
+1. In the **New project** screen, name your project and select **Create**.
 
     ![Screenshot showing GCP create project dialog.](media/connect-gcp-create-project.png)
 
@@ -62,18 +64,18 @@ Create a dedicated project in GCP under your organization to enable integration 
 
 1. Switch to the dedicated project.
 1. Go to the **Library** tab.
-1. Search for and select **Cloud Logging API**, and then on the API page, click **ENABLE**.
-1. Search for and select **Cloud Pub/Sub API**, and then on the API page, click **ENABLE**.
+1. Search for and select **Cloud Logging API**, and then on the API page, select **ENABLE**.
+1. Search for and select **Cloud Pub/Sub API**, and then on the API page, select **ENABLE**.
 
     > [!NOTE]
     > Make sure that you do not select **Pub/Sub Lite API**.
 
 #### Create a dedicated service account for the security auditing integration
 
-1. Under **IAM & admin**, click **Service accounts**.
-1. Click **CREATE SERVICE ACCOUNT** to create a dedicated service account.
-1. Enter an account name, and then click **Create**.
-1. Specify the **Role** as **Pub/Sub Admin** and then click **Save**.
+1. Under **IAM & admin**, select **Service accounts**.
+1. Select **CREATE SERVICE ACCOUNT** to create a dedicated service account.
+1. Enter an account name, and then select **Create**.
+1. Specify the **Role** as **Pub/Sub Admin** and then select **Save**.
 
     ![Screenshot showing GCP add IAM role.](media/connect-gcp-iam-role.PNG)
 
@@ -81,22 +83,22 @@ Create a dedicated project in GCP under your organization to enable integration 
 
     ![Screenshot showing GCP service account dialog.](media/connect-gcp-create-service-account.png)
 
-1. Under **IAM & admin**, click **IAM**.
+1. Under **IAM & admin**, select **IAM**.
 
     1. Switch to organization level.
-    1. Click **ADD**.
+    1. Select **ADD**.
     1. In the **New members** box, paste the **Email** value you copied earlier.
-    1. Specify the **Role** as **Logs Configuration Writer** and then click **Save**.
+    1. Specify the **Role** as **Logs Configuration Writer** and then select **Save**.
 
         ![Screenshot showing add member dialog.](media/connect-gcp-add-member.png)
 
 #### Create a private key for the dedicated service account
 
 1. Switch to project level.
-1. Under **IAM & admin**, click **Service accounts**.
-1. Open the dedicated service account and click **Edit**.
-1. Click **CREATE KEY**.
-1. In the **Create private key** screen, select **JSON**, and then click **CREATE**.
+1. Under **IAM & admin**, select **Service accounts**.
+1. Open the dedicated service account and select **Edit**.
+1. Select **CREATE KEY**.
+1. In the **Create private key** screen, select **JSON**, and then select **CREATE**.
 
     ![Screenshot showing create private key dialog.](media/connect-gcp-create-private-key.png)
 
@@ -113,7 +115,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 #### Add the GCP connection details
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Investigate** and then **Connected apps**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 
 1. In the **App connectors** page, to provide the GCP connector credentials, do one of the following:
 
@@ -122,15 +124,15 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     **For a new connector**
 
-    1. Click the plus sign (**+**) followed by **Google Cloud Platform**.
+    1. Select the plus sign (**+**) followed by **Google Cloud Platform**.
 
         ![connect GCP.](media/connect-gcp-add.png)
 
-    1. In the pop-up, provide a name for the connector, and then click **Connect Google Cloud Platform**.
+    1. In the pop-up, provide a name for the connector, and then select **Connect Google Cloud Platform**.
 
         ![GCP connector name.](media/connect-gcp-name.png)
 
-    1. In the **Project details** page, do the following, and then click **Connect Google Cloud Platform**.
+    1. In the **Project details** page, do the following, and then select **Connect Google Cloud Platform**.
         1. In the **Organization ID** box, enter the organization you made a note of earlier.
         1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
@@ -138,19 +140,19 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     **For an existing connector**
 
-    1. In the list of connectors, on the row in which the GCP connector appears, click **Connect security auditing**.
+    1. In the list of connectors, on the row in which the GCP connector appears, select **Connect security auditing**.
 
         ![Screenshot of the Connected Apps page, showing edit Security Auditing link.](media/connect-gcp-app-edit-audit.png)
 
-    1. In the **Project details** page, do the following, and then click **Connect Google Cloud Platform**.
+    1. In the **Project details** page, do the following, and then select **Connect Google Cloud Platform**.
         1. In the **Organization ID** box, enter the organization you made a note of earlier.
         1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
         ![Connect GCP app security auditing for existing connector.](media/connect-gcp-app-edit-audit-creds.png)
 
-1. Click **Test API** to make sure the connection succeeded.
+1. Select **Test API** to make sure the connection succeeded.
 
-    Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, click **Done**.
+    Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, select **Done**.
     
     > [!NOTE]
     > Defender for Cloud Apps will create an aggregated export sink (organization level), a Pub/Sub topic and Pub/Sub subscription using the integration service        account in the integration project. 
@@ -187,15 +189,15 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
 
 1. In Cloud Console API Library, select the project you want to connect to Defender for Cloud Apps.
 1. In the API Library, search for and select the "Security Command Center API".
-1. In the API page, click **ENABLE**.
+1. In the API page, select **ENABLE**.
 
 ### Create a dedicated service account for the security configuration integration
 
 1. In GCP Security Command Center, select the project you want to connect to Defender for Cloud Apps.
-1. Under **IAM & admin**, click **Service accounts**.
-1. Click **CREATE SERVICE ACCOUNT** to create a dedicated service account.
-1. Enter an account name, and then click **Create**.
-1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
+1. Under **IAM & admin**, select **Service accounts**.
+1. Select **CREATE SERVICE ACCOUNT** to create a dedicated service account.
+1. Enter an account name, and then select **Create**.
+1. Specify the **Role** as **Security Center Admin Viewer** and then select **Save**.
 
     ![Screenshot showing add GCP menu item for Security Center Admin Viewer.](media/connect-gcp-security-configuration-1.png)
 
@@ -203,22 +205,22 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
 
     ![Screenshot showing copy GCP service account.](media/connect-gcp-security-configuration-2.png)
 
-1. Under **IAM & admin**, click **IAM**.
+1. Under **IAM & admin**, select **IAM**.
 
     1. Switch to organization level.
-    1. Click **ADD**.
+    1. Select **ADD**.
     1. In the **New members** box, paste the **Email** value you copied earlier.
-    1. Specify the **Role** as **Security Center Admin Viewer** and then click **Save**.
+    1. Specify the **Role** as **Security Center Admin Viewer** and then select **Save**.
 
         ![Screenshot showing add member to project dialog.](media/connect-gcp-security-configuration-3.png)
 
 #### Create a private key for the dedicated service account
 
 1. Switch to project level.
-1. Under **IAM & admin**, click **Service accounts**.
-1. Open the dedicated service account and click **Edit**.
-1. Click **CREATE KEY**.
-1. In the **Create private key** screen, select **JSON**, and then click **CREATE**.
+1. Under **IAM & admin**, select **Service accounts**.
+1. Open the dedicated service account and select **Edit**.
+1. Select **CREATE KEY**.
+1. In the **Create private key** screen, select **JSON**, and then select **CREATE**.
 
     ![Screenshot showing create private key for dedicated service account dialog.](media/connect-gcp-security-configuration-4.png)
 
@@ -232,13 +234,13 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 ### Connect Google Cloud Platform security configuration to Defender for Cloud Apps
 
-1. In Defender for Cloud Apps, click **Investigate**, and then select **Connected apps**.
+1. In Defender for Cloud Apps, select **Investigate**, and then select **Connected apps**.
 
-1. In the **Security configuration apps** tab, click the plus button, and then select **Google Cloud Platform**.
+1. In the **Security configuration apps** tab, select the plus button, and then select **Google Cloud Platform**.
 
     ![Screenshot showing add GCP menu option.](media/connect-gcp-security-configuration-5.png)
 
-1. In the **Instance name** page, choose the instance type, and then click **Next**.
+1. In the **Instance name** page, choose the instance type, and then select **Next**.
 
     - For an existing connector, choose the relevant instance.
 
@@ -248,13 +250,13 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
         ![GCP new connector name.](media/connect-gcp-new-instance.png)
 
-1. In the **Project details** page, do the following, and then click **Next**.
+1. In the **Project details** page, do the following, and then select **Next**.
     1. In the **Organization ID** box, enter the organization you made a note of earlier.
     1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
     ![Add GCP project details.](media/connect-gcp-security-configuration-6.png)
 
-1. In the **Finished** page, make sure the connection succeeded, and then click **Finished**.
+1. In the **Finished** page, make sure the connection succeeded, and then select **Finished**.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 

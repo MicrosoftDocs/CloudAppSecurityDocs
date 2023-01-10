@@ -1,6 +1,6 @@
 ---
 title: Manage app policies
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 description: Manage your app governance policies.
 ---
@@ -28,6 +28,10 @@ Here's an example of a process for managing an existing policy:
 1. If the behavior is expected, edit the policy and change its status to active (if needed).
 
 :::image type="content" source="media/app-governance/mapg-manage-policy-process.png" alt-text="The manage app policy workflow." lightbox="media/app-governance/mapg-manage-policy-process.png":::
+
+> [!NOTE]
+> Following the change in the **Activity type** filter, policies with the previous filter will have a "LEGACY" label attached to the filter and if the policies are edited or deleted the filter can't be restored.
+
 
 ## Editing an app policy configuration
 

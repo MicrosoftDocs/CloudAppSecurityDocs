@@ -1,7 +1,7 @@
 ---
 title: Discover and manage Shadow IT tutorial
 description: This tutorial describes the process to discover and manage Shadow IT in Microsoft Defender for Cloud Apps.
-ms.date: 11/09/2021
+ms.date: 01/09/2023
 ms.topic: tutorial
 ---
 # Tutorial: Discover and manage shadow IT in your network
@@ -40,7 +40,7 @@ Because policies are different across user groups, regions and business groups, 
 
 Now that Cloud Discovery is running on your network, look at the continuous reports that are generated and look at the [Cloud Discovery dashboard](working-with-cloud-discovery-data.md) to get a full picture of what apps are being used in your organization. It's a good idea to look at them by category, because you'll often find that non-sanctioned apps are being used for legitimate work-related purposes that weren't addressed by a sanctioned app.
 
-1. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud App Catalog includes over 25,000 apps that are assessed using over 80 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
+2. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud App Catalog includes over 31,000 apps that are assessed using over 90 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
 
     - In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under **Discover**, select **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you're concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
 
@@ -75,7 +75,7 @@ Now that Cloud Discovery is running on your network, look at the continuous repo
 
 - **Continuous monitoring**: Now that you've thoroughly investigated the apps, you might want to set policies that monitor the apps and provide control where needed.
 
-Now it's time to create policies so you can be automatically alerted when something happens that you're concerned about. For example, you might want to create an **App discovery policy** that lets you know when there's a spike in downloads or traffic from an app you're concerned about. To achieve this, you should enable **Anomalous behavior in discovered users policy**, **Cloud storage app compliance check**, and **New risky app**. You should also set the policy to notify you by email or text message. For more information, see [policy template reference](policy-template-reference.md),  more about [Cloud Discovery policies](cloud-discovery-policies.md) and Configure [App discovery policies](cloud-discovery-policies.md).
+Now it's time to create policies so you can be automatically alerted when something happens that you're concerned about. For example, you might want to create an **App discovery policy** that lets you know when there's a spike in downloads or traffic from an app you're concerned about. To achieve this, you should enable **Anomalous behavior in discovered users policy**, **Cloud storage app compliance check**, and **New risky app**. You should also set the policy to notify you by email. For more information, see [policy template reference](policy-template-reference.md),  more about [Cloud Discovery policies](cloud-discovery-policies.md) and Configure [App discovery policies](cloud-discovery-policies.md).
 
 Look at the alerts page and use the **Policy type** filter to look at app discovery alerts. For apps that were matched by your app discovery policies, it's recommended that you do an advanced investigation to learn more about the business justification for using the app, for example, by contacting the users of the app. Then, repeat the steps in Phase 2 to evaluate the risk of the app. Then determine next steps for the application, whether you approve use of it in the future or want to block it the next time a user accesses it, in which case you should tag it as unsanctioned so it can be blocked using your firewall, proxy, or secure web gateway. For more information, see [Integrate with Microsoft Defender for Endpoint](mde-govern.md), [Integrate with Zscaler](zscaler-integration.md), [Integrate with iboss](iboss-integration.md), and [Block apps by exporting a block script](governance-discovery.md#block-apps-by-exporting-a-block-script).
 

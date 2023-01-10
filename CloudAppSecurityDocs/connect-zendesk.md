@@ -1,7 +1,7 @@
 ---
 title: Connect Zendesk to Defender for Cloud Apps 
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zendesk using the App Connector APIs. 
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Connect Zendesk to Microsoft Defender for Cloud Apps
@@ -69,6 +69,10 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
+
+>[!NOTE]
+>Microsoft recommends using a short lived access token. Zendesk doesn't currently support short lived tokens. We recommend our customers refresh the token every 6 months as a security best practice. To refresh the access token, revoke the old token by following [Revoke Token](https://developer.zendesk.com/api-reference/ticketing/oauth/oauth_tokens/#revoke-token). Once the old token is revoked, create a new secret and reconnect the Zendesk connector as documented above. 
+
 
 >[!NOTE]
 >System activities will be shown with the **Zendesk** account name.

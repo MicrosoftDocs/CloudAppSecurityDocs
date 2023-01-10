@@ -1,7 +1,7 @@
 ---
 title: Require step-up authentication (authentication context) upon risky action
 description: This tutorial provides instructions for requiring step-up authentication (authentication context) upon risky action.
-ms.date: 11/09/2021
+ms.date: 01/09/2023
 ms.topic: tutorial
 ---
 # Tutorial: Require step-up authentication (authentication context) upon risky action
@@ -79,7 +79,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
     >[!NOTE]
     >This requires [authentication context to be created in Azure AD](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/StepUpTags).
 
-1. Set the alerts you want to receive when the policy is matched. You can set a limit so that you don't receive too many alerts. Select whether to get the alerts as an email message, text message, or both.
+1. Set the alerts you want to receive when the policy is matched. You can set a limit so that you don't receive too many alerts. Select if to get the alerts as an email message.
 
 1. Select **Create**.
 

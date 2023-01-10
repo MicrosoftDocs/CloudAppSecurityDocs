@@ -1,14 +1,14 @@
 ---
 title: Deploy Defender for Cloud Apps Conditional Access App Control for any web app using AD FS
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using AD FS as the identity provider.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Onboard and deploy Conditional Access App Control for any web app using Active Directory Federation Services (AD FS) as the identity provider (IdP)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microosoft IdP. This article describes how to route app sessions from AD FS to Defender for Cloud Apps for real-time session controls.
+You can configure session controls in Microsoft Defender for Cloud Apps to work with any web app and any non-Microsoft IdP. This article describes how to route app sessions from AD FS to Defender for Cloud Apps for real-time session controls.
 
 For this article, we'll use the Salesforce app as an example of a web app being configured to use Defender for Cloud Apps session controls.
 

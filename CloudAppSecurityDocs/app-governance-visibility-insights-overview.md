@@ -1,6 +1,6 @@
 ---
 title: Learn about visibility and insights
-ms.date: 11/09/2021
+ms.date: 01/03/2023
 ms.topic: conceptual
 description: Learn about visibility and insights.
 ---
@@ -49,7 +49,16 @@ You can also:
 - Drill down to a single app (app page) with all its associated insights.
 - Drill-down into top users by data, and priority accounts within a single app.
 
+## Limitations to Microsoft 365 activity insights
+
+To provide insights into how OAuth apps use Microsoft 365 data, including data with sensitivity labels, app governance tracks a set of commonly used Graph API operations. While these insights don’t cover all app activity on Microsoft 365, they can flag risky behavior associated with increased data usage and access to potentially sensitive data.
+
+To get detailed information about app activity on Microsoft 365, search the Microsoft Purview audit log.
+
+
 ## Next step
 
 [Get started with application insights.](app-governance-visibility-insights-get-started.md)
+
+
 

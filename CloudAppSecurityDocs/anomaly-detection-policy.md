@@ -1,7 +1,7 @@
 ---
 title: Create anomaly detection policies in Defender for Cloud Apps
 description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 
@@ -35,7 +35,7 @@ These policies will appear on the Defender for Cloud Apps policies page and can 
 
 ## Anomaly detection policies
 
-You can see the anomaly detection policies in the portal by clicking on **Control** then **Policies**. Select **Anomaly detection policy** for the policy type.
+You can see the anomaly detection policies in the portal by selecting **Control** then **Policies**. Then choose **Anomaly detection policy** for the policy type.
 
  ![new anomaly detection policies.](media/new-anomaly-detection-policies.png)
 
@@ -47,7 +47,7 @@ The following anomaly detection policies are available:
 
     > [!NOTE]
     >
-    > * When the IP addresses on both sides of the travel are considered safe, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
+    > * When the IP addresses on both sides of the travel are considered safe and sensitivity slider is not set to **High**, the travel is trusted and excluded from triggering the Impossible travel detection. For example, both sides are considered safe if they are [tagged as corporate](ip-tags.md). However, if the IP address of only one side of the travel is considered safe, the detection is triggered as normal.
     > * The locations are calculated on a country level. This means that there will be no alerts for two actions originating in the same country or in bordering countries.
 
 ### Activity from infrequent country

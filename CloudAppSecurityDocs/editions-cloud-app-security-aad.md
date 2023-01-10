@@ -1,15 +1,15 @@
 ---
-title: Discovery capability differences for Defender for Cloud Apps and Azure AD
-description: This article describes the differences between discovery capabilities in Microsoft Defender for Cloud Apps and Azure AD.
-ms.date: 11/09/2021
+title: Discovery capability differences for Defender for Cloud Apps and Cloud App Discovery
+description: This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Azure Active Directory).
+ms.date: 12/21/2022
 ms.topic: overview
 ---
 
-# What are the differences in discovery capabilities for Azure Active Directory and Microsoft Defender for Cloud Apps?
+# What are the differences in discovery capabilities for Microsoft Defender for Cloud Apps and Cloud App Discovery?
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes the differences between discovery capabilities in Microsoft Defender for Cloud Apps and Azure Active Directory (Azure AD).
+This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Azure Active Directory).
 
 For information about licensing, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
@@ -25,7 +25,7 @@ Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-
 
 ### Feature comparison
 
-The following table is a comparison of the discovery capabilities in Microsoft Defender for Cloud Apps and Azure AD.
+The following table is a comparison of the discovery capabilities in Defender for Cloud Apps and Cloud App Discovery.
 
 |Capability|Feature|Microsoft Defender for Cloud Apps| Cloud App Discovery (as part of Azure Active Directory P1)|
 |----|----|----|----|

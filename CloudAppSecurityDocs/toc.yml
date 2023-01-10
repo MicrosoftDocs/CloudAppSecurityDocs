@@ -11,6 +11,8 @@ items:
     href: release-notes.md
   - name: Lifecycle management
     href: lifecycle-management.md
+  - name: Preview features
+    href: preview-features.md
   - name: Compare
     items:
     - name: Office 365 Cloud App Security
@@ -192,6 +194,10 @@ items:
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
           href: app-governance-detect-remediate-detect-threats.md
+    - name: Secure apps and other assets
+      items:
+        - name: Secure apps accessing non-Graph APIs
+          href: app-governance-secure-apps-access-non-graph-api.md
   - name: Cloud Discovery
     items:
     - name: Set up
@@ -308,9 +314,6 @@ items:
       href: mde-investigation.md
     - name: Files
       href: file-filters.md
-      items:
-      - name: Generate data management reports
-        href: built-in-reports.md
     - name: Accounts
       href: accounts.md
     - name: Manage OAuth apps

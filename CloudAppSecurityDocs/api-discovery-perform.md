@@ -1,7 +1,7 @@
 ---
 title: Perform file upload - Cloud Discovery API
 description: This article describes the perform file upload request in the Defender for Cloud Apps Cloud Discovery API.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: reference
 ---
 # Perform file upload - Cloud Discovery API
@@ -9,8 +9,6 @@ ms.topic: reference
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Upload the file contents by performing an HTTP PUT request. You will be required to use the URL returned by the [Initiate file upload](api-discovery-initiate.md) request.
-
-Azure and AWS have different headers and limitations when uploading files to the target URL.
 
 > [!NOTE]
 >

@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Connect apps
@@ -69,7 +69,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Salesforce        | ✔                                    | ✔                                    | ✔                                    | ✔                                    | Supported with Salesforce Shield            | ✔                         |
 | Slack | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 | Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
-| Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           | ✔                         |
+| Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 

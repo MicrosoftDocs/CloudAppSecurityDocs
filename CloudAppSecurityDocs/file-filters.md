@@ -1,7 +1,7 @@
 ---
 title: Understanding file data and filters available in Defender for Cloud Apps
 description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
-ms.date: 11/17/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Files
@@ -130,14 +130,14 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Owner OU** – Include or exclude file owners that belong to certain organizational units. For example, all public files except files shared by *EMEA_marketing*. Applies only to files stored in Google Drive.
 
-- **Parent folder** – Include or exclude based on parent folder. For example, all publicly shared files except for files in this folder.
+- **Parent folder** – Include or exclude a specific folder (doesn't apply to subfolders). For example, all publicly shared files except for files in this folder.
 
     > [!NOTE]
     > Defender for Cloud Apps only detects new SharePoint and OneDrive folders after some file activity has been performed in them.
 
 - **Quarantined** – If the file quarantined by the service. For example, show me all files that are quarantined.
 
-You can also set the policy to run on specific files by setting the **Apply to** filter. Filter to either **all files**, **selected folders**, or **all files excluding selected folders**. Then select the files or folders that are relevant.
+You can also set the policy to run on specific files by setting the **Apply to** filter. Filter to either **all files**, **selected folders** (subfolders included), or **all files excluding selected folders**. Then select the files or folders that are relevant.
 
 ![apply to filter.](media/apply-to-filter.png "apply to filter")
 <!--

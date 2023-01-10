@@ -1,6 +1,6 @@
 ---
 title: Get started with app policies
-ms.date: 11/09/2021
+ms.date: 06/14/2022
 ms.topic: how-to
 description: Get started learning about app policies.
 ---

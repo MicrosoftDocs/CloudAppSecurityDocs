@@ -1,7 +1,7 @@
 ---
 title: Differences between Defender for Cloud Apps and Office 365 Cloud App Security
 description: This article describes the differences between Defender for Cloud Apps and Office 365 Cloud App Security.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: overview
 ---
 # What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?
@@ -27,7 +27,7 @@ Office 365 Cloud App Security is a subset of Microsoft Defender for Cloud Apps t
 
 |Capability|Feature|Microsoft Defender for Cloud Apps|Office 365 Cloud App Security|
 |----|----|----|----|
-|Cloud Discovery|Discovered apps |25,000 + cloud apps  |750+ cloud apps with similar functionality to Office 365|
+|Cloud Discovery|Discovered apps |31,000 + cloud apps  |750+ cloud apps with similar functionality to Office 365|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual log upload|
 ||Log anonymization for user privacy|Yes||
 ||Access to full Cloud App Catalog|Yes||

@@ -1,7 +1,7 @@
 ---
 title: Control which third-party cloud OAuth apps get permissions 
 description: This article provides information about how you can control, ban and allow third-party OAuth apps.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Manage OAuth apps

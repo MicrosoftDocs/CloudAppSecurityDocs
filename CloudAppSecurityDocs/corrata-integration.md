@@ -1,7 +1,7 @@
 ---
 title: Integrate Defender for Cloud Apps with Corrata
 description: This article describes how to integrate Microsoft Defender for Cloud Apps with Corrata for seamless Cloud Discovery and automated block of unsanctioned apps.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Corrata
@@ -37,7 +37,7 @@ If you work with both Defender for Cloud Apps and Corrata, you can integrate the
 
 3. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 
-4. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Corrata, and then automatically blocked by Corrata. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#BKMK_SanctionApp).
+4. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Corrata, and then automatically blocked by Corrata. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
 ## Next steps
 

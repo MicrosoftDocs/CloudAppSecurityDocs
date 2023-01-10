@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Cloud Apps
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 09/18/2022
+ms.date: 01/03/2023
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -26,6 +26,29 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## Defender for Cloud Apps release 240, 241, 242, and 243
+
+December 25, 2022
+
+- **Azure AD identity protection**  
+Azure AD identity protection alerts will arrive directly to Microsoft 365 Defender. The Microsoft Defender for Cloud Apps policies won't affect the alerts in the Microsoft 365 Defender portal. Azure AD identity protection policies will be removed gradually from the cloud apps policies list in the Microsoft 365 Defender portal. To configure alerts from these policies, see [Configure Azure AD IP alert service](/microsoft-365/security/defender/investigate-alerts#configure-aad-ip-alert-service).
+
+## Defender for Cloud Apps release 237, 238 and 239
+
+October 30, 2022
+
+- **Native Integration of Microsoft Defender for Cloud Apps in Microsoft 365 Defender is now in public preview**  
+The entire Defender for Cloud Apps experience in Microsoft 365 Defender is now available for public preview.
+
+  SecOps and security admins will experience these major benefits:
+
+  - Time and costs saved
+  - Holistic investigation experience
+  - Additional data and signals in advanced hunting
+  - Integrated protection across all security workloads
+
+  For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
 ## Defender for Cloud Apps release 236
 
@@ -428,7 +451,7 @@ Released October 25, 2020
 As part of our ongoing improvements to monitoring and managing alerts, the Cloud App Security Alerts page has been improved based on your feedback. In the enhanced experience, the **Resolved** and **Dismissed** statuses are replaced by the **Closed** status with a resolution type. [Learn more](monitor-alerts.md#deployment-of-our-enhanced-alert-monitoring-and-management-experience)
 
 - **New global severity setting for signals sent to Microsoft Defender for Endpoints**  
-We've added the ability to set the global severity setting for signals sent to Microsoft Defender for Endpoint. For more information, see [How to integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-cloud-app-security).
+We've added the ability to set the global severity setting for signals sent to Microsoft Defender for Endpoint. For more information, see [How to integrate Microsoft Defender for Endpoint with Cloud App Security](mde-integration.md#).
 
 - **New security recommendations report**  
 Cloud App Security provides you with security configuration assessments for your Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) giving you insights into security configuration gaps in your multi-cloud environment. Now you can export detailed security recommendation reports to help you monitor, understand, and customize your cloud environments to better protect your organization. For more information about exporting the report, see [Security recommendations report](security-config.md#security-recommendations-report).

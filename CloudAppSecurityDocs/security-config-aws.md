@@ -1,12 +1,14 @@
 ---
 title: Get security configuration recommendations for AWS
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps by integrating with Amazon Web Services.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Security configuration for AWS
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
 
 Microsoft Defender for Cloud Apps provides you with a security configuration assessment of your Amazon Web Services environment. This assessment provides fundamental security recommendations based on the Center for Internet Security (CIS) benchmark for AWS.
 

@@ -1,7 +1,7 @@
 ---
 title: Manage alerts raised in Defender for Cloud Apps
 description: This article explains how to work with alerts raised in the Defender for Cloud Apps portal.
-ms.date: 11/09/2021
+ms.date: 01/09/2023
 ms.topic: how-to
 ---
 # Manage alerts
@@ -11,7 +11,7 @@ ms.topic: how-to
 This article explains how to work with alerts raised in the Defender for Cloud Apps portal.
 
 > [!NOTE]
-> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
+> Alerts are managed in their respective policies and can be configured to be sent as an email.
 
 ## Manage your alerts
 

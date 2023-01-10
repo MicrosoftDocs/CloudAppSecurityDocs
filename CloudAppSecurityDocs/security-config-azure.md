@@ -1,12 +1,14 @@
 ---
 title: Get security configuration recommendations for Azure
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps by integrating with Microsoft Defender for Cloud.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 # Security configuration for Azure
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
 
 Microsoft Defender for Cloud Apps provides you with a security configuration assessment of your Azure environment. The assessment, powered by Microsoft Defender for Cloud, provides recommendations for missing configuration and security controls.
 
