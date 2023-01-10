@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting SIEM integration 
 description: This article provides a list of possible issues when connecting your SIEM to Defender for Cloud Apps and provides resolutions for each.
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: conceptual
 ---
 # Troubleshooting the SIEM agent

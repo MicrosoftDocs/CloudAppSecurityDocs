@@ -1,7 +1,7 @@
 ---
 title: Visibility into cloud app activities 
 description: This article provides a list of activities, filters, and match parameters that can be applied to activity policies.
-ms.date: 11/09/2021
+ms.date: 02/02/2022
 ms.topic: how-to
 ---
 # Activities

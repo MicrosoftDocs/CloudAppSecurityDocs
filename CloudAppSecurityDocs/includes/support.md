@@ -5,7 +5,7 @@ ms.collection: M365-security-compliance
 ms.service: defender-for-cloud-apps
 author: dcurwin
 ms.topic: include
-ms.date: 11/24/2019
+ms.date: 02/02/2022
 ms.author: dacurwin
 ms.custom: include file
 ---

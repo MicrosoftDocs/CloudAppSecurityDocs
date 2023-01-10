@@ -1,7 +1,7 @@
 ---
 title: Defender for Cloud Apps REST API
 description: This article describes how to interact with Defender for Cloud Apps over HTTPS.
-ms.date: 11/09/2021
+ms.date: 05/24/2022
 ms.topic: reference
 ---
 # Defender for Cloud Apps REST API

@@ -1,7 +1,7 @@
 ---
 title: Discovery capability differences for Defender for Cloud Apps and Cloud App Discovery
 description: This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Azure Active Directory).
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: overview
 ---
 

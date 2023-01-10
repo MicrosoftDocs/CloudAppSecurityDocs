@@ -1,7 +1,7 @@
 ---
 title: Deploy Conditional Access App Control custom apps with Azure Active Directory
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for custom apps using Azure Active Directory
-ms.date: 01/17/2022
+ms.date: 12/21/2022
 ms.topic: how-to
 ---
 

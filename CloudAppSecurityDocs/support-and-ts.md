@@ -1,7 +1,7 @@
 ---
 title: Support and troubleshooting information for Defender for Cloud Apps
 description: This article describes your support and troubleshooting options for Microsoft Defender for Cloud Apps
-ms.date: 11/09/2021
+ms.date: 12/21/2022
 ms.topic: conceptual
 ---
 # Support and troubleshooting Microsoft Defender for Cloud Apps
