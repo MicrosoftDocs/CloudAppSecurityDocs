@@ -91,6 +91,7 @@ Below is a list of the file filters that can be applied. To provide you with a p
 - **Created** – File creation time. The filter supports before/after dates and a date range.
 
 - **Extension** – Focus on specific file extensions. For example, all files that are executables (*.exe).
+
       >[!NOTE]
       >
       > - This filter is case sensitive.
