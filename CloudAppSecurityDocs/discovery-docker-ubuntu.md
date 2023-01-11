@@ -84,7 +84,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
-    ![Create log collector.](media/windows7.png)
+    ![Create log collector.](media/create-log-connector.png)
 
     > [!NOTE]
     >
@@ -225,7 +225,7 @@ The following steps describe the deployment in Ubuntu.
     (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
-    ![Create log collector.](media/windows7.png)
+    ![Create log collector.](media/create-log-connector.png)
 
 6. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
