@@ -1,7 +1,7 @@
 ---
 title: Access Defender for Cloud Apps with application context
 description: Learn how to design a web app to get programmatic access to Defender for Cloud Apps without a user.
-ms.date: 10/26/2022
+ms.date: 01/10/2023
 ms.topic: reference
 ---
 
@@ -123,17 +123,14 @@ $token = $authResponse.access_token
 
 ### Use C#
 
-The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
-
-> [!IMPORTANT]
-> The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020.   We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
+The following code was tested with NuGet Microsoft.Identity.Client 4.47.2.
 
 1. Create a new console application.
-1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Install NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. Add the following:
 
     ```text
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Copy and paste the following code in your app (don't forget to update the three variables: ```tenantId, appId, appSecret```):
@@ -142,14 +139,16 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
-    
     const string authority = "https://login.microsoftonline.com";
-    const string MCASResourceId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
-    
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(MCASResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    const string audience = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
+
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
+
+    List scopes = new List() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### Use Python
