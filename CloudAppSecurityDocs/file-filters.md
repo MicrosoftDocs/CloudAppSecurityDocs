@@ -92,6 +92,11 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 - **Extension** – Focus on specific file extensions. For example, all files that are executables (*.exe).
 
+    >[!NOTE]
+    >
+    > - This filter is case sensitive.
+    > - Use the OR clause to apply the filter on more than a single capitalization variation.
+
 - **File ID** – Search for specific file IDs. File ID is an advanced feature that allows you to track certain high-value files without a dependency on owner, location, or name.
 
 - **File name** – File name or sub string of the name as defined in the cloud app. For example, all files with a password in their name.
