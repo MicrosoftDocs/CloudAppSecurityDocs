@@ -1,5 +1,5 @@
 ---
-title: Working with discovered apps in Defender for Cloud Apps
+title: Working with discovered apps
 description: This article describes the process for identifying and remediating risky cloud discovery apps in Defender for Cloud Apps.
 ms.date: 12/21/2022
 ms.topic: conceptual
@@ -170,4 +170,3 @@ To delete Cloud Discovery data:
 
 > [!div class="nextstepaction"]
 > [Discover apps using Microsoft Defender for Endpoint's integration](mde-integration.md)
-

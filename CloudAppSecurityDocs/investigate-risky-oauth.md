@@ -1,10 +1,10 @@
 ---
-title: Investigate and remediate risky OAuth apps tutorial
+title: Investigate and remediate risky OAuth apps
 description: This tutorial provides information on how to investigate and remediate risky OAuth apps in Defender for Cloud Apps.
 ms.date: 02/02/2022
 ms.topic: tutorial
 ---
-# Tutorial: Investigate and remediate risky OAuth apps
+# Investigate and remediate risky OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

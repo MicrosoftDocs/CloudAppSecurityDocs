@@ -1,5 +1,5 @@
 ---
-title: Connect OneLogin to Defender for Cloud Apps
+title: Connect OneLogin
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing OneLogin app using the App Connector APIs. 
 ms.date: 02/02/2022
 ms.topic: how-to
@@ -20,12 +20,12 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Go to the OneLogin admin portal. Select **API Credentials** in the **Developers** dropdown menu.
 
-    ![Select API credentials](media/api-credentials-onelogin.png)
+    ![Select API credentials.](media/api-credentials-onelogin.png)
 
 1. Select **New Credential**.
 1. Name your new application as **Microsoft Defender for Cloud Apps**, choose **Read all** permissions, and select **Save**.
 
-    ![Create new API credential](media/create-new-api-credential-onelogin.png)
+    ![Create new API credential.](media/create-new-api-credential-onelogin.png)
 
 1. Copy the **Client ID** and the **Client Secret**. You'll need them in the following steps.
 
@@ -35,7 +35,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. In the **App connectors** page, select the plus button followed by **OneLogin**.
 1. In the pop-up, give the connector a descriptive name, and select **Connect OneLogin**.
 
-    ![Connect OneLogin](media/connect-onelogin.png)
+    ![Connect OneLogin.](media/connect-onelogin.png)
 
 1. Enter the **Client ID** and the **Client Secret** that you copied and select **Connect OneLogin**.
 1. Make sure the connection succeeded by selecting Test now. Testing may take a couple of minutes. After receiving a success notice, select **Close**.

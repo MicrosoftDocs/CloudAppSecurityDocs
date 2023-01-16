@@ -4,7 +4,7 @@ description: This article provides instructions for how to use and customize the
 ms.date: 12/21/2022
 ms.topic: conceptual
 ---
-# Working with App risk scores
+# Working with the risk score
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

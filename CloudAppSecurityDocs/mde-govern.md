@@ -37,7 +37,7 @@ Use the following steps to enable access control for cloud apps:
 
 1. In Defender for Cloud Apps, under the settings cog, select **Settings**, under **Cloud Discovery** select **Microsoft Defender for Endpoint**, and then select **Block unsanctioned apps**.
 
-    ![Screenshot showing how to enable blocking with Defender for Endpoint](media/mde-integration.png)
+    ![Screenshot showing how to enable blocking with Defender for Endpoint.](media/mde-integration.png)
 
     > [!NOTE]
     > It can take up to 30 minutes for this setting to take effect.
@@ -46,7 +46,7 @@ Use the following steps to enable access control for cloud apps:
 
     This allows you to leverage Microsoft Defender Antivirus network protection capabilities to block access to a predefined set of URLs using Defender for Cloud Apps, either by manually assigning [app tags](governance-discovery.md#sanctioningunsanctioning-an-app) to specific apps or automatically using an [app discovery policy](cloud-discovery-policies.md#creating-an-app-discovery-policy).
 
-    ![Screenshot showing how to enable custom network indicators in Defender for Endpoint](media/mde-custom-network-indicators.png)
+    ![Screenshot showing how to enable custom network indicators in Defender for Endpoint.](media/mde-custom-network-indicators.png)
 
 ### Prerequisites for blocking apps with Defender for Endpoint
 
@@ -123,7 +123,7 @@ Use the following steps to configure a custom URL pointing to a company web page
 1. In Defender for Cloud Apps, under the settings cog, select **Settings**, and under **Cloud Discovery** select **Microsoft Defender for Endpoint**.
 1. In the **Notification URL** box, enter your URL.
 
-    ![Screenshot showing how to configure notification URL](media/mde-educate-config-notification-url.png)
+    ![Screenshot showing how to configure notification URL.](media/mde-educate-config-notification-url.png)
 
 ### Setting up user bypass duration
 
@@ -132,7 +132,7 @@ Since users can bypass the warning message, you can use the following steps to c
 1. In Defender for Cloud Apps, under the settings cog, select **Settings**, and under **Cloud Discovery** select **Microsoft Defender for Endpoint**.
 1. In the **Bypass duration** box, enter the duration (hours) of the user bypass.
 
-    ![Screenshot showing how to configure bypass duration](media/mde-educate-config-bypass-duration.png)
+    ![Screenshot showing how to configure bypass duration.](media/mde-educate-config-bypass-duration.png)
 
 ### Monitor applied app controls
 
@@ -141,7 +141,7 @@ Once controls are applied, you can monitor app usage patterns by the applied con
 1. In Defender for Cloud Apps, under **Discovery** > **Discovered apps**, use the [filters](discovered-app-queries.md) to find the relevant monitored app.
 1. Select the app's name to view applied app controls on the app's overview page.
 
-    ![Screenshot showing how to monitor applied controls](media/mde-educate-applied-controls-overview.png)
+    ![Screenshot showing how to monitor applied controls.](media/mde-educate-applied-controls-overview.png)
 
 ## Next steps
 

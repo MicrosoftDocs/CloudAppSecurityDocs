@@ -1,5 +1,5 @@
 ---
-title: Connect Google Cloud Platform to Defender for Cloud Apps
+title: Connect Google Cloud Platform
 description: This article provides information about how to connect your Google Cloud Platform to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 01/09/2023
 ms.topic: how-to
@@ -153,11 +153,11 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 1. Select **Test API** to make sure the connection succeeded.
 
     Testing may take a couple of minutes. When it's finished, you get a success or failure notification. After receiving a success notice, select **Done**.
-    
+
     > [!NOTE]
-    > Defender for Cloud Apps will create an aggregated export sink (organization level), a Pub/Sub topic and Pub/Sub subscription using the integration service        account in the integration project. 
-    > 
-    > Aggregated export sink is used to aggregate logs across the GCP organization and the Pub/Sub topic created is used as the destination. Defender for Cloud Apps subscribes to this topic through the Pub/Sub subscription created to retrieve the admin activity logs across the GCP organization. 
+    > Defender for Cloud Apps will create an aggregated export sink (organization level), a Pub/Sub topic and Pub/Sub subscription using the integration service account in the integration project.
+    >
+    > Aggregated export sink is used to aggregate logs across the GCP organization and the Pub/Sub topic created is used as the destination. Defender for Cloud Apps subscribes to this topic through the Pub/Sub subscription created to retrieve the admin activity logs across the GCP organization.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
 
@@ -214,7 +214,7 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
 
         ![Screenshot showing add member to project dialog.](media/connect-gcp-security-configuration-3.png)
 
-#### Create a private key for the dedicated service account
+#### Create private key for the dedicated service account
 
 1. Switch to project level.
 1. Under **IAM & admin**, select **Service accounts**.
@@ -227,7 +227,7 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
     > [!NOTE]
     > You'll need the JSON file that is downloaded to your device later.
 
-#### Retrieve your Organization ID
+#### Retrieve the Organization ID
 
 Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
     ![Screenshot showing organization ID dialog.](media/connect-gcp-org-id.png)

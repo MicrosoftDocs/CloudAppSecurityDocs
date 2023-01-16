@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Defender for Cloud Apps
+title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 ms.date: 01/03/2023
 ms.topic: overview
@@ -332,7 +332,7 @@ Label management from the Azure Information Protection portal (classic) is depre
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 - **Public preview for overriding privilege sensitivity labels**  
-Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [Apply labels directly to files](azip-integration.md#how-to-integrate-azure-information-protection-with-cloud-app-security).
+Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps).
 
 - **Extended Advanced Hunting events**  
 We've expanded the available events in Cloud App Security. Microsoft 365 Defender Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Office 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
@@ -647,7 +647,7 @@ We've expanded our current anomalous behavior alerts for Workday. The new alerts
 Cloud App Security now supports Salesforce's hourly event log. Hourly event logs give you accelerated, near real-time monitoring of user activities. For more information, see [Connect Salesforce](./connect-salesforce.md).
 
 - **Support for AWS security configuration using a master account**  
-Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS Security configuration to Cloud App Security](./connect-aws.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
+Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS security configuration to Defender for Cloud Apps](connect-aws.md#how-to-connect-aws-security-configuration-to-defender-for-cloud-apps).
 
 - **Session controls support for modern browsers**  
 Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.

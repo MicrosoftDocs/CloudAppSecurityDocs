@@ -1,5 +1,5 @@
 ---
-title: Manage admin access to the Defender for Cloud Apps portal
+title: Manage admin access
 description: This article provides instructions for setting access to the Defender for Cloud Apps portal for your admins.
 ms.date: 12/21/2022
 ms.topic: how-to

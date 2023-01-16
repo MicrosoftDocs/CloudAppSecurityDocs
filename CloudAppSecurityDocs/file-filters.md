@@ -1,10 +1,10 @@
 ---
-title: Understanding file data and filters available in Defender for Cloud Apps
+title: File filters 
 description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
 ms.date: 12/21/2022
 ms.topic: how-to
 ---
-# Files
+# File filters in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -179,7 +179,7 @@ You can view more information about each file, by selecting the file itself in t
 - **Matched policies** - See a list of policies the file matched.
 - **Sensitivity labels** - View the list of sensitivity labels from Microsoft Purview Information Protection found in this file. You can then filter by all files matching this label.
 
-The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Sensitivity labels**.
+The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon.](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Sensitivity labels**.
 
 ![File drawer.](media/file-drawer.png "File drawer")
 

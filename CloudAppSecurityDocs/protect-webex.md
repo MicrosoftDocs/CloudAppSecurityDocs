@@ -1,5 +1,5 @@
 ---
-title: How Defender for Cloud Apps helps protect your Cisco Webex Teams environment
+title: Protect your Cisco Webex Teams environment
 description: This article provides information about the benefits of connecting your Cisco Webex Teams app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 06/14/2022
 ms.topic: article

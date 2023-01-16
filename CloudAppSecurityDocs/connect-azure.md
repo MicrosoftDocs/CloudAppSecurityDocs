@@ -1,5 +1,5 @@
 ---
-title: Connect Azure to Defender for Cloud Apps
+title: Connect Azure 
 description: This article provides information about how to connect Azure to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/21/2022
 ms.topic: how-to

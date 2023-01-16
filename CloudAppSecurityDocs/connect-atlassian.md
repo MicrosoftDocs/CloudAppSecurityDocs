@@ -1,5 +1,5 @@
 ---
-title: Connect Atlassian to Defender for Cloud Apps
+title: Connect Atlassian
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Atlassian products using the App Connector APIs. 
 ms.date: 12/21/2022
 ms.topic: how-to
@@ -42,9 +42,8 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. After selecting **Create**, copy the **Organization ID** and the **API key**. You'll need it later.
 
-        
     >[!NOTE]
-    >Verify your domain: To see your Atlassian users and their activities in Defender for Cloud Apps, you need to verify your domain. In Atlassian, domains are used to     determine which user accounts can be managed by your organization. You won't see users and their activities if their domains aren't verified in the Atlassian           configuration. 
+    >Verify your domain: To see your Atlassian users and their activities in Defender for Cloud Apps, you need to verify your domain. In Atlassian, domains are used to     determine which user accounts can be managed by your organization. You won't see users and their activities if their domains aren't verified in the Atlassian configuration.
     >To verify domains in Atlassian see [Verify a domain to manage accounts](https://support.atlassian.com/user-management/docs/verify-a-domain-to-manage-accounts/).
 
 ### Configure Defender for Cloud Apps
@@ -68,11 +67,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ## Revoke and renew API keys
 
-1. Microsoft recommends using short lived keys or tokens for connecting apps as a security best practice. 
-2. We recommend refreshing the Atlassian API key every 6 months as a best practice. To refresh the key, revoke the existing API key and generate a new key. 
-3. To revoke API key, navigate to **admin.atlassian.com** > **Settings** > **API keys**, determine the API key used for integration and select **Revoke**.
-4. Recreate an API key in the Atlassian admin portal with the steps described above.
-5. Afterwards, go to the Defender for Cloud Apps portal and edit the connector:
+1. Microsoft recommends using short lived keys or tokens for connecting apps as a security best practice.
+1. We recommend refreshing the Atlassian API key every 6 months as a best practice. To refresh the key, revoke the existing API key and generate a new key.
+1. To revoke API key, navigate to **admin.atlassian.com** > **Settings** > **API keys**, determine the API key used for integration and select **Revoke**.
+1. Recreate an API key in the Atlassian admin portal with the steps described above.
+1. Afterwards, go to the Defender for Cloud Apps portal and edit the connector:
 
     ![Edit connector.](media/atlassian-edit-connector.png)
 

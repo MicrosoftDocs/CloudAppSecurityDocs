@@ -1,10 +1,10 @@
 ---
-title: Defender for Cloud Apps discovered app filters and queries
+title: Discovered app filters and queries
 description: This article provides a list of Defender for Cloud Apps discovered app filters and queries and explains how to work with them.
 ms.date: 12/21/2022
 ms.topic: how-to
 ---
-# Discovered app filters and queries
+# Discovered app filters and queries in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

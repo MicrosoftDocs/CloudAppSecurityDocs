@@ -1,5 +1,5 @@
 ---
-title: Protect with Microsoft Defender for Cloud Apps Conditional Access App Control
+title: Protect apps with Conditional Access App Control
 description: This article provides information about how the Defender for Cloud Apps Conditional Access App Control reverse proxy works.
 ms.date: 01/03/2023
 ms.topic: conceptual
@@ -181,7 +181,7 @@ It's possible to bypass the defined session policy by modifying parameters. For 
 Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
 
 - **Context loss**  
-In the following applications, we've encountered scenarios where navigating to a link may result in loss of the full path of the link and typically the user lands on the home page of the app. 
+In the following applications, we've encountered scenarios where navigating to a link may result in loss of the full path of the link and typically the user lands on the home page of the app.
   - ArcGIS
   - GitHub
   - Microsoft Dynamics 365 CRM
@@ -207,7 +207,7 @@ For example, an admin may define one of the following session policies:
   - Block file upload for files containing Social Security Number (SSN)
   - Protect file download for files containing PHI (Protected Health Information)
   - Block file download for with sensitivity label “very sensitive”
- 
+
   In such cases, files larger than 30 MB or 1 million characters are not scanned and are treated according to the policy setting of **Always apply the selected action even if the data cannot be scanned.**
 Here are some examples:
   - a TXT file, 1 MB size and 1 million characters: will be scanned
@@ -226,13 +226,13 @@ Here are some examples:
   - a selection of multiple folders
 
     Here are a few examples:
-    
+
   The security administrator defines the following policy: *Block upload of files containing PII to OneDrive*.
   - The user tries to upload a selection of 200 non-sensitive files using the file upload dialog. **Result:** the files are uploaded
   - The user tries to upload a selection of 200 non-sensitive files using drag & drop. **Result:** the files are blocked
   - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using the file upload dialog. **Result:** the non-sensitive files are uploaded, the sensitive files are blocked
   - The user tries to upload a selection of 200 files, some are sensitive, and some are not, using drag & drop. **Result:** the whole set of files is blocked
- 
+
 ## Next steps
 
 For instructions on how to onboard your apps, see the appropriate document below:

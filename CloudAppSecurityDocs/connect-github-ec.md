@@ -1,5 +1,5 @@
 ---
-title: Connect GitHub Enterprise Cloud to Defender for Cloud Apps
+title: Connect GitHub Enterprise Cloud 
 description: This article provides information about how to connect your GitHub Enterprise Cloud app to Defender for Cloud Apps using the API connector  for visibility and control over use.
 ms.date: 01/09/2023
 ms.topic: how-to
@@ -93,11 +93,11 @@ Repeat this step for each additional connected organization.
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
 
-1. Work with your GitHub organization owner to grant organization access to the OAuth app created. The organization owner should navigate to **Organization Settings** -> **Integrations** -> **Third-party access** to grant access. 
+1. Work with your GitHub organization owner to grant organization access to the OAuth app created. The organization owner should navigate to **Organization Settings** -> **Integrations** -> **Third-party access** to grant access.
 
  > [!NOTE]
- > 
- > The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps. 
+ >
+ > The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps.
 
 1. Make sure the connection succeeded by selecting **Test API**.
 

@@ -1,5 +1,5 @@
 ---
-title: Set email notification preferences
+title: Email notification preferences
 description: This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps.
 ms.date: 12/21/2022
 ms.topic: how-to

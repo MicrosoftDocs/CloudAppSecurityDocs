@@ -1,5 +1,5 @@
 ---
-title: Add custom apps to Cloud Discovery in Defender for Cloud Apps
+title: Add custom apps to Cloud Discovery 
 description: This topic provides information about how to add custom apps to Cloud Discovery in Defender for Cloud Apps to monitor Shadow IT.
 ms.date: 12/21/2022
 ms.topic: how-to

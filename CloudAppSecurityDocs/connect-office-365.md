@@ -1,5 +1,5 @@
 ---
-title: Connect Office 365 to Defender for Cloud Apps 
+title: Connect Office 365
 description: This article provides information about how to connect your Office 365 to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 01/09/2023
 ms.topic: how-to

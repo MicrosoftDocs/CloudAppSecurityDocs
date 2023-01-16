@@ -1,5 +1,5 @@
 ---
-title: How Defender for Cloud Apps helps protect your Egnyte environment (Preview)
+title: Protect your Egnyte environment (Preview)
 description: This article provides information about the benefits of connecting your Egnyte app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/21/2022
 ms.topic: article

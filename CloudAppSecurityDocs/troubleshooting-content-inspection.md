@@ -4,7 +4,7 @@ description: This article provides a list of content inspection statuses and the
 ms.date: 02/22/2022
 ms.topic: conceptual
 ---
-# Troubleshooting content inspection
+# Troubleshooting content inspection errors
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

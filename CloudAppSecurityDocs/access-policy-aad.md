@@ -1,10 +1,10 @@
 ---
-title: Create Defender for Cloud Apps access policies to allow and block access
+title: Access policies
 description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
 ms.date: 01/09/2023
 ms.topic: how-to
 ---
-# Access policies
+# Access policies in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

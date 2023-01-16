@@ -4,7 +4,7 @@ description: This article provides a set of best practices for protecting your o
 ms.date: 12/21/2022
 ms.topic: quickstart
 ---
-# Defender for Cloud Apps best practices
+# Best practices for protecting your organization with Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

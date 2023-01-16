@@ -1,5 +1,5 @@
 ---
-title: Set up your organization's settings in Defender for Cloud Apps
+title: Basic setup
 description: This article explains how to provide information about your organization in Defender for Cloud Apps.
 ms.date: 12/21/2022
 ms.topic: how-to

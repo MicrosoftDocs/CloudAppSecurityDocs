@@ -1,11 +1,11 @@
 ---
-title: App governance in Microsoft 365
+title: App governance add-on in Microsoft 365 Defender
 ms.date: 12/21/2022
 ms.topic: conceptual
 description: Implement Microsoft app governance capabilities to govern your apps.
 ---
 
-# App governance add-on to Defender for Cloud Apps
+# App governance add-on to Defender for Cloud Apps in Microsoft 365 Defender
 
 > [!NOTE]
 > To sign up for app governance, see [Get started with app governance](app-governance-get-started.md).
@@ -62,7 +62,3 @@ By sharing information across app governance, Azure AD, and Defender for Cloud A
 Here's a summary of the integration.
 ![The integration of app governance with Azure AD and Defender for Cloud Apps.](media/app-governance-manage-app-governance/app-governance-add-on-arch.png)
 App governance sends its alerts to Microsoft 365 Defender to enable more detailed analysis of app-based security incidents. App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance".
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: How Defender for Cloud Apps helps protect your Google Workspace environment
+title: Protect your Google Workspace environment
 description: This article provides information about the benefits of connecting your Google Workspace app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 08/08/2022
 ms.topic: article

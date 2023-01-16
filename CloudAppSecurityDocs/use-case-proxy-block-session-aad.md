@@ -1,10 +1,10 @@
 ---
-title: Block downloads from unmanaged devices with Defender for Cloud Apps Conditional Access App Control tutorial
+title: Block download of sensitive information with Conditional Access App Control
 description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
 ms.date: 01/09/2023
 ms.topic: tutorial
 ---
-# Tutorial: Block download of sensitive information
+# Tutorial: Block download of sensitive information with Conditional Access App Control
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

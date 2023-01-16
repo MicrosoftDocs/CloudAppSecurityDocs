@@ -1,5 +1,5 @@
 ---
-title: Integrate Defender for Cloud Apps with iboss
+title: Integrate with iboss
 description: This article describes how to integrate Microsoft Defender for Cloud Apps with iboss secure cloud gateway for seamless Cloud Discovery and automated block of unsanctioned apps.
 ms.date: 12/21/2022
 ms.topic: how-to
@@ -32,7 +32,7 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 
         ![data source iboss.](media/iboss-integration.png)
 
-    4. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
+    4. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.
 
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 

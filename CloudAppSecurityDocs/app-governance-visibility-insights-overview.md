@@ -55,10 +55,6 @@ To provide insights into how OAuth apps use Microsoft 365 data, including data w
 
 To get detailed information about app activity on Microsoft 365, search the Microsoft Purview audit log.
 
-
 ## Next step
 
 [Get started with application insights.](app-governance-visibility-insights-get-started.md)
-
-
-

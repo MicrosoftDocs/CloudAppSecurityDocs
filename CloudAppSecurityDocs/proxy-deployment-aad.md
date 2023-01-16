@@ -15,8 +15,8 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
-   - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/license-users-groups) or higher
-   - Microsoft Defender for Cloud Apps
+  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/license-users-groups) or higher
+  - Microsoft Defender for Cloud Apps
 - Apps must be configured with single sign-on
 - Apps must use one of the following authentication protocols:
 
@@ -24,15 +24,12 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
    |---|---|
    |Azure AD|SAML 2.0 or OpenID Connect|
    |Other|SAML 2.0|
-   
 
 ## To deploy catalog apps
 
 Follow the steps below to configure catalog apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
 
 ### Configure integration with Azure AD
-
-
 
 > [!NOTE]
 > When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
@@ -73,7 +70,7 @@ Once you're ready to enable the app for use in your organization's production en
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use the app with session controls** and then select **Save**.
 
-   ![Edit this app dialogue.](media/proxy-deployment-aad/edit-app-checked.png) 
+   ![Edit this app dialogue.](media/proxy-deployment-aad/edit-app-checked.png)
 
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Azure AD, or for a SAML app configured with your identity provider.
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
