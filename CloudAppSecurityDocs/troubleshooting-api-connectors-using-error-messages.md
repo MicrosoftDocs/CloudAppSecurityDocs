@@ -4,7 +4,7 @@ description: This article provides a list of API App connector error messages as
 ms.date: 02/02/2022
 ms.topic: conceptual
 ---
-# Troubleshooting App Connectors using error messages
+# Troubleshooting App Connector error messages
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

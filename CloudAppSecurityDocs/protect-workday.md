@@ -1,5 +1,5 @@
 ---
-title: How Defender for Cloud Apps helps protect your Workday environment
+title: Protect your Workday environment
 description: This article provides information about the benefits of connecting your Workday app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 02/02/2022
 ms.topic: article

@@ -1,5 +1,5 @@
 ---
-title: Connect Box to Defender for Cloud Apps
+title: Connect Box
 description: This article provides information about how to connect your Box app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/21/2022
 ms.topic: how-to
@@ -62,7 +62,7 @@ Box is now connected to Defender for Cloud Apps.
 After connecting Box:
 
 - You'll receive events for the 7 days prior to connection.
-- Defender for Cloud Apps will perform a full scan of all files. Depending on how many files and users you have, completing the full scan can take awhile. 
+- Defender for Cloud Apps will perform a full scan of all files. Depending on how many files and users you have, completing the full scan can take a while.
 
 To enable near real-time scanning, files on which activities are detected are moved to the beginning of the scan queue. For example, a file that is edited, updated, or shared is scanned right away rather than waiting for the regular scan process. Near real-time scanning doesn't apply to files that aren't inherently modified. For example, files that are viewed, previewed, printed, or exported are scanned as part of the regularly scheduled scan.
 

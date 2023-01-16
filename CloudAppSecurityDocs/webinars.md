@@ -1,5 +1,5 @@
 ---
-title: Watch our webinars 
+title: Webinars 
 description: Displays a listing of past webinars, including a description.
 ms.date: 02/02/2022
 ms.topic: conceptual

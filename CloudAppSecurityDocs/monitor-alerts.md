@@ -1,5 +1,5 @@
 ---
-title: Monitor alerts raised in Defender for Cloud Apps
+title: Monitor alerts 
 description: This article provides a list and description of all alerts.
 ms.date: 01/03/2023
 ms.topic: how-to

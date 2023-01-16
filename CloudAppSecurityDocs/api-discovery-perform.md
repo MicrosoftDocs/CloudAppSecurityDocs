@@ -24,6 +24,7 @@ PUT https://<initiate_file_upload_response_url>
 > [!NOTE]
 >
 > For Azure:
+>
 > - If your file is under 64 MB, add the header "x-ms-blob-type: BlockBlob" to your request.
 > - If your file size is greater than 64MB, upload it in chunks. the easiest way to do this is using the [Azure SDK](https://azure.microsoft.com/downloads/).
 

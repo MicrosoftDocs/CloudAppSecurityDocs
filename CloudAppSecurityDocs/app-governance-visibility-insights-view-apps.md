@@ -15,8 +15,10 @@ App governance allows you to quickly gain deep insights into the Microsoft 365 O
 ## Getting a list of all the apps in your tenant
 
 For a summary of apps in your tenant, go to **Microsoft 365 Defender > App governance > Apps**.
+
 ![The app governance app summary page in Microsoft 365 Defender.](media/app-governance-visibility-insights-view-apps/appg-cc-apps.png)
->[!Note]
+
+>[!NOTE]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
 
@@ -79,12 +81,9 @@ For detailed information on a specific app in your tenant, go to **Microsoft 365
 >![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)
 
 > [!div class="mx-imgBorder"]
->![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365](media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png)
-
-
+>![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365.](media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png)
 
 The app details pane provides additional information on these tabs:
-
 
 | Tab name | Description |
 |:-------|:-----|
@@ -95,6 +94,7 @@ The app details pane provides additional information on these tabs:
 |Sensitive labels | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
 
 For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
+
 - Compliance Administrator
 - Global or Company Administrator
 - Security Administrator
@@ -103,8 +103,3 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 ## Next step
 
 [Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
-
-
-
-
-

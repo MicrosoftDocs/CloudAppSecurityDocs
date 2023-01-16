@@ -1,10 +1,10 @@
 ---
-title: Discover and manage Shadow IT tutorial
+title: Discover and manage Shadow IT 
 description: This tutorial describes the process to discover and manage Shadow IT in Microsoft Defender for Cloud Apps.
 ms.date: 01/09/2023
 ms.topic: tutorial
 ---
-# Tutorial: Discover and manage shadow IT in your network
+# Tutorial: Discover and manage shadow IT
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -36,11 +36,11 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
     - Integrate Defender for Cloud Apps with your proxy. Defender for Cloud Apps natively integrates with some third-party proxies, including [Zscaler](zscaler-integration.md).
 
-Because policies are different across user groups, regions and business groups, you might want to create a dedicated Shadow IT report for each of these units. For more information, see [Create custom continuous reports](discovery-docker-windows.md#optional---create-custom-continuous-reports).
+    Because policies are different across user groups, regions and business groups, you might want to create a dedicated Shadow IT report for each of these units. For more information, see [Create custom continuous reports](discovery-docker-windows.md#optional---create-custom-continuous-reports).
 
-Now that Cloud Discovery is running on your network, look at the continuous reports that are generated and look at the [Cloud Discovery dashboard](working-with-cloud-discovery-data.md) to get a full picture of what apps are being used in your organization. It's a good idea to look at them by category, because you'll often find that non-sanctioned apps are being used for legitimate work-related purposes that weren't addressed by a sanctioned app.
+    Now that Cloud Discovery is running on your network, look at the continuous reports that are generated and look at the [Cloud Discovery dashboard](working-with-cloud-discovery-data.md) to get a full picture of what apps are being used in your organization. It's a good idea to look at them by category, because you'll often find that non-sanctioned apps are being used for legitimate work-related purposes that weren't addressed by a sanctioned app.
 
-2. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud App Catalog includes over 31,000 apps that are assessed using over 90 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
+1. **Identify the risk levels of your apps**: Use the Defender for Cloud Apps catalog to dive deeper into the risks that are involved with each discovered app. The Defender for Cloud App Catalog includes over 31,000 apps that are assessed using over 90 risk factors. The risk factors start from general information about the app (where are the app's headquarters, who is the publisher), and through security measures and controls (support for encryption at rest, provides an audit log of user activity). For more information, see [Working with risk score](risk-score.md),
 
     - In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under **Discover**, select **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you're concerned about. For example, you can use the Advanced filters to find all apps with a risk score lower than 8.
 

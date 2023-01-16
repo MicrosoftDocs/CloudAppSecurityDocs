@@ -1,5 +1,5 @@
 ---
-title: Get security configuration recommendations for Azure
+title: Security configuration for Azure
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps by integrating with Microsoft Defender for Cloud.
 ms.date: 12/21/2022
 ms.topic: how-to

@@ -1,5 +1,5 @@
 ---
-title: Governance actions to control connected apps 
+title: Governing connected apps
 description: This article lists and describes all the governance actions that can be taken in Defender for Cloud Apps and the log messages that track them.
 ms.date: 01/09/2023
 ms.topic: how-to
@@ -160,4 +160,3 @@ For information about how governance actions are treated when there are policy c
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

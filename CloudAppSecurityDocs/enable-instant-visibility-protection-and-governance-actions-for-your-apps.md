@@ -4,7 +4,7 @@ description: This article describes the process for connecting apps with API con
 ms.date: 12/21/2022
 ms.topic: how-to
 ---
-# Connect apps
+# Connect apps to get visibility and control with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

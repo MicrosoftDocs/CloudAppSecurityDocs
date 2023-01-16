@@ -4,7 +4,7 @@ description: This article provides a list of Cloud Discovery frequent errors and
 ms.date: 02/22/2022
 ms.topic: conceptual
 ---
-# Troubleshooting Cloud Discovery
+# Troubleshooting Cloud Discovery errors
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -27,7 +27,7 @@ You can track the processing of Cloud Discovery logs using the governance log. T
 
 |Error|Description|Resolution|
 |----|----|----|
-|Unsupported file type|The file uploaded isn't a valid log file (for example, an image file).|Upload a **text**, **zip, or **gzip** file that was directly exported from your firewall or proxy.|
+|Unsupported file type|The file uploaded isn't a valid log file (for example, an image file).|Upload a **text**, **zip**, or **gzip** file that was directly exported from your firewall or proxy.|
 |The log format does not match|The log format you uploaded didn't match the expected log format for this data source.|1. Verify that the log isn't corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
 |Transactions are more than 90 days old|All transactions are more than 90 days old and are being ignored.|Export a new log with recent events and reupload it.|
 |No transactions to cataloged cloud apps|No transactions to any recognized cloud apps are found in the log.|Verify that the log contains outbound traffic information.|

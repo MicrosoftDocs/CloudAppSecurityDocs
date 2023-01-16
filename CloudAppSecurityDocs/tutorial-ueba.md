@@ -1,5 +1,5 @@
 ---
-title: Investigate risky users tutorial
+title: Investigate risky users 
 description: This tutorial describes the process to investigate risky users in Microsoft Defender for Cloud Apps, across hybrid environments, by integrating with Microsoft Defender for Identity.
 ms.date: 12/21/2022
 ms.topic: tutorial
@@ -61,7 +61,7 @@ The **investigation priority number**, found next to the user name, is a sum of 
    ![Top users dashboard.](media/dashboard-top-users.png)
 
 1. Select a particular user to get to the **User** page.
-    ![User page](media/user-page.png)
+    ![User page.](media/user-page.png)
 
 1. Review the information in the User page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.  
 The User page helps you answer the questions:

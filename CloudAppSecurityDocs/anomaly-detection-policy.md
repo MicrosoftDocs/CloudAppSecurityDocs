@@ -1,11 +1,11 @@
 ---
-title: Create anomaly detection policies in Defender for Cloud Apps
+title: Anomaly detection policies
 description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
 ms.date: 12/21/2022
 ms.topic: how-to
 ---
 
-# Get behavioral analytics and anomaly detection
+# Anomaly detection policies in Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

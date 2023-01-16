@@ -4,7 +4,7 @@ description: This article provides a list of possible issues when connecting you
 ms.date: 12/21/2022
 ms.topic: conceptual
 ---
-# Troubleshooting the SIEM agent
+# Troubleshooting SIEM integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

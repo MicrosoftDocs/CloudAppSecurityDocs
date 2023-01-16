@@ -1,5 +1,5 @@
 ---
-title: How Defender for Cloud Apps helps protect your Google Cloud Platform environment
+title: Protect your Google Cloud Platform environment
 description: This article provides information about the benefits of connecting your Google Cloud Platform app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 06/14/2022
 ms.topic: article

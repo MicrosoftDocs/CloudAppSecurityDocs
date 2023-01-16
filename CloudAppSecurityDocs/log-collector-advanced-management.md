@@ -53,7 +53,7 @@ Follow this procedure to customize the certificate files you use for secure conn
     ![Upload certificate files.](media/log-collector-advanced-tasks/new-certs.png)
 
     - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
-    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files are missing, the update won't take place.
+    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem**, and **server-cert.pem**. If any of the files are missing, the update won't take place.
 
 1. In a terminal window run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 
@@ -126,8 +126,8 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
 You should see your imported proxy CA certificate.
 
 #### Restrict IP addresses sending syslog messages to the log collector on Linux
-To secure the docker image and ensure that only one IP address is allowed to send the syslog messages to the log collector, an IP table rule can be created on the host machine to allow input traffic over (TCP/601 or UDP/514 depending on the deployment) and drop the traffic coming over those ports. 
 
+To secure the docker image and ensure that only one IP address is allowed to send the syslog messages to the log collector, an IP table rule can be created on the host machine to allow input traffic over (TCP/601 or UDP/514 depending on the deployment) and drop the traffic coming over those ports.
 
 This is an example of an IP table rule that can be added to the host machine to allow IP address 1.2.3.4 to connect to the log collector container over TCP port 601 and drop all other connections coming from other IP addresses over that port:
 
@@ -263,9 +263,9 @@ Use these steps to download the log collector image using a computer that has ac
 >
 > - The downloaded image can be imported either in your private repository or directly on your host. The following steps guide you through downloading your log collector image to your Windows computer and then uses WinSCP to move the log collector to your destination host.
 > - To install Docker on your host, download the desired operating system:
->   - https://download.docker.com/linux/ubuntu
->   - https://download.docker.com/linux/centos/
->   - https://download.docker.com/linux/rhel/
+>   - <https://download.docker.com/linux/ubuntu>
+>   - <https://download.docker.com/linux/centos/>
+>   - <https://download.docker.com/linux/rhel/>
 >
 > After the download, use the [offline installation guide](https://docs.docker.com/engine/install/binaries/) to install your operating system.
 

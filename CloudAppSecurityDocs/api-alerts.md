@@ -1,5 +1,5 @@
 ---
-title: Defender for Cloud Apps Alerts API
+title: Alerts API
 description: This article provides information about using the Alerts API.
 ms.date: 02/02/2022
 ms.topic: reference

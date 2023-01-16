@@ -1,5 +1,5 @@
 ---
-title: Defender for Cloud Apps anomaly detection alerts investigation guide
+title: How to investigate anomaly detection alerts
 description: This article explains how to investigate the Defender for Cloud Apps anomaly detection alerts issued when attacks are detected against your organization.
 ms.date: 12/21/2022
 ms.topic: how-to
@@ -443,7 +443,7 @@ Learning your organization's environment requires a period of seven days during 
 
 The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
 
-**Learning period** 
+**Learning period**
 
 The learning period for this detection is 30 days.  
 
