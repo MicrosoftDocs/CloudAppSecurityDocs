@@ -1,5 +1,5 @@
 ---
-title: Connect Workday to Defender for Cloud Apps
+title: Connect Workday
 description: This article provides information about how to connect your Workday app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 12/21/2022
 ms.topic: how-to
@@ -75,9 +75,9 @@ For more information about setting up Workday integration users, security groups
     * Authorization Endpoint
 
     ![Screenshot of confirming registration of API client.](media/connect-workday-register-api-client-confirm.png)
-    
+
 >[!NOTE]
->If the Workday account is enabled with SAML SSO, then append the query string parameter `'redirect=n'` to the authorization endpoint. 
+>If the Workday account is enabled with SAML SSO, then append the query string parameter `'redirect=n'` to the authorization endpoint.
 >
 >If the authorization endpoint already has other query string parameters, then append `'&redirect=n'` to the end of authorization endpoint. If the authorization endpoint doesn't have any query string parameters, then append `'?redirect=n'` to the end of authorization endpoint.
 

@@ -4,7 +4,7 @@ description: This article provides information about how plan a lifecycle manage
 ms.date: 06/14/2022
 ms.topic: conceptual
 ---
-# Defender for Cloud Apps lifecycle management strategy
+# Lifecycle management strategy in Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -13,7 +13,7 @@ By using a lifecycle management strategy, you can ensure your configurations, ex
 >[!NOTE]
 >Remember to also check [What's New in Defender for Cloud Apps](release-notes.md) to stay current with new features and releases.
 
-![Microsoft Defender for Cloud Apps lifecycle management](media/cloud-app-security-lifecycle.png)
+![Microsoft Defender for Cloud Apps lifecycle management.](media/cloud-app-security-lifecycle.png)
 
 To best maintain Defender for Cloud Apps posture, regularly follow the recommendations below:
 

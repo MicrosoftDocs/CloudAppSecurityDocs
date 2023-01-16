@@ -32,7 +32,6 @@ Here's an example of a process for managing an existing policy:
 > [!NOTE]
 > Following the change in the **Activity type** filter, policies with the previous filter will have a "LEGACY" label attached to the filter and if the policies are edited or deleted the filter can't be restored.
 
-
 ## Editing an app policy configuration
 
 To change the configuration of an existing app policy:

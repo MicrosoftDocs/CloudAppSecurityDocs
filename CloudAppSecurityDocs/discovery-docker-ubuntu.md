@@ -1,10 +1,10 @@
 ---
-title: Configure automatic log upload using on-premises Docker
+title: Configure automatic log upload using on-premises Docker on Linux
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Linux in an on-premises server.
 ms.date: 01/08/2023
 ms.topic: how-to
 ---
-# Docker on Linux on-premises
+# Configure automatic log upload using on-premises Docker on Linux
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

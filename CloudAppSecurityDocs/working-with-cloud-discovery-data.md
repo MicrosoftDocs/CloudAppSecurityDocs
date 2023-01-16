@@ -1,5 +1,5 @@
 ---
-title: Use Cloud Discovery data to detect risky behavior 
+title: Working with discovery data
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
 ms.date: 12/21/2022
 ms.topic: conceptual

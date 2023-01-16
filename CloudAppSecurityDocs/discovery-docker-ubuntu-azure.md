@@ -4,7 +4,7 @@ description: This article describes the process configuring automatic log upload
 ms.date: 01/08/2023
 ms.topic: how-to
 ---
-# Docker on Linux in Azure
+# Configure automatic log upload using Docker in Azure
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

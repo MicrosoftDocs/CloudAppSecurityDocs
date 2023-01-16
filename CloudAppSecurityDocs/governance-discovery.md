@@ -1,5 +1,5 @@
 ---
-title: Blocking discovered apps 
+title: Govern discovered apps 
 description: This article describes the procedure for governing your discovered apps by blocking their usage in your organization.
 ms.date: 12/21/2022
 ms.topic: how-to

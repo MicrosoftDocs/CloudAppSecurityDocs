@@ -51,11 +51,12 @@ When you are first setting up Defender for Cloud Apps access and session control
     1. Verify that the login is working as expected
 1. Enable TLS 1.2 in your browser's internet options.
 
-1. > [!NOTE]
+   > [!NOTE]
+   >
    > - Defender for Cloud Apps leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+ will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
-   > 
+   >
    > - While session controls are built to work with any browser on any major platform on any operating system, we support Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
-   
+
  | Browser | Steps |
  |---|---|
  | Microsoft Internet Explorer | 1. Open Internet Explorer<br />2. Select **Tools** > **Internet Options** > **Advance** tab<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
@@ -77,7 +78,7 @@ Proxy chaining and nonce-handling are some of the common issues that could resul
 
 1. > [!NOTE]
    > Some apps use a nonce hash during authentication to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If the app you are working with does not use nonce, you can disable nonce-handling for this app in Defender for Cloud Apps.
-   
+
     1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
     1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit** app.
     1. Click **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
@@ -96,17 +97,17 @@ While troubleshooting network conditions, there are some additional things to co
 
 - **Proxy performance**
 
-    Deriving a performance baseline depends on many factors outside of the Defender for Cloud Apps proxy, such as:
+  Deriving a performance baseline depends on many factors outside of the Defender for Cloud Apps proxy, such as:
 
-    - What other proxies or gateways sit in series with this proxy
-    - Where the user is coming from
-    - Where the targeted resource resides
-    - Specific requests on the page
+  - What other proxies or gateways sit in series with this proxy
+  - Where the user is coming from
+  - Where the targeted resource resides
+  - Specific requests on the page
 
-    In general, any proxy will add latency. The advantages of the Defender for Cloud Apps proxy are:
+  In general, any proxy will add latency. The advantages of the Defender for Cloud Apps proxy are:
 
-    - Leveraging the global availability of Azure domain controllers to geolocate users to the nearest node and reduce their round-trip distance, on a scale that few services around the world have.
-    - Leveraging the integration with Azure AD Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
+  - Leveraging the global availability of Azure domain controllers to geolocate users to the nearest node and reduce their round-trip distance, on a scale that few services around the world have.
+  - Leveraging the integration with Azure AD Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
 
 ### Device identification
 
@@ -135,9 +136,9 @@ Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD joined 
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
 1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are set up.
 
-1. > [!NOTE]
+   > [!NOTE]
    > These are automatically synced from Azure AD and Intune respectively.
-   
+
 1. Create an access or session policy with the **Device Tag** filter equal to **Hybrid Azure AD joined**, **Intune compliant**, or both.
 1. In a browser, log in to a device that is Hybrid Azure AD joined or Intune compliant based on your policy filter.
 1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Hybrid Azure AD joined**, **Intune compliant**, or both based on your policy filters.
@@ -351,17 +352,17 @@ After adding a custom app, in the **Conditional Access App Control apps** page, 
 1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 1. Create a session policy, select the **App** filter, make sure that your app is now listed in the dropdown list.
 
-#### Cannot choose **Inspection Method**: **Data Classification Service**
+#### Cannot choose Inspection Method: Data Classification Service
 
 In session policies, when using the **Control file download (with inspection)** session control type, you can use the **Data Classification Service** inspection method to scan your files in real time and detect sensitive content that matches any of the criteria you have configured. If the **Data Classification Service** inspection method is not available, use the following steps to investigate the issue.
 
 **Recommended steps**
 
-1. 1. Verify that the **Session control type** is set to **Control file download (with inspection)**.
+1. Verify that the **Session control type** is set to **Control file download (with inspection)**.
 
    > [!NOTE]
    > The **Data Classification Service** inspection method is only available for the **Control file download (with inspection)** option.
-   
+
 1. Determine whether the **Data Classification Service** feature is available in your [region](dcs-inspection.md).
     1. If the feature is not available in your region, use the **Built-in DLP** inspection method.
     1. If the feature is available in your region but you still can't see the **Data Classification Service** inspection method, open a [support ticket](support-and-ts.md).
@@ -397,7 +398,7 @@ The Admin View toolbar provides tools for an admin to diagnose and troubleshoot 
 
 To enable the Admin View toolbar for specific admin users, you first must add admins to the app onboarding/maintenance list.
 
-1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4](media/settings-icon.png "settings icon 4") and select **Settings**.
+1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4.](media/settings-icon.png "settings icon 4") and select **Settings**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -442,7 +443,7 @@ To record a session, follow these steps:
 1. Sign in to the application to begin the scenario simulation.
 1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar.
 
-1.  ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
+    ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
 
 1. After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
@@ -581,7 +582,7 @@ For apps experiencing context loss, please submit a support ticket. We will work
 
 Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Defender for Cloud Apps to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked, with a message like this:
 
-![Blocked download](media/before-powershell.png)
+![Blocked download.](media/before-powershell.png)
 
 To allow the preview, an Exchange administrator should perform the following steps:
 
@@ -598,7 +599,7 @@ To allow the preview, an Exchange administrator should perform the following ste
 
 1. After these parameters have been set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file.
 
-    ![PDF preview not blocked](media/after-powershell.png)
+    ![PDF preview not blocked.](media/after-powershell.png)
 
 ### Similar site warning appears
 
@@ -627,5 +628,3 @@ While troubleshooting apps, there are some additional things to consider.
     A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If you are confident the app does not use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
 
     If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
-
-

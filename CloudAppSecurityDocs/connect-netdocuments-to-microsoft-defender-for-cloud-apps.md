@@ -1,5 +1,5 @@
 ---
-title: Connect NetDocuments to Defender for Cloud Apps
+title: Connect NetDocuments
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing NetDocuments using the App Connector APIs. 
 ms.date: 02/02/2022
 ms.topic: how-to

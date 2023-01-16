@@ -1,5 +1,5 @@
 ---
-title: Get security configuration recommendations for GCP
+title: Security configuration for Google Cloud Platform
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps by integrating with Google Cloud Platform.
 ms.date: 12/21/2022
 ms.topic: how-to

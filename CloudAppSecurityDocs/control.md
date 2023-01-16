@@ -1,10 +1,10 @@
 ---
-title: How to use governance actions in Defender for Cloud Apps
+title: Governance actions
 description: This article provides information about the governance actions you can take in Defender for Cloud Apps to control your organization's cloud app use.
 ms.date: 05/24/2022
 ms.topic: how-to
 ---
-# Control
+# Governance actions in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

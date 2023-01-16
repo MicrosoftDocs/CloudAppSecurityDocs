@@ -1,5 +1,5 @@
 ---
-title: Generic SIEM integration with Defender for Cloud Apps
+title: Generic SIEM integration 
 description: This article provides information integrating your generic SIEM with Defender for Cloud Apps.
 ms.date: 12/21/2022
 ms.topic: how-to

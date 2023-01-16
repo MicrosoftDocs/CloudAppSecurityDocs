@@ -54,7 +54,7 @@ Here is an example of the request.
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery_block_scripts/?format=102&type=banned"
 ```
 
-### Response
+### Response example
 
 ```text
 url.domain=application.com deny

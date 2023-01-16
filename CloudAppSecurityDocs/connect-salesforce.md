@@ -1,5 +1,5 @@
 ---
-title: Connect Salesforce to Defender for Cloud Apps
+title: Connect Salesforce
 description: This article provides information about how to connect your Salesforce to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 01/10/2023
 ms.topic: how-to
@@ -14,7 +14,6 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
 > [!NOTE]
 > Salesforce Shield should be available for your Salesforce instance as a prerequisite for this integration.
-> 
 
 1. It's recommended to have a dedicated service admin account for Defender for Cloud Apps.
 
@@ -68,9 +67,9 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
         ![Salesforce session settings.](media/salesforce-setup-session-settings.png)
 
     1. Select **Save**.
-    
+
     1. Go to **Build** -> **Customize** -> **Salesforce Files** -> **Settings** -> **Content Deliveries and Public Links**.
-    
+
     1. Select **Edit** and then select **Checked Content Deliveries feature can be enabled for users**
 
     1. Select **Save**.
@@ -107,10 +106,9 @@ After connecting Salesforce, you'll receive Events as follows: Log in events and
 > Limiting API calls due to the limitation may slow down the rate at which data is ingested in Defender for Cloud Apps, but usually catches up over night.
 
 > [!NOTE]
-> If your Salesforce instance is not in English, make sure to select the appropriate **language** attribute value for the integration service admin account. 
+> If your Salesforce instance is not in English, make sure to select the appropriate **language** attribute value for the integration service admin account.
 >
-> To change the language attribute, navigate to **Administration** -> **Users** -> **User** and open the integration system admin account. Now navigate to **Locale Settings** -> **Language** and select the desired langugage.
-
+> To change the language attribute, navigate to **Administration** -> **Users** -> **User** and open the integration system admin account. Now navigate to **Locale Settings** -> **Language** and select the desired language.
 
 Salesforce events are processed by Defender for Cloud Apps as follows:
 

@@ -1,5 +1,5 @@
 ---
-title: Defender for Cloud Apps REST API
+title: REST API
 description: This article describes how to interact with Defender for Cloud Apps over HTTPS.
 ms.date: 05/24/2022
 ms.topic: reference
@@ -45,7 +45,7 @@ Where `<your_token_key>` is your personal API token.
 
 For more information about API tokens, see [Managing API tokens](api-authentication.md).
 
-### Example
+### API tokens - example
 
 ```rest
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
@@ -107,7 +107,7 @@ Some of our API endpoints support filters when performing queries. In their rele
 
 Most filters support multiple values to provide you with powerful queries. When combining filters and operators we use AND as the logical operator between the filters.
 
-### Example
+### Filters - example
 
 ```rest
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{

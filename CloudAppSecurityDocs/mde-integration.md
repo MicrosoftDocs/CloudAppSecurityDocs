@@ -1,10 +1,10 @@
 ---
-title: Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps
+title: Integrate Microsoft Defender for Endpoint
 description: This article describes how to integrate Microsoft Defender for Endpoint with Defender for Cloud Apps for enhanced visibility into Shadow IT and risk management.
 ms.date: 01/03/2023
 ms.topic: how-to
 ---
-# Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps
+# Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

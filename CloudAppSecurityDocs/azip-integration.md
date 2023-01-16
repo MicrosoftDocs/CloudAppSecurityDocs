@@ -1,10 +1,10 @@
 ---
-title: Integrate Microsoft Purview Information Protection with Defender for Cloud Apps
+title: Integrate Microsoft Purview Information Protection 
 description: This article provides information about how to use sensitivity labels from Microsoft Purview Information Protection in Defender for Cloud Apps for added control of your organization's cloud app use.
 ms.date: 12/21/2022
 ms.topic: how-to
 ---
-# Microsoft Purview Information Protection integration
+# Integrate Microsoft Purview Information Protection
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -63,8 +63,6 @@ You can see the sensitivity labels from Microsoft Purview Information Protection
 > - Defender for Cloud Apps doesn't support reading labels of password-protected files.
 > - Empty files will not be labeled.
 > - Defender for Cloud Apps doesn't support labeling files in a [library that is configured to require checkout](https://support.microsoft.com/office/set-up-a-library-to-require-check-out-of-files-0c73792b-f727-4e19-a1f9-3173899e695b).
-
-<a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>
 
 ## How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps
 
@@ -130,7 +128,7 @@ Follow these instructions to create the file policy:
 >
 > - The ability to apply a sensitivity label is a powerful capability. To protect customers from mistakenly applying a label to a large number of files, as a safety precaution there is a daily limit of 100 **Apply label** actions per app, per tenant. After the daily limit is reached, the apply label action pauses temporarily and continues automatically the next day (after 12:00 UTC). To raise the limit for your tenant, open a support ticket.
 > - When a policy is disabled, all pending labeling tasks for that policy are suspended.
-> - In the label configuration, permissions must be assigned to any authenticated user, or all users in your organization, for Defender for Cloud Apps to read label information. 
+> - In the label configuration, permissions must be assigned to any authenticated user, or all users in your organization, for Defender for Cloud Apps to read label information.
 
 ### Control file exposure
 
@@ -151,7 +149,7 @@ Follow these instructions to create the file policy:
 - You can create a policy that automatically applies a sensitivity label to specific files.
 - You can also trigger alerts on activities related to file classification.
 
-> [!Note]
+> [!NOTE]
 > When sensitivity labels are disabled on a file, the disabled labels appear as disabled in Defender for Cloud Apps. Deleted labels are not displayed.
 
 **Sample policy - confidential data that is externally shared on Box:**

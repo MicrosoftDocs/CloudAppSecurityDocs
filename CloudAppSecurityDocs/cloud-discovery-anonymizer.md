@@ -1,5 +1,5 @@
 ---
-title: Anonymize user data in Defender for Cloud Apps
+title: Cloud Discovery data anonymization
 description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
 ms.date: 12/21/2022
 ms.topic: how-to

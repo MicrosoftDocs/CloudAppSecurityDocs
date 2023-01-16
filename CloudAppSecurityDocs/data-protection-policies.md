@@ -1,10 +1,10 @@
 ---
-title: Monitor and protect files in cloud apps 
+title: File policies
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 ms.date: 12/21/2022
 ms.topic: how-to
 ---
-# File policies
+# File policies in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

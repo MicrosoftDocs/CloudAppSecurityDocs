@@ -1,10 +1,10 @@
 ---
-title: How Defender for Cloud Apps performs DLP content inspection
+title: DLP content inspection
 description: This article describes the process Defender for Cloud Apps follows when performing DLP content inspection on data in your cloud.
 ms.date: 06/14/2022
 ms.topic: how-to
 ---
-# Content inspection
+# DLP content inspection in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

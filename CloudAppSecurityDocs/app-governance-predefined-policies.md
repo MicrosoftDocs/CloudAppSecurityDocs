@@ -12,7 +12,6 @@ App governance contains a set of out of the box policies to detect anomalous app
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YpJN]
 
-
 ## Working with predefined policies
 
 - To view available predefined policies, go to **Microsoft 365 Defender** > **App governance** > **Overview** and select **View predefined policies** in the **Predefined policies** section.  

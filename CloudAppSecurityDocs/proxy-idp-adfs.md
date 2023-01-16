@@ -1,10 +1,10 @@
 ---
-title: Deploy Defender for Cloud Apps Conditional Access App Control for any web app using AD FS
+title: Deploy Conditional Access App Control for any web app using AD FS
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using AD FS as the identity provider.
 ms.date: 12/21/2022
 ms.topic: how-to
 ---
-# Onboard and deploy Conditional Access App Control for any web app using Active Directory Federation Services (AD FS) as the identity provider (IdP)
+# Deploy Conditional Access App Control for any web app using Active Directory Federation Services (AD FS) as the identity provider (IdP)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -27,7 +27,6 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 ## To configure session controls for your app using AD FS as the IdP
 
 Use the following steps to route your web app sessions from AD FS to Defender for Cloud Apps. For Azure AD configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
-
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by AD FS using one of the following methods:

@@ -4,7 +4,7 @@ description: This article provides instructions for attesting your apps in Defen
 ms.date: 02/02/2022
 ms.topic: conceptual
 ---
-# Attest your app
+# Attest your apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

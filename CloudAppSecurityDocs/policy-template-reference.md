@@ -1,5 +1,5 @@
 ---
-title: Policy template reference for Defender for Cloud Apps
+title: Policy template reference
 description: This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
 ms.date: 12/21/2022
 ms.topic: how-to
