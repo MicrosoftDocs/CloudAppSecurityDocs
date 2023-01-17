@@ -56,7 +56,7 @@ You can see the sensitivity labels from Microsoft Purview Information Protection
 
 > [!NOTE]
 >
-> - Labels with protection outside of Defender for Cloud Apps can be overridden by Defender for Cloud Apps, but can't be removed. In addition, you can scan these files by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
+> - Unprotected Labels applied outside of Defender for Cloud Apps can be overridden by Defender for Cloud Apps, but can't be removed. Files with protection outside of Defender for Cloud Apps can be scanned by granting permissions to [inspect content for protected files](content-inspection.md#content-inspection-for-protected-files).
 > - Defender for Cloud Apps doesn't support overriding labels for files that were labeled by Defender for Cloud Apps.
 > - Defender for Cloud Apps doesn't support removing labels with protection from files that were labeled by Defender for Cloud Apps with the "override user defined labels" option.
 > - Defender for Cloud Apps doesn't support removing labels with protection from files that were labeled outside Defender for Cloud Apps.
