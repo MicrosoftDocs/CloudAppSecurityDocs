@@ -35,17 +35,17 @@ You can set the **Inspection method** to use the **Microsoft Data Classification
 
 Setting these policies enables you to easily extend the strength of the Office 365 DLP capabilities to all your other sanctioned cloud apps and protect the data stored in them with the full toolset provided to you by Microsoft Defender for Cloud Apps – such as the ability to [automatically apply Microsoft Information Protection sensitivity labels](azip-integration.md) and the ability to control sharing permissions.
 
-## Examine evidence
+## Examine evidence (preview)
 
-Defender for Cloud Apps allows users the ability to explore matched files. Now Defender for Cloud Apps also allows users to differentiate between multiple sensitive information types (SITs) in the same file match. This feature, known as short evidence, lets Defender for Cloud Apps users better manage and protect their organization's sensitive data.
+Defender for Cloud Apps already includes the ability to explore policy file matches that contain sensitive information types (SITs). Now Defender for Cloud Apps also allows you to differentiate between multiple SITs in the same file match. This feature, known as short evidence, lets Defender for Cloud Apps better manage and protect your organization's sensitive data.
 
 The short evidence feature is relevant for file policies that contain content inspection using the DCS engine.
 
 1. Configure a file policy and choose the relevant DCS classifiers. If you already use a file policy with DCS, this feature will work for all the feature's files.
 
-1. On the **Policies** page, enter the relevant file policy and select the *X policy matches*.
+1. On the **Policies** page, enter the relevant file policy and select the policy matches.
 
-1. You can analyze the different SITs with a clickable, color-coding distinguisher.
+1. You can then analyze the different SITs with a clickable, color-coding distinguisher.
 
 ## Next steps
 
