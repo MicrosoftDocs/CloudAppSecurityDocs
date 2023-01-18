@@ -32,7 +32,7 @@ For more information on what's new with other Microsoft Defender security produc
 January 22, 2023
 
 - **File policy – exploring multiple SITs**  
-Defender for Cloud Apps already includes the ability to explore policy file matches that contain sensitive information types (SITs). Now Defender for Cloud Apps also allows you to differentiate between multiple SITs in the same file match. This feature, known as short evidence, lets Defender for Cloud Apps better manage and protect your organization's sensitive data. For more information, see [Examine evidence](dcs-inspection.md#examine-evidence).
+Defender for Cloud Apps already includes the ability to explore policy file matches that contain sensitive information types (SITs). Now, Defender for Cloud Apps also allows you to differentiate between multiple SITs in the same file match. This feature, known as short evidence, lets Defender for Cloud Apps better manage and protect your organization's sensitive data. For more information, see [Examine evidence](dcs-inspection.md#examine-evidence).
 
 ## Defender for Cloud Apps release 240, 241, 242, and 243
 
