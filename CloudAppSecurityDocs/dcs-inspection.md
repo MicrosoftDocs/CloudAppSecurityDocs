@@ -47,6 +47,8 @@ The short evidence feature is relevant for file policies that contain content in
 
 1. You can then analyze the different SITs with a clickable, color-coding distinguisher.
 
+:::image type="content" source="media/short-evidence.png" alt-text="Configure short evidence.":::
+
 ## Next steps
 
 > [!div class="nextstepaction"]
