@@ -33,7 +33,7 @@ App governance is currently not available as an add-on for Microsoft Defender fo
 ## Roles
 
 > [!NOTE]
-> Only Global Admin, Company Admin, or Billing Admin role can activate the app governance free trial.
+> Only Global/Company Admin, App Admin, Cloud App Security Admin, Cloud App Admin, Security Admin, Compliance Admin, and Billing Admin roles can activate the app governance free trial.
 
 One of the following administrator roles is required to see app governance pages or manage policies and settings:
 
