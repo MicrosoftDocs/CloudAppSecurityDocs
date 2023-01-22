@@ -24,7 +24,7 @@ To create a snapshot report:
 
     ![New snapshot report.](media/new-snapshot-report.png)
 
-1. Select the **Source** from which you want to upload the log files. If your source is not supported (see https://learn.microsoft.com/en-us/defender-cloud-apps/set-up-cloud-discovery#supported-firewalls-and-proxies- for the full list), you can create a custome parser (see https://learn.microsoft.com/en-us/defender-cloud-apps/custom-log-parser for more details)
+1. Select the **Source** from which you want to upload the log files. If your source is not supported (see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies-) for the full list), you can create a custom parser. For more information, see [Use a custom log parser](custom-log-parser.md). 
 
 1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Under **Verify your log format**, select **View log format** then select **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
 
