@@ -1,7 +1,7 @@
 ---
 title: Alerts API
 description: This article provides information about using the Alerts API.
-ms.date: 02/02/2022
+ms.date: 01/19/2023
 ms.topic: reference
 ---
 # Alerts API

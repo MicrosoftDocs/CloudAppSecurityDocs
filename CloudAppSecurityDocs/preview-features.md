@@ -1,7 +1,7 @@
 ---
 title: Preview features
 description: Learn how to access Microsoft Defender for Cloud Apps preview features.
-ms.date: 01/09/2023
+ms.date: 01/19/2023
 ms.topic: conceptual
 ---
 # Preview features in Microsoft Defender for Cloud Apps

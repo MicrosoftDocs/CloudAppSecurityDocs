@@ -1,7 +1,7 @@
 ---
 title: Require step-up authentication (authentication context) upon risky action
 description: This tutorial provides instructions for requiring step-up authentication (authentication context) upon risky action.
-ms.date: 01/09/2023
+ms.date: 01/10/2023
 ms.topic: tutorial
 ---
 # Tutorial: Require step-up authentication (authentication context) upon risky action

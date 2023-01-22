@@ -1,6 +1,6 @@
 ---
 title: Get started with app governance
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ms.topic: how-to
 description: Get started with app governance capabilities to govern your apps.
 ---

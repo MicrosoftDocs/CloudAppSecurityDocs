@@ -1,6 +1,6 @@
 ---
 title: Remediate app threats
-ms.date: 06/14/2022
+ms.date: 01/10/2023
 ms.topic: conceptual
 description: Remediate app threats.
 ---

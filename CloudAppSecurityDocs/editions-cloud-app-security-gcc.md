@@ -1,7 +1,7 @@
 ---
 title: US Government offerings
 description: This article describes the features differences between Microsoft Defender for Cloud Apps for US Government offerings and the commercial offering.
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps for US Government offerings

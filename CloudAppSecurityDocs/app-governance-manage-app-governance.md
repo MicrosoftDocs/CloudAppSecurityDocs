@@ -1,6 +1,6 @@
 ---
 title: App governance add-on in Microsoft 365 Defender
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ms.topic: conceptual
 description: Implement Microsoft app governance capabilities to govern your apps.
 ---

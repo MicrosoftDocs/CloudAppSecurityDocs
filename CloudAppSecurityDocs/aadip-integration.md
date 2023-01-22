@@ -1,7 +1,7 @@
 ---
 title: Azure Active Directory Identity Protection integration
 description: This article provides information about how to leverage Identity Protection alerts in Defender for Cloud Apps for hybrid risk detection.
-ms.date: 05/24/2022
+ms.date: 01/19/2023
 ms.topic: how-to
 ---
 # Azure Active Directory Identity Protection integration

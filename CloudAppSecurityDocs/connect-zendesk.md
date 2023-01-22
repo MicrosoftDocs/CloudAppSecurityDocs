@@ -1,7 +1,7 @@
 ---
 title: Connect Zendesk
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zendesk using the App Connector APIs. 
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ms.topic: how-to
 ---
 # Connect Zendesk to Microsoft Defender for Cloud Apps
