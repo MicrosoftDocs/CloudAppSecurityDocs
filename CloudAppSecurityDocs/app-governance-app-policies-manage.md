@@ -1,6 +1,6 @@
 ---
 title: Manage app policies
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ms.topic: how-to
 description: Manage your app governance policies.
 ---

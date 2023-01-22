@@ -1,6 +1,6 @@
 ---
 title: Create app policies in app governance
-ms.date: 01/03/2023
+ms.date: 01/19/2023
 ms.topic: how-to
 description: Learn how to create app policies on app governance.
 ---

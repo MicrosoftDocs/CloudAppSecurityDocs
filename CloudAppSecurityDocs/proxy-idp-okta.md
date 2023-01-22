@@ -1,7 +1,7 @@
 ---
 title: Deploy Conditional Access App Control for any web app using Okta
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using Okta as the identity provider.
-ms.date: 02/02/2022
+ms.date: 01/19/2023
 ms.topic: how-to
 ---
 # Deploy Conditional Access App Control for any web app using Okta as the identity provider (IdP)

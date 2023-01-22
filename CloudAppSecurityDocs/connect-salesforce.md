@@ -1,7 +1,7 @@
 ---
 title: Connect Salesforce
 description: This article provides information about how to connect your Salesforce to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/10/2023
+ms.date: 01/19/2023
 ms.topic: how-to
 ---
 # Connect Salesforce to Microsoft Defender for Cloud Apps

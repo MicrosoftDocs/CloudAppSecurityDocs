@@ -1,7 +1,7 @@
 ---
 title: External DLP integration
 description: This article provides the steps necessary for configuring the ICAP connection in Defender for Cloud Apps and the stunnel setup.
-ms.date: 02/02/2022
+ms.date: 01/19/2023
 ms.topic: how-to
 ---
 # External DLP integration in Microsoft Defender for Cloud Apps

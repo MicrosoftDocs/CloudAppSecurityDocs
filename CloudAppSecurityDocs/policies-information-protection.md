@@ -1,7 +1,7 @@
 ---
 title: Information protection policies 
 description: This article outlines the steps to configure many information protection policies in Defender for Cloud Apps.
-ms.date: 06/14/2022
+ms.date: 01/10/2023
 ms.topic: conceptual
 ---
 # Information protection policies
