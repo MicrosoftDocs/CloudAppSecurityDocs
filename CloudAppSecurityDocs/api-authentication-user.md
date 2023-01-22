@@ -1,7 +1,7 @@
 ---
 title: Access with user context
 description: Learn how to create an application to get programmatic access to Defender for Cloud Apps on behalf of a user.
-ms.date: 06/14/2022
+ms.date: 01/19/2023
 ms.topic: reference
 ---
 # Access Microsoft Defender for Cloud Apps API with user context

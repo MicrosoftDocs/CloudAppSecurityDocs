@@ -2,7 +2,7 @@
 title: Encrypt Defender for Cloud Apps data at rest with your own key
 description: This article provides instructions for using your own key to encrypt data at rest stored in Defender for Cloud Apps.
 ms.topic: conceptual
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ---
 
 # Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)

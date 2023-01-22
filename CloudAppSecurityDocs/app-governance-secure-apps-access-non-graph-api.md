@@ -1,6 +1,6 @@
 ---
 title: Secure apps accessing non-Graph APIs using app governance
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ms.topic: how-to
 description: Learn how to secure apps accessing non-Graph APIs using app governance
 ---

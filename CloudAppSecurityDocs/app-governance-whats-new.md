@@ -1,6 +1,6 @@
 ---
 title: What's new in app governance
-ms.date: 12/21/2022
+ms.date: 01/19/2023
 ms.topic: conceptual
 description: Learn about new features and enhancements in app governance
 ---
