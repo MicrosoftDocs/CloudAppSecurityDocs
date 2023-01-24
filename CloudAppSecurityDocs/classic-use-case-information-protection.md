@@ -59,8 +59,8 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
     1. Select **Create**.
 
-   ![Add sensitivity label to policy - screen 1.](media/aip-auto-policy.png)
-   ![Add sensitivity label to policy - screen 2.](media/aip-auto-policy2.png)
+   ![Add sensitivity label to policy - screen 1.](media/classic-aip-auto-policy.png)
+   ![Add sensitivity label to policy - screen 2.](media/classic-aip-auto-policy2.png)
 
 1. Investigating your matches
 

@@ -55,7 +55,7 @@ In the menu bar, select the Settings icon. In the drop-down menu, select **IP ad
 
 1. When you're done, select **Create**.
 
-    ![newipaddress range.](media/newipaddress-range.png "newipaddress range")
+    ![newipaddress range.](media/classic-newipaddress-range.png "newipaddress range")
 
 ## Next steps
 

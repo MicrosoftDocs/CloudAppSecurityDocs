@@ -18,15 +18,15 @@ The **Activity log** can be filtered to enable you to find specific activities. 
 For example, you can use the **Activity log** to find users in your organization who are using operating systems or browsers that are out of date, as follows:
 After you connect an app to Defender for Cloud Apps in the **Activity log** page, use the advanced filter and select **User agent tag**. Then select **Outdated browser** or **Outdated operating system**.
 
-![Activity outdated browser example.](media/activity-example-outdated.png)
+![Activity outdated browser example.](media/classic-activity-example-outdated.png)
 
 The basic filter provides you with great tools to get started filtering your activities.
 
-![basic activity log filter.](media/activity-log-filter-basic.png)
+![basic activity log filter.](media/classic-activity-log-filter-basic.png)
 
 To drill down into more specific activities, you can expand the basic filter by selecting **Advanced**.
 
-![advanced activity log filter.](media/activity-log-filter-advanced.png)
+![advanced activity log filter.](media/classic-activity-log-filter-advanced.png)
 
 > [!NOTE]
 > The Legacy tag is added to any activity policy that use the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
@@ -49,7 +49,7 @@ You can view more information about each activity, by selecting the Activity its
 
 - IP address category and tags: Select the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.
 
-The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the**add to filter** icon ![add to filter.](media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon.](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
+The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the**add to filter** icon ![add to filter.](media/classic-add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon.](media/classic-contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
 You can also use the icons at the top of the tab to:
 
@@ -59,7 +59,7 @@ You can also use the icons at the top of the tab to:
 - View activities from the same geographic location
 - View activities from the same time period (48 hours)
 
-![activity drawer.](media/activity-drawer.png "activity drawer")
+![activity drawer.](media/classic-activity-drawer.png "activity drawer")
 
 For a list of governance actions available, see [Activity governance actions](governance-actions.md#activity-governance-actions).
 
@@ -80,7 +80,7 @@ Selecting it opens the Activity drawer **User** tab provides the following insig
     - **ISPs**: The number of ISPs the user connected from in past 30 days.
     - **IP addresses**: The number of IP addresses the user connected from in past 30 days.
 
-![user insights in Defender for Cloud Apps.](media/user-insights.png)
+![user insights in Defender for Cloud Apps.](media/classic-user-insights.png)
 
 #### IP address insights
 
@@ -105,7 +105,7 @@ This opens the Activity drawer **IP address** tab, which provides the following 
    >[!NOTE]
    > To avoid raising [impossible travel](anomaly-detection-policy.md#impossible-travel) alerts when employees connect from their home locations via the corporate VPN, it's recommended to tag the IP address as **VPN**.
 
-![IP address insights in Defender for Cloud Apps.](media/ip-address-insights.png)
+![IP address insights in Defender for Cloud Apps.](media/classic-ip-address-insights.png)
 
 ## Export activities
 
@@ -113,7 +113,7 @@ You can export all user activities to a CSV file.
 
 In the **Activity log**, in the top-right corner, select the **Export** button.
 
-![export button.](media/export-button.png)
+![export button.](media/classic-export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

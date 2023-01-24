@@ -27,7 +27,7 @@ Cloud Discovery data can now be enriched with Azure Active Directory username da
 
 1. In the **User enrichment** tab, select **Enrich discovered user identifiers with Azure Active Directory usernames**. This option enables Defender for Cloud Apps to use Azure Active Directory data to enrich usernames by default.
 
-    ![Enrich Defender for Cloud Apps Discovery with Azure AD usernames.](media/discovery-enrichment.png)
+    ![Enrich Defender for Cloud Apps Discovery with Azure AD usernames.](media/classic-discovery-enrichment.png)
 
 ## Next steps
 

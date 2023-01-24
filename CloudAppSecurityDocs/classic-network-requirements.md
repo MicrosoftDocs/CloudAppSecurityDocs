@@ -19,11 +19,11 @@ To see which data center you're connecting to, do the following steps:
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
 
-    ![click About.](media/about-menu.png)
+    ![click About.](media/classic-about-menu.png)
 
 2. In the Defender for Cloud Apps version screen, you can see the region and the data center.
 
-    ![View your data center.](media/data-center.png)
+    ![View your data center.](media/classic-data-center.png)
 
 ## Portal access
 

@@ -26,11 +26,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the pop-up, give the connector a descriptive name, and press **Connect**.
 
-    ![Connect Slack.](media/connect-slack.png)
+    ![Connect Slack.](media/classic-connect-slack.png)
 
 1. In the next screen, select **Connect in Slack**.
 
-    ![Connect in Slack.](media/connect-in-slack.png)
+    ![Connect in Slack.](media/classic-connect-in-slack.png)
 
 1. You'll be redirected to the Slack page. Make sure the org Owner is already logged into the Slack organization.
 

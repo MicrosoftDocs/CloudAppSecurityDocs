@@ -26,7 +26,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Navigate to **Admin** -> **Apps and integrations** -> **APIs** -> **Zendesk API** -> **OAuth Client** and select **Add OAuth client**.
 
-    ![Zendesk API configuration.](media/zendesk-api-configuration.png)
+    ![Zendesk API configuration.](media/classic-zendesk-api-configuration.png)
 
 1. Select **New Credential**.
 1. Fill out the following fields:
@@ -57,7 +57,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the pop-up, give the connector a descriptive name, and press **Connect Zendesk**.
 
-    ![Connect Zendesk.](media/connect-zendesk.png)
+    ![Connect Zendesk.](media/classic-connect-zendesk.png)
 
 1. In the next screen, enter the following fields:
 

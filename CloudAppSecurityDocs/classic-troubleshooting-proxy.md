@@ -202,7 +202,7 @@ You can onboard the following types of apps for access and session controls:
 
 - Any (custom) apps: Custom line-of-business (LOB) or on-premises apps can be onboarded to session controls by an admin
 
-![Proxy list showing catalog and any (custom) apps.](media/troubleshooting-onboarding.png)
+![Proxy list showing catalog and any (custom) apps.](media/classic-troubleshooting-onboarding.png)
 
 When onboarding an app, it is crucial to make sure that you follow each step in the proxy deployment guides:
 
@@ -398,7 +398,7 @@ The Admin View toolbar provides tools for an admin to diagnose and troubleshoot 
 
 To enable the Admin View toolbar for specific admin users, you first must add admins to the app onboarding/maintenance list.
 
-1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4.](media/settings-icon.png "settings icon 4") and select **Settings**.
+1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4.](media/classic-settings-icon.png "settings icon 4") and select **Settings**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -406,7 +406,7 @@ To enable the Admin View toolbar for specific admin users, you first must add ad
 1. Check the box for **Enable these users to bypass Conditional Access App Control from inside a proxied session**.
 1. Select **Save**.
 
-    ![App onboarding/maintenance settings.](media/app-onboarding-maintenance.png)
+    ![App onboarding/maintenance settings.](media/classic-app-onboarding-maintenance.png)
 
 When those users next start a session of an application, the Admin View toolbar will be available.
 
@@ -415,7 +415,7 @@ When those users next start a session of an application, the Admin View toolbar 
 If you have difficulty accessing or loading your application, and you'd like to see if the problem is with the Conditional Access proxy, you can use the **Bypass session** button in the Admin View toolbar. It will appear for users who have the [Admin View toolbar](#admin-view-toolbar) enabled.
 
 Once you select **Bypass session**, the application will run without the Conditional Access proxy.
-![Bypass session.](media/troubleshooting-proxy/proxy-admin-toolbar-bypass.png)
+![Bypass session.](media/troubleshooting-proxy/classic-proxy-admin-toolbar-bypass.png)
 You can confirm the session is bypassed by noting that the URL isn't [suffixed](proxy-intro-aad.md#how-session-control-works).
 
 In the next session of the application, the Conditional Access proxy will be used.
@@ -431,27 +431,27 @@ To record a session, follow these steps:
 
 1. 1. From the Admin View toolbar, select **Record session**.
 
-   ![Select Record session.](media/troubleshooting-proxy/proxy-admin-toolbar-record.png)
+   ![Select Record session.](media/troubleshooting-proxy/classic-proxy-admin-toolbar-record.png)
 1. After selecting **Record session**, accept the terms by selecting **Continue** in the next window:
 
-    ![Select continue to accept.](media/accept-continue.png)
+    ![Select continue to accept.](media/classic-accept-continue.png)
 
 1. You can also start recording when signing in to the application. To do so, select **Record session** when this window appears:
 
-    ![Select Record session from window.](media/app-monitored.png)
+    ![Select Record session from window.](media/classic-app-monitored.png)
 
 1. Sign in to the application to begin the scenario simulation.
 1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar.
 
-    ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
+    ![Select Stop recording.](media/troubleshooting-proxy/classic-proxy-admin-toolbar-stop-recording.png)
 
 1. After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
-   ![List of session recordings.](media/troubleshooting-proxy/recording-list.png)
+   ![List of session recordings.](media/troubleshooting-proxy/classic-recording-list.png)
 
 1. Each recorded session can be downloaded or deleted.
 
-    ![Download or delete recording.](media/download-delete-recording.png)
+    ![Download or delete recording.](media/classic-download-delete-recording.png)
 
 ## Issues experienced by end users
 
@@ -476,7 +476,7 @@ When routing a user through the Defender for Cloud Apps, you can notify the user
 1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Settings**.
 1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps.
 
-    ![Screenshot showing user monitoring options.](media/proxy-user-monitoring.png)
+    ![Screenshot showing user monitoring options.](media/classic-proxy-user-monitoring.png)
 
 1. Verify that the **Notify users that their activity is being monitored** option is selected.
 1. Choose whether you want to use the default message or provide a custom message.
@@ -499,7 +499,7 @@ If an end user is receiving a general failure after logging into an app from a n
     1. Validate that the SAML certificate that was uploaded is correct
     1. Verify that valid SSO URLs have been provided in the app configuration
     1. Validate that the attributes and values in the custom app are reflected in identity provider settings
-        ![Screenshot showing gather identity providers SAML information page.](media/proxy-deploy-add-idp-ext-conf.png)
+        ![Screenshot showing gather identity providers SAML information page.](media/classic-proxy-deploy-add-idp-ext-conf.png)
 1. If you still can't access the app, open a [support ticket](support-and-ts.md).
 
 ### Something Went Wrong page appears
@@ -582,7 +582,7 @@ For apps experiencing context loss, please submit a support ticket. We will work
 
 Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Defender for Cloud Apps to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked, with a message like this:
 
-![Blocked download.](media/before-powershell.png)
+![Blocked download.](media/classic-before-powershell.png)
 
 To allow the preview, an Exchange administrator should perform the following steps:
 
@@ -599,7 +599,7 @@ To allow the preview, an Exchange administrator should perform the following ste
 
 1. After these parameters have been set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file.
 
-    ![PDF preview not blocked.](media/after-powershell.png)
+    ![PDF preview not blocked.](media/classic-after-powershell.png)
 
 ### Similar site warning appears
 
@@ -607,11 +607,11 @@ Malicious actors can craft URLs that are similar to other sites' URLs in order t
 
 In Microsoft Edge:
 
-  ![Edge similar site warning.](media/edge-similar-site-warning.png)
+  ![Edge similar site warning.](media/classic-edge-similar-site-warning.png)
 
 In Chrome:
 
-  ![Chrome similar site warning.](media/chrome-similar-site-warning.png)
+  ![Chrome similar site warning.](media/classic-chrome-similar-site-warning.png)
 
 If you receive a message like this, contact Microsoft’s support, who will address it with the relevant browser vendor.
 

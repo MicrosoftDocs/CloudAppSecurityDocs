@@ -22,10 +22,10 @@ Key points:
 1. There are three ways to apply data anonymization:
 
     - You can set the data from a specific log file to be anonymized, by [creating a new snapshot report](create-snapshot-cloud-discovery-reports.md) and selecting **Anonymize private information**.  
-    ![Anonymize snapshot data.](media/anonymize-log.png)
+    ![Anonymize snapshot data.](media/classic-anonymize-log.png)
 
     - You can set the data from an [automated upload for a new data source](discovery-docker.md) to be anonymized by selecting  **Anonymize private information** when you add the new data source.  
-    ![Anonymize log data.](media/anonymize-autolog.png)
+    ![Anonymize log data.](media/classic-anonymize-autolog.png)
 
     - You can set the default in Defender for Cloud Apps to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
 
@@ -34,13 +34,13 @@ Key points:
         2. In the **Anonymization** tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
         3. Select **Save**.
 
-        ![Anonymization settings page.](media/anonymizer1.png)
+        ![Anonymization settings page.](media/classic-anonymizer1.png)
 
 2. When anonymization is selected, Defender for Cloud Apps parses the traffic log and extracts specific data attributes.
 3. Defender for Cloud Apps replaces the username with an encrypted username.
 4. It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
 
-    ![Anonymize Cloud Discovery dashboard.](media/anonymize-dashboard.png)
+    ![Anonymize Cloud Discovery dashboard.](media/classic-anonymize-dashboard.png)
 
 5. For a specific investigation, such as an investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
 
@@ -51,14 +51,14 @@ Key points:
 
     1. Select the three dots at the end of the row of the user you want to resolve and select **Deanonymize user**.
 
-        ![Anonymize user table.](media/anonymize-user-table.png)
+        ![Anonymize user table.](media/classic-anonymize-user-table.png)
 
     1. In the pop-up, enter the justification for resolving the username and then select **Resolve**. In the relevant row, the resolved username is displayed.
 
         > [!NOTE]
         > This action is audited.
 
-        ![Anonymize resolve pop-up.](media/anonymize-resolve-dialog.png)
+        ![Anonymize resolve pop-up.](media/classic-classic-anonymize-resolve-dialog.png)
 
     The following alternative way to resolve single usernames can also be used to look up the encrypted username of a known username.
 
@@ -67,13 +67,13 @@ Key points:
     1. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
     1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Select **Resolve**.
 
-        ![Resolve anonymization pop-up.](media/anonymizer.png)
+        ![Resolve anonymization pop-up.](media/classic-anonymizer.png)
 
     **To resolve multiple usernames**
 
     1. Either select the checkboxes that appear when you hover over the user icons by the users you want to resolve or, in the top-left, corner select the **Bulk selection** checkbox.
 
-        ![Anonymize bulk resolve.](media/anonymize-bulk-resolve.png)
+        ![Anonymize bulk resolve.](media/classic-anonymize-bulk-resolve.png)
 
     1. Select **Deanonymize user**.
     1. In the pop-up, enter the justification for resolving the username and then select **Resolve**. In the relevant rows, the resolved usernames are displayed.
@@ -81,11 +81,11 @@ Key points:
         > [!NOTE]
         > This action is audited.
 
-        ![Anonymize resolve pop-up.](media/anonymize-resolve-dialog.png)
+        ![Anonymize resolve pop-up.](media/classic-classic-anonymize-resolve-dialog.png)
 
 6. The action is audited in the portal's **Governance log**.
 
-    ![Anonymization action in governance log.](media/anonymize-gov-log.png)
+    ![Anonymization action in governance log.](media/classic-anonymize-gov-log.png)
 
 ## Next steps
 

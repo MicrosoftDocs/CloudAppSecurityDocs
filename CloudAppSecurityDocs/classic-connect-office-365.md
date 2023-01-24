@@ -37,11 +37,11 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
 
 1. In the **Connected apps** page, under **App connectors**, select **+Connect an app** and then select **Office 365**.
 
-    ![connect O365 menu option.](media/connect-o365.png)
+    ![connect O365 menu option.](media/classic-connect-o365.png)
 
 1. In the Office 365 pop-up, select **Connect Office 365**.
 
-    ![connect O365 pop-up.](media/office-connect.png)
+    ![connect O365 pop-up.](media/classic-office-connect.png)
 
 1. In the Office 365 components page, select the options you require, and then select **Connect**.
 
@@ -50,7 +50,7 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
     > - For best protection, we recommend selecting all Office 365 components.
     > - The **Office 365 files** component, requires the **Office 365 activities** component and Defender for Cloud Apps file monitoring (**Settings** > **Files** > **Enable file monitoring**).
 
-    ![connect O365 components.](media/connect-o365-components.png)
+    ![connect O365 components.](media/classic-connect-o365-components.png)
 
 1. After Office 365 is displayed as successfully connected, select **Close**.
 

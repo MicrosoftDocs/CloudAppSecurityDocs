@@ -18,7 +18,7 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 1. Select the plus icon, **Generate new token** and provide a name to identify the token in the future, and select **Next**.
 
-    ![Defender for Cloud Apps generates API token.](media/api-token-gen.png)
+    ![Defender for Cloud Apps generates API token.](media/classic-api-token-gen.png)
 
 1. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader can't issue a token that can alter data.
 
@@ -30,7 +30,7 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 1. After you generate a new token, you'll be provided with a new URL to use to access the Defender for Cloud Apps portal.
 
-    ![Defender for Cloud Apps API token.](media/generate-api-token.png)
+    ![Defender for Cloud Apps API token.](media/classic-generate-api-token.png)
 
     The generic portal URL continues to work but is considerably slower than the custom URL provided with your token. If you forget the URL at any time, you can view it by going to the **?** icon in the menu and selecting **About**.
 

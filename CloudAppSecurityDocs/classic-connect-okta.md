@@ -22,25 +22,25 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     - Select **Security** and then **API**.
 
-         ![Okta api.](media/okta-api.png "Okta api")
+         ![Okta api.](media/classic-okta-api.png "Okta api")
 
     - Select **Create Token**.
 
-         ![Okta create token.](media/okta-createtoken.png "Okta create token")
+         ![Okta create token.](media/classic-okta-createtoken.png "Okta create token")
 
     - In the **Create Token** pop-up, name your Defender for Cloud Apps token, and select **Create Token**.
 
-         ![Okta token pop-up.](media/okta-token-pop-up.png)
+         ![Okta token pop-up.](media/classic-okta-token-pop-up.png)
 
     - In the **Token created successfully** pop-up, copy the **Token value**.
 
-         ![Okta token value.](media/okta-token-value.png "Okta token value")
+         ![Okta token value.](media/classic-okta-token-value.png "Okta token value")
 
 1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
 
 1. In the **App connectors page**, select the plus button and then **Okta**.
 
-    ![connect Okta.](media/connect-okta.png "connect Okta")
+    ![connect Okta.](media/classic-connect-okta.png "connect Okta")
 
 1. In the pop-up, in the **Domain** field, enter your Okta domain and paste your Token into the **Token** field.
 

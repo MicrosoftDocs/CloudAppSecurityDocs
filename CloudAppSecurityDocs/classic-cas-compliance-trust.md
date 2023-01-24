@@ -26,17 +26,17 @@ Defender for Cloud Apps meets many international and industry-specific complianc
 
 | Organization |Title|Description|
 |----|----|----|
-|![logo csa attestation.](media/csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
-|![logo csa certification.](media/csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
-|![logo EU model clauses.](media/eu-model-icon.png)|[EU Model Clauses](/compliance/regulatory/offering-EU-Model-Clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
-|![logo HIPAA.](media/hipaa-logo.png)|[HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
-|![logo iso 9001.](media/iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
-|![logo iso 27001.](media/iso-27001.png)|[ISO/IEC 27001](/compliance/regulatory/offering-ISO-27001)|Microsoft is certified for its implementation of these information security management standards.|
-|![logo iso 27018.](media/iso-27018.png)|[ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018)|Microsoft was the first cloud provider to adhere to this code of practice for cloud privacy.|
-|![logo PCI.](media/pci-logo.png)|PCI DSS|Azure complies with Payment Card Industry Data Security Standards Level 1 version 3.1.|
-|![logo SOC.](media/soc-logo.png)|[SOC 1 and SOC 2 Type 2 Reports](/compliance/regulatory/offering-home)|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
-|![logo SOC.](media/soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
-|![logo g-cloud.](media/g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
+|![logo csa attestation.](media/classic-csastar-attest.png)|CSA STAR Attestation|Azure and Intune were awarded Cloud Security Alliance STAR Attestation based on an independent audit.|
+|![logo csa certification.](media/classic-csastar.png)|CSA STAR Certification|Azure, Intune, and Power BI were awarded Cloud Security Alliance STAR Certification at the Gold level.|
+|![logo EU model clauses.](media/classic-eu-model-icon.png)|[EU Model Clauses](/compliance/regulatory/offering-EU-Model-Clauses)|Microsoft offers EU Standard Contractual Clauses, guarantees for transfers of personal data.|
+|![logo HIPAA.](media/classic-hipaa-logo.png)|[HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech)|Microsoft offers Health Insurance Portability & Accountability Act Business Associate Agreements (BAAs).|
+|![logo iso 9001.](media/classic-iso-9001.png)|ISO 9001|Microsoft is certified for its implementation of these quality management standards.|
+|![logo iso 27001.](media/classic-iso-27001.png)|[ISO/IEC 27001](/compliance/regulatory/offering-ISO-27001)|Microsoft is certified for its implementation of these information security management standards.|
+|![logo iso 27018.](media/classic-iso-27018.png)|[ISO/IEC 27018](/compliance/regulatory/offering-ISO-27018)|Microsoft was the first cloud provider to adhere to this code of practice for cloud privacy.|
+|![logo PCI.](media/classic-pci-logo.png)|PCI DSS|Azure complies with Payment Card Industry Data Security Standards Level 1 version 3.1.|
+|![logo SOC.](media/classic-classic-soc-logo.png)|[SOC 1 and SOC 2 Type 2 Reports](/compliance/regulatory/offering-home)|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
+|![logo SOC.](media/classic-classic-soc-logo.png)|SOC 3|Microsoft cloud services comply with Service Organization Controls standards for operational security.|
+|![logo g-cloud.](media/classic-g-cloud.png)|UK G-Cloud|The Crown Commercial Service renewed the Microsoft cloud services classification to Government Cloud v6.|
 
 For more information, go to [Microsoft Compliance Offerings](/compliance/regulatory/offering-home).  
 

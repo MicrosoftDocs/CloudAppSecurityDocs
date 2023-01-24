@@ -22,15 +22,15 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Enter the admin portal from the top-right corner.
 
-    ![Enter the NetDocuments admin portal.](media/netdocuments-enter-admin-portal.png)
+    ![Enter the NetDocuments admin portal.](media/classic-netdocuments-enter-admin-portal.png)
 
 1. Enter the **Information and Settings** section from the top-left corner.
 
-    ![Enter the NetDocuments information and settings section.](media/netdocuments-information-and-settings.png)
+    ![Enter the NetDocuments information and settings section.](media/classic-netdocuments-information-and-settings.png)
 
 1. In this page, you can find your repository ID. Copy and save it. You'll need it later.
 
-    ![Your NetDocuments repository ID.](media/netdocuments-repository-id.png)
+    ![Your NetDocuments repository ID.](media/classic-netdocuments-repository-id.png)
 
 1. Record the URL of your account (it should be one of URLs in the following list). You'll need this information later.
 
@@ -49,7 +49,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the pop-up, give the connector a descriptive name, and press **Connect NetDocuments**.
 
-    ![Connect NetDocuments.](media/netdocuments-connecting-screen.png)
+    ![Connect NetDocuments.](media/classic-netdocuments-connecting-screen.png)
 
 1. In the next screen, enter the following fields:
 

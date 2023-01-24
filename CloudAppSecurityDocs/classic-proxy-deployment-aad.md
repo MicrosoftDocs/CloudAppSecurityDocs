@@ -43,7 +43,7 @@ Use the following steps to create an Azure AD Conditional Access policy that rou
 1. Under **Assignments**, select **Cloud apps or actions** and assign the apps and actions you want to control with Conditional Access App Control.
 1. Under **Access controls**, select **Session**, select **Use Conditional Access App Control**, and choose a built-in policy (**Monitor only (Preview)** or **Block downloads (Preview)**) or **Use custom policy** to set an advanced policy in Defender for Cloud Apps, and then select **Select**.
 
-    ![Azure AD conditional access.](media/azure-ad-caac-policy.png)
+    ![Azure AD conditional access.](media/classic-azure-ad-caac-policy.png)
 
 1. Optionally, add conditions and grant controls as required.
 1. Set **Enable policy** to **On** and then select **Create**.
@@ -57,26 +57,26 @@ Defender for Cloud Apps will sync your policy details to its servers for each ne
 
 The preceding instructions helped you create a built-in Defender for Cloud Apps policy for catalog apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon.](media/classic-classic-settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
 
    > [!NOTE]
    > If the app isn’t enabled for session control, you can add it by selecting **Onboard with session control** and checking **Use this app with session controls**.
-   > ![Onboard with session control.](media/proxy-deployment-aad/onboardwithsessioncontrol.png)
+   > ![Onboard with session control.](media/proxy-deployment-aad/classic-onboardwithsessioncontrol.png)
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Defender for Cloud Apps, select the settings cog ![settings icon.](media/settings-icon.png), and then select **Conditional Access App Control**.
+1. In Defender for Cloud Apps, select the settings cog ![settings icon.](media/classic-classic-settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use the app with session controls** and then select **Save**.
 
-   ![Edit this app dialogue.](media/proxy-deployment-aad/edit-app-checked.png)
+   ![Edit this app dialogue.](media/proxy-deployment-aad/classic-edit-app-checked.png)
 
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Azure AD, or for a SAML app configured with your identity provider.
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
 1. You can filter by clicking on **Advanced**, and then filtering using **Source equals Access control**.
 
-    ![Filter using Azure AD conditional access.](media/sso-logon.png)
+    ![Filter using Azure AD conditional access.](media/classic-sso-logon.png)
 
 1. It's recommended that you sign into mobile and desktop apps from managed and unmanaged devices. This is to make sure that the activities are properly captured in the activity log.  
    To verify that the activity is properly captured, select a single sign-on login activity so that it opens the activity drawer. Make sure the **User agent tag** properly reflects whether the device is a native client (meaning either a mobile or desktop app) or the device is a managed device (compliant, domain joined, or valid client certificate).

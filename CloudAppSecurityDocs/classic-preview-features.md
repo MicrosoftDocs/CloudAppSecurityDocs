@@ -47,7 +47,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 You'll know you have preview features turned on when you see that the **Enable preview features** check box is selected.
 
-:::image type="content" source="media/preview-features.png" alt-text="Enable preview features.":::
+:::image type="content" source="media/classic-preview-features.png" alt-text="Enable preview features.":::
 
 > [!NOTE]
 > To learn how to enable preview features in Defender for Cloud Apps in the Microsoft 365 Defender portal, see [Preview Features in Defender for Cloud Apps](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#preview-features-in-defender-for-cloud-apps).

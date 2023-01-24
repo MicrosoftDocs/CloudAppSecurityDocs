@@ -18,15 +18,15 @@ By adding a new custom cloud app, Defender for Cloud Apps can match uploaded fir
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Cloud Discovery dashboard**.
 
-    ![cloud discovery dashboard menu.](media/cloud-discovery-dashboard-menu.png)
+    ![cloud discovery dashboard menu.](media/classic-cloud-discovery-dashboard-menu.png)
 
 1. In the top right corner, select the three dots and then select **Add new custom app**.
 
-    ![add custom app menu.](media/add-custom-app-menu.png)
+    ![add custom app menu.](media/classic-add-custom-app-menu.png)
 
 1. Fill in the fields to define the new app record that will be listed in the Cloud App Catalog and in Cloud Discovery after it's discovered in your firewall logs.
 
-    ![custom app.](media/add-custom-app.png)
+    ![custom app.](media/classic-add-custom-app.png)
 
 1. Under **Domains**, fill in the unique domains that are used when accessing the custom app. These domains are used to match traffic log messages to this app. If the data source you're using doesn't have app URL information, make sure you fill in the **IPv4** and **IPv6** address fields.
 1. Add the **Hosting platform** and **Azure Subscription ID**. Optionally, specify the app's **Business unit**.

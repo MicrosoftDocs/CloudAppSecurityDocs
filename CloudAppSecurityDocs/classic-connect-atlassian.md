@@ -24,11 +24,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Sign in to the Atlassian Admin portal with an admin account.
 
-    ![Sign in to the  Atlassian Admin portal.](media/atlassian-sign-in.png)
+    ![Sign in to the  Atlassian Admin portal.](media/classic-atlassian-sign-in.png)
 
 1. Go to **Settings -> API keys** and then **Create API key**. (Atlassian documentation for creating API keys can also be found [here](https://support.atlassian.com/organization-administration/docs/manage-an-organization-with-the-admin-apis/)).
 
-    ![Atlassian API keys.](media/atlassian-api-keys.png)
+    ![Atlassian API keys.](media/classic-atlassian-api-keys.png)
 
 1. Give the following values to the API key:
 
@@ -38,7 +38,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
         >[!NOTE]
         >According to Atlassian API requirements, you'll need to create every year an API key for this integration.
 
-        ![Create API key.](media/atlassian-create-api-key.png)
+        ![Create API key.](media/classic-atlassian-create-api-key.png)
 
 1. After selecting **Create**, copy the **Organization ID** and the **API key**. You'll need it later.
 
@@ -54,7 +54,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the pop-up, give the connector a descriptive name, and press **Connect Atlassian**.
 
-    ![Connect Atlassian.](media/atlassian-connect.png)
+    ![Connect Atlassian.](media/classic-atlassian-connect.png)
 
 1. In the next page, enter the **Organization ID** and **API key** you saved before.
 
@@ -73,7 +73,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. Recreate an API key in the Atlassian admin portal with the steps described above.
 1. Afterwards, go to the Defender for Cloud Apps portal and edit the connector:
 
-    ![Edit connector.](media/atlassian-edit-connector.png)
+    ![Edit connector.](media/classic-atlassian-edit-connector.png)
 
 1. Enter the new generated new **API key** and select **Connect Atlassian**.
 

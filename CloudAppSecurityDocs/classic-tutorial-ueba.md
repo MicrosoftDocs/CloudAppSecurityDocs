@@ -58,10 +58,10 @@ To identify who your riskiest users are in Defender for Cloud Apps:
 1. Go to the Defender for Cloud Apps dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them.  
 The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
-   ![Top users dashboard.](media/dashboard-top-users.png)
+   ![Top users dashboard.](media/classic-dashboard-top-users.png)
 
 1. Select a particular user to get to the **User** page.
-    ![User page.](media/user-page.png)
+    ![User page.](media/classic-user-page.png)
 
 1. Review the information in the User page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.  
 The User page helps you answer the questions:
@@ -89,15 +89,15 @@ If the user was investigated and no suspicion for compromise was found, or for a
 
 1. In the window that opens, select **View User page** in the upper right.
 
-    ![Select View User page.](media/view-user-page.png)
+    ![Select View User page.](media/view-classic-user-page.png)
 
 1. The user page will open in a new tab. Select the **Reset investigation priority score** link in the actions section in the top-right side of the page.
 
-    ![Select Reset investigation priority score link.](media/reset-investigation-priority-score.png)
+    ![Select Reset investigation priority score link.](media/classic-reset-investigation-priority-score.png)
 
 1. In the confirmation window, select **Reset score**.
 
-    ![Select Reset score button.](media/reset-score.png)
+    ![Select Reset score button.](media/classic-reset-score.png)
 
 ## Phase 3: Further investigate users<a name="investigate"></a>
 

@@ -32,7 +32,7 @@ To access the Defender for Cloud Apps portal, go to [https://portal.cloudappsecu
 
 1. In the [Microsoft 365 Defender Portal](https://security.microsoft.com/),  select **More resources**, and then select **Defender for Cloud Apps**.
 
-    ![Select Defender for Cloud Apps.](media/access-from-o365-s2.png)
+    ![Select Defender for Cloud Apps.](media/classic-access-from-o365-s2.png)
 
 ## Step 1. Set instant visibility, protection, and governance actions for your apps
 

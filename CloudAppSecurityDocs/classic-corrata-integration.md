@@ -31,7 +31,7 @@ If you work with both Defender for Cloud Apps and Corrata, you can integrate the
         - Source = Corrata
         - Receiver type = FTP
 
-        ![data source Corrata.](media/data-source-corrata.png)
+        ![data source Corrata.](media/classic-data-source-corrata.png)
 
     4.Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.
 

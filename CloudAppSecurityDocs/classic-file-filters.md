@@ -21,21 +21,21 @@ For example, use the **Files** page to secure externally shared files labeled as
 
 After you connect an app to Defender for Cloud Apps, integrate with Microsoft Purview Information Protection. Then, in the **Files** page, filter for files labeled **Confidential** and exclude your domain in the **Collaborators** filter. If you see that there are confidential files shared outside your organization, you can create a file policy to detect them. You can apply automatic governance actions to these files, such as **Remove external collaborators** and **Send policy-match digest to file owner** to prevent data loss to your organization.
 
-![File filter confidential.](media/file-filter-confidential.png)
+![File filter confidential.](media/classic-file-filter-confidential.png)
 
 Here's another example of how you can use the **Files** page. Make sure you no one in your organization is publicly or externally sharing files that haven't been modified in the last six months:
 
 Connect an app to Defender for Cloud Apps and go to the **Files** page. Filter for files whose access level is **External** or **Public** and set the **Last modified** date to six months ago. Create a file policy that detects these stale public files by selecting **New policy from search**. Apply automatic governance actions to them, such as **Remove external users**, to prevent data loss to your organization.
 
-![File filter stale external.](media/file-example-stale-external.png)
+![File filter stale external.](media/classic-file-example-stale-external.png)
 
 The basic filter provides you with great tools to get started filtering your files.
 
-![Basic file log filter.](media/file-log-filter-basic-1.png)
+![Basic file log filter.](media/classic-file-log-filter-basic-1.png)
 
 To drill down into more specific files, you can expand the basic filter by selecting **Advanced**.
 
-![Advanced file log filter.](media/file-log-filter-advanced-1.png)
+![Advanced file log filter.](media/classic-file-log-filter-advanced-1.png)
 
 ## File filters
 
@@ -119,11 +119,11 @@ Below is a list of the file filters that can be applied. To provide you with a p
     | - **starts with:** text/ | Text |
     | All other file MIME types | Other |
 
-    ![policy_file filters type.](media/policy_file-filters-type.png)
+    ![policy_file filters type.](media/classic-policy_file-filters-type.png)
 
 - **In trash** – Exclude/include files in the trash folder. These files may still be shared and pose a risk.
 
-    ![policy_file filters trash.](media/policy_file-filters-trash.png)
+    ![policy_file filters trash.](media/classic-policy_file-filters-trash.png)
 
 - **Last modified** – File modification time. The filter supports before and after dates, date range, and relative time expressions. For example, all files that weren't modified in the last six months.
 
@@ -144,10 +144,10 @@ Below is a list of the file filters that can be applied. To provide you with a p
 
 You can also set the policy to run on specific files by setting the **Apply to** filter. Filter to either **all files**, **selected folders** (subfolders included), or **all files excluding selected folders**. Then select the files or folders that are relevant.
 
-![apply to filter.](media/apply-to-filter.png "apply to filter")
+![apply to filter.](media/classic-apply-to-filter.png "apply to filter")
 <!--
 >[!NOTE]
-> If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
+> If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/classic-clear-filters.png).
 -->
 
 ## Authorizing files
@@ -179,9 +179,9 @@ You can view more information about each file, by selecting the file itself in t
 - **Matched policies** - See a list of policies the file matched.
 - **Sensitivity labels** - View the list of sensitivity labels from Microsoft Purview Information Protection found in this file. You can then filter by all files matching this label.
 
-The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon.](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Sensitivity labels**.
+The fields in the File drawer provide contextual links to additional files and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the **Owner** field, you can use the "add to filter" icon ![add to filter.](media/classic-add-to-filter-icon.png) to add the owner immediately to the filter of the current page. You can also use the settings cog icon ![settings icon.](media/classic-contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **Sensitivity labels**.
 
-![File drawer.](media/file-drawer.png "File drawer")
+![File drawer.](media/classic-file-drawer.png "File drawer")
 
 For a list of governance actions available, see [File governance actions](governance-actions.md#file-governance-actions).
 

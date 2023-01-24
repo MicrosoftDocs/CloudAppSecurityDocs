@@ -16,7 +16,7 @@ To set up your preferences as an admin of Microsoft Defender for Cloud Apps, sel
 
 1. Select **Language**. Here you can choose the language to use in the Defender for Cloud Apps portal.
 
-    ![custom user settings.](media/custom-language-settings.png)
+    ![custom user settings.](media/classic-custom-language-settings.png)
 
 2. Select **Notifications** and set email notification preferences for emails you receive from the system. You can set the severity that determines which alerts and violations you want to receive emails. The severity is set per policy. When violations are triggered, you receive email notification depending on the setting here and the Severity setting in the policy that was violated. Emails are sent to the alias associated with the administrator user account you used to sign in to Defender for Cloud Apps.
 
@@ -24,7 +24,7 @@ To set up your preferences as an admin of Microsoft Defender for Cloud Apps, sel
     >
     > - Notifications are not sent for Azure Active Directory IPC events.
 
-    ![notification settings.](media/notification-settings.png)
+    ![notification settings.](media/classic-notification-settings.png)
 
 3. When you're done, select **Save**.
 

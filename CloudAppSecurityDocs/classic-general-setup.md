@@ -26,7 +26,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 ## Set up the portal
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), in the menu bar, select the settings cog ![settings icon.](media/classic-settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
 
 1. Under **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
 

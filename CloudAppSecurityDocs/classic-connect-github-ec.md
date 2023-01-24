@@ -38,14 +38,14 @@ In GitHub, browse to your organization's page, and from the URL, make a note of 
     > [!NOTE]
     > The page will have a URL like `https://github.com/<your-organization>`. For example, if your organization's page is `https://github.com/sample-organization`, the organization's login name is *sample-organization*.
 
-    ![Screenshot showing obtaining organization login name.](media/connect-github-org-login-name.png)
+    ![Screenshot showing obtaining organization login name.](media/classic-connect-github-org-login-name.png)
 
 1. **Create an OAuth App for Defender for Cloud Apps to connect your GitHub organization.**  
 Repeat this step for each additional connected organization.
 
     1. Browse to **Settings** > **Developer settings**, select  **OAuth Apps**, and then select **Register an application**. Alternatively, if you have existing OAuth apps, select **New OAuth App**.
 
-        ![Screenshot showing creating an oauth app.](media/connect-github-create-oauth-app.png)
+        ![Screenshot showing creating an oauth app.](media/classic-connect-github-create-oauth-app.png)
 
     1. Fill out the **Register a new OAuth app** details and then select **Register application**.
         - In the **Application name** box, enter a name for the app.
@@ -57,7 +57,7 @@ Repeat this step for each additional connected organization.
             > - For US Government GCC customers, enter the following value: `https://portal.cloudappsecuritygov.com/api/oauth/saga`
             > - For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/saga`
 
-        ![Screenshot showing registering an oauth app.](media/connect-github-register-oauth-app.png)
+        ![Screenshot showing registering an oauth app.](media/classic-connect-github-register-oauth-app.png)
 
     > [!NOTE]
     >
@@ -65,7 +65,7 @@ Repeat this step for each additional connected organization.
 
 1. Browse to **Settings** > **OAuth Apps**, select the OAuth App you just created, and make note of its **Client ID** and **Client Secret**.
 
-    ![Screenshot showing details of an oauth app.](media/connect-github-oauth-app-details.png)
+    ![Screenshot showing details of an oauth app.](media/classic-connect-github-oauth-app-details.png)
 
 ### Configure Defender for Cloud Apps
 
@@ -75,7 +75,7 @@ Repeat this step for each additional connected organization.
 
 1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then select **Connect in GitHub**.
 
-    ![Screenshot showing connect github api.](media/connect-github-connect-app.png)
+    ![Screenshot showing connect github api.](media/classic-connect-github-connect-app.png)
 
     The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
@@ -89,7 +89,7 @@ Repeat this step for each additional connected organization.
     > - **repo:status** - required for synchronizing repository-related events in the audit log
     > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://docs.github.com/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
 
-    ![Screenshot showing authorize github oauth.](media/connect-github-authorize-app.png)
+    ![Screenshot showing authorize github oauth.](media/classic-connect-github-authorize-app.png)
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
 

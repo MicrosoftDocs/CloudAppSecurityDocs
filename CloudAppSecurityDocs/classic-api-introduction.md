@@ -25,11 +25,11 @@ To obtain the Defender for Cloud Apps portal URL for your tenant, do the followi
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
 
-    ![Select About.](media/about-menu.png)
+    ![Select About.](media/classic-about-menu.png)
 
 1. In the Defender for Cloud Apps about screen, you can see the portal url.
 
-    ![View your data center.](media/api-url.png)
+    ![View your data center.](media/classic-api-url.png)
 
 Once you have the portal url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
 

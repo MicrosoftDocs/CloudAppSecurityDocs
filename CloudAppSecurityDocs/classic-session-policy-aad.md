@@ -38,7 +38,7 @@ To create a new session policy, follow this procedure:
 
 1. Select **Create policy** and select **Session policy**.
 
-    ![Create a Conditional access policy.](media/create-policy-from-conditional-access-tab.png)
+    ![Create a Conditional access policy.](media/classic-create-policy-from-conditional-access-tab.png)
 
 1. In the **Session policy** window, assign a name for your policy, such as *Block Download of Sensitive Documents in Box for Marketing Users*.
 1. In the **Session control type** field:
@@ -107,7 +107,7 @@ To export these logs:
 1. Go to the settings cog and select **Conditional Access App Control**.
 2. On the right side of the table, select the export button.
 
-    ![export button.](media/export-button.png)
+    ![export button.](media/classic-export-button.png)
 3. Select the range of the report and select **Export**. This process may take some time.
 
 To download the exported log:
@@ -115,7 +115,7 @@ To download the exported log:
 1. After the report is ready, go to **Settings** and then **Exported reports**.
 2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and select **Download**.
 
-    ![download button.](media/download-button.png)
+    ![download button.](media/classic-download-button.png)
 
 ## <a name="block-download"></a>Block all downloads
 

@@ -37,7 +37,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Copy the User ID and Account Base URI. You'll need them later.
 
-    ![DocuSign settings.](media/docusign-settings.png)
+    ![DocuSign settings.](media/classic-docusign-settings.png)
 
 ### Configure Defender for Cloud Apps
 
@@ -47,14 +47,14 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the window that appears, give the connector a descriptive name, and then select **Connect DocuSign**:
 
-    ![Connect DocuSign.](media/connect-docusign.png)
+    ![Connect DocuSign.](media/classic-connect-docusign.png)
 
 1. In the next screen, enter the following:
 
     - User ID: the User ID that you copied earlier.
     - Endpoint: the Account Base URI you copied earlier.
 
-    ![Enter DocuSign details.](media/docusign-details.png)
+    ![Enter DocuSign details.](media/classic-docusign-details.png)
 
 1. Select **Connect in DocuSign**.
 1. Make sure the connection succeeded by selecting **Test now**. The test might take a few minutes. After you see a success notice, select **Close**.

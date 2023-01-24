@@ -19,20 +19,20 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Select **Create project** to start a new project.
 
-    ![Google create project.](media/connect-google-workspace/google-workspace-create-new-project.png)
+    ![Google create project.](media/connect-google-workspace/classic-google-workspace-create-new-project.png)
 
 1. In the **New project** page, name your project as follows: **Defender for Cloud Apps** and select **Create**.
 
-    ![Google new project pop-up.](media/connect-google-workspace/google-workspace-create-new-project-popup.png)
+    ![Google new project pop-up.](media/connect-google-workspace/classic-google-workspace-create-new-project-popup.png)
 
 1. After the project is created, in the tool bar, select **Google Cloud Platform**. Make sure that the correct project is selected in the drop-down at the top.  
 Copy the **Project number**, you'll need it later.
 
-    ![Select Google Cloud Platform in tool bar.](media/connect-google-workspace/google-workspace-verify-project.png)
+    ![Select Google Cloud Platform in tool bar.](media/connect-google-workspace/classic-google-workspace-verify-project.png)
 
 1. In the navigation menu, under **MORE PRODUCTS**, go to **APIs & Services** > **Library**.
 
-    ![Google Workspace navigation menu.](media/connect-google-workspace/google-workspace-navigation-menu.png)
+    ![Google Workspace navigation menu.](media/connect-google-workspace/classic-google-workspace-navigation-menu.png)
 
     Enable the following APIs (use the search bar if the API isn't listed):
 
@@ -41,14 +41,14 @@ Copy the **Project number**, you'll need it later.
 
     For each API, select **Enable** to activate it.
 
-    ![enable Google API.](media/connect-google-workspace/google-workspace-api.png)
+    ![enable Google API.](media/connect-google-workspace/classic-google-workspace-api.png)
 
     > [!NOTE]
     > Ignore the **Credentials** warning for now.
 
 1. In the navigation menu, go to **APIs & Services** > **Dashboard**. Select **Admin SDK API** and **Google Drive API** and confirm they're enabled.
 
-    ![Google Workspace confirm APIs are enabled.](media/connect-google-workspace/google-workspace-api-enable-verification.png)
+    ![Google Workspace confirm APIs are enabled.](media/connect-google-workspace/classic-google-workspace-api-enable-verification.png)
 
 1. In the navigation menu, go to **APIs & Services** > **Credentials** and do the following steps:
 
@@ -59,28 +59,28 @@ Copy the **Project number**, you'll need it later.
             >[!NOTE]
             >The name and description can be different. These are examples for your convenience.
         1. Select **CREATE AND CONTINUE**.
-           ![Google Workspace service account details.](media/connect-google-workspace/google-workspace-service-account-details.png)
+           ![Google Workspace service account details.](media/connect-google-workspace/classic-google-workspace-service-account-details.png)
     1. Under **Grant this service account access to project**, for **Role** select **Project** > **Editor**, and then select **Done**.
-        ![Google Workspace grant service account access.](media/connect-google-workspace/google-workspace-service-account-access.png)
+        ![Google Workspace grant service account access.](media/connect-google-workspace/classic-google-workspace-service-account-access.png)
 
     1. In the navigation menu, return to **APIs & Services** > **Credentials**.
     1. Under **Service Accounts**, locate and edit the service account you created earlier by selecting the pencil icon.
 
-        ![Google edit service account.](media/connect-google-workspace/google-workspace-edit-service-account.png)
+        ![Google edit service account.](media/connect-google-workspace/classic-google-workspace-edit-service-account.png)
 
     1. Copy the email address. You'll need it later.
     1. Under **Keys**, from the **ADD KEY** menu, select **Create new key**, select **P12**, and then select **CREATE**. Save the file that's downloaded, you'll need it later.
 
 1. In the navigation menu, go to **IAM & Admin** > **Service accounts**. Copy the **Client ID** assigned to the service account you have just created - you'll need it later.
 
-    ![Google Workspace credentials service account.](media/connect-google-workspace/google-workspace-copy-service-account-client-id.png)
+    ![Google Workspace credentials service account.](media/connect-google-workspace/classic-google-workspace-copy-service-account-client-id.png)
 
 1. Go to [admin.google.com](https://admin.google.com/) and in the navigation menu, go to **Security** > **Access and data control** > **API Controls**. Then do the following:
 
     1. Under **Domain wide delegation**, select **MANAGE DOMAIN WIDE DELEGATION**.
-        ![Google Workspace domain wide delegation.](media/connect-google-workspace/google-workspace-domain-wide-delegation.png)
+        ![Google Workspace domain wide delegation.](media/connect-google-workspace/classic-google-workspace-domain-wide-delegation.png)
     1. Select **Add new**.
-        ![Google Workspace add new client ID.](media/connect-google-workspace/google-workspace-add-new-client-id.png)
+        ![Google Workspace add new client ID.](media/connect-google-workspace/classic-google-workspace-add-new-client-id.png)
     1. In the **Client ID** box, enter the **Client ID** that you copied earlier.
     1. In the **OAuth Scopes** box, enter the following list of required scopes (copy the text and paste it in the box):
 
@@ -90,7 +90,7 @@ Copy the **Project number**, you'll need it later.
 
     1. Select **AUTHORIZE**.
 
-        ![Google Workspace authorize new client ID.](media/connect-google-workspace/google-workspace-authorize-new-client-id.png)
+        ![Google Workspace authorize new client ID.](media/connect-google-workspace/classic-google-workspace-authorize-new-client-id.png)
 
 ## Configure Defender for Cloud Apps
 
@@ -108,7 +108,7 @@ Copy the **Project number**, you'll need it later.
 
 1. In the pop-up, fill in the following information:
 
-    ![Google Workspace Configuration in Defender for Cloud Apps.](media/connect-google-workspace/cas-config-google-workspace.png "Google Workspace Configuration in Defender for Cloud Apps")
+    ![Google Workspace Configuration in Defender for Cloud Apps.](media/connect-google-workspace/classic-cas-config-google-workspace.png "Google Workspace Configuration in Defender for Cloud Apps")
 
     1. Enter the **Service account ID**, the **Email** that you copied earlier.
 

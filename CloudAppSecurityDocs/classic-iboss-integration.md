@@ -30,7 +30,7 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
         - Source = iboss Secure Cloud Gateway
         - Receiver type = Syslog - UDP
 
-        ![data source iboss.](media/iboss-integration.png)
+        ![data source iboss.](media/classic-iboss-integration.png)
 
     4. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.
 

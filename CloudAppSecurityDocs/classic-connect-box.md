@@ -20,7 +20,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     1. Sign in with an Admin account to your Box account.
     1. Select **Apps** > **Custom apps** > **Settings**.
 
-         ![box apps.](media/box-apps.png "box apps")
+         ![box apps.](media/classic-box-apps.png "box apps")
 
     1. If **Disable unpublished apps by default** is selected, in the **Except for** text box, add the Defender for Cloud Apps API key:
 
@@ -34,7 +34,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
         Then select **Save**. For information on how to see which Defender for Cloud Apps data center you're connected to, see [View your data center](network-requirements.md#view-your-data-center).
 
-        ![box settings except for.](media/box-settings-except-for.png)
+        ![box settings except for.](media/classic-box-settings-except-for.png)
 
         > [!NOTE]
         > If you are an existing Adallom customer, and your console URL is for Adallom and not Defender for Cloud Apps, use this app serial number: `bwahmilhdlpbqy2ongkl119o3lrkoshc`.
@@ -43,7 +43,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the **App connectors** page, select the plus sign (**+**) button and then select **Box**.
 
-    ![connect box.](media/connect-box.png "connect box")
+    ![connect box.](media/classic-connect-box.png "connect box")
 
 1. In the **Box settings** pop-up, select **Follow this link**.
 

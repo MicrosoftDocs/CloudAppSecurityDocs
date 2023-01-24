@@ -37,15 +37,15 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 > [!NOTE]
 > If you have previously created a workflow using a Defender for Cloud Apps connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Security extensions**.
+1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/classic-settings-icon.png "settings icon") and select **Security extensions**.
 
 1. On the **Security extensions** page, select the plus button to generate a new API token.
 1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then select **Generate**.
 
-    ![Screenshot of the token window, showing the name entry and generate button.](media/tutorial-flow-token-generate.png)
+    ![Screenshot of the token window, showing the name entry and generate button.](media/classic-tutorial-flow-token-generate.png)
 1. Once the token is generated, select the copy icon to the right of the generated token, and then select **Close**. You'll need the token later.
 
-    ![Screenshot of the token window, showing the token and the copy process.](media/tutorial-flow-token-copy.png)
+    ![Screenshot of the token window, showing the token and the copy process.](media/classic-tutorial-flow-token-copy.png)
 
 ## Phase 2: Create a flow to run an antivirus scan<a name="create-flow"></a>
 
@@ -54,15 +54,15 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 1. Go to the [Power Automate portal](https://flow.microsoft.com/) and select **Templates**.
 
-    ![Screenshot of the main Power Automate page, showing the selection of templates.](media/tutorial-flow-templates.png)
+    ![Screenshot of the main Power Automate page, showing the selection of templates.](media/classic-tutorial-flow-templates.png)
 
 1. Search for *Defender for Cloud Apps* and select **Run antivirus scan using Windows Defender on Defender for Cloud Apps alerts**.
 
-    ![Screenshot of the templates Power Automate page, showing the search results.](media/tutorial-flow-templates-search.png)
+    ![Screenshot of the templates Power Automate page, showing the search results.](media/classic-tutorial-flow-templates-search.png)
 
 1. In the list of apps, on the row in which **Microsoft Defender for Endpoint connector** appears, select **Sign in**.
 
-    ![Screenshot of the templates Power Automate page, showing the sign-in process.](media/tutorial-flow-templates-signin.png)
+    ![Screenshot of the templates Power Automate page, showing the sign-in process.](media/classic-tutorial-flow-templates-signin.png)
 
 ## Phase 3: Configure the flow<a name="configure-flow"></a>
 
@@ -71,25 +71,25 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 1. In the list of apps, on the row in which **Defender for Cloud Apps** appears, select **Create**.
 
-    ![Screenshot of the templates Power Automate page, showing the Defender for Cloud Apps create button.](media/tutorial-flow-templates-create.png)
+    ![Screenshot of the templates Power Automate page, showing the Defender for Cloud Apps create button.](media/classic-tutorial-flow-templates-create.png)
 
 1. In the **Defender for Cloud Apps** pop-up, enter the connection name (for example, "Defender for Cloud Apps Token"), paste the API token you copied, and then select **Create**.
 
-    ![Screenshot of the Defender for Cloud Apps window, showing the name and key entry and create button.](media/tutorial-flow-templates-create-window.png)
+    ![Screenshot of the Defender for Cloud Apps window, showing the name and key entry and create button.](media/classic-tutorial-flow-templates-create-window.png)
 
 1. In the list of apps, on the row in which **HTTP with Azure AD** appears, select **Sign in**.
 
 1. In the **HTTP with Azure AD** pop-up, for both the **Base Resource URL** and **Azure AD Resource URI** fields, enter `https://graph.microsoft.com`, and then select **Sign in** and enter the admin credentials you want to use with the HTTP with Azure AD connector.
 
-    ![Screenshot of the HTTP with Azure AD window, showing the Resource fields and sign-in button.](media/tutorial-flow-templates-azure.png)
+    ![Screenshot of the HTTP with Azure AD window, showing the Resource fields and sign-in button.](media/classic-tutorial-flow-templates-azure.png)
 
 1. Select **Continue**.
 
-    ![Screenshot of the templates Power Automate window, showing the completed actions and continue button.](media/tutorial-flow-templates-continue.png)
+    ![Screenshot of the templates Power Automate window, showing the completed actions and continue button.](media/classic-tutorial-flow-templates-continue.png)
 
 1. Once all the connecters are successfully connected, on the flow's page under **Apply to each device**, optionally modify the comment and scan type, and then select **Save**.
 
-    ![Screenshot of the flow page, showing the scan setting section.](media/tutorial-flow-templates-scan.png)
+    ![Screenshot of the flow page, showing the scan setting section.](media/classic-tutorial-flow-templates-scan.png)
 
 ## Phase 4: Configure a policy to run the flow<a name="configure-policy"></a>
 
@@ -99,7 +99,7 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 1. Under **Alerts**, select **Send alerts to Flow**, and then select **Run antivirus scan using Windows Defender upon a Defender for Cloud Apps alert**.
 
-    ![Screenshot of the policy page, showing the alerts settings section.](media/tutorial-flow-templates-alerts.png)
+    ![Screenshot of the policy page, showing the alerts settings section.](media/classic-tutorial-flow-templates-alerts.png)
 
 Now every alert raised for this policy will initiate the flow to run the antivirus scan.
 

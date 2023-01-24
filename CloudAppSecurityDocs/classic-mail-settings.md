@@ -22,7 +22,7 @@ This article provides information about how to personalize the email notificatio
 
 1. In the menu bar, select the settings cog, select **Settings**, and then select the **Mail settings** tab.
 
-    ![mail settings.](media/mail-settings-config.png)
+    ![mail settings.](media/classic-mail-settings-config.png)
 
 1. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Defender for Cloud Apps accomplishes the customization by using a third-party mail service called MailChimp&reg;. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Defender for Cloud Apps will send the notifications using the default settings.
 

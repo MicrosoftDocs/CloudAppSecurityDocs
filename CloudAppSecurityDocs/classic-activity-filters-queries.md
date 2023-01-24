@@ -101,7 +101,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 <!--
 >[!NOTE]
-> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon.](media/clear-filters.png). -->
+> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon.](media/classic-clear-filters.png). -->
 
 ## Activity queries
 
@@ -113,11 +113,11 @@ To make investigation even simpler, you can now create custom queries and save t
 
 3. In the **Save query** pop-up, name your query.
 
-   ![new query.](media/new-activity-query.png)
+   ![new query.](media/classic-new-activity-query.png)
 
 4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
-   ![open query.](media/select-activity-query.png)
+   ![open query.](media/classic-select-activity-query.png)
 
 Defender for Cloud Apps also provides you with **Suggested queries**. Suggested queries provide you with recommended avenues of investigation that filter your activities. You can edit these queries and save the as custom queries. The following are optional suggested queries:
 
@@ -141,7 +141,7 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 - Successful log in - filters all your activities to display only those activities that involve successful log-ins, including impersonate action, impersonate log on, single sign-on log-on, and log on from a new device.
 
-![query activities.](media/queries-activity.png)
+![query activities.](media/classic-queries-activity.png)
 
 Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally select **Save as** to create a new **Saved query**.
 
@@ -149,7 +149,7 @@ Additionally, you can use the suggested queries as a starting point for a new qu
 
 To investigate activities older than 30 days, you can navigate to the **Activity log** and select **Investigate 6 months back** in the top right-hand corner of the screen:
 
-![Select investigate 6 months back.](media/investigate-six-months-back.png)
+![Select investigate 6 months back.](media/classic-investigate-six-months-back.png)
 
 From there you can define the filters as is normally done with the **Activity Log**, but with two differences:
 
@@ -163,7 +163,7 @@ From there you can define the filters as is normally done with the **Activity Lo
     - Location
     - User name
 
-![Filter after selecting investigate 6 months back.](media/filter-six-months-back.png)
+![Filter after selecting investigate 6 months back.](media/classic-filter-six-months-back.png)
 
 ## Next steps
 

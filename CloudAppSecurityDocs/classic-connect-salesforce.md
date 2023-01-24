@@ -31,12 +31,12 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
     * Under **Administration** -> **Users**, go to the **Profiles** page.
 
-        ![Salesforce manage users profiles.](media/salesforce-profiles.png)
+        ![Salesforce manage users profiles.](media/classic-salesforce-profiles.png)
 
     * Create a new profile by selecting **New Profile**.
     * Choose the profile you just created to deploy Defender for Cloud Apps and select **Edit**. This profile will be used for the Defender for Cloud Apps service account to set up the App connector.
 
-         ![Salesforce edit profile.](media/salesforce-edit-profile.png)
+         ![Salesforce edit profile.](media/classic-salesforce-edit-profile.png)
 
     * Make sure you have the following checkboxes enabled:
       * **API Enabled**
@@ -54,17 +54,17 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
     1. Under **Administration** -> **Users**, go to the **Users** page.
 
-        ![Salesforce menu users.](media/salesforce-menu-users.png)
+        ![Salesforce menu users.](media/classic-salesforce-menu-users.png)
 
     1. Select the current administrative user to your dedicated Defender for Cloud Apps user.
 
     1. Make sure that the **Salesforce CRM Content User** check box is selected.
 
-        ![Salesforce crm content user.](media/salesforce-crm-content-user.png)
+        ![Salesforce crm content user.](media/classic-salesforce-crm-content-user.png)
 
     1. Go to **Setup Home** -> **Security** -> **Session Settings**. Under **Session Settings**, make sure that  **Lock sessions to the IP address from which they originated** check box is **not** selected.
 
-        ![Salesforce session settings.](media/salesforce-setup-session-settings.png)
+        ![Salesforce session settings.](media/classic-salesforce-setup-session-settings.png)
 
     1. Select **Save**.
 
@@ -81,13 +81,13 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
 1. In the **App connectors** page, select the plus button followed by **Salesforce**.
 
-    ![Connect salesforce.](media/connect-salesforce.png)
+    ![Connect salesforce.](media/classic-connect-salesforce.png)
 
 1. In the Salesforce settings page, on the API tab, select **Follow this link**, depending on which instance you want to install.
 
 1. This opens the Salesforce sign in page. Enter your credentials to allow Defender for Cloud Apps access to your team's Salesforce app.
 
-    ![Salesforce sign-in.](media/salesforce-logon.png)
+    ![Salesforce sign-in.](media/classic-salesforce-logon.png)
 
 1. Salesforce will ask you if you want to allow Defender for Cloud Apps access to your team information and activity log and perform any activity as any team member. To continue, select **Allow**.
 

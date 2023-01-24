@@ -31,7 +31,7 @@ To create a new activity policy, follow this procedure:
 
 1. Click **Create policy** and select **Activity policy**.
 
-    ![Create a Threat Detection policy.](media/create-policy-from-threat-detection-tab.png)
+    ![Create a Threat Detection policy.](media/classic-create-policy-from-threat-detection-tab.png)
 
 1. Give your policy a name and description, if you want you can base it on a template, for more information on policy templates, see [Control cloud apps with policies](control-cloud-apps-with-policies.md).
 
@@ -41,7 +41,7 @@ To create a new activity policy, follow this procedure:
     >
     > - To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries/regions, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
     >
-    >   ![Screenshot of filter settings, showing location field is set.](media/activity-example-location-isset.png)
+    >   ![Screenshot of filter settings, showing location field is set.](media/classic-activity-example-location-isset.png)
     >
     > - When a filter is set to "does not equal" and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal "Hybrid Azure AD joined"** will not filter out events that do not contain **Device tag**, even if the device is Azure AD joined.
 
@@ -58,13 +58,13 @@ Take a look at these examples:
 
     Beneath the **Activity filters** field, configure the parameters for which the alert will be triggered.
 
-    ![Policy example for multiple failed sign-in attempts.](media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")
+    ![Policy example for multiple failed sign-in attempts.](media/classic-multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")
 
 - High download rate
 
     You can set your policy so that you receive an alert when there has been an unexpected or uncharacteristic level of downloading activity. To configure this sort of policy, under **Rate** parameters, choose the parameters to trigger the alert.
 
-    ![high download rate example.](media/high-download-rate-example.png "high download rate example")
+    ![high download rate example.](media/classic-high-download-rate-example.png "high download rate example")
 
 ## Activity policy reference
 

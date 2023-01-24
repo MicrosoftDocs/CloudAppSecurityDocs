@@ -22,21 +22,21 @@ The experience covers both Discovered apps as part of the pure Shadow IT discove
 
 Here you can review an app's high-level usage stats, understand top entities using the app in your organization, identify usage trends and review the potential risk the poses for your organization.
 
-![Overview tab on Apps page.](media/apps-overview-tab.png)
+![Overview tab on Apps page.](media/classic-apps-overview-tab.png)
 
 Continue investigating the app's risk by getting familiar with more than 90 risk indicators that affect the [app's risk](risk-score.md) in the **Info** tab.
 
-![Info tab on Apps page.](media/apps-info-tab.png)
+![Info tab on Apps page.](media/classic-apps-info-tab.png)
 
 Take a deep dive into the app's usage trends to identify usage spikes, top entities across various dimensions like data uploads, transactions, total traffic and so on.
 
 Continue investigating by viewing the top 100 users, source IPs, and devices (when [Defender for Endpoint integration](mde-integration.md) is enabled) to be able to continue the investigation in an additional entity context.
 
-![Cloud Apps Usage tab on Apps page.](media/apps-usage-tab.png)
+![Cloud Apps Usage tab on Apps page.](media/classic-apps-usage-tab.png)
 
-![Investigate users in Cloud Apps Usage tab on Apps page.](media/apps-usage-tab-users.png)
+![Investigate users in Cloud Apps Usage tab on Apps page.](media/classic-apps-usage-tab-users.png)
 
-![Investigate devices in Cloud Apps Usage tab on Apps page.](media/apps-usage-tab-devices.png)
+![Investigate devices in Cloud Apps Usage tab on Apps page.](media/classic-apps-usage-tab-devices.png)
 
 After analyzing the risk versus the usage of the application, an admin can decide which app controls should be applied to this application using the app actions. Admins can control cloud applications by:
 
@@ -49,11 +49,11 @@ After analyzing the risk versus the usage of the application, an admin can decid
 
 Discover and review an OAuth app's privilege levels, amount and types of permissions granted, consented users across the organization, and trends of the app's consents and audited activities across organizational assets.
 
-![OAuth app details on Apps page.](media/apps-oauth-app-details.png)
+![OAuth app details on Apps page.](media/classic-apps-oauth-app-details.png)
 
 Drill down to get more metadata about the OAuth app, pivot to investigate app activities and app consents, and decide whether this app should continue to have access to organizational assets or should be banned by using the app actions.
 
-![OAuth app info and usage on Apps page.](media/apps-oauth-app-info-usage.png)
+![OAuth app info and usage on Apps page.](media/classic-apps-oauth-app-info-usage.png)
 
 ## Client app context (preview)
 

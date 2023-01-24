@@ -47,7 +47,7 @@ To enable Defender for Endpoint integration with Defender for Cloud Apps:
     > It takes up to two hours after you enable the integration for the data to show up in Defender for Cloud Apps.
     >
 
-    ![Defender for Endpoint settings.](media/mde-settings.png)
+    ![Defender for Endpoint settings.](media/classic-mde-settings.png)
 
 To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 
@@ -55,7 +55,7 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 1. Under **Alerts**, select the global severity level for alerts.
 1. Select **Save**.
 
-    ![Defender for Endpoint alert settings.](media/mde-alert-severity-settings.png)
+    ![Defender for Endpoint alert settings.](media/classic-mde-alert-severity-settings.png)
 
 ## Next steps
 

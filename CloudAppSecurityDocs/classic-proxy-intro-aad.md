@@ -88,7 +88,7 @@ When a client certificate check is performed, Defender for Cloud Apps checks for
 
 To configure a policy to leverage device management via client certificates:
 
-1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings**.
+1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/classic-settings-icon.png "settings icon") and select **Settings**.
 
 1. Select the **Device identification** tab.
 1. Upload as many root or intermediate certificates as you require.

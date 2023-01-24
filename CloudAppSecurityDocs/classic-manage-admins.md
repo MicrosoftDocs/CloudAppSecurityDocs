@@ -184,14 +184,14 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 > - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
 > - Only Azure AD Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps.
 
-1. Select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and then **Manage admin access**.
+1. Select the settings cog ![settings icon.](media/classic-settings-icon.png "settings icon") and then **Manage admin access**.
 
 1. Select the plus icon to add the admins who should have access to Defender for Cloud Apps. Provide an email address of a user from inside your organization.
 
     > [!NOTE]
     > If you want to add external Managed Security Service Providers (MSSPs) as administrators of your Defender for Cloud Apps portal, make sure you first [invite them as a guest](#invite-external-admins) to your organization.
 
-    ![add admins.](media/add-admin.png)
+    ![add admins.](media/classic-add-admin.png)
 
 1. Next, select the drop-down to set what type of role the admin has, **Global admin**, **Security reader**, **Compliance admin**, **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, or **Cloud Discovery report admin**. If you select **App/Instance admin**, select the app and instance for the admin to have permissions for.
 
