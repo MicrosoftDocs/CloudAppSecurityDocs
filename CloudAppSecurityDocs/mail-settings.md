@@ -4,6 +4,7 @@ description: This article provides information about how to personalize the emai
 ms.date: 01/19/2023
 ms.topic: how-to
 ---
+
 # Email notification preferences
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -42,13 +43,34 @@ This article provides information about how to personalize the email notificatio
         - **%%content%%** - Placeholder for the content that will be included for end users, as set by the policy.
 
 1. Select **Upload a template...** and select the file you created.
-
+1. Select **Save**.
 1. Select **Send a test email** to email yourself an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email, you'll see and verify the following items:
     - The metadata fields
     - The template
     - The email subject
     - The title in the email body
     - The content
+
+## Additional notes
+
+The following type of notifications use the custom email templates:
+
+- Failed to import the file you tried to upload, it may be corrupt.
+- Security notification
+- Data Loss Prevention
+- File ownership report
+- Activity policy match notification
+- App removal notification
+- App removed
+- OAuth app revoked
+- File sharing report
+- Cloud App Security Test Email [this is for testing purposes]
+- Ownership of items transferred to you
+    
+
+> [!Note]
+> There are some types of notifications that are sent to admins only. In such a case, the default template is used, instead of the custom template.
+> 
 
 ## Sample email template
 
@@ -114,3 +136,4 @@ Below is a sample email template:
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
