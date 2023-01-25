@@ -1,10 +1,11 @@
 ---
-title: Add custom apps to Cloud Discovery 
-description: This topic provides information about how to add custom apps to Cloud Discovery in Defender for Cloud Apps to monitor Shadow IT.
+title: Classic portal -  Add custom apps to Cloud Discovery 
+description: Classic portal -  This topic provides information about how to add custom apps to Cloud Discovery in Defender for Cloud Apps to monitor Shadow IT.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Add custom apps to Cloud Discovery
+# Classic portal: Add custom apps to Cloud Discovery
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

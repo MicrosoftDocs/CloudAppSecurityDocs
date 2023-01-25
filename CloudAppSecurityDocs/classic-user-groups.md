@@ -1,10 +1,11 @@
 ---
-title: Import user groups from connected apps
-description: This article provides instructions for importing your user groups from connected apps into Defender for Cloud Apps.
+title: Classic portal -  Import user groups from connected apps
+description: Classic portal -  This article provides instructions for importing your user groups from connected apps into Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Import user groups from connected apps
+# Classic portal: Import user groups from connected apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

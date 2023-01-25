@@ -1,10 +1,11 @@
 ---
-title: Data security and privacy practices
-description: This article describes the Defender for Cloud Apps compliance offering, trust center, privacy, and data security.
+title: Classic portal -  Data security and privacy practices
+description: Classic portal -  This article describes the Defender for Cloud Apps compliance offering, trust center, privacy, and data security.
 ms.date: 01/19/2023
 ms.topic: overview
+ROBOTS: NOINDEX
 ---
-# Data security and privacy practices for Defender for Cloud Apps
+# Classic portal: Data security and privacy practices for Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

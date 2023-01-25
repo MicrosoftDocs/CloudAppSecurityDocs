@@ -1,10 +1,11 @@
 ---
-title: Govern discovered apps using Microsoft Defender for Endpoint
-description: This article describes how to govern Microsoft Defender for Endpoint discovered apps.
+title: Classic portal -  Govern discovered apps using Microsoft Defender for Endpoint
+description: Classic portal -  This article describes how to govern Microsoft Defender for Endpoint discovered apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Govern discovered apps using Microsoft Defender for Endpoint
+# Classic portal: Govern discovered apps using Microsoft Defender for Endpoint
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

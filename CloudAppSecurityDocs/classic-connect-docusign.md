@@ -1,10 +1,11 @@
 ---
-title: Connect DocuSign
-description: This article describes how to connect Microsoft Defender for Cloud Apps to your existing DocuSign environment via the App Connector APIs. 
+title: Classic portal -  Connect DocuSign
+description: Classic portal -  This article describes how to connect Microsoft Defender for Cloud Apps to your existing DocuSign environment via the App Connector APIs. 
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Connect DocuSign to Microsoft Defender for Cloud Apps
+# Classic portal: Connect DocuSign to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

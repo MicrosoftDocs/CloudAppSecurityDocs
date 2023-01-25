@@ -1,10 +1,11 @@
 ---
-title: Connect Atlassian
-description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Atlassian products using the App Connector APIs. 
+title: Classic portal -  Connect Atlassian
+description: Classic portal -  This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Atlassian products using the App Connector APIs. 
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Connect Atlassian to Microsoft Defender for Cloud Apps
+# Classic portal: Connect Atlassian to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

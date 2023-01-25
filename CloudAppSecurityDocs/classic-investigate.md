@@ -1,10 +1,11 @@
 ---
-title: Investigate cloud app risks and suspicious activity 
-description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Defender for Cloud Apps.
+title: Classic portal -  Investigate cloud app risks and suspicious activity 
+description: Classic portal -  This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Investigate cloud app risks and suspicious activity
+# Classic portal: Investigate cloud app risks and suspicious activity
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

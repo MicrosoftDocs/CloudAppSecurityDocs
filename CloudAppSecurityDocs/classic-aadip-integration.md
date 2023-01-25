@@ -1,10 +1,11 @@
 ---
-title: Azure Active Directory Identity Protection integration
-description: This article provides information about how to leverage Identity Protection alerts in Defender for Cloud Apps for hybrid risk detection.
+title: Classic portal -  Azure Active Directory Identity Protection integration
+description: Classic portal -  This article provides information about how to leverage Identity Protection alerts in Defender for Cloud Apps for hybrid risk detection.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Azure Active Directory Identity Protection integration
+# Classic portal: Azure Active Directory Identity Protection integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Security posture management for SaaS apps
-description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps for your organization's SaaS applications.
+title: Classic portal -  Security posture management for SaaS apps
+description: Classic portal -  This article provides information about how to get security configuration recommendations in Defender for Cloud Apps for your organization's SaaS applications.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Security posture management for SaaS apps
+# Classic portal: Security posture management for SaaS apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

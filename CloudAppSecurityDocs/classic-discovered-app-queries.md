@@ -1,10 +1,11 @@
 ---
-title: Discovered app filters and queries
-description: This article provides a list of Defender for Cloud Apps discovered app filters and queries and explains how to work with them.
+title: Classic portal -  Discovered app filters and queries
+description: Classic portal -  This article provides a list of Defender for Cloud Apps discovered app filters and queries and explains how to work with them.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Discovered app filters and queries in Microsoft Defender for Cloud Apps
+# Classic portal: Discovered app filters and queries in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,11 +1,12 @@
 ---
-title: Get started
-description: This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
+title: Classic portal -  Get started
+description: Classic portal -  This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
 ms.date: 01/19/2023
 ms.topic: quickstart
+ROBOTS: NOINDEX
 ---
 
-# Get started with Microsoft Defender for Cloud Apps
+# Classic portal: Get started with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

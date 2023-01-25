@@ -1,10 +1,11 @@
 ---
-title: Integrate with iboss
-description: This article describes how to integrate Microsoft Defender for Cloud Apps with iboss secure cloud gateway for seamless Cloud Discovery and automated block of unsanctioned apps.
+title: Classic portal -  Integrate with iboss
+description: Classic portal -  This article describes how to integrate Microsoft Defender for Cloud Apps with iboss secure cloud gateway for seamless Cloud Discovery and automated block of unsanctioned apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Integrate Defender for Cloud Apps with iboss
+# Classic portal: Integrate Defender for Cloud Apps with iboss
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

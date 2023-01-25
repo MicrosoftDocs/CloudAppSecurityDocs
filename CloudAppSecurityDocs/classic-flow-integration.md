@@ -1,10 +1,11 @@
 ---
-title: Integrate with Microsoft Power Automate for custom alert automation
-description: This article provides information about how to get custom alert automation by integrating Microsoft Power Automate with Defender for Cloud Apps.
+title: Classic portal -  Integrate with Microsoft Power Automate for custom alert automation
+description: Classic portal -  This article provides information about how to get custom alert automation by integrating Microsoft Power Automate with Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Integrate with Microsoft Power Automate for custom alert automation
+# Classic portal: Integrate with Microsoft Power Automate for custom alert automation
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

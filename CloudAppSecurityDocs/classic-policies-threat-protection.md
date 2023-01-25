@@ -1,10 +1,11 @@
 ---
-title: Threat protection policies 
-description: This topic outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
+title: Classic portal -  Threat protection policies 
+description: Classic portal -  This topic outlines the steps to configure many threat protection policies in Defender for Cloud Apps.
 ms.date: 01/10/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
-# Threat protection policies
+# Classic portal: Threat protection policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

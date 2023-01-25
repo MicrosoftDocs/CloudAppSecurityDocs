@@ -1,10 +1,11 @@
 ---
-title: Scoped deployment
-description: This article provides information about how to scope your Defender for Cloud Apps deployment, including and excluding specific users or groups.
+title: Classic portal -  Scoped deployment
+description: Classic portal -  This article provides information about how to scope your Defender for Cloud Apps deployment, including and excluding specific users or groups.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Scoped deployment
+# Classic portal: Scoped deployment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

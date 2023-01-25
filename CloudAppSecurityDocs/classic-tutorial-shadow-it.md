@@ -1,10 +1,11 @@
 ---
-title: Discover and manage Shadow IT 
-description: This tutorial describes the process to discover and manage Shadow IT in Microsoft Defender for Cloud Apps.
+title: Classic portal -  Discover and manage Shadow IT 
+description: Classic portal -  This tutorial describes the process to discover and manage Shadow IT in Microsoft Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: tutorial
+ROBOTS: NOINDEX
 ---
-# Tutorial: Discover and manage shadow IT
+# Classic portal: Tutorial: Discover and manage shadow IT
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Connect Amazon Web Services 
-description: This article provides information about how to connect your AWS app to Defender for Cloud Apps using the API connector for visibility and control over use.
+title: Classic portal -  Connect Amazon Web Services 
+description: Classic portal -  This article provides information about how to connect your AWS app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Connect Amazon Web Services  to Microsoft Defender for Cloud Apps
+# Classic portal: Connect Amazon Web Services  to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

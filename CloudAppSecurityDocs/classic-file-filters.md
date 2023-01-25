@@ -1,10 +1,11 @@
 ---
-title: File filters 
-description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
+title: Classic portal -  File filters 
+description: Classic portal -  This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# File filters in Microsoft Defender for Cloud Apps
+# Classic portal: File filters in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

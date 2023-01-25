@@ -1,10 +1,11 @@
 ---
-title: Investigate risky users 
-description: This tutorial describes the process to investigate risky users in Microsoft Defender for Cloud Apps, across hybrid environments, by integrating with Microsoft Defender for Identity.
+title: Classic portal -  Investigate risky users 
+description: Classic portal -  This tutorial describes the process to investigate risky users in Microsoft Defender for Cloud Apps, across hybrid environments, by integrating with Microsoft Defender for Identity.
 ms.date: 01/19/2023
 ms.topic: tutorial
+ROBOTS: NOINDEX
 ---
-# Tutorial: Investigate risky users
+# Classic portal: Tutorial: Investigate risky users
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

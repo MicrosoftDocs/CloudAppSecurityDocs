@@ -1,10 +1,11 @@
 ---
-title: Manage OAuth apps
-description: This article provides information about how you can control, ban and allow third-party OAuth apps.
+title: Classic portal -  Manage OAuth apps
+description: Classic portal -  This article provides information about how you can control, ban and allow third-party OAuth apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Manage OAuth apps
+# Classic portal: Manage OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

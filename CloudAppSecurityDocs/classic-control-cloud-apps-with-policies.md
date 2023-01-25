@@ -1,10 +1,11 @@
 ---
-title: Control cloud apps with policies
-description: This article provides information on how policies are used and set up to control cloud app use.
+title: Classic portal -  Control cloud apps with policies
+description: Classic portal -  This article provides information on how policies are used and set up to control cloud app use.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Control cloud apps with policies
+# Classic portal: Control cloud apps with policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Manage alerts
-description: This article explains how to work with alerts raised in the Defender for Cloud Apps portal.
+title: Classic portal -  Manage alerts
+description: Classic portal -  This article explains how to work with alerts raised in the Defender for Cloud Apps portal.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Manage alerts
+# Classic portal: Manage alerts
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,11 +1,12 @@
 ---
-title: Anomaly detection policies
-description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
+title: Classic portal -  Anomaly detection policies
+description: Classic portal -  This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
 
-# Anomaly detection policies in Defender for Cloud Apps
+# Classic portal: Anomaly detection policies in Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

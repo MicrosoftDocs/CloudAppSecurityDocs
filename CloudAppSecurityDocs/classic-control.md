@@ -1,10 +1,11 @@
 ---
-title: Governance actions
-description: This article provides information about the governance actions you can take in Defender for Cloud Apps to control your organization's cloud app use.
+title: Classic portal -  Governance actions
+description: Classic portal -  This article provides information about the governance actions you can take in Defender for Cloud Apps to control your organization's cloud app use.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Governance actions in Microsoft Defender for Cloud Apps
+# Classic portal: Governance actions in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

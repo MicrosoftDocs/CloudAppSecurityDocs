@@ -1,10 +1,11 @@
 ---
-title: File policies
-description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
+title: Classic portal -  File policies
+description: Classic portal -  This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# File policies in Microsoft Defender for Cloud Apps
+# Classic portal: File policies in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

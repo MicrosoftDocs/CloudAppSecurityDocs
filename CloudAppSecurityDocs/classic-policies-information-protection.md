@@ -1,10 +1,11 @@
 ---
-title: Information protection policies 
-description: This article outlines the steps to configure many information protection policies in Defender for Cloud Apps.
+title: Classic portal -  Information protection policies 
+description: Classic portal -  This article outlines the steps to configure many information protection policies in Defender for Cloud Apps.
 ms.date: 01/10/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
-# Information protection policies
+# Classic portal: Information protection policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

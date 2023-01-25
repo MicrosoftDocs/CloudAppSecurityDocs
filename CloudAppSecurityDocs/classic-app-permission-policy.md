@@ -1,10 +1,11 @@
 ---
-title: Create policies to control OAuth apps 
-description: This article provides instructions for creating and working with app permission policies in Microsoft Defender for Cloud Apps.
+title: Classic portal -  Create policies to control OAuth apps 
+description: Classic portal -  This article provides instructions for creating and working with app permission policies in Microsoft Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Create policies to control OAuth apps
+# Classic portal: Create policies to control OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,11 +1,12 @@
 ---
-title: Troubleshooting access and session controls
-description: This article provides admins with guidance on how to investigate and resolve common access and session controls.
+title: Classic portal -  Troubleshooting access and session controls
+description: Classic portal -  This article provides admins with guidance on how to investigate and resolve common access and session controls.
 ms.date: 01/19/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
 
-# Troubleshooting access and session controls
+# Classic portal: Troubleshooting access and session controls
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

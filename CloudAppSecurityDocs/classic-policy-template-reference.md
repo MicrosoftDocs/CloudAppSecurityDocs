@@ -1,10 +1,11 @@
 ---
-title: Policy template reference
-description: This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
+title: Classic portal -  Policy template reference
+description: Classic portal -  This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Policy template reference
+# Classic portal: Policy template reference
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

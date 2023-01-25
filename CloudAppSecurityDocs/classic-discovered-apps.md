@@ -1,11 +1,12 @@
 ---
-title: Working with discovered apps
-description: This article describes the process for identifying and remediating risky cloud discovery apps in Defender for Cloud Apps.
+title: Classic portal -  Working with discovered apps
+description: Classic portal -  This article describes the process for identifying and remediating risky cloud discovery apps in Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
 
-# Working with discovered apps
+# Classic portal: Working with discovered apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

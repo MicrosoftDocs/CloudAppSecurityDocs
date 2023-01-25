@@ -1,10 +1,11 @@
 ---
-title: Accounts 
-description: This article provides information about reviewing accounts from your connected apps.
+title: Classic portal -  Accounts 
+description: Classic portal -  This article provides information about reviewing accounts from your connected apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Accounts
+# Classic portal: Accounts
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

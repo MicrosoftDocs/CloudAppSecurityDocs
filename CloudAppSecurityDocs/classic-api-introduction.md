@@ -1,10 +1,11 @@
 ---
-title: REST API
-description: This article describes how to interact with Defender for Cloud Apps over HTTPS.
+title: Classic portal -  REST API
+description: Classic portal -  This article describes how to interact with Defender for Cloud Apps over HTTPS.
 ms.date: 01/19/2023
 ms.topic: reference
+ROBOTS: NOINDEX
 ---
-# Defender for Cloud Apps REST API
+# Classic portal: Defender for Cloud Apps REST API
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

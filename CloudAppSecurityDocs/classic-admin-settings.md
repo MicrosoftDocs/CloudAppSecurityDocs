@@ -1,10 +1,11 @@
 ---
-title: Admin user settings
-description: This article provides instructions for setting admin preferences in Defender for Cloud Apps.
+title: Classic portal -  Admin user settings
+description: Classic portal -  This article provides instructions for setting admin preferences in Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Admin user settings
+# Classic portal: Admin user settings
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

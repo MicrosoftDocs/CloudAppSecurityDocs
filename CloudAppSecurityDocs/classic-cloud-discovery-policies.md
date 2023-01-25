@@ -1,10 +1,11 @@
 ---
-title: Create Cloud Discovery policies
-description: This article provides information about working with Cloud Discovery policies.
+title: Classic portal -  Create Cloud Discovery policies
+description: Classic portal -  This article provides information about working with Cloud Discovery policies.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Create Cloud Discovery policies
+# Classic portal: Create Cloud Discovery policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

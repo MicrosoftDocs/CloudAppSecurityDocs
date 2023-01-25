@@ -1,10 +1,11 @@
 ---
-title: Cloud Discovery policies 
-description: This article outlines the steps to configure many Cloud Discovery policies in Defender for Cloud Apps.
+title: Classic portal -  Cloud Discovery policies 
+description: Classic portal -  This article outlines the steps to configure many Cloud Discovery policies in Defender for Cloud Apps.
 ms.date: 01/10/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
-# Cloud Discovery policies
+# Classic portal: Cloud Discovery policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

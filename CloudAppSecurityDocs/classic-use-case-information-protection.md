@@ -1,10 +1,11 @@
 ---
-title: Automatically apply sensitivity labels from Microsoft Purview Information Protection
-description: This tutorial describes how to automatically apply sensitivity labels from Microsoft Purview Information Protection in Microsoft Defender for Cloud Apps.
+title: Classic portal -  Automatically apply sensitivity labels from Microsoft Purview Information Protection
+description: Classic portal -  This tutorial describes how to automatically apply sensitivity labels from Microsoft Purview Information Protection in Microsoft Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: tutorial
+ROBOTS: NOINDEX
 ---
-# Tutorial: Automatically apply sensitivity labels from Microsoft Purview Information Protection
+# Classic portal: Tutorial: Automatically apply sensitivity labels from Microsoft Purview Information Protection
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

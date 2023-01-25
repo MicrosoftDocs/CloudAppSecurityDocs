@@ -1,10 +1,11 @@
 ---
-title: Working with the dashboard
-description: This article provides a foundation for how to use the Defender for Cloud Apps dashboard.
+title: Classic portal -  Working with the dashboard
+description: Classic portal -  This article provides a foundation for how to use the Defender for Cloud Apps dashboard.
 ms.date: 01/19/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
-# Working with the dashboard
+# Classic portal: Working with the dashboard
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

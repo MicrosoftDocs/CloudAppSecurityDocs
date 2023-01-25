@@ -1,10 +1,11 @@
 ---
-title: DLP content inspection
-description: This article describes the process Defender for Cloud Apps follows when performing DLP content inspection on data in your cloud.
+title: Classic portal -  DLP content inspection
+description: Classic portal -  This article describes the process Defender for Cloud Apps follows when performing DLP content inspection on data in your cloud.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# DLP content inspection in Microsoft Defender for Cloud Apps
+# Classic portal: DLP content inspection in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

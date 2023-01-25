@@ -1,11 +1,12 @@
 ---
-title: Network requirements 
-description: This article describes the IP addresses and ports you need to open to work with Defender for Cloud Apps.
+title: Classic portal -  Network requirements 
+description: Classic portal -  This article describes the IP addresses and ports you need to open to work with Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
 
-# Network requirements
+# Classic portal: Network requirements
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

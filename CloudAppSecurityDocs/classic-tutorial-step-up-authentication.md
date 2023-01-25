@@ -1,10 +1,11 @@
 ---
-title: Require step-up authentication (authentication context) upon risky action
-description: This tutorial provides instructions for requiring step-up authentication (authentication context) upon risky action.
+title: Classic portal -  Require step-up authentication (authentication context) upon risky action
+description: Classic portal -  This tutorial provides instructions for requiring step-up authentication (authentication context) upon risky action.
 ms.date: 01/10/2023
 ms.topic: tutorial
+ROBOTS: NOINDEX
 ---
-# Tutorial: Require step-up authentication (authentication context) upon risky action
+# Classic portal: Tutorial: Require step-up authentication (authentication context) upon risky action
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

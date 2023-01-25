@@ -1,10 +1,11 @@
 ---
-title: Advanced log collector management
-description: This article provides information about how advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
+title: Classic portal -  Advanced log collector management
+description: Classic portal -  This article provides information about how advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Advanced log collector management
+# Classic portal: Advanced log collector management
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

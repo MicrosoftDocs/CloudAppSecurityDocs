@@ -1,10 +1,11 @@
 ---
-title: Use a custom log parser
-description: This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Defender for Cloud Apps.
+title: Classic portal -  Use a custom log parser
+description: Classic portal -  This article provides information about how to use the custom log parser to upload logs for devices that aren't supported to Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Use a custom log parser
+# Classic portal: Use a custom log parser
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

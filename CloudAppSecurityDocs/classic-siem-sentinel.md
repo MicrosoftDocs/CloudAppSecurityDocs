@@ -1,10 +1,11 @@
 ---
-title: Microsoft Sentinel integration 
-description: This article provides information integrating Microsoft Sentinel with Defender for Cloud Apps.
+title: Classic portal -  Microsoft Sentinel integration 
+description: Classic portal -  This article provides information integrating Microsoft Sentinel with Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Microsoft Sentinel integration (Preview)
+# Classic portal: Microsoft Sentinel integration (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

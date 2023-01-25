@@ -1,10 +1,11 @@
 ---
-title: Activity privacy
-description: This article provides information about how to configure your activity monitoring to comply with your user privacy policy.
+title: Classic portal -  Activity privacy
+description: Classic portal -  This article provides information about how to configure your activity monitoring to comply with your user privacy policy.
 ms.date: 01/16/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Activity privacy
+# Classic portal: Activity privacy
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

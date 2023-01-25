@@ -1,10 +1,11 @@
 ---
-title: Cloud Discovery anomaly detection policy 
-description: This article provides information about how to work with Cloud Discovery anomaly detection policies.
+title: Classic portal -  Cloud Discovery anomaly detection policy 
+description: Classic portal -  This article provides information about how to work with Cloud Discovery anomaly detection policies.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Cloud Discovery anomaly detection policy
+# Classic portal: Cloud Discovery anomaly detection policy
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Security configuration overview for public cloud platforms
-description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps for your organization's public cloud platforms.
+title: Classic portal -  Security configuration overview for public cloud platforms
+description: Classic portal -  This article provides information about how to get security configuration recommendations in Defender for Cloud Apps for your organization's public cloud platforms.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Security configuration overview for public cloud platforms
+# Classic portal: Security configuration overview for public cloud platforms
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

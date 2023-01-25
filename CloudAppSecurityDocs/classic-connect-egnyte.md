@@ -1,10 +1,11 @@
 ---
-title: Connect Egnyte
-description: This article describes how to connect Microsoft Defender for Cloud Apps to your existing Egnyte via the App Connector APIs. 
+title: Classic portal -  Connect Egnyte
+description: Classic portal -  This article describes how to connect Microsoft Defender for Cloud Apps to your existing Egnyte via the App Connector APIs. 
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Connect Egnyte to Microsoft Defender for Cloud Apps
+# Classic portal: Connect Egnyte to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Generic SIEM integration 
-description: This article provides information integrating your generic SIEM with Defender for Cloud Apps.
+title: Classic portal -  Generic SIEM integration 
+description: Classic portal -  This article provides information integrating your generic SIEM with Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Generic SIEM integration
+# Classic portal: Generic SIEM integration
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

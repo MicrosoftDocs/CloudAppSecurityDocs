@@ -1,10 +1,11 @@
 ---
-title: Managing internal tokens (legacy)
-description: This article provides information about the internal legacy method of generating and managing API tokens for Defender for Cloud Apps.
+title: Classic portal -  Managing internal tokens (legacy)
+description: Classic portal -  This article provides information about the internal legacy method of generating and managing API tokens for Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: reference
+ROBOTS: NOINDEX
 ---
-# Managing internal tokens (legacy)
+# Classic portal: Managing internal tokens (legacy)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

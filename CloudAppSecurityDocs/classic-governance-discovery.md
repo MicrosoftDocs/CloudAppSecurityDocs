@@ -1,11 +1,12 @@
 ---
-title: Govern discovered apps 
-description: This article describes the procedure for governing your discovered apps by blocking their usage in your organization.
+title: Classic portal -  Govern discovered apps 
+description: Classic portal -  This article describes the procedure for governing your discovered apps by blocking their usage in your organization.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
 
-# Govern discovered apps
+# Classic portal: Govern discovered apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

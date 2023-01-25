@@ -1,10 +1,11 @@
 ---
-title: Cloud Discovery data anonymization
-description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
+title: Classic portal -  Cloud Discovery data anonymization
+description: Classic portal -  This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Cloud Discovery data anonymization
+# Classic portal: Cloud Discovery data anonymization
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

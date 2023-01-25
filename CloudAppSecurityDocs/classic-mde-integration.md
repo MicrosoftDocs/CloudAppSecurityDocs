@@ -1,10 +1,11 @@
 ---
-title: Integrate Microsoft Defender for Endpoint
-description: This article describes how to integrate Microsoft Defender for Endpoint with Defender for Cloud Apps for enhanced visibility into Shadow IT and risk management.
+title: Classic portal -  Integrate Microsoft Defender for Endpoint
+description: Classic portal -  This article describes how to integrate Microsoft Defender for Endpoint with Defender for Cloud Apps for enhanced visibility into Shadow IT and risk management.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps
+# Classic portal: Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

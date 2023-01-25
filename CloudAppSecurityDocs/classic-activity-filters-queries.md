@@ -1,11 +1,12 @@
 ---
-title: Activity filters and queries
-description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
+title: Classic portal -  Activity filters and queries
+description: Classic portal -  This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
 
-# Activity filters and queries
+# Classic portal: Activity filters and queries
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

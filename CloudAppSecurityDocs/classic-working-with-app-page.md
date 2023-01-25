@@ -1,10 +1,11 @@
 ---
-title: Working with the app page
-description: This article describes how the app page works in Defender for Cloud Apps.
+title: Classic portal -  Working with the app page
+description: Classic portal -  This article describes how the app page works in Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
-# Working with the app page
+# Classic portal: Working with the app page
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

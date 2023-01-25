@@ -1,10 +1,11 @@
 ---
-title: Connect apps to get visibility and control 
-description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
+title: Classic portal -  Connect apps to get visibility and control 
+description: Classic portal -  This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Connect apps to get visibility and control with Microsoft Defender for Cloud Apps
+# Classic portal: Connect apps to get visibility and control with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

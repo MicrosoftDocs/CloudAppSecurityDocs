@@ -1,10 +1,11 @@
 ---
-title: Email notification preferences
-description: This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps.
+title: Classic portal -  Email notification preferences
+description: Classic portal -  This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Email notification preferences
+# Classic portal: Email notification preferences
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

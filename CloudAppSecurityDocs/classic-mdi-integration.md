@@ -1,10 +1,11 @@
 ---
-title: Integrate with Microsoft Defender for Identity 
-description: This article provides information about how to leverage Microsoft Defender for Identity insights in Defender for Cloud Apps for hybrid risk detection.
+title: Classic portal -  Integrate with Microsoft Defender for Identity 
+description: Classic portal -  This article provides information about how to leverage Microsoft Defender for Identity insights in Defender for Cloud Apps for hybrid risk detection.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Integrate Microsoft Defender for Identity with Microsoft Defender for Cloud Apps
+# Classic portal: Integrate Microsoft Defender for Identity with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

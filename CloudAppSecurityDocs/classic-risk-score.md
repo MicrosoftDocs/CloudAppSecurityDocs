@@ -1,10 +1,11 @@
 ---
-title: Working with the risk score 
-description: This article provides instructions for how to use and customize the Defender for Cloud Apps app risk score.
+title: Classic portal -  Working with the risk score 
+description: Classic portal -  This article provides instructions for how to use and customize the Defender for Cloud Apps app risk score.
 ms.date: 01/19/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
-# Working with the risk score
+# Classic portal: Working with the risk score
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

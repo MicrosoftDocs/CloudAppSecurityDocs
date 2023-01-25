@@ -1,10 +1,11 @@
 ---
-title: Enrich Cloud Discovery data with Azure AD usernames
-description: This article provides information about how to enrich Defender for Cloud Apps Discovery data with Azure AD usernames.
+title: Classic portal -  Enrich Cloud Discovery data with Azure AD usernames
+description: Classic portal -  This article provides information about how to enrich Defender for Cloud Apps Discovery data with Azure AD usernames.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Enrich Cloud Discovery data with Azure AD usernames
+# Classic portal: Enrich Cloud Discovery data with Azure AD usernames
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
-description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for catalog apps with non-Microsoft IdP.
+title: Classic portal -  Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
+description: Classic portal -  This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control reverse proxy features for catalog apps with non-Microsoft IdP.
 ms.date: 01/16/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
+# Classic portal: Deploy Conditional Access App Control for catalog apps with non-Microsoft IdP
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

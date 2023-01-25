@@ -1,10 +1,11 @@
 ---
-title: Discover and protect sensitive information in your organization
-description: This tutorial describes the process to discover and protect sensitive information in Microsoft Defender for Cloud Apps.
+title: Classic portal -  Discover and protect sensitive information in your organization
+description: Classic portal -  This tutorial describes the process to discover and protect sensitive information in Microsoft Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: tutorial
+ROBOTS: NOINDEX
 ---
-# Tutorial: Discover and protect sensitive information in your organization
+# Classic portal: Tutorial: Discover and protect sensitive information in your organization
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Preview features
-description: Learn how to access Microsoft Defender for Cloud Apps preview features.
+title: Classic portal -  Preview features
+description: Classic portal -  Learn how to access Microsoft Defender for Cloud Apps preview features.
 ms.date: 01/19/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
-# Preview features in Microsoft Defender for Cloud Apps
+# Classic portal: Preview features in Microsoft Defender for Cloud Apps
 
 The Microsoft Defender for Cloud Apps is constantly being updated to include new feature enhancements and capabilities.
 

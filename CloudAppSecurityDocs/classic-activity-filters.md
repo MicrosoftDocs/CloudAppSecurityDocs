@@ -1,10 +1,11 @@
 ---
-title: Activities 
-description: This article provides a list of activities, filters, and match parameters that can be applied to activity policies.
+title: Classic portal -  Activities 
+description: Classic portal -  This article provides a list of activities, filters, and match parameters that can be applied to activity policies.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Activities
+# Classic portal: Activities
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Integrate Microsoft Purview Information Protection 
-description: This article provides information about how to use sensitivity labels from Microsoft Purview Information Protection in Defender for Cloud Apps for added control of your organization's cloud app use.
+title: Classic portal -  Integrate Microsoft Purview Information Protection 
+description: Classic portal -  This article provides information about how to use sensitivity labels from Microsoft Purview Information Protection in Defender for Cloud Apps for added control of your organization's cloud app use.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Integrate Microsoft Purview Information Protection
+# Classic portal: Integrate Microsoft Purview Information Protection
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

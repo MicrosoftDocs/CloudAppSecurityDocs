@@ -1,10 +1,11 @@
 ---
-title: Basic setup
-description: This article explains how to provide information about your organization in Defender for Cloud Apps.
+title: Classic portal -  Basic setup
+description: Classic portal -  This article explains how to provide information about your organization in Defender for Cloud Apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Basic setup for Defender for Cloud Apps
+# Classic portal: Basic setup for Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

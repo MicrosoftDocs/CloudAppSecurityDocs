@@ -1,10 +1,11 @@
 ---
-title: Manage cloud platform security 
-description: This tutorial describes how to use Microsoft Defender for Cloud Apps to secure your Azure, AWS, and GCP cloud platforms.
+title: Classic portal -  Manage cloud platform security 
+description: Classic portal -  This tutorial describes how to use Microsoft Defender for Cloud Apps to secure your Azure, AWS, and GCP cloud platforms.
 ms.date: 01/19/2023
 ms.topic: tutorial
+ROBOTS: NOINDEX
 ---
-# Tutorial: Manage cloud platform security
+# Classic portal: Tutorial: Manage cloud platform security
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

@@ -1,10 +1,11 @@
 ---
-title: Session policies
-description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
+title: Classic portal -  Session policies
+description: Classic portal -  This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Session policies
+# Classic portal: Session policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

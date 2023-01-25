@@ -1,10 +1,11 @@
 ---
-title: Integrate with Zscaler
-description: This article describes how to integrate Microsoft Defender for Cloud Apps with Zscaler for seamless Cloud Discovery and automated block of unsanctioned apps.
+title: Classic portal -  Integrate with Zscaler
+description: Classic portal -  This article describes how to integrate Microsoft Defender for Cloud Apps with Zscaler for seamless Cloud Discovery and automated block of unsanctioned apps.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Integrate Defender for Cloud Apps with Zscaler
+# Classic portal: Integrate Defender for Cloud Apps with Zscaler
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

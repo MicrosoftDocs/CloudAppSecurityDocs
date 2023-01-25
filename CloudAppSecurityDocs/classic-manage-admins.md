@@ -1,10 +1,11 @@
 ---
-title: Manage admin access
-description: This article provides instructions for setting access to the Defender for Cloud Apps portal for your admins.
+title: Classic portal -  Manage admin access
+description: Classic portal -  This article provides instructions for setting access to the Defender for Cloud Apps portal for your admins.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Manage admin access
+# Classic portal: Manage admin access
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

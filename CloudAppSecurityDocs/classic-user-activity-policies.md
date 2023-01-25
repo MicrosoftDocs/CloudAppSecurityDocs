@@ -1,10 +1,11 @@
 ---
-title: Activity policies
-description: This article provides instructions for creating and working with activity policies.
+title: Classic portal -  Activity policies
+description: Classic portal -  This article provides instructions for creating and working with activity policies.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Activity policies
+# Classic portal: Activity policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

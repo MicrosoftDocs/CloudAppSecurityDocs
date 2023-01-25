@@ -1,10 +1,11 @@
 ---
-title: Protect files with admin quarantine
-description: This tutorial describes the scenario for using admin quarantine to control data breaches.
+title: Classic portal -  Protect files with admin quarantine
+description: Classic portal -  This tutorial describes the scenario for using admin quarantine to control data breaches.
 ms.date: 01/19/2023
 ms.topic: tutorial
+ROBOTS: NOINDEX
 ---
-# Tutorial: Protect files with admin quarantine
+# Classic portal: Tutorial: Protect files with admin quarantine
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 

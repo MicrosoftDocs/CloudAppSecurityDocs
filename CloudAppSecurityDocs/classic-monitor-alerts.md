@@ -1,10 +1,11 @@
 ---
-title: Monitor alerts 
-description: This article provides a list and description of all alerts.
+title: Classic portal -  Monitor alerts 
+description: Classic portal -  This article provides a list and description of all alerts.
 ms.date: 01/19/2023
 ms.topic: how-to
+ROBOTS: NOINDEX
 ---
-# Monitor alerts in Defender for Cloud Apps
+# Classic portal: Monitor alerts in Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
