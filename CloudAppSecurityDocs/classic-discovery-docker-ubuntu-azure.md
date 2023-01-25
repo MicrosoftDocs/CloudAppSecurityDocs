@@ -87,7 +87,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 1. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
-    ![Create log collector.](media/classic-classic-create-log-connector.png)
+    ![Create log collector.](media/classic-create-log-connector.png)
 
     > [!NOTE]
     >
@@ -233,7 +233,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
 
-    ![Copy command to import collector configuration on hosting machine.](media/classic-classic-create-log-connector.png)
+    ![Copy command to import collector configuration on hosting machine.](media/classic-create-log-connector.png)
 
 1. Run the command to deploy the log collector.
 

@@ -26,10 +26,10 @@ To configure your user privacy groups, you must first [import user groups](user-
 
 1. In the menu bar, select the settings cog and select **Scoped deployment and privacy**.
 
-    ![settings icon.](media/classic-classic-settings-icon.png)
+    ![settings icon.](media/classic-settings-icon.png)
 
 1. To set specific groups to be monitored by Defender for Cloud Apps, in the **Activity privacy** tab, select the plus icon.
-    ![icon.](media/classic-classic-plus-icon.png)
+    ![icon.](media/classic-plus-icon.png)
 
 1. In the **Add user groups** dialog, under **Select user groups**, select all the groups you want to make private in Defender for Cloud Apps, and then select **Add**.
 
@@ -42,10 +42,10 @@ To configure your user privacy groups, you must first [import user groups](user-
 
 1. In the menu bar, select the settings cog and select **Manage admin access**.
 
-    ![settings icon.](media/classic-classic-settings-icon.png)
+    ![settings icon.](media/classic-settings-icon.png)
 
 1. To give specific admins permission to view private activities, in the **Activity privacy permissions** tab, select the plus icon.
-    ![icon.](media/classic-classic-plus-icon.png)
+    ![icon.](media/classic-plus-icon.png)
 
 1. In the **Add admin permission** dialog, enter the admin's UPN or email address, and then select **Add permission**.
 
@@ -62,7 +62,7 @@ Once an admin has been granted the appropriate permission to view private activi
 
 1. In the **Activity log** page, to the right of the activity table, select the settings icon, and then select **Show private activities**.
 
-    ![Screenshot showing the activity log settings icon.](media/activity-privacy-view-classic-classic-settings-icon.png)
+    ![Screenshot showing the activity log settings icon.](media/activity-privacy-view-classic-settings-icon.png)
 
 1. In the **Show private activities** dialog, select **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log and the action is recorded in the governance log.
 

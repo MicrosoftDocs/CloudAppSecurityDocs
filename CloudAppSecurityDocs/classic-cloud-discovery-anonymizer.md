@@ -59,7 +59,7 @@ Key points:
         > [!NOTE]
         > This action is audited.
 
-        ![Anonymize resolve pop-up.](media/classic-classic-anonymize-resolve-dialog.png)
+        ![Anonymize resolve pop-up.](media/classic-anonymize-resolve-dialog.png)
 
     The following alternative way to resolve single usernames can also be used to look up the encrypted username of a known username.
 
@@ -82,7 +82,7 @@ Key points:
         > [!NOTE]
         > This action is audited.
 
-        ![Anonymize resolve pop-up.](media/classic-classic-anonymize-resolve-dialog.png)
+        ![Anonymize resolve pop-up.](media/classic-anonymize-resolve-dialog.png)
 
 6. The action is audited in the portal's **Governance log**.
 

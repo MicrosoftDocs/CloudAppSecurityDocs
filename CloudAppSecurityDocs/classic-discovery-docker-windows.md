@@ -94,7 +94,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
-    ![Create log collector.](media/classic-classic-create-log-connector.png)
+    ![Create log collector.](media/classic-create-log-connector.png)
 
     > [!NOTE]
     >
@@ -151,7 +151,7 @@ This installs the Docker client on your machine.
     (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
-    ![Create log collector.](media/classic-classic-create-log-connector.png)
+    ![Create log collector.](media/classic-create-log-connector.png)
 
 1. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 

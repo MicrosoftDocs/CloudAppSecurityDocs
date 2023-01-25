@@ -53,7 +53,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 7. In the **App connectors** page, select the plus button and then **ServiceNow**.
 
-    ![connect ServiceNow.](media/classic-classic-connect-servicenow.png "connect ServiceNow")
+    ![connect ServiceNow.](media/classic-connect-servicenow.png "connect ServiceNow")
 
 8. In the pop-up, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
@@ -85,7 +85,7 @@ To connect ServiceNow with Defender for Cloud Apps, you must have admin-level pe
 
 5. In the ServiceNow row, select **Connect** in the **App Connector status** column, or select the **Connect an app** button and then **ServiceNow**.
 
-   ![connect ServiceNow.](media/classic-classic-connect-servicenow.png "connect ServiceNow")
+   ![connect ServiceNow.](media/classic-connect-servicenow.png "connect ServiceNow")
 
 6. In the ServiceNow settings page, on the API tab, add your ServiceNow user ID, password, and instance URL in the appropriate boxes.
 

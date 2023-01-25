@@ -110,7 +110,7 @@ Create a dedicated project in GCP under your organization to enable integration 
 
 Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
 
-![Screenshot showing organization ID dialog.](media/classic-classic-connect-gcp-org-id.png)
+![Screenshot showing organization ID dialog.](media/classic-connect-gcp-org-id.png)
 
 ### Connect Google Cloud Platform auditing to Defender for Cloud Apps
 
@@ -231,7 +231,7 @@ Follow these steps to connect GCP security configuration to Defender for Cloud A
 #### Retrieve the Organization ID
 
 Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
-    ![Screenshot showing organization ID dialog.](media/classic-classic-connect-gcp-org-id.png)
+    ![Screenshot showing organization ID dialog.](media/classic-connect-gcp-org-id.png)
 
 ### Connect Google Cloud Platform security configuration to Defender for Cloud Apps
 

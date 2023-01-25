@@ -51,7 +51,7 @@ We recommend starting policy creation based on an existing template whenever pos
 
 To see the full list of policy templates, in the portal, go to **Control** -> **Templates**
 
-:::image type="content" source="media/classic-classic-policy-templates.png" alt-text="Policy templates." lightbox="media/classic-classic-policy-templates.png":::
+:::image type="content" source="media/classic-policy-templates.png" alt-text="Policy templates." lightbox="media/classic-policy-templates.png":::
 
 ## Next steps
 

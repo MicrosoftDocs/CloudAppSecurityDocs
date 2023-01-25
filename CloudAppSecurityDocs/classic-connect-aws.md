@@ -87,17 +87,17 @@ Use the following steps to configure your AWS auditing and then connect it to De
 
 1. Back in the **Add user** screen, refresh the list if necessary, and select the user you created, and select **Next: Tags**.
 
-    ![Attach existing policy in AWS.](media/classic-classic-aws-attach-policy.png "Attach existing policy in AWS")
+    ![Attach existing policy in AWS.](media/classic-aws-attach-policy.png "Attach existing policy in AWS")
 
 1. Select **Next: Review**.
 
 1. If all the details are correct, select **Create user**.
 
-    ![User permissions in AWS.](media/classic-classic-aws-user-permissions.png "Review user permissions in AWS")
+    ![User permissions in AWS.](media/classic-aws-user-permissions.png "Review user permissions in AWS")
 
 1. When you get the success message, select **Download .csv** to save a copy of the new user's credentials. You'll need these later.
 
-    ![Download csv in AWS.](media/classic-classic-aws-download-csv.png "Download csv in AWS")
+    ![Download csv in AWS.](media/classic-aws-download-csv.png "Download csv in AWS")
 
     > [!NOTE]
     > After connecting AWS, you'll receive events for seven days prior to connection. If you just enabled CloudTrail, you'll receive events from the time you enabled CloudTrail.
@@ -174,7 +174,7 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
 1. On the permissions page, select **Attach existing policies directly**, apply the **AWSSecurityHubReadOnlyAccess** and **SecurityAudit** policies, and then select **Next Tags**.
 
-    ![Attach existing policy in AWS.](media/classic-classic-aws-attach-policy.png "Attach existing policy in AWS")
+    ![Attach existing policy in AWS.](media/classic-aws-attach-policy.png "Attach existing policy in AWS")
 
 1. Optional: Add tags to the user.
 
@@ -187,11 +187,11 @@ Before you can connect AWS security configuration, make sure that you have [set 
 
 1. If all the details are correct, select **Create user**.
 
-    ![User permissions in AWS.](media/classic-classic-aws-user-permissions.png "Review user permissions in AWS")
+    ![User permissions in AWS.](media/classic-aws-user-permissions.png "Review user permissions in AWS")
 
 1. When you get the success message, select **Download .csv** to save a copy of the **Access key ID** and the **Secret access key**. You'll need these later.
 
-    ![Download csv in AWS.](media/classic-classic-aws-download-csv.png "Download csv in AWS")
+    ![Download csv in AWS.](media/classic-aws-download-csv.png "Download csv in AWS")
 
 ### Step 2: Connect Amazon Web Services security configuration to Defender for Cloud Apps
 

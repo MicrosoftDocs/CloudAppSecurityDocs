@@ -38,7 +38,7 @@ You might need to modify the configuration for the Defender for Cloud Apps Cloud
 
 1. Run `docker exec -it <collector name> pure-pw mkdb` to apply the change.
 
-    ![change ftp password.](media/log-collector-advanced-tasks/classic-classic-ftp-connect.png)
+    ![change ftp password.](media/log-collector-advanced-tasks/classic-ftp-connect.png)
 
 #### Customize certificate files
 
@@ -46,7 +46,7 @@ Follow this procedure to customize the certificate files you use for secure conn
 
 1. Open an FTP client and connect to the log collector.
 
-    ![Connect to ftp client.](media/log-collector-advanced-tasks/classic-classic-ftp-connect.png)
+    ![Connect to ftp client.](media/log-collector-advanced-tasks/classic-ftp-connect.png)
 
 1. Navigate to the `ssl_update` directory.
 1. Upload new certificate files to the `ssl_update` directory (the names are mandatory).

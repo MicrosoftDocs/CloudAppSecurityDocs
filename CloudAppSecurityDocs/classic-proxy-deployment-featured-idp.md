@@ -139,7 +139,7 @@ Defender for Cloud Apps will sync your policy details to its servers for each ne
 
 The preceding instructions helped you create a built-in Defender for Cloud Apps policy for catalog apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon.](media/classic-classic-settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
+1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon.](media/classic-settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
 
 1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
 
@@ -152,7 +152,7 @@ The preceding instructions helped you create a built-in Defender for Cloud Apps 
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Defender for Cloud Apps, select the settings cog ![settings icon.](media/classic-classic-settings-icon.png), and then select **Conditional Access App Control**.
+1. In Defender for Cloud Apps, select the settings cog ![settings icon.](media/classic-settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use with Conditional Access App Control** and then select **Save**.
 

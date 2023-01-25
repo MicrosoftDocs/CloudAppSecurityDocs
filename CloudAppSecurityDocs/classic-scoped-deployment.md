@@ -32,7 +32,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 2. To scope your deployment to include or exclude specific groups, you must first [import user groups](user-groups.md) into Microsoft Defender for Cloud Apps.
 
 3. To set specific groups to be monitored by Microsoft Defender for Cloud Apps, in the **Include** tab, select the plus icon.
-    ![icon.](media/classic-classic-plus-icon.png)
+    ![icon.](media/classic-plus-icon.png)
 
 4. In the **Create new include rule** dialog, do the following steps:
 
@@ -44,7 +44,7 @@ You may not want to use Microsoft Defender for Cloud Apps for all the users in y
 
 5. To set specific groups to be excluded from monitoring, in the **Exclude** tab, select the plus icon.
 
-   ![icon.](media/classic-classic-plus-icon.png)
+   ![icon.](media/classic-plus-icon.png)
 
 6. In the **Create new Exclude rule** dialog, set the following parameters:
 

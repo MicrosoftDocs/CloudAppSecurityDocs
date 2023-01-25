@@ -18,7 +18,7 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
 
 ### Add admins to the app onboarding/maintenance list
 
-1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4.](media/classic-classic-classic-classic-settings-icon.png "settings icon 4") and select **Settings**.
+1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4.](media/classic-classic-settings-icon.png "settings icon 4") and select **Settings**.
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 1. Enter the user principal name or email for the users that will be onboarding the app, and then select **Save**.
 
@@ -62,9 +62,9 @@ Follow the steps below to configure any app to be controlled by Defender for Clo
 
 Applications in the app catalog are automatically populated into the table under Connected Apps. Check that the app you want to deploy is recognized by navigating there.
 
-1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 1.](media/classic-classic-classic-classic-settings-icon.png "settings icon 1"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
+1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 1.](media/classic-classic-settings-icon.png "settings icon 1"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
 
-   ![Onboard with session control.](media/proxy-deployment-any-app/classic-classic-onboardwithsessioncontrol2.png)
+   ![Onboard with session control.](media/proxy-deployment-any-app/classic-onboardwithsessioncontrol2.png)
 
     ![Conditional access app control apps.](media/classic-conditional-access-app-control-apps.png)
 1. Select the **App: Select apps…** dropdown menu to filter and search for the app you want to deploy.
@@ -100,7 +100,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 
       > [!NOTE]
    > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
-1. Go to Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon 2.](media/classic-classic-classic-classic-settings-icon.png "settings icon 2") and select **Conditional Access App Control**.
+1. Go to Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon 2.](media/classic-classic-settings-icon.png "settings icon 2") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
 
       > [!TIP]
@@ -124,7 +124,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. Select **Continue**.
 1. Check that the application is available in the table.
 
-   ![Onboard with session control.](media/proxy-deployment-any-app/classic-classic-onboardwithsessioncontrol2.png)
+   ![Onboard with session control.](media/proxy-deployment-any-app/classic-onboardwithsessioncontrol2.png)
 
 To verify that the application is being proxied, first perform either a hard sign-out of browsers associated with the application or open a new browser with incognito mode.
 
@@ -139,7 +139,7 @@ If you encounter errors or issues, use the admin toolbar to gather resources suc
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Defender for Cloud Apps, select the settings cog ![settings icon 3.](media/classic-classic-classic-classic-settings-icon.png), and then select **Conditional Access App Control**.
+1. In Defender for Cloud Apps, select the settings cog ![settings icon 3.](media/classic-classic-settings-icon.png), and then select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use the app with session controls** and then select **Save**.
 1. In Azure AD, under **Security**, select **Conditional Access**.
