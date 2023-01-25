@@ -90,7 +90,7 @@ If the user was investigated and no suspicion for compromise was found, or for a
 
 1. In the window that opens, select **View User page** in the upper right.
 
-    ![Select View User page.](media/view-classic-user-page.png)
+    ![Select View User page.](media/classic-view-user-page.png)
 
 1. The user page will open in a new tab. Select the **Reset investigation priority score** link in the actions section in the top-right side of the page.
 

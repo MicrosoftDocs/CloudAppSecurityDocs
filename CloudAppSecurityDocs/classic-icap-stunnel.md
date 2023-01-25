@@ -289,7 +289,7 @@ The detection server used by Defender for Cloud Apps is a standard Network Preve
 
     1. Click **Configure**.
 
-        ![Configure ICAP target.](media/configure-classic-icap-target.png)
+        ![Configure ICAP target.](media/classic-configure-icap-target.png)
 
     1. Disable **Trial Mode**.
 

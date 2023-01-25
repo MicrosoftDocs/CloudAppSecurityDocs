@@ -62,7 +62,7 @@ Once an admin has been granted the appropriate permission to view private activi
 
 1. In the **Activity log** page, to the right of the activity table, select the settings icon, and then select **Show private activities**.
 
-    ![Screenshot showing the activity log settings icon.](media/activity-privacy-view-classic-settings-icon.png)
+    ![Screenshot showing the activity log settings icon.](media/classic-activity-privacy-view-settings-icon.png)
 
 1. In the **Show private activities** dialog, select **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log and the action is recorded in the governance log.
 

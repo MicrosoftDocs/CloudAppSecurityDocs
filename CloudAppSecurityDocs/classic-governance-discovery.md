@@ -16,7 +16,7 @@ After you've reviewed the list of discovered apps in your environment, you can s
 
 You can mark a specific risky app as unsanctioned by clicking the three dots at the end of the row. Then select **Unsanctioned**. Unsanctioning an app doesn't block use, but enables you to more easily monitor its use with the Cloud Discovery filters. You can then notify users of the unsanctioned app and suggest an alternative safe app for their use, or [generate a block script using the Defender for Cloud Apps APIs](api-discovery-script.md) to block all unsanctioned apps.
 
-  :::image type="content" source="media/classic-classic-tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/classic-classic-tag-as-unsanctioned.png":::
+  :::image type="content" source="media/classic-tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/classic-tag-as-unsanctioned.png":::
 
 ## Blocking apps with built-in streams
 
@@ -30,7 +30,7 @@ Defender for Cloud Apps enables you to block access to unsanctioned apps by usin
 
 1. In the Cloud Discovery dashboard, tag any apps you want to block as **Unsanctioned**.
 
-    :::image type="content" source="media/classic-classic-tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/classic-classic-tag-as-unsanctioned.png":::
+    :::image type="content" source="media/classic-tag-as-unsanctioned.png" alt-text="Tag as unsanctioned." lightbox="media/classic-tag-as-unsanctioned.png":::
 
 2. In the title bar, select **Actions** and then select **Generate block script...**.
 

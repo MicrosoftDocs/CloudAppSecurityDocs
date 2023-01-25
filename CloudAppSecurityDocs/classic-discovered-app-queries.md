@@ -80,7 +80,7 @@ Defender for Cloud Apps also provides you with **Suggested queries** and enables
 
 - **GDPR ready cloud apps** - Filters all your discovered apps to display only apps that are GDPR ready. Because GDPR compliance is a top priority, this query helps you easily identify apps that are GDPR ready and mitigate threat by assessing the risk of those that aren't.
 
-![query discovered apps.](media/queries-classic-discovered-apps.png)
+![query discovered apps.](media/classic-queries-discovered-apps.png)
 
 Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally select **Save as** to create a new **Saved query**.
 

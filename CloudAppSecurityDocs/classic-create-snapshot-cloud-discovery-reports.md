@@ -19,7 +19,7 @@ To create a snapshot report:
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover**, and then select **Create snapshot report**.
 
-    ![Create new snapshot report.](media/classic-create-classic-new-snapshot-report.png)
+    ![Create new snapshot report.](media/classic-create-new-snapshot-report.png)
 
 1. Enter a **Report name** and a **Description**
 
