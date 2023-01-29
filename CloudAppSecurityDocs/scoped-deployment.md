@@ -1,7 +1,7 @@
 ---
 title: Scoped deployment
 description: This article provides information about how to scope your Defender for Cloud Apps deployment, including and excluding specific users or groups.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Scoped deployment

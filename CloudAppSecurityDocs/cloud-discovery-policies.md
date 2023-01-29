@@ -1,7 +1,7 @@
 ---
 title: Create Cloud Discovery policies
 description: This article provides information about working with Cloud Discovery policies.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Create Cloud Discovery policies

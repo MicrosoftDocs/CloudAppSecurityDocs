@@ -1,7 +1,7 @@
 ---
 title: Connect Smartsheet
 description: This article describes how to connect Microsoft Defender for Cloud Apps to your existing Smartsheet via the App Connector APIs. 
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Connect Smartsheet to Microsoft Defender for Cloud Apps

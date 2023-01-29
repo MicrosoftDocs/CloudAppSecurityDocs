@@ -1,6 +1,6 @@
 ---
 title: Determine your app compliance posture
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: conceptual
 description: Determine your app compliance posture.
 ---

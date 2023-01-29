@@ -1,7 +1,7 @@
 ---
 title: Integrate with Microsoft Defender for Identity 
 description: This article provides information about how to leverage Microsoft Defender for Identity insights in Defender for Cloud Apps for hybrid risk detection.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Integrate Microsoft Defender for Identity with Microsoft Defender for Cloud Apps

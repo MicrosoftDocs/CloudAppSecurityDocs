@@ -1,7 +1,7 @@
 ---
 title: Managing internal tokens (legacy)
 description: This article provides information about the internal legacy method of generating and managing API tokens for Defender for Cloud Apps.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: reference
 ---
 # Managing internal tokens (legacy)

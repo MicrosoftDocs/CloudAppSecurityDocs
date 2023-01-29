@@ -1,7 +1,7 @@
 ---
 title: Working with discovery data
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: conceptual
 ---
 # Working with discovery data
