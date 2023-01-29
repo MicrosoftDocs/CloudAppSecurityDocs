@@ -1,7 +1,7 @@
 ---
 title: Governing connected apps
 description: This article lists and describes all the governance actions that can be taken in Defender for Cloud Apps and the log messages that track them.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 

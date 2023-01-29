@@ -1,7 +1,7 @@
 ---
 title: Cloud Discovery anomaly detection policy 
 description: This article provides information about how to work with Cloud Discovery anomaly detection policies.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Cloud Discovery anomaly detection policy

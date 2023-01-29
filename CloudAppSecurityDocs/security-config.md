@@ -1,7 +1,7 @@
 ---
 title: Security configuration overview for public cloud platforms
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps for your organization's public cloud platforms.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Security configuration overview for public cloud platforms

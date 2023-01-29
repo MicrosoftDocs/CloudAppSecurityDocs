@@ -1,7 +1,7 @@
 ---
 title: Create policies to control OAuth apps 
 description: This article provides instructions for creating and working with app permission policies in Microsoft Defender for Cloud Apps.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Create policies to control OAuth apps
