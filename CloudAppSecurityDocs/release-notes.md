@@ -566,7 +566,7 @@ Released May 31, 2020
 We've enhanced your ability to granularly determine which users you want to monitor with the ability to make activities private. This new feature enables you to specify users based on group membership whose activities will be hidden by default. Only authorized admins have the option to choose to view these private activities, with each instance being audited in the governance log. For more information, see [Activity privacy](activity-privacy.md).
 
 - **New integration with Azure Active Directory (Azure AD) Gallery**  
-We've leveraged our native integration with Azure AD to give you the ability to navigate directly from an app in the Cloud App Catalog to its corresponding Azure AD Gallery app, and manage it in the gallery. For more information, see [Manage apps with Azure AD Gallery](tutorial-shadow-it.md#gallery-apps).
+We've leveraged our native integration with Azure AD to give you the ability to navigate directly from an app in the Cloud App Catalog to its corresponding Azure AD Gallery app, and manage it in the gallery. For more information, see [Manage apps with Azure AD Gallery](tutorial-shadow-it.md).
 
 - **New feedback option available in selected policies**  
 We're interested in receiving your feedback and learning how we can help. So now a new feedback dialog gives you the opportunity to help improve Cloud App Security, when creating, modifying, or deleting a file, anomaly detection, or session policy.
