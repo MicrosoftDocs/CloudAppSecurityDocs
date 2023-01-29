@@ -1,7 +1,7 @@
 ---
 title: Microsoft Data Classification Services integration
 description: This article describes the process Defender for Cloud Apps follows when performing DLP content inspection using Microsoft Data Classification Service.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Microsoft Data Classification Services integration

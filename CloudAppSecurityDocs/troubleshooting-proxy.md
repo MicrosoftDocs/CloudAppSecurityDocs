@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting access and session controls
 description: This article provides admins with guidance on how to investigate and resolve common access and session controls.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: conceptual
 ---
 

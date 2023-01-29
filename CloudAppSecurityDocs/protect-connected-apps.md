@@ -1,7 +1,7 @@
 ---
 title: Protect connected apps using cloud service provider APIs
 description: This article describes how Defender for Cloud Apps protects your connected apps.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: conceptual
 ---
 # Protect connected apps using cloud service provider APIs

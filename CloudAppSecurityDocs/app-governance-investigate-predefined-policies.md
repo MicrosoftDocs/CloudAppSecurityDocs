@@ -1,7 +1,7 @@
 ---
 title: Investigate predefined app policy alerts
 titleSuffix: App Governance
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: conceptual
 description: Learn how to investigate predefined app policy alerts from app governance.
 ---

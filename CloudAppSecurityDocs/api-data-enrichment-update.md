@@ -1,7 +1,7 @@
 ---
 title: Update IP address range - Data Enrichment API
 description: This article describes the update IP address range request in the Defender for Cloud Apps Data Enrichment API.
-ms.date: 01/10/2023
+ms.date: 01/23/2023
 ms.topic: reference
 ---
 # Update IP address range - Data Enrichment API

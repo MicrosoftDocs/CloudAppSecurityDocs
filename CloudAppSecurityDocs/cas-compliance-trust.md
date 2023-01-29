@@ -1,7 +1,7 @@
 ---
 title: Data security and privacy practices
 description: This article describes the Defender for Cloud Apps compliance offering, trust center, privacy, and data security.
-ms.date: 01/19/2023
+ms.date: 01/29/2023
 ms.topic: overview
 ---
 # Data security and privacy practices for Defender for Cloud Apps

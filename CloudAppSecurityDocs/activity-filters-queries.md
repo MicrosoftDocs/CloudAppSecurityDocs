@@ -1,7 +1,7 @@
 ---
 title: Activity filters and queries
 description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
-ms.date: 01/19/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
