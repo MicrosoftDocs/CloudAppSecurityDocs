@@ -30,7 +30,7 @@ In this tutorial, you'll learn how to use Defender for Cloud Apps to secure your
 
 > [!div class="checklist"]
 >
-> - [Discover multi-cloud resources, usage, and Shadow IT](#phase-1-discover-multi-cloud-resources-usage-and-shadow-it)
+> - [Discover multi-cloud resources, usage, and Shadow IT](#phase-1-discover-multicloud-resources-usage-and-shadow-it)
 > - [Monitor activities and alerts to detect suspicious behavior across workloads](#phase-2-monitor-activities-and-alerts-to-detect-suspicious-behavior-across-workloads)
 > - [Assess and remediate cloud platform misconfigurations and compliance status](#phase-3-assess-and-remediate-cloud-platform-misconfigurations-and-compliance-status)
 > - [Automate protection and policy enforcement for cloud resources in real time](#phase-4-automate-protection-and-policy-enforcement-for-cloud-resources-in-real-time)
