@@ -16,13 +16,13 @@ Remote work often leads to extensive use of cloud apps and cloud platforms for c
 
 ## How does security posture management help?
 
-Having the appropriate security tools in place to protect resources that might have not been properly protected is critical. Organizations must gain visibility to their cloud resources posture, have discovery capabilities to learn about the actual usage of each platform, be able to monitor suspicious activities, assess, and review configurations and compliance statuses, and be enabled to deploy real-time protection mechanisms.
+Having the appropriate security tools in place to protect resources that might haven't been properly protected is critical. Organizations must gain visibility to their cloud resources posture, have discovery capabilities to learn about the actual usage of each platform, be able to monitor suspicious activities, assess, and review configurations and compliance statuses, and be enabled to deploy real-time protection mechanisms.
 
 Cloud Security Posture Management (CSPM) also extends beyond IaaS and PaaS security posture, to cover SaaS configurations as well. For example, GitHub repository with a public access level, or OAuth apps that have access to my SaaS apps like Office 365, Google Workspace or Sales Force. The SaaS CSPM is a new and growing domain of CSPM, which is a native expansion of the Defender for Cloud Apps product.
 
 ## Protecting multiple clouds from a single management portal
 
-The modern complexity of organizations, many of whom use several cloud platforms for different purposes, and different deployment scales and statuses, requires the ability to track the multi-cloud environment regularly.  The deployment status of some services may change over time, and not necessarily with full notification of the changes to the security teams. By uniting these signals in one portal, the administration experience is streamlined for even more efficient time and resource management, both the people doing the monitoring and the people using the cloud resources.
+The modern complexity of organizations, many of whom use several cloud platforms for different purposes, and different deployment scales and statuses, requires the ability to track the multicloud environment regularly.  The deployment status of some services may change over time, and not necessarily with full notification of the changes to the security teams. By uniting these signals in one portal, the administration experience is streamlined for even more efficient time and resource management, both the people doing the monitoring and the people using the cloud resources.
 
 Organizational security posture encompasses all cloud platforms in an organization and this new functionality is designed for use by security architects, central security admins, or compliance analysts. From this feature, admins can review subscriptions with non-compliant resources and drive remediation of each by the resource owner.
 
@@ -35,11 +35,11 @@ In this tutorial, you'll learn how to use Defender for Cloud Apps to secure your
 > - [Assess and remediate cloud platform misconfigurations and compliance status](#phase-3-assess-and-remediate-cloud-platform-misconfigurations-and-compliance-status)
 > - [Automate protection and policy enforcement for cloud resources in real time](#phase-4-automate-protection-and-policy-enforcement-for-cloud-resources-in-real-time)
 
-## How to secure your multi-cloud environment
+## How to secure your multicloud environment
 
-To avoid critical cloud platform misconfigurations, it is important for organizations to get multi-cloud tenant-level visibility into their cloud configuration status and be able to improve their security posture based on security benchmark and compliance recommendations. Use the following process to secure your organization's multi-cloud environment.
+To avoid critical cloud platform misconfigurations, it's important for organizations to get multicloud tenant-level visibility into their cloud configuration status and be able to improve their security posture based on security benchmark and compliance recommendations. Use the following process to secure your organization's multicloud environment.
 
-### Phase 1: Discover multi-cloud resources, usage, and Shadow IT
+### Phase 1: Discover multicloud resources, usage, and Shadow IT
 
 **Identify security posture**: Start by identifying your organization's cloud security posture by running Cloud Discovery to see what's happening in your network and evaluate the actual resource usage in your cloud platforms. You can achieve this by [setting up Cloud Discovery](set-up-cloud-discovery.md) to monitor and analyze your network traffic  in Defender for Cloud Apps. Web traffic logs analysis with the Defender for Cloud Apps Shadow IT discovery  provide improved visibility over your Shadow IT usage of cloud resources, identifying anomalous activities using either the Machine Learning anomaly detection engine or by using custom policies that you define:
 
@@ -58,7 +58,7 @@ Track suspicious activities that may indicate a breach, like an IAM (Identity & 
 
 Monitoring audit logs for suspicious changes is a great place to apply anomaly detection tools, alerting on possible breaches by identifying multiple failed login attempts, or multiple deleted VM activities in combination with an impossible travel scenario.
 
-![View alerts.](media/tutorial-cloud-platform-security-view-alerts.png)
+:::image type="content" source="media/tutorial-cloud-platform-security-view-alerts.png" alt-text="View alerts." lightbox="media/tutorial-cloud-platform-security-view-alerts.png":::
 
 Use what you learn from the alerts to tune user activity detections to identify true compromises and reduce alert fatigue resulting from handling large volumes of false positive detections. Consider tuning the following policy parameters:
 
