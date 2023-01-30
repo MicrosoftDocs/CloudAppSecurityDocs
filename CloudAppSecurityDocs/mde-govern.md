@@ -18,9 +18,9 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 - Supported Operating Systems:
    
    - Windows: Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
-   - Android: minimum version 8.0 - for more information see: [Microsoft Defender for Endpoint on Android](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-gb%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Fmicrosoft-defender-endpoint-android%3Fview%3Do365-worldwide%23system-requirements&data=05%7C01%7Citaicohen%40microsoft.com%7Cf400c76593a84d656d3808dafc9d68ca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638100050303471039%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=ZFOPWuUPaxn7%2F%2F1Igt0LNkHyioL%2FQ46QIQQNttZe69o%3D&reserved=0)
+   - Android: minimum version 8.0 - for more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
       
-   - iOS: minimum version 14.0 - for more information see: [Microsoft Defender for Endpoint on iOS](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-gb%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Fmicrosoft-defender-endpoint-ios%3Fview%3Do365-worldwide%23prerequisites&data=05%7C01%7Citaicohen%40microsoft.com%7Cf400c76593a84d656d3808dafc9d68ca%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638100050303471039%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=zo94Au3RHTJxqJHp3UdCzpi3StJHyEuPcB4xItWrKBg%3D&reserved=0)
+   - iOS: minimum version 14.0 - for more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
    - MacOS and Linux are in preview mode. For more information see: [Network Protection and Web Protection for macOS and Linux is now in Public Preview!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-protection-and-web-protection-for-macos-and-linux-is-now/ba-p/3601576)
 
 
