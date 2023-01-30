@@ -4,6 +4,7 @@ description: This article describes how to govern Microsoft Defender for Endpoin
 ms.date: 01/23/2023
 ms.topic: how-to
 ---
+
 # Govern discovered apps using Microsoft Defender for Endpoint
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -14,7 +15,15 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 
 - Microsoft Defender for Cloud Apps license
 - Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
-- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
+- Supported Operating Systems:
+   
+   - Windows: Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
+   - Android: minimum version 8.0 - for more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
+      
+   - iOS: minimum version 14.0 - for more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
+   - MacOS and Linux are in preview mode. For more information see: [Network Protection and Web Protection for macOS and Linux is now in Public Preview!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-protection-and-web-protection-for-macos-and-linux-is-now/ba-p/3601576)
+
+
 - Microsoft Defender Antivirus
   - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
   - [Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
@@ -160,3 +169,4 @@ Once controls are applied, you can monitor app usage patterns by the applied con
 > [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
