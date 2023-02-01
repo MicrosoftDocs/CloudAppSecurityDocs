@@ -292,6 +292,6 @@ You must have at least one app connected using [app connectors](enable-instant-v
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

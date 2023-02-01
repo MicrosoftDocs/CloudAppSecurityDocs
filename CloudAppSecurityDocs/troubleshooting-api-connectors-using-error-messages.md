@@ -57,6 +57,6 @@ App connector errors can be seen in the app connector dialog after attempting to
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

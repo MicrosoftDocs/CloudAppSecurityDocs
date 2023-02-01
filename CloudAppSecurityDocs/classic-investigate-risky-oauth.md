@@ -98,6 +98,6 @@ You can easily [ban revoke an app from the OAuth apps page](manage-app-permissio
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

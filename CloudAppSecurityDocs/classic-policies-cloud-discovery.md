@@ -149,6 +149,6 @@ You must have the Google Workspace, Office 365, or Salesforce app connected usin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

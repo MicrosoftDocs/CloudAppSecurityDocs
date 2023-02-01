@@ -189,6 +189,6 @@ For a list of governance actions available, see [File governance actions](govern
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

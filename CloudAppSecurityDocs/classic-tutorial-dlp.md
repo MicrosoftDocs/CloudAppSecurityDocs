@@ -101,7 +101,7 @@ So now you can detect files with sensitive information, but what you really want
 
 ### Phase 4: Monitor and report on your data
 
-Your policies are all in place to inspect and protect your data. Now, you'll want to [check your dashboard](daily-activities-to-protect-your-cloud-environment.md#check-the-dashboard) daily to see what new alerts have been triggered. It's a good place to keep an eye on the health of your cloud environment. Your dashboard helps you get a sense of what's happening and, if necessary, launch an [investigation](investigate.md).
+Your policies are all in place to inspect and protect your data. Now, you'll want to [check your dashboard](classic-daily-activities-to-protect-your-cloud-environment.md#check-the-dashboard) daily to see what new alerts have been triggered. It's a good place to keep an eye on the health of your cloud environment. Your dashboard helps you get a sense of what's happening and, if necessary, launch an [investigation](investigate.md).
 
 One of the most effective ways of monitoring sensitive file incidents, is to head over to the **Policies** page, and review the matches for policies you have configured. Additionally, if you configured alerts, you should also consider regularly monitoring file alerts by heading over to the **Alerts** page, specifying the category as **DLP**, and reviewing which file-related policies are being triggered. Reviewing these incidents can help you fine-tune your policies to focus on threats that are of interest to your organization.
 
@@ -119,6 +119,6 @@ In conclusion, managing sensitive information in this way ensures that data save
 > [Content inspection](content-inspection.md)
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Daily activities to protect your cloud environment](classic-daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

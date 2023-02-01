@@ -119,7 +119,4 @@ In conclusion, managing sensitive information in this way ensures that data save
 > [!div class="nextstepaction"]
 > [Content inspection](content-inspection.md)
 
-> [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
-
 [!INCLUDE [Open support ticket](includes/support.md)]  
