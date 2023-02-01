@@ -1,7 +1,7 @@
 ---
 title: Network requirements 
 description: This article describes the IP addresses and ports you need to open to work with Defender for Cloud Apps.
-ms.date: 01/19/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
@@ -219,13 +219,13 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 
   | Data center |                        URL                                 |
   |-------------|------------------------------------------------------------|
-  |     US1     | <https://adaprodconsole.blob.core.windows.net/>             |
-  |     US2     | <https://prod03use2console1.blob.core.windows.net/>         |
-  |     US3     | <https://prod5usw2console1.blob.core.windows.net/>          |
-  |     EU1     | <https://prod02euwconsole1.blob.core.windows.net/>          |
-  |     EU2     | <https://prod4uksconsole1.blob.core.windows.net/>           |
-  |   Gov US1   | <https://gprd1usgvconsole1.blob.core.usgovcloudapi.net/>    |
-  |     GCC     | <https://gccm1usgvconsole1.blob.core.usgovcloudapi.net/>    |
+  |     US1     | `https://adaprodconsole.blob.core.windows.net/`             |
+  |     US2     | `https://prod03use2console1.blob.core.windows.net/`         |
+  |     US3     | `https://prod5usw2console1.blob.core.windows.net/`          |
+  |     EU1     | `https://prod02euwconsole1.blob.core.windows.net/`          |
+  |     EU2     | `https://prod4uksconsole1.blob.core.windows.net/`           |
+  |   Gov US1   | `https://gprd1usgvconsole1.blob.core.usgovcloudapi.net/`   |
+  |     GCC     | `https://gccm1usgvconsole1.blob.core.usgovcloudapi.net/`    |
 
 > [!NOTE]
 >

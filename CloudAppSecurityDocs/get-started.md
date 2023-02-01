@@ -1,7 +1,7 @@
 ---
 title: Get started
 description: This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: quickstart
 ---
 

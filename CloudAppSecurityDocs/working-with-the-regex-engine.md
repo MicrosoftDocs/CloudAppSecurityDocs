@@ -1,7 +1,7 @@
 ---
 title: Working with the RegEx engine
 description: This article provides instructions for using RegEx for pattern matching in Defender for Cloud Apps policies.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Working with the RegEx engine

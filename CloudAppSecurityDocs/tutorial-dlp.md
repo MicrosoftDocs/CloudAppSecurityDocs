@@ -1,7 +1,7 @@
 ---
 title: Discover and protect sensitive information in your organization
 description: This tutorial describes the process to discover and protect sensitive information in Microsoft Defender for Cloud Apps.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: tutorial
 ---
 # Tutorial: Discover and protect sensitive information in your organization

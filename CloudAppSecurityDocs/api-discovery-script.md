@@ -1,7 +1,7 @@
 ---
 title: Generate block script - Cloud Discovery API
 description: This article describes the discovery_block_scripts request in the Defender for Cloud Apps Cloud Discovery API.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: reference
 ---
 # Generate block script - Cloud Discovery API

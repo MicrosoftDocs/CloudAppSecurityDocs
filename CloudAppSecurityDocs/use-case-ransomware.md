@@ -1,7 +1,7 @@
 ---
 title: Protect your organization from ransomware
 description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: conceptual
 ---
 # Protect your organization from ransomware

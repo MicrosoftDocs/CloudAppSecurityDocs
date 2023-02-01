@@ -1,7 +1,7 @@
 ---
 title: Files API
 description: This article provides information about using the Files API.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: reference
 ---
 # Files API

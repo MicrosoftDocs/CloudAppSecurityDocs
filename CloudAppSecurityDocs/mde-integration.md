@@ -1,7 +1,7 @@
 ---
 title: Integrate Microsoft Defender for Endpoint
 description: This article describes how to integrate Microsoft Defender for Endpoint with Defender for Cloud Apps for enhanced visibility into Shadow IT and risk management.
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.topic: how-to
 ---
 # Integrate Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps
@@ -24,7 +24,7 @@ Once traffic information is collected, you're ready to [deep dive into cloud app
 ## Prerequisites
 
 - Microsoft Defender for Cloud Apps license
-- Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
+- Microsoft Defender for Endpoint with [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) or [Microsoft Defender for Business License](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
 - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
 
 ## How it works
