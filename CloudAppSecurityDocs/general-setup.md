@@ -26,9 +26,9 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 ## Set up the portal
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Settings** to configure your organization's details.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-1. Under **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
+1. Under **System** -> **Organization details**, it's important that you provide an **Organization display name** for your organization. It's displayed on emails and web pages sent from the system.
 
 1. Provide an **Environment name** (tenant). This information is especially important if you manage more than one tenant.
 

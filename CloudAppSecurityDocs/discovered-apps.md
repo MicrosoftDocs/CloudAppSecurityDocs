@@ -36,13 +36,13 @@ For example, if you want to identify commonly used risky cloud storage and colla
 
 1. In the **Discovered apps** page, under **Browse by category** select both **Cloud storage** and **Collaboration**.
 
-1. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **False**
+1. Then, use the Advanced filters and set **Compliance risk factor** to **SOC 2** equals **No**.
 
-1. For **Usage**, set **Users** to greater than 50 users and **Usage** for  **Transactions** to greater than 100.
+1. For **Usage**, set **Users** to greater than 50 users and **Transactions** to greater than 100.
 
 1. Set the **Security risk factor** for **Data at rest encryption** equals **Not supported**. Then set **Risk score** equals 6 or lower.
 
-![Discovered app filters.](media/discovered-app-filters.png)
+    ![Discovered app filters.](media/discovered-app-filters.png)
 
 After the results are filtered, you can [unsanction and block](governance-discovery.md) them by using the bulk action checkbox to unsanction them all in one action. After they're unsanctioned, you can use a blocking script to block them from being used in your environment.
 
@@ -52,7 +52,7 @@ For example, you can differentiate between different SharePoint sites.
 
 This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
-![Subdomain filter.](media/discovered-apps/subdomains-image.png)
+:::image type="content" source="media/discovered-apps/subdomains-image.png" alt-text="Subdomain filter.":::
 
 ## Discover resources and custom apps
 
@@ -65,7 +65,7 @@ For example, from Defender for Cloud Apps you can monitor activity such as if a 
 
 To view discovered resources:
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Discovered resources**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud discovery**. Then choose the  **Discovered resources** tab.
 
     ![Discovered resources menu.](media/discovered-resources-menu.png)
 
@@ -73,7 +73,7 @@ To view discovered resources:
 
    ![Discovery resources.](media/discovery-resources.png)
 
-1. For custom apps, you can select the three buttons at the end of the row and choose **Add custom app**. This will open the **Add custom app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
+1. For custom apps, you can select the three buttons at the end of the row and choose **Add new custom app**. This will open the **Add this app** window that lets you name and identify the app so it can be included in the Cloud Discovery dashboard.
 
 ## Generate Cloud Discovery executive report
 
@@ -81,7 +81,7 @@ The best way to get an overview of Shadow IT use across your organization is by 
 
 To generate a Cloud Discovery executive report:
 
-1. From the **Cloud Discovery dashboard**, select the three dots in the upper-right corner of the dashboard, and then choose **Generate Cloud Discovery executive report**.
+1. From the **Cloud Discovery dashboard**, select **Actions** in the upper-right corner of the dashboard, and then choose **Generate Cloud Discovery executive report**.
 
 1. Optionally, change the report name.
 1. Select **Generate**.
@@ -92,11 +92,11 @@ If you have system users, IP addresses, or devices that are noisy but uninterest
 
 To create an exclusion:
 
-1. In the portal, under the settings icon, select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select the **Exclude entities** tab.
 
-1. Choose either the **Excluded users**, **User groups**, **IP addresses**, or **Excluded devices** tab and select the **+** button to add your exclusion.
+1. Choose either the **Excluded users**, **Excluded groups**, **Excluded IP addresses**, or **Excluded devices** tab and select the **+Add** button to add your exclusion.
 
 1. Add a user alias, IP address, or device name. We recommend adding information about why the exclusion was made.
 
@@ -115,7 +115,7 @@ Custom continuous reports provide you more granularity when monitoring your orga
 
 To create a new continuous report:
 
-1. In the portal, under the settings icon, select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select **Continuous report**.
 
@@ -144,7 +144,7 @@ There are a number of reasons why you may want to delete your Cloud Discovery da
 
 To delete Cloud Discovery data:
 
-1. In the portal, under the settings icon, select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Cloud Discovery**, select the **Delete data** tab.
 
