@@ -1,7 +1,7 @@
 ---
 title: Manage OAuth apps
 description: This article provides information about how you can control, ban and allow third-party OAuth apps.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Manage OAuth apps

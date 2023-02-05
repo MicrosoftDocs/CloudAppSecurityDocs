@@ -1,7 +1,7 @@
 ---
 title: Investigate apps discovered by Microsoft Defender for Endpoint
 description: This article describes how to investigate Microsoft Defender for Endpoint discovered devices, network events, and app usage.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Investigate apps discovered by Microsoft Defender for Endpoint

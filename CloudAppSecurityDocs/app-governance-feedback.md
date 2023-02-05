@@ -1,6 +1,6 @@
 ---
 title: How to submit feedback on app governance
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: conceptual
 description: How to send feedback for app governance.
 ---

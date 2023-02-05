@@ -1,7 +1,7 @@
 ---
 title: Connect Slack
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Slack using the App Connector APIs. 
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Connect Slack to Microsoft Defender for Cloud Apps

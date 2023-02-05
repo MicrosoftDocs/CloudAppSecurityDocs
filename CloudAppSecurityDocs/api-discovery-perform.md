@@ -1,7 +1,7 @@
 ---
 title: Perform file upload - Cloud Discovery API
 description: This article describes the perform file upload request in the Defender for Cloud Apps Cloud Discovery API.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Perform file upload - Cloud Discovery API
