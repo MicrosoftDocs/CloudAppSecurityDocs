@@ -1,7 +1,7 @@
 ---
 title: Basic setup
 description: This article explains how to provide information about your organization in Defender for Cloud Apps.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Basic setup for Defender for Cloud Apps

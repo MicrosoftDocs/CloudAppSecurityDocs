@@ -1,7 +1,7 @@
 ---
 title: Manage IP address ranges using the API
 description: This article provides information on how to use the API to manage IP address ranges in Defender for Cloud Apps.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Manage IP address ranges using the API

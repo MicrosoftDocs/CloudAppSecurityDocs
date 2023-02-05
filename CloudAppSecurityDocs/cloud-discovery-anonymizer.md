@@ -1,7 +1,7 @@
 ---
 title: Cloud Discovery data anonymization
 description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Cloud Discovery data anonymization
