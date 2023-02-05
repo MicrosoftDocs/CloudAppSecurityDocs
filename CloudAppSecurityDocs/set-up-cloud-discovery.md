@@ -1,7 +1,7 @@
 ---
 title: Set up Cloud Discovery 
 description: This article describes the setup procedure for getting Cloud Discovery working.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Set up Cloud Discovery

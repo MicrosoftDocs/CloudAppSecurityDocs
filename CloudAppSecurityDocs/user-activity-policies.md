@@ -1,7 +1,7 @@
 ---
 title: Activity policies
 description: This article provides instructions for creating and working with activity policies.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Activity policies

@@ -1,7 +1,7 @@
 ---
 title: Data Enrichment API
 description: This article provides information about using the Data Enrichment API.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Data Enrichment API

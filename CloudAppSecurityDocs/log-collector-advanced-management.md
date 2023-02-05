@@ -1,7 +1,7 @@
 ---
 title: Advanced log collector management
 description: This article provides information about how advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Advanced log collector management

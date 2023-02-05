@@ -1,7 +1,7 @@
 ---
 title: Create snapshot Cloud Discovery reports
 description: This article provides information about how to upload logs manually to create a snapshot report of your Cloud Discovery apps.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Create snapshot Cloud Discovery reports

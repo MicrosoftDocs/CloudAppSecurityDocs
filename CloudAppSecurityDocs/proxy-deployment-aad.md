@@ -1,7 +1,7 @@
 ---
 title: Deploy Conditional Access App Control for catalog apps with Azure AD
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for catalog apps with Azure AD.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Security configuration for Amazon Web Services
 description: This article provides information about how to get security configuration recommendations in Defender for Cloud Apps by integrating with Amazon Web Services.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Security configuration for Amazon Web Services
