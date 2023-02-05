@@ -8,8 +8,6 @@ ms.topic: tutorial
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-[!INCLUDE [CSPM banner](includes/cspm-banner.md)]
-
 Remote work often leads to extensive use of cloud apps and cloud platforms for common business tasks and surfaces the need to secure cloud environments and the adoption of cloud security products. According to the [shared responsibility model](/azure/security/fundamentals/shared-responsibility), an organization is responsible for managing and securing its cloud platform: Identity Access Management (IAM), Virtual Machines (VM) and their compute resources, data and storage, network resources, and more.
 
 ![Securing your multi-cloud environment.](media/tutorial-cloud-platform-security.png)
@@ -32,8 +30,7 @@ In this tutorial, you'll learn how to use Defender for Cloud Apps to secure your
 >
 > - [Discover multi-cloud resources, usage, and Shadow IT](#phase-1-discover-multicloud-resources-usage-and-shadow-it)
 > - [Monitor activities and alerts to detect suspicious behavior across workloads](#phase-2-monitor-activities-and-alerts-to-detect-suspicious-behavior-across-workloads)
-> - [Assess and remediate cloud platform misconfigurations and compliance status](#phase-3-assess-and-remediate-cloud-platform-misconfigurations-and-compliance-status)
-> - [Automate protection and policy enforcement for cloud resources in real time](#phase-4-automate-protection-and-policy-enforcement-for-cloud-resources-in-real-time)
+> - [Automate protection and policy enforcement for cloud resources in real time](#phase-3-automate-protection-and-policy-enforcement-for-cloud-resources-in-real-time)
 
 ## How to secure your multicloud environment
 
@@ -69,30 +66,7 @@ Use what you learn from the alerts to tune user activity detections to identify 
 - Configure [alerts](tutorial-suspicious-activity.md#phase-5-configure-alerts)
 - [Investigate and remediate](tutorial-suspicious-activity.md#phase-6-investigate-and-remediate)
 
-### Phase 3: Assess and remediate cloud platform misconfigurations and compliance status
-
-Evaluate the status of your security compliance per tenant, across all public cloud platforms including Azure subscriptions, AWS accounts, and GCP projects. The assessments enable you to communicate configuration gaps and recommendation details to resource owners and drive remediation.
-
-Each cloud platform provides a list of misconfigured resources based on regulatory compliance best practices.
-
-Cloud architects or compliance analysts can evaluate configuration gaps for each cloud environment and drive remediation by resource owners. For example, recommendations can be evaluated by:
-
-- Subscription to differentiate between production from non-production environments
-- Severity to identify high-severity recommendations that often have different SLA and processes relative to low-severity recommendations
-
-For Azure security configuration recommendations, we surface recommendations of the entire Azure tenant and all its subscriptions based on Microsoft Defender for Cloud best practices. Selecting a recommendation redirects you to the recommendation page in Microsoft Defender for Cloud, where you can see additional details about the recommendation and use it to drive remediation by the subscription owner. Some recommendations have **Quick Fix** options to remediate the issue. For more information about Azure security recommendations, see [Security configuration for Azure](security-config-azure.md).
-
-![View Azure recommendations.](media/tutorial-cloud-platform-security-view-azure-recommendations.png)
-
-For AWS security configuration recommendations, you can select a recommendation to drill down into the details of the affected resources. For example, AWS CIS recommendation 2.9 'Ensure VPC flow logging in enabled in all VPC' surfaces resources that don't have VPC logging enabled. The details include the VPC names, the account in which the resource is hosted, and the region. You can select the AWS link to view the relevant finding and change the related settings in AWS to comply with the recommendation. For more information on Security Configuration for AWS, see [Security configuration for AWS](security-config-aws.md).
-
-![View AWS recommendations.](media/tutorial-cloud-platform-security-view-aws-recommendations.png)
-
-For GCP security configuration recommendations, selecting on a recommendation reveals detailed recommendation information and remediation steps to help you better understand and evaluate the impact and effort of remediating the issue. You can then select the GCP Security Command Center link to remediate the finding in the platform. For more information on GCP recommendations, see [Security configuration for GCP](security-config-gcp.md).
-
-![View GCP recommendations.](media/tutorial-cloud-platform-security-view-gcp-recommendations.png)
-
-### Phase 4: Automate protection and policy enforcement for cloud resources in real time
+### Phase 3: Automate protection and policy enforcement for cloud resources in real time
 
 Protect your organization's resources from data leaks and theft in real time by applying access and session controls policies. For more information, see [Protect apps in real time](tutorial-proxy.md).
 

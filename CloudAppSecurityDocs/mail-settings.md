@@ -21,7 +21,7 @@ This article provides information about how to personalize the email notificatio
 
  Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
-1. In the menu bar, select the settings cog, select **Settings**, and then select the **Mail settings** tab.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Mail settings**.
 
     ![mail settings.](media/mail-settings-config.png)
 
@@ -66,11 +66,9 @@ The following type of notifications use the custom email templates:
 - File sharing report
 - Cloud App Security Test Email [this is for testing purposes]
 - Ownership of items transferred to you
-    
 
-> [!Note]
+> [!NOTE]
 > There are some types of notifications that are sent to admins only. In such a case, the default template is used, instead of the custom template.
-> 
 
 ## Sample email template
 
@@ -136,4 +134,3 @@ Below is a sample email template:
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

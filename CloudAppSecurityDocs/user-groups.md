@@ -29,8 +29,8 @@ When you connect apps using API connectors, Microsoft Defender for Cloud Apps en
 
 ## How to import user groups
 
-1. In the menu bar, select the settings icon ![settings icon.](media/settings-icon.png "settings icon") and select **User groups**.
-1. Select **Import user group**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, choose **User groups**.
+1. Select **+Import user group**.
 
     ![Import user groups.](media/user-groups-add.png)
 
