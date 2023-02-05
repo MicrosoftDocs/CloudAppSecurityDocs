@@ -1,7 +1,7 @@
 ---
 title: Mark as read - Alerts API
 description: This article describes the mark as read request in the Defender for Cloud Apps Alerts API.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Mark as read - Alerts API

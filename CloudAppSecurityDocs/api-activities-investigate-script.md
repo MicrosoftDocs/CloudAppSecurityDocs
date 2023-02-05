@@ -1,7 +1,7 @@
 ---
 title: Investigate activities using the API 
 description: This article provides information on how to use the API to investigate user activity in Defender for Cloud Apps.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Investigate activities using the API

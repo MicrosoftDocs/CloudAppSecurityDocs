@@ -1,7 +1,7 @@
 ---
 title: Protect files with admin quarantine
 description: This tutorial describes the scenario for using admin quarantine to control data breaches.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: tutorial
 ---
 # Tutorial: Protect files with admin quarantine

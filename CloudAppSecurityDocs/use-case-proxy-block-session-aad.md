@@ -1,7 +1,7 @@
 ---
 title: Block download of sensitive information with Conditional Access App Control
 description: This tutorial describes the scenario for protecting your organization against downloads of sensitive data by unmanaged devices using Azure AD reverse proxy capabilities.
-ms.date: 01/23/2023
+ms.date: 01/29/2023
 ms.topic: tutorial
 ---
 # Tutorial: Block download of sensitive information with Conditional Access App Control
