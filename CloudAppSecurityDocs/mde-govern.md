@@ -15,15 +15,7 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 
 - Microsoft Defender for Cloud Apps license
 - Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
-- Supported Operating Systems:
-   
-   - Windows: Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
-   - Android: minimum version 8.0 - for more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
-      
-   - iOS: minimum version 14.0 - for more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
-   - MacOS and Linux are in preview mode. For more information see: [Network Protection and Web Protection for macOS and Linux is now in Public Preview!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-protection-and-web-protection-for-macos-and-linux-is-now/ba-p/3601576)
-
-
+- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 
 - Microsoft Defender Antivirus
   - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
   - [Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
@@ -63,9 +55,13 @@ Use the following steps to enable access control for cloud apps:
 
    - Defender for Cloud Apps (E5, AAD-P1m CAS-D) and Microsoft Defender for Endpoint [Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
    - Microsoft 365 E5
-1. Onboarded machines: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
-1. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
-1. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
+1. Supported Operating Systems:
+   - Windows: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
+   - Android: minimum version 8.0 - for more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
+   - iOS: minimum version 14.0 - for more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
+   - MacOS and Linux are in preview mode. For more information see: [Network Protection and Web Protection for macOS and Linux is now in Public Preview!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-protection-and-web-protection-for-macos-and-linux-is-now/ba-p/3601576)
+3. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
+4. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
 
 ### Blocking apps
 
