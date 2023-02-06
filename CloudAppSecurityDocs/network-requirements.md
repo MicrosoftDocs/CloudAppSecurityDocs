@@ -47,10 +47,10 @@ Additionally, the following items should be allowed, depending on which data cen
 |EU1|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.119.154.72, 51.143.58.207, 52.137.89.147, 52.157.238.58, 52.174.56.180, 52.183.75.62|\*.eu.portal.cloudappsecurity.com|
 |EU2|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.81.156.154, 40.81.156.156, 51.143.58.207, 52.137.89.147, 52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 |Gov US1|13.72.19.4, 52.227.143.223|*.us1.portal.cloudappsecurity.us|
-|GCC| 52.227.23.181, 52.227.180.126| `*.us1.portal.cloudappsecuritygov.com` |
+|GCC| 52.227.23.181, 52.227.180.126| *.us1.portal.cloudappsecuritygov.com |
 
 > [!NOTE]
-> For portal access, instead of a wildcard (\*), you can choose to open only your specific tenant URL. For example, based on the screenshot above you can open: `tenant2.us.portal.cloudappsecurity.com`
+> For portal access, instead of a wildcard (\*), you can choose to open only your specific tenant URL. For example, based on the screenshot above you can open: `tenant2.us.portal.cloudappsecurity.com`. To determine your tenant URL, see the earlier section [View your data center](#view-your-data-center), and look for **API URL**.
 
 ## Access and session controls
 
@@ -199,7 +199,7 @@ To work with MailChimp, add this IP address to your anti-spam allowlist to enabl
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
 - Allow the log collector to receive inbound FTP and Syslog traffic as configured for the data sources.
-- Allow the log collector to initiate outbound traffic to the Defender for Cloud Apps portal (for example `contoso.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services).
+- Allow the log collector to initiate outbound traffic to the Defender for Cloud Apps APIs (for example `<mytenant>.us2.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services). To find your tenant URL, see [View your data center](#view-your-data-center).
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
   | Data center |                        URL                                 |
@@ -215,7 +215,7 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 >
 > - If your firewall requires a static IP address access list and does not support allowing based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
-> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps portal.
+> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps APIs.
 
 ## Next steps
 
