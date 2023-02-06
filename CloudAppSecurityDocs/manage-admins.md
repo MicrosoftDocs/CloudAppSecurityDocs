@@ -215,9 +215,9 @@ Defender for Cloud Apps enables you to invite external admins (MSSPs) as adminis
 
 ### Access for MSSPs to the MSSP customer Defender for Cloud Apps portal
 
-By default, MSSPs access their Defender for Cloud Apps tenant through the following URL: `https://portal.cloudappsecurity.com`.
+By default, MSSPs access their Defender for Cloud Apps tenant through the following URL: `https://security.microsoft.com`.
 
-MSSPs however, will need to access the MSSP customer Defender for Cloud Apps portal using a tenant-specific URL in the following format: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
+MSSPs however, will need to access the MSSP customer Microsoft 365 Defender portal using a tenant-specific URL in the following format: `https://security.microsoft.com/?tid=<tenant_id>`.
 
 MSSPs can use the following steps to obtain the MSSP customer portal tenant ID and then use the ID to access the tenant-specific URL:
 
@@ -225,7 +225,7 @@ MSSPs can use the following steps to obtain the MSSP customer portal tenant ID a
 
 1. Switch directory to the MSSP customer's tenant.
 1. Select **Azure Active Directory** > **Properties**. You'll find the MSSP customer tenant ID in the **Tenant ID** field.
-1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
+1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://security.microsoft.com/?tid=<tenant_id>`.
 
 ## Admin activity auditing
 

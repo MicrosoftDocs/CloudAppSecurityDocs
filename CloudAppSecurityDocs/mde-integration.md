@@ -27,8 +27,8 @@ Once traffic information is collected, you're ready to [deep dive into cloud app
 - Microsoft Defender for Cloud Apps license
 - Microsoft Defender for Endpoint with [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) or [Microsoft Defender for Business License](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
 - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
-   
-> [!Tip]
+
+> [!TIP]
 > To improve the resolution rate, enable Microsoft Defender for Antivirus:
 >
 > - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
@@ -59,7 +59,7 @@ To enable Defender for Endpoint integration with Defender for Cloud Apps:
 
 To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 
-1. In Defender for Cloud Apps, select the **Settings** icon, select **Settings**, and then select **Microsoft Defender for Endpoint**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **Microsoft Defender for Endpoint**.
 1. Under **Alerts**, select the global severity level for alerts.
 1. Select **Save**.
 
@@ -82,4 +82,3 @@ To configure the severity for alerts sent to Microsoft Defender for Endpoint:
 > [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
