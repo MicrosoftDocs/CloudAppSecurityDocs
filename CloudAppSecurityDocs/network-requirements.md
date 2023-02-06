@@ -25,29 +25,16 @@ To see which data center you're connecting to, do the following steps:
 
 ## Portal access
 
-For access to the Defender for Cloud Apps portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
+To use Defender for Cloud Apps in the Microsoft 365 Defender portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
-portal.cloudappsecurity.com
-*.portal.cloudappsecurity.com
-cdn.cloudappsecurity.com
-https://adaproddiscovery.azureedge.net
+adaproddiscovery.azureedge.net
 *.s-microsoft.com
 *.msecnd.net
 dev.virtualearth.net
-*.cloudappsecurity.com
 flow.microsoft.com
 static2.sharepointonline.com
-dc.services.visualstudio.com
 *.blob.core.windows.net
-```
-
-For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allowlist to provide access for the Defender for Cloud Apps GCC High portal:
-
-```ini
-portal.cloudappsecurity.us
-*.portal.cloudappsecurity.us
-cdn.cloudappsecurity.com
 ```
 
 Additionally, the following items should be allowed, depending on which data center you use:
@@ -60,7 +47,7 @@ Additionally, the following items should be allowed, depending on which data cen
 |EU1|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.119.154.72, 51.143.58.207, 52.137.89.147, 52.157.238.58, 52.174.56.180, 52.183.75.62|\*.eu.portal.cloudappsecurity.com|
 |EU2|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.81.156.154, 40.81.156.156, 51.143.58.207, 52.137.89.147, 52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 |Gov US1|13.72.19.4, 52.227.143.223|*.us1.portal.cloudappsecurity.us|
-|GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com, \*.us1.portal.cloudappsecuritygov.com |
+|GCC| 52.227.23.181, 52.227.180.126| `*.us1.portal.cloudappsecuritygov.com` |
 
 > [!NOTE]
 > For portal access, instead of a wildcard (\*), you can choose to open only your specific tenant URL. For example, based on the screenshot above you can open: `tenant2.us.portal.cloudappsecurity.com`

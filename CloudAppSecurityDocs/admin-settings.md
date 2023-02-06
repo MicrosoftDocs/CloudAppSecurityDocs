@@ -1,22 +1,14 @@
 ---
-title: Admin user settings
+title: Admin notification settings
 description: This article provides instructions for setting admin preferences in Defender for Cloud Apps.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Admin user settings
+# Admin notification settings
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps allows you to customize your admin user settings. The notification settings allow admins to specify if they would like to receive email notifications for alerts.
-
-## Customize your language settings
-
-To set up your preferences as an admin of Microsoft Defender for Cloud Apps, select your name in the portal menu bar, and select **User settings** to set the following settings:
-
-Select **Language**. Here you can choose the language to use in the Defender for Cloud Apps portal.
-
-  ![custom user settings.](media/custom-language-settings.png)
+Microsoft Defender for Cloud Apps allows you to customize your admin notification settings. The notification settings allow admins to specify if they would like to receive email notifications for alerts.
 
 ## Customize your notifications
 
