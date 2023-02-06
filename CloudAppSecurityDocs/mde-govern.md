@@ -15,7 +15,7 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 
 - Microsoft Defender for Cloud Apps license
 - Microsoft Defender for Endpoint [Plan 2 license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
-- Supported operating systems are listed below in the "Prerequisites for blocking apps" section
+- Supported operating systems are listed below in the [Prerequisites for blocking apps](#prerequisites-for-blocking-apps-with-defender-for-endpoint) section
 - Microsoft Defender Antivirus
   - [Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
   - [Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
