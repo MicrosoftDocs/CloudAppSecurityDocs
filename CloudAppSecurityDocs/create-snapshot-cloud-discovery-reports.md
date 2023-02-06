@@ -16,15 +16,18 @@ To create a snapshot report:
 
 1. Collect log files from your firewall and proxy, through which users in your organization access the Internet. Make sure to gather logs during times of peak traffic that are representative of all user activity in your organization.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover**, and then select **Create snapshot report**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud discovery**.
+1. In the top-right corner, pull down **Actions**, and select **Create Cloud Discovery snapshot report.**
 
     ![Create new snapshot report.](media/create-new-snapshot-report.png)
+
+1. Select **Next**.
 
 1. Enter a **Report name** and a **Description**
 
     ![New snapshot report.](media/new-snapshot-report.png)
 
-1. Select the **Source** from which you want to upload the log files. If your source is not supported (see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies-) for the full list), you can create a custom parser. For more information, see [Use a custom log parser](custom-log-parser.md). 
+1. Select the **Source** from which you want to upload the log files. If your source isn't supported (see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies-) for the full list), you can create a custom parser. For more information, see [Use a custom log parser](custom-log-parser.md).
 
 1. Verify your log format to make sure that it's formatted properly according to the sample log you can download. Under **Verify your log format**, select **View log format** then select **Download sample log**. Compare your log with the sample provided to make sure it's compatible.
 
@@ -47,9 +50,9 @@ To create a snapshot report:
 1. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
     ![processing log file menu bar.](media/processing-log-file-menu-bar.png)
 
-1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by selecting the link in the status bar, or by selecting the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Settings**.
+1. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report by selecting the link in the status bar. Or, in the Microsoft 365 Defender portal, select **Settings**.
 
-1. Then under  **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
+1. Then under **Cloud Discovery**, select **Snapshot reports**, and select your snapshot report.
 
     ![snapshot report management.](media/snapshot-report-management.png)
 
