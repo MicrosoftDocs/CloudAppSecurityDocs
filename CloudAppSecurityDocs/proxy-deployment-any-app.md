@@ -59,7 +59,7 @@ Follow the steps below to configure any app to be controlled by Defender for Clo
 1. Optionally, add conditions and grant controls as required.
 1. Set **Enable policy** to **On** and then select **Create**.
 
-Applications in the app catalog are automatically populated into the table under Connected Apps. Check that the app you want to deploy is recognized by navigating there.
+Applications in the app catalog are automatically populated into the table under Connected Apps. Sign out of the application if you have an active session and sign in again to allow for the app to be discovered. Check that the app you want to deploy is recognized by navigating there.
 
 1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 1.](media/settings-icon.png "settings icon 1"), and select the **Conditional Access App Control** tab to access a table of applications that can be configured with access and session policies.
 
@@ -93,8 +93,11 @@ For example, if you've configured a policy that blocks downloading files for an 
 
 1. From within the app, on the Defender for Cloud Apps admin toolbar, select **Discovered domains**.
 
-      > [!NOTE]
+   :::image type="content" source="media/discovered-domains.png" alt-text="Select Discovered domains.":::
+
+   > [!NOTE]
    > The admin toolbar is only visible to users with permissions to onboard or maintenance apps.
+
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
 
       > [!NOTE]
@@ -102,7 +105,9 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. Go to Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon 2.](media/settings-icon.png "settings icon 2") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
 
-      > [!TIP]
+   :::image type="content" source="media/edit-app-details.png" alt-text="Edit app details.":::
+
+   > [!TIP]
    > To view the list of domains configured in the app, select **View app domains**.
 1. In **User-defined domains**, enter all the domains you want to associate with this app, and then select **Save**.
 
