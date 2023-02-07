@@ -100,7 +100,7 @@ For example, if you've configured a policy that blocks downloading files for an 
 
 1. In the Discovered domains panel, make a note of domain names or export the list as a .csv file.
 
-      > [!NOTE]
+   > [!NOTE]
    > The panel displays a list of discovered domains that are not associated in the app. The domain names are fully qualified.
 1. Go to Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon 2.](media/settings-icon.png "settings icon 2") and select **Conditional Access App Control**.
 1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then under **APP DETAILS**, choose **Edit**.
@@ -109,9 +109,17 @@ For example, if you've configured a policy that blocks downloading files for an 
 
    > [!TIP]
    > To view the list of domains configured in the app, select **View app domains**.
+
+   - **User-defined domains**: Domains associated with the application. Navigate to the application and you can use the [Admin tool bar](troubleshooting-proxy.md#admin-view-toolbar) to identify the domains associated with the application and determine if any of them are missing. Note that a missing domain can cause the protected application to not render correctly.
+   - **Treat access token as login requests**: Some applications use access tokens and code requests as app logins. This gives the ability to treat access token and code requests as logins when onboarding apps to access and session controls for the application to render correctly. When onboarding the application, always make sure this is ticked.
+   - **Use app with session control**: To allow this app to be used or not used with session controls. When onboarding the application always make sure this is ticked.
+   - **Perform a second logon**: If the application uses a nonce, a second logon is needed to account for nonce handling. The nonce or second logon is used by applications to make sure that the login token that the IdP creates for the user can only be used once, and not stolen and reused by someone else. The nonce is checked by the Service Provider to match what it was expecting, and not something it has recently used already, which could indicate a replay attack. When this is chosen, we ensure that a second login is being triggered from a suffixed session, which ensures a successful login. For better performance, this should be enabled.
+
+      :::image type="content" source="media/second-login.png" alt-text="Perform a second login.":::
+
 1. In **User-defined domains**, enter all the domains you want to associate with this app, and then select **Save**.
 
-      > [!NOTE]
+   > [!NOTE]
    > You can use the * wildcard character as a placeholder for any character. When adding domains, decide whether you want to add specific domains (`sub1.contoso.com`,`sub2.contoso.com`) or multiple domains (`*.contoso.com`).
 1. Repeat the following steps to install the **Current CA** and **Next CA** self-signed root certificates.
 
