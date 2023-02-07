@@ -110,10 +110,11 @@ To block an app, do the following steps:
 
 ## Educate users when accessing risky apps
 
->[!NOTE]
-> **Prerequisite**: Opt in to the public preview feature in Microsoft Defender for Endpoint. For more information, see [Microsoft Defender for Endpoint preview features](/microsoft-365/security/defender-endpoint/preview).
-
 Admins have the option to warn users when they access risky apps. Rather than blocking users, they're prompted with a message providing a custom redirect link to a company page listing apps approved for use. The prompt provides options for users to bypass the warning and continue to the app. Admins are also able to monitor the number of users that bypass the warning message.
+
+### Prerequisites for warning with Defender for Endpoint
+
+Same as [Prerequisites for blocking apps with Defender for Endpoint](/defender-cloud-apps/mde-govern), but doesn't support mobile (Android and iOS).
 
 ### How does it work
 
@@ -165,4 +166,5 @@ Once controls are applied, you can monitor app usage patterns by the applied con
 > [Shadow IT discovery beyond the corporate network](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
