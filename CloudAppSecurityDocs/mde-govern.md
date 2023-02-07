@@ -114,7 +114,7 @@ Admins have the option to warn users when they access risky apps. Rather than bl
 
 ### Prerequisites for warning with Defender for Endpoint
 
-Same as [Prerequisites for blocking apps with Defender for Endpoint](/defender-cloud-apps/mde-govern) but doesn't support Mobile (Android and iOS) at the moment.
+Same as [Prerequisites for blocking apps with Defender for Endpoint](/defender-cloud-apps/mde-govern), but doesn't support mobile (Android and iOS).
 
 ### How does it work
 
