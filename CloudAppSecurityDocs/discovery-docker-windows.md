@@ -167,7 +167,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![Verify that collector deployed successfully.](media/ubuntu9.png)
+:::image type="content" source="media/collector-status-connected.png" alt-text="Verify that the collector status is Connected." lightbox="media/collector-status-connected.png":::
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 
