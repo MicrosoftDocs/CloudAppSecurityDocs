@@ -96,9 +96,6 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - User agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
 
->[!NOTE]
->Defender for Cloud Apps considers *outdated* as two major versions older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
-
 <!--
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon.](media/clear-filters.png). -->
