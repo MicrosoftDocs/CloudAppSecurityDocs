@@ -91,17 +91,17 @@ To create a new file policy, follow this procedure:
 
 ## File policy best practices
 
-1. Avoid resetting File policy (using "Reset results and apply actions again" checkbox) in Production environment unless vital, as it will initiate file scans from scratch for the specific policy, which may impact policy performance.
+1. Avoid resetting the file policy (by using the **Reset results and apply actions again** checkbox) in production environments unless it's absolutely necessary, as doing so will initiate a full scan of the files covered by the policy, which can have a negative impact on its performance. 
 
-2. When applying labels to files in a specific parent folder(s) **and** its subfolders, use the "Apply to" -> "Selected folders" option, then add each of the parent folders.
+1. When applying labels to files in a specific parent folder **and** its subfolders, use the **Apply to** -> **Selected folders** option. Then add each of the parent folders.
 
-3. When applying labels to files in a specific folder only (excuding any subfolders), use the File Policy filter "Parent Folder" with the "Equals" operator.
+1. When applying labels to files in a specific folder only (excluding any subfolders), use the file policy filter **Parent Folder** with the **Equals** operator.
 
-4. File Policy is faster when a narrow filtering criteria is used (vs. wide criteria). 
+1. File policy is faster when narrow filtering criteria is used (as compared to wide criteria). 
 
-5. Consolidate several File Policies for the same Service (Sharepoint, OneDrive, Box etc) to a single policy.
+1. Consolidate several file policies for the same service (such as SharePoint, OneDrive, Box etc.) to a single policy.
 
-6. When enabling file monitoring (from the "Settings" page), create at least one File Policy. When no File Policy exists or enabled for 7 consecutive days - File Monitoring will be auto-disabled.
+1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for 7 consecutive days, file monitoring will be auto-disabled.
 
 ## File policy reference
 
