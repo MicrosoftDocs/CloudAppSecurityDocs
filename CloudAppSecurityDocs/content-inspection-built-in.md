@@ -11,13 +11,15 @@ ms.topic: how-to
 
 > [!IMPORTANT]
 > Effective March 2023, we're retiring the built-in DLP content inspection engine. To ensure a smooth transition, we highly recommend that you begin transitioning your policies to the Data Classification Services (DCS) Content Inspection Engine.  While the built-in DLP engine will continue to work, we strongly advise you to move your policies to the DCS engine to take advantage of its improved capabilities.  
+>
 > Here's how to migrate:
+>
 > Disable policies that include a content inspection condition with the built-in engine. This will ensure that all matched files remain unchanged until the specified transition date.
 > 
 > Create a new policy that includes the following two conditions:
 > 
-> 1. A metadata condition with a "starting date" to avoid scanning all files from the start.
-> 1. A content inspection condition using the DCS engine.
+> - A metadata condition with a "starting date" to avoid scanning all files from the start.
+> - A content inspection condition using the DCS engine.
 >     
 > 
 > For more information, see [Microsoft Data Classification Services integration](dcs-inspection.md).
