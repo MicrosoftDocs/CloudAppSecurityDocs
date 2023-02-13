@@ -89,6 +89,20 @@ To create a new file policy, follow this procedure:
 
 1. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the "Matching now" files for the policy. Click the **History** tab to see a history back to up to six months of files that matched the policy.
 
+## File policy best practices
+
+1. Avoid resetting File policy (using "Reset results and apply actions again" checkbox) in Production environment unless vital, as it will initiate file scans from scratch for the specific policy, which may impact policy performance.
+
+2. When applying labels to files in a specific parent folder(s) **and** its subfolders, use the "Apply to" -> "Selected folders" option, then add each of the parent folders.
+
+3. When applying labels to files in a specific folder only (excuding any subfolders), use the File Policy filter "Parent Folder" with the "Equals" operator.
+
+4. File Policy is faster when a narrow filtering criteria is used (vs. wide criteria). 
+
+5. Consolidate several File Policies for the same Service (Sharepoint, OneDrive, Box etc) to a single policy.
+
+6. When enabling file monitoring (from the "Settings" page), create at least one File Policy. When no File Policy exists or enabled for 7 consecutive days - File Monitoring will be auto-disabled.
+
 ## File policy reference
 
 This section provides reference details about policies, providing explanations for each policy type and the fields that can be configured for each policy.
