@@ -16,26 +16,26 @@ The Citrix Share file user used for logging into Citrix Share file must have Acc
 
 ## Create API keys
 
-1. Go to [ShareFile API Documentation](https://api.sharefile.com/), and login to your organization account.
+1. Go to [ShareFile API Documentation](https://api.sharefile.com/), and sign in to your organization account.
 
     ![connect Citrix ShareFile login.](media/connect-citrix-sharefile-login.png "connect Citrix ShareFile login")
 
-1. Click **Get an API Key**.
+1. Select **Get an API Key**.
 
     ![connect Citrix ShareFile API key.](media/connect-citrix-sharefile-api-key.png "connect Citrix ShareFile API key")
 
-1. To generate API keys (*Client Id* and *Client Secret*), go to **Create New**.
+1. To generate API keys (*Client ID* and *Client Secret*), go to **Create New**.
 
     ![connect Citrix ShareFile create new key.](media/connect-citrix-sharefile-create-new.png "connect Citrix ShareFile create new key")
 
 1. Fill out the following fields:
 
     - Application name: Microsoft Cloud App Security (you can also choose another name).
-    - Redirect URl:  <https://portal.cloudappsecurity.com/api/oauth/saga> (change to your domain).
+    - Redirect URL:  <https://portal.cloudappsecurity.com/api/oauth/saga> (change to your domain).
 
 1. Select **Generate API Key**.
 
-1. Copy the *Client Id* and *Client Secret*.
+1. Copy the *Client ID* and *Client Secret*.
 
 ## Configure Cloud App Security
 
