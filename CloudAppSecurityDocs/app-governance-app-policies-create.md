@@ -103,31 +103,31 @@ Use a custom app policy when you need to do something not already done by one of
 
 1. Here are the available conditions for a custom app policy:
 
-    |Condition|Condition values accepted|Description|More information|
-    |---|---|---|---|
-    |Registration age|Within last X days|Apps that were registered to Azure AD within a specified period from the current date||
-    |Certification|No certification, Publisher attested, Microsoft 365 Certified|Apps that are Microsoft 365 Certified, have a publisher attestation report, or neither|[Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide)|
-    |Publisher verified|Yes or No|Apps that have verified publishers|[Publisher Verification](/azure/active-directory/develop/publisher-verification-overview)|
-    |Application permissions (Graph only)|Select one or more API permissions from list|Apps with specific Graph API permissions that have been granted directly|[Microsoft Graph permissions reference](/graph/permissions-reference)|
-    |Delegated permissions (Graph only)|Select one or more API permissions from list|Apps with specific Graph API permissions that have been given by a user|[Microsoft Graph permissions reference](/graph/permissions-reference)|
-    |Highly privileged (Graph only)|Yes or No|Apps with relatively powerful Graph API permissions|This is an internal designation based on the same logic used by Defender for Cloud Apps.|
-    |Overprivileged (Graph only)|Yes or No|Apps with unused Graph API permissions|Apps with more granted permissions than are being used by those apps.|
-    |Non-Graph API permissions|Yes or No|Apps with permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates.||
-    |Data usage (Graph only)|Greater than X GB of data downloaded and uploaded per day|Apps that have read and written more than a specified amount of data using Graph API||
-    |Data usage trend (Graph only)|X % increase in data usage compared to previous day|Apps whose data reads and writes using Graph API have increased by a specified percentage compared to the previous day||
-    |API access (Graph only)|Greater than X API calls per day|Apps that have made over a specified number of Graph API calls in a day||
-    |API access trend (Graph only)|X % increase in API calls compared to previous day|Apps whose number of Graph API calls have increased by a specified percentage compared to the previous day||
-    |Number of consenting users|(Greater than or Less than) X consented users|Apps that have been given consent by a greater or fewer number of users than specified||
-    |Increase in consenting users|X % increase in users in the last 90 days|Apps whose number of consenting users have increased by over a specified percentage in the last 90 days||
-    |Priority account consent given|Yes or No|Apps that have been given consent by priority users |A user with a [priority account](/microsoft-365/admin/setup/priority-accounts).|
-    |Names of consenting users|Select users from list|Apps that have been given consent by specific users||
-    |Roles of consenting users|Select roles from list|Apps that have been given consent by users with specific roles|Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list.|
-    |Sensitivity labels accessed|Select one or more sensitivity labels from the list|Apps that accessed data with specific sensitivity labels in the last 30 days.||
-    |Services accessed (Graph only)|Exchange and/or OneDrive and/or SharePoint and/or Teams|Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API|Multiple selections allowed.|
-    |Error rate (Graph only)|Error rate is greater than X% in the last seven days|Apps whose Graph API error rates in the last 7 days are greater than a specified percentage||
-    |Unused app|Not signed in for 30 days to 1 year|Apps that have not  authenticated within a specified period from the current date||
-    |Unused credentials|Any credentials not  used within the last 30 days to 1 year|Apps with one or more  credentials that have not been used within a specified period from the  current date||
-    |Credential expiration|Any credential that  expires within or after X days|Apps whose  credentials expire within or after a certain period||
+    | Condition                            | Condition values accepted                                    | Description                                                  | More information                                             |
+    | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+    | Registration age                     | Within last X days                                           | Apps that were registered to Azure AD within a specified period from the current date |                                                              |
+    | Certification                        | No certification, Publisher attested, Microsoft 365 Certified | Apps that are Microsoft 365 Certified, have a publisher attestation report, or neither | [Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+    | Publisher verified                   | Yes or No                                                    | Apps that have verified publishers                           | [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview) |
+    | Application permissions (Graph only) | Select one or more API permissions from list                 | Apps with specific Graph API permissions that have been granted directly | [Microsoft Graph permissions reference](/graph/permissions-reference) |
+    | Delegated permissions (Graph only)   | Select one or more API permissions from list                 | Apps with specific Graph API permissions that have been given by a user | [Microsoft Graph permissions reference](/graph/permissions-reference) |
+    | Highly privileged (Graph only)       | Yes or No                                                    | Apps with relatively powerful Graph API permissions          | This is an internal designation based on the same logic used by Defender for Cloud Apps. |
+    | Overprivileged (Graph only)          | Yes or No                                                    | Apps with unused Graph API permissions                       | Apps with more granted permissions than are being used by those apps. |
+    | Non-Graph API permissions            | Yes or No                                                    | Apps with permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates. |                                                              |
+    | Data usage (Graph only)              | Greater than X GB of data downloaded and uploaded per day    | Apps that have read and written more than a specified amount of data using Graph API |                                                              |
+    | Data usage trend (Graph only)        | X % increase in data usage compared to previous day          | Apps whose data reads and writes using Graph API have increased by a specified percentage compared to the previous day |                                                              |
+    | API access (Graph only)              | Greater than X API calls per day                             | Apps that have made over a specified number of Graph API calls in a day |                                                              |
+    | API access trend (Graph only)        | X % increase in API calls compared to previous day           | Apps whose number of Graph API calls have increased by a specified percentage compared to the previous day |                                                              |
+    | Number of consenting users           | (Greater than or Less than) X consented users                | Apps that have been given consent by a greater or fewer number of users than specified |                                                              |
+    | Increase in consenting users         | X % increase in users in the last 90 days                    | Apps whose number of consenting users have increased by over a specified percentage in the last 90 days |                                                              |
+    | Priority account consent given       | Yes or No                                                    | Apps that have been given consent by priority users          | A user with a [priority account](/microsoft-365/admin/setup/priority-accounts). |
+    | Names of consenting users            | Select users from list                                       | Apps that have been given consent by specific users          |                                                              |
+    | Roles of consenting users            | Select roles from list                                       | Apps that have been given consent by users with specific roles | Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list. |
+    | Sensitivity labels accessed          | Select one or more sensitivity labels from the list          | Apps that accessed data with specific sensitivity labels in the last 30 days. |                                                              |
+    | Services accessed (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API | Multiple selections allowed.                                 |
+    | Error rate (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last 7 days are greater than a specified percentage |                                                              |
+    | Unused app                           | Not signed in for 30 days to 1 year                          | Apps that have not authenticated within a specified period from the current date |                                                              |
+    | Unused credentials                   | Any credentials not used within the last 30 days to 1 year   | Apps with one or more credentials that have not been used within a specified period from the current date |                                                              |
+    | Credential expiration                | Any credential that expires within or after X days           | Apps whose credentials expire within or after a certain period |                                                              |
 
     All of the specified conditions must be met for this app policy to generate an alert.
 

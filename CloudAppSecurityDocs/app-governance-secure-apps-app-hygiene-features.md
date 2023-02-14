@@ -11,11 +11,11 @@ Have you ever wanted to see the apps that your organization owns but isn't using
 
 Watch this video for a brief explanation of these features:
 
-[link to video]
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RWWYEm]
 
 ## App insights
 
-App Governance allows you to sort and filter on app last used date, credential unused since, and credential expiration date. You can export this custom list for easy reporting and triage across your organization.
+App governance allows you to sort and filter on app last used date, credential unused since, and credential expiration date. You can export this custom list for easy reporting and triage across your organization.
 
 [screenshot 1]
 
