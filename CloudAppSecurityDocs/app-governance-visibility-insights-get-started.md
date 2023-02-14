@@ -32,7 +32,7 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   - **Unverified publisher**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
   - **App only permissions**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
-  - **Unused**:
+  - **Unused**: Apps that have not signed in the last 30 days. These dormant apps might introduce unnecessary risk.
 
 ## View app insights
 
