@@ -157,7 +157,7 @@ Create the automation playbooks you require and set it as the policy's alert to 
 
 Great, you've set up your policies and start receiving suspicious activity alerts. What should you do about them? For a start, you should take steps to investigate the activity. For example, you may want to look into activities that indicate that a [user has been compromised](tutorial-ueba.md#identify).
 
-To optimize your protection, you should consider setting up automatic remediation actions to minimize the risk to your organization. Our policies allow you to apply [governance actions](control.md) in conjunction to the alerts so that the risk to your organization is reduced even before you start investigating. Available actions are determined by the policy type including actions such as suspending a user or blocking access to the requested resource.
+To optimize your protection, you should consider setting up automatic remediation actions to minimize the risk to your organization. Our policies allow you to apply [governance actions](governance-actions.md) in conjunction to the alerts so that the risk to your organization is reduced even before you start investigating. Available actions are determined by the policy type including actions such as suspending a user or blocking access to the requested resource.
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 
