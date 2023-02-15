@@ -16,11 +16,11 @@ By adding a new custom cloud app, Defender for Cloud Apps can match uploaded fir
 
 ## Add a new custom cloud app
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Cloud Discovery dashboard**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. You should see the Cloud Discovery dashboard.
 
     ![cloud discovery dashboard menu.](media/cloud-discovery-dashboard-menu.png)
 
-1. In the top right corner, select the three dots and then select **Add new custom app**.
+1. In the top right corner, select the **Action** menu and then select **Add new custom app**.
 
     ![add custom app menu.](media/add-custom-app-menu.png)
 
