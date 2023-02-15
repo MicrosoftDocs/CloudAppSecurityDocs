@@ -357,7 +357,8 @@ The following table lists of the default listening ports for receivers:
 
 Use these steps to define custom ports.
 
-1. In Defender for Cloud Apps, click the settings icon followed by **Log collectors**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Cloud Discovery**, select **Automatic log upload**. Then select the **Log collectors** tab.
 
 1. On the **Log collectors** tab, add or edit a log collector and after updating the data sources, copy the run command from the dialog.
 
@@ -411,7 +412,7 @@ Use these steps to validate the traffic received by log collectors.
         1. Install *netcat* and *wget*.
 
         1. Download, and if required unzip, a sample log, as follows:
-            1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Discover**, and then click **Create snapshot report**.
+            1. In the Microsoft 365 Defender portal, under **Cloud Apps**, choose **Cloud Discovery**. Then select the **Actions** menu in the top right corner and choose **Create Cloud Discovery snapshot report**.
             1. Select the **Data source** from which you want to upload the log files.
             1. Click **View and verify** then right-click **Download sample log** and copy the URL address link.
             1. Click **Close**.
