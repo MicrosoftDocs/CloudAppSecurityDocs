@@ -23,7 +23,7 @@ The engine combines three aspects under each policy:
 
 * Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context, and additional customizable attributes.
 
-* Automated actions for governance and remediation. For more information, see [Control](control.md).
+* Automated actions for governance and remediation.
     > [!NOTE]
     > Only the governance action of the first triggered policy is guaranteed to be applied. For example, if a file policy has already applied a sensitivity label to a file, a second file policy cannot apply another sensitivity label to it.
 
@@ -53,7 +53,7 @@ To create a new file policy, follow this procedure:
 
 1. Go to **Control** > **Policies** > **Information Protection**.
 
-1. Click **Create policy** and select **File policy**.
+1. Select **Create policy** and select **File policy**.
 
     ![Create a Information Protection policy.](media/create-policy-from-information-protection-tab.png)
 
@@ -63,10 +63,10 @@ To create a new file policy, follow this procedure:
 
 1. Within **Category**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type.  The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.
 
-1. **Create a filter for the files this policy will act on** to set which discovered apps trigger this policy. Narrow down the policy filters until you reach an accurate set of files you wish to act upon. Be as restrictive as possible to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the "External" filter etc.
+1. **Create a filter for the files this policy will act on** to set which discovered apps trigger this policy. Narrow down the policy filters until you reach an accurate set of files you wish to act upon. Be as restrictive as possible to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the "External" filter and so on.
    > [!NOTE]
-   > When using the policy filters, **Contains**  searches only for full words – separated by commas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for **malware.exe**, then you find ALL files with either malware or exe in their filename, whereas if you search for **"malware.exe"** (with the quotation marks) you find only files that contain exactly "malware.exe". **Equals** searches only for the complete string, for example if you search for **malware.exe** it finds malware.exe but not malware.exe.txt. 
-   > 
+   > When using the policy filters, **Contains**  searches only for full words – separated by commas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for **malware.exe**, then you find ALL files with either malware or exe in their filename, whereas if you search for **"malware.exe"** (with the quotation marks) you find only files that contain exactly "malware.exe". **Equals** searches only for the complete string, for example if you search for **malware.exe** it finds malware.exe but not malware.exe.txt.
+   >
    > For more information about File Policy Filters, see [File filters in Microsoft Defender for Cloud Apps](file-filters.md#file-filters).
 1. Under the first **Apply to** filter, select **all files excluding selected folders** or **selected folders** for Box, SharePoint, Dropbox, OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You're redirected to sign in the cloud app, and then add the relevant folders.
 
@@ -88,21 +88,21 @@ To create a new file policy, follow this procedure:
 
     ![file policy edit and preview results.](media/file-policy-edit-and-preview-results.png)
 
-1. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the "Matching now" files for the policy. Click the **History** tab to see a history back to up to six months of files that matched the policy.
+1. To view file policy matches, files that are suspected to violate the policy, select **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, select a policy. This displays the "Matching now" files for the policy. Select the **History** tab to see a history back to up to six months of files that matched the policy.
 
 ## File policy best practices
 
-1. Avoid resetting the file policy (by using the **Reset results and apply actions again** checkbox) in production environments unless it's absolutely necessary, as doing so will initiate a full scan of the files covered by the policy, which can have a negative impact on its performance. 
+1. Avoid resetting the file policy (by using the **Reset results and apply actions again** checkbox) in production environments unless it's absolutely necessary, as doing so will initiate a full scan of the files covered by the policy, which can have a negative impact on its performance.
 
 1. When applying labels to files in a specific parent folder **and** its subfolders, use the **Apply to** -> **Selected folders** option. Then add each of the parent folders.
 
 1. When applying labels to files in a specific folder only (excluding any subfolders), use the file policy filter **Parent Folder** with the **Equals** operator.
 
-1. File policy is faster when narrow filtering criteria is used (as compared to wide criteria). 
+1. File policy is faster when narrow filtering criteria are used (as compared to wide criteria).
 
-1. Consolidate several file policies for the same service (such as SharePoint, OneDrive, Box etc.) to a single policy.
+1. Consolidate several file policies for the same service (such as SharePoint, OneDrive, Box, and so on) to a single policy.
 
-1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for 7 consecutive days, file monitoring will be auto-disabled.
+1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for seven consecutive days, file monitoring will be autodisabled.
 
 ## File policy reference
 
@@ -126,7 +126,7 @@ To make investigation even simpler, you can now create custom queries and save t
 
 1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
 
-1. After you've finished building your query, click the **Save as** button in the top right corner of the filters.
+1. After you've finished building your query, select the **Save as** button in the top-right corner of the filters.
 
 1. In the **Save query** pop-up, name your query.
 
@@ -137,7 +137,7 @@ To make investigation even simpler, you can now create custom queries and save t
 You can go to the Policy center to review file policy violations.
 
 1. In the Defender for Cloud Apps dashboard, select **Control**, then **Policies** and then **Information protection** policies.
-1. For each file policy, you can see the file policy violations, by clicking the **matches**.  
+1. For each file policy, you can see the file policy violations by selecting the **matches**.  
    ![PCI matches.](media/pci-matches.png "pci matches")
 
 1. You can select the file itself to get information about the files.  
@@ -145,7 +145,6 @@ You can go to the Policy center to review file policy violations.
 
 1. For example, you can select **Collaborators** to see who has access to this file, and you can select **Matches** to see the actual credit card numbers. ![Content matches credit card numbers.](media/content-matches-ccn.png "content matches credit card numbers")
 
-   
 ## Related videos
 
 > [!div class="nextstepaction"]
@@ -157,4 +156,3 @@ You can go to the Policy center to review file policy violations.
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

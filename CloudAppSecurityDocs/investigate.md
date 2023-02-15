@@ -144,6 +144,6 @@ Now that you have the policy in place, you're surprised to see that you get an a
 
 ## Next steps
 
-To learn how to control your organization's cloud app, see [Control](control.md).
+- [Governing connected apps](governance-actions.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].
