@@ -338,7 +338,6 @@ items:
     - name: Investigate anomaly detection alerts
       href: investigate-anomaly-alerts.md
   - name: Control
-    href: control.md
     items:
     - name: Control cloud apps with policies
       href: control-cloud-apps-with-policies.md
