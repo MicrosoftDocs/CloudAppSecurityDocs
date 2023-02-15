@@ -4,6 +4,7 @@ description: This article describes the procedure for setting up a data policy t
 ms.date: 02/01/2023
 ms.topic: how-to
 ---
+
 # File policies in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -131,6 +132,20 @@ To make investigation even simpler, you can now create custom queries and save t
 
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
+## View files policies results
+
+You can go to the Policy center to review file policy violations.
+
+1. In the Defender for Cloud Apps dashboard, select **Control**, then **Policies** and then **Information protection** policies.
+1. For each file policy, you can see the file policy violations, by clicking the **matches**.  
+   ![PCI matches.](media/pci-matches.png "pci matches")
+
+1. You can select the file itself to get information about the files.  
+   ![PCI content matches.](media/pci-content-matches.png "pci content matches")
+
+1. For example, you can select **Collaborators** to see who has access to this file, and you can select **Matches** to see the actual credit card numbers. ![Content matches credit card numbers.](media/content-matches-ccn.png "content matches credit card numbers")
+
+   
 ## Related videos
 
 > [!div class="nextstepaction"]
@@ -142,3 +157,4 @@ To make investigation even simpler, you can now create custom queries and save t
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
