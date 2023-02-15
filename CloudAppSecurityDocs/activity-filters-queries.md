@@ -1,7 +1,7 @@
 ---
 title: Activity filters and queries
 description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
-ms.date: 01/29/2023
+ms.date: 02/12/2023
 ms.topic: how-to
 ---
 
@@ -95,9 +95,6 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - User agent – The user agent of from with the activity was performed.
 
 - User agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
-
->[!NOTE]
->Defender for Cloud Apps considers *outdated* as two major versions older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
 
 <!--
 >[!NOTE]
