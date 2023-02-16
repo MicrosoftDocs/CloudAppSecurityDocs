@@ -21,9 +21,8 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 ## Understand how quarantine works
 
 > [!NOTE]
-
-> - For a list of apps that support admin quarantine, see the list of [governance actions](governance-actions.md).
->    
+> 
+> - For a list of apps that support admin quarantine, see the list of [governance actions](governance-actions.md). 
 > - Files labeled by Defender for Cloud Apps can't be quarantined.
 > - Defender for Cloud Apps admin quarantine actions are limited to 100 actions per day. This limit can be increased with a support case.
 > - Sharepoint sites that are renamed either directly or as part of domain rename cannot be used as a folder location for admin quarantine.
