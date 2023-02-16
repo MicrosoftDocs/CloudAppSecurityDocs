@@ -61,6 +61,9 @@ The following governance actions can be taken for connected apps either on a spe
    
     
    
+
+   ![policy_create alerts.](media/policy_create-alerts.png)
+
 ## Malware governance actions (Preview)
 
 The following governance actions can be taken for connected apps either on a specific file, user or from a specific policy. For security reasons, this list is limited only to malware related actions that don't imply risk for the user or the tenant.
@@ -73,7 +76,7 @@ The following governance actions can be taken for connected apps either on a spe
    - **Change sharing**
       - **Remove external users** – Allow access only to company users. (Box, Google Drive, OneDrive, SharePoint)
          
-         - **Remove direct shared link** – Remove permissions of previously shared links (Box, Dropbox)
+      - **Remove direct shared link** – Remove permissions of previously shared links (Box, Dropbox)
             
    - **Quarantine**
       
