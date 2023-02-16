@@ -31,6 +31,12 @@ For more information on what's new with other Microsoft Defender security produc
 
 February 19, 2023
 
+- **SaaS Security Posture Management (SSPM) capabilities update announcements (GA and Public preview)**  
+We have made important improvements to our governance and protection of third-party software-as-a-service (SaaS) applications. These improvements include assessments to identify risky security configurations using Microsoft Defender for Cloud Apps, as well as smoother integration into the Microsoft Secure Score experience. We have now released Salesforce and ServiceNow to general availability, while Okta, GitHub, Citrix ShareFile, and DocuSign are currently in public preview. For more information, see [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- **Malware detection policy governance actions now available (preview)**  
+Automatic actions for files detected by the malware detection policy are now available as part of the policy configuration. The actions differ from app to app. For more information, see [Malware governance actions (Preview)](governance-actions#malware-governance-actions-preview).
+
 - **Log Collector Version Update**  
 
     We've released a new log collector version with the latest vulnerabilities fixes.
