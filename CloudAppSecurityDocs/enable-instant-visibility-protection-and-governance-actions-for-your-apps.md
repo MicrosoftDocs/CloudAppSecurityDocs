@@ -92,8 +92,8 @@ The following tables list, per cloud app, which abilities are supported with App
 | Office 365        | ✔                                    | ✔                         | ✔                         |                   |
 | Okta              |                                      | Not applicable            | Not applicable            | Preview (At General Availability the licensing of this capability may be changed)            |
 | OneLogin | |  |  |  |
-| Service  Now      |                                      |                           |                           | Preview (At General Availability the licensing of this capability may be changed) |
-| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview (At General Availability the licensing of this capability may be changed)                  |
+| Service  Now      |                                      |                           |                           | ✔ |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
 | Slack |  |  |  |  |
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
