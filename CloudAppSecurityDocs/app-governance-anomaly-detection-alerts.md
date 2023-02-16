@@ -222,6 +222,30 @@ Review all activities done by the app. If you suspect that an app is suspicious,
 
 If you still suspect that an app is suspicious, you can research the app display name and reply domain.
 
+### New app with mail permissions having low consent pattern  
+
+**Severity**: Medium  
+
+This detection identifies an OAuth application that was created recently in a relatively new publisher tenant. This app has mail permissions that will allow the app to access and/or change mailbox settings. The app also appears to have lower consent volume from targeted users. This can indicate a malicious or risky app that lures users into illicit consent grants via phishing.  
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+
+    **Recommended action**: 
+    - Contact users and admins who have granted consent to this application to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate application activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a TP in the portal.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
+
+    **Recommended Action**: Classify the alert as a FP in the portal and please consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
 ## Persistence alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
