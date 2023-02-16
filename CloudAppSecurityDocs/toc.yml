@@ -250,6 +250,8 @@ items:
       href: ./connect-azure.md
     - name: Connect Box
       href: ./connect-box.md
+    - name: Connect Citrix ShareFile
+      href: ./connect-citrix-sharefile.md
     - name: Connect DocuSign
       href: ./connect-docusign.md
     - name: Connect Dropbox
@@ -338,7 +340,6 @@ items:
     - name: Investigate anomaly detection alerts
       href: investigate-anomaly-alerts.md
   - name: Control
-    href: control.md
     items:
     - name: Control cloud apps with policies
       href: control-cloud-apps-with-policies.md
