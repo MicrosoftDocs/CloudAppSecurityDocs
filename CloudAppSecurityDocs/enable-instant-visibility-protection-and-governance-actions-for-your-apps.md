@@ -55,7 +55,6 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
-| Citrix ShareFile  |   |   |   |   |   |   |
 | DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
@@ -82,7 +81,6 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| Citrix ShareFile  |   |   |   |   |
 | DocuSign          |  |  | | |
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
@@ -109,7 +107,6 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
-| Citrix ShareFile  |   |   |   |   |   |
 | DocuSign          |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
 | Egnyte  |  |  |  |  | |
