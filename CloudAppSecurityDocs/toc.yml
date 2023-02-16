@@ -250,6 +250,8 @@ items:
       href: ./connect-azure.md
     - name: Connect Box
       href: ./connect-box.md
+    - name: Connect Citrix ShareFile
+      href: ./connect-citrix-sharefile.md
     - name: Connect DocuSign
       href: ./connect-docusign.md
     - name: Connect Dropbox
