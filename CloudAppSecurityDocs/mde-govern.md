@@ -59,8 +59,8 @@ Use the following steps to enable access control for cloud apps:
    - Windows: Windows 10 version 18.09 (RS5), OS Build 1776.3 or later.
    - Android: minimum version 8.0 - for more information see: [Microsoft Defender for Endpoint on Android](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-android#system-requirements)
    - iOS: minimum version 14.0 - for more information see: [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios#prerequisites)
-   - MacOS: minimum version 11 - for more information see:  [Network protection for macOS](/microsoft-365/security/defender-endpoint/network-protection-macos?view=o365-worldwide)
-   - Linux:[ system requirements](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux?view=o365-worldwide)- for more information see: [Network protection for Linux](/microsoft-365/security/defender-endpoint/network-protection-linux?view=o365-worldwide)
+   - MacOS: minimum version 11 - for more information see:  [Network protection for macOS](/microsoft-365/security/defender-endpoint/network-protection-macos)
+   - Linux:[ system requirements](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux)- for more information see: [Network protection for Linux](/microsoft-365/security/defender-endpoint/network-protection-linux)
    
 3. [Onboard Defender for Cloud Apps with Defender for Endpoint](mde-integration.md#how-to-integrate-microsoft-defender-for-endpoint-with-defender-for-cloud-apps).
 4. Enable [cloud app blocking with Defender for Endpoint](mde-govern.md#how-to-enable-cloud-app-blocking-with-defender-for-endpoint).
