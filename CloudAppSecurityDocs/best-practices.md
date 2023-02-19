@@ -157,7 +157,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 ## Block and protect download of sensitive data to unmanaged or risky devices
 
 **Best practice**: Manage and control access to high risk devices  
-**Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you do not to create session policies to monitor high-risk sessions, you will lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
+**Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you don't create session policies to monitor high-risk sessions, you'll lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
 **For more information**:
 
 * [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md)
