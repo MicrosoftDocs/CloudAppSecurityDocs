@@ -81,18 +81,19 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| DocuSign          |  |  | | |
+| Citrix Share file          |  |  | | Preview (At General Availability the licensing of this capability may be changed) |
+| DocuSign          |  |  | | Preview (At General Availability the licensing of this capability may be changed) |
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
-| GitHub            |                                      | ✔                         |                           |                           |
+| GitHub            |                                      | ✔                         |                           | Preview (At General Availability the licensing of this capability may be changed)                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
 | Office 365        | ✔                                    | ✔                         | ✔                         |                   |
-| Okta              |                                      | Not applicable            | Not applicable            |             |
+| Okta              |                                      | Not applicable            | Not applicable            | Preview (At General Availability the licensing of this capability may be changed)            |
 | OneLogin | |  |  |  |
-| Service  Now      |                                      |                           |                           | Preview (At General Availability the licensing of this capability may be changed) |
-| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview (At General Availability the licensing of this capability may be changed)                  |
+| Service  Now      |                                      |                           |                           | ✔ |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
 | Slack |  |  |  |  |
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
