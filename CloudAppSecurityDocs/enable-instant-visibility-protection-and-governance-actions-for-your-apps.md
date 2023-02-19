@@ -148,7 +148,7 @@ For more information about  Microsoft Peering, see [ExpressRoute circuits and ro
 
 To disable connected apps:
 
-1. In the **Connected apps** page, in the relevant row, click the three dots and select **Disable App connector**.
+1. In the **Connected apps** page, in the relevant row, select the three dots and choose **Disable App connector**.
 1. In the pop-up, click **Disable App connector instance** to confirm the action.
 
 Once disabled, the connector instance will stop consuming data from the connector.
@@ -157,7 +157,7 @@ Once disabled, the connector instance will stop consuming data from the connecto
 
 To re-enable connected apps:
 
-1. In the **Connected apps** page, in the relevant row, click the three dots and select **Edit app**. This starts the process to add a connector.
+1. In the **Connected apps** page, in the relevant row, select the three dots and choose **Edit settings**. This starts the process to add a connector.
 1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Defender for Cloud Apps](./connect-github-ec.md).
 
 ## Related videos
