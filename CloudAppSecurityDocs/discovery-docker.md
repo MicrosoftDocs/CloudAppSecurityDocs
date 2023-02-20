@@ -36,6 +36,10 @@ Before setting up automatic log file collection, verify your log matches the exp
 >
 > `docker rm <collector_name>`
 
+
+> [!Note]
+> To install a new log collector version, you'll need to stop your log collector, remove the current image, and install the new one.
+
 ## Log collector performance
 
 The Log collector can successfully handle log capacity of up to 50 GB per hour. The main bottlenecks in the log collection process are:
@@ -51,3 +55,4 @@ The Log Collector supports the **Container** deployment mode. It runs as a Docke
 
 > [!div class="nextstepaction"]
 > [Working with Cloud Discovery data](working-with-cloud-discovery-data.md)
+
