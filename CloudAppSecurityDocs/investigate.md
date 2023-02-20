@@ -1,7 +1,7 @@
 ---
 title: Investigate cloud app risks and suspicious activity 
 description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 02/15/2023
 ms.topic: how-to
 ---
 # Investigate cloud app risks and suspicious activity
