@@ -115,7 +115,7 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
 #### Add the GCP connection details
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. In the **App connectors** page, to provide the GCP connector credentials, do one of the following:
 
@@ -124,15 +124,15 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     **For a new connector**
 
-    1. Select the plus sign (**+**) followed by **Google Cloud Platform**.
+    1. Select **+Connect an app**, followed by **Google Cloud Platform**.
 
-        ![connect GCP.](media/connect-gcp-add.png)
+        ![Connect GCP.](media/connect-gcp-add.png)
 
-    1. In the pop-up, provide a name for the connector, and then select **Connect Google Cloud Platform**.
+    1. In the next window, provide a name for the connector, and then select **Next**.
 
         ![GCP connector name.](media/connect-gcp-name.png)
 
-    1. In the **Project details** page, do the following, and then select **Connect Google Cloud Platform**.
+    1. In the **Enter details** page, do the following, and then select **Submit**.
         1. In the **Organization ID** box, enter the organization you made a note of earlier.
         1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
@@ -140,15 +140,15 @@ Make a note of your **Organization ID**, you'll need this later. For more inform
 
     **For an existing connector**
 
-    1. In the list of connectors, on the row in which the GCP connector appears, select **Connect security auditing**.
+    1. In the list of connectors, on the row in which the GCP connector appears, select **Edit settings**.
 
         ![Screenshot of the Connected Apps page, showing edit Security Auditing link.](media/connect-gcp-app-edit-audit.png)
 
-    1. In the **Project details** page, do the following, and then select **Connect Google Cloud Platform**.
+    1. In the **Enter details** page, do the following, and then select **Submit**.
         1. In the **Organization ID** box, enter the organization you made a note of earlier.
         1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
 
-        ![Connect GCP app security auditing for existing connector.](media/connect-gcp-app-edit-audit-creds.png)
+        ![Connect GCP app security auditing for existing connector.](media/connect-gcp-app-audit.png)
 
 1. Select **Test API** to make sure the connection succeeded.
 

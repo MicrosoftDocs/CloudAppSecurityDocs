@@ -69,13 +69,16 @@ Repeat this step for each additional connected organization.
 
 ### Configure Defender for Cloud Apps
 
-1. In the C[loud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select the plus button followed by **GitHub**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **GitHub**.
+1. In the next window, give the connector a descriptive name, and then select **Next**.
 
-1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then select **Connect in GitHub**.
+1. In the **Enter details** screen, fill out the **Client ID**, **Client Secret**, **Organization Login Name**, and **Enterprise slug** that you made a note of earlier, and then select **Next**.
 
     ![Screenshot showing connect github api.](media/connect-github-connect-app.png)
+
+1. Select **Connect GitHub**.
 
     The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 

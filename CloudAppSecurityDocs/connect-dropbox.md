@@ -14,9 +14,9 @@ Because Dropbox enables access to files from shared links without signing in, De
 
 ## How to connect Dropbox to Defender for Cloud Apps
 
-1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select the plus button followed by **Dropbox**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **Dropbox**.
 
     ![connect dropbox.](media/connect-dropbox.png "connect dropbox")
 

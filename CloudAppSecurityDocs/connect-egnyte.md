@@ -21,15 +21,15 @@ This article describes how to connect Microsoft Defender for Cloud Apps to your 
 
 ### Configure Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. On the **App connectors** tab, select the plus sign, and then select **Egnyte**.
+1. In the **App connectors** page, select **+Connect an app**, and then select **Egnyte**.
 
-1. In the window that appears, give the connector a descriptive name, and then select **Connect Egnyte**:
+1. In the window that appears, give the connector a descriptive name, and then select **Next**.
 
-    - In the **Application URL**, insert your Egnyte URL by using the following format: `https://<domain_name>.egnyte.com`
-
-1. Select **Connect in Egnyte**.
+1. In the **Enter details** page, in **Application URL**, insert your Egnyte URL by using the following format: `https://<domain_name>.egnyte.com`
+1. Select **Next**.
+1. Select **Connect Egnyte**.
 1. In the redirected page, select **Allow**.
 1. Make sure the connection succeeded by selecting **Test now**. The test might take a few minutes. After you see a success notice, select **Close**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
