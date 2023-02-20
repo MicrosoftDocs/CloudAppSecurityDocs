@@ -3,6 +3,7 @@ title: Configure automatic log upload for continuous reports on a virtual applia
 description: This article provides information about how to upload logs to create automatic Cloud Discovery reports.
 ms.date: 01/29/2023
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
 # Configure automatic log upload for continuous reports on a virtual appliance - Deprecated
 
