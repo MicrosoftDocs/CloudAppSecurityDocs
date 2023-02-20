@@ -4,6 +4,7 @@ description: This article provides information about how to connect your GitHub 
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -13,7 +14,8 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 ## Prerequisites
 
 - Your organization must have a GitHub Enterprise Cloud license.
-- The GitHub account used for connecting to Defender for Cloud Apps must have *Owner* permissions for your organization.
+- The GitHub account used for connecting to Defender for Cloud Apps must have Owner permissions for your organization.
+- For SSPM capabilities, the provided account must be the owner of the enterprise account.
 - To verify owners of your organization, browse to your organization's page, select **People**, and then filter by *Owner*.
 
 ## How to connect GitHub Enterprise Cloud to Defender for Cloud Apps
@@ -69,26 +71,31 @@ Repeat this step for each additional connected organization.
 
 ### Configure Defender for Cloud Apps
 
-1. In the C[loud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
-
+1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 1. In the **App connectors** page, select the plus button followed by **GitHub**.
 
 1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then select **Connect in GitHub**.
-
-    ![Screenshot showing connect github api.](media/connect-github-connect-app.png)
-
+1. **Enterprise slug**, aka the enterprise name, is needed for supporting SSPM capabilities - to find "Enterprise slug", go to:   
+   Click on the **GitHub Profile picture** -> "**your enterprises**" -> click on "**your enterprise account**" (choose the account you want to connect to Microsft Defender for Cloud Apps) -> See the http URL (eg . [https://github.com/enterprises/](https://github.com/enterprises/testEnterprise)*[testEnterprise](https://github.com/enterprises/testEnterprise)* - In this example "**testEnterprise**" is the enterprise slug.
     The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
 1. Request organization access and authorize the app to give Defender for Cloud Apps access to your GitHub organization.
 
-    > [!NOTE]
-    > Defender for Cloud Apps requires the following OAuth scopes:
-    >
-    > - **admin:org** - required for synchronizing your organization's audit log
-    > - **read:user** and **user:email** - required for synchronizing your organization's members
-    > - **repo:status** - required for synchronizing repository-related events in the audit log
-    > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://docs.github.com/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
-
+1. > [!NOTE]
+   > Defender for Cloud Apps requires the following OAuth scopes:
+   > 
+   > 
+   > 
+   > - **admin:org** - required for synchronizing your organization's audit log
+   > 
+   > - **read:user** and **user:email** - required for synchronizing your organization's members
+   > 
+   > - **repo:status** - required for synchronizing repository-related events in the audit log
+   > 
+   > - **admin:enterprise** - required for SSPM capabilities, Note that provided user must be the owner of the enterprise account. 
+   > 
+   > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://docs.github.com/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
+   
     ![Screenshot showing authorize github oauth.](media/connect-github-authorize-app.png)
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
@@ -113,3 +120,4 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
