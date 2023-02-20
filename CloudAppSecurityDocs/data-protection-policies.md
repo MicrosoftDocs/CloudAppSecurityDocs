@@ -1,7 +1,7 @@
 ---
 title: File policies
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
-ms.date: 02/01/2023
+ms.date: 02/15/2023
 ms.topic: how-to
 ---
 
