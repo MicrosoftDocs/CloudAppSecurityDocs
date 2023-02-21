@@ -79,7 +79,7 @@ Repeat this step for each additional connected organization.
     ![Screenshot showing details of connector wizard.](media/connect-github-ec/1.jpg)
 1. **Enterprise slug**, also known as the enterprise name, is needed for supporting SSPM capabilities. To find the **Enterprise slug**:   
    1. Select the **GitHub Profile picture** -> **your enterprises**.
-   1. Select **your enterprise account** and choose the account you want to connect to Microsft Defender for Cloud Apps.
+   1. Select **your enterprise account** and choose the account you want to connect to Microsoft Defender for Cloud Apps.
    1. Confirm that the URL is the enterprise slug. For instance, in this example `https://github.com/enterprises/testEnterprise` *testEnterprise* is the enterprise slug.
 
    1. The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
