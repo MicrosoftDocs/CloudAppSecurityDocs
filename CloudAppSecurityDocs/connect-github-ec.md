@@ -75,11 +75,16 @@ Repeat this step for each additional connected organization.
 
 1. In the **App connectors** page, select **+Connect an app**, followed by **GitHub**.
 1. In the next window, give the connector a descriptive name, and then select **Next**.
+1. In the **Enter details** window, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier.
+
+   :::image type="content" source="media/connect-github-connect-app.png" alt-text="Connect GitHub.":::
 
    For **Enterprise slug**, also known as the enterprise name, is needed for supporting SSPM capabilities. To find the **Enterprise slug**:
    1. Select the **GitHub Profile picture** -> **your enterprises**.
-   1. Select **your enterprise account** and choose the account you want to connect to Microsft Defender for Cloud Apps.
+   1. Select **your enterprise account** and choose the account you want to connect to Microsoft Defender for Cloud Apps.
    1. Confirm that the URL is the enterprise slug. For instance, in this example `https://github.com/enterprises/testEnterprise` *testEnterprise* is the enterprise slug.
+
+1. Select **Next**.
 
 1. Select **Connect GitHub**.
 
