@@ -20,11 +20,11 @@ Because Dropbox enables access to files from shared links without signing in, De
 
     ![connect dropbox.](media/connect-dropbox.png "connect dropbox")
 
-1. In the pop-up, enter the admin account email address.
+1. In the next window, give the connector a name and select **Next**.
 
-1. Select **Generate link**.
+1. In the **Enter details** window, enter the admin account email address.
 
-1. Select **Follow this link**.
+1. In the **Follow the link** window, select **Connect Dropbox**.
 
     The Dropbox sign in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Dropbox instance.
 
