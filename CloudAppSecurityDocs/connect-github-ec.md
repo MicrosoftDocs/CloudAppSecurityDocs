@@ -34,7 +34,7 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 
 ### Configure GitHub Enterprise Cloud
 
-1. **Find your Organization's login name**  
+1. **Find your organization's login name**  
 In GitHub, browse to your organization's page, and from the URL, make a note of your organization login name, you'll need it later.
 
     > [!NOTE]
@@ -75,9 +75,11 @@ Repeat this step for each additional connected organization.
 1. In the **App connectors** page, select the plus button followed by **GitHub**.
 
 1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then select **Connect in GitHub**.
-1. **Enterprise slug**, aka the enterprise name, is needed for supporting SSPM capabilities - to find "Enterprise slug", go to:   
-   Click on the **GitHub Profile picture** -> "**your enterprises**" -> click on "**your enterprise account**" (choose the account you want to connect to Microsft Defender for Cloud Apps) -> See the http URL (eg . [https://github.com/enterprises/](https://github.com/enterprises/testEnterprise)*[testEnterprise](https://github.com/enterprises/testEnterprise)* - In this example "**testEnterprise**" is the enterprise slug.
-    The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
+1. **Enterprise slug**, also known as the enterprise name, is needed for supporting SSPM capabilities. To find the **Enterprise slug**:   
+   1. Select the **GitHub Profile picture** -> **your enterprises**.
+   1. Select **your enterprise account** and choose the account you want to connect to Microsft Defender for Cloud Apps.
+   1. Confirm that the URL is the enterprise slug. For instance, in this example `https://github.com/enterprises/testEnterprise` *testEnterprise* is the enterprise slug.
+   1. The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
 1. Request organization access and authorize the app to give Defender for Cloud Apps access to your GitHub organization.
 
