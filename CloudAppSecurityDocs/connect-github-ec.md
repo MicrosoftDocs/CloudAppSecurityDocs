@@ -73,8 +73,10 @@ Repeat this step for each additional connected organization.
 
 1. In the [Cloud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 1. In the **App connectors** page, select the plus button followed by **GitHub**.
-![Screenshot showing details of connector wizard.](media/connect-github-ec/1.jpg)
+
 1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then select **Connect in GitHub**.
+
+    ![Screenshot showing details of connector wizard.](media/connect-github-ec/1.jpg)
 1. **Enterprise slug**, also known as the enterprise name, is needed for supporting SSPM capabilities. To find the **Enterprise slug**:   
    1. Select the **GitHub Profile picture** -> **your enterprises**.
    1. Select **your enterprise account** and choose the account you want to connect to Microsft Defender for Cloud Apps.
