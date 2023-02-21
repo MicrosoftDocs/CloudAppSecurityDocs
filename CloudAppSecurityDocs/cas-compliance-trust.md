@@ -155,10 +155,6 @@ Defender for Cloud Apps enables you to limit access of administrators to the por
 
 Defender for Cloud Apps supports role-based access control. Office 365 and Azure Active Directory Global admin and Security admin roles have full access to Defender for Cloud Apps, and Security readers have read access. [For more information](manage-admins.md).
 
-### Zero Trust
-
-<!--adding content for ZT trust-->
-
 ## Customer controls for organizational compliance
 
 ### Scoped deployment
