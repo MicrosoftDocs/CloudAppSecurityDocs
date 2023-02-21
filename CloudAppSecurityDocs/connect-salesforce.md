@@ -77,13 +77,17 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 > [!NOTE]
 > The Content Deliveries feature needs to be enabled for Defender for Cloud Apps to query file sharing data. For more information, see [ContentDistribution](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contentdistribution.htm).
 
+## How to connect Defender for Cloud Apps to Salesforce
+
 1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
 
-1. In the **App connectors** page, select the plus button followed by **Salesforce**.
+1. In the **App connectors** page, select **+Connect an app** followed by **Salesforce**.
 
-    ![Connect salesforce.](media/connect-salesforce.png)
+    ![Connect Salesforce.](media/connect-salesforce.png)
 
-1. In the Salesforce settings page, on the API tab, select **Follow this link**, depending on which instance you want to install.
+1. In the next window, give the connection a name and select **Next**.
+
+1. In the **Follow the link** page, select **Connect Salesforce**.
 
 1. This opens the Salesforce sign in page. Enter your credentials to allow Defender for Cloud Apps access to your team's Salesforce app.
 
@@ -95,7 +99,7 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
 1. Back in the Defender for Cloud Apps console, you should see the Salesforce was successfully connected message.
 
-1. Make sure the connection succeeded by clicking **Test Now**.
+1. Make sure the connection succeeded by selecting **Test Now**.
 
     Testing may take a couple of minutes. After receiving a success notice, select **Done**.
 

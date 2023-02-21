@@ -35,9 +35,10 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
 >- In SharePoint, Defender for Cloud Apps supports quarantine tasks only for files with **Shared Documents** in path in English.
 > - Events from **Exchange**, **Power BI**, and **Teams** will only appear after activities from those services are detected in the portal.
 
-1. In the **Connected apps** page, under **App connectors**, select **+Connect an app** and then select **Office 365**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the **App connectors** page, select **+Connect an app**, and then select **Office 365**.
 
-    ![connect O365 menu option.](media/connect-o365.png)
+    ![Connect O365 menu option.](media/connect-o365.png)
 
 1. In the Office 365 pop-up, select **Connect Office 365**.
 

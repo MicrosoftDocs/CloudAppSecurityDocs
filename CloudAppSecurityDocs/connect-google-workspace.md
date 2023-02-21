@@ -94,19 +94,20 @@ Copy the **Project number**, you'll need it later.
 
 ## Configure Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
 1. To provide the Google Workspace connection details, under **App connectors**, do one of the following:
 
     **For a Google Workspace organization that already has a connected GCP instance**
 
-    - In the list of connectors, at the end of row in which the GCP instance appears, select the three dots and then select **Add Google Workspace**.
+    - In the list of connectors, at the end of row in which the GCP instance appears, select the three dots and then select **Connect Google Workspace instance**.
 
     **For a Google Workspace organization that does not already have a connected GCP instance**
 
-    - In the **Connected apps** page, select the plus sign (**+**) and select **Google Workspace**.
+    - In the **Connected apps** page, select **+Connect an app**, and then select **Google Workspace**.
 
-1. In the pop-up, fill in the following information:
+1. In the **Instance name** window, give your connector a name. Then select **Next**.
+1. In the **Add Google key**, fill in the following information:
 
     ![Google Workspace Configuration in Defender for Cloud Apps.](media/connect-google-workspace/cas-config-google-workspace.png "Google Workspace Configuration in Defender for Cloud Apps")
 
