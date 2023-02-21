@@ -83,7 +83,7 @@ Repeat this step for each additional connected organization.
 
 1. Request organization access and authorize the app to give Defender for Cloud Apps access to your GitHub organization.
 
-1. > [!NOTE]
+   > [!NOTE]
    > Defender for Cloud Apps requires the following OAuth scopes:
    > 
    > 
