@@ -19,15 +19,15 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ## How to connect Webex to Defender for Cloud Apps
 
-1. In the Defender for Cloud Apps console, click **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, click the plus button followed by **Cisco Webex**.
+1. In the **App connectors** page, click **+Connect an app**, followed by **Cisco Webex**.
+
+1. In the next window, give the connector a name and select **Next**.
 
     ![connect Webex.](media/cisco-webex.png)
 
-1. In the pop-up, enter the instance name of this connector.
-
-1. Click **Connect Cisco Webex**. The Webex sign in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Webex instance.
+1. In the **Follow the link** page, select **Connect Cisco Webex**. The Webex sign in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Webex instance.
 
 1. Webex asks you if you want to allow Defender for Cloud Apps access to your team information, activity log, and perform activities as a team member. To proceed, click **Allow**.
 

@@ -20,17 +20,17 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ## How to connect Slack to Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select the plus button followed by **Slack**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **Slack**.
 
-1. In the pop-up, give the connector a descriptive name, and press **Connect**.
+1. In the next window, give the connector a descriptive name, and select **Next**.
 
-    ![Connect Slack.](media/connect-slack.png)
+    ![Give the connector a name.](media/connect-slack.png)
 
-1. In the next screen, select **Connect in Slack**.
+1. In the **External Link** page, select **Connect Slack**.
 
-    ![Connect in Slack.](media/connect-in-slack.png)
+    ![Connect Slack.](media/connect-in-slack.png)
 
 1. You'll be redirected to the Slack page. Make sure the org Owner is already logged into the Slack organization.
 
