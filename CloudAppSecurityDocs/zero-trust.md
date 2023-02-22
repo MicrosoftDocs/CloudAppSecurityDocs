@@ -29,9 +29,6 @@ Use Defender for Cloud Apps to inform Azure AD about what happened to the user a
 
 Beyond SaaS applications, Defender for Cloud Apps helps you strengthen your security posture for IaaS and PaaS services by getting visibility into the security configuration and compliance status across your public cloud platforms. This enables a risk-based investigation of the entire platform configuration status. [Integrate with Microsoft Purview](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps) to label your apps and protect data across your apps, preventing inadvertent exposure to sensitive information. 
 
-### On-premises security
-
-Integrate with [Microsoft Defender for Identity](/defender-for-identity/) to bring on-premises signals into any specific user's overall risk calculation. For example, monitor for Defender for Identity alerts about Azure AD users who are indulging in risky behavior while accessing on-premises, non-modern resources like File Shares. This behavior can then be factored into the overall user risk, and may require that you block the user from further access in the cloud.
 
 ## Next steps
 
