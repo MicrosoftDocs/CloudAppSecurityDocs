@@ -1,7 +1,7 @@
 ---
 title: Governing connected apps
 description: This article lists and describes all the governance actions that can be taken in Defender for Cloud Apps and the log messages that track them.
-ms.date: 01/29/2023
+ms.date: 02/16/2023
 ms.topic: how-to
 ---
 
@@ -9,7 +9,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Governance enables you to control what your users do across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Defender for Cloud Apps. Governance actions control what your users do across connected apps. For information about where you can use governance actions, see [Apply governance actions](control.md#apply-governance-actions).
+Governance enables you to control what your users do across apps. For connected apps, you can apply governance actions to files or activities. Governance actions are integrated actions you can run on files or activities directly from Microsoft Defender for Cloud Apps. Governance actions control what your users do across connected apps. For information about where you can use governance actions, see [Governing connected apps](governance-actions.md).
 
 > [!NOTE]
 > When Microsoft Defender for Cloud Apps attempts to run a governance action on a file but fails because the file is locked, it will automatically retry the governance action.
@@ -58,8 +58,46 @@ The following governance actions can be taken for connected apps either on a spe
   - **Inherit permissions from parent** - This governance action enables you to remove specific permissions set for a file or folder in Office 365. Then revert to whatever permissions are set for the parent folder.
 
   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint, Cisco Webex)
+   
+    
+   
 
    ![policy_create alerts.](media/policy_create-alerts.png)
+
+## Malware governance actions (Preview)
+
+The following governance actions can be taken for connected apps either on a specific file, user or from a specific policy. For security reasons, this list is limited only to malware related actions that don't imply risk for the user or the tenant.
+
+- **Notifications:**
+   - **Alerts** – Alerts can be triggered in the system and propagated via email and text message, based on severity level.
+      
+- **Governance actions in apps** - Granular actions can be enforced per app, specific actions vary depending on app terminology.
+   
+   - **Change sharing**
+      - **Remove external users** – Allow access only to company users. (Box, Google Drive, OneDrive, SharePoint)
+         
+      - **Remove direct shared link** – Remove permissions of previously shared links (Box, Dropbox)
+            
+   - **Quarantine**
+      
+      - **Put in user quarantine** – Allow self-service by moving the file to a user-controlled quarantine folder (Box, OneDrive, SharePoint)
+      - **Put in admin quarantine** – File is moved to quarantine in the admin drive, and the admin has to approve it. (Box)
+         
+   - **Trash** – Move the file to the trash folder. (Box, Dropbox, Google Drive, OneDrive, SharePoint)
+      
+
+![User's image](media/governance-actions/image1.png)
+
+
+> [!Note]
+> In SharePoint and OneDrive, Defender for Cloud Apps supports user quarantine only for files in Shared Documents libraries (SharePoint Online) and files in the Documents library (OneDrive for Business).
+> 
+> Microsoft Defender for Office 365 Customers can control quarantined files in SharePoint and OneDrive via [https://security.microsoft.com/quarantine?viewid=Files](https://security.microsoft.com/quarantine?viewid=Files), including recovering files, deleting them, and download them in a password protected ZIP files.
+> 
+> In SharePoint, Defender for Cloud Apps supports quarantine tasks only for files with Shared Documents in path in English.
+> 
+> Actions will only show for connected apps.
+> 
 
 ## Activity governance actions
 
@@ -160,3 +198,4 @@ For information about how governance actions are treated when there are policy c
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

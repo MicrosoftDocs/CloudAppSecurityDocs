@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 01/29/2023
+ms.date: 02/16/2023
 ms.topic: how-to
 ---
 # Connect apps to get visibility and control with Microsoft Defender for Cloud Apps
@@ -81,18 +81,19 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| DocuSign          |  |  | | |
+| Citrix Share file          |  |  | | Preview (At General Availability the licensing of this capability may be changed) |
+| DocuSign          |  |  | | Preview (At General Availability the licensing of this capability may be changed) |
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
-| GitHub            |                                      | ✔                         |                           |                           |
+| GitHub            |                                      | ✔                         |                           | Preview (At General Availability the licensing of this capability may be changed)                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
 | Office 365        | ✔                                    | ✔                         | ✔                         |                   |
-| Okta              |                                      | Not applicable            | Not applicable            |             |
+| Okta              |                                      | Not applicable            | Not applicable            | Preview (At General Availability the licensing of this capability may be changed)            |
 | OneLogin | |  |  |  |
-| Service  Now      |                                      |                           |                           | Preview (At General Availability the licensing of this capability may be changed) |
-| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview (At General Availability the licensing of this capability may be changed)                  |
+| Service  Now      |                                      |                           |                           | ✔ |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
 | Slack |  |  |  |  |
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
