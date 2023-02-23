@@ -63,7 +63,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 1. Note that SaaS Security Posture Management (SSPM) data will be shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
-   
+
 ## Limitations
 
 1. Only active DocuSign users will be shown in Defender for Cloud Apps.
@@ -78,4 +78,3 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 > [Control cloud apps by using policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
