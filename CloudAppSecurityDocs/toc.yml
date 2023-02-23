@@ -118,6 +118,8 @@ items:
     items:
     - name: Security baseline
       href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
+    - name: Deploying and monitoring for Zero Trust
+      href: zero-trust.md
 - name: How-to guides
   items:
   - name: Basic set up

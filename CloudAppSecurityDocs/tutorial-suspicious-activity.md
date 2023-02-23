@@ -4,6 +4,7 @@ description: This tutorial describes the process for tuning user activity detect
 ms.date: 02/15/2023
 ms.topic: tutorial
 ---
+
 # Tutorial: Detect suspicious user activity with behavioral analytics (UEBA)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -61,7 +62,7 @@ Several built-in anomaly detection policies are available in Defender for Cloud 
 - **Impossible travel**  
 Activities from the same user in different locations within a period that is shorter than the expected travel time between the two locations.
 - **Activity from infrequent country**  
-Activity from a location that was not recently or never visited by the user or by any user in the organization.
+   Activity from a location that was not recently or never visited by the user.
 - **Malware detection**  
 Scans files in your cloud apps and runs suspicious files through Microsoft's threat intelligence engine to determine whether they are associated with known malware.
 - **Ransomware activity**  
@@ -164,3 +165,4 @@ To optimize your protection, you should consider setting up automatic remediatio
 ## Learn more
 
 - Try our interactive guide: [Detect threats and manage alerts with Microsoft Defender for Cloud Apps](https://mslearn.cloudguides.com/guides/Detect%20threats%20and%20manage%20alerts%20with%20Microsoft%20Cloud%20App%20Security)
+
