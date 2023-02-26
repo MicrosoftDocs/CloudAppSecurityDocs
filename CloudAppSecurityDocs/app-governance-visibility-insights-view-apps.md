@@ -76,7 +76,7 @@ The app details pane provides additional information on these tabs:
 |Permissions | See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
 |Sensitive labels | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
 |Last used | Indicates the last time the app signed in and provides a link to related recommendations on Azure Active Directory. |
-| Credentials | Indicates whether the app has unused credentials and provides a link to credential management on Azure Active Directory. |
+| Credentials | Indicates whether the app has unused or expiring credentials and provides a link to credential management on Azure Active Directory. |
 
 For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
 

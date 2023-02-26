@@ -11,13 +11,13 @@ Have you ever wanted to see the apps that your organization owns but isn't using
 
 Watch this video for a brief explanation of these features:
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RWWYEm]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWYEm]
 
 ## App insights
 
 App governance allows you to sort and filter on app last used date, credential unused since, and credential expiration date. You can export this custom list for easy reporting and triage across your organization.
 
-[screenshot 1]
+:::image type="content" source="media/app-governance/custom-list.png" alt-text="Custom list of apps.":::
 
 ## App hygiene policies
 
@@ -25,7 +25,7 @@ App Governance provides a policy out of the box that alerts on unused apps to au
 
 You can also customize your own policy using the unused app condition. For example, you could create a policy to automatically disable any app that hasn’t been used in the past 90 days, has high privilege permissions, and can access [priority account information](/microsoft-365/admin/setup/priority-accounts). Like all App Governance alerts, these alerts will be aggregated into incidents in your Microsoft 365 Defender alerts queue and flow to advanced hunting and Sentinel.
 
-[screenshot 2]
+:::image type="content" source="media/app-governance/edit-policy-conditions.png" alt-text="Edit policy conditions.":::
 
 By staying on top of unused apps and expiring or unused app credentials and cleaning up your SaaS app inventory, you aren't only optimizing app usage and SaaS spend, but also, more importantly, keeping your app attack surface in check.
 
