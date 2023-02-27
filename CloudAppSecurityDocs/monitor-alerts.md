@@ -14,7 +14,7 @@ Alerts are the entry points to understanding your cloud environment more deeply.
 
 It's a good idea to review all of your alerts. Understanding why an alert is occurring allows you to use them as tools for modifying your policies.
 
-**To view alerts:** In the Microsoft Defender for Cloud Apps portal, select **Alerts**.
+**To view alerts:** In the Microsoft 365 Defender portal, under **Incidents & alerts**, select **Alerts**.
 
 ![Alert menu.](media/alert-menu.png)
 
