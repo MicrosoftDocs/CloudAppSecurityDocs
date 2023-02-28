@@ -80,10 +80,9 @@ BehaviorInfo
 **Example scenario 1**: You want to be alerted when a mass download is performed by a specific user or a list of users that are prone to be compromised or to internal risk. To do so, you can create the following query in Microsoft 365 Defender Advanced Hunting:
 
 ```kusto
- BehaviorInfo
+BehaviorEntities
 | where ActionType == "MassDownload" 
 | where EntityType == “User” and AccountName in (“username1”, “username2”…  ) 
-| join BehaviorEntities on BehaviorId
 ```
 
 And then you can create a custom detection rule based on the query. For more information on creating custom detection rules, see [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules).
@@ -92,8 +91,7 @@ And then you can create a custom detection rule based on the query. For more inf
 
 ```kusto
 BehaviorInfo
-| where AttackTechniques contains “(T1078)” == “*username*” 
-| join BehaviorEntities 
+| where AttackTechniques has "Valid Accounts (T1078)"
 | order by Timestamp desc 
 | Take 100
 ```
@@ -102,9 +100,9 @@ BehaviorInfo
 
 ```kusto
 BehaviorInfo
-| join BehaviorEntities on BehaviorId
 | where ServiceSource == "Microsoft Cloud App Security"
-| where accountUpn == "*username*"
+| where AccountUpn == "*username*"
+| join BehaviorEntities on BehaviorId
 | project Timestamp, BehaviorId, ActionType, Description, Categories, AttackTechniques, ServiceSource, AccountUpn, AccountObjectId, EntityType, EntityRole, RemoteIP, AccountName, AccountDomain, Application
 ```
 
@@ -114,14 +112,12 @@ BehaviorInfo
 BehaviorEntities
 | where EntityType == "Ip"
 | where RemoteIP == "*suspicious IP*"
-| project BehaviorId
-| join BehaviorInfo on BehaviorId
-| join BehaviorEntities on BehaviorId
 | where ServiceSource == "Microsoft Cloud App Security"
-| project Timestamp, BehaviorId, ActionType, Description, Categories, AttackTechniques, ServiceSource, AccountUpn, AccountObjectId, EntityType, EntityRole, RemoteIP, AccountName, AccountDomain, Application
+| project Timestamp, BehaviorId, ActionType, Categories, ServiceSource, AccountUpn, AccountObjectId, EntityType, EntityRole, RemoteIP, AccountName, AccountDomain
 ```
 
 If you wish for some of the previous detections to appear as alerts, you can create custom detection rules in advanced hunting to trigger alerts when specific behaviors occur with more control over the conditions per query.
+Have feedback to share? Please fill in [the feedback form(https://forms.office.com/r/x0mX5hBkGu).
 
 ## Next steps
 
