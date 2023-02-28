@@ -117,6 +117,7 @@ BehaviorEntities
 ```
 
 If you wish for some of the previous detections to appear as alerts, you can create custom detection rules in advanced hunting to trigger alerts when specific behaviors occur with more control over the conditions per query.
+Have feedback to share? Please fill in [the feedback form(https://forms.office.com/r/x0mX5hBkGu).
 
 ## Next steps
 
