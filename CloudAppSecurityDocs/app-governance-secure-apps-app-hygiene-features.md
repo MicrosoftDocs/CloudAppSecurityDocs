@@ -7,7 +7,7 @@ description: Learn how to secure apps with app hygiene features
 
 # Secure apps with app hygiene features
 
-Have you ever wanted to see the apps that your organization owns but isn't using, but didn't know how to? Or clean up unused or expiring credentials more easily? Azure AD recently released recommendations to help you identify such apps [link to the announcement]. Now, App Governance provides the app hygiene feature suite for all OAuth-enabled apps, including controls and insights on unused apps, unused credentials, and expiring credentials. These features enable automatic control over these apps and provide additional app behavior context to help you determine the risk these apps pose in your environment.
+Have you ever wanted to see the apps that your organization owns but isn't using, but didn't know how to? Or clean up unused or expiring credentials more easily? Azure AD recently released recommendations to help you identify such apps. Now, App Governance provides the app hygiene feature suite which includes controls and insights on unused apps, unused credentials, and expiring credentials. These features enable automatic control over these apps and provide additional app behavior context to help you determine the risk these apps pose in your environment.
 
 Watch this video for a brief explanation of these features:
 
@@ -19,9 +19,15 @@ App governance allows you to sort and filter on app last used date, credential u
 
 :::image type="content" source="media/app-governance/custom-list.png" alt-text="Custom list of apps.":::
 
+Data legend:
+
+- Due to data history or app scope constraints, some apps will show *Over 30 days ago* in the **Last used** or **Credential unused since** column. These apps haven't signed in in the last 30 days, but we don't currently have an exact last sign-in date.
+- Apps which don't have a last sign-in date or credential expiration date available will have *Not available* in the respective column.
+- Apps with *No credentials* in the **Credential unused since** or **Credential expiration** column don’t have any credentials assigned to the app.
+
 ## App hygiene policies
 
-App Governance provides a policy out of the box that alerts on unused apps to automatically alert you on apps that haven’t been used for X days. This policy is integrated with Secure Score to help boost your security posture.
+App Governance provides a policy out of the box that alerts on unused apps to automatically alert you on apps that haven’t been used for a certain number of days. This policy is integrated with Secure Score to help boost your security posture.
 
 You can also customize your own policy using the unused app condition. For example, you could create a policy to automatically disable any app that hasn’t been used in the past 90 days, has high privilege permissions, and can access [priority account information](/microsoft-365/admin/setup/priority-accounts). Like all App Governance alerts, these alerts will be aggregated into incidents in your Microsoft 365 Defender alerts queue and flow to advanced hunting and Sentinel.
 

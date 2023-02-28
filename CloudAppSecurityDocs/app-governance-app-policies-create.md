@@ -13,9 +13,8 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 - Implement the app compliance policies for your organization.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
 
-<br>
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
 To create a new app policy, go to **Microsoft 365 Defender > App governance > Overview page > Policies**. Select the **Create New Policy** option:
@@ -71,7 +70,7 @@ App governance includes these templates to generate alerts for Microsoft 365 cer
 |New uncertified app|Find newly registered apps that don’t have publisher attestation or Microsoft 365 certification. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Certification: No certification (customizable)|
 |||
 
-## Custom
+## Custom policies
 
 Use a custom app policy when you need to do something not already done by one of the built-in templates.
 
@@ -92,14 +91,12 @@ Use a custom app policy when you need to do something not already done by one of
     - Choose specific apps
     - All apps except
 
-1. A pane allows you to select one or more apps.
-    Select **Add**.
+1. If you choose specific apps, or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied, and then select **Add**. Select **Next** when you're satisfied with the list.
 
-1. Select **Next**.
+1. Select **Edit conditions**. Select **Add condition** and choose a condition from the list. Set the desired threshold for your selected condition. Repeat to add more conditions. Select **Save** to save the rule, and when you're finished adding rules, select **Next**.
 
-1. On the **Choose Policy settings and conditions** page, select **Set new conditions for policy**, and then select **Next**.
-
-1. The **Create rule** pane allows you to select conditions for a new rule. Select **Add condition** and select from the list of conditions, and then specify the value of the condition. You can add multiple conditions.
+    > [!NOTE]
+    > Some policy conditions are only applicable to apps that access Graph API permissions. When evaluating apps that access only non-Graph APIs, app governance will skip these policy conditions and proceed to check only other policy conditions.
 
 1. Here are the available conditions for a custom app policy:
 
@@ -132,35 +129,14 @@ Use a custom app policy when you need to do something not already done by one of
     All of the specified conditions must be met for this app policy to generate an alert.
 
 1. When you're done specifying the conditions, select **Save**, and then select **Next**.
-1. On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**.
+1. On the **Define Policy Actions** page, select **Disable app** if you want app governance to disable the app when an alert based on this policy is generated, and then select **Next**. Use caution when applying actions because a policy may affect users and legitimate app use.
 
 1. On the **Define Policy Status** page, select one of these options:
 
-    - **Audit mode**: Policies are evaluated but configured actions won't occur. Audit mode policies appear with the status of **Audit** in the list of policies.
+    - **Audit mode**: Policies are evaluated but configured actions won't occur. Audit mode policies appear with the status of **Audit** in the list of policies. You should use Audit mode for testing a new policy.
     - **Active**: Policies are evaluated and configured actions will occur.
     - **Inactive**: Policies aren't evaluated and configured actions won't occur.
 
-## Create a custom policy
-
-App governance provides some basic templates that make it easy to create useful policies for monitoring apps in your tenant.
-
-1. On the app governance page, select the **Policy** tab.
-1. Select **Create policy**.
-1. Under **Categories** select **Custom**. Under **Templates** select **Custom policy**. Select **Next**.
-1. Enter a name for your policy, type a description, and then in the **Policy severity** drop-down list, select a severity. Select **Next**.
-1. Select **No, I want to customize the policy** and then select **Next**.
-1. Choose whether you want this policy to apply to all apps in your tenant, specific apps, or all apps except the ones you choose. If you choose specific apps, or all apps except for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied, and then select **Add**. Select **Next** when you're satisfied with the list.
-1. Select **Set new conditions for the policy** and then select **Edit conditions**. Select **Add condition** and choose a condition from the list and then select the condition to apply. Repeat to add more conditions. Select **Save** to save the rule, and when you're finished adding rules, select **Next**.
-    >[!Note]
-    > Some policy conditions are only applicable to apps that access Graph API permissions. When evaluating apps that access only non-Graph APIs, app governance will skip these policy conditions and proceed to check only other policy conditions.
-    >
-1. By default, this policy will trigger alerts when the conditions are met. You can choose to take action when the policy triggers such as **Disable app**. Use caution when applying actions because a policy may affect users and legitimate app use. Select **Next**.
-1. Choose the policy status:
-    - **Audit** - policy evaluation is active but policy action is disabled.
-    - **Active** - policy evaluation and action are active.
-    - **Inactive** - policy evaluation and action are disabled.
-
-    You should use Audit mode for testing a new policy. Select **Next**.
 1. Carefully review all parameters of your custom policy. Select **Submit** when you're satisfied. You can also go back and change settings by selecting **Edit** beneath any of the settings.
 
 ## Test and monitor your new app policy

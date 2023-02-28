@@ -32,8 +32,17 @@ You will see a list of apps and this information:
 - **Publisher**: Publisher of the app and their verification status
 - **Last modified**: Date and time when registration information was last updated on Azure AD
 - **Last used**: The last time the app signed in
+
+  - Due to data history or app scope constraints, some apps will show *Over 30 days ago*. These apps haven't signed in in the last 30 days, but we don’t currently have an exact last sign-in date.
+  - Apps which don't have a last sign in date available will have *Not available* in this column
 - **Credential unused since**: The last time the app signed in using the credential it hasn’t used the longest
+
+  - Due to data history or app scope constraints, some apps will show *Over 30 days ago*. These apps haven't signed in in the last 30 days, but we don’t currently have an exact last sign-in date.
+  - Apps which don’t have a last sign-in date available will have *Not available* in this column
+  - Apps with *No credentials* don’t have any credentials assigned to the app.
 - **Credential expiration**: Earliest upcoming expiration date for all app credentials
+
+  - Apps with *No credentials* don’t have any credentials assigned to the app.
 - **Added on**: Shows the date and time when the app was registered to Azure AD and assigned a service principal
 - **Permission usage**: Shows whether the app has any unused Graph API permissions in the last 90 days
 - **Data usage**: Total data downloaded or uploaded by the app in the last 30 days
