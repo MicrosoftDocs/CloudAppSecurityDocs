@@ -83,7 +83,6 @@ BehaviorInfo
 BehaviorEntities
 | where ActionType == "MassDownload" 
 | where EntityType == “User” and AccountName in (“username1”, “username2”…  ) 
-| join BehaviorEntities on BehaviorId
 ```
 
 And then you can create a custom detection rule based on the query. For more information on creating custom detection rules, see [Create and manage custom detection rules in Microsoft 365 Defender](/microsoft-365/security/defender/custom-detection-rules).
