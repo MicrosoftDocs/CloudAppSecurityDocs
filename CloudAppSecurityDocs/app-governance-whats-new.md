@@ -14,6 +14,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
+## App governance February 2023 release
+
+- **Enhanced alert investigation experience:** App governance now provides additional information admins need to investigate and remediate incidents and alerts. This enhancement includes more  details under **What happened** and **Recommended actions** in the alert story on Microsoft 365 Defender alert pages. This information will be available for all app governance alerts, including alerts triggered by threat detection rules, predefined policies, and user-defined policies. [Learn more about the enhanced alert experience.](/defender-cloud-apps/app-governance-detect-remediate-detect-threats)
+   
 ## App governance October 2022 release
 
 - **Added insights and remediation for sensitive content**: App governance provides insights and automated remediation capabilities through predefined and custom policies for apps that access content with Microsoft Purview Information Protection labels. Enterprise admins now have visibility into the workloads that these apps access and whether they access sensitive data in these workloads. With predefined and custom policies, admins are alerted about apps that have attempted to access sensitive data. Moreover, app governance can automatically deactivate noncompliant apps.
@@ -33,3 +37,4 @@ For more information on what's new with other Microsoft Defender security produc
 - **Predefined policies GA**: App governance released a set of out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to. [Learn more here](app-governance-predefined-policies.md)
 - **Teams workload GA**: App governance added insights, policy capabilities, and governance for the Teams workload. You can see data usage, permissions usage, and create policies on Teams permissions and usage.
 - **App governance alerts unified in the M365D alerts and incidents queues**: The app governance alerts queue has been unified with the Microsoft 365 Defender alerts experience and are aggregated into incidents.
+
