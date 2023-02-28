@@ -33,7 +33,7 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 
 - [Remove unneeded custom policies](control-cloud-apps-with-policies.md)
 - [Review new policy templates](control-cloud-apps-with-policies.md#create-a-policy)
-- Enhance policy strategy to determine what can be a [saved query](activity-filters-queries.md#activity-queries) versus what requires an [alert](managing-alerts.md)
+- Enhance policy strategy to determine what can be a [saved query](activity-filters-queries.md#activity-queries) versus what requires an [alert](/microsoft-365/security/defender/investigate-alerts)
 - Ensure [labeling strategy](azip-integration.md) is in line with current Security and Compliance configuration
 
 ## Discovery

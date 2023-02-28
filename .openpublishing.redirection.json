@@ -176,6 +176,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "CloudAppSecurityDocs/monitor-alerts.md",
+            "redirect_url": "/microsoft-365/security/defender/investigate-alerts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/managing-alerts.md",
+            "redirect_url": "/microsoft-365/security/defender/investigate-alerts",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "CloudAppSecurityDocs/what-is-cloud-app-security.md",
             "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
             "redirect_document_id": true

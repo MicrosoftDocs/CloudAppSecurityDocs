@@ -201,7 +201,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 
 * [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md)
 * [Working with IP ranges and tags](ip-tags.md)
-* [Monitor alerts in Defender for Cloud Apps](monitor-alerts.md)
+
 
 ---
 
