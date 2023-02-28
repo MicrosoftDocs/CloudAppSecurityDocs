@@ -112,10 +112,8 @@ BehaviorInfo
 BehaviorEntities
 | where EntityType == "Ip"
 | where RemoteIP == "*suspicious IP*"
-| join BehaviorInfo on BehaviorId
-| join BehaviorEntities on BehaviorId
 | where ServiceSource == "Microsoft Cloud App Security"
-| project Timestamp, BehaviorId, ActionType, Description, Categories, AttackTechniques, ServiceSource, AccountUpn, AccountObjectId, EntityType, EntityRole, RemoteIP, AccountName, AccountDomain, Application
+| project Timestamp, BehaviorId, ActionType, Categories, ServiceSource, AccountUpn, AccountObjectId, EntityType, EntityRole, RemoteIP, AccountName, AccountDomain
 ```
 
 If you wish for some of the previous detections to appear as alerts, you can create custom detection rules in advanced hunting to trigger alerts when specific behaviors occur with more control over the conditions per query.
