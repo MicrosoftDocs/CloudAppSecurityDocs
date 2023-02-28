@@ -27,3 +27,4 @@ App governance alerts are now listed with all other Microsoft 365 Defender alert
 
 [Monitor and respond to apps with unusual data usage](app-governance-monitor-apps-unusual-data-usage.md)
 
+
