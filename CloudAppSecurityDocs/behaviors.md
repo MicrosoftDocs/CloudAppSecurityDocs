@@ -101,7 +101,8 @@ BehaviorInfo
 ```kusto
 BehaviorInfo
 | where ServiceSource == "Microsoft Cloud App Security"
-| where accountUpn == "*username*"
+| where AccountUpn == "*username*"
+| join BehaviorEntities on BehaviorId
 | project Timestamp, BehaviorId, ActionType, Description, Categories, AttackTechniques, ServiceSource, AccountUpn, AccountObjectId, EntityType, EntityRole, RemoteIP, AccountName, AccountDomain, Application
 ```
 
