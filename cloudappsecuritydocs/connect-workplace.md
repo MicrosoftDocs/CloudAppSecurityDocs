@@ -23,9 +23,8 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 - You must be signed-in as a system admin to Workplace by Meta. 
    
-   [!NOTE]
-   
-   - A Workplace account can be connected to a single instance of Defender for Cloud Apps. Please make sure that your Workplace account is not connected to any other Defender for Cloud Apps instance.
+   > [!NOTE]
+   > - A Workplace account can be connected to a single instance of Defender for Cloud Apps. Please make sure that your Workplace account is not connected to any other Defender for Cloud Apps instance.
       
 ## How to connect Workplace to Defender for Cloud Apps
 
@@ -34,10 +33,10 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. In the pop-up, give the connector a descriptive name, and press **Connect Workplace by Meta**.
    ![Connect-Workplace](media/protect-servicenow/connect-workplace.jpg)
 
-1. 1. In the next screen, click **Connect Workplace by Meta**:
+1. In the next screen, click **Connect Workplace by Meta**:
    ![Connect-Workplace-2](media/protect-servicenow/connect-workplace-2.jpg)
 
-1. 1. You'll be redirected to Workplace by Meta page. 
+1. You'll be redirected to Workplace by Meta page. 
    [!NOTE]
    - Make sure you are logged into Workplace as System admin.
       
