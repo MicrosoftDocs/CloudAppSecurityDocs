@@ -80,7 +80,7 @@ BehaviorInfo
 **Example scenario 1**: You want to be alerted when a mass download is performed by a specific user or a list of users that are prone to be compromised or to internal risk. To do so, you can create the following query in Microsoft 365 Defender Advanced Hunting:
 
 ```kusto
- BehaviorInfo
+BehaviorEntities
 | where ActionType == "MassDownload" 
 | where EntityType == “User” and AccountName in (“username1”, “username2”…  ) 
 | join BehaviorEntities on BehaviorId
