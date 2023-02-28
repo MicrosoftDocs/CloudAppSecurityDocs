@@ -112,7 +112,6 @@ BehaviorInfo
 BehaviorEntities
 | where EntityType == "Ip"
 | where RemoteIP == "*suspicious IP*"
-| project BehaviorId
 | join BehaviorInfo on BehaviorId
 | join BehaviorEntities on BehaviorId
 | where ServiceSource == "Microsoft Cloud App Security"
