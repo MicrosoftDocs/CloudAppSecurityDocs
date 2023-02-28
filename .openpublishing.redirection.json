@@ -171,6 +171,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "CloudAppSecurityDocs/app-governance-detect-remediate-detect-threats.md",
+            "redirect_url": "/defender-cloud-apps/app-governance-manage-alerts",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "CloudAppSecurityDocs/what-is-cloud-app-security.md",
             "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
             "redirect_document_id": true

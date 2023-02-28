@@ -1,7 +1,7 @@
 ---
 title: Connect DocuSign
 description: This article describes how to connect Microsoft Defender for Cloud Apps to your existing DocuSign environment via the App Connector APIs. 
-ms.date: 01/29/2023
+ms.date: 02/23/2023
 ms.topic: how-to
 ---
 
