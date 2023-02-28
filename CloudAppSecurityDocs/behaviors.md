@@ -92,7 +92,6 @@ And then you can create a custom detection rule based on the query. For more inf
 ```kusto
 BehaviorInfo
 | where AttackTechniques has "Valid Accounts (T1078)"
-| join BehaviorEntities 
 | order by Timestamp desc 
 | Take 100
 ```
