@@ -286,6 +286,8 @@ items:
       href: ./connect-webex.md
     - name: Connect Workday
       href: ./connect-workday.md
+    - name: Connect Workplace
+      href: connect-workplace.md
     - name: Connect Zendesk
       href: ./connect-zendesk.md
   - name: Conditional Access App Control
