@@ -4,6 +4,7 @@ description: This reference article provides information about the types of file
 ms.date: 02/13/2023
 ms.topic: how-to
 ---
+
 # File filters in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -148,6 +149,7 @@ You can also set the policy to run on specific files by setting the **Apply to**
 <!--
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
+> If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
 -->
 
 ## Authorizing files
@@ -174,7 +176,7 @@ After Defender for Cloud Apps has identified files as posing a malware or DLP ri
 You can view more information about each file, by selecting the file itself in the file log. Selecting it opens the **File drawer** that provides the following additional actions you can take on the file:
 
 - **URL** - Takes you to the file location.
-- **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys.
+- **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys when they are available.
 - **Owner** - View the user page for the owner of this file.
 - **Matched policies** - See a list of policies the file matched.
 - **Sensitivity labels** - View the list of sensitivity labels from Microsoft Purview Information Protection found in this file. You can then filter by all files matching this label.
@@ -191,3 +193,4 @@ For a list of governance actions available, see [File governance actions](govern
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
