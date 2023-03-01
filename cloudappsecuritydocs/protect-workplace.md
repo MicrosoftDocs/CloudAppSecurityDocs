@@ -23,7 +23,6 @@ Connecting Workplace by Meta to Defender for Cloud Apps gives you improved insig
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
-- 
 ## Control Workplace by Meta with policies
 
 
