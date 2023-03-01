@@ -200,6 +200,8 @@ items:
       items:
         - name: Secure apps accessing non-Graph APIs
           href: app-governance-secure-apps-access-non-graph-api.md
+        - name: Secure apps with app hygiene features
+          href: app-governance-secure-apps-app-hygiene-features.md
   - name: Cloud Discovery
     items:
     - name: Set up

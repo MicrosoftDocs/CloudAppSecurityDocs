@@ -31,7 +31,7 @@ You can customize the predefined policy by:
 - Selecting **Disable app** as the policy action to automatically deactivate apps that trigger alerts.
 - Modifying the policy scope to apply the policy to specific apps or exclude specific apps.
 
-For even more customization options, create a custom policy using the condition **Sensitivity labels accessed** in combination with [other policy conditions](app-governance-app-policies-create.md#custom).
+For even more customization options, create a custom policy using the condition **Sensitivity labels accessed** in combination with [other policy conditions](app-governance-app-policies-create.md#custom-policies).
 
 ## Next step
 

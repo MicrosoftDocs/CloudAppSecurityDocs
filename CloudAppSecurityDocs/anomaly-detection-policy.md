@@ -174,9 +174,7 @@ To affect the anomaly detection engine to suppress or surface alerts according t
     | **User** | Common activities based on previous activity of the specific user. For example, suppressing activities from a location that is commonly used by the user. |
 
 > [!NOTE]
-> By default, legacy sign-in protocols, such as those that don't use multi-factor authentication (for example, WS-Trust), are not monitored by the impossible travel policy. If your organization uses legacy protocols, to avoid missing relevant activities, edit the policy and under **Advanced configuration**, set **Analyze sign in activities** to **All sign ins**.
->
-> Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts don't apply on failed logins.
+> Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts don't apply on failed logins and non-interactive logins.
 
 ## Scope anomaly detection policies
 
