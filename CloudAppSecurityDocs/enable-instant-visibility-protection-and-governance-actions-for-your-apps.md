@@ -4,6 +4,7 @@ description: This article describes the process for connecting apps with API con
 ms.date: 02/16/2023
 ms.topic: how-to
 ---
+
 # Connect apps to get visibility and control with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -71,6 +72,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
+|Workplace by Meta|✔||✔|✔|✔|✔|
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
 
 ### User, app governance, and security configuration visibility
@@ -98,6 +100,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
+|Workplace by Meta|||||
 | Zendesk  |  |  |  |  |
 
 ### Information protection
@@ -124,6 +127,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | | | | | |
 | Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
+|Workplace by Meta||||||
 | Zendesk  |  |  |  |  |  |
 
 ## Prerequisites
@@ -171,3 +175,4 @@ To re-enable connected apps:
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
