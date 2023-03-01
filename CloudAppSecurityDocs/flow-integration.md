@@ -22,7 +22,7 @@ The [Defender for Cloud Apps connector](/connectors/cloudappsecurity/) in Power 
 
 ## Create Power Automate playbooks for Defender for Cloud Apps
 
-1. [Create an API token](api-authentication.md) in Defender for Cloud Apps.
+1. [Create an API token](api-tokens-legacy.md) in Defender for Cloud Apps.
 
 1. Navigate to the [Power Automate portal](https://flow.microsoft.com/), select **My flows**, select **New flow**, and in the drop-down, under **Build your own from blank**, select **Automated cloud flow**.
 

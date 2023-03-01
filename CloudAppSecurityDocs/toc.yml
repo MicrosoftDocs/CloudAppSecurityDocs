@@ -106,6 +106,8 @@ items:
       href: protect-servicenow.md
     - name: Protect Slack
       href: protect-slack.md
+    - name: Protect Workplace (Preview)
+      href: protect-workplace.md
     - name: Protect Smartsheet
       href: protect-smartsheet.md
     - name: Protect Webex
@@ -284,6 +286,8 @@ items:
       href: ./connect-webex.md
     - name: Connect Workday
       href: ./connect-workday.md
+    - name: Connect Workplace (Preview)
+      href: connect-workplace.md
     - name: Connect Zendesk
       href: ./connect-zendesk.md
   - name: Conditional Access App Control
