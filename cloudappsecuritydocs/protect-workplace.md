@@ -23,12 +23,12 @@ Connecting Workplace by Meta to Defender for Cloud Apps gives you improved insig
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
-## Control Workplace by Meta with policies
 
+## Control Workplace by Meta with policies
 
 | Type | Name |
 | ---- | ---- |
-| Built-in  anomaly detection policy | [Activity from   anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)   [Activity from   infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)  [Activity from   suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)   [Impossible travel](anomaly-detection-policy.md#impossible-travel)   [Activity   performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires Azure Active Directory as IdP)   [Multiple failed   login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)   [Unusual   administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)   [Unusual impersonated activities](anomaly-detection-policy.md#unusual-activities-by-user) |
+| Built-in  anomaly detection policy | [Activity from   anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)   [Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)  [Activity from   suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)   [Impossible travel](anomaly-detection-policy.md#impossible-travel)   [Activity   performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires Azure Active Directory as IdP)   [Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)   [Unusual   administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)   [Unusual impersonated activities](anomaly-detection-policy.md#unusual-activities-by-user) |
 | Activity  policy                   | Built a customized policy by the Workplace by Meta activities|
 
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
@@ -36,7 +36,6 @@ For more information about creating policies, see [Create a policy](control-clou
 ## Automate governance controls
 
 In addition to monitoring for potential threats, you can apply and automate the following Workplace governance actions to remediate detected threats:
-
 
 | Type | Action |
 | ---- | ---- |
@@ -52,5 +51,3 @@ Review our best practices for [securing and collaborating with external users](b
 
 > [!div class="nextstepaction"]
 > [Connect Workplace by Meta to Microsoft Defender for Cloud Ap](./connect-workplace.md)ps (Preview)
-
-
