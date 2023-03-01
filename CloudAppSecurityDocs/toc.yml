@@ -286,7 +286,7 @@ items:
       href: ./connect-webex.md
     - name: Connect Workday
       href: ./connect-workday.md
-    - name: Connect Workplace
+    - name: Connect Workplace (Preview)
       href: connect-workplace.md
     - name: Connect Zendesk
       href: ./connect-zendesk.md
