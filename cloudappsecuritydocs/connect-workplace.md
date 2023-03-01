@@ -1,15 +1,7 @@
 ---
-# Required metadata 
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-title: 		 Connect Workplace      # Add a title for the browser tab
-description: This article provides information about how to connect your Workplace app to Defender for Cloud Apps using the API connector for visibility and control over use. # Add a meaningful description for search results
-author:      NagarajVenkatesh # GitHub alias
-ms.author:   naven # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    how-to# Add the ms.topic value
+title: 		 Connect Workplace 
+description: This article provides information about how to connect your Workplace app to Defender for Cloud Apps using the API connector for visibility and control over use. 
+ms.topic:    how-to
 ms.date:     02/28/2023
 ---
 
@@ -30,19 +22,20 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
 1. In the **App connectors** page, select the plus button followed by **Workplace by Meta**.
-1. In the pop-up, give the connector a descriptive name, and press **Connect Workplace by Meta**.
-   ![Connect-Workplace](media/protect-servicenow/connect-workplace.jpg)
+1. In the pop-up, give the connector a descriptive name, and select **Connect Workplace by Meta**.
+   ![Give connnector a name.](media/protect-servicenow/connect-workplace.jpg)
 
-1. In the next screen, click **Connect Workplace by Meta**:
-   ![Connect-Workplace-2](media/protect-servicenow/connect-workplace-2.jpg)
+1. In the next screen, select **Connect Workplace by Meta**:
+   ![Connect to Workplace.](media/protect-servicenow/connect-workplace-2.jpg)
 
 1. You'll be redirected to Workplace by Meta page. 
-   [!NOTE]
-   - Make sure you are logged into Workplace as System admin.
+   
+   >[!NOTE]
+   >Make sure you are logged into Workplace as System admin.
       
-1. On Workplace authorization page, make sure to choose the correct organization from the dropdown.
+1. On the Workplace authorization page, make sure to choose the correct organization from the dropdown.
     
-1. In the app consent page, make sure to choose **All groups** and then click **Add to Workplace.**
+1. In the app consent page, make sure to choose **All groups** and then select **Add to Workplace.**
    
    > [!NOTE]
    > - The first connection can take up to 4 hours to get all users and their activities.
