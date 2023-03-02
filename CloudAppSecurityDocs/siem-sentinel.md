@@ -43,9 +43,9 @@ To integrate with Microsoft Sentinel:
 
 ### Integrating with Microsoft Sentinel
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, select **Security extensions**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-1. On the **SIEM agents** tab, select add (**+**), and then choose **Microsoft Sentinel**.
+1. Under **System**, choose **SIEM agents**. Select **Add SIEM agent**, and then choose **Sentinel**.
 
     ![Screenshot showing Add SIEM integration menu.](media/siem0.png)
 

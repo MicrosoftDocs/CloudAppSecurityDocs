@@ -388,8 +388,6 @@ items:
       href: mde-govern.md
     - name: Microsoft Defender for Identity integration
       href: mdi-integration.md
-    - name: Azure AD Identity Protection integration
-      href: aadip-integration.md
     - name: Microsoft Information Protection integration
       href: azip-integration.md
     - name: Microsoft Sentinel integration

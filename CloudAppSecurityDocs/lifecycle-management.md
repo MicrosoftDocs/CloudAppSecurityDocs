@@ -52,8 +52,6 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 - Review members allowed to view [private activities](activity-privacy.md)
 - Verify integrations are enabled:
   - [Microsoft Purview Information Protection](tutorial-dlp.md#phase-2-classify-sensitive-information)
-  - [Microsoft Defender for Identity](mdi-integration.md)
-  - [Azure Active Directory Information Protection](aadip-integration.md)
   - [Microsoft Defender for Endpoint](mde-integration.md)
 
 ## Next steps

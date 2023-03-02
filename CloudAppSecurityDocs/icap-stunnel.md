@@ -228,9 +228,9 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 ## STEP 3:  Connect to Defender for Cloud Apps
 
-1. In Defender for Cloud Apps, under **Settings** select **Security extensions** and select the **External DLP** tab.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Information protection**, select **External DLP**.
 
-2. Click on the plus to add a new connection.
+2. Select **Add connector** to add a new connection.
 
 3. In the **Add  new external DLP** wizard, provide a **Connection name** (for example My Forcepoint connector) that will be used to identify the connector.
 
