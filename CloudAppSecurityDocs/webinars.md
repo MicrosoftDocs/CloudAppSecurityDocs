@@ -4,7 +4,7 @@ description: Displays a listing of past webinars, including a description.
 ms.date: 11/09/2021
 ms.topic: conceptual
 ---
-# Microsoft Defender for Cloud Apps webinars
+# Microsoft Defender for Cloud Apps webinars 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
