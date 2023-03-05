@@ -147,8 +147,6 @@ Once controls are applied, you can monitor app usage patterns by the applied con
 1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Cloud Discovery** and then go to the **Discovered apps** tab. Use the [filters](discovered-app-queries.md) to find the relevant monitored app.
 1. Select the app's name to view applied app controls on the app's overview page.
 
-    ![Screenshot showing how to monitor applied controls.](media/mde-educate-applied-controls-overview.png)
-
 ## Next steps
 
 > [!div class="nextstepaction"]
