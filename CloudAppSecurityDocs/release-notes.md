@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 02/19/2023
+ms.date: 03/05/2023
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -26,6 +26,17 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## Defender for Cloud Apps release 248
+
+March 5, 2023
+
+- **Faster load time for protected sessions**  
+We've made significant improvements to the loading time of web pages protected by session policies. End users that are scoped to session policies, either from a desktop or mobile device, can now enjoy a faster and more seamless browsing experience.
+We've witnessed an improvement of between 10% and 40%, depending on the application, the network, and the complexity of the web page.
+
+- **Support for Tokyo ServiceNow version**  
+The Defender for Cloud Apps connector for ServiceNow now supports the ServiceNow Tokyo version. With this update, you can protect the latest versions of ServiceNow using Defender for Cloud Apps. For more information, see [Connect ServiceNow to Microsoft Defender for Cloud Apps](connect-servicenow.md).
 
 ## Defender for Cloud Apps release 246 and 247
 
