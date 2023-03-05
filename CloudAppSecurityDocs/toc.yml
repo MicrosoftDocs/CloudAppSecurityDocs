@@ -108,6 +108,8 @@ items:
       href: protect-servicenow.md
     - name: Protect Slack
       href: protect-slack.md
+    - name: Protect Workplace (Preview)
+      href: protect-workplace.md
     - name: Protect Smartsheet
       href: protect-smartsheet.md
     - name: Protect Webex
@@ -120,6 +122,8 @@ items:
     items:
     - name: Security baseline
       href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
+    - name: Deploying and monitoring for Zero Trust
+      href: zero-trust.md
 - name: How-to guides
   items:
   - name: Basic set up
@@ -198,6 +202,8 @@ items:
       items:
         - name: Secure apps accessing non-Graph APIs
           href: app-governance-secure-apps-access-non-graph-api.md
+        - name: Secure apps with app hygiene features
+          href: app-governance-secure-apps-app-hygiene-features.md
   - name: Cloud Discovery
     items:
     - name: Set up
@@ -250,6 +256,8 @@ items:
       href: ./connect-azure.md
     - name: Connect Box
       href: ./connect-box.md
+    - name: Connect Citrix ShareFile
+      href: ./connect-citrix-sharefile.md
     - name: Connect DocuSign
       href: ./connect-docusign.md
     - name: Connect Dropbox
@@ -282,6 +290,8 @@ items:
       href: ./connect-webex.md
     - name: Connect Workday
       href: ./connect-workday.md
+    - name: Connect Workplace (Preview)
+      href: connect-workplace.md
     - name: Connect Zendesk
       href: ./connect-zendesk.md
   - name: Conditional Access App Control
@@ -338,7 +348,6 @@ items:
     - name: Investigate anomaly detection alerts
       href: investigate-anomaly-alerts.md
   - name: Control
-    href: control.md
     items:
     - name: Control cloud apps with policies
       href: control-cloud-apps-with-policies.md

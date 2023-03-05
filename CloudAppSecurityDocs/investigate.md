@@ -1,7 +1,7 @@
 ---
 title: Investigate cloud app risks and suspicious activity 
 description: This article provides an outline of the process for investigating alerts, issues, and suspicious activities by using Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 02/15/2023
 ms.topic: how-to
 ---
 # Investigate cloud app risks and suspicious activity
@@ -144,6 +144,6 @@ Now that you have the policy in place, you're surprised to see that you get an a
 
 ## Next steps
 
-To learn how to control your organization's cloud app, see [Control](control.md).
+- [Governing connected apps](governance-actions.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].

@@ -1,7 +1,7 @@
 ---
 title: Anomaly detection policies
 description: This article provides a description of Anomaly detection policies and provides reference information about the building blocks of an anomaly detection policy.
-ms.date: 01/29/2023
+ms.date: 02/22/2023
 ms.topic: how-to
 ---
 
@@ -52,8 +52,8 @@ The following anomaly detection policies are available:
 
 ### Activity from infrequent country
 
-* This detection considers past activity locations to determine new and infrequent locations. The anomaly detection engine stores information about previous locations used by users in the organization. An alert is triggered when an activity occurs from a location that wasn't recently or never visited by any user in the organization.
-
+* This detection considers past activity locations to determine new and infrequent locations. The anomaly detection engine stores information about previous locations used by the user. An alert is triggered when an activity occurs from a location that wasn't recently or never visited by the user. To reduce false positive alerts, the detection suppresses connections that are characterized by common preferences to the user.
+   
 ### Malware detection
 
 * This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to our heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
@@ -173,10 +173,9 @@ To affect the anomaly detection engine to suppress or surface alerts according t
     | **Tenant** | Common activities based on previous activity in the tenant. For example, suppressing activities from an ISP previously alerted on in your organization. |
     | **User** | Common activities based on previous activity of the specific user. For example, suppressing activities from a location that is commonly used by the user. |
 
+
 > [!NOTE]
-> By default, legacy sign-in protocols, such as those that don't use multi-factor authentication (for example, WS-Trust), are not monitored by the impossible travel policy. If your organization uses legacy protocols, to avoid missing relevant activities, edit the policy and under **Advanced configuration**, set **Analyze sign in activities** to **All sign ins**.
->
-> Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts don't apply on failed logins.
+> Impossible travel, activity from infrequent countries/regions, activity from anonymous IP addresses, and activity from suspicious IP addresses alerts don't apply on failed logins and non-interactive logins.
 
 ## Scope anomaly detection policies
 
@@ -219,3 +218,5 @@ You can triage the various alerts triggered by the new anomaly detection policie
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
+

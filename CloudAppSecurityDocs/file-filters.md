@@ -1,9 +1,10 @@
 ---
 title: File filters 
 description: This reference article provides information about the types of files and file filters used by Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 02/13/2023
 ms.topic: how-to
 ---
+
 # File filters in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -46,9 +47,9 @@ The Defender for Cloud Apps built in DLP engines perform content inspection by e
 Below is a list of the file filters that can be applied. To provide you with a powerful tool for policy creation, most filters support multiple values and a *NOT*.
 
 > [!NOTE]
-> When using the file policy filters, **Contains**  will search only for **full words** – separated by commas, dots, or spaces to search.
+> When using the file policy filters, **Contains**  will search only for **full words** – separated by commas, dots, hyphens or spaces to search.
 >
-> - Spaces between words function like *OR*. For example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both *malware-virus.exe* and *virus.exe*.
+> - Spaces or hyphens between words function like *OR*. For example, if you search for **malware** **virus** it will find all files with either malware or virus in the name, so it will find both *malware-virus.exe* and *virus.exe*.
 > - If you want to search for a string, enclose the words in quotation marks. This functions like *AND*. For example, if you search for **"malware"** **"virus"**, it will find *virus_malware_file.exe* but it will not find *malwarevirusfile.exe* and it will not find *malware.exe*. However, it will search for the exact string. If you search for **"malware virus"**, it will not find **"virus"** or **"virus_malware"**.
 >
 > **Equals** will search only for the complete string. For example, if you search for **malware.exe** it will find *malware.exe* but not *malware.exe.txt*.
@@ -148,6 +149,7 @@ You can also set the policy to run on specific files by setting the **Apply to**
 <!--
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
+> If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
 -->
 
 ## Authorizing files
@@ -174,7 +176,7 @@ After Defender for Cloud Apps has identified files as posing a malware or DLP ri
 You can view more information about each file, by selecting the file itself in the file log. Selecting it opens the **File drawer** that provides the following additional actions you can take on the file:
 
 - **URL** - Takes you to the file location.
-- **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys.
+- **File identifiers** - Opens a pop-up with raw data details about the file including file ID and encryption keys when they are available.
 - **Owner** - View the user page for the owner of this file.
 - **Matched policies** - See a list of policies the file matched.
 - **Sensitivity labels** - View the list of sensitivity labels from Microsoft Purview Information Protection found in this file. You can then filter by all files matching this label.
@@ -191,3 +193,4 @@ For a list of governance actions available, see [File governance actions](govern
 > [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
