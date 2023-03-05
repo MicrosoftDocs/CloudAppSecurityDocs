@@ -15,6 +15,11 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
 
 ## Prerequisites
 
+Before starting the onboarding process, you must do the following:
+
+- [Add admins to the app onboarding/maintenance list](#add-admins-to-the-app-onboardingmaintenance-list)
+- [Check for necessary licenses](#check-for-necessary-licenses)
+
 ### Add admins to the app onboarding/maintenance list
 
 1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4.](media/settings-icon.png "settings icon 4") and select **Settings**.
@@ -37,6 +42,11 @@ For a list of apps that are featured by Defender for Cloud Apps to work out-of-t
    |Azure AD|SAML 2.0 or OpenID Connect|
 
 ## To deploy any app
+
+To onboard an application to be controlled by Defender for Cloud Apps Conditional Access Control, you will need to:
+
+- [Configure Azure AD to work with Defender for Cloud Apps](#configure-azure-ad-to-work-with-defender-for-cloud-apps)
+- [Manually add an unidentified app](#how-to-manually-add-an-unidentified-app)
 
 Follow the steps below to configure any app to be controlled by Defender for Cloud Apps Conditional Access App Control.
 > [!NOTE]
