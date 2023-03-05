@@ -87,7 +87,7 @@ After enabling Microsoft Purview Information Protection, you'll be able to see f
 
 By default, Defender for Cloud Apps scans sensitivity labels that were defined in your organization as well as external ones defined by other organizations.
 
-To ignore sensitivity labels set external to your organization, in the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go to **Settings** and then **Microsoft Purview Information Protection**. Select **Only scan files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings from this tenant**.
+To ignore sensitivity labels set external to your organization, go to the Microsoft 365 Defender portal and select **Settings**. Then choose **Cloud Apps**.  Under **Information Protection**, select **Microsoft Purview Information Protection**. Then select **Only scan files for sensitivity labels from Microsoft Purview Information Protection and content inspection warnings from this tenant**.
 
 ![Ignore labels.](media/azip-ignore.png)
 

@@ -17,7 +17,7 @@ Defender for Cloud Apps comes preconfigured with built-in IP ranges for popular 
 > - To use these built-in tags as part of a search, refer to their ID in the Defender for Cloud Apps API documentation.
 > - You can add IP ranges in bulk by creating a script using the [IP address ranges API](api-data-enrichment.md).
 > - You cannot add IP ranges with overlapping IP addresses.
-> - To view the API documentation, go to the Defender for Cloud Apps portal menu bar, select the question mark, and then select [API documentation](api-introduction.md).
+> - To view the API documentation, go to [API documentation](api-introduction.md).
 
 Built-in IP address tags and custom IP tags are considered hierarchically. Custom IP tags take precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence but there's a custom IP tag that identifies it as **Corporate**, the custom category and tags take precedence.
 

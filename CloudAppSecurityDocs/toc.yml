@@ -540,8 +540,8 @@ items:
     href: https://aka.ms/M365EnterprisePlans
   - name: Support and troubleshooting
     href: support-and-ts.md
-  - name: Defender for Cloud Apps portal
-    href: https://portal.cloudappsecurity.com
+  - name: Microsoft 365 Defender portal
+    href: https://security.microsoft.com
   - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-apps-defender
 - name: Classic Defender for Cloud Apps portal
@@ -685,6 +685,8 @@ items:
         href: classic-connect-webex.md
       - name: Connect Workday
         href: classic-connect-workday.md
+      - name: Connect Workplace
+        href: classic-connect-workplace.md
       - name: Connect Zendesk
         href: classic-connect-zendesk.md
     - name: Conditional Access App Control
@@ -819,6 +821,8 @@ items:
       items:
       - name: Troubleshooting access and session controls
         href: classic-troubleshooting-proxy.md
+      - name: Troubleshooting SIEM integration
+        href: classic-troubleshooting-siem.md
 - name: Microsoft 365 Defender Docs
   items:
   - name: Microsoft 365 Defender

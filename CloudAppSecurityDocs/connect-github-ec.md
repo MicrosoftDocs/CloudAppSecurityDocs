@@ -30,7 +30,7 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 1. Verify [your organization's domains](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/verifying-your-organizations-domain).
 
     > [!NOTE]
-    > Make sure to verify each of the managed domains listed in your Defender for Cloud Apps portal. To view your managed domains, in Defender for Cloud Apps, browse to **Settings** > **Organization details** > **Managed domains**.
+    > Make sure to verify each of the managed domains listed in your Defender for Cloud Apps settings. To view your managed domains, go to the Microsoft 365 Defender portal, and select **Settings**. Then choose **Cloud Apps**. Under **System**, choose **Organizational details**, and then go to the **Managed domains** section.
 
 ### Configure GitHub Enterprise Cloud
 
