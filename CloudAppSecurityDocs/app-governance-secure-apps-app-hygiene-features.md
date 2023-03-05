@@ -27,7 +27,7 @@ Data legend:
 
 ## App hygiene policies
 
-App Governance provides policies out of the box that alert on unused apps, unused credentials, and expiring credentials to automatically alert you on areas to improve app hygiene. 
+App Governance provides out-of-the-box policies that alert on unused apps, unused credentials, and expiring credentials which automatically alert you on areas to improve app hygiene. 
 
 You can also customize your own policy using the unused app condition. For example, you could create a policy to automatically disable any app that hasn’t been used in the past 90 days, has high privilege permissions, and can access [priority account information](/microsoft-365/admin/setup/priority-accounts). Like all App Governance alerts, these alerts will be aggregated into incidents in your Microsoft 365 Defender alerts queue and flow to advanced hunting and Sentinel.
 
