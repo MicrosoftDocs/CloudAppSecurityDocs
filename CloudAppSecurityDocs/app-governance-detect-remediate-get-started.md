@@ -1,6 +1,6 @@
 ---
 title: Get started with app threat detection and remediation
-ms.date: 01/29/2023
+ms.date: 02/28/2023
 ms.topic: overview
 description: Get started with app threat detection and remediation.
 ---

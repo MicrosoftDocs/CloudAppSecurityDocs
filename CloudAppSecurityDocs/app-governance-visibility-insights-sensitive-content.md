@@ -1,6 +1,6 @@
 ---
 title: Get insights on and regulate access to sensitive content 
-ms.date: 01/29/2023
+ms.date: 02/28/2023
 ms.topic: how-to
 description: Learn how to get insights on and regulate access to sensitive content in app governance.
 ---
