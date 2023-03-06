@@ -12,19 +12,11 @@ While some of anomaly detections focus primarily on detecting problematic securi
 
 ## Definition of a behavior
 
-Behavior represents an abstraction above the raw data level that offers a deeper understanding of events, attached to MITRE attack categories and techniques. It's a level of data that's in between raw events and alerts, and may be related to security scenarios but not necessarily a sign of malicious activity or related to a security incident. It's based on one or more raw events and provides contextual insights into what occurred at a specific point in time, using what the service has learned or identified.
+A behavior represents an abstraction above the raw data level that offers a deeper understanding of events, and is attached to MITRE attack categories and techniques. This level of data lies between raw events and alerts,  and may be related to security scenarios, but is not necessarily a sign of malicious activity or  a security incident. It's based on one or more raw events and provides contextual insights into what occurred at a specific point in time, using what the service has learned or identified.
 
-## Motivation for this layer
-
-The goal of creating this new data layer is to provide insightful and descriptive examination of activities and MITRE tactics and techniques, which will simplify the investigation process. These activities can include ones not captured by advanced hunting, especially with Microsoft Defender for Cloud Apps, where behaviors will encompass low-fidelity anomaly detections currently presented as alerts.
-
-We believe that threat protection alerts should be high-confidence and actionable and behaviors will enable the SOC to investigate other activities as needed and in context, such as identifying compromised entities.
-
-Behaviors will also serve as a foundation for alerts where Microsoft security researchers will find correlations with other signals such as events or alerts, indicating high-confidence security issues.
+This new data layer in Microsoft 365 Defender has been created to provide insights into these behaviors. This simplifies the investigation experience by showing what happened in the environment in a more descriptive way that includes MITRE tactics and techniques. Such activities can be events that weren't reflected in advanced hunting.
 
 ## Defender for Cloud Apps detections sent as behaviors
-
-As part of our journey to a better threat protection experience, Microsoft Defender for Cloud Apps is the first service to expose its behaviors in Microsoft 365 Defender.
 
 During the initial phase, behaviors will encompass low-fidelity detections from Microsoft Defender for Cloud Apps that may not meet the standard for alerts, however, they can still be useful in providing relevant context for an investigation.
 
