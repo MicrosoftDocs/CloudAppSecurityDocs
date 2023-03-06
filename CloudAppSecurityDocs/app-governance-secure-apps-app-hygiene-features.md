@@ -1,6 +1,6 @@
 ---
 title: Secure apps with app hygiene features
-ms.date: 02/14/2023
+ms.date: 02/28/2023
 ms.topic: how-to
 description: Learn how to secure apps with app hygiene features
 ---
