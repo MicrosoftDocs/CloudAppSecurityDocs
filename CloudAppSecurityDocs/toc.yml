@@ -326,18 +326,8 @@ items:
       href: accounts.md
     - name: Manage OAuth apps
       href: manage-app-permissions.md
-    - name: Security configuration
-      items:
-      - name: Overview
-        href: security-config.md
-      - name: Security configuration for SaaS applications
-        href: security-saas.md
-      - name: Security configuration for Azure
-        href: security-config-azure.md
-      - name: Security configuration for AWS
-        href: security-config-aws.md
-      - name: Security configuration for GCP
-        href: security-config-gcp.md
+    - name: Security configuration for SaaS applications
+      href: security-saas.md
     - name: Investigate anomaly detection alerts
       href: investigate-anomaly-alerts.md
   - name: Control
@@ -723,7 +713,7 @@ items:
         href: classic-accounts.md
       - name: Manage OAuth apps
         href: classic-manage-app-permissions.md
-      - name: Security configuration
+      - name: Security configuration 
         items:
         - name: Overview
           href: classic-security-config.md

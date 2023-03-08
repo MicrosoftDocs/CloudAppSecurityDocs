@@ -23,9 +23,8 @@ Connecting AWS to Defender for Cloud Apps helps you secure your assets and detec
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
-- [Stay up to date with latest security configuration recommendation](security-config-aws.md)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
-- [Review security configuration recommendations](security-config-aws.md)
+
 
 ## Control AWS with built-in policies and policy templates
 
@@ -49,14 +48,6 @@ In addition to monitoring for potential threats, you can apply and automate the 
 | Data governance | - Make an S3 bucket private<br />- Remove a collaborator for an S3 bucket |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
-
-## Security Recommendations
-
-Defender for Cloud Apps provides an overview of your AWS platform configuration compliance for all your AWS accounts based on the Center for Internet Security (CIS) benchmark for AWS.
-
-You should continuously review the security recommendations to assess and evaluate the current status of your platform's security posture and identify important configuration gaps. Then, you should create a plan to mitigate the issues in your AWS platform.
-
-For more information, [AWS security recommendations](security-config-aws.md).
 
 ## Protect AWS in real time
 

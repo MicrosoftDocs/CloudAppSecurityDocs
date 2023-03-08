@@ -196,6 +196,26 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "CloudAppSecurityDocs/security-config.md",
+            "redirect_url": "/azure/defender-for-cloud/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/security-config-azure.md",
+            "redirect_url": "/azure/defender-for-cloud/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/security-config-aws.md",
+            "redirect_url": "/azure/defender-for-cloud/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "CloudAppSecurityDocs/security-config-gcp.md",
+            "redirect_url": "/azure/defender-for-cloud/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "CloudAppSecurityDocs/what-is-cloud-app-security.md",
             "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
             "redirect_document_id": true

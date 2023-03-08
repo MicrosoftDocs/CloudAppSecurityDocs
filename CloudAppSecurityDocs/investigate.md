@@ -10,28 +10,6 @@ ms.topic: how-to
 
 After Microsoft Defender for Cloud Apps runs in your cloud environment, you'll need a stage of learning and investigating. Learn to use the Microsoft Defender for Cloud Apps tools to gain a deeper understanding of what's happening in your cloud environment. Based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk. This article describes how to do an investigation to get a better understanding of your cloud environment.
 
-## Dashboards
-
-The following dashboards are available to help you investigate apps in your cloud environment:
-
-|Dashboard|Description|
-|---------------|-----------------|
-|Main dashboard|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations).|
-|App dashboard: overview|Overview of app usage per location, usage graphs per number of users.|
-|App dashboard: info|Information about app details, security, and compliance.|
-|App dashboard: insights  
-*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level.|
-|App dashboard: files  
-*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
-|App dashboard: accounts|Overview of all accounts/users linked to the app.|
-|App dashboard: OAuth apps  
-*(where applicable)*|Drill down into OAuth apps currently deployed, like Google Workspace, and define policies.|
-|App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
-|App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
-|App dashboard: special privileged accounts  
-*(Salesforce only)*|Overview of users by privileged user type.|
-|User dashboard|A complete overview of the user profile in the cloud, locations, recent activities, related alerts.|
-
 ## <a name="sanctionapp"></a>Tag apps as sanctioned or unsanctioned
 
 An important step to understanding your cloud is to tag apps as sanctioned or unsanctioned. After you sanction an app, you can filter for apps that aren't sanctioned and start migration to sanctioned apps of the same type.
