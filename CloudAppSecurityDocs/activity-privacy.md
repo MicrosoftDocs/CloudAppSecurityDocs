@@ -56,7 +56,7 @@ Once an admin has been granted the appropriate permission to view private activi
 
 ### To view private activities
 
-1. In the **Activity log** page, to the right of the activity table, select the settings icon, and then select **Show private activities**.
+1. In the **Activity log** page, to the right of the activity table, select **Table settings**, and then select **Show private activities**.
 
     ![Screenshot showing the activity log settings icon.](media/activity-privacy-view-settings-icon.png)
 
