@@ -216,6 +216,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "CloudAppSecurityDocs/mdi-integration.md",
+            "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mdi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "CloudAppSecurityDocs/what-is-cloud-app-security.md",
             "redirect_url": "/defender-cloud-apps/what-is-defender-for-cloud-apps",
             "redirect_document_id": true

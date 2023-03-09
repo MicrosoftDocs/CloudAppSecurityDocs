@@ -54,9 +54,9 @@ Below is a list of the file filters that can be applied. To provide you with a p
 >
 > **Equals** will search only for the complete string. For example, if you search for **malware.exe** it will find *malware.exe* but not *malware.exe.txt*.
 
-- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [Set up the portal](general-setup.md#set-up-the-portal).
+- **Access level** – Sharing access level; public, external, internal, or private.  For more information about External files, see [Set up the portal](classic-general-setup.md#set-up-the-portal).
 
-  - **Internal** - Any files within the Internal domains you set in [General setup](General-setup.md).
+  - **Internal** - Any files within the Internal domains you set in [General setup](classic-general-setup.md).
   - **External** - Any files saved in locations that aren't within the internal domains you set.
   - **Shared** - Files that have a sharing level above private. Shared includes:
     - Internal sharing - Files shared within your internal domains.

@@ -60,8 +60,6 @@ items:
     href: tutorial-step-up-authentication.md
 - name: Concepts
   items:
-  - name: Working with the dashboard
-    href: daily-activities-to-protect-your-cloud-environment.md
   - name: Working with the app page
     href: working-with-app-page.md
   - name: Working with App risk scores
@@ -376,8 +374,6 @@ items:
       href: governance-discovery.md
     - name: Govern apps discovered by Microsoft Defender for Endpoint
       href: mde-govern.md
-    - name: Microsoft Defender for Identity integration
-      href: mdi-integration.md
     - name: Microsoft Information Protection integration
       href: azip-integration.md
     - name: Microsoft Sentinel integration

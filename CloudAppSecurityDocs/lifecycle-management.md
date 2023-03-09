@@ -44,7 +44,7 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 
 ## Settings
 
-- Review [managed domains](general-setup.md#set-up-the-portal)
+- Review [managed domains](general-setup.md)
 - Verify current [IP ranges](ip-tags.md) for Corporate and VPN
 - [Verify App Tag strategy and add/remove as needed](discovered-app-queries.md#creating-and-managing-custom-app-tags)
 - Check rights on [admin quarantine folder](use-case-admin-quarantine.md)
