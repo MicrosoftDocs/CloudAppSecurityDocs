@@ -318,7 +318,7 @@ Activities in a single session indicating that, a user performed suspicious chan
 
 ### Suspicious email deletion activity (by user)
 
-Activities in a single session indicating that, a user performed suspicious email deletions. The deletion type was the "hard delete" type which makes the email item deleted and not available in the user's mailbox. The deletion was made from a connection that includes uncommon preferences such as ISP, country and user agent. This can indicate an attempted breach of your organization, such as attackers attempting to mask operations by deleting emails related to spam activities.
+Activities in a single session indicating that, a user performed suspicious email deletions. The deletion type was the "hard delete" type which makes the email item deleted and not available in the user's mailbox. The deletion was made from a connection that includes uncommon preferences such as ISP, country/region and user agent. This can indicate an attempted breach of your organization, such as attackers attempting to mask operations by deleting emails related to spam activities.
 
 **TP**, **B-TP**, or **FP**?
 
