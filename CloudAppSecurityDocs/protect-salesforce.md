@@ -1,7 +1,7 @@
 ---
 title: Protect your Salesforce environment
 description: This article provides information about the benefits of connecting your Salesforce app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
+ms.date: 03/06/2023
 ms.topic: article
 ---
 

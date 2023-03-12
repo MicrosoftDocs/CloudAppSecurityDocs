@@ -2,7 +2,7 @@
 title:       Protect your Workplace environment
 description: This article provides information about the benefits of connecting your Workplace app to Defender for Cloud Apps using the API connector for visibility and control over use.
 ms.topic:    article
-ms.date: 03/01/2023
+ms.date: 03/09/2023
 ---
 
 # How Defender for Cloud Apps helps protect your Workplace environment (Preview)
