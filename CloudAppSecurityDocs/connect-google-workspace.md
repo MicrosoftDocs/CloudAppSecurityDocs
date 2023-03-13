@@ -12,22 +12,22 @@ ms.topic: how-to
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Google Workspace account using the connector APIs. This connection gives you visibility into and control over Google Workspace use. For information about how Defender for Cloud Apps protects Google Workspace, see [Protect Google Workspace](protect-google-workspace.md).
 
 > [!NOTE]
-File download activities for Google Workspace aren't displayed in Defender for Cloud Apps.
+> File download activities for Google Workspace aren't displayed in Defender for Cloud Apps.
 
 
 ## Configure Google Workspace
 
 1. As a Google Workspace Super Admin, sign in to <https://console.cloud.google.com>.
 
-1. 1. Click on the project dropdown in the top ribbon and select **New Project **to start a new project.
+1. Select the project dropdown in the top ribbon and then select **New Project** to start a new project.
    ![New Project](media/connect-google-workspace/new-project.png)
 
 1. In the **New project** page, name your project as follows: **Defender for Cloud Apps** and select **Create**.
-   ![3](media/connect-google-workspace/3.jpg)
+   ![Name your project.](media/connect-google-workspace/3.jpg)
 
 1. After the project is created, select the created project from the top ribbon.  
    Copy the **Project number**, you'll need it later.
-   ![2](media/connect-google-workspace/2.jpg)
+   ![Copy the project number.](media/connect-google-workspace/2.jpg)
 
 1. In the navigation menu, go to **APIs & Services** > **Library**.
     Enable the following APIs (use the search bar if the API isn't listed):
@@ -37,43 +37,43 @@ File download activities for Google Workspace aren't displayed in Defender for C
    
 1. In the navigation menu, go to **APIs & Services** > **Credentials** and do the following steps:
    
-   a. Select **CREATE CREDENTIALS** 
+   1. Select **CREATE CREDENTIALS** 
    
-   ![6](media/connect-google-workspace/6.jpg)
+   ![Select create credentials.](media/connect-google-workspace/6.jpg)
 
    
-   1. b. Select **Service Account**.
+   1. Select **Service Account**.
 
 
-   c. **Service account details**: Provie the name as 'Defender for Cloud Apps' and description as 'API connector from Defender for Cloud Apps to a Google workspace account'. 
+   1. **Service account details**: Provide the name as *Defender for Cloud Apps* and description as *API connector from Defender for Cloud Apps to a Google workspace account*. 
    
    ![7](media/connect-google-workspace/10.jpg)
 
    
-   d. Select **CREATE AND CONTINUE**.
+   1. Select **CREATE AND CONTINUE**.
    
-   e. Under **Grant this service account access to project**, for **Role** select **Project > Editor**, and then select **Done**.
+   1. Under **Grant this service account access to project**, for **Role** select **Project > Editor**, and then select **Done**.
    
    ![8](media/connect-google-workspace/11.jpg)
 
    
-   f. In the navigation menu, return to **APIs & Services** > **Credentials**. 
+   1. In the navigation menu, return to **APIs & Services** > **Credentials**. 
    
-   g. Under **Service Accounts**, locate and edit the service account you created earlier by selecting the pencil icon.
+   1. Under **Service Accounts**, locate and edit the service account you created earlier by selecting the pencil icon.
    
    ![9](media/connect-google-workspace/12.jpg)
 
    
-   h. Copy the email address. You'll need it later.
+   1. Copy the email address. You'll need it later.
    
-   g. Navigate to **KEYS** from the top ribbon. 
+   1. Navigate to **KEYS** from the top ribbon. 
    
    ![10](media/connect-google-workspace/13.jpg)
 
    
-   h. From the **ADD KEY** menu, select **Create new key**. 
+   1. From the **ADD KEY** menu, select **Create new key**. 
    
-   i. Select P12, and then select CREATE. Save the file that's downloaded, and the password required to use the file. 
+   1. Select **P12**, and then select **CREATE**. Save the downloaded file and the password required to use the file. 
    
    ![11](media/connect-google-workspace/14.jpg)
 
@@ -90,14 +90,15 @@ File download activities for Google Workspace aren't displayed in Defender for C
 
 1- Select **Add new**.
    
-1-     1. In the **Client ID** box, enter the **Client ID** that you copied earlier.
+    1. In the **Client ID** box, enter the **Client ID** that you copied earlier.
     1. In the **OAuth Scopes** box, enter the following list of required scopes (copy the text and paste it in the box):
 
 ```txt
 https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user
 ```
 
-1- Select **AUTHORIZE**. ![Google Workspace authorize new client ID.](media/connect-google-workspace/google-workspace-authorize-new-client-id.png)
+1- Select **AUTHORIZE**. 
+![Google Workspace authorize new client ID.](media/connect-google-workspace/google-workspace-authorize-new-client-id.png)
 
    
 ## Configure Defender for Cloud Apps
