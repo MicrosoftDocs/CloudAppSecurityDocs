@@ -19,38 +19,43 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. As a Google Workspace Super Admin, sign in to <https://console.cloud.google.com>.
 
 1. Click on the project dropdown in the top ribbon and select **New Project **to start a new project.
+   ![New Project](media/connect-google-workspace/new-project.png)
+
 1. In the **New project** page, name your project as follows: **Defender for Cloud Apps** and select **Create**.
+   ![3](media/connect-google-workspace/3.jpg)
+
 1. After the project is created, select the created project from the top ribbon.  
    Copy the **Project number**, you'll need it later.
+   ![2](media/connect-google-workspace/2.jpg)
+
 1. In the navigation menu, go to **APIs & Services** > **Library**.
     Enable the following APIs (use the search bar if the API isn't listed):
 
     - Admin SDK API
     - Google Drive API
-
-1.  For each API, select **Enable** to activate it.
-
-1. In the navigation menu, go to **APIs & Services** > **Credentials** and do the following steps:
-
-    1- Select **CREATE CREDENTIALS** 
    
+1. In the navigation menu, go to **APIs & Services** > **Credentials** and do the following steps:
+   
+1. a. Select **CREATE CREDENTIALS** 
+   
+
 1. b. Select **Service Account**.
    
 
-    1- **Service account details**:
-   1.         1. Provide the following name: **Defender for Cloud Apps**
-   1. Provide the following description: **API connector from Defender to Cloud App to a Google Workspace account**
-   1. > [!NOTE]
+1. c. **Service account details**: Provie the name as 'Defender for Cloud Apps' and description as 'API connector from Defender for Cloud Apps to a Google workspace account'. 
+   
+
 The name and description can be different. These are examples for your convenience.
       
 
-   1. Select **CREATE AND CONTINUE**.
+1. Select **CREATE AND CONTINUE**.
       
       ![7](media/connect-google-workspace/7.jpg)
 
       
-    1- Under **Grant this service account access to project**, for **Role** select **Project** > **Editor**, and then select **Done**.
-   
+```
+1- Under **Grant this service account access to project**, for **Role** select **Project** > **Editor**, and then select **Done**.
+```
 1. In the navigation menu, return to **APIs & Services** > **Credentials**.
    
 1. a. Under **Service Accounts**, locate and edit the service account you created earlier by selecting the pencil icon.
@@ -59,11 +64,8 @@ The name and description can be different. These are examples for your convenien
 1. b. Copy the email address. You'll need it later.
    
 
-1.     1. Under **Keys**, from the **ADD KEY** menu, select **Create new key**, select **P12**, and then select **CREATE**. Save the file that's downloaded, you'll need it later.
-
-
-
-1. 1. In the navigation menu, go to **IAM & Admin** > **Service accounts**. Copy the **Client ID** assigned to the service account you have just created - you'll need it later.
+1. 
+undefinedundefinedundefinedundefinedundefinedundefinedundefined1. 1. In the navigation menu, go to **IAM & Admin** > **Service accounts**. Copy the **Client ID** assigned to the service account you have just created - you'll need it later.
 
        ![Google Workspace credentials service account.](media/connect-google-workspace/google-workspace-copy-service-account-client-id.png)
 
@@ -130,4 +132,5 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
