@@ -12,7 +12,7 @@ ms.topic: how-to
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Workplace account using the App Connector APIs. This connection gives you visibility into and control over your organization's Workplace use.
 
    > [!NOTE]
-   > Workplace API connector is rolling out gradually for our customers. If you don't see the connector yet in your environment and want to onboard ASAP, please fill the [Workplace API connector intake form](https://forms.microsoft.com/r/euj3pEmiM4).
+   > The Workplace API connector is rolling out gradually. If you don't see the connector yet in your environment and want to onboard soon, please fill the [Workplace API connector intake form](https://forms.microsoft.com/r/euj3pEmiM4).
 
 ## Prerequisites
 
