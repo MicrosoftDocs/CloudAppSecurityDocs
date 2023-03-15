@@ -66,11 +66,9 @@ The following type of notifications use the custom email templates:
 - File sharing report
 - Cloud App Security Test Email [this is for testing purposes]
 - Ownership of items transferred to you
-    
 
-> [!Note]
+> [!NOTE]
 > There are some types of notifications that are sent to admins only. In such a case, the default template is used, instead of the custom template.
-> 
 
 ## Sample email template
 
@@ -136,4 +134,3 @@ Below is a sample email template:
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-
