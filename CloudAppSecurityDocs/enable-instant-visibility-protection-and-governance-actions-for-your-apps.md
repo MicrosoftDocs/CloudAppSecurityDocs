@@ -91,7 +91,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
-| Office 365        | ✔                                    | ✔                         | ✔                         |                   |
+| Office 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
 | Okta              |                                      | Not applicable            | Not applicable            | Preview (At General Availability the licensing of this capability may be changed)            |
 | OneLogin | |  |  |  |
 | Service  Now      |                                      |                           |                           | ✔ |

@@ -101,6 +101,15 @@ You can learn more about Microsoft data practices by reading the [Online Service
 
 [Learn more about transparency](https://www.microsoft.com/trust-center/privacy/data-management)
 
+## Data sharing
+
+Defender for Identity shares data, including customer data, among the following Microsoft products also licensed by the customer:
+
+- Microsoft Defender for Cloud
+- Microsoft Sentinel     
+- Microsoft Defender for Endpoint
+
+
 ### Deleting personal data
 
 After a user's account  is deleted from a connected cloud application, Defender for Cloud Apps will automatically delete the copy of the data within two years.
