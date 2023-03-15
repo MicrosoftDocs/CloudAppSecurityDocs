@@ -30,16 +30,16 @@ The Citrix Share file user used for logging into Citrix Share file must have Acc
 
 1. Fill out the following fields:
 
-    - Application name: Microsoft Cloud App Security (you can also choose another name).
-    - Redirect URL:  <https://portal.cloudappsecurity.com/api/oauth/saga> (change to your domain).
+    - Application name: Microsoft Defender for Cloud Apps (you can also choose another name).
+    - Redirect URL:  `https://portal.cloudappsecurity.com/api/oauth/saga` (change to your domain).
 
 1. Select **Generate API Key**.
 
 1. Copy the *Client ID* and *Client Secret*.
 
-## Configure Cloud App Security
+## Configure Defender for Cloud Apps
 
-1. In the M365D Portal, select **Cloud apps** > **Connected apps** > **App Connectors**.
+1. In the Microsoft 365 Defender Portal, select **Cloud apps** > **Connected apps** > **App Connectors**.
 
 1. In the **App connectors** page, select the **+** button followed by **Citrix ShareFile**.
 
