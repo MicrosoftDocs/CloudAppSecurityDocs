@@ -1,6 +1,6 @@
 ---
 title: App governance trial user guide
-ms.date: 01/29/2023
+ms.date: 03/16/2023
 ms.topic: conceptual
 description: Step-by-step guide to help you quickly get started with the app governance add-on trial
 ---
