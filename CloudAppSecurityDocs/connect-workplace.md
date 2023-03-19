@@ -1,7 +1,7 @@
 ---
 title: Connect Workplace
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Workplace account using the App Connector APIs.
-ms.date: 03/01/2023
+ms.date: 03/14/2023
 ms.topic: how-to
 ---
 

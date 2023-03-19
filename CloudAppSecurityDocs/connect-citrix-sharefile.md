@@ -1,7 +1,7 @@
 ---
 title: Connect Citrix ShareFile
 description: This article provides information about how to connect your Citrix ShareFile app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 02/14/2023
+ms.date: 03/15/2023
 ms.topic: how-to
 ---
 # Connect Citrix ShareFile to Microsoft Defender for Cloud Apps
