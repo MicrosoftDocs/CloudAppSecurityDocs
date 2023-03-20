@@ -188,12 +188,6 @@ To enable notifications to be sent from the default template and settings, add t
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-If you want to customize the email sender identity, Microsoft Defender for Cloud Apps enables customization by using MailChimp&reg;, a third-party email service. To make it work, in the Microsoft Defender for Cloud Apps portal, go to **Settings**. Select **Mail settings** and review MailChimp's Terms of Service and Privacy Statement. Then, give Microsoft permission to use MailChimp on your behalf.
-
-If you don't customize the sender identity, your email notifications will be sent using all the default settings.
-
-To work with MailChimp, add this IP address to your anti-spam allowlist to enable notifications to be sent: 198.2.134.139 (`mail1.cloudappsecurity.com`)
-
 ## Log collector
 
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
