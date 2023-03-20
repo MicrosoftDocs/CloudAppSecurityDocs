@@ -1,7 +1,7 @@
 ---
 title: Connect Google Workspace 
 description: This article provides information about how to connect your Google Workspace to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
+ms.date: 03/13/2023
 ms.topic: how-to
 ---
 

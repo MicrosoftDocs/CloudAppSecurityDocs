@@ -1,7 +1,7 @@
 ---
 title: Connect GitHub Enterprise Cloud 
 description: This article provides information about how to connect your GitHub Enterprise Cloud app to Defender for Cloud Apps using the API connector  for visibility and control over use.
-ms.date: 02/21/2023
+ms.date: 03/15/2023
 ms.topic: how-to
 ---
 

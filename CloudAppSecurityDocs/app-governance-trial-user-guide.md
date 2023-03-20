@@ -1,6 +1,6 @@
 ---
 title: App governance trial user guide
-ms.date: 01/29/2023
+ms.date: 03/16/2023
 ms.topic: conceptual
 description: Step-by-step guide to help you quickly get started with the app governance add-on trial
 ---
@@ -130,7 +130,7 @@ Try these actions:
 
 - [Investigate anomaly detection alerts:](app-governance-anomaly-detection-alerts.md) App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks.
 
-- [Remediate app threats:](app-governance-detect-remediate-detect-threats.md) You remediate app threats to your Microsoft 365 tenant through the Alerts page of the Microsoft app governance section of the Microsoft 365 Defender.
+- [Remediate app threats:](/defender-cloud-apps/app-governance-manage-alerts) You remediate app threats to your Microsoft 365 tenant through the Alerts page of the Microsoft app governance section of the Microsoft 365 Defender.
 
 ## Resources for the Microsoft Defender for Cloud Apps app governance add-on
 

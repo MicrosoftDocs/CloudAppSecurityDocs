@@ -1,7 +1,7 @@
 ---
 title: Zero Trust and Microsoft Defender for Cloud Apps
 description: This article describes how Microsoft Defender for Cloud Apps fits into an overall Zero Trust security strategy when deployed with Microsoft 365 Defender.
-ms.date: 02/22/2023
+ms.date: 03/17/2023
 ms.topic: conceptual
 ms.collection:
   -       zerotrust-services
@@ -21,7 +21,7 @@ Microsoft Defender for Cloud apps is a primary component of a Zero Trust strateg
 
 When monitoring for Zero Trust, use Defender for Cloud Apps to [discover and secure](best-practices.md#discover-and-assess-cloud-apps) the SaaS apps being used in your organization and deploy policies that define how you want your users to behave in the cloud. 
 
-Respond to threats with with Defender for Cloud Apps's user and entity behavioral analytics (UEBA) and anomaly detection, malware protection, OAuth app protection, incident investigation, and remediation. Monitor for [security anomaly alerts](/cloud-app-security/investigate-anomaly-alerts), such as for impossible travel, suspicious inbox rules, and ransomware. Focus on identifying app usage patterns, assessing risk levels and business readiness of apps, preventing data leaks to noncompliant apps, and limiting access to regulated data.
+Respond to threats with Defender for Cloud Apps's user and entity behavioral analytics (UEBA) and anomaly detection, malware protection, OAuth app protection, incident investigation, and remediation. Monitor for [security anomaly alerts](./investigate-anomaly-alerts.md), such as for impossible travel, suspicious inbox rules, and ransomware. Focus on identifying app usage patterns, assessing risk levels and business readiness of apps, preventing data leaks to noncompliant apps, and limiting access to regulated data.
 
 Use Defender for Cloud Apps to inform Azure AD about what happened to the user after they authenticated and received a token. If the user pattern starts to look suspicious, such as if a user starts to download gigabytes of data from OneDrive or starts to send spam emails in Exchange Online, notify Azure AD that the user seems to be compromised or high risk. On the next access request from this user, Azure AD can correctly take action to verify the user or block them.
 
@@ -39,5 +39,3 @@ For more information, see:
 - [Application integrations for Zero Trust](/security/zero-trust/integrate/applications)
 - [Create Defender for Cloud App policies for Zero Trust](/security/zero-trust/create-policies)
 - [Deploy information protection for SaaS apps](/security/zero-trust/deploy-information-protection-saas)
-
-
