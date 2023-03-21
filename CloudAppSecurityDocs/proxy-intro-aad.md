@@ -187,7 +187,6 @@ In the following applications, we've encountered scenarios where navigating to a
   - Microsoft Dynamics 365 CRM
   - Microsoft Power Automate
   - Microsoft Power Apps
-  - Microsoft Power BI
   - Microsoft Yammer
   - Workplace from Meta
 
