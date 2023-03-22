@@ -40,20 +40,18 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
 
     ![Connect O365 menu option.](media/connect-o365.png)
 
-1. In the Office 365 pop-up, select **Connect Office 365**.
-
-    ![connect O365 pop-up.](media/office-connect.png)
-
-1. In the Office 365 components page, select the options you require, and then select **Connect**.
+1. In the **Select Office 365 components** page, select the options you require, and then select **Connect**.
 
     > [!NOTE]
     >
     > - For best protection, we recommend selecting all Office 365 components.
-    > - The **Office 365 files** component, requires the **Office 365 activities** component and Defender for Cloud Apps file monitoring (**Settings** > **Files** > **Enable file monitoring**).
+    > - The **Azure AD files** component, requires the **Azure AD activities** component and Defender for Cloud Apps file monitoring (**Settings** > **Cloud Apps** > **Files** > **Enable file monitoring**).
 
     ![connect O365 components.](media/connect-o365-components.png)
 
-1. After Office 365 is displayed as successfully connected, select **Close**.
+1. On the **Follow the link** page, select **Connect Office 365**.
+
+1. After Office 365 is displayed as successfully connected, select **Done**.
 
 > [!NOTE]
 > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365 because Defender for Cloud Apps turns on any APIs that had been off by default.
