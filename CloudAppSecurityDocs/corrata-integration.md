@@ -21,7 +21,7 @@ If you work with both Defender for Cloud Apps and Corrata, you can integrate the
 
 ## Deployment
 
-1. In the Corrata portal, do the steps to complete the [Corrata partner integration with Microsoft Defender for Cloud Apps](https://corrata.com/microsoft-mcas-onboarding/).
+1. In the Corrata portal, integrate Corrata into Defender for Cloud Apps. For more information, see [Microsoft Corrata Integrations](https://corrata.com/corrata-and-microsoft/).
 2. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), do the following integration steps:
     1. Select the settings cog and then select **Cloud Discovery Settings**.
     2. Select the **Automatic log upload** tab and then select **Add data source**.
