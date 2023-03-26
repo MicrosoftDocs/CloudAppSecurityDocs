@@ -1,7 +1,7 @@
 ---
 title: Protect apps with Conditional Access App Control
 description: This article provides information about how the Defender for Cloud Apps Conditional Access App Control reverse proxy works.
-ms.date: 01/29/2023
+ms.date: 03/21/2023
 ms.topic: conceptual
 ---
 # Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control
