@@ -16,10 +16,6 @@ Your SaaS application environments may be configured in a risky posture. Microso
 
 Your organization must have Microsoft Defender for Cloud Apps licenses.
 
->[!NOTE]
->
-> - SaaS Security Posture Management for non-Microsoft applications is currently in public preview for every customer with Defender for Cloud Apps. At General Availability the licensing of this capability may be changed.
-
 ## How to enable SaaS apps security posture management
 
 1. You should connect the app that you want to manage to Defender for Cloud Apps. For connection guides to every app, see the [connecting an app pages](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
