@@ -29,6 +29,8 @@ landingContent:
             url: ./what-is-defender-for-cloud-apps.md
           - text: Top 20 CASB use cases
             url: https://securityhub.transform.microsoft.com/download/8aced378-e9d5-4647-8968-034239b63688
+          - text: SaaS Security
+            url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10AbW
       - linkListType: whats-new
         links:
           - text: Releases
