@@ -180,7 +180,7 @@ For example, if a user uploads a file without a sensitivity label, a message can
 When there is a conflict between two policies, the more restrictive policy wins. 
 For example:
 - If a user session is scoped to a **Block download** policy and to a **Label upon download** policy, the file download action will be blocked.
-- If a user session is scoped to a **Block download** policy and to an '**Audit download** policy, the file download action will be blocked.
+- If a user session is scoped to a **Block download** policy and to an **Audit download** policy, the file download action will be blocked.
 
 ## Related videos
 
