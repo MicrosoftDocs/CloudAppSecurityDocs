@@ -21,7 +21,8 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * [Block malware on upload](#block-malware-on-upload)
 * [Educate users to protect sensitive files](#educate-protect)
 
-Note that there is no limit to the number of policies that can be applied.
+> [!NOTE]
+> There is no limit to the number of policies that can be applied.
 
 ## Prerequisites to using session policies
 
@@ -175,10 +176,11 @@ It's important to educate users when they are in violation of a policy so that t
 For example, if a user uploads a file without a sensitivity label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
 
 ## Conflicts between policies
+
 When there is a conflict between two policies, the more restrictive policy wins. 
 For example:
-In case a user session is scoped to 'Block download' policy and to 'Label upon download' policy, the file download action will be blocked.
-In case a user session is scoped to 'Block download' policy and to 'Audit download' policy, the file download action will be blocked.
+- If a user session is scoped to a **Block download** policy and to a **Label upon download** policy, the file download action will be blocked.
+- If a user session is scoped to a **Block download** policy and to an '**Audit download** policy, the file download action will be blocked.
 
 ## Related videos
 
