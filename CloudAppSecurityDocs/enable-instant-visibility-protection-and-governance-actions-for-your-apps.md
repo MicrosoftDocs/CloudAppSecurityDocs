@@ -83,16 +83,16 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| Citrix Share file          |  |  | | Preview (At General Availability the licensing of this capability may be changed) |
-| DocuSign          |  |  | | Preview (At General Availability the licensing of this capability may be changed) |
+| Citrix Share file          |  |  | | Preview  |
+| DocuSign          |  |  | | Preview  |
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
-| GitHub            |                                      | ✔                         |                           | Preview (At General Availability the licensing of this capability may be changed)                          |
+| GitHub            |                                      | ✔                         |                           | Preview                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
 | Office 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
-| Okta              |                                      | Not applicable            | Not applicable            | Preview (At General Availability the licensing of this capability may be changed)            |
+| Okta              |                                      | Not applicable            | Not applicable            | Preview            |
 | OneLogin | |  |  |  |
 | Service  Now      |                                      |                           |                           | ✔ |
 | Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
