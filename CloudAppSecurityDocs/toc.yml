@@ -539,6 +539,8 @@ items:
       href: troubleshooting-proxy-url.md
 - name: Resources
   items:
+  - name: Defender for Cloud Apps Operational Guide
+    href: https://aka.ms/mdaoperationalguide
   - name: Watch our webinars
     href: webinars.md
   - name: Read our e-books
