@@ -4,7 +4,7 @@ description: This article describes how Microsoft Defender for Cloud Apps fits i
 ms.date: 03/17/2023
 ms.topic: conceptual
 ms.collection:
-  -       zerotrust-services
+  - zerotrust-services
 ---
 
 # Zero Trust and Microsoft Defender for Cloud Apps
@@ -32,10 +32,15 @@ Beyond SaaS applications, Defender for Cloud Apps helps you strengthen your secu
 
 ## Next steps
 
-For more information, see:
+Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
+
+For application-centric concepts and deployment objectives, see [Secure applications with Zero Trust](/security/zero-trust/deploy/applications).
+
+See these articles for additional Zero Trust policies and best practices for applications:
 
 - [Recommended Microsoft Defender for Cloud Apps policies for SaaS apps](/microsoft-365/security/office-365-security/mcas-saas-access-policies)
-- [Secure applications with Zero Trust](/security/zero-trust/deploy/applications)
 - [Application integrations for Zero Trust](/security/zero-trust/integrate/applications)
 - [Create Defender for Cloud App policies for Zero Trust](/security/zero-trust/create-policies)
 - [Deploy information protection for SaaS apps](/security/zero-trust/deploy-information-protection-saas)
+
+Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust).
