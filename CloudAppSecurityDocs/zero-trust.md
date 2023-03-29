@@ -29,7 +29,6 @@ Use Defender for Cloud Apps to inform Azure AD about what happened to the user a
 
 Beyond SaaS applications, Defender for Cloud Apps helps you strengthen your security posture for IaaS and PaaS services by getting visibility into the security configuration and compliance status across your public cloud platforms. This enables a risk-based investigation of the entire platform configuration status. [Integrate with Microsoft Purview](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps) to label your apps and protect data across your apps, preventing inadvertent exposure to sensitive information. 
 
-
 ## Next steps
 
 Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
@@ -44,3 +43,5 @@ See these articles for additional Zero Trust policies and best practices for app
 - [Deploy information protection for SaaS apps](/security/zero-trust/deploy-information-protection-saas)
 
 Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust).
+
+For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](zero-trust-with-microsoft-365-defender.md).
