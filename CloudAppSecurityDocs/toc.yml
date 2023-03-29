@@ -315,6 +315,8 @@ items:
   - name: Investigation
     href: investigate.md
     items:
+    - name: Behaviors
+      href: behaviors.md
     - name: Activities
       href: activity-filters.md
       items:
