@@ -1,7 +1,7 @@
 ---
 title: Session policies
 description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
-ms.date: 01/29/2023
+ms.date: 03/27/2023
 ms.topic: how-to
 ---
 # Session policies
