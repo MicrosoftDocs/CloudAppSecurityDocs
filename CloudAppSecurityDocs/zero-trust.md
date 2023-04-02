@@ -1,10 +1,10 @@
 ---
 title: Zero Trust and Microsoft Defender for Cloud Apps
 description: This article describes how Microsoft Defender for Cloud Apps fits into an overall Zero Trust security strategy when deployed with Microsoft 365 Defender.
-ms.date: 03/17/2023
+ms.date: 03/29/2023
 ms.topic: conceptual
 ms.collection:
-  -       zerotrust-services
+  - zerotrust-services
 ---
 
 # Zero Trust and Microsoft Defender for Cloud Apps
@@ -29,13 +29,19 @@ Use Defender for Cloud Apps to inform Azure AD about what happened to the user a
 
 Beyond SaaS applications, Defender for Cloud Apps helps you strengthen your security posture for IaaS and PaaS services by getting visibility into the security configuration and compliance status across your public cloud platforms. This enables a risk-based investigation of the entire platform configuration status. [Integrate with Microsoft Purview](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps) to label your apps and protect data across your apps, preventing inadvertent exposure to sensitive information. 
 
-
 ## Next steps
 
-For more information, see:
+Learn more about Zero Trust and how to build an enterprise-scale strategy and architecture with the [Zero Trust Guidance Center](/security/zero-trust).
+
+For application-centric concepts and deployment objectives, see [Secure applications with Zero Trust](/security/zero-trust/deploy/applications).
+
+See these articles for additional Zero Trust policies and best practices for applications:
 
 - [Recommended Microsoft Defender for Cloud Apps policies for SaaS apps](/microsoft-365/security/office-365-security/mcas-saas-access-policies)
-- [Secure applications with Zero Trust](/security/zero-trust/deploy/applications)
 - [Application integrations for Zero Trust](/security/zero-trust/integrate/applications)
 - [Create Defender for Cloud App policies for Zero Trust](/security/zero-trust/create-policies)
 - [Deploy information protection for SaaS apps](/security/zero-trust/deploy-information-protection-saas)
+
+Learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture with [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust).
+
+For an overview of Zero Trust for Microsoft 365 Defender services, see [Zero Trust with Microsoft 365 Defender](/microsoft-365/security/defender/zero-trust-with-microsoft-365-defender).
