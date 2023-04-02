@@ -59,8 +59,8 @@ The behaviors schema in advanced hunting is similar to the [alerts schema](/micr
 
 |Table name  |Description  |
 |---------|---------|
-|[BehaviorInfo  ](/microsoft-365/security/defender/advanced-hunting-behaviorinfo-table?view=o365-worldwide) |  Record per behavior with its metadata, including behavior title, MITRE Attack categories, and techniques. |
-|[BehaviorEntities   ](/microsoft-365/security/defender/advanced-hunting-behaviorentities-table?view=o365-worldwide)   | Information on the entities that were part of the behavior. Can be multiple records per behavior.        |
+|[BehaviorInfo  ](/microsoft-365/security/defender/advanced-hunting-behaviorinfo-table) | Record per behavior with its metadata, including behavior title, MITRE Attack categories, and techniques. |
+|[BehaviorEntities   ](/microsoft-365/security/defender/advanced-hunting-behaviorentities-table) | Information on the entities that were part of the behavior. Can be multiple records per behavior.        |
 
 To get complete information on a behavior and its entities, use `BehaviorId` as the primary key for the join:
 
