@@ -4,6 +4,7 @@ description: This article explains how to investigate behaviors with Microsoft 3
 ms.date: 04/02/2023
 ms.topic: how-to
 ---
+
 # Investigate behaviors with advanced hunting (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -56,10 +57,10 @@ Behaviors are now available in Microsoft 365 Defender advanced hunting, and can 
 
 The behaviors schema in advanced hunting is similar to the [alerts schema](/microsoft-365/security/defender/advanced-hunting-alertinfo-table). The behaviors data is exposed in the following table:
 
-|Column name  |Description  |
+|Table name  |Description  |
 |---------|---------|
-|`BehaviorInfo`    |  Record per behavior with its metadata, including behavior title, MITRE Attack categories, and techniques. |
-| `BehaviorEntities`      | Information on the entities that were part of the behavior. Can be multiple records per behavior.        |
+|[BehaviorInfo  ](/microsoft-365/security/defender/advanced-hunting-behaviorinfo-table?view=o365-worldwide) |  Record per behavior with its metadata, including behavior title, MITRE Attack categories, and techniques. |
+| [BehaviorEntities   ](/microsoft-365/security/defender/advanced-hunting-behaviorentities-table?view=o365-worldwide)   | Information on the entities that were part of the behavior. Can be multiple records per behavior.        |
 
 To get complete information on a behavior and its entities, use `BehaviorId` as the primary key for the join:
 
@@ -116,3 +117,4 @@ Have feedback to share? Please fill in [the feedback form](https://forms.office.
 - [Tutorial: Detect suspicious user activity with behavioral analytics](tutorial-suspicious-activity.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].
+
