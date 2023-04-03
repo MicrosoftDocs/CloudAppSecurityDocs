@@ -33,9 +33,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that Webex was successfully connected.
 
-1. Make sure the connection succeeded by clicking **Test API**.
-
-    Testing may take a couple of minutes. After you receive a success notice, click **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting Webex, you'll receive events for 7 days prior to connection. Defender for Cloud Apps scans events over the past three months. To increase this, you must have a Cisco Webex pro license and open a ticket with Defender for Cloud Apps support.
 

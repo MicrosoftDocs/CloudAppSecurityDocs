@@ -1,7 +1,7 @@
 ---
 title: Connect NetDocuments
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing NetDocuments using the App Connector APIs. 
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect NetDocuments to Microsoft Defender for Cloud Apps
@@ -58,9 +58,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Select **Next**.
 1. Select **Connect NetDocuments**.
-1. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
-1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
-1. After the connector’s **Status** is marked as **Connected**, the connector is live and works.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 ## Activities limitations
 

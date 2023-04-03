@@ -1,7 +1,7 @@
 ---
 title: Connect ServiceNow
 description: This article provides information about how to connect your ServiceNow app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 02/28/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect ServiceNow to Microsoft Defender for Cloud Apps
@@ -67,9 +67,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. In the **OAuth Details** page, enter your **Client ID** and **Client Secret**. Select **Next**.
 
-1. Make sure the connection succeeded by selecting **Test now**.
-
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
@@ -100,10 +98,7 @@ To connect ServiceNow with Defender for Cloud Apps, you must have admin-level pe
 
 1. Select **Connect**.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
-
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).

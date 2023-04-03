@@ -32,11 +32,7 @@ Because Dropbox enables access to files from shared links without signing in, De
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that Dropbox was successfully connected.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After you receive a success notice, select **Close**.
-
-After connecting Dropbox, you'll receive events for 60 days prior to connection.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 > [!NOTE]
 > Any Dropbox events for adding a file are displayed in Defender for Cloud Apps as Upload file to align to all other apps connected to Defender for Cloud Apps.

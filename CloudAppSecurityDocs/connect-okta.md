@@ -1,7 +1,7 @@
 ---
 title: Connect Okta
 description: This article provides information about how to connect your Okta to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Okta to Microsoft Defender for Cloud Apps
@@ -47,9 +47,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Select **Submit** to create the token for Okta in Defender for Cloud Apps.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting Okta, you'll receive events for 60 days prior to connection.
 

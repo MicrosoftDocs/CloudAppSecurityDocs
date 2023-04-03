@@ -115,9 +115,7 @@ Repeat this step for each additional connected organization.
  >
  > The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After you receive a success notice, select **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting GitHub Enterprise Cloud, you'll receive events for 7 days prior to connection.
 

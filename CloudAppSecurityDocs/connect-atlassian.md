@@ -1,7 +1,7 @@
 ---
 title: Connect Atlassian
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Atlassian products using the App Connector APIs. 
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Atlassian to Microsoft Defender for Cloud Apps
@@ -76,6 +76,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     ![Edit connector.](media/atlassian-edit-connector.png)
 
 1. Enter the new generated new **API key** and select **Connect Atlassian**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 >[!NOTE]
 >

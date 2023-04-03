@@ -1,7 +1,7 @@
 ---
 title: Connect Workday
 description: This article provides information about how to connect your Workday app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Workday to Microsoft Defender for Cloud Apps
@@ -103,9 +103,9 @@ For more information about setting up Workday integration users, security groups
 
     ![Screenshot of authorizing access to app.](media/connect-workday-add-app-allow.png)
 
-1. Back in the Defender for Cloud Apps portal, you should see a message that Workday was successfully connected. Make sure the connection succeeded by selecting **Test API**.
+1. Back in the Defender for Cloud Apps portal, you should see a message that Workday was successfully connected.
 
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 > [!NOTE]
 > After connecting Workday, you'll receive events for seven days prior to connection.

@@ -1,7 +1,7 @@
 ---
 title: Connect Office 365
 description: This article provides information about how to connect your Office 365 to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Office 365 to Microsoft Defender for Cloud Apps
@@ -52,6 +52,7 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
 1. On the **Follow the link** page, select **Connect Office 365**.
 
 1. After Office 365 is displayed as successfully connected, select **Done**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 > [!NOTE]
 > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365 because Defender for Cloud Apps turns on any APIs that had been off by default.

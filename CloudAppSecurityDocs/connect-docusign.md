@@ -59,10 +59,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Select **Next**.
 1. In the next screen, select **Connect DocuSign**.
-1. Make sure the connection succeeded by selecting **Test now**. The test might take a few minutes. After you see a success notice, select **Close**.
-1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
-1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
-1. Note that SaaS Security Posture Management (SSPM) data will be shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
+
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+
+> [!NOTE]
+> SaaS Security Posture Management (SSPM) data will be shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
 
 ## Limitations
 

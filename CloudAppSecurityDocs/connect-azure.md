@@ -1,7 +1,7 @@
 ---
 title: Connect Azure 
 description: This article provides information about how to connect Azure to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 04/02/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Azure to Microsoft Defender for Cloud Apps
@@ -28,6 +28,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. In the **Connect Microsoft Azure** page, select **Connect Microsoft Azure**.
 
     ![Connect Azure.](media/connect-azure.png)
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 > [!NOTE]
 > After connecting Azure, data will be pulled. You will see data from then onwards.

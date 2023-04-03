@@ -1,7 +1,7 @@
 ---
 title: Connect Google Workspace 
 description: This article provides information about how to connect your Google Workspace to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 03/13/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 
@@ -126,9 +126,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     1. Select **Connect Google Workspaces**.
 
-    1. Make sure the connection succeeded by selecting **Test now**.  
-    Testing may take a couple of minutes.  
-    After receiving a success notice, select **Done** and close the Google Workspace page.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting Google Workspace, you'll receive events for seven days prior to connection.
 

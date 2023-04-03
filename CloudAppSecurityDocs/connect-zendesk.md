@@ -1,7 +1,7 @@
 ---
 title: Connect Zendesk
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zendesk using the App Connector APIs. 
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Zendesk to Microsoft Defender for Cloud Apps
@@ -66,7 +66,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     - **Client endpoint**: Zendesk URL. It should be `<account_name>.zendesk.com`.
 
 1. In the **External link** page, select **Connect Zendesk**.
-1. Make sure the connection succeeded by selecting **Test now**. Testing may take a few minutes. After receiving a success notice, select **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
 

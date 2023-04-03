@@ -55,11 +55,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Back in the Microsoft 365 Defender portal, you should receive a message saying that Box was successfully connected.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
-
-Box is now connected to Defender for Cloud Apps.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting Box:
 

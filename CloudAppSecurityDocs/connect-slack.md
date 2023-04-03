@@ -1,7 +1,7 @@
 ---
 title: Connect Slack
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Slack using the App Connector APIs. 
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Slack to Microsoft Defender for Cloud Apps
@@ -35,6 +35,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. You'll be redirected to the Slack page. Make sure the org Owner is already logged into the Slack organization.
 
 1. In the Slack Authorization page, make sure to choose the correct organization from the dropdown in the top-right corner.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
     >[!NOTE]
     >
