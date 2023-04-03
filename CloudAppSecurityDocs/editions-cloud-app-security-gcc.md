@@ -34,7 +34,6 @@ Microsoft Defender for Cloud Apps for US Government offers parity with the Micro
 
 | Feature Name                           | Description                                                  | GCC     | GCC High | DoD     |
 | -------------------------------------- | ------------------------------------------------------------ | ------- | -------- | ------- |
-| **Microsoft Sentinel integration**         | Sharing alerts and Shadow IT Discovery telemetry with Microsoft Sentinel |  | Roadmap  | Roadmap |
 | **Microsoft Secure Score integration** | Surfacing Microsoft Defender for Cloud Apps controls in Microsoft Secure Score | Roadmap | Roadmap  | Roadmap |
 |**App governance add-on to Microsoft Defender for Cloud Apps** | App governance delivers full visibility, remediation, and governance into how Azure-connected apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. | Roadmap | Roadmap  | Roadmap |
 
