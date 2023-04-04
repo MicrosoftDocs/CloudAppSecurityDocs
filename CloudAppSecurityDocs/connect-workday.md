@@ -60,7 +60,7 @@ For more information about setting up Workday integration users, security groups
     | Client Name | Microsoft Defender for Cloud Apps |
     | Client Grant Type | Authorization Code Grant |
     | Access Token Type | Bearer |
-    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br />**Note**: For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect` |
+    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect`<br /><br /> **Note**: For US Government GCC customers, enter the following value:            `https://portal.cloudappsecuritygov.com/api/oauth/connect`<br />  For US Government GCC High customers, enter the following value: `https://portal.cloudappsecurity.us/api/oauth/connect` |
     | Non-Expiring Refresh Tokens | Yes |
     | Scope (Functional Areas) | **Staffing** and **System** |
 
