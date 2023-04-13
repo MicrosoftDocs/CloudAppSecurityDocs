@@ -564,19 +564,20 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
 
 ### Navigating to a particular URL of a suffixed app and landing on a generic page
 
-All proxies that suffix URLs are susceptible to context loss, an issue where navigating to a link loses the full path of the link and typically lands on the home page of the app. Defender for Cloud Apps is uniquely positioned to address this limitation and solve context loss by partnering with Microsoft and non-Microsoft vendors.
+In some scenarios, navigating to a link may result in the user landing on the app's home page rather than the full path of the link.
 
-If adjusting the global policy does not fix the issue, then you can workaround context loss issues as follows:
+Here is [a list of apps](https://learn.microsoft.com/en-us/defender-cloud-apps/proxy-intro-aad#known-limitations) known to suffer from context loss.
 
-1. Navigate to a URL where context loss occurs.
-1. Make a note of the suffixed URL domain including the suffix added by Defender for Cloud Apps. For example: `https://www.yammer.com.mcas.ms`.
-1. Copy the path from the original URL. For example, if the original particular URL was `https://www.yammer.com/organization/threads/threadnumber`, copy `/organization/threads/threadnumber`.
-1. Append the copied path to the suffixed domain. For example: `https://www.yammer.com.mcas.ms/organization/threads/threadnumber`.
-1. Navigate to the new suffixed URL.
+**Recommended steps**
 
-For apps experiencing context loss, please submit a support ticket. We will work with each app provider directly to resolve those issues.
+This issue can be resolved by appending ‘.mac.ms’ to the original URL.
 
-<a name="app-additional-considerations"></a>
+For example, in case the original URL is 
+
+https://www.yammer.com/organization/threads/threadnumber change it to 
+https://www.yammer.com.mcas.ms/organization/threads/threadnumber
+
+For apps experiencing context loss, open a [support ticket](support-and-ts.md).
 
 ### Blocking downloads cause PDF previews to be blocked
 
