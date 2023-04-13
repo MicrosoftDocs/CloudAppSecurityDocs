@@ -566,19 +566,21 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
 
 In some scenarios, navigating to a link may result in the user landing on the app's home page rather than the full path of the link.
 
-Here is [a list of apps](https://learn.microsoft.com/en-us/defender-cloud-apps/proxy-intro-aad#known-limitations) known to suffer from context loss.
+Here is [a list of apps](/defender-cloud-apps/proxy-intro-aad#known-limitations) known to suffer from context loss.
 
 **Recommended steps**
 
-This issue can be resolved by appending ‘.mac.ms’ to the original URL.
+This issue can be resolved by appending  `.mac.ms` to the original URL.
 
-For example, in case the original URL is 
+For example, if the original URL is:
 
-https://www.yammer.com/organization/threads/threadnumber change it to 
-https://www.yammer.com.mcas.ms/organization/threads/threadnumber
+`https://www.yammer.com/organization/threads/threadnumber`, change it to 
+`https://www.yammer.com.mcas.ms/organization/threads/threadnumber`
 
 For apps experiencing context loss, open a [support ticket](support-and-ts.md).
 
+
+<a name="app-additional-considerations"></a>
 ### Blocking downloads cause PDF previews to be blocked
 
 Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Defender for Cloud Apps to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked, with a message like this:
