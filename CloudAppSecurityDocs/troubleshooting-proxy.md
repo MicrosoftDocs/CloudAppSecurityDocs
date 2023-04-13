@@ -517,7 +517,7 @@ Sometimes during a proxied session, the **Something Went Wrong** page may appear
     1. Restart your browser session
     1. Clear history, cookies, and cache from the browser
 
-### Clipboard actions or file controls aren't being blocked
+### Clipboard actions or file controls are not being blocked
 
 The ability to block clipboard actions such as cut, copy, paste, and file controls such as download, upload, and print is required to prevent data exfiltration and infiltration scenarios. This ability enables companies to balance security and productivity for end users. If you're experiencing problems with these features, use the following steps to investigate the issue.
 
@@ -539,7 +539,7 @@ If the session is being proxied, use the following steps to verify the policy:
         1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
-### Downloads aren't being protected
+### Downloads are not being protected
 
 As an end user, downloading sensitive data on an unmanaged device might be necessary. In these scenarios, you can protect documents with Microsoft Information Protection. If the end user was not able to successfully encrypt the document, use the following steps to investigate the issue.
 
