@@ -33,7 +33,7 @@ Connecting Smartsheet to Defender for Cloud Apps gives you improved insights int
 | **Type**                           | **Name**                                                     |
 | ---------------------------------- | ------------------------------------------------------------ |
 | Built-in  anomaly detection policy | [Unusual file share activities](anomaly-detection-policy.md#unusual-activities-by-user)  <br /> [Unusual file deletion activities](anomaly-detection-policy.md#unusual-activities-by-user) <br /> [Unusual   administrative activities](anomaly-detection-policy.md#unusual-activities-by-user)  <br /> [Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user)  |
-| Activity  policy                   | Build a customized policy by the Smartsheet [Audit Log](https://smartsheet-platform.github.io/event-reporting-docs/) activities |
+| Activity  policy                   | Build a customized policy by the Smartsheet [Audit Log](https://smartsheet.redoc.ly/tag/eventsObjects) activities |
 
 >[!NOTE]
 >
