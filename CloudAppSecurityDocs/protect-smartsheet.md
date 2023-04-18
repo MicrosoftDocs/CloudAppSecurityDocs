@@ -1,7 +1,7 @@
 ---
 title: Protect your Smartsheet
 description: This article provides information about the benefits of connecting your Smartsheet app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
+ms.date: 04/17/2023
 ms.topic: article
 ---
 # How Defender for Cloud Apps helps protect your Smartsheet
