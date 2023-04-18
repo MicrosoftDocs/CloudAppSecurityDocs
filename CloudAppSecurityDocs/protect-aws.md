@@ -1,7 +1,7 @@
 ---
 title: Protect your Amazon Web Services environment
 description: This article provides information about the benefits of connecting your AWS app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/29/2023
+ms.date: 04/18/2023
 ms.topic: article
 ---
 # How Defender for Cloud Apps helps protect your Amazon Web Services (AWS) environment
@@ -24,7 +24,6 @@ Connecting AWS to Defender for Cloud Apps helps you secure your assets and detec
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Limit exposure of shared data and enforce collaboration policies](best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
-
 
 ## Control AWS with built-in policies and policy templates
 
