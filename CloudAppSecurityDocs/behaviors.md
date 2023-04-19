@@ -82,11 +82,12 @@ And then you can create a custom detection rule based on the query. For more inf
 
 **Example scenario 2**: You want to query 100 recent behaviors related to the MITRE attack technique **Valid Accounts (T1078)**:
 
+
 ```kusto
 BehaviorInfo
 | where AttackTechniques has "Valid Accounts (T1078)"
 | order by Timestamp desc 
-| Take 100
+| take 100
 ```
 
 **Example scenario 3**: Investigate all behaviors related to a specific user after understanding the user may have been compromised:
@@ -117,4 +118,5 @@ Have feedback to share? Please fill in [the feedback form](https://forms.office.
 - [Tutorial: Detect suspicious user activity with behavioral analytics](tutorial-suspicious-activity.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].
+
 
