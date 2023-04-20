@@ -69,8 +69,8 @@ Additionally, the following items should be allowed, depending on which data cen
 
 ## Access and session controls
 
-Access and session controls regions help to provide a faster user experience and to increase uptime.
-For example, user with UK IP address is likely to be served by the UK West region.
+Access and session control regions help to provide a faster user experience and to increase uptime.
+For example, a user with a UK IP address is likely to be served by the UK West region.
 When there is a high load or outage, the user may be served from a different region.
 
 Configure your firewall for reverse proxy using the settings relevant to your environment.
