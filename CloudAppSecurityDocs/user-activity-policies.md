@@ -4,6 +4,7 @@ description: This article provides instructions for creating and working with ac
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
+
 # Activity policies
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -13,7 +14,7 @@ Activity policies allow you to enforce a wide range of automated processes using
 After you set an activity detection policy, it starts to generate alerts - alerts are only generated on activities that occur after you create the policy.
 
 > [!NOTE]
-> Policies that trigger more than 50,000 matches per day, for 3 out of the last 7 days, are automatically disabled. You can try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider [saving them as queries](activity-filters-queries.md#activity-queries) instead.
+> Policies that trigger more than 200,000 matches per day, or 100,000 matches per 3 hours, may be disabled automatically. You can try refining policies by adding additional filters or, if you are using policies for reporting purposes, consider [saving them as queries](activity-filters-queries.md#activity-queries) instead.
 
 ## Custom alerts
 
@@ -87,3 +88,4 @@ Each policy is composed of the following parts:
 > [Data protection policies](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
