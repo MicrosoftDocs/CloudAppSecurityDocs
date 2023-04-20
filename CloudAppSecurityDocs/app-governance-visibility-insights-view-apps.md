@@ -49,8 +49,12 @@ You will see a list of apps and this information:
 - **Privilege level**
 - **Certification**: Indicates if an app meets stringent security and compliance standards set by Microsoft 365 or if its publisher has publicly attested to its safety
 - **App ID**
-- **Sensitivity label accessed**: Sensitivity labels on content accessed by the app.
+- **Sensitivity label accessed**: Sensitivity labels on content accessed by the app
 - **Service accessed**: Microsoft 365 services accessed by the app
+- **Community use**: Shows you how popular the app is across all your users (common, uncommon, rare)
+- **Consent grants**: Shows you all app consent grants in the last 30 days
+- **App activities**: Shows you all app activities in the last 30 days
+
 
 App governance sorts the app list alphabetically by **App name** by default. To sort the list by another app attribute, select the attribute name.
 
