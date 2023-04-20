@@ -570,12 +570,12 @@ Here's [a list of apps](/defender-cloud-apps/proxy-intro-aad#known-limitations) 
 
 **Recommended steps**
 
-This issue can be resolved by appending  `.mac.ms` to the original URL.
+This issue can be resolved by appending  `.mcas.ms` to the original URL.
 
 For example, if the original URL is:
 
-`https://www.yammer.com/organization/threads/threadnumber`, change it to 
-`https://www.yammer.com.mcas.ms/organization/threads/threadnumber`
+`https://www.github.com/organization/threads/threadnumber`, change it to 
+`https://www.github.com.mcas.ms/organization/threads/threadnumber`
 
 For apps experiencing context loss, open a [support ticket](support-and-ts.md).
 
