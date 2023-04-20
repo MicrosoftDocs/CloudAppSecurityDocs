@@ -1,7 +1,7 @@
 ---
 title: Basic setup
 description: This article explains how to provide information about your organization in Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 04/20/2023
 ms.topic: how-to
 ---
 # Basic setup for Defender for Cloud Apps
@@ -33,7 +33,9 @@ For portal access requirements, see [Portal access](network-requirements.md#port
     * To work with Microsoft Purview Information Protection integration, you must enable the [App connector for Office 365](./connect-office-365.md).
 
 > [!NOTE]
-> If you use ExpressRoute, Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps and traffic sent to Defender for Cloud Apps, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security.
+> If you use ExpressRoute, Defender for Cloud Apps is deployed in Azure and fully integrated with [ExpressRoute](/azure/expressroute/expressroute-introduction). All interactions with the Defender for Cloud Apps apps APIs and traffic sent to Defender for Cloud Apps APIs, including upload of discovery logs, is routed via ExpressRoute for improved latency, performance, and security.
+>
+> Microsoft 365 Defender portal usage is not included in the ExpressRoute integration.
 >
 > For more information about Microsoft Peering, see [ExpressRoute circuits and routing domains](/azure/expressroute/expressroute-circuit-peerings).
 

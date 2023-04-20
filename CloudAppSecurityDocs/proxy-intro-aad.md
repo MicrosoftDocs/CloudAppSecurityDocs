@@ -184,10 +184,8 @@ Our current Conditional Access App Control session restrictions enforcement solu
 In the following applications, we've encountered scenarios where navigating to a link may result in loss of the full path of the link and typically the user lands on the home page of the app.
   - ArcGIS
   - GitHub
-  - Microsoft Dynamics 365 CRM
   - Microsoft Power Automate
   - Microsoft Power Apps
-  - Microsoft Yammer
   - Workplace from Meta
 
 - **Session policies are valid for files up to 50 MB in size**  
