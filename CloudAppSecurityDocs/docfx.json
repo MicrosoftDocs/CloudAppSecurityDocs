@@ -37,9 +37,9 @@
       "breadcrumb_path": "/defender-cloud-apps/bread/toc.json",
       "searchScope": ["Defender for Cloud Apps"],
       "titleSuffix": "Microsoft Defender for Cloud Apps",
-      "author": "dcurwin",
-      "manager": "dcurwin",
-      "ms.author": "dacurwin",
+      "author": "batamig",
+      "manager": "raynew",
+      "ms.author": "bagol",
       "ms.collection": "M365-security-compliance",
       "ms.service": "defender-for-cloud-apps",
       "ms.suite": "ems"
