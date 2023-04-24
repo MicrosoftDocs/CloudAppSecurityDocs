@@ -102,6 +102,8 @@ The following tables list, per cloud app, which abilities are supported with App
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
 |Workplace by Meta|||||
 | Zendesk  |  |  |  |  |
+| Zoom  |  |  |  | Preview  |
+
 
 ### Information protection
 
