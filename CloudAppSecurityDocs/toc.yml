@@ -290,6 +290,8 @@ items:
       href: connect-workplace.md
     - name: Connect Zendesk
       href: ./connect-zendesk.md
+    - name: Connect Zoom
+      href: connect-zoom.md
   - name: Conditional Access App Control
     items:
     - name: Protect apps with Conditional Access App Control
@@ -679,6 +681,8 @@ items:
         href: classic-connect-workplace.md
       - name: Connect Zendesk
         href: classic-connect-zendesk.md
+      - name: Connect Zoom
+        href: classic-connect-zoom.md
     - name: Conditional Access App Control
       items:
       - name: Protect apps with Conditional Access App Control
