@@ -56,6 +56,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Citrix share file  |  |  |  |   |
 | DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
@@ -114,6 +115,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| Citrix share file  |  |  |  |   |
 | DocuSign          |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
 | Egnyte  |  |  |  |  | |

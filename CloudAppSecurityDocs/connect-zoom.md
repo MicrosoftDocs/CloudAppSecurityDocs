@@ -33,7 +33,9 @@ Before connecting Zoom to Defender for Cloud Apps, make sure that you have the f
 
     <!--Tbd screenshot-->
 
-You're redirected to the Zoom page while the process continues. <!--do they need to do anything there? can we get a screenshot?-->
+    You're redirected to the Zoom page, where you're prompted to accept the connection.
+
+1. Accept the connection in Zoom.
 
    > [!NOTE]
    >

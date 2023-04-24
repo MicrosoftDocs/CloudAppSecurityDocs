@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 03/29/2023
+ms.date: 04/24/2023
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -28,6 +28,13 @@ For more information on what's new with other Microsoft Defender security produc
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
 ## Defender for Cloud Apps release 250
+
+April 24, 2023
+
+- Zoom App connector for SSPM (Public preview)
+
+Defender for Cloud apps now supports a new Zoom App connector for SSPM. For more information, see [Connect Zoom to Microsoft Defender for Cloud Apps](connect-zoom.md).  
+
 
 April 2, 2023
 

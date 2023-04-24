@@ -33,7 +33,11 @@ Before connecting Zoom to Defender for Cloud Apps, make sure that you have the f
 
     <!--Tbd screenshot-->
 
-You're redirected to the Zoom page while the process continues. <!--do they need to do anything there? can we get a screenshot?-->
+    You're redirected to the Zoom page, where you're prompted to accept the connection.
+
+1. Accept the connection in Zoom.
+
+1. Watch for the updates to appear on the Microsoft 365 **Secure score** page. For more information, see the [Microsoft Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide).
 
    > [!NOTE]
    >
