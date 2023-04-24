@@ -85,22 +85,23 @@ The following tables list, per cloud app, which abilities are supported with App
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
 | Citrix Share file          |  |  | | Preview  |
-| DocuSign          |  |  | | |
+| DocuSign          |  |  | | Preview  |
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
-| GitHub            |                                      | ✔                         |                           |                           |
+| GitHub            |                                      | ✔                         |                           | Preview                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
-| Office 365        | ✔                                    | ✔                         | ✔                         |                   |
-| Okta              |                                      | Not applicable            | Not applicable            |             |
+| Office 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
+| Okta              |                                      | Not applicable            | Not applicable            | Preview            |
 | OneLogin | |  |  |  |
-| Service  Now      |                                      |                           |                           | Preview (At General Availability the licensing of this capability may be changed) |
-| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview (At General Availability the licensing of this capability may be changed)                  |
+| Service  Now      |                                      |                           |                           | ✔ |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
 | Slack |  |  |  |  |
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
+|Workplace by Meta|||||
 | Zendesk  |  |  |  |  |
 | Zoom  |  |  |  | Preview  |
 
