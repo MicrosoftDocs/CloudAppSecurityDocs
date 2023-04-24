@@ -99,6 +99,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Webex             |                                      | Not applicable            | Not applicable            |             |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
 | Zendesk  |  |  |  |  |
+| Zoom  |  |  |  | Preview  |
 
 ### Information protection
 
