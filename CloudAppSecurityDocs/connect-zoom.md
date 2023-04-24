@@ -9,7 +9,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zoom environment using the app connector API. This connection gives you visibility into and control over Zoom use. <!--add link to concept when we have it-->
+This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Zoom environment using the app connector API. This connection gives you visibility into and control over Zoom use.
 
 
 ## Prerequisites
@@ -27,15 +27,20 @@ Before connecting Zoom to Defender for Cloud Apps, make sure that you have the f
 
 1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select **+Connect an app**, and then **Zoom**.
+1. In the **App connectors** page, select **+ Connect an app**, and then **Zoom**.
+    :::image type="content" source="media/connect-zoom.png" alt-text="Screenshot of the App Connectors > Zoom pop-up.":::
 
-1. In the pop-up, give the connector a descriptive name, and select **Connect in Zoom**.
+1. In the **Instance name** page of the pop-up, give the connector a descriptive name, and select **Next**.
 
-    <!--Tbd screenshot-->
+1. In the **External link** page, select **Connect Zoom**.  You're redirected to the Zoom page, where you're prompted to allow the connection.
 
-    You're redirected to the Zoom page, where you're prompted to accept the connection.
+1. In Zoom, select to allow the connection. 
 
-1. Accept the connection in Zoom.
+    In Microsoft 365 Defender, the **External link** page of the pop-up is updated to confirm that you're connected. For example:
+
+    :::image type="content" source="media/connect-zoom-success.png" alt-text="Screenshot of the success message in Microsoft 365 Defender.":::
+
+1. In the Microsoft 365 Defender pop-up, select **Done**.
 
    > [!NOTE]
    >
