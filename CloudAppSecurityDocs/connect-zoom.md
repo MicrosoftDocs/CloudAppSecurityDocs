@@ -5,7 +5,7 @@ ms.date: 04/24/2023
 ms.topic: how-to
 ---
 
-# Classic portal: Connect Zoom to Microsoft Defender for Cloud Apps
+# Connect Zoom to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
