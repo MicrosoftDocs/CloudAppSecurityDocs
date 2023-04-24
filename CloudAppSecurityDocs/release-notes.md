@@ -33,7 +33,7 @@ April 24, 2023
 
 - Zoom App connector for SSPM (Public preview)
 
-Defender for Cloud apps now supports a new Zoom App connector for SSPM. For more information, see [Connect Zoom to Microsoft Defender for Cloud Apps](connect-zoom.md).  
+    Defender for Cloud apps now supports a new Zoom App connector for SSPM. For more information, see [Connect Zoom to Microsoft Defender for Cloud Apps](connect-zoom.md).  
 
 
 April 2, 2023
