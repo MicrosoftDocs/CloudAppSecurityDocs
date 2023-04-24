@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Connect apps to get visibility and control 
 description: Classic portal -  This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 01/19/2023
+ms.date: 04/24/2023
 ms.topic: how-to
 ROBOTS: NOINDEX
 ---
@@ -73,6 +73,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Zoom  |  |  |  |   |
 
 ### User, app governance, and security configuration visibility
 
@@ -126,6 +127,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
 | Zendesk  |  |  |  |  |  |
+| Zoom  |  |  |  |   |
 
 ## Prerequisites
 
