@@ -14,7 +14,7 @@ The custom parser enables you to use logs from unsupported firewalls by followin
 
 To configure a custom parser:
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Create snapshot report**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then, in the top-right corner, select the **Actions** menu and select **Create Cloud Discovery snapshot report**.
 
     ![Create new snapshot report.](media/create-new-snapshot-report.png)
 
@@ -51,10 +51,9 @@ To configure a custom parser:
 12. A notification banner will appear in the status bar at the top of the **Cloud Discovery dashboard**. The banner updates you with the processing status of your log files.
     ![processing log file menu bar.](media/processing-log-file-menu-bar.png)
 
-13. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by clicking the link in the status bar, or by going to the Settings cog and selecting **Cloud Discovery settings**.
+13. After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully. At this point, you can view the report either by selecting the link in the status bar, or you can go Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**, and then under **Cloud Discovery**, select **Snapshot reports**.
 
-    ![Discovery settings tab.](media/discovery-settings-tab.png)
-14. Then selecting **Manage snapshot reports** and select your snapshot report.
+14. Then select your snapshot report.
 
     ![snapshot report management.](media/snapshot-report-management.png)
 

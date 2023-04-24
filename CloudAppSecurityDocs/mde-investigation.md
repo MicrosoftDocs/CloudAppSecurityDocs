@@ -14,8 +14,8 @@ The Microsoft Defender for Cloud Apps [integration with Microsoft Defender for E
 
 After you integrate Defender for Endpoint with Defender for Cloud Apps, you can investigate discovered device data in the Cloud Discovery dashboard.
 
-1. In Defender for Cloud Apps, select **Cloud Discovery** and then **Cloud Discovery dashboard**.
-2. In the top navigation bar, under **Continuous reports**, select **Win10 endpoint users**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Dashboard** tab.
+2. In the top-right corner, select **Win10 endpoint users**.
   ![Defender for Endpoint report.](media/win10-dashboard-report.png)
 3. Across the top, you'll see the number of discovered devices added after the integration.
 4. Select the **Devices** tab.
@@ -50,9 +50,9 @@ As with any other Cloud Discovery source, you can export the data from the Win10
 
 Use the following steps to gain more granular visibility on device's network activity in Microsoft Defender for Endpoint:
 
-1. In Defender for Cloud Apps, under **Discovery** and then select **Devices**.
-1. Select the machine you want to investigate and then in the top-right select **View in Microsoft Defender for Endpoint**.
-1. In Microsoft 365 Defender, under **Devices** > {selected device}, select **Timeline**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Devices** tab.
+1. Select the machine you want to investigate and then in the top-left select **View in Microsoft Defender for Endpoint**.
+1. In Microsoft 365 Defender, under **Assets** -> **Devices** > {selected device}, select **Timeline**.
 1. Under **Filters**, select **Network events**.
 1. Investigate the device's network events as required.
 
@@ -62,10 +62,10 @@ Use the following steps to gain more granular visibility on device's network act
 
 Use the following steps to gain more granular visibility on app-related network events in Defender for Endpoint:
 
-1. In Defender for Cloud Apps, under **Discovery** select **Discovered apps**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. Then select the **Discovered apps** tab.
 1. Select the app you want to investigate to open its drawer.
 1. Select the app's **Domain** list and then copy the list of domains.
-1. In Microsoft 365 Defender, under **Devices**, select **Advanced hunting**.
+1. In Microsoft 365 Defender, under **Hunting**, select **Advanced hunting**.
 1. Paste the following query and replace `<DOMAIN_LIST>` with the list of domains you copied earlier.
 
     ```kusto

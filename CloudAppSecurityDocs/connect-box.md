@@ -39,25 +39,23 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
         > [!NOTE]
         > If you are an existing Adallom customer, and your console URL is for Adallom and not Defender for Cloud Apps, use this app serial number: `bwahmilhdlpbqy2ongkl119o3lrkoshc`.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select the plus sign (**+**) button and then select **Box**.
+1. In the **App connectors** page, select **+Connect an app**, and then select **Box**.
 
-    ![connect box.](media/connect-box.png "connect box")
+    ![Connect Box.](media/connect-box.png "Connect Box")
 
-1. In the **Box settings** pop-up, select **Follow this link**.
+1. In the **Instance name** page, enter a name for the connection. Then select **Next**.
+
+1. In the **Follow the link** pop-up, select **Connect Box**.
 
 1. The Box sign-in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Box app.
 
 1. Box asks you if you want to allow Defender for Cloud Apps access to your team information, activity log, and perform activities as a team member. To proceed, select **Allow**.
 
-1. Back in the Defender for Cloud Apps portal, you should receive a message saying that Box was successfully connected.
+1. Back in the Microsoft 365 Defender portal, you should receive a message saying that Box was successfully connected.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
-
-Box is now connected to Defender for Cloud Apps.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting Box:
 

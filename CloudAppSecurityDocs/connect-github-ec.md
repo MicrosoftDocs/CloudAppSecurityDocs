@@ -30,7 +30,7 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 1. Verify [your organization's domains](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/verifying-your-organizations-domain).
 
     > [!NOTE]
-    > Make sure to verify each of the managed domains listed in your Defender for Cloud Apps portal. To view your managed domains, in Defender for Cloud Apps, browse to **Settings** > **Organization details** > **Managed domains**.
+    > Make sure to verify each of the managed domains listed in your Defender for Cloud Apps settings. To view your managed domains, go to the Microsoft 365 Defender portal, and select **Settings**. Then choose **Cloud Apps**. Under **System**, choose **Organizational details**, and then go to the **Managed domains** section.
 
 ### Configure GitHub Enterprise Cloud
 
@@ -71,18 +71,24 @@ Repeat this step for each additional connected organization.
 
 ### Configure Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
-1. In the **App connectors** page, select the plus button followed by **GitHub**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then select **Connect in GitHub**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **GitHub**.
+1. In the next window, give the connector a descriptive name, and then select **Next**.
+1. In the **Enter details** window, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier.
 
-    ![Screenshot showing details of connector wizard.](media/connect-github-ec/1.jpg)
-1. **Enterprise slug**, also known as the enterprise name, is needed for supporting SSPM capabilities. To find the **Enterprise slug**:
+   :::image type="content" source="media/connect-github-connect-app.png" alt-text="Connect GitHub.":::
+
+   For **Enterprise slug**, also known as the enterprise name, is needed for supporting SSPM capabilities. To find the **Enterprise slug**:
    1. Select the **GitHub Profile picture** -> **your enterprises**.
    1. Select **your enterprise account** and choose the account you want to connect to Microsoft Defender for Cloud Apps.
    1. Confirm that the URL is the enterprise slug. For instance, in this example `https://github.com/enterprises/testEnterprise` *testEnterprise* is the enterprise slug.
 
-   1. The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
+1. Select **Next**.
+
+1. Select **Connect GitHub**.
+
+    The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
 1. Request organization access and authorize the app to give Defender for Cloud Apps access to your GitHub organization.
 
@@ -109,9 +115,7 @@ Repeat this step for each additional connected organization.
  >
  > The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After you receive a success notice, select **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting GitHub Enterprise Cloud, you'll receive events for 7 days prior to connection.
 

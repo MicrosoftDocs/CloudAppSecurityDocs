@@ -48,13 +48,13 @@ We recommend starting policy creation based on an existing template whenever pos
 |Sharing control|Publicly accessible S3 buckets (AWS)|Alert when an AWS S3 bucket is publicly shared.|
 |Sharing control|Stale externally shared files|Alert when externally shared files haven't been modified for at least 6 months.|
 
-To see the full list of policy templates, in the portal, go to **Control** -> **Templates**
+To see the full list of policy templates, in the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**.
 
 :::image type="content" source="media/policy-templates.png" alt-text="Policy templates." lightbox="media/policy-templates.png":::
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

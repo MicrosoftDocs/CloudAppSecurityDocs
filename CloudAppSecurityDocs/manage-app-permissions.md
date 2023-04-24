@@ -26,7 +26,7 @@ The **OAuth** page displays information about app permissions in your connected 
 
 To access the OAuth tab:
 
-In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate**, and then **OAuth apps**.
+In the Microsoft 365 Defender portal, under **Cloud Apps** select **OAuth apps**.
 
 ![app permissions.](media/app-permissions.png)
 
@@ -53,7 +53,7 @@ The OAuth apps page provides the following information about each OAuth app that
 
     - Select **Permissions** to view a full list of permissions that were granted to the app.
     - Under **Community use**, you can view how common the app is in other organizations.
-    - Select **Related activity** to view the activities that are listed in the activity log related to this app.
+    - Select **App activity** to view the activities that are listed in the activity log related to this app.
 
 2. To ban the app, select the ban icon at the end of the app row in the table.
 

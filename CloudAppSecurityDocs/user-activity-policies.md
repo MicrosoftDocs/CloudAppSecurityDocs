@@ -28,7 +28,7 @@ You can set activity alerts to be sent to yourself or to the user when these eve
 
 To create a new activity policy, follow this procedure:
 
-1. Go to **Control** > **Policies** > **Threat detections**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Threat detections** tab.
 
 1. Click **Create policy** and select **Activity policy**.
 
@@ -44,9 +44,9 @@ To create a new activity policy, follow this procedure:
     >
     >   ![Screenshot of filter settings, showing location field is set.](media/activity-example-location-isset.png)
     >
-    > - When a filter is set to "does not equal" and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal "Hybrid Azure AD joined"** will not filter out events that do not contain **Device tag**, even if the device is Azure AD joined.
+    > - When a filter is set to *does not equal* and the attribute does not exist on the event, the event will not be filtered out. For example, filtering on **Device Tag does not equal "Hybrid Azure AD joined"** will not filter out events that do not contain **Device tag**, even if the device is Azure AD joined.
 
-1. Under **Activity match parameters**, select when a policy violation will be triggered. Choose to trigger when a single activity matches the filters or only when a specified number of **Repeated activities** are detected.
+1. Under **Create filters for the policy**, select when a policy violation will be triggered. Choose to trigger when a **Single activity** matches the filters or only when a specified number of **Repeated activities** are detected.
     - If you choose **Repeated activity**, you can set **In a single app**. This setting will trigger a policy match only when the repeated activities occur in the same app. For example, five downloads in 30 minutes from Box trigger a policy match.
 
 1. Configure the **Actions** that should be taken when a match is found.

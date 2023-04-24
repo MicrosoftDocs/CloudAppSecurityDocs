@@ -36,7 +36,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 ### Steps
 
 1. This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
-2. Optional: you can [customize anomaly detection policies](anomaly-detection-policy.md#scope-anomaly-detection-policies):
+1. Optional: you can [customize anomaly detection policies](anomaly-detection-policy.md#scope-anomaly-detection-policies):
 
     - Customize the detection scope in terms of users and groups
 
@@ -44,7 +44,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
     - Set your sensitivity preference for alerting
 
-3. Create the anomaly detection policy.
+1. Create the anomaly detection policy.
 
 ## Detect suspicious activity from an "on-leave" employee
 
@@ -60,13 +60,13 @@ Detect when a user, who is on unpaid leave and should not be active on any organ
 
 1. On the [User groups](user-groups.md) screen, select **Create user group** and import the relevant Azure AD group.
 
-2. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
-3. Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
+1. Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
 
-4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
+1. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
 
-5. Create the file policy.
+1. Create the file policy.
 
 ## Detect and notify when outdated browser OS is used
 
@@ -78,13 +78,13 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
 
-2. Set the filter **User agent tag** equals to **Outdated browser** and **Outdated operating system**.
+1. Set the filter **User agent tag** equals to **Outdated browser** and **Outdated operating system**.
 
-3. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components.
+1. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components.
 
-4. Create the Activity policy.
+1. Create the Activity policy.
 
 ## Detect and alert when Admin activity is detected on risky IP addresses
 
@@ -98,17 +98,17 @@ Detect admin activities performed from and IP address that is considered a risky
 
 ### Steps
 
-1. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Activity policy**.
 
-2. Set **Act on** to **Single activity**.
+1. Set **Act on** to **Single activity**.
 
-3. Set the filter **IP address** to **Category** equals **Risky**
+1. Set the filter **IP address** to **Category** equals **Risky**
 
-4. Set the filter **Administrative activity** to **True**
+1. Set the filter **Administrative activity** to **True**
 
-5. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components **CC the user's manager**.
+1. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components **CC the user's manager**.
 
-6. Create the activity policy.
+1. Create the activity policy.
 
 ## Detect activities by service account from external IP addresses
 
@@ -123,15 +123,15 @@ Detect service account activities originating from a non-internal IP addresses. 
 
 ### Steps
 
-1. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
-2. Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
+1. Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
 
-3. Set the filter **IP address** to **Category** does not equal **Other** and **Corporate**.
+1. Set the filter **IP address** to **Category** does not equal **Other** and **Corporate**.
 
-4. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+1. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
-5. Create the policy.
+1. Create the policy.
 
 ## Detect mass download (data exfiltration)
 
@@ -143,14 +143,14 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
-2. Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive device-based activities.
+1. Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive device-based activities.
 
-3. Set the filter **Activity types** equals to and then select all relevant download activities.
+1. Set the filter **Activity types** equals to and then select all relevant download activities.
 
-4. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
-5. Create the policy.
+1. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+1. Create the policy.
 
 ## Detect potential Ransomware activity
 
@@ -192,16 +192,16 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
-2. Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
+1. Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
 
-3. Set the filter **User** to **From group** equals and select all the related admin group as **Actor only**.
+1. Set the filter **User** to **From group** equals and select all the related admin group as **Actor only**.
 
-4. Set the filter **Activity type** equals to all activities that relate to password updates, changes, and resets.
+1. Set the filter **Activity type** equals to all activities that relate to password updates, changes, and resets.
 
-5. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
-6. Create the policy.
+1. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+1. Create the policy.
 
 ## Detect suspicious inbox manipulation rules
 
@@ -241,7 +241,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous file shares by a user
 
@@ -255,7 +255,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Detect anomalous activities from infrequent country
 
@@ -269,7 +269,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country/region. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
 > Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Defender for Cloud Apps does not generate alerts for new locations.
@@ -286,11 +286,11 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. For more information, see [Anomaly detection policies](anomaly-detection-policy.md).
 
-2. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

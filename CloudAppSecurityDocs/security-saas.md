@@ -25,7 +25,7 @@ Your organization must have Microsoft Defender for Cloud Apps licenses.
     > - Currently only Salesforce and ServiceNow are supported with SaaS Security Posture Management Capabilities.
     > - It's possible to configure one instance for each app.
 
-1. After you connected the application via Defender for Cloud Apps, make sure the connector is set to show data in Microsoft Secure Score. To verify it, in Defender for Cloud Apps portal, under **Connected apps**, open the instance drawer and make sure there is a field **Secure Score insights: Main instance**.
+1. After you connected the application via Defender for Cloud Apps, make sure the connector is set to show data in Microsoft Secure Score. To verify it, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, choose **App Connectors**. Then open the instance drawer and make sure there is a field **Secure Score insights: Main instance**.
 
     ![secure_score_instance_in_Defender_for_Cloud_Apps.](media/security-saas-secure-score-main-instance-drawer.png)
 

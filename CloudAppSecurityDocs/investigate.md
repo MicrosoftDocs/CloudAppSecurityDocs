@@ -10,41 +10,19 @@ ms.topic: how-to
 
 After Microsoft Defender for Cloud Apps runs in your cloud environment, you'll need a stage of learning and investigating. Learn to use the Microsoft Defender for Cloud Apps tools to gain a deeper understanding of what's happening in your cloud environment. Based on your particular environment and how it's being used, you can identify the requirements for protecting your organization from risk. This article describes how to do an investigation to get a better understanding of your cloud environment.
 
-## Dashboards
-
-The following dashboards are available to help you investigate apps in your cloud environment:
-
-|Dashboard|Description|
-|---------------|-----------------|
-|Main dashboard|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations).|
-|App dashboard: overview|Overview of app usage per location, usage graphs per number of users.|
-|App dashboard: info|Information about app details, security, and compliance.|
-|App dashboard: insights  
-*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level.|
-|App dashboard: files  
-*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
-|App dashboard: accounts|Overview of all accounts/users linked to the app.|
-|App dashboard: OAuth apps  
-*(where applicable)*|Drill down into OAuth apps currently deployed, like Google Workspace, and define policies.|
-|App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
-|App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
-|App dashboard: special privileged accounts  
-*(Salesforce only)*|Overview of users by privileged user type.|
-|User dashboard|A complete overview of the user profile in the cloud, locations, recent activities, related alerts.|
-
 ## <a name="sanctionapp"></a>Tag apps as sanctioned or unsanctioned
 
 An important step to understanding your cloud is to tag apps as sanctioned or unsanctioned. After you sanction an app, you can filter for apps that aren't sanctioned and start migration to sanctioned apps of the same type.
 
-- In the Defender for Cloud Apps console, go to the App catalog or Discovered apps.
+- In the Microsoft 365 Defender portal, under **Cloud Apps**, go to the **Cloud app catalog** or **Cloud discovery** - > **Discovered apps**.
 
-- In the list of apps, on the row in which the app you want to tag as sanctioned appears, choose the three dots at the end of the row ![Tag as sanctioned dots.](media/sanction-three-dots.png "Tag as sanctioned dots") and choose **Mark as sanctioned**.
+- In the list of apps, on the row in which the app you want to tag as sanctioned appears, choose the three dots at the end of the row ![Tag as sanctioned dots.](media/sanction-three-dots.png "Tag as sanctioned dots") and choose **Sanctioned**.
 
     ![Tag as sanctioned.](media/mark-as-sanctioned.png "tag as sanctioned")
 
 ## Use the investigation tools
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go to **Investigate** and then look at the **Activity log** and filter by a specific app. Check the following items:
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to the **Activity log** and filter by a specific app. Check the following items:
 
     - Who is accessing your cloud environment?
 
@@ -58,7 +36,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     - Are failed logins coming from expected IP addresses?
 
-2. Go to **Investigate** and then **Files**, and check the following items:
+2. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Files**, and check the following items:
 
     - How many files are shared publicly so that anyone can access them without a link?
 
@@ -68,7 +46,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     - Are any of the files being shared with someone's personal account?
 
-3. Go to **Investigate** and then **Users and accounts**, and check the following items:
+3. In the Microsoft 365 Defender portal, go to **Identities**, and check the following items:
 
     - Have any accounts been inactive in a particular service for a long time? Maybe you can revoke the license for that user to that service.
 
@@ -80,7 +58,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     - You can drill down into the user's account by selecting the three dots at the end of the user's account row and selecting an action to take. Take an action such as **Suspend user** or **Remove user's collaborations**. If the user was imported from Azure Active Directory, you can also select **Azure AD account settings** to get easy access to advanced user management features. Examples of management features include group management, MFA, details about the user's sign ins, and the ability to block sign in.
 
-4. Go to **Investigate**, followed by **Connected apps** then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check:
+4. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected Apps**, select **App connectors**, then select an app. The app dashboard opens and gives you information and insights. You can use the tabs across the top to check:
 
     - What kind of devices are your users using to connect to the app?
 
@@ -98,7 +76,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
     ![App dashboard.](media/investigate-app.png "investigate app")
 
-5. Go to the **Cloud Discovery dashboard** and check the following items:
+5. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Cloud Discovery**. Select the **Dashboard** tab and check the following items:
 
     - What cloud apps are being used, to what extent, and by which users?
 
@@ -116,7 +94,7 @@ An important step to understanding your cloud is to tag apps as sanctioned or un
 
 Let's say that you assume you don't have any access to your cloud environment by risky IP addresses. As an example, let's say Tor. But you create a policy for risk IPs just to make sure:
 
-1. In the portal, go to **Control** and choose **Templates**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**.
 
 2. Choose the **Activity policy** for the **Type**.
 
@@ -128,9 +106,9 @@ Let's say that you assume you don't have any access to your cloud environment by
 
     ![Example policy for risky IPs.](media/example-policy-risky-ips.png "example policy risky ips")
 
-Now that you have the policy in place, you're surprised to see that you get an alert that the policy was violated.
+Now that you have the policy in place, you discover to see that you have an alert that the policy was violated.
 
-1. Go to the **Alerts** page and view the alert about the policy violation.
+1. In the Microsoft 365 Defender portal, go to **Incidents & alerts** -> **Alerts** and view the alert about the policy violation.
 
 2. If you see that it looks like a real violation, you want to contain risk or remediate it.
 

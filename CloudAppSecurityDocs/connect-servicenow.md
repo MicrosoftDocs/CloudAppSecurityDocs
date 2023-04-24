@@ -1,7 +1,7 @@
 ---
 title: Connect ServiceNow
 description: This article provides information about how to connect your ServiceNow app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 02/28/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect ServiceNow to Microsoft Defender for Cloud Apps
@@ -24,17 +24,17 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
     > [!NOTE]
     > The username/password provided are only used for API token generation and are not saved after the initial connection process.
 
-2. In the **Filter navigator** search bar, type **OAuth** and select **Application Registry**.
+1. In the **Filter navigator** search bar, type **OAuth** and select **Application Registry**.
 
-3. In the **Application Registries** menu bar, select **New** to create a new OAuth profile.
+1. In the **Application Registries** menu bar, select **New** to create a new OAuth profile.
 
     ![ServiceNow new OAuth profile.](media/servicenow-app-registry.png)
 
-4. Under **What kind of OAuth application?**, select **Create an OAuth API endpoint for external clients**.
+1. Under **What kind of OAuth application?**, select **Create an OAuth API endpoint for external clients**.
 
     ![ServiceNow OAuth type.](media/servicenow-oauth-app-type.png)
 
-5. Under **Application Registries New record** fill in the following fields:
+1. Under **Application Registries New record** fill in the following fields:
 
     - **Name** field, name the new OAuth profile, for example, CloudAppSecurity.
 
@@ -48,23 +48,26 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     ![ServiceNow profile IDs.](media/servicenow-profile-ids.png)
 
-6. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-7. In the **App connectors** page, select the plus button and then **ServiceNow**.
+1. In the **App connectors** page, select **+Connect an app**, and then **ServiceNow**.
 
     ![connect ServiceNow.](media/connect-servicenow.png "connect ServiceNow")
 
-8. In the pop-up, add your ServiceNow user ID, password, instance URL, Client ID, and Client secret in the appropriate boxes. To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
+1. In the next window, give the connection a name and select **Next**.
+1. In the **Enter details** page, select **Connect using OAuth token (recommended)**. Select **Next**.
 
-    ![ServiceNow user ID.](media/servicenow-userid.png)
-
-9. Select **Connect**.
+1. In the **Basic Details** page, add your ServiceNow user ID, password, and instance URL in the appropriate boxes. Select **Next**.
 
     ![ServiceNow connect to CAS.](media/servicenow-portal-connect.png "ServiceNow connect in portal")
 
-10. Make sure the connection succeeded by selecting **Test now**.
+    - To find your ServiceNow User ID, in the ServiceNow portal, go to **Users** and then locate your name in the table.
 
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
+        ![ServiceNow user ID.](media/servicenow-userid.png)
+
+1. In the **OAuth Details** page, enter your **Client ID** and **Client Secret**. Select **Next**.
+
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
@@ -74,28 +77,28 @@ To connect ServiceNow with Defender for Cloud Apps, you must have admin-level pe
 
 1. Sign in with an Admin account to your ServiceNow account.
 
-2. Create a new service account for Defender for Cloud Apps and attach the Admin role to the newly created account.
+1. Create a new service account for Defender for Cloud Apps and attach the Admin role to the newly created account.
 
-3. Make sure the REST API plug-in is turned on.
+1. Make sure the REST API plug-in is turned on.
 
     ![ServiceNow account.](media/servicenow-account.png "ServiceNow account")
 
-4. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Sanctioned apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-5. In the ServiceNow row, select **Connect** in the **App Connector status** column, or select the **Connect an app** button and then **ServiceNow**.
+1. In the **App connectors** page, select **+Connect an app**, and then **ServiceNow**.
 
    ![connect ServiceNow.](media/connect-servicenow.png "connect ServiceNow")
 
-6. In the ServiceNow settings page, on the API tab, add your ServiceNow user ID, password, and instance URL in the appropriate boxes.
+1. In the next window, give the connection a name and select **Next**.
+1. In the **Enter details** page, select **Connect using username and password only**. Select **Next**.
 
-7. Select **Connect**.
+1. In the **Basic Details** page, add your ServiceNow user ID, password, and instance URL in the appropriate boxes. Select **Next**.
 
     ![ServiceNow update password.](media/servicenow-update-password.png "ServiceNow update password")
 
-8. Make sure the connection succeeded by selecting **Test API**.
+1. Select **Connect**.
 
-    Testing may take a couple of minutes. After receiving a success notice, select **Close**.
-
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 After connecting ServiceNow, you'll receive events for seven days prior to connection.
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](troubleshooting-api-connectors-using-error-messages.md).
