@@ -14,7 +14,7 @@ You can create app discovery policies to alert you when new apps are detected. D
 
 Discovery policies enable you to set alerts that notify you when new apps are detected within your organization.
 
-1. Go to **Control** > **Policies** > **Shadow IT**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
 
 1. Select **Create policy** and then select **App discovery policy**.
 
@@ -38,7 +38,7 @@ Discovery policies enable you to set alerts that notify you when new apps are de
     - Selecting **Save alert settings as the default for your organization** enables future policies to use the setting.
     - If you have a default setting, you can select **Use your organization's default settings**.
 
-1. Select **Governance** actions to apply when an app matches this policy. It can tag policies as **Sanctioned**, **Unsanctioned**, or a custom tag.
+1. Select **Governance** actions to apply when an app matches this policy. It can tag policies as **Sanctioned**, **Unsanctioned**, **Monitored**, or a custom tag.
 
 1. Select **Create**.
 
@@ -59,7 +59,7 @@ Set the thresholds that should trigger an alert for a certain discovered app at 
 
 Defender for Cloud Apps searches all the logs in your Cloud Discovery for anomalies. For instance, when a user, who never used Dropbox before, suddenly uploads 600 GB to it, or when there are a lot more transactions than usual on a particular app. The anomaly detection policy is enabled by default. It's not necessary to configure a new policy for it to work. However, you can fine-tune which types of anomalies you want to be alerted about in the default policy.
 
-1. In the console, select **Control** followed by **Policies**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
 
 1. Select **Create policy** and select **Cloud Discovery anomaly detection policy**.
 
@@ -69,7 +69,7 @@ Defender for Cloud Apps searches all the logs in your Cloud Discovery for anomal
 
 1. To set which discovered apps trigger this policy, select **Add filters**.
 
-    The filters are chosen from drop-down lists. To add filters, select the plus button. To remove a filter, select the 'X'.
+    The filters are chosen from drop-down lists. To add filters, select **Add a filter**. To remove a filter, select the 'X'.
 
 1. Under **Apply to** choose whether this policy applies **All continuous reports** or **Specific continuous reports**. Select whether the policy applies to **Users**, **IP addresses**, or both.
 

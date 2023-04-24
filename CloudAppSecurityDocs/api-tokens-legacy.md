@@ -14,9 +14,9 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 ## Generate a token
 
-1. On the **Settings** menu, select **Security extensions** and then **API tokens**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **API tokens**.
 
-1. Select the plus icon, **Generate new token** and provide a name to identify the token in the future, and select **Next**.
+1. Select the **Add token** and provide a name to identify the token in the future, and select **Generate**.
 
     ![Defender for Cloud Apps generates API token.](media/api-token-gen.png)
 

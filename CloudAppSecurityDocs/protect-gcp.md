@@ -23,7 +23,6 @@ Connecting GCP to Defender for Cloud Apps helps you secure your assets and detec
 
 - [Detect cloud threats, compromised accounts, and malicious insiders](best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware)
 - [Use the audit trail of activities for forensic investigations](best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations)
-- [Review security configuration recommendations](security-config-gcp.md)
 
 ## Control GCP with built-in policies and policy templates
 
@@ -45,14 +44,6 @@ In addition to monitoring for potential threats, you can apply and automate the 
 | User governance | - Require user to reset password to Google (requires connected linked Google Workspace instance)<br />- Suspend user (requires connected linked Google Workspace instance)<br />- Notify user on alert (via Azure AD)<br />- Require user to sign in again (via Azure AD)<br />- Suspend user (via Azure AD) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
-
-## Security Recommendations
-
-Defender for Cloud Apps provides an overview of your GCP platform configuration compliance for all your GCP projects based on the Center for Internet Security (CIS) benchmark for GCP.
-
-You should continuously review the security recommendations to assess and evaluate the current status of your platform's security posture and identify important configuration gaps. Then, you should create a plan to mitigate the issues in your GCP platform.
-
-For more information, [GCP security recommendations](security-config-gcp.md).
 
 ## Protect GCP in real time
 

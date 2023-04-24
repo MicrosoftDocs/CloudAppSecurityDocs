@@ -21,10 +21,10 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 
 ## Deployment
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), perform the following integration steps:
-    1. Select the settings cog and then choose **Cloud Discovery settings**.
-    2. Select the **Automatic log upload** tab, and then **Add data source**.
-    3. In the **Add data source** page, enter the following settings:
+1. In the [Microsoft 365 Defender portal](https://security.microsoft.com/), do the following integration steps:
+    1. Select **Settings**. Then choose **Cloud Apps**.
+    1. Under **Cloud Discovery**, select **Automatic log upload**. Then select **+Add data source**.
+    1. In the **Add data source** page, enter the following settings:
 
         - Name = iboss
         - Source = iboss Secure Cloud Gateway
@@ -32,7 +32,7 @@ If you work with both Defender for Cloud Apps and iboss, you can integrate the t
 
         ![data source iboss.](media/iboss-integration.png)
 
-    4. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.
+    1. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.
 
 1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 

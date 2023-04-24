@@ -50,7 +50,7 @@ You can set policies to automatically send you notifications when an OAuth app m
 
 ### Detect risky apps by hunting
 
-1. In the portal, go to **Investigate** and then **OAuth apps**. Use the filters and queries to review what's happening in your environment:
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **OAuth apps**. Use the filters and queries to review what's happening in your environment:
 
     - Set the filter to **Permission level high severity** and **Community use not common**. Using this filter, you can focus on apps that are potentially very risky, where users may have underestimated the risk.
     - Under **Permissions** select all the options that are particularly risky in a specific context. For example, you can select all the filters that provide permission to email access, such as **Full access to all mailboxes** and then review the list of apps to make sure that they all really need mail-related access. This can help you investigate within a specific context, and find apps that seem legitimate, but contain unnecessary permissions. These apps are more likely to be risky.
@@ -80,7 +80,7 @@ After you determine that an app is suspicious and you want to investigate it, we
     - Apps with a low number of downloads.
     - Apps with a low rating or score or bad comments.
     - Apps with a suspicious publisher or website.
-    - Apps whose last update is not recent. This might indicate an app that is no longer supported.
+    - Apps whose last update isn't recent. This might indicate an app that is no longer supported.
     - Apps that have irrelevant permissions. This might indicate that an app is risky.
 1. If the app is still suspicious, you can research the app name, publisher, and URL online.
 1. You can export the OAuth app audit for further analysis of the users who authorized an app. For more information, see [OAuth app auditing](manage-app-permissions.md#oauth-app-auditing).
@@ -97,6 +97,6 @@ You can easily [ban revoke an app from the OAuth apps page](manage-app-permissio
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

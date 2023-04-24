@@ -13,7 +13,7 @@ This article provides descriptions and instructions for Defender for Cloud Apps 
 
 ## Activity filters
 
-Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT to provide you with a powerful tool for policy creation.
+Below is a list of the activity filters that can be applied. Most filters support multiple values as well as *NOT* to provide you with a powerful tool for policy creation.
 
 - Activity ID - Search only for specific activities by their ID. This filter is useful when you connect Microsoft Defender for Cloud Apps to your SIEM (using the SIEM agent), and you want to further investigate alerts within the Defender for Cloud Apps portal.
 
@@ -106,13 +106,15 @@ To make investigation even simpler, you can now create custom queries and save t
 
 1. In the **Activity log** page, use the filters as described above to drill down into your apps as necessary.
 
-2. After you've finished building your query, select the **Save as** button in the top-right corner of the filters.
+  :::image type="content" source="media/activity-log-query.png" alt-text="Use filters to make query.":::
 
-3. In the **Save query** pop-up, name your query.
+1. After you've finished building your query, select the **Save as** button.
+
+1. In the **Save query** pop-up, name your query.
 
    ![new query.](media/new-activity-query.png)
 
-4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
+1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
    ![open query.](media/select-activity-query.png)
 
@@ -165,5 +167,4 @@ From there you can define the filters as is normally done with the **Activity Lo
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
-
+> [Best practices for protecting your organization](best-practices.md)

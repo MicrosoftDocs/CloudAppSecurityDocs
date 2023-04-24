@@ -50,13 +50,9 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 
     1. The user can only access the tombstone file. In the file, they can read the custom guidelines provided by IT and the correlation ID to give IT to release the file.
 
-1. When you receive the alert that a file has been quarantined, investigate the file in the Defender for Cloud Apps **Alerts** page:
+1. When you receive the alert that a file has been quarantined, go to **Policies** -> **Policy Management**. Then select the **Information Protection** tab.  In the row with your file policy, choose the three dots at the end of the line, and select **View all matches**. This will bring you the report of matches, where you can see the matching and quarantined files:
 
-    ![quarantine alerts.](media/quarantine-alerts.png)
-
-1. And also in the **Policy Report** on the **Quarantined** tab:
-
-    ![quarantine report.](media/quarantine-report.png)
+    ![Quarantined files.](media/quarantine-alerts.png)
 
 1. After a file is quarantined, use the following process to remediate the threat situation:
 
@@ -88,7 +84,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
     1. For Office 365 SharePoint or OneDrive for Business, you can't put files in admin quarantine as part of a policy until you set it up:
         ![quarantine warning.](media/quarantine-warning.png)
 
-        To set admin quarantine settings, under the settings cog, go to **Settings**. Provide a site for the quarantine folder location and a user notification that your user will receive when their file is quarantined.
+        To set admin quarantine settings, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Information Protection**, choose **Admin quarantine**. Provide a site for the quarantine folder location and a user notification that your user will receive when their file is quarantined.
         ![quarantine settings.](media/quarantine-settings.png)
 
         > [!NOTE]
@@ -99,7 +95,7 @@ In this tutorial, you'll learn how to use Microsoft Defender for Cloud Apps to d
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 

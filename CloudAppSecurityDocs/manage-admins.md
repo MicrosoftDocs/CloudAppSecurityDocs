@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps supports role-based access control. This article provides instructions for setting access to the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Office 365](/microsoft-365/admin/add-users/assign-admin-roles).
+Microsoft Defender for Cloud Apps supports role-based access control. This article provides instructions for setting access to Defender for Cloud Apps for your admins. For more information about assigning administrator roles, see the articles for [Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference) and [Office 365](/microsoft-365/admin/add-users/assign-admin-roles).
 
 <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>
 
@@ -173,7 +173,7 @@ The following specific admin roles can be configured in the Defender for Cloud A
 
 ## Override admin permissions
 
-If you want to override an administrator's permission from Azure AD or Office 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps. Note that it is not possible to override Azure AD roles that grant Full access (Global administrator, Security administrator, and Cloud App Security administrator).
+If you want to override an administrator's permission from Azure AD or Office 365, you can do so by manually adding the user to Defender for Cloud Apps and assigning the user permissions. For example, if you want to assign Stephanie, who is a Security reader in Azure AD to have **Full access** in Defender for Cloud Apps, you can add her manually to Defender for Cloud Apps and assign her **Full access** to override her role and allow her the necessary permissions in Defender for Cloud Apps. Note that it isn't possible to override Azure AD roles that grant Full access (Global administrator, Security administrator, and Cloud App Security administrator).
 
 ## Add additional admins
 
@@ -184,9 +184,13 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 > - Access to the **Manage admin access** page is available to members of the Global Administrators, Security Administrators, Compliance Administrators, Compliance Data Administrators, Security Operators, Security Readers and Global Readers groups.
 > - Only Azure AD Global Administrators or Security Administrators can edit the **Manage admin access** page and grant other users access to Defender for Cloud Apps.
 
-1. Select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and then **Manage admin access**.
+1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
 
-1. Select the plus icon to add the admins who should have access to Defender for Cloud Apps. Provide an email address of a user from inside your organization.
+1. Under **Cloud Apps**, choose **Roles**.
+
+  :::image type="content" source="media/permissions-menu.png" alt-text="Permissions menu.":::
+
+1. Select **+Add user** to add the admins who should have access to Defender for Cloud Apps. Provide an email address of a user from inside your organization.
 
     > [!NOTE]
     > If you want to add external Managed Security Service Providers (MSSPs) as administrators of your Defender for Cloud Apps portal, make sure you first [invite them as a guest](#invite-external-admins) to your organization.
@@ -202,7 +206,7 @@ You can add additional admins to Defender for Cloud Apps without adding users to
 
 ## Invite external admins
 
-Defender for Cloud Apps enables you to invite external admins (MSSPs) as administrators of your organization's (MSSP customer) Defender for Cloud Apps portal. To add MSSPs, make sure Defender for Cloud Apps is enabled on MSSPs tenant and then add them as [Azure AD B2B collaboration users](/azure/active-directory/external-identities/add-users-administrator) in the MSSPs customers Azure portal. Once added, MSSPs can be configured as administrators and assigned any of the roles available in Defender for Cloud Apps.
+Defender for Cloud Apps enables you to invite external admins (MSSPs) as administrators of your organization's (MSSP customer) Defender for Cloud Apps portal. To add MSSPs, make sure Defender for Cloud Apps is enabled on the MSSPs tenant, and then add them as [Azure AD B2B collaboration users](/azure/active-directory/external-identities/add-users-administrator) in the MSSPs customers Azure portal. Once added, MSSPs can be configured as administrators and assigned any of the roles available in Defender for Cloud Apps.
 
 ### To add MSSPs to the MSSP customer Defender for Cloud Apps portal
 
@@ -211,9 +215,9 @@ Defender for Cloud Apps enables you to invite external admins (MSSPs) as adminis
 
 ### Access for MSSPs to the MSSP customer Defender for Cloud Apps portal
 
-By default, MSSPs access their Defender for Cloud Apps tenant through the following URL: `https://portal.cloudappsecurity.com`.
+By default, MSSPs access their Defender for Cloud Apps tenant through the following URL: `https://security.microsoft.com`.
 
-MSSPs however, will need to access the MSSP customer Defender for Cloud Apps portal using a tenant-specific URL in the following format: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
+MSSPs however, will need to access the MSSP customer Microsoft 365 Defender portal using a tenant-specific URL in the following format: `https://security.microsoft.com/?tid=<tenant_id>`.
 
 MSSPs can use the following steps to obtain the MSSP customer portal tenant ID and then use the ID to access the tenant-specific URL:
 
@@ -221,7 +225,7 @@ MSSPs can use the following steps to obtain the MSSP customer portal tenant ID a
 
 1. Switch directory to the MSSP customer's tenant.
 1. Select **Azure Active Directory** > **Properties**. You'll find the MSSP customer tenant ID in the **Tenant ID** field.
-1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://portal.cloudappsecurity.com?tid=customer_tenant_id`.
+1. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://security.microsoft.com/?tid=<tenant_id>`.
 
 ## Admin activity auditing
 
@@ -229,7 +233,11 @@ Defender for Cloud Apps lets you export a log of admin sign-in activities and an
 
 To export a log, perform the following steps:
 
-1. In the **Manage admins access** page, select **Export admin activities**.
+1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
+
+1. Under **Cloud Apps**, choose **Roles**.
+
+1. In the **Admin roles** page, in the top-right corner, select **Export admin activities**.
 
 1. Specify the required time range.
 

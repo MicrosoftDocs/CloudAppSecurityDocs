@@ -1,7 +1,7 @@
 ---
 title: Connect Workplace
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Workplace account using the App Connector APIs.
-ms.date: 03/14/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 
@@ -23,12 +23,12 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ## How to connect Workplace to Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
-1. In the **App connectors** page, select the plus button followed by **Workplace by Meta**.
-1. In the pop-up, give the connector a descriptive name, and select **Connect Workplace by Meta**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the **App connectors** page, select **+Connect an app**, by **Workplace by Meta**.
+1. In the pop-up, give the connector a descriptive name, and select **Next**.
    ![Give connector a name.](media/workplace-connector.png)
 
-1. In the next screen, select **Connect Workplace by Meta**:
+1. In the **External Link** page, select **Connect Workplace by Meta**:
    ![Connect to Workplace.](media/connect-workplace.png)
 
 1. You'll be redirected to Workplace by Meta page.
@@ -39,6 +39,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. On the Workplace authorization page, make sure to choose the correct organization from the dropdown.
 
 1. In the app consent page, make sure to choose **All groups** and then select **Add to Workplace.**
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
    > [!NOTE]
    >

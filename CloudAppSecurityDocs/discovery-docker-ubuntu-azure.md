@@ -50,11 +50,8 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1. Go to the **Automatic log upload** settings page.
-
-    1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click the settings icon followed by **Log collectors**.
-
-    ![settings icon.](media/settings-icon.png)
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Cloud Discovery**, select **Automatic log upload**.  Then select the **Data sources** tab.
 
 1. For each firewall or proxy from which you want to upload logs, create a matching data source.
 
@@ -230,7 +227,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour c
 
 ---
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/) in the **Create new log collector** window, copy the command to import the collector configuration on the hosting machine:
+1. In the Microsoft 365 Defender portal,  in the **Create log collector** window, copy the command to import the collector configuration on the hosting machine:
 
     ![Copy command to import collector configuration on hosting machine.](media/create-log-connector.png)
 
@@ -258,7 +255,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![Check the collector status in the Log collector.](media/ubuntu9.png)
+:::image type="content" source="media/collector-status-connected.png" alt-text="Verify that the collector status is Connected." lightbox="media/collector-status-connected.png":::
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 
@@ -273,7 +270,8 @@ If you have problems during deployment, see [Troubleshooting Cloud Discovery](tr
 
 Verify that the logs are being uploaded to Defender for Cloud Apps and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Cloud Discovery**, select **Continuous reports**.
 1. Click the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 

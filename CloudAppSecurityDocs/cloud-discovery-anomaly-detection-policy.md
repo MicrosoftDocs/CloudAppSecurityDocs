@@ -16,7 +16,7 @@ A Cloud Discovery anomaly detection policy enables you to set up and configure c
 
 For each policy, you set filters that enable you to selectively monitor application usage. Filters include an application filter, selected data views, and a selected start date. You can also set the sensitivity, which enables you to set how many alerts the policy should trigger.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), go to **Control** > **Policies** > **Shadow IT**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Shadow IT** tab.
 
 1. Select **Create policy** and select **Cloud Discovery anomaly detection policy**.
 
@@ -79,6 +79,6 @@ For each policy, set the following parameters:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

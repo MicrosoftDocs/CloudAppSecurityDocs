@@ -1,7 +1,7 @@
 ---
 title: Connect Atlassian
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Atlassian products using the App Connector APIs. 
-ms.date: 01/29/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Atlassian to Microsoft Defender for Cloud Apps
@@ -48,11 +48,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ### Configure Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select the plus button followed by **Atlassian**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **Atlassian**.
 
-1. In the pop-up, give the connector a descriptive name, and press **Connect Atlassian**.
+1. In the next window, give the instance a descriptive name, and select **Next**.
 
     ![Connect Atlassian.](media/atlassian-connect.png)
 
@@ -71,11 +71,12 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 1. We recommend refreshing the Atlassian API key every 6 months as a best practice. To refresh the key, revoke the existing API key and generate a new key.
 1. To revoke API key, navigate to **admin.atlassian.com** > **Settings** > **API keys**, determine the API key used for integration and select **Revoke**.
 1. Recreate an API key in the Atlassian admin portal with the steps described above.
-1. Afterwards, go to the Defender for Cloud Apps portal and edit the connector:
+1. Afterwards, go to the **App Connectors** page in the Microsoft 365 Defender portal and edit the connector:
 
     ![Edit connector.](media/atlassian-edit-connector.png)
 
 1. Enter the new generated new **API key** and select **Connect Atlassian**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 >[!NOTE]
 >

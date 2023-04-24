@@ -23,9 +23,9 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
 ## Deployment
 
 1. In the Zscaler portal, do the steps to complete the [Zscaler partner integration with Microsoft Defender for Cloud Apps](https://help.zscaler.com/zia/configuring-mcas-integration).
-2. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), do the following integration steps:
-    1. Select the settings cog and then select **Cloud Discovery Settings**.
-    2. Select the **Automatic log upload** tab and then select **Add data source**.
+2. In the [Microsoft 365 Defender portal](https://security.microsoft.com/), do the following integration steps:
+    1. Select **Settings**. Then choose **Cloud Apps**.
+    2. Under **Cloud Discovery**, select **Automatic log upload**. Then select **+Add data source**.
     3. In the **Add data source** page, enter the following settings:
 
         - Name = NSS

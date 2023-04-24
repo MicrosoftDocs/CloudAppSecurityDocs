@@ -45,7 +45,7 @@ For more information, go to [Microsoft Compliance Offerings](/compliance/regulat
 ### You're the owner of your data
 
 - In Defender for Cloud Apps, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
-- Admins can search for a specific user's metadata or user's activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
+- Admins can search for a specific user's metadata or user's activity. Selecting an entity opens the [**Users**](accounts.md) page. The **Users** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
 - You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoft.com/licensing/docs?DocumentTypeId=31&redirected=true&Mode=3).
 

@@ -42,11 +42,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ### Configure Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. On the **App connectors** tab, select the plus sign, and then select **DocuSign**.
+1. In the **App connectors** page, select **+Connect an app**, and then select **DocuSign**.
 
-1. In the window that appears, give the connector a descriptive name, and then select **Connect DocuSign**:
+1. In the window that appears, give the connector a descriptive name, and then select **Next**.
 
     ![Connect DocuSign.](media/connect-docusign.png)
 
@@ -57,12 +57,14 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     ![Enter DocuSign details.](media/docusign-details.png)
 
-1. Select **Connect in DocuSign**.
-1. Make sure the connection succeeded by selecting **Test now**. The test might take a few minutes. After you see a success notice, select **Close**.
-1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
-1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
-1. Note that SaaS Security Posture Management (SSPM) data will be shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
-   
+1. Select **Next**.
+1. In the next screen, select **Connect DocuSign**.
+
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+
+> [!NOTE]
+> SaaS Security Posture Management (SSPM) data will be shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
+
 ## Limitations
 
 1. Only active DocuSign users will be shown in Defender for Cloud Apps.
@@ -77,4 +79,3 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 > [Control cloud apps by using policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

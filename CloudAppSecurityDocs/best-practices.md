@@ -201,7 +201,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 
 * [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md)
 * [Working with IP ranges and tags](ip-tags.md)
-* [Monitor alerts in Defender for Cloud Apps](monitor-alerts.md)
+
 
 ---
 
@@ -250,20 +250,6 @@ When dismissing alerts, it's important to investigate and understand why they ar
 * [Connect Azure to Microsoft Defender for Cloud Apps](./connect-azure.md)
 * [Connect AWS to Microsoft Defender for Cloud Apps](./connect-aws.md)
 * [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](./connect-google-gcp.md)
-
----
-
-**Best practice**: Review security configuration assessments for Azure, AWS and GCP  
-**Detail**: Integrating with Microsoft Defender for Cloud provides you with a security configuration assessment of your Azure environment. The assessment provides recommendations for missing configuration and security control. Reviewing these recommendations helps you identify anomalies and potential vulnerabilities in your environment, and navigate directly in the relevant location in the Azure Security portal to resolve them.
-
-AWS and GCP give you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security.
-
-Use these recommendations to monitor the compliance status and security posture of your entire organization, including Azure subscriptions, AWS accounts, and GCP projects.  
-**For more information**:
-
-* [Security configuration for Azure](security-config.md)
-* [Security configuration for AWS](security-config-aws.md)
-* [Security configuration for GCP](security-config-gcp.md)
 
 ---
 

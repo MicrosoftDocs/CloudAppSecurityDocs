@@ -12,9 +12,11 @@ When you have a large number of discovered apps, you'll find it useful to filter
 
 ## Discovered app filters
 
-There are basic and advanced Discovered app filters. To achieve a complex filter (such as in the example above) use the advanced option, which includes all of the following filters:
+There are two ways to filter your discovered apps. The basic filter includes the filters found in this image:
 
 ![Discovered apps.](media/discovered-apps.png)
+
+When you turn on **Advanced filters**, you'll see a list of possible filters, including the following:
 
 - **App tag**: Select whether the app was sanctioned or unsanctioned or not tagged. Additionally, you can create a custom tag for your app and then use it to filter for specific types of apps.
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains.
@@ -33,7 +35,7 @@ You can create a custom app tag. These tags can then be used as filters for deep
 
 To create a custom app tag:
 
-1. From the **Settings** cog, select **Cloud Discovery settings**, then the **App tags** tab. Select the plus icon. ![plus icon.](media/plus-icon.png)
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Cloud Discovery**, select **App tags**. Then select **+Addd app tag**.
 
    ![create custom app tag.](media/create-app-tag.png)
 
@@ -51,7 +53,7 @@ To make an investigation even simpler, you can create custom queries and save th
 
 1. In the **Discovered apps** page, use the filters as described above to drill down into your apps as necessary.
 
-2. After you've achieved the wanted results, select the **Save as** button in the top right corner of the filters.
+2. After you've achieved the wanted results, select the **Save as** button above the filters.
 
 3. In the **Save query** pop-up, name your query.
 

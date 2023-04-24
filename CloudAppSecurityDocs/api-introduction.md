@@ -21,17 +21,14 @@ The Microsoft Defender for Cloud Apps API provides programmatic access to Defend
 
 To use the Defender for Cloud Apps API, you must first obtain the API URL from your tenant. The API URL uses the following format: `https://<portal_url>/api/<endpoint>`.
 
-To obtain the Defender for Cloud Apps portal URL for your tenant, do the following steps:
+To obtain the Defender for Cloud Apps API URL for your tenant, do the following steps:
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
-
-    ![Select About.](media/about-menu.png)
-
-1. In the Defender for Cloud Apps about screen, you can see the portal url.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Under **System**, select **About**.
+1. In the Defender for Cloud Apps about screen, you can see the API url.
 
     ![View your data center.](media/api-url.png)
 
-Once you have the portal url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
+Once you have the API url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
 
 ## API tokens
 

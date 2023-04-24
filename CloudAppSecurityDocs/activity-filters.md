@@ -24,12 +24,12 @@ The basic filter provides you with great tools to get started filtering your act
 
 ![basic activity log filter.](media/activity-log-filter-basic.png)
 
-To drill down into more specific activities, you can expand the basic filter by selecting **Advanced**.
+To drill down into more specific activities, you can expand the basic filter by selecting **Advanced filters**.
 
 ![advanced activity log filter.](media/activity-log-filter-advanced.png)
 
 > [!NOTE]
-> The Legacy tag is added to any activity policy that use the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
+> The Legacy tag is added to any activity policy that uses the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
 
 ## The Activity drawer
 
@@ -111,7 +111,7 @@ This opens the Activity drawer **IP address** tab, which provides the following 
 
 You can export all user activities to a CSV file.
 
-In the **Activity log**, in the top-right corner, select the **Export** button.
+In the **Activity log**, in the top-left corner, select the **Export** button.
 
 ![export button.](media/export-button.png)
 
@@ -120,6 +120,6 @@ In the **Activity log**, in the top-right corner, select the **Export** button.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

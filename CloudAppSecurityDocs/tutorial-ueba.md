@@ -49,18 +49,17 @@ The activity score determines the probability of a specific user performing a sp
 
 1. Connect at least one app to Microsoft Defender for Cloud Apps using the [API connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md). We recommend that you start by connecting [Office 365](./connect-office-365.md).
 1. Connect additional apps using the [proxy to achieve conditional access app control](proxy-deployment-aad.md).
-1. To enable insights across your on-premises environment, configure Defender for Cloud Apps to [integrate with your Defender for Identity environment](mdi-integration.md).
 
 ## Phase 2: Identify top risky users<a name="identify"></a>
 
 To identify who your riskiest users are in Defender for Cloud Apps:
 
-1. Go to the Defender for Cloud Apps dashboard and look at the people identified in the **Top users by investigation priority** tile, and then one by one go to their user page to investigate them.  
+1. In the Microsoft 365 Defender portal, under **Assets**, select **Identities**. Sort the table by **Investigation priority**. Then one by one go to their user page to investigate them.  
 The **investigation priority number**, found next to the user name, is a sum of all the user's risky activities over the last week.
 
    ![Top users dashboard.](media/dashboard-top-users.png)
 
-1. Select a particular user to get to the **User** page.
+1. Select the three dots to the right of the user, and choose **View User page**.
     ![User page.](media/user-page.png)
 
 1. Review the information in the User page to get an overview of the user and see if there are points at which the user  performed activities that were unusual for that user or were performed at an unusual time. The **User's score compared to the organization** represents which percentile the user is in based on their ranking in your organization - how high they are on the list of users you should investigate, relative to other users in your organization. The number will be red if a user is in or above the 90th percentile of risky users across your organization.  
@@ -82,16 +81,12 @@ The User page helps you answer the questions:
 
 If the user was investigated and no suspicion for compromise was found, or for any reason you prefer to reset the user's investigation priority score, you can manually reset the score.
 
-1. In the Defender for Cloud Apps dashboard, in the **Top users to investigate** tile, select the user you want to reset, or select **View all users to investigate**. Alternatively, under **Investigate** -> **Users and Accounts**, select the user with a value in the **Investigation priority** column.
+1. In the Microsoft 365 Defender portal, under **Assets**, select **Identities**.
+
+1. Select the three dots to the right of the investigated user, and choose **Reset investigation priority score**. You can also select **View user page** and then select **Reset investigation priority score** from the three dots in the User page.
 
     > [!NOTE]
     > Only users with a non-zero investigation priority score can be reset.
-
-1. In the window that opens, select **View User page** in the upper right.
-
-    ![Select View User page.](media/view-user-page.png)
-
-1. The user page will open in a new tab. Select the **Reset investigation priority score** link in the actions section in the top-right side of the page.
 
     ![Select Reset investigation priority score link.](media/reset-investigation-priority-score.png)
 
@@ -107,7 +102,7 @@ When you investigate a user, you want to ask these questions about the activitie
 
 - Is there a business justification for this employee to perform these activities? For example, if someone from Marketing is accessing the code base, or someone from Development accesses the Finance database, you should follow up with the employee to make sure this was an intentional and justified activity.
 
-- Go to the **Activity log** to understand why this activity received a high score while others didn't. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can easily pivot to other drill downs, such as recent non-anomalous cloud and on-prem activities, to continue your investigation.
+- Go to the **Activity log** to understand why this activity received a high score while others didn't. You can set the **Investigation priority** to **Is set** to understand which activities are suspicious. For example, you can filter based on Investigation priority for all activities that occurred in Ukraine. Then you can see whether there were other activities that were risky, where the user connected from, and you can easily pivot to other drill downs, such as recent non-anomalous cloud and on-premises activities, to continue your investigation.
 
 ## Phase 4: Protect your organization<a name="protect"></a>
 
@@ -115,7 +110,7 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 
 - Contact the user – Using the user contact information integrated with Defender for Cloud Apps from Active Directory, you can drill down into each alert and activity to resolve the user identity. Make sure the user is familiar with the activities.
 
-- Directly from the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **User actions** control and choose whether to require the user to sign in again, suspend the user, or confirm user compromised.
+- Directly from the Microsoft 365 Defender portal, in the **Identities** page, select the three dots by the investigated user and choose whether to require the user to sign in again, suspend the user, or confirm the user as compromised.
 
 - In the case of a compromised identity, you can ask the user to reset their password, making sure the password meets best practice guidelines for length and complexity.
 - If you drill down into an alert and determine that the activity shouldn't have triggered an alert, in the [Activity drawer](activity-filters.md), select the **Send us feedback** link so that we can be sure to fine-tune our alerting system with your organization in mind.
@@ -124,6 +119,6 @@ If your investigation leads you to the conclusion that a user is compromised, fo
 ## See also
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

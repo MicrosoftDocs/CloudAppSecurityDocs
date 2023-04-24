@@ -26,11 +26,11 @@ The demand by business units for cloud apps as a solution to their changing need
 For example, say you want to compare CRM apps and make sure they're adequately secured. You can use the Cloud app catalog page to filter for relevant apps you want:
 
 1. In the **Cloud app catalog** page, under **Browse by category** select **CRM**.
-2. Use the **Advanced** filters and set **Compliance risk factor** for **SOC 2** equals **True**.
-3. Set **Compliance risk factor** for **ISO 27001** equals **True**.
+2. Use the **Advanced** filters and set **Compliance risk factor** for **SOC 2** equals **Yes**.
+3. Set **Compliance risk factor** for **ISO 27001** equals **Yes**.
 4. Select **Security risk factor** for **Data-at-rest-encryption** doesn't equal **Not supported** and **N/A**.
-5. Set **Security risk factor** for **Admin audit trail** equals **True**.
-6. Select **Security risk factor** for **User audit trail** equals **True**.
+5. Set **Security risk factor** for **Admin audit trail** equals **Yes**.
+6. Select **Security risk factor** for **User audit trail** equals **Yes**.
 
 ![Screenshot showing cloud app catalog filters.](media/cloud-app-catalog-filters.png)
 
@@ -55,7 +55,7 @@ If you find a new app in your environment that hasn't been scored by Defender fo
 
 **To suggest a new app:**
 
-1. At the top of the **Discovered apps** page, select the three dots and then choose **Suggest new app**.
+1. On the **Cloud Discovery** page, on the **Discovered apps** tab, select **Actions** and then choose **Suggest new app**.
 
     ![Screenshot showing the **Suggest an app** menu item in Defender for Cloud Apps.](media/suggest-new-app.png)
 
@@ -93,7 +93,7 @@ Each of the categories is composed of many specific properties. According to the
 
 It's important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:
 
-1. In the portal, under the settings icon, select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
 2. Under **Cloud Discovery**, select **Score metrics**. Slide the **Importance** to change the weight of the field or the risk category. Importance can be set to **Ignored**, **Low**, **Medium**, **High**, or **Very High**.
 
@@ -101,7 +101,7 @@ It's important to take a minute to review and modify the default weights given t
 
     ![Screenshot showing score metrics.](media/score.png)
 
-All the information needed to understand how the Defender for Cloud Apps risk scores are stacking up is available in the Defender for Cloud Apps portal. To better understand a risk factor's weight in a specific risk category, use the "i" button to the right of each field name in the app's profile. This provides information about how exactly Defender for Cloud Apps scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
+All the information needed to understand how the Defender for Cloud Apps risk scores are stacking up is available in the portal. To better understand a risk factor's weight in a specific risk category, use the "i" button to the right of each field name in the app's profile. This provides information about how exactly Defender for Cloud Apps scores a specific risk factor. The score is the value of the risk factor on a scale of 1-10 + its weight in the risk category:
 
 ![Screenshot showing a risk calculation.](media/cac-weight.png)
 
@@ -123,6 +123,6 @@ You can also add notes to make the justification of the change clear when anyone
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -17,39 +17,24 @@ Some of the requirements below depend on which data center you're connected to.
 
 To see which data center you're connecting to, do the following steps:
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **About**.
 
-    ![Select About.](media/about-menu.png)
-
-2. In the Defender for Cloud Apps version screen, you can see the region and the data center.
+2. In the **About** screen, you can see the region and the data center.
 
     ![View your data center.](media/data-center.png)
 
 ## Portal access
 
-For access to the Defender for Cloud Apps portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
+To use Defender for Cloud Apps in the Microsoft 365 Defender portal, add **outbound port 443** for the following IP addresses and DNS names to your firewall's allowlist:
 
 ```ini
-portal.cloudappsecurity.com
-*.portal.cloudappsecurity.com
-cdn.cloudappsecurity.com
-https://adaproddiscovery.azureedge.net
+adaproddiscovery.azureedge.net
 *.s-microsoft.com
 *.msecnd.net
 dev.virtualearth.net
-*.cloudappsecurity.com
 flow.microsoft.com
 static2.sharepointonline.com
-dc.services.visualstudio.com
 *.blob.core.windows.net
-```
-
-For US Government GCC High customers, it's also necessary to add the following DNS names to your firewall's allowlist to provide access for the Defender for Cloud Apps GCC High portal:
-
-```ini
-portal.cloudappsecurity.us
-*.portal.cloudappsecurity.us
-cdn.cloudappsecurity.com
 ```
 
 Additionally, the following items should be allowed, depending on which data center you use:
@@ -62,10 +47,10 @@ Additionally, the following items should be allowed, depending on which data cen
 |EU1|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.119.154.72, 51.143.58.207, 52.137.89.147, 52.157.238.58, 52.174.56.180, 52.183.75.62|\*.eu.portal.cloudappsecurity.com|
 |EU2|13.80.125.22, 40.74.1.235, 40.74.6.204, 40.81.156.154, 40.81.156.156, 51.143.58.207, 52.137.89.147, 52.183.75.62|*.eu2.portal.cloudappsecurity.com|
 |Gov US1|13.72.19.4, 52.227.143.223|*.us1.portal.cloudappsecurity.us|
-|GCC| 52.227.23.181, 52.227.180.126| `portal.cloudappsecuritygov.com`, *.portal.cloudappsecuritygov.com, \*.us1.portal.cloudappsecuritygov.com |
+|GCC| 52.227.23.181, 52.227.180.126| *.us1.portal.cloudappsecuritygov.com |
 
 > [!NOTE]
-> For portal access, instead of a wildcard (\*), you can choose to open only your specific tenant URL. For example, based on the screenshot above you can open: `tenant2.us.portal.cloudappsecurity.com`
+> For portal access, instead of a wildcard (\*), you can choose to open only your specific tenant URL. For example, based on the screenshot above you can open: `tenant2.us.portal.cloudappsecurity.com`. To determine your tenant URL, see the earlier section [View your data center](#view-your-data-center), and look for **API URL**.
 
 ## Access and session controls
 
@@ -195,7 +180,7 @@ To connect to third-party apps and integrate with external DLP solutions, enable
 |Data center|IP addresses|
 |----|----|----|
 |US1|13.64.26.88, 13.64.29.32, 13.64.30.76, 13.64.30.117, 13.64.30.118, 13.64.31.116, 13.64.196.27, 13.64.198.19, 13.64.198.97, 13.64.199.41, 13.86.176.189, 13.86.176.211, 13.91.61.249, 13.91.91.243, 13.91.98.185, 13.93.216.68, 13.93.233.42, 40.118.211.172, 104.209.35.177, 13.64.16.134, 13.64.16.130, 13.64.16.131, 13.64.16.136, 13.64.16.133, 13.64.16.137, 13.64.16.132m 13.64.16.129, 13.64.16.138, 13.64.16.135, 20.245.106.190, 20.245.106.217, 20.253.255.143, 20.253.255.153, 20.253.255.130, 20.253.255.157, 20.66.8.42, 20.253.255.134, 20.253.255.128, 20.253.255.146, 20.237.121.229, 20.237.122.187, 20.232.229.26, 20.232.228.132, 20.232.228.47, 20.232.228.143, 20.232.228.80, 20.232.228.94, 20.232.228.153, 20.232.228.85|
-|US2|20.36.222.59, 20.36.222.60, 40.67.152.91, 40.67.154.160, 40.67.155.146, 40.67.159.55, 40.84.2.83, 40.84.4.93, 40.84.4.119, 52.184.165.82, 52.232.224.227, 52.232.225.84, 104.46.116.211, 104.46.116.211, 104.46.121.72, 104.46.121.72, 104.46.122.189, 104.46.122.189, 20.85.63.179, 20.85.63.177, 20.85.63.185, 20.85.63.183, 20.85.63.180, 20.85.63.184, 20.85.63.182, 20.85.63.178, 20.85.63.181, 20.85.63.186, 20.96.151.151, 20.96.151.147, 20.96.151.153, 20.96.151.149, 20.96.151.148, 20.96.151.145, 20.96.151.144, 20.96.151.146, 20.96.151.152, 20.96.151.150, 20.96.83.110, 20.96.87.32, 20.7.102.52, 20.22.87.7, 20.7.102.59, 20.7.101.234, 20.7.102.51, 20.7.102.40, 20.7.96.98, 20.7.102.54, 52.154.237.66, 52.154.234.32, 20.12.128.213, 20.12.130.50, 20.12.130.20, 20.221.93.63, 20.12.128.239, 20.221.93.52 ,20.12.128.152, 20.12.130.57|
+|US2|20.36.222.59, 20.36.222.60, 40.67.152.91, 40.67.154.160, 40.67.155.146, 40.67.159.55, 40.84.2.83, 40.84.4.93, 40.84.4.119, 52.184.165.82, 52.232.224.227, 52.232.225.84, 104.46.116.211, 104.46.116.211, 104.46.121.72, 104.46.121.72, 104.46.122.189, 104.46.122.189, 20.85.63.179, 20.85.63.177, 20.85.63.185, 20.85.63.183, 20.85.63.180, 20.85.63.184, 20.85.63.182, 20.85.63.178, 20.85.63.181, 20.85.63.186, 20.96.151.151, 20.96.151.147, 20.96.151.153, 20.96.151.149, 20.96.151.148, 20.96.151.145, 20.96.151.144, 20.96.151.146, 20.96.151.152, 20.96.151.150, 20.96.83.110, 20.96.87.32, 20.7.102.52, 20.22.87.7, 20.7.102.59, 20.7.101.234, 20.7.102.51, 20.7.102.40, 20.7.96.98, 20.7.102.54, 52.154.237.66, 52.154.234.32, 20.12.128.213, 20.12.130.50, 20.12.130.20, 20.221.93.63, 20.12.128.239, 20.221.93.52, 20.12.128.152, 20.12.130.57|
 |US3|40.90.218.196, 40.90.218.197, 40.90.218.198, 40.90.218.203, 40.90.220.190, 40.90.220.196, 51.143.120.236, 51.143.120.242, 20.115.249.168, 20.115.249.160, 20.115.249.161, 20.115.249.169, 20.115.249.164, 20.115.249.166, 20.115.249.165, 20.115.249.170, 20.115.249.163, 20.115.249.167, 20.115.170.133, 20.115.170.129, 20.115.170.131, 20.115.170.128, 20.115.170.135, 20.115.170.137, 20.115.170.132, 20.115.170.136, 20.115.170.130, 20.115.170.134, 20.112.52.85, 20.112.52.87, 20.112.52.80, 20.112.52.83, 20.112.52.81, 20.112.52.82, 20.112.52.86, 20.112.52.88, 20.112.52.84, 20.112.52.89, 20.64.198.145, 20.64.198.151, 20.64.198.149, 20.64.198.146, 20.64.198.147, 20.64.198.150, 20.64.198.148, 20.64.198.153, 20.64.198.144, 20.64.198.152, 20.115.170.117, 20.115.170.112, 20.115.170.113, 20.115.170.120, 20.115.170.114, 20.115.170.121, 20.115.170.116, 20.115.170.115, 20.115.170.118, 20.115.170.119, 20.190.20.133, 20.64.193.51, 20.99.133.17, 20.99.133.32, 20.99.133.43, 20.99.133.83, 20.99.132.218, 20.99.133.64, 20.99.133.71, 20.99.133.63, 20.69.33.38, 20.69.33.177, 20.165.241.40, 20.165.243.11, 20.165.243.57, 20.165.143.180, 20.165.240.158, 20.165.143.148, 20.165.241.61, 20.165.240.156|
 |EU1|13.80.22.71, 13.95.29.177, 13.95.30.46, 40.67.219.133, 40.114.217.8, 40.114.217.8, 40.115.24.65, 40.115.24.65, 40.115.25.50, 40.119.154.72, 51.105.179.157, 52.157.232.110, 52.157.233.92, 52.157.233.133, 52.157.238.58, 52.157.239.110, 52.174.56.180, 20.101.177.19, 20.101.177.21, 20.101.177.18, 20.101.177.20, 20.101.177.17, 20.101.177.16, 20.101.177.23, 20.101.177.25, 20.101.177.22, 20.101.177.24, 20.101.177.27, 20.101.177.30, 20.101.177.31, 20.101.177.26, 20.101.177.28, 20.101.177.29, 20.101.250.216, 20.101.251.166, 20.23.198.95, 20.23.198.34, 20.23.198.132, 20.23.198.198, 20.23.199.120, 20.23.198.119, 20.23.198.195, 20.23.198.244, 20.166.184.39, 20.166.184.36, 40.127.213.98, 40.127.213.99, 40.127.213.91, 40.127.213.90, 40.127.213.75, 40.127.213.67, 40.127.213.74, 40.127.213.66|
 |EU2|40.81.152.171, 40.81.152.172, 40.81.156.153, 40.81.156.154, 40.81.156.155, 40.81.156.156, 51.145.108.227, 51.145.108.250, 20.108.77.57, 20.108.77.54, 20.108.77.49, 20.108.77.53, 20.108.77.52, 20.108.77.55, 20.108.77.51, 20.108.77.58, 20.108.77.50, 20.108.77.56, 20.26.179.11, 20.26.179.32, 4.234.34.182, 4.234.34.92, 4.234.34.186, 4.234.34.124, 4.234.34.202, 4.234.34.86, 4.234.34.91, 4.234.34.123, 20.254.173.207, 20.254.174.189, 51.11.108.110, 51.11.108.92, 51.11.108.75, 51.11.108.101, 51.11.108.72, 51.11.108.103, 51.11.108.107, 51.11.108.85|
@@ -211,18 +196,12 @@ To enable notifications to be sent from the default template and settings, add t
 - 111.221.26.0/27
 - 207.46.200.0/27
 
-If you want to customize the email sender identity, Microsoft Defender for Cloud Apps enables customization by using MailChimp&reg;, a third-party email service. To make it work, in the Microsoft Defender for Cloud Apps portal, go to **Settings**. Select **Mail settings** and review MailChimp's Terms of Service and Privacy Statement. Then, give Microsoft permission to use MailChimp on your behalf.
-
-If you don't customize the sender identity, your email notifications will be sent using all the default settings.
-
-To work with MailChimp, add this IP address to your anti-spam allowlist to enable notifications to be sent: 198.2.134.139 (`mail1.cloudappsecurity.com`)
-
 ## Log collector
 
 To enable Cloud Discovery features using a log collector and detect Shadow IT in your organization, open the following items:
 
 - Allow the log collector to receive inbound FTP and Syslog traffic as configured for the data sources.
-- Allow the log collector to initiate outbound traffic to the Defender for Cloud Apps portal (for example `contoso.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services).
+- Allow the log collector to initiate outbound traffic to the Defender for Cloud Apps APIs (for example `<mytenant>.us2.cloudappsecurity.com`) on port 443 and access to port 53 (DNS services). To find your tenant URL, see [View your data center](#view-your-data-center).
 - Allow the log collector to initiate outbound traffic to the Azure blob storage on port 443:
 
   | Data center |                        URL                                 |
@@ -238,11 +217,11 @@ To enable Cloud Discovery features using a log collector and detect Shadow IT in
 > [!NOTE]
 >
 > - If your firewall requires a static IP address access list and does not support allowing based on URL, allow the log collector to initiate outbound traffic to the [Microsoft Azure datacenter IP ranges](https://www.microsoft.com/download/details.aspx?id=56519) on port 443.
-> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps portal.
+> - If you didn't specify a proxy when you set up the log collector, you need to allow http connections on port 80 for the URLs listed on the [Azure TLS certificate changes](/azure/security/fundamentals/tls-certificate-changes#will-this-change-affect-me) page. This is used for checking certificate revocation status when you connect to the Defender for Cloud Apps APIs.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

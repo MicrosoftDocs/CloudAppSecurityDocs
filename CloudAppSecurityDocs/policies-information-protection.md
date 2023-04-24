@@ -22,15 +22,15 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
+1. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-3. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select the type of sensitive information you want DCS to inspect.
+1. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-4. Configure the **Governance** actions to be taken when an alert is triggered. For example, you can create a governance action that runs on detected file violations in Google Workspace in which you select the option to **Remove external users** and **Remove public access**.
+1. Configure the **Governance** actions to be taken when an alert is triggered. For example, you can create a governance action that runs on detected file violations in Google Workspace in which you select the option to **Remove external users** and **Remove public access**.
 
-5. Create the file policy.
+1. Create the file policy.
 
 ## Detect externally shared confidential data
 
@@ -44,15 +44,15 @@ Detect when files that are labeled **Confidential** and are stored in a cloud se
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
+1. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
 
-3. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
+1. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+1. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
-5. Create the file policy.
+1. Create the file policy.
 
 ## Detect and encrypt sensitive data at rest
 
@@ -66,13 +66,13 @@ Detect files containing personally identifying information and other sensitive d
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Under **Inspection method**, select **Data Classification Service (DCS)** and under **Select type** select the type of sensitive information you want DCS to inspect.
+1. Under **Inspection method**, select **Data Classification Service (DCS)** and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-3. Under **Governance actions**, check **Apply sensitivity label** and select the sensitivity label that your company uses to restrict access to company employees.
+1. Under **Governance actions**, check **Apply sensitivity label** and select the sensitivity label that your company uses to restrict access to company employees.
 
-4. Create the file policy.
+1. Create the file policy.
 
 > [!NOTE]
 > The ability to apply a sensitivity label directly in Defender for Cloud Apps is currently only supported for Box, Google Workspace, SharePoint online and OneDrive for Business.
@@ -87,13 +87,13 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Select and apply the policy template **Stale externally shared files**.
+1. Select and apply the policy template **Stale externally shared files**.
 
-3. Customize the filter **Last modified** to match your organization's policy.
+1. Customize the filter **Last modified** to match your organization's policy.
 
-4. Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
+1. Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example:
 
     - Google Workspace: Make the file private and notify the last file editor
 
@@ -101,7 +101,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
     - SharePoint online: Make the file private and send a policy-match digest to the file owner
 
-5. Create the file policy.
+1. Create the file policy.
 
 ## Detect data access from an unauthorized location
 
@@ -113,17 +113,17 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
-2. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
+1. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
-3. Set the filter **Location** does not equal, and then enter the countries/regions from which your organization expects activity.
+1. Set the filter **Location** does not equal, and then enter the countries/regions from which your organization expects activity.
 
-    1. Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries/regions.
+    - Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries/regions.
 
-4. Optional: Create **Governance** actions to be applied to detected violation (availability varies between services), such as  **Suspend user**.
+1. Optional: Create **Governance** actions to be applied to detected violation (availability varies between services), such as  **Suspend user**.
 
-5. Create the Activity policy.
+1. Create the Activity policy.
 
 ## Detect and protect confidential data store in a non-compliant SP site
 
@@ -135,17 +135,17 @@ Sensitivity labels are configured and used inside the organization.
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
+1. Set the filter **Sensitivity label** to **Microsoft Purview Information Protection** equals the **Confidential** label, or your company's equivalent.
 
-3. Set the filter **Parent folder** does not equal, and then under **Select a folder** choose all the compliant folders in your organization.
+1. Set the filter **Parent folder** does not equal, and then under **Select a folder** choose all the compliant folders in your organization.
 
-4. Under **Alerts** select **Create an alert for each matching file**.
+1. Under **Alerts** select **Create an alert for each matching file**.
 
-5. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, Set **Box** to **Send policy-match digest to file owner** and **Put in admin quarantine**.
+1. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, Set **Box** to **Send policy-match digest to file owner** and **Put in admin quarantine**.
 
-6. Create the file policy.
+1. Create the file policy.
 
 ## Detect externally shared source code
 
@@ -157,15 +157,15 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Select and apply the policy template **Externally shared source code**
+1. Select and apply the policy template **Externally shared source code**
 
-3. Optional: Customize the list of file **Extensions** to match your organization's source code file extensions.
+1. Optional: Customize the list of file **Extensions** to match your organization's source code file extensions.
 
-4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, in Box, **Send policy-match digest to file owner** and **Put in admin quarantine**.
+1. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, in Box, **Send policy-match digest to file owner** and **Put in admin quarantine**.
 
-5. Select and apply the policy template
+1. Select and apply the policy template.
 
 ## Detect unauthorized access to group data
 
@@ -177,22 +177,22 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 ### Steps
 
-1. On the **Policies** page, create a new **Activity policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Activity policy**.
 
-2. Under **Act on**, select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
+1. Under **Act on**, select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
 
-3. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
+1. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
 
-4. Set the filter **User** to **From group** equals and then select the relevant user groups.
+1. Set the filter **User** to **From group** equals and then select the relevant user groups.
 
     > [!NOTE]
     > [User groups can be imported manually](user-groups.md) from supported apps.
 
-5. Set the filter **Files and folders** to **Specific files or folders** equals and then choose the files and folders that belong to the audited user group.
+1. Set the filter **Files and folders** to **Specific files or folders** equals and then choose the files and folders that belong to the audited user group.
 
-6. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, you can choose to **Suspend user**.
+1. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, you can choose to **Suspend user**.
 
-7. Create the file policy.
+1. Create the file policy.
 
 ## Detect publicly accessible S3 buckets
 
@@ -204,13 +204,13 @@ You must have an AWS instance connected using [app connectors](enable-instant-vi
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Select and apply the policy template **Publicly accessible S3 buckets (AWS)**.
+1. Select and apply the policy template **Publicly accessible S3 buckets (AWS)**.
 
-3. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, set AWS to **Make private** which would make the S3 buckets private.
+1. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, set AWS to **Make private** which would make the S3 buckets private.
 
-4. Create the file policy.
+1. Create the file policy.
 
 ## Detect and protect GDPR related data across file storage apps
 
@@ -224,13 +224,13 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 ### Steps
 
-1. On the **Policies** page, create a new **File policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **File policy**.
 
-2. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national identification number, EU passport number, EU SSN, SU tax identification number.
+1. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national identification number, EU passport number, EU SSN, SU tax identification number.
 
-3. Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply sensitivity label** for each supported app.
+1. Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply sensitivity label** for each supported app.
 
-4. Create the file policy.
+1. Create the file policy.
 
 > [!NOTE]
 > Currently, **Apply sensitivity label** is only supported for Box, Google Workspace, SharePoint online and OneDrive for business.
@@ -247,20 +247,20 @@ Prevent company data from being exfiltrated by external users, by blocking file 
 
 ### Steps
 
-1. On the **Policies** page, create a new **Session policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Session policy**.
 
-2. Under **Session control type**, select **Control file download (with inspection)**.
+1. Under **Session control type**, select **Control file download (with inspection)**.
 
-3. Under **Activity filters**, select **User** and set it to **From group** equals **External users**.
+1. Under **Activity filters**, select **User** and set it to **From group** equals **External users**.
 
     >[!NOTE]
     > You don't need to set any app filters to enable this policy to apply to all apps.
 
-4. You can use the **File filter** to customize the file type. This gives you more granular control over what type of files the session policy controls.
+1. You can use the **File filter** to customize the file type. This gives you more granular control over what type of files the session policy controls.
 
-5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
+1. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
 
-6. Select **Create**.
+1. Select **Create**.
 
 ## Enforce read-only mode for external users in real time
 
@@ -273,24 +273,24 @@ Prevent company data from being exfiltrated by external users, by blocking print
 
 ### Steps
 
-1. On the **Policies** page, create a new **Session policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Session policy**.
 
-2. Under **Session control type**, select **Block activities**.
+1. Under **Session control type**, select **Block activities**.
 
-3. In the **Activity source** filter:
+1. In the **Activity source** filter:
 
     1. Select **User** and set **From group** to **External users**.
 
-    2. Select **Activity type** equals **Print** and **Cut/copy item**.
+    1. Select **Activity type** equals **Print** and **Cut/copy item**.
 
     > [!NOTE]
     > You don't need to set any app filters to enable this policy to apply to all apps.
 
-4. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
+1. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
+1. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
 
-6. Select **Create**.
+1. Select **Create**.
 
 ## Block upload of unclassified documents in real time
 
@@ -306,20 +306,20 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 
 ### Steps
 
-1. On the **Policies** page, create a new **Session policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Session policy**.
 
-2. Under **Session control type**, select **Control file upload (with inspection)** or **Control file download (with inspection)**.
+1. Under **Session control type**, select **Control file upload (with inspection)** or **Control file download (with inspection)**.
 
    >[!NOTE]
    > You don't need to set any filters to enable this policy to apply to all users and apps.
 
-3. Select the file filter **Sensitivity label** does not equal and then select the labels your company uses to tag classified files.
+1. Select the file filter **Sensitivity label** does not equal and then select the labels your company uses to tag classified files.
 
-4. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
+1. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
+1. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right sensitivity label.
 
-6. Select **Create**.
+1. Select **Create**.
 
 > [!NOTE]
 > For the list of file types that Defender for Cloud Apps currently supports for sensitivity labels from Microsoft Purview Information Protection, see [Microsoft Purview Information Protection integration prerequisites](azip-integration.md#prerequisites).
@@ -327,6 +327,6 @@ Prevent users from uploading unprotected data to the cloud, by using the Defende
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

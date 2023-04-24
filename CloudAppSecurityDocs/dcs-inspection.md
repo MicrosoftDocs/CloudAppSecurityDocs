@@ -25,7 +25,7 @@ You can set the **Inspection method** to use the **Microsoft Data Classification
 
     ![Choose data classification service inspection type.](media/dcs-sensitive-information-type.png)
 
-4. You can use the [default sensitive information types](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) to define what happens to files protected by Microsoft Defender for Cloud Apps. You can also reuse any of your [Office 365 custom sensitive information types](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30).
+4. You can use the [default sensitive information types](/microsoft-365/compliance/sensitive-information-type-entity-definitions) to define what happens to files protected by Microsoft Defender for Cloud Apps. You can also reuse any of your [Office 365 custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
     > [!NOTE]
     > You can configure your policy to use advanced classification types such as [Fingerprints](/microsoft-365/compliance/document-fingerprinting?view=o365-worldwide&preserve-view=true), [Exact Data Match](/microsoft-365/compliance/sit-learn-about-exact-data-match-based-sits), and [trainable classifiers](/microsoft-365/compliance/classifier-get-started-with).
 
