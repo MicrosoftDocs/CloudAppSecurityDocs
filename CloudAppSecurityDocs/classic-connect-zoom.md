@@ -37,7 +37,7 @@ Before connecting Zoom to Defender for Cloud Apps, make sure that you have the f
 
 1. Accept the connection in Zoom.
 
-1. Watch for the updates to appear on the Microsoft 365 **Secure score** page. For more information, see the [Microsoft Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide).
+1. Watch for the updates to appear on the Microsoft 365 **Secure score** page. For more information, see the [Microsoft Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score).
 
    > [!NOTE]
    >
