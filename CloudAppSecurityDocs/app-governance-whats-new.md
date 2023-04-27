@@ -14,6 +14,11 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
+## App governance June 2023 release
+- **App governance is now available as part of the Defender for Cloud Apps license:** App governance is now included as part of the [various](/defender-cloud-apps/app-governance-get-started) Microsoft Defender for Cloud Apps licenses and no longer requires an add-on license. In the Microsoft 365 Defender portal, go to  Settings > Cloud apps > App governance > Service status to either enable app governance if available or sign up for the waitlist. Existing holders of trial licenses for the app governance add-on have until August 31, 2023 to enable the toggle and retain their app governance access.
+- **App governance OAuth convergence:** We consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. In the Microsoft 365 Defender portal, we've merged all capabilities originally under Cloud apps > OAuth apps under  App governance, where you can manage all OAuth apps under a single pane of glass.
+
+
 ## App governance February 2023 release
 
 - **Enhanced alert investigation experience:** App governance now provides additional information admins need to investigate and remediate incidents and alerts. This enhancement includes more details under **What happened** and **Recommended actions** in the alert story on Microsoft 365 Defender alert pages. This information will be available for all app governance alerts, including alerts triggered by threat detection rules, predefined policies, and user-defined policies. [Learn more about the enhanced alert experience.](/defender-cloud-apps/app-governance-detect-remediate-detect-threats)
