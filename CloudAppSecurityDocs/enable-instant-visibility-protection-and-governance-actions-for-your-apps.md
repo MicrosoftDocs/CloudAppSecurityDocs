@@ -1,7 +1,7 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 03/14/2023
+ms.date: 04/24/2023
 ms.topic: how-to
 ---
 
@@ -56,6 +56,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Citrix share file  |  |  |  |   |
 | DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
@@ -74,6 +75,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 |Workplace by Meta|✔||✔|✔|✔|✔|
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Zoom  |  |  |  |   |
 
 ### User, app governance, and security configuration visibility
 
@@ -102,6 +104,8 @@ The following tables list, per cloud app, which abilities are supported with App
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
 |Workplace by Meta|||||
 | Zendesk  |  |  |  |  |
+| Zoom  |  |  |  | Preview  |
+
 
 ### Information protection
 
@@ -111,6 +115,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| Citrix share file  |  |  |  |   |
 | DocuSign          |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
 | Egnyte  |  |  |  |  | |
@@ -129,6 +134,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
 |Workplace by Meta||||||
 | Zendesk  |  |  |  |  |  |
+| Zoom  |  |  |  |   |
 
 ## Prerequisites
 
