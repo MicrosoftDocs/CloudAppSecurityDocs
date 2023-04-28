@@ -18,7 +18,6 @@ Connecting ServiceNow to Defender for Cloud Apps gives you improved insights int
 - Compromised accounts and insider threats
 - Data leakage
 - Insufficient security awareness
-- Ransomware
 - Unmanaged bring your own device (BYOD)
 
 ## How Defender for Cloud Apps helps to protect your environment
