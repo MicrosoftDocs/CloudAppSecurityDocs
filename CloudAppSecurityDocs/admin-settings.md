@@ -4,7 +4,7 @@ description: This article provides instructions for setting admin preferences in
 ms.date: 11/09/2021
 ms.topic: how-to
 ---
-# Admin user settings
+# Admin user settings 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
