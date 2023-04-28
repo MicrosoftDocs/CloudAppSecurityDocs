@@ -4,6 +4,7 @@ description: This article provides information about the benefits of connecting 
 ms.date: 01/29/2023
 ms.topic: article
 ---
+
 # How Defender for Cloud Apps helps protect your ServiceNow environment
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -35,7 +36,7 @@ You can use the following built-in policy templates to detect and notify you abo
 | Type | Name |
 | ---- | ---- |
 | Built-in anomaly detection policy | [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[Impossible travel](anomaly-detection-policy.md#impossible-travel)<br />[Activity performed by terminated user](anomaly-detection-policy.md#activity-performed-by-terminated-user) (requires Azure Active Directory as IdP)<br />[Multiple failed login attempts](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[Ransomware detection](anomaly-detection-policy.md#ransomware-activity)<br />[Unusual multiple file download activities](anomaly-detection-policy.md#unusual-activities-by-user) |
-| Activity policy template | Logon from a risky IP address<br />Mass download by a single user<br />Potential ransomware activity |
+| Activity policy template | Logon from a risky IP address<br />Mass download by a single user|
 | File policy template | Detect a file shared with an unauthorized domain<br />Detect a file shared with personal email addresses<br />Detect files with PII/PCI/PHI |
 
 For more information about creating policies, see [Create a policy](control-cloud-apps-with-policies.md#create-a-policy).
@@ -58,3 +59,4 @@ Review our best practices for [securing and collaborating with external users](b
 
 > [!div class="nextstepaction"]
 > [How to connect ServiceNow to Microsoft Defender for Cloud Apps](./connect-servicenow.md)
+
