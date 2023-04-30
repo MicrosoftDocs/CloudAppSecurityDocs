@@ -84,7 +84,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
   - User domain - Search for a specific user domain.
   - User organization – The organizational unit of the user who performed the activity, for example, all activities performed by EMEA_marketing users. This is only relevant for connected Google Workspace instances using organizational units.
   - User group – Specific user groups that you can import from connected apps, for example, Office 365 administrators.
-  - User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, select the name of the user group. Clicking will take you to the Accounts page, that lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
+  - User name - Search for a specific username. To see a list of users in a specific user group, in the **Activity drawer**, select the name of the user group. Clicking will take you to the Accounts page, which lists all the users in the group. From there, you can drill down into the details of the accounts of specific users in the group.
   - The **User group** and **User name** filters can be further filtered by using the **As** filter and selecting the role of the user, which can be any of the following:
     - Activity object only - meaning that the user or user group selected didn't perform the activity in question; they were the object of the activity.
     - Actor only - meaning that the user or user group performed the activity.
@@ -95,7 +95,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - User-agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
 
 >[!NOTE]
->Defender for Cloud Apps considers *outdated* as two major versions are older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
+>Defender for Cloud Apps considers *outdated* as two major versions older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
 
 <!--
 >[!NOTE]
@@ -123,7 +123,7 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 - Download activities - filters all your activities to display only those activities that were download activities, including downloading user list as a .csv file, downloading shared content, and downloading a folder.
 
-- Failed log-in - filters all your activities to display only failed logons and failed signs in via SSO
+- Failed log-in - filters all your activities to display only failed log-ins and failed sign-ins via SSO
 
 - File and folder activities - filters all your activities to display only those involving files and folders. The filter includes uploading, download, and accessing folders, along with creating, deleting, uploading, downloading, quarantining, and accessing files and transferring content.
 

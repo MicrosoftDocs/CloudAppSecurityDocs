@@ -60,6 +60,6 @@ Once an admin has been granted the appropriate permission to view private activi
 
     ![Screenshot showing the activity log settings icon.](media/activity-privacy-view-settings-icon.png)
 
-1. In the **Show private activities** dialog, click **OK** to confirm that you understand the action is being audited. Once confirmed, the private activities are shown in the activity log, and the action is recorded in the governance log.
+1. In the **Show private activities** dialog, click **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log, and the action is recorded in the governance log.
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -37,11 +37,11 @@ To create a new access policy, follow this procedure:
 
     - **Device tags**: Use this filter to identify unmanaged devices.
 
-    - **Location**: This filter identifies unknown (and therefore risky) locations.
+    - **Location**: Use this filter to identify unknown (and therefore risky) locations.
 
     - **IP address**: Use this filter to filter per IP address or use previously assigned IP address tags.
 
-    - **User agent tag**: This filter enables the heuristic to identify mobile and desktop apps. This filter can be set to equal or not equal. The values should be tested against your mobile and desktop apps for each cloud app.
+    - **User agent tag**: Use this filter to enable the heuristic to identify mobile and desktop apps. This filter can be set to equal or not equal. The values should be tested against your mobile and desktop apps for each cloud app.
 
 1. Under **Actions**, select one of the following options:
 
@@ -49,7 +49,7 @@ To create a new access policy, follow this procedure:
 
     - **Block**: Set this action to block access according to the policy filters you set explicitly.
 
-1. You can **Create an alert for each matching event with the policy's severity** and set an alert limit, and select whether you want the alert as an email, a text message, or both.
+1. You can **Create an alert for each matching event with the policy's severity**, set an alert limit, and select whether you want the alert as an email, a text message, or both.
 
 ## Related videos
 

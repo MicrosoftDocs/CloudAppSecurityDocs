@@ -10,11 +10,11 @@ ms.topic: how-to
 
 Microsoft Defender for Cloud Apps gives you visibility into the accounts from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps reads account information associated with connected apps. The Accounts page enables you to investigate those accounts, permissions, the groups they're members of, their aliases, and the apps they're using. Additionally, when Defender for Cloud Apps detects a new account that wasn't previously seen in one of the connected apps - for example, in activities or file sharing - the account is added to the accounts list of that app. This enables you to have visibility into the activity of external users interacting with your cloud apps.
 
-Admins can search for a specific user's metadata or user's activity. The **Users and accounts** page provide you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
+Admins can search for a specific user's metadata or user's activity. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
 The **Users and accounts** page can be [filtered](#users-and-accounts-filters) to enable you to find specific accounts and to deep dive into different types of accounts; for example, you can filter for all External accounts that haven't been accessed since last year.
 
-The **Users and accounts** page enables you to investigate your accounts, including the following issues easily:
+The **Users and accounts** page enables you to easily investigate your accounts, including the following issues:
 
 * Check if any accounts have been inactive in a particular service for a long time (Maybe you should revoke the license for that user to that service)
 
