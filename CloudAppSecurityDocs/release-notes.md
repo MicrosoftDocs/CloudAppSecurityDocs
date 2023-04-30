@@ -31,12 +31,12 @@ For more information on what's new with other Microsoft Defender security produc
 
 April 30, 2023
 
-- **Microsoft Defender for Cloud Apps integration into Microsoft 365 Defender is Generally Available (GA)**. For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+- **The Microsoft Defender for Cloud Apps integration into Microsoft 365 Defender is Generally Available (GA)**. For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
-- **Automatic redirection option is Generally Available (GA)**. The automatic redirect option is also now in General Availability, which admins can use to redirect users from the standalone Defender for Cloud Apps portal to Microsoft 365 Defender. 
+- **The automatic redirection option is Generally Available (GA)**. Admins can use this option to redirect users from the standalone Defender for Cloud Apps portal to Microsoft 365 Defender. 
 
-    By default, this option is set to **Off**. Admins must explicitly opt in by switching the toggle to **On** to use Microsoft 365 Defender experience exclusively.
-
+    By default, this option is set to **Off**. Admins must explicitly opt in by switching the toggle to **On** to exclusively use the Microsoft 365 Defender experience. 
+    
     For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
 
 - **Settings pages updates**:
