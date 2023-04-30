@@ -1,7 +1,7 @@
 ---
 title: Classic portal -  Connect apps to get visibility and control 
 description: Classic portal -  This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 01/19/2023
+ms.date: 04/24/2023
 ms.topic: how-to
 ROBOTS: NOINDEX
 ---
@@ -56,6 +56,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Citrix Share file          |  |  | |   |
 | DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
@@ -73,6 +74,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Zoom  |  |  |  |   |
 
 ### User, app governance, and security configuration visibility
 
@@ -82,23 +84,26 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| DocuSign          |  |  | | |
+| Citrix Share file          |  |  | | Preview  |
+| DocuSign          |  |  | | Preview  |
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
-| GitHub            |                                      | ✔                         |                           |                           |
+| GitHub            |                                      | ✔                         |                           | Preview                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
-| Office 365        | ✔                                    | ✔                         | ✔                         |                   |
-| Okta              |                                      | Not applicable            | Not applicable            |             |
+| Office 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
+| Okta              |                                      | Not applicable            | Not applicable            | Preview            |
 | OneLogin | |  |  |  |
-| Service  Now      |                                      |                           |                           | Preview (At General Availability the licensing of this capability may be changed) |
-| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview (At General Availability the licensing of this capability may be changed)                  |
+| Service  Now      |                                      |                           |                           | ✔ |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
 | Slack |  |  |  |  |
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
+|Workplace by Meta|||||
 | Zendesk  |  |  |  |  |
+| Zoom  |  |  |  | Preview  |
 
 ### Information protection
 
@@ -108,6 +113,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| Citrix Share file          |  |  | |   |
 | DocuSign          |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
 | Egnyte  |  |  |  |  | |
@@ -125,6 +131,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
 | Zendesk  |  |  |  |  |  |
+| Zoom  |  |  |  |   |
 
 ## Prerequisites
 
