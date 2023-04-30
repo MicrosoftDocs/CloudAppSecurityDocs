@@ -45,20 +45,20 @@ Based on app alert patterns, you can update the appropriate app policy and chang
 
 1. To ban the app, select the ban icon at the end of the app row in the table.
 
-    ![ban app icon.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/ban-app-icon.png)
+    ![ban app icon.](media/ban-app-icon.png)
 
 
     - You can choose if you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog.
     - It's recommended that you let the app users know their app is about to be banned from use.
 
-    ![ban app.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/ban-app.png)
+    ![ban app.](media/ban-app.png)
 
 
 1. Type the message you want to send to the app users in the Enter a custom notification message box. Select **Ban app** to send the mail, and ban the app from your connected app users.
 
 1. To approve the app, select the approve icon at the end of the row in the table.
 
-    ![approve app.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/approve-app.png)
+    ![approve app.](media/approve-app.png)
 
 
     - The icon turns green, and the app is approved for all your connected app users.
@@ -74,4 +74,4 @@ For Google Workspace and Salesforce, it's possible to revoke permission to an ap
 1. On the **OAuth apps** page, select the three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: [https://security.google.com/settings/security/permissions?hl=en&pli=1](https://security.google.com/settings/security/permissions?hl=en&pli=1) Select the app and select 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 1. You can also revoke permissions to use the app for the user. Select the icon at the end of the app row in the table and selecting **Revoke app**.
 
-    ![revoke app.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/revoke-app.png)
+    ![revoke app.](media/revoke-app.png)

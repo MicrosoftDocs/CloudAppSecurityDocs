@@ -1,6 +1,6 @@
 ---
 title: View your apps
-ms.date: 02/28/2023
+ms.date: 04/30/2023
 ms.topic: how-to
 description: View your apps.
 ---
@@ -98,60 +98,60 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 - Security Administrator
 - Security Operator
 
-## Working with the OAuth apps page connected to Salesforce and Google Workspace
+## Managing OAuth apps
 
-> [!Note]
-> This section is only relevant for Salesforce and Google Workspace applications.
+The **OAuth** page displays information about app permissions in apps connected to Microsoft 365, Google Workspace, and Salesforce. Use this page to view permissions granted to each app and to revoke permissions or ban apps.
 
-The **OAuth** page displays information about app permissions in your connected apps.
-
-To access the OAuth tab:
-
-In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate**, and then **OAuth apps**.
+**To access the OAuth page**, in [Microsoft 365 Defender](https://security.microsoft.com), select **Cloud apps** > **OAuth apps**. For example:
 
 ![app permissions.](media/app-permissions.png)
 
+The **Manage OAuth apps** page provides the following information about each OAuth app that was granted permissions:
 
-The OAuth apps page provides the following information about each OAuth app that was granted permissions:
+|Colum name  |Description  |Available for...   |
+|---------|---------|---------|
+|**Name**     | The app's name. Select to show or hide more details about the app.       |    Microsoft 365, Google Workspace, Salesforce     |
+|**Authorized by**     | The number of users who authorized this app to access their app's account, and granted the app permissions. <br><br>Select to view more information, including a list of user emails and whether an admin has consented the app previously. On the **Users who added...** pane, select **Export** to export the listed users to a CSV file. |Microsoft 365, Google Workspace, Salesforce   |
+|**Permission level**     |  High, Medium, or Low.   <br><br>The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](/defender-cloud-apps/governance-actions).     |  Microsoft 365, Google Workspace, Salesforce          |
+|**Last authorized**     | The most recent date on which a user granted permissions to this app.        |Microsoft 365, Salesforce         |
+|**Actions**  |   Select an option to mark an app as approved or banned.       |    Microsoft 365, Google Workspace, Salesforce        |
 
-||
-||
-|Basic icon in the app query bar|Switch to query in the basic view.|Office 365, Google Workspace, Salesforce|
-|Advanced icon in the app query bar|Switch to query in the Advanced view.|Office 365, Google Workspace, Salesforce|
-|Open or close all details icon in the app list|View more or less details about each app.||
-|Export icon in the app list|Export a CSV file that contains a list of apps, number of users for each app, permissions associated with the app, permissions level, app state, and community use level.|Office 365, Google Workspace, Salesforce|
-|App|Name of the app. Select the name to view more information, including the description, publisher (for Office 365), app website, and ID.|Office 365, Google Workspace, Salesforce|
-|Authorized by|The number of users who authorized this app to access their app's account, and granted the app permissions. Select the number to view more information, including a list of user emails and whether an admin has consented the app previously.|Office 365, Google Workspace, Salesforce|
-|Permissions Level|The permissions level icon and text indicating either High, Medium, or Low. The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](/defender-cloud-apps/governance-actions).|Office 365, Google Workspace|
-|App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Office 365, Google Workspace, Salesforce|
-|Community use|Shows you how popular the app is across all your users (common, uncommon, rare)|Office 365, Google Workspace, Salesforce|
-|Last authorized|The most recent date on which a user granted permissions to this app.|Office 365, Salesforce|
-|Publisher|The name of the vendor who provides the app.  
-Publisher verification - Publisher verification helps admins and end users understand the authenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).|Office 365|
-|Last used|The most recent date on which this app was used by anyone in your organization.|Salesforce|
+Do any of the following actions to work with apps listed on the **Manage OAuth apps** page:
 
-## Query OAuth apps connected to Salesforce and Google Workspace
+- Select **Bulk selection** to either select all listed apps, or clear the selection on all selected apps.
 
-> [!Note]
-> This section is only relevant for Salesforce and Google Workspace applications.
-You can query OAuth apps in either the **Basic** view or the **Advanced** view. select values from one or multiple drop-downs to display the specific apps in the Basic view. In the advanced view, use the **Select a filter** drop-down to narrow your search. Add operators, equals, or doesn't equal, to a selected value to complete your query.
+- Select **New policy from search** to create a new OAuth app policy based on the current query results. For more information, see [Create app policies in app governance](app-governance-app-policies-create.md).
 
-- Choose the **Add a filter** icon to add additional filters to further refine your query. The filters are applied automatically and the apps list is updated.
-- Choose the **Remove a filter** icon next to the filter to remove the filters.
+- Select **Export** to export the currently listed apps to a CSV file.
 
-## Auditing of OAuth apps connected to Salesforce and Google Workspace
+- Select **Show details** at the top right to view more information about all of the apps displayed.
 
+Expanding app details shows the following extra information for each app:
 
-> [!Note]
-> This section is only relevant for Salesforce and Google Workspace applications.
-Defender for Cloud Apps audits all OAuth authorization activities to provide you with comprehensive monitoring and investigation of activities performed. You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
+|Colum name  |Description  |Available for...   |
+|---------|---------|---------|
+|**Publisher**     |  The name of the vendor that provides the app. <br><br>Publisher verifications help admins and end users understand theauthenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azureactive-directory/develop/publisher-verification-overview).| Microsoft 365    |
+|**Permissions**     |  A list of all permissions currently granted to the app       |   Microsoft 365, Google Workspace      |
+|**App website**     |  A link to the app's website.       |   Microsoft 365      |
+|**Community use**     | Common, Uncommon, Rare. Indicates how popular the app is across all your users.      | Microsoft 365, Google Workspace,Salesforce        |
+|**App ID**     |  The app's ID      |   Microsoft 365, Google Workspace, Salesforce      |
+|**App activities**     |  A link to the app's activity log, which you can use to understand the app's recent usage.      |  Microsoft 365, Google Workspace, Salesforce       |
+|**Redirect URLs**     | A list of any redirect URLs for the app.        |  Microsoft 365       |
+| **Terms of service** | A link to the app's terms of service | Microsoft 365  |
+| **Support** |A link to the app's support statement | Microsoft 365  |
+| **Privacy Statement** | A link to the app's privacy statement | Microsoft 365  |
+| **Consent activities** | A link to the app's activity log, with a filter applied for consent activities only. | Microsoft 365  |
+| **Last used** | The most recent date on which this app was used by anyone in your organization.|Salesforce |
 
-To export the log, perform the following steps:
+### Filter apps displayed
 
-1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, select the link showing the number of users that authorized the app.
-1. In the pop-up, select **Export**.
+By default, the **OAuth** page has a set of saved, basic queries, with one applied as a default filter. Do any of the following actions to change the filter applied as needed:
 
-    ![Screenshot showing export of OAuth app auditing.](media/oauth-export-users.png)
+- Select different options in the basic filter to modify it for your needs. Then select **Save as** to save your updated filter. 
+
+- Select *Queries: **Select a query*** to select a different saved query, such as *Apps authorized by admins** or **Apps authorized by external users*.
+
+- Select the **Advanced filters** toggle on the right to add more filtering options. Select a filter, an operator, and the value you want to filter by.
 
 
 ## Next step
