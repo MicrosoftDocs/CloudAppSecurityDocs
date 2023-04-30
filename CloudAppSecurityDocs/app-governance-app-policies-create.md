@@ -156,6 +156,49 @@ Here's an example of a process for creating a new policy, testing it, and then m
 
 :::image type="content" source="media/app-governance/mapg-create-new-policy-process.png" alt-text="The create app policy workflow." lightbox="media/app-governance/mapg-create-new-policy-process.png":::
 
+## Create a new policy for OAuth apps connected to Salesforce and Google Workspace
+
+
+> [!Note]
+> This section is only relevant for Salesforce and Google Workspace applications.
+There are two ways to create a new OAuth app policy. The first way is under **Investigate** and the second is under **Control**.
+
+To create a new OAuth app policy:
+
+1. Under **Investigate**, select **OAuth apps**.
+1. Filter the apps according to your needs. For example, you can view all apps that request **Permission** to **Modify calendars in your mailbox**.
+1. Select the **New policy from search** button. ![New policy from search.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/app-permissions-filter.png)
+
+1. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
+1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.
+
+Alternatively, you can also create the policy by selecting **Control** followed by **Policies**. Then select **Create policy** followed by **OAuth app policy**.
+
+![new OAuth app policy.](https://learn.microsoft.com/en-us/defender-cloud-apps/media/app-permissions-policy.png)
+
+
+> [!Note]
+> OAuth apps policies will trigger alerts only on policies that were authorized by users in the tenant.
+## Anomaly detection policies for OAuth apps connected to Salesforce and Google Workspace
+
+
+> [!Note]
+> This section is only relevant for Salesforce and Google Workspace applications.
+In addition to OAuth app policies you can create, there are the following out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious:
+
+||
+||
+|Misleading OAuth app name|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app.|
+|Misleading publisher name for an OAuth app|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher.|
+|Malicious OAuth app consent|Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.|
+|Suspicious OAuth app file download activities|See [Anomaly detection policies](/defender-cloud-apps/anomaly-detection-policy)|
+
+- 
+
+   > [!Note]
+   > Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+   > The severity of OAuth app anomaly detection policies cannot be modified.
+
 ## Next step
 
 [Manage your app policies.](app-governance-app-policies-manage.md)

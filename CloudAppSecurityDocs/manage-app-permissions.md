@@ -16,9 +16,11 @@ For more information on investigating OAuth apps, see [Investigate risky OAuth a
 
 > [!NOTE]
 >
+> - App Governance is a set of security and policy management capabilities designed for OAuth-enabled apps registered on Azure Active Directory (Azure AD), Google, and Salesforce. For more information, see [App governance add-on to Defender for Cloud Apps in Microsoft 365 Defender](app-governance-manage-app-governance.md).
+> 
 > - Defender for Cloud Apps only identifies apps that request "Delegated" permissions. For more information, see [Client app permissions](/azure/active-directory/develop/developer-glossary#permissions).
 >
-> - **Manage OAuth apps** is available only after connecting one or more of the supported platforms - Office 365, Google Workspace, or Salesforce. Once connected, the **OAuth apps** menu option will appear under **Investigate**.
+> - Manage OAuth apps is available only after connecting one or more of the supported platforms - Office 365, Google Workspace, or Salesforce. Once connected, the **OAuth apps** menu option will appear under **Investigate**.
 
 ## Working with the OAuth apps page
 

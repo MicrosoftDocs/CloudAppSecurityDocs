@@ -98,6 +98,62 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 - Security Administrator
 - Security Operator
 
+## Working with the OAuth apps page connected to Salesforce and Google Workspace
+
+> [!Note]
+> This section is only relevant for Salesforce and Google Workspace applications.
+
+The **OAuth** page displays information about app permissions in your connected apps.
+
+To access the OAuth tab:
+
+In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate**, and then **OAuth apps**.
+
+![app permissions.](media/app-permissions.png)
+
+
+The OAuth apps page provides the following information about each OAuth app that was granted permissions:
+
+||
+||
+|Basic icon in the app query bar|Switch to query in the basic view.|Office 365, Google Workspace, Salesforce|
+|Advanced icon in the app query bar|Switch to query in the Advanced view.|Office 365, Google Workspace, Salesforce|
+|Open or close all details icon in the app list|View more or less details about each app.||
+|Export icon in the app list|Export a CSV file that contains a list of apps, number of users for each app, permissions associated with the app, permissions level, app state, and community use level.|Office 365, Google Workspace, Salesforce|
+|App|Name of the app. Select the name to view more information, including the description, publisher (for Office 365), app website, and ID.|Office 365, Google Workspace, Salesforce|
+|Authorized by|The number of users who authorized this app to access their app's account, and granted the app permissions. Select the number to view more information, including a list of user emails and whether an admin has consented the app previously.|Office 365, Google Workspace, Salesforce|
+|Permissions Level|The permissions level icon and text indicating either High, Medium, or Low. The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](/defender-cloud-apps/governance-actions).|Office 365, Google Workspace|
+|App state|An admin can mark an app as approved, banned, or leave is as undetermined.|Office 365, Google Workspace, Salesforce|
+|Community use|Shows you how popular the app is across all your users (common, uncommon, rare)|Office 365, Google Workspace, Salesforce|
+|Last authorized|The most recent date on which a user granted permissions to this app.|Office 365, Salesforce|
+|Publisher|The name of the vendor who provides the app.  
+Publisher verification - Publisher verification helps admins and end users understand the authenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).|Office 365|
+|Last used|The most recent date on which this app was used by anyone in your organization.|Salesforce|
+
+## Query OAuth apps connected to Salesforce and Google Workspace
+
+> [!Note]
+> This section is only relevant for Salesforce and Google Workspace applications.
+You can query OAuth apps in either the **Basic** view or the **Advanced** view. select values from one or multiple drop-downs to display the specific apps in the Basic view. In the advanced view, use the **Select a filter** drop-down to narrow your search. Add operators, equals, or doesn't equal, to a selected value to complete your query.
+
+- Choose the **Add a filter** icon to add additional filters to further refine your query. The filters are applied automatically and the apps list is updated.
+- Choose the **Remove a filter** icon next to the filter to remove the filters.
+
+## Auditing of OAuth apps connected to Salesforce and Google Workspace
+
+
+> [!Note]
+> This section is only relevant for Salesforce and Google Workspace applications.
+Defender for Cloud Apps audits all OAuth authorization activities to provide you with comprehensive monitoring and investigation of activities performed. You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
+
+To export the log, perform the following steps:
+
+1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, select the link showing the number of users that authorized the app.
+1. In the pop-up, select **Export**.
+
+    ![Screenshot showing export of OAuth app auditing.](media/oauth-export-users.png)
+
+
 ## Next step
 
 [Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
