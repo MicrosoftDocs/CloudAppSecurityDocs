@@ -31,22 +31,27 @@ For more information on what's new with other Microsoft Defender security produc
 
 April 30, 2023
 
-- **Microsoft Defender for Cloud Apps integration into Microsoft 365 Defender is Generally Available (GA)!** For more information, see [Get started with Microsoft Defender for Cloud Apps](get-started.md).
+- **Microsoft Defender for Cloud Apps integration into Microsoft 365 Defender is Generally Available (GA)**. For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
-    This general availability also applies to the automatic redirection option, which admins can use to redirect users from the standalone Defender for Cloud Apps portal to Microsoft 365 Defender. By default, this option is still set to **Off**, and you can continue to use the standalone Defender for Cloud Apps portal. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+- **Automatic redirection option is Generally Available**. The automatic redirect option is also now in General Availability, which admins can use to redirect users from the standalone Defender for Cloud Apps portal to Microsoft 365 Defender. 
 
-    The following pages aren't moving to Microsoft 365 Defender:
-    
-    | Page name               | Description        |
-    | ------------------------------ | -------------------- |
-    | **Settings > Azure AD Identity Protection** | Fully integrated into Microsoft 365 Defender. For more information, see [Investigate alerts in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-alerts.md). |
-    | **Settings > App Governance** | Fully integrated into Microsoft 365 Defender. For more information, see [Get started with app governance](app-governance-get-started.md).|
-    | **Settings > Microsoft Defender for Identity** | Fully integrated into Microsoft 365 Defender. For more information, see [Deploy Microsoft Defender for Identity with Microsoft 365 Defender](/defender-for-identity/deploy-defender-identity.md). |
-    | **Settings > Export settings** | Available only in the standalone Defender for Cloud Apps portal. |
-    | **Activity log > Web traffic log** |  Available only in the standalone Defender for Cloud Apps portal. |
+    By default, this option is set to **Off**. Admins must explicitly opt in by switching the toggle to **On** to use Microsoft 365 Defender experience exclusively.
 
-For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
- 
+    For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+
+- **Settings pages updates**:
+
+    The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
+  
+    - [Settings > Azure AD Identity Protection](/microsoft-365/security/defender/investigate-alerts.md)
+    - [Settings > App Governance](app-governance-get-started.md)
+    - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity.md)
+  
+    The following pages are planned for deprecation together with the Microsoft Defender for Cloud Apps portal:
+
+    - **Settings > Export settings**
+    - **Activity log > Web traffic log**
+
 ## Defender for Cloud Apps release 250
 
 April 24, 2023
