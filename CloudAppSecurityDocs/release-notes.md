@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 04/24/2023
+ms.date: 04/30/2023
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -26,6 +26,31 @@ For more information on what's new with other Microsoft Defender security produc
 
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
+
+## Defender for Cloud Apps release 251-252
+
+April 30, 2023
+
+- **The Microsoft Defender for Cloud Apps integration into Microsoft 365 Defender is Generally Available (GA)**. For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+
+- **The automatic redirection option is Generally Available (GA)**. Admins can use this option to redirect users from the standalone Defender for Cloud Apps portal to Microsoft 365 Defender. 
+
+    By default, this option is set to **Off**. Admins must explicitly opt in by switching the toggle to **On** to exclusively use the Microsoft 365 Defender experience. 
+    
+    For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+
+- **Settings pages updates**:
+
+    The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
+  
+    - [Settings > Azure AD Identity Protection](/microsoft-365/security/defender/investigate-alerts)
+    - [Settings > App Governance](app-governance-get-started.md)
+    - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
+  
+    The following pages are planned for deprecation together with the Microsoft Defender for Cloud Apps portal:
+
+    - **Settings > Export settings**
+    - **Activity log > Web traffic log**
 
 ## Defender for Cloud Apps release 250
 
