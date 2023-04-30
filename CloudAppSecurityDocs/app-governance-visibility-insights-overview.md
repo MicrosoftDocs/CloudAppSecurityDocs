@@ -43,9 +43,6 @@ With app governance, you can see:
 - Alerts insights.
 - Policy list insights.
 
-<!--
-- Policies created in Defender for Cloud Apps in the app governance portal.
--->
 
 You can also:
 

@@ -161,9 +161,6 @@ The log collector is now able to communicate with Defender for Cloud Apps. After
 ### How to change the Java KeyStore password
 
 1. Stop the Java KeyStore server.
-
-<!-- /opt/jdk/amazon-corretto-8.222.10.1-linux-x64/jre/lib/security -->
-
 1. Open a bash shell inside the container and go to the *appdata/conf* folder.
 1. Change the server KeyStore password by using this command:
 
