@@ -42,12 +42,6 @@ Here's a summary of the integration.
 ![The integration of app governance with Azure AD and Defender for Cloud Apps.](media/app-governance-detect-remediate-overview/app-governance-add-on-arch1.png)
 Additionally, app governance sends its alerts as signals to Defender for Cloud Apps and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
 
-<!--
-
-CFA #3 Scenario 1:  As an admin, I can investigate alerts associated to my M365 apps through MAPG.
-CFA #3 Scenario 2: As an admin, I can manually remediate 
-CFA #3 Scenario 3: As an admin, I can configure policies to perform automatic 
--->
 
 ## Next step
 

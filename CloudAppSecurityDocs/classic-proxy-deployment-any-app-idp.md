@@ -196,7 +196,7 @@ For example, if you've configured a policy that blocks downloading files for an 
     1. Select **Finish**.
 
     > [!NOTE]
-    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page.<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
+    > For the certificates to be recognized, once you have installed the certificate, you must restart the browser and go to the same page.
 
 1. Select **Continue**.
 1. Check that the application is available in the table.

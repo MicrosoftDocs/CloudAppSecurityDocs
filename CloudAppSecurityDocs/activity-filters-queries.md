@@ -19,8 +19,6 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - Activity objects – Search for the objects the activity was done on. This filter applies to file, folder, user, or app objects.
   - Activity object ID - the ID of the object (file, folder, user, or app ID).
-  <!-- - File, folder or site URL - Enables you to select files, folders and URLs that start with a specific string.-->
-  <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
   - Item - Enables you to search by the name or ID of any activity object (for example: user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether you want to filter for items that **Contain**, **Equal**, or **Starts with** the specific item.
 
 - Action type - Search for a more specific action performed in an app.
@@ -40,8 +38,6 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - Applied action - Search by governance action applied: Blocked, Bypass proxy, Decrypted, Encrypted, Encryption failed, No action.
 
 - Date – The date when the activity occurred. Filter supports before/after dates and a date range.
-
-<!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
 - Device tag - Search by **Intune compliant**, **Hybrid Azure AD joined** or **Valid client certificate**.
 
@@ -95,10 +91,6 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - User agent – The user agent of from with the activity was performed.
 
 - User agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
-
-<!--
->[!NOTE]
-> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon.](media/clear-filters.png). -->
 
 ## Activity queries
 
