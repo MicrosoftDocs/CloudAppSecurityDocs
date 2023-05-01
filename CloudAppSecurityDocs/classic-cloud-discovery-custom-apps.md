@@ -41,7 +41,6 @@ At any time, you can select the three dots at the end of the row to edit or dele
 >[!NOTE]
 > Custom apps are automatically tagged with the **Custom app** tag after you add them. This app tag cannot be removed.
 In order to view all your custom apps, set the **App tag** filter to be equal to *Custom app*.
-<!-- - By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
 ## Next steps
 

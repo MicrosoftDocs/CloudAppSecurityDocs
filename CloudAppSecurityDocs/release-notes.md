@@ -302,11 +302,6 @@ November 28, 2021
 - **NetDocuments app connector available in public preview**  
 A new app connector for NetDocuments is available in public preview. You can now connect Microsoft Defender for Cloud Apps to NetDocuments to monitor and protect users and activities. For more information, see [Connect NetDocuments to Microsoft Defender for Cloud Apps](connect-netdocuments-to-microsoft-defender-for-cloud-apps.md).
 
-<!--
-- **Reset user investigation priority score**  
-The user investigation priority score can now be reset to 0 if an investigation was done and there's no need to see the user score for past events. For more information, see [Identify top risky users](tutorial-ueba.md#phase-2-identify-top-risky-users).
--->
-
 ## Cloud App Security release 212 and 213
 
 October 31, 2021

@@ -22,9 +22,6 @@ Additional integration solutions include:
 * **Generic SIEMs** - Integrate Defender for Cloud Apps with your generic SIEM server. For information in integrating with a Generic SIEM, see [Generic SIEM integration](siem.md).
 * **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
-<!-- > [!NOTE]
-> Sentinel integration to Defender for Cloud Apps isn't available for Gov customers. Those customers should use Microsoft 365 Defender's integration with Sentinel. For more information, see  [Microsoft Sentinel feature availability in US Government clouds](/azure/security/fundamentals/feature-availability#microsoft-sentinel). -->
-
 ## How to integrate
 
 Integrating with your SIEM is accomplished in two steps:
@@ -51,7 +48,7 @@ To integrate with Microsoft Sentinel:
     ![Screenshot showing Add SIEM integration menu.](media/classic-siem0.png)
 
 1. In the wizard, select the data types you want to forward to Microsoft Sentinel. You can configure the integration, as follows:
-    1. **Alerts**: Alerts are automatically turned on once Microsoft Sentinel is enabled. <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
+    1. **Alerts**: Alerts are automatically turned on once Microsoft Sentinel is enabled.
     1. **Discovery logs**: Use the slider to enable and disable them, by default, everything is selected, and then use the **Apply to** drop-down to filter which discovery logs are sent to Microsoft Sentinel.
 
     ![Screenshot showing start page of Configure Microsoft Sentinel integration.](media/classic-siem-sentinel-configuration.png)
