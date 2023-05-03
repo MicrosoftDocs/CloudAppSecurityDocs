@@ -54,6 +54,9 @@ This is supported only in firewalls and proxies that contain target URL data. Fo
 
 :::image type="content" source="media/discovered-apps/subdomains-image.png" alt-text="Subdomain filter.":::
 
+> [!NOTE]
+> If we can’t recognize the subdomains obtained from the traffic received and the data present in our DB, we will tag the subdomain as “other” 
+
 ## Discover resources and custom apps
 
 Cloud Discovery also enables you to deep dive into your IaaS and PaaS resources. You can discover activity across your resource-hosting platforms, viewing access to data across your self-hosted apps and resources including storage accounts, infrastructure and custom apps hosted on Azure, Google Cloud Platform, and AWS. Not only can you see overall usage in your IaaS solutions, but you can get visibility into the specific resources that are hosted on each, and the overall usage of the resources, to help mitigate risk per resource.
