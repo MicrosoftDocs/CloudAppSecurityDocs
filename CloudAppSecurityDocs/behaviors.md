@@ -36,7 +36,6 @@ The relevant detections are:
 - Suspicious impersonated activity
 - Multiple delete VM activities
 - Multiple VM creation activities
-- Investigation priority score increase
 - Unusual addition of credentials to an OAuth app
 
 ## Transition from alerts to behaviors
@@ -83,6 +82,7 @@ And then you can create a custom detection rule based on the query. For more inf
 **Example scenario 2**: You want to query 100 recent behaviors related to the MITRE attack technique **Valid Accounts (T1078)**:
 
 
+
 ```kusto
 BehaviorInfo
 | where AttackTechniques has "Valid Accounts (T1078)"
@@ -118,5 +118,7 @@ Have feedback to share? Please fill in [the feedback form](https://forms.office.
 - [Tutorial: Detect suspicious user activity with behavioral analytics](tutorial-suspicious-activity.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].
+
+
 
 
