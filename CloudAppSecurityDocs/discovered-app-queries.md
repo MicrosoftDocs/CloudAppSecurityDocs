@@ -22,7 +22,7 @@ When you turn on **Advanced filters**, you'll see a list of possible filters, in
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains.
 - **Categories**: The categories filter, located on the left of the page, enables you to search for types of apps according to app categories. Example categories include social network apps, cloud storage apps, and hosting services. You can select multiple categories at a time, or a single category, then apply the basic and advanced filters on top.
 - **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
-- **General risk factor**: Lets you search for general risk factors such as consumer popularity, data center locale, and more.
+- **General risk factor**: Lets you search for general risk factors such as headquarters, data center locale, and more.
 - **Risk score**: Lets you filter apps by risk score so that you can focus on, for example, reviewing only highly risky apps. You can also override the risk score set by Defender for Cloud Apps. For more information, see [Working with the risk score](risk-score.md).
 - **Security risk factor**: Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
 - **Usage**: Lets you filter based on the usage statistics of this app. Usage such as apps with less than or more than a specified number of **data uploads**, apps with more than or less than a specified number of **Users**.
