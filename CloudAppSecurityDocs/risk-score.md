@@ -12,7 +12,7 @@ The Cloud App Catalog gives you a full picture of what Cloud Discovery identifie
 
 ## The Cloud App Catalog
 
-The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up to date:
+The **Cloud app catalog** rates risk for your cloud apps based on regulatory certification, industry standards, and best practices. Four complementary processes run in the Cloud app catalog to keep it up-to-date:
 
 1. Automated data extraction directly from the cloud app. The extraction is for attributes such as SOC 2 compliance, terms of service, sign-in URL, privacy policy, and HQ location.
 2. Automated advanced data extraction for data by the Defender for Cloud Apps algorithms (for attributes such as HTTP security headers).
@@ -21,7 +21,7 @@ The **Cloud app catalog** rates risk for your cloud apps based on regulatory cer
 
 ![Screenshot showing the cloud app catalog.](media/cloud-app-catalog.png)
 
-The demand by business units for cloud apps as a solution to their changing needs is growing. The Cloud app catalog enables you to wisely choose which apps fit your organization's security requirements. The catalog keeps you up to date with the latest security standards, vulnerabilities, and breaches.
+The demand by business units for cloud apps as a solution to their changing needs is growing. The Cloud app catalog enables you to wisely choose which apps fit your organization's security requirements. The catalog keeps you up-to-date with the latest security standards, vulnerabilities, and breaches.
 
 For example, say you want to compare CRM apps and make sure they're adequately secured. You can use the Cloud app catalog page to filter for relevant apps you want:
 
@@ -44,7 +44,7 @@ There are basic and advanced Cloud App Catalog filters. To build a complex filte
 - **Apps and domains**: Enables you to search for specific apps or apps used in specific domains.
 - **Categories**: The categories filter, which is located on the left of the page, enables you to search for types of apps according to app categories. For example Social network apps, Cloud storage apps, and more types of apps. You can select more than one category at a time or a single category. Then, apply the basic or advanced filters on top of the categories.
 - **Compliance risk factor**: Lets you search for a specific standards, certification, and compliance that the app may comply with. Examples include HIPAA, ISO 27001, SOC 2, and PCI-DSS.
-- **General risk factor**: Lets you search for general risk factors such as headquarters, data center locale, and more.
+- **General risk factor**: Lets you search for general risk factors such as consumer popularity, data center locale, and more.
 - **Legal risk factor**: Lets you filter based on all the regulations and policies that are in-place. Using legal risk factors helps ensure data protection and privacy of the app's users, such as GDPR, DMCA, and data retention policy.
 - **Risk score**: Lets you filter apps by risk score that you can focus on. For example, reviewing only risky apps.
 - **Security risk factor**: Enables you to filter based on specific security measures. Measures include encryption at rest, multi-factor authentication, and others.
@@ -79,9 +79,9 @@ If you find a new app in your environment that hasn't been scored by Defender fo
 
 ## Customizing the risk score
 
-Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score. The score represents the Defender for Cloud Apps assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of three subscores relating to the three subcategories (Security, Compliance and Legal) which Defender for Cloud Apps considers when assessing reliability:
+Cloud Discovery provides you with important data regarding the credibility and reliability of the cloud apps that are used across the environment. Within the portal, each discovered app is displayed along with a total score. The score represents the Defender for Cloud Apps assessment of this particular app's maturity of use for enterprises. The total score of any given app is a weighted average of four subscores relating to the four subcategories which Defender for Cloud Apps considers when assessing reliability:
 
-- **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year, and headquarters. These fields are meant to show the company's stability on the most basic level. This category is not considered for total score calculation.
+- **General** - This category refers to basic facts about the company that produces the app, including its domain, founding year, and popularity. These fields are meant to show the company's stability on the most basic level.
 
 - **Security** - The security category accounts for all standards dealing with the physical security of the data used by the discovered app. This category includes fields such as multi-factor authentication, encryption, data classification, and data ownership.
 
@@ -89,7 +89,7 @@ Cloud Discovery provides you with important data regarding the credibility and r
 
 - **Legal** - This category displays which apps have which regulations and policies in-place to ensure data protection and privacy of the app's users such as GDPR, DMCA, and data retention policy.
 
-Each of the categories is composed of many specific properties. A few properties aren't considered for score calculation and are presented for information only. According to the Defender for Cloud Apps scoring algorithm, each property (that is considered for score calculation) receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly. However, continuous properties, such as domain age, will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category to create the category's subscore. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.
+Each of the categories is composed of many specific properties. According to the Defender for Cloud Apps scoring algorithm, each property receives a preliminary score between 0 and 10, depending on the value. True/False values will receive 10 or 0 accordingly. However, continuous properties, such as domain age, will receive a certain value within the spectrum. The score of each property is weighted against all other existing fields in the category to create the category's subscore. If you encounter an unscored app, it usually indicates an app whose properties are unknown and is therefore unscored.
 
 It's important to take a minute to review and modify the default weights given to the Cloud Discovery score configuration. By default, all the various parameters evaluated are given equal weight. If there are certain parameters that are more or less important to your organization, it's important to change them as follows:
 
