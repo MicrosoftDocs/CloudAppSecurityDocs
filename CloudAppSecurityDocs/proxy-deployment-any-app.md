@@ -132,7 +132,8 @@ For example, if you've configured a policy that blocks downloading files for an 
 1. In **User-defined domains**, enter all the domains you want to associate with this app, and then select **Save**.
 
    > [!NOTE]
-   > You can use the * wildcard character as a placeholder for any character. When adding domains, decide whether you want to add specific domains (`sub1.contoso.com`,`sub2.contoso.com`) or multiple domains (`*.contoso.com`).
+   > You can use the * wildcard character as a placeholder for any character. When adding domains, decide whether you want to add specific domains (`sub1.contoso.com`,`sub2.contoso.com`) or multiple domains (`*.contoso.com`). This is only supported for specific domains (`*.contoso.com`) and not for top-level domains (`*.com`).
+   
 1. Repeat the following steps to install the **Current CA** and **Next CA** self-signed root certificates.
 
    1. Select the certificate.
