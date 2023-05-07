@@ -48,14 +48,14 @@ After the results are filtered, you can [unsanction and block](governance-discov
 
 Cloud Discovery enables you to dive even deeper into your organization's cloud usage. You can identify specific instances that are in use by investigating the discovered subdomains.
 
-For example, you can differentiate between different SharePoint sites.
-
-This is supported only in firewalls and proxies that contain target URL data. For more information, see the list of supported appliances in [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+For example, you can differentiate between different SharePoint sites:
 
 :::image type="content" source="media/discovered-apps/subdomains-image.png" alt-text="Subdomain filter.":::
 
 > [!NOTE]
-> If we can’t recognize the subdomains obtained from the traffic received and the data present in our DB, we will tag the subdomain as “other” 
+> Deep dives into discovered apps are supported only only in firewalls and proxies that contain target URL data. For more information, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+>
+> If Defender for Cloud Apps can't match the sub-domain detected in the traffic logs with the data stored in the App Catalogue, the subdomain is tagged as **Other**.
 
 ## Discover resources and custom apps
 
