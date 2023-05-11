@@ -18,7 +18,7 @@ When content is matched against the selected expression, the violation text is r
 
 ## Content inspection for protected files
 
-Defender for Cloud Apps allows admins to grant Defender for Cloud Apps permission to decrypt encrypted files and scan their content for violations.
+Defender for Cloud Apps allows admins to grant Defender for Cloud Apps permission to decrypt encrypted files and scan their content for violations. This consent is also needed to enable encrypted files label scanning.
 
 In order to give Defender for Cloud Apps the necessary permissions:
 
