@@ -264,7 +264,7 @@ This alert identifies OAuth apps registered recently in a relatively new publish
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
 
-- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
 
     **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
