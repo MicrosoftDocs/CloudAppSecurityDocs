@@ -288,7 +288,7 @@ This alert finds multitenant OAuth apps that have made numerous calls to Microso
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.
 
-- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
 
     **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
@@ -581,7 +581,7 @@ This detection identifies a large volume of suspicious enumeration activities pe
 
 **MITRE ID**: T1087
 
-This alert finds OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It checks if the app has made numerous calls to Microsoft Graph API requesting user directory information. Apps that trigger this alert might be luring users into granting consent so they can access organizational data.
+This alert finds OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It verifies whether the app has made numerous calls to Microsoft Graph API requesting user directory information. Apps that trigger this alert might be luring users into granting consent so they can access organizational data.
 
 **TP or FP?**
 
@@ -593,7 +593,7 @@ This alert finds OAuth apps registered recently in a relatively new publisher te
     - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
     - Classify the alert as a true positive.  
   
-- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
 
     **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
