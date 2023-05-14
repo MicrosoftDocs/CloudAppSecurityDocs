@@ -270,7 +270,7 @@ This alert identifies OAuth apps registered recently in a relatively new publish
 
 **Understand the scope of the breach**
 
-Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to the mailboxes of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
 
 ### Suspicious app with mail permissions sending numerous emails
 
