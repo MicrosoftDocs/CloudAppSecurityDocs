@@ -252,7 +252,7 @@ Review consent grants to the application made by users and admins. Investigate a
 
 **Severity**: Medium  
 
-This alert identifies OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It also checks if the app has a relatively low global consent rate and makes numerous calls to Microsoft Graph API to access emails of consenting users. Apps that trigger this alert might be unwanted or malicious apps attempting to obtain consent from unsuspecting users.
+This alert identifies OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It also verifies whether the app has a relatively low global consent rate and makes numerous calls to Microsoft Graph API to access emails of consenting users. Apps that trigger this alert might be unwanted or malicious apps attempting to obtain consent from unsuspecting users.
 
 **TP or FP?**
 
