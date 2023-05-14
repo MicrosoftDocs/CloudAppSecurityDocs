@@ -276,7 +276,7 @@ Review consent grants to the application made by users and admins. Investigate a
 
 **Severity**: Medium  
 
-This alert finds multitenant OAuth apps that have made numerous calls to Microsoft Graph API to send emails within a short time period. It also checks if the API calls have resulted in errors and failed attempts to send emails. Apps that trigger this alert might be actively sending spam or malicious emails to other targets.
+This alert finds multitenant OAuth apps that have made numerous calls to Microsoft Graph API to send emails within a short time period. It also verifies whether the API calls have resulted in errors and failed attempts to send emails. Apps that trigger this alert might be actively sending spam or malicious emails to other targets.
 
 **TP or FP?**
 
