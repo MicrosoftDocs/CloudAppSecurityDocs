@@ -150,12 +150,12 @@ items:
       href: app-governance-get-started.md
     - name: App governance trial user guide
       href: app-governance-trial-user-guide.md
-    - name: What's new in app governance
-      href: app-governance-whats-new.md
     - name: Submit feedback on app governance
       href: app-governance-feedback.md
     - name: App governance FAQ
       href: app-governance-faq.yml
+    - name: What's new archive for app governance
+      href: app-governance-whats-new.md
     - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
