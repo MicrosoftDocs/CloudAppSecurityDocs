@@ -1,7 +1,7 @@
 ---
 title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 04/30/2023
+ms.date: 05/15/2023
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -30,7 +30,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## June 2023
 
 > [!NOTE]
-> Starting in June 2023, updates for app governance are listed together with other Microsoft Defender for Cloud features. For more information, see [What's new in the app governance add-on to Defender for Cloud Apps](app-governance-whats-new.md)
+> Starting in June 2023, updates for app governance are listed together with other Microsoft Defender for Cloud features. For information about earlier releases, see [What's new in the app governance add-on to Defender for Cloud Apps](app-governance-whats-new.md).
 
 ### App governance now available as part of Defender for Cloud Apps license
 

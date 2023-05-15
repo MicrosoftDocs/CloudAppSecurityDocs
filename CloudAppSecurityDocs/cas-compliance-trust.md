@@ -1,7 +1,7 @@
 ---
 title: Data security and privacy practices
 description: This article describes the Defender for Cloud Apps compliance offering, trust center, privacy, and data security.
-ms.date: 03/13/2023
+ms.date: 05/15/2023
 ms.topic: overview
 ---
 # Data security and privacy practices for Defender for Cloud Apps
@@ -67,13 +67,37 @@ Personal data about users is derived from the user's object in the SaaS applicat
 
 ## Data location
 
-Defender for Cloud Apps currently operates in datacenters in the European Union, the United Kingdom, and the United States (each a "Geo"). Customer data collected by the service is stored at rest as follows (a) for customers whose tenants are provisioned in the European Union or the United Kingdom, in either the European Union or the United Kingdom; (b) else, a data center in the Geo that is nearest to the location of where the customer's Azure Active Directory tenant has been provisioned; or (c) if Defender for Cloud Apps uses another Microsoft online service (such as Azure Active Directory or Azure CDN) to process such data, the data geolocation will be as defined by the data storage rules of that other online service.
-Customers who use App Governance will have data transferred and stored outside of the geographic region of customer’s who use Microsoft Defender for Cloud Apps without App Governance. Customer data collected by the service is stored at rest as follows (a) for customers whose tenants are provisioned in the European Union or the United Kingdom, in either the European Union or the United Kingdom; (b) for customers whose tenants are provisioned in the Asia Pacific, in either Asia Pacific or the United States; (c) for customers whose tenants are provisioned in the Canada, in either Canada, or the United States; (d) for customers whose tenants are provisioned in India, in either India or the United States; (e) for customers whose tenants are provisioned in any other region, in the United States or a data center in the Geo that is nearest to the location of where the customer's Azure Active Directory tenant has been provisioned; or (f) if App governance uses another Microsoft online service (such as Azure Active Directory or Azure CDN) to process such data, the data geolocation will be as defined by the data storage rules of that other online service. 
+Defender for Cloud Apps currently operates in datacenters in the European Union, the United Kingdom, and the United States (each a "Geo"). 
 
-> [!NOTE]
-> Defender for Cloud Apps uses Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
+Defender for Cloud Apps uses Azure Data Centers around the world to provide optimized performance through geolocation. This means that a user's session may be hosted outside of a particular region, depending on traffic patterns and their location. However, to protect your privacy, no session data is stored in these data centers.
 
-[Learn more about privacy](https://www.microsoft.com/trustcenter/privacy)
+For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy).
+
+### Defender for Cloud Apps data storage locations
+
+Customer data collected by the service is stored at rest as follows:
+
+|Customer provisioning location |Data storage location  |
+|---------|---------|
+|Customers whose tenants are provisioned in the European Union or the United Kingdom     |   Either the European Union or the United Kingdom      |
+|All other customers     |    The Geo that is nearest to the location of where the customer's Azure Active Directory tenant has been provisioned     |
+
+If Defender for Cloud Apps uses another Microsoft online service, such as Azure Active Directory or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
+
+### App governance data storage locations
+
+Customers who use App Governance will have data transferred and stored outside of the geographic region of customer’s who use Microsoft Defender for Cloud Apps without App Governance. In such cases, customer data collected by the service is stored at rest as follows:
+
+|Customer provisioning location |Data storage location  |
+|---------|---------|
+| Customers whose tenants are provisioned in the European Union or the United Kingdom | Either the European Union or the United Kingdom |
+|Customers whose tenants are provisioned in the Asia Pacific | Either Asia Pacific or the United States |
+| Customers whose tenants are provisioned in Canada | Canada or the United States |
+| Customers whose tenants are provisioned in India | Either India or the United States |
+| Customers whose tenants are provisioned in any other region | The United States or a data center in the Geo that is nearest to the location of where the customer's Azure Active Directory tenant has been provisioned |
+
+If App governance uses another Microsoft online service, such as Azure Active Directory or Azure CDN to process such data, the data geo location is defined by the data storage rules of that other online service.
+
 
 ## Transparency
 

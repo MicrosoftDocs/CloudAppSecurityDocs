@@ -51,7 +51,7 @@ You will see a list of apps and this information:
 - **App ID**
 - **Sensitivity label accessed**: Sensitivity labels on content accessed by the app
 - **Service accessed**: Microsoft 365 services accessed by the app
-- **Community use**: Shows you how popular the app is across all your users (common, uncommon, rare)
+- **Community use**: Shows you how popular the app is across all your users (*common*, *uncommon*, *rare*)
 - **Consent grants**: Shows you all app consent grants in the last 30 days
 - **App activities**: Shows you all app activities in the last 30 days
 
@@ -83,20 +83,20 @@ The app details pane provides additional information on these tabs:
 
 | Tab name | Description |
 |:-------|:-----|
-|Summary| See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
-|Data usage |See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources. You can filter usage insights by priority accounts only. |
-|Users |See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. If an app is admin consented, the Total consented users will be all users in the tenant. |
-|Permissions | See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
-|Sensitive labels | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
-|Last used | Indicates the last time the app signed in and provides a link to related recommendations on Azure Active Directory. |
-| Credentials | Indicates whether the app has unused or expiring credentials and provides a link to credential management on Azure Active Directory. |
+|**Summary**| See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
+|**Data usage** |See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources. You can filter usage insights by priority accounts only. |
+|**Users** |See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. If an app is admin consented, the Total consented users will be all users in the tenant. |
+|**Permissions** | See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
+|**Sensitive labels** | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
+|**Last used** | Indicates the last time the app signed in and provides a link to related recommendations on Azure Active Directory. |
+| **Credentials** | Indicates whether the app has unused or expiring credentials and provides a link to credential management on Azure Active Directory. |
 
 For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
 
-- Compliance Administrator
-- Global or Company Administrator
-- Security Administrator
-- Security Operator
+- *Compliance Administrator*
+- *Global* or *Company Administrator*
+- *Security Administrator*
+- *Security Operator*
 
 ## Managing OAuth apps
 
@@ -104,29 +104,32 @@ The **OAuth** page displays information about app permissions in apps connected 
 
 **To access the OAuth page**, in [Microsoft 365 Defender](https://security.microsoft.com), select **Cloud apps** > **OAuth apps**. For example:
 
-![app permissions.](media/app-permissions.png)
+![Screenshot of the Manage OAuth apps page](media/app-permissions.png)
+
+
+Do any of the following on the **Manage OAuth apps** page to manage your apps:
+
+|Option  |Description |
+|---------|---------|
+|**Queries**     |     Use the filtering options at the top of the page to define or load a saved query. <br><br>By default, the **OAuth** page has a set of saved, basic queries, with one applied as a default filter. Do any of the following actions to change the filter applied as needed: <br><br>- Select **Save as** to save your updated filter.  <br><br>- Select **Select a query** to select a different saved query, such as **Apps authorized by admins** or **Apps authorized by external users** <br><br>- Select the **Advanced filters** toggle on the right to add more filtering options. Select a filter, an operator, and the value you want to filter by.   |
+|**Bulk selection**     |  Select to either select all listed apps, or clear the selection on all selected apps.       |
+|**New policy from search**     |  Select to create a new OAuth app policy based on the current query results,  For more information, see [Create app policies in app governance](app-governance-app-policies-create.md).       |
+|**Export**     |  Select to export the currently listed apps to a CSV file.|
+
+### View OAuth app details
 
 The **Manage OAuth apps** page provides the following information about each OAuth app that was granted permissions:
 
 |Colum name  |Description  |Available for...   |
 |---------|---------|---------|
 |**Name**     | The app's name. Select to show or hide more details about the app.       |    Microsoft 365, Google Workspace, Salesforce     |
-|**Authorized by**     | The number of users who authorized this app to access their app's account, and granted the app permissions. <br><br>Select to view more information, including a list of user emails and whether an admin has consented the app previously. On the **Users who added...** pane, select **Export** to export the listed users to a CSV file. |Microsoft 365, Google Workspace, Salesforce   |
-|**Permission level**     |  High, Medium, or Low.   <br><br>The level indicates how much access this app has to app's data. For example, Low might indicate that the app only accesses user profile and name. Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](/defender-cloud-apps/governance-actions).     |  Microsoft 365, Google Workspace, Salesforce          |
+|**Authorized by**     | The number of users who authorized this app to access their app's account, and granted the app permissions. <br><br>Select to view more information, including a list of user emails and whether an admin has consented the app previously. <br><br>On the **Users who added...** pane, select **Export** to export the listed users to a CSV file. |Microsoft 365, Google Workspace, Salesforce   |
+|**Permission level**     |  *High*, *Medium*, or *Low*.   <br><br>The level indicates how much access this app has to app's data. For example, *Low* might indicate that the app only accesses user profile and name. <br><br>Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](/defender-cloud-apps/governance-actions).     |  Microsoft 365, Google Workspace, Salesforce          |
 |**Last authorized**     | The most recent date on which a user granted permissions to this app.        |Microsoft 365, Salesforce         |
 |**Actions**  |   Select an option to mark an app as approved or banned.       |    Microsoft 365, Google Workspace, Salesforce        |
 
-Do any of the following actions to work with apps listed on the **Manage OAuth apps** page:
 
-- Select **Bulk selection** to either select all listed apps, or clear the selection on all selected apps.
-
-- Select **New policy from search** to create a new OAuth app policy based on the current query results. For more information, see [Create app policies in app governance](app-governance-app-policies-create.md).
-
-- Select **Export** to export the currently listed apps to a CSV file.
-
-- Select **Show details** at the top right to view more information about all of the apps displayed.
-
-Expanding app details shows the following extra information for each app:
+Select **Show details** at the top right to view more information about all of the apps displayed, including:
 
 |Colum name  |Description  |Available for...   |
 |---------|---------|---------|
@@ -143,17 +146,8 @@ Expanding app details shows the following extra information for each app:
 | **Consent activities** | A link to the app's activity log, with a filter applied for consent activities only. | Microsoft 365  |
 | **Last used** | The most recent date on which this app was used by anyone in your organization.|Salesforce |
 
-### Filter apps displayed
-
-By default, the **OAuth** page has a set of saved, basic queries, with one applied as a default filter. Do any of the following actions to change the filter applied as needed:
-
-- Select different options in the basic filter to modify it for your needs. Then select **Save as** to save your updated filter. 
-
-- Select *Queries: **Select a query*** to select a different saved query, such as *Apps authorized by admins** or **Apps authorized by external users*.
-
-- Select the **Advanced filters** toggle on the right to add more filtering options. Select a filter, an operator, and the value you want to filter by.
 
 
-## Next step
+## Next steps
 
 [Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).

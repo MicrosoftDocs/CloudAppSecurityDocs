@@ -1,7 +1,7 @@
 ---
 title: Archive of past updates 
 description: This article is an archive that describes updates made in past releases of Defender for Cloud Apps.
-ms.date: 01/29/2023
+ms.date: 05/15/2023
 ms.topic: conceptual
 ---
 # Archive of past updates for Microsoft Defender for Cloud Apps
