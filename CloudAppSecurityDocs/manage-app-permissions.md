@@ -20,7 +20,7 @@ For more information on investigating OAuth apps, see [Investigate risky OAuth a
 > 
 > - Defender for Cloud Apps only identifies apps that request "Delegated" permissions. For more information, see [Client app permissions](/azure/active-directory/develop/developer-glossary#permissions).
 >
-> - Manage OAuth apps is available only after connecting one or more of the supported platforms - Office 365, Google Workspace, or Salesforce. Once connected, the **OAuth apps** menu option will appear under **Investigate**.
+> - OAuth app management is available only after connecting one or more of the supported platforms - Office 365, Google Workspace, or Salesforce. Once connected, the **OAuth apps** menu option will appear under **Investigate**.
 
 ## Working with the OAuth apps page
 
