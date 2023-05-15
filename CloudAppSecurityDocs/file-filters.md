@@ -146,11 +146,6 @@ Below is a list of the file filters that can be applied. To provide you with a p
 When creating a policy, you can also set it to run on specific files by setting the **Apply to** filter. Filter to either **all files**, **selected folders** (subfolders included), or **all files excluding selected folders**. Then select the files or folders that are relevant.
 
 ![apply to filter.](media/apply-to-filter.png "apply to filter")
-<!--
->[!NOTE]
-> If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
-> If at any point you want to clear the filters, you can do so by selecting the clear filters icon ![clear filters icon.](media/clear-filters.png).
--->
 
 ## Authorizing files
 

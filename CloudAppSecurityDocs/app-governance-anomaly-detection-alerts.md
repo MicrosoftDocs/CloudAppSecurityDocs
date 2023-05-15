@@ -242,7 +242,7 @@ This detection identifies OAuth apps created recently in relatively new publishe
 
 - **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
 
-    **Recommended Action**: Classify the alert as a false positive and sharing feedback based on your investigation of the alert.
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
 **Understand the scope of the breach**
 
@@ -446,6 +446,31 @@ A non-Microsoft cloud app is using a logo that was found by a machine learning a
 - **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
 
   **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
+### App is associated with a typosquatted domain
+
+**Severity**: Medium  
+
+This detection generates alerts for non-Microsoft OAuth apps with publisher domains or redirect URLs that contain typosquatted versions of Microsoft brand names. Typosquatting is generally used to capture traffic to sites whenever users inadvertently mistype URLs, but they can also be used to impersonate popular software products and services.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the publisher domain or redirect URL of the app is typosquatted and does not relate to the true identity of the app.
+
+  **Recommended action**: 
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+    - Check the app for other signs of spoofing or impersonation as well as any suspicious activity.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that the publisher domain and redirect URL of the app are legitimate.  
+
+  **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
 **Understand the scope of the breach**
 

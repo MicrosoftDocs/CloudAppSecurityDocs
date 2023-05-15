@@ -40,8 +40,6 @@ Shows the number and severity of Azure security configuration recommendations.
 Shows the number and severity of AWS security configuration recommendations.
 - **DLP alerts**  
 Shows a graph of DLP alerts over the last 30 days.
-<!-- - **Activity map**  
-Shows the global spread of activities performed by users over the last 30 days. -->
 
 ## Next steps
 
