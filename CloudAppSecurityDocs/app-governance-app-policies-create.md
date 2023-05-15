@@ -179,25 +179,25 @@ Alternatively, you can also create the policy by selecting **Control** followed 
 
 > [!Note]
 > OAuth apps policies will trigger alerts only on policies that were authorized by users in the tenant.
+
 ## Anomaly detection policies for OAuth apps connected to Salesforce and Google Workspace
 
+In addition to Oauth app policies that you can create, Defender for Cloud apps provides out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious.
+
+This section is only relevant for Salesforce and Google Workspace applications.
 
 > [!Note]
-> This section is only relevant for Salesforce and Google Workspace applications.
-In addition to OAuth app policies you can create, there are the following out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious:
+> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> The severity of OAuth app anomaly detection policies cannot be modified.
 
-||
-||
-|Misleading OAuth app name|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app.|
-|Misleading publisher name for an OAuth app|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher.|
-|Malicious OAuth app consent|Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.|
-|Suspicious OAuth app file download activities|See [Anomaly detection policies](/defender-cloud-apps/anomaly-detection-policy)|
+The following table describes the out-of-the-box anomaly detection policies provided by Defender for Cloud Apps:
 
-- 
-
-   > [!Note]
-   > Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
-   > The severity of OAuth app anomaly detection policies cannot be modified.
+|Policy  |Description  |
+|---------|---------|
+|**Misleading OAuth app name**|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app.|
+|**Misleading publisher name for an OAuth app**|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher.|
+|**Malicious OAuth app consent**|Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.|
+|**Suspicious OAuth app file download activities**|For more information, see [Anomaly detection policies](/defender-cloud-apps/anomaly-detection-policy).|
 
 ## Next step
 

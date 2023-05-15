@@ -130,7 +130,7 @@ Expanding app details shows the following extra information for each app:
 
 |Colum name  |Description  |Available for...   |
 |---------|---------|---------|
-|**Publisher**     |  The name of the vendor that provides the app. <br><br>Publisher verifications help admins and end users understand theauthenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azureactive-directory/develop/publisher-verification-overview).| Microsoft 365    |
+|**Publisher**     |  The name of the vendor that provides the app. <br><br>Publisher verifications help admins and end users understand theauthenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).| Microsoft 365    |
 |**Permissions**     |  A list of all permissions currently granted to the app       |   Microsoft 365, Google Workspace      |
 |**App website**     |  A link to the app's website.       |   Microsoft 365      |
 |**Community use**     | Common, Uncommon, Rare. Indicates how popular the app is across all your users.      | Microsoft 365, Google Workspace,Salesforce        |
