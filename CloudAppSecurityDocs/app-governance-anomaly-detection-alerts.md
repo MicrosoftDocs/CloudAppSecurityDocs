@@ -248,6 +248,54 @@ This detection identifies OAuth apps created recently in relatively new publishe
 
 Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
 
+### New app with low consent rate accessing numerous emails  
+
+**Severity**: Medium  
+
+This alert identifies OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It also verifies whether the app has a relatively low global consent rate and makes numerous calls to Microsoft Graph API to access emails of consenting users. Apps that trigger this alert might be unwanted or malicious apps attempting to obtain consent from unsuspecting users.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+
+    **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to the mailboxes of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
+### Suspicious app with mail permissions sending numerous emails
+
+**Severity**: Medium  
+
+This alert finds multitenant OAuth apps that have made numerous calls to Microsoft Graph API to send emails within a short time period. It also verifies whether the API calls have resulted in errors and failed attempts to send emails. Apps that trigger this alert might be actively sending spam or malicious emails to other targets.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+
+    **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
 ## Persistence alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
@@ -526,6 +574,32 @@ This detection identifies a large volume of suspicious enumeration activities pe
 
 1. Review all activities performed by this application.
 1. Review the user activity associated with this application.
+
+### Recently created multitenant application enumerates users information frequently
+
+**Severity**: Medium
+
+**MITRE ID**: T1087
+
+This alert finds OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It verifies whether the app has made numerous calls to Microsoft Graph API requesting user directory information. Apps that trigger this alert might be luring users into granting consent so they can access organizational data.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated.
+
+  **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.  
+  
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially enumeration of user directory information. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
 
 ## Exfiltration alerts
 
