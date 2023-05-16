@@ -18,7 +18,7 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 - Implement the app compliance policies for your organization.
 
 > [!Note]
-> If you have an App Governance license, you can also specify conditions for app governance alerts and implement app compliance policies for your organization. For more information, see [Create app policies in app governance](app-governance-app-policies-create.md).
+> If you have enabled App governance for your organization, you can also specify conditions for app governance alerts and implement app compliance policies for your organization. For more information, see [Create app policies in app governance](app-governance-app-policies-create.md).
 
 ## Create a new OAuth app policy
 

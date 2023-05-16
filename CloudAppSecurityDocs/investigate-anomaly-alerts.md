@@ -161,7 +161,7 @@ This detection identifies apps with characters, such as foreign letters, that re
 
     **Recommended action**: Review the level of permission requested by this app and which users granted access. Based on your investigation you can choose to ban access to this app.
 
-To ban access to the app, on the **OAuth apps** page, on the row in which the app you want to ban appears, select the ban icon.
+To ban access to the app, on the **Google** or **Salesforce** tabs on the **App governance** page, on the row in which the app you want to ban appears, select the ban icon.
     - You can choose if you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect **Notify users who granted access to this banned app** in the dialog.
     - It's recommended that you let the app users know their app is about to be banned from use.
 
@@ -188,7 +188,7 @@ This detection identifies apps with characters, such as foreign letters, that re
 
 **Understand the scope of the breach**
 
-1. On the **OAuth apps** page, select the app to open the **App drawer**, and then select **Related activity**. This opens the **Activity log** page filtered for activities performed by the app. Keep in mind that some apps perform activities that are registered as having been performed by a user. These activities are automatically filtered out of the results in the activity log. For further investigation using the activity log, see [Activity log](activity-filters.md).
+1. On the **Google** or **Salesforce** tabs on the **App governance** page, select the app to open the **App drawer**, and then select **Related activity**. This opens the **Activity log** page filtered for activities performed by the app. Keep in mind that some apps perform activities that are registered as having been performed by a user. These activities are automatically filtered out of the results in the activity log. For further investigation using the activity log, see [Activity log](activity-filters.md).
 1. If you suspect that an app is suspicious, we recommended that you investigate the app's name and publisher in different app stores. When checking app stores, focus on the following types of apps:
     - Apps with a low number of downloads.
     - Apps with a low rating or score or bad comments.

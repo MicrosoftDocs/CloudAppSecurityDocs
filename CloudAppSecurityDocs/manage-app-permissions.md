@@ -51,7 +51,7 @@ The OAuth apps page provides the following information about each OAuth app that
 
 ## Ban or approve an app
 
-1. On the **OAuth apps** page, select the app to open the **App drawer** to view more information about the app and the permissions it was granted.
+1. On the **Google** or **Salesforce** tabs on the **App governance** page, select the app to open the **App drawer** to view more information about the app and the permissions it was granted.
 
     - Select **Permissions** to view a full list of permissions that were granted to the app.
     - Under **Community use**, you can view how common the app is in other organizations.
@@ -79,7 +79,7 @@ The OAuth apps page provides the following information about each OAuth app that
 
 For Google Workspace and Salesforce, it's possible to revoke permission to an app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
 
-1. On the **OAuth apps** page, select the three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: <https://security.google.com/settings/security/permissions?hl=en&pli=1>  Select the app and select 'Revoke access' on the right menu bar.* You can customize the message that is sent.
+1. On the **Google** or **Salesforce** tabs on the **App governance** page, select the three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: <https://security.google.com/settings/security/permissions?hl=en&pli=1>  Select the app and select 'Revoke access' on the right menu bar.* You can customize the message that is sent.
 2. You can also revoke permissions to use the app for the user. Select the icon at the end of the app row in the table and selecting **Revoke app**.
 
     ![revoke app.](media/revoke-app.png)
@@ -98,7 +98,7 @@ Defender for Cloud Apps audits all OAuth authorization activities to provide you
 
 To export the log, perform the following steps:
 
-1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, select the link showing the number of users that authorized the app.
+1. On the **Google** or **Salesforce** tabs on the **App governance** page, on the row where the relevant app appears, under **Authorized by**, select the link showing the number of users that authorized the app.
 
 1. In the pop-up, select **Export**.
 
@@ -108,7 +108,7 @@ To export the log, perform the following steps:
 
 If there's an OAuth app discovered in your organization that seems malicious, you can send the Defender for Cloud Apps team feedback to let us know. This feature enables you to be part of our security community and enhance OAuth app risk score and analysis.
 
-1. On the **OAuth apps** page, select the three dots at the end of the app row and select **Report app**.
+1. On the **Google** or **Salesforce** tabs on the **App governance** page, select the three dots at the end of the app row and select **Report app**.
 
     ![report app.](media/report-app.png)
 2. In the **Report this app** screen, you can select whether to report the app as malicious or to report another issue with the way Defender for Cloud Apps perceives the app. For example, you could use **Incorrect publisher**, **Incorrect permissions**, or **Other**. The data you submit will be used to update the app's risk score and other analytics about the app.

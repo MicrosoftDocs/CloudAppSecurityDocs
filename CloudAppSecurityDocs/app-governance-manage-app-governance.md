@@ -1,14 +1,11 @@
 ---
-title: App governance add-on in Microsoft 365 Defender
-ms.date: 01/29/2023
+title: App governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender
+ms.date: 05/16/2023
 ms.topic: conceptual
 description: Implement Microsoft app governance capabilities to govern your apps.
 ---
 
-# App governance add-on to Defender for Cloud Apps in Microsoft 365 Defender
-
-> [!NOTE]
-> To sign up for app governance, see [Get started with app governance](app-governance-get-started.md).
+# App governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender
 
 Cyber attacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructure, establishing a starting point for privilege escalation, lateral movement, and data exfiltration. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture. You need to be able to quickly identify when an app exhibits anomalous behaviors and respond when these behaviors present risks to your environment, data, and users.
 

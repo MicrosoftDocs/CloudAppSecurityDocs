@@ -98,55 +98,45 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 - *Security Administrator*
 - *Security Operator*
 
-## Managing OAuth apps
+## Managing Managing Google Workspace and Salesforce OAuth apps
 
-The **OAuth** page displays information about app permissions in apps connected to Microsoft 365, Google Workspace, and Salesforce. Use this page to view permissions granted to each app and to revoke permissions or ban apps.
+If you have enabled the [Google Workspace](connect-google-workspace.md) or [Salesforce](connect-salesforce.md) connector, you can also use the **App governance page** page to view information about app permissions in apps connected to Google Workspace and/or Salesforce. View the permissions granted to each app and revoke or ban apps as needed.
 
-**To access the OAuth page**, in [Microsoft 365 Defender](https://security.microsoft.com), select **Cloud apps** > **OAuth apps**. For example:
+On the **App governance** page, select the **Google** or **Salesforce** tabs to view your apps. For example:
 
-![Screenshot of the Manage OAuth apps page](media/app-permissions.png)
+[Screenshot of the Manage OAuth apps page](media/app-permissions.png)
 
-
-Do any of the following on the **Manage OAuth apps** page to manage your apps:
+Do any of the following to manage your Google Workspace or Salesforce apps on the **App governance** page:
 
 |Option  |Description |
 |---------|---------|
-|**Queries**     |     Use the filtering options at the top of the page to define or load a saved query. <br><br>By default, the **OAuth** page has a set of saved, basic queries, with one applied as a default filter. Do any of the following actions to change the filter applied as needed: <br><br>- Select **Save as** to save your updated filter.  <br><br>- Select **Select a query** to select a different saved query, such as **Apps authorized by admins** or **Apps authorized by external users** <br><br>- Select the **Advanced filters** toggle on the right to add more filtering options. Select a filter, an operator, and the value you want to filter by.   |
+|**Queries**     |     Use the filtering options at the top of the page to define or load a saved query. <br><br>By default, the **App governance** page has a set of saved, basic queries, with one applied as a default filter. Do any of the following actions to change the filter applied as needed: <br><br>- Select **Save as** to save your updated filter.  <br><br>- Select **Select a query** to select a different saved query, such as **Apps authorized by admins** or **Apps authorized by external users** <br><br>- Select the **Advanced filters** toggle on the right to add more filtering options. Select a filter, an operator, and the value you want to filter by.   |
 |**Bulk selection**     |  Select to either select all listed apps, or clear the selection on all selected apps.       |
 |**New policy from search**     |  Select to create a new OAuth app policy based on the current query results,  For more information, see [Create app policies in app governance](app-governance-app-policies-create.md).       |
 |**Export**     |  Select to export the currently listed apps to a CSV file.|
 
-### View OAuth app details
+### View Google Workforce and Salesforce OAuth app details
 
-The **Manage OAuth apps** page provides the following information about each OAuth app that was granted permissions:
+The **Google** and **Salesforce** pages provide the following information about each OAuth app that was granted permissions:
 
-|Colum name  |Description  |Available for...   |
-|---------|---------|---------|
-|**Name**     | The app's name. Select to show or hide more details about the app.       |    Microsoft 365, Google Workspace, Salesforce     |
-|**Authorized by**     | The number of users who authorized this app to access their app's account, and granted the app permissions. <br><br>Select to view more information, including a list of user emails and whether an admin has consented the app previously. <br><br>On the **Users who added...** pane, select **Export** to export the listed users to a CSV file. |Microsoft 365, Google Workspace, Salesforce   |
-|**Permission level**     |  *High*, *Medium*, or *Low*.   <br><br>The level indicates how much access this app has to app's data. For example, *Low* might indicate that the app only accesses user profile and name. <br><br>Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](/defender-cloud-apps/governance-actions).     |  Microsoft 365, Google Workspace, Salesforce          |
-|**Last authorized**     | The most recent date on which a user granted permissions to this app.        |Microsoft 365, Salesforce         |
-|**Actions**  |   Select an option to mark an app as approved or banned.       |    Microsoft 365, Google Workspace, Salesforce        |
+|Colum name  |Description  |
+|---------|---------|
+|**Name**     | The app's name. Select to show or hide more details about the app.       |
+|**Authorized by**     | The number of users who authorized this app to access their app's account, and granted the app permissions. <br><br>Select to view more information, including a list of user emails and whether an admin has consented the app previously. <br><br>On the **Users who added...** pane, select **Export** to export the listed users to a CSV file. |
+|**Permission level**     |  *High*, *Medium*, or *Low*.   <br><br>The level indicates how much access this app has to app's data. For example, *Low* might indicate that the app only accesses user profile and name. <br><br>Select the level to view more information, including permissions granted to the app, community use, or related activity in the [Governance log](/defender-cloud-apps/governance-actions).     |
+|**Last authorized**     | The most recent date on which a user granted permissions to this app.    This information is available for Salesforce only.|
+|**Actions**  |   Select an option to mark an app as approved or banned.       |
 
 
 Select **Show details** at the top right to view more information about all of the apps displayed, including:
 
 |Colum name  |Description  |Available for...   |
 |---------|---------|---------|
-|**Publisher**     |  The name of the vendor that provides the app. <br><br>Publisher verifications help admins and end users understand theauthenticity of application developers integrating with the Microsoft identity platform. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).| Microsoft 365    |
-|**Permissions**     |  A list of all permissions currently granted to the app       |   Microsoft 365, Google Workspace      |
-|**App website**     |  A link to the app's website.       |   Microsoft 365      |
-|**Community use**     | Common, Uncommon, Rare. Indicates how popular the app is across all your users.      | Microsoft 365, Google Workspace,Salesforce        |
-|**App ID**     |  The app's ID      |   Microsoft 365, Google Workspace, Salesforce      |
-|**App activities**     |  A link to the app's activity log, which you can use to understand the app's recent usage.      |  Microsoft 365, Google Workspace, Salesforce       |
-|**Redirect URLs**     | A list of any redirect URLs for the app.        |  Microsoft 365       |
-| **Terms of service** | A link to the app's terms of service | Microsoft 365  |
-| **Support** |A link to the app's support statement | Microsoft 365  |
-| **Privacy Statement** | A link to the app's privacy statement | Microsoft 365  |
-| **Consent activities** | A link to the app's activity log, with a filter applied for consent activities only. | Microsoft 365  |
-| **Last used** | The most recent date on which this app was used by anyone in your organization.|Salesforce |
-
-
+|**Permissions**     |  A list of all permissions currently granted to the app. This information is available for Google Workspace only.     |
+|**Community use**     | Common, Uncommon, Rare. Indicates how popular the app is across all your users.      |
+|**App ID**     |  The app's ID      |
+|**App activities**     |  A link to the app's activity log, which you can use to understand the app's recent usage.      |
+| **Last used** | The most recent date on which this app was used by anyone in your organization. This information is available for Salesforce only. |
 
 ## Next steps
 
