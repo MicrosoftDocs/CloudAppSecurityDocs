@@ -23,6 +23,22 @@ During the initial phase, behaviors will encompass low-fidelity detections from 
 
 The relevant detections are:
 
+|Alert name  |Policy name  |
+|---------|---------|
+|Activity from infrequent country  |Activity from infrequent country   |
+|Impossible travel activity  |Impossible travel  |
+|Mass delete  |Unusual file deletion activity (by user)  |
+|Mass download  |Unusual file download (by user)  |
+|Mass share  |Unusual file share activity (by user)  |
+|Multiple delete VM activities  |Multiple delete VM activities  |
+|Multiple failed login attempts  |Multiple failed login attempts  |
+|Multiple Power BI report sharing activities  |Multiple Power BI report sharing activities  |
+|Multiple VM creation activities  |Multiple VM creation activities  |
+|Suspicious administrative activity  |Unusual administrative activity (by user)  |
+|Suspicious impersonated activity  |Unusual impersonated activity (by user)  |
+|Suspicious OAuth app file download activities  |Suspicious OAuth app file download activities  |
+|Suspicious Power BI report sharing  |Suspicious Power BI report sharing   |
+|Unusual addition of credentials to an OAuth app  |Unusual addition of credentials to an OAuth app  |
 
 
 ## Transition from alerts to behaviors
