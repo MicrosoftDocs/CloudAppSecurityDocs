@@ -23,20 +23,7 @@ During the initial phase, behaviors will encompass low-fidelity detections from 
 
 The relevant detections are:
 
-- Impossible travel activity
-- Activity from infrequent countries/regions
-- Mass delete
-- Multiple failed login attempts
-- Mass download
-- Suspicious administrative activity
-- Suspicious Power BI report sharing
-- Mass share
-- Suspicious OAuth app file download activities
-- Multiple Power BI report sharing activities
-- Suspicious impersonated activity
-- Multiple delete VM activities
-- Multiple VM creation activities
-- Unusual addition of credentials to an OAuth app
+
 
 ## Transition from alerts to behaviors
 
@@ -83,6 +70,8 @@ And then you can create a custom detection rule based on the query. For more inf
 
 
 
+
+
 ```kusto
 BehaviorInfo
 | where AttackTechniques has "Valid Accounts (T1078)"
@@ -118,6 +107,11 @@ Have feedback to share? Please fill in [the feedback form](https://forms.office.
 - [Tutorial: Detect suspicious user activity with behavioral analytics](tutorial-suspicious-activity.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].
+
+
+
+
+
 
 
 
