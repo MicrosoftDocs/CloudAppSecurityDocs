@@ -5,11 +5,11 @@ ms.topic: conceptual
 description: Step-by-step guide to help you quickly get started with the app governance add-on trial
 ---
 
-# Trial user guide: App governance add-on to Defender for Cloud Apps
+# Quick guide: App governance capability in Defender for Cloud Apps
 
-Welcome to the step-by-step guide to help you quickly get started with the app governance add-on trial.
+Welcome to the step-by-step guide to help you quickly get started with app governance in Microsoft Defender for Cloud Apps.
 
-Before getting into the details of setting up your trial, and recommended key features to try, let's review the relationship between the app governance add-on and Microsoft Defender for Cloud Apps.
+Before getting into the details of setting up app governance, and recommended key features to try, let's review the relationship between the app governance capability and Microsoft Defender for Cloud Apps.
 
 ## Managing risks from apps
 
@@ -19,7 +19,7 @@ You can deploy three broad solution types to control and protect from risks pose
 
 - **App Use:** solutions like [Microsoft Defender for Cloud Apps](https://aka.ms/defender-for-cloud-apps) (formerly known as Microsoft Cloud App Security) that discover and assess cloud apps, protects sensitive information in apps, identify risky user behavior in apps, enforce policies to control activity, and detect and remediate threats.
 
-- **App Behavior:** solutions like the Microsoft app governance add-on that requires a deep understanding of app behavior within an environment to identify and address activities that fall within a tolerance level that requires additional review to assess malicious intent.
+- **App Behavior:** solutions like the Microsoft app governance capability that requires a deep understanding of app behavior within an environment to identify and address activities that fall within a tolerance level that requires additional review to assess malicious intent.
 
 These three solutions together provide a three-pronged approach to holistically protect against app threats across the app lifecycle.
 
@@ -27,7 +27,7 @@ These three solutions together provide a three-pronged approach to holistically 
 
 ## Microsoft Defender for Cloud Apps
 
-Microsoft Defender for Cloud Apps is a cloud access security broker (CASB) that provides visibility and control into an organization's SaaS applications. There are various ways to deploy Defender for Cloud Apps, including log collection, API connectors, and reverse proxy. It allows you to govern risky apps, protect sensitive data, and gain sophisticated analytics to identify and combat cyberthreats across all your Microsoft and non-Microsoft cloud services. Specifically for cloud apps across the organization, you can:
+Microsoft Defender for Cloud Apps is a SaaS security solution that provides visibility and control into an organization's SaaS applications. There are various ways to deploy Defender for Cloud Apps, including log collection, API connectors, and reverse proxy. It allows you to govern risky apps, protect sensitive data, and gain sophisticated analytics to identify and combat cyberthreats across all your Microsoft and non-Microsoft cloud services. Specifically for cloud apps across the organization, you can:
 
 - Discover and gain visibility into risky SaaS apps
 
@@ -41,12 +41,12 @@ Microsoft Defender for Cloud Apps is a cloud access security broker (CASB) that 
 
 For information about licensing, see the [Microsoft Defender for Cloud Apps product page](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-cloud-apps?rtc=1).
 
-## What is the app governance add-on for Defender for Cloud Apps?
+## What is the app governance capability in Defender for Cloud Apps?
 
-The app governance add-on gives you in-depth governance against risky app behavior in your Microsoft 365 environment. It provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. It's designed to secure OAuth-enabled apps registered on Azure AD.
+App governance gives you in-depth governance against risky app behavior in your Microsoft 365 environment. It provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. It's designed to secure OAuth-enabled apps registered on Azure AD.
 :::image type="content" source="media/app-governance/app-governance-add-on.png" alt-text="App governance add on.":::
 
-App governance add-on offers an in-depth Microsoft 365 platform-level view & control of app behavior.
+App governance offers an in-depth Microsoft 365 platform-level view & control of app behavior.
 
 - **Discover & manage the security posture of apps** – Get deep insights, visibility and reporting of all Microsoft 365 app behavior details
 
@@ -57,16 +57,16 @@ App governance add-on offers an in-depth Microsoft 365 platform-level view & con
 - **Protect the data in your cloud apps** – Detect apps that have uploaded/downloaded large amounts of Microsoft 365 data
 
 > [!NOTE]
-> This step-by-step user guide is focused only on the app governance add-on to Defender for Cloud Apps and will provide you with recommendations to help you make the most of your free trial.
+> This guide is focused only on the app governance capability in Defender for Cloud Apps and will provide you with recommendations to help you get started.
 
-## Get started with the app governance add-on trial
+## Get started with app governance
 
-If you haven’t already, sign up for the free [app governance add-on trial](https://signup.microsoft.com/Signup?OfferId=a52e9277-0d85-4480-8cae-a84bc2ab32ae).  After you've launched the trial, you'll need to wait up to 24 hours to see and use the product.
+If you haven’t already, [sign up for app governance](https://security.microsoft.com/cloudapps/settings?tabid=activateAppG) and complete the steps to add it to your tenant.  After you've signed up for app governance, you'll need to wait up to 24 hours to see and use the product.
 
 >[!NOTE]
 >To use full functionality for app governance alerts you must have provisioned both Defender for Cloud Apps and Microsoft 365 Defender by accessing their respective portals at least once.
 
-Once in the trial, try these recommended actions:
+Once app governance is enabled for you, try these recommended actions:
 
 ### Step 1: [Get visibility and insights](app-governance-visibility-insights-get-started.md)
 
@@ -132,7 +132,7 @@ Try these actions:
 
 - [Remediate app threats:](/defender-cloud-apps/app-governance-manage-alerts) You remediate app threats to your Microsoft 365 tenant through the Alerts page of the Microsoft app governance section of the Microsoft 365 Defender.
 
-## Resources for the Microsoft Defender for Cloud Apps app governance add-on
+## Resources for the Microsoft Defender for Cloud Apps app governance capability
 
 - Documentation and overview video: [App governance in Microsoft 365](app-governance-manage-app-governance.md)
 
@@ -143,3 +143,11 @@ Try these actions:
 - Videos: [YouTube play list for AppG](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
 
 - Security Summit video: [App Governance segment](https://mssecuritysummit.event.microsoft.com/Home/Security) starts at 11:50 mark. You need to register to view.
+
+- Microsoft shifts to a comprehensive SaaS security solution - [Microsoft shifts to a comprehensive SaaS security solution - Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2023/02/15/microsoft-shifts-to-a-comprehensive-saas-security-solution/)
+
+- App posture and hygiene - [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
+
+- App governance is a key part of customers’ zero trust journey - [App Governance is a Key Part of a Customers' Zero Trust Journey - YouTube](https://www.youtube.com/watch?v=XuGZu8ja134)
+
+
