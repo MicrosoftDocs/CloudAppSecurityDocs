@@ -7,7 +7,7 @@ description: Get started learning about app policies.
 
 # Get started with app policies
 
-Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization.
+Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization. You can create policies in app governance to manage OAuth apps in Azure AD, Google and Salesforce.
 
 There are two types of policies in app governance:
 
@@ -19,9 +19,9 @@ There are two types of policies in app governance:
 
     In addition to predefined policies, admins can also use the available conditions to create their custom policies or pick from the available recommended policies.
 
-To see your list of current app policies, go to **Microsoft 365 Defender > App governance > Policies**. This will show you a list of all your policies in app governance. Built-in threat detection policies won't show up here, but you can read more about these [here](app-governance-anomaly-detection-alerts.md)
+To see your list of current app policies, go to **Microsoft 365 Defender > App governance > Policies**. This will show you a list of all your policies in app governance. Built-in threat detection policies won't show up here, but you can read more about these [here](app-governance-anomaly-detection-alerts.md).
 
-:::image type="content" source="media\app-governance\mapg-cc-policies.png" alt-text="The app governance policies summary page in the Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-policies.png":::
+![The app governance policies summary page in the Microsoft 365 Defender.](media/app-governance-app-policies-get-started/azure-ad-policies.jpg)
 
 ## What’s available on the app policies dashboard
 
@@ -78,3 +78,4 @@ You can also:
 ## Next step
 
 [Create an app policy.](app-governance-app-policies-create.md)
+
