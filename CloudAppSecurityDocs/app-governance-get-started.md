@@ -92,145 +92,15 @@ Here are the capabilities for each role.
 
 | Role | Read the dashboard | Read all apps |Read policies | Create, update, or delete policies | Read alerts | Update alerts | Read settings | Update settings | Read Remediation | Update Remediation |
 |:-------|:-----|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-| Application Administrator | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- |
-| Cloud Application Administrator | ![Check mark.](media%5Ccheckmark.png)
-
- | | | | | | | | | |
-| Company or Global Administrator | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- |
-| Compliance Administrator | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | |
-| Compliance Data Administrator | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | |
-| Global Reader  | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- |  | | |
-| Security Administrator | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | |
-| Security Operator | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | |
-| Security Reader  | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- |  | ![Check mark.](media%5Ccheckmark.png)
-
- | |
+| Application Administrator | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) |
+| Cloud Application Administrator | ![Check mark.](media\checkmark.png) | | | | | | | | | |
+| Company or Global Administrator | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) |
+| Compliance Administrator | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | |
+| Compliance Data Administrator | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | |
+| Global Reader  | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) |  | | |
+| Security Administrator | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | |
+| Security Operator | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | |
+| Security Reader  | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) |  | ![Check mark.](media\checkmark.png) | |
 |||||||||| | |
 
 For more information about each role, see [Administrator role permissions](/azure/active-directory/roles/permissions-reference).
