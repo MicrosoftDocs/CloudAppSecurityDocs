@@ -200,6 +200,8 @@ items:
           href: app-governance-secure-apps-access-non-graph-api.md
         - name: Secure apps with app hygiene features
           href: app-governance-secure-apps-app-hygiene-features.md
+        - name: Hunt for threats in app activities
+          href: app-activity-threat-hunting.md
   - name: Cloud Discovery
     items:
     - name: Set up
