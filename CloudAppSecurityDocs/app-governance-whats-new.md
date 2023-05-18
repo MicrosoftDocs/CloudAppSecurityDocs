@@ -16,7 +16,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## App governance June 2023 release
 
-- **Enhanced hunting experience for OAuth app activities:** App governance enables you to take hunting with app data to the next level by providing deeper OAuth app insights to help your SOC identify an app’s activities and the resources it has accessed. This includes pre-built queries to streamline the investigation, visibility into the data in the results view and the ability to include OAuth app data such as resource, app, user, and app activity details in custom detections. Learn more about the enhanced hunting experience for OAuth app activities.
+- **Enhanced hunting experience for OAuth app activities:** App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights to help your SOC identify an app’s activities and the resources it has accessed. This includes pre-built queries to streamline the investigation, visibility into the data in the results view and the ability to include OAuth app data such as resource, app, user, and app activity details in custom detections. Learn more about the enhanced hunting experience for OAuth app activities.
 
 ## App governance February 2023 release
 
