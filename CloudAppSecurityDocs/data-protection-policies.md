@@ -1,10 +1,11 @@
 ---
-title: Monitor and protect files in cloud apps 
+title: File policies
 description: This article describes the procedure for setting up a data policy to monitor and control the data and files in your organization's cloud app use.
-ms.date: 12/21/2022
+ms.date: 02/15/2023
 ms.topic: how-to
 ---
-# File policies
+
+# File policies in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -22,7 +23,7 @@ The engine combines three aspects under each policy:
 
 * Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context, and additional customizable attributes.
 
-* Automated actions for governance and remediation. For more information, see [Control](control.md).
+* Automated actions for governance and remediation.
     > [!NOTE]
     > Only the governance action of the first triggered policy is guaranteed to be applied. For example, if a file policy has already applied a sensitivity label to a file, a second file policy cannot apply another sensitivity label to it.
 
@@ -50,9 +51,9 @@ The following are examples of file policies that can be created:
 
 To create a new file policy, follow this procedure:
 
-1. Go to **Control** > **Policies** > **Information Protection**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Select the **Information Protection** tab.
 
-1. Click **Create policy** and select **File policy**.
+1. Select **Create policy** and select **File policy**.
 
     ![Create a Information Protection policy.](media/create-policy-from-information-protection-tab.png)
 
@@ -62,10 +63,12 @@ To create a new file policy, follow this procedure:
 
 1. Within **Category**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type.  The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.
 
-1. **Create a filter for the files this policy will act on** to set which discovered apps trigger this policy. Narrow down the policy filters until you reach an accurate set of files you wish to act upon. Be as restrictive as possible to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the "External" filter etc.
+1. **Create a filter for the files this policy will act on** to set which discovered apps trigger this policy. Narrow down the policy filters until you reach an accurate set of files you wish to act upon. Be as restrictive as possible to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the "External" filter and so on.
    > [!NOTE]
    > When using the policy filters, **Contains**  searches only for full words – separated by commas, dots, spaces, or underscores. For example if you search for **malware** or **virus**, it finds virus_malware_file.exe but it does not find malwarevirusfile.exe. If you search for **malware.exe**, then you find ALL files with either malware or exe in their filename, whereas if you search for **"malware.exe"** (with the quotation marks) you find only files that contain exactly "malware.exe". **Equals** searches only for the complete string, for example if you search for **malware.exe** it finds malware.exe but not malware.exe.txt.
-1. Under the first **Apply to** filter, select **all files excluding selected folders** or **selected folders** for Box, SharePoint, Dropbox, OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You're redirected to sign in the cloud app, and then add the relevant folders.
+   >
+   > For more information about File Policy Filters, see [File filters in Microsoft Defender for Cloud Apps](file-filters.md#file-filters).
+1. Under the first **Apply to** filter, select **all files excluding selected folders** or **selected folders** for Box, SharePoint, Dropbox, or OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You're redirected to sign in the cloud app, and then add the relevant folders.
 
 1. Under the second **Apply to** filter, select either **all file owners**, **file owners from selected user groups** or **all file owners excluding selected groups**. Then select the relevant user groups to determine which users and groups should be included in the policy.
 
@@ -81,11 +84,25 @@ To create a new file policy, follow this procedure:
 
 1. Choose the **Governance** actions you want Defender for Cloud Apps to take when a match is detected.
 
-1. Once you've created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. The policy is automatically enabled upon creation and starts scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It's recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button in the Filters section.
+1. Once you've created your policy, you can view it by filtering for the **File policy** type. You can always edit a policy, calibrate its filters, or change the automated actions. The policy is automatically enabled upon creation and starts scanning your cloud files immediately.  Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files. It's recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button next to the filters.
 
-    ![file policy edit and preview results.](media/file-policy-edit-and-preview-results.png)
+    ![File policy edit and preview results.](media/file-policy-edit-and-preview-results.png)
 
-1. To view file policy matches, files that are suspected to violate the policy, click **Control** and then **Policies**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, click on a policy. This displays the "Matching now" files for the policy. Click the **History** tab to see a history back to up to six months of files that matched the policy.
+1. To view file policy matches, files that are suspected to violate the policy, go to **Policies** -> **Policy management**. Filter the results to display only the file policies using the **Type** filter at the top. For more information about the matches for each policy, under the **Count** column, select the number of **matches** for a policy. Alternatively, select the three dots at the end of the row for a policy and choose **View all matches**.  This opens the **File policy report**. Select the **Matching now** tab to see files that currently match the policy. Select the **History** tab to see a history back to up to six months of files that matched the policy.
+
+## File policy best practices
+
+1. Avoid resetting the file policy (by using the **Reset results and apply actions again** checkbox) in production environments unless it's absolutely necessary, as doing so will initiate a full scan of the files covered by the policy, which can have a negative impact on its performance.
+
+1. When applying labels to files in a specific parent folder **and** its subfolders, use the **Apply to** -> **Selected folders** option. Then add each of the parent folders.
+
+1. When applying labels to files in a specific folder only (excluding any subfolders), use the file policy filter **Parent Folder** with the **Equals** operator.
+
+1. File policy is faster when narrow filtering criteria are used (as compared to wide criteria).
+
+1. Consolidate several file policies for the same service (such as SharePoint, OneDrive, Box, and so on) to a single policy.
+
+1. When enabling file monitoring (from the **Settings** page), create at least one file policy. When no file policy exists, or is disabled for seven consecutive days, file monitoring will be autodisabled.
 
 ## File policy reference
 
@@ -107,13 +124,26 @@ Each policy is composed of the following parts:
 
 To make investigation even simpler, you can now create custom queries and save them for later use.
 
-1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
+1. In the **Files** page, use the filters as described above to drill down into your apps as necessary.
 
-1. After you've finished building your query, click the **Save as** button in the top right corner of the filters.
+1. After you've finished building your query, select the **Save as** button above the filters.
 
 1. In the **Save query** pop-up, name your query.
 
 1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
+
+## View files policies results
+
+You can go to the Policy center to review file policy violations.
+
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**, and then select the **Information protection** tab.
+1. For each file policy, you can see the file policy violations by selecting the **matches**.  
+   ![PCI matches.](media/pci-matches.png "pci matches")
+
+1. You can select the file itself to get information about the files.  
+   ![PCI content matches.](media/pci-content-matches.png "pci content matches")
+
+1. For example, you can select **Collaborators** to see who has access to this file, and you can select **Matches** to see the Social Security numbers. ![Content matches credit card numbers.](media/content-matches-ccn.png "content matches Social Security numbers")
 
 ## Related videos
 
@@ -123,6 +153,6 @@ To make investigation even simpler, you can now create custom queries and save t
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

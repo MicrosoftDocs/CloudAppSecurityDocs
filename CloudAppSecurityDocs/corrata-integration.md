@@ -1,7 +1,7 @@
 ---
-title: Integrate Defender for Cloud Apps with Corrata
+title: Integrate with Corrata
 description: This article describes how to integrate Microsoft Defender for Cloud Apps with Corrata for seamless Cloud Discovery and automated block of unsanctioned apps.
-ms.date: 12/21/2022
+ms.date: 04/04/2023
 ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Corrata
@@ -21,11 +21,11 @@ If you work with both Defender for Cloud Apps and Corrata, you can integrate the
 
 ## Deployment
 
-1. In the Corrata portal, do the steps to complete the [Corrata partner integration with Microsoft Defender for Cloud Apps](https://corrata.com/microsoft-mcas-onboarding/).
-2. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), do the following integration steps:
-    1. Select the settings cog and then select **Cloud Discovery Settings**.
-    2. Select the **Automatic log upload** tab and then select **Add data source**.
-    3. In the **Add data source** page, enter the following settings:
+1. In the Corrata portal, integrate Corrata into Defender for Cloud Apps. For instructions, see [Integrating Corrata with Microsoft Defender for Cloud Apps](https://corrata.com/microsoft-mcas-onboarding/).
+1. In the [Microsoft 365 Defender portal](https://security.microsoft.com/), do the following integration steps:
+    1. Select **Settings**. Then choose **Cloud Apps**.
+    1. Under **Cloud Discovery**, select **Automatic log upload**. Then select **+Add data source**.
+    1. In the **Add data source** page, enter the following settings:
 
         - Name = Corrata
         - Source = Corrata
@@ -33,11 +33,11 @@ If you work with both Defender for Cloud Apps and Corrata, you can integrate the
 
         ![data source Corrata.](media/data-source-corrata.png)
 
-    4.Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.
+    1.Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.
 
-3. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
+1. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
 
-4. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Corrata, and then automatically blocked by Corrata. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
+1. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Corrata, and then automatically blocked by Corrata. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
 ## Next steps
 

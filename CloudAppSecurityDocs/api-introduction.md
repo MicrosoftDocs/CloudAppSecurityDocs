@@ -1,7 +1,7 @@
 ---
-title: Defender for Cloud Apps REST API
+title: REST API
 description: This article describes how to interact with Defender for Cloud Apps over HTTPS.
-ms.date: 05/24/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Defender for Cloud Apps REST API
@@ -21,17 +21,14 @@ The Microsoft Defender for Cloud Apps API provides programmatic access to Defend
 
 To use the Defender for Cloud Apps API, you must first obtain the API URL from your tenant. The API URL uses the following format: `https://<portal_url>/api/<endpoint>`.
 
-To obtain the Defender for Cloud Apps portal URL for your tenant, do the following steps:
+To obtain the Defender for Cloud Apps API URL for your tenant, do the following steps:
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the **question mark icon** in the menu bar. Then, select **About**.
-
-    ![Select About.](media/about-menu.png)
-
-1. In the Defender for Cloud Apps about screen, you can see the portal url.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.  Under **System**, select **About**.
+1. In the Defender for Cloud Apps about screen, you can see the API url.
 
     ![View your data center.](media/api-url.png)
 
-Once you have the portal url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
+Once you have the API url, add the `/api` suffix to it to obtain your API URL. For example, if your portal's URL is `https://mytenant.us2.contoso.com`, then your API URL is `https://mytenant.us2.contoso.com/api`.
 
 ## API tokens
 
@@ -45,7 +42,7 @@ Where `<your_token_key>` is your personal API token.
 
 For more information about API tokens, see [Managing API tokens](api-authentication.md).
 
-### Example
+### API tokens - example
 
 ```rest
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint"
@@ -107,7 +104,7 @@ Some of our API endpoints support filters when performing queries. In their rele
 
 Most filters support multiple values to provide you with powerful queries. When combining filters and operators we use AND as the logical operator between the filters.
 
-### Example
+### Filters - example
 
 ```rest
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/example-endpoint" -d '{

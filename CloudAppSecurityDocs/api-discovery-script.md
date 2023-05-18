@@ -1,7 +1,7 @@
 ---
 title: Generate block script - Cloud Discovery API
 description: This article describes the discovery_block_scripts request in the Defender for Cloud Apps Cloud Discovery API.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Generate block script - Cloud Discovery API
@@ -54,7 +54,7 @@ Here is an example of the request.
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery_block_scripts/?format=102&type=banned"
 ```
 
-### Response
+### Response example
 
 ```text
 url.domain=application.com deny

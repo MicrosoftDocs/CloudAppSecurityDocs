@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender for Cloud Apps preview features
+title: Preview features
 description: Learn how to access Microsoft Defender for Cloud Apps preview features.
-ms.date: 01/09/2023
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Microsoft Defender for Cloud Apps preview features
+# Preview features in Microsoft Defender for Cloud Apps
 
 The Microsoft Defender for Cloud Apps is constantly being updated to include new feature enhancements and capabilities.
 
@@ -41,16 +41,13 @@ You'll have access to upcoming features that you can provide feedback on to help
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Settings**.
-2. Select **System**.
+2. Select **Cloud Apps**.
 3. Select **Preview features** > **Enable preview features**.
 4. Select **Save**.
 
 You'll know you have preview features turned on when you see that the **Enable preview features** check box is selected.
 
 :::image type="content" source="media/preview-features.png" alt-text="Enable preview features.":::
-
-> [!NOTE]
-> To learn how to enable preview features in Defender for Cloud Apps in the Microsoft 365 Defender portal, see [Preview Features in Defender for Cloud Apps](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#preview-features-in-defender-for-cloud-apps).
 
 ## Next steps
 

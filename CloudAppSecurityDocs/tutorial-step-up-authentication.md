@@ -1,7 +1,7 @@
 ---
 title: Require step-up authentication (authentication context) upon risky action
 description: This tutorial provides instructions for requiring step-up authentication (authentication context) upon risky action.
-ms.date: 01/09/2023
+ms.date: 01/29/2023
 ms.topic: tutorial
 ---
 # Tutorial: Require step-up authentication (authentication context) upon risky action
@@ -48,7 +48,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 ### Step 2: Create a session policy
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Control** followed by **Policies**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Polices** -> **Policy management**.
 
 1. In the **Policies** page, select **Create policy** followed by **Session policy**.
 
@@ -89,7 +89,7 @@ After completing this task, go to the Defender for Cloud Apps portal and create 
 
 1. You should be required to perform the action configured in the authentication context policy.
 
-1. In the Defender for Cloud Apps portal, select **Control** followed by **Policies**, and then select the policy you've created to view the policy report. A session policy match should appear shortly.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Polices** -> **Policy management**. Then select the policy you've created to view the policy report. A session policy match should appear shortly.
 
 1. In the policy report, you can see which logins where redirected to Microsoft Defender for Cloud Apps for session control, and which files were downloaded or blocked from the monitored sessions.
 

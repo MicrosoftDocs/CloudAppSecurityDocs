@@ -1,7 +1,7 @@
 ---
-title: Extend governance to endpoint remediation tutorial
+title: Extend governance to endpoint remediation
 description: This tutorial describes the process to configure Microsoft Defender for Cloud Apps policy alerts to trigger Microsoft Power Automate workflows to run Microsoft Defender for Endpoint remediation actions.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: tutorial
 ---
 # Tutorial: Extend governance to endpoint remediation
@@ -37,9 +37,9 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 > [!NOTE]
 > If you have previously created a workflow using a Defender for Cloud Apps connector, Power Automate automatically reuses the token and you can skip this step.
 
-1. In Defender for Cloud Apps, in the menu bar, select the settings cog ![settings icon.](media/settings-icon.png "settings icon") and select **Security extensions**.
-
-1. On the **Security extensions** page, select the plus button to generate a new API token.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **System**, choose **API tokens**.
+1. Select **+Add token** to generate a new API token.
 1. In the **Generate new token** pop-up, enter the token name (for example, "Flow-Token"), and then select **Generate**.
 
     ![Screenshot of the token window, showing the name entry and generate button.](media/tutorial-flow-token-generate.png)
@@ -93,11 +93,11 @@ If you don't have a Power Automate plan, [sign up for a free trial account](http
 
 ## Phase 4: Configure a policy to run the flow<a name="configure-policy"></a>
 
-1. In Defender for Cloud Apps, select **Control**, and then select **Policies**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**.
 
 1. In the list of policies, on the row where the relevant policy appears, choose the three dots at the end of the row, and then choose **Edit policy**.
 
-1. Under **Alerts**, select **Send alerts to Flow**, and then select **Run antivirus scan using Windows Defender upon a Defender for Cloud Apps alert**.
+1. Under **Alerts**, select **Send alerts to Power Automate**, and then select **Run antivirus scan using Windows Defender upon a Defender for Cloud Apps alert**.
 
     ![Screenshot of the policy page, showing the alerts settings section.](media/tutorial-flow-templates-alerts.png)
 

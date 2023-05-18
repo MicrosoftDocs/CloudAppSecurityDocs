@@ -1,7 +1,7 @@
 ---
-title: Set IP ranges and tags 
+title: Working with IP ranges and tags
 description: This article provides instructions for working with IP tags and IP categories.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Working with IP ranges and tags
@@ -17,13 +17,13 @@ Defender for Cloud Apps comes preconfigured with built-in IP ranges for popular 
 > - To use these built-in tags as part of a search, refer to their ID in the Defender for Cloud Apps API documentation.
 > - You can add IP ranges in bulk by creating a script using the [IP address ranges API](api-data-enrichment.md).
 > - You cannot add IP ranges with overlapping IP addresses.
-> - To view the API documentation, go to the Defender for Cloud Apps portal menu bar, select the question mark, and then select [API documentation](api-introduction.md).
+> - To view the API documentation, go to [API documentation](api-introduction.md).
 
 Built-in IP address tags and custom IP tags are considered hierarchically. Custom IP tags take precedence over built-in IP tags. For instance, if an IP address is tagged as **Risky** based on threat intelligence but there's a custom IP tag that identifies it as **Corporate**, the custom category and tags take precedence.
 
 ## Create an IP address range
 
-In the menu bar, select the Settings icon. In the drop-down menu, select **IP address ranges**. Select **Add IP address range** to add IP address ranges and set the following fields:
+In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **IP address ranges**. Select **Add IP address range** to add IP address ranges and set the following fields:
 
 1. **Name** your IP range. The name doesn't appear in the activities log. It's only used to manage your IP range.
 

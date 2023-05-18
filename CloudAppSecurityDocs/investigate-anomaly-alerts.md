@@ -1,7 +1,7 @@
 ---
-title: Defender for Cloud Apps anomaly detection alerts investigation guide
+title: How to investigate anomaly detection alerts
 description: This article explains how to investigate the Defender for Cloud Apps anomaly detection alerts issued when attacks are detected against your organization.
-ms.date: 12/21/2022
+ms.date: 03/09/2023
 ms.topic: how-to
 ---
 
@@ -318,7 +318,7 @@ Activities in a single session indicating that, a user performed suspicious chan
 
 ### Suspicious email deletion activity (by user)
 
-Activities in a single session indicating that, a user performed suspicious email deletions. This can indicate an attempted breach of your organization, such as attackers attempting to mask operations by deleting emails related to spam activities.
+Activities in a single session indicating that, a user performed suspicious email deletions. The deletion type was the "hard delete" type which makes the email item deleted and not available in the user's mailbox. The deletion was made from a connection that includes uncommon preferences such as ISP, country/region and user agent. This can indicate an attempted breach of your organization, such as attackers attempting to mask operations by deleting emails related to spam activities.
 
 **TP**, **B-TP**, or **FP**?
 
@@ -443,7 +443,7 @@ Learning your organization's environment requires a period of seven days during 
 
 The detection identifies an OAuth app connecting to your cloud application from an ISP that is uncommon for the app. This may indicate that an attacker tried to use a legitimate compromised app to perform malicious activities on your cloud applications.
 
-**Learning period** 
+**Learning period**
 
 The learning period for this detection is 30 days.  
 
@@ -744,3 +744,4 @@ Establishing a new user's activity pattern requires an initial learning period o
 
 > [!div class="nextstepaction"]
 > [Investigate risky users](tutorial-ueba.md)
+

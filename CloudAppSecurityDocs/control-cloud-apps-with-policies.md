@@ -1,7 +1,7 @@
 ---
-title: Control cloud app usage by creating policies 
+title: Control cloud apps with policies
 description: This article provides information on how policies are used and set up to control cloud app use.
-ms.date: 01/09/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Control cloud apps with policies
@@ -14,7 +14,7 @@ For example, if there's a data violation threat that you want to quarantine, you
 
 ## Policy types
 
-When you look at the **Policy** page, the various policies and templates can be distinguished by type and icon to see which policies are available. The policies can be viewed together on the **All policies** tab, or in their respective category tabs. The available policies depend on the data source and what you have enabled in Defender for Cloud Apps for your organization. For example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discovery are displayed.
+When you look at the **Policy management** page, the various policies and templates can be distinguished by type and icon to see which policies are available. The policies can be viewed together on the **All policies** tab, or in their respective category tabs. The available policies depend on the data source and what you have enabled in Defender for Cloud Apps for your organization. For example, if you uploaded Cloud Discovery logs, the policies relating to Cloud Discovery are displayed.
 
 The following types of policies can be created:
 
@@ -84,7 +84,7 @@ Policy templates help you set the correct filters and configurations necessary t
 
 To create a policy from **Policy templates**, perform the following steps:
 
-1. In the console, select **Control** followed by **Templates**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**.
 
     ![Create the policy from a template.](media/create-policy-from-template.png)
 
@@ -98,19 +98,23 @@ To create a policy from **Policy templates**, perform the following steps:
 1. After you create the new template-based policy, a link to the new policy appears in the **Linked policies** column in the policy template table next to the template from which the policy was created.
     You can create as many policies as you want from each template and they'll all be linked to the original template. Linking allows you to track all policies built using the same template.
 
-Alternatively, you can **create a policy during investigation**. If you're investigating the **Activity log**, **Files** or **Accounts**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.
+Alternatively, you can **create a policy during investigation**. If you're investigating the **Activity log**, **Files**, or **Identities**, and you drill down to search for something specific, at any time you can create a new policy based on the results of your investigation.
 
-For example, if you're looking at the **Activity log**, and see an admin activity from outside your office's IP addresses.
+For example, you might want to create one if you're looking at the **Activity log**, and see an admin activity from outside your office's IP addresses.
 
 To create a policy based on investigation results, do the following steps:
 
-1. In the console, select **Investigate** followed by **Activity log**, **Files**, or **Accounts**.
+1. In the Microsoft 365 Defender portal, go to one of these:
 
-1. Use the filters at the top of the page to limit the search results to the suspicious area. For example, in the Activity log page, select **Activity type** and select **Write Administrators** under Azure operation. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate, and VPN IP addresses.
+    - **Cloud Apps** -> **Activity log**
+    - **Cloud Apps** -> **Files**
+    - **Assets** -> **Identities**
+
+1. Use the filters at the top of the page to limit the search results to the suspicious area. For example, in the Activity log page, select **Administrative activity** and select **True**. Then, under **IP address**, select **Category** and set the value to not include IP address categories you've created for your recognized domains, such as your admin, corporate, and VPN IP addresses.
 
     ![Create file from investigation.](media/create-file-from-investigation.png)
 
-1. In the upper right corner of the console, select **New policy from search**.
+1. Below the query, select **New policy from search**.
 
     ![New policy from search button.](media/new-policy-from-search-button.png)
 
@@ -139,7 +143,7 @@ For a list of available governance actions per app, see the [Governing connected
 
 You can also set the policy to send you an alert by email when matches are detected.
 
-To set your notification preferences, got to [Customize the portal](general-setup.md)
+To set your notification preferences, go to [Email notification preferences](mail-settings.md).
 
 ## Enable and disable policies
 
@@ -169,15 +173,15 @@ To export a log, perform the following steps:
 
 To download the exported report:
 
-1. After the report is ready, go to **Settings** and then **Exported reports**.
+1. After the report is ready, i n the Microsoft 365 Defender portal, go to **Reports** and then **Cloud Apps** -> **Exported reports**.
 
-1. In the table, select the relevant report from the list of **Policies overview report** and select download.
+1. In the table, select the relevant report, and then select download.
 
     ![download button.](media/download-button.png)
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

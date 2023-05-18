@@ -1,7 +1,7 @@
 ---
 title: Initiate file upload - Cloud Discovery API
 description: This article describes the upload_url request in the Defender for Cloud Apps Cloud Discovery API.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Initiate file upload - Cloud Discovery API

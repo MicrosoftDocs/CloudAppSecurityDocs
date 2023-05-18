@@ -1,7 +1,7 @@
 ---
-title: Deploy Defender for Cloud Apps
+title: Get started
 description: This quickstart outlines the process for getting Defender for Cloud Apps up and running so you have cloud app use, insight, and control.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: quickstart
 ---
 
@@ -28,11 +28,11 @@ This quickstart provides you with steps for getting up and running with Defender
 
 ## To access the portal
 
-To access the Defender for Cloud Apps portal, go to [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com). You can also access the portal through the **[Microsoft 365 Defender portal](https://security.microsoft.com)**, as follows:
+ You can access Defender for Cloud Apps through the **[Microsoft 365 Defender portal](https://security.microsoft.com)**, as follows:
 
-1. In the [Microsoft 365 Defender Portal](https://security.microsoft.com/),  select **More resources**, and then select **Defender for Cloud Apps**.
+1. In the [Microsoft 365 Defender Portal](https://security.microsoft.com/),  under **Cloud Apps**, you'll find the various components of Defender for Cloud Apps:
 
-    ![Select Defender for Cloud Apps.](media/access-from-o365-s2.png)
+    :::image type="content" source="media/defender-for-cloud-apps-menu.png" alt-text="Defender for Cloud Apps menu." lightbox="media/defender-for-cloud-apps-menu.png":::
 
 ## Step 1. Set instant visibility, protection, and governance actions for your apps
 
@@ -40,8 +40,9 @@ How to page: [Set instant visibility, protection, and governance actions for you
 
 Required task: Connect apps
 
-1. From the settings cog, select **App connectors**.
-1. Select the plus sign (**+**) to add an app and select an app.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Connected Apps**, select **App Connectors**.
+1. Select the **+Connect an app** to add an app and then select an app.
 1. Follow the configuration steps to connect the app.
 
 **Why connect an app?**
@@ -53,14 +54,15 @@ How to page: [Protect sensitive information with DLP policies](policies-informat
 
 Recommended task: Enable file monitoring and create file policies
 
-1. Go to **Settings**, and then under **Information Protection**, select **Files**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Information Protection**, select **Files**.
 1. Select **Enable file monitoring** and then select **Save**.
 1. If you use sensitivity labels from Microsoft Purview Information Protection, under **Information Protection**, select **Microsoft Information Protection**.
 1. Select the required settings and then select **Save**.
 1. In [Step 3](#step-3-control-cloud-apps-with-policies), create [File policies](data-protection-policies.md) to meet your organizational requirements.
 
 > [!TIP]
-> You can view files from your connected apps by browsing to **Investigate** > **Files**.
+> You can view files from your connected apps by browsing to **Cloud Apps** > **Files** in the Microsoft 365 Defender portal.
 
 **Migration recommendation**  
 We recommend using Defender for Cloud Apps sensitive information protection in parallel with your current Cloud Access Security Broker (CASB) solution. Start by [connecting the apps you want to protect](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) to Microsoft Defender for Cloud Apps. Since API connectors use out-of-band connectivity, no conflict will occur. Then progressively migrate your [policies](control-cloud-apps-with-policies.md) from your current CASB solution to Defender for Cloud Apps.
@@ -76,10 +78,10 @@ Required task: Create policies
 
 ### To create policies
 
-1. Go to **Control** > **Templates**.
-1. Select a policy template from the list, and then choose (+) **Create policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, choose **Policies** -> **Policy templates**.
+1. Choose a policy template from the list, and then select the **+** icon to create the policy.
 1. Customize the policy (select filters, actions, and other settings), and then choose **Create**.
-1. On the **Policies** tab, choose the policy to see the relevant matches (activities, files, alerts).
+1. Under **Cloud Apps**, choose **Policies** -> **Policy management**, to choose the policy and see the relevant matches (activities, files, alerts).
 
 > [!TIP]
 > To cover all your cloud environment security scenarios, create a policy for each **risk category**.
@@ -98,7 +100,7 @@ Required task: Enable Defender for Cloud Apps to view your cloud app use
 1. If you use [Zscaler, integrate](zscaler-integration.md) it with Defender for Cloud Apps.
 1. To achieve full coverage, create a continuous Cloud Discovery report
 
-    1. From the settings cog, select **Settings**.
+    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
     1. Under **Cloud Discovery**, choose **Automatic log upload**.
     1. On the **Data sources** tab, add your sources.
     1. On the **Log collectors** tab, configure the log collector.
@@ -108,7 +110,8 @@ We recommend using Defender for Cloud Apps discovery in parallel with your curre
 
 ### To create a snapshot Cloud Discovery report
 
-Go to **Discover** > **Create snapshot report** and follow the steps shown.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, choose **Cloud discovery**.
+1. In the top right-hand corner, select **Actions** -> **Create Cloud Discovery snapshot report**.
 
 ### Why should you configure Cloud Discovery reports?
 
@@ -123,9 +126,10 @@ Recommended task: Deploy Conditional Access App Control for catalog apps
 
 1. Configure your IdP to work with Defender for Cloud Apps. If you have Azure AD, you can leverage inline controls such as *Monitor only* and *Block downloads* which will work for any catalog app out of the box.
 1. Onboard apps onto access and session controls.
-    1. From the settings cog, select **Conditional Access App Control**.
+    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+    1. Under **Connected apps**, select *Conditional Access App Control apps**.
     1. Sign in to each app using a user scoped to the policy
-    1. Refresh the **Conditional Access App Control** page and to view the app.
+    1. Refresh the **Conditional Access App Control apps** page and to view the app.
 1. Verify the apps are configured to use access and session controls
 
 To configure session controls for custom line-of-business apps, non-featured SaaS apps, and on-premises apps, see [Deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
@@ -141,19 +145,20 @@ Recommended task: Add your organization details
 
 ### To enter email settings
 
-1. From the settings cog, select **Mail settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **System**, select **Mail settings**.
 1. Under **Email sender identity**, enter your email addresses and display name.
 1. Under **Email design**, upload your organization's email template.
 
 ### To set admin notifications
 
-1. In the navigation bar, choose your user name, and then go to **User settings**.
-1. Under **Notifications**, configure the methods you want to set for system notifications.
-1. Choose **Save**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Microsoft 365 Defender**.
+1. Select **Email notifications**.
+1. Configure the methods you want to set for system notifications.
 
 ### To customize the score metrics
 
-1. From the settings cog, select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Cloud Discovery**, choose **Score metrics**.
 1. Configure the importance of various risk values.
 1. Choose **Save**.
@@ -173,16 +178,17 @@ Recommended task: Configure important settings
 
 ### To create IP address tags
 
-1. From the settings cog, select **IP address ranges**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **System**, select **IP address ranges**.
 1. Select **+ Add IP address range**  to add an IP address range.
-1. Enter the IP range **details**, **location**, **tags**, and **category**.
+1. Enter the IP range **Name**, **IP address ranges**, **Category**, and **Tags**.
 1. Choose **Create**.
 
     Now you can use IP tags when you create policies, and when you filter and create continuous reports.
 
 ### To create continuous reports
 
-1. From the settings cog, select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Cloud Discovery**, choose **Continuous reports**.
 1. Choose **Create report**.
 1. Follow the configuration steps.
@@ -192,8 +198,8 @@ Now you can view discovered data based on your own preferences, such as business
 
 ### To add domains
 
-1. From the settings cog, select **Settings**.
-1. Under **System**, choose  **Organization details**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **System**, choose **Organization details**.
 1. Add your organization's internal domains.
 1. Choose **Save**.
 

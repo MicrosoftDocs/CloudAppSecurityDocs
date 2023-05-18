@@ -1,10 +1,10 @@
 ---
-title: Roll out continuous reports for Defender for Cloud Apps using a Docker on Windows
+title: Configure automatic log upload using on-premises Docker on Windows
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps using a Docker on Windows in an on-premises server.
-ms.date: 01/08/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Docker on Windows on-premises
+# Configure automatic log upload using on-premises Docker on Windows
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -57,15 +57,12 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 ### Step 1 – Web portal configuration: Define data sources and link them to a log collector
 
-1. Go to the **Automatic log upload** settings page.
-
-    1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click the settings icon followed by **Log collectors**.
-
-    ![settings icon.](media/settings-icon.png)
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Cloud Discovery**, select **Automatic log upload**.  Then select the **Data sources** tab.
 
 1. For each firewall or proxy from which you want to upload logs, create a matching data source.
 
-    1. Click **Add data source**.  
+    1. Select **+Add data source**.  
     ![Add a data source.](media/add-data-source.png)
     1. **Name** your proxy or firewall.  
     ![Add name for data source.](media/ubuntu1.png)
@@ -83,17 +80,17 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 1. Go to the **Log collectors** tab at the top.
 
-    1. Click **Add log collector**.
+    1. Select **Add log collector**.
     1. Give the log collector a **name**.
-    1. Enter the **Host IP address** (private IP address) of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there is a DNS server (or equivalent) that will resolve the host name.
-    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
+    1. Enter the **Host IP address** (private IP address) of the machine you'll use to deploy the Docker. The host IP address can be replaced with the machine name, if there's a DNS server (or equivalent) that will resolve the host name.
+    1. Select all **Data sources** that you want to connect to the collector, and select **Update** to save the configuration.
     ![Select data source to connect.](media/ubuntu2.png)
 
-1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon, ![copy to clipboard icon.](media/copy-icon.png). You will need this later.
+1. Further deployment information will appear. **Copy** the run command from the dialog. You can use the copy to clipboard icon, ![copy to clipboard icon.](media/copy-icon.png). You'll need this later.
 
 1. **Export** the expected data source configuration. This configuration describes how you should set the log export in your appliances.
 
-    ![Create log collector.](media/windows7.png)
+    ![Create log collector.](media/create-log-connector.png)
 
     > [!NOTE]
     >
@@ -109,24 +106,48 @@ The following steps describe the deployment in Windows. The deployment steps for
 
 1. Run the following command to download the Windows Docker installer PowerShell script file: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-    To validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature)
+    To validate that the installer is signed by Microsoft, see [Validate installer signature](#optional---validate-installer-signature).
 
 1. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`
 
 1. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
-This installs the Docker client on your machine. While the log collector container is installed, the machine will be restarted twice and you will have to log in again. **Make sure the Docker client is set to use Linux containers.**
+This installs the Docker client on your machine.
 
-1. After each restart, open a PowerShell terminal as an administrator on your machine, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+    :::image type="content" source="media/install-docker.png" alt-text="Docker is installed.":::
 
-1. Before the installation completes, you will have to paste in the run command you copied earlier.
+    After running the command, the machine will be automatically restarted.
 
-1. Deploy the collector image on the hosting machine by importing the collector configuration. Import the configuration by copying the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
+1. When the machine is up and running again, run the same command in PowerShell: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+
+    :::image type="content" source="media/install-log-collector.png" alt-text="Run PowerShell command again.":::
+
+1. Run the Docker installer. Select **Use WSL 2 instead of Hyper-V (recommended)**:
+
+    :::image type="content" source="media/install-docker-desktop.png" alt-text="Installing Docker desktop.":::
+
+    After the installation is completed, the machine will be automatically restarted again.
+
+1. After the restart is completed, open the Docker client and go through the Docker subscription agreement:
+
+    :::image type="content" source="media/docker-service-agreement.png" alt-text="Accept Docker service agreement.":::
+
+1. If the WSL2 installation isn't completed, the following pop-up message will show up:
+
+    :::image type="content" source="media/wsl2-installation-incomplete.png" alt-text="WSL 2 installation is incomplete.":::
+
+1. Complete the installation by downloading the package as explained in [Download the Linux kernel update package.](/windows/wsl/install-manual)
+
+1. Open the Docker Desktop client again and make sure that it has started:
+
+    :::image type="content" source="media/open-docker-desktop-client.png" alt-text="Open the Docker Desktop client.":::
+
+1. Run CMD as an administrator and type the run command generated in the portal. If you need to configure a proxy, add the proxy IP address and port number. For example, if your proxy details are 192.168.10.1:8080, your updated run command is:
 
     ```console
     (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i mcr.microsoft.com/mcas/logcollector starter
     ```
 
-    ![Create log collector.](media/windows7.png)
+    ![Create log collector.](media/create-log-connector.png)
 
 1. Verify that the collector is running properly with the following command: `docker logs <collector_name>`
 
@@ -142,27 +163,28 @@ Configure your network firewalls and proxies to periodically export logs to the 
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 ```
 
-### Step 4 - Verify the successful deployment in the Defender for Cloud Apps portal
+### Step 4 - Verify the successful deployment in the portal
 
 Check the collector status in the **Log collector** table and make sure the status is **Connected**. If it's **Created**, it's possible the log collector connection and parsing haven't completed.
 
-![Verify that collector deployed successfully.](media/ubuntu9.png)
+:::image type="content" source="media/collector-status-connected.png" alt-text="Verify that the collector status is Connected." lightbox="media/collector-status-connected.png":::
 
 You can also go to the **Governance log** and verify that logs are being periodically uploaded to the portal.
 
 Alternatively, you can check the log collector status from within the docker container using the following commands:
 
-1. Log in to the container by using this command: `docker exec -it <Container Name> bash`
+1. Sign in to the container by using this command: `docker exec -it <Container Name> bash`
 1. Verify the log collector status using this command: `collector_status -p`
 
 If you have problems during deployment, see [Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md).
 
-### Optional - Create custom continuous reports <a name="continuous-reports"></a>
+### Optional - Create custom continuous reports
 
 Verify that the logs are being uploaded to Defender for Cloud Apps and that reports are generated. After verification, create custom reports. You can create custom discovery reports based on Azure Active Directory user groups. For example, if you want to see the cloud use of your marketing department, import the marketing group using the import user group feature. Then create a custom report for this group. You can also customize a report based on IP address tag or IP address ranges.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the Settings cog, select Cloud Discovery settings, and then select **Continuous reports**.
-1. Click the **Create report** button and fill in the fields.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Cloud Discovery**, select **Continuous reports**.
+1. Select the **Create report** button and fill in the fields.
 1. Under the **Filters** you can filter the data by data source, by [imported user group](user-groups.md), or by [IP address tags and ranges](ip-tags.md).
 
     >[!NOTE]
@@ -170,19 +192,19 @@ Verify that the logs are being uploaded to Defender for Cloud Apps and that repo
 
     ![Custom continuous report.](media/custom-continuous-report.png)
 
-### Optional - Validate installer signature <a name="validate-signature"></a>
+### Optional - Validate installer signature
 
 To make sure that the docker installer is signed by Microsoft:
 
-1. Right click on the file and select **Properties**.
-1. Click on **Digital Signatures** and make sure that it says **This digital signature is OK**.
+1. Right-click on the file and select **Properties**.
+1. Select **Digital Signatures** and make sure that it says **This digital signature is OK**.
 1. Make sure that **Microsoft Corporation** is listed as the sole entry under **Name of signer**.
 
     ![Digital signature valid.](media/digital-signature-successful.png)
 
-If the digital signature is not valid, it will say **This digital signature is not valid**:
+    If the digital signature isn't valid, it will say **This digital signature is not valid**:
 
-![Digital signature not valid.](media/digital-signature-unsuccessful.png)
+    ![Digital signature not valid.](media/digital-signature-unsuccessful.png)
 
 ## Next steps
 

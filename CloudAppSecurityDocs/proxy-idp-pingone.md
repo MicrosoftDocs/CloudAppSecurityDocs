@@ -1,10 +1,10 @@
 ---
-title: Deploy Defender for Cloud Apps Conditional Access App Control for any web app using PingOne
+title: Deploy Conditional Access App Control for any web app using PingOne
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using the PingOne identity provider.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Onboard and deploy Conditional Access App Control for any web app using PingOne as the identity provider (IdP)
+# Deploy Conditional Access App Control for any web app using PingOne as the identity provider (IdP)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -70,9 +70,10 @@ Use the following steps to route your web app sessions from PingOne to Defender 
 
 ## Step 2: Configure Defender for Cloud Apps with your app's SAML information
 
-1. In Defender for Cloud Apps, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Connected apps**, select **Conditional Access App Control apps**.
 
-1. Select plus sign (**+**), and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
+1. Select **+Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then select **Next**.
 
     > [!NOTE]
@@ -120,7 +121,7 @@ Then use the instructions from the **Add a SAML application with your identity p
 
 1. On the **Application Configuration** page, do the following, and then select **Continue to Next Step**.
     - In the **Assertion Consumer Service (ACS)** field, enter the Salesforce **Login URL** you noted earlier.
-    - In the **Entity ID** field, enter a unique ID starting with *https://*. Make sure this is different from the exiting Salesforce PingOne app's configuration.
+    - In the **Entity ID** field, enter a unique ID starting with `https://`. Make sure this is different from the exiting Salesforce PingOne app's configuration.
     - Make a note of the **Entity ID**. You'll need this later.
 
     ![Configure custom app with Salesforce SAML details.](media/proxy-idp-pingone/idp-pingone-sf-custom-app-set-saml-sso-properties.png)

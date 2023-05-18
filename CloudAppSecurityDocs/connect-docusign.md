@@ -1,9 +1,10 @@
 ---
-title: Connect DocuSign to Microsoft Defender for Cloud Apps
+title: Connect DocuSign
 description: This article describes how to connect Microsoft Defender for Cloud Apps to your existing DocuSign environment via the App Connector APIs. 
-ms.date: 12/21/2022
+ms.date: 02/23/2023
 ms.topic: how-to
 ---
+
 # Connect DocuSign to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -18,7 +19,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 - DNS domains used in your organization should be claimed and validated in your DocuSign organization. For more information on claiming and validating domains, see [Domains | DocuSign](https://support.docusign.com/en/guides/org-admin-guide-claim-domain/)
 
 - The DocuSign user used for logging into DocuSign must be mapped to the user role 'Docusign Administrator' and must be an organization admin of one organization only. For more information, see the prerequisite role in [How to get monitoring data | DocuSign](https://developers.docusign.com/docs/monitor-api/how-to/get-monitoring-data/) and [Organization Administrators - DocuSign Admin for Organization Management | DocuSign Support Center](https://support.docusign.com/en/guides/org-admin-guide-org-admins).
-
+- Due to DocuSign’s API limitation, in order to have SaaS Security Posture management (SSPM) support there's a need to reconnect it with additional permissions: **account_read account_write** and **user_read organization_read** .
 - The DocuSign account must be mapped to an organization. For more information, see:
 
   - Create new organization: [Organizations - DocuSign Admin for Organization Management | DocuSign Support Center](https://support.docusign.com/en/guides/org-admin-guide-create-org)
@@ -41,11 +42,11 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 ### Configure Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. On the **App connectors** tab, select the plus sign, and then select **DocuSign**.
+1. In the **App connectors** page, select **+Connect an app**, and then select **DocuSign**.
 
-1. In the window that appears, give the connector a descriptive name, and then select **Connect DocuSign**:
+1. In the window that appears, give the connector a descriptive name, and then select **Next**.
 
     ![Connect DocuSign.](media/connect-docusign.png)
 
@@ -56,15 +57,19 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
     ![Enter DocuSign details.](media/docusign-details.png)
 
-1. Select **Connect in DocuSign**.
-1. Make sure the connection succeeded by selecting **Test now**. The test might take a few minutes. After you see a success notice, select **Close**.
-1. The first connection can take up to four hours to get all users and their activities in the seven days before the connection.
-1. After the connector's **Status** is marked as **Connected**, the connector is live and works.
+1. Select **Next**.
+1. In the next screen, select **Connect DocuSign**.
+
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
+
+> [!NOTE]
+> SaaS Security Posture Management (SSPM) data will be shown in the Microsoft 365 Defender portal on the **Secure Score** page. For more information, see [Security posture management for SaaS apps](/defender-cloud-apps/security-saas).
 
 ## Limitations
 
 1. Only active DocuSign users will be shown in Defender for Cloud Apps.
    - If a user isn't active in all of the DocuSign accounts mapped to the connected DocuSign organization, the user will be shown as deleted in Defender for Cloud Apps.
+1. For SaaS Security Posture Management (SSPM) support, the provided credentials must have these permissions - **account_read account_write** and **user_read organization_read**.
 1. Defender for Cloud Apps won't show whether a user is an administrator or not.
 1. The DocuSign activities that will be shown in Defender for Cloud Apps are the activities at the account level (of every account that is mapped to the connected DocuSign organization) and at the organization level.
 

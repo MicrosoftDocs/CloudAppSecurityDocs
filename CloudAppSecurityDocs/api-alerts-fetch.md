@@ -1,7 +1,7 @@
 ---
 title: Fetch - Alerts API
 description: This article describes the fetch request in the Defender for Cloud Apps Alerts API.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Fetch - Alerts API

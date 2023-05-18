@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting access and session controls
 description: This article provides admins with guidance on how to investigate and resolve common access and session controls.
-ms.date: 12/21/2022
+ms.date: 04/20/2023
 ms.topic: conceptual
 ---
 
@@ -18,7 +18,7 @@ Before you continue, make sure your environment meets the following minimum gene
   - Azure Active Directory (Azure AD) using SAML 2.0 or OpenID Connect 2.0
   - Non-Microsoft IdP using SAML 2.0
 - **Browser support**: Session controls are available for browser-based sessions on these supported browsers: Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest)
-- **Downtime**: Defender for Cloud Apps allows you to define the default behavior to apply if there is a service disruption, such as a component not functioning correctly. You can choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. This default behavior during system downtime can be configured in the Defender for Cloud Apps portal, as follows: **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.
+- **Downtime**: Defender for Cloud Apps allows you to define the default behavior to apply if there's a service disruption, such as a component not functioning correctly. You can choose to harden (block) or bypass (allow) users from taking actions on potentially sensitive content when the normal policy controls cannot be enforced. This default behavior during system downtime can be configured in the Microsoft 365 Defender portal, as follows: **Settings** > **Conditional Access App Control** > **Default behavior** > **Allow** or **Block** access.
 
 ## Issues experienced by admins
 
@@ -41,7 +41,7 @@ Common network condition issues you may encounter include:
 
 #### Network errors when navigating to a browser page
 
-When you are first setting up Defender for Cloud Apps access and session controls for an app, common network errors that may arise include: "This site is not secure" and "There is no internet connection". These messages can indicate a general network configuration error.
+When you're first setting up Defender for Cloud Apps access and session controls for an app, common network errors that may arise include: "This site is not secure" and "There is no internet connection". These messages can indicate a general network configuration error.
 
 **Recommended steps**
 
@@ -51,18 +51,19 @@ When you are first setting up Defender for Cloud Apps access and session control
     1. Verify that the login is working as expected
 1. Enable TLS 1.2 in your browser's internet options.
 
-1. > [!NOTE]
-   > - Defender for Cloud Apps leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that do not support TLS 1.2+ will not be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
-   > 
+   > [!NOTE]
+   >
+   > - Defender for Cloud Apps leverages Transport Layer Security (TLS) protocols 1.2+ to provide best-in-class encryption. Native client apps and browsers that don't support TLS 1.2+ won't be accessible when configured with session control. However, SaaS apps that use TLS 1.1 or lower will appear in the browser as using TLS 1.2+ when configured with Defender for Cloud Apps.
+   >
    > - While session controls are built to work with any browser on any major platform on any operating system, we support Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
-   
+
  | Browser | Steps |
  |---|---|
  | Microsoft Internet Explorer | 1. Open Internet Explorer<br />2. Select **Tools** > **Internet Options** > **Advance** tab<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
  | Microsoft Edge / Edge Chromium | 1. Open search from the taskbar and search for "Internet Options"<br />2. Select **Internet Options**<br />3. Under **Security**, select **TLS 1.2**<br />4. Select **Apply**, and then select **OK**<br />5. Restart your browser and verify that you can access the app |
- | Google Chrome | 1. Open Google Chrome<br />2. At the top-right, click **More** (3 vertical dots) > **Settings**<br />3. At the bottom, click **Advanced**<br />4. Under **System**, click **Open proxy settings**<br />5. On the **Advanced** tab, under **Security**, select **TLS 1.2**<br />6. Click **OK**<br />7. Restart your browser and verify that you are able to access the app |
- | Mozilla Firefox | 1. Open Mozilla Firefox<br />2. In the address bar and search for "about:config"<br />3. In the Search box, search for "TLS"<br />4. Double-click the entry for **security.tls.version.min**<br />5. Set the integer value to 3 to force TLS 1.2 as the minimum required version<br />6. Click **Save** (check mark to the right of the value box)<br />7. Restart your browser and verify that you are able to access the app |
- | Safari | If you are using Safari version 7 or greater, TLS 1.2 is automatically enabled |
+ | Google Chrome | 1. Open Google Chrome<br />2. At the top-right, click **More** (3 vertical dots) > **Settings**<br />3. At the bottom, click **Advanced**<br />4. Under **System**, click **Open proxy settings**<br />5. On the **Advanced** tab, under **Security**, select **TLS 1.2**<br />6. Click **OK**<br />7. Restart your browser and verify that you're able to access the app |
+ | Mozilla Firefox | 1. Open Mozilla Firefox<br />2. In the address bar and search for "about:config"<br />3. In the Search box, search for "TLS"<br />4. Double-click the entry for **security.tls.version.min**<br />5. Set the integer value to 3 to force TLS 1.2 as the minimum required version<br />6. Click **Save** (check mark to the right of the value box)<br />7. Restart your browser and verify that you're able to access the app |
+ | Safari | If you're using Safari version 7 or greater, TLS 1.2 is automatically enabled |
 
 #### Slow login
 
@@ -73,13 +74,13 @@ Proxy chaining and nonce-handling are some of the common issues that could resul
 1. Configure your environment to remove firewall and forward proxy chaining, connecting two or more proxy servers to navigate to the intended page, and other external factors that can cause slowness in the login process.
     1. Identify if proxy chaining is occurring in your environment
     1. Remove additional forward proxies where possible
-1. Turn off nonce-handling for your apps that do not use nonce.
+1. Turn off nonce-handling for your apps that don't use nonce.
 
 1. > [!NOTE]
-   > Some apps use a nonce hash during authentication to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If the app you are working with does not use nonce, you can disable nonce-handling for this app in Defender for Cloud Apps.
-   
-    1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
-    1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit** app.
+   > Some apps use a nonce hash during authentication to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If the app you're working with doesn't use nonce, you can disable nonce-handling for this app in Defender for Cloud Apps.
+
+    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+    1. In the list of apps, on the row in which the app you're configuring appears, choose the three dots at the end of the row, and then choose **Edit** app.
     1. Click **Nonce-handling** to expand the section and then clear **Enable nonce handling**.
     1. Log out of the app and close out all browser sessions.
     1. Restart your browser and login to the app and verify that the login is working as expected.
@@ -96,17 +97,17 @@ While troubleshooting network conditions, there are some additional things to co
 
 - **Proxy performance**
 
-    Deriving a performance baseline depends on many factors outside of the Defender for Cloud Apps proxy, such as:
+  Deriving a performance baseline depends on many factors outside of the Defender for Cloud Apps proxy, such as:
 
-    - What other proxies or gateways sit in series with this proxy
-    - Where the user is coming from
-    - Where the targeted resource resides
-    - Specific requests on the page
+  - What other proxies or gateways sit in series with this proxy
+  - Where the user is coming from
+  - Where the targeted resource resides
+  - Specific requests on the page
 
-    In general, any proxy will add latency. The advantages of the Defender for Cloud Apps proxy are:
+  In general, any proxy will add latency. The advantages of the Defender for Cloud Apps proxy are:
 
-    - Leveraging the global availability of Azure domain controllers to geolocate users to the nearest node and reduce their round-trip distance, on a scale that few services around the world have.
-    - Leveraging the integration with Azure AD Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
+  - Leveraging the global availability of Azure domain controllers to geolocate users to the nearest node and reduce their round-trip distance, on a scale that few services around the world have.
+  - Leveraging the integration with Azure AD Conditional Access to only route the sessions you want to proxy to our service, instead of all users in all situations.
 
 ### Device identification
 
@@ -131,22 +132,22 @@ Azure AD Conditional Access enables Intune compliant and Hybrid Azure AD joined 
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
 1. For **Intune compliant device identification** and **Hybrid Azure AD joined identification** respectively, click **View configuration** and verify that the services are set up.
 
-1. > [!NOTE]
+   > [!NOTE]
    > These are automatically synced from Azure AD and Intune respectively.
-   
+
 1. Create an access or session policy with the **Device Tag** filter equal to **Hybrid Azure AD joined**, **Intune compliant**, or both.
 1. In a browser, log in to a device that is Hybrid Azure AD joined or Intune compliant based on your policy filter.
 1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Hybrid Azure AD joined**, **Intune compliant**, or both based on your policy filters.
 1. If activities are not populating in the Defender for Cloud Apps activity log, go to Azure AD and do the following:
     1. Under **Monitoring** > **Sign-ins**, verify that there are sign-in activities in logs.
     1. Select the relevant log entry for the device you logged into.
-    1. In the **Details** pane, on the **Device info** tab, verify that the device is **Managed** (Hybrid Azure AD joined) or **Compliant** (Intune compliant). If you cannot verify either state, try another log entry or ensure that your device data is configured correctly in Azure AD.
+    1. In the **Details** pane, on the **Device info** tab, verify that the device is **Managed** (Hybrid Azure AD joined) or **Compliant** (Intune compliant). If you can't verify either state, try another log entry or ensure that your device data is configured correctly in Azure AD.
     1. For Conditional Access, some browsers may require additional configuration such as installing an extension. Use the information in the [Conditional Access browser support](/azure/active-directory/conditional-access/concept-conditional-access-conditions#supported-browsers) guide to configure your browser.
-    1. If you still do not see the device information in the **Sign-ins** page, open a support ticket for Azure AD.
+    1. If you still don't see the device information in the **Sign-ins** page, open a support ticket for Azure AD.
 
 #### Client certificates are not prompting when expected
 
@@ -154,29 +155,29 @@ The device identification mechanism can request authentication from relevant dev
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **Device identification**. This page shows the device identification options available in Defender for Cloud Apps.
 1. Verify that you uploaded an X.509 root or intermediate CA. You must upload the CA that is used to sign your relevant certificate authority.
 1. Create an access or session policy with the **Device Tag** filter equal to **Valid client certificate**.
 1. Make sure that your client certificate is:
-    - deployed using the PKCS #12 file format, typically a .p12 or .pfx file extension
-    - installed in the user store, not the device store, of the device you are using for testing
+    - Deployed using the PKCS #12 file format, typically a .p12 or .pfx file extension
+    - Installed in the user store, not the device store, of the device you're using for testing
 1. Restart your browser session
 1. When logging in to the protected app
-    - Verify that you are redirected to the URL `<https://*.managed.access-control.cas.ms/aad_login>`
-    - If you are using iOS, make sure you are using the Safari browser
-    - If you are using Firefox, you must also add the certificate to Firefox's own certificate store. All other browsers use the same default certificate store. Learn [how to add a certificate to the Firefox certificate store](https://www.jscape.com/blog/firefox-client-certificate).
+    - Verify that you're redirected to the URL `<https://*.managed.access-control.cas.ms/aad_login>`
+    - If you're using iOS, make sure you're using the Safari browser
+    - If you're using Firefox, you must also add the certificate to Firefox's own certificate store. All other browsers use the same default certificate store. Learn [how to add a certificate to the Firefox certificate store](https://www.jscape.com/blog/firefox-client-certificate).
 1. Validate that the client certificate prompted in your browser.
-    - If it does not appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
+    - If it doesn't appear, try a different browser. Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
 1. Verify that activities from these devices are populating the log. In Defender for Cloud Apps, on the **Activity log** page, [filter](activity-filters.md) on **Device Tag** equal to **Valid client certificate**.
-1. If you still do not see the prompt, open a [support ticket](support-and-ts.md) and include the following information:
+1. If you still don't see the prompt, open a [support ticket](support-and-ts.md) and include the following information:
     - The details of the browser or native app where you experienced the problem
     - The operating system version (ex. iOS/Android/Windows 10)
     - Mention if the prompt is working on Edge Chromium
 
 #### Client certificates are prompting at every login
 
-If you are experiencing the client certificate popping up after opening a new tab, this might be due to settings hidden within **Internet Options**.
+If you're experiencing the client certificate popping up after opening a new tab, this might be due to settings hidden within **Internet Options**.
 
 | Browser | Steps |
 |---|---|
@@ -191,7 +192,7 @@ While troubleshooting device identification, there are some additional things to
 
 - **Client Certificate Revocation Protocol**
 
-    You can require certificate revocation for Client Certificates. Certificates that have been revoked by the CA no longer be trusted. Selecting this option will require all certificates to pass the CRL protocol. If your client certificate does not contain a CRL endpoint, you will not be able to connect from the managed device.
+    You can require certificate revocation for Client Certificates. Certificates that have been revoked by the CA no longer be trusted. Selecting this option will require all certificates to pass the CRL protocol. If your client certificate doesn't contain a CRL endpoint, you won't be able to connect from the managed device.
 
 ### Onboarding an app
 
@@ -219,7 +220,7 @@ Common scenarios you may encounter while onboarding an app include:
 
 #### App does not appear on the Conditional Access App Control apps page
 
-When onboarding an app to Conditional Access App Control, the final step in the deployment guides is to have the end user navigate to the app. The recommendations listed below are steps that can be done if the app is not appearing after having gone through the guides.
+When onboarding an app to Conditional Access App Control, the final step in the deployment guides is to have the end user navigate to the app. The recommendations listed below are steps that can be done if the app isn't appearing after having gone through the guides.
 
 **Recommended steps**
 
@@ -239,14 +240,14 @@ When onboarding an app to Conditional Access App Control, the final step in the 
 
 An app's status can vary from **Continue Setup**, **Connected**, and **No Activities**.
 
-For apps connected via non-Microsoft identity providers (IdP), if the setup is not complete, when accessing the app you will see a page with the status of **Continue Setup**. Use the following steps complete the setup.
+For apps connected via non-Microsoft identity providers (IdP), if the setup isn't complete, when accessing the app you will see a page with the status of **Continue Setup**. Use the following steps complete the setup.
 
 **Recommended steps**
 
 1. Click **Continue Setup**.
 1. Go through the [deployment guide](proxy-deployment-any-app.md) and verify that you have completed all the steps. Pay particular attention to the following:
     1. Make sure you create a new custom SAML app. You need this to change the URLs and SAML attributes that might not be available in gallery apps.
-    1. If your identity provider does not allow the reuse of the same identifier (also known as Entity ID or Audience), change the identifier of the original app.
+    1. If your identity provider doesn't allow the reuse of the same identifier (also known as Entity ID or Audience), change the identifier of the original app.
 
 #### Cannot configure controls for native apps
 
@@ -261,15 +262,15 @@ Native apps can be detected heuristically and you can use access policies to mon
 
 #### App is not recognized page appears
 
-Defender for Cloud Apps can recognize over 31,000 apps through the Cloud App Catalog (**Discover** -> **Cloud app catalog**). If you are using a custom app that is configured through Azure AD SSO that is NOT one of the 31,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on the Conditional Access App Control.
+Defender for Cloud Apps can recognize over 31,000 apps through the **Cloud App Catalog**. If you're using a custom app that is configured through Azure AD SSO that is NOT one of the 31,000 apps, you will come across an **App is not recognized** page. To resolve the issue, you must configure the app on the Conditional Access App Control.
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
-1. In the banner, click **View new apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. In the banner, select **View new apps**.
 1. In the list of new apps, locate the app that you are onboarding, click on the **+** sign, and then click **Add**.
     1. Select whether the app is a **custom** or **standard** app.
-    1. Continue through the wizard, make sure that specified **User-defined domains** are correct for the app you are configuring.
+    1. Continue through the wizard, make sure that specified **User-defined domains** are correct for the app you're configuring.
 1. Verify the app appears in the **Conditional Access App Control apps** page.
 
 #### Request session control option appears
@@ -278,10 +279,10 @@ After adding an app, you may see the **Request session control** option. This oc
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog and select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
-1. Enter the user principal name or email for the users that will be onboarding the app, and then click **Save**.
-1. Go to the app that you are deploying. The page you see depends on whether the app is recognized. Do one of the following:
+1. Enter the user principal name or email for the users that will be onboarding the app, and then select **Save**.
+1. Go to the app that you're deploying. The page you see depends on whether the app is recognized. Do one of the following:
 
     | App status | Description | Steps |
     | --- | --- | --- |
@@ -294,7 +295,7 @@ After adding an app, you may see the **Request session control** option. This oc
 
 While troubleshooting onboarding apps, there are some additional things to consider.
 
-- **Apps in Conditional Access App Control do not align with Azure AD apps**
+- **Apps in Conditional Access App Control don't align with Azure AD apps**
 
     The app names in Azure AD and Defender for Cloud Apps might differ based on the ways the products identify apps. Defender for Cloud Apps identifies apps using the app's domains and adds them to the [cloud app catalog](risk-score.md#the-cloud-app-catalog), where we have over 31,000 apps. Within each app, there you can view or add to the subset of domains. In contrast, Azure AD identifies apps using service principals. For more information, see [app and service principal objects in Azure AD](/azure/active-directory/develop/app-objects-and-service-principals).
 
@@ -324,7 +325,7 @@ To route sessions to Defender for Cloud Apps, Azure AD Conditional Access polici
 
 **Recommended steps**
 
-- If you do not see the **Conditional Access App Control** option in your Conditional Access policy, make sure that you have a valid license for Azure AD Premium P1 as well as a valid Defender for Cloud Apps license.
+- If you don't see the **Conditional Access App Control** option in your Conditional Access policy, make sure that you have a valid license for Azure AD Premium P1 as well as a valid Defender for Cloud Apps license.
 
 #### Error message when creating a policy: You don't have any apps deployed with Conditional Access App Control
 
@@ -332,7 +333,8 @@ When creating an access or session policy, you may see the following error messa
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+
 1. If you see the message **No apps connected**, use the following guide to deploy apps:
 
     - [Deploy catalog apps that have session control enabled](proxy-deployment-aad.md)
@@ -351,29 +353,29 @@ After adding a custom app, in the **Conditional Access App Control apps** page, 
 1. Use the following self-onboarding guide to deploy any app to session control: [Deploy custom line-of-business apps, non-featured SaaS apps, and on-premises apps](proxy-deployment-any-app.md) hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 1. Create a session policy, select the **App** filter, make sure that your app is now listed in the dropdown list.
 
-#### Cannot choose **Inspection Method**: **Data Classification Service**
+#### Cannot choose Inspection Method: Data Classification Service
 
-In session policies, when using the **Control file download (with inspection)** session control type, you can use the **Data Classification Service** inspection method to scan your files in real time and detect sensitive content that matches any of the criteria you have configured. If the **Data Classification Service** inspection method is not available, use the following steps to investigate the issue.
+In session policies, when using the **Control file download (with inspection)** session control type, you can use the **Data Classification Service** inspection method to scan your files in real time and detect sensitive content that matches any of the criteria you have configured. If the **Data Classification Service** inspection method isn't available, use the following steps to investigate the issue.
 
 **Recommended steps**
 
-1. 1. Verify that the **Session control type** is set to **Control file download (with inspection)**.
+1. Verify that the **Session control type** is set to **Control file download (with inspection)**.
 
    > [!NOTE]
    > The **Data Classification Service** inspection method is only available for the **Control file download (with inspection)** option.
-   
+
 1. Determine whether the **Data Classification Service** feature is available in your [region](dcs-inspection.md).
-    1. If the feature is not available in your region, use the **Built-in DLP** inspection method.
+    1. If the feature isn't available in your region, use the **Built-in DLP** inspection method.
     1. If the feature is available in your region but you still can't see the **Data Classification Service** inspection method, open a [support ticket](support-and-ts.md).
 
 #### Cannot choose Action: Protect
 
-In session policies, when using the **Control file download (with inspection)** session control type, in addition to the **Monitor** and **Block** actions, you can specify the **Protect** action. This action enables you to permit file downloads with the option to encrypt or apply permissions to the file based on conditions, content inspection, or both. If the **Protect** action is not available, use the following steps to investigate the issue.
+In session policies, when using the **Control file download (with inspection)** session control type, in addition to the **Monitor** and **Block** actions, you can specify the **Protect** action. This action enables you to permit file downloads with the option to encrypt or apply permissions to the file based on conditions, content inspection, or both. If the **Protect** action isn't available, use the following steps to investigate the issue.
 
 **Recommended steps**
 
-1. If the **Protect** action is not available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Microsoft Information Protection integration](azip-integration.md).
-1. If the **Protect** action is available, but are not seeing the appropriate labels.
+1. If the **Protect** action isn't available or is greyed out, verify that you have the Azure Information Protection (AIP) Premium P1 license. For more information, see [Microsoft Information Protection integration](azip-integration.md).
+1. If the **Protect** action is available, but aren't seeing the appropriate labels.
     1. In Defender for Cloud Apps, in the menu bar, click the settings cog, select **Microsoft Information Protection**, and verify that the integration is enabled.
     1. For Office labels, in the AIP portal, make sure **Unified Labeling** is selected.
 
@@ -397,7 +399,7 @@ The Admin View toolbar provides tools for an admin to diagnose and troubleshoot 
 
 To enable the Admin View toolbar for specific admin users, you first must add admins to the app onboarding/maintenance list.
 
-1. In the menu bar of Defender for Cloud Apps, select the settings cog ![settings icon 4](media/settings-icon.png "settings icon 4") and select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
 1. Under **Conditional Access App Control**, select **App onboarding/maintenance**.
 
@@ -442,7 +444,7 @@ To record a session, follow these steps:
 1. Sign in to the application to begin the scenario simulation.
 1. When you finish the scenario simulation, select **Stop recording** in the Admin View toolbar.
 
-1.  ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
+    ![Select Stop recording.](media/troubleshooting-proxy/proxy-admin-toolbar-stop-recording.png)
 
 1. After you've finished recording, you can view the recorded sessions by selecting **Session recordings** in the Admin View toolbar. A list of recorded sessions from the previous 48 hours will appear.
 
@@ -472,7 +474,7 @@ When routing a user through the Defender for Cloud Apps, you can notify the user
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 1. Under **Conditional Access App Control**, select **User monitoring**. This page shows the user monitoring options available in Defender for Cloud Apps.
 
     ![Screenshot showing user monitoring options.](media/proxy-user-monitoring.png)
@@ -493,12 +495,12 @@ If an end user is receiving a general failure after logging into an app from a n
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Conditional Access App Control**.
-1. In the list of apps, on the row in which the app you are not able to access appears, choose the three dots at the end of the row, and then choose **Edit** app.
-    1. Validate that the SAML certificate that was uploaded is correct
-    1. Verify that valid SSO URLs have been provided in the app configuration
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. In the list of apps, on the row in which the app you can't access appears, choose the three dots at the end of the row, and then choose **Edit app**.
+    1. Validate that the SAML certificate that was uploaded is correct.
+    1. Verify that valid SSO URLs have been provided in the app configuration.
     1. Validate that the attributes and values in the custom app are reflected in identity provider settings
-        ![Screenshot showing gather identity providers SAML information page.](media/proxy-deploy-add-idp-ext-conf.png)
+        ![Screenshot showing gather identity providers SAML information page.](media/proxy-deploy-add-idp-ext-conf.png).
 1. If you still can't access the app, open a [support ticket](support-and-ts.md).
 
 ### Something Went Wrong page appears
@@ -507,7 +509,7 @@ Sometimes during a proxied session, the **Something Went Wrong** page may appear
 
 1. A user logs in after being idle for a while
 1. Refreshing the browser and the page load takes longer than expected
-1. The non-Microsoft IdP app is not configured correctly
+1. The non-Microsoft IdP app isn't configured correctly
 
 **Recommended steps**
 
@@ -518,7 +520,7 @@ Sometimes during a proxied session, the **Something Went Wrong** page may appear
 
 ### Clipboard actions or file controls are not being blocked
 
-The ability to block clipboard actions such as cut, copy, paste, and file controls such as download, upload, and print is required to prevent data exfiltration and infiltration scenarios. This ability enables companies to balance security and productivity for end users. If you are experiencing problems with these features, use the following steps to investigate the issue.
+The ability to block clipboard actions such as cut, copy, paste, and file controls such as download, upload, and print is required to prevent data exfiltration and infiltration scenarios. This ability enables companies to balance security and productivity for end users. If you're experiencing problems with these features, use the following steps to investigate the issue.
 
 > [!NOTE]
 > Cut, copy, and paste aren't blocked for data within the same Excel document. Only copying to external locations is blocked.
@@ -527,14 +529,14 @@ The ability to block clipboard actions such as cut, copy, paste, and file contro
 
 If the session is being proxied, use the following steps to verify the policy:
 
-1. In Defender for Cloud Apps, under **Investigate**, Select **Activity log**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Activity log**.
 1. Use the advanced filter, select **Applied action** and set its value equal to **Blocked**.
 1. Verify that there are blocked file activities.
-    1. If there is an activity, expand the activity drawer by clicking on the activity
+    1. If there's an activity, expand the activity drawer by clicking on the activity
     1. On the activity drawer's **General** tab, click the matched policies link, to verify the policy you enforced is present.
-    1. If you do not see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
+    1. If you don't see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
-        1. To change the default behavior, in Defender for Cloud Apps, in the menu bar, click the settings cog and select **Settings**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
+        1. To change the default behavior, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
         1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
@@ -544,36 +546,39 @@ As an end user, downloading sensitive data on an unmanaged device might be neces
 
 **Recommended steps**
 
-1. In Defender for Cloud Apps, under **Investigate**, Select **Activity log**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Activity log**.
 1. Use the advanced filter, select **Applied action** and set its value equal to **Protected**.
 1. Verify that there are blocked file activities.
-    1. If there is an activity, expand the activity drawer by clicking on the activity
+    1. If there's an activity, expand the activity drawer by clicking on the activity
     1. On the activity drawer's **General** tab, click the matched policies link, to verify the policy you enforced is present.
-    1. If you do not see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
+    1. If you don't see your policy, see [Creating access and session policies](#creating-access-and-session-policies).
     1. If you see **Access blocked/allowed due to Default Behavior**, this indicates that the system was down and the default behavior was applied.
-        1. To change the default behavior, in Defender for Cloud Apps, in the menu bar, click the settings cog, and then select **Settings**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
+        1. To change the default behavior, in the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Then under **Conditional Access App Control**, select **Default Behavior**, and set the default behavior to **Allow** or **Block** access.
         1. Go to `https://status.cloudappsecurity.com/` and monitor notifications about system downtime.
-    1. If you are protecting the file with an AIP label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
+    1. If you're protecting the file with an AIP label or custom permissions, in the **Activity description**, make sure the file extension is one of the following supported file types:
         - Word: docm, docx, dotm, dotx
         - Excel: xlam, xlsm, xlsx, xltx
         - PowerPoint: potm, potx, ppsx, ppsm, pptm, pptx
         - PDF* if Unified Labeling is enabled
-    - If the file type is not supported, in the session policy, you can select **Block download of any file that in unsupported by native protection or where native protection is unsuccessful**.
+    - If the file type isn't supported, in the session policy, you can select **Block download of any file that in unsupported by native protection or where native protection is unsuccessful**.
 1. If you still not able to see blocked activity, open a [support ticket](support-and-ts.md).
 
 ### Navigating to a particular URL of a suffixed app and landing on a generic page
 
-All proxies that suffix URLs are susceptible to context loss, an issue where navigating to a link loses the full path of the link and typically lands on the home page of the app. Defender for Cloud Apps is uniquely positioned to address this limitation and solve context loss by partnering with Microsoft and non-Microsoft vendors.
+In some scenarios, navigating to a link may result in the user landing on the app's home page rather than the full path of the link.
 
-If adjusting the global policy does not fix the issue, then you can workaround context loss issues as follows:
+Here's [a list of apps](/defender-cloud-apps/proxy-intro-aad#known-limitations) known to suffer from context loss.
 
-1. Navigate to a URL where context loss occurs.
-1. Make a note of the suffixed URL domain including the suffix added by Defender for Cloud Apps. For example: `https://www.yammer.com.mcas.ms`.
-1. Copy the path from the original URL. For example, if the original particular URL was `https://www.yammer.com/organization/threads/threadnumber`, copy `/organization/threads/threadnumber`.
-1. Append the copied path to the suffixed domain. For example: `https://www.yammer.com.mcas.ms/organization/threads/threadnumber`.
-1. Navigate to the new suffixed URL.
+**Recommended steps**
 
-For apps experiencing context loss, please submit a support ticket. We will work with each app provider directly to resolve those issues.
+This issue can be resolved by appending  `.mcas.ms` to the original URL.
+
+For example, if the original URL is:
+
+`https://www.github.com/organization/threads/threadnumber`, change it to
+`https://www.github.com.mcas.ms/organization/threads/threadnumber`
+
+For apps experiencing context loss, open a [support ticket](support-and-ts.md).
 
 <a name="app-additional-considerations"></a>
 
@@ -581,12 +586,12 @@ For apps experiencing context loss, please submit a support ticket. We will work
 
 Occasionally when previewing or printing PDF files, apps initiate a download of the file. This causes Defender for Cloud Apps to intervene to ensure the download is blocked and that data isn't leaked from your environment. For example, if you created a session policy to block downloads for Outlook Web Access (OWA), then previewing or printing PDF files may be blocked, with a message like this:
 
-![Blocked download](media/before-powershell.png)
+![Blocked download.](media/before-powershell.png)
 
 To allow the preview, an Exchange administrator should perform the following steps:
 
 1. Download the [Exchange Online PowerShell Module](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.4).
-1. Connect to the module using the commands described in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa-and-modern-authentication)
+1. Connect to the module using the commands described in [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa-and-modern-authentication).
 1. After you've connected to the Exchange Online PowerShell, use the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet to update the parameters in the policy:
 
     ```powershell
@@ -598,11 +603,11 @@ To allow the preview, an Exchange administrator should perform the following ste
 
 1. After these parameters have been set, run a test on OWA with a PDF file and a session policy configured to block downloads. The **Download** option should be removed from the dropdown and you can preview the file.
 
-    ![PDF preview not blocked](media/after-powershell.png)
+    ![PDF preview not blocked.](media/after-powershell.png)
 
 ### Similar site warning appears
 
-Malicious actors can craft URLs that are similar to other sites' URLs in order to impersonate and trick users to believe they're browsing to another site. Some browsers try to detect this behavior and warn users before accessing the URL or block access. In some rare cases, users under session control will receive a message from the browser indicating suspicious site access. The reason for this is the browser treats the suffixed domain (for example.:  `.mcas.ms`) as suspicious.
+Malicious actors can craft URLs that are similar to other sites' URLs in order to impersonate and trick users to believe they're browsing to another site. Some browsers try to detect this behavior and warn users before accessing the URL or block access. In some rare cases, users under session control will receive a message from the browser indicating suspicious site access. The reason for this is the browser treats the suffixed domain (for example:  `.mcas.ms`) as suspicious.
 
 In Microsoft Edge:
 
@@ -624,8 +629,6 @@ While troubleshooting apps, there are some additional things to consider.
 
 - **Double login**
 
-    A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If you are confident the app does not use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
+    A double login occurs due to the presumed use of a nonce, a cryptographic token used by apps to prevent replay attacks. By default, Defender for Cloud Apps assumes an app uses a nonce. If you're confident the app doesn't use a nonce, you can disable this by editing the app in Defender for Cloud Apps and the issue will be resolved. For steps to disable nonce, see [Slow login](#slow-login).
 
     If the app uses a nonce and this feature cannot be disabled, the second login may be transparent to users, or they may be prompted to log in again.
-
-

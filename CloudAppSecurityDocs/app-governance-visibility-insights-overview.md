@@ -1,6 +1,6 @@
 ---
 title: Learn about visibility and insights
-ms.date: 01/03/2023
+ms.date: 01/29/2023
 ms.topic: conceptual
 description: Learn about visibility and insights.
 ---
@@ -34,15 +34,15 @@ With app governance, you can see:
   - High-usage apps.
   - Top consented users whose data a specific app can access.
   - Priority accounts who have data that a specific app can access.
+  - Unused apps
+  - Apps with unused credentials
+  - Apps with expired credentials
   - OAuth applications that have accessed sensitive or regular content on SharePoint, OneDrive, Exchange Online, or Teams.
 
 - A cumulative view of users accessing apps.
 - Alerts insights.
 - Policy list insights.
 
-<!--
-- Policies created in Defender for Cloud Apps in the app governance portal.
--->
 
 You can also:
 
@@ -55,10 +55,6 @@ To provide insights into how OAuth apps use Microsoft 365 data, including data w
 
 To get detailed information about app activity on Microsoft 365, search the Microsoft Purview audit log.
 
-
 ## Next step
 
 [Get started with application insights.](app-governance-visibility-insights-get-started.md)
-
-
-

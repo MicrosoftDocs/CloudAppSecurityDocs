@@ -1,7 +1,7 @@
 ---
-title: Connect Dropbox to Defender for Cloud Apps
+title: Connect Dropbox
 description: This article provides information about how to connect your Dropbox app to Defender for Cloud Apps using the API connector  for visibility and control over use.
-ms.date: 01/03/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Connect Dropbox to Microsoft Defender for Cloud Apps
@@ -14,17 +14,17 @@ Because Dropbox enables access to files from shared links without signing in, De
 
 ## How to connect Dropbox to Defender for Cloud Apps
 
-1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select the plus button followed by **Dropbox**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **Dropbox**.
 
     ![connect dropbox.](media/connect-dropbox.png "connect dropbox")
 
-1. In the pop-up, enter the admin account email address.
+1. In the next window, give the connector a name and select **Next**.
 
-1. Select **Generate link**.
+1. In the **Enter details** window, enter the admin account email address.
 
-1. Select **Follow this link**.
+1. In the **Follow the link** window, select **Connect Dropbox**.
 
     The Dropbox sign in page opens. Enter your credentials to allow Defender for Cloud Apps access to your team's Dropbox instance.
 
@@ -32,11 +32,7 @@ Because Dropbox enables access to files from shared links without signing in, De
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that Dropbox was successfully connected.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After you receive a success notice, select **Close**.
-
-After connecting Dropbox, you'll receive events for 60 days prior to connection.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 > [!NOTE]
 > Any Dropbox events for adding a file are displayed in Defender for Cloud Apps as Upload file to align to all other apps connected to Defender for Cloud Apps.

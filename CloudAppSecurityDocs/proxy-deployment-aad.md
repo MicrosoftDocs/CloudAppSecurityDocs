@@ -1,7 +1,7 @@
 ---
 title: Deploy Conditional Access App Control for catalog apps with Azure AD
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for catalog apps with Azure AD.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
@@ -15,8 +15,8 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
 
 - Your organization must have the following licenses to use Conditional Access App Control:
 
-   - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/license-users-groups) or higher
-   - Microsoft Defender for Cloud Apps
+  - [Azure Active Directory (Azure AD) Premium P1](/azure/active-directory/fundamentals/license-users-groups) or higher
+  - Microsoft Defender for Cloud Apps
 - Apps must be configured with single sign-on
 - Apps must use one of the following authentication protocols:
 
@@ -24,15 +24,12 @@ Access and session controls in Microsoft Defender for Cloud Apps work with appli
    |---|---|
    |Azure AD|SAML 2.0 or OpenID Connect|
    |Other|SAML 2.0|
-   
 
 ## To deploy catalog apps
 
 Follow the steps below to configure catalog apps to be controlled by Microsoft Defender for Cloud Apps Conditional Access App Control.
 
 ### Configure integration with Azure AD
-
-
 
 > [!NOTE]
 > When configuring an application with SSO in Azure AD, or other identity providers, one field that may be listed as optional is the sign-on URL setting. Note that this field may be required for Conditional Access App Control to work.
@@ -60,24 +57,24 @@ Defender for Cloud Apps will sync your policy details to its servers for each ne
 
 The preceding instructions helped you create a built-in Defender for Cloud Apps policy for catalog apps directly in Azure AD. In this step, verify that the access and session controls are configured for these apps.
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select the settings cog ![settings icon.](media/settings-icon.png "settings icon"), and then select **Conditional Access App Control**.
-1. In the Conditional Access App Control apps table, look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Connected apps**, select **Conditional Access App Control apps**. Look at the **Available controls** column and verify that both **Access control** or **Azure AD Conditional Access**, and **Session control** appear for your apps.
 
    > [!NOTE]
    > If the app isn’t enabled for session control, you can add it by selecting **Onboard with session control** and checking **Use this app with session controls**.
-   > ![Onboard with session control.](media/proxy-deployment-aad/onboardwithsessioncontrol.png)
+   > ![Onboard with session control.](media/proxy-deployment-aad/onboard-with-session-control.png)
 
 Once you're ready to enable the app for use in your organization's production environment, do the following steps.
 
-1. In Defender for Cloud Apps, select the settings cog ![settings icon.](media/settings-icon.png), and then select **Conditional Access App Control**.
-1. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Connected apps**, select **Conditional Access App Control apps**. In the list of apps, on the row in which the app you're deploying appears, choose the three dots at the end of the row, and then choose **Edit app**.
 1. Select **Use the app with session controls** and then select **Save**.
 
-   ![Edit this app dialogue.](media/proxy-deployment-aad/edit-app-checked.png) 
+   ![Edit this app dialogue.](media/proxy-deployment-aad/edit-app-checked.png)
 
 1. First sign out of any existing sessions. Then, try to sign in to each app that was successfully deployed. Sign in using a user that matches the policy configured in Azure AD, or for a SAML app configured with your identity provider.
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under **Investigate**, select **Activity log**, and make sure the login activities are captured for each app.
-1. You can filter by clicking on **Advanced**, and then filtering using **Source equals Access control**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Activity log**, and make sure the login activities are captured for each app.
+1. You can filter by selecting **Advanced**, and then filtering using **Source equals Access control**.
 
     ![Filter using Azure AD conditional access.](media/sso-logon.png)
 

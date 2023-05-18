@@ -1,7 +1,7 @@
 ---
-title: Defender for Cloud Apps Data Enrichment API
+title: Data Enrichment API
 description: This article provides information about using the Data Enrichment API.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Data Enrichment API

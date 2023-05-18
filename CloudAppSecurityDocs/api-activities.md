@@ -1,7 +1,7 @@
 ---
-title: Defender for Cloud Apps Activities API
+title: Activities API
 description: This article provides information about using the Activities API.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 
@@ -60,4 +60,3 @@ The following table describes the supported filters:
 | user.domain | string | eq, neq, isset, isnotset | Filter activities by the performing user domain |
 
 [!INCLUDE [Open support ticket](includes/support.md)]
-

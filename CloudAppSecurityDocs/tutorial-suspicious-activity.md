@@ -1,10 +1,11 @@
 ---
-title: Detect suspicious user activity with behavioral analytics (UEBA) tutorial
+title: Detect suspicious user activity with UEBA 
 description: This tutorial describes the process for tuning user activity detections in Microsoft Defender for Cloud Apps.
-ms.date: 01/09/2023
+ms.date: 02/22/2023
 ms.topic: tutorial
 ---
-# Tutorial: Detect suspicious user activity with UEBA
+
+# Tutorial: Detect suspicious user activity with behavioral analytics (UEBA)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -61,7 +62,7 @@ Several built-in anomaly detection policies are available in Defender for Cloud 
 - **Impossible travel**  
 Activities from the same user in different locations within a period that is shorter than the expected travel time between the two locations.
 - **Activity from infrequent country**  
-Activity from a location that was not recently or never visited by the user or by any user in the organization.
+   Activity from a location that was not recently or never visited by the user.
 - **Malware detection**  
 Scans files in your cloud apps and runs suspicious files through Microsoft's threat intelligence engine to determine whether they are associated with known malware.
 - **Ransomware activity**  
@@ -76,6 +77,9 @@ Detects multiple file download activities in a single session with respect to th
 Detects multiple administrative activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
 
 For a full list of detections and what they do, see [Anomaly detection policies](anomaly-detection-policy.md#anomaly-detection-policies).
+
+> [!NOTE]
+> While some of the anomaly detections are primarily focused on detecting problematic security scenarios, others can assist in identifying and investigating anomalous user behavior that may not necessarily indicate a compromise. For such detections we created another data type called "behaviors" which is available in the Microsoft 365 Defender advanced hunting experience. For more information see [Behaviors](behaviors.md).
 
 Once you are familiar with the policies, you should consider how you want to fine-tune them for your organization's specific requirements to better target activities that you may want to investigate further.
 
@@ -157,10 +161,11 @@ Create the automation playbooks you require and set it as the policy's alert to 
 
 Great, you've set up your policies and start receiving suspicious activity alerts. What should you do about them? For a start, you should take steps to investigate the activity. For example, you may want to look into activities that indicate that a [user has been compromised](tutorial-ueba.md#identify).
 
-To optimize your protection, you should consider setting up automatic remediation actions to minimize the risk to your organization. Our policies allow you to apply [governance actions](control.md) in conjunction to the alerts so that the risk to your organization is reduced even before you start investigating. Available actions are determined by the policy type including actions such as suspending a user or blocking access to the requested resource.
+To optimize your protection, you should consider setting up automatic remediation actions to minimize the risk to your organization. Our policies allow you to apply [governance actions](governance-actions.md) in conjunction to the alerts so that the risk to your organization is reduced even before you start investigating. Available actions are determined by the policy type including actions such as suspending a user or blocking access to the requested resource.
 
 [!INCLUDE [Open support ticket](includes/support.md)]
 
 ## Learn more
 
 - Try our interactive guide: [Detect threats and manage alerts with Microsoft Defender for Cloud Apps](https://mslearn.cloudguides.com/guides/Detect%20threats%20and%20manage%20alerts%20with%20Microsoft%20Cloud%20App%20Security)
+

@@ -1,10 +1,10 @@
 ---
-title: Defender for Cloud Apps data security and privacy practices
+title: Data security and privacy practices
 description: This article describes the Defender for Cloud Apps compliance offering, trust center, privacy, and data security.
-ms.date: 06/14/2022
+ms.date: 03/13/2023
 ms.topic: overview
 ---
-# What are Microsoft Defender for Cloud Apps data security and privacy practices?
+# Data security and privacy practices for Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -45,7 +45,7 @@ For more information, go to [Microsoft Compliance Offerings](/compliance/regulat
 ### You're the owner of your data
 
 - In Defender for Cloud Apps, your administrators can view the identifiable personal data stored in the service from the portal using the Search bar.
-- Admins can search for a specific user's metadata or user's activity. Clicking on an entity opens the [**Users and accounts**](accounts.md). The **Users and accounts** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
+- Admins can search for a specific user's metadata or user's activity. Selecting an entity opens the [**Users**](accounts.md) page. The **Users** page provides you with comprehensive details about the entity that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
 - You own your data and can cancel subscriptions and request deletion of your data at any time. If you don't renew your subscription, your data will be deleted within the timeline specified in the [Online Services Terms](https://www.microsoft.com/licensing/docs?DocumentTypeId=31&redirected=true&Mode=3).
 
@@ -101,6 +101,15 @@ You can learn more about Microsoft data practices by reading the [Online Service
 
 [Learn more about transparency](https://www.microsoft.com/trust-center/privacy/data-management)
 
+## Data sharing
+
+Defender for Identity shares data, including customer data, among the following Microsoft products also licensed by the customer:
+
+- Microsoft Defender for Cloud
+- Microsoft Sentinel     
+- Microsoft Defender for Endpoint
+
+
 ### Deleting personal data
 
 After a user's account  is deleted from a connected cloud application, Defender for Cloud Apps will automatically delete the copy of the data within two years.
@@ -127,6 +136,7 @@ The following table show what data is surfaced for each product integration:
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Defender for Cloud Apps](flow-integration.md) |
 | Microsoft Threat Experts | Alerts | Automatically streamed to Microsoft Threat Experts |
 | Azure Active Directory Identity Protection | Alerts | Automatically streamed to Azure Active Directory Identity Protection | 
+| Microsoft Azure AD Identity Protection | Subset of alerts for identity risk model | Enabled automatically on Azure AD Identity Protection upon onboarding |
 
 #### Third-party products
 

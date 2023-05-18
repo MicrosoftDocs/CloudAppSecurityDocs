@@ -50,8 +50,6 @@ items:
     href: tutorial-proxy.md
   - name: Block downloads of sensitive information
     href: use-case-proxy-block-session-aad.md
-  - name: Manage cloud platform security
-    href: tutorial-cloud-platform-security.md
   - name: Protecting your files with admin quarantine
     href: use-case-admin-quarantine.md
   - name: Apply Microsoft Information Protection labels automatically
@@ -62,8 +60,6 @@ items:
     href: tutorial-step-up-authentication.md
 - name: Concepts
   items:
-  - name: Working with the dashboard
-    href: daily-activities-to-protect-your-cloud-environment.md
   - name: Working with the app page
     href: working-with-app-page.md
   - name: Working with App risk scores
@@ -108,6 +104,8 @@ items:
       href: protect-servicenow.md
     - name: Protect Slack
       href: protect-slack.md
+    - name: Protect Workplace (Preview)
+      href: protect-workplace.md
     - name: Protect Smartsheet
       href: protect-smartsheet.md
     - name: Protect Webex
@@ -120,6 +118,8 @@ items:
     items:
     - name: Security baseline
       href: /security/benchmark/azure/baselines/cloud-app-security-security-baseline?toc=/cloud-app-security/toc.json
+    - name: Deploying and monitoring for Zero Trust
+      href: zero-trust.md
 - name: How-to guides
   items:
   - name: Basic set up
@@ -193,11 +193,13 @@ items:
         - name: Investigate threat detection alerts
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
-          href: app-governance-detect-remediate-detect-threats.md
+          href: /defender-cloud-apps/app-governance-manage-alerts
     - name: Secure apps and other assets
       items:
         - name: Secure apps accessing non-Graph APIs
           href: app-governance-secure-apps-access-non-graph-api.md
+        - name: Secure apps with app hygiene features
+          href: app-governance-secure-apps-app-hygiene-features.md
   - name: Cloud Discovery
     items:
     - name: Set up
@@ -244,12 +246,14 @@ items:
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Connect Atlassian
       href: connect-atlassian.md
-    - name: Connect Azure
-      href: ./connect-azure.md
     - name: Connect AWS
       href: ./connect-aws.md
+    - name: Connect Azure
+      href: ./connect-azure.md
     - name: Connect Box
       href: ./connect-box.md
+    - name: Connect Citrix ShareFile
+      href: ./connect-citrix-sharefile.md
     - name: Connect DocuSign
       href: ./connect-docusign.md
     - name: Connect Dropbox
@@ -258,10 +262,10 @@ items:
       href: ./connect-egnyte.md
     - name: Connect GitHub
       href: ./connect-github-ec.md
+    - name: Connect Google Cloud Platform
+      href: ./connect-google-gcp.md
     - name: Connect Google Workspace
       href: ./connect-google-workspace.md
-    - name: Connect GCP
-      href: ./connect-google-gcp.md
     - name: Connect NetDocuments
       href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
     - name: Connect Office 365
@@ -282,8 +286,12 @@ items:
       href: ./connect-webex.md
     - name: Connect Workday
       href: ./connect-workday.md
+    - name: Connect Workplace (Preview)
+      href: connect-workplace.md
     - name: Connect Zendesk
       href: ./connect-zendesk.md
+    - name: Connect Zoom
+      href: connect-zoom.md
   - name: Conditional Access App Control
     items:
     - name: Protect apps with Conditional Access App Control
@@ -305,6 +313,8 @@ items:
   - name: Investigation
     href: investigate.md
     items:
+    - name: Behaviors
+      href: behaviors.md
     - name: Activities
       href: activity-filters.md
       items:
@@ -318,27 +328,11 @@ items:
       href: accounts.md
     - name: Manage OAuth apps
       href: manage-app-permissions.md
-    - name: Security configuration
-      items:
-      - name: Overview
-        href: security-config.md
-      - name: Security configuration for SaaS applications
-        href: security-saas.md
-      - name: Security configuration for Azure
-        href: security-config-azure.md
-      - name: Security configuration for AWS
-        href: security-config-aws.md
-      - name: Security configuration for GCP
-        href: security-config-gcp.md
-    - name: Monitor alerts
-      href: monitor-alerts.md
-      items:
-      - name: Manage alerts
-        href: managing-alerts.md
+    - name: Security configuration for SaaS applications
+      href: security-saas.md
     - name: Investigate anomaly detection alerts
       href: investigate-anomaly-alerts.md
   - name: Control
-    href: control.md
     items:
     - name: Control cloud apps with policies
       href: control-cloud-apps-with-policies.md
@@ -384,10 +378,6 @@ items:
       href: governance-discovery.md
     - name: Govern apps discovered by Microsoft Defender for Endpoint
       href: mde-govern.md
-    - name: Microsoft Defender for Identity integration
-      href: mdi-integration.md
-    - name: Azure AD Identity Protection integration
-      href: aadip-integration.md
     - name: Microsoft Information Protection integration
       href: azip-integration.md
     - name: Microsoft Sentinel integration
@@ -530,6 +520,8 @@ items:
       href: troubleshooting-proxy-url.md
 - name: Resources
   items:
+  - name: Defender for Cloud Apps Operational Guide
+    href: https://aka.ms/mdaoperationalguide
   - name: Watch our webinars
     href: webinars.md
   - name: Read our e-books
@@ -540,10 +532,291 @@ items:
     href: https://aka.ms/M365EnterprisePlans
   - name: Support and troubleshooting
     href: support-and-ts.md
-  - name: Defender for Cloud Apps portal
-    href: https://portal.cloudappsecurity.com
+  - name: Microsoft 365 Defender portal
+    href: https://security.microsoft.com
   - name: How to buy Defender for Cloud Apps
     href: https://www.microsoft.com/security/business/cloud-apps-defender
+- name: Classic Defender for Cloud Apps portal
+  items:
+  - name: Overview
+    items:
+    - name: Defender for Cloud Apps data security and privacy
+      href: classic-cas-compliance-trust.md
+    - name: Preview features
+      href: classic-preview-features.md
+  - name: Quickstarts
+    expanded: true
+    items:
+    - name: Getting started
+      href: classic-get-started.md
+  - name: Tutorials
+    items:
+    - name: Discover and manage shadow IT
+      href: classic-tutorial-shadow-it.md
+    - name: Investigate risky users
+      href: classic-tutorial-ueba.md
+    - name: Investigate risky OAuth apps
+      href: classic-investigate-risky-oauth.md
+    - name: Discover and protect sensitive information
+      href: classic-tutorial-dlp.md
+    - name: Block downloads of sensitive information
+      href: classic-use-case-proxy-block-session-aad.md
+    - name: Manage cloud platform security
+      href: classic-tutorial-cloud-platform-security.md
+    - name: Protecting your files with admin quarantine
+      href: classic-use-case-admin-quarantine.md
+    - name: Apply Microsoft Information Protection labels automatically
+      href: classic-use-case-information-protection.md
+    - name: Extend governance to endpoint remediation
+      href: classic-tutorial-flow.md
+    - name: Require step-up authentication upon risky action
+      href: classic-tutorial-step-up-authentication.md
+  - name: Concepts
+    items:
+    - name: Working with the dashboard
+      href: classic-daily-activities-to-protect-your-cloud-environment.md
+    - name: Working with the app page
+      href: classic-working-with-app-page.md
+    - name: Working with App risk scores
+      href: classic-risk-score.md
+    - name: Working with discovered apps
+      href: classic-discovered-apps.md
+  - name: How-to guides
+    items:
+    - name: Basic set up
+      href: classic-general-setup.md
+      items:
+      - name: Network requirements
+        href: classic-network-requirements.md
+      - name: Manage admins
+        href: classic-manage-admins.md
+        items:
+        - name: Admin settings
+          href: classic-admin-settings.md
+      - name: Mail settings
+        href: classic-mail-settings.md
+      - name: User groups
+        href: classic-user-groups.md
+      - name: Scoped deployment
+        href: classic-scoped-deployment.md
+      - name: Activity privacy
+        href: classic-activity-privacy.md
+      - name: IP tags and ranges
+        href: classic-ip-tags.md
+    - name: Cloud Discovery
+      items:
+      - name: Set up
+        items:
+        - name: Integrate with Microsoft Defender for Endpoint
+          href: classic-mde-integration.md
+        - name: Integrate with Zscaler
+          href: classic-zscaler-integration.md
+        - name: Integrate with iboss
+          href: classic-iboss-integration.md
+        - name: Integrate with Corrata
+          href: classic-corrata-integration.md
+        - name: Create snapshot Cloud Discovery reports
+          href: classic-create-snapshot-cloud-discovery-reports.md
+        - name: Docker on Windows on-premises
+          href: classic-discovery-docker-windows.md
+        - name: Docker on Linux on-premises
+          href: classic-discovery-docker-ubuntu.md
+        - name: Docker on Linux in Azure
+          href: classic-discovery-docker-ubuntu-azure.md
+        - name: Advanced log collector management
+          href: classic-log-collector-advanced-management.md
+        - name: Use the custom log parser
+          href: classic-custom-log-parser.md
+      - name: Cloud Discovery enrichment
+        href: classic-cloud-discovery-aad-enrichment.md
+      - name: Anonymize Cloud Discovery data
+        href: classic-cloud-discovery-anonymizer.md
+      - name: Add custom apps to Cloud Discovery
+        href: classic-cloud-discovery-custom-apps.md
+      - name: Discovered app filters and queries
+        href: classic-discovered-app-queries.md
+    - name: Connect apps
+      items:
+      - name: Connect apps to get visibility and protection
+        href: classic-enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+      - name: Connect Atlassian
+        href: classic-connect-atlassian.md
+      - name: Connect AWS
+        href: classic-connect-aws.md
+      - name: Connect Box
+        href: classic-connect-box.md
+      - name: Connect DocuSign
+        href: classic-connect-docusign.md
+      - name: Connect Dropbox
+        href: classic-connect-dropbox.md
+      - name: Connect Egnyte
+        href: classic-connect-egnyte.md
+      - name: Connect GitHub
+        href: classic-connect-github-ec.md
+      - name: Connect Google Cloud Platform
+        href: classic-connect-google-gcp.md
+      - name: Connect Google Workspace
+        href: classic-connect-google-workspace.md
+      - name: Connect NetDocuments
+        href: classic-connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
+      - name: Connect Office 365
+        href: classic-connect-office-365.md
+      - name: Connect Okta
+        href: classic-connect-okta.md
+      - name: Connect OneLogin 
+        href: classic-connect-onelogin.md
+      - name: Connect Salesforce
+        href: classic-connect-salesforce.md
+      - name: Connect ServiceNow
+        href: classic-connect-servicenow.md
+      - name: Connect Slack
+        href: classic-connect-slack.md
+      - name: Connect Smartsheet
+        href: classic-connect-smartsheet.md
+      - name: Connect Webex
+        href: classic-connect-webex.md
+      - name: Connect Workday
+        href: classic-connect-workday.md
+      - name: Connect Workplace
+        href: classic-connect-workplace.md
+      - name: Connect Zendesk
+        href: classic-connect-zendesk.md
+      - name: Connect Zoom
+        href: classic-connect-zoom.md
+    - name: Conditional Access App Control
+      items:
+      - name: Protect apps with Conditional Access App Control
+        href: classic-proxy-intro-aad.md
+      - name: Deploy for catalog apps with Azure Active Directory
+        href: classic-proxy-deployment-aad.md
+      - name: Deploy for catalog apps with non-Microsoft IdP
+        href: classic-proxy-deployment-featured-idp.md
+      - name: Deploy for custom apps with Azure Active Directory
+        href: classic-proxy-deployment-any-app.md
+      - name: Deploy for custom apps with non-Microsoft IdP
+        href: classic-proxy-deployment-any-app-idp.md
+      - name: Configuring your PingOne IdP
+        href: classic-proxy-idp-pingone.md
+      - name: Configuring your AD FS IdP
+        href: classic-proxy-idp-adfs.md
+      - name: Configuring your Okta IdP
+        href: classic-proxy-idp-okta.md
+    - name: Investigation
+      href: classic-investigate.md
+      items:
+      - name: Activities
+        href: classic-activity-filters.md
+        items:
+        - name: Activity filters and queries
+          href: classic-activity-filters-queries.md
+      - name: Investigate apps discovered by Microsoft Defender for Endpoint
+        href: classic-mde-investigation.md
+      - name: Files
+        href: classic-file-filters.md
+      - name: Accounts
+        href: classic-accounts.md
+      - name: Manage OAuth apps
+        href: classic-manage-app-permissions.md
+      - name: Security configuration 
+        items:
+        - name: Overview
+          href: classic-security-config.md
+        - name: Security configuration for SaaS applications
+          href: classic-security-saas.md
+        - name: Security configuration for Azure
+          href: classic-security-config-azure.md
+        - name: Security configuration for AWS
+          href: classic-security-config-aws.md
+        - name: Security configuration for GCP
+          href: classic-security-config-gcp.md
+      - name: Monitor alerts
+        href: classic-monitor-alerts.md
+        items:
+        - name: Manage alerts
+          href: classic-managing-alerts.md
+    - name: Control
+      href: classic-control.md
+      items:
+      - name: Control cloud apps with policies
+        href: classic-control-cloud-apps-with-policies.md
+        items:
+        - name: Threat detection
+          items:
+          - name: Activity policies
+            href: classic-user-activity-policies.md
+          - name: Anomaly detection policies
+            href: classic-anomaly-detection-policy.md
+          - name: OAuth policies
+            href: classic-app-permission-policy.md
+        - name: Information protection
+          items:
+          - name: File policies
+            href: classic-data-protection-policies.md
+          - name: Content inspection
+            href: classic-content-inspection.md
+            items:
+            - name: Data Classification Service integration
+              href: classic-dcs-inspection.md
+        - name: Conditional Access policies
+          items:
+          - name: Access policies
+            href: classic-access-policy-aad.md
+          - name: Session policies
+            href: classic-session-policy-aad.md
+        - name: Shadow IT policies
+          items:
+          - name: Cloud Discovery policy
+            href: classic-cloud-discovery-policies.md
+          - name: Cloud Discovery anomaly detection policy
+            href: classic-cloud-discovery-anomaly-detection-policy.md
+        - name: Policy template reference
+          href: classic-policy-template-reference.md
+      - name: Govern connected apps
+        href: classic-governance-actions.md
+      - name: Govern discovered apps
+        href: classic-governance-discovery.md
+      - name: Govern apps discovered by Microsoft Defender for Endpoint
+        href: classic-mde-govern.md
+      - name: Microsoft Defender for Identity integration
+        href: classic-mdi-integration.md
+      - name: Azure AD Identity Protection integration
+        href: classic-aadip-integration.md
+      - name: Microsoft Information Protection integration
+        href: classic-azip-integration.md
+      - name: Microsoft Sentinel integration
+        href: classic-siem-sentinel.md
+      - name: Integrate with external solutions
+        items:
+        - name: Generic SIEM integration
+          href: classic-siem.md
+        - name: External DLP integration
+          href: classic-icap-stunnel.md
+      - name: Automate processes using Microsoft Power Automate
+        href: classic-flow-integration.md
+  - name: Reference
+    items:
+    - name: Common policies
+      items:
+      - name: Cloud Discovery policies
+        href: classic-policies-cloud-discovery.md
+      - name: Threat protection policies
+        href: classic-policies-threat-protection.md
+      - name: Information protection policies
+        href: classic-policies-information-protection.md
+    - name: REST API
+      items:
+      - name: Introduction
+        href: classic-api-introduction.md
+      - name: Authentication
+        items:
+        - name: Legacy method
+          href: classic-api-tokens-legacy.md
+    - name: Troubleshooting
+      items:
+      - name: Troubleshooting access and session controls
+        href: classic-troubleshooting-proxy.md
+      - name: Troubleshooting SIEM integration
+        href: classic-troubleshooting-siem.md
 - name: Microsoft 365 Defender Docs
   items:
   - name: Microsoft 365 Defender

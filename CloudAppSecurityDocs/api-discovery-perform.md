@@ -1,7 +1,7 @@
 ---
 title: Perform file upload - Cloud Discovery API
 description: This article describes the perform file upload request in the Defender for Cloud Apps Cloud Discovery API.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Perform file upload - Cloud Discovery API
@@ -24,6 +24,7 @@ PUT https://<initiate_file_upload_response_url>
 > [!NOTE]
 >
 > For Azure:
+>
 > - If your file is under 64 MB, add the header "x-ms-blob-type: BlockBlob" to your request.
 > - If your file size is greater than 64MB, upload it in chunks. the easiest way to do this is using the [Azure SDK](https://azure.microsoft.com/downloads/).
 

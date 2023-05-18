@@ -1,7 +1,7 @@
 ---
 title: Managing internal tokens (legacy)
 description: This article provides information about the internal legacy method of generating and managing API tokens for Defender for Cloud Apps.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Managing internal tokens (legacy)
@@ -14,11 +14,11 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 ## Generate a token
 
-1. On the **Settings** menu, select **Security extensions** and then **API tokens**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **API tokens**.
 
-1. Select the plus icon, **Generate new token** and provide a name to identify the token in the future, and select **Next**.
+1. Select the **Add token** and provide a name to identify the token in the future, and select **Generate**.
 
-    ![Defender for Cloud Apps generates API token](media/api-token-gen.png)
+    ![Defender for Cloud Apps generates API token.](media/api-token-gen.png)
 
 1. Copy the token value and save it somewhere for recovery - if you lose it you need to regenerate the token. The token has the privileges of the user who issued it. For example, a security reader can't issue a token that can alter data.
 
@@ -30,7 +30,7 @@ The API tokens tab enables you to help you manage all the API tokens of your ten
 
 1. After you generate a new token, you'll be provided with a new URL to use to access the Defender for Cloud Apps portal.
 
-    ![Defender for Cloud Apps API token](media/generate-api-token.png)
+    ![Defender for Cloud Apps API token.](media/generate-api-token.png)
 
     The generic portal URL continues to work but is considerably slower than the custom URL provided with your token. If you forget the URL at any time, you can view it by going to the **?** icon in the menu and selecting **About**.
 

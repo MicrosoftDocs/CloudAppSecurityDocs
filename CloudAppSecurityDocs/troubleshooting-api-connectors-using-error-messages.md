@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot App Connector error messages 
 description: This article provides a list of API App connector error messages as well as resolution recommendations for each.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Troubleshooting App Connectors using error messages
+# Troubleshooting App Connector error messages
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -57,6 +57,6 @@ App connector errors can be seen in the app connector dialog after attempting to
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Sentinel integration with Defender for Cloud Apps
+title: Microsoft Sentinel integration 
 description: This article provides information integrating Microsoft Sentinel with Defender for Cloud Apps.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Microsoft Sentinel integration (preview)
+# Microsoft Sentinel integration (Preview)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -20,9 +20,6 @@ Additional integration solutions include:
 
 * **Generic SIEMs** - Integrate Defender for Cloud Apps with your generic SIEM server. For information in integrating with a Generic SIEM, see [Generic SIEM integration](siem.md).
 * **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
-
-<!-- > [!NOTE]
-> Sentinel integration to Defender for Cloud Apps isn't available for Gov customers. Those customers should use Microsoft 365 Defender's integration with Sentinel. For more information, see  [Microsoft Sentinel feature availability in US Government clouds](/azure/security/fundamentals/feature-availability#microsoft-sentinel). -->
 
 ## How to integrate
 
@@ -43,14 +40,14 @@ To integrate with Microsoft Sentinel:
 
 ### Integrating with Microsoft Sentinel
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, select **Security extensions**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-1. On the **SIEM agents** tab, select add (**+**), and then choose **Microsoft Sentinel**.
+1. Under **System**, choose **SIEM agents**. Select **Add SIEM agent**, and then choose **Sentinel**.
 
     ![Screenshot showing Add SIEM integration menu.](media/siem0.png)
 
 1. In the wizard, select the data types you want to forward to Microsoft Sentinel. You can configure the integration, as follows:
-    1. **Alerts**: Alerts are automatically turned on once Microsoft Sentinel is enabled. <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
+    1. **Alerts**: Alerts are automatically turned on once Microsoft Sentinel is enabled.
     1. **Discovery logs**: Use the slider to enable and disable them, by default, everything is selected, and then use the **Apply to** drop-down to filter which discovery logs are sent to Microsoft Sentinel.
 
     ![Screenshot showing start page of Configure Microsoft Sentinel integration.](media/siem-sentinel-configuration.png)

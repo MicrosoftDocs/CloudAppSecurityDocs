@@ -1,6 +1,6 @@
 ---
 title: Predefined app policies
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 description: Get started learning about predefined app policies.
 ---
@@ -11,7 +11,6 @@ App governance contains a set of out of the box policies to detect anomalous app
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YpJN]
-
 
 ## Working with predefined policies
 

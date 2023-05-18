@@ -1,6 +1,6 @@
 ---
 title: Investigate threat detection alerts
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 description: Learn how to investigate threat detection alerts from app governance.
 ---
@@ -222,6 +222,80 @@ Review all activities done by the app. If you suspect that an app is suspicious,
 
 If you still suspect that an app is suspicious, you can research the app display name and reply domain.
 
+### New app with mail permissions having low consent pattern  
+
+**Severity**: Medium  
+
+This detection identifies OAuth apps created recently in relatively new publisher tenants with the following characteristics:
+- Permissions to access or change mailbox settings
+- Relatively low consent rate, which can identify unwanted or even malicious apps that attempt to obtain consent from unsuspecting users  
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+
+    **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization. 
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
+### New app with low consent rate accessing numerous emails  
+
+**Severity**: Medium  
+
+This alert identifies OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It also verifies whether the app has a relatively low global consent rate and makes numerous calls to Microsoft Graph API to access emails of consenting users. Apps that trigger this alert might be unwanted or malicious apps attempting to obtain consent from unsuspecting users.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+
+    **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to the mailboxes of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
+### Suspicious app with mail permissions sending numerous emails
+
+**Severity**: Medium  
+
+This alert finds multitenant OAuth apps that have made numerous calls to Microsoft Graph API to send emails within a short time period. It also verifies whether the API calls have resulted in errors and failed attempts to send emails. Apps that trigger this alert might be actively sending spam or malicious emails to other targets.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+
+    **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially access to mailbox of associated users and admin accounts. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
 ## Persistence alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
@@ -380,11 +454,11 @@ Several users have revoked their consent to this recently created line-of-busine
 ## Privilege escalation alerts
 
 ### OAuth app with suspicious metadata has Exchange permission
- 
-**Severity**: Medium 
+
+**Severity**: Medium
 
 **MITRE ID**: T1078
- 
+
 This alert is triggered when a line of business app with suspicious metadata has privilege to manage permission over Exchange.
 
 **TP or FP?**
@@ -395,14 +469,13 @@ This alert is triggered when a line of business app with suspicious metadata has
 
 **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
-**Recommended Action**:: Dismiss the alert 
- 
+**Recommended Action**:: Dismiss the alert
+
 **Understand the scope of the breach**
 
-1. Review all activities done by the app. 
-2. Review the scopes granted by the app. 
+1. Review all activities done by the app.
+2. Review the scopes granted by the app.
 3. Review the user activity associated with the app.
-
 
 ## Defense Evasion alerts
 
@@ -421,6 +494,31 @@ A non-Microsoft cloud app is using a logo that was found by a machine learning a
 - **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
 
   **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
+### App is associated with a typosquatted domain
+
+**Severity**: Medium  
+
+This detection generates alerts for non-Microsoft OAuth apps with publisher domains or redirect URLs that contain typosquatted versions of Microsoft brand names. Typosquatting is generally used to capture traffic to sites whenever users inadvertently mistype URLs, but they can also be used to impersonate popular software products and services.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the publisher domain or redirect URL of the app is typosquatted and does not relate to the true identity of the app.
+
+  **Recommended action**: 
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+    - Check the app for other signs of spoofing or impersonation as well as any suspicious activity.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that the publisher domain and redirect URL of the app are legitimate.  
+
+  **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
 
 **Understand the scope of the breach**
 
@@ -477,6 +575,32 @@ This detection identifies a large volume of suspicious enumeration activities pe
 1. Review all activities performed by this application.
 1. Review the user activity associated with this application.
 
+### Recently created multitenant application enumerates users information frequently
+
+**Severity**: Medium
+
+**MITRE ID**: T1087
+
+This alert finds OAuth apps registered recently in a relatively new publisher tenant with permissions to change mailbox settings and access emails. It verifies whether the app has made numerous calls to Microsoft Graph API requesting user directory information. Apps that trigger this alert might be luring users into granting consent so they can access organizational data.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated.
+
+  **Recommended action**: 
+    - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
+    - Investigate app activity and check affected accounts for suspicious activity. 
+    - Based on your investigation, disable the app and suspend and reset passwords for all affected accounts.
+    - Classify the alert as a true positive.  
+  
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization, then a false positive is indicated.
+
+    **Recommended Action**: Classify the alert as a false positive and consider sharing feedback based on your investigation of the alert.
+
+**Understand the scope of the breach**
+
+Review consent grants to the application made by users and admins. Investigate all activities done by the app, especially enumeration of user directory information. If you suspect that the app is suspicious, consider disabling the application and rotating credentials of all affected accounts. 
+
 ## Exfiltration alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to steal data of interest to their goal from your organization.
@@ -511,11 +635,11 @@ This detection identifies an OAuth application that is using an unusual user age
 
 **MITRE ID**: T1114, T1567
 
-This detection identifies an OAuth app that used an unusual user agent to access email data using Exchange Web services API. 
+This detection identifies an OAuth app that used an unusual user agent to access email data using Exchange Web services API.
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the OAuth application is not expected to change the user agent it uses to make requests to the Exchange Web Services API, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the OAuth application is not expected to change the user agent it uses to make requests to the Exchange Web Services API, then a true positive is indicated.
 
   **Recommended actions**: Classify the alert as a TP. Based on the investigation, if the app is malicious, you can revoke consents and disable the app in the tenant. If it is a compromised app, you can revoke the consents, temporarily disable the app, review the permissions, reset the secret and certificate and then re-enable the app.
 
@@ -525,9 +649,9 @@ This detection identifies an OAuth app that used an unusual user agent to access
 
 **Understand the scope of the breach**
 
-1. Review if the application was newly created or has had any recent changes made to it. 
-2. Review the permissions granted to the application and users that have consented to the application.   
-3. Review all activities done by the app. 
+1. Review if the application was newly created or has had any recent changes made to it.
+2. Review the permissions granted to the application and users that have consented to the application.
+3. Review all activities done by the app.
 
 ## Collection alerts
 
@@ -639,7 +763,7 @@ This detection identifies OAuth apps with high privilege permissions that perfor
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that a high usage of OneDrive workload via Graph API is not expected from this OAuth application having high privilege permissions to read and write to OneDrive, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that a high usage of OneDrive workload via Graph API is not expected from this OAuth application having high privilege permissions to read and write to OneDrive, then a true positive is indicated.
 
   **Recommended Action**: Based on the investigation, if the application is malicious, you can revoke consents and disable the application in the tenant. If it is a compromised application, you can revoke the consents, temporarily disable the app, review the required permissions, reset the password and then re-enable the app.
 
@@ -651,7 +775,7 @@ This detection identifies OAuth apps with high privilege permissions that perfor
 
 1. Verify if the app is from a reliable source.
 1. Verify if the application was newly created or has had any recent changes made to it.
-1. Review the permissions granted to the application and users that have consented to the application. 
+1. Review the permissions granted to the application and users that have consented to the application.
 1. Investigate all other app activities.
 
 ### App made high volume of importance mail read and created inbox rule
@@ -681,71 +805,70 @@ This detection identifies that an App consented to high privilege scope, creates
 
 ### Privileged app performed unusual activities in Teams
 
-**Severity**: Medium 
- 
-This detection identifies apps consented to high privilege OAuth scopes, that accessed Microsoft Teams, and made an unusual volume of read or post chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API. 
- 
-**TP or FP?** 
+**Severity**: Medium
 
-- **TP**: If you’re able to confirm that unusual chat message activities in Microsoft Teams through Graph API by an OAuth app with a high privilege scope, and the app is delivered from an unknown source. 
+This detection identifies apps consented to high privilege OAuth scopes, that accessed Microsoft Teams, and made an unusual volume of read or post chat message activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to gather information from your organization through Graph API.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that unusual chat message activities in Microsoft Teams through Graph API by an OAuth app with a high privilege scope, and the app is delivered from an unknown source.
 
   **Recommended Action**:  Disable and remove the app and reset the password
 
-- **FP**: If you’re able to confirm that the unusual activities performed in Microsoft Teams through Graph API were for legitimate reasons. 
+- **FP**: If you’re able to confirm that the unusual activities performed in Microsoft Teams through Graph API were for legitimate reasons.
 
-  **Recommended Action**: Dismiss the alert 
- 
+  **Recommended Action**: Dismiss the alert
+
 **Understand the scope of the breach**
 
-1.	Review the scopes granted by the app.
-2.	Review all activities done by the app.
-3.	Review the user activity associated with the app. 
+1. Review the scopes granted by the app.
+1. Review all activities done by the app.
+1. Review the user activity associated with the app.
 
 ### Anomalous OneDrive activity by app that just updated or added new credentials
 
-**Severity**: Medium 
+**Severity**: Medium
 
 **MITRE IDs**: T1098.001, T1213
- 
-A non-Microsoft cloud app made anomalous Graph API calls to OneDrive, including high-volume data usage. Detected by machine learning, these unusual API calls were made within a few days after the app added new or updated existing certificates/secrets. This app might be involved in data exfiltration or other attempts to access and retrieve sensitive information.
- 
-**TP or FP?** 
 
-- **TP**: If you can confirm that unusual activities, such as high-volume usage of OneDrive workload, were performed by the app through Graph API. 
+A non-Microsoft cloud app made anomalous Graph API calls to OneDrive, including high-volume data usage. Detected by machine learning, these unusual API calls were made within a few days after the app added new or updated existing certificates/secrets. This app might be involved in data exfiltration or other attempts to access and retrieve sensitive information.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that unusual activities, such as high-volume usage of OneDrive workload, were performed by the app through Graph API.
 
   **Recommended Action**: Temporarily disable the app, reset the password and then re-enable the app.
 
-- **FP**: If you can confirm that no unusual activities were performed by the app or that the app is intended to make unusually high volume of Graph calls. 
+- **FP**: If you can confirm that no unusual activities were performed by the app or that the app is intended to make unusually high volume of Graph calls.
 
-  **Recommended Action**: Dismiss the alert 
- 
+  **Recommended Action**: Dismiss the alert
+
 **Understand the scope of the breach**
 
-1.	Review all activities performed by the app.
-1.	Review the scopes granted by the app.
-1.	Review the user activity associated with the app.
+1. Review all activities performed by the app.
+1. Review the scopes granted by the app.
+1. Review the user activity associated with the app.
 
 ### Anomalous SharePoint activity by app that just updated or added new credentials
 
-**Severity**: Medium 
+**Severity**: Medium
 
 **MITRE IDs**: T1098.001, T1213.002
- 
-A non-Microsoft cloud app made anomalous Graph API calls to SharePoint, including high-volume data usage. Detected by machine learning, these unusual API calls were made within a few days after the app added new or updated existing certificates/secrets. This app might be involved in data exfiltration or other attempts to access and retrieve sensitive information.
- 
-**TP or FP?** 
 
-- **TP**: If you can confirm that unusual activities, such as high-volume usage of SharePoint workload, were performed by the app through Graph API. 
+A non-Microsoft cloud app made anomalous Graph API calls to SharePoint, including high-volume data usage. Detected by machine learning, these unusual API calls were made within a few days after the app added new or updated existing certificates/secrets. This app might be involved in data exfiltration or other attempts to access and retrieve sensitive information.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that unusual activities, such as high-volume usage of SharePoint workload, were performed by the app through Graph API.
 
   **Recommended Action**: Temporarily disable the app, reset the password and then re-enable the app.
 
-- **FP**: If you can confirm that no unusual activities were performed by the app or that the app is intended to make unusually high volume of Graph calls. 
+- **FP**: If you can confirm that no unusual activities were performed by the app or that the app is intended to make unusually high volume of Graph calls.
 
   **Recommended Action**: Dismiss the alert
- 
+
 **Understand the scope of the breach**
 
-1.	Review all activities performed by the app.
-1.	Review the scopes granted by the app.
-1.	Review the user activity associated with the app.
-
+1. Review all activities performed by the app.
+1. Review the scopes granted by the app.
+1. Review the user activity associated with the app.

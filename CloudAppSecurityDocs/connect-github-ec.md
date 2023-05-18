@@ -1,9 +1,10 @@
 ---
-title: Connect GitHub Enterprise Cloud to Defender for Cloud Apps
+title: Connect GitHub Enterprise Cloud 
 description: This article provides information about how to connect your GitHub Enterprise Cloud app to Defender for Cloud Apps using the API connector  for visibility and control over use.
-ms.date: 01/09/2023
+ms.date: 03/15/2023
 ms.topic: how-to
 ---
+
 # Connect GitHub Enterprise Cloud to Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -13,7 +14,8 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 ## Prerequisites
 
 - Your organization must have a GitHub Enterprise Cloud license.
-- The GitHub account used for connecting to Defender for Cloud Apps must have *Owner* permissions for your organization.
+- The GitHub account used for connecting to Defender for Cloud Apps must have Owner permissions for your organization.
+- For SSPM capabilities, the provided account must be the owner of the enterprise account.
 - To verify owners of your organization, browse to your organization's page, select **People**, and then filter by *Owner*.
 
 ## How to connect GitHub Enterprise Cloud to Defender for Cloud Apps
@@ -28,11 +30,11 @@ These steps can be completed independently of the [Configure GitHub Enterprise C
 1. Verify [your organization's domains](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/verifying-your-organizations-domain).
 
     > [!NOTE]
-    > Make sure to verify each of the managed domains listed in your Defender for Cloud Apps portal. To view your managed domains, in Defender for Cloud Apps, browse to **Settings** > **Organization details** > **Managed domains**.
+    > Make sure to verify each of the managed domains listed in your Defender for Cloud Apps settings. To view your managed domains, go to the Microsoft 365 Defender portal, and select **Settings**. Then choose **Cloud Apps**. Under **System**, choose **Organizational details**, and then go to the **Managed domains** section.
 
 ### Configure GitHub Enterprise Cloud
 
-1. **Find your Organization's login name**  
+1. **Find your organization's login name**  
 In GitHub, browse to your organization's page, and from the URL, make a note of your organization login name, you'll need it later.
 
     > [!NOTE]
@@ -69,39 +71,51 @@ Repeat this step for each additional connected organization.
 
 ### Configure Defender for Cloud Apps
 
-1. In the C[loud App Security portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
 
-1. In the **App connectors** page, select the plus button followed by **GitHub**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **GitHub**.
+1. In the next window, give the connector a descriptive name, and then select **Next**.
+1. In the **Enter details** window, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier.
 
-1. In the pop-up, fill out the **Client ID**, **Client Secret**, and **Organization Login Name** that you made a note of earlier, and then select **Connect in GitHub**.
+   :::image type="content" source="media/connect-github-connect-app.png" alt-text="Connect GitHub.":::
 
-    ![Screenshot showing connect github api.](media/connect-github-connect-app.png)
+   For **Enterprise slug**, also known as the enterprise name, is needed for supporting SSPM capabilities. To find the **Enterprise slug**:
+   1. Select the **GitHub Profile picture** -> **your enterprises**.
+   1. Select **your enterprise account** and choose the account you want to connect to Microsoft Defender for Cloud Apps.
+   1. Confirm that the URL is the enterprise slug. For instance, in this example `https://github.com/enterprises/testEnterprise` *testEnterprise* is the enterprise slug.
+
+1. Select **Next**.
+
+1. Select **Connect GitHub**.
 
     The GitHub sign-in page opens. If necessary, enter your GitHub administrator credentials to allow Defender for Cloud Apps access to your team's GitHub Enterprise Cloud instance.
 
 1. Request organization access and authorize the app to give Defender for Cloud Apps access to your GitHub organization.
 
-    > [!NOTE]
-    > Defender for Cloud Apps requires the following OAuth scopes:
-    >
-    > - **admin:org** - required for synchronizing your organization's audit log
-    > - **read:user** and **user:email** - required for synchronizing your organization's members
-    > - **repo:status** - required for synchronizing repository-related events in the audit log
-    > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://docs.github.com/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
+   > [!NOTE]
+   > Defender for Cloud Apps requires the following OAuth scopes:
+   >
+   > - **admin:org** - required for synchronizing your organization's audit log
+   >
+   > - **read:user** and **user:email** - required for synchronizing your organization's members
+   >
+   > - **repo:status** - required for synchronizing repository-related events in the audit log
+   >
+   > - **admin:enterprise** - required for SSPM capabilities, Note that provided user must be the owner of the enterprise account.
+   >
+   > For more information about OAuth scopes, see [Understanding scopes for OAuth Apps](https://docs.github.com/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
 
     ![Screenshot showing authorize github oauth.](media/connect-github-authorize-app.png)
 
 1. Back in the Defender for Cloud Apps console, you should receive a message that GitHub was successfully connected.
 
-1. Work with your GitHub organization owner to grant organization access to the OAuth app created. The organization owner should navigate to **Organization Settings** -> **Integrations** -> **Third-party access** to grant access. 
+1. Work with your GitHub organization owner to grant organization access to the OAuth app created. The organization owner should navigate to **Organization Settings** -> **Integrations** -> **Third-party access** to grant access.
 
  > [!NOTE]
- > 
- > The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps. 
+ >
+ > The organization owner will find the request from the OAuth app only after connecting GitHub to Defender for Cloud Apps.
 
-1. Make sure the connection succeeded by selecting **Test API**.
-
-    Testing may take a couple of minutes. After you receive a success notice, select **Close**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting GitHub Enterprise Cloud, you'll receive events for 7 days prior to connection.
 

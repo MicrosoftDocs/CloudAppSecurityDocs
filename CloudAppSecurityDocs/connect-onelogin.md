@@ -1,7 +1,7 @@
 ---
-title: Connect OneLogin to Defender for Cloud Apps
+title: Connect OneLogin
 description: This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing OneLogin app using the App Connector APIs. 
-ms.date: 02/02/2022
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect OneLogin to Microsoft Defender for Cloud Apps
@@ -20,25 +20,25 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Go to the OneLogin admin portal. Select **API Credentials** in the **Developers** dropdown menu.
 
-    ![Select API credentials](media/api-credentials-onelogin.png)
+    ![Select API credentials.](media/api-credentials-onelogin.png)
 
 1. Select **New Credential**.
 1. Name your new application as **Microsoft Defender for Cloud Apps**, choose **Read all** permissions, and select **Save**.
 
-    ![Create new API credential](media/create-new-api-credential-onelogin.png)
+    ![Create new API credential.](media/create-new-api-credential-onelogin.png)
 
 1. Copy the **Client ID** and the **Client Secret**. You'll need them in the following steps.
 
 ### Configure Defender for Cloud Apps
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate** and then **Connected apps**.
-1. In the **App connectors** page, select the plus button followed by **OneLogin**.
-1. In the pop-up, give the connector a descriptive name, and select **Connect OneLogin**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the **App connectors** page, select **+Connect an app**, followed by **OneLogin**.
+1. In the next window, give the connector a descriptive name, and select **Next**.
 
-    ![Connect OneLogin](media/connect-onelogin.png)
+    ![Connect OneLogin.](media/connect-onelogin.png)
 
-1. Enter the **Client ID** and the **Client Secret** that you copied and select **Connect OneLogin**.
-1. Make sure the connection succeeded by selecting Test now. Testing may take a couple of minutes. After receiving a success notice, select **Close**.
+1. In the **Enter details** window, enter the **Client ID** and the **Client Secret** that you copied and select **Submit**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 1. The first connection can take up to 4 hours to get all users and their activities after the connector was established.
 1. After the connector's **Status** is marked as **Connected**, the connector is live and working.
 

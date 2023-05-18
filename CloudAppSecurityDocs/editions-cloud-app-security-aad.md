@@ -1,7 +1,7 @@
 ---
 title: Discovery capability differences for Defender for Cloud Apps and Cloud App Discovery
 description: This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Azure Active Directory).
-ms.date: 12/21/2022
+ms.date: 02/15/2023
 ms.topic: overview
 ---
 
@@ -9,7 +9,7 @@ ms.topic: overview
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery (part of Azure Active Directory).
+This article describes the differences between discovery capabilities in Defender for Cloud Apps and Cloud App Discovery.
 
 For information about licensing, see the [Microsoft 365 licensing datasheet](https://aka.ms/M365EnterprisePlans).
 
@@ -17,9 +17,15 @@ For information about licensing, see the [Microsoft 365 licensing datasheet](htt
 
 Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Cloud Discovery is one of the features of Defender for Cloud Apps, which enables you to gain visibility into Shadow IT by discovering cloud apps in use.
 
-## Cloud App Discovery (as part of Azure Active Directory P1)
+## Cloud App Discovery
 
-Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-discovery.md) at no additional cost. This is a subset of Microsoft Defender for Cloud Apps. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
+Cloud App Discovery comes at no additional cost as part of:
+
+1. Azure Active Directory P1.
+1. Enterprise Mobility + Security E3  (EMS E3).
+1. Microsoft 365 E3.
+    
+This is a subset of Microsoft Defender for Cloud Apps. It includes Cloud Discovery capabilities that provide deeper visibility into cloud app usage in your organizations.
 
 [Upgrade to Microsoft Defender for Cloud Apps](https://www.microsoft.com/security/business/cloud-apps-defender) to receive the full suite of Cloud Access Security Broker (CASB) capabilities offered by Microsoft Defender for Cloud Apps.
 
@@ -27,7 +33,7 @@ Azure Active Directory Premium P1 includes [Cloud App Discovery](./set-up-cloud-
 
 The following table is a comparison of the discovery capabilities in Defender for Cloud Apps and Cloud App Discovery.
 
-|Capability|Feature|Microsoft Defender for Cloud Apps| Cloud App Discovery (as part of Azure Active Directory P1)|
+|Capability|Feature|Microsoft Defender for Cloud Apps| Cloud App Discovery |
 |----|----|----|----|
 |Cloud Discovery|Discovered apps|31,000 + cloud apps|31,000 + cloud apps|
 ||Deployment for discovery analysis|<li> Manual upload <br> <li> Automated upload - Log collector and API <br> <li> Native Defender for Endpoint integration |Manual and automatic log upload. [Learn more about setting up Cloud Discovery](set-up-cloud-discovery.md)|
@@ -54,3 +60,4 @@ The following table is a comparison of the discovery capabilities in Defender fo
 - Read about the basics in [Getting started with Defender for Cloud Apps](./get-started.md).
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

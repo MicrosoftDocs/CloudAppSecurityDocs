@@ -1,9 +1,10 @@
 ---
-title: Set email notification preferences
+title: Email notification preferences
 description: This article provides information about how to personalize the email notifications sent by Defender for Cloud Apps.
-ms.date: 12/21/2022
+ms.date: 03/15/2023
 ms.topic: how-to
 ---
+
 # Email notification preferences
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -20,7 +21,7 @@ This article provides information about how to personalize the email notificatio
 
  Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
-1. In the menu bar, select the settings cog, select **Settings**, and then select the **Mail settings** tab.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Mail settings**.
 
     ![mail settings.](media/mail-settings-config.png)
 
@@ -42,13 +43,32 @@ This article provides information about how to personalize the email notificatio
         - **%%content%%** - Placeholder for the content that will be included for end users, as set by the policy.
 
 1. Select **Upload a template...** and select the file you created.
-
+1. Select **Save**.
 1. Select **Send a test email** to email yourself an example of the template you created. The email will be sent to the account you used to log into the portal. In the test email, you'll see and verify the following items:
     - The metadata fields
     - The template
     - The email subject
     - The title in the email body
     - The content
+
+## Additional notes
+
+The following type of notifications use the custom email templates:
+
+- Failed to import the file you tried to upload, it may be corrupt.
+- Security notification
+- Data Loss Prevention
+- File ownership report
+- Activity policy match notification
+- App removal notification
+- App removed
+- OAuth app revoked
+- File sharing report
+- Cloud App Security Test Email [this is for testing purposes]
+- Ownership of items transferred to you
+
+> [!NOTE]
+> There are some types of notifications that are sent to admins only. In such a case, the default template is used, instead of the custom template.
 
 ## Sample email template
 

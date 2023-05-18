@@ -1,11 +1,10 @@
 ---
-# required metadata
 title: Encrypt Defender for Cloud Apps data at rest with your own key
 description: This article provides instructions for using your own key to encrypt data at rest stored in Defender for Cloud Apps.
 ms.topic: conceptual
-ms.date: 12/21/2022
-
+ms.date: 01/29/2023
 ---
+
 # Encrypt Defender for Cloud Apps data at rest with your own key (BYOK)
 
 This article describes how to configure Defender for Cloud Apps to use your own key to encrypt the data it collects, whilst it's at rest. If you are looking for documentation about applying encryption to data stored in cloud apps, see [Azure Information Protection integration](azip-integration.md).
@@ -95,7 +94,7 @@ When you enable data encryption, Defender for Cloud Apps immediately uses your A
 
 ### To enable data encryption
 
-1. In Defender for Cloud Apps, in the menu bar, click the settings cog ![settings icon](media/cloud-app-security-byok/byok-kv-settings-icon.png) and select **Settings**.
+1. In Defender for Cloud Apps, in the menu bar, click the settings cog ![settings icon.](media/cloud-app-security-byok/byok-kv-settings-icon.png) and select **Settings**.
 
 1. Select the **Data encryption** tab.
 

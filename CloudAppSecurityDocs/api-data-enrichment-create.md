@@ -1,7 +1,7 @@
 ---
 title: Create IP address range - Data Enrichment API
 description: This article describes the create IP address range request in the Defender for Cloud Apps Data Enrichment API.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Create IP address range - Data Enrichment API

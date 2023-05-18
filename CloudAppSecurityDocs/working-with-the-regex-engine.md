@@ -1,7 +1,7 @@
 ---
-title: Use the RegEx engine in Defender for Cloud Apps for content inspection policies
+title: Working with the RegEx engine
 description: This article provides instructions for using RegEx for pattern matching in Defender for Cloud Apps policies.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Working with the RegEx engine
@@ -48,14 +48,14 @@ The following table gives you example expressions and if they would match or not
 
 |              Regular expression              |                     Data                     |      Matches      |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
-|            Colou?r (?:black&#124;blue&#124;white)             |   Color black<br /><br /> Color white<br /><br /> Color red   | Yes<br /><br /> Yes<br /><br /> No |
-|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Yes<br /><br /> Yes<br /><br /> No |
-| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Yes<br /><br /> Yes<br /><br /> No |
-|                       d.n't\s{0,10}c.r.                       | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | Yes<br /><br /> Yes<br /><br /> No |
+|            `Colou?r (?:black&#124;blue&#124;white)`             |   Color black<br /><br /> Color white<br /><br /> Color red   | Yes<br /><br /> Yes<br /><br /> No |
+|           `[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,}`           | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | Yes<br /><br /> Yes<br /><br /> No |
+| `20\d{2}-(?:0[1-9]|1[0-2])-(?:[0-2][0-9]|30|31)`              |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | Yes<br /><br /> Yes<br /><br /> No |
+|                       `d.n't\s{0,10}c.r.`                      | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | Yes<br /><br /> Yes<br /><br /> No |
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

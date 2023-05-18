@@ -1,10 +1,10 @@
 ---
 title: Attest your apps 
 description: This article provides instructions for attesting your apps in Defender for Cloud Apps.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Attest your app
+# Attest your apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -105,6 +105,6 @@ Follow the service attributes described below to successfully complete the submi
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

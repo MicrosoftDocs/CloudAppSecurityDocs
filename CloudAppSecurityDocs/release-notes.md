@@ -1,7 +1,7 @@
 ---
-title: What's new in Microsoft Defender for Cloud Apps
+title: What's new 
 description: This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
-ms.date: 01/03/2023
+ms.date: 04/30/2023
 ms.topic: overview
 ---
 # What's new in Microsoft Defender for Cloud Apps
@@ -27,6 +27,103 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
+## Defender for Cloud Apps release 251-252
+
+April 30, 2023
+
+- **The Microsoft Defender for Cloud Apps integration into Microsoft 365 Defender is Generally Available (GA)**. For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
+
+- **The automatic redirection option is Generally Available (GA)**. Admins can use this option to redirect users from the standalone Defender for Cloud Apps portal to Microsoft 365 Defender. 
+
+    By default, this option is set to **Off**. Admins must explicitly opt in by switching the toggle to **On** to exclusively use the Microsoft 365 Defender experience. 
+    
+    For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+
+- **Settings pages updates**:
+
+    The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
+  
+    - [Settings > Azure AD Identity Protection](/microsoft-365/security/defender/investigate-alerts)
+    - [Settings > App Governance](app-governance-get-started.md)
+    - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
+  
+    The following pages are planned for deprecation together with the Microsoft Defender for Cloud Apps portal:
+
+    - **Settings > Export settings**
+    - **Activity log > Web traffic log**
+
+## Defender for Cloud Apps release 250
+
+April 24, 2023
+
+- Zoom App connector for SSPM (Public preview)
+
+    Defender for Cloud apps now supports a new Zoom App connector for SSPM. For more information, see [Connect Zoom to Microsoft Defender for Cloud Apps](connect-zoom.md).  
+
+
+April 2, 2023
+
+- New "behaviors" data type in Microsoft 365 Defender advanced hunting (Preview)  
+To enhance our threat protection and reduce alert fatigue, we've added a new data layer called "behaviors" to the Microsoft Defender for Cloud Apps experience in Microsoft 365 Defender advanced hunting. This feature is intended to provide relevant information for investigations by identifying anomalies or other activities that may be related to security scenarios, but don't necessarily indicate malicious activity or a security incident. In this first stage, some of the Microsoft Defender for Cloud App anomaly detections will also be presented as behaviors. In future phases, these detections will only generate behaviors and not alerts. For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
+
+## Defender for Cloud Apps release 249
+
+March 19, 2023
+
+- **Automatic redirection from Microsoft Defender for Cloud Apps to the Microsoft 365 Defender portal (Preview)**  
+A new automatic redirection toggle will allow you to trigger the automatic redirection from Microsoft Defender for Cloud Apps to Microsoft 365 Defender. Once the redirection setting is enabled, users accessing the Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal. The toggle default value is set to **Off**, and admins will need explicitly to opt-in to the automatic redirection and start using the Microsoft 365 Defender exclusively. You still have an option to opt-out from the Microsoft 365 Defender experiences and to use Microsoft Defender for Cloud Apps standalone portal. This can be done by switching off the toggle. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mda-redirection).
+
+## Defender for Cloud Apps release 248
+
+March 5, 2023
+
+- **Faster load time for protected sessions**  
+We've made significant improvements to the loading time of web pages protected by session policies. End users that are scoped to session policies, either from a desktop or mobile device, can now enjoy a faster and more seamless browsing experience.
+We've witnessed an improvement of between 10% and 40%, depending on the application, the network, and the complexity of the web page.
+
+- **Support for Tokyo ServiceNow version**  
+The Defender for Cloud Apps connector for ServiceNow now supports the ServiceNow Tokyo version. With this update, you can protect the latest versions of ServiceNow using Defender for Cloud Apps. For more information, see [Connect ServiceNow to Microsoft Defender for Cloud Apps](connect-servicenow.md).
+
+## Defender for Cloud Apps release 246 and 247
+
+February 19, 2023
+
+- **SaaS Security Posture Management (SSPM) capabilities update announcements (GA and Public preview)**  
+We have made important improvements to our governance and protection of third-party software-as-a-service (SaaS) applications. These improvements include assessments to identify risky security configurations using Microsoft Defender for Cloud Apps, as well as smoother integration into the Microsoft Secure Score experience. We have now released Salesforce and ServiceNow to general availability, while Okta, GitHub, Citrix ShareFile, and DocuSign are currently in public preview. For more information, see [Connect apps to get visibility and control with Microsoft Defender for Cloud Apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- **Malware detection policy governance actions now available (preview)**  
+Automatic actions for files detected by the malware detection policy are now available as part of the policy configuration. The actions differ from app to app. For more information, see [Malware governance actions (Preview)](governance-actions.md#malware-governance-actions-preview).
+
+- **Log Collector Version Update**  
+
+    We've released a new log collector version with the latest vulnerabilities fixes.
+
+    New version: **columbus-0.246.0-signed.jar**  
+    Image name: **mcaspublic.azurecr.io/public/mcas/logcollector tag: latest/0.246.0 image id : eeb3c4f1a64c**
+
+    The Docker image was rebuilt with these updates:
+
+    | Dependency  name               | From  version        | To  version          | Comments                                                     |
+    | ------------------------------ | -------------------- | -------------------- | ------------------------------------------------------------ |
+    | amazon-corretto                | 8.222.10.1-linux-x64 | 8.352.08.1-linux-x64 |                                                              |
+    | openssl  1.1.1                 | 1.1.1q               | 1.1.1s               | The  1.1.1 series is available and is supported until Sep 11, 2023. |
+    | Pure  ftpd                     | 1.0.49               | 1.0.50               |                                                              |
+    | fasterxml.jackson.core.version | 2.13.3               | 2.14.1               | 2.14  was released in Nov 2022                               |
+    | org.jacoco                     | 0.7.9                | 0.8.8                | Version  0.8.8 from Apr 05, 2022                             |
+
+    To begin using the new version, you'll need to stop your log collectors, remove the current image, and install the new one.
+
+    To verify the new version is running, run the following command inside the Docker container:
+
+    `cat /var/adallom/versions | grep columbus-`
+
+## Defender for Cloud Apps release 244 and 245
+
+January 22, 2023
+
+- **File policy – exploring multiple SITs**  
+Defender for Cloud Apps already includes the ability to explore policy file matches that contain sensitive information types (SITs). Now, Defender for Cloud Apps also allows you to differentiate between multiple SITs in the same file match. This feature, known as short evidence, lets Defender for Cloud Apps better manage and protect your organization's sensitive data. For more information, see [Examine evidence (preview)](dcs-inspection.md#examine-evidence-preview).
+
 ## Defender for Cloud Apps release 240, 241, 242, and 243
 
 December 25, 2022
@@ -39,7 +136,7 @@ Azure AD identity protection alerts will arrive directly to Microsoft 365 Defend
 October 30, 2022
 
 - **Native Integration of Microsoft Defender for Cloud Apps in Microsoft 365 Defender is now in public preview**  
-The entire Defender for Cloud Apps experience in Microsoft 365 Defender is now available for public preview.
+  The entire Defender for Cloud Apps experience in Microsoft 365 Defender is now available for public preview.
 
   SecOps and security admins will experience these major benefits:
 
@@ -76,7 +173,7 @@ We've released a new log collector version with the latest vulnerabilities fixes
   For more information, see [Configure automatic log upload for continuous reports](discovery-docker.md).
 
 - **Onboarding application to session controls (Preview)**  
-The process of onboarding an application to be used for session controls has been improved and should increase the success rate of the onboarding process. To onboard an application:
+  The process of onboarding an application to be used for session controls has been improved and should increase the success rate of the onboarding process. To onboard an application:
 
   1. Go to the Conditional Access App Control list in **Settings** -> **Conditional access app control**.
   1. After selecting **Onboard with session control**, you're presented with an **Edit this app** form.
@@ -205,11 +302,6 @@ November 28, 2021
 - **NetDocuments app connector available in public preview**  
 A new app connector for NetDocuments is available in public preview. You can now connect Microsoft Defender for Cloud Apps to NetDocuments to monitor and protect users and activities. For more information, see [Connect NetDocuments to Microsoft Defender for Cloud Apps](connect-netdocuments-to-microsoft-defender-for-cloud-apps.md).
 
-<!--
-- **Reset user investigation priority score**  
-The user investigation priority score can now be reset to 0 if an investigation was done and there's no need to see the user score for past events. For more information, see [Identify top risky users](tutorial-ueba.md#phase-2-identify-top-risky-users).
--->
-
 ## Cloud App Security release 212 and 213
 
 October 31, 2021
@@ -265,7 +357,7 @@ A new app connector for Smartsheet is available in public preview. You can now c
 August 8, 2021
 
 - **New warn experience for monitored apps with Microsoft Defender for Endpoint (public preview)**  
-Cloud App Security has extended its native integration with Microsoft Defender for Endpoint (MDE). You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
+  Cloud App Security has extended its native integration with Microsoft Defender for Endpoint (MDE). You can now apply soft block on access to apps marked as monitored using Microsoft Defender for Endpoint's network protection capability. End users will be able to bypass the block. The block bypass report will be available in Cloud App Security’s discovered app experience. For more information, see:
   - [Warn and educate users on risky app usage](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/warn-and-educate-users-on-risky-app-usage/ba-p/2630982)
   - [Govern discovered apps using Microsoft Defender for Endpoint](mde-govern.md)
 
@@ -304,7 +396,7 @@ Cloud App Security now surfaces whether a publisher of an Office 365 OAuth app h
 A Cloud App Security admin role has been added to Azure Active Directory (Azure AD), allowing the assignment of global admin capabilities to Cloud App Security alone via Azure AD. For more information, see [Office 365 and Azure AD roles with access to Cloud App Security](manage-admins.md#office-365-and-azure-ad-roles-with-access-to-cloud-app-security).
 
 - **Export custom tag and app domains per discovered app**  
-**Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
+  **Export to CSV** in the discovered apps page now include the application's custom app tags and associated web domains. For more information, see [Working with discovered apps](discovered-apps.md).
 
   >[!IMPORTANT]
   >**Enhanced proxy URL for access controls (gradual rollout)**  
@@ -332,7 +424,7 @@ Label management from the Azure Information Protection portal (classic) is depre
 New near real-time file scanning is available in Dropbox, ServiceNow and Salesforce. New near real-time S3 bucket discovery is available in AWS. For more information, see [Connect apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 - **Public preview for overriding privilege sensitivity labels**  
-Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [Apply labels directly to files](azip-integration.md#how-to-integrate-azure-information-protection-with-cloud-app-security).
+Cloud App Security supports overriding sensitivity labels for files that were labeled outside Cloud App Security. For more information, see [How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps](azip-integration.md#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps).
 
 - **Extended Advanced Hunting events**  
 We've expanded the available events in Cloud App Security. Microsoft 365 Defender Advanced Hunting now includes telemetry from Microsoft OneDrive, SharePoint Online, Office 365, Dynamics 365, Dropbox, Power BI, Yammer, Skype for Business, and Power Automate, in addition to Exchange Online and Teams, which were available until now. For more information, see [Apps and services covered](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table#apps-and-services-covered).
@@ -348,7 +440,7 @@ We've added the ability to exclude discovered entities based on imported Azure A
 We have added support for the ServiceNow API connector to the Orlando and Paris versions. For more information, see [Connect ServiceNow to Microsoft Cloud App Security](./connect-servicenow.md).
 
 - **Always apply the selected action even if data cannot be scanned**  
-We've added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy.
+  We've added a new checkbox to [Session policies](session-policy-aad.md) that treats any data that can't be scanned as a match for the policy.
 
   >[!NOTE]
   >Deprecation notice: this feature replaces both **Treat encrypted as match**, and **Treat files that cannot be scanned as match**, in addition to adding new functionality. New policies will contain the new checkbox by default, deselected by default. Pre-existing policies will be migrated to the new checkbox on May 30. Policies with either or both options selected will have the new option selected by default; all other policies will have it deselected.
@@ -419,7 +511,7 @@ We've updated the auditing for [Shadow IT](tutorial-shadow-it.md) activities to 
   - Creating, updating, or deleting  data sources
 
 - **New Data Enrichment REST API endpoints**  
-We've added the following [Data Enrichment API endpoints](api-data-enrichment.md) enabling you to fully manage your IP address ranges using the API. Use our [sample management script](api-data-enrichment-manage-script.md) to help you get started. For more information about ranges, see [Working with IP ranges and tags](ip-tags.md).
+  We've added the following [Data Enrichment API endpoints](api-data-enrichment.md) enabling you to fully manage your IP address ranges using the API. Use our [sample management script](api-data-enrichment-manage-script.md) to help you get started. For more information about ranges, see [Working with IP ranges and tags](ip-tags.md).
   - [List IP address range](api-data-enrichment-list.md)
   - [Update IP address range](api-data-enrichment-update.md)
   - [Delete IP address range](api-data-enrichment-delete.md)
@@ -546,7 +638,7 @@ We've added the ability to treat access token and code requests as logins when o
 On June 7, 2020, we started gradually rolling out our enhanced proxy session controls to use one unified suffix that doesn't include named regions. For example, users will see `<AppName>.mcas.ms` suffix instead of `<AppName>.<Region>.cas.ms`. If you routinely block domains in your network appliances or gateways, make sure you allowlist all the domains listed under [Access and session controls](network-requirements.md#access-and-session-controls).
 
 - **New documentation**  
-Cloud App Security documentation has been expanded to include the following new content:
+  Cloud App Security documentation has been expanded to include the following new content:
 
   - **[Using the Cloud App Security REST API](api-introduction.md)**: Learn about our API capabilities and start integrating your applications with Cloud App Security.
   - **[Investigate anomaly detection alerts](investigate-anomaly-alerts.md)**: Get familiar with the available UEBA alerts, what they mean, identify the risk they pose, understand the scope of a breach, and the action you can take remediate the situation.
@@ -559,7 +651,7 @@ Released May 31, 2020
 We've enhanced your ability to granularly determine which users you want to monitor with the ability to make activities private. This new feature enables you to specify users based on group membership whose activities will be hidden by default. Only authorized admins have the option to choose to view these private activities, with each instance being audited in the governance log. For more information, see [Activity privacy](activity-privacy.md).
 
 - **New integration with Azure Active Directory (Azure AD) Gallery**  
-We've leveraged our native integration with Azure AD to give you the ability to navigate directly from an app in the Cloud App Catalog to its corresponding Azure AD Gallery app, and manage it in the gallery. For more information, see [Manage apps with Azure AD Gallery](tutorial-shadow-it.md#gallery-apps).
+We've leveraged our native integration with Azure AD to give you the ability to navigate directly from an app in the Cloud App Catalog to its corresponding Azure AD Gallery app, and manage it in the gallery. For more information, see [Manage apps with Azure AD Gallery](tutorial-shadow-it.md).
 
 - **New feedback option available in selected policies**  
 We're interested in receiving your feedback and learning how we can help. So now a new feedback dialog gives you the opportunity to help improve Cloud App Security, when creating, modifying, or deleting a file, anomaly detection, or session policy.
@@ -587,7 +679,7 @@ We've added native integration with Corrata providing you with Shadow IT visibil
 Cloud App Security Cloud Discovery analyzes a wide range of traffic logs to rank and score apps. Now Cloud Discovery includes a built-in log parser to support Corrata and Cisco ASA with FirePOWER 6.4 log formats. For a list of supported log parsers, see [Supported firewalls and proxies](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 
 - **Enhanced dashboard (gradual rollout)**
-As part of our ongoing improvements to the portal design, we are now gradually rolling out the improved Cloud App Security dashboard. The dashboard has been modernized based on your feedback and offers an enhanced user experience with updated content and data. For more information, see [Gradual deployment of our enhanced dashboard](daily-activities-to-protect-your-cloud-environment.md).
+As part of our ongoing improvements to the portal design, we are now gradually rolling out the improved Cloud App Security dashboard. The dashboard has been modernized based on your feedback and offers an enhanced user experience with updated content and data. For more information, see [Gradual deployment of our enhanced dashboard](classic-daily-activities-to-protect-your-cloud-environment.md).
 
 - **Enhanced governance: Confirm User Compromised for anomaly detections**  
 We've expanded our current governance actions for anomaly policies to include **Confirm User Compromised** allowing you to proactively protect your environment from suspicious user activity. For more information, see [Activity governance actions](governance-actions.md#activity-governance-actions).
@@ -597,7 +689,7 @@ We've expanded our current governance actions for anomaly policies to include **
 Released April 26, 2020
 
 - **New SIEM agent CEF format for alerts**  
-As part of our effort to enrich the alert information provided in the CEF files used by generic SIEM servers, we've extended the format to include the following client fields:
+  As part of our effort to enrich the alert information provided in the CEF files used by generic SIEM servers, we've extended the format to include the following client fields:
   - IPv4 address
   - IPv6 address
   - IP address location
@@ -647,7 +739,7 @@ We've expanded our current anomalous behavior alerts for Workday. The new alerts
 Cloud App Security now supports Salesforce's hourly event log. Hourly event logs give you accelerated, near real-time monitoring of user activities. For more information, see [Connect Salesforce](./connect-salesforce.md).
 
 - **Support for AWS security configuration using a master account**  
-Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS Security configuration to Cloud App Security](./connect-aws.md#how-to-connect-aws-security-configuration-to-cloud-app-security).
+Cloud App Security now supports using a master account. Connecting your master account allows you to receive security recommendations for all member accounts across all regions. For more information about connecting with a master account, see [How to connect AWS security configuration to Defender for Cloud Apps](connect-aws.md).
 
 - **Session controls support for modern browsers**  
 Cloud App Security session controls now includes support for the new Microsoft Edge browser based on Chromium. While we'll continue supporting the most recent versions of Internet Explorer and the legacy version of Microsoft Edge, the support will be limited and we recommend using the new Microsoft Edge browser.

@@ -1,7 +1,7 @@
 ---
-title: How Defender for Cloud Apps helps protect your GitHub Enterprise environment
+title: Protect your GitHub Enterprise environment
 description: This article provides information about the benefits of connecting your GitHub Enterprise app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: article
 ---
 # How Defender for Cloud Apps helps protect your GitHub Enterprise environment

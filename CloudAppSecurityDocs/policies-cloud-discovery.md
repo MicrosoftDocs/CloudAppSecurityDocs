@@ -1,7 +1,7 @@
 ---
 title: Cloud Discovery policies 
 description: This article outlines the steps to configure many Cloud Discovery policies in Defender for Cloud Apps.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
 # Cloud Discovery policies
@@ -22,13 +22,13 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. On the **Policies** page, create a new **App discovery policy**
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **App discovery policy**.
 
-2. In the **Policy template** field, select **New high volume app** or **New popular app** and apply the template.
+1. In the **Policy template** field, select **New high volume app** or **New popular app** and apply the template.
 
-3. Customize policy filters to meet your organization's requirements.
+1. Customize policy filters to meet your organization's requirements.
 
-4. Configure the actions to be taken when an alert is triggered.
+1. Configure the actions to be taken when an alert is triggered.
 
 > [!NOTE]
 > An alert is generated once for each new app that was not discovered in the last 90 days.
@@ -43,21 +43,21 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. On the **Policies** page, create a new **App discovery policy.**
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **App discovery policy**.
 
-2. In the **Policy template** field, select the **New risky app** template and apply the template.
+1. In the **Policy template** field, select the **New risky app** template and apply the template.
 
-3. Under **App matching all of the following** set the [Risk Score](risk-score.md) slider and the Compliance risk factor to customize the level of risk you want to trigger an alert, and set the other policy filters to meet your organization's security requirements.
+1. Under **App matching all of the following** set the [Risk Score](risk-score.md) slider and the Compliance risk factor to customize the level of risk you want to trigger an alert, and set the other policy filters to meet your organization's security requirements.
 
     1. Optional: To get more meaningful detections, customize the amount of traffic that will trigger an alert.
 
-    2. Check the **Trigger a policy match if all the following occur on the same day** checkbox.
+    1. Check the **Trigger a policy match if all the following occur on the same day** checkbox.
 
-    3. Select **Daily traffic** greater than 2000 GB (or other).
+    1. Select **Daily traffic** greater than 2000 GB (or other).
 
-4. Configure governance actions to be taken when an alert is triggered. Under **Governance**, select **Tag app as unsanctioned.**<br />Access to the app will be automatically blocked when the policy is matched.
+1. Configure governance actions to be taken when an alert is triggered. Under **Governance**, select **Tag app as unsanctioned.**<br />Access to the app will be automatically blocked when the policy is matched.
 
-5. Optional: Leverage [Defender for Cloud Apps native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
+1. Optional: Leverage [Defender for Cloud Apps native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
 
 ## Detect use of unsanctioned business apps
 
@@ -71,13 +71,13 @@ You can detect when your employees continue to use unsanctioned apps as a replac
 
 1. In the Cloud app catalog, search for your business-ready apps and mark them with a [custom app tag](discovered-app-queries.md#creating-and-managing-custom-app-tags).
 
-2. Follow the steps in [Detect new high volume or wide app usage](#detect-volume).
+1. Follow the steps in [Detect new high volume or wide app usage](#detect-volume).
 
-3. Add an **App tag** filter and choose the app tags you created for your business-ready apps.
+1. Add an **App tag** filter and choose the app tags you created for your business-ready apps.
 
-4. Configure governance actions to be taken when an alert is triggered. Under Governance, select **Tag app as unsanctioned**.<br />Access to the app will be automatically blocked when the policy is matched.
+1. Configure governance actions to be taken when an alert is triggered. Under Governance, select **Tag app as unsanctioned**.<br />Access to the app will be automatically blocked when the policy is matched.
 
-5. Optional: Leverage [Defender for Cloud Apps native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
+1. Optional: Leverage [Defender for Cloud Apps native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
 
 ## Detect unusual usage patterns on your network
 
@@ -89,15 +89,15 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. On the **Policies** page, create a new **Cloud Discovery anomaly detection policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new **Cloud Discovery anomaly detection policy**.
 
-2. In the **Policy template** field, select **Anomalous behavior in discovered users** or **Anomalous behavior in discovered IP addresses**.
+1. In the **Policy template** field, select **Anomalous behavior in discovered users** or **Anomalous behavior in discovered IP addresses**.
 
-3. Customize the filters to meet your organization's requirements.
+1. Customize the filters to meet your organization's requirements.
 
-4. If you want to be alerted only when there are anomalies involving risky apps, use the **Risk score** filters and set the range in which apps are considered risky.
+1. If you want to be alerted only when there are anomalies involving risky apps, use the **Risk score** filters and set the range in which apps are considered risky.
 
-5. Use the slider to **Select anomaly detection sensitivity**.
+1. Use the slider to **Select anomaly detection sensitivity**.
 
 > [!NOTE]
 > After continuous log upload is established, the anomaly detection engine takes a few days until a baseline (learning period), is established for the expected behavior in your organization. After a baseline is established, you start receiving alerts based on discrepancies from the expected traffic behavior across cloud apps made by users or from IP addresses.
@@ -112,7 +112,7 @@ Configure automatic log upload for continuous Cloud Discovery reports, as descri
 
 ### Steps
 
-1. On the **Policies** page, create a new **Cloud Discovery anomaly detection policy**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **Cloud Discovery anomaly detection policy**.
 
 1. Select the filter **App category** equals **Cloud storage**.
 
@@ -132,15 +132,15 @@ You must have the Google Workspace, Office 365, or Salesforce app connected usin
 
 ### Steps
 
-1. On the **Policies** page, create a new **OAuth app policy**.
+1. 1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Create a new  **OAuth app policy**.
 
-2. Select the filter **App** and set the app the policy should cover, Google Workspace, Office 365, or Salesforce.
+1. Select the filter **App** and set the app the policy should cover, Google Workspace, Office 365, or Salesforce.
 
-3. Select **Permission level** filter equals **High** (available for Google Workspace and Office 365).
+1. Select **Permission level** filter equals **High** (available for Google Workspace and Office 365).
 
-4. Add the filter **Community use** equals **Rare**.
+1. Add the filter **Community use** equals **Rare**.
 
-5. Configure the actions to take when an alert is triggered. For example, for Office 365, check **Revoke app** for OAuth apps detected by the policy.
+1. Configure the actions to take when an alert is triggered. For example, for Office 365, check **Revoke app** for OAuth apps detected by the policy.
 
 > [!NOTE]
 > Supported for Google Workspace, Office 365, and Salesforce app stores.
@@ -148,6 +148,6 @@ You must have the Google Workspace, Office 365, or Salesforce app connected usin
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

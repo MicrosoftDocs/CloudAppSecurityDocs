@@ -1,7 +1,7 @@
 ---
-title: Create session policies in Defender for Cloud Apps
+title: Session policies
 description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control session policy gain deep visibility into user session activities and block downloads using reverse proxy capabilities.
-ms.date: 01/09/2023
+ms.date: 03/27/2023
 ms.topic: how-to
 ---
 # Session policies
@@ -21,6 +21,9 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * [Block malware on upload](#block-malware-on-upload)
 * [Educate users to protect sensitive files](#educate-protect)
 
+> [!NOTE]
+> There is no limit to the number of policies that can be applied.
+
 ## Prerequisites to using session policies
 
 * Defender for Cloud Apps license (stand-alone or part of another license)
@@ -34,7 +37,7 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 
 To create a new session policy, follow this procedure:
 
-1. Go to **Control** > **Policies** > **Conditional access**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
 
 1. Select **Create policy** and select **Session policy**.
 
@@ -48,7 +51,7 @@ To create a new session policy, follow this procedure:
     1. Select **Control file download (with inspection)** if you want to monitor user activities. You can take additional actions like block or protect downloads for users.
     1. Select **Block activities** to block specific activities, which you can select using the **Activity type** filter. All activities from selected apps  will be monitored (and reported in the Activity log). The specific activities you select will be blocked if you select the **Block** action. The specific activities you selected will raise alerts if you select the **Test** action and have alerts turned on.
 
-1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These filters can include the following options for **Activity type**:
+1. Under **Activity source** in the **Activities matching all of the following** section, select additional activity filters to apply to the policy. These filters can include the following options:
 
     * **Device tags**: Use this filter to identify unmanaged devices.
 
@@ -76,9 +79,9 @@ To create a new session policy, follow this procedure:
 
         * **File name** - Use this filter to apply the policy to specific files.
         * **File type** - Use this filter to apply the policy to specific file types, for example, block download for all .xls files.
-    2. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and file content.
+    1. In the **Content inspection** section, set whether you want to enable the DLP engine to scan documents and file content.
 
-    3. Under **Actions**, select one of the following items:
+    1. Under **Actions**, select one of the following items:
 
         * **Test (Monitor all activities)**: Set this action to explicitly allow download according to the policy filters you set.
 
@@ -94,9 +97,9 @@ When you create a session policy, each user session that matches the policy is r
 
 If you don't want to notify the user that they're being monitored, you can disable the notification message.
 
-1. Under the settings cog, select **General settings**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-2. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
+1. Then, under **Conditional Access App Control** select **User monitoring** and unselect the **Notify users** checkbox.
 
 To keep the user within the session, Conditional Access App Control replaces all the relevant URLs, Java scripts, and cookies within the app session with Microsoft Defender for Cloud Apps URLs. For example, if the app returns a page with links whose domains end with myapp.com, Conditional Access App Control replaces the links with domains ending with something like `myapp.com.mcas.ms`. This way the entire session is monitored by Microsoft Defender for Cloud Apps.
 
@@ -104,16 +107,16 @@ Conditional Access App Control records the traffic logs of every user session th
 
 To export these logs:
 
-1. Go to the settings cog and select **Conditional Access App Control**.
-2. On the right side of the table, select the export button.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **Conditional Access App Control**.
+1. Above the table, select the export button.
 
     ![export button.](media/export-button.png)
-3. Select the range of the report and select **Export**. This process may take some time.
+1. Select the range of the report and select **Export**. This process may take some time.
 
 To download the exported log:
 
-1. After the report is ready, go to **Settings** and then **Exported reports**.
-2. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and select **Download**.
+1. After the report is ready, in the Microsoft 365 Defender portal go to ***Reports** -> **Cloud Apps** and then **Exported reports**.
+1. In the table, select the relevant report from the list of **Conditional Access App Control traffic logs** and select **Download**.
 
     ![download button.](media/download-button.png)
 
@@ -171,6 +174,13 @@ You can also configure session policies to block malware on download.
 It's important to educate users when they are in violation of a policy so that they learn how to comply with your organizational policies. Since every enterprise has unique needs and policies, Defender for Cloud Apps allows you to customize a policy's filters and the message it displays to the user when a violation is detected. You can give specific guidance to your users such as providing instructions on how to appropriately label a file, or how to enroll an unmanaged device, to ensure files are uploaded successfully.
 
 For example, if a user uploads a file without a sensitivity label, a message can be displayed explaining that the file contains sensitive content that requires an appropriate label. Similarly, if a user attempts to upload a document from an unmanaged device, a message with instructions on how to enroll that device or one that provides further explanation of why the device must be enrolled, can be displayed.
+
+## Conflicts between policies
+
+When there is a conflict between two policies, the more restrictive policy wins. 
+For example:
+- If a user session is scoped to a **Block download** policy and to a **Label upon download** policy, the file download action will be blocked.
+- If a user session is scoped to a **Block download** policy and to an **Audit download** policy, the file download action will be blocked.
 
 ## Related videos
 

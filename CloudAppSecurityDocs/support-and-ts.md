@@ -1,10 +1,10 @@
 ---
-title: Support and troubleshooting information for Defender for Cloud Apps
+title: Support and troubleshooting information
 description: This article describes your support and troubleshooting options for Microsoft Defender for Cloud Apps
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Support and troubleshooting Microsoft Defender for Cloud Apps
+# Support and troubleshooting information for Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -76,6 +76,7 @@ Check the [current status of Microsoft Defender for Cloud Apps](https://portal.m
 * Download [the Defender for Cloud Apps datasheet](https://download.microsoft.com/download/E/F/E/EFE908F8-7EDB-4244-8039-67BA574186CC/Microsoft_Cloud_App_Security_eBook.pdf)
 
 <a name="feedback"></a>
+
 ## How to provide feedback
 
 The Defender for Cloud Apps team is always eager to hear your thoughts about our product. Provide feedback using one of the following options:

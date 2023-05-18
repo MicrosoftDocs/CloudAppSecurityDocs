@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Cloud Apps for US Government offerings
+title: US Government offerings
 description: This article describes the features differences between Microsoft Defender for Cloud Apps for US Government offerings and the commercial offering.
-ms.date: 12/21/2022
+ms.date: 04/03/2023
 ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps for US Government offerings
@@ -34,8 +34,6 @@ Microsoft Defender for Cloud Apps for US Government offers parity with the Micro
 
 | Feature Name                           | Description                                                  | GCC     | GCC High | DoD     |
 | -------------------------------------- | ------------------------------------------------------------ | ------- | -------- | ------- |
-| **Microsoft Sentinel integration**         | Sharing alerts and Shadow IT Discovery telemetry with Microsoft Sentinel | Roadmap | Roadmap  | Roadmap |
-| **Microsoft Secure Score integration** | Surfacing Microsoft Defender for Cloud Apps controls in Microsoft Secure Score | Roadmap | Roadmap  | Roadmap |
 |**App governance add-on to Microsoft Defender for Cloud Apps** | App governance delivers full visibility, remediation, and governance into how Azure-connected apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. | Roadmap | Roadmap  | Roadmap |
 
 ## Next steps

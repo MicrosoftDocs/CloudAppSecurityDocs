@@ -1,10 +1,10 @@
 ---
 title: Lifecycle management strategy
 description: This article provides information about how plan a lifecycle management strategy to ensure your configurations, exclusions, and policies remain up to date.
-ms.date: 06/14/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Defender for Cloud Apps lifecycle management strategy
+# Lifecycle management strategy in Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -13,7 +13,7 @@ By using a lifecycle management strategy, you can ensure your configurations, ex
 >[!NOTE]
 >Remember to also check [What's New in Defender for Cloud Apps](release-notes.md) to stay current with new features and releases.
 
-![Microsoft Defender for Cloud Apps lifecycle management](media/cloud-app-security-lifecycle.png)
+![Microsoft Defender for Cloud Apps lifecycle management.](media/cloud-app-security-lifecycle.png)
 
 To best maintain Defender for Cloud Apps posture, regularly follow the recommendations below:
 
@@ -33,7 +33,7 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 
 - [Remove unneeded custom policies](control-cloud-apps-with-policies.md)
 - [Review new policy templates](control-cloud-apps-with-policies.md#create-a-policy)
-- Enhance policy strategy to determine what can be a [saved query](activity-filters-queries.md#activity-queries) versus what requires an [alert](managing-alerts.md)
+- Enhance policy strategy to determine what can be a [saved query](activity-filters-queries.md#activity-queries) versus what requires an [alert](/microsoft-365/security/defender/investigate-alerts)
 - Ensure [labeling strategy](azip-integration.md) is in line with current Security and Compliance configuration
 
 ## Discovery
@@ -44,7 +44,7 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 
 ## Settings
 
-- Review [managed domains](general-setup.md#set-up-the-portal)
+- Review [managed domains](general-setup.md)
 - Verify current [IP ranges](ip-tags.md) for Corporate and VPN
 - [Verify App Tag strategy and add/remove as needed](discovered-app-queries.md#creating-and-managing-custom-app-tags)
 - Check rights on [admin quarantine folder](use-case-admin-quarantine.md)
@@ -52,8 +52,6 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 - Review members allowed to view [private activities](activity-privacy.md)
 - Verify integrations are enabled:
   - [Microsoft Purview Information Protection](tutorial-dlp.md#phase-2-classify-sensitive-information)
-  - [Microsoft Defender for Identity](mdi-integration.md)
-  - [Azure Active Directory Information Protection](aadip-integration.md)
   - [Microsoft Defender for Endpoint](mde-integration.md)
 
 ## Next steps

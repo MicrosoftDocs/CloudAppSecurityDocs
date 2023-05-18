@@ -1,7 +1,7 @@
 ---
-title: Anonymize user data in Defender for Cloud Apps
+title: Cloud Discovery data anonymization
 description: This article provides information about how to protect user privacy by anonymizing the usernames in your Cloud Discovery data.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Cloud Discovery data anonymization
@@ -29,25 +29,24 @@ Key points:
 
     - You can set the default in Defender for Cloud Apps to anonymize all data from both snapshot reports from uploaded log files and continuous reports from log collectors as follows:
 
-        1. Select **Settings** > **Cloud Discovery settings**.
+        1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-        2. In the **Anonymization** tab, to anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
-        3. Select **Save**.
+        1. Under **Cloud Discovery**, select **Anonymization**. To anonymize usernames by default, select **Anonymize private information by default in new reports and data sources**. You can also select **Anonymize device information by default in 'Win10 Endpoint Users' report**.
 
         ![Anonymization settings page.](media/anonymizer1.png)
 
-2. When anonymization is selected, Defender for Cloud Apps parses the traffic log and extracts specific data attributes.
-3. Defender for Cloud Apps replaces the username with an encrypted username.
-4. It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
+1. When anonymization is selected, Defender for Cloud Apps parses the traffic log and extracts specific data attributes.
+1. Defender for Cloud Apps replaces the username with an encrypted username.
+1. It then analyzes cloud usage data and generates Cloud Discovery reports based on the anonymized data.
 
     ![Anonymize Cloud Discovery dashboard.](media/anonymize-dashboard.png)
 
-5. For a specific investigation, such as an investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
+1. For a specific investigation, such as an investigation of an anomalous usage alert, you can resolve the specific username in the portal and provide a business justification.
 
     > [!NOTE]
     > The following steps also work for device names on the **Devices** tab.
 
-    **To resolve a single username**
+    **To resolve a single username**:
 
     1. Select the three dots at the end of the row of the user you want to resolve and select **Deanonymize user**.
 
@@ -62,14 +61,14 @@ Key points:
 
     The following alternative way to resolve single usernames can also be used to look up the encrypted username of a known username.
 
-    1. Under the Settings cog, select **Cloud Discovery settings**.
+    1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-    1. In the **Anonymization** tab, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
+    1. Under **Cloud Discovery**, select **Anonymization**. Then, under **Anonymize and resolve usernames**  enter a justification for why you're doing the resolution.
     1. Under **Enter username to resolve**, select **From anonymized** and enter the anonymized username, or select **To anonymized** and enter the original username to resolve. Select **Resolve**.
 
         ![Resolve anonymization pop-up.](media/anonymizer.png)
 
-    **To resolve multiple usernames**
+    **To resolve multiple usernames**:
 
     1. Either select the checkboxes that appear when you hover over the user icons by the users you want to resolve or, in the top-left, corner select the **Bulk selection** checkbox.
 
@@ -83,7 +82,7 @@ Key points:
 
         ![Anonymize resolve pop-up.](media/anonymize-resolve-dialog.png)
 
-6. The action is audited in the portal's **Governance log**.
+1. The action is audited in the portal's **Governance log**.
 
     ![Anonymization action in governance log.](media/anonymize-gov-log.png)
 

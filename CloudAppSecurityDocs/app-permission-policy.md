@@ -1,16 +1,16 @@
 ---
-title: Create policies to control OAuth apps in Defender for Cloud Apps
+title: Create policies to control OAuth apps 
 description: This article provides instructions for creating and working with app permission policies in Microsoft Defender for Cloud Apps.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# OAuth app policies
+# Create policies to control OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users.
 
-OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enteprise Application.
+OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enterprise Application.
 
 ## Create a new OAuth app policy
 
@@ -18,15 +18,16 @@ There are two ways to create a new OAuth app policy. The first way is under **In
 
 To create a new OAuth app policy:
 
-1. Under **Investigate**, select **OAuth apps**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **OAuth apps**.
 
 1. Filter the apps according to your needs. For example, you can view all apps that request **Permission** to **Modify calendars in your mailbox**.
+1. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
 1. Select the **New policy from search** button.
     ![New policy from search.](media/app-permissions-filter.png)
-1. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
+
 1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.
 
-Alternatively, you can also create the policy by selecting **Control** followed by **Policies**. Then select **Create policy** followed by **OAuth app policy**.
+Alternatively, you can also create the policy in the Microsoft 365 Defender portal, by going to **Cloud Apps**-<> **Policies** -> **Policy management**. Then select **Create policy** followed by **OAuth app policy**.
 
    ![new OAuth app policy.](media/app-permissions-policy.png)
 
@@ -44,12 +45,6 @@ In addition to OAuth app policies you can create, there are the following out-of
 | Malicious OAuth app consent | Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps. |
 | Suspicious OAuth app file download activities | See [Anomaly detection policies](anomaly-detection-policy.md#suspicious-oauth-app-file-download-activities) |
 
-<!--
-| OAuth apps authorized by external users | Scans OAuth apps connected to your environment and triggers an alert when an app was authorized by an external user. |
-| OAuth apps with high permissions and rare community use – Google | Scans OAuth apps connected to your environment and triggers an alert for apps with high permissions and rare community use in Google. |
-| OAuth apps with high permissions and rare community use – Office | Scans OAuth apps connected to your environment and triggers an alert for apps with high permissions and rare community use in Office. |
-| OAuth apps with rare community use - Salesforce | Scans OAuth apps connected to your environment and triggers an alert for apps with rare community use in Salesforce. |
--->
 
 > [!NOTE]
 >

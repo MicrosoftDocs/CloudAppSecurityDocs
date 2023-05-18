@@ -1,10 +1,10 @@
 ---
-title: Defender for Cloud Apps external DLP integration over secure ICAP
+title: External DLP integration
 description: This article provides the steps necessary for configuring the ICAP connection in Defender for Cloud Apps and the stunnel setup.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# External DLP integration
+# External DLP integration in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -49,7 +49,7 @@ In this step, you set up the stunnel connected to your ICAP server.
 
 ### Install stunnel on a server
 
-**Prerequisites**
+#### Requirements
 
 - **A server** - either a Windows Server or a Linux server based on a major distribution.
 
@@ -153,7 +153,7 @@ Replace these variables:
 
 ### Download the Defender for Cloud Apps stunnel client public key
 
-Download the public key from this location: https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem
+Download the public key from this location: `https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem`
 and save it in this location:
 **/etc/ssl/certs/MCASCAfile.pem**
 
@@ -228,9 +228,9 @@ If the process is still not running, refer to the [stunnel documentation](https:
 
 ## STEP 3:  Connect to Defender for Cloud Apps
 
-1. In Defender for Cloud Apps, under **Settings** select **Security extensions** and select the **External DLP** tab.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Information protection**, select **External DLP**.
 
-2. Click on the plus to add a new connection.
+2. Select **Add connector** to add a new connection.
 
 3. In the **Add  new external DLP** wizard, provide a **Connection name** (for example My Forcepoint connector) that will be used to identify the connector.
 
@@ -333,7 +333,7 @@ Add the rule you created to any existing policies:
 This rule must be added to all existing policies.
 
 >[!NOTE]
-> If you use Symantec vontu to scan files from Dropbox, CAS automatically displays the file as originating from the following URL: http://misc/filename
+> If you use Symantec vontu to scan files from Dropbox, CAS automatically displays the file as originating from the following URL: `http://misc/filename`
 This placeholder url doesn't actually lead anywhere but is used for logging purposes.
 
 ## Next steps

@@ -1,10 +1,10 @@
 ---
-title: Overview of threat protection scenario 
+title: Protect your organization from ransomware
 description: This topic describes the scenario for protecting your organization against threats in your cloud environment.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Protecting your organization from ransomware
+# Protect your organization from ransomware
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -17,11 +17,11 @@ Ransomware is a cyber attack in which the attacker sends you a file that can blo
 >[!NOTE]
 > This use case applies to Office 365, Google Workspace, Box and Dropbox.
 
-## THE THREAT
+## The threat
 
 A user in your organization is the target of a ransomware attack. The user might unknowingly open an email infected and run ransomware, which infects the all of their files, including the files synced to the cloud.
 
-## THE SOLUTION
+## The solution
 
 Detect potential ransomware on your cloud environment by creating a policy to update you when suspicious activity is detected, and set up automated actions to prevent ransomware files from being saved to your cloud.
 
@@ -36,6 +36,6 @@ Detect potential ransomware on your cloud environment by creating a policy to up
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

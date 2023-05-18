@@ -1,7 +1,7 @@
 ---
-title: Visibility into cloud app activities 
+title: Activities 
 description: This article provides a list of activities, filters, and match parameters that can be applied to activity policies.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Activities
@@ -24,12 +24,12 @@ The basic filter provides you with great tools to get started filtering your act
 
 ![basic activity log filter.](media/activity-log-filter-basic.png)
 
-To drill down into more specific activities, you can expand the basic filter by selecting **Advanced**.
+To drill down into more specific activities, you can expand the basic filter by selecting **Advanced filters**.
 
 ![advanced activity log filter.](media/activity-log-filter-advanced.png)
 
 > [!NOTE]
-> The Legacy tag is added to any activity policy that use the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
+> The Legacy tag is added to any activity policy that uses the older "user" filter. This filter will continue to work as usual. If you want to remove the Legacy tag, you can remove the filter and add the filter again using the new **User name** filter.
 
 ## The Activity drawer
 
@@ -49,7 +49,7 @@ You can view more information about each activity, by selecting the Activity its
 
 - IP address category and tags: Select the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.
 
-The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the**add to filter** icon ![add to filter.](media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
+The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the**add to filter** icon ![add to filter.](media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon.](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
 You can also use the icons at the top of the tab to:
 
@@ -111,7 +111,7 @@ This opens the Activity drawer **IP address** tab, which provides the following 
 
 You can export all user activities to a CSV file.
 
-In the **Activity log**, in the top-right corner, select the **Export** button.
+In the **Activity log**, in the top-left corner, select the **Export** button.
 
 ![export button.](media/export-button.png)
 
@@ -120,6 +120,6 @@ In the **Activity log**, in the top-right corner, select the **Export** button.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

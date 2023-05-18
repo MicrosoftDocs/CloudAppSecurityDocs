@@ -1,7 +1,7 @@
 ---
-title: Add custom apps to Cloud Discovery in Defender for Cloud Apps
+title: Add custom apps to Cloud Discovery 
 description: This topic provides information about how to add custom apps to Cloud Discovery in Defender for Cloud Apps to monitor Shadow IT.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Add custom apps to Cloud Discovery
@@ -16,11 +16,11 @@ By adding a new custom cloud app, Defender for Cloud Apps can match uploaded fir
 
 ## Add a new custom cloud app
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Discover** and then **Cloud Discovery dashboard**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select **Cloud Discovery**. You should see the Cloud Discovery dashboard.
 
     ![cloud discovery dashboard menu.](media/cloud-discovery-dashboard-menu.png)
 
-1. In the top right corner, select the three dots and then select **Add new custom app**.
+1. In the top right corner, select the **Action** menu and then select **Add new custom app**.
 
     ![add custom app menu.](media/add-custom-app-menu.png)
 
@@ -40,7 +40,6 @@ At any time, you can select the three dots at the end of the row to edit or dele
 >[!NOTE]
 > Custom apps are automatically tagged with the **Custom app** tag after you add them. This app tag cannot be removed.
 In order to view all your custom apps, set the **App tag** filter to be equal to *Custom app*.
-<!-- - By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
 ## Next steps
 

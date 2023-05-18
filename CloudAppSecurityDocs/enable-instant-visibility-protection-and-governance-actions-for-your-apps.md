@@ -1,10 +1,11 @@
 ---
 title: Connect apps to get visibility and control 
 description: This article describes the process for connecting apps with API connectors to apps in your organization's cloud.
-ms.date: 12/21/2022
+ms.date: 04/24/2023
 ms.topic: how-to
 ---
-# Connect apps
+
+# Connect apps to get visibility and control with Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -55,6 +56,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               | ✔                                    |                                      |                                      | ✔                                    | Not applicable                              | ✔                         |
 | Azure             | ✔                                    | ✔                                    |                                      | ✔                                    |                                             | ✔                         |
 | Box               | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
+| Citrix share file  |  |  |  |   |
 | DocuSign          | ✔ |  |  | ✔ | ✔ | ✔ |
 | Dropbox           | ✔                                    | ✔                                    | ✔                                    | ✔                                    | ✔                                           | ✔                         |
 | Egnyte  | ✔ |  | ✔ | ✔ | ✔ | ✔ |
@@ -71,7 +73,9 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | ✔ | | ✔ |  | ✔ | ✔ |
 | Webex             | ✔                                    |                                      | ✔                                    |                                    | ✔                                           |  Not supported by provider |
 | Workday           | ✔                                    | Not supported by provider            | Not supported by provider            | ✔                                    | ✔                                           | Not supported by provider |
+|Workplace by Meta|✔||✔|✔|✔|✔|
 | Zendesk | ✔ |  | ✔ | ✔ | ✔ | ✔ |
+| Zoom  |  |  |  |   |
 
 ### User, app governance, and security configuration visibility
 
@@ -81,23 +85,27 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                                      | Not applicable            | Not applicable            |             |
 | Azure             |                                      |                           | Not supported by provider |  |
 | Box               | ✔                                    | Not supported by provider |                           |                           |
-| DocuSign          |  |  | | |
+| Citrix Share file          |  |  | | Preview  |
+| DocuSign          |  |  | | Preview  |
 | Dropbox           |                                      |                           |                            |                            |
 | Egnyte | | | | |
-| GitHub            |                                      | ✔                         |                           |                           |
+| GitHub            |                                      | ✔                         |                           | Preview                          |
 | GCP               | Subject Google Workspace  connection | Not applicable            | Not applicable            |             |
 | Google  Workspace | ✔                                    | ✔                         | ✔                         |                          |
 | NetDocuments  |  |  |  |  |
-| Office 365        | ✔                                    | ✔                         | ✔                         |                   |
-| Okta              |                                      | Not applicable            | Not applicable            |             |
+| Office 365        | ✔                                    | ✔                         | ✔                         | ✔                 |
+| Okta              |                                      | Not applicable            | Not applicable            | Preview            |
 | OneLogin | |  |  |  |
-| Service  Now      |                                      |                           |                           | Preview (At General Availability the licensing of this capability may be changed) |
-| Salesforce        | ✔                                    | ✔                         | ✔                         | Preview (At General Availability the licensing of this capability may be changed)                  |
+| Service  Now      |                                      |                           |                           | ✔ |
+| Salesforce        | ✔                                    | ✔                         | ✔                         | ✔ |
 | Slack |  |  |  |  |
 | Smartsheet | | | | |
 | Webex             |                                      | Not applicable            | Not applicable            |             |
 | Workday           | Not supported by provider            | Not applicable            | Not applicable            |             |
+|Workplace by Meta|||||
 | Zendesk  |  |  |  |  |
+| Zoom  |  |  |  | Preview  |
+
 
 ### Information protection
 
@@ -107,6 +115,7 @@ The following tables list, per cloud app, which abilities are supported with App
 | AWS               |                           | ✔ - S3 Bucket discovery only             | ✔                         | ✔                         | Not applicable                             |
 | Azure             |                           |                                          |                           |                           |                                            |
 | Box               | ✔                         | ✔                                        | ✔                         | ✔                         | ✔                                          |
+| Citrix share file  |  |  |  |   |
 | DocuSign          |  |  |  |  |  |
 | Dropbox           | ✔                         | ✔                                        | ✔                         | ✔                         |                                            |
 | Egnyte  |  |  |  |  | |
@@ -123,7 +132,9 @@ The following tables list, per cloud app, which abilities are supported with App
 | Smartsheet | | | | | |
 | Webex             | ✔                         | ✔                                        | ✔                         | ✔                         | Not applicable                             |
 | Workday           | Not supported by provider | Not supported by provider                | Not supported by provider | Not supported by provider | Not applicable                             |
+|Workplace by Meta||||||
 | Zendesk  |  |  |  |  |  |
+| Zoom  |  |  |  |   |
 
 ## Prerequisites
 
@@ -147,7 +158,7 @@ For more information about  Microsoft Peering, see [ExpressRoute circuits and ro
 
 To disable connected apps:
 
-1. In the **Connected apps** page, in the relevant row, click the three dots and select **Disable App connector**.
+1. In the **Connected apps** page, in the relevant row, select the three dots and choose **Disable App connector**.
 1. In the pop-up, click **Disable App connector instance** to confirm the action.
 
 Once disabled, the connector instance will stop consuming data from the connector.
@@ -156,7 +167,7 @@ Once disabled, the connector instance will stop consuming data from the connecto
 
 To re-enable connected apps:
 
-1. In the **Connected apps** page, in the relevant row, click the three dots and select **Edit app**. This starts the process to add a connector.
+1. In the **Connected apps** page, in the relevant row, select the three dots and choose **Edit settings**. This starts the process to add a connector.
 1. Add the connector using the steps in the relevant API connector guide. For example, if you are re-enabling GitHub, use the steps in [Connect GitHub Enterprise Cloud to Defender for Cloud Apps](./connect-github-ec.md).
 
 ## Related videos
@@ -167,6 +178,7 @@ To re-enable connected apps:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

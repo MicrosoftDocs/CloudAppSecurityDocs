@@ -1,11 +1,11 @@
 ---
-title: Access Defender for Cloud Apps with application context
+title: Access with application context
 description: Learn how to design a web app to get programmatic access to Defender for Cloud Apps without a user.
-ms.date: 10/26/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 
-# Create an app to access Microsoft Defender for Cloud Apps without a user
+# Access Microsoft Defender for Cloud Apps with application context
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -27,7 +27,7 @@ This article explains how to create an Azure AD application, get an access token
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](media/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](media/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -36,11 +36,11 @@ This article explains how to create an Azure AD application, get an access token
    > [!NOTE]
    > *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
 
-   ![add permission](media/add-permission.png)
+   ![add permission.](media/add-permission.png)
 
    - Select **Application permissions** > **Investigation.Read**, and then select **Add permissions**.
 
-        ![app permission](media/application-permissions.png)
+        ![app permission.](media/application-permissions.png)
 
      You need to select the relevant permissions. **Investigation.Read** is only an example. For other permission scopes, see [Supported permission scopes](#supported-permission-scopes)
 
@@ -51,18 +51,18 @@ This article explains how to create an Azure AD application, get an access token
      > [!NOTE]
      > Every time you add a permission, you must select **Grant admin consent** for the new permission to take effect.
 
-    ![Grant permissions](media/grant-consent.png)
+    ![Grant permissions.](media/grant-consent.png)
 
 6. To add a secret to the application, select **Certificates & secrets**, select **New client secret**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-    ![Image of create app key](media/webapp-create-key2.png)
+    ![Image of create app key.](media/webapp-create-key2.png)
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the **Application (client) ID** and the **Directory (tenant) ID**.
 
-   ![Image of created app id](media/app-and-tenant-ids.png)
+   ![Image of created app id.](media/app-and-tenant-ids.png)
 
 8. **For Microsoft Defender for Cloud Apps Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
@@ -123,17 +123,14 @@ $token = $authResponse.access_token
 
 ### Use C#
 
-The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
-
-> [!IMPORTANT]
-> The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020.   We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
+The following code was tested with NuGet Microsoft.Identity.Client 4.47.2.
 
 1. Create a new console application.
-1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Install NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. Add the following:
 
     ```text
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Copy and paste the following code in your app (don't forget to update the three variables: ```tenantId, appId, appSecret```):
@@ -142,14 +139,16 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
-    
     const string authority = "https://login.microsoftonline.com";
-    const string MCASResourceId = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
-    
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(MCASResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    const string audience = "05a65629-4c1b-48c1-a78b-804c4abdd4af";
+
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
+
+    List scopes = new List() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### Use Python
@@ -184,7 +183,7 @@ Ensure that you got the correct token:
 1. Validate that you get a 'roles' claim with the desired permissions
 1. In the following image, you can see a decoded token acquired from an app with permissions to all Microsoft Defender for Cloud Apps roles:
 
-![Image of token validation](media/webapp-decoded-token.png)
+![Image of token validation.](media/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Defender for Cloud Apps API
 

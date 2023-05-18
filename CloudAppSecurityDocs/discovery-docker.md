@@ -1,7 +1,7 @@
 ---
-title: Configure automatic log upload for continuous reports in Defender for Cloud Apps
+title: Configure automatic log upload for continuous reports
 description: This article describes the process configuring automatic log upload for continuous reports in Defender for Cloud Apps.
-ms.date: 01/03/2023
+ms.date: 02/20/2023
 ms.topic: how-to
 ---
 
@@ -17,9 +17,9 @@ Before setting up automatic log file collection, verify your log matches the exp
 
 > [!NOTE]
 >
-> * Defender for Cloud Apps provides support for forwarding logs from your SIEM server to the Log Collector assuming the logs are being forwarded in their original format. However, it is highly recommended that you integrate the log collector directly with your firewall and/or proxy.
-> * The log collector compresses data before it is uploaded. The outbound traffic on the log collector will be 10% of the size of the traffic logs it receives.
-> * If the log collector encounters issues, you will receive an alert after data wasn't received for 48 hours.
+> - Defender for Cloud Apps provides support for forwarding logs from your SIEM server to the Log Collector assuming the logs are being forwarded in their original format. However, it is highly recommended that you integrate the log collector directly with your firewall and/or proxy.
+> - The log collector compresses data before it is uploaded. The outbound traffic on the log collector will be 10% of the size of the traffic logs it receives.
+> - If the log collector encounters issues, you will receive an alert after data wasn't received for 48 hours.
 
 ## Prerequisites
 
@@ -28,19 +28,17 @@ Before setting up automatic log file collection, verify your log matches the exp
 - CPU Architecture: Intel® 64 and AMD 64
 - RAM: 4 GB
 - Set your firewall as described in [Network requirements](/defender-cloud-apps/network-requirements)
-   
+
+> [!NOTE]
+> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+>
+> `docker stop <collector_name>`
+>
+> `docker rm <collector_name>`
+
 
 > [!Note]
-> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
-> ```
->   
-> docker stop <collector_name>
-> 
-> docker rm <collector_name>
-> 
-> ```
-> 
-
+> To install a new log collector version, you'll need to stop your log collector, remove the current image, and install the new one.
 
 ## Log collector performance
 
@@ -48,6 +46,7 @@ The Log collector can successfully handle log capacity of up to 50 GB per hour. 
 
 - Network bandwidth - Your network bandwidth determines the log upload speed.
 - I/O performance of the virtual machine - Determines the speed at which logs are written to the log collector's disk. The log collector has a built-in safety mechanism that monitors the rate at which logs arrive and compares it to the upload rate. In cases of congestion, the log collector starts to drop log files. If your setup typically exceeds 50 GB per hour, it's recommended that you split the traffic between multiple log collectors.
+
 ## Deployment modes
 
 The Log Collector supports the **Container** deployment mode. It runs as a Docker image on [Windows](discovery-docker-windows.md), [Ubuntu on-premises](discovery-docker-ubuntu.md), [Ubuntu in Azure](discovery-docker-ubuntu-azure.md), [RHEL on-premises](discovery-docker-ubuntu.md) or CentOS.

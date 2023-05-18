@@ -1,10 +1,10 @@
 ---
-title: Deploy Defender for Cloud Apps Conditional Access App Control for any web app using Okta
+title: Deploy Conditional Access App Control for any web app using Okta
 description: This article provides information about how to deploy the Microsoft Defender for Cloud Apps Conditional Access App Control for any web app using Okta as the identity provider.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Onboard and deploy Conditional Access App Control for any web app using Okta as the identity provider (IdP)
+# Deploy Conditional Access App Control for any web app using Okta as the identity provider (IdP)
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -24,7 +24,6 @@ For this article, we'll use the Salesforce app as an example of a web app being 
 ## To configure session controls for your app using Okta as the IdP
 
 Use the following steps to route your web app sessions from Okta to Defender for Cloud Apps. For Azure AD configuration steps, see [Onboard and deploy Conditional Access App Control for custom apps using Azure Active Directory](proxy-deployment-any-app.md).
-
 
 > [!NOTE]
 > You can configure the app's SAML single sign-on information provided by Okta using one of the following methods:
@@ -71,9 +70,9 @@ Use the following steps to route your web app sessions from Okta to Defender for
 
 ## Step 2: Configure Defender for Cloud Apps with your app's SAML information
 
-1. In Defender for Cloud Apps, browse to **Investigate** > **Connected apps** > **Conditional Access App Control apps**.
-
-1. Click the plus sign, and in the pop-up, select the app you want to deploy, and then click **Start Wizard**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Connected apps**, select **Conditional Access App Control apps**.
+1. Select **+Add**, and in the pop-up, select the app you want to deploy, and then select **Start Wizard**.
 1. On the **APP INFORMATION** page, select **Fill in data manually**, in the **Assertion consumer service URL** enter the Salesforce **Login URL** you noted earlier, and then click **Next**.
 
     > [!NOTE]

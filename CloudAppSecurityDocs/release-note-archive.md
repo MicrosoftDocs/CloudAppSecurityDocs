@@ -1,10 +1,10 @@
 ---
-title: Archive of past updates in Defender for Cloud Apps
+title: Archive of past updates 
 description: This article is an archive that describes updates made in past releases of Defender for Cloud Apps.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Past-release archive of Microsoft Defender for Cloud Apps
+# Archive of past updates for Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -230,7 +230,7 @@ Microsoft Cloud App Security has extended its Cloud Discovery capabilities and i
 Microsoft Cloud App Security compliance and risk assessment now allows cloud providers to attest their app to be up to date in Cloud App Catalog. This pilot allows cloud providers to fill out a self-attestation questionnaire based on the Cloud App Catalog's risk attributes to make sure that their risk assessment in Cloud App Security is accurate and up-to-date. Users can then get an indication as to which risk attributes were attested by the provider (rather than assessed by the Cloud App Security team) and when each attribute was submitted by the provider. For more information, see [Attest your app](attest-your-app.md).
 
 - **Office 365 workload granularity**  
-When connecting Office 365 to Microsoft Cloud App Security, you now have control over which workloads you want to connect. For example, customers only interested in connecting Office 365 for activity monitoring can now do so during the connection process, or by editing an existing Office 365 connector. As part of this change, OneDrive and SharePoint will no longer be shown as separate connectors but will be included in the Office 365 connector as the _Office 365 files_ workload. Customers with an existing Office 365 connector are not impacted by this change.
+When connecting Office 365 to Microsoft Cloud App Security, you now have control over which workloads you want to connect. For example, customers only interested in connecting Office 365 for activity monitoring can now do so during the connection process, or by editing an existing Office 365 connector. As part of this change, OneDrive and SharePoint will no longer be shown as separate connectors but will be included in the Office 365 connector as the *Office 365 files* workload. Customers with an existing Office 365 connector are not impacted by this change.
 
 - **Enhanced Teams support**  
 You can now monitor and block message sending in the Teams web app in real time, by configuring a Session policy based on sensitive content.
@@ -560,7 +560,7 @@ Released May 27, 2018
 13 new risk factors were added to Microsoft Cloud App Security. These risk factors follow the checklist of the GDPR framework to enable you to assess the apps in the Cloud App Catalog according to the GDPR regulations.
 
 - **Integrate with Microsoft Data Classification Service**  
-Microsoft Cloud App Security now enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps.   
+Microsoft Cloud App Security now enables you to utilize the Microsoft Data Classification Service natively, to classify the files in your cloud apps.
 The Microsoft Data Classification Service provides a unified information protection experience across Office 365, Azure Information Protection, and Microsoft Cloud App Security. It allows you to extend the same data classification framework to the third-party cloud apps that are protected by Microsoft Cloud App Security, leveraging the decisions you already made across an even greater number of apps.
 
 - **Connect to Microsoft Azure** (gradual rollout)  

@@ -1,7 +1,7 @@
 ---
-title: Access Defender for Cloud Apps with user context
+title: Access with user context
 description: Learn how to create an application to get programmatic access to Defender for Cloud Apps on behalf of a user.
-ms.date: 06/14/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Access Microsoft Defender for Cloud Apps API with user context
@@ -37,7 +37,7 @@ This page explains how to create an Azure AD application, get an access token to
 
 1. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](media/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](media/atp-azure-new-app2.png)
 
 1. When the **Register an application** page appears, enter your application's registration information:
 
@@ -64,11 +64,11 @@ This page explains how to create an Azure AD application, get an access token to
 
     - **Note**: *Microsoft Cloud App Security* does not appear in the original list. Start writing its name in the text box to see it appear. Make sure to type this name, even though the product is now called Defender for Cloud Apps.
 
-      ![add permission](media/add-permission.png)
+      ![add permission.](media/add-permission.png)
 
     - Choose **Delegated permissions** > **Investigation.Read** > select **Add permissions**
 
-      ![application permissions](media/application-permissions-public-client.png)
+      ![application permissions.](media/application-permissions-public-client.png)
 
     - **Important note**: Select the relevant permissions. **Investigation.Read** is only an example. For other permission scopes, see [Supported permission scopes](#supported-permission-scopes)
 
@@ -78,13 +78,13 @@ This page explains how to create an Azure AD application, get an access token to
 
       **Note**: Every time you add permission you must select **Grant admin consent** for the new permission to take effect.
 
-      ![Image of Grant permissions](media/grant-consent.png)
+      ![Image of Grant permissions.](media/grant-consent.png)
 
 1. Write down your application ID and your tenant ID:
 
    - On your application page, go to **Overview** and copy the following information:
 
-        ![Image of created app id](media/app-and-tenant-ids.png)
+        ![Image of created app id.](media/app-and-tenant-ids.png)
 
 ## Supported permission scopes
 
@@ -154,7 +154,7 @@ Verify to make sure you got a correct token:
 - Validate that you get a 'scp' claim with the desired app permissions
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-    ![Image of token validation](media/webapp-decoded-token.png)
+    ![Image of token validation.](media/webapp-decoded-token.png)
 
 ## Use the token to access the Microsoft Defender for Cloud Apps API
 

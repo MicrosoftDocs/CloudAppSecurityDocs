@@ -1,7 +1,7 @@
 ---
 title: Advanced log collector management
 description: This article provides information about how advanced management tasks for Defender for Cloud Apps Cloud Discovery log collectors.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Advanced log collector management
@@ -53,7 +53,7 @@ Follow this procedure to customize the certificate files you use for secure conn
     ![Upload certificate files.](media/log-collector-advanced-tasks/new-certs.png)
 
     - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
-    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem, and **server-cert.pem**. If any of the files are missing, the update won't take place.
+    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem**, and **server-cert.pem**. If any of the files are missing, the update won't take place.
 
 1. In a terminal window run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 
@@ -126,8 +126,8 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
 You should see your imported proxy CA certificate.
 
 #### Restrict IP addresses sending syslog messages to the log collector on Linux
-To secure the docker image and ensure that only one IP address is allowed to send the syslog messages to the log collector, an IP table rule can be created on the host machine to allow input traffic over (TCP/601 or UDP/514 depending on the deployment) and drop the traffic coming over those ports. 
 
+To secure the docker image and ensure that only one IP address is allowed to send the syslog messages to the log collector, an IP table rule can be created on the host machine to allow input traffic over (TCP/601 or UDP/514 depending on the deployment) and drop the traffic coming over those ports.
 
 This is an example of an IP table rule that can be added to the host machine to allow IP address 1.2.3.4 to connect to the log collector container over TCP port 601 and drop all other connections coming from other IP addresses over that port:
 
@@ -161,9 +161,6 @@ The log collector is now able to communicate with Defender for Cloud Apps. After
 ### How to change the Java KeyStore password
 
 1. Stop the Java KeyStore server.
-
-<!-- /opt/jdk/amazon-corretto-8.222.10.1-linux-x64/jre/lib/security -->
-
 1. Open a bash shell inside the container and go to the *appdata/conf* folder.
 1. Change the server KeyStore password by using this command:
 
@@ -263,9 +260,9 @@ Use these steps to download the log collector image using a computer that has ac
 >
 > - The downloaded image can be imported either in your private repository or directly on your host. The following steps guide you through downloading your log collector image to your Windows computer and then uses WinSCP to move the log collector to your destination host.
 > - To install Docker on your host, download the desired operating system:
->   - https://download.docker.com/linux/ubuntu
->   - https://download.docker.com/linux/centos/
->   - https://download.docker.com/linux/rhel/
+>   - <https://download.docker.com/linux/ubuntu>
+>   - <https://download.docker.com/linux/centos/>
+>   - <https://download.docker.com/linux/rhel/>
 >
 > After the download, use the [offline installation guide](https://docs.docker.com/engine/install/binaries/) to install your operating system.
 
@@ -357,7 +354,8 @@ The following table lists of the default listening ports for receivers:
 
 Use these steps to define custom ports.
 
-1. In Defender for Cloud Apps, click the settings icon followed by **Log collectors**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
+1. Under **Cloud Discovery**, select **Automatic log upload**. Then select the **Log collectors** tab.
 
 1. On the **Log collectors** tab, add or edit a log collector and after updating the data sources, copy the run command from the dialog.
 
@@ -411,7 +409,7 @@ Use these steps to validate the traffic received by log collectors.
         1. Install *netcat* and *wget*.
 
         1. Download, and if required unzip, a sample log, as follows:
-            1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), click **Discover**, and then click **Create snapshot report**.
+            1. In the Microsoft 365 Defender portal, under **Cloud Apps**, choose **Cloud Discovery**. Then select the **Actions** menu in the top right corner and choose **Create Cloud Discovery snapshot report**.
             1. Select the **Data source** from which you want to upload the log files.
             1. Click **View and verify** then right-click **Download sample log** and copy the URL address link.
             1. Click **Close**.

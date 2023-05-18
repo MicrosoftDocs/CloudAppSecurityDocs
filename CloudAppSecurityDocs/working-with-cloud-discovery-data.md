@@ -1,7 +1,7 @@
 ---
-title: Use Cloud Discovery data to detect risky behavior 
+title: Working with discovery data
 description: This topic provides instructions for how to work with Cloud Discovery data, including working with the app risk score.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
 # Working with discovery data
@@ -95,6 +95,6 @@ To delete Cloud Discovery data:
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -1,6 +1,6 @@
 ---
 title: Monitor and respond to apps with unusual data usage
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 description: Monitor and respond to apps with unusual data usage.
 ---

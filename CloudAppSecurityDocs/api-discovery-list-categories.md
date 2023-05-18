@@ -1,7 +1,7 @@
 ---
 title: List continuous report categories - Cloud Discovery API
 description: This article describes the list continuous report categories request in the Defender for Cloud Apps Cloud Discovery API.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # List continuous report categories - Cloud Discovery API

@@ -1,7 +1,7 @@
 ---
-title: Defender for Cloud Apps Entities API
+title: Entities API
 description: This article provides information about using the Entities API.
-ms.date: 02/02/2022
+ms.date: 01/29/2023
 ms.topic: reference
 ---
 # Entities API

@@ -1,7 +1,7 @@
 ---
-title: Connect Office 365 to Defender for Cloud Apps 
+title: Connect Office 365
 description: This article provides information about how to connect your Office 365 to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/09/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Office 365 to Microsoft Defender for Cloud Apps
@@ -35,24 +35,24 @@ Defender for Cloud Apps integrates directly with [Office 365's audit logs](/micr
 >- In SharePoint, Defender for Cloud Apps supports quarantine tasks only for files with **Shared Documents** in path in English.
 > - Events from **Exchange**, **Power BI**, and **Teams** will only appear after activities from those services are detected in the portal.
 
-1. In the **Connected apps** page, under **App connectors**, select **+Connect an app** and then select **Office 365**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**.
+1. In the **App connectors** page, select **+Connect an app**, and then select **Office 365**.
 
-    ![connect O365 menu option.](media/connect-o365.png)
+    ![Connect O365 menu option.](media/connect-o365.png)
 
-1. In the Office 365 pop-up, select **Connect Office 365**.
-
-    ![connect O365 pop-up.](media/office-connect.png)
-
-1. In the Office 365 components page, select the options you require, and then select **Connect**.
+1. In the **Select Office 365 components** page, select the options you require, and then select **Connect**.
 
     > [!NOTE]
     >
     > - For best protection, we recommend selecting all Office 365 components.
-    > - The **Office 365 files** component, requires the **Office 365 activities** component and Defender for Cloud Apps file monitoring (**Settings** > **Files** > **Enable file monitoring**).
+    > - The **Azure AD files** component, requires the **Azure AD activities** component and Defender for Cloud Apps file monitoring (**Settings** > **Cloud Apps** > **Files** > **Enable file monitoring**).
 
     ![connect O365 components.](media/connect-o365-components.png)
 
-1. After Office 365 is displayed as successfully connected, select **Close**.
+1. On the **Follow the link** page, select **Connect Office 365**.
+
+1. After Office 365 is displayed as successfully connected, select **Done**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 > [!NOTE]
 > After connecting Office 365, you will see data from a week back including any third-party applications connected to Office 365 that are pulling APIs. For third-party apps that weren't pulling APIs prior to connection, you see events from the moment you connect Office 365 because Defender for Cloud Apps turns on any APIs that had been off by default.

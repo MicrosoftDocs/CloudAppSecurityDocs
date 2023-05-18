@@ -1,10 +1,10 @@
 ---
 title: Best practices for protecting your organization 
 description: This article provides a set of best practices for protecting your organization.
-ms.date: 12/21/2022
+ms.date: 02/19/2023
 ms.topic: quickstart
 ---
-# Defender for Cloud Apps best practices
+# Best practices for protecting your organization with Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -157,7 +157,7 @@ Defender for Cloud Apps provides you with the ability to investigate and monitor
 ## Block and protect download of sensitive data to unmanaged or risky devices
 
 **Best practice**: Manage and control access to high risk devices  
-**Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you do not to create session policies to monitor high-risk sessions, you will lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
+**Detail**: Use Conditional Access App Control to set controls on your SaaS apps. You can create session policies to monitor your high risk, low trust sessions. Similarly, you can create session policies to block and protect downloads by users trying to access sensitive data from unmanaged or risky devices. If you don't create session policies to monitor high-risk sessions, you'll lose the ability to block and protect downloads in the web client, as well as the ability to monitor low-trust session both in Microsoft and third-party apps.  
 **For more information**:
 
 * [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](proxy-intro-aad.md)
@@ -201,7 +201,7 @@ Anomaly detection policies are triggered when there are unusual activities perfo
 
 * [Get instantaneous behavioral analytics and anomaly detection](anomaly-detection-policy.md)
 * [Working with IP ranges and tags](ip-tags.md)
-* [Monitor alerts in Defender for Cloud Apps](monitor-alerts.md)
+
 
 ---
 
@@ -250,20 +250,6 @@ When dismissing alerts, it's important to investigate and understand why they ar
 * [Connect Azure to Microsoft Defender for Cloud Apps](./connect-azure.md)
 * [Connect AWS to Microsoft Defender for Cloud Apps](./connect-aws.md)
 * [Connect GCP to Microsoft Defender for Cloud Apps (Preview)](./connect-google-gcp.md)
-
----
-
-**Best practice**: Review security configuration assessments for Azure, AWS and GCP  
-**Detail**: Integrating with Microsoft Defender for Cloud provides you with a security configuration assessment of your Azure environment. The assessment provides recommendations for missing configuration and security control. Reviewing these recommendations helps you identify anomalies and potential vulnerabilities in your environment, and navigate directly in the relevant location in the Azure Security portal to resolve them.
-
-AWS and GCP give you the ability to gain visibility into your security configurations recommendations on how to improve your cloud security.
-
-Use these recommendations to monitor the compliance status and security posture of your entire organization, including Azure subscriptions, AWS accounts, and GCP projects.  
-**For more information**:
-
-* [Security configuration for Azure](security-config.md)
-* [Security configuration for AWS](security-config-aws.md)
-* [Security configuration for GCP](security-config-gcp.md)
 
 ---
 

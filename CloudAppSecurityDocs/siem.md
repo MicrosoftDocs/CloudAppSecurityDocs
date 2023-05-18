@@ -1,7 +1,7 @@
 ---
-title: Generic SIEM integration with Defender for Cloud Apps
+title: Generic SIEM integration 
 description: This article provides information integrating your generic SIEM with Defender for Cloud Apps.
-ms.date: 12/21/2022
+ms.date: 04/13/2023
 ms.topic: how-to
 ---
 # Generic SIEM integration
@@ -56,9 +56,9 @@ Integrating with your SIEM is accomplished in three steps:
 
 ### Step 1: Set it up in the Defender for Cloud Apps portal
 
-1. In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), under the **Settings** cog, select **Security extensions**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**.
 
-1. On the **SIEM agents** tab, select "add" (**+**), and then choose **Generic SIEM**.
+1. Under **System**, choose **SIEM agents**. Select **Add SIEM agent**, and then choose **Generic SIEM**.
 
     ![Screenshot showing Add SIEM integration menu.](media/siem0.png)
 
@@ -163,10 +163,12 @@ The following text is an alerts logfile example:
 
 ### Step 3: Validate that the SIEM agent is working
 
-1. Make sure the status of the SIEM agent in the Defender for Cloud Apps portal isn't **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours. The status shows as **Disconnected** if the connection is down for over 12 hours.
- ![SIEM disconnected.](media/siem-not-connected.png)
+1. Make sure the status of the SIEM agent in the portal isn't **Connection error** or **Disconnected** and there are no agent notifications. It will show up as **Connection error** if the connection is down for more than two hours. The status shows as **Disconnected** if the connection is down for over 12 hours.
+
+    ![SIEM disconnected.](media/siem-not-connected.png)
 
     Instead, the status should be connected, as seen here:
+
     ![SIEM connected.](media/siem-connected.png)
 
 1. In your Syslog/SIEM server, make sure you see activities and alerts arriving from Defender for Cloud Apps.

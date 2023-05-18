@@ -1,14 +1,14 @@
 ---
-title: Control which third-party cloud OAuth apps get permissions 
+title: Manage OAuth apps
 description: This article provides information about how you can control, ban and allow third-party OAuth apps.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Manage OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications. 
+Many third-party productivity apps that might be installed by business users in your organization request permission to access user information and data and sign in on behalf of the user in other cloud apps, such as Office 365, Google Workspace and Salesforce. When users install these apps, they often click accept without closely reviewing the details in the prompt, including granting permissions to the app. This problem is compounded by the fact that IT may not have enough insight to weigh the security risk of an application against the productivity benefit that it provides. Because accepting third-party app permissions is a potential security risk to your organization, monitoring the app permissions your users grant gives you the necessary visibility and control to protect your users and your applications.
 
 The Microsoft Defender for Cloud Apps app permissions enable you to see which user-installed OAuth applications have access to Office 365 data, Google Workspace data, and Salesforce data. Defender for Cloud Apps tells you what permissions the apps have and which users granted these apps access to their Office 365, Google Workspace, and Salesforce accounts. App permissions help you decide which apps you allow your users to access and which ones you want to ban.
 
@@ -26,7 +26,7 @@ The **OAuth** page displays information about app permissions in your connected 
 
 To access the OAuth tab:
 
-In the [Defender for Cloud Apps portal](https://portal.cloudappsecurity.com/), select **Investigate**, and then **OAuth apps**.
+In the Microsoft 365 Defender portal, under **Cloud Apps** select **OAuth apps**.
 
 ![app permissions.](media/app-permissions.png)
 
@@ -53,7 +53,7 @@ The OAuth apps page provides the following information about each OAuth app that
 
     - Select **Permissions** to view a full list of permissions that were granted to the app.
     - Under **Community use**, you can view how common the app is in other organizations.
-    - Select **Related activity** to view the activities that are listed in the activity log related to this app.
+    - Select **App activity** to view the activities that are listed in the activity log related to this app.
 
 2. To ban the app, select the ban icon at the end of the app row in the table.
 

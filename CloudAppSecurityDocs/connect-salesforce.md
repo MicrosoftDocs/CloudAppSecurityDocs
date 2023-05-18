@@ -1,7 +1,7 @@
 ---
-title: Connect Salesforce to Defender for Cloud Apps
+title: Connect Salesforce
 description: This article provides information about how to connect your Salesforce to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 01/10/2023
+ms.date: 04/03/2023
 ms.topic: how-to
 ---
 # Connect Salesforce to Microsoft Defender for Cloud Apps
@@ -14,7 +14,6 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
 > [!NOTE]
 > Salesforce Shield should be available for your Salesforce instance as a prerequisite for this integration.
-> 
 
 1. It's recommended to have a dedicated service admin account for Defender for Cloud Apps.
 
@@ -68,9 +67,9 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
         ![Salesforce session settings.](media/salesforce-setup-session-settings.png)
 
     1. Select **Save**.
-    
+
     1. Go to **Build** -> **Customize** -> **Salesforce Files** -> **Settings** -> **Content Deliveries and Public Links**.
-    
+
     1. Select **Edit** and then select **Checked Content Deliveries feature can be enabled for users**
 
     1. Select **Save**.
@@ -78,13 +77,17 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 > [!NOTE]
 > The Content Deliveries feature needs to be enabled for Defender for Cloud Apps to query file sharing data. For more information, see [ContentDistribution](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contentdistribution.htm).
 
+## How to connect Defender for Cloud Apps to Salesforce
+
 1. In the Defender for Cloud Apps console, select **Investigate** and then **Connected apps**.
 
-1. In the **App connectors** page, select the plus button followed by **Salesforce**.
+1. In the **App connectors** page, select **+Connect an app** followed by **Salesforce**.
 
-    ![Connect salesforce.](media/connect-salesforce.png)
+    ![Connect Salesforce.](media/connect-salesforce.png)
 
-1. In the Salesforce settings page, on the API tab, select **Follow this link**, depending on which instance you want to install.
+1. In the next window, give the connection a name and select **Next**.
+
+1. In the **Follow the link** page, select **Connect Salesforce**.
 
 1. This opens the Salesforce sign in page. Enter your credentials to allow Defender for Cloud Apps access to your team's Salesforce app.
 
@@ -96,9 +99,7 @@ This article provides instructions for connecting Microsoft  Defender for Cloud 
 
 1. Back in the Defender for Cloud Apps console, you should see the Salesforce was successfully connected message.
 
-1. Make sure the connection succeeded by clicking **Test Now**.
-
-    Testing may take a couple of minutes. After receiving a success notice, select **Done**.
+1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **Connected apps**, select **App Connectors**. Make sure the status of the connected App Connector is **Connected**.
 
 After connecting Salesforce, you'll receive Events as follows: Log in events and Setup Audit Trail for 60 days prior to connection, EventMonitoring 30 days, or 1 day back - depending on your Salesforce EventMonitoring license. The Defender for Cloud Apps API communicates directly with the APIs available from Salesforce. Because Salesforce limits the number of API calls it can receive, Defender for Cloud Apps takes this into account and respects the limitation. Salesforce APIs send each response with a field for the API counters, including total available and remaining. Defender for Cloud Apps calculates this into a percentage and makes sure to always leave 10% of available API calls remaining.
 
@@ -107,10 +108,9 @@ After connecting Salesforce, you'll receive Events as follows: Log in events and
 > Limiting API calls due to the limitation may slow down the rate at which data is ingested in Defender for Cloud Apps, but usually catches up over night.
 
 > [!NOTE]
-> If your Salesforce instance is not in English, make sure to select the appropriate **language** attribute value for the integration service admin account. 
+> If your Salesforce instance is not in English, make sure to select the appropriate **language** attribute value for the integration service admin account.
 >
-> To change the language attribute, navigate to **Administration** -> **Users** -> **User** and open the integration system admin account. Now navigate to **Locale Settings** -> **Language** and select the desired langugage.
-
+> To change the language attribute, navigate to **Administration** -> **Users** -> **User** and open the integration system admin account. Now navigate to **Locale Settings** -> **Language** and select the desired language.
 
 Salesforce events are processed by Defender for Cloud Apps as follows:
 

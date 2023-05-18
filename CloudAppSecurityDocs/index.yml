@@ -11,8 +11,8 @@ metadata:
   ms.subservice: na
   ms.topic: landing-page
   ms.collection: na
-  author: dcurwin
-  ms.author: dacurwin
+  author: batamig
+  ms.author: bagol
   ms.date: 11/09/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -27,8 +27,10 @@ landingContent:
         links:
           - text: What is Defender for Cloud Apps?
             url: ./what-is-defender-for-cloud-apps.md
-          - text: Top 20 CASB use cases
-            url: https://securityhub.transform.microsoft.com/download/8aced378-e9d5-4647-8968-034239b63688
+          - text: Top SaaS app use cases
+            url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW11pbJ
+          - text: SaaS Security
+            url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW10AbW
       - linkListType: whats-new
         links:
           - text: Releases
@@ -67,8 +69,6 @@ landingContent:
             url: tutorial-proxy.md
           - text: Block download of sensitive information
             url: use-case-proxy-block-session-aad.md
-          - text: Manage cloud platform security
-            url: tutorial-cloud-platform-security.md
           - text: Protect files with admin quarantine
             url: use-case-admin-quarantine.md
           - text: Apply sensitivity labels from Microsoft Purview Information Protection

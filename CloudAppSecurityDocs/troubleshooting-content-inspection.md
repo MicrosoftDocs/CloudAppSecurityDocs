@@ -1,10 +1,10 @@
 ---
 title: Troubleshooting content inspection errors 
 description: This article provides a list of content inspection statuses and their meanings.
-ms.date: 02/22/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
-# Troubleshooting content inspection
+# Troubleshooting content inspection errors
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -36,6 +36,6 @@ The table lists each content inspection status and its description.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

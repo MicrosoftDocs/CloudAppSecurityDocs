@@ -1,12 +1,28 @@
 ---
-title: How Defender for Cloud Apps performs built-in DLP content inspection
+title: Built-in DLP content inspection
 description: This article describes the process Microsoft Defender for Cloud Apps follows when running the built-in DLP content inspection on data in your cloud.
-ms.date: 02/02/2022
+ms.date: 02/23/2023
 ms.topic: how-to
 ---
-# Built-in content inspection
+
+# Built-in DLP content inspection in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+> [!IMPORTANT]
+> Effective March 2023, we're retiring the built-in DLP content inspection engine. To ensure a smooth transition, we highly recommend that you begin transitioning your policies to the Data Classification Services (DCS) Content Inspection Engine.  While the built-in DLP engine will continue to work, we strongly advise you to move your policies to the DCS engine to take advantage of its improved capabilities.  
+>
+> Here's how to migrate:
+>
+> Disable policies that include a content inspection condition with the built-in engine. This will ensure that all matched files remain unchanged until the specified transition date.
+> 
+> Create a new policy that includes the following two conditions:
+> 
+> - A metadata condition with a "starting date" to avoid scanning all files from the start.
+> - A content inspection condition using the DCS engine.
+>     
+> 
+> For more information, see [Microsoft Data Classification Services integration](dcs-inspection.md).
 
 This article describes the process Microsoft Defender for Cloud Apps follows when running the built-in DLP content inspection on data in your cloud.
 
@@ -66,3 +82,4 @@ The Defender for Cloud Apps content inspection engine:
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+

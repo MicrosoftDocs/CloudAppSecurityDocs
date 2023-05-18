@@ -1,7 +1,7 @@
 ---
-title: Blocking discovered apps 
+title: Govern discovered apps 
 description: This article describes the procedure for governing your discovered apps by blocking their usage in your organization.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 
@@ -58,6 +58,6 @@ If there's a conflict between [manual governance actions](#sanctioningunsanction
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

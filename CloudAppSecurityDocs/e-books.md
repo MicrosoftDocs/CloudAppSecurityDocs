@@ -1,7 +1,7 @@
 ---
 title: Read our e-books 
 description: Displays a listing of ebooks, including a description.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: conceptual
 ---
 # Microsoft Defender for Cloud Apps e-books

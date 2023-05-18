@@ -1,10 +1,10 @@
 ---
-title: Create Defender for Cloud Apps access policies to allow and block access
+title: Access policies
 description: This article describes the procedure for setting up a Defender for Cloud Apps Conditional Access App Control access policy to allow and block access to apps connected through Azure AD using reverse proxy capabilities.
-ms.date: 01/09/2023
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Access policies
+# Access policies in Microsoft Defender for Cloud Apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
@@ -25,7 +25,7 @@ Microsoft Defender for Cloud Apps access policies enable real-time monitoring an
 
 To create a new access policy, follow this procedure:
 
-1. Go to **Control** > **Policies** > **Conditional access**.
+1. In the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy management**. Then select the **Conditional access** tab.
 
 1. Select **Create policy** and then select **Access policy**.
 
@@ -33,7 +33,7 @@ To create a new access policy, follow this procedure:
 
 1. In the **Access policy** window, assign a name for your policy, such as *Block access from unmanaged devices*.
 
-1. In the **Activities matching all of the following** section, Under **Activity source**, select additional activity filters to apply to the policy. Filters include the following options:
+1. In the **Activities matching all of the following** section, select additional activity filters to apply to the policy. Filters include the following options:
 
     - **Device tags**: Use this filter to identify unmanaged devices.
 

@@ -1,6 +1,6 @@
 ---
 title: App governance trial user guide
-ms.date: 12/21/2022
+ms.date: 03/16/2023
 ms.topic: conceptual
 description: Step-by-step guide to help you quickly get started with the app governance add-on trial
 ---
@@ -23,7 +23,7 @@ You can deploy three broad solution types to control and protect from risks pose
 
 These three solutions together provide a three-pronged approach to holistically protect against app threats across the app lifecycle.
 
-:::image type="content" source="media/app-governance/three-solutions.png" alt-text="Three solutions to manage risk from apps":::
+:::image type="content" source="media/app-governance/three-solutions.png" alt-text="Three solutions to manage risk from apps.":::
 
 ## Microsoft Defender for Cloud Apps
 
@@ -37,14 +37,14 @@ Microsoft Defender for Cloud Apps is a cloud access security broker (CASB) that 
 
 - Surface misconfigurations in your cloud apps and provide remediation actions to elevate the overall security posture in your organization
 
-:::image type="content" source="media/app-governance/defender-cloud-apps-protections.png" alt-text="Ways that Defender for Cloud Apps protects":::
+:::image type="content" source="media/app-governance/defender-cloud-apps-protections.png" alt-text="Ways that Defender for Cloud Apps protects.":::
 
 For information about licensing, see the [Microsoft Defender for Cloud Apps product page](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-cloud-apps?rtc=1).
 
 ## What is the app governance add-on for Defender for Cloud Apps?
 
 The app governance add-on gives you in-depth governance against risky app behavior in your Microsoft 365 environment. It provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. It's designed to secure OAuth-enabled apps registered on Azure AD.
-:::image type="content" source="media/app-governance/app-governance-add-on.png" alt-text="App governance add on":::
+:::image type="content" source="media/app-governance/app-governance-add-on.png" alt-text="App governance add on.":::
 
 App governance add-on offers an in-depth Microsoft 365 platform-level view & control of app behavior.
 
@@ -130,7 +130,7 @@ Try these actions:
 
 - [Investigate anomaly detection alerts:](app-governance-anomaly-detection-alerts.md) App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks.
 
-- [Remediate app threats:](app-governance-detect-remediate-detect-threats.md) You remediate app threats to your Microsoft 365 tenant through the Alerts page of the Microsoft app governance section of the Microsoft 365 Defender.
+- [Remediate app threats:](/defender-cloud-apps/app-governance-manage-alerts) You remediate app threats to your Microsoft 365 tenant through the Alerts page of the Microsoft app governance section of the Microsoft 365 Defender.
 
 ## Resources for the Microsoft Defender for Cloud Apps app governance add-on
 
@@ -143,4 +143,3 @@ Try these actions:
 - Videos: [YouTube play list for AppG](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
 
 - Security Summit video: [App Governance segment](https://mssecuritysummit.event.microsoft.com/Home/Security) starts at 11:50 mark. You need to register to view.
-

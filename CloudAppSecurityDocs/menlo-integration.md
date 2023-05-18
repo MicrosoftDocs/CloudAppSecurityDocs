@@ -1,7 +1,7 @@
 ---
-title: Integrate Defender for Cloud Apps with Menlo Security
+title: Integrate with Menlo Security
 description: This article describes how to integrate Microsoft Defender for Cloud Apps with Menlo Security for seamless Cloud Discovery and automated block of unsanctioned apps.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Integrate Defender for Cloud Apps with Menlo Security

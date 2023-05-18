@@ -1,7 +1,7 @@
 ---
-title: How Defender for Cloud Apps helps protect your Slack Enterprise
+title: Protect your Slack Enterprise
 description: This article provides information about the benefits of connecting your Slack Enterprise app to Defender for Cloud Apps using the API connector for visibility and control over use.
-ms.date: 12/21/2022
+ms.date: 01/29/2023
 ms.topic: article
 ---
 # How Defender for Cloud Apps helps protect your Slack Enterprise

@@ -1,7 +1,7 @@
 ---
-title: Automatically apply sensitivity labels from Microsoft Purview Information Protection tutorial
+title: Automatically apply sensitivity labels from Microsoft Purview Information Protection
 description: This tutorial describes how to automatically apply sensitivity labels from Microsoft Purview Information Protection in Microsoft Defender for Cloud Apps.
-ms.date: 06/14/2022
+ms.date: 01/29/2023
 ms.topic: tutorial
 ---
 # Tutorial: Automatically apply sensitivity labels from Microsoft Purview Information Protection
@@ -42,7 +42,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
 1. Start protecting the data you store in Box by setting up a policy that will encrypt any sensitive data stored in Box:
 
-    1. On the **Control** tab, select [**Policies**](control-cloud-apps-with-policies.md).
+    1. In the Microsoft 365 Defender portal, under **Cloud Apps**, select [**Policies**](control-cloud-apps-with-policies.md) -> **Policy management**.
 
     1. Select **Create policy** and select **File policy**.
 
@@ -64,7 +64,7 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 
 1. Investigating your matches
 
-    1. In the **Policies** page, select the policy name to go to the **Policy report**. Review the matches that were triggered for the policy.
+    1. In the **Policy management** page, select the policy name to go to **View policy matches**. Review the matches that were triggered for the policy.
 
     1. You can investigate the match by selecting a specific match to open the file drawer. In the drawer, you can see the other policies that this file matched.
 
@@ -82,6 +82,6 @@ Let's set up a policy that looks for credit card numbers in files stored in your
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
+> [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
