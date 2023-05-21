@@ -20,8 +20,11 @@ For more information on what's new with other Microsoft Defender security produc
 
 - **App governance OAuth convergence:** We consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. In the Microsoft 365 Defender portal, we've merged all capabilities originally under Cloud apps > OAuth apps under  App governance, where you can manage all OAuth apps under a single pane of glass.
 
+- **Enhanced hunting experience for OAuth app activities:** App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights to help your SOC identify an app’s activities and the resources it has accessed. This includes pre-built queries to streamline the investigation, visibility into the data in the results view and the ability to include OAuth app data such as resource, app, user, and app activity details in custom detections. Learn more about the enhanced hunting experience for OAuth app activities.
+
 > [!NOTE]
 > Starting in June 2023, updates for app governance are listed together with other Microsoft Defender for Cloud features. For more information, see [What's new in Microsoft Defender for Cloud Apps](release-notes.md).
+
 
 ## App governance February 2023 release
 
@@ -46,5 +49,6 @@ For more information on what's new with other Microsoft Defender security produc
 - **Predefined policies GA**: App governance released a set of out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to. [Learn more here](app-governance-predefined-policies.md)
 - **Teams workload GA**: App governance added insights, policy capabilities, and governance for the Teams workload. You can see data usage, permissions usage, and create policies on Teams permissions and usage.
 - **App governance alerts unified in the M365D alerts and incidents queues**: The app governance alerts queue has been unified with the Microsoft 365 Defender alerts experience and are aggregated into incidents.
+
 
 
