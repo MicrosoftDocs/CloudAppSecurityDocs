@@ -208,6 +208,7 @@ The following table describes the out-of-the-box anomaly detection policies prov
 |**Misleading publisher name for an OAuth app**|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher.|
 |**Malicious OAuth app consent**|Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.|
 |**Suspicious OAuth app file download activities**|For more information, see [Anomaly detection policies](/defender-cloud-apps/anomaly-detection-policy).|
+
 ## Create OAuth app policies for Salesforce, Google and other apps
 
 To create a new app policy for Salesforce, Google and other apps, go to **Microsoft 365 Defender > App governance > Policies > Other apps**.

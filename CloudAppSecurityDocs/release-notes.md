@@ -49,6 +49,10 @@ For customers who've enabled app governance, we've consolidated monitoring and p
 
 For more information, see [View your apps](app-governance-visibility-insights-view-apps.md).
 
+### Enhanced hunting experience for OAuth app activities
+
+App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights to help your SOC identify an app’s activities and the resources it has accessed. This includes pre-built queries to streamline the investigation, visibility into the data in the results view and the ability to include OAuth app data such as resource, app, user, and app activity details in custom detections. Learn more about the enhanced hunting experience for OAuth app activities.
+
 ## April 2023
 
 ### Defender for Cloud Apps release 251-252
