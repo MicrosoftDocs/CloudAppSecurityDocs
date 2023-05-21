@@ -23,20 +23,23 @@ During the initial phase, behaviors will encompass low-fidelity detections from 
 
 The relevant detections are:
 
-- Impossible travel activity
-- Activity from infrequent countries/regions
-- Mass delete
-- Multiple failed login attempts
-- Mass download
-- Suspicious administrative activity
-- Suspicious Power BI report sharing
-- Mass share
-- Suspicious OAuth app file download activities
-- Multiple Power BI report sharing activities
-- Suspicious impersonated activity
-- Multiple delete VM activities
-- Multiple VM creation activities
-- Unusual addition of credentials to an OAuth app
+|Alert name  |Policy name  |
+|---------|---------|
+|Activity from infrequent country  |Activity from infrequent country   |
+|Impossible travel activity  |Impossible travel  |
+|Mass delete  |Unusual file deletion activity (by user)  |
+|Mass download  |Unusual file download (by user)  |
+|Mass share  |Unusual file share activity (by user)  |
+|Multiple delete VM activities  |Multiple delete VM activities  |
+|Multiple failed login attempts  |Multiple failed login attempts  |
+|Multiple Power BI report sharing activities  |Multiple Power BI report sharing activities  |
+|Multiple VM creation activities  |Multiple VM creation activities  |
+|Suspicious administrative activity  |Unusual administrative activity (by user)  |
+|Suspicious impersonated activity  |Unusual impersonated activity (by user)  |
+|Suspicious OAuth app file download activities  |Suspicious OAuth app file download activities  |
+|Suspicious Power BI report sharing  |Suspicious Power BI report sharing   |
+|Unusual addition of credentials to an OAuth app  |Unusual addition of credentials to an OAuth app  |
+
 
 ## Transition from alerts to behaviors
 
@@ -83,6 +86,8 @@ And then you can create a custom detection rule based on the query. For more inf
 
 
 
+
+
 ```kusto
 BehaviorInfo
 | where AttackTechniques has "Valid Accounts (T1078)"
@@ -118,6 +123,11 @@ Have feedback to share? Please fill in [the feedback form](https://forms.office.
 - [Tutorial: Detect suspicious user activity with behavioral analytics](tutorial-suspicious-activity.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)].
+
+
+
+
+
 
 
 

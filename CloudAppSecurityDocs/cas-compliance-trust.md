@@ -159,6 +159,8 @@ The following table show what data is surfaced for each product integration:
 | Microsoft Defender for Cloud | Alerts for Azure | Enabled by default in Defender for Cloud Apps; can be disabled in Microsoft Defender for Cloud |
 | Microsoft Graph Security API | Alerts | [Available via Microsoft Graph Security API](/graph/api/resources/security-api-overview) |
 | Microsoft Power Automate | Alerts sent to trigger an automated flow | [Configured in Defender for Cloud Apps](flow-integration.md) |
+| Microsoft Threat Experts | Alerts | Automatically streamed to Microsoft Threat Experts |
+| Azure Active Directory Identity Protection | Alerts | Automatically streamed to Azure Active Directory Identity Protection | 
 | Microsoft Azure AD Identity Protection | Subset of alerts for identity risk model | Enabled automatically on Azure AD Identity Protection upon onboarding |
 
 #### Third-party products
