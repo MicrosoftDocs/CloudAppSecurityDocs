@@ -34,7 +34,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ### App governance now available as part of Defender for Cloud Apps license
 
-App governance is now included as part of the [various](/defender-cloud-apps/app-governance-get-started) Microsoft Defender for Cloud Apps licenses and no longer requires an add-on license. 
+App governance is now included as part of the [Microsoft Defender for Cloud Apps licenses](app-governance-get-started.md#licensing) and no longer requires an add-on license.
 
 In the Microsoft 365 Defender portal, go to **Settings > Cloud apps > App governance > Service status** to either enable app governance if available, or sign up for the waitlist. Existing holders of trial licenses for the app governance add-on have until August 31, 2023 to enable the toggle and retain their app governance access.
 
@@ -51,7 +51,15 @@ For more information, see [View your apps](app-governance-visibility-insights-vi
 
 ### Enhanced hunting experience for OAuth app activities
 
-App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights to help your SOC identify an app’s activities and the resources it has accessed. This includes pre-built queries to streamline the investigation, visibility into the data in the results view and the ability to include OAuth app data such as resource, app, user, and app activity details in custom detections. Learn more about the enhanced hunting experience for OAuth app activities.
+App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights, helping your SOC identify an app’s activities and the resources it has accessed.
+
+OAuth app insights include:
+
+- Out-of-the-box queries that help to streamline the investigation
+- Visibility into the data using the results view
+- The ability to include OAuth app data such as resource, app, user, and app activity details in custom detections.
+
+For more information, see [Investigate and remediate risky OAuth apps](investigate-risky-oauth.md). <!--is this the right link?-->
 
 ## April 2023
 

@@ -146,7 +146,7 @@ items:
     items: 
     - name: Protect and govern your apps
       href: app-governance-manage-app-governance.md
-    - name: Get started with app governance
+    - name: Turn on app governance
       href: app-governance-get-started.md
     - name: App governance trial user guide
       href: app-governance-trial-user-guide.md

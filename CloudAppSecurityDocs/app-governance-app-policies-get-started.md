@@ -1,6 +1,6 @@
 ---
 title: Get started with app policies
-ms.date: 01/29/2023
+ms.date: 05/21/2023
 ms.topic: how-to
 description: Get started learning about app policies.
 ---
@@ -21,7 +21,9 @@ There are two types of policies in app governance:
 
 To see your list of current app policies, go to **Microsoft 365 Defender > App governance > Policies**. This will show you a list of all your policies in app governance. Built-in threat detection policies won't show up here, but you can read more about these [here](app-governance-anomaly-detection-alerts.md).
 
-![The app governance policies summary page in the Microsoft 365 Defender.](media/app-governance-app-policies-get-started/azure-ad-policies.jpg)
+For example:
+
+![Screenshot of the app governance policies summary page in Microsoft 365 Defender.](media/app-governance-app-policies-get-started/azure-ad-policies.jpg)
 
 ## What’s available on the app policies dashboard
 

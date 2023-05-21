@@ -1,6 +1,6 @@
 ---
 title: Manage app policies
-ms.date: 01/29/2023
+ms.date: 05/21/2023
 ms.topic: how-to
 description: Manage your app governance policies.
 ---
@@ -9,6 +9,7 @@ description: Manage your app governance policies.
 
 > *[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+Use app governance to manage OAuth policies for Azure AD, Google Workspace, and Salesforce.
 
 To keep up with the latest apps your organization is using, respond to new app-based attacks, and for ongoing changes to your app compliance needs, you might need to manage your app policies in these ways:
 
@@ -16,9 +17,6 @@ To keep up with the latest apps your organization is using, respond to new app-b
 - Change the status of an existing policy (active, inactive, audit mode)
 - Change the conditions of an existing policy
 - Change the actions of an existing policy for auto-remediation of alerts
-
-> [!NOTE]
-> You can now manage OAuth app policies for Azure AD, Google and Salesforce in app governance.
 
 ## Manage OAuth app policies for Azure AD
 
@@ -33,7 +31,9 @@ Here's an example of a process for managing an existing policy for Azure AD apps
 1. If the behavior isn't expected, go back to step 1.
 1. If the behavior is expected, edit the policy and change its status to active (if needed).
 
-:::image type="content" source="media/app-governance/mapg-manage-policy-process.png" alt-text="The manage app policy workflow." lightbox="media/app-governance/mapg-manage-policy-process.png":::
+For example:
+
+:::image type="content" source="media/app-governance/mapg-manage-policy-process.png" alt-text="Diagram of the manage app policy workflow." lightbox="media/app-governance/mapg-manage-policy-process.png" border="false":::
 
 > [!NOTE]
 > Following the change in the **Activity type** filter, policies with the previous filter will have a "LEGACY" label attached to the filter and if the policies are edited or deleted the filter can't be restored.

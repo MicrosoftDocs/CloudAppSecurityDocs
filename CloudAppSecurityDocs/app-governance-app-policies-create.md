@@ -1,6 +1,6 @@
 ---
 title: Create app policies in app governance
-ms.date: 02/28/2023
+ms.date: 05/21/2023
 ms.topic: how-to
 description: Learn how to create app policies on app governance.
 ---
@@ -13,25 +13,30 @@ Along with a built-in set of capabilities to detect anomalous app behavior and g
 
 - Enforce the app compliance policies for your organization.
 
-> [!NOTE]
-> You can now create OAuth app policies for Azure AD, Google and Salesforce in app governance. 
+Use app governance to create OAuth policies for apps connected to Azure AD, Google Workspace, and Salesforce.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
 
 ## Create OAuth app policies for Azure AD
 
-You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
+For apps connected to Azure AD, create app policies from provided templates that can be customized, or create your own custom app policy.
 
-To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Overview page > Policies > Azure AD**. 
+1. To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Overview > Policies > Azure AD**.
 
-![Azure AD-policies](media/app-governance-app-policies-create/azure-ad-policies.jpg)
+    For example:
 
-Select the **Create New Policy** option:
+    ![Screenshot of the Azure AD tab.](media/app-governance-app-policies-create/azure-ad-policies.jpg)
 
-- To create a new app policy from a template, choose the relevant template category followed by the template in that category.
-- To create a custom policy, select the **Custom** category.
+1. Select the **Create New Policy** option, and then do one of the following steps:
 
-    ![Create a policy.](media/app-governance/app-governance-create-policy.png)
+    - To create a new app policy from a template, choose the relevant template category followed by the template in that category.
+    - To create a custom policy, select the **Custom** category.
+
+    For example:
+
+    ![Screenshot of the Choose a policy template page.](media/app-governance/app-governance-create-policy.png)
 
 ## App policy templates
 
@@ -41,42 +46,33 @@ App governance has three categories of app policy templates.
 
 ### Usage
 
-App governance includes these templates to generate alerts for app usage.
-<br>
+The following table lists the app governance templates supported to generate alerts for app usage.
 
-
-****
 |Template name|Description|
 |---|---|
-|Unused app | Find apps that have not signed in recently. This policy checks the following conditions: <br /><br /> <li> Last used: more than 30 days ago |
-|New app with high data usage|Find newly registered apps that have uploaded or downloaded large amounts of data using Graph API. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Data usage: Greater than 1 GB in one day (customizable)|
-|Increase in users|Find apps with a sizable increase in the number of users. This policy checks the following conditions:<br /><br /> <li> Time range: Last 90 days<br /> <li> Increase in consenting users: At least 50% (customizable)|
+|**Unused app** | Find apps that have not signed in recently. This policy checks the following conditions: <br /><br /> <li> Last used: more than 30 days ago |
+|**New app with high data usage**|Find newly registered apps that have uploaded or downloaded large amounts of data using Graph API. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Data usage: Greater than 1 GB in one day (customizable)|
+|**Increase in users**|Find apps with a sizable increase in the number of users. This policy checks the following conditions:<br /><br /> <li> Time range: Last 90 days<br /> <li> Increase in consenting users: At least 50% (customizable)|
 
 ### Permissions
 
-App governance includes these templates to generate alerts for app permissions.
-<br>
+The following table lists the app governance templates supported to generate alerts for app permissions.
 
-
-****
 |Template name|Description|
 |---|---|
-|Unused credentials | Find apps with one or more credentials that have not been used recently. This policy checks the following conditions: <br /><br /> <li> Credential last used date: greater than 30 days ago. |
-|Overprivileged app|Find apps that have unused Graph API permissions. These apps have been granted permissions that could be unnecessary for regular use.|
-|New highly privileged app|Find newly registered apps that have been granted write access and other powerful Graph API permissions. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)|
-|New app with non-Graph API permissions|Find newly registered apps that have permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates. <br />This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li> Non-Graph API permissions: Yes|
-| Expiring credentials | Find apps with credentials that are expiring within a certain period. This policy checks the following conditions: <br /><br /> <li>  Credential expiration date: within 30 days |
+|**Unused credentials** | Find apps with one or more credentials that have not been used recently. This policy checks the following conditions: <br /><br /> <li> Credential last used date: greater than 30 days ago. |
+|**Overprivileged app**|Find apps that have unused Graph API permissions. These apps have been granted permissions that could be unnecessary for regular use.|
+|**New highly privileged app**|Find newly registered apps that have been granted write access and other powerful Graph API permissions. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)|
+|**New app with non-Graph API permissions**|Find newly registered apps that have permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates. <br />This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li> Non-Graph API permissions: Yes|
+| **Expiring credentials** | Find apps with credentials that are expiring within a certain period. This policy checks the following conditions: <br /><br /> <li>  Credential expiration date: within 30 days |
 
 ### Certification
 
-App governance includes these templates to generate alerts for Microsoft 365 certification.
-<br>
+The following table lists the app governance templates supported to generate alerts for Microsoft 365 certification.
 
-
-****
 |Template name|Description|
 |---|---|
-|New uncertified app|Find newly registered apps that don’t have publisher attestation or Microsoft 365 certification. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Certification: No certification (customizable)|
+|**New uncertified app**|Find newly registered apps that don’t have publisher attestation or Microsoft 365 certification. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Certification: No certification (customizable)|
 |||
 
 ## Custom policies
@@ -111,29 +107,29 @@ Use a custom app policy when you need to do something not already done by one of
 
     | Condition                            | Condition values accepted                                    | Description                                                  | More information                                             |
     | ------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-    | Registration age                     | Within last X days                                           | Apps that were registered to Azure AD within a specified period from the current date |                                                              |
-    | Certification                        | No certification, Publisher attested, Microsoft 365 Certified | Apps that are Microsoft 365 Certified, have a publisher attestation report, or neither | [Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
-    | Publisher verified                   | Yes or No                                                    | Apps that have verified publishers                           | [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview) |
-    | Application permissions (Graph only) | Select one or more API permissions from list                 | Apps with specific Graph API permissions that have been granted directly | [Microsoft Graph permissions reference](/graph/permissions-reference) |
-    | Delegated permissions (Graph only)   | Select one or more API permissions from list                 | Apps with specific Graph API permissions that have been given by a user | [Microsoft Graph permissions reference](/graph/permissions-reference) |
-    | Highly privileged (Graph only)       | Yes or No                                                    | Apps with relatively powerful Graph API permissions          | This is an internal designation based on the same logic used by Defender for Cloud Apps. |
-    | Overprivileged (Graph only)          | Yes or No                                                    | Apps with unused Graph API permissions                       | Apps with more granted permissions than are being used by those apps. |
-    | Non-Graph API permissions            | Yes or No                                                    | Apps with permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates. |                                                              |
-    | Data usage (Graph only)              | Greater than X GB of data downloaded and uploaded per day    | Apps that have read and written more than a specified amount of data using Graph API |                                                              |
-    | Data usage trend (Graph only)        | X % increase in data usage compared to previous day          | Apps whose data reads and writes using Graph API have increased by a specified percentage compared to the previous day |                                                              |
-    | API access (Graph only)              | Greater than X API calls per day                             | Apps that have made over a specified number of Graph API calls in a day |                                                              |
-    | API access trend (Graph only)        | X % increase in API calls compared to previous day           | Apps whose number of Graph API calls have increased by a specified percentage compared to the previous day |                                                              |
-    | Number of consenting users           | (Greater than or Less than) X consented users                | Apps that have been given consent by a greater or fewer number of users than specified |                                                              |
-    | Increase in consenting users         | X % increase in users in the last 90 days                    | Apps whose number of consenting users have increased by over a specified percentage in the last 90 days |                                                              |
-    | Priority account consent given       | Yes or No                                                    | Apps that have been given consent by priority users          | A user with a [priority account](/microsoft-365/admin/setup/priority-accounts). |
-    | Names of consenting users            | Select users from list                                       | Apps that have been given consent by specific users          |                                                              |
-    | Roles of consenting users            | Select roles from list                                       | Apps that have been given consent by users with specific roles | Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list. |
-    | Sensitivity labels accessed          | Select one or more sensitivity labels from the list          | Apps that accessed data with specific sensitivity labels in the last 30 days. |                                                              |
-    | Services accessed (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API | Multiple selections allowed.                                 |
-    | Error rate (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last 7 days are greater than a specified percentage |                                                              |
-    | Unused app                           | Not signed in for 30 days to 1 year                          | Apps that have not authenticated within a specified period from the current date |                                                              |
-    | Unused credentials                   | Any credentials not used within the last 30 days to 1 year   | Apps with one or more credentials that have not been used within a specified period from the current date |                                                              |
-    | Credential expiration                | Any credential that expires within or after X days           | Apps whose credentials expire within or after a certain period |                                                              |
+    | **Registration age**                     | Within last X days                                           | Apps that were registered to Azure AD within a specified period from the current date |                                                              |
+    | **Certification**                        | No certification, Publisher attested, Microsoft 365 Certified | Apps that are Microsoft 365 Certified, have a publisher attestation report, or neither | [Microsoft 365 Certification](/microsoft-365-app-certification/docs/enterprise-app-certification-guide) |
+    | **Publisher verified**                   | Yes or No                                                    | Apps that have verified publishers                           | [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview) |
+    | **Application permissions** (Graph only) | Select one or more API permissions from list                 | Apps with specific Graph API permissions that have been granted directly | [Microsoft Graph permissions reference](/graph/permissions-reference) |
+    | **Delegated permissions** (Graph only)   | Select one or more API permissions from list                 | Apps with specific Graph API permissions that have been given by a user | [Microsoft Graph permissions reference](/graph/permissions-reference) |
+    | **Highly privileged** (Graph only)       | Yes or No                                                    | Apps with relatively powerful Graph API permissions          | This is an internal designation based on the same logic used by Defender for Cloud Apps. |
+    | **Overprivileged** (Graph only)          | Yes or No                                                    | Apps with unused Graph API permissions                       | Apps with more granted permissions than are being used by those apps. |
+    | **Non-Graph API permissions**            | Yes or No                                                    | Apps with permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates. |                                                              |
+    | **Data usage** (Graph only)              | Greater than X GB of data downloaded and uploaded per day    | Apps that have read and written more than a specified amount of data using Graph API |                                                              |
+    | **Data usage trend** (Graph only)        | X % increase in data usage compared to previous day          | Apps whose data reads and writes using Graph API have increased by a specified percentage compared to the previous day |                                                              |
+    | **API access** (Graph only)              | Greater than X API calls per day                             | Apps that have made over a specified number of Graph API calls in a day |                                                              |
+    | **API access trend** (Graph only)        | X % increase in API calls compared to previous day           | Apps whose number of Graph API calls have increased by a specified percentage compared to the previous day |                                                              |
+    | **Number of consenting users**           | (Greater than or Less than) X consented users                | Apps that have been given consent by a greater or fewer number of users than specified |                                                              |
+    | **Increase in consenting users**         | X % increase in users in the last 90 days                    | Apps whose number of consenting users have increased by over a specified percentage in the last 90 days |                                                              |
+    | **Priority account consent given**       | Yes or No                                                    | Apps that have been given consent by priority users          | A user with a [priority account](/microsoft-365/admin/setup/priority-accounts). |
+    | **Names of consenting users**            | Select users from list                                       | Apps that have been given consent by specific users          |                                                              |
+    | **Roles of consenting users**            | Select roles from list                                       | Apps that have been given consent by users with specific roles | Multiple selections allowed. <p> Any Azure AD role with assigned member should be made available in this list. |
+    | **Sensitivity labels accessed**          | Select one or more sensitivity labels from the list          | Apps that accessed data with specific sensitivity labels in the last 30 days. |                                                              |
+    | **Services accessed** (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API | Multiple selections allowed.                                 |
+    | **Error rate** (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last 7 days are greater than a specified percentage |                                                              |
+    | **Unused app**                           | Not signed in for 30 days to 1 year                          | Apps that have not authenticated within a specified period from the current date |                                                              |
+    | **Unused credentials**                   | Any credentials not used within the last 30 days to 1 year   | Apps with one or more credentials that have not been used within a specified period from the current date |                                                              |
+    | **Credential expiration**                | Any credential that expires within or after X days           | Apps whose credentials expire within or after a certain period |                                                              |
 
     All of the specified conditions must be met for this app policy to generate an alert.
 
@@ -152,7 +148,7 @@ Use a custom app policy when you need to do something not already done by one of
 
 Now that your app policy is created, you should monitor it on the **Policies** page to ensure it's registering an expected number of active alerts and total alerts during testing.
 
-:::image type="content" source="media\app-governance\mapg-cc-policies-policy.png" alt-text="The app governance policies summary page in the Microsoft 365 Defender with a highlighted policy." lightbox="media\app-governance\mapg-cc-policies-policy.png":::
+:::image type="content" source="media\app-governance\mapg-cc-policies-policy.png" alt-text="Screenshot of the app governance policies summary page in Microsoft 365 Defender, with a highlighted policy." lightbox="media\app-governance\mapg-cc-policies-policy.png":::
 
 If the number of alerts is an unexpectedly low value, edit the settings of the app policy to ensure you've configured it correctly before setting its status.
 
@@ -163,34 +159,34 @@ Here's an example of a process for creating a new policy, testing it, and then m
 3. If the behavior isn't expected, edit the policy apps, conditions, and action settings as needed and go back to step 2.
 4. If the behavior is expected, edit the policy and change its status to **Active**.
 
-:::image type="content" source="media/app-governance/mapg-create-new-policy-process.png" alt-text="The create app policy workflow." lightbox="media/app-governance/mapg-create-new-policy-process.png":::
+For example, the following flow chart shows the steps involved:
+
+:::image type="content" source="media/app-governance/mapg-create-new-policy-process.png" alt-text="Diagram of the create app policy workflow." lightbox="media/app-governance/mapg-create-new-policy-process.png" border="false":::
 
 <!--which one of the following is it? question for andrew / wendy-->
 ## Create a new policy for OAuth apps connected to Salesforce and Google Workspace
 
+Policies for OAuth apps will trigger alerts only on policies that were authorized by users in the tenant.
 
-> [!Note]
-> This section is only relevant for Salesforce and Google Workspace applications.
-There are two ways to create a new OAuth app policy. The first way is under **Investigate** and the second is under **Control**.
+To create a new app policy for Salesforce, Google and other apps:
 
-To create a new OAuth app policy:
+1. Go to **Microsoft 365 Defender > App governance > Policies > Other apps**. For example:
 
-1. Under **Investigate**, select **OAuth apps**.
-1. Filter the apps according to your needs. For example, you can view all apps that request **Permission** to **Modify calendars in your mailbox**.
-1. Select the **New policy from search** button. ![New policy from search.](media/app-permissions-filter.png)
+    ![Other apps-policy creation](media/app-governance-app-policies-create/other-apps-policy-creation.jpg)
 
-1. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
-1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.
+1. Filter the apps according to your needs. For example, you might want to view all apps that request **Permission** to **Modify calendars in your mailbox**.
 
-Alternatively, you can also create the policy by selecting **Control** followed by **Policies**. Then select **Create policy** followed by **OAuth app policy**.
+    > [!TIP]
+    > Use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare. This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
+    >
+
+1. You might want to set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.
+
+For example:
 
 ![new OAuth app policy.](media/app-permissions-policy.png)
 
-
-> [!Note]
-> OAuth apps policies will trigger alerts only on policies that were authorized by users in the tenant.
-
-## Anomaly detection policies for OAuth apps connected to Salesforce and Google Workspace
+### Anomaly detection policies for OAuth apps connected to Salesforce and Google Workspace
 
 In addition to Oauth app policies that you can create, Defender for Cloud apps provides out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious.
 
@@ -209,13 +205,15 @@ The following table describes the out-of-the-box anomaly detection policies prov
 |**Malicious OAuth app consent**|Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.|
 |**Suspicious OAuth app file download activities**|For more information, see [Anomaly detection policies](/defender-cloud-apps/anomaly-detection-policy).|
 
+<!--this seemed to be a duplicate, so i combined them. however i can't validate this procedure, so please review carefully
 ## Create OAuth app policies for Salesforce, Google and other apps
 
-To create a new app policy for Salesforce, Google and other apps, go to **Microsoft 365 Defender > App governance > Policies > Other apps**.
+To create a new app policy for Salesforce, Google and other apps, go to **Microsoft 365 Defender > App governance > Policies > Other apps**.
 
 ![Other apps-policy creation](media/app-governance-app-policies-create/other-apps-policy-creation.jpg)
+-->
 
 ## Next step
 
-[Manage your app policies.](app-governance-app-policies-manage.md)
+[Manage your app policies](app-governance-app-policies-manage.md)
 
