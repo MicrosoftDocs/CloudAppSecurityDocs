@@ -7,17 +7,26 @@ description: Learn how to create app policies on app governance.
 
 # Create app policies in app governance
 
-Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts based on machine learning algorithms, app policies in app governance are a way for you to:
+Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts based on machine learning algorithms, policies in app governance enable you to:
 
-- Specify conditions by which app governance can alert you to app behavior for automatic or manual remediation.
-- Implement the app compliance policies for your organization.
-<br>
+- Specify conditions by which app governance alerts you to app behavior for automatic or manual remediation.
 
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
+- Enforce the app compliance policies for your organization.
+
+> [!NOTE]
+> You can now create OAuth app policies for Azure AD, Google and Salesforce in app governance. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YU37]
+
+## Create OAuth app policies for Azure AD
 
 You can create app policies from provided templates that can be customized, or you can create your own custom app policy.
 
-To create a new app policy, go to **Microsoft 365 Defender > App governance > Overview page > Policies**. Select the **Create New Policy** option:
+To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Overview page > Policies > Azure AD**. 
+
+![Azure AD-policies](media/app-governance-app-policies-create/azure-ad-policies.jpg)
+
+Select the **Create New Policy** option:
 
 - To create a new app policy from a template, choose the relevant template category followed by the template in that category.
 - To create a custom policy, select the **Custom** category.
@@ -33,8 +42,8 @@ App governance has three categories of app policy templates.
 ### Usage
 
 App governance includes these templates to generate alerts for app usage.
-
 <br>
+
 
 ****
 |Template name|Description|
@@ -46,8 +55,8 @@ App governance includes these templates to generate alerts for app usage.
 ### Permissions
 
 App governance includes these templates to generate alerts for app permissions.
-
 <br>
+
 
 ****
 |Template name|Description|
@@ -61,8 +70,8 @@ App governance includes these templates to generate alerts for app permissions.
 ### Certification
 
 App governance includes these templates to generate alerts for Microsoft 365 certification.
-
 <br>
+
 
 ****
 |Template name|Description|
@@ -156,6 +165,7 @@ Here's an example of a process for creating a new policy, testing it, and then m
 
 :::image type="content" source="media/app-governance/mapg-create-new-policy-process.png" alt-text="The create app policy workflow." lightbox="media/app-governance/mapg-create-new-policy-process.png":::
 
+<!--which one of the following is it? question for andrew / wendy-->
 ## Create a new policy for OAuth apps connected to Salesforce and Google Workspace
 
 
@@ -198,7 +208,13 @@ The following table describes the out-of-the-box anomaly detection policies prov
 |**Misleading publisher name for an OAuth app**|Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher.|
 |**Malicious OAuth app consent**|Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.|
 |**Suspicious OAuth app file download activities**|For more information, see [Anomaly detection policies](/defender-cloud-apps/anomaly-detection-policy).|
+## Create OAuth app policies for Salesforce, Google and other apps
+
+To create a new app policy for Salesforce, Google and other apps, go to **Microsoft 365 Defender > App governance > Policies > Other apps**.
+
+![Other apps-policy creation](media/app-governance-app-policies-create/other-apps-policy-creation.jpg)
 
 ## Next step
 
 [Manage your app policies.](app-governance-app-policies-manage.md)
+
