@@ -41,7 +41,7 @@ sections:
         answer: |
            App governance alerts and related incidents are available in the Microsoft 365 Defender queue. Microsoft 365 Defender correlates the alerts with signals from other solutions, such as Defender for Endpoint, to associate related attack activities and identify security incidents. App governance alerts and incidents are also integrated with Microsoft Sentinel.
       - question: What roles do I need to activate app governance
-      answer: |
+        answer: |
           You must have one of the roles listed [here](https://learn.microsoft.com/en-us/defender-cloud-apps/app-governance-get-started#roles) to activate app governance.
     
       - question: What roles do I need to have to use app governance?

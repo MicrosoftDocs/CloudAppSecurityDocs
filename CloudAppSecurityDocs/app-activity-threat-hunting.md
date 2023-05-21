@@ -62,7 +62,7 @@ For example:
 
 Use the **Advanced hunting** page to modify or adjust a KQL query to fetch results based on your specific requirements. You might choose to save the query for future users or share a link with others in your organization, or export the results to a CSV file. 
 
-For more information, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsofdefendt-365/security/defender/advanced-hunting-overview?view=o365-worldwide).
+For more information, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview).
 
 ## Known limitations
 
