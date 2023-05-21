@@ -86,7 +86,7 @@ The following governance actions can be taken for connected apps either on a spe
 > [!NOTE]
 > In SharePoint and OneDrive, Defender for Cloud Apps supports user quarantine only for files in Shared Documents libraries (SharePoint Online) and files in the Documents library (OneDrive for Business).
 > 
-> Microsoft Defender for Office 365 Customers can control detected malware files in SharePoint and OneDrive via [https://security.microsoft.com/quarantine?viewid=Files](https://security.microsoft.com/quarantine?viewid=Files), including recovering files, deleting them, and download them in a password protected ZIP files. This option is limited to files that were not already quarantined by Microsoft Defender for Cloud Apps.
+> Microsoft Defender for Office 365 customers can control detected malware files in SharePoint and OneDrive via the [Microsoft 365 Defender **Quarantine** page](https://security.microsoft.com/quarantine?viewid=Files). For example, supported activities include recovering files, deleting files, and downloading files in password-protected ZIP files. These activities are limited to files that were not already quarantined by Microsoft Defender for Cloud Apps.
 > In SharePoint, Defender for Cloud Apps supports quarantine tasks only for files with Shared Documents in path in English.
 > 
 > Actions will only show for connected apps.
