@@ -171,8 +171,8 @@ If you're interested in a specific app being pre-onboarded, [send us details abo
 - **Proxy can be bypassed using embedded session token**  
 It's possible to bypass the proxy in cases where the application itself embeds the token within the links. An end user can copy the link and access the resource directly in that case.
 
-- **Copy/cut policy can be bypassed using Developer Tools**  
-It's possible to bypass the defined copy/cut policy by using the browser developer tools. For example, in a policy that prevents copy of content from Microsoft Word, it's possible to view the content using Developer Tools, copy the content from there and then bypass the proxy.
+- **Proxy can be bypassed using Developer Tools**  
+It's possible to bypass the copy/cut policy and file download policy by using browser developer tools. For example, in a policy that prevents copying content from Microsoft Word, it's possible to view the content through Developer Tools, copy the content from there and bypass the proxy.
 
 - **Proxy can be bypassed by a parameter change**  
 It's possible to bypass the defined session policy by modifying parameters. For example, it's possible to alter the URL parameters and mislead the service in a way that bypasses the proxy and enables a download of a sensitive file.
