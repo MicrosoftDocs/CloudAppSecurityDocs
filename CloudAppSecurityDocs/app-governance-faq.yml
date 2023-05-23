@@ -56,7 +56,7 @@ sections:
 
       - question: Why is app governance empty or showing inaccurate data?
         answer: |
-          It can take up to 24 hours to fully prepare app governance and retrieve data after you first initiate it. During this period data access statistics and app counts can be inaccurate.
+          It can take up to 10 hours to fully prepare app governance and retrieve data after you first initiate it. During this period data access statistics and app counts can be inaccurate.
 
       - question: How does app governance integrate with Microsoft Sentinel?
         answer: |
