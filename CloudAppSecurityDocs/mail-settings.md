@@ -24,8 +24,9 @@ This article provides information about how to personalize the email notificatio
 1. In the Microsoft 365 Defender portal, select **Settings** > **Cloud Apps** > **System** > **Mail settings**.
 
     ![Screenshot of the Mail settings tab.](media/mail-settings/email-settings.png)
+    
+    The **Default settings** option is always selected for the **Email sender identity**, and Defender for Cloud Apps always sends notifications using the default settings.
 
-1. Under **Email sender identity**: Microsoft Defender for Cloud Apps always sends the notifications using the default settings.
 
 1. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following things:
 
