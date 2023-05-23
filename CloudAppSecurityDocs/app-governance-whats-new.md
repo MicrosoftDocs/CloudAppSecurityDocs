@@ -14,6 +14,14 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
+## App governance June 2023 release
+
+- **App hygiene feature update:** Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. [Learn more about Workload Identities](https://aka.ms/workloadidentitydocs)
+
+## App governance March 2023 release
+
+- **App hygiene public preview:** App governance now provides insights and policy capability for unused apps, apps with unused credentials, and apps with expiring credentials. Each of these features has a predefined policy out of the box and you can define your own custom policies as well. You can export these insights from the apps list for easy reporting and triage across your organization. 
+- 
 ## App governance February 2023 release
 
 - **Enhanced alert investigation experience:** App governance now provides additional information admins need to investigate and remediate incidents and alerts. This enhancement includes more details under **What happened** and **Recommended actions** in the alert story on Microsoft 365 Defender alert pages. This information will be available for all app governance alerts, including alerts triggered by threat detection rules, predefined policies, and user-defined policies. [Learn more about the enhanced alert experience.](/defender-cloud-apps/app-governance-detect-remediate-detect-threats)
