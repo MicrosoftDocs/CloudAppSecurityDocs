@@ -15,10 +15,7 @@ For OAuth-enabled apps that use the Microsoft Graph API:
 - How many might be overprivileged
 - How many are highly privileged
 
-From this information, you can determine the level of risk to your organization by overprivileged, highly privileged apps, and unused apps.
-
-> [!div class="mx-imgBorder"]
->![Determine the level of risk to your organization by overprivileged and highly privileged apps.](media/app-governance-visibility-insights-compliance-posture/app-summary.png)
+From this information, you can determine the level of risk to your organization by overprivileged and highly privileged apps.
 
 For incidents:
 
