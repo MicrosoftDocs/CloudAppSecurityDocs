@@ -39,7 +39,6 @@ App governance includes these templates to generate alerts for app usage.
 ****
 |Template name|Description|
 |---|---|
-|Unused app | Find apps that have not signed in recently. This policy checks the following conditions: <br /><br /> <li> Last used: more than 30 days ago |
 |New app with high data usage|Find newly registered apps that have uploaded or downloaded large amounts of data using Graph API. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Data usage: Greater than 1 GB in one day (customizable)|
 |Increase in users|Find apps with a sizable increase in the number of users. This policy checks the following conditions:<br /><br /> <li> Time range: Last 90 days<br /> <li> Increase in consenting users: At least 50% (customizable)|
 
@@ -52,11 +51,9 @@ App governance includes these templates to generate alerts for app permissions.
 ****
 |Template name|Description|
 |---|---|
-|Unused credentials | Find apps with one or more credentials that have not been used recently. This policy checks the following conditions: <br /><br /> <li> Credential last used date: greater than 30 days ago. |
 |Overprivileged app|Find apps that have unused Graph API permissions. These apps have been granted permissions that could be unnecessary for regular use.|
 |New highly privileged app|Find newly registered apps that have been granted write access and other powerful Graph API permissions. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)|
 |New app with non-Graph API permissions|Find newly registered apps that have permissions to non-Graph APIs. These apps can expose you to risks if the APIs they access receive limited support and updates. <br />This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li> Non-Graph API permissions: Yes|
-| Expiring credentials | Find apps with credentials that are expiring within a certain period. This policy checks the following conditions: <br /><br /> <li>  Credential expiration date: within 30 days |
 
 ### Certification
 
@@ -122,9 +119,6 @@ Use a custom app policy when you need to do something not already done by one of
     | Sensitivity labels accessed          | Select one or more sensitivity labels from the list          | Apps that accessed data with specific sensitivity labels in the last 30 days. |                                                              |
     | Services accessed (Graph only)       | Exchange and/or OneDrive and/or SharePoint and/or Teams      | Apps that have accessed OneDrive, SharePoint, or Exchange Online using Graph API | Multiple selections allowed.                                 |
     | Error rate (Graph only)              | Error rate is greater than X% in the last seven days         | Apps whose Graph API error rates in the last 7 days are greater than a specified percentage |                                                              |
-    | Unused app                           | Not signed in for 30 days to 1 year                          | Apps that have not authenticated within a specified period from the current date |                                                              |
-    | Unused credentials                   | Any credentials not used within the last 30 days to 1 year   | Apps with one or more credentials that have not been used within a specified period from the current date |                                                              |
-    | Credential expiration                | Any credential that expires within or after X days           | Apps whose credentials expire within or after a certain period |                                                              |
 
     All of the specified conditions must be met for this app policy to generate an alert.
 
