@@ -41,16 +41,16 @@ Microsoft Defender for Cloud Apps is a cloud access security broker (CASB) that 
 
 For information about licensing, see the [Microsoft Defender for Cloud Apps product page](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-cloud-apps?rtc=1).
 
-## What is the app governance add-on for Defender for Cloud Apps?
+## What is the app governance capability in Defender for Cloud Apps?
 
-The app governance add-on gives you in-depth governance against risky app behavior in your Microsoft 365 environment. It provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. It's designed to secure OAuth-enabled apps registered on Azure AD.
+App governance gives you in-depth governance against risky app behavior in your environment. It provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. It's designed to secure OAuth-enabled apps registered on Azure AD.
 :::image type="content" source="media/app-governance/app-governance-add-on.png" alt-text="App governance add on.":::
 
-App governance add-on offers an in-depth Microsoft 365 platform-level view & control of app behavior.
+App governance offers an in-depth Microsoft 365 platform-level view & control of app behavior.
 
 - **Discover & manage the security posture of apps** – Get deep insights, visibility and reporting of all Microsoft 365 app behavior details
 
-- **Provide secure access to apps, data & resources** – Manually/automatically disable access of Microsoft 365 apps showing risky characteristics/behavior
+- **Provide secure access to apps, data & resources** – Manually/automatically deactivate apps showing risky characteristics/behavior
 
 - **Defend against cyberthreats & anomalies** – Leverage machine learning-based detection of unusual app behavior (with other apps, high priority users and data) and remediate malicious app behavior
 
@@ -84,7 +84,7 @@ The first place to get started is the app governance overview page at <https://a
 
 ### Step 2: [Implement app policies](app-governance-app-policies-overview.md)
 
-App governance uses machine learning-based detection algorithms to detect anomalous app behavior in your Microsoft 365 tenant and generates alerts that you can see, investigate, and resolve. Beyond this built-in detection capability (which we'll get into in more detail later), you can use a set of default policy templates or create your own app policies that generate other alerts.
+App governance uses machine learning-based detection algorithms to detect anomalous app behavior in your environment and generates alerts that you can see, investigate, and resolve. Beyond this built-in detection capability (which we'll get into in more detail later), you can use a set of default policy templates or create your own app policies that generate other alerts.
 
 These policies for app and user patterns and behaviors can protect your users from using non-compliant or malicious apps and limit the access of risky apps to your tenant data.
 
@@ -130,7 +130,7 @@ Try these actions:
 
 - [Investigate anomaly detection alerts:](app-governance-anomaly-detection-alerts.md) App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks.
 
-- [Remediate app threats:](/defender-cloud-apps/app-governance-manage-alerts) You remediate app threats to your Microsoft 365 tenant through the Alerts page of the Microsoft app governance section of the Microsoft 365 Defender.
+- [Remediate app threats:](/defender-cloud-apps/app-governance-manage-alerts) You remediate harmful app and app activity identified by app governance alerts in Microsoft 365 Defender.
 
 ## Resources for the Microsoft Defender for Cloud Apps app governance add-on
 

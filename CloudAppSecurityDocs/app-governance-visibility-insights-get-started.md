@@ -14,7 +14,7 @@ You can also access the app governance dashboard from **Office 365 > Microsoft 3
 
 ## What’s available on the dashboard
 
-The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
+The dashboard contains a summary of your app ecosystem:
 
 - **Tenant summary**: The count of key app and incident categories.
 - **Latest incidents**: The 10 most recent active incidents in the tenant
@@ -31,7 +31,7 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application hasn't been used in the last 90 days, that application is overprivileged. App governance must be operating for at least 90 days to determine if any app is overprivileged.  
   - **Unverified publisher**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
   - **App only permissions**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
-  - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
+  - **New apps**: New apps that have been registered to Azure Active Directory in the last seven days.  
   - **Unused**: Apps that have not signed in within the last 30 days.
   - **Unused credentials**: Apps with one or more credentials that have not been used in the last 30 days.
   - **Expiring credentials**: Apps with credentials that are expiring within 30 days.

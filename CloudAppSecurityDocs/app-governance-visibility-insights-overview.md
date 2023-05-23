@@ -7,16 +7,12 @@ description: Learn about visibility and insights.
 
 # Learn about visibility and insights
 
-With app governance, you can quickly gain visibility and meaningful insights on your Microsoft 365 application ecosystem. You start from the app governance dashboard that provides a high-level overview of the alerts and apps in your tenant that require administrator attention.
+With app governance, you can quickly gain visibility and meaningful insights on your app ecosystem. You start from the app governance dashboard that provides a high-level overview of the alerts and apps in your tenant that require administrator attention.
 
 With app governance visibility and insights, you can see:
 
-- A list of the OAuth-enabled apps that access Microsoft 365 data in your tenant.
+- A list of the OAuth-enabled apps registered to Azure Active Directory in your tenant.
 - A rich view on app activities so that you can react or respond to them.
-
->[!Note]
->Azure-only apps that are not granted permissions to access Microsoft 365 resources are not displayed in app governance.
->
 
 See [administrator roles](app-governance-get-started.md#roles) for an overview of required administrator roles for visibility and insights.
 

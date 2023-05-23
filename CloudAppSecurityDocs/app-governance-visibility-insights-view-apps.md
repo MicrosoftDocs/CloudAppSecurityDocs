@@ -7,14 +7,14 @@ description: View your apps.
 
 # View your apps
 
-App governance allows you to quickly gain deep insights into the Microsoft 365 OAuth apps in your tenant. For example, you can see:
+App governance allows you to quickly gain deep insights into the apps in your tenant. For example, you can see:
 
-- A list of OAuth-enabled apps in the tenant, together with relevant app metadata and usage data.
+- A list of apps in the tenant, together with relevant app metadata and usage data.
 - App details with deeper insights and information by selecting an app in the list.
 
 ## Getting a list of all the apps in your tenant
 
-For a summary of apps in your tenant, go to **Microsoft 365 Defender > App governance > Apps**.
+For a summary of apps in your tenant, go to **App governance > Apps**.
 
 ![The app governance app summary page in Microsoft 365 Defender.](media/app-governance-visibility-insights-view-apps/appg-cc-apps.png)
 
