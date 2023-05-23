@@ -21,9 +21,11 @@ This article provides information about how to personalize the email notificatio
 
  Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Mail settings**.![Email settings](media/mail-settings/email-settings.png)
+1. In the Microsoft 365 Defender portal, select **Settings** > **Cloud Apps** > **System** > **Mail settings**.
 
-1. Under **Email sender identity**: Microsoft Defender for Cloud Apps will send the notifications using the default settings.
+    ![Screenshot of the Mail settings tab.](media/mail-settings/email-settings.png)
+
+1. Under **Email sender identity**: Microsoft Defender for Cloud Apps always sends the notifications using the default settings.
 
 1. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following things:
 
