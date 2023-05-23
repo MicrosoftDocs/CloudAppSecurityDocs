@@ -21,14 +21,12 @@ This article provides information about how to personalize the email notificatio
 
  Microsoft Defender for Cloud Apps enables you to customize the email notifications sent to end users involved in breaches. To set parameters for email notifications, follow this procedure. For information about the Microsoft Defender for Cloud Apps email server IP address that you should allow in your anti-spam service, see [Network requirements](network-requirements.md).
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Mail settings**.
+1. In the Microsoft 365 Defender portal, select **Settings** > **Cloud Apps** > **System** > **Mail settings**.
 
-    ![mail settings.](media/mail-settings-config.png)
+    ![Screenshot of the Mail settings tab.](media/mail-settings/email-settings.png)
+    
+    The **Default settings** option is always selected for the **Email sender identity**, and Defender for Cloud Apps always sends notifications using the default settings.
 
-1. Under **Email sender identity**: If you're planning to use the default email settings, you don't need to change anything in this section. If you want to customize the email sender identity, you can set any of the settings here to customize the field you want to change. You can change any or all of the following items: **From display name**, **From email address**, **Reply-to email address**. Microsoft Defender for Cloud Apps accomplishes the customization by using a third-party mail service called MailChimp&reg;. Make sure you review and accept MailChimp's Terms of Service and Privacy Statement to enable customization. Otherwise, Microsoft Defender for Cloud Apps will send the notifications using the default settings.
-
-    > [!NOTE]
-    > Only unicode characters are supported in the display name and the email address according to the [rfc822 standard](https://datatracker.ietf.org/doc/html/rfc822).
 
 1. For the **Email design**, you can use an html file to customize and design the email messages sent from the system. The html file used for your template should include the following things:
 
@@ -53,7 +51,7 @@ This article provides information about how to personalize the email notificatio
 
 ## Additional notes
 
-The following type of notifications use the custom email templates:
+The following types of notifications use the custom email templates:
 
 - Failed to import the file you tried to upload, it may be corrupt.
 - Security notification
@@ -65,6 +63,7 @@ The following type of notifications use the custom email templates:
 - OAuth app revoked
 - File sharing report
 - Cloud App Security Test Email [this is for testing purposes]
+
 - Ownership of items transferred to you
 
 > [!NOTE]
@@ -134,3 +133,4 @@ Below is a sample email template:
 > [Set up Cloud Discovery](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
