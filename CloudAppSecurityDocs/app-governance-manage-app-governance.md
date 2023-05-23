@@ -15,8 +15,6 @@ App governance also enables you to see which user-installed OAuth applications h
 
 These insights enable you to make informed decisions around blocking or restricting apps that present significant risk to your organization.
 
-The app governance add-on feature to Defender for Cloud Apps is a security and policy management capability designed for OAuth-enabled apps registered on Azure Active Directory (Azure AD). App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions.
-
 App governance provides you with:
 
 - **Insights**: Get a comprehensive view of OAuth-enabled apps in your tenant registered to Azure AD as well as Google and Salesforce identity services. You can see the status of apps, their permissions, user accounts associated with them, alerts and other suspicious events they are involved in, so you can respond when necessary with sufficient information.

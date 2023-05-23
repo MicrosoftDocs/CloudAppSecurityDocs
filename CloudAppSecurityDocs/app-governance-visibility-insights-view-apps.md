@@ -98,9 +98,9 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 - *Security Administrator*
 - *Security Operator*
 
-## Managing Managing Google Workspace and Salesforce OAuth apps
+## Managing Google Workspace and Salesforce OAuth apps
 
-If you have enabled the [Google Workspace](connect-google-workspace.md) or [Salesforce](connect-salesforce.md) connector, you can also use the **App governance page** page to view information about app permissions in apps connected to Google Workspace and/or Salesforce. View the permissions granted to each app and revoke or ban apps as needed.
+If you have enabled the [Google Workspace](connect-google-workspace.md) or [Salesforce](connect-salesforce.md) connector, you can also use the **App governance** page to view information about app permissions in apps connected to Google Workspace and/or Salesforce. View the permissions granted to each app and revoke or ban apps as needed.
 
 On the **App governance** page, select the **Google** or **Salesforce** tabs to view your apps. For example:
 
@@ -130,8 +130,8 @@ The **Google** and **Salesforce** pages provide the following information about 
 
 Select **Show details** at the top right to view more information about all of the apps displayed, including:
 
-|Colum name  |Description  |Available for...   |
-|---------|---------|---------|
+|Colum name  |Description  |
+|---------|---------|
 |**Permissions**     |  A list of all permissions currently granted to the app. This information is available for Google Workspace only.     |
 |**Community use**     | Common, Uncommon, Rare. Indicates how popular the app is across all your users.      |
 |**App ID**     |  The app's ID      |
