@@ -51,7 +51,7 @@ This article provides information about how to personalize the email notificatio
 
 ## Additional notes
 
-The following type of notifications use the custom email templates:
+The following types of notifications use the custom email templates:
 
 - Failed to import the file you tried to upload, it may be corrupt.
 - Security notification
