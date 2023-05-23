@@ -4,6 +4,8 @@ ms.date: 02/28/2023
 ms.topic: how-to
 description: Learn how to secure apps with app hygiene features
 ---
+> [!NOTE]
+> Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. [Learn more about Workload Identities](https://aka.ms/workloadidentitydocs).
 
 # Secure apps with app hygiene features
 
@@ -27,17 +29,12 @@ Data legend:
 
 ## App hygiene policies
 
-App Governance provides out-of-the-box policies that alert on unused apps, unused credentials, and expiring credentials which automatically alert you on areas to improve app hygiene. 
-
-You can also customize your own policy using the unused app condition. For example, you could create a policy to automatically disable any app that hasn’t been used in the past 90 days, has high privilege permissions, and can access [priority account information](/microsoft-365/admin/setup/priority-accounts). Like all App Governance alerts, these alerts will be aggregated into incidents in your Microsoft 365 Defender alerts queue and flow to advanced hunting and Sentinel.
+App Governance provides customizable policies for unused apps, apps with unused credentials, and apps with expiring credentials. For example, you could create a policy to automatically disable any app that hasn’t been used in the past 90 days, has high privilege permissions, and can access [priority account information](/microsoft-365/admin/setup/priority-accounts). Like all App Governance alerts, these alerts will be aggregated into incidents in your Microsoft 365 Defender alerts queue and flow to advanced hunting and Sentinel.
 
 :::image type="content" source="media/app-governance/edit-policy-conditions.png" alt-text="Edit policy conditions.":::
 
 By staying on top of unused apps and expiring or unused app credentials and cleaning up your SaaS app inventory, you aren't only optimizing app usage and SaaS spend, but also, more importantly, keeping your app attack surface in check.
 
-## Known issues
-
-For the first month after launch, app hygiene data may be missing for multi-tenant apps that are owned by another tenant.
 
 ## Next steps
 
