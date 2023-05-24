@@ -13,25 +13,6 @@ When layered over Defender for Cloud Apps, app governance gives you in-depth gov
 
 App governance provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. App governance is also designed to secure OAuth-enabled apps registered on Azure AD.
 
-
-<!--this belongs elsewhere in an overview article. for another time.-->
-
-<!--do we really need this info here? we want to focus on what app g adds
-## Managing risks from cloud apps
-
-You might deploy the following types of solutions to control and protect your organization from risks posed by non-Microsoft and Line of Business (LOB) cloud apps:
-
-|Solution type  |Description  |
-|---------|---------|
-|**App Access**      |     Solutions like Azure Active Directory, which register your apps, manage access rights and permissions for your apps, and define which users can access which app.    |
-|**App Use**     |    Solutions like [Microsoft Defender for Cloud Apps](https://aka.ms/defender-for-cloud-apps), which discover and assess cloud apps, protects sensitive information in apps, identify risky user behavior in apps, enforce policies to control activity, and detect and remediate threats.     |
-|**App Behavior**     |  Solutions like the Defender for Cloud Apps' additional app governance feature, which requires a deep understanding of app behavior within an environment to identify and address activities that fall within a tolerance level that requires additional review to assess malicious intent.     |
-
-Together, these solutions together provide a three-pronged approach to holistically protect against app threats across the app lifecycle.-->
-
-<!--unclear what this image adds? can we get an explanation?
-:::image type="content" source="media/app-governance/app-governance-add-on.png" alt-text="App governance add on." border="false":::---->
-
 Use app governance in Defender for Cloud Apps to:
 
 - **Discover & manage the security posture of apps** – Get deep insights, visibility and reporting of all Microsoft 365 app behavior details
@@ -44,27 +25,9 @@ Use app governance in Defender for Cloud Apps to:
 
 Use the steps in this article to get started with app governance features in Microsoft Defender for Cloud Apps.
 
-<!--do we really need this section here?
-## Microsoft Defender for Cloud Apps
-
-Microsoft Defender for Cloud Apps is a SaaS security solution that provides visibility and control into an organization's SaaS applications. There are various ways to deploy Defender for Cloud Apps, including log collection, API connectors, and reverse proxy. It allows you to govern risky apps, protect sensitive data, and gain sophisticated analytics to identify and combat cyberthreats across all your Microsoft and non-Microsoft cloud services. Specifically for cloud apps across the organization, you can:
-
-- Discover and gain visibility into risky SaaS apps
-
-- Protect against cyberthreats and alert on suspicious behavior using user behavioral analytics
-
-- Protect sensitive information using API connecters and real-time controls for both Microsoft and non-Microsoft apps
-
-- Surface misconfigurations in your cloud apps and provide remediation actions to elevate the overall security posture in your organization
-
-:::image type="content" source="media/app-governance/defender-cloud-apps-protections.png" alt-text="Ways that Defender for Cloud Apps protects.":::
-
-For information about licensing, see the [Microsoft Defender for Cloud Apps product page](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-cloud-apps?rtc=1).
--->
-
 ## Prerequisites
 
-- If you haven’t already, [sign up for app governance](https://security.microsoft.com/cloudapps/settings?tabid=activateAppG) and complete the steps to add it to your tenant.  After you've signed up for app governance, you'll need to wait up to 24 hours to see and use the product.
+- If you haven’t already, [sign up for app governance](https://security.microsoft.com/cloudapps/settings?tabid=activateAppG) and complete the steps to add it to your tenant.  After you've signed up for app governance, you'll need to wait up to 10 hours to see and use the product.
 
     For more information, see [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md). 
 
