@@ -32,10 +32,7 @@ The dashboard contains a summary of the components of the Microsoft 365 app ecos
   - **Unverified publisher**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
   - **App only permissions**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
   - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
-  - **Unused**: Apps that have not signed in within the last 30 days.
-  - **Unused credentials**: Apps with one or more credentials that have not been used in the last 30 days.
-  - **Expiring credentials**: Apps with credentials that are expiring within 30 days.
-
+  
 ## View app insights
 
 One of the primary value points for app governance is the ability to quickly view app alerts and insights. To view insights for your apps:
@@ -49,9 +46,6 @@ One of the primary value points for app governance is the ability to quickly vie
     - Publisher verified
 1. You can also use one or more of the non-default filters to further customize your selection of apps by choosing any of these options:
     - Last modified
-    - Last used
-    - Credential unused since
-    - Credential expiration
     - Added on
     - Certification
     - Users
