@@ -5,7 +5,7 @@ ms.topic: conceptual
 description: Implement Microsoft app governance capabilities to govern your apps.
 ---
 
-# App governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender
+# App governance in Microsoft Defender for Cloud Apps
 
 Cyber attacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructure, establishing a starting point for privilege escalation, lateral movement, and data exfiltration. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture. You need to be able to quickly identify when an app exhibits anomalous behaviors and respond when these behaviors present risks to your environment, data, and users.
 
@@ -17,7 +17,7 @@ These insights enable you to make informed decisions around blocking or restrict
 
 App governance provides you with:
 
-- **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
+- **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory, Google, or Salesforce in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
 
 - **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
 
@@ -25,7 +25,7 @@ App governance provides you with:
 
 - **Remediation**: Along with automatic remediation capabilities, use remediation controls in a timely manner to respond to anomalous app activity detections.
 
-App governance is a platform-based solution that is an integral part of your app ecosystem. App governance oversees and governs OAuth-enabled apps that are registered with Azure AD. App governance provides you with application behavior controls to help strengthen the security and compliance posture of your IT infrastructure.<br>
+App governance is a platform-based solution that is an integral part of your app ecosystem. App governance oversees and governs OAuth-enabled apps that are registered with Azure AD, Google, or Salesforce. App governance provides you with application behavior controls to help strengthen the security and compliance posture of your IT infrastructure.<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4S7sp]
 
