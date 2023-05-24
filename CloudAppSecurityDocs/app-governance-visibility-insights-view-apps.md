@@ -31,18 +31,6 @@ You will see a list of apps and this information:
 - **Consent type**: Shows whether the app consent has been given at the user or the admin level, and the number of users whose data is accessible to the app
 - **Publisher**: Publisher of the app and their verification status
 - **Last modified**: Date and time when registration information was last updated on Azure AD
-- **Last used**: The last time the app signed in
-
-  - Due to data history or app scope constraints, some apps will show *Over 30 days ago*. These apps haven't signed in in the last 30 days, but we don’t currently have an exact last sign-in date.
-  - Apps which don't have a last sign in date available will have *Not available* in this column
-- **Credential unused since**: The last time the app signed in using the credential it hasn’t used the longest
-
-  - Due to data history or app scope constraints, some apps will show *Over 30 days ago*. These apps haven't signed in in the last 30 days, but we don’t currently have an exact last sign-in date.
-  - Apps which don’t have a last sign-in date available will have *Not available* in this column
-  - Apps with *No credentials* don’t have any credentials assigned to the app.
-- **Credential expiration**: Earliest upcoming expiration date for all app credentials
-
-  - Apps with *No credentials* don’t have any credentials assigned to the app.
 - **Added on**: Shows the date and time when the app was registered to Azure AD and assigned a service principal
 - **Permission usage**: Shows whether the app has any unused Graph API permissions in the last 90 days
 - **Data usage**: Total data downloaded or uploaded by the app in the last 30 days
@@ -88,8 +76,6 @@ The app details pane provides additional information on these tabs:
 |**Users** |See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. If an app is admin consented, the Total consented users will be all users in the tenant. |
 |**Permissions** | See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
 |**Sensitive labels** | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
-|**Last used** | Indicates the last time the app signed in and provides a link to related recommendations on Azure Active Directory. |
-| **Credentials** | Indicates whether the app has unused or expiring credentials and provides a link to credential management on Azure Active Directory. |
 
 For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
 
