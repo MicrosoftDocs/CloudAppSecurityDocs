@@ -54,8 +54,6 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
     - You can drill down into the app to understand more about its compliance by selecting the app name and then selecting the **Info** tab to see details about the app's compliance risk factors.
 
-    > [!TIP]
-    > Get notified when a discovered app is associated with a recently published security breach using the built-in **Discovered app security breach** alert. Investigate all users, IP addresses, and devices accessing the breached app in the last 90 days, and apply relevant controls.
 
 1. **Analyze usage**: Now that you know whether or not you want the app to be used in your organization, you want to investigate how and who is using it. If it's only used in a limited way in your organization maybe it's ok, but maybe if the use is growing you want to be notified about it so you can decide if you want to block the app.
 
