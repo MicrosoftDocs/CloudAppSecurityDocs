@@ -31,9 +31,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 May 28, 2023
 
-Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting are disabled from generating alerts. The policies will continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
+- **Behavior-generating policies no longer generate alerts** (Public preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting do not generate alerts. The policies will continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
 
-For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
+    For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
 ## Defender for Cloud Apps release 251-252
 
