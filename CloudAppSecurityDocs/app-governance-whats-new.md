@@ -22,9 +22,15 @@ For more information on what's new with other Microsoft Defender security produc
 
 - **Enhanced hunting experience for OAuth app activities:** App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights to help your SOC identify an app’s activities and the resources it has accessed. This includes pre-built queries to streamline the investigation, visibility into the data in the results view and the ability to include OAuth app data such as resource, app, user, and app activity details in custom detections. Learn more about the enhanced hunting experience for OAuth app activities.
 
+- **App hygiene feature update:** Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
+
 > [!NOTE]
 > Starting in June 2023, updates for app governance are listed together with other Microsoft Defender for Cloud features. For more information, see [What's new in Microsoft Defender for Cloud Apps](release-notes.md).
 
+
+## App governance March 2023 release
+
+- **App hygiene public preview:** App governance now provides insights and policy capability for unused apps, apps with unused credentials, and apps with expiring credentials. Each of these features has a predefined policy out of the box and you can define your own custom policies as well. You can export these insights from the apps list for easy reporting and triage across your organization. 
 
 ## App governance February 2023 release
 
