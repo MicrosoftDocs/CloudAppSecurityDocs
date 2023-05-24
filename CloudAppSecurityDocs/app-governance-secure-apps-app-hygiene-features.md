@@ -4,8 +4,7 @@ ms.date: 02/28/2023
 ms.topic: how-to
 description: Learn how to secure apps with app hygiene features
 ---
-> [!NOTE]
-> Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. [Learn more about Workload Identities](https://aka.ms/workloadidentitydocs).
+
 
 # Secure apps with app hygiene features
 
@@ -14,6 +13,9 @@ Have you ever wanted to see the apps that your organization owns but isn't using
 Watch this video for a brief explanation of these features:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWYEm]
+
+> [!NOTE]
+> Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
 
 ## App insights
 

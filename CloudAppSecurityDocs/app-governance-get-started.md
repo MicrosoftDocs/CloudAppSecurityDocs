@@ -34,7 +34,7 @@ If your organization satisfies the [prerequisites](#prerequisites), go to [Micro
 
 :::image type="content" source="media/app-governance-get-started/app-governance-service-status1.png" alt-text="Screenshot of the App governance toggle in Microsoft 365 Defender." lightbox="media/app-governance-get-started/app-governance-service-status1.png":::
 
-After you've signed up for app governance, you'll need to wait up to 24 hours to see and use the product. <!--added here, is this correct?-->
+After you've signed up for app governance, you'll need to wait up to 10 hours to see and use the product.
 
 If you are unable to see the app governance option in the settings page, it might be due to one or more of the following reasons:
 

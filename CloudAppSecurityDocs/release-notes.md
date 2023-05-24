@@ -59,7 +59,13 @@ OAuth app insights include:
 - Visibility into the data using the results view
 - The ability to include OAuth app data such as resource, app, user, and app activity details in custom detections.
 
-For more information, see [Investigate and remediate risky OAuth apps](investigate-risky-oauth.md). <!--is this the right link?-->
+For more information, see [Investigate and remediate risky OAuth apps](investigate-risky-oauth.md). 
+
+### App hygiene update with  Microsoft Entra
+
+Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium.
+
+For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
 
 ## April 2023
 
