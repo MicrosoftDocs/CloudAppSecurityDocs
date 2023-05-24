@@ -9,7 +9,7 @@ description: Step-by-step guide to help you quickly get started with app governa
 
 App governance solutions require a deep understanding of app behavior within an environment to identify and address activities that fall within a tolerance level that requires additional review to assess malicious intent.
 
-When layered over Defender for Cloud Apps, app governance gives you in-depth governance against risky app behavior in your Microsoft 365 environment.
+When layered over Defender for Cloud Apps, app governance gives you in-depth governance against risky app behavior in your environment.
 
 App governance provides additional security and policy management capabilities to monitor and govern app behaviors and quickly identify, alert, and protect from risky behaviors with data, users, and apps. App governance is also designed to secure OAuth-enabled apps registered on Azure AD.
 
@@ -17,7 +17,7 @@ Use app governance in Defender for Cloud Apps to:
 
 - **Discover & manage the security posture of apps** – Get deep insights, visibility and reporting of all Microsoft 365 app behavior details
 
-- **Provide secure access to apps, data & resources** – Manually/automatically disable access of Microsoft 365 apps showing risky characteristics/behavior
+- **Provide secure access to apps, data & resources** – Manually/automatically deactivate apps showing risky characteristics/behavior
 
 - **Defend against cyberthreats & anomalies** – Leverage machine learning-based detection of unusual app behavior (with other apps, high priority users and data) and remediate malicious app behavior
 
@@ -56,7 +56,7 @@ For more information, see [Get started with visibility and insights](app-governa
 
 ### Step 2: Implement app policies
 
-App governance uses machine learning-based detection algorithms to detect anomalous app behavior in your Microsoft 365 tenant and generates alerts that you can see, investigate, and resolve. Beyond this built-in detection capability (which we'll get into in more detail later), you can use a set of default policy templates or create your own app policies that generate other alerts.
+App governance uses machine learning-based detection algorithms to detect anomalous app behavior in your environment and generates alerts that you can see, investigate, and resolve. Beyond this built-in detection capability (which we'll get into in more detail later), you can use a set of default policy templates or create your own app policies that generate other alerts.
 
 These policies for app and user patterns and behaviors can protect your users from using non-compliant or malicious apps and limit the access of risky apps to your tenant data.
 
@@ -108,7 +108,7 @@ You can also remediate alerts, manually after investigation, or automatically th
 
 - **[Investigate anomaly detection alerts:](app-governance-anomaly-detection-alerts.md)** App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks.
 
-- **[Remediate app threats:](app-governance-manage-alerts.md)** You remediate app threats to your Microsoft 365 tenant through the Alerts page of the Microsoft app governance section of the Microsoft 365 Defender.
+- [**Remediate app threats:**](app-governance-manage-alerts.md) You remediate harmful app and app activity identified by app governance alerts in Microsoft 365 Defender.
 
 For more information, see [Learn about app threat detection and remediation](app-governance-detect-remediate-overview.md).
 

@@ -17,7 +17,7 @@ These insights enable you to make informed decisions around blocking or restrict
 
 App governance provides you with:
 
-- **Insights**: Get a comprehensive view of OAuth-enabled apps in your tenant registered to Azure AD as well as Google and Salesforce identity services. You can see the status of apps, their permissions, user accounts associated with them, alerts and other suspicious events they are involved in, so you can respond when necessary with sufficient information.
+- **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
 
 - **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
 
@@ -25,8 +25,8 @@ App governance provides you with:
 
 - **Remediation**: Along with automatic remediation capabilities, use remediation controls in a timely manner to respond to anomalous app activity detections.
 
-App governance is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. App governance oversees and governs OAuth-enabled apps that are registered with Azure AD. App governance provides you with application behavior controls to help strengthen the security and compliance posture of your IT infrastructure.<br><br>
-
+App governance is a platform-based solution that is an integral part of your app ecosystem. App governance oversees and governs OAuth-enabled apps that are registered with Azure AD. App governance provides you with application behavior controls to help strengthen the security and compliance posture of your IT infrastructure.<br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4S7sp]
 
 ## A first glimpse at app governance

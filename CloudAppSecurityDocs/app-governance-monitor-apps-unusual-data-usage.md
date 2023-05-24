@@ -9,7 +9,7 @@ description: Monitor and respond to apps with unusual data usage.
 
 App governance provides data usage information that can help you identify unwanted and potentially malicious app activity. You can utilize this information through the following sections of the portal:
 
-- Data usage card—provides total data usage over time, highlighting sudden spikes in total upload and download activity of all apps in Microsoft 365. This card also provides usage information separately for various resources, such as files and email, so you can pinpoint the resources that apps might be misusing.
+- Data usage card—provides total data usage over time, highlighting sudden spikes in total upload and download activity of all apps that access Microsoft 365 resources. This card also provides usage information separately for various resources, such as files and email, so you can pinpoint the resources that apps might be misusing.
 - App details pane—when you select an app in the Apps page, a flyout pane displays detailed information about the app. In the pane, get app-specific data usage information by resource type as well as upload and download patterns over time.
 - Policy conditions—you can create policies that automatically flag and deactivate apps whose data usage matches the following conditions:
   - Data usage—the total amount of downloads and uploads exceeds your specified threshold

@@ -14,25 +14,19 @@ You can also access the app governance dashboard from **Office 365 > Microsoft 3
 
 ## What’s available on the dashboard
 
-The dashboard contains a summary of the components of the Microsoft 365 app ecosystem in the tenant:
+The dashboard contains a summary of your app ecosystem:
 
-- **Tenant summary**: The count of key app and incident categories.
-- **Latest incidents**: The 10 most recent active incidents in the tenant
-- **Data usage**: Mouse over each month column in the graph to see the corresponding value.
-  - **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
-  - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.
-- **Apps that accessed data across Microsoft 365 services**: The count of apps that have accessed data with and without sensitivity labels on SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days. For example, in the screenshot above, 99 apps accessed OneDrive in the last 30 days, out of which 27 apps accessed data with sensitivity labels.
-- **Sensitivity labels accessed**: Count of apps that accessed labeled data across SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days, sorted by the count. For example, in the screenshot above, 90 apps accessed confidential data on SharePoint, OneDrive, Exchange Online, and Teams.
-- **Predefined policies**: Count of active and total predefined policies that identify risky apps, such as apps with excessive privileges, unusual characteristics, or suspicious activities.
-- **App categories**: The top apps sorted by these categories:
-  
-  - **All categories**: Sorts across all available categories.
-  - **Highly privileged**: High privilege is an internally determined category based on platform machine learning and signals.
-  - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application hasn't been used in the last 90 days, that application is overprivileged. App governance must be operating for at least 90 days to determine if any app is overprivileged.  
-  - **Unverified publisher**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.
-  - **App only permissions**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.
-  - **New apps**: New Microsoft 365 apps that have been registered in the last seven days.  
-  
+
+|Dashboard element  |Description  |
+|---------|---------|
+|**Tenant summary**     | The count of key app and incident categories.        |
+|**Latest incidents**     |   The 10 most recent active incidents in the tenant      |
+|**Data usage**     |  Mouse over each month column in the graph to see the corresponding value: <br><br>- **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.<br><br>  - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.       |
+|**Apps that accessed data across Microsoft 365 services**     |  The count of apps that have accessed data with and without sensitivity labels on SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days. For example, in the screenshot above, 99 apps accessed OneDrive in the last 30 days, out of which 27 apps accessed data with sensitivity labels.       |
+|**Sensitivity labels accessed**     |     Count of apps that accessed labeled data across SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days, sorted by the count. For example, in the screenshot above, 90 apps accessed confidential data on SharePoint, OneDrive, Exchange Online, and Teams.    |
+|**Predefined policies**     |  Count of active and total predefined policies that identify risky apps, such as apps with excessive privileges, unusual characteristics, or suspicious activities.       |
+|**App categories**     |  The top apps sorted by these categories:  <br><br>- **All categories**: Sorts across all available categories.<br>  - **Highly privileged**: High privilege is an internally determined category based on platform machine learning and signals.<br>  - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application hasn't been used in the last 90 days, that application is overprivileged. App governance must be operating for at least 90 days to determine if any app is overprivileged.  <br>- **Unverified publisher**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.<br>  - **App only permissions**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.<br>- **New apps**: New apps that have been registered in the last seven days.       |
+
 ## View app insights
 
 One of the primary value points for app governance is the ability to quickly view app alerts and insights. To view insights for your apps:
