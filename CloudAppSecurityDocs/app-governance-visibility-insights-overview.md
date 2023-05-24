@@ -34,9 +34,6 @@ With app governance, you can see:
   - High-usage apps.
   - Top consented users whose data a specific app can access.
   - Priority accounts who have data that a specific app can access.
-  - Unused apps
-  - Apps with unused credentials
-  - Apps with expired credentials
   - OAuth applications that have accessed sensitive or regular content on SharePoint, OneDrive, Exchange Online, or Teams.
 
 - A cumulative view of users accessing apps.
@@ -48,6 +45,7 @@ You can also:
 
 - Drill down to a single app (app page) with all its associated insights.
 - Drill-down into top users by data, and priority accounts within a single app.
+- Export a list of your apps plus respective insights
 
 ## Limitations to Microsoft 365 activity insights
 
