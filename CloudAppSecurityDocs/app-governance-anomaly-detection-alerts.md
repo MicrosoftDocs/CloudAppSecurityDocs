@@ -486,7 +486,7 @@ This alert is triggered when a line of business app with suspicious metadata has
 A non-Microsoft cloud app is using a logo that was found by a machine learning algorithm to be very similar to a Microsoft logo. This can be an attempt to impersonate Microsoft software products and appear legitimate.
 
 > [!NOTE]
-> For line-of-business apps, tenant admins will need to provide consent to having required data sent outside the current compliance boundary and to select partner teams within Microsoft.
+> Tenant admins will need to provide consent via pop up to have required data sent outside the current compliance boundary and to select partner teams within Microsoft in order to enable this threat detection for line-of-business apps.
 >
 
 **TP or FP?**
