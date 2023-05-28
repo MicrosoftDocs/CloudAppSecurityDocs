@@ -1,13 +1,13 @@
 ---
-title: Investigate threat detection alerts
-ms.date: 01/29/2023
+title: Investigate app governance threat detection alerts | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: conceptual
-description: Learn how to investigate threat detection alerts from app governance.
+description: Learn how to investigate threat detection alerts from app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
 ---
 
 # Investigate threat detection alerts
 
- App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT&CK
 
@@ -31,9 +31,9 @@ This guide provides information about investigating and remediating app governan
 
 Following proper investigation, all app governance alerts can be classified as one of the following activity types:
 
-- True positive (TP): An alert on a confirmed malicious activity.
-- Benign true positive (B-TP): An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
-- False positive (FP): An alert on a non-malicious activity.
+- **True positive (TP)**: An alert on a confirmed malicious activity.
+- **Benign true positive (B-TP)**: An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
+- **False positive (FP)**: An alert on a non-malicious activity.
 
 ## General investigation steps
 
@@ -876,3 +876,7 @@ A non-Microsoft cloud app made anomalous Graph API calls to SharePoint, includin
 1. Review all activities performed by the app.
 1. Review the scopes granted by the app.
 1. Review the user activity associated with the app.
+
+## Next steps
+
+[Manage app governance alerts](app-governance-manage-alerts.md)

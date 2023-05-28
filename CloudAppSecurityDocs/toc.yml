@@ -189,7 +189,7 @@ items:
         - name: Investigate threat detection alerts
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
-          href: /defender-cloud-apps/app-governance-manage-alerts
+          href: app-governance-manage-alerts.md
     - name: Secure apps and other assets
       items:
         - name: Secure apps accessing non-Graph APIs
