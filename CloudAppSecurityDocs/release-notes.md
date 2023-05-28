@@ -27,6 +27,16 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
+## Defender for Cloud Apps release 253
+
+May 28, 2023
+
+- **Behavior-generating policies no longer generate alerts** (Preview). Starting May 28, 2023, policies that generate *behaviors* in Microsoft 365 Defender advanced hunting do not generate alerts. The policies will continue generating *behaviors* regardless of being enabled or disabled in the tenant's configuration.
+
+    For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
+
+- **Non-blockable applications**: To prevent users from accidentally causing downtime, Defender for Cloud Apps now prevents you from blocking business-critical Microsoft services. For more information, see [Govern discovered apps](governance-discovery.md#non-blockable-applications).
+
 ## Defender for Cloud Apps release 251-252
 
 April 30, 2023
