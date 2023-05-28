@@ -51,6 +51,26 @@ If your tenant doesn't use any of the streams above, you can still export a list
 
 In the **Discovered apps** page, filter all *Unsanctioned* apps and then use the export capability to export all the domains.
 
+## Non-blockable applications
+
+To prevent users from accidentally blocking business-critical services and causing downtime, the following services cannot be blocked using Defender for Cloud Apps, via the UI or policies:
+
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender Security Center
+- Microsoft 365 Security Center
+- Microsoft Defender for Identity
+- Microsoft Azure Information Protection
+- Microsoft Entra Permissions Management
+- Microsoft Conditional Access Application Control
+- Microsoft Secure Score
+- Microsoft 365 compliance center
+- Microsoft Intune
+- Microsoft Support
+- Microsoft AD FS Help
+- Microsoft Support
+- Microsoft Online Services
+
+
 ## Governance conflicts
 
 If there's a conflict between [manual governance actions](#sanctioningunsanctioning-an-app) and [governance set by policy](cloud-discovery-policies.md), the last operation applied will take precedence.
