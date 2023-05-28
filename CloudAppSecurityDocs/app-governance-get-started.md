@@ -30,7 +30,7 @@ Before you start, verify that you satisfy the following prerequisites:
 
 ## Turn on app governance
 
-If your organization satisfies the [prerequisites](#prerequisites), go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and turn app governance on. For example:
+If your organization satisfies the [prerequisites](#prerequisites), go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and select **Use app governance**. For example:
 
 :::image type="content" source="media/app-governance-get-started/app-governance-service-status1.png" alt-text="Screenshot of the App governance toggle in Microsoft 365 Defender." lightbox="media/app-governance-get-started/app-governance-service-status1.png":::
 
@@ -52,9 +52,9 @@ For example:
 
 ## Current trial customers
 
-If you are currently running a free trial of app governance and want to use it without interruption, go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch the app governance toggle on before July 31, 2023.  <!--how to update this after august?-->
+If you are currently running a free trial of app governance and want to use it without interruption, go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch the app governance toggle on before **July 31, 2023**.  <!--how to update this after august?-->
 
-If you want to opt out of app governance, no action is needed, and app governance will automatically turn off after July 31, 2023. <!--update after august --> Your data will be deleted permanently in accordance with our data retention policies.<!--link?--> To keep a copy of your app and policy data, make sure to export them manually from the app governance pages before July 31, 2023.
+If you want to opt out of app governance, no action is needed, and app governance will automatically turn off after **July 31, 2023**. <!--update after august --> Your data will be deleted permanently in accordance with our data retention policies.<!--link?--> To keep a copy of your app and policy data, make sure to export them manually from the app governance pages before July 31, 2023.
 
 ## Licensing
 
@@ -117,4 +117,4 @@ For more information about each role, see [Administrator role permissions](/azur
 
 ## Next steps
 
-[App governance in Defender for Cloud Apps](app-governance-trial-user-guide.md)
+[Get started with app governance in Defender for Cloud Apps](app-governance-trial-user-guide.md)

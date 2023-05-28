@@ -36,16 +36,20 @@ For more information on what's new with other Microsoft Defender security produc
 
 App governance is now included as part of the [Microsoft Defender for Cloud Apps licenses](app-governance-get-started.md#licensing) and no longer requires an add-on license.
 
-In the Microsoft 365 Defender portal, go to **Settings > Cloud apps > App governance > Service status** to either enable app governance if available, or sign up for the waitlist. Existing holders of trial licenses for the app governance add-on have until August 31, 2023 to enable the toggle and retain their app governance access.
+In the Microsoft 365 Defender portal, go to **Settings > Cloud apps > App governance > Service status** to either enable app governance if available, or sign up for the waitlist. 
+
+Existing holders of trial licenses for the app governance add-on have until **August 31, 2023** to enable the toggle and retain their app governance access. <!--august or july?-->
 
 For more information, see:
 
 - [App governance Defender for Cloud Apps in Microsoft 365 Defender](app-governance-manage-app-governance.md)
-- [Get started with app governance](app-governance-get-started.md)
+- [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
 
 ### App governance OAuth convergence
 
-For customers who've enabled app governance, we've consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. In the Microsoft 365 Defender portal, we've merged all capabilities originally under **Cloud apps > OAuth apps under  App governance**, where you can manage all OAuth apps under a single pane of glass.
+For customers who've enabled app governance, we've consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. 
+
+In the Microsoft 365 Defender portal, we've merged all capabilities originally under **Cloud apps > OAuth apps under  App governance**, where you can manage all OAuth apps under a single pane of glass.
 
 For more information, see [View your apps](app-governance-visibility-insights-view-apps.md).
 
@@ -59,7 +63,7 @@ OAuth app insights include:
 - Visibility into the data using the results view
 - The ability to include OAuth app data such as resource, app, user, and app activity details in custom detections.
 
-For more information, see [Investigate and remediate risky OAuth apps](investigate-risky-oauth.md). 
+For more information, see [Hunt for threats in app activities](app-activity-threat-hunting.md).
 
 ### App hygiene update with  Microsoft Entra
 

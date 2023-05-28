@@ -1,29 +1,35 @@
 ---
-title: Get started with visibility and insights
-ms.date: 01/29/2023
+title: Get started with app governance visibility and insights | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: how-to
-description: Get started with visibility and insights.
+description: Get started with app governance visibility and insights in Microsoft 365 Defender for Microsoft Defender for Cloud Apps.
 ---
 
 # Get started with visibility and insights
 
-The first place to get started is the app governance dashboard at [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of [these app governance administrator roles](app-governance-get-started.md#roles) to view any app governance data.
-> [!div class="mx-imgBorder"]
->![App governance overview page in Microsoft 365 Defender.](media/app-governance-visibility-insights-get-started/overview.png)  
-You can also access the app governance dashboard from **Office 365 > Microsoft 365 Defender > App governance > Overview page**.
+Start by viewing the [app governance dashboard](https://aka.ms/appgovernance) in the Microsoft 365 Defender portal (**Microsoft 365 Defender > Cloud Apps > App governance > Overview**).
 
-## What’s available on the dashboard
+Your sign-in account must have one of the [required app governance administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
-The dashboard contains a summary of your app ecosystem:
+For example:
 
+:::image type="content" source="media/app-governance-visibility-insights-get-started/overview.png" alt-text="Screenshot of the App governance overview page in Microsoft 365 Defender.":::
+
+> [!TIP]
+> You can also access the app governance dashboard from **Office 365 > Microsoft 365 Defender > App governance > Overview page**.
+>
+
+## What’s available on the Overview tab
+
+The dashboard on the **Overview** tab contains a summary of your app ecosystem:
 
 |Dashboard element  |Description  |
 |---------|---------|
 |**Tenant summary**     | The count of key app and incident categories.        |
 |**Latest incidents**     |   The 10 most recent active incidents in the tenant      |
 |**Data usage**     |  Mouse over each month column in the graph to see the corresponding value: <br><br>- **Total data usage**: Tracks total data accessed by all apps in the tenant through Graph API over the last four calendar months. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.<br><br>  - **Data usage by resource type**: Data usage over the last four calendar months, broken down by resource type. Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API.       |
-|**Apps that accessed data across Microsoft 365 services**     |  The count of apps that have accessed data with and without sensitivity labels on SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days. For example, in the screenshot above, 99 apps accessed OneDrive in the last 30 days, out of which 27 apps accessed data with sensitivity labels.       |
-|**Sensitivity labels accessed**     |     Count of apps that accessed labeled data across SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days, sorted by the count. For example, in the screenshot above, 90 apps accessed confidential data on SharePoint, OneDrive, Exchange Online, and Teams.    |
+|**Apps that accessed data across Microsoft 365 services**     |  The count of apps that have accessed data with and without sensitivity labels on SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days. <br><br>For example, in the screenshot above, 99 apps accessed OneDrive in the last 30 days, out of which 27 apps accessed data with sensitivity labels.       |
+|**Sensitivity labels accessed**     |     Count of apps that accessed labeled data across SharePoint, OneDrive, Exchange Online, and Teams in the last 30 days, sorted by the count. <br><br>For example, in the screenshot above, 90 apps accessed confidential data on SharePoint, OneDrive, Exchange Online, and Teams.    |
 |**Predefined policies**     |  Count of active and total predefined policies that identify risky apps, such as apps with excessive privileges, unusual characteristics, or suspicious activities.       |
 |**App categories**     |  The top apps sorted by these categories:  <br><br>- **All categories**: Sorts across all available categories.<br>  - **Highly privileged**: High privilege is an internally determined category based on platform machine learning and signals.<br>  - **Overprivileged**: When app governance receives telemetry that indicates that a permission granted to an application hasn't been used in the last 90 days, that application is overprivileged. App governance must be operating for at least 90 days to determine if any app is overprivileged.  <br>- **Unverified publisher**: Applications that haven't received [publisher certification](/azure/active-directory/develop/publisher-verification-overview) are considered unverified.<br>  - **App only permissions**: [Application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) are used by apps that can run without a signed-in user present. Apps with permissions to access data across the tenant are potentially a higher risk.<br>- **New apps**: New apps that have been registered in the last seven days.       |
 

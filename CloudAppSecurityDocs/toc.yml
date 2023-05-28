@@ -148,14 +148,10 @@ items:
       href: app-governance-manage-app-governance.md
     - name: Turn on app governance
       href: app-governance-get-started.md
-    - name: App governance trial user guide
+    - name: Get started with app governance
       href: app-governance-trial-user-guide.md
-    - name: Submit feedback on app governance
-      href: app-governance-feedback.md
     - name: App governance FAQ
       href: app-governance-faq.yml
-    - name: What's new archive for app governance
-      href: app-governance-whats-new.md
     - name: Get visibility and insights
       items:
         - name: Learn about visibility and insights
@@ -202,6 +198,8 @@ items:
           href: app-governance-secure-apps-app-hygiene-features.md
         - name: Hunt for threats in app activities
           href: app-activity-threat-hunting.md
+    - name: What's new archive for app governance
+      href: app-governance-whats-new.md
   - name: Cloud Discovery
     items:
     - name: Set up

@@ -1,6 +1,6 @@
 ---
 title: What's new in Defender for Cloud Apps app governance
-ms.date: 02/28/2023
+ms.date: 05/28/2023
 ms.topic: conceptual
 description: Learn about new features and enhancements for app governance in Defender for Cloud Apps
 ---
@@ -14,19 +14,47 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 
-## App governance June 2023 release
-
-- **App governance is now available as part of the Defender for Cloud Apps license:** App governance is now included as part of the [various](/defender-cloud-apps/app-governance-get-started) Microsoft Defender for Cloud Apps licenses and no longer requires an add-on license. In the Microsoft 365 Defender portal, go to  Settings > Cloud apps > App governance > Service status to either enable app governance if available or sign up for the waitlist. Existing holders of trial licenses for the app governance add-on have until August 31, 2023 to enable the toggle and retain their app governance access.
-
-- **App governance OAuth convergence:** We consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance. In the Microsoft 365 Defender portal, we've merged all capabilities originally under Cloud apps > OAuth apps under  App governance, where you can manage all OAuth apps under a single pane of glass.
-
-- **Enhanced hunting experience for OAuth app activities:** App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights to help your SOC identify an app’s activities and the resources it has accessed. This includes pre-built queries to streamline the investigation, visibility into the data in the results view and the ability to include OAuth app data such as resource, app, user, and app activity details in custom detections. Learn more about the enhanced hunting experience for OAuth app activities.
-
-- **App hygiene feature update:** Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
-
 > [!NOTE]
 > Starting in June 2023, updates for app governance are listed together with other Microsoft Defender for Cloud features. For more information, see [What's new in Microsoft Defender for Cloud Apps](release-notes.md).
 
+
+## App governance June 2023 release
+
+### App governance is now available as part of the Defender for Cloud Apps license
+
+App governance is now included as part of the [various](/defender-cloud-apps/app-governance-get-started) Microsoft Defender for Cloud Apps licenses and no longer requires an add-on license. 
+
+In the Microsoft 365 Defender portal, go to  **Settings > Cloud apps > App governance > Service status** to either enable app governance if available or sign up for the waitlist. 
+
+Existing holders of trial licenses for the app governance add-on have until **August 31, 2023** to enable the toggle and retain their app governance access. <!--august or july?-->
+
+For more information, see [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
+
+### App governance OAuth convergence
+
+For customers who've enabled app governance, we've consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance.
+
+In the Microsoft 365 Defender portal, we've merged all capabilities originally under **Cloud apps > OAuth apps** under the **App governance** page, where you can manage all OAuth apps under a single pane of glass.
+
+For more information, see [View your apps](app-governance-visibility-insights-view-apps.md).
+
+### Enhanced hunting experience for OAuth app activities
+
+App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights, helping your SOC identify an app’s activities and the resources it has accessed.
+
+OAuth app insights include:
+
+- Out-of-the-box queries that help to streamline the investigation
+- Visibility into the data using the results view
+- The ability to include OAuth app data such as resource, app, user, and app activity details in custom detections.
+
+For more information, see [Hunt for threats in app activities](app-activity-threat-hunting.md).
+
+### App hygiene feature update
+
+Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials is only available to app governance customers with Microsoft Entra Workload Identities Premium.
+
+For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
 
 ## App governance March 2023 release
 

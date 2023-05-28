@@ -42,6 +42,26 @@ App governance alerts show up in the Microsoft 365 Defender alerts list as alert
 
 ## Next steps
 
-To see the app governance dashboard, go to [aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
+View the **App governance > Overview** tab in the [Microsoft 365 Defender portal](https://aka.ms/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
-For more information, see [Get started with app governance](app-governance-get-started.md).
+For more information, see [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
+
+**Training**:
+
+- [Defender for Cloud apps Ninja training](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-defender-for-cloud-apps-ninja-training-june-2022/ba-p/2751518)
+
+**Blogs**:
+
+- [Microsoft shifts to a comprehensive SaaS security solution - Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2023/02/15/microsoft-shifts-to-a-comprehensive-saas-security-solution/)
+
+- [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
+
+**Videos**:
+
+- [App governance video playlist](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
+
+- [Microsoft Mechanics Video on app governance](https://www.youtube.com/watch?v=KmE8LW_tJ1M).
+
+- [App Governance segment in the Security Summit video](https://mssecuritysummit.event.microsoft.com/Home/Security) starts at 11:50 mark. You need to register to view.
+
+- [App Governance is a Key Part of a Customers' Zero Trust Journey - YouTube](https://www.youtube.com/watch?v=XuGZu8ja134)

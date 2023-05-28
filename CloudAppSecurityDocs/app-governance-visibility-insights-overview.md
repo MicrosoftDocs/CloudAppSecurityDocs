@@ -1,20 +1,22 @@
 ---
-title: Learn about visibility and insights
-ms.date: 01/29/2023
+title: App governance visibility and insights | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: conceptual
-description: Learn about visibility and insights.
+description: Learn about visibility and insights available for app governance with Microsoft Defender for Cloud Apps in Microsoft 365 Defender.
 ---
 
-# Learn about visibility and insights
+# App governance visibility and insights
 
-With app governance, you can quickly gain visibility and meaningful insights on your app ecosystem. You start from the app governance dashboard that provides a high-level overview of the alerts and apps in your tenant that require administrator attention.
-
-With app governance visibility and insights, you can see:
+Use app governance to gain visibility and meaningful insights on your app ecosystem, including:
 
 - A list of the OAuth-enabled apps registered to Azure Active Directory in your tenant.
-- A rich view on app activities so that you can react or respond to them.
+- A rich view on app activities, so that you can react or respond to them.
 
-See [administrator roles](app-governance-get-started.md#roles) for an overview of required administrator roles for visibility and insights.
+## Required administrator roles
+
+For more information, see [App governance roles](app-governance-get-started.md#roles).
+
+## Visibility and insight scope
 
 With app governance, you can see:
 
@@ -36,7 +38,6 @@ With app governance, you can see:
 - Alerts insights.
 - Policy list insights.
 
-
 You can also:
 
 - Drill down to a single app (app page) with all its associated insights.
@@ -51,4 +52,4 @@ To get detailed information about app activity on Microsoft 365, search the Micr
 
 ## Next step
 
-[Get started with application insights.](app-governance-visibility-insights-get-started.md)
+[Get started with visibility and insights](app-governance-visibility-insights-get-started.md)
