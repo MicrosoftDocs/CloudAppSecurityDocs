@@ -1,6 +1,6 @@
 ---
 title: Hunt for threats in app activities - Microsoft Defender for Cloud Apps
-ms.date: 05/21/2023
+ms.date: 05/28/2023
 ms.topic: how-to
 description: Learn how app governance in Microsoft Defender for Cloud Apps helps you hunt for resources accessed and activities carried out by apps in your environment.
 author: anandd512
@@ -28,7 +28,7 @@ If you're looking to get more details on the data accessed by a specific app, se
 
 For example:
 
-![Screenshot of the app details pane with data usage details.](media/app-governance-secure-apps-app-hygiene-features/data-usage.png)
+:::image type="content" source="media/app-governance-secure-apps-app-hygiene-features/data-usage.png" alt-text="Screenshot of the app details pane with data usage details.":::
 
 App governance provides data usage-based insights for resources such as emails, files, and chat and channel messages across Exchange Online, OneDrive, SharePoint and Teams.
 
@@ -50,17 +50,17 @@ For example, when you select the **go-hunt** icon beside the **Email** resource,
 
 For example:
 
-![Screenshot of an Advanced hunting page for emails](media/app-governance-secure-apps-app-hygiene-features/advanced-hunting-for-emails.png)
+:::image type="content" source="media/app-governance-secure-apps-app-hygiene-features/advanced-hunting-for-emails.png" alt-text="Screenshot of an Advanced hunting page for emails.":::
 
 Similarly, use the **go-hunt** icon in app governance to get details for other supported resources such as files, chat messages and channel messages. Use the **go-hunt** icon beside any user in the **Users** tab in the app details pane to get details on all the activities done by the app in the context of a specific user.
 
 For example:
 
-![Screenshot of an Advanced hunting page for users](media/app-governance-secure-apps-app-hygiene-features/advanced-hunting-for-users.png)
+:::image type="content" source="media/app-governance-secure-apps-app-hygiene-features/advanced-hunting-for-users.png" alt-text="Screenshot of an Advanced hunting page for users.":::
 
 ## Step 4: Leverage advanced hunting capabilities
 
-Use the **Advanced hunting** page to modify or adjust a KQL query to fetch results based on your specific requirements. You might choose to save the query for future users or share a link with others in your organization, or export the results to a CSV file. 
+Use the **Advanced hunting** page to modify or adjust a KQL query to fetch results based on your specific requirements. You might choose to save the query for future users or share a link with others in your organization, or export the results to a CSV file.
 
 For more information, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview).
 

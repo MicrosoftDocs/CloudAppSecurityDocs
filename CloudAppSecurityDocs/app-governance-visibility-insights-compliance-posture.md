@@ -1,6 +1,6 @@
 ---
 title: Determine your app compliance posture with app governance | Microsoft Defender for Cloud Apps
-ms.date: 01/29/2023
+ms.date: 05/28/2023
 ms.topic: conceptual
 description: Determine your app compliance posture with app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
 ---
@@ -10,7 +10,6 @@ description: Determine your app compliance posture with app governance in Micros
 This article describes the widgets shown on the **App governance > Overview** page with compliance posture data.
 
 The **Overview** page shows the following details:
-<!--is this actually this page? unclear from screenshots-->
 
 |Apps / incidents  |Details shown  | Use this data to .. |
 |---------|---------|---------|

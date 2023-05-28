@@ -1,8 +1,8 @@
 ---
-title: Secure apps accessing non-Graph APIs using app governance
-ms.date: 01/29/2023
+title: Secure apps accessing non-Graph APIs using app governance | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: how-to
-description: Learn how to secure apps accessing non-Graph APIs using app governance
+description: Learn how to secure apps accessing non-Graph APIs using app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps
 ---
 
 # Secure apps accessing non-Graph APIs using app governance
@@ -19,19 +19,29 @@ You can better protect your organization with the new functionalities and enhanc
 
 ## Identify apps that use only non-Graph APIs
 
-App governance lists all Azure AD OAuth apps in the [Apps page](https://security.microsoft.com/cloudapps/app-governance?viewid=allApps). To find apps that don't use Graph API, apply the API access filter, and select **Non-Graph only**. You can also use the Graph API access column to identify apps that don't have Graph API permissions among the listed apps.
-![Apps page showing non-graph only.](media/app-governance-secure-apps-access-non-graph-api/apps-page-non-graph-only.png)
+App governance lists all Azure AD OAuth apps on the [Apps governance](https://security.microsoft.com/cloudapps/app-governance?viewid=allApps) page. To find apps that don't use Graph API, apply the API access filter, and select **Non-Graph only**. You can also use the Graph API access column to identify apps that don't have Graph API permissions among the listed apps.
+
+For example:
+
+:::image type="content" source="media/app-governance-secure-apps-access-non-graph-api/apps-page-non-graph-only.png" alt-text="Screenshot of the Azure AD apps tab showing non-graph only.":::
 
 ## View non-Graph APIs used by OAuth apps
 
-To view the APIs used by an app, go to the **Permissions** tab on the app details flyout pane. You can find the names of the consented permissions and the APIs accessed by the app.
-![Go to the permissions tab.](media/app-governance-secure-apps-access-non-graph-api/permissions-tab.png)
+To view the APIs used by an app, go to the **Permissions** tab on an app details pane. You can find the names of the consented permissions and the APIs accessed by the app.
+
+For example:
+
+:::image type="content" source="media/app-governance-secure-apps-access-non-graph-api/permissions-tab.png" alt-text="Screenshot of the Permissions tab on an app details pane.":::
 
 ## Track API access
 
 With visibility over apps that access non-Graph APIs, you can now use the **New app with non-Graph API permissions** policy template or the **Non-graph API permission** policy condition to find and monitor such apps.
-![Choose policy template.](media/app-governance-secure-apps-access-non-graph-api/choose-policy-template.png)
+
+For example:
+
+:::image type="content" source="media/app-governance-secure-apps-access-non-graph-api/choose-policy-template.png" alt-text="Screenshot of the policy template page.":::
+
 
 ## Next steps
 
-[Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
+[Secure apps with app hygiene features](app-governance-secure-apps-app-hygiene-features.md)
