@@ -7,8 +7,6 @@ description: Manage your app governance policies.
 
 # Manage app policies
 
-> *[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
 Use app governance to manage OAuth policies for Azure AD, Google Workspace, and Salesforce.
 
 To keep up with the latest apps your organization is using, respond to new app-based attacks, and for ongoing changes to your app compliance needs, you might need to manage your app policies in these ways:
@@ -62,3 +60,6 @@ To delete an app policy, you can:
 
 An alternative to deleting an app policy is to change its status to inactive. Once inactive, it won't generate alerts. For example, rather than deleting an app policy for an app with a specific set of conditions that are useful for a future policy, rename the app policy to indicate its usefulness and set its status to inactive. You can later return to the policy and modify it for a similar app and set its status to audit mode or inactive.
 
+## Next steps
+
+[Investigate predefined app policy alerts](app-governance-investigate-predefined-policies.md)

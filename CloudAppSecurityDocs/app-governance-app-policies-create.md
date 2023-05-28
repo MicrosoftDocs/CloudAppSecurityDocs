@@ -1,6 +1,6 @@
 ---
-title: Create app policies in app governance
-ms.date: 05/21/2023
+title: Create app governance policies | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: how-to
 description: Learn how to create app policies on app governance.
 ---
@@ -23,11 +23,11 @@ Use app governance to create OAuth policies for apps connected to Azure AD, Goog
 
 For apps connected to Azure AD, create app policies from provided templates that can be customized, or create your own custom app policy.
 
-1. To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Overview > Policies > Azure AD**.
+1. To create a new app policy for Azure AD apps, go to **Microsoft 365 Defender > App governance > Policies > Azure AD**.
 
     For example:
 
-    ![Screenshot of the Azure AD tab.](media/app-governance-app-policies-create/azure-ad-policies.jpg)
+    :::image type="content" source="media/app-governance-app-policies-create/azure-ad-policies.jpg" alt-text="Screenshot of the Azure AD tab.":::
 
 1. Select the **Create New Policy** option, and then do one of the following steps:
 
@@ -36,13 +36,13 @@ For apps connected to Azure AD, create app policies from provided templates that
 
     For example:
 
-    ![Screenshot of the Choose a policy template page.](media/app-governance/app-governance-create-policy.png)
+    :::image type="content" source="media/app-governance/app-governance-create-policy.png" alt-text="Screenshot of a Choose a policy template page.":::
 
 ## App policy templates
 
 To create a new app policy based on an app policy template, on the **Choose App policy template page**, select a category of app template, select the name of the template, and then select **Next**.
 
-App governance has three categories of app policy templates.
+The following sections describe the app policy template categories.
 
 ### Usage
 
@@ -70,7 +70,6 @@ The following table lists the app governance templates supported to generate ale
 |Template name|Description|
 |---|---|
 |**New uncertified app**|Find newly registered apps that don’t have publisher attestation or Microsoft 365 certification. This policy checks the following conditions:<br /><br /><li>Registration age: Seven days or less (customizable)<br /><li>Certification: No certification (customizable)|
-|||
 
 ## Custom policies
 
@@ -157,12 +156,11 @@ For example, the following flow chart shows the steps involved:
 
 :::image type="content" source="media/app-governance/mapg-create-new-policy-process.png" alt-text="Diagram of the create app policy workflow." lightbox="media/app-governance/mapg-create-new-policy-process.png" border="false":::
 
-<!--which one of the following is it? question for andrew / wendy-->
 ## Create a new policy for OAuth apps connected to Salesforce and Google Workspace
 
 Policies for OAuth apps will trigger alerts only on policies that were authorized by users in the tenant.
 
-To create a new app policy for Salesforce, Google and other apps:
+**To create a new app policy for Salesforce, Google and other apps**:
 
 1. Go to **Microsoft 365 Defender > App governance > Policies > Other apps**. For example:
 

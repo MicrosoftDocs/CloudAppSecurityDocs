@@ -1,8 +1,8 @@
 ---
-title: Learn about app policies
-ms.date: 01/29/2023
+title: Learn about app policies with app governance | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: overview
-description: Learn about app policies.
+description: Learn about app governance policies with Microsoft Defender for Cloud Apps in Microsoft 365 Defender.
 ---
 
 # Learn about app policies
@@ -11,8 +11,10 @@ App governance uses machine learning-based detection algorithms to detect anomal
 
 These policies for app and user patterns and behaviors can protect your users from using non-compliant or malicious apps and limit the access of risky apps to your tenant data.
 
-See [Administrator roles](app-governance-get-started.md#roles) for information on which roles can modify policies.
+## Supported roles
+
+For more information, see [App governance roles](app-governance-get-started.md#roles).
 
 ## Next step
 
-[Get started with app policies.](app-governance-app-policies-get-started.md)
+[Get started with app policies](app-governance-app-policies-get-started.md)
