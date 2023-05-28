@@ -5,7 +5,7 @@ ms.topic: conceptual
 description: Implement Microsoft app governance capabilities over Microsoft Defender for Cloud Apps and Microsoft 365 Defender to govern your apps.
 ---
 
-# App governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender
+# App governance in Microsoft Defender for Cloud Apps
 
 Cyber attacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructure, establishing a starting point for privilege escalation, lateral movement, and data exfiltration.
 
@@ -19,7 +19,7 @@ App governance also enables you to see which user-installed OAuth applications h
 
 App governance insights enable you to make informed decisions around blocking or restricting apps that present significant risk to your organization. For example:
 
-- **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
+- **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory, Google, or Salesforce in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
 
 - **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
 
