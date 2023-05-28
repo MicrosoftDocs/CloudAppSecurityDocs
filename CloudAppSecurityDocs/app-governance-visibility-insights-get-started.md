@@ -7,17 +7,13 @@ description: Get started with app governance visibility and insights in Microsof
 
 # Get started with visibility and insights
 
-Start by viewing the [app governance dashboard](https://aka.ms/appgovernance) in the Microsoft 365 Defender portal (**Microsoft 365 Defender > Cloud Apps > App governance > Overview**).
+Start by viewing the [app governance dashboard](https://aka.ms/appgovernance) on the **App governance > Overview** tab in the Microsoft 365 Defender portal.
 
 Your sign-in account must have one of the [required app governance administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
 For example:
 
 :::image type="content" source="media/app-governance-visibility-insights-get-started/overview.png" alt-text="Screenshot of the App governance overview page in Microsoft 365 Defender.":::
-
-> [!TIP]
-> You can also access the app governance dashboard from **Office 365 > Microsoft 365 Defender > App governance > Overview page**.
->
 
 ## What’s available on the Overview tab
 
@@ -35,34 +31,42 @@ The dashboard on the **Overview** tab contains a summary of your app ecosystem:
 
 ## View app insights
 
-One of the primary value points for app governance is the ability to quickly view app alerts and insights. To view insights for your apps:
+One of the primary value points for app governance is the ability to quickly view app alerts and insights. 
 
-1. On your app governance portal page, select **Apps**.
-1. You can view a specific selection of apps by applying one or more of the following default filter options:
-    - API access
-    - Privilege level
-    - Permission usage
-    - Permission type
-    - Publisher verified
-1. You can also use one or more of the non-default filters to further customize your selection of apps by choosing any of these options:
-    - Last modified
-    - Added on
-    - Certification
-    - Users
-    - Services accessed
-    - Data usage
-    - Sensitivity labels accessed
+**To view insights for your apps**:
 
-1. Select the name of an app to view details. Selecting an app name opens a detail pane on the right as shown in the following graphic:
+1. On the **App governance** page, select one of the apps tabs to display your apps.
 
-    ![app details pane showing app summary.](media/app-governance-visibility-insights-get-started/image2.png)
+    The apps listed depend on the apps present in your tenant.
 
-    > [!NOTE]
-    > The apps listed will depend on the apps present in your tenant.
+1. Filter the apps listed using one or more of the following default filter options:
 
-Saving the query lets you save the defined list of filters in the current view. This could save time when selecting a subset of data in the future.
+    - **API access**
+    - **Privilege level**
+    - **Permission usage**
+    - **Permission type**
+    - **Publisher verified**
 
-The details pane also lets you view the usage of the app over the past 30 days, the users who have consented to the app, and the permissions assigned to the app. An administrator could review the activity and permissions of an app that is generating alerts and make a decision to disable the app using the **Disable App** button in the Details pane.
+    Use one of the following non-default filters to further customize the apps listed:
+
+    - **Last modified**
+    - **Added on**
+    - **Certification**
+    - **Users**
+    - **Services accessed**
+    - **Data usage**
+    - **Sensitivity labels accessed**
+
+    > [!TIP]
+    > Save the query to save the currently selected filters for use again in the future.
+
+1. Select the name of an app to view more details. For example:
+
+    :::image type="content" source="media/app-governance-visibility-insights-get-started/image2.png" alt-text="Screenshot of an app details pane showing an app summary.":::
+
+The details pane lists the app usage over the past 30 days, the users who have consented to the app, and the permissions assigned to the app. 
+
+For example, an administrator might review the activity and permissions of an app that is generating alerts and make a decision to disable the app using the **Disable App** button towards the bottom of the app details pane.
 
 ## Next steps
 

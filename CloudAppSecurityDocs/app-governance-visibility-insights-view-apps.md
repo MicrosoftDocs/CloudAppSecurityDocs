@@ -1,81 +1,88 @@
 ---
-title: View your apps
-ms.date: 04/30/2023
+title: View your app details with app governance | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: how-to
-description: View your apps.
+description: Learn how to view app details with app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
 ---
 
-# View your apps
+# View your app details with app governance
 
-App governance allows you to quickly gain deep insights into the apps in your tenant. For example, you can see:
+Use app governance to gain visibility and meaningful insights on your app ecosystem.
 
-- A list of apps in the tenant, together with relevant app metadata and usage data.
-- App details with deeper insights and information by selecting an app in the list.
+For example, view a list of apps in your tenant, together with relevant app metadata and usage data. Select a specific app to rill down for more data and insights.
 
-## Getting a list of all the apps in your tenant
+## View the apps in your tenant
 
-For a summary of apps in your tenant, go to **App governance > Apps**.
+For a summary of apps in your tenant, in Microsoft 365, go to **Cloud app > App governance** and select any of the apps tabs.
 
-![The app governance app summary page in Microsoft 365 Defender.](media/app-governance-visibility-insights-view-apps/appg-cc-apps.png)
+For example:
+
+:::image type="content" source="media/app-governance-visibility-insights-view-apps/appg-cc-apps.png" alt-text="Screenshot of the Azure AD apps tab on the App governance page.":::
+
 
 >[!NOTE]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
 
-You will see a list of apps and this information:
-
-- **App name**: The display name of the app as registered on Azure AD
-- **App status**: Shows whether the app is enabled or disabled, and if disabled by whom
-- **Graph API access**: Shows whether the app has at least one Graph API permission
-- **Permission type**: Shows whether the app has application (app only), delegated, or mixed permissions
-- **Consent type**: Shows whether the app consent has been given at the user or the admin level, and the number of users whose data is accessible to the app
-- **Publisher**: Publisher of the app and their verification status
-- **Last modified**: Date and time when registration information was last updated on Azure AD
-- **Added on**: Shows the date and time when the app was registered to Azure AD and assigned a service principal
-- **Permission usage**: Shows whether the app has any unused Graph API permissions in the last 90 days
-- **Data usage**: Total data downloaded or uploaded by the app in the last 30 days
-- **Privilege level**
-- **Certification**: Indicates if an app meets stringent security and compliance standards set by Microsoft 365 or if its publisher has publicly attested to its safety
-- **App ID**
-- **Sensitivity label accessed**: Sensitivity labels on content accessed by the app
-- **Service accessed**: Microsoft 365 services accessed by the app
-- **Community use**: Shows you how popular the app is across all your users (*common*, *uncommon*, *rare*)
-- **Consent grants**: Shows you all app consent grants in the last 30 days
-- **App activities**: Shows you all app activities in the last 30 days
+The apps in your tenant are listed with the following details:
 
 
-App governance sorts the app list alphabetically by **App name** by default. To sort the list by another app attribute, select the attribute name.
+|Column name  |Description  |
+|---------|---------|
+|**App name** | The display name of the app as registered on Azure AD <!--or google or sharepoint?--> |
+|**App status** | Shows whether the app is enabled or disabled, and if disabled by whom |
+| **Graph API access**| Shows whether the app has at least one Graph API permission |
+| **Permission type**| Shows whether the app has application (app only), delegated, or mixed permissions |
+| **Consent type**| Shows whether the app consent has been given at the user or the admin level, and the number of users whose data is accessible to the app |
+| **Publisher**| Publisher of the app and their verification status |
+| **Last modified**| Date and time when registration information was last updated on Azure AD <!--or google or sharepoint?-->|
+| **Added on**| Shows the date and time when the app was registered to Azure AD <!--or google or sharepoint?--> and assigned a service principal |
+| **Permission usage**| Shows whether the app has any unused Graph API permissions in the last 90 days |
+| **Data usage**| Total data downloaded or uploaded by the app in the last 30 days |
+| **Privilege level**  | The app's privilege level |
+| **Certification**| Indicates if an app meets stringent security and compliance standards set by Microsoft 365 or if its publisher has publicly attested to its safety  |
+| **App ID**  | The app ID |
+| **Sensitivity label accessed**| Sensitivity labels on content accessed by the app  |
+| **Service accessed**| Microsoft 365 services accessed by the app  |
+| **Community use**| Shows you how popular the app is across all your users (*common*, *uncommon*, *rare*)  |
+| **Consent grants**| Shows you all app consent grants in the last 30 days  |
+| **App activities**| Shows you all app activities in the last 30 days  |
+
+By default, the app governance page sorts the grid alphabetically, by **App name**. To sort the list by another attribute, select the column name.
 
 You can also select **Search** to search for an app by name.
 
 ## Getting detailed information on an app
 
-For detailed information on a specific app in your tenant, go to **Microsoft 365 Defender > App governance > Apps > *app name***
+Select a specific app in the grid to view more details on an apps details pane on the right. For example:
 
-> [!div class="mx-imgBorder"]
->![See additional data on the app such as the date first consented and the App ID.](media/app-governance-visibility-insights-view-apps/image2.png)
+:::image type="content" source="media/app-governance-visibility-insights-view-apps/image2.png" alt-text="Screenshot of an app details pane on the Azure AD tab.":::
 
-> [!div class="mx-imgBorder"]
->![See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources.](media/app-governance-visibility-insights-view-apps/data-usage.png)
+The **Summary** tab also shows more data about the app, such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**.
 
-> [!div class="mx-imgBorder"]
->![See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded.](media/app-governance-visibility-insights-view-apps/users.png)
+In the details pane, select any of the following tabs to view more details:
 
-> [!div class="mx-imgBorder"]
->![See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use.](media/app-governance-visibility-insights-view-apps/permissions.png)
+- Select the **Data usage** tab to view a graph of data usage over time, for Exchange, SharePoint, OneDrive, and Teams resources. For example:
 
-> [!div class="mx-imgBorder"]
->![See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365.](media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png)
+    :::image type="content" source="media/app-governance-visibility-insights-view-apps/data-usage.png" alt-text="Screenshot of the Data usage tab.":::
 
-The app details pane provides additional information on these tabs:
+    The **Data usage** tab supports filtering usage insights by priority accounts only. 
 
-| Tab name | Description |
-|:-------|:-----|
-|**Summary**| See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
-|**Data usage** |See the data usage by the app in the tenant and plot the data usage for Exchange, SharePoint, OneDrive, and Teams resources. You can filter usage insights by priority accounts only. |
-|**Users** |See a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. If an app is admin consented, the Total consented users will be all users in the tenant. |
-|**Permissions** | See a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference). |
-|**Sensitive labels** | See how frequent items with certain sensitivity labels were accessed by the app on Microsoft 365. |
+- Select the **Users** tab to see a list of users who are using the app, whether they're a priority account, and the amount of data downloaded and uploaded. For example:
+
+    :::image type="content" source="media/app-governance-visibility-insights-view-apps/users.png" alt-text="Screenshot of the Users tab.":::
+
+    If an app is *admin consented*, the **Total consented users** will be all users in the tenant.
+
+- Select the **Permissions** tab to see a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For example:
+
+    :::image type="content" source="media/app-governance-visibility-insights-view-apps/permissions.png" alt-text="Screenshot of the Permissions tab.":::
+
+    For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+- Select the **Sensitivity labels** tab to see how frequently items with certain sensitivity labels were accessed by the app on Microsoft 365. For example:
+
+    :::image type="content" source="media/app-governance-visibility-insights-view-apps/sensitive-labels-details.png" alt-text="Screenshot of the Sensitivity labels tab.":::
 
 For an enabled app, there's also a **Disable app** control to disable the use of the selected app and an **Enable app** control to enable the use of the disabled app. These actions require these administrator roles:
 
@@ -88,9 +95,9 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 
 If you have enabled the [Google Workspace](connect-google-workspace.md) or [Salesforce](connect-salesforce.md) connector, you can also use the **App governance** page to view information about app permissions in apps connected to Google Workspace and/or Salesforce. View the permissions granted to each app and revoke or ban apps as needed.
 
-On the **App governance** page, select the **Google** or **Salesforce** tabs to view your apps. For example:
+On the **App governance** page, select the **Google apps** or **Salesforce apps** tabs to view your apps. For example:
 
-[Screenshot of the Manage OAuth apps page](media/app-permissions.png)
+[Screenshot of the Manage OAuth apps page.](media/app-permissions.png)
 
 Do any of the following to manage your Google Workspace or Salesforce apps on the **App governance** page:
 
@@ -113,7 +120,6 @@ The **Google** and **Salesforce** pages provide the following information about 
 |**Last authorized**     | The most recent date on which a user granted permissions to this app.    This information is available for Salesforce only.|
 |**Actions**  |   Select an option to mark an app as approved or banned.       |
 
-
 Select **Show details** at the top right to view more information about all of the apps displayed, including:
 
 |Colum name  |Description  |
@@ -126,4 +132,4 @@ Select **Show details** at the top right to view more information about all of t
 
 ## Next steps
 
-[Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md).
+[Determine your overall app compliance posture](app-governance-visibility-insights-compliance-posture.md)
