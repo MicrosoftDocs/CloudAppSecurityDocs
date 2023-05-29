@@ -72,7 +72,7 @@ In the details pane, select any of the following tabs to view more details:
 
     :::image type="content" source="media/app-governance-visibility-insights-view-apps/users.png" alt-text="Screenshot of the Users tab.":::
 
-    If an app is *admin consented*, the **Total consented users** will be all users in the tenant.
+    If an app is *admin consented*, the **Total consented users** are all users in the tenant.
 
 - Select the **Permissions** tab to see a summary and list of the Graph API and legacy permissions granted to the app, consent type, and whether they are in use. For example:
 
@@ -112,7 +112,7 @@ Do any of the following to manage your Google Workspace or Salesforce apps on th
 
 The **Google** and **Salesforce** pages provide the following information about each OAuth app that was granted permissions:
 
-|Colum name  |Description  |
+|Column name  |Description  |
 |---------|---------|
 |**Name**     | The app's name. Select to show or hide more details about the app.       |
 |**Authorized by**     | The number of users who authorized this app to access their app's account, and granted the app permissions. <br><br>Select to view more information, including a list of user emails and whether an admin has consented the app previously. <br><br>On the **Users who added...** pane, select **Export** to export the listed users to a CSV file. |
@@ -122,7 +122,7 @@ The **Google** and **Salesforce** pages provide the following information about 
 
 Select **Show details** at the top right to view more information about all of the apps displayed, including:
 
-|Colum name  |Description  |
+|Column name  |Description  |
 |---------|---------|
 |**Permissions**     |  A list of all permissions currently granted to the app. This information is available for Google Workspace only.     |
 |**Community use**     | Common, Uncommon, Rare. Indicates how popular the app is across all your users.      |

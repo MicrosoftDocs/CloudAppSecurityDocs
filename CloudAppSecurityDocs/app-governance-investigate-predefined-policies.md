@@ -9,7 +9,7 @@ description: Learn how to investigate predefined app policy alerts from app gove
 
 App governance provides predefined app policy alerts for anomalous activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. 
 
-Included in this guide is general information about the conditions for triggering alerts. Because predefined policies are non-deterministic by nature, they're only triggered when there is behavior that deviates from the norm. 
+Included in this guide is general information about the conditions for triggering alerts. Because predefined policies are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm. 
 
 > [!TIP]
 > Some alerts may be in preview, so regularly review the updated alert statuses.
@@ -21,13 +21,13 @@ Following proper investigation, all app governance alerts can be classified into
 
 - **True positive (TP)**: An alert on a confirmed malicious activity.
 - **Benign true positive (B-TP)**: An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
-- **False positive (FP)**: An alert on a non-malicious activity.
+- **False positive (FP)**: An alert on a nonmalicious activity.
 
 ## General investigation steps
 
 Use the following general guidelines when investigating any type of alert to gain a clearer understanding of the potential threat before applying the recommended action.
 
-1. Review the app severity level and compare with the rest of the apps in your tenant. This review will help you identify which apps in your tenant pose greater risk.
+1. Review the app severity level and compare with the rest of the apps in your tenant. This review helps you identify which apps in your tenant pose greater risk.
 
 1. If you identify a TP, review all the app activities to gain an understanding of the impact. For example, review the following app information:
    - Scopes granted access
@@ -156,7 +156,7 @@ Find apps with OAuth access to multiple Microsoft 365 services that have exhibit
 
 Review all activities performed by the app, scopes granted to the app and user activity associated with the app.
 
-- **TP**: Apply this recommended action if you have confirmed that the updates to app certificates or secrets as well as other app activities have been highly irregular or potentially malicious.
+- **TP**: Apply this recommended action if you have confirmed that the updates to app certificates or secrets and other app activities have been highly irregular or potentially malicious.
 
   **Recommended action**: Temporarily disable the app, reset the password and then re-enable the app.
 

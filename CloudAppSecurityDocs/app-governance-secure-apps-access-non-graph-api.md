@@ -7,15 +7,15 @@ description: Learn how to secure apps accessing non-Graph APIs using app governa
 
 # Secure apps accessing non-Graph APIs using app governance
 
-Many apps use APIs other than Microsoft Graph to access Microsoft 365 and additional resources. With visibility over such apps, you can identify and defend against risks inherent to these apps as well as risks from APIs that they access, some of which might receive limited support and updates.
+Many apps use APIs other than Microsoft Graph to access Microsoft 365 and other resources. With visibility over such apps, you can identify and defend against risks inherent to these apps as well as risks from APIs that they access, some of which might receive limited support and updates.
 
-App governance provides visibility over OAuth apps registered on Azure Active Directory, regardless of whether they access Graph API or other APIs. Additionally, you can monitor these apps and automatically take action if they're non-compliant or exhibit suspicious behavior.
+App governance provides visibility over OAuth apps registered on Azure Active Directory, regardless of whether they access Graph API or other APIs. Additionally, you can monitor these apps and automatically take action if they're noncompliant or exhibit suspicious behavior.
 
 You can better protect your organization with the new functionalities and enhancements in the following ways:
 
 - Get improved coverage of OAuth apps with powerful app governance insights and monitoring capabilities.
 - Automatically get alerted for any threats or anomalies by apps using non-Graph or legacy APIs.
-- Get an enhanced experience for investigation of apps with additional filters, columns, and properties.
+- Get an enhanced experience for investigation of apps with more filters, columns, and properties.
 
 ## Identify apps that use only non-Graph APIs
 
@@ -23,7 +23,7 @@ App governance lists all Azure AD OAuth apps on the [Apps governance](https://se
 
 For example:
 
-:::image type="content" source="media/app-governance-secure-apps-access-non-graph-api/apps-page-non-graph-only.png" alt-text="Screenshot of the Azure AD apps tab showing non-graph only.":::
+:::image type="content" source="media/app-governance-secure-apps-access-non-graph-api/apps-page-non-graph-only.png" alt-text="Screenshot of the Azure AD apps tab showing non-Graph apps only.":::
 
 ## View non-Graph APIs used by OAuth apps
 

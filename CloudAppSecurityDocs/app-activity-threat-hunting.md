@@ -9,9 +9,9 @@ ms.author: andeshpande
 
 # Hunt for threats in app activities
 
-Apps can be a valuable entry point for attackers, so it is recommended to monitor anomalies and suspicious behaviors that use apps. While investigating an app governance alert or reviewing the app behavior in the environment, it becomes important to quickly get visibility into details of activities done by such suspicious apps and take remediation actions to protect assets in your organization.
+Apps can be a valuable entry point for attackers, so we recommend monitoring anomalies and suspicious behaviors that use apps. While investigating an app governance alert or reviewing the app behavior in the environment, it becomes important to quickly get visibility into details of activities done by such suspicious apps and take remediation actions to protect assets in your organization.
 
-Using app governance and advanced hunting capabilities, you can quickly - with a few clicks - get complete visibility into activities done by the apps and the resources it has accessed.
+Using app governance and advanced hunting capabilities, you can get complete visibility into activities done by the apps and the resources it has accessed.
 
 This article describes how to you can simplify app-based threat hunting using app governance in Microsoft Defender for Cloud Apps.
 
@@ -36,10 +36,10 @@ App governance provides data usage-based insights for resources such as emails, 
 
 Once you have a high-level overview of the data used by the app across services and resources, you may want to know the details of the app activities and the resources it accessed while performing these activities. 
 
-1. Select the __go-hunt__ icon next to each resource to view details of the resources accessed by the app in the last 30 days. A new tab is opened, redirecting you to the **Advanced hunting** page with a pre-populated KQL query.
+1. Select the __go-hunt__ icon next to each resource to view details of the resources accessed by the app in the last 30 days. A new tab is opened, redirecting you to the **Advanced hunting** page with a prepopulated KQL query.
 1. Once the page loads, select the __Run query__ button to run the KQL query and view the results.
 
-After the query runs, the query results display in tabular form. Each row in the table corresponds to an activity done by the app to access the specific resource type.Each column in the table provides comprehensive context about the app itself, the resource, the user, and the activity.
+After the query runs, the query results display in tabular form. Each row in the table corresponds to an activity done by the app to access the specific resource type. Each column in the table provides comprehensive context about the app itself, the resource, the user, and the activity.
 
 For example, when you select the **go-hunt** icon beside the **Email** resource, app governance enables you to view the following information for all the emails accessed by the app in the last 30 days in advanced hunting:
 
@@ -58,7 +58,7 @@ For example:
 
 :::image type="content" source="media/app-governance-secure-apps-app-hygiene-features/advanced-hunting-for-users.png" alt-text="Screenshot of an Advanced hunting page for users.":::
 
-## Step 4: Leverage advanced hunting capabilities
+## Step 4: Apply advanced hunting capabilities
 
 Use the **Advanced hunting** page to modify or adjust a KQL query to fetch results based on your specific requirements. You might choose to save the query for future users or share a link with others in your organization, or export the results to a CSV file.
 
@@ -72,7 +72,7 @@ When using the **Advanced hunting** page to investigate data from app governance
 
 - App governance data processing can take several hours longer to complete. Because of this delay, it might not cover recent app activity that is available on advanced hunting.
 
-- The provided advanced hunting queries are set to show only 1k results. While you can edit a query to show more results, advanced hunting will still apply a maximum limit of 10k results. App governance does not have this limit.
+- The provided advanced hunting queries are set to show only 1k results. While you can edit a query to show more results, advanced hunting will still apply a maximum limit of 10k results. App governance doesn't have this limit.
 
 ## Next steps
 

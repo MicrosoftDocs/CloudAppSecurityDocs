@@ -19,7 +19,7 @@ Alternatively, select any of the labels listed under **Sensitivity labels access
 
 :::image type="content" source="media/app-governance-visibility-insights-sensitive-content/sensitive-labels-details.png" alt-text="Screenshot of the Sensitivity labels tab on the Azure AD apps tab.":::
 
-For example, in the screenshot above, the app has accessed content with the sensitivity label *Highly confidential* 7 times on SharePoint, 15 times on OneDrive, and 25 times on Exchange Online in the last 30 days.
+For example, in the screenshot above, the app has accessed content with the sensitivity label *Highly confidential* seven times on SharePoint, 15 times on OneDrive, and 25 times on Exchange Online in the last 30 days.
 
 ## Regulate access to sensitive content
 

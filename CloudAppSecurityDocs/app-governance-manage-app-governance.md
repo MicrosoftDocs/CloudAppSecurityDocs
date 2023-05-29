@@ -21,9 +21,9 @@ App governance insights enable you to make informed decisions around blocking or
 
 - **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory, Google, or Salesforce in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
 
-- **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
+- **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using noncompliant or malicious apps and limiting the access of risky apps to your data.
 
-- **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used.
+- **Detection**: Be alerted and notified when there are anomalies in app activity and when noncompliant, malicious, or risky apps are used.
 
 - **Remediation**: Along with automatic remediation capabilities, use remediation controls in a timely manner to respond to anomalous app activity detections.
 
@@ -42,7 +42,7 @@ App governance alerts show up in the Microsoft 365 Defender alerts list as alert
 
 ## Next steps
 
-View the **App governance > Overview** tab in the [Microsoft 365 Defender portal](https://aka.ms/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
+View the **App governance > Overview** tab in the [Microsoft 365 Defender portal](https://aka.ms/appgovernance). Your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
 For more information, see [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
 

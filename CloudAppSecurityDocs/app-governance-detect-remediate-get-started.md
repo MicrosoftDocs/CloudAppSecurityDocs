@@ -15,7 +15,7 @@ For example:
 
 :::image type="content" source="media/app-governance/mapg-cc-overview-alerts.png" alt-text="Screenshot of the App governance > Overview tab with the Latest alerts section highlighted." lightbox="media/app-governance/mapg-cc-overview-alerts.png":::
 
-On the **Overview** tab, the **Latest alerts** section lists the most recent alerts. You can use this to quickly see the current app alert activity for your tenant.
+On the **Overview** tab, the **Latest alerts** section lists the most recent alerts. You can use these recent alerts to quickly see the current app alert activity for your tenant.
 
 To see all of the alerts, select the **Alerts** tab.
 

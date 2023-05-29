@@ -26,7 +26,7 @@ Before you start, verify that you satisfy the following prerequisites:
 
 - Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.<!--why isn't mda listed here? https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/ https://review.learn.microsoft.com/en-us/help/contribute/contribute-get-started-channel-guidance?branch=main-->
 
-- Your organization must use the commercial cloud, and not a government cloud. <!--i don't think we mention specific gov clouds such as GCC, GCC-H, DoD and Fairfax. -->App governance is not yet available in government clouds.
+- Your organization must use the commercial cloud, and not a government cloud. <!--i don't think we mention specific gov clouds such as GCC, GCC-H, DoD and Fairfax. -->App governance isn't yet available in government clouds.
 
 ## Turn on app governance
 
@@ -36,15 +36,15 @@ If your organization satisfies the [prerequisites](#prerequisites), go to [Micro
 
 After you've signed up for app governance, you'll need to wait up to 10 hours to see and use the product.
 
-If you are unable to see the app governance option in the settings page, it might be due to one or more of the following reasons:
+If you're unable to see the app governance option in the settings page, it might be due to one or more of the following reasons:
 
-- App governance is not yet supported in your region.
+- App governance isn't yet supported in your region.
 
 - Your organization is in a government cloud.
 
-- We are unable to serve you at the moment due to capacity constraints.
+- We're unable to serve you at the moment due to capacity constraints.
 
-You can join the waitlist and provide your consent, so that we can turn on app governance for your organization automatically when app governance becomes available for you. When we turn on app governance, we will notify you by email.
+You can join the waitlist and provide your consent, so that we can turn on app governance for your organization automatically when app governance becomes available for you. When we turn on app governance, we'll notify you by email.
 
 For example:
 
@@ -52,7 +52,7 @@ For example:
 
 ## Current trial customers
 
-If you are currently running a free trial of app governance and want to use it without interruption, go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch the app governance toggle on before **July 31, 2023**.  <!--how to update this after august?-->
+If you're currently running a free trial of app governance and want to use it without interruption, go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch on the app governance toggle before **July 31, 2023**.  <!--how to update this after august?-->
 
 If you want to opt out of app governance, no action is needed, and app governance will automatically turn off after **July 31, 2023**. <!--update after august --> Your data will be deleted permanently in accordance with our data retention policies.<!--link?--> To keep a copy of your app and policy data, make sure to export them manually from the app governance pages before July 31, 2023.
 
@@ -61,15 +61,10 @@ If you want to opt out of app governance, no action is needed, and app governanc
 App governance is available to organizations with a valid Defender for Cloud Apps license, including:
 
 - Microsoft Defender for Cloud Apps (standalone)
-
 - Enterprise Mobility & Security E5/A5
-
 - Microsoft 365 Security E5/A5/F5
-
 - Microsoft 365 E5/A5/F5
-
-- Microsoft 365 Compliance E5/A5/F5
-
+- Microsoft Purview E5/A5/F5
 - Microsoft 365 F5 Security & Compliance
 
 ## Roles

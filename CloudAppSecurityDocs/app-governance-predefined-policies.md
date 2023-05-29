@@ -24,7 +24,7 @@ App governance contains a set of out of the box policies to detect anomalous app
 
 - To view the description of the policy, select the policy to see the policy summary and description in the detailed policy window.
 - To change the status of a policy (deactivate / activate), select the policy and select **Deactivate** in the detailed policy window.
-- By default, predefined policies will trigger alerts when the conditions are met. You can choose to automatically disable the app when the policy triggers. Use caution when applying these actions because a policy may affect users and legitimate app use. To disable the app, mark the **Disable app** box under **Policy action** in the summary section and select **Save**.
+- By default, predefined policies trigger alerts when the conditions are met. You can choose to automatically disable the app when the policy triggers. Use caution when applying these actions because a policy may affect users and legitimate app use. To disable the app, mark the **Disable app** box under **Policy action** in the summary section and select **Save**.
 - Alerts generated from predefined policies are listed as app governance policy alerts in the Microsoft 365 Defender alerts queue.
 
 ## Next steps

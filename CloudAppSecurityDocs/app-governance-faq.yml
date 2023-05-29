@@ -20,7 +20,7 @@ sections:
 
           These apps represent modern apps that can access various resources, including Microsoft 365 data in mailboxes, OneDrive folders, SharePoint sites, and Teams. End users regularly introduce these apps and can give them consent to access data.
           
-          While Defender for Cloud Apps also tracks apps that use OAuth to access Microsoft 365, app governance provides additional out-of-box detections and highly customizable policies that track various app attributes and behaviors.
+          While Defender for Cloud Apps also tracks apps that use OAuth to access Microsoft 365, app governance provides extra out-of-box detections and highly customizable policies that track various app attributes and behaviors.
       - question: How can I get app governance?
         answer: |
           App governance is a feature in Defender for Cloud Apps. To use app governance, Defender for Cloud Apps must be present in your account either as a standalone product or as part of a license package. If you have the appropriate administrator role and satisfy all the prerequisites, you can navigate to [Microsoft 365 Defender settings](https://security.microsoft.com/cloudapps/settings?tabid=activateAppG) page and turn on app governance.
@@ -59,7 +59,7 @@ sections:
         answer: |
           App governance is integrated with Microsoft 365 Defender for a unified alert experience. The Microsoft 365 Defender connector for Microsoft Sentinel (preview) sends all Microsoft 365 Defender incidents and alerts information to Microsoft Sentinel and keeps the incidents synchronized.  
 
-          The Microsoft 365 Defender connector enables you to automatically detect, triage, investigate and remediate app governance incidents and alerts on Microsoft Sentinel. For more information see [Microsoft 365 Defender integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-365-defender-integration-with-azure-sentinel) and [Connect data from Microsoft 365 Defender to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
+          The Microsoft 365 Defender connector enables you to automatically detect, triage, investigate and remediate app governance incidents and alerts on Microsoft Sentinel. For more information, see [Microsoft 365 Defender integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-365-defender-integration-with-azure-sentinel) and [Connect data from Microsoft 365 Defender to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
 
       - question: Where can I get more information about app governance?
         answer: |
@@ -68,7 +68,7 @@ sections:
           - [Announcing Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-microsoft-defender-for-cloud-apps/ba-p/2835842)
           - [Microsoft Security Insights: App Governance with Eric Ouellet, Andrew Vahidnia, Jared Poeppelman](https://microsoftsecurityinsights.com/075-app-governance-with-eric-ouellet-andrew-vahidnia-jared-poeppelman)
           - [How to Prevent App Cyber Attacks—Cloud & Hybrid](https://www.youtube.com/watch?v=KmE8LW_tJ1M)
-          - [Twitter: Microsoft is tracking a recent consent phishing campaign, reported by @ffforward, that abuses OAuth..](https://twitter.com/MsftSecIntel/status/1484623341155610624)
+          - [Twitter: Microsoft is tracking a recent consent phishing campaign, reported by @ffforward, that abuses OAuth.](https://twitter.com/MsftSecIntel/status/1484623341155610624)
           - [Microsoft shifts to a comprehensive SaaS security solution - Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2023/02/15/microsoft-shifts-to-a-comprehensive-saas-security-solution)
           - [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
           - [App governance is a key part of customers’ zero trust journey](https://www.youtube.com/watch?v=XuGZu8ja134)

@@ -13,13 +13,13 @@ There are two types of policies in app governance:
 
 - **Predefined policies**
 
-    App governance is equipped with a set of predefined policies tailored to your environment. They allow you to start monitoring your apps even before you set up any policies. This ensures you're notified of any app anomalies early on. The app governance threat detection team regularly modifies the underlying conditions and adds new predefined policies regularly. For more information, see [Predefined app policies](app-governance-predefined-policies.md).
+    App governance is equipped with a set of predefined policies tailored to your environment. They allow you to start monitoring your apps even before you set up any policies, ensuring that you're notified of any app anomalies early on. The app governance threat detection team regularly modifies the underlying conditions and adds new predefined policies regularly. For more information, see [Predefined app policies](app-governance-predefined-policies.md).
 
 - **User defined policies**
 
     In addition to predefined policies, admins can also use the available conditions to create their custom policies or pick from the available recommended policies.
 
-To see your list of current app policies, go to the **Microsoft 365 Defender > App governance** page and select **Policies**. This will show you a list of all your policies in app governance. 
+To see your list of current app policies, go to the **Microsoft 365 Defender > App governance** page and select **Policies**. This shows you a list of all your policies in app governance. 
 
 For example:
 
@@ -52,7 +52,7 @@ The **App governance** > **Policies** tab shows the number of active, inactive, 
 
 The policy list is sorted by **Last modified** by default. To sort the list by another attribute, select the attribute name.
 
-When you select a policy, you get a detailed policy pane with these additional details:
+When you select a policy, you get a detailed policy pane with these extra details:
 
 - **Name**
 - **Severity**: Based on the severity level set when the policy was created
@@ -70,7 +70,7 @@ You can also:
 
 ## Edit an existing user-defined policy
 
-1. On the **App governance** page, select the **Policies** tab and select the policy you want to edit. A panel will open on the right side with the details of the existing policy.
+1. On the **App governance** page, select the **Policies** tab and select the policy you want to edit. A panel opens on the right side with the details of the existing policy.
 
 1. Select **Edit**.
 
@@ -78,7 +78,7 @@ You can also:
 
 1. Choose whether you want to continue with the existing policy settings or customize them. Select **No, I'll customize the policy** to make changes, and then select **Next**.
 
-1. Choose whether this policy will apply to all apps, specific apps, or all apps except the apps you select. Select **Choose apps** to select which apps to apply the policy to, and then select **Next**.
+1. Choose whether this policy applies to all apps, specific apps, or all apps except the apps you select. Select **Choose apps** to select which apps to apply the policy to, and then select **Next**.
 
 1. Choose whether to modify the existing conditions of the policy. 
 

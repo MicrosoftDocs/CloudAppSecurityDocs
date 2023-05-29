@@ -32,7 +32,7 @@ For more information, see [Turn on app governance for Microsoft Defender for Clo
 
 ### App governance OAuth convergence
 
-For customers who've enabled app governance, we've consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance.
+For customers who have enabled app governance, we have consolidated monitoring and policy enforcement capabilities for all OAuth apps in app governance.
 
 In the Microsoft 365 Defender portal, we've merged all capabilities originally under **Cloud apps > OAuth apps** under the **App governance** page, where you can manage all OAuth apps under a single pane of glass.
 
@@ -40,7 +40,7 @@ For more information, see [View your apps](app-governance-visibility-insights-vi
 
 ### Enhanced hunting experience for OAuth app activities
 
-App governance now makes it easy for you to take hunting with app data to the next level by providing deeper OAuth app insights, helping your SOC identify an app’s activities and the resources it has accessed.
+App governance now makes it easy for you to take hunting with app data to the next level! App governance now provides deeper OAuth app insights, helping your SOC identify an app’s activities and the resources it has accessed.
 
 OAuth app insights include:
 
@@ -52,7 +52,7 @@ For more information, see [Hunt for threats in app activities](app-activity-thre
 
 ### App hygiene feature update
 
-Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials is only available to app governance customers with Microsoft Entra Workload Identities Premium.
+Starting on June 1, 2023, management of unused apps, unused credentials, and expiring credentials is only available to app governance customers with Microsoft Entra Workload Identities Premium.
 
 For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
 
@@ -62,18 +62,18 @@ For more information, see [What are workload identities?](/azure/active-director
 
 ## App governance February 2023 release
 
-- **Enhanced alert investigation experience:** App governance now provides additional information admins need to investigate and remediate incidents and alerts. This enhancement includes more details under **What happened** and **Recommended actions** in the alert story on Microsoft 365 Defender alert pages. This information will be available for all app governance alerts, including alerts triggered by threat detection rules, predefined policies, and user-defined policies. [Learn more about the enhanced alert experience.](/defender-cloud-apps/app-governance-detect-remediate-detect-threats)
+- **Enhanced alert investigation experience:** App governance now provides additional information admins need to investigate and remediate incidents and alerts. This enhancement includes more details under **What happened** and **Recommended actions** in the alert story on Microsoft 365 Defender alert pages. This information is available for all app governance alerts, including alerts triggered by threat detection rules, predefined policies, and user-defined policies. [Learn more about the enhanced alert experience.](/defender-cloud-apps/app-governance-detect-remediate-detect-threats)
    
 ## App governance October 2022 release
 
 - **Added insights and remediation for sensitive content**: App governance provides insights and automated remediation capabilities through predefined and custom policies for apps that access content with Microsoft Purview Information Protection labels. Enterprise admins now have visibility into the workloads that these apps access and whether they access sensitive data in these workloads. With predefined and custom policies, admins are alerted about apps that have attempted to access sensitive data. Moreover, app governance can automatically deactivate noncompliant apps.
-- **Expanded coverage to include all non-Graph API apps** - App governance has expanded coverage to secure more apps in your tenant. In addition to OAuth apps that use Microsoft Graph API, app governance will now provide visibility and protection for all OAuth apps registered on Azure Active Directory. [Learn more about app governance coverage.](/defender-cloud-apps/app-governance-secure-apps-access-non-graph-api)
+- **Expanded coverage to include all non-Graph API apps** - App governance has expanded coverage to secure more apps in your tenant. In addition to OAuth apps that use Microsoft Graph API, app governance now provides visibility and protection for all OAuth apps registered on Azure Active Directory. [Learn more about app governance coverage.](/defender-cloud-apps/app-governance-secure-apps-access-non-graph-api)
 
 ## App governance July 2022 release
 
 - **Added more predefined policies**: App governance released five more out of the box policies to detect anomalous app behaviors. These policies are activated by default, but you can deactivate them if you choose to. [Learn more here](app-governance-predefined-policies.md)
 - **New video library**: App governance created a new library of short videos on features in app governance, how to use them, and info on how to learn more. [Check it out here](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
-- **Secure Score integration GA**: Microsoft Secure Score integration with the app governance (AppG) add-on to Microsoft Defender for Cloud Apps (MDA) has reached general availability. AppG customers will now receive recommendations in Secure Score, helping them secure their Microsoft 365 OAuth apps.
+- **Secure Score integration GA**: Microsoft Secure Score integration with the app governance (AppG) add-on to Microsoft Defender for Cloud Apps (MDA) has reached general availability. AppG customers now receive recommendations in Secure Score, helping them secure their Microsoft 365 OAuth apps.
    Why is this integration important?
    Secure Score is a representation of an organization's security posture and an entry point to various opportunities to improve that posture. By following Secure Score recommendations, customers improve resilience against known and emerging threats.
    AppG is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data. With deep integration into workloads and threat detection capabilities, AppG is well-suited to significantly reduce large attack surfaces in enterprise app ecosystems. By following AppG-related recommendations and enabling proposed policy settings, enterprises can protect both apps and data from misuse and actual bad actor activity.

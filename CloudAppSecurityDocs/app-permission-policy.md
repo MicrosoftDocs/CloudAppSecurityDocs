@@ -1,16 +1,16 @@
 ---
 title: Create policies to control OAuth apps 
 description: This article provides instructions for creating and working with app permission policies in Microsoft Defender for Cloud Apps.
-ms.date: 05/15/2023
+ms.date: 05/29/2023
 ms.topic: how-to
 ---
 # Create policies to control OAuth apps
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users.
+In addition to the [existing investigation of OAuth apps](manage-app-permissions.md) connected to your environment, set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and are authorized by more than 50 users.
 
-OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enterprise Application.
+OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, Google Workspace, and Salesforce. You're also able to mark these permissions as approved or banned. Marking them as banned disables the correlating Enterprise Application.
 
 Along with a built-in set of capabilities to detect anomalous app behavior and generate alerts based on machine learning algorithms, app policies in app governance are a way for you to:
 
@@ -33,7 +33,7 @@ To create a new OAuth app policy:
 1. Select the **New policy from search** button.
     ![New policy from search.](media/app-permissions-filter.png)
 
-1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the Administrators group.
+1. You can set the policy based on the group memberships of the users who authorized the apps. For example, an admin can decide to set a policy that revokes uncommon apps if they ask for high permissions, only if the user who authorized the permissions is a member of the **Administrators** group.
 
 Alternatively, you can also create the policy in the Microsoft 365 Defender portal, by going to **Cloud Apps**-<> **Policies** -> **Policy management**. Then select **Create policy** followed by **OAuth app policy**.
 
@@ -50,7 +50,7 @@ In addition to OAuth app policies you can create, there are the following out-of
 | --- | --- |
 | Misleading OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app. |
 | Misleading publisher name for an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher. |
-| Malicious OAuth app consent | Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps. |
+| Malicious OAuth app consent | Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection uses Microsoft security research and threat intelligence expertise to identify malicious apps. |
 | Suspicious OAuth app file download activities | See [Anomaly detection policies](anomaly-detection-policy.md#suspicious-oauth-app-file-download-activities) |
 
 
