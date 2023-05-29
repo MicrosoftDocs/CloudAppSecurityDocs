@@ -7,7 +7,7 @@ description: Determine your app compliance posture with app governance in Micros
 
 # Determine your app compliance posture
 
-This article describes the widgets shown on the **App governance > Overview** page with compliance posture data.
+This article describes the cards shown on the **App governance > Overview** page with compliance posture data.
 
 The **Overview** page shows the following details:
 
@@ -24,9 +24,9 @@ For example:
 > [!div class="mx-imgBorder"]
 >![top alerts.](media/app-governance-visibility-insights-compliance-posture/top-alerts.png)
 
-## Data usage widgets
+## Data usage cards
 
-Data usage widgets show the following types of information:
+Data usage cards show the following types of information:
 
 - **Total data accessed by apps** in the tenant through Graph API over the current month and previous three calendar months. (Currently includes emails, files, and chat and channel messages read and written by apps that access Microsoft 365 using Graph API)
 
@@ -39,7 +39,7 @@ For example:
 
 ## Apps that access data on Microsoft 365
 
-For apps that access data on Microsoft 365, widgets show the number of apps that have accessed data on SharePoint, OneDrive, Exchange Online, or Teams in the last 30 days
+For apps that access data on Microsoft 365, cards show the number of apps that have accessed data on SharePoint, OneDrive, Exchange Online, or Teams in the last 30 days
 
 For example:
 
@@ -48,7 +48,7 @@ For example:
 
 ## Sensitivity labels accessed
 
-For sensitivity labelling data, widgets show the number apps that have accessed content with sensitivity labels on SharePoint, OneDrive, Exchange Online or Teams in the last 30 days.
+For sensitivity labelling data, cards show the number apps that have accessed content with sensitivity labels on SharePoint, OneDrive, Exchange Online or Teams in the last 30 days.
 
 For example:
 

@@ -11,9 +11,9 @@ App governance lets you quickly identify the Microsoft 365 services apps have ac
 
 ## View apps
 
-To view apps that have accessed data across Microsoft 365 services, select **View apps** from the relevant widget on the **Overview** tab. For example
+To view apps that have accessed data across Microsoft 365 services, select **View apps** from the relevant card on the **Overview** tab. For example
 
-:::image type="content" source="media/app-governance-visibility-insights-sensitive-content/image7.png" alt-text="Screenshot of the Apps that accessed Azure AD services widget.":::
+:::image type="content" source="media/app-governance-visibility-insights-sensitive-content/image7.png" alt-text="Screenshot of the Apps that accessed Azure AD services card.":::
 
 Alternatively, select any of the labels listed under **Sensitivity labels access** on one of the apps tabs. Under each service type, app governance shows the number of times the app has accessed the corresponding label name in the last 30 days. For example:
 

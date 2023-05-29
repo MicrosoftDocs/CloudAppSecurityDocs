@@ -197,14 +197,6 @@ The following table describes the out-of-the-box anomaly detection policies prov
 |**Malicious OAuth app consent**|Scans OAuth apps connected to your environment and triggers an alert when a potentially malicious app is authorized. Malicious OAuth apps may be used as part of a phishing campaign in an attempt to compromise users. This detection leverages Microsoft security research and threat intelligence expertise to identify malicious apps.|
 |**Suspicious OAuth app file download activities**|For more information, see [Anomaly detection policies](/defender-cloud-apps/anomaly-detection-policy).|
 
-<!--this seemed to be a duplicate, so i combined them. however i can't validate this procedure, so please review carefully
-## Create OAuth app policies for Salesforce, Google and other apps
-
-To create a new app policy for Salesforce, Google and other apps, go to **Microsoft 365 Defender > App governance > Policies > Other apps**.
-
-![Other apps-policy creation](media/app-governance-app-policies-create/other-apps-policy-creation.jpg)
--->
-
 ## Next step
 
 [Manage your app policies](app-governance-app-policies-manage.md)

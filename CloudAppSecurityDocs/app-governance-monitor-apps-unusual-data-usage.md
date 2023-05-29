@@ -11,9 +11,9 @@ App governance provides data usage information that can help you identify unwant
 
 On the **App governance** page, use the following elements to understand data usage:
 
-- **Data usage widget**. Located on the **Overview page**. Provides total data usage over time, highlighting sudden spikes in total upload and download activity of all apps that access Microsoft 365 resources. 
+- **Data usage card**. Located on the **Overview page**. Provides total data usage over time, highlighting sudden spikes in total upload and download activity of all apps that access Microsoft 365 resources. 
 
-    This widget also provides usage information separately for various resources, such as files and email, so you can pinpoint the resources that apps might be misusing.
+    This card also provides usage information separately for various resources, such as files and email, so you can pinpoint the resources that apps might be misusing.
 
 - **App details pane**. Located on the right of an apps tab when you select an app. In the app details pane, get app-specific data usage information by resource type as well as upload and download patterns over time.
 

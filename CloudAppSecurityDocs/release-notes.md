@@ -27,7 +27,6 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
-<<<<<<< HEAD
 ## June 2023
 
 > [!NOTE]
@@ -39,7 +38,7 @@ App governance is now included as part of the [Microsoft Defender for Cloud Apps
 
 In the Microsoft 365 Defender portal, go to **Settings > Cloud apps > App governance > Service status** to either enable app governance if available, or sign up for the waitlist. 
 
-Existing holders of trial licenses for the app governance add-on have until **August 31, 2023** to enable the toggle and retain their app governance access. <!--august or july?-->
+Existing holders of trial licenses for the app governance add-on have until **July 31, 2023** to enable the toggle and retain their app governance access. <!--august or july?-->
 
 For more information, see:
 

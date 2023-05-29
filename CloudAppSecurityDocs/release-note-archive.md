@@ -1226,7 +1226,7 @@ Microsoft Cloud App Security allows you to [leverage existing investments in thi
 Released June 10, 2018
 
 - **New investigation capability by top users:**  
-Microsoft Cloud App Security added a new investigation widget to the dashboard that shows top users by the number of open threat detection alerts. This investigation widget enables you to focus your threat investigation on users with the highest number of suspicious sessions.
+Microsoft Cloud App Security added a new investigation card to the dashboard that shows top users by the number of open threat detection alerts. This investigation card enables you to focus your threat investigation on users with the highest number of suspicious sessions.
 
 - **Support for AWS S3 buckets:**  
 Microsoft Cloud App Security can now detect AWS S3 buckets and their sharing levels. This provides alerts and visibility into publicly accessible AWS buckets. This also enables you to create policies based on buckets and apply automatic governance. In addition, there is a new policy template available called **Publicly accessible S3 buckets (AWS)** that you can use to easily create a policy to govern your AWS storage. In order to enable these new capabilities, make sure you update your AWS connected apps by adding the new permissions described in [Connect AWS](./connect-aws.md).
