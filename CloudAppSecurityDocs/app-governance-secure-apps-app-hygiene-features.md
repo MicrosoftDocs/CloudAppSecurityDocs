@@ -8,6 +8,9 @@ description: Learn how to secure apps with app hygiene features
 
 # Secure apps with app hygiene features
 
+> [!NOTE]
+> Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
+
 Have you ever wanted to see the apps that your organization owns but isn't using, but didn't know how to? Or clean up unused or expiring credentials more easily? Azure AD includes recommendations to help you identify such apps, and the **App governance** page in Microsoft 365 Defender provides an app hygiene feature suite that includes controls and insights on unused apps, unused credentials, and expiring credentials. 
 
 These features enable automatic control over these apps and provide extra app behavior context to help you determine the risk these apps pose in your environment.
@@ -16,17 +19,15 @@ Watch this video for a brief explanation of these features:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWYEm]
 
-> [!NOTE]
-> Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium. For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
-
 ## App insights
 
 App governance allows you to sort and filter on app last used date, credential unused since, and credential expiration date. You can export this custom list for easy reporting and triage across your organization.
 
+<!--need to understand re screenshot
 For example:
 
 :::image type="content" source="media/app-governance/custom-list.png" alt-text="Screenshot of a custom list of apps.":::
-
+-->
 Data legend:
 
 - Due to data history or app scope constraints, some apps show *Over 30 days ago* in the **Last used** or **Credential unused since** column. These apps haven't signed in the last 30 days, but we don't currently have an exact last sign-in date.

@@ -69,7 +69,7 @@ For more information, see [Hunt for threats in app activities](app-activity-thre
 
 Starting June 1, 2023, management of unused apps, unused credentials, and expiring credentials will only be available to app governance customers with Microsoft Entra Workload Identities Premium.
 
-For more information, see [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview)
+For more information, see [Secure apps with app hygiene features](app-governance-secure-apps-app-hygiene-features.md) and [What are workload identities?](/azure/active-directory/workload-identities/workload-identities-overview).
 
 ## May 2023
 
