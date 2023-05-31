@@ -95,14 +95,10 @@ For an enabled app, there's also a **Disable app** control to disable the use of
 
 If you have enabled the [Google Workspace](connect-google-workspace.md) or [Salesforce](connect-salesforce.md) connector, you can also use the **App governance** page to view information about app permissions in apps connected to Google Workspace and/or Salesforce. View the permissions granted to each app and revoke or ban apps as needed.
 
-On the **App governance** page, select the **Google apps** or **Salesforce apps** tabs to view your apps.
+On the **App governance** page, select the **Google apps** or **Salesforce apps** tabs to view your apps. For example:
 
-<!--needs replacing or removing
+:::image type="content" source="media/app-governance-visibility-insights-view-apps/google-apps.png" alt-text="Screenshot of the Google apps tab":::
 
-For example:
-
-:::image type="content" source="media/app-permissions.png" alt-text="Screenshot of the Manage OAuth apps page.":::
--->
 Do any of the following to manage your Google Workspace or Salesforce apps on the **App governance** page:
 
 |Option  |Description |

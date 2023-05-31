@@ -8,7 +8,6 @@ description: How to send feedback for app governance features for Microsoft Defe
 
 # How to submit feedback on app governance
 
-<!--looks like this page should be removed for the new m365 d portal.-->
 To submit feedback on the app governance add-on to Defender for Cloud Apps:
 
 - In the lower right corner of any portal page you’d like to submit feedback on, select the black feedback button.
