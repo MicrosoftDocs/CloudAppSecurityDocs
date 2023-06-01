@@ -1,52 +1,66 @@
 ---
-title: App governance add-on in Microsoft 365 Defender
-ms.date: 01/29/2023
+title: App governance in Microsoft Defender for Cloud Apps and Microsoft 365 Defender
+ms.date: 05/28/2023
 ms.topic: conceptual
-description: Implement Microsoft app governance capabilities to govern your apps.
+description: Implement Microsoft app governance capabilities over Microsoft Defender for Cloud Apps and Microsoft 365 Defender to govern your apps.
 ---
 
-# App governance add-on to Defender for Cloud Apps in Microsoft 365 Defender
+# App governance in Microsoft Defender for Cloud Apps
 
-> [!NOTE]
-> To sign up for app governance, see [Get started with app governance](app-governance-get-started.md).
+Cyber attacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructure, establishing a starting point for privilege escalation, lateral movement, and data exfiltration.
 
-Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures, establishing a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
+To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture. You need to be able to quickly identify when an app exhibits anomalous behaviors and respond when these behaviors present risks to your environment, data, and users.
 
-The app governance add-on feature to Defender for Cloud Apps is a security and policy management capability designed for OAuth-enabled apps registered on Azure Active Directory (Azure AD). App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions.
+## App governance features
 
-App governance provides you with comprehensive:
+App governance in Defender for Cloud Apps is a set of security and policy management capabilities designed for OAuth-enabled apps registered on Azure Active Directory (Azure AD), Google, and Salesforce. App governance delivers visibility, remediation, and governance into how these apps and their users access, use, and share sensitive data in Microsoft 365 and other cloud platforms through actionable insights and automated policy alerts and actions.
 
-- **Insights**: See a view of all the third-party apps for the Microsoft 365 platform in your tenant on a single dashboard. You can see all the apps’ status and alert activities and react or respond to them.
-- **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using non-compliant or malicious apps and limiting the access of risky apps to your data.
-- **Detection**: Be alerted and notified when there are anomalies in app activity and when non-compliant, malicious, or risky apps are used.
+App governance also enables you to see which user-installed OAuth applications have access to data on Microsoft 365, Google Workspace, and Salesforce. It tells you what permissions the apps have and which users have granted access to their accounts.
+
+App governance insights enable you to make informed decisions around blocking or restricting apps that present significant risk to your organization. For example:
+
+- **Insights**: See a view of all non-Microsoft apps registered to Azure Active Directory, Google, or Salesforce in your organization on a single dashboard. You can see the status of apps and their activities, and react or respond to them.
+
+- **Governance**: Create proactive or reactive policies for app and user patterns and behaviors and protect your users from using noncompliant or malicious apps and limiting the access of risky apps to your data.
+
+- **Detection**: Be alerted and notified when there are anomalies in app activity and when noncompliant, malicious, or risky apps are used.
+
 - **Remediation**: Along with automatic remediation capabilities, use remediation controls in a timely manner to respond to anomalous app activity detections.
 
-App governance is a platform-based solution that is an integral part of the Microsoft 365 app ecosystem. App governance oversees and governs OAuth-enabled apps that are registered with Azure AD. App governance provides you with application behavior controls to help strengthen the security and compliance posture of your IT infrastructure.<br>
-<br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4S7sp]
+## Share data across Microsoft services
 
-## A first glimpse at app governance
+View app governance data together with other Defender for Cloud Apps data and Azure AD data to aggregate information and jump between views.
 
-To see the app governance dashboard, go to [aka.ms/appgovernance](https://aka.ms/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
+For example:
 
-## App governance integration with Azure AD and Defender for Cloud Apps
+- On the app governance **OAuth apps** page, view aggregated sign-in activity for each app. From there, select links to go to the Azure Active Directory admin center for the details of sign-in events.
 
-App governance, Azure AD, and Defender for Cloud Apps collect and provide different data sets:
+- On other **Cloud apps** pages in Microsoft 365 Defender, view API usage levels and aggregate data transfer. From there, select links to go to the app governance **OAuth apps** page for more details.
 
-- App governance provides detailed information about an app’s activity at the API level.
-- Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
-- Defender for Cloud Apps provides app risk information.
+App governance alerts show up in the Microsoft 365 Defender alerts list as alerts with the **Detection source** field set to *App Governance*.
 
-By sharing information across app governance, Azure AD, and Defender for Cloud Apps, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
+## Next steps
 
-- App sign-in information in app governance:
+View the **App governance > Overview** tab in the [Microsoft 365 Defender portal](https://aka.ms/appgovernance). Your sign-in account must have one of the [administrator roles](app-governance-get-started.md#roles) to view any app governance data.
 
-  From the app governance portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events.
+For more information, see [Turn on app governance for Microsoft Defender for Cloud Apps](app-governance-get-started.md).
 
-- API usage information in the Defender for Cloud Apps portal:
+**Training**:
 
-  From the Defender for Cloud Apps portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
+- [Defender for Cloud apps Ninja training](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-defender-for-cloud-apps-ninja-training-june-2022/ba-p/2751518)
 
-Here's a summary of the integration.
-![The integration of app governance with Azure AD and Defender for Cloud Apps.](media/app-governance-manage-app-governance/app-governance-add-on-arch.png)
-App governance sends its alerts to Microsoft 365 Defender to enable more detailed analysis of app-based security incidents. App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance".
+**Blogs**:
+
+- [Microsoft shifts to a comprehensive SaaS security solution - Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2023/02/15/microsoft-shifts-to-a-comprehensive-saas-security-solution/)
+
+- [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
+
+**Videos**:
+
+- [App governance video playlist](https://youtube.com/playlist?list=PLyhj1WZ29G66k4F_OZeMkQymRGyqHwZVp)
+
+- [Microsoft Mechanics Video on app governance](https://www.youtube.com/watch?v=KmE8LW_tJ1M).
+
+- [App Governance segment in the Security Summit video](https://mssecuritysummit.event.microsoft.com/Home/Security) starts at 11:50 mark. You need to register to view.
+
+- [App Governance is a Key Part of a Customers' Zero Trust Journey - YouTube](https://www.youtube.com/watch?v=XuGZu8ja134)

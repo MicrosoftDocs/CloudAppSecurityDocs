@@ -1,17 +1,17 @@
 ---
-title: Investigate threat detection alerts
-ms.date: 01/29/2023
+title: Investigate app governance threat detection alerts | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: conceptual
-description: Learn how to investigate threat detection alerts from app governance.
+description: Learn how to investigate threat detection alerts from app governance in Microsoft 365 Defender with Microsoft Defender for Cloud Apps.
 ---
 
 # Investigate threat detection alerts
 
- App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are non-deterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
+App governance provides security detections and alerts for malicious activities. The purpose of this guide is to provide you with general and practical information on each alert, to help with your investigation and remediation tasks. Included in this guide is general information about the conditions for triggering alerts. Because threat detections are nondeterministic by nature, they're only triggered when there's behavior that deviates from the norm. Finally, some alerts may be in preview, so regularly review the official documentation for updated alert status.
 
 ## MITRE ATT&CK
 
-To make it easier to map the relationship between app governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This additional reference makes it easier to understand the suspected attacks technique potentially in use when app governance alert is triggered.
+To make it easier to map the relationship between app governance alerts and the familiar MITRE ATT&CK Matrix, we've categorized the alerts by their corresponding MITRE ATT&CK tactic. This extra reference makes it easier to understand the suspected attacks technique potentially in use when app governance alert is triggered.
 
 This guide provides information about investigating and remediating app governance alerts in the following categories.
 
@@ -31,15 +31,15 @@ This guide provides information about investigating and remediating app governan
 
 Following proper investigation, all app governance alerts can be classified as one of the following activity types:
 
-- True positive (TP): An alert on a confirmed malicious activity.
-- Benign true positive (B-TP): An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
-- False positive (FP): An alert on a non-malicious activity.
+- **True positive (TP)**: An alert on a confirmed malicious activity.
+- **Benign true positive (B-TP)**: An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
+- **False positive (FP)**: An alert on a nonmalicious activity.
 
 ## General investigation steps
 
 Use the following general guidelines when investigating any type of alert to gain a clearer understanding of the potential threat before applying the recommended action.
 
-- Review the app severity level and compare with the rest of the apps in your tenant. This review will help you identify which Apps in your tenant pose the greater risk.
+- Review the app severity level and compare with the rest of the apps in your tenant. This review helps you identify which Apps in your tenant pose the greater risk.
 - If you identify a TP, review all the App activities to gain an understanding of the impact. For example, review the following App information:
 
   - Scopes granted access
@@ -159,9 +159,9 @@ This detection identifies an OAuth app that was found to have bad URL reputation
 
   **Recommended action**: Review the level of permission requested by this app and which users granted access. Based on your investigation you can choose to ban access to this app.
 
-  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they will not have access to the connected app. If you do not want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
 
-- **FP**: If you are to confirm that the app has an encoded name but has a legitimate business use in the organization.
+- **FP**: If you're to confirm that the app has an encoded name but has a legitimate business use in the organization.
 
   **Recommended action**: Dismiss the alert.
 
@@ -173,7 +173,7 @@ Follow the tutorial on how to [investigate risky OAuth apps](./investigate-risky
 
 **Severity**: Medium
 
-**Description**: This detection identifies an OAuth app with only Read scopes such as User.Read, People.Read, Contacts.Read, Mail.Read, Contacts.Read.Shared redirects to suspicious Reply URL through Graph API. This activity attempts to indicate that malicious app with less privilege permission (such as Read scopes) could be exploited to conduct users account reconnaissance.
+**Description**: This detection identifies an OAuth app with only *Read* scopes such as *User.Read*, *People.Read*, *Contacts.Read*, *Mail.Read*, *Contacts.Read*.Shared redirects to suspicious Reply URL through Graph API. This activity attempts to indicate that malicious app with less privilege permission (such as Read scopes) could be exploited to conduct users account reconnaissance.
 
 **TP or FP?**
 
@@ -181,7 +181,7 @@ Follow the tutorial on how to [investigate risky OAuth apps](./investigate-risky
 
   **Recommended action**: Review the Reply URL and scopes requested by the app. Based on your investigation you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
 
-  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they will not have access to the connected app. If you do not want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
+  To ban access to the app, on the OAuth apps page, on the row in which the app you want to ban appears, select the ban icon. You can choose whether you want to tell users the app they installed and authorized has been banned. The notification lets users know the app will be disabled and they won't have access to the connected app. If you don't want them to know, unselect Notify users who granted access to this banned app in the dialog. We recommend that you let the app users know their app is about to be banned from use.
 
 - **B-TP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
@@ -232,7 +232,7 @@ This detection identifies OAuth apps created recently in relatively new publishe
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
 
     **Recommended action**: 
     - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
@@ -256,7 +256,7 @@ This alert identifies OAuth apps registered recently in a relatively new publish
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
 
     **Recommended action**: 
     - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
@@ -280,7 +280,7 @@ This alert finds multitenant OAuth apps that have made numerous calls to Microso
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated. 
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated. 
 
     **Recommended action**: 
     - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
@@ -406,7 +406,7 @@ This detection triggers an alert when a Line of Business (LOB) app was updated t
 
 **MITRE ID**: T1098
 
-This detection triggers an alert when a Line of Business (LOB) app updated the certificate / secret and within few days post certificate update, app is accessed from an unusual location that was not seen recently or never accessed in past and observed unusual activities or usage through Graph API using Machine learning algorithm.
+This detection triggers an alert when a Line of Business (LOB) app updated the certificate / secret and within few days post certificate update, app is accessed from an unusual location that wasn't seen recently or never accessed in past and observed unusual activities or usage through Graph API using Machine learning algorithm.
 
 **TP or FP?**
 
@@ -434,7 +434,7 @@ Several users have revoked their consent to this recently created line-of-busine
 
 **TP or FP?**
 
-- **TP**: If you can confirm that the OAuth app is delivered from an unknown source and app behavior is suspicious.  
+- **TP**: If you can confirm that the OAuth app is delivered from an unknown source, and app behavior is suspicious.  
 
   **Recommended Action**: Revoke consents granted to the app and disable the app.  
 
@@ -469,7 +469,7 @@ This alert is triggered when a line of business app with suspicious metadata has
 
 **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
-**Recommended Action**:: Dismiss the alert
+**Recommended Action**: Dismiss the alert
 
 **Understand the scope of the breach**
 
@@ -483,15 +483,19 @@ This alert is triggered when a line of business app with suspicious metadata has
 
 **Severity**: Medium  
 
-A non-Microsoft cloud app is using a logo that was found by a machine learning algorithm to be very similar to a Microsoft logo. This can be an attempt to impersonate Microsoft software products and appear legitimate.
+A non-Microsoft cloud app is using a logo that was found by a machine learning algorithm to be similar to a Microsoft logo. This can be an attempt to impersonate Microsoft software products and appear legitimate.
+
+> [!NOTE]
+> Tenant admins will need to provide consent via pop up to have required data sent outside the current compliance boundary and to select partner teams within Microsoft in order to enable this threat detection for line-of-business apps.
+>
 
 **TP or FP?**
 
-- **TP**: If you can confirm that the app logo is an imitation of a Microsoft logo and the app behavior is suspicious.  
+- **TP**: If you can confirm that the app logo is an imitation of a Microsoft logo, and the app behavior is suspicious.  
 
   **Recommended Action**: Revoke consents granted to the app and disable the app.
 
-- **FP**: If you can confirm that the app logo is not an imitation of a Microsoft logo or no unusual activities were performed by the app.  
+- **FP**: If you can confirm that the app logo isn't an imitation of a Microsoft logo or no unusual activities were performed by the app.  
 
   **Recommended Action**: Dismiss the alert
 
@@ -509,11 +513,11 @@ This detection generates alerts for non-Microsoft OAuth apps with publisher doma
 
 **TP or FP?**
 
-- **TP**: If you can confirm that the publisher domain or redirect URL of the app is typosquatted and does not relate to the true identity of the app.
+- **TP**: If you can confirm that the publisher domain or redirect URL of the app is typosquatted and doesn't relate to the true identity of the app.
 
   **Recommended action**: 
     - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
-    - Check the app for other signs of spoofing or impersonation as well as any suspicious activity.
+    - Check the app for other signs of spoofing or impersonation and any suspicious activity.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that the publisher domain and redirect URL of the app are legitimate.  
@@ -585,7 +589,7 @@ This alert finds OAuth apps registered recently in a relatively new publisher te
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app does not have a legitimate business use in the organization, then a true positive is indicated.
+- **TP**: If you’re able to confirm that the consent request to the app was delivered from an unknown or external source and the app doesn't have a legitimate business use in the organization, then a true positive is indicated.
 
   **Recommended action**: 
     - Contact users and admins who have granted consent to this app to confirm this was intentional and the excessive privileges are normal. 
@@ -615,7 +619,7 @@ This detection identifies an OAuth application that is using an unusual user age
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the OAuth app has recently started using a new user agent that was not used previously and this change is unexpected, then a true positive is indicated.
+- **TP**: If you’re able to confirm that the OAuth app has recently started using a new user agent that wasn't used previously and this change is unexpected, then a true positive is indicated.
 
   **Recommended actions**: Review the user agents used and any recent changes made to the application. Based on your investigation, you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
 
@@ -639,13 +643,13 @@ This detection identifies an OAuth app that used an unusual user agent to access
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that the OAuth application is not expected to change the user agent it uses to make requests to the Exchange Web Services API, then a true positive is indicated.
+- **TP**: If you’re able to confirm that the OAuth application isn't expected to change the user agent it uses to make requests to the Exchange Web Services API, then a true positive is indicated.
 
-  **Recommended actions**: Classify the alert as a TP. Based on the investigation, if the app is malicious, you can revoke consents and disable the app in the tenant. If it is a compromised app, you can revoke the consents, temporarily disable the app, review the permissions, reset the secret and certificate and then re-enable the app.
+  **Recommended actions**: Classify the alert as a TP. Based on the investigation, if the app is malicious, you can revoke consents and disable the app in the tenant. If it's a compromised app, you can revoke the consents, temporarily disable the app, review the permissions, reset the secret and certificate and then re-enable the app.
 
 - **FP**: If after investigation, you can confirm that the user agent used by the application has a legitimate business use in the organization.
 
-  **Recommended action**: Classify the alert as a FP. Also, please consider sharing feedback based on your investigation of the alert.
+  **Recommended action**: Classify the alert as an FP. Also, consider sharing feedback based on your investigation of the alert.
 
 **Understand the scope of the breach**
 
@@ -763,9 +767,9 @@ This detection identifies OAuth apps with high privilege permissions that perfor
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that a high usage of OneDrive workload via Graph API is not expected from this OAuth application having high privilege permissions to read and write to OneDrive, then a true positive is indicated.
+- **TP**: If you’re able to confirm that a high usage of OneDrive workload via Graph API isn't expected from this OAuth application having high privilege permissions to read and write to OneDrive, then a true positive is indicated.
 
-  **Recommended Action**: Based on the investigation, if the application is malicious, you can revoke consents and disable the application in the tenant. If it is a compromised application, you can revoke the consents, temporarily disable the app, review the required permissions, reset the password and then re-enable the app.
+  **Recommended Action**: Based on the investigation, if the application is malicious, you can revoke consents and disable the application in the tenant. If it's a compromised application, you can revoke the consents, temporarily disable the app, review the required permissions, reset the password and then re-enable the app.
 
 - **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
 
@@ -872,3 +876,7 @@ A non-Microsoft cloud app made anomalous Graph API calls to SharePoint, includin
 1. Review all activities performed by the app.
 1. Review the scopes granted by the app.
 1. Review the user activity associated with the app.
+
+## Next steps
+
+[Manage app governance alerts](app-governance-manage-alerts.md)

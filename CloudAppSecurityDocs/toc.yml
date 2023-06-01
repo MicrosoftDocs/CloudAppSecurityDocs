@@ -146,14 +146,10 @@ items:
     items: 
     - name: Protect and govern your apps
       href: app-governance-manage-app-governance.md
-    - name: Get started with app governance
+    - name: Turn on app governance
       href: app-governance-get-started.md
-    - name: App governance trial user guide
+    - name: Get started with app governance
       href: app-governance-trial-user-guide.md
-    - name: What's new in app governance
-      href: app-governance-whats-new.md
-    - name: Submit feedback on app governance
-      href: app-governance-feedback.md
     - name: App governance FAQ
       href: app-governance-faq.yml
     - name: Get visibility and insights
@@ -176,12 +172,12 @@ items:
           href: app-governance-app-policies-get-started.md
         - name: Predefined app policies
           href: app-governance-predefined-policies.md
-        - name: Investigate predefined app policy alerts
-          href: app-governance-investigate-predefined-policies.md
         - name: Create app policies
           href: app-governance-app-policies-create.md
         - name: Manage app policies
           href: app-governance-app-policies-manage.md
+        - name: Investigate predefined app policy alerts
+          href: app-governance-investigate-predefined-policies.md
     - name: Detect and remediate app threats
       items:
         - name: Learn about detection and remediation
@@ -193,13 +189,17 @@ items:
         - name: Investigate threat detection alerts
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
-          href: /defender-cloud-apps/app-governance-manage-alerts
+          href: app-governance-manage-alerts.md
     - name: Secure apps and other assets
       items:
         - name: Secure apps accessing non-Graph APIs
           href: app-governance-secure-apps-access-non-graph-api.md
         - name: Secure apps with app hygiene features
           href: app-governance-secure-apps-app-hygiene-features.md
+        - name: Hunt for threats in app activities
+          href: app-activity-threat-hunting.md
+    - name: What's new archive for app governance
+      href: app-governance-whats-new.md
   - name: Cloud Discovery
     items:
     - name: Set up
