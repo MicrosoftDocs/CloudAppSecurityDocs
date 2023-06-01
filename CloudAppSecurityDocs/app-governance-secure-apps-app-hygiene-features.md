@@ -23,13 +23,6 @@ Watch this video for a brief explanation of these features:
 
 App governance allows you to sort and filter on app last used date, credential unused since, and credential expiration date. You can export this custom list for easy reporting and triage across your organization.
 
-<!--need to understand re screenshot
-For example:
-
-:::image type="content" source="media/app-governance/custom-list.png" alt-text="Screenshot of a custom list of apps.":::
--->
-Data legend:
-
 - Due to data history or app scope constraints, some apps show *Over 30 days ago* in the **Last used** or **Credential unused since** column. These apps haven't signed in the last 30 days, but we don't currently have an exact last sign-in date.
 
 - Apps that don't have a last sign-in date or credential expiration date available have *Not available* in the respective column.

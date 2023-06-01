@@ -38,7 +38,7 @@ App governance is now included as part of the [Microsoft Defender for Cloud Apps
 
 In the Microsoft 365 Defender portal, go to **Settings > Cloud apps > App governance > Service status** to either enable app governance if available, or sign up for the waitlist. 
 
-Existing holders of trial licenses for the app governance add-on have until **July 31, 2023** to enable the toggle and retain their app governance access. <!--august or july?-->
+Existing holders of trial licenses for the app governance add-on have until **July 31, 2023** to enable the toggle and retain their app governance access. 
 
 For more information, see:
 

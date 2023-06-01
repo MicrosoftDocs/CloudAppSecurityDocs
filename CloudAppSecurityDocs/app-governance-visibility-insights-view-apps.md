@@ -24,19 +24,18 @@ For example:
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#roles) to view any app governance data.
 >
 
-The apps in your tenant are listed with the following details:
-
+On the **Azure AD apps** tab, the apps in your tenant are listed with the following details:
 
 |Column name  |Description  |
 |---------|---------|
-|**App name** | The display name of the app as registered on Azure AD <!--or google or sharepoint?--> |
+|**App name** | The display name of the app as registered on Azure AD |
 |**App status** | Shows whether the app is enabled or disabled, and if disabled by whom |
 | **Graph API access**| Shows whether the app has at least one Graph API permission |
 | **Permission type**| Shows whether the app has application (app only), delegated, or mixed permissions |
 | **Consent type**| Shows whether the app consent has been given at the user or the admin level, and the number of users whose data is accessible to the app |
 | **Publisher**| Publisher of the app and their verification status |
-| **Last modified**| Date and time when registration information was last updated on Azure AD <!--or google or sharepoint?-->|
-| **Added on**| Shows the date and time when the app was registered to Azure AD <!--or google or sharepoint?--> and assigned a service principal |
+| **Last modified**| Date and time when registration information was last updated on Azure AD |
+| **Added on**| Shows the date and time when the app was registered to Azure AD and assigned a service principal |
 | **Permission usage**| Shows whether the app has any unused Graph API permissions in the last 90 days |
 | **Data usage**| Total data downloaded or uploaded by the app in the last 30 days |
 | **Privilege level**  | The app's privilege level |

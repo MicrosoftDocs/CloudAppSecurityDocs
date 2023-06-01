@@ -36,7 +36,6 @@ For example:
 - On the app governance **OAuth apps** page, view aggregated sign-in activity for each app. From there, select links to go to the Azure Active Directory admin center for the details of sign-in events.
 
 - On other **Cloud apps** pages in Microsoft 365 Defender, view API usage levels and aggregate data transfer. From there, select links to go to the app governance **OAuth apps** page for more details.
-<!--need new image without "addin" and the classic portal-->
 
 App governance alerts show up in the Microsoft 365 Defender alerts list as alerts with the **Detection source** field set to *App Governance*.
 

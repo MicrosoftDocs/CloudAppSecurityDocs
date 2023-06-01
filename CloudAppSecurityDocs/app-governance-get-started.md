@@ -12,7 +12,7 @@ description: Get started with app governance capabilities to govern your apps in
 >
 > If you are currently an app governance trial customer, use the steps described in this article to turn on app governance with a Defender for Cloud Apps license.
 >
-> **Take this action before July 31, 2023 to continue using it without any interruption.**<!--let's remove this aug 1. will there be changes-->
+> **Take this action before July 31, 2023 to continue using it without any interruption.**
 
 ## Prerequisites
 
@@ -24,9 +24,9 @@ Before you start, verify that you satisfy the following prerequisites:
 
 - You must have [one of the appropriate roles](#roles) to turn on app governance and access it.
 
-- Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.<!--why isn't mda listed here? https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/ https://review.learn.microsoft.com/en-us/help/contribute/contribute-get-started-channel-guidance?branch=main-->
+- Your organization's billing address must be in a region **other than** Brazil, South Korea, Switzerland, Norway, South Africa, or United Arab Emirates.
 
-- Your organization must use the commercial cloud, and not a government cloud. <!--i don't think we mention specific gov clouds such as GCC, GCC-H, DoD and Fairfax. -->App governance isn't yet available in government clouds.
+- Your organization must use the commercial cloud, and not a government cloud. App governance isn't yet available in government clouds.
 
 ## Turn on app governance
 
@@ -52,9 +52,9 @@ For example:
 
 ## Current trial customers
 
-If you're currently running a free trial of app governance and want to use it without interruption, go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch on the app governance toggle before **July 31, 2023**.  <!--how to update this after august?-->
+If you're currently running a free trial of app governance and want to use it without interruption, go to [Microsoft 365 Defender > Settings > Cloud Apps > App governance](https://security.microsoft.com/cloudapps/settings) and switch on the app governance toggle before **July 31, 2023**. 
 
-If you want to opt out of app governance, no action is needed, and app governance will automatically turn off after **July 31, 2023**. <!--update after august --> Your data will be deleted permanently in accordance with our data retention policies.<!--link?--> To keep a copy of your app and policy data, make sure to export them manually from the app governance pages before July 31, 2023.
+If you want to opt out of app governance, no action is needed, and app governance will automatically turn off after **July 31, 2023**. Your data will be deleted permanently in accordance with our data retention policies. To keep a copy of your app and policy data, make sure to export them manually from the app governance pages before July 31, 2023.
 
 ## Licensing
 
