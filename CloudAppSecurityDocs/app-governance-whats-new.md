@@ -63,6 +63,7 @@ For more information, see [Secure apps with app hygiene features](app-governance
 ## App governance February 2023 release
 
 - **Enhanced alert investigation experience:** App governance now provides additional information admins need to investigate and remediate incidents and alerts. This enhancement includes more details under **What happened** and **Recommended actions** in the alert story on Microsoft 365 Defender alert pages. This information is available for all app governance alerts, including alerts triggered by threat detection rules, predefined policies, and user-defined policies. [Learn more about the enhanced alert experience.](/defender-cloud-apps/app-governance-detect-remediate-detect-threats)
+- **App Governance app hygiene features public preview:** App Governance insights and controls on unused apps, apps with unused credentials, and apps with expiring credentials launched to public preview on February 15, 2023. Admins can sort, filter, and export on app last used date, credentials unused since, and credentials expiration date. A predefined policy for unused apps, apps with unused credentials, and apps with expiring credentials comes out of the box.
    
 ## App governance October 2022 release
 
