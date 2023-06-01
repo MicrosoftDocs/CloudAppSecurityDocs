@@ -13,20 +13,17 @@ sections:
     questions:
       - question: What is app governance?
         answer: |
-          App governance is an add-on to Microsoft Defender for Cloud Apps. It provides expanded visibility and control over apps that access your Microsoft 365 data. [Learn more about app governance](app-governance-manage-app-governance.md)
+          App governance is a feature in Microsoft Defender for Cloud Apps. It provides expanded visibility and control over apps that access your Microsoft 365 data. For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md).
       - question: What types of apps does app governance secure?
         answer: |
           App governance currently tracks non-Microsoft apps that use OAuth to authenticate to Azure Active Directory.
 
-          These apps represent modern apps that can access Microsoft 365 data in mailboxes, OneDrive folders, SharePoint sites, and Teams. End users regularly introduce these apps and can give them consent to access data.
+          These apps represent modern apps that can access various resources, including Microsoft 365 data in mailboxes, OneDrive folders, SharePoint sites, and Teams. End users regularly introduce these apps and can give them consent to access data.
           
-          While Defender for Cloud Apps also tracks apps that use OAuth to access Microsoft 365, app governance provides additional out-of-box detections and highly customizable policies that track various app attributes and behaviors.
-      - question: How can I try app governance?
+          While Defender for Cloud Apps also tracks apps that use OAuth to access Microsoft 365, app governance provides extra out-of-box detections and highly customizable policies that track various app attributes and behaviors.
+      - question: How can I get app governance?
         answer: |
-          Once you have Defender for Cloud Apps, you can get use app governance with a trial license. The trial gives you full access to all app governance features for 90 days. [Learn how to start using app governance](app-governance-get-started.md)
-      - question: How can I get the app governance add-on license?
-        answer: |
-          If you haven't yet, get a trial license to start using app governance. Once the trial expires, you'll need to purchase an add-on license to continue using the service. [Learn how to start using app governance](app-governance-get-started.md) 
+          App governance is a feature in Defender for Cloud Apps. To use app governance, Defender for Cloud Apps must be present in your account either as a standalone product or as part of a license package. If you have the appropriate administrator role and satisfy all the prerequisites, you can navigate to [Microsoft 365 Defender settings](https://security.microsoft.com/cloudapps/settings?tabid=activateAppG) page and turn on app governance.
       - question: What can app governance detect?
         answer: |
           App governance generates two types of alerts:
@@ -43,26 +40,26 @@ sections:
       - question: Is app governance integrated with Microsoft 365 Defender?
         answer: |
            App governance alerts and related incidents are available in the Microsoft 365 Defender queue. Microsoft 365 Defender correlates the alerts with signals from other solutions, such as Defender for Endpoint, to associate related attack activities and identify security incidents. App governance alerts and incidents are also integrated with Microsoft Sentinel.
+      - question: What roles do I need to activate app governance
+        answer: |
+          For the list of supported roles, see [Get started with app governance](app-governance-get-started.md#roles).
+    
       - question: What roles do I need to have to use app governance?
         answer: |
-          To obtain a trial license or to purchase a license, you need to have the following Azure Active Directory roles:
-          -	Billing admin
-          -	Global admin
-
-          For full access to app governance, you need to be an **application admin**. **Security operators**, **security admins**, and **compliance admins** also have comprehensive access to app governance. [Read full list of roles and permissions](app-governance-get-started.md#roles)
+          For the list of supported roles, see [Get started with app governance](app-governance-get-started.md#roles).
       - question: Is app governance available in all regions?
         answer: |
           App governance is currently not available in Brazil, South Korea, Switzerland, Norway, South Africa, and United Arab Emirates. To use app governance, your billing location must be in another country/region.
 
       - question: Why is app governance empty or showing inaccurate data?
         answer: |
-          It can take up to 24 hours to fully prepare app governance and retrieve data after you first initiate it. During this period data access statistics and app counts can be inaccurate.
+          It can take up to 10 hours to fully prepare app governance and retrieve data after you first initiate it. During this period data access statistics and app counts can be inaccurate.
 
       - question: How does app governance integrate with Microsoft Sentinel?
         answer: |
           App governance is integrated with Microsoft 365 Defender for a unified alert experience. The Microsoft 365 Defender connector for Microsoft Sentinel (preview) sends all Microsoft 365 Defender incidents and alerts information to Microsoft Sentinel and keeps the incidents synchronized.  
 
-          The Microsoft 365 Defender connector enables you to automatically detect, triage, investigate and remediate app governance incidents and alerts on Microsoft Sentinel. For more information see [Microsoft 365 Defender integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-365-defender-integration-with-azure-sentinel) and [Connect data from Microsoft 365 Defender to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
+          The Microsoft 365 Defender connector enables you to automatically detect, triage, investigate and remediate app governance incidents and alerts on Microsoft Sentinel. For more information, see [Microsoft 365 Defender integration with Microsoft Sentinel](/microsoft-365/security/defender/microsoft-365-defender-integration-with-azure-sentinel) and [Connect data from Microsoft 365 Defender to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
 
       - question: Where can I get more information about app governance?
         answer: |
@@ -71,4 +68,8 @@ sections:
           - [Announcing Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-microsoft-defender-for-cloud-apps/ba-p/2835842)
           - [Microsoft Security Insights: App Governance with Eric Ouellet, Andrew Vahidnia, Jared Poeppelman](https://microsoftsecurityinsights.com/075-app-governance-with-eric-ouellet-andrew-vahidnia-jared-poeppelman)
           - [How to Prevent App Cyber Attacks—Cloud & Hybrid](https://www.youtube.com/watch?v=KmE8LW_tJ1M)
-          - [Twitter: Microsoft is tracking a recent consent phishing campaign, reported by @ffforward, that abuses OAuth..](https://twitter.com/MsftSecIntel/status/1484623341155610624)
+          - [Twitter: Microsoft is tracking a recent consent phishing campaign, reported by @ffforward, that abuses OAuth.](https://twitter.com/MsftSecIntel/status/1484623341155610624)
+          - [Microsoft shifts to a comprehensive SaaS security solution - Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/2023/02/15/microsoft-shifts-to-a-comprehensive-saas-security-solution)
+          - [Improve your app posture and hygiene using Microsoft Defender for Cloud Apps](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/improve-your-app-posture-and-hygiene-using-microsoft-defender/ba-p/3742361)
+          - [App governance is a key part of customers’ zero trust journey](https://www.youtube.com/watch?v=XuGZu8ja134)
+

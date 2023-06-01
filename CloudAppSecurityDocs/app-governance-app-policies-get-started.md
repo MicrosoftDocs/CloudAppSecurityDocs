@@ -1,31 +1,37 @@
 ---
-title: Get started with app policies
-ms.date: 01/29/2023
+title: Get started with app governance policies | Microsoft Defender for Cloud Apps
+ms.date: 05/28/2023
 ms.topic: how-to
-description: Get started learning about app policies.
+description: Get started learning about app governance policies with Microsoft Defender for Cloud Apps in Microsoft 365 Defender
 ---
 
 # Get started with app policies
 
-Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization.
+Policies for app governance are a way to implement proactive and reactive alerts and automatic remediation for your specific needs for app compliance in your organization. You can create policies in app governance to manage OAuth apps in Azure AD, Google and Salesforce.
 
 There are two types of policies in app governance:
 
 - **Predefined policies**
 
-    App governance is equipped with a set of predefined policies tailored to your environment. They allow you to start monitoring your apps even before you set up any policies. This ensures you're notified of any app anomalies early on. The app governance threat detection team regularly modifies the underlying conditions and adds new predefined policies regularly. To learn more about predefined policies, see [Predefined app policies](app-governance-predefined-policies.md).
+    App governance is equipped with a set of predefined policies tailored to your environment. They allow you to start monitoring your apps even before you set up any policies, ensuring that you're notified of any app anomalies early on. The app governance threat detection team regularly modifies the underlying conditions and adds new predefined policies regularly. For more information, see [Predefined app policies](app-governance-predefined-policies.md).
 
 - **User defined policies**
 
     In addition to predefined policies, admins can also use the available conditions to create their custom policies or pick from the available recommended policies.
 
-To see your list of current app policies, go to **Microsoft 365 Defender > App governance > Policies**. This will show you a list of all your policies in app governance. Built-in threat detection policies won't show up here, but you can read more about these [here](app-governance-anomaly-detection-alerts.md)
+To see your list of current app policies, go to the **Microsoft 365 Defender > App governance** page and select **Policies**. This shows you a list of all your policies in app governance. 
 
-:::image type="content" source="media\app-governance\mapg-cc-policies.png" alt-text="The app governance policies summary page in the Microsoft 365 Defender." lightbox="media\app-governance\mapg-cc-policies.png":::
+For example:
+
+![Screenshot of the app governance policies summary page in Microsoft 365 Defender.](media/app-governance-app-policies-get-started/azure-ad-policies.jpg)
+
+> [!NOTE]
+> Built-in threat detection policies aren't listed on the **Policies** tab. For more information, see [Investigate threat detection alerts](app-governance-anomaly-detection-alerts.md).
+> 
 
 ## What’s available on the app policies dashboard
 
-You can see the number of active, inactive, and audit mode policies, and the following information for each policy:
+The **App governance** > **Policies** tab shows the number of active, inactive, and audit mode policies, and the following information for each policy:
 
 - **Policy name**
 - **Status**
@@ -46,7 +52,7 @@ You can see the number of active, inactive, and audit mode policies, and the fol
 
 The policy list is sorted by **Last modified** by default. To sort the list by another attribute, select the attribute name.
 
-When you select a policy, you get a detailed policy pane with these additional details:
+When you select a policy, you get a detailed policy pane with these extra details:
 
 - **Name**
 - **Severity**: Based on the severity level set when the policy was created
@@ -64,17 +70,30 @@ You can also:
 
 ## Edit an existing user-defined policy
 
-1. In the app governance portal, select the **Policies** tab.
-1. Select the policy you want to edit. A panel will open on the right side with the details of the existing policy.
+1. On the **App governance** page, select the **Policies** tab and select the policy you want to edit. A panel opens on the right side with the details of the existing policy.
+
 1. Select **Edit**.
-1. You can't change the name of the policy once created, but you can change the description and policy severity. Select **Next**.
-1. Choose whether you want to continue with the existing policy settings or customize them. Select **No, I'll customize the policy** to make changes. Select **Next**.
-1. Choose whether this policy will apply to all apps, specific apps, or all apps except the apps you select. Select **Choose apps** to select which apps to apply the policy to. Select **Next**.
-1. Choose whether to modify the existing conditions of the policy. If you choose to modify the conditions, select **Edit or modify existing conditions for the policy** and choose which policy conditions to apply. Otherwise, select **Use existing conditions of the policy**. Select **Next**.
-1. Choose whether to disable the app if it triggers the policy conditions. Select **Next**.
-1. Set the policy status to Audit mode, Active, or Inactive. Select **Next**.
+
+    While you can't change the name of the policy once created, but you can change the description and policy severity as needed. When you're done, select **Next**.
+
+1. Choose whether you want to continue with the existing policy settings or customize them. Select **No, I'll customize the policy** to make changes, and then select **Next**.
+
+1. Choose whether this policy applies to all apps, specific apps, or all apps except the apps you select. Select **Choose apps** to select which apps to apply the policy to, and then select **Next**.
+
+1. Choose whether to modify the existing conditions of the policy. 
+
+    - If you choose to modify the conditions, select **Edit or modify existing conditions for the policy** and choose which policy conditions to apply. 
+    - Otherwise, select **Use existing conditions of the policy**. 
+  
+    When you're done, select **Next**.
+
+1. Choose whether to disable the app if it triggers the policy conditions and then select **Next**.
+
+1. Set the policy status to **Audit** mode, **Active**, or **Inactive**, as needed, and then select **Next**.
+
 1. Review your setting choices for the policy and if everything is the way you want it, select **Submit**.
 
 ## Next step
 
-[Create an app policy.](app-governance-app-policies-create.md)
+[Create an app policy](app-governance-app-policies-create.md)
+

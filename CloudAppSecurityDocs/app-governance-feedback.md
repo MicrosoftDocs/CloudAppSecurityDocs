@@ -1,8 +1,8 @@
 ---
-title: How to submit feedback on app governance
+title: How to submit feedback on app governance | Microsoft Defender for Cloud Apps
 ms.date: 01/29/2023
 ms.topic: conceptual
-description: How to send feedback for app governance.
+description: How to send feedback for app governance features for Microsoft Defender for Cloud Apps in Microsoft 365 Defender.
 ---
 
 
@@ -25,3 +25,4 @@ To submit feedback on the app governance add-on to Defender for Cloud Apps:
   1. If you select **Include this screenshot**, a screenshot of the page you're on will be shared.  
   1. If you select **You can contact me about this feedback**, your email address will be shared with Microsoft.
   1. Select **Submit** to send your feedback.
+
