@@ -451,6 +451,60 @@ Several users have revoked their consent to this recently created line-of-busine
    - Apps with a suspicious Reply domain
 1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
 
+### App metadata associated with known phishing campaign
+
+**Severity**: Medium
+
+This detection generates alerts for non-Microsoft OAuth apps with metadata (name, URL, publisher, etc.) that has previously been observed in apps associated with a phishing campaign. These apps might be part of the same campaign and possibly involved in exfiltration of sensitive information.
+
+**TP or FP?**
+
+- **TP**: If you are able to confirm that the OAuth app is delivered from an unknown source and is performing unusual activities.
+
+   **Recommended action**: 
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+    - Contact the users or admins who granted consent or permissions to the app. Verify if the changes were intentional.
+    - Search the CloudAppEvents table in advanced hunting to understand app activity and determine if the observed behavior is expected.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
+
+### App metadata associated with previously flagged suspicious apps
+
+**Severity**: Medium
+
+This detection generates alerts for non-Microsoft OAuth apps with metadata (name, URL, publisher, etc.) that has previously been observed in apps flagged by app governance due to suspicious activity. This app might be part of an attack campaign and possibly involved in exfiltration of sensitive information.
+
+**TP or FP?**
+
+- **TP**: If you are able to confirm that the OAuth app is delivered from an unknown source and is performing unusual activities.
+
+   **Recommended action**: 
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+    - Contact the users or admins who granted consent or permissions to the app. Verify if the changes were intentional.
+    - Search the CloudAppEvents table in advanced hunting to understand app activity and determine if the observed behavior is expected.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
+
 ## Privilege escalation alerts
 
 ### OAuth app with suspicious metadata has Exchange permission
@@ -876,6 +930,35 @@ A non-Microsoft cloud app made anomalous Graph API calls to SharePoint, includin
 1. Review all activities performed by the app.
 1. Review the scopes granted by the app.
 1. Review the user activity associated with the app.
+
+### App metadata associated with suspicious mail-related activity
+
+**Severity**: Medium
+
+**MITRE IDs**: T1114
+
+This detection generates alerts for non-Microsoft OAuth apps with metadata (name, URL, publisher, etc.) that has previously been observed in apps with suspicious mail-related activity. These apps might be part of the same attack campaign and possibly involved in exfiltration of sensitive information.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that the app has created mailbox rules or made a large number of unusual Graph API calls to the Exchange workload.
+
+   **Recommended action**: 
+    - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
+    - Contact the users or admins who granted consent or permissions to the app. Verify if the changes were intentional.
+    - Search the CloudAppEvents table in advanced hunting to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
+
+  **Recommended Action**: Dismiss the alert
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by the app.
+1. Review the scopes granted to the app.
+1. Review the user activity associated with the app.
+
 
 ## Next steps
 
