@@ -455,7 +455,7 @@ Several users have revoked their consent to this recently created line-of-busine
 
 **Severity**: Medium
 
-This detection generates alerts for non-Microsoft OAuth apps with metadata (name, URL, publisher, etc.) that has previously been observed in apps associated with a phishing campaign. These apps might be part of the same campaign and possibly involved in exfiltration of sensitive information.
+This detection generates alerts for non-Microsoft OAuth apps with metadata, such as *name*, *URL*, or *publisher*, that had previously been observed in apps associated with a phishing campaign. These apps might be part of the same campaign and might be involved in exfiltration of sensitive information.
 
 **TP or FP?**
 
