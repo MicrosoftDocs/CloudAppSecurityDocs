@@ -482,7 +482,7 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
 
 **Severity**: Medium
 
-This detection generates alerts for non-Microsoft OAuth apps with metadata, such as *name*, *URL*, or *publisher*,  that had previously been observed in apps flagged by app governance due to suspicious activity. This app might be part of an attack campaign and might be involved in exfiltration of sensitive information.
+This detection generates alerts for non-Microsoft OAuth apps with metadata, such as *name*, *URL*, or *publisher*, that had previously been observed in apps flagged by app governance due to suspicious activity. This app might be part of an attack campaign and might be involved in exfiltration of sensitive information.
 
 **TP or FP?**
 
@@ -491,7 +491,7 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata, such
    **Recommended action**: 
     - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
     - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
-    - Search the CloudAppEvents table in advanced hunting to understand app activity and determine if the observed behavior is expected.
+    - Search the *CloudAppEvents* advanced hunting table to understand app activity and determine if the observed behavior is expected.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
@@ -937,7 +937,7 @@ A non-Microsoft cloud app made anomalous Graph API calls to SharePoint, includin
 
 **MITRE IDs**: T1114
 
-This detection generates alerts for non-Microsoft OAuth apps with metadata (name, URL, publisher, etc.) that has previously been observed in apps with suspicious mail-related activity. These apps might be part of the same attack campaign and possibly involved in exfiltration of sensitive information.
+This detection generates alerts for non-Microsoft OAuth apps with metadata, such as *name*, *URL*, or *publisher*, that had previously been observed in apps with suspicious mail-related activity. This app might be part of an attack campaign and might be involved in exfiltration of sensitive information.
 
 **TP or FP?**
 
@@ -945,8 +945,8 @@ This detection generates alerts for non-Microsoft OAuth apps with metadata (name
 
    **Recommended action**: 
     - Investigate the app's registration details on app governance and visit Azure Active Directory for more details. 
-    - Contact the users or admins who granted consent or permissions to the app. Verify if the changes were intentional.
-    - Search the CloudAppEvents table in advanced hunting to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
+    - Contact the users or admins who granted consent or permissions to the app. Verify whether the changes were intentional.
+    - Search the *CloudAppEvents* advanced hunting table to understand app activity and identify data accessed by the app. Check affected mailboxes and review messages that might have been read or forwarded by the app itself or rules that it has created.
     - Verify whether the app is critical to your organization before considering any containment actions. Deactivate the app using app governance or Azure AD to prevent it from accessing resources. Existing app governance policies might have already deactivated the app.
 
 - **FP**: If you can confirm that no unusual activities were performed by the app and that the app has a legitimate business use in the organization.
