@@ -1,18 +1,18 @@
 ---
-title: Policy template reference
+title: Policy templates
 description: This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
 # Policy template reference
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
-
 We recommend that you simplify policy creation by starting with existing templates whenever possible. This article lists several policy templates available with Microsoft Defender for Cloud Apps. 
 
 For the full list of templates, check the Microsoft 365 Defender portal.
 
-## Policy templates highlights
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+## Policy template highlights
 
 |Risk category|Template name|Description|
 |-----|----|----|
