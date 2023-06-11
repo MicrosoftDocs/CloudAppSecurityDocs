@@ -8,11 +8,11 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-This article provides information on policy templates included in Microsoft Defender for Cloud Apps.
+We recommend that you simplify policy creation by starting with existing templates whenever possible. This article lists several policy templates available with Microsoft Defender for Cloud Apps. 
 
-## Policy templates
+For the full list of templates, check the Microsoft 365 Defender portal.
 
-We recommend starting policy creation based on an existing template whenever possible for ease of use. This table includes examples of policy templates found in Microsoft Defender for Cloud Apps.
+## Policy templates highlights
 
 |Risk category|Template name|Description|
 |-----|----|----|
@@ -48,7 +48,9 @@ We recommend starting policy creation based on an existing template whenever pos
 |Sharing control|Publicly accessible S3 buckets (AWS)|Alert when an AWS S3 bucket is publicly shared.|
 |Sharing control|Stale externally shared files|Alert when externally shared files haven't been modified for at least 6 months.|
 
-To see the full list of policy templates, in the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**.
+## View the full list of policy templates
+
+To see the full list of policy templates, in the Microsoft 365 Defender portal, under **Cloud Apps**, go to **Policies** -> **Policy templates**. For example:
 
 :::image type="content" source="media/policy-templates.png" alt-text="Policy templates." lightbox="media/policy-templates.png":::
 
