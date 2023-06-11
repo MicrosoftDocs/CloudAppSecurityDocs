@@ -4,7 +4,7 @@ description: This article provides information on policy templates included in M
 ms.date: 01/29/2023
 ms.topic: how-to
 ---
-# Policy template reference
+# Policy templates
 
 We recommend that you simplify policy creation by starting with existing templates whenever possible. This article lists several policy templates available with Microsoft Defender for Cloud Apps. 
 
