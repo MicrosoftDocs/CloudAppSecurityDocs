@@ -370,7 +370,7 @@ items:
           href: cloud-discovery-policies.md
         - name: Cloud Discovery anomaly detection policy
           href: cloud-discovery-anomaly-detection-policy.md
-      - name: Policy template reference
+      - name: Policy templates
         href: policy-template-reference.md
     - name: Govern connected apps
       href: governance-actions.md
