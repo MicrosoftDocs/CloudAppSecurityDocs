@@ -10,6 +10,12 @@ ms.topic: how-to
 
 Cloud Discovery analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
 
+>[!TIP]
+> By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. 
+> 
+> To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity) or [create a custom app](cloud-discovery-custom-apps.md).
+
+
 ## Snapshot and continuous risk assessment reports
 
 You can generate the following types of reports:
