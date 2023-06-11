@@ -34,7 +34,7 @@ Microsoft Defender for Cloud Apps for US Government offers parity with the Micro
 
 | Feature Name                           | Description                                                  | GCC     | GCC High | DoD     |
 | -------------------------------------- | ------------------------------------------------------------ | ------- | -------- | ------- |
-|**App governance add-on to Microsoft Defender for Cloud Apps** | App governance delivers full visibility, remediation, and governance into how Azure-connected apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. | Roadmap | Roadmap  | Roadmap |
+|**App governance in Microsoft Defender for Cloud Apps** | App governance delivers full visibility, remediation, and governance into how Azure-connected apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. | Roadmap | Roadmap  | Roadmap |
 
 ## Next steps
 
