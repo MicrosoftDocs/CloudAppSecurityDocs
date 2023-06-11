@@ -62,4 +62,8 @@ Once an admin has been granted the appropriate permission to view private activi
 
 1. In the **Show private activities** dialog, select **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log and the action is recorded in the governance log.
 
+> [!TIP]
+> When you export activities with the **Show private activities** option selected, the activities inside the export are still private, and no activity details are exposed.
+> 
+
 [!INCLUDE [Open support ticket](includes/support.md)]
