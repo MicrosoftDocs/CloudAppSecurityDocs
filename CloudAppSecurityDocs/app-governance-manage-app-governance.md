@@ -11,7 +11,8 @@ Cyber attacks have become increasingly sophisticated in the ways they exploit th
 
 To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture. You need to be able to quickly identify when an app exhibits anomalous behaviors and respond when these behaviors present risks to your environment, data, and users.
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4S7sp]
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4S7sp]
 
 ## App governance features
 
