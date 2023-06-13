@@ -77,8 +77,8 @@ For more information, see [Secure apps with app hygiene features](app-governance
 
     For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
-- **Non-blockable applications**: To prevent users from accidentally causing downtime, Defender for Cloud Apps now prevents you from blocking business-critical Microsoft services.
-    For more information, see [Govern discovered apps](governance-discovery.md#non-blockable-applications).
+- **Non-blockable applications** (Preview): To prevent users from accidentally causing downtime, Defender for Cloud Apps now prevents you from blocking business-critical Microsoft services.
+    For more information, see [Govern discovered apps](governance-discovery.md#non-blockable-applications-preview).
 
 ## April 2023
 
