@@ -15,7 +15,7 @@ Integration is accomplished by using the standard ICAP protocol, an http-like pr
 This guide provides the steps necessary for configuring the ICAP connection in Defender for Cloud Apps and the stunnel setup to secure communication through it.
 
 > [!IMPORTANT]
-> Defender for Cloud Apps is retiring the external DLP integration starting in July 2023. This means that the external DLP service will no longer be able to used within your *file policy* conditions. We recommend that you start using our [Data Classification Service (DCS)](dcs-inspection.ms) instead. Change your policy engine from the external DLP engine to DCS. This change will trigger a new file scan.
+> Defender for Cloud Apps is retiring the external DLP integration starting in July 2023. This means that the external DLP service will no longer be able to used within your *file policy* conditions. We recommend that you start using our [Data Classification Service (DCS)](dcs-inspection.md) instead. Change your policy engine from the external DLP engine to DCS. This change will trigger a new file scan.
 >
 > To save your current matches, disable your current policy and configure a new one, using DCS instead of the legacy external DLP engine.
 
