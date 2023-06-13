@@ -19,8 +19,6 @@ This guide provides the steps necessary for configuring the ICAP connection in D
 >
 > To save your current matches, disable your current policy and configure a new one, using DCS instead of the legacy external DLP engine.
 
-This article describes the process Defender for Cloud Apps follows when performing DLP content inspection using Microsoft Data Classification Service.
-
 ## Architecture
 
 Defender for Cloud Apps scans your cloud environment and based on your file policy configuration, decides whether to scan the file using the internal DLP engine or the external DLP. If external DLP scan is applied, the file is sent over the secure tunnel to the customer environment where it's relayed to the ICAP appliance for the DLP verdict: allowed/blocked. Responses are sent back to Defender for Cloud Apps over the stunnel where it's used by the policy to determine subsequent actions such as notifications, quarantine, and sharing control.
