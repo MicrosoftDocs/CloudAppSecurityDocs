@@ -646,7 +646,7 @@ Released March 1, 2020
 - **New detection for Workday**  
 We've expanded our current anomalous behavior alerts for Workday. The new alerts include the following user geolocation detections:
   - [Activity from anonymous IP addresses](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
-  - [Activity from infrequent country](anomaly-detection-policy.md#activity-from-infrequent-country)
+  - [Activity from infrequent country/region](anomaly-detection-policy.md#activity-from-infrequent-country)
   - [Activity from suspicious IP addresses](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
   - [Impossible travel](anomaly-detection-policy.md#impossible-travel)
 
@@ -723,7 +723,7 @@ Cloud App Security is extending its IaaS monitoring capabilities beyond Amazon W
 
   - Ability to create custom policies and use predefined templates to alert on risky events.
 
-  - All GCP activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior, such as impossible travel, suspicious mass activities, and activity from a new country.
+  - All GCP activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior, such as impossible travel, suspicious mass activities, and activity from a new country/region.
 
   For more information, see [Connect Google Cloud Platform to Microsoft Cloud App Security](./connect-google-gcp.md).
 
@@ -1040,7 +1040,7 @@ The default file monitoring behavior changed for new and idle customers. You wil
 - **Advanced tuning for anomaly detection policies**  
 You can now affect the anomaly detection engine to suppress or surface alerts according to your preferences.
   - In the Impossible Travel policy, you can set the sensitivity slider to determine the level of anomalous behavior needed before an alert is triggered.
-  - You can also configure whether the alerts for Activity from infrequent country, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or just successful logins.
+  - You can also configure whether the alerts for Activity from infrequent country/region, anonymous IP addresses, suspicious IP addresses, and  impossible travel should analyze both failed and successful logins or just successful logins.
 
 - **Support for multiple trust chains**  
 Conditional Access App Control now supports adding and using multiple trusted root or intermediate certificates as a form of device management.
@@ -1252,7 +1252,7 @@ Microsoft Cloud App Security is extending its IaaS monitoring capabilities beyon
 
   - Ability to create custom policies to alert on unwanted behavior, as well as the ability to automatically protect possible risky users by suspending, or forcing them to sign in again.
 
-  - All Azure activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior in the Azure portal, such as impossible travel, suspicious mass activities, and activity from a new country.  
+  - All Azure activities are covered by our anomaly detection engine and will automatically alert on any suspicious behavior in the Azure portal, such as impossible travel, suspicious mass activities, and activity from a new country/region.  
 
   For more information, see [Connect Azure to Microsoft Cloud App Security](./connect-azure.md).
 
@@ -1472,7 +1472,7 @@ Released July 30, 2017
 
 - Cloud App Security now has enhanced visibility into activities regarding Salesforce objects. Objects include leads, accounts, campaigns, opportunities, profiles, and cases. For example, visibility into access of account pages enables you to configure a policy that alert you if a user views an unusually large number of account pages. This is available through the Salesforce App Connector, when you have enabled Salesforce Event Monitoring in Salesforce (part of Salesforce Shield).
 
-- Do not track is now available for private preview customers! You can now control which users' activity data is processed. This feature enables you to set specific groups in Cloud App Security as "Do not track". For example, you can now decide not to process any activity data for users located in Germany or any country that is not bound by a specific compliance law. This can be implemented across all apps in Cloud App Security, for a specific app, or even for a specific subapp. Additionally, this feature can be used to facilitate gradual roll out of Cloud App Security. For more information or to join the private preview for this feature, contact support or your account representative.
+- Do not track is now available for private preview customers! You can now control which users' activity data is processed. This feature enables you to set specific groups in Cloud App Security as "Do not track". For example, you can now decide not to process any activity data for users located in Germany or any country/region that is not bound by a specific compliance law. This can be implemented across all apps in Cloud App Security, for a specific app, or even for a specific subapp. Additionally, this feature can be used to facilitate gradual roll out of Cloud App Security. For more information or to join the private preview for this feature, contact support or your account representative.
 
 ### Cloud App Security release 100
 
