@@ -77,7 +77,7 @@ Selecting it opens the Activity drawer **User** tab provides the following insig
     - **Open alerts**: The number of open alerts that involved the user.
     - **Matches**: The number of policy matches for files owned by the user.
     - **Activities**: The number of activities performed by the user in the past 30 days.
-    - **Countries**: The number of countries the user connected from in the past 30 days.
+    - **Countries**: The number of countries/regions the user connected from in the past 30 days.
     - **ISPs**: The number of ISPs the user connected from in past 30 days.
     - **IP addresses**: The number of IP addresses the user connected from in past 30 days.
 

@@ -72,7 +72,7 @@ This detection uses a machine learning algorithm that reduces **B-TP** incidents
 
 - Review all user activity and alerts for additional indicators of compromise. For example, if the alert was followed by another suspicious alert, such as a [Unusual file download (by user)](#unusual-file-download-by-user) or a [Suspicious inbox forwarding](#suspicious-inbox-forwarding) alert, that often indicates that an attacker is attempting to exfiltrate data.
 
-### Activity from infrequent country
+### Activity from infrequent country/region
 
 Activity from a country/region that could indicate malicious activity. This policy profiles your environment and triggers alerts when activity is detected from a location that was not recently or was never visited by any user in the organization.
 
