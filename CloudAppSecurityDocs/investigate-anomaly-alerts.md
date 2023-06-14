@@ -423,7 +423,7 @@ This policy is based on learning the normal login behavior of a user. When a dev
 
 **Understand the scope of the breach**
 
-1. Review all user activity for additional indicators of compromise such as the alert is followed by one of the following alerts: [Impossible Travel](#impossible-travel), [Activity from anonymous IP address](#activity-from-anonymous-ip-address), or [Activity from infrequent country](#activity-from-infrequent-country/region).
+1. Review all user activity for additional indicators of compromise such as the alert is followed by one of the following alerts: [Impossible Travel](#impossible-travel), [Activity from anonymous IP address](#activity-from-anonymous-ip-address), or [Activity from infrequent country](#activity-from-infrequent-country).
 1. Review the following user device information and compare with known device information:
     - Operating system and version
     - Browser and version
@@ -658,7 +658,7 @@ Establishing a new user's activity pattern requires an initial learning period o
 **Understand the scope of the breach**
 
 1. Contact the user and confirm the activity.
-1. Review all user activity for additional indicators of compromise such as the alert is followed by one of the following alerts: [Impossible Travel](#impossible-travel), [Activity from anonymous IP address](#activity-from-anonymous-ip-address), or [Activity from infrequent country](#activity-from-infrequent-country/region).
+1. Review all user activity for additional indicators of compromise such as the alert is followed by one of the following alerts: [Impossible Travel](#impossible-travel), [Activity from anonymous IP address](#activity-from-anonymous-ip-address), or [Activity from infrequent country](#activity-from-infrequent-country).
 
 ### Ransomware activity
 
