@@ -122,11 +122,7 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 - Impersonation activities - filters all your activities to display only impersonation activities.
 
-- Mailbox activities - filters all your activities to display only Microsoft Exchange Online activities such as create item, purge messages from mailbox, update message, and send message using Send As permissions (impersonation).
-
 - Password changes and reset requests - filters all your activities to display only those activities that involving password reset, change password, and force user to change password on next sign-in.
-
-- Security risks - filters all your activities to display only those activities that match DLP policies.
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link and granting read/write permissions.
 
@@ -160,3 +156,4 @@ From there you can define the filters as is normally done with the **Activity Lo
 
 > [!div class="nextstepaction"]
 > [Best practices for protecting your organization](best-practices.md)
+

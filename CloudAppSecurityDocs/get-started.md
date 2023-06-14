@@ -26,7 +26,7 @@ This quickstart provides you with steps for getting up and running with Defender
 
 - To run the Defender for Cloud Apps portal, use Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest).
 
-## To access the portal
+## Access the portal
 
  You can access Defender for Cloud Apps through the **[Microsoft 365 Defender portal](https://security.microsoft.com)**, as follows:
 
