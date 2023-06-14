@@ -43,7 +43,7 @@ The following anomaly detection policies are available:
 
 ### Impossible travel
 
-* This detection identifies two user activities (in a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine-learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user's activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities, or activity from cloud providers that don't indicate a physical location. The [sensitivity slider](#tune-anomaly-detection-policies) allows you to affect the algorithm and define how strict the detection logic is. The higher the sensitivity level, fewer activities will be suppressed as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
+* * This detection identifies two user activities (in a single or multiple sessions) originating from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second, indicating that a different user is using the same credentials. This detection uses a machine-learning algorithm that ignores obvious "false positives" contributing to the impossible travel condition, such as VPNs and locations regularly used by other users in the organization. The detection has an initial learning period of seven days during which it learns a new user's activity pattern. The impossible travel detection identifies unusual and impossible user activity between two locations. The activity should be unusual enough to be considered an indicator of compromise and worthy of an alert. To make this work, the detection logic includes different levels of suppression to address scenarios that can trigger false positive, such as VPN activities, or activity from cloud providers that don't indicate a physical location. The [sensitivity slider](#tune-anomaly-detection-policies) allows you to affect the algorithm and define how strict the detection logic is. The higher the sensitivity level, fewer activities will be suppressed as part of the detection logic. In this way, you can adapt the detection according to your coverage needs and your SNR targets.
 
     > [!NOTE]
     >
@@ -56,22 +56,20 @@ The following anomaly detection policies are available:
 
 ### Malware detection
 
-* This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to our heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
+* This detection identifies malicious files in your cloud storage, whether they're from your Microsoft apps or third-party apps. Microsoft Defender for Cloud Apps uses Microsoft's threat intelligence to recognize whether certain files that match risks heuristics such as file type and sharing level are associated with known malware attacks and are potentially malicious. This built-in policy is disabled by default. Files that are found potentially risky according to other heuristics will also be sandbox scanned. After malicious files are detected, you can then see a list of **Infected files**. Select the malware file name in the file drawer to open a malware report that provides you with information about the type of malware the file is infected with.
 
   You can use this detection in real time using session policies to control file uploads and downloads.
 
   Defender for Cloud Apps supports malware detection for the following apps:
 
-  * Box
-  * Dropbox
-  * Google Workspace
-  * Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
+* Box
+* Dropbox
+* Google Workspace
+* Office 365 (requires a valid license for Microsoft Defender for Office 365 P1)
 
-  >[!NOTE]
-  >
-  >Malware detected in Office 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
-  >
-  >In Box, Dropbox, and Google Workspace, Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
+>[!NOTE]
+>Malware detected in Office 365 apps is automatically blocked by the app and the user can't reach the file. Only the app's admin has access.
+>In Box, Dropbox, and Google Workspace, Defender for Cloud Apps doesn't block the file, but blocking may be performed according to the app's capabilities and the app's configuration set by the customer.
 
 ### Activity from anonymous IP addresses
 
@@ -212,3 +210,4 @@ You can triage the various alerts triggered by the new anomaly detection policie
 > [Best practices for protecting your organization](best-practices.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
