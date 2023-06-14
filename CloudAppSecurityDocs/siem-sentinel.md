@@ -36,7 +36,7 @@ The direct Defender for Cloud Apps - Microsoft Sentinel integration is available
 
 However, all Defender for Cloud Apps data is available in Microsoft 365 Defender, and therefore available in Microsoft Sentinel via the Microsoft 365 Defender connector.
 
-We recommend that GCC High and DoD customers who are interested in seeing Defender for Cloud Apps data in Microsoft Sentinel install the Microsoft 365 Defender solution.
+We recommend that GCC, GCC High, and DoD customers who are interested in seeing Defender for Cloud Apps data in Microsoft Sentinel install the Microsoft 365 Defender solution.
 
 For more information, see:
 
