@@ -20,6 +20,20 @@ Microsoft Defender for Cloud Apps delivers full protection for SaaS applications
 
 - **App-to-app protection**, addressing threat scenarios where apps exchange data directly
 
+## Defender for Cloud Apps architecture
+
+The following diagram shows how Defender for Cloud Apps monitors and protects your cloud app data from multiple sources.
+
+:::image type="content" source="media/proxy-architecture.png" alt-text="Diagram of the Defender for Cloud Apps architecture." border="false":::
+
+- Cloud discovery maps and identifies your cloud environment and the cloud apps in use by your organization. Use this data to allow and block apps in your cloud.
+
+- Deploy app connectors using provider APIs for visibility and governance of connected apps.
+
+- Use conditional access app control protection to get real-time visibility and control over access and activities within your cloud apps.
+
+- Gain continuous control by setting and continuously fine-tuning policies.
+
 ## Discover SaaS applications
 
 Defender for Cloud Apps shows the full picture of risks to your environment from SaaS app usage and resources, and gives you control of what’s being used and when. 
@@ -81,21 +95,6 @@ Use compliance reports to assess whether your cloud apps meet relevant complianc
 
 For more information, see [Microsoft Defender for Cloud Apps data security and privacy](cas-compliance-trust.md).
 
-## Defender for Cloud Apps architecture
-
-The following diagram shows how Defender for Cloud Apps monitors and protects your cloud app data from multiple sources.
-
-:::image type="content" source="media/proxy-architecture.png" alt-text="Diagram of the Defender for Cloud Apps architecture." border="false":::
-
-- Cloud discovery maps and identifies your cloud environment and the cloud apps in use by your organization. Use this data to allow and block apps in your cloud.
-
-- Deploy app connectors using provider APIs for visibility and governance of connected apps.
-
-- Use conditional access app control protection to get real-time visibility and control over access and activities within your cloud apps.
-
-- Gain continuous control by setting and continuously fine-tuning policies.
-
-![Defender for Cloud Apps architecture diagram.](media/proxy-architecture.png)
 
 
 ## Next steps
