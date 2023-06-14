@@ -20,6 +20,11 @@ In this tutorial, you'll learn how to use Cloud Discovery to discover which apps
 > - [Advanced Shadow IT discovery reporting](#phase-4-advanced-shadow-it-discovery-reporting)
 > - [Control sanctioned apps](#phase-5-control-sanctioned-apps)
 
+>[!TIP]
+> By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. 
+> 
+> To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity) or [create a custom app](cloud-discovery-custom-apps.md).
+
 ## How to discover and manage Shadow IT in your network
 
 Use this process to roll out Shadow IT Cloud Discovery in your organization.
