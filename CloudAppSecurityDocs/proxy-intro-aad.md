@@ -187,6 +187,7 @@ In the following applications, we've encountered scenarios where navigating to a
   - Microsoft Power Automate
   - Microsoft Power Apps
   - Workplace from Meta
+  - ServiceNow
 
 - **Session policies are valid for files up to 50 MB in size**  
 Files with a size of up to 50MB are subject to session policies.
