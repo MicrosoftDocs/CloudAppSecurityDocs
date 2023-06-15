@@ -20,6 +20,11 @@ In this tutorial, you'll learn how to use Cloud Discovery to discover which apps
 > - [Advanced Shadow IT discovery reporting](#phase-4-advanced-shadow-it-discovery-reporting)
 > - [Control sanctioned apps](#phase-5-control-sanctioned-apps)
 
+>[!TIP]
+> By default, Defender for Cloud Apps cannot discover apps that aren't in the catalog. 
+> 
+> To see Defender for Cloud Apps data for an app that's not currently in the catalog, we recommend that you [check our roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=Microsoft%20Defender%20for%20Identity) or [create a custom app](cloud-discovery-custom-apps.md).
+
 ## How to discover and manage Shadow IT in your network
 
 Use this process to roll out Shadow IT Cloud Discovery in your organization.
@@ -48,7 +53,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 ### Phase 2: Evaluate and analyze
 
-1. **Evaluate compliance**: Check whether the apps are certified as compliant with your organization's standards, such as HIPAA, SOC2, GDPR.
+1. **Evaluate compliance**: Check whether the apps are certified as compliant with your organization's standards, such as HIPAA or SOC2.
 
     - In the [Microsoft 365 Defender portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab. Filter the list of apps discovered in your organization by the compliance risk factors you're concerned about. For example, use the suggested query to filter out non-compliant apps.
 
