@@ -227,7 +227,7 @@ Detect files that are shared in cloud storage apps and contain personally identi
 
 1. On the **Policies** page, create a new **File policy**.
 
-2. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national identification number, EU passport number, EU SSN, SU tax identification number.
+2. Under **Inspection method**, select **Data Classification Service (DCS)**, and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national/regional identification number, EU passport number, EU SSN, SU tax identification number.
 
 3. Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply sensitivity label** for each supported app.
 
