@@ -53,7 +53,7 @@ Use this process to roll out Shadow IT Cloud Discovery in your organization.
 
 ### Phase 2: Evaluate and analyze
 
-1. **Evaluate compliance**: Check whether the apps are certified as compliant with your organization's standards, such as HIPAA, SOC2, GDPR.
+1. **Evaluate compliance**: Check whether the apps are certified as compliant with your organization's standards, such as HIPAA or SOC2.
 
     - In the [Microsoft 365 Defender portal](https://security.microsoft.com/), under **Cloud Apps**, select **Cloud Discovery**. Then go to the **Discovered apps** tab. Filter the list of apps discovered in your organization by the compliance risk factors you're concerned about. For example, use the suggested query to filter out non-compliant apps.
 
