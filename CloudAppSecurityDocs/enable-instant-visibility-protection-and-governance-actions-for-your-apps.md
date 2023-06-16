@@ -79,7 +79,7 @@ The following tables list, per cloud app, which abilities are supported with App
 
 ### User, app governance, and security configuration visibility
 
-|  App                 | User governance                      | View app permissions      | Revoke app permissions    | Security configuration visibility |
+|  App                 | User governance                      | View app permissions      | Revoke app permissions    | SaaS Security Posture |
 | ----------------- | ------------------------------------ | ------------------------- | ------------------------- | ------------------------- |
 | Atlassian         |  |  |  |  |
 | AWS               |                                      | Not applicable            | Not applicable            |             |
