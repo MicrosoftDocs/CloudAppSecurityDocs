@@ -28,9 +28,9 @@ Once traffic information is collected, you're ready to [deep dive into cloud app
 
 - One of the following:
 
-    - Microsoft Defender for Endpoint with Plan 2 
-    - Microsoft Defender for Business with a premium license or Microsoft Defender for Business with a standalone license
-
+    - Microsoft Defender for Endpoint with Plan 2
+    - Microsoft Defender for Business with a premium or standalone license
+    
     For more information, see [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2).
 
 - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
