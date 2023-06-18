@@ -25,13 +25,18 @@ Once traffic information is collected, you're ready to [deep dive into cloud app
 ## Prerequisites
 
 - Microsoft Defender for Cloud Apps license
+
 - One of the following:
 
-    - [Microsoft Defender for Endpoint with Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) 
+    - Microsoft Defender for Endpoint with Plan 2 
+    - Microsoft Defender for Business with a premium license or Microsoft Defender for Business with a standalone license
 
-    - [Microsoft Defender for Business with a premium license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) or [Microsoft Defender for Business with a standalone license](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2)
+    For more information, see [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2).
+
 - Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 and Windows 11 versions
+
 - Enable Microsoft Defender Antivirus:
+
   - **[Real-time protection enabled](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)**
   - **[Cloud-delivered protection enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)**
   - **[Network protection enabled and configured to block mode](/microsoft-365/security/defender-endpoint/enable-network-protection)**
