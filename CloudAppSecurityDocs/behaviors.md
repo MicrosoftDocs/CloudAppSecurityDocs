@@ -53,7 +53,7 @@ Defender for Cloud Apps' transition from *alerts* to *behaviors* eliminates poli
 
 The transition also includes enhancements for supported behavior types and adjustments to policy-generated alerrts for optimal accuracy.
 
->![NOTE]
+> ![NOTE]
 > The scheduling of the last phase is undetermined. Customers will be notified of any changes through notifications in the Message Center. 
 
 For more information, see our [TechCommunity blog](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/transform-the-way-you-investigate-by-using-behaviors-amp-new/ba-p/3825154).
