@@ -310,7 +310,7 @@ items:
       href: proxy-idp-adfs.md
     - name: Configuring your Okta IdP
       href: proxy-idp-okta.md
-  - name: Investigation
+  - name: Investigation and response
     href: investigate.md
     items:
     - name: Behaviors
