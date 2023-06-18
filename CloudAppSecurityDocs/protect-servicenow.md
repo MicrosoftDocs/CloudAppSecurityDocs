@@ -13,6 +13,9 @@ As a major CRM cloud provider, ServiceNow incorporates large amounts of sensitiv
 
 Connecting ServiceNow to Defender for Cloud Apps gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections, and information protection detections such as identifying when sensitive customer information is uploaded to the ServiceNow cloud.
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
+
 ## Main threats
 
 - Compromised accounts and insider threats

@@ -12,6 +12,9 @@ As an identity and access management solution, Okta holds the keys to your organ
 
 Connecting Okta to Defender for Cloud Apps gives you improved insights into your Okta admin activities, managed users, and customer sign-ins and provides threat detection for anomalous behavior.
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
+
 ## Main threats
 
 - Compromised accounts and insider threats
