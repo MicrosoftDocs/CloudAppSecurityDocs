@@ -10,6 +10,8 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft  Defender for Cloud Apps to your existing Salesforce account using the app connector API. This connection gives you visibility into and control over Salesforce use. For information about how Defender for Cloud Apps protects Salesforce, see [Protect Salesforce](protect-salesforce.md).
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
 ## How to connect Salesforce to Defender for Cloud Apps
 
 > [!NOTE]

@@ -11,6 +11,9 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing GitHub Enterprise Cloud organization using the App Connector APIs. This connection gives you visibility into and control over your organization's GitHub Enterprise Cloud use. For more information about how Defender for Cloud Apps protects GitHub Enterprise Cloud, see [Protect GitHub Enterprise](protect-github.md).
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
+
 ## Prerequisites
 
 - Your organization must have a GitHub Enterprise Cloud license.

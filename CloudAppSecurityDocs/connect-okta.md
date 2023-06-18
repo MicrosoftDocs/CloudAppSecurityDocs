@@ -10,6 +10,9 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Okta account using the connector APIs. This connection gives you visibility into and control over Okta use. For information about how Defender for Cloud Apps protects Okta, see [Protect Okta](protect-okta.md).
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
+
 ## How to connect Okta to Defender for Cloud Apps
 
 1. It's recommended that you create an admin Service Account in Okta for Defender for Cloud Apps.
