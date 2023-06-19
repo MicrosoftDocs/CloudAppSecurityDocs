@@ -54,6 +54,10 @@ Here is an example of the request.
 curl -XGET -H "Authorization:Token <your_token_key>" "https://<tenant_id>.<tenant_region>.contoso.com/api/discovery_block_scripts/?format=102&type=banned"
 ```
 
+> [!NOTE]
+> This API supports both `token` and `bearer` options. When using the `token` option, enter the token you generated in the **API Token** tab.
+> When using the `bearer` option, provide the token you generated through Azure AD Graph.
+
 ### Response example
 
 ```text
