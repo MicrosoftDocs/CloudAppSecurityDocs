@@ -57,7 +57,7 @@ Follow this procedure to customize the certificate files you use for secure conn
     | Receiver type | Required files |
     | --- | --- |
     | **FTP** |- **pure-ftpd.pem**: Includes the key and certificate data |
-    | **Syslog** |- **ca.pem**: Defines the certificate authority for the client certificate<br><br> **server-key.pem** and **server-cert.pem**: The collectors certificate and key |
+    | **Syslog** |- **ca.pem**: The certificate authority's certificate that was used to sign the client’s certificate. <br>- **server-key.pem** and **server-cert.pem**: The log collector's certificate and key <br><br>Syslog messages are sent over TLS to the log collector, which requires mutual TLS authentication, including authenticating both the client and server certificates. |
 
     If any of the files are missing, the update won't take place.
 
