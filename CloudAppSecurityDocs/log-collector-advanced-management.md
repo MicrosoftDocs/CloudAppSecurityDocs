@@ -52,8 +52,14 @@ Follow this procedure to customize the certificate files you use for secure conn
 
     ![Upload certificate files.](media/log-collector-advanced-tasks/new-certs.png)
 
-    - **For FTP:** Only one file is required. The file has the key and certificate data, in that order, and is named **pure-ftpd.pem**.
-    - **For Syslog:** Three files are required: **ca.pem**, **server-key.pem**, and **server-cert.pem**. If any of the files are missing, the update won't take place.
+    The following files are required:
+
+    | Receiver type | Required files |
+    | --- | --- |
+    | **FTP** |- **pure-ftpd.pem**: Includes the key and certificate data |
+    | **Syslog** |- **ca.pem**: The certificate authority's certificate that was used to sign the client’s certificate. <br>- **server-key.pem** and **server-cert.pem**: The log collector's certificate and key <br><br>Syslog messages are sent over TLS to the log collector, which requires mutual TLS authentication, including authenticating both the client and server certificates. |
+
+    If any of the files are missing, the update won't take place.
 
 1. In a terminal window run: `docker exec -t <collector name> update_certs`. The command should produce a similar output to what's seen in the following screenshot.
 

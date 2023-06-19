@@ -8,7 +8,7 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-Microsoft Defender for Cloud Apps gives you visibility into all the activities from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps scans all the activities that happened - the retroactive scan time period differs per app - and then it's updated constantly with new activities.
+Microsoft Defender for Cloud Apps gives you visibility into all the activities from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps scans all the activities that happened - the retroactive scan period differs per app - and then it's updated constantly with new activities.
 
 > [!NOTE]
 > For a full list of Office 365 activities monitored by Defender for Cloud Apps, see [Search the audit log in the compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#audited-activities).
@@ -20,11 +20,11 @@ After you connect an app to Defender for Cloud Apps in the **Activity log** page
 
 ![Activity outdated browser example.](media/activity-example-outdated.png)
 
-The basic filter provides you with great tools to get started filtering your activities.
+The basic filter provides great tools to start filtering your activities.
 
 ![basic activity log filter.](media/activity-log-filter-basic.png)
 
-To drill down into more specific activities, you can expand the basic filter by selecting **Advanced filters**.
+You can expand the basic filter by selecting **Advanced filters**to drill down into more specific activities.
 
 ![advanced activity log filter.](media/activity-log-filter-advanced.png)
 
@@ -45,19 +45,19 @@ You can view more information about each activity, by selecting the Activity its
 
 - Device type: Select **Device type** to view the raw user agent data.
 
-- Location: Select the location to view the location in Bing maps.
+- Location: Select the location to view the location in Bing Maps.
 
 - IP address category and tags: Select the IP tag to view the list of IP tags found in this activity. You can then filter by all activities matching this tag.
 
-The fields in the Activity drawer provide contextual links to additional activities and drill downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the**add to filter** icon ![add to filter.](media/add-to-filter-icon.png) to add the IP address immediately to the filter of the current page. You can also use the settings cog icon ![settings icon.](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
+The fields in the Activity drawer provide contextual links to additional activities and drill-downs you may want to perform from the drawer directly. For example, if you move your cursor next to the IP address category, you can use the **add to filter** icon ![add to filter.](media/add-to-filter-icon.png) to immediately add the IP address to the current page's filter. You can also use the settings cog icon ![settings icon](media/contextual-settings-icon.png) that pops up to arrive directly at the settings page necessary to modify the configuration of one of the fields, such as **User groups**.
 
 You can also use the icons at the top of the tab to:
 
 - View activities of the same type
 - View all activities of the same user
 - View activities from the same IP address
-- View activities from the same geographic location
-- View activities from the same time period (48 hours)
+- View activities from the exact geographic location
+- View activities from the same period (48 hours)
 
 ![activity drawer.](media/activity-drawer.png "activity drawer")
 
@@ -65,7 +65,7 @@ For a list of governance actions available, see [Activity governance actions](go
 
 #### User insights
 
-The investigation experience includes insights about the acting user. With a single click, you can get a comprehensive overview of the user including which location they connected from, how many open alerts are they're involved with and their metadata information.
+The investigation experience includes insights about the acting user. With a single click, you can get a comprehensive overview of the user, including which location they connected from, how many open alerts they're involved with, and their metadata information.
 
 To view user insights:
 
@@ -73,18 +73,18 @@ To view user insights:
 
 2. Then select the **User** tab.  
 Selecting it opens the Activity drawer **User** tab provides the following insights about the user:
-    - **Open alerts**: The number of open alerts that involved the user.
+    - **Open alerts**: The number of open alerts that involve the user.
     - **Matches**: The number of policy matches for files owned by the user.
     - **Activities**: The number of activities performed by the user in the past 30 days.
     - **Countries**: The number of countries the user connected from in the past 30 days.
-    - **ISPs**: The number of ISPs the user connected from in past 30 days.
-    - **IP addresses**: The number of IP addresses the user connected from in past 30 days.
+    - **ISPs**: The number of ISPs the user connected from in the past 30 days.
+    - **IP addresses**: The number of IP addresses the user connected from in the past 30 days.
 
 ![user insights in Defender for Cloud Apps.](media/user-insights.png)
 
 #### IP address insights
 
-Because IP address information is crucial for almost all investigations, you can view detailed information about IP addresses in the Activity drawer. From within a specific activity, you can select the IP address tab to view consolidated data about the IP address including the number of open alerts for the specific IP address, a trend graph of recent activity, and a location map. This enables easy drill down when investigating impossible travel alerts for example. You can easily understand where the IP address was used and if it was involved in suspicious activities or not. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN, or corporate to ease future investigation and policy creation.
+Because IP address information is crucial for almost all investigations, you can view detailed information about IP addresses in the Activity drawer. From within a specific activity, you can select the IP address tab to view consolidated data about the IP address, including the number of open alerts for the particular IP address, a trend graph of recent activity, and a location map. This enables easy to drill down when investigating impossible travel alerts, for example. In addition, you can easily understand where the IP address was used and whether it was involved in suspicious activities. You can also perform actions directly in the IP address drawer that enable you to tag an IP address as risky, VPN, or corporate to ease future investigation and policy creation.
 
 To view IP address insights:
 
@@ -94,9 +94,9 @@ To view IP address insights:
 This opens the Activity drawer **IP address** tab, which provides the following insights about the IP address:
     - **Open alerts**: The number of open alerts that involved the IP address.
     - **Activities**: The number of activities performed by the IP address in the past 30 days.
-    - **IP location**: The geographic locations from which the IP address connected from in the past 30 days.
-    - **Activities**: The number of activities performed from this IP address in past 30 days.
-    - **Admin activities**: The number of administrative activities performed from this IP address in past 30 days.
+    - **IP location**: The geographic locations from which the IP address connected in the past 30 days.
+    - **Activities**: The number of activities performed from this IP address in the past 30 days.
+    - **Admin activities**: The number of administrative activities performed from this IP address in the past 30 days.
     - You can perform the following IP address actions:
         - Set as a Corporate IP and add to allowlist
         - Set as a VPN IP address and add to allowlist
@@ -111,7 +111,7 @@ This opens the Activity drawer **IP address** tab, which provides the following 
 
 You can export all user activities to a CSV file.
 
-In the **Activity log**, in the top-left corner, select the **Export** button.
+In the **Activity log**, select the **Export** button in the top-left corner.
 
 ![export button.](media/export-button.png)
 
