@@ -10,7 +10,7 @@ ms.topic: how-to
 
 If you work with both Microsoft Defender for Cloud Apps and [Zscaler](https://www.zscaler.com/), integrate the two to enhance your cloud discovery experience. Zscaler, as a standalone cloud proxy, monitors your organization's traffic and enables you set policies for blocking transactions. Together, Defender for Cloud Apps and Zscaler provide the following capabilities:
 
-- **Seamless cloud discovery**: Uze Zscaler to proxy your traffic and send it to Defender for Cloud Apps. Integrating the two services means that you don't need to install log collectors on your network endpoints to enable cloud discovery.
+- **Seamless cloud discovery**: Use Zscaler to proxy your traffic and send it to Defender for Cloud Apps. Integrating the two services means that you don't need to install log collectors on your network endpoints to enable cloud discovery.
 - **Automatic blocking**: After configuring the integration, Zscaler's block capabilities are automatically applied on any apps you set as *unsanctioned* in Defender for Cloud Apps.
 - **Enhanced Zscalar data**: Enhance your Zscaler portal with the Defender for Cloud Apps risk assessment for leading cloud apps, which can be viewed directly in the Zscaler portal.
 
@@ -34,7 +34,7 @@ If you work with both Microsoft Defender for Cloud Apps and [Zscaler](https://ww
 
         For example:
 
-       ![Screenshot of adding the Zscaler data source.](media/data-source-zscaler.png)
+      [ ![Screenshot of adding the Zscaler data source.](media/data-source-zscaler.png)](media/data-source-zscaler.png#lightbox)
 
         > [!NOTE]
         > Make sure the name of the data source is **NSS.** For more information about setting up NSS feeds, see [Adding Defender for Cloud Apps NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
