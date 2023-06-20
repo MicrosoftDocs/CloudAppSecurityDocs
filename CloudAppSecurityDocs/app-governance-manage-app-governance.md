@@ -9,7 +9,9 @@ description: Implement Microsoft app governance capabilities over Microsoft Defe
 
 Cyber attacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructure, establishing a starting point for privilege escalation, lateral movement, and data exfiltration.
 
-To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture. You need to be able to quickly identify when an app exhibits anomalous behaviors and respond when these behaviors present risks to your environment, data, and users.
+To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture. You need to be able to quickly identify when an app exhibits anomalous behaviors and respond when these behaviors present risks to your environment, data, and users. <br><br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4S7sp]
 
 ## App governance features
 

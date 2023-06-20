@@ -11,6 +11,9 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing DocuSign environment using the App Connector APIs. This connection gives you visibility into and control over your organization’s DocuSign use.
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
+
 ## Prerequisites
 
 - DocuSign Enterprise Pro account plan with Monitor API enabled.

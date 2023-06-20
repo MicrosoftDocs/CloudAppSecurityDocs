@@ -12,6 +12,9 @@ DocuSign helps organizations manage electronic agreements, and so your DocuSign 
 
 Connecting your DocuSign environment to Defender for Cloud Apps gives you improved insights into your DocuSign admin activities and managed users sign-ins, and provides threat detection for anomalous behavior.
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
+
 ## Main threats
 
 - Compromised accounts and insider threats

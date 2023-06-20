@@ -13,6 +13,8 @@ As a major CRM cloud provider, Salesforce incorporates large amounts of sensitiv
 
 Connecting Salesforce to Defender for Cloud Apps gives you improved insights into your users' activities, provides threat detection using machine learning based anomaly detections and information protection detections (such as detecting external information sharing), enables automated remediation controls, and detects threats from enabled third-party apps in your organization.
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
 ## Main threats
 
 - Compromised accounts and insider threats

@@ -10,6 +10,8 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing Citrix ShareFile account using the App Connector APIs. This connection gives you visibility into and control over Citrix ShareFile use.
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
 ## Prerequisites
 
 The Citrix Share file user used for logging into Citrix Share file must have Access Company account permissions.
