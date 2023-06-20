@@ -18,7 +18,7 @@ Microsoft Defender for Cloud Apps integrates with Azure Active Directory Identit
 ## Enable Identity Protection
 
 > [!NOTE]
-> The Identity Protection feature is enabled by default. However, if the feature was disabled, you can use these steps to enable it.
+> The Identity Protection feature is enabled by default. However, if the feature is disabled, you can use these steps to enable it.
 
 To enable Defender for Cloud Apps integration with Identity Protection:
 
@@ -46,22 +46,22 @@ To disable Defender for Cloud Apps integration with Identity Protection:
 
 > [!NOTE]
 >
-> - When the integration is disabled, existing Identity Protection alerts are kept in accordance with Defender for Cloud Apps retention policies.
+> - When the integration is disabled, existing Identity Protection alerts are kept per Defender for Cloud Apps retention policies.
 > - Since Defender for Cloud Apps only consumes interactive logins from Azure AD, some alerts may not show related activities. You can investigate such activities in the Azure AD portal.
 
 ## Configure Identity Protection Policies
 
-The Identity Protection policies can be fine-tuned to your organization's need using the severity slider. The sensitivity slider allows you to control which alerts are ingested. In this way, you can adapt the detection according to your coverage needs and your (SNR) targets.
+The severity slider can fine-tune the Identity Protection policies to your organization's needs. In addition, the sensitivity slider allows you to control which alerts are ingested. This way, you can adapt the detection according to your coverage needs and your (SNR) targets.
 
 The following policies are available:
 
 |Policy|Description|Default state|Default Severity|
 |---|---|---|---|
-|Leaked Credentials|Shows leaked credentials alerts, user's valid credentials have been leaked|Enabled|Low - Receive all alerts|
-|Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that weren't performed by the user|Enabled|High - Receive only high severity alerts|
+|Leaked Credentials|Shows leaked credentials alerts; user's valid credentials have been leaked|Enabled|Low - Receive all alerts|
+|Risky sign-in|Aggregates multiple risky sign-in detections, sign-ins that the user didn't perform |Enabled|High - Receive only high severity alerts|
 
 > [!NOTE]
-> Defender for Cloud Apps does not send email notifications for Identity Protection alerts. However, you can configure email notifications for them in the Identity Protection portal.
+> Defender for Cloud Apps does not send email notifications for Identity Protection alerts. However, you can configure their email notifications in the Identity Protection portal.
 
 ## Next steps
 

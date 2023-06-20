@@ -1,10 +1,9 @@
 ---
-title: Activity filters and queries
+title: Working with Defender for Cloud Apps activity filters and queries
 description: This article provides a list of Defender for Cloud Apps activity filters and queries and explains how to work with them.
-ms.date: 02/12/2023
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
-
 # Activity filters and queries
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
@@ -13,26 +12,24 @@ This article provides descriptions and instructions for Defender for Cloud Apps 
 
 ## Activity filters
 
-Below is a list of the activity filters that can be applied. Most filters support multiple values as well as *NOT* to provide you with a powerful tool for policy creation.
+Below is a list of the activity filters that can be applied. Most filters support multiple values as well as NOT to provide you with a powerful tool for policy creation.
 
 - Activity ID - Search only for specific activities by their ID. This filter is useful when you connect Microsoft Defender for Cloud Apps to your SIEM (using the SIEM agent) and you want to further investigate alerts within the Defender for Cloud Apps portal.
 
 - Activity objects – Search for the objects the activity was done on. This filter applies to files, folders, users, or app objects.
-    - Activity object ID - the ID of the object (file, folder, user, or app ID).
-
-    - Item - Enables you to search by the name or ID of any activity object (for example, user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether to filter for items that **Contain**, **Equal**, or **Starts with** the specific item.
-
-- Action type - Search for a more specific action performed in an app.
+  - Activity object ID - the ID of the object (file, folder, user, or app ID).
+  <!-- - File, folder, or site URL - This enables you to select files, folders, and URLs that start with a specific string.-->
+  <!-- - Target object (file/folder) - Enables you to select a specific file or folder. -->
+  - Item - Enables you to search by the name or ID of any activity object (for example, user names, files, parameters, sites). For the **Activity object Item** filter, you can select whether to filter for items that **Contain**, **Equal**, or **Starts with** the specific item.
 
 - Activity type - Search for the app activity.
 
-  > [!NOTE]
-  > Apps are added to the filter only if there is activity for that app.
+- Activity type - Search for a more specific action in an app.
 
 - Administrative activity – Search only for administrative activities.
 
   >[!NOTE]
-  > Defender for Cloud Apps can't mark Google Cloud Platform (GCP) administrative activities as administrative activities.
+  >Defender for Cloud Apps can't mark Google Cloud Platform (GCP) administrative activities as administrative activities.
 
 - Alert ID - Search by alert ID.
 
@@ -41,6 +38,8 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 - Applied action - Search by governance action applied: Blocked, Bypass proxy, Decrypted, Encrypted, Encryption failed, No action.
 
 - Date – The date when the activity occurred. Filter supports before/after dates and a date range.
+
+<!--- Description – Specific keyword in the activity description, for example, all activities with the string **user** in their description.  -->
 
 - Device tag - Search by **Intune compliant**, **Hybrid Azure AD joined** or **Valid client certificate**.
 
@@ -53,7 +52,7 @@ Below is a list of the activity filters that can be applied. Most filters suppor
 
 - IP address – The raw IP address, category, or tag from which the activity was performed.
   - Raw IP address - Enables you to search for activities that were performed on or by raw IP addresses. The raw IPs can equal, don't equal, start with, or don't start with a particular sequence.
-  - IP category - The category of the IP address from which the activity was performed, for example, all activities from the administrative IP address range. The categories need to be configured to include the relevant IP addresses. Some IPs may be categorized by default. for example, there are IP addresses that are considered by Microsoft threat intelligence sources will be categorized as risky. To learn how to configure the IP categories, see [Organize the data according to your needs](ip-tags.md).
+  - IP category - The category of the IP address from which the activity was performed, for example, all activities from the administrative IP address range. The categories need to be configured to include the relevant IP addresses, except for the "Risky" type, which is pre-configured and includes two IP tags - Anonymous proxy and Tor. To learn how to configure the IP categories, see [Organize the data according to your needs](ip-tags.md).
   - IP tag - The tag of the IP address from which the activity was performed, for example, all activities from anonymous proxy IP addresses. Defender for Cloud Apps creates a set of built-in IP tags that aren't configurable. Additionally, you can configure your IP tags. For more information about configuring your IP tags, see [Organize the data according to your needs](ip-tags.md).
   The built-in IP tags include the following:
     - Microsoft apps (14 of them)
@@ -91,9 +90,16 @@ Below is a list of the activity filters that can be applied. Most filters suppor
     - Actor only - meaning that the user or user group performed the activity.
     - Any role - Meaning that the user or user group was involved in the activity, either as the person who performed the activity or as the object of the activity.
 
-- User agent – The user agent of from with the activity was performed.
+- User-agent – The user agent of from with the activity was performed.
 
-- User agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
+- User-agent tag – Built-in user agent tag, for example, all activities from outdated operating systems or outdated browsers.
+
+>[!NOTE]
+>Defender for Cloud Apps considers *outdated* as two major versions older than the current version. For example, if the current version of Edge is 90, then version 88 and earlier are outdated.
+
+<!--
+>[!NOTE]
+> If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon.](media/clear-filters.png). -->
 
 ## Activity queries
 
@@ -101,15 +107,13 @@ To make investigation even simpler, you can now create custom queries and save t
 
 1. In the **Activity log** page, use the filters as described above to drill down into your apps as necessary.
 
-  :::image type="content" source="media/activity-log-query.png" alt-text="Use filters to make query.":::
+2. After you've finished building your query, select the **Save as** button in the top-right corner of the filters.
 
-1. After you've finished building your query, select the **Save as** button.
-
-1. In the **Save query** pop-up, name your query.
+3. In the **Save query** pop-up, name your query.
 
    ![new query.](media/new-activity-query.png)
 
-1. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
+4. To use this query again in the future, under **Queries**, scroll down to **Saved queries** and select your query.
 
    ![open query.](media/select-activity-query.png)
 
@@ -125,7 +129,11 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 - Impersonation activities - filters all your activities to display only impersonation activities.
 
+- Mailbox activities - filters all your activities to display only Microsoft Exchange Online activities such as creating items, purging mailbox messages, updating messages, and sending messages using Send As permissions (impersonation).
+
 - Password changes and reset requests - filters all your activities to display only those activities that involve password reset, change password, and force a user to change the password on the next sign-in.
+
+- Security risks - filters all your activities to display only those activities that match DLP policies.
 
 - Sharing activities - filters all your activities to display only those activities that involve sharing folders and files, including creating a company link, creating an anonymous link, and granting read/write permissions.
 
@@ -135,28 +143,7 @@ Defender for Cloud Apps also provides you with **Suggested queries**. Suggested 
 
 Additionally, you can use the suggested queries as a starting point for a new query. First, select one of the suggested queries. Then, make changes as needed and finally select **Save as** to create a new **Saved query**.
 
-### Query activities six months back
-
-To investigate activities older than 30 days, you can navigate to the **Activity log** and select **Investigate 6 months back** in the top right-hand corner of the screen:
-
-![Select investigate 6 months back.](media/investigate-six-months-back.png)
-
-From there you can define the filters as is normally done with the **Activity Log**, but with two differences:
-
-1. The date filter is mandatory and is limited to a one week span.
-1. In addition, the following filers will be supported:
-    - Activity ID
-    - Activity type
-    - Action type
-    - Application
-    - IP address
-    - Location
-    - User name
-
-![Filter after selecting investigate 6 months back.](media/filter-six-months-back.png)
-
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Best practices for protecting your organization](best-practices.md)
-
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)

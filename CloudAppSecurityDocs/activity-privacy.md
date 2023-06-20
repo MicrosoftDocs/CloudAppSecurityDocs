@@ -1,7 +1,7 @@
 ---
 title: Activity privacy
 description: This article provides information about how to configure your activity monitoring to comply with your user privacy policy.
-ms.date: 01/29/2023
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Activity privacy
@@ -9,9 +9,6 @@ ms.topic: how-to
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Microsoft Defender for Cloud Apps allows enterprises to granularly determine which users they want to monitor based on group membership. Activity privacy will enable you to follow your organization's compliance regulations without compromising user privacy. This is achieved by allowing you to monitor users while maintaining their privacy by hiding their activities in the activity log. Only authorized admins can choose to view these private activities, with each instance being audited in the governance log.
-
->[!NOTE]
-> Private activities aren't forwarded to Microsoft 365 Defender advanced hunting, and aren't passed on in our SIEM integration.
 
 ## Configure activity privacy user groups
 
@@ -23,11 +20,14 @@ To configure your user privacy groups, you must first [import user groups](user-
 
 - **External users** group - All users who aren't members of any managed domains you configured for your organization.
 
-1. In the Microsoft 365 Defender portal, select **Settings**. Then choose **Cloud Apps**. Under **System**, select **Scoped deployment and privacy**.
+1. In the menu bar, click the settings cog and select **Scoped deployment and privacy**.
 
-1. To set specific groups to be monitored by Defender for Cloud Apps, in the **Activity privacy** tab, select **+Add group**.
+    ![settings icon.](media/settings-icon.png)
 
-1. In the **Add user groups** dialog, under **Select user groups**, select all the groups you want to make private in Defender for Cloud Apps, then select **Add**.
+1. To set specific groups to be monitored by Defender for Cloud Apps, click the plus icon in the **Activity privacy** tab.
+    ![icon.](media/plus-icon.png)
+
+1. In the **Add user groups** dialog, under **Select user groups**, select all the groups you want to make private in Defender for Cloud Apps, then click **Add**.
 
     ![Screenshot showing the add user groups dialog box.](media/activity-privacy-add-user-groups.png)
 
@@ -36,14 +36,14 @@ To configure your user privacy groups, you must first [import user groups](user-
 
 ## Assign admins permission to view private activities
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, select **Permissions**.
-1. Under **Cloud Apps**, choose **Activity Privacy Permissions**.
+1. In the menu bar, click the settings cog and select **Manage admin access**.
 
-    :::image type="content" source="media/activity-privacy-permissions.png" alt-text="Configure Activity Privacy Permissions.":::
+    ![settings icon.](media/settings-icon.png)
 
-1. To give specific admins permission to view private activities, in the **Activity privacy permissions** tab, select **+Add user**.
+1. To give specific admins permission to view private activities, in the **Activity privacy permissions** tab, click the plus icon.
+    ![icon.](media/plus-icon.png)
 
-1. In the **Add admin permission** dialog, enter the admin's UPN or email address and select **Add permission**.
+1. In the **Add admin permission** dialog, enter the admin's UPN or email address and click **Add permission**.
 
     ![Screenshot showing the add admin permission dialog box.](media/activity-privacy-add-admin-permission.png)
 
@@ -56,14 +56,10 @@ Once an admin has been granted the appropriate permission to view private activi
 
 ### To view private activities
 
-1. In the **Activity log** page, to the right of the activity table, select **Table settings**, and then select **Show private activities**.
+1. In the **Activity log** page, click the settings icon to the right of the activity table, and then select **Show private activities**.
 
     ![Screenshot showing the activity log settings icon.](media/activity-privacy-view-settings-icon.png)
 
-1. In the **Show private activities** dialog, select **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log, and the action is recorded in the governance log.
-
-> [!TIP]
-> When you export activities with the **Show private activities** option selected, the activities inside the export are still private, and no activity details are exposed.
-> 
+1. In the **Show private activities** dialog, click **OK** to confirm that you understand that the action is being audited. Once confirmed, the private activities are shown in the activity log, and the action is recorded in the governance log.
 
 [!INCLUDE [Open support ticket](includes/support.md)]

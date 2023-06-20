@@ -1,7 +1,7 @@
 ---
-title: Accounts 
+title: Visibility into cloud app accounts 
 description: This article provides information about reviewing accounts from your connected apps.
-ms.date: 01/29/2023
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Accounts
@@ -10,11 +10,11 @@ ms.topic: how-to
 
 Microsoft Defender for Cloud Apps gives you visibility into the accounts from your connected apps. After you connect Defender for Cloud Apps to an app using the App connector, Defender for Cloud Apps reads account information associated with connected apps. The Accounts page enables you to investigate those accounts, permissions, the groups they're members of, their aliases, and the apps they're using. Additionally, when Defender for Cloud Apps detects a new account that wasn't previously seen in one of the connected apps - for example, in activities or file sharing - the account is added to the accounts list of that app. This enables you to have visibility into the activity of external users interacting with your cloud apps.
 
-Admins can search for a specific user's metadata or user's activity. The **Identities** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
+Admins can search for a specific user's metadata or user's activity. The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. It also provides the user's activity history and security alerts related to the user.
 
-The **Identities** page can be [filtered](#identities-filters) to enable you to find specific accounts and to deep dive into different types of accounts, for example, you can filter for all External accounts that haven't been accessed since last year.
+The **Users and accounts** page can be [filtered](#users-and-accounts-filters) to enable you to find specific accounts and to deep dive into different types of accounts; for example, you can filter for all External accounts that haven't been accessed since last year.
 
-The **Identities** page enables you to easily investigate your accounts, including the following issues:
+The **Users and accounts** page enables you to easily investigate your accounts, including the following issues:
 
 * Check if any accounts have been inactive in a particular service for a long time (Maybe you should revoke the license for that user to that service)
 
@@ -26,15 +26,17 @@ The **Identities** page enables you to easily investigate your accounts, includi
 
     ![accounts screen.](media/accounts-page.png)
 
-## Identities filters
+## Users and accounts filters
 
-Following is a list of the account filters that can be applied. Most filters support multiple values as well as NOT, in order to provide you with a powerful tool for policy creation.  
+Following is a list of the account filters that can be applied. Most filters support multiple values as well as NOT in order to provide you with a powerful tool for policy creation.  
+  
+<!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory), such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. If the account has admin permissions the icon in the Accounts table appears with the addition of the red tie:
+* **Affiliation**: The affiliation is either **Internal** or **External**. To set which users and accounts are internal, under **Settings** make sure to set the **IP address range** of your internal organization. If the account has admin permissions, the icon in the Accounts table appears with the addition of the red tie:
 
     ![accounts admin icon.](media/accounts-admin-icon.png)
 
-* **App**: You can filter for any API connected app being used by accounts in your organization.
+* **App**: You can filter for any API-connected app being used by accounts in your organization.
 * **Domain**: This enables you to filter for users in specific domains.
 * **Groups**: Enables you to filter for members of user groups in Defender for Cloud Apps - both built-in user groups and imported user groups.
 * **Instance**: This enables you to filter for members of a specific app instance.
@@ -53,11 +55,17 @@ For example, if you identify a user that is compromised, you can apply the **Con
 
 ### To manually apply a user or account governance action
 
-From the **Users and account** page, on the row where the relevant user or account appears, choose the three dots at the end of the row, then select **Confirm user compromised**.
+You can manually apply the **Confirm user compromised** action using one of the following methods:
+
+* From the **Users and account** page, on the row where the relevant user or account appears, choose the three dots at the end of the row, then select **Confirm user compromised**.
+
+* From the **User page**, select **User actions**, and then choose **Confirm user compromised**.
+
+* **User name**: Enables you to filter specific users.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Best practices for protecting your organization](best-practices.md)
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

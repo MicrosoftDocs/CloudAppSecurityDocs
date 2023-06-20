@@ -1,7 +1,7 @@
 ---
-title: Activities 
+title: Visibility into cloud app activities 
 description: This article provides a list of activities, filters, and match parameters that can be applied to activity policies.
-ms.date: 01/29/2023
+ms.date: 11/09/2021
 ms.topic: how-to
 ---
 # Activities
@@ -24,7 +24,7 @@ The basic filter provides great tools to start filtering your activities.
 
 ![basic activity log filter.](media/activity-log-filter-basic.png)
 
-You can expand the basic filter by selecting **Advanced filters**to drill down into more specific activities.
+You can expand the basic filter by selecting **Advanced**to drill down into more specific activities.
 
 ![advanced activity log filter.](media/activity-log-filter-advanced.png)
 
@@ -111,7 +111,7 @@ This opens the Activity drawer **IP address** tab, which provides the following 
 
 You can export all user activities to a CSV file.
 
-In the **Activity log**, select the **Export** button in the top-left corner.
+In the **Activity log**, select the **Export** button in the top-right corner.
 
 ![export button.](media/export-button.png)
 
@@ -120,6 +120,6 @@ In the **Activity log**, select the **Export** button in the top-left corner.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Best practices for protecting your organization](best-practices.md)
+> [Daily activities to protect your cloud environment](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
