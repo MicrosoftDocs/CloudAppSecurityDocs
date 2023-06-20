@@ -36,8 +36,8 @@ If you work with both Microsoft Defender for Cloud Apps and [Zscaler](https://ww
 
       [ ![Screenshot of adding the Zscaler data source.](media/data-source-zscaler.png)](media/data-source-zscaler.png#lightbox)
 
-       > [!NOTE]
-       > Make sure the name of the data source is **NSS.** For more information about setting up NSS feeds, see [Adding Defender for Cloud Apps NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
+    > [!NOTE]
+    > Make sure the name of the data source is **NSS.** For more information about setting up NSS feeds, see [Adding Defender for Cloud Apps NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
     1. To view a sample discovery log, select **View sample of expected log file** > **Download sample log**. Make sure that the downloaded sample log matches your log files.
 
