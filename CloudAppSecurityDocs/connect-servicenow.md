@@ -10,12 +10,45 @@ ms.topic: how-to
 
 This article provides instructions for connecting Microsoft Defender for Cloud Apps to your existing ServiceNow account using the app connector API. This connection gives you visibility into and control over ServiceNow use. For information about how Defender for Cloud Apps protects ServiceNow, see [Protect ServiceNow](protect-servicenow.md).
 
-> [!NOTE]
-> We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases (see the relevant [ServiceNow documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
-> For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password. The username/password provided are only used for API token generation and are not saved after the initial connection process.
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
 
-> [!NOTE]
-> Defender for Cloud Apps supports the following ServiceNow versions: Eureka, Fiji, Geneva, Helsinki, Istanbul, Jakarta, Kingston, London, Madrid, New York, Orlando, Paris, Quebec, Rome, San Diego, and Tokyo. In order to connect ServiceNow with Defender for Cloud Apps, you must have the role **Admin** and make sure the ServiceNow instance supports API access. For more information, see the [ServiceNow product documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
+## Prerequisites
+
+Defender for Cloud Apps supports the following ServiceNow versions:
+
+:::row:::
+    :::column:::
+        - Eureka
+        - Fiji
+        - Geneva
+        - Helsinki
+        - Istanbul
+        - Jakarta
+        - Kingston
+        - London        
+    :::column-end:::
+    :::column:::
+        - Madrid
+        - New York
+        - Orlando
+        - Paris
+        - Quebec
+        - Rome
+        - San Diego
+        - Tokyo    
+    :::column-end:::
+:::row-end:::
+
+
+In order to connect ServiceNow with Defender for Cloud Apps, you must have the **Admin** role and make sure the ServiceNow instance supports API access. 
+
+For more information, see the [ServiceNow product documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
+
+> [!TIP]
+> We recommend deploying ServiceNow  using OAuth app tokens, available for Fuji and later releases. For more information, see the relevant [ServiceNow documentation](https://docs.servicenow.com/bundle/paris-platform-administration/page/administer/security/concept/c_OAuthApplications.html#c_OAuthApplications).
+>
+> For earlier releases, a [legacy connection mode](#legacy-servicenow-connection) is available based on user/password. The username/password provided are only used for API token generation and are not saved after the initial connection process.
+>
 
 ## How to connect ServiceNow to Defender for Cloud Apps using OAuth
 
