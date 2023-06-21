@@ -50,7 +50,7 @@ Defender for Cloud Apps shows the full picture of risks to your environment from
 
 - **Manage**: Set policies that monitor apps around the clock. For example, if anomalous behavior happens, like unusual spikes in usage, you're automatically alerted and guided to action.
 
-For more information, see [Set up Cloud Discovery](set-up-cloud-discovery.md).
+For more information, see [Set up cloud discovery](set-up-cloud-discovery.md).
 
 ## Information protection
 
