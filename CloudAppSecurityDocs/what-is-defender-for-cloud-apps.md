@@ -52,7 +52,7 @@ As an organization, you need to protect your users and confidential data from th
 
 Defender for Cloud Apps integrates visibility with your cloud by:
 
-- Using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
+- Using cloud discovery to map and identify your cloud environment and the cloud apps your organization is using.
 - Sanctioning and unsanctioning apps in your cloud.
 - Using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.
 - Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
@@ -64,11 +64,11 @@ Defender for Cloud Apps integrates visibility with your cloud by:
 
 For more information about Microsoft Defender for Cloud Apps data retention and compliance, see [Microsoft Defender for Cloud Apps data security and privacy](cas-compliance-trust.md).
 
-### Cloud Discovery
+### Cloud discovery
 
-Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Defender for Cloud Apps log collectors to periodically forward your logs.
+Cloud discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Defender for Cloud Apps log collectors to periodically forward your logs.
 
-For more information about Cloud Discovery, see [Set up Cloud Discovery](set-up-cloud-discovery.md).
+For more information about cloud discovery, see [Set up cloud discovery](set-up-cloud-discovery.md).
 
 ### Sanctioning and unsanctioning an app
 
