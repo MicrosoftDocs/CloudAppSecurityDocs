@@ -123,7 +123,6 @@ For Google Workspace and Salesforce, it's possible to revoke permission to an OA
 
     :::image type="content" source="media/revoke-app.png" alt-text="Screenshot of an example of the Revoke app option.":::
 
-    ![revoke app.](media/revoke-app.png)
 
 ## Governance conflicts
 
