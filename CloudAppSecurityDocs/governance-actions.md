@@ -114,6 +114,16 @@ The following governance actions can be taken for connected apps either on a spe
 
   ![Defender for Cloud Apps activity policy governance actions.](media/activity-policy-ref6.png)
 
+## Revoke an OAuth app and notify user
+
+For Google Workspace and Salesforce, it's possible to revoke permission to an OAuth app or to notify the user that they should change the permission. When you revoke permission it removes all permissions that were granted to the application under "Enterprise Applications" in Azure AD.
+
+1. On the **Google** or **Salesforce** tabs on the **App governance** page, select the three dots at the end of the app row and select **Notify user**. By default, the user will be notified as follows: *You authorized the app to access your Google Workspace account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your Google Workspace account. To revoke app access, go to: <https://security.google.com/settings/security/permissions?hl=en&pli=1>  Select the app and select 'Revoke access' on the right menu bar.* You can customize the message that is sent.
+2. You can also revoke permissions to use the app for the user. Select the icon at the end of the app row in the table and selecting **Revoke app**. For example:
+
+    :::image type="content" source="media/revoke-app.png" alt-text="Screenshot of an example of the Revoke app option.":::
+
+
 ## Governance conflicts
 
 After creating multiple policies, a situation may arise in which the governance actions in multiple policies overlap. In this case, Defender for Cloud Apps will process the governance actions as follows:
