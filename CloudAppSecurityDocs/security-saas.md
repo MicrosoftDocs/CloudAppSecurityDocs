@@ -35,7 +35,7 @@ Your organization must have Microsoft Defender for Cloud Apps licenses.
 
 ## How to manage your SaaS apps security posture
 
-1. The security recommendations will be shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender-endpoint/tvm-security-recommendation). Navigate to the [Microsoft 365 Defender portal](https://security.microsoft.com). Under the navigation bar, select **Secure score**, and go to **Recommended actions** tab.
+1. The security recommendations will be shown automatically in [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score). Navigate to the [Microsoft 365 Defender portal](https://security.microsoft.com). Under the navigation bar, select **Secure score**, and go to **Recommended actions** tab.
 
     ![Secure_Score_main_page.](media/security-saas-secure-score-main-page.png)
 
