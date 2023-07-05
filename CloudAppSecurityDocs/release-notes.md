@@ -27,6 +27,16 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
+## July 2023
+
+### Custom connectors with the open app connector platform
+
+Defender for Cloud Apps' new codeless, open app connector platform helps SaaS vendors create custom connectors for their SaaS apps and add the new connector to the [Microsoft 365 Defender partner catalog](/microsoft-365/security/defender-endpoint/technological-partners).
+
+Create Defender for Cloud Apps connectors to extend app security features across customer SaaS ecosystems, safeguarding data, mitigating risks, and reinforcing overall SaaS security posture.
+
+For more information, see [Microsoft Defender for Cloud Apps open app connector platform](connector-platform.md).
+
 ## June 2023
 
 > [!NOTE]
