@@ -27,6 +27,18 @@ For more information on what's new with other Microsoft Defender security produc
 > [!NOTE]
 > As of August 28 2022, users who were assigned an Azure AD **Security Reader** role won't be able to manage the Microsoft Defender for Cloud Apps alerts. This change will be gradually rolled out to all customers over the next several weeks. To continue to manage alerts, the user's role should be updated to an Azure AD **Security Operator**.
 
+## July 2023
+
+### Session and access policy consolidation
+
+Defender for Cloud Apps now simplifies working with both session and access policies. Previously, in order to create a session or access policy for a host happ, such as Exchange, Teams, or Gmail, customers would need to create a separate policy for any relevant resource app, such as SharePOint, OneDrive, or Google Drive. Starting on July 11, 2023, you now only need to create a single policy on the hosted app.
+
+For more information, see:
+
+- [Control cloud apps with policies](/defender-cloud-apps/control-cloud-apps-with-policies)
+- [Access policies in Microsoft Defender for Cloud Apps](/defender-cloud-apps/access-policy-aad)
+- [Session policies](/defender-cloud-apps/session-policy-aad)
+
 ## June 2023
 
 > [!NOTE]
