@@ -8,11 +8,11 @@ ms.topic: how-to
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-If you work with both Defender for Cloud Apps and Zscaler, you can integrate the two products to enhance your security Cloud Discovery experience. Zscaler, as a standalone cloud proxy, monitors your organization's traffic enabling you to set policies for blocking transactions. Together, Defender for Cloud Apps and Zscaler provide the following capabilities:
+If you work with both Microsoft Defender for Cloud Apps and [Zscaler](https://www.zscaler.com/), integrate the two to enhance your cloud discovery experience. Zscaler, as a standalone cloud proxy, monitors your organization's traffic and enables you set policies for blocking transactions. Together, Defender for Cloud Apps and Zscaler provide the following capabilities:
 
-- Seamless deployment of Cloud Discovery - Use Zscaler to proxy your traffic and send it to Defender for Cloud Apps. This eliminates the need for installation of log collectors on your network endpoints to enable Cloud Discovery.
-- Zscaler's block capabilities are automatically applied on apps you set as unsanctioned in Defender for Cloud Apps.
-- Enhance your Zscaler portal with the Defender for Cloud Apps risk assessment for 200 leading cloud apps, which can be viewed directly in the Zscaler portal.
+- **Seamless cloud discovery**: Use Zscaler to proxy your traffic and send it to Defender for Cloud Apps. Integrating the two services means that you don't need to install log collectors on your network endpoints to enable cloud discovery.
+- **Automatic blocking**: After configuring the integration, Zscaler's block capabilities are automatically applied on any apps you set as *unsanctioned* in Defender for Cloud Apps.
+- **Enhanced Zscalar data**: Enhance your Zscaler portal with the Defender for Cloud Apps risk assessment for leading cloud apps, which can be viewed directly in the Zscaler portal.
 
 ## Prerequisites
 
@@ -20,28 +20,31 @@ If you work with both Defender for Cloud Apps and Zscaler, you can integrate the
 - A valid license for Zscaler Cloud 5.6
 - An active Zscaler NSS subscription
 
-## Deployment
+## Deploy the Zscaler integration
 
-1. In the Zscaler portal, do the steps to complete the [Zscaler partner integration with Microsoft Defender for Cloud Apps](https://help.zscaler.com/zia/configuring-mcas-integration).
-2. In the [Microsoft 365 Defender portal](https://security.microsoft.com/), do the following integration steps:
-    1. Select **Settings**. Then choose **Cloud Apps**.
-    2. Under **Cloud Discovery**, select **Automatic log upload**. Then select **+Add data source**.
-    3. In the **Add data source** page, enter the following settings:
+1. In the Zscalar portal, configure the Zscaler integration for Defender for Cloud Apps. For more information, see the [Zscaler documentation](https://help.zscaler.com/zia/configuring-mcas-integration).
+1. In [Microsoft 365 Defender](https://security.microsoft.com/), complete the integration with the following steps:
 
-        - Name = NSS
-        - Source = Zscaler QRadar LEEF
-        - Receiver type = Syslog - UDP
+    1. Select **Settings** > **Cloud apps** > **Cloud discovery** > **Automatic log upload** > **+Add data source**.
+    1. In the **Add data source** page, enter the following settings:
 
-        ![data source Zscaler.](media/data-source-zscaler.png)
+        - **Name** = NSS
+        - **Source** = Zscaler QRadar LEEF
+        - **Receiver type** = Syslog - UDP
+
+        For example:
+
+        [ ![Screenshot of adding the Zscaler data source.](media/data-source-zscaler.png)](media/data-source-zscaler.png#lightbox)
 
         > [!NOTE]
         > Make sure the name of the data source is **NSS.** For more information about setting up NSS feeds, see [Adding Defender for Cloud Apps NSS Feeds](https://help.zscaler.com/zia/adding-mcas-nss-feeds).
 
-    4. Select **View sample of expected log file**. Then select **Download sample log** to view a sample discovery log, and make sure it matches your logs.<br />
+    1. To view a sample discovery log, select **View sample of expected log file** > **Download sample log**. Make sure that the downloaded sample log matches your log files.
 
-3. Investigate cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
+After completing the integration steps, any app that you set as *unsanctioned* in Defender for Cloud Apps is pinged by Zscaler every two hours, and then blocked by Zscaler according to your Zscalar configuration. For more information, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
 
-4. Any app that you set as unsanctioned in Defender for Cloud Apps will be pinged by Zscaler every two hours, and then automatically blocked by Zscaler. For more information about unsanctioning apps, see [Sanctioning/unsanctioning an app](governance-discovery.md#sanctioningunsanctioning-an-app).
+Continue by investigating cloud apps discovered on your network. For more information and investigation steps, see [Working with Cloud Discovery](working-with-cloud-discovery-data.md).
+
 
 ## Next steps
 

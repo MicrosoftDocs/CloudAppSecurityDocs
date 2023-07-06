@@ -20,19 +20,6 @@ Microsoft Defender for Cloud Apps delivers full protection for SaaS applications
 
 - **App-to-app protection**, extending the core threat scenarios to OAuth-enabled apps that have permissions and privileges to critical data and resources.
 
-## Defender for Cloud Apps architecture
-
-The following diagram shows how Defender for Cloud Apps monitors and protects your cloud app data from multiple sources.
-
-:::image type="content" source="media/proxy-architecture.png" alt-text="Diagram of the Defender for Cloud Apps architecture." border="false":::
-
-- Cloud discovery maps and identifies your cloud environment and the cloud apps in use by your organization. Use this data to allow and block apps in your cloud.
-
-- Deploy app connectors using provider APIs for visibility and governance of connected apps.
-
-- Use conditional access app control protection to get real-time visibility and control over access and activities within your cloud apps.
-
-- Gain continuous control by setting and continuously fine-tuning policies.
 
 ## Discover SaaS applications
 

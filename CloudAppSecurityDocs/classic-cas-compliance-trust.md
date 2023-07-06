@@ -19,7 +19,7 @@ Defender for Cloud Apps has tools that help uncover shadow IT and assess risk wh
 
 In a world where data breaches and attacks are daily occurrences, it's essential for organizations to choose a Cloud Access Security Broker (CASB) that makes every effort to protect their data. Defender for Cloud Apps, like all Microsoft cloud products and services, is built to address the rigorous security and privacy demands of our customers.
 
-To help organizations comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Defender for Cloud Apps provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
+To help organizations comply with national/regional and industry-specific requirements governing the collection and use of individuals' data, Defender for Cloud Apps provides a comprehensive set of compliance offerings. The compliance offerings include certifications and attestations.
 
 ### Compliance framework and offerings
 

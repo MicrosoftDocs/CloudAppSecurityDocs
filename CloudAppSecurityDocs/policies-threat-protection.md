@@ -257,7 +257,7 @@ You must have at least one app connected using [app connectors](enable-instant-v
 
 1. It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
-## Detect anomalous activities from infrequent country
+## Detect anomalous activities from infrequent country/region
 
 Detect activities from a location that was not recently or was never visited by the user or by any user in your organization.
 

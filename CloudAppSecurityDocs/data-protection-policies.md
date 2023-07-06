@@ -13,7 +13,7 @@ File Policies allow you to enforce a wide range of automated processes using the
 
 ## Supported file types
 
-The Defender for Cloud Apps built-in DLP engines perform content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
+The Defender for Cloud Apps engines perform content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
 
 ## Policies
 

@@ -51,7 +51,7 @@ If your tenant doesn't use any of the streams above, you can still export a list
 
 In the **Discovered apps** page, filter all *Unsanctioned* apps and then use the export capability to export all the domains.
 
-## Non-blockable applications (Preview)
+## Non-blockable applications
 
 To prevent users from accidentally blocking business-critical services and causing downtime, the following services cannot be blocked using Defender for Cloud Apps, via the UI or policies:
 

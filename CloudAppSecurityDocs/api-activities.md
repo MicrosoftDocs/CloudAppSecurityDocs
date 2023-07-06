@@ -29,9 +29,10 @@ The following table describes the supported filters:
 | instance | integer | eq, neq | Filter activities from specified instances |
 | user.orgUnit | string | eq, neq, isset, isnotset | Filter activities by the organization unit of the performing user |
 |actionType|string|Contains, eq, neq, isset, isnotset|Filter activities by more specific action type|
-| activity.eventType | string | eq, neq | Filter activities by event type |
+| activity.eventActionType | string | eq, neq | Filter activities by event type |
 | activity.id | string | eq | Find an activity by ID |
 | activity.impersonated | boolean | eq | If set to "true", returns only impersonated events, if set to "false", returns non-impersonated events |
+| actionType | string | Contains, eq, neq, isset, isnotset | Filter activities by more specific action type |
 | activity.type | boolean | eq | If set to "true", returns only admin events, if set to "false", returns regular events |
 | activity.takenAction | string | eq, neq | Filter activities by the actions taken on them. Possible values include:<br /><br />**block**: Blocked<br />**proxy**: Redirected to session control<br />**BypassProxy**: Bypass session control<br />**encrypt**: Encrypted<br />**decrypt**: Decrypted<br />**verified**: Verified<br />**encryptionFailed**: Encryption failed<br />**protect**: Protected<br />**verify**: Require step-up authentication<br />**null**: No action |
 | device.type | string | eq, neq | Filter activities by device type. Possible values include:<br /><br />**DESKTOP**: PC<br />**MOBILE**: Mobile<br />**TABLET**: Tablet<br />**OTHER**: Other<br />**null**: No value |

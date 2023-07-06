@@ -12,7 +12,7 @@ ms.topic: overview
 
 This article is updated frequently to let you know what's new in the latest release of Microsoft Defender for Cloud Apps.
 
-RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://learn.microsoft.com/api/search/rss?search=%22frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Microsoft+Defender+for+Cloud+Apps%22&locale=en-us&facet=`
+RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://aka.ms/mda/rss`
 
 > [!NOTE]
 >
@@ -78,7 +78,7 @@ For more information, see [Secure apps with app hygiene features](app-governance
     For more information, see [Investigate behaviors with advanced hunting (Preview)](behaviors.md).
 
 - **Non-blockable applications** (Preview): To prevent users from accidentally causing downtime, Defender for Cloud Apps now prevents you from blocking business-critical Microsoft services.
-    For more information, see [Govern discovered apps](governance-discovery.md#non-blockable-applications-preview).
+    For more information, see [Govern discovered apps](governance-discovery.md#non-blockable-applications).
 
 ## April 2023
 

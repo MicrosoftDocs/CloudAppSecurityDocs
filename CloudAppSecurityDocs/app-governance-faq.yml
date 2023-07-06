@@ -16,7 +16,7 @@ sections:
           App governance is a feature in Microsoft Defender for Cloud Apps. It provides expanded visibility and control over apps that access your Microsoft 365 data. For more information, see [App governance in Microsoft Defender for Cloud Apps](app-governance-manage-app-governance.md).
       - question: What types of apps does app governance secure?
         answer: |
-          App governance currently tracks non-Microsoft apps that use OAuth to authenticate to Azure Active Directory.
+          App governance tracks non-Microsoft apps that use OAuth to authenticate to Azure Active Directory, as well as Google and Salesforce. For apps that authenticate to Azure AD, app governance identifies and excludes Microsoft apps whose home tenant is the ["first-party app"](https://learn.microsoft.com/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications) tenant owned by Microsoft (tenant ID: f8cdef31-a31e-4b4a-93e4-5f571e91255a).
 
           These apps represent modern apps that can access various resources, including Microsoft 365 data in mailboxes, OneDrive folders, SharePoint sites, and Teams. End users regularly introduce these apps and can give them consent to access data.
           

@@ -14,6 +14,9 @@ Connecting Office 365 to Defender for Cloud Apps gives you improved insights int
 
 Defender for Cloud Apps integrates directly with [Office 365's audit logs](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log?view=o365-worldwide&preserve-view=true) and provides protection for all supported services. For a list of supported services, see [Microsoft 365 services that support auditing](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#microsoft-365-services-that-support-auditing).
 
+[!INCLUDE [security-posture-management-connector](includes/security-posture-management-connector.md)]
+
+
 ## File scanning improvements for Office 365 (New!)
 
 Defender for Cloud Apps has added new file scanning improvements for SharePoint and OneDrive:
