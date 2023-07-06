@@ -35,6 +35,12 @@ Defender for Cloud Apps shows the full picture of risks to your environment from
 
 For more information, see [Set up Cloud Discovery](set-up-cloud-discovery.md).
 
+## SaaS Security Posture Management (SSPM)
+
+While optimizing an organization's security posture is a critical focus area, security teams are challenged by needing to research best practices for each app individually. Defender for Cloud Apps helps you by surfacing misconfigurations and recommending specific actions to strengthen the security posture for each connected app. Recommendations are based on industry standards like the Center for Internet Security and follow best practices set by the specific app provider.
+
+Defender for Cloud Apps automatically provides SSPM data in Microsoft Secure Score, for any supported and connected app. For more information, see [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility).
+
 ## Information protection
 
 Defender for Cloud Apps identifies and helps you control sensitive information with data loss protection (DLP) features, and helps you respond to sensitivity labels on detected content.
@@ -49,14 +55,9 @@ Defender for Cloud Apps connects to SaaS apps to scan for files containing sensi
 
 For more information, see [Integrate Microsoft Purview Information Protection](azip-integration.md).
 
-## SaaS Security Posture Management (SSPM)
-
-While optimizing an organization's security posture is a critical focus area, security teams are challenged by needing to research best practices for each app individually. Defender for Cloud Apps helps you by surfacing misconfigurations and recommending specific actions to strengthen the security posture for each connected app. Recommendations are based on industry standards like the Center for Internet Security and follow best practices set by the specific app provider.
-
-Defender for Cloud Apps automatically provides SSPM data in Microsoft Secure Score, for any supported and connected app. For more information, see [User, app governance, and security configuration visibility](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#user-app-governance-and-security-configuration-visibility).
 
 
-## Advanced threat protection in extended detection and response (XDR)
+## Continuous threat protection in eXtended detection and response (XDR)
 
 While cloud apps continue to be a target for adversaries trying to exfiltrate corporate data, sophisticated attacks often cross modalities—moving laterally from email as the most common entry point, to compromise endpoints and identities, before ultimately gaining access to in-app data. 
 
