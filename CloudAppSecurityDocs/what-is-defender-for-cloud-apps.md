@@ -24,6 +24,7 @@ Microsoft Defender for Cloud Apps delivers full protection for SaaS applications
 
 - **App-to-app protection**, extending the core threat scenarios to OAuth-enabled apps that have permissions and privileges to critical data and resources.
 
+:::image type="content" source="media/overview/discover-saas-apps.png" alt-text="Diagram showing Microsoft Defender for Cloud App pillars.":::
 
 ## Discover SaaS applications
 
@@ -59,8 +60,6 @@ Defender for Cloud Apps connects to SaaS apps to scan for files containing sensi
 
 For more information, see [Integrate Microsoft Purview Information Protection](azip-integration.md).
 
-
-
 ## Continuous threat protection in eXtended detection and response (XDR)
 
 While cloud apps continue to be a target for adversaries trying to exfiltrate corporate data, sophisticated attacks often cross modalities—moving laterally from email as the most common entry point, to compromise endpoints and identities, before ultimately gaining access to in-app data. 
@@ -71,7 +70,7 @@ Defender for Cloud Apps is also integrated directly into Microsoft 365 Defender,
 
 For more information, see [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
 
-## App to app using App governance
+## App to app protection with app governance
 
 OAuth apps often behave unnoticed, while still having extensive permissions to access data in other apps on behalf of an employee, making OAuth apps susceptible to a compromise.
 
