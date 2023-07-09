@@ -167,15 +167,7 @@ Any web app configured using the [previously mentioned authentication protocols]
 If you're interested in a specific app being pre-onboarded, [send us details about the app](mailto:casfeedback@microsoft.com). Be sure to send the use case you're interested in for onboarding it.
 
 ## Known limitations
-
-- **Proxy can be bypassed using embedded session token**  
-It's possible to bypass the proxy in cases where the application itself embeds the token within the links. An end user can copy the link and access the resource directly in that case.
-
-- **Proxy can be bypassed using Developer Tools**  
-It's possible to bypass the copy/cut policy and file download policy by using browser developer tools. For example, in a policy that prevents copying content from Microsoft Word, it's possible to view the content through Developer Tools, copy the content from there and bypass the proxy.
-
-- **Proxy can be bypassed by a parameter change**  
-It's possible to bypass the defined session policy by modifying parameters. For example, it's possible to alter the URL parameters and mislead the service in a way that bypasses the proxy and enables a download of a sensitive file.
+To learn more about security limitations, please contact our support team.
 
 - **Browser plug-in limitation**  
 Our current Conditional Access App Control session restrictions enforcement solution doesn't support native applications, since it requires some modification of the underlying application code. Browser extensions, similar to native apps, are pre-installed on the browser and so don't allow us to modify their code as needed and will break when their tokens are redirected through our proxy solution. As an administrator, you can define the default system behavior when a policy can't be enforced and choose between allowing access or totally blocking it.
