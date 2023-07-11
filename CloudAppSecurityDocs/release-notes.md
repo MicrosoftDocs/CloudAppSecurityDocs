@@ -31,7 +31,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ### Session and access policy consolidation
 
-Defender for Cloud Apps now simplifies working with both session and access policies. Previously, in order to create a session or access policy for a host happ, such as Exchange, Teams, or Gmail, customers would need to create a separate policy for any relevant resource app, such as SharePOint, OneDrive, or Google Drive. Starting on July 11, 2023, you now only need to create a single policy on the hosted app.
+Defender for Cloud Apps now simplifies working with both session and access policies. Previously, in order to create a session or access policy for a host app, such as Exchange, Teams, or Gmail, customers would need to create a separate policy for any relevant resource app, such as SharePoint, OneDrive, or Google Drive. Starting on July 11, 2023, you now only need to create a single policy on the hosted app.
 
 For more information, see:
 
