@@ -22,7 +22,9 @@ For example, you can decide that from unmanaged devices, or for sessions coming 
 * [Educate users to protect sensitive files](#educate-protect)
 
 > [!NOTE]
-> There is no limit to the number of policies that can be applied.
+> - There is no limit to the number of policies that can be applied.
+> - There's no connection between a policy that you create for a host app and any related resource apps. For example, session policies that you create for Teams, Exchange, or Gmail, are not connected to Sharepoint, OneDrive, or Google Drive. If you need a policy for the resource app in addition to the host app, create a separate policy.
+
 
 ## Prerequisites to using session policies
 
