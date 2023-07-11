@@ -6,11 +6,11 @@ ms.topic: overview
 ---
 # Microsoft Defender for Cloud Apps overview
 
-[!INCLUDE [Banner for top of topics](includes/banner.md)]
-
 > [!TIP]
 > You might be looking for Office 365 Cloud App Security. For more information, see [What are the differences between Microsoft Defender for Cloud Apps and Office 365 Cloud App Security?](editions-cloud-app-security-o365.md)
 > 
+
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Software as a service (SaaS) apps are ubiquitous across hybrid work environments, and protecting SaaS apps and the important data they store is a big challenge for organizations. The rise in app usage, combined with employees accessing company resources outside of the corporate perimeter has also introduced new attack vectors. To combat these attacks effectively, security teams need an approach that protects their data within cloud apps beyond the traditional scope of cloud access security brokers (CASBs).
 
@@ -24,7 +24,7 @@ Microsoft Defender for Cloud Apps delivers full protection for SaaS applications
 
 - **App-to-app protection**, extending the core threat scenarios to OAuth-enabled apps that have permissions and privileges to critical data and resources.
 
-:::image type="content" source="media/overview/discover-saas-apps.png" alt-text="Diagram showing Microsoft Defender for Cloud App pillars.":::
+:::image type="content" source="media/overview/discover-saas-apps.png" alt-text="Diagram showing Microsoft Defender for Cloud App pillars." border="false":::
 
 ## Discover SaaS applications
 
