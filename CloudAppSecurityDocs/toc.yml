@@ -280,6 +280,9 @@ items:
       href: ./connect-servicenow.md
     - name: Connect Slack
       href: ./connect-slack.md
+    - name: Connect Asana (Preview)
+      href: connect-asana.md
+      displayName: how-to
     - name: Connect Smartsheet
       href: ./connect-smartsheet.md
     - name: Connect Webex
