@@ -3,14 +3,14 @@
 		# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
 		# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
 
-		title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
+title: Connect Asana # Add a title for the browser tab
+description: How to connect Asana to Defender for Cloud Apps# Add a meaningful description for search results
 author:      NagarajVenkatesh # GitHub alias
 ms.author:   naven # Microsoft alias
 ms.service:  # Add the ms.service or ms.prod value
 # ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
-ms.date:     07/14/2023
+ms.topic: How-to # Add the ms.topic value
+ms.date:     07/17/2023
 ---
 
 # Connect Asana to Microsoft Defender for Cloud Apps (Preview)
@@ -57,6 +57,7 @@ If you have any problems connecting the app, see [Troubleshooting App Connectors
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
+
 
 
 
