@@ -1,16 +1,8 @@
 ---
-# Required metadata
-		# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-		# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
-		title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
-author:      NagarajVenkatesh # GitHub alias
-ms.author:   naven # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
-ms.date:     07/17/2023
+title: Protect your Miro environment
+description: This article provides information about the benefits of connecting your Miro app to Defender for Cloud Apps using the API connector for visibility and control over use.
+ms.date: 07/17/2023
+ms.topic: article
 ---
 
 # How Defender for Cloud Apps helps protect your Miro environment (Preview)
@@ -52,7 +44,3 @@ In addition to monitoring for potential threats, you can apply and automate the 
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
 
-Next steps
-
-> [!div class="nextstepaction"]
-> [Connect Miro to Microsoft Defender for Cloud Apps (Preview)](./connect-miro.md)
