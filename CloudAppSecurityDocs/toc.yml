@@ -102,8 +102,12 @@ items:
       href: protect-salesforce.md
     - name: Protect ServiceNow
       href: protect-servicenow.md
+    - name: Protect Asana (Preview)
+      href: protect-asana.md
     - name: Protect Slack
       href: protect-slack.md
+    - name: Protect Miro (Preview)
+      href: protect-miro.md
     - name: Protect Workplace (Preview)
       href: protect-workplace.md
     - name: Protect Smartsheet
@@ -244,6 +248,8 @@ items:
     items:
     - name: Connect apps to get visibility and protection
       href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+    - name: Connect Asana (Preview)
+      href: ./connect-asana.md
     - name: Connect Atlassian
       href: connect-atlassian.md
     - name: Connect AWS
@@ -266,6 +272,8 @@ items:
       href: ./connect-google-gcp.md
     - name: Connect Google Workspace
       href: ./connect-google-workspace.md
+    - name: Connect Miro (Preview)
+      href: ./connect-miro.md
     - name: Connect NetDocuments
       href: connect-netdocuments-to-microsoft-defender-for-cloud-apps.md
     - name: Connect Office 365
@@ -280,8 +288,6 @@ items:
       href: ./connect-servicenow.md
     - name: Connect Slack
       href: ./connect-slack.md
-    - name: Connect Miro (Preview)
-      href: connect-miro.md
     - name: Connect Smartsheet
       href: ./connect-smartsheet.md
     - name: Connect Webex
