@@ -27,22 +27,23 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 1. Sign into [Miro](https://miro.com/app/dashboard/) portal with a company admin account.
 2. Create a developer team from the portal. To create a developer team, navigate to **Company Settings > User & Team management > Teams > Create new team**.
-![User's image](media/connect-citrix-sharefile/image.png)
-3. Give a descriptive name to the team and set the permissions to ‘Default’. Select ‘Create as a Developer Team’ and create the team.![User's image](image6.png)
-
-4. Create a new application in the newly created developer team. To create a new application, navigate to **Profile settings > Your apps** and click on **‘Create new app’**![User's image](image4.png)
-
+![User's image](media/connect-miro/image.png)
+3. Give a descriptive name to the team and set the permissions to ‘Default’. Select ‘Create as a Developer Team’ and create the team.
+4. Create a new application in the newly created developer team. To create a new application, navigate to **Profile settings > Your apps** and click on **‘Create new app’**
+![User's image](media/connect-miro/image1.png)
 5. Give a name to the app, select the newly created developer team, and click on **Create app**.
 6. Copy the Client ID and Client secret for future reference. 
 7. Provide 'https://portal.cloudappsecurity.com/api/oauth/saga' as the 'Redirect URI for OAuth2.0'.
-8. Provide ‘auditlogs:read’ and ‘organization:read; permissions and click on **Install app and get OAuth token**.![User's image](image7.png)
+![User's image](image2.png)
+1. Provide ‘auditlogs:read’ and ‘organization:read; permissions and click on **Install app and get OAuth token**.
+![User's image](image3.png)
 
 9. In the [Defender for Cloud Apps](https://portal.cloudAppSecurity.com) portal, navigate to Investigate >Connected apps.
 10. In the App connectors page, click on Connect an app and choose Miro. 
 11. Enter a name for Miro connection in the connection wizard and click on Connect Miro.
 12. Enter the Client ID, Client secret and click on Connect in Miro.
-13. Select the Miro team that you want to connect with Defender for Cloud Apps and click on Add again.
-![User's image](image8.png)
+1. Select the Miro team that you want to connect with Defender for Cloud Apps and click on Add again. Note that this Miro team is different from the developer team in which you created the app.
+![User's image](image4.png)
 
 14. Click on Test now to make sure the connection succeeded. Audit events will start flowing into Defender for Cloud apps from the time the connection is successfully established.
 
