@@ -38,7 +38,7 @@ This article provides instructions for connecting Microsoft Defender for Cloud A
 
 If you have any problems connecting the app, see [Troubleshooting App Connectors](/defender-cloud-apps/troubleshooting-api-connectors-using-error-messages).
 
-Next steps
+## Next steps
 
 > [!div class="nextstepaction"]
 > [Control cloud apps with policies](control-cloud-apps-with-policies.md)
