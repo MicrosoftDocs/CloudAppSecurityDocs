@@ -44,12 +44,3 @@ In addition to monitoring for potential threats, you can apply and automate the 
 | User governance | Notify user on  alert (via Azure AD)<br />  Require user to sign in again (via Azure AD)   <br /> Suspend user (via Azure AD) |
 
 For more information about remediating threats from apps, see [Governing connected apps](governance-actions.md).
-
-Next steps
-
-> [!div class="nextstepaction"]
-> [Connect Asana to Microsoft Defender for Cloud Apps (Preview)](./connect-asana.md)
-
-
-
-
