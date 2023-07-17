@@ -12,7 +12,7 @@ Microsoft Defender for Cloud Apps' [app connectors](protect-connected-apps.md) a
 This article describes how SaaS app vendors can use the Defender for Cloud Apps open app connector platform to build connectors for their own apps. The codeless open app connector platform helps simplify connector development by avoiding extra coding and reducing integration time.
 
 > [!NOTE]
-> We recommend that SaaS vendors read and this article thoroughly to understand the high-level app connector development process and partnership expectations.
+> We recommend that SaaS vendors read this article thoroughly to understand the high-level app connector development process and partnership expectations.
 
 ## Sample scenarios
 
@@ -24,10 +24,6 @@ For example, you might create a connector for your app in one of the following s
 
 - **Advanced threat protection for SaaS apps**: Customers need to have a deep understand of what's happening in their SaaS app environments to detect, investigate, and remediate any risks. Develop a connector for your app so that Defender for Cloud Apps can provide customers with multiple layers of post-breach threat protection capabilities, including built-in detections to for compromised users and apps, custom detection configuration capabilities, rich investigation capabilities, and response actions to mitigate threats. For more information, see [Investigate cloud app risks and suspicious activity](investigate.md).
 
-## Prerequisites
-
-<!--TBD-->
-
 ## Develop your connector using the open app connector platform
 
 As a SaaS vendor, use the steps shown in the following image to build a connector together with Microsoft, using the open app connector platform:
@@ -36,7 +32,7 @@ As a SaaS vendor, use the steps shown in the following image to build a connecto
 
 The following steps provide more details about the open app connector platform process:
  
-1. Email Microsoft at [BuildSaaSConnectors@microsoft.com](mailto:BuildSaaSConnectors@microsoft.com), expressing your intent for partnership. In your email, describe your SasA app and any integration scenarios of interest, and provide any relevant links.
+1. Email Microsoft at [buildSaaSConnector@microsoft.com](mailto:buildSaaSConnector@microsoft.com), expressing your intent for partnership. In your email, describe your SaaS app and any integration scenarios of interest, and provide any relevant links.
 
 1. Microsoft will set up a vendor discovery call. Use this call to learn more about the open app connector platform, integration opportunities, mutual customer benefits, and how to build a connector.
 
